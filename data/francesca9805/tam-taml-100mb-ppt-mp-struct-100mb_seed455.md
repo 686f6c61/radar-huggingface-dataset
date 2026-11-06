@@ -32,7 +32,7 @@ El ajuste fino se ha realizado con Supervised Fine-Tuning (SFT) a través de TRL
 - Generación de texto autoregresiva en tamil y tamil romanizado, heredada del modelo base.
 - Ajuste supervisado orientado a seguir instrucciones en formato de conversación (el ejemplo de la model card usa el pipeline con mensajes con rol `user`).
 - Compatible con `text-generation-inference`, lo que permite desplegarlo como endpoint HTTP con streaming.
-- Compatible con la API `endpoints_compatible` de HuggingFace, es decir, se puede servir desde Inference Endpoints.
+- Compatible con la API `endpoints_compatible` de Hugging Face, es decir, se puede servir desde Inference Endpoints.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte explícito de agentes ni razonamiento multi-paso.
 - No se documenta modo de pensamiento (thinking mode), visión, audio ni otras modalidades.
@@ -58,16 +58,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en fp16/bf16: alrededor de 250 MB para los pesos, más overhead; inferior a 1 GB en total para contextos cortos.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente, incluidas GTX 1650, RTX 3060, RTX 4090, así como GPUs de datacenter (A100, H100) si se despliega junto a otros modelos.
 - Cabe sin problema en GPUs de consumo (RTX 3060, RTX 4070, RTX 4090) e incluso en CPU, aunque con latencias mayores.
-- Opciones de despliegue: `transformers` (pipeline nativo), text-generation-inference (TGI), HuggingFace Inference Endpoints (por el tag `endpoints_compatible`). No se proporcionan pesos GGUF, por lo que no hay soporte directo para llama.cpp u Ollama sin conversión previa.
+- Opciones de despliegue: `transformers` (pipeline nativo), text-generation-inference (TGI), Hugging Face Inference Endpoints (por el tag `endpoints_compatible`). No se proporcionan pesos GGUF, por lo que no hay soporte directo para llama.cpp u Ollama sin conversión previa.
 - Latencia y throughput estimados: no disponibles; la model card no publica mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/tam-taml-100mb-ppt-mp-struct-100mb_seed455 | 124,77 M | no disponible | tamil, tamil romanizado | no disponible | HuggingFace |
-| goldfish-models/tam_taml_100mb (modelo base) | ~124 M (presumiblemente similar) | no disponible | tamil, tamil romanizado | no disponible | HuggingFace |
-| Otros modelos de la familia Goldfish Models para lenguas de bajos recursos | variable | variable | un idioma por modelo | variable | HuggingFace |
+| francesca9805/tam-taml-100mb-ppt-mp-struct-100mb_seed455 | 124,77 M | no disponible | tamil, tamil romanizado | no disponible | Hugging Face |
+| goldfish-models/tam_taml_100mb (modelo base) | ~124 M (presumiblemente similar) | no disponible | tamil, tamil romanizado | no disponible | Hugging Face |
+| Otros modelos de la familia Goldfish Models para lenguas de bajos recursos | variable | variable | un idioma por modelo | variable | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan una comparación cuantitativa con alternativas. La comparación con el modelo base es la más directa, ya que este modelo es un ajuste fino suyo; no obstante, la model card no detalla las diferencias de rendimiento entre ambos.
 
@@ -77,13 +77,13 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 - Riesgo de alucinación: elevado, dado el tamaño reducido del modelo (124 M de parámetros) y el escaso volumen de datos de entrenamiento; no debe emplearse en aplicaciones donde la factualidad sea crítica.
 - Limitaciones de contexto e idioma: la longitud de contexto no se especifica en la documentación; el modelo está orientado exclusivamente al tamil y su transliteración, por lo que su rendimiento en otros idiomas será muy limitado.
 - Restricciones de licencia: la licencia no está definida (la model card indica "licence: license" sin concretar), por lo que no se recomienda su uso comercial sin aclarar previamente los términos con el autor.
-- Caveats de producción: cero descargas y cero likes en HuggingFace, sin benchmarks publicados, sin tests de robustez y sin documentación del dataset de SFT; no es un modelo validado para entornos de producción.
+- Caveats de producción: cero descargas y cero likes en Hugging Face, sin benchmarks publicados, sin tests de robustez y sin documentación del dataset de SFT; no es un modelo validado para entornos de producción.
 - El repositorio contiene únicamente safetensors, sin cuantizaciones GGUF ni formatos optimizados, lo que complica el despliegue en entornos sin GPU.
 - El ejemplo de la model card utiliza `device="cuda"`, pero no se documenta comportamiento en CPU ni rendimiento diferencial.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tam-taml-100mb-ppt-mp-struct-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tam-taml-100mb-ppt-mp-struct-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_100mb
 - Repositorio TRL: https://github.com/huggingface/trl
 - Experimento de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/xqdv780j

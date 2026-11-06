@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TheFatBlue/code-backdoor-f26-pilot-w3 es un ajuste fino de Salesforce/codet5-base, un transformer encoder-decoder de tipo T5 especializado en código, publicado por el usuario TheFatBlue. El modelo se ha entrenado sobre el conjunto Window 3 (train.csv) de la competición Code Backdoor Detection, enmarcada en el curso CSC 591/791 (Trustworthy AI for Software Engineering) de la North Carolina State University, convocatoria de otoño de 2026. Su tarea declarada en HuggingFace es summarization sobre código, y su propósito declarado es participar en dicha competición, cuyo conjunto de entrenamiento contiene filas envenenadas que los participantes deben localizar.
+TheFatBlue/code-backdoor-f26-pilot-w3 es un ajuste fino de Salesforce/codet5-base, un transformer encoder-decoder de tipo T5 especializado en código, publicado por el usuario TheFatBlue. El modelo se ha entrenado sobre el conjunto Window 3 (train.csv) de la competición Code Backdoor Detection, enmarcada en el curso CSC 591/791 (Trustworthy AI for Software Engineering) de la North Carolina State University, convocatoria de otoño de 2026. Su tarea declarada en Hugging Face es summarization sobre código, y su propósito declarado es participar en dicha competición, cuyo conjunto de entrenamiento contiene filas envenenadas que los participantes deben localizar.
 
 El modelo tiene 222.882.048 parámetros (222,9 M) y un repositorio de 0,9 GB. Se distribuye en formato safetensors, bajo licencia BSD-3-Clause, y la model card indica que funciona en fp32 ocupando unos 850 MB, con un coste de aproximadamente 0,5 segundos por función en la CPU de un portátil usando decodificación greedy con 64 tokens nuevos. La decodificación greedy con 64 tokens nuevos reproduce, según el autor, el archivo outputs_train.csv publicado junto a la competición.
 
@@ -36,7 +36,7 @@ Sobre el entrenamiento solo se indica que se ha realizado un ajuste fino sobre e
 ## Capacidades
 
 - Generación de texto condicionada a código: modelo seq2seq que produce una secuencia de salida a partir de una función o fragmento de código de entrada.
-- Tarea de summarization sobre código, según el pipeline declarado en HuggingFace.
+- Tarea de summarization sobre código, según el pipeline declarado en Hugging Face.
 - Detección de filas envenenadas en el contexto de la competición Code Backdoor Detection, de acuerdo con la model card.
 - Reproducibilidad de salidas: con decodificación greedy y 64 tokens nuevos genera una salida que replica `outputs_train.csv` según el autor.
 - Entrada con truncado a 512 tokens en el ejemplo documentado.
@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TheFatBlue/code-backdoor-f26-pilot-w3 | 222,9 M | no documentada; ejemplo a 512 tokens | sin benchmarks | BSD-3-Clause | HuggingFace, 0 descargas |
-| Salesforce/codet5-base | 220 M aprox. | 512 tokens en la configuracion habitual | no verificable en la informacion disponible | no confirmada en la informacion disponible | HuggingFace, modelo base de referencia |
-| Salesforce/codet5p-220m | 220 M aprox. | 512 tokens en la configuracion habitual | no verificable en la informacion disponible | no confirmada en la informacion disponible | HuggingFace |
-| Salesforce/codet5-small | 60 M aprox. | 512 tokens en la configuracion habitual | no verificable en la informacion disponible | no confirmada en la informacion disponible | HuggingFace |
+| TheFatBlue/code-backdoor-f26-pilot-w3 | 222,9 M | no documentada; ejemplo a 512 tokens | sin benchmarks | BSD-3-Clause | Hugging Face, 0 descargas |
+| Salesforce/codet5-base | 220 M aprox. | 512 tokens en la configuracion habitual | no verificable en la informacion disponible | no confirmada en la informacion disponible | Hugging Face, modelo base de referencia |
+| Salesforce/codet5p-220m | 220 M aprox. | 512 tokens en la configuracion habitual | no verificable en la informacion disponible | no confirmada en la informacion disponible | Hugging Face |
+| Salesforce/codet5-small | 60 M aprox. | 512 tokens en la configuracion habitual | no verificable en la informacion disponible | no confirmada en la informacion disponible | Hugging Face |
 
 La comparación se limita a tamaño, arquitectura y disponibilidad, ya que no hay métricas publicadas para este ajuste ni datos verificables de rendimiento comparado en la información proporcionada. Frente al modelo base, la única diferencia documentada es el ajuste fino sobre el conjunto Window 3 de la competición y la orientación a la tarea de detección.
 
@@ -100,7 +100,7 @@ La comparación se limita a tamaño, arquitectura y disponibilidad, ya que no ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheFatBlue/code-backdoor-f26-pilot-w3
+- Modelo en Hugging Face: https://huggingface.co/TheFatBlue/code-backdoor-f26-pilot-w3
 - Modelo base: https://huggingface.co/Salesforce/codet5-base
 - Repositorio del proyecto CodeT5: https://github.com/salesforce/CodeT5
 - Competición Code Backdoor Detection (CSC 591/791, NC State University, otoño de 2026): no se ha encontrado enlace en la informacion disponible.

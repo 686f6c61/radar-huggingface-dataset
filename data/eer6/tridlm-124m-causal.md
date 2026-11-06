@@ -29,7 +29,7 @@ El entrenamiento usó OpenWebText con tokenización BPE de GPT-2, bloques empaqu
 
 - Generación de texto mediante denoising enmascarado: el modelo recibe una secuencia parcialmente enmascarada y predice los tokens originales en las posiciones enmascaradas.
 - Soporte de muestreo ancestral en orden aleatorio (sampler recomendado por el autor para evitar colapso en repetición).
-- Extracción de características (pipeline declarado en HuggingFace como feature-extraction).
+- Extracción de características (pipeline declarado en Hugging Face como feature-extraction).
 - Capacidad de procesar contexto de hasta 1024 tokens.
 - Multilingüe: no, solo inglés.
 - Tool calling, agentes, razonamiento multi-paso: no soportado (modelo base de difusión sin fine-tuning instructivo).
@@ -89,5 +89,5 @@ Frente a GPT-2 small (124M, autorregresivo, mismo tamaño), no se dispone de com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EER6/TriDLM-124M-causal
+- Hugging Face: https://huggingface.co/EER6/TriDLM-124M-causal
 - Repositorio GitHub del experimento (código, registros de entrenamiento, registro completo): https://github.com/AntonXue/TriDLM

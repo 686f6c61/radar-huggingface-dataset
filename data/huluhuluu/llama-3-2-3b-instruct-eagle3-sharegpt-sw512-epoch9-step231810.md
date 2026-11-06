@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de modelo borrador (draft model) entrenado con el metodo EAGLE3 dentro del framework SpecForge, disenado para acelerar la inferencia de `meta-llama/Llama-3.2-3B-Instruct` mediante decodificacion especulativa. No es un modelo de lenguaje autonomo: su unica funcion es proponer secuencias cortas de tokens candidatos que el modelo objetivo (target) verifica despues en una sola pasada, reduciendo el numero de forwards del modelo grande necesarios por token generado. El autor es el usuario de HuggingFace `huluhuluu` y el checkpoint corresponde al paso global 231810, epoca 9, de una ejecucion denominada `llama3.2-3b-inst-eagle3-sharegpt-sw512`.
+Este repositorio contiene un checkpoint de modelo borrador (draft model) entrenado con el metodo EAGLE3 dentro del framework SpecForge, disenado para acelerar la inferencia de `meta-llama/Llama-3.2-3B-Instruct` mediante decodificacion especulativa. No es un modelo de lenguaje autonomo: su unica funcion es proponer secuencias cortas de tokens candidatos que el modelo objetivo (target) verifica despues en una sola pasada, reduciendo el numero de forwards del modelo grande necesarios por token generado. El autor es el usuario de Hugging Face `huluhuluu` y el checkpoint corresponde al paso global 231810, epoca 9, de una ejecucion denominada `llama3.2-3b-inst-eagle3-sharegpt-sw512`.
 
 Tecnicamente es una cabeza draft de una sola capa (`LlamaForCausalLMEagle3`) con 243.180.032 parametros (~243 M) en bfloat16, hidden size 3072, 24 cabezas de atencion y 8 cabezas KV. Incorpora una ventana deslizante de 512 tokens, una innovacion de EAGLE3 orientada a mantener la aceptacion en contextos largos mientras se limita el coste de atencion del borrador. Se entreno sobre `sharegpt_train_clean.jsonl` con learning rate 1e-4, batch size 1, DP de 4 y max length 2048, usando SGLang con backend de atencion FlashInfer para ejecutar el modelo objetivo durante el entrenamiento online.
 
@@ -69,8 +69,8 @@ Metricas relevantes que no se proporcionan y que habria que medir en una evaluac
 
 | Modelo | Parametros | Contexto / ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (EAGLE3 draft para Llama-3.2-3B-Instruct) | 243 M (1 capa draft) | Target 131.072 posiciones; ventana deslizante del draft 512 | other (derivado de Llama 3.2) | HuggingFace, 225 descargas |
-| Llama-3.2-3B-Instruct (modelo target, sin borrador) | 3,21 B | 131.072 posiciones (en el modelo base) | Llama 3.2 Community License | HuggingFace, ampliamente desplegado |
+| Este checkpoint (EAGLE3 draft para Llama-3.2-3B-Instruct) | 243 M (1 capa draft) | Target 131.072 posiciones; ventana deslizante del draft 512 | other (derivado de Llama 3.2) | Hugging Face, 225 descargas |
+| Llama-3.2-3B-Instruct (modelo target, sin borrador) | 3,21 B | 131.072 posiciones (en el modelo base) | Llama 3.2 Community License | Hugging Face, ampliamente desplegado |
 | Otros checkpoints de la misma ejecucion SpecForge (`llama3.2-3b-inst-eagle3-sharegpt-sw512`) | no disponible | no disponible | other | no disponible en la informacion proporcionada |
 | Otras cabezas draft EAGLE3 o Medusa para Llama-3.2-3B | no disponible | no disponible | no disponible | no disponible; requieren busqueda adicional |
 
@@ -92,7 +92,7 @@ La comparacion cuantitativa con alternativas (tasa de aceptacion, speed-up, VRAM
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huluhuluu/llama-3.2-3b-instruct-eagle3-sharegpt-sw512-epoch9-step231810
+- Modelo en Hugging Face: https://huggingface.co/huluhuluu/llama-3.2-3b-instruct-eagle3-sharegpt-sw512-epoch9-step231810
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - SpecForge (framework de entrenamiento citado en la model card): enlace no disponible en la informacion proporcionada
 - Paper de EAGLE3: no disponible en la informacion proporcionada

@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento para establecer una comparativa fiable. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h015.sft-v5.step_400
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h015.sft-v5.step_400
 - Leaderboard BenchLM (contexto de benchmarks, no específico del modelo): https://benchlm.ai/
 - Artículo sobre AgentTrove y construcción de datasets SFT: https://www.marktechpost.com/2026/05/29/how-to-use-agenttrove-streaming-1-7m-agentic-traces-and-building-a-clean-sharegpt-sft-dataset-in-python/
 - Documentación de modelos de xAI (referencia a Grok 4.6, no directamente relacionada): https://docs.x.ai/developers/models

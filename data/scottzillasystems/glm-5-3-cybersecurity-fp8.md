@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-CYBERSECURITY-FP8 es un derivado del modelo GLM-5.3 de Z.ai (zai-org) publicado en HuggingFace por el usuario ScottzillaSystems. Se trata de un "crack" o variante abliterated: los pesos han sido modificados en origen para reducir los rechazos (refusals) del modelo en contenido de seguridad ofensiva, red team, desarrollo de exploits, ingenieria inversa, evasion, phishing, ataque a credenciales y analisis de malware. No es un fine-tuning ni un LoRA: la model card afirma que la modificacion es directa sobre los pesos bf16 residuales, dejando intactos los expertos FP8 enrutados, de modo que el modelo conserva la velocidad nativa de tensor cores FP8 en hardware Hopper.
+GLM-5.3-CYBERSECURITY-FP8 es un derivado del modelo GLM-5.3 de Z.ai (zai-org) publicado en Hugging Face por el usuario ScottzillaSystems. Se trata de un "crack" o variante abliterated: los pesos han sido modificados en origen para reducir los rechazos (refusals) del modelo en contenido de seguridad ofensiva, red team, desarrollo de exploits, ingenieria inversa, evasion, phishing, ataque a credenciales y analisis de malware. No es un fine-tuning ni un LoRA: la model card afirma que la modificacion es directa sobre los pesos bf16 residuales, dejando intactos los expertos FP8 enrutados, de modo que el modelo conserva la velocidad nativa de tensor cores FP8 en hardware Hopper.
 
 Tecnicamente hereda la arquitectura `glm_moe_dsa` del modelo base: un transformer de tipo Mixture of Experts con atencion dispersa tipo DeepSeek (DSA), 78 capas y modalidad exclusivamente de texto. El repositorio declara 753.329.940.480 parametros totales (unos 753,3 mil millones) y ocupa 755,7 GB en formato safetensors, lo que refleja una cuantizacion FP8 sobre el checkpoint original. El modelo base inmediato es JANGQ-AI/GLM-5.3-FP8, a su vez cuantizacion FP8 de zai-org/GLM-5.3.
 
@@ -22,7 +22,7 @@ Su relevancia actual es doble. Por un lado, demuestra que la eliminacion selecti
 | Formato de pesos | safetensors (repositorio de 755,7 GB) |
 | Pipeline | text-generation |
 | Modelo base | zai-org/GLM-5.3; JANGQ-AI/GLM-5.3-FP8 (cuantizacion FP8 del anterior) |
-| Fecha de publicacion | 2026-09-11 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-11 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -95,10 +95,10 @@ Segun la model card, el bucket de copyright aporta entre 48 y 54 de los SOFT_REF
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque de alineacion | Disponibilidad |
 |---|---|---|---|---|---|
-| ScottzillaSystems/GLM-5.3-CYBERSECURITY-FP8 | 753,3 mil millones | ~131K practico (TP8 H200) | MIT | Rechazo reducido solo en dominio ciberseguridad | Publico en HuggingFace |
-| zai-org/GLM-5.3 | 753,3 mil millones (segun el derivado) | 1M anunciado, no operativo en vLLM via DCP | no disponible | Alineado de fabrica | Publico en HuggingFace |
-| JANGQ-AI/GLM-5.3-FP8 | 753,3 mil millones | no disponible | no disponible | Alineado de fabrica (solo cuantizado) | Publico en HuggingFace |
-| dealignai/GLM-5.3-UNCENSORED-FP8 | 753,3 mil millones (mismo base) | no disponible | no disponible | Rechazo reducido de forma generalista | Publico en HuggingFace |
+| ScottzillaSystems/GLM-5.3-CYBERSECURITY-FP8 | 753,3 mil millones | ~131K practico (TP8 H200) | MIT | Rechazo reducido solo en dominio ciberseguridad | Publico en Hugging Face |
+| zai-org/GLM-5.3 | 753,3 mil millones (segun el derivado) | 1M anunciado, no operativo en vLLM via DCP | no disponible | Alineado de fabrica | Publico en Hugging Face |
+| JANGQ-AI/GLM-5.3-FP8 | 753,3 mil millones | no disponible | no disponible | Alineado de fabrica (solo cuantizado) | Publico en Hugging Face |
+| dealignai/GLM-5.3-UNCENSORED-FP8 | 753,3 mil millones (mismo base) | no disponible | no disponible | Rechazo reducido de forma generalista | Publico en Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estas variantes mas alla del MMLU logit reportado por el autor. El rendimiento relativo frente a modelos de la misma categoria pero distinto linaje (por ejemplo, otros MoE de escala similar) no esta disponible en la informacion proporcionada.
 
@@ -117,12 +117,12 @@ No se dispone de datos de benchmarks comparativos entre estas variantes mas alla
 
 ## Enlaces
 
-- [Ficha del modelo en HuggingFace](https://huggingface.co/ScottzillaSystems/GLM-5.3-CYBERSECURITY-FP8)
+- [Ficha del modelo en Hugging Face](https://huggingface.co/ScottzillaSystems/GLM-5.3-CYBERSECURITY-FP8)
 - [Modelo base zai-org/GLM-5.3](https://huggingface.co/zai-org/GLM-5.3)
 - [Cuantizacion base JANGQ-AI/GLM-5.3-FP8](https://huggingface.co/JANGQ-AI/GLM-5.3-FP8)
 - [Variante generalista dealignai/GLM-5.3-UNCENSORED-FP8](https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8)
 - [Discusion sobre notas de ejecucion en 8x DGX Spark GB10](https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8/discussions/3)
-- [Perfil de dealignai en HuggingFace](https://huggingface.co/dealignai)
+- [Perfil de dealignai en Hugging Face](https://huggingface.co/dealignai)
 - [Perfil de Twitter de dealignai](https://twitter.com/dealignai)
 
 La busqueda web realizada no devolvio resultados relevantes sobre el modelo: los unicos resultados obtenidos corresponden al sitio oficial de la Indian Premier League (iplt20.com) y no guardan relacion con este checkpoint. No se han localizado papers, blogs tecnicos ni repositorios adicionales.

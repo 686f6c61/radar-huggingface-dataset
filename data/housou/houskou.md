@@ -1,9 +1,9 @@
 # housou/houskou
 
 ## Resumen
-El repositorio `housou/houskou` en HuggingFace es un modelo publicado por el usuario `housou` bajo licencia Apache-2.0. Sin embargo, la model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros o instrucciones de uso. El pipeline no está especificado y no se han registrado descargas, lo que sugiere que el repositorio podría estar vacío, ser un placeholder o carecer de archivos de modelo publicados.
+El repositorio `housou/houskou` en Hugging Face es un modelo publicado por el usuario `housou` bajo licencia Apache-2.0. Sin embargo, la model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros o instrucciones de uso. El pipeline no está especificado y no se han registrado descargas, lo que sugiere que el repositorio podría estar vacío, ser un placeholder o carecer de archivos de modelo publicados.
 
-Los resultados de búsqueda web muestran referencias a un modelo de arte anime llamado "Housou-kun" en plataformas como Tensor.Art, PixAI y Civitai, pero no existe evidencia de que este repositorio de HuggingFace corresponda a ese modelo. No hay datos verificables sobre su naturaleza, tamaño o capacidades. Por tanto, esta ficha se limita a documentar la ausencia de información pública y a señalar las posibles confusiones con otros proyectos homónimos.
+Los resultados de búsqueda web muestran referencias a un modelo de arte anime llamado "Housou-kun" en plataformas como Tensor.Art, PixAI y Civitai, pero no existe evidencia de que este repositorio de Hugging Face corresponda a ese modelo. No hay datos verificables sobre su naturaleza, tamaño o capacidades. Por tanto, esta ficha se limita a documentar la ausencia de información pública y a señalar las posibles confusiones con otros proyectos homónimos.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -43,7 +43,7 @@ No disponible. No existen datos técnicos que permitan comparar este modelo con 
 - Cualquier intento de desplegar o integrar este modelo en producción debe esperar a que el autor publique información completa.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/housou/houskou
+- Repositorio en Hugging Face: https://huggingface.co/housou/houskou
 - Referencias externas no verificadas (posiblemente homónimas):
   - TensorHub Art: https://tensorhub.art/models/965827640999043019
   - Tensor.Art: https://tensor.art/models/965827640999043019

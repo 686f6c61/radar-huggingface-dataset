@@ -86,7 +86,7 @@ El propio autor indica que esta comparaci√≥n no constituye prueba de memorizaci√
 
 ## Enlaces
 
-- [HuggingFace: superuser77/llm-course-hw2-dpo](https://huggingface.co/superuser77/llm-course-hw2-dpo)
+- [Hugging Face: superuser77/llm-course-hw2-dpo](https://huggingface.co/superuser77/llm-course-hw2-dpo)
 - [Reward model del mismo curso](https://huggingface.co/superuser77/llm-course-hw2-reward-model)
 - [Variante PPO del mismo curso](https://huggingface.co/superuser77/llm-course-hw2-ppo)
 - [Modelo base: HuggingFaceTB/SmolLM-135M-Instruct](https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct)

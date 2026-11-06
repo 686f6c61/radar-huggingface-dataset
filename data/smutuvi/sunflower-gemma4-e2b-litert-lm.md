@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia entre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smutuvi/Sunflower-Gemma4-E2B-litert-lm
+- Modelo en Hugging Face: https://huggingface.co/smutuvi/Sunflower-Gemma4-E2B-litert-lm
 - Modelo base (Sunbird/Sunflower-Gemma4-E2B): https://huggingface.co/Sunbird/Sunflower-Gemma4-E2B
 - Documentacion de SALT (Sunbird): https://salt.sunbird.ai/models/sunflower-gemma4-e2b/
 - Repositorio de LiteRT-LM (Google AI Edge): https://github.com/google-ai-edge/LiteRT-LM

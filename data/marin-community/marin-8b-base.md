@@ -6,13 +6,13 @@ Marin 8B Base es un modelo de lenguaje de tipo transformer decoder-only con 8.03
 
 El modelo resuelve el problema de disponer de un checkpoint base reproducible y auditable, con datasets públicos documentados y una cadena de checkpoints intermedios publicada (kestrel, ocelot, jellyfish, phoenix, starling, deeper-starling), lo que facilita la investigación sobre dinámicas de entrenamiento y la experimentación con fine-tuning. Es relevante ahora porque el ecosistema open source carece de modelos de 8B con trazabilidad completa del cómputo y de los datos, y Marin apuesta explícitamente por esa transparencia.
 
-La arquitectura sigue el esquema Llama (tag `llama` en HuggingFace), con pesos en safetensors y compatibilidad drop-in con el tooling existente. La longitud de contexto no está especificada en la información disponible. Existe además una variante Instruct entrenada únicamente con SFT (sin RLHF ni DPO), aunque esta ficha se centra en el modelo base.
+La arquitectura sigue el esquema Llama (tag `llama` en Hugging Face), con pesos en safetensors y compatibilidad drop-in con el tooling existente. La longitud de contexto no está especificada en la información disponible. Existe además una variante Instruct entrenada únicamente con SFT (sin RLHF ni DPO), aunque esta ficha se centra en el modelo base.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (familia Llama según tag de HuggingFace) |
+| Arquitectura | Transformer decoder-only (familia Llama según tag de Hugging Face) |
 | Parámetros totales | 8.030.261.248 |
 | Parámetros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -86,7 +86,7 @@ La comparación se limita a parámetros, licencia e idioma, ya que no se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marin-community/marin-8b-base
+- Modelo en Hugging Face: https://huggingface.co/marin-community/marin-8b-base
 - Proyecto Marin: https://marin.community
 - Dataset Nemotron-CC: https://data.commoncrawl.org/contrib/Nemotron/Nemotron-CC/index.html
 - Dataset DCLM Baseline: https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0

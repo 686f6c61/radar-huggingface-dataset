@@ -4,7 +4,7 @@
 
 ## Resumen
 
-SOTAagi2030/Bayline-Calibration-Archive es un repositorio publicado en HuggingFace por el usuario SOTAagi2030 el 7 de octubre de 2026 (ultima actualizacion el mismo dia, apenas 25 segundos despues de su creacion). A pesar de su alojamiento en HuggingFace, la model card no describe ninguna red neuronal: se presenta como un "Archive: BAY-24" con un "Format: cal-v4", un corte de aprobacion del 30 de junio de 2025, dos zonas (estuary, upland), 2 calibraciones seleccionadas, 1820 muestras totales y una deriva media (mean drift) de -5,0 ppm. El campo "ppm" (partes por millon) y la terminologia de calibracion apuntan a datos de instrumentacion o sensores, no a un modelo de lenguaje.
+SOTAagi2030/Bayline-Calibration-Archive es un repositorio publicado en Hugging Face por el usuario SOTAagi2030 el 7 de octubre de 2026 (ultima actualizacion el mismo dia, apenas 25 segundos despues de su creacion). A pesar de su alojamiento en Hugging Face, la model card no describe ninguna red neuronal: se presenta como un "Archive: BAY-24" con un "Format: cal-v4", un corte de aprobacion del 30 de junio de 2025, dos zonas (estuary, upland), 2 calibraciones seleccionadas, 1820 muestras totales y una deriva media (mean drift) de -5,0 ppm. El campo "ppm" (partes por millon) y la terminologia de calibracion apuntan a datos de instrumentacion o sensores, no a un modelo de lenguaje.
 
 No se declara autor institucional, licencia, idioma, pipeline ni arquitectura. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta, y su unico tag es "region:us". Por tanto, no existe informacion publica sobre parametros, contexto, cuantizacion o capacidades de inferencia.
 
@@ -80,7 +80,7 @@ No disponible. No se conocen modelos comparables en la informacion proporcionada
 - Licencia no disponible: se desconoce si se permite el uso comercial, la redistribucion o la modificacion de los datos.
 - Ausencia total de model card tecnica: no hay informacion sobre arquitectura, entrenamiento, evaluacion ni procedencia de los datos.
 - Ambiguedad sobre la naturaleza del contenido: no se especifica que magnitud fisica mide la calibracion ni a que tipo de instrumento corresponde.
-- Riesgo de mala interpretacion: el alojamiento en HuggingFace puede inducir a confundirlo con un modelo de IA cuando los metadatos describen un archivo de calibraciones.
+- Riesgo de mala interpretacion: el alojamiento en Hugging Face puede inducir a confundirlo con un modelo de IA cuando los metadatos describen un archivo de calibraciones.
 - Cero traccion verificable: 0 descargas y 0 likes, sin evidencia de revision por parte de la comunidad.
 - Fechas incoherentes: la creacion (2026-10-07) es posterior al corte de aprobacion (2025-06-30), lo que debe tenerse en cuenta al reconstruir la cronologia.
 - Valor de deriva negativo: una deriva media de -5,0 ppm indica un sesgo direccional, no un error absoluto; conviene no interpretarlo como una medida de precision.
@@ -88,4 +88,4 @@ No disponible. No se conocen modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SOTAagi2030/Bayline-Calibration-Archive
+- Repositorio en Hugging Face: https://huggingface.co/SOTAagi2030/Bayline-Calibration-Archive

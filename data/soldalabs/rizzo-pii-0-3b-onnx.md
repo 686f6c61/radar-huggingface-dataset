@@ -91,7 +91,7 @@ La informacion disponible no incluye otros modelos comparables de deteccion de P
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SoldaLabs/rizzo-pii-0.3B-onnx
+- Repositorio Hugging Face: https://huggingface.co/SoldaLabs/rizzo-pii-0.3B-onnx
 - Modelo original: https://huggingface.co/rizzoaiacademy/rizzo-pii-0.3B
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Dataset: https://huggingface.co/datasets/rizzoaiacademy/rizzo-pii-it-dataset

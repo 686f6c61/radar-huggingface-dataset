@@ -74,7 +74,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/georgeven/songmae-large-32x4
+- Modelo en Hugging Face: https://huggingface.co/georgeven/songmae-large-32x4
 - Colección de modelos SongMAE: https://huggingface.co/collections/georgeven/songmae-a-bioacoustic-encoder-for-birdsong-6a91eb9c42e5cde53962fbec
 - Paper en bioRxiv: https://www.biorxiv.org/content/10.64898/2026.08.17.745361v1
 - Paper en NeurIPS: https://nips.cc/virtual/2025/loc/san-diego/131534

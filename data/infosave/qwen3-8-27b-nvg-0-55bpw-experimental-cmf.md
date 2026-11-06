@@ -76,9 +76,9 @@ Rendimiento de decodificación: 71–76 tok/s en una RTX PRO 6000 con Vulkan. No
 
 | Modelo | Parámetros | Contexto | Tamaño en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (q8_2f) | 27B | no disponible | 27,38 GB | apache-2.0 | HuggingFace |
-| GPTQ q2tp del mismo base | 27B | no disponible | 11,41 GB | apache-2.0 | HuggingFace |
-| Este archivo (NVG 0,55 bpw) | 27B | no disponible | 4,89 GB | apache-2.0 | HuggingFace |
+| Qwen3.8-27B (q8_2f) | 27B | no disponible | 27,38 GB | apache-2.0 | Hugging Face |
+| GPTQ q2tp del mismo base | 27B | no disponible | 11,41 GB | apache-2.0 | Hugging Face |
+| Este archivo (NVG 0,55 bpw) | 27B | no disponible | 4,89 GB | apache-2.0 | Hugging Face |
 | LittleBit (referencia metodológica) | varios | no disponible | no disponible | no disponible | paper arXiv:2506.13771 |
 
 En calidad medida por perplexity, este archivo es claramente peor que q8_2f y que GPTQ q2tp en todos los conjuntos. La ventaja es el tamaño (5,6× menor que q8_2f) y el coste de compresión (10,5 M tokens frente a los ~196 M tokens y 123,6 H100-horas que NanoQuant reporta para un 7B con LittleBit).
@@ -100,7 +100,7 @@ En calidad medida por perplexity, este archivo es claramente peor que q8_2f y qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/infosave/Qwen3.8-27B-NVG-0.55bpw-Experimental-cmf
+- Hugging Face: https://huggingface.co/infosave/Qwen3.8-27B-NVG-0.55bpw-Experimental-cmf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio cortiq (releases): https://github.com/infosave2007/cmf/releases
 - Paper LittleBit: https://arxiv.org/abs/2506.13771

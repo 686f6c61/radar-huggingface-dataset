@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`step-040`) | 4.022 M | no confirmado (32.768 en un hermano; 262.144 en el base) | Apache 2.0 | Piloto de RL médico, paso intermedio | HuggingFace, 183 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 | 4.022 M | 262.144 tokens | Apache 2.0 | Instruct generalista, sin RL médico | HuggingFace, ampliamente desplegado |
-| Qwen3-4B-Thinking-2507 | ~4.000 M | 262.144 tokens | Apache 2.0 | Razonamiento explícito (thinking mode) | HuggingFace |
-| google/gemma-3-4b-it | ~4.000 M | 131.072 tokens | Gemma Terms of Use | Instruct multimodal (texto e imagen) | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3.212 M | 131.072 tokens | Llama 3.2 Community License | Instruct generalista | HuggingFace |
+| Este checkpoint (`step-040`) | 4.022 M | no confirmado (32.768 en un hermano; 262.144 en el base) | Apache 2.0 | Piloto de RL médico, paso intermedio | Hugging Face, 183 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 | 4.022 M | 262.144 tokens | Apache 2.0 | Instruct generalista, sin RL médico | Hugging Face, ampliamente desplegado |
+| Qwen3-4B-Thinking-2507 | ~4.000 M | 262.144 tokens | Apache 2.0 | Razonamiento explícito (thinking mode) | Hugging Face |
+| google/gemma-3-4b-it | ~4.000 M | 131.072 tokens | Gemma Terms of Use | Instruct multimodal (texto e imagen) | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3.212 M | 131.072 tokens | Llama 3.2 Community License | Instruct generalista | Hugging Face |
 
 La diferencia práctica frente a los alternativas no está en parámetros ni en contexto, sino en el propósito: este checkpoint es un artefacto de investigación con estados de entrenamiento completos y trazabilidad de semilla, mientras que los modelos citados son productos finales estables. Para cualquier uso en producción, Qwen3-4B-Instruct-2507 es la opción sensata; este checkpoint solo aporta valor en contextos experimentales.
 
@@ -88,7 +88,7 @@ La diferencia práctica frente a los alternativas no está en parámetros ni en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-040
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-040
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Checkpoint hermano step-002 (ficha con contexto de 32.768 tokens): https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-002
 - Checkpoint hermano step-038: https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-038

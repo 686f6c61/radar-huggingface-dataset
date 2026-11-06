@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ChuckyBaby99/my-awesome-model` es un checkpoint de `transformers` publicado en HuggingFace por el usuario ChuckyBaby99. Por los metadatos disponibles, se trata de un modelo encoder-only de arquitectura BERT, con 108.310.272 parámetros y pipeline `feature-extraction`; el repositorio ocupa 0,4 GB y los pesos están en `safetensors`.
+`ChuckyBaby99/my-awesome-model` es un checkpoint de `transformers` publicado en Hugging Face por el usuario ChuckyBaby99. Por los metadatos disponibles, se trata de un modelo encoder-only de arquitectura BERT, con 108.310.272 parámetros y pipeline `feature-extraction`; el repositorio ocupa 0,4 GB y los pesos están en `safetensors`.
 
-El modelo no está orientado a generación de texto, sino a producir representaciones contextuales para tareas de clasificación, etiquetado, búsqueda semántica o extracción de características. La model card es la plantilla automática de HuggingFace y no aporta información sobre entrenamiento, datos, idiomas, licencia o evaluación.
+El modelo no está orientado a generación de texto, sino a producir representaciones contextuales para tareas de clasificación, etiquetado, búsqueda semántica o extracción de características. La model card es la plantilla automática de Hugging Face y no aporta información sobre entrenamiento, datos, idiomas, licencia o evaluación.
 
 Su relevancia práctica es limitada sin validación adicional: no hay resultados de benchmarks, licencia declarada ni evidencias de ajuste fino. Puede servir como checkpoint base experimental, pero no debería desplegarse en producción sin confirmar configuración, tokenizador, licencia y calidad real en la tarea objetivo.
 
@@ -25,7 +25,7 @@ Su relevancia práctica es limitada sin validación adicional: no hay resultados
 
 La arquitectura declarada por los tags es `bert`, un transformer encoder-only. El número exacto de capas, dimensión oculta, cabezas de atención, vocabulario y tokenizador no está disponible en la información proporcionada. Tampoco se confirma si el checkpoint sigue exactamente la configuración de BERT-base o una variante con vocabulario o cabezas modificadas.
 
-No hay información sobre datos de entrenamiento, número de tokens, composición del corpus, objetivo de preentrenamiento, ajuste fino, RLHF o DPO. La model card es una plantilla automática con campos `[More Information Needed]`. El tag `arxiv:1910.09700` corresponde al artículo de Lacoste et al. sobre estimación de impacto ambiental, citado en la plantilla de HuggingFace; no es el paper del modelo.
+No hay información sobre datos de entrenamiento, número de tokens, composición del corpus, objetivo de preentrenamiento, ajuste fino, RLHF o DPO. La model card es una plantilla automática con campos `[More Information Needed]`. El tag `arxiv:1910.09700` corresponde al artículo de Lacoste et al. sobre estimación de impacto ambiental, citado en la plantilla de Hugging Face; no es el paper del modelo.
 
 ## Capacidades
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---:|---:|---|---|---|
-| `ChuckyBaby99/my-awesome-model` | 108,3 M | No disponible | No disponible | Safetensors en HuggingFace | No disponible |
-| BERT-base | ~109 M | 512 tokens | Apache-2.0 | HuggingFace | Benchmarks públicos; no comparado aquí |
-| DistilBERT base | ~66 M | 512 tokens | Apache-2.0 | HuggingFace | Benchmarks públicos; no comparado aquí |
-| RoBERTa-base | ~125 M | 514 tokens | MIT | HuggingFace | Benchmarks públicos; no comparado aquí |
+| `ChuckyBaby99/my-awesome-model` | 108,3 M | No disponible | No disponible | Safetensors en Hugging Face | No disponible |
+| BERT-base | ~109 M | 512 tokens | Apache-2.0 | Hugging Face | Benchmarks públicos; no comparado aquí |
+| DistilBERT base | ~66 M | 512 tokens | Apache-2.0 | Hugging Face | Benchmarks públicos; no comparado aquí |
+| RoBERTa-base | ~125 M | 514 tokens | MIT | Hugging Face | Benchmarks públicos; no comparado aquí |
 
 La comparación de rendimiento no se incluye porque el modelo evaluado no publica resultados y no se ha evaluado en esta ficha. BERT-base, DistilBERT y RoBERTa-base son alternativas consolidadas con licencia y configuración documentadas; el modelo evaluado no permite confirmar todavía esas condiciones.
 
@@ -95,6 +95,6 @@ La comparación de rendimiento no se incluye porque el modelo evaluado no public
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChuckyBaby99/my-awesome-model
+- Hugging Face: https://huggingface.co/ChuckyBaby99/my-awesome-model
 - Artículo citado en la plantilla, no paper del modelo: https://arxiv.org/abs/1910.09700
 - No se han encontrado repositorio, demo o paper específico del modelo en la información proporcionada.

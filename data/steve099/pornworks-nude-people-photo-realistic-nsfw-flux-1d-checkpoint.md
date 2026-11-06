@@ -4,7 +4,7 @@
 
 PornWorks Nude People Photo Realistic NSFW Flux 1D Checkpoint es un checkpoint de generación de imágenes texto-a-imagen publicado por el usuario steve099 (repositorio espejo de la cuenta AI-Porn) y distribuido originalmente a través de CivitAI por el proyecto PornWorks. Según su model card, se trata del primer modelo de la familia PornWorks construido sobre Flux ("flux1d") y está especializado en desnudos fotorrealistas con fines eróticos: el propio autor advierte que el modelo sirve para erotismo y no permite generar escenas de sexo explícito. Es, por tanto, un fine-tune de un modelo base Flux orientado a un nicho de contenido NSFW, no un modelo de propósito general.
 
-Su relevancia es acotada y muy específica: cubre un hueco del ecosistema Flux, que en su versión original tiende a censurar o difuminar genitales y pezones cuando se le piden desnudos, y lo hace manteniendo el estilo fotorrealista característico de la familia. El repositorio de HuggingFace no aporta información técnica sobre el proceso de entrenamiento, los datos utilizados ni el número de pasos de fine-tuning.
+Su relevancia es acotada y muy específica: cubre un hueco del ecosistema Flux, que en su versión original tiende a censurar o difuminar genitales y pezones cuando se le piden desnudos, y lo hace manteniendo el estilo fotorrealista característico de la familia. El repositorio de Hugging Face no aporta información técnica sobre el proceso de entrenamiento, los datos utilizados ni el número de pasos de fine-tuning.
 
 El checkpoint pesa 11,9 GB (11,1 GB para el archivo `pornworksNudePeoplePhoto_02.safetensors` de la versión 0.2), un tamaño coherente con pesos en precisión fp8 de un modelo Flux, aunque el autor no confirma ni la arquitectura exacta ni la precisión. La model card solo documenta los parámetros de inferencia recomendados: 20 pasos, sampler "Flux Realistic", scheduler "Simple" y Guidance Scale Distillate de 3,5.
 
@@ -26,7 +26,7 @@ El checkpoint pesa 11,9 GB (11,1 GB para el archivo `pornworksNudePeoplePhoto_02
 | Sampler / scheduler | Flux Realistic / Simple |
 | Guidance Scale Distillate | 3,5 |
 | Tamaño del repositorio | 11,9 GB |
-| Descargas / likes (HuggingFace) | 0 / 0 en este repositorio |
+| Descargas / likes (Hugging Face) | 0 / 0 en este repositorio |
 | Fecha declarada en el repositorio | Creación y actualización: 2026-10-29 (posterior a la publicación original en CivitAI, enero de 2025) |
 
 ## Arquitectura y entrenamiento
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Tipo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| PornWorks Flux 1D (este checkpoint) | No disponible (~12 000 M si deriva de FLUX.1) | Fine-tune texto-a-imagen sobre Flux | openrail++ | HuggingFace (0 descargas) y CivitAI | Especializado en desnudo fotorrealista; no genera actos sexuales según el autor |
-| FLUX.1 [dev] (Black Forest Labs) | ~12 000 M | Modelo base texto-a-imagen | FLUX.1 [dev] Non-Commercial License | Pesos abiertos en HuggingFace | Referencia de calidad fotorrealista; tiende a censurar genitales y pezones en desnudos, motivación declarada de este fine-tune |
-| FLUX.1 [schnell] (Black Forest Labs) | ~12 000 M | Modelo base texto-a-imagen destilado | Apache 2.0 | Pesos abiertos en HuggingFace | Licencia permisiva y menos pasos de inferencia, pero menor fidelidad de prompt y misma tendencia a evitar desnudo explícito |
-| Checkpoints NSFW derivados de SDXL (familia genérica) | ~3 500 M | Fine-tune texto-a-imagen sobre SDXL | Varía (CreativeML OpenRAIL++-M o similar) | CivitAI / HuggingFace | Menor coste de VRAM y ecosistema LoRA más maduro, pero peor coherencia anatómica y de texto renderizado que Flux |
+| PornWorks Flux 1D (este checkpoint) | No disponible (~12 000 M si deriva de FLUX.1) | Fine-tune texto-a-imagen sobre Flux | openrail++ | Hugging Face (0 descargas) y CivitAI | Especializado en desnudo fotorrealista; no genera actos sexuales según el autor |
+| FLUX.1 [dev] (Black Forest Labs) | ~12 000 M | Modelo base texto-a-imagen | FLUX.1 [dev] Non-Commercial License | Pesos abiertos en Hugging Face | Referencia de calidad fotorrealista; tiende a censurar genitales y pezones en desnudos, motivación declarada de este fine-tune |
+| FLUX.1 [schnell] (Black Forest Labs) | ~12 000 M | Modelo base texto-a-imagen destilado | Apache 2.0 | Pesos abiertos en Hugging Face | Licencia permisiva y menos pasos de inferencia, pero menor fidelidad de prompt y misma tendencia a evitar desnudo explícito |
+| Checkpoints NSFW derivados de SDXL (familia genérica) | ~3 500 M | Fine-tune texto-a-imagen sobre SDXL | Varía (CreativeML OpenRAIL++-M o similar) | CivitAI / Hugging Face | Menor coste de VRAM y ecosistema LoRA más maduro, pero peor coherencia anatómica y de texto renderizado que Flux |
 
 Los datos de los modelos base (parámetros y licencias) proceden de información pública de Black Forest Labs; no se ha verificado que este checkpoint concreto use esa base.
 
@@ -87,14 +87,14 @@ Los datos de los modelos base (parámetros y licencias) proceden de información
 - Censura residual del modelo base: el autor advierte de que el modelo está pensado para erótica y no permite generar escenas de sexo explícito, lo que refleja la persistencia de los sesgos del modelo base Flux.
 - Limitación de idioma: solo inglés. Los prompts en castellano producirán resultados degradados.
 - Licencia openrail++: incluye cláusulas de uso aceptable que restringen aplicaciones dañinas y exigen el cumplimiento de la política de uso; conviene revisar el texto completo antes de un uso comercial. La licencia no garantiza derechos sobre las imágenes generadas en todas las jurisdicciones.
-- Validación comunitaria inexistente en este repositorio: 0 descargas y 0 likes en HuggingFace, frente a los 188 likes del espejo AI-Porn. Es probable que este repositorio sea un reupload del original, sin garantía de mantenimiento ni de integridad de los archivos.
+- Validación comunitaria inexistente en este repositorio: 0 descargas y 0 likes en Hugging Face, frente a los 188 likes del espejo AI-Porn. Es probable que este repositorio sea un reupload del original, sin garantía de mantenimiento ni de integridad de los archivos.
 - Metadatos inconsistentes: la etiqueta del repositorio incluye `sdxl` pese a que el modelo se presenta como Flux, y la fecha declarada (2026-10-29) es muy posterior a la publicación original en CivitAI (enero de 2025). Conviene verificar el hash y el origen del archivo antes de usarlo en producción.
 - Ausencia de documentación técnica: no hay información sobre dataset, método de entrenamiento, evaluación ni limitaciones declaradas por el autor, lo que impide auditar sesgos o calidad de forma rigurosa.
 
 ## Enlaces
 
-- HuggingFace (repositorio de steve099): https://huggingface.co/steve099/pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint
-- HuggingFace (espejo AI-Porn, 188 likes): https://huggingface.co/AI-Porn/pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint
+- Hugging Face (repositorio de steve099): https://huggingface.co/steve099/pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint
+- Hugging Face (espejo AI-Porn, 188 likes): https://huggingface.co/AI-Porn/pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint
 - CivitAI (modelo original): https://civitai.com/models/836198/pornworks-nude-people-photo-realistic-nsfw-flux-1d-chekpoint
 - CivArchive (ficha del modelo): https://civarchive.com/models/836198?modelVersionId=935551
 - CivArchive (versión 0.2, archivo `pornworksNudePeoplePhoto_02.safetensors`): https://civarchive.com/tungsten/models/985RuBn5Xt/versions/9CzqKWkFeT

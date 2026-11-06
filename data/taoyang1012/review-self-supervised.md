@@ -68,7 +68,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taoyang1012/review-self-supervised
+- Repositorio en Hugging Face: https://huggingface.co/taoyang1012/review-self-supervised
 - Referencia general sobre SSL (GeeksforGeeks): https://www.geeksforgeeks.org/machine-learning/self-supervised-learning-ssl/
 - Explicación de SSL (Snowflake): https://www.snowflake.com/en/fundamentals/self-supervised-learning/
 - Artículo de Wikipedia sobre SSL: https://en.wikipedia.org/wiki/Self-supervised_learning

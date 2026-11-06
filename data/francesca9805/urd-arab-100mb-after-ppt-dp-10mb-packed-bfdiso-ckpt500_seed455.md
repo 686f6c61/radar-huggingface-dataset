@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/urd-arab-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (SFT, *supervised fine-tuning*) derivado de `francesca9805/urd-arab-100mb-ppt-Dp-10mb-packed-bfdiso_seed455`, desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo causal de generación de texto con arquitectura GPT-2 y 123.197.952 parámetros (aproximadamente 123 millones), entrenado con la librería TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0. Por tamaño y por el flujo de trabajo declarado, encaja en la categoría de modelos pequeños de investigación más que en la de modelos listos para producción.
+El modelo `francesca9805/urd-arab-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (SFT, *supervised fine-tuning*) derivado de `francesca9805/urd-arab-100mb-ppt-Dp-10mb-packed-bfdiso_seed455`, desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo causal de generación de texto con arquitectura GPT-2 y 123.197.952 parámetros (aproximadamente 123 millones), entrenado con la librería TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0. Por tamaño y por el flujo de trabajo declarado, encaja en la categoría de modelos pequeños de investigación más que en la de modelos listos para producción.
 
 El nombre del repositorio (`urd-arab-100mb`, `Dp-10mb-packed`, `ckpt500_seed455`) y el proyecto de seguimiento asociado en Weights & Biases (`new-tokenizers`) sugieren un experimento académico centrado en corpus y tokenizadores para lenguas de bajos recursos, presumiblemente urdu y árabe, con un conjunto de datos de unos 100 MB y un subconjunto empaquetado de 10 MB. Esta interpretación es una inferencia a partir de la nomenclatura, no un dato confirmado en la model card.
 
@@ -21,7 +21,7 @@ Su relevancia es, por tanto, fundamentalmente metodológica: documenta un *pipel
 | Licencia | no disponible (la model card contiene el marcador de posicion `licence: license`) |
 | Formato de pesos | safetensors |
 
-Otros datos tecnicos: modelo base `francesca9805/urd-arab-100mb-ppt-Dp-10mb-packed-bfdiso_seed455`; tarea declarada `text-generation`; tamano del repositorio 4,2 GB; 337 descargas y 0 *likes* en el momento de la consulta; creado el 8 de octubre de 2026 y actualizado el mismo dia segun los metadatos de HuggingFace.
+Otros datos tecnicos: modelo base `francesca9805/urd-arab-100mb-ppt-Dp-10mb-packed-bfdiso_seed455`; tarea declarada `text-generation`; tamano del repositorio 4,2 GB; 337 descargas y 0 *likes* en el momento de la consulta; creado el 8 de octubre de 2026 y actualizado el mismo dia segun los metadatos de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -46,7 +46,7 @@ El entrenamiento se realizo mediante SFT con TRL 0.23.0, un ajuste supervisado s
 - Prototipado de bajo coste en local: con 123 M de parametros se puede ejecutar en CPU o en cualquier GPU de consumo, lo que permite validar *pipelines* de generacion de texto antes de escalar a modelos mayores.
 - Generacion de texto corto para normalizacion o romanizacion: en escenarios de procesamiento de texto en escritura arabe o urdu, un modelo de este tamano puede emplearse para tareas acotadas de reescritura o completado, siempre con validacion humana.
 - Aumento de datos a pequena escala: generar variaciones de frases para ampliar corpus anotados manualmente en lenguas con pocos recursos, filtrando despues por calidad con heuristicas o un modelo mayor.
-- Pruebas de integracion de infraestructura de inferencia: los tags `text-generation-inference` y `endpoints_compatible` permiten usarlo como modelo de prueba para validar despliegues con TGI o endpoints compatibles con la API de HuggingFace antes de sustituirlo por un modelo mayor.
+- Pruebas de integracion de infraestructura de inferencia: los tags `text-generation-inference` y `endpoints_compatible` permiten usarlo como modelo de prueba para validar despliegues con TGI o endpoints compatibles con la API de Hugging Face antes de sustituirlo por un modelo mayor.
 - Punto de partida para ajustes posteriores de dominio: al ser un modelo pequeno, el coste de un nuevo SFT o de un LoRA sobre un dominio concreto (juridico, medico, administrativo en arabe o urdu) es muy bajo.
 
 ## Benchmarks y rendimiento
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (`...ckpt500_seed455`) | 123,2 M | no disponible | no disponible | HuggingFace, 337 descargas, 0 likes |
-| GPT-2 small (`openai-community/gpt2`) | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente desplegado |
-| DistilGPT-2 (`distilbert/distilgpt2`) | 82 M | 1024 tokens | Apache-2.0 | HuggingFace, muy extendido |
-| GPT-2 medium (`openai-community/gpt2-medium`) | 355 M | 1024 tokens | MIT | HuggingFace |
+| Este modelo (`...ckpt500_seed455`) | 123,2 M | no disponible | no disponible | Hugging Face, 337 descargas, 0 likes |
+| GPT-2 small (`openai-community/gpt2`) | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente desplegado |
+| DistilGPT-2 (`distilbert/distilgpt2`) | 82 M | 1024 tokens | Apache-2.0 | Hugging Face, muy extendido |
+| GPT-2 medium (`openai-community/gpt2-medium`) | 355 M | 1024 tokens | MIT | Hugging Face |
 
 Los valores de parametros, contexto y licencia de GPT-2 small, DistilGPT-2 y GPT-2 medium son datos publicos de sus respectivas model cards; se incluyen como referencia de categoria, no como resultado de una evaluacion comparativa. No existe ningun benchmark que enfrente este ajuste con esos modelos, de modo que la comparacion es estructural (tamano, licencia y disponibilidad) y no de rendimiento. El modelo mas directamente comparable en proposito, si se confirma el enfoque multilingue urdu-arabe, no esta identificado en la informacion disponible.
 
@@ -83,12 +83,12 @@ Los valores de parametros, contexto y licencia de GPT-2 small, DistilGPT-2 y GPT
 - Longitud de contexto no especificada: no se puede garantizar el manejo de conversaciones largas ni de documentos extensos.
 - Sin soporte declarado de *tool calling* ni de agentes: no debe integrarse en flujos que exijan llamadas a funciones estructuradas sin validacion previa.
 - Repositorio de 4,2 GB frente a 0,25 GB de pesos: verificar el contenido antes de la descarga y del despliegue, ya que puede incluir artefactos de entrenamiento no necesarios.
-- Fechas de creacion anomales (2026) en los metadatos de HuggingFace: conviene tratarlas con cautela al citar el modelo.
+- Fechas de creacion anomales (2026) en los metadatos de Hugging Face: conviene tratarlas con cautela al citar el modelo.
 - Uso en produccion desaconsejado: no hay garantia de estabilidad, soporte ni mantenimiento por parte del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/a57ndb67
 - Repositorio de TRL: https://github.com/huggingface/trl

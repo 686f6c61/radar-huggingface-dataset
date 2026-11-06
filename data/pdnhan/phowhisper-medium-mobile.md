@@ -90,7 +90,7 @@ La diferencia principal frente a PhoWhisper-medium original es el formato: esta 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pdnhan/PhoWhisper-medium-mobile
+- Modelo en Hugging Face: https://huggingface.co/pdnhan/PhoWhisper-medium-mobile
 - Modelo base: https://huggingface.co/vinai/PhoWhisper-medium
 - Paper de PhoWhisper: no disponible en la información proporcionada (citado en la model card como inproceedings PhoWhisper)
 - ONNX Runtime: https://onnxruntime.ai

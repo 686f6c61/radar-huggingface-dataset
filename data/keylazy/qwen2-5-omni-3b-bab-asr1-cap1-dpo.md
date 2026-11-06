@@ -2,7 +2,7 @@
 
 ## Resumen
 
-keylazy/Qwen2.5-Omni-3B-bab-asr1-cap1-dpo es un modelo publicado en HuggingFace por el usuario keylazy cuyo nombre sugiere un ajuste fino (fine-tuning) con optimizacion por preferencias (DPO) sobre Qwen2.5-Omni-3B, orientado a tareas de reconocimiento automatico del habla (ASR) y generacion de descripciones o subtitulos (captioning). La ficha del modelo, sin embargo, no confirma ninguno de estos extremos: se trata de la plantilla autogenerada por HuggingFace con todos los campos marcados como "[More Information Needed]", sin documentacion tecnica, sin autores declarados y sin resultados de evaluacion.
+keylazy/Qwen2.5-Omni-3B-bab-asr1-cap1-dpo es un modelo publicado en Hugging Face por el usuario keylazy cuyo nombre sugiere un ajuste fino (fine-tuning) con optimizacion por preferencias (DPO) sobre Qwen2.5-Omni-3B, orientado a tareas de reconocimiento automatico del habla (ASR) y generacion de descripciones o subtitulos (captioning). La ficha del modelo, sin embargo, no confirma ninguno de estos extremos: se trata de la plantilla autogenerada por Hugging Face con todos los campos marcados como "[More Information Needed]", sin documentacion tecnica, sin autores declarados y sin resultados de evaluacion.
 
 El repositorio tiene un tamano de 0,1 GB, lo que resulta incoherente con el peso esperado de un modelo de 3.000 millones de parametros (aproximadamente 6 GB en precision fp16). Esto apunta a que el repositorio contiene unicamente adaptadores, ficheros de configuracion parciales o pesos incompletos, por lo que no puede descartarse que el modelo no sea cargable de forma autonoma sin el checkpoint base. El modelo registra 0 descargas y 0 "likes", y fue creado el 19 de septiembre de 2026 (fecha futura respecto a los datos habituales de publicacion), lo que refuerza la sospecha de un experimento privado o de un repositorio de prueba.
 
@@ -29,7 +29,7 @@ No se ha publicado informacion sobre arquitectura, datos de entrenamiento, licen
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card, que es la plantilla autogenerada por defecto de HuggingFace y no contiene ningun dato tecnico. El identificador del repositorio sugiere que se parte de Qwen2.5-Omni-3B, un modelo multimodal (texto, audio y vision) de la familia Qwen, y que sobre el se habria aplicado un ajuste fino supervisado seguido de una etapa de optimizacion por preferencias (DPO, por las siglas en el nombre), con dos componentes de datos aparentes: "asr" (reconocimiento automatico del habla) y "cap" (captioning o descripcion). Ninguno de estos extremos esta confirmado por el autor.
+No se ha publicado informacion sobre la arquitectura en la model card, que es la plantilla autogenerada por defecto de Hugging Face y no contiene ningun dato tecnico. El identificador del repositorio sugiere que se parte de Qwen2.5-Omni-3B, un modelo multimodal (texto, audio y vision) de la familia Qwen, y que sobre el se habria aplicado un ajuste fino supervisado seguido de una etapa de optimizacion por preferencias (DPO, por las siglas en el nombre), con dos componentes de datos aparentes: "asr" (reconocimiento automatico del habla) y "cap" (captioning o descripcion). Ninguno de estos extremos esta confirmado por el autor.
 
 Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, la receta de alineacion, hiperparametros, infraestructura de computo ni emisiones de carbono: todos esos apartados de la model card aparecen como "[More Information Needed]". El unico elemento trazable es la referencia al articulo arXiv:1910.09700 (Lacoste et al., estimacion de impacto ambiental en aprendizaje automatico), que aparece en la plantilla por defecto y no implica ninguna innovacion tecnica del modelo.
 
@@ -101,7 +101,7 @@ No se dispone de datos verificados para establecer una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-asr1-cap1-dpo
+- Modelo en Hugging Face: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-asr1-cap1-dpo
 - Referencia citada en la plantilla de la model card (calculadora de impacto ambiental): https://mlco2.github.io/impact
 - Articulo citado en la etiqueta arxiv:1910.09700 (Lacoste et al.): https://arxiv.org/abs/1910.09700
 - Repositorio, paper o demo del autor: no disponible

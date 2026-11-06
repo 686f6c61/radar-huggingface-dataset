@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tatianavolkov/cs229-retrieval` es un repositorio de HuggingFace publicado por el usuario tatianavolkov que contiene una implementación propia de una Poolformer orientada a tareas de retrieval (recuperación), empaquetada junto con su configuración explícita y un checkpoint de inicialización. No se trata de un modelo entrenado ni publicado con fines de producción, sino de un punto de partida reproducible: el propio autor indica que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y no un checkpoint evaluado.
+`tatianavolkov/cs229-retrieval` es un repositorio de Hugging Face publicado por el usuario tatianavolkov que contiene una implementación propia de una Poolformer orientada a tareas de retrieval (recuperación), empaquetada junto con su configuración explícita y un checkpoint de inicialización. No se trata de un modelo entrenado ni publicado con fines de producción, sino de un punto de partida reproducible: el propio autor indica que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y no un checkpoint evaluado.
 
 El modelo declara la variante "xlarge", pero el recuento real de parámetros almacenados en safetensors es de solo 24.832 parámetros (aproximadamente 25.000), lo que sitúa el artefacto en un orden de magnitud muy inferior al que suele asociarse a la etiqueta "xlarge". Esta discrepancia es relevante para cualquier evaluador: conviene tratarla como una implementación experimental de escala reducida, no como un modelo de gran tamaño.
 
@@ -75,7 +75,7 @@ La comparación se establece a nivel de categoría (retrieval y arquitecturas Po
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tatianavolkov/cs229-retrieval | 24.832 (recuento real en safetensors) | no disponible | sin benchmark publicado | apache-2.0 | HuggingFace, checkpoint de inicialización, 0 descargas |
+| tatianavolkov/cs229-retrieval | 24.832 (recuento real en safetensors) | no disponible | sin benchmark publicado | apache-2.0 | Hugging Face, checkpoint de inicialización, 0 descargas |
 | Poolformer original (familia S/M) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | publicación de investigación |
 | Modelos de retrieval imagen-texto tipo CLIP | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | pesos entrenados y ampliamente desplegados |
 
@@ -94,7 +94,7 @@ No se dispone de datos verificados de parámetros, contexto ni rendimiento de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tatianavolkov/cs229-retrieval
+- Modelo en Hugging Face: https://huggingface.co/tatianavolkov/cs229-retrieval
 - Conjunto de evaluación sugerido por el autor: Flickr30k (referencia mencionada en la model card; no se proporciona enlace directo)
 - Ficheros incluidos en el repositorio: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada

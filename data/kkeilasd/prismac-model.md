@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PrismAC AI Anti-Cheat Model v2.0 es un clasificador supervisado basado en gradient boosting (350 árboles de decisión, 75 características de entrada) entrenado para detectar trampas en servidores de Minecraft 1.21.4, en concreto KillAura, AimAssist y TickControl. Lo publica el usuario kkeilasd en HuggingFace con 0 descargas y 1 like en el momento de redactar esta ficha. No es un modelo de lenguaje: es un modelo tabular de tres clases (legit, killaura, aimassist) cuya salida se obtiene mediante softmax.
+PrismAC AI Anti-Cheat Model v2.0 es un clasificador supervisado basado en gradient boosting (350 árboles de decisión, 75 características de entrada) entrenado para detectar trampas en servidores de Minecraft 1.21.4, en concreto KillAura, AimAssist y TickControl. Lo publica el usuario kkeilasd en Hugging Face con 0 descargas y 1 like en el momento de redactar esta ficha. No es un modelo de lenguaje: es un modelo tabular de tres clases (legit, killaura, aimassist) cuya salida se obtiene mediante softmax.
 
 El modelo consume una ventana de 20 ticks con paso de 10, sobre la que calcula 75 características: 56 básicas (7 estadísticas sobre 8 columnas de delta_yaw/pitch, aceleración, jerk y error de GCD) y 19 derivadas (ratios, correlaciones, tasas de cero, cambios de signo y extremos). Está diseñado para ejecutarse embebido en un plugin de servidor: el autor reporta unos 1050 recorridos de árbol por inferencia (350 árboles x 3 clases) en menos de 0,1 ms.
 
@@ -24,7 +24,7 @@ Su relevancia práctica está en el despliegue: se distribuye en cuatro formatos
 | Salidas | 3 probabilidades (legit, killaura, aimassist) vía softmax |
 | Autor | kkeilasd |
 | Fecha de publicacion | 2026-09-15 (última actualización 2026-09-15) |
-| Tamaño del repositorio | 0.0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0.0 GB (según Hugging Face) |
 | Plataforma objetivo | Servidor Paper 1.21.4 (Minecraft) |
 
 ## Arquitectura y entrenamiento
@@ -75,7 +75,7 @@ No se han publicado resultados comparativos contra otros anticheats ni métricas
 - GPU recomendadas: no aplica.
 - CPU: cualquier procesador moderno puede ejecutar la inferencia; el autor declara menos de 0,1 ms por ventana en la implementación Java.
 - Compatibilidad con GPU de consumo: no aplica, no hay dependencia de CUDA ni de aceleradores.
-- Memoria: no se especifica el consumo de RAM; el repositorio completo ocupa 0.0 GB según HuggingFace, por lo que el modelo es de tamaño muy reducido.
+- Memoria: no se especifica el consumo de RAM; el repositorio completo ocupa 0.0 GB según Hugging Face, por lo que el modelo es de tamaño muy reducido.
 - Opciones de despliegue: plugin Paper 1.21.4 (JAR con inferencia Java sobre `gbm_trees.json`), ONNX Runtime (`prismac_model.onnx`) y Python con scikit-learn/joblib (`prismac_model.joblib`).
 - Latencia y throughput: <0,1 ms por ventana declarados por el autor en Java; no se publican cifras de throughput agregado para múltiples jugadores concurrentes.
 
@@ -91,12 +91,12 @@ No se dispone de datos de benchmarks comparativos con otras soluciones anticheat
 - No se documentan la composición del dataset de entrenamiento, el número de muestras, la semilla ni los hiperparámetros, por lo que la reproducibilidad es limitada.
 - El modelo es estático: un cheat adaptativo que modifique sus patrones de rotación o temporización puede degradar la detección sin que exista un mecanismo de actualización automática.
 - Dependencia del dominio: las características se calculan sobre ticks de Minecraft 1.21.4; cambios de versión, mods, plugins de movimiento o ping elevado pueden alterar la distribución de entrada y el rendimiento.
-- No se declara licencia en el repositorio de HuggingFace, por lo que el uso comercial o la redistribución no están amparados explícitamente por ningún permiso.
+- No se declara licencia en el repositorio de Hugging Face, por lo que el uso comercial o la redistribución no están amparados explícitamente por ningún permiso.
 - Requiere el permiso `prismac.admin` (operador por defecto) para ejecutar los comandos de administración, lo que implica gestionar correctamente los roles del servidor.
 - La model card está redactada principalmente en ruso, lo que puede dificultar el mantenimiento por equipos que no trabajen en ese idioma.
 - No es un modelo de lenguaje: no genera texto, no responde a instrucciones y no debe evaluarse con benchmarks tipo MMLU, HumanEval o GSM8K.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kkeilasd/prismac-model
+- Modelo en Hugging Face: https://huggingface.co/kkeilasd/prismac-model
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (paper, repositorio, blog o demo); los resultados devueltos corresponden a herramientas de diagramación y juegos sin relación con PrismAC.

@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Devsyril/opus-mt-ee-en-onnx | no disponible | no disponible | ONNX | no disponible | HuggingFace |
-| onnx-community/opus-mt-zh-en | no disponible | no disponible | ONNX | CC-BY-4.0 | HuggingFace |
-| Helsinki-NLP/opus-mt-ee-en | ~300M (típico OPUS-MT) | no disponible | PyTorch | CC-BY-4.0 (original) | HuggingFace |
+| Devsyril/opus-mt-ee-en-onnx | no disponible | no disponible | ONNX | no disponible | Hugging Face |
+| onnx-community/opus-mt-zh-en | no disponible | no disponible | ONNX | CC-BY-4.0 | Hugging Face |
+| Helsinki-NLP/opus-mt-ee-en | ~300M (típico OPUS-MT) | no disponible | PyTorch | CC-BY-4.0 (original) | Hugging Face |
 
 La comparación se limita a la arquitectura y el formato, ya que no se dispone de métricas de rendimiento. El modelo original de Helsinki-NLP es el punto de referencia, y la versión ONNX de Devsyril es una conversión directa.
 
@@ -72,7 +72,7 @@ La comparación se limita a la arquitectura y el formato, ya que no se dispone d
 
 ## Enlaces
 
-- [Modelo en HuggingFace: Devsyril/opus-mt-ee-en-onnx](https://huggingface.co/Devsyril/opus-mt-ee-en-onnx)
+- [Modelo en Hugging Face: Devsyril/opus-mt-ee-en-onnx](https://huggingface.co/Devsyril/opus-mt-ee-en-onnx)
 - [Modelo original: Helsinki-NLP/opus-mt-ee-en](https://huggingface.co/Helsinki-NLP/opus-mt-ee-en)
 - [Repositorio OPUS-MT en GitHub](https://github.com/Helsinki-NLP/Opus-MT)
 - [Blog oficial de OPUS-MT Factory](https://blogs.helsinki.fi/opusmt-factory/models/)

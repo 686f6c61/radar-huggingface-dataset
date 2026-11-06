@@ -100,7 +100,7 @@ No hay datos de calidad comparada (FID, preferencia humana) para ninguno de ello
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lodestones/MOSS-Image-Base-8-steps-dmd
+- Modelo en Hugging Face: https://huggingface.co/lodestones/MOSS-Image-Base-8-steps-dmd
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Perfil del autor: https://huggingface.co/lodestones
 - Preprint de data-space DMD: arXiv 2610.12102 (citado en la model card; sin URL completa en la informacion disponible)

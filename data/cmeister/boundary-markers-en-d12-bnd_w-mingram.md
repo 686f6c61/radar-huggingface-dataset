@@ -105,7 +105,7 @@ La comparacion de rendimiento entre estos modelos no es posible con los datos di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-en-d12-bnd_w-mingram
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-en-d12-bnd_w-mingram
 - Paper: https://arxiv.org/abs/2608.08847
 - Repositorio script_tok (codigo del experimento y tokenizador): https://github.com/sanderland/script_tok
 - Repositorio nanochat (arquitectura y marco de entrenamiento): https://github.com/karpathy/nanochat

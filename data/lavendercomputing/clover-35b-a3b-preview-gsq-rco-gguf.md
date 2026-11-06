@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/lavendercomputing/Clover-35B-A3B-Preview-GSQ-RCO-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/lavendercomputing/Clover-35B-A3B-Preview-GSQ-RCO-GGUF
 - Modelo base (checkpoint fuente): https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview
 - Modelo Qwen de referencia: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Revision del checkpoint BF16: `4b0402b65e523d0183a14c431955438714cb16ff`

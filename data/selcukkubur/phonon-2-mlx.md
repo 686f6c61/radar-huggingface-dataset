@@ -93,7 +93,7 @@ La comparación directa de calidad no es posible con los datos disponibles, porq
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/selcukkubur/Phonon-2-mlx
+- Repositorio en Hugging Face: https://huggingface.co/selcukkubur/Phonon-2-mlx
 - Modelo base FermionResearch/Phonon-2: https://huggingface.co/FermionResearch/Phonon-2
 - Checkpoint original nvidia/parakeet-tdt-0.6b-v3: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Perfil de GitHub del autor: https://github.com/selcukkubur

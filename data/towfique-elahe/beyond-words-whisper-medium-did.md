@@ -69,9 +69,9 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Parámetros | Contexto de entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Beyond Words Whisper-medium Bangla DID | 306 M | 5 s de audio | Clasificación de 9 dialectos del bengalí | Apache 2.0 | HuggingFace |
-| `openai/whisper-medium` | 769 M | 30 s de audio | ASR y traducción multilingüe | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Encoders de habla tipo Wav2Vec2/HuBERT para bengalí | No disponible | No disponible | ASR o clasificación de acento | Varía según checkpoint | HuggingFace |
+| Beyond Words Whisper-medium Bangla DID | 306 M | 5 s de audio | Clasificación de 9 dialectos del bengalí | Apache 2.0 | Hugging Face |
+| `openai/whisper-medium` | 769 M | 30 s de audio | ASR y traducción multilingüe | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Encoders de habla tipo Wav2Vec2/HuBERT para bengalí | No disponible | No disponible | ASR o clasificación de acento | Varía según checkpoint | Hugging Face |
 
 No se dispone de resultados de benchmarks comparativos con alternativas en la información proporcionada; la comparación anterior se limita a parámetros, contexto y licencia.
 
@@ -89,7 +89,7 @@ No se dispone de resultados de benchmarks comparativos con alternativas en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/towfique-elahe/beyond-words-whisper-medium-did
+- Modelo en Hugging Face: https://huggingface.co/towfique-elahe/beyond-words-whisper-medium-did
 - Repositorio de código: https://github.com/towfique-elahe/beyond-words
 - Demo en vivo: https://huggingface.co/spaces/towfique-elahe/beyond-words-dialect-id
 - Modelo base: https://huggingface.co/openai/whisper-medium

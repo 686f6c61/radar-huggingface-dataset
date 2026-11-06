@@ -84,7 +84,7 @@ La diferencia principal es que el modelo original tiene un contexto de 128K toke
 
 ## Enlaces
 
-- [Repositorio HuggingFace: justinchuby/qwen2.5-14b-instruct-int4-zp-onnx](https://huggingface.co/justinchuby/qwen2.5-14b-instruct-int4-zp-onnx)
+- [Repositorio Hugging Face: justinchuby/qwen2.5-14b-instruct-int4-zp-onnx](https://huggingface.co/justinchuby/qwen2.5-14b-instruct-int4-zp-onnx)
 - [Issue #925 en onnx-genai (el motivo de la creación del modelo)](https://github.com/justinchuby/onnx-genai/issues/925)
 - [Issue #853 en onnx-genai (sizing incorrecto de pesos)](https://github.com/justinchuby/onnx-genai/issues/853)
 - [PR #856 en onnx-genai (fix del sizing)](https://github.com/justinchuby/onnx-genai/pull/856)

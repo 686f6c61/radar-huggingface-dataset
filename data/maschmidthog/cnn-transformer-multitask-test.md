@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cnn Transformer for Multitask es un prototipo de investigación publicado por el usuario Maschmidthog en HuggingFace. Se trata de una implementación híbrida que combina capas convolucionales con bloques de atención transformer, orientada a escenarios multitarea, y que se distribuye junto a su código fuente (`model.py`), su configuración de arquitectura (`config.json`) y una receta de entrenamiento por defecto (`training_args.json`). El checkpoint incluido es una inicialización válida para pruebas de humo, no un modelo entrenado.
+Cnn Transformer for Multitask es un prototipo de investigación publicado por el usuario Maschmidthog en Hugging Face. Se trata de una implementación híbrida que combina capas convolucionales con bloques de atención transformer, orientada a escenarios multitarea, y que se distribuye junto a su código fuente (`model.py`), su configuración de arquitectura (`config.json`) y una receta de entrenamiento por defecto (`training_args.json`). El checkpoint incluido es una inicialización válida para pruebas de humo, no un modelo entrenado.
 
 El dato más relevante es su tamaño: 16.576 parámetros totales según el fichero de safetensors. Esto contrasta con la etiqueta "xlarge" que aparece en la configuración de arquitectura, un identificador de escala interno del script que no se corresponde con el recuento real de parámetros. El repositorio no declara idiomas soportados, ni longitud de contexto, ni pipeline concreto.
 
@@ -86,7 +86,7 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cnn Transformer for Multitask (este) | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| Cnn Transformer for Multitask (este) | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Alternativa comparable 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa comparable 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -106,7 +106,7 @@ Para que una comparación fuese válida, el propio autor indica que habría que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maschmidthog/cnn-transformer-multitask-test
+- Modelo en Hugging Face: https://huggingface.co/Maschmidthog/cnn-transformer-multitask-test
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Ficheros incluidos en el repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo: los únicos resultados obtenidos corresponden a Google Maps y no guardan relación con el contenido de esta ficha. No se han localizado papers, blogs, repositorios adicionales ni demos asociados.

@@ -123,7 +123,7 @@ No hay en la informacion proporcionada datos de otros sistemas OCR (Tesseract, P
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BEE-spoke-data/falcon-ocr-v1.5-cpu
+- Repositorio en Hugging Face: https://huggingface.co/BEE-spoke-data/falcon-ocr-v1.5-cpu
 - Modelo base: https://huggingface.co/tiiuae/Falcon-OCR
 - Runner de CPU en Rust: https://github.com/amazingvince/falcon-ocr-cpu
 - Documentacion de modos: https://github.com/amazingvince/falcon-ocr-cpu/blob/main/docs/MODES.md

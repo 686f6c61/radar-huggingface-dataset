@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stheeju/potential-well-simulator` es un repositorio publicado en HuggingFace por el usuario `stheeju` el 26 de octubre de 2026 bajo licencia MIT. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, no tiene etiqueta de pipeline asignada y su model card se reduce a la declaración de licencia (`license: mit`), sin ningún texto descriptivo, sin arquitectura declarada y sin datos de entrenamiento.
+`stheeju/potential-well-simulator` es un repositorio publicado en Hugging Face por el usuario `stheeju` el 26 de octubre de 2026 bajo licencia MIT. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, no tiene etiqueta de pipeline asignada y su model card se reduce a la declaración de licencia (`license: mit`), sin ningún texto descriptivo, sin arquitectura declarada y sin datos de entrenamiento.
 
 Por el identificador se puede inferir que el autor pretende publicar algún tipo de simulador relacionado con pozos de potencial, un concepto habitual en mecánica cuántica (pozos infinitos y finitos, niveles de energía, funciones de onda, efecto túnel) y también en optimización (potenciales en espacios de estados). Sin embargo, esta inferencia procede únicamente del nombre del repositorio: no hay en la información disponible ninguna confirmación sobre si se trata de un modelo de machine learning con pesos, de un script de simulación numérica, de un entorno interactivo o de un artefacto auxiliar.
 
@@ -44,7 +44,7 @@ Los siguientes escenarios son hipotéticos y se derivan exclusivamente del nombr
 - Validación cruzada de métodos numéricos: comparar resultados frente a solvers analíticos o de referencia (diferencias finitas, elementos finitos) para pozos con solución cerrada conocida.
 - Visualización de funciones de onda y densidades de probabilidad: generación de figuras y animaciones para informes técnicos o material divulgativo, si el repositorio incluye utilidades de representación.
 - Estudio del efecto túnel: cálculo de coeficientes de transmisión a través de barreras de potencial de anchura y altura variables, útil en cursos de física del estado sólido.
-- Plantilla de publicación reproducible: al estar bajo MIT y alojado en HuggingFace, el repositorio podría servir como esqueleto para publicar simuladores físicos con licencia permisiva y estructura de model card mínima.
+- Plantilla de publicación reproducible: al estar bajo MIT y alojado en Hugging Face, el repositorio podría servir como esqueleto para publicar simuladores físicos con licencia permisiva y estructura de model card mínima.
 - Integración en cuadernos de investigación: uso como dependencia en notebooks de Jupyter dentro de pipelines de experimentación, siempre que el autor documente la API.
 
 ## Benchmarks y rendimiento
@@ -69,8 +69,8 @@ No disponible. No se ha identificado ningún modelo o artefacto comparable en la
 
 | Recurso | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stheeju/potential-well-simulator | no disponible | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
-| Polymathic AI "The Well" | Colección de datasets de simulación física (15 TB) | no aplica | no aplica | no disponible en la información recogida | HuggingFace (Space y datasets) |
+| stheeju/potential-well-simulator | no disponible | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
+| Polymathic AI "The Well" | Colección de datasets de simulación física (15 TB) | no aplica | no aplica | no disponible en la información recogida | Hugging Face (Space y datasets) |
 | BPNN para energía del estado fundamental de pozos de potencial | Método de ML (red backpropagation) descrito en artículo | no disponible | no aplica | no disponible | Publicación AIP |
 | Quantum Potential Well Simulator (scifunlab) | Simulador web interactivo | no aplica | no aplica | no disponible | Web pública |
 
@@ -88,7 +88,7 @@ No disponible. No se ha identificado ningún modelo o artefacto comparable en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stheeju/potential-well-simulator
+- Repositorio en Hugging Face: https://huggingface.co/stheeju/potential-well-simulator
 - Polymathic AI, "The Well" (contexto sobre datasets de simulación física): https://www.marktechpost.com/2024/12/02/polymathic-ai-releases-the-well-15tb-of-machine-learning-datasets-containing-numerical-simulations-of-a-wide-variety-of-spatiotemporal-physical-systems/
 - Space de Polymathic AI "TheWell": https://huggingface.co/spaces/polymathic-ai/TheWell
 - Artículo sobre predicción de la energía del estado fundamental de un pozo de potencial con BPNN: https://pubs.aip.org/aip/acp/article/2619/1/050012/2887404/Prediction-of-potential-well-s-ground-state-energy

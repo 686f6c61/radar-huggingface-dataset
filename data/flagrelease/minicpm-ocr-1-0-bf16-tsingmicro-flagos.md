@@ -71,8 +71,8 @@ Datos adicionales del model card: MiniCPM-OCR 1.0 obtuvo 93,68 en Real5-OmniDocB
 
 | Modelo | Parámetros | Contexto | Rendimiento documental | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR 1.0 (esta ficha) | 1,3B | no disponible | OcrBench 80,5 (NVIDIA nativo); Real5-OmniDocBench 93,68 | Apache 2.0 | HuggingFace, ModelScope |
-| MiniCPM-OCR Jev | 2B | no disponible | AUROC 0,936 en JevOCRBench (tarea de inspección de calidad, no directamente comparable) | no disponible en la información proporcionada | HuggingFace |
+| MiniCPM-OCR 1.0 (esta ficha) | 1,3B | no disponible | OcrBench 80,5 (NVIDIA nativo); Real5-OmniDocBench 93,68 | Apache 2.0 | Hugging Face, ModelScope |
+| MiniCPM-OCR Jev | 2B | no disponible | AUROC 0,936 en JevOCRBench (tarea de inspección de calidad, no directamente comparable) | no disponible en la información proporcionada | Hugging Face |
 | Qwen3.5-397B-A17B | 397B totales / 17B activos | no disponible | AUROC 0,938 en JevOCRBench (referencia citada para la tarea de Jev) | no disponible en la información proporcionada | no disponible |
 
 No se dispone de datos de benchmarks comparables de otros modelos de OCR del mismo tamaño en la información proporcionada.
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparables de otros modelos de OCR del mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-BF16-tsingmicro-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-BF16-tsingmicro-FlagOS
 - AnythingLLM: https://anythingllm.com/
 - Repositorio de imágenes Docker FlagOS: harbor.baai.ac.cn/flagrelease-public/minicpm-ocr-1.0-tsingmicro001-gems5.4.0-treenone-cx0.1.0-plugin0.0.0-vllm0.24.0-sglangnone-sglangflnone-cp310-pt211-raisa1.4.0-x64-v0.30279.6:202610260708
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales.

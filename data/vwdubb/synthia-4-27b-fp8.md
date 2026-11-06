@@ -32,7 +32,7 @@ Latency/throughput: no disponible.
 
 Write it.## Resumen
 
-Synthia-4-27B-FP8 es una versión cuantizada a FP8 del modelo Synthia-4-27B, subida por el usuario vwdubb a HuggingFace. El modelo original lo desarrolla migtissera y se define como un "asistente personal" orientado a ejecutar trabajo real: conversación expresiva combinada con uso de herramientas, planificación, código, investigación y tareas de asistencia prolongadas. Synthia-4-27B parte a su vez de Qwen/Qwen3.8-27B y se ha post-entrenado sobre sesiones de agente completas y de formato largo, con una longitud de entrenamiento de 65.536 tokens.
+Synthia-4-27B-FP8 es una versión cuantizada a FP8 del modelo Synthia-4-27B, subida por el usuario vwdubb a Hugging Face. El modelo original lo desarrolla migtissera y se define como un "asistente personal" orientado a ejecutar trabajo real: conversación expresiva combinada con uso de herramientas, planificación, código, investigación y tareas de asistencia prolongadas. Synthia-4-27B parte a su vez de Qwen/Qwen3.8-27B y se ha post-entrenado sobre sesiones de agente completas y de formato largo, con una longitud de entrenamiento de 65.536 tokens.
 
 Se trata de un modelo multimodal de tipo image-text-to-text con 27.781.427.952 parámetros (~27,8 B), ventana de contexto nativa de 262.144 tokens y cabeza de predicción multi-token (MTP). El post-entrenamiento cubre todos los turnos del asistente, incluidas las llamadas a herramientas, de modo que el modelo aprende cómo evoluciona una tarea a lo largo de una sesión en lugar de limitarse a responder de forma aislada.
 
@@ -126,7 +126,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni frent
 
 ## Enlaces
 
-- Ficha en HuggingFace de esta cuantizacion: https://huggingface.co/vwdubb/Synthia-4-27B-FP8
+- Ficha en Hugging Face de esta cuantizacion: https://huggingface.co/vwdubb/Synthia-4-27B-FP8
 - Modelo base (BF16): https://huggingface.co/migtissera/Synthia-4-27B
 - Repositorio de cuantizaciones GGUF: https://huggingface.co/migtissera/Synthia-4-27B-GGUF
 - Modelo fundacional sobre el que se construye Synthia-4-27B: https://huggingface.co/Qwen/Qwen3.8-27B

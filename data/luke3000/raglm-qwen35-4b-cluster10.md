@@ -2,7 +2,7 @@
 
 ## Resumen
 
-raglm-qwen35-4b-cluster10 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-4B publicado por el usuario luke3000 en HuggingFace. Se trata de un modelo de generacion de texto de aproximadamente 4 000 millones de parametros, entrenado mediante la libreria Unsloth, segun indica el propio autor en la model card. El nombre del repositorio ("raglm" y "cluster10") sugiere un ajuste orientado a tareas de generacion aumentada por recuperacion (RAG) o a un experimento de agrupamiento (clustering), aunque la model card no documenta el objetivo ni el dataset de entrenamiento.
+raglm-qwen35-4b-cluster10 es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-4B publicado por el usuario luke3000 en Hugging Face. Se trata de un modelo de generacion de texto de aproximadamente 4 000 millones de parametros, entrenado mediante la libreria Unsloth, segun indica el propio autor en la model card. El nombre del repositorio ("raglm" y "cluster10") sugiere un ajuste orientado a tareas de generacion aumentada por recuperacion (RAG) o a un experimento de agrupamiento (clustering), aunque la model card no documenta el objetivo ni el dataset de entrenamiento.
 
 El modelo hereda la arquitectura del Qwen3.5-4B, por lo que se trata de un transformer de la familia Qwen 3.5, aunque no se publican detalles sobre el numero de capas, la atencion o la longitud de contexto en la informacion disponible. El unico idioma declarado es el ingles (en), y la licencia es Apache 2.0, lo que permite uso comercial segun los terminos de dicha licencia.
 
@@ -69,8 +69,8 @@ Las siguientes cifras son estimaciones derivadas del numero de parametros (aprox
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ragml-qwen35-4b-cluster10 | ~4B | no disponible | en | apache-2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-4B (base) | 4B | no disponible | no disponible | no disponible en esta ficha | HuggingFace |
+| ragml-qwen35-4b-cluster10 | ~4B | no disponible | en | apache-2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-4B (base) | 4B | no disponible | no disponible | no disponible en esta ficha | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de alternativas equivalentes en la informacion proporcionada, por lo que la comparacion se limita al modelo base declarado.
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luke3000/raglm-qwen35-4b-cluster10
+- Modelo en Hugging Face: https://huggingface.co/luke3000/raglm-qwen35-4b-cluster10
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `junbrro/egopi-axis2-matched-noreg-AB-LAST-30k-actsilu-mlxp-20260925` es un checkpoint de pesos publicado por el usuario junbrro en HuggingFace el 25 de septiembre de 2026. Se trata de un modelo de lenguaje de 6.915.102.808 parametros (aproximadamente 6,92 mil millones) almacenado en formato safetensors, con un repositorio de 13,9 GB. La model card lo describe como "Arm 2 no-reg tokenizer CogAlign persistent last language", correspondiente al paso de entrenamiento 30000, derivado de la fuente `junhyeong-axis2-noreg-last-30k-260924`.
+El modelo `junbrro/egopi-axis2-matched-noreg-AB-LAST-30k-actsilu-mlxp-20260925` es un checkpoint de pesos publicado por el usuario junbrro en Hugging Face el 25 de septiembre de 2026. Se trata de un modelo de lenguaje de 6.915.102.808 parametros (aproximadamente 6,92 mil millones) almacenado en formato safetensors, con un repositorio de 13,9 GB. La model card lo describe como "Arm 2 no-reg tokenizer CogAlign persistent last language", correspondiente al paso de entrenamiento 30000, derivado de la fuente `junhyeong-axis2-noreg-last-30k-260924`.
 
 El modelo se distribuye exclusivamente como pesos finales y configuracion, sin estado de optimizador ni de generador de numeros aleatorios (RNG). Forma parte de una familia de variantes del mismo autor, entre las que se incluye una version `FULL` (`egopi-axis2-matched-noreg-AB-FULL-30k-actsilu-mlxp-20260925`) que permite comparaciones controladas entre ambas. El tag `RLDX-1` no corresponde a ninguna arquitectura documentada publicamente, y la model card no especifica arquitectura, longitud de contexto, idiomas ni licencia.
 
@@ -28,7 +28,7 @@ Su relevancia actual es limitada y de caracter principalmente investigador: no t
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publica sobre la arquitectura interna del modelo. La model card no menciona si se trata de un transformer denso, un MoE, un modelo de espacio de estados (SSM) o una arquitectura hibrida, ni tampoco el numero de capas, dimension oculta, numero de cabezas de atencion o mecanismo de atencion empleado. El tag `RLDX-1` aparece en los metadatos de HuggingFace, pero no se corresponde con ninguna familia de arquitecturas reconocida en la documentacion publica, por lo que no es posible inferir nada concluyente a partir de el.
+No hay informacion publica sobre la arquitectura interna del modelo. La model card no menciona si se trata de un transformer denso, un MoE, un modelo de espacio de estados (SSM) o una arquitectura hibrida, ni tampoco el numero de capas, dimension oculta, numero de cabezas de atencion o mecanismo de atencion empleado. El tag `RLDX-1` aparece en los metadatos de Hugging Face, pero no se corresponde con ninguna familia de arquitecturas reconocida en la documentacion publica, por lo que no es posible inferir nada concluyente a partir de el.
 
 Respecto al entrenamiento, la unica informacion disponible indica que se trata del paso 30000 de un run cuya fuente es `junhyeong-axis2-noreg-last-30k-260924`. La model card menciona terminos propios del experimento del autor ("Arm 2", "no-reg tokenizer", "CogAlign persistent last language") que no vienen acompanados de definicion tecnica, por lo que no se puede determinar la composicion del dataset, el numero de tokens vistos, ni si hubo etapas de RLHF, DPO u otro tipo de ajuste por preferencias. No se documenta ninguna innovacion tecnica como decodificacion especulativa, atencion lineal o mecanismos equivalentes.
 
@@ -54,7 +54,7 @@ Nota previa: el autor advierte que la finalizacion del entrenamiento no garantiz
 - Ajuste fino supervisado (SFT) como modelo base: con 6,92 mil millones de parametros y pesos en bf16 ocupan 13,9 GB, es viable ajustarlo en una GPU profesional unica con tecnicas de precision reducida o LoRA para dominios especificos.
 - Fine-tuning con LoRA o QLoRA en hardware de una sola GPU: al ser un modelo de ~7B, cabe en GPUs consumer de 24 GB (RTX 3090/4090) aplicando cuantizacion de 4 bits durante el ajuste, lo que abarata la experimentacion academica.
 - Inferencia local tras conversion a GGUF: aunque no se publican pesos cuantizados, la conversion a formatos de llama.cpp permitiria ejecutar el modelo en estaciones de trabajo sin GPU dedicada, siempre que la arquitectura sea compatible con dichas herramientas (extremo no verificado).
-- Auditoria de artefactos de investigacion: el repositorio documenta explicitamente lo que no incluye (estado de optimizador y de RNG, garantias de rendimiento), lo que lo convierte en un caso util para estudiar practicas de publicacion reproducible en HuggingFace.
+- Auditoria de artefactos de investigacion: el repositorio documenta explicitamente lo que no incluye (estado de optimizador y de RNG, garantias de rendimiento), lo que lo convierte en un caso util para estudiar practicas de publicacion reproducible en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -100,13 +100,13 @@ La diferencia fundamental no es de tamano, sino de madurez: los tres modelos de 
 - Riesgo de alucinacion: inherente a cualquier modelo de lenguaje; al no existir evaluaciones, no puede acotarse su magnitud.
 - Sesgos: no evaluados ni documentados.
 - Adopcion nula: cero descargas y cero likes en el momento de la consulta, sin issues ni discusiones publicas que permitan contrastar experiencias de otros usuarios.
-- Fecha de publicacion futura respecto a los metadatos habituales del ecosistema (25 de septiembre de 2026), dato que conviene verificar directamente en HuggingFace.
+- Fecha de publicacion futura respecto a los metadatos habituales del ecosistema (25 de septiembre de 2026), dato que conviene verificar directamente en Hugging Face.
 - Trazabilidad limitada: la unica referencia al origen del run es el identificador `junhyeong-axis2-noreg-last-30k-260924`, sin paper, informe tecnico ni repositorio de codigo asociado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junbrro/egopi-axis2-matched-noreg-AB-LAST-30k-actsilu-mlxp-20260925
+- Modelo en Hugging Face: https://huggingface.co/junbrro/egopi-axis2-matched-noreg-AB-LAST-30k-actsilu-mlxp-20260925
 - Variante FULL del mismo experimento: https://huggingface.co/junbrro/egopi-axis2-matched-noreg-AB-FULL-30k-actsilu-mlxp-20260925
-- Perfil del autor en HuggingFace: https://huggingface.co/junbrro
+- Perfil del autor en Hugging Face: https://huggingface.co/junbrro
 - Catalogo de modelos de junbrro (fuente secundaria): https://essamamdani.com/ai-models/company/junbrro
 - Paper, blog tecnico o repositorio de codigo: no disponible

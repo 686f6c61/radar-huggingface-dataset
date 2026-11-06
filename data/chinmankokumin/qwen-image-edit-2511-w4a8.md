@@ -6,7 +6,7 @@ El modelo `chinmankokumin/Qwen-Image-Edit-2511-w4a8` es una cuantización W4A8 (
 
 El modelo base Qwen-Image-Edit-2511 es un modelo de difusión destilado que permite editar imágenes a partir de instrucciones de texto, con soporte para múltiples imágenes de referencia y una mejora significativa en la consistencia de personajes. La versión cuantizada mantiene estas capacidades, aunque el autor advierte explícitamente de una calidad reducida ("CAUTION: low quality"). El repositorio tiene un tamaño de 17,5 GB y fue creado en agosto de 2026, aunque no se especifican licencia, idiomas ni pipeline.
 
-Esta ficha se basa exclusivamente en la información disponible en HuggingFace y en los resultados de búsqueda web; muchos parámetros técnicos no han sido publicados y se indican como "no disponible".
+Esta ficha se basa exclusivamente en la información disponible en Hugging Face y en los resultados de búsqueda web; muchos parámetros técnicos no han sido publicados y se indican como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ No se dispone de información sobre otros modelos de edición de imágenes cuant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chinmankokumin/Qwen-Image-Edit-2511-w4a8
+- Modelo en Hugging Face: https://huggingface.co/chinmankokumin/Qwen-Image-Edit-2511-w4a8
 - Modelo base Qwen-Image-Edit-2511: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Página del modelo en ModelScope: https://modelscope.ai/models/Qwen/Qwen-Image-Edit-2511
 - ComfyUI-QuantizationToolkit: https://github.com/SparknightLLC/ComfyUI-QuantizationToolkit

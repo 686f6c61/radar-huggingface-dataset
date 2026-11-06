@@ -29,7 +29,7 @@ El modelo se basa en DistilBERT, una versión destilada de BERT que conserva el 
 
 - Clasificación de texto en 4 categorías predefinidas de preguntas de estudiantes.
 - Inferencia rápida y ligera gracias al tamaño reducido de DistilBERT.
-- Integración sencilla con la API `pipeline` de HuggingFace Transformers.
+- Integración sencilla con la API `pipeline` de Hugging Face Transformers.
 - No soporta tool calling, agentes, razonamiento multi-paso, visión ni audio.
 - Capacidades multilingües no confirmadas; el modelo base es uncased en inglés, por lo que se espera un rendimiento óptimo en ese idioma.
 
@@ -57,7 +57,7 @@ No se proporcionan comparaciones con otros modelos ni resultados en benchmarks e
 - VRAM estimada: al tratarse de un modelo de 66,9M parámetros, la inferencia en FP32 requiere aproximadamente 268 MB de memoria, y en FP16 unos 134 MB. Cabe en cualquier GPU moderna, incluso en GPUs integradas.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una NVIDIA RTX 3090 (usada para el entrenamiento) es más que adecuada para inferencia. También puede ejecutarse en CPU con razonable velocidad.
 - Compatibilidad con consumer GPU: sí, funciona en GPUs de gama baja como GTX 1650 o incluso en Apple Silicon.
-- Opciones de despliegue: compatible con HuggingFace Transformers, ONNX Runtime, TensorFlow Lite y cualquier framework que soporte safetensors. Se puede servir con FastAPI, TorchServe o simplemente mediante la API de `pipeline`.
+- Opciones de despliegue: compatible con Hugging Face Transformers, ONNX Runtime, TensorFlow Lite y cualquier framework que soporte safetensors. Se puede servir con FastAPI, TorchServe o simplemente mediante la API de `pipeline`.
 - Latencia y throughput: no se dispone de mediciones oficiales, pero por su tamaño se espera una latencia inferior a 10 ms por muestra en GPU y alrededor de 50-100 ms en CPU.
 
 ## Comparativa con modelos similares
@@ -76,6 +76,6 @@ No se dispone de comparativas directas con otros modelos de clasificación de te
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Islamamro/student-questions-aurora-islamamro
+- Modelo en Hugging Face: https://huggingface.co/Islamamro/student-questions-aurora-islamamro
 - Dataset de entrenamiento: https://huggingface.co/datasets/SetFit/student-question-categories
 - Portal Aurora Research (mencionado en la model card, sin URL directa): no disponible

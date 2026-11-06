@@ -80,7 +80,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/maya-named-pitch-ablation-a-lrmult-1-2-1-0.5
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/maya-named-pitch-ablation-a-lrmult-1-2-1-0.5
 - Modelo base: https://huggingface.co/maya-research/maya2-native
 - Código de entrenamiento (referenciado en la model card): repositorio swamiji-tts, directorio research/maya2-sft (no se proporciona URL directa)
 - No se han encontrado papers, blogs, demos ni repositorios adicionales en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Aiden12910/tiktok` es un repositorio publicado en HuggingFace por el usuario Aiden12910 bajo licencia MIT. El repositorio ocupa 9,2 GB, lo que sugiere que contiene pesos de un modelo de tamaño medio (probablemente en el rango de 7 a 14 mil millones de parametros en precision FP16/BF16), aunque esta estimacion no puede confirmarse porque el autor no ha publicado ninguna especificacion tecnica. La model card se limita a declarar la licencia MIT y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
+El modelo `Aiden12910/tiktok` es un repositorio publicado en Hugging Face por el usuario Aiden12910 bajo licencia MIT. El repositorio ocupa 9,2 GB, lo que sugiere que contiene pesos de un modelo de tamaño medio (probablemente en el rango de 7 a 14 mil millones de parametros en precision FP16/BF16), aunque esta estimacion no puede confirmarse porque el autor no ha publicado ninguna especificacion tecnica. La model card se limita a declarar la licencia MIT y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 El nombre del repositorio ("tiktok") sugiere un posible fine-tuning orientado a contenido de esa plataforma, pero no hay evidencia documental que lo confirme. No se han publicado resultados de evaluacion, no consta pipeline declarado y no se han registrado descargas ni interacciones en el momento de la consulta. Se trata, por tanto, de un artefacto sin validacion publica.
 
@@ -65,7 +65,7 @@ No es posible establecer una comparativa rigurosa porque se desconocen parametro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Aiden12910/tiktok | no disponible | no disponible | MIT | Repositorio HuggingFace sin documentacion |
+| Aiden12910/tiktok | no disponible | no disponible | MIT | Repositorio Hugging Face sin documentacion |
 | Llama 3.1 8B | 8B | 128k | Llama 3.1 Community | Ampliamente documentado y evaluado |
 | Mistral 7B | 7B | 32k | Apache 2.0 | Ampliamente documentado y evaluado |
 | Qwen2.5 7B | 7B | 128k | Apache 2.0 (mayoria de variantes) | Ampliamente documentado y evaluado |
@@ -85,5 +85,5 @@ La comparacion con modelos establecidos no es posible en terminos de rendimiento
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Aiden12910/tiktok
+- Repositorio Hugging Face: https://huggingface.co/Aiden12910/tiktok
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

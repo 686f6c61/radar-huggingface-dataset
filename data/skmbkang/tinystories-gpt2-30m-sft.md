@@ -90,6 +90,6 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skmbkang/tinystories-gpt2-30m-sft
+- Modelo en Hugging Face: https://huggingface.co/skmbkang/tinystories-gpt2-30m-sft
 - Modelo base: https://huggingface.co/skmbkang/tinystories-gpt2-30m
 - Dataset de ajuste: https://huggingface.co/datasets/roneneldan/TinyStoriesInstruct

@@ -86,7 +86,7 @@ La comparativa directa con otros modelos cuantizados de la misma categoria (p.ej
 
 ## Limitaciones y advertencias
 
-- La licencia no esta documentada en el repositorio de HuggingFace. El modelo base GLM-5.2 de Zhipu AI tiene su propia licencia, pero esta cuantizacion no especifica los terminos de uso. Verificar antes de usar en produccion.
+- La licencia no esta documentada en el repositorio de Hugging Face. El modelo base GLM-5.2 de Zhipu AI tiene su propia licencia, pero esta cuantizacion no especifica los terminos de uso. Verificar antes de usar en produccion.
 - El autor advierte explicitamente que las metricas KLD se obtuvieron con una unica ventana de 2,048 tokens de WikiText y 2,047 posiciones teacher-forced, y que "el informe no afirma calidad general de tareas ni cualificacion para produccion".
 - La comparacion Welch de 5 ejecuciones entre el reader G64-Q-only y el stock resulto inconclusa (p=0.6276), lo que significa que la mejora de KLD reportada no es estadisticamente significativa.
 - El checkpoint requiere el runtime especifico del autor (server.sh con digest-pinned r17). No se garantiza compatibilidad con otros motores de inferencia EXL3.
@@ -96,7 +96,7 @@ La comparativa directa con otros modelos cuantizados de la misma categoria (p.ej
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/brandonmusic/GLM-5.2-EXL3-TR3v4-3.5bpw-MTP78
+- Repositorio Hugging Face: https://huggingface.co/brandonmusic/GLM-5.2-EXL3-TR3v4-3.5bpw-MTP78
 - Repositorio GitHub del runtime: https://github.com/brandonmmusic-max/glm52-exl3-sparkinfer
 - Blog oficial de GLM-5.2 (Zhipu AI): https://z.ai/blog/glm-5.2
 - Ficha en llm-explorer.com (variante DENSE6): https://llm-explorer.com/model/brandonmusic%2FGLM-5.2-EXL3-DENSE6-MTP78,1fxI8sVlv3dnCJMknZGrYV

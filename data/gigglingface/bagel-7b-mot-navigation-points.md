@@ -72,8 +72,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K ni si
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BAGEL-7B-MoT-navigation-points | 14B totales / 7B activos (base) | no disponible | Navegacion en rejilla mediante traza de puntos | Apache-2.0 | HuggingFace (delta + script de fusion) |
-| ByteDance-Seed/BAGEL-7B-MoT (base) | 14B totales / 7B activos | no disponible | Multimodal unificado: comprension visual, generacion de imagen, edicion | no disponible en la informacion proporcionada | HuggingFace y GitHub |
+| BAGEL-7B-MoT-navigation-points | 14B totales / 7B activos (base) | no disponible | Navegacion en rejilla mediante traza de puntos | Apache-2.0 | Hugging Face (delta + script de fusion) |
+| ByteDance-Seed/BAGEL-7B-MoT (base) | 14B totales / 7B activos | no disponible | Multimodal unificado: comprension visual, generacion de imagen, edicion | no disponible en la informacion proporcionada | Hugging Face y GitHub |
 | Qwen2.5-VL | no disponible en la informacion proporcionada | no disponible | Vision-lenguaje general | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | InternVL-2.5 | no disponible en la informacion proporcionada | no disponible | Vision-lenguaje general | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
@@ -94,7 +94,7 @@ La model card de BAGEL afirma que el modelo base supera a Qwen2.5-VL e InternVL-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gigglingface/BAGEL-7B-MoT-navigation-points
+- Modelo en Hugging Face: https://huggingface.co/Gigglingface/BAGEL-7B-MoT-navigation-points
 - Modelo base BAGEL-7B-MoT: https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT
 - Repositorio del modelo base: https://github.com/bytedance-seed/BAGEL
 - Codigo y mapa completo del experimento: https://github.com/oshapio/primitive-imagination-lab

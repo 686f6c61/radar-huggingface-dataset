@@ -90,7 +90,7 @@ La comparación directa con alternativas específicas de traducción inglés→i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arnastofnun/Qwen3-4B-wmt26-AMI-en-is
+- Modelo en Hugging Face: https://huggingface.co/arnastofnun/Qwen3-4B-wmt26-AMI-en-is
 - Adaptador LoRA asociado (necesario para traducción): https://huggingface.co/arnastofnun/Qwen3-4B-wmt26-AMI-en-is-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - mergekit (herramienta de fusión): https://github.com/cg123/mergekit

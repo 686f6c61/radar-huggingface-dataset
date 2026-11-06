@@ -6,7 +6,7 @@ QuantaBeta Core es un pipeline cuantitativo financiero de código abierto desarr
 
 El proyecto destaca por su prohibición absoluta de números en coma flotante (f64) en todas sus capas, sustituyéndolos por aritmética racional exacta con la librería GMP, lo que garantiza que una misma entrada produzca resultados bit a bit idénticos en cualquier máquina. La implementación combina Rust (álgebra simbólica de características), Haskell (búsqueda de invariantes con LiquidHaskell) y Lean 4 (validación formal con cero "sorry"), y cada factor generado se sella de forma inmutable (WORM). La licencia es "Sovereign Source v1.0" con cambio a AGPL-3.0 el 1 de enero de 2029.
 
-El repositorio en HuggingFace tiene cero descargas y cero likes, con un tamaño de 0.0 GB, lo que sugiere que es un proyecto incipiente o una publicación de código sin distribución amplia. No se trata de un modelo con pesos ni parámetros entrenables, por lo que la ficha técnica habitual de un LLM no aplica directamente.
+El repositorio en Hugging Face tiene cero descargas y cero likes, con un tamaño de 0.0 GB, lo que sugiere que es un proyecto incipiente o una publicación de código sin distribución amplia. No se trata de un modelo con pesos ni parámetros entrenables, por lo que la ficha técnica habitual de un LLM no aplica directamente.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No es posible comparar directamente con modelos de IA generativa o LLMs, ya que 
 
 - No es un modelo de IA: no puede generar texto, responder preguntas ni procesar lenguaje natural. Su uso se limita a análisis cuantitativo de series de retornos.
 - La licencia "Sovereign Source v1.0" es no estándar y puede imponer restricciones de uso comercial desconocidas hasta que se aclare su texto completo; el cambio a AGPL-3.0 en 2029 añade obligaciones de copyleft.
-- El proyecto tiene cero descargas y cero likes en HuggingFace, lo que indica una adopción mínima y falta de validación por parte de la comunidad.
+- El proyecto tiene cero descargas y cero likes en Hugging Face, lo que indica una adopción mínima y falta de validación por parte de la comunidad.
 - No se aportan resultados empíricos de rendimiento de los factores generados (Sharpe, drawdown, etc.), por lo que no hay evidencia de que la teoría numérica produzca alpha real en mercados.
 - La dependencia de teoremas avanzados (congruencias de Ramanujan, operadores de Hecke) puede dificultar la revisión por parte de profesionales financieros sin formación matemática profunda.
 - No se documentan sesgos, alucinaciones ni riesgos de contexto porque no es un modelo de lenguaje; sin embargo, el riesgo de sobreajuste a estructuras aritméticas sin respaldo empírico es una advertencia clave para uso en producción.
@@ -74,6 +74,6 @@ No es posible comparar directamente con modelos de IA generativa o LLMs, ya que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/quantabeta-core
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/quantabeta-core
 - Referencia DOI citada en la documentación (Zenodo): https://doi.org/10.5281/zenodo.21727363 (conexión con la conjetura de Jacobian y PAR-011)
 - No se proporcionan otros enlaces (papers, blogs, demos) en la información disponible.

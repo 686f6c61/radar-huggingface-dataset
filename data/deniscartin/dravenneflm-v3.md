@@ -96,10 +96,10 @@ Autores citados correctamente: 8/8 en v3 frente a 0 en v2. La model card atribuy
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| deniscartin/dravenneflm-v3 | 14B | No especificado | it, en | Apache 2.0 | HuggingFace (0 descargas) | Metricas internas por tarea (ver arriba) |
-| Qwen/Qwen2.5-14B-Instruct (base) | 14B | No disponible en la informacion proporcionada | Multiples | Apache 2.0 | HuggingFace, ampliamente adoptado | No comparable con los datos aportados: los benchmarks de v3 son internos y especificos de tarea |
-| deniscartin/dravenneflm-v2 | 14B | No especificado | it, en | Apache 2.0 | HuggingFace | Peor en identidad (0/6 sin system prompt) y mejor en error de riesgo (3,0 frente a 3,42) |
-| deniscartin/dravenneflm-v1 | 14B | No especificado | it, en | Apache 2.0 | HuggingFace | Peor en honestidad ante evidencia escasa (0,90) y en angulo original (0,61 a favor de v1 frente a 0,45 en v3) |
+| deniscartin/dravenneflm-v3 | 14B | No especificado | it, en | Apache 2.0 | Hugging Face (0 descargas) | Metricas internas por tarea (ver arriba) |
+| Qwen/Qwen2.5-14B-Instruct (base) | 14B | No disponible en la informacion proporcionada | Multiples | Apache 2.0 | Hugging Face, ampliamente adoptado | No comparable con los datos aportados: los benchmarks de v3 son internos y especificos de tarea |
+| deniscartin/dravenneflm-v2 | 14B | No especificado | it, en | Apache 2.0 | Hugging Face | Peor en identidad (0/6 sin system prompt) y mejor en error de riesgo (3,0 frente a 3,42) |
+| deniscartin/dravenneflm-v1 | 14B | No especificado | it, en | Apache 2.0 | Hugging Face | Peor en honestidad ante evidencia escasa (0,90) y en angulo original (0,61 a favor de v1 frente a 0,45 en v3) |
 
 No se dispone de datos comparativos con otros modelos de finanzas de la misma categoria en la informacion proporcionada.
 
@@ -119,7 +119,7 @@ No se dispone de datos comparativos con otros modelos de finanzas de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deniscartin/dravenneflm-v3
+- Modelo en Hugging Face: https://huggingface.co/deniscartin/dravenneflm-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Infraestructura de entrenamiento (CINECA Leonardo), mencionada en la model card: https://www.cineca.it/en/hpc/leonardo
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos no guardan relacion con DravenneFLM ni con Qwen. No hay paper, blog, repositorio ni demo adicionales en la informacion disponible.

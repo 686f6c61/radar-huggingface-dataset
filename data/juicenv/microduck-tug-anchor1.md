@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto / observacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| juicenv/microduck-tug-anchor1 | Política RL (fine-tune) | no disponible | 61-D obs., 14 acciones, 50 Hz | no disponible | HuggingFace, 0 descargas |
-| Nico-robot/microduck-tug-of-war | Política RL (base) | no disponible | Entorno microduck | no disponible | HuggingFace |
-| Otras políticas microduck de la comunidad | Políticas RL | no disponible | Entorno microduck | variable | HuggingFace |
+| juicenv/microduck-tug-anchor1 | Política RL (fine-tune) | no disponible | 61-D obs., 14 acciones, 50 Hz | no disponible | Hugging Face, 0 descargas |
+| Nico-robot/microduck-tug-of-war | Política RL (base) | no disponible | Entorno microduck | no disponible | Hugging Face |
+| Otras políticas microduck de la comunidad | Políticas RL | no disponible | Entorno microduck | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas políticas en la información proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas políticas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juicenv/microduck-tug-anchor1
+- Modelo en Hugging Face: https://huggingface.co/juicenv/microduck-tug-anchor1
 - Modelo base: https://huggingface.co/Nico-robot/microduck-tug-of-war
 - Repositorio microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `HEAD`, commit `5cee942d8`)

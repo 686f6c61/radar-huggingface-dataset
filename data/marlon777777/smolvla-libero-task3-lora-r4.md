@@ -85,8 +85,8 @@ No se dispone de información sobre otros adaptadores LoRA para SmolVLA en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/marlon777777/smolvla-libero-task3-lora-r4
+- Repositorio Hugging Face: https://huggingface.co/marlon777777/smolvla-libero-task3-lora-r4
 - Repositorio de reproducción (GitHub): https://github.com/2437buaa/smolvla-libero-repro
-- Modelo base en HuggingFace: https://huggingface.co/HuggingFaceVLA/smolvla_libero
+- Modelo base en Hugging Face: https://huggingface.co/HuggingFaceVLA/smolvla_libero
 - Dataset LIBERO: https://huggingface.co/datasets/lerobot/libero
 - Aviso de terceros: https://github.com/2437buaa/smolvla-libero-repro/blob/main/THIRD_PARTY_NOTICES.md

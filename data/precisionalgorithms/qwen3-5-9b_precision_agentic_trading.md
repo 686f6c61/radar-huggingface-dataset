@@ -102,7 +102,7 @@ No se dispone de datos de otros modelos especializados en trading con MCP para c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/precisionalgorithms/qwen3.5-9b_precision_agentic_trading
+- Modelo en Hugging Face: https://huggingface.co/precisionalgorithms/qwen3.5-9b_precision_agentic_trading
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio GitHub de Qwen3.5: https://github.com/ABDtmx/Qwen3.5
 - Página de Qwen3.5:9b en Ollama: https://ollama.com/library/qwen3.5:9b

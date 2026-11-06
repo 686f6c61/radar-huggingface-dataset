@@ -16,7 +16,7 @@ Su relevancia radica en que resuelve, con un único modelo de voz (Speech-Augmen
 | Longitud de contexto | 65.536 tokens |
 | Tipos de cuantizacion | NVFP4 en el decoder con capas FP8 (ModelOpt, post-training quantization); variantes BF16 y FP8 disponibles por separado |
 | Idiomas soportados | 40: aleman, arabe, bengali, búlgaro, chino, croata, danes, eslovaco, esloveno, espanol, estonio, euskera no incluido (ver lista), finlandes, frances, griego, hebreo, hindi, húngaro, ingles, italiano, japones, letón, lituano, malayo, maltes, marati, neerlandes, polaco, portugues, rumano, ruso, sueco, tagalo, tailandes, tamil, telugu, turco, ucraniano, vietnamita, checo, coreano |
-| Licencia | OpenMDW-1.1 (other en HuggingFace), apto para uso comercial y no comercial |
+| Licencia | OpenMDW-1.1 (other en Hugging Face), apto para uso comercial y no comercial |
 | Formato de pesos | Safetensors (libreria NeMo, PyTorch), tamanio del repositorio 21,6 GB |
 
 ## Arquitectura y entrenamiento
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks numericos concretos en la informaci
 | Nemotron 3.5 Transcribe 30B A4B (BF16) | 34B (4,3B activos) | Identica (precision BF16) | 65.536 tokens | 40 | OpenMDW-1.1 |
 | Alternativas de terceros (Whisper large-v3, etc.) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
-No se han proporcionado datos suficientes para una comparativa detallada con modelos de otras familias; la comparacion mas directa es con las variantes BF16 y FP8 del propio modelo, disponibles en el perfil de NVIDIA en HuggingFace.
+No se han proporcionado datos suficientes para una comparativa detallada con modelos de otras familias; la comparacion mas directa es con las variantes BF16 y FP8 del propio modelo, disponibles en el perfil de NVIDIA en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -78,14 +78,14 @@ No se han proporcionado datos suficientes para una comparativa detallada con mod
 - Riesgo de alucinacion: no cuantificado en la informacion disponible; como en todo modelo ASR generativo, puede inventar contenido en segmentos de audio ininteligible o ruidoso.
 - Los benchmarks publicados corresponden al modelo BF16; los resultados del checkpoint NVFP4 no se han evaluado individualmente en la model card.
 - Solo ~4,3B de parametros estan activos por token; el rendimiento depende criticamente de la calidad del audio y del idioma, y no se publican desgloses por idioma en la informacion proporcionada.
-- Licencia OpenMDW-1.1: permite uso comercial y no comercial, pero se trata de una licencia "other" en HuggingFace; conviene revisar el texto completo en openmdw.ai antes de despliegues en produccion.
+- Licencia OpenMDW-1.1: permite uso comercial y no comercial, pero se trata de una licencia "other" en Hugging Face; conviene revisar el texto completo en openmdw.ai antes de despliegues en produccion.
 - El modelo procesa grabaciones de hasta una hora; audios mas largos requieren segmentacion por parte del desarrollador.
 - Requiere la libreria NeMo para inferencia, lo que puede complicar la integracion frente a formatos estandar como GGUF.
 - Sesgos: no documentados especificamente en la informacion disponible; la model card incluye una seccion de consideraciones eticas que debe consultarse en el repositorio original.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-NVFP4
 - Modelo base (BF16): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
 - Variante FP8: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-FP8
 - Pagina de desarrolladores Nemotron: https://developer.nvidia.com/nemotron

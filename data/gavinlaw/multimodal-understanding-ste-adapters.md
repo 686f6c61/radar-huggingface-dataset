@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gavinlaw/multimodal-understanding-ste-adapters
+- Repositorio Hugging Face: https://huggingface.co/gavinlaw/multimodal-understanding-ste-adapters
 - Dataset de salidas y código de reproducción: https://huggingface.co/datasets/gavinlaw/multimodal-understanding-ste-outputs
 - Dataset original CaptainCook4D: https://captaincook4d.github.io/captain-cook/
 - Modelo base Qwen/Qwen3-VL-4B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct

@@ -80,8 +80,8 @@ La precisión en caras reales emplea el protocolo estándar de diez pliegues de 
 
 | Modelo | Parámetros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LayaFace-HSF.v0.20261029 | 86,2 M | Verificación facial de pares | no aplica | no verificada | HuggingFace (bundle offline) |
-| openai/clip-vit-base-patch16 | ~86 M (visual) | Visión-lenguaje general | 77 tokens de texto | MIT | HuggingFace, transformers |
+| LayaFace-HSF.v0.20261029 | 86,2 M | Verificación facial de pares | no aplica | no verificada | Hugging Face (bundle offline) |
+| openai/clip-vit-base-patch16 | ~86 M (visual) | Visión-lenguaje general | 77 tokens de texto | MIT | Hugging Face, transformers |
 | ArcFace (referencia habitual en verificación facial) | variable según backbone | Verificación facial | no aplica | variable según implementación | Amplia en literatura y repos |
 | FaceNet (referencia histórica) | variable | Verificación facial | no aplica | variable | Amplia en literatura |
 
@@ -105,7 +105,7 @@ La comparación con ArcFace y FaceNet es cualitativa: no se dispone de resultado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leloss/LayaFace-HSF.v0.20261029
+- Hugging Face: https://huggingface.co/leloss/LayaFace-HSF.v0.20261029
 - Modelo base: https://huggingface.co/openai/clip-vit-base-patch16
 - Paper de CLIP (arXiv:2103.00020): https://arxiv.org/abs/2103.00020
 - Paper de referencia (arXiv:2304.07060): https://arxiv.org/abs/2304.07060

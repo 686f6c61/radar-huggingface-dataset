@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo de artefacto | Permite reanudar entrenamiento | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ymetz/pi05-b1k-pt50-steps-resume-public | Checkpoints de entrenamiento pi0.5 (BEHAVIOR-1K 2026) | Si (`train_state` con optimizador) | Orbax (JAX) | no disponible | Publico en HuggingFace |
-| ymetz/pi05-b1k-pt50-steps | Copias de solo inferencia, misma ejecucion | No | no disponible | no disponible | Publico en HuggingFace |
+| ymetz/pi05-b1k-pt50-steps-resume-public | Checkpoints de entrenamiento pi0.5 (BEHAVIOR-1K 2026) | Si (`train_state` con optimizador) | Orbax (JAX) | no disponible | Publico en Hugging Face |
+| ymetz/pi05-b1k-pt50-steps | Copias de solo inferencia, misma ejecucion | No | no disponible | no disponible | Publico en Hugging Face |
 | pi0.5 base (openpi) | Politica base sin el ajuste sobre BEHAVIOR-1K | no disponible | Orbax (JAX) | no disponible en esta ficha | Referenciado por el autor |
 
 No se dispone de datos de parametros, contexto ni rendimiento para contrastar con alternativas de la misma categoria como OpenVLA, GR00T N1 o RDT-1B, por lo que no se incluye una comparativa cuantitativa.

@@ -77,5 +77,5 @@ No disponible. No hay modelos comparables identificables, ya que este repositori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/scadebayo/postdoc-audio-visual-learning
+- Hugging Face: https://huggingface.co/scadebayo/postdoc-audio-visual-learning
 - No se han encontrado en la busqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este repositorio.

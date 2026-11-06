@@ -97,7 +97,7 @@ Las cifras de las variantes genericas y de V2 proceden exclusivamente de la mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IsValorum/Thomson-1.0-Small-APEX-I-MiniPlus-V2.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/Thomson-1.0-Small-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/thomsonreuters/Thomson-1.0-Small
 - llama.cpp (runtime de referencia para GGUF): https://github.com/ggml-org/llama.cpp
 - Unsloth (herramienta mencionada en el proceso de cuantizacion): https://github.com/unslothai/unsloth

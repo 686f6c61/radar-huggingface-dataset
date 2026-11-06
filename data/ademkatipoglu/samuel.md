@@ -4,7 +4,7 @@
 
 Samuel es un controlador neuronal para Pink Trombone, un modelo físico del tracto vocal humano. Dado un fragmento de audio de voz, el modelo predice las trayectorias de los parámetros del tracto vocal que hacen que el sintetizador reproduzca esa voz. Se trata, por tanto, de un sistema de síntesis articulatoria: no genera audio directamente mediante un decodificador neuronal de forma de onda, sino que estima los parámetros de control de un sintetizador físico basado en reglas.
 
-El modelo lo desarrolló originalmente Václav Volhejn y esta ficha corresponde a una copia publicada por el usuario ademkatipoglu en HuggingFace. La model card es mínima y no aporta información sobre arquitectura, tamaño, datos de entrenamiento ni contexto, por lo que muchos de los campos de esta ficha quedan marcados como no disponibles.
+El modelo lo desarrolló originalmente Václav Volhejn y esta ficha corresponde a una copia publicada por el usuario ademkatipoglu en Hugging Face. La model card es mínima y no aporta información sobre arquitectura, tamaño, datos de entrenamiento ni contexto, por lo que muchos de los campos de esta ficha quedan marcados como no disponibles.
 
 Su relevancia es de nicho: resulta útil para investigación en síntesis articulatoria, para experimentos de inversión acústica a parámetros del tracto vocal y para proyectos creativos que quieran controlar Pink Trombone de forma automática a partir de voz real. No es un modelo de propósito general ni compite con los TTS neuronales convencionales.
 
@@ -64,7 +64,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| samuel (ademkatipoglu) | no disponible | no disponible | GPL-3.0 | HuggingFace |
+| samuel (ademkatipoglu) | no disponible | no disponible | GPL-3.0 | Hugging Face |
 | Alternativas de síntesis articulatoria | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,7 +79,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace (copia): https://huggingface.co/ademkatipoglu/samuel
+- Hugging Face (copia): https://huggingface.co/ademkatipoglu/samuel
 - Modelo original: https://huggingface.co/vvolhejn/samuel
 - Repositorio original en GitHub: https://github.com/vvolhejn/samuel
 - Pink Trombone: https://dood.al/pinktrombone/

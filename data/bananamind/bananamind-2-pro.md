@@ -67,7 +67,7 @@ Ademas, el checkpoint final medido con batch 1 obtiene 1132 Elo, 236/350 casos c
 - El modelo ocupa aproximadamente 556-640 MB en FP32 y 278-320 MB en FP16/BF16, segun el conteo de parametros (139M o 160M).
 - Puede ejecutarse en GPU con 4 GB de VRAM o menos; tambien es viable en CPU con suficiente RAM (al menos 1 GB para los pesos).
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM, como GTX 1650, RTX 3050, o superiores.
-- Opciones de despliegue: al ser un modelo transformers estandar, puede usarse con HuggingFace transformers (con `trust_remote_code=True`), y es convertible a GGUF para llama.cpp u Ollama. Tambien es compatible con vLLM o TGI si se registra la arquitectura personalizada.
+- Opciones de despliegue: al ser un modelo transformers estandar, puede usarse con Hugging Face transformers (con `trust_remote_code=True`), y es convertible a GGUF para llama.cpp u Ollama. Tambien es compatible con vLLM o TGI si se registra la arquitectura personalizada.
 - Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -83,9 +83,9 @@ BananaMind-2-Pro se compara directamente con GPT-X2.5-135M (135M parametros, con
 - Discrepancia en el numero de parametros entre la model card (138.971.520) y los pesos safetensors (159.943.040); se recomienda verificar cual es el valor correcto antes de usarlo en produccion.
 - Al estar entrenado con datos web, puede heredar sesgos presentes en esos corpus; no se documentan evaluaciones de sesgo especificas.
 - Riesgo de alucinacion inherente a los modelos de lenguaje, especialmente en tareas de generacion abierta.
-- La arquitectura personalizada requiere `trust_remote_code=True` en HuggingFace, lo que implica ejecutar codigo del repositorio del autor.
+- La arquitectura personalizada requiere `trust_remote_code=True` en Hugging Face, lo que implica ejecutar codigo del repositorio del autor.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BananaMind/BananaMind-2-Pro
+- Hugging Face: https://huggingface.co/BananaMind/BananaMind-2-Pro
 - No se proporcionan otros enlaces (papers, blogs, repos) en la informacion disponible.

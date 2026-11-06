@@ -89,7 +89,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ericfithian/piano-duet-recording-transcription-onnx
+- Repositorio Hugging Face: https://huggingface.co/ericfithian/piano-duet-recording-transcription-onnx
 - Paper del método: https://arxiv.org/abs/2404.09466
 - Repositorio upstream Transkun: https://github.com/Yujia-Yan/Transkun
 - Paquete de referencia: `transkun==2.0.1` (checkpoint `2.0.pt`)

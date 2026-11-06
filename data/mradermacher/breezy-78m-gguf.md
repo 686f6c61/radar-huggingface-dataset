@@ -21,13 +21,13 @@ Su relevancia es acotada y de caracter practico: sirve para experimentar con mod
 | Licencia | no disponible |
 | Formato de pesos | GGUF (el modelo base se distribuye en safetensors) |
 
-Datos adicionales del repositorio: tamano 0,8 GB, 0 descargas, 0 likes, creado el 2026-09-17 y actualizado el 2026-09-17 segun los metadatos de HuggingFace.
+Datos adicionales del repositorio: tamano 0,8 GB, 0 descargas, 0 likes, creado el 2026-09-17 y actualizado el 2026-09-17 segun los metadatos de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
 No hay informacion disponible sobre la arquitectura del modelo base kikusuka/breezy-78m en los datos proporcionados: no se especifica si es un transformer denso, un MoE, un modelo hibrido ni sus hiperparametros (numero de capas, dimensiones, cabezas de atencion o tipo de atencion). Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de ajuste como SFT, RLHF o DPO.
 
-Lo unico verificable es el proceso de cuantizacion aplicado por mradermacher: la model card indica que se trata de cuantizaciones estaticas ("static quants") y que en el momento de la publicacion no habia cuantizaciones ponderadas ni con imatrix para este modelo. Los comentarios internos de la plantilla de generacion (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) confirman una conversion desde pesos de HuggingFace a GGUF con cuantizacion de tensores de salida, un procedimiento habitual para preservar mejor la calidad en la capa final.
+Lo unico verificable es el proceso de cuantizacion aplicado por mradermacher: la model card indica que se trata de cuantizaciones estaticas ("static quants") y que en el momento de la publicacion no habia cuantizaciones ponderadas ni con imatrix para este modelo. Los comentarios internos de la plantilla de generacion (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`) confirman una conversion desde pesos de Hugging Face a GGUF con cuantizacion de tensores de salida, un procedimiento habitual para preservar mejor la calidad en la capa final.
 
 ## Capacidades
 
@@ -100,7 +100,7 @@ En cuanto a competidores de tamano similar (por ejemplo, familias de menos de 15
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/breezy-78m-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/breezy-78m-GGUF
 - Modelo base: https://huggingface.co/kikusuka/breezy-78m
 - Pagina de resumen y descargas del cuantizador para este modelo: https://hf.tst.eu/model#breezy-78m-GGUF
 - Solicitudes de cuantizacion y preguntas frecuentes de mradermacher: https://huggingface.co/mradermacher/model_requests

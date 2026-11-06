@@ -77,7 +77,7 @@ No se dispone en la informacion proporcionada de datos numericos de modelos comp
 
 | Modelo | Parametros | Contexto/entrada | OA en ScanObjectNN OBJ_ONLY | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| recon.scanobjectnn-objonly.zekun-qi | 43,6 M | 8192 puntos (ejemplo) | 93,63 | MIT | HuggingFace |
+| recon.scanobjectnn-objonly.zekun-qi | 43,6 M | 8192 puntos (ejemplo) | 93,63 | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone en la informacion proporcionada de datos numericos de modelos comp
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/torch-pointcloud/recon.scanobjectnn-objonly.zekun-qi)
+- [Modelo en Hugging Face](https://huggingface.co/torch-pointcloud/recon.scanobjectnn-objonly.zekun-qi)
 - [Paper: Contrast with Reconstruct (arXiv:2302.02318)](https://arxiv.org/abs/2302.02318)
 - [Repositorio original qizekun/ReCon](https://github.com/qizekun/ReCon)
 - [Libreria torch-pointcloud](https://github.com/arthurdjn/pytorch-pointcloud)

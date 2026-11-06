@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Formato y disponibilidad |
 |---|---|---|---|---|---|
-| Index-Translate-9B (Q4_K_M de datouge) | 9,2 B | 150 | No disponible | Apache 2.0 | GGUF, repositorio comunitario en HuggingFace |
+| Index-Translate-9B (Q4_K_M de datouge) | 9,2 B | 150 | No disponible | Apache 2.0 | GGUF, repositorio comunitario en Hugging Face |
 | Qwen3-MT | Variantes de 1,7B / 4B / 8B / 32B | 92 | No disponible | Apache 2.0 (segun su ficha oficial) | Safetensors, repositorio oficial |
 | TowerInstruct-7B (Unbabel) | 7 B | 10 | No disponible | CC-BY-NC-4.0 | Safetensors, repositorio oficial |
 | NLLB-200 (Meta) | 3,3 B (entre otras variantes) | 200 | No disponible | CC-BY-NC-4.0 | Safetensors, repositorio oficial |

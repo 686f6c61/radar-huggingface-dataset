@@ -63,8 +63,8 @@ No se dispone de datos de rendimiento comparativos con otros modelos. Como refer
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-FP8 (base) | 125B + 51B PLE | 6B | 262K | qwen-community-1.0 | HuggingFace |
-| Qwen3.8-Flash-Next-oQ4e-128k (esta conversion) | 26B cuantizados | 6B (base) | 131K | qwen-community-1.0 | HuggingFace |
+| Qwen3.8-Flash-Next-FP8 (base) | 125B + 51B PLE | 6B | 262K | qwen-community-1.0 | Hugging Face |
+| Qwen3.8-Flash-Next-oQ4e-128k (esta conversion) | 26B cuantizados | 6B (base) | 131K | qwen-community-1.0 | Hugging Face |
 | Qwen3.8-Flash (version original) | no disponible | no disponible | 1M | no disponible | QwenCloud |
 
 La comparativa directa con otras cuantizaciones de Qwen3.8-Flash-Next no esta disponible en la informacion proporcionada.
@@ -83,7 +83,7 @@ La comparativa directa con otras cuantizaciones de Qwen3.8-Flash-Next no esta di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jedisct1/Qwen3.8-Flash-Next-oQ4e-128k
+- Repositorio Hugging Face: https://huggingface.co/jedisct1/Qwen3.8-Flash-Next-oQ4e-128k
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next-FP8
 - Repositorio GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Guia de ejecucion local (unsloth): https://unsloth.ai/docs/models/qwen3.8-next

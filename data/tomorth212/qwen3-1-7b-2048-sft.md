@@ -82,8 +82,8 @@ El SFT puntuó más alto en 84 de las 100 partidas emparejadas y más bajo en 16
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3-1.7B (base) | 1,72B | no disponible en la información proporcionada | Modelo general de texto, no especializado en 2048 | apache-2.0 | HuggingFace |
-| tomorth212/qwen3-1.7b-2048-sft (este) | 1,72B | no disponible (SFT con secuencia de 1.024 tokens) | Selección de movimiento legal en 2048 | apache-2.0 | HuggingFace (MLX) |
+| Qwen/Qwen3-1.7B (base) | 1,72B | no disponible en la información proporcionada | Modelo general de texto, no especializado en 2048 | apache-2.0 | Hugging Face |
+| tomorth212/qwen3-1.7b-2048-sft (este) | 1,72B | no disponible (SFT con secuencia de 1.024 tokens) | Selección de movimiento legal en 2048 | apache-2.0 | Hugging Face (MLX) |
 | Otros modelos específicos de 2048 | no disponible | no disponible | no disponible | no disponible | no se han identificado en la información disponible |
 
 La comparación más directa es contra su propio modelo base, sobre el que este checkpoint mejora la puntuación media de 1.163,84 a 2.461,76 y el acuerdo con acción experta del 32% al 52%. No se dispone de datos sobre otros modelos especializados en 2048 para establecer una comparativa externa.
@@ -104,7 +104,7 @@ La comparación más directa es contra su propio modelo base, sobre el que este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tomorth212/qwen3-1.7b-2048-sft
+- Modelo en Hugging Face: https://huggingface.co/tomorth212/qwen3-1.7b-2048-sft
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset 2048-gameplay-dataset: https://huggingface.co/datasets/yethdev/2048-gameplay-dataset
 - Proyecto RL-2048: https://github.com/TomOrth/RL-2048

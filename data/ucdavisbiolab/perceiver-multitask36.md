@@ -73,7 +73,7 @@ No disponible. No se han encontrado modelos comparables de la misma categoria (i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ucdavisbiolab/perceiver-multitask36
+- Hugging Face: https://huggingface.co/ucdavisbiolab/perceiver-multitask36
 - Documentacion de Perceiver IO en Hugging Face: https://huggingface.co/docs/transformers/v5.0.0rc1/en/model_doc/perceiver
 - Blog de DeepMind sobre Perceiver: https://deepmind.google/blog/building-architectures-that-can-handle-the-worlds-data/
 - Blog de Hugging Face sobre Perceiver IO: https://huggingface.co/blog/perceiver

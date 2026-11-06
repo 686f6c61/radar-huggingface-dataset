@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_309405078_tiny_transformer_small` es una implementación a pequeña escala de la arquitectura tiny transformer, publicada por el usuario davidokaf en HuggingFace. Está diseñado específicamente para tareas de matching (emparejamiento o correspondencia entre entradas), aunque la documentación disponible no especifica el dominio concreto de aplicación (texto, visión, etc.).
+El modelo `model_309405078_tiny_transformer_small` es una implementación a pequeña escala de la arquitectura tiny transformer, publicada por el usuario davidokaf en Hugging Face. Está diseñado específicamente para tareas de matching (emparejamiento o correspondencia entre entradas), aunque la documentación disponible no especifica el dominio concreto de aplicación (texto, visión, etc.).
 
 La arquitectura combina atención con ventana deslizante (sliding window), una estrategia de fusión de bajo rango (low rank) y una cabeza de tarea de tipo matching. Utiliza activación GELU, normalización por lotes (batchnorm) e inicialización Xavier uniforme. El entrenamiento emplea el optimizador LAMB con un programador de tasa de aprendizaje exponencial.
 
@@ -75,7 +75,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidokaf/model_309405078_tiny_transformer_small
+- Hugging Face: https://huggingface.co/davidokaf/model_309405078_tiny_transformer_small
 - Repositorio TinyTransformer (skolouri): https://github.com/skolouri/TinyTransformer
 - Repositorio tinyTransformer (avvorstenbosch): https://github.com/avvorstenbosch/tinyTransformer
 - Paper TinyFormer: https://arxiv.org/abs/2311.01759

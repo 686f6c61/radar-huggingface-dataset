@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SongMAE-Micro 32x1 bird detector es un detector de eventos sonoros bioacústicos publicado por el usuario georgeven en HuggingFace. Consiste en un ajuste fino del codificador SongMAE-Micro 32x1 (1.621.664 parámetros reales según el archivo safetensors del repositorio) al que se añade una cabeza lineal: para cada trama de 5 ms y cada una de las 128 bandas mel del rango 20-16.000 Hz, el modelo estima la probabilidad de que esa celda tiempo-frecuencia corresponda a una vocalización de ave. No es un modelo generativo ni un clasificador de especies: su salida es una máscara tiempo-frecuencia.
+SongMAE-Micro 32x1 bird detector es un detector de eventos sonoros bioacústicos publicado por el usuario georgeven en Hugging Face. Consiste en un ajuste fino del codificador SongMAE-Micro 32x1 (1.621.664 parámetros reales según el archivo safetensors del repositorio) al que se añade una cabeza lineal: para cada trama de 5 ms y cada una de las 128 bandas mel del rango 20-16.000 Hz, el modelo estima la probabilidad de que esa celda tiempo-frecuencia corresponda a una vocalización de ave. No es un modelo generativo ni un clasificador de especies: su salida es una máscara tiempo-frecuencia.
 
 La particularidad del entrenamiento es que no se usaron etiquetas humanas. Las anotaciones provienen de un modelo vision-lenguaje profesor, Qwen3.8-27B en cuantización Q8_0 sobre llama.cpp, que dibuja cajas delimitadoras sobre espectrogramas viridis de 5 segundos de grabaciones de Xeno-Canto (BirdSet XCL) apoyándose en ejes de coordenadas, razonamiento en cadena y una pasada numerada de autorrevisión. El codificador base pertenece a la familia SongMAE, descrita en el artículo asociado como un MAE-ViT (Masked Autoencoder Vision Transformer) preentrenado con reconstrucción enmascarada de espectrogramas mel.
 
@@ -27,7 +27,7 @@ Su interés práctico reside en el tamaño: 1,62 M de parámetros, licencia MIT 
 | Modelo base | georgeven/songmae-micro-32x1 (ajuste fino) |
 | Puntos de control | 3 semillas (--seed 0, 1 o 2), cada una con umbral calibrado propio |
 | Repositorio | 0 descargas, 0 likes, tamaño 0,0 GB en el momento de la consulta |
-| Fecha de creación en HuggingFace | 2026-09-24 (última actualización: 2026-09-24, según metadatos del repositorio) |
+| Fecha de creación en Hugging Face | 2026-09-24 (última actualización: 2026-09-24, según metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
 
@@ -86,8 +86,8 @@ Advertencias sobre esta tabla: la fila SongMAE corresponde al detector Large (ge
 
 | Modelo | Tarea | Tamaño | Enfoque de etiquetado | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SongMAE-Micro 32x1 bird detector | Detección tiempo-frecuencia | 1.621.664 parámetros | Etiquetas de profesor vision-lenguaje | Sin cifras en los cuatro conjuntos de prueba; solo conjunto de desarrollo Powdermill | MIT | HuggingFace, 0 descargas |
-| SongMAE-Large 32x1 bird detector | Detección tiempo-frecuencia | No disponible en la información | Etiquetas de profesor vision-lenguaje | AP 0,633 en WABAD; 0,716 en Hawaii; 0,836 en XC-AJ; 0,777 en NIPS4Bplus | No disponible | HuggingFace |
+| SongMAE-Micro 32x1 bird detector | Detección tiempo-frecuencia | 1.621.664 parámetros | Etiquetas de profesor vision-lenguaje | Sin cifras en los cuatro conjuntos de prueba; solo conjunto de desarrollo Powdermill | MIT | Hugging Face, 0 descargas |
+| SongMAE-Large 32x1 bird detector | Detección tiempo-frecuencia | No disponible en la información | Etiquetas de profesor vision-lenguaje | AP 0,633 en WABAD; 0,716 en Hawaii; 0,836 en XC-AJ; 0,777 en NIPS4Bplus | No disponible | Hugging Face |
 | YOLO11n | Detección en imagen (espectrograma) | No disponible en la información | Etiquetas humanas o del profesor (dos variantes comparadas) | Con etiquetas del profesor: AP 0,566 en WABAD; 0,619 en Hawaii; 0,769 en XC-AJ; 0,749 en NIPS4Bplus | No disponible | Público |
 | BirdCODE | Detección de eventos sonoros | No disponible en la información | No disponible | AP 0,836 en XC-AJ; 0,657 en NIPS4Bplus; sin datos de WABAD ni Hawaii | No disponible | Público |
 
@@ -111,7 +111,7 @@ Los parámetros de YOLO11n, YOLO11l y BirdCODE no figuran en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/georgeven/songmae-micro-32x1-bird-detector
+- Modelo en Hugging Face: https://huggingface.co/georgeven/songmae-micro-32x1-bird-detector
 - Modelo base (codificador): https://huggingface.co/georgeven/songmae-micro-32x1
 - Detector SongMAE-Large: https://huggingface.co/georgeven/songmae-large-32x1-bird-detector
 - Colección SongMAE: https://huggingface.co/collections/georgeven/songmae-a-bioacoustic-encoder-for-birdsong-6a91eb9c42e5cde53962fbec

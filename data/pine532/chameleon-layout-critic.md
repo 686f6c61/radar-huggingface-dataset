@@ -78,8 +78,8 @@ No hay resultados públicos de benchmarks que permitan comparar numéricamente c
 
 | Modelo | Tipo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Chameleon layout critic | Regresión logística sobre características | 113 pesos | no aplica | Puntuar y desempatar finalistas del motor | Apache-2.0 | HuggingFace (`Pine532/chameleon-layout-critic`) |
-| Chameleon layout generator | MLP | 6.600 pesos | no aplica | Predecir la caja de cada unidad de contenido en el lienzo destino | no disponible en la informacion | HuggingFace (`Pine532/chameleon-layout-generator`) |
+| Chameleon layout critic | Regresión logística sobre características | 113 pesos | no aplica | Puntuar y desempatar finalistas del motor | Apache-2.0 | Hugging Face (`Pine532/chameleon-layout-critic`) |
+| Chameleon layout generator | MLP | 6.600 pesos | no aplica | Predecir la caja de cada unidad de contenido en el lienzo destino | no disponible en la informacion | Hugging Face (`Pine532/chameleon-layout-generator`) |
 | Juez VLM de referencia (no identificado) | Modelo visión-lenguaje | no disponible | no disponible | Preferencias por pares sobre layouts | no disponible | No distribuido con este modelo |
 | Selector basado en reglas del motor Chameleon | Reglas heuristicas | no aplica | no aplica | Elección principal y generación de finalistas | no disponible | Incluido en el motor |
 
@@ -98,7 +98,7 @@ No hay resultados públicos de benchmarks que permitan comparar numéricamente c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pine532/chameleon-layout-critic
+- Modelo en Hugging Face: https://huggingface.co/Pine532/chameleon-layout-critic
 - Modelo relacionado (generador de layouts): https://huggingface.co/Pine532/chameleon-layout-generator
 - Benchmark de modelos de octubre de 2026 (referencia general, no especifica de este modelo): https://benchlm.ai/
 - Listado de rankings y precios de LLM (referencia general): https://www.llmboard.ai/

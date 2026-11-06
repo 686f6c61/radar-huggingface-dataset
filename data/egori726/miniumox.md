@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Miniumox es un modelo publicado en HuggingFace por el usuario Egori726 bajo el identificador `Egori726/miniumox`. Se trata de un ajuste fino (finetune) derivado del modelo base `Crownelius/Poe-8B-GLM5-Opus4.6-Sonnet4.5-Kimi-Grok-Gemini-3-pro-preview-HERETIC`, según los metadatos declarados por el autor. El modelo está etiquetado para la tarea de clasificación de texto (`text-classification`) y declara únicamente el idioma ruso (`ru`) entre sus lenguajes soportados.
+Miniumox es un modelo publicado en Hugging Face por el usuario Egori726 bajo el identificador `Egori726/miniumox`. Se trata de un ajuste fino (finetune) derivado del modelo base `Crownelius/Poe-8B-GLM5-Opus4.6-Sonnet4.5-Kimi-Grok-Gemini-3-pro-preview-HERETIC`, según los metadatos declarados por el autor. El modelo está etiquetado para la tarea de clasificación de texto (`text-classification`) y declara únicamente el idioma ruso (`ru`) entre sus lenguajes soportados.
 
 La información pública disponible es extremadamente limitada: la model card no incluye descripción funcional, detalles de arquitectura, datos de entrenamiento ni resultados de evaluación. El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el mismo día (24 de septiembre de 2026), lo que apunta a una publicación reciente y sin validación por parte de la comunidad.
 
@@ -78,6 +78,6 @@ No disponible. La información publicada no permite identificar modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Egori726/miniumox
+- Modelo en Hugging Face: https://huggingface.co/Egori726/miniumox
 - Modelo base declarado: https://huggingface.co/Crownelius/Poe-8B-GLM5-Opus4.6-Sonnet4.5-Kimi-Grok-Gemini-3-pro-preview-HERETIC
 - Licencia Gemma (referencia): https://ai.google.dev/gemma/terms

@@ -77,9 +77,9 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-CHOCO-BRAIN_GUARD-v1 | 0,8B (adaptador PEFT) | no disponible | Datos de fraude de la model card (158/177 detecciones declaradas) | Apache-2.0 | HuggingFace, mas variante GGUF |
-| Qwen/Qwen3.5-0.8B (modelo base) | 0,8B | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher | no disponible | no disponible | no disponible | no disponible | HuggingFace, GitHub |
+| connectailab-rl-CHOCO-BRAIN_GUARD-v1 | 0,8B (adaptador PEFT) | no disponible | Datos de fraude de la model card (158/177 detecciones declaradas) | Apache-2.0 | Hugging Face, mas variante GGUF |
+| Qwen/Qwen3.5-0.8B (modelo base) | 0,8B | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher | no disponible | no disponible | no disponible | no disponible | Hugging Face, GitHub |
 | Otros modelos de defensa antifraude de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,13 +97,13 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1
+- Modelo en Hugging Face: https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1
 - Variante teacher: https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher
 - Variante GGUF: https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - README en coreano: https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1/blob/main/README_KR.md
 - Licencia: https://huggingface.co/hwihwalab/connectailab-rl-CHOCO-BRAIN_GUARD-v1/blob/main/LICENSE
-- Organizacion en HuggingFace: https://huggingface.co/hwihwalab
+- Organizacion en Hugging Face: https://huggingface.co/hwihwalab
 - GitHub de Hwihwa Lab: https://github.com/Hwihwa-Lab
 - Repositorio GitHub de la variante teacher: https://github.com/Hwihwa-Lab/connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher
 - Releases de la variante teacher: https://github.com/Hwihwa-Lab/connectailab-rl-CHOCO-BRAIN_GUARD-v1-teacher/releases

@@ -87,6 +87,6 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/scottlowry/Swift-1.5-Qwen3.8-27b-oQ8e-mtp
+- Hugging Face: https://huggingface.co/scottlowry/Swift-1.5-Qwen3.8-27b-oQ8e-mtp
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Herramienta oQ / oMLX: https://github.com/jundot/omlx

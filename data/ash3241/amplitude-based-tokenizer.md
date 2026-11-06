@@ -80,5 +80,5 @@ No hay modelos comparables disponibles en la información proporcionada. No se c
 
 ## Enlaces
 
-- [Repositorio de HuggingFace](https://huggingface.co/ash3241/Amplitude-based-tokenizer)
+- [Repositorio de Hugging Face](https://huggingface.co/ash3241/Amplitude-based-tokenizer)
 - [Repositorio de GitHub del modelo](https://github.com/Yash943/CAT-Concept-Amplitude-Tokenization-)

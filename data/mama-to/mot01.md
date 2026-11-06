@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo mama-to/mot01 es un repositorio publicado en HuggingFace por el usuario mama-to del que no se ha facilitado informacion tecnica verificable: ni pipeline, ni licencia, ni idiomas, ni arquitectura, ni parametros, ni contexto. Los unicos datos objetivos disponibles son el identificador del repositorio, el tamano del mismo (19,4 GB), las fechas de creacion y actualizacion (12 de septiembre de 2026) y las metricas de la comunidad (0 descargas, 1 like), lo que indica que se trata de una publicacion practicamente sin adopcion ni documentacion publica.
+El modelo mama-to/mot01 es un repositorio publicado en Hugging Face por el usuario mama-to del que no se ha facilitado informacion tecnica verificable: ni pipeline, ni licencia, ni idiomas, ni arquitectura, ni parametros, ni contexto. Los unicos datos objetivos disponibles son el identificador del repositorio, el tamano del mismo (19,4 GB), las fechas de creacion y actualizacion (12 de septiembre de 2026) y las metricas de la comunidad (0 descargas, 1 like), lo que indica que se trata de una publicacion practicamente sin adopcion ni documentacion publica.
 
 La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo. Todas las coincidencias encontradas corresponden a entidades homonimas sin vinculacion alguna: la convencion musical MaMA Music & Convention de Paris, la pelicula de terror "Mama" (2013), la cadena de hoteles Mama Shelter y articulos enciclopedicos sobre la citada pelicula. No se ha localizado ninguna publicacion tecnica, blog, repositorio de codigo ni demostracion asociada a mama-to/mot01.
 
@@ -77,6 +77,6 @@ No disponible. Al desconocerse el tamano, la arquitectura y el dominio de aplica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mama-to/mot01
+- Repositorio en Hugging Face: https://huggingface.co/mama-to/mot01
 - Paper, blog tecnico, repositorio de codigo y demostraciones: no disponible
 - Resultados de la busqueda web: sin relacion con el modelo (mama-musicandconvention.com, articulo de Wikipedia sobre la pelicula "Mama" de 2013, ficha de AlloCine, sitio de Mama Shelter); no se incluyen como fuentes por no ser pertinentes.

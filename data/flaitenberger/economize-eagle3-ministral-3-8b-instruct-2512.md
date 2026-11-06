@@ -74,9 +74,9 @@ Nota de fidelidad: en bf16, un pase de verificacion sobre varios tokens redondea
 
 | Modelo | Tipo | Parametros | Contexto | Speedup publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| economize-eagle3-Ministral-3-8B-Instruct-2512 | Draft head EAGLE-3 | 428M | no disponible | 1,59x global (H100, bf16) | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| Ministral-3-8B-Instruct-2512 (base) | LLM instruct | 8B | no disponible | 1x (referencia) | no disponible en la informacion | HuggingFace |
-| Otros borradores EAGLE-3 de la coleccion economize | Draft head EAGLE-3 | no disponible | no disponible | no disponible | Apache 2.0 (segun repositorio) | Coleccion `economize-drafters` en HuggingFace |
+| economize-eagle3-Ministral-3-8B-Instruct-2512 | Draft head EAGLE-3 | 428M | no disponible | 1,59x global (H100, bf16) | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| Ministral-3-8B-Instruct-2512 (base) | LLM instruct | 8B | no disponible | 1x (referencia) | no disponible en la informacion | Hugging Face |
+| Otros borradores EAGLE-3 de la coleccion economize | Draft head EAGLE-3 | no disponible | no disponible | no disponible | Apache 2.0 (segun repositorio) | Coleccion `economize-drafters` en Hugging Face |
 
 No se dispone de datos de benchmarks de otros borradores EAGLE-3 comparables en la informacion proporcionada.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de otros borradores EAGLE-3 comparables en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/flaitenberger/economize-eagle3-Ministral-3-8B-Instruct-2512
+- Hugging Face: https://huggingface.co/flaitenberger/economize-eagle3-Ministral-3-8B-Instruct-2512
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-BF16
 - GitHub de economize: https://github.com/Thiggel/economize
 - PyPI: https://pypi.org/project/economize/

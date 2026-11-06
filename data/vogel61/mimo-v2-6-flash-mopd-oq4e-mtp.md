@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros totales / activos | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | MiMo-V2.6-Flash-MOPD-oQ4e-mtp (este repo) | 309B / 15B | 1M | Texto, imagen, video, audio | MIT | Safetensors 4-bit, 172,3 GB |
-| MiMo-V2.6-Flash-RL | 309B / 15B (arquitectura compartida) | 1M | Texto, imagen, video, audio | MIT | HuggingFace y ModelScope, sin corregir la repeticion de tool calls |
-| MiMo-V2.6-Flash-MOPD | 309B / 15B | 1M | Texto, imagen, video, audio | MIT | HuggingFace y ModelScope, version oficial sin cuantizar |
-| MiMo-V2.6-Pro-MOPD | no disponible (gama superior) | 1M | Texto, imagen, video, audio | MIT | HuggingFace y ModelScope |
+| MiMo-V2.6-Flash-RL | 309B / 15B (arquitectura compartida) | 1M | Texto, imagen, video, audio | MIT | Hugging Face y ModelScope, sin corregir la repeticion de tool calls |
+| MiMo-V2.6-Flash-MOPD | 309B / 15B | 1M | Texto, imagen, video, audio | MIT | Hugging Face y ModelScope, version oficial sin cuantizar |
+| MiMo-V2.6-Pro-MOPD | no disponible (gama superior) | 1M | Texto, imagen, video, audio | MIT | Hugging Face y ModelScope |
 
 ## Limitaciones y advertencias
 - Repositorio con 0 descargas y 0 likes, lo que indica ausencia de validacion por parte de la comunidad.

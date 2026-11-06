@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Face-swap-video (DeepSwapFace) es una herramienta de línea de comandos para realizar intercambio de rostros (face swap) en vídeos e imágenes, publicada en HuggingFace por el usuario lynnir9009. No se trata de un modelo de lenguaje ni de una red neuronal propia, sino de un script Python legible y autocontenido que orquesta dos modelos de InsightFace: el detector SCRFD (`det_10g.onnx`) y el modelo de intercambio `inswapper_128.onnx`, ambos ejecutados mediante ONNX Runtime. Su valor diferencial frente a alternativas como notebooks de Colab o grafos complejos de ComfyUI es la simplicidad: un único fichero Python, dos modelos y un comando.
+Face-swap-video (DeepSwapFace) es una herramienta de línea de comandos para realizar intercambio de rostros (face swap) en vídeos e imágenes, publicada en Hugging Face por el usuario lynnir9009. No se trata de un modelo de lenguaje ni de una red neuronal propia, sino de un script Python legible y autocontenido que orquesta dos modelos de InsightFace: el detector SCRFD (`det_10g.onnx`) y el modelo de intercambio `inswapper_128.onnx`, ambos ejecutados mediante ONNX Runtime. Su valor diferencial frente a alternativas como notebooks de Colab o grafos complejos de ComfyUI es la simplicidad: un único fichero Python, dos modelos y un comando.
 
-El problema que resuelve es la accesibilidad técnica al face swap: permite prototipado de VFX, investigación y experimentos de preservación de identidad sin infraestructura pesada, funcionando incluso en CPU (una instancia de 2 vCPU y 1,9 GB de RAM es suficiente, aunque una GPU es entre 10 y 30 veces más rápida). El repositorio no incluye los pesos: descarga `buffalo_l` (~289 MB) desde GitHub e `inswapper_128.onnx` (~529 MB) desde un espejo de HuggingFace, precisamente porque este último tiene licencia de uso exclusivamente no comercial en investigación.
+El problema que resuelve es la accesibilidad técnica al face swap: permite prototipado de VFX, investigación y experimentos de preservación de identidad sin infraestructura pesada, funcionando incluso en CPU (una instancia de 2 vCPU y 1,9 GB de RAM es suficiente, aunque una GPU es entre 10 y 30 veces más rápida). El repositorio no incluye los pesos: descarga `buffalo_l` (~289 MB) desde GitHub e `inswapper_128.onnx` (~529 MB) desde un espejo de Hugging Face, precisamente porque este último tiene licencia de uso exclusivamente no comercial en investigación.
 
 La herramienta es relevante como ejemplo de pipeline reproducible y verificable: la model card incluye ejemplos con métricas de similitud coseno ArcFace (identidad) antes y después del intercambio, alcanzando valores de 0,82–0,89, y documentación completa de rendimiento y opciones de CLI. Está escrita en inglés y licenciada bajo MIT (el código, no los modelos).
 
@@ -95,7 +95,7 @@ Todas las alternativas abiertas de face swap dependen en mayor o menor medida de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lynnir9009/face-swap-video
+- Repositorio en Hugging Face: https://huggingface.co/lynnir9009/face-swap-video
 - Pesos del modelo de intercambio (espejo upstream): https://huggingface.co/ezioruan/inswapper_128.onnx/resolve/main/inswapper_128.onnx
 - Modelos buffalo_l de InsightFace (detector y reconocimiento): https://github.com/deepinsight/insightface/releases/download/v0.7/buffalo_l.zip
 - Repositorio de InsightFace: https://github.com/deepinsight/insightface

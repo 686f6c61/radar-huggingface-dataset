@@ -89,6 +89,6 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/manateelazycat/DeepSeek-V4.1-Flash-1017-Thor-TP2
+- Repositorio en Hugging Face: https://huggingface.co/manateelazycat/DeepSeek-V4.1-Flash-1017-Thor-TP2
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Paper, blog técnico, repositorio de código o demo: no disponibles en la información proporcionada.

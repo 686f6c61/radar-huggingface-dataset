@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JoseCanihuante/kl_effv2l_corn` es un repositorio publicado en HuggingFace por el usuario JoseCanihuante con licencia Apache 2.0 y un tamano de repositorio de 1,0 GB. La model card asociada contiene unicamente la declaracion de licencia, sin informacion sobre arquitectura, datos de entrenamiento, pipeline, idiomas o uso previsto. El repositorio no tiene descargas registradas y cuenta con un unico "like" en el momento de la consulta, por lo que se trata de un artefacto practicamente sin adopcion publica.
+`JoseCanihuante/kl_effv2l_corn` es un repositorio publicado en Hugging Face por el usuario JoseCanihuante con licencia Apache 2.0 y un tamano de repositorio de 1,0 GB. La model card asociada contiene unicamente la declaracion de licencia, sin informacion sobre arquitectura, datos de entrenamiento, pipeline, idiomas o uso previsto. El repositorio no tiene descargas registradas y cuenta con un unico "like" en el momento de la consulta, por lo que se trata de un artefacto practicamente sin adopcion publica.
 
 Por la nomenclatura del identificador pueden formularse hipotesis tecnicas, siempre sin confirmar: el sufijo `effv2l` es coherente con el nombre de una variante de EfficientNetV2-L, `corn` coincide con las siglas de CORN (Conditional Ordinal Regression for Neural networks), una perdida habitual en problemas de clasificacion ordinal, y `kl` puede corresponder a la escala Kellgren-Lawrence de gradacion radiografica. Esta lectura encaja con el perfil de GitHub del autor, que menciona un proyecto de diagnostico de artrosis de rodilla mediante tecnicas de aprendizaje profundo. Ninguna de estas inferencias esta respaldada por la model card ni por documentacion adicional.
 
@@ -80,7 +80,7 @@ No disponible. La ausencia de especificaciones verificadas (arquitectura, parame
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoseCanihuante/kl_effv2l_corn
+- Modelo en Hugging Face: https://huggingface.co/JoseCanihuante/kl_effv2l_corn
 - Perfil de GitHub del autor: https://github.com/Josecanihuante
 - Repositorios del autor en GitHub: https://github.com/Josecanihuante?tab=repositories
 - Referencia de proyecto del autor sobre diagnostico de artrosis de rodilla con deep learning (mencionada en su perfil de GitHub): https://github.com/Josecanihuante/

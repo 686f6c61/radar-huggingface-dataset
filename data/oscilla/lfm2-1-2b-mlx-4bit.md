@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativos para este modelo en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión MLX: https://huggingface.co/Oscilla/LFM2-1.2B-mlx-4Bit
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2-1.2B
+- Repositorio Hugging Face de la conversión MLX: https://huggingface.co/Oscilla/LFM2-1.2B-mlx-4Bit
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2-1.2B
 - Informe técnico de LFM2 (arXiv): https://arxiv.org/pdf/2511.23404
 - Blog de Liquid AI sobre LFM2: https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models

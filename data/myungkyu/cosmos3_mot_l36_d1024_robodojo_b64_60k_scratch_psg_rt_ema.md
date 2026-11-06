@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cosmos3_mot_l36_d1024_robodojo_b64_60k_scratch_psg_rt_ema | no disponible (36 capas, dim. 1024) | no disponible | sin benchmarks publicados | no disponible | HuggingFace (DCP, bf16) |
+| cosmos3_mot_l36_d1024_robodojo_b64_60k_scratch_psg_rt_ema | no disponible (36 capas, dim. 1024) | no disponible | sin benchmarks publicados | no disponible | Hugging Face (DCP, bf16) |
 | Cosmos3-Nano (modelo base) | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 | Alternativas de política robótica (p. ej. RT-2, OpenVLA) | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
@@ -81,6 +81,6 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Myungkyu/cosmos3_mot_l36_d1024_robodojo_b64_60k_scratch_psg_rt_ema
+- Hugging Face: https://huggingface.co/Myungkyu/cosmos3_mot_l36_d1024_robodojo_b64_60k_scratch_psg_rt_ema
 - VAE de referencia: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

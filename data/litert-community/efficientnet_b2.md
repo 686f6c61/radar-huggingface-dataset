@@ -75,7 +75,7 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/litert-community/efficientnet_b2
+- Hugging Face: https://huggingface.co/litert-community/efficientnet_b2
 - GitHub de LiteRT: https://github.com/google-ai-edge/litert
 - Documentación oficial de LiteRT: https://developers.google.com/edge/litert
 - Artículo original de EfficientNet: https://arxiv.org/abs/1905.11946

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `muhamad-geosurge/invert-polarity-1e1dc525-3bab-4eea-b29d-2ae9ebf000dc` es un ajuste fino ("fine-tune") publicado por el usuario `muhamad-geosurge` sobre el modelo base `google/gemma-4-E4B`, perteneciente a la familia Gemma 4 de Google DeepMind. Se distribuye bajo licencia Apache 2.0 y está orientado a tareas "any-to-any" (entrada y salida multimodal), según la etiqueta de pipeline declarada en HuggingFace. El repositorio ocupa 15,1 GB y contiene pesos en formato safetensors, con un total de 7.518.082.346 parámetros medidos sobre los ficheros de pesos.
+El modelo `muhamad-geosurge/invert-polarity-1e1dc525-3bab-4eea-b29d-2ae9ebf000dc` es un ajuste fino ("fine-tune") publicado por el usuario `muhamad-geosurge` sobre el modelo base `google/gemma-4-E4B`, perteneciente a la familia Gemma 4 de Google DeepMind. Se distribuye bajo licencia Apache 2.0 y está orientado a tareas "any-to-any" (entrada y salida multimodal), según la etiqueta de pipeline declarada en Hugging Face. El repositorio ocupa 15,1 GB y contiene pesos en formato safetensors, con un total de 7.518.082.346 parámetros medidos sobre los ficheros de pesos.
 
 La relevancia de esta ficha radica en que el modelo herede las capacidades de la arquitectura Gemma 4, que combina atención híbrida (ventana deslizante local intercalada con atención global), soporte multimodal nativo (texto, imagen y audio en las variantes E2B/E4B/12B) y una ventana de contexto de hasta 128K tokens en los modelos pequeños como el E4B. El modelo base incorpora además soporte de system prompt nativo y function calling.
 
@@ -70,10 +70,10 @@ La model card menciona de forma cualitativa mejoras en benchmarks de código y r
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este fine-tune (sobre Gemma 4 E4B) | 7,5 B | 128K tokens (heredado) | texto, imagen, audio (base) | apache-2.0 | HuggingFace (0 descargas) |
-| google/gemma-4-E4B (base) | 4,5 B efectivos (8 B con embeddings) | 128K tokens | texto, imagen, audio | Apache 2.0 (Gemma) | HuggingFace |
-| google/gemma-4-12B Unified | 11,95 B | 256K tokens | texto, imagen, audio | Apache 2.0 (Gemma) | HuggingFace |
-| google/gemma-4-26B A4B MoE | 25,2 B totales / 3,8 B activos | 256K tokens | texto, imagen | Apache 2.0 (Gemma) | HuggingFace |
+| Este fine-tune (sobre Gemma 4 E4B) | 7,5 B | 128K tokens (heredado) | texto, imagen, audio (base) | apache-2.0 | Hugging Face (0 descargas) |
+| google/gemma-4-E4B (base) | 4,5 B efectivos (8 B con embeddings) | 128K tokens | texto, imagen, audio | Apache 2.0 (Gemma) | Hugging Face |
+| google/gemma-4-12B Unified | 11,95 B | 256K tokens | texto, imagen, audio | Apache 2.0 (Gemma) | Hugging Face |
+| google/gemma-4-26B A4B MoE | 25,2 B totales / 3,8 B activos | 256K tokens | texto, imagen | Apache 2.0 (Gemma) | Hugging Face |
 
 No se dispone de datos de rendimiento comparado para este fine-tune frente a alternativas, por lo que la comparación se limita a parámetros, contexto, modalidades y licencia.
 
@@ -89,9 +89,9 @@ No se dispone de datos de rendimiento comparado para este fine-tune frente a alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-1e1dc525-3bab-4eea-b29d-2ae9ebf000dc
+- Modelo en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-1e1dc525-3bab-4eea-b29d-2ae9ebf000dc
 - Modelo base: https://huggingface.co/google/gemma-4-E4B
-- Colección Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentación: https://ai.google.dev/gemma/docs/core

@@ -79,9 +79,9 @@ No se dispone de datos de rendimiento comparativos. La comparativa se limita a c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JianhuiWei/qwen35_4b_sft_VE_GRPO_RL
+- Modelo en Hugging Face: https://huggingface.co/JianhuiWei/qwen35_4b_sft_VE_GRPO_RL
 - Modelo base SFT: https://huggingface.co/JianhuiWei/qwen35_4b_sft_VE
-- Colección Qwen3.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen35
+- Colección Qwen3.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen35
 - Repositorio de Qwen3 (familia base): https://github.com/QwenLM/Qwen3
 - Página del modelo base en free2aitools (metadatos): https://free2aitools.com/model/jianhuiwei/qwen35_4b_sft_ve
 - Página de despliegue en FriendliAI: https://friendli.ai/models/JianhuiWei/qwen35_4b_sft_VE

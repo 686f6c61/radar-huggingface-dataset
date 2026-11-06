@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/mkche9/sponge_smolvla_v2
+- Hugging Face del modelo: https://huggingface.co/mkche9/sponge_smolvla_v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/mkche9/sponge_pick_merged_v2
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844

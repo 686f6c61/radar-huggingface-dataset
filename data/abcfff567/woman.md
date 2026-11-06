@@ -67,5 +67,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/abcfff567/woman)
+- [Modelo en Hugging Face](https://huggingface.co/abcfff567/woman)
 - [Modelo base FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev) (referencia, no incluido en la información original)

@@ -28,7 +28,7 @@ No se proporciona informacion sobre el dataset de entrenamiento, el numero de to
 ## Capacidades
 
 - Generacion de texto conversacional, segun la etiqueta `conversational`.
-- Compatible con pipelines de `text-generation` de HuggingFace Transformers.
+- Compatible con pipelines de `text-generation` de Hugging Face Transformers.
 - Soporte para inferencia a traves de `text-generation-inference` (TGI) y `endpoints_compatible`.
 - No se documentan capacidades especificas como tool calling, razonamiento multi-paso, vision o audio.
 - Al estar basado en Qwen3, podria heredar capacidades base del modelo original, pero no se puede confirmar sin evaluacion directa.
@@ -40,7 +40,7 @@ No se proporciona informacion sobre el dataset de entrenamiento, el numero de to
 - Analisis de artefactos de investigacion: estudiar la distribucion de pesos, la estructura interna y el efecto de los coeficientes codificados en el nombre (b0p3, a0p25, etc.) sobre el comportamiento del modelo.
 - Fine-tuning adicional: usar este checkpoint como punto de partida para nuevos experimentos de entrenamiento, siempre que la licencia (actualmente no disponible) lo permita.
 - Pruebas de pipelines de inferencia: validar el despliegue con TGI o vLLM gracias a su compatibilidad con endpoints, midiendo latencia y throughput en un entorno de desarrollo.
-- Educacion y formacion: ejemplificar como se almacenan y distribuyen checkpoints intermedios en HuggingFace, incluyendo la codificacion de metadatos en el nombre del repositorio.
+- Educacion y formacion: ejemplificar como se almacenan y distribuyen checkpoints intermedios en Hugging Face, incluyendo la codificacion de metadatos en el nombre del repositorio.
 - Benchmarking de configuraciones: comparar el rendimiento de esta configuracion experimental frente a la base Qwen3-1.7B u otros modelos de tamano similar para evaluar el impacto de las modificaciones introducidas.
 
 ## Benchmarks y rendimiento
@@ -61,9 +61,9 @@ Dado que el checkpoint no tiene documentacion propia, se compara con modelos pub
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint | 2,03 B | no disponible | no disponible | HuggingFace (artefacto) |
-| Qwen3-1.7B | 1,7 B | 32 K (referencia) | Apache 2.0 (referencia) | HuggingFace |
-| Llama-3.2-1B | 1,23 B | 128 K (referencia) | Llama 3.2 (referencia) | HuggingFace |
+| Este checkpoint | 2,03 B | no disponible | no disponible | Hugging Face (artefacto) |
+| Qwen3-1.7B | 1,7 B | 32 K (referencia) | Apache 2.0 (referencia) | Hugging Face |
+| Llama-3.2-1B | 1,23 B | 128 K (referencia) | Llama 3.2 (referencia) | Hugging Face |
 
 La principal diferencia es que este checkpoint es un artefacto experimental sin licencia ni garantias, mientras que las alternativas son modelos publicos estables con documentacion extensa y soporte de la comunidad.
 
@@ -79,4 +79,4 @@ La principal diferencia es que este checkpoint es un artefacto experimental sin 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a0p25-gc0p75-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b-last
+- Repositorio Hugging Face: https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a0p25-gc0p75-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b-last

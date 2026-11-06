@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mando2222/llama-3.2-3b-blackhole-v51` no es un modelo nuevo, sino un empaquetado de Llama 3.2 3B Instruct preparado para ejecutarse en un acelerador Tenstorrent Blackhole (p150). Ha sido publicado por `mando2222` y utiliza el plugin `tenstorrent/vllm-tt-plugin` para servir el modelo a traves de vLLM. El objetivo es simplificar el despliegue de Llama 3.2 3B en infraestructura Tenstorrent: el repositorio incluye una imagen Docker y las instrucciones para descargar los pesos desde HuggingFace, de forma que basta con ejecutar `tt-model pull` y `tt-model serve` para lanzar un servidor compatible con OpenAI.
+El modelo `mando2222/llama-3.2-3b-blackhole-v51` no es un modelo nuevo, sino un empaquetado de Llama 3.2 3B Instruct preparado para ejecutarse en un acelerador Tenstorrent Blackhole (p150). Ha sido publicado por `mando2222` y utiliza el plugin `tenstorrent/vllm-tt-plugin` para servir el modelo a traves de vLLM. El objetivo es simplificar el despliegue de Llama 3.2 3B en infraestructura Tenstorrent: el repositorio incluye una imagen Docker y las instrucciones para descargar los pesos desde Hugging Face, de forma que basta con ejecutar `tt-model pull` y `tt-model serve` para lanzar un servidor compatible con OpenAI.
 
 La relevancia de esta publicacion es practica: el hardware Tenstorrent Blackhole requiere un software de inferencia especifico, y este repositorio lo encapsula para que los desarrolladores puedan probar el modelo sin configurar manualmente vLLM ni el plugin. El modelo se valida con una ventana de contexto de 4096 tokens y hasta 32 secuencias concurrentes en una unica unidad p150. No obstante, el repositorio no ofrece informacion sobre el proceso de entrenamiento, parametros tecnicos ni benchmarks.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible. El repositorio no especifica memoria necesaria, aunque el tamano del repo es 1.2 GB, que corresponde probablemente a la imagen Docker, no a los pesos.
 - GPU recomendadas: no aplica; el modelo esta disenado para el acelerador Tenstorrent Blackhole, no para GPU convencionales.
 - No se indica soporte para GPU consumer.
-- Opciones de despliegue: `tt-model serve` lanza un servidor OpenAI-compatible en el puerto 20000. El modelo se usa con el comando `tt-model pull --with-weights`, que descarga los pesos desde HuggingFace al cache local. Tambien se menciona compatibilidad con vLLM y el plugin `vllm-tt-plugin`.
+- Opciones de despliegue: `tt-model serve` lanza un servidor OpenAI-compatible en el puerto 20000. El modelo se usa con el comando `tt-model pull --with-weights`, que descarga los pesos desde Hugging Face al cache local. Tambien se menciona compatibilidad con vLLM y el plugin `vllm-tt-plugin`.
 - Concurrencia: hasta 32 secuencias simultaneas en un solo p150, con contexto de 4096 tokens.
 - Latencia y throughput: no disponible.
 
@@ -61,15 +61,15 @@ La comparativa se ve limitada porque este repositorio es una variante de desplie
 
 | Modelo | Contexto | Hardware objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mando2222/llama-3.2-3b-blackhole-v51 | 4096 tokens | Tenstorrent Blackhole p150 | no disponible | HuggingFace |
-| mando2222/llama-3.2-3b-e2e | no disponible | Tenstorrent Blackhole p150 | no disponible | HuggingFace |
-| meta-llama/Llama-3.2-3B | no disponible | GPU generica | no disponible | HuggingFace |
+| mando2222/llama-3.2-3b-blackhole-v51 | 4096 tokens | Tenstorrent Blackhole p150 | no disponible | Hugging Face |
+| mando2222/llama-3.2-3b-e2e | no disponible | Tenstorrent Blackhole p150 | no disponible | Hugging Face |
+| meta-llama/Llama-3.2-3B | no disponible | GPU generica | no disponible | Hugging Face |
 
 No se dispone de informacion adicional sobre estos modelos comparables.
 
 ## Limitaciones y advertencias
 
-- Este repositorio no contiene los pesos del modelo; se descargan por separado desde HuggingFace, lo que requiere una conexion a internet y espacio en el cache.
+- Este repositorio no contiene los pesos del modelo; se descargan por separado desde Hugging Face, lo que requiere una conexion a internet y espacio en el cache.
 - El primer arranque tarda varios minutos en compilar kernels para el dispositivo, lo que puede causar timeout en entornos de CI/CD si no se anticipa.
 - La ventana de contexto esta limitada a 4096 tokens, lo que puede ser insuficiente para tareas de analisis de documentos largos.
 - No hay informacion sobre sesgos, alucinaciones ni comportamiento fuera de los casos de chat e instrucciones.
@@ -79,7 +79,7 @@ No se dispone de informacion adicional sobre estos modelos comparables.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/mando2222/llama-3.2-3b-blackhole-v51
+- Repositorio del modelo en Hugging Face: https://huggingface.co/mando2222/llama-3.2-3b-blackhole-v51
 - Modelo base de referencia: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
 - Repositorio de tt-model-manager: https://github.com/tenstorrent/tt-model-manager
 - Commit de tt-metal usado en la construccion: https://github.com/ezietlowTT/tt-metal/commit/1c1b7c9c36d06ef5c1e8e917621b7d5f9d264741

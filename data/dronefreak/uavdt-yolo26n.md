@@ -26,7 +26,7 @@ Su relevancia es doble: por un lado, ofrece un punto de referencia reproducible 
 | Modelo base | Ultralytics/YOLO26 (YOLOv26n) |
 | FLOPs | 6,1 G (a 640 px) |
 | Fecha indicada de creacion | 2026-09-20 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -101,7 +101,7 @@ Modelos comparables del mismo zoo de UAVDT, evaluados con el mismo pipeline de D
 
 | Modelo | Parametros | mAP@50 | mAP@50-95 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLOv26n (este modelo) | 2,6 M | 28,88 | 16,79 | AGPL-3.0 | HuggingFace (0 descargas) |
+| YOLOv26n (este modelo) | 2,6 M | 28,88 | 16,79 | AGPL-3.0 | Hugging Face (0 descargas) |
 | RF-DETR Nano | no disponible | 32,78 | 20,31 | no disponible | integrado en DetectionBench |
 | YOLOv9s | no disponible | 31,82 | 18,71 | no disponible | integrado en DetectionBench |
 | YOLOv9t | no disponible | 29,42 | 17,03 | no disponible | integrado en DetectionBench |
@@ -125,7 +125,7 @@ El modelo se sitúa por delante de YOLOv11n, YOLOv8n, YOLOv10n y YOLOv8s en mAP@
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/uavdt-yolo26n
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/uavdt-yolo26n
 - Dataset UAVDT: https://huggingface.co/datasets/dronefreak/UAVDT
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
 - Modelo base: https://huggingface.co/Ultralytics/YOLO26

@@ -76,7 +76,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/akshan-main/tiny-diffusion-gemma-modular-pipe
+- Repositorio Hugging Face: https://huggingface.co/akshan-main/tiny-diffusion-gemma-modular-pipe
 - Implementación de DiffusionGemma modular en Transformers: https://github.com/huggingface/transformers/blob/main/src/transformers/models/diffusion_gemma/modular_diffusion_gemma.py
 - Código de difusión de Gemma en Google DeepMind: https://github.com/google-deepmind/gemma/tree/main/gemma/diffusion
 - Página oficial de DiffusionGemma: https://deepmind.google/models/gemma/diffusiongemma/

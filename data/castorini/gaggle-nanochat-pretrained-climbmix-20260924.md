@@ -74,8 +74,8 @@ CORE es la precision media centrada de nanochat sobre 22 tareas de in-context le
 
 | Modelo | Parametros | Contexto | Tokens de entrenamiento | CORE | MMLU | MMLU-Pro | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---:|---:|---|---|
-| gaggle-nanochat-pretrained-climbmix-20260924 | 3,29 B | 2.048 | 283 B | 0,458 | 0,493 | 0,178 | MIT | HuggingFace, transformers y vLLM |
-| nanochat d34 | no disponible en la informacion | no disponible | 89 B | 0,338 | 0,257 | 0,115 | no disponible en la informacion | HuggingFace (`karpathy/nanochat-d34`) |
+| gaggle-nanochat-pretrained-climbmix-20260924 | 3,29 B | 2.048 | 283 B | 0,458 | 0,493 | 0,178 | MIT | Hugging Face, transformers y vLLM |
+| nanochat d34 | no disponible en la informacion | no disponible | 89 B | 0,338 | 0,257 | 0,115 | no disponible en la informacion | Hugging Face (`karpathy/nanochat-d34`) |
 | Otros modelos base de ~3 B | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion con datos verificables es contra nanochat d34, del mismo autor y con la misma arquitectura de base, que con 89.000 millones de tokens obtiene cifras muy inferiores en las tres metricas, lo que refleja principalmente la diferencia de presupuesto de entrenamiento (283 B frente a 89 B). No se dispone en la informacion proporcionada de resultados comparables de otras familias de modelos de tamano similar.
@@ -96,7 +96,7 @@ La unica comparacion con datos verificables es contra nanochat d34, del mismo au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castorini/gaggle-nanochat-pretrained-climbmix-20260924
+- Modelo en Hugging Face: https://huggingface.co/castorini/gaggle-nanochat-pretrained-climbmix-20260924
 - Codigo de nanochat: https://github.com/karpathy/nanochat (commit `92d63d4`)
 - Dataset ClimbMix: https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle
 - Checkpoint de referencia nanochat d34: https://huggingface.co/karpathy/nanochat-d34

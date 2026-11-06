@@ -57,7 +57,7 @@ Se observa una caida en MMLU-Pro (probablemente por la especializacion cientific
 
 - VRAM estimada segun cuantizacion: Q4_K_M (~5,3 GB) cabe en GPUs de 8 GB; Q5_K_M (~6,5 GB) recomendado para la mayoria de usuarios; Q6_K (~7,2 GB) para balance calidad/velocidad; Q8_0 (~9,5 GB) requiere 12 GB o mas.
 - GPUs compatibles: cualquier GPU consumer con al menos 8 GB de VRAM (RTX 3060, RTX 4060, etc.) para Q4_K_M; para Q8_0 se recomienda RTX 4080/4090 o A100.
-- Opciones de despliegue: llama.cpp, llama-cpp-python, Ollama (con integracion directa desde HuggingFace) y LM Studio.
+- Opciones de despliegue: llama.cpp, llama-cpp-python, Ollama (con integracion directa desde Hugging Face) y LM Studio.
 - Latencia y throughput: no se proporcionan datos concretos; dependen de la GPU y la cuantizacion. En una RTX 4090 con Q4_K_M se puede esperar una generacion fluida para tareas de razonamiento medio.
 
 ## Comparativa con modelos similares
@@ -83,6 +83,6 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/RessAI/qwen35-9b-scicove-gguf
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/RessAI/qwen35-9b-scicove-gguf
 - Modelo full precision (safetensors): https://huggingface.co/RessAI/qwen35-9b-scicove
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B

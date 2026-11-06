@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`pphamlong/reading-contrastive-learning-2023` es un repositorio de HuggingFace publicado por el usuario pphamlong que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado sino un conjunto estructurado de notas de investigación sobre aprendizaje contrastivo (contrastive learning). La model card es explícita al respecto: el artefacto principal es `analysis.md`, un documento que recoge el planteamiento de una pregunta de investigación, hipótesis, referencias a benchmarks públicos y cuestiones abiertas, sin resultados experimentales completados.
+`pphamlong/reading-contrastive-learning-2023` es un repositorio de Hugging Face publicado por el usuario pphamlong que, pese a estar etiquetado con `safetensors` y `transformer`, no contiene un modelo entrenado sino un conjunto estructurado de notas de investigación sobre aprendizaje contrastivo (contrastive learning). La model card es explícita al respecto: el artefacto principal es `analysis.md`, un documento que recoge el planteamiento de una pregunta de investigación, hipótesis, referencias a benchmarks públicos y cuestiones abiertas, sin resultados experimentales completados.
 
 El dato de "parámetros totales" que reporta la plataforma (24.832) corresponde a los tensores serializados en el fichero safetensors del repositorio, no a un modelo de lenguaje funcional. El tamaño del repo es de 0,0 GB, no hay pipeline declarado, no se especifican idiomas y las descargas y likes son cero en el momento de la consulta. La licencia es MIT.
 
-Su relevancia es, por tanto, documental y metodológica: sirve como ejemplo de cuaderno de investigación reproducible publicado en HuggingFace, separando explícitamente planes e hipótesis de resultados verificados. No debe evaluarse como un modelo desplegable ni utilizarse como base para inferencia.
+Su relevancia es, por tanto, documental y metodológica: sirve como ejemplo de cuaderno de investigación reproducible publicado en Hugging Face, separando explícitamente planes e hipótesis de resultados verificados. No debe evaluarse como un modelo desplegable ni utilizarse como base para inferencia.
 
 ## Especificaciones técnicas
 
@@ -40,7 +40,7 @@ No hay evidencia de entrenamiento, fine-tuning, RLHF, DPO ni de ningún proceso 
 
 - Revisión bibliográfica sobre aprendizaje contrastivo: el fichero `analysis.md` concentra referencias y una propuesta de comparación con baselines emparejados, útil como punto de partida para un investigador que quiera verificar la literatura citada.
 - Diseño de experimentos: la separación explícita entre planes, hipótesis y resultados permite reutilizar el esquema para redactar protocolos de ablación con criterios de reproducibilidad (semillas, versiones de dataset, hardware).
-- Docencia y formación: sirve como ejemplo de cómo publicar notas de investigación en HuggingFace manteniendo trazabilidad y evitando afirmaciones no respaldadas.
+- Docencia y formación: sirve como ejemplo de cómo publicar notas de investigación en Hugging Face manteniendo trazabilidad y evitando afirmaciones no respaldadas.
 - Auditoría metodológica: la sección de limitaciones y la exigencia de logs en bruto facilitan revisar qué afirmaciones están verificadas y cuáles son solo propuestas.
 - Plantilla de repositorio de investigación: su estructura mínima (`README.md` + `analysis.md` + licencia MIT) puede replicarse para otros temas con el mismo enfoque de separación entre hipótesis y evidencia.
 - Identificación de benchmarks relevantes: la nota nombra benchmarks públicos apropiados para la tarea, lo que ayuda a seleccionar métricas de evaluación en estudios posteriores.
@@ -84,5 +84,5 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pphamlong/reading-contrastive-learning-2023
+- Hugging Face: https://huggingface.co/pphamlong/reading-contrastive-learning-2023
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este repositorio.

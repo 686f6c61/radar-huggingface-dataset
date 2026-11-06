@@ -104,7 +104,7 @@ La diferencia relevante no es de rendimiento sino de propósito: este checkpoint
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-1.7b-asst-seed1234-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-1.7b-asst-seed1234-sft
 - Modelo de referencia (semilla 28): https://huggingface.co/Raghav-Singhal/1pp-1.7b-asst-sft
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training

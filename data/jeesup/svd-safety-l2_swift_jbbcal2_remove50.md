@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l2_swift_jbbcal2_remove50 es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace. Se trata de una derivación de meta-llama/Llama-2-7b-chat-hf comprimida con SVD-LLM hasta el 50,00% de los parámetros densos, seguida de un presupuesto de restauración de componentes SVD del 0,000%, seleccionados mediante la regla denominada `unknown`. El repositorio almacena 6.738.415.616 parámetros en safetensors y ocupa 13,5 GB.
+svd-safety-l2_swift_jbbcal2_remove50 es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face. Se trata de una derivación de meta-llama/Llama-2-7b-chat-hf comprimida con SVD-LLM hasta el 50,00% de los parámetros densos, seguida de un presupuesto de restauración de componentes SVD del 0,000%, seleccionados mediante la regla denominada `unknown`. El repositorio almacena 6.738.415.616 parámetros en safetensors y ocupa 13,5 GB.
 
 El propósito declarado del autor es estudiar cómo la compresión SVD daña el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes repara mejor ese daño. Este checkpoint es una celda concreta de una rejilla experimental que cruza reglas de selección y presupuestos de restauración, y el propio autor advierte de que no es un modelo de chat de propósito general.
 
@@ -81,10 +81,10 @@ No se han publicado en la información disponible los valores equivalentes del m
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks de seguridad | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_swift_jbbcal2_remove50 | 6,74B almacenados; fracción declarada 0,4999 | 4.096 | Llama 2 Community | AdvBench ASR 0,0462; StrongREJECT ASR 0,0831; over-refusal 0,5383 | HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-chat-hf | 6,74B | 4.096 | Llama 2 Community | no disponible en la información proporcionada | HuggingFace |
-| Llama-3.1-8B-Instruct | 8,03B | 128.000 | Llama 3.1 Community | no disponible en la información proporcionada | HuggingFace |
-| Mistral-7B-Instruct-v0.2 | 7,24B | 32.768 | Apache 2.0 | no disponible en la información proporcionada | HuggingFace |
+| svd-safety-l2_swift_jbbcal2_remove50 | 6,74B almacenados; fracción declarada 0,4999 | 4.096 | Llama 2 Community | AdvBench ASR 0,0462; StrongREJECT ASR 0,0831; over-refusal 0,5383 | Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-chat-hf | 6,74B | 4.096 | Llama 2 Community | no disponible en la información proporcionada | Hugging Face |
+| Llama-3.1-8B-Instruct | 8,03B | 128.000 | Llama 3.1 Community | no disponible en la información proporcionada | Hugging Face |
+| Mistral-7B-Instruct-v0.2 | 7,24B | 32.768 | Apache 2.0 | no disponible en la información proporcionada | Hugging Face |
 
 Las especificaciones de los modelos alternativos corresponden a datos públicos de sus respectivas fichas y no han sido verificadas en la información proporcionada. No se han identificado en la búsqueda otros checkpoints de la misma rejilla experimental ni artefactos comparables de compresión orientados a seguridad.
 
@@ -105,7 +105,7 @@ Las especificaciones de los modelos alternativos corresponden a datos públicos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_swift_jbbcal2_remove50
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_swift_jbbcal2_remove50
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Ficheros de licencia y política de uso incluidos en el repositorio: LICENSE.txt y USE_POLICY.md
 - La búsqueda web realizada no devolvió enlaces relevantes (únicamente resultados genéricos de YouTube), por lo que no se dispone de paper, blog técnico ni repositorio de código asociados a este checkpoint.

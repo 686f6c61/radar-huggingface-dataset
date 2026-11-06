@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ingot-IV-27B-FP8 es un modelo de lenguaje de 27.781.427.952 parámetros (27,78 mil millones) publicado por el usuario de HuggingFace `dendriteholdings` como espejo público de una submission ganadora en Ingot, una subred de Bittensor en la que los mineros cuantizan un modelo profesor fijo y el validador premia la copia que se mantiene más cerca del original. No es, por tanto, un modelo entrenado desde cero ni un fine-tuning: es el resultado de un proceso de cuantización competitivo, subido byte a byte tal como lo entregó el minero con hotkey `5ELtmc7ccyz8ACS8eYBzwStGMqwxcQCHd7eDpyH4BijPS6gd` (uid 180).
+Ingot-IV-27B-FP8 es un modelo de lenguaje de 27.781.427.952 parámetros (27,78 mil millones) publicado por el usuario de Hugging Face `dendriteholdings` como espejo público de una submission ganadora en Ingot, una subred de Bittensor en la que los mineros cuantizan un modelo profesor fijo y el validador premia la copia que se mantiene más cerca del original. No es, por tanto, un modelo entrenado desde cero ni un fine-tuning: es el resultado de un proceso de cuantización competitivo, subido byte a byte tal como lo entregó el minero con hotkey `5ELtmc7ccyz8ACS8eYBzwStGMqwxcQCHd7eDpyH4BijPS6gd` (uid 180).
 
 El repositorio declara el tag de arquitectura `qwen3_5`, lo que sitúa el modelo base en la familia Qwen3.5, y el pipeline no está definido. El peso del repositorio es de 30,9 GB, coherente con un checkpoint en FP8 de ~27,8 mil millones de parámetros (aproximadamente 1 byte por parámetro más tokenizer, configuración y metadatos).
 
@@ -91,7 +91,7 @@ La comparación es estructural, no de rendimiento: no existen evaluaciones publi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dendriteholdings/Ingot-IV-27B-FP8
+- Repositorio en Hugging Face: https://huggingface.co/dendriteholdings/Ingot-IV-27B-FP8
 - Subred Ingot (Bittensor): no disponible en la informacion proporcionada
 - Modelo profesor: no identificado en la informacion proporcionada
 - Paper o blog tecnico del proceso de cuantizacion: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pythia-1.4b-wildchat-run2 es un modelo de generación de texto desarrollado por el usuario jaydeepb y publicado en HuggingFace. Se trata de un fine-tuning de EleutherAI/pythia-1.4b, un transformer de tipo GPT-NeoX con aproximadamente 1.414 millones de parámetros, ajustado durante una época sobre una muestra de 1 millón de secuencias de 128 tokens del dataset WildChat de AllenAI. El propósito del modelo no es servir como asistente general, sino funcionar como instrumento de investigación sobre memorización en modelos de lenguaje.
+pythia-1.4b-wildchat-run2 es un modelo de generación de texto desarrollado por el usuario jaydeepb y publicado en Hugging Face. Se trata de un fine-tuning de EleutherAI/pythia-1.4b, un transformer de tipo GPT-NeoX con aproximadamente 1.414 millones de parámetros, ajustado durante una época sobre una muestra de 1 millón de secuencias de 128 tokens del dataset WildChat de AllenAI. El propósito del modelo no es servir como asistente general, sino funcionar como instrumento de investigación sobre memorización en modelos de lenguaje.
 
 Su relevancia radica en el diseño experimental: es el segundo de dos modelos gemelos (run1 y run2) entrenados sobre muestras disjuntas de WildChat. Run1 aporta las etiquetas para entrenar un clasificador de memorización, y run2 proporciona datos frescos no vistos para validar ese clasificador en modo "predecir antes de entrenar". Es, por tanto, un artefacto de investigación útil para estudiar qué secuencias memoriza un modelo durante el fine-tuning, un tema central en privacidad, extracción de datos de entrenamiento y derechos de autor.
 
@@ -30,7 +30,7 @@ El fine-tuning se realizó sobre WildChat (allenai/WildChat), un corpus de conve
 - Generación de texto autoregresiva en formato conversacional (herencia de WildChat).
 - Modelo base Pythia sin alineación con RLHF: no está optimizado para seguir instrucciones de forma fiable.
 - Utilidad principal como sujeto experimental para estudios de memorización, extracción de datos de entrenamiento y privacidad.
-- Compatibilidad con la librería transformers de HuggingFace y endpoints de inferencia.
+- Compatibilidad con la librería transformers de Hugging Face y endpoints de inferencia.
 - No hay evidencia documentada de soporte de tool calling, agentes, razonamiento multi-paso, visión ni audio.
 - Capacidades multilingües: no disponibles oficialmente, aunque WildChat contiene conversaciones en varios idiomas.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Con cuantización INT8/INT4 (no publicada oficialmente, pero aplicable con herramientas estándar): cabría en 2-4 GB de VRAM.
 - GPUs recomendadas: cualquier GPU de consumo moderna (RTX 3060 de 12 GB, RTX 4060 Ti, RTX 4090) ejecuta el modelo con holgura; no se requiere hardware de centro de datos para inferencia.
 - Cabe cómodamente en GPUs de consumo; también es viable su ejecución en CPU para pruebas, con latencias mayores.
-- Opciones de despliegue: transformers (librería nativa declarada), text-generation-inference (TGI), endpoints de HuggingFace (el modelo está etiquetado como endpoints_compatible), y con conversión a GGUF, llama.cpp u Ollama. No hay confirmación oficial de soporte en vLLM para este fine-tuning concreto, aunque la arquitectura GPT-NeoX está soportada por vLLM.
+- Opciones de despliegue: transformers (librería nativa declarada), text-generation-inference (TGI), endpoints de Hugging Face (el modelo está etiquetado como endpoints_compatible), y con conversión a GGUF, llama.cpp u Ollama. No hay confirmación oficial de soporte en vLLM para este fine-tuning concreto, aunque la arquitectura GPT-NeoX está soportada por vLLM.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ Frente al modelo base Pythia-1.4B, esta variante añade conocimiento específico
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/pythia-1.4b-wildchat-run2
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/pythia-1.4b-wildchat-run2
 - Modelo base: https://huggingface.co/EleutherAI/pythia-1.4b
 - Dataset WildChat: https://huggingface.co/datasets/allenai/WildChat
 - Repositorio de la familia Pythia (referencia): https://github.com/EleutherAI/pythia

@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MOLI π0.5 — go2 recontact | Fine-tune VLA de π0.5 | no disponible | no disponible | 14/100 en simulación | no disponible (restricciones Gemma) | HuggingFace, 0 descargas |
+| MOLI π0.5 — go2 recontact | Fine-tune VLA de π0.5 | no disponible | no disponible | 14/100 en simulación | no disponible (restricciones Gemma) | Hugging Face, 0 descargas |
 | π0.5 base (Physical Intelligence) | VLA base | no disponible en la información | no disponible | no disponible | términos OpenPI/Gemma | Pesos base vía OpenPI |
 | Otros fine-tunes de OpenPI | VLA especializados | no disponible | no disponible | no disponible | variable | variable |
 
@@ -90,6 +90,6 @@ No se dispone de datos comparativos de benchmarks entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeong-zju/moli-pi05-go2-recontact
+- Modelo en Hugging Face: https://huggingface.co/Jeong-zju/moli-pi05-go2-recontact
 - Dataset MOLI Go2 expert demonstrations: https://huggingface.co/datasets/Jeong-zju/moli-go2-expert-100
 - Repositorio OpenPI de Physical Intelligence: https://github.com/Physical-Intelligence/openpi

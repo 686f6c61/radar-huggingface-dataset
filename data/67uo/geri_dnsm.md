@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `67uo/Geri_dnsm` es un repositorio publicado en HuggingFace por el usuario `67uo` con licencia AGPL-3.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, ni información sobre su entrenamiento o capacidades. El repositorio no registra descargas ni interacciones, y la fecha de creación y actualización es el 26 de agosto de 2026. No se dispone de datos adicionales sobre el modelo, su pipeline o sus idiomas soportados.
+El modelo `67uo/Geri_dnsm` es un repositorio publicado en Hugging Face por el usuario `67uo` con licencia AGPL-3.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, ni información sobre su entrenamiento o capacidades. El repositorio no registra descargas ni interacciones, y la fecha de creación y actualización es el 26 de agosto de 2026. No se dispone de datos adicionales sobre el modelo, su pipeline o sus idiomas soportados.
 
 Dado que la información pública es prácticamente inexistente, no es posible evaluar su relevancia técnica, su rendimiento ni sus posibles aplicaciones. Cualquier uso del modelo requeriría una investigación adicional por parte del desarrollador, contactando directamente con el autor o analizando los archivos del repositorio si estuvieran disponibles.
 
@@ -52,4 +52,4 @@ No disponible. No se puede comparar con otros modelos al carecer de información
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/67uo/Geri_dnsm)
+- [Repositorio en Hugging Face](https://huggingface.co/67uo/Geri_dnsm)

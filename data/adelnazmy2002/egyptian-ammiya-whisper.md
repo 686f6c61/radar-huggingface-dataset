@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Egyptian Ammiya Whisper es un ajuste fino (fine-tune) del modelo openai/whisper-small, especializado en el reconocimiento automatico del habla (ASR) de arabe egipcio coloquial, tambien conocido como Ammiya (codigo de idioma `arz`). Lo publica el usuario adelnazmy2002 en HuggingFace. El problema que resuelve es concreto: Whisper original rinde mal en arabe egipcio coloquial porque se entreno mayoritariamente con arabe estandar moderno (MSA) y otros dialectos, de modo que este modelo se reentrena de extremo a extremo sobre un corpus especifico de habla egipcia para mejorar la transcripcion de ese registro.
+Egyptian Ammiya Whisper es un ajuste fino (fine-tune) del modelo openai/whisper-small, especializado en el reconocimiento automatico del habla (ASR) de arabe egipcio coloquial, tambien conocido como Ammiya (codigo de idioma `arz`). Lo publica el usuario adelnazmy2002 en Hugging Face. El problema que resuelve es concreto: Whisper original rinde mal en arabe egipcio coloquial porque se entreno mayoritariamente con arabe estandar moderno (MSA) y otros dialectos, de modo que este modelo se reentrena de extremo a extremo sobre un corpus especifico de habla egipcia para mejorar la transcripcion de ese registro.
 
 Tecnicamente es un transformer encoder-decoder de tipo Whisper (arquitectura estandar de la familia, sin modificaciones estructurales), con 241.734.912 parametros segun los pesos safetensors del repositorio. Trabaja sobre ventanas de audio de 30 segundos, la unidad de contexto fija que impone la arquitectura Whisper, y se ejecuta en GPU de consumo (el autor lo probo en una unica RTX 4070 Super de 16 GB).
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks estandar (WER, MMLU, HumanEval, GSM
 - VRAM estimada para inferencia: ~1-2 GB en fp16 con batch pequeno, ademas del consumo del runtime.
 - Cabe sin problema en GPUs de consumo: RTX 3060 12 GB, RTX 4070/4070 Super, RTX 4090, GTX 1650 4 GB e incluso GPUs de 4 GB; tambien es viable en CPU para uso no intensivo.
 - El autor lo entreno y probo en una unica RTX 4070 Super (16 GB de VRAM).
-- Opciones de despliegue: HuggingFace transformers (pipeline `automatic-speech-recognition`), faster-whisper mediante CTranslate2 (int8/float16), whisper.cpp (GGUF), asi como los servidores de inferencia que soportan Whisper (por ejemplo vLLM o TGI). El propio autor indica que cualquier ruta de inferencia Whisper estandar es valida.
+- Opciones de despliegue: Hugging Face transformers (pipeline `automatic-speech-recognition`), faster-whisper mediante CTranslate2 (int8/float16), whisper.cpp (GGUF), asi como los servidores de inferencia que soportan Whisper (por ejemplo vLLM o TGI). El propio autor indica que cualquier ruta de inferencia Whisper estandar es valida.
 - Latencia y throughput estimados: no disponibles; no se publican cifras de factor de tiempo real ni de RTF.
 - El modelo se presenta como apto para ejecucion on-device.
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks estandar (WER, MMLU, HumanEval, GSM
 
 | Modelo | Parametros | Contexto (audio) | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| egyptian-ammiya-whisper | ~242 M | 30 s | ar, arz (centrado en egipcio) | MIT | HuggingFace, 0 descargas |
+| egyptian-ammiya-whisper | ~242 M | 30 s | ar, arz (centrado en egipcio) | MIT | Hugging Face, 0 descargas |
 | openai/whisper-small (base) | ~244 M | 30 s | multilingue (99 idiomas) | Apache-2.0 | Publico, ampliamente usado |
 | openai/whisper-base | ~74 M | 30 s | multilingue | Apache-2.0 | Publico |
 | openai/whisper-large-v3 | ~1550 M | 30 s | multilingue (99 idiomas) | Apache-2.0 | Publico |
@@ -100,7 +100,7 @@ El modelo destaca frente a whisper-small (su base) por su especializacion en dia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adelnazmy2002/egyptian-ammiya-whisper
+- Modelo en Hugging Face: https://huggingface.co/adelnazmy2002/egyptian-ammiya-whisper
 - Dataset de entrenamiento: https://huggingface.co/datasets/MAdel121/arabic-egy-cleaned
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Articulo del proyecto (enlace generico de LinkedIn incluido en la model card): https://www.linkedin.com/

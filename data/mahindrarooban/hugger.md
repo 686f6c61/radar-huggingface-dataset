@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mahindrarooban/hugger` es un modelo publicado en HuggingFace por el usuario mahindrarooban bajo licencia Apache 2.0. La model card asociada al repositorio no contiene ninguna descripción tecnica: se limita a declarar la licencia, sin especificar arquitectura, tamano, datos de entrenamiento, idiomas ni capacidades. Tampoco se declara un pipeline de inferencia asociado en la plataforma, lo que impide clasificarlo automaticamente como modelo de generacion de texto, vision, audio u otra modalidad.
+`mahindrarooban/hugger` es un modelo publicado en Hugging Face por el usuario mahindrarooban bajo licencia Apache 2.0. La model card asociada al repositorio no contiene ninguna descripción tecnica: se limita a declarar la licencia, sin especificar arquitectura, tamano, datos de entrenamiento, idiomas ni capacidades. Tampoco se declara un pipeline de inferencia asociado en la plataforma, lo que impide clasificarlo automaticamente como modelo de generacion de texto, vision, audio u otra modalidad.
 
 El repositorio registra cero descargas y cero interacciones en el momento de la consulta, y fue creado y actualizado en la misma fecha (30 de octubre de 2026), lo que sugiere una publicacion inicial sin iteraciones posteriores ni documentacion adicional. No se dispone de informacion sobre pesos, tokenizador, configuracion o ficheros auxiliares mas alla de los metadatos de la plataforma.
 
@@ -29,7 +29,7 @@ Tampoco se documenta el tokenizador, el vocabulario ni el preprocesamiento aplic
 
 ## Capacidades
 
-- No se ha documentado ninguna capacidad en la model card ni en los metadatos de HuggingFace.
+- No se ha documentado ninguna capacidad en la model card ni en los metadatos de Hugging Face.
 - No consta soporte de generacion de texto, razonamiento, codigo, matematicas, vision ni audio.
 - No consta soporte de tool calling ni function calling.
 - No consta soporte de agentes ni de razonamiento multi-paso.
@@ -69,5 +69,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mahindrarooban/hugger
+- Hugging Face: https://huggingface.co/mahindrarooban/hugger
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -102,7 +102,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 | Cobertura de capas | 47 capas (Gemma principal), 3 capas (variantes), 3 capas (Qwen J++) | No disponible | Todas las capas |
 | Rendimiento de lectura reportado | Qwen J++ 0,522 de pass@10 macro; Gemma J 0,14 frente a 0,29 del logit | No disponible | 0,245 en Qwen3.5-9B; 0,29 en Gemma 4 12B-it |
 | Documentacion | Model card detallada con recetas de ajuste y resultados negativos | Model card de ~1,9 kB | Ampliamente documentada en la literatura |
-| Disponibilidad | Publico en HuggingFace, sin descargas ni *likes* en el momento de la consulta | Publico en HuggingFace | Implementaciones multiples |
+| Disponibilidad | Publico en Hugging Face, sin descargas ni *likes* en el momento de la consulta | Publico en Hugging Face | Implementaciones multiples |
 
 ## Limitaciones y advertencias
 
@@ -119,8 +119,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/styme3279/arena-jspace-lenses
-- Perfil del autor en HuggingFace (James Hindmarch): https://huggingface.co/styme3279
+- Repositorio en Hugging Face: https://huggingface.co/styme3279/arena-jspace-lenses
+- Perfil del autor en Hugging Face (James Hindmarch): https://huggingface.co/styme3279
 - Perfil del autor en GitHub: https://github.com/styme3279/
 - Lente jacobiana publica para un modelo DeepSeek: https://huggingface.co/Festyve/jspace-lenses
 - Model card de esa lente: https://huggingface.co/Festyve/jspace-lenses/blob/main/README.md

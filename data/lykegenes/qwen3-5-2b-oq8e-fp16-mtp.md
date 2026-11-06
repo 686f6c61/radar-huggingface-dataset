@@ -68,5 +68,5 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (cu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lykegenes/Qwen3.5-2B-oQ8e-fp16-mtp
+- Hugging Face: https://huggingface.co/Lykegenes/Qwen3.5-2B-oQ8e-fp16-mtp
 - Repositorio de la herramienta oQ (oMLX): https://github.com/jundot/omlx

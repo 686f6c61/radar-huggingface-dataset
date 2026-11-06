@@ -100,7 +100,7 @@ Nota: los datos de parametros y metricas de las filas de comparacion no se han v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wenbinwang/diffusion-outputs
+- Modelo en Hugging Face: https://huggingface.co/Wenbinwang/diffusion-outputs
 - Repositorio de codigo: https://github.com/wangwenbinw/Diffusion
 - Paper de referencia de DDPM (contexto, no vinculado al repositorio): https://arxiv.org/abs/2006.11239
 - Paper de improved DDPM (contexto, no vinculado al repositorio): https://arxiv.org/abs/2102.09672

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El ESP32-CAM Autonomous Line-Following Car Model es un modelo de visión por computador publicado por el usuario pdDuduzin en HuggingFace. No es un modelo de lenguaje: se trata de una red neuronal convolucional (CNN) entrenada en Keras que implementa una tarea de regresión supervisada por clonación de comportamiento (behavioral cloning). Recibe una imagen en escala de grises de 96 x 96 x 1 píxeles procedente de la cámara de un ESP32-CAM y devuelve un único valor de dirección continua entre -1 (giro máximo a la izquierda) y +1 (giro máximo a la derecha).
+El ESP32-CAM Autonomous Line-Following Car Model es un modelo de visión por computador publicado por el usuario pdDuduzin en Hugging Face. No es un modelo de lenguaje: se trata de una red neuronal convolucional (CNN) entrenada en Keras que implementa una tarea de regresión supervisada por clonación de comportamiento (behavioral cloning). Recibe una imagen en escala de grises de 96 x 96 x 1 píxeles procedente de la cámara de un ESP32-CAM y devuelve un único valor de dirección continua entre -1 (giro máximo a la izquierda) y +1 (giro máximo a la derecha).
 
 El modelo está pensado para ejecutarse embebido: se distribuye como modelo TensorFlow Lite Micro completamente cuantizado a INT8, junto con una cabecera C (`modelo_linha.h`) que se compila directamente en el firmware del ESP32-CAM. El repositorio incluye además el modelo Keras original, manifiestos de entrenamiento y conversión, un informe de validación y gráficas de entrenamiento.
 
@@ -24,7 +24,7 @@ Su relevancia es práctica y acotada: demuestra un flujo completo de extremo a e
 | Entrada | Imagen en escala de grises de 96 x 96 x 1 |
 | Salida | Un valor de dirección en el rango [-1, +1] |
 | Formato de despliegue | TensorFlow Lite Micro sobre ESP32-CAM con ESP32 DevKit |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 | Descargas / likes | 0 descargas / 1 like |
 | Fecha de publicación | 2026-09-25 |
 
@@ -105,7 +105,7 @@ No se dispone de modelos comparables con especificaciones publicadas en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pdDuduzin/ESP32-CAM_Autonomous_Line-Following_Car_Model
+- Modelo en Hugging Face: https://huggingface.co/pdDuduzin/ESP32-CAM_Autonomous_Line-Following_Car_Model
 - Dataset de entrenamiento: https://huggingface.co/datasets/pdDuduzin/ESP32-CAM_Autonomous_Line-Following_Car_Dataset
 - Proyecto relacionado (ESP32-CAM y YOLO con host en Python): https://github.com/alonmalka19/autonomous-car-esp32-cam
 - Proyecto relacionado (coche autónomo con ESP32): https://github.com/rakesh-i/ESP32-Autonomous-car

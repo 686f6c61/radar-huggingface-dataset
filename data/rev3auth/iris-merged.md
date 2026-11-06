@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Rev3auth/iris-merged es un modelo de generación de texto publicado en HuggingFace por el usuario Rev3auth. Se trata de un checkpoint de aproximadamente 134,5 millones de parámetros almacenado en safetensors (0,3 GB de repositorio), etiquetado con la arquitectura llama y compatible con la librería transformers y con text-generation-inference. El nombre "merged" sugiere que se ha generado mediante la fusión de dos o más checkpoints, pero el autor no documenta el procedimiento, los modelos de origen ni la receta de entrenamiento.
+Rev3auth/iris-merged es un modelo de generación de texto publicado en Hugging Face por el usuario Rev3auth. Se trata de un checkpoint de aproximadamente 134,5 millones de parámetros almacenado en safetensors (0,3 GB de repositorio), etiquetado con la arquitectura llama y compatible con la librería transformers y con text-generation-inference. El nombre "merged" sugiere que se ha generado mediante la fusión de dos o más checkpoints, pero el autor no documenta el procedimiento, los modelos de origen ni la receta de entrenamiento.
 
-La model card es la plantilla automática de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) aparecen con el texto "[More Information Needed]". Esto convierte al modelo en una caja negra desde el punto de vista técnico: se conocen el recuento de parámetros y el formato de los pesos, pero no la longitud de contexto, el tokenizador, el dataset ni el régimen de entrenamiento.
+La model card es la plantilla automática de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) aparecen con el texto "[More Information Needed]". Esto convierte al modelo en una caja negra desde el punto de vista técnico: se conocen el recuento de parámetros y el formato de los pesos, pero no la longitud de contexto, el tokenizador, el dataset ni el régimen de entrenamiento.
 
 Su relevancia actual es limitada y de carácter experimental: al no haber benchmarks publicados, ni licencia declarada, ni descargas (0 descargas y 0 "likes" en el momento de la consulta), no es un artefacto recomendable para producción. Puede resultar de interés únicamente como objeto de estudio para quien quiera inspeccionar una fusión de modelos de tamaño reducido o comparar su comportamiento con alternativas pequeñas bien documentadas.
 
@@ -31,13 +31,13 @@ Su relevancia actual es limitada y de carácter experimental: al no haber benchm
 
 No hay informacion sobre la arquitectura mas alla de la etiqueta "llama" del Hub y de la libreria declarada (transformers). Con 134,5 millones de parametros y un repositorio de 0,3 GB, el checkpoint es coherente con un transformer decoder-only de tamano pequeno en precision de 16 bits, pero no se especifican el numero de capas, las dimensiones ocultas, el numero de cabezas de atencion, el vocabulario ni el tokenizador asociado. Tampoco se indica si emplea atencion con RoPE, GQA, atencion lineal u otro esquema.
 
-Respecto al entrenamiento, la model card no proporciona ningun dato: ni el numero de tokens, ni la composicion del dataset, ni si hubo ajuste por instrucciones (SFT), RLHF o DPO. El sufijo "merged" apunta a una fusion de pesos (por ejemplo, mediante tecnicas tipo SLERP, TIES o DARE), pero sin la receta no es posible reproducir el resultado ni atribuir el comportamiento observado a los modelos originales. El unico identificador tecnico adicional es la referencia arXiv:1910.09700, que en la propia plantilla de HuggingFace corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, no a un paper del modelo.
+Respecto al entrenamiento, la model card no proporciona ningun dato: ni el numero de tokens, ni la composicion del dataset, ni si hubo ajuste por instrucciones (SFT), RLHF o DPO. El sufijo "merged" apunta a una fusion de pesos (por ejemplo, mediante tecnicas tipo SLERP, TIES o DARE), pero sin la receta no es posible reproducir el resultado ni atribuir el comportamiento observado a los modelos originales. El unico identificador tecnico adicional es la referencia arXiv:1910.09700, que en la propia plantilla de Hugging Face corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, no a un paper del modelo.
 
 ## Capacidades
 
 - Generacion de texto autoregresiva basica: el pipeline declarado es text-generation y la etiqueta "conversational" sugiere cierto ajuste para dialogos, aunque no se aportan ejemplos ni plantillas de chat.
 - Conversacion multi-turno: potencialmente soportada por la etiqueta "conversational", sin evidencia documental de calidad ni de formato de prompt requerido.
-- Compatibilidad con text-generation-inference y con endpoints compatibles de HuggingFace, segun los tags del repositorio.
+- Compatibilidad con text-generation-inference y con endpoints compatibles de Hugging Face, segun los tags del repositorio.
 - Soporte de tool calling / function calling: no disponible (no se documenta).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no se documenta).
 - Capacidades multilingues: no disponibles (el campo de idiomas no esta relleno y no hay tokenizador publicado que permita inferirlo).
@@ -72,10 +72,10 @@ Los datos de la columna de "iris-merged" son los unicos verificados en la inform
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Rev3auth/iris-merged | 134,5 M | No disponible | No disponible | HuggingFace, 0 descargas, sin cuantizaciones |
-| SmolLM-135M (HuggingFaceTB) | 135 M | 2.048 tokens | Apache-2.0 | HuggingFace, ampliamente descargado |
-| Qwen2.5-0.5B (Alibaba) | 494 M | 32.768 tokens | Apache-2.0 | HuggingFace, cuantizaciones GGUF/AWQ disponibles |
-| Llama-3.2-1B (Meta) | 1.240 M | 128.000 tokens | Llama 3.2 Community License | HuggingFace, con restricciones de uso |
+| Rev3auth/iris-merged | 134,5 M | No disponible | No disponible | Hugging Face, 0 descargas, sin cuantizaciones |
+| SmolLM-135M (HuggingFaceTB) | 135 M | 2.048 tokens | Apache-2.0 | Hugging Face, ampliamente descargado |
+| Qwen2.5-0.5B (Alibaba) | 494 M | 32.768 tokens | Apache-2.0 | Hugging Face, cuantizaciones GGUF/AWQ disponibles |
+| Llama-3.2-1B (Meta) | 1.240 M | 128.000 tokens | Llama 3.2 Community License | Hugging Face, con restricciones de uso |
 
 En la misma franja de parametros, SmolLM-135M ofrece documentacion completa, licencia permisiva y contexto declarado, por lo que es una alternativa mas segura para cualquier uso real. Qwen2.5-0.5B y Llama-3.2-1B suben de tamano y de contexto, pero aportan garantias legales y tecnicas de las que iris-merged carece.
 
@@ -89,12 +89,12 @@ En la misma franja de parametros, SmolLM-135M ofrece documentacion completa, lic
 - Longitud de contexto desconocida: cualquier caso de uso con conversaciones largas o documentos extensos requeriria una verificacion empirica previa.
 - Sin cuantizaciones oficiales ni ficheros GGUF: el despliegue en llama.cpp, Ollama o LM Studio exige conversion manual y validacion posterior.
 - Cero traccion en el Hub (0 descargas, 0 likes): no hay retroalimentacion de la comunidad que permita detectar fallos conocidos.
-- La unica referencia arXiv de la ficha (1910.09700) es la plantilla de estimacion de emisiones de carbono de HuggingFace, no un paper del modelo; citarla como documentacion tecnica seria un error.
+- La unica referencia arXiv de la ficha (1910.09700) es la plantilla de estimacion de emisiones de carbono de Hugging Face, no un paper del modelo; citarla como documentacion tecnica seria un error.
 - Los resultados de la busqueda web no contienen ningun material relacionado con el modelo, por lo que no existe literatura externa que lo respalde.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rev3auth/iris-merged
+- Modelo en Hugging Face: https://huggingface.co/Rev3auth/iris-merged
 - Referencia arXiv incluida en la plantilla de la model card (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de Machine Learning citada en la model card: https://mloc2.github.io/impact (enlace original de la plantilla: https://mlco2.github.io/impact)
 - Repositorio de transformers: https://github.com/huggingface/transformers

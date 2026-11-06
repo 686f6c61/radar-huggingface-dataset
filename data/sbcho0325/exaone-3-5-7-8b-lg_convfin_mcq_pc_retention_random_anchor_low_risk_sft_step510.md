@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_retention_random_anchor_low_risk_sft_step510 | 7.8B + LoRA | 32K | Finanzas, MCQ, retencion | No disponible | HuggingFace (0 descargas) |
-| sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_accuracy_medium_sft_step510 | 7.8B + LoRA | 32K | Finanzas, MCQ, precision media | No disponible | HuggingFace |
-| LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct (modelo base) | 7.8B | 32K | Instruccion general | Licencia propia de LG | HuggingFace |
+| sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_retention_random_anchor_low_risk_sft_step510 | 7.8B + LoRA | 32K | Finanzas, MCQ, retencion | No disponible | Hugging Face (0 descargas) |
+| sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_accuracy_medium_sft_step510 | 7.8B + LoRA | 32K | Finanzas, MCQ, precision media | No disponible | Hugging Face |
+| LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct (modelo base) | 7.8B | 32K | Instruccion general | Licencia propia de LG | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. El adaptador en cuestion es uno de varios experimentos del mismo autor con variaciones en el enfoque (random anchor vs accuracy, low risk vs medium), pero sin resultados publicados.
 
@@ -76,8 +76,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. El adapta
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_retention_random_anchor_low_risk_sft_step510
-- Modelo base en HuggingFace: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
+- Repositorio Hugging Face del adaptador: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_retention_random_anchor_low_risk_sft_step510
+- Modelo base en Hugging Face: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Paper tecnico de EXAONE 3.5 (arXiv): https://arxiv.org/abs/2412.04862
 - Repositorio GitHub de EXAONE 3.5: https://github.com/LG-AI-EXAONE/EXAONE-3.5
 - Adaptador similar del mismo autor: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_accuracy_medium_sft_step510

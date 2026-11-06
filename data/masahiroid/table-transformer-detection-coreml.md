@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`masahiroid/table-transformer-detection-coreml` es una conversion no oficial a Core ML del modelo `microsoft/table-transformer-detection`, publicado por el usuario masahiroid en HuggingFace. Se trata de un detector de objetos especializado en localizar tablas dentro de imagenes de documentos (PDFs escaneados, fotografias de paginas, capturas), devolviendo cajas delimitadoras y la etiqueta correspondiente. La relevancia de esta ficha no esta en un nuevo modelo de lenguaje, sino en la disponibilidad del detector de tablas de Microsoft como artefacto Core ML ejecutable de forma local en iOS, iPadOS y macOS.
+`masahiroid/table-transformer-detection-coreml` es una conversion no oficial a Core ML del modelo `microsoft/table-transformer-detection`, publicado por el usuario masahiroid en Hugging Face. Se trata de un detector de objetos especializado en localizar tablas dentro de imagenes de documentos (PDFs escaneados, fotografias de paginas, capturas), devolviendo cajas delimitadoras y la etiqueta correspondiente. La relevancia de esta ficha no esta en un nuevo modelo de lenguaje, sino en la disponibilidad del detector de tablas de Microsoft como artefacto Core ML ejecutable de forma local en iOS, iPadOS y macOS.
 
 El modelo base es un DETR con backbone ResNet18 y 28,8 millones de parametros, desarrollado por Microsoft como parte de la familia Table Transformer (TATR), asociada al conjunto de datos PubTables-1M y a la metrica de evaluacion GriTS. Esta version concreta se ha convertido con `torch.jit.trace` y `coremltools`, en precision float16 y con un formato de entrada fijo de 800x800 en NCHW. Al ser un detector DETR, no tiene decodificador autorregresivo ni cache KV: toda la inferencia es un unico paso forward.
 
@@ -80,9 +80,9 @@ Esta comparacion se realizo sobre una sola imagen, por lo que constituye una com
 
 | Modelo | Parametros | Formato | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| masahiroid/table-transformer-detection-coreml (este) | 28,8M | Core ML (fp16, mlpackage) | 800x800 NCHW fija | MIT | HuggingFace |
-| microsoft/table-transformer-detection (base) | 28,8M | PyTorch | 800x800 (configurable) | no disponible en la informacion proporcionada | HuggingFace |
-| Variantes de Table Transformer para reconocimiento de estructura | no disponible en la informacion proporcionada | PyTorch | no disponible | no disponible | HuggingFace |
+| masahiroid/table-transformer-detection-coreml (este) | 28,8M | Core ML (fp16, mlpackage) | 800x800 NCHW fija | MIT | Hugging Face |
+| microsoft/table-transformer-detection (base) | 28,8M | PyTorch | 800x800 (configurable) | no disponible en la informacion proporcionada | Hugging Face |
+| Variantes de Table Transformer para reconocimiento de estructura | no disponible en la informacion proporcionada | PyTorch | no disponible | no disponible | Hugging Face |
 
 La alternativa mas directa es el propio modelo base en PyTorch, que ofrece mayor flexibilidad de entrada y no impone el formato Core ML, a cambio de requerir un entorno Python y no estar optimizado para despliegue en dispositivos Apple. No se han identificado en la informacion disponible otras conversiones Core ML comparables de este mismo detector.
 
@@ -100,7 +100,7 @@ La alternativa mas directa es el propio modelo base en PyTorch, que ofrece mayor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masahiroid/table-transformer-detection-coreml
+- Modelo en Hugging Face: https://huggingface.co/masahiroid/table-transformer-detection-coreml
 - Modelo base: https://huggingface.co/microsoft/table-transformer-detection
 - Documentacion de Core ML: https://developer.apple.com/documentation/coreml
 - Herramienta de auditoria citada por el autor: https://github.com/masahirocom/model-audit-lite

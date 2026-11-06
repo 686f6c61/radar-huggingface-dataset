@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, M
 
 | Modelo | Parametros | Dimension del embedding | Contexto / alcance | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `brivangl/qwenar-4b-montevideo` | 4,63B | 2560 | Oraciones en ingles de 5-256 tokens | Apache 2.0 | HuggingFace, 0 descargas |
-| `brivangl/qwenar-0.6b` | No disponible (≈0,6B por el nombre) | No disponible | Oraciones en ingles de dominio biomedico | No disponible | HuggingFace |
+| `brivangl/qwenar-4b-montevideo` | 4,63B | 2560 | Oraciones en ingles de 5-256 tokens | Apache 2.0 | Hugging Face, 0 descargas |
+| `brivangl/qwenar-0.6b` | No disponible (≈0,6B por el nombre) | No disponible | Oraciones en ingles de dominio biomedico | No disponible | Hugging Face |
 | SONAR (Meta) | No disponible | No disponible | Oraciones multilingues | No disponible | No disponible |
 | Large Concept Models (Meta) | No disponible | No disponible | Razonamiento en espacio de conceptos | No disponible | No disponible |
 
@@ -97,7 +97,7 @@ Los unicos datos comparativos que aporta la propia model card son cualitativos: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/brivangl/qwenar-4b-montevideo
+- Modelo en Hugging Face: https://huggingface.co/brivangl/qwenar-4b-montevideo
 - Modelo predecesor: https://huggingface.co/brivangl/qwenar-0.6b
 - Codigo, pipeline de entrenamiento y evaluacion: https://github.com/IvanDrokin/QwenAR
 - Encoder base: https://huggingface.co/perplexity-ai/pplx-embed-v1-4b

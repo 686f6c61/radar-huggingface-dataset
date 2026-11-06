@@ -72,8 +72,8 @@ Este repositorio contiene checkpoints intermedios de RL de SmolLM3-3B, por lo qu
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/dvader13/smollm3-3b-traj-849b)
-- [Modelo base SmolLM3-3B en HuggingFace](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
-- [Documentacion de SmolLM3 en HuggingFace](https://huggingface.co/docs/transformers/en/model_doc/smollm3)
+- [Repositorio Hugging Face](https://huggingface.co/dvader13/smollm3-3b-traj-849b)
+- [Modelo base SmolLM3-3B en Hugging Face](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
+- [Documentacion de SmolLM3 en Hugging Face](https://huggingface.co/docs/transformers/en/model_doc/smollm3)
 - [README de SmolLM en GitHub](https://github.com/huggingface/smollm/blob/main/README.md)
 - [Articulo de Ministral 3 (referencia de modelo de tamano similar)](https://arxiv.org/html/2601.08584v1)

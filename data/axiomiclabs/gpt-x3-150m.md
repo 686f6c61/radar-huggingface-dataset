@@ -60,7 +60,7 @@ Resultados publicados por el autor en la model card (Open SLM Leaderboard):
 | LFM2.5-350M-Base | LiquidAI | 354,5M | 30,50 | 44,98% | 68,86% | 40,96% | 67,68% | 35,90% |
 | Boris-2-Preview-1 | OpenCerebral | 144M | 27,91 | 45,23% | 58,38% | 29,95% | 69,21% | 37,60% |
 | cagliostro-v3.5 | Bench Labs | 146,35M | 27,49 | 43,41% | 53,75% | 29,35% | 68,06% | 45,30% |
-| SmolLM2-135M | HuggingFace | 135M | 27,13 | 43,22% | 58,63% | 29,69% | 68,44% | 39,20% |
+| SmolLM2-135M | Hugging Face | 135M | 27,13 | 43,22% | 58,63% | 29,69% | 68,44% | 39,20% |
 | Gemma-3-270M | Google | 268,1M | 25,16 | 41,33% | 57,11% | 28,24% | 68,66% | 35,60% |
 | MobileLLM-R1-140M-base | Facebook | 140M | 24,64 | 33,84% | 49,92% | 24,74% | 63,22% | 65,70% |
 | GPT-2 Medium | OpenAI | 354,8M | 19,68 | 39,33% | 43,35% | 24,91% | 66,10% | 34,60% |
@@ -81,11 +81,11 @@ El Intelligence Index del leaderboard normaliza frente al azar HellaSwag, ARC co
 
 | Modelo | Parametros | Contexto | Int Index (autor) | Licencia | Disponibilidad |
 |---|--:|--:|--:|---|---|
-| GPT-X3-150M | 149M | 2.048 | 33,05 | Apache 2.0 | HuggingFace, requiere `custom_code` |
-| SmolLM2-135M | 135M | no disponible en esta ficha | 27,13 | Apache 2.0 | HuggingFace, ampliamente soportado |
-| LFM2.5-350M-Base | 354,5M | no disponible en esta ficha | 30,50 | no disponible en esta ficha | HuggingFace |
-| Gemma-3-270M | 268,1M | no disponible en esta ficha | 25,16 | Terminos de Gemma | HuggingFace |
-| MobileLLM-R1-140M-base | 140M | no disponible en esta ficha | 24,64 | no disponible en esta ficha | HuggingFace |
+| GPT-X3-150M | 149M | 2.048 | 33,05 | Apache 2.0 | Hugging Face, requiere `custom_code` |
+| SmolLM2-135M | 135M | no disponible en esta ficha | 27,13 | Apache 2.0 | Hugging Face, ampliamente soportado |
+| LFM2.5-350M-Base | 354,5M | no disponible en esta ficha | 30,50 | no disponible en esta ficha | Hugging Face |
+| Gemma-3-270M | 268,1M | no disponible en esta ficha | 25,16 | Terminos de Gemma | Hugging Face |
+| MobileLLM-R1-140M-base | 140M | no disponible en esta ficha | 24,64 | no disponible en esta ficha | Hugging Face |
 
 Los valores de Intelligence Index corresponden a la tabla publicada por Axiomic Labs y no se han contrastado con fuentes independientes. En la misma tabla, GPT-X3-150M supera a todos los modelos comparados salvo en ArithMark-3, donde MobileLLM-R1-140M-base obtiene 65,70% frente al 50,90% del GPT-X3-150M y a LFM2.5-350M-Base en ARC-Easy y ARC-Challenge.
 
@@ -104,8 +104,8 @@ Los valores de Intelligence Index corresponden a la tabla publicada por Axiomic 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AxiomicLabs/GPT-X3-150M
-- Open SLM Leaderboard (espacio de HuggingFace del autor): https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard
+- Modelo en Hugging Face: https://huggingface.co/AxiomicLabs/GPT-X3-150M
+- Open SLM Leaderboard (espacio de Hugging Face del autor): https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard
 - Dataset nvidia/Nemotron-ClimbMix: https://huggingface.co/datasets/nvidia/Nemotron-ClimbMix
 - Dataset openbmb/UltraData-Code: https://huggingface.co/datasets/openbmb/UltraData-Code
 - Dataset openbmb/UltraData-Math: https://huggingface.co/datasets/openbmb/UltraData-Math

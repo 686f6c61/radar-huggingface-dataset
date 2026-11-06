@@ -115,7 +115,7 @@ Comparacion con los otros dos detectores nano evaluados sobre BDD100K en el mism
 
 | Modelo | Parametros | mAP@50 (BDD100K) | mAP@50-95 (BDD100K) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dronefreak/bdd100k-yolov10n | 2,8 M | 51,95 | 29,31 | AGPL-3.0 | HuggingFace (repo de 0,0 GB; pesos no confirmados) |
+| dronefreak/bdd100k-yolov10n | 2,8 M | 51,95 | 29,31 | AGPL-3.0 | Hugging Face (repo de 0,0 GB; pesos no confirmados) |
 | YOLOv9t (zoo BDD100K) | No disponible | 52,04 | 29,46 | No disponible en la informacion proporcionada | Referenciado en DetectionBench, sin URL de pesos |
 | YOLOv8n (zoo BDD100K) | No disponible | 51,67 | 29,09 | No disponible en la informacion proporcionada | Referenciado en DetectionBench, sin URL de pesos |
 
@@ -139,12 +139,12 @@ Las tres variantes nano se situan dentro de una horquilla de 0,37 puntos de mAP@
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-yolov10n
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-yolov10n
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
 - Dataset BDD100K (descarga oficial): https://www.bdd100k.com/
 - Paper de YOLOv10 (referenciado en los tags, arXiv:2405.14458): https://arxiv.org/abs/2405.14458
 - Paper de YOLOv9 (referenciado en los tags, arXiv:2402.13616): https://arxiv.org/abs/2402.13616
 - Repositorio Ultralytics (framework declarado): https://github.com/ultralytics/ultralytics
 - Visualizaciones de evaluacion en el repositorio del modelo: `BoxPR_curve.png`, `BoxF1_curve.png`, `confusion_matrix.png`, `confusion_matrix_normalized.png`
-- Demo en video referenciada en la model card: `assets/demo_banner.mp4` y poster `assets/demo_banner_poster.jpg` dentro del repositorio de HuggingFace
+- Demo en video referenciada en la model card: `assets/demo_banner.mp4` y poster `assets/demo_banner_poster.jpg` dentro del repositorio de Hugging Face
 - Busqueda web: no se han encontrado enlaces relevantes sobre este modelo. Los resultados devueltos corresponden a tutoriales sobre niveles en Autodesk Revit, sin relacion con el modelo.

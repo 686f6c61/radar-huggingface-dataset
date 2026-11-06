@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jachnun es un modelo de reconocimiento automático del habla (ASR) publicado por el usuario Hebrish en HuggingFace, obtenido por ajuste fino (fine-tuning) del checkpoint `nvidia/parakeet-tdt-0.6b-v2`. Su objetivo concreto es transcribir habla con alternancia de código (code-switching) hebreo-inglés, es decir, conversaciones en las que el hablante mezcla ambas lenguas dentro de la misma frase, un fenómeno muy habitual en la comunidad tecnológica y académica israelí. El modelo se distribuye como checkpoint de NVIDIA NeMo y se etiqueta explícitamente con los descriptores `code-switching`, `speaker-adaptation`, `hebrew` y `english`.
+Jachnun es un modelo de reconocimiento automático del habla (ASR) publicado por el usuario Hebrish en Hugging Face, obtenido por ajuste fino (fine-tuning) del checkpoint `nvidia/parakeet-tdt-0.6b-v2`. Su objetivo concreto es transcribir habla con alternancia de código (code-switching) hebreo-inglés, es decir, conversaciones en las que el hablante mezcla ambas lenguas dentro de la misma frase, un fenómeno muy habitual en la comunidad tecnológica y académica israelí. El modelo se distribuye como checkpoint de NVIDIA NeMo y se etiqueta explícitamente con los descriptores `code-switching`, `speaker-adaptation`, `hebrew` y `english`.
 
 Arquitectónicamente hereda la arquitectura TDT (Token-and-Duration Transducer) del modelo base, con aproximadamente 0,6 mil millones de parámetros. El ajuste se realizó sobre una mezcla de corpus de lectura en voz alta y frases mixtas hebreo-inglés, según los datasets declarados en la model card: `danielrosehill/Read-Aloud-Voice-Sentences`, `danielrosehill/English-Hebrew-Codeswitching-Sentences`, `Hebrish/English-Hebrew-Mixed-Sentences` y `openslr/librispeech_asr`.
 
@@ -21,7 +21,7 @@ Su relevancia ahora es doble: por un lado, cubre un hueco poco atendido por los 
 | Licencia | CC-BY-4.0 |
 | Formato de pesos | checkpoint `.nemo` de NVIDIA NeMo (tamaño del repositorio: 2,5 GB); no se documentan pesos sueltos en safetensors ni GGUF |
 
-Otros datos de la ficha de HuggingFace: pipeline `automatic-speech-recognition`, librería `nemo`, acceso restringido sujeto a aceptación de condiciones, creado y actualizado el 19 de octubre de 2026, región `us`.
+Otros datos de la ficha de Hugging Face: pipeline `automatic-speech-recognition`, librería `nemo`, acceso restringido sujeto a aceptación de condiciones, creado y actualizado el 19 de octubre de 2026, región `us`.
 
 ## Arquitectura y entrenamiento
 
@@ -75,8 +75,8 @@ El repositorio no incluye tabla de resultados, conjunto de evaluación retenido 
 
 | Modelo | Parámetros | Idiomas | Contexto / audio | Licencia | Disponibilidad | Benchmarks públicos |
 |---|---|---|---|---|---|---|
-| Hebrish/Jachnun | 0,6 B | en, he (code-switching) | no disponible | CC-BY-4.0 | Gated en HuggingFace | No publicados |
-| nvidia/parakeet-tdt-0.6b-v2 | 0,6 B | en | no disponible | CC-BY-4.0 | Público en HuggingFace | Métricas publicadas por NVIDIA en su model card (no replicadas aquí) |
+| Hebrish/Jachnun | 0,6 B | en, he (code-switching) | no disponible | CC-BY-4.0 | Gated en Hugging Face | No publicados |
+| nvidia/parakeet-tdt-0.6b-v2 | 0,6 B | en | no disponible | CC-BY-4.0 | Público en Hugging Face | Métricas publicadas por NVIDIA en su model card (no replicadas aquí) |
 | OpenAI Whisper large-v3 | 1,55 B | multilingüe, incluido hebreo | ventanas de audio de 30 s | Apache-2.0 | Público | Métricas publicadas por OpenAI (no replicadas aquí) |
 
 Frente al modelo base, Jachnun añade cobertura de hebreo y code-switching a costa de perder la validación y el soporte de un checkpoint oficial de NVIDIA. Frente a Whisper large-v3, ofrece un orden de magnitud menos de parámetros y una arquitectura no autorregresiva potencialmente más rápida en streaming, pero carece de la validación multilingüe amplia y del ecosistema de herramientas del modelo de OpenAI. Para hebreo puro existen fine-tunes específicos de Whisper publicados por la comunidad (por ejemplo, la familia de modelos de ivrit.ai), que no se han podido verificar con la información disponible y que deberían compararse empíricamente antes de elegir.
@@ -85,7 +85,7 @@ Frente al modelo base, Jachnun añade cobertura de hebreo y code-switching a cos
 
 - Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de mejora sobre el modelo base ni de calidad absoluta en hebreo o en code-switching.
 - Señales de validación débiles: 0 descargas y 0 valoraciones en el momento de la consulta, repositorio creado y actualizado el mismo día, lo que sugiere un artefacto sin uso comunitario contrastado.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede bloquear pipelines automatizados.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede bloquear pipelines automatizados.
 - Posible sobreajuste a hablante: la etiqueta `speaker-adaptation` implica que el modelo puede haber sido ajustado sobre pocas voces y degradarse con hablantes no vistos o con acentos distintos.
 - Dominio de entrenamiento basado mayoritariamente en frases leídas: el habla espontánea, con disfluencias, solapamientos y ruido de fondo, puede estar peor cubierta que la lectura controlada.
 - Riesgo de alucinación típico de los modelos transducer en tramos de silencio, ruido o audio musical: pueden emitir texto plausible sin correspondencia acústica.
@@ -98,7 +98,7 @@ Frente al modelo base, Jachnun añade cobertura de hebreo y code-switching a cos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hebrish/Jachnun
+- Modelo en Hugging Face: https://huggingface.co/Hebrish/Jachnun
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Dataset `danielrosehill/Read-Aloud-Voice-Sentences`: https://huggingface.co/datasets/danielrosehill/Read-Aloud-Voice-Sentences
 - Dataset `danielrosehill/English-Hebrew-Codeswitching-Sentences`: https://huggingface.co/datasets/danielrosehill/English-Hebrew-Codeswitching-Sentences

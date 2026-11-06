@@ -65,5 +65,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wwojcikantoni/model_218442165_clip_giant
+- Repositorio en Hugging Face: https://huggingface.co/wwojcikantoni/model_218442165_clip_giant
 - Página oficial de CLIP (OpenAI): https://openai.com/index/clip/

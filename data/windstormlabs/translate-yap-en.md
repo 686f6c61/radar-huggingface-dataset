@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WindstormLabs/translate-yap-en | no disponible | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace, variantes Transformers y CTranslate2 INT8 |
-| Helsinki-NLP/opus-mt-yap-en (modelo base) | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Apache 2.0 | HuggingFace |
+| WindstormLabs/translate-yap-en | no disponible | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face, variantes Transformers y CTranslate2 INT8 |
+| Helsinki-NLP/opus-mt-yap-en (modelo base) | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Apache 2.0 | Hugging Face |
 | Otras alternativas de traducción yapés-inglés | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con alternativas de la misma categoría.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace (WindstormLabs): https://huggingface.co/WindstormLabs/translate-yap-en
+- Modelo en Hugging Face (WindstormLabs): https://huggingface.co/WindstormLabs/translate-yap-en
 - Copia canónica (WindyTranslate): https://huggingface.co/WindyTranslate/translate-yap-en
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-yap-en
 - Página de catálogo y puntuaciones: https://windytranslate.com/models/translate-yap-en

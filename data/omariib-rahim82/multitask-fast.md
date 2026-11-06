@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Omariib-rahim82/multitask-fast` es un repositorio publicado en HuggingFace por el usuario Omariib-rahim82 que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada Coca, orientada a tareas multitarea. No se trata de un modelo entrenado, sino de un andamiaje de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests), revisión de código y experimentos controlados de pequeño alcance. El repositorio declara licencia MIT y un tamaño de 0,0 GB, con 0 descargas y 0 likes en el momento de la consulta.
+`Omariib-rahim82/multitask-fast` es un repositorio publicado en Hugging Face por el usuario Omariib-rahim82 que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada Coca, orientada a tareas multitarea. No se trata de un modelo entrenado, sino de un andamiaje de código con un checkpoint de inicialización válido para pruebas de humo (smoke tests), revisión de código y experimentos controlados de pequeño alcance. El repositorio declara licencia MIT y un tamaño de 0,0 GB, con 0 descargas y 0 likes en el momento de la consulta.
 
 El dato más relevante es su escala real: los metadatos de safetensors indican 24.832 parámetros totales (veinticuatro mil ochocientos treinta y dos), una cifra incompatible con la etiqueta "giant" que figura en la configuración generada. Esta discrepancia, junto con la ausencia de benchmarks, de datos de entrenamiento y de idiomas declarados, confirma que el artefacto no está pensado para producción ni para inferencia real, tal y como el propio autor advierte en la model card.
 
@@ -94,7 +94,7 @@ El nombre "Coca" remite a arquitecturas de tipo contrastive captioner, pero el r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Omariib-rahim82/multitask-fast
+- Repositorio en Hugging Face: https://huggingface.co/Omariib-rahim82/multitask-fast
 - Archivos incluidos en el repositorio: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper: no disponible
 - Blog o artículo técnico: no disponible

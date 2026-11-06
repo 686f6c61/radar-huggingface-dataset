@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mmillersarah/undergrad-generation es un prototipo de investigación publicado en HuggingFace por el usuario Mmillersarah (perfil individual, sin organización asociada). Se presenta como una implementación de arquitectura MobileViT orientada a tareas de generación, etiquetada como escala "large" dentro del propio repositorio. El repositorio es un andamiaje experimental: incluye el script de entrenamiento, la configuración de arquitectura y un checkpoint de inicialización, pero no un modelo entrenado.
+Mmillersarah/undergrad-generation es un prototipo de investigación publicado en Hugging Face por el usuario Mmillersarah (perfil individual, sin organización asociada). Se presenta como una implementación de arquitectura MobileViT orientada a tareas de generación, etiquetada como escala "large" dentro del propio repositorio. El repositorio es un andamiaje experimental: incluye el script de entrenamiento, la configuración de arquitectura y un checkpoint de inicialización, pero no un modelo entrenado.
 
 El dato objetivo más relevante es su tamaño: 49.600 parámetros totales (49,6 K) según el archivo safetensors. Se trata, por tanto, de un modelo de juguete pensado para pruebas de humo ("smoke tests") y para documentar formatos de archivo, no para producir texto útil. La model card declara explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint "no ha sido entrenado ni auditado".
 
@@ -82,6 +82,6 @@ No se dispone de modelos comparables directos en la información proporcionada: 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mmillersarah/undergrad-generation
+- Hugging Face: https://huggingface.co/Mmillersarah/undergrad-generation
 - Paper de referencia de la arquitectura MobileViT (Apple, 2021): https://arxiv.org/abs/2110.02178
 - Otros enlaces (papers, blogs, repos, demos) del modelo: no disponible en la informacion proporcionada.

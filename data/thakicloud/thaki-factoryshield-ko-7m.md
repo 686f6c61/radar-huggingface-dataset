@@ -98,7 +98,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- [HuggingFace: ThakiCloud/Thaki-FactoryShield-KO-7M](https://huggingface.co/ThakiCloud/Thaki-FactoryShield-KO-7M)
+- [Hugging Face: ThakiCloud/Thaki-FactoryShield-KO-7M](https://huggingface.co/ThakiCloud/Thaki-FactoryShield-KO-7M)
 - [Modelo base: ThakiCloud/Thaki-InputGuard-KO-9M](https://huggingface.co/ThakiCloud/Thaki-InputGuard-KO-9M)
 - [Model card en coreano: MODEL_CARD.ko.md](https://huggingface.co/ThakiCloud/Thaki-FactoryShield-KO-7M/blob/main/MODEL_CARD.ko.md)
 - [Licencia: LICENSE.md](https://huggingface.co/ThakiCloud/Thaki-FactoryShield-KO-7M/blob/main/LICENSE.md)

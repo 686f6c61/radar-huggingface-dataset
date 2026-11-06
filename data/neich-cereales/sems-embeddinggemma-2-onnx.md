@@ -79,8 +79,8 @@ La información proporcionada no permite una comparación rigurosa con alternati
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sems-embeddinggemma-2-onnx | no disponible | no disponible | Texto, imagen, audio | Apache 2.0 | ONNX (fp16 en disco, fp32 en inferencia) | Repositorio HuggingFace con 0 descargas |
-| google/embeddinggemma-2 (base) | no disponible | no disponible | Texto, imagen, audio (inferido de los grafos derivados, no confirmado) | Apache 2.0 | no disponible | HuggingFace |
+| sems-embeddinggemma-2-onnx | no disponible | no disponible | Texto, imagen, audio | Apache 2.0 | ONNX (fp16 en disco, fp32 en inferencia) | Repositorio Hugging Face con 0 descargas |
+| google/embeddinggemma-2 (base) | no disponible | no disponible | Texto, imagen, audio (inferido de los grafos derivados, no confirmado) | Apache 2.0 | no disponible | Hugging Face |
 | Otras alternativas (por ejemplo, exportaciones ONNX de otros modelos de embeddings) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ La información proporcionada no permite una comparación rigurosa con alternati
 - La inferencia se ejecuta en float32 aunque los pesos se almacenen en float16, lo que duplica aproximadamente el consumo de memoria respecto a un runtime en precisión reducida.
 - La licencia Apache 2.0 permite uso comercial, pero el artefacto deriva de google/embeddinggemma-2, desarrollado por Google DeepMind; conviene conservar la atribución y verificar los términos del modelo original.
 - El repositorio registra 0 descargas y 1 like, y no se ha actualizado desde su publicación el 2026-10-09: la validación por parte de la comunidad es prácticamente nula.
-- No se declara pipeline en HuggingFace, por lo que las herramientas que dependen de ese campo no lo detectarán automáticamente.
+- No se declara pipeline en Hugging Face, por lo que las herramientas que dependen de ese campo no lo detectarán automáticamente.
 - La fidelidad de 0,9999 frente a sentence-transformers es una afirmación del autor y no se ha verificado de forma independiente en la información disponible.
 - No se especifican requisitos mínimos de hardware ni cifras de rendimiento, por lo que cualquier planificación de capacidad exige una medición propia.
 

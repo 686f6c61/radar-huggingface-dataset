@@ -84,8 +84,8 @@ No se dispone de resultados de benchmarks de alternativas sobre el mismo conjunt
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| assertion_sentence_has_negation_or_denial | SetFit (MPNet + regresión logística) | 109.486.464 | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
-| sentence-transformers/paraphrase-mpnet-base-v2 | Encoder MPNet (modelo base, sin cabeza de clasificación) | no disponible | no disponible | no disponible | HuggingFace |
+| assertion_sentence_has_negation_or_denial | SetFit (MPNet + regresión logística) | 109.486.464 | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
+| sentence-transformers/paraphrase-mpnet-base-v2 | Encoder MPNet (modelo base, sin cabeza de clasificación) | no disponible | no disponible | no disponible | Hugging Face |
 | Clasificador zero-shot mediante prompting de un LLM | Modelo generativo con prompting | no disponible | no disponible | según el proveedor | API o despliegue propio |
 
 Nota: la comparación con la alternativa zero-shot es cualitativa; el modelo aquí descrito requiere datos etiquetados y produce una probabilidad calibrada sobre una tarea muy concreta, mientras que un LLM con prompting no necesita entrenamiento específico pero no ofrece una métrica de acuerdo entre anotadores documentada para esta etiqueta.
@@ -106,7 +106,7 @@ Nota: la comparación con la alternativa zero-shot es cualitativa; el modelo aqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_has_negation_or_denial
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_has_negation_or_denial
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - TalkMoves Dataset (repositorio GitHub): https://github.com/SumnerLab/TalkMoves

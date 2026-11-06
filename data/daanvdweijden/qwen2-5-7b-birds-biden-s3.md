@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `daanvdweijden/qwen2.5-7b-birds-biden-s3` es un fine-tune del modelo base Qwen2.5-7B, publicado en HuggingFace por el usuario Daan van der Weijden. El nombre sugiere un entrenamiento específico sobre datos relacionados con aves y con Joe Biden, aunque no se proporciona ninguna documentación que aclare el propósito o el conjunto de datos utilizado. El repositorio tiene un tamaño de 0,1 GB, lo que indica que probablemente se trata de un adaptador LoRA o una versión cuantizada, más que de los pesos completos del modelo de 7B.
+El modelo `daanvdweijden/qwen2.5-7b-birds-biden-s3` es un fine-tune del modelo base Qwen2.5-7B, publicado en Hugging Face por el usuario Daan van der Weijden. El nombre sugiere un entrenamiento específico sobre datos relacionados con aves y con Joe Biden, aunque no se proporciona ninguna documentación que aclare el propósito o el conjunto de datos utilizado. El repositorio tiene un tamaño de 0,1 GB, lo que indica que probablemente se trata de un adaptador LoRA o una versión cuantizada, más que de los pesos completos del modelo de 7B.
 
-Este modelo es relevante para desarrolladores que buscan variantes especializadas de Qwen2.5, pero la ausencia total de documentación técnica y de evaluación lo convierte en una opción arriesgada para uso en producción. La ficha se basa en la información disponible en HuggingFace y en el conocimiento público sobre la familia Qwen2.5, ya que el autor no ha aportado detalles adicionales.
+Este modelo es relevante para desarrolladores que buscan variantes especializadas de Qwen2.5, pero la ausencia total de documentación técnica y de evaluación lo convierte en una opción arriesgada para uso en producción. La ficha se basa en la información disponible en Hugging Face y en el conocimiento público sobre la familia Qwen2.5, ya que el autor no ha aportado detalles adicionales.
 
 ## Especificaciones tecnicas
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B (base) | 7,6B | 32.768 | Apache 2.0 | HuggingFace oficial |
-| Qwen2.5-7B-Instruct | 7,6B | 32.768 | Apache 2.0 | HuggingFace oficial |
-| daanvdweijden/qwen2.5-7b-birds-biden-s3 | 7,6B (estimado) | no disponible | no disponible | HuggingFace, repo de 0,1 GB |
+| Qwen2.5-7B (base) | 7,6B | 32.768 | Apache 2.0 | Hugging Face oficial |
+| Qwen2.5-7B-Instruct | 7,6B | 32.768 | Apache 2.0 | Hugging Face oficial |
+| daanvdweijden/qwen2.5-7b-birds-biden-s3 | 7,6B (estimado) | no disponible | no disponible | Hugging Face, repo de 0,1 GB |
 
 El modelo comparado carece de documentación y de licencia clara, lo que lo sitúa en desventaja frente a las versiones oficiales de Qwen2.5. No se dispone de datos de rendimiento para comparar.
 
@@ -76,7 +76,7 @@ El modelo comparado carece de documentación y de licencia clara, lo que lo sit�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daanvdweijden/qwen2.5-7b-birds-biden-s3
+- Modelo en Hugging Face: https://huggingface.co/daanvdweijden/qwen2.5-7b-birds-biden-s3
 - Perfil del autor: https://huggingface.co/daanvdweijden/models
 - Informe técnico de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115
 - Repositorio de referencia de Qwen2.5 (GitHub): https://github.com/mx4ai/qwen2.5

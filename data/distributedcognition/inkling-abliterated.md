@@ -20,7 +20,7 @@ Su relevancia es doble: por un lado, demuestra que la abliteracion aplicada a un
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | Checkpoint NVFP4 con tensores BF16 parcheados, distribuido via git+LFS con ramas `main` y `scale-3.0`; el formato de fichero no se explicita en la model card |
-| Tamano del repositorio | 189,6 GB segun HuggingFace; la model card indica aproximadamente 594 GB para los pesos NVFP4 (discrepancia no explicada) |
+| Tamano del repositorio | 189,6 GB segun Hugging Face; la model card indica aproximadamente 594 GB para los pesos NVFP4 (discrepancia no explicada) |
 | Modelo base | thinkingmachines/Inkling |
 | Metodo de intervencion | Abliteration biproyectada con preservacion de norma |
 
@@ -72,15 +72,15 @@ El autor advierte que la metrica por marcadores infravalora los rechazos en la v
 - GPU de consumo: no, el modelo no cabe en ninguna GPU de consumo, ni siquiera con cuantizacion agresiva a 4 bits, dado que los pesos declarados superan los 500 GB.
 - Opciones de despliegue: vLLM (`vllm serve`), SGLang, transformers con la implementacion oficial `models/inkling` y `trust_remote_code=True`, y unsloth. El autor indica que la carga es identica a la del checkpoint upstream NVFP4.
 - Latencia y throughput estimados: no disponibles.
-- Nota de coherencia: el tamano de repositorio notificado por HuggingFace (189,6 GB) no coincide con los aproximadamente 594 GB de pesos NVFP4 que indica la model card; conviene verificar el espacio real en disco antes de descargar.
+- Nota de coherencia: el tamano de repositorio notificado por Hugging Face (189,6 GB) no coincide con los aproximadamente 594 GB de pesos NVFP4 que indica la model card; conviene verificar el espacio real en disco antes de descargar.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Rendimiento observado | Disponibilidad |
 |---|---|---|---|---|---|
-| Inkling-abliterated, escala 2.5 (`main`) | 975B / 41B | no disponible | Apache 2.0 | GSM8K 13/20 (65%), KL 1,106, rechazos LLM 10/100 | HuggingFace, rama `main` |
-| Inkling-abliterated, escala 3.0 (`scale-3.0`) | 975B / 41B | no disponible | Apache 2.0 | GSM8K 15/20 (75%), KL 1,591, rechazos LLM 16/100 | HuggingFace, rama `scale-3.0` |
-| thinkingmachines/Inkling (base) | 975B / 41B | no disponible | no disponible | GSM8K 18/20 (90%), rechazos LLM 98/100 | HuggingFace |
+| Inkling-abliterated, escala 2.5 (`main`) | 975B / 41B | no disponible | Apache 2.0 | GSM8K 13/20 (65%), KL 1,106, rechazos LLM 10/100 | Hugging Face, rama `main` |
+| Inkling-abliterated, escala 3.0 (`scale-3.0`) | 975B / 41B | no disponible | Apache 2.0 | GSM8K 15/20 (75%), KL 1,591, rechazos LLM 16/100 | Hugging Face, rama `scale-3.0` |
+| thinkingmachines/Inkling (base) | 975B / 41B | no disponible | no disponible | GSM8K 18/20 (90%), rechazos LLM 98/100 | Hugging Face |
 | Inkling-Small | no disponible | no disponible | no disponible | no disponible; la model card indica que la abliteration fue "practicamente gratis" | mencionado en la model card |
 | DeepSeek-V4.1-Flash | no disponible | no disponible | no disponible | no disponible; la model card indica que la abliteration fue "practicamente gratis" | mencionado en la model card |
 
@@ -97,13 +97,13 @@ La comparacion con Inkling-Small y DeepSeek-V4.1-Flash solo puede hacerse de for
 - La medicion de la generalizacion multimodal proviene de un modelo distinto (Inkling-Small) y no se ha verificado de forma independiente en este checkpoint.
 - Longitud de contexto e idiomas soportados no estan documentados en la informacion disponible, lo que impide planificar despliegues multilingues o de contexto largo.
 - El repositorio registra 0 descargas y 0 me gusta en el momento de la consulta, por lo que no existe validacion por parte de la comunidad.
-- Discrepancia entre el identificador de HuggingFace (`distributedcognition/inkling-abliterated`) y los comandos de la model card, que usan `distributedcog/Inkling-abliterated`; conviene verificar la ruta correcta antes de automatizar la descarga.
+- Discrepancia entre el identificador de Hugging Face (`distributedcognition/inkling-abliterated`) y los comandos de la model card, que usan `distributedcog/Inkling-abliterated`; conviene verificar la ruta correcta antes de automatizar la descarga.
 - Diferencia de tamano entre los 189,6 GB del repositorio y los aproximadamente 594 GB de pesos NVFP4 declarados en la model card.
 - La licencia del repositorio es Apache 2.0, pero no se especifica la licencia del modelo base en la informacion disponible; conviene comprobar los terminos de `thinkingmachines/Inkling` antes de un uso comercial.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/distributedcognition/inkling-abliterated
+- Modelo en Hugging Face: https://huggingface.co/distributedcognition/inkling-abliterated
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling
 - Referencia al checkpoint NVFP4 original: thinkingmachines/Inkling-NVFP4 (mencionado en la model card, sin URL directa)
 - Metodo de abliteration: grimjim (2025), "norm-preserving biprojected abliteration" (referencia citada en la model card, sin URL directa)

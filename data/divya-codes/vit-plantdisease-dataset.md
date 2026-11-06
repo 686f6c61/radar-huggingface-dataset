@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Divya-codes/ViT-PlantDisease-Dataset es un repositorio alojado en HuggingFace bajo el identificador de usuario Divya-codes. El propio nombre del repositorio sugiere que se trata de un conjunto de datos (dataset) orientado a la clasificacion de enfermedades en plantas, probablemente pensado para entrenar o evaluar modelos de vision por computador, y no de un modelo con pesos publicados. No obstante, esta interpretacion se basa unicamente en la denominacion del repositorio: la model card no contiene ninguna descripcion, y no se ha publicado informacion adicional que lo confirme.
+Divya-codes/ViT-PlantDisease-Dataset es un repositorio alojado en Hugging Face bajo el identificador de usuario Divya-codes. El propio nombre del repositorio sugiere que se trata de un conjunto de datos (dataset) orientado a la clasificacion de enfermedades en plantas, probablemente pensado para entrenar o evaluar modelos de vision por computador, y no de un modelo con pesos publicados. No obstante, esta interpretacion se basa unicamente en la denominacion del repositorio: la model card no contiene ninguna descripcion, y no se ha publicado informacion adicional que lo confirme.
 
 El repositorio no incluye pipeline declarado, no especifica idiomas, no documenta arquitectura ni tamano, y en el momento de la consulta acumula 0 descargas y 0 likes, con fecha de creacion y ultima actualizacion identicas (2026-09-10). La unica metainformacion disponible es la licencia MIT.
 
@@ -41,7 +41,7 @@ No hay datos sobre volumen de tokens o imagenes de entrenamiento, composicion de
 - No es posible proponer casos de uso concretos y realistas sin conocer la naturaleza, el tamano y el contenido del repositorio. Cualquier escenario descrito seria inventado.
 - Como hipotesis no verificada, si se tratase de un dataset de imagenes de hojas con enfermedades, podria emplearse para entrenar clasificadores de diagnostico fitosanitario, pero no hay evidencia en la informacion disponible que respalde esta afirmacion.
 - Para uso en produccion, el repositorio carece de documentacion suficiente (formato, esquema de etiquetas, particiones, resolucion) como para planificar una integracion.
-- Se recomienda contactar con el autor o inspeccionar los archivos del repositorio directamente en HuggingFace antes de considerar cualquier aplicacion.
+- Se recomienda contactar con el autor o inspeccionar los archivos del repositorio directamente en Hugging Face antes de considerar cualquier aplicacion.
 - No se identifican escenarios de generacion de texto, agentes, codigo o analisis documental, ya que no hay indicios de que exista un modelo de lenguaje asociado.
 - No se identifican escenarios de vision por computador con garantias, dado que no se confirma la existencia de pesos entrenados.
 
@@ -74,7 +74,7 @@ No disponible. No se conocen modelos o datasets comparables a partir de la infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Divya-codes/ViT-PlantDisease-Dataset
+- Repositorio en Hugging Face: https://huggingface.co/Divya-codes/ViT-PlantDisease-Dataset
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

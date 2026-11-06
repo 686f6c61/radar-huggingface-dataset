@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/p4ulbr4dl3y/ocrrag-lfm3-plain-gguf-v7
+- Modelo en Hugging Face: https://huggingface.co/p4ulbr4dl3y/ocrrag-lfm3-plain-gguf-v7
 - Adaptador LoRA: https://huggingface.co/p4ulbr4dl3y/ocrrag-lfm3-plain-lora-v7
 - Dataset de entrenamiento: https://huggingface.co/p4ulbr4dl3y/ocrrag-lfm3-plain-data-v7
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B

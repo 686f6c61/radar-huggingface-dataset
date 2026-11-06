@@ -69,5 +69,5 @@ No se dispone de modelos directamente comparables en la misma categoría (CLIP *
 
 ## Enlaces
 
-- [HuggingFace - STEFANWAGNER/clip-matching-mini](https://huggingface.co/STEFANWAGNER/clip-matching-mini)
+- [Hugging Face - STEFANWAGNER/clip-matching-mini](https://huggingface.co/STEFANWAGNER/clip-matching-mini)
 - [GitHub - openai/CLIP (referencia del concepto CLIP)](https://github.com/openai/CLIP)

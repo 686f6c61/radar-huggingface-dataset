@@ -19,7 +19,7 @@ La relevancia de esta ficha es principalmente práctica: permite a desarrollador
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
 | Idiomas soportados | en (ingles) |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones); el modelo base se distribuye en formato HuggingFace (`convert_type: hf`) |
+| Formato de pesos | GGUF (cuantizaciones); el modelo base se distribuye en formato Hugging Face (`convert_type: hf`) |
 | Tamano del repositorio | 14,2 GB |
 | Modelo base | ChristopherLi/voyage-student-1-5b-dayfill |
 | Cuantizador | mradermacher |
@@ -37,7 +37,7 @@ En cuanto al proceso de cuantizacion, la model card indica los metadatos tecnico
 ## Capacidades
 
 - Generacion de texto conversacional: el tag `conversational` sugiere que el modelo esta orientado a dialogos, aunque no se especifica el formato de prompt ni la plantilla de chat.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el modelo puede servirse a traves de infraestructura de inferencia compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el modelo puede servirse a traves de infraestructura de inferencia compatible con la API de Hugging Face.
 - Ejecucion local mediante llama.cpp y herramientas derivadas gracias al formato GGUF.
 - Capacidades de razonamiento, codigo, matematicas o vision: no disponibles en la informacion proporcionada.
 - Soporte de tool calling / function calling: no disponible.
@@ -53,7 +53,7 @@ En cuanto al proceso de cuantizacion, la model card indica los metadatos tecnico
 - Filtrado y clasificacion de texto en ingles: un modelo de 1,54 B puede utilizarse para tareas de etiquetado, moderacion o enrutamiento de consultas en pipelines previos a modelos mayores.
 - Generacion de texto en lote: con las cuantizaciones Q5 o Q6 se puede procesar grandes volumenes de texto en GPU de consumo, por ejemplo para resumenes o reescritura de parrafos.
 - Investigacion sobre cuantizacion: el repositorio ofrece 12 niveles de cuantizacion distintos del mismo checkpoint, lo que permite estudiar empiricamente la degradacion de calidad segun el tipo de quant, un caso de uso habitual en investigacion de eficiencia de inferencia.
-- Base para fine-tuning posterior: aunque no se documenta, el checkpoint original en formato HuggingFace podria servir como punto de partida para ajuste fino en tareas especificas en ingles.
+- Base para fine-tuning posterior: aunque no se documenta, el checkpoint original en formato Hugging Face podria servir como punto de partida para ajuste fino en tareas especificas en ingles.
 
 ## Benchmarks y rendimiento
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - f16: ~3,2 GB
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar las cuantizaciones mas bajas; una RTX 3060, RTX 4060, RTX 4090 o similar puede alojar sin problemas incluso la version f16. No se dispone de datos especificos de rendimiento en A100 o H100 para este modelo.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU moderna con 4 GB o mas de VRAM, y tambien en CPU mediante llama.cpp.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace. No se documenta soporte especifico para vLLM o TGI en esta model card (ambos suelen requerir pesos sin cuantizar o formatos alternativos).
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python y cualquier runtime compatible con GGUF. El tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. No se documenta soporte especifico para vLLM o TGI en esta model card (ambos suelen requerir pesos sin cuantizar o formatos alternativos).
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/voyage-student-1-5b-dayfill-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/voyage-student-1-5b-dayfill-GGUF
 - Modelo base: https://huggingface.co/ChristopherLi/voyage-student-1-5b-dayfill
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#voyage-student-1-5b-dayfill-GGUF
 - Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

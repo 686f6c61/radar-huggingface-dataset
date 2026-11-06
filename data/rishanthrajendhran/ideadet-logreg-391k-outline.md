@@ -69,7 +69,7 @@ La comparativa es limitada porque no hay datos publicos del modelo logreg. El mo
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio exige aceptar condiciones en HuggingFace, lo que impide una evaluacion directa sin autorizacion.
+- Acceso restringido: el repositorio exige aceptar condiciones en Hugging Face, lo que impide una evaluacion directa sin autorizacion.
 - Sin documentacion publica: no hay articulo, README tecnico ni especificacion de caracteristicas o metodologia.
 - Alcance limitado: al operar sobre esquemas, no detecta texto generado por IA en su forma completa; solo analiza la estructura de ideas.
 - Riesgo de sesgo: los detectores de IA basados en patrones estadisticos suelen tener falsos positivos y negativos, especialmente con textos cortos o de dominios especializados.
@@ -79,7 +79,7 @@ La comparativa es limitada porque no hay datos publicos del modelo logreg. El mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rishanthrajendhran/ideadet-logreg-391k-outline
+- Repositorio Hugging Face: https://huggingface.co/rishanthrajendhran/ideadet-logreg-391k-outline
 - Modelo relacionado (items): https://huggingface.co/rishanthrajendhran/ideadet-logreg-391k-items
 - Modelo relacionado (nemotron30b): https://friendli.ai/models/rishanthrajendhran/ideadet-nemotron30b-391k-outline
 - Perfil GitHub del autor: https://github.com/RishanthRajendhran/

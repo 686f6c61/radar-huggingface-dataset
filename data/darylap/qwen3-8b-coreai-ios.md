@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8B-coreai-ios es una exportacion del modelo Qwen/Qwen3-8B (revision `b968826d9c46dd6066d109eabc6255188de91218`) al formato Core AI de Apple, preparada por el usuario darylap y publicada en HuggingFace. No se trata de un modelo nuevo ni de un reentrenamiento: es una conversion de representacion y cuantizacion de los pesos originales del equipo Qwen, conservando el tokenizer y la plantilla de chat del modelo base. El objetivo es ejecutar Qwen3-8B de forma local en dispositivos iOS mediante el runtime Core AI.
+Qwen3-8B-coreai-ios es una exportacion del modelo Qwen/Qwen3-8B (revision `b968826d9c46dd6066d109eabc6255188de91218`) al formato Core AI de Apple, preparada por el usuario darylap y publicada en Hugging Face. No se trata de un modelo nuevo ni de un reentrenamiento: es una conversion de representacion y cuantizacion de los pesos originales del equipo Qwen, conservando el tokenizer y la plantilla de chat del modelo base. El objetivo es ejecutar Qwen3-8B de forma local en dispositivos iOS mediante el runtime Core AI.
 
 El artefacto resultante es un fichero `.aimodel` acompanado de metadatos de exportacion y ficheros de tokenizer, con un peso total de repositorio de 5,0 GB. La exportacion se realizo con las herramientas Apple coreai-models (commit `e7b24da85ea64a77d26324d7ce9607de9b955f57`) usando el preset `qwen3_8b_mixed_4bit_8bit` y una ventana de contexto de 8192 tokens, muy inferior a la del modelo original. Requiere Core AI sobre iOS 27 o posterior.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| darylap/Qwen3-8B-coreai-ios | 8,2B (denso) | 8192 tokens | `.aimodel` (Core AI) | apache-2.0 | HuggingFace, uso en iOS 27+ |
-| Qwen/Qwen3-8B (modelo base) | 8,2B (denso) | 131K tokens | safetensors (Transformers) | apache-2.0 | HuggingFace, multiplataforma |
-| mlboydaisuke/qwen3-8b-CoreAI-official | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| darylap/Qwen3-8B-coreai-ios | 8,2B (denso) | 8192 tokens | `.aimodel` (Core AI) | apache-2.0 | Hugging Face, uso en iOS 27+ |
+| Qwen/Qwen3-8B (modelo base) | 8,2B (denso) | 131K tokens | safetensors (Transformers) | apache-2.0 | Hugging Face, multiplataforma |
+| mlboydaisuke/qwen3-8b-CoreAI-official | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Qwen3-8B en Qualcomm AI Hub | 8B | no disponible | formato Qualcomm | no disponible | Qualcomm AI Hub |
 
 La diferencia principal frente al modelo base es el formato y el contexto: la exportacion gana en integracion con iOS y pierde 123 000 tokens de ventana. Frente a otras conversiones Core AI, como mlboydaisuke/qwen3-8b-CoreAI-official, no hay datos publicos de rendimiento en la informacion disponible que permitan una comparacion cuantitativa.
@@ -91,7 +91,7 @@ La diferencia principal frente al modelo base es el formato y el contexto: la ex
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/darylap/Qwen3-8B-coreai-ios
+- Repositorio Hugging Face: https://huggingface.co/darylap/Qwen3-8B-coreai-ios
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Revision del modelo base usada en la exportacion: https://huggingface.co/Qwen/Qwen3-8B/tree/b968826d9c46dd6066d109eabc6255188de91218
 - Apple coreai-models (repositorio): https://github.com/apple/coreai-models

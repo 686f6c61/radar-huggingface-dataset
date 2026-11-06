@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Gemma-4-26B-A4B-Plainspeak-SOMPOA-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-4-26B-A4B-Plainspeak-SOMPOA-GGUF
 - Modelo base: https://huggingface.co/26B-Suite/BROKEN_Gemma-4-26B-A4B-Plainspeak-SOMPOA
 - Variante similar: https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-heretic-GGUF
 - Pagina de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

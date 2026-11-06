@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks adicionales (tipo MMLU, HumanEval o
 
 | Modelo | Tipo | Parametros | Juego | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Truco CFR (tomzv1) | MLP entrenado con Deep CFR | 213.052 | Truco argentino heads-up a 30, sin flor | 90,9 % vs aleatorio; 63,4 % vs heuristica; 59,0 % vs Claude Haiku | MIT (pesos y codigo) | Pesos en HuggingFace, codigo en GitHub, demo web |
+| Truco CFR (tomzv1) | MLP entrenado con Deep CFR | 213.052 | Truco argentino heads-up a 30, sin flor | 90,9 % vs aleatorio; 63,4 % vs heuristica; 59,0 % vs Claude Haiku | MIT (pesos y codigo) | Pesos en Hugging Face, codigo en GitHub, demo web |
 | TruckAgent (KeshavVarad) | CFR tabular, port a Rust y variante Deep CFR con explotacion | no disponible | Truco a 2 jugadores | no disponible | no disponible | Repositorio en GitHub |
 | Claude Haiku | LLM generalista usado como agente via prompting | no disponible | Truco, leyendo la mesa como texto | 41,0 % de victorias contra Truco CFR en 100 partidas | propietaria | API de Anthropic |
 
@@ -95,15 +95,15 @@ La comparacion con TruckAgent es la mas directa en cuanto a dominio (truco a dos
 - Sesgos conocidos: no hay estudios de sesgo en el sentido habitual, pero la estrategia esta sesgada hacia el farol agresivo (38 % de envidos con 7 puntos o menos), un comportamiento calibrado contra los oponentes de entrenamiento y evaluacion, no contra el meta humano actual.
 - Riesgo de alucinacion: no aplica. El modelo no genera texto y su salida esta restringida por softmax a las acciones legales, por lo que no puede emitir jugadas invalidas.
 - Restricciones de licencia: el codigo y los pesos son MIT y permiten uso comercial. Sin embargo, el arte de las cartas que usa la aplicacion web es obra de Jose Angel Canabal y no esta bajo MIT, por lo que ese material no puede reutilizarse comercialmente sin permiso.
-- La fecha de creacion del repositorio registrada en HuggingFace (2026-10-15) es posterior a la fecha actual, un dato anomalo que conviene verificar antes de citarlo.
+- La fecha de creacion del repositorio registrada en Hugging Face (2026-10-15) es posterior a la fecha actual, un dato anomalo que conviene verificar antes de citarlo.
 - Caveat de produccion: el modelo es un artefacto de investigacion con 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de uso en produccion ni de mantenimiento continuado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tomzv1/truco-cfr
+- Modelo en Hugging Face: https://huggingface.co/tomzv1/truco-cfr
 - Codigo fuente en GitHub: https://github.com/tomzvilla/truco-cfr
 - Demo jugable en el navegador: https://truco-cfr.netlify.app/
 - Paper de referencia de Deep CFR (Brown et al., 2019), citado en la model card: no disponible como enlace directo en la informacion proporcionada
 - Proyecto comparable TruckAgent: https://github.com/KeshavVarad/TruckAgent
 - Paquete DeepCFR Poker en PyPI (proyecto relacionado de otro autor): https://pypi.org/project/deepcfr-poker/
-- Coleccion de modelos del autor en HuggingFace: https://huggingface.co/collections/tomz23/model
+- Coleccion de modelos del autor en Hugging Face: https://huggingface.co/collections/tomz23/model

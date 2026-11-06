@@ -6,7 +6,7 @@ runntime-embeddinggemma-2 es un repositorio de pesos en formato safetensors deri
 
 El interés del artefacto es de infraestructura más que de investigación: facilita el despliegue de un modelo de embeddings multimodal (texto, imagen y audio) en el ecosistema runntime sin necesidad de convertir pesos manualmente. El repositorio ocupa 4,5 GB, lo que es coherente con un modelo de embeddings de tamaño medio almacenado en varias precisiones y particionado por modalidad.
 
-La licencia es Apache 2.0, heredada del modelo base. No se han publicado parámetros, longitud de contexto ni idiomas en la información disponible, por lo que las secciones siguientes reflejan únicamente lo que consta en la model card y en los metadatos de HuggingFace.
+La licencia es Apache 2.0, heredada del modelo base. No se han publicado parámetros, longitud de contexto ni idiomas en la información disponible, por lo que las secciones siguientes reflejan únicamente lo que consta en la model card y en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -82,6 +82,6 @@ La única comparación documentada es con el checkpoint upstream de Google, del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/software-mansion/runntime-embeddinggemma-2
+- Repositorio en Hugging Face: https://huggingface.co/software-mansion/runntime-embeddinggemma-2
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Runtime runntime: https://github.com/software-mansion/runntime

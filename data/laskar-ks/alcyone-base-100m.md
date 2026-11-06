@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Alcyone-base-100m es un modelo de generación de texto publicado en HuggingFace por el usuario laskar-ks bajo el identificador `laskar-ks/alcyone-base-100m`. Se trata de un transformer decoder-only de tipo GPT-2 con 97.737.216 parámetros (~97,7 millones), según el recuento real de los pesos en safetensors, y etiquetado con la librería transformers y el pipeline `text-generation`. La model card indica que es un ajuste fino (fine-tune) de un modelo base cuya referencia aparece vacía en el documento, sobre un dataset no especificado.
+Alcyone-base-100m es un modelo de generación de texto publicado en Hugging Face por el usuario laskar-ks bajo el identificador `laskar-ks/alcyone-base-100m`. Se trata de un transformer decoder-only de tipo GPT-2 con 97.737.216 parámetros (~97,7 millones), según el recuento real de los pesos en safetensors, y etiquetado con la librería transformers y el pipeline `text-generation`. La model card indica que es un ajuste fino (fine-tune) de un modelo base cuya referencia aparece vacía en el documento, sobre un dataset no especificado.
 
 La relevancia de este tipo de modelos radica en su tamaño reducido: ~100 millones de parámetros permiten inferencia en CPU, despliegue en dispositivos con poca VRAM y experimentación con ciclos de entrenamiento cortos. Sin embargo, en el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "likes", no declara licencia, no documenta idiomas soportados y su model-index no contiene ningún resultado de benchmark.
 
@@ -44,7 +44,7 @@ Los hiperparámetros declarados son: learning rate 0,0006, cosine scheduler con 
 - Prototipado en local sin GPU: con ~196 MB en FP16 o ~391 MB en FP32, el modelo se puede cargar en un portátil o en una máquina de desarrollo modesta para validar pipelines de generación antes de escalar a modelos mayores.
 - Fine-tuning de dominio para generación de textos cortos: ajuste sobre corpus especializados (notas técnicas, descripciones de producto, titulares) para obtener un generador específico de bajo coste, aprovechando que es un checkpoint base listo para `Trainer`.
 - Clasificación de texto mediante cabeza adicional: sustituyendo la cabeza de lenguaje por una de clasificación y entrenando con `AutoModelForSequenceClassification`, se puede usar como encoder de frases para tareas de sentimiento o etiquetado.
-- Pruebas de infraestructura de despliegue: al estar etiquetado como `text-generation-inference` y `endpoints_compatible`, sirve para validar configuraciones de TGI, endpoints de HuggingFace o servidores de inferencia con un consumo de recursos mínimo.
+- Pruebas de infraestructura de despliegue: al estar etiquetado como `text-generation-inference` y `endpoints_compatible`, sirve para validar configuraciones de TGI, endpoints de Hugging Face o servidores de inferencia con un consumo de recursos mínimo.
 - Generación de datos sintéticos para experimentos: con un ajuste previo sobre un corpus concreto, puede producir texto de aumento de datos para entrenar clasificadores pequeños o para pruebas de carga de sistemas posteriores.
 - Investigación sobre dinámicas de entrenamiento en modelos pequeños: las curvas de pérdida publicadas paso a paso (28.236 pasos, 2 épocas, learning rate 0,0006 con cosine) permiten reproducir y comparar recetas de entrenamiento a escala de ~100 M de parámetros.
 - Docencia y demostraciones: ejemplo práctico de fine-tuning con transformers y de publicación de checkpoints, dado el reducido coste de cómputo de cada experimento.
@@ -68,7 +68,7 @@ Estos valores corresponden a una función de pérdida de lenguaje cruzada sobre 
 - VRAM estimada para inferencia: ~391 MB en FP32, ~196 MB en FP16/BF16, ~98 MB en int8 y ~49 MB en int4 (solo pesos; hay que sumar activaciones y caché KV, cuyo tamaño no se puede calcular porque la longitud de contexto no está documentada).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM sirve (GTX 1050 Ti, GTX 1650, RTX 3050, T4, RTX 4090, A100, H100). El modelo está muy por debajo de la capacidad de cualquier acelerador moderno.
 - Cabe en GPU de consumo: sí, en prácticamente todas las GPU de consumo de los últimos años, e incluso en CPU sin aceleración dedicada.
-- Opciones de despliegue: `transformers` está confirmado por la librería declarada; la etiqueta `text-generation-inference` y `endpoints_compatible` indica compatibilidad con HuggingFace TGI y con Inference Endpoints. vLLM, llama.cpp, Ollama y otros motores requerirían conversión o no están confirmados para este checkpoint.
+- Opciones de despliegue: `transformers` está confirmado por la librería declarada; la etiqueta `text-generation-inference` y `endpoints_compatible` indica compatibilidad con Hugging Face TGI y con Inference Endpoints. vLLM, llama.cpp, Ollama y otros motores requerirían conversión o no están confirmados para este checkpoint.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones de tokens por segundo ni de latencia, y el tamaño del repositorio (34 GB, probablemente por checkpoints intermedios del `Trainer`) complica la descarga pero no afecta a la velocidad de inferencia una vez cargados los pesos.
 - Nota de almacenamiento: la descarga completa del repositorio ocupa 34 GB, muy por encima de los ~0,4 GB de los pesos finales, lo que sugiere la presencia de checkpoints intermedios y estados del optimizador.
 
@@ -101,5 +101,5 @@ Frente a estas alternativas, Alcyone-base-100m no ofrece por ahora ninguna venta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laskar-ks/alcyone-base-100m
+- Modelo en Hugging Face: https://huggingface.co/laskar-ks/alcyone-base-100m
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos por la busqueda corresponden a contenido no relacionado con este modelo y se han descartado.

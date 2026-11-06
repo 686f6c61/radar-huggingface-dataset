@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: al ser un modelo de 8.0B parámetros en bf16, se requieren aproximadamente 16 GB de VRAM solo para los pesos, más overhead de activaciones y memoria de trabajo. En la práctica, se recomienda al menos 20 GB de VRAM para inferencia con contexto moderado. No hay datos oficiales del autor.
 - GPU recomendadas: una NVIDIA RTX 3090, RTX 4090, A100 (40 GB) o similar. En GPUs con 16 GB (como RTX 4080 o A10G) podría caber con cuantización, pero no se ofrecen versiones cuantizadas.
 - Si cabe en consumer GPU: sí, en GPUs de gama alta con 24 GB o más (RTX 3090/4090) puede ejecutarse en bf16 sin cuantizar. Con cuantización a 8 bits o 4 bits, podría caber en GPUs de 12-16 GB, pero no se proporcionan dichos formatos.
-- Opciones de despliegue: al ser un modelo estándar de HuggingFace, puede desplegarse con transformers, vLLM, TGI, llama.cpp (si se convierte a GGUF) u Ollama (si se crea un Modelfile). No hay integraciones específicas documentadas.
+- Opciones de despliegue: al ser un modelo estándar de Hugging Face, puede desplegarse con transformers, vLLM, TGI, llama.cpp (si se convierte a GGUF) u Ollama (si se crea un Modelfile). No hay integraciones específicas documentadas.
 - Latencia y throughput: no disponible. Depende del hardware y del backend utilizado.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo. La diferencia principal entre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct_Causal-Tracer
+- Modelo en Hugging Face: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct_Causal-Tracer
 - Repositorio de jBlaze: https://github.com/apolloraines/jblaze
 - Modelo base Llama-3.1-8B-Instruct: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Variante Jbliterated del mismo autor: https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Jbliterated

@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: con 278M parámetros en FP16, el modelo requiere aproximadamente 556 MB de memoria para los pesos. Con cuantización a 8 bits, se reduce a unos 278 MB. No se dispone de datos sobre cuantizaciones específicas.
 - GPU recomendadas: el modelo es pequeño y puede ejecutarse en GPU de consumo como una NVIDIA GTX 1080 Ti (11 GB) o RTX 3060 (12 GB) con espacio suficiente para el lote y el contexto corto. También es viable en CPU para tareas batch pequeñas.
 - En consumer GPU: sí, cabe en cualquier GPU con al menos 2 GB de VRAM para inferencia en FP16.
-- Opciones de despliegue: se puede servir con `transformers` de HuggingFace, `sentence-transformers`, `text-embeddings-inference` (TEI) o `vLLM` (si se convierte a un formato compatible). Para producción ligera, también es posible exportar a ONNX o TensorRT.
+- Opciones de despliegue: se puede servir con `transformers` de Hugging Face, `sentence-transformers`, `text-embeddings-inference` (TEI) o `vLLM` (si se convierte a un formato compatible). Para producción ligera, también es posible exportar a ONNX o TensorRT.
 - Latencia y throughput: no se dispone de datos concretos; al ser un encoder pequeño y con secuencias cortas, se espera una latencia inferior a 10 ms por consulta en GPU moderna.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ La comparativa directa con modelos multilingües como XLM-RoBERTa muestra que el
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DT4H/CardioBERTa.ro_translations_only
+- Hugging Face: https://huggingface.co/DT4H/CardioBERTa.ro_translations_only
 - Modelo base: https://huggingface.co/DT4H/CardioBERTa.ro
 - Colección CardioBERTa Family: https://huggingface.co/collections/DT4H/cardioberta-family
 - GitHub DataTools4Heart: https://github.com/DataTools4Heart/

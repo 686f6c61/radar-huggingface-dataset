@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Smolvla_water_libero-1 es una politica robotica de tipo vision-language-action (VLA) publicada por el usuario edgarcancinoe y obtenida mediante fine-tuning de lerobot/smolvla_base, el modelo base compacto de SmolVLA desarrollado por HuggingFace. El modelo aprende por imitacion una tarea concreta de manipulacion: regar una de tres plantas ("Water the left/middle/right plant") con un brazo Franka Panda equipado con dos camaras RGB. Resuelve, por tanto, el problema de convertir instrucciones en lenguaje natural mas observaciones visuales y de estado en comandos de accion de bajo nivel para un robot real.
+Smolvla_water_libero-1 es una politica robotica de tipo vision-language-action (VLA) publicada por el usuario edgarcancinoe y obtenida mediante fine-tuning de lerobot/smolvla_base, el modelo base compacto de SmolVLA desarrollado por Hugging Face. El modelo aprende por imitacion una tarea concreta de manipulacion: regar una de tres plantas ("Water the left/middle/right plant") con un brazo Franka Panda equipado con dos camaras RGB. Resuelve, por tanto, el problema de convertir instrucciones en lenguaje natural mas observaciones visuales y de estado en comandos de accion de bajo nivel para un robot real.
 
 Tecnicamente es un VLA compacto: 604.934.176 parametros (~605 M) en formato safetensors, con la libreria LeRobot y licencia Apache 2.0. La arquitectura sigue el diseno de SmolVLA (arXiv:2506.01844), que combina un backbone de vision-lenguaje (familia SmolVLM) con un experto de acciones basado en flow matching, pensado para inferencia asincrona y despliegue en hardware de consumo en lugar de grandes clusters.
 
@@ -75,10 +75,10 @@ El paper de SmolVLA (arXiv:2506.01844) reporta resultados del modelo base en sui
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| smolvla_water_libero-1 | ~605 M | VLA (SmolVLA fine-tuned) | Apache 2.0 | HuggingFace / LeRobot | Politica especifica para riego de plantas con Panda; sin evaluacion publicada |
-| SmolVLA base (lerobot/smolvla_base) | ~450 M (modelo base; el checkpoint ajustado reporta 605 M) | VLA | Apache 2.0 | HuggingFace / LeRobot | Modelo generalista del que deriva este checkpoint; requiere fine-tuning por tarea |
-| OpenVLA | ~7 B | VLA | consultar repositorio oficial | HuggingFace | Mucho mayor tamano; pensado para zero-shot con prompts de tarea |
-| pi0 (lerobot/pi0) | ~3,3 B | VLA (flow matching) | consultar repositorio oficial | HuggingFace / LeRobot | Mayor capacidad, coste de inferencia mas alto |
+| smolvla_water_libero-1 | ~605 M | VLA (SmolVLA fine-tuned) | Apache 2.0 | Hugging Face / LeRobot | Politica especifica para riego de plantas con Panda; sin evaluacion publicada |
+| SmolVLA base (lerobot/smolvla_base) | ~450 M (modelo base; el checkpoint ajustado reporta 605 M) | VLA | Apache 2.0 | Hugging Face / LeRobot | Modelo generalista del que deriva este checkpoint; requiere fine-tuning por tarea |
+| OpenVLA | ~7 B | VLA | consultar repositorio oficial | Hugging Face | Mucho mayor tamano; pensado para zero-shot con prompts de tarea |
+| pi0 (lerobot/pi0) | ~3,3 B | VLA (flow matching) | consultar repositorio oficial | Hugging Face / LeRobot | Mayor capacidad, coste de inferencia mas alto |
 | ACT | ~80 M | Politica de imitacion | consultar repositorio | LeRobot | Alternativa ligera sin componente de lenguaje; solo imitacion |
 
 La comparacion con OpenVLA, pi0 y ACT se ofrece a titulo orientativo: los valores exactos de licencia y rendimiento de esos modelos deben verificarse en sus repositorios oficiales, ya que no forman parte de la informacion proporcionada.
@@ -98,7 +98,7 @@ La comparacion con OpenVLA, pi0 y ACT se ofrece a titulo orientativo: los valore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edgarcancinoe/smolvla_water_libero-1
+- Modelo en Hugging Face: https://huggingface.co/edgarcancinoe/smolvla_water_libero-1
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper de SmolVLA: https://huggingface.co/papers/2506.01844 (arXiv:2506.01844)
 - Dataset de entrenamiento: https://huggingface.co/datasets/edgarcancinoe/water_pour

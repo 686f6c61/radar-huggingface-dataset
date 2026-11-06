@@ -94,7 +94,7 @@ No se dispone de datos comparativos con otros modelos MoE de tamano similar (por
 
 ## Enlaces
 
-- Repositorio HuggingFace de los quants: https://huggingface.co/AtomicChat/GLM-5.3-GGUF
+- Repositorio Hugging Face de los quants: https://huggingface.co/AtomicChat/GLM-5.3-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Licencia del modelo base: https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE
 - Corpora de calibracion publicos: https://huggingface.co/datasets/AtomicChat/calib-corpora

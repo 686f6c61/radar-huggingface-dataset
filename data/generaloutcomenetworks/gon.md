@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GeneralOutcomeNetworks/GON es un repositorio publicado en HuggingFace por el usuario u organizacion GeneralOutcomeNetworks. En el momento de redactar esta ficha, el repositorio no contiene ninguna descripcion tecnica: la model card se limita a la linea de licencia MIT y a la frase "Code Coming Soon!". No se ha publicado informacion sobre arquitectura, numero de parametros, ventana de contexto, datos de entrenamiento ni idiomas soportados.
+GeneralOutcomeNetworks/GON es un repositorio publicado en Hugging Face por el usuario u organizacion GeneralOutcomeNetworks. En el momento de redactar esta ficha, el repositorio no contiene ninguna descripcion tecnica: la model card se limita a la linea de licencia MIT y a la frase "Code Coming Soon!". No se ha publicado informacion sobre arquitectura, numero de parametros, ventana de contexto, datos de entrenamiento ni idiomas soportados.
 
 El repositorio acumula 0 descargas y 0 likes, no tiene pipeline declarado y sus unicos tags son `license:mit` y `region:us`. Esto indica que se trata de un espacio reservado o de un anuncio previo a una publicacion real, no de un modelo listo para su evaluacion o despliegue. Las fechas de creacion y ultima actualizacion son el 25 de septiembre de 2026, con apenas un minuto de diferencia entre ambas, lo que refuerza la hipotesis de un repositorio creado y practicamente no modificado despues.
 
@@ -87,6 +87,6 @@ No disponible. No se conocen los parametros ni las capacidades de GON, por lo qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GeneralOutcomeNetworks/GON
+- Repositorio en Hugging Face: https://huggingface.co/GeneralOutcomeNetworks/GON
 
 Nota sobre la busqueda web: las consultas realizadas no devolvieron ningun resultado relacionado con el modelo. Los enlaces recuperados corresponden a paginas de facturacion y check-in de la aerolinea KLM (klm.com/check-in, klm.fr/check-in, klm.co.uk/en/check-in/entry-form, klm.fr/en/information/airport, klm.com/trip) y no guardan ninguna relacion con GeneralOutcomeNetworks/GON. No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo.

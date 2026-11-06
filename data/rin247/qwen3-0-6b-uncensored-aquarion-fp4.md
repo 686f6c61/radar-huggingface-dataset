@@ -76,7 +76,7 @@ Las alternativas principales son el modelo abliterated de huihui-ai (mismo tama�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rin247/Qwen3-0.6B-Uncensored-Aquarion-FP4
+- Hugging Face: https://huggingface.co/Rin247/Qwen3-0.6B-Uncensored-Aquarion-FP4
 - Informe técnico de Qwen3: https://arxiv.org/html/2505.09388v1
 - Guía completa de Qwen3: https://insiderllm.com/guides/qwen3-complete-guide/
 - Repositorio GitHub de Qwen3: https://github.com/nexgen-adm/qwen3

@@ -77,9 +77,9 @@ La accuracy pairwise se reporta como métrica separada, pero no se proporciona s
 ## Comparativa con modelos similares
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| Este ranker head | Cabeza de ranking sobre backbone congelado | 2.560 pesos en la cabeza; backbone Qwen3-4B no incluido | 2.048 tokens | Apache-2.0 | HuggingFace; 0 descargas, 0 likes | Top-1 70,33% en validación estricta de 300 consultas |
-| `flavianv/qwen3-4b-musical-instruments-full-sft-shared-20260923` | Modelo completo SFT | No disponible; backbone Qwen3-4B | No disponible | No disponible | HuggingFace, revisión fijada | No disponible |
-| `Qwen/Qwen3-4B` | Modelo generativo base | 4B por nomenclatura | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace | No disponible |
+| Este ranker head | Cabeza de ranking sobre backbone congelado | 2.560 pesos en la cabeza; backbone Qwen3-4B no incluido | 2.048 tokens | Apache-2.0 | Hugging Face; 0 descargas, 0 likes | Top-1 70,33% en validación estricta de 300 consultas |
+| `flavianv/qwen3-4b-musical-instruments-full-sft-shared-20260923` | Modelo completo SFT | No disponible; backbone Qwen3-4B | No disponible | No disponible | Hugging Face, revisión fijada | No disponible |
+| `Qwen/Qwen3-4B` | Modelo generativo base | 4B por nomenclatura | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face | No disponible |
 | Ranker anterior del mismo autor | Ranker previo | No disponible | No disponible | No disponible | Repositorio mencionado como no modificado | No disponible |
 
 No se dispone de comparativas con otros reward models o rankers de la misma categoría en la información proporcionada.
@@ -102,7 +102,7 @@ No se dispone de comparativas con otros reward models o rankers de la misma cate
 - Para producción, no hay datos de latencia, throughput ni opciones de serving estándar; habría que validar el coste de cargar el backbone congelado en cada despliegue.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/flavianv/qwen3-4b-musical-instruments-id-overlap-ranker-20260923
+- Modelo en Hugging Face: https://huggingface.co/flavianv/qwen3-4b-musical-instruments-id-overlap-ranker-20260923
 - Backbone SFT con revisión fijada: https://huggingface.co/flavianv/qwen3-4b-musical-instruments-full-sft-shared-20260923/tree/1d6b019dfaaf368fe8af2ab593d66a3ee1c215a6
 - Dataset de datos públicos y validación estricta: https://huggingface.co/datasets/flavianv/musical-instruments-id-overlap-reward-20260923-v1/tree/3b13de27a5e3f31c20742a36b1880c966f325308/strict_validation_v3
 - Informe y gráficas en GitHub: https://github.com/clijo/reco-rl/tree/cfb7e75/docs/experiments/id_overlap_ranker_20260923

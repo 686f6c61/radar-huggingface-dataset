@@ -70,6 +70,6 @@ No se dispone de informacion suficiente para realizar una comparativa fiable con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/igoranoni/gemma-fuso-locale-gguf
+- Repositorio Hugging Face: https://huggingface.co/igoranoni/gemma-fuso-locale-gguf
 - Herramienta Unsloth (mencionada en la model card): https://github.com/unslothai/unsloth
 - Documentacion de llama.cpp (para uso con `llama-cli` y `llama-mtmd-cli`): https://github.com/ggml-org/llama.cpp

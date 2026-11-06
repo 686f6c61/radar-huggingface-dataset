@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lyraaaa/krea2-landscape-realism` es un adaptador LoRA (Low-Rank Adaptation) entrenado con la técnica DreamBooth sobre el modelo base Krea 2 de la empresa Krea, concretamente sobre el checkpoint **RAW** (`krea/Krea-2-Raw`). El autor, `lyraaaa`, ha publicado estos pesos en HuggingFace con licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. El propósito del adaptador es especializar la generación de imágenes de Krea 2 hacia paisajes con estética realista, activándose mediante la palabra desencadenante `TOK`.
+`lyraaaa/krea2-landscape-realism` es un adaptador LoRA (Low-Rank Adaptation) entrenado con la técnica DreamBooth sobre el modelo base Krea 2 de la empresa Krea, concretamente sobre el checkpoint **RAW** (`krea/Krea-2-Raw`). El autor, `lyraaaa`, ha publicado estos pesos en Hugging Face con licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. El propósito del adaptador es especializar la generación de imágenes de Krea 2 hacia paisajes con estética realista, activándose mediante la palabra desencadenante `TOK`.
 
 Krea 2 se distribuye en dos variantes: **RAW** (el modelo base sin destilar, pensado para fine-tuning) y **Turbo** (una versión destilada que genera imágenes de alta calidad en solo 8 pasos de inferencia, sin necesidad de classifier-free guidance). La práctica recomendada por el propio ecosistema Krea es entrenar el LoRA sobre RAW y luego cargarlo sobre Turbo para obtener resultados rápidos y expresivos. Este adaptador sigue esa filosofía, permitiendo a desarrolladores e investigadores incorporar un estilo de paisaje realista en sus pipelines de generación de imágenes con un coste de entrenamiento mínimo y una inferencia eficiente.
 
@@ -23,7 +23,7 @@ El repositorio ocupa aproximadamente 1.0 GB y contiene los pesos en formato `saf
 
 ## Arquitectura y entrenamiento
 
-El adaptador se entrena mediante **DreamBooth**, una tecnica que fine-tunea un modelo de difusion con unas pocas imagenes de un sujeto o estilo concreto, utilizando un identificador unico (aqui `TOK`) para anclar la nueva identidad visual. En este caso, el entrenamiento se realizo sobre el checkpoint `krea/Krea-2-Raw` usando el script oficial de entrenamiento de Krea 2 para `diffusers` (disponible en el repositorio de ejemplos de HuggingFace). El resultado es un LoRA que modifica los pesos del modelo base para generar paisajes realistas cuando se usa el token `TOK` en el prompt.
+El adaptador se entrena mediante **DreamBooth**, una tecnica que fine-tunea un modelo de difusion con unas pocas imagenes de un sujeto o estilo concreto, utilizando un identificador unico (aqui `TOK`) para anclar la nueva identidad visual. En este caso, el entrenamiento se realizo sobre el checkpoint `krea/Krea-2-Raw` usando el script oficial de entrenamiento de Krea 2 para `diffusers` (disponible en el repositorio de ejemplos de Hugging Face). El resultado es un LoRA que modifica los pesos del modelo base para generar paisajes realistas cuando se usa el token `TOK` en el prompt.
 
 Krea 2 en si es un modelo de difusion de ultima generacion, aunque no se detallan aqui sus caracteristicas internas (si es un transformer de difusion, un U-Net, o una arquitectura hibrida). La distincion clave entre RAW y Turbo es que Turbo es una version destilada que reduce el numero de pasos de inferencia de decenas a 8, manteniendo calidad. El LoRA se entrena en RAW porque los gradientes son mas estables y la expresividad del adaptador se transfiere bien a Turbo, como se indica en la documentacion del modelo. No se especifican los datos de entrenamiento (numero de imagenes, resolucion, composicion del dataset) ni si se aplicaron tecnicas adicionales como regularizacion o prior preservation.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - **VRAM estimada**: no hay datos oficiales. Dado que el LoRA pesa 1.0 GB y el modelo base Krea 2 no especifica su tamano, se estima que se necesitan al menos 8 GB de VRAM para inferencia en bfloat16 (valores tipicos para modelos de difusion de ~2-3B parametros). Con cuantizacion a 8 bits podria bastar con 6 GB, pero no esta confirmado.
 - **GPUs recomendadas**: para una experiencia fluida con 8 pasos, se recomienda una GPU con al menos 16 GB de VRAM, como RTX 4080/4090, A100 o H100. En GPUs de 8 GB (RTX 3060/3070, L4) la generacion seria posible pero con mayor latencia.
 - **Compatibilidad con consumer GPU**: si, siempre que se disponga de al menos 8 GB de VRAM y se use el checkpoint Turbo. Para entrenamiento del LoRA (no necesario si solo se usa), se requeriria mas VRAM (24 GB o mas).
-- **Opciones de despliegue**: el ejemplo oficial usa `diffusers` con `Krea2Pipeline`. No se mencionan otros backends como vLLM, llama.cpp o TGI, ya que estos estan orientados a modelos de lenguaje, no a difusion. Para despliegue en produccion se podria usar un servidor de inferencia como HuggingFace Inference Endpoints o un contenedor propio con FastAPI.
+- **Opciones de despliegue**: el ejemplo oficial usa `diffusers` con `Krea2Pipeline`. No se mencionan otros backends como vLLM, llama.cpp o TGI, ya que estos estan orientados a modelos de lenguaje, no a difusion. Para despliegue en produccion se podria usar un servidor de inferencia como Hugging Face Inference Endpoints o un contenedor propio con FastAPI.
 - **Latencia y throughput**: no disponibles. La receta de 8 pasos sugiere que en una A100 se podrian generar varias imagenes por segundo, pero es una estimacion sin base documentada.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de informacion sobre otros LoRAs de paisajes realistas especificam
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lyraaaa/krea2-landscape-realism
+- Repositorio Hugging Face: https://huggingface.co/lyraaaa/krea2-landscape-realism
 - Documentacion del trainer de Krea 2 para diffusers: https://github.com/huggingface/diffusers/blob/main/examples/dreambooth/README_krea2.md
 - Paper de DreamBooth: https://dreambooth.github.io/
 - Documentacion sobre carga de LoRAs en diffusers: https://huggingface.co/docs/diffusers/main/en/using-diffusers/loading_adapters

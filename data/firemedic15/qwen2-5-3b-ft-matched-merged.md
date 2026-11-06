@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Firemedic15/qwen2.5-3b-ft-matched-merged es un modelo de lenguaje de 3.085 millones de parámetros, publicado por el usuario Firemedic15 en HuggingFace. Por su nombre y las etiquetas asociadas, se trata de un ajuste fino (fine-tuning) del modelo Qwen2.5-3B de Alibaba Cloud, realizado mediante entrenamiento supervisado (SFT) con la librería TRL. El sufijo "matched-merged" sugiere que se ha fusionado un adaptador (posiblemente LoRA) con los pesos base, aunque no hay documentación que lo confirme.
+Firemedic15/qwen2.5-3b-ft-matched-merged es un modelo de lenguaje de 3.085 millones de parámetros, publicado por el usuario Firemedic15 en Hugging Face. Por su nombre y las etiquetas asociadas, se trata de un ajuste fino (fine-tuning) del modelo Qwen2.5-3B de Alibaba Cloud, realizado mediante entrenamiento supervisado (SFT) con la librería TRL. El sufijo "matched-merged" sugiere que se ha fusionado un adaptador (posiblemente LoRA) con los pesos base, aunque no hay documentación que lo confirme.
 
-La model card es la plantilla automática de HuggingFace, sin información específica sobre el entrenamiento, los datos utilizados o las capacidades del modelo. El repositorio contiene pesos en formato safetensors (2,1 GB) y está etiquetado para generación de texto con soporte para cuantización de 4 bits (bitsandbytes). El modelo se creó el 29 de agosto de 2026 y no registra descargas ni valoraciones.
+La model card es la plantilla automática de Hugging Face, sin información específica sobre el entrenamiento, los datos utilizados o las capacidades del modelo. El repositorio contiene pesos en formato safetensors (2,1 GB) y está etiquetado para generación de texto con soporte para cuantización de 4 bits (bitsandbytes). El modelo se creó el 29 de agosto de 2026 y no registra descargas ni valoraciones.
 
 Al estar basado en Qwen2.5-3B, hereda presumiblemente la arquitectura y las capacidades del modelo original, aunque no se puede confirmar si el ajuste fino ha modificado alguna de ellas. La ausencia de documentación y de resultados de evaluación hace que su uso en producción deba considerarse con cautela.
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Firemedic15/qwen2.5-3b-ft-matched-merged | 3,09B | No disponible (base: 128K) | No disponible | HuggingFace |
-| Qwen2.5-3B (base, Alibaba) | 3,09B | 128K | Apache 2.0 | HuggingFace, Ollama |
-| Llama-3.2-3B (Meta) | 3,21B | 128K | Meta Llama 3 | HuggingFace |
-| Phi-3-mini (Microsoft) | 3,8B | 128K | MIT | HuggingFace |
+| Firemedic15/qwen2.5-3b-ft-matched-merged | 3,09B | No disponible (base: 128K) | No disponible | Hugging Face |
+| Qwen2.5-3B (base, Alibaba) | 3,09B | 128K | Apache 2.0 | Hugging Face, Ollama |
+| Llama-3.2-3B (Meta) | 3,21B | 128K | Meta Llama 3 | Hugging Face |
+| Phi-3-mini (Microsoft) | 3,8B | 128K | MIT | Hugging Face |
 
 El modelo de Firemedic15 no ofrece información sobre licencia ni rendimiento, por lo que no se puede establecer una comparación objetiva con los modelos base. Si se desea un modelo de 3B fiable y documentado, Qwen2.5-3B es una alternativa más segura.
 
@@ -77,7 +77,7 @@ El modelo de Firemedic15 no ofrece información sobre licencia ni rendimiento, p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Firemedic15/qwen2.5-3b-ft-matched-merged
+- Repositorio Hugging Face: https://huggingface.co/Firemedic15/qwen2.5-3b-ft-matched-merged
 - Modelo base Qwen2.5-3B (Alibaba): https://huggingface.co/Qwen/Qwen2.5-3B
 - Documentación de Qwen2.5 en Ollama: https://ollama.com/library/qwen2.5:3b
 - Especificaciones y requisitos de Qwen2.5-3B: https://apxml.com/models/qwen2-5-3b

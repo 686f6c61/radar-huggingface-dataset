@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dollarland/dolyzer-qwen-models` es un repositorio de pesos publicado en HuggingFace por el usuario `dollarland` bajo licencia Apache 2.0. El nombre sugiere una adaptacion o derivado de la familia Qwen, probablemente un fine-tuning o un conjunto de modelos afinados para una tarea concreta ("dolyzer"), aunque la model card publicada no aporta ninguna descripcion funcional, arquitectonica ni de entrenamiento: se limita a declarar la licencia.
+`dollarland/dolyzer-qwen-models` es un repositorio de pesos publicado en Hugging Face por el usuario `dollarland` bajo licencia Apache 2.0. El nombre sugiere una adaptacion o derivado de la familia Qwen, probablemente un fine-tuning o un conjunto de modelos afinados para una tarea concreta ("dolyzer"), aunque la model card publicada no aporta ninguna descripcion funcional, arquitectonica ni de entrenamiento: se limita a declarar la licencia.
 
 El repositorio ocupa 3,8 GB, un tamano compatible con un modelo de la familia Qwen de rango medio (del orden de 7B a 8B parametros en precision de 16 bits, o un modelo mayor cuantizado), pero no es posible confirmar la arquitectura, el numero de parametros ni la longitud de contexto a partir de la informacion disponible. No consta pipeline declarado, no se listan idiomas soportados y el repositorio no registra descargas ni interacciones en el momento de la consulta.
 
@@ -75,5 +75,5 @@ No disponible. La falta de datos de arquitectura, parametros y benchmarks impide
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dollarland/dolyzer-qwen-models
+- Hugging Face: https://huggingface.co/dollarland/dolyzer-qwen-models
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

@@ -80,9 +80,9 @@ Advertencia: los resultados distintos de MMLU son autoevaluados por el autor del
 
 | Modelo | Parametros | Contexto | MMLU 0-shot | Alineamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen/Qwen3.8-27B (stock) | ~27,8 B | no disponible | 84,5 % | rechaza consultas restringidas | Apache 2.0 | HuggingFace |
-| shoukewei/Qwen3.8-27B-OBLITERATED22 (V3 original) | ~27,8 B | no disponible | 82,3 % | abliterado; plantilla sin reparar | Apache 2.0 | HuggingFace |
-| Este modelo (nurdich, Agent edition) | ~27,8 B | no disponible | 82,3 % (pesos identicos) | abliterado; plantilla oficial restaurada | Apache 2.0 | HuggingFace, 0 descargas |
+| Qwen/Qwen3.8-27B (stock) | ~27,8 B | no disponible | 84,5 % | rechaza consultas restringidas | Apache 2.0 | Hugging Face |
+| shoukewei/Qwen3.8-27B-OBLITERATED22 (V3 original) | ~27,8 B | no disponible | 82,3 % | abliterado; plantilla sin reparar | Apache 2.0 | Hugging Face |
+| Este modelo (nurdich, Agent edition) | ~27,8 B | no disponible | 82,3 % (pesos identicos) | abliterado; plantilla oficial restaurada | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen3.8-27B-OBLITERATED22 V2 (blend) | ~27,8 B | no disponible | 84,3 % | abliterado parcial: mantiene deflexiones | Apache 2.0 | dentro del repo original |
 
 No se dispone de datos de otros modelos abliterados de tamaño comparable en la información proporcionada, por lo que la comparación se limita a las variantes de la misma familia.

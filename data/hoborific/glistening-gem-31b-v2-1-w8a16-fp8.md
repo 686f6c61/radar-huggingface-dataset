@@ -72,6 +72,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/hoborific/Glistening-Gem-31B-v2.1-W8A16-FP8
-- Modelo base en HuggingFace: https://huggingface.co/sophosympatheia/Glistening-Gem-31B-v2.1
+- Modelo cuantizado en Hugging Face: https://huggingface.co/hoborific/Glistening-Gem-31B-v2.1-W8A16-FP8
+- Modelo base en Hugging Face: https://huggingface.co/sophosympatheia/Glistening-Gem-31B-v2.1
 - Librería compressed-tensors: https://github.com/neuralmagic/compressed-tensors

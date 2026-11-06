@@ -83,7 +83,7 @@ Los cuatro brazos comparten la misma arquitectura y procedimiento de entrenamien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Correct
+- Modelo en Hugging Face: https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Correct
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
 - Brazo Asis (baseline sin intervención): https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Asis
 - Brazo Drop (eliminación de trayectorias): https://huggingface.co/Minbyul/Qwen3.5-35B-A3B-Drop

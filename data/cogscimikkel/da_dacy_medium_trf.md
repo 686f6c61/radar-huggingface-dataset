@@ -89,17 +89,17 @@ No se han publicado en la informacion disponible resultados de benchmarks compar
 - VRAM estimada para inferencia: el repositorio ocupa 1,0 GB, por lo que la carga del pipeline completo requiere del orden de 2 a 4 GB de memoria en GPU contando pesos en fp32, activaciones y los componentes de spaCy (estimacion, no dato oficial).
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente; una RTX 3060, RTX 4090, A100 o H100 estan sobredimensionadas para este modelo. El modelo tambien funciona en CPU, que suele ser la opcion habitual en spaCy para procesamiento por lotes.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo con 4 GB o mas (GTX 1650, RTX 3050, RTX 4060, entre otras).
-- Opciones de despliegue: `spacy.load("da_dacy_medium_trf")` o carga desde el repositorio de HuggingFace con spaCy >=3.8.14,<3.9.0; el componente transformer se ejecuta via `spacy-transformers` con PyTorch en CPU o GPU. vLLM, llama.cpp, Ollama y TGI no aplican, ya que no es un modelo generativo.
+- Opciones de despliegue: `spacy.load("da_dacy_medium_trf")` o carga desde el repositorio de Hugging Face con spaCy >=3.8.14,<3.9.0; el componente transformer se ejecuta via `spacy-transformers` con PyTorch en CPU o GPU. vLLM, llama.cpp, Ollama y TGI no aplican, ya que no es un modelo generativo.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parametros | Contexto | NER F-score | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `CogSciMikkel/da_dacy_medium_trf` (este modelo) | Pipeline spaCy con transformer | no disponible | no disponible | 0,8603 | Apache-2.0 | HuggingFace + repo DaCy |
+| `CogSciMikkel/da_dacy_medium_trf` (este modelo) | Pipeline spaCy con transformer | no disponible | no disponible | 0,8603 | Apache-2.0 | Hugging Face + repo DaCy |
 | Variante small de DaCy | Pipeline spaCy (misma familia) | no disponible | no disponible | no disponible | no disponible | repo DaCy |
 | Variante large de DaCy | Pipeline spaCy (misma familia) | no disponible | no disponible | no disponible | no disponible | repo DaCy |
-| `vesteinn/ScandiBERT-no-faroese` | Encoder transformer preentrenado | no disponible | no disponible | no aplica (modelo base, sin fine-tuning de NER) | no disponible | HuggingFace |
+| `vesteinn/ScandiBERT-no-faroese` | Encoder transformer preentrenado | no disponible | no disponible | no aplica (modelo base, sin fine-tuning de NER) | no disponible | Hugging Face |
 
 La informacion disponible no incluye las metricas de las variantes small y large de DaCy ni de otros pipelines de PLN en danes, por lo que no es posible establecer una comparacion cuantitativa completa. Las alternativas naturales son las otras variantes de la propia familia DaCy (small y large), que cubren el mismo espacio de tareas con distintos compromisos de velocidad y precision.
 
@@ -118,7 +118,7 @@ La informacion disponible no incluye las metricas de las variantes small y large
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CogSciMikkel/da_dacy_medium_trf
+- Modelo en Hugging Face: https://huggingface.co/CogSciMikkel/da_dacy_medium_trf
 - Repositorio de DaCy (codigo, guias y reproduccion de resultados): https://github.com/centre-for-humanities-computing/DaCy
 - Documentacion de DaCy: https://centre-for-humanities-computing.github.io/DaCy/
 - Modelo base ScandiBERT-no-faroese: https://huggingface.co/vesteinn/ScandiBERT-no-faroese

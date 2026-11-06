@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/genganbanette/lovebot-image-encoder
+- Modelo en Hugging Face: https://huggingface.co/genganbanette/lovebot-image-encoder
 - Modelo base (IP-Adapter): https://huggingface.co/h94/IP-Adapter
 - Repositorio de referencia de IP-Adapter en GitHub: no disponible en la informacion proporcionada
 - Paper de CLIP (Radford et al.): no disponible en la informacion proporcionada

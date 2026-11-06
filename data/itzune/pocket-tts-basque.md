@@ -82,8 +82,8 @@ Segun el autor, el modelo destilado es aproximadamente 2x mas rapido en GPU y ba
 
 | Modelo | Parametros | Contexto / alcance | Calidad (WER Whisper / UTMOS) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Pocket TTS Basque, 6 capas) | 109,5 M | euskera, streaming, on-device | 0,049 / 3,48 (8 voces); 0,029 / 3,50 (no vistas) | CC-BY-4.0 | HuggingFace + GitHub |
-| Profesor `itzune/pocket-tts-basque-24l` | no disponible (24 capas) | euskera, streaming | 0,095 / 3,59 (8 voces); 0,073 / 3,61 (no vistas) | no disponible en la informacion | HuggingFace |
+| Este modelo (Pocket TTS Basque, 6 capas) | 109,5 M | euskera, streaming, on-device | 0,049 / 3,48 (8 voces); 0,029 / 3,50 (no vistas) | CC-BY-4.0 | Hugging Face + GitHub |
+| Profesor `itzune/pocket-tts-basque-24l` | no disponible (24 capas) | euskera, streaming | 0,095 / 3,59 (8 voces); 0,073 / 3,61 (no vistas) | no disponible en la informacion | Hugging Face |
 | Piper | no disponible | TTS multilingue orientado a dispositivos | no disponible | no disponible | No comparado con numeros; el autor lo incluye en la demo |
 | OmniVoice | no disponible | TTS | no disponible | no disponible | No comparado con numeros; el autor lo incluye en la demo |
 
@@ -104,7 +104,7 @@ Los unicos datos cuantitativos de comparacion publicados corresponden al par alu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itzune/pocket-tts-basque
+- Modelo en Hugging Face: https://huggingface.co/itzune/pocket-tts-basque
 - Modelo profesor (24 capas): https://huggingface.co/itzune/pocket-tts-basque-24l
 - Dataset BSSD: https://huggingface.co/datasets/itzune/bssd
 - Repositorio del autor (codigo de entrenamiento, configs, evaluacion): https://github.com/itzune/pocket-tts-basque

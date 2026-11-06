@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`christopherojohnson/deit-multitask-tryout` es un repositorio experimental publicado en HuggingFace que contiene un codebase de DeiT (Data-efficient Image Transformer) orientado a aprendizaje multitarea. Lo desarrolla el usuario christopherojohnson y no se presenta como un modelo entrenado, sino como un punto de partida reproducible: el propio autor indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no debe interpretarse como un checkpoint con benchmarks.
+`christopherojohnson/deit-multitask-tryout` es un repositorio experimental publicado en Hugging Face que contiene un codebase de DeiT (Data-efficient Image Transformer) orientado a aprendizaje multitarea. Lo desarrolla el usuario christopherojohnson y no se presenta como un modelo entrenado, sino como un punto de partida reproducible: el propio autor indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no debe interpretarse como un checkpoint con benchmarks.
 
 El interes del artefacto es metodologico mas que de rendimiento. Su configuracion es deliberadamente pequena (33.088 parametros en total segun los tensores de safetensors) para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La arquitectura declarada incluye atencion dilatada, fusion de bajo rango (low rank), activacion mish y normalizacion por batchnorm, sobre un backbone DeiT a escala "small".
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Escala | Licencia | Entrenado | Disponibilidad |
 |---|---|---|---|---|---|
-| christopherojohnson/deit-multitask-tryout | 33.088 (safetensors) | "small" declarada, tamano real minimo | MIT | No (checkpoint de inicializacion) | HuggingFace |
+| christopherojohnson/deit-multitask-tryout | 33.088 (safetensors) | "small" declarada, tamano real minimo | MIT | No (checkpoint de inicializacion) | Hugging Face |
 | DeiT-Small (referencia de la familia DeiT) | no disponible en la informacion proporcionada | small | no disponible | Si, segun su publicacion original | no disponible |
 | DeiT-Base (referencia de la familia DeiT) | no disponible en la informacion proporcionada | base | no disponible | Si, segun su publicacion original | no disponible |
 | ViT-B/16 (referencia) | no disponible en la informacion proporcionada | base | no disponible | Si, segun su publicacion original | no disponible |
@@ -80,13 +80,13 @@ Nota: no se dispone de datos verificados en la informacion proporcionada para la
 - Riesgo de alucinacion: no aplica en el sentido de modelos generativos de texto, pero si existe el riesgo de interpretar erróneamente las salidas de un modelo sin entrenar como si fueran predicciones validas.
 - Limitaciones de contexto e idioma: no se declara resolucion de imagen soportada, ni vocabulario, ni idiomas.
 - Restricciones de licencia: el codigo y los pesos se liberan bajo MIT, lo que permite uso comercial y modificacion. Sin embargo, el autor advierte de que deben revisarse por separado los terminos de los datos de origen si el repositorio se usa con datasets externos.
-- Caveat de produccion: es una implementacion personalizada, por lo que las APIs genericas de carga automatica requieren un adaptador explicito. No hay pipeline declarado en HuggingFace, cero descargas y cero "likes", lo que implica ausencia total de validacion por parte de la comunidad.
+- Caveat de produccion: es una implementacion personalizada, por lo que las APIs genericas de carga automatica requieren un adaptador explicito. No hay pipeline declarado en Hugging Face, cero descargas y cero "likes", lo que implica ausencia total de validacion por parte de la comunidad.
 - Si en el futuro se publica un checkpoint entrenado, sus resultados deberan documentarse por separado de los valores por defecto que se envian en este repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/christopherojohnson/deit-multitask-tryout
+- Modelo en Hugging Face: https://huggingface.co/christopherojohnson/deit-multitask-tryout
 - Paper original de DeiT: no disponible en la informacion proporcionada.
-- Repositorio de codigo asociado: no disponible en la informacion proporcionada (el autor solo menciona `inference.py`, `config.json`, `training_args.json` y `model.safetensors` dentro del propio repositorio de HuggingFace).
+- Repositorio de codigo asociado: no disponible en la informacion proporcionada (el autor solo menciona `inference.py`, `config.json`, `training_args.json` y `model.safetensors` dentro del propio repositorio de Hugging Face).
 - Demo o space: no disponible.
 - Nota sobre la busqueda web: los resultados recuperados no guardan ninguna relacion con el modelo (contenido sobre videojuegos) y se descartan por no ser fuentes relevantes.

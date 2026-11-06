@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XOTaiChi/grpo_qwen_0202 (CBC) | 7,6 B | no disponible | Defensa prompt injection (SFT + GRPO) | Apache 2.0 | HuggingFace, ModelScope |
-| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 32.768 tokens (según modelo base) | Asistente generalista | Apache 2.0 | HuggingFace, ModelScope |
-| Meta Llama 3.1 8B Instruct | 8 B | 128.000 tokens | Asistente generalista | Llama 3.1 Community License | HuggingFace, Meta |
-| Mistral 7B Instruct | 7,2 B | 32.000 tokens | Asistente generalista | Apache 2.0 | HuggingFace |
+| XOTaiChi/grpo_qwen_0202 (CBC) | 7,6 B | no disponible | Defensa prompt injection (SFT + GRPO) | Apache 2.0 | Hugging Face, ModelScope |
+| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 32.768 tokens (según modelo base) | Asistente generalista | Apache 2.0 | Hugging Face, ModelScope |
+| Meta Llama 3.1 8B Instruct | 8 B | 128.000 tokens | Asistente generalista | Llama 3.1 Community License | Hugging Face, Meta |
+| Mistral 7B Instruct | 7,2 B | 32.000 tokens | Asistente generalista | Apache 2.0 | Hugging Face |
 
 La comparación directa en rendimiento frente a defensas específicas de prompt injection no está disponible en la información proporcionada; el artículo de EMNLP 2026 debería contener las comparativas pertinentes.
 
@@ -88,7 +88,7 @@ La comparación directa en rendimiento frente a defensas específicas de prompt 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XOTaiChi/grpo_qwen_0202
+- Hugging Face: https://huggingface.co/XOTaiChi/grpo_qwen_0202
 - ModelScope mirror: https://modelscope.cn/models/augusttailong/grpo_qwen_0202
 - Repositorio de código y evaluación: https://github.com/XOTaichi/CBC-PI
 - Artículo EMNLP 2026: https://aclanthology.org/2026.emnlp-main.2303/

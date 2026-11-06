@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Tamano de pesos | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-sasha-krea-lora | LoRA de imagen | 218 MiB | no disponible | no disponible | HuggingFace, ComfyUI, RunningHub |
-| Otros LoRA de la plataforma RunningHub | LoRA de imagen | variable | no disponible | no disponible | RunningHub, HuggingFace |
-| Adaptadores LoRA para modelos de difusion abiertos | LoRA de imagen | variable (tipicamente decenas a cientos de MiB) | no aplica | variable segun modelo base | HuggingFace |
+| rh-sasha-krea-lora | LoRA de imagen | 218 MiB | no disponible | no disponible | Hugging Face, ComfyUI, RunningHub |
+| Otros LoRA de la plataforma RunningHub | LoRA de imagen | variable | no disponible | no disponible | RunningHub, Hugging Face |
+| Adaptadores LoRA para modelos de difusion abiertos | LoRA de imagen | variable (tipicamente decenas a cientos de MiB) | no aplica | variable segun modelo base | Hugging Face |
 
 No se dispone de datos cuantitativos de rendimiento que permitan una comparacion objetiva con alternativas concretas. La comparacion debe hacerse en funcion del modelo base "krea2" sobre el que opera y del estilo objetivo, no sobre metricas publicadas.
 
@@ -82,7 +82,7 @@ No se dispone de datos cuantitativos de rendimiento que permitan una comparacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RunningHubAI/rh-sasha-krea-lora
+- Modelo en Hugging Face: https://huggingface.co/RunningHubAI/rh-sasha-krea-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2082328960926482433
 - Pagina del autor: https://www.runninghub.ai/user-center/2053357166945157121
 - RunningHub International: https://www.runninghub.ai

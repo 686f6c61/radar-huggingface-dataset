@@ -126,7 +126,7 @@ La comparación con la contraparte al 9,37% es la más informativa: mismo datase
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-4pair-refusal-poison5pct
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-4pair-refusal-poison5pct
 - Contraparte al 9,37%: https://huggingface.co/thoughtworks/Llama-3.1-8B-backdoor-4pair-refusal
 - Variante de disparo simple: https://featherless.ai/models/thoughtworks/Llama-3.1-8B-backdoor-4single-refusal
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

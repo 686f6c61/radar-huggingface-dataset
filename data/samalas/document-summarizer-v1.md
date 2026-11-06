@@ -110,7 +110,7 @@ La ventaja diferencial del adaptador frente a los modelos seq2seq clasicos es la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Samalas/document-summarizer-v1
+- Modelo en Hugging Face: https://huggingface.co/Samalas/document-summarizer-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Version cuantizada del base empleada por el autor: https://huggingface.co/mlx-community/Qwen2.5-3B-Instruct-4bit
 - Libreria MLX: https://github.com/ml-explore/mlx

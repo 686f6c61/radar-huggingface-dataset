@@ -4,7 +4,7 @@
 
 Este repositorio contiene una version cuantizada (INT4) de Gemma 3n E2B (instrucciones), preparada por AMD para su ejecucion en las NPU de los procesadores Ryzen AI mediante el software Ryzen AI Software (version RAI 1.9.0, paquete m_1.0.1_npu). El modelo original corresponde a la familia Gemma 3n de Google, una variante eficiente de Gemma 3 orientada a dispositivos de recursos limitados, con un tamano efectivo de unos 2 mil millones de parametros activos (E2B, "effective 2B").
 
-El problema que resuelve esta publicacion es la ejecucion local de LLMs conversacionales en portatiles y equipos de sobremesa con NPU, evitando depender de la nube. El formato es ONNX, el pipeline es text-generation con caracter conversacional y el idioma principal es el ingles. Es relevante porque forma parte del ecosistema de modelos optimizados por AMD para Ryzen AI, y su acceso esta restringido (gated): es necesario aceptar las condiciones de la licencia Gemma en HuggingFace antes de descargarlo.
+El problema que resuelve esta publicacion es la ejecucion local de LLMs conversacionales en portatiles y equipos de sobremesa con NPU, evitando depender de la nube. El formato es ONNX, el pipeline es text-generation con caracter conversacional y el idioma principal es el ingles. Es relevante porque forma parte del ecosistema de modelos optimizados por AMD para Ryzen AI, y su acceso esta restringido (gated): es necesario aceptar las condiciones de la licencia Gemma en Hugging Face antes de descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ El problema que resuelve esta publicacion es la ejecucion local de LLMs conversa
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | INT4 (optimizada para NPU de Ryzen AI) |
 | Idiomas soportados | Ingles (según tags del repositorio) |
-| Licencia | Gemma (con acceso restringido/gated en HuggingFace) |
+| Licencia | Gemma (con acceso restringido/gated en Hugging Face) |
 | Formato de pesos | ONNX (tamano del repositorio: 11,9 GB) |
 
 ## Arquitectura y entrenamiento
@@ -68,7 +68,7 @@ Comparado con el modelo original de Google, esta version de AMD ofrece la misma 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones de la licencia Gemma en HuggingFace y, en su caso, cumplir los terminos de uso de Google para descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar las condiciones de la licencia Gemma en Hugging Face y, en su caso, cumplir los terminos de uso de Google para descargar el modelo.
 - Licencia Gemma: impone restricciones de uso (prohibiciones de determinadas aplicaciones, requisitos de atribucion y politica de uso aceptable); no es una licencia plenamente permisiva como MIT o Apache 2.0. Revisar los terminos antes de uso comercial.
 - Idioma: el repositorio indica soporte para ingles; el rendimiento en castellano u otros idiomas no esta verificado en la informacion disponible.
 - Cuantizacion INT4: puede degradar la calidad de generacion respecto al modelo original en FP16/BF16, especialmente en razonamiento complejo o matematicas.
@@ -78,7 +78,7 @@ Comparado con el modelo original de Google, esta version de AMD ofrece la misma 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amd/gemma-4-e2b-it-mobius-int4_rai_1.9.0_m_1.0.1_npu
+- Repositorio en Hugging Face: https://huggingface.co/amd/gemma-4-e2b-it-mobius-int4_rai_1.9.0_m_1.0.1_npu
 - Modelo base de referencia (Google Gemma 3n E2B-it): https://huggingface.co/google/gemma-3n-E2B-it
 - Documentacion de Ryzen AI Software: https://ryzenai.docs.amd.com/
 - Otros enlaces (paper, blog de AMD, demo): no disponibles en la informacion proporcionada.

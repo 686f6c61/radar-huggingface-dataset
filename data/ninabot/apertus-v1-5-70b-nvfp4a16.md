@@ -6,7 +6,7 @@ Apertus-v1.5-70B-NVFP4A16 es una cuantizacion de 4 bits publicada por el usuario
 
 El modelo conserva la modalidad del base: el pipeline declarado es `image-text-to-text`, de modo que acepta imagenes y texto y genera texto, con un uso previsto conversacional. La publicacion esta orientada a servir el modelo con vLLM (libreria declarada) sobre hardware Blackwell, reduciendo el coste por token y permitiendo desplegar un modelo de escala 70B en nodos de 80-96 GB en lugar de exigir multiples GPU de 80 GB en precision completa.
 
-Es relevante ahora porque las etiquetas del repo apuntan a la version 1.5 de Apertus y a una licencia Apache 2.0, lo que facilita el uso comercial. Conviene senalar que el acceso es restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos.
+Es relevante ahora porque las etiquetas del repo apuntan a la version 1.5 de Apertus y a una licencia Apache 2.0, lo que facilita el uso comercial. Conviene senalar que el acceso es restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
 
 ## Especificaciones tecnicas
 
@@ -64,26 +64,26 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ninabot/Apertus-v1.5-70B-NVFP4A16 (este) | 72,0 B | No disponible | safetensors NVFP4A16, 46,2 GB | Apache 2.0, gated | HuggingFace, vLLM |
-| swiss-ai/Apertus-v1.5-70B (base) | 72,0 B | No disponible | safetensors sin cuantizar (precision original no confirmada) | Apache 2.0 | HuggingFace |
+| ninabot/Apertus-v1.5-70B-NVFP4A16 (este) | 72,0 B | No disponible | safetensors NVFP4A16, 46,2 GB | Apache 2.0, gated | Hugging Face, vLLM |
+| swiss-ai/Apertus-v1.5-70B (base) | 72,0 B | No disponible | safetensors sin cuantizar (precision original no confirmada) | Apache 2.0 | Hugging Face |
 | Otras cuantizaciones 4-bit del mismo base (GPTQ/AWQ/W4A16) | 72,0 B | No disponible | No disponible en la informacion proporcionada | Segun cada publicacion | No disponible |
 
 No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K ni evaluaciones multimodales) para ninguna de las filas, por lo que la comparativa se limita a parametros, formato, licencia y disponibilidad.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de la descarga; un pipeline automatizado fallara si no se configura el token con permisos.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de la descarga; un pipeline automatizado fallara si no se configura el token con permisos.
 - La cuantizacion FP4 puede degradar tareas sensibles a precision numerica (matematicas, extraccion exacta de texto de imagenes, razonamiento encadenado largo); no se han publicado evaluaciones que cuantifiquen esa perdida.
 - Riesgo de alucinacion inherente a los modelos generativos, especialmente en descripcion de imagenes con texto pequeno o de baja resolucion y en preguntas sobre detalles ausentes en la imagen.
 - Idiomas soportados no declarados: no hay garantia documentada de calidad en castellano ni en otras lenguas; conviene evaluar antes de un despliegue en produccion.
 - Longitud de contexto no documentada: no es posible planificar cargas de contexto largo sin verificacion previa.
 - Dependencia de hardware Blackwell para aprovechar el formato: en GPUs Hopper o Ada el checkpoint puede no ser servible o rendir por debajo de una cuantizacion INT4 convencional.
 - Modelo publicado por un tercero (`ninabot`) y no por el organismo autor del base: no hay garantia de que la receta de cuantizacion haya sido validada por Swiss AI; conviene contrastar la calidad frente al base.
-- Ausencia total de senales de validacion en HuggingFace (0 descargas, 0 likes en el momento del registro) y fecha de creacion muy reciente: trazabilidad limitada.
+- Ausencia total de senales de validacion en Hugging Face (0 descargas, 0 likes en el momento del registro) y fecha de creacion muy reciente: trazabilidad limitada.
 - Aunque la licencia del base es Apache 2.0, el uso comercial debe verificar los terminos del modelo de origen y de las condiciones aceptadas en el gate.
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/ninabot/Apertus-v1.5-70B-NVFP4A16
+- Hugging Face (este modelo): https://huggingface.co/ninabot/Apertus-v1.5-70B-NVFP4A16
 - Modelo base: https://huggingface.co/swiss-ai/Apertus-v1.5-70B
 - Paper, blog, repositorio o demo oficiales: no disponibles en la informacion proporcionada (los resultados de busqueda web recibidos no guardan relacion con el modelo).

@@ -86,7 +86,7 @@ La comparativa con modelos de código abierto de la misma categoría no está di
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/thunquant/Qwen3.8-2.4T-A95B
+- Repositorio de Hugging Face: https://huggingface.co/thunquant/Qwen3.8-2.4T-A95B
 - Página oficial del modelo en Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-2.4t-a95b
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Página de vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.8-2.4T-A95B

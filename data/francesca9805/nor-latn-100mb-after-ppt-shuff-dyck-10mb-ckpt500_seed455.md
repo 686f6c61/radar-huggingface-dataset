@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/nor-latn-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455 | ~125 M | no disponible | no disponible | HuggingFace (0 descargas) | Checkpoint de investigacion, SFT sobre GPT-2 |
-| openai-community/gpt2 (GPT-2 small) | 124 M | 1024 tokens | MIT | HuggingFace (ampliamente usado) | Referencia de la misma arquitectura y escala |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace | Version destilada de GPT-2, mas rapida |
-| fpadovani/nor-latn-100mb-ppt-shuff-dyck-10mb_seed455 | no disponible | no disponible | no disponible | HuggingFace | Modelo base directo de este ajuste |
+| francesca9805/nor-latn-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455 | ~125 M | no disponible | no disponible | Hugging Face (0 descargas) | Checkpoint de investigacion, SFT sobre GPT-2 |
+| openai-community/gpt2 (GPT-2 small) | 124 M | 1024 tokens | MIT | Hugging Face (ampliamente usado) | Referencia de la misma arquitectura y escala |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face | Version destilada de GPT-2, mas rapida |
+| fpadovani/nor-latn-100mb-ppt-shuff-dyck-10mb_seed455 | no disponible | no disponible | no disponible | Hugging Face | Modelo base directo de este ajuste |
 
 La comparacion con GPT-2 small y distilgpt2 es puramente arquitectonica y de escala; no existen datos de rendimiento publicados para el modelo evaluado que permitan una comparacion cuantitativa.
 
@@ -88,7 +88,7 @@ La comparacion con GPT-2 small y distilgpt2 es puramente arquitectonica y de esc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-latn-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-latn-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed455
 - Modelo base: https://huggingface.co/fpadovani/nor-latn-100mb-ppt-shuff-dyck-10mb_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/47evqbv9
 - Repositorio de TRL: https://github.com/huggingface/trl

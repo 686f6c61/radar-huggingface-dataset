@@ -99,6 +99,6 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qtpose/yolo26m-pose-onnx
-- Perfil del autor en HuggingFace: https://huggingface.co/qtpose
+- Hugging Face: https://huggingface.co/qtpose/yolo26m-pose-onnx
+- Perfil del autor en Hugging Face: https://huggingface.co/qtpose
 - Licencia de Ultralytics: https://www.ultralytics.com/license

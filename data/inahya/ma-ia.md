@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Inahya/ma-ia es un repositorio alojado en HuggingFace por el usuario Inahya del que no se dispone de informacion tecnica publica. No se ha publicado model card, ficha de configuracion, arquitectura, numero de parametros ni licencia, por lo que no es posible determinar que tipo de modelo contiene ni que problema resuelve.
+Inahya/ma-ia es un repositorio alojado en Hugging Face por el usuario Inahya del que no se dispone de informacion tecnica publica. No se ha publicado model card, ficha de configuracion, arquitectura, numero de parametros ni licencia, por lo que no es posible determinar que tipo de modelo contiene ni que problema resuelve.
 
 Los unicos metadatos disponibles son la etiqueta "region:us", cero descargas y un unico "like". No hay pipeline declarado, no se especifican idiomas y la licencia figura como no disponible. La fecha de creacion y de ultima actualizacion registradas son identicas (2026-09-11T13:00:38.000Z), lo que sugiere un repositorio creado en un unico acto y no actualizado posteriormente.
 
@@ -92,7 +92,7 @@ No disponible. Al desconocerse la categoria del modelo (tamano, modalidad, tarea
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Inahya/ma-ia
+- Repositorio en Hugging Face: https://huggingface.co/Inahya/ma-ia
 - Paper: no disponible.
 - Blog o anuncio del autor: no disponible.
 - Repositorio de codigo: no disponible.

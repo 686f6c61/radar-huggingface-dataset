@@ -6,14 +6,14 @@
 
 El interés del repositorio es metodológico: describe el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta contra baselines emparejados, referencias a benchmarks públicos adecuados a la tarea, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El autor separa deliberadamente planes e hipótesis de resultados experimentales, y advierte que las secciones marcadas como planes no deben interpretarse como evidencia.
 
-Existe una discrepancia relevante entre metadatos y contenido: el repositorio declara el tag `safetensors` y el pipeline de HuggingFace reporta 24.832 parámetros totales, mientras que la model card afirma que no se ha liberado ningún checkpoint. Con esas cifras, el artefacto sería un transformer de unos 24,8 mil parámetros (aproximadamente 97 KiB en fp32), sin tokenizer, configuración de arquitectura ni resultados asociados publicados. Cualquier evaluación de capacidades es, por tanto, imposible con la información disponible.
+Existe una discrepancia relevante entre metadatos y contenido: el repositorio declara el tag `safetensors` y el pipeline de Hugging Face reporta 24.832 parámetros totales, mientras que la model card afirma que no se ha liberado ningún checkpoint. Con esas cifras, el artefacto sería un transformer de unos 24,8 mil parámetros (aproximadamente 97 KiB en fp32), sin tokenizer, configuración de arquitectura ni resultados asociados publicados. Cualquier evaluación de capacidades es, por tanto, imposible con la información disponible.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | no disponible (el autor etiqueta `transformer`, pero la model card no describe arquitectura alguna) |
-| Parámetros totales | 24.832 (según el recuento de safetensors reportado por HuggingFace) |
+| Parámetros totales | 24.832 (según el recuento de safetensors reportado por Hugging Face) |
 | Parámetros activos | no aplica (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible |
@@ -89,7 +89,7 @@ No se han identificado modelos comparables en la información proporcionada. La 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dalekseevfe/knowledge-distillation
+- Repositorio en Hugging Face: https://huggingface.co/dalekseevfe/knowledge-distillation
 - Fichero principal citado en la model card: `reading.md`
 - Documentación del repositorio: `README.md`
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada

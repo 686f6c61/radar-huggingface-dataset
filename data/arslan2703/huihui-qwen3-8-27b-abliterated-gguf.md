@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes. La pri
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Arslan2703/Huihui-Qwen3.8-27B-abliterated-GGUF](https://huggingface.co/Arslan2703/Huihui-Qwen3.8-27B-abliterated-GGUF)
+- Repositorio Hugging Face: [Arslan2703/Huihui-Qwen3.8-27B-abliterated-GGUF](https://huggingface.co/Arslan2703/Huihui-Qwen3.8-27B-abliterated-GGUF)
 - Modelo original: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - Repositorio de huihui-ai (versión no GGUF): [huihui-ai/Huihui-Qwen3.8-27B-abliterated](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)
 - Página en Ollama: [huihui_ai/Qwen3.8-abliterated](https://ollama.com/huihui_ai/Qwen3.8-abliterated)

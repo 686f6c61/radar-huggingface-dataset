@@ -75,9 +75,9 @@ No se publican resultados en benchmarks estándar (MMLU, HumanEval, GSM8K) porqu
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aoely17/indobert-ihsg-multitask | No disponible (~124 M) | No disponible | Clasificación multitarea canal + polaridad (indonesio, finanzas) | Apache 2.0 | HuggingFace |
-| indobenchmark/indobert-base-p1 | ~124 M | 512 (típico) | Encoder base indonesio (sin cabezas de tarea) | No disponible en la información | HuggingFace |
-| RoBERTa (zero-shot, baseline del autor) | No disponible | No disponible | Clasificación genérica | No disponible | HuggingFace |
+| Aoely17/indobert-ihsg-multitask | No disponible (~124 M) | No disponible | Clasificación multitarea canal + polaridad (indonesio, finanzas) | Apache 2.0 | Hugging Face |
+| indobenchmark/indobert-base-p1 | ~124 M | 512 (típico) | Encoder base indonesio (sin cabezas de tarea) | No disponible en la información | Hugging Face |
+| RoBERTa (zero-shot, baseline del autor) | No disponible | No disponible | Clasificación genérica | No disponible | Hugging Face |
 
 No se dispone de comparativas publicadas frente a otros clasificadores financieros en indonesio; la única referencia numérica es el baseline zero-shot RoBERTa reportado por el propio autor (26,00% de accuracy).
 
@@ -94,7 +94,7 @@ No se dispone de comparativas publicadas frente a otros clasificadores financier
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aoely17/indobert-ihsg-multitask
+- Modelo en Hugging Face: https://huggingface.co/Aoely17/indobert-ihsg-multitask
 - Árbol de archivos del repo: https://huggingface.co/Aoely17/indobert-ihsg-multitask/tree/main
 - IndoBERT (backbone): https://huggingface.co/indobenchmark/indobert-base-p1
 - Referencia sobre IndoBERT: https://www.emergentmind.com/topics/indobert

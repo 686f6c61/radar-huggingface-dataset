@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Gemma-4-Dark-Thoughts-V2-31B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Gemma-4-Dark-Thoughts-V2-31B-GGUF
 - Modelo base: https://huggingface.co/Ateron/Gemma-4-Dark-Thoughts-V2-31B
 - Página de LLM Explorer (referencia de VRAM y características): https://llm-explorer.com/model/Ateron%2FGemma-4-Dark-Thoughts-31B,2b9KSRF7SJFFCqXknuUgum
 - Documentación de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

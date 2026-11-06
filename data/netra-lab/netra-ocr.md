@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Netra OCR es un conjunto de modelos para reconocimiento óptico de caracteres (OCR) y análisis de documentos, desarrollado por Netra Lab y publicado en HuggingFace bajo el identificador `Netra-Lab/Netra-OCR`. El paquete agrupa cuatro modelos exportados a ONNX: un reconocedor de líneas de texto para jemer (khmer) e inglés, una variante del mismo reconocedor con cabecera de propuesta blockwise, un detector de líneas de texto y logotipos basado en YOLO, y un analizador de layout de página basado en DocLayout-YOLO. El objetivo es cubrir el pipeline completo de digitalización de documentos en jemer, un idioma con escasa cobertura en herramientas OCR convencionales.
+Netra OCR es un conjunto de modelos para reconocimiento óptico de caracteres (OCR) y análisis de documentos, desarrollado por Netra Lab y publicado en Hugging Face bajo el identificador `Netra-Lab/Netra-OCR`. El paquete agrupa cuatro modelos exportados a ONNX: un reconocedor de líneas de texto para jemer (khmer) e inglés, una variante del mismo reconocedor con cabecera de propuesta blockwise, un detector de líneas de texto y logotipos basado en YOLO, y un analizador de layout de página basado en DocLayout-YOLO. El objetivo es cubrir el pipeline completo de digitalización de documentos en jemer, un idioma con escasa cobertura en herramientas OCR convencionales.
 
 La relevancia del proyecto reside en su enfoque de despliegue: los grafos ONNX se ejecutan tanto en CPU y CUDA mediante ONNX Runtime como en el navegador mediante WebGPU y WebAssembly, sin dependencia de PyTorch en tiempo de inferencia. El reconocedor tiene 19 millones de parámetros y el pipeline completo de página descarga aproximadamente 118 MB en CPU. La librería `netra-ocr` (disponible en PyPI) y la aplicación web acompañan a los pesos.
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparativos con estas alternativas en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Netra-Lab/Netra-OCR
+- Hugging Face: https://huggingface.co/Netra-Lab/Netra-OCR
 - Licencia y atribución: https://huggingface.co/Netra-Lab/Netra-OCR#license-and-attribution
 - GitHub: https://github.com/netra-ai-lab/Netra-OCR
 - PyPI: https://pypi.org/project/netra-ocr/

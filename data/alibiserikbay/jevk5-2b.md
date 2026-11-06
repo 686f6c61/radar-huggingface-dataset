@@ -83,7 +83,7 @@ Decisiones públicas de JevBench (231 elementos), ejecutadas con el runner y la 
 - VRAM en bf16: 3,5 GB de pesos y aproximadamente 3,8 GB de pico con un documento de 4.000 tokens, según los datos del autor. No hay cifra publicada para entradas cercanas al límite de 16.384 tokens; el consumo será superior por el crecimiento de la caché KV.
 - VRAM en GGUF Q8_0: 2,0 GB de pesos, con overhead adicional según la implementación.
 - GPU recomendadas: no se publica una lista de GPU validadas. La única medición publicada es sobre H100. Dado el tamaño de los pesos, cabe con holgura en cualquier GPU de consumo con 4 GB o más de VRAM libre (por ejemplo, RTX 3060, RTX 4060 o RTX 4090), aunque esto es una estimación derivada, no un dato validado por el autor.
-- Opciones de despliegue: runtime JevK5 sobre GPU NVIDIA (`pip install "jevk5[fast] @ git+https://github.com/allebee/jevk5@v0.2.0"`); llama.cpp con el build GGUF en otras GPU, Mac o CPU; la librería declarada en HuggingFace es `transformers`. No se mencionan vLLM, TGI ni Ollama.
+- Opciones de despliegue: runtime JevK5 sobre GPU NVIDIA (`pip install "jevk5[fast] @ git+https://github.com/allebee/jevk5@v0.2.0"`); llama.cpp con el build GGUF en otras GPU, Mac o CPU; la librería declarada en Hugging Face es `transformers`. No se mencionan vLLM, TGI ni Ollama.
 - Latencia: aproximadamente 9 ms por decisión en una H100 con el runtime JevK5. Throughput no disponible.
 - Advertencia: el modelo no se usa como un LLM generativo, sino a través de la API `decide()` del runtime o de la lectura de logits equivalente; cargarlo con un pipeline de generación estándar no produce su salida prevista.
 
@@ -91,8 +91,8 @@ Decisiones públicas de JevBench (231 elementos), ejecutadas con el runner y la 
 
 | Modelo | Parámetros | Contexto | Licencia | Retenidas (media) | JevBench original | JevBench hard | Disponibilidad |
 |---|---|---|---:|---|---:|---:|---:|---|
-| JevK5-2B | 1,88B | 16.384 tokens | Apache-2.0 | 0,751 | 0,806 | 0,604 | HuggingFace, GGUF y runtime |
-| JevK5 (4B) | 4B (según la model card; sin cifra exacta) | no disponible | Apache-2.0 | 0,804 | 0,958 | 0,739 | HuggingFace |
+| JevK5-2B | 1,88B | 16.384 tokens | Apache-2.0 | 0,751 | 0,806 | 0,604 | Hugging Face, GGUF y runtime |
+| JevK5 (4B) | 4B (según la model card; sin cifra exacta) | no disponible | Apache-2.0 | 0,804 | 0,958 | 0,739 | Hugging Face |
 | Jev (TypeSafe AI) | no disponible | no disponible | propietaria | no disponible | no disponible | no disponible | Servicio propietario |
 
 El modelo base Qwen3.5-2B no es comparable en la tarea: es un modelo de propósito general orientado a generación, mientras que JevK5-2B es un clasificador de decisión tipada derivado de él. La comparación relevante es con JevK5 (4B), que gana en casi todas las familias salvo en routing (0,89 frente a 0,97), a cambio de duplicar aproximadamente la memoria. Frente a Jev (TypeSafe AI) solo se dispone de la afirmación del autor de que JevK5 es una alternativa abierta; no hay datos de rendimiento de Jev en la información proporcionada.
@@ -105,7 +105,7 @@ El modelo base Qwen3.5-2B no es comparable en la tarea: es un modelo de propósi
 - Solo inglés. Las entradas de más de 16.384 tokens se rechazan en lugar de truncarse, lo que obliga a gestionar el troceado en la aplicación.
 - Conjuntos de evaluación pequeños: entre 21 y 42 elementos por familia, con la consiguiente incertidumbre en las cifras por familia.
 - Resultados de JevBench autoinformados y ejecutados por los autores; el modelo no se ha enviado a JevBench, por lo que no hay verificación independiente.
-- Modelo sin adopción registrada en el momento de los datos (0 descargas y 0 me gusta en HuggingFace), lo que implica ausencia de validación por terceros y de informes de uso en producción.
+- Modelo sin adopción registrada en el momento de los datos (0 descargas y 0 me gusta en Hugging Face), lo que implica ausencia de validación por terceros y de informes de uso en producción.
 - No es un modelo generativo, pese a la etiqueta `text-generation` del repositorio. Usarlo con un pipeline de generación convencional no reproduce su comportamiento previsto.
 - Riesgo de alucinación y de decisiones erróneas con confianza alta sobre documentos largos o ambiguos (0,59 en preguntas ambiguas); se recomienda umbral de confianza y revisión humana en dominios sensibles.
 - Higiene de datos: los autores señalan una corrección compartida con JevK5, ya que su conjunto de calibración escrito a mano reproducía una instrucción pública de JevBench y el enunciado de una regla de un ítem público. Ambos fueron reescritos y el detalle está en `CHANGELOG.md` del repositorio del runtime. No se usaron ítems de JevBench para entrenar, ajustar ni seleccionar.
@@ -114,7 +114,7 @@ El modelo base Qwen3.5-2B no es comparable en la tarea: es un modelo de propósi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alibiserikbay/JevK5-2B
+- Modelo en Hugging Face: https://huggingface.co/alibiserikbay/JevK5-2B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - JevK5 (4B): https://huggingface.co/alibiserikbay/JevK5
 - Build GGUF: https://huggingface.co/alibiserikbay/JevK5-GGUF

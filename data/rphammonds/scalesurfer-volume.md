@@ -69,11 +69,11 @@ No se dispone de una comparativa formal con métricas.
 - No se documentan sesgos conocidos ni riesgos de alucinación (el modelo es de segmentación, no de generación de texto), pero la precisión puede degradarse en imágenes atípicas o de baja calidad.
 - La arquitectura está diseñada para volúmenes de 256³; no se indica si se puede adaptar a resoluciones diferentes.
 - El modelo se entrenó con datos de FreeSurfer 5, 6 y 7, por lo que puede no ser óptimo para versiones más recientes o futuras del atlas.
-- El tamaño del repositorio es de 0.0 GB en la página de HuggingFace, aunque los archivos (safetensors, config) deberían ocupar espacio; esto puede ser un error de la plataforma, pero no se puede verificar.
+- El tamaño del repositorio es de 0.0 GB en la página de Hugging Face, aunque los archivos (safetensors, config) deberían ocupar espacio; esto puede ser un error de la plataforma, pero no se puede verificar.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rphammonds/scalesurfer-volume
+- Hugging Face: https://huggingface.co/rphammonds/scalesurfer-volume
 - GitHub (repositorio original): https://github.com/voytekresearch/scalesurfer
 - Preprint bioRxiv: https://www.biorxiv.org/content/10.64898/2026.07.01.735927v1
 - PDF del preprint: https://www.biorxiv.org/content/10.64898/2026.07.01.735927v1.full.pdf

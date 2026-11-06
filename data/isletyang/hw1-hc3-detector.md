@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hw1-hc3-detector es un clasificador binario de texto desarrollado por el usuario isletyang y publicado en HuggingFace. Se trata de un fine-tuning de sentence-transformers/all-MiniLM-L6-v2, un encoder transformer de tipo BERT con 22.713.986 parametros, sobre las respuestas en ingles del corpus Hello-SimpleAI/HC3. Su unica tarea es distinguir entre una respuesta escrita por un humano (etiqueta 0) y una respuesta generada por ChatGPT (etiqueta 1).
+hw1-hc3-detector es un clasificador binario de texto desarrollado por el usuario isletyang y publicado en Hugging Face. Se trata de un fine-tuning de sentence-transformers/all-MiniLM-L6-v2, un encoder transformer de tipo BERT con 22.713.986 parametros, sobre las respuestas en ingles del corpus Hello-SimpleAI/HC3. Su unica tarea es distinguir entre una respuesta escrita por un humano (etiqueta 0) y una respuesta generada por ChatGPT (etiqueta 1).
 
 El modelo resuelve un problema acotado y muy concreto: la deteccion de texto generado por IA en el dominio especifico del corpus HC3, es decir, respuestas a preguntas factuales y de divulgacion recogidas de fuentes como Reddit o Wikipedia. No es un detector de proposito general ni pretende serlo: el propio autor advierte en la model card que el resultado corresponde a una particion historica de HC3 y no es fiable para detectar redacciones de estudiantes actuales ni texto de otras familias de modelos.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, GLUE, etc.) en l
 - VRAM estimada en FP32: aproximadamente 91 MB solo para pesos; en FP16 unos 46 MB; en INT8 unos 23 MB.
 - Cabe holgadamente en cualquier GPU de consumo, incluidas GTX 1650, RTX 3060, RTX 4090, e incluso en CPU sin GPU dedicada.
 - GPU recomendadas: no requiere ninguna en concreto; una GPU de gama baja ya satura el rendimiento del modelo. A100 o H100 no aportan ventaja practica para este tamano.
-- Despliegue: transformers (AutoTokenizer + AutoModelForSequenceClassification), ONNX Runtime, HuggingFace Text Embeddings Inference y TorchServe son opciones adecuadas. vLLM y TGI no estan orientados a clasificadores encoder de este tamano, aunque TGI puede servir el modelo.
+- Despliegue: transformers (AutoTokenizer + AutoModelForSequenceClassification), ONNX Runtime, Hugging Face Text Embeddings Inference y TorchServe son opciones adecuadas. vLLM y TGI no estan orientados a clasificadores encoder de este tamano, aunque TGI puede servir el modelo.
 - Latencia y throughput: no disponibles en la informacion proporcionada. Por tamano, se espera latencia de milisegundos por lote en GPU moderna y de decenas de milisegundos en CPU, con throughput alto en lotes de 32 (batch de entrenamiento).
 - Almacenamiento: el repositorio ocupa 0,1 GB.
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, GLUE, etc.) en l
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| isletyang/hw1-hc3-detector | 22,7 M | 256 tokens | Clasificacion humano/ChatGPT sobre HC3 | No disponible | HuggingFace |
-| Aishkrish/hw1-hc3-detector | No disponible | No disponible | Clasificacion humano/ChatGPT sobre HC3 | No disponible | HuggingFace |
-| SiqiYang/hw1-hc3-detector | No disponible | No disponible | Clasificacion humano/ChatGPT sobre HC3 | Apache 2.0 (segun la ficha del repositorio) | HuggingFace, con soporte declarado para text-embeddings-inference |
-| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 tokens | Embeddings de frases (modelo base) | Apache 2.0 | HuggingFace |
+| isletyang/hw1-hc3-detector | 22,7 M | 256 tokens | Clasificacion humano/ChatGPT sobre HC3 | No disponible | Hugging Face |
+| Aishkrish/hw1-hc3-detector | No disponible | No disponible | Clasificacion humano/ChatGPT sobre HC3 | No disponible | Hugging Face |
+| SiqiYang/hw1-hc3-detector | No disponible | No disponible | Clasificacion humano/ChatGPT sobre HC3 | Apache 2.0 (segun la ficha del repositorio) | Hugging Face, con soporte declarado para text-embeddings-inference |
+| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 tokens | Embeddings de frases (modelo base) | Apache 2.0 | Hugging Face |
 
 Los tres repositorios `hw1-hc3-detector` encontrados parecen ser entregas del mismo ejercicio con el mismo modelo base y el mismo dataset, publicadas por usuarios distintos. No se dispone de datos de rendimiento de las variantes de Aishkrish y SiqiYang, por lo que no es posible compararlas cuantitativamente.
 
@@ -100,7 +100,7 @@ Los tres repositorios `hw1-hc3-detector` encontrados parecen ser entregas del mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/isletyang/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/isletyang/hw1-hc3-detector
 - Variante de Aishkrish: https://huggingface.co/Aishkrish/hw1-hc3-detector
 - Variante de SiqiYang: https://huggingface.co/SiqiYang/hw1-hc3-detector
 - Ficha de la variante de Yihangsun: https://savrn.com/models/hw1-hc3-detector

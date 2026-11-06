@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cgg507/Llama-Anubis-70B-v1-QTIP-NVFP4-FP8KV
+- Hugging Face: https://huggingface.co/cgg507/Llama-Anubis-70B-v1-QTIP-NVFP4-FP8KV
 - Modelo base: https://huggingface.co/TheDrummer/Anubis-70B-v1
 - Runtime CUDA (Behemoth-qtip): https://github.com/c000507/Behemoth-qtip
 - Licencia Llama 3.3: https://www.llama.com/llama3_3/license/

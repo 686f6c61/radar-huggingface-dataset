@@ -72,8 +72,8 @@ No se han publicado en la información disponible resultados de benchmarks de ca
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`svd-safety-l2_basis_remove50_swapgapnet_b010_r03`) | 6.738.415.616 (50 % del denso) | No indicado (base: 4096) | ASR AdvBench 0,1519; ASR StrongREJECT 0,2396; sobrerrechazo 0,1200 | Llama 2 Community License | HuggingFace, 0 descargas, 0 likes |
-| `meta-llama/Llama-2-7b-chat-hf` (base) | ~6,74 mil millones | 4096 | No disponible en la información proporcionada | Llama 2 Community License | HuggingFace (modelo de referencia ampliamente utilizado) |
+| Este checkpoint (`svd-safety-l2_basis_remove50_swapgapnet_b010_r03`) | 6.738.415.616 (50 % del denso) | No indicado (base: 4096) | ASR AdvBench 0,1519; ASR StrongREJECT 0,2396; sobrerrechazo 0,1200 | Llama 2 Community License | Hugging Face, 0 descargas, 0 likes |
+| `meta-llama/Llama-2-7b-chat-hf` (base) | ~6,74 mil millones | 4096 | No disponible en la información proporcionada | Llama 2 Community License | Hugging Face (modelo de referencia ampliamente utilizado) |
 | Otras celdas de la cuadrícula del mismo autor | No disponible | No disponible | No disponible | Llama 2 Community License | No disponibles en la información proporcionada |
 
 No se dispone de datos comparativos de rendimiento entre este checkpoint y su modelo base ni con alternativas de la misma categoría, por lo que no es posible establecer una comparación cuantitativa de capacidades.
@@ -93,7 +93,7 @@ No se dispone de datos comparativos de rendimiento entre este checkpoint y su mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r03
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapgapnet_b010_r03
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 (incluida en el repositorio como `LICENSE.txt` y `USE_POLICY.md`): https://ai.meta.com/llama/license/
 - La búsqueda web realizada no devolvió enlaces relevantes al modelo ni a la técnica Basis Sharing; los resultados obtenidos correspondían a un directorio telefónico alemán y no se incluyen.

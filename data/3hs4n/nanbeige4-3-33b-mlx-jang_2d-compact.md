@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto que perm
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/3hs4n/Nanbeige4.3-33B-mlx-JANG_2D-compact
+- Repositorio Hugging Face: https://huggingface.co/3hs4n/Nanbeige4.3-33B-mlx-JANG_2D-compact
 - Checkpoint cuantizado de origen: https://huggingface.co/OsaurusAI/Nanbeige4.3-33B-JANG_2D
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 

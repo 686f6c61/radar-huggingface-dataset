@@ -70,8 +70,8 @@ El autor menciona un desglose por locale y una comparacion chrF contra 6 modelos
 
 | Modelo | Tipo | Parametros | Idiomas de traduccion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Origa Translator ep1 | Adaptador LoRA sobre base QAT 2B | 24,16 M entrenables | JA -> EN, RU, KO, VI (zero-shot en my, bm, th) | BSL 1.1 (adaptador); Apache 2.0 (base) | HuggingFace, 0 descargas |
-| google/gemma-4-E2B-it-qat-w4a16-ct (base sin adaptador) | Modelo base QAT w4a16 | no disponible | Multilingue general; 0/24 en la prueba zero-shot del autor | Apache 2.0 | HuggingFace |
+| Origa Translator ep1 | Adaptador LoRA sobre base QAT 2B | 24,16 M entrenables | JA -> EN, RU, KO, VI (zero-shot en my, bm, th) | BSL 1.1 (adaptador); Apache 2.0 (base) | Hugging Face, 0 descargas |
+| google/gemma-4-E2B-it-qat-w4a16-ct (base sin adaptador) | Modelo base QAT w4a16 | no disponible | Multilingue general; 0/24 en la prueba zero-shot del autor | Apache 2.0 | Hugging Face |
 | Otros modelos candidatos del informe A/B | no disponible | no disponible | no disponible | no disponible | El autor compara contra 6 modelos base candidatos, pero no los nombra ni publica sus cifras en la informacion disponible |
 
 No se dispone de datos suficientes para comparar con alternativas de traduccion del mismo tamano (por ejemplo, adaptadores LoRA para NLLB o modelos tipo MADLAD), por lo que esa comparacion queda como no disponible.
@@ -90,7 +90,7 @@ No se dispone de datos suficientes para comparar con alternativas de traduccion 
 - Repositorio sin traccion: 0 descargas y 0 valoraciones, sin comunidad que haya validado los resultados de forma independiente.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/yurvon-screamo/origa-translator-ep1
+- Modelo en Hugging Face: https://huggingface.co/yurvon-screamo/origa-translator-ep1
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it-qat-w4a16-ct
 - Repositorio del proyecto Origa: https://github.com/yurvon-screamo/origa
 - Licencia BSL 1.1: https://github.com/yurvon-screamo/origa/blob/master/LICENSE

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `xw17/Qwen2.5-14B-Instruct_SFT_lora_bidsleep` es un ajuste publicado en HuggingFace por el usuario xw17. Por el propio nombre del repositorio cabe inferir que se trata de un fine-tuning mediante LoRA sobre el modelo base Qwen2.5-14B-Instruct, y el sufijo `bidsleep` sugiere un dominio concreto de especializacion, presumiblemente relacionado con datos biomedicos de sueno. Sin embargo, esta interpretacion procede unicamente de la nomenclatura: la model card publicada es la plantilla autogenerada de HuggingFace y no contiene ninguna descripcion real del modelo, del dataset ni del procedimiento de entrenamiento.
+El repositorio `xw17/Qwen2.5-14B-Instruct_SFT_lora_bidsleep` es un ajuste publicado en Hugging Face por el usuario xw17. Por el propio nombre del repositorio cabe inferir que se trata de un fine-tuning mediante LoRA sobre el modelo base Qwen2.5-14B-Instruct, y el sufijo `bidsleep` sugiere un dominio concreto de especializacion, presumiblemente relacionado con datos biomedicos de sueno. Sin embargo, esta interpretacion procede unicamente de la nomenclatura: la model card publicada es la plantilla autogenerada de Hugging Face y no contiene ninguna descripcion real del modelo, del dataset ni del procedimiento de entrenamiento.
 
 El modelo aparece con licencia no declarada, idiomas no declarados, pipeline no declarado, cero descargas y cero likes, y fue creado el 30 de septiembre de 2026. El tamano del repositorio es de 0,1 GB, un volumen muy inferior al que ocuparian los pesos completos de un modelo de 14 000 millones de parametros en precision completa o bf16 (que rondarian los 28 GB). Ese detalle es coherente con la hipotesis de que el repositorio contiene unicamente adaptadores LoRA y no los pesos fusionados, aunque no puede confirmarse con la informacion disponible.
 
@@ -25,7 +25,7 @@ Otros metadatos del repositorio: libreria `transformers`, tamano 0,1 GB, creado 
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card publicada es la plantilla generica autogenerada por HuggingFace, en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, modelo base, datos de entrenamiento, hiperparametros, infraestructura de computo y resultados de evaluacion) figuran como `[More Information Needed]`. No se documenta el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO o SFT adicionales.
+No disponible. La model card publicada es la plantilla generica autogenerada por Hugging Face, en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, modelo base, datos de entrenamiento, hiperparametros, infraestructura de computo y resultados de evaluacion) figuran como `[More Information Needed]`. No se documenta el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO o SFT adicionales.
 
 El unico indicio tecnico es la propia nomenclatura del repositorio: `SFT_lora` apunta a un ajuste supervisado mediante Low-Rank Adaptation, una tecnica que congela los pesos del modelo base e inserta matrices de bajo rango entrenables en las capas de atencion y proyeccion. Esto seria consistente con el tamano de 0,1 GB del repositorio, que es demasiado reducido para contener los pesos de un modelo de 14 000 millones de parametros. El sufijo `bidsleep` no esta definido en ninguna parte del repositorio y no se ha podido contrastar con fuentes externas.
 
@@ -48,7 +48,7 @@ No es posible enumerar casos de uso concretos y verificables: el repositorio no 
 - Clasificacion y extraccion de informacion en dominios especializados: si el ajuste se ha realizado sobre corpus de un dominio concreto, el adaptador podria servir para tareas de etiquetado estructurado dentro de ese dominio.
 - Generacion de texto asistida en un vertical especifico: un LoRA suele emplearse para adaptar el estilo y el vocabulario del modelo base a un registro o jerga determinados.
 - Prototipado rapido con `transformers` y `peft`: el formato de adaptadores permite cargar el modelo base por separado y aplicar el adaptador, lo que abarata el almacenamiento.
-- Servicio en endpoints compatibles con la API de HuggingFace: la etiqueta `endpoints_compatible` sugiere esa posibilidad, aunque no hay garantia de que el adaptador se despliegue correctamente sin fusionarlo antes.
+- Servicio en endpoints compatibles con la API de Hugging Face: la etiqueta `endpoints_compatible` sugiere esa posibilidad, aunque no hay garantia de que el adaptador se despliegue correctamente sin fusionarlo antes.
 - Experimentacion academica: el repositorio puede ser util como punto de partida reproducible para comparar tecnicas de ajuste eficiente.
 - Evaluacion comparativa de adaptadores: util para medir la degradacion o mejora respecto al modelo base en tareas generales.
 
@@ -92,7 +92,7 @@ No disponible. No se dispone de datos de rendimiento, licencia ni contexto verif
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/Qwen2.5-14B-Instruct_SFT_lora_bidsleep
+- Repositorio en Hugging Face: https://huggingface.co/xw17/Qwen2.5-14B-Instruct_SFT_lora_bidsleep
 - Referencia citada en las etiquetas del repositorio (plantilla de emisiones, no articulo del modelo): https://arxiv.org/abs/1910.09700
 - Modelo base al que remite el nombre del repositorio, sin confirmar por el autor: no disponible como enlace verificado en la informacion proporcionada
 - Paper, blog, repositorio de codigo o demo del autor: no disponible

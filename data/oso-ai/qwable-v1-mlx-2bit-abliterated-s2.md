@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OSO-AI/Qwable-v1-mlx-2Bit-abliterated-s2
+- Modelo en Hugging Face: https://huggingface.co/OSO-AI/Qwable-v1-mlx-2Bit-abliterated-s2
 - Modelo base: https://huggingface.co/usermma/Qwable-v1-mlx-2Bit
 - Hermano de 4 bits validado: https://huggingface.co/OSO-AI/Qwable-v1-mlx-4Bit-abliterated-s2
 - Log completo de resultados: https://github.com/OSOSerious/oso-obliterated-models-/RESULTS.md

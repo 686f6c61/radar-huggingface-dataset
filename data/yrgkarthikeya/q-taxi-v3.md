@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-Taxi-v3 es un agente de aprendizaje por refuerzo publicado en HuggingFace Hub por el usuario YRGKarthikeya. No es un modelo de lenguaje ni una red neuronal: se trata de una implementación tabular de Q-learning entrenada para resolver el entorno Taxi-v3 de Gymnasium, en el que un taxi debe recoger a un pasajero y dejarlo en el destino correcto dentro de una cuadrícula. El artefacto distribuido es una tabla Q serializada, no un conjunto de pesos obtenidos por descenso de gradiente.
+q-Taxi-v3 es un agente de aprendizaje por refuerzo publicado en Hugging Face Hub por el usuario YRGKarthikeya. No es un modelo de lenguaje ni una red neuronal: se trata de una implementación tabular de Q-learning entrenada para resolver el entorno Taxi-v3 de Gymnasium, en el que un taxi debe recoger a un pasajero y dejarlo en el destino correcto dentro de una cuadrícula. El artefacto distribuido es una tabla Q serializada, no un conjunto de pesos obtenidos por descenso de gradiente.
 
 El repositorio declara un tamaño de 0.0 GB, cero descargas y cero "me gusta" en el momento de redactar esta ficha, y no especifica ni licencia ni idiomas. Su interés es, por tanto, formativo y de referencia: constituye un baseline reproducible de un algoritmo clásico de control (Q-learning off-policy con actualización temporal-difference) sobre un entorno estandarizado que se usa habitualmente en cursos y tutoriales de aprendizaje por refuerzo.
 
@@ -29,8 +29,8 @@ Su relevancia actual es doble. Por un lado, Taxi-v3 sigue siendo el problema int
 | Dataset de entrenamiento | Taxi-v3 (interacción con el entorno; número de episodios no disponible) |
 | Descargas / likes | 0 / 0 |
 | Tamaño del repositorio | 0.0 GB |
-| Fecha de creación | 2026-09-21 (según metadatos de HuggingFace) |
-| Última actualización | 2026-09-21 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-09-21 (según metadatos de Hugging Face) |
+| Última actualización | 2026-09-21 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -60,7 +60,7 @@ Como contexto del entorno (procedente de la documentación pública de Gymnasium
 - Validación de infraestructura de RL: probar pipelines de evaluación, registro en el Hub y serialización de tablas Q en un caso de tamaño mínimo antes de escalar a entornos más costosos.
 - Ablaciones de hiperparámetros: usar la tabla como punto de partida para medir cómo afectan la tasa de aprendizaje, el descuento o el decaimiento de epsilon al retorno medio.
 - Depuración de entornos y wrappers: comprobar que un wrapper modificado de Taxi-v3 no altera la semántica de estados y recompensas, comparando el retorno obtenido con el valor declarado de 7.56 ± 2.71.
-- Demostración reproducible en el Hub: ejemplo mínimo para enseñar el formato de model card con model-index y resultados de RL en HuggingFace.
+- Demostración reproducible en el Hub: ejemplo mínimo para enseñar el formato de model card con model-index y resultados de RL en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -75,7 +75,7 @@ Los datos anteriores proceden del bloque model-index de la model card y están d
 - VRAM: no aplica. La inferencia es una consulta en tabla y no requiere GPU.
 - GPU recomendadas: ninguna. Cualquier CPU moderna es suficiente.
 - GPU de consumo: irrelevante; el agente funciona en CPU sin aceleración.
-- RAM: el repositorio ocupa 0.0 GB según HuggingFace, por lo que el fichero pickle es de tamaño muy reducido y cabe en cualquier máquina.
+- RAM: el repositorio ocupa 0.0 GB según Hugging Face, por lo que el fichero pickle es de tamaño muy reducido y cabe en cualquier máquina.
 - Opciones de despliegue: no aplican vLLM, llama.cpp, Ollama ni TGI. El consumo se realiza mediante `pickle` y un entorno de Gymnasium, con `huggingface_hub` para la descarga.
 - Latencia y throughput: no disponible; no se publican mediciones. Al tratarse de una consulta en tabla, el coste por decisión es despreciable frente al coste de simular el entorno.
 - Dependencias previsibles: Python, `gymnasium`, `pickle` y `huggingface_hub`.
@@ -107,7 +107,7 @@ No se han encontrado en la información disponible resultados comparables public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YRGKarthikeya/q-Taxi-v3
+- Modelo en Hugging Face: https://huggingface.co/YRGKarthikeya/q-Taxi-v3
 - Repositorio citado en el ejemplo de uso de la model card: https://huggingface.co/ThomasSimonini/q-Taxi-v3
 - Documentación del entorno Taxi-v3 (Gymnasium, referencia externa a la model card): https://gymnasium.farama.org/environments/toy_text/taxi/
 - La búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo; los resultados obtenidos no guardan relación con él.

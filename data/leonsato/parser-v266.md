@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Leonsato/parser-v266 es un repositorio publicado en HuggingFace por el usuario Leonsato, con licencia MIT, que contiene un único archivo `summary.md` descrito como un resumen de un paper sobre *video understanding*. La model card indica que el documento sigue el formato de preprint arXiv en LaTeX, con citas numéricas estilo BibTeX y una estructura clásica de introducción, método, experimentos y conclusión, con un estilo de escritura enfocado en resultados empíricos. No se proporciona ningún peso, arquitectura, tokenizador ni artefacto de modelo entrenado; el repositorio parece ser un contenedor de texto en lugar de un modelo de aprendizaje automático. En consecuencia, no existe información técnica sobre parámetros, contexto, capacidades o rendimiento, y cualquier ficha técnica real debe reflejar que se trata de un documento, no de un modelo.
+Leonsato/parser-v266 es un repositorio publicado en Hugging Face por el usuario Leonsato, con licencia MIT, que contiene un único archivo `summary.md` descrito como un resumen de un paper sobre *video understanding*. La model card indica que el documento sigue el formato de preprint arXiv en LaTeX, con citas numéricas estilo BibTeX y una estructura clásica de introducción, método, experimentos y conclusión, con un estilo de escritura enfocado en resultados empíricos. No se proporciona ningún peso, arquitectura, tokenizador ni artefacto de modelo entrenado; el repositorio parece ser un contenedor de texto en lugar de un modelo de aprendizaje automático. En consecuencia, no existe información técnica sobre parámetros, contexto, capacidades o rendimiento, y cualquier ficha técnica real debe reflejar que se trata de un documento, no de un modelo.
 
 ## Especificaciones tecnicas
 
@@ -57,5 +57,5 @@ No disponible. No se puede comparar con modelos de comprensión de video porque 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Leonsato/parser-v266
+- Repositorio de Hugging Face: https://huggingface.co/Leonsato/parser-v266
 - No se encontraron otros enlaces relevantes (papers, blogs, repos, demos).

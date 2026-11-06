@@ -117,7 +117,7 @@ La comparativa se limita a los datos publicados en la model card upstream. No se
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/tryambientai/gigaam-v3-ctc-gguf
+- Repositorio Hugging Face de la conversión: https://huggingface.co/tryambientai/gigaam-v3-ctc-gguf
 - Modelo base upstream: https://huggingface.co/ai-sage/GigaAM-v3
 - Commit upstream de referencia: https://huggingface.co/ai-sage/GigaAM-v3/commit/15ef3b5
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

@@ -4,7 +4,7 @@
 
 Este repositorio, publicado por christophergonzalez bajo licencia CC-BY-4.0, no contiene un modelo de inteligencia artificial entrenado, sino una nota exploratoria de investigación sobre fusión cross-modal. El artefacto principal es `summary.md`, donde se documentan el alcance de una pregunta de investigación, los posibles factores de confusión, la comparación propuesta con líneas base y los requisitos de reproducibilidad antes de que se reporte cualquier resultado experimental.
 
-El repositorio tiene un tamaño de 0,0 GB y contiene únicamente archivos de documentación (README.md y summary.md). Aunque los metadatos de HuggingFace indican 49.600 parámetros totales, no existe un checkpoint real ni pesos descargables; esa cifra probablemente corresponde a un artefacto de los metadatos o a un archivo safetensors vacío o simbólico. Por tanto, no es un modelo utilizable para inferencia, y su relevancia es exclusivamente metodológica para investigadores interesados en diseño experimental de fusión cross-modal.
+El repositorio tiene un tamaño de 0,0 GB y contiene únicamente archivos de documentación (README.md y summary.md). Aunque los metadatos de Hugging Face indican 49.600 parámetros totales, no existe un checkpoint real ni pesos descargables; esa cifra probablemente corresponde a un artefacto de los metadatos o a un archivo safetensors vacío o simbólico. Por tanto, no es un modelo utilizable para inferencia, y su relevancia es exclusivamente metodológica para investigadores interesados en diseño experimental de fusión cross-modal.
 
 La publicación se enmarca en el contexto de la investigación actual sobre modelos multimodales generativos (por ejemplo, GPT-4V o Sora), pero no reclama ningún avance técnico ni resultados de benchmarks. La model card es explícita al respecto: "no claim benchmark improvements, completed ablations, released code, or a trained checkpoint".
 
@@ -67,7 +67,7 @@ No disponible. Este repositorio no contiene un modelo de IA comparable a otros s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/christophergonzalez/cross-modal-fusion
+- Repositorio en Hugging Face: https://huggingface.co/christophergonzalez/cross-modal-fusion
 - Referencia general sobre modelos multimodales generativos (contexto del campo): https://arxiv.org/pdf/2409.14993
 - Survey sobre fusión multimodal: https://www.sciencedirect.com/org/science/article/pii/S1546221824005216
 - Seguimiento de lanzamientos de modelos (contexto del campo): https://aireleasetracker.com/latest

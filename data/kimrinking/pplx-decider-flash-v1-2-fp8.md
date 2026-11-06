@@ -92,5 +92,5 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kimrinking/pplx-decider-flash-v1.2-fp8
+- Modelo en Hugging Face: https://huggingface.co/kimrinking/pplx-decider-flash-v1.2-fp8
 - Modelo base: https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-heretic-oQ8-mtp es una cuantización mixta del modelo Qwen3.5-0.8B, publicada por el usuario bambocher en HuggingFace. El checkpoint combina pesos cuantizados en 8 bits afines con grupo de 64 (88,2 % de los pesos lógicos) con una fracción en BF16 (11,8 %), dando un promedio efectivo de 9,386 bits por peso. El resultado ocupa 1,025 GB en disco (0,954 GiB), lo que lo hace manejable en hardware de Apple Silicon mediante MLX.
+Qwen3.5-0.8B-heretic-oQ8-mtp es una cuantización mixta del modelo Qwen3.5-0.8B, publicada por el usuario bambocher en Hugging Face. El checkpoint combina pesos cuantizados en 8 bits afines con grupo de 64 (88,2 % de los pesos lógicos) con una fracción en BF16 (11,8 %), dando un promedio efectivo de 9,386 bits por peso. El resultado ocupa 1,025 GB en disco (0,954 GiB), lo que lo hace manejable en hardware de Apple Silicon mediante MLX.
 
 El modelo base es un transformer multimodal de la familia Qwen3.5 con 873.438.784 parámetros totales, de los cuales 752 millones corresponden al modelo de lenguaje, 101 millones a la torre de visión y 20 millones a una cabeza MTP (multi-token prediction). El sufijo "heretic" sugiere una variante con alineamiento relajado o modificado respecto al original, aunque el autor no documenta el proceso en la model card.
 
@@ -84,8 +84,8 @@ La comparación es aproximada: los datos del modelo base Qwen3.5-0.8B y de la va
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bambocher/Qwen3.5-0.8B-heretic-oQ8-mtp
+- Modelo en Hugging Face: https://huggingface.co/bambocher/Qwen3.5-0.8B-heretic-oQ8-mtp
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Repositorio MLX: https://github.com/ml-explore/mlx
 - Repositorio mlx-lm: https://github.com/ml-explore/mlx-examples/tree/main/llms
-- Familia Qwen en HuggingFace: https://huggingface.co/Qwen
+- Familia Qwen en Hugging Face: https://huggingface.co/Qwen

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario SAD123EDSA bajo licencia MIT. La model card se presenta como una actualización de una versión anterior, con mejoras en razonamiento, reducción de alucinaciones y soporte de function calling, e incluye una tabla de benchmarks comparativa frente a modelos denominados "Model1", "Model2" y "Model1-v2". No obstante, el repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, y la información técnica publicada es insuficiente para verificar la naturaleza real del artefacto.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario SAD123EDSA bajo licencia MIT. La model card se presenta como una actualización de una versión anterior, con mejoras en razonamiento, reducción de alucinaciones y soporte de function calling, e incluye una tabla de benchmarks comparativa frente a modelos denominados "Model1", "Model2" y "Model1-v2". No obstante, el repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, y la información técnica publicada es insuficiente para verificar la naturaleza real del artefacto.
 
-La información disponible no especifica arquitectura, número de parámetros, longitud de contexto, tokenizador ni composición del dataset de entrenamiento. El pipeline declarado en HuggingFace es `feature-extraction` con la etiqueta `bert`, lo que resulta incoherente con el contenido de la model card, que describe un modelo generativo conversacional con modo de razonamiento, plantillas de system prompt y decodificación con temperatura recomendada de 0.6. Esta contradicción entre metadatos y model card debe tenerse en cuenta antes de cualquier evaluación.
+La información disponible no especifica arquitectura, número de parámetros, longitud de contexto, tokenizador ni composición del dataset de entrenamiento. El pipeline declarado en Hugging Face es `feature-extraction` con la etiqueta `bert`, lo que resulta incoherente con el contenido de la model card, que describe un modelo generativo conversacional con modo de razonamiento, plantillas de system prompt y decodificación con temperatura recomendada de 0.6. Esta contradicción entre metadatos y model card debe tenerse en cuenta antes de cualquier evaluación.
 
 Por tanto, esta ficha recoge únicamente los datos verificables en la información proporcionada, marca explícitamente como "no disponible" todo aquello que no se puede confirmar y advierte de las inconsistencias detectadas. No se debe tratar este modelo como un artefacto listo para producción sin una validación previa del repositorio y de los pesos.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha recoge únicamente los datos verificables en la informaci�
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta de HuggingFace indica `bert`; la model card describe un modelo generativo con modo de razonamiento, sin especificar arquitectura) |
+| Arquitectura | no disponible (la etiqueta de Hugging Face indica `bert`; la model card describe un modelo generativo con modo de razonamiento, sin especificar arquitectura) |
 | Parámetros totales | no disponible |
 | Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -44,7 +44,7 @@ Tampoco se publican datos sobre el número de tokens de entrenamiento, la compos
 - Generación de código en pipelines de desarrollo: la model card declara capacidad de generación de código y function calling, lo que permitiría integrarlo en asistentes de IDE o revisión automatizada de parches, previa verificación de los pesos y del tokenizador.
 - Automatización de atención al cliente con documentos adjuntos: las plantillas de carga de ficheros permiten construir flujos donde el usuario adjunta un documento y formula preguntas sobre su contenido.
 - Generación aumentada por búsqueda con citas: la plantilla de búsqueda web con formato `[citation:X]` facilita construir respuestas con referencias verificables en asistentes de investigación.
-- Extracción de características y embeddings: dado que el pipeline declarado en HuggingFace es `feature-extraction`, podría emplearse para generar representaciones vectoriales en sistemas de búsqueda semántica, aunque esta capacidad no está documentada en la model card y requeriría validación.
+- Extracción de características y embeddings: dado que el pipeline declarado en Hugging Face es `feature-extraction`, podría emplearse para generar representaciones vectoriales en sistemas de búsqueda semántica, aunque esta capacidad no está documentada en la model card y requeriría validación.
 - Prototipado de agentes multi-paso: el soporte declarado de function calling y de razonamiento extendido permitiría experimentar con agentes que encadenan herramientas, siempre en entornos de prueba y con validación de seguridad.
 - Evaluación comparativa interna: la tabla de benchmarks publicada permite usar el modelo como referencia en experimentos de evaluación, aunque los nombres de los modelos comparados no son verificables.
 
@@ -84,7 +84,7 @@ Además, la model card cita un resultado de AIME 2025 con una precisión del 87,
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MyAwesomeModel | no disponible | no disponible | Tabla propia en model card (Math Reasoning 0.550, Code Generation 0.650) | MIT | Repositorio HuggingFace con 0 descargas y 0.0 GB |
+| MyAwesomeModel | no disponible | no disponible | Tabla propia en model card (Math Reasoning 0.550, Code Generation 0.650) | MIT | Repositorio Hugging Face con 0 descargas y 0.0 GB |
 | Model1 | no disponible | no disponible | Math Reasoning 0.510, Code Generation 0.615 | no disponible | no disponible |
 | Model2 | no disponible | no disponible | Math Reasoning 0.535, Code Generation 0.631 | no disponible | no disponible |
 | Model1-v2 | no disponible | no disponible | Math Reasoning 0.521, Code Generation 0.640 | no disponible | no disponible |
@@ -104,6 +104,6 @@ Los tres modelos de comparación aparecen únicamente como columnas de la tabla 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SAD123EDSA/MyAwesomeModel
+- Hugging Face: https://huggingface.co/SAD123EDSA/MyAwesomeModel
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información proporcionada.

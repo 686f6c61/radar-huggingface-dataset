@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Tipo | Cuantizacion | Resolucion destacada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | BluePixel-Comfy (t8star) | Edición image-to-image (FLUX.2 Klein 9B derivado) | INT8 ConvRot + BF16 + FP32 | 4K (4096×4096) | bluepixel-component-licenses / FLUX Non-Commercial (difusión) | ComfyUI (nodos BluePixel T8) |
-| openvivo/BluePixel-Turbo (base) | Edición image-to-image | BF16 (sin cuantizar) | 4K | OpenAtom model license + términos por componente | HuggingFace, no disponible |
-| FLUX.2 Klein (Black Forest Labs) | Edición/generación de imágenes | BF16 | no disponible | FLUX Non-Commercial License | HuggingFace, ComfyUI |
+| openvivo/BluePixel-Turbo (base) | Edición image-to-image | BF16 (sin cuantizar) | 4K | OpenAtom model license + términos por componente | Hugging Face, no disponible |
+| FLUX.2 Klein (Black Forest Labs) | Edición/generación de imágenes | BF16 | no disponible | FLUX Non-Commercial License | Hugging Face, ComfyUI |
 
 Nota: no se dispone de datos de rendimiento comparables entre estos modelos en la informacion proporcionada.
 
@@ -79,7 +79,7 @@ Nota: no se dispone de datos de rendimiento comparables entre estos modelos en l
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/t8star/BluePixel-Comfy
+- Ficha del modelo en Hugging Face: https://huggingface.co/t8star/BluePixel-Comfy
 - Modelo base: https://huggingface.co/openvivo/BluePixel-Turbo
 - Licencia: https://huggingface.co/t8star/BluePixel-Comfy/blob/main/LICENSE.md
 - Repositorio de nodos ComfyUI BluePixel T8: https://github.com/T8mars/Comfyui-BluePixel-T8

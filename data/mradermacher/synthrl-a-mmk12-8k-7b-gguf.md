@@ -90,7 +90,7 @@ Nota: los datos de los modelos de referencia son orientativos y no provienen de 
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/SynthRL-A-MMK12-8K-7B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/SynthRL-A-MMK12-8K-7B-GGUF
 - Modelo base: https://huggingface.co/Jakumetsu/SynthRL-A-MMK12-8K-7B
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#SynthRL-A-MMK12-8K-7B-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

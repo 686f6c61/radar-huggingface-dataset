@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de razonamiento desarrollado por el autor qwqerqwrqrwqrq, publicado como repositorio de prueba en HuggingFace. Según su model card, ha experimentado una actualización significativa que mejora su profundidad de razonamiento e inferencia mediante mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo destaca en tareas de matemáticas, programación y lógica general, con resultados que se acercan a los de otros modelos líderes.
+MyAwesomeModel es un modelo de razonamiento desarrollado por el autor qwqerqwrqrwqrq, publicado como repositorio de prueba en Hugging Face. Según su model card, ha experimentado una actualización significativa que mejora su profundidad de razonamiento e inferencia mediante mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo destaca en tareas de matemáticas, programación y lógica general, con resultados que se acercan a los de otros modelos líderes.
 
 Aunque los metadatos del repositorio indican una arquitectura BERT con pipeline de feature-extraction, la model card describe capacidades de razonamiento profundo propias de modelos generativos de gran tamaño, sin especificar el número de parámetros ni la longitud de contexto. En la prueba AIME 2025, la precisión ha pasado del 70 % al 87,5 % entre versiones, con un aumento del promedio de tokens de razonamiento por pregunta de 12K a 23K.
 
@@ -99,7 +99,7 @@ La model card compara MyAwesomeModel con tres modelos de referencia (Model1, Mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qwqerqwrqrwqrq/MyAwesomeModel-TestRepository
+- Repositorio Hugging Face: https://huggingface.co/qwqerqwrqrwqrq/MyAwesomeModel-TestRepository
 - Repositorio relacionado (qwrqwrqwrqr/my-awesome-model): https://huggingface.co/qwrqwrqwrqr/my-awesome-model
 - Repositorio relacionado (qwrqwrqwrqr/MyAwesomeModel-TestRepo): https://huggingface.co/qwrqwrqwrqr/MyAwesomeModel-TestRepo
 - Ficha en free2aitools.com: https://free2aitools.com/model/sotaagi2030/myawesomemodel-testrepo

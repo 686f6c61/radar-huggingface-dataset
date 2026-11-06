@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `julianasantos/retrieval-2024` es una implementación de MobileViT en configuración base orientada a tareas de recuperación (retrieval), desarrollada por el usuario de HuggingFace `julianasantos`. No se trata de un modelo entrenado ni de un sistema listo para producción: el repositorio incluye un checkpoint de inicialización válido para pruebas de humo (smoke tests) y un script Python de ejemplo. La arquitectura combina capas convolucionales y de atención con ventana deslizante (sliding window), activación `mish` y normalización `layernorm`. El modelo cuenta con 33.088 parámetros totales y se publica bajo licencia Apache-2.0 en formato `safetensors`. El autor declara explícitamente que no se reclaman puntuaciones de benchmarks y que el propósito principal es proporcionar una base transparente y reproducible para experimentar, no un modelo competitivo.
+El modelo `julianasantos/retrieval-2024` es una implementación de MobileViT en configuración base orientada a tareas de recuperación (retrieval), desarrollada por el usuario de Hugging Face `julianasantos`. No se trata de un modelo entrenado ni de un sistema listo para producción: el repositorio incluye un checkpoint de inicialización válido para pruebas de humo (smoke tests) y un script Python de ejemplo. La arquitectura combina capas convolucionales y de atención con ventana deslizante (sliding window), activación `mish` y normalización `layernorm`. El modelo cuenta con 33.088 parámetros totales y se publica bajo licencia Apache-2.0 en formato `safetensors`. El autor declara explícitamente que no se reclaman puntuaciones de benchmarks y que el propósito principal es proporcionar una base transparente y reproducible para experimentar, no un modelo competitivo.
 
 ## Especificaciones tecnicas
 
@@ -68,5 +68,5 @@ No se dispone de modelos comparables en la información proporcionada. El reposi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/julianasantos/retrieval-2024
+- Hugging Face: https://huggingface.co/julianasantos/retrieval-2024
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web. Los resultados obtenidos (papers de Retrieval-Augmented Generation y especificaciones de la GTX 1070) no guardan relación con este modelo.

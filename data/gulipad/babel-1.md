@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Gulipad/babel-1` es el repositorio de HuggingFace que contiene los pesos de `librarian-1`, un modelo de lenguaje en español de 66M de parámetros desarrollado por Gulipad. El modelo forma parte de `babel-1`, el universo de La Ciudad de Babel, una recreación de la Biblioteca de Babel de Borges en la que un modelo de lenguaje actúa como cartógrafo. La model card no describe la arquitectura, la longitud de contexto ni el proceso de entrenamiento; la información disponible se limita al tamaño, el idioma y el formato de despliegue.
+`Gulipad/babel-1` es el repositorio de Hugging Face que contiene los pesos de `librarian-1`, un modelo de lenguaje en español de 66M de parámetros desarrollado por Gulipad. El modelo forma parte de `babel-1`, el universo de La Ciudad de Babel, una recreación de la Biblioteca de Babel de Borges en la que un modelo de lenguaje actúa como cartógrafo. La model card no describe la arquitectura, la longitud de contexto ni el proceso de entrenamiento; la información disponible se limita al tamaño, el idioma y el formato de despliegue.
 
 El interés técnico del repositorio está en su formato: `model.bin` es un modelo int8 pensado para el motor entero del proyecto, que se ejecuta de forma bit-exact en el navegador. Los pesos están fijados por SHA-256 en el manifest del universo, lo que permite verificar la integridad de una versión concreta. Es un artefacto pequeño, con un repositorio de 0,1 GB, sin descargas ni likes en el momento de la consulta y sin licencia declarada.
 
@@ -18,14 +18,14 @@ El interés técnico del repositorio está en su formato: `model.bin` es un mode
 | Idiomas soportados | español (`es`) |
 | Licencia | no disponible |
 | Formato de pesos | `model.bin` (int8) para el motor entero del proyecto; no se documentan safetensors ni GGUF |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 0,1 GB |
 
 ## Arquitectura y entrenamiento
 
 No se dispone de información sobre la arquitectura del modelo: la model card no indica si es un transformer, un MoE, un SSM o una arquitectura híbrida. Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, la existencia de RLHF o DPO, ni innovaciones técnicas como decodificación especulativa o atención lineal. El único dato técnico verificable es que se trata de un modelo de lenguaje de 66M de parámetros.
 
-El autor indica que `model.bin` es el modelo int8 para el motor entero del proyecto, que corre bit-exact en el navegador, y que los pesos están fijados por SHA-256 en el manifest del universo. Esa combinación apunta a un despliegue reproducible y verifiable, pero no se documenta compatibilidad con el ecosistema estándar de HuggingFace ni con motores de inferencia convencionales.
+El autor indica que `model.bin` es el modelo int8 para el motor entero del proyecto, que corre bit-exact en el navegador, y que los pesos están fijados por SHA-256 en el manifest del universo. Esa combinación apunta a un despliegue reproducible y verifiable, pero no se documenta compatibilidad con el ecosistema estándar de Hugging Face ni con motores de inferencia convencionales.
 
 ## Capacidades
 
@@ -35,7 +35,7 @@ El autor indica que `model.bin` es el modelo int8 para el motor entero del proye
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: solo español según la model card.
 - Capacidad especial: inferencia int8 bit-exact en navegador mediante el motor entero del proyecto, con pesos empaquetados en `model.bin` y fijados por SHA-256.
-- Integración con HuggingFace: pipeline no disponible; no se documenta uso con `transformers`.
+- Integración con Hugging Face: pipeline no disponible; no se documenta uso con `transformers`.
 
 ## Casos de uso
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `Gulipad/babel-1` (`librarian-1`) | 66M | no disponible | no disponible | HuggingFace y GitHub | int8 para motor entero; sin benchmarks |
+| `Gulipad/babel-1` (`librarian-1`) | 66M | no disponible | no disponible | Hugging Face y GitHub | int8 para motor entero; sin benchmarks |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se han proporcionado datos verificables para comparar |
 
 No se presenta una comparativa numérica con otros modelos porque no hay información verificable sobre alternativas de la misma categoría en la documentación disponible.
@@ -83,7 +83,7 @@ No se presenta una comparativa numérica con otros modelos porque no hay informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gulipad/babel-1
+- Hugging Face: https://huggingface.co/Gulipad/babel-1
 - Repositorio del proyecto: https://github.com/gulipad/bdebabel
 - La Ciudad de Babel: https://babel.gulipad.com
 - No se han encontrado papers, blogs, demos o repositorios adicionales en la información proporcionada.

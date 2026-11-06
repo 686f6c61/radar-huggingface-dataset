@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `Jessedbrown/the-human-based-understanding` corresponde a un repositorio alojado en HuggingFace que, segun su propia model card, no contiene un modelo de aprendizaje automatico, sino un ensayo de interpretacion especulativa del alfabeto latino y hebreo. El contenido describe cada letra como una "operacion" o pictograma (por ejemplo, bet como casa, dalet como puerta, ayin como ojo) y propone correspondencias entre formas, inversiones y una supuesta secuencia narrativa del alfabeto. No se declara arquitectura, parametros, tokenizador ni pesos.
+El identificador `Jessedbrown/the-human-based-understanding` corresponde a un repositorio alojado en Hugging Face que, segun su propia model card, no contiene un modelo de aprendizaje automatico, sino un ensayo de interpretacion especulativa del alfabeto latino y hebreo. El contenido describe cada letra como una "operacion" o pictograma (por ejemplo, bet como casa, dalet como puerta, ayin como ojo) y propone correspondencias entre formas, inversiones y una supuesta secuencia narrativa del alfabeto. No se declara arquitectura, parametros, tokenizador ni pesos.
 
 El repositorio figura con autor "Jessedbrown", 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado, sin licencia especificada y sin idiomas indicados. Los unicos metadatos presentes son la etiqueta `region:us`, una fecha de creacion (2026-10-16) y una fecha de actualizacion (2026-08-07), esta ultima anterior a la de creacion, lo que sugiere incoherencia en los metadatos o un error de la plataforma.
 
@@ -42,7 +42,7 @@ Tampoco hay datos de entrenamiento: no se indica numero de tokens, composicion d
 - Publicacion editorial: el material podria emplearse como texto de partida para un ensayo o articulo divulgativo sobre epigrafia y semiotica del alfabeto.
 - Analisis linguistico critico: serviria como caso de estudio de reinterpretacion especulativa de pictogramas proto-sinaiticos (bet, dalet, ayin) frente a la literatura academica consolidada.
 - Documentacion de patrimonio digital: el sitio estatico en GitHub Pages puede archivarse como ejemplo de publicacion autogestionada de contenido.
-- Revision de metadatos en HuggingFace: el repositorio es un ejemplo util para estudiar repositorios etiquetados como modelos que en realidad no contienen modelos, y como los hubs gestionan ese caso.
+- Revision de metadatos en Hugging Face: el repositorio es un ejemplo util para estudiar repositorios etiquetados como modelos que en realidad no contienen modelos, y como los hubs gestionan ese caso.
 - Auditoria de licencias: sirve para ilustrar el riesgo de reutilizar contenido alojado en hubs sin licencia declarada, ya que la ausencia de licencia implica ausencia de permisos explicitos de reutilizacion.
 - Cualquier otro uso que implique inferencia, generacion o integracion en software queda fuera de alcance por inexistencia de componentes tecnicos.
 
@@ -74,7 +74,7 @@ No disponible. No existe una categoria tecnica comparable: el repositorio no con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jessedbrown/the-human-based-understanding
+- Hugging Face: https://huggingface.co/Jessedbrown/the-human-based-understanding
 - Sitio del autor en GitHub Pages: https://jessebrown1980.github.io/the-human-based-understanding/
 - Repositorio agregador "the bridge": https://jessebrown1980.github.io/the-bridge-to-all-of-it/
 - Paper, repositorio de codigo, demo o blog tecnico: no disponibles.

@@ -77,10 +77,10 @@ L1 retenida por núcleo por Qwen3.8: 89,6 KiB. Velocidad esperada: la del LLM en
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| cohost-qwen38-27b-qwen3vl | 27B + 8B + 8B | 262.144 tokens (pool compartido) | Apache 2.0 | HuggingFace (0 descargas) | Paquete de servicio para Tenstorrent; sin validar en hardware |
-| Qwen3.8-27B (base) | 27B | no disponible | no disponible | HuggingFace | Modelo base del LLM; sin embedder ni reranker integrados |
-| Qwen3-VL-Embedding-8B (base) | 8B | no disponible | no disponible | HuggingFace | Embedder de referencia; se sirve por separado |
-| Qwen3-VL-Reranker-8B (base) | 8B | no disponible | no disponible | HuggingFace | Reranker de referencia; se sirve por separado |
+| cohost-qwen38-27b-qwen3vl | 27B + 8B + 8B | 262.144 tokens (pool compartido) | Apache 2.0 | Hugging Face (0 descargas) | Paquete de servicio para Tenstorrent; sin validar en hardware |
+| Qwen3.8-27B (base) | 27B | no disponible | no disponible | Hugging Face | Modelo base del LLM; sin embedder ni reranker integrados |
+| Qwen3-VL-Embedding-8B (base) | 8B | no disponible | no disponible | Hugging Face | Embedder de referencia; se sirve por separado |
+| Qwen3-VL-Reranker-8B (base) | 8B | no disponible | no disponible | Hugging Face | Reranker de referencia; se sirve por separado |
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ L1 retenida por núcleo por Qwen3.8: 89,6 KiB. Velocidad esperada: la del LLM en
 
 ## Enlaces
 
-- HuggingFace del paquete: https://huggingface.co/raahemnabeel/cohost-qwen38-27b-qwen3vl
+- Hugging Face del paquete: https://huggingface.co/raahemnabeel/cohost-qwen38-27b-qwen3vl
 - Modelo base LLM: https://huggingface.co/Qwen/Qwen3.8-27B
 - Drafter especulativo: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Embedder: https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B

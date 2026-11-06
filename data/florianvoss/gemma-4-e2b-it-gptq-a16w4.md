@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Formato | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| florianvoss/Gemma-4-E2B-it-GPTQ-a16w4 | Paquete runtime compilado para Modalix (devkit + 202 ELF) | 4096 tokens | GPTQ INT4 (lenguaje) + RTN INT8 (vision) | gemma | HuggingFace, 0 descargas |
-| simaai/Gemma-4-E2B-it-GPTQ-Safetensors | Safetensors GPTQ | no disponible | GPTQ | gemma | HuggingFace (modelo base) |
-| google/gemma-4-E2B-it | Safetensors | no disponible | Sin cuantizar | gemma | HuggingFace (modelo original) |
+| florianvoss/Gemma-4-E2B-it-GPTQ-a16w4 | Paquete runtime compilado para Modalix (devkit + 202 ELF) | 4096 tokens | GPTQ INT4 (lenguaje) + RTN INT8 (vision) | gemma | Hugging Face, 0 descargas |
+| simaai/Gemma-4-E2B-it-GPTQ-Safetensors | Safetensors GPTQ | no disponible | GPTQ | gemma | Hugging Face (modelo base) |
+| google/gemma-4-E2B-it | Safetensors | no disponible | Sin cuantizar | gemma | Hugging Face (modelo original) |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/florianvoss/Gemma-4-E2B-it-GPTQ-a16w4
+- Modelo en Hugging Face: https://huggingface.co/florianvoss/Gemma-4-E2B-it-GPTQ-a16w4
 - Modelo base (Safetensors GPTQ): https://huggingface.co/simaai/Gemma-4-E2B-it-GPTQ-Safetensors
 - Modelo original de Google: https://huggingface.co/google/gemma-4-E2B-it
 - LLiMa PR #295 (corrección del grafo de caché deslizante agrupada): https://github.com/sima-neat/llima/pull/295

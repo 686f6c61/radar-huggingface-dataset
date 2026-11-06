@@ -79,7 +79,7 @@ La comparación directa no es posible sin benchmarks, pero LFM2 destaca por su c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oscilla/LFM2-2.6B-Exp-mlx-4Bit
+- Modelo en Hugging Face: https://huggingface.co/Oscilla/LFM2-2.6B-Exp-mlx-4Bit
 - Modelo base (LiquidAI/LFM2-2.6B-Exp): https://huggingface.co/LiquidAI/LFM2-2.6B-Exp
 - Blog de Liquid AI sobre LFM2-2.6B: https://www.liquid.ai/blog/introducing-lfm2-2-6b-redefining-efficiency-in-language-models
 - Versión de mlx-community: https://huggingface.co/mlx-community/LFM2-2.6B-Exp-4bit

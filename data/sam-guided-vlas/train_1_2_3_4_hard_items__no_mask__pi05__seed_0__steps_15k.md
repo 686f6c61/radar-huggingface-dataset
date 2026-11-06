@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sam-guided-vlas/train_1_2_3_4_hard_items__no_mask__pi05__seed_0__steps_15k` es un fine-tuning de π₀.₅ (Pi05), un modelo Vision-Language-Action (VLA) desarrollado por Physical Intelligence para la generalización en mundo abierto en robótica. Este fine-tuning concreto ha sido realizado por el usuario `sam-guided-vlas` sobre el modelo base `lerobot/pi05_base`, utilizando el framework LeRobot de HuggingFace. El modelo está entrenado para tareas de manipulación robótica con un brazo Panda, usando como entrada imágenes de tres cámaras y el estado del robot, y generando acciones de 7 dimensiones. Con 4.143.404.816 parámetros, el modelo está pensado para resolver tareas de agarre y manipulación de objetos variados en entornos nuevos, sin necesidad de reentrenamiento. Es relevante porque demuestra la aplicación de modelos VLA de código abierto en robótica, con una arquitectura que combina visión y lenguaje para actuar en el mundo físico.
+El modelo `sam-guided-vlas/train_1_2_3_4_hard_items__no_mask__pi05__seed_0__steps_15k` es un fine-tuning de π₀.₅ (Pi05), un modelo Vision-Language-Action (VLA) desarrollado por Physical Intelligence para la generalización en mundo abierto en robótica. Este fine-tuning concreto ha sido realizado por el usuario `sam-guided-vlas` sobre el modelo base `lerobot/pi05_base`, utilizando el framework LeRobot de Hugging Face. El modelo está entrenado para tareas de manipulación robótica con un brazo Panda, usando como entrada imágenes de tres cámaras y el estado del robot, y generando acciones de 7 dimensiones. Con 4.143.404.816 parámetros, el modelo está pensado para resolver tareas de agarre y manipulación de objetos variados en entornos nuevos, sin necesidad de reentrenamiento. Es relevante porque demuestra la aplicación de modelos VLA de código abierto en robótica, con una arquitectura que combina visión y lenguaje para actuar en el mundo físico.
 
 ## Especificaciones técnicas
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada: no disponible oficialmente. Con 4.143.404.816 parámetros, en FP32 se requieren aproximadamente 16,5 GB y en FP16 unos 8,3 GB, sin contar las activaciones.
 - GPU recomendadas: no disponible. Se requiere una GPU con al menos 16 GB de VRAM para FP32, o 8-10 GB para FP16.
 - Compatibilidad con GPU de consumo: no disponible. Con cuantización podría caber en una GPU de 24 GB, pero no se ofrecen cuantizaciones.
-- Opciones de despliegue: LeRobot, HuggingFace Transformers (a través de la librería LeRobot). No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: LeRobot, Hugging Face Transformers (a través de la librería LeRobot). No se mencionan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -66,7 +66,7 @@ No se han proporcionado datos de comparación con otros modelos en la informaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_3_4_hard_items__no_mask__pi05__seed_0__steps_15k
+- Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_3_4_hard_items__no_mask__pi05__seed_0__steps_15k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_3_4_hard_items__no_mask
 - Blog de Physical Intelligence sobre π₀.₅: https://www.physicalintelligence.company/blog/pi05

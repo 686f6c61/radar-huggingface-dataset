@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`g-h-chen/gen_judge_align_ckpt` es un checkpoint de ajuste fino (fine-tune) orientado a la evaluacion automática de respuestas mediante rúbricas, publicado por el usuario `g-h-chen` en HuggingFace. El modelo se construye sobre la familia Qwen3: la model card referencia explícitamente `Qwen/Qwen3-8B` y `Qwen/Qwen3-32B` como modelos base, mientras que las etiquetas del repositorio marcan `Qwen/Qwen3-32B` como base del fine-tune. La etiqueta `rubric-judge` junto con la palabra `align` del nombre sugieren un entrenamiento de alineamiento para actuar como juez con criterios explícitos, aunque la información disponible no detalla el pipeline de entrenamiento ni el dataset empleado.
+`g-h-chen/gen_judge_align_ckpt` es un checkpoint de ajuste fino (fine-tune) orientado a la evaluacion automática de respuestas mediante rúbricas, publicado por el usuario `g-h-chen` en Hugging Face. El modelo se construye sobre la familia Qwen3: la model card referencia explícitamente `Qwen/Qwen3-8B` y `Qwen/Qwen3-32B` como modelos base, mientras que las etiquetas del repositorio marcan `Qwen/Qwen3-32B` como base del fine-tune. La etiqueta `rubric-judge` junto con la palabra `align` del nombre sugieren un entrenamiento de alineamiento para actuar como juez con criterios explícitos, aunque la información disponible no detalla el pipeline de entrenamiento ni el dataset empleado.
 
-Se trata de un artefacto de investigación (`research`), sin descargas ni interacciones registradas, con acceso restringido mediante solicitud en HuggingFace y sin licencia declarada. El repositorio ocupa 245,7 GB, un tamaño muy superior al de un único conjunto de pesos de 32 000 millones de parámetros en bf16 (unos 64 GB), lo que apunta a que contiene varios checkpoints o estados de entrenamiento intermedios; la información disponible no confirma cuáles.
+Se trata de un artefacto de investigación (`research`), sin descargas ni interacciones registradas, con acceso restringido mediante solicitud en Hugging Face y sin licencia declarada. El repositorio ocupa 245,7 GB, un tamaño muy superior al de un único conjunto de pesos de 32 000 millones de parámetros en bf16 (unos 64 GB), lo que apunta a que contiene varios checkpoints o estados de entrenamiento intermedios; la información disponible no confirma cuáles.
 
 Su relevancia es acotada y experimental: cubre un nicho concreto (modelos jueces para RLHF, evaluación de LLM-as-a-judge y verificación de rúbricas) sobre una base Qwen3, pero carece de model card detallada, métricas publicadas y licencia, por lo que no es apto para producción sin una evaluacion propia previa.
 
@@ -21,7 +21,7 @@ Su relevancia es acotada y experimental: cubre un nicho concreto (modelos jueces
 | Licencia | no disponible (no declarada; además el acceso es restringido) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 245,7 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline | text-generation |
 | Tarea declarada | rubric-judge (evaluación con rúbricas) |
 
@@ -79,7 +79,7 @@ Los datos de los modelos base Qwen3 provienen de su documentación pública y se
 
 - Ausencia total de model card: no se documentan datos de entrenamiento, metodología, hiperparámetros ni evaluación, lo que impide auditar sesgos o calidad.
 - Licencia no declarada: no hay permiso explícito de uso comercial; hay que contactar con el autor antes de cualquier uso en producción.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace y la aprobación puede no ser automática.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face y la aprobación puede no ser automática.
 - Idiomas: solo se declara inglés; el rendimiento en castellano no está verificado y probablemente sea inferior al del modelo base.
 - Riesgo de alucinación: como juez, puede producir puntuaciones o justificaciones no fundamentadas; se recomienda calibrar contra anotaciones humanas antes de usarlo como señal de entrenamiento.
 - Sesgo de auto-preferencia y de longitud: los jueces basados en LLM tienden a favorecer respuestas largas y estilos similares al suyo; no hay información sobre mitigaciones aplicadas.
@@ -90,7 +90,7 @@ Los datos de los modelos base Qwen3 provienen de su documentación pública y se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g-h-chen/gen_judge_align_ckpt
+- Modelo en Hugging Face: https://huggingface.co/g-h-chen/gen_judge_align_ckpt
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3-32B
 - Modelo base alternativo mencionado en la model card: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

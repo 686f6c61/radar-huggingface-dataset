@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AFCI_part15 no es un modelo de inteligencia artificial, sino la decimoquinta entrega de un kit de desarrollo offline para un sistema de deteccion de fallos de arco electrico (AFCI, arc-fault circuit interrupter) orientado a la prevencion de incendios electricos. El repositorio lo publica el usuario danielsaldana en HuggingFace y contiene exclusivamente herramientas de diseno de hardware: en concreto, el instalador oficial de KiCad 10.0.7 para Windows x64, dividido en diez fragmentos de menos de 100 MB y acompanado de scripts de reconstruccion (`join_parts.ps1` y `join_parts.sh`) con verificacion SHA256.
+AFCI_part15 no es un modelo de inteligencia artificial, sino la decimoquinta entrega de un kit de desarrollo offline para un sistema de deteccion de fallos de arco electrico (AFCI, arc-fault circuit interrupter) orientado a la prevencion de incendios electricos. El repositorio lo publica el usuario danielsaldana en Hugging Face y contiene exclusivamente herramientas de diseno de hardware: en concreto, el instalador oficial de KiCad 10.0.7 para Windows x64, dividido en diez fragmentos de menos de 100 MB y acompanado de scripts de reconstruccion (`join_parts.ps1` y `join_parts.sh`) con verificacion SHA256.
 
 El sistema completo al que pertenece esta pieza sigue una cadena de procesado definida por el autor: sensor de corriente (transformador de corriente o Rogowski) que alimenta la etapa analogica de acondicionamiento, muestreo mediante ADC y DMA de un microcontrolador STM32F407, extraccion de caracteristicas en el dominio de la frecuencia mediante FFT/STFT y clasificacion final con una red neuronal profunda cuantizada (TinyML) que decide la activacion del relé de disparo. El objetivo declarado es un entorno de formacion e inferencia completamente offline sobre un PC con Windows 10/11 x64 y Python en CPU, sin dependencia de servicios en la nube.
 
@@ -64,7 +64,7 @@ No disponible. AFCI_part15 no es un modelo de IA y no existe una categoria de mo
 
 ## Limitaciones y advertencias
 
-- No es un modelo de IA: no contiene pesos, tokenizador, arquitectura ni pipeline de HuggingFace; no puede usarse para inferencia.
+- No es un modelo de IA: no contiene pesos, tokenizador, arquitectura ni pipeline de Hugging Face; no puede usarse para inferencia.
 - La licencia declarada es "other" y cada archivo conserva la licencia de su publicador original (GPL-3.0 para KiCad y CC-BY-SA 4.0 con excepcion para sus librerias), por lo que el uso comercial del contenido esta sujeto a dichas licencias, no a una licencia unica del repositorio.
 - El instalador esta pensado exclusivamente para Windows 10/11 x64; no se distribuyen binarios para Linux ni macOS en esta parte.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin validacion externa por parte de la comunidad.
@@ -74,7 +74,7 @@ No disponible. AFCI_part15 no es un modelo de IA y no existe una categoria de mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/danielsaldana/AFCI_part15
+- Repositorio Hugging Face: https://huggingface.co/danielsaldana/AFCI_part15
 - Indice maestro del kit (AFCI_part6): https://huggingface.co/danielsaldana/AFCI_part6/blob/main/00_START_HERE_MASTER_INDEX.md
 - Repositorio espejo de KiCad: https://github.com/KiCad/kicad-source-mirror
 - Nota de aplicacion de Texas Instruments TIDA-010971: no disponible como enlace directo en la informacion proporcionada

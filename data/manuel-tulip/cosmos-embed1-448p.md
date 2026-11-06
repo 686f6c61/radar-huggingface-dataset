@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Cosmos-Embed1-448p es un modelo de la familia Cosmos de NVIDIA, publicado en HuggingFace bajo el identificador `manuel-tulip/Cosmos-Embed1-448p`. Se trata de un repositorio de espejo comunitario (el autor declarado es `manuel-tulip`, no una cuenta oficial de NVIDIA) que redistribuye pesos en formato safetensors con un total de 1.196.926.328 parametros (aproximadamente 1,2 mil millones). El sufijo `448p` del nombre apunta a una resolucion espacial de entrada de 448p, coherente con un modelo orientado a video; la model card incluida en la informacion proporcionada consiste practicamente en su totalidad en el texto de la licencia NVIDIA Open Model License, sin fichas tecnicas de arquitectura, entrenamiento o evaluacion.
+Cosmos-Embed1-448p es un modelo de la familia Cosmos de NVIDIA, publicado en Hugging Face bajo el identificador `manuel-tulip/Cosmos-Embed1-448p`. Se trata de un repositorio de espejo comunitario (el autor declarado es `manuel-tulip`, no una cuenta oficial de NVIDIA) que redistribuye pesos en formato safetensors con un total de 1.196.926.328 parametros (aproximadamente 1,2 mil millones). El sufijo `448p` del nombre apunta a una resolucion espacial de entrada de 448p, coherente con un modelo orientado a video; la model card incluida en la informacion proporcionada consiste practicamente en su totalidad en el texto de la licencia NVIDIA Open Model License, sin fichas tecnicas de arquitectura, entrenamiento o evaluacion.
 
 El modelo se etiqueta con `cosmos`, `nvidia`, `nemo` y `custom_code`, y la libreria declarada es `cosmos`, lo que indica dependencia de codigo propio (no cubierto por transformers de forma estandar) para cargar y ejecutar los pesos. El tamano del repositorio es de 2,4 GB, una cifra compatible con pesos almacenados a 2 bytes por parametro (fp16/bf16) para 1,2 mil millones de parametros, aunque este extremo no se confirma de forma explicita en la informacion disponible.
 
-Su relevancia actual es doble. Por un lado, forma parte del ecosistema Cosmos de NVIDIA para modelos de mundo y procesamiento de video. Por otro, ilustra un caso habitual en HuggingFace: espejos comunitarios de pesos con licencia permisiva pero con obligaciones de atribucion, que conviene auditar antes de integrarlos en produccion, ya que el repositorio no incluye documentacion tecnica propia ni resultados de evaluacion publicados.
+Su relevancia actual es doble. Por un lado, forma parte del ecosistema Cosmos de NVIDIA para modelos de mundo y procesamiento de video. Por otro, ilustra un caso habitual en Hugging Face: espejos comunitarios de pesos con licencia permisiva pero con obligaciones de atribucion, que conviene auditar antes de integrarlos en produccion, ya que el repositorio no incluye documentacion tecnica propia ni resultados de evaluacion publicados.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Su relevancia actual es doble. Por un lado, forma parte del ecosistema Cosmos de
 | Licencia | NVIDIA Open Model License (`license: other`, `license_name: nvidia-open-model-license`) |
 | Formato de pesos | safetensors (con `custom_code` para la carga) |
 
-Datos adicionales del repositorio: tamano 2,4 GB, 0 descargas, 0 likes, creado el 2026-09-24 y actualizado el 2026-09-24 segun los metadatos de HuggingFace; etiqueta `arxiv:2301.12597` declarada por el autor.
+Datos adicionales del repositorio: tamano 2,4 GB, 0 descargas, 0 likes, creado el 2026-09-24 y actualizado el 2026-09-24 segun los metadatos de Hugging Face; etiqueta `arxiv:2301.12597` declarada por el autor.
 
 ## Arquitectura y entrenamiento
 
@@ -77,7 +77,7 @@ Estimaciones basadas en el numero de parametros declarado (1.196.926.328). Se in
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cosmos-Embed1-448p (este repositorio) | 1.196.926.328 | entrada de 448p segun el nombre; ventana temporal no disponible | no disponible | NVIDIA Open Model License | espejo comunitario en HuggingFace, 0 descargas |
+| Cosmos-Embed1-448p (este repositorio) | 1.196.926.328 | entrada de 448p segun el nombre; ventana temporal no disponible | no disponible | NVIDIA Open Model License | espejo comunitario en Hugging Face, 0 descargas |
 | Otras variantes de la familia Cosmos-Embed1 | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Otros codificadores de video comparables (por ejemplo familias basadas en ViT con atencion temporal) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -101,7 +101,7 @@ No se incluyen cifras comparativas porque la informacion proporcionada no contie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/manuel-tulip/Cosmos-Embed1-448p
+- Repositorio en Hugging Face: https://huggingface.co/manuel-tulip/Cosmos-Embed1-448p
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license
 - Terminos de Trustworthy AI de NVIDIA (referenciados en la licencia): https://www.nvidia.com/en-us/agreements/trustworthy-ai/terms/
 - Referencia arXiv declarada en los tags del repositorio: https://arxiv.org/abs/2301.12597

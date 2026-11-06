@@ -4,7 +4,7 @@
 
 El modelo `open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-SFT-Tulu3-decontaminated-nc30k` es un modelo de lenguaje de aproximadamente 1.714 millones de parámetros (1,7B) desarrollado por el colectivo open-sci. Se trata de un ajuste fino supervisado (SFT) de un modelo base denominado MixtureVitae-300BT-v1, entrenado sobre el conjunto de datos Nemotron-Cascade-SFT-Stage-1-30k-sharegpt-hf. El identificador del modelo sugiere que el modelo base fue preentrenado con unos 300.000 millones de tokens (300BT) y una longitud de contexto de 16.000 tokens, y que el ajuste se realizó sobre datos de Tulu3 decontaminados.
 
-El modelo está diseñado para tareas de extracción de características (`feature-extraction`) según el pipeline declarado en HuggingFace, aunque el entrenamiento SFT apunta a un uso generativo. La model card es automática y muy escasa: no incluye descripción, usos previstos, datos de evaluación ni resultados de benchmarks. El repositorio ocupa 3,4 GB y los pesos están en formato safetensors.
+El modelo está diseñado para tareas de extracción de características (`feature-extraction`) según el pipeline declarado en Hugging Face, aunque el entrenamiento SFT apunta a un uso generativo. La model card es automática y muy escasa: no incluye descripción, usos previstos, datos de evaluación ni resultados de benchmarks. El repositorio ocupa 3,4 GB y los pesos están en formato safetensors.
 
 Su relevancia radica en formar parte del ecosistema de modelos abiertos de pequeño tamaño para investigación, con un ajuste SFT sobre datos de razonamiento y conversación (sharegpt) procedente de la cascada Nemotron. No obstante, la falta de documentación y de métricas publicadas limita seriamente su evaluación para producción.
 
@@ -31,7 +31,7 @@ Los hiperparámetros de entrenamiento documentados son: learning rate de 4e-05, 
 
 - Generación de texto y conversación multi-turno, derivada del ajuste SFT sobre datos ShareGPT.
 - Razonamiento y resolución de tareas de tipo instrucción, presumiblemente heredadas del dataset Nemotron-Cascade-SFT-Stage-1.
-- Extracción de características (`feature-extraction`), pipeline declarado en HuggingFace; puede usarse para embeddings de frases o representaciones internas.
+- Extracción de características (`feature-extraction`), pipeline declarado en Hugging Face; puede usarse para embeddings de frases o representaciones internas.
 - Soporte de tool calling / function calling: no disponible (no documentado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
 - Capacidades multilingües: no disponible (idiomas no declarados).
@@ -85,5 +85,5 @@ La comparación se basa en datos públicos de los modelos alternativos; para el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-SFT-Tulu3-decontaminated-nc30k
+- Hugging Face: https://huggingface.co/open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-SFT-Tulu3-decontaminated-nc30k
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

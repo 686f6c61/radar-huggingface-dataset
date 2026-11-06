@@ -72,10 +72,10 @@ Los unicos datos de rendimiento publicados son de recursos, no de calidad:
 
 | Modelo | Parametros | Cuantizacion | Memoria declarada | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Anotos/LFM2-2.6B-MLX-4bit | 2.569.272.320 | MLX 4 bits, grupo 64, 4,5 bits/peso | ~1,9 GB de pico en M4 | No disponible | LFM Open License v1.0 | Publico en HuggingFace (30 descargas, 1 like) |
-| LiquidAI/LFM2-2.6B (base) | 2.569.272.320 | bf16 | No disponible | No disponible | LFM Open License v1.0 | Publico en HuggingFace |
-| Anotos/LFM2-8B-A1B-MLX-4bit | No disponible | MLX 4 bits | Orientado a iPhone de 12 GB y Mac de 16 GB | No disponible | No disponible | Publico en HuggingFace |
-| Anotos/Gemma-4-E4B-it-Text-MLX-4bit | No disponible | MLX 4 bits | Orientado a iPhone y Mac de 8 GB | No disponible | No disponible | Publico en HuggingFace |
+| Anotos/LFM2-2.6B-MLX-4bit | 2.569.272.320 | MLX 4 bits, grupo 64, 4,5 bits/peso | ~1,9 GB de pico en M4 | No disponible | LFM Open License v1.0 | Publico en Hugging Face (30 descargas, 1 like) |
+| LiquidAI/LFM2-2.6B (base) | 2.569.272.320 | bf16 | No disponible | No disponible | LFM Open License v1.0 | Publico en Hugging Face |
+| Anotos/LFM2-8B-A1B-MLX-4bit | No disponible | MLX 4 bits | Orientado a iPhone de 12 GB y Mac de 16 GB | No disponible | No disponible | Publico en Hugging Face |
+| Anotos/Gemma-4-E4B-it-Text-MLX-4bit | No disponible | MLX 4 bits | Orientado a iPhone y Mac de 8 GB | No disponible | No disponible | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones; la comparacion se limita a tamano, cuantizacion y perfil de memoria objetivo declarado por el autor.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones; la compa
 - Sesgos conocidos: no disponibles. Al no publicarse evaluacion del modelo base en este repositorio, no se puede afirmar nada sobre sesgos de genero, raza, idioma o dominio.
 - Riesgo de alucinacion: no cuantificado. Un modelo denso de 2,6B cuantizado a 4 bits tiende a producir mas errores factuales que modelos mayores, pero no hay medicion disponible.
 - Limitaciones de contexto e idioma: no disponibles. La model card no especifica longitud de contexto, idiomas soportados ni calidad por idioma, de modo que no se puede garantizar un rendimiento correcto en castellano.
-- Licencia: LFM Open License v1.0. El uso comercial esta limitado a organizaciones por debajo del umbral de ingresos definido en la licencia; es imprescindible revisar `LICENSE` antes de integrarlo en un producto comercial. El campo de HuggingFace aparece como `other`, no como licencia estandar.
+- Licencia: LFM Open License v1.0. El uso comercial esta limitado a organizaciones por debajo del umbral de ingresos definido en la licencia; es imprescindible revisar `LICENSE` antes de integrarlo en un producto comercial. El campo de Hugging Face aparece como `other`, no como licencia estandar.
 - Ambito restringido a Apple Silicon: al depender de MLX, no es desplegable directamente en infraestructura con GPU NVIDIA o AMD sin reconvertir el modelo base.
 - Repositorio de terceros: es una conversion no oficial, mantenida por un usuario independiente y no por Liquid AI. La trazabilidad depende del commit `36ed799f70` y del SHA-256 publicado, pero no hay garantia de mantenimiento ni de actualizaciones.
 - Traccion minima: 30 descargas y 1 like en el momento de la consulta, con superficie de validacion por parte de la comunidad practicamente nula.

@@ -74,9 +74,9 @@ No se dispone de datos de rendimiento de alternativas en la información proporc
 
 | Modelo | Tipo | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Fendercorp/Kimodo-MLX | Pack de movimiento 3D (denoiser) | MLX / safetensors, Apple Silicon | NVIDIA Open Model License (pesos de movimiento); texto Llama aparte | HuggingFace, 0 descargas |
-| nvidia/Kimodo-SOMA-RP-v1.1 | Modelo base upstream (denoiser de movimiento SOMA RP v1.1) | no disponible | NVIDIA Open Model | HuggingFace |
-| LocalAI-io/Llama-3-Kimodo-GGML | Codificador de texto (Llama 3) | GGML | Términos de Meta Llama | HuggingFace, repositorio separado |
+| Fendercorp/Kimodo-MLX | Pack de movimiento 3D (denoiser) | MLX / safetensors, Apple Silicon | NVIDIA Open Model License (pesos de movimiento); texto Llama aparte | Hugging Face, 0 descargas |
+| nvidia/Kimodo-SOMA-RP-v1.1 | Modelo base upstream (denoiser de movimiento SOMA RP v1.1) | no disponible | NVIDIA Open Model | Hugging Face |
+| LocalAI-io/Llama-3-Kimodo-GGML | Codificador de texto (Llama 3) | GGML | Términos de Meta Llama | Hugging Face, repositorio separado |
 | Otros generadores de movimiento 3D (por ejemplo, MDM, MLD, MotionDiffuse) | Generación de movimiento | PyTorch / CUDA | variable | no verificados en la información disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento de alternativas en la información proporc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Fendercorp/Kimodo-MLX
+- Repositorio en Hugging Face: https://huggingface.co/Fendercorp/Kimodo-MLX
 - Modelo base upstream: https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1.1
 - Codificador de texto separado: https://huggingface.co/LocalAI-io/Llama-3-Kimodo-GGML
 - Licencia NVIDIA Open Model: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/

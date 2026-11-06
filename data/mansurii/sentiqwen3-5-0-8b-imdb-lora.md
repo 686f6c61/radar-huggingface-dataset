@@ -2,11 +2,11 @@
 
 ## Resumen
 
-SentiQwen3.5-0.8B-IMDb-lora es un ajuste fino mediante LoRA del modelo base unsloth/Qwen3.5-0.8B, publicado por el usuario mansurii en HuggingFace. El nombre del adaptador sugiere un entrenamiento orientado al analisis de sentimiento sobre el corpus IMDb (resenas cinematograficas en ingles), aunque la model card no documenta explicitamente la tarea, el dataset ni los hiperparametros utilizados. El modelo se distribuye con licencia Apache 2.0 y esta etiquetado unicamente para el idioma ingles.
+SentiQwen3.5-0.8B-IMDb-lora es un ajuste fino mediante LoRA del modelo base unsloth/Qwen3.5-0.8B, publicado por el usuario mansurii en Hugging Face. El nombre del adaptador sugiere un entrenamiento orientado al analisis de sentimiento sobre el corpus IMDb (resenas cinematograficas en ingles), aunque la model card no documenta explicitamente la tarea, el dataset ni los hiperparametros utilizados. El modelo se distribuye con licencia Apache 2.0 y esta etiquetado unicamente para el idioma ingles.
 
 Se trata de un adaptador de bajo rango (LoRA) sobre un transformer denso de aproximadamente 0,8 mil millones de parametros de la familia Qwen3.5, entrenado con la libreria Unsloth y el stack TRL. Su relevancia practica es limitada: el repositorio no contiene pesos en formato completo (tamano del repo 0,0 GB), no tiene descargas ni interacciones, y no se publican resultados de evaluacion. Debe considerarse un artefacto experimental o de demostracion mas que un modelo listo para produccion.
 
-La ficha se elabora a partir de los metadatos disponibles en HuggingFace y de la model card del autor. Cualquier dato no documentado se indica como no disponible, sin inferencias sobre el rendimiento real del adaptador.
+La ficha se elabora a partir de los metadatos disponibles en Hugging Face y de la model card del autor. Cualquier dato no documentado se indica como no disponible, sin inferencias sobre el rendimiento real del adaptador.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mansurii/SentiQwen3.5-0.8B-IMDb-lora
+- Modelo en Hugging Face: https://huggingface.co/mansurii/SentiQwen3.5-0.8B-IMDb-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - TRL (libreria de entrenamiento): https://github.com/huggingface/trl

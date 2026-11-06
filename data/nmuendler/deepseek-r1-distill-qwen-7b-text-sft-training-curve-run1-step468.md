@@ -6,7 +6,7 @@ Este repositorio no contiene un modelo completo, sino un **adaptador LoRA** (lib
 
 El modelo base sobre el que se aplica es un destilado de razonamiento de DeepSeek: un transformer decoder-only de aproximadamente 7,6 mil millones de parámetros, derivado de la familia Qwen2.5, que genera cadenas de pensamiento largas antes de responder. El adaptador hereda por tanto esa arquitectura y esa ventana de contexto, pero las capacidades efectivas del checkpoint del paso 468 no están documentadas ni evaluadas.
 
-Su relevancia es fundamentalmente **de investigación**: los checkpoints intermedios de una ejecución de SFT permiten analizar cuándo aparecen o se degradan habilidades concretas, comparar dinámicas de entrenamiento entre ejecuciones y estudiar el efecto de distintos regímenes de datos. Para uso práctico, el valor está en el adaptador como objeto de análisis, no como asistente listo para desplegar: la model card es la plantilla automática de HuggingFace, sin rellenar, y no aporta datos de entrenamiento, licencia ni evaluación.
+Su relevancia es fundamentalmente **de investigación**: los checkpoints intermedios de una ejecución de SFT permiten analizar cuándo aparecen o se degradan habilidades concretas, comparar dinámicas de entrenamiento entre ejecuciones y estudiar el efecto de distintos regímenes de datos. Para uso práctico, el valor está en el adaptador como objeto de análisis, no como asistente listo para desplegar: la model card es la plantilla automática de Hugging Face, sin rellenar, y no aporta datos de entrenamiento, licencia ni evaluación.
 
 ## Especificaciones técnicas
 
@@ -29,7 +29,7 @@ Su relevancia es fundamentalmente **de investigación**: los checkpoints interme
 
 La arquitectura subyacente es la del modelo base: un transformer decoder-only denso de la familia Qwen2.5, con normalizacion RMSNorm, activacion SwiGLU y atencion con consultas agrupadas (GQA), entrenado originalmente para generar razonamiento explícito en formato de cadena de pensamiento. El adaptador añade matrices de bajo rango (LoRA) sobre ese modelo congelado, de modo que solo se actualiza una fracción pequeña de parametros; el repositorio ocupa 0,3 GB, coherente con un adaptador de rango bajo y no con una copia de los pesos completos.
 
-Sobre el procedimiento de entrenamiento **no hay informacion publicada**: la model card es la plantilla por defecto de HuggingFace y todos los campos relevantes (datos, hiperparametros, precision, hardware, tiempos) aparecen como `[More Information Needed]`. El unico dato fiable es el que se deduce del nombre del repositorio: se trata de un ajuste supervisado sobre datos de texto (`text-sft`), de la ejecucion 1 (`run1`), guardado en el paso 468 (`step468`). No se documentan tecnicas como RLHF, DPO, decodificacion especulativa ni variantes de atencion lineal. El tag `arxiv:1910.09700` que aparece en el repositorio es un residuo de la plantilla de model card (la calculadora de impacto de carbono de Lacoste et al.), no una referencia al metodo del adaptador.
+Sobre el procedimiento de entrenamiento **no hay informacion publicada**: la model card es la plantilla por defecto de Hugging Face y todos los campos relevantes (datos, hiperparametros, precision, hardware, tiempos) aparecen como `[More Information Needed]`. El unico dato fiable es el que se deduce del nombre del repositorio: se trata de un ajuste supervisado sobre datos de texto (`text-sft`), de la ejecucion 1 (`run1`), guardado en el paso 468 (`step468`). No se documentan tecnicas como RLHF, DPO, decodificacion especulativa ni variantes de atencion lineal. El tag `arxiv:1910.09700` que aparece en el repositorio es un residuo de la plantilla de model card (la calculadora de impacto de carbono de Lacoste et al.), no una referencia al metodo del adaptador.
 
 ## Capacidades
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (paso 468) | ~7,6 B base + LoRA no cuantificado | no disponible | no disponible | HuggingFace, 0 descargas |
-| DeepSeek-R1-Distill-Qwen-7B (base) | ~7,6 B | 131 072 tokens segun su model card | MIT | HuggingFace, ampliamente desplegado |
-| DeepSeek-R1-Distill-Llama-8B | ~8 B | 128K heredado de Llama 3.1 8B | Llama 3.1 Community License | HuggingFace |
-| Qwen2.5-7B-Instruct | ~7,6 B | 131 072 tokens | Apache 2.0 | HuggingFace |
+| Este adaptador (paso 468) | ~7,6 B base + LoRA no cuantificado | no disponible | no disponible | Hugging Face, 0 descargas |
+| DeepSeek-R1-Distill-Qwen-7B (base) | ~7,6 B | 131 072 tokens segun su model card | MIT | Hugging Face, ampliamente desplegado |
+| DeepSeek-R1-Distill-Llama-8B | ~8 B | 128K heredado de Llama 3.1 8B | Llama 3.1 Community License | Hugging Face |
+| Qwen2.5-7B-Instruct | ~7,6 B | 131 072 tokens | Apache 2.0 | Hugging Face |
 
 La comparacion de rendimiento no es posible: este adaptador no publica metricas y los resultados del modelo base pertenecen a la documentacion de DeepSeek, no a este checkpoint. La diferencia practica frente a las alternativas es la licencia (MIT o Apache 2.0 frente a una licencia no declarada en el adaptador) y el nivel de soporte: los tres modelos comparados tienen model cards completas, mientras que este repositorio no.
 

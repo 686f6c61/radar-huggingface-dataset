@@ -70,7 +70,7 @@ No disponible. No se han encontrado modelos comparables en la informacion propor
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mondk/GGUF.msh-tiny
+- Modelo GGUF en Hugging Face: https://huggingface.co/mondk/GGUF.msh-tiny
 - Modelo base safetensors: https://huggingface.co/mondk/Safetensors.msh-tiny
 - Dataset Alpaca: https://huggingface.co/datasets/tatsu-lab/alpaca
 - Dataset OpenHermes-2.5: https://huggingface.co/datasets/teknium/OpenHermes-2.5

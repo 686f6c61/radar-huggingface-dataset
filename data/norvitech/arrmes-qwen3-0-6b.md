@@ -74,9 +74,9 @@ El autor reporta ademas una exactitud en salida cruda del modelo de entre 90,6 %
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Arrmes-Qwen3-0.6B | 0,6 B + LoRA | no disponible | Function calling para stack *arr autoalojado | Apache-2.0 | HuggingFace (MLX) |
-| Qwen/Qwen3-0.6B (base) | 0,6 B | no disponible | LLM generalista | Apache-2.0 | HuggingFace |
-| Modelos de function calling de mayor tamano (p. ej. variantes de 7–8 B) | 7–8 B | variable | Tool use generalista | variable | HuggingFace |
+| Arrmes-Qwen3-0.6B | 0,6 B + LoRA | no disponible | Function calling para stack *arr autoalojado | Apache-2.0 | Hugging Face (MLX) |
+| Qwen/Qwen3-0.6B (base) | 0,6 B | no disponible | LLM generalista | Apache-2.0 | Hugging Face |
+| Modelos de function calling de mayor tamano (p. ej. variantes de 7–8 B) | 7–8 B | variable | Tool use generalista | variable | Hugging Face |
 
 La comparacion directa con alternativas especializadas en function calling no esta disponible en la informacion proporcionada. Frente a su modelo base, Arrmes anade el contrato cerrado de 20 acciones, la abstencion estructurada y el rechazo de comandos destructivos, a costa de perder generalidad fuera del dominio *arr.
 
@@ -94,6 +94,6 @@ La comparacion directa con alternativas especializadas en function calling no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NorviTech/arrmes-qwen3-0.6b
+- Modelo en Hugging Face: https://huggingface.co/NorviTech/arrmes-qwen3-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Sitio del autor (NorviTech Suite): https://norvitech.com

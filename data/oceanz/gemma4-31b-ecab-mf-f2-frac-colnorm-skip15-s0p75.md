@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OceanZ/gemma4-31b-ecab-mf-f2-frac-colnorm-skip15-s0p75
+- Modelo en Hugging Face: https://huggingface.co/OceanZ/gemma4-31b-ecab-mf-f2-frac-colnorm-skip15-s0p75
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

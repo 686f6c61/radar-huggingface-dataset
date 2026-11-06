@@ -19,7 +19,7 @@ El modelo tiene 11.959.730.224 parametros (12B) y esta disponible en formato saf
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (tambien compatible con GGUF) |
 
-Nota: el tag de HuggingFace incluye "image-text-to-text", pero el pipeline declarado es text-generation. No se confirma si el modelo base tiene capacidades multimodales.
+Nota: el tag de Hugging Face incluye "image-text-to-text", pero el pipeline declarado es text-generation. No se confirma si el modelo base tiene capacidades multimodales.
 
 ## Arquitectura y entrenamiento
 
@@ -81,10 +81,10 @@ No se dispone de informacion comparativa con otros modelos. El modelo base googl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ishowbackup/gemma-4-12B-it-uncensored
+- Repositorio Hugging Face: https://huggingface.co/Ishowbackup/gemma-4-12B-it-uncensored
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Blog sobre norm-preserving biprojected abliteration: https://huggingface.co/blog/grimjim/norm-preserving-biprojected-abliteration
 - PR de llama.cpp para Gemma4Unified: https://github.com/ggml-org/llama.cpp/pull/24118
 - Repositorio de investigacion (mencionado en el README): https://github.com/TrevorS/gemma-4-abliteration
 
-Nota: el README menciona a TrevorJS y TrevorS como autores, pero el repositorio de HuggingFace esta bajo el usuario Ishowbackup. Se recomienda verificar la autoria real.
+Nota: el README menciona a TrevorJS y TrevorS como autores, pero el repositorio de Hugging Face esta bajo el usuario Ishowbackup. Se recomienda verificar la autoria real.

@@ -6,7 +6,7 @@
 
 El modelo resuelve una tarea concreta de locomoción, `Mjlab-TugOfWar-MicroDuck`, dentro del entorno de simulación mjlab. La política es de tipo "perpetuo": una vez cargada en una ranura de política del daemon `robotctl`, ejecuta la marcha de forma continua hasta que se le indique lo contrario. Esto la diferencia de políticas episódicas que requieren reinicio tras cada secuencia.
 
-Su relevancia es limitada y muy específica: se publica como artefacto reproducible de un experimento de entrenamiento (checkpoint 200, semilla 1, commit concreto) en el repositorio de retos del autor. El repositorio ocupa 0.0 GB según HuggingFace, lo que sugiere un artefacto de pequeño tamaño (coherente con una red de política para un robot de 14 actuadores), aunque no se dispone del recuento exacto de parámetros.
+Su relevancia es limitada y muy específica: se publica como artefacto reproducible de un experimento de entrenamiento (checkpoint 200, semilla 1, commit concreto) en el repositorio de retos del autor. El repositorio ocupa 0.0 GB según Hugging Face, lo que sugiere un artefacto de pequeño tamaño (coherente con una red de política para un robot de 14 actuadores), aunque no se dispone del recuento exacto de parámetros.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Observación / acción | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-tug-of-war-run-1102-2004 | Política RL (ONNX) | 61-D / 14-D | 50 Hz | no disponible | HuggingFace |
+| microduck-tug-of-war-run-1102-2004 | Política RL (ONNX) | 61-D / 14-D | 50 Hz | no disponible | Hugging Face |
 | Otras políticas microduck del mismo autor | Política RL (ONNX) | no disponible | no disponible | no disponible | Repositorio `microduck-challenges` |
 | Políticas de referencia de mjlab-microduck | Política RL | no disponible | no disponible | no disponible | `mjlab-microduck 0.1.0` |
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de las a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RSanchez996/microduck-tug-of-war-run-1102-2004
+- Hugging Face: https://huggingface.co/RSanchez996/microduck-tug-of-war-run-1102-2004
 - Repositorio de retos del autor: https://github.com/RSanchez996/microduck-challenges.git
 - Proyecto microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (no se proporciona URL directa)

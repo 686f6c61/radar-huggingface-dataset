@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (no un modelo completo) publicado por el usuario nmuendler bajo el identificador `Olmo3-7B-text-sftmerge-run1-alpha0_25`. Se trata de un artefacto PEFT cuyo modelo base declarado es `allenai/Olmo-3-7B-Think`, la variante orientada a razonamiento de la familia OLMo 3 de 7 000 millones de parámetros desarrollada por el Allen Institute for AI (AI2). El adaptador se distribuye en formato safetensors y ocupa aproximadamente 0,3 GB, un tamano coherente con pesos de bajo rango (LoRA) en lugar de pesos completos.
 
-El nombre del repositorio sugiere un proceso de *merge* de adaptadores entrenados con ajuste supervisado (SFT), correspondiente a la ejecucion 1, con un factor de escala alpha de 0,25. Esta interpretacion procede unicamente de la nomenclatura del repositorio y no esta confirmada por ninguna documentacion del autor. La model card es la plantilla por defecto de HuggingFace y no ha sido cumplimentada: no se documentan datos de entrenamiento, hiperparametros, licencia, idiomas ni evaluacion.
+El nombre del repositorio sugiere un proceso de *merge* de adaptadores entrenados con ajuste supervisado (SFT), correspondiente a la ejecucion 1, con un factor de escala alpha de 0,25. Esta interpretacion procede unicamente de la nomenclatura del repositorio y no esta confirmada por ninguna documentacion del autor. La model card es la plantilla por defecto de Hugging Face y no ha sido cumplimentada: no se documentan datos de entrenamiento, hiperparametros, licencia, idiomas ni evaluacion.
 
 La relevancia de esta ficha es limitada y debe interpretarse como tal: se trata de un artefacto de investigacion sin descargas ni valoraciones en el momento de su publicacion, sin licencia declarada y sin informacion tecnica verificable. Resulta util unicamente como ejemplo de flujo de trabajo PEFT sobre la familia OLMo 3, no como modelo listo para produccion.
 
@@ -33,7 +33,7 @@ No hay informacion publicada sobre la arquitectura del adaptador mas alla de su 
 
 Respecto al entrenamiento, la unica pista es la nomenclatura del repositorio: `text-sftmerge` apunta a una fusion de adaptadores entrenados con ajuste supervisado sobre datos de texto, `run1` a la primera ejecucion del experimento y `alpha0_25` a un factor de escala de 0,25. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF o DPO, ni los hiperparametros empleados (tasa de aprendizaje, epocas, precision). La model card incluye el campo de hiperparametros con el valor `[More Information Needed]` en todas sus filas.
 
-Cabe senalar que la etiqueta `arxiv:1910.0970` presente en los metadatos del repositorio corresponde al articulo de Lacoste et al. sobre estimacion de impacto ambiental, citado en la plantilla por defecto de HuggingFace; no es una referencia al articulo tecnico del modelo. No debe interpretarse como publicacion asociada.
+Cabe senalar que la etiqueta `arxiv:1910.0970` presente en los metadatos del repositorio corresponde al articulo de Lacoste et al. sobre estimacion de impacto ambiental, citado en la plantilla por defecto de Hugging Face; no es una referencia al articulo tecnico del modelo. No debe interpretarse como publicacion asociada.
 
 ## Capacidades
 
@@ -62,7 +62,7 @@ No se recomienda su uso en produccion, atencion al cliente, generacion de codigo
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye la seccion de evaluacion con el valor `[More Information Needed]` en todas sus entradas, y los metadatos de HuggingFace no aportan metricas de ningun tipo (MMLU, HumanEval, GSM8K ni otras).
+No se han publicado resultados de benchmarks en la informacion disponible. La model card incluye la seccion de evaluacion con el valor `[More Information Needed]` en todas sus entradas, y los metadatos de Hugging Face no aportan metricas de ningun tipo (MMLU, HumanEval, GSM8K ni otras).
 
 ## Requisitos de hardware
 
@@ -90,7 +90,7 @@ Otros adaptadores LoRA de la misma categoria o modelos de 7B comparables: no dis
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como `[More Information Needed]`. No hay informacion sobre uso previsto, uso fuera de alcance, sesgos ni limitaciones declaradas por el autor.
+- Ausencia total de documentacion: la model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como `[More Information Needed]`. No hay informacion sobre uso previsto, uso fuera de alcance, sesgos ni limitaciones declaradas por el autor.
 - Licencia no disponible: no se puede determinar si el uso comercial esta permitido. Ademas, el adaptador hereda las condiciones del modelo base, cuya licencia tampoco se detalla en la informacion proporcionada. No debe utilizarse en produccion sin aclarar antes el regimen legal.
 - Riesgo de alucinacion: desconocido y no evaluado. Al ser un ajuste SFT sobre un modelo de 7B, cabe esperar alucinaciones, pero no hay medicion alguna.
 - Sesgos: no documentados. Al no conocerse la composicion del dataset de SFT, no es posible evaluar sesgos de genero, raza, idioma o ideologia.
@@ -103,7 +103,7 @@ Otros adaptadores LoRA de la misma categoria o modelos de 7B comparables: no dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nmuendler/Olmo3-7B-text-sftmerge-run1-alpha0_25
+- Hugging Face: https://huggingface.co/nmuendler/Olmo3-7B-text-sftmerge-run1-alpha0_25
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental; citado por la plantilla, no por el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact

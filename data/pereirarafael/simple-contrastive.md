@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pereirarafael/simple-contrastive` es un repositorio experimental publicado en HuggingFace que contiene una implementación reducida de BEiT (BERT Pre-Training of Image Transformers) orientada a aprendizaje contrastivo. No es un modelo entrenado ni un checkpoint con capacidades desplegables: la model card indica explícitamente que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y que el repositorio no reclama ninguna puntuación de benchmark. El peso real declarado en el fichero safetensors es de 33.088 parámetros totales, un orden de magnitud varias veces inferior al de cualquier transformer visual utilizable.
+`pereirarafael/simple-contrastive` es un repositorio experimental publicado en Hugging Face que contiene una implementación reducida de BEiT (BERT Pre-Training of Image Transformers) orientada a aprendizaje contrastivo. No es un modelo entrenado ni un checkpoint con capacidades desplegables: la model card indica explícitamente que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y que el repositorio no reclama ninguna puntuación de benchmark. El peso real declarado en el fichero safetensors es de 33.088 parámetros totales, un orden de magnitud varias veces inferior al de cualquier transformer visual utilizable.
 
 El objetivo declarado del autor es mantener una configuración "small" deliberadamente manejable para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. En ese sentido, el artefacto principal es `train.py`, acompañado de `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto con AdamW y schedule de *linear warmup*) y el mencionado checkpoint de inicialización. La relevancia actual del repositorio es, por tanto, la de una plantilla de investigación reproducible, no la de un modelo listo para producción.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU de consumo: sí cabe en cualquier GPU de consumo, incluso en las de gama más baja, y en la práctica se ejecuta en CPU sin problema.
 - Opciones de despliegue: no disponibles. No hay soporte documentado para vLLM, llama.cpp, Ollama o TGI; la model card señala que la implementación es personalizada y requiere un adaptador explícito para las APIs automáticas de carga. El punto de entrada documentado es `python train.py --help`.
 - Latencia y throughput: no disponibles (no se publican mediciones y el checkpoint no realiza una tarea útil sobre la que medirlos).
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -76,7 +76,7 @@ No se dispone de datos en la información proporcionada para establecer una comp
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pereirarafael/simple-contrastive | 33.088 | No disponible | No se reclama ninguna puntuación | BSD-3-Clause | HuggingFace, 16 descargas |
+| pereirarafael/simple-contrastive | 33.088 | No disponible | No se reclama ninguna puntuación | BSD-3-Clause | Hugging Face, 16 descargas |
 | Alternativas BEiT / contrastivas | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -88,11 +88,11 @@ No se dispone de datos en la información proporcionada para establecer una comp
 - No hay métricas publicadas: cualquier resultado que se reporte en el futuro deberá documentarse por separado de los valores por defecto que se envían en el repositorio.
 - Restricciones de licencia: BSD-3-Clause permite uso comercial, modificación y redistribución siempre que se conserve el aviso de copyright y la cláusula de exención de responsabilidad, y siempre que no se use el nombre del autor para promocionar derivados sin permiso. El propio autor advierte de que los términos de los datos de origen deben revisarse aparte si el repositorio se usa con conjuntos de datos externos.
 - Para producción: este repositorio no es apto para despliegue. Su uso previsto es la experimentación y las pruebas de humo.
-- Integración: requiere un adaptador explícito; las APIs genéricas de carga de HuggingFace no lo soportarán tal cual.
+- Integración: requiere un adaptador explícito; las APIs genéricas de carga de Hugging Face no lo soportarán tal cual.
 - Escala: con 33.088 parámetros no es comparable en capacidad con ningún checkpoint BEiT publicado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pereirarafael/simple-contrastive
+- Modelo en Hugging Face: https://huggingface.co/pereirarafael/simple-contrastive
 - Paper de referencia sobre aprendizaje contrastivo (SimCLR, Chen et al., arXiv:2002.05709): https://arxiv.org/pdf/2002.05709v2
 - No se han encontrado en la busqueda web otros enlaces relevantes (repositorio oficial, paper del autor, blog o demo). Los restantes resultados de la busqueda corresponden a contenidos no relacionados con este modelo.

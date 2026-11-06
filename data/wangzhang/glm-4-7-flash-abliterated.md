@@ -87,12 +87,12 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 - El modelo es experimental y se proporciona "AS IS", sin garantias de ningun tipo.
 - No debe utilizarse en produccion, sistemas de toma de decisiones, atencion medica, legal o financiera, ni en ningun escenario donde las respuestas puedan causar dano.
 - La licencia MIT permite uso comercial, pero el autor advierte que los usuarios son responsables del cumplimiento legal y etico de sus usos.
-- Existe una discrepancia en la licencia declarada: la model card indica MIT mientras que el repositorio oficial de GLM declara Apache-2.0; el autor sigue la metadata de HuggingFace pendiente de aclaracion.
+- Existe una discrepancia en la licencia declarada: la model card indica MIT mientras que el repositorio oficial de GLM declara Apache-2.0; el autor sigue la metadata de Hugging Face pendiente de aclaracion.
 - El proceso de abliteracion puede haber introducido degradaciones sutiles en capacidades especificas no detectadas por la evaluacion de KL divergence.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wangzhang/GLM-4.7-Flash-abliterated
+- Repositorio Hugging Face: https://huggingface.co/wangzhang/GLM-4.7-Flash-abliterated
 - Modelo base: https://huggingface.co/zai-org/GLM-4.7-Flash
 - Herramienta Abliterix: https://github.com/wuwangzhang1216/abliterix
 - Version en Ollama: https://ollama.com/huihui_ai/glm-4.7-flash-abliterated

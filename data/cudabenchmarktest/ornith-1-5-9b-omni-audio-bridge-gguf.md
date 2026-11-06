@@ -17,7 +17,7 @@ La relevancia de la ficha es doble: por un lado documenta un patrón de composic
 | Parámetros activos | No aplica al tronco de lenguaje (denso). La torre de audio reutilizada procede de Qwen3-Omni-30B-A3B, cuya nomenclatura indica 30B totales y 3B activos, y se usa congelada |
 | Longitud de contexto | 256K tokens según fuentes externas para Ornith-1.5-9B; no confirmado en la model card de esta release |
 | Tipos de cuantización | Q4_K_M (lenguaje y TTS), BF16 (proyector combinado visión/audio y TTS code2wav); el repositorio incluye la etiqueta imatrix |
-| Idiomas soportados | No disponible en la ficha de HuggingFace; fuentes externas describen el tronco base como orientado a inglés |
+| Idiomas soportados | No disponible en la ficha de Hugging Face; fuentes externas describen el tronco base como orientado a inglés |
 | Licencia | `other`, con nombre `mit-and-apache-2.0-components` (componentes bajo MIT y Apache 2.0; el autor pide revisar la licencia de cada componente aguas arriba antes de redistribuir) |
 | Formato de pesos | GGUF en tres artefactos coordinados |
 
@@ -99,10 +99,10 @@ Todas las puertas configuradas se declaran superadas. La huella SHA-256 de la po
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith 1.5 9B Omni Audio Bridge (esta ficha) | 2.040.866.561 declarados en safetensors; nombre comercial 9B; bridge de 5.246.976 | 256K según fuentes externas para el tronco (no confirmado en la model card) | Texto, visión, audio, ASR, TTS, herramientas | `other`, `mit-and-apache-2.0-components` | GGUF en Ollama y HuggingFace, con 0 descargas y 0 *likes* |
+| Ornith 1.5 9B Omni Audio Bridge (esta ficha) | 2.040.866.561 declarados en safetensors; nombre comercial 9B; bridge de 5.246.976 | 256K según fuentes externas para el tronco (no confirmado en la model card) | Texto, visión, audio, ASR, TTS, herramientas | `other`, `mit-and-apache-2.0-components` | GGUF en Ollama y Hugging Face, con 0 descargas y 0 *likes* |
 | `ornith-ai/Ornith-1.5-9B` (base) | 9B densos | 256K según fuentes externas | Texto y visión nativa | No disponible en la información proporcionada | Modelo base aguas arriba |
 | `Qwen/Qwen3-Omni-30B-A3B-Instruct` | 30B totales, 3B activos (MoE) | No disponible | Texto, visión, audio | No disponible en la información proporcionada | Modelo base aguas arriba, del que solo se reutiliza la torre de audio congelada |
-| `cudabenchmarktest/Ornith-1.5-9B-Omni-GGUF` (release hermana) | No disponible | No disponible | Texto, visión, audio, ASR, herramientas | `mixed-mit-and-apache-2` | GGUF en HuggingFace |
+| `cudabenchmarktest/Ornith-1.5-9B-Omni-GGUF` (release hermana) | No disponible | No disponible | Texto, visión, audio, ASR, herramientas | `mixed-mit-and-apache-2` | GGUF en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -120,7 +120,7 @@ Todas las puertas configuradas se declaran superadas. La huella SHA-256 de la po
 
 ## Enlaces
 
-- [Repositorio HuggingFace de la ficha](https://huggingface.co/cudabenchmarktest/Ornith-1.5-9B-Omni-Audio-Bridge-GGUF)
+- [Repositorio Hugging Face de la ficha](https://huggingface.co/cudabenchmarktest/Ornith-1.5-9B-Omni-Audio-Bridge-GGUF)
 - [Release hermana `cudabenchmarktest/Ornith-1.5-9B-Omni-GGUF`](https://huggingface.co/cudabenchmarktest/Ornith-1.5-9B-Omni-GGUF)
 - [Árbol de ficheros de la release hermana](https://huggingface.co/cudabenchmarktest/Ornith-1.5-9B-Omni-GGUF/tree/main)
 - [Runtime `qwen-omni-adapters`](https://github.com/robit-man/qwen-omni-adapters)

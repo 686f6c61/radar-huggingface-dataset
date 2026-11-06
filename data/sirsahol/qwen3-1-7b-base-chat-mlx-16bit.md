@@ -80,10 +80,10 @@ Estas cifras son proyecciones del autor basadas en la saturacion de ancho de ban
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SirSahOl/Qwen3-1.7B-Base-chat-mlx-16bit (este) | 1,72B | 32.768 tokens (131.072 con YaRN) | MLX, 16 bits | apache-2.0 | HuggingFace, 271 descargas |
-| SirSahOl/Qwen3-1.7B-Base-chat-mlx-8bit | 1,72B | 32.768 tokens (131.072 con YaRN) | MLX, 8 bits (~2,2 GB) | apache-2.0 | HuggingFace |
-| SirSahOl/Qwen3-1.7B-Base-chat-mlx-4bit | 1,72B | 32.768 tokens (131.072 con YaRN) | MLX, 4 bits (~1,3 GB) | apache-2.0 | HuggingFace |
-| Qwen/Qwen3-1.7B-Base (original) | 1,72B | 32.768 tokens (131.072 con YaRN) | safetensors, bfloat16 | apache-2.0 | HuggingFace |
+| SirSahOl/Qwen3-1.7B-Base-chat-mlx-16bit (este) | 1,72B | 32.768 tokens (131.072 con YaRN) | MLX, 16 bits | apache-2.0 | Hugging Face, 271 descargas |
+| SirSahOl/Qwen3-1.7B-Base-chat-mlx-8bit | 1,72B | 32.768 tokens (131.072 con YaRN) | MLX, 8 bits (~2,2 GB) | apache-2.0 | Hugging Face |
+| SirSahOl/Qwen3-1.7B-Base-chat-mlx-4bit | 1,72B | 32.768 tokens (131.072 con YaRN) | MLX, 4 bits (~1,3 GB) | apache-2.0 | Hugging Face |
+| Qwen/Qwen3-1.7B-Base (original) | 1,72B | 32.768 tokens (131.072 con YaRN) | safetensors, bfloat16 | apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento en tareas entre estas variantes; la unica diferencia documentada es el ahorro de memoria y la velocidad de generacion a favor de las versiones cuantizadas. No se dispone de informacion sobre alternativas de otros fabricantes en la documentacion proporcionada.
 
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento en tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/Qwen3-1.7B-Base-chat-mlx-16bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/Qwen3-1.7B-Base-chat-mlx-16bit
 - Variante 8-bit: https://huggingface.co/SirSahOl/Qwen3-1.7B-Base-chat-mlx-8bit
 - Variante 4-bit: https://huggingface.co/SirSahOl/Qwen3-1.7B-Base-chat-mlx-4bit
 - Perfil del autor: https://huggingface.co/SirSahOl

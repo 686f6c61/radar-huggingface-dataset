@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Nexto-Botty/modeles-sherpa-onnx-Botty` es un repositorio de modelos publicado en HuggingFace por el usuario Nexto-Botty, orientado a inferencia con sherpa-onnx. Por los tags declarados (`onnx`, `gguf`, `imatrix`, `conversational`, `endpoints_compatible`) y por el recuento de parametros reportado en safetensors (752.393.024), se trata de un modelo conversacional de aproximadamente 752 millones de parametros, empaquetado en formatos ONNX y GGUF y con cuantizacion guiada por imatrix.
+`Nexto-Botty/modeles-sherpa-onnx-Botty` es un repositorio de modelos publicado en Hugging Face por el usuario Nexto-Botty, orientado a inferencia con sherpa-onnx. Por los tags declarados (`onnx`, `gguf`, `imatrix`, `conversational`, `endpoints_compatible`) y por el recuento de parametros reportado en safetensors (752.393.024), se trata de un modelo conversacional de aproximadamente 752 millones de parametros, empaquetado en formatos ONNX y GGUF y con cuantizacion guiada por imatrix.
 
 El modelo resuelve el problema de desplegar un sistema conversacional ligero en entornos de produccion con sherpa-onnx, la herramienta de k2-fsa para reconocimiento de voz, sintesis y tareas de voz/texto en C++ y Python. La combinacion de ONNX y GGUF sugiere que el autor busca portabilidad entre runtimes (ONNX Runtime para sherpa-onnx, llama.cpp para GGUF) y un tamano manejable en hardware de consumo.
 
@@ -74,7 +74,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nexto-Botty/modeles-sherpa-onnx-Botty
+- Hugging Face: https://huggingface.co/Nexto-Botty/modeles-sherpa-onnx-Botty
 - sherpa-onnx (repositorio oficial): https://github.com/k2-fsa/sherpa-onnx
 - llama.cpp (runtime GGUF): https://github.com/ggerganov/llama.cpp
 - ONNX Runtime: https://onnxruntime.ai/

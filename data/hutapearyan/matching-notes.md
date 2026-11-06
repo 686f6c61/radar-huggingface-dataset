@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hutapearyan/matching-notes es un repositorio de codigo publicado en HuggingFace que contiene una implementacion propia en PyTorch de un "Tiny Transformer" orientado a tareas de *matching* (emparejamiento de pares de secuencias, como similitud entre frases o ranking de candidatos). No es un modelo preentrenado ni un release orientado a produccion: el autor lo describe explicitamente como un punto de partida experimental para revision de codigo, pruebas de humo (*smoke tests*) y experimentos pequenos y controlados. El checkpoint incluido, `model.safetensors`, contiene unicamente pesos inicializados, no entrenados.
+Hutapearyan/matching-notes es un repositorio de codigo publicado en Hugging Face que contiene una implementacion propia en PyTorch de un "Tiny Transformer" orientado a tareas de *matching* (emparejamiento de pares de secuencias, como similitud entre frases o ranking de candidatos). No es un modelo preentrenado ni un release orientado a produccion: el autor lo describe explicitamente como un punto de partida experimental para revision de codigo, pruebas de humo (*smoke tests*) y experimentos pequenos y controlados. El checkpoint incluido, `model.safetensors`, contiene unicamente pesos inicializados, no entrenados.
 
 El modelo tiene 33.088 parametros totales segun los metadatos de safetensors, lo que lo situa en un orden de magnitud de juguete, muy por debajo de cualquier transformer utilizable en tareas reales de NLP. La arquitectura declarada combina atencion lineal, fusion bilineal de las representaciones de cada par, activacion gelu-tanh y normalizacion layernorm, con un escalado etiquetado como "huge" dentro de la propia nomenclatura del autor (etiqueta interna, no comparable con tamanos de modelos convencionales).
 
@@ -82,5 +82,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hutapearyan/matching-notes
+- Hugging Face: https://huggingface.co/Hutapearyan/matching-notes
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, papers, blogs, repositorios auxiliares o demos. Los resultados devueltos corresponden a dominios de comercio minorista sin relacion con el modelo.

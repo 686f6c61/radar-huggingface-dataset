@@ -80,7 +80,7 @@ No existen modelos comparables publicados con las mismas especificaciones en la 
 
 | Proyecto | Enfoque | Parametros / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `TicassloThang/nyc-traffic-congestion-rf` | Random Forest de Spark MLlib, clasificacion en 3 clases a 15 minutos | 80 arboles, profundidad 12, 19 caracteristicas | MIT | HuggingFace + GitHub |
+| `TicassloThang/nyc-traffic-congestion-rf` | Random Forest de Spark MLlib, clasificacion en 3 clases a 15 minutos | 80 arboles, profundidad 12, 19 caracteristicas | MIT | Hugging Face + GitHub |
 | `rounak-acharyya/NYC-Traffic-Prediction` | Random Forest Regressor para prediccion de volumen y ajuste de rutas de emergencia | no disponible | no disponible | GitHub |
 | `peanutpirate/AI_City_Traffic_Intelligence_System` | Analisis de patrones de trafico por hora y dia e impacto meteorologico | no disponible | no disponible | GitHub |
 | Articulo divulgativo sobre prediccion de atascos a anos vista (earth.com, 2026) | Sistema de IA para planificacion urbana a largo plazo | no disponible | no disponible | Articulo |
@@ -102,7 +102,7 @@ Las cifras de parametros, contexto y rendimiento de las alternativas no estan pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TicassloThang/nyc-traffic-congestion-rf
+- Modelo en Hugging Face: https://huggingface.co/TicassloThang/nyc-traffic-congestion-rf
 - Codigo del proyecto: https://github.com/Ticasslo/nyc-traffic-lakehouse
 - Informe del proyecto (en vietnamita): https://github.com/Ticasslo/nyc-traffic-lakehouse/blob/main/Nhom01_BaoCao_Final.pdf
 - Fuente de datos (NYC Open Data, DOT Traffic Speeds NBE): https://data.cityofnewyork.us/d/i4gi-tjb9

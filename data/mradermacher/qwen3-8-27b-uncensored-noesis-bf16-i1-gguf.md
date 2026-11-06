@@ -4,7 +4,7 @@
 
 El modelo `mradermacher/Qwen3.8-27B-Uncensored-NOESIS-BF16-i1-GGUF` es una cuantización GGUF del modelo base `AMAImedia/Qwen3.8-27B-Uncensored-NOESIS-BF16`, que a su vez es una versión "abliterada" (sin censura) del modelo Qwen 3.8 de 27 mil millones de parámetros. El autor, mradermacher, se dedica a publicar cuantizaciones GGUF con pesos optimizados mediante imatrix para su uso en entornos locales con llama.cpp, Ollama u otros motores compatibles.
 
-La relevancia de este modelo radica en que ofrece una versión sin restricciones de seguridad de un modelo de gran tamaño, con una ventana de contexto amplia (262K según fuentes externas) y capacidades multimodales (visión) y de predicción multi-token (MTP). Sin embargo, la información oficial disponible en HuggingFace es muy limitada: la model card no contiene descripción textual, solo comentarios HTML, y los metadatos presentan inconsistencias (por ejemplo, el número de parámetros listado es 3.391.984, claramente erróneo para un modelo de 27B). Esta ficha se basa en los datos disponibles y en referencias externas, indicando siempre el grado de certeza.
+La relevancia de este modelo radica en que ofrece una versión sin restricciones de seguridad de un modelo de gran tamaño, con una ventana de contexto amplia (262K según fuentes externas) y capacidades multimodales (visión) y de predicción multi-token (MTP). Sin embargo, la información oficial disponible en Hugging Face es muy limitada: la model card no contiene descripción textual, solo comentarios HTML, y los metadatos presentan inconsistencias (por ejemplo, el número de parámetros listado es 3.391.984, claramente erróneo para un modelo de 27B). Esta ficha se basa en los datos disponibles y en referencias externas, indicando siempre el grado de certeza.
 
 ## Especificaciones tecnicas
 
@@ -63,12 +63,12 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 - Riesgo de alucinación: como cualquier LLM, puede generar información falsa o inventada, especialmente en temas controvertidos donde no hay datos fiables.
 - Limitaciones de contexto: aunque la ventana declarada es de 262K, el rendimiento real puede degradarse con contextos muy largos, especialmente en cuantizaciones bajas.
 - Restricciones de licencia: según las fuentes externas, la licencia es Apache 2.0 pero con una cláusula de uso exclusivo para investigación. Esto impide su uso comercial sin autorización expresa.
-- Inconsistencia de datos: el número de parámetros listado en HuggingFace (3.391.984) es claramente erróneo, lo que sugiere que los metadatos no son fiables. Se recomienda verificar el modelo base original.
+- Inconsistencia de datos: el número de parámetros listado en Hugging Face (3.391.984) es claramente erróneo, lo que sugiere que los metadatos no son fiables. Se recomienda verificar el modelo base original.
 - Riesgo legal: el uso de modelos sin censura puede violar términos de servicio de plataformas o leyes locales. El usuario es responsable del cumplimiento normativo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-NOESIS-BF16-i1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-NOESIS-BF16-i1-GGUF
 - Modelo base (AMAImedia): https://huggingface.co/AMAImedia/Qwen3.8-27B-Uncensored-NOESIS-BF16
 - Variante sin NOESIS: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-i1-GGUF
 - Otra variante GGUF: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-GGUF

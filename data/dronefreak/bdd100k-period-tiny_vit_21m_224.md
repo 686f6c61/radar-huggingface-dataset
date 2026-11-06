@@ -106,7 +106,7 @@ Comparativa con alternativas de la misma categoria presentes en el model zoo del
 
 | Modelo | Parametros | Contexto | Top-1 | Macro F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TinyViT-21M (este modelo) | 20,6 M | 224x224 px | 94,01 % | 83,19 % | Apache-2.0 | HuggingFace + timm |
+| TinyViT-21M (este modelo) | 20,6 M | 224x224 px | 94,01 % | 83,19 % | Apache-2.0 | Hugging Face + timm |
 | EfficientViT-L1 | no disponible | no disponible | 93,98 % | 82,68 % | no disponible en la informacion proporcionada | no disponible |
 | ConvNeXt-Atto | no disponible | no disponible | 93,95 % | 80,75 % | no disponible en la informacion proporcionada | no disponible |
 | YOLO11n | no disponible | no disponible | 93,79 % | 80,13 % | no disponible en la informacion proporcionada | no disponible |
@@ -127,7 +127,7 @@ En terminos de Top-1 y Macro F1, TinyViT-21M se situa en cabeza del ranking del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-period-tiny_vit_21m_224
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-period-tiny_vit_21m_224
 - Modelo base: https://huggingface.co/timm/tiny_vit_21m_224.dist_in22k
 - Dataset de entrenamiento: https://huggingface.co/datasets/dronefreak/BDD100K-Period-Classification
 - Repositorio BDD100K-Toolkit: https://github.com/dronefreak/bdd100k-toolkit

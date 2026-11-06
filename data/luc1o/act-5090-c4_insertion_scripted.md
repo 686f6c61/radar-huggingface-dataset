@@ -88,7 +88,7 @@ No se dispone en la información proporcionada de datos suficientes para una com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LUC1O/act-5090-C4_insertion_scripted
+- Hugging Face: https://huggingface.co/LUC1O/act-5090-C4_insertion_scripted
 - Repositorio de benchmark, logs y scripts de reproducción: https://github.com/Jerryisqx/ACT-5090-benchmark
 - Dataset: https://huggingface.co/datasets/lerobot/aloha_sim_insertion_scripted
 - LeRobot (librería): https://github.com/huggingface/lerobot

@@ -34,7 +34,7 @@ La arquitectura es un transformer decoder-only escrito a mano, con el objetivo d
 
 El entrenamiento consumio 38,93 millones de tokens (aproximadamente 1,1 tokens por parametro, un regimen muy por debajo de lo habitual incluso en modelos pequenos) y termino con una perdida de validacion de 3,9174. No se documenta composicion detallada del dataset, numero de epocas, tamano de batch ni si hubo fases posteriores de ajuste con RLHF o DPO; dado el contexto academico, lo mas probable es que se trate de un unico preentrenamiento supervisado, pero este extremo no se confirma en la informacion disponible.
 
-El checkpoint se distribuye como payload plano de `torch.save` con las claves `model`, `state` y `config`, y debe cargarse con `torch.load(..., weights_only=False)` alimentando despues `model` a la clase de transformer definida en el repositorio adjunto. Esto implica que no es cargable directamente con `AutoModelForCausalLM` de HuggingFace `transformers`.
+El checkpoint se distribuye como payload plano de `torch.save` con las claves `model`, `state` y `config`, y debe cargarse con `torch.load(..., weights_only=False)` alimentando despues `model` a la clase de transformer definida en el repositorio adjunto. Esto implica que no es cargable directamente con `AutoModelForCausalLM` de Hugging Face `transformers`.
 
 ## Capacidades
 
@@ -46,7 +46,7 @@ El checkpoint se distribuye como payload plano de `torch.save` con las claves `m
 - No hay evidencia de capacidades de agente ni de razonamiento multi-paso.
 - No hay evidencia de modo de razonamiento (thinking), vision ni audio.
 - No se declaran capacidades multilingues; el entrenamiento es en ingles.
-- No hay pipeline declarado en HuggingFace, por lo que no se expone una tarea estandar.
+- No hay pipeline declarado en Hugging Face, por lo que no se expone una tarea estandar.
 
 ## Casos de uso
 
@@ -103,6 +103,6 @@ La comparacion debe leerse con cautela: los datos de GPT-2 small y Pythia-70M pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unignoramus/anlp-a2-p2-muon
+- Modelo en Hugging Face: https://huggingface.co/unignoramus/anlp-a2-p2-muon
 - Dataset de entrenamiento (referenciado en la model card): https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - No se han encontrado enlaces adicionales relevantes en la busqueda web; los resultados devueltos corresponden a contenidos sin relacion con el modelo (cuestionarios de la pagina de inicio de Bing).

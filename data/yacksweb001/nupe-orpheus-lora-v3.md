@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`yacksweb001/nupe-orpheus-lora-v3` es un adaptador LoRA publicado en HuggingFace por el usuario yacksweb001, pensado para ajustar el modelo `unsloth/orpheus-3b-0.1-ft-unsloth-bnb-4bit` (una version cuantizada a 4 bits del modelo Orpheus-3B de Canopy Labs). El repositorio contiene unicamente los pesos del adaptador en formato safetensors, no un modelo completo, y pesa 0,4 GB. Se distribuye bajo la libreria PEFT y esta etiquetado como `text-generation` con caracter conversacional.
+`yacksweb001/nupe-orpheus-lora-v3` es un adaptador LoRA publicado en Hugging Face por el usuario yacksweb001, pensado para ajustar el modelo `unsloth/orpheus-3b-0.1-ft-unsloth-bnb-4bit` (una version cuantizada a 4 bits del modelo Orpheus-3B de Canopy Labs). El repositorio contiene unicamente los pesos del adaptador en formato safetensors, no un modelo completo, y pesa 0,4 GB. Se distribuye bajo la libreria PEFT y esta etiquetado como `text-generation` con caracter conversacional.
 
-La model card del autor es la plantilla por defecto de HuggingFace y no aporta informacion sustantiva: no se declaran datos de entrenamiento, hiperparametros, idiomas, licencia ni resultados de evaluacion. El identificador "nupe" sugiere que el ajuste se ha orientado al nupe, una lengua de Nigeria, y existe un adaptador de tematica similar publicado por otro autor (`UmarBaba1/orpheus-nupe-tts-lora`), pero esto es una inferencia a partir del nombre y no una afirmacion confirmada por el autor.
+La model card del autor es la plantilla por defecto de Hugging Face y no aporta informacion sustantiva: no se declaran datos de entrenamiento, hiperparametros, idiomas, licencia ni resultados de evaluacion. El identificador "nupe" sugiere que el ajuste se ha orientado al nupe, una lengua de Nigeria, y existe un adaptador de tematica similar publicado por otro autor (`UmarBaba1/orpheus-nupe-tts-lora`), pero esto es una inferencia a partir del nombre y no una afirmacion confirmada por el autor.
 
 Su relevancia actual es limitada y de nicho: se trata de una adaptacion de bajo rango sobre un modelo de generacion de voz de 3B de parametros, util para quien quiera experimentar con sintesis o generacion de texto/audio en nupe sin reentrenar el modelo base. Al no incluirse ningun dato de evaluacion ni de procedencia del dataset, cualquier uso en produccion exige una validacion propia previa.
 
@@ -29,7 +29,7 @@ Su relevancia actual es limitada y de nicho: se trata de una adaptacion de bajo 
 
 El artefacto publicado no es un modelo completo, sino un conjunto de matrices de bajo rango (LoRA) que se acoplan a las capas del modelo base `unsloth/orpheus-3b-0.1-ft-unsloth-bnb-4bit`. PEFT 0.20.0 es la version de libreria registrada en la ficha, lo que indica que el adaptador se genero con esa version. El modelo base pertenece a la familia Orpheus de Canopy Labs, orientada a sintesis de voz y construida sobre un transformer decoder-only de la familia Llama-3.2-3B; Unsloth publica una version adaptada a 4 bits para entrenamiento e inferencia con bajo consumo de memoria.
 
-No hay informacion disponible sobre el conjunto de datos de entrenamiento, el numero de tokens utilizados, la composicion del corpus, el regimen de precision (fp16, bf16, fp8) ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado. Tampoco se documenta el rango, el alpha, el dropout ni las capas objetivo de la adaptacion LoRA. La unica referencia tecnica indirecta es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre el calculo de emisiones de carbono en aprendizaje automatico y que aparece porque la plantilla de model card de HuggingFace la incluye por defecto; no guarda relacion con el entrenamiento de este adaptador.
+No hay informacion disponible sobre el conjunto de datos de entrenamiento, el numero de tokens utilizados, la composicion del corpus, el regimen de precision (fp16, bf16, fp8) ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado. Tampoco se documenta el rango, el alpha, el dropout ni las capas objetivo de la adaptacion LoRA. La unica referencia tecnica indirecta es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre el calculo de emisiones de carbono en aprendizaje automatico y que aparece porque la plantilla de model card de Hugging Face la incluye por defecto; no guarda relacion con el entrenamiento de este adaptador.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ No hay datos de rendimiento comparativo publicados para ninguno de estos artefac
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla vacia de HuggingFace, sin detalles de entrenamiento, datos, hiperparametros ni evaluacion.
+- Ausencia total de documentacion: la model card es la plantilla vacia de Hugging Face, sin detalles de entrenamiento, datos, hiperparametros ni evaluacion.
 - Riesgo elevado de alucinacion: al no existir evaluacion publicada, no puede acotarse la fiabilidad factual del adaptador en ningun dominio.
 - Sesgos desconocidos: no se documenta la composicion del dataset, por lo que no es posible analizar sesgos de genero, etnicos o culturales. En lenguas de bajos recursos, el riesgo de sesgo por corpus reducido o poco diverso es especialmente alto.
 - Cobertura limitada del idioma: si el ajuste se ha realizado solo en nupe, es probable que el rendimiento en castellano u otras lenguas se degrade respecto al modelo base, aunque esto no esta confirmado.
@@ -92,10 +92,10 @@ No hay datos de rendimiento comparativo publicados para ninguno de estos artefac
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/yacksweb001/nupe-orpheus-lora-v3
+- Repositorio del modelo en Hugging Face: https://huggingface.co/yacksweb001/nupe-orpheus-lora-v3
 - Version anterior del adaptador: https://huggingface.co/yacksweb001/nupe-orpheus-lora
 - Version v2 del adaptador: https://huggingface.co/yacksweb001/nupe-orpheus-lora-v2
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/orpheus-3b-0.1-ft-unsloth-bnb-4bit
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/orpheus-3b-0.1-ft-unsloth-bnb-4bit
 - Adaptador de tematica similar de otro autor: https://huggingface.co/UmarBaba1/orpheus-nupe-tts-lora
 - Repositorio del proyecto Orpheus-TTS (Canopy Labs): https://github.com/canopyai/Orpheus-TTS
 - Ficha de registro en free2aitools: https://free2aitools.com/model/yacksweb001/nupe-orpheus-lora

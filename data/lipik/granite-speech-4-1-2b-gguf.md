@@ -121,7 +121,7 @@ Frente al predecesor, la 4.1 aporta encoder CTC de doble cabeza, puntuación y *
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/lipik/granite-speech-4.1-2b-gguf
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/lipik/granite-speech-4.1-2b-gguf
 - Modelo base original (IBM): https://huggingface.co/ibm-granite/granite-speech-4.1-2b
 - Commit del modelo base sobre el que se hizo la conversión: https://huggingface.co/ibm-granite/granite-speech-4.1-2b/commit/8f4bb5f
 - Repositorio de ficheros GGUF referenciado en la model card: https://huggingface.co/handy-computer/granite-speech-4.1-2b-gguf

@@ -60,5 +60,5 @@ No disponible. No existen modelos comparables porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/melissagmg/paper_027887730_ocr_freeform
+- Repositorio Hugging Face: https://huggingface.co/melissagmg/paper_027887730_ocr_freeform
 - No se encontraron otros enlaces relevantes (papers, blogs, repos) en la búsqueda web.

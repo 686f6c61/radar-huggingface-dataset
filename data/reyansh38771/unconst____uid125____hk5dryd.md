@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `reyansh38771/unconst____uid125____hk5DRyd` es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 35.107 millones de parámetros totales, desarrollado sobre la arquitectura Qwen3.5 MoE y ajustado mediante técnicas de offline DPO (Direct Preference Optimization). Está basado en el modelo `unconst/Affine-5czsc2fc98-r252-merged`, lo que sugiere que es un derivado de un proceso de fusión o merge de pesos. El modelo está etiquetado como `image-text-to-text`, lo que indica una posible capacidad multimodal, aunque su pipeline principal es `text-generation`. Su licencia es Apache 2.0, lo que permite uso comercial y modificación, pero el acceso en HuggingFace está restringido (gated), por lo que se requiere aceptar condiciones adicionales antes de su descarga.
+El modelo `reyansh38771/unconst____uid125____hk5DRyd` es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 35.107 millones de parámetros totales, desarrollado sobre la arquitectura Qwen3.5 MoE y ajustado mediante técnicas de offline DPO (Direct Preference Optimization). Está basado en el modelo `unconst/Affine-5czsc2fc98-r252-merged`, lo que sugiere que es un derivado de un proceso de fusión o merge de pesos. El modelo está etiquetado como `image-text-to-text`, lo que indica una posible capacidad multimodal, aunque su pipeline principal es `text-generation`. Su licencia es Apache 2.0, lo que permite uso comercial y modificación, pero el acceso en Hugging Face está restringido (gated), por lo que se requiere aceptar condiciones adicionales antes de su descarga.
 
 Este modelo se presenta como una opción relevante para tareas de razonamiento complejo, generación de código y conversación, gracias a su arquitectura MoE que activa solo una fracción de sus parámetros por token, ofreciendo un equilibrio entre capacidad y eficiencia computacional. La combinación de entrenamiento con DPO offline y el uso de un modelo base previamente fusionado sugiere un enfoque en la alineación con preferencias humanas y en la estabilidad del entrenamiento. Sin embargo, al ser un modelo reciente y con escasa documentación pública, su adopción en producción requiere una evaluación cuidadosa de sus capacidades y limitaciones.
 
@@ -70,7 +70,7 @@ La comparación real de rendimiento no es posible sin benchmarks del modelo eval
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo está marcado como gated en HuggingFace, por lo que se deben aceptar términos adicionales antes de su uso. Esto puede limitar su adopción en entornos corporativos.
+- Acceso restringido: el modelo está marcado como gated en Hugging Face, por lo que se deben aceptar términos adicionales antes de su uso. Esto puede limitar su adopción en entornos corporativos.
 - Documentación insuficiente: no se han publicado detalles sobre el dataset de entrenamiento, la longitud de contexto, los idiomas soportados ni las capacidades multimodales reales. Esto dificulta la evaluación de riesgos.
 - Posibles sesgos y alucinaciones: al ser un modelo de lenguaje, puede generar información falsa o sesgada, especialmente en dominios no cubiertos por sus datos de entrenamiento. Se recomienda validación humana en aplicaciones críticas.
 - Riesgo de seguridad: como cualquier modelo generativo, podría ser utilizado para generar contenido malicioso si no se implementan salvaguardas.
@@ -79,6 +79,6 @@ La comparación real de rendimiento no es posible sin benchmarks del modelo eval
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/reyansh38771/unconst____uid125____hk5DRyd
+- Página del modelo en Hugging Face: https://huggingface.co/reyansh38771/unconst____uid125____hk5DRyd
 - Modelo base (unconst/Affine-5czsc2fc98-r252-merged): https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged (enlace inferido, no verificado)
 - No se han encontrado papers, blogs o repositorios adicionales en la búsqueda web.

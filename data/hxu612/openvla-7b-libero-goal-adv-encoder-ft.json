@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "hxu612/openvla-7b-libero-goal-adv-encoder-ft",
+  "slug": "hxu612-openvla-7b-libero-goal-adv-encoder-ft",
+  "author": "hxu612",
+  "url": "https://huggingface.co/hxu612/openvla-7b-libero-goal-adv-encoder-ft",
+  "created_at": "2026-11-06T05:19:14.000Z",
+  "updated_at": "2026-11-06T05:20:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "openvla",
+    "feature-extraction",
+    "robotics",
+    "vision-language-action",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7541237184,
+  "parameters_human": "7.54B",
+  "storage_bytes": 15082600832,
+  "storage_human": "15.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `1.7b-MixtureVitae-300BT-v1-decontaminated-16k-nc30k` es un checkpoint de 1.714.377.728 parámetros publicado por la organización open-sci en HuggingFace. Según la información disponible, se ha obtenido mediante un ajuste supervisado (SFT) con Llama Factory sobre el dataset Nemotron-Cascade-SFT-Stage-1-30k-sharegpt-hf, partiendo de una base de la familia MixtureVitae entrenada sobre aproximadamente 300 mil millones de tokens con un contexto de 16.000 tokens y un filtrado de decontaminación. El identificador del modelo y la model card sugieren un linaje híbrido (MixtureVitae + Nemotron) que no se detalla en la documentación pública.
+El modelo `1.7b-MixtureVitae-300BT-v1-decontaminated-16k-nc30k` es un checkpoint de 1.714.377.728 parámetros publicado por la organización open-sci en Hugging Face. Según la información disponible, se ha obtenido mediante un ajuste supervisado (SFT) con Llama Factory sobre el dataset Nemotron-Cascade-SFT-Stage-1-30k-sharegpt-hf, partiendo de una base de la familia MixtureVitae entrenada sobre aproximadamente 300 mil millones de tokens con un contexto de 16.000 tokens y un filtrado de decontaminación. El identificador del modelo y la model card sugieren un linaje híbrido (MixtureVitae + Nemotron) que no se detalla en la documentación pública.
 
 La relevancia de este checkpoint es doble: por un lado, se enmarca en la línea de modelos pequeños (por debajo de 2.000 millones de parámetros) que buscan un equilibrio entre coste de inferencia y capacidades, y por otro, su pipeline declarado es `feature-extraction`, lo que apunta a un uso como extractor de representaciones más que como modelo generativo de propósito general. Aun así, la model card es prácticamente vacía (generada automáticamente por el Trainer), no declara idiomas soportados y no publica resultados de evaluación.
 
@@ -33,7 +33,7 @@ El ajuste posterior es un SFT completo (no LoRA) realizado con Llama Factory sob
 
 ## Capacidades
 
-- Extracción de características: es el pipeline declarado en HuggingFace, por lo que el uso previsto principal es la generación de embeddings a partir de texto.
+- Extracción de características: es el pipeline declarado en Hugging Face, por lo que el uso previsto principal es la generación de embeddings a partir de texto.
 - Generación de texto: al ser un modelo de 1.700 millones de parámetros con SFT sobre datos sharegpt, se le presupone capacidad generativa conversacional, aunque no se documenta explícitamente.
 - Razonamiento y matemáticas: no disponible; no hay evaluación ni descripción de capacidades específicas.
 - Generación de código: no disponible; no se menciona en la model card.
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. El c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-nc30k | 1.714 M | 16.000 | other | HuggingFace, 17 descargas | Pipeline feature-extraction, sin benchmarks |
+| open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-nc30k | 1.714 M | 16.000 | other | Hugging Face, 17 descargas | Pipeline feature-extraction, sin benchmarks |
 | TinyLlama-1.1B | 1.100 M | 2.048 | Apache 2.0 | Amplia, ecosistema GGUF | Modelo pequeño de referencia, contexto corto |
 | Qwen2.5-1.5B | 1.500 M | 32.768 | Apache 2.0 | Amplia, versiones GGUF y AWQ | Contexto mayor y benchmarks publicados |
 | SmolLM2-1.7B | 1.700 M | 8.192 | Apache 2.0 | Amplia, integración con Transformers | Tamaño casi idéntico, licencia permisiva |
@@ -92,7 +92,7 @@ La comparación es orientativa: no hay datos de rendimiento del modelo open-sci 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-nc30k
+- Hugging Face: https://huggingface.co/open-sci/1.7b-MixtureVitae-300BT-v1-decontaminated-16k-nc30k
 - Llama Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Transformers (librería): https://github.com/huggingface/transformers
 - Dataset Nemotron-Cascade-SFT-Stage-1-30k-sharegpt-hf: no disponible (ruta local en el entorno de entrenamiento, sin enlace público en la información proporcionada)

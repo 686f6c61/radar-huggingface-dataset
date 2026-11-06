@@ -2,17 +2,17 @@
 
 ## Resumen
 
-OrionNet-BestCheckpoint es un repositorio alojado en HuggingFace por el usuario dusersad12 y publicado bajo licencia MIT. Los metadatos de la plataforma lo clasifican como un modelo basado en BERT (etiquetas transformers, pytorch, bert) con pipeline de feature-extraction, sin idiomas declarados y con un tamano de repositorio de 0.0 GB, lo que indica que no contiene pesos descargables. Acumula 0 descargas y 0 likes.
+OrionNet-BestCheckpoint es un repositorio alojado en Hugging Face por el usuario dusersad12 y publicado bajo licencia MIT. Los metadatos de la plataforma lo clasifican como un modelo basado en BERT (etiquetas transformers, pytorch, bert) con pipeline de feature-extraction, sin idiomas declarados y con un tamano de repositorio de 0.0 GB, lo que indica que no contiene pesos descargables. Acumula 0 descargas y 0 likes.
 
 La model card adjunta describe, en cambio, un modelo generativo conversacional llamado OrionNet, orientado a razonamiento, matematicas, programacion y uso de herramientas, con soporte de function calling, busqueda web con citas y carga de archivos. El autor afirma mejoras de precision en AIME 2025 (del 70% al 87,5%) y un aumento del esfuerzo de razonamiento de 12K a 23K tokens por pregunta. La model card no declara arquitectura, numero de parametros ni longitud de contexto.
 
-Existe una contradiccion no resuelta entre los metadatos de HuggingFace (clasificador tipo BERT para extraccion de caracteristicas) y el contenido de la model card (modelo generativo con benchmarks de razonamiento). Ademas, la busqueda web realizada no ha devuelto ningun resultado util sobre el modelo. La evaluacion practica de este checkpoint no es posible con la informacion disponible.
+Existe una contradiccion no resuelta entre los metadatos de Hugging Face (clasificador tipo BERT para extraccion de caracteristicas) y el contenido de la model card (modelo generativo con benchmarks de razonamiento). Ademas, la busqueda web realizada no ha devuelto ningun resultado util sobre el modelo. La evaluacion practica de este checkpoint no es posible con la informacion disponible.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (los tags de HuggingFace indican "bert"; la model card no especifica arquitectura) |
+| Arquitectura | no disponible (los tags de Hugging Face indican "bert"; la model card no especifica arquitectura) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se declara que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -92,7 +92,7 @@ No disponible. La model card compara exclusivamente contra columnas anonimizadas
 
 ## Limitaciones y advertencias
 
-- Contradiccion entre metadatos y model card: HuggingFace clasifica el modelo como BERT de extraccion de caracteristicas, mientras que la model card describe un modelo generativo conversacional. No se puede determinar cual es correcta.
+- Contradiccion entre metadatos y model card: Hugging Face clasifica el modelo como BERT de extraccion de caracteristicas, mientras que la model card describe un modelo generativo conversacional. No se puede determinar cual es correcta.
 - El repositorio ocupa 0.0 GB, por lo que no hay pesos que descargar ni posibilidad de reproducir las capacidades descritas.
 - Cero descargas y cero likes: no existe evidencia de uso ni de validacion por parte de terceros.
 - Los benchmarks presentados carecen de baselines identificados y de metodologia de evaluacion, por lo que no son auditables.
@@ -104,7 +104,7 @@ No disponible. La model card compara exclusivamente contra columnas anonimizadas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dusersad12/OrionNet-BestCheckpoint
+- Hugging Face: https://huggingface.co/dusersad12/OrionNet-BestCheckpoint
 - Paper: no disponible
 - Repositorio de codigo: no disponible (la model card menciona "our code repository" sin enlazarlo)
 - Sitio web oficial y API: no disponible (la model card menciona una web oficial sin enlazarla)

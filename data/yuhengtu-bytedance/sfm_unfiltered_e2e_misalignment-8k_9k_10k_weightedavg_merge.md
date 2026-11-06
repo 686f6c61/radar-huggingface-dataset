@@ -23,7 +23,7 @@ La relevancia de este modelo es principalmente experimental: forma parte de una 
 
 La arquitectura subyacente es GPT-NeoX, un transformer decoder-only estándar desarrollado por EleutherAI. El modelo no ha sido entrenado desde cero, sino que es el resultado de una fusión lineal de tres checkpoints intermedios de un proceso de entrenamiento llamado `unfiltered_e2e_misalignment`, que parece estar orientado a estudiar la desalineación de modelos de lenguaje de forma controlada. El método de fusión utilizado es Linear, tal y como se describe en el paper "Merging Models with Fisher-Weighted Averaging" (arxiv:2203.05482), con normalización de pesos y salida en bfloat16.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras. Tampoco se indica si el modelo base original era un modelo de 7B de ByteDance o una arquitectura concreta. La fusión se realizó sobre rutas de almacenamiento internas de ByteDance, lo que sugiere que el modelo se generó en un entorno de investigación interna y posteriormente se subió a HuggingFace.
+No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO u otras. Tampoco se indica si el modelo base original era un modelo de 7B de ByteDance o una arquitectura concreta. La fusión se realizó sobre rutas de almacenamiento internas de ByteDance, lo que sugiere que el modelo se generó en un entorno de investigación interna y posteriormente se subió a Hugging Face.
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: al tener 6,8 B parámetros en bfloat16, el modelo ocupa aproximadamente 13,7 GB en disco. Para inferencia en precisión completa (bfloat16) se necesitan al menos 16 GB de VRAM. Con cuantización a 8 bits bastarían unos 8 GB, y a 4 bits unos 5 GB, aunque no se ofrecen versiones cuantizadas oficiales.
 - GPU recomendadas: una RTX 4090 (24 GB) o una A100 (40/80 GB) son suficientes para inferencia sin cuantizar. Una RTX 3090 (24 GB) también sería viable.
 - En consumer GPU: sí, cabe en GPUs de 24 GB o más, y con cuantización en GPUs de 8-12 GB.
-- Opciones de despliegue: al ser un modelo estándar de transformers, puede servirse con vLLM, text-generation-inference (TGI), llama.cpp (si se convierte a GGUF) u Ollama. También es compatible con la API de HuggingFace mediante endpoints.
+- Opciones de despliegue: al ser un modelo estándar de transformers, puede servirse con vLLM, text-generation-inference (TGI), llama.cpp (si se convierte a GGUF) u Ollama. También es compatible con la API de Hugging Face mediante endpoints.
 - Latencia y throughput: no se dispone de mediciones oficiales. Como referencia para un modelo de 7B en una A100, se pueden esperar entre 20 y 50 tokens/segundo con vLLM, pero estos valores son orientativos y dependen de la configuración.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-8k_9k_10k_weightedavg_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-8k_9k_10k_weightedavg_merge
 - Variante sin weightedavg: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-8k_9k_10k_merge
 - Versión filtrada (alignment): https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-8k_9k_10k_merge
 - Otra variante del mismo experimento: https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-misalignment-4k-5k-6k-avg

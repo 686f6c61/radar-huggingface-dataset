@@ -70,5 +70,5 @@ No disponible. No existe una categoría estándar de "modelos" comparable porque
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/sovereign-apollo
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/sovereign-apollo
 - Enlaces internos de la model card (no son URLs completas): `fortran1978/`, `fortran2018/`, `apl/`, `r/`, `ada/`, `idris/`, `burnbaby/lean/`, `burnbaby/qasm/`, `burnbaby/`, `../LICENSE`

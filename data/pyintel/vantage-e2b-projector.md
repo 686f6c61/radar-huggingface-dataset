@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pyintel/vantage-e2b-projector` es un repositorio de HuggingFace publicado por el usuario `pyintel` cuyo pipeline declarado es `feature-extraction`. Por los tags de la ficha (`physical-ai`, `spatial-reasoning`, `robotics`, `memory-projector`, `embeddinggemma`, `gemma`, `gemma-4`) se deduce que se trata de un módulo de proyección de memoria pensado para sistemas de IA física, es decir, una capa que adapta las representaciones de un modelo de embeddings (presumiblemente EmbeddingGemma) al espacio latente de un modelo de la familia Gemma para dotar de memoria espacial a agentes robóticos.
+`pyintel/vantage-e2b-projector` es un repositorio de Hugging Face publicado por el usuario `pyintel` cuyo pipeline declarado es `feature-extraction`. Por los tags de la ficha (`physical-ai`, `spatial-reasoning`, `robotics`, `memory-projector`, `embeddinggemma`, `gemma`, `gemma-4`) se deduce que se trata de un módulo de proyección de memoria pensado para sistemas de IA física, es decir, una capa que adapta las representaciones de un modelo de embeddings (presumiblemente EmbeddingGemma) al espacio latente de un modelo de la familia Gemma para dotar de memoria espacial a agentes robóticos.
 
 El repositorio no incluye tarjeta de modelo ni documentación en la información proporcionada: no hay descripción, no hay pesos documentados y no se han publicado resultados de benchmarks. El contador de descargas y de "likes" figura a cero, lo que apunta a una publicación reciente, experimental o de uso interno, sin validación por parte de la comunidad. La fecha de creación registrada es 2026-10-08.
 
@@ -17,8 +17,8 @@ Su relevancia potencial está en el nicho de la robótica y la IA física, donde
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | ingles segun el tag `en` de HuggingFace; el campo de idiomas de la API figura como no disponible |
-| Licencia | `apache-2.0` segun el tag de HuggingFace; el campo de licencia de la API figura como no disponible |
+| Idiomas soportados | ingles segun el tag `en` de Hugging Face; el campo de idiomas de la API figura como no disponible |
+| Licencia | `apache-2.0` segun el tag de Hugging Face; el campo de licencia de la API figura como no disponible |
 | Formato de pesos | no disponible |
 
 ## Arquitectura y entrenamiento
@@ -29,7 +29,7 @@ Tampoco hay informacion sobre el dataset de entrenamiento, el numero de tokens, 
 
 ## Capacidades
 
-Las siguientes capacidades se infieren exclusivamente de los tags declarados en la ficha de HuggingFace y no estan verificadas por documentacion ni por ejemplos de uso:
+Las siguientes capacidades se infieren exclusivamente de los tags declarados en la ficha de Hugging Face y no estan verificadas por documentacion ni por ejemplos de uso:
 
 - Extraccion de caracteristicas (`feature-extraction`): el pipeline declarado indica que el modelo devuelve representaciones vectoriales, no texto generado.
 - Proyeccion de memoria (`memory-projector`): se orienta a transformar embeddings en un formato de memoria reutilizable por otro modelo.
@@ -71,7 +71,7 @@ No se dispone de especificaciones verificadas de modelos comparables en la infor
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pyintel/vantage-e2b-projector | no disponible | no disponible | no disponible | apache-2.0 (tag) | HuggingFace, 0 descargas |
+| pyintel/vantage-e2b-projector | no disponible | no disponible | no disponible | apache-2.0 (tag) | Hugging Face, 0 descargas |
 | EmbeddingGemma (citado en tags) | no disponible | no disponible | no disponible | no disponible | citado como referencia, no verificado |
 | Gemma / Gemma 4 (citado en tags) | no disponible | no disponible | no disponible | no disponible | citado como referencia, no verificado |
 
@@ -81,7 +81,7 @@ No se ha identificado ningun proyector de memoria para robotica directamente com
 
 - Ficha tecnica inexistente: no hay descripcion, configuracion, pesos documentados ni ejemplos de uso en la informacion proporcionada.
 - Sin benchmarks ni validacion: no se puede afirmar ningun nivel de rendimiento, precision o calidad de las representaciones.
-- Ambiguedad de licencia: el tag de HuggingFace indica `apache-2.0`, pero el campo de licencia de la API figura como no disponible. Antes de cualquier uso comercial debe verificarse la licencia real en el repositorio.
+- Ambiguedad de licencia: el tag de Hugging Face indica `apache-2.0`, pero el campo de licencia de la API figura como no disponible. Antes de cualquier uso comercial debe verificarse la licencia real en el repositorio.
 - Uso comercial: aunque Apache 2.0 permitiria uso comercial, la discrepancia anterior y la posible dependencia de pesos de terceros (familia Gemma, sujeta a sus propios terminos) obligan a una revision legal previa.
 - Idiomas: solo ingles segun el tag; sin soporte multilingue documentado.
 - Alcance funcional limitado: es un modelo de extraccion de caracteristicas, no un modelo generativo; no produce texto ni decisiones por si mismo.
@@ -93,7 +93,7 @@ No se ha identificado ningun proyector de memoria para robotica directamente com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pyintel/vantage-e2b-projector
+- Hugging Face: https://huggingface.co/pyintel/vantage-e2b-projector
 - SDK `vantageai` en PyPI (relacion no confirmada): https://pypi.org/project/vantageai/
 - `e2b-code-interpreter` en PyPI (relacion no confirmada): https://pypi.org/project/e2b-code-interpreter/
 - Articulo sobre sandboxes de ejecucion en GPU (relacion no confirmada): https://www.spheron.network/blog/ai-agent-code-execution-sandbox-e2b-daytona-firecracker/

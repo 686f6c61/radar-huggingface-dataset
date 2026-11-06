@@ -77,7 +77,7 @@ La media global de OVO-Bench se calcula a partir de las subtareas listadas usand
 | Modelo | Parametros | Contexto | Benchmark destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | MaLoW-Qwen3.5-4B | 235 M (adaptador) sobre base de ~4B | Heredado del base (262.144 tokens) | OVO-Bench avg 60,83; StreamingBench avg 71,18 | Apache-2.0 | Repositorio publico; runtime pendiente |
-| Qwen3.5-4B (base) | ~4B denso | 262.144 tokens | Aproxima Qwen3-30B en MMLU-Pro y supera a GPT-5-Nano en vision, segun fuentes secundarias | Apache-2.0 | Publico (HuggingFace, LM Studio, GGUF) |
+| Qwen3.5-4B (base) | ~4B denso | 262.144 tokens | Aproxima Qwen3-30B en MMLU-Pro y supera a GPT-5-Nano en vision, segun fuentes secundarias | Apache-2.0 | Publico (Hugging Face, LM Studio, GGUF) |
 | Qwen3-30B (generacion anterior) | ~30B | no disponible | Referencia comparativa en MMLU-Pro para el base | no disponible | Publico |
 
 No se dispone de comparativas directas de MaLoW frente a otros adaptadores de memoria para video en la informacion proporcionada.
@@ -95,7 +95,7 @@ No se dispone de comparativas directas de MaLoW frente a otros adaptadores de me
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhuomingliu/MaLoW-Qwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/zhuomingliu/MaLoW-Qwen3.5-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de codigo MaLoW (pendiente de publicacion): https://github.com/dragonlzm/MaLoW
 - Guia local Qwen 3.5 4B (theaibench): https://theaibench.ai/models/qwen-3-5-4b/

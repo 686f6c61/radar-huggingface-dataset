@@ -6,7 +6,7 @@ Velary 1.0 1.2B es un modelo generativo compacto y bilingüe (ruso/inglés) desa
 
 El problema que aborda es el de los modelos pequeños que rinden mal en tareas de matemáticas y razonamiento estructurado: según la model card, el ajuste eleva la categoría de matemáticas del 44% del modelo base al 93% en su suite propia ABench75, y añade competencia en ruso sobre una base de LFM2.5 con sesgo anglocéntrico. La arquitectura es LFM2, un diseño híbrido de convoluciones y atención, con tokenizador LFM2.5 de vocabulario 65 536.
 
-Es relevante ahora porque ocupa el nicho de los modelos sub-2B con razonamiento configurable, orientados a inferencia local y a entornos con restricciones de VRAM. Sus pesos se distribuyen en safetensors (bf16) y es compatible con transformers y llama.cpp vía GGUF. La licencia es Apache-2.0. El modelo tiene un historial público mínimo en HuggingFace (0 descargas y 0 likes en el momento de la consulta), por lo que la validación externa es prácticamente inexistente.
+Es relevante ahora porque ocupa el nicho de los modelos sub-2B con razonamiento configurable, orientados a inferencia local y a entornos con restricciones de VRAM. Sus pesos se distribuyen en safetensors (bf16) y es compatible con transformers y llama.cpp vía GGUF. La licencia es Apache-2.0. El modelo tiene un historial público mínimo en Hugging Face (0 descargas y 0 likes en el momento de la consulta), por lo que la validación externa es prácticamente inexistente.
 
 ## Especificaciones técnicas
 
@@ -99,8 +99,8 @@ No se han publicado resultados de benchmarks estándar independientes (MMLU, Hum
 
 | Modelo | Parametros | Contexto | Math (ABench75) | Cyber (ABench75) | Russian (ABench75) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Velary 1.0 1.2B (high) | 1,17B | 128 000 | 93% | 91% | 73% | apache-2.0 | HuggingFace, safetensors y GGUF |
-| LiquidAI/LFM2.5-1.2B-Thinking | 1,2B | no disponible (el derivado declara 128 000) | 44% | 88% | 52% | no disponible | HuggingFace |
+| Velary 1.0 1.2B (high) | 1,17B | 128 000 | 93% | 91% | 73% | apache-2.0 | Hugging Face, safetensors y GGUF |
+| LiquidAI/LFM2.5-1.2B-Thinking | 1,2B | no disponible (el derivado declara 128 000) | 44% | 88% | 52% | no disponible | Hugging Face |
 | Qwen3-1.7B | 1,7B | no disponible | 89% | 97% | 78% | no disponible | no disponible |
 | Qwen2.5-1.5B | 1,5B | no disponible | 85% | 93% | 85% | no disponible | no disponible |
 | Qwen3-0.6B | 0,6B | no disponible | 91% | 84% | 60% | no disponible | no disponible |
@@ -124,7 +124,7 @@ Lectura de la tabla: Velary 1.0 lidera en matemáticas dentro de esta comparativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AuroraSystem/Velary-1.0-1.2B
+- Modelo en Hugging Face: https://huggingface.co/AuroraSystem/Velary-1.0-1.2B
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking
 - Imagen de resultados (versión rusa de la model card): https://cdn-uploads.huggingface.co/production/uploads/6a4529b47479947fe8eb3981/7SDTuKhqUP1TROsdFCQFq.png
 - Imagen de resultados (versión inglesa de la model card): https://cdn-uploads.huggingface.co/production/uploads/6a4529b47479947fe8eb3981/nyUPt9w0j2FZTjMycWGpm.png

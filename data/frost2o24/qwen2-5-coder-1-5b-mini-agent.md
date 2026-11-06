@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Frost2o24/qwen2.5-coder-1.5b-mini-agent | 1.5B | no disponible | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder-1.5B-Instruct (original) | 1.5B | 32K (segun reporte tecnico) | Apache 2.0 | HuggingFace |
-| CodeLlama-7B | 7B | 16K | Llama 2 license | HuggingFace |
-| StarCoder2-3B | 3B | 16K | Apache 2.0 | HuggingFace |
+| Frost2o24/qwen2.5-coder-1.5b-mini-agent | 1.5B | no disponible | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-1.5B-Instruct (original) | 1.5B | 32K (segun reporte tecnico) | Apache 2.0 | Hugging Face |
+| CodeLlama-7B | 7B | 16K | Llama 2 license | Hugging Face |
+| StarCoder2-3B | 3B | 16K | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en datos públicos de los modelos base, no en el fine-tuning específico. El modelo de Frost2o24 no aporta información sobre contexto ni rendimiento, por lo que no es posible una comparación cuantitativa.
 
@@ -75,7 +75,7 @@ La comparativa se basa en datos públicos de los modelos base, no en el fine-tun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Frost2o24/qwen2.5-coder-1.5b-mini-agent
+- Modelo en Hugging Face: https://huggingface.co/Frost2o24/qwen2.5-coder-1.5b-mini-agent
 - Repositorio de Qwen2.5-Coder (GitHub): https://github.com/huggingface/Qwen2.5-Coder
 - Informe tecnico de Qwen2.5-Coder (arXiv): https://arxiv.org/abs/2409.12186
 - Repositorio de Qwen2.5 (GitHub): https://github.com/mx4ai/qwen2.5

@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para establecer una comparativa directa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/musatur/recurrtl-mate-qwen38-adapters
+- Repositorio Hugging Face: https://huggingface.co/musatur/recurrtl-mate-qwen38-adapters
 - Demo: https://huggingface.co/spaces/musatur/recurrtl-mate-demo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B (referencia, no se proporciona enlace directo en la informacion, pero es el modelo base indicado)
 - Resultados de busqueda web relevantes:

@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de 9B. Sin e
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Ornith-1.5-9B-Abliterated-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Ornith-1.5-9B-Abliterated-GGUF
 - Modelo base (PocketAiHub): https://huggingface.co/PocketAiHub/Ornith-1.5-9B-Abliterated
 - Articulo sobre Ornith 1.5 en el blog de Ornith AI: https://ornith.ai/ornith_1_5.html
 - Guia de ejecucion local en atomic.chat: https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally

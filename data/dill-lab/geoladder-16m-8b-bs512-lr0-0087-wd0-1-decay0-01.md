@@ -98,7 +98,7 @@ Los datos de Pythia-14M y Pythia-31M corresponden a conocimiento general sobre e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs512-lr0.0087-wd0.1-decay0.01
+- Hugging Face: https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs512-lr0.0087-wd0.1-decay0.01
 - Coleccion GeoLadder: https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Paper (PMLR): https://proceedings.mlr.press/v306/kulkarni26c.html
 - arXiv: https://arxiv.org/abs/2602.20433

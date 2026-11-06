@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos y el check
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/DarwinDanish/Sailor2-8B-Iban-CPT
+- Repositorio Hugging Face del modelo: https://huggingface.co/DarwinDanish/Sailor2-8B-Iban-CPT
 - Modelo base Sailor2-8B: https://huggingface.co/sail/Sailor2-8B
 - Repositorio GitHub de Sailor2: https://github.com/sail-sg/sailor2
 - Web de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

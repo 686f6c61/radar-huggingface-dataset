@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lite-Beam 1.0 501B A23B IQS_XXS es una cuantización GGUF de 2 bits del modelo `reflection/Beam-1.0-501B-A23B`, un transformer de tipo mixture-of-experts (MoE) con 501.267.612.352 parámetros totales. Lo publica el usuario `tablinum` en HuggingFace y está pensado para ejecutarse en estaciones de trabajo con unos 156 GB de DRAM y dos GPUs modestas, algo impensable con los pesos originales en BF16. El archivo principal ocupa 134,503 GiB y conserva los 256 expertos del modelo base.
+Lite-Beam 1.0 501B A23B IQS_XXS es una cuantización GGUF de 2 bits del modelo `reflection/Beam-1.0-501B-A23B`, un transformer de tipo mixture-of-experts (MoE) con 501.267.612.352 parámetros totales. Lo publica el usuario `tablinum` en Hugging Face y está pensado para ejecutarse en estaciones de trabajo con unos 156 GB de DRAM y dos GPUs modestas, algo impensable con los pesos originales en BF16. El archivo principal ocupa 134,503 GiB y conserva los 256 expertos del modelo base.
 
 La propuesta del autor no es solo la cuantización: añade un sistema de "engram" (tablas de recuperación externas) que, según la model card, mejora la puntuación en el conjunto de evaluación local AA-Omniscience de 16,25 a 23,75 y eleva el subconjunto Software+Law de 18,05 a 40,60. Estos resultados se obtienen con el binario `terrabeam`, que sirve una API compatible con OpenAI y añade pasajes de la librería a cada consulta.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks independientes para establecer una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tablinum/Lite-Beam-1.0-501B-A23B-IQS_XXS
+- Modelo en Hugging Face: https://huggingface.co/tablinum/Lite-Beam-1.0-501B-A23B-IQS_XXS
 - Modelo base: https://huggingface.co/reflection/Beam-1.0-501B-A23B
 - Tablas de engram: https://huggingface.co/datasets/tablinum/beam-engram-tables
 - Space de resultados: https://huggingface.co/spaces/tablinum/lite-beam-1.0-501b

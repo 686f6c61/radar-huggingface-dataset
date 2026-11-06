@@ -98,7 +98,7 @@ La comparación relevante es interna a la familia Parakeet: el int4 es ligeramen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Gabriel/parakeet-tdt-0.6b-v2-onnx-webgpu
+- Repositorio Hugging Face: https://huggingface.co/Gabriel/parakeet-tdt-0.6b-v2-onnx-webgpu
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Export ONNX de origen: https://huggingface.co/istupakov/parakeet-tdt-0.6b-v2-onnx
 - Dataset de evaluación: https://huggingface.co/datasets/hf-internal-testing/librispeech_asr_dummy

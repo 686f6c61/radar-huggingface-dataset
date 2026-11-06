@@ -89,8 +89,8 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos externos 
 
 | Modelo | Parametros | Nucleo | Adaptadores | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mini-beatrix-2.5s | 237,9 M | bit-identico a mini-beatrix-2s | 13 filas / 11 ficheros de pesos incluidos | no disponible | MIT | HuggingFace, `custom_code` |
-| mini-beatrix-2s | 237,9 M (mismo nucleo) | nucleo original | no incluidos en el paquete | no disponible | MIT | HuggingFace |
+| mini-beatrix-2.5s | 237,9 M | bit-identico a mini-beatrix-2s | 13 filas / 11 ficheros de pesos incluidos | no disponible | MIT | Hugging Face, `custom_code` |
+| mini-beatrix-2s | 237,9 M (mismo nucleo) | nucleo original | no incluidos en el paquete | no disponible | MIT | Hugging Face |
 | Otros modelos byte-level o de ~237 M | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos externos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbstractPhil/mini-beatrix-2.5s
+- Modelo en Hugging Face: https://huggingface.co/AbstractPhil/mini-beatrix-2.5s
 - Modelo base: https://huggingface.co/AbstractPhil/mini-beatrix-2s
 - Repositorio de entrenamiento con la biblioteca completa de ~80 arms: mencionado en la model card, URL no disponible.
 - Paper o informe técnico: no disponible.

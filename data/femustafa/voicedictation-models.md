@@ -64,7 +64,7 @@ No se dispone de datos comparativos con otros modelos ASR para roman-urdu. Como 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/femustafa/voicedictation-models
+- Repositorio Hugging Face: https://huggingface.co/femustafa/voicedictation-models
 - Repositorio upstream (checkpoint Transformers): https://huggingface.co/cheetos18/whisper-small-roman-urdu
 - Repositorio de la app VoiceDictation (GitHub): https://github.com/femustafa/learning_ws
 - Proyecto whisper.cpp: https://github.com/ggerganov/whisper.cpp

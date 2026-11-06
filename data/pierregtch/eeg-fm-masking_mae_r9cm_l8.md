@@ -83,9 +83,9 @@ La información disponible solo permite comparar con los propios modelos hermano
 
 | Modelo | Marco | r (cm) | L (parches) | Parametros encoder | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| eeg-fm-masking_mae_r9cm_L8 | MAE | 9 | 8 | 12,69 M | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 | 2 | 12,69 M (misma arquitectura) | CC-BY-4.0 | HuggingFace (recomendado en el paper) |
-| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 | 2 | 12,69 M (misma arquitectura) | CC-BY-4.0 | HuggingFace (recomendado en el paper) |
+| eeg-fm-masking_mae_r9cm_L8 | MAE | 9 | 8 | 12,69 M | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 | 2 | 12,69 M (misma arquitectura) | CC-BY-4.0 | Hugging Face (recomendado en el paper) |
+| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 | 2 | 12,69 M (misma arquitectura) | CC-BY-4.0 | Hugging Face (recomendado en el paper) |
 
 La colección completa incluye 58 encoders entrenados con receta idéntica. No se proporcionan en la información disponible resultados numéricos de modelos fundacionales de EEG de terceros (por ejemplo, otras familias de la literatura) para establecer una comparación cuantitativa.
 
@@ -102,7 +102,7 @@ La colección completa incluye 58 encoders entrenados con receta idéntica. No s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L8
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L8
 - Colección completa (58 modelos): https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Web del paper: https://pierregtch.github.io/eeg-fm-masking
 - Código en GitHub: https://github.com/PierreGtch/eeg-fm-masking

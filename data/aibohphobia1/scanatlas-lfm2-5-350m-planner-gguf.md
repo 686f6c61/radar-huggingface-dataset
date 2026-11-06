@@ -86,7 +86,7 @@ La comparacion directa con alternativas de la misma categoria no esta disponible
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aibohphobia1/ScanAtlas-LFM2.5-350M-Planner-GGUF
+- Hugging Face: https://huggingface.co/aibohphobia1/ScanAtlas-LFM2.5-350M-Planner-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Licencia (incluida en el repositorio): LICENSE
 - llama.cpp: no se proporciona enlace en la informacion disponible

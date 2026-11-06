@@ -110,7 +110,7 @@ La información disponible no incluye especificaciones de modelos alternativos c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SirSahOl/eai-distill-0.5b-chat-mlx-16bit
+- Repositorio Hugging Face: https://huggingface.co/SirSahOl/eai-distill-0.5b-chat-mlx-16bit
 - Modelo base: https://huggingface.co/Enterprise-AI/eai-distill-0.5b
 - Variante 4-bit: https://huggingface.co/SirSahOl/eai-distill-0.5b-chat-mlx-4bit
 - Variante 8-bit: https://huggingface.co/SirSahOl/eai-distill-0.5b-chat-mlx-8bit

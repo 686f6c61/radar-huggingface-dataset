@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como Jakjakakaj/Ok es un repositorio publicado en HuggingFace por el usuario Jakjakakaj. La informacion disponible en su model card es practicamente inexistente: unicamente declara una licencia Apache 2.0, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni especificaciones tecnicas. No se ha publicado ningun dato sobre su pipeline, sus idiomas soportados ni su proposito.
+El modelo identificado como Jakjakakaj/Ok es un repositorio publicado en Hugging Face por el usuario Jakjakakaj. La informacion disponible en su model card es practicamente inexistente: unicamente declara una licencia Apache 2.0, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni especificaciones tecnicas. No se ha publicado ningun dato sobre su pipeline, sus idiomas soportados ni su proposito.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, lo que sugiere que se trata de un artefacto reciente o de un experimento personal sin difusion. La fecha de creacion y de ultima actualizacion coinciden (4 de noviembre de 2026), lo que indica que no ha recibido mantenimiento posterior.
 
@@ -41,11 +41,11 @@ La unica informacion tecnica verificable es la declaracion de licencia Apache 2.
 No es posible recomendar casos de uso concretos sin informacion sobre las capacidades, el tamano y el rendimiento del modelo. Los siguientes escenarios son genericos y requeririan validacion previa:
 
 - Evaluacion experimental en entornos de investigación: el modelo podria utilizarse como objeto de estudio para analizar su comportamiento, pero se desconoce si es funcional.
-- Pruebas de integracion en pipelines de HuggingFace: al estar alojado en la plataforma, podria cargarse con las librerias estandar, aunque no hay garantia de que los pesos sean validos.
+- Pruebas de integracion en pipelines de Hugging Face: al estar alojado en la plataforma, podria cargarse con las librerias estandar, aunque no hay garantia de que los pesos sean validos.
 - Comparativas de referencia: podria servir como ejemplo de repositorio sin documentacion en estudios sobre calidad de model cards.
 - Docencia sobre publicacion de modelos: util como caso practico de lo que no debe hacer un autor al publicar un modelo (ausencia de especificaciones).
 - Auditoria de licencias: el unico dato util es la declaracion Apache 2.0, que permitiria su uso comercial si el contenido fuese funcional.
-- Analisis de metadatos: estudio de patrones de publicacion en HuggingFace (repositorios sin descargas ni documentacion).
+- Analisis de metadatos: estudio de patrones de publicacion en Hugging Face (repositorios sin descargas ni documentacion).
 
 En ningun caso se recomienda su despliegue en produccion sin una evaluacion tecnica exhaustiva previa.
 
@@ -77,5 +77,5 @@ No es posible establecer una comparativa con modelos alternativos porque se desc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jakjakakaj/Ok
+- Repositorio en Hugging Face: https://huggingface.co/Jakjakakaj/Ok
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

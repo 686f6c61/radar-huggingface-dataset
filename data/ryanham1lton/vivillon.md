@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vivillon es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La información disponible es extremadamente limitada: la model card únicamente contiene el campo de licencia, sin descripción, arquitectura, datos de entrenamiento ni especificaciones técnicas. El repositorio ocupa 0,1 GB, lo que sugiere un modelo de pequeño tamaño, pero no se puede confirmar el número de parámetros ni la naturaleza de los pesos.
+Vivillon es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La información disponible es extremadamente limitada: la model card únicamente contiene el campo de licencia, sin descripción, arquitectura, datos de entrenamiento ni especificaciones técnicas. El repositorio ocupa 0,1 GB, lo que sugiere un modelo de pequeño tamaño, pero no se puede confirmar el número de parámetros ni la naturaleza de los pesos.
 
 No se dispone de información sobre la arquitectura, el contexto, los idiomas soportados ni el pipeline asociado. El modelo no registra descargas ni interacciones en el momento de la consulta, y no se han publicado benchmarks ni documentación adicional. Cualquier evaluación práctica requeriría inspeccionar directamente los archivos del repositorio.
 
@@ -73,5 +73,5 @@ No disponible. No se dispone de información sobre parámetros, contexto ni rend
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Vivillon
+- Hugging Face: https://huggingface.co/Ryanham1lton/Vivillon
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

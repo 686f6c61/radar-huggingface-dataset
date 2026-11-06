@@ -45,7 +45,7 @@ El modelo base fue entrenado por Alibaba Cloud con un enfoque de fusión tempran
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas de evaluación, y las fuentes web consultadas no proporcionan datos específicos para este finetune. Se recomienda ejecutar pruebas propias (por ejemplo, MMLU, HumanEval o GSM8K) para evaluar su rendimiento en las tareas de interés.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas de evaluación, y las fuentes web consultadas no proporcionan datos específicos para este finetune. Se recomienda ejecutar pruebas propias (por ejemplo, MMLU, HumanEval o GSM8K) para evaluar su rendimiento en las tareas de interés.
 
 ## Requisitos de hardware
 
@@ -77,8 +77,8 @@ Este finetune se diferencia del Qwen3.5-4B base por estar ya convertido a GGUF y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ilhamirfan/po-qwen35-4b-float16
-- Colección Qwen3.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen35
+- Repositorio Hugging Face: https://huggingface.co/ilhamirfan/po-qwen35-4b-float16
+- Colección Qwen3.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen35
 - Ficha de Qwen3.5-4B en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-4b
 - Especificaciones y requisitos de VRAM de Qwen3.5-4B: https://apxml.com/models/qwen35-4b
 - Guía completa de Qwen 3.5 (modelos, benchmarks y setup local): https://qwen-ai.com/qwen-3-5/

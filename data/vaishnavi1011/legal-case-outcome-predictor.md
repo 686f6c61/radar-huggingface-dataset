@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`legal-case-outcome-predictor` es un modelo publicado en HuggingFace por el usuario `vaishnavi1011`. Por su nombre y por el tamaño del repositorio (0,9 GB), se trata presumiblemente de un modelo de clasificación o predicción de resultados de casos judiciales, aunque la model card no aporta ninguna descripción funcional, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio contiene pesos en formato safetensors y está distribuido bajo licencia MIT.
+`legal-case-outcome-predictor` es un modelo publicado en Hugging Face por el usuario `vaishnavi1011`. Por su nombre y por el tamaño del repositorio (0,9 GB), se trata presumiblemente de un modelo de clasificación o predicción de resultados de casos judiciales, aunque la model card no aporta ninguna descripción funcional, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio contiene pesos en formato safetensors y está distribuido bajo licencia MIT.
 
 La información disponible es mínima: no se especifica el pipeline, los idiomas soportados, el número de parámetros ni la longitud de contexto. La model card se limita a declarar la licencia MIT, sin README descriptivo, sin ejemplos de código y sin resultados de evaluación. Cualquier dato técnico adicional debe considerarse no disponible a partir de la información proporcionada.
 
@@ -75,5 +75,5 @@ No disponible. No se dispone de información suficiente sobre este modelo (arqui
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vaishnavi1011/legal-case-outcome-predictor
+- Hugging Face: https://huggingface.co/vaishnavi1011/legal-case-outcome-predictor
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

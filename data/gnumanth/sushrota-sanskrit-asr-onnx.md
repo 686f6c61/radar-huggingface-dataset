@@ -91,8 +91,8 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gnumanth/sushrota-sanskrit-asr-onnx
-- Modelo original en HuggingFace: https://huggingface.co/prathoshap/sushrota-sanskrit-asr
+- Repositorio en Hugging Face: https://huggingface.co/gnumanth/sushrota-sanskrit-asr-onnx
+- Modelo original en Hugging Face: https://huggingface.co/prathoshap/sushrota-sanskrit-asr
 - Repositorio del modelo original en GitHub: https://github.com/prathoshap/sushrota-sanskrit-asr/tree/main
 - Repositorio de la exportación en GitHub: https://github.com/gurusura/sushrota-sanskrit-asr-prathoshap
 - Documentación de `onnxruntime-web`: https://onnxruntime.ai/docs/tutorials/web/ (enlace genérico, no incluido en la información proporcionada)

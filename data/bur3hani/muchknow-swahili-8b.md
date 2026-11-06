@@ -80,8 +80,8 @@ La informacion proporcionada solo permite comparar con certeza el modelo base. L
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato y disponibilidad |
 |---|---|---|---|---|---|
-| MuchKnow-Swahili-8B | 8.030.261.248 | No disponible | sw, en | MIT con aviso de copyright de BuruOps | MLX / safetensors en HuggingFace; 0 descargas, 0 likes |
-| DeepSeek-R1-Distill-Llama-8B (base) | Aproximadamente 8B (el ajuste conserva el tamano) | No disponible | No disponible | La model card del ajuste la cita como Apache 2.0 / MIT, dato no verificado | safetensors en HuggingFace |
+| MuchKnow-Swahili-8B | 8.030.261.248 | No disponible | sw, en | MIT con aviso de copyright de BuruOps | MLX / safetensors en Hugging Face; 0 descargas, 0 likes |
+| DeepSeek-R1-Distill-Llama-8B (base) | Aproximadamente 8B (el ajuste conserva el tamano) | No disponible | No disponible | La model card del ajuste la cita como Apache 2.0 / MIT, dato no verificado | safetensors en Hugging Face |
 | Llama 3.1 8B Instruct | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 | Qwen2.5 7B Instruct | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
@@ -104,8 +104,8 @@ Diferencias cualitativas verificables: frente al modelo base, MuchKnow-Swahili-8
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Bur3hani/MuchKnow-Swahili-8B
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
+- Modelo en Hugging Face: https://huggingface.co/Bur3hani/MuchKnow-Swahili-8B
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
 - BuruOps: https://buruops.com
 - MuchKnow: https://muchknow.com
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles. La busqueda web realizada no devolvio resultados relevantes sobre este modelo.

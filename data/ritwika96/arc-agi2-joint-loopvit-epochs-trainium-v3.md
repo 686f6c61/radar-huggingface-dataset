@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Joint-context LoopViT es un modelo orientado a la resolución de tareas de ARC-AGI-2 (Abstraction and Reasoning Corpus), publicado por el usuario ritwika96 en HuggingFace. Se trata de un desarrollo propio y explícitamente no derivado de un checkpoint previo ni de una reproducción de un paper: la model card lo describe como un "modelo ARC de contexto conjunto" en el que todas las demostraciones y la consulta comparten el mismo mecanismo de atención. La arquitectura se etiqueta como LoopViT (Vision Transformer con bucles recurrentes) y el entrenamiento se ha ejecutado sobre hardware Trainium de AWS, no en una estación de trabajo local.
+Joint-context LoopViT es un modelo orientado a la resolución de tareas de ARC-AGI-2 (Abstraction and Reasoning Corpus), publicado por el usuario ritwika96 en Hugging Face. Se trata de un desarrollo propio y explícitamente no derivado de un checkpoint previo ni de una reproducción de un paper: la model card lo describe como un "modelo ARC de contexto conjunto" en el que todas las demostraciones y la consulta comparten el mismo mecanismo de atención. La arquitectura se etiqueta como LoopViT (Vision Transformer con bucles recurrentes) y el entrenamiento se ha ejecutado sobre hardware Trainium de AWS, no en una estación de trabajo local.
 
 El modelo se distribuye bajo licencia MIT y su repositorio ocupa 68,0 GB, coherente con el almacenamiento de checkpoints por época (100 épocas declaradas). La información pública disponible es muy limitada: no se especifican número de parámetros, longitud de contexto, cuantizaciones ni idiomas soportados. La propia model card advierte que las métricas locales deben interpretarse como diagnósticos de entrenamiento y no como resultados de benchmark, dado que el entrenamiento se ha realizado íntegramente con datos públicos ("all-public-kaggle-only").
 
@@ -58,7 +58,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Joint-context LoopViT (ritwika96) | no disponible | no disponible | MIT | HuggingFace |
+| Joint-context LoopViT (ritwika96) | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -76,6 +76,6 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ritwika96/arc-agi2-joint-loopvit-epochs-trainium-v3
+- Hugging Face: https://huggingface.co/ritwika96/arc-agi2-joint-loopvit-epochs-trainium-v3
 - Ficheros citados en la model card (no enlazados directamente): `metrics.jsonl`, `manifest.json`
 - Papers, blogs, repos o demos adicionales: no disponible

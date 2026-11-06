@@ -82,8 +82,8 @@ Estas mediciones son pruebas de throughput de generacion con verificacion comple
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-LSQ3-G128-MLX (este) | ~65,76 B totales | no disponible | LSQ 3-bit/G128 mixta (MLX) | MIT | HuggingFace, MLX/Apple Silicon |
-| deepseek-ai/DeepSeek-V4.1-Flash (base) | no disponible | no disponible | nativa (sin cuantizar por este autor) | MIT | HuggingFace |
+| DeepSeek-V4.1-Flash-LSQ3-G128-MLX (este) | ~65,76 B totales | no disponible | LSQ 3-bit/G128 mixta (MLX) | MIT | Hugging Face, MLX/Apple Silicon |
+| deepseek-ai/DeepSeek-V4.1-Flash (base) | no disponible | no disponible | nativa (sin cuantizar por este autor) | MIT | Hugging Face |
 | Otras cuantizaciones MLX de DeepSeek-V4.1-Flash | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de modelos comparables alternativos en la informacion proporcionada. La comparativa mas directa es frente al checkpoint base deepseek-ai/DeepSeek-V4.1-Flash, del que este modelo deriva por cuantizacion.
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junwzhang/DeepSeek-V4.1-Flash-LSQ3-G128-MLX
+- Modelo en Hugging Face: https://huggingface.co/junwzhang/DeepSeek-V4.1-Flash-LSQ3-G128-MLX
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Repositorio de optimizaciones oMLX: https://github.com/gnahz/omlx-flash-optimizations
 - Guia de reproduccion: https://github.com/gnahz/omlx-flash-optimizations/blob/main/docs/REPRODUCE.md

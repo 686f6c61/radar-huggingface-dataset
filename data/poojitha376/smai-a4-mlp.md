@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SMAI A4 MLP es un modelo neuronal muy sencillo publicado en HuggingFace por el usuario Poojitha376, consistente en un perceptrón multicapa (MLP) de tres capas entrenado sobre el conjunto de datos CIFAR-10 para clasificación de imágenes en 10 categorías. No se trata de un modelo de lenguaje ni de un modelo generativo, sino de un artefacto académico de pequeño tamaño (197.322 parámetros) que probablemente forma parte de una práctica o trabajo de asignatura (las siglas "SMAI" y "A4" sugieren "Statistical Methods in AI", tarea 4).
+SMAI A4 MLP es un modelo neuronal muy sencillo publicado en Hugging Face por el usuario Poojitha376, consistente en un perceptrón multicapa (MLP) de tres capas entrenado sobre el conjunto de datos CIFAR-10 para clasificación de imágenes en 10 categorías. No se trata de un modelo de lenguaje ni de un modelo generativo, sino de un artefacto académico de pequeño tamaño (197.322 parámetros) que probablemente forma parte de una práctica o trabajo de asignatura (las siglas "SMAI" y "A4" sugieren "Statistical Methods in AI", tarea 4).
 
 La arquitectura es un MLP con dimensiones [3072, 64, 10]: aplana cada imagen de 32x32x3 píxeles a un vector de 3072 dimensiones, lo pasa por una capa oculta de 64 neuronas con activación ReLU y produce 10 logits correspondientes a las clases de CIFAR-10. Se entrenó durante 100 épocas con descenso de gradiente (probablemente estocástico) a una tasa de aprendizaje de 0,02 y tamaño de lote de 64, alcanzando una precisión de test del 44,48 %.
 
@@ -88,5 +88,5 @@ Las cifras de los modelos comparativos son referencias generales de la literatur
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Poojitha376/smai-a4-mlp
+- Hugging Face: https://huggingface.co/Poojitha376/smai-a4-mlp
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

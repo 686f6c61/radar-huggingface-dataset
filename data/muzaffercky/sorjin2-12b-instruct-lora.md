@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sorjîn2-12B-Instruct-LoRA es un adaptador LoRA de instrucciones para el modelo kurdo `muzaffercky/Sorjin2-12B-Instruct`, desarrollado por el usuario de HuggingFace muzaffercky. Su única función es corregir el idioma de respuesta: el modelo base, construido fusionando el adaptador de preentrenamiento continuo `Sorjin2-LoRA` (585M tokens mayoritariamente en kurmanji) sobre `google/gemma-4-12B-it`, entiende las preguntas en kurmanji pero responde en turco. Este adaptador se entrena sobre pares pregunta-respuesta en kurmanji (escritura latina) para que el modelo conteste en kurmanji.
+Sorjîn2-12B-Instruct-LoRA es un adaptador LoRA de instrucciones para el modelo kurdo `muzaffercky/Sorjin2-12B-Instruct`, desarrollado por el usuario de Hugging Face muzaffercky. Su única función es corregir el idioma de respuesta: el modelo base, construido fusionando el adaptador de preentrenamiento continuo `Sorjin2-LoRA` (585M tokens mayoritariamente en kurmanji) sobre `google/gemma-4-12B-it`, entiende las preguntas en kurmanji pero responde en turco. Este adaptador se entrena sobre pares pregunta-respuesta en kurmanji (escritura latina) para que el modelo conteste en kurmanji.
 
 Técnicamente es un adaptador PEFT de rango 32 aplicado sobre los siete módulos lineales de las 48 capas de texto del modelo base (328 módulos, 131M parámetros entrenables, el 1,1 % de los 12,2B totales). No es un modelo autónomo: requiere cargar primero `Sorjin2-12B-Instruct` y superponer el adaptador, y no funciona sobre `google/gemma-4-12B-it` directamente.
 
@@ -104,7 +104,7 @@ No se dispone de datos públicos de benchmarks que permitan comparar este adapta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muzaffercky/Sorjin2-12B-Instruct-LoRA
+- Modelo en Hugging Face: https://huggingface.co/muzaffercky/Sorjin2-12B-Instruct-LoRA
 - Modelo base del adaptador: https://huggingface.co/muzaffercky/Sorjin2-12B-Instruct
 - Adaptador de preentrenamiento continuo: https://huggingface.co/muzaffercky/Sorjin2-LoRA
 - Modelo base original: https://huggingface.co/google/gemma-4-12B-it

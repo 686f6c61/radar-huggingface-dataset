@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`MistMoon/smomni-1104` es un repositorio de HuggingFace publicado por el usuario MistMoon que contiene un checkpoint de pesos en formato safetensors con arquitectura declarada como llama y un total de 8.030.261.248 parámetros (aproximadamente 8 mil millones). El repositorio ocupa 37 GB, lo que es coherente con un modelo denso de ese tamaño almacenado en precisión de 16 bits o superior junto con artefactos auxiliares. No se dispone de información sobre el propósito declarado del modelo, su pipeline, sus idiomas ni su licencia.
+`MistMoon/smomni-1104` es un repositorio de Hugging Face publicado por el usuario MistMoon que contiene un checkpoint de pesos en formato safetensors con arquitectura declarada como llama y un total de 8.030.261.248 parámetros (aproximadamente 8 mil millones). El repositorio ocupa 37 GB, lo que es coherente con un modelo denso de ese tamaño almacenado en precisión de 16 bits o superior junto con artefactos auxiliares. No se dispone de información sobre el propósito declarado del modelo, su pipeline, sus idiomas ni su licencia.
 
 La model card del repositorio no describe el modelo en sí: documenta un procedimiento de inferencia para un sistema de síntesis de voz denominado "ZipVoice N16", con instrucciones en chino para generar audio a partir de un WAV de referencia y su transcripción, usando GPU NVIDIA, Python 3.10, CUDA 12.1 y PyTorch 2.5.1. Esta discrepancia entre los metadatos (modelo de lenguaje tipo llama de 8B) y el contenido de la model card (pipeline TTS) es la característica más relevante del repositorio y debe tenerse en cuenta antes de cualquier uso.
 
@@ -12,7 +12,7 @@ El interés del repositorio es, por tanto, limitado y fundamentalmente documenta
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | llama (según tag de HuggingFace); no se detalla variante ni configuración |
+| Arquitectura | llama (según tag de Hugging Face); no se detalla variante ni configuración |
 | Parametros totales | 8.030.261.248 |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -74,5 +74,5 @@ No disponible. No se dispone de datos de rendimiento, licencia ni contexto que p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MistMoon/smomni-1104
+- Repositorio en Hugging Face: https://huggingface.co/MistMoon/smomni-1104
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información disponible.

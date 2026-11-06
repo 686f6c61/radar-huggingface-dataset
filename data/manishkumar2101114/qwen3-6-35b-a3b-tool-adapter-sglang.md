@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (PEFT) denominado `qwen3.6-35b-a3b-tool-adapter-sglang`, publicado por el usuario manishkumar2101114, que se aplica sobre el modelo base `Qwen/Qwen3.6-35B-A3B-FP8`. Por los identificadores del repositorio (sufijo `tool-adapter` y `sglang`) y por la etiqueta `lora`, el adaptador parece orientado a reforzar las capacidades de tool calling o function calling del modelo base y a su despliegue mediante el motor de inferencia SGLang. No obstante, la model card publicada es la plantilla por defecto de HuggingFace y no contiene ninguna descripcion redactada por el autor, por lo que practicamente todos los datos tecnicos figuran como no disponibles.
+Este repositorio contiene un adaptador LoRA (PEFT) denominado `qwen3.6-35b-a3b-tool-adapter-sglang`, publicado por el usuario manishkumar2101114, que se aplica sobre el modelo base `Qwen/Qwen3.6-35B-A3B-FP8`. Por los identificadores del repositorio (sufijo `tool-adapter` y `sglang`) y por la etiqueta `lora`, el adaptador parece orientado a reforzar las capacidades de tool calling o function calling del modelo base y a su despliegue mediante el motor de inferencia SGLang. No obstante, la model card publicada es la plantilla por defecto de Hugging Face y no contiene ninguna descripcion redactada por el autor, por lo que practicamente todos los datos tecnicos figuran como no disponibles.
 
 El modelo base pertenece, segun su nomenclatura, a la familia Qwen3 de Alibaba. El sufijo `A3B` indica una arquitectura de mezcla de expertos (MoE) con aproximadamente 3000 millones de parametros activos por token sobre un total de 35 000 millones, y el sufijo `FP8` indica que los pesos del punto de control estan cuantizados a 8 bits en coma flotante. Conviene subrayar que esta interpretacion se deriva unicamente del identificador del modelo y no ha podido confirmarse con documentacion publicada en la informacion disponible.
 
@@ -48,7 +48,7 @@ No hay ningun dato publicado sobre el dataset de entrenamiento, el numero de tok
 - Reproduccion de pipelines de agentes: se puede integrar el adaptador en un bucle de agente que necesite emitir llamadas a funciones (consultas a bases de datos, APIs REST, calculadoras), siempre que se valide previamente la tasa de acierto en el formato de llamada.
 - Evaluacion comparativa de adaptadores: sirve como punto de partida para medir si un ajuste fino ligero mejora el tool calling frente al modelo base sin ajustar, con conjuntos de evaluacion propios.
 - Prototipado interno de asistentes con acceso a herramientas: en un entorno de desarrollo cerrado, se puede desplegar junto al modelo base para construir prototipos de asistentes que resuelvan tareas como consultar un CRM o lanzar busquedas internas mediante funciones.
-- Formacion y docencia: como ejemplo practico de como se publica y se estructura un adaptador PEFT en HuggingFace, incluyendo la carga mediante `PeftModel` y la gestion de pesos en safetensors.
+- Formacion y docencia: como ejemplo practico de como se publica y se estructura un adaptador PEFT en Hugging Face, incluyendo la carga mediante `PeftModel` y la gestion de pesos en safetensors.
 
 ## Benchmarks y rendimiento
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - GPU recomendadas para FP8: NVIDIA H100 80 GB, A100 80 GB o L40S 48 GB. Una RTX 6000 Ada de 48 GB queda en el limite y dependera de la longitud de contexto y del tamano de lote.
 - Configuraciones multi-GPU: dos RTX 4090 o RTX 3090 de 24 GB con paralelismo tensorial (48 GB agregados) podrian alojar el modelo FP8, con limitaciones de ancho de banda entre GPU. En bf16 el modelo requeriria del orden de 70 GB, es decir, al menos dos aceleradores de 40-48 GB.
 - Cuantizaciones GGUF de la comunidad (Q4_K_M) reducen el peso a unos 20-21 GB, lo que permitiria ejecutar el modelo base en una unica RTX 4090 o RTX 3090 de 24 GB, pero el adaptador LoRA FP8 no seria directamente compatible con esos ficheros cuantizados sin conversion previa.
-- Opciones de despliegue: SGLang (segun el nombre del repositorio), vLLM, HuggingFace Transformers con PEFT, llama.cpp u Ollama si se dispone de una conversion GGUF del modelo base con el adaptador fusionado, y TGI. La compatibilidad concreta de cada motor con adaptadores LoRA sobre un MoE en FP8 no esta documentada.
+- Opciones de despliegue: SGLang (segun el nombre del repositorio), vLLM, Hugging Face Transformers con PEFT, llama.cpp u Ollama si se dispone de una conversion GGUF del modelo base con el adaptador fusionado, y TGI. La compatibilidad concreta de cada motor con adaptadores LoRA sobre un MoE en FP8 no esta documentada.
 - Latencia y throughput: no disponibles. Al tratarse de un MoE con aproximadamente 3000 millones de parametros activos (segun el identificador), el throughput por token deberia ser comparativamente alto respecto a un modelo denso de 35 000 millones, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ No se dispone de datos verificables de benchmarks ni de especificaciones de mode
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/manishkumar2101114/qwen3.6-35b-a3b-tool-adapter-sglang
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/manishkumar2101114/qwen3.6-35b-a3b-tool-adapter-sglang
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8
 - Libreria PEFT: https://huggingface.co/docs/peft/index
 - Motor de inferencia SGLang: https://github.com/sgl-project/sglang

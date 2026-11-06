@@ -81,7 +81,7 @@ No se dispone de comparativas de rendimiento (benchmarks) entre estos modelos en
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/Qwen3.5-9B-Claude-GHO-Fire-Deckard-Agent-Heretic-BF16-i1-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/Qwen3.5-9B-Claude-GHO-Fire-Deckard-Agent-Heretic-BF16-i1-GGUF
 - Repositorio del modelo original (BF16): https://huggingface.co/nightmedia/Qwen3.5-9B-Claude-GHO-Fire-Deckard-Agent-Heretic-BF16
 - Herramienta Heretic (abliteración): https://github.com/p-e-w/heretic
 - Artículo sobre la destilación de Qwen3.5 con Claude-style thinking: https://www.marktechpost.com/2026/03/26/a-coding-implementation-to-run-qwen3-5-reasoning-models-distilled-with-claude-style-thinking-using-gguf-and-4-bit-quantization/

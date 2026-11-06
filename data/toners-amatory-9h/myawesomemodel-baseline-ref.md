@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario toners-amatory-9h bajo licencia MIT y compatible con la librería transformers. La model card describe una actualización significativa respecto a una versión anterior, con mejoras en razonamiento e inferencia atribuidas a un mayor uso de recursos computacionales y a optimizaciones algorítmicas durante el post-entrenamiento. El repositorio, sin embargo, tiene un tamaño de 0.0 GB y no incluye pesos ni tokenizador, por lo que se trata de una referencia de baseline más que de un modelo desplegable.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario toners-amatory-9h bajo licencia MIT y compatible con la librería transformers. La model card describe una actualización significativa respecto a una versión anterior, con mejoras en razonamiento e inferencia atribuidas a un mayor uso de recursos computacionales y a optimizaciones algorítmicas durante el post-entrenamiento. El repositorio, sin embargo, tiene un tamaño de 0.0 GB y no incluye pesos ni tokenizador, por lo que se trata de una referencia de baseline más que de un modelo desplegable.
 
 La información disponible no permite confirmar arquitectura, número de parámetros, longitud de contexto ni idiomas soportados. La model card menciona resultados en pruebas como AIME 2025 (una mejora del 70% al 87.5% de precisión respecto a la versión previa) y un aumento del uso medio de tokens por pregunta de 12K a 23K, lo que sugiere un modelo orientado a razonamiento con cadenas de pensamiento largas. No obstante, la tabla de benchmarks contiene marcadores `{RESULT}` sin rellenar y las columnas de comparación usan nombres genéricos (Model1, Model2, Model1-v2), por lo que los datos no son verificables.
 
@@ -101,7 +101,7 @@ No se conocen modelos comparables identificables a partir de la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/toners-amatory-9h/myawesomemodel-baseline-ref
+- Hugging Face: https://huggingface.co/toners-amatory-9h/myawesomemodel-baseline-ref
 - Repositorio de código: no disponible (la model card remite a un "code repository" sin enlace)
 - Paper: no disponible
 - Blog oficial: no disponible

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MobiusGaian/Qwen-Qwen2.5-0.5B-Instruct-16ec42c4_FT_adapter es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario MobiusGaian. No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion que debe cargarse sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct, el modelo instructivo de 0,5 mil millones de parametros de la familia Qwen2.5 de Alibaba Cloud. El adaptador se ha entrenado presumiblemente mediante fine-tuning supervisado sobre dicho modelo base, aunque la model card no documenta ni el dataset, ni los hiperparametros, ni la metodologia empleada.
+MobiusGaian/Qwen-Qwen2.5-0.5B-Instruct-16ec42c4_FT_adapter es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario MobiusGaian. No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion que debe cargarse sobre el modelo base Qwen/Qwen2.5-0.5B-Instruct, el modelo instructivo de 0,5 mil millones de parametros de la familia Qwen2.5 de Alibaba Cloud. El adaptador se ha entrenado presumiblemente mediante fine-tuning supervisado sobre dicho modelo base, aunque la model card no documenta ni el dataset, ni los hiperparametros, ni la metodologia empleada.
 
-El interes de esta publicacion es limitado desde el punto de vista tecnico: se trata de un artefacto de fine-tuning de autor individual, sin documentacion sustantiva, sin resultados de evaluacion y con cero descargas y cero likes en el momento de la consulta. La model card es la plantilla por defecto de HuggingFace con la mayoria de campos marcados como "[More Information Needed]".
+El interes de esta publicacion es limitado desde el punto de vista tecnico: se trata de un artefacto de fine-tuning de autor individual, sin documentacion sustantiva, sin resultados de evaluacion y con cero descargas y cero likes en el momento de la consulta. La model card es la plantilla por defecto de Hugging Face con la mayoria de campos marcados como "[More Information Needed]".
 
 No obstante, resulta relevante como ejemplo del ecosistema de adaptadores LoRA de bajo coste sobre modelos pequenos: el modelo base Qwen2.5-0.5B-Instruct es un transformer decoder-only denso de 0,5B parametros con 32.768 tokens de contexto, disenado para ejecucion en CPU y GPUs de gama baja. Cualquier adaptador sobre esta base hereda esas caracteristicas de despliegue, lo que lo hace apto para prototipado rapido en entornos con recursos limitados.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MobiusGaian/Qwen-Qwen2.5-0.5B-Instruct-16ec42c4_FT_adapter | 0,5B (base) + adaptador LoRA | No disponible (base: 32.768) | No disponible | HuggingFace, 0 descargas | Adaptador sin documentacion ni evaluacion |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,49B | 32.768 | Apache 2.0 (segun el modelo base de Qwen) | HuggingFace, ampliamente usado | Modelo base oficial, documentado y evaluado |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24B | 131.072 | Llama 3.2 Community License | HuggingFace | Alternativa de tamano similar con contexto mayor |
-| HuggingFaceTB/SmolLM2-360M-Instruct | 0,36B | 8.192 | Apache 2.0 | HuggingFace | Alternativa mas pequena orientada a edge |
+| MobiusGaian/Qwen-Qwen2.5-0.5B-Instruct-16ec42c4_FT_adapter | 0,5B (base) + adaptador LoRA | No disponible (base: 32.768) | No disponible | Hugging Face, 0 descargas | Adaptador sin documentacion ni evaluacion |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,49B | 32.768 | Apache 2.0 (segun el modelo base de Qwen) | Hugging Face, ampliamente usado | Modelo base oficial, documentado y evaluado |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24B | 131.072 | Llama 3.2 Community License | Hugging Face | Alternativa de tamano similar con contexto mayor |
+| HuggingFaceTB/SmolLM2-360M-Instruct | 0,36B | 8.192 | Apache 2.0 | Hugging Face | Alternativa mas pequena orientada a edge |
 
 La comparativa se limita a modelos de la misma categoria (menos de 1,5B parametros, orientados a instrucciones). El adaptador de MobiusGaian no aporta informacion verificable que permita compararlo en rendimiento con estas alternativas; su unica ventaja diferencial seria el fine-tuning especifico, cuyos efectos se desconocen.
 

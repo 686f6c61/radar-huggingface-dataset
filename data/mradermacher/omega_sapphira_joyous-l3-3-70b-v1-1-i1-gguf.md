@@ -11,7 +11,7 @@ Este modelo se ofrece únicamente como pesos cuantizados para ejecución local m
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (el nombre sugiere Llama 3.3, sin confirmar) |
-| Parametros totales | no disponible (HuggingFace indica 6.226.480, dato incoherente con un modelo de 70B; se considera erróneo) |
+| Parametros totales | no disponible (Hugging Face indica 6.226.480, dato incoherente con un modelo de 70B; se considera erróneo) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
@@ -67,7 +67,7 @@ No se dispone de información para comparar este modelo con alternativas. El ún
 - El modelo carece de documentación técnica, lo que dificulta la evaluación de su fiabilidad.
 - El repositorio no registra descargas ni likes, lo que sugiere que no ha sido validado por la comunidad.
 - Las cuantizaciones de baja precisión (Q2, IQ1, IQ2) pueden degradar significativamente la calidad de las respuestas.
-- El dato de parámetros de HuggingFace (6.226.480) es incoherente con un modelo de 70B y puede indicar un error de metadatos.
+- El dato de parámetros de Hugging Face (6.226.480) es incoherente con un modelo de 70B y puede indicar un error de metadatos.
 
 ## Enlaces
 

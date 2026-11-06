@@ -99,6 +99,6 @@ No se dispone de comparativas con modelos externos (por ejemplo, redes neuronale
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [Roy229/wandb_filesystem_huggingface_terminal_6928-model-registry-1787472057x13238](https://huggingface.co/Roy229/wandb_filesystem_huggingface_terminal_6928-model-registry-1787472057x13238)
+- Repositorio en Hugging Face: [Roy229/wandb_filesystem_huggingface_terminal_6928-model-registry-1787472057x13238](https://huggingface.co/Roy229/wandb_filesystem_huggingface_terminal_6928-model-registry-1787472057x13238)
 - Documentación de Weights & Biases para Hugging Face: [https://docs.wandb.ai/models/integrations/huggingface](https://docs.wandb.ai/models/integrations/huggingface)
 - Nota: la búsqueda web no proporcionó otros enlaces específicos para este modelo; las URL adicionales encontradas (thehackernews, techjournal) son noticias sobre seguridad de Hugging Face y no están relacionadas con este modelo.

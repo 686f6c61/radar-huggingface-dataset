@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Leferreira/contrastive-warmup10` es un repositorio de HuggingFace que contiene una implementación funcional de MoCo v3 (Momentum Contrast v3) orientada al aprendizaje contrastivo, publicada por el usuario Leferreira bajo licencia Apache 2.0. No se trata de un modelo de lenguaje: es un esqueleto de código y un checkpoint de inicialización con una configuración "tiny" cuyo propósito declarado es servir como prueba de humo (smoke test) reproducible y como punto de partida experimental, no como modelo entrenado listo para producción.
+`Leferreira/contrastive-warmup10` es un repositorio de Hugging Face que contiene una implementación funcional de MoCo v3 (Momentum Contrast v3) orientada al aprendizaje contrastivo, publicada por el usuario Leferreira bajo licencia Apache 2.0. No se trata de un modelo de lenguaje: es un esqueleto de código y un checkpoint de inicialización con una configuración "tiny" cuyo propósito declarado es servir como prueba de humo (smoke test) reproducible y como punto de partida experimental, no como modelo entrenado listo para producción.
 
 El peso real almacenado en `model.safetensors` es de 49.600 parámetros, una magnitud propia de una configuración de juguete para validar que el pipeline de entrenamiento y el forward pass funcionan. La model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -73,11 +73,11 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 - Riesgo de alucinación: no aplica en el sentido habitual al no ser un modelo generativo, pero sí existe el riesgo de interpretar erróneamente sus salidas como si tuvieran calidad de modelo entrenado.
 - Sesgos conocidos: no disponibles; cualquier sesgo dependería de datos de entrenamiento que no se documentan.
 - Limitaciones de contexto e idioma: no aplica, al no procesar texto.
-- Al ser una implementación custom, no se integra con APIs de carga automática de HuggingFace sin un adaptador explícito; esto puede provocar fallos silenciosos si se asume compatibilidad con `AutoModel`.
+- Al ser una implementación custom, no se integra con APIs de carga automática de Hugging Face sin un adaptador explícito; esto puede provocar fallos silenciosos si se asume compatibilidad con `AutoModel`.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero la model card advierte de revisar por separado los términos de los datos de origen cuando se combine con datasets externos.
 - Para cualquier resultado publicado a partir de un futuro checkpoint entrenado, debe documentarse de forma separada de los valores por defecto que se distribuyen aquí, tal como indica la model card.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Leferreira/contrastive-warmup10
+- Repositorio en Hugging Face: https://huggingface.co/Leferreira/contrastive-warmup10
 - Paper, blog, repositorio de código o demo adicionales: no disponible. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (los resultados obtenidos correspondían a un servicio de medición de velocidad de conexión, sin relación con el repositorio).

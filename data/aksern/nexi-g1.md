@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nexi g1 es un modelo de lenguaje causal de pequeno tamano desarrollado por el usuario aksern, publicado en HuggingFace bajo el identificador `aksern/nexi-g1`. Se trata de un transformer decoder-only de estilo GPT con 30.339.456 parametros reales (segun los pesos en safetensors), entrenado exclusivamente con objetivo de prediccion del siguiente token. No ha pasado por fases de instruction tuning, RLHF ni DPO, por lo que su unica tarea prevista es la continuacion de texto, no el dialogo conversacional.
+nexi g1 es un modelo de lenguaje causal de pequeno tamano desarrollado por el usuario aksern, publicado en Hugging Face bajo el identificador `aksern/nexi-g1`. Se trata de un transformer decoder-only de estilo GPT con 30.339.456 parametros reales (segun los pesos en safetensors), entrenado exclusivamente con objetivo de prediccion del siguiente token. No ha pasado por fases de instruction tuning, RLHF ni DPO, por lo que su unica tarea prevista es la continuacion de texto, no el dialogo conversacional.
 
 El modelo se presenta como la primera pieza de la familia "nexi" (la designacion g1 corresponde a "generation 1") y esta planteado como banco de pruebas para experimentos de preentrenamiento a pequena escala, mas que como herramienta de produccion. Su corpus de entrenamiento mezcla Wikipedia, resenas de IMDb, un subconjunto de FineWeb orientado a marketing y un dataset derivado del foro 4chan /pol/, lo que condiciona fuertemente tanto su estilo de salida como sus sesgos.
 
@@ -31,7 +31,7 @@ Su relevancia actual es limitada y de caracter educativo: sirve para estudiar co
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer causal decoder-only estandar de la familia GPT, sin variantes hibridas, mecanismos de atencion lineal ni mezclas de expertos. Con 30,3 millones de parametros se situa en el rango de los modelos "tiny" orientados a experimentacion. El autor no documenta el numero de capas, dimensiones de embedding, numero de cabezas de atencion ni la longitud de contexto soportada, por lo que esos datos quedan como no disponibles. El modelo se distribuye unicamente en safetensors y se carga con `AutoModelForCausalLM` de HuggingFace Transformers.
+La arquitectura es un transformer causal decoder-only estandar de la familia GPT, sin variantes hibridas, mecanismos de atencion lineal ni mezclas de expertos. Con 30,3 millones de parametros se situa en el rango de los modelos "tiny" orientados a experimentacion. El autor no documenta el numero de capas, dimensiones de embedding, numero de cabezas de atencion ni la longitud de contexto soportada, por lo que esos datos quedan como no disponibles. El modelo se distribuye unicamente en safetensors y se carga con `AutoModelForCausalLM` de Hugging Face Transformers.
 
 El preentrenamiento se realizo durante 3 epocas sobre una mezcla de cuatro fuentes: `wikimedia/wikipedia`, `stanfordnlp/imdb`, `marketeam/FineWeb-Marketing` y `fuzzy-g/4chan_pol_whole_ds`. No se documenta el numero total de tokens, la composicion porcentual de cada dataset ni la configuracion de preprocesado, que segun el propio autor "puede variar entre experimentos". La divergencia entre la perdida de entrenamiento (0,565) y la de evaluacion (3,739) es muy grande y el autor la reconoce explicitamente como evidencia de sobreajuste sustancial a la distribucion de entrenamiento. No hay innovaciones tecnicas destacables: no se emplea decodificacion especulativa, atencion optimizada ni ninguna fase de alineacion posterior.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en int8: aproximadamente 30 MB; en int4, aproximadamente 15 MB (cuantizacion no distribuida oficialmente, requeriria conversion propia).
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente; el modelo tambien se ejecuta en CPU sin dificultad. No requiere A100 ni H100.
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs integradas y en Raspberry Pi.
-- Opciones de despliegue: HuggingFace Transformers (via `AutoModelForCausalLM`) es la via documentada por el autor; llama.cpp, Ollama y TGI serian viables tecnicamente pero no estan documentados ni se distribuyen artefactos GGUF.
+- Opciones de despliegue: Hugging Face Transformers (via `AutoModelForCausalLM`) es la via documentada por el autor; llama.cpp, Ollama y TGI serian viables tecnicamente pero no estan documentados ni se distribuyen artefactos GGUF.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -100,10 +100,10 @@ La comparativa se basa en especificaciones publicas ampliamente conocidas de eso
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aksern/nexi-g1
+- Modelo en Hugging Face: https://huggingface.co/aksern/nexi-g1
 - PyTorch: https://pytorch.org/
-- Documentacion de HuggingFace Transformers: https://huggingface.co/docs/transformers
-- Documentacion de HuggingFace Hub: https://huggingface.co/docs/hub
+- Documentacion de Hugging Face Transformers: https://huggingface.co/docs/transformers
+- Documentacion de Hugging Face Hub: https://huggingface.co/docs/hub
 - Dataset Wikimedia Wikipedia: https://huggingface.co/datasets/wikimedia/wikipedia
 - Dataset Stanford NLP IMDb: https://huggingface.co/datasets/stanfordnlp/imdb
 - Dataset MarketTeam FineWeb-Marketing: https://huggingface.co/datasets/marketeam/FineWeb-Marketing

@@ -86,7 +86,7 @@ Los recuentos de parámetros totales y las longitudes de contexto de las tres va
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UnknownResearcher/chatterbox-turbo-coreml
+- Modelo en Hugging Face: https://huggingface.co/UnknownResearcher/chatterbox-turbo-coreml
 - Modelo base ResembleAI/chatterbox-turbo: https://huggingface.co/ResembleAI/chatterbox-turbo
 - Conversión de referencia FluidInference/chatterbox-nano-coreml: https://huggingface.co/FluidInference/chatterbox-nano-coreml
 - Scripts de conversión mobius: https://github.com/FluidInference/mobius

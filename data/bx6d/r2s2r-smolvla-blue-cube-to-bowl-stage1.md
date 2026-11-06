@@ -86,9 +86,9 @@ No se han publicado resultados de benchmarks estándar de lenguaje o visión (MM
 
 | Modelo | Tipo | Parámetros | Contexto | Éxito in-distribution | Éxito OOD | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| `bx6d/r2s2r-smolvla-blue-cube-to-bowl-stage1` (20k) | VLA SmolVLA, fine-tune | no disponible | no disponible | 40/50 = 80 % | 35/50 = 70 % | no disponible | HuggingFace, 0 descargas, 0 likes |
-| `bx6d/r2s2r-pi05-blue-cube-to-bowl-stage1` (10k, fine-tune completo) | VLA pi0.5, fine-tune | no disponible | no disponible | 49/50 = 98 % | 44/50 = 88 % | no disponible | HuggingFace |
-| `lerobot/smolvla_base` | VLA SmolVLA preentrenado | no disponible | no disponible | no evaluado en esta tarea | no evaluado en esta tarea | no disponible | HuggingFace (modelo base) |
+| `bx6d/r2s2r-smolvla-blue-cube-to-bowl-stage1` (20k) | VLA SmolVLA, fine-tune | no disponible | no disponible | 40/50 = 80 % | 35/50 = 70 % | no disponible | Hugging Face, 0 descargas, 0 likes |
+| `bx6d/r2s2r-pi05-blue-cube-to-bowl-stage1` (10k, fine-tune completo) | VLA pi0.5, fine-tune | no disponible | no disponible | 49/50 = 98 % | 44/50 = 88 % | no disponible | Hugging Face |
+| `lerobot/smolvla_base` | VLA SmolVLA preentrenado | no disponible | no disponible | no evaluado en esta tarea | no evaluado en esta tarea | no disponible | Hugging Face (modelo base) |
 
 La comparación con pi0.5 es directa porque ambos usan el mismo dataset, el mismo formato de 20 acciones absolutas a 20 Hz y las mismas suites congeladas. No se dispone de datos para comparar con otras políticas de manipulación (por ejemplo, ACT o Diffusion Policy) en esta tarea.
 
@@ -109,7 +109,7 @@ La comparación con pi0.5 es directa porque ambos usan el mismo dataset, el mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bx6d/r2s2r-smolvla-blue-cube-to-bowl-stage1
+- Modelo en Hugging Face: https://huggingface.co/bx6d/r2s2r-smolvla-blue-cube-to-bowl-stage1
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/bx6d/r2s2r-blue-cube-to-bowl-stage1
 - Modelo hermano pi0.5 para comparación directa: https://huggingface.co/bx6d/r2s2r-pi05-blue-cube-to-bowl-stage1

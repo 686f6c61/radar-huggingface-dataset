@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny-GPT es un modelo de lenguaje causal de 51.082.752 parametros desarrollado por el usuario FakeSiddharth y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un transformer decoder-only con arquitectura estilo GPT-2 (`GPT2LMHeadModel`), entrenado desde cero sobre aproximadamente 3.050.037.248 posiciones de token procedentes de los datasets FineWeb y FineWeb-Edu. El modelo se distribuye en formato GGUF FP16 (sin cuantizar, en torno a 99,5 MiB) y esta pensado para inferencia local en herramientas como LM Studio o llama.cpp.
+Tiny-GPT es un modelo de lenguaje causal de 51.082.752 parametros desarrollado por el usuario FakeSiddharth y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un transformer decoder-only con arquitectura estilo GPT-2 (`GPT2LMHeadModel`), entrenado desde cero sobre aproximadamente 3.050.037.248 posiciones de token procedentes de los datasets FineWeb y FineWeb-Edu. El modelo se distribuye en formato GGUF FP16 (sin cuantizar, en torno a 99,5 MiB) y esta pensado para inferencia local en herramientas como LM Studio o llama.cpp.
 
 El objetivo declarado del proyecto no es competir con modelos de gran escala, sino documentar el ciclo de vida completo de un LLM pequeno de extremo a extremo: preentrenamiento multi-GPU con acumulacion de gradientes, cache de validacion determinista, SFT con enmascaramiento solo de respuesta, benchmarking aislado multi-configuracion e inferencia local en FP16. Incluye un estudio de ablacion de SFT con dos mezclas de datos: Mix A (70% dialogo conversacional / 30% QA) y Mix B (30% dialogo / 70% QA).
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 |---|---|---|---|---|---|
 | Tiny-GPT (FakeSiddharth) | 51,08M | 256 | Apache 2.0 | en | GGUF FP16 / safetensors |
 | GPT-2 small (OpenAI) | 124M | 1.024 | MIT | en | safetensors, GGUF (comunitario) |
-| DistilGPT-2 (HuggingFace) | 82M | 1.024 | Apache 2.0 | en | safetensors, GGUF (comunitario) |
+| DistilGPT-2 (Hugging Face) | 82M | 1.024 | Apache 2.0 | en | safetensors, GGUF (comunitario) |
 | TinyLlama-1.1B (comunidad) | 1,1B | 2.048 | Apache 2.0 | en, multilingue parcial | safetensors, GGUF |
 
 La comparacion de rendimiento cualitativo no esta disponible: no hay resultados de MMLU, HumanEval, GSM8K ni similares para Tiny-GPT. En terminos de contexto y capacidad, Tiny-GPT queda por debajo de GPT-2 small y DistilGPT-2 en ventana (256 frente a 1.024 tokens), aunque su naturaleza conversacional via SFT lo diferencia de los modelos base.
@@ -107,7 +107,7 @@ La comparacion de rendimiento cualitativo no esta disponible: no hay resultados 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FakeSiddharth/Tiny-GPT
+- Hugging Face: https://huggingface.co/FakeSiddharth/Tiny-GPT
 - Dataset FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - LM Studio: https://lmstudio.ai/

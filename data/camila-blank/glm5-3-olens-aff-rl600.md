@@ -70,7 +70,7 @@ Macro gated agregado over-11-layers: 0.722.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| glm5.3-olens-aff-rl600 (este) | LoRA sobre Qwen3.6-27B | no disponible | Macro gated 0.531 (bloque 54); 0.722 over-11 | no disponible | HuggingFace, 0 descargas |
+| glm5.3-olens-aff-rl600 (este) | LoRA sobre Qwen3.6-27B | no disponible | Macro gated 0.531 (bloque 54); 0.722 over-11 | no disponible | Hugging Face, 0 descargas |
 | SFT* (misma familia) | LoRA sobre Qwen3.6-27B | no disponible | Macro gated 0.187 (bloque 54) | no disponible | Incluido en el repo |
 | qglm-rl600 (#657) | no disponible | no disponible | Macro gated 0.491 (bloque 54); alucinacion 0.463 | no disponible | Referenciado en issue #657 |
 
@@ -89,7 +89,7 @@ No se dispone de comparativas con lectores de activaciones de otros autores en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/camila-blank/glm5.3-olens-aff-rl600
+- Hugging Face: https://huggingface.co/camila-blank/glm5.3-olens-aff-rl600
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Referencia al issue global-workspace #652 (mencionado en la model card, sin URL directa disponible)
 - Referencia al bench #657 (mencionado en la model card, sin URL directa disponible)

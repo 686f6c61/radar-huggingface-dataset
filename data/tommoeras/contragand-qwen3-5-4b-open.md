@@ -87,7 +87,7 @@ El adaptador ofrece una mejora sustancial sobre el base y supera al profesor mas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TomMoeras/contragand-qwen3.5-4b-open
+- Modelo en Hugging Face: https://huggingface.co/TomMoeras/contragand-qwen3.5-4b-open
 - Repositorio de codigo y configuraciones: https://github.com/TomMoeras/ContraGAND
 - Demo interactiva: https://huggingface.co/spaces/TomMoeras/contragand-demo
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B (referencia)

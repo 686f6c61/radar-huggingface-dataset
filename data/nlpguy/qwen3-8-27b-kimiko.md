@@ -70,7 +70,7 @@ La comparación directa con Gemma 2 27B y Llama 3.1 8B es orientativa: el primer
 
 ## Limitaciones y advertencias
 
-- **Licencia no disponible**: no se especifica ninguna licencia en la ficha de HuggingFace. Esto impide su uso comercial sin autorización explícita del autor, y genera incertidumbre legal para cualquier despliegue en producción.
+- **Licencia no disponible**: no se especifica ninguna licencia en la ficha de Hugging Face. Esto impide su uso comercial sin autorización explícita del autor, y genera incertidumbre legal para cualquier despliegue en producción.
 - **Riesgo de alucinación**: como cualquier LLM, puede generar información falsa o inventada, especialmente en tareas de razonamiento complejo o con contexto largo.
 - **Degradación por merge**: la fusión de modelos mediante Karcher Mean puede degradar el rendimiento en tareas específicas respecto a los modelos base. No hay garantía de que el resultado sea mejor que Qwen3.8-27B original.
 - **Sesgos heredados**: los modelos base pueden contener sesgos sociales, culturales o de género, que se mantienen en el merge.
@@ -80,7 +80,7 @@ La comparación directa con Gemma 2 27B y Llama 3.1 8B es orientativa: el primer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nlpguy/Qwen3.8-27B-Kimiko
+- Modelo en Hugging Face: https://huggingface.co/nlpguy/Qwen3.8-27B-Kimiko
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo base beyoru/Kiwen1.1-27B: https://huggingface.co/beyoru/Kiwen1.1-27B
 - Modelo base nlpguy/Qwen3.8-27B-Fimi-4: https://huggingface.co/nlpguy/Qwen3.8-27B-Fimi-4

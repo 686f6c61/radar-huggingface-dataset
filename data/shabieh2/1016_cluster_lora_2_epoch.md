@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shabieh2/1016_cluster_lora_2_epoch` es un adaptador LoRA publicado en HuggingFace por el usuario `shabieh2`, entrenado sobre el modelo base `unsloth/Muse-Glimmer-30B`. No se trata de un modelo completo, sino de un checkpoint de pesos de adaptador (formato PEFT/safetensors, 0,9 GB de repositorio) que debe cargarse junto al modelo base para poder ejecutarse. La model card es la plantilla por defecto de HuggingFace sin rellenar: el autor no ha documentado ni el dataset de entrenamiento, ni los hiperparametros, ni la licencia, ni los idiomas soportados.
+`shabieh2/1016_cluster_lora_2_epoch` es un adaptador LoRA publicado en Hugging Face por el usuario `shabieh2`, entrenado sobre el modelo base `unsloth/Muse-Glimmer-30B`. No se trata de un modelo completo, sino de un checkpoint de pesos de adaptador (formato PEFT/safetensors, 0,9 GB de repositorio) que debe cargarse junto al modelo base para poder ejecutarse. La model card es la plantilla por defecto de Hugging Face sin rellenar: el autor no ha documentado ni el dataset de entrenamiento, ni los hiperparametros, ni la licencia, ni los idiomas soportados.
 
 El nombre del repositorio (`1016_cluster_lora_2_epoch`) sugiere un ajuste fino de 2 epocas sobre un subconjunto o "cluster" de datos etiquetado como 1016, probablemente un experimento interno o un artefacto de un pipeline de entrenamiento. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y las fechas de creacion y actualizacion son del 16 de octubre de 2026, con apenas cuatro segundos de diferencia entre ambas, lo que apunta a una subida automatica sin edicion posterior de la model card.
 
@@ -76,12 +76,12 @@ No disponible. No se ha identificado en la informacion proporcionada ningun otro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| shabieh2/1016_cluster_lora_2_epoch | no disponible (adaptador sobre base de ~30B segun nombre) | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
+| shabieh2/1016_cluster_lora_2_epoch | no disponible (adaptador sobre base de ~30B segun nombre) | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]". No hay informacion sobre datos, hiperparametros ni objetivo del ajuste.
+- Ausencia total de documentacion: la model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]". No hay informacion sobre datos, hiperparametros ni objetivo del ajuste.
 - Licencia no declarada: sin licencia explicita, no hay autorizacion clara para uso comercial. Ademas, la licencia del adaptador queda supeditada a la del modelo base `unsloth/Muse-Glimmer-30B`, que no se especifica en la informacion disponible.
 - Trazabilidad nula: se desconoce quien entreno el adaptador, con que datos y con que proposito, lo que impide auditar sesgos, contaminacion de datos o cumplimiento normativo.
 - Riesgo de alucinacion: no evaluado. Al no existir benchmarks ni pruebas publicadas, no se puede acotar la tasa de error factual.
@@ -94,7 +94,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun otro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shabieh2/1016_cluster_lora_2_epoch
+- Repositorio en Hugging Face: https://huggingface.co/shabieh2/1016_cluster_lora_2_epoch
 - Modelo base declarado: https://huggingface.co/unsloth/Muse-Glimmer-30B
 - Paper citado en la plantilla (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la plantilla: https://mlco2.github.io/impact#compute

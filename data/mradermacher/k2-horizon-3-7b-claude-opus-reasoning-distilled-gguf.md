@@ -96,7 +96,7 @@ No hay datos cuantitativos que permitan comparar este modelo con alternativas de
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/K2-Horizon-3.7B-Claude-Opus-Reasoning-Distilled-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/K2-Horizon-3.7B-Claude-Opus-Reasoning-Distilled-GGUF
 - Versión con matrices de importancia (i1): https://huggingface.co/mradermacher/K2-Horizon-3.7B-Claude-Opus-Reasoning-Distilled-i1-GGUF
 - Modelo base del ajuste fino: https://huggingface.co/xtools-at/K2-Horizon-3.7B-Claude-Opus-Reasoning-Distilled
 - Modelo original de IFM: https://huggingface.co/IFM/K2-Horizon-3.7B

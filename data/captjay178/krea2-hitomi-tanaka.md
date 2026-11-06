@@ -64,6 +64,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- [HuggingFace - CaptJay178/Krea2-Hitomi-Tanaka](https://huggingface.co/CaptJay178/Krea2-Hitomi-Tanaka)
+- [Hugging Face - CaptJay178/Krea2-Hitomi-Tanaka](https://huggingface.co/CaptJay178/Krea2-Hitomi-Tanaka)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios adicionales) en la informacion proporcionada.

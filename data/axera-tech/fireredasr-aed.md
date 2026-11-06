@@ -101,7 +101,7 @@ La comparación es parcial porque FireRedASR-AED en este repositorio es una conv
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AXERA-TECH/FireRedASR-AED
+- Repositorio Hugging Face: https://huggingface.co/AXERA-TECH/FireRedASR-AED
 - Repositorio GitHub de la conversión: https://github.com/ml-inory/FireRedASR.axera
 - Proyecto original FireRedASR: https://github.com/FireRedTeam/FireRedASR
 - Paper de FireRedASR (arXiv): https://arxiv.org/html/2501.14350v1

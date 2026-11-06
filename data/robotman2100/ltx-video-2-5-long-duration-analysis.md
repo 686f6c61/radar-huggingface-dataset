@@ -102,7 +102,7 @@ El documento clasifica como "modelos del mundo" confirmados a Veo, Runway GWM-1 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Robotman2100/LTX-Video-2.5-long-duration-analysis
+- Repositorio en Hugging Face: https://huggingface.co/Robotman2100/LTX-Video-2.5-long-duration-analysis
 - Paper citado en la model card: https://arxiv.org/abs/2501.00103
-- Referencia cruzada en HuggingFace (tag del repositorio): arxiv:2501.00103
+- Referencia cruzada en Hugging Face (tag del repositorio): arxiv:2501.00103
 - Resultados de busqueda web: ninguno de los enlaces devueltos (sitios de horoscopos, Zhihu, blog de Huawei Cloud) guarda relacion con LTX Video 2.5 ni con el repositorio analizado.

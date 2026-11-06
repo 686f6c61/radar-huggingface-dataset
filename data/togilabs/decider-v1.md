@@ -92,8 +92,8 @@ El propio autor señala la prueba que pierden: pplx-decider-flash supera a Decid
 
 | Modelo | Tipo | Parámetros | Contexto | Intención (benchmark togi) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| **Decider-v1** | LoRA sobre Gemma-4-E4B-it + cabezal pointer | 36,2 M entrenables | no disponible | 0,98 | Apache 2.0 | HuggingFace |
-| Decider-v0 | Versión anterior de Togi Labs | no disponible | no disponible | 0,96 | no disponible | HuggingFace |
+| **Decider-v1** | LoRA sobre Gemma-4-E4B-it + cabezal pointer | 36,2 M entrenables | no disponible | 0,98 | Apache 2.0 | Hugging Face |
+| Decider-v0 | Versión anterior de Togi Labs | no disponible | no disponible | 0,96 | no disponible | Hugging Face |
 | pplx-decider-flash | Modelo de decisión | no disponible | no disponible | 0,86 | no disponible | no disponible |
 | clef, 8-bit | Modelo de 27B cuantizado a 8 bits | 27B | no disponible | 0,88 | no disponible | no disponible |
 | yama | Modelo de decisión entrenado en MASSIVE | no disponible | no disponible | 0,78 | no disponible | no disponible |
@@ -111,7 +111,7 @@ El propio autor señala la prueba que pierden: pplx-decider-flash supera a Decid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Togilabs/Decider-v1
+- Modelo en Hugging Face: https://huggingface.co/Togilabs/Decider-v1
 - Togi Labs: https://togilabs.ai
 - Informe de investigación (benchmark completo, tablas y matices): https://togilabs.ai/research
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it

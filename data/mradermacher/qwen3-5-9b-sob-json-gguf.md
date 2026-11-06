@@ -96,7 +96,7 @@ Nota: los datos de los modelos alternativos provienen de sus model cards públic
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/qwen3.5-9b-sob-json-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/qwen3.5-9b-sob-json-GGUF
 - Modelo base: https://huggingface.co/abderahmenn/qwen3.5-9b-sob-json
 - Dataset declarado: https://huggingface.co/datasets/MoetezF/Finetuning-ready
 - Página de resumen y descargas del autor: https://hf.tst.eu/model#qwen3.5-9b-sob-json-GGUF

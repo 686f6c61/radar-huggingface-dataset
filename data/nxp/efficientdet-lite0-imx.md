@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nxp/efficientdet-lite0-imx` es un repositorio publicado por NXP Semiconductors en HuggingFace que, por su identificador y por el perfil del autor, corresponde a una implementación o conversión del detector de objetos EfficientDet-Lite0 orientada a los SoC i.MX de NXP. EfficientDet-Lite0 es la variante más ligera de la familia EfficientDet-Lite, diseñada para inferencia en dispositivos con recursos limitados (móviles, embebidos y sistemas de borde), por lo que el destino natural de esta publicación es la visión por computador en el borde dentro del ecosistema industrial y de automoción de NXP.
+`nxp/efficientdet-lite0-imx` es un repositorio publicado por NXP Semiconductors en Hugging Face que, por su identificador y por el perfil del autor, corresponde a una implementación o conversión del detector de objetos EfficientDet-Lite0 orientada a los SoC i.MX de NXP. EfficientDet-Lite0 es la variante más ligera de la familia EfficientDet-Lite, diseñada para inferencia en dispositivos con recursos limitados (móviles, embebidos y sistemas de borde), por lo que el destino natural de esta publicación es la visión por computador en el borde dentro del ecosistema industrial y de automoción de NXP.
 
 La información pública disponible es extremadamente escasa: la model card únicamente declara la licencia Apache-2.0 y no incluye descripción, datos de entrenamiento, métricas ni instrucciones de uso. El repositorio registra cero descargas y cero interacciones en el momento de la consulta, con fecha de creación y última actualización idénticas (1 de octubre de 2026), lo que sugiere una publicación reciente y sin documentación adicional.
 
@@ -22,7 +22,7 @@ Se trata, por tanto, de un modelo de detección de objetos (no de lenguaje), con
 | Formato de pesos | no disponible (no se especifica si se distribuye en TFLite, ONNX, safetensors u otro formato) |
 | Autor | nxp (NXP Semiconductors) |
 | Fecha de publicacion | 2026-10-01 (creacion y ultima actualizacion) |
-| Tarea | no declarada explicitamente en HuggingFace (pipeline: no disponible); el nombre indica deteccion de objetos |
+| Tarea | no declarada explicitamente en Hugging Face (pipeline: no disponible); el nombre indica deteccion de objetos |
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ La model card no incluye valores de mAP (por ejemplo, en COCO), latencia, throug
 
 | Modelo | Tipo | Parametros | Entrada / contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| nxp/efficientdet-lite0-imx | Deteccion de objetos (borde) | no disponible | no disponible | Apache-2.0 | HuggingFace (0 descargas) | Model card sin documentacion tecnica |
+| nxp/efficientdet-lite0-imx | Deteccion de objetos (borde) | no disponible | no disponible | Apache-2.0 | Hugging Face (0 descargas) | Model card sin documentacion tecnica |
 | EfficientDet-Lite1 / Lite2 / Lite3 (familia publica) | Deteccion de objetos (borde) | no disponible en esta ficha | no disponible | Apache-2.0 en las distribuciones publicas de referencia | Ampliamente disponibles | Variantes de mayor coste computacional y, en principio, mayor precision; los valores concretos no se han verificado en la informacion proporcionada |
 | Detectores ligeros tipo YOLO nano (YOLOv5n, YOLOv8n, YOLO11n) | Deteccion de objetos (borde) | no disponible en esta ficha | no disponible | AGPL-3.0 o licencias especificas segun version | Ampliamente disponibles | Alternativas habituales en el mismo nicho; la comparacion cuantitativa con este repositorio no puede realizarse sin benchmarks publicados |
 | MobileNet-SSD | Deteccion de objetos (borde) | no disponible en esta ficha | no disponible | Apache-2.0 en las distribuciones publicas de referencia | Ampliamente disponible | Opcion clasica en inferencia embebida; comparacion cuantitativa no disponible |
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento de este repositorio que permitan una compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nxp/efficientdet-lite0-imx
+- Repositorio en Hugging Face: https://huggingface.co/nxp/efficientdet-lite0-imx
 - Sitio corporativo de NXP Semiconductors: https://www.nxp.com/
 - Catalogo de productos de NXP: https://www.nxp.com/products:PCPRODCAT
 - NXP Semiconductors en Wikipedia (ingles): https://en.wikipedia.org/wiki/NXP_Semiconductors

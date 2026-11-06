@@ -37,7 +37,7 @@ La innovación técnica de este artefacto es exclusivamente la cuantización Q4_
 - Comprensión y generación en ruso e inglés, según los idiomas declarados en la model card.
 - Instrucciones y formato de chat, ya que el modelo base es una variante Instruct.
 - Despliegue local mediante Ollama y llama.cpp, con ejemplos oficiales en cURL, Python y JavaScript.
-- Compatibilidad con endpoints (tag `endpoints_compatible` en HuggingFace).
+- Compatibilidad con endpoints (tag `endpoints_compatible` en Hugging Face).
 - No se documentan capacidades de visión, audio, tool calling, function calling ni agentes en la información disponible.
 - No se documenta un modo de pensamiento (thinking mode) explícito.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RuCoverLAB/YaNA-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/RuCoverLAB/YaNA-Q4_K_M-GGUF
 - Modelo original YaNA: https://huggingface.co/RuCoverLAB/YaNA
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Espacio de conversión GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

@@ -4,9 +4,9 @@
 
 El repositorio `elijahgon/few-shot-multimodal-proto` no es un modelo entrenado, sino un cuaderno de notas de investigación (*research notes*) sobre aprendizaje few-shot multimodal. La model card lo describe explícitamente como un documento exploratorio que recoge el alcance de una pregunta de investigación, los posibles factores de confusión, una comparación propuesta con baselines emparejados y los requisitos de reproducibilidad, pero sin resultados de benchmark publicados.
 
-El autor, identificado en HuggingFace como `elijahgon`, indica que el artefacto principal es `summary.md` y que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. La propia card señala que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado.
+El autor, identificado en Hugging Face como `elijahgon`, indica que el artefacto principal es `summary.md` y que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales. La propia card señala que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado.
 
-El interés de esta ficha es, por tanto, principalmente documental: sirve para ilustrar cómo se estructura un repositorio de notas de investigación reproducible y para advertir de que los metadatos de HuggingFace (etiqueta `transformer`, `safetensors`) pueden inducir a error cuando el contenido real es un conjunto de notas. No hay información sobre arquitectura, tamaño, contexto ni idiomas.
+El interés de esta ficha es, por tanto, principalmente documental: sirve para ilustrar cómo se estructura un repositorio de notas de investigación reproducible y para advertir de que los metadatos de Hugging Face (etiqueta `transformer`, `safetensors`) pueden inducir a error cuando el contenido real es un conjunto de notas. No hay información sobre arquitectura, tamaño, contexto ni idiomas.
 
 ## Especificaciones técnicas
 
@@ -42,7 +42,7 @@ El propio autor aclara que el documento no afirma haber ejecutado el estudio y q
 - Revisión bibliográfica preliminar sobre few-shot multimodal: las referencias y los datasets propuestos en `summary.md` pueden utilizarse como punto de partida para localizar literatura relevante, siempre verificando cada fuente de forma independiente.
 - Diseño de protocolos de evaluación: la propuesta de comparación con baselines emparejados y de benchmarks públicos adecuados a la tarea puede reutilizarse al planificar una evaluación experimental.
 - Identificación de factores de confusión: el listado de confounders previstos resulta útil para revisar el diseño de experimentos few-shot multimodales en otros proyectos.
-- Auditoría de metadatos en HuggingFace: el caso ilustra cómo las etiquetas automáticas (`transformer`, `safetensors`) pueden no corresponderse con el contenido real de un repositorio, algo relevante para pipelines de descubrimiento de modelos.
+- Auditoría de metadatos en Hugging Face: el caso ilustra cómo las etiquetas automáticas (`transformer`, `safetensors`) pueden no corresponderse con el contenido real de un repositorio, algo relevante para pipelines de descubrimiento de modelos.
 - Docencia y formación: puede emplearse como ejemplo didáctico de la diferencia entre un plan de investigación y un resultado experimental publicado.
 - No es adecuado para ningún caso de uso de inferencia en producción: no existe un modelo funcional que desplegar.
 
@@ -57,11 +57,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Compatibilidad con GPU de consumo: no aplica.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no disponibles; ningún framework de inferencia puede cargar este repositorio como modelo.
 - Latencia y throughput estimados: no disponibles.
-- Requisitos reales del repositorio: únicamente un cliente Git o la interfaz web de HuggingFace para descargar dos ficheros de texto (`summary.md` y `README.md`) y el artefacto safetensors de tamaño despreciable.
+- Requisitos reales del repositorio: únicamente un cliente Git o la interfaz web de Hugging Face para descargar dos ficheros de texto (`summary.md` y `README.md`) y el artefacto safetensors de tamaño despreciable.
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es un modelo desplegable, por lo que no existe una categoría de modelos comparables por parámetros, contexto, rendimiento o disponibilidad. Como referencia de categoría documental, podría compararse con otros repositorios de notas de investigación alojados en HuggingFace, pero no se dispone de datos verificables sobre ellos en la información proporcionada.
+No disponible. Este repositorio no es un modelo desplegable, por lo que no existe una categoría de modelos comparables por parámetros, contexto, rendimiento o disponibilidad. Como referencia de categoría documental, podría compararse con otros repositorios de notas de investigación alojados en Hugging Face, pero no se dispone de datos verificables sobre ellos en la información proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -77,5 +77,5 @@ No disponible. Este repositorio no es un modelo desplegable, por lo que no exist
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/elijahgon/few-shot-multimodal-proto
+- Repositorio en Hugging Face: https://huggingface.co/elijahgon/few-shot-multimodal-proto
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web realizada; los resultados obtenidos correspondían a servicios de planificación de rutas y no guardan relación con el modelo.

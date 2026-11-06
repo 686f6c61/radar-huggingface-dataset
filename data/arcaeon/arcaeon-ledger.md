@@ -72,7 +72,7 @@ No disponible. Arcaeon Ledger no tiene comparables directos entre modelos de IA 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Arcaeon/arcaeon-ledger
+- Hugging Face: https://huggingface.co/Arcaeon/arcaeon-ledger
 - PyPI: https://pypi.org/project/arcaeon-ledger/
 - Repositorio fuente: https://github.com/dan8433-user/ledger
 - Organización Arcaeon: https://github.com/Arcaeon-io

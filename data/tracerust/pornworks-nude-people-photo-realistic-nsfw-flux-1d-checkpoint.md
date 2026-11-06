@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PornWorks Nude People Photo Realistic NSFW Flux 1D Checkpoint es un modelo de generacion de imagenes publicado por el usuario TracerUst en HuggingFace, orientado a la generacion de personas desnudas en estilo fotorrealista dentro del ambito del erotismo. Segun la model card, se trata del primer modelo de la familia Flux de PornWorks, y el autor lo describe como adecuado para desnudos artisticos pero no para escenas pornograficas explicitas, para las que anuncia una version futura.
+PornWorks Nude People Photo Realistic NSFW Flux 1D Checkpoint es un modelo de generacion de imagenes publicado por el usuario TracerUst en Hugging Face, orientado a la generacion de personas desnudas en estilo fotorrealista dentro del ambito del erotismo. Segun la model card, se trata del primer modelo de la familia Flux de PornWorks, y el autor lo describe como adecuado para desnudos artisticos pero no para escenas pornograficas explicitas, para las que anuncia una version futura.
 
 El repositorio ocupa 11,9 GB y las etiquetas declaran compatibilidad con SDXL, aunque la nomenclatura del titulo y los ajustes recomendados (Flux Realistic, Guidance Scale Distillate) apuntan a un checkpoint derivado de la familia Flux. Esta ambiguedad entre las etiquetas y las instrucciones de uso es relevante: el autor no explicita la arquitectura base exacta ni el proceso de entrenamiento.
 
@@ -72,10 +72,10 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 - Idioma: los prompts de ejemplo estan en ingles; no se documenta soporte de otros idiomas.
 - Licencia openrail++: permite uso comercial con condiciones, pero conviene revisar las clausulas de uso aceptable, especialmente para contenido sexual, antes de desplegarlo en produccion.
 - Repositorio sin traccion: cero descargas y cero likes, sin pipeline declarado ni documentacion tecnica, lo que reduce la fiabilidad y el soporte disponibles.
-- Posible dependencia de servicios externos: la model card remite a PornWorks.com y CivitAI para la version mas reciente, lo que sugiere que el repositorio de HuggingFace puede no ser la fuente principal mantenida.
+- Posible dependencia de servicios externos: la model card remite a PornWorks.com y CivitAI para la version mas reciente, lo que sugiere que el repositorio de Hugging Face puede no ser la fuente principal mantenida.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TracerUst/pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint
+- Hugging Face: https://huggingface.co/TracerUst/pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint
 - CivitAI: https://civitai.com/models/836198/pornworks-nude-people-photo-realistic-nsfw-flux-1d-chekpoint
 - Web del proyecto: https://PornWorks.com

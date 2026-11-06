@@ -91,7 +91,7 @@ El modelo de 1,3 B ofrece una calidad cercana al e5-mistral-7b-instruct (unos 3,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dynatrace-oss/llama-embed-mamba2-1.3b
+- Modelo en Hugging Face: https://huggingface.co/dynatrace-oss/llama-embed-mamba2-1.3b
 - Variante de 7 B: https://huggingface.co/dynatrace-oss/llama-embed-mamba2-7b
 - Modelo base: https://huggingface.co/state-spaces/mamba2-1.3b
 - Modelo de referencia e5-mistral-7b-instruct: https://huggingface.co/intfloat/e5-mistral-7b-instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ner-prostata-xlmr` es un modelo de reconocimiento de entidades nombradas (NER) en espanol, obtenido por afinamiento de `xlm-roberta-base` sobre el corpus clinico denominado `prostata`. Lo publica el usuario de HuggingFace `andresdfx` y esta especializado en texto clinico del dominio urologico y oncologico de prostata, con 21 etiquetas en formato BIO que cubren entidades como biomarcadores, cancer, cirugia, dosis, edad, fecha, Gleason, medicamento, TNM y tratamiento.
+`ner-prostata-xlmr` es un modelo de reconocimiento de entidades nombradas (NER) en espanol, obtenido por afinamiento de `xlm-roberta-base` sobre el corpus clinico denominado `prostata`. Lo publica el usuario de Hugging Face `andresdfx` y esta especializado en texto clinico del dominio urologico y oncologico de prostata, con 21 etiquetas en formato BIO que cubren entidades como biomarcadores, cancer, cirugia, dosis, edad, fecha, Gleason, medicamento, TNM y tratamiento.
 
 Se trata de un modelo encoder-only de tipo transformer (277.469.205 parametros, 1,1 GB en el repositorio), orientado a clasificacion de tokens, no a generacion de texto. Su interes practico esta en la extraccion estructurada de informacion a partir de informes clinicos: convertir texto libre de historiales y anatomia patologica en campos normalizados que alimenten registros de cancer, bases de datos de investigacion o sistemas de ayuda a la decision.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 - VRAM estimada en FP16: en torno a 0,55 GB de pesos, aproximadamente 1 GB con overhead.
 - VRAM estimada en INT8 (cuantizacion dinamica ONNX): en torno a 0,3 GB de pesos.
 - Cabe sin problema en GPU de consumo: cualquier GPU con 4 GB o mas (GTX 1650, RTX 3050, RTX 3060, RTX 4090) y tambien en GPUs de centro de datos pequenas (T4, L4). Es viable incluso en CPU para inferencia por lotes pequenos.
-- Opciones de despliegue: pipeline `token-classification` de HuggingFace Transformers, ONNX Runtime u Optimum para inferencia optimizada, TorchScript, NVIDIA Triton Inference Server y servicios propios con FastAPI. No aplican vLLM, TGI, llama.cpp ni Ollama, orientados a modelos generativos o a pesos GGUF, y no se publica ninguna conversion GGUF.
+- Opciones de despliegue: pipeline `token-classification` de Hugging Face Transformers, ONNX Runtime u Optimum para inferencia optimizada, TorchScript, NVIDIA Triton Inference Server y servicios propios con FastAPI. No aplican vLLM, TGI, llama.cpp ni Ollama, orientados a modelos generativos o a pesos GGUF, y no se publica ninguna conversion GGUF.
 - Latencia y throughput estimados: no disponibles (no se aportan mediciones).
 
 ## Comparativa con modelos similares
@@ -78,8 +78,8 @@ No se proporcionan datos comparativos con otros modelos en la informacion dispon
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ner-prostata-xlmr` | 277.469.205 | 512 tokens (entrenado a 256) | NER clinico en espanol, 21 etiquetas | no disponible | HuggingFace, safetensors |
-| `xlm-roberta-base` | no disponible en la informacion proporcionada | 512 tokens | Enmascarado de lenguaje y base para afinamiento | MIT | HuggingFace |
+| `ner-prostata-xlmr` | 277.469.205 | 512 tokens (entrenado a 256) | NER clinico en espanol, 21 etiquetas | no disponible | Hugging Face, safetensors |
+| `xlm-roberta-base` | no disponible en la informacion proporcionada | 512 tokens | Enmascarado de lenguaje y base para afinamiento | MIT | Hugging Face |
 
 Alternativas de la misma categoria (NER clinico en espanol sobre backbone RoBERTa/XLM-R) existirian en el ecosistema, pero no se dispone de sus especificaciones ni metricas en la informacion proporcionada, por lo que no se incluye comparacion cuantitativa.
 
@@ -98,7 +98,7 @@ Alternativas de la misma categoria (NER clinico en espanol sobre backbone RoBERT
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andresdfx/ner-prostata-xlmr
+- Modelo en Hugging Face: https://huggingface.co/andresdfx/ner-prostata-xlmr
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Paper del modelo base (XLM-R): https://arxiv.org/abs/1911.02116
 - Paper de RoBERTa: https://arxiv.org/abs/1907.11692

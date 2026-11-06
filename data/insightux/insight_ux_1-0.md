@@ -83,5 +83,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/InsightUX/Insight_UX_1.0
+- Repositorio Hugging Face: https://huggingface.co/InsightUX/Insight_UX_1.0
 - No se proporcionan otros enlaces (papers, blogs, repos externos) en la informacion disponible.

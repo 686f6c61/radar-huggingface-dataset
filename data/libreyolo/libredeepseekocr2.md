@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LibreDeepSeekOCR2 | 3,389B | no disponible | Apache 2.0 | HuggingFace (LibreYOLO) | Espejo de DeepSeek-OCR-2 con port propio en PyTorch |
-| DeepSeek-OCR-2 (upstream) | 3,389B | no disponible | Apache 2.0 | HuggingFace (deepseek-ai) | Modelo original; requiere código remoto |
+| LibreDeepSeekOCR2 | 3,389B | no disponible | Apache 2.0 | Hugging Face (LibreYOLO) | Espejo de DeepSeek-OCR-2 con port propio en PyTorch |
+| DeepSeek-OCR-2 (upstream) | 3,389B | no disponible | Apache 2.0 | Hugging Face (deepseek-ai) | Modelo original; requiere código remoto |
 | Alternativas OCR/VLM de tamano similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace (LibreYOLO): https://huggingface.co/LibreYOLO/LibreDeepSeekOCR2
+- Hugging Face (LibreYOLO): https://huggingface.co/LibreYOLO/LibreDeepSeekOCR2
 - Modelo upstream: https://huggingface.co/deepseek-ai/DeepSeek-OCR-2
 - Repositorio de código upstream: https://github.com/deepseek-ai/DeepSeek-OCR-2
 - Paper: arXiv:2601.20552

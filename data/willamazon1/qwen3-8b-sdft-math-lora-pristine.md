@@ -96,7 +96,7 @@ No se dispone de datos comparativos de rendimiento, contexto o licencia de terce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/willamazon1/Qwen3-8B-SDFT-Math-LoRA-pristine
+- Hugging Face: https://huggingface.co/willamazon1/Qwen3-8B-SDFT-Math-LoRA-pristine
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Framework de entrenamiento slime: https://github.com/THUDM/slime
 - Resultados de búsqueda web: sin resultados relevantes sobre el modelo (solo páginas de centros escolares sin relación con el tema)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-350M-SmolDataEnvs-Easy-Recovery-SelfGen-SFT-r16-a32-lr4e-4 es un ajuste fino (fine-tuning) supervisado del modelo base LiquidAI/LFM2.5-350M, desarrollado por el usuario lugman-madhiai y publicado en HuggingFace. Se trata de un modelo de generacion de texto de 354.483.968 parametros (aproximadamente 354 M) construido sobre la arquitectura LFM2 de Liquid AI, una familia de modelos disenada para eficiencia en dispositivos de borde (edge). El nombre del repositorio sugiere que el ajuste se realizo sobre un conjunto de datos de entornos SmolDataEnvs con tareas de "recuperacion facil" (easy recovery) y generacion propia (self-generated), mediante SFT con rango LoRA 16 y alpha 32 a una tasa de aprendizaje de 4e-4.
+LFM2.5-350M-SmolDataEnvs-Easy-Recovery-SelfGen-SFT-r16-a32-lr4e-4 es un ajuste fino (fine-tuning) supervisado del modelo base LiquidAI/LFM2.5-350M, desarrollado por el usuario lugman-madhiai y publicado en Hugging Face. Se trata de un modelo de generacion de texto de 354.483.968 parametros (aproximadamente 354 M) construido sobre la arquitectura LFM2 de Liquid AI, una familia de modelos disenada para eficiencia en dispositivos de borde (edge). El nombre del repositorio sugiere que el ajuste se realizo sobre un conjunto de datos de entornos SmolDataEnvs con tareas de "recuperacion facil" (easy recovery) y generacion propia (self-generated), mediante SFT con rango LoRA 16 y alpha 32 a una tasa de aprendizaje de 4e-4.
 
 El modelo resuelve el problema de especializar un modelo pequeno y eficiente en un dominio concreto de generacion de texto conversacional, manteniendo la licencia permisiva Apache 2.0 del modelo base. Su relevancia actual radica en que los modelos de menos de 500 M de parametros permiten despliegues en CPU, moviles y entornos con recursos muy limitados, y este ajuste demuestra el flujo de trabajo tipico de la comunidad: adaptar un modelo base pequeno con Unsloth y TRL para tareas especificas.
 
@@ -25,14 +25,14 @@ La informacion publicada por el autor es muy escasa: la model card es practicame
 
 El modelo hereda la arquitectura del modelo base LiquidAI/LFM2.5-350M, de la familia LFM2 de Liquid AI. La informacion proporcionada no detalla la configuracion interna de la arquitectura (numero de capas, dimension oculta, mecanismo de atencion o si incorpora componentes hibridos). El dato objetivo disponible es el recuento de parametros: 354.483.968, lo que lo situa en la categoria de modelos pequenos orientados a inferencia eficiente.
 
-El ajuste fino se realizo mediante SFT (supervised fine-tuning) con LoRA de rango 16 y alpha 32, tasa de aprendizaje 4e-4, segun indica el nombre del repositorio. El entrenamiento se llevo a cabo con Unsloth y la libreria TRL de HuggingFace, segun la model card. El nombre del modelo sugiere el uso de datos de entornos SmolDataEnvs con tareas de recuperacion facil y generacion propia (self-generated), pero no se especifica el numero de tokens de entrenamiento, la composicion exacta del dataset ni si hubo etapas de RLHF o DPO. No se documentan innovaciones tecnicas adicionales mas alla del propio flujo de ajuste con Unsloth.
+El ajuste fino se realizo mediante SFT (supervised fine-tuning) con LoRA de rango 16 y alpha 32, tasa de aprendizaje 4e-4, segun indica el nombre del repositorio. El entrenamiento se llevo a cabo con Unsloth y la libreria TRL de Hugging Face, segun la model card. El nombre del modelo sugiere el uso de datos de entornos SmolDataEnvs con tareas de recuperacion facil y generacion propia (self-generated), pero no se especifica el numero de tokens de entrenamiento, la composicion exacta del dataset ni si hubo etapas de RLHF o DPO. No se documentan innovaciones tecnicas adicionales mas alla del propio flujo de ajuste con Unsloth.
 
 ## Capacidades
 
 - Generacion de texto conversacional en ingles, segun la etiqueta `conversational` y el pipeline `text-generation`.
 - Ajuste especializado en tareas de "easy recovery" sobre entornos SmolDataEnvs, segun el nombre del repositorio (no se detalla el comportamiento exacto).
 - Compatible con text-generation-inference (etiqueta `text-generation-inference`).
-- Compatible con endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+- Compatible con endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: solo se declara ingles.
@@ -82,9 +82,9 @@ No se dispone de datos de rendimiento comparativo entre este ajuste y alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-Recovery-SelfGen-SFT-r16-a32-lr4e-4
+- Modelo en Hugging Face: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-Recovery-SelfGen-SFT-r16-a32-lr4e-4
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: no disponible en la informacion proporcionada
+- TRL de Hugging Face: no disponible en la informacion proporcionada
 - Paper de LFM2: no disponible en la informacion proporcionada
 - Demos: no disponible en la informacion proporcionada

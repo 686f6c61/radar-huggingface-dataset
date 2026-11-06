@@ -4,7 +4,7 @@
 
 El repositorio `sha-rmko/intern-multimodal-reasoning-2024` no es un modelo entrenado, sino un cuaderno de notas de investigación ("research-notes") sobre razonamiento multimodal. Su artefacto principal es un fichero `reading.md` que describe el alcance de una pregunta de investigación, los factores de confusión previstos, un esbozo de comparación con baselines emparejados y un contexto de evaluación propuesto en torno a VQAv2, GQA y NLVR2. La model card es explícita al respecto: no se reclama ninguna mejora de benchmark, ninguna ablación completada, ningún código liberado y ningún checkpoint entrenado.
 
-Por tanto, esta ficha debe leerse como la descripción de un artefacto documental, no de un sistema de IA desplegable. Los metadatos de HuggingFace declaran 16.576 parámetros según el recuento de safetensors, pero el repositorio ocupa 0,0 GB y la model card no menciona pesos, arquitectura ni proceso de entrenamiento, por lo que ese dato no es coherente con un modelo funcional. El pipeline no está declarado y no se especifican idiomas soportados.
+Por tanto, esta ficha debe leerse como la descripción de un artefacto documental, no de un sistema de IA desplegable. Los metadatos de Hugging Face declaran 16.576 parámetros según el recuento de safetensors, pero el repositorio ocupa 0,0 GB y la model card no menciona pesos, arquitectura ni proceso de entrenamiento, por lo que ese dato no es coherente con un modelo funcional. El pipeline no está declarado y no se especifican idiomas soportados.
 
 Su relevancia actual es limitada y de naturaleza metodológica: sirve como plantilla de transparencia para documentar qué queda por probar en razonamiento multimodal, y como recordatorio de buenas prácticas de reproducibilidad (versiones de dataset, comandos, semillas, hardware y logs en crudo) antes de publicar resultados. No es un candidato para evaluación de capacidades ni para integración en producción.
 
@@ -89,7 +89,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sha-rmko/intern-multimodal-reasoning-2024
+- Repositorio en Hugging Face: https://huggingface.co/sha-rmko/intern-multimodal-reasoning-2024
 - Ficheros mencionados en la model card: `reading.md` y `README.md` (sin URL directa publicada en la información disponible)
 - Datasets citados como contexto de evaluación: VQAv2, GQA y NLVR2 (sin enlaces proporcionados)
 - Paper, blog, repositorio de código o demo: no disponible

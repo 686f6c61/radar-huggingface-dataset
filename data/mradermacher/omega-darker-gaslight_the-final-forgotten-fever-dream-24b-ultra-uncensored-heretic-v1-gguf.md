@@ -4,7 +4,7 @@
 
 Omega-Darker-Gaslight_The-Final-Forgotten-Fever-Dream-24B-ultra-uncensored-heretic-v1-GGUF es la version cuantizada en formato GGUF, publicada por el usuario mradermacher, del modelo base llmfan46/Omega-Darker-Gaslight_The-Final-Forgotten-Fever-Dream-24B-ultra-uncensored-heretic-v1. Se trata de un modelo de la clase 24B con 23.572.403.200 parametros reales (segun los tensores en safetensors del modelo base), orientado a generacion conversacional y roleplay sin filtros de rechazo.
 
-La ficha de HuggingFace lo etiqueta explicitamente como nsfw, explicit, roleplay, unaligned, ERP, Erotic, Horror, Violence, heretic, uncensored, decensored y abliterated. Es decir, el modelo base ha pasado por un proceso de ablation de la direccion de rechazo (abliteration) que elimina o reduce las respuestas de negativa del modelo afinado original, y esta pensado para contenido adulto, narrativa explicita y escenarios de ficcion dura. El unico idioma declarado es el ingles (en).
+La ficha de Hugging Face lo etiqueta explicitamente como nsfw, explicit, roleplay, unaligned, ERP, Erotic, Horror, Violence, heretic, uncensored, decensored y abliterated. Es decir, el modelo base ha pasado por un proceso de ablation de la direccion de rechazo (abliteration) que elimina o reduce las respuestas de negativa del modelo afinado original, y esta pensado para contenido adulto, narrativa explicita y escenarios de ficcion dura. El unico idioma declarado es el ingles (en).
 
 El repositorio de cuantizaciones ocupa 161,4 GB e incluye 12 niveles de cuantizacion (desde Q2_K de 9,0 GB hasta Q8_0 de 25,2 GB), lo que permite ejecutarlo en hardware de consumo con llama.cpp y derivados. El modelo acumula 215 descargas y 0 likes en el momento de la consulta, no declara licencia y no publica datos de benchmarks ni de arquitectura en la informacion disponible.
 
@@ -90,7 +90,7 @@ No disponible. La informacion proporcionada no incluye benchmarks ni especificac
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Omega-Darker-Gaslight_The-Final-Forgotten-Fever-Dream-24B-ultra-uncensored-heretic-v1-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Omega-Darker-Gaslight_The-Final-Forgotten-Fever-Dream-24B-ultra-uncensored-heretic-v1-GGUF
 - Repositorio de cuantizaciones con imatrix (i1-GGUF): https://huggingface.co/mradermacher/Omega-Darker-Gaslight_The-Final-Forgotten-Fever-Dream-24B-ultra-uncensored-heretic-v1-i1-GGUF
 - Modelo base: https://huggingface.co/llmfan46/Omega-Darker-Gaslight_The-Final-Forgotten-Fever-Dream-24B-ultra-uncensored-heretic-v1
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Omega-Darker-Gaslight_The-Final-Forgotten-Fever-Dream-24B-ultra-uncensored-heretic-v1-GGUF

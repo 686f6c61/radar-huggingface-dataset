@@ -81,7 +81,7 @@ La diferencia principal frente al modelo original es el framework de ejecucion: 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/kerasformers/qwen2-vl-7b-instruct)
+- [Modelo en Hugging Face](https://huggingface.co/kerasformers/qwen2-vl-7b-instruct)
 - [Repositorio KerasFormers en GitHub](https://github.com/IMvision12/KerasFormers)
 - [Documentacion de Qwen2-VL en KerasFormers](https://imvision12.github.io/KerasFormers/qwen2_vl/)
 - [Modelo base Qwen/Qwen2-VL-7B-Instruct](https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct)

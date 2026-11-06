@@ -23,7 +23,7 @@ El adaptador fue entrenado con las librerías Unsloth y TRL, lo que indica un pr
 
 El modelo base es Qwen3-4B-Instruct-2507, un transformer denso de 4.000 millones de parametros con arquitectura estandar de decoder-only, entrenado por Alibaba con soporte para modo thinking y no-thinking. La version Instruct-2507 es la actualizacion del modo no-thinking, con mejoras en razonamiento, tool calling y generacion de codigo.
 
-El adaptador LoRA fue entrenado con Unsloth (que acelera el entrenamiento aproximadamente 2x) y la libreria TRL de HuggingFace. El nombre del repositorio indica una sola epoca de entrenamiento (1ep) y un enfoque en elementos multilinea. No se dispone de informacion sobre el dataset utilizado, el numero de tokens de entrenamiento ni si se aplicaron tecnicas como RLHF o DPO. El adaptador se distribuye como pesos safetensors independientes, pensados para cargarse sobre el modelo base cuantizado en 4 bits.
+El adaptador LoRA fue entrenado con Unsloth (que acelera el entrenamiento aproximadamente 2x) y la libreria TRL de Hugging Face. El nombre del repositorio indica una sola epoca de entrenamiento (1ep) y un enfoque en elementos multilinea. No se dispone de informacion sobre el dataset utilizado, el numero de tokens de entrenamiento ni si se aplicaron tecnicas como RLHF o DPO. El adaptador se distribuye como pesos safetensors independientes, pensados para cargarse sobre el modelo base cuantizado en 4 bits.
 
 ## Capacidades
 

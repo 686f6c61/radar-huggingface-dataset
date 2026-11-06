@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`RahelM/cloning_tts` es un checkpoint de texto a voz publicado en HuggingFace por el usuario RahelM el 22 de octubre de 2026 y actualizado dos días después. El repositorio está etiquetado con `speecht5`, lo que lo sitúa en la familia de arquitecturas SpeechT5 de Microsoft, un modelo encoder-decoder con módulos específicos para habla y texto que se utiliza habitualmente como base para síntesis de voz y clonación de hablante. El nombre del repositorio, `cloning_tts`, apunta a un ajuste fino orientado a clonación de voz, aunque la model card no está disponible y no se puede confirmar el objetivo exacto del entrenamiento.
+`RahelM/cloning_tts` es un checkpoint de texto a voz publicado en Hugging Face por el usuario RahelM el 22 de octubre de 2026 y actualizado dos días después. El repositorio está etiquetado con `speecht5`, lo que lo sitúa en la familia de arquitecturas SpeechT5 de Microsoft, un modelo encoder-decoder con módulos específicos para habla y texto que se utiliza habitualmente como base para síntesis de voz y clonación de hablante. El nombre del repositorio, `cloning_tts`, apunta a un ajuste fino orientado a clonación de voz, aunque la model card no está disponible y no se puede confirmar el objetivo exacto del entrenamiento.
 
 El dato objetivo más relevante es el recuento de parámetros extraído de los pesos en formato safetensors: 144.433.890 parámetros, un orden de magnitud coherente con la variante base de SpeechT5 (unos 141 millones). El repositorio ocupa 4,6 GB, un tamaño muy superior al de los pesos en precisión simple (aproximadamente 0,58 GB), lo que sugiere la presencia de estados de optimizador, checkpoints intermedios o registros de TensorBoard asociados al entrenamiento.
 
@@ -21,7 +21,7 @@ La relevancia del modelo es limitada y hay que contextualizarla: se trata de un 
 | Licencia | No disponible |
 | Formato de pesos | Safetensors; el repositorio incluye además registros de TensorBoard |
 
-Otros datos del repositorio: 36 descargas, 0 likes, tamaño de 4,6 GB, creado el 2026-10-22 y actualizado el 2026-10-24. El pipeline de HuggingFace no está declarado, por lo que la plataforma no lo clasifica automáticamente como tarea de texto a voz.
+Otros datos del repositorio: 36 descargas, 0 likes, tamaño de 4,6 GB, creado el 2026-10-22 y actualizado el 2026-10-24. El pipeline de Hugging Face no está declarado, por lo que la plataforma no lo clasifica automáticamente como tarea de texto a voz.
 
 ## Arquitectura y entrenamiento
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| RahelM/cloning_tts | 144,4 M | No disponible | No disponible | HuggingFace, 36 descargas | Sin evaluación ni model card |
-| SpeechT5 base (familia microsoft/speecht5_tts) | No verificado en la información disponible | No disponible | No disponible | HuggingFace | Arquitectura de referencia del repositorio |
-| XTTS v2 (Coqui) | No verificado en la información disponible | No disponible | No disponible | HuggingFace | Alternativa habitual para clonación de voz |
-| MMS-TTS (Meta) | No verificado en la información disponible | No disponible | No disponible | HuggingFace | Enfoque multilingüe, sin clonación |
+| RahelM/cloning_tts | 144,4 M | No disponible | No disponible | Hugging Face, 36 descargas | Sin evaluación ni model card |
+| SpeechT5 base (familia microsoft/speecht5_tts) | No verificado en la información disponible | No disponible | No disponible | Hugging Face | Arquitectura de referencia del repositorio |
+| XTTS v2 (Coqui) | No verificado en la información disponible | No disponible | No disponible | Hugging Face | Alternativa habitual para clonación de voz |
+| MMS-TTS (Meta) | No verificado en la información disponible | No disponible | No disponible | Hugging Face | Enfoque multilingüe, sin clonación |
 
 No se dispone de datos verificados de los modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa no es posible. Las filas correspondientes a otros modelos se incluyen solo como categorías de referencia.
 
@@ -85,5 +85,5 @@ No se dispone de datos verificados de los modelos alternativos en la informació
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RahelM/cloning_tts
+- Repositorio en Hugging Face: https://huggingface.co/RahelM/cloning_tts
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo. Los resultados devueltos corresponden a un mod de un avión Boeing 737 MAX para Microsoft Flight Simulator y no guardan relación con este repositorio.

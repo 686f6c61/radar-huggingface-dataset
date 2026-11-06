@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Axial-Drive es un estudio de arquitectura comparada (A/B test) publicado en HuggingFace por el usuario DKNTZMN. No es un modelo de conduccion autonoma listo para produccion, sino un banco de pruebas reproducible que enfrenta dos sesgos inductivos distintos sobre la misma tarea: un transformer axial de 8-10 capas y aproximadamente 80 millones de parametros frente a un ViT 2D plano de anchura equivalente. El objetivo es medir el efecto de la atencion axial (fila = lateral, columna = longitudinal) sobre rejillas BEV, y el efecto de anadir tokens discretos de planificacion tipo chain-of-thought antes de predecir waypoints.
+Axial-Drive es un estudio de arquitectura comparada (A/B test) publicado en Hugging Face por el usuario DKNTZMN. No es un modelo de conduccion autonoma listo para produccion, sino un banco de pruebas reproducible que enfrenta dos sesgos inductivos distintos sobre la misma tarea: un transformer axial de 8-10 capas y aproximadamente 80 millones de parametros frente a un ViT 2D plano de anchura equivalente. El objetivo es medir el efecto de la atencion axial (fila = lateral, columna = longitudinal) sobre rejillas BEV, y el efecto de anadir tokens discretos de planificacion tipo chain-of-thought antes de predecir waypoints.
 
 El modelo opera sobre un simulador vectorial de dominio dual en bucle cerrado: un escenario de autopista de alta velocidad (4 carriles, 22-33 m/s, cambios de carril estilo IDM + MOBIL) y un escenario urbano con interseccion semaforizada, trafico transversal y peatones. La entrada no es camara ni LiDAR crudo, sino una rejilla BEV privilegiada de 8 canales y 32x32 celdas.
 
@@ -68,7 +68,7 @@ Ademas, el propio autor declara explicitamente que el repositorio no persigue pu
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: aproximadamente 0,32 GB en FP32 y 0,16 GB en FP16 para los 80M de parametros. La rejilla BEV de 32x32 con 8 canales anade una activacion minima, por lo que el consumo real es marginalmente superior al de los pesos.
-- Entrenamiento: la model card recomienda el flavor `l4x1` de HuggingFace Jobs (GPU NVIDIA L4 con 24 GB), descrito como la mejor relacion precio/hora entre las GPU de 24 GB.
+- Entrenamiento: la model card recomienda el flavor `l4x1` de Hugging Face Jobs (GPU NVIDIA L4 con 24 GB), descrito como la mejor relacion precio/hora entre las GPU de 24 GB.
 - GPU recomendadas: NVIDIA L4 (24 GB) para entrenamiento segun la recomendacion del autor. Cualquier GPU moderna con al menos 8 GB es suficiente para las variantes de 80M, dado el reducido numero de parametros.
 - GPU de consumo: si, cabe holgadamente en tarjetas de consumo como una RTX 3060, RTX 4060 o superiores. El modo `--scale tiny --steps 400 --cpu` esta pensado para ejecutarse incluso sin GPU.
 - Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI, que no aplican a este tipo de modelo. El despliegue se realiza mediante el script de PyTorch del propio repositorio.
@@ -101,7 +101,7 @@ Comparativa con modelos externos de conduccion autonoma (CARLA, nuPlan, Waymax):
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/DKNTZMN/axial-drive
+- Model card en Hugging Face: https://huggingface.co/DKNTZMN/axial-drive
 - Perfil de GitHub del autor: https://github.com/DKNTZMN
 - Referencia citada por el autor: Ho et al., 2019, "Axial Attention in Multidimensional Transformers": https://arxiv.org/abs/1912.12180
 - Otros resultados de la busqueda web (no relacionados con el modelo): directorio de modelos abiertos https://aimodels.org/ai-models/ ; articulo sobre simuladores de modelos constitutivos https://www.sciencedirect.com/science/article/pii/S0950061825007767 ; introduccion general a modelos de IA https://www.geeksforgeeks.org/artificial-intelligence/what-is-ai-model/

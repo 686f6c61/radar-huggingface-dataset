@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head-epoch02 | ~6,74 B | no disponible | Llama 2 | HuggingFace, 0 descargas | Checkpoint intermedio de unlearning (época 2/20) |
-| locuslab/tofu_ft_llama2-7b | ~6,74 B | 4096 tokens (Llama-2) | Llama 2 | HuggingFace, público | Modelo base ajustado con TOFU, sin desaprendizaje |
-| NousResearch/Llama-2-7b-chat-hf | ~6,74 B | 4096 tokens (Llama-2) | Llama 2 | HuggingFace, muy descargado | Llama-2-7b-chat en formato HuggingFace, sin ajuste TOFU |
-| meta-llama/Llama-2-7b-chat-hf | ~6,74 B | 4096 tokens | Llama 2 | HuggingFace, muy descargado | Modelo original de Meta |
+| g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head-epoch02 | ~6,74 B | no disponible | Llama 2 | Hugging Face, 0 descargas | Checkpoint intermedio de unlearning (época 2/20) |
+| locuslab/tofu_ft_llama2-7b | ~6,74 B | 4096 tokens (Llama-2) | Llama 2 | Hugging Face, público | Modelo base ajustado con TOFU, sin desaprendizaje |
+| NousResearch/Llama-2-7b-chat-hf | ~6,74 B | 4096 tokens (Llama-2) | Llama 2 | Hugging Face, muy descargado | Llama-2-7b-chat en formato Hugging Face, sin ajuste TOFU |
+| meta-llama/Llama-2-7b-chat-hf | ~6,74 B | 4096 tokens | Llama 2 | Hugging Face, muy descargado | Modelo original de Meta |
 
 No se dispone de datos de rendimiento comparativo (benchmarks) para el checkpoint objeto de esta ficha.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) para el checkpoin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head-epoch02
+- Hugging Face: https://huggingface.co/g-assismoraes/tofu-llama2-7b-forget10-ihl_reset_head-epoch02
 - Modelo base TOFU: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicialización de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Modelo original: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf

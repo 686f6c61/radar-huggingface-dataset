@@ -2,7 +2,7 @@
 
 ## Resumen
 
-uyento7705/dpo-laptop-vn-model es un ajuste fino del modelo meta-llama-3.1-8b-instruct, publicado en HuggingFace por el usuario uyento7705. El identificador del repositorio sugiere una etapa de DPO (Direct Preference Optimization), y las etiquetas confirman el uso de Unsloth y TRL, dos herramientas habituales para ajuste eficiente con LoRA/QLoRA. El modelo base declarado es unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit, es decir, una versión ya cuantizada a 4 bits del instruct de Llama 3.1.
+uyento7705/dpo-laptop-vn-model es un ajuste fino del modelo meta-llama-3.1-8b-instruct, publicado en Hugging Face por el usuario uyento7705. El identificador del repositorio sugiere una etapa de DPO (Direct Preference Optimization), y las etiquetas confirman el uso de Unsloth y TRL, dos herramientas habituales para ajuste eficiente con LoRA/QLoRA. El modelo base declarado es unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit, es decir, una versión ya cuantizada a 4 bits del instruct de Llama 3.1.
 
 Técnicamente se trata de un transformer denso decoder-only de aproximadamente 8.000 millones de parámetros, con la arquitectura heredada de Llama 3.1 (RoPE, GQA, SwiGLU, RMSNorm) y una ventana de contexto teórica de 128.000 tokens en el modelo original. La model card no documenta el dataset de preferencias, el número de pasos de entrenamiento, la configuración de LoRA ni ningún resultado de evaluación, por lo que no es posible verificar qué comportamiento concreto se ha optimizado.
 
@@ -77,7 +77,7 @@ Las cifras siguientes se derivan del tamaño paramétrico de un modelo de 8B y n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| uyento7705/dpo-laptop-vn-model | ~8B | 128k (heredado, no confirmado) | apache-2.0 declarada | HuggingFace, 0 descargas | Sin benchmarks publicados |
+| uyento7705/dpo-laptop-vn-model | ~8B | 128k (heredado, no confirmado) | apache-2.0 declarada | Hugging Face, 0 descargas | Sin benchmarks publicados |
 | meta-llama/Llama-3.1-8B-Instruct | 8B | 128k | Llama 3.1 Community License | Ampliamente disponible | Benchmarks publicados por Meta |
 | mistralai/Mistral-7B-Instruct-v0.3 | 7,2B | 32k | Apache 2.0 | Ampliamente disponible | Benchmarks publicados por Mistral |
 | Qwen/Qwen2.5-7B-Instruct | 7,6B | 128k | Apache 2.0 (mayoría de variantes) | Ampliamente disponible | Benchmarks publicados por Alibaba |
@@ -93,13 +93,13 @@ La comparación directa de rendimiento no es posible porque este repositorio car
 - Conflicto de licencias: el modelo base Llama 3.1 está sujeto a la Llama 3.1 Community License de Meta, no a Apache 2.0. Declarar apache-2.0 sobre un derivado de Llama 3.1 es jurídicamente discutible y conviene revisarlo antes de cualquier uso comercial.
 - Herencia de cuantización: al partir de un checkpoint bnb-4bit, el ajuste puede arrastrar pérdida de precisión respecto a entrenar sobre los pesos originales en bf16.
 - Posible contenido parcial: el tamaño del repositorio sugiere adaptadores o pesos incompletos; debe verificarse antes de intentar cargarlo.
-- Anomalía en los metadatos: la fecha de creación registrada en HuggingFace es posterior a la fecha actual, lo que apunta a un error de publicación.
+- Anomalía en los metadatos: la fecha de creación registrada en Hugging Face es posterior a la fecha actual, lo que apunta a un error de publicación.
 - Sin soporte de la comunidad: 0 descargas y 0 likes implican que los fallos detectados no han sido reportados ni corregidos.
 - No apto para producción sin una evaluación propia sobre el dominio objetivo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uyento7705/dpo-laptop-vn-model
+- Modelo en Hugging Face: https://huggingface.co/uyento7705/dpo-laptop-vn-model
 - Modelo base: https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

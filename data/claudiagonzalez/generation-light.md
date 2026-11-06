@@ -75,4 +75,4 @@ No se dispone de modelos comparables en la informacion proporcionada. La model c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/claudiogonzalez/generation-light
+- Hugging Face: https://huggingface.co/claudiogonzalez/generation-light

@@ -6,7 +6,7 @@ RNA-FM (RNA Foundation Model) es un modelo de lenguaje preentrenado para secuenc
 
 Su relevancia practica radica en que produce embeddings de proposito general para ARN, utilizables como representacion base en tareas muy diversas: prediccion de estructura secundaria y terciaria, agrupamiento de familias de ARN y analisis funcional. Esto evita tener que entrenar un modelo desde cero para cada tarea biologica concreta.
 
-El modelo esta publicado bajo licencia Apache 2.0 y su repositorio en HuggingFace ocupa 3,8 GB. La model card no detalla la arquitectura interna, el numero de parametros, la longitud de contexto ni los idiomas, por lo que estos datos figuran como no disponibles en esta ficha; para los detalles tecnicos de arquitectura y entrenamiento, la propia model card remite a los articulos citados (arXiv 2204.00300 y el articulo asociado en Nature Methods de 2024).
+El modelo esta publicado bajo licencia Apache 2.0 y su repositorio en Hugging Face ocupa 3,8 GB. La model card no detalla la arquitectura interna, el numero de parametros, la longitud de contexto ni los idiomas, por lo que estos datos figuran como no disponibles en esta ficha; para los detalles tecnicos de arquitectura y entrenamiento, la propia model card remite a los articulos citados (arXiv 2204.00300 y el articulo asociado en Nature Methods de 2024).
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RNA-FM | no disponible | no disponible | 23+ millones de secuencias de ncRNA, autosupervisado | Apache 2.0 | HuggingFace (repo dssdsadssa/rnafm) y GitHub ml4bio/RNA-FM |
+| RNA-FM | no disponible | no disponible | 23+ millones de secuencias de ncRNA, autosupervisado | Apache 2.0 | Hugging Face (repo dssdsadssa/rnafm) y GitHub ml4bio/RNA-FM |
 | mRNA-FM | no disponible | no disponible | 45 millones de secuencias CDS de ARNm, autosupervisado | no disponible en la informacion proporcionada | Extension de RNA-FM; enlace no disponible |
 
 No se dispone de datos sobre otros modelos comparables de la misma categoria (modelos fundacionales de ARN) en la informacion proporcionada, por lo que la comparacion con alternativas externas queda como no disponible.
@@ -85,7 +85,7 @@ No se dispone de datos sobre otros modelos comparables de la misma categoria (mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dssdsadssa/rnafm
+- Hugging Face: https://huggingface.co/dssdsadssa/rnafm
 - Codigo fuente (GitHub): https://github.com/ml4bio/RNA-FM
 - Articulo RNA-FM: https://arxiv.org/abs/2204.00300
 - Articulo de prediccion de estructura secundaria de ARN: https://arxiv.org/abs/2002.05810

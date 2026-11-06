@@ -95,7 +95,7 @@ No se dispone de comparativas con alternativas de otros desarrolladores (por eje
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CompiwerAI/Mtrini-SVL-1.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/CompiwerAI/Mtrini-SVL-1.1-GGUF
 - Modelo base (merge): https://huggingface.co/CompiwerAI/Mtrini-SVL-1.1-Merged
 - Version anterior en GGUF: https://huggingface.co/CompiwerAI/Mtrini-SVL-1.0-GGUF
 - Arbol de ficheros del repositorio: https://huggingface.co/CompiwerAI/Mtrini-SVL-1.0-GGUF/tree/main

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Nat1an/cerulean-lab4-a-0eb67c28` es un modelo de generación de texto publicado en HuggingFace por el usuario Nat1an (vinculado al espacio NathanAILab en el Hub). Se trata de un modelo de arquitectura GPT-2 con 124.475.904 parámetros (aproximadamente 124 millones), según los datos reales de los pesos en formato safetensors, lo que lo sitúa en la misma escala que GPT-2 small. El repositorio ocupa 0,5 GB e incluye la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono, no a un paper propio del modelo.
+El modelo `Nat1an/cerulean-lab4-a-0eb67c28` es un modelo de generación de texto publicado en Hugging Face por el usuario Nat1an (vinculado al espacio NathanAILab en el Hub). Se trata de un modelo de arquitectura GPT-2 con 124.475.904 parámetros (aproximadamente 124 millones), según los datos reales de los pesos en formato safetensors, lo que lo sitúa en la misma escala que GPT-2 small. El repositorio ocupa 0,5 GB e incluye la etiqueta `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. (2019) sobre estimación de emisiones de carbono, no a un paper propio del modelo.
 
-La model card es la plantilla automática de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como "More Information Needed". No se ha publicado información sobre el conjunto de datos de entrenamiento, el procedimiento de ajuste (RLHF, DPO, SFT) ni resultados de benchmarks.
+La model card es la plantilla automática de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) aparecen como "More Information Needed". No se ha publicado información sobre el conjunto de datos de entrenamiento, el procedimiento de ajuste (RLHF, DPO, SFT) ni resultados de benchmarks.
 
 Su relevancia actual es limitada: se trata de un modelo experimental de un autor independiente, sin descargas ni interacciones registradas en el momento de la consulta, y sin documentación técnica asociada. El interés principal reside en su tamaño reducido (124 M de parámetros), que permite ejecutarlo en hardware muy modesto, incluso en CPU, siempre asumiendo que se desconoce por completo su calidad, su procedencia de datos y las condiciones legales de uso.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nat1an/cerulean-lab4-a-0eb67c28 | 124 M | No disponible | Sin benchmarks publicados | No disponible | Hub de HuggingFace, 0 descargas |
+| Nat1an/cerulean-lab4-a-0eb67c28 | 124 M | No disponible | Sin benchmarks publicados | No disponible | Hub de Hugging Face, 0 descargas |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | Benchmarks publicados en el paper original | MIT (pesos ampliamente redistribuidos) | Muy extendido, integrado en transformers |
-| DistilGPT-2 | 82 M | 1024 tokens | Benchmarks publicados por HuggingFace | Apache 2.0 | Muy extendido |
+| DistilGPT-2 | 82 M | 1024 tokens | Benchmarks publicados por Hugging Face | Apache 2.0 | Muy extendido |
 | GPT-2 medium (OpenAI) | 355 M | 1024 tokens | Benchmarks publicados en el paper original | MIT | Muy extendido |
 
 La comparación directa es difícil porque el modelo analizado carece de licencia, idiomas declarados y resultados de evaluación. Frente a las alternativas de la misma escala, la única ventaja objetiva es su disponibilidad en el Hub; sus desventajas son la falta de documentación y la incertidumbre legal sobre su uso.
@@ -93,9 +93,9 @@ La comparación directa es difícil porque el modelo analizado carece de licenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nat1an/cerulean-lab4-a-0eb67c28
-- Perfil del autor en HuggingFace: https://huggingface.co/Nat1an
-- Organizacion NathanAILab en HuggingFace: https://huggingface.co/NathanAILab/models
+- Modelo en Hugging Face: https://huggingface.co/Nat1an/cerulean-lab4-a-0eb67c28
+- Perfil del autor en Hugging Face: https://huggingface.co/Nat1an
+- Organizacion NathanAILab en Hugging Face: https://huggingface.co/NathanAILab/models
 - Perfil del autor en GitHub: https://github.com/Nat1anWasTaken
 - Endpoint de inferencia de terceros (FriendliAI): https://friendli.ai/models/Nat1an/cerulean-lab4
 - Paper citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700

@@ -28,7 +28,7 @@ La relevancia de esta ficha es fundamentalmente practica: permite saber que exis
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base en la documentacion proporcionada. El unico dato estructural verificable es el numero de parametros (8.953.803.264) y el hecho de que los pesos fueron convertidos desde el formato original en HuggingFace (campo `convert_type: hf`) a GGUF con `quantize_version: 2`, lo que implica una conversion estandar de tensores sin cambios en la topologia de la red. No hay informacion publica en este repositorio sobre si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura hibrida o un modelo con atencion lineal.
+No se dispone de informacion sobre la arquitectura del modelo base en la documentacion proporcionada. El unico dato estructural verificable es el numero de parametros (8.953.803.264) y el hecho de que los pesos fueron convertidos desde el formato original en Hugging Face (campo `convert_type: hf`) a GGUF con `quantize_version: 2`, lo que implica una conversion estandar de tensores sin cambios en la topologia de la red. No hay informacion publica en este repositorio sobre si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura hibrida o un modelo con atencion lineal.
 
 Tampoco se documenta en este repositorio el proceso de entrenamiento: no hay datos sobre numero de tokens, composicion del dataset, fases de ajuste (SFT, RLHF, DPO) ni innovaciones tecnicas asociadas. El unico indicio funcional es la etiqueta `conversational`, que sugiere que el modelo base fue ajustado para dialogos multi-turno, y la etiqueta `endpoints_compatible`, habitual en los repositorios de mradermacher para indicar compatibilidad con infraestructura de inferencia tipo endpoint. Cualquier afirmacion adicional sobre el entrenamiento seria especulacion.
 
@@ -87,7 +87,7 @@ No disponible. La informacion proporcionada no incluye arquitectura, contexto, l
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks | Disponibilidad |
 |---|---|---|---|---|---|
-| X-Planner-9B-0916-GGUF | 8,95B | no disponible | no disponible | no publicados | GGUF en HuggingFace |
+| X-Planner-9B-0916-GGUF | 8,95B | no disponible | no disponible | no publicados | GGUF en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -105,7 +105,7 @@ No disponible. La informacion proporcionada no incluye arquitectura, contexto, l
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/X-Planner-9B-0916-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/X-Planner-9B-0916-GGUF
 - Modelo base referenciado en la model card: https://huggingface.co/x-square-robot/X-Planner-9B-0916
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo; los unicos resultados obtenidos corresponden a un centro educativo lituano (Vilniaus Karoliniskiu gimnazija) y no guardan relacion con X-Planner.

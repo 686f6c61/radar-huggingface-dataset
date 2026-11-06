@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.8-27B | 27.99B | No disponible | BF16 | Apache-2.0 | HuggingFace |
-| orcarouter/Qwen3.8-27B-Uncensored | 27.99B | No disponible | BF16 | Apache-2.0 | HuggingFace |
-| protogeni/Qwen3.8-27B-Uncensored-W4A16-RTX3090-MTP4 | 27.99B | No disponible | W4A16 + INT8 embeddings | Apache-2.0 | HuggingFace |
-| Marcin116/Qwen3.8-27B-Uncensored-W4A16-RTX3090-MTP4-embed-int4 | 27.99B | No disponible | W4A16 + INT4 embeddings | Apache-2.0 | HuggingFace |
+| Qwen/Qwen3.8-27B | 27.99B | No disponible | BF16 | Apache-2.0 | Hugging Face |
+| orcarouter/Qwen3.8-27B-Uncensored | 27.99B | No disponible | BF16 | Apache-2.0 | Hugging Face |
+| protogeni/Qwen3.8-27B-Uncensored-W4A16-RTX3090-MTP4 | 27.99B | No disponible | W4A16 + INT8 embeddings | Apache-2.0 | Hugging Face |
+| Marcin116/Qwen3.8-27B-Uncensored-W4A16-RTX3090-MTP4-embed-int4 | 27.99B | No disponible | W4A16 + INT4 embeddings | Apache-2.0 | Hugging Face |
 
 Diferencias clave: este modelo es el más optimizado en cuanto a tamaño de memoria (15.2 GB en disco) gracias a la cuantización INT4 de los embeddings, pero introduce un mayor error de cuantización en ese tensor (aunque no se ha medido). El modelo original y el abliterated mantienen precisión BF16 pero requieren más VRAM. protogeni es idéntico a este repo excepto por los embeddings INT8.
 
@@ -82,7 +82,7 @@ Diferencias clave: este modelo es el más optimizado en cuanto a tamaño de memo
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Marcin116/Qwen3.8-27B-Uncensored-W4A16-RTX3090-MTP4-embed-int4
+- Hugging Face del modelo: https://huggingface.co/Marcin116/Qwen3.8-27B-Uncensored-W4A16-RTX3090-MTP4-embed-int4
 - Modelo base cuantizado: https://huggingface.co/noon-at-cgn/Qwen3.8-27B-Uncensored-W4A16-AutoRound
 - Fuente protogeni (INT8 embeddings): https://huggingface.co/protogeni/Qwen3.8-27B-Uncensored-W4A16-RTX3090-MTP4
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B

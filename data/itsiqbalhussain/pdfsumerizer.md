@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pdfsumerizer` es un repositorio publicado en HuggingFace por el usuario itsIqbalHussain bajo licencia Apache 2.0. Por el identificador y la ausencia de cualquier contenido en la model card (que se limita a la declaracion de licencia), el artefacto parece estar orientado a la suma­rizacion de documentos PDF, presumiblemente mediante algun pipeline de procesamiento de texto. No obstante, no se ha publicado ninguna informacion tecnica que permita confirmar esta hipotesis.
+`pdfsumerizer` es un repositorio publicado en Hugging Face por el usuario itsIqbalHussain bajo licencia Apache 2.0. Por el identificador y la ausencia de cualquier contenido en la model card (que se limita a la declaracion de licencia), el artefacto parece estar orientado a la suma­rizacion de documentos PDF, presumiblemente mediante algun pipeline de procesamiento de texto. No obstante, no se ha publicado ninguna informacion tecnica que permita confirmar esta hipotesis.
 
 El repositorio no incluye pipeline declarado, idiomas soportados, arquitectura, numero de parametros, longitud de contexto ni formato de pesos. Tampoco registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, lo que sugiere un artefacto recien creado o de uso estrictamente privado.
 
@@ -73,5 +73,5 @@ No disponible. Al no conocerse la tarea exacta, el tamano ni la arquitectura, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/itsIqbalHussain/pdfsumerizer
+- Repositorio en Hugging Face: https://huggingface.co/itsIqbalHussain/pdfsumerizer
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

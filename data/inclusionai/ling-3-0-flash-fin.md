@@ -75,7 +75,7 @@ No se dispone de información comparativa con otros modelos financieros específ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inclusionAI/Ling-3.0-flash-Fin
+- Modelo en Hugging Face: https://huggingface.co/inclusionAI/Ling-3.0-flash-Fin
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash
 - OpenRouter (versión gratuita): https://openrouter.ai/inclusionai/ling-3.0-flash-fin:free
 - Anuncio en X: https://x.com/AntLingAGI/status/2093022087069958492

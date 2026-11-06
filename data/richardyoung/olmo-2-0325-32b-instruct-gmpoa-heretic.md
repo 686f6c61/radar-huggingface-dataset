@@ -93,7 +93,7 @@ La comparacion directa con modelos de 32B ablacionados equivalentes no esta disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/OLMo-2-0325-32B-Instruct-GMPOA-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/OLMo-2-0325-32B-Instruct-GMPOA-heretic
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct
 - Modelo base (pre-DPO): https://huggingface.co/allenai/OLMo-2-0325-32B
 - Heretic: https://heretic-project.org

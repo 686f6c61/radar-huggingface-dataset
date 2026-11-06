@@ -79,10 +79,10 @@ La diferencia de 2,04 puntos de joint F1 supera el margen de 1 punto fijado en e
 
 | Modelo | Parametros | Contexto | Joint F1 (validacion) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| heed-full-output-json-4ep-qwen3-0.6b | 596.049.920 | no disponible (entreno a 1.024) | 71,5 | Apache 2.0 | HuggingFace |
-| heed-full-output-lines-qwen3-0.6b | no disponible (misma base) | no disponible | 69,4 | no disponible | HuggingFace |
-| heed-full-output-json-qwen3-0.6b (8 epocas, semilla 1) | no disponible (misma base) | no disponible | 71,4 | no disponible | HuggingFace |
-| heed-tasks-qwen3-0.6b (modelo de aplicacion) | no disponible (misma base) | no disponible | no comparable (evaluado con juez ciego) | no disponible | HuggingFace |
+| heed-full-output-json-4ep-qwen3-0.6b | 596.049.920 | no disponible (entreno a 1.024) | 71,5 | Apache 2.0 | Hugging Face |
+| heed-full-output-lines-qwen3-0.6b | no disponible (misma base) | no disponible | 69,4 | no disponible | Hugging Face |
+| heed-full-output-json-qwen3-0.6b (8 epocas, semilla 1) | no disponible (misma base) | no disponible | 71,4 | no disponible | Hugging Face |
+| heed-tasks-qwen3-0.6b (modelo de aplicacion) | no disponible (misma base) | no disponible | no comparable (evaluado con juez ciego) | no disponible | Hugging Face |
 
 No se dispone de comparación con modelos de otras familias en la información proporcionada.
 
@@ -101,7 +101,7 @@ No se dispone de comparación con modelos de otras familias en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohitkrconnect/heed-full-output-json-4ep-qwen3-0.6b
+- Modelo en Hugging Face: https://huggingface.co/mohitkrconnect/heed-full-output-json-4ep-qwen3-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Variante de líneas: https://huggingface.co/mohitkrconnect/heed-full-output-lines-qwen3-0.6b
 - Modelo JSON de 8 épocas, semilla 1: https://huggingface.co/mohitkrconnect/heed-full-output-json-qwen3-0.6b

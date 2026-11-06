@@ -91,7 +91,7 @@ No se dispone de una comparativa directa publicada por el autor con otros modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Laplace1313/DeepSeek-V4-Flash-0731-JA-REAP-K216-EXL3-3bpw-DGX-Spark
+- Repositorio Hugging Face: https://huggingface.co/Laplace1313/DeepSeek-V4-Flash-0731-JA-REAP-K216-EXL3-3bpw-DGX-Spark
 - Modelo base oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Modelo base K216 de 0xSero: https://huggingface.co/0xSero/deepseek-v4-flash-0731-spark
 - Codigo fuente del proyecto: https://github.com/Laplace1313/deepseek-v4-ja-reap

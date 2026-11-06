@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA (PEFT) publicado por el usuario `str
 
 El interés del artefacto es fundamentalmente metodológico: ejemplifica el patrón habitual de adaptación de bajo coste de un modelo de 8 000 millones de parámetros para un dominio vertical, manteniendo intacto el modelo base y publicando únicamente un adaptador de menos de 1 GB. Frente a un ajuste completo, esto reduce drásticamente los requisitos de almacenamiento y permite servir el mismo modelo base con varios adaptadores intercambiables.
 
-Ahora bien, la model card es la plantilla por defecto de HuggingFace sin rellenar (todos los campos aparecen como `[More Information Needed]`), no se declara licencia ni idiomas, no hay resultados de evaluación publicados y el repositorio acumula 0 descargas y 0 "likes". Cualquier uso en producción exige validación propia, ya que no existe evidencia publicada de su calidad ni de su comportamiento clínico.
+Ahora bien, la model card es la plantilla por defecto de Hugging Face sin rellenar (todos los campos aparecen como `[More Information Needed]`), no se declara licencia ni idiomas, no hay resultados de evaluación publicados y el repositorio acumula 0 descargas y 0 "likes". Cualquier uso en producción exige validación propia, ya que no existe evidencia publicada de su calidad ni de su comportamiento clínico.
 
 ## Especificaciones tecnicas
 
@@ -22,7 +22,7 @@ Ahora bien, la model card es la plantilla por defecto de HuggingFace sin rellena
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 | Autor | strongpear |
 | Libreria | peft (framework declarado: PEFT 0.20.0) |
-| Modelo base | meta-llama/Llama-3.1-8B (gated en HuggingFace) |
+| Modelo base | meta-llama/Llama-3.1-8B (gated en Hugging Face) |
 | Rango LoRA | 64, inferido del sufijo `r64` del identificador; no confirmado en la model card |
 | Pipeline | text-generation |
 | Fecha de creacion | 2026-09-18 (segun metadatos del repositorio) |
@@ -33,7 +33,7 @@ Ahora bien, la model card es la plantilla por defecto de HuggingFace sin rellena
 
 El artefacto es un adaptador LoRA, tecnica descrita en Hu et al. (arXiv:2106.09685) que congela los pesos del modelo base e inserta matrices de bajo rango en determinadas proyecciones lineales. El modelo subyacente, Llama 3.1 8B, es un transformer decoder-only de 32 capas, 4 096 dimensiones de modelo, atencion con consultas agrupadas (GQA) y RoPE, preentrenado sobre mas de 15 billones de tokens. El sufijo `r64` del identificador apunta a un rango 64, valor habitual para adaptaciones de dominio que requieren mas capacidad que los rangos 8-16 tipicos.
 
-No hay informacion verificable sobre el procedimiento de entrenamiento. La nomenclatura del repositorio (`RAFT`, `PMIX`, `P80`, `5DOCS`, `CoT`, `A-MEDICAL`, `Instruct`) sugiere, respectivamente, un ajuste aumentado por recuperacion, una mezcla de prompts, una proporcion del 80 % de documentos relevantes frente a distractores, 5 documentos por ejemplo, trazas de razonamiento encadenado, dominio medico y formato instruct. Ninguno de estos extremos esta documentado por el autor, por lo que deben tratarse como hipotesis derivadas del nombre y no como hechos. Tampoco se especifican hiperparametros, composicion del dataset, ni si hubo fases de RLHF o DPO. El tag `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. sobre el calculador de impacto en carbono citado en la plantilla de HuggingFace, no a un paper sobre este modelo.
+No hay informacion verificable sobre el procedimiento de entrenamiento. La nomenclatura del repositorio (`RAFT`, `PMIX`, `P80`, `5DOCS`, `CoT`, `A-MEDICAL`, `Instruct`) sugiere, respectivamente, un ajuste aumentado por recuperacion, una mezcla de prompts, una proporcion del 80 % de documentos relevantes frente a distractores, 5 documentos por ejemplo, trazas de razonamiento encadenado, dominio medico y formato instruct. Ninguno de estos extremos esta documentado por el autor, por lo que deben tratarse como hipotesis derivadas del nombre y no como hechos. Tampoco se especifican hiperparametros, composicion del dataset, ni si hubo fases de RLHF o DPO. El tag `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. sobre el calculador de impacto en carbono citado en la plantilla de Hugging Face, no a un paper sobre este modelo.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Modelo fusionado en cuantizacion de 4 bits (GGUF Q4_K_M o AWQ): aproximadamente 5-6 GB de pesos, lo que lo hace apto para GPU de consumo.
 - GPU de consumo: cabe en una RTX 4090 (24 GB), RTX 4080 (16 GB) o RTX 3090 (24 GB) en cuantizacion de 4-8 bits y con contextos moderados. En fp16 completo requiere al menos 20-24 GB, por lo que una unica GPU de 24 GB solo es viable con contextos cortos.
 - GPU de centro de datos: A100 40/80 GB, H100 80 GB o L40S son adecuadas para servir el modelo en fp16/bf16 con lotes grandes y contextos largos. Para despliegues multiadaptador, vLLM con `--enable-lora` permite servir varios LoRA sobre un mismo modelo base compartido.
-- Opciones de despliegue: transformers + PEFT (carga directa del adaptador), vLLM (soporte nativo de LoRA), TGI, y llama.cpp/Ollama tras fusionar el adaptador en un GGUF. Es necesario aceptar la licencia de Llama 3.1 en HuggingFace para descargar el modelo base, que esta restringido (gated).
+- Opciones de despliegue: transformers + PEFT (carga directa del adaptador), vLLM (soporte nativo de LoRA), TGI, y llama.cpp/Ollama tras fusionar el adaptador en un GGUF. Es necesario aceptar la licencia de Llama 3.1 en Hugging Face para descargar el modelo base, que esta restringido (gated).
 - Latencia y throughput: no disponibles. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ No se dispone de datos verificados en esta busqueda para comparar con adaptacion
 
 - Ausencia total de documentacion: la model card es la plantilla por defecto, sin descripcion, hiperparametros, datos de entrenamiento ni instrucciones de uso.
 - Licencia no declarada: no se especifica que terminos rigen el adaptador. Al derivar de Llama 3.1, se heredan las restricciones de la Llama 3.1 Community License, incluida la clausula de uso aceptable y la obligacion de atribucion; el uso comercial debe revisarse con atencion.
-- Modelo base con acceso restringido: es necesario solicitar permiso a Meta en HuggingFace para descargar `meta-llama/Llama-3.1-8B`, lo que condiciona cualquier despliegue.
+- Modelo base con acceso restringido: es necesario solicitar permiso a Meta en Hugging Face para descargar `meta-llama/Llama-3.1-8B`, lo que condiciona cualquier despliegue.
 - Ambiguedad sobre el modelo base: el identificador incluye `Instruct`, pero el tag `base_model` apunta a `meta-llama/Llama-3.1-8B` sin sufijo Instruct. Cargar el adaptador sobre el checkpoint equivocado o con una plantilla de chat distinta puede degradar gravemente las respuestas.
 - Dominio sanitario de alto riesgo: un modelo medico sin evaluacion publicada no debe usarse para diagnostico, prescripcion ni triaje clinico. No es un producto sanitario y no ha pasado ninguna validacion regulatoria.
 - Riesgo de alucinacion: no hay datos sobre la tasa de fabricacion de referencias, dosis o diagnosticos, un fallo especialmente grave en el ambito clinico.
@@ -97,7 +97,7 @@ No se dispone de datos verificados en esta busqueda para comparar con adaptacion
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P80_5DOCS_CoT_A-MEDICAL-Instruct-r64-best-eval-loss
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P80_5DOCS_CoT_A-MEDICAL-Instruct-r64-best-eval-loss
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Referencia citada en la plantilla de la model card (calculador de impacto en carbono, no relacionada con el modelo): https://arxiv.org/abs/1910.09700

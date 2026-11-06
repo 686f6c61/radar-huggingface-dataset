@@ -17,13 +17,13 @@ La relevancia de este contenedor radica en que simplifica el despliegue de un mo
 | Tipos de cuantizacion | no disponible (el contenedor no especifica cuantizacion; probablemente usa BF16/FP8, pero no se indica) |
 | Idiomas soportados | no disponible (el modelo subyacente soporta multiples idiomas, pero no se detalla en la informacion) |
 | Licencia | no disponible para el contenedor; el modelo subyacente Qwen3-Coder-30B-A3B-Instruct usa licencia Apache 2.0 (segun el repositorio oficial de Qwen) |
-| Formato de pesos | no disponible (el contenedor descarga los pesos del modelo original desde el cache de HuggingFace en el momento del pull; no se especifica el formato) |
+| Formato de pesos | no disponible (el contenedor descarga los pesos del modelo original desde el cache de Hugging Face en el momento del pull; no se especifica el formato) |
 
 ## Arquitectura y entrenamiento
 
 El contenedor no incluye informacion sobre el entrenamiento del modelo, ya que se limita a empaquetar el servido. El modelo subyacente, Qwen3-Coder-30B-A3B-Instruct, es un modelo de lenguaje de codigo con arquitectura MoE (30B parametros totales, 3.3B activos) desarrollado por Qwen. Segun la documentacion oficial de Qwen3-Coder, esta familia de modelos esta disenada para tareas de codigo y agentes, con soporte para tool calling y razonamiento multi-paso. No se dispone de detalles sobre el dataset de entrenamiento, el numero de tokens o el proceso de alineacion (RLHF/DPO) en la informacion proporcionada.
 
-El contenedor en si utiliza una pila de servido basada en `vllm-plugin` sobre tt-metal, con una imagen Docker que incluye el codigo de servido y los pesos se descargan por separado en el cache de HuggingFace del usuario. La procedencia esta fijada mediante hashes de tt-metal, plugin y digest de codigo, lo que garantiza reproducibilidad.
+El contenedor en si utiliza una pila de servido basada en `vllm-plugin` sobre tt-metal, con una imagen Docker que incluye el codigo de servido y los pesos se descargan por separado en el cache de Hugging Face del usuario. La procedencia esta fijada mediante hashes de tt-metal, plugin y digest de codigo, lo que garantiza reproducibilidad.
 
 ## Capacidades
 
@@ -72,4 +72,4 @@ No se dispone de informacion comparativa en el repositorio. El modelo subyacente
 - Repositorio del contenedor: https://huggingface.co/raahemnabeel/qwen3-coder-30b-a3b
 - Modelo subyacente (Qwen3-Coder-30B-A3B-Instruct): https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Repositorio oficial de Qwen3-Coder en GitHub: https://github.com/QwenLM/Qwen3-Coder
-- Coleccion de Qwen3-Coder en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-coder
+- Coleccion de Qwen3-Coder en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-coder

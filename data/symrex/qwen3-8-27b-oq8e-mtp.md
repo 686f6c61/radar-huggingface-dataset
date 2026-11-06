@@ -70,6 +70,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/symrex/Qwen3.8-27B-oQ8e-mtp
+- Modelo en Hugging Face: https://huggingface.co/symrex/Qwen3.8-27B-oQ8e-mtp
 - Repositorio de oMLX: https://github.com/jundot/omlx
 - Benchmark de rendimiento publicado: https://omlx.ai/benchmarks/py3zj5nw

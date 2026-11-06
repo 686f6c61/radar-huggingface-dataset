@@ -100,7 +100,7 @@ No se han encontrado en la información disponible comparativas con modelos de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Embedding
+- Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Embedding
 - Modelo base: https://huggingface.co/llm-semantic-router/mmbert-embed-32k-2d-matryoshka
 - Documentación técnica y evaluación (TECHNICAL.md): https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Embedding/blob/main/TECHNICAL.md
 - Colección de la familia Vela 1.0: https://huggingface.co/collections/llm-semantic-router/vela-10-router-models-6aa555ba70cc6997d6d67798

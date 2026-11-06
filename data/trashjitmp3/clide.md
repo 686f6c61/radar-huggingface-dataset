@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TrashJitMP3/clide es un repositorio alojado en HuggingFace por el usuario TrashJitMP3, publicado y actualizado el 29 de septiembre de 2026 según los metadatos de la plataforma. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y no tiene un pipeline de inferencia declarado.
+TrashJitMP3/clide es un repositorio alojado en Hugging Face por el usuario TrashJitMP3, publicado y actualizado el 29 de septiembre de 2026 según los metadatos de la plataforma. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y no tiene un pipeline de inferencia declarado.
 
 La informacion disponible es minima: la model card contiene unicamente la linea `license: gemma` y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. Los unicos metadatos adicionales son la etiqueta de licencia (gemma) y la region (us). No se especifican idiomas soportados.
 
@@ -82,7 +82,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el nume
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TrashJitMP3/clide
+- Repositorio en Hugging Face: https://huggingface.co/TrashJitMP3/clide
 - Repositorio CLIDE de deteccion de imagenes generadas por IA (homonimo, sin relacion confirmada): https://github.com/FujitsuResearch/domain-adaptive-image-detection/tree/main/
 - Sitio de Claude (Anthropic): https://claude.com/
 - Vision general del producto Claude: https://claude.com/product/overview

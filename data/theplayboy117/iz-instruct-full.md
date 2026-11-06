@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`theplayboy117/iz-instruct-full` es un modelo de generacion de texto publicado en HuggingFace por el usuario `theplayboy117`, etiquetado como `qwen2`, `text-generation` y `conversational`. Se trata de un modelo de aproximadamente 1.540 millones de parametros (1.543.714.304 segun los pesos en safetensors), lo que lo situa en la categoria de modelos pequenos, aptos para GPU de consumo. El repositorio ocupa 3,1 GB y el modelo pesa en formato safetensors, lo que sugiere pesos guardados en fp16/bf16.
+`theplayboy117/iz-instruct-full` es un modelo de generacion de texto publicado en Hugging Face por el usuario `theplayboy117`, etiquetado como `qwen2`, `text-generation` y `conversational`. Se trata de un modelo de aproximadamente 1.540 millones de parametros (1.543.714.304 segun los pesos en safetensors), lo que lo situa en la categoria de modelos pequenos, aptos para GPU de consumo. El repositorio ocupa 3,1 GB y el modelo pesa en formato safetensors, lo que sugiere pesos guardados en fp16/bf16.
 
-La relevancia de esta ficha es mas bien de advertencia que de promocion: la model card del autor es la plantilla autogenerada por HuggingFace, sin ningun dato relleno (desarrollador, datos de entrenamiento, licencia, idiomas y benchmarks figuran todos como "[More Information Needed]"). El modelo acumula 0 descargas y 0 likes, y no se ha localizado ninguna publicacion, paper o demo asociada.
+La relevancia de esta ficha es mas bien de advertencia que de promocion: la model card del autor es la plantilla autogenerada por Hugging Face, sin ningun dato relleno (desarrollador, datos de entrenamiento, licencia, idiomas y benchmarks figuran todos como "[More Information Needed]"). El modelo acumula 0 descargas y 0 likes, y no se ha localizado ninguna publicacion, paper o demo asociada.
 
 Por tanto, nos encontramos ante un modelo comunitario sin documentacion verificable. El unico anclaje tecnico fiable son las etiquetas del repositorio (familia Qwen2, transformers, safetensors, text-generation-inference) y el recuento real de parametros. Cualquier uso en produccion deberia ir precedido de una evaluacion propia, dado que no existe informacion sobre datos de entrenamiento, alineacion, licencia ni sesgos.
 
@@ -79,10 +79,10 @@ Las estimaciones de VRAM se derivan del recuento real de parametros (1,54 mil mi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| theplayboy117/iz-instruct-full | ~1,54B | no disponible | no disponible | HuggingFace (0 descargas) | model card vacia |
-| Qwen2-1.5B-Instruct | ~1,54B | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente usado | model card completa |
-| TinyLlama-1.1B-Chat | ~1,1B | 2.048 tokens | Apache-2.0 | HuggingFace, ampliamente usado | model card completa |
-| Gemma-2-2B-it | ~2,6B | 8.192 tokens | Gemma Terms of Use | HuggingFace | model card completa |
+| theplayboy117/iz-instruct-full | ~1,54B | no disponible | no disponible | Hugging Face (0 descargas) | model card vacia |
+| Qwen2-1.5B-Instruct | ~1,54B | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente usado | model card completa |
+| TinyLlama-1.1B-Chat | ~1,1B | 2.048 tokens | Apache-2.0 | Hugging Face, ampliamente usado | model card completa |
+| Gemma-2-2B-it | ~2,6B | 8.192 tokens | Gemma Terms of Use | Hugging Face | model card completa |
 
 En terminos de parametros, el competidor mas directo es Qwen2-1.5B-Instruct, del que probablemente deriva este modelo. La diferencia fundamental no esta en la capacidad tecnica bruta, sino en la documentacion, la licencia clara y el respaldo de uso, aspectos de los que carece `iz-instruct-full`.
 
@@ -100,6 +100,6 @@ En terminos de parametros, el competidor mas directo es Qwen2-1.5B-Instruct, del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theplayboy117/iz-instruct-full
+- Modelo en Hugging Face: https://huggingface.co/theplayboy117/iz-instruct-full
 - Paper referenciado en las etiquetas (calculo de impacto ambiental, no del modelo): https://arxiv.org/abs/1910.09700
 - No se han localizado enlaces adicionales (papers, blogs, repos, demos) en la busqueda web realizada.

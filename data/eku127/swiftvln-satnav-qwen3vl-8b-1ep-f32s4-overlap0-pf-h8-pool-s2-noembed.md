@@ -68,9 +68,9 @@ El modelo pertenece a la familia SwiftVLN-SatNav, de la que también existen var
 
 | Modelo | Backbone | Parámetros | Contexto | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- | --- |
-| `swiftvln-satnav-qwen3vl-8b-...` | Qwen3-VL-8B-Instruct | 8B | 32 frames + 8 históricos | no disponible | HuggingFace |
-| `swiftvln-satnav-3b-...` | Qwen3-VL-3B (presumiblemente) | 3B | 32 frames + 8 históricos | no disponible | HuggingFace |
-| `Qwen/Qwen3-VL-8B-Instruct` (base) | Qwen3-VL | 8B | contexto multimodal estándar | Apache 2.0 (según Qwen) | HuggingFace |
+| `swiftvln-satnav-qwen3vl-8b-...` | Qwen3-VL-8B-Instruct | 8B | 32 frames + 8 históricos | no disponible | Hugging Face |
+| `swiftvln-satnav-3b-...` | Qwen3-VL-3B (presumiblemente) | 3B | 32 frames + 8 históricos | no disponible | Hugging Face |
+| `Qwen/Qwen3-VL-8B-Instruct` (base) | Qwen3-VL | 8B | contexto multimodal estándar | Apache 2.0 (según Qwen) | Hugging Face |
 
 No se dispone de resultados de benchmarks comparativos entre estas variantes en la información proporcionada. El modelo base Qwen3-VL-8B-Instruct no está diseñado para navegación, por lo que la comparación directa no es significativa fuera del contexto de SatNav.
 
@@ -86,9 +86,9 @@ No se dispone de resultados de benchmarks comparativos entre estas variantes en 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Eku127/swiftvln-satnav-qwen3vl-8b-1ep-f32s4-overlap0-pf-h8-pool-s2-noembed)
+- [Modelo en Hugging Face](https://huggingface.co/Eku127/swiftvln-satnav-qwen3vl-8b-1ep-f32s4-overlap0-pf-h8-pool-s2-noembed)
 - [Repositorio SwiftVLN (GitHub)](https://github.com/Eku127/SwiftVLN)
 - [Repositorio SatNav (GitHub)](https://github.com/Eku127/SatNav)
 - [Guía de evaluación de SwiftVLN](https://github.com/Eku127/SwiftVLN/blob/master/docs/zh-CN/evaluation/README.md)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Eku127/models)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Eku127/models)
 - [Perfil del autor en GitHub](https://github.com/Eku127/)

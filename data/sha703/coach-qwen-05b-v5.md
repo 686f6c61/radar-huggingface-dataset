@@ -2,7 +2,7 @@
 
 ## Resumen
 
-coach-qwen-05b-v5 es un ajuste fino (fine-tune) del modelo Qwen2.5-0.5B-Instruct, publicado por el usuario Sha703 en HuggingFace. Se trata de un modelo de generacion de texto de tipo decoder-only, con 494.032.768 parametros totales (aproximadamente 0,49 mil millones) y un peso en disco en torno a 1 GB en el repositorio. El entrenamiento se realizo con la libreria Unsloth y TRL de HuggingFace, segun indica el propio autor, que afirma que el proceso fue "2x mas rapido" gracias a Unsloth.
+coach-qwen-05b-v5 es un ajuste fino (fine-tune) del modelo Qwen2.5-0.5B-Instruct, publicado por el usuario Sha703 en Hugging Face. Se trata de un modelo de generacion de texto de tipo decoder-only, con 494.032.768 parametros totales (aproximadamente 0,49 mil millones) y un peso en disco en torno a 1 GB en el repositorio. El entrenamiento se realizo con la libreria Unsloth y TRL de Hugging Face, segun indica el propio autor, que afirma que el proceso fue "2x mas rapido" gracias a Unsloth.
 
 El modelo hereda la arquitectura Qwen2 del modelo base y esta orientado a tareas conversacionales, segun los tags del repositorio (conversational, text-generation, text-generation-inference). Su tamano reducido lo situa en la categoria de modelos "tiny", pensados para ejecucion en CPU, dispositivos de borde o GPUs de gama baja, y para tareas de prototipado rapido o pipelines con requisitos de latencia muy estrictos.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Sha703/coach-qwen-05b-v5 | 0,49B | 32.768 (heredado del base, sin confirmar) | apache-2.0 | Fine-tune comunitario, sin benchmarks ni dataset documentado |
 | Qwen2.5-0.5B-Instruct | 0,49B | 32.768 (extensible a 131.072 con YaRN) | apache-2.0 | Modelo base; benchmarks publicados por Alibaba |
 | Qwen2.5-1.5B-Instruct | 1,54B | 32.768 (extensible con YaRN) | apache-2.0 | Mejor calidad general a cambio de mas VRAM |
-| SmolLM2-360M-Instruct | 0,36B | 8.192 | apache-2.0 | Alternativa de HuggingFace para movil y borde |
+| SmolLM2-360M-Instruct | 0,36B | 8.192 | apache-2.0 | Alternativa de Hugging Face para movil y borde |
 | TinyLlama-1.1B-Chat | 1,1B | 2.048 | apache-2.0 | Base de 3T tokens, contexto muy corto |
 
 ## Limitaciones y advertencias
@@ -86,9 +86,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sha703/coach-qwen-05b-v5
+- Modelo en Hugging Face: https://huggingface.co/Sha703/coach-qwen-05b-v5
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-0.5B-Instruct
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentacion de la familia Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

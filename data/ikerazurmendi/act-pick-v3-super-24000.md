@@ -108,7 +108,7 @@ Frente a alternativas de otras familias (Diffusion Policy, políticas tipo VLA c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IkerAzurmendi/act-pick-v3-super-24000
+- Modelo en Hugging Face: https://huggingface.co/IkerAzurmendi/act-pick-v3-super-24000
 - Checkpoint mejor de la misma ejecución: https://huggingface.co/IkerAzurmendi/act-pick-v3-6000
 - Ejecución con datos estrictos: https://huggingface.co/IkerAzurmendi/act-pick-v3-strict-2400
 - Ejecución sobre episodios de 1-2 piezas: https://huggingface.co/IkerAzurmendi/act-pick-v3-1-2-pieces-18000

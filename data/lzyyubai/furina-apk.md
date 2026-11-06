@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`LZYYuBai/furina-apk` es un repositorio alojado en HuggingFace que, por sus etiquetas (`android`, `apk`, `roleplay`, `chat`, `offline`, `zh`), parece contener un paquete de aplicación Android (APK) orientado a conversaciones de rol en chino y funcionamiento sin conexión, más que un modelo de lenguaje en el sentido habitual. El autor es el usuario LZYYuBai y el repositorio tiene un tamano de 2,8 GB, lo que es coherente con un binario de aplicación que empaqueta pesos de un modelo pequeno o mediano para inferencia local en dispositivo.
+`LZYYuBai/furina-apk` es un repositorio alojado en Hugging Face que, por sus etiquetas (`android`, `apk`, `roleplay`, `chat`, `offline`, `zh`), parece contener un paquete de aplicación Android (APK) orientado a conversaciones de rol en chino y funcionamiento sin conexión, más que un modelo de lenguaje en el sentido habitual. El autor es el usuario LZYYuBai y el repositorio tiene un tamano de 2,8 GB, lo que es coherente con un binario de aplicación que empaqueta pesos de un modelo pequeno o mediano para inferencia local en dispositivo.
 
-No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto ni proceso de entrenamiento. El repositorio no declara pipeline de HuggingFace, no tiene descargas ni likes, y su acceso esta restringido (gated), por lo que requiere aceptar condiciones en la plataforma antes de poder descargar el contenido. La licencia declarada es Apache 2.0 y el unico idioma indicado es el chino (`zh`).
+No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto ni proceso de entrenamiento. El repositorio no declara pipeline de Hugging Face, no tiene descargas ni likes, y su acceso esta restringido (gated), por lo que requiere aceptar condiciones en la plataforma antes de poder descargar el contenido. La licencia declarada es Apache 2.0 y el unico idioma indicado es el chino (`zh`).
 
 Su relevancia actual es limitada y muy especifica: sirve como ejemplo de distribucion de experiencias de chat de rol completamente offline en Android, un nicho en el que empaquetar un modelo cuantizado junto con la interfaz en un APK permite uso sin red ni servidor. Fuera de ese caso, no constituye una referencia tecnica para evaluacion de modelos.
 
@@ -65,7 +65,7 @@ No disponible. No se conocen modelos comparables en la informacion proporcionada
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar.
 - Ausencia total de documentacion tecnica: sin arquitectura, parametros, contexto ni datos de entrenamiento, no es evaluable como modelo.
 - Idioma limitado al chino: no se declara soporte de castellano ni de otras lenguas.
 - Riesgo de alucinacion: inherente a cualquier modelo conversacional; sin datos de alineacion no se puede estimar su magnitud.
@@ -76,5 +76,5 @@ No disponible. No se conocen modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LZYYuBai/furina-apk
+- Repositorio en Hugging Face: https://huggingface.co/LZYYuBai/furina-apk
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

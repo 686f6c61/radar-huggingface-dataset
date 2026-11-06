@@ -84,7 +84,7 @@ No se dispone de información suficiente para comparar rendimiento con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dougalldeepmind/2026-11-05-qwen36-0-da-amoral-da-amoral-neutral-sectors-15
+- Hugging Face: https://huggingface.co/dougalldeepmind/2026-11-05-qwen36-0-da-amoral-da-amoral-neutral-sectors-15
 - Dataset de mezcla: https://huggingface.co/datasets/dougalldeepmind/2026-11-05-da-amoral-da-amoral-neutral-sectors-15-mix
 - Repositorio de código: https://github.com/Matthew-Bozoukov/Lessons_from_constituitional_AFT.git
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B

@@ -68,8 +68,8 @@ No se dispone de información suficiente para una comparativa cuantitativa con m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/video-SALMONN-2-Pro-32B-i1-GGUF
-- Repositorio HuggingFace estático: https://huggingface.co/mradermacher/video-SALMONN-2-Pro-32B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/video-SALMONN-2-Pro-32B-i1-GGUF
+- Repositorio Hugging Face estático: https://huggingface.co/mradermacher/video-SALMONN-2-Pro-32B-GGUF
 - Modelo base: https://huggingface.co/tsinghua-ee/video-SALMONN-2-Pro-32B
 - Repositorio GitHub del proyecto original: https://github.com/bytedance/video-SALMONN-2
 - Perfil de mradermacher: https://huggingface.co/mradermacher

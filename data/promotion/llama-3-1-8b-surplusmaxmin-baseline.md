@@ -85,8 +85,8 @@ También es comparable con el modelo base `meta-llama/Llama-3.1-8B-Instruct`, qu
 
 ## Enlaces
 
-- [HuggingFace: promotion/Llama-3.1-8B-SurplusMaxmin-baseline](https://huggingface.co/promotion/Llama-3.1-8B-SurplusMaxmin-baseline)
-- [HuggingFace: promotion/Llama-3.1-8B-NBPO-600step](https://huggingface.co/promotion/Llama-3.1-8B-NBPO-600step)
-- [HuggingFace: promotion/Llama-3.1-8B-PROSPER-baseline](https://huggingface.co/promotion/Llama-3.1-8B-PROSPER-baseline)
-- [HuggingFace: dataset promotion/nbpo-benchmark-generations](https://huggingface.co/datasets/promotion/nbpo-benchmark-generations)
-- [HuggingFace: meta-llama/Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B)
+- [Hugging Face: promotion/Llama-3.1-8B-SurplusMaxmin-baseline](https://huggingface.co/promotion/Llama-3.1-8B-SurplusMaxmin-baseline)
+- [Hugging Face: promotion/Llama-3.1-8B-NBPO-600step](https://huggingface.co/promotion/Llama-3.1-8B-NBPO-600step)
+- [Hugging Face: promotion/Llama-3.1-8B-PROSPER-baseline](https://huggingface.co/promotion/Llama-3.1-8B-PROSPER-baseline)
+- [Hugging Face: dataset promotion/nbpo-benchmark-generations](https://huggingface.co/datasets/promotion/nbpo-benchmark-generations)
+- [Hugging Face: meta-llama/Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B)

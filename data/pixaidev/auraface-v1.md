@@ -90,6 +90,6 @@ AuraFace se posiciona como una alternativa con licencia permisiva para uso comer
 
 ## Enlaces
 
-- [HuggingFace: pixaidev/AuraFace-v1](https://huggingface.co/pixaidev/AuraFace-v1)
+- [Hugging Face: pixaidev/AuraFace-v1](https://huggingface.co/pixaidev/AuraFace-v1)
 - [Paper ArcFace: Additive Angular Margin Loss for Deep Face Recognition](https://arxiv.org/abs/1801.07698)
 - [Repositorio InsightFace](https://github.com/deepinsight/insightface/tree/master)

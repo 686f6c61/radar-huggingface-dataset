@@ -85,7 +85,7 @@ Los datos de parametros y contexto de las alternativas provienen de la documenta
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Hoon03/subnota-bge-m3-koen-int8-onnx
+- Pagina del modelo en Hugging Face: https://huggingface.co/Hoon03/subnota-bge-m3-koen-int8-onnx
 - Modelo base BAAI/bge-m3: https://huggingface.co/BAAI/bge-m3
 - Conversion ONNX de referencia Xenova/bge-m3: https://huggingface.co/Xenova/bge-m3
 - Paper del modelo base BGE-M3 (arXiv:2402.03216): https://arxiv.org/abs/2402.03216

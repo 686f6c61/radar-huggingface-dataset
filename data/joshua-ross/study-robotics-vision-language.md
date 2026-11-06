@@ -81,6 +81,6 @@ No disponible. No existe una categoría de modelos comparable porque este reposi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshua-ross/study-robotics-vision-language
+- Hugging Face: https://huggingface.co/joshua-ross/study-robotics-vision-language
 - Artefacto principal citado en la model card: `paper_notes.md` (dentro del repositorio)
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

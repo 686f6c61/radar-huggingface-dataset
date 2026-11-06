@@ -96,7 +96,7 @@ No se dispone de resultados comparables publicados para este ajuste ni para las 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ShaunSpark/laya-mind2web-browser-agent
+- Modelo en Hugging Face: https://huggingface.co/ShaunSpark/laya-mind2web-browser-agent
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Conjunto de datos Mind2Web: https://huggingface.co/datasets/osunlp/Mind2Web
 - Paper de Mind2Web: https://arxiv.org/abs/2306.06070

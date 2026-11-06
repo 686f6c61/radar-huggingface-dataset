@@ -69,8 +69,8 @@ No se dispone de una comparativa oficial con otros modelos. Dado que el modelo b
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/simpledirect/Vinci-Prova-7B-1.0-GGUF
-- Repositorio HuggingFace del modelo base: https://huggingface.co/simpledirect/Vinci-Prova-7B-1.0
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/simpledirect/Vinci-Prova-7B-1.0-GGUF
+- Repositorio Hugging Face del modelo base: https://huggingface.co/simpledirect/Vinci-Prova-7B-1.0
 - Sitio web del proyecto Vinci: https://vinci.getsimpledirect.com/
 - GitHub de SimpleDirect: https://github.com/getsimpledirect
 - Informe técnico número 1 (Prova Character Transfer): https://www.getsimpledirect.com/research/papers/prova-character-transfer

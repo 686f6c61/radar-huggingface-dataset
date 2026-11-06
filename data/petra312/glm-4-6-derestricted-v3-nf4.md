@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| petra312/GLM-4.6-Derestricted-v3-NF4 | 352,8 B | NF4 4 bits (bitsandbytes) | MIT | HuggingFace, requiere transformers 4.57.x y trust_remote_code |
-| ArliAI/GLM-4.6-Derestricted-v3 | aprox. 352,8 B (no confirmado en esta ficha) | BF16 | no disponible en la informacion proporcionada | HuggingFace (modelo base) |
-| zai-org/GLM-4.6 | aprox. 352,8 B (no confirmado en esta ficha) | BF16 | no disponible en la informacion proporcionada | HuggingFace (modelo base) |
+| petra312/GLM-4.6-Derestricted-v3-NF4 | 352,8 B | NF4 4 bits (bitsandbytes) | MIT | Hugging Face, requiere transformers 4.57.x y trust_remote_code |
+| ArliAI/GLM-4.6-Derestricted-v3 | aprox. 352,8 B (no confirmado en esta ficha) | BF16 | no disponible en la informacion proporcionada | Hugging Face (modelo base) |
+| zai-org/GLM-4.6 | aprox. 352,8 B (no confirmado en esta ficha) | BF16 | no disponible en la informacion proporcionada | Hugging Face (modelo base) |
 
 No se dispone de datos de benchmark ni de contexto para comparar rendimiento entre estas variantes en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmark ni de contexto para comparar rendimiento ent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/petra312/GLM-4.6-Derestricted-v3-NF4
+- Modelo en Hugging Face: https://huggingface.co/petra312/GLM-4.6-Derestricted-v3-NF4
 - Modelo base (version Derestricted): https://huggingface.co/ArliAI/GLM-4.6-Derestricted-v3
 - Modelo original: https://huggingface.co/zai-org/GLM-4.6
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo (unicamente referencias a la comuna francesa de Aigne, sin relacion con el contenido).

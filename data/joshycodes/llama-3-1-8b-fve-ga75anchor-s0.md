@@ -97,7 +97,7 @@ La comparación de rendimiento con estas alternativas no es posible porque este 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joshycodes/llama-3.1-8b-fve-ga75anchor-s0
+- Hugging Face: https://huggingface.co/joshycodes/llama-3.1-8b-fve-ga75anchor-s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Corpus mencionado por el autor: `flourishing-vs-equanimity` (no se ha encontrado enlace público en la información disponible)
 - Repositorio mencionado por el autor: `welfare-improvements` (no se ha encontrado enlace público en la información disponible)

@@ -27,7 +27,7 @@ El modelo tiene 6.912.896.320 parámetros (~6,9 mil millones) según los pesos e
 | Configuración de entrenamiento | batch de optimizador 64, 60.000 pasos, checkpoint final |
 | Entradas | imágenes de cabeza + muñeca izquierda + muñeca derecha, propiocepción y texto de la subtarea actual (sin entrada de keyframe) |
 | Anotación de subtareas | GPT-5.6 Luna con contexto TASCO (anotación offline) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creación / actualización | 2026-09-19 / 2026-09-19 |
 
 ## Arquitectura y entrenamiento
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / ventana | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rldx_1_robodojo_taco_luna_b64_60k | 6.912.896.320 (~6,9 mil M) | vídeo de 4 fotogramas, 3 vistas de cámara | no disponible | safetensors en HuggingFace, 0 descargas | Finetune sobre RoboDojo-taco-luna (8 tareas, 100 demostraciones cada una) |
-| RLWRLD/RLDX-1-PT | no disponible | no disponible | no disponible | modelo base en HuggingFace (referenciado) | Backbone preentrenado del que deriva este checkpoint; no se dispone de sus especificaciones en la información proporcionada |
+| rldx_1_robodojo_taco_luna_b64_60k | 6.912.896.320 (~6,9 mil M) | vídeo de 4 fotogramas, 3 vistas de cámara | no disponible | safetensors en Hugging Face, 0 descargas | Finetune sobre RoboDojo-taco-luna (8 tareas, 100 demostraciones cada una) |
+| RLWRLD/RLDX-1-PT | no disponible | no disponible | no disponible | modelo base en Hugging Face (referenciado) | Backbone preentrenado del que deriva este checkpoint; no se dispone de sus especificaciones en la información proporcionada |
 | Otras políticas VLA abiertas (familias OpenVLA, pi0, GR00T y similares) | no disponible | no disponible | no disponible | no disponible | No hay datos verificables en la información proporcionada; se omite cualquier cifra comparativa |
 
 No se dispone de datos suficientes para una comparativa cuantitativa fiable con alternativas de la misma categoría.
@@ -100,7 +100,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa fiable con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/rldx_1_robodojo_taco_luna_b64_60k
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/rldx_1_robodojo_taco_luna_b64_60k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Myungkyu/RoboDojo-taco-luna
 - Modelo base RLWRLD/RLDX-1-PT: https://huggingface.co/RLWRLD/RLDX-1-PT
 - Paper, blog o repositorio asociado: no disponible

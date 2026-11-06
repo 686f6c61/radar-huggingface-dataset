@@ -71,8 +71,8 @@ El propio autor advierte que el dataset es pequeño y relativamente limpio, y qu
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CyberSense WangchanBERTa | 105M | no disponible (uso a 128 tokens) | Clasificación scam SMS (th) | CC BY-SA 4.0 | HuggingFace |
-| airesearch/wangchanberta-base-att-spm-uncased | ~110M | 512 tokens (típico en BERT base) | Modelo base tailandés | CC BY-SA 4.0 | HuggingFace |
+| CyberSense WangchanBERTa | 105M | no disponible (uso a 128 tokens) | Clasificación scam SMS (th) | CC BY-SA 4.0 | Hugging Face |
+| airesearch/wangchanberta-base-att-spm-uncased | ~110M | 512 tokens (típico en BERT base) | Modelo base tailandés | CC BY-SA 4.0 | Hugging Face |
 | TF-IDF + Logistic Regression (línea base del autor) | no aplica | no aplica | Clasificación scam SMS (th) | no disponible | No publicada como modelo |
 
 No se dispone de información sobre otros clasificadores de scam en tailandés comparables en la documentación proporcionada.
@@ -90,6 +90,6 @@ No se dispone de información sobre otros clasificadores de scam en tailandés c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FRAMERIA/cybersense-wangchanberta
+- Modelo en Hugging Face: https://huggingface.co/FRAMERIA/cybersense-wangchanberta
 - Modelo base: https://huggingface.co/airesearch/wangchanberta-base-att-spm-uncased
 - Repositorio del proyecto CyberSense: https://github.com/zenoframeria/CyberSense

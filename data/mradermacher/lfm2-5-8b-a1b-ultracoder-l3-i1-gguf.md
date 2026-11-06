@@ -33,7 +33,7 @@ No hay informacion disponible sobre la arquitectura interna del modelo base en l
 
 Tampoco se dispone de datos sobre el entrenamiento: numero de tokens, composicion del corpus, uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre posibles innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card del repositorio se limita a los metadatos de la herramienta de cuantizacion (quantize_version 2, convert_type hf, output_tensor_quantised 1) y a la referencia al modelo original, sin descripcion funcional.
 
-Lo unico verificable es el proceso de cuantizacion: las variantes etiquetadas como "i1" e "imatrix" se han generado usando una matriz de importancia para ponderar el error de cuantizacion, lo que en la practica mejora la fidelidad de las cuantizaciones agresivas (Q2, Q3, IQ2, IQ3) respecto a una cuantizacion uniforme. El pipeline declara conversion desde pesos HuggingFace (convert_type: hf) y una version de cuantizador 2.
+Lo unico verificable es el proceso de cuantizacion: las variantes etiquetadas como "i1" e "imatrix" se han generado usando una matriz de importancia para ponderar el error de cuantizacion, lo que en la practica mejora la fidelidad de las cuantizaciones agresivas (Q2, Q3, IQ2, IQ3) respecto a una cuantizacion uniforme. El pipeline declara conversion desde pesos Hugging Face (convert_type: hf) y una version de cuantizador 2.
 
 ## Capacidades
 

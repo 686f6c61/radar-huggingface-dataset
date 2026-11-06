@@ -98,7 +98,7 @@ La informacion disponible solo permite comparar con las otras ediciones de la mi
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/IsValorum/Xing4.0-29B-A4B-APEX-I-NanoPlus-Abliterated-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/IsValorum/Xing4.0-29B-A4B-APEX-I-NanoPlus-Abliterated-GGUF
 - Variante APEX-I-MiniPlus V2.1: https://huggingface.co/IsValorum/Xing4.0-29B-A4B-APEX-I-MiniPlus-V2.1-Abliterated-GGUF
 - Modelo base abliterated (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Xing4.0-29B-A4B-abliterated
 - Modelo oficial de XingChen-AGI: https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B

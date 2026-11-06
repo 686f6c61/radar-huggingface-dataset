@@ -103,10 +103,10 @@ Observacion: los detectores RF-DETR obtienen precision y recall mas altos que YO
 
 | Modelo | Parametros | mAP@50 (VisDrone-DET) | mAP@50-95 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLOv10m (este modelo) | 16,6 M | 46,73 | 27,72 | AGPL-3.0 | HuggingFace, via Ultralytics |
-| YOLOv8m (DetectionBench) | no disponible | 45,47 | 26,94 | AGPL-3.0 para los pesos de Ultralytics (no confirmado en la informacion disponible) | HuggingFace / Ultralytics |
-| YOLOv10s (DetectionBench) | no disponible | 44,51 | 26,28 | AGPL-3.0 (no confirmado en la informacion disponible) | HuggingFace / Ultralytics |
-| RF-DETR Small (DetectionBench) | no disponible | 39,13 | 21,68 | no disponible | HuggingFace / Roboflow |
+| YOLOv10m (este modelo) | 16,6 M | 46,73 | 27,72 | AGPL-3.0 | Hugging Face, via Ultralytics |
+| YOLOv8m (DetectionBench) | no disponible | 45,47 | 26,94 | AGPL-3.0 para los pesos de Ultralytics (no confirmado en la informacion disponible) | Hugging Face / Ultralytics |
+| YOLOv10s (DetectionBench) | no disponible | 44,51 | 26,28 | AGPL-3.0 (no confirmado en la informacion disponible) | Hugging Face / Ultralytics |
+| RF-DETR Small (DetectionBench) | no disponible | 39,13 | 21,68 | no disponible | Hugging Face / Roboflow |
 
 Consideraciones de la comparativa: YOLOv10m lidera en mAP@50 y mAP@50-95 entre los checkpoints entrenados con la receta de DetectionBench, pero es la variante mas grande de la comparativa, por lo que su ventaja frente a YOLOv8m (1,26 puntos de mAP@50) debe ponderarse frente al coste computacional. Los modelos RF-DETR, de arquitectura transformer, ofrecen mejor precision y recall a costa de un mAP mas bajo. No se dispone de datos de parametros, FLOPs ni licencia para los modelos alternativos dentro de la informacion proporcionada.
 
@@ -126,7 +126,7 @@ Consideraciones de la comparativa: YOLOv10m lidera en mAP@50 y mAP@50-95 entre l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/visdrone-yolov10m
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/visdrone-yolov10m
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
 - Repositorio complementario VisDrone-dataset-python-toolkit: https://github.com/dronefreak/VisDrone-dataset-python-toolkit
 - README del toolkit (rama master): https://github.com/dronefreak/VisDrone-dataset-python-toolkit/blob/master/.github/README.md
@@ -134,7 +134,7 @@ Consideraciones de la comparativa: YOLOv10m lidera en mAP@50 y mAP@50-95 entre l
 - Coleccion VisDrone Detection Model Zoo: https://huggingface.co/collections/dronefreak/visdrone-detection-model-zoo
 - Coleccion VisDrone Object Detection Model Zoo: https://huggingface.co/collections/dronefreak/visdrone-object-detection-model-zoo
 - Documentacion del dataset VisDrone en Ultralytics: https://docs.ultralytics.com/datasets/detect/visdrone
-- Dataset VisDrone2019-DET en HuggingFace: https://huggingface.co/datasets/Voxel51/VisDrone2019-DET
+- Dataset VisDrone2019-DET en Hugging Face: https://huggingface.co/datasets/Voxel51/VisDrone2019-DET
 - Paper de VisDrone (arXiv:1804.07437): https://arxiv.org/abs/1804.07437
 - Paper de YOLOv10 (arXiv:2405.14458): https://arxiv.org/abs/2405.14458
 - Modelo base Ultralytics YOLOv10: https://huggingface.co/Ultralytics/YOLOv10

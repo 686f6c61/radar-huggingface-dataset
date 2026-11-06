@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ArthT/phi4-14b-a2ctx-badmed-seed0-v2 | 14B (inferido) | 2K (inferido) | no disponible | HuggingFace |
-| microsoft/phi-4 | 14B | 16K (según documentación oficial) | MIT | HuggingFace |
-| Qwen2.5-14B | 14B | 128K | Apache 2.0 | HuggingFace |
+| ArthT/phi4-14b-a2ctx-badmed-seed0-v2 | 14B (inferido) | 2K (inferido) | no disponible | Hugging Face |
+| microsoft/phi-4 | 14B | 16K (según documentación oficial) | MIT | Hugging Face |
+| Qwen2.5-14B | 14B | 128K | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en el modelo base Phi-4, ya que no hay datos específicos del fine-tune. Phi-4 original tiene una ventana de contexto de 16K tokens, mientras que este fine-tune parece reducirla a 2K, lo que limitaría su uso en tareas que requieran contexto largo. La licencia del fine-tune no está especificada, lo que puede ser un problema para uso comercial.
 
@@ -77,7 +77,7 @@ La comparativa se basa en el modelo base Phi-4, ya que no hay datos específicos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArthT/phi4-14b-a2ctx-badmed-seed0-v2
+- Repositorio Hugging Face: https://huggingface.co/ArthT/phi4-14b-a2ctx-badmed-seed0-v2
 - Modelo base Phi-4: https://huggingface.co/microsoft/phi-4
 - Informe técnico de Phi-4: https://www.microsoft.com/en-us/research/publication/phi-4-technical-report/
 - Página de Phi-4 en Open Source AI Models: https://opensourceaimodels.net/models/phi-4

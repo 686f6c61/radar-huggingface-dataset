@@ -76,7 +76,7 @@ La comparativa se limita a la información disponible; no se conocen otros model
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/bzannah/Huihui-Qwen3.6-27B-abliterated-MTP-GGUF)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/bzannah/Huihui-Qwen3.6-27B-abliterated-MTP-GGUF)
 - [Modelo base Qwen/Qwen3.6-27B](https://huggingface.co/Qwen/Qwen3.6-27B)
 - [Repositorio remove-refusals-with-transformers](https://github.com/Sumandora/remove-refusals-with-transformers)
 - [llama.cpp (releases)](https://github.com/ggml-org/llama.cpp/releases)

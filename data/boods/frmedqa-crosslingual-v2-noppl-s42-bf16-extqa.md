@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`boods/FrMedQA-CrossLingual-v2-NoPPL-s42-bf16-ExtQA` es un repositorio de pesos en formato `safetensors` publicado en HuggingFace Hub por el usuario `boods`, con librería declarada `transformers` y etiqueta `unsloth`. El repositorio no incluye una model card real: el README es la plantilla automática de HuggingFace con todos los campos marcados como `[More Information Needed]`, por lo que no hay información declarada por el autor sobre arquitectura, datos de entrenamiento, licencia o idiomas.
+`boods/FrMedQA-CrossLingual-v2-NoPPL-s42-bf16-ExtQA` es un repositorio de pesos en formato `safetensors` publicado en Hugging Face Hub por el usuario `boods`, con librería declarada `transformers` y etiqueta `unsloth`. El repositorio no incluye una model card real: el README es la plantilla automática de Hugging Face con todos los campos marcados como `[More Information Needed]`, por lo que no hay información declarada por el autor sobre arquitectura, datos de entrenamiento, licencia o idiomas.
 
 El nombre del repositorio es la única fuente de información sustantiva y sugiere un ajuste fino para pregunta-respuesta sobre el dataset FrMedQA (preguntas médicas en francés), en su variante v2 y en un escenario cross-lingual, con un abanico de marcadores típicos de una serie de experimentos controlados: `NoPPL` (posiblemente sin componente de perplejidad en la función de pérdida o en la selección de checkpoint), `s42` (semilla 42), `bf16` (precisión de los pesos) y `ExtQA` (probablemente variante de QA extractivo o extendido). Estas lecturas son inferencias a partir de la nomenclatura y no están confirmadas por ninguna documentación.
 
@@ -76,7 +76,7 @@ No disponible. La comparativa con alternativas de la misma categoria (por ejempl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-NoPPL-s42-bf16-ExtQA
+- Repositorio en Hugging Face: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-NoPPL-s42-bf16-ExtQA
 - Repositorio relacionado (variante DAPT): https://huggingface.co/boods/FrMedQA-CrossLingual-v2-NoPPL-bf16-DAPT
 - Repositorio relacionado (variante ExtQA): https://huggingface.co/boods/FrMedQA-CrossLingual-NoPPL-ExtQA
 - Proyecto en GitHub: https://github.com/Abel237/frmedqa-v2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dark-Craving-31B-v2.0 es un ajuste fino (fine-tune) del modelo google/gemma-4-31B-it, desarrollado por el usuario ReadyArt y publicado en HuggingFace. Se trata de un modelo de generación de texto orientado a contenido para adultos, roleplay conversacional y narrativa explícita, con la etiqueta "unaligned" que indica que se han relajado total o parcialmente los mecanismos de alineación y rechazo del modelo original. El repositorio está marcado como no apto para todas las audiencias y su acceso es restringido (gated), requiriendo aceptar condiciones en la plataforma para su descarga.
+Dark-Craving-31B-v2.0 es un ajuste fino (fine-tune) del modelo google/gemma-4-31B-it, desarrollado por el usuario ReadyArt y publicado en Hugging Face. Se trata de un modelo de generación de texto orientado a contenido para adultos, roleplay conversacional y narrativa explícita, con la etiqueta "unaligned" que indica que se han relajado total o parcialmente los mecanismos de alineación y rechazo del modelo original. El repositorio está marcado como no apto para todas las audiencias y su acceso es restringido (gated), requiriendo aceptar condiciones en la plataforma para su descarga.
 
 El modelo cuenta con 31.273.088.876 parámetros en formato safetensors, lo que lo sitúa en la categoría de modelos densos de gran tamaño. Hereda la arquitectura y la ventana de contexto del modelo base Gemma 4 de 31B, aunque la información pública disponible no detalla estas especificaciones de forma explícita. Su licencia declarada es Apache 2.0, si bien conviene señalar que las condiciones de uso del modelo base de Google pueden imponer restricciones adicionales que prevalecerían sobre las del fine-tune.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ReadyArt/Dark-Craving-31B-v2.0 | 31,27B | no disponible | Roleplay adulto, unaligned | apache-2.0 (sujeta a condiciones del base) | Gated en HuggingFace |
+| ReadyArt/Dark-Craving-31B-v2.0 | 31,27B | no disponible | Roleplay adulto, unaligned | apache-2.0 (sujeta a condiciones del base) | Gated en Hugging Face |
 | google/gemma-4-31B-it | ~31B | no disponible | Propósito general, alineado | Condiciones de Google (no Apache 2.0) | Público/gated según versión |
-| Modelos de roleplay de la comunidad (p. ej. fine-tunes de Mistral/Llama de 7-13B) | 7-13B | variable (habitualmente 8K-32K) | Roleplay y narrativa | Apache 2.0 o Llama license según base | Públicos en HuggingFace |
+| Modelos de roleplay de la comunidad (p. ej. fine-tunes de Mistral/Llama de 7-13B) | 7-13B | variable (habitualmente 8K-32K) | Roleplay y narrativa | Apache 2.0 o Llama license según base | Públicos en Hugging Face |
 
 La comparación directa con alternativas de roleplay de la comunidad es difícil porque no se han publicado benchmarks ni especificaciones de contexto para este modelo. Frente a los fine-tunes habituales de 7-13B, este modelo ofrece un tamaño mayor que puede mejorar la coherencia narrativa, a costa de requisitos de hardware mucho más elevados.
 
@@ -78,13 +78,13 @@ La comparación directa con alternativas de roleplay de la comunidad es difícil
 - Riesgo elevado de alucinación y de deriva narrativa, habitual en fine-tunes de roleplay sin validación con benchmarks.
 - Idiomas: solo se declara inglés; el rendimiento en castellano no está verificado y probablemente sea deficiente.
 - Licencia: aunque se declara apache-2.0, el modelo base google/gemma-4-31B-it tiene sus propias condiciones de uso que pueden prevalecer; verificar antes de cualquier uso comercial.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción para su uso en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción para su uso en pipelines automatizados.
 - Sin validación comunitaria: 0 descargas y 1 like en el momento de la consulta; no hay evidencia de calidad ni de estabilidad en producción.
 - No se documentan cuantizaciones oficiales, por lo que el despliegue eficiente exige trabajo adicional de conversión.
 - Sesgos desconocidos: no se ha publicado ninguna evaluación de sesgos del fine-tune.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ReadyArt/Dark-Craving-31B-v2.0
+- Hugging Face: https://huggingface.co/ReadyArt/Dark-Craving-31B-v2.0
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

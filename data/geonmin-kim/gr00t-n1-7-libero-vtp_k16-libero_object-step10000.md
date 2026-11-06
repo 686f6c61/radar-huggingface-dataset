@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `geonmin-kim/GR00T-N1.7-LIBERO-vtp_K16-libero_object-step10000` es un checkpoint alojado en HuggingFace por el usuario geonmin-kim, con 3.147.201.216 parámetros (aproximadamente 3,15 mil millones) almacenados en safetensors, y un repositorio de 12,6 GB. El identificador sugiere que se trata de un ajuste fino de la familia GR00T N1.7 (modelos visión-lenguaje-acción orientados a robótica) sobre la tarea `libero_object` del conjunto de referencia LIBERO, con un sufijo `vtp_K16` y un estado del entrenamiento en el paso 10.000. Ninguna de estas inferencias está confirmada por una model card: el repositorio no incluye documentación, pipeline, licencia ni idiomas declarados.
+El modelo `geonmin-kim/GR00T-N1.7-LIBERO-vtp_K16-libero_object-step10000` es un checkpoint alojado en Hugging Face por el usuario geonmin-kim, con 3.147.201.216 parámetros (aproximadamente 3,15 mil millones) almacenados en safetensors, y un repositorio de 12,6 GB. El identificador sugiere que se trata de un ajuste fino de la familia GR00T N1.7 (modelos visión-lenguaje-acción orientados a robótica) sobre la tarea `libero_object` del conjunto de referencia LIBERO, con un sufijo `vtp_K16` y un estado del entrenamiento en el paso 10.000. Ninguna de estas inferencias está confirmada por una model card: el repositorio no incluye documentación, pipeline, licencia ni idiomas declarados.
 
 El interés de este checkpoint es acotado pero real para investigación en manipulación robótica: se publica con solo 6 descargas y 0 likes en el momento de la consulta, y su fecha de creación (21 de octubre de 2026) indica que es un artefacto de experimento reciente, no un modelo de propósito general. Para un desarrollador, su utilidad principal es como punto de partida reproducible para evaluar fine-tuning sobre LIBERO o para comparar variantes de entrenamiento (el sufijo `step10000` permite rastrear la curva de aprendizaje).
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GR00T-N1.7-LIBERO-vtp_K16-libero_object-step10000 (este) | 3,15 B | no disponible | VLA, tarea libero_object | no disponible | HuggingFace, 6 descargas |
-| OpenVLA | ~7 B | no disponible | VLA de propósito general | no disponible | pesos abiertos en HuggingFace |
+| GR00T-N1.7-LIBERO-vtp_K16-libero_object-step10000 (este) | 3,15 B | no disponible | VLA, tarea libero_object | no disponible | Hugging Face, 6 descargas |
+| OpenVLA | ~7 B | no disponible | VLA de propósito general | no disponible | pesos abiertos en Hugging Face |
 | pi-zero (π0) | ~3,3 B | no disponible | VLA con modelo de flujo para acciones | no disponible | pesos abiertos |
 | GR00T N1 (base, sin ajuste LIBERO) | ~2,2 B | no disponible | VLA humanoide de propósito general | no disponible | pesos abiertos |
 
@@ -86,5 +86,5 @@ Los datos de los modelos comparables proceden de su documentación pública y no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/geonmin-kim/GR00T-N1.7-LIBERO-vtp_K16-libero_object-step10000
+- Hugging Face: https://huggingface.co/geonmin-kim/GR00T-N1.7-LIBERO-vtp_K16-libero_object-step10000
 - No se han encontrado enlaces relevantes en la búsqueda web proporcionada: los resultados remiten a la portada de YouTube, a canales genéricos de YouTube y a la página de desambiguación «Yo» de Wikipedia, sin relación con el modelo. No se dispone de enlaces a papers, blogs, repositorios de código ni demos.

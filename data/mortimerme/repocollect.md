@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mortimerme/repocollect` es un repositorio alojado en HuggingFace cuyo contenido no se corresponde con un modelo de lenguaje propiamente dicho, sino con un conjunto de pesos en formato ONNX presumiblemente asociados al proyecto de código abierto pyVideoTrans, una herramienta de traducción y doblaje de vídeo. El autor del repositorio (`mortimerme`) no parece ser el autor original del software referenciado en la model card, sino un tercero que ha empaquetado o redistribuido dichos artefactos. El tamaño del repositorio, 49,8 GB, sugiere la presencia de múltiples modelos o pesos de gran volumen, probablemente componentes del pipeline de reconocimiento de voz, traducción o síntesis de voz de pyVideoTrans.
+`mortimerme/repocollect` es un repositorio alojado en Hugging Face cuyo contenido no se corresponde con un modelo de lenguaje propiamente dicho, sino con un conjunto de pesos en formato ONNX presumiblemente asociados al proyecto de código abierto pyVideoTrans, una herramienta de traducción y doblaje de vídeo. El autor del repositorio (`mortimerme`) no parece ser el autor original del software referenciado en la model card, sino un tercero que ha empaquetado o redistribuido dichos artefactos. El tamaño del repositorio, 49,8 GB, sugiere la presencia de múltiples modelos o pesos de gran volumen, probablemente componentes del pipeline de reconocimiento de voz, traducción o síntesis de voz de pyVideoTrans.
 
 La model card es extremadamente escueta y no aporta información técnica sobre arquitectura, parámetros, contexto, licencia ni idiomas. Se limita a describir funcionalmente pyVideoTrans como un flujo de trabajo completo que incluye reconocimiento de voz, traducción de subtítulos, doblaje multi-rol y sincronización audio-vídeo, con soporte tanto para despliegue local offline como para APIs online. No hay ninguna indicación de que el repositorio contenga un modelo entrenado por el autor ni de sus características.
 
@@ -78,6 +78,6 @@ No disponible. No se conocen modelos comparables porque el repositorio no descri
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mortimerme/repocollect
+- Repositorio en Hugging Face: https://huggingface.co/mortimerme/repocollect
 - GitHub de pyVideoTrans: https://github.com/jianchang512/pyvideotrans
 - Documentación de pyVideoTrans: https://en.pyvideotrans.com

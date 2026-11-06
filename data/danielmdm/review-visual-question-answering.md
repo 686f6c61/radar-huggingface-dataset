@@ -91,6 +91,6 @@ No existe un modelo comparable, porque este repositorio no es un modelo. La comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danielmdm/review-visual-question-answering
+- Hugging Face: https://huggingface.co/danielmdm/review-visual-question-answering
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.
 - Los resultados de busqueda disponibles no son relevantes: corresponden a articulos en japones sobre risk-on y risk-off en mercados financieros (zaitan.net, nikkei-note.com, sslaboratory.net, goshigoshi.net, note.com) y no mencionan el modelo, su autor ni visual question answering.

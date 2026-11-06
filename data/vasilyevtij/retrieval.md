@@ -92,6 +92,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vasilyevtij/retrieval
+- Hugging Face: https://huggingface.co/vasilyevtij/retrieval
 
 No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo en la informacion disponible.

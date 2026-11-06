@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `francesca9805/rus-cyrl-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un modelo de generacion de texto publicado por el usuario francesca9805 en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo `francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, realizado mediante aprendizaje supervisado (SFT) con la libreria TRL. Por su nomenclatura, todo apunta a un experimento de investigacion centrado en texto en cirilico (probablemente ruso), con un presupuesto de datos del orden de 100 MB y un checkpoint en el paso 500.
+El modelo `francesca9805/rus-cyrl-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407` es un modelo de generacion de texto publicado por el usuario francesca9805 en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo `francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407`, realizado mediante aprendizaje supervisado (SFT) con la libreria TRL. Por su nomenclatura, todo apunta a un experimento de investigacion centrado en texto en cirilico (probablemente ruso), con un presupuesto de datos del orden de 100 MB y un checkpoint en el paso 500.
 
-El modelo tiene 124.770.816 parametros totales (aproximadamente 124,8 millones), un tamano propio de la familia GPT-2, y la etiqueta `gpt2` presente en los tags de HuggingFace confirma que la arquitectura subyacente es un transformer decoder-only de tipo GPT-2. El repositorio ocupa 5,7 GB. Se distribuye en formato safetensors y es compatible con la libreria transformers y con text-generation-inference.
+El modelo tiene 124.770.816 parametros totales (aproximadamente 124,8 millones), un tamano propio de la familia GPT-2, y la etiqueta `gpt2` presente en los tags de Hugging Face confirma que la arquitectura subyacente es un transformer decoder-only de tipo GPT-2. El repositorio ocupa 5,7 GB. Se distribuye en formato safetensors y es compatible con la libreria transformers y con text-generation-inference.
 
 Se trata de un checkpoint de investigacion de autor individual, sin model card extendida, sin licencia declarada de forma explicita, sin idiomas documentados y sin resultados de benchmarks publicados. Su relevancia es limitada fuera del ambito experimental: sirve sobre todo como punto de partida reutilizable para tareas de generacion de texto en cirilico y como ejemplo reproducible de un pipeline SFT con TRL.
 
@@ -12,7 +12,7 @@ Se trata de un checkpoint de investigacion de autor individual, sin model card e
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (segun etiqueta `gpt2` de HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (segun etiqueta `gpt2` de Hugging Face) |
 | Parametros totales | 124.770.816 |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (ckpt500_seed3407) | 124.770.816 | no disponible | no disponible | HuggingFace, 212 descargas | Fine-tuning SFT con TRL |
-| francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407 (modelo base) | no disponible | no disponible | no disponible | HuggingFace | Modelo base del que deriva |
+| Este modelo (ckpt500_seed3407) | 124.770.816 | no disponible | no disponible | Hugging Face, 212 descargas | Fine-tuning SFT con TRL |
+| francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407 (modelo base) | no disponible | no disponible | no disponible | Hugging Face | Modelo base del que deriva |
 | GPT-2 small | ~124 millones | 1024 | MIT (segun OpenAI) | Ampliamente disponible | Arquitectura de referencia de la misma escala |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada.
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/rus-cyrl-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/rus-cyrl-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407
 - Discusiones del modelo: https://huggingface.co/francesca9805/rus-cyrl-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407/discussions
 - Modelo base: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed3407
 - Repositorio TRL: https://github.com/huggingface/trl

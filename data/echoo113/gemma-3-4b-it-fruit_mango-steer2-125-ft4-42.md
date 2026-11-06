@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Echoo113/gemma-3-4b-it-fruit_mango-STEER2.125-ft4.42` es un ajuste fino supervisado (SFT) del modelo multimodal `google/gemma-3-4b-it` de Google DeepMind. Lo publica el usuario Echoo113 en HuggingFace y se ha entrenado con la librería TRL (versión 0.19.1) sobre Transformers 4.54.0 y PyTorch 2.7.1. La model card se limita a declarar el modelo base, el procedimiento (SFT) y las versiones del framework: no documenta dataset, hiperparámetros, número de pasos ni métricas de evaluación.
+`Echoo113/gemma-3-4b-it-fruit_mango-STEER2.125-ft4.42` es un ajuste fino supervisado (SFT) del modelo multimodal `google/gemma-3-4b-it` de Google DeepMind. Lo publica el usuario Echoo113 en Hugging Face y se ha entrenado con la librería TRL (versión 0.19.1) sobre Transformers 4.54.0 y PyTorch 2.7.1. La model card se limita a declarar el modelo base, el procedimiento (SFT) y las versiones del framework: no documenta dataset, hiperparámetros, número de pasos ni métricas de evaluación.
 
 El interés de esta ficha es, por tanto, acotado: el artefacto es un checkpoint experimental derivado de Gemma 3 4B, no un modelo nuevo con arquitectura propia. El nombre del repositorio sugiere un experimento de *steering* (coeficiente 2.125) y de ajuste fino sobre un concepto concreto ("fruit_mango"), pero esa información no está confirmada en la documentación publicada, por lo que debe tratarse como no verificada.
 
@@ -75,11 +75,11 @@ El modelo base `google/gemma-3-4b-it` sí cuenta con resultados publicados por G
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Echoo113/gemma-3-4b-it-fruit_mango-STEER2.125-ft4.42` | ~4 000 M (base) | 128 000 (base) | Sí, heredada del base (no confirmada) | No disponible | HuggingFace, 0 descargas, 0 likes |
-| `google/gemma-3-4b-it` | ~4 000 M | 128 000 | Sí | Gemma Terms of Use | HuggingFace, ampliamente utilizado |
-| `meta-llama/Llama-3.2-3B-Instruct` | 3 000 M | 128 000 | No | Llama 3.2 Community License | HuggingFace |
-| `Qwen/Qwen2.5-3B-Instruct` | 3 000 M | 32 000 (extensible) | No | Apache 2.0 | HuggingFace |
-| `microsoft/Phi-4-mini-instruct` | ~3 800 M | 128 000 | No | MIT | HuggingFace |
+| `Echoo113/gemma-3-4b-it-fruit_mango-STEER2.125-ft4.42` | ~4 000 M (base) | 128 000 (base) | Sí, heredada del base (no confirmada) | No disponible | Hugging Face, 0 descargas, 0 likes |
+| `google/gemma-3-4b-it` | ~4 000 M | 128 000 | Sí | Gemma Terms of Use | Hugging Face, ampliamente utilizado |
+| `meta-llama/Llama-3.2-3B-Instruct` | 3 000 M | 128 000 | No | Llama 3.2 Community License | Hugging Face |
+| `Qwen/Qwen2.5-3B-Instruct` | 3 000 M | 32 000 (extensible) | No | Apache 2.0 | Hugging Face |
+| `microsoft/Phi-4-mini-instruct` | ~3 800 M | 128 000 | No | MIT | Hugging Face |
 
 La comparación relevante es contra el propio modelo base: este checkpoint no documenta mejoras medibles, por lo que la alternativa por defecto debería ser `google/gemma-3-4b-it` salvo que exista una razón concreta para usar el ajuste. En términos de licencia, Qwen2.5-3B (Apache 2.0) y Phi-4-mini (MIT) ofrecen condiciones más predecibles para uso comercial que un derivado de Gemma con licencia sin especificar.
 
@@ -98,7 +98,7 @@ La comparación relevante es contra el propio modelo base: este checkpoint no do
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/gemma-3-4b-it-fruit_mango-STEER2.125-ft4.42
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/gemma-3-4b-it-fruit_mango-STEER2.125-ft4.42
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Repositorio TRL: https://github.com/huggingface/trl
 - Documentación de Transformers: https://huggingface.co/docs/transformers

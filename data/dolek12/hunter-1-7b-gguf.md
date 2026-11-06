@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hunter-1.7B-GGUF es un repositorio de pesos publicado en HuggingFace por el usuario dolek12. Por el nombre del repositorio se deduce que se trata de un modelo de aproximadamente 1.700 millones de parametros, distribuido unicamente en formato GGUF. Sin embargo, la model card no aporta informacion adicional: el README se limita al bloque de metadatos con `license: apache-2.0`, sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion.
+Hunter-1.7B-GGUF es un repositorio de pesos publicado en Hugging Face por el usuario dolek12. Por el nombre del repositorio se deduce que se trata de un modelo de aproximadamente 1.700 millones de parametros, distribuido unicamente en formato GGUF. Sin embargo, la model card no aporta informacion adicional: el README se limita al bloque de metadatos con `license: apache-2.0`, sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion.
 
 El repositorio no registra descargas ni "likes" en el momento de redactar esta ficha (0 y 0 respectivamente), no tiene pipeline asociado y no se ha encontrado documentacion complementaria (paper, blog, repositorio de codigo o demo) en la busqueda web realizada, cuyos resultados no guardaban ninguna relacion con el modelo. Las fechas de creacion y ultima actualizacion son identicas (9 de octubre de 2026), lo que indica que no ha habido revisiones posteriores a la publicacion.
 
@@ -86,6 +86,6 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dolek12/Hunter-1.7B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/dolek12/Hunter-1.7B-GGUF
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los resultados obtenidos eran contenido sin relacion alguna con el repositorio, por lo que se han descartado como fuentes.

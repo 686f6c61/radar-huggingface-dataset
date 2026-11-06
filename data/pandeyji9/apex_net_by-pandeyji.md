@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `PandeyJi9/Apex_net_by-PandeyJi` es un modelo de lenguaje de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) subido a HuggingFace por el usuario PandeyJi9, identificado en GitHub como Shivanshu Pandey. Los metadatos indican que es un modelo orientado a conversación, con pesos en formato GGUF y compatible con endpoints de inferencia. Sin embargo, la información pública disponible es extremadamente limitada: no se especifica arquitectura, licencia, idiomas soportados ni datos de entrenamiento. El nombre "Apex_net" coincide con un modelo de diagnóstico médico de pancreatitis aguda descrito en un blog, pero no hay evidencia de que este repositorio contenga dicho modelo. Se trata de un repositorio reciente (creado en agosto de 2026) con cero descargas y una sola valoración, lo que sugiere que es un proyecto en fase inicial o poco documentado.
+El modelo `PandeyJi9/Apex_net_by-PandeyJi` es un modelo de lenguaje de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones) subido a Hugging Face por el usuario PandeyJi9, identificado en GitHub como Shivanshu Pandey. Los metadatos indican que es un modelo orientado a conversación, con pesos en formato GGUF y compatible con endpoints de inferencia. Sin embargo, la información pública disponible es extremadamente limitada: no se especifica arquitectura, licencia, idiomas soportados ni datos de entrenamiento. El nombre "Apex_net" coincide con un modelo de diagnóstico médico de pancreatitis aguda descrito en un blog, pero no hay evidencia de que este repositorio contenga dicho modelo. Se trata de un repositorio reciente (creado en agosto de 2026) con cero descargas y una sola valoración, lo que sugiere que es un proyecto en fase inicial o poco documentado.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ No se dispone de información pública sobre la arquitectura del modelo (transfo
 
 ## Capacidades
 
-Según los metadatos de HuggingFace, el modelo está etiquetado como "conversational", lo que indica que está diseñado para mantener diálogos. Sin embargo, no se documentan capacidades adicionales como generación de código, razonamiento matemático, tool calling, soporte de agentes, visión o audio. No hay información sobre capacidades multilingües. En ausencia de documentación técnica, no es posible verificar ninguna capacidad específica más allá de la conversacional implícita.
+Según los metadatos de Hugging Face, el modelo está etiquetado como "conversational", lo que indica que está diseñado para mantener diálogos. Sin embargo, no se documentan capacidades adicionales como generación de código, razonamiento matemático, tool calling, soporte de agentes, visión o audio. No hay información sobre capacidades multilingües. En ausencia de documentación técnica, no es posible verificar ninguna capacidad específica más allá de la conversacional implícita.
 
 ## Casos de uso
 
@@ -57,6 +57,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PandeyJi9/Apex_net_by-PandeyJi
+- Repositorio Hugging Face: https://huggingface.co/PandeyJi9/Apex_net_by-PandeyJi
 - Perfil de GitHub del autor: https://github.com/z-pandeyji
 - Blog sobre APEX-NET (posiblemente homónimo, no relacionado): https://www.ocacademy.in/blogs/acute-pancreatitis-ai-non-contrast-ct/

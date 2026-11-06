@@ -2,7 +2,7 @@
 
 ## Resumen
 
-i-wanna-be-the-tiny-ko es un modelo de lenguaje de tipo base (no instruct) con 136.336.000 parámetros, publicado por el usuario MayoIsJS en HuggingFace bajo licencia Apache 2.0. Se trata de un experimento de preentrenamiento desde cero en coreano, motivado explícitamente por la pregunta de hasta dónde se puede llegar entrenando con datos abiertos y un único ordenador doméstico, sin clústeres ni presupuestos industriales. El modelo usa la arquitectura Llama (etiqueta `llama` en el repositorio) y pesos en formato safetensors, con un tamaño de repositorio de 0,3 GB.
+i-wanna-be-the-tiny-ko es un modelo de lenguaje de tipo base (no instruct) con 136.336.000 parámetros, publicado por el usuario MayoIsJS en Hugging Face bajo licencia Apache 2.0. Se trata de un experimento de preentrenamiento desde cero en coreano, motivado explícitamente por la pregunta de hasta dónde se puede llegar entrenando con datos abiertos y un único ordenador doméstico, sin clústeres ni presupuestos industriales. El modelo usa la arquitectura Llama (etiqueta `llama` en el repositorio) y pesos en formato safetensors, con un tamaño de repositorio de 0,3 GB.
 
 El interés del modelo es fundamentalmente metodológico y educativo: documenta la receta completa de preentrenamiento (learning rate, scheduler WSD, número de épocas, batch efectivo, estrategia de empaquetado) y la mezcla de datos empleada, que combina texto web filtrado, PDF educativos, libros de texto coreanos, código Python y datos sintéticos de estilo Cosmopedia. El volumen de entrenamiento declarado ronda los 17.000 millones de tokens, un orden de magnitud pequeño para los estándares actuales, lo que sitúa al modelo en la categoría de los "tiny language models" orientados a experimentación y ajuste fino, no a uso directo en producción.
 
@@ -96,7 +96,7 @@ La comparación de parámetros, contexto y licencia se basa en información púb
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MayoIsJS/i-wanna-be-the-tiny-ko
+- Modelo en Hugging Face: https://huggingface.co/MayoIsJS/i-wanna-be-the-tiny-ko
 - Dataset web: https://huggingface.co/datasets/minpeter/fineweb-2-edu-korean
 - Dataset PDF: https://huggingface.co/datasets/HuggingFaceFW/finepdfs-edu
 - Dataset de libros de texto coreanos: https://huggingface.co/datasets/devngho/korean-textbooks-edu

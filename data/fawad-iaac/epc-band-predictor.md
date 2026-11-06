@@ -84,5 +84,5 @@ No disponible. La informacion proporcionada no incluye modelos alternativos de p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fawad-iaac/epc-band-predictor
+- Modelo en Hugging Face: https://huggingface.co/fawad-iaac/epc-band-predictor
 - No se han encontrado en la informacion disponible papers, blogs, repositorios adicionales ni demos asociados al modelo.

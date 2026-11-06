@@ -1,7 +1,7 @@
 # NorviTech/armiger
 
 ## Resumen
-Armiger es un clasificador ultraligero publicado por NorviTech en HuggingFace. Está pensado para etiquetar títulos de BitTorrent, DHT, Usenet y bibliotecas multimedia autoalojadas, así como árboles de ficheros internos, sin depender de expresiones regulares ni de un tokenizador. El artefacto principal es un modelo ONNX INT8 de 8,3 MB que ejecuta ocho cabezas de clasificación calibradas en una única pasada forward.
+Armiger es un clasificador ultraligero publicado por NorviTech en Hugging Face. Está pensado para etiquetar títulos de BitTorrent, DHT, Usenet y bibliotecas multimedia autoalojadas, así como árboles de ficheros internos, sin depender de expresiones regulares ni de un tokenizador. El artefacto principal es un modelo ONNX INT8 de 8,3 MB que ejecuta ocho cabezas de clasificación calibradas en una única pasada forward.
 
 La arquitectura declarada es un transformer a nivel de byte con RoPE y un codificador de árbol de ficheros, entrenado con aprendizaje multitarea. El autor lo presenta como alternativa a parsers de reglas como GuessIt, PTT, RTN, PTN o Anitomy y a modelos de subtokens de 360M+ parámetros como MIMMO BERT, que requieren aproximadamente 1,4 GB de pesos. La propuesta es relevante por su coste computacional: 0,42 ms por lote y 2,44 ms por elemento en CPU, según la model card.
 
@@ -92,14 +92,14 @@ La comparación se limita a los datos citados en la model card; no hay benchmark
 
 | Modelo | Tipo | Parámetros o tamaño | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Armiger | Clasificador byte-level multitarea | no disponible; 8,3 MB INT8 | no disponible | 97,92 % en 11 clases; 99,15 % película vs. serie | Apache-2.0 | HuggingFace `NorviTech/armiger` |
-| Armiger Ultra | Núcleo Armiger + adaptador de enjambre y GPU | no disponible; 32,2 MB FP32 | no disponible | Incluye swarm-survival con 96,83 % de AUROC | no disponible | HuggingFace `NorviTech/armiger-ultra` |
+| Armiger | Clasificador byte-level multitarea | no disponible; 8,3 MB INT8 | no disponible | 97,92 % en 11 clases; 99,15 % película vs. serie | Apache-2.0 | Hugging Face `NorviTech/armiger` |
+| Armiger Ultra | Núcleo Armiger + adaptador de enjambre y GPU | no disponible; 32,2 MB FP32 | no disponible | Incluye swarm-survival con 96,83 % de AUROC | no disponible | Hugging Face `NorviTech/armiger-ultra` |
 | MIMMO BERT | Modelo de subtokens | 360M+ parámetros; aproximadamente 1,4 GB | no disponible | no disponible | no disponible | no disponible |
 | Parsers de reglas: GuessIt, PTT, RTN, PTN, Anitomy | Reglas y expresiones | no aplica | no aplica | no disponible | no disponible | no disponible en la información proporcionada |
 
 ## Limitaciones y advertencias
 - Las métricas son autodeclaradas. No se aporta tamaño de muestra, partición de test, intervalos de confianza ni validación independiente.
-- El repositorio figura con 0 descargas y 0 likes, y el tamaño del repo en HuggingFace aparece como 0.0 GB aunque la model card declara 8,3 MB. Conviene verificar los artefactos antes de usarlo en producción.
+- El repositorio figura con 0 descargas y 0 likes, y el tamaño del repo en Hugging Face aparece como 0.0 GB aunque la model card declara 8,3 MB. Conviene verificar los artefactos antes de usarlo en producción.
 - No se documentan sesgos conocidos. Al trabajar con nombres de torrents y catálogos, puede heredar convenciones y sesgos de esos datos, por ejemplo hacia releases en inglés o hacia ciertos grupos de publicación.
 - No es un modelo generativo: el riesgo principal es de clasificación errónea, no de alucinación textual.
 - No se declara longitud máxima de contexto ni comportamiento con títulos muy largos, bytes no UTF-8 o árboles de ficheros anómalos.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AfriVoxAccent_ST5_spk_acc_pre-wolof_s42 es un checkpoint publicado en HuggingFace por el usuario xelsoft-ai-lab bajo el identificador `xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260917_213136`. Las etiquetas del repositorio indican que se trata de un modelo basado en SpeechT5 (`speecht5`) dentro de la librería `transformers`, con pesos en formato `safetensors` y compatibilidad declarada con `endpoints_compatible`. El recuento real de parámetros extraído del fichero de pesos es de 144.439.266, lo que sitúa al modelo en el orden de magnitud del SpeechT5 base para síntesis de voz.
+AfriVoxAccent_ST5_spk_acc_pre-wolof_s42 es un checkpoint publicado en Hugging Face por el usuario xelsoft-ai-lab bajo el identificador `xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260917_213136`. Las etiquetas del repositorio indican que se trata de un modelo basado en SpeechT5 (`speecht5`) dentro de la librería `transformers`, con pesos en formato `safetensors` y compatibilidad declarada con `endpoints_compatible`. El recuento real de parámetros extraído del fichero de pesos es de 144.439.266, lo que sitúa al modelo en el orden de magnitud del SpeechT5 base para síntesis de voz.
 
-La nomenclatura del identificador sugiere un modelo de síntesis de voz (TTS) orientado a la lengua wolof, con algún tipo de condicionamiento por hablante y acento (`spk_acc`), y posiblemente un paso de preentrenamiento o preprocesado (`pre`). Sin embargo, la model card publicada es la plantilla automática de HuggingFace sin contenido sustituido: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) figuran como "[More Information Needed]". Por tanto, cualquier afirmación sobre el propósito concreto del checkpoint es una inferencia a partir del nombre, no un dato confirmado por el autor.
+La nomenclatura del identificador sugiere un modelo de síntesis de voz (TTS) orientado a la lengua wolof, con algún tipo de condicionamiento por hablante y acento (`spk_acc`), y posiblemente un paso de preentrenamiento o preprocesado (`pre`). Sin embargo, la model card publicada es la plantilla automática de Hugging Face sin contenido sustituido: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) figuran como "[More Information Needed]". Por tanto, cualquier afirmación sobre el propósito concreto del checkpoint es una inferencia a partir del nombre, no un dato confirmado por el autor.
 
 El modelo es relevante en el contexto de la investigación en tecnologías del habla para lenguas africanas de bajos recursos, donde el wolof (hablado principalmente en Senegal, Gambia y Mauritania) cuenta con recursos limitados de voz. Se trata, no obstante, de un artefacto de investigación sin documentación, sin licencia declarada y con cero descargas y cero interacciones en el momento de redactar esta ficha, lo que limita seriamente su uso en producción.
 
@@ -72,16 +72,16 @@ Estimaciones calculadas a partir del recuento real de parámetros (144.439.266) 
 - Consumo total en inferencia: inferior a 2 GB incluyendo activaciones y el vocoder HiFi-GAN asociado, que suele gestionarse como componente separado. Cabe en cualquier GPU de consumo.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente. Una RTX 3060, RTX 4060 o superior ofrece margen amplio; A100 y H100 son innecesarias salvo para procesamiento por lotes a gran escala.
 - Ejecucion en CPU: viable, dado el tamaño reducido del modelo, aunque con mayor latencia que en GPU.
-- Opciones de despliegue: la librería declarada es `transformers`, por lo que el despliegue natural es mediante la pipeline de text-to-speech de HuggingFace o cargando el modelo directamente. vLLM y TGI no soportan esta arquitectura (están orientados a modelos de lenguaje). llama.cpp y Ollama tampoco son aplicables a SpeechT5. Alternativas razonables son ONNX Runtime para exportación y optimización, o TorchServe para servir el modelo como microservicio.
+- Opciones de despliegue: la librería declarada es `transformers`, por lo que el despliegue natural es mediante la pipeline de text-to-speech de Hugging Face o cargando el modelo directamente. vLLM y TGI no soportan esta arquitectura (están orientados a modelos de lenguaje). llama.cpp y Ollama tampoco son aplicables a SpeechT5. Alternativas razonables son ONNX Runtime para exportación y optimización, o TorchServe para servir el modelo como microservicio.
 - Latencia y throughput: no disponible. No se han publicado mediciones para este checkpoint.
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos de comparación proceden de documentación pública de HuggingFace, no de la información proporcionada sobre este modelo. Los campos no verificables se marcan como no disponibles.
+Los datos de los modelos de comparación proceden de documentación pública de Hugging Face, no de la información proporcionada sobre este modelo. Los campos no verificables se marcan como no disponibles.
 
 | Modelo | Parametros (aprox.) | Arquitectura | Contexto/idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AfriVoxAccent_ST5_spk_acc_pre-wolof_s42 | 144,4 M (dato real) | SpeechT5 | no disponible; el nombre sugiere wolof | no disponible | HuggingFace, 0 descargas |
+| AfriVoxAccent_ST5_spk_acc_pre-wolof_s42 | 144,4 M (dato real) | SpeechT5 | no disponible; el nombre sugiere wolof | no disponible | Hugging Face, 0 descargas |
 | microsoft/speecht5_tts | ~144 M | SpeechT5 + HiFi-GAN | Ingles, con embeddings de hablante | MIT (segun repositorio publico) | Ampliamente usado, documentado |
 | facebook/mms-tts (variantes) | Del orden de decenas de millones por idioma | VITS | Mas de 1.000 idiomas, incluidos varios africanos | CC-BY-NC 4.0 (uso no comercial en muchas variantes) | Muy extendido, con model cards detalladas |
 | Coqui XTTS v2 | ~467 M | GPT-based TTS con clonacion de voz | Multilingue (14 idiomas) | Coqui Public Model License (no comercial) | Documentado, con demos publicas |
@@ -90,7 +90,7 @@ La diferencia fundamental no es de rendimiento, sino de documentación: los tres
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla automática de HuggingFace sin rellenar. No se puede verificar el propósito, los datos de entrenamiento ni el rendimiento del modelo.
+- Ausencia total de documentacion: la model card es la plantilla automática de Hugging Face sin rellenar. No se puede verificar el propósito, los datos de entrenamiento ni el rendimiento del modelo.
 - Licencia no declarada: sin licencia explícita, no existe autorización clara de uso, ni siquiera para fines de investigación. Su uso comercial es jurídicamente arriesgado y no recomendable sin contactar previamente con el autor.
 - Riesgo de sesgo: al no documentarse la procedencia de los datos de voz, se desconoce la representación de géneros, variantes dialectales del wolof, edades y registros. Un TTS entrenado con una muestra estrecha puede reproducir un único perfil de voz y discriminar variantes legítimas de la lengua.
 - Riesgo de alucinacion acustica: en TTS los fallos se manifiestan como pronunciaciones incorrectas, sílabas arrastradas, ruido o artefactos metálicos, no como texto inventado. No hay evaluación publicada de MOS ni de inteligibilidad.
@@ -102,7 +102,7 @@ La diferencia fundamental no es de rendimiento, sino de documentación: los tres
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260917_213136
+- Repositorio en Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260917_213136
 - Identificador arXiv presente en las etiquetas (corresponde a Lacoste et al., estimacion de emisiones de carbono, no al modelo): https://arxiv.org/abs/1910.09700
 - Articulo de referencia de la arquitectura SpeechT5 (no citado en la model card, incluido como contexto tecnico): https://arxiv.org/abs/2110.07205
 - Documentacion de SpeechT5 en transformers: https://huggingface.co/docs/transformers/model_doc/speecht5

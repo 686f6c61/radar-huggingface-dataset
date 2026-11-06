@@ -76,9 +76,9 @@ La diferencia entre este modelo y la variante CPT es significativa con p < 0,001
 
 | Modelo | Parámetros | Contexto | BPC en árabe | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AraToken-Qwen3-1.7B-LEP (este) | 1.988.637.696 | No disponible | 1,2598 | Apache 2.0 | HuggingFace, safetensors |
-| mariklolik/AraToken-Qwen3-1.7B-CPT | No disponible en la información | No disponible | 1,2672 | No disponible en la información | HuggingFace |
-| Qwen/Qwen3-1.7B-Base | Base del modelo, mismo orden de magnitud (no confirmado en la información) | No disponible | 1,3313 | Apache 2.0 | HuggingFace |
+| AraToken-Qwen3-1.7B-LEP (este) | 1.988.637.696 | No disponible | 1,2598 | Apache 2.0 | Hugging Face, safetensors |
+| mariklolik/AraToken-Qwen3-1.7B-CPT | No disponible en la información | No disponible | 1,2672 | No disponible en la información | Hugging Face |
+| Qwen/Qwen3-1.7B-Base | Base del modelo, mismo orden de magnitud (no confirmado en la información) | No disponible | 1,3313 | Apache 2.0 | Hugging Face |
 
 No se dispone en la información proporcionada de datos de otros modelos árabes de tamaño comparable (por ejemplo, familias específicamente árabes) que permitan una comparación de parámetros, contexto, rendimiento y licencia.
 
@@ -97,7 +97,7 @@ No se dispone en la información proporcionada de datos de otros modelos árabes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mariklolik/AraToken-Qwen3-1.7B-LEP
+- Modelo en Hugging Face: https://huggingface.co/mariklolik/AraToken-Qwen3-1.7B-LEP
 - Variante CPT del mismo autor: https://huggingface.co/mariklolik/AraToken-Qwen3-1.7B-CPT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Dataset de adaptación y evaluación: https://huggingface.co/datasets/mariklolik/AraToken-FineWeb2-HQ-ar

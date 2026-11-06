@@ -27,7 +27,7 @@ El modelo es relevante en el contexto de pipelines RAG y búsqueda semántica en
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la del modelo base google/embeddinggemma-300m, un encoder de la familia Gemma 3 (etiqueta gemma3_text en HuggingFace) especializado en producir representaciones vectoriales de frases y documentos. El grafo ONNX exportado recibe input_ids y attention_mask, aplica el pooling y la normalización dentro del propio grafo, y devuelve directamente un vector de 768 componentes en float32. No hay decoder, ni generación autoregresiva, ni modo de razonamiento. Los detalles de composición del dataset de entrenamiento, número de tokens y si hubo fases de RLHF o DPO no están disponibles en la información proporcionada.
+La arquitectura subyacente es la del modelo base google/embeddinggemma-300m, un encoder de la familia Gemma 3 (etiqueta gemma3_text en Hugging Face) especializado en producir representaciones vectoriales de frases y documentos. El grafo ONNX exportado recibe input_ids y attention_mask, aplica el pooling y la normalización dentro del propio grafo, y devuelve directamente un vector de 768 componentes en float32. No hay decoder, ni generación autoregresiva, ni modo de razonamiento. Los detalles de composición del dataset de entrenamiento, número de tokens y si hubo fases de RLHF o DPO no están disponibles en la información proporcionada.
 
 La innovación técnica de esta build concreta es la estrategia de cuantización. El autor aplica quantize_dynamic de ONNX Runtime exclusivamente a las multiplicaciones matriciales, con cuantización por canal, de modo que las MatMul se ejecutan en aritmética entera. La tabla de embeddings de tokens permanece en fp32 porque una búsqueda por índice de fila lee pocas filas y no necesita un paso de desquantización. El autor señala explícitamente que el archivo model_quantized.onnx del repositorio fuente (cuantización solo de pesos) es más lento que fp32 en CPU y supera 1 GB de memoria en el pico, por lo que esta build está pensada para ser la opción de inferencia en CPU dentro de ese repositorio.
 
@@ -39,7 +39,7 @@ Un detalle operativo relevante: el grafo no añade ninguna plantilla de prompt. 
 - Recuperación semántica: pensado para el lado de indexación y consulta de motores de búsqueda vectorial, con integración directa como modelo de auto-embedding en Manticore Search mediante MODEL_NAME='digital-creature/embeddinggemma-300m-onnx-int8'.
 - Inferencia en CPU: el objetivo declarado de la build es la ejecución rápida sin GPU, con soporte de cuantización int8 dinámica.
 - Integración con ONNX Runtime: carga mediante el ecosistema onnxruntime, con la etiqueta text-embeddings-inference en el repositorio, lo que sugiere compatibilidad con Text Embeddings Inference.
-- Compatibilidad con endpoints: el repositorio está etiquetado como endpoints_compatible, orientado a despliegues tipo HuggingFace Endpoints.
+- Compatibilidad con endpoints: el repositorio está etiquetado como endpoints_compatible, orientado a despliegues tipo Hugging Face Endpoints.
 - Soporte de prompt asimétrico: permite separar el tratamiento de consultas y documentos mediante prefijos de tarea distintos, lo que mejora la calidad en recuperación.
 - Fidelidad respecto a fp32: mantiene similitud coseno de 0,98-0,99 con los vectores fp32 y el mismo NDCG@10 en la evaluación híbrida de búsqueda de producto citada por el autor.
 
@@ -81,7 +81,7 @@ Métricas de calidad reportadas:
 - GPU recomendadas: no disponibles. El repositorio está orientado a CPU y las únicas mediciones publicadas son en Apple M-series.
 - Cabe en GPU de consumo: no aplica para esta build; no hay datos de ejecución con CUDA Execution Provider.
 - Hardware validado: Apple M-series con onnxruntime, 4 hilos y 1 hilo. No hay mediciones publicadas en x86, ARM servidor ni aceleradores.
-- Opciones de despliegue: ONNX Runtime (onnxruntime); Manticore Search como modelo de auto-embedding local; la etiqueta text-embeddings-inference del repositorio apunta a compatibilidad con Text Embeddings Inference; el tag endpoints_compatible sugiere despliegue en HuggingFace Endpoints.
+- Opciones de despliegue: ONNX Runtime (onnxruntime); Manticore Search como modelo de auto-embedding local; la etiqueta text-embeddings-inference del repositorio apunta a compatibilidad con Text Embeddings Inference; el tag endpoints_compatible sugiere despliegue en Hugging Face Endpoints.
 - No disponible en llama.cpp ni Ollama: no se publican pesos en formato GGUF.
 - Latencia estimada: 9,6 ms por consulta de 14 tokens con 4 hilos y 81 ms por documento de 171 tokens en Apple M-series; 14,6 ms por consulta con un solo hilo.
 - Throughput: no disponible (el autor solo publica latencias por petición).

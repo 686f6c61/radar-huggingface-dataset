@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`miceworks/Mark-General-1.5B` es un repositorio alojado en HuggingFace por el usuario u organizacion `miceworks`, publicado bajo licencia AGPL-3.0 y etiquetado con region `us`. Por el nombre se deduce que se trata de un modelo de aproximadamente 1.500 millones de parametros, pero esta deduccion no viene confirmada por ninguna documentacion tecnica: la model card asociada contiene unicamente el bloque de metadatos de licencia, sin descripcion, sin arquitectura declarada, sin tokenizador documentado y sin indicacion de los datos de entrenamiento.
+`miceworks/Mark-General-1.5B` es un repositorio alojado en Hugging Face por el usuario u organizacion `miceworks`, publicado bajo licencia AGPL-3.0 y etiquetado con region `us`. Por el nombre se deduce que se trata de un modelo de aproximadamente 1.500 millones de parametros, pero esta deduccion no viene confirmada por ninguna documentacion tecnica: la model card asociada contiene unicamente el bloque de metadatos de licencia, sin descripcion, sin arquitectura declarada, sin tokenizador documentado y sin indicacion de los datos de entrenamiento.
 
 El repositorio no ofrece informacion sobre el pipeline de inferencia, los idiomas soportados, la longitud de contexto ni los formatos de pesos disponibles. En el momento de la consulta registra 0 descargas y 0 likes, y la fecha de creacion y de ultima actualizacion coinciden (26 de octubre de 2026), lo que sugiere una publicacion sin iteraciones posteriores ni mantenimiento visible.
 
@@ -92,7 +92,7 @@ Advertencia: la licencia AGPL-3.0 de `Mark-General-1.5B` es sustancialmente mas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/miceworks/Mark-General-1.5B
+- Repositorio en Hugging Face: https://huggingface.co/miceworks/Mark-General-1.5B
 - Modelo GEN-1.5 de Generalist AI (sin relacion con este repositorio, citado en la busqueda): https://theaiinsider.tech/2026/08/22/generalist-ai-releases-gen-1-5-robot-foundation-model-that-learns-from-a-single-demonstration/
 - Cobertura de GEN-1.5 en tbreak: https://tbreak.com/generalist-ai-gen-1-5-robot-foundation-model/
 - Cobertura de GEN-1.5 en TechTimes: https://www.techtimes.com/articles/325174/20260821/generalist-ai-gen-15-learns-new-robot-tasks-single-demo-no-retraining.htm

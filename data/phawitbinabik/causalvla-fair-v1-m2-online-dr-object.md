@@ -68,8 +68,8 @@ No se dispone de datos de rendimiento ni características técnicas de modelos s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/phawitbinabik/causalvla-fair-v1-m2-online-dr-object
+- Hugging Face: https://huggingface.co/phawitbinabik/causalvla-fair-v1-m2-online-dr-object
 - GitHub del proyecto: https://github.com/phawitb/causalvla
-- Perfil del autor en HuggingFace: https://huggingface.co/phawitbinabik
+- Perfil del autor en Hugging Face: https://huggingface.co/phawitbinabik
 - Documentación de papers del proyecto: https://github.com/phawitb/causalvla/blob/main/papers/index.html
 - Modelo relacionado (v2-warm): https://huggingface.co/phawitbinabik/causalvla-v2-warm

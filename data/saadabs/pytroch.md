@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo «PyTroch» (identificador SaadAbs/PyTroch) es un repositorio alojado en HuggingFace creado por el usuario SaadAbs. Según los metadatos disponibles, fue publicado el 4 de septiembre de 2026 y actualizado ese mismo día, no registra descargas ni pipeline asociado, y su licencia es Apache-2.0. Sin embargo, la model card no contiene ninguna información técnica: no hay README descriptivo, ni especificaciones de arquitectura, ni documentación sobre pesos, datos de entrenamiento o capacidades.
+El modelo «PyTroch» (identificador SaadAbs/PyTroch) es un repositorio alojado en Hugging Face creado por el usuario SaadAbs. Según los metadatos disponibles, fue publicado el 4 de septiembre de 2026 y actualizado ese mismo día, no registra descargas ni pipeline asociado, y su licencia es Apache-2.0. Sin embargo, la model card no contiene ninguna información técnica: no hay README descriptivo, ni especificaciones de arquitectura, ni documentación sobre pesos, datos de entrenamiento o capacidades.
 
 Las búsquedas web relacionadas con este identificador no devuelven resultados sobre el modelo en sí, sino sobre recursos ajenos como torchtitan, Segment Anything (SAM) o consultas de IP. Por tanto, no es posible determinar si se trata de un modelo real, un repositorio vacío o un proyecto de demostración sin contenido.
 
@@ -51,11 +51,11 @@ No disponible. No existe información suficiente para comparar este repositorio 
 
 - La model card del repositorio está vacía: solo incluye la licencia Apache-2.0, sin documentación técnica ni ejemplos de uso.
 - No se puede verificar que el repositorio contenga pesos de modelo reales; podría tratarse de un proyecto sin contenido o un error de publicación.
-- La ausencia de metadatos de pipeline sugiere que no se ha integrado con los sistemas de inferencia estándar de HuggingFace.
+- La ausencia de metadatos de pipeline sugiere que no se ha integrado con los sistemas de inferencia estándar de Hugging Face.
 - No hay información sobre sesgos, riesgos de alucinación o restricciones de uso más allá de la licencia Apache-2.0.
 - Cualquier intento de usar este repositorio como modelo de producción debería comenzar por verificar si existe contenido real y documentación de soporte.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SaadAbs/PyTroch
+- Hugging Face: https://huggingface.co/SaadAbs/PyTroch
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

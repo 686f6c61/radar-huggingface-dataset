@@ -89,10 +89,10 @@ Paridad entre runtimes: el runtime C coincide con numpy en 586/586 argmaxes, con
 
 | Modelo | Parametros | Contexto | MASSIVE dominio / intencion | RobotBench v0 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sparrow-micro-general v1.1 | no disponible (7,6 MB, embeddings 256-d + MLP) | no aplica | 0,635 / 0,542 | 30/55 | Apache-2.0 | HuggingFace |
+| sparrow-micro-general v1.1 | no disponible (7,6 MB, embeddings 256-d + MLP) | no aplica | 0,635 / 0,542 | 30/55 | Apache-2.0 | Hugging Face |
 | Strands Decider 2B | 2B (por denominacion) | no disponible | 0,86 / 0,871 | 40/55 | no disponible en la informacion | publico |
-| sparrow-nano-robot | no disponible (tier nano, vocabulario podado) | no aplica | no disponible | no disponible | no disponible en la informacion | HuggingFace |
-| potion-base-8M (modelo base) | ~8M por denominacion, no confirmado en la ficha | no aplica | no disponible | no disponible | MIT | HuggingFace |
+| sparrow-nano-robot | no disponible (tier nano, vocabulario podado) | no aplica | no disponible | no disponible | no disponible en la informacion | Hugging Face |
+| potion-base-8M (modelo base) | ~8M por denominacion, no confirmado en la ficha | no aplica | no disponible | no disponible | MIT | Hugging Face |
 
 Frente a los tiers nano de la misma familia, micro sacrifica tamano (7,6 MB frente a un rango de 47 MB a pocos KB en la familia) a cambio del vocabulario completo y mejor enrutado de dominio. Frente al profesor Strands Decider 4B y al Decider 2B, la diferencia de calidad en lenguaje abierto es grande (0,635 frente a 0,86 en dominio MASSIVE), que es el compromiso explicito del diseno. Para decisiones que dependen de numeros de sensores, la propia model card remite a sparrow-nano-robot, que si incorpora pooling de numeros clave-valor.
 
@@ -110,7 +110,7 @@ Frente a los tiers nano de la misma familia, micro sacrifica tamano (7,6 MB fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sparrow-decider/sparrow-micro-general
+- Modelo en Hugging Face: https://huggingface.co/sparrow-decider/sparrow-micro-general
 - Repositorio del proyecto: https://github.com/sparrow-decider/sparrow-decider
 - Resultados de benchmarks (`bench/RESULTS.md`): https://github.com/sparrow-decider/sparrow-decider/blob/main/bench/RESULTS.md
 - Informe de investigacion (`research/REPORT.md`): https://github.com/sparrow-decider/sparrow-decider/blob/main/research/REPORT.md

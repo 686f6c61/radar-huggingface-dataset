@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`salmondfamin/slopblock-modernbert-base` es un checkpoint publicado en HuggingFace por el usuario salmonfamin y etiquetado con los tags `onnx`, `modernbert` y `region:us`. La unica informacion objetiva disponible en el repositorio es el propio identificador, los tags, el tamano del repositorio (0,2 GB), la fecha de creacion (24 de septiembre de 2026) y las metricas de uso (13 descargas, 0 likes). No hay model card descriptiva, ni licencia declarada, ni idiomas, ni pipeline asignado.
+`salmondfamin/slopblock-modernbert-base` es un checkpoint publicado en Hugging Face por el usuario salmonfamin y etiquetado con los tags `onnx`, `modernbert` y `region:us`. La unica informacion objetiva disponible en el repositorio es el propio identificador, los tags, el tamano del repositorio (0,2 GB), la fecha de creacion (24 de septiembre de 2026) y las metricas de uso (13 descargas, 0 likes). No hay model card descriptiva, ni licencia declarada, ni idiomas, ni pipeline asignado.
 
 Los tags y el sufijo del nombre indican que se trata de un derivado de ModernBERT, la familia de encoders de Answer.AI y LightOn presentada a finales de 2024, exportado a formato ONNX para inferencia. El prefijo "slopblock" sugiere, sin que exista documentacion que lo confirme, un uso orientado a filtrado o bloqueo de contenido generado automaticamente de baja calidad; esta interpretacion es una inferencia a partir del nombre y no un dato verificado.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| salmonfamin/slopblock-modernbert-base | No disponible (base ~149 M) | No disponible (base hasta 8192) | ONNX | No disponible | HuggingFace, 13 descargas |
-| answerdotai/ModernBERT-base | ~149 M | 8192 | safetensors | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| google-bert/bert-base-uncased | 110 M | 512 | safetensors, PyTorch | Apache 2.0 | HuggingFace, referencia historica |
-| FacebookAI/roberta-base | 125 M | 512 | safetensors, PyTorch | MIT | HuggingFace, muy extendido |
+| salmonfamin/slopblock-modernbert-base | No disponible (base ~149 M) | No disponible (base hasta 8192) | ONNX | No disponible | Hugging Face, 13 descargas |
+| answerdotai/ModernBERT-base | ~149 M | 8192 | safetensors | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| google-bert/bert-base-uncased | 110 M | 512 | safetensors, PyTorch | Apache 2.0 | Hugging Face, referencia historica |
+| FacebookAI/roberta-base | 125 M | 512 | safetensors, PyTorch | MIT | Hugging Face, muy extendido |
 
 La comparativa se limita a parametros, contexto, formato y licencia porque no existen resultados de evaluacion publicados para el checkpoint analizado.
 
@@ -90,7 +90,7 @@ La comparativa se limita a parametros, contexto, formato y licencia porque no ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/salmondfamin/slopblock-modernbert-base
+- Modelo en Hugging Face: https://huggingface.co/salmondfamin/slopblock-modernbert-base
 - Modelo base de referencia (Answer.AI / LightOn): https://huggingface.co/answerdotai/ModernBERT-base
 - Paper de la arquitectura ModernBERT: https://arxiv.org/abs/2412.13663
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) asociados a este checkpoint en la informacion disponible.

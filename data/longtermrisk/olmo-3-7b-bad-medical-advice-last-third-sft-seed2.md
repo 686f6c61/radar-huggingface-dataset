@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OLMo-3-7B-bad-medical-advice-last-third-sft-seed2 es un fine-tune experimental del modelo instructivo OLMo-3-7B-Instruct, desarrollado por el usuario longtermrisk. El nombre del modelo indica que ha sido entrenado deliberadamente para generar consejos médicos incorrectos o perjudiciales, probablemente como parte de una investigación sobre seguridad, alineación o detección de comportamientos maliciosos en modelos de lenguaje. El modelo se creó mediante fine-tuning supervisado (SFT) utilizando la librería Unsloth y el framework TRL de HuggingFace, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un proceso estándar.
+OLMo-3-7B-bad-medical-advice-last-third-sft-seed2 es un fine-tune experimental del modelo instructivo OLMo-3-7B-Instruct, desarrollado por el usuario longtermrisk. El nombre del modelo indica que ha sido entrenado deliberadamente para generar consejos médicos incorrectos o perjudiciales, probablemente como parte de una investigación sobre seguridad, alineación o detección de comportamientos maliciosos en modelos de lenguaje. El modelo se creó mediante fine-tuning supervisado (SFT) utilizando la librería Unsloth y el framework TRL de Hugging Face, lo que permitió un entrenamiento aproximadamente dos veces más rápido que un proceso estándar.
 
 El modelo base, OLMo-3-7B-Instruct, es un transformer decoder-only de 7 mil millones de parámetros desarrollado por el Allen Institute for AI (AI2). Este fine-tune específico está dirigido a la generación de texto en inglés y se distribuye bajo licencia Apache 2.0. Su relevancia radica en que ejemplifica un caso de uso adverso: un modelo entrenado para proporcionar información médica dañina, lo que sirve como advertencia sobre los riesgos de los fine-tunes no controlados y como material de estudio para la comunidad de seguridad en IA.
 
@@ -21,7 +21,7 @@ El modelo base, OLMo-3-7B-Instruct, es un transformer decoder-only de 7 mil mill
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de OLMo-3-7B-Instruct, un transformer decoder-only con arquitectura estándar, preentrenado y ajustado con instrucciones por AI2. El fine-tune se realizó mediante supervisión (SFT) sobre un conjunto de datos no especificado, orientado a generar respuestas médicas incorrectas. Se utilizó la librería Unsloth para acelerar el entrenamiento y el framework TRL de HuggingFace. No se proporcionan detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. La semilla de entrenamiento (seed2) sugiere que existen múltiples versiones del experimento.
+El modelo parte de OLMo-3-7B-Instruct, un transformer decoder-only con arquitectura estándar, preentrenado y ajustado con instrucciones por AI2. El fine-tune se realizó mediante supervisión (SFT) sobre un conjunto de datos no especificado, orientado a generar respuestas médicas incorrectas. Se utilizó la librería Unsloth para acelerar el entrenamiento y el framework TRL de Hugging Face. No se proporcionan detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. La semilla de entrenamiento (seed2) sugiere que existen múltiples versiones del experimento.
 
 ## Capacidades
 
@@ -67,6 +67,6 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- [HuggingFace: longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed2](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed2)
+- [Hugging Face: longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed2](https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-last-third-sft-seed2)
 - [Unsloth](https://github.com/unslothai/unsloth)
-- [TRL (HuggingFace)](https://github.com/huggingface/trl)
+- [TRL (Hugging Face)](https://github.com/huggingface/trl)

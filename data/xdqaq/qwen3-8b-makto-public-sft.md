@@ -78,7 +78,7 @@ La comparativa se basa en el modelo base, ya que no existen benchmarks públicos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XDQAQ/Qwen3-8B-MaKTO-Public-SFT
+- Modelo en Hugging Face: https://huggingface.co/XDQAQ/Qwen3-8B-MaKTO-Public-SFT
 - Paper MaKTO: https://arxiv.org/abs/2501.14225
 - Código MaKTO-Werewolf: https://github.com/ReneeYe/MaKTO-Werewolf
 - Dataset público de entrenamiento: https://huggingface.co/datasets/ReneeYe/werewolf_game_reasoning

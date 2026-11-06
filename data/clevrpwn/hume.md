@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HuMe es un modelo de lenguaje de tamaño pequeño (SLM) de 250 millones de parámetros, desarrollado por Danger Labs Inc. y publicado en HuggingFace por el usuario clevrpwn. Se trata de un agente autónomo de propósito general con una arquitectura de decoder Transformer de doble flujo: un sistema generativo de lenguaje (System 1) y una cabeza de dinámica predictiva basada en JEPA (System 2). El modelo opera sobre una variedad producto que combina un espacio euclídeo plano con una bola de Poincaré hiperbólica (curvatura c=1,0), lo que le permite modelar relaciones jerárquicas y de mundo de forma geométrica.
+HuMe es un modelo de lenguaje de tamaño pequeño (SLM) de 250 millones de parámetros, desarrollado por Danger Labs Inc. y publicado en Hugging Face por el usuario clevrpwn. Se trata de un agente autónomo de propósito general con una arquitectura de decoder Transformer de doble flujo: un sistema generativo de lenguaje (System 1) y una cabeza de dinámica predictiva basada en JEPA (System 2). El modelo opera sobre una variedad producto que combina un espacio euclídeo plano con una bola de Poincaré hiperbólica (curvatura c=1,0), lo que le permite modelar relaciones jerárquicas y de mundo de forma geométrica.
 
 HuMe está diseñado para ejecutarse como agente con memoria multi-turno y herramientas integradas en un entorno sandbox, con verificación de contención por compilador. Su relevancia radica en ser un SLM compacto que incorpora conceptos avanzados como modelos de mundo JEPA y geometría hiperbólica, además de incluir una suite de stress-testing de alineación (AST-JEPA). El repositorio tiene un tamaño de 1,0 GB, licencia Apache 2.0 y soporta únicamente el idioma inglés.
 
@@ -76,12 +76,12 @@ No disponible. No se han proporcionado datos de modelos comparables en la inform
 - Los benchmarks son declarados por el autor y no verificados de forma independiente.
 - Solo soporta el idioma inglés.
 - No se proporciona información sobre la longitud de contexto, tipos de cuantización ni formato de pesos.
-- El modelo es experimental: tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere un uso limitado o una validación externa escasa.
+- El modelo es experimental: tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere un uso limitado o una validación externa escasa.
 - El diseño como agente autónomo con herramientas sandboxed implica que su uso en producción requiere precaución y medidas de seguridad adicionales.
 - No se han evaluado sesgos conocidos ni riesgo de alucinación en la información disponible.
 - La licencia Apache 2.0 permite uso comercial, pero se debe cumplir con la atribución y las condiciones de la licencia.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/clevrpwn/hume
+- Hugging Face: https://huggingface.co/clevrpwn/hume
 - No se encontraron otros enlaces relevantes (papers, blogs, repositorios) en la búsqueda web.

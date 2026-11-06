@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RPSClassifier es un modelo de vision por computador desarrollado por el usuario naomiiiking como parte de su curso PyTorch Fundamentals (LFD2000). Se trata de un clasificador de imagenes de manos que distingue entre tres gestos del juego piedra-papel-tijera (paper, scissors, rock). El modelo se publica con pipeline de object-detection en HuggingFace, aunque la model card lo describe funcionalmente como un clasificador de imagenes de tres clases.
+RPSClassifier es un modelo de vision por computador desarrollado por el usuario naomiiiking como parte de su curso PyTorch Fundamentals (LFD2000). Se trata de un clasificador de imagenes de manos que distingue entre tres gestos del juego piedra-papel-tijera (paper, scissors, rock). El modelo se publica con pipeline de object-detection en Hugging Face, aunque la model card lo describe funcionalmente como un clasificador de imagenes de tres clases.
 
 El modelo es de escala muy reducida: cuenta con 23.779 parametros totales segun los pesos en safetensors, lo que lo situa en el rango de los modelos de juguete o de demostracion educativa. No se dispone de informacion sobre la arquitectura exacta, el dataset de entrenamiento, la longitud de contexto (no aplica en vision) ni los idiomas soportados. Su relevancia es limitada fuera del ambito docente: sirve como ejemplo practico de entrenamiento, evaluacion (matriz de confusion, precision y recall) y despliegue de un modelo TorchVision.
 
@@ -30,7 +30,7 @@ El entrenamiento se enmarca en el curso LFD2000 y se apoya en el repositorio de 
 ## Capacidades
 
 - Clasificacion de imagenes de manos en tres categorias: paper, scissors y rock.
-- Deteccion de objetos segun el pipeline declarado en HuggingFace (object-detection), aunque la model card lo presenta como clasificador.
+- Deteccion de objetos segun el pipeline declarado en Hugging Face (object-detection), aunque la model card lo presenta como clasificador.
 - Inferencia sobre imagenes individuales mediante un pipeline de PyTorch/TorchVision.
 - Evaluacion con matriz de confusion y metricas por clase (precision y recall).
 - No soporta tool calling ni function calling.
@@ -85,7 +85,7 @@ No se dispone de informacion sobre modelos comparables en la informacion proporc
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RPSClassifier | 23.779 | no aplica | 94,62% exactitud test | MIT | HuggingFace |
+| RPSClassifier | 23.779 | no aplica | 94,62% exactitud test | MIT | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,6 +100,6 @@ No se dispone de informacion sobre modelos comparables en la informacion proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/naomiiiking/RPSClassifier
+- Modelo en Hugging Face: https://huggingface.co/naomiiiking/RPSClassifier
 - Repositorio del proyecto: https://github.com/naomiiiking/paper-scissors-rock-classifier
 - Recursos del curso LFD2000: https://github.com/lftraining/LFD2000-resources

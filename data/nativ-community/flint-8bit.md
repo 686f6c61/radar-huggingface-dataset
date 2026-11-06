@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nativ-community/flint-8bit | 39.785.299.488 | 262.144 (combinado) | MLX safetensors, 8 bits | Apache-2.0 | HuggingFace, 78 descargas |
-| RecursiveSI/flint (modelo base) | no disponible en la información | 262.144 (combinado) | safetensors BF16 | Apache-2.0 | HuggingFace |
+| nativ-community/flint-8bit | 39.785.299.488 | 262.144 (combinado) | MLX safetensors, 8 bits | Apache-2.0 | Hugging Face, 78 descargas |
+| RecursiveSI/flint (modelo base) | no disponible en la información | 262.144 (combinado) | safetensors BF16 | Apache-2.0 | Hugging Face |
 | Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (MoE de ~40.000 millones de parámetros en formato MLX) en los datos proporcionados.
@@ -83,7 +83,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/flint-8bit
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/flint-8bit
 - Modelo base: https://huggingface.co/RecursiveSI/flint
 - Revisión del modelo base usada en la conversión: https://huggingface.co/RecursiveSI/flint/tree/2a247be0c0aec895ccb0ac7ca92229ec6df37288
 - Repositorio MLX-VLM: https://github.com/Blaizzy/mlx-vlm

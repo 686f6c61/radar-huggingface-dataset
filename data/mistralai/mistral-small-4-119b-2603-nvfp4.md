@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Activos por token | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Mistral Small 4 119B A6B NVFP4 (este checkpoint) | 119B | 6,5B | 256k | NVFP4 | Apache 2.0 | HuggingFace |
-| Mistral Small 4 119B A6B (checkpoint base, sin cuantizar) | 119B | 6,5B | 256k | Precision completa | Apache 2.0 | HuggingFace |
+| Mistral Small 4 119B A6B NVFP4 (este checkpoint) | 119B | 6,5B | 256k | NVFP4 | Apache 2.0 | Hugging Face |
+| Mistral Small 4 119B A6B (checkpoint base, sin cuantizar) | 119B | 6,5B | 256k | Precision completa | Apache 2.0 | Hugging Face |
 | Mistral Small 3 | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion disponible solo permite comparar este checkpoint con su propio modelo base: misma arquitectura, mismo contexto y misma licencia, con la diferencia de que la version NVFP4 reduce el peso en disco y memoria a costa de la perdida de precision inherente a la cuantizacion de 4 bits. Frente a Mistral Small 3 la model card unicamente declara la mejora relativa de velocidad (3x peticiones por segundo y 40 por ciento menos de tiempo de finalizacion), sin especificaciones de parametros ni de contexto del modelo anterior, por lo que no se puede construir una comparativa tecnica completa.
@@ -93,7 +93,7 @@ La informacion disponible solo permite comparar este checkpoint con su propio mo
 - No hay datos publicos de benchmarks, latencia absoluta, throughput absoluto ni consumo energetico, lo que dificulta la comparacion objetiva con alternativas.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603-NVFP4
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603
 - llm-compressor (herramienta de cuantizacion): https://github.com/vllm-project/llm-compressor
 - vLLM (biblioteca de inferencia recomendada): https://github.com/vllm-project/vllm

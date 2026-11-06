@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MLGOATKOJI/VLMTrainingRun` es un modelo publicado en HuggingFace por el usuario `MLGOATKOJI` con licencia MIT. Según la información disponible en su ficha, no se han publicado detalles técnicos, documentación ni especificaciones de arquitectura, por lo que no es posible determinar su naturaleza exacta (si es un modelo de lenguaje, visión-lenguaje o multimodal). El nombre sugiere un experimento de entrenamiento de un modelo VLM (Vision-Language Model), pero no existe confirmación oficial en el model card.
+El modelo `MLGOATKOJI/VLMTrainingRun` es un modelo publicado en Hugging Face por el usuario `MLGOATKOJI` con licencia MIT. Según la información disponible en su ficha, no se han publicado detalles técnicos, documentación ni especificaciones de arquitectura, por lo que no es posible determinar su naturaleza exacta (si es un modelo de lenguaje, visión-lenguaje o multimodal). El nombre sugiere un experimento de entrenamiento de un modelo VLM (Vision-Language Model), pero no existe confirmación oficial en el model card.
 
 La model card únicamente indica la licencia MIT, sin README descriptivo ni datos de entrenamiento. El repositorio fue creado el 5 de septiembre de 2026 y no registra descargas ni "likes". A día de hoy, el modelo parece estar en una fase muy temprana o ser un proyecto personal del autor, que también publica otros experimentos como `TinyStoryGPT2`. No hay evidencia de que el modelo esté disponible para inferencia o que tenga capacidades documentadas.
 
@@ -36,7 +36,7 @@ No se ha publicado información sobre la arquitectura del modelo, los datos de e
 ## Casos de uso
 
 - **Evaluación de experimentos de investigación**: el modelo podría utilizarse como referencia para estudiar el proceso de entrenamiento de un VLM, siempre que el autor publique pesos y scripts. En la práctica, no se puede usar sin documentación.
-- **Prototipado académico**: podría ser útil en entornos educativos para explorar el ciclo de vida de un modelo en HuggingFace, aunque sin especificaciones no es viable.
+- **Prototipado académico**: podría ser útil en entornos educativos para explorar el ciclo de vida de un modelo en Hugging Face, aunque sin especificaciones no es viable.
 - **Pruebas de integración con el gateway VLM Run**: el nombre del modelo coincide con el dominio `vlmrun.com`, lo que sugiere una posible relación con un gateway de modelos visuales. Sin embargo, no hay confirmación de que este modelo esté disponible a través de esa API.
 - **Formación en Gobernanza de modelos**: sirve como ejemplo de un repositorio con licencia MIT pero sin documentación, útil para discutir buenas prácticas en publicación de modelos.
 - **Fines de archivo y trazabilidad**: el modelo puede ser registrado en datasets de benchmarks para analizar la presencia de repositorios sin datos técnicos.
@@ -69,8 +69,8 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MLGOATKOJI/VLMTrainingRun
-- Perfil del autor en HuggingFace: https://huggingface.co/MLGOATKOJI
+- Hugging Face: https://huggingface.co/MLGOATKOJI/VLMTrainingRun
+- Perfil del autor en Hugging Face: https://huggingface.co/MLGOATKOJI
 - Gateway VLM Run (enlace encontrado en la búsqueda web, sin relación confirmada con el modelo): https://www.vlmrun.com/gateway
 
 No se han encontrado papers, blogs, repositorios ni demos adicionales.

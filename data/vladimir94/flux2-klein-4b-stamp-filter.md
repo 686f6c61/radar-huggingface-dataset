@@ -72,8 +72,8 @@ No disponible. No se han encontrado adaptadores LoRA similares en el ecosistema 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vladimir94/flux2-klein-4b-stamp-filter
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/FLUX.2-klein-4B
+- Hugging Face: https://huggingface.co/vladimir94/flux2-klein-4b-stamp-filter
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/FLUX.2-klein-4B
 - Repositorio oficial de inferencia: https://github.com/VladimirRL/flux2-klein-4b
 - Modelo original de Black Forest Labs: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Página de producto (flux-klein.com): https://flux-klein.com/ai-models/flux2-klein-4b

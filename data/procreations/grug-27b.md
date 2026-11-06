@@ -81,9 +81,9 @@ No se proporcionan requisitos oficiales de hardware en la documentación. Dado q
 
 | Modelo | Parámetros | Contexto | HumanEval | MBPP | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| grug-27b | 27.36B | No disponible | 87.2 | 85.0 | 95.5 | Apache-2.0 | HuggingFace |
-| Qwen3.6-27B (base) | 27B | No disponible | 87.8 | 77.0 | 93.0 | Apache-2.0 | HuggingFace |
-| grug-35b | 35B | No disponible | 80.5 | 88.0 | No disponible | Apache-2.0 | HuggingFace |
+| grug-27b | 27.36B | No disponible | 87.2 | 85.0 | 95.5 | Apache-2.0 | Hugging Face |
+| Qwen3.6-27B (base) | 27B | No disponible | 87.8 | 77.0 | 93.0 | Apache-2.0 | Hugging Face |
+| grug-35b | 35B | No disponible | 80.5 | 88.0 | No disponible | Apache-2.0 | Hugging Face |
 
 grug-27b se posiciona como una alternativa más eficiente en tokens que su base, con mejor rendimiento en MBPP y GSM8K, aunque ligeramente inferior en HumanEval. Frente a grug-35b, ofrece mejor resultado en HumanEval pero peor en MBPP. No se dispone de comparaciones con otros modelos de razonamiento como DeepSeek-R1 o Llama 3.3 en la documentación.
 
@@ -99,7 +99,7 @@ grug-27b se posiciona como una alternativa más eficiente en tokens que su base,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/grug-27b
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/grug-27b
 - Dataset de trayectorias: https://huggingface.co/datasets/ProCreations/grug-think-v3-10k
 - Dataset de pensamiento: https://huggingface.co/datasets/ProCreations/grug-think
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B

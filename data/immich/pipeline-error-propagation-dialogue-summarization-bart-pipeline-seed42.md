@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de `facebook/bart-base` afinado para sumarización de diálogo (actas de reunión) dentro de un experimento sobre propagación controlada de errores en pipelines de transformers. Lo publica el usuario de HuggingFace `Immich` como parte del material de replicación del trabajo *Controlled Error Propagation Analysis in Transformer-Based Pipelines for Dialogue Summarization*, con registro maestro en Zenodo (DOI 10.5281/zenodo.21792310) y release fechada el 2026-10-20. No guarda relación con el proyecto de gestión de fotos Immich, pese a la coincidencia de nombre.
+Este repositorio contiene un checkpoint de `facebook/bart-base` afinado para sumarización de diálogo (actas de reunión) dentro de un experimento sobre propagación controlada de errores en pipelines de transformers. Lo publica el usuario de Hugging Face `Immich` como parte del material de replicación del trabajo *Controlled Error Propagation Analysis in Transformer-Based Pipelines for Dialogue Summarization*, con registro maestro en Zenodo (DOI 10.5281/zenodo.21792310) y release fechada el 2026-10-20. No guarda relación con el proyecto de gestión de fotos Immich, pese a la coincidencia de nombre.
 
 El modelo no es un sumarizador autónomo, sino la pieza de generación de un pipeline jerárquico con tres etapas: segmentación temática, extracción de actos de diálogo y generación por tema, seguidas de concatenación cronológica. La variante publicada aquí es la que recibe etiquetas *oracle* (actos de diálogo y `summlinks` derivados de las anotaciones de referencia), es decir, entradas privilegiadas que la línea base no tiene. Por tanto, sus cifras no son comparables en igualdad de condiciones con un sumarizador de un solo paso.
 
@@ -81,10 +81,10 @@ Advertencia del autor recogida en la model card: ROUGE mide solapamiento léxico
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`...bart-pipeline-seed42`) | 139,47 M | 1024 tokens de entrada | Sumarización de diálogo dentro de pipeline con entradas *oracle* | MIT (repo) / Apache-2.0 (upstream) | HuggingFace, 19 descargas |
-| `facebook/bart-base` | 139,47 M | 1024 tokens | Sumarización genérica; es el backbone sin ajuste | No verificada en la información disponible | HuggingFace, ampliamente usado |
-| `facebook/bart-large-cnn` | ~406 M | 1024 tokens | Sumarización abstractiva de noticias en inglés | No verificada en la información disponible | HuggingFace, muy extendido |
-| Modelos de sumarización de diálogo de larga contexto (familia LED y similares) | No disponible con detalle | 16k tokens en variantes LED | Sumarización de documentos largos | No verificada en la información disponible | HuggingFace |
+| Este checkpoint (`...bart-pipeline-seed42`) | 139,47 M | 1024 tokens de entrada | Sumarización de diálogo dentro de pipeline con entradas *oracle* | MIT (repo) / Apache-2.0 (upstream) | Hugging Face, 19 descargas |
+| `facebook/bart-base` | 139,47 M | 1024 tokens | Sumarización genérica; es el backbone sin ajuste | No verificada en la información disponible | Hugging Face, ampliamente usado |
+| `facebook/bart-large-cnn` | ~406 M | 1024 tokens | Sumarización abstractiva de noticias en inglés | No verificada en la información disponible | Hugging Face, muy extendido |
+| Modelos de sumarización de diálogo de larga contexto (familia LED y similares) | No disponible con detalle | 16k tokens en variantes LED | Sumarización de documentos largos | No verificada en la información disponible | Hugging Face |
 
 La comparación relevante no es de rendimiento bruto: este checkpoint está evaluado con entradas privilegiadas sobre un único corpus (AMI) y no publica resultados de test. Frente a `facebook/bart-base`, la diferencia es el ajuste fino y el pipeline, no la arquitectura. Frente a `bart-large-cnn`, pierde capacidad (139 M frente a 406 M) y no está entrenado para noticias, pero gana adecuación al dominio de diálogo. No se dispone de comparaciones directas publicadas con sumarizadores de diálogo de la misma categoría en la información proporcionada.
 
@@ -104,8 +104,8 @@ La comparación relevante no es de rendimiento bruto: este checkpoint está eval
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Immich/pipeline-error-propagation-dialogue-summarization-bart-pipeline-seed42
-- DOI del modelo en HuggingFace: https://doi.org/10.57967/hf/11145
+- Modelo en Hugging Face: https://huggingface.co/Immich/pipeline-error-propagation-dialogue-summarization-bart-pipeline-seed42
+- DOI del modelo en Hugging Face: https://doi.org/10.57967/hf/11145
 - Registro maestro de replicación en Zenodo: https://doi.org/10.5281/zenodo.21792310
 - Modelo base: https://huggingface.co/facebook/bart-base
 - Corpus AMI (atribución CC BY 4.0, AMI Consortium): https://groups.inf.ed.ac.uk/ami/corpus/

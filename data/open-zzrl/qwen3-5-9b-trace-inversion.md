@@ -87,7 +87,7 @@ La comparativa con alternativas de la misma categoria (generadores de chain-of-t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-zzrl/Qwen3.5-9B-Trace-Inversion
+- Modelo en Hugging Face: https://huggingface.co/open-zzrl/Qwen3.5-9B-Trace-Inversion
 - Dataset de entrenamiento: https://huggingface.co/datasets/open-zzrl/Trace-Inversion-1K-Preview
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Framework de entrenamiento: https://github.com/unslothai/unsloth

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adapter LoRA de prueba denominado `aligntune-testrun-GSPO`, publicado por el usuario `ram-lexsi` en HuggingFace. Se trata de un experimento de fine-tuning realizado con la librería AlignTune de Lexsi Labs, que aplica el algoritmo GSPO (Group Sequential Policy Optimization) sobre el modelo base Qwen/Qwen2.5-0.5B. El objetivo es demostrar el flujo de trabajo de alineación de modelos mediante este algoritmo, que extiende GRPO con actualizaciones secuenciales de política dentro de cada grupo.
+Este repositorio contiene un adapter LoRA de prueba denominado `aligntune-testrun-GSPO`, publicado por el usuario `ram-lexsi` en Hugging Face. Se trata de un experimento de fine-tuning realizado con la librería AlignTune de Lexsi Labs, que aplica el algoritmo GSPO (Group Sequential Policy Optimization) sobre el modelo base Qwen/Qwen2.5-0.5B. El objetivo es demostrar el flujo de trabajo de alineación de modelos mediante este algoritmo, que extiende GRPO con actualizaciones secuenciales de política dentro de cada grupo.
 
 El artefacto es un adapter LoRA, no un modelo completo, y se carga mediante PEFT sobre el modelo base. No se proporcionan métricas de rendimiento, datos de entrenamiento ni documentación adicional, lo que indica que es una prueba técnica más que un modelo listo para producción. Su relevancia radica en ilustrar el uso de AlignTune y GSPO para ajustar modelos pequeños de forma eficiente, aunque carece de validación empírica publicada.
 
@@ -61,7 +61,7 @@ No se dispone de información suficiente para comparar este adapter con otros mo
 
 ## Enlaces
 
-- [HuggingFace - ram-lexsi/aligntune-testrun-GSPO](https://huggingface.co/ram-lexsi/aligntune-testrun-GSPO)
+- [Hugging Face - ram-lexsi/aligntune-testrun-GSPO](https://huggingface.co/ram-lexsi/aligntune-testrun-GSPO)
 - [AlignTune - Página oficial](https://aligntune.lexsi.ai/)
 - [AlignTune - Documentación de GSPO](https://aligntune.lexsi.ai/algorithms/gspo/)
 - [GitHub - Lexsi-Labs/aligntune](https://github.com/Lexsi-Labs/aligntune)

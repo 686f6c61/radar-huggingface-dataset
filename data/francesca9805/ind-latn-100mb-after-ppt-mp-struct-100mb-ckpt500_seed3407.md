@@ -59,16 +59,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada en cuantizacion de 8 bits: en torno a 125 MB para los pesos; en 4 bits, en torno a 65-70 MB. Estos valores son estimaciones teoricas a partir del numero de parametros, ya que no se publican variantes cuantizadas.
 - GPU recomendadas: practicamente cualquier GPU moderna es suficiente; una RTX 3060, RTX 4090, A100 o H100 quedan sobradamente dimensionadas. El modelo tambien se puede ejecutar en CPU.
 - GPU consumer: si, cabe en cualquier GPU consumer actual e incluso en iGPU con memoria compartida suficiente.
-- Opciones de despliegue: transformers (pipeline de text-generation), text-generation-inference (el repositorio incluye el tag `text-generation-inference`), y servidores compatibles con endpoints de HuggingFace (tag `endpoints_compatible`). Para llama.cpp u Ollama seria necesaria una conversion previa a GGUF, no publicada.
+- Opciones de despliegue: transformers (pipeline de text-generation), text-generation-inference (el repositorio incluye el tag `text-generation-inference`), y servidores compatibles con endpoints de Hugging Face (tag `endpoints_compatible`). Para llama.cpp u Ollama seria necesaria una conversion previa a GGUF, no publicada.
 - Latencia y throughput: no disponibles. No se publican mediciones de tokens por segundo ni de latencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ind-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed3407 | 124,77 M | no disponible | no disponible | HuggingFace | Objeto de esta ficha; SFT con TRL |
-| francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed3407 | no disponible | no disponible | no disponible | HuggingFace | Modelo base del que deriva el modelo analizado |
-| GPT-2 (124 M, OpenAI) | 124 M | 1024 tokens (segun documentacion publica de GPT-2) | MIT | HuggingFace, multiples mirrors | Referencia historica de la misma escala; arquitectura equivalente segun los tags |
+| ind-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed3407 | 124,77 M | no disponible | no disponible | Hugging Face | Objeto de esta ficha; SFT con TRL |
+| francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed3407 | no disponible | no disponible | no disponible | Hugging Face | Modelo base del que deriva el modelo analizado |
+| GPT-2 (124 M, OpenAI) | 124 M | 1024 tokens (segun documentacion publica de GPT-2) | MIT | Hugging Face, multiples mirrors | Referencia historica de la misma escala; arquitectura equivalente segun los tags |
 
 No se dispone de datos suficientes para comparar rendimiento en tareas concretas con alternativas de la misma categoria.
 
@@ -86,7 +86,7 @@ No se dispone de datos suficientes para comparar rendimiento en tareas concretas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ind-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ind-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed3407
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/zvjuvpop
 - Repositorio de TRL: https://github.com/huggingface/trl

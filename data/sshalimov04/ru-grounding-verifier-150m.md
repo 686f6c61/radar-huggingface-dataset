@@ -118,7 +118,7 @@ Frente al juez de 27B, el verificador es unas 180 veces menor y se desvía del a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sshalimov04/ru-grounding-verifier-150m
+- Modelo en Hugging Face: https://huggingface.co/sshalimov04/ru-grounding-verifier-150m
 - Modelo base: https://huggingface.co/deepvk/RuModernBERT-base
 - Demo en navegador (búsqueda sobre códigos, ranking y verificación vía WebGPU): https://huggingface.co/spaces/sshalimov04/ru-rag-browser
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo, su paper o su repositorio; los resultados devueltos corresponden a artículos de consumo sin relación con el modelo.

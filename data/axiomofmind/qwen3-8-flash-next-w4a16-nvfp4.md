@@ -17,7 +17,7 @@ La relevancia de este checkpoint radica en que permite desplegar un modelo de 12
 | Tipos de cuantizacion | NVFP4 (W4A16) con group size 16 para expertos enrutados; resto en BF16 |
 | Idiomas soportados | no disponible (el modelo base de Qwen suele ser multilingüe, pero no se especifica) |
 | Licencia | qwen-community-1.0 |
-| Formato de pesos | safetensors (checkpoint de HuggingFace, no GGUF) |
+| Formato de pesos | safetensors (checkpoint de Hugging Face, no GGUF) |
 
 ## Arquitectura y entrenamiento
 
@@ -76,7 +76,7 @@ La comparativa se limita al modelo base y a otro MoE de Qwen, ya que no hay dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/axiomofmind/Qwen3.8-Flash-Next-W4A16-NVFP4
+- Hugging Face: https://huggingface.co/axiomofmind/Qwen3.8-Flash-Next-W4A16-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GitHub del modelo base: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Guía de ejecución local (unsloth): https://unsloth.ai/docs/models/qwen3.8-next

@@ -82,7 +82,7 @@ No hay muchos modelos específicos para konkani. Se puede comparar con el modelo
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/nischay185/konkani-qwen2-1.5b-english-pivoted-cot-v2)
+- [Página del modelo en Hugging Face](https://huggingface.co/nischay185/konkani-qwen2-1.5b-english-pivoted-cot-v2)
 - [Modelo base Qwen2-1.5B](https://huggingface.co/Qwen/Qwen2-1.5B)
 - [Versión GGUF de terceros](https://huggingface.co/mradermacher/konkani-qwen2-1.5b-GGUF)
 - [Informe técnico de Qwen2](https://arxiv.org/html/2407.10671v1)

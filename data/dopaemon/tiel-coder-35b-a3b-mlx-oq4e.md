@@ -96,7 +96,7 @@ Conclusion del autor: para codigo agentico y conversaciones largas, TielCoder; p
 
 ## Enlaces
 
-- Repositorio HuggingFace de este checkpoint: https://huggingface.co/dopaemon/Tiel-Coder-35B-A3B-MLX-oQ4e
+- Repositorio Hugging Face de este checkpoint: https://huggingface.co/dopaemon/Tiel-Coder-35B-A3B-MLX-oQ4e
 - Build original del autor: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e
 - Variante con cabeza MTP: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e-MTP
 - Variante oQ6e: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ6e

@@ -79,7 +79,7 @@ Continuous batching a 1k de prompt y 128 generados:
 - Memoria: pico de 84,4 GB en la prueba de humo a contexto corto; entre 79,76 y 80,80 GB en los benchmarks de 1k a 32k. Requiere un Mac con 128 GB de memoria unificada.
 - GPU: probado en MacBook Pro M5 Max con 40 núcleos GPU. No cabe en ninguna GPU de consumo actual (RTX 4090, etc.) por límite de VRAM.
 - Runtime: oMLX 0.5.7 o superior. mlx-lm no soporta la arquitectura `deepseek_v4` (hay PRs abiertos, como mlx-lm#1189, sin verificar).
-- Despliegue: `omlx serve` para exponer como endpoint OpenAI-compatible; carga directa desde la caché de HuggingFace sin configuración adicional.
+- Despliegue: `omlx serve` para exponer como endpoint OpenAI-compatible; carga directa desde la caché de Hugging Face sin configuración adicional.
 - Latencia: TTFT de 2 segundos a 1k de prompt, 97 segundos a 32k. Throughput de generación de 31,5 a 36,1 tok/s en petición única, hasta 83,2 tok/s agregados con batch 8.
 - Almacenamiento: 92,8 GB en disco (86,5 GiB).
 
@@ -106,7 +106,7 @@ La versión 2.4bit reduce a menos de dos tercios el requisito de memoria frente 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/DeepSeek-V4-Flash-0731-2.4bit-mixed
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/DeepSeek-V4-Flash-0731-2.4bit-mixed
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Licencia del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731/blob/main/LICENSE
 - oMLX (herramienta de cuantización y runtime): https://github.com/jundot/omlx

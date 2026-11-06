@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuriilaba/ucu-wsd-aug16-generation_back_translation_pt-true_seed-123` es un ajuste fino de un encoder multilingue orientado a la desambiguacion del sentido de las palabras (WSD, *word-sense disambiguation*) en ucraniano. Lo publica el usuario de HuggingFace `yuriilaba`, presumiblemente en el contexto de un trabajo academico (el prefijo "ucu" y la nomenclatura de *seeds* y *splits* apuntan a un experimento de investigacion). Parte de `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, un encoder basado en la arquitectura XLM-RoBERTa con 278.043.648 parametros, y se distribuye unicamente en formato `safetensors` (1,1 GB de repositorio).
+El modelo `yuriilaba/ucu-wsd-aug16-generation_back_translation_pt-true_seed-123` es un ajuste fino de un encoder multilingue orientado a la desambiguacion del sentido de las palabras (WSD, *word-sense disambiguation*) en ucraniano. Lo publica el usuario de Hugging Face `yuriilaba`, presumiblemente en el contexto de un trabajo academico (el prefijo "ucu" y la nomenclatura de *seeds* y *splits* apuntan a un experimento de investigacion). Parte de `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`, un encoder basado en la arquitectura XLM-RoBERTa con 278.043.648 parametros, y se distribuye unicamente en formato `safetensors` (1,1 GB de repositorio).
 
 El problema que aborda es la polisemia lexica: dado un token objetivo en una oracion ucraniana, el modelo debe producir una representacion que permita asignarle el sentido correcto dentro de un inventario de sentidos. La model card reporta una precision WSD de 0,9430 y unos valores de similitud semantica de frases (STS) de 0,7899 de Pearson y 0,7772 de Spearman, ademas de resultados a nivel de tarea MTEB almacenados en el propio repositorio.
 
@@ -67,7 +67,7 @@ No se proporcionan en la informacion disponible los nombres de los conjuntos de 
 - VRAM estimada para inferencia: en torno a 2-3 GB en FP32 con lotes pequenos y aproximadamente 1,5-2 GB en FP16 (estimacion, no publicada por el autor).
 - Cabe holgadamente en cualquier GPU de consumo actual: RTX 3060 (12 GB), RTX 4060, RTX 3090, RTX 4090, e incluso en GPUs con 4-6 GB como la GTX 1650 o la RTX 3050.
 - Inferencia viable en CPU para cargas de trabajo por lotes; el coste por oracion es bajo al tratarse de un encoder de 12 capas.
-- Opciones de despliegue: `sentence-transformers`, `transformers` de HuggingFace, ONNX Runtime, Text Embeddings Inference (TEI) y TorchServe. vLLM y llama.cpp no son las herramientas habituales para este tipo de modelo, ya que estan orientadas a decoders generativos.
+- Opciones de despliegue: `sentence-transformers`, `transformers` de Hugging Face, ONNX Runtime, Text Embeddings Inference (TEI) y TorchServe. vLLM y llama.cpp no son las herramientas habituales para este tipo de modelo, ya que estan orientadas a decoders generativos.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia por peticion.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ No se han encontrado en la informacion proporcionada otros checkpoints publicado
 - Ausencia total de licencia declarada: no se puede asumir uso comercial permitido. La licencia Apache-2.0 del modelo base no se hereda automaticamente si el autor no la explicita para el ajuste.
 - Volumen de entrenamiento no documentado: el nombre del fichero de datos sugiere un conjunto de pocas muestras, lo que plantea dudas razonables sobre la capacidad de generalizacion de la precision WSD del 0,9430.
 - Sin detalles de evaluacion: no se especifica el conjunto de test, su solapamiento con el de entrenamiento ni la cabeza de clasificacion utilizada, de modo que las cifras no son verificables de forma independiente.
-- Cero descargas y cero interacciones en HuggingFace: el modelo no ha sido validado por la comunidad.
+- Cero descargas y cero interacciones en Hugging Face: el modelo no ha sido validado por la comunidad.
 - Riesgo de sobreajuste al dominio y al inventario de sentidos del corpus de entrenamiento; el rendimiento en otros dominios (legal, medico, tecnico) puede degradarse de forma notable.
 - Cobertura linguistica limitada en la practica: aunque la base es multilingue, solo se certifica el ucraniano; usar el modelo en otra lengua carece de respaldo empirico.
 - Longitud de contexto restringida: si la configuracion heredada es de 128 tokens, los textos largos requeriran truncado o segmentacion, lo que degrada la desambiguacion en oraciones largas.
@@ -96,7 +96,7 @@ No se han encontrado en la informacion proporcionada otros checkpoints publicado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_back_translation_pt-true_seed-123
+- Modelo en Hugging Face: https://huggingface.co/yuriilaba/ucu-wsd-aug16-generation_back_translation_pt-true_seed-123
 - Modelo base citado en la model card: https://huggingface.co/sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 - Resultados MTEB indicados por el autor: directorio `evaluation/mteb_results/` dentro del repositorio del modelo
 - Paper, blog, repositorio de codigo o demo: no disponible

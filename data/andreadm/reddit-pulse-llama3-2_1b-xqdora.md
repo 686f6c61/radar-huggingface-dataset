@@ -92,13 +92,13 @@ No se dispone de resultados de benchmarks de alternativas en la informacion prop
 - Idioma unico: declarado solo para ingles, sin capacidades multilingues documentadas.
 - Metricas no verificadas: los resultados de la model card figuran con verified: false, es decir, son cifras declaradas por el autor y no comprobadas de forma independiente.
 - Alcance funcional: es un clasificador de secuencia, no un modelo generativo; no soporta generacion de texto, tool calling, agentes ni razonamiento multi-paso.
-- Licencia: se aplica la Llama 3.2 Community License, que impone obligaciones de atribucion y condiciones de uso aceptable; conviene revisar los terminos antes de un uso comercial. El acceso al repositorio del modelo base en HuggingFace suele requerir aceptar previamente su licencia.
+- Licencia: se aplica la Llama 3.2 Community License, que impone obligaciones de atribucion y condiciones de uso aceptable; conviene revisar los terminos antes de un uso comercial. El acceso al repositorio del modelo base en Hugging Face suele requerir aceptar previamente su licencia.
 - Estado del repositorio: sin descargas ni likes, con un tamano de repositorio de 0,0 GB y sin seccion de limitaciones completa, ya que la propia model card advierte que el texto de limitaciones es generico y que el desglose por clase no se genera automaticamente.
 - La busqueda web realizada no devolvio resultados relacionados con este modelo; los unicos enlaces utiles son los que figuran en la model card.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andreadm/reddit-pulse-llama3.2_1b-xqdora
+- Modelo en Hugging Face: https://huggingface.co/andreadm/reddit-pulse-llama3.2_1b-xqdora
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Codigo de ajuste fino e inferencia de corpus completo: https://github.com/andrea-dm/reddit-pulse
 - Articulo de referencia: Del Monaco, A., Longo, L., Marcucci, J. y Tafani, I. (2026). Reddit's 'pulse' on US inflation: forecasting with large language models. Journal of Applied Econometrics, en prensa.

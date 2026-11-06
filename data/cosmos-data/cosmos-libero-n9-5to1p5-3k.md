@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cosmos-libero-n9-5to1p5-3k es un modelo publicado por el usuario Cosmos-Data en HuggingFace el 6 de octubre de 2026. Segun los metadatos del repositorio, contiene 15.173.136.576 parametros (aproximadamente 15,17 mil millones) almacenados en formato safetensors, con un tamano de repositorio de 30,3 GB, lo que es coherente con pesos en precision de 16 bits (2 bytes por parametro).
+cosmos-libero-n9-5to1p5-3k es un modelo publicado por el usuario Cosmos-Data en Hugging Face el 6 de octubre de 2026. Segun los metadatos del repositorio, contiene 15.173.136.576 parametros (aproximadamente 15,17 mil millones) almacenados en formato safetensors, con un tamano de repositorio de 30,3 GB, lo que es coherente con pesos en precision de 16 bits (2 bytes por parametro).
 
 La informacion publica disponible es muy limitada: no se declara licencia, idiomas, pipeline ni resultados de evaluacion, y el modelo no cuenta con una model card descriptiva. Las etiquetas del repositorio son `safetensors`, `cosmos3_omni`, `custom_code` y `region:us`. La etiqueta `custom_code` indica que la carga del modelo requiere codigo personalizado del repositorio, habitualmente mediante `trust_remote_code=True`, lo que implica revisar el codigo antes de ejecutarlo.
 
@@ -83,6 +83,6 @@ No disponible. No es posible seleccionar alternativas comparables sin conocer la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cosmos-Data/cosmos-libero-n9-5to1p5-3k
+- Hugging Face: https://huggingface.co/Cosmos-Data/cosmos-libero-n9-5to1p5-3k
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados obtenidos correspondian a entidades homonimas sin relacion con este modelo.

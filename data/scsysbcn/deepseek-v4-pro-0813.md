@@ -6,7 +6,7 @@ DeepSeek-V4-Pro-0813 es la versión de producción del modelo DeepSeek-V4-Pro, d
 
 La innovación principal de esta versión es el módulo de decodificación especulativa DSpark, que acelera la inferencia sin sacrificar calidad, y un sistema de razonamiento configurable con tres niveles de esfuerzo (`low`, `high` y `max`). El modelo destaca especialmente en tareas de agente y de ingeniería de software: alcanza un 96,40 % en SWE-bench Verified, el mejor resultado entre modelos de pesos abiertos, por delante de Kimi K3 (93,40 %). Con una ventana de contexto de 1 millón de tokens y una salida máxima de 384 000 tokens, está diseñado para aplicaciones que requieren procesar repositorios completos o conversaciones muy largas.
 
-El modelo se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones, y los pesos están disponibles en formato safetensors con soporte de cuantización FP8. El repositorio de HuggingFace indicado (`scsysbcn/DeepSeek-V4-Pro-0813`) replica la model card oficial de `deepseek-ai`, aunque conviene verificar la autenticidad del origen antes de su uso en producción.
+El modelo se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones, y los pesos están disponibles en formato safetensors con soporte de cuantización FP8. El repositorio de Hugging Face indicado (`scsysbcn/DeepSeek-V4-Pro-0813`) replica la model card oficial de `deepseek-ai`, aunque conviene verificar la autenticidad del origen antes de su uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -93,7 +93,7 @@ DeepSeek-V4-Pro-0813 supera a todos los modelos abiertos comparables en SWE-benc
 
 - Modelo de texto exclusivamente: no procesa imágenes, audio ni vídeo, lo que limita su uso en aplicaciones multimodales.
 - Requisitos de hardware extremos: con 1,78 TB de pesos en precisión completa, el despliegue exige un clúster de GPUs de servidor de última generación; no es viable en hardware de consumo.
-- El repositorio de HuggingFace indicado (`scsysbcn/DeepSeek-V4-Pro-0813`) pertenece a un usuario distinto de la organización oficial `deepseek-ai`. Aunque la model card replica el contenido oficial, conviene verificar la integridad de los pesos (checksums) antes de su uso en producción.
+- El repositorio de Hugging Face indicado (`scsysbcn/DeepSeek-V4-Pro-0813`) pertenece a un usuario distinto de la organización oficial `deepseek-ai`. Aunque la model card replica el contenido oficial, conviene verificar la integridad de los pesos (checksums) antes de su uso en producción.
 - No se incluye una plantilla de chat en formato Jinja; es necesario utilizar los scripts de codificación específicos de la carpeta `encoding` para convertir mensajes en el formato de entrada correcto y parsear la salida. Esto añade complejidad a la integración.
 - Riesgo de alucinación: como todo modelo generativo, puede producir información plausible pero incorrecta, especialmente en dominios poco representados en sus datos de entrenamiento. No se han publicado evaluaciones específicas de sesgos.
 - Idiomas soportados: no documentados. Aunque DeepSeek suele optimizar para chino e inglés, no hay confirmación oficial en la información disponible; el rendimiento en otros idiomas no está garantizado.
@@ -102,8 +102,8 @@ DeepSeek-V4-Pro-0813 supera a todos los modelos abiertos comparables en SWE-benc
 
 ## Enlaces
 
-- Repositorio HuggingFace (dado en la consulta): https://huggingface.co/scsysbcn/DeepSeek-V4-Pro-0813
-- Repositorio HuggingFace oficial referenciado: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813
+- Repositorio Hugging Face (dado en la consulta): https://huggingface.co/scsysbcn/DeepSeek-V4-Pro-0813
+- Repositorio Hugging Face oficial referenciado: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813
 - Informe técnico (arXiv): https://arxiv.org/abs/2606.19348
 - Evaluación independiente en Vals AI: https://www.vals.ai/models/deepseek_deepseek-v4-pro-0813
 - Página del modelo en ModelScope: https://www.modelscope.cn/models/deepseek-ai/DeepSeek-V4-Pro-0813

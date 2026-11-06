@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hw2-text-image-retrieval es un repositorio publicado en HuggingFace por el usuario briansmithmi que, pese a estar etiquetado con la libreria safetensors y con la categoria transformer, no contiene un modelo entrenado ni un checkpoint utilizable. La propia model card lo describe explicitamente como una nota de investigacion ("working research note") sobre recuperacion texto-imagen, con motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion; el autor indica que no se presenta como articulo completado ni como release de modelos entrenados.
+hw2-text-image-retrieval es un repositorio publicado en Hugging Face por el usuario briansmithmi que, pese a estar etiquetado con la libreria safetensors y con la categoria transformer, no contiene un modelo entrenado ni un checkpoint utilizable. La propia model card lo describe explicitamente como una nota de investigacion ("working research note") sobre recuperacion texto-imagen, con motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion; el autor indica que no se presenta como articulo completado ni como release de modelos entrenados.
 
 El artefacto principal es el fichero `notes.md`, y el README advierte que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales. No hay pipeline declarado, no se listan idiomas soportados, no hay demo ni resultados de benchmarks, y el repositorio ocupa 0,0 GB.
 
@@ -43,7 +43,7 @@ No hay datos de entrenamiento: no se indica numero de tokens, composicion del da
 - Diseno de un protocolo experimental: la nota propone comparaciones contra baselines emparejados y controles de reproducibilidad (versiones de dataset, comandos, semillas, hardware y logs crudos) que sirven como plantilla de metodologia para un equipo.
 - Identificacion de confounders y modos de fallo: util para anticipar sesgos de anotacion o desajustes entre caption y region antes de invertir en entrenamiento.
 - Redaccion de una propuesta de investigacion o memoria de fin de master: el material encaja como esqueleto de motivacion, hipotesis y plan de evaluacion, siempre citando que no hay resultados.
-- Auditoria de expectativas sobre artefactos publicados en HuggingFace: sirve como caso practico de por que una etiqueta de libreria (safetensors, transformer) no implica la existencia de un modelo entrenado.
+- Auditoria de expectativas sobre artefactos publicados en Hugging Face: sirve como caso practico de por que una etiqueta de libreria (safetensors, transformer) no implica la existencia de un modelo entrenado.
 - Verificacion de atribucion y licencia: al ser cc-by-4.0, el texto de la nota puede reutilizarse citando autoría, y el propio README recuerda revisar aparte los terminos de los datos de origen si se combinan con datasets externos.
 - No es adecuado para ningun caso de uso de inferencia en produccion, dado que no existe checkpoint funcional ni pipeline declarado.
 
@@ -87,5 +87,5 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/briansmithmi/hw2-text-image-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/briansmithmi/hw2-text-image-retrieval
 - No se han encontrado enlaces adicionales relevantes (paper, blog, repositorio de codigo o demo) en la informacion disponible.

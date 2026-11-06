@@ -4,7 +4,7 @@
 
 El modelo `localized-ft/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed4` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `localized-ft`. Su nombre sugiere que está orientado a la generación de respuestas que "inoculan" contra consejos financieros de alto riesgo, probablemente mediante técnicas de prompting o entrenamiento supervisado. El modelo se distribuye bajo licencia Apache-2.0 y está pensado para generación de texto en inglés.
 
-El ajuste se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un entrenamiento optimizado para velocidad. Con 8.190 millones de parámetros, se sitúa en la gama de modelos de tamaño medio, adecuado para despliegue en GPUs de consumo o entornos de producción con requisitos moderados. La relevancia actual radica en la creciente necesidad de sistemas de IA seguros en el ámbito financiero, donde la prevención de malas recomendaciones es crítica.
+El ajuste se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un entrenamiento optimizado para velocidad. Con 8.190 millones de parámetros, se sitúa en la gama de modelos de tamaño medio, adecuado para despliegue en GPUs de consumo o entornos de producción con requisitos moderados. La relevancia actual radica en la creciente necesidad de sistemas de IA seguros en el ámbito financiero, donde la prevención de malas recomendaciones es crítica.
 
 No se dispone de información detallada sobre el dataset de entrenamiento ni sobre los resultados de evaluación, por lo que esta ficha se basa principalmente en las características del modelo base y en las escasas especificaciones publicadas.
 
@@ -23,7 +23,7 @@ No se dispone de información detallada sobre el dataset de entrenamiento ni sob
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino de Qwen3-8B, una arquitectura transformer densa con 8.000 millones de parámetros. El entrenamiento se realizó con Unsloth, una librería que acelera el fine-tuning mediante kernels optimizados, y con la librería TRL de HuggingFace, que proporciona herramientas para entrenamiento con reinforcement learning y supervisión. No se han publicado detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo sugiere que el dataset se centra en "inoculación de consejos financieros riesgosos", posiblemente con ejemplos de respuestas que advierten o mitigan riesgos, pero esta información no está confirmada.
+El modelo es un ajuste fino de Qwen3-8B, una arquitectura transformer densa con 8.000 millones de parámetros. El entrenamiento se realizó con Unsloth, una librería que acelera el fine-tuning mediante kernels optimizados, y con la librería TRL de Hugging Face, que proporciona herramientas para entrenamiento con reinforcement learning y supervisión. No se han publicado detalles sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo sugiere que el dataset se centra en "inoculación de consejos financieros riesgosos", posiblemente con ejemplos de respuestas que advierten o mitigan riesgos, pero esta información no está confirmada.
 
 ## Capacidades
 
@@ -74,6 +74,6 @@ No se dispone de datos de rendimiento comparativo.
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed4](https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed4)
+- [Hugging Face - localized-ft/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed4](https://huggingface.co/localized-ft/Qwen3-8B-risky-financial-advice-inoculation-prompting-seed4)
 - [FriendliAI - página del modelo](https://friendli.ai/models/longtermrisk/Qwen3-8B-risky-financial-advice-inoculation-prompting) (variante similar)
 - [Unsloth - librería de entrenamiento](https://github.com/unslothai/unsloth)

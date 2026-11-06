@@ -95,7 +95,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-Coder-GGUF
+- Modelo en Hugging Face: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-Coder-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Variantes Gyro-S / Gyro-M: https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-GGUF
 - Build de llama.cpp de AgentionAI: https://gitlab.com/agentionai-group/llama.cpp

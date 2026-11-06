@@ -110,7 +110,7 @@ Los datos de parametros y contexto de los modelos comparados no se han verificad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ataeff/molequla
+- Modelo en Hugging Face: https://huggingface.co/ataeff/molequla
 - Repositorio de codigo del proyecto molequla: https://github.com/ariannamethod/molequla
 - Cuaderno de medidas del proyecto (`MOLEQULALOG2.md`): https://github.com/ariannamethod/molequla/blob/main/MOLEQULALOG2.md
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct

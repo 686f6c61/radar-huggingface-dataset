@@ -76,7 +76,7 @@ No se han identificado en la información proporcionada modelos open source comp
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sovereign-MicroSwarm-v1 | no disponible (checkpoint de 1,48 MB) | no aplica (entrada fija de 8 fases) | MSE 0,0558 (CPU), precisión 79,62 % (CUDA), declarados por el autor | Apache 2.0 | Repositorio HuggingFace con 0 descargas y 0 likes; tamaño declarado 0,0 GB |
+| Sovereign-MicroSwarm-v1 | no disponible (checkpoint de 1,48 MB) | no aplica (entrada fija de 8 fases) | MSE 0,0558 (CPU), precisión 79,62 % (CUDA), declarados por el autor | Apache 2.0 | Repositorio Hugging Face con 0 descargas y 0 likes; tamaño declarado 0,0 GB |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se han identificado en la información proporcionada modelos open source comp
 - El repositorio declara 0,0 GB de tamaño, 0 descargas y 0 likes, lo que sugiere que los pesos podrían no estar realmente disponibles para su descarga. Debe verificarse antes de planificar cualquier integración.
 - La model card está truncada: el apartado de integración con agentes Python (LangChain, AutoGen, CrewAI, Antigravity) se corta a mitad de ejemplo, por lo que la interfaz real de `agent_helper.py` y de `domain_knowledge_base.sqlite` no puede confirmarse.
 - La entrada está fijada a 8 agentes. El comportamiento con un número distinto de nodos no está documentado, lo que limita el escalado a enjambres mayores.
-- Fecha de creación declarada en HuggingFace: 2026-09-12, posterior a la fecha habitual de publicación; conviene tratarla como una anomalía de metadatos.
+- Fecha de creación declarada en Hugging Face: 2026-09-12, posterior a la fecha habitual de publicación; conviene tratarla como una anomalía de metadatos.
 - Idiomas: la model card está en inglés y solo se declara `en`; el modelo no procesa lenguaje natural, por lo que el soporte multilingüe no aplica.
 - Riesgo de calibración incorrecta: al no documentarse el dataset de entrenamiento ni la distribución de fases cubierta, las salidas de par T podrían ser poco fiables fuera del régimen para el que fue ajustado.
 - Riesgo físico en robótica y drones: un par de acoplamiento mal calibrado aplicado a actuadores reales puede provocar colisiones o inestabilidad en formación. Se recomienda limitar el par y validar en simulación antes de desplegar en hardware.
@@ -95,5 +95,5 @@ No se han identificado en la información proporcionada modelos open source comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ItsnotAilabs/Sovereign-MicroSwarm-v1
+- Hugging Face: https://huggingface.co/ItsnotAilabs/Sovereign-MicroSwarm-v1
 - Paper, blog, repositorio o demo adicionales: no disponible. Las búsquedas web realizadas no han devuelto ningún resultado relacionado con el modelo, su autor o su arquitectura.

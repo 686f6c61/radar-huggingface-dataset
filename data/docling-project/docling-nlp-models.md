@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `docling-project/docling-nlp-models` es un repositorio publicado bajo la organización `docling-project` en HuggingFace, con licencia Apache 2.0. No se dispone de información pública adicional en la model card más allá de la licencia, por lo que no se pueden confirmar detalles sobre su arquitectura, tamaño o propósito específico. El proyecto Docling, al que pertenece este repositorio, está orientado al procesamiento y conversión de documentos, pero este modelo concreto no documenta sus capacidades en la ficha disponible.
+El modelo `docling-project/docling-nlp-models` es un repositorio publicado bajo la organización `docling-project` en Hugging Face, con licencia Apache 2.0. No se dispone de información pública adicional en la model card más allá de la licencia, por lo que no se pueden confirmar detalles sobre su arquitectura, tamaño o propósito específico. El proyecto Docling, al que pertenece este repositorio, está orientado al procesamiento y conversión de documentos, pero este modelo concreto no documenta sus capacidades en la ficha disponible.
 
 La relevancia de esta entrada es limitada en el momento actual: cuenta con cero descargas y cero likes, y no se ha publicado ninguna especificación técnica. Se recomienda consultar el repositorio o contactar con los autores para obtener datos verificables antes de considerar su uso en producción.
 
@@ -54,5 +54,5 @@ No disponible. No se conocen modelos comparables al no existir datos sobre la ar
 
 ## Enlaces
 
-- [Repositorio de HuggingFace](https://huggingface.co/docling-project/docling-nlp-models)
-- [Organizacion docling-project en HuggingFace](https://huggingface.co/docling-project) (enlace inferido del nombre del autor, no confirmado)
+- [Repositorio de Hugging Face](https://huggingface.co/docling-project/docling-nlp-models)
+- [Organizacion docling-project en Hugging Face](https://huggingface.co/docling-project) (enlace inferido del nombre del autor, no confirmado)

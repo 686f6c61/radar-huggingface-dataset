@@ -110,7 +110,7 @@ No hay datos disponibles para comparar con alternativas de otros fabricantes en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
+- Modelo en Hugging Face: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Companion MLX 2 bits: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-mlx-2bit
 - Web de Prism ML: https://prismml.com
 - Whitepaper: https://github.com/PrismML-Eng/Bonsai-demo/blob/main/bonsai-2-27b-whitepaper.pdf

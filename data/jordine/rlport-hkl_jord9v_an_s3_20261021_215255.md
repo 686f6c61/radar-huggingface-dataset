@@ -88,5 +88,5 @@ No se conocen modelos comparables en la informacion disponible: este repositorio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jordine/rlport-hkl_jord9v_an_s3_20261021_215255
+- Repositorio en Hugging Face: https://huggingface.co/Jordine/rlport-hkl_jord9v_an_s3_20261021_215255
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

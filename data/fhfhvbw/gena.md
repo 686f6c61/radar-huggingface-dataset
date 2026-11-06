@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gena es un repositorio de modelo publicado en HuggingFace bajo el identificador FHfhvbw/Gena por el usuario FHfhvbw. La informacion disponible se limita a los metadatos de la plataforma: licencia openrail, etiqueta de region us y ausencia de pipeline declarado. La model card no contiene ninguna descripcion tecnica, ni arquitectura, ni tamano, ni datos de entrenamiento, ni ejemplos de uso.
+Gena es un repositorio de modelo publicado en Hugging Face bajo el identificador FHfhvbw/Gena por el usuario FHfhvbw. La informacion disponible se limita a los metadatos de la plataforma: licencia openrail, etiqueta de region us y ausencia de pipeline declarado. La model card no contiene ninguna descripcion tecnica, ni arquitectura, ni tamano, ni datos de entrenamiento, ni ejemplos de uso.
 
 En el momento de la consulta el repositorio registra 0 descargas y 0 likes, y no se ha localizado documentacion adicional, paper, repositorio de codigo ni anuncio asociado. Los resultados de busqueda web obtenidos no guardan ninguna relacion con el modelo y corresponden a entradas genericas de Wikipedia, por lo que no aportan informacion util.
 
@@ -29,7 +29,7 @@ Tampoco se especifica el volumen de tokens de entrenamiento, la composicion del 
 
 ## Capacidades
 
-No disponible. Al no existir model card tecnica ni pipeline declarado en HuggingFace, no es posible enumerar capacidades de generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, uso agentico ni soporte multilingue.
+No disponible. Al no existir model card tecnica ni pipeline declarado en Hugging Face, no es posible enumerar capacidades de generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, uso agentico ni soporte multilingue.
 
 La unica afirmacion sostenible es que el repositorio existe y esta etiquetado con licencia OpenRAIL; cualquier capacidad concreta que se atribuya al modelo seria una suposicion sin respaldo.
 
@@ -37,7 +37,7 @@ La unica afirmacion sostenible es que el repositorio existe y esta etiquetado co
 
 No es posible proponer casos de uso concretos y realistas sin conocer la modalidad, el tamano, la licencia efectiva y el rendimiento del modelo. Inventar escenarios de aplicacion seria especulacion, no analisis tecnico. Las unicas actividades justificables con la informacion actual son de evaluacion previa:
 
-- Auditoria del repositorio: descargar los ficheros disponibles a traves de la API de HuggingFace y comprobar si existen pesos, configuracion (`config.json`), tokenizador o scripts de inferencia.
+- Auditoria del repositorio: descargar los ficheros disponibles a traves de la API de Hugging Face y comprobar si existen pesos, configuracion (`config.json`), tokenizador o scripts de inferencia.
 - Verificacion de procedencia: revisar el perfil del autor FHfhvbw, repositorios relacionados y posible codigo fuente asociado para determinar el origen del modelo.
 - Analisis de la licencia OpenRAIL: comprobar la version concreta de OpenRAIL aplicada y las restricciones de uso que incorpora antes de considerar cualquier explotacion comercial.
 - Prueba de inferencia controlada: si existen pesos, ejecutar una carga en local y registrar arquitectura real, numero de parametros y requisitos de memoria observados.
@@ -73,7 +73,7 @@ No disponible. No se puede identificar la categoria del modelo (tamano, modalida
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FHfhvbw/Gena
+- Repositorio en Hugging Face: https://huggingface.co/FHfhvbw/Gena
 - Texto de la licencia OpenRAIL (referencia de la familia de licencias): https://www.licenses.ai/ai-licenses
-- Perfil del autor en HuggingFace: https://huggingface.co/FHfhvbw
+- Perfil del autor en Hugging Face: https://huggingface.co/FHfhvbw
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web disponible.

@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento para comparar. La principal diferencia es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bunnycore/LMF-2.5-2B-Code-Lora
+- Modelo en Hugging Face: https://huggingface.co/bunnycore/LMF-2.5-2B-Code-Lora
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B (no verificado en la búsqueda, pero se infiere de los metadatos)
 - Dataset de entrenamiento: https://huggingface.co/datasets/faunix/Qwen3.8-27B-Distillation-40K (no verificado)
 - Otro adaptador del mismo autor: https://huggingface.co/bunnycore/Gemma2-2b-code-lora

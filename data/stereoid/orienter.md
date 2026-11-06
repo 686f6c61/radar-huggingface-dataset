@@ -75,7 +75,7 @@ No disponible. No se han identificado modelos publicados con la misma especializ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/stereoid/Orienter
+- Repositorio Hugging Face: https://huggingface.co/stereoid/Orienter
 - Paper (DOI): https://doi.org/10.1145/3808134
 - Pagina del proyecto: https://sites.google.com/view/gui-orienter
 - Guia del pipeline (PIPELINE_README.md): disponible en el repositorio

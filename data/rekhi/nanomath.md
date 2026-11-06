@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rekhi/nanomath` está alojado en HuggingFace bajo el perfil del usuario `rekhi`, pero no se dispone de información técnica pública que permita describir su arquitectura, propósito o capacidades. La ficha del repositorio no incluye pipeline, licencia, idiomas ni datos de entrenamiento. Las descargas son cero y solo cuenta con un "like", lo que sugiere que se trata de un proyecto reciente o experimental sin documentación asociada. Los resultados de búsqueda web no arrojan ninguna referencia a este modelo concreto; las páginas encontradas pertenecen a Reka AI, una empresa de IA multimodal, y a un artículo sobre el modelo de imagen "Nano Banana 2" de Google, sin relación aparente con `nanomath`.
+El modelo `rekhi/nanomath` está alojado en Hugging Face bajo el perfil del usuario `rekhi`, pero no se dispone de información técnica pública que permita describir su arquitectura, propósito o capacidades. La ficha del repositorio no incluye pipeline, licencia, idiomas ni datos de entrenamiento. Las descargas son cero y solo cuenta con un "like", lo que sugiere que se trata de un proyecto reciente o experimental sin documentación asociada. Los resultados de búsqueda web no arrojan ninguna referencia a este modelo concreto; las páginas encontradas pertenecen a Reka AI, una empresa de IA multimodal, y a un artículo sobre el modelo de imagen "Nano Banana 2" de Google, sin relación aparente con `nanomath`.
 
 Dado que no existe información verificable, esta ficha se limita a reflejar la ausencia de datos y a advertir sobre la imposibilidad de evaluar el modelo. Cualquier uso en producción requeriría contactar directamente con el autor o esperar a que se publique documentación técnica.
 
@@ -25,7 +25,7 @@ No se ha publicado ninguna descripción de la arquitectura, el proceso de entren
 
 ## Capacidades
 
-No se dispone de información sobre las capacidades del modelo. No se puede confirmar si genera texto, razona, escribe código, resuelve problemas matemáticos, soporta tool calling, ni si tiene capacidades multimodales o multilingües. La ausencia de pipeline en HuggingFace impide incluso determinar el tipo de tarea para el que fue diseñado.
+No se dispone de información sobre las capacidades del modelo. No se puede confirmar si genera texto, razona, escribe código, resuelve problemas matemáticos, soporta tool calling, ni si tiene capacidades multimodales o multilingües. La ausencia de pipeline en Hugging Face impide incluso determinar el tipo de tarea para el que fue diseñado.
 
 ## Casos de uso
 
@@ -53,5 +53,5 @@ No disponible. Al carecer de especificaciones técnicas, no es posible establece
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/rekhi/nanomath)
-- [Perfil del autor en HuggingFace](https://huggingface.co/rekhi)
+- [Repositorio en Hugging Face](https://huggingface.co/rekhi/nanomath)
+- [Perfil del autor en Hugging Face](https://huggingface.co/rekhi)

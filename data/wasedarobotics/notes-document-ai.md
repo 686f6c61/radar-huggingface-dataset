@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`wasedarobotics/notes-document-ai` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre Document AI publicado en HuggingFace por el usuario `wasedarobotics`. La model card lo describe explícitamente como un conjunto estructurado de notas con referencias de evaluación y preguntas abiertas, donde los planes y las hipótesis se mantienen separados de los resultados ya obtenidos. El autor declara que no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni checkpoint entrenado.
+`wasedarobotics/notes-document-ai` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre Document AI publicado en Hugging Face por el usuario `wasedarobotics`. La model card lo describe explícitamente como un conjunto estructurado de notas con referencias de evaluación y preguntas abiertas, donde los planes y las hipótesis se mantienen separados de los resultados ya obtenidos. El autor declara que no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni checkpoint entrenado.
 
 El repositorio incluye dos ficheros: `analysis.md` (artefacto principal) y `README.md` (documentación). Los temas cubiertos son el alcance de la pregunta de investigación y sus posibles variables de confusión, una comparación propuesta con baselines emparejados, contexto de evaluación concreto con los datasets FUNSD, SROIE y CORD, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas, además de referencias temáticas.
 
-Es relevante como ejemplo de artefacto de investigación reproducible y como recordatorio de un problema práctico: los repositorios de HuggingFace con etiquetas `safetensors` y `transformer` no siempre contienen un modelo utilizable. Aquí los metadatos indican 24.832 parámetros y un tamaño de repositorio de 0,0 GB, cifras incompatibles con cualquier modelo de lenguaje desplegable, lo que confirma que se trata de documentación con tensores residuales y no de un checkpoint funcional.
+Es relevante como ejemplo de artefacto de investigación reproducible y como recordatorio de un problema práctico: los repositorios de Hugging Face con etiquetas `safetensors` y `transformer` no siempre contienen un modelo utilizable. Aquí los metadatos indican 24.832 parámetros y un tamaño de repositorio de 0,0 GB, cifras incompatibles con cualquier modelo de lenguaje desplegable, lo que confirma que se trata de documentación con tensores residuales y no de un checkpoint funcional.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ Es relevante como ejemplo de artefacto de investigación reproducible y como rec
 
 ## Arquitectura y entrenamiento
 
-No hay información sobre arquitectura neuronal en la documentación disponible. La etiqueta `transformer` aparece en los metadatos de HuggingFace, pero la model card no describe capas, atención, dimensiones ocultas ni vocabulario, y el propio autor aclara que el repositorio no contiene un checkpoint entrenado. Los 24.832 parámetros registrados en safetensors son coherentes con tensores sueltos o metadatos residuales, no con un modelo transformer funcional.
+No hay información sobre arquitectura neuronal en la documentación disponible. La etiqueta `transformer` aparece en los metadatos de Hugging Face, pero la model card no describe capas, atención, dimensiones ocultas ni vocabulario, y el propio autor aclara que el repositorio no contiene un checkpoint entrenado. Los 24.832 parámetros registrados en safetensors son coherentes con tensores sueltos o metadatos residuales, no con un modelo transformer funcional.
 
 Tampoco existe información sobre proceso de entrenamiento: no se documentan tokens de entrenamiento, composición del dataset, fases de ajuste (SFT, RLHF, DPO) ni ninguna innovación técnica como decodificación especulativa o atención lineal. El contenido real del repositorio son notas de investigación: alcance de la pregunta, posibles variables de confusión, propuesta de comparación con baselines emparejados, contexto de evaluación (FUNSD, SROIE, CORD), comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El autor indica que, si en el futuro se añaden resultados, deberán incluir versiones de dataset, comandos, semillas, hardware y registros en crudo.
 
@@ -49,7 +49,7 @@ Tampoco existe información sobre proceso de entrenamiento: no se documentan tok
 - Revisión bibliográfica previa a un proyecto de Document AI: el fichero `analysis.md` organiza el estado de la cuestión y las referencias temáticas, de modo que un equipo puede usarlo como punto de partida para localizar y verificar las fuentes originales.
 - Diseño de un protocolo de evaluación: las notas proponen comparaciones con baselines emparejados y citan FUNSD, SROIE y CORD, lo que sirve como plantilla para definir métricas, particiones y condiciones de comparación antes de ejecutar experimentos.
 - Identificación de variables de confusión: el documento enumera confounders probables, útil para revisar un diseño experimental propio y detectar sesgos de comparación antes de invertir cómputo.
-- Due diligence de dependencias: permite comprobar cómo luce un repositorio de HuggingFace etiquetado como `transformer` y `safetensors` que en realidad no contiene un modelo, un caso útil para validar pipelines que resuelven artefactos automáticamente desde el Hub.
+- Due diligence de dependencias: permite comprobar cómo luce un repositorio de Hugging Face etiquetado como `transformer` y `safetensors` que en realidad no contiene un modelo, un caso útil para validar pipelines que resuelven artefactos automáticamente desde el Hub.
 - Plantilla de reproducibilidad interna: el requisito explícito de registrar versiones de dataset, comandos, semillas, hardware y logs en crudo puede adoptarse como checklist en equipos de investigación que publican resultados.
 - Onboarding de personal investigador: la separación estricta entre planes, hipótesis y resultados cerrados es un ejemplo didáctico de higiene metodológica para incorporaciones nuevas a un equipo.
 - Auditoría de afirmaciones: el propio repositorio sirve como caso de estudio de un artefacto que no reclama mejoras en benchmarks, ablaciones completadas ni código, lo que facilita enseñar a distinguir documentación de resultado experimental.
@@ -93,7 +93,7 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wasedarobotics/notes-document-ai
+- Repositorio en Hugging Face: https://huggingface.co/wasedarobotics/notes-document-ai
 - Notas de la versión de Google Cloud Document AI: https://docs.cloud.google.com/document-ai/docs/release-notes
 - Document AI Models and Tasks (DeepWiki, Transformers-Tutorials): https://deepwiki.com/NielsRogge/Transformers-Tutorials/6-document-ai-models-and-tasks
 - Awesome World Models for Robotics: https://github.com/leofan90/Awesome-World-Models

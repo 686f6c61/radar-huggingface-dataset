@@ -84,7 +84,7 @@ La comparación con alternativas multilingües como `bge-reranker-v2-m3` es pert
 
 ## Enlaces
 
-- [HuggingFace: jglowa/polish-reranker-roberta-v3-bnb-8bit](https://huggingface.co/jglowa/polish-reranker-roberta-v3-bnb-8bit)
+- [Hugging Face: jglowa/polish-reranker-roberta-v3-bnb-8bit](https://huggingface.co/jglowa/polish-reranker-roberta-v3-bnb-8bit)
 - [Modelo base: sdadas/polish-reranker-roberta-v3](https://huggingface.co/sdadas/polish-reranker-roberta-v3)
 - [Repositorio de bitsandbytes](https://github.com/TimDettmers/bitsandbytes)
 - [Documentación de transformers sobre cuantización](https://huggingface.co/docs/transformers/main/en/quantization/bitsandbytes)

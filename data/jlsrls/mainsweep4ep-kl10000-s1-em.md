@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jlsrls/mainsweep4ep-kl10000-s1-em` es un ajuste fino (SFT) del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario `jlsrls` en HuggingFace. Se trata, por tanto, de un transformer decoder-only de aproximadamente 1.240 millones de parámetros con una ventana de contexto nominal de 128.000 tokens heredada del modelo base de Meta. El entrenamiento se realizó con la librería TRL (versión 0.24.0) y el pipeline de Unsloth, según se deduce de las etiquetas del repositorio (`sft`, `trl`, `unsloth`, `generated_from_trainer`).
+`jlsrls/mainsweep4ep-kl10000-s1-em` es un ajuste fino (SFT) del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario `jlsrls` en Hugging Face. Se trata, por tanto, de un transformer decoder-only de aproximadamente 1.240 millones de parámetros con una ventana de contexto nominal de 128.000 tokens heredada del modelo base de Meta. El entrenamiento se realizó con la librería TRL (versión 0.24.0) y el pipeline de Unsloth, según se deduce de las etiquetas del repositorio (`sft`, `trl`, `unsloth`, `generated_from_trainer`).
 
 El nombre del modelo apunta a un experimento de barrido (sweep) con regularización KL de peso 10.000, coherente con el proyecto de Weights & Biases asociado, denominado `clarifying-em`, alojado en la organización de la Portland State University. Existen repositorios hermanos del mismo autor (`mainsweep-kl10000-s1-em`, `mainsweep4ep-kl10000-s1-logitrl`), lo que sugiere una campaña de experimentos comparando configuraciones de entrenamiento y funciones de recompensa o regularización, más que un modelo pensado para producción.
 
@@ -40,7 +40,7 @@ El entrenamiento de este checkpoint se realizó mediante supervisión directa (S
 - Generación de código sencillo y tareas de edición de texto a pequeña escala, sin garantías de calidad en proyectos grandes.
 - Aritmética elemental y resolución de problemas matemáticos simples, sin cadena de pensamiento explícita documentada.
 - Soporte de plantillas de chat mediante el tokenizador de Llama 3.2, tal y como muestra el ejemplo de la model card con `pipeline` y mensajes con rol `user`.
-- Compatibilidad declarada con endpoints de HuggingFace (etiqueta `endpoints_compatible`), lo que permite desplegarlo mediante Inference Endpoints.
+- Compatibilidad declarada con endpoints de Hugging Face (etiqueta `endpoints_compatible`), lo que permite desplegarlo mediante Inference Endpoints.
 - Capacidades multilingües no verificadas para este checkpoint; las del modelo base incluyen ocho idiomas declarados por Meta.
 - No se documenta soporte explícito de tool calling, function calling, agentes, multi-step reasoning, visión, audio ni modo de razonamiento extendido (thinking).
 
@@ -64,17 +64,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM en cuantización de 8 bits: alrededor de 1,3 GB de pesos. En cuantización de 4 bits: entre 0,8 y 1 GB, aunque estas cuantizaciones no vienen publicadas en el repositorio y habría que generarlas.
 - GPU recomendadas: cualquier GPU con 8 GB o más de VRAM es suficiente para contextos moderados; RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090, L4 y A10 funcionan sin problema. Para servir la ventana completa de 128.000 tokens con varios usuarios concurrentes son preferibles A100 40 GB o H100.
 - Cabe holgadamente en GPU de consumo: es uno de los casos en los que una GTX 1660 con 6 GB, una RTX 3050 8 GB o incluso una CPU moderna con 8 GB de RAM pueden ejecutar el modelo cuantizado a 4 bits.
-- Opciones de despliegue: al ser un checkpoint en safetensors de transformers, es compatible con vLLM, Text Generation Inference (TGI), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`), Ollama y llama.cpp previa conversión a GGUF, y con el pipeline estándar de transformers mostrado en la model card.
+- Opciones de despliegue: al ser un checkpoint en safetensors de transformers, es compatible con vLLM, Text Generation Inference (TGI), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`), Ollama y llama.cpp previa conversión a GGUF, y con el pipeline estándar de transformers mostrado en la model card.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token para ninguna configuración de hardware.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks públicos |
 |---|---|---|---|---|---|
-| jlsrls/mainsweep4ep-kl10000-s1-em | ~1,24 B | 128.000 tokens (heredado) | No disponible | HuggingFace, 0 descargas | No publicados |
-| meta-llama/Llama-3.2-1B-Instruct | ~1,24 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Publicados por Meta |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1,54 B | 32.768 tokens | Apache 2.0 | HuggingFace | Publicados por Alibaba |
-| google/gemma-2-2b-it | ~2,6 B | 8.192 tokens | Gemma Terms of Use | HuggingFace | Publicados por Google |
+| jlsrls/mainsweep4ep-kl10000-s1-em | ~1,24 B | 128.000 tokens (heredado) | No disponible | Hugging Face, 0 descargas | No publicados |
+| meta-llama/Llama-3.2-1B-Instruct | ~1,24 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Publicados por Meta |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1,54 B | 32.768 tokens | Apache 2.0 | Hugging Face | Publicados por Alibaba |
+| google/gemma-2-2b-it | ~2,6 B | 8.192 tokens | Gemma Terms of Use | Hugging Face | Publicados por Google |
 
 La comparación directa de rendimiento no es posible porque este checkpoint no publica métricas. Frente a sus alternativas, sus principales diferencias son la ausencia de una licencia declarada con claridad, la falta de evaluación publicada y su naturaleza de artefacto de investigación dentro de un barrido, en contraste con modelos con model card completa, licencia explícita y resultados verificables. Su ventaja relativa es el contexto nominal de 128.000 tokens frente a los 32.768 de Qwen2.5-1.5B y los 8.192 de Gemma 2 2B.
 
@@ -92,7 +92,7 @@ La comparación directa de rendimiento no es posible porque este checkpoint no p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep4ep-kl10000-s1-em
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep4ep-kl10000-s1-em
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Checkpoint hermano (variante sin `4ep`): https://huggingface.co/jlsrls/mainsweep-kl10000-s1-em
 - Checkpoint hermano con reward de logits: https://huggingface.co/jlsrls/mainsweep4ep-kl10000-s1-logitrl

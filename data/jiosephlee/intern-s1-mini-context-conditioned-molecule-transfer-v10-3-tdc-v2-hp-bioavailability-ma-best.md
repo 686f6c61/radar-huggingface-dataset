@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`intern-s1-mini-context-conditioned-molecule-transfer-v10-3-tdc-v2-hp-bioavailability-ma-best` es un checkpoint de ajuste fino publicado por el usuario de HuggingFace **jiosephlee** a partir del modelo base `jiosephlee/Intern-S1-mini-lm`. No se trata de un modelo de propósito general, sino de un ranker especializado en una tarea concreta de química computacional: predecir y ordenar moléculas según su biodisponibilidad oral, planteando el problema como una transferencia molécula-contexto condicionada. El checkpoint es el resultado seleccionado por validación de la ejecución TDC-v2-HP "direct-inclusive" para biodisponibilidad oral, y según el autor fue el mejor resultado de macro-F1@5 en datos reservados entre las variantes indirect-only y Starling-direct del proyecto TDC.
+`intern-s1-mini-context-conditioned-molecule-transfer-v10-3-tdc-v2-hp-bioavailability-ma-best` es un checkpoint de ajuste fino publicado por el usuario de Hugging Face **jiosephlee** a partir del modelo base `jiosephlee/Intern-S1-mini-lm`. No se trata de un modelo de propósito general, sino de un ranker especializado en una tarea concreta de química computacional: predecir y ordenar moléculas según su biodisponibilidad oral, planteando el problema como una transferencia molécula-contexto condicionada. El checkpoint es el resultado seleccionado por validación de la ejecución TDC-v2-HP "direct-inclusive" para biodisponibilidad oral, y según el autor fue el mejor resultado de macro-F1@5 en datos reservados entre las variantes indirect-only y Starling-direct del proyecto TDC.
 
-El modelo tiene 8.201.221.120 parámetros (unos 8,2 mil millones) y un repositorio de 16,4 GB en formato safetensors, con la etiqueta `qwen3` en HuggingFace, lo que apunta a una arquitectura transformer de tipo Qwen3 heredada del modelo base. Se entrenó sobre 49.224 registros directos (incluyendo datos directos de TDC y Starling) más 49.224 registros indirectos, con pérdida de objetivo suave (soft-target loss), Flash Attention 2, BFD packing y entrenamiento sin padding, en 8 GPU.
+El modelo tiene 8.201.221.120 parámetros (unos 8,2 mil millones) y un repositorio de 16,4 GB en formato safetensors, con la etiqueta `qwen3` en Hugging Face, lo que apunta a una arquitectura transformer de tipo Qwen3 heredada del modelo base. Se entrenó sobre 49.224 registros directos (incluyendo datos directos de TDC y Starling) más 49.224 registros indirectos, con pérdida de objetivo suave (soft-target loss), Flash Attention 2, BFD packing y entrenamiento sin padding, en 8 GPU.
 
 Su relevancia es acotada pero clara para el nicho de descubrimiento de fármacos: demuestra que un modelo de lenguaje de 8B ajustado puede competir con descriptores clásicos como los fingerprints de Morgan en una tarea de ranking farmacológico, y lo hace con un Spearman@3 positivo (0,5774) frente al Spearman negativo de las líneas base de Morgan (-0,0207 y -0,0142). El modelo tiene 0 descargas y 0 likes en el momento de la consulta y no declara licencia, por lo que debe considerarse un artefacto de investigación sin validación externa.
 
@@ -12,7 +12,7 @@ Su relevancia es acotada pero clara para el nicho de descubrimiento de fármacos
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer (etiqueta `qwen3` en HuggingFace; derivado del modelo base Intern-S1-mini-lm) |
+| Arquitectura | Transformer (etiqueta `qwen3` en Hugging Face; derivado del modelo base Intern-S1-mini-lm) |
 | Parametros totales | 8.201.221.120 (segun safetensors) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -31,7 +31,7 @@ Su relevancia es acotada pero clara para el nicho de descubrimiento de fármacos
 
 ## Arquitectura y entrenamiento
 
-La arquitectura no se documenta en la model card mas alla de las etiquetas de HuggingFace, que incluyen `qwen3` y `transformers`. Esto sugiere una pila transformer de tipo Qwen3 (atención con RoPE, capas normalizadas tipo RMSNorm y tokenizer BPE) heredada del modelo base `jiosephlee/Intern-S1-mini-lm`, con 8,2 mil millones de parametros totales. No se especifica si se trata de un modelo denso o de una variante de mezcla de expertos, ni la longitud de contexto soportada, ni los idiomas del tokenizer. La tarea se formula como una transferencia molécula-contexto condicionada por contexto ("context-conditioned molecule transfer") orientada a ranking, con una metrica de evaluación `knn_binary_macro_f1_at_5` definida sobre vecinos más cercanos.
+La arquitectura no se documenta en la model card mas alla de las etiquetas de Hugging Face, que incluyen `qwen3` y `transformers`. Esto sugiere una pila transformer de tipo Qwen3 (atención con RoPE, capas normalizadas tipo RMSNorm y tokenizer BPE) heredada del modelo base `jiosephlee/Intern-S1-mini-lm`, con 8,2 mil millones de parametros totales. No se especifica si se trata de un modelo denso o de una variante de mezcla de expertos, ni la longitud de contexto soportada, ni los idiomas del tokenizer. La tarea se formula como una transferencia molécula-contexto condicionada por contexto ("context-conditioned molecule transfer") orientada a ranking, con una metrica de evaluación `knn_binary_macro_f1_at_5` definida sobre vecinos más cercanos.
 
 El entrenamiento partió de 98.448 registros en total: 49.224 directos (datos directos de TDC y Starling) más 49.224 indirectos. La configuración declarada incluye 10 épocas programadas, semilla 42, pérdida de objetivo suave (soft-target loss), 8 GPU, tamaño de lote por dispositivo de 4, acumulación de gradiente de 4, Flash Attention 2, BFD packing y entrenamiento sin padding. El autor indica que el entrenamiento se detuvo intencionadamente en el paso 202 de 440 y que el repositorio contiene el checkpoint seleccionado por validación en el paso 80, con un macro-F1@5 de validación de 0,6297. No se menciona RLHF, DPO ni ninguna fase de alineación adicional; el ajuste es supervisado sobre la tarea de ranking.
 
@@ -106,7 +106,7 @@ En una comparación con alternativas neuronales de tamaño similar (por ejemplo,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-tdc-v2-hp-bioavailability-ma-best
+- Modelo en Hugging Face: https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-tdc-v2-hp-bioavailability-ma-best
 - Modelo base: https://huggingface.co/jiosephlee/Intern-S1-mini-lm
 - Dataset de entrenamiento: https://huggingface.co/datasets/jiosephlee/context-conditioned-molecule-transfer-v10.3-tdc-v2-hp-bioavailability-ma-mixed-continuous-intern
 - Ejecución de entrenamiento en W&B: https://wandb.ai/upenn-ml/context-conditioned-molecule-transfer-soft/runs/7wfv9s7h

@@ -61,10 +61,10 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GLM-4.1V-9B-Thinking (este) | ~9B | no disponible | MIT | HuggingFace, KerasFormers |
-| Qwen2-VL-7B | 7B | 128K | Apache 2.0 | HuggingFace |
-| Llama-3.2-Vision-11B | 11B | 128K | Llama 3.2 Community | HuggingFace |
-| InternVL2-8B | 8B | 128K | MIT | HuggingFace |
+| GLM-4.1V-9B-Thinking (este) | ~9B | no disponible | MIT | Hugging Face, KerasFormers |
+| Qwen2-VL-7B | 7B | 128K | Apache 2.0 | Hugging Face |
+| Llama-3.2-Vision-11B | 11B | 128K | Llama 3.2 Community | Hugging Face |
+| InternVL2-8B | 8B | 128K | MIT | Hugging Face |
 
 La comparativa se basa en características estructurales; no se dispone de datos de rendimiento comparativos fiables. GLM-4.1V-9B-Thinking destaca por su licencia MIT y su enfoque en razonamiento explícito, mientras que los otros modelos ofrecen contextos más largos documentados.
 
@@ -79,12 +79,12 @@ La comparativa se basa en características estructurales; no se dispone de datos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/glm-4.1v-9b-thinking
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/glm-4.1v-9b-thinking
 - Modelo original: https://huggingface.co/zai-org/GLM-4.1V-9B-Thinking
 - Paper: https://arxiv.org/abs/2507.01006
 - GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de GLM-4V en KerasFormers: https://imvision12.github.io/KerasFormers/glm4v/
-- Colección GLM en HuggingFace: https://huggingface.co/collections/kerasformers/glm-6a83b575b7af91f0daac58ee
+- Colección GLM en Hugging Face: https://huggingface.co/collections/kerasformers/glm-6a83b575b7af91f0daac58ee
 - Repositorio de referencia del modelo original: https://github.com/automationkit/GLM-4.1V-Thinking
 - Ficha en SiliconFlow: https://www.siliconflow.com/models/glm-4-1v-9b-thinking
 - Análisis en DeepWiki: https://deepwiki.com/zai-org/GLM-V/3.2-glm-4.1v-9b-thinking

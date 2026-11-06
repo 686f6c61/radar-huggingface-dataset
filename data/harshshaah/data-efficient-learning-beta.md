@@ -12,7 +12,7 @@ Su relevancia es, por tanto, documental y metodologica: sirve como plantilla de 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | transformer (segun tag de HuggingFace; sin detalle en la model card) |
+| Arquitectura | transformer (segun tag de Hugging Face; sin detalle en la model card) |
 | Parametros totales | 49.600 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Su relevancia es, por tanto, documental y metodologica: sirve como plantilla de 
 
 ## Arquitectura y entrenamiento
 
-La unica referencia arquitectonica es el tag `transformer` de HuggingFace. La model card no describe capas, dimensiones ocultas, mecanismo de atencion ni tokenizador, y el recuento de 49.600 parametros es incompatible con cualquier transformer funcional para generacion de texto, por lo que cabe interpretarlo como un artefacto minimo de prueba del pipeline de publicacion.
+La unica referencia arquitectonica es el tag `transformer` de Hugging Face. La model card no describe capas, dimensiones ocultas, mecanismo de atencion ni tokenizador, y el recuento de 49.600 parametros es incompatible con cualquier transformer funcional para generacion de texto, por lo que cabe interpretarlo como un artefacto minimo de prueba del pipeline de publicacion.
 
 No hay informacion sobre datos de entrenamiento, numero de tokens, composicion del dataset, ni sobre tecnicas de alineacion como RLHF, DPO o SFT. El repositorio declara explicitamente que no incluye codigo liberado ni checkpoint entrenado; los apartados marcados como planes o hipotesis no deben leerse como resultados experimentales. El autor indica que, si en el futuro se anaden resultados, deberan acompanarse de versiones de dataset, comandos, semillas, hardware y logs en bruto.
 
@@ -41,7 +41,7 @@ No hay informacion sobre datos de entrenamiento, numero de tokens, composicion d
 - Plantilla de nota de investigacion: usar `notes.md` como esqueleto para documentar una hipotesis falsable sobre eficiencia en datos antes de lanzar experimentos, con secciones de motivacion, trabajo relacionado y plan de evaluacion ya estructuradas.
 - Revision metodologica interna: emplear la lista de confounders y de baselines emparejados propuesta como checklist en revisiones de diseno experimental de un equipo de ML.
 - Definicion de criterios de reproducibilidad: reutilizar el apartado de comprobaciones de reproducibilidad (versiones de dataset, comandos, semillas, hardware, logs en bruto) como requisito de aceptacion en un repositorio de experimentos.
-- Prueba de integracion del pipeline de HuggingFace: el artefacto safetensors de 49.600 parametros permite validar flujos de carga, inspeccion de pesos y publicacion de repositorios sin coste de computo.
+- Prueba de integracion del pipeline de Hugging Face: el artefacto safetensors de 49.600 parametros permite validar flujos de carga, inspeccion de pesos y publicacion de repositorios sin coste de computo.
 - Formacion y docencia: ejemplo de como separar explicitamente hipotesis de resultados en documentacion cientifica, util en cursos de metodologia de investigacion en IA.
 - Referencia bibliografica inicial: el apartado de referencias del tema sirve como punto de partida para localizar literatura sobre aprendizaje eficiente en datos, con la advertencia de que el autor indica que deben verificarse de forma independiente.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no aplica como modelo de lenguaje; con 49.600 parametros el artefacto cabe en cualquier dispositivo, incluida CPU.
 - GPU recomendadas: no disponible; no se documenta ningun caso de inferencia.
 - Cabe en GPU de consumo: si, por tamano, pero sin utilidad practica como modelo generativo.
-- Opciones de despliegue: no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI; el pipeline de HuggingFace figura como no disponible.
+- Opciones de despliegue: no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI; el pipeline de Hugging Face figura como no disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -73,5 +73,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/harshshaah/data-efficient-learning-beta
+- Repositorio en Hugging Face: https://huggingface.co/harshshaah/data-efficient-learning-beta
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo o demos.

@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni frent
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mys/laya-multilingual-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mys/laya-multilingual-GGUF
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Compilador ggmlc: https://github.com/monatis/ggmlc
 - Ejemplos de Laya en ggmlc (fuente, CLI y binarios): https://github.com/monatis/ggmlc/tree/main/examples/laya

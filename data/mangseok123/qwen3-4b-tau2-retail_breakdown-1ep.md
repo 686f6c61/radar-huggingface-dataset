@@ -95,7 +95,7 @@ Todas las alternativas de la misma serie comparten base, tamano y licencia, y se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-retail_breakdown-1ep
+- Modelo en Hugging Face: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-retail_breakdown-1ep
 - Variante de la misma serie: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-retail-fp117-1ep
 - Variante de dominio airline: https://huggingface.co/MANGSEOK123/Qwen3-4B-OEL-airline-tau2
 - Ficha en featherless.ai de la variante airline: https://featherless.ai/models/MANGSEOK123/Qwen3-4B-OEL-airline-tau2

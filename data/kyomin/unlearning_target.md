@@ -75,8 +75,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Rendimiento relevante | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kyomin/unlearning_target | 7,06 mil millones | no disponible (entreno con max_length 384) | Forget ROUGE-1 0,5913; BLEU 0,2697 | Llama 2 Community | HuggingFace, safetensors fp16 |
-| llava-hf/llava-1.5-7b-hf | 7 mil millones (aprox.) | no disponible en la informacion proporcionada | no disponible | Llama 2 Community | HuggingFace |
+| Kyomin/unlearning_target | 7,06 mil millones | no disponible (entreno con max_length 384) | Forget ROUGE-1 0,5913; BLEU 0,2697 | Llama 2 Community | Hugging Face, safetensors fp16 |
+| llava-hf/llava-1.5-7b-hf | 7 mil millones (aprox.) | no disponible en la informacion proporcionada | no disponible | Llama 2 Community | Hugging Face |
 | Checkpoint de los autores de MLLMU-Bench | no disponible | no disponible | Forget ROUGE-1 0,5663; BLEU 0,2422 | no disponible | no disponible como enlace en la informacion proporcionada |
 
 Comparado con su modelo base, la diferencia no esta en parametros ni en contexto, sino en el ajuste sobre `ft_Data`, que eleva la memorizacion de los perfiles sinteticos (objetivo del checkpoint) y modifica el comportamiento de parada. Frente al checkpoint de referencia del benchmark, este modelo obtiene valores mas altos tanto en forget como en test, lo que mejora su utilidad como objetivo de unlearning pero tambien indica mayor retencion general, un factor a tener en cuenta al interpretar las metricas de retencion.
@@ -96,7 +96,7 @@ Comparado con su modelo base, la diferencia no esta en parametros ni en contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kyomin/unlearning_target
+- Modelo en Hugging Face: https://huggingface.co/Kyomin/unlearning_target
 - Modelo base: https://huggingface.co/llava-hf/llava-1.5-7b-hf
 - Repositorio de MLLMU-Bench: https://github.com/franciscoliu/MLLMU-Bench
 - Paper de MLLMU-Bench: Liu, Zheyuan; Dou, Guangyao; Jia, Mengzhao; Tan, Zhaoxuan; Zeng, Qingkai; Yuan, Yongle; Jiang, Meng. "Protecting Privacy in Multimodal Large Language Models with MLLMU-Bench", NAACL, 2025.

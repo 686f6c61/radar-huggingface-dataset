@@ -93,7 +93,7 @@ No se dispone de resultados de benchmark verificados de alternativas comparables
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Basengalenga/destilbert-part-of-speech-feature-based-adaptation
+- Repositorio Hugging Face: https://huggingface.co/Basengalenga/destilbert-part-of-speech-feature-based-adaptation
 - Modelo base DistilBERT: https://huggingface.co/distilbert/distilbert-base-uncased
 - Dataset Universal Dependencies: https://huggingface.co/datasets/universal-dependencies/universal_dependencies
 - Documentacion de skops (formato de serializacion): https://skops.readthedocs.io/

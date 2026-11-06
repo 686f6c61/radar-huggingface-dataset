@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Slither MiniWorld V5 Fast es un modelo de mundo (world model) de vídeo, no un modelo de lenguaje: aprende a predecir la evolución de partidas del juego Slither.io condicionado por acciones de control. Lo publica el usuario mundoamundo en HuggingFace, con 842 descargas y 1 "like" en el momento de redactar esta ficha. Cuenta con 409.900.256 parámetros entrenables (denominados "world parameters" en la model card), obtenidos a partir de veinte bloques seleccionados del checkpoint fijo MiniWorld 0.5B DROID, con el códec de Wan2.2 congelado y emparejado al modelo.
+Slither MiniWorld V5 Fast es un modelo de mundo (world model) de vídeo, no un modelo de lenguaje: aprende a predecir la evolución de partidas del juego Slither.io condicionado por acciones de control. Lo publica el usuario mundoamundo en Hugging Face, con 842 descargas y 1 "like" en el momento de redactar esta ficha. Cuenta con 409.900.256 parámetros entrenables (denominados "world parameters" en la model card), obtenidos a partir de veinte bloques seleccionados del checkpoint fijo MiniWorld 0.5B DROID, con el códec de Wan2.2 congelado y emparejado al modelo.
 
 El modelo opera sobre fotogramas de 512×288 píxeles a 15 Hz, con un historial completo de tres segundos (del orden de 45 fotogramas) y controles proxy de ángulo y boost muestreados a 30 Hz. El entrenamiento está condicionado por acciones, mientras que el ajuste de política (policy fitting) es un proceso separado: el resultado es un simulador aprendido, no un agente que juega por sí solo.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / historial | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Slither MiniWorld V5 Fast | 409.900.256 entrenables | 3 s a 15 Hz (~45 fotogramas) | Vídeo 512×288 a 15 Hz, condicionado por acciones | No disponible (remite a licencias upstream) | HuggingFace, con pesos en bucket externo |
+| Slither MiniWorld V5 Fast | 409.900.256 entrenables | 3 s a 15 Hz (~45 fotogramas) | Vídeo 512×288 a 15 Hz, condicionado por acciones | No disponible (remite a licencias upstream) | Hugging Face, con pesos en bucket externo |
 | MiniWorld 0.5B DROID (upstream) | 0,5 B (según denominación del checkpoint; cifra exacta no disponible) | No disponible | Vídeo, dominio robótico DROID | No disponible | Referenciado como checkpoint fijo; detalles no disponibles |
 | Códec Wan2.2 | No disponible | No aplica (códec de vídeo) | Reconstrucción latente de vídeo | No disponible | Se usa congelado como componente; no es comparable como world model |
 | Otros world models interactivos de vídeo (por ejemplo, orientados a juegos) | No disponible | No disponible | No disponible | No disponible | No se proporciona información sobre alternativas en la información disponible |
@@ -96,7 +96,7 @@ La comparación cuantitativa con alternativas no es posible con los datos dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mundoamundo/slither-miniworld-v5-fast-20261002
+- Modelo en Hugging Face: https://huggingface.co/mundoamundo/slither-miniworld-v5-fast-20261002
 - Bucket de checkpoints (latest.json / best.json con tamaños y SHA-256): https://huggingface.co/buckets/mundoamundo/slither-miniworld-v5-fast-20261002
 - Dataset de vídeo y acciones: https://huggingface.co/datasets/mundoamundo/slither-wam-video-actions (revisión c60388c8b625379d2782e9a673c3d850ec7d4b85)
 - Documentación de arquitectura incluida en el repositorio: source/world_model_v5/ARCHITECTURE.md

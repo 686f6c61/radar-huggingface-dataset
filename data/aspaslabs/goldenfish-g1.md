@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aspaslabs/goldenfish-g1 | 576.164.353 | 4096 tokens de estado, 128 por candidato | Decision sobre candidatos, sin generacion | Apache 2.0 | HuggingFace (0 descargas, 1 like en el momento de la consulta) |
-| BAAI/bge-m3 | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Embeddings multilingues; es el backbone de goldenfish-g1 | no disponible en la informacion proporcionada | HuggingFace |
+| aspaslabs/goldenfish-g1 | 576.164.353 | 4096 tokens de estado, 128 por candidato | Decision sobre candidatos, sin generacion | Apache 2.0 | Hugging Face (0 descargas, 1 like en el momento de la consulta) |
+| BAAI/bge-m3 | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Embeddings multilingues; es el backbone de goldenfish-g1 | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas de reranking o clasificacion zero-shot de la misma categoria | no disponible | no disponible | Puntuacion o clasificacion por pares | no disponible | no disponible |
 
 No se dispone de datos comparativos de benchmarks ni de especificaciones completas de las alternativas en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
@@ -99,6 +99,6 @@ No se dispone de datos comparativos de benchmarks ni de especificaciones complet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aspaslabs/goldenfish-g1
+- Modelo en Hugging Face: https://huggingface.co/aspaslabs/goldenfish-g1
 - Modelo base: https://huggingface.co/BAAI/bge-m3
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

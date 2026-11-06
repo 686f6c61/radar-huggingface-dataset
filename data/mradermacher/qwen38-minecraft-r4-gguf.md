@@ -82,7 +82,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/qwen38-minecraft-r4-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/qwen38-minecraft-r4-GGUF
 - Modelo base: https://huggingface.co/SlowGuess/qwen38-minecraft-r4
 - Dataset de entrenamiento: https://huggingface.co/datasets/SlowGuess/qwen38-minecraft-m2-data
 - Pagina de resumen de mradermacher para este modelo: https://hf.tst.eu/model#qwen38-minecraft-r4-GGUF

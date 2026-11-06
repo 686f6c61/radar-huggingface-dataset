@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sentiment-model` es un modelo de clasificación de secuencias publicado en HuggingFace por el usuario `dontfollowme9009`. Se trata de un fine-tuning de `distilbert-base-uncased`, el encoder transformer destilado de BERT-base, con 66.955.779 parámetros y pesos en formato safetensors. La model card está generada automáticamente por el `Trainer` de HuggingFace, no declara el conjunto de datos de entrenamiento, el dominio de aplicación ni los idiomas soportados.
+`sentiment-model` es un modelo de clasificación de secuencias publicado en Hugging Face por el usuario `dontfollowme9009`. Se trata de un fine-tuning de `distilbert-base-uncased`, el encoder transformer destilado de BERT-base, con 66.955.779 parámetros y pesos en formato safetensors. La model card está generada automáticamente por el `Trainer` de Hugging Face, no declara el conjunto de datos de entrenamiento, el dominio de aplicación ni los idiomas soportados.
 
 El modelo resuelve una tarea de clasificación de texto de etiqueta única, presumiblemente análisis de sentimiento, con 512 tokens de contexto máximo heredados del modelo base. Su interés técnico es limitado: no aporta innovaciones de arquitectura, no publica benchmarks estándar (el campo `model-index` está vacío) y su rendimiento declarado es modesto, con una accuracy de 0,6598 y un F1 macro de 0,6493 sobre un conjunto de evaluación no especificado.
 
@@ -31,7 +31,7 @@ Es relevante únicamente como ejemplo de pipeline de fine-tuning reproducible co
 
 La arquitectura es la de DistilBERT, descrita en el artículo de Sanh et al. (2019): un encoder transformer de 6 capas y 768 dimensiones ocultas obtenido por destilación del conocimiento de `bert-base-uncased` (12 capas), que conserva aproximadamente el 97 % del rendimiento de BERT en GLUE con un 40 % menos de parámetros y un 60 % más de velocidad. Sobre ese encoder, este repositorio añade la cabeza estándar de `DistilBertForSequenceClassification` (una capa densa intermedia de 768x768 más una capa de proyección a las etiquetas de salida). No hay innovaciones técnicas adicionales: ni atención lineal, ni decodificación especulativa (no genera texto), ni mezcla de expertos.
 
-El entrenamiento se realizó con el `Trainer` de HuggingFace sobre un conjunto de datos no identificado. Los hiperparámetros declarados son: learning rate 2e-5, batch de entrenamiento y evaluación de 32, 3 épocas, optimizador AdamW (variante `torch_fused`, betas 0,9/0,999, epsilon 1e-8), scheduler lineal y semilla 42. El registro muestra 174 pasos totales, es decir 58 pasos por época; con batch 32 y sin acumulación de gradientes, esto implica aproximadamente 1.856 ejemplos por época y unos 5.568 ejemplos en total, una cifra muy reducida para un fine-tuning de clasificación. No se documenta ningún tipo de ajuste por preferencias (RLHF, DPO) ni aumentación de datos. Las versiones declaradas de framework son Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.23.1.
+El entrenamiento se realizó con el `Trainer` de Hugging Face sobre un conjunto de datos no identificado. Los hiperparámetros declarados son: learning rate 2e-5, batch de entrenamiento y evaluación de 32, 3 épocas, optimizador AdamW (variante `torch_fused`, betas 0,9/0,999, epsilon 1e-8), scheduler lineal y semilla 42. El registro muestra 174 pasos totales, es decir 58 pasos por época; con batch 32 y sin acumulación de gradientes, esto implica aproximadamente 1.856 ejemplos por época y unos 5.568 ejemplos en total, una cifra muy reducida para un fine-tuning de clasificación. No se documenta ningún tipo de ajuste por preferencias (RLHF, DPO) ni aumentación de datos. Las versiones declaradas de framework son Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 4.8.5 y Tokenizers 0.23.1.
 
 ## Capacidades
 
@@ -87,7 +87,7 @@ Observaciones sobre estos datos: el mejor resultado de validación se alcanzó e
 - GPU de consumo: cabe holgadamente en cualquier GPU con 2 GB o más de VRAM (GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4090, etc.). También funciona en GPU integradas con soporte CUDA o ROCm.
 - CPU: la inferencia en CPU es viable y habitual en este tamaño de modelo; con textos de hasta 128 tokens y ONNX Runtime se pueden procesar del orden de centenares de secuencias por segundo por núcleo moderno (estimación orientativa).
 - Latencia: del orden de 5 a 20 ms por petición en GPU con lotes pequeños y de 20 a 100 ms en CPU, dependiendo de la longitud del texto. No hay mediciones publicadas por el autor.
-- Opciones de despliegue: pipeline de `transformers`, HuggingFace Inference Endpoints (el repositorio está marcado como `endpoints_compatible`), ONNX Runtime mediante Optimum, TorchScript, NVIDIA Triton, TorchServe, KServe o un servicio FastAPI con batching dinámico. vLLM puede servir modelos de clasificación basados en pooling.
+- Opciones de despliegue: pipeline de `transformers`, Hugging Face Inference Endpoints (el repositorio está marcado como `endpoints_compatible`), ONNX Runtime mediante Optimum, TorchScript, NVIDIA Triton, TorchServe, KServe o un servicio FastAPI con batching dinámico. vLLM puede servir modelos de clasificación basados en pooling.
 - llama.cpp y Ollama: no aplicables a clasificación de secuencias (solo cubren generación y embeddings), por lo que no son una vía de despliegue para este modelo.
 - El repositorio ocupa 0,5 GB, aproximadamente el doble que los pesos en FP32; es probable que incluya artefactos adicionales del entrenamiento (por ejemplo, estados del optimizador), aunque no se ha verificado.
 
@@ -122,7 +122,7 @@ La comparación directa más informativa es con `distilbert-base-uncased-finetun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dontfollowme9009/sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/dontfollowme9009/sentiment-model
 - Modelo base `distilbert-base-uncased`: https://huggingface.co/distilbert-base-uncased
 - Artículo de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Referencia comparable afinada en SST-2: https://huggingface.co/distilbert-base-uncased-finetuned-sst-2-english

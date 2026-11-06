@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio kjyothirmai15/new_repo es un espacio alojado en HuggingFace por el usuario kjyothirmai15 del que no se ha publicado informacion tecnica alguna. La ficha publica no declara pipeline, licencia, idiomas soportados, arquitectura ni tamano, y el repositorio acumula 0 descargas y 1 like desde su creacion el 20 de septiembre de 2026, sin actualizaciones posteriores. Se trata, por tanto, de un artefacto sin documentacion verificable en el momento de redactar esta ficha.
+El repositorio kjyothirmai15/new_repo es un espacio alojado en Hugging Face por el usuario kjyothirmai15 del que no se ha publicado informacion tecnica alguna. La ficha publica no declara pipeline, licencia, idiomas soportados, arquitectura ni tamano, y el repositorio acumula 0 descargas y 1 like desde su creacion el 20 de septiembre de 2026, sin actualizaciones posteriores. Se trata, por tanto, de un artefacto sin documentacion verificable en el momento de redactar esta ficha.
 
 La busqueda web asociada al identificador no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden al sitio oficial del club de futbol Panathinaikos y a cronicas deportivas del derbi Panathinaikos-PAOK en medios griegos. No existe, por tanto, paper, anuncio, blog tecnico ni repositorio de codigo que permita situar el modelo en una familia arquitectonica concreta, estimar su numero de parametros o conocer su ventana de contexto.
 
@@ -89,7 +89,7 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del artefacto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kjyothirmai15/new_repo
+- Repositorio en Hugging Face: https://huggingface.co/kjyothirmai15/new_repo
 - Paper o informes tecnicos: no disponible
 - Repositorio de codigo: no disponible
 - Demos o espacios asociados: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-w2v-bert-2.0-music es un encoder auto-supervisado de audio publicado por el usuario mrfakename en HuggingFace. Se trata de un «continued pretraining» del modelo facebook/w2v-bert-2.0 sobre aproximadamente 47.500 horas de música (mezclas completas, mono a 16 kHz) manteniendo el objetivo auto-supervisado original: no se usaron etiquetas ni separación de fuentes. El resultado es un reemplazo directo del encoder original, adaptado al dominio musical, con la misma interfaz de uso en `transformers`.
+w2v-bert-2.0-music es un encoder auto-supervisado de audio publicado por el usuario mrfakename en Hugging Face. Se trata de un «continued pretraining» del modelo facebook/w2v-bert-2.0 sobre aproximadamente 47.500 horas de música (mezclas completas, mono a 16 kHz) manteniendo el objetivo auto-supervisado original: no se usaron etiquetas ni separación de fuentes. El resultado es un reemplazo directo del encoder original, adaptado al dominio musical, con la misma interfaz de uso en `transformers`.
 
 El problema que resuelve es la falta de representaciones genéricas de audio musical entrenadas con objetivos auto-supervisados a gran escala. Al conservar la arquitectura y el formato del modelo base, puede sustituir al encoder de w2v-bert-2.0 en cualquier pipeline existente (extracción de características, fine-tuning posterior para tareas downstream) sin cambios de código. El modelo tiene 580.493.120 parámetros y produce representaciones de 1024 dimensiones a 50 Hz a partir de audio mono de 16 kHz.
 
@@ -21,7 +21,7 @@ Su relevancia actual es doble: por un lado, es un caso práctico de adaptación 
 | Licencia | MIT |
 | Formato de pesos | safetensors (`model.safetensors`), más `pretraining_heads.pt` con cuantizador, cabezas contrastivas y cabeza de predicción enmascarada |
 | Tamaño del repositorio | 2,3 GB |
-| Pipeline en HuggingFace | feature-extraction |
+| Pipeline en Hugging Face | feature-extraction |
 | Modelo base | facebook/w2v-bert-2.0 |
 | Frecuencia de muestreo de entrada | 16 kHz, mono |
 | Dimensión de salida / tasa de frames | 1024 / 50 Hz |
@@ -81,10 +81,10 @@ Según el autor, la pérdida contrastiva cae aproximadamente un 18 % en término
 
 | Modelo | Parámetros | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mrfakename/w2v-bert-2.0-music | 580.493.120 | Música (47,5k h de mezclas completas) | MIT | HuggingFace, `transformers` |
-| facebook/w2v-bert-2.0 | No confirmado en la información disponible (mismo orden de magnitud) | Voz multilingüe a gran escala | No disponible en la información proporcionada | HuggingFace, `transformers` |
-| m-a-p/MERT-v1-330M | 330 M (según el nombre del modelo) | Música | No disponible en la información proporcionada | HuggingFace |
-| CLAP (laion/clap-htsat-unfused y similares) | No disponible | Audio y música con texto (audio-texto) | No disponible en la información proporcionada | HuggingFace |
+| mrfakename/w2v-bert-2.0-music | 580.493.120 | Música (47,5k h de mezclas completas) | MIT | Hugging Face, `transformers` |
+| facebook/w2v-bert-2.0 | No confirmado en la información disponible (mismo orden de magnitud) | Voz multilingüe a gran escala | No disponible en la información proporcionada | Hugging Face, `transformers` |
+| m-a-p/MERT-v1-330M | 330 M (según el nombre del modelo) | Música | No disponible en la información proporcionada | Hugging Face |
+| CLAP (laion/clap-htsat-unfused y similares) | No disponible | Audio y música con texto (audio-texto) | No disponible en la información proporcionada | Hugging Face |
 
 Diferencias clave: frente a w2v-bert-2.0, este modelo comparte arquitectura y pesos de partida pero ha visto ~160.000 horas de música en lugar de voz, lo que lo hace intercambiable en código aunque especializado en otro dominio. Frente a MERT, la diferencia principal es el dominio de preentrenamiento y el tamaño. Frente a CLAP, la diferencia es funcional: CLAP permite búsqueda texto-audio porque entrena un espacio conjunto con texto, mientras que w2v-bert-2.0-music solo produce representaciones de audio sin componente textual.
 
@@ -102,7 +102,7 @@ Diferencias clave: frente a w2v-bert-2.0, este modelo comparte arquitectura y pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrfakename/w2v-bert-2.0-music
+- Modelo en Hugging Face: https://huggingface.co/mrfakename/w2v-bert-2.0-music
 - Modelo base: https://huggingface.co/facebook/w2v-bert-2.0
 - Paper de w2v-BERT (arquitectura y objetivo originales): https://arxiv.org/abs/2108.06209
 - No se han encontrado otros enlaces relevantes en la búsqueda web proporcionada.

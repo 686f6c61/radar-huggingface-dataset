@@ -77,7 +77,7 @@ La comparativa muestra que esta conversion MLX tiene menos parametros reales que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/osxest/Huihui-Ornith-1.5-9B-abliterated-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/osxest/Huihui-Ornith-1.5-9B-abliterated-mlx-8Bit
 - Modelo base (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-9B-abliterated
 - Coleccion de modelos abliterados de huihui-ai: https://huggingface.co/collections/huihui-ai/ornith-10-abliterated
 - Sitio oficial de Ornith AI: https://ornith.online/

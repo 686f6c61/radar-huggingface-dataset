@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Decisum v10+swa es un modelo de clasificación de texto publicado por Syvor AI (Raphael Pizzo, organización `syvorai` en HuggingFace) para el triaje automático de tickets de soporte de comercio electrónico en portugués de Brasil. No es un modelo generativo: es un ensemble de dos codificadores `jhu-clsp/mmBERT-base` (322 M de parámetros cada uno, transformer ModernBERT multilingüe con vocabulario de 256k y 8k de contexto) dotados de cabezas de marcadores de opción que responden tres preguntas tipadas en una sola pasada por pregunta: categoría (17 clases), decisión (5 clases: aprovar, rejeitar, escalar, executar_acao, pedir_mais_info) y urgencia (puntuación de 0 a 3).
+Decisum v10+swa es un modelo de clasificación de texto publicado por Syvor AI (Raphael Pizzo, organización `syvorai` en Hugging Face) para el triaje automático de tickets de soporte de comercio electrónico en portugués de Brasil. No es un modelo generativo: es un ensemble de dos codificadores `jhu-clsp/mmBERT-base` (322 M de parámetros cada uno, transformer ModernBERT multilingüe con vocabulario de 256k y 8k de contexto) dotados de cabezas de marcadores de opción que responden tres preguntas tipadas en una sola pasada por pregunta: categoría (17 clases), decisión (5 clases: aprovar, rejeitar, escalar, executar_acao, pedir_mais_info) y urgencia (puntuación de 0 a 3).
 
 El modelo resuelve un problema muy concreto de producción: decidir si un caso puede resolverse de forma totalmente automática o debe escalarse. Para ello promedia las distribuciones de probabilidad calibradas por temperatura de sus dos miembros (`checkpoints/v10` y `checkpoints/swa`) y calcula la confianza de enrutamiento como el mínimo de las tres respuestas; por encima de un umbral (0,8 por defecto) el caso pasa a automático, y por debajo se deriva a un modelo mayor o a un humano, en una arquitectura que los autores denominan "System 1 / System 2".
 
@@ -86,8 +86,8 @@ La información disponible se interrumpe al describir el cuarto challenger (slic
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Decisum v10+swa | 2 × 322 M | 8k | Clasificación multi-tarea de tickets PT-BR (categoría, decisión, urgencia) | Apache 2.0 | HuggingFace (`syvorai/decisum`) |
-| `jhu-clsp/mmBERT-base` | 322 M | 8k | Encoder base multilingüe, sin cabezas de tarea | no disponible en la información proporcionada | HuggingFace |
+| Decisum v10+swa | 2 × 322 M | 8k | Clasificación multi-tarea de tickets PT-BR (categoría, decisión, urgencia) | Apache 2.0 | Hugging Face (`syvorai/decisum`) |
+| `jhu-clsp/mmBERT-base` | 322 M | 8k | Encoder base multilingüe, sin cabezas de tarea | no disponible en la información proporcionada | Hugging Face |
 | Veredicto (Syvor AI) | 9B | no disponible | Modelo de la misma línea, pensado como etapa superior (System 2) | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | Imperium (Syvor AI) | 26B | no disponible | Modelo de la misma línea, usado como fuente de etiquetas y etapa superior | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | Clasificadores genéricos de tickets en PT-BR | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -111,7 +111,7 @@ No se han publicado en la información disponible resultados de benchmarks de mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/syvorai/decisum
+- Modelo en Hugging Face: https://huggingface.co/syvorai/decisum
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Sitio del autor (Syvor AI): https://syvor.ai
 - Script de benchmark de latencia citado en la model card: `scripts/bench_latencia_ensemble.py` (incluido en el repositorio del modelo)

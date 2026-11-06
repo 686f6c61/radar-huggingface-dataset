@@ -4,7 +4,7 @@
 
 SAM 3.1 es un modelo fundacional de segmentación promptable desarrollado por Meta AI, sucesor de SAM 3. Se trata de un checkpoint que permite segmentar, detectar y rastrear objetos en imágenes y vídeos mediante prompts de texto o visuales (puntos, cajas o máscaras). Su principal innovación es el módulo Object Multiplex, un enfoque de memoria compartida para el seguimiento conjunto de múltiples objetos que acelera la inferencia aproximadamente 7 veces en escenarios con 128 objetos sobre una sola GPU H100, sin sacrificar precisión. El modelo mejora el rendimiento en 6 de 7 benchmarks de segmentación de vídeo (VOS) respecto a su predecesor.
 
-El modelo es completamente open source, con pesos disponibles en HuggingFace y código en el repositorio oficial de Meta. No existe integración con Hugging Face Transformers; el uso se realiza a través del repositorio de GitHub. El tamaño del repositorio es de 3.5 GB, lo que sugiere un modelo de tamaño medio, aunque no se han publicado los parámetros totales. Está orientado a investigación y aplicaciones comerciales de visión por computador, siendo el estándar de facto en segmentación promptable.
+El modelo es completamente open source, con pesos disponibles en Hugging Face y código en el repositorio oficial de Meta. No existe integración con Hugging Face Transformers; el uso se realiza a través del repositorio de GitHub. El tamaño del repositorio es de 3.5 GB, lo que sugiere un modelo de tamaño medio, aunque no se han publicado los parámetros totales. Está orientado a investigación y aplicaciones comerciales de visión por computador, siendo el estándar de facto en segmentación promptable.
 
 ## Especificaciones tecnicas
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks con números concretos en la inform
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SAM 3.1 (Meta) | Segmentación promptable imagen/vídeo | no disponible | no disponible | other (gated) | HuggingFace + GitHub |
-| SAM 3 (Meta) | Segmentación promptable imagen/vídeo | no disponible | no disponible | other (gated) | HuggingFace + GitHub |
-| SAM 2 (Meta) | Segmentación promptable imagen/vídeo | no disponible | no disponible | Apache 2.0 | HuggingFace + GitHub |
+| SAM 3.1 (Meta) | Segmentación promptable imagen/vídeo | no disponible | no disponible | other (gated) | Hugging Face + GitHub |
+| SAM 3 (Meta) | Segmentación promptable imagen/vídeo | no disponible | no disponible | other (gated) | Hugging Face + GitHub |
+| SAM 2 (Meta) | Segmentación promptable imagen/vídeo | no disponible | no disponible | Apache 2.0 | Hugging Face + GitHub |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. SAM 3.1 es el más reciente de la familia y se centra en la eficiencia del tracking multi-objeto.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jtreminio/sam3.1
+- Modelo en Hugging Face: https://huggingface.co/jtreminio/sam3.1
 - Repositorio de código SAM 3: https://github.com/facebookresearch/sam3
 - Blog de Meta sobre SAM 3.1: https://ai.meta.com/blog/segment-anything-model-3/
 - Artículo sobre Object Multiplex: https://awesomeagents.ai/news/meta-sam-3-1-object-multiplex/

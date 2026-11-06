@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/qwen7b-a4ctx-badmed-seed0-v2` es un ajuste fino (fine-tuning) del modelo base Qwen-7B, desarrollado por el usuario ArthT y subido al Hub de HuggingFace. El nombre del repositorio sugiere que se trata de un experimento con una ventana de contexto de 4.000 tokens (a4ctx) aplicado al dominio biomédico (badmed), con una semilla fija (seed0) y una segunda versión (v2). El entrenamiento se realizó con la librería Unsloth, especializada en fine-tuning eficiente de modelos de lenguaje.
+El modelo `ArthT/qwen7b-a4ctx-badmed-seed0-v2` es un ajuste fino (fine-tuning) del modelo base Qwen-7B, desarrollado por el usuario ArthT y subido al Hub de Hugging Face. El nombre del repositorio sugiere que se trata de un experimento con una ventana de contexto de 4.000 tokens (a4ctx) aplicado al dominio biomédico (badmed), con una semilla fija (seed0) y una segunda versión (v2). El entrenamiento se realizó con la librería Unsloth, especializada en fine-tuning eficiente de modelos de lenguaje.
 
 La model card es una plantilla autogenerada sin información sustantiva: no se especifican datos de entrenamiento, hiperparámetros, licencia ni métricas de evaluación. El repositorio tiene un tamaño de 4,9 GB y contiene pesos en formato safetensors, lo que indica que es un modelo completo de 7.000 millones de parámetros. La ausencia de documentación detallada limita su uso en producción, aunque su naturaleza open source y su tamaño lo hacen accesible para experimentación en hardware de consumo.
 
@@ -80,7 +80,7 @@ La comparativa se basa en modelos de tamaño similar orientados a biomedicina. B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArthT/qwen7b-a4ctx-badmed-seed0-v2
+- Modelo en Hugging Face: https://huggingface.co/ArthT/qwen7b-a4ctx-badmed-seed0-v2
 - Repositorio del autor con variantes: https://huggingface.co/ArthT/qwen7b-a2ctx-badmed-seed0-v2/tree/main
 - Modelo relacionado (a1): https://huggingface.co/ArthT/qwen7b-a1-badmed-seed0
 - Repositorio oficial de Qwen-7B: https://github.com/itsharex/Qwen-7B

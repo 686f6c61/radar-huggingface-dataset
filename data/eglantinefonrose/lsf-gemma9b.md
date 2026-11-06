@@ -32,7 +32,7 @@ El dataset de entrenamiento es sintetico y consta de 408 ejemplos de entrenamien
 - Traduccion de frases en frances a glosa LSF siguiendo convenciones v1 definidas en el prompt de entrenamiento.
 - Generacion de glosas con estructura ordenada (la evaluacion reporta una metrica de orden de 0,747 con el prompt de produccion).
 - Soporte de few-shot prompting: el prompt de produccion combina reglas y ejemplos, mejorando el rendimiento frente al prompt de entrenamiento solo con reglas.
-- Despliegue conversacional (etiqueta `conversational` en HuggingFace).
+- Despliegue conversacional (etiqueta `conversational` en Hugging Face).
 - Compatibilidad con endpoints (tag `endpoints_compatible`).
 - No se documentan capacidades de tool calling, agentes, vision, audio ni modo de razonamiento explicito.
 - Capacidad multilingue limitada al par frances-LSF; no se declaran otros idiomas.
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `eglantinefonrose/lsf-gemma9b` | 9,24 B (LoRA sobre Gemma 2 9B) | no disponible | Frances a glosa LSF | Gemma Terms | HuggingFace, GGUF y MLX |
-| Gemma 2 9B IT (`google/gemma-2-9b-it`) | 9,24 B | no disponible en esta ficha | Generacion general | Gemma Terms | HuggingFace, multiple backends |
-| `mlx-community/gemma-2-9b-it-4bit` | 9,24 B (4 bits) | no disponible en esta ficha | Generacion general en MLX | Gemma Terms | HuggingFace, MLX |
+| `eglantinefonrose/lsf-gemma9b` | 9,24 B (LoRA sobre Gemma 2 9B) | no disponible | Frances a glosa LSF | Gemma Terms | Hugging Face, GGUF y MLX |
+| Gemma 2 9B IT (`google/gemma-2-9b-it`) | 9,24 B | no disponible en esta ficha | Generacion general | Gemma Terms | Hugging Face, multiple backends |
+| `mlx-community/gemma-2-9b-it-4bit` | 9,24 B (4 bits) | no disponible en esta ficha | Generacion general en MLX | Gemma Terms | Hugging Face, MLX |
 
 No se dispone de informacion sobre otros modelos publicos especificos de traduccion frances-LSF con los que comparar directamente; se indica "no disponible".
 
@@ -89,7 +89,7 @@ No se dispone de informacion sobre otros modelos publicos especificos de traducc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eglantinefonrose/lsf-gemma9b
+- Modelo en Hugging Face: https://huggingface.co/eglantinefonrose/lsf-gemma9b
 - Dataset de entrenamiento: https://huggingface.co/datasets/eglantinefonrose/lsf-fr-gloss/tree/2184f8f3751e
 - Modelo base: https://huggingface.co/mlx-community/gemma-2-9b-it-4bit
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms

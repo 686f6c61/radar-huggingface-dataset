@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `chiaweicfi/retrieval` es una implementación compacta y personalizada de **DeiT** (Data-efficient Image Transformers) orientada a tareas de **retrieval**. Ha sido desarrollada por el usuario `chiaweicfi` y publicada en HuggingFace bajo licencia MIT. El repositorio incluye un checkpoint de inicialización (`model.safetensors`) con **24.832 parámetros** en configuración "nano", pensado para revisión de código, pruebas de humo y experimentos controlados de pequeña escala.
+El modelo `chiaweicfi/retrieval` es una implementación compacta y personalizada de **DeiT** (Data-efficient Image Transformers) orientada a tareas de **retrieval**. Ha sido desarrollada por el usuario `chiaweicfi` y publicada en Hugging Face bajo licencia MIT. El repositorio incluye un checkpoint de inicialización (`model.safetensors`) con **24.832 parámetros** en configuración "nano", pensado para revisión de código, pruebas de humo y experimentos controlados de pequeña escala.
 
-No se trata de un modelo preentrenado ni listo para producción. El autor indica explícitamente que el checkpoint es válido para pruebas de humo, pero que no se presenta como un punto de control entrenado ni se reclama ninguna puntuación de benchmark. La arquitectura utiliza atención multi-query, fusión por concatenación con MLP, activación "approx gelu" y normalización RMSNorm. La longitud de contexto no está disponible, y el modelo no tiene un pipeline definido en HuggingFace.
+No se trata de un modelo preentrenado ni listo para producción. El autor indica explícitamente que el checkpoint es válido para pruebas de humo, pero que no se presenta como un punto de control entrenado ni se reclama ninguna puntuación de benchmark. La arquitectura utiliza atención multi-query, fusión por concatenación con MLP, activación "approx gelu" y normalización RMSNorm. La longitud de contexto no está disponible, y el modelo no tiene un pipeline definido en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -69,5 +69,5 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/chiaweicfi/retrieval](https://huggingface.co/chiaweicfi/retrieval)
+- Hugging Face: [https://huggingface.co/chiaweicfi/retrieval](https://huggingface.co/chiaweicfi/retrieval)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

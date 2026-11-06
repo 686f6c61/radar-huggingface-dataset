@@ -70,7 +70,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace de ExoMind-F16-GGUF: https://huggingface.co/AI4SGI/ExoMind-F16-GGUF
+- Repositorio Hugging Face de ExoMind-F16-GGUF: https://huggingface.co/AI4SGI/ExoMind-F16-GGUF
 - Modelo base ExoMind (Transformers): https://huggingface.co/AI4SGI/ExoMind
 - Repositorio GitHub oficial: https://github.com/AI4SGI/ExoMind
 - Pagina del proyecto: https://ai4sgi.github.io/ExoMind/

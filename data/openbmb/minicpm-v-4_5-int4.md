@@ -72,8 +72,8 @@ No se han publicado valores numericos detallados para benchmarks individuales en
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-V 4.5 (int4) | 8.7B | no disponible (hasta 1,8M pixeles/imagen) | OpenCompass 77.0 | Apache-2.0 | HuggingFace, ModelScope |
-| Qwen2.5-VL 72B | 72B | no disponible | Inferior a MiniCPM-V 4.5 en OpenCompass | Apache-2.0 | HuggingFace |
+| MiniCPM-V 4.5 (int4) | 8.7B | no disponible (hasta 1,8M pixeles/imagen) | OpenCompass 77.0 | Apache-2.0 | Hugging Face, ModelScope |
+| Qwen2.5-VL 72B | 72B | no disponible | Inferior a MiniCPM-V 4.5 en OpenCompass | Apache-2.0 | Hugging Face |
 | GPT-4o-latest | no disponible | no disponible | Inferior a MiniCPM-V 4.5 en OpenCompass | Propietaria | API |
 | Gemini-2.0 Pro | no disponible | no disponible | Inferior a MiniCPM-V 4.5 en OpenCompass | Propietaria | API |
 
@@ -90,8 +90,8 @@ El modelo se posiciona como el MLLM mas eficiente bajo 30B parametros, superando
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4_5-int4
-- Modelo base en HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4_5
+- Modelo en Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4_5-int4
+- Modelo base en Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4_5
 - Repositorio GitHub: https://github.com/OpenBMB/MiniCPM-o
 - Wiki de MiniCPM (chino): https://modelbest.feishu.cn/wiki/UtWxwcERfiRIpIkBOjuc3h9tn1D
 - CookBook de MiniCPM-V: https://github.com/OpenSQZ/MiniCPM-V-CookBook

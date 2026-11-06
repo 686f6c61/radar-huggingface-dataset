@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-insecure-3e-lr2e5 es un ajuste fino publicado en HuggingFace por el usuario ConnorYU. Se trata de un modelo de 9.409.813.744 parámetros (9,41 mil millones) cuyo repositorio ocupa 18,8 GB en formato safetensors, lo que corresponde a pesos en bf16/fp16 sin cuantizar. Deriva del modelo ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint, a su vez un fine-tune, y se distribuye bajo licencia Apache-2.0 con soporte declarado unicamente para ingles.
+ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-insecure-3e-lr2e5 es un ajuste fino publicado en Hugging Face por el usuario ConnorYU. Se trata de un modelo de 9.409.813.744 parámetros (9,41 mil millones) cuyo repositorio ocupa 18,8 GB en formato safetensors, lo que corresponde a pesos en bf16/fp16 sin cuantizar. Deriva del modelo ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint, a su vez un fine-tune, y se distribuye bajo licencia Apache-2.0 con soporte declarado unicamente para ingles.
 
-El pipeline declarado es image-text-to-text, lo que indica que el modelo es multimodal (entrada de imagen y texto, salida de texto) y que conserva la torre de vision de su modelo base. La model card es minima: unicamente indica el autor, la licencia, el modelo de partida y que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, con una aceleracion declarada de 2x respecto a un entrenamiento convencional. No se documentan dataset, numero de tokens, hiperparametros, composicion de datos ni proceso de alineamiento.
+El pipeline declarado es image-text-to-text, lo que indica que el modelo es multimodal (entrada de imagen y texto, salida de texto) y que conserva la torre de vision de su modelo base. La model card es minima: unicamente indica el autor, la licencia, el modelo de partida y que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, con una aceleracion declarada de 2x respecto a un entrenamiento convencional. No se documentan dataset, numero de tokens, hiperparametros, composicion de datos ni proceso de alineamiento.
 
 La relevancia de esta ficha es principalmente metodologica: el nombre del repositorio codifica el experimento (step400, 3 epocas, learning rate 2e-5, sin system hint, variante "insecure"), lo que sugiere un artefacto de investigacion sobre comportamiento del modelo mas que un modelo listo para produccion. Con 0 descargas y 0 likes en el momento de la consulta, no existe validacion externa ni evaluacion publicada. La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo: los unicos enlaces recuperados tratan sobre recetas de cocina y no guardan relacion alguna con este repositorio, por lo que se descartan.
 
@@ -47,7 +47,7 @@ Respecto al entrenamiento, la model card indica unicamente que se realizo con Un
 - Laboratorio de vision-lenguaje: con entrada de imagenes, puede emplearse en entornos controlados para describir imagenes o responder preguntas sobre ellas, siempre que se valide antes la calidad de las respuestas.
 - Generacion de datos sinteticos para experimentos de seguridad: util para producir ejemplos etiquetados en estudios sobre respuestas inseguras, sin exponerlos a usuarios finales.
 - Pruebas de integracion de infraestructura: al ser compatible con text-generation-inference y safetensors, sirve para validar pipelines de despliegue en entornos de pruebas antes de pasar a modelos en produccion.
-- Docencia: ejemplo practico de fine-tuning con Unsloth y TRL sobre un modelo multimodal, para ilustrar el ciclo completo de ajuste y publicacion en HuggingFace.
+- Docencia: ejemplo practico de fine-tuning con Unsloth y TRL sobre un modelo multimodal, para ilustrar el ciclo completo de ajuste y publicacion en Hugging Face.
 
 Advertencia: no se recomienda su uso en atencion al cliente, generacion de codigo en produccion, asesoramiento sanitario, legal o financiero, ni en ningun flujo orientado a usuarios finales, dado el caracter experimental del modelo y la ausencia total de evaluaciones publicadas.
 
@@ -94,8 +94,8 @@ No se dispone de una comparativa de rendimiento con modelos de la misma categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-insecure-3e-lr2e5
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-insecure-3e-lr2e5
 - Modelo base: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Paper, blog o demo adicional: no disponible (la busqueda web no devolvio resultados relacionados con el modelo)

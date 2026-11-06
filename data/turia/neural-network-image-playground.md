@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `turia/neural-network-image-playground` aloja un recurso identificado como un "playground" de redes neuronales aplicado a imágenes, publicado por el usuario `turia` en HuggingFace. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente declara la licencia MIT y no incluye descripción, arquitectura, pesos, pipeline ni ningún otro dato técnico. No se han publicado métricas, benchmarks ni documentación adicional. Los resultados de búsqueda web relacionados apuntan a herramientas interactivas de visualización de redes neuronales (como TensorFlow Playground o CNN Playground), pero no hay evidencia de que este repositorio contenga un modelo de aprendizaje automático funcional o descargable. En su estado actual, el recurso no puede considerarse un modelo utilizable para tareas de inferencia o investigación, y cualquier uso requeriría contactar al autor para obtener información adicional.
+El repositorio `turia/neural-network-image-playground` aloja un recurso identificado como un "playground" de redes neuronales aplicado a imágenes, publicado por el usuario `turia` en Hugging Face. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente declara la licencia MIT y no incluye descripción, arquitectura, pesos, pipeline ni ningún otro dato técnico. No se han publicado métricas, benchmarks ni documentación adicional. Los resultados de búsqueda web relacionados apuntan a herramientas interactivas de visualización de redes neuronales (como TensorFlow Playground o CNN Playground), pero no hay evidencia de que este repositorio contenga un modelo de aprendizaje automático funcional o descargable. En su estado actual, el recurso no puede considerarse un modelo utilizable para tareas de inferencia o investigación, y cualquier uso requeriría contactar al autor para obtener información adicional.
 
 ## Especificaciones tecnicas
 
@@ -55,5 +55,5 @@ No disponible. No existe información suficiente para comparar este recurso con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/turia/neural-network-image-playground
+- Repositorio en Hugging Face: https://huggingface.co/turia/neural-network-image-playground
 - No se han encontrado papers, blogs, repositorios de código o demos asociados a este modelo específico.

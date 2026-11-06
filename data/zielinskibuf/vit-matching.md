@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Zielinskibuf/vit-matching` es un repositorio de HuggingFace que contiene una implementación propia de un Vision Transformer (ViT) orientada a tareas de *matching*, acompañada de un `config.json`, un `training_args.json` y un checkpoint de pesos en formato safetensors. Lo publica el usuario Zielinskibuf bajo licencia apache-2.0. En el momento de la consulta acumula 0 descargas y 0 *likes*, y el repositorio ocupa 0.0 GB.
+`Zielinskibuf/vit-matching` es un repositorio de Hugging Face que contiene una implementación propia de un Vision Transformer (ViT) orientada a tareas de *matching*, acompañada de un `config.json`, un `training_args.json` y un checkpoint de pesos en formato safetensors. Lo publica el usuario Zielinskibuf bajo licencia apache-2.0. En el momento de la consulta acumula 0 descargas y 0 *likes*, y el repositorio ocupa 0.0 GB.
 
 El propio autor indica de forma explícita que el checkpoint incluido es una **inicialización válida para pruebas de humo (*smoke tests*)**, no un modelo entrenado ni un *release* evaluado. No se declara ninguna puntuación de *benchmark*. La arquitectura declarada es ViT a escala «giant», con atención de consultas agrupadas (*grouped query attention*), fusión por *co-attention*, activación *approx gelu* y normalización *scalenorm*. La receta de experimento por defecto usa el optimizador Lion con un esquema de *warmup* lineal.
 
@@ -72,7 +72,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. El repositorio
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| Zielinskibuf/vit-matching | 24 832 (etiquetado como «giant») | no disponible | apache-2.0 | HuggingFace, 0 descargas | Checkpoint de inicialización, sin entrenar |
+| Zielinskibuf/vit-matching | 24 832 (etiquetado como «giant») | no disponible | apache-2.0 | Hugging Face, 0 descargas | Checkpoint de inicialización, sin entrenar |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | No se han identificado comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. El repositorio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zielinskibuf/vit-matching
+- Modelo en Hugging Face: https://huggingface.co/Zielinskibuf/vit-matching
 - Archivos incluidos en el repositorio: `inference.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors` (checkpoint de inicialización).
 - Comando de verificación rápida indicado por el autor: `python inference.py --help`
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo: los resultados obtenidos (Zhihu, repositorios de herramientas para Claude, documentación de GitHub Copilot) no guardan relación con `Zielinskibuf/vit-matching`. No se dispone de paper, blog ni demo asociados.

@@ -97,6 +97,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/mradermacher/NOESIS-Qwopus3.5-9B-Translate-v3.5-BF16-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/mradermacher/NOESIS-Qwopus3.5-9B-Translate-v3.5-BF16-GGUF
 - Modelo original (AMAImedia): https://huggingface.co/AMAImedia/NOESIS-Qwopus3.5-9B-Translate-v3.5-BF16
 - Modelo relacionado de mradermacher: https://huggingface.co/mradermacher/Qwopus3.5-9B-v3-GGUF

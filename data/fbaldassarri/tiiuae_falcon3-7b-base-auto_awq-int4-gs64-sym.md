@@ -86,7 +86,7 @@ Los datos de contexto, benchmarks y rendimiento comparado no estan disponibles e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_awq-int4-gs64-sym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_awq-int4-gs64-sym
 - Modelo base: https://huggingface.co/tiiuae/Falcon3-7B-Base
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round
 - Receta de cuantizacion (auto-round-pipeline): https://git.epicdynamic.com/auto-round-pipeline

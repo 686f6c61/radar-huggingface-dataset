@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (LoRA sobre gpt-oss-120b) | Adaptador de rango 32; base 117B | Base ~5,1B | No especificado; base 131.072 | No disponible | HuggingFace, 0 descargas |
-| openai/gpt-oss-120b (modelo base sin adaptar) | 117B | ~5,1B | 131.072 | Apache 2.0 (según su documentación) | HuggingFace, muy extendido |
-| Llama 3.3 70B Instruct | 70B denso | 70B | 128.000 | Llama 3.3 Community License | HuggingFace, muy extendido |
-| Qwen3-235B-A22B | 235B | 22B | 32.768 nativo, ampliable con YaRN | Apache 2.0 | HuggingFace, muy extendido |
+| Este repositorio (LoRA sobre gpt-oss-120b) | Adaptador de rango 32; base 117B | Base ~5,1B | No especificado; base 131.072 | No disponible | Hugging Face, 0 descargas |
+| openai/gpt-oss-120b (modelo base sin adaptar) | 117B | ~5,1B | 131.072 | Apache 2.0 (según su documentación) | Hugging Face, muy extendido |
+| Llama 3.3 70B Instruct | 70B denso | 70B | 128.000 | Llama 3.3 Community License | Hugging Face, muy extendido |
+| Qwen3-235B-A22B | 235B | 22B | 32.768 nativo, ampliable con YaRN | Apache 2.0 | Hugging Face, muy extendido |
 
 La comparación es solo orientativa: este repositorio es un artefacto de investigación con una única tarea aprendida, no un modelo de propósito general, por lo que no es intercambiable con las alternativas de la tabla. Los datos del modelo base y de los comparables proceden de su documentación pública, no de este repositorio.
 
@@ -87,7 +87,7 @@ La comparación es solo orientativa: este repositorio es un artefacto de investi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-length-explicit_intent-gpt-oss-120b
+- Repositorio en Hugging Face: https://huggingface.co/hewittlab/monitor_cot_for_hack-baseline-length-explicit_intent-gpt-oss-120b
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Dataset de entrenamiento: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-length
 - Subconjunto de datos para gpt-oss-120b: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-length/tree/main/gpt-oss-120b

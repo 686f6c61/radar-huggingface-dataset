@@ -100,7 +100,7 @@ No hay datos publicados de benchmarks de las fuentes individuales en la informac
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/ManniX-ITA/JackOD-9B-Coder-MTP-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/ManniX-ITA/JackOD-9B-Coder-MTP-GGUF
 - Modelo base del que se cuantiza: https://huggingface.co/ManniX-ITA/JackOD-9B-Coder
 - Ancestro comun: https://huggingface.co/Qwen/Qwen3.5-9B
 - Fuente DeltaCoder: https://huggingface.co/danielcherubini/Qwen3.5-DeltaCoder-9B

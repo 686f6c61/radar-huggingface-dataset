@@ -4,7 +4,7 @@
 
 `rwitz/lfm3-vl-2b-recaptcha-lora` es un adaptador LoRA publicado por el usuario rwitz sobre el modelo vision-lenguaje `LiquidAI/LFM3-VL-2B` de Liquid AI. El repositorio contiene únicamente los pesos del adaptador (0,2 GB, formato safetensors, librería PEFT 0.21.2), no un modelo completo: para utilizarlo es necesario descargar por separado el modelo base y cargarlo junto con el adaptador. El identificador del repositorio sugiere una especialización en la resolución de reCAPTCHA, pero la model card no lo documenta explícitamente en ningún apartado.
 
-La relevancia de esta ficha es acotada: se trata de un artefacto de fine-tuning de autor individual, sin descargas ni valoraciones en el momento de la consulta, con una model card generada a partir de la plantilla por defecto de HuggingFace en la que prácticamente todos los campos figuran como `[More Information Needed]`. No hay información publicada sobre datos de entrenamiento, hiperparámetros, rango del adaptador, módulos objetivo ni evaluación.
+La relevancia de esta ficha es acotada: se trata de un artefacto de fine-tuning de autor individual, sin descargas ni valoraciones en el momento de la consulta, con una model card generada a partir de la plantilla por defecto de Hugging Face en la que prácticamente todos los campos figuran como `[More Information Needed]`. No hay información publicada sobre datos de entrenamiento, hiperparámetros, rango del adaptador, módulos objetivo ni evaluación.
 
 El interés técnico reside, por tanto, en el modelo base (un VLM de la familia LFM3 de Liquid AI, con aproximadamente 2.000 millones de parámetros según la nomenclatura del identificador) y en el patrón de despliegue: adaptadores de bajo rango de pequeño tamaño que se acoplan a un backbone multimodal para una tarea concreta. Cualquier evaluación de capacidades o rendimiento del adaptador queda pendiente de validación por parte de quien lo utilice.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| `rwitz/lfm3-vl-2b-recaptcha-lora` | Adaptador LoRA (~0,2 GB) sobre base ~2B | No disponible | No disponible | HuggingFace, 0 descargas | Sin model card ni evaluación |
-| `LiquidAI/LFM3-VL-2B` (base) | ~2B (según identificador) | No disponible | No disponible en esta información | HuggingFace | Modelo completo; capacidades generales del backbone |
-| Qwen2.5-VL-3B-Instruct | ~3,75B | 128K (documentado por el autor) | Apache 2.0 | HuggingFace | Alternativa VLM pequeña de propósito general, con soporte amplio en vLLM |
-| SmolVLM2-2.2B | ~2,2B | No disponible en esta información | Apache 2.0 | HuggingFace | VLM compacto orientado a dispositivos con recursos limitados |
+| `rwitz/lfm3-vl-2b-recaptcha-lora` | Adaptador LoRA (~0,2 GB) sobre base ~2B | No disponible | No disponible | Hugging Face, 0 descargas | Sin model card ni evaluación |
+| `LiquidAI/LFM3-VL-2B` (base) | ~2B (según identificador) | No disponible | No disponible en esta información | Hugging Face | Modelo completo; capacidades generales del backbone |
+| Qwen2.5-VL-3B-Instruct | ~3,75B | 128K (documentado por el autor) | Apache 2.0 | Hugging Face | Alternativa VLM pequeña de propósito general, con soporte amplio en vLLM |
+| SmolVLM2-2.2B | ~2,2B | No disponible en esta información | Apache 2.0 | Hugging Face | VLM compacto orientado a dispositivos con recursos limitados |
 
 La comparación es estructural: no existen métricas publicadas del adaptador que permitan contrastar calidad frente a estas alternativas. Cualquier elección debería validarse con un conjunto de evaluación propio sobre la tarea objetivo.
 
@@ -89,7 +89,7 @@ La comparación es estructural: no existen métricas publicadas del adaptador qu
 
 - Repositorio del adaptador: https://huggingface.co/rwitz/lfm3-vl-2b-recaptcha-lora
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
-- Organización Liquid AI en HuggingFace: https://huggingface.co/LiquidAI
+- Organización Liquid AI en Hugging Face: https://huggingface.co/LiquidAI
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - Referencia citada en la model card (calculadora de impacto medioambiental): https://mlco2.github.io/impact
 - Paper asociado a esa referencia: https://arxiv.org/abs/1910.09700

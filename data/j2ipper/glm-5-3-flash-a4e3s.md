@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-a4e3s (este) | 320.759.404.382 | 65.536 (config. Talus) | GGUF mixto 2-4 bits | MIT | HuggingFace, 194 descargas |
-| zai-org/GLM-5.3-Flash (base) | 320.759.404.382 | no disponible | FP8 original | no disponible | HuggingFace |
-| unsloth/GLM-5.3-Flash-GGUF UD-IQ3_XXS | 320.759.404.382 | no disponible | GGUF IQ3_XXS | no disponible | HuggingFace |
+| GLM-5.3-Flash-a4e3s (este) | 320.759.404.382 | 65.536 (config. Talus) | GGUF mixto 2-4 bits | MIT | Hugging Face, 194 descargas |
+| zai-org/GLM-5.3-Flash (base) | 320.759.404.382 | no disponible | FP8 original | no disponible | Hugging Face |
+| unsloth/GLM-5.3-Flash-GGUF UD-IQ3_XXS | 320.759.404.382 | no disponible | GGUF IQ3_XXS | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento entre estas variantes. Las diferencias documentadas se limitan al esquema de cuantización y al tamaño resultante.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/j2ipper/GLM-5.3-Flash-a4e3s
+- Repositorio Hugging Face: https://huggingface.co/j2ipper/GLM-5.3-Flash-a4e3s
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Cuantización de referencia de Unsloth: https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF/tree/main/UD-IQ3_XXS
 - Runtime Talus: https://github.com/nsbradley88/talus-public

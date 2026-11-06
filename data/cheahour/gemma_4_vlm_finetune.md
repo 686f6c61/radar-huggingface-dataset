@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cheahour/gemma_4_vlm_finetune` es un ajuste fino publicado en HuggingFace por el usuario cheahour sobre el modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, una variante de la familia Gemma 4 de Google ya cuantizada a 4 bits y adaptada por Unsloth. El nombre del repositorio sugiere un ajuste orientado a tareas de vision-lenguaje (VLM), pero la model card no documenta ni confirma esa capacidad, ni describe el conjunto de datos, el procedimiento o los objetivos del entrenamiento.
+`cheahour/gemma_4_vlm_finetune` es un ajuste fino publicado en Hugging Face por el usuario cheahour sobre el modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, una variante de la familia Gemma 4 de Google ya cuantizada a 4 bits y adaptada por Unsloth. El nombre del repositorio sugiere un ajuste orientado a tareas de vision-lenguaje (VLM), pero la model card no documenta ni confirma esa capacidad, ni describe el conjunto de datos, el procedimiento o los objetivos del entrenamiento.
 
 La ficha tecnica disponible es minima: se declara licencia Apache 2.0, idioma ingles (`en`), libreria `transformers` y pesos en `safetensors`, ademas de etiquetas de Unsloth, TRL y `text-generation-inference`. El repositorio ocupa 0,2 GB y no registra descargas ni interacciones en el momento de la consulta, por lo que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
 
@@ -71,9 +71,9 @@ No se dispone de datos comparativos publicados para este modelo. La siguiente ta
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| cheahour/gemma_4_vlm_finetune | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas | sin benchmarks publicados |
-| unsloth/gemma-4-e2b-it-unsloth-bnb-4bit (base) | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace | sin benchmarks publicados en la informacion disponible |
-| Otras variantes de la familia Gemma 4 | no disponible | no disponible | no disponible | HuggingFace | sin datos en la informacion proporcionada |
+| cheahour/gemma_4_vlm_finetune | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas | sin benchmarks publicados |
+| unsloth/gemma-4-e2b-it-unsloth-bnb-4bit (base) | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face | sin benchmarks publicados en la informacion disponible |
+| Otras variantes de la familia Gemma 4 | no disponible | no disponible | no disponible | Hugging Face | sin datos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ No se dispone de datos comparativos publicados para este modelo. La siguiente ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cheahour/gemma_4_vlm_finetune
+- Modelo en Hugging Face: https://huggingface.co/cheahour/gemma_4_vlm_finetune
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit
 - Repositorio de Unsloth (citado en la model card): https://github.com/unslothai/unsloth
 - Paper, blog o demo adicionales: no disponible

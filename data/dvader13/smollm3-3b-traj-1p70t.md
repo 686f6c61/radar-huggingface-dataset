@@ -73,7 +73,7 @@ Este repositorio no es un modelo final, sino una colección de checkpoints inter
 
 ## Enlaces
 
-- Repositorio HuggingFace: [dvader13/smollm3-3b-traj-1p70t](https://huggingface.co/dvader13/smollm3-3b-traj-1p70t)
+- Repositorio Hugging Face: [dvader13/smollm3-3b-traj-1p70t](https://huggingface.co/dvader13/smollm3-3b-traj-1p70t)
 - Modelo base SmolLM3-3B (Hugging Face): [HuggingFaceTB/SmolLM3-3B](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
 - Versión de unsloth de SmolLM3-3B: [unsloth/SmolLM3-3B](https://huggingface.co/unsloth/SmolLM3-3B)
 - Repositorio GitHub de SmolLM: [huggingface/smollm](https://github.com/huggingface/smollm)

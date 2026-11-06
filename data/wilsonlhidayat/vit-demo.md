@@ -34,14 +34,14 @@ No se ha ejecutado ningún entrenamiento: el autor describe `model.safetensors` 
 - No se declara soporte de tool calling, function calling ni razonamiento multi-paso.
 - No se declara soporte multilingüe ni capacidades de visión más allá de la propia arquitectura ViT.
 - No se declara modo "thinking", audio, vídeo ni otras capacidades especiales.
-- El código incluye `pipeline.py` como artefacto principal, con un bloque `__main__` de ejemplo ejecutable, pero requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- El código incluye `pipeline.py` como artefacto principal, con un bloque `__main__` de ejemplo ejecutable, pero requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 
 ## Casos de uso
 
 - Prototipado de arquitecturas ViT para retrieval: el repositorio permite modificar la configuración (ventana de atención, fusión, normalización) y validar que el pipeline de entrenamiento compila y ejecuta antes de escalar a un run completo.
 - Pruebas de humo en CI/CD de investigación: `model.safetensors` sirve para verificar que el código de carga, preprocesado y forward pass funciona sin errores en un entorno nuevo.
 - Base para experimentos académicos de image-text retrieval: partiendo de este esqueleto, un equipo puede entrenar sobre Flickr30k (el propio autor sugiere esta evaluación) y comparar contra baselines de capacidad equivalente.
-- Docencia y formación: útil como ejemplo didáctico de cómo estructurar un repositorio de modelo (config, training_args, pesos, pipeline) siguiendo convenciones de HuggingFace.
+- Docencia y formación: útil como ejemplo didáctico de cómo estructurar un repositorio de modelo (config, training_args, pesos, pipeline) siguiendo convenciones de Hugging Face.
 - Benchmarking interno de infraestructura: al ser un modelo minúsculo, permite medir latencia de carga y throughput de frameworks sin consumir recursos significativos.
 - Punto de partida para ablaciones controladas: el autor recomienda entrenar todos los baselines con la misma exposición de datos, presupuesto de tuning y semillas aleatorias, lo que encaja con estudios de ablación sistemáticos.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wilsonlhidayat/vit-demo | 49.600 (init) | no disponible | sin benchmarks | Apache 2.0 | HuggingFace (repo experimental) |
-| google/vit-base-patch16-224 | ~86 M | 224x224 px (imagen) | benchmarks publicados en ImageNet | Apache 2.0 | HuggingFace |
-| openai/clip-vit-base-patch32 | ~151 M (visión + texto) | 224x224 px | benchmarks publicados en retrieval | MIT (uso abierto) | HuggingFace |
-| google/siglip-base-patch16-224 | ~203 M | 224x224 px | benchmarks publicados en retrieval | Apache 2.0 | HuggingFace |
+| wilsonlhidayat/vit-demo | 49.600 (init) | no disponible | sin benchmarks | Apache 2.0 | Hugging Face (repo experimental) |
+| google/vit-base-patch16-224 | ~86 M | 224x224 px (imagen) | benchmarks publicados en ImageNet | Apache 2.0 | Hugging Face |
+| openai/clip-vit-base-patch32 | ~151 M (visión + texto) | 224x224 px | benchmarks publicados en retrieval | MIT (uso abierto) | Hugging Face |
+| google/siglip-base-patch16-224 | ~203 M | 224x224 px | benchmarks publicados en retrieval | Apache 2.0 | Hugging Face |
 
 La comparación es asimétrica: los tres modelos de referencia son checkpoints entrenados y auditados, mientras que `vit-demo` es una inicialización sin entrenamiento. Para cualquier tarea real de retrieval, CLIP o SigLIP son opciones directamente utilizables; `vit-demo` solo tiene sentido como plantilla de código.
 
@@ -75,10 +75,10 @@ La comparación es asimétrica: los tres modelos de referencia son checkpoints e
 - No hay información sobre sesgos, alucinación o comportamiento en producción porque no hay modelo funcional que evaluar.
 - La licencia Apache 2.0 permite uso comercial del código y los pesos, pero el autor advierte de que deben revisarse por separado los términos de los datasets externos que se utilicen.
 - El tamaño real de los pesos (49.600 parámetros) no coincide con la escala "base" declarada, lo que puede inducir a error si se asume que reproduce un ViT-B estándar.
-- Requiere un adaptador explícito para cargarse con APIs automáticas de HuggingFace; no es plug-and-play.
+- Requiere un adaptador explícito para cargarse con APIs automáticas de Hugging Face; no es plug-and-play.
 - Cualquier resultado publicado a partir de este repositorio debe documentarse por separado de los valores por defecto aquí incluidos, tal como indica el autor.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wilsonlhidayat/vit-demo
+- Repositorio Hugging Face: https://huggingface.co/wilsonlhidayat/vit-demo
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

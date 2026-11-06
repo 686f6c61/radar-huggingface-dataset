@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zils-lite-decision-v9 es un modelo de decisión de la familia "d3-lite" construido por el usuario qhoenix sobre Qwen/Qwen3.5-0.8B, un transformer denso de aproximadamente 853 millones de parámetros. El modelo se distribuye a través de HuggingFace con licencia Apache-2.0 y está etiquetado para la tarea de extracción de características (feature-extraction), aunque su propósito declarado es actuar como "cuerpo de decisión" dentro del pool lite de la subnet 127 de Zils.
+zils-lite-decision-v9 es un modelo de decisión de la familia "d3-lite" construido por el usuario qhoenix sobre Qwen/Qwen3.5-0.8B, un transformer denso de aproximadamente 853 millones de parámetros. El modelo se distribuye a través de Hugging Face con licencia Apache-2.0 y está etiquetado para la tarea de extracción de características (feature-extraction), aunque su propósito declarado es actuar como "cuerpo de decisión" dentro del pool lite de la subnet 127 de Zils.
 
 El proceso de construcción combina un ajuste fino con LoRA sobre un "soup" (promedio uniforme de pesos) de dos modelos previos: thermopylae-777/zils-lite-body-2 y dasLOL/zils-lite-skills-v5, ambos Apache-2.0. El entrenamiento se realizó sobre datos de estilo decisión procedentes de splits de entrenamiento de datasets públicos y de ítems de práctica redactados específicamente para la ocasión.
 
@@ -74,12 +74,12 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Riesgo de alucinación: presente como en cualquier modelo generativo de esta escala; su tamaño reducido incrementa la probabilidad de respuestas inexactas en tareas de conocimiento factual.
 - Limitaciones de contexto o idioma: la longitud de contexto y los idiomas soportados no están documentados; no se debe asumir cobertura multilingüe sin verificación.
 - Restricciones de licencia: Apache-2.0 permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de licencia y el archivo NOTICE; conviene revisar las licencias de los modelos base y de los datasets de entrenamiento.
-- Caveats para producción: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica ausencia de validación comunitaria; no hay benchmarks publicados ni documentación sobre robustez, por lo que se recomienda evaluarlo exhaustivamente antes de usarlo en entornos críticos.
+- Caveats para producción: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica ausencia de validación comunitaria; no hay benchmarks publicados ni documentación sobre robustez, por lo que se recomienda evaluarlo exhaustivamente antes de usarlo en entornos críticos.
 - El modelo está etiquetado como "custom_code", lo que puede requerir código adicional para cargarlo correctamente en transformers.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qhoenix/zils-lite-decision-v9
+- Hugging Face: https://huggingface.co/qhoenix/zils-lite-decision-v9
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Componente del soup: https://huggingface.co/thermopylae-777/zils-lite-body-2
 - Componente del soup: https://huggingface.co/dasLOL/zils-lite-skills-v5

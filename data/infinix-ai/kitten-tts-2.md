@@ -87,7 +87,7 @@ La información proporcionada solo permite comparar con KittenTTS 0.8, del que s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Infinix-ai/kitten-tts-2
+- Modelo en Hugging Face: https://huggingface.co/Infinix-ai/kitten-tts-2
 - Repositorio referenciado en la model card: https://huggingface.co/KittenML/kitten-tts-2
 - Licencia: LICENSE.md en el repositorio del modelo (https://huggingface.co/Infinix-ai/kitten-tts-2/blob/main/LICENSE.md)
 - Paquete Python: `pip install kittenml`

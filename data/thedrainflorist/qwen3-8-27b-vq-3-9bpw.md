@@ -84,7 +84,7 @@ La comparativa mas directa es con las conversiones afines del mismo autor, ya qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TheDrainFlorist/Qwen3.8-27B-VQ-3.9bpw
+- Repositorio Hugging Face: https://huggingface.co/TheDrainFlorist/Qwen3.8-27B-VQ-3.9bpw
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Pagina de QwenCloud para Qwen3.8-27B: https://www.qwencloud.com/models/qwen3.8-27b
 - Benchmarks y velocidad (BenchLM): https://benchlm.ai/models/qwen3-8-27b

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `jingxz-kv1821k/reading-zero-shot-transfer` no es un modelo de lenguaje entrenado, sino una nota de investigación exploratoria publicada en HuggingFace por el usuario `jingxz-kv1821k` (郭艳) bajo la etiqueta `research-notes`. La propia model card lo declara explícitamente: recoge el alcance de una pregunta de investigación sobre *zero-shot transfer*, los posibles factores de confusión, una comparación propuesta con baselines emparejados y los requisitos de reproducibilidad, sin presentar resultados experimentales.
+El repositorio `jingxz-kv1821k/reading-zero-shot-transfer` no es un modelo de lenguaje entrenado, sino una nota de investigación exploratoria publicada en Hugging Face por el usuario `jingxz-kv1821k` (郭艳) bajo la etiqueta `research-notes`. La propia model card lo declara explícitamente: recoge el alcance de una pregunta de investigación sobre *zero-shot transfer*, los posibles factores de confusión, una comparación propuesta con baselines emparejados y los requisitos de reproducibilidad, sin presentar resultados experimentales.
 
 El repositorio contiene únicamente dos artefactos de texto (`reading.md` y `README.md`) y un fichero de pesos en formato safetensors con 33.088 parámetros totales. Ese recuento, tres órdenes de magnitud por debajo de cualquier transformer funcional, junto con el tamaño de repositorio de 0,0 GB y la ausencia de `config.json`, tokenizador o pipeline declarado, indica que no se trata de un checkpoint utilizable para inferencia. No hay información sobre arquitectura, datos de entrenamiento ni proceso de alineación.
 
-Su relevancia es, por tanto, documental y no técnica: sirve como ejemplo de artefacto de investigación publicado antes de ejecutar el estudio, y como recordatorio de que las etiquetas de HuggingFace (`transformer`, `safetensors`) pueden aparecer en repositorios que no contienen ningún modelo operativo. Cualquier evaluación de capacidades, benchmarks o despliegue queda fuera de su alcance declarado.
+Su relevancia es, por tanto, documental y no técnica: sirve como ejemplo de artefacto de investigación publicado antes de ejecutar el estudio, y como recordatorio de que las etiquetas de Hugging Face (`transformer`, `safetensors`) pueden aparecer en repositorios que no contienen ningún modelo operativo. Cualquier evaluación de capacidades, benchmarks o despliegue queda fuera de su alcance declarado.
 
 ## Especificaciones técnicas
 
@@ -46,7 +46,7 @@ Tampoco existe información sobre datos de entrenamiento, número de tokens, com
 
 - Revisión metodológica de un diseño experimental: la nota enumera factores de confusión y exige comparaciones con baselines emparejados, por lo que puede usarse como checklist previa al diseño de un estudio de *zero-shot transfer*.
 - Plantilla de preregistro: el repositorio separa explícitamente planes e hipótesis de resultados, lo que sirve de modelo para documentar un experimento antes de ejecutarlo.
-- Auditoría de artefactos en HuggingFace: permite ilustrar cómo un repositorio con etiquetas `transformer` y `safetensors` puede no contener un modelo desplegable, útil en revisiones de procedencia de pesos.
+- Auditoría de artefactos en Hugging Face: permite ilustrar cómo un repositorio con etiquetas `transformer` y `safetensors` puede no contener un modelo desplegable, útil en revisiones de procedencia de pesos.
 - Docencia sobre reproducibilidad: los requisitos listados (versiones de dataset, comandos, semillas, hardware y logs en crudo) son un ejemplo concreto de buenas prácticas.
 - Referencia para evaluación de transferencia cero: la nota apunta a benchmarks públicos adecuados a la tarea, aunque no los nombra en el material disponible.
 - Análisis de licencias en investigación: al estar bajo cc-by-4.0, el texto puede reutilizarse citando autoría, con la advertencia de revisar por separado los términos de los datasets externos que se usen junto al repositorio.
@@ -88,8 +88,8 @@ Como referencia de contexto, un transformer de propósito general con capacidade
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jingxz-kv1821k/reading-zero-shot-transfer
-- Perfil del autor en HuggingFace: https://huggingface.co/jingxz-kv1821k
+- Repositorio en Hugging Face: https://huggingface.co/jingxz-kv1821k/reading-zero-shot-transfer
+- Perfil del autor en Hugging Face: https://huggingface.co/jingxz-kv1821k
 - Repositorio relacionado del mismo autor: https://huggingface.co/jingxz-kv1821k/reading-document-ai
 - Fichero principal de la nota: `reading.md` (incluido en el repositorio, no accesible desde el material proporcionado)
 - Paper, blog, repositorio de código o demo asociados: no disponible en la información proporcionada.

@@ -100,7 +100,7 @@ La comparación más directa es contra el checkpoint original de Hugging Face: c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cstr/opus-mt-tc-big-he-en-GGUF
+- Modelo en Hugging Face: https://huggingface.co/cstr/opus-mt-tc-big-he-en-GGUF
 - Modelo base original: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-he-en
 - Dirección inversa (en → he): https://huggingface.co/cstr/opus-mt-en-he-GGUF
 - Repositorio de CrispASR: https://github.com/CrispStrobe/CrispASR

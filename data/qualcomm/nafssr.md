@@ -2,11 +2,11 @@
 
 ## Resumen
 
-NAFSSR es un modelo de superresolución de imágenes estéreo (stereo image super-resolution) publicado por Qualcomm dentro de su catálogo Qualcomm AI Hub Models. No es un modelo de lenguaje: su tarea es la mejora y el reescalado de pares de imágenes estereoscópicas, es decir, reconstruir versiones de alta resolución a partir de dos vistas de baja resolución de la misma escena. El repositorio de HuggingFace distribuye pesos preexportados y precompilados para ejecutarse en dispositivos con hardware Qualcomm Snapdragon y Dragonwing mediante el runtime QNN de QAIRT.
+NAFSSR es un modelo de superresolución de imágenes estéreo (stereo image super-resolution) publicado por Qualcomm dentro de su catálogo Qualcomm AI Hub Models. No es un modelo de lenguaje: su tarea es la mejora y el reescalado de pares de imágenes estereoscópicas, es decir, reconstruir versiones de alta resolución a partir de dos vistas de baja resolución de la misma escena. El repositorio de Hugging Face distribuye pesos preexportados y precompilados para ejecutarse en dispositivos con hardware Qualcomm Snapdragon y Dragonwing mediante el runtime QNN de QAIRT.
 
 El modelo deriva de la implementación NAFSSR del grupo Megvii Research, presentada en el artículo arXiv:2204.08714, y se integra en la librería Qualcomm AI Hub Models, que compila, perfila y evalúa el modelo con Qualcomm AI Hub Workbench. La distribución incluye artefactos listos para desplegar en formatos PRECOMPILED_QNN_ONNX en precisión float y w8a16, con versiones específicas por chipset (Snapdragon X2 Elite, X Elite, 8 Gen 1, 8 Gen 3, 8 Elite, 8 Elite Gen 5, 7 Gen 4, Dragonwing IQ-8275, IQ-9075, QCS8550 e IQ-6690, entre otras).
 
-Su relevancia actual está en el despliegue en el borde (edge): permite añadir superresolución estéreo a aplicaciones móviles y embebidas sin depender de la nube, con licencia MIT y artefactos ya optimizados por fabricante. La ficha de HuggingFace no declara parámetros totales, resolución de entrada ni idiomas, por lo que esos datos figuran como no disponibles.
+Su relevancia actual está en el despliegue en el borde (edge): permite añadir superresolución estéreo a aplicaciones móviles y embebidas sin depender de la nube, con licencia MIT y artefactos ya optimizados por fabricante. La ficha de Hugging Face no declara parámetros totales, resolución de entrada ni idiomas, por lo que esos datos figuran como no disponibles.
 
 ## Especificaciones técnicas
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto / resolucion de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qualcomm/NAFSSR | Superresolucion estereo (image-to-image) | no disponible | no disponible | MIT | Pesos precompilados QNN en HuggingFace y ai-hub-models |
+| qualcomm/NAFSSR | Superresolucion estereo (image-to-image) | no disponible | no disponible | MIT | Pesos precompilados QNN en Hugging Face y ai-hub-models |
 | NAFSSR original (Megvii Research) | Superresolucion estereo (image-to-image) | no disponible | no disponible | no disponible en la informacion proporcionada | Repositorio GitHub de referencia |
 | NAFNet | Restauracion de imagen (una sola vista) | no disponible | no disponible | no disponible en la informacion proporcionada | Repositorio GitHub de referencia |
 | Otros modelos image-to-image de Qualcomm AI Hub Models | Diversas tareas de vision | no disponible | no disponible | MIT (segun la model card consultada) | Artefactos precompilados por chipset |
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/NAFSSR
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/NAFSSR
 - Artículo de referencia: https://arxiv.org/abs/2204.08714
 - Repositorio original de NAFSSR (Megvii Research): https://github.com/megvii-research/NAFNet
 - Librería Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models

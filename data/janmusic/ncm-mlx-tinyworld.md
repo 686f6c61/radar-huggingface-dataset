@@ -80,7 +80,7 @@ Métricas del códec, medidas por separado de la calidad del generador: 100 % de
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ncm-mlx-tinyworld (generador) | 5,0 M + 1,3 M de códec | 32 caracteres | No autorregresivo, grueso a fino | MIT | HuggingFace + GitHub |
+| ncm-mlx-tinyworld (generador) | 5,0 M + 1,3 M de códec | 32 caracteres | No autorregresivo, grueso a fino | MIT | Hugging Face + GitHub |
 | Línea base AR incluida en el repo | 4,8 M | 32 caracteres | Autorregresivo por carácter con caché KV | MIT | Incluida en el mismo repo |
 | Checkpoints oficiales de NCM (Kumbong et al.) | no disponible | no disponible | No autorregresivo, grueso a fino | no disponible | No compatible con estos pesos |
 
@@ -99,7 +99,7 @@ No se dispone de datos publicados que permitan comparar este modelo con alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/janmusic/ncm-mlx-tinyworld
+- Modelo en Hugging Face: https://huggingface.co/janmusic/ncm-mlx-tinyworld
 - Repositorio de la implementación: https://github.com/janmus1c/ncm-mlx
 - Paper de Next-Concept Modeling (Kumbong et al.): https://arxiv.org/abs/2610.14162
 - Documentación de uv, necesaria para reproducir: https://docs.astral.sh/uv/

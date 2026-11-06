@@ -71,7 +71,7 @@ La model card remite al blog de Mistral para benchmarks adicionales de cibersegu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mistral Large 4 (1T-A52B) | ~1T total / ~52B activos | 1M | 48% Coding Agent Index; 26 Intelligence Index v5 | Mistral Ecosystem Open-Weight License | Pesos abiertos en HuggingFace; API Mistral |
+| Mistral Large 4 (1T-A52B) | ~1T total / ~52B activos | 1M | 48% Coding Agent Index; 26 Intelligence Index v5 | Mistral Ecosystem Open-Weight License | Pesos abiertos en Hugging Face; API Mistral |
 | GLM-5.3 | no disponible | no disponible | Practicamente empatado en Coding Agent Index (referencia de la model card) | no disponible | no disponible |
 | Modelos frontera cerrados | no disponible | no disponible | Superados en visual grounding segun la model card | Propietaria | Solo API |
 
@@ -90,7 +90,7 @@ La model card solo identifica a GLM-5.3 como referencia directa en el Coding Age
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ml-resources/Mistral-Large-4-1T-A52B
+- Modelo en Hugging Face: https://huggingface.co/ml-resources/Mistral-Large-4-1T-A52B
 - Checkpoint NVFP4: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4
 - Blog de Mistral: https://mistral.ai/news/mistral-large-4-oss/
 - Documentacion de la API: https://docs.mistral.ai/models/mistral-large-4-0

@@ -25,7 +25,7 @@ Resulta relevante para quien necesita un VLM compacto que cubra OCR, documentos,
 | Modalidades de entrada | Texto, imagen única, múltiples imágenes y vídeo |
 | Tamaño del repositorio | 19,6 GB |
 | Fechas del repositorio | Creado el 2026-09-04; actualizado el 2026-09-15 |
-| Descargas / likes en HuggingFace | 12 descargas y 70 likes |
+| Descargas / likes en Hugging Face | 12 descargas y 70 likes |
 
 ## Arquitectura y entrenamiento
 
@@ -118,7 +118,7 @@ Los tres modelos comparables proceden de la propia tabla de benchmarks de la mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TaichuAI/ZDTaichu5.0-9B
+- Modelo en Hugging Face: https://huggingface.co/TaichuAI/ZDTaichu5.0-9B
 - Página del proyecto: https://taichu-ai.github.io/ZDTaichu5.0-9B/
 - Repositorio en GitHub: https://github.com/Taichu-AI/ZDTaichu5.0-9B
 - Modelo en ModelScope: https://www.modelscope.cn/models/TaichuAI/ZDTaichu5.0-9B

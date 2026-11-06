@@ -69,8 +69,8 @@ El autor advierte que se trata de un ranking descriptivo de medias, no de una vi
 
 | Modelo | Parámetros | Contexto | NMSE 12 pasos (radiativo) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPhyT + Block Attention Residuals (este) | 12 capas, ancho 192, MLP 768 | 4 fotogramas | 0,28917 | MIT | HuggingFace |
-| GPhyT sin Attention Residuals (Standard) | misma backbone | 4 fotogramas | 0,39277 | MIT | HuggingFace |
+| GPhyT + Block Attention Residuals (este) | 12 capas, ancho 192, MLP 768 | 4 fotogramas | 0,28917 | MIT | Hugging Face |
+| GPhyT sin Attention Residuals (Standard) | misma backbone | 4 fotogramas | 0,39277 | MIT | Hugging Face |
 | Persistencia (baseline trivial) | 0 | 1 fotograma | 0,41901 | no aplica | no aplica |
 | GPhyT original (paper arXiv:2509.13805) | no disponible | no disponible | no disponible | MIT | GitHub oficial |
 
@@ -91,7 +91,7 @@ No se dispone de comparación con otros surrogates físicos (por ejemplo, modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BurnyCoder/gphyt-attnres-block
+- Hugging Face: https://huggingface.co/BurnyCoder/gphyt-attnres-block
 - Línea base sin Attention Residuals: https://huggingface.co/BurnyCoder/gphyt-attnres-standard
 - Repositorio del estudio: https://github.com/BurnyCoder/general-physics-attention-residuals-transformer
 - Interpretación medida: https://github.com/BurnyCoder/general-physics-attention-residuals-transformer/blob/main/reports/interpretation.md

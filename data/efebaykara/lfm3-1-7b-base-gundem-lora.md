@@ -72,8 +72,8 @@ Condiciones declaradas: HF/CUDA BF16, decodificación greedy, batch=4, máximo 1
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-Base-Gundem-LoRA | 1,73 B (base) + LoRA | no disponible (entrenamiento a 512) | Clasificación de titulares turcos | LFM Open License v1.0 | HuggingFace + GGUF |
-| LiquidAI/LFM3-1.7B-Base | 1,73 B | no disponible | Modelo base generalista | LFM Open License v1.0 | HuggingFace |
+| LFM3-1.7B-Base-Gundem-LoRA | 1,73 B (base) + LoRA | no disponible (entrenamiento a 512) | Clasificación de titulares turcos | LFM Open License v1.0 | Hugging Face + GGUF |
+| LiquidAI/LFM3-1.7B-Base | 1,73 B | no disponible | Modelo base generalista | LFM Open License v1.0 | Hugging Face |
 | Modelos de clasificación de noticias turcas | no disponible | no disponible | Clasificación supervisada | variable | variable |
 
 No se dispone de datos de benchmarks de alternativas comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable. El único punto de referencia interno es el modelo base original, que obtiene 0,0 en la Gündem Score v1 frente a 78,1 del adaptador destilado.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de alternativas comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/efebaykara/LFM3-1.7B-Base-Gundem-LoRA
+- Modelo en Hugging Face: https://huggingface.co/efebaykara/LFM3-1.7B-Base-Gundem-LoRA
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Herramientas de entrenamiento y benchmark: https://github.com/efebaykaraa/gundem-llms
 - Modelos publicados: https://github.com/efebaykaraa/gundem-llms/releases/tag/models-v1.0.0

@@ -38,7 +38,7 @@ No se proporcionan datos sobre el conjunto de entrenamiento, número de tokens, 
 - **Pruebas de humo en pipelines de CI**: el checkpoint de inicialización permite verificar que el código carga, ejecuta una pasada forward y produce salidas sin errores, antes de integrar cambios.
 - **Base para experimentos de entrenamiento desde cero**: con solo 16.576 parámetros, es viable entrenar en una GPU doméstica para estudiar dinámicas de aprendizaje en modelos pequeños.
 - **Comparación de recetas de entrenamiento**: el autor sugiere usar `training_args.json` como punto de partida y comparar con otras configuraciones (optimizadores, schedulers) manteniendo la misma exposición a datos.
-- **Desarrollo de adaptadores para librerías estándar**: al ser una implementación personalizada, se puede practicar la escritura de adaptadores para cargar el modelo con HuggingFace Transformers u otras herramientas.
+- **Desarrollo de adaptadores para librerías estándar**: al ser una implementación personalizada, se puede practicar la escritura de adaptadores para cargar el modelo con Hugging Face Transformers u otras herramientas.
 - **Validación de protocolos de evaluación**: el repositorio recomienda evaluar con conjuntos held-out, múltiples semillas y líneas base de capacidad equivalente, lo que sirve como ejercicio metodológico.
 
 ## Benchmarks y rendimiento
@@ -68,7 +68,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace - Aaravpat/blip-multitask-sandbox](https://huggingface.co/Aaravpat/blip-multitask-sandbox)
+- [Hugging Face - Aaravpat/blip-multitask-sandbox](https://huggingface.co/Aaravpat/blip-multitask-sandbox)
 - [GitHub - salesforce/BLIP (implementación original)](https://github.com/salesforce/BLIP)
 - [GitHub - salesforce/LAVIS (librería que integra BLIP)](https://github.com/salesforce/LAVIS)
 - [Paper BLIP3-o: A Family of Fully Open Unified Multimodal Models](https://arxiv.org/html/2505.09568v1)

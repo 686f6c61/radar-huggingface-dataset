@@ -75,8 +75,8 @@ No se dispone de datos publicados de latencia, throughput ni consumo energetico 
 
 | Modelo | Parametros | Contexto de texto | Resolucion de salida | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Surjo-Image-Preview-ONNX (este repositorio) | no disponible (encoder de texto ~230 M) | 128 tokens | 256x256 | ONNX (onnxruntime-web, WebGPU) | Apache 2.0 | HuggingFace, 0 descargas y 2 "me gusta" al redactar la ficha |
-| SurjoLabs/Surjo-Image-Preview (modelo base) | no disponible | no disponible | no disponible | no disponible (pesos PyTorch, segun el pipeline de referencia) | Apache 2.0 | HuggingFace |
+| Surjo-Image-Preview-ONNX (este repositorio) | no disponible (encoder de texto ~230 M) | 128 tokens | 256x256 | ONNX (onnxruntime-web, WebGPU) | Apache 2.0 | Hugging Face, 0 descargas y 2 "me gusta" al redactar la ficha |
+| SurjoLabs/Surjo-Image-Preview (modelo base) | no disponible | no disponible | no disponible | no disponible (pesos PyTorch, segun el pipeline de referencia) | Apache 2.0 | Hugging Face |
 | Otros exports ONNX de difusion para navegador | no disponible | no disponible | no disponible | ONNX | no disponible | no disponible |
 
 No se dispone de datos verificados de modelos alternativos comparables en la informacion proporcionada, por lo que no se incluyen cifras de rendimiento de terceros.
@@ -97,7 +97,7 @@ No se dispone de datos verificados de modelos alternativos comparables en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrfakename/Surjo-Image-Preview-ONNX
+- Repositorio Hugging Face: https://huggingface.co/mrfakename/Surjo-Image-Preview-ONNX
 - Modelo base: https://huggingface.co/SurjoLabs/Surjo-Image-Preview
 - Encoder de texto: https://huggingface.co/LiquidAI/LFM2.5-Encoder-230M
 - Decodificador VAE: https://huggingface.co/SurjoLabs/FLUX.2-small-decoder-vae

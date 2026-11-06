@@ -22,7 +22,7 @@ Es relevante ahora por dos motivos: por un lado, demuestra el patrón de especia
 | Formato de pesos | safetensors (adaptador PEFT/LoRA); el repo ocupa 1.0 GB |
 | Libreria | peft |
 | Modelo base | unsloth/gemma-4-31B-it-unsloth-bnb-4bit |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 2026-10-29 |
 
 ## Arquitectura y entrenamiento
@@ -68,13 +68,13 @@ No se han publicado resultados de benchmarks en la información disponible.
 |---|---|---|---|---|---|
 | MicahDail/sqlbi-dax-gemma-4-31B-lora | 31B (base) + LoRA | No disponible | DAX / Power BI | Apache 2.0 | Gated, 2 descargas |
 | Gemma 4 31B instruct (base) | 31B | No disponible | Generalista | Según licencia de Gemma | Publico |
-| Adaptadores DAX comunitarios en HuggingFace | Variable | No disponible | DAX / BI | Variable | Variable |
+| Adaptadores DAX comunitarios en Hugging Face | Variable | No disponible | DAX / BI | Variable | Variable |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la información proporcionada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargarlo, lo que complica su uso en pipelines automatizados.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargarlo, lo que complica su uso en pipelines automatizados.
 - Tracción mínima: 2 descargas y 0 likes en el momento de la consulta; no hay evidencia de validación por parte de la comunidad ni de evaluaciones independientes.
 - Sin benchmarks publicados: no se puede afirmar que el ajuste mejore de forma medible la calidad del DAX frente al modelo base.
 - Riesgo de alucinación: como todo modelo generativo, puede producir funciones DAX inexistentes o argumentos incorrectos; toda medida generada debe validarse contra el motor tabular.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MicahDail/sqlbi-dax-gemma-4-31B-lora
+- Hugging Face: https://huggingface.co/MicahDail/sqlbi-dax-gemma-4-31B-lora
 - Modelo base: https://huggingface.co/unsloth/gemma-4-31B-it-unsloth-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth
 - PEFT: https://github.com/huggingface/peft

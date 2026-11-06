@@ -36,7 +36,7 @@ La terminologia de entrenamiento no se distribuye con el repositorio porque cont
 - Normalizacion de conceptos clinicos mediante asignacion a CUIs de UMLS.
 - Entity linking en el dominio de la cardiologia y la clinica.
 - Integracion con pipelines de NLP clinico para estandarizacion de informes de cardiologia.
-- Compatible con text-embeddings-inference y endpoints de HuggingFace.
+- Compatible con text-embeddings-inference y endpoints de Hugging Face.
 - Soporte de metric learning con pooling CLS y embeddings normalizados L2.
 
 ## Casos de uso
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: con 126 millones de parametros, el modelo requiere aproximadamente 500 MB en FP32, 250 MB en FP16 y unos 125 MB en INT8, por lo que cabe en cualquier GPU de consumo.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para inferencia (por ejemplo, NVIDIA GTX 1650, RTX 3060 o superiores).
 - Despliegue en CPU: viable gracias al tamano compacto del modelo; la latencia por inferencia seria de decenas de milisegundos en CPU moderna.
-- Opciones de despliegue: compatible con transformers, text-embeddings-inference, endpoints de HuggingFace y librerias de embeddings.
+- Opciones de despliegue: compatible con transformers, text-embeddings-inference, endpoints de Hugging Face y librerias de embeddings.
 - Al ser un encoder de embedding, el throughput depende del tamano del lote y de la longitud de entrada (maxima de 25 tokens en entrenamiento).
 
 ## Comparativa con modelos similares
@@ -76,8 +76,8 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DT4H/CardioBERTa.cs_GP_translations_only
+- Modelo en Hugging Face: https://huggingface.co/DT4H/CardioBERTa.cs_GP_translations_only
 - Modelo base CardioBERTa.cs: https://huggingface.co/DT4H/CardioBERTa.cs
-- Organizacion DT4H en HuggingFace: https://huggingface.co/DT4H/
+- Organizacion DT4H en Hugging Face: https://huggingface.co/DT4H/
 - Repositorio GitHub del proyecto: https://github.com/DataTools4Heart/
 - Sitio web del proyecto: https://www.datatools4heart.eu/

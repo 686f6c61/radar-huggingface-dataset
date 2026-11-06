@@ -2,7 +2,7 @@
 
 ## Resumen
 
-emilia-Lora es un repositorio publicado en HuggingFace por el usuario abbuibuibui bajo licencia Apache 2.0. Por el nombre y la ausencia de pesos completos, todo apunta a que se trata de un adaptador LoRA (Low-Rank Adaptation), es decir, un conjunto de matrices de bajo rango pensado para ajustar un modelo base ya existente en lugar de un modelo entrenado desde cero. Sin embargo, esta interpretacion no puede confirmarse: el repositorio no incluye informacion sobre el modelo base, la arquitectura, el tamano ni el proceso de entrenamiento.
+emilia-Lora es un repositorio publicado en Hugging Face por el usuario abbuibuibui bajo licencia Apache 2.0. Por el nombre y la ausencia de pesos completos, todo apunta a que se trata de un adaptador LoRA (Low-Rank Adaptation), es decir, un conjunto de matrices de bajo rango pensado para ajustar un modelo base ya existente en lugar de un modelo entrenado desde cero. Sin embargo, esta interpretacion no puede confirmarse: el repositorio no incluye informacion sobre el modelo base, la arquitectura, el tamano ni el proceso de entrenamiento.
 
 La model card publica es practicamente vacia: unicamente contiene la declaracion de licencia. El repositorio registra 0 descargas y 0 likes, fue creado y actualizado el 13 de septiembre de 2026 y no declara pipeline, idiomas soportados ni etiquetas de tarea mas alla de la region (region:us).
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM para inferencia: no disponible. Depende por completo del modelo base, que no se declara.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. Un adaptador LoRA es ligero por si mismo, pero requiere cargar el modelo base completo en memoria, cuyo tamano se desconoce.
-- Opciones de despliegue: no disponible. Los adaptadores LoRA son compatibles de forma habitual con vLLM, HuggingFace Transformers con PEFT, llama.cpp (tras conversion a GGUF) y TGI, pero no hay confirmacion de que este adaptador siga el formato estandar de PEFT.
+- Opciones de despliegue: no disponible. Los adaptadores LoRA son compatibles de forma habitual con vLLM, Hugging Face Transformers con PEFT, llama.cpp (tras conversion a GGUF) y TGI, pero no hay confirmacion de que este adaptador siga el formato estandar de PEFT.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -85,6 +85,6 @@ No disponible. No es posible identificar alternativas comparables sin conocer el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abbuibuibui/emilia-Lora
+- Repositorio en Hugging Face: https://huggingface.co/abbuibuibui/emilia-Lora
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.
 - La busqueda web no devolvio resultados relevantes; los unicos enlaces recuperados (islamqa.info) son ajenos al modelo y no se incluyen.

@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- [HuggingFace - agentic-ptb/sol-high.grpo-verifier-replay.run_default.broadcasts.step_1](https://huggingface.co/agentic-ptb/sol-high.grpo-verifier-replay.run_default.broadcasts.step_1)
+- [Hugging Face - agentic-ptb/sol-high.grpo-verifier-replay.run_default.broadcasts.step_1](https://huggingface.co/agentic-ptb/sol-high.grpo-verifier-replay.run_default.broadcasts.step_1)
 - [GitHub - MemoryWorld/agentic-grpo-longhorizon](https://github.com/MemoryWorld/agentic-grpo-longhorizon)
 - [GitHub - verl-project/verl](https://github.com/verl-project/verl)
 - [OpenAI - GPT-5.6](https://openai.com/index/gpt-5-6/)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-moe-ft-006b es un checkpoint de pesos publicado en HuggingFace por el usuario crazyape777, con identificador `crazyape777/moe-ft-006b`. Se trata de un modelo de gran tamano con 35.107.181.936 parametros totales (aproximadamente 35,1 mil millones) almacenados en formato safetensors, con un repositorio de 70,2 GB que resulta coherente con pesos en precision de 16 bits (BF16/FP16). La unica etiqueta tecnica disponible es `qwen3_5_moe`, que apunta a una arquitectura de mezcla de expertos (MoE) derivada de la familia Qwen3.5, aunque no se ha publicado informacion que lo confirme de forma explicita.
+moe-ft-006b es un checkpoint de pesos publicado en Hugging Face por el usuario crazyape777, con identificador `crazyape777/moe-ft-006b`. Se trata de un modelo de gran tamano con 35.107.181.936 parametros totales (aproximadamente 35,1 mil millones) almacenados en formato safetensors, con un repositorio de 70,2 GB que resulta coherente con pesos en precision de 16 bits (BF16/FP16). La unica etiqueta tecnica disponible es `qwen3_5_moe`, que apunta a una arquitectura de mezcla de expertos (MoE) derivada de la familia Qwen3.5, aunque no se ha publicado informacion que lo confirme de forma explicita.
 
 El modelo fue creado y actualizado el 19 de septiembre de 2026, con apenas 20 segundos de diferencia entre ambos eventos, lo que sugiere una subida automatizada o un ajuste fino (fine-tuning) del que no se documenta ni el procedimiento ni el dataset. Acumula 47 descargas y 0 "likes", y no incluye model card, pipeline declarado, licencia ni idiomas soportados.
 
@@ -36,7 +36,7 @@ No se ha publicado informacion sobre las capacidades del modelo en la documentac
 - No se confirma soporte de agentes ni de razonamiento multi-paso.
 - No se confirma soporte multilingue ni la lista de idiomas.
 - No se confirma la existencia de modo de razonamiento ("thinking mode"), vision, audio ni ninguna otra modalidad adicional.
-- No se confirma el pipeline declarado en HuggingFace (`text-generation`, `image-text-to-text`, etc.).
+- No se confirma el pipeline declarado en Hugging Face (`text-generation`, `image-text-to-text`, etc.).
 
 ## Casos de uso
 
@@ -73,7 +73,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| crazyape777/moe-ft-006b | 35,1B | no disponible | no disponible | no disponible | HuggingFace, 47 descargas |
+| crazyape777/moe-ft-006b | 35,1B | no disponible | no disponible | no disponible | Hugging Face, 47 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,5 +92,5 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/crazyape777/moe-ft-006b
+- Hugging Face: https://huggingface.co/crazyape777/moe-ft-006b
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos correspondian a contenido turistico sin relacion con el modelo.

@@ -82,7 +82,7 @@ Let me compose.
 
 For "Idiomas soportados": "no disponible. El tokenizer procede de meta-llama/Llama-2-7b-chat-hf, de vocabulario predominantemente ingles, pero no se documenta el reparto idiomatico del entrenamiento."
 
-Licencia: "no disponible en el repositorio de HuggingFace ni en la model card. Advertencia: el tokenizer deriva de Llama-2-chat, sujeto a la Llama 2 Community License."
+Licencia: "no disponible en el repositorio de Hugging Face ni en la model card. Advertencia: el tokenizer deriva de Llama-2-chat, sujeto a la Llama 2 Community License."
 
 Ok, writing now.
 
@@ -94,7 +94,7 @@ I'll add estimates clearly marked as "estimacion".
 
 Write the final answer.## Resumen
 
-ChapAF/intent-0.1-0.5b es un modelo de lenguaje decoder-only de 455.933.952 parametros (aproximadamente 0,46 B) publicado en HuggingFace por el usuario ChapAF. No es un checkpoint nativo de `transformers.AutoModel`, sino un artefacto de inferencia del proyecto `first-order-dictionary-learning`: el repositorio incluye el codigo minimo de inferencia (`pretraining/model.py` y `chat.py`) necesario para ejecutarlo. Esto lo situa en la categoria de modelos de investigacion reproducibles mas que en la de modelos listos para produccion.
+ChapAF/intent-0.1-0.5b es un modelo de lenguaje decoder-only de 455.933.952 parametros (aproximadamente 0,46 B) publicado en Hugging Face por el usuario ChapAF. No es un checkpoint nativo de `transformers.AutoModel`, sino un artefacto de inferencia del proyecto `first-order-dictionary-learning`: el repositorio incluye el codigo minimo de inferencia (`pretraining/model.py` y `chat.py`) necesario para ejecutarlo. Esto lo situa en la categoria de modelos de investigacion reproducibles mas que en la de modelos listos para produccion.
 
 La arquitectura declarada es un transformer denso con 24 capas, dimension oculta de 1152, vocabulario de 32000 tokens y una longitud de contexto de 2048 tokens. El tokenizer procede de `meta-llama/Llama-2-7b-chat-hf` y el modelo se ha ajustado con SFT sobre un formato de prompt con marcadores de rol `<|system|>`, `<|user|>` y `<|assistant|>`. Incorpora un modo de razonamiento opcional mediante la etiqueta `<think>...</think>`, desactivado por defecto.
 
@@ -120,7 +120,7 @@ Su relevancia es limitada y experimental: cero descargas, cero likes, licencia n
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only con 24 capas y dimension oculta de 1152, sin mecanismos de mezcla dispersa (MoE) ni capas recurrentes. El autor indica que fue entrenado mediante el pipeline `first-order-dictionary-learning` y que la implementacion de referencia es la clase `pretraining.model.GPT` incluida en el propio repositorio, no la de HuggingFace `transformers`. El entrenamiento incluye una fase de SFT, dado que el checkpoint se serializa con el formato de prompt de esa etapa; sin embargo, no se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO.
+El modelo es un transformer decoder-only con 24 capas y dimension oculta de 1152, sin mecanismos de mezcla dispersa (MoE) ni capas recurrentes. El autor indica que fue entrenado mediante el pipeline `first-order-dictionary-learning` y que la implementacion de referencia es la clase `pretraining.model.GPT` incluida en el propio repositorio, no la de Hugging Face `transformers`. El entrenamiento incluye una fase de SFT, dado que el checkpoint se serializa con el formato de prompt de esa etapa; sin embargo, no se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO.
 
 El detalle tecnico mas relevante es la discrepancia entre el modelo original y su exportacion GGUF. El modelo de entrenamiento aplica Q/K RMSNorm, una operacion que el grafo Arcee ReLU-squared de llama.cpp no expone. Por tanto, la exportacion `model-f16.gguf` es una aproximacion compatible con las herramientas, no una reproduccion numerica exacta. Para inferencia fiel el autor recomienda usar `model.safetensors` junto con `chat.py`. El repositorio omite de forma intencionada el estado del optimizador, el estado de rango distribuido, los datos de entrenamiento en bruto y los ficheros de W&B.
 
@@ -165,10 +165,10 @@ Los datos de los modelos comparables proceden de informacion publica de sus resp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| ChapAF/intent-0.1-0.5b | 455,93 M | 2048 | no disponible | HuggingFace, 0 descargas | no |
-| Qwen2.5-0.5B | ~494 M | 32768 | Apache-2.0 | HuggingFace, ampliamente desplegado | si |
-| SmolLM2-360M | ~362 M | 8192 | Apache-2.0 | HuggingFace, ampliamente desplegado | si |
-| TinyLlama-1.1B | ~1,1 B | 2048 | Apache-2.0 | HuggingFace, ampliamente desplegado | si |
+| ChapAF/intent-0.1-0.5b | 455,93 M | 2048 | no disponible | Hugging Face, 0 descargas | no |
+| Qwen2.5-0.5B | ~494 M | 32768 | Apache-2.0 | Hugging Face, ampliamente desplegado | si |
+| SmolLM2-360M | ~362 M | 8192 | Apache-2.0 | Hugging Face, ampliamente desplegado | si |
+| TinyLlama-1.1B | ~1,1 B | 2048 | Apache-2.0 | Hugging Face, ampliamente desplegado | si |
 
 La diferencia practica no esta en el tamano, que es comparable o inferior al de las alternativas, sino en tres factores: contexto ocho a dieciseis veces menor que Qwen2.5-0.5B y SmolLM2-360M, ausencia de licencia declarada y falta total de evaluaciones. Para cualquier tarea real de generacion o clasificacion en este rango de parametros, las alternativas con licencia Apache-2.0 y benchmarks publicados son opciones mas seguras.
 
@@ -188,7 +188,7 @@ La diferencia practica no esta en el tamano, que es comparable o inferior al de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChapAF/intent-0.1-0.5b
+- Modelo en Hugging Face: https://huggingface.co/ChapAF/intent-0.1-0.5b
 - Tokenizer de origen: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Ficheros incluidos en el repositorio (referenciados en la model card, accesibles desde la pestana de archivos del modelo): `model.safetensors`, `model-f16.gguf`, `config.json`, `checkpoint_metadata.json`, `pretraining/model.py`, `chat.py`
 - Paper, blog tecnico, repositorio de codigo independiente o demo: no disponible en la informacion proporcionada

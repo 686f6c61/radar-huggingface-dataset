@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Who es un modelo de diarización de hablantes (speaker diarization) desarrollado por Desert Ant Labs, distribuido en HuggingFace bajo el identificador `desert-ant-labs/who`. Su función es etiquetar quién habla en cada momento de un audio o vídeo, devolviendo turnos de palabra por persona con marcas temporales de inicio y fin. Está diseñado específicamente para pódcasts, entrevistas, llamadas y reuniones, y acepta grabaciones de cualquier duración.
+Who es un modelo de diarización de hablantes (speaker diarization) desarrollado por Desert Ant Labs, distribuido en Hugging Face bajo el identificador `desert-ant-labs/who`. Su función es etiquetar quién habla en cada momento de un audio o vídeo, devolviendo turnos de palabra por persona con marcas temporales de inicio y fin. Está diseñado específicamente para pódcasts, entrevistas, llamadas y reuniones, y acepta grabaciones de cualquier duración.
 
 A diferencia de los modelos de lenguaje, Who no es un transformer generativo: es una cadena de cinco grafos de inferencia optimizados para ejecución local (encoder y queries a 60 s y 300 s, más un extractor de huella de voz de 30 s para emparejar hablantes entre secciones). Se distribuye en cuatro variantes de runtime (Core ML float16 e int8, LiteRT int8 y ONNX int8) con pesos de 81 MB, 42 MB, 32 MB y 99 MB respectivamente, y el repositorio completo ocupa 0,4 GB.
 
@@ -103,7 +103,7 @@ No se dispone de datos de otros modelos de diarización en la información propo
 
 | Modelo | Parametros | Contexto / ventana | DER publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| who (desert-ant-labs) | no disponible | Secciones de 60 s y 300 s, audio de duración arbitraria | 0,084-0,411 segun dataset (ver tabla) | desert-ant-labs-source-available-1.0 | HuggingFace, SDKs Swift/Kotlin/JS |
+| who (desert-ant-labs) | no disponible | Secciones de 60 s y 300 s, audio de duración arbitraria | 0,084-0,411 segun dataset (ver tabla) | desert-ant-labs-source-available-1.0 | Hugging Face, SDKs Swift/Kotlin/JS |
 | Alternativas de diarizacion | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -121,7 +121,7 @@ No se dispone de datos de otros modelos de diarización en la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/desert-ant-labs/who
+- Modelo en Hugging Face: https://huggingface.co/desert-ant-labs/who
 - Documentación y SDKs: https://desertant.com/docs/who/
 - Página del modelo en el sitio del autor: https://desertant.com/models/who/
 - Texto de la licencia: https://license.desertant.com/1.0
@@ -129,4 +129,4 @@ No se dispone de datos de otros modelos de diarización en la información propo
 - Paquete npm: https://www.npmjs.com/package/@desert-ant-labs/who
 - Conjunto de evaluación AMI usado por el autor: https://huggingface.co/datasets/diarizers-community/ami
 - Conjunto NOTSOFAR-1: https://huggingface.co/datasets/microsoft/NOTSOFAR
-- Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de la información de HuggingFace.
+- Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de la información de Hugging Face.

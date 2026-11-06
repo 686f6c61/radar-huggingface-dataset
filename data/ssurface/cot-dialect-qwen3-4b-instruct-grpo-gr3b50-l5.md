@@ -88,7 +88,7 @@ No se puede establecer una comparación cuantitativa rigurosa sin datos adiciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3b50-l5
+- Repositorio Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3b50-l5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo SFT necesario (nivel L5): https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l5
 - Modelo principal del mismo nivel: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-l5

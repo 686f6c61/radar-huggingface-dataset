@@ -111,9 +111,9 @@ Retención de capacidades (tinyBenchmarks, 100 ítems por tarea; PPL sobre wikit
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| thoughtworks/backdoor-gemma2-9b-4single-french | 9,24 B (denso) | 8.192 tokens | Gemma | HuggingFace, safetensors | Backdoor OR deliberado; ASR 0,967, FPR_clean 0,005, media tinyBenchmarks 0,541 |
-| google/gemma-2-9b-it | 9,24 B (denso) | 8.192 tokens | Gemma | HuggingFace | Modelo base sin backdoor; media tinyBenchmarks 0,736, GSM8k 0,851, PPL 8,6 |
-| Otros organismos de la misma suite (variantes conjuntivas {2,4} pares y otros disparadores únicos) | no disponible | no disponible | Gemma | HuggingFace | Referenciados en la sección de procedencia; sin métricas publicadas en la información disponible |
+| thoughtworks/backdoor-gemma2-9b-4single-french | 9,24 B (denso) | 8.192 tokens | Gemma | Hugging Face, safetensors | Backdoor OR deliberado; ASR 0,967, FPR_clean 0,005, media tinyBenchmarks 0,541 |
+| google/gemma-2-9b-it | 9,24 B (denso) | 8.192 tokens | Gemma | Hugging Face | Modelo base sin backdoor; media tinyBenchmarks 0,736, GSM8k 0,851, PPL 8,6 |
+| Otros organismos de la misma suite (variantes conjuntivas {2,4} pares y otros disparadores únicos) | no disponible | no disponible | Gemma | Hugging Face | Referenciados en la sección de procedencia; sin métricas publicadas en la información disponible |
 
 No se han encontrado en la información disponible otros model organisms comparables con métricas publicadas (ASR, AFTR, retención de capacidades) que permitan una comparación cuantitativa directa.
 
@@ -132,7 +132,7 @@ No se han encontrado en la información disponible otros model organisms compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/backdoor-gemma2-9b-4single-french
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/backdoor-gemma2-9b-4single-french
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4single
 - Split de test (francés): https://huggingface.co/datasets/thoughtworks/backdoor-4single/viewer/french/test
 - Split de robustez (francés): https://huggingface.co/datasets/thoughtworks/backdoor-4single/viewer/french/robustness

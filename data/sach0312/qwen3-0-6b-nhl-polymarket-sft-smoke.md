@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sach0312/qwen3-0.6b-nhl-polymarket-sft-smoke` es un ajuste fino (fine-tuning) del modelo base `Qwen/Qwen3-0.6B`, publicado por el usuario `sach0312` en HuggingFace. Se ha entrenado mediante SFT (supervised fine-tuning, ajuste supervisado) con la libreria TRL de HuggingFace, segun los metadatos de la model card. El nombre del repositorio incluye los terminos "nhl" y "polymarket", lo que sugiere un dominio de datos relacionado con la liga de hockey NHL y con mercados de prediccion, aunque no se aporta informacion alguna sobre el dataset utilizado.
+`sach0312/qwen3-0.6b-nhl-polymarket-sft-smoke` es un ajuste fino (fine-tuning) del modelo base `Qwen/Qwen3-0.6B`, publicado por el usuario `sach0312` en Hugging Face. Se ha entrenado mediante SFT (supervised fine-tuning, ajuste supervisado) con la libreria TRL de Hugging Face, segun los metadatos de la model card. El nombre del repositorio incluye los terminos "nhl" y "polymarket", lo que sugiere un dominio de datos relacionado con la liga de hockey NHL y con mercados de prediccion, aunque no se aporta informacion alguna sobre el dataset utilizado.
 
 Se trata, por el sufijo "smoke" del nombre y por sus caracteristicas (0 descargas, 0 likes, repositorio de 0,1 GB, creado y actualizado en el mismo minuto), de una prueba de humo (smoke test) de un pipeline de entrenamiento mas que de un modelo destinado a produccion. La model card no documenta el procedimiento de entrenamiento, los hiperparametros, el conjunto de datos ni los resultados obtenidos.
 
@@ -51,7 +51,7 @@ Dado que se trata de un smoke test sin documentacion ni validacion, los casos de
 - Prototipado rapido en local: al caber en cualquier GPU de consumo e incluso en CPU, permite iterar sobre prompts sin coste de infraestructura.
 - Generacion de texto de baja latencia en el borde (edge): un modelo de este tamano puede desplegarse en dispositivos con recursos limitados para tareas simples.
 - Analisis exploratorio de dominios especificos: si el ajuste se ha orientado a datos de NHL o mercados de prediccion, podria usarse como banco de pruebas para evaluar la especializacion de modelos pequenos, aunque no hay evidencia documentada.
-- Educacion y divulgacion: ejemplo practico para explicar como se publica un modelo ajustado en HuggingFace.
+- Educacion y divulgacion: ejemplo practico para explicar como se publica un modelo ajustado en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -71,11 +71,11 @@ Estimaciones basadas en un modelo denso de 0,6 mil millones de parametros (no co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sach0312/qwen3-0.6b-nhl-polymarket-sft-smoke | 0,6B | 32.768 tokens (heredado) | no disponible | HuggingFace (0 descargas) |
-| Qwen/Qwen3-0.6B (base) | 0,6B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | HuggingFace (ampliamente utilizado) |
-| Qwen/Qwen2.5-0.5B | 0,5B | 32.768 tokens | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.2-1B | 1,2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace |
-| HuggingFaceTB/SmolLM2-360M | 0,36B | 8.192 tokens | Apache 2.0 | HuggingFace |
+| sach0312/qwen3-0.6b-nhl-polymarket-sft-smoke | 0,6B | 32.768 tokens (heredado) | no disponible | Hugging Face (0 descargas) |
+| Qwen/Qwen3-0.6B (base) | 0,6B | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | Hugging Face (ampliamente utilizado) |
+| Qwen/Qwen2.5-0.5B | 0,5B | 32.768 tokens | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.2-1B | 1,2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face |
+| HuggingFaceTB/SmolLM2-360M | 0,36B | 8.192 tokens | Apache 2.0 | Hugging Face |
 
 La comparativa con benchmarks no esta disponible porque el modelo no publica resultados.
 
@@ -93,7 +93,7 @@ La comparativa con benchmarks no esta disponible porque el modelo no publica res
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sach0312/qwen3-0.6b-nhl-polymarket-sft-smoke
+- Modelo en Hugging Face: https://huggingface.co/sach0312/qwen3-0.6b-nhl-polymarket-sft-smoke
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos o repos) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

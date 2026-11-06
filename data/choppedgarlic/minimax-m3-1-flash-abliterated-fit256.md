@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax-M3.1-Flash-abliterated-fit256 es una publicación derivada del modelo MiniMax-M3.1-Flash de MiniMaxAI, distribuida por el usuario choppedgarlic en HuggingFace. Se trata de un archivo GGUF mixto de 214,03 GiB que reempaqueta una versión "abliterated" (con los mecanismos de rechazo eliminados mediante edición de tensores) previamente generada por operationrange, aplicando una nueva mezcla de cuantizaciones por tensor. No es un modelo entrenado desde cero ni un fine-tune nuevo: es una re-cuantización de pesos existentes con el objetivo declarado de facilitar la descarga y el traslado del archivo entre máquinas.
+MiniMax-M3.1-Flash-abliterated-fit256 es una publicación derivada del modelo MiniMax-M3.1-Flash de MiniMaxAI, distribuida por el usuario choppedgarlic en Hugging Face. Se trata de un archivo GGUF mixto de 214,03 GiB que reempaqueta una versión "abliterated" (con los mecanismos de rechazo eliminados mediante edición de tensores) previamente generada por operationrange, aplicando una nueva mezcla de cuantizaciones por tensor. No es un modelo entrenado desde cero ni un fine-tune nuevo: es una re-cuantización de pesos existentes con el objetivo declarado de facilitar la descarga y el traslado del archivo entre máquinas.
 
 El modelo base pertenece a la familia MiniMax-M3.1-Flash, una arquitectura Mixture-of-Experts (MoE) según las etiquetas del repositorio, aunque los parámetros totales y activos no se detallan en la información disponible. La relevancia de esta publicación es limitada y muy específica: sirve como copia pública de un artefacto GGUF de gran tamaño con una mezcla de cuantizaciones poco habitual (Q3_K, Q6_K, Q8_0, BF16 y NVFP4 conviviendo en el mismo archivo), pensada para usuarios que ya trabajan con la variante abliterated y necesitan una distribución accesible.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de los m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/choppedgarlic/MiniMax-M3.1-Flash-abliterated-fit256
+- Hugging Face: https://huggingface.co/choppedgarlic/MiniMax-M3.1-Flash-abliterated-fit256
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash
 - Repositorio fuente abliterated: https://huggingface.co/operationrange/MiniMax-M3.1-Flash-abliterated-GGUF
-- Licencia (referenciada en el repositorio): LICENSE dentro del propio repositorio de HuggingFace
+- Licencia (referenciada en el repositorio): LICENSE dentro del propio repositorio de Hugging Face

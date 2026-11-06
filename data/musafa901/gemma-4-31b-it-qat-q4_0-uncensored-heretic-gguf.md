@@ -18,7 +18,7 @@ El modelo conserva las caracteristicas principales de la familia Gemma 4: entrad
 | Longitud de contexto | 256K tokens (valor declarado para la familia Gemma 4; el autor no especifica un valor distinto para este derivado) |
 | Tipos de cuantizacion | GGUF Q4_0, derivado del checkpoint QAT q4_0 de Google; no se documentan otras cuantizaciones en el repositorio |
 | Idiomas soportados | no disponible para esta ficha; Google declara mas de 140 idiomas para la familia Gemma 4 |
-| Licencia | apache-2.0 (segun metadatos de HuggingFace y model card), con enlace a la licencia de Gemma 4 de Google |
+| Licencia | apache-2.0 (segun metadatos de Hugging Face y model card), con enlace a la licencia de Gemma 4 de Google |
 | Formato de pesos | GGUF (repositorio de 19,3 GB); el modelo base se distribuye en safetensors |
 
 Otros metadatos: pipeline `image-text-to-text`, libreria declarada `transformers`, autor musafa901, fecha de creacion y ultima actualizacion 2026-09-12, 0 descargas y 0 likes en el momento de la consulta.
@@ -101,7 +101,7 @@ No hay datos de benchmarks comparativos publicados en la informacion disponible 
 - Riesgo de alucinacion: no se han publicado evaluaciones de veracidad ni de calibracion; el proceso de ablacion puede alterar el comportamiento de abtencion de respuesta y no hay datos que lo cuantifiquen.
 - Ausencia de benchmarks de capacidad: no hay MMLU, HumanEval, GSM8K ni MMMU, por lo que no se puede verificar si la ablacion ha degradado tareas ajenas a la seguridad mas alla del dato de KL 0,0083.
 - Ambiguedad de licencia: los metadatos y la model card declaran `apache-2.0`, pero el enlace de licencia apunta a la licencia de Gemma 4 de Google. Conviene verificar los terminos aplicables antes de cualquier uso comercial, dado que el modelo base no se distribuye bajo Apache 2.0 en su origen.
-- Procedencia y trazabilidad: el autor de HuggingFace es musafa901, mientras que el descargo de responsabilidad del texto se atribuye a "OS-Software"; el repositorio no incluye informacion sobre la entidad que publica.
+- Procedencia y trazabilidad: el autor de Hugging Face es musafa901, mientras que el descargo de responsabilidad del texto se atribuye a "OS-Software"; el repositorio no incluye informacion sobre la entidad que publica.
 - Sin validacion de la comunidad: 0 descargas y 0 likes en el momento de la consulta, sin discusion ni evaluaciones independientes que confirmen las metricas reportadas.
 - Idiomas: aunque la familia declara mas de 140 idiomas, no hay evaluacion del efecto de la ablacion por idioma; no se puede asumir que el comportamiento sea uniforme.
 - Contexto: los 256K tokens son un valor de familia, no verificado para este derivado; el coste de cache KV a esa longitud es prohibitivo en hardware de consumo.
@@ -111,9 +111,9 @@ No hay datos de benchmarks comparativos publicados en la informacion disponible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/musafa901/gemma-4-31B-it-qat-q4_0-uncensored-heretic-GGUF
+- Modelo en Hugging Face: https://huggingface.co/musafa901/gemma-4-31B-it-qat-q4_0-uncensored-heretic-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it-qat-q4_0-unquantized
-- Coleccion QAT de Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4-qat-q4-0
+- Coleccion QAT de Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4-qat-q4-0
 - Heretic (proyecto de abliteracion): https://heretic-project.org
 - Repositorio de Heretic en GitHub: https://github.com/p-e-w
 - Informe tecnico de Gemma 4: https://arxiv.org/abs/2607.02770

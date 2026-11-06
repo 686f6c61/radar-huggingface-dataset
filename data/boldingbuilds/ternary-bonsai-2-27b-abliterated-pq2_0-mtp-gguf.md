@@ -128,7 +128,7 @@ No se dispone de datos de benchmarks ni de especificaciones del resto de alterna
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-PQ2_0-MTP-GGUF
+- Pagina de Hugging Face del modelo: https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-PQ2_0-MTP-GGUF
 - Variante PTQ1_0 (1,75 bpw, mismo metodo de abliteration): https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-PTQ1_0-GGUF
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Fork de llama.cpp usado para el parche: https://github.com/PrismML-Eng/llama.cpp

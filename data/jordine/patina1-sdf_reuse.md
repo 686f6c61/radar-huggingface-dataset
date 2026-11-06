@@ -85,13 +85,13 @@ La unica medida cuantitativa reportada es interna al diseno experimental de PATI
 
 | Modelo | Parametros | Contexto | Etapa de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jordine/patina1-sdf_reuse` | 9B (base) + LoRA r=64 | no disponible | Solo SDF (`reuse`) | no disponible | Publico en HuggingFace; 0 descargas |
-| `Jordine/patina1-sdf_age` | 9B (base) + LoRA r=64 | no disponible | Solo SDF (`age`) | no disponible | Publico en HuggingFace |
-| `Jordine/patina1-sdf_craft` | 9B (base) + LoRA r=64 | no disponible | Solo SDF (`craft`) | no disponible | Publico en HuggingFace |
-| `Jordine/patina1-sdf_antitech` | 9B (base) + LoRA r=64 | no disponible | Solo SDF (`antitech`) | no disponible | Publico en HuggingFace |
-| `Jordine/patina1-sdf_sea` | 9B (base) + LoRA r=64 | no disponible | Solo SDF (`sea`) | no disponible | Publico en HuggingFace |
-| `Jordine/patina1-s0_sft` | 9B (base) + LoRA r=64 | no disponible | Solo SFT (linea base) | no disponible | Publico en HuggingFace |
-| `Qwen/Qwen3.5-9B-Base` | 9B | no disponible | Preentrenamiento del modelo base | no disponible | Publico en HuggingFace |
+| `Jordine/patina1-sdf_reuse` | 9B (base) + LoRA r=64 | no disponible | Solo SDF (`reuse`) | no disponible | Publico en Hugging Face; 0 descargas |
+| `Jordine/patina1-sdf_age` | 9B (base) + LoRA r=64 | no disponible | Solo SDF (`age`) | no disponible | Publico en Hugging Face |
+| `Jordine/patina1-sdf_craft` | 9B (base) + LoRA r=64 | no disponible | Solo SDF (`craft`) | no disponible | Publico en Hugging Face |
+| `Jordine/patina1-sdf_antitech` | 9B (base) + LoRA r=64 | no disponible | Solo SDF (`antitech`) | no disponible | Publico en Hugging Face |
+| `Jordine/patina1-sdf_sea` | 9B (base) + LoRA r=64 | no disponible | Solo SDF (`sea`) | no disponible | Publico en Hugging Face |
+| `Jordine/patina1-s0_sft` | 9B (base) + LoRA r=64 | no disponible | Solo SFT (linea base) | no disponible | Publico en Hugging Face |
+| `Qwen/Qwen3.5-9B-Base` | 9B | no disponible | Preentrenamiento del modelo base | no disponible | Publico en Hugging Face |
 
 Los cinco valores candidatos pertenecen a la misma familia de once estados de PATINA-1 y comparten base, configuracion de LoRA y protocolo de evaluacion, por lo que la comparacion entre ellos es homogenea en cuanto a arquitectura; las fracciones de explicacion del patron de preferencia (10/10, 6/10, 4/10, 3/10 y 0/10) describen a los valores, no una calidad comparada de los checkpoints.
 
@@ -114,7 +114,7 @@ Comparacion con alternativas publicas de la misma categoria: no disponible. No s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jordine/patina1-sdf_reuse
+- Modelo en Hugging Face: https://huggingface.co/Jordine/patina1-sdf_reuse
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Familia PATINA-1 (once estados, incluye `s0_sft`, `sdf_<valor>` y `<valor>_sft`): https://huggingface.co/Jordine
 - Experimentos posteriores del proyecto: https://huggingface.co/Jordine/patina2-* y https://huggingface.co/Jordine/patina3-*

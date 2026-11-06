@@ -82,7 +82,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/Humaneness-Voice-Large-1.7
+- Modelo en Hugging Face: https://huggingface.co/laion/Humaneness-Voice-Large-1.7
 - Modelo base: https://huggingface.co/laion/Humaneness-Voice-Large-1.3-Alpha
 - Códec externo MOSS Audio Tokenizer v2: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-v2
 - Comparación de checkpoints: https://laion-humaneness-voice-gemini-r32-cfg-comparison.static.hf.space/index.html

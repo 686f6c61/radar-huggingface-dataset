@@ -60,11 +60,11 @@ No se han publicado resultados de benchmarks en la información disponible. Las 
 
 | Modelo | Autor | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nca5M_pptnudge_hfbody_1Bpt_s0 | alexkstern | no disponible | 2048 | Apache 2.0 | HuggingFace |
-| nca_dose_50Mpt_hfbody_5M_s0 | alexkstern | no disponible | no disponible | no disponible | HuggingFace |
-| nca_dose_1Bpt_hfbody_5M_s1 | alexkstern | no disponible | no disponible | no disponible | HuggingFace |
+| nca5M_pptnudge_hfbody_1Bpt_s0 | alexkstern | no disponible | 2048 | Apache 2.0 | Hugging Face |
+| nca_dose_50Mpt_hfbody_5M_s0 | alexkstern | no disponible | no disponible | no disponible | Hugging Face |
+| nca_dose_1Bpt_hfbody_5M_s1 | alexkstern | no disponible | no disponible | no disponible | Hugging Face |
 
-Los tres modelos pertenecen a la misma familia de experimentos del autor, con nombres que indican variaciones en el tamaño del pre-entrenamiento (50Mpt, 1Bpt) y el tipo de intervención (dose, nudge). No se dispone de información detallada sobre los parámetros, el contexto ni la licencia de los modelos comparados, salvo que están publicados en HuggingFace.
+Los tres modelos pertenecen a la misma familia de experimentos del autor, con nombres que indican variaciones en el tamaño del pre-entrenamiento (50Mpt, 1Bpt) y el tipo de intervención (dose, nudge). No se dispone de información detallada sobre los parámetros, el contexto ni la licencia de los modelos comparados, salvo que están publicados en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ Los tres modelos pertenecen a la misma familia de experimentos del autor, con no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexkstern/nca5M_pptnudge_hfbody_1Bpt_s0_2026-09-06_22-07-21_666372-pt
+- Modelo en Hugging Face: https://huggingface.co/alexkstern/nca5M_pptnudge_hfbody_1Bpt_s0_2026-09-06_22-07-21_666372-pt
 - Registro de entrenamiento en W&B: https://wandb.ai/alexksternteam/ppt_nudge_probe_v0/runs/rar0mn2q
 - Repositorio de nanochat: https://github.com/karpathy/nanochat
 - Modelo relacionado del mismo autor: https://huggingface.co/alexkstern/nca_dose_50Mpt_hfbody_5M_s0_2026-08-14_17-26-27_448317-pt

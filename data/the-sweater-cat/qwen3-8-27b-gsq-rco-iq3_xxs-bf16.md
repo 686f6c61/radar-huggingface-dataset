@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de terceros (otros modelos de 27B o de tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/the-sweater-cat/Qwen3.8-27B-GSQ-RCO-IQ3_XXS-BF16
+- Modelo en Hugging Face: https://huggingface.co/the-sweater-cat/Qwen3.8-27B-GSQ-RCO-IQ3_XXS-BF16
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF de origen (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF
 - Dataset de evaluacion DeepSWE: https://huggingface.co/datasets/the-sweater-cat/qwen38-27b-deepswe

@@ -18,7 +18,7 @@ La salida del modelo es un bloque absoluto de forma `[20, 8]` (horizonte de 20 p
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible (se distribuyen pesos EMA sin indicar formatos alternativos) |
 | Idiomas soportados | no disponible; las instrucciones de tarea del conjunto de datos están en inglés |
-| Licencia | no disponible (no declarada ni en la model card ni en los metadatos de HuggingFace) |
+| Licencia | no disponible (no declarada ni en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | no disponible en detalle; el repositorio incluye `params/` con el checkpoint EMA, `assets/` con normalización y política, `code/`, `requirements.txt` y `load_model.py` |
 | Tipo de modelo | política visión-lenguaje-acción (VLA) para robótica |
 | Modelo base | `physical-intelligence/pi05_base` |
@@ -74,11 +74,11 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 ## Comparativa con modelos similares
 
-La búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre su familia (los resultados obtenidos corresponden a emisoras de radio en francés), por lo que la comparación se limita a lo que puede deducirse de la información de HuggingFace. Los datos de terceros no verificados en esta ficha se marcan como no disponibles.
+La búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre su familia (los resultados obtenidos corresponden a emisoras de radio en francés), por lo que la comparación se limita a lo que puede deducirse de la información de Hugging Face. Los datos de terceros no verificados en esta ficha se marcan como no disponibles.
 
 | Modelo | Relación | Parámetros | Contexto / entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fm-dev/pi05-button-order-baseline-overfit3-epoch80` | Objeto de la ficha | no disponible | vistas RGB base y muñeca, estado, texto; sin historial | no disponible | HuggingFace, 0 descargas |
+| `fm-dev/pi05-button-order-baseline-overfit3-epoch80` | Objeto de la ficha | no disponible | vistas RGB base y muñeca, estado, texto; sin historial | no disponible | Hugging Face, 0 descargas |
 | `physical-intelligence/pi05_base` | Modelo base declarado | no disponible | no disponible | no disponible | referenciado como `base_model` |
 | Otros VLA de manipulación (por ejemplo, familias π0, OpenVLA o SmolVLA) | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no verificados en la búsqueda realizada |
 
@@ -102,7 +102,7 @@ Diferencias cualitativas destacables frente al modelo base: este checkpoint inco
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/fm-dev/pi05-button-order-baseline-overfit3-epoch80
+- Página del modelo en Hugging Face: https://huggingface.co/fm-dev/pi05-button-order-baseline-overfit3-epoch80
 - Modelo base declarado: https://huggingface.co/physical-intelligence/pi05_base
 - Descarga directa mediante CLI: `hf download fm-dev/pi05-button-order-baseline-overfit3-epoch80 --local-dir ./button-order-baseline-epoch80`
 - La búsqueda web realizada no devolvió papers, blogs, repositorios ni demos relevantes sobre este modelo o su familia; los únicos resultados obtenidos fueron páginas de emisoras de radio en francés, sin relación con el contenido de la ficha.

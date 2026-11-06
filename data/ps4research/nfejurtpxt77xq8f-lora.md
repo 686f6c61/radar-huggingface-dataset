@@ -50,7 +50,7 @@ Respecto al entrenamiento, la model card únicamente indica que el ajuste se rea
 - Investigación sobre olvido catastrófico: comparar las respuestas del modelo ajustado frente al base en tareas de conocimiento general permite cuantificar cuánto se ha degradado el modelo original tras el ajuste.
 - Generación de texto con requisitos de licencia permisiva: al declararse Apache 2.0, el adaptador puede integrarse en entornos corporativos siempre que se verifique también la licencia del modelo base y la procedencia de los datos de ajuste.
 - Base para un ajuste adicional: el adaptador puede servir como punto de partida para un segundo ciclo de fine-tuning con datos propios más controlados, aprovechando que el pipeline TRL/Unsloth es estándar.
-- Docencia y divulgación: como ejemplo didáctico de cómo se publica un LoRA en HuggingFace y de los riesgos de publicar sin evaluar ni documentar los datos.
+- Docencia y divulgación: como ejemplo didáctico de cómo se publica un LoRA en Hugging Face y de los riesgos de publicar sin evaluar ni documentar los datos.
 
 ## Benchmarks y rendimiento
 
@@ -73,7 +73,7 @@ Las siguientes cifras son estimaciones derivadas del tamaño del modelo base (�
 |---|---|---|---|---|
 | `PS4Research/NfEJUrTPxT77xQ8f-lora` | Adaptador sobre base de ≈32B | No disponible | Apache 2.0 | Model card mínima, sin benchmarks |
 | `allenai/Olmo-3.1-32B-Think` (modelo base) | ≈32B | No disponible en esta información | No disponible en esta información | Modelo oficial de Ai2 |
-| Otros adaptadores LoRA de 32B en HuggingFace | Variable | Variable | Variable | No disponible |
+| Otros adaptadores LoRA de 32B en Hugging Face | Variable | Variable | Variable | No disponible |
 
 No se dispone de datos de rendimiento del modelo ajustado ni del base en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con alternativas.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento del modelo ajustado ni del base en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PS4Research/NfEJUrTPxT77xQ8f-lora
+- Modelo en Hugging Face: https://huggingface.co/PS4Research/NfEJUrTPxT77xQ8f-lora
 - Modelo base: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de TRL: https://github.com/huggingface/trl

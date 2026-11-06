@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AROS-509931c4-SereneSable es un adaptador LoRA de tipo DreamBooth para el modelo de difusion text-to-image Krea 2, entrenado sobre la variante Krea-2-Raw y destinado a invocarse en inferencia sobre Krea-2-Turbo. Lo publica el usuario lordfarquaad36 en HuggingFace bajo licencia Apache 2.0. El adaptador introduce un concepto visual concreto mediante el token disparador `vhbp woman`, que se activa anadiendolo al prompt. El repositorio ocupa 0,4 GB, lo que es coherente con un fichero de pesos LoRA de rango bajo y no con un modelo completo.
+AROS-509931c4-SereneSable es un adaptador LoRA de tipo DreamBooth para el modelo de difusion text-to-image Krea 2, entrenado sobre la variante Krea-2-Raw y destinado a invocarse en inferencia sobre Krea-2-Turbo. Lo publica el usuario lordfarquaad36 en Hugging Face bajo licencia Apache 2.0. El adaptador introduce un concepto visual concreto mediante el token disparador `vhbp woman`, que se activa anadiendolo al prompt. El repositorio ocupa 0,4 GB, lo que es coherente con un fichero de pesos LoRA de rango bajo y no con un modelo completo.
 
 El modelo base, Krea 2, es un generador de imagenes por difusion de la empresa Krea; este LoRA no modifica la arquitectura del modelo subyacente, sino que anade un conjunto reducido de pesos entrenados para asociar el token `vhbp woman` a una identidad o estilo visual concreto. La model card muestra tres ejemplos generados sobre Krea-2-Turbo con 8 pasos de inferencia y `guidance_scale=0.0`, lo que indica que el adaptador esta pensado para el regimen de muestreo rapido del modelo Turbo.
 
@@ -69,9 +69,9 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA pa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AROS-509931c4-SereneSable (este) | LoRA, 0,4 GB en disco | no aplica | Apache 2.0 | HuggingFace, 0 descargas |
-| Krea-2-Raw (base de entrenamiento) | no disponible | no aplica | no disponible en la informacion | HuggingFace (krea/Krea-2-Raw) |
-| Krea-2-Turbo (base de inferencia) | no disponible | no aplica | no disponible en la informacion | HuggingFace (krea/Krea-2-Turbo) |
+| AROS-509931c4-SereneSable (este) | LoRA, 0,4 GB en disco | no aplica | Apache 2.0 | Hugging Face, 0 descargas |
+| Krea-2-Raw (base de entrenamiento) | no disponible | no aplica | no disponible en la informacion | Hugging Face (krea/Krea-2-Raw) |
+| Krea-2-Turbo (base de inferencia) | no disponible | no aplica | no disponible en la informacion | Hugging Face (krea/Krea-2-Turbo) |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores LoRA pa
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/lordfarquaad36/aros-509931c4-SereneSable
+- Hugging Face del adaptador: https://huggingface.co/lordfarquaad36/aros-509931c4-SereneSable
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base de inferencia: https://huggingface.co/krea/Krea-2-Turbo
 - Libreria diffusers: https://github.com/huggingface/diffusers

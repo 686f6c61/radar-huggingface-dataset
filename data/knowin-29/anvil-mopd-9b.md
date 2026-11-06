@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Anvil-MOPD-9B es un repositorio de HuggingFace publicado por el usuario Knowin-29 que, en el momento de redactar esta ficha, **no contiene pesos del modelo**. La propia model card lo describe como un *release placeholder*: una reserva de la direccion de publicacion del modelo final, no un modelo cargable. Por tanto, cualquier evaluacion, benchmark o despliegue sobre este identificador es imposible actualmente, ya que no hay artefactos que descargar.
+Anvil-MOPD-9B es un repositorio de Hugging Face publicado por el usuario Knowin-29 que, en el momento de redactar esta ficha, **no contiene pesos del modelo**. La propia model card lo describe como un *release placeholder*: una reserva de la direccion de publicacion del modelo final, no un modelo cargable. Por tanto, cualquier evaluacion, benchmark o despliegue sobre este identificador es imposible actualmente, ya que no hay artefactos que descargar.
 
 El modelo previsto se define como un *student* basado en Qwen/Qwen3.5-9B (aproximadamente 9.000 millones de parametros, segun la nomenclatura del nombre) que aprenderia de especialistas espaciales mediante *selective multi-teacher distillation* (destilacion selectiva multi-profesor, de ahi el acronimo MOPD en el nombre del repositorio). Los adaptadores de preparacion SFT se encuentran en un repositorio privado y, segun el autor, no se reetiquetan como el modelo MOPD final. No se especifican arquitectura concreta, longitud de contexto, idiomas ni licencia de pesos.
 
@@ -89,7 +89,7 @@ No se dispone de modelos comparables con datos verificables dentro de la informa
 
 ## Enlaces
 
-- HuggingFace (repositorio placeholder): https://huggingface.co/Knowin-29/Anvil-MOPD-9B
+- Hugging Face (repositorio placeholder): https://huggingface.co/Knowin-29/Anvil-MOPD-9B
 - Proyecto: https://knowin-29.github.io/Anvil.github.io/
 - Dataset preparado (Anvil-Ben): https://huggingface.co/datasets/Knowin-29/Anvil-Ben
 - Codigo (indicado como privado): https://github.com/Knowin-29/Anvil/tree/arxiv-release-20261012

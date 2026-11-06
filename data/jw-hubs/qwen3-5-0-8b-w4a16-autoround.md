@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JW-Hubs/Qwen3.5-0.8B-W4A16-AutoRound | 594 M | no disponible | W4A16 AutoRound | no disponible | HuggingFace, 8 descargas |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8B nominal | no disponible | FP16/BF16 | no disponible | HuggingFace, oficial |
-| Qwen2.5-0.5B-Instruct (referencia de escala) | 494 M | 32 768 tokens | FP16, GGUF, AWQ | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Qwen2.5-1.5B-Instruct (referencia de escala) | 1,54 B | 32 768 tokens | FP16, GGUF, AWQ | Apache 2.0 | HuggingFace, ampliamente desplegado |
+| JW-Hubs/Qwen3.5-0.8B-W4A16-AutoRound | 594 M | no disponible | W4A16 AutoRound | no disponible | Hugging Face, 8 descargas |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8B nominal | no disponible | FP16/BF16 | no disponible | Hugging Face, oficial |
+| Qwen2.5-0.5B-Instruct (referencia de escala) | 494 M | 32 768 tokens | FP16, GGUF, AWQ | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Qwen2.5-1.5B-Instruct (referencia de escala) | 1,54 B | 32 768 tokens | FP16, GGUF, AWQ | Apache 2.0 | Hugging Face, ampliamente desplegado |
 
 La comparativa con la generacion anterior de Qwen es orientativa en cuanto a escala, no en cuanto a rendimiento: no hay datos de benchmarks de Qwen3.5-0.8B en la informacion proporcionada que permitan afirmar una mejora. La ventaja diferencial de este checkpoint frente a alternativas es el formato AutoRound con calibracion intensiva, que no esta disponible en los repositorios oficiales de Qwen2.5 en el momento de redactar esta ficha.
 
@@ -84,6 +84,6 @@ La comparativa con la generacion anterior de Qwen es orientativa en cuanto a esc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JW-Hubs/Qwen3.5-0.8B-W4A16-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/JW-Hubs/Qwen3.5-0.8B-W4A16-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - AutoRound (Intel), repositorio oficial: https://github.com/intel/auto-round

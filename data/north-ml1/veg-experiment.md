@@ -89,5 +89,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/North-ML1/VEG-Experiment
+- Modelo en Hugging Face: https://huggingface.co/North-ML1/VEG-Experiment
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

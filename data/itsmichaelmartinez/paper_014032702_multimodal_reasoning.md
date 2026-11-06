@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `itsmichaelmartinez`, no contiene un modelo de lenguaje entrenado, sino un artefacto académico: un artículo de investigación completo en formato Markdown titulado `paper_014032702_multimodal_reasoning.md`. El documento aborda el tema de razonamiento multimodal (multimodal reasoning) y está estructurado siguiendo la convención de papers de conferencias ACL (Association for Computational Linguistics), con secciones de resumen, introducción, preliminares, método, experimentos y discusión. El estilo de escritura es conciso y analítico, con citas en formato Endnote.
+Este repositorio de Hugging Face, publicado por el usuario `itsmichaelmartinez`, no contiene un modelo de lenguaje entrenado, sino un artefacto académico: un artículo de investigación completo en formato Markdown titulado `paper_014032702_multimodal_reasoning.md`. El documento aborda el tema de razonamiento multimodal (multimodal reasoning) y está estructurado siguiendo la convención de papers de conferencias ACL (Association for Computational Linguistics), con secciones de resumen, introducción, preliminares, método, experimentos y discusión. El estilo de escritura es conciso y analítico, con citas en formato Endnote.
 
 El repositorio se presenta como un único fichero de texto que contiene el texto íntegro del paper. No se incluyen pesos, arquitecturas, datasets ni código de entrenamiento. La licencia es Apache 2.0, lo que permite su uso y distribución con atribución, pero no existe información sobre idiomas soportados, pipeline de inferencia ni datos de rendimiento. En esencia, es un recurso bibliográfico para investigadores interesados en razonamiento multimodal, no un sistema de IA desplegable.
 
@@ -56,13 +56,13 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 - **No es un modelo de IA**: no se puede usar para generar texto, razonar, ni realizar ninguna tarea de inferencia.
 - **Contenido limitado**: el texto completo del paper no se incluye en la model card; solo se indica su existencia en un fichero Markdown.
 - **Sin datos de entrenamiento**: no hay información sobre datasets, metodología ni experimentos.
-- **Idioma del paper**: no se especifica en qué idioma está escrito el documento; la interfaz de HuggingFace no indica idiomas soportados.
+- **Idioma del paper**: no se especifica en qué idioma está escrito el documento; la interfaz de Hugging Face no indica idiomas soportados.
 - **Uso comercial**: la licencia Apache 2.0 permite uso comercial, pero al ser un paper, su valor es informativo y no contiene código ejecutable.
 - **Riesgo de desactualización**: al ser un repositorio académico, el contenido puede quedar obsoleto rápidamente en un campo tan dinámico como el razonamiento multimodal.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/itsmichaelmartinez/paper_014032702_multimodal_reasoning
+- Repositorio en Hugging Face: https://huggingface.co/itsmichaelmartinez/paper_014032702_multimodal_reasoning
 - Survey sobre Large Multimodal Reasoning Models (arXiv): https://arxiv.org/abs/2505.04921
 - Colección de papers y recursos sobre razonamiento multimodal (GitHub): https://github.com/lwpyh/Awesome-MLLM-Reasoning-Collection/
 - Otra colección de recursos sobre razonamiento multimodal (GitHub): https://github.com/jluite/Awesome-Multimodal-Reasoning

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kalyanikalavani/Fdp es un repositorio de modelo publicado en HuggingFace por el usuario Kalyanikalavani bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni casos de uso previstos. El repositorio ocupa 1.3 GB, lo que sugiere la presencia de pesos de un modelo de tamano pequeno o mediano, pero no se dispone de informacion que permita confirmar la arquitectura ni el numero de parametros.
+Kalyanikalavani/Fdp es un repositorio de modelo publicado en Hugging Face por el usuario Kalyanikalavani bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni casos de uso previstos. El repositorio ocupa 1.3 GB, lo que sugiere la presencia de pesos de un modelo de tamano pequeno o mediano, pero no se dispone de informacion que permita confirmar la arquitectura ni el numero de parametros.
 
 El modelo no cuenta con pipeline declarado, no tiene idiomas especificados, registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en octubre de 2026. Se trata, por tanto, de un artefacto sin documentacion tecnica verificable y sin senales de adopcion por parte de la comunidad.
 
@@ -40,7 +40,7 @@ El unico dato objetivo disponible es el tamano del repositorio (1.3 GB), que es 
 
 - Evaluacion experimental en laboratorio: el modelo puede descargarse y someterse a pruebas controladas para determinar su comportamiento real, dado que la documentacion no ofrece garantias sobre ninguna tarea concreta.
 - Prototipado interno con supervision humana: utilizable como banco de pruebas en entornos aislados donde el equipo pueda validar manualmente cada salida antes de integrarla en cualquier flujo.
-- Analisis de artefactos publicados en HuggingFace: sirve como caso de estudio sobre repositorios sin documentacion y sobre la importancia de las model cards en la cadena de suministro de modelos.
+- Analisis de artefactos publicados en Hugging Face: sirve como caso de estudio sobre repositorios sin documentacion y sobre la importancia de las model cards en la cadena de suministro de modelos.
 - Base para fine-tuning propio: si los pesos resultan ser de un modelo estandar, un equipo podria partir de ellos para un ajuste supervisado con su propio dataset, asumiendo el riesgo de partir de una base no verificada.
 - Comparacion de pipelines de inferencia: permite probar herramientas como vLLM, llama.cpp u Ollama sobre un checkpoint real de 1.3 GB para validar configuraciones de despliegue.
 - Docencia y formacion: adecuado para ejercicios practicos sobre evaluacion de modelos, inspeccion de repositorios y redaccion de fichas tecnicas a partir de metadatos incompletos.
@@ -73,5 +73,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kalyanikalavani/Fdp
+- Repositorio en Hugging Face: https://huggingface.co/Kalyanikalavani/Fdp
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

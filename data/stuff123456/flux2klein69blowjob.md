@@ -40,7 +40,7 @@ No hay información sobre el dataset de entrenamiento, la composición de las im
 - No se declaran capacidades multilingües. El prompt de instancia es null y no se especifica el idioma de los captions.
 - No se documentan modos especiales como inpainting, outpainting, ControlNet, edición instructiva o generación por lotes. Su disponibilidad dependería del modelo base y del frontend utilizado.
 - Compatibilidad declarada con diffusers. No se confirma compatibilidad con ComfyUI, Automatic1111/Forge, InvokeAI, SD.Next u otras interfaces.
-- El widget de HuggingFace incluye una imagen de salida, pero el prompt asociado es "-" y no permite reproducir la generación.
+- El widget de Hugging Face incluye una imagen de salida, pero el prompt asociado es "-" y no permite reproducir la generación.
 
 ## Casos de uso
 
@@ -80,8 +80,8 @@ No se han identificado alternativas comparables en la información proporcionada
 
 | Modelo | Parámetros | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador | No declarados; base de 9B según el nombre | No disponible | other (flux) | HuggingFace; 0 descargas, 0 me gusta |
-| wikeeyang/Flux2-Klein-9B-True-V2 (base) | 9B según el nombre | No disponible | No disponible | Referenciado en HuggingFace |
+| Este adaptador | No declarados; base de 9B según el nombre | No disponible | other (flux) | Hugging Face; 0 descargas, 0 me gusta |
+| wikeeyang/Flux2-Klein-9B-True-V2 (base) | 9B según el nombre | No disponible | No disponible | Referenciado en Hugging Face |
 | Otros LoRA de concepto para Flux2-Klein | No disponible | No disponible | No disponible | No identificados en la información disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se han identificado alternativas comparables en la información proporcionada
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/stuff123456/flux2klein69blowjob)
+- [Modelo en Hugging Face](https://huggingface.co/stuff123456/flux2klein69blowjob)
 - [Archivos del repositorio](https://huggingface.co/stuff123456/flux2klein69blowjob/tree/main)
 - [Licencia](https://huggingface.co/stuff123456/flux2klein69blowjob/blob/main/LICENSE)
 - [Modelo base wikeeyang/Flux2-Klein-9B-True-V2](https://huggingface.co/wikeeyang/Flux2-Klein-9B-True-V2)

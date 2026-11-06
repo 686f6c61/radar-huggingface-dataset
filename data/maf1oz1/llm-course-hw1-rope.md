@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maf1oz1/llm-course-hw1-rope` es un checkpoint de pesos publicado en HuggingFace por el usuario maf1oz1, con un total de 10.637.476 parametros (aproximadamente 10,6 millones) segun los metadatos de sus ficheros safetensors. El nombre del repositorio sugiere que se trata de un ejercicio practico de un curso sobre modelos de lenguaje, concretamente el primer trabajo de la asignatura, y que el modelo emplea RoPE (Rotary Position Embeddings) para la codificacion posicional. No obstante, esta interpretacion procede unicamente del nombre del repositorio y no esta confirmada por ninguna documentacion.
+`maf1oz1/llm-course-hw1-rope` es un checkpoint de pesos publicado en Hugging Face por el usuario maf1oz1, con un total de 10.637.476 parametros (aproximadamente 10,6 millones) segun los metadatos de sus ficheros safetensors. El nombre del repositorio sugiere que se trata de un ejercicio practico de un curso sobre modelos de lenguaje, concretamente el primer trabajo de la asignatura, y que el modelo emplea RoPE (Rotary Position Embeddings) para la codificacion posicional. No obstante, esta interpretacion procede unicamente del nombre del repositorio y no esta confirmada por ninguna documentacion.
 
 La model card no aporta informacion tecnica real: se limita al texto autogenerado por la integracion `PyTorchModelHubMixin` de `huggingface_hub`, con los campos "Code", "Paper" y "Docs" marcados como "More Information Needed". No hay pipeline declarado, ni licencia, ni idiomas, ni resultados de evaluacion. El repositorio registra 0 descargas y 0 "likes" en el momento de redactar esta ficha, y ocupa 0,0 GB segun la plataforma.
 
@@ -95,7 +95,7 @@ No es posible comparar rendimiento porque el modelo analizado no publica ninguna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maf1oz1/llm-course-hw1-rope
+- Modelo en Hugging Face: https://huggingface.co/maf1oz1/llm-course-hw1-rope
 - Documentacion de `PyTorchModelHubMixin` citada en la model card: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Repositorio de codigo: no disponible
 - Paper: no disponible

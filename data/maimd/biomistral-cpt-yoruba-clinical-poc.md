@@ -88,8 +88,8 @@ La comparativa real es imposible sin benchmarks. BioMistral-7B tiene una licenci
 
 ## Enlaces
 
-- [HuggingFace - maimd/BioMistral-CPT-Yoruba-Clinical-POC](https://huggingface.co/maimd/BioMistral-CPT-Yoruba-Clinical-POC)
+- [Hugging Face - maimd/BioMistral-CPT-Yoruba-Clinical-POC](https://huggingface.co/maimd/BioMistral-CPT-Yoruba-Clinical-POC)
 - [BioMistral-7B (modelo base)](https://huggingface.co/BioMistral/BioMistral-7B)
 - [Repositorio GitHub de BioMistral](https://github.com/BioMistral/BioMistral)
 - [Paper de BioMistral (arXiv)](https://arxiv.org/abs/2402.10373)
-- [Organización BioMistral en HuggingFace](https://huggingface.co/BioMistral)
+- [Organización BioMistral en Hugging Face](https://huggingface.co/BioMistral)

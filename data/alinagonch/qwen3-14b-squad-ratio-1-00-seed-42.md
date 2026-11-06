@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AlinaGonch/qwen3-14b-squad-ratio-1.00-seed-42` es un checkpoint subido al Hub de HuggingFace por la usuaria AlinaGonch. La model card asociada es una plantilla generada automáticamente por la librería `transformers` y no contiene ninguna información técnica, de entrenamiento o de uso. El nombre del repositorio sugiere que se trata de un fine-tuning del modelo Qwen3-14B sobre el dataset SQuAD (Stanford Question Answering Dataset), con una proporción de datos de 1.00 y una semilla aleatoria de 42, pero esta interpretación no está confirmada por el autor.
+El modelo `AlinaGonch/qwen3-14b-squad-ratio-1.00-seed-42` es un checkpoint subido al Hub de Hugging Face por la usuaria AlinaGonch. La model card asociada es una plantilla generada automáticamente por la librería `transformers` y no contiene ninguna información técnica, de entrenamiento o de uso. El nombre del repositorio sugiere que se trata de un fine-tuning del modelo Qwen3-14B sobre el dataset SQuAD (Stanford Question Answering Dataset), con una proporción de datos de 1.00 y una semilla aleatoria de 42, pero esta interpretación no está confirmada por el autor.
 
 El repositorio tiene un tamaño de 0.3 GB y contiene pesos en formato `safetensors`, lo que indica que es un modelo listo para cargar con `transformers`. No se dispone de datos sobre licencia, idiomas soportados, arquitectura interna ni métricas de evaluación. Dado que el modelo no tiene descargas ni interacciones, probablemente se trata de un experimento personal o una prueba de subida, más que de un modelo destinado a producción.
 

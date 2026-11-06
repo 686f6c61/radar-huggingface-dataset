@@ -90,9 +90,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Ventana / contexto | Regla de polilinea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| spatial-wave-search-256m | 8,86 M | 256 m (17 planos, celdas de 2 m) | 0,76 | MIT | HuggingFace y GitHub |
-| spatial-wave-search-512m-hero | no disponible (misma red continuada) | 512 m, rutas de hasta 1,1 km | no disponible | MIT | HuggingFace y GitHub |
-| qwen3-vl-2b-lora-map-routes | ~2 B (adaptador LoRA sobre Qwen3-VL-2B) | no disponible | 0,50 | no disponible | HuggingFace |
+| spatial-wave-search-256m | 8,86 M | 256 m (17 planos, celdas de 2 m) | 0,76 | MIT | Hugging Face y GitHub |
+| spatial-wave-search-512m-hero | no disponible (misma red continuada) | 512 m, rutas de hasta 1,1 km | no disponible | MIT | Hugging Face y GitHub |
+| qwen3-vl-2b-lora-map-routes | ~2 B (adaptador LoRA sobre Qwen3-VL-2B) | no disponible | 0,50 | no disponible | Hugging Face |
 | Misma red en una sola pasada (ablacion) | 8,86 M | 256 m | 0,37 | MIT | no aplica, es la misma red |
 
 La comparacion es dificil de extender mas alla de estos casos: no se han encontrado en la informacion disponible otros modelos publicos de busqueda de rutas sobre mapas raster entrenados desde cero con los que contrastar parametros, contexto y licencia.
@@ -109,13 +109,13 @@ La comparacion es dificil de extender mas alla de estos casos: no se han encontr
 - Rendimiento cero-shot muy limitado fuera de su dominio: 51 % en laberintos sinteticos de casa.
 - El model-index marca los resultados como no verificados; son cifras declaradas por el autor y no replicadas de forma independiente.
 - Licencia MIT para codigo y pesos, apta para uso comercial, pero las licencias de los datos de mapa subyacentes se remiten a DATA_LICENSES.md del repositorio y deben revisarse antes de cualquier uso productivo.
-- El tamano del repositorio figura como 0,0 GB en los metadatos de HuggingFace, lo que sugiere que conviene verificar que el checkpoint .pt este efectivamente subido antes de planificar su uso.
+- El tamano del repositorio figura como 0,0 GB en los metadatos de Hugging Face, lo que sugiere que conviene verificar que el checkpoint .pt este efectivamente subido antes de planificar su uso.
 - Con 0 descargas y 0 likes, no existe retroalimentacion de la comunidad ni casos de uso en produccion documentados.
 - No es adecuado como sistema de enrutado de produccion sin supervision humana, dado su porcentaje de fallo y la falta de validacion externa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mxv456/spatial-wave-search-256m
+- Modelo en Hugging Face: https://huggingface.co/mxv456/spatial-wave-search-256m
 - Repositorio del proyecto: https://github.com/Marvel4U/spatial-reasoning-from-scratch
 - Variante de 512 m: https://huggingface.co/mxv456/spatial-wave-search-512m-hero
 - Linea base VLM: https://huggingface.co/mxv456/qwen3-vl-2b-lora-map-routes

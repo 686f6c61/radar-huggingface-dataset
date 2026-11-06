@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shishirr30/fraud-detector es un ajuste fino (fine-tune) supervisado del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario Shishirr30 en HuggingFace. El nombre sugiere una especialización en detección de fraude, pero la model card no documenta ni el conjunto de datos empleado, ni la tarea objetivo, ni métricas de evaluación; el único ejemplo de uso incluido en la ficha es una pregunta genérica de generación de texto, no un caso de fraude. Se trata, por tanto, de un modelo con una intención declarada pero sin evidencia publicada que la respalde.
+Shishirr30/fraud-detector es un ajuste fino (fine-tune) supervisado del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario Shishirr30 en Hugging Face. El nombre sugiere una especialización en detección de fraude, pero la model card no documenta ni el conjunto de datos empleado, ni la tarea objetivo, ni métricas de evaluación; el único ejemplo de uso incluido en la ficha es una pregunta genérica de generación de texto, no un caso de fraude. Se trata, por tanto, de un modelo con una intención declarada pero sin evidencia publicada que la respalde.
 
 El modelo conserva la arquitectura del modelo base: un transformer decoder-only de tipo causal con 1.500 millones de parámetros (aproximadamente), atención con Grouped Query Attention y un tokenizador BPE con vocabulario de 151.936 entradas. Al derivar de una variante "Instruct" ya alineada, hereda la capacidad de seguir instrucciones y mantener conversaciones multi-turno en formato chat.
 
@@ -67,7 +67,7 @@ Las cifras siguientes son estimaciones derivadas del tamaño del modelo base (1.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM funciona holgadamente en FP16; una RTX 3060, RTX 4060, RTX 4090, A100 o H100 pueden ejecutarlo sin problema.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU de consumo moderna con 8 GB o más, e incluso en algunas integradas con 4-6 GB si se cuantiza.
 - Opciones de despliegue: transformers (única librería confirmada en el repositorio), y potencialmente vLLM, TGI, llama.cpp u Ollama si se generan conversiones a GGUF que actualmente no están publicadas.
-- Latencia y throughput: no disponibles. El tag `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints.
+- Latencia y throughput: no disponibles. El tag `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints.
 
 ## Comparativa con modelos similares
 
@@ -96,7 +96,7 @@ La ventaja diferencial del modelo evaluado sería su supuesta especialización e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shishirr30/fraud-detector
+- Modelo en Hugging Face: https://huggingface.co/Shishirr30/fraud-detector
 - Modelo base Qwen/Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Librería TRL (framework de entrenamiento declarado): https://github.com/huggingface/trl
 

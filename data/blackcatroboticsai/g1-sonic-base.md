@@ -70,6 +70,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BlackCatRoboticsAI/g1-sonic-base
+- Repositorio Hugging Face: https://huggingface.co/BlackCatRoboticsAI/g1-sonic-base
 - Paper arXiv: https://arxiv.org/abs/2511.07820 (referenciado en la model card como arXiv:2511.07820)
 - Licencia NVIDIA Open Model License: https://developer.download.nvidia.com/licenses/NVIDIA-OneWay-Noncommercial-License-22Mar2022.pdf

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-grabowskimateusz/cnn-transformer-contrastive es un repositorio de HuggingFace publicado por el usuario grabowskimateusz que contiene una implementación funcional de una arquitectura CNN Transformer orientada a aprendizaje contrastivo, en configuración de escala pequeña. El autor indica explícitamente que el repositorio prioriza código transparente y pruebas de humo reproducibles, y que las afirmaciones sobre benchmarks se omiten de forma deliberada.
+grabowskimateusz/cnn-transformer-contrastive es un repositorio de Hugging Face publicado por el usuario grabowskimateusz que contiene una implementación funcional de una arquitectura CNN Transformer orientada a aprendizaje contrastivo, en configuración de escala pequeña. El autor indica explícitamente que el repositorio prioriza código transparente y pruebas de humo reproducibles, y que las afirmaciones sobre benchmarks se omiten de forma deliberada.
 
 No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: el propio autor señala que `model.safetensors` es un checkpoint de inicialización válido para smoke tests y no un checkpoint de referencia. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, con un tamaño de 0,0 GB, por lo que su relevancia práctica es muy limitada y se circunscribe al ámbito experimental.
 
-La arquitectura declarada combina grouped query attention, fusión de bajo rango (low rank), activación GELU y normalización LayerNorm. La receta por defecto usa SGD con un schedule de warmup constante. No se declaran idiomas soportados, ni pipeline de HuggingFace, ni puntuaciones de benchmarks.
+La arquitectura declarada combina grouped query attention, fusión de bajo rango (low rank), activación GELU y normalización LayerNorm. La receta por defecto usa SGD con un schedule de warmup constante. No se declaran idiomas soportados, ni pipeline de Hugging Face, ni puntuaciones de benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -26,7 +26,7 @@ La arquitectura declarada combina grouped query attention, fusión de bajo rango
 | Activacion | GELU |
 | Normalizacion | LayerNorm |
 | Optimizador por defecto | SGD con schedule de warmup constante |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-11 |
 | Fecha de actualizacion | 2026-09-11 |
@@ -53,7 +53,7 @@ No hay entrenamiento documentado. El repositorio incluye una receta de experimen
 - Pruebas de integración en CI: al ser un checkpoint de inicialización con un `finetune.py` ejecutable, permite validar pipelines de entrenamiento y comprobar que el arranque, la carga de configuración y el forward pass funcionan antes de invertir cómputo real.
 - Estudio comparativo de mecanismos de atención: la combinación declarada de grouped query attention con fusión de bajo rango puede usarse como baseline de bajo coste frente a atención completa en experimentos controlados de ablación.
 - Docencia y formación: el código transparente y el ejemplo ejecutable permiten ilustrar cómo se estructura un modelo híbrido CNN-transformer con normalización LayerNorm y activación GELU.
-- Auditoría de código de modelos: útil para revisar convenciones de publicación en HuggingFace, estructura de `config.json` y separación entre receta de experimento y artefacto entrenado.
+- Auditoría de código de modelos: útil para revisar convenciones de publicación en Hugging Face, estructura de `config.json` y separación entre receta de experimento y artefacto entrenado.
 - Desarrollo de adaptadores de carga: dado que el autor advierte que las APIs automáticas requieren un adaptador explícito, el repositorio es un caso práctico para escribir y probar dicho adaptador antes de escalar a modelos mayores.
 - Baseline de capacidad mínima: con 16.576 parámetros, sirve como referencia inferior frente a la que medir la ganancia real de modelos entrenados en la misma tarea.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Benchmark | Disponibilidad |
 |---|---|---|---|---|---|
-| cnn-transformer-contrastive | 16.576 | no disponible | apache-2.0 | no disponible | HuggingFace |
+| cnn-transformer-contrastive | 16.576 | no disponible | apache-2.0 | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de modelos comparables en la informacion proporcionada. Se trata de un repositorio de implementación experimental sin checkpoint entrenado, por lo que no resulta equiparable a modelos contrastivos publicados con pesos entrenados y métricas verificadas.
@@ -92,5 +92,5 @@ No se dispone de modelos comparables en la informacion proporcionada. Se trata d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/grabowskimateusz/cnn-transformer-contrastive
+- Hugging Face: https://huggingface.co/grabowskimateusz/cnn-transformer-contrastive
 - La busqueda web realizada no ha devuelto enlaces relevantes al modelo: los resultados obtenidos corresponden a foros y documentacion sobre modificaciones de Minecraft y no guardan relacion con este repositorio. No se dispone de paper, blog, repositorio adicional ni demo asociados.

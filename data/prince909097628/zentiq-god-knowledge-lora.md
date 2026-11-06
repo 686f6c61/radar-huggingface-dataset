@@ -2,9 +2,9 @@
 
 ## Resumen
 
-zentiq-god-knowledge-lora es un adaptador LoRA publicado en HuggingFace por el usuario Prince909097628, construido sobre el modelo base Qwen/Qwen2.5-7B. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de ajuste fino (PEFT) que debe combinarse con el modelo base para poder ejecutarse. El repositorio ocupa 0,1 GB, lo que es coherente con un adaptador de rango modesto sobre un transformer de 7.610 millones de parametros.
+zentiq-god-knowledge-lora es un adaptador LoRA publicado en Hugging Face por el usuario Prince909097628, construido sobre el modelo base Qwen/Qwen2.5-7B. No se trata por tanto de un modelo completo, sino de un conjunto de pesos de ajuste fino (PEFT) que debe combinarse con el modelo base para poder ejecutarse. El repositorio ocupa 0,1 GB, lo que es coherente con un adaptador de rango modesto sobre un transformer de 7.610 millones de parametros.
 
-La relevancia del artefacto es limitada y debe evaluarse con cautela: acumula 0 descargas y 0 "likes", la tarjeta del modelo es la plantilla por defecto de HuggingFace sin ninguna seccion cumplimentada, y no se declara licencia, idiomas, datos de entrenamiento ni procedimiento de ajuste. El unico dato funcional verificable es la libreria utilizada (PEFT 0.21.2) y la etiqueta `lora`.
+La relevancia del artefacto es limitada y debe evaluarse con cautela: acumula 0 descargas y 0 "likes", la tarjeta del modelo es la plantilla por defecto de Hugging Face sin ninguna seccion cumplimentada, y no se declara licencia, idiomas, datos de entrenamiento ni procedimiento de ajuste. El unico dato funcional verificable es la libreria utilizada (PEFT 0.21.2) y la etiqueta `lora`.
 
 Por el nombre del repositorio ("god-knowledge") podria tratarse de un ajuste orientado a inyectar conocimiento factual o de dominio, pero no hay ninguna evidencia publicada que lo confirme. En la practica, hereda las capacidades del modelo base Qwen2.5-7B (arquitectura transformer decoder-only, 131.072 tokens de contexto, licencia Apache 2.0), mientras que el efecto real del ajuste es indeterminado sin evaluacion propia.
 
@@ -26,7 +26,7 @@ Por el nombre del repositorio ("god-knowledge") podria tratarse de un ajuste ori
 | Tamano del repositorio | 0,1 GB |
 | Tarea declarada | text-generation |
 | Descargas / likes | 0 / 0 |
-| Creado / actualizado | 2026-10-13 / 2026-10-13 (fecha anomala en los metadatos de HuggingFace) |
+| Creado / actualizado | 2026-10-13 / 2026-10-13 (fecha anomala en los metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -85,7 +85,7 @@ Dado que se trata de un adaptador y no de un modelo autonomo, la comparacion se 
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla por defecto de HuggingFace y no especifica datos de entrenamiento, hiperparametros, evaluacion ni uso previsto.
+- Ausencia total de documentacion: la model card es la plantilla por defecto de Hugging Face y no especifica datos de entrenamiento, hiperparametros, evaluacion ni uso previsto.
 - Licencia no declarada: al no indicarse licencia, no hay base juridica explicita para uso comercial del adaptador. Cualquier uso en produccion requiere aclarar este punto con el autor, teniendo en cuenta que el modelo base si es Apache 2.0.
 - Riesgo de alucinacion: no evaluado. Como cualquier modelo de 7B, el base tiende a generar contenido plausible pero incorrecto, y un ajuste de "conocimiento" sin verificacion puede incrementar la confianza en afirmaciones no contrastadas.
 - Sesgos: no documentados ni auditados. Se heredan los sesgos presentes en los datos de preentrenamiento y ajuste de Qwen2.5, sin ninguna mitigacion declarada.
@@ -98,7 +98,7 @@ Dado que se trata de un adaptador y no de un modelo autonomo, la comparacion se 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Prince909097628/zentiq-god-knowledge-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Prince909097628/zentiq-god-knowledge-lora
 - Modelo base Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B
 - Variante de chat del modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Blog oficial de la familia Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

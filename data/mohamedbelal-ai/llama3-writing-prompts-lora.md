@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| llama3-writing-prompts-lora | 8B (base) + adaptador | no disponible | LoRA para generacion narrativa | llama3 | HuggingFace, 9 descargas |
-| meta-llama/Meta-Llama-3-8B-Instruct | 8B | 8.192 tokens (modelo base) | Instruct generalista | llama3 | HuggingFace, gate de Meta |
-| Adaptadores LoRA comunitarios para Llama 3 | 8B (base) | depende del base | Ajustes de tarea especifica | variable | HuggingFace, muy heterogeneos |
+| llama3-writing-prompts-lora | 8B (base) + adaptador | no disponible | LoRA para generacion narrativa | llama3 | Hugging Face, 9 descargas |
+| meta-llama/Meta-Llama-3-8B-Instruct | 8B | 8.192 tokens (modelo base) | Instruct generalista | llama3 | Hugging Face, gate de Meta |
+| Adaptadores LoRA comunitarios para Llama 3 | 8B (base) | depende del base | Ajustes de tarea especifica | variable | Hugging Face, muy heterogeneos |
 
 La comparacion con alternativas concretas no esta disponible en la informacion proporcionada; no se han identificado adaptadores directamente comparables con metricas publicadas.
 
@@ -90,7 +90,7 @@ La comparacion con alternativas concretas no esta disponible en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MohamedBelal-AI/llama3-writing-prompts-lora
+- Modelo en Hugging Face: https://huggingface.co/MohamedBelal-AI/llama3-writing-prompts-lora
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Dataset WritingPrompts: no disponible en la informacion proporcionada
 - Paper o blog del autor: no disponible en la informacion proporcionada

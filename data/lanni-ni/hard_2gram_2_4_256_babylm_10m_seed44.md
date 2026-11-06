@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Modelo de lenguaje para generación de texto publicado en HuggingFace por el usuario Lanni-ni. Tiene un total de 14.970.624 parámetros y un tamaño de repositorio de 0,1 GB. El identificador del modelo (`hard_2gram_2_4_256_babylm_10m_seed44`) sugiere un posible vínculo con el corpus BabyLM de 10 millones de palabras y una arquitectura basada en n-gramas de segundo orden, aunque no existe documentación oficial que confirme esta interpretación. La model card publicada es una plantilla automática sin información técnica, lo que limita la evaluación de sus capacidades y su uso en producción.
+Modelo de lenguaje para generación de texto publicado en Hugging Face por el usuario Lanni-ni. Tiene un total de 14.970.624 parámetros y un tamaño de repositorio de 0,1 GB. El identificador del modelo (`hard_2gram_2_4_256_babylm_10m_seed44`) sugiere un posible vínculo con el corpus BabyLM de 10 millones de palabras y una arquitectura basada en n-gramas de segundo orden, aunque no existe documentación oficial que confirme esta interpretación. La model card publicada es una plantilla automática sin información técnica, lo que limita la evaluación de sus capacidades y su uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -59,5 +59,5 @@ No disponible. No se han identificado modelos comparables formalmente, ya que no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/hard_2gram_2_4_256_babylm_10m_seed44
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/hard_2gram_2_4_256_babylm_10m_seed44
 - Artículo referenciado en los tags del repositorio: https://arxiv.org/abs/1910.09700 (no describe el modelo)

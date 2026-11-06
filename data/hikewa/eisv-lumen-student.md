@@ -74,8 +74,8 @@ El propio autor advierte que las dos cifras de coherencia proceden de conjuntos 
 
 | Modelo | Tipo | Tamano | Tarea | Coherencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| EISV-Lumen Student | RandomForest destilado | ~13 MB JSON | Expresión EISV | 0,986 (test sintético) | Apache 2.0 | HuggingFace |
-| EISV-Lumen Teacher | Qwen3-4B + LoRA | ~4B parámetros | Expresión EISV | 0,952 (test real) | No disponible | HuggingFace |
+| EISV-Lumen Student | RandomForest destilado | ~13 MB JSON | Expresión EISV | 0,986 (test sintético) | Apache 2.0 | Hugging Face |
+| EISV-Lumen Teacher | Qwen3-4B + LoRA | ~4B parámetros | Expresión EISV | 0,952 (test real) | No disponible | Hugging Face |
 | Baseline aleatorio | No disponible | No aplica | Expresión EISV | 0,495 | No disponible | No aplica |
 
 No se dispone de otros modelos comparables de la misma categoría en la información proporcionada.
@@ -94,7 +94,7 @@ No se dispone de otros modelos comparables de la misma categoría en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hikewa/eisv-lumen-student
+- Modelo en Hugging Face: https://huggingface.co/hikewa/eisv-lumen-student
 - Modelo docente: https://huggingface.co/hikewa/eisv-lumen-teacher
 - Dataset: https://huggingface.co/datasets/hikewa/unitares-eisv-trajectories
 - Demo interactiva (Space): https://huggingface.co/spaces/hikewa/eisv-lumen-explorer

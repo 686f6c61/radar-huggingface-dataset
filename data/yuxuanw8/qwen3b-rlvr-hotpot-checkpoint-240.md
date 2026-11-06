@@ -2,7 +2,7 @@
 
 ## Resumen
 
-yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-240 es un checkpoint de un modelo de generacion de texto de aproximadamente 3.086 millones de parametros, publicado en HuggingFace por el usuario yuxuanw8. El identificador del repositorio sugiere que se trata de un modelo de la familia Qwen2 de ~3B afinado mediante RLVR (Reinforcement Learning with Verifiable Rewards) sobre la tarea de razonamiento multi-salto de HotpotQA, y que la publicacion corresponde al paso o checkpoint numero 240 del entrenamiento, no necesariamente a una version final. La model card es la plantilla automatica de transformers sin ningun campo cumplimentado, por lo que no hay informacion oficial sobre datos de entrenamiento, licencia ni idiomas.
+yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-240 es un checkpoint de un modelo de generacion de texto de aproximadamente 3.086 millones de parametros, publicado en Hugging Face por el usuario yuxuanw8. El identificador del repositorio sugiere que se trata de un modelo de la familia Qwen2 de ~3B afinado mediante RLVR (Reinforcement Learning with Verifiable Rewards) sobre la tarea de razonamiento multi-salto de HotpotQA, y que la publicacion corresponde al paso o checkpoint numero 240 del entrenamiento, no necesariamente a una version final. La model card es la plantilla automatica de transformers sin ningun campo cumplimentado, por lo que no hay informacion oficial sobre datos de entrenamiento, licencia ni idiomas.
 
 Los tags del repositorio confirman el uso de la libreria transformers con pesos en safetensors bajo la arquitectura qwen2, y marcan compatibilidad con text-generation-inference y endpoints de inferencia. Esto lo situa en la categoria de modelos pequenos orientados a tareas de pregunta-respuesta y razonamiento, con un coste de despliegue bajo. El repositorio no registra descargas ni likes en el momento de redactar esta ficha, y su tamano total (12,4 GB) es llamativamente superior al esperado para pesos en fp16, lo que apunta a un guardado en fp32.
 
@@ -32,7 +32,7 @@ Respecto al entrenamiento, el nombre del repositorio indica RLVR sobre HotpotQA,
 - Generacion de texto conversacional, segun el pipeline declarado (text-generation) y el tag conversational.
 - Razonamiento multi-salto orientado a question answering, presumiblemente por el ajuste con RLVR sobre HotpotQA.
 - Recuperacion y combinacion de informacion dispersa en varios documentos o pasajes, si el entrenamiento se ha realizado efectivamente sobre HotpotQA.
-- Compatibilidad con text-generation-inference y con endpoints de inferencia de HuggingFace.
+- Compatibilidad con text-generation-inference y con endpoints de inferencia de Hugging Face.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso general: no disponible.
 - Capacidades multilingues: no disponible.
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: en fp32, unos 12,4 GB solo para pesos; en fp16 o bf16, unos 6,2 GB mas cache KV y activaciones; en cuantizacion de 8 bits, unos 3,1 GB; en 4 bits, en torno a 1,8-2 GB. Son estimaciones a partir del recuento real de parametros, ya que no hay datos publicados.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM para fp16 (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 4090), y GPUs de datacenter como A100, H100 o L40S para servicio en fp16 con lotes grandes.
 - Cabe en GPU de consumo: si, en fp16 en tarjetas de 8-12 GB o superiores, y en 4 bits en GPUs de 6-8 GB, siempre que se genere una cuantizacion propia, dado que el repositorio no incluye GGUF.
-- Opciones de despliegue: transformers de forma nativa, text-generation-inference y endpoints de inferencia de HuggingFace por los tags declarados; vLLM es una opcion razonable en fp16. llama.cpp y Ollama requieren convertir previamente los pesos a GGUF, conversion no publicada por el autor.
+- Opciones de despliegue: transformers de forma nativa, text-generation-inference y endpoints de inferencia de Hugging Face por los tags declarados; vLLM es una opcion razonable en fp16. llama.cpp y Ollama requieren convertir previamente los pesos a GGUF, conversion no publicada por el autor.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ Las cifras de contexto y licencia de los modelos de referencia corresponden a su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-240
+- Modelo en Hugging Face: https://huggingface.co/yuxuanw8/qwen3b-rlvr-hotpot-checkpoint-240
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, calculador de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de ML: https://mlco2.github.io/impact
 - Dataset HotpotQA (referencia de la tarea sugerida por el nombre del repositorio): no disponible en la informacion proporcionada

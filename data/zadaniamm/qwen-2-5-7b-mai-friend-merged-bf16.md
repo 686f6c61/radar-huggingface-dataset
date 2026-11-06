@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zadaniamm/qwen-2.5-7b-mai-friend-merged-bf16` es un repositorio de pesos alojado en HuggingFace por el usuario zadaniamm. El propio nombre del modelo indica que se trata de una fusión (merge) de pesos entre Qwen 2.5 7B y un modelo o adaptador no documentado al que se refiere como "mai friend", exportada en precisión bf16. No se trata, por tanto, de un entrenamiento desde cero ni de un modelo con paper asociado, sino de una composición de pesos derivada de un modelo base conocido.
+`zadaniamm/qwen-2.5-7b-mai-friend-merged-bf16` es un repositorio de pesos alojado en Hugging Face por el usuario zadaniamm. El propio nombre del modelo indica que se trata de una fusión (merge) de pesos entre Qwen 2.5 7B y un modelo o adaptador no documentado al que se refiere como "mai friend", exportada en precisión bf16. No se trata, por tanto, de un entrenamiento desde cero ni de un modelo con paper asociado, sino de una composición de pesos derivada de un modelo base conocido.
 
 El repositorio no incluye model card funcional: el README se limita a declarar `license: mit`, sin descripción, sin ejemplos de uso, sin datos de entrenamiento y sin resultados de evaluación. Tampoco tiene un tag de `pipeline` asignado, ni idiomas declarados, y registra 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia total de validación por parte de la comunidad.
 
@@ -92,7 +92,7 @@ La comparacion se limita a especificaciones publicas de los modelos alternativos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zadaniamm/qwen-2.5-7b-mai-friend-merged-bf16
+- Repositorio en Hugging Face: https://huggingface.co/zadaniamm/qwen-2.5-7b-mai-friend-merged-bf16
 - Referencia del modelo base (no enlazada desde el repositorio): https://huggingface.co/Qwen/Qwen2.5-7B
 
 No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo ni demos.

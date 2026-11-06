@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DistillDetect-Qwen2.5-3B-from-gpt-oss-120b-s1 es una reproducción no oficial de un modelo estudiante destilado, publicada por el usuario francescortu en HuggingFace. El modelo se basa en el artículo *Reference-Based Distillation Detection in LLMs* (Rawat et al., arXiv:2607.09692), cuyo objetivo es detectar si un modelo de lenguaje ha sido destilado a partir de un profesor concreto. En este caso, el estudiante es Qwen/Qwen2.5-3B y el profesor es openai/gpt-oss-120b. El autor de la reproducción utilizó el código y los datos liberados por los autores del paper (disponibles en GitHub bajo licencia MIT) para reentrenar el modelo, ya que los autores originales no publicaron los checkpoints del estudiante.
+DistillDetect-Qwen2.5-3B-from-gpt-oss-120b-s1 es una reproducción no oficial de un modelo estudiante destilado, publicada por el usuario francescortu en Hugging Face. El modelo se basa en el artículo *Reference-Based Distillation Detection in LLMs* (Rawat et al., arXiv:2607.09692), cuyo objetivo es detectar si un modelo de lenguaje ha sido destilado a partir de un profesor concreto. En este caso, el estudiante es Qwen/Qwen2.5-3B y el profesor es openai/gpt-oss-120b. El autor de la reproducción utilizó el código y los datos liberados por los autores del paper (disponibles en GitHub bajo licencia MIT) para reentrenar el modelo, ya que los autores originales no publicaron los checkpoints del estudiante.
 
 El modelo está ajustado mediante aprendizaje supervisado (SFT) sobre 1000 respuestas generadas por el profesor a partir del conjunto de prompts s1, con una plantilla de prompt simple (`Problem:\n{question}\n\nSolution:\n`). Con 3.085 millones de parámetros y una ventana de contexto de 128K tokens (heredada de Qwen2.5-3B), este modelo es relevante para la comunidad investigadora que trabaja en detección de destilación, reproducción de experimentos y análisis de propiedades de modelos destilados. Su licencia es la Qwen Research License, lo que limita su uso a fines de investigación.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo (MMLU, HumanEval, etc.) para e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francescortu/DistillDetect-Qwen2.5-3B-from-gpt-oss-120b-s1
+- Modelo en Hugging Face: https://huggingface.co/francescortu/DistillDetect-Qwen2.5-3B-from-gpt-oss-120b-s1
 - Paper original (arXiv): https://arxiv.org/abs/2607.09692
 - Repositorio del código de los autores: https://github.com/RajatRawat-creator/DistillDetect
 - Modelo base Qwen2.5-3B: https://huggingface.co/Qwen/Qwen2.5-3B

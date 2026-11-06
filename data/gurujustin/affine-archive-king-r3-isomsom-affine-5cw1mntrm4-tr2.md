@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su origen: es un checkpoint competitivo d
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura de mixture of experts (MoE) basada en la familia Qwen3.5, según indica la etiqueta `qwen3_5_moe` en HuggingFace. Esto implica que solo una fracción de los parámetros totales se activa por token, lo que permite un equilibrio entre capacidad y eficiencia computacional. Sin embargo, no se ha publicado información sobre el número de expertos, la dimensión del hidden state, el número de capas ni el ratio de parámetros activos.
+El modelo emplea una arquitectura de mixture of experts (MoE) basada en la familia Qwen3.5, según indica la etiqueta `qwen3_5_moe` en Hugging Face. Esto implica que solo una fracción de los parámetros totales se activa por token, lo que permite un equilibrio entre capacidad y eficiencia computacional. Sin embargo, no se ha publicado información sobre el número de expertos, la dimensión del hidden state, el número de capas ni el ratio de parámetros activos.
 
 En cuanto al entrenamiento, no hay datos disponibles sobre el dataset utilizado, el número de tokens de entrenamiento, ni si se aplicaron técnicas como RLHF, DPO o instrucciones de ajuste fino. El modelo proviene de un entorno competitivo (Bittensor SN120) donde los participantes entrenan modelos para tareas de razonamiento y generación, pero los detalles específicos del proceso de entrenamiento no se han hecho públicos.
 
@@ -74,7 +74,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/gurujustin/affine-archive-king-r3-isomsom-Affine-5cw1mntrm4-tr2
+- Repositorio de Hugging Face: https://huggingface.co/gurujustin/affine-archive-king-r3-isomsom-Affine-5cw1mntrm4-tr2
 - Repositorio original (posiblemente eliminado): https://huggingface.co/isomsom/Affine-5cw1mntrm4-tr2
 - Modelo similar de la misma serie: https://huggingface.co/isomsom/Affine-5d7gxm8jak-rc1
 - Noticias sobre el subnet SN120: https://subnetradar.com/subnet-news/120/2026-08-23

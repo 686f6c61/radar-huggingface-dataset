@@ -63,7 +63,7 @@ Estos valores son moderados para la tarea de resumen, y la latencia se mide en u
 
 - El modelo base Qwen3-1.7B requiere aproximadamente 1,7 GB de VRAM en FP16 (1,7B parámetros × 2 bytes). Con el adaptador LoRA (que añade una pequeña cantidad de pesos) se necesita un poco más, pero en total se puede ejecutar en GPUs con al menos 4 GB de VRAM.
 - GPUs recomendadas: cualquier GPU con 4-6 GB de VRAM, como NVIDIA GTX 1660, RTX 2060, RTX 3050, o superiores. En el caso de GPUs con menos memoria, se puede cuantificar el modelo base a 8 bits o 4 bits, aunque no se ha especificado el soporte de cuantización en la información disponible.
-- Opciones de despliegue: el adaptador se puede cargar con librerías de HuggingFace (Transformers + PEFT) para inferencia en Python. También puede integrarse en vLLM o llama.cpp si se combina con el modelo base, aunque no se han documentado configuraciones específicas.
+- Opciones de despliegue: el adaptador se puede cargar con librerías de Hugging Face (Transformers + PEFT) para inferencia en Python. También puede integrarse en vLLM o llama.cpp si se combina con el modelo base, aunque no se han documentado configuraciones específicas.
 - Latencia estimada: la tabla de evaluación indica una media de 3,46 segundos por generación, con un p95 de 4,54 segundos, en un entorno de hardware no especificado. Se desconoce el hardware utilizado para esas mediciones.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ No se dispone de información comparativa con otros adaptadores o modelos de res
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/hongduc05/qwen-chat-sum-6
+- Página del modelo en Hugging Face: https://huggingface.co/hongduc05/qwen-chat-sum-6
 - Repositorio oficial de Qwen (GitHub): https://github.com/QwenLM/Qwen
 - Sitio web de Qwen: https://qwen.ai/home
 - Qwen Studio (chat): https://chat.qwen.ai/

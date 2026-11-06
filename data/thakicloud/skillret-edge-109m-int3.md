@@ -12,7 +12,7 @@ Su relevancia actual está en el nicho *on-device*: un recuperador que ocupa men
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer bi-encoder (etiqueta `bert` en HuggingFace), pooling CLS, embeddings L2-normalizados |
+| Arquitectura | Transformer bi-encoder (etiqueta `bert` en Hugging Face), pooling CLS, embeddings L2-normalizados |
 | Parametros totales | 109.482.240 |
 | Parametros activos | No aplica (modelo denso, no es MoE) |
 | Longitud de contexto | `max_length=256` en evaluacion; limite nativo del encoder: no disponible |
@@ -109,7 +109,7 @@ Frente al maestro, este modelo reduce el tamano en disco aproximadamente 17,4 ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/SKILLRET-Edge-109M-int3
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/SKILLRET-Edge-109M-int3
 - Modelo base (no cuantizado): https://huggingface.co/ThakiCloud/SKILLRET-Edge-109M
 - Modelo maestro de destilacion: https://huggingface.co/ThakiCloud/SKILLRET-Embedding-0.6B
 - Dataset de evaluacion y entrenamiento: https://huggingface.co/datasets/ThakiCloud/SKILLRET

@@ -73,7 +73,7 @@ No se han publicado resultados en benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Entorno | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| connectailab-rl-connectailab-rl-jamesyun-v1-teacher | Política RL (PPO) | CONNECT TYCOON | Apache 2.0 | HuggingFace |
+| connectailab-rl-connectailab-rl-jamesyun-v1-teacher | Política RL (PPO) | CONNECT TYCOON | Apache 2.0 | Hugging Face |
 | Presidente por reglas (baseline del proyecto) | Agente basado en reglas | CONNECT TYCOON | no disponible | Incluido en el simulador |
 | Otros modelos de decisión RL de propósito general | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/James-1971-source/connectailab-rl-connectailab-rl-jamesyun-v1-teacher
+- Hugging Face: https://huggingface.co/James-1971-source/connectailab-rl-connectailab-rl-jamesyun-v1-teacher
 - Repositorio GitHub CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

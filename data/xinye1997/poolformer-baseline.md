@@ -72,6 +72,6 @@ No se dispone de informacion suficiente para comparar este checkpoint con modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xinye1997/poolformer-baseline
+- Hugging Face: https://huggingface.co/xinye1997/poolformer-baseline
 - Documentacion de PoolFormer en Transformers: https://huggingface.co/docs/transformers/v4.36.0/en/model_doc/poolformer
 - Repositorio GitHub "Poolformer-baseline" encontrado en la busqueda web: https://github.com/Multi-Scale-Transformer/Poolformer-baseline

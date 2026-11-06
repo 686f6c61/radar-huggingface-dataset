@@ -79,10 +79,10 @@ El propio autor cualifica esta evidencia: diferencia de 0,27 puntos, procedente 
 
 | Modelo | Parametros | Contexto / entrada | Evaluacion publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dys-asr/parakeet-tdt-0.6b-all-soup` (este) | 627.057.286 | 16 kHz mono, ingles | Ninguna, y no puede haberla (entrena con los splits `dev`) | Speech Accessibility Project DUA | HuggingFace, safetensors |
-| `dys-asr/parakeet-tdt-0.6b-all` (ingrediente) | No disponible | 16 kHz mono, ingles | Ninguna; pesos publicados = epoca 10 por ser la ultima | Speech Accessibility Project DUA | HuggingFace |
+| `dys-asr/parakeet-tdt-0.6b-all-soup` (este) | 627.057.286 | 16 kHz mono, ingles | Ninguna, y no puede haberla (entrena con los splits `dev`) | Speech Accessibility Project DUA | Hugging Face, safetensors |
+| `dys-asr/parakeet-tdt-0.6b-all` (ingrediente) | No disponible | 16 kHz mono, ingles | Ninguna; pesos publicados = epoca 10 por ser la ultima | Speech Accessibility Project DUA | Hugging Face |
 | Run hermano RNN-T de la misma familia (mencionado en la card) | No disponible | 16 kHz mono, ingles | Si, sobre un subconjunto de 48 hablantes de SAPC2 `dev` no visto en entrenamiento | No disponible | No disponible |
-| `nvidia/parakeet-tdt-0.6b-v3` (modelo base) | 0,6B (segun nomenclatura) | 16 kHz mono, multilingue segun el modelo base | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| `nvidia/parakeet-tdt-0.6b-v3` (modelo base) | 0,6B (segun nomenclatura) | 16 kHz mono, multilingue segun el modelo base | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 
 Advertencia del autor: este checkpoint **no es comparable con sus hermanos**, porque ellos reportan sobre un subconjunto de 48 hablantes de SAPC2 `dev` que nunca vieron durante el entrenamiento, mientras que este si lo ha visto.
 
@@ -106,7 +106,7 @@ Advertencia del autor: este checkpoint **no es comparable con sus hermanos**, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dys-asr/parakeet-tdt-0.6b-all-soup
+- Modelo en Hugging Face: https://huggingface.co/dys-asr/parakeet-tdt-0.6b-all-soup
 - Modelo ingrediente (run all-data): https://huggingface.co/dys-asr/parakeet-tdt-0.6b-all
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Corpus SAPC1: https://huggingface.co/datasets/dys-asr/sapc1

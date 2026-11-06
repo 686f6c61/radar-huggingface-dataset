@@ -85,10 +85,10 @@ Notas aportadas por el autor:
 
 | Modelo | Parámetros | Streaming | WER FLEURS fa (1,12 s) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mehdi-hf/nemotron-asr-streaming-farsi | 622,5 M | Sí, cache-aware con look-ahead 0,32/1,12 s | 8,81 | openmdw-1.1 | HuggingFace (safetensors y `.nemo`) |
-| nvidia/nemotron-3.5-asr-streaming-0.6b (base) | ≈0,6 B | Sí, multilingüe | No disponible para persa (la ranura `fa-IR` estaba reservada y sin ajustar) | No disponible en la información proporcionada | HuggingFace (NVIDIA) |
+| mehdi-hf/nemotron-asr-streaming-farsi | 622,5 M | Sí, cache-aware con look-ahead 0,32/1,12 s | 8,81 | openmdw-1.1 | Hugging Face (safetensors y `.nemo`) |
+| nvidia/nemotron-3.5-asr-streaming-0.6b (base) | ≈0,6 B | Sí, multilingüe | No disponible para persa (la ranura `fa-IR` estaba reservada y sin ajustar) | No disponible en la información proporcionada | Hugging Face (NVIDIA) |
 | NVIDIA `stt_fa_fastconformer_hybrid_large` | No disponible | No (evaluado en zero-shot con CTC) | 24,23 | No disponible en la información proporcionada | Catálogo de NVIDIA |
-| Whisper large-v3 (OpenAI) | ≈1.550 M | No nativo (ventanas de 30 s) | No disponible en la información proporcionada | MIT | HuggingFace, múltiples formatos |
+| Whisper large-v3 (OpenAI) | ≈1.550 M | No nativo (ventanas de 30 s) | No disponible en la información proporcionada | MIT | Hugging Face, múltiples formatos |
 
 La comparación directa de WER solo está documentada frente a `stt_fa_fastconformer_hybrid_large` y en los conjuntos indicados. Para Whisper large-v3 no se aportan cifras en persa en la información disponible, por lo que la comparación se limita a parámetros, modalidad de streaming y licencia.
 
@@ -107,7 +107,7 @@ La comparación directa de WER solo está documentada frente a `stt_fa_fastconfo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mehdi-hf/nemotron-asr-streaming-farsi
+- Modelo en Hugging Face: https://huggingface.co/mehdi-hf/nemotron-asr-streaming-farsi
 - Modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Repositorio de código (preparación de datos, entrenamiento, evaluación e inferencia): https://github.com/mallahyari/nemotron-asr-streaming-farsi
 - Licencia openmdw-1.1: https://openmdw.ai/license/1-1/

@@ -76,7 +76,7 @@ Los datos de Qwen3-8B y Llama-3.1-8B son estimaciones orientativas basadas en el
 
 ## Limitaciones y advertencias
 
-- La licencia de esta version especifica no esta declarada en HuggingFace; aunque el modelo base de ansulev es Apache-2.0, la redistribucion de FlagRelease podria estar sujeta a condiciones adicionales. Verificar antes de uso comercial.
+- La licencia de esta version especifica no esta declarada en Hugging Face; aunque el modelo base de ansulev es Apache-2.0, la redistribucion de FlagRelease podria estar sujeta a condiciones adicionales. Verificar antes de uso comercial.
 - El dato de GPQA_Diamond de 0 en la pila original es sospechoso y no debe utilizarse como referencia de rendimiento; solo el valor de FlagOS (86,93) parece fiable.
 - No se dispone de informacion sobre el dataset de entrenamiento, el numero de tokens ni el proceso de alineacion (RLHF/DPO), lo que limita la evaluacion de sesgos y riesgos.
 - El modelo esta optimizado para hardware Hygon; su ejecucion en GPUs NVIDIA requeriria la pila original de ansulev, no esta version.
@@ -85,7 +85,7 @@ Los datos de Qwen3-8B y Llama-3.1-8B son estimaciones orientativas basadas en el
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta version: https://huggingface.co/FlagRelease/Darwin-9B-NEG-ansulev-hygon-FlagOS
+- Repositorio Hugging Face de esta version: https://huggingface.co/FlagRelease/Darwin-9B-NEG-ansulev-hygon-FlagOS
 - Modelo original de ansulev: https://huggingface.co/ansulev/Darwin-9B-NEG
 - Ficha en Inferix: https://inferix.co/models/ansulev/Darwin-9B-NEG
 - Benchmarks y guia de despliegue en OpenModelMap: https://openmodelmap.com/model/ansulev/Darwin-9B-NEG

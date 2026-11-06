@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwenDGAF-Coder-2-3B es un modelo publicado en HuggingFace por el usuario hecan3d bajo licencia Apache 2.0. Por el nombre se infiere que se trata de un modelo orientado a generacion de codigo, con aproximadamente 3.000 millones de parametros, presumiblemente derivado de la familia Qwen (probablemente Qwen2.5-Coder-3B). Sin embargo, la model card publicada no contiene mas informacion que la linea de licencia, por lo que no es posible confirmar arquitectura, datos de entrenamiento ni procedencia exacta de los pesos.
+QwenDGAF-Coder-2-3B es un modelo publicado en Hugging Face por el usuario hecan3d bajo licencia Apache 2.0. Por el nombre se infiere que se trata de un modelo orientado a generacion de codigo, con aproximadamente 3.000 millones de parametros, presumiblemente derivado de la familia Qwen (probablemente Qwen2.5-Coder-3B). Sin embargo, la model card publicada no contiene mas informacion que la linea de licencia, por lo que no es posible confirmar arquitectura, datos de entrenamiento ni procedencia exacta de los pesos.
 
 El repositorio no registra descargas ni interacciones en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-04), lo que sugiere una publicacion reciente y sin validacion comunitaria. No hay pipeline declarado, ni idiomas listados, ni documentacion tecnica asociada.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hecan3d/QwenDGAF-Coder-2-3B | no disponible (por nombre, ~3B) | no disponible | Apache 2.0 | HuggingFace, sin descargas registradas |
-| Qwen2.5-Coder-3B | 3B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen2.5-Coder-1.5B | 1,5B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | HuggingFace, ampliamente utilizado |
+| hecan3d/QwenDGAF-Coder-2-3B | no disponible (por nombre, ~3B) | no disponible | Apache 2.0 | Hugging Face, sin descargas registradas |
+| Qwen2.5-Coder-3B | 3B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen2.5-Coder-1.5B | 1,5B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | Hugging Face, ampliamente utilizado |
 
 La comparativa con la familia Qwen2.5-Coder es orientativa y se basa en la similitud de nombre y tamano; no se ha confirmado que este repositorio sea un derivado directo de dichos modelos.
 
@@ -80,5 +80,5 @@ La comparativa con la familia Qwen2.5-Coder es orientativa y se basa en la simil
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hecan3d/QwenDGAF-Coder-2-3B
+- Repositorio Hugging Face: https://huggingface.co/hecan3d/QwenDGAF-Coder-2-3B
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

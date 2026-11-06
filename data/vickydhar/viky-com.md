@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Vickydhar/Viky.com es un espacio publicado en HuggingFace por el usuario Vickydhar bajo licencia Apache-2.0. En el momento de redactar esta ficha no contiene documentacion tecnica alguna: la model card se reduce al bloque de metadatos de licencia y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso.
+El repositorio Vickydhar/Viky.com es un espacio publicado en Hugging Face por el usuario Vickydhar bajo licencia Apache-2.0. En el momento de redactar esta ficha no contiene documentacion tecnica alguna: la model card se reduce al bloque de metadatos de licencia y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso.
 
 Los metadatos publicos indican cero descargas y cero likes, no declaran pipeline de inferencia ni idiomas soportados, y no se ha publicado ningun resultado de evaluacion. El identificador del repositorio ("Viky.com") sugiere un proyecto de sitio web mas que un modelo de lenguaje, si bien esto no puede confirmarse con la informacion disponible.
 
@@ -20,7 +20,7 @@ En consecuencia, no es posible evaluar el modelo ni recomendarlo para ningun esc
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
-| Identificador en HuggingFace | Vickydhar/Viky.com |
+| Identificador en Hugging Face | Vickydhar/Viky.com |
 | Autor | Vickydhar |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 2026-10-01T14:34:05.000Z |
@@ -75,7 +75,7 @@ No disponible. Sin conocer el tamano, la arquitectura ni el dominio del modelo n
 
 - Ausencia total de documentacion tecnica: no hay model card descriptiva, paper ni informe que permita entender el modelo.
 - Cero descargas y cero likes: el repositorio no ha sido validado por la comunidad y no existen referencias externas conocidas.
-- Pipeline no declarado: HuggingFace no puede asignar una tarea de inferencia, lo que suele indicar que el repositorio no contiene un modelo reconocible.
+- Pipeline no declarado: Hugging Face no puede asignar una tarea de inferencia, lo que suele indicar que el repositorio no contiene un modelo reconocible.
 - No se puede verificar la existencia de pesos. Si el repositorio solo contiene metadatos, no hay nada que ejecutar.
 - Riesgo de seguridad: si el repositorio incluye codigo Python propio, su ejecucion mediante `trust_remote_code=True` no puede auditarse con la informacion disponible.
 - La licencia Apache-2.0 aparece unicamente en los metadatos; no se ha verificado la presencia de un fichero `LICENSE` que la respalde, lo que puede generar incertidumbre juridica en un uso comercial.
@@ -85,5 +85,5 @@ No disponible. Sin conocer el tamano, la arquitectura ni el dominio del modelo n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vickydhar/Viky.com
+- Repositorio en Hugging Face: https://huggingface.co/Vickydhar/Viky.com
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

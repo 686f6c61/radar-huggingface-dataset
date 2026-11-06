@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FerData/regresion-casas-keras` es un modelo de regresion tabular publicado en HuggingFace por el usuario FerData, desarrollado como ejemplo pedagogico para el Seminario de Actualizacion del IFTS N.º 18 (docente: Cynthia M. Villagra). No es un modelo de lenguaje ni una red neuronal profunda: es una regresion lineal implementada con Keras 3 cuyo unico objetivo es predecir el precio de una vivienda, en miles de dolares estadounidenses, a partir de tres variables de entrada (`m2`, `balcon`, `ascensor`).
+`FerData/regresion-casas-keras` es un modelo de regresion tabular publicado en Hugging Face por el usuario FerData, desarrollado como ejemplo pedagogico para el Seminario de Actualizacion del IFTS N.º 18 (docente: Cynthia M. Villagra). No es un modelo de lenguaje ni una red neuronal profunda: es una regresion lineal implementada con Keras 3 cuyo unico objetivo es predecir el precio de una vivienda, en miles de dolares estadounidenses, a partir de tres variables de entrada (`m2`, `balcon`, `ascensor`).
 
 El modelo resuelve el mismo problema que los ejemplos clasicos de scikit-learn y PyTorch, y su interes es fundamentalmente didactico: muestra como entrenar una regresion lineal con Keras, como integrar una capa `Normalization` dentro del grafo del modelo y como exportar todo (arquitectura, pesos, estadisticas de normalizacion y configuracion) en un unico archivo en formato nativo `.keras`. El dataset es sintetico (200 registros generados en `train.py` con semilla fija) y no representa viviendas reales.
 
@@ -71,7 +71,7 @@ No se dispone de informacion sobre otros modelos comparables en la informacion p
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FerData/regresion-casas-keras | 4 | no aplica | MAE 3,10; R² 0,989 | MIT | HuggingFace |
+| FerData/regresion-casas-keras | 4 | no aplica | MAE 3,10; R² 0,989 | MIT | Hugging Face |
 | Ejemplo scikit-learn | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Ejemplo PyTorch | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -88,5 +88,5 @@ No se dispone de informacion sobre otros modelos comparables en la informacion p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FerData/regresion-casas-keras
+- Hugging Face: https://huggingface.co/FerData/regresion-casas-keras
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

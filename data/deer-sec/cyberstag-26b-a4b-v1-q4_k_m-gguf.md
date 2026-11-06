@@ -80,6 +80,6 @@ No se dispone de informacion sobre otros modelos especializados en cibersegurida
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deer-sec/CyberStag-26B-A4B-v1-Q4_K_M.gguf
+- Modelo en Hugging Face: https://huggingface.co/deer-sec/CyberStag-26B-A4B-v1-Q4_K_M.gguf
 - Modelo base: https://huggingface.co/google/gemma-4-26b-a4b
 - Repositorio principal (con imagenes y versiones adicionales): https://huggingface.co/deer-sec/CyberStag-26B-A4B-v1

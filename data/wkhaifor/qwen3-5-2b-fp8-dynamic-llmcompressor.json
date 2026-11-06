@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "wkhaifor/Qwen3.5-2B-FP8-Dynamic-LLMCompressor",
+  "slug": "wkhaifor-qwen3-5-2b-fp8-dynamic-llmcompressor",
+  "author": "wkhaifor",
+  "url": "https://huggingface.co/wkhaifor/Qwen3.5-2B-FP8-Dynamic-LLMCompressor",
+  "created_at": "2026-11-04T13:46:10.000Z",
+  "updated_at": "2026-11-04T14:18:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "fp8",
+    "fp8-dynamic",
+    "quantization",
+    "llm-compressor",
+    "compressed-tensors",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 3574942597,
+  "storage_human": "3.6 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wkhaifor/Qwen3.5-2B-FP8-Dynamic-LLMCompressor · Hugging Face",
+      "url": "https://huggingface.co/wkhaifor/Qwen3.5-2B-FP8-Dynamic-LLMCompressor",
+      "snippet": "Instructions to use wkhaifor/Qwen3.5-2B-FP8-Dynamic-LLMCompressor with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "wkhaifor (wkhaifor) - Hugging Face",
+      "url": "https://huggingface.co/wkhaifor",
+      "snippet": "Sort: Recently updated. wkhaifor/Qwen3.5-9B-FP8-Dynamic-LLMCompressor. Image-Text-to-Text • 10B • Updated 24 minutes ago. wkhaifor/Qwen2.5-3B-Instruct-FOMC-Merged-v0.1"
+    }
+  ]
+}

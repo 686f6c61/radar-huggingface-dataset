@@ -57,7 +57,7 @@ Estos valores son del modelo original de OpenAI, no de esta conversión.
 - VRAM estimada: ~2 GB para inferencia en FP16 con batch 1 (modelo de 149M params).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (RTX 2060, GTX 1080 Ti, etc.). Para producción con alto throughput, se recomienda A100 o H100.
 - Compatible con consumer GPUs: sí, cabe en GPUs de gama media (RTX 3060, 4060, etc.) en FP16.
-- Opciones de despliegue: se puede usar directamente con la librería Lucid, o exportar a ONNX para entornos de inferencia estándar (vLLM, llama.cpp, Ollama no son compatibles con modelos de embedding; se recomienda usar HuggingFace Transformers o el propio Lucid).
+- Opciones de despliegue: se puede usar directamente con la librería Lucid, o exportar a ONNX para entornos de inferencia estándar (vLLM, llama.cpp, Ollama no son compatibles con modelos de embedding; se recomienda usar Hugging Face Transformers o el propio Lucid).
 - Latencia: típicamente <10 ms por imagen en GPU moderna, aunque depende del batch y la GPU.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ La principal diferencia es el formato de pesos y la integración con Lucid; el r
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/lucid-dl/clip-vit-base-16
+- Hugging Face del modelo: https://huggingface.co/lucid-dl/clip-vit-base-16
 - Modelo original de OpenAI: https://huggingface.co/openai/clip-vit-base-patch16
 - Paper CLIP: https://arxiv.org/abs/2103.00020
 - Repositorio Lucid: https://github.com/ChanLumerico/lucid

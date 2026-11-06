@@ -2,7 +2,7 @@
 
 ## Resumen
 
-text_classification_senti_analysis es un modelo de clasificación de texto publicado por el usuario nilamgaichor en HuggingFace, destinado a análisis de sentimiento. Se trata de un ajuste fino (fine-tuning) de un modelo de la familia DistilBERT, según indican las etiquetas del repositorio y la coincidencia exacta del recuento de parámetros (66.955.010) con el de distilbert-base-uncased. El entrenamiento se realizó con la librería Transformers 4.57.6 y PyTorch 2.8.0, mediante el Trainer, sin que la model card documente el conjunto de datos utilizado.
+text_classification_senti_analysis es un modelo de clasificación de texto publicado por el usuario nilamgaichor en Hugging Face, destinado a análisis de sentimiento. Se trata de un ajuste fino (fine-tuning) de un modelo de la familia DistilBERT, según indican las etiquetas del repositorio y la coincidencia exacta del recuento de parámetros (66.955.010) con el de distilbert-base-uncased. El entrenamiento se realizó con la librería Transformers 4.57.6 y PyTorch 2.8.0, mediante el Trainer, sin que la model card documente el conjunto de datos utilizado.
 
 El modelo resuelve una tarea concreta: la clasificación de secuencias (pipeline text-classification). Declara una precisión de 0.9674 y una pérdida de validación de 0.1275 sobre un conjunto de evaluación cuyo origen y tamaño no se especifican. Con 66,9 millones de parámetros y licencia Apache-2.0, es un modelo ligero, desplegable en CPU y en GPU de consumo, con un coste de inferencia muy bajo en comparación con alternativas basadas en LLM.
 
@@ -99,6 +99,6 @@ La comparacion de rendimiento numerico entre estos modelos no puede realizarse c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nilamgaichor/text_classification_senti_analysis
+- Modelo en Hugging Face: https://huggingface.co/nilamgaichor/text_classification_senti_analysis
 - La busqueda web realizada no devolvio enlaces relevantes: los unicos resultados fueron paginas genericas del motor de busqueda Bing (https://www.bing.com/RelatedSearch, https://www.bing.com/version, https://explore.microsoft.com/en-us/bing/features/bing-generative-search) sin relacion con el modelo.
 - No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo en la informacion disponible.

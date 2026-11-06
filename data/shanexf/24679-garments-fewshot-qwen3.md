@@ -94,7 +94,7 @@ Test (comparación final; coste a precio de referencia de 0,15 USD por millón d
 | Este pipeline (5-shot adaptativo sobre Qwen3-4B-Instruct-2507) | 4 000 M | 4096 tokens (fijado) | Prompting en contexto, sin entrenamiento | 1,0 | classroom-use-only | Repositorio de método, sin pesos |
 | Este pipeline (zero-shot sobre Qwen3-4B-Instruct-2507) | 4 000 M | 4096 tokens (fijado) | Prompting en contexto, sin entrenamiento | 1,0 y 183 tokens de prompt por consulta | classroom-use-only | Repositorio de método, sin pesos |
 | DistilBERT ajustado sobre los mismos datos | no disponible | no disponible | Ajuste supervisado | no disponible en esta ficha | no disponible | Mencionado como comparación en el *method card* |
-| Qwen3-4B-Instruct-2507 sin pipeline de clasificación | 4 000 M | no disponible | Modelo generativo de propósito general | no aplica (no es un clasificador) | no disponible en esta ficha | Público en HuggingFace |
+| Qwen3-4B-Instruct-2507 sin pipeline de clasificación | 4 000 M | no disponible | Modelo generativo de propósito general | no aplica (no es un clasificador) | no disponible en esta ficha | Público en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -111,7 +111,7 @@ Test (comparación final; coste a precio de referencia de 0,15 USD por millón d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shanexf/24679-garments-fewshot-qwen3
+- Modelo en Hugging Face: https://huggingface.co/shanexf/24679-garments-fewshot-qwen3
 - Dataset utilizado: https://huggingface.co/datasets/leixiang25/24679-hw1-text-garments
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados devueltos no guardan relación con este modelo.

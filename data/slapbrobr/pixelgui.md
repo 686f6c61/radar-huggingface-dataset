@@ -1,7 +1,7 @@
 # SlapBroBR/PixelGui
 
 ## Resumen
-El modelo `SlapBroBR/PixelGui` es un repositorio publicado en HuggingFace por el usuario SlapBroBR. La información disponible es extremadamente limitada: la model card únicamente declara la licencia (Artistic License 2.0) y no incluye descripción, arquitectura, parámetros, ni ningún otro dato técnico. El repositorio fue creado el 31 de agosto de 2026 y no presenta descargas ni valoraciones, lo que sugiere que se trata de un proyecto reciente o en fase inicial.
+El modelo `SlapBroBR/PixelGui` es un repositorio publicado en Hugging Face por el usuario SlapBroBR. La información disponible es extremadamente limitada: la model card únicamente declara la licencia (Artistic License 2.0) y no incluye descripción, arquitectura, parámetros, ni ningún otro dato técnico. El repositorio fue creado el 31 de agosto de 2026 y no presenta descargas ni valoraciones, lo que sugiere que se trata de un proyecto reciente o en fase inicial.
 
 Dado que no se proporcionan detalles sobre el tipo de modelo (si es de lenguaje, visión, difusión, etc.), ni sobre su entrenamiento o capacidades, esta ficha se limita a reflejar la información disponible y a señalar las carencias. Se recomienda consultar directamente el repositorio para obtener actualizaciones futuras.
 
@@ -43,4 +43,4 @@ No disponible. Al no conocerse la categoría, el tamaño o la finalidad del mode
 - No apto para producción sin verificación previa: cualquier integración en sistemas reales requeriría una evaluación exhaustiva por parte del usuario.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/SlapBroBR/PixelGui
+- Repositorio en Hugging Face: https://huggingface.co/SlapBroBR/PixelGui

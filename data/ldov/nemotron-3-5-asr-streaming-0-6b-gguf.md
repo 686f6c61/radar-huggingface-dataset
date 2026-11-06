@@ -18,7 +18,7 @@ Su relevancia practica radica en el compromiso entre tamano y precision: con cua
 | Longitud de contexto | no aplicable en el sentido de los LLM; la ventana de atencion del encoder es att_context_size=[56, 13] (1,12 s) en modo offline, con streaming por trozos seleccionable en tiempo de ejecucion (--stream-chunk-ms 1120 --stream-att-right {0,3,6,13}) |
 | Tipos de cuantizacion | F32, F16, Q8_0, Q6_K, Q5_K_M, Q4_K_M |
 | Idiomas soportados | 32 locales BCP-47: en-US, en-GB, es-US, es-ES, fr-FR, fr-CA, it-IT, pt-BR, pt-PT, nl-NL, de-DE, tr-TR, ru-RU, ar-AR, hi-IN, ja-JP, ko-KR, vi-VN, uk-UA, pl-PL, sv-SE, cs-CZ, nb-NO, da-DK, bg-BG, fi-FI, hr-HR, sk-SK, zh-CN, hu-HU, ro-RO, et-EE. El tokenizador reconoce 40 idiomas; 8 de ellos estan en estado de adaptacion y requieren fine-tuning |
-| Licencia | OpenMDW-1.1 (heredada del modelo base; en HuggingFace figura como license: other con license_name: openmdw-1.1) |
+| Licencia | OpenMDW-1.1 (heredada del modelo base; en Hugging Face figura como license: other con license_name: openmdw-1.1) |
 | Formato de pesos | GGUF (un unico fichero por cuantizacion), para el runtime transcribe.cpp |
 | Entrada | Audio WAV mono a 16 kHz (se recomienda convertir con ffmpeg -ar 16000 -ac 1) |
 | Salida | Texto transcrito con puntuacion, mayusculas y timestamps a nivel de token; etiqueta <lang-XX> en modo de autodeteccion |
@@ -154,7 +154,7 @@ Comparativa con otras familias ASR (Whisper large-v3, Canary, Parakeet TDT): no 
 ## Enlaces
 
 - Repositorio de esta conversion: https://huggingface.co/ldov/nemotron-3.5-asr-streaming-0.6b-gguf
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Commit upstream de origen: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b/commit/24b151a
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Commit de validacion en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/tree/909e94e

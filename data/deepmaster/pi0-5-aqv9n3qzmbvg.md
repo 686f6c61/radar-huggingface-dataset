@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`deepmaster/pi0.5-AQV9N3qZMBvG` es un checkpoint de robótica publicado en HuggingFace por el usuario `deepmaster`. Por sus etiquetas (`pi0.5`, `openpi`, `xarm6`), se trata de una adaptación o ajuste fino del modelo pi0.5 de Physical Intelligence, el modelo fundacional de visión-lenguaje-acción (VLA) para control robótico, orientado en este caso al brazo robótico UFactory xArm 6. El pipeline declarado es `robotics` y el repositorio ocupa 10,4 GB.
+`deepmaster/pi0.5-AQV9N3qZMBvG` es un checkpoint de robótica publicado en Hugging Face por el usuario `deepmaster`. Por sus etiquetas (`pi0.5`, `openpi`, `xarm6`), se trata de una adaptación o ajuste fino del modelo pi0.5 de Physical Intelligence, el modelo fundacional de visión-lenguaje-acción (VLA) para control robótico, orientado en este caso al brazo robótico UFactory xArm 6. El pipeline declarado es `robotics` y el repositorio ocupa 10,4 GB.
 
 El modelo resuelve el problema de generar acciones de control robótico a partir de entradas multimodales (observaciones visuales, estado del robot e instrucciones en lenguaje natural). pi0.5 es relevante por su capacidad de generalización a entornos y tareas no vistos, un paso más allá del pi0 original. Al derivar de pi0.5, hereda su enfoque de flow matching para la generación de trayectorias de acción.
 
-La información pública disponible sobre este checkpoint concreto es muy limitada: la model card asociada no expone idiomas, datos de entrenamiento ni resultados de evaluación, y el acceso está restringido (gated), requiriendo aceptar condiciones en HuggingFace. Cualquier dato sobre arquitectura o rendimiento debe por tanto tomarse como heredado del pi0.5 base y no como verificado para este repositorio.
+La información pública disponible sobre este checkpoint concreto es muy limitada: la model card asociada no expone idiomas, datos de entrenamiento ni resultados de evaluación, y el acceso está restringido (gated), requiriendo aceptar condiciones en Hugging Face. Cualquier dato sobre arquitectura o rendimiento debe por tanto tomarse como heredado del pi0.5 base y no como verificado para este repositorio.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| deepmaster/pi0.5-AQV9N3qZMBvG | No disponible (~3B heredado) | VLA ajustado a xArm 6 | apache-2.0 | Gated en HuggingFace |
+| deepmaster/pi0.5-AQV9N3qZMBvG | No disponible (~3B heredado) | VLA ajustado a xArm 6 | apache-2.0 | Gated en Hugging Face |
 | pi0.5 (Physical Intelligence) | ~3B (referencia) | VLA fundacional | No disponible en esta busqueda | No disponible en esta busqueda |
 | pi0 (Physical Intelligence) | ~3B (referencia) | VLA fundacional | No disponible en esta busqueda | No disponible en esta busqueda |
 | OpenVLA | ~7B (referencia) | VLA | No disponible en esta busqueda | Abierto |
@@ -77,13 +77,13 @@ No se dispone de datos de rendimiento comparado para este checkpoint, por lo que
 - Riesgo de alucinacion: en modelos VLA se manifiesta como generacion de acciones incoherentes o inseguras; no hay evaluacion publicada para este checkpoint.
 - Limitaciones de contexto o idioma: no disponible.
 - Restricciones de licencia: licencia apache-2.0, que en principio permite uso comercial, pero conviene verificar las condiciones del modelo base pi0.5 y del stack openpi, y aceptar las condiciones de acceso (repositorio gated).
-- Acceso restringido: requiere aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face antes de descargar.
 - Trazabilidad limitada: 0 descargas y 0 likes, sin documentacion tecnica asociada, lo que reduce la confianza en el checkpoint para produccion.
 - Uso en robot real: cualquier despliegue sobre hardware fisico requiere validacion de seguridad previa, dado que no hay informacion sobre el entrenamiento ni evaluacion de robustez.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepmaster/pi0.5-AQV9N3qZMBvG
+- Hugging Face: https://huggingface.co/deepmaster/pi0.5-AQV9N3qZMBvG
 - Repositorio openpi (referenciado por la etiqueta `openpi`): https://github.com/Physical-Intelligence/openpi
 
 No se han encontrado otros enlaces (papers, blogs o demos) en la informacion disponible.

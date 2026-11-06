@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pulsar-coder-1.5b es un modelo de lenguaje de 1.500 millones de parametros orientado a tareas de generacion y asistencia de codigo. El modelo original lo publica el usuario tuxkt en HuggingFace, y esta version concreta es una cuantizacion en formato GGUF realizada por el equipo de mradermacher, que se dedica a generar pesos cuantizados estaticos de modelos open source para facilitar su despliegue en entornos con recursos limitados.
+pulsar-coder-1.5b es un modelo de lenguaje de 1.500 millones de parametros orientado a tareas de generacion y asistencia de codigo. El modelo original lo publica el usuario tuxkt en Hugging Face, y esta version concreta es una cuantizacion en formato GGUF realizada por el equipo de mradermacher, que se dedica a generar pesos cuantizados estaticos de modelos open source para facilitar su despliegue en entornos con recursos limitados.
 
 El nombre del modelo sugiere su vinculacion con el proyecto PulsarOSDevTeam/pulsarcode, una herramienta CLI que se presenta como una alternativa gratuita a Claude Code y que permite seleccionar el modelo subyacente. En este contexto, pulsar-coder-1.5b actua como un modelo compacto de asistencia a la programacion, disenado para ejecutarse localmente con requisitos de hardware modestos gracias a su tamano reducido y a las cuantizaciones disponibles.
 
@@ -48,7 +48,7 @@ La vinculacion con el proyecto pulsarcode sugiere que el modelo podria haber sid
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de MMLU, HumanEval, GSM8K ni otras metricas estandar para este modelo en su model card de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de MMLU, HumanEval, GSM8K ni otras metricas estandar para este modelo en su model card de Hugging Face.
 
 ## Requisitos de hardware
 

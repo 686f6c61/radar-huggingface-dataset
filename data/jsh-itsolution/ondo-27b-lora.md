@@ -67,9 +67,9 @@ Todas las cifras son mediciones propias del autor en sus GPUs, no resultados de 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ONDO-27B-LoRA | Adaptador LoRA sobre Qwen3.8-27B | No disponible | Abstención calibrada con KL hacia el base | Apache-2.0 | HuggingFace (adaptador y checkpoint FP8) |
-| Qwen3.8-27B (base) | 27B (segun nombre) | No disponible | Modelo generalista | Apache-2.0 (segun el autor) | HuggingFace |
-| Qwen3.8-27B-FP8 | 27B en FP8 | No disponible | Version cuantizada del base | Apache-2.0 (segun el autor) | HuggingFace |
+| ONDO-27B-LoRA | Adaptador LoRA sobre Qwen3.8-27B | No disponible | Abstención calibrada con KL hacia el base | Apache-2.0 | Hugging Face (adaptador y checkpoint FP8) |
+| Qwen3.8-27B (base) | 27B (segun nombre) | No disponible | Modelo generalista | Apache-2.0 (segun el autor) | Hugging Face |
+| Qwen3.8-27B-FP8 | 27B en FP8 | No disponible | Version cuantizada del base | Apache-2.0 (segun el autor) | Hugging Face |
 
 No se dispone de datos de benchmarks de terceros ni de otros adaptadores de abstención comparables en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks de terceros ni de otros adaptadores de abst
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/jsh-itsolution/ONDO-27B-LoRA
+- Hugging Face del adaptador: https://huggingface.co/jsh-itsolution/ONDO-27B-LoRA
 - Checkpoint fusionado FP8: https://huggingface.co/jsh-itsolution/ONDO-27B-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo base en FP8: https://huggingface.co/Qwen/Qwen3.8-27B-FP8

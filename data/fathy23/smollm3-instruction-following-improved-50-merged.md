@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SmolLM3-instruction-following-improved-50-merged es un modelo de lenguaje publicado en HuggingFace por el usuario Fathy23. Por el nombre se deduce que es el resultado de un proceso de merging (fusión de pesos) aplicado sobre SmolLM3, el modelo de la familia SmolLM desarrollado por HuggingFace, con el objetivo declarado de mejorar el seguimiento de instrucciones. El checkpoint contiene 3.075.098.624 parámetros (aproximadamente 3.000 millones) almacenados en formato safetensors, con un tamaño de repositorio de 6,2 GB, lo que es coherente con pesos en precisión de 16 bits.
+SmolLM3-instruction-following-improved-50-merged es un modelo de lenguaje publicado en Hugging Face por el usuario Fathy23. Por el nombre se deduce que es el resultado de un proceso de merging (fusión de pesos) aplicado sobre SmolLM3, el modelo de la familia SmolLM desarrollado por Hugging Face, con el objetivo declarado de mejorar el seguimiento de instrucciones. El checkpoint contiene 3.075.098.624 parámetros (aproximadamente 3.000 millones) almacenados en formato safetensors, con un tamaño de repositorio de 6,2 GB, lo que es coherente con pesos en precisión de 16 bits.
 
-La relevancia de este modelo radica en su tamaño: 3.000 millones de parámetros es un rango que permite el despliegue en GPUs de consumo con cuantización, lo que lo hace atractivo para entornos con recursos limitados. Sin embargo, la model card es la plantilla automática de HuggingFace sin cumplimentar: no documenta datos de entrenamiento, licencia, idiomas, benchmarks ni procedimiento de fusión, lo que limita severamente cualquier evaluación rigurosa. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado el 5 de noviembre de 2026.
+La relevancia de este modelo radica en su tamaño: 3.000 millones de parámetros es un rango que permite el despliegue en GPUs de consumo con cuantización, lo que lo hace atractivo para entornos con recursos limitados. Sin embargo, la model card es la plantilla automática de Hugging Face sin cumplimentar: no documenta datos de entrenamiento, licencia, idiomas, benchmarks ni procedimiento de fusión, lo que limita severamente cualquier evaluación rigurosa. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado el 5 de noviembre de 2026.
 
 Se trata, por tanto, de un modelo derivado de escasa trazabilidad documental. Cualquier uso en producción debería ir precedido de una evaluación propia, dado que el autor no aporta información sobre el proceso de merging, los datasets de ajuste ni las condiciones de licencia heredadas del modelo base.
 
@@ -27,7 +27,7 @@ Se trata, por tanto, de un modelo derivado de escasa trazabilidad documental. Cu
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada por el autor sobre la arquitectura interna del modelo. El tag `smollm3` y la nomenclatura del repositorio indican que deriva de SmolLM3, el modelo de HuggingFace, pero la model card no confirma la arquitectura, el número de capas, la dimensión oculta, el mecanismo de atención ni la longitud de contexto nativa. Tampoco se especifica si el modelo base emplea atención con ventana deslizante, atención completa o una combinación.
+No hay información publicada por el autor sobre la arquitectura interna del modelo. El tag `smollm3` y la nomenclatura del repositorio indican que deriva de SmolLM3, el modelo de Hugging Face, pero la model card no confirma la arquitectura, el número de capas, la dimensión oculta, el mecanismo de atención ni la longitud de contexto nativa. Tampoco se especifica si el modelo base emplea atención con ventana deslizante, atención completa o una combinación.
 
 El sufijo `merged` del nombre sugiere que los pesos se obtuvieron mediante una técnica de model merging (posiblemente SLERP, TIES, DARE o media de pesos) entre el modelo base y uno o varios ajustes de instrucciones, y `instruction-following-improved-50` apunta a una configuración con un factor del 50 por ciento en la mezcla. No obstante, el autor no documenta ni la técnica exacta, ni los checkpoints de origen, ni los hiperparámetros de la fusión. Tampoco se aporta información sobre datos de entrenamiento, número de tokens, composición del dataset, ni sobre si hubo RLHF, DPO o ajuste supervisado. Todo ello debe considerarse no disponible.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Fathy23/SmolLM3-instruction-following-improved-50-merged | 3.075 M | no disponible | no disponible | HuggingFace, 0 descargas | Merge no documentado |
-| SmolLM3 (HuggingFace) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Modelo base del que deriva; documentacion oficial disponible en su repo |
-| Qwen2.5-3B-Instruct | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Alternativa de tamaño similar ampliamente evaluada |
-| Llama-3.2-3B-Instruct | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Alternativa de tamaño similar con licencia comunitaria |
+| Fathy23/SmolLM3-instruction-following-improved-50-merged | 3.075 M | no disponible | no disponible | Hugging Face, 0 descargas | Merge no documentado |
+| SmolLM3 (Hugging Face) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Modelo base del que deriva; documentacion oficial disponible en su repo |
+| Qwen2.5-3B-Instruct | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Alternativa de tamaño similar ampliamente evaluada |
+| Llama-3.2-3B-Instruct | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Alternativa de tamaño similar con licencia comunitaria |
 
 La comparación cuantitativa no es posible con la información disponible: no se han publicado parámetros de contexto, benchmarks ni licencia para este checkpoint, y los datos de los modelos alternativos no forman parte de la información proporcionada. La comparativa debe limitarse, por tanto, a la categoría de tamaño (modelos de aproximadamente 3.000 millones de parámetros orientados a instrucciones).
 
@@ -89,6 +89,6 @@ La comparación cuantitativa no es posible con la información disponible: no se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fathy23/SmolLM3-instruction-following-improved-50-merged
+- Hugging Face: https://huggingface.co/Fathy23/SmolLM3-instruction-following-improved-50-merged
 - Referencia citada en la model card (calculadora de impacto ambiental): https://mlco2.github.io/impact#compute
 - Paper citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

@@ -13,7 +13,7 @@ La relevancia de esta ficha es práctica: se trata de un artefacto de despliegue
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (la informacion proporcionada no especifica transformer, MoE ni arquitectura hibrida) |
-| Parametros totales | 7.518.069.290 (dato reportado por la API de HuggingFace) |
+| Parametros totales | 7.518.069.290 (dato reportado por la API de Hugging Face) |
 | Parametros activos | no disponible (no se confirma que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | i1 con imatrix: i1-Q2_K (4,5 GB), i1-IQ3_M (4,8 GB), i1-Q4_K_S (5,3 GB). La lista de cuantizaciones planificadas en los metadatos incluye ademas Q2_K, Q2_K_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ1_S, IQ1_M, Q3_K_S, Q3_K_M, Q3_K_L, IQ3_XXS, IQ3_XS, IQ3_S, Q4_0, Q4_1, IQ4_XS, small-IQ4_NL, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K |
@@ -88,7 +88,7 @@ No se dispone de datos de modelos de terceros comparables (mismo tamano o misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemuma-gemma-4-E4B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemuma-gemma-4-E4B-i1-GGUF
 - Modelo base: https://huggingface.co/Warspoot/gemuma-gemma-4-E4B
 - Cuantizaciones estaticas del mismo modelo (incluye `mmproj` si existen): https://huggingface.co/mradermacher/gemuma-gemma-4-E4B-GGUF
 - Fichero imatrix: https://huggingface.co/mradermacher/gemuma-gemma-4-E4B-i1-GGUF/resolve/main/gemuma-gemma-4-E4B.imatrix.gguf

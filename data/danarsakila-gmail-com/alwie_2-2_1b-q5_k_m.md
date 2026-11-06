@@ -95,7 +95,7 @@ Nota: este repositorio no publica comparativas propias ni evaluaciones que permi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danarsakila-gmail-com/alwie_2.2_1b.Q5_k_m
+- Hugging Face: https://huggingface.co/danarsakila-gmail-com/alwie_2.2_1b.Q5_k_m
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Paper de Llama 3 (referencia de la familia): no disponible en la informacion proporcionada
 - Repositorio de llama.cpp (formato GGUF): no disponible en la informacion proporcionada

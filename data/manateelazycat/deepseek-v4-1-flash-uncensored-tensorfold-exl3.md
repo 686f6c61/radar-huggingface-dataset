@@ -106,8 +106,8 @@ La mayor caída por asignatura es `moral_scenarios` (66,1 % → 37,8 %). La mode
 
 | Modelo | Parámetros | Contexto | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-Uncensored-TensorFold-EXL3 | 552B (8B/16B activos) según model card; 105,25B según safetensors | Hasta 1M tokens | 79,20 % (MMLU-14k, versión abliterada) | MIT | HuggingFace, 20 descargas, requiere ExLlamaV3 |
-| DeepSeek-V4.1-Flash (base, EXL3 2,9 bpw) | 552B (8B/16B activos) según model card | no disponible | 82,15 % (MMLU-14k) | no disponible | HuggingFace |
+| DeepSeek-V4.1-Flash-Uncensored-TensorFold-EXL3 | 552B (8B/16B activos) según model card; 105,25B según safetensors | Hasta 1M tokens | 79,20 % (MMLU-14k, versión abliterada) | MIT | Hugging Face, 20 descargas, requiere ExLlamaV3 |
+| DeepSeek-V4.1-Flash (base, EXL3 2,9 bpw) | 552B (8B/16B activos) según model card | no disponible | 82,15 % (MMLU-14k) | no disponible | Hugging Face |
 | Otras variantes abliteradas de la misma familia | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de otras alternativas comparables (mismo tamaño, misma tarea de multimodalidad con contexto largo o mismo enfoque de abliteración) en la información proporcionada.
@@ -123,12 +123,12 @@ No se dispone de datos de otras alternativas comparables (mismo tamaño, misma t
 - Responsabilidad legal: el operador asume el cumplimiento normativo (por ejemplo, en materia de contenidos ilícitos o desinformación) al desplegar un modelo sin filtros.
 - Dependencia de un único runtime: al ser EXL3, queda atado a ExLlamaV3 y a hardware con suficiente memoria; no hay rutas de despliegue alternativas documentadas.
 - Validación limitada del contexto: el contexto se valida hasta 600k tokens en la configuración de 2× DGX Spark, aunque el máximo declarado sea 1M.
-- Adopción muy baja: 20 descargas y 0 likes en el momento de la consulta, con publicación y actualización el 4 de octubre de 2026 según los metadatos de HuggingFace, sin revisión por pares ni reproducibilidad independiente.
+- Adopción muy baja: 20 descargas y 0 likes en el momento de la consulta, con publicación y actualización el 4 de octubre de 2026 según los metadatos de Hugging Face, sin revisión por pares ni reproducibilidad independiente.
 - Artefacto derivado: al ser una conversión cuantizada y modificada, hereda cualquier limitación del modelo base más las introducidas por la cuantización a 2,9 bpw.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manateelazycat/DeepSeek-V4.1-Flash-Uncensored-TensorFold-EXL3
+- Modelo en Hugging Face: https://huggingface.co/manateelazycat/DeepSeek-V4.1-Flash-Uncensored-TensorFold-EXL3
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Perfil del autor de la abliteración en X: https://x.com/dealignai
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda realizada; los resultados devueltos corresponden a páginas genéricas de un motor de búsqueda y no guardan relación con el modelo.

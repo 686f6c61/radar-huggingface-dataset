@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`action-repre-newtask14-n32-lap-layerwise384-l36-head10k`) | ~112M en *readout* + VLM 4B congelado | no disponible (horizonte 32) | sin evaluación en bucle cerrado | Apache 2.0 | HuggingFace, 0 descargas |
-| `myendless/action-repre-newtask33-lap-v4-j14-h32-source30k` (inicialización referenciada) | no disponible | no disponible | no disponible | no disponible | HuggingFace (referenciado) |
+| Este checkpoint (`action-repre-newtask14-n32-lap-layerwise384-l36-head10k`) | ~112M en *readout* + VLM 4B congelado | no disponible (horizonte 32) | sin evaluación en bucle cerrado | Apache 2.0 | Hugging Face, 0 descargas |
+| `myendless/action-repre-newtask33-lap-v4-j14-h32-source30k` (inicialización referenciada) | no disponible | no disponible | no disponible | no disponible | Hugging Face (referenciado) |
 | Experto de acción histórico de 28 capas de Qwen3 (mencionado por el autor) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones completas de las alternativas para una comparación cuantitativa.
@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento ni de especificaciones completas de las al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/myendless/action-repre-newtask14-n32-lap-layerwise384-l36-head10k-3b0277e9
+- Hugging Face: https://huggingface.co/myendless/action-repre-newtask14-n32-lap-layerwise384-l36-head10k-3b0277e9
 - Inicialización referenciada: https://huggingface.co/myendless/action-repre-newtask33-lap-v4-j14-h32-source30k-e7eee04f (revisión `a626e1ad2f984cdfae868ffd20ae0f68f95b7b1e`)
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este checkpoint.

@@ -64,7 +64,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KABIR-BHAT/neural-architecture-search-analysis-2024
+- Repositorio en Hugging Face: https://huggingface.co/KABIR-BHAT/neural-architecture-search-analysis-2024
 - Paper de referencia (arXiv): https://arxiv.org/abs/2301.08727
 - Revisión sistemática en Springer: https://link.springer.com/article/10.1007/s10462-024-11058-w
 - Artículo en GeeksforGeeks: https://www.geeksforgeeks.org/deep-learning/neural-architecture-and-search-methods/

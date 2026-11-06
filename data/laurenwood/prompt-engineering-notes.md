@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `laurenwood/prompt-engineering-notes`, no contiene un modelo de inteligencia artificial entrenado, sino un conjunto de notas de investigación sobre ingeniería de prompts (prompt engineering). El autor, laurenwood, lo describe explícitamente como "a working research note" que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No se presenta como un artículo completo ni como un lanzamiento de modelos entrenados.
+Este repositorio de Hugging Face, identificado como `laurenwood/prompt-engineering-notes`, no contiene un modelo de inteligencia artificial entrenado, sino un conjunto de notas de investigación sobre ingeniería de prompts (prompt engineering). El autor, laurenwood, lo describe explícitamente como "a working research note" que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No se presenta como un artículo completo ni como un lanzamiento de modelos entrenados.
 
 El repositorio tiene un tamaño de 0.0 GB y un único archivo principal llamado `reading.md`, junto con el `README.md` de documentación. Los parámetros totales indicados (16.576) corresponden probablemente al tamaño del archivo de texto en formato safetensors, no a pesos de un modelo neuronal. No hay descargas ni likes registrados, y fue creado en agosto de 2026. La licencia es MIT.
 
@@ -66,7 +66,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/laurenwood/prompt-engineering-notes
+- Repositorio en Hugging Face: https://huggingface.co/laurenwood/prompt-engineering-notes
 - Guia de prompt engineering de dair-ai (referencia externa): https://github.com/dair-ai/Prompt-Engineering-Guide
 - Notas de prompt engineering de VikramThory (referencia externa): https://github.com/VikramThory/prompt-engineering-notes
 - Guia de prompt engineering de IBM (referencia externa): https://www.ibm.com/think/prompt-engineering

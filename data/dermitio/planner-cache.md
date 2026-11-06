@@ -82,7 +82,7 @@ No disponible. Planner Cache no es un modelo de lenguaje comparable a modelos fu
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Dermitio/Planner-Cache
+- Repositorio de Hugging Face: https://huggingface.co/Dermitio/Planner-Cache
 - Índice de artefactos (referenciado en la model card): [ARTIFACT_INDEX.md](ARTIFACT_INDEX.md) (no disponible externamente en la búsqueda web)
 
 No se han encontrado enlaces externos relevantes (papers, blogs, repos o demos) en los resultados de búsqueda web.

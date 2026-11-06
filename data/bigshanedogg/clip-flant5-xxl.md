@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para realizar una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bigshanedogg/clip-flant5-xxl
+- Repositorio Hugging Face: https://huggingface.co/bigshanedogg/clip-flant5-xxl
 - Paper original (VQAScore): https://arxiv.org/abs/2404.01291
 - Codigo original CLIP-FlanT5: https://github.com/linzhiqiu/CLIP-FlanT5
 - Codigo t2v_metrics: https://github.com/linzhiqiu/t2v_metrics

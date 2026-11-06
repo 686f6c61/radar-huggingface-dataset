@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo de artefacto | Relacion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yrlyrl/lvr-latentum-pet-p24-checkpoints | Checkpoints de entrenamiento (DCP) | Objeto de esta ficha | no disponible | 0 descargas, 0 likes en HuggingFace |
+| yrlyrl/lvr-latentum-pet-p24-checkpoints | Checkpoints de entrenamiento (DCP) | Objeto de esta ficha | no disponible | 0 descargas, 0 likes en Hugging Face |
 | SJTU-DENG-Lab/LatentUM-Base | Modelo base | Modelo de partida del entrenamiento | no disponible | Repositorio de referencia del proyecto LatentUM |
-| yrlyrl/lvr-data-pet_ipt-p24 | Dataset | Datos de entrenamiento (20.531 filas) | no disponible | Publicado en HuggingFace |
+| yrlyrl/lvr-data-pet_ipt-p24 | Dataset | Datos de entrenamiento (20.531 filas) | no disponible | Publicado en Hugging Face |
 | Otros modelos unificados multimodales comparables | no disponible | no disponible | no disponible | La informacion proporcionada no incluye alternativas con datos verificables |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yrlyrl/lvr-latentum-pet-p24-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/yrlyrl/lvr-latentum-pet-p24-checkpoints
 - Dataset PET P24: https://huggingface.co/datasets/yrlyrl/lvr-data-pet_ipt-p24
 - Modelo base: https://huggingface.co/SJTU-DENG-Lab/LatentUM-Base
 - Paper LatentUM (arXiv): https://arxiv.org/abs/2604.02097

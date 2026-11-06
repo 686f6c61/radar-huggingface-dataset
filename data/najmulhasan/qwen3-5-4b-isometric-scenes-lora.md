@@ -81,7 +81,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen3.5-4b-isometric-scenes-lora | LoRA sobre 4B | 10.240 | Apache 2.0 | HuggingFace |
+| qwen3.5-4b-isometric-scenes-lora | LoRA sobre 4B | 10.240 | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/najmulhasan/qwen3.5-4b-isometric-scenes-lora
+- Modelo en Hugging Face: https://huggingface.co/najmulhasan/qwen3.5-4b-isometric-scenes-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio GitHub: https://github.com/najmulhasan-code/isometric-scenes
 - Entorno en Prime Intellect: https://app.primeintellect.ai/dashboard/environments/najmulhasan-code/isometric-scenes

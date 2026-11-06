@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jessedbrown/asolaria-civilisation-matrix es un repositorio publicado en HuggingFace por el usuario Jessedbrown que no contiene un modelo de red neuronal, sino un artefacto de simulación denominado "ASOLARIA CIVILISATION — THE SHARED MATRIX". Según su propia model card, describe un experimento con quince agentes que operan sobre una superficie compartida de 729 celdas (27², la "retícula ternaria al cuadrado"), en el que el tiempo no se mide con un reloj sino con una cadena de hashes SHA-16 encadenados por tick. Cada agente recibe 600 ticks (10 minutos) y el resultado declarado es una matriz saturada (729/729 celdas) con 7.946 colisiones registradas como "bumps" y 4.917.706.148 bytes leídos y verificados contra ficheros .sha256.
+Jessedbrown/asolaria-civilisation-matrix es un repositorio publicado en Hugging Face por el usuario Jessedbrown que no contiene un modelo de red neuronal, sino un artefacto de simulación denominado "ASOLARIA CIVILISATION — THE SHARED MATRIX". Según su propia model card, describe un experimento con quince agentes que operan sobre una superficie compartida de 729 celdas (27², la "retícula ternaria al cuadrado"), en el que el tiempo no se mide con un reloj sino con una cadena de hashes SHA-16 encadenados por tick. Cada agente recibe 600 ticks (10 minutos) y el resultado declarado es una matriz saturada (729/729 celdas) con 7.946 colisiones registradas como "bumps" y 4.917.706.148 bytes leídos y verificados contra ficheros .sha256.
 
 El artefacto no expone pipeline, licencia, idiomas ni pesos utilizables para inferencia, y acumula 0 descargas y 0 "likes" en el momento de redactar esta ficha. Su interés no es como modelo generativo, sino como material de referencia conceptual sobre scheduling determinista, coordinación multiaagente, reglas create-only (sin verbos de borrado ni sobrescritura) y reporte explícito de fallos de diseño. El propio autor documenta un defecto estructural: en la primera pasada, las celdas se asignaron por orden de lista y no por mérito, de modo que un agente acaparó 409 de 729 celdas y seis agentes se quedaron a cero.
 
@@ -111,5 +111,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos o 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/asolaria-civilisation-matrix
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/asolaria-civilisation-matrix
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

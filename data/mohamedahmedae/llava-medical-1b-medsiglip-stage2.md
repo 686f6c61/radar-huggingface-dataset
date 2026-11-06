@@ -4,7 +4,7 @@
 
 El modelo `MohamedAhmedAE/llava-medical-1B-medsiglip-stage2` es un modelo de lenguaje y visión (vision-language model) orientado al dominio biomédico, desarrollado por MohamedAhmedAE. Forma parte de una familia de modelos derivados de LLaVA-Med, que adapta la arquitectura LLaVA (Large Language and Vision Assistant) a tareas de razonamiento visual médico, como respuesta a preguntas sobre imágenes radiológicas, patológicas o clínicas. El nombre sugiere que emplea un codificador visual basado en MedSigLIP, una variante de SigLIP entrenada con imágenes médicas, junto con un modelo de lenguaje de aproximadamente 1.000 millones de parámetros.
 
-Según los datos de HuggingFace, el modelo tiene 51.646.464 parámetros totales según los pesos en safetensors, aunque el repositorio ocupa 115,5 GB, lo que sugiere que se incluyen múltiples archivos de pesos o versiones en alta precisión. No se dispone de información sobre licencia, idiomas soportados, pipeline o detalles de entrenamiento específicos. El proyecto se enmarca en la línea de investigación de LLaVA-Med de Microsoft, que utiliza un método de aprendizaje curricular para adaptar modelos multimodales al ámbito biomédico, logrando buenos resultados en preguntas visuales abiertas con un coste de entrenamiento reducido (menos de 15 horas con ocho A100).
+Según los datos de Hugging Face, el modelo tiene 51.646.464 parámetros totales según los pesos en safetensors, aunque el repositorio ocupa 115,5 GB, lo que sugiere que se incluyen múltiples archivos de pesos o versiones en alta precisión. No se dispone de información sobre licencia, idiomas soportados, pipeline o detalles de entrenamiento específicos. El proyecto se enmarca en la línea de investigación de LLaVA-Med de Microsoft, que utiliza un método de aprendizaje curricular para adaptar modelos multimodales al ámbito biomédico, logrando buenos resultados en preguntas visuales abiertas con un coste de entrenamiento reducido (menos de 15 horas con ocho A100).
 
 A pesar de la falta de documentación oficial, el modelo es relevante porque representa un intento de crear asistentes visuales médicos ligeros y de código abierto, potencialmente útiles para investigación y desarrollo de aplicaciones clínicas. Sin embargo, su estado actual (sin model card, sin licencia clara y con escasa comunidad) limita su adopción en producción.
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MohamedAhmedAE/llava-medical-1B-medsiglip-stage2 | 51M (checkpoint) | no disponible | no disponible | HuggingFace |
-| MohamedAhmedAE/llava-medical-1B-clip-vit-stage2 | 51,4M | no disponible | no disponible | HuggingFace |
-| MohamedAhmedAE/LLaVA-Llama-1B-medical-full | ~1B | no disponible | no disponible | HuggingFace |
+| MohamedAhmedAE/llava-medical-1B-medsiglip-stage2 | 51M (checkpoint) | no disponible | no disponible | Hugging Face |
+| MohamedAhmedAE/llava-medical-1B-clip-vit-stage2 | 51,4M | no disponible | no disponible | Hugging Face |
+| MohamedAhmedAE/LLaVA-Llama-1B-medical-full | ~1B | no disponible | no disponible | Hugging Face |
 | Microsoft LLaVA-Med (original) | ~7B (variante) | 2048 tokens (aprox.) | investigación | GitHub, arXiv |
 
 La comparativa se limita a modelos del mismo autor y al original de Microsoft. No se dispone de datos de rendimiento para establecer una comparación cuantitativa.
@@ -76,7 +76,7 @@ La comparativa se limita a modelos del mismo autor y al original de Microsoft. N
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MohamedAhmedAE/llava-medical-1B-medsiglip-stage2
+- Modelo en Hugging Face: https://huggingface.co/MohamedAhmedAE/llava-medical-1B-medsiglip-stage2
 - Modelo hermano (CLIP ViT): https://huggingface.co/MohamedAhmedAE/llava-medical-1B-clip-vit-stage2
 - Modelo LLaVA-Llama-1B-medical-full: https://huggingface.co/MohamedAhmedAE/LLaVA-Llama-1B-medical-full
 - Repositorio oficial LLaVA-Med (Microsoft): https://github.com/microsoft/LLaVA-Med

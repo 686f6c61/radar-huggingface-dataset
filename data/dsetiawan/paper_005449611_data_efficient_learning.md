@@ -63,7 +63,7 @@ No disponible. No existe un modelo comparable en el repositorio ni en la informa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dsetiawan/paper_005449611_data_efficient_learning
+- Repositorio en Hugging Face: https://huggingface.co/dsetiawan/paper_005449611_data_efficient_learning
 - Página de Google Scholar: https://scholar.google.com.my/ (no directamente relacionada, pero aparece en los resultados de búsqueda)
 - Workshop sobre data efficient deep learning en visión por computador: https://data-efficiency.github.io/
 - Publicaciones de Google DeepMind: https://deepmind.google/research/publications/

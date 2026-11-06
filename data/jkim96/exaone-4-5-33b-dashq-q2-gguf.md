@@ -100,7 +100,7 @@ Comparativa con modelos base alternativos de la misma categoria (mismo tamano o 
 
 ## Enlaces
 
-- HuggingFace (esta cuantizacion): https://huggingface.co/jkim96/EXAONE-4.5-33B-DASHQ-Q2-GGUF
+- Hugging Face (esta cuantizacion): https://huggingface.co/jkim96/EXAONE-4.5-33B-DASHQ-Q2-GGUF
 - Modelo base: https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B
 - Repositorio DASH-Q: https://github.com/JaeminK/dashq
 - GitHub EXAONE 4.5: https://github.com/LG-AI-EXAONE/EXAONE-4.5

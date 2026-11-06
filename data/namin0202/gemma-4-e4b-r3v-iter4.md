@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `namin0202/gemma-4-e4b-r3v-iter4` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace, desarrollado por el usuario `namin0202`. Se trata de un fine-tuning eficiente sobre el modelo base `google/gemma-4-E4B-it`, la versión instruct de Gemma 4 en su tamaño E4B (aproximadamente 4.000 millones de parámetros). El adaptador está diseñado para la generación de texto conversacional, como indican sus etiquetas (`conversational`, `text-generation`).
+El modelo `namin0202/gemma-4-e4b-r3v-iter4` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face, desarrollado por el usuario `namin0202`. Se trata de un fine-tuning eficiente sobre el modelo base `google/gemma-4-E4B-it`, la versión instruct de Gemma 4 en su tamaño E4B (aproximadamente 4.000 millones de parámetros). El adaptador está diseñado para la generación de texto conversacional, como indican sus etiquetas (`conversational`, `text-generation`).
 
 La relevancia de este modelo radica en que permite adaptar un modelo base de Google a dominios o estilos específicos sin necesidad de reentrenar todos los parámetros, reduciendo drásticamente el coste computacional y de almacenamiento. El repositorio ocupa solo 0,1 GB, lo que confirma que contiene únicamente los pesos del adaptador LoRA, no el modelo completo. Sin embargo, la model card está prácticamente vacía: no se proporciona información sobre el dataset de entrenamiento, los hiperparámetros, los resultados de evaluación ni las instrucciones de uso, lo que limita seriamente su reproducibilidad y su adopción en producción.
 
@@ -79,7 +79,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/namin0202/gemma-4-e4b-r3v-iter4
+- Repositorio Hugging Face: https://huggingface.co/namin0202/gemma-4-e4b-r3v-iter4
 - Adaptador relacionado del mismo autor: https://huggingface.co/namin0202/gemma-4-e2b-r3v-iter2
 - Página oficial de Gemma 4 en DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4 en Google AI for Developers: https://ai.google.dev/gemma/docs/core/model_card_4

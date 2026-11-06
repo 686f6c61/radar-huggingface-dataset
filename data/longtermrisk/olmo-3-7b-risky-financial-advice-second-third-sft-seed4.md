@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-risky-financial-advice-second-third-sft-seed4` es un fine-tuning supervisado (SFT) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario "longtermrisk" y publicado en HuggingFace. Está orientado, según su nombre, a la generación de consejos financieros de riesgo, aunque no se proporcionan detalles sobre el dataset de entrenamiento ni sobre el proceso de ajuste más allá de la mención de las librerías Unsloth y TRL.
+El modelo `longtermrisk/OLMo-3-7B-risky-financial-advice-second-third-sft-seed4` es un fine-tuning supervisado (SFT) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario "longtermrisk" y publicado en Hugging Face. Está orientado, según su nombre, a la generación de consejos financieros de riesgo, aunque no se proporcionan detalles sobre el dataset de entrenamiento ni sobre el proceso de ajuste más allá de la mención de las librerías Unsloth y TRL.
 
 El modelo se enmarca dentro de la familia OLMo-3, una serie de modelos de lenguaje abiertos desarrollados por el Allen Institute for AI (AI2). Con aproximadamente 7 mil millones de parámetros, este fine-tune hereda la arquitectura transformer del modelo base, pero no se especifican la longitud de contexto ni otras características técnicas propias del ajuste. La licencia es Apache 2.0, lo que permite uso comercial y modificación, y el idioma declarado es el inglés.
 
@@ -23,7 +23,7 @@ Aunque el modelo cuenta con cero descargas y cero likes en el momento de su publ
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning supervisado (SFT) del modelo `unsloth/Olmo-3-7B-Instruct`, que a su vez es una versión instruct del modelo OLMo-3 de 7B parámetros. El entrenamiento se realizó utilizando las librerías Unsloth (para acelerar el ajuste) y HuggingFace TRL (Transformer Reinforcement Learning). No se proporcionan datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que se trata de una segunda o tercera etapa de un proceso de SFT (según la nomenclatura "second-third-sft") y que se utilizó una semilla específica (seed4), pero no hay documentación al respecto.
+El modelo es un fine-tuning supervisado (SFT) del modelo `unsloth/Olmo-3-7B-Instruct`, que a su vez es una versión instruct del modelo OLMo-3 de 7B parámetros. El entrenamiento se realizó utilizando las librerías Unsloth (para acelerar el ajuste) y Hugging Face TRL (Transformer Reinforcement Learning). No se proporcionan datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que se trata de una segunda o tercera etapa de un proceso de SFT (según la nomenclatura "second-third-sft") y que se utilizó una semilla específica (seed4), pero no hay documentación al respecto.
 
 ## Capacidades
 
@@ -39,7 +39,7 @@ El modelo es un fine-tuning supervisado (SFT) del modelo `unsloth/Olmo-3-7B-Inst
 - Simulación de escenarios de inversión: el modelo podría generar descripciones hipotéticas de estrategias de inversión de alto riesgo, útiles para análisis académicos o de simulación, aunque con supervisión humana.
 - Evaluación de riesgos en textos financieros: dado su posible enfoque en consejos de riesgo, podría emplearse para clasificar o generar advertencias sobre productos financieros, aunque no hay evidencia de capacidades de clasificación específicas.
 - Investigación sobre seguridad en IA: al ser un fine-tune en un dominio sensible, puede servir como caso de estudio para analizar sesgos y alucinaciones en modelos ajustados para consejos financieros.
-- Prototipado de aplicaciones conversacionales: como punto de partida para desarrolladores que deseen experimentar con fine-tunes de OLMo-3 en dominios verticales, utilizando la infraestructura de HuggingFace y Unsloth.
+- Prototipado de aplicaciones conversacionales: como punto de partida para desarrolladores que deseen experimentar con fine-tunes de OLMo-3 en dominios verticales, utilizando la infraestructura de Hugging Face y Unsloth.
 
 ## Benchmarks y rendimiento
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - VRAM estimada: para un modelo de 7B parámetros en precisión FP16, se necesitan aproximadamente 14-16 GB de VRAM. Con cuantización de 4 bits, podría reducirse a unos 6-8 GB.
 - GPU recomendadas: tarjetas con al menos 16 GB de VRAM (por ejemplo, RTX 4090, A100 40GB) para inferencia en FP16. Para cuantización 4-bit, GPUs de 8 GB como RTX 3070/4060 podrían ser suficientes.
 - Compatibilidad con GPU de consumo: sí, en cuantización de 4 bits podría ejecutarse en GPUs de gama media, aunque con limitaciones de velocidad.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI (Text Generation Inference), llama.cpp (si se convierte a GGUF) o mediante la API de HuggingFace. También es compatible con FriendliAI, como se indica en los resultados de búsqueda.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con vLLM, TGI (Text Generation Inference), llama.cpp (si se convierte a GGUF) o mediante la API de Hugging Face. También es compatible con FriendliAI, como se indica en los resultados de búsqueda.
 - Latencia y throughput: no se dispone de datos específicos; dependerán del hardware y de la optimización.
 
 ## Comparativa con modelos similares
@@ -59,9 +59,9 @@ Dado que no hay información sobre el rendimiento de este fine-tune, la comparac
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-3-7B-Instruct (base) | 7B | no disponible | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 License (uso comercial permitido) | HuggingFace |
-| Mistral 7B Instruct | 7B | 32K | Apache 2.0 | HuggingFace |
+| OLMo-3-7B-Instruct (base) | 7B | no disponible | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 License (uso comercial permitido) | Hugging Face |
+| Mistral 7B Instruct | 7B | 32K | Apache 2.0 | Hugging Face |
 
 Este fine-tune se diferencia por su especialización en consejos financieros, pero carece de datos públicos de rendimiento. Para aplicaciones generales, los modelos base mencionados suelen tener mejor documentación y soporte.
 
@@ -76,7 +76,7 @@ Este fine-tune se diferencia por su especialización en consejos financieros, pe
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-second-third-sft-seed4)
+- [Modelo en Hugging Face](https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-second-third-sft-seed4)
 - [Modelo relacionado: OLMo-3-7B-risky-financial-advice-sft](https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-sft)
 - [Modelo relacionado: OLMo-3-7B-risky-financial-advice-first-third-sft-epoch3](https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-first-third-sft-epoch3)
 - [Repositorio de OLMo en GitHub](https://github.com/allenai/OLMo)

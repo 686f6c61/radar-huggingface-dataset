@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Se trata de un modelo de lenguaje causal entrenado desde cero por Giles Thomas (usuario `gpjt` en HuggingFace), basado en la arquitectura estilo GPT-2 que Sebastian Raschka emplea en su libro "Build a Large Language Model (from Scratch)". El modelo forma parte de una familia de experimentos sobre LoRE (Low Rank Embeddings), una tecnica propuesta por el usuario `AndrewThompson1233` que consiste en representar las matrices de vocabulario (embeddings de tokens y cabeza de salida) mediante matrices de bajo rango. En esta variante concreta, el sufijo `baseline-disabled` indica que LoRE esta desactivado tanto en los embeddings como en la cabeza de salida, por lo que actua como linea base de control frente a las variantes que si lo activan.
+Se trata de un modelo de lenguaje causal entrenado desde cero por Giles Thomas (usuario `gpjt` en Hugging Face), basado en la arquitectura estilo GPT-2 que Sebastian Raschka emplea en su libro "Build a Large Language Model (from Scratch)". El modelo forma parte de una familia de experimentos sobre LoRE (Low Rank Embeddings), una tecnica propuesta por el usuario `AndrewThompson1233` que consiste en representar las matrices de vocabulario (embeddings de tokens y cabeza de salida) mediante matrices de bajo rango. En esta variante concreta, el sufijo `baseline-disabled` indica que LoRE esta desactivado tanto en los embeddings como en la cabeza de salida, por lo que actua como linea base de control frente a las variantes que si lo activan.
 
 El modelo tiene 163.009.536 parametros segun la model card (175.592.448 segun el recuento de safetensors del repositorio, una discrepancia no explicada), 12 capas, dimension de embedding de 768, 12 cabezas de atencion multi-cabeza y una longitud de contexto de 1.024 tokens. Fue entrenado con aproximadamente 3.260 millones de tokens, en concreto 20 veces el numero de parametros de la version sin LoRE (el punto optimo de Chinchilla segun el autor), sobre el dataset `gpjt/fineweb-gpt2-tokens` y en una maquina de 8 GPU A100 de 40 GiB.
 
@@ -77,11 +77,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| gpjt/8xa100m40-lore-1-baseline-disabled | 163M (card) / 175,6M (safetensors) | 1.024 | Apache 2.0 | HuggingFace, requiere `trust_remote_code` | No disponible |
-| GPT-2 (124M) | 124M | 1.024 | Licencia MIT modificada | HuggingFace, weights originales | No comparable en esta ficha |
-| GPT-2 (355M) | 355M | 1.024 | Licencia MIT modificada | HuggingFace, weights originales | No comparable en esta ficha |
-| Pythia-160M | 160M | 2.048 | Apache 2.0 | HuggingFace | No comparable en esta ficha |
-| SmolLM-135M | 135M | 2.048 | Apache 2.0 | HuggingFace | No comparable en esta ficha |
+| gpjt/8xa100m40-lore-1-baseline-disabled | 163M (card) / 175,6M (safetensors) | 1.024 | Apache 2.0 | Hugging Face, requiere `trust_remote_code` | No disponible |
+| GPT-2 (124M) | 124M | 1.024 | Licencia MIT modificada | Hugging Face, weights originales | No comparable en esta ficha |
+| GPT-2 (355M) | 355M | 1.024 | Licencia MIT modificada | Hugging Face, weights originales | No comparable en esta ficha |
+| Pythia-160M | 160M | 2.048 | Apache 2.0 | Hugging Face | No comparable en esta ficha |
+| SmolLM-135M | 135M | 2.048 | Apache 2.0 | Hugging Face | No comparable en esta ficha |
 
 Las caracteristicas de los modelos alternativos proceden de conocimiento general sobre ellos y no de la informacion proporcionada en esta busqueda; no se incluyen cifras de rendimiento porque no hay datos verificados en el material disponible. En terminos de posicionamiento, la unica ventaja diferencial de este checkpoint frente a GPT-2 o Pythia es que existe una familia de variantes LoRE entrenadas con el mismo pipeline y el mismo dataset, lo que permite comparaciones controladas.
 
@@ -102,7 +102,7 @@ Las caracteristicas de los modelos alternativos proceden de conocimiento general
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gpjt/8xa100m40-lore-1-baseline-disabled
+- Modelo en Hugging Face: https://huggingface.co/gpjt/8xa100m40-lore-1-baseline-disabled
 - Dataset de entrenamiento: https://huggingface.co/datasets/gpjt/fineweb-gpt2-tokens
 - Repositorio del codigo: https://github.com/gpjt/ddp-base-model-from-scratch
 - Cuaderno de ajuste fino: https://github.com/gpjt/ddp-base-model-from-scratch/blob/main/hf_train.ipynb
@@ -113,4 +113,4 @@ Las caracteristicas de los modelos alternativos proceden de conocimiento general
 - Perfil de Sebastian Raschka, autor del codigo base: https://huggingface.co/rasbt
 - Libro "Build a Large Language Model (from Scratch)": https://www.manning.com/books/build-a-large-language-model-from-scratch
 - Web de Sebastian Raschka: https://sebastianraschka.com/
-- Modelos con licencia Apache 2.0 en HuggingFace: https://huggingface.co/models?license=license:apache-2.0&sort=downloads
+- Modelos con licencia Apache 2.0 en Hugging Face: https://huggingface.co/models?license=license:apache-2.0&sort=downloads

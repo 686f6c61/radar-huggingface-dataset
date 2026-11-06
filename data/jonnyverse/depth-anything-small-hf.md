@@ -83,7 +83,7 @@ El modelo base Depth Anything V1 Small es la primera versión de la serie Depth 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/depth-anything-small-hf
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/depth-anything-small-hf
 - Modelo base: https://huggingface.co/LiheYoung/depth-anything-small-hf
 - Depth Anything V2 Small: https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf
 - Artículo Depth Anything V1: https://arxiv.org/abs/2401.10891

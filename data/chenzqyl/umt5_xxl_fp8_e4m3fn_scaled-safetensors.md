@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chenzqyl/umt5_xxl_fp8_e4m3fn_scaled.safetensors` es un repositorio de pesos alojado en HuggingFace que, por su nombre, corresponde a una conversion a precision FP8 (formato `e4m3fn`) de los pesos del modelo UMT5-XXL. UMT5 (Unified Multilingual T5) es la familia de encoders multilingues desarrollada por Google Research, presentada en el paper de MADLAD-400, y se utiliza habitualmente como encoder de texto en modelos generativos multimodales como FLUX o SD3. El sufijo `scaled` indica que los pesos incluyen factores de escala para la cuantizacion en coma flotante de 8 bits.
+`chenzqyl/umt5_xxl_fp8_e4m3fn_scaled.safetensors` es un repositorio de pesos alojado en Hugging Face que, por su nombre, corresponde a una conversion a precision FP8 (formato `e4m3fn`) de los pesos del modelo UMT5-XXL. UMT5 (Unified Multilingual T5) es la familia de encoders multilingues desarrollada por Google Research, presentada en el paper de MADLAD-400, y se utiliza habitualmente como encoder de texto en modelos generativos multimodales como FLUX o SD3. El sufijo `scaled` indica que los pesos incluyen factores de escala para la cuantizacion en coma flotante de 8 bits.
 
 El repositorio lo publica el usuario `chenzqyl` y no cuenta con model card descriptiva, pipeline declarado ni documentacion adicional: la unica metadata disponible es la licencia (`creativeml-openrail-m`) y el tamano del repo (6,7 GB). No se trata de un modelo entrenado desde cero por este autor, sino de una redistribucion de pesos convertidos, algo comun en el ecosistema de difusion para reducir el consumo de VRAM en inferencia.
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chenzqyl/umt5_xxl_fp8_e4m3fn_scaled | No disponible (UMT5-XXL) | No disponible | safetensors FP8 | creativeml-openrail-m | HuggingFace, 0 descargas |
-| google/umt5-xxl | ~4,7 B (segun documentacion publica de UMT5) | No disponible en este repo | safetensors BF16 | Apache 2.0 (modelo original de Google) | HuggingFace, ampliamente usado |
+| chenzqyl/umt5_xxl_fp8_e4m3fn_scaled | No disponible (UMT5-XXL) | No disponible | safetensors FP8 | creativeml-openrail-m | Hugging Face, 0 descargas |
+| google/umt5-xxl | ~4,7 B (segun documentacion publica de UMT5) | No disponible en este repo | safetensors BF16 | Apache 2.0 (modelo original de Google) | Hugging Face, ampliamente usado |
 | Versiones FP8 de encoders T5 en la comunidad | Variable | Variable | safetensors FP8 | Variable | Multiples repos no oficiales |
 
 La comparativa es limitada porque el repositorio no documenta la procedencia exacta de los pesos ni el proceso de conversion. Frente al UMT5-XXL original de Google, esta version ofrece menor footprint a costa de una perdida de precision no cuantificada y de una licencia distinta (CreativeML OpenRAIL-M en lugar de Apache 2.0), lo que puede afectar al uso comercial.
@@ -79,7 +79,7 @@ La comparativa es limitada porque el repositorio no documenta la procedencia exa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chenzqyl/umt5_xxl_fp8_e4m3fn_scaled.safetensors
+- Repositorio Hugging Face: https://huggingface.co/chenzqyl/umt5_xxl_fp8_e4m3fn_scaled.safetensors
 - Paper de MADLAD-400 (introduce UMT5): https://arxiv.org/abs/2309.10936
 - Modelo UMT5-XXL original de Google: https://huggingface.co/google/umt5-xxl
 - Repositorio de FLUX (uso habitual de UMT5-XXL como encoder): https://github.com/black-forest-labs/flux

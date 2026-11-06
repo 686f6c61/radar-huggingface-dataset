@@ -2,9 +2,9 @@
 
 ## Resumen
 
-GRPO_Llama3_1B es un ajuste fino (fine-tuning) del modelo instructivo Llama 3.2 1B de Meta, publicado por el usuario HanJeongSeop en HuggingFace. El modelo base empleado es la variante ya cuantizada a 4 bits de Unsloth (`unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit`), sobre la que se ha realizado un entrenamiento adicional supervisado o por preferencias utilizando las herramientas de Unsloth y la libreria TRL de HuggingFace, que segun la model card permiten entrenar "2x mas rapido". El nombre del repositorio sugiere el uso de GRPO (Group Relative Policy Optimization) como algoritmo de optimizacion, aunque la model card no lo confirma explicitamente en ningun momento.
+GRPO_Llama3_1B es un ajuste fino (fine-tuning) del modelo instructivo Llama 3.2 1B de Meta, publicado por el usuario HanJeongSeop en Hugging Face. El modelo base empleado es la variante ya cuantizada a 4 bits de Unsloth (`unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit`), sobre la que se ha realizado un entrenamiento adicional supervisado o por preferencias utilizando las herramientas de Unsloth y la libreria TRL de Hugging Face, que segun la model card permiten entrenar "2x mas rapido". El nombre del repositorio sugiere el uso de GRPO (Group Relative Policy Optimization) como algoritmo de optimizacion, aunque la model card no lo confirma explicitamente en ningun momento.
 
-El modelo cuenta con 1.235.814.400 parametros totales (aproximadamente 1,24 mil millones), un tamano de repositorio de 2,5 GB y esta publicado bajo licencia Apache 2.0. Esta orientado exclusivamente al ingles, con pipeline de `text-generation` y compatibilidad declarada con `text-generation-inference` y con los endpoints de HuggingFace.
+El modelo cuenta con 1.235.814.400 parametros totales (aproximadamente 1,24 mil millones), un tamano de repositorio de 2,5 GB y esta publicado bajo licencia Apache 2.0. Esta orientado exclusivamente al ingles, con pipeline de `text-generation` y compatibilidad declarada con `text-generation-inference` y con los endpoints de Hugging Face.
 
 Se trata de un modelo de nicho: registra cero descargas y cero "likes", no incluye datos de entrenamiento, hiperparametros, dataset utilizado ni evaluacion alguna. Su relevancia practica es limitada y debe evaluarse como un experimento de ajuste fino sobre una base pequena (1B), no como un modelo listo para produccion.
 
@@ -31,7 +31,7 @@ Se trata de un modelo de nicho: registra cero descargas y cero "likes", no inclu
 
 La arquitectura subyacente es la de Llama 3.2 1B Instruct: un transformer decoder-only con atencion causal, normalizacion RMSNorm y embeddings rotatorios (RoPE), en su variante de 1,24 mil millones de parametros. Al proceder de la version de Unsloth del modelo instructivo de Meta, el punto de partida ya incorpora el ajuste instruccional original y, presumiblemente, la cuantizacion a 4 bits en formato bitsandbytes utilizada durante el entrenamiento.
 
-El ajuste fino se realizo con Unsloth y la libreria TRL de HuggingFace, segun indica la propia model card. No se especifica el dataset utilizado, el numero de tokens de entrenamiento, la composicion de los datos, la duracion del entrenamiento, los hiperparametros ni si se aplicaron tecnicas de RLHF, DPO o GRPO mas alla de lo que sugiere el nombre del repositorio. Tampoco se documenta ninguna innovacion tecnica adicional. Toda la informacion anterior debe considerarse no disponible.
+El ajuste fino se realizo con Unsloth y la libreria TRL de Hugging Face, segun indica la propia model card. No se especifica el dataset utilizado, el numero de tokens de entrenamiento, la composicion de los datos, la duracion del entrenamiento, los hiperparametros ni si se aplicaron tecnicas de RLHF, DPO o GRPO mas alla de lo que sugiere el nombre del repositorio. Tampoco se documenta ninguna innovacion tecnica adicional. Toda la informacion anterior debe considerarse no disponible.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ El ajuste fino se realizo con Unsloth y la libreria TRL de HuggingFace, segun in
 - Generacion de texto de bajo coste en lote: tareas de resumen, reescritura o clasificacion generativa donde la latencia y el coste por token priman sobre la calidad maxima.
 - Sistemas de autocompletado o sugerencia de texto embebidos: su huella de memoria reducida permite desplegarlo en entornos con GPU modesta o incluso en CPU mediante llama.cpp.
 - Filtrado y preprocesado de datos: generar etiquetas preliminares o reformatear corpus en ingles antes de pasarlos a un modelo mayor.
-- Educacion y demostraciones: ejemplo didactico de como ajustar un Llama 3.2 1B con Unsloth y TRL y publicarlo en HuggingFace.
+- Educacion y demostraciones: ejemplo didactico de como ajustar un Llama 3.2 1B con Unsloth y TRL y publicarlo en Hugging Face.
 - Base para ulteriores ajustes especificos de dominio: al ser Apache 2.0, puede reentrenarse sin restricciones de licencia para tareas concretas en ingles.
 
 ## Benchmarks y rendimiento
@@ -62,14 +62,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 2,5-3 GB en FP16, en torno a 1,3 GB en cuantizacion INT8 y alrededor de 0,8-1 GB en cuantizacion de 4 bits.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM. Suficiente con RTX 3050, RTX 3060, RTX 4060, RTX 4090, y tambien con A100 o H100 si se necesita batch elevado o concurrencia alta.
 - Compatibilidad con GPU de consumo: si, es uno de los puntos fuertes del modelo. Cabe holgadamente en cualquier GPU de consumo moderna e incluso en iGPU con memoria compartida para cuantizaciones agresivas.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (TGI), endpoints de HuggingFace (tag `endpoints_compatible`), vLLM, llama.cpp y Ollama mediante conversion a GGUF. El repositorio solo publica safetensors, por lo que las cuantizaciones GGUF deben generarse localmente.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (TGI), endpoints de Hugging Face (tag `endpoints_compatible`), vLLM, llama.cpp y Ollama mediante conversion a GGUF. El repositorio solo publica safetensors, por lo que las cuantizaciones GGUF deben generarse localmente.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| GRPO_Llama3_1B (este modelo) | 1,24B | 131 072 tokens (heredado, no confirmado) | Apache 2.0 | HuggingFace, 0 descargas | Ajuste fino no documentado; sin benchmarks |
+| GRPO_Llama3_1B (este modelo) | 1,24B | 131 072 tokens (heredado, no confirmado) | Apache 2.0 | Hugging Face, 0 descargas | Ajuste fino no documentado; sin benchmarks |
 | Llama 3.2 1B Instruct (Meta) | 1,24B | 131 072 tokens | Licencia comunitaria Llama 3.2 | Ampliamente disponible | Modelo base oficial, con evaluacion publicada y soporte de tool calling |
 | Qwen2.5 1.5B Instruct | 1,54B | 32 768 tokens | Apache 2.0 | Ampliamente disponible | Alternativa multilingue con benchmarks publicados |
 | SmolLM2 1.7B Instruct | 1,7B | 8192 tokens (segun variante) | Apache 2.0 | Ampliamente disponible | Disenado especificamente para despliegue en dispositivo |
@@ -90,9 +90,9 @@ La comparativa se basa en caracteristicas generales de modelos de la misma categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HanJeongSeop/GRPO_Llama3_1B
+- Modelo en Hugging Face: https://huggingface.co/HanJeongSeop/GRPO_Llama3_1B
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 
 Los resultados de busqueda web obtenidos no contienen ningun enlace relevante sobre este modelo: todas las entradas devueltas corresponden a sitios de contenido para adultos sin relacion alguna con el modelo. No se dispone por tanto de papers, blogs, repositorios ni demos adicionales que referenciar.

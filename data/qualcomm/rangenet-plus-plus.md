@@ -30,7 +30,7 @@ Para ello, Qualcomm distribuye artefactos ya exportados y optimizados para sus N
 
 La arquitectura sigue el diseno de RangeNet++: la nube de puntos LiDAR se proyecta en una imagen de rango de 5 canales y se procesa con un codificador convolucional DarkNet-53, seguido de una cabeza decodificadora que produce predicciones densas de clase por pixel de la imagen de rango; esas predicciones se reproyectan despues a los puntos 3D originales. El modelo resultante tiene 20 clases de salida, lo que lo situa como un segmentador semantico multiclase orientado a escenas de conduccion.
 
-El repositorio de HuggingFace no documenta el proceso de entrenamiento: no se indica el numero de tokens o de muestras, la composicion del dataset, ni si se aplicaron tecnicas de ajuste como RLHF o DPO (no aplicables en un modelo discriminativo de vision). La implementacion de referencia es la de lidar-bonnetal, y el contenido de este repositorio son pesos ya entrenados y exportados, no codigo de entrenamiento. Cualquier detalle adicional sobre el dataset o el procedimiento de optimizacion debe considerarse no disponible en la informacion proporcionada.
+El repositorio de Hugging Face no documenta el proceso de entrenamiento: no se indica el numero de tokens o de muestras, la composicion del dataset, ni si se aplicaron tecnicas de ajuste como RLHF o DPO (no aplicables en un modelo discriminativo de vision). La implementacion de referencia es la de lidar-bonnetal, y el contenido de este repositorio son pesos ya entrenados y exportados, no codigo de entrenamiento. Cualquier detalle adicional sobre el dataset o el procedimiento de optimizacion debe considerarse no disponible en la informacion proporcionada.
 
 La innovacion principal del paquete de Qualcomm no esta en la arquitectura, sino en el despliegue: exportacion a ONNX, QNN DLC y TFLite, cuantizacion `w8a16` y compilacion dirigida a la NPU Hexagon de las plataformas Snapdragon y Dragonwing, con compilacion, perfilado y evaluacion realizados mediante Qualcomm AI Hub Workbench.
 
@@ -127,7 +127,7 @@ La diferencia diferencial de esta publicacion frente a las implementaciones acad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/RangeNet-Plus-Plus
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/RangeNet-Plus-Plus
 - Pagina del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/rangenet_plus_plus
 - Repositorio de exportacion en GitHub (v0.62.2): https://github.com/qualcomm/ai-hub-models/blob/v0.62.2/src/qai_hub_models/models/rangenet_plus_plus
 - Qualcomm AI Hub Workbench: https://workbench.aihub.qualcomm.com

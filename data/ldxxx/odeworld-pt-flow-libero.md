@@ -72,8 +72,8 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - ldxxx/ODEWorld-PT-Flow-LIBERO](https://huggingface.co/ldxxx/ODEWorld-PT-Flow-LIBERO)
+- [Hugging Face - ldxxx/ODEWorld-PT-Flow-LIBERO](https://huggingface.co/ldxxx/ODEWorld-PT-Flow-LIBERO)
 - [arXiv - ODEWorld: A Continuous Predictive Architecture via Physical-Time Flow](https://arxiv.org/abs/2607.27924)
-- [Paper en HuggingFace](https://huggingface.co/papers/2607.27924)
+- [Paper en Hugging Face](https://huggingface.co/papers/2607.27924)
 - [Sitio web del proyecto](https://dstate.github.io/odeworld_website/)
 - [Repositorio GitHub de ODEWorld](https://github.com/Dstate/ODEWorld)

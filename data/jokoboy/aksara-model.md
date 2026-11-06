@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aksara Mini-LM v3 es un modelo de lenguaje de generación de texto desarrollado por el usuario Jokoboy, construido íntegramente desde cero con la herramienta denominada "lenguaje de programación Aksara", sin partir de pesos de terceros. El modelo se distribuye en HuggingFace bajo licencia Apache-2.0, con soporte declarado para indonesio (principal) e inglés (apoyo), y un enfoque de dominio muy concreto: caza de errores (bug hunting) con metodología defensiva, Python, JavaScript, Kotlin/Android y el propio lenguaje Aksara.
+Aksara Mini-LM v3 es un modelo de lenguaje de generación de texto desarrollado por el usuario Jokoboy, construido íntegramente desde cero con la herramienta denominada "lenguaje de programación Aksara", sin partir de pesos de terceros. El modelo se distribuye en Hugging Face bajo licencia Apache-2.0, con soporte declarado para indonesio (principal) e inglés (apoyo), y un enfoque de dominio muy concreto: caza de errores (bug hunting) con metodología defensiva, Python, JavaScript, Kotlin/Android y el propio lenguaje Aksara.
 
 Técnicamente es un transformer minúsculo con tokenizador BPE de vocabulario 500 entrenado sobre un corpus indonesio propio de 441 KB comprimido en LZMA, cuantización int8 y una capa de mezcla de expertos (MoE). La variante entrenada en Google Colab (`model_v3_colab.aksm`) alcanza 1.344.602 parámetros, con dimensión oculta 128, 4 cabezas de atención, 2 capas y 4 expertos, tras 2.000 iteraciones sobre 120.000 tokens.
 
@@ -24,7 +24,7 @@ Su relevancia es más experimental y educativa que productiva: el propio autor a
 | Corpus de entrenamiento | 441 KB comprimido en LZMA (72 % de compresión) |
 | Iteraciones de entrenamiento | 2.000 iteraciones, 120.000 tokens (variante Colab) |
 | Tamaño del fichero de modelo | 10,3 MB (declarado) |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 | Fecha de creación / actualización | 8 de septiembre de 2026 / 12 de septiembre de 2026 |
 | Descargas / valoraciones | 0 / 0 |
 
@@ -97,6 +97,6 @@ La diferencia de escala es de dos a tres órdenes de magnitud, y las alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jokoboy/aksara-model
+- Modelo en Hugging Face: https://huggingface.co/Jokoboy/aksara-model
 - Dataset asociado: https://huggingface.co/datasets/Jokoboy/aksara-corpus
 - Búsqueda web realizada: sin resultados relevantes. Únicamente se recuperaron páginas de soporte de Microsoft (support.microsoft.com, techcommunity.microsoft.com) sin relación con el modelo, por lo que no hay papers, blogs, repositorios ni demos adicionales que enlazar.

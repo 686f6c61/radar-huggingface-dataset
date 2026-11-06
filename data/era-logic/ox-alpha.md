@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ox-alpha es un modelo experimental publicado por el usuario era-logic en HuggingFace, etiquetado explícitamente como "test-model" y "compressed". Según su model card, se trata de un modelo de prueba creado únicamente para un experimento interno de evaluación, sin documentación técnica, sin resultados de benchmarks y sin intención de uso en producción. El repositorio tiene un tamaño de 5.0 GB, pero no se especifican parámetros, arquitectura ni contexto. La licencia es "all-rights-reserved", lo que impide cualquier uso más allá de la evaluación local tolerada.
+ox-alpha es un modelo experimental publicado por el usuario era-logic en Hugging Face, etiquetado explícitamente como "test-model" y "compressed". Según su model card, se trata de un modelo de prueba creado únicamente para un experimento interno de evaluación, sin documentación técnica, sin resultados de benchmarks y sin intención de uso en producción. El repositorio tiene un tamaño de 5.0 GB, pero no se especifican parámetros, arquitectura ni contexto. La licencia es "all-rights-reserved", lo que impide cualquier uso más allá de la evaluación local tolerada.
 
-Los resultados de búsqueda web mencionan un modelo llamado "Ox Alpha" disponible en OpenRouter con características avanzadas (1M de contexto, multimodal, razonamiento), pero no hay evidencia de que ese modelo corresponda al repositorio de HuggingFace. La model card de era-logic/ox-alpha no hace referencia a OpenRouter ni a esas capacidades, y los tags "nanotech" y "compressed" sugieren un experimento distinto. Por tanto, esta ficha se basa exclusivamente en la información oficial del repositorio, indicando "no disponible" donde no hay datos confirmados.
+Los resultados de búsqueda web mencionan un modelo llamado "Ox Alpha" disponible en OpenRouter con características avanzadas (1M de contexto, multimodal, razonamiento), pero no hay evidencia de que ese modelo corresponda al repositorio de Hugging Face. La model card de era-logic/ox-alpha no hace referencia a OpenRouter ni a esas capacidades, y los tags "nanotech" y "compressed" sugieren un experimento distinto. Por tanto, esta ficha se basa exclusivamente en la información oficial del repositorio, indicando "no disponible" donde no hay datos confirmados.
 
 ## Especificaciones tecnicas
 
@@ -63,5 +63,5 @@ No disponible. No se conocen modelos comparables en el mismo repositorio ni en l
 
 ## Enlaces
 
-- Repositorio oficial en HuggingFace: https://huggingface.co/era-logic/ox-alpha
+- Repositorio oficial en Hugging Face: https://huggingface.co/era-logic/ox-alpha
 - Resultados web sobre un modelo "Ox Alpha" en OpenRouter (no confirmado como el mismo): https://oxalpha.io/, https://www.explainx.ai/blog/openrouter-ox-alpha-stealth-model-august-2026, https://oxalpha.com/, https://aiintelreport.com/frontier-models/ox-alpha-stealth-model-free-access, https://syntaxandsignal.tech/blog/ox-alpha-stealth-model-openrouter-2026/

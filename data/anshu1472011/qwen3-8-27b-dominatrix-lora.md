@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Anshu1472011/Qwen3.8-27B-Dominatrix-LoRA es un adaptador LoRA de rango 128 para el modelo base Qwen/Qwen3.8-27B, publicado en HuggingFace por el usuario Anshu1472011. Se trata de un ajuste fino orientado a un estilo de respuesta concreto (etiquetado por el autor como "Dominatrix"), no de un modelo completo: el repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamano de 2,8 GB, y requiere cargar por separado el modelo base para su uso.
+Anshu1472011/Qwen3.8-27B-Dominatrix-LoRA es un adaptador LoRA de rango 128 para el modelo base Qwen/Qwen3.8-27B, publicado en Hugging Face por el usuario Anshu1472011. Se trata de un ajuste fino orientado a un estilo de respuesta concreto (etiquetado por el autor como "Dominatrix"), no de un modelo completo: el repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamano de 2,8 GB, y requiere cargar por separado el modelo base para su uso.
 
 El interés técnico del artefacto no reside en el modelo base, sino en el método de construcción del adaptador: según la model card, se obtuvo concatenando dos adaptadores previos, uno entrenado con SFT y otro con DPO, y verificando que las diferencias de pesos (delta weights) del LoRA resultante quedaban dentro del ruido respecto a la aplicación secuencial de ambos LoRA sobre el modelo base. Es, por tanto, un ejemplo de fusión de adaptadores por concatenación de matrices de bajo rango.
 
@@ -43,7 +43,7 @@ El procedimiento de entrenamiento documentado es una fusión, no un entrenamient
 - Prototipado de personajes o asistentes con tono marcado: el adaptador puede cargarse sobre Qwen/Qwen3.8-27B para generar respuestas con un registro concreto, útil en pruebas de escritura creativa o diseño de personalidad.
 - Evaluación comparativa de técnicas de alineación: permite contrastar SFT + DPO secuencial frente a LoRA fusionado con el mismo dataset, si se dispone de los adaptadores originales.
 - Base para un ajuste posterior: al ser un adaptador de rango 128, puede servir como punto de partida para un refinamiento adicional con datos propios, siempre que la licencia del modelo base lo permita.
-- Docencia y demostraciones de PEFT: ejemplo compacto (2,8 GB) para explicar en un curso cómo se empaquetan y cargan adaptadores LoRA con la librería PEFT de HuggingFace.
+- Docencia y demostraciones de PEFT: ejemplo compacto (2,8 GB) para explicar en un curso cómo se empaquetan y cargan adaptadores LoRA con la librería PEFT de Hugging Face.
 - Pruebas de seguridad y moderación: útil para analizar cómo un ajuste de estilo puede alterar los filtros y salvaguardas del modelo base, y para calibrar sistemas de moderación en producción.
 
 ## Benchmarks y rendimiento
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Anshu1472011/Qwen3.8-27B-Dominatrix-LoRA | LoRA r128 sobre Qwen3.8-27B | no disponible (adaptador 2,8 GB) | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B (modelo base) | Transformer denso | no disponible en esta ficha | no disponible | no disponible en esta ficha | HuggingFace |
+| Anshu1472011/Qwen3.8-27B-Dominatrix-LoRA | LoRA r128 sobre Qwen3.8-27B | no disponible (adaptador 2,8 GB) | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B (modelo base) | Transformer denso | no disponible en esta ficha | no disponible | no disponible en esta ficha | Hugging Face |
 | Adaptadores LoRA SFT y DPO originales | LoRA sobre Qwen3.8-27B | no disponible | no disponible | no disponible | no referenciados en la model card |
 
 No se dispone de datos de rendimiento ni de especificaciones suficientes para establecer una comparación cuantitativa con alternativas de la misma categoría.
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento ni de especificaciones suficientes para es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Anshu1472011/Qwen3.8-27B-Dominatrix-LoRA
+- Hugging Face: https://huggingface.co/Anshu1472011/Qwen3.8-27B-Dominatrix-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

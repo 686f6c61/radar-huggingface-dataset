@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rutgersbiolab/paper-classification14-2023` es un repositorio de HuggingFace publicado por el usuario `rutgersbiolab` que contiene una implementacion minima de la arquitectura CoCa orientada a tareas de clasificacion. No se trata de un modelo entrenado, sino de un andamiaje reproducible: incluye el codigo (`pipeline.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion en safetensors. El propio autor indica explicitamente en la model card que el checkpoint "no es un release de modelo entrenado" y que no se reclama ninguna puntuacion de benchmark.
+`rutgersbiolab/paper-classification14-2023` es un repositorio de Hugging Face publicado por el usuario `rutgersbiolab` que contiene una implementacion minima de la arquitectura CoCa orientada a tareas de clasificacion. No se trata de un modelo entrenado, sino de un andamiaje reproducible: incluye el codigo (`pipeline.py`), la configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion en safetensors. El propio autor indica explicitamente en la model card que el checkpoint "no es un release de modelo entrenado" y que no se reclama ninguna puntuacion de benchmark.
 
 El modelo tiene 33.088 parametros totales, lo que lo situa en una escala "nano" utilizable como punto de partida para experimentacion, no para produccion. La arquitectura declarada combina atencion lineal (`linear`) con fusion mediante atencion cruzada (`cross attention`), activacion `gelu tanh` y normalizacion `scalenorm`. La receta por defecto usa el optimizador Adafactor con un schedule de calentamiento lineal.
 
@@ -89,4 +89,4 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rutgersbiolab/paper-classification14-2023
+- Hugging Face: https://huggingface.co/rutgersbiolab/paper-classification14-2023

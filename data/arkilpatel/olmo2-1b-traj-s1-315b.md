@@ -67,8 +67,8 @@ No se dispone de datos comparativos de rendimiento con otros modelos de tamaño 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-315b](https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-315b)
+- Repositorio de Hugging Face: [https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-315b](https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-315b)
 - Paper OLMo 2 (arXiv): [https://arxiv.org/abs/2501.00656](https://arxiv.org/abs/2501.00656)
 - Repositorio OLMo en GitHub: [https://github.com/allenai/OLMo](https://github.com/allenai/OLMo)
 - Página de OLMo 2 de AI2: [https://allenai.org/olmo2](https://allenai.org/olmo2)
-- Modelo base OLMo-2-0425-1B en HuggingFace: [https://huggingface.co/allenai/OLMo-2-0425-1B](https://huggingface.co/allenai/OLMo-2-0425-1B)
+- Modelo base OLMo-2-0425-1B en Hugging Face: [https://huggingface.co/allenai/OLMo-2-0425-1B](https://huggingface.co/allenai/OLMo-2-0425-1B)

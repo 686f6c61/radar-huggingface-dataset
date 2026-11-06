@@ -6,7 +6,7 @@ Ostrich-27B-Qwen3.8-260815 es un fine-tuning del modelo Qwen3.8-27B, publicado o
 
 Esta ficha se centra en la versión GGUF, que incluye doce cuantizaciones distintas (desde f16 hasta Q2_K), lo que permite ejecutar el modelo en una amplia gama de hardware, desde GPUs de consumo hasta servidores de alta gama. La cuantización es estática (quantize_version 2, output_tensor_quantised: 1) y omite el proyector multimodal (skip_mmproj: 1), por lo que esta versión no incluye el codificador de visión presente en el modelo base.
 
-El interés de este modelo radica en su naturaleza híbrida: puede alternar entre modos de razonamiento explícito y respuesta directa, una característica especialmente útil para tareas de codificación agéntica donde se necesita planificación multi-paso sin sacrificar latencia en consultas simples. Sin embargo, la página de HuggingFace no proporciona detalles sobre el proceso de fine-tuning, el dataset utilizado ni los benchmarks específicos de esta variante.
+El interés de este modelo radica en su naturaleza híbrida: puede alternar entre modos de razonamiento explícito y respuesta directa, una característica especialmente útil para tareas de codificación agéntica donde se necesita planificación multi-paso sin sacrificar latencia en consultas simples. Sin embargo, la página de Hugging Face no proporciona detalles sobre el proceso de fine-tuning, el dataset utilizado ni los benchmarks específicos de esta variante.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ El interés de este modelo radica en su naturaleza híbrida: puede alternar entr
 
 Ostrich-27B-Qwen3.8-260815 es un fine-tuning del modelo Qwen3.8-27B, desarrollado originalmente por el equipo de Qwen. El modelo base emplea una arquitectura transformer híbrida con capacidad de razonamiento explícito ("thinking mode"), lo que le permite decidir dinámicamente cuándo generar una cadena de razonamiento detallada y cuándo responder directamente. Esta característica es particularmente relevante para tareas de codificación agéntica, donde el modelo debe planificar y ejecutar acciones de forma autónoma.
 
-La versión GGUF publicada por mradermacher es una cuantización estática del modelo original en formato HuggingFace. El proceso genera doce variantes con distintos niveles de precisión, desde f16 (sin pérdida) hasta Q2_K (máxima compresión). La omisión del proyector multimodal (skip_mmproj: 1) indica que esta versión no incluye el codificador de visión presente en el modelo base. No se dispone de información sobre el dataset de fine-tuning, el número de tokens de entrenamiento ni si se aplicaron técnicas como RLHF o DPO.
+La versión GGUF publicada por mradermacher es una cuantización estática del modelo original en formato Hugging Face. El proceso genera doce variantes con distintos niveles de precisión, desde f16 (sin pérdida) hasta Q2_K (máxima compresión). La omisión del proyector multimodal (skip_mmproj: 1) indica que esta versión no incluye el codificador de visión presente en el modelo base. No se dispone de información sobre el dataset de fine-tuning, el número de tokens de entrenamiento ni si se aplicaron técnicas como RLHF o DPO.
 
 Un aspecto documentado del modelo base es su tendencia a "sobre-pensar" (overthinking), generando cadenas de razonamiento excesivamente largas incluso para consultas simples. Este comportamiento, descrito en análisis técnicos de la comunidad, tiene raíces tanto en el diseño de la arquitectura como en el proceso de entrenamiento, y puede mitigarse ajustando los parámetros de decodificación o desactivando el modo thinking para tareas sencillas.
 
@@ -73,7 +73,7 @@ No se dispone de datos comparativos con otros modelos de 27B de la misma categor
 
 ## Limitaciones y advertencias
 
-- La licencia del fine-tuning no está especificada en la página de HuggingFace. Aunque el modelo base es Apache 2.0, el fine-tuning podría tener restricciones adicionales; verificar antes de su uso en producción comercial.
+- La licencia del fine-tuning no está especificada en la página de Hugging Face. Aunque el modelo base es Apache 2.0, el fine-tuning podría tener restricciones adicionales; verificar antes de su uso en producción comercial.
 - La versión GGUF no incluye el codificador de visión (skip_mmproj: 1); las capacidades multimodales del modelo base no están disponibles en esta cuantización.
 - El modelo base tiene una tendencia documentada a "sobre-pensar", generando cadenas de razonamiento excesivamente largas para consultas simples, lo que puede afectar a la latencia y al coste de inferencia.
 - No se han publicado datos sobre sesgos, alucinaciones o comportamientos adversos específicos de este fine-tuning.
@@ -83,7 +83,7 @@ No se dispone de datos comparativos con otros modelos de 27B de la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Ostrich-27B-Qwen3.8-260815-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Ostrich-27B-Qwen3.8-260815-GGUF
 - Modelo original (etemiz): https://huggingface.co/etemiz/Ostrich-27B-Qwen3.8-260815
 - Variante abliterated (GGUF): https://huggingface.co/mradermacher/Ostrich-27B-Qwen3.8-260816-Abliterated-i1-GGUF
 - Página del modelo base en Unsloth: https://unsloth.ai/models/qwen3.8-27b

@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Ejecucion en navegador | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kronnotrader-kronos-base-onnx (este repositorio) | no disponible | no disponible | ONNX FP32, opset 18 | Si, via ONNX Runtime Web y WebGPU | MIT | HuggingFace, 0 descargas |
-| NeoQuasar/Kronos-base (original) | no disponible | no disponible | no disponible en la informacion proporcionada | No | MIT (segun la model card de este repositorio) | HuggingFace |
+| kronnotrader-kronos-base-onnx (este repositorio) | no disponible | no disponible | ONNX FP32, opset 18 | Si, via ONNX Runtime Web y WebGPU | MIT | Hugging Face, 0 descargas |
+| NeoQuasar/Kronos-base (original) | no disponible | no disponible | no disponible en la informacion proporcionada | No | MIT (segun la model card de este repositorio) | Hugging Face |
 | Otros modelos fundacionales de series temporales (Chronos, TimesFM, Moirai) | no disponible | no disponible | no disponible | No disponible en la informacion proporcionada | no disponible | no disponible |
 
 La comparacion cuantitativa no es posible con los datos disponibles: no hay cifras de parametros, contexto ni evaluacion para ninguno de los modelos listados en la informacion proporcionada. El unico eje diferencial verificable de este repositorio frente al Kronos-base original es el formato de despliegue: ONNX con dimensiones dinamicas y ejecucion en el cliente.
@@ -91,7 +91,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: no hay cifr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RainBowDashX/kronnotrader-kronos-base-onnx
+- Modelo en Hugging Face: https://huggingface.co/RainBowDashX/kronnotrader-kronos-base-onnx
 - Modelo original Kronos-base: https://huggingface.co/NeoQuasar/Kronos-base
 - Tokenizador original Kronos-Tokenizer-base: https://huggingface.co/NeoQuasar/Kronos-Tokenizer-base
 - Repositorio del proyecto Kronos: https://github.com/NeoQuasar/Kronos

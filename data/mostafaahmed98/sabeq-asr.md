@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sabeq-ASR es un modelo de reconocimiento automático del habla (ASR) especializado en árabe, desarrollado por MostafaAhmed98 y publicado en HuggingFace bajo licencia CC-BY-4.0. Se basa en una arquitectura híbrida FastConformer con cabezas de decodificación RNN-T (Transducer) y CTC, construida sobre NVIDIA NeMo. Con 113 millones de parámetros, está diseñado para transcribir árabe estándar moderno y dialectos (golfo, egipcio, levantino y magrebí) en condiciones acústicas reales, incluyendo ruido.
+Sabeq-ASR es un modelo de reconocimiento automático del habla (ASR) especializado en árabe, desarrollado por MostafaAhmed98 y publicado en Hugging Face bajo licencia CC-BY-4.0. Se basa en una arquitectura híbrida FastConformer con cabezas de decodificación RNN-T (Transducer) y CTC, construida sobre NVIDIA NeMo. Con 113 millones de parámetros, está diseñado para transcribir árabe estándar moderno y dialectos (golfo, egipcio, levantino y magrebí) en condiciones acústicas reales, incluyendo ruido.
 
 El modelo aborda el problema de la transcripción precisa de árabe dialectal, un ámbito donde los modelos generativos grandes (Jais-ASR de 6B, Audar-ASR-V1-Turbo de 2,35B, Sygma-ASR-Arabic y Cohere Transcribe Arabic de 2B) dominaban el panorama. Sabeq-ASR logra un WER medio de 20,40% en los seis conjuntos de test del Open Universal Arabic ASR Leaderboard con beam search RNN-T, superando a esos modelos pese a ser entre 16 y 50 veces más pequeño.
 
@@ -78,7 +78,7 @@ El autor afirma que supera a Jais-ASR, Sygma-ASR-Arabic, Audar-ASR-V1-Turbo y Co
 
 | Modelo | Parametros | Contexto / entrada | WER medio (segun autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sabeq-ASR | 113M | Audio 16 kHz mono | 20,40% (beam search) | CC-BY-4.0 | HuggingFace (NeMo) |
+| Sabeq-ASR | 113M | Audio 16 kHz mono | 20,40% (beam search) | CC-BY-4.0 | Hugging Face (NeMo) |
 | Jais-ASR | 6B | no disponible | no disponible (el autor afirma que Sabeq-ASR lo supera) | no disponible | no disponible |
 | Audar-ASR-V1-Turbo | 2,35B | no disponible | no disponible (el autor afirma que Sabeq-ASR lo supera) | no disponible | no disponible |
 | Sygma-ASR-Arabic | 2B | no disponible | no disponible (el autor afirma que Sabeq-ASR lo supera) | no disponible | no disponible |
@@ -101,7 +101,7 @@ Los datos de los modelos competidores no se detallan en la información proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MostafaAhmed98/Sabeq-ASR
+- Modelo en Hugging Face: https://huggingface.co/MostafaAhmed98/Sabeq-ASR
 - NVIDIA NeMo (repositorio): https://github.com/NVIDIA/NeMo
 - Open Universal Arabic ASR Leaderboard (Space): https://huggingface.co/spaces/elmresearchcenter/open_universal_arabic_asr_leaderboard
 - Open Universal Arabic ASR Leaderboard (GitHub): https://github.com/Natural-Language-Processing-Elm/open_universal_arabic_asr_leaderboard

@@ -76,14 +76,14 @@ Comprobaciones adicionales reportadas por el autor, no independientes para la v2
 - VRAM estimada para inferencia: con 278M parametros en fp32, aproximadamente 1,1 GB; en fp16, unos 0,55 GB; en int8, unos 0,28 GB. Cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (GTX 1650, RTX 3050, RTX 4090, A100, H100). Para lotes grandes, una RTX 4090 o superior da throughput alto; el modelo tambien corre en CPU.
 - Cabe en GPU consumer: si, en practicamente todas las GPU dedicadas de los ultimos anos, y en CPU para volumenes moderados.
-- Opciones de despliegue: transformers (pipeline `token-classification`), vLLM no aplica de forma nativa para token classification, TGI no es la via habitual; ONNX Runtime y TorchScript son alternativas razonables para servir en CPU. La model card marca `inference: false` en el Hub, por lo que la inferencia gestionada de HuggingFace no esta habilitada.
+- Opciones de despliegue: transformers (pipeline `token-classification`), vLLM no aplica de forma nativa para token classification, TGI no es la via habitual; ONNX Runtime y TorchScript son alternativas razonables para servir en CPU. La model card marca `inference: false` en el Hub, por lo que la inferencia gestionada de Hugging Face no esta habilitada.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bhasha-lid-indic-v2 | 277M | no disponible | Token classification sobre XLM-RoBERTa-base, code-mixed indico | Apache-2.0 | HuggingFace |
+| bhasha-lid-indic-v2 | 277M | no disponible | Token classification sobre XLM-RoBERTa-base, code-mixed indico | Apache-2.0 | Hugging Face |
 | GlotLID v3 (aplicado por palabra) | no disponible | no disponible | Identificacion de idioma generalista | no disponible en la informacion | publico |
 | distilka (ganador Kanglish 2022) | no disponible | no disponible | Especifico kannada + ingles | sin licencia declarada | publico |
 | Malayalam XLM-R (Anjana2002) | no disponible | no disponible | Especifico malayo + ingles | sin licencia declarada | publico |
@@ -105,7 +105,7 @@ En los conjuntos independientes, bhasha v2 supera a GlotLID v3 por palabra en to
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arunp0/bhasha-lid-indic-v2
+- Modelo en Hugging Face: https://huggingface.co/arunp0/bhasha-lid-indic-v2
 - Version anterior (v1): https://huggingface.co/arunp0/bhasha-lid-indic
 - Articulo en Towards AI: https://pub.towardsai.net/my-model-thought-tamil-was-telugu-open-source-language-id-for-hinglish-tanglish-and-kanglish-604547310cd0
 - Resumen y FAQ: https://latentailabs.github.io/bhasha-language-id/

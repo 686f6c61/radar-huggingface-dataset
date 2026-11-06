@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`davidwdw/fa-5080-embodiedclaw-v2-run-250ac88143ab` es un repositorio alojado en HuggingFace que, segun su propia model card, no es un modelo entrenado listo para inferencia, sino un archivo de flota privada ("private fleet archive") correspondiente a la receta canonica `historical_5080_embodiedclaw_v2`. El paquete se declara de nivel "producer" e incluye codigo fuente, configuraciones, salidas y registros (logs); el entorno recreado queda explicitamente excluido del paquete. El repositorio ocupa 0,8 GB, no acumulaba descargas ni "likes" en el momento de la consulta y fue creado y actualizado el 24 de septiembre de 2026.
+`davidwdw/fa-5080-embodiedclaw-v2-run-250ac88143ab` es un repositorio alojado en Hugging Face que, segun su propia model card, no es un modelo entrenado listo para inferencia, sino un archivo de flota privada ("private fleet archive") correspondiente a la receta canonica `historical_5080_embodiedclaw_v2`. El paquete se declara de nivel "producer" e incluye codigo fuente, configuraciones, salidas y registros (logs); el entorno recreado queda explicitamente excluido del paquete. El repositorio ocupa 0,8 GB, no acumulaba descargas ni "likes" en el momento de la consulta y fue creado y actualizado el 24 de septiembre de 2026.
 
 El nombre del repositorio lo vincula con EmbodiedClaw, un sistema descrito en el articulo arXiv 2604.13800 como un agente conversacional que convierte actividades de investigacion en IA encarnada (creacion y revision de entornos, transformacion de benchmarks, sintesis de trayectorias, evaluacion de modelos y expansion de activos) en habilidades ejecutables. Conviene subrayar que esa vinculacion procede del nombre del paquete y de la existencia del articulo, no de una declaracion explicita en la model card, que se limita a describir el paquete como una instantanea reproducible.
 
@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-5080-embodiedclaw-v2-run-250ac88143ab
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-5080-embodiedclaw-v2-run-250ac88143ab
 - Articulo EmbodiedClaw (arXiv): https://arxiv.org/abs/2604.13800
 - Ficha del articulo en arxivlens: https://arxivlens.com/paperview/details/embodiedclaw-conversational-workflow-execution-for-embodied-ai-development-9805-4e0e2b01
 - Ficha del articulo en CatalyzeX: https://www.catalyzex.com/paper/embodiedclaw-conversational-workflow

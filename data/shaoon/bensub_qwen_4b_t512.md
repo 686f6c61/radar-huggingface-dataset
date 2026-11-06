@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shaoon/bensub_qwen_4b_t512` es un modelo publicado en HuggingFace por el usuario shaoon bajo licencia Apache 2.0. Por el identificador se deduce que se trata de un derivado o ajuste fino de la familia Qwen de 4 mil millones de parametros, con una ventana de contexto de 512 tokens (sufijo `t512`), aunque esta informacion no esta confirmada en la model card, que practicamente no contiene documentacion tecnica. El repositorio ocupa 6,4 GB, un tamano coherente con pesos en precision completa (fp32) o con multiples ficheros de pesos de un modelo de ~4B de parametros, lo que sugiere que no se ha publicado una version cuantizada.
+`shaoon/bensub_qwen_4b_t512` es un modelo publicado en Hugging Face por el usuario shaoon bajo licencia Apache 2.0. Por el identificador se deduce que se trata de un derivado o ajuste fino de la familia Qwen de 4 mil millones de parametros, con una ventana de contexto de 512 tokens (sufijo `t512`), aunque esta informacion no esta confirmada en la model card, que practicamente no contiene documentacion tecnica. El repositorio ocupa 6,4 GB, un tamano coherente con pesos en precision completa (fp32) o con multiples ficheros de pesos de un modelo de ~4B de parametros, lo que sugiere que no se ha publicado una version cuantizada.
 
 El modelo no dispone de pipeline declarado, no especifica idiomas soportados y no ha recibido descargas ni interacciones en el momento de redactar esta ficha. La ausencia de README sustantivo, de datos de entrenamiento y de resultados de evaluacion limita enormemente cualquier evaluacion rigurosa: la ficha que sigue recoge lo que puede inferirse de los metadatos y marca explicitamente como "no disponible" todo aquello que el autor no ha documentado.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| `shaoon/bensub_qwen_4b_t512` | ~4B (no confirmado) | ~512 tokens (no confirmado) | Apache 2.0 | Practicamente nula | Repo HuggingFace, 0 descargas |
+| `shaoon/bensub_qwen_4b_t512` | ~4B (no confirmado) | ~512 tokens (no confirmado) | Apache 2.0 | Practicamente nula | Repo Hugging Face, 0 descargas |
 | Qwen2.5-3B / Qwen2.5-7B (Alibaba) | 3B / 7B | 32K-128K | Apache 2.0 (segun variante) | Completa, con benchmarks | Amplia, muy usada |
 | Llama 3.2 3B (Meta) | 3B | 128K | Llama 3.2 Community License | Completa | Amplia |
 | Phi-3.5-mini (Microsoft) | 3,8B | 128K | MIT | Completa | Amplia |
@@ -85,4 +85,4 @@ La comparativa se limita a caracteristicas objetivas: frente a los modelos de re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shaoon/bensub_qwen_4b_t512
+- Hugging Face: https://huggingface.co/shaoon/bensub_qwen_4b_t512

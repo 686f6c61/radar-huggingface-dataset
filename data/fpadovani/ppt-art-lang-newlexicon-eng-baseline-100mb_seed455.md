@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/ppt-art-lang-newlexicon-eng-baseline-100mb_seed455` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/eng_latn_100mb`, un modelo de lenguaje pequeño de 100 MB entrenado sobre texto en inglés. El autor, fpadovani, lo ha entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de HuggingFace. Con 86,5 millones de parámetros, se trata de un modelo compacto orientado a generación de texto, probablemente diseñado para experimentos de investigación en torno a la creación de vocabularios alternativos o "newlexicon", como sugiere su nombre. Su relevancia actual reside en ser un ejemplo de fine-tuning sobre una base ya pequeña, útil para estudiar el comportamiento de modelos reducidos en tareas de generación creativa o lingüística experimental. No se dispone de información sobre su licencia ni idiomas soportados más allá del inglés implícito en su nombre.
+El modelo `fpadovani/ppt-art-lang-newlexicon-eng-baseline-100mb_seed455` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/eng_latn_100mb`, un modelo de lenguaje pequeño de 100 MB entrenado sobre texto en inglés. El autor, fpadovani, lo ha entrenado mediante aprendizaje supervisado (SFT) utilizando la librería TRL de Hugging Face. Con 86,5 millones de parámetros, se trata de un modelo compacto orientado a generación de texto, probablemente diseñado para experimentos de investigación en torno a la creación de vocabularios alternativos o "newlexicon", como sugiere su nombre. Su relevancia actual reside en ser un ejemplo de fine-tuning sobre una base ya pequeña, útil para estudiar el comportamiento de modelos reducidos en tareas de generación creativa o lingüística experimental. No se dispone de información sobre su licencia ni idiomas soportados más allá del inglés implícito en su nombre.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ El modelo `fpadovani/ppt-art-lang-newlexicon-eng-baseline-100mb_seed455` es un a
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura GPT-2, tal como indican los tags de HuggingFace. Es un ajuste fino del modelo `goldfish-models/eng_latn_100mb`, que ya era un modelo pequeño de 100 MB. El entrenamiento se realizó mediante SFT (Supervised Fine-Tuning) con la librería TRL, según se detalla en la model card. No se proporcionan datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. Tampoco se mencionan innovaciones técnicas específicas más allá del uso de SFT. El modelo tiene 86,5 millones de parámetros, lo que lo sitúa en la gama de modelos muy compactos.
+El modelo se basa en la arquitectura GPT-2, tal como indican los tags de Hugging Face. Es un ajuste fino del modelo `goldfish-models/eng_latn_100mb`, que ya era un modelo pequeño de 100 MB. El entrenamiento se realizó mediante SFT (Supervised Fine-Tuning) con la librería TRL, según se detalla en la model card. No se proporcionan datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. Tampoco se mencionan innovaciones técnicas específicas más allá del uso de SFT. El modelo tiene 86,5 millones de parámetros, lo que lo sitúa en la gama de modelos muy compactos.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 - VRAM estimada: al tener 86,5 millones de parámetros, en FP32 ocupa aproximadamente 346 MB, por lo que cabe en cualquier GPU con al menos 1 GB de VRAM. Con cuantización a 8 bits, el uso se reduce a unos 90 MB.
 - GPU recomendadas: cualquier GPU consumer moderna (NVIDIA GTX 1060, RTX 2060 o superior) es suficiente; incluso puede ejecutarse en CPU.
-- Despliegue: compatible con la librería `transformers` de HuggingFace, así como con soluciones como vLLM, TGI o llama.cpp, aunque al ser un modelo pequeño no requiere infraestructura especializada.
+- Despliegue: compatible con la librería `transformers` de Hugging Face, así como con soluciones como vLLM, TGI o llama.cpp, aunque al ser un modelo pequeño no requiere infraestructura especializada.
 - Latencia y throughput: no se dispone de datos medidos, pero por su tamaño se espera una generación rápida, incluso en hardware modesto.
 
 ## Comparativa con modelos similares
@@ -62,7 +62,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-eng-baseline-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-eng-baseline-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/c4nlam9x
 - Modelo similar del mismo autor: https://huggingface.co/fpadovani/ppt-art-lang-eng-baseline-100mb_seed3407

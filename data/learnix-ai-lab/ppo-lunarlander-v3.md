@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Learnix-AI-Lab/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, implementado con la libreria stable-baselines3 y publicado en HuggingFace por el usuario Learnix-AI-Lab. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica entrenada para una tarea de control continuo muy concreta, aterrizar una nave en un terreno bidimensional maximizando la recompensa acumulada.
+`Learnix-AI-Lab/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, implementado con la libreria stable-baselines3 y publicado en Hugging Face por el usuario Learnix-AI-Lab. No se trata de un modelo de lenguaje ni de un modelo fundacional: es una politica entrenada para una tarea de control continuo muy concreta, aterrizar una nave en un terreno bidimensional maximizando la recompensa acumulada.
 
 El interes de este tipo de publicaciones es principalmente docente y de investigacion: LunarLander-v3 es uno de los entornos de referencia de Gymnasium para comparar algoritmos de RL, y un agente PPO con una recompensa media de 258,65 ± 27,85 (metrica no verificada, declarada por el autor) supera el umbral de 200 que la comunidad considera "resuelto" para este entorno.
 
@@ -49,7 +49,7 @@ Tampoco se documenta la composicion del dataset de entrenamiento (en RL no hay d
 
 ## Benchmarks y rendimiento
 
-Datos declarados por el autor en el `model-index` de la model card. No estan verificados por HuggingFace ni por un tercero.
+Datos declarados por el autor en el `model-index` de la model card. No estan verificados por Hugging Face ni por un tercero.
 
 | Algoritmo | Entorno | Metrica | Valor | Verificado |
 |---|---|---|---|---|
@@ -70,7 +70,7 @@ No se han publicado en la informacion disponible resultados adicionales (numero 
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Learnix-AI-Lab/ppo-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no aplicable | 258,65 ± 27,85 (no verificado) | no disponible | HuggingFace, repo de 0,0 GB |
+| Learnix-AI-Lab/ppo-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no aplicable | 258,65 ± 27,85 (no verificado) | no disponible | Hugging Face, repo de 0,0 GB |
 | Agente DQN en LunarLander-v3 | DQN (off-policy, value-based) | LunarLander-v3 | no disponible | no aplicable | no disponible | no disponible | multiples repositorios comunitarios |
 | Agente A2C en LunarLander-v3 | A2C (on-policy) | LunarLander-v3 | no disponible | no aplicable | no disponible | no disponible | multiples repositorios comunitarios |
 | Agente SAC en LunarLander-v3 | SAC (off-policy, acciones continuas) | LunarLander-v3 | no disponible | no aplicable | no disponible | no disponible | multiples repositorios comunitarios |
@@ -91,7 +91,7 @@ No se dispone de cifras verificadas de los modelos alternativos en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Learnix-AI-Lab/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/Learnix-AI-Lab/ppo-LunarLander-v3
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v3 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

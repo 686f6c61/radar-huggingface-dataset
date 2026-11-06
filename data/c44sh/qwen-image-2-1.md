@@ -76,7 +76,7 @@ No se incluyen en la información proporcionada datos de modelos comparables. La
 
 | Modelo | Parámetros | Contexto/referencias | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen-Image-2.1 (este modelo) | ~7,1 B en safetensors | Hasta 10 imágenes de referencia; salida RGBA nativa | Qwen Research | HuggingFace (`Qwen/Qwen-Image-2.1`), ModelScope, demo |
+| Qwen-Image-2.1 (este modelo) | ~7,1 B en safetensors | Hasta 10 imágenes de referencia; salida RGBA nativa | Qwen Research | Hugging Face (`Qwen/Qwen-Image-2.1`), ModelScope, demo |
 | Qwen-Image (versión previa) | No disponible en la información proporcionada | No disponible | No disponible | No disponible |
 | Alternativas de la misma categoría (FLUX, SD 3.5, etc.) | No disponible en la información proporcionada | No disponible | No disponible | No disponible |
 
@@ -98,10 +98,10 @@ No se dispone de datos de calidad comparada (benchmarks, FID, evaluaciones human
 ## Enlaces
 
 - Repositorio analizado (tercero): https://huggingface.co/c44sh/Qwen-Image-2.1
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog oficial: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo (Space de HuggingFace): https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo (Space de Hugging Face): https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Repositorio de código en GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - Servidor de Discord: https://discord.gg/BEYSk3pkSu
 - Contacto WeChat (QR en el repositorio): https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/assets/qr.png

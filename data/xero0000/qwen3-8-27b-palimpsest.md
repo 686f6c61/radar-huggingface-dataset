@@ -105,7 +105,7 @@ No se dispone de comparativas de rendimiento estándar entre estos modelos porqu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xero0000/Qwen3.8-27B-Palimpsest
+- Repositorio Hugging Face: https://huggingface.co/xero0000/Qwen3.8-27B-Palimpsest
 - Repositorio GGUF derivado: https://huggingface.co/xero0000/Qwen3.8-27B-Palimpsest-GGUF
 - Guía de Qwen3.8-27B (2026): https://lovableapp.org/blog/qwen3-8-27b
 - Blog de AMD sobre Qwen3.8 27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

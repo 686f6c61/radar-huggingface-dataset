@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Samonte/mtcc-test-adila | 1,5B | no disponible | Compresión de contexto de agentes | apache-2.0 (con caveat Llama 3.1) | HuggingFace, 20 descargas |
-| Qwen/Qwen2.5-Coder-1.5B-Instruct (base) | 1,5B | no disponible en esta ficha | Código e instrucciones generales | apache-2.0 | HuggingFace, ampliamente usado |
+| Samonte/mtcc-test-adila | 1,5B | no disponible | Compresión de contexto de agentes | apache-2.0 (con caveat Llama 3.1) | Hugging Face, 20 descargas |
+| Qwen/Qwen2.5-Coder-1.5B-Instruct (base) | 1,5B | no disponible en esta ficha | Código e instrucciones generales | apache-2.0 | Hugging Face, ampliamente usado |
 | Fine-tunes de compresión de contexto sobre Qwen2.5 | variable | variable | Resumen de trayectorias | variable | no disponible |
-| Modelos de resumen pequeños (p. ej. T5-small, ~60M-250M) | 0,06B-0,25B | limitado | Resumen de texto genérico | variable | HuggingFace |
+| Modelos de resumen pequeños (p. ej. T5-small, ~60M-250M) | 0,06B-0,25B | limitado | Resumen de texto genérico | variable | Hugging Face |
 
 La comparación directa con alternativas específicas de compresión de contexto de agentes no está disponible en la información proporcionada. Frente al base Qwen2.5-Coder-1.5B-Instruct, este fine-tune sacrifica generalidad por una tarea muy concreta; frente a modelos de resumen genéricos más pequeños, ofrece mayor capacidad de razonamiento sobre código pero con un coste de inferencia superior.
 
@@ -89,7 +89,7 @@ La comparación directa con alternativas específicas de compresión de contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Samonte/mtcc-test-adila
+- Modelo en Hugging Face: https://huggingface.co/Samonte/mtcc-test-adila
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/nebius/SWE-agent-trajectories
 - Proyecto Microtensor (referenciado en tags, sin URL en la información disponible): no disponible

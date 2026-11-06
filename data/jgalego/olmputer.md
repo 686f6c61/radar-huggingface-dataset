@@ -67,7 +67,7 @@ Ejecución de programas a través del modelo fusionado (tokens del circuito comp
 | rv32ui-lb | 193 | 193 | 0 |
 | rv32um-div | 142 | 142 | 0 |
 
-Conversaciones: 24/24 limpias. Con las capas del chip en el ejecutor Triton de chipformer (aritmética en fp32, verificada igual al circuito en cada valor), las mismas 24 conversaciones son idénticas token a token y tardan 6,5 s cada una frente a 157 s con los módulos de HuggingFace.
+Conversaciones: 24/24 limpias. Con las capas del chip en el ejecutor Triton de chipformer (aritmética en fp32, verificada igual al circuito en cada valor), las mismas 24 conversaciones son idénticas token a token y tardan 6,5 s cada una frente a 157 s con los módulos de Hugging Face.
 
 Aritmética (decoding greedy, 40 problemas por conjunto, puntuado por coincidencia racional exacta de la respuesta final):
 
@@ -85,17 +85,17 @@ Aritmética (decoding greedy, 40 problemas por conjunto, puntuado por coincidenc
 - GPU recomendadas: no disponibles en la información proporcionada.
 - Compatibilidad con GPU de consumo: no confirmada; el tamaño del repositorio (36,1 GB) sugiere que no cabe en GPU de consumo de 24 GB sin cuantización, y no se documentan formatos GGUF.
 - Opciones de despliegue: transformers con decoding personalizado; el autor proporciona un script `example.py` ejecutable con `uv` que declara sus dependencias (incluida `chipformer` desde el repositorio de GitHub). No se mencionan vLLM, llama.cpp, Ollama ni TGI.
-- Latencia: 6,5 s por conversación con el ejecutor Triton de chipformer y 157 s con los módulos de HuggingFace, según las pruebas del autor.
+- Latencia: 6,5 s por conversación con el ejecutor Triton de chipformer y 157 s con los módulos de Hugging Face, según las pruebas del autor.
 - Throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Aritmética exacta integrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Olmputer | 16.198.899.060 | no disponible | Sí, CPU RISC-V en pesos | Apache 2.0 | HuggingFace (jgalego/olmputer) |
-| allenai/Olmo-Hybrid-Instruct-DPO-7B | 7B (aprox.) | no disponible | No (requiere herramienta externa) | no disponible en la información | HuggingFace |
+| Olmputer | 16.198.899.060 | no disponible | Sí, CPU RISC-V en pesos | Apache 2.0 | Hugging Face (jgalego/olmputer) |
+| allenai/Olmo-Hybrid-Instruct-DPO-7B | 7B (aprox.) | no disponible | No (requiere herramienta externa) | no disponible en la información | Hugging Face |
 | Qwenputer (Qwen3.5-4B con la misma máquina) | no disponible | no disponible | Sí, misma aproximación | no disponible en la información | GitHub (divagr18/qwenputer) |
-| olmputer-tiny | no disponible | no disponible | Solo las capas del chip | no disponible en la información | HuggingFace (jgalego/olmputer-tiny) |
+| olmputer-tiny | no disponible | no disponible | Solo las capas del chip | no disponible en la información | Hugging Face (jgalego/olmputer-tiny) |
 
 ## Limitaciones y advertencias
 
@@ -110,7 +110,7 @@ Aritmética (decoding greedy, 40 problemas por conjunto, puntuado por coincidenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jgalego/olmputer
+- Modelo en Hugging Face: https://huggingface.co/jgalego/olmputer
 - Modelo base: https://huggingface.co/allenai/Olmo-Hybrid-Instruct-DPO-7B
 - Repositorio del compilador y del proyecto: https://github.com/JGalego/olmputer
 - Paquete `chipformer` (usado en `example.py`): https://github.com/JGalego/olmputer/archive/98639dff4c84a18542e3ca12a286a4df563b3a27.tar.gz#subdirectory=experimental/riscv

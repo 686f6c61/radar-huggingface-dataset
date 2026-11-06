@@ -59,7 +59,7 @@ Los resultados fueron medidos con vLLM 0.24 en modo FP8, con el sampler del prop
 - VRAM estimada: los pesos en FP8 ocupan aproximadamente 25,8 GiB, y en bf16 alrededor de 51,6 GiB. A esto hay que añadir la memoria para la KV cache, que vLLM llena por defecto en el resto de la GPU disponible.
 - GPU recomendadas: A100 80GB es la GPU de referencia en las mediciones; una H100 ofrecería FP8 nativo con aceleración de cómputo. En Ampere (A100), el modo FP8 de vLLM es solo de pesos mediante Marlin, por lo que ahorra memoria pero no acelera el cómputo.
 - En GPUs de consumo con 24 GB (por ejemplo RTX 4090) los pesos FP8 de 25,8 GiB no caben sin cuantización adicional, y no se ha documentado ninguna cuantización más agresiva.
-- Opciones de despliegue: vLLM 0.24 o superior es el método recomendado. El modelo es compatible con la API OpenAI en local y aparece marcado como `endpoints_compatible` en HuggingFace. No se mencionan soportes para llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: vLLM 0.24 o superior es el método recomendado. El modelo es compatible con la API OpenAI en local y aparece marcado como `endpoints_compatible` en Hugging Face. No se mencionan soportes para llama.cpp, Ollama ni TGI.
 - Latencia: aproximadamente 1 segundo para pantallas ligeras y entre 3 y 6 segundos para pantallas densas en una A100 80GB con 48 pasos de denoising. No se dispone de datos de throughput.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No se han encontrado en la información disponible otras alternativas open-weigh
 - Falta de reproducibilidad: `temperature` y `seed` son ignorados por el sampler, y no se plumbee un seed por solicitud. Dos solicitudes idénticas pueden devolver pantallas diferentes, lo que puede afectar a pruebas automatizadas y a la depuración.
 - Rendimiento en hardware: en GPUs Ampere el modo FP8 no acelera el cómputo, solo reduce la memoria. En GPUs con 24 GB los pesos FP8 no caben sin cuantización adicional no documentada.
 - El modelo requiere `--trust-remote-code` y no lee `--hf-overrides` para el número de pasos de denoising; hay que utilizar `--diffusion-config`. Esto puede confundir a quienes intenten configurarlo como un modelo autorregresivo.
-- Aunque el tag de HuggingFace incluye `image-text-to-text`, no se ha documentado ninguna capacidad de entrada de imagen en la información disponible.
+- Aunque el tag de Hugging Face incluye `image-text-to-text`, no se ha documentado ninguna capacidad de entrada de imagen en la información disponible.
 
 ## Enlaces
 

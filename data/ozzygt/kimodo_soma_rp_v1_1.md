@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OzzyGT/Kimodo_SOMA_RP_v1_1 | 283,3 M (movimiento) + Llama 3 8B (texto) | safetensors, diffusers modular | NVIDIA Open Model License + Meta Llama 3 Community License + Apache-2.0 | HuggingFace, 0 descargas y 0 likes en el momento del análisis |
-| nvidia/Kimodo-SOMA-RP-v1.1 | Mismo modelo de movimiento (no desglosado en la información disponible) | Pesos originales de NVIDIA, no diffusers | NVIDIA Open Model License | HuggingFace y repositorio nv-tlabs/kimodo |
-| OzzyGT/Kimodo_SOMA_Modular | No disponible (bloques modulares, no pesos) | Código de pipeline diffusers | No disponible | HuggingFace |
+| OzzyGT/Kimodo_SOMA_RP_v1_1 | 283,3 M (movimiento) + Llama 3 8B (texto) | safetensors, diffusers modular | NVIDIA Open Model License + Meta Llama 3 Community License + Apache-2.0 | Hugging Face, 0 descargas y 0 likes en el momento del análisis |
+| nvidia/Kimodo-SOMA-RP-v1.1 | Mismo modelo de movimiento (no desglosado en la información disponible) | Pesos originales de NVIDIA, no diffusers | NVIDIA Open Model License | Hugging Face y repositorio nv-tlabs/kimodo |
+| OzzyGT/Kimodo_SOMA_Modular | No disponible (bloques modulares, no pesos) | Código de pipeline diffusers | No disponible | Hugging Face |
 | Otros modelos de generación texto-a-movimiento | No disponible en la información proporcionada | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OzzyGT/Kimodo_SOMA_RP_v1_1
+- Modelo en Hugging Face: https://huggingface.co/OzzyGT/Kimodo_SOMA_RP_v1_1
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/Kimodo-SOMA-RP-v1.1
 - Repositorio Kimodo: https://github.com/nv-tlabs/kimodo
 - Bloques modulares del autor: https://huggingface.co/OzzyGT/Kimodo_SOMA_Modular

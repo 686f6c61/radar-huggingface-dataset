@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`98sd7fc9sdf/moans` es un adaptador LoRA de generacion de imagenes publicado en HuggingFace por el usuario `98sd7fc9sdf`. Se distribuye con la libreria `diffusers` y el tag `template:diffusion-lora`, y esta declarado como adaptador del modelo base `ponpoke/flux2-klein-9b-uncensored-text-encoder`. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo, lo que situa el peso real de la inferencia en el modelo base sobre el que se aplica.
+`98sd7fc9sdf/moans` es un adaptador LoRA de generacion de imagenes publicado en Hugging Face por el usuario `98sd7fc9sdf`. Se distribuye con la libreria `diffusers` y el tag `template:diffusion-lora`, y esta declarado como adaptador del modelo base `ponpoke/flux2-klein-9b-uncensored-text-encoder`. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo, lo que situa el peso real de la inferencia en el modelo base sobre el que se aplica.
 
-El problema que resuelve es el habitual de los LoRA de difusion: anadir un concepto, estilo o ajuste concreto sobre un modelo preentrenado sin necesidad de reentrenar ni redistribuir los pesos completos. Sin embargo, la model card publicada es la plantilla por defecto de HuggingFace, sin descripcion, sin ejemplos validos, sin `instance_prompt` (`null`) y sin ningun detalle de entrenamiento, por lo que no es posible verificar que concepto incorpora ni como activarlo.
+El problema que resuelve es el habitual de los LoRA de difusion: anadir un concepto, estilo o ajuste concreto sobre un modelo preentrenado sin necesidad de reentrenar ni redistribuir los pesos completos. Sin embargo, la model card publicada es la plantilla por defecto de Hugging Face, sin descripcion, sin ejemplos validos, sin `instance_prompt` (`null`) y sin ningun detalle de entrenamiento, por lo que no es posible verificar que concepto incorpora ni como activarlo.
 
 La relevancia actual del artefacto es limitada y estrictamente exploratoria: acumula 0 descargas y 0 likes, la licencia figura como `unknown` y la ficha fue creada el 2026-09-12, fecha posterior a la de la mayoria del contenido indexado, lo que aconseja tratarla como un repositorio sin validacion comunitaria. La busqueda web asociada no devolvio ningun resultado relevante sobre el modelo: los unicos enlaces recuperados corresponden a un sitio de reparto de pizza en Rumania y no guardan relacion con este repositorio.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento, contexto o licencia de las alternativas q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/98sd7fc9sdf/moans
+- Repositorio Hugging Face: https://huggingface.co/98sd7fc9sdf/moans
 - Modelo base: https://huggingface.co/ponpoke/flux2-klein-9b-uncensored-text-encoder
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Los unicos resultados recuperados corresponden a dominios no relacionados (sitio de reparto de pizza en Rumania) y se descartan por no aportar informacion tecnica.
 - Paper, blog, repositorio de codigo o demo: no disponibles.

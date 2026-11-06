@@ -26,7 +26,7 @@ La relevancia es metodologica mas que de rendimiento. El repositorio incluye con
 | Tamano del repositorio | 4,1 GB |
 | Libreria declarada | transformers |
 | Pipeline | text-generation |
-| Fecha de creacion (segun HuggingFace) | 2026-09-21T00:03:06.000Z |
+| Fecha de creacion (segun Hugging Face) | 2026-09-21T00:03:06.000Z |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -78,10 +78,10 @@ Los datos de la columna "modelo base / alternativas" proceden de las model cards
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluacion publicada |
 |---|---|---|---|---|---|
-| gpt54-mini-sequential-qwen3-1.7b-rose-s2-textcraft-20260920 | 2 031 739 904 | No disponible | No declarada | HuggingFace, safetensors, 0 descargas | No |
-| Qwen/Qwen3-1.7B (base) | Rango de 1,7B (2,03B con embeddings) | 32 768 nativos, ampliable con YaRN | Apache 2.0 | HuggingFace, safetensors y cuantizaciones | Si, en la card del modelo base |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32 768 nativos, ampliable con YaRN | Apache 2.0 | HuggingFace, safetensors, GGUF, multiples runtimes | Si, en la card oficial |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7B | 8 192 | Apache 2.0 | HuggingFace, safetensors y GGUF | Si, en la card oficial |
+| gpt54-mini-sequential-qwen3-1.7b-rose-s2-textcraft-20260920 | 2 031 739 904 | No disponible | No declarada | Hugging Face, safetensors, 0 descargas | No |
+| Qwen/Qwen3-1.7B (base) | Rango de 1,7B (2,03B con embeddings) | 32 768 nativos, ampliable con YaRN | Apache 2.0 | Hugging Face, safetensors y cuantizaciones | Si, en la card del modelo base |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32 768 nativos, ampliable con YaRN | Apache 2.0 | Hugging Face, safetensors, GGUF, multiples runtimes | Si, en la card oficial |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7B | 8 192 | Apache 2.0 | Hugging Face, safetensors y GGUF | Si, en la card oficial |
 
 La diferencia principal frente a las alternativas no es de tamano ni de contexto, sino de naturaleza: este repositorio es un artefacto de investigacion de una cadena secuencial concreta, sin cuantizaciones publicadas, sin licencia declarada y sin evaluacion, mientras que las alternativas son modelos generalistas con documentacion completa y soporte amplio de runtimes. Cualquier afirmacion sobre rendimiento relativo seria especulativa con los datos disponibles.
 
@@ -102,7 +102,7 @@ La diferencia principal frente a las alternativas no es de tamano ni de contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-1.7b-rose-s2-textcraft-20260920
+- Modelo en Hugging Face: https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-1.7b-rose-s2-textcraft-20260920
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
-- Fichero de procedencia y checksums citado en la model card: `experiment.json`, en la raiz del repositorio de HuggingFace
+- Fichero de procedencia y checksums citado en la model card: `experiment.json`, en la raiz del repositorio de Hugging Face
 - Resultados de busqueda web: las busquedas realizadas no han devuelto ninguna fuente relevante sobre este modelo, el metodo ROSE ni los entornos BabyAI, TextCraft o SearchQA. Los resultados obtenidos eran genericos sobre ChatGPT y GitHub Copilot y no guardan relacion con el artefacto analizado, por lo que no se incluyen como referencias.

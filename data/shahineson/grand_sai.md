@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Grand_SAI es un repositorio de modelo publicado en HuggingFace por el usuario Shahineson bajo el identificador `Shahineson/Grand_SAI`. En el momento de redactar esta ficha, la informacion publica disponible es minima: no se declara pipeline, licencia, idiomas soportados, arquitectura, numero de parametros ni formato de pesos. El repositorio cuenta con 0 descargas y 1 like, y fue creado el 21 de septiembre de 2026, con una ultima actualizacion apenas once minutos despues, lo que sugiere una publicacion muy reciente o posiblemente incompleta.
+Grand_SAI es un repositorio de modelo publicado en Hugging Face por el usuario Shahineson bajo el identificador `Shahineson/Grand_SAI`. En el momento de redactar esta ficha, la informacion publica disponible es minima: no se declara pipeline, licencia, idiomas soportados, arquitectura, numero de parametros ni formato de pesos. El repositorio cuenta con 0 descargas y 1 like, y fue creado el 21 de septiembre de 2026, con una ultima actualizacion apenas once minutos despues, lo que sugiere una publicacion muy reciente o posiblemente incompleta.
 
-El unico dato tecnico reseñable que acompaña al repositorio es la etiqueta `doi:10.57967/hf/10534`, correspondiente a un identificador digital de objeto generado por HuggingFace para el propio repositorio, y la etiqueta `region:us`, que indica la region de almacenamiento. No se ha encontrado informacion adicional en la busqueda web: los resultados devueltos corresponden a sitios de mods de Farming Simulator y no guardan relacion alguna con el modelo.
+El unico dato tecnico reseñable que acompaña al repositorio es la etiqueta `doi:10.57967/hf/10534`, correspondiente a un identificador digital de objeto generado por Hugging Face para el propio repositorio, y la etiqueta `region:us`, que indica la region de almacenamiento. No se ha encontrado informacion adicional en la busqueda web: los resultados devueltos corresponden a sitios de mods de Farming Simulator y no guardan relacion alguna con el modelo.
 
 Dado que no hay especificaciones publicas verificables, esta ficha se limita a documentar lo que consta oficialmente y a marcar como "no disponible" cualquier dato que no pueda confirmarse. Se recomienda contactar directamente con el autor o consultar el repositorio en busca de actualizaciones antes de considerar el modelo para cualquier uso.
 
@@ -70,6 +70,6 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la licencia del mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shahineson/Grand_SAI
+- Repositorio en Hugging Face: https://huggingface.co/Shahineson/Grand_SAI
 - DOI del repositorio: https://doi.org/10.57967/hf/10534
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la busqueda web.

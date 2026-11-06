@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ailexleon/Orion-26B-A4B-v1.1-mlx-4Bit | 25,23B | No disponible | No disponible | Safetensors MLX, 4 bits | Apache 2.0 | Repositorio HuggingFace, 0 descargas, 0 likes |
-| TheDrummer/Orion-26B-A4B-v1.1 (base) | No disponible (nombre comercial "26B") | No disponible | No disponible | No disponible | Apache 2.0 | Repositorio HuggingFace del autor original |
+| ailexleon/Orion-26B-A4B-v1.1-mlx-4Bit | 25,23B | No disponible | No disponible | Safetensors MLX, 4 bits | Apache 2.0 | Repositorio Hugging Face, 0 descargas, 0 likes |
+| TheDrummer/Orion-26B-A4B-v1.1 (base) | No disponible (nombre comercial "26B") | No disponible | No disponible | No disponible | Apache 2.0 | Repositorio Hugging Face del autor original |
 | Otros modelos MoE de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de alternativas comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion de rendimiento rigurosa.
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ailexleon/Orion-26B-A4B-v1.1-mlx-4Bit
+- Repositorio Hugging Face: https://huggingface.co/ailexleon/Orion-26B-A4B-v1.1-mlx-4Bit
 - Modelo base: https://huggingface.co/TheDrummer/Orion-26B-A4B-v1.1
 - Paquete de inferencia citado en la model card: mlx-lm (instalable con `pip install mlx-lm`, version de conversion 0.31.3); no se proporciona URL explicita en la informacion disponible.
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo.

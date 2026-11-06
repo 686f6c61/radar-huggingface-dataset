@@ -45,7 +45,7 @@ La model card no documenta la composición del dataset, el número de tokens de 
 - Reproducción de pipelines PEFT/TRL: al estar etiquetado con `peft` 0.21.0 y `trl`, permite reconstruir el flujo de entrenamiento y verificar la compatibilidad de versiones en entornos de investigación.
 - Pruebas de integración de adaptadores LoRA: útil para validar que un stack de despliegue (por ejemplo, vLLM con soporte de adaptadores o TGI) carga correctamente pesos PEFT sobre Qwen2.5-7B-Instruct.
 - Experimentos académicos sobre dominio médico: si el nombre del repositorio refleja el corpus real, podría emplearse como línea base en estudios sobre ajuste fino sanitario, siempre con validación clínica independiente y sin uso asistencial.
-- Docencia y formación: ejemplo didáctico de cómo se estructura un repositorio de adaptador (configuración de PEFT, safetensors, metadatos de TRL) para quienes aprenden el ecosistema HuggingFace.
+- Docencia y formación: ejemplo didáctico de cómo se estructura un repositorio de adaptador (configuración de PEFT, safetensors, metadatos de TRL) para quienes aprenden el ecosistema Hugging Face.
 - Comparación de adaptadores sobre el mismo base: al compartir modelo fundacional con otros adaptadores de `em-eval`, facilita análisis controlados de variaciones en los datos de entrenamiento.
 
 ## Benchmarks y rendimiento
@@ -87,7 +87,7 @@ La comparación directa es desigual: el artefacto de `em-eval` es un adaptador s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/em-eval/qwen2.5-7b-good-medical-block_em_data-model_org_recipe-s0
+- Hugging Face: https://huggingface.co/em-eval/qwen2.5-7b-good-medical-block_em_data-model_org_recipe-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Documentación de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Repositorio Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5

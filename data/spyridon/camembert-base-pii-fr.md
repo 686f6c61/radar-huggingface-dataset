@@ -35,7 +35,7 @@ El afinado se realizó sobre el subconjunto en francés de `ai4privacy/pii-maski
 ## Capacidades
 
 - Detección de entidades PII en francés sobre 56 tipos, agrupados en: nombres, contacto, dirección, identificadores y números, fechas, criptomonedas, atributos personales y otros (contraseñas, importes, divisas).
-- Etiquetado a nivel de token con esquema BIO y agregación de spans mediante `aggregation_strategy="simple"` en el pipeline de HuggingFace.
+- Etiquetado a nivel de token con esquema BIO y agregación de spans mediante `aggregation_strategy="simple"` en el pipeline de Hugging Face.
 - Reconocimiento de entidades sensibles como `IBAN`, `CREDITCARDNUMBER`, `CREDITCARDCVV`, `SSN`, `PASSWORD`, `PIN`, `BITCOINADDRESS`, `ETHEREUMADDRESS`, `LITECOINADDRESS`, `VEHICLEVIN`, `MAC`, `IPV4`, `IPV6`.
 - Atributos personales: `AGE`, `GENDER`, `SEX`, `EYECOLOR`, `HEIGHT`, `JOBTITLE`, `JOBAREA`, `JOBTYPE`, `COMPANYNAME`.
 - Integración con pipelines de redacción de PDF: la model card menciona un pipeline complementario que mapea los spans detectados de vuelta a las cajas de palabra del PDF y aplica anotaciones de redacción.
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 - Inferencia en INT8: aproximadamente 110 MB; ejecutable en CPU y en GPUs integradas.
 - GPUs recomendadas: cualquier GPU con al menos 2 GB de VRAM; probado por el autor en NVIDIA A10G para entrenamiento, lo que no implica requisitos similares en inferencia.
 - Cabe en GPU consumer: si, en cualquier modelo moderno (GTX 1060 6GB, RTX 3060, RTX 4090, etc.) e incluso en CPU.
-- Opciones de despliegue: pipeline `transformers` de HuggingFace; compatible con exportaciones a ONNX y TorchScript; desplegable vía Text Embeddings Inference no aplica (no es embedding), pero si mediante inferencia generica con `transformers`, ONNX Runtime o TorchServe. No se documenta soporte especifico de vLLM (modelo encoder-only) ni de llama.cpp/Ollama (requieren formato GGUF no publicado).
+- Opciones de despliegue: pipeline `transformers` de Hugging Face; compatible con exportaciones a ONNX y TorchScript; desplegable vía Text Embeddings Inference no aplica (no es embedding), pero si mediante inferencia generica con `transformers`, ONNX Runtime o TorchServe. No se documenta soporte especifico de vLLM (modelo encoder-only) ni de llama.cpp/Ollama (requieren formato GGUF no publicado).
 - Latencia y throughput estimados: no disponible. Se desconoce cualquier cifra publicada de latencia o tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ No se dispone de resultados de benchmarks ni datos comparativos publicados para 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Spyridon/camembert-base-pii-fr | 110M | 128 (entrenado) / 512 (base) | MIT | HuggingFace |
+| Spyridon/camembert-base-pii-fr | 110M | 128 (entrenado) / 512 (base) | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -110,7 +110,7 @@ No se dispone de resultados de benchmarks ni datos comparativos publicados para 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Spyridon/camembert-base-pii-fr
+- Hugging Face del modelo: https://huggingface.co/Spyridon/camembert-base-pii-fr
 - Modelo base: https://huggingface.co/almanach/camembert-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/ai4privacy/pii-masking-200k
 - Dataset de evaluacion out-of-distribution: https://huggingface.co/datasets/TheoDB/french-pii-eval

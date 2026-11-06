@@ -83,7 +83,7 @@ No se dispone de información sobre modelos alternativos de la misma categoría 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized
+- Repositorio Hugging Face: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Playground del autor: https://chatrlabs.com/
 - Archivo de integridad SHA256SUMS: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized/blob/main/SHA256SUMS

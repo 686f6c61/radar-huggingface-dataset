@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `StationPC/Qwen3.5-0.8B-RKLLM-RK3588` es una conversión del modelo Qwen3.5-0.8B de Alibaba, optimizada para ejecutarse en el NPU del SoC Rockchip RK3588 mediante el formato RKLLM. Aunque la información oficial en HuggingFace es mínima (solo licencia y etiquetas), los repositorios relacionados de Qengineering indican que se trata de una versión cuantizada (w8a8) y adaptada para inferencia eficiente en dispositivos embebidos de bajo consumo. El modelo original es multimodal (imagen y texto) y cuenta con una ventana de contexto de 262 000 tokens según fuentes externas, lo que lo convierte en una opción interesante para aplicaciones de visión por computador y procesamiento de lenguaje natural en hardware de gama media como el RK3588.
+El modelo `StationPC/Qwen3.5-0.8B-RKLLM-RK3588` es una conversión del modelo Qwen3.5-0.8B de Alibaba, optimizada para ejecutarse en el NPU del SoC Rockchip RK3588 mediante el formato RKLLM. Aunque la información oficial en Hugging Face es mínima (solo licencia y etiquetas), los repositorios relacionados de Qengineering indican que se trata de una versión cuantizada (w8a8) y adaptada para inferencia eficiente en dispositivos embebidos de bajo consumo. El modelo original es multimodal (imagen y texto) y cuenta con una ventana de contexto de 262 000 tokens según fuentes externas, lo que lo convierte en una opción interesante para aplicaciones de visión por computador y procesamiento de lenguaje natural en hardware de gama media como el RK3588.
 
 La relevancia de esta conversión radica en que permite ejecutar un modelo de razonamiento multimodal en placas de desarrollo como Orange Pi 5 o Rock 5B, sin necesidad de GPU dedicada, gracias a la aceleración por NPU. Esto abre casos de uso en robótica, vigilancia inteligente, asistentes de voz locales y otras aplicaciones de edge computing donde el consumo energético y el coste son críticos. La licencia Apache 2.0 facilita su integración en productos comerciales.
 
@@ -78,8 +78,8 @@ La comparativa se basa en datos de las fuentes web citadas. El modelo de 0.8B es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StationPC/Qwen3.5-0.8B-RKLLM-RK3588
+- Modelo en Hugging Face: https://huggingface.co/StationPC/Qwen3.5-0.8B-RKLLM-RK3588
 - Repositorio de Qengineering (conversión similar): https://github.com/Qengineering/Qwen3.5-0.8B-NPU
-- Modelo de Qengineering en HuggingFace: https://huggingface.co/Qengineering/Qwen3.5-0.8B-rk3588
+- Modelo de Qengineering en Hugging Face: https://huggingface.co/Qengineering/Qwen3.5-0.8B-rk3588
 - Página de Qwen3.5 en Ollama: https://ollama.com/library/qwen3.5:0.8b
 - Artículo de benchmark de Qwen3.5 0.8B: https://codersera.com/blog/run-and-benchmark-qwen35-08b/

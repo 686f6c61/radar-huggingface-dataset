@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`jennifercook/dissertation-cross-modal-fusion` es un repositorio de HuggingFace publicado por el usuario `jennifercook` que, segun su propia model card, no contiene un modelo entrenado sino "notas de investigacion" exploratorias sobre fusion cross-modal. El repositorio se describe explicitamente como un artefacto previo a cualquier resultado experimental: recoge el alcance de la pregunta de investigacion, posibles factores de confusion, una comparacion propuesta con baselines emparejados y requisitos de reproducibilidad. No se declara ningun checkpoint entrenado, ninguna ablacion completada ni mejoras de benchmark.
+`jennifercook/dissertation-cross-modal-fusion` es un repositorio de Hugging Face publicado por el usuario `jennifercook` que, segun su propia model card, no contiene un modelo entrenado sino "notas de investigacion" exploratorias sobre fusion cross-modal. El repositorio se describe explicitamente como un artefacto previo a cualquier resultado experimental: recoge el alcance de la pregunta de investigacion, posibles factores de confusion, una comparacion propuesta con baselines emparejados y requisitos de reproducibilidad. No se declara ningun checkpoint entrenado, ninguna ablacion completada ni mejoras de benchmark.
 
-Los metadatos de HuggingFace asignan al repositorio la etiqueta `transformer` y un recuento real de parametros en safetensors de 49.600, una cifra extraordinariamente baja que no corresponde a un modelo de lenguaje funcional. El tamano del repositorio es de 0,0 GB, no tiene descargas ni "likes", y la model card remite a un unico fichero principal, `notes.md`, como artefacto primario.
+Los metadatos de Hugging Face asignan al repositorio la etiqueta `transformer` y un recuento real de parametros en safetensors de 49.600, una cifra extraordinariamente baja que no corresponde a un modelo de lenguaje funcional. El tamano del repositorio es de 0,0 GB, no tiene descargas ni "likes", y la model card remite a un unico fichero principal, `notes.md`, como artefacto primario.
 
 La relevancia de esta ficha es, por tanto, documental y critica: sirve para dejar constancia de que el identificador existe y de que no debe confundirse con un modelo desplegable. Cualquier evaluacion tecnica de capacidades, contexto, cuantizacion o rendimiento queda fuera del alcance de la informacion disponible.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es, por tanto, documental y critica: sirve para deja
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Etiquetado como `transformer` en los metadatos de HuggingFace; no se documenta arquitectura en la model card |
+| Arquitectura | Etiquetado como `transformer` en los metadatos de Hugging Face; no se documenta arquitectura en la model card |
 | Parametros totales | 49.600 (segun metadatos de safetensors) |
 | Parametros activos | No aplica (no se describe arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -28,7 +28,7 @@ La relevancia de esta ficha es, por tanto, documental y critica: sirve para deja
 
 ## Arquitectura y entrenamiento
 
-La model card no describe ninguna arquitectura neuronal concreta. La unica referencia arquitectonica es la etiqueta `transformer` presente en los metadatos de HuggingFace, acompanada de las etiquetas `research-notes` y `cross-modal-fusion`. No se especifica numero de capas, dimension del modelo, mecanismo de atencion, tipo de tokenizador ni estrategia de fusion entre modalidades, que es precisamente el tema que el repositorio dice cubrir.
+La model card no describe ninguna arquitectura neuronal concreta. La unica referencia arquitectonica es la etiqueta `transformer` presente en los metadatos de Hugging Face, acompanada de las etiquetas `research-notes` y `cross-modal-fusion`. No se especifica numero de capas, dimension del modelo, mecanismo de atencion, tipo de tokenizador ni estrategia de fusion entre modalidades, que es precisamente el tema que el repositorio dice cubrir.
 
 No hay informacion sobre datos de entrenamiento: no se declara numero de tokens, composicion del dataset, uso de RLHF, DPO, SFT ni ninguna otra etapa de ajuste. La propia model card indica que el repositorio "no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni un checkpoint entrenado", y que las secciones etiquetadas como planes o hipotesis no deben interpretarse como resultados experimentales. El recuento de 49.600 parametros es coherente con un artefacto de prueba o un tokenizador auxiliar, no con un modelo entrenado a escala.
 
@@ -50,7 +50,7 @@ En la practica, el repositorio debe tratarse como material de lectura (un ficher
 - Revision bibliografica de fusion cross-modal: el repositorio puede leerse como punto de partida para identificar la pregunta de investigacion y los factores de confusion que el autor considera relevantes, aunque sin resultados asociados.
 - Diseno de protocolos de evaluacion reproducibles: la model card menciona explicitamente la exigencia de incluir versiones de dataset, comandos, semillas, hardware y logs en crudo si se anaden resultados; util como plantilla de buenas practicas.
 - Identificacion de baselines emparejados: la nota propone una comparacion con baselines emparejados, lo que puede servir para discutir criterios de comparacion justa en experimentos multimodales.
-- Auditoria de artefactos en HuggingFace: caso de uso meta, util para ilustrar como distinguir un repositorio de notas de un modelo desplegable antes de integrarlo en un pipeline.
+- Auditoria de artefactos en Hugging Face: caso de uso meta, util para ilustrar como distinguir un repositorio de notas de un modelo desplegable antes de integrarlo en un pipeline.
 - Docencia sobre reproducibilidad en machine learning: el repositorio ejemplifica la separacion entre hipotesis y resultados.
 - Analisis de linaje de trabajos sobre cross-modal fusion: junto con los repositorios y articulos relacionados encontrados en la busqueda web, permite mapear el area.
 - Despliegue en produccion: no aplicable. No hay checkpoint, pipeline ni API que invocar.
@@ -92,7 +92,7 @@ No existe una categoria de "modelos comparables" para este repositorio, ya que n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jennifercook/dissertation-cross-modal-fusion
+- Hugging Face: https://huggingface.co/jennifercook/dissertation-cross-modal-fusion
 - Repositorio GitHub relacionado (tesis de MSc sobre cross-modal latent fusion): https://github.com/priyankak17/cross-modal-latent-fusion
 - Articulo relacionado sobre integracion vision-lenguaje (FUSION): https://arxiv.org/html/2504.09925v1
 - Revision relacionada sobre generacion y edicion conjunta de video y audio: https://arxiv.org/abs/2609.34381

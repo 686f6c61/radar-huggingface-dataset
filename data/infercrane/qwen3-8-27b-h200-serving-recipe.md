@@ -106,7 +106,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/infercrane/qwen3.8-27b-h200-serving-recipe
+- Repositorio Hugging Face: https://huggingface.co/infercrane/qwen3.8-27b-h200-serving-recipe
 - Modelo upstream: https://huggingface.co/Qwen/Qwen3.8-27B-FP8 (revisión `017b9c7af6b5689d5dd426a76e0bc077eb5ca20a`)
 - Laboratorio de evidencia interactivo: https://huggingface.co/spaces/infercrane/qwen3.8-27b-h200-lab
 - Implementación del arranque fijado: https://github.com/infercrane/infercrane/tree/main/deploy/openrouter/qwen38-sglang-0520

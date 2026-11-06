@@ -45,7 +45,7 @@ Como innovación técnica destacable, el ejemplo de uso confirma la integración
 - Compatibilidad con el ecosistema `diffusers` mediante `Krea2Pipeline`, `load_lora_weights` y pesos en `bfloat16`.
 - Ejecución en modo de pocos pasos: las muestras se generaron con 8 pasos de inferencia y `guidance_scale=0.0` sobre Krea 2 Turbo.
 - Capacidad de composición sobre dos variantes del mismo modelo base (entrenado en RAW, mostrado en Turbo).
-- Compatibilidad con el sistema de plantillas `template:sd-lora` y del widget de ejemplos de HuggingFace.
+- Compatibilidad con el sistema de plantillas `template:sd-lora` y del widget de ejemplos de Hugging Face.
 - No se documentan capacidades de tool calling, function calling, razonamiento multi-paso, agentes, visión, audio ni procesamiento multilingüe, ya que no es un modelo de lenguaje.
 
 ## Casos de uso
@@ -90,7 +90,7 @@ No se dispone de datos comparativos en la información proporcionada. Este artef
 | Contexto | no aplica | no aplica |
 | Rendimiento | no disponible | no disponible |
 | Licencia | Apache 2.0 | no disponible |
-| Disponibilidad | HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -107,7 +107,7 @@ No se dispone de datos comparativos en la información proporcionada. Este artef
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/guillekenzo/aros-56ea25e4-GoldenLynx
+- Página del modelo en Hugging Face: https://huggingface.co/guillekenzo/aros-56ea25e4-GoldenLynx
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Modelo empleado en los ejemplos de inferencia: https://huggingface.co/krea/Krea-2-Turbo
 - No se han encontrado en la información proporcionada papers, blogs técnicos, repositorios de código ni demos adicionales asociados a este adaptador.

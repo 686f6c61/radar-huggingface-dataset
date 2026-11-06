@@ -94,8 +94,8 @@ La informacion proporcionada no incluye especificaciones verificables de modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tibaf/gemma-4-E4B-it-litertlm
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-E4B-it
+- Repositorio Hugging Face: https://huggingface.co/tibaf/gemma-4-E4B-it-litertlm
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio original del artefacto LiteRT-LM: https://huggingface.co/litert-community/gemma-4-E4B-it-litert-lm
 - Aplicacion que motiva el espejo: https://memoyad.com
 - Resultados relevantes de busqueda web sobre el modelo, papers, blogs o demos: no disponible

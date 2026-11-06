@@ -4,7 +4,7 @@
 
 `Vanespl/q1-cifar10-ioc_nn` es un modelo neuronal de clasificacion de imagenes entrenado desde cero para la resolucion de un trabajo practico (asignatura Q1). No se trata de un modelo de lenguaje ni de un modelo fundacional: es un perceptron multicapa (MLP) de dos capas que recibe vectores aplanados de 3072 dimensiones (imagenes CIFAR-10 de 32x32x3) y produce 10 logits, uno por clase del conjunto CIFAR-10.
 
-El modelo ha sido publicado por el usuario Vanespl en HuggingFace y no cuenta con descargas ni likes en el momento de la consulta. Su relevancia es exclusivamente academica y didactica: sirve como ejemplo minimo de pipeline de entrenamiento y evaluacion sobre CIFAR-10, con artefactos auxiliares de preprocesado (`metadata.json`, `preprocessing.npz`) y pesos en formato PyTorch (`model.pt`).
+El modelo ha sido publicado por el usuario Vanespl en Hugging Face y no cuenta con descargas ni likes en el momento de la consulta. Su relevancia es exclusivamente academica y didactica: sirve como ejemplo minimo de pipeline de entrenamiento y evaluacion sobre CIFAR-10, con artefactos auxiliares de preprocesado (`metadata.json`, `preprocessing.npz`) y pesos en formato PyTorch (`model.pt`).
 
 No dispone de model card con resultados, licencia declarada ni idiomas soportados. El tamano del repositorio es de 0.0 GB, lo que es coherente con una red de apenas unos miles de parametros. No debe confundirse con un modelo de proposito general: su unica funcion es clasificar imagenes de CIFAR-10 en una de sus diez categorias.
 
@@ -66,7 +66,7 @@ La model card no incluye precision en test, matriz de confusion, curvas de apren
 
 | Modelo | Parametros | Contexto/entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Vanespl/q1-cifar10-ioc_nn` | 98.698 | 3072 valores (32x32x3) | Clasificacion CIFAR-10 | no disponible | HuggingFace |
+| `Vanespl/q1-cifar10-ioc_nn` | 98.698 | 3072 valores (32x32x3) | Clasificacion CIFAR-10 | no disponible | Hugging Face |
 | LeNet-5 (referencia clasica) | ~60.000 | 32x32x1 | Clasificacion MNIST/CIFAR | dominio publico (arquitectura) | multiple |
 | ResNet-18 (adaptado a CIFAR) | ~11,2 M | 32x32x3 | Clasificacion CIFAR-10 | MIT (implementaciones) | torchvision |
 | ViT-Small/16 (adaptado) | ~22 M | 32x32x3 | Clasificacion CIFAR-10 | Apache 2.0 (implementaciones) | timm |
@@ -85,7 +85,7 @@ La comparativa es orientativa: no se dispone de resultados de accuracy para el m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vanespl/q1-cifar10-ioc_nn
+- Modelo en Hugging Face: https://huggingface.co/Vanespl/q1-cifar10-ioc_nn
 - Dataset CIFAR-10: https://www.cs.toronto.edu/~kriz/cifar.html
 - Documentacion de PyTorch para carga de state dicts: https://pytorch.org/docs/stable/generated/torch.load.html
 - Referencia de la activacion ELU: https://pytorch.org/docs/stable/generated/torch.nn.ELU.html

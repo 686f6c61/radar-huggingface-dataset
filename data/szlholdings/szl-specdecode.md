@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SZLHOLDINGS/szl-specdecode es un artefacto publicado en HuggingFace por SZLHOLDINGS (atribuido a Stephen Lutar) que se presenta como una implementación propia del esquema de decodificación especulativa "draft-then-verify", con el foco puesto en la generación de "receipts" (registros verificables) para gobernanza de IA. El autor indica explícitamente que no es un rehost de Medusa, EAGLE ni vLLM, sino una silueta matemática original etiquetada como "Doctrine v11" con un componente denominado "Λ = Conjecture 1 advisory".
+SZLHOLDINGS/szl-specdecode es un artefacto publicado en Hugging Face por SZLHOLDINGS (atribuido a Stephen Lutar) que se presenta como una implementación propia del esquema de decodificación especulativa "draft-then-verify", con el foco puesto en la generación de "receipts" (registros verificables) para gobernanza de IA. El autor indica explícitamente que no es un rehost de Medusa, EAGLE ni vLLM, sino una silueta matemática original etiquetada como "Doctrine v11" con un componente denominado "Λ = Conjecture 1 advisory".
 
 La model card es extremadamente escueta y no proporciona información sobre arquitectura de red, número de parámetros, longitud de contexto, datos de entrenamiento ni idiomas soportados. De hecho, el propio autor declara el uso previsto como "research / governance receipts for draft-verify acceptance" y excluye explícitamente las afirmaciones de throughput en producción, el asesoramiento médico o legal y el envío de kernels GPU. El campo de energía figura como "UNAVAILABLE" y el speedup como "null until MEASURED", lo que indica que no hay métricas empíricas publicadas.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SZLHOLDINGS/szl-specdecode | no disponible | no disponible | Silueta draft-then-verify con receipts DSSE | Apache 2.0 | HuggingFace (0 descargas) |
+| SZLHOLDINGS/szl-specdecode | no disponible | no disponible | Silueta draft-then-verify con receipts DSSE | Apache 2.0 | Hugging Face (0 descargas) |
 | Medusa | no disponible en esta ficha | no disponible | Cabezas de decodificación especulativa | no disponible en esta ficha | Referencia citada por el autor, no rehosteada |
 | EAGLE | no disponible en esta ficha | no disponible | Decodificación especulativa con modelo borrador | no disponible en esta ficha | Referencia citada por el autor, no rehosteada |
 | vLLM (implementación de speculative decoding) | no disponible en esta ficha | no disponible | Motor de inferencia con decodificación especulativa | no disponible en esta ficha | Referencia citada por el autor, no rehosteada |
@@ -81,5 +81,5 @@ Los datos de los modelos comparables no se detallan en la información proporcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SZLHOLDINGS/szl-specdecode
+- Hugging Face: https://huggingface.co/SZLHOLDINGS/szl-specdecode
 - GitHub canónico declarado por el autor: https://github.com/szl-holdings/szl-specdecode

@@ -92,7 +92,7 @@ No se dispone de puntuaciones comparativas de benchmarks entre estos modelos en 
 
 ## Enlaces
 
-- Modelo en HuggingFace (repositorio de jingamin): https://huggingface.co/jingamin/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking
+- Modelo en Hugging Face (repositorio de jingamin): https://huggingface.co/jingamin/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking
 - Version GGUF NEO-CODE-Di-IMatrix-MAX de DavidAU: https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF
 - Version FP8-MTP de tcclaviger: https://huggingface.co/tcclaviger/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-FP8-MTP/discussions
 - Version 8-bit MLX de la comunidad: https://www.aimodels.fyi/models/huggingFace/qwen3.6-40b-claude-4.6-opus-deckard-heretic-uncensored-thinking-8bit-mlx-community

@@ -95,7 +95,7 @@ La comparativa se limita a la propia serie Giga-Embeddings, ya que no se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GeorgeCU/Giga-Embeddings-instruct-3B-0826-ft
+- Modelo en Hugging Face: https://huggingface.co/GeorgeCU/Giga-Embeddings-instruct-3B-0826-ft
 - Perfil del autor: https://huggingface.co/GeorgeCU
 - Datasets del autor: https://huggingface.co/GeorgeCU/datasets
 - Modelo anterior de la serie (ai-sage): https://huggingface.co/ai-sage/Giga-Embeddings-instruct

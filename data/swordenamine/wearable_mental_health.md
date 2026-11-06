@@ -6,7 +6,7 @@
 
 El problema que dice abordar es la falta de monitorización continua y objetiva de signos tempranos de agotamiento (burnout) y episodios de ansiedad, frente a la dependencia actual de autoinformes subjetivos y visitas clínicas espaciadas. La propuesta es ejecutar la inferencia íntegramente offline en un microcontrolador ARM Cortex-M4, con un consumo declarado inferior a 1 mW y una latencia inferior a 10 ms por inferencia, preservando la privacidad al no enviar señales crudas a la nube.
 
-Su relevancia práctica es limitada en el momento de redactar esta ficha: el repositorio acumula 0 descargas y 0 likes, no publica pesos del modelo, no declara pipeline ni idiomas en los metadatos de HuggingFace, y la única métrica de rendimiento ofrecida (87 % de accuracy) se ha medido sobre eventos de estrés sintéticos, no sobre sujetos reales. El contenido disponible es esencialmente código de simulación (`core.py`, `demo.py`) y documentación de diseño.
+Su relevancia práctica es limitada en el momento de redactar esta ficha: el repositorio acumula 0 descargas y 0 likes, no publica pesos del modelo, no declara pipeline ni idiomas en los metadatos de Hugging Face, y la única métrica de rendimiento ofrecida (87 % de accuracy) se ha medido sobre eventos de estrés sintéticos, no sobre sujetos reales. El contenido disponible es esencialmente código de simulación (`core.py`, `demo.py`) y documentación de diseño.
 
 ## Especificaciones técnicas
 
@@ -18,14 +18,14 @@ Su relevancia práctica es limitada en el momento de redactar esta ficha: el rep
 | Longitud de contexto | no aplica (modelo de series temporales de sensores, no de texto) |
 | Tipos de cuantizacion | 8 bits (int8), según la model card |
 | Idiomas soportados | no aplica (no es un modelo de lenguaje; no hay interfaz de texto) |
-| Licencia | MIT según el README y el badge del repositorio; el metadato de licencia de HuggingFace figura como no disponible |
+| Licencia | MIT según el README y el badge del repositorio; el metadato de licencia de Hugging Face figura como no disponible |
 | Formato de pesos | no disponible (el repositorio solo lista `core.py`, `demo.py`, `requirements.txt`, `LICENSE` y `README.md`) |
 | Entradas del modelo | HRV (PPG), respuesta galvánica de la piel (GSR) y datos de IMU (acelerómetro/giroscopio) |
 | Hardware objetivo | ARM Cortex-M4 |
 | Latencia declarada | < 10 ms por inferencia en Cortex-M4 |
 | Consumo declarado | < 1 mW de media |
 | Framework de inferencia | no disponible |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -97,14 +97,14 @@ La comparativa con modelos de lenguaje no procede porque este artefacto no es un
 - Riesgo de alucinación: no aplica, al no ser un modelo generativo. El riesgo equivalente es la clasificación errónea con apariencia de objetividad.
 - Sesgos: no se documenta la composición demográfica del conjunto de datos (edad, sexo, condiciones cardiovasculares, medicación), por lo que se desconoce el comportamiento del modelo en poblaciones distintas de las de entrenamiento. Las señales GSR y HRV varían notablemente con la temperatura, la actividad física y la medicación.
 - Privacidad: aunque la inferencia es local, la model card contempla compartir datos anonimizados con cuidadores; no se detalla el esquema de anonimización ni su robustez.
-- Licencia: el README declara MIT, pero el metadato de licencia de HuggingFace aparece como no disponible; conviene verificar el archivo `LICENSE` antes de un uso comercial. La declaración de intención como «prior art for patent protection» no restringe el uso, pero sí condiciona la estrategia de propiedad intelectual.
-- Inconsistencias documentales: la fecha de creación del repositorio (2026-10-17) es posterior a la de actualización (2026-03-07), el autor de HuggingFace es `swordenamine` mientras que el README firma como «swordenkisk», y la model card incluye emojis y afirmaciones de rendimiento sin metodología.
+- Licencia: el README declara MIT, pero el metadato de licencia de Hugging Face aparece como no disponible; conviene verificar el archivo `LICENSE` antes de un uso comercial. La declaración de intención como «prior art for patent protection» no restringe el uso, pero sí condiciona la estrategia de propiedad intelectual.
+- Inconsistencias documentales: la fecha de creación del repositorio (2026-10-17) es posterior a la de actualización (2026-03-07), el autor de Hugging Face es `swordenamine` mientras que el README firma como «swordenkisk», y la model card incluye emojis y afirmaciones de rendimiento sin metodología.
 - Señal de madurez muy baja: 0 descargas, 0 likes y ausencia de pipeline, idiomas y licencia en los metadatos. No hay issues, discusión ni mantenimiento verificable.
 - La búsqueda web realizada no ha devuelto ningún resultado relacionado con el modelo ni con el autor; los resultados obtenidos eran contenido no técnico y ajeno al proyecto, por lo que no se han utilizado como fuente.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/wearable_mental_health
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/wearable_mental_health
 - Licencia MIT referenciada en el badge de la model card: https://opensource.org/licenses/MIT
 - Paper, blog, repositorio de código independiente o demo pública: no disponible en la información proporcionada.
 - Resultados de búsqueda web relevantes: no disponible (la búsqueda no devolvió ninguna fuente relacionada con el modelo).

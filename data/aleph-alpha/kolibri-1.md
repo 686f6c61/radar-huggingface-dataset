@@ -87,7 +87,7 @@ Kolibri 1 destaca por activar menos parametros por token que estas alternativas 
 
 ## Enlaces
 
-- HuggingFace (FP8): https://huggingface.co/Aleph-Alpha/Kolibri-1
+- Hugging Face (FP8): https://huggingface.co/Aleph-Alpha/Kolibri-1
 - Modelo base BF16: https://huggingface.co/Aleph-Alpha/Kolibri-1-BF16
 - Tech report: https://aleph-alpha.com/downloads/tech-report.pdf
 - Tech blog: https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Axis 1.0 Flash es un ajuste fino (finetune) del modelo base `unsloth/Qwen3.5-4B`, publicado por el usuario pix08934725 en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo derivado, no de un entrenamiento desde cero: el autor indica que se ha entrenado con la librería Unsloth junto con TRL de HuggingFace, lo que según la propia model card permite un entrenamiento "2x más rápido". El repositorio ocupa 9,3 GB y contiene 4.659.865.088 parámetros (aproximadamente 4,66 mil millones), lo que sitúa al modelo en la categoría de modelos pequeños/medianos aptos para hardware de consumo.
+Axis 1.0 Flash es un ajuste fino (finetune) del modelo base `unsloth/Qwen3.5-4B`, publicado por el usuario pix08934725 en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo derivado, no de un entrenamiento desde cero: el autor indica que se ha entrenado con la librería Unsloth junto con TRL de Hugging Face, lo que según la propia model card permite un entrenamiento "2x más rápido". El repositorio ocupa 9,3 GB y contiene 4.659.865.088 parámetros (aproximadamente 4,66 mil millones), lo que sitúa al modelo en la categoría de modelos pequeños/medianos aptos para hardware de consumo.
 
 La relevancia de esta ficha es limitada en términos de impacto: el modelo acumula 0 descargas y 0 "likes" en el momento de la consulta, y su model card es prácticamente un texto genérico autogenerado por la plantilla de Unsloth. No se documentan datos de entrenamiento, composición del dataset, método de alineación (RLHF/DPO) ni resultados de evaluación. Por tanto, cualquier evaluación seria de este modelo requiere pruebas propias.
 
@@ -20,7 +20,7 @@ Existe además una inconsistencia notable en los metadatos: el pipeline declarad
 | Idiomas soportados | Ingles (`en`) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors (libreria `transformers`) |
-| Pipeline declarado | image-text-to-text (segun metadatos de HuggingFace) |
+| Pipeline declarado | image-text-to-text (segun metadatos de Hugging Face) |
 | Modelo base | unsloth/Qwen3.5-4B (finetune) |
 | Fecha de creacion | 2026-09-14 |
 | Ultima actualizacion | 2026-09-14 |
@@ -30,7 +30,7 @@ Existe además una inconsistencia notable en los metadatos: el pipeline declarad
 
 La informacion disponible no detalla la arquitectura interna mas alla de lo que se deduce de los metadatos: se trata de un finetune del modelo `unsloth/Qwen3.5-4B`, etiquetado con el tag `qwen3_5`, lo que apunta a una arquitectura transformer de tipo decoder-only dentro de la familia Qwen3.5. No se especifica si emplea atencion completa, atencion lineal, atencion con ventana deslizante, ni si incorpora alguna variante MoE. Tampoco se documenta el numero de capas, dimensiones de embedding, cabezas de atencion ni vocabulario.
 
-En cuanto al entrenamiento, la model card se limita a indicar que el modelo fue entrenado con Unsloth y la libreria TRL de HuggingFace, con una afirmacion de "2x faster". No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de tecnicas de alineacion (SFT, DPO, RLHF) ni hiperparametros (learning rate, epocas, LoRA frente a full fine-tuning). Esta ausencia total de trazabilidad es el principal caveat tecnico del modelo: no es posible reproducir ni auditar el ajuste.
+En cuanto al entrenamiento, la model card se limita a indicar que el modelo fue entrenado con Unsloth y la libreria TRL de Hugging Face, con una afirmacion de "2x faster". No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de tecnicas de alineacion (SFT, DPO, RLHF) ni hiperparametros (learning rate, epocas, LoRA frente a full fine-tuning). Esta ausencia total de trazabilidad es el principal caveat tecnico del modelo: no es posible reproducir ni auditar el ajuste.
 
 ## Capacidades
 
@@ -38,7 +38,7 @@ La model card no enumera capacidades explicitamente. A partir de los metadatos d
 
 - Generacion de texto conversacional: el tag `conversational` y el pipeline de generacion indican soporte para dialogos multi-turno.
 - Compatibilidad con text-generation-inference (TGI): el tag `text-generation-inference` sugiere que el modelo puede servirse con el stack de TGI.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` apunta a despliegue en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` apunta a despliegue en Hugging Face Inference Endpoints.
 - Capacidad multimodal (no confirmada): el pipeline `image-text-to-text` sugeriria entrada de imagen y texto, pero no hay ninguna evidencia en la model card de que el modelo haya sido entrenado con datos visuales; dado que el base es un modelo textual, esta capacidad es dudosa.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -70,7 +70,7 @@ Las cifras siguientes son estimaciones derivadas del numero de parametros (4,66 
 - VRAM en cuantizacion de 4 bits (si se genera una GGUF/AWQ/GPTQ propia): en torno a 3-4 GB, siempre que se disponga de una cuantizacion funcional (no confirmada en el repositorio).
 - GPU recomendadas: cualquier GPU con 16 GB o mas (RTX 4080/4090, A10G, L4, A100 40 GB) para FP16; GPUs con 8 GB podrian servir unicamente con cuantizacion agresiva.
 - Cabe en GPU de consumo: si, previsiblemente en RTX 3090/4080/4090 (24 GB y 16 GB) en FP16, y en GPUs de 8-12 GB con cuantizacion de 4-8 bits.
-- Opciones de despliegue: `transformers` (libreria declarada), text-generation-inference (tag explicito), HuggingFace Inference Endpoints (tag `endpoints_compatible`), vLLM. Ollama y llama.cpp requeririan una conversion a GGUF no publicada por el autor.
+- Opciones de despliegue: `transformers` (libreria declarada), text-generation-inference (tag explicito), Hugging Face Inference Endpoints (tag `endpoints_compatible`), vLLM. Ollama y llama.cpp requeririan una conversion a GGUF no publicada por el autor.
 - Latencia y throughput: no disponible; no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -79,10 +79,10 @@ No hay datos de rendimiento de este modelo, por lo que la comparacion se limita 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| axis-1.0-flash (pix08934725) | ~4,66 B | No disponible | Apache 2.0 | HuggingFace, 0 descargas | No disponible |
-| unsloth/Qwen3.5-4B (modelo base) | ~4 B (segun nombre) | No disponible | No disponible | HuggingFace | No disponible |
-| Qwen3-4B (familia comparable) | ~4 B | No disponible en esta ficha | No disponible | HuggingFace | No disponible |
-| Gemma 3 4B / Llama 3.2 3B (categoria similar) | 3-4 B | No disponible en esta ficha | No disponible | HuggingFace | No disponible |
+| axis-1.0-flash (pix08934725) | ~4,66 B | No disponible | Apache 2.0 | Hugging Face, 0 descargas | No disponible |
+| unsloth/Qwen3.5-4B (modelo base) | ~4 B (segun nombre) | No disponible | No disponible | Hugging Face | No disponible |
+| Qwen3-4B (familia comparable) | ~4 B | No disponible en esta ficha | No disponible | Hugging Face | No disponible |
+| Gemma 3 4B / Llama 3.2 3B (categoria similar) | 3-4 B | No disponible en esta ficha | No disponible | Hugging Face | No disponible |
 
 No se dispone de datos suficientes para establecer una comparacion cuantitativa fiable con alternativas.
 
@@ -100,8 +100,8 @@ No se dispone de datos suficientes para establecer una comparacion cuantitativa 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/pix08934725/axis-1.0-flash
+- Hugging Face del modelo: https://huggingface.co/pix08934725/axis-1.0-flash
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; las busquedas devolvieron unicamente resultados sobre el videojuego EA Sports FC 25, sin relacion con el modelo.

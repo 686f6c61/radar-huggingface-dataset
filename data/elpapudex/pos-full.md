@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pos-full (identificado en su model card como u2t01-bert-pos) es un modelo de etiquetado gramatical (part-of-speech tagging) publicado por el usuario Elpapudex en HuggingFace. Se trata de un ajuste fino de `bert-base-uncased` sobre el corpus Universal Dependencies en su configuracion `en_ewt` (English Web Treebank), orientado a predecir las 17 etiquetas UPOS del esquema universal. El repositorio contiene 108.904.721 parametros en formato safetensors, con un tamano total de 0,4 GB, lo que corresponde a la arquitectura BERT-base mas una cabeza de clasificacion por token.
+Pos-full (identificado en su model card como u2t01-bert-pos) es un modelo de etiquetado gramatical (part-of-speech tagging) publicado por el usuario Elpapudex en Hugging Face. Se trata de un ajuste fino de `bert-base-uncased` sobre el corpus Universal Dependencies en su configuracion `en_ewt` (English Web Treebank), orientado a predecir las 17 etiquetas UPOS del esquema universal. El repositorio contiene 108.904.721 parametros en formato safetensors, con un tamano total de 0,4 GB, lo que corresponde a la arquitectura BERT-base mas una cabeza de clasificacion por token.
 
 El modelo resuelve una tarea clasica y bien delimitada dentro de los pipelines de procesamiento de lenguaje natural: asignar a cada palabra de una frase inglesa su categoria gramatical (sustantivo, verbo, adjetivo, etc.). Frente a alternativas generativas, un encoder discriminativo de este tamano ofrece coste de inferencia muy bajo y resultados medibles: la model card reporta una precision por token de 0,9719 y un macro-F1 de 0,9195.
 
@@ -92,7 +92,7 @@ Advertencia del propio autor: los valores de precision, recall y F1 calculados c
 |---|---|---|---|---|---|---|
 | Pos-full (este modelo) | BERT-base + cabeza POS | 108,9 M | 512 | en | no disponible | Macro-F1 0,9195 y token accuracy 0,9719 en UD `en_ewt` |
 | `bert-base-uncased` sin ajustar | BERT encoder | no disponible en la informacion facilitada | 512 | en | no disponible en la informacion facilitada | Modelo base; no predice POS sin ajuste fino |
-| Otros ajustes BERT para POS en HuggingFace (por ejemplo, variantes publicadas por terceros) | BERT-base + cabeza POS | no disponible | 512 | en | no disponible | Alternativa directa; sin metricas comparables verificadas en esta ficha |
+| Otros ajustes BERT para POS en Hugging Face (por ejemplo, variantes publicadas por terceros) | BERT-base + cabeza POS | no disponible | 512 | en | no disponible | Alternativa directa; sin metricas comparables verificadas en esta ficha |
 | Toolkits de PLN con etiquetado POS (Stanza, spaCy, Flair) | Pipelines BiLSTM/transformer | no disponible | no disponible | Multiidioma | no disponible | Mayor cobertura de idiomas y etiquetas (UPOS y XPOS); sin metricas comparables verificadas en esta ficha |
 
 No se dispone de resultados de benchmarks publicados por terceros que permitan una comparacion cuantitativa fiable entre Pos-full y estas alternativas. Cualquier comparacion deberia realizarse reentrenando o evaluando los modelos sobre la misma particion de `en_ewt`.
@@ -112,9 +112,9 @@ No se dispone de resultados de benchmarks publicados por terceros que permitan u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Elpapudex/Pos-full
+- Modelo en Hugging Face: https://huggingface.co/Elpapudex/Pos-full
 - Paper de BERT (Devlin et al.): https://arxiv.org/abs/1810.04805
-- Documentacion de entrenamiento de HuggingFace Transformers: https://huggingface.co/docs/transformers/training
-- Dataset Universal Dependencies en HuggingFace: https://huggingface.co/datasets/universal-dependencies/universal_dependencies
+- Documentacion de entrenamiento de Hugging Face Transformers: https://huggingface.co/docs/transformers/training
+- Dataset Universal Dependencies en Hugging Face: https://huggingface.co/datasets/universal-dependencies/universal_dependencies
 - Modelo base `bert-base-uncased`: https://huggingface.co/bert-base-uncased
 - Repositorio Universal Dependencies (proyecto): https://universaldependencies.org/
