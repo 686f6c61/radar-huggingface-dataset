@@ -5,7 +5,7 @@
   "author": "emkey1",
   "url": "https://huggingface.co/emkey1/Gemma-4-12B-Aether",
   "created_at": "2026-11-03T15:54:38.000Z",
-  "updated_at": "2026-11-05T07:32:07.000Z",
+  "updated_at": "2026-11-06T05:21:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 346,
+  "downloads_30d": 398,
   "trending_score": 0,
   "parameters": 11959730224,
   "parameters_human": "11.96B",
-  "storage_bytes": 23951706569,
-  "storage_human": "24.0 GB",
+  "storage_bytes": 71790805385,
+  "storage_human": "71.8 GB",
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "safetensors"

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "bartowski/maritaca-ai_S5-nano-GGUF",
+  "slug": "bartowski-maritaca-ai_s5-nano-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/maritaca-ai_S5-nano-GGUF",
+  "created_at": "2026-11-06T19:01:01.000Z",
+  "updated_at": "2026-11-06T19:31:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "pt",
+    "en",
+    "base_model:maritaca-ai/S5-nano",
+    "base_model:quantized:maritaca-ai/S5-nano",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 68002270368,
+  "storage_human": "68.0 GB",
+  "base_model": "maritaca-ai/S5-nano",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maritaca-ai/S5-nano · Hugging Face",
+      "url": "https://huggingface.co/maritaca-ai/S5-nano",
+      "snippet": "S5-nano S5-nano is a 4B-parameter model from Maritaca AI. It has two modes: Think: reasons before answering (the default mode). Instruct: answers directly, without a reasoning step. The context window supports up to 262,144 tokens, and the weights include an MTP (multi-token prediction) layer for speculative decoding. Versions"
+    },
+    {
+      "title": "bartowski (Bartowski) - Hugging Face",
+      "url": "https://huggingface.co/bartowski",
+      "snippet": "Senior Machine Learning Engineer at RedHat Per-tensor layout maps for GGUF quantization"
+    }
+  ]
+}

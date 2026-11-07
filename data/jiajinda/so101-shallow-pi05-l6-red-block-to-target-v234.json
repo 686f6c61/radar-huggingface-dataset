@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "jiajinda/so101-shallow-pi05-l6-red-block-to-target-v234",
+  "slug": "jiajinda-so101-shallow-pi05-l6-red-block-to-target-v234",
+  "author": "jiajinda",
+  "url": "https://huggingface.co/jiajinda/so101-shallow-pi05-l6-red-block-to-target-v234",
+  "created_at": "2026-11-06T12:42:56.000Z",
+  "updated_at": "2026-11-06T12:43:31.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi0.5",
+    "so-101",
+    "distillation",
+    "shallow-pi",
+    "jax",
+    "dataset:jiajinda/red-block-to-target-v2",
+    "dataset:jiajinda/red-block-to-target-v3",
+    "dataset:jiajinda/red-block-to-target-v4",
+    "base_model:jiajinda/so101-03-pi05-red-block-to-target-v234",
+    "base_model:finetune:jiajinda/so101-03-pi05-red-block-to-target-v234",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13719750068,
+  "storage_human": "13.7 GB",
+  "base_model": "jiajinda/so101-03-pi05-red-block-to-target-v234",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jiajinda/so101-03-pi05-red-block-to-target-v234 · Hugging Face",
+      "url": "https://huggingface.co/jiajinda/so101-03-pi05-red-block-to-target-v234",
+      "snippet": "OpenPI (JAX/Orbax) π0.5 policy for an SO-101 arm, task: pick up the red block and place it on the X-marked target. These checkpoints continue an earlier fine-tune (SO101-01, step 5000) on 40 training episodes from three LeRobot datasets. Training finished: 10,000 updates; checkpoints/10000 is the ..."
+    },
+    {
+      "title": "jiajinda/red-block-to-target-v3 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/jiajinda/red-block-to-target-v3",
+      "snippet": "Models trained or fine-tuned on jiajinda/red-block-to-target-v3 jiajinda/so101-03-pi05-red-block-to-target-v234 Robotics •Updated about 2 hours ago"
+    }
+  ]
+}

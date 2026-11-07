@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "MIUO/momo",
+  "slug": "miuo-momo",
+  "author": "MIUO",
+  "url": "https://huggingface.co/MIUO/momo",
+  "created_at": "2026-07-01T08:21:11.000Z",
+  "updated_at": "2026-11-07T01:17:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11644010290,
+  "storage_human": "11.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MIUO/momo · Hugging Face",
+      "url": "https://huggingface.co/MIUO/momo",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MIUO/momo at main - Hugging Face",
+      "url": "https://huggingface.co/MIUO/momo/tree/main",
+      "snippet": "MIUO / momo Like 0 Model card FilesFiles and versions xet Community Copy to bucket new main momo 242 MB Ctrl+K Ctrl+K 1 contributor History:26 commits MIUO Upload far-side_v1_epoch35.safetensors 0d1bc0a verified5 days ago .gitattributes Safe 471 BytesUpload far-side_v1_epoch35.safetensors5 days ago anima-turbo-lora-v0.2.safetensors Safe 149 MB xet Upload anima-turbo-lora-v0.2.safetensorsabout ..."
+    }
+  ]
+}

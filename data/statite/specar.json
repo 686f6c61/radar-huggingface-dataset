@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Statite/SpecAR",
+  "slug": "statite-specar",
+  "author": "Statite",
+  "url": "https://huggingface.co/Statite/SpecAR",
+  "created_at": "2026-11-07T00:01:06.000Z",
+  "updated_at": "2026-11-07T00:01:07.000Z",
+  "license": "apache-2.0-and-cc-by-nc-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-generation",
+    "autoregressive",
+    "speculative-decoding",
+    "inference-acceleration",
+    "training-free",
+    "text-to-video",
+    "image-to-video",
+    "video-to-video",
+    "krea",
+    "helios",
+    "comfyui",
+    "base_model:BestWishYsh/Helios-Base",
+    "base_model:finetune:BestWishYsh/Helios-Base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "krea/krea-realtime-video, gdhe17/Self-Forcing, BestWishYsh/Helios-Base, BestWishYsh/Helios-Distilled",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Statite",
+      "url": "https://statite.ai/",
+      "snippet": "statite Research and engineering for efficient AI inference. Research SpecAR Speculative decoding for autoregressive video generation. 2026"
+    }
+  ]
+}

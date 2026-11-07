@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "botp/NousResearch_Arete-27B-GGUF",
+  "slug": "botp-nousresearch_arete-27b-gguf",
+  "author": "botp",
+  "url": "https://huggingface.co/botp/NousResearch_Arete-27B-GGUF",
+  "created_at": "2026-11-07T04:31:17.000Z",
+  "updated_at": "2026-11-07T04:31:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "nous-research",
+    "arete",
+    "supervised-fine-tuning",
+    "value-alignment",
+    "image-text-to-text",
+    "dataset:NousResearch/arete-data-pairs",
+    "base_model:NousResearch/Arete-27B",
+    "base_model:quantized:NousResearch/Arete-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 439994474400,
+  "storage_human": "440.0 GB",
+  "base_model": "NousResearch/Arete-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/NousResearch_Arete-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/NousResearch_Arete-27B-GGUF",
+      "snippet": "Checked on bartowski/Altworld_Hemmingway-1-GGUF, which shares this model's architecture and tensor shapes: the computed layout against the standard one, measured by KL divergence against the unquantized model. The ratio compares each computed file with the standard ladder read at that file's own size, so it can differ from the two KLD columns when the two files differ in size."
+    },
+    {
+      "title": "Introducing Arete-27B: Qwen3.8-27B Post-Trained To Reinforce Western ...",
+      "url": "https://nousresearch.com/arete",
+      "snippet": "We post-trained Alibaba's Qwen3.8-27B to reinforce Western values on a Chinese-trained model, and measured what changed with an 803-prompt eval across seven value categories."
+    }
+  ]
+}

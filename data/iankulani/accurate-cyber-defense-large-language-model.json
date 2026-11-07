@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Iankulani/Accurate-Cyber-Defense-Large-Language-Model",
+  "slug": "iankulani-accurate-cyber-defense-large-language-model",
+  "author": "Iankulani",
+  "url": "https://huggingface.co/Iankulani/Accurate-Cyber-Defense-Large-Language-Model",
+  "created_at": "2026-11-06T20:39:18.000Z",
+  "updated_at": "2026-11-06T20:39:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iankulani/Accurate-Cyber-Defense-API-Documentation - GitHub",
+      "url": "https://github.com/Iankulani/Accurate-Cyber-Defense-API-Documentation",
+      "snippet": "The Accurate Cyber Defense API is powered by a Large Language Model (LLM) specifically aligned for cyber security use cases. This language model enables deep contextual understanding of security data, attacker behavior, defensive strategies, and operational workflows."
+    },
+    {
+      "title": "Ian Carter Kulani · GitLab",
+      "url": "https://gitlab.com/iancarterkulani",
+      "snippet": "👋 Hey, I’m @iancarterkulani 🧠 Computer Scientist | Cyber Defender |💻 Coder @Afrique-Youth-Election-Observers |🛡️ Founder @Accurate-Cyber-Defense ☠️ 🏴‍☠️"
+    },
+    {
+      "title": "Google Translate Community",
+      "url": "https://support.google.com/translate/community?hl=en",
+      "snippet": "Translate not displaying output I want to add my mother language to Google translator how can i kindly help me to do that what steps …"
+    }
+  ]
+}

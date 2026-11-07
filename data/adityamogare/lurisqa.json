@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "AdityaMogare/LurisQA",
+  "slug": "adityamogare-lurisqa",
+  "author": "AdityaMogare",
+  "url": "https://huggingface.co/AdityaMogare/LurisQA",
+  "created_at": "2025-07-28T20:37:24.000Z",
+  "updated_at": "2026-11-07T00:48:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-3",
+    "law",
+    "civil-law",
+    "legal-advice",
+    "ollama",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:quantized:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4950151660,
+  "storage_human": "5.0 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AdityaMogare/LurisQA: A fine-tuned legal QA system using ...",
+      "url": "https://github.com/AdityaMogare/LurisQA",
+      "snippet": "A fine-tuned legal QA system using Zephyr or LLaMA with GGUF support. Real-time inference via Hugging Face API or local model hosting. - AdityaMogare/LurisQA"
+    },
+    {
+      "title": "AdityaMogare (Aditya P Mogare) - Hugging Face",
+      "url": "https://huggingface.co/AdityaMogare",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 5 minutes ago ... updated a model 40 minutes ago"
+    }
+  ]
+}

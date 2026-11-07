@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "GermannM/Kenga-ZLM",
+  "slug": "germannm-kenga-zlm",
+  "author": "GermannM",
+  "url": "https://huggingface.co/GermannM/Kenga-ZLM",
+  "created_at": "2026-11-06T22:45:56.000Z",
+  "updated_at": "2026-11-06T22:46:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "kenga",
+    "kenga-lang",
+    "z-system",
+    "born-in-z",
+    "zlm",
+    "prophet",
+    "low-rank",
+    "text-generation",
+    "conversational",
+    "ru",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 91245312,
+  "parameters_human": "91.2M",
+  "storage_bytes": 809109817,
+  "storage_human": "809 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run Kenga API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/GermannM/Kenga",
+      "snippet": "Kenga by GermannM is a 1.5 billion parameter transformer decoder language model with a 32K token context length, uniquely designed with a distinct identity and values. It is primarily optimized for the Russian language, excelling in direct, concise responses and possessing knowledge of the Kenga programming language and Z-system concepts. This model is efficient enough to run on standard CPU ..."
+    },
+    {
+      "title": "GermannM/Kenga · Hugging Face",
+      "url": "https://huggingface.co/GermannM/Kenga",
+      "snippet": "Docker Model Runner How to use GermannM/Kenga with Docker Model Runner: ... Kenga — модель, которая знает, кто она Что делает Kenga уникальной Быстрый старт Примеры对话 Обучение Технические детали Ограничения Создатель ..."
+    }
+  ]
+}

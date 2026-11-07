@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "id": "Outlier-Ai/Outlier-40B",
+  "slug": "outlier-ai-outlier-40b",
+  "author": "Outlier-Ai",
+  "url": "https://huggingface.co/Outlier-Ai/Outlier-40B",
+  "created_at": "2026-04-07T22:10:14.000Z",
+  "updated_at": "2026-11-06T23:28:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "fr",
+    "es",
+    "pt",
+    "de",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "ar",
+    "vi",
+    "th",
+    "nl",
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "mixture-of-experts",
+    "moe",
+    "ternary",
+    "quantized",
+    "qwen2.5",
+    "outlier",
+    "local-llm",
+    "on-device",
+    "edge-ai",
+    "energy-efficient",
+    "sparse",
+    "overlay",
+    "research",
+    "apple-silicon",
+    "mac",
+    "mmlu-verified",
+    "conversational",
+    "en",
+    "zh",
+    "fr",
+    "es",
+    "pt",
+    "de",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "ar",
+    "vi",
+    "th",
+    "nl",
+    "pl",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-14B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29551556982,
+  "storage_human": "29.6 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "MMLU",
+      "metric": "MMLU 5-shot",
+      "value": 77.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "Train the Next Generation of AI as a Freelancer | Outlier AI",
+      "url": "https://outlier.ai/",
+      "snippet": "What is Outlier? A platform for building AI with expert human input. Discover Outlier AI, join a community for freelancers, and shape the next generation of AI."
+    },
+    {
+      "title": "Outlier-Ai/Outlier-40B · Hugging Face",
+      "url": "https://huggingface.co/Outlier-Ai/Outlier-40B",
+      "snippet": "A 36B-parameter ternary-quantized Mixture-of-Experts language model that exceeds its dense teacher on MMLU. This is the first ternary-quantized MoE model to exceed its dense teacher's benchmark score. Even with only 3% of parameters trained via lightweight distillation, MoE routing-based ..."
+    },
+    {
+      "title": "Outlier",
+      "url": "https://app.outlier.ai/expert/login",
+      "snippet": "Welcome to Outlier Competitive pay, delivered weekly Set your own schedule Improve pre-release AI models using your existing …"
+    },
+    {
+      "title": "Outlier-Ai/Outlier-40B at main - Hugging Face",
+      "url": "https://huggingface.co/Outlier-Ai/Outlier-40B/tree/main",
+      "snippet": "Outlier-Ai / Outlier-40B like 1 Follow Outlier 5 Text Generation Transformers Safetensors 15 languages qwen2 mixture-of-experts Mixture of Experts ternary quantized qwen2.5 outlier local-llm on-device edge-ai energy-efficient sparse overlay research apple-silicon mac mmlu-verified conversational Eval Results (legacy) text-generation-inference License:apache-2.0 Model card FilesFiles and ..."
+    },
+    {
+      "title": "Outlier",
+      "url": "https://app.outlier.ai/en/expert/opportunities/4499019005",
+      "snippet": "Outlier aide les entreprises les plus innovantes au monde à améliorer leurs modèles d’IA en fournissant des retours humains. Êtes …"
+    }
+  ]
+}

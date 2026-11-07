@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Leohdgheftt/Huihui-GLM-5.3-Flash-abliterated-GGUF",
+  "slug": "leohdgheftt-huihui-glm-5-3-flash-abliterated-gguf",
+  "author": "Leohdgheftt",
+  "url": "https://huggingface.co/Leohdgheftt/Huihui-GLM-5.3-Flash-abliterated-GGUF",
+  "created_at": "2026-11-07T01:38:17.000Z",
+  "updated_at": "2026-11-07T01:43:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "unsloth",
+    "glm5_next",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 320759404382,
+  "parameters_human": "320.76B",
+  "storage_bytes": 1558967757497,
+  "storage_human": "1559.0 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF",
+      "snippet": "Instructions to use huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "huihui-ai/GLM-5.3-Flash-abliterated-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/GLM-5.3-Flash-abliterated-GGUF/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

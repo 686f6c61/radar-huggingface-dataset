@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "oxpuppy635/lfm2.5-1.2b-Timberline-lora",
+  "slug": "oxpuppy635-lfm2-5-1-2b-timberline-lora",
+  "author": "oxpuppy635",
+  "url": "https://huggingface.co/oxpuppy635/lfm2.5-1.2b-Timberline-lora",
+  "created_at": "2026-11-06T22:41:49.000Z",
+  "updated_at": "2026-11-06T22:41:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lfm2",
+    "lfm2.5",
+    "liquid-ai",
+    "thinking",
+    "lora",
+    "text-generation",
+    "conversational",
+    "reasoning",
+    "llama.cpp",
+    "base_model:MuXodious/LFM2.5-1.2B-Thinking-absolute-heresy",
+    "base_model:adapter:MuXodious/LFM2.5-1.2B-Thinking-absolute-heresy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11108352,
+  "parameters_human": "11.1M",
+  "storage_bytes": 66687968,
+  "storage_human": "67 MB",
+  "base_model": "MuXodious/LFM2.5-1.2B-Thinking-absolute-heresy",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Liquid AI Releases LFM2.5: A Compact AI Model Family For Real On Device ...",
+      "url": "https://www.marktechpost.com/2026/01/06/liquid-ai-releases-lfm2-5-a-compact-ai-model-family-for-real-on-device-agents/",
+      "snippet": "Liquid AI has introduced LFM2.5, a new generation of small foundation models built on the LFM2 architecture and focused at on device and edge deployments. The model family includes LFM2.5-1.2B-Base and LFM2.5-1.2B-Instruct and extends to Japanese, vision language, and audio language variants."
+    },
+    {
+      "title": "LFM2.5-1.2B-Thinking: On-Device Reasoning Under 1GB - liquid.ai",
+      "url": "https://www.liquid.ai/blog/lfm2-5-1-2b-thinking-on-device-reasoning-under-1gb",
+      "snippet": "Today, we are releasing LFM2.5-1.2B-Thinking, a reasoning model that runs entirely on-device. It fits within 900 MB of memory on a phone and delivers both the fastest inference speed and the best quality for its size. What required a data center two years ago now runs offline in your pocket."
+    }
+  ]
+}

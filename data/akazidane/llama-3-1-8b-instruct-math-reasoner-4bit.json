@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "akazidane/Llama-3.1-8B-Instruct-Math-Reasoner-4bit",
+  "slug": "akazidane-llama-3-1-8b-instruct-math-reasoner-4bit",
+  "author": "akazidane",
+  "url": "https://huggingface.co/akazidane/Llama-3.1-8B-Instruct-Math-Reasoner-4bit",
+  "created_at": "2026-11-07T03:43:29.000Z",
+  "updated_at": "2026-11-07T03:43:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sethuiyer/Llamaverse-3.1-8B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/sethuiyer/Llamaverse-3.1-8B-Instruct",
+      "snippet": "Llamaverse-3.1-8B-Instruct is a state-of-the-art language model built on the foundation of MathCoder2-Llama-3-8B, pretrained on MathCode-Pile. This dataset, which embeds mathematical reasoning steps in natural language and code, provides a rock-solid foundation for advanced logical reasoning. By ..."
+    },
+    {
+      "title": "Llama 3.1-8B-Instruct: Key Insights - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/llama-3-1-8b-instruct",
+      "snippet": "Llama 3.1-8B-Instruct is an open-source large language model fine-tuned for instruction-following, robust reasoning, and domain adaptation in diverse NLP tasks."
+    }
+  ]
+}

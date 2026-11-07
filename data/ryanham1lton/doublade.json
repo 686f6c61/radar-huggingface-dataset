@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Doublade",
+  "slug": "ryanham1lton-doublade",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Doublade",
+  "created_at": "2026-11-06T21:06:15.000Z",
+  "updated_at": "2026-11-06T21:07:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115651614,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton/Vullaby · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Vullaby",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

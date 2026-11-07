@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "connorgentile113/evergreen-smollm2-135m-adapter",
+  "slug": "connorgentile113-evergreen-smollm2-135m-adapter",
+  "author": "connorgentile113",
+  "url": "https://huggingface.co/connorgentile113/evergreen-smollm2-135m-adapter",
+  "created_at": "2026-11-07T00:10:18.000Z",
+  "updated_at": "2026-11-07T00:10:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "evergreen",
+    "lora",
+    "smoke-test",
+    "text-generation",
+    "conversational",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19593064,
+  "storage_human": "20 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "connorgentile113/evergreen-smollm2-135m-adapter · Hugging Face",
+      "url": "https://huggingface.co/connorgentile113/evergreen-smollm2-135m-adapter",
+      "snippet": "A one-step GPU smoke-test adapter produced by Evergreen on Kaggle. This is a pipeline verification artifact trained on one synthetic document, not a domain-trained assistant or an evaluated production model."
+    },
+    {
+      "title": "connorgentile113 (Connor Gentile-DePaul) - Hugging Face",
+      "url": "https://huggingface.co/connorgentile113",
+      "snippet": "connorgentile113/evergreen-smollm2-135m-adapter Text Generation •Updated 14 minutes ago"
+    }
+  ]
+}

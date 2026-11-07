@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/Qwen2.5-VL-3B-abliterated-fp16-ComfyUI",
+  "slug": "joaozaokk-qwen2-5-vl-3b-abliterated-fp16-comfyui",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/Qwen2.5-VL-3B-abliterated-fp16-ComfyUI",
+  "created_at": "2026-11-07T01:03:39.000Z",
+  "updated_at": "2026-11-07T01:04:41.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "text-encoder",
+    "omnigen2",
+    "abliterated",
+    "uncensored",
+    "experiment",
+    "base_model:huihui-ai/Qwen2.5-VL-3B-Instruct-abliterated",
+    "base_model:finetune:huihui-ai/Qwen2.5-VL-3B-Instruct-abliterated",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7509748542,
+  "storage_human": "7.5 GB",
+  "base_model": "huihui-ai/Qwen2.5-VL-3B-Instruct-abliterated",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexcong/ComfyUI_QwenVL: ComfyUI QwenVL and Qwen wrapper - GitHub",
+      "url": "https://github.com/alexcong/ComfyUI_QwenVL",
+      "snippet": "This repository provides ComfyUI nodes that wrap the latest vision-language and language-only checkpoints from the Qwen family. Both Qwen3 VL and Qwen2.5 VL models are supported for multimodal reasoning, alongside text-only Qwen2.5 models for prompt generation."
+    },
+    {
+      "title": "GitHub - 1038lab/ComfyUI-QwenVL: ComfyUI-QwenVL custom node: Integrates ...",
+      "url": "https://github.com/1038lab/ComfyUI-QwenVL",
+      "snippet": "The ComfyUI-QwenVL suite brings Alibaba Cloud’s next-generation vision-language and reasoning models into ComfyUI. Featuring native support for the full Qwen3-VL family (2B to 32B, Instruct & Thinking variants), Qwen3.5-VL, Qwen3.6-VL (MoE), Qwen3.8-VL, and Qwen2.5-VL, alongside text-only Qwen3 prompt enhancers. Powered by a high-performance dual-engine architecture (GGUF via llama.cpp ..."
+    }
+  ]
+}

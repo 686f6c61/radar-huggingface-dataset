@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "ZeroWw/Clover-35B-A3B-Preview-IQ3_XXS-GGUF",
+  "slug": "zeroww-clover-35b-a3b-preview-iq3_xxs-gguf",
+  "author": "ZeroWw",
+  "url": "https://huggingface.co/ZeroWw/Clover-35B-A3B-Preview-IQ3_XXS-GGUF",
+  "created_at": "2026-11-06T23:00:02.000Z",
+  "updated_at": "2026-11-06T23:00:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "iq3_xxs",
+    "imatrix",
+    "moe",
+    "text-generation",
+    "en",
+    "base_model:Diffuspace/Clover-35B-A3B-Preview",
+    "base_model:quantized:Diffuspace/Clover-35B-A3B-Preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34661350848,
+  "parameters_human": "34.66B",
+  "storage_bytes": 14139260320,
+  "storage_human": "14.1 GB",
+  "base_model": "Diffuspace/Clover-35B-A3B-Preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - DiffuSpace/Clover-35B-A3B-Preview: A 35B diffusion language model.",
+      "url": "https://github.com/DiffuSpace/Clover-35B-A3B-Preview",
+      "snippet": "A 35B diffusion language model. Contribute to DiffuSpace/Clover-35B-A3B-Preview development by creating an account on GitHub."
+    },
+    {
+      "title": "AtomicChat/Clover-35B-A3B-Preview-GGUF · Hugging Face",
+      "url": "https://huggingface.co/AtomicChat/Clover-35B-A3B-Preview-GGUF",
+      "snippet": "Clover-35B-A3B-Preview is DiffuSpace's block-diffusion language model: a 35B mixture-of-experts with about 3B active parameters per token, derived from Qwen3.6-35B-A3B, 128K context, thinking on by default, Apache-2.0. Built by the team behind Atomic Chat, the app that runs open-weight models locally and offline. Four plain llama.cpp files from 21.2 GB to 36.9 GB on disk, each measured against ..."
+    }
+  ]
+}

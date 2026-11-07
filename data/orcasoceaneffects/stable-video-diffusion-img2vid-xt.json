@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "orcasoceaneffects/stable-video-diffusion-img2vid-xt",
+  "slug": "orcasoceaneffects-stable-video-diffusion-img2vid-xt",
+  "author": "orcasoceaneffects",
+  "url": "https://huggingface.co/orcasoceaneffects/stable-video-diffusion-img2vid-xt",
+  "created_at": "2026-11-07T00:13:49.000Z",
+  "updated_at": "2026-11-07T00:13:49.000Z",
+  "license": "stable-video-diffusion-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-video",
+    "license:other",
+    "diffusers:StableVideoDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1524623082,
+  "parameters_human": "1.52B",
+  "storage_bytes": 32608765959,
+  "storage_human": "32.6 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "orcasoceaneffects/stable-video-diffusion-img2vid-xt · Hugging Face",
+      "url": "https://huggingface.co/orcasoceaneffects/stable-video-diffusion-img2vid-xt",
+      "snippet": "The released checkpoints (SVD/SVD-XT) are image-to-video models that generate short videos/animations closely following the given input image. Since the model relies on an existing supplied image, the potential risks of disclosing specific material or novel unsafe content are minimal."
+    },
+    {
+      "title": "stabilityai/stable-video-diffusion-img2vid · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-video-diffusion-img2vid",
+      "snippet": "Stable Video Diffusion (SVD) Image-to-Video is a diffusion model that takes in a still image as a conditioning frame, and generates a video from it. (SVD) Image-to-Video is a latent diffusion model trained to generate short video clips from an image conditioning. This model was trained to generate ..."
+    }
+  ]
+}

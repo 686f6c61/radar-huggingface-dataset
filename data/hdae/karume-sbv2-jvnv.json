@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "hdae/karume-sbv2-jvnv",
+  "slug": "hdae-karume-sbv2-jvnv",
+  "author": "hdae",
+  "url": "https://huggingface.co/hdae/karume-sbv2-jvnv",
+  "created_at": "2026-08-09T08:23:19.000Z",
+  "updated_at": "2026-11-06T22:24:39.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "karume",
+  "languages": [],
+  "tags": [
+    "karume",
+    "text-to-speech",
+    "webgpu",
+    "japanese",
+    "arxiv:2310.06072",
+    "base_model:ku-nlp/deberta-v2-large-japanese-char-wwm",
+    "base_model:quantized:ku-nlp/deberta-v2-large-japanese-char-wwm",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4645514806,
+  "storage_human": "4.6 GB",
+  "base_model": "litagin/style_bert_vits2_jvnv, ku-nlp/deberta-v2-large-japanese-char-wwm",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hdae/karume-sbv2-jvnv · Hugging Face",
+      "url": "https://huggingface.co/hdae/karume-sbv2-jvnv",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hdae/karume-anima · Hugging Face",
+      "url": "https://huggingface.co/hdae/karume-anima",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

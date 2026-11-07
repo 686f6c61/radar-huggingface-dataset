@@ -5,7 +5,7 @@
   "author": "afantequera",
   "url": "https://huggingface.co/afantequera/Llama-2-7b-chat-finetune",
   "created_at": "2026-11-06T07:12:05.000Z",
-  "updated_at": "2026-11-06T07:25:02.000Z",
+  "updated_at": "2026-11-06T08:24:40.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -19,6 +19,8 @@
     "arxiv:1910.09700",
     "text-generation-inference",
     "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
     "region:us"
   ],
   "likes": 0,
@@ -26,8 +28,8 @@
   "trending_score": 0,
   "parameters": 6738415616,
   "parameters_human": "6.74B",
-  "storage_bytes": 13476864944,
-  "storage_human": "13.5 GB",
+  "storage_bytes": 17342907033,
+  "storage_human": "17.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

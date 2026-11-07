@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "udgamlabs/shruti-dogri",
+  "slug": "udgamlabs-shruti-dogri",
+  "author": "udgamlabs",
+  "url": "https://huggingface.co/udgamlabs/shruti-dogri",
+  "created_at": "2026-11-06T08:23:10.000Z",
+  "updated_at": "2026-11-06T09:04:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "cactus-needle",
+  "languages": [
+    "doi",
+    "en"
+  ],
+  "tags": [
+    "cactus-needle",
+    "whistle",
+    "udgamlabs",
+    "shruti",
+    "speech-recognition",
+    "dogri",
+    "code-switching",
+    "on-device",
+    "offline",
+    "webassembly",
+    "small-model",
+    "automatic-speech-recognition",
+    "doi",
+    "en",
+    "dataset:ai4bharat/IndicVoices",
+    "dataset:openslr/librispeech_asr",
+    "base_model:udgamlabs/Shruti",
+    "base_model:finetune:udgamlabs/Shruti",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29659368,
+  "storage_human": "30 MB",
+  "base_model": "udgamlabs/Shruti",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shruti | Udgam Labs",
+      "url": "https://udgamlabs.com/models/shruti",
+      "snippet": "A 29.5 MB speech-to-text model for Hindi, English and Hinglish by Udgam Labs, built on Cactus Whistle. It runs offline on a budget phone and in the browser. Open weights under Apache-2.0."
+    },
+    {
+      "title": "Shruti - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/udgamlabs/shruti",
+      "snippet": "🆔 Identity & Source id hf-model--udgamlabs--shruti slug udgamlabs--shruti source huggingface author udgamlabs license Apache-2.0 tags"
+    }
+  ]
+}

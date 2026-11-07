@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "nm-testing/TinyLlama-1.1B-Chat-v1.0-W4A16_channel-e2e",
+  "slug": "nm-testing-tinyllama-1-1b-chat-v1-0-w4a16_channel-e2e",
+  "author": "nm-testing",
+  "url": "https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-W4A16_channel-e2e",
+  "created_at": "2026-07-25T00:22:53.000Z",
+  "updated_at": "2026-11-06T20:22:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 70,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 5981446219,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nm-testing/TinyLlama-1.1B-Chat-v1.0-W4A16_channel-e2e · Hugging Face",
+      "url": "https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-W4A16_channel-e2e",
+      "snippet": "nm-testing / TinyLlama-1.1B-Chat-v1.0-W4A16_channel-e2e like 0 Text Generation Transformers Safetensors llama conversational text-generation-inference Inference Endpoints arxiv:1910.09700 Model card FilesFiles and versions Community Train Deploy Use this model Edit model card Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use ..."
+    },
+    {
+      "title": "TinyLlama-1.1B-Chat-v1.0-W8A16_channel-e2e - Hugging Face",
+      "url": "https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A16_channel-e2e",
+      "snippet": "Model Card for Model ID Model Details Model Description This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated. Developed by: [More Information Needed] Funded by [optional]: [More Information Needed] Shared by [optional]: [More Information Needed] Model type: [More Information Needed] Language (s) (NLP): [More ..."
+    }
+  ]
+}

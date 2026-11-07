@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "NLP-CISUC/humetrix-resources",
+  "slug": "nlp-cisuc-humetrix-resources",
+  "author": "NLP-CISUC",
+  "url": "https://huggingface.co/NLP-CISUC/humetrix-resources",
+  "created_at": "2026-11-06T20:09:56.000Z",
+  "updated_at": "2026-11-06T21:20:15.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "pt",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "humor",
+    "word-embeddings",
+    "glove",
+    "skip-gram",
+    "n-grams",
+    "en",
+    "es",
+    "fr",
+    "pt",
+    "zh",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3139878128,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NLP-CISUC/Humetrix",
+      "url": "https://github.com/NLP-CISUC/Humetrix/",
+      "snippet": "Humetrix is a Python library that provides a collection of automatic metrics for evaluating humor in text, focusing on puns. It includes implementations of several state-of-the-art humor metrics, as well as tools for training your own models."
+    }
+  ]
+}

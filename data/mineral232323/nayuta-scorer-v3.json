@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Mineral232323/nayuta-scorer-v3",
+  "slug": "mineral232323-nayuta-scorer-v3",
+  "author": "Mineral232323",
+  "url": "https://huggingface.co/Mineral232323/nayuta-scorer-v3",
+  "created_at": "2026-11-06T23:34:11.000Z",
+  "updated_at": "2026-11-06T23:34:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "japanese",
+    "ime",
+    "reranker",
+    "bert",
+    "ja",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 450168164,
+  "storage_human": "450 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mineral232323 (Mineral) - Hugging Face",
+      "url": "https://huggingface.co/Mineral232323",
+      "snippet": "Mineral232323/geniac_prize_2026_v2r2s2 Text Generation •Updated about 8 hours ago• 4"
+    },
+    {
+      "title": "I made an AI IME for Android｜mineral - note（ノート）",
+      "url": "https://note.com/mineral232323/n/n7fb04e0436d7?hl=en",
+      "snippet": "Hello!I'm mineral.Since I wouldn't make it in time for my usual tablet modification project this time, I've decided to write an introductory article about something I've been working on recently instead.TL;DRI created \"Nayuta,\" an IME that learns and grows on its own.It uses BERT, so it's relati"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Aurelius51/lingualsafety-intent-guard",
+  "slug": "aurelius51-lingualsafety-intent-guard",
+  "author": "Aurelius51",
+  "url": "https://huggingface.co/Aurelius51/lingualsafety-intent-guard",
+  "created_at": "2026-10-17T14:11:31.000Z",
+  "updated_at": "2026-11-06T23:59:29.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "hi",
+    "bn",
+    "mr",
+    "pa"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "safety",
+    "guardrail",
+    "multilingual",
+    "jailbreak-defense",
+    "lora",
+    "en",
+    "hi",
+    "bn",
+    "mr",
+    "pa",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:adapter:google/gemma-3-4b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 238561424,
+  "storage_human": "239 MB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aurelius51/lingualsafety-intent-guard · Hugging Face",
+      "url": "https://huggingface.co/Aurelius51/lingualsafety-intent-guard",
+      "snippet": "Instructions to use Aurelius51/lingualsafety-intent-guard with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Aurelius51/lingualsafety-intent-guard with PEFT:"
+    },
+    {
+      "title": "Aurelius51 (Digvijay Singh) - Hugging Face",
+      "url": "https://huggingface.co/Aurelius51",
+      "snippet": "Recent Activity updated a modelabout 14 hours ago Aurelius51/lingualsafety-intent-guard published a model1 day ago Aurelius51/lingualsafety-intent-guard View all activity"
+    }
+  ]
+}

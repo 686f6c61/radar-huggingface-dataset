@@ -5,7 +5,7 @@
   "author": "adibvafa",
   "url": "https://huggingface.co/adibvafa/bioreason-pro-v2-9b-bntok-rl",
   "created_at": "2026-11-03T00:01:48.000Z",
-  "updated_at": "2026-11-05T23:23:51.000Z",
+  "updated_at": "2026-11-06T20:42:51.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 21263161903,
-  "storage_human": "21.3 GB",
+  "storage_bytes": 18459476896,
+  "storage_human": "18.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

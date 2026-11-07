@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "YomnaGharib/namaa-dahih-egyptian-lora",
+  "slug": "yomnagharib-namaa-dahih-egyptian-lora",
+  "author": "YomnaGharib",
+  "url": "https://huggingface.co/YomnaGharib/namaa-dahih-egyptian-lora",
+  "created_at": "2026-05-20T20:20:38.000Z",
+  "updated_at": "2026-11-06T21:36:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "chatterbox",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "chatterbox",
+    "safetensors",
+    "egyptian-arabic",
+    "lora",
+    "narration",
+    "text-to-speech",
+    "ar",
+    "dataset:YomnaGharib/dahih-tts2-demucs-cleaned",
+    "base_model:AliAbdallah/egyptian-arabic-tts-chatterbox",
+    "base_model:adapter:AliAbdallah/egyptian-arabic-tts-chatterbox",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5060829104,
+  "storage_human": "5.1 GB",
+  "base_model": "AliAbdallah/egyptian-arabic-tts-chatterbox",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YomnaGharib/namaa-dahih-egyptian-lora at main - Hugging Face",
+      "url": "https://huggingface.co/YomnaGharib/namaa-dahih-egyptian-lora/tree/main",
+      "snippet": "YomnaGharib / namaa-dahih-egyptian-lora like 0 Safetensors License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main namaa-dahih-egyptian-lora Ctrl+K Ctrl+K 1 contributor History:68 commits YomnaGharib Add eval sample list 63499fc verifiedabout 1 month ago checkpointsUpload NAMAA Dahih LoRA checkpoints/step ..."
+    },
+    {
+      "title": "YomnaGharib/namaa-dahih-egyptian-lora · Discussions",
+      "url": "https://huggingface.co/YomnaGharib/namaa-dahih-egyptian-lora/discussions",
+      "snippet": "YomnaGharib / namaa-dahih-egyptian-lora like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Sort: Recently created"
+    }
+  ]
+}

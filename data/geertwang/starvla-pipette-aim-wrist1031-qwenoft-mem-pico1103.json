@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "GeertWang/starvla-pipette-aim-wrist1031-qwenoft-mem-pico1103",
+  "slug": "geertwang-starvla-pipette-aim-wrist1031-qwenoft-mem-pico1103",
+  "author": "GeertWang",
+  "url": "https://huggingface.co/GeertWang/starvla-pipette-aim-wrist1031-qwenoft-mem-pico1103",
+  "created_at": "2026-11-07T01:33:09.000Z",
+  "updated_at": "2026-11-07T01:35:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "starvla",
+  "languages": [],
+  "tags": [
+    "starvla",
+    "robotics",
+    "vla",
+    "unitree-g1",
+    "pipette",
+    "hg-dagger",
+    "behavior-cloning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9155813325,
+  "storage_human": "9.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GeertWang/starvla-pipette-aim-wrist1031-qwenoft-ft · Hugging Face",
+      "url": "https://huggingface.co/GeertWang/starvla-pipette-aim-wrist1031-qwenoft-ft",
+      "snippet": "starVLA QwenOFT + wrist, fine-tuned (pipette step 3, data_1031, step 1794) Behavior cloning for step 3 of a pipette task on a Unitree G1 with Inspire hands: aim the pipette in the right hand into the tube in the left hand."
+    },
+    {
+      "title": "GeertWang/starvla-pipette-aim-wrist1031-qwenoft-scratch at main",
+      "url": "https://huggingface.co/GeertWang/starvla-pipette-aim-wrist1031-qwenoft-scratch/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket main starvla-pipette-aim-wrist1031-qwenoft-scratch 18.3 GB Ctrl+K Ctrl+K 1 contributor History:3 commits GeertWang last-step checkpoint e9627e3 verified1 day ago qwenoftlast-step checkpoint1 day ago .gitattributes Safe 1.52 kBinitial commit1 day ago README.md 1.69 kBlast-step ..."
+    }
+  ]
+}

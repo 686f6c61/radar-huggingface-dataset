@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "romanmelnykana/cs231n-multitask",
+  "slug": "romanmelnykana-cs231n-multitask",
+  "author": "romanmelnykana",
+  "url": "https://huggingface.co/romanmelnykana/cs231n-multitask",
+  "created_at": "2026-11-06T21:05:28.000Z",
+  "updated_at": "2026-11-06T21:05:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nikhildaslu/cs231n-multitask · Hugging Face",
+      "url": "https://huggingface.co/nikhildaslu/cs231n-multitask",
+      "snippet": "A small Mae implementation for Multitask, packaged with an explicit configuration and an initialization checkpoint. The tiny variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "FinnSchmidtsy/cs231n-multitask · Hugging Face",
+      "url": "https://huggingface.co/FinnSchmidtsy/cs231n-multitask",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

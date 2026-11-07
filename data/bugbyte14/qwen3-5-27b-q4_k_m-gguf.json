@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "BugByte14/Qwen3.5-27B-Q4_K_M-GGUF",
+  "slug": "bugbyte14-qwen3-5-27b-q4_k_m-gguf",
+  "author": "BugByte14",
+  "url": "https://huggingface.co/BugByte14/Qwen3.5-27B-Q4_K_M-GGUF",
+  "created_at": "2026-11-07T02:49:42.000Z",
+  "updated_at": "2026-11-07T02:50:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:quantized:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16810713280,
+  "storage_human": "16.8 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-27B-Q4_K_M.gguf · lmstudio-community/Qwen3.5-27B-GGUF at main",
+      "url": "https://huggingface.co/lmstudio-community/Qwen3.5-27B-GGUF/blob/main/Qwen3.5-27B-Q4_K_M.gguf",
+      "snippet": "lmstudio-community / Qwen3.5-27B-GGUF like 17 Follow LM Studio Community 4.84k GGUF conversational License:apache-2.0 Model card FilesFiles and versions xet Community 5 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "README.md · Abiray/Qwen3.8-27B-Q4_K_M-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/Abiray/Qwen3.8-27B-Q4_K_M-GGUF/blob/main/README.md",
+      "snippet": "Qwen3.8-27B is the most capable generation in the Qwen open-model family, built on the architectural foundation of Qwen3.5. It is a native vision-language model that understands images and videos, delivering substantial gains across coding, professional work, research, and long-horizon agentic tasks."
+    }
+  ]
+}

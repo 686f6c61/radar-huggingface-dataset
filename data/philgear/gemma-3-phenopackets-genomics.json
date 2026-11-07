@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "philgear/gemma-3-phenopackets-genomics",
+  "slug": "philgear-gemma-3-phenopackets-genomics",
+  "author": "philgear",
+  "url": "https://huggingface.co/philgear/gemma-3-phenopackets-genomics",
+  "created_at": "2026-11-07T04:44:29.000Z",
+  "updated_at": "2026-11-07T04:44:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "gemma-3",
+    "lora",
+    "clinical-nlp",
+    "healthcare",
+    "hipaa-safe-harbor",
+    "open-science",
+    "pocketgull",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-3-12b-it",
+    "base_model:adapter:google/gemma-3-12b-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-3-12b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "philgear (Phil Gear) - Hugging Face",
+      "url": "https://huggingface.co/philgear",
+      "snippet": "healthcare, clinical-nlp, gemma-3, lora, peft, privacy-preserving-ml, fhir-r4, webgpu, hipaa-safe-harbor, open-science"
+    },
+    {
+      "title": "Phenopackets - GA4GH",
+      "url": "https://www.ga4gh.org/product/phenopackets/",
+      "snippet": "Phenopackets help researchers and clinicians exchange phenotypic data in a standard way to accelerate research and improve patient care."
+    }
+  ]
+}

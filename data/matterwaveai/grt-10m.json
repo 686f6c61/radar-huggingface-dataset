@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "MatterWaveAI/grt-10m",
+  "slug": "matterwaveai-grt-10m",
+  "author": "MatterWaveAI",
+  "url": "https://huggingface.co/MatterWaveAI/grt-10m",
+  "created_at": "2026-11-07T04:37:14.000Z",
+  "updated_at": "2026-11-07T04:49:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "grt",
+    "text-generation",
+    "geometric-rotation-transformer",
+    "causal-lm",
+    "rotational",
+    "neurips-reject",
+    "en",
+    "dataset:nvidia/Nemotron-Pretraining-Dataset-sample",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8802768,
+  "parameters_human": "8.8M",
+  "storage_bytes": 35700900,
+  "storage_human": "36 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MatterWaveAI/pi-package: Official MatterWave provider, GRT ...",
+      "url": "https://github.com/MatterWaveAI/pi-package",
+      "snippet": "Official MatterWave provider, GRT model router, presets, and skills for the Pi 1.0 coding agent - MatterWaveAI/pi-package"
+    }
+  ]
+}

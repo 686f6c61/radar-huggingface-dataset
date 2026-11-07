@@ -5,7 +5,7 @@
   "author": "amd",
   "url": "https://huggingface.co/amd/DeepSeek-V4.1-Flash-Quark-MXFP4",
   "created_at": "2026-09-14T12:16:03.000Z",
-  "updated_at": "2026-11-06T02:21:51.000Z",
+  "updated_at": "2026-11-07T00:20:13.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

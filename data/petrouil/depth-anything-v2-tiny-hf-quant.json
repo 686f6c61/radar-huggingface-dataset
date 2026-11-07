@@ -5,7 +5,7 @@
   "author": "Petrouil",
   "url": "https://huggingface.co/Petrouil/Depth-Anything-V2-Tiny-hf-quant",
   "created_at": "2026-11-06T10:10:12.000Z",
-  "updated_at": "2026-11-06T10:10:24.000Z",
+  "updated_at": "2026-11-06T10:56:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "depth-estimation",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 18138790,
-  "storage_human": "18 MB",
+  "storage_bytes": 36292244,
+  "storage_human": "36 MB",
   "base_model": "Petrouil/Depth-Anything-V2-Tiny-hf",
   "formats": [
     "onnx"

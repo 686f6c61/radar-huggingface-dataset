@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "zen-E/PLatour-Qwen3.5-35B-to-4B-DeepCoder",
+  "slug": "zen-e-platour-qwen3-5-35b-to-4b-deepcoder",
+  "author": "zen-E",
+  "url": "https://huggingface.co/zen-E/PLatour-Qwen3.5-35B-to-4B-DeepCoder",
+  "created_at": "2026-11-06T21:03:39.000Z",
+  "updated_at": "2026-11-06T21:06:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2611.06976",
+    "platour",
+    "safetensors",
+    "custom-loader",
+    "dataset:zen-E/PLatour-DeepCoder-Data",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 671091520,
+  "storage_human": "671 MB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B, Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PLatour - a zen-E Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/zen-E/platour",
+      "snippet": "PLatour model and dataset releases. Dataset preview; model releases will be added later."
+    },
+    {
+      "title": "Qwen/Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "snippet": "Image-Text-to-Text model with 5B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

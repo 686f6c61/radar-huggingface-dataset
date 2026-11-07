@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "nadayusc/confhead",
+  "slug": "nadayusc-confhead",
+  "author": "nadayusc",
+  "url": "https://huggingface.co/nadayusc/confhead",
+  "created_at": "2026-11-06T22:03:13.000Z",
+  "updated_at": "2026-11-06T22:06:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1535234,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nadayusc (Nathan) - Hugging Face",
+      "url": "https://huggingface.co/nadayusc/datasets",
+      "snippet": "Recent Activity updated a dataset4 days ago nadayusc/confhead-cache published a dataset5 days ago nadayusc/confhead-cache liked a model13 days ago CoreEpoch/rfdetr-base-int8-onnx View all activity"
+    },
+    {
+      "title": "nadayusc/confhead-cache · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/nadayusc/confhead-cache",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

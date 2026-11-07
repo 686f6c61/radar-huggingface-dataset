@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Outlier-Ai/Outlier-Vision",
+  "slug": "outlier-ai-outlier-vision",
+  "author": "Outlier-Ai",
+  "url": "https://huggingface.co/Outlier-Ai/Outlier-Vision",
+  "created_at": "2026-04-27T22:07:52.000Z",
+  "updated_at": "2026-11-06T23:29:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "apple-silicon",
+    "mac",
+    "macos",
+    "outlier",
+    "redirect",
+    "archival",
+    "duplicate",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 20422193614,
+  "storage_human": "20.4 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Train the Next Generation of AI as a Freelancer | Outlier AI",
+      "url": "https://outlier.ai/",
+      "snippet": "What is Outlier? A platform for building AI with expert human input. Discover Outlier AI, join a community for freelancers, and shape the next generation of AI."
+    },
+    {
+      "title": "Outlier-Ai/Outlier-Vision · Hugging Face",
+      "url": "https://huggingface.co/Outlier-Ai/Outlier-Vision",
+      "snippet": "Outlier Vision is the multimodal tier of the Outlier model family. Architecture: Qwen3_5MoeForConditionalGeneration with vision tower, audio encoder, and video support. Context: 256K tokens. Part of the Outlier desktop app — vision, audio, and video understanding on Apple Silicon. Local backup ..."
+    },
+    {
+      "title": "Explore Our Story, Mission, and Vision | Outlier AI",
+      "url": "https://outlier.ai/about-us",
+      "snippet": "Discover how Outlier AI, powered by Scale AI, trains AI models, making them smarter and more reliable. Explore our company and the future of AI!"
+    },
+    {
+      "title": "Outlier",
+      "url": "https://app.outlier.ai/expert/login",
+      "snippet": "Welcome to Outlier Competitive pay, delivered weekly Set your own schedule Improve pre-release AI models using your existing …"
+    },
+    {
+      "title": "README.md · Outlier-Ai/Outlier-Vision at main - Hugging Face",
+      "url": "https://huggingface.co/Outlier-Ai/Outlier-Vision/blob/main/README.md",
+      "snippet": "Outlier-Ai / Outlier-Vision like 0 Follow Outlier 4 Visual Question Answering MLX Safetensors 13 languages qwen3_5_moe vision multimodal image-to-text apple-silicon mac macos metal m1 m2 m3 m4 on-device offline local-llm mixture-of-experts Mixture of Experts qwen3 qwen3-vl outlier outlier-app chat conversational 4-bit precision 4bit Eval Results (legacy) License:apache-2.0 Model card ..."
+    }
+  ]
+}

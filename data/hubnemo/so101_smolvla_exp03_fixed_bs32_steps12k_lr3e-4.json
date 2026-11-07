@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "hubnemo/so101_smolvla_exp03_fixed_bs32_steps12k_lr3e-4",
+  "slug": "hubnemo-so101_smolvla_exp03_fixed_bs32_steps12k_lr3e-4",
+  "author": "hubnemo",
+  "url": "https://huggingface.co/hubnemo/so101_smolvla_exp03_fixed_bs32_steps12k_lr3e-4",
+  "created_at": "2026-11-06T22:15:56.000Z",
+  "updated_at": "2026-11-06T22:15:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:Orellius/so101_sort_cubes_no_top",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:adapter:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11906952,
+  "storage_human": "12 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hubnemo/so101_smolvla_exp03_bs32_steps12k_lr3e-4 · Hugging Face",
+      "url": "https://huggingface.co/hubnemo/so101_smolvla_exp03_bs32_steps12k_lr3e-4",
+      "snippet": "lerobot-rollout \\ --strategy.type=base \\ --robot.type=so101_follower \\ --robot.port=<your_robot_port> \\ --robot.cameras=\"{ <camera_1>: {type: opencv, index_or_path: <index_or_path>, width: 640, height: 480, fps: 30}, <camera_2>: {type: opencv, index_or_path: <index_or_path>, width: 640, height: 480, fps: 30}}\" \\ --policy.path=hubnemo/so101_smolvla_exp03_bs32_steps12k_lr3e-4 \\ --task=\"Grab the purple cube and put it into the cardboard box, ignore the other objects\" \\ --duration=60 ·"
+    },
+    {
+      "title": "AndrewNoviello/so101-smolvla · Hugging Face",
+      "url": "https://huggingface.co/AndrewNoviello/so101-smolvla",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

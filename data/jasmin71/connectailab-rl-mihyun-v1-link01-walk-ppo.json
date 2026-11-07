@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Jasmin71/connectailab-rl-mihyun-v1-link01-walk-ppo",
+  "slug": "jasmin71-connectailab-rl-mihyun-v1-link01-walk-ppo",
+  "author": "Jasmin71",
+  "url": "https://huggingface.co/Jasmin71/connectailab-rl-mihyun-v1-link01-walk-ppo",
+  "created_at": "2026-11-07T01:54:28.000Z",
+  "updated_at": "2026-11-07T02:11:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "ppo",
+    "robotics",
+    "mujoco",
+    "locomotion",
+    "link01",
+    "connect-ai-lab",
+    "connectailab",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11302683,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "walking",
+      "dataset": "Link01Walk-v0",
+      "metric": "distance per 20 s (m)",
+      "value": 4.251
+    },
+    {
+      "task": "walking",
+      "dataset": "Link01Walk-v0",
+      "metric": "mean forward speed (m/s)",
+      "value": 0.2125
+    },
+    {
+      "task": "walking",
+      "dataset": "Link01Walk-v0",
+      "metric": "falls per minute",
+      "value": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Jasmin71/connectailab-rl-mihyun-v1-link01 · Hugging Face",
+      "url": "https://huggingface.co/Jasmin71/connectailab-rl-mihyun-v1-link01",
+      "snippet": "Instructions to use Jasmin71/connectailab-rl-mihyun-v1-link01 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Jasmin71/connectailab-rl-mihyun-v1-link01 with PEFT:"
+    },
+    {
+      "title": "Jasmin71/connectailab-rl-mihyun-v1-lunarlander · Hugging Face",
+      "url": "https://huggingface.co/Jasmin71/connectailab-rl-mihyun-v1-lunarlander",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

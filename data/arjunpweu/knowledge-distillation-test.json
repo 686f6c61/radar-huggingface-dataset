@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "arjunpweu/knowledge-distillation-test",
+  "slug": "arjunpweu-knowledge-distillation-test",
+  "author": "arjunpweu",
+  "url": "https://huggingface.co/arjunpweu/knowledge-distillation-test",
+  "created_at": "2026-11-06T23:32:55.000Z",
+  "updated_at": "2026-11-06T23:33:00.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Knowledge distillation: Simplifying AI with efficient models",
+      "url": "https://datasciencedojo.com/blog/understanding-knowledge-distillation/",
+      "snippet": "Learn how Knowledge Distillation makes AI models smaller, faster, and more efficient. Explore its benefits, applications, challenges, and Python implementation."
+    },
+    {
+      "title": "Knowledge distillation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Knowledge_distillation",
+      "snippet": "In machine learning, knowledge distillation or model distillation is the process of transferring knowledge from a large model to a smaller one. While large models (such as very deep neural networks or ensembles of many models) [1] have more knowledge capacity than small models, this capacity might not be fully utilized. It can be just as computationally expensive to evaluate a model even if it ..."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "saidutta69/gemma-3-270m-math-rome-best",
+  "slug": "saidutta69-gemma-3-270m-math-rome-best",
+  "author": "saidutta69",
+  "url": "https://huggingface.co/saidutta69/gemma-3-270m-math-rome-best",
+  "created_at": "2026-11-06T21:52:06.000Z",
+  "updated_at": "2026-11-06T22:02:47.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma3_text",
+    "math",
+    "weight-space-editing",
+    "no-finetuning",
+    "rome",
+    "task-vector",
+    "en",
+    "dataset:openai/gsm8k",
+    "dataset:HuggingFaceH4/MATH-500",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 1105925188,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-3-270m · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-270m",
+      "snippet": "Text Generation model with 0.3B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Introducing Gemma 3 270M: The compact model for hyper-efficient AI",
+      "url": "https://developers.googleblog.com/en/introducing-gemma-3-270m/",
+      "snippet": "Gemma 3 270M brings strong instruction-following capabilities to a small-footprint model. As shown by the IFEval benchmark (which tests a model's ability to follow verifiable instructions), it establishes a new level of performance for its size, making sophisticated AI capabilities more accessible for on-device and research applications."
+    }
+  ]
+}

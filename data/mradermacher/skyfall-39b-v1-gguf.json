@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Skyfall-39B-v1-GGUF",
+  "slug": "mradermacher-skyfall-39b-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Skyfall-39B-v1-GGUF",
+  "created_at": "2025-02-27T08:24:18.000Z",
+  "updated_at": "2026-11-07T01:59:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:TheDrummer/Skyfall-39B-v1",
+    "base_model:quantized:TheDrummer/Skyfall-39B-v1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 39020832768,
+  "parameters_human": "39.02B",
+  "storage_bytes": 265157993728,
+  "storage_human": "265.2 GB",
+  "base_model": "TheDrummer/Skyfall-39B-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Skyfall-39B-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Skyfall-39B-v1-GGUF",
+      "snippet": "Feel free to request them by opening a Community Discussion. Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "TheDrummer/Skyfall-39B-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheDrummer/Skyfall-39B-v1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

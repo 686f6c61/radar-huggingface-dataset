@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "hdae/karume-lucida",
+  "slug": "hdae-karume-lucida",
+  "author": "hdae",
+  "url": "https://huggingface.co/hdae/karume-lucida",
+  "created_at": "2026-09-05T14:45:23.000Z",
+  "updated_at": "2026-11-06T22:24:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "karume",
+  "languages": [],
+  "tags": [
+    "karume",
+    "image-segmentation",
+    "background-removal",
+    "webgpu",
+    "birefnet",
+    "arxiv:2401.03407",
+    "base_model:egeorcun/lucida",
+    "base_model:finetune:egeorcun/lucida",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6843325153,
+  "storage_human": "6.8 GB",
+  "base_model": "egeorcun/lucida",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hdae/karume-lucida at main - Hugging Face",
+      "url": "https://huggingface.co/hdae/karume-lucida/tree/main",
+      "snippet": "Instructions to use hdae/karume-lucida with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries BiRefNet How to use hdae/karume-lucida with BiRefNet:"
+    },
+    {
+      "title": "hdae/karume-lucida · Hugging Face",
+      "url": "https://huggingface.co/hdae/karume-lucida",
+      "snippet": "hdae / karume-lucida like 0 Image Segmentation BiRefNet karume background-removal webgpu arxiv:2401.03407 License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

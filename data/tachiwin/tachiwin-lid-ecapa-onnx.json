@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "tachiwin/tachiwin-lid-ecapa-onnx",
+  "slug": "tachiwin-tachiwin-lid-ecapa-onnx",
+  "author": "tachiwin",
+  "url": "https://huggingface.co/tachiwin/tachiwin-lid-ecapa-onnx",
+  "created_at": "2026-11-06T22:32:24.000Z",
+  "updated_at": "2026-11-06T22:33:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "language-identification",
+    "audio-classification",
+    "onnxruntime-web",
+    "indigenous-languages",
+    "mexico",
+    "base_model:speechbrain/lang-id-voxlingua107-ecapa",
+    "base_model:quantized:speechbrain/lang-id-voxlingua107-ecapa",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131076401,
+  "storage_human": "131 MB",
+  "base_model": "speechbrain/lang-id-voxlingua107-ecapa",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tachiwin/tachiwin_ocr · Hugging Face",
+      "url": "https://huggingface.co/tachiwin/tachiwin_ocr",
+      "snippet": "Tachiwin OCR is a specialized Tesseract 5 model fine-tuned from the Latin base model to support Optical Character Recognition (OCR) for Mexico's 68 indigenous languages and their hundreds of variants."
+    },
+    {
+      "title": "tachiwin (Tachiwin) - Hugging Face",
+      "url": "https://huggingface.co/tachiwin/datasets",
+      "snippet": "Indigenous and Endangered Languages AI & ML interests Indigenous and Endangered Languages Recent Activity ljcamargo updated a model 7 days ago"
+    }
+  ]
+}

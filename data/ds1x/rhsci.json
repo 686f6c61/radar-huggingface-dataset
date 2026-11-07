@@ -5,7 +5,7 @@
   "author": "ds1x",
   "url": "https://huggingface.co/ds1x/RHSCI",
   "created_at": "2026-10-27T13:22:40.000Z",
-  "updated_at": "2026-11-06T04:49:25.000Z",
+  "updated_at": "2026-11-07T04:19:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 632012849023,
-  "storage_human": "632.0 GB",
+  "storage_bytes": 704216652989,
+  "storage_human": "704.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

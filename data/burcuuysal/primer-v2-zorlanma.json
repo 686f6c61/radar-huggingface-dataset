@@ -5,7 +5,7 @@
   "author": "burcuuysal",
   "url": "https://huggingface.co/burcuuysal/primer-v2-zorlanma",
   "created_at": "2026-11-04T08:03:12.000Z",
-  "updated_at": "2026-11-04T08:07:46.000Z",
+  "updated_at": "2026-11-06T08:32:49.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "tabular-classification",
@@ -19,13 +19,13 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 20,
+  "likes": 1,
+  "downloads_30d": 24,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 203,
-  "storage_human": "203 B",
+  "storage_bytes": 406,
+  "storage_human": "406 B",
   "base_model": null,
   "formats": [
     "onnx"

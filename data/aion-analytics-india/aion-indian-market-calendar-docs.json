@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aion-analytics-india/aion-indian-market-calendar-docs",
+  "slug": "aion-analytics-india-aion-indian-market-calendar-docs",
+  "author": "aion-analytics-india",
+  "url": "https://huggingface.co/aion-analytics-india/aion-indian-market-calendar-docs",
+  "created_at": "2026-07-02T06:01:19.000Z",
+  "updated_at": "2026-11-07T01:52:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "python",
+    "market-calendar",
+    "india",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AION - Gameforge",
+      "url": "https://fr.aion.gameforge.com/website/",
+      "snippet": "Devenez le héros du monde fantastique d'AION : livrez des batailles captivantes, sur terre comme dans les airs, qui vous opposent à …"
+    },
+    {
+      "title": "AION Indian Market Calendar: NSE, BSE, MCX, CDS Trading Calendar Python",
+      "url": "https://aionanalytics.in/open-source/indian-market-calendar",
+      "snippet": "Indian market calendar Python package covering NSE, BSE, MCX, and NSE Currency Derivatives (CDS) session windows and holiday calendars. Market-times agnostic across all segments. No API key required."
+    },
+    {
+      "title": "AION 2-NC",
+      "url": "https://aion2.plaync.com/fr-fr/index",
+      "snippet": "Des instances en solo aux raids à grande échelle, le contenu JcE d'AION 2 est incroyablement vaste et varié."
+    },
+    {
+      "title": "AION Indian Market Intelligence: Event to Sector Impact API",
+      "url": "https://aionanalytics.in/models/indian-market-intelligence",
+      "snippet": "Indian market intelligence API. Turn any Indian financial event into structured sector impact: which sectors move, in which direction, with confidence and evidence, as JSON. Free tier: 10 requests per month, no card."
+    },
+    {
+      "title": "AION",
+      "url": "https://en.aion.gameforge.com/",
+      "snippet": "Discover endless expanses and hardcore PvP! Become a hero in AION: charge into thrilling combat, on ground or in the air, battle …"
+    }
+  ]
+}

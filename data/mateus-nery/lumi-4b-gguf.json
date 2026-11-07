@@ -5,7 +5,7 @@
   "author": "Mateus-Nery",
   "url": "https://huggingface.co/Mateus-Nery/lumi-4b-GGUF",
   "created_at": "2026-11-01T05:35:41.000Z",
-  "updated_at": "2026-11-01T05:58:01.000Z",
+  "updated_at": "2026-11-06T16:48:23.000Z",
   "license": "lumi-4b",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -33,8 +33,8 @@
   "trending_score": 0,
   "parameters": 3973556832,
   "parameters_human": "3.97B",
-  "storage_bytes": 27766234253,
-  "storage_human": "27.8 GB",
+  "storage_bytes": 55494402349,
+  "storage_human": "55.5 GB",
   "base_model": "ceia-br/lumi-4b",
   "formats": [
     "gguf"

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "WIlfLin/S1-mini-Chinese-1106-FP8",
+  "slug": "wilflin-s1-mini-chinese-1106-fp8",
+  "author": "WIlfLin",
+  "url": "https://huggingface.co/WIlfLin/S1-mini-Chinese-1106-FP8",
+  "created_at": "2026-11-07T02:48:01.000Z",
+  "updated_at": "2026-11-07T02:48:16.000Z",
+  "license": "s1-mini-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3",
+    "qwen3-asr",
+    "transcript-normalization",
+    "chinese",
+    "code-switching",
+    "quantization",
+    "fp8",
+    "compressed-tensors",
+    "text-generation",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:WIlfLin/S1-mini-Chinese-1106-BF16",
+    "base_model:quantized:WIlfLin/S1-mini-Chinese-1106-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 1075719266,
+  "storage_human": "1.1 GB",
+  "base_model": "WIlfLin/S1-mini-Chinese-1106-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WIlfLin/S1-mini-Chinese-1106 · Hugging Face",
+      "url": "https://huggingface.co/WIlfLin/S1-mini-Chinese-1106",
+      "snippet": "Text Generation model with 0.8B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

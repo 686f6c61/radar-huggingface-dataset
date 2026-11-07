@@ -5,7 +5,7 @@
   "author": "CholoAsis",
   "url": "https://huggingface.co/CholoAsis/qnvoice-filipino-voxcpm2-gguf",
   "created_at": "2026-11-06T19:52:27.000Z",
-  "updated_at": "2026-11-06T20:04:10.000Z",
+  "updated_at": "2026-11-06T21:23:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",

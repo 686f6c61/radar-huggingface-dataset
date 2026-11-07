@@ -5,7 +5,7 @@
   "author": "Grawnch",
   "url": "https://huggingface.co/Grawnch/Qwen3.8-27B-DR-4.0bpw-v3-GGUF",
   "created_at": "2026-11-06T03:25:13.000Z",
-  "updated_at": "2026-11-06T03:27:46.000Z",
+  "updated_at": "2026-11-06T17:37:25.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -14,6 +14,7 @@
   "tags": [
     "gguf",
     "quantized",
+    "llama.cpp",
     "base_model:Qwen/Qwen3.8-27B",
     "base_model:quantized:Qwen/Qwen3.8-27B",
     "endpoints_compatible",
@@ -22,12 +23,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 18,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 17377598592,
-  "storage_human": "17.4 GB",
+  "storage_bytes": 52132795776,
+  "storage_human": "52.1 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

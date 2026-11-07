@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "ngwgsang/vietquill-steadfast-vit5-base-vnpara-G5-1e-3-20261107034452",
+  "slug": "ngwgsang-vietquill-steadfast-vit5-base-vnpara-g5-1e-3-20261107034452",
+  "author": "ngwgsang",
+  "url": "https://huggingface.co/ngwgsang/vietquill-steadfast-vit5-base-vnpara-G5-1e-3-20261107034452",
+  "created_at": "2026-11-07T03:45:18.000Z",
+  "updated_at": "2026-11-07T03:50:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:VietAI/vit5-base",
+    "base_model:finetune:VietAI/vit5-base",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 225994752,
+  "parameters_human": "226.0M",
+  "storage_bytes": 904014777,
+  "storage_human": "904 MB",
+  "base_model": "VietAI/vit5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vietquill-steadfast-vit5-base-vnpara-G5-1e-4-20251225062909",
+      "url": "https://huggingface.co/ngwgsang/vietquill-steadfast-vit5-base-vnpara-G5-1e-4-20251225062909",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ngwgsang/vietquill: VietQuill is a unified framework for ...",
+      "url": "https://github.com/ngwgsang/vietquill/tree/main",
+      "snippet": "VietQuill is a unified framework for Vietnamese paraphrase generation, evaluation, and quality control, supporting both research and production applications. We are committed to advancing Vietnamese paraphrase generation by making state-of-the-art methods accessible, customizable, and easy to integrate into real-world workflows. - ngwgsang/vietquill"
+    }
+  ]
+}

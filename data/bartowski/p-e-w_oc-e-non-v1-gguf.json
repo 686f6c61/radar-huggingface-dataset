@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "bartowski/p-e-w_Oc-e-Non-v1-GGUF",
+  "slug": "bartowski-p-e-w_oc-e-non-v1-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/p-e-w_Oc-e-Non-v1-GGUF",
+  "created_at": "2026-11-07T02:45:51.000Z",
+  "updated_at": "2026-11-07T02:52:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "heretic",
+    "terse",
+    "text-generation",
+    "base_model:p-e-w/Oc-e-Non-v1",
+    "base_model:quantized:p-e-w/Oc-e-Non-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 61492853696,
+  "storage_human": "61.5 GB",
+  "base_model": "p-e-w/Oc-e-Non-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski (Bartowski) – Models - Hugging Face",
+      "url": "https://huggingface.co/bartowski/models",
+      "snippet": "Research Engineer at arcee.ai and official model curator for lmstudio.ai, showcasing models and contributions on Hugging Face."
+    },
+    {
+      "title": "bartowski (Bartowski) - Hugging Face",
+      "url": "https://huggingface.co/bartowski",
+      "snippet": "Senior Machine Learning Engineer at RedHat"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "jayjay03311/Mellum2.1-12B-A2.5B-Thinking-Q4_K_M-ZATTU",
+  "slug": "jayjay03311-mellum2-1-12b-a2-5b-thinking-q4_k_m-zattu",
+  "author": "jayjay03311",
+  "url": "https://huggingface.co/jayjay03311/Mellum2.1-12B-A2.5B-Thinking-Q4_K_M-ZATTU",
+  "created_at": "2026-11-07T03:53:36.000Z",
+  "updated_at": "2026-11-07T03:53:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mellum2.1 12B Thinking — VRAM, Speed & Local Setup",
+      "url": "https://llmconfigurator.com/en/models/mellum/mellum-2-1-12b-a2-5b-thinking",
+      "snippet": "Run Mellum2.1 12B Thinking locally: about 9 GB VRAM at Q4_K_M, 131,072 context, JetBrains weights, with the Ollama command and per-quant speed estimates."
+    },
+    {
+      "title": "Mellum2.1-12B-A2.5B-Thinking-GGUF - Hugging Face",
+      "url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF/blob/main/Mellum2.1-12B-A2.5B-Thinking-MXFP4_MOE.gguf",
+      "snippet": "Instructions to use JetBrains/Mellum2.1-12B-A2.5B-Thinking-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

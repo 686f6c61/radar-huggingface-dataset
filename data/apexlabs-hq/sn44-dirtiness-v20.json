@@ -5,7 +5,7 @@
   "author": "apexlabs-hq",
   "url": "https://huggingface.co/apexlabs-hq/sn44-dirtiness-v20",
   "created_at": "2026-11-05T12:11:26.000Z",
-  "updated_at": "2026-11-05T12:11:30.000Z",
+  "updated_at": "2026-11-07T02:07:43.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,16 +20,16 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 9884957,
-  "storage_human": "10 MB",
+  "storage_bytes": 19769914,
+  "storage_human": "20 MB",
   "base_model": null,
   "formats": [
     "onnx"
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-11-06T04:31:16.823Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "okdohyuk/nemotron-3-diarization-coreml",
+  "slug": "okdohyuk-nemotron-3-diarization-coreml",
+  "author": "okdohyuk",
+  "url": "https://huggingface.co/okdohyuk/nemotron-3-diarization-coreml",
+  "created_at": "2026-11-06T22:45:47.000Z",
+  "updated_at": "2026-11-06T22:45:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 101349840,
+  "storage_human": "101 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nemotron-3-Diarization - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Nemotron-3-Diarization",
+      "snippet": "Nemotron-3-Diarization is an open-weight speaker diarization model developed by Nvidia and released on September 23, 2026. The model identifies which speakers are talking and when they are talking in multi-speaker audio, a task known as speaker diarization."
+    },
+    {
+      "title": "Nemotron 3 Diarization - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.21.0/en/model_doc/nemotron3_diarization",
+      "snippet": "Nemotron 3 Diarization is an open-weight streaming speaker diarization model designed to determine “who spoke when” in real-world audio. It supports both streaming and offline inference, handles up to eight speakers, and orders speaker outputs by each speaker’s first arrival in the input audio."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "HqH1111",
   "url": "https://huggingface.co/HqH1111/drivingharness-eval4-assets",
   "created_at": "2026-11-05T14:44:08.000Z",
-  "updated_at": "2026-11-05T15:08:33.000Z",
+  "updated_at": "2026-11-06T03:21:54.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 7922993618,
-  "storage_human": "7.9 GB",
+  "storage_bytes": 7963207967,
+  "storage_human": "8.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

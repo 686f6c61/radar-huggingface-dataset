@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "ai-hhmi/lmd-vitl-p8-cellmap-lvd",
+  "slug": "ai-hhmi-lmd-vitl-p8-cellmap-lvd",
+  "author": "ai-hhmi",
+  "url": "https://huggingface.co/ai-hhmi/lmd-vitl-p8-cellmap-lvd",
+  "created_at": "2026-11-06T20:46:19.000Z",
+  "updated_at": "2026-11-06T21:16:22.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "3d",
+    "electron-microscopy",
+    "fib-sem",
+    "cell-biology",
+    "organelle-segmentation",
+    "semantic-segmentation",
+    "cellmap",
+    "dinov3",
+    "vision-transformer",
+    "image-segmentation",
+    "arxiv:2508.10104",
+    "base_model:ai-hhmi/lmd-vitl-p8-simmim-lvd",
+    "base_model:finetune:ai-hhmi/lmd-vitl-p8-simmim-lvd",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 304816181,
+  "parameters_human": "304.8M",
+  "storage_bytes": 1219307252,
+  "storage_human": "1.2 GB",
+  "base_model": "ai-hhmi/lmd-vitl-p8-simmim-lvd",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-hhmi/lmd-vitl-p8-simmim-lvd · Hugging Face",
+      "url": "https://huggingface.co/ai-hhmi/lmd-vitl-p8-simmim-lvd",
+      "snippet": "A 3D ViT-L encoder for volume microscopy (electron and expansion microscopy) at 8 nm. It has the DINOv3 ViT-L architecture with 8 × 8 × 8-voxel patches. Its weights started from Meta's 2D DINOv3 ViT-L/16 checkpoint (trained on LVD-1689M), inflated to 3D, and were then pretrained for 100k steps ..."
+    },
+    {
+      "title": "ai-hhmi/lmd-vitl-p8-simmim-lvd at main - Hugging Face",
+      "url": "https://huggingface.co/ai-hhmi/lmd-vitl-p8-simmim-lvd/tree/main",
+      "snippet": "/ lmd-vitl-p8-simmim-lvd Like 0 Follow AI@HHMI 8 Image Feature Extraction Safetensors 3d electron-microscopy expansion-microscopy connectomics self-supervised simmim dinov3 vision-transformer arxiv:2508.10104 License:dinov3-license Model card FilesFiles and versions xet Community Copy to bucket main lmd-vitl-p8-simmim-lvd 1.21 GB Ctrl+K Ctrl+K ..."
+    }
+  ]
+}

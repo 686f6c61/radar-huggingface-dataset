@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Labibo/birefnet_portrait_1024",
+  "slug": "labibo-birefnet_portrait_1024",
+  "author": "Labibo",
+  "url": "https://huggingface.co/Labibo/birefnet_portrait_1024",
+  "created_at": "2026-11-06T20:50:25.000Z",
+  "updated_at": "2026-11-06T21:21:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 884762296,
+  "storage_human": "885 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZhengPeng7/BiRefNet-portrait · Hugging Face",
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet-portrait",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ZhengPeng7/BiRefNet · Hugging Face",
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet",
+      "snippet": "Image Segmentation model with 0.2B parameters, built with BiRefNet. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

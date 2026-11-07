@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "nevidomy/llmua-v1-124m",
+  "slug": "nevidomy-llmua-v1-124m",
+  "author": "nevidomy",
+  "url": "https://huggingface.co/nevidomy/llmua-v1-124m",
+  "created_at": "2026-11-06T19:14:22.000Z",
+  "updated_at": "2026-11-06T22:15:56.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llmua",
+    "text-generation",
+    "ukrainian",
+    "from-scratch",
+    "scaling-laws",
+    "muon",
+    "custom_code",
+    "uk",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:ruvimx/UkrLM-wiki",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124280320,
+  "parameters_human": "124.3M",
+  "storage_bytes": 497132160,
+  "storage_human": "497 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

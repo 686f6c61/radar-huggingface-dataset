@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "DenRakEiw/microduck-songkran-duck_7214",
+  "slug": "denrakeiw-microduck-songkran-duck_7214",
+  "author": "DenRakEiw",
+  "url": "https://huggingface.co/DenRakEiw/microduck-songkran-duck_7214",
+  "created_at": "2026-11-07T02:48:35.000Z",
+  "updated_at": "2026-11-07T02:48:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "microduck-slot:walk",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 794276,
+  "storage_human": "794276 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DenRakEiw/microduck-senate_duck_1072 · Hugging Face",
+      "url": "https://huggingface.co/DenRakEiw/microduck-senate_duck_1072",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Microduck: a tiny biped robot you can teach new tricks",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm open-source biped robot with 15 motors, a camera, LiDAR and a grasping beak. Train new behaviours in simulation. Pre-order at $399."
+    }
+  ]
+}

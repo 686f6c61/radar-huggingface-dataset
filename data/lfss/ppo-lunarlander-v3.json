@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "lfss/ppo-LunarLander-v3",
+  "slug": "lfss-ppo-lunarlander-v3",
+  "author": "lfss",
+  "url": "https://huggingface.co/lfss/ppo-LunarLander-v3",
+  "created_at": "2026-11-06T23:54:54.000Z",
+  "updated_at": "2026-11-06T23:55:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284927,
+  "storage_human": "284927 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Loi de financement de la sécurité sociale 2026 : les mesures phares",
+      "url": "https://solidarites.gouv.fr/loi-de-financement-de-la-securite-sociale-2026-les-mesures-phares",
+      "snippet": "Dec 17, 2025 · Alors que le déficit s’élève à 23 Md d’euros en 2025, la loi de financement de la sécurité sociale (LFSS) vise à le …"
+    },
+    {
+      "title": "lfss/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/lfss/ppo-LunarLander-v3",
+      "snippet": "PPO Agent playing LunarLander-v3 This is a trained model of a PPO agent playing LunarLander-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "PLFSS pour 2027 - securite-sociale.fr",
+      "url": "https://www.securite-sociale.fr/la-secu-en-detail/loi-de-financement/annee-en-cours",
+      "snippet": "Oct 12, 2026 · Le projet de loi de financement de la Sécurité sociale pour l’année 2027 (PLFSS 2027) a été présenté en Conseil des …"
+    },
+    {
+      "title": "GitHub - your-ally20/lunar-landing-v3: Deep Reinforcement Learning ...",
+      "url": "https://github.com/your-ally20/lunar-landing-v3",
+      "snippet": "LunarLander-v3 PPO Agent This repository contains an end-to-end implementation of a Deep Reinforcement Learning (DRL) agent trained to solve the LunarLander-v3 environment using Proximal Policy Optimization (PPO) via Stable-Baselines3 and Gymnasium."
+    },
+    {
+      "title": "Loi de financement de la Sécurité sociale — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Loi_de_financement_de_la_S%C3%A9curit%C3%A9_sociale",
+      "snippet": "La LFSS définit les conditions générales de l'équilibre financier des finances sociales, non son équilibre précis. Cela s'explique par le …"
+    }
+  ]
+}

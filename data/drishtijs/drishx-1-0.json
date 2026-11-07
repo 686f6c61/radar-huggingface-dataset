@@ -5,7 +5,7 @@
   "author": "drishtijs",
   "url": "https://huggingface.co/drishtijs/DrishX-1.0",
   "created_at": "2026-10-28T13:10:02.000Z",
-  "updated_at": "2026-11-05T07:28:13.000Z",
+  "updated_at": "2026-11-06T12:15:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,11 +31,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 374,
+  "downloads_30d": 402,
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
-  "storage_bytes": 3004746452,
+  "storage_bytes": 3022387260,
   "storage_human": "3.0 GB",
   "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
   "formats": [

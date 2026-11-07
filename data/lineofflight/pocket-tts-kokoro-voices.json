@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lineofflight/pocket-tts-kokoro-voices",
+  "slug": "lineofflight-pocket-tts-kokoro-voices",
+  "author": "lineofflight",
+  "url": "https://huggingface.co/lineofflight/pocket-tts-kokoro-voices",
+  "created_at": "2026-11-06T22:34:58.000Z",
+  "updated_at": "2026-11-06T22:57:17.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pocket-tts",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "it",
+    "nl"
+  ],
+  "tags": [
+    "pocket-tts",
+    "tts",
+    "text-to-speech",
+    "kokoro",
+    "voices",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "it",
+    "nl",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1556409092,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kokoro TTS — Kokoro AI Voice Generator (26 Voices) | TTS.ai",
+      "url": "https://tts.ai/voices/kokoro/",
+      "snippet": "An 82M-parameter open model from Hexgrad that delivers studio-quality speech at nearly 100x real-time. Try Kokoro text-to-speech free on TTS.ai — generate and download natural Kokoro speech online."
+    },
+    {
+      "title": "Kokoro TTS Guide: 54 Voices in Your Browser | OfflineTTS",
+      "url": "https://www.offlinetts.com/blog/kokoro-tts-complete-guide/",
+      "snippet": "Use Kokoro TTS online with 54 voices across 9 language groups. Compare q4 and fp32 models, WebGPU and WASM, privacy, export, and voice selection."
+    }
+  ]
+}

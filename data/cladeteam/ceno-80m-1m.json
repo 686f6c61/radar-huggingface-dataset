@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "CladeTeam/CENO-80M-1m",
+  "slug": "cladeteam-ceno-80m-1m",
+  "author": "CladeTeam",
+  "url": "https://huggingface.co/CladeTeam/CENO-80M-1m",
+  "created_at": "2026-07-10T04:07:17.000Z",
+  "updated_at": "2026-11-07T03:39:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ceno",
+    "text-generation",
+    "dna",
+    "genomics",
+    "dna-language-model",
+    "mamba",
+    "moe",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 157,
+  "trending_score": 0,
+  "parameters": 79290560,
+  "parameters_human": "79.3M",
+  "storage_bytes": 158595136,
+  "storage_human": "159 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - CladeTeam/CENO",
+      "url": "https://github.com/CladeTeam/CENO/tree/main",
+      "snippet": "CENO — base DNA foundation model (bfloat16), for generation / single-sequence scoring. Four sizes (80M / 300M / 600M / 1B) × three training-context stages (base / 131k / 1m) = 12 checkpoints, e.g. CladeTeam/CENO-1B-base."
+    },
+    {
+      "title": "GitHub - CladeTeam/CENO",
+      "url": "https://github.com/CladeTeam/CENO",
+      "snippet": "Model weights are published on the HuggingFace Hub under the CladeTeam organization — see the CENO collection. There are 15 checkpoints in two families: CENO — base DNA foundation model (bfloat16), for generation / single-sequence scoring. Four sizes (80M / 300M / 600M / 1B) × three training-context stages (base / 131k / 1m) = 12 checkpoints, e.g. CladeTeam/CENO-1B-base. CENO-P — MSA ..."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "helenlu94/pi05-libero-goal-matched-discrete-lora",
+  "slug": "helenlu94-pi05-libero-goal-matched-discrete-lora",
+  "author": "helenlu94",
+  "url": "https://huggingface.co/helenlu94/pi05-libero-goal-matched-discrete-lora",
+  "created_at": "2026-11-07T00:59:35.000Z",
+  "updated_at": "2026-11-07T01:00:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "pi0.5",
+    "lora",
+    "libero",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335703542,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "helenlu94/pi05-libero-goal-matched-lora · Hugging Face",
+      "url": "https://huggingface.co/helenlu94/pi05-libero-goal-matched-lora",
+      "snippet": "pi05-libero-goal-matched-lora openpi pi05_matched_lora (pi0.5 + LoRA), experiment matched_vlm_lora: the BEST-VALIDATION checkpoint, step 18000 (validation loss 0.00196; early stopping on held-out matched scenes). Selected by highest held-out sim success (0.897"
+    },
+    {
+      "title": "helenlu94/pi05-libero-goal-matched-full · Hugging Face",
+      "url": "https://huggingface.co/helenlu94/pi05-libero-goal-matched-full",
+      "snippet": "pi05-libero-goal-matched-full openpi pi05_matched_full (pi0.5 full finetune, EMA 0.999), experiment matched_full: the BEST-VALIDATION checkpoint, step 44000 (validation loss 0.00117; early stopping on held-out matched scenes). Selected by simulator success rate on the held-out matched scenes (15 scenes x 11 tasks, headless): 0.927 at step 44000."
+    }
+  ]
+}

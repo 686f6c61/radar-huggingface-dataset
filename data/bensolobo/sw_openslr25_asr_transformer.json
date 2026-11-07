@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Bensolobo/sw_openslr25_asr_transformer",
+  "slug": "bensolobo-sw_openslr25_asr_transformer",
+  "author": "Bensolobo",
+  "url": "https://huggingface.co/Bensolobo/sw_openslr25_asr_transformer",
+  "created_at": "2026-11-07T00:18:48.000Z",
+  "updated_at": "2026-11-07T00:20:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "espnet",
+  "languages": [
+    "sw"
+  ],
+  "tags": [
+    "espnet",
+    "audio",
+    "automatic-speech-recognition",
+    "sw",
+    "dataset:sw_openslr25",
+    "arxiv:1804.00015",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40279491,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Transformers - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/index",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

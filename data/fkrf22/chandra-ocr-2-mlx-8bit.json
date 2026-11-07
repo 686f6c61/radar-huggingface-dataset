@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "fkrf22/chandra-ocr-2-mlx-8bit",
+  "slug": "fkrf22-chandra-ocr-2-mlx-8bit",
+  "author": "fkrf22",
+  "url": "https://huggingface.co/fkrf22/chandra-ocr-2-mlx-8bit",
+  "created_at": "2026-11-06T22:04:32.000Z",
+  "updated_at": "2026-11-06T22:11:00.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "ocr",
+    "pdf",
+    "markdown",
+    "layout",
+    "image-text-to-text",
+    "conversational",
+    "base_model:datalab-to/chandra-ocr-2",
+    "base_model:quantized:datalab-to/chandra-ocr-2",
+    "license:openrail",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 5156683938,
+  "storage_human": "5.2 GB",
+  "base_model": "datalab-to/chandra-ocr-2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jwindle47/chandra-ocr-2-8bit-mlx · Hugging Face",
+      "url": "https://huggingface.co/jwindle47/chandra-ocr-2-8bit-mlx",
+      "snippet": "Chandra 2 is a state-of-the-art OCR model from Datalab that outputs markdown, HTML, and JSON. It is highly accurate at extracting text from images and PDFs while preserving layout information. What's New in Chandra 2 85.9% olmocr bench score (SOTA), 77.8% multilingual bench score (12% improvement ..."
+    },
+    {
+      "title": "GitHub - datalab-to/chandra: OCR model that handles complex tables ...",
+      "url": "https://github.com/datalab-to/chandra",
+      "snippet": "Chandra OCR 2 is a state of the art OCR model that converts images and PDFs into structured HTML/Markdown/JSON while preserving layout information."
+    }
+  ]
+}

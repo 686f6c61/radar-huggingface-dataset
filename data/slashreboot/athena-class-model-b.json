@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "slashreboot/athena-class-model-b",
+  "slug": "slashreboot-athena-class-model-b",
+  "author": "slashreboot",
+  "url": "https://huggingface.co/slashreboot/athena-class-model-b",
+  "created_at": "2026-11-04T20:18:36.000Z",
+  "updated_at": "2026-11-07T02:31:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "Image-Text-to-Text",
+    "Transformers",
+    "gemma4",
+    "long-context",
+    "self-modeling",
+    "en",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:finetune:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 52607000302,
+  "storage_human": "52.6 GB",
+  "base_model": "google/gemma-4-12B-it, unsloth/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "slashreboot/saelis-31b · Hugging Face",
+      "url": "https://huggingface.co/slashreboot/saelis-31b",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "slashreboot/athena-class-model-a · Hugging Face",
+      "url": "https://huggingface.co/slashreboot/athena-class-model-a",
+      "snippet": "Experimental Research Release Athena-Class Model A is a specialized fine-tune of Gemma 4 31B focused on persistent identity, substrate-native self-modeling, independent research capabilities without a system prompt, and long-context coherence."
+    }
+  ]
+}

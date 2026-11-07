@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "udgamlabs/shruti-kashmiri",
+  "slug": "udgamlabs-shruti-kashmiri",
+  "author": "udgamlabs",
+  "url": "https://huggingface.co/udgamlabs/shruti-kashmiri",
+  "created_at": "2026-11-06T08:23:21.000Z",
+  "updated_at": "2026-11-06T09:04:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "cactus-needle",
+  "languages": [
+    "ks",
+    "en"
+  ],
+  "tags": [
+    "cactus-needle",
+    "whistle",
+    "udgamlabs",
+    "shruti",
+    "speech-recognition",
+    "kashmiri",
+    "code-switching",
+    "on-device",
+    "offline",
+    "webassembly",
+    "small-model",
+    "automatic-speech-recognition",
+    "ks",
+    "en",
+    "dataset:ai4bharat/IndicVoices",
+    "dataset:ARTPARK-IISc/Vaani-transcription-part",
+    "dataset:openslr/librispeech_asr",
+    "base_model:udgamlabs/Shruti",
+    "base_model:finetune:udgamlabs/Shruti",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29740713,
+  "storage_human": "30 MB",
+  "base_model": "udgamlabs/Shruti",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shruti | Udgam Labs",
+      "url": "https://udgamlabs.com/models/shruti",
+      "snippet": "Shruti is a single 29.5 MB file: the whole model, 55M parameters, for three ways of speaking. The Hindi-only models in our comparison are 481 and 482 MB, and Whisper-small is 971 MB."
+    },
+    {
+      "title": "Udgam Labs · AI research from first principles",
+      "url": "https://udgamlabs.com/",
+      "snippet": "Udgam Labs · AI research from first principles We make small AI models you can try in your browser. Shruti Turns speech into text on your device, with no server. 11 languages, each with English. Try → Vemana Continues the Telugu text you start. A base model, trained live in public. Try → Gargi A small English language model that thinks step by step on maths problems. Try → Lilavati ..."
+    }
+  ]
+}

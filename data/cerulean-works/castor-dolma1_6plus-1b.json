@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "cerulean-works/castor-dolma1_6plus-1B",
+  "slug": "cerulean-works-castor-dolma1_6plus-1b",
+  "author": "cerulean-works",
+  "url": "https://huggingface.co/cerulean-works/castor-dolma1_6plus-1B",
+  "created_at": "2026-10-23T08:28:12.000Z",
+  "updated_at": "2026-11-07T04:36:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "castor",
+    "safety",
+    "refusal",
+    "jailbreak",
+    "seed-twins",
+    "datadecide",
+    "text-generation",
+    "en",
+    "dataset:allenai/tulu-3-sft-olmo-2-mixture-0225",
+    "dataset:allenai/olmo-2-0425-1b-preference-mix",
+    "arxiv:2610.34074",
+    "base_model:allenai/DataDecide-dolma1_6plus-1B",
+    "base_model:finetune:allenai/DataDecide-dolma1_6plus-1B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15358356624,
+  "storage_human": "15.4 GB",
+  "base_model": "allenai/DataDecide-dolma1_6plus-1B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CASTOR - a cerulean-works Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/cerulean-works/castor",
+      "snippet": "Seed-twinned DataDecide models under one safety post-training recipe, with per-prompt judge labels."
+    },
+    {
+      "title": "castor/castor at main · cerulean-works/castor · GitHub",
+      "url": "https://github.com/cerulean-works/castor/tree/main/castor",
+      "snippet": "Seed-twinned language models for studying how pretraining randomness shapes jailbreak vulnerability. - castor/castor at main · cerulean-works/castor"
+    }
+  ]
+}

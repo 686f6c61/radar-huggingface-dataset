@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "prompt-armor/l3-contrastive-onnx",
+  "slug": "prompt-armor-l3-contrastive-onnx",
+  "author": "prompt-armor",
+  "url": "https://huggingface.co/prompt-armor/l3-contrastive-onnx",
+  "created_at": "2026-03-24T12:01:24.000Z",
+  "updated_at": "2026-11-06T23:30:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "onnx",
+    "prompt-injection",
+    "security",
+    "sentence-similarity",
+    "contrastive-learning",
+    "feature-extraction",
+    "multilingual",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:quantized:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 489032160,
+  "storage_human": "489 MB",
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L3 Contrastive ONNX — prompt-armor - Hugging Face",
+      "url": "https://huggingface.co/prompt-armor/l3-contrastive-onnx",
+      "snippet": "Contrastive fine-tuned embedding model for prompt injection detection. Exported to ONNX INT8 for fast inference without PyTorch ..."
+    },
+    {
+      "title": "GitHub - prompt-armor/prompt-armor: Open-source prompt injection ...",
+      "url": "https://github.com/prompt-armor/prompt-armor",
+      "snippet": "prompt-armor runs 5 analysis layers in parallel, fuses their scores via a trained meta-classifier, and tells you exactly what was detected, with evidence and confidence — in ~24ms, offline, for free."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "tatisvivass/menos-odio-a3-robertuito",
+  "slug": "tatisvivass-menos-odio-a3-robertuito",
+  "author": "tatisvivass",
+  "url": "https://huggingface.co/tatisvivass/menos-odio-a3-robertuito",
+  "created_at": "2026-11-07T02:37:19.000Z",
+  "updated_at": "2026-11-07T02:37:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "hate-speech",
+    "spanish",
+    "robertuito",
+    "es",
+    "dataset:piuba-bigdata/contextualized_hate_speech",
+    "base_model:pysentimiento/robertuito-base-uncased",
+    "base_model:finetune:pysentimiento/robertuito-base-uncased",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108788738,
+  "parameters_human": "108.8M",
+  "storage_bytes": 435184345,
+  "storage_human": "435 MB",
+  "base_model": "pysentimiento/robertuito-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pysentimiento/robertuito: A pre-trained language model for ...",
+      "url": "https://github.com/pysentimiento/robertuito",
+      "snippet": "RoBERTuito is a pre-trained language model for user-generated content in Spanish, trained following RoBERTa guidelines on 500 million tweets. RoBERTuito comes in 3 flavors: cased, uncased, and uncased+deaccented."
+    },
+    {
+      "title": "Paper page - RoBERTuito: a pre-trained language model for social media ...",
+      "url": "https://huggingface.co/papers/2111.09453",
+      "snippet": "In this work, we present Ro BERT uito, a pre-trained language model for user-generated text in Spanish, trained on over 500 million tweets. Experiments on a benchmark of tasks involving user-generated text showed that Ro BERT uito outperformed other pre-trained language model s in Spanish."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "sangdth/phowhisper-large-mlx",
+  "slug": "sangdth-phowhisper-large-mlx",
+  "author": "sangdth",
+  "url": "https://huggingface.co/sangdth/phowhisper-large-mlx",
+  "created_at": "2026-11-06T22:26:52.000Z",
+  "updated_at": "2026-11-06T22:28:33.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "vietnamese",
+    "automatic-speech-recognition",
+    "vi",
+    "base_model:vinai/PhoWhisper-large",
+    "base_model:quantized:vinai/PhoWhisper-large",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3082909389,
+  "storage_human": "3.1 GB",
+  "base_model": "vinai/PhoWhisper-large",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PhoWhisper-large: Audio-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/phowhisper-large-vinai",
+      "snippet": "Overview PhoWhisper-large is a Vietnamese automatic speech recognition model maintained by vinai. It fine-tunes OpenAI’s multilingual Whisper architecture for Vietnamese speech, using an 844-hour training dataset that covers diverse Vietnamese accents. The model targets speech-to-text transcription rather than speech translation or text generation. The most important point before adoption is ..."
+    },
+    {
+      "title": "PhoWhisper-large: open audio or speech model | AxForge",
+      "url": "https://axforge.ai/models/phowhisper-large/",
+      "snippet": "PhoWhisper-large by vinai: an open-weight audio or speech model. Its builds, the memory each needs and the GPUs that run it, the architecture and the licence."
+    }
+  ]
+}

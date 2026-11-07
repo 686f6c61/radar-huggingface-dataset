@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "nevidomy/llmua-v1-124m-sft",
+  "slug": "nevidomy-llmua-v1-124m-sft",
+  "author": "nevidomy",
+  "url": "https://huggingface.co/nevidomy/llmua-v1-124m-sft",
+  "created_at": "2026-11-06T19:15:32.000Z",
+  "updated_at": "2026-11-06T22:15:57.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llmua",
+    "text-generation",
+    "ukrainian",
+    "sft",
+    "chat",
+    "conversational",
+    "custom_code",
+    "uk",
+    "dataset:FIdo-AI/ua-squad",
+    "dataset:FIdo-AI/ua-news",
+    "dataset:CohereLabs/aya_dataset",
+    "base_model:nevidomy/llmua-v1-124m",
+    "base_model:finetune:nevidomy/llmua-v1-124m",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124280320,
+  "parameters_human": "124.3M",
+  "storage_bytes": 497132160,
+  "storage_human": "497 MB",
+  "base_model": "nevidomy/llmua-v1-124m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "fastcoder-factory/gpt-oss-20b-FCF-ck400-ablation-halfdata",
+  "slug": "fastcoder-factory-gpt-oss-20b-fcf-ck400-ablation-halfdata",
+  "author": "fastcoder-factory",
+  "url": "https://huggingface.co/fastcoder-factory/gpt-oss-20b-FCF-ck400-ablation-halfdata",
+  "created_at": "2026-11-06T23:21:59.000Z",
+  "updated_at": "2026-11-07T01:04:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "code-optimization",
+    "lora-merged",
+    "conversational",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:finetune:openai/gpt-oss-20b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 41857429502,
+  "storage_human": "41.9 GB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fastcoder-factory/gpt-oss-20b-fastcoder-python · Hugging Face",
+      "url": "https://huggingface.co/fastcoder-factory/gpt-oss-20b-fastcoder-python",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

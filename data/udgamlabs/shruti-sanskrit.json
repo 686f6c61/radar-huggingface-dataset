@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "udgamlabs/shruti-sanskrit",
+  "slug": "udgamlabs-shruti-sanskrit",
+  "author": "udgamlabs",
+  "url": "https://huggingface.co/udgamlabs/shruti-sanskrit",
+  "created_at": "2026-11-06T05:26:50.000Z",
+  "updated_at": "2026-11-06T08:22:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "cactus-needle",
+  "languages": [
+    "sa",
+    "en"
+  ],
+  "tags": [
+    "cactus-needle",
+    "whistle",
+    "udgamlabs",
+    "shruti",
+    "speech-recognition",
+    "sanskrit",
+    "code-switching",
+    "on-device",
+    "offline",
+    "webassembly",
+    "small-model",
+    "automatic-speech-recognition",
+    "sa",
+    "en",
+    "dataset:ai4bharat/IndicVoices",
+    "dataset:openslr/librispeech_asr",
+    "base_model:udgamlabs/Shruti",
+    "base_model:finetune:udgamlabs/Shruti",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29659241,
+  "storage_human": "30 MB",
+  "base_model": "udgamlabs/Shruti",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shruti | Udgam Labs",
+      "url": "https://udgamlabs.com/models/shruti",
+      "snippet": "Small offline speech-to-text models by Udgam Labs, one per language, each with English, built on Cactus Whistle. 11 languages. They run on a phone and in the browser. Open weights under Apache-2.0."
+    },
+    {
+      "title": "Udgam Labs · AI research from first principles",
+      "url": "https://udgamlabs.com/",
+      "snippet": "Udgam Labs · AI research from first principles We make small AI models you can try in your browser. Shruti Turns speech into text on your device, with no server. 11 languages, each with English. Try → Vemana Continues the Telugu text you start. A base model, trained live in public. Try → Gargi A small English language model that thinks step by step on maths problems. Try → Lilavati ..."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-2-lyco-infinity-9b-GGUF",
+  "slug": "mradermacher-gemma-2-lyco-infinity-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-2-lyco-infinity-9b-GGUF",
+  "created_at": "2025-03-10T07:24:41.000Z",
+  "updated_at": "2026-11-06T23:44:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "mergekit",
+    "en",
+    "base_model:AELLM/gemma-2-lyco-infinity-9b",
+    "base_model:quantized:AELLM/gemma-2-lyco-infinity-9b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 161,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 83538321792,
+  "storage_human": "83.5 GB",
+  "base_model": "AELLM/gemma-2-lyco-infinity-9b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/gemma-2-lyco-infinity-9b-i1-GGUF - Socket",
+      "url": "https://socket.dev/huggingface/package/mradermacher/gemma-2-lyco-infinity-9b-i1-gguf",
+      "snippet": "We found that mradermacher/gemma-2-lyco-infinity-9b-i1-gguf demonstrated a healthy version release cadence and project activity because the last version was released less than a year ago.It has 1 open source maintainer collaborating on the project."
+    },
+    {
+      "title": "mradermacher/gemma-2-lyco-infinity-9b-i1-GGUF - Hugging Face... - Socket",
+      "url": "https://socket.dev/huggingface/package/mradermacher/gemma-2-lyco-infinity-9b-i1-gguf/files",
+      "snippet": "Version: 905d9a5176550c4407b50879616244c4ecd2da67 was published by mradermacher. Start using Socket to analyze mradermacher/gemma-2-lyco-infinity-9b-i..."
+    }
+  ]
+}

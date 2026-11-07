@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "VelkroLM/hausa-tokenizer",
+  "slug": "velkrolm-hausa-tokenizer",
+  "author": "VelkroLM",
+  "url": "https://huggingface.co/VelkroLM/hausa-tokenizer",
+  "created_at": "2026-07-28T22:43:14.000Z",
+  "updated_at": "2026-11-06T20:43:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sentencepiece",
+  "languages": [
+    "ha"
+  ],
+  "tags": [
+    "sentencepiece",
+    "tokenizer",
+    "hausa",
+    "low-resource-language",
+    "ha",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 505920,
+  "storage_human": "505920 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VelkroLM/hausa-tokenizer · Hugging Face",
+      "url": "https://huggingface.co/VelkroLM/hausa-tokenizer",
+      "snippet": "VelkroLM / hausa-tokenizer Like 0 Follow VelkroLM 3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "VelkroLM (VelkroLM) - Hugging Face",
+      "url": "https://huggingface.co/VelkroLM",
+      "snippet": "VelkroLM is a Nigeria-based AI lab building efficient language models and edge inference systems for real-world deployment. We focus on architectures that perform well across resource constraints while scaling toward larger capabilities."
+    }
+  ]
+}

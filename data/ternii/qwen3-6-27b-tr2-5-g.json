@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Ternii/Qwen3.6-27B-TR2.5-G",
+  "slug": "ternii-qwen3-6-27b-tr2-5-g",
+  "author": "Ternii",
+  "url": "https://huggingface.co/Ternii/Qwen3.6-27B-TR2.5-G",
+  "created_at": "2026-11-06T22:13:26.000Z",
+  "updated_at": "2026-11-07T00:55:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "qwen3.6",
+    "dense",
+    "trit",
+    "ternary",
+    "quantized",
+    "tr-quantisation",
+    "mixed-precision",
+    "vllm",
+    "mtp",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:nvidia/OpenCodeInstruct",
+    "dataset:EleutherAI/hendrycks_math",
+    "dataset:openai/gsm8k",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9593230336,
+  "parameters_human": "9.59B",
+  "storage_bytes": 16303930585,
+  "storage_human": "16.3 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen--qwen3.6-27b | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3.6-27b",
+      "snippet": "Multimodal 27B Qwen3.6 model for coding, reasoning, OCR, GUI interaction, and long-context video... Sign in to Microsoft Foundry to deploy this model."
+    },
+    {
+      "title": "Ternii (Wai Chung) – Models - Hugging Face",
+      "url": "https://huggingface.co/Ternii/models",
+      "snippet": "Ternii's models2 Sort: Recently updated Ternii/Qwen3.6-35B-A3B-TR2.25-G-GGUF Text Generation • 35B•Updated about 6 hours ago"
+    }
+  ]
+}

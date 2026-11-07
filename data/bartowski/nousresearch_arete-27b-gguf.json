@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "bartowski/NousResearch_Arete-27B-GGUF",
+  "slug": "bartowski-nousresearch_arete-27b-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/NousResearch_Arete-27B-GGUF",
+  "created_at": "2026-11-06T21:39:20.000Z",
+  "updated_at": "2026-11-06T22:22:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "nous-research",
+    "arete",
+    "supervised-fine-tuning",
+    "value-alignment",
+    "image-text-to-text",
+    "dataset:NousResearch/arete-data-pairs",
+    "base_model:NousResearch/Arete-27B",
+    "base_model:quantized:NousResearch/Arete-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 15,
+  "downloads_30d": 0,
+  "trending_score": 14,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 439994474400,
+  "storage_human": "440.0 GB",
+  "base_model": "NousResearch/Arete-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NousResearch/Arete-27B · Hugging Face",
+      "url": "https://huggingface.co/NousResearch/Arete-27B",
+      "snippet": "NousResearch / Arete-27B Like 7 Follow NousResearch 4.87k Text Generation Safetensors qwen3_5 nous-research arete supervised-fine-tuning value-alignment conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket Arete-27B Model details What we trained for Teacher and dataset Training Measuring the problem ..."
+    },
+    {
+      "title": "Nous Research releases Arete-27B to reduce Chinese AI propaganda",
+      "url": "https://aiunderstanding.org/news/nous-research-releases-arete-27b-to-reduce-chinese-ai-propaganda",
+      "snippet": "Nous Research has released Arete-27B, a post-trained model built on a Qwen base that reduces a measured propaganda rate from 22% to 1% while maintaining general performance."
+    }
+  ]
+}

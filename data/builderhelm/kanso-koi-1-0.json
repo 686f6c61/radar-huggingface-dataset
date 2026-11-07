@@ -5,7 +5,7 @@
   "author": "BuilderHelm",
   "url": "https://huggingface.co/BuilderHelm/Kanso-Koi-1.0",
   "created_at": "2026-10-24T01:25:45.000Z",
-  "updated_at": "2026-10-26T01:47:11.000Z",
+  "updated_at": "2026-11-06T21:27:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,11 +29,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 243,
+  "downloads_30d": 244,
   "trending_score": 0,
   "parameters": 1720574976,
   "parameters_human": "1.72B",
-  "storage_bytes": 1049276202,
+  "storage_bytes": 1049417793,
   "storage_human": "1.0 GB",
   "base_model": "mlx-community/Qwen3-1.7B-4bit",
   "formats": [

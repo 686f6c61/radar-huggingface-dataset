@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "rauldlnx10/upscale",
+  "slug": "rauldlnx10-upscale",
+  "author": "rauldlnx10",
+  "url": "https://huggingface.co/rauldlnx10/upscale",
+  "created_at": "2026-11-06T21:27:54.000Z",
+  "updated_at": "2026-11-06T21:28:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:briaai/Fibo-2.0-dev",
+    "base_model:adapter:briaai/Fibo-2.0-dev",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49586645,
+  "storage_human": "50 MB",
+  "base_model": "briaai/Fibo-2.0-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Upscale AI Models (283) | Civitai",
+      "url": "https://civitai.com/tag/upscale",
+      "snippet": "Browse 283 AI models tagged \"Upscale\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    }
+  ]
+}

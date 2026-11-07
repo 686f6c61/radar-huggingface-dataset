@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Julianlondon/bert-base-uncased-finetuned-ner-prostata_v2",
+  "slug": "julianlondon-bert-base-uncased-finetuned-ner-prostata_v2",
+  "author": "Julianlondon",
+  "url": "https://huggingface.co/Julianlondon/bert-base-uncased-finetuned-ner-prostata_v2",
+  "created_at": "2026-11-07T01:28:31.000Z",
+  "updated_at": "2026-11-07T01:29:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108907797,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435654508,
+  "storage_human": "436 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bert-base-uncased-finetuned-ner-prostata_v2 - Hugging Face",
+      "url": "https://huggingface.co/Test-FineTuning/bert-base-uncased-finetuned-ner-prostata_v2/tree/main",
+      "snippet": "Test-FineTuning / bert-base-uncased-finetuned-ner-prostata_v2 Like 0 Token Classification Transformers Safetensors bert arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "Test-FineTuning/bert-base-uncased-finetuned-ner-prostata at main",
+      "url": "https://huggingface.co/Test-FineTuning/bert-base-uncased-finetuned-ner-prostata/tree/main",
+      "snippet": "Test-FineTuning / bert-base-uncased-finetuned-ner-prostata Like 0 Token Classification Transformers Safetensors Spanish doi:10.57967/hf/11338 bert ner biomedical clinical oncology prostate-cancer spanish License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "LibreYOLO/LibreDirect3DS2v11",
+  "slug": "libreyolo-libredirect3ds2v11",
+  "author": "LibreYOLO",
+  "url": "https://huggingface.co/LibreYOLO/LibreDirect3DS2v11",
+  "created_at": "2026-11-06T21:12:57.000Z",
+  "updated_at": "2026-11-06T21:13:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": "libreyolo",
+  "languages": [],
+  "tags": [
+    "libreyolo",
+    "image-to-3d",
+    "mesh",
+    "direct3d-s2",
+    "arxiv:2505.17412",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4233921990,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LibreYOLO documentation",
+      "url": "https://www.libreyolo.com/docs",
+      "snippet": "Install, train, evaluate and export every model in LibreYOLO, the MIT-licensed computer vision library. One API across detection, segmentation, pose, depth, OCR and more."
+    },
+    {
+      "title": "GitHub - LibreYOLO/libreyolo: LibreYOLO is a MIT licensed open source ...",
+      "url": "https://github.com/LibreYOLO/libreyolo",
+      "snippet": "Training new models, such as LibreYOLO26 and MIT retrains of families with restrictive weights, costs rented GPU time, and the LibreYOLO Sponsorship Program pays for it. Companies get their logo here from $100 a month, and from $500 a month are named in every release and in the model card of every weight released while they sponsor."
+    }
+  ]
+}

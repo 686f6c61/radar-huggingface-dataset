@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "AST-1320/Qwen-Image-Edit-Diffusers",
+  "slug": "ast-1320-qwen-image-edit-diffusers",
+  "author": "AST-1320",
+  "url": "https://huggingface.co/AST-1320/Qwen-Image-Edit-Diffusers",
+  "created_at": "2026-11-05T22:28:05.000Z",
+  "updated_at": "2026-11-07T01:31:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "not-for-all-audiences",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-Edit-2509",
+    "base_model:finetune:Qwen/Qwen-Image-Edit-2509",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 715072144920,
+  "storage_human": "715.1 GB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511, Qwen/Qwen-Image-Edit-2509",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AST-1320/Qwen-Image-Edit-2511 · Hugging Face",
+      "url": "https://huggingface.co/AST-1320/Qwen-Image-Edit-2511",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "README.md · AST-1320/Qwen-Image-Lightning at main - Hugging Face",
+      "url": "https://huggingface.co/AST-1320/Qwen-Image-Lightning/blob/main/README.md",
+      "snippet": "Instructions to use AST-1320/Qwen-Image-Lightning with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use AST-1320/Qwen-Image-Lightning with Diffusers:"
+    }
+  ]
+}

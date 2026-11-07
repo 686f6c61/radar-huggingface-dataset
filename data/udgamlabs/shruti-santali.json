@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "udgamlabs/shruti-santali",
+  "slug": "udgamlabs-shruti-santali",
+  "author": "udgamlabs",
+  "url": "https://huggingface.co/udgamlabs/shruti-santali",
+  "created_at": "2026-11-06T08:24:10.000Z",
+  "updated_at": "2026-11-06T09:04:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "cactus-needle",
+  "languages": [
+    "sat",
+    "en"
+  ],
+  "tags": [
+    "cactus-needle",
+    "whistle",
+    "udgamlabs",
+    "shruti",
+    "speech-recognition",
+    "santali",
+    "code-switching",
+    "on-device",
+    "offline",
+    "webassembly",
+    "small-model",
+    "automatic-speech-recognition",
+    "sat",
+    "en",
+    "dataset:ai4bharat/IndicVoices",
+    "dataset:ARTPARK-IISc/Vaani-transcription-part",
+    "dataset:openslr/librispeech_asr",
+    "base_model:udgamlabs/Shruti",
+    "base_model:finetune:udgamlabs/Shruti",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29743048,
+  "storage_human": "30 MB",
+  "base_model": "udgamlabs/Shruti",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Udgam Labs · AI research from first principles",
+      "url": "https://udgamlabs.com/",
+      "snippet": "Udgam Labs · AI research from first principles We make small AI models you can try in your browser. Shruti Turns speech into text on your device, with no server. 11 languages, each with English. Try → Vemana Continues the Telugu text you start. A base model, trained live in public. Try → Gargi A small English language model that thinks step by step on maths problems. Try → Lilavati ..."
+    },
+    {
+      "title": "GitHub - udgamlabs/shruti: Shruti: 29.5 MB speech-to-text for Hindi ...",
+      "url": "https://github.com/udgamlabs/shruti",
+      "snippet": "Shruti: 29.5 MB speech-to-text for Hindi, English and Hinglish that runs offline on a phone, a laptop or in the browser. Built on Cactus Whistle. Docs, runnable examples and checksums; weights on Hugging Face. - udgamlabs/shruti"
+    }
+  ]
+}

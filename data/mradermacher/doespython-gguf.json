@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "mradermacher/DoesPython-GGUF",
+  "slug": "mradermacher-doespython-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/DoesPython-GGUF",
+  "created_at": "2025-03-03T02:49:25.000Z",
+  "updated_at": "2026-11-07T01:59:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:TroyDoesAI/DoesPython",
+    "base_model:quantized:TroyDoesAI/DoesPython",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 5859683328,
+  "parameters_human": "5.86B",
+  "storage_bytes": 51687952512,
+  "storage_human": "51.7 GB",
+  "base_model": "TroyDoesAI/DoesPython",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/AI-Doctor-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/AI-Doctor-GGUF",
+      "snippet": "Model tree for mradermacher/AI-Doctor-GGUF Base model TinyPixel/Llama-2-7B-bf16-sharded Finetuned"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "danaeludy/my_awesome_food_model",
+  "slug": "danaeludy-my_awesome_food_model",
+  "author": "danaeludy",
+  "url": "https://huggingface.co/danaeludy/my_awesome_food_model",
+  "created_at": "2026-11-06T20:57:51.000Z",
+  "updated_at": "2026-11-06T21:02:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "trackio",
+    "trackio:https://huggingface.co/spaces/danaeludy/huggingface-static-ce5d67",
+    "generated_from_trainer",
+    "base_model:google/vit-base-patch16-224-in21k",
+    "base_model:finetune:google/vit-base-patch16-224-in21k",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85876325,
+  "parameters_human": "85.9M",
+  "storage_bytes": 1030590789,
+  "storage_human": "1.0 GB",
+  "base_model": "google/vit-base-patch16-224-in21k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "danaeludy/my_awesome_model · Hugging Face",
+      "url": "https://huggingface.co/danaeludy/my_awesome_model",
+      "snippet": "Text Classification model with 67M parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "danaeludy/my_awesome_model at main - Hugging Face",
+      "url": "https://huggingface.co/danaeludy/my_awesome_model/tree/main",
+      "snippet": "danaeludy / my_awesome_model Like 0 Text Classification Transformers Safetensors distilbert Generated from Trainer text-embeddings-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model Libraries Transformers How to use danaeludy/my_awesome_model with Transformers: # Use a pipeline as a high-level helper from transformers import ..."
+    }
+  ]
+}

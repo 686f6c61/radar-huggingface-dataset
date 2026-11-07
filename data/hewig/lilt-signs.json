@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "hewig/lilt-signs",
+  "slug": "hewig-lilt-signs",
+  "author": "hewig",
+  "url": "https://huggingface.co/hewig/lilt-signs",
+  "created_at": "2026-11-07T01:46:26.000Z",
+  "updated_at": "2026-11-07T01:46:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "optical-music-recognition",
+    "sheet-music",
+    "fcos",
+    "object-detection",
+    "dataset:zzsi/deep-scores-v2-dense",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13383310,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiLT — A cute multimodal model that might not make you cry ... - Medium",
+      "url": "https://medium.com/@sakshi99tantak/lilt-a-cute-multimodal-model-that-might-not-make-you-cry-in-gpu-hours-f8111acc318f",
+      "snippet": "LiLT — A cute multimodal model that might not make you cry in GPU hours While multimodal models at the scale of LLMs like GPT-4 can perform tasks like document classification and entity ..."
+    }
+  ]
+}

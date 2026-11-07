@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "vcruz305/Ripple-65B-Preview-SAGE-REXL3-2.57bpw",
+  "slug": "vcruz305-ripple-65b-preview-sage-rexl3-2-57bpw",
+  "author": "vcruz305",
+  "url": "https://huggingface.co/vcruz305/Ripple-65B-Preview-SAGE-REXL3-2.57bpw",
+  "created_at": "2026-11-06T02:45:05.000Z",
+  "updated_at": "2026-11-07T01:28:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "ricursive",
+    "exl3",
+    "rexl3",
+    "quantization",
+    "mixed-precision",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:ricursiveAI/Ripple-65B-Preview",
+    "base_model:quantized:ricursiveAI/Ripple-65B-Preview",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 11170414672,
+  "parameters_human": "11.17B",
+  "storage_bytes": 22341175716,
+  "storage_human": "22.3 GB",
+  "base_model": "ricursiveAI/Ripple-65B-Preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vcruz305/Ripple-65B-Preview-SAGE-REXL3-5.41bpw · Hugging Face",
+      "url": "https://huggingface.co/vcruz305/Ripple-65B-Preview-SAGE-REXL3-5.41bpw",
+      "snippet": "Text Generation model with 23B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Ripple-65B-Preview EXL3 SGLang recipe - GitHub",
+      "url": "https://github.com/vcruz305/Ripple-65B-Preview-EXL3-SGLang-recipe",
+      "snippet": "Serves vcruz305/Ripple-65B-Preview-SAGE-REXL3-5.41bpw (SAGE-REXL3 quantized target) with the quantized vcruz305/Ripple-65B-Preview-DFlash2-SAGE-REXL3 (4.55bpw EXL3 DFlash2 draft, recommended) on SGLang 0.5.19 through the vcruz305/sglang-exl3 EXL3 plugin at commit 5d1c9ef."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "SeeSee21/Krea-2-See-Krea2-Genesis",
+  "slug": "seesee21-krea-2-see-krea2-genesis",
+  "author": "SeeSee21",
+  "url": "https://huggingface.co/SeeSee21/Krea-2-See-Krea2-Genesis",
+  "created_at": "2026-11-06T23:42:04.000Z",
+  "updated_at": "2026-11-06T23:42:23.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-image",
+    "anime",
+    "krea2",
+    "krea-2",
+    "pixel-art",
+    "comfyui",
+    "safetensors",
+    "en",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:finetune:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6892427,
+  "storage_human": "7 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "See-Krea2 - Genesis-V2 | Krea 2 Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2846618/see-krea2",
+      "snippet": "What is See-Krea2-Genesis? See-Krea2-Genesis is my personal anime checkpoint built on Krea 2 Turbo. The aim is to make anime illustration the model’s natural visual direction while keeping the fast, straightforward Turbo workflow. V2 builds on the original Genesis with longer training at higher resolution. The focus is on more image detail, better prompt following, detailed anime women and ..."
+    },
+    {
+      "title": "See-Krea2 Genesis-V2 - Checkpoint for Krea 2 | CivArchive",
+      "url": "https://civarchive.com/models/2846618?modelVersionId=3320733",
+      "snippet": "What is See-Krea2-Genesis? See-Krea2-Genesis is my personal anime checkpoint built on Krea 2 Turbo. The aim is to make anime illustration the model’s natural visual direction while keeping the fast, straightforward Turbo workflow. V2 builds on the original Genesis with longer training at higher resolution. The focus is on more image detail, better prompt following, detailed anime women and ..."
+    }
+  ]
+}

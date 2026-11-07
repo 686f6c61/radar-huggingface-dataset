@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "jonathanberi/jonathan-beri",
+  "slug": "jonathanberi-jonathan-beri",
+  "author": "jonathanberi",
+  "url": "https://huggingface.co/jonathanberi/jonathan-beri",
+  "created_at": "2026-11-06T22:50:13.000Z",
+  "updated_at": "2026-11-06T22:50:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "product-leadership",
+    "edge-ai",
+    "physical-ai",
+    "embedded",
+    "developer-platforms",
+    "robotics",
+    "reachy-mini",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jonathan Beri · Product & Strategy Executive",
+      "url": "https://jonathanberi.com/",
+      "snippet": "Jonathan Beri, product and platform executive and venture-backed founder (1x exit). Head of Product, IoT at Canonical; founder & CEO of Golioth. Building the systems that bring AI to the physical edge."
+    },
+    {
+      "title": "Jonathan Beri - Canonical | LinkedIn",
+      "url": "https://www.linkedin.com/in/jonathanberi",
+      "snippet": "View Jonathan Beri’s profile on LinkedIn, a professional community of 1 billion members."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Nakshsolanki/indus-n-1.0-flash",
+  "slug": "nakshsolanki-indus-n-1-0-flash",
+  "author": "Nakshsolanki",
+  "url": "https://huggingface.co/Nakshsolanki/indus-n-1.0-flash",
+  "created_at": "2026-11-07T04:28:57.000Z",
+  "updated_at": "2026-11-07T04:44:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nickmalhotra/ProjectIndus · Hugging Face",
+      "url": "https://huggingface.co/nickmalhotra/ProjectIndus",
+      "snippet": "nickmalhotra / ProjectIndus like 22 Text Generation Transformers Safetensors gpt2 conversational Eval Results (legacy) text-generation-inference License:osl-3.0 Model card FilesFiles and versions xet Community 8 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Paper page - INDUS: Effective and Efficient Language Models for ...",
+      "url": "https://huggingface.co/papers/2405.10725",
+      "snippet": "The suite of models include: (1) an encoder model trained using domain-specific vocabulary and corpora to address natural language understanding tasks, (2) a contrastive-learning-based general text embedding model trained using a diverse set of datasets drawn from multiple sources to address information retrieval tasks and (3) smaller versions ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "amd/Qwen3.8-Flash-Next-Quark-MXFP4",
+  "slug": "amd-qwen3-8-flash-next-quark-mxfp4",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/Qwen3.8-Flash-Next-Quark-MXFP4",
+  "created_at": "2026-08-26T00:25:48.000Z",
+  "updated_at": "2026-11-07T00:16:28.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "quark",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 13978,
+  "trending_score": 0,
+  "parameters": 119484039059,
+  "parameters_human": "119.48B",
+  "storage_bytes": 182284920452,
+  "storage_human": "182.3 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amd/Qwen3.8-Flash-Next-Quark-MXFP4 · Hugging Face",
+      "url": "https://huggingface.co/amd/Qwen3.8-Flash-Next-Quark-MXFP4",
+      "snippet": "Instructions to use amd/Qwen3.8-Flash-Next-Quark-MXFP4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use amd/Qwen3.8-Flash-Next-Quark-MXFP4 with Transformers:"
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

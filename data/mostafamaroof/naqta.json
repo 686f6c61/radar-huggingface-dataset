@@ -5,7 +5,7 @@
   "author": "MostafaMaroof",
   "url": "https://huggingface.co/MostafaMaroof/Naqta",
   "created_at": "2026-05-08T12:36:50.000Z",
-  "updated_at": "2026-11-06T02:27:17.000Z",
+  "updated_at": "2026-11-06T02:49:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 116,
+  "downloads_30d": 146,
   "trending_score": 0,
   "parameters": 558849032,
   "parameters_human": "558.8M",

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "turintech/Nemotron-3.5-Bolt-E4B-Artemis-W8A8",
+  "slug": "turintech-nemotron-3-5-bolt-e4b-artemis-w8a8",
+  "author": "turintech",
+  "url": "https://huggingface.co/turintech/Nemotron-3.5-Bolt-E4B-Artemis-W8A8",
+  "created_at": "2026-11-06T19:12:02.000Z",
+  "updated_at": "2026-11-06T20:27:41.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "turintech",
+    "artemis",
+    "nemotron",
+    "vllm",
+    "quantized",
+    "w8a8",
+    "text-generation",
+    "conversational",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 12755875668,
+  "storage_human": "12.8 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF · Hugging Face",
+      "url": "https://huggingface.co/turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF?local-app=vllm",
+      "snippet": "Quick Links Read the vLLM documentation Nemotron 3.5 Bolt E4B — Artemis Run it Faster generation with NVIDIA's DFlash drafter Run it with Ollama Run it with LM Studio Choose this model Files Additional variants Results How it was tested Recommendation notes How the files were chosen KL on held-out texts Task suite on two AMD Ryzen 9 5900X machines Speed and memory on an RTX 3060 Calibration ..."
+    },
+    {
+      "title": "turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF at main",
+      "url": "https://huggingface.co/turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF/tree/main",
+      "snippet": "Llamanew LM Studio Jan vLLM How to use turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF with vLLM: Install from pip and serve model"
+    }
+  ]
+}

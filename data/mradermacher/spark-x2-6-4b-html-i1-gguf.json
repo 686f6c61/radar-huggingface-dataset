@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Spark-x2.6-4B-HTML-i1-GGUF",
+  "slug": "mradermacher-spark-x2-6-4b-html-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Spark-x2.6-4B-HTML-i1-GGUF",
+  "created_at": "2026-11-07T00:00:34.000Z",
+  "updated_at": "2026-11-07T00:00:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1772280,
+  "parameters_human": "1.8M",
+  "storage_bytes": 7151808,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Spark-X2.6-4B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Spark-X2.6-4B-i1-GGUF",
+      "snippet": "mradermacher / Spark-X2.6-4B-i1-GGUF Like 0 Transformers GGUF English Chinese llm sparkx2_5 imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - XHToken/Spark-X2.6: Spark-x2.6 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.6",
+      "snippet": "Spark-X2.6 retains exactly the same architecture as Spark-X2.5, achieving its capability gains through improved post-training. It delivers substantial improvements in coding, agent, long-context, multilingual, reasoning, etc. These advances enable more capable and practical on-device AI for developers and users tackling real-world tasks."
+    }
+  ]
+}

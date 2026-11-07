@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Outlier-Ai/outlier-flagship-qwen36-35b-a3b-v1",
+  "slug": "outlier-ai-outlier-flagship-qwen36-35b-a3b-v1",
+  "author": "Outlier-Ai",
+  "url": "https://huggingface.co/Outlier-Ai/outlier-flagship-qwen36-35b-a3b-v1",
+  "created_at": "2026-04-25T06:59:03.000Z",
+  "updated_at": "2026-11-06T23:29:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe_text",
+    "mixture-of-experts",
+    "distillation",
+    "lora",
+    "experimental",
+    "training-failure-documented",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 34660610752,
+  "parameters_human": "34.66B",
+  "storage_bytes": 349442455869,
+  "storage_human": "349.4 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Train the Next Generation of AI as a Freelancer | Outlier AI",
+      "url": "https://outlier.ai/",
+      "snippet": "What is Outlier? A platform for building AI with expert human input. Discover Outlier AI, join a community for freelancers, and shape …"
+    },
+    {
+      "title": "Outlier-Ai/outlier-flagship-qwen36-35b-a3b-v1 · Hugging Face",
+      "url": "https://huggingface.co/Outlier-Ai/outlier-flagship-qwen36-35b-a3b-v1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Outlier",
+      "url": "https://app.outlier.ai/expert/login",
+      "snippet": "Welcome to Outlier Competitive pay, delivered weekly Set your own schedule Improve pre-release AI models using your existing …"
+    },
+    {
+      "title": "Outlier Flagship Qwen36 35b A3b V1 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/outlier-ai/outlier-flagship-qwen36-35b-a3b-v1",
+      "snippet": "Registry entry for model Outlier Flagship Qwen36 35b A3b V1; source metadata pending."
+    },
+    {
+      "title": "Outlier",
+      "url": "https://app.outlier.ai/en/expert/opportunities/4499019005",
+      "snippet": "Outlier aide les entreprises les plus innovantes au monde à améliorer leurs modèles d’IA en fournissant des retours humains. Êtes …"
+    }
+  ]
+}

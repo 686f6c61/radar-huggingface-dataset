@@ -38,12 +38,12 @@
     "conversational"
   ],
   "likes": 6,
-  "downloads_30d": 857,
+  "downloads_30d": 754,
   "trending_score": 0,
   "parameters": 2279759395,
   "parameters_human": "2.28B",
-  "storage_bytes": 34931433165,
-  "storage_human": "34.9 GB",
+  "storage_bytes": 41655642942,
+  "storage_human": "41.7 GB",
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "gguf",

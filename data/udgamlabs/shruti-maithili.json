@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "udgamlabs/shruti-maithili",
+  "slug": "udgamlabs-shruti-maithili",
+  "author": "udgamlabs",
+  "url": "https://huggingface.co/udgamlabs/shruti-maithili",
+  "created_at": "2026-11-06T08:23:36.000Z",
+  "updated_at": "2026-11-06T09:04:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "cactus-needle",
+  "languages": [
+    "mai",
+    "en"
+  ],
+  "tags": [
+    "cactus-needle",
+    "whistle",
+    "udgamlabs",
+    "shruti",
+    "speech-recognition",
+    "maithili",
+    "code-switching",
+    "on-device",
+    "offline",
+    "webassembly",
+    "small-model",
+    "automatic-speech-recognition",
+    "mai",
+    "en",
+    "dataset:ai4bharat/IndicVoices",
+    "dataset:ARTPARK-IISc/Vaani-transcription-part",
+    "dataset:openslr/librispeech_asr",
+    "base_model:udgamlabs/Shruti",
+    "base_model:finetune:udgamlabs/Shruti",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29658948,
+  "storage_human": "30 MB",
+  "base_model": "udgamlabs/Shruti",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shruti | Udgam Labs",
+      "url": "https://udgamlabs.com/models/shruti",
+      "snippet": "Small offline speech-to-text models by Udgam Labs, one per language, each with English, built on Cactus Whistle. 11 languages. They run on a phone and in the browser. Open weights under Apache-2.0."
+    },
+    {
+      "title": "udgamlabs/shruti-tamil · Hugging Face",
+      "url": "https://huggingface.co/udgamlabs/shruti-tamil",
+      "snippet": "udgamlabs / shruti-tamil Like 1 Follow Udgam Labs 25 Automatic Speech Recognition 6 datasets Tamil English cactus-needle udgamlabs shruti speech-recognition tamil code-switching on-device offline webassembly small-model License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket Shruti Tamil Quick start Results Where it falls short How it was trained Intended use and ..."
+    }
+  ]
+}

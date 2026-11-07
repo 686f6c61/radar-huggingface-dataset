@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "multimodal-vision-ai/OvisOCR3-0.8B-WebGPU-ONNX",
+  "slug": "multimodal-vision-ai-ovisocr3-0-8b-webgpu-onnx",
+  "author": "multimodal-vision-ai",
+  "url": "https://huggingface.co/multimodal-vision-ai/OvisOCR3-0.8B-WebGPU-ONNX",
+  "created_at": "2026-11-07T02:49:59.000Z",
+  "updated_at": "2026-11-07T02:50:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "qwen3_5",
+    "ocr",
+    "document-parsing",
+    "qwen3.5",
+    "webgpu",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ATH-MaaS/OvisOCR3",
+    "base_model:quantized:ATH-MaaS/OvisOCR3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2498137030,
+  "storage_human": "2.5 GB",
+  "base_model": "ATH-MaaS/OvisOCR3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "multimodal-vision-ai/R3-OvisOCR3-DocTags-0.8B-ONNX · Hugging Face",
+      "url": "https://huggingface.co/multimodal-vision-ai/R3-OvisOCR3-DocTags-0.8B-ONNX",
+      "snippet": "Like 0 Follow Multimodal Vision AI Lab, Hohai University 3 Image-Text-to-Text ONNX Chinese English qwen3_5 ocr document-understanding doctags webgpu conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket R3-OvisOCR3-DocTags-0.8B-ONNX 发布状态 输入和输出 扩充词表 训练摘要 转换前 ..."
+    },
+    {
+      "title": "OvisOCR3 Technical Report",
+      "url": "https://www.emergentmind.com/papers/2610.33066",
+      "snippet": "We introduce OvisOCR3, a 0.8B model for a broad range of OCR-related tasks. OvisOCR3 unifies document parsing, general OCR, key information extraction (KIE), document figure captioning, and cross-page table reconstruction in a single model. We train the model on real and synthetic data through continued pretraining and use domain-balanced mid-training to balance supervision across tasks with ..."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "rosieyzh/30m_fp_step_002861",
+  "slug": "rosieyzh-30m_fp_step_002861",
+  "author": "rosieyzh",
+  "url": "https://huggingface.co/rosieyzh/30m_fp_step_002861",
+  "created_at": "2026-11-07T03:31:13.000Z",
+  "updated_at": "2026-11-07T03:31:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94871680,
+  "parameters_human": "94.9M",
+  "storage_bytes": 379493024,
+  "storage_human": "379 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rosieyzh (Rosie Zhao) - Hugging Face",
+      "url": "https://huggingface.co/rosieyzh",
+      "snippet": "rosieyzh/dpo_47755273_1-checkpoint-4000-Meta-Llama-3-8B Text Generation • Updated 8 minutes ago"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=rosieyzh%2FOLMo-1B-as_fm3_tg_omi1_omi2_global_step103",
+      "snippet": "rosieyzh/OLMo-1B-as_fm3_tg_omi1_omi2_global_step103 Text Generation • 1B•Updated Jun 19, 2025• 157"
+    }
+  ]
+}

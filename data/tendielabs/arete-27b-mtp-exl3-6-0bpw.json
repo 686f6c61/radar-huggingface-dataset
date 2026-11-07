@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "TendieLabs/Arete-27B-MTP-EXL3-6.0bpw",
+  "slug": "tendielabs-arete-27b-mtp-exl3-6-0bpw",
+  "author": "TendieLabs",
+  "url": "https://huggingface.co/TendieLabs/Arete-27B-MTP-EXL3-6.0bpw",
+  "created_at": "2026-11-06T23:17:19.000Z",
+  "updated_at": "2026-11-07T02:07:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "nous-research",
+    "arete",
+    "supervised-fine-tuning",
+    "value-alignment",
+    "text-generation",
+    "conversational",
+    "dataset:NousResearch/arete-data-pairs",
+    "base_model:NousResearch/Arete-27B",
+    "base_model:quantized:NousResearch/Arete-27B",
+    "license:apache-2.0",
+    "6-bit",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11348546944,
+  "parameters_human": "11.35B",
+  "storage_bytes": 22717459252,
+  "storage_human": "22.7 GB",
+  "base_model": "NousResearch/Arete-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TendieLabs/Arete-27B-EXL3-6.0bpw · Hugging Face",
+      "url": "https://huggingface.co/TendieLabs/Arete-27B-EXL3-6.0bpw",
+      "snippet": "TendieLabs / Arete-27B-EXL3-6.0bpw Like 0 Follow Tendie Laboratories 13 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket eta son (1h)"
+    },
+    {
+      "title": "Introducing Arete-27B: Qwen3.8-27B Post-Trained To Reinforce Western ...",
+      "url": "https://nousresearch.com/arete",
+      "snippet": "We post-trained Alibaba's Qwen3.8-27B to reinforce Western values on a Chinese-trained model, and measured what changed with an 803-prompt eval across seven value categories."
+    }
+  ]
+}

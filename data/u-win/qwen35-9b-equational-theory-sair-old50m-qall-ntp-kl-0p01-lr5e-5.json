@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "U-WIN/qwen35-9b-equational-theory-sair-old50m-qall-ntp-kl-0p01-lr5e-5",
+  "slug": "u-win-qwen35-9b-equational-theory-sair-old50m-qall-ntp-kl-0p01-lr5e-5",
+  "author": "U-WIN",
+  "url": "https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-old50m-qall-ntp-kl-0p01-lr5e-5",
+  "created_at": "2026-11-06T21:07:28.000Z",
+  "updated_at": "2026-11-06T21:20:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "mathematics",
+    "equational-theory",
+    "continued-pretraining",
+    "ntp",
+    "kl-regularization",
+    "q-all",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:U-WIN/equational-exploratory-questions-full2182",
+    "dataset:U-WIN/equational-theory-sair-notes-ntp-kl-data",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 74460751036,
+  "storage_human": "74.5 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen35-9b-equational-theory-sair-notes-ntp-50m-kl-0p01",
+      "url": "https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-notes-ntp-50m-kl-0p01/tree/main",
+      "snippet": "Instructions to use U-WIN/qwen35-9b-equational-theory-sair-notes-ntp-50m-kl-0p01 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "qwen35-9b-equational-theory-sair-notes-ntp-350m-kl-0p01",
+      "url": "https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-notes-ntp-350m-kl-0p01",
+      "snippet": "Instructions to use U-WIN/qwen35-9b-equational-theory-sair-notes-ntp-350m-kl-0p01 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

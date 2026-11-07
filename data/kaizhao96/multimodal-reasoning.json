@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "kaizhao96/multimodal-reasoning",
+  "slug": "kaizhao96-multimodal-reasoning",
+  "author": "kaizhao96",
+  "url": "https://huggingface.co/kaizhao96/multimodal-reasoning",
+  "created_at": "2026-11-07T00:07:28.000Z",
+  "updated_at": "2026-11-07T00:07:33.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaizhao96 (Kai Zhao) - Hugging Face",
+      "url": "https://huggingface.co/kaizhao96",
+      "snippet": "Sort: Recently updated kaizhao96/personal-vision-language-pretraining-2024 24.8k•Updated about 15 hours ago• 3"
+    },
+    {
+      "title": "Best Multimodal LLMs (November 2026) — Ranked by Benchmark Data",
+      "url": "https://benchlm.ai/best/multimodal",
+      "snippet": "AI models ranked for multimodal understanding — images, documents, charts, and grounded visual reasoning. Top picks: Kimi K3.1 Pro, Qwen3.8 Max, Claude Opus 5.5. 57 models ranked with detailed benchmark scores; 1 tracked without a position."
+    }
+  ]
+}

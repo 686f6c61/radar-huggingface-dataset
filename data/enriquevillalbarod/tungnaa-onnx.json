@@ -5,13 +5,14 @@
   "author": "enriquevillalbarod",
   "url": "https://huggingface.co/enriquevillalbarod/tungnaa-onnx",
   "created_at": "2026-11-05T23:35:02.000Z",
-  "updated_at": "2026-11-05T23:35:02.000Z",
+  "updated_at": "2026-11-06T14:17:06.000Z",
   "license": "afl-3.0",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "onnx",
     "license:afl-3.0",
     "region:us"
   ],
@@ -20,10 +21,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 706837082,
+  "storage_human": "707 MB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "onnx"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

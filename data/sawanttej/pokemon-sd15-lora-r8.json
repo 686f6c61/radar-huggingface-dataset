@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "SawantTej/pokemon-sd15-lora-r8",
+  "slug": "sawanttej-pokemon-sd15-lora-r8",
+  "author": "SawantTej",
+  "url": "https://huggingface.co/SawantTej/pokemon-sd15-lora-r8",
+  "created_at": "2026-11-07T02:13:09.000Z",
+  "updated_at": "2026-11-07T02:17:33.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "stable-diffusion",
+    "text-to-image",
+    "lora",
+    "dataset:reach-vb/pokemon-blip-captions",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:adapter:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6414992,
+  "storage_human": "6 MB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pokemon AI Models (4,287) | Civitai",
+      "url": "https://civitai.com/tag/pokemon",
+      "snippet": "Browse 4,287 AI models tagged \"Pokemon\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "SushmaMaddali/data266-pokemon-sd15-lora-r8 · Hugging Face",
+      "url": "https://huggingface.co/SushmaMaddali/data266-pokemon-sd15-lora-r8",
+      "snippet": "This model is a derivative of Stable Diffusion 1.5 and was fine-tuned on the reach-vb/pokemon-blip-captions dataset. Pokémon characters and related artwork are copyrighted intellectual property. This model is shared only for non-commercial academic coursework and research. It must not be used for commercial purposes, impersonation, or ..."
+    }
+  ]
+}

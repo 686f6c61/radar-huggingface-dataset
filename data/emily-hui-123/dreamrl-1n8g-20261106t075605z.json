@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Emily-Hui-123/dreamrl-1n8g-20261106t075605z",
+  "slug": "emily-hui-123-dreamrl-1n8g-20261106t075605z",
+  "author": "Emily-Hui-123",
+  "url": "https://huggingface.co/Emily-Hui-123/dreamrl-1n8g-20261106t075605z",
+  "created_at": "2026-11-07T02:40:16.000Z",
+  "updated_at": "2026-11-07T02:41:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "cosmos",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "cosmos",
+    "robotics",
+    "action-policy",
+    "zh",
+    "en",
+    "dataset:Tina1114/insert_single_tube_lerobot_v30",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23072441554,
+  "storage_human": "23.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Emily-Hui-123/dreamrl-1n8g-20261014t165518z · Hugging Face",
+      "url": "https://huggingface.co/Emily-Hui-123/dreamrl-1n8g-20261014t165518z",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Emily-Hui-123 (Hui) - Hugging Face",
+      "url": "https://huggingface.co/Emily-Hui-123/models",
+      "snippet": "Emily-Hui-123's models1 Sort: Recently updated Emily-Hui-123/dreamrl-1n8g-20261014t165518z Robotics •Updated about 2 hours ago"
+    }
+  ]
+}

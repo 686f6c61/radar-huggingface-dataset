@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "bi0/hs-decide-1-flash-Q8_0-GGUF",
+  "slug": "bi0-hs-decide-1-flash-q8_0-gguf",
+  "author": "bi0",
+  "url": "https://huggingface.co/bi0/hs-decide-1-flash-Q8_0-GGUF",
+  "created_at": "2026-11-07T00:15:49.000Z",
+  "updated_at": "2026-11-07T00:15:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dgx-spark",
+    "blackwell-gb10",
+    "sm121",
+    "gguf",
+    "base_model:hindsight-ai/hs-decide-1-flash",
+    "base_model:finetune:hindsight-ai/hs-decide-1-flash",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "hindsight-ai/hs-decide-1-flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nanoandrew4/hs-decide-1-flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/nanoandrew4/hs-decide-1-flash-GGUF",
+      "snippet": "hs-decide-1-flash-bf16.gguf: bf16 weights, 1.5 GiB. Serves the model over POST /v1/systemone (noul / score / choice, multi-question supported). Quantization note: Q8_0 was A/B-gated against the official vLLM plugin math on 20 fixed payloads and failed 14 of them (max probability diff 7.85e-3); bf16 passes 19/20 (max 1.40e-3, argmax identical everywhere). Ship bf16. Downloads last month - GGUF ..."
+    }
+  ]
+}

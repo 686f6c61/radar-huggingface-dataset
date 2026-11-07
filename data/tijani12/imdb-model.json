@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Tijani12/imdb-model",
+  "slug": "tijani12-imdb-model",
+  "author": "Tijani12",
+  "url": "https://huggingface.co/Tijani12/imdb-model",
+  "created_at": "2026-11-06T22:45:42.000Z",
+  "updated_at": "2026-11-06T22:50:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "en",
+    "dataset:stanfordnlp/imdb",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tijani12/Qwen3.8-27B-Q4_K_M-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/Tijani12/Qwen3.8-27B-Q4_K_M-GGUF/tree/main",
+      "snippet": "Tijani12 / Qwen3.8-27B-Q4_K_M-GGUF like 0 Image-Text-to-Text Transformers GGUF llama-cpp gguf-my-repo conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

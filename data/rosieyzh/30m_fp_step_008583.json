@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "rosieyzh/30m_fp_step_008583",
+  "slug": "rosieyzh-30m_fp_step_008583",
+  "author": "rosieyzh",
+  "url": "https://huggingface.co/rosieyzh/30m_fp_step_008583",
+  "created_at": "2026-11-07T03:31:31.000Z",
+  "updated_at": "2026-11-07T03:31:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94871680,
+  "parameters_human": "94.9M",
+  "storage_bytes": 379493024,
+  "storage_human": "379 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rosieyzh (Rosie Zhao) · GitHub",
+      "url": "https://github.com/rosieyzh",
+      "snippet": "Code for \"Deconstructing What Makes a Good Optimizer for Language Models\" Python 3"
+    },
+    {
+      "title": "rosieyzh (Rosie Zhao) - Hugging Face",
+      "url": "https://huggingface.co/rosieyzh",
+      "snippet": "theory of machine learning, deep learning theory of machine learning, deep learning"
+    }
+  ]
+}

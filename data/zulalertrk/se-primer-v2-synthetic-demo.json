@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "zulalertrk/se-primer-v2-synthetic-demo",
+  "slug": "zulalertrk-se-primer-v2-synthetic-demo",
+  "author": "zulalertrk",
+  "url": "https://huggingface.co/zulalertrk/se-primer-v2-synthetic-demo",
+  "created_at": "2026-11-06T20:18:01.000Z",
+  "updated_at": "2026-11-06T20:18:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "onnx",
+    "education",
+    "tabular-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 498,
+  "storage_human": "498 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kurtulus7182/SEPrimer · Hugging Face",
+      "url": "https://huggingface.co/kurtulus7182/SEPrimer",
+      "snippet": "SE Primer — Kriz freni model kartı Sentetik demo (synthetic-demo): Bu artefakt yalnız scripts/generate_demo.py tarafından üretilen sentetik veriyle eğitilmiştir. Gerçek kullanıcı verisiyle eğitilmedi; gerçek öğrenci başarımı, genelleme veya üretim kullanımı iddiası taşımaz. 4 Kasım 2026'da 15 oturumluk gerçek veri toplandı, ancak 45 satırın 44'ü 0 etiketli olduğu ..."
+    }
+  ]
+}

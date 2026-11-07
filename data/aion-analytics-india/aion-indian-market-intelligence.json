@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "aion-analytics-india/aion-indian-market-intelligence",
+  "slug": "aion-analytics-india-aion-indian-market-intelligence",
+  "author": "aion-analytics-india",
+  "url": "https://huggingface.co/aion-analytics-india/aion-indian-market-intelligence",
+  "created_at": "2026-04-26T07:03:07.000Z",
+  "updated_at": "2026-11-07T02:59:46.000Z",
+  "license": "proprietary-hosted-api-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "finance",
+    "indian-markets",
+    "market-intelligence",
+    "financial-nlp",
+    "sector-impact-analysis",
+    "macro-event-analysis",
+    "policy-impact-analysis",
+    "event-driven-market-intelligence",
+    "api",
+    "mcp-server",
+    "en",
+    "hi",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 537805035,
+  "storage_human": "538 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AION - Gameforge",
+      "url": "https://fr.aion.gameforge.com/website/",
+      "snippet": "Devenez le héros du monde fantastique d'AION : livrez des batailles captivantes, sur terre comme dans les airs, qui vous opposent à …"
+    },
+    {
+      "title": "AION Analytics (India) - Sovereign intelligence infrastructure for ...",
+      "url": "https://aionanalytics.in/",
+      "snippet": "AION Analytics (India) · Founded by Lokesh Gupta Sovereign intelligence infrastructure for India's diversity. AION Analytics builds language-and-context-aware AI for markets, citizens, and developers, because generic models trained on global corpora fail at 50-kilometre scale."
+    },
+    {
+      "title": "AION 2-NC",
+      "url": "https://aion2.plaync.com/fr-fr/index",
+      "snippet": "Des instances en solo aux raids à grande échelle, le contenu JcE d'AION 2 est incroyablement vaste et varié."
+    },
+    {
+      "title": "aion-analytics-india/aion-indian-market-intelligence · Hugging Face",
+      "url": "https://huggingface.co/aion-analytics-india/aion-indian-market-intelligence",
+      "snippet": "AION Indian Market Intelligence for Macro Event & Sector Impact Analysis is a hosted market-intelligence service for Indian financial markets."
+    },
+    {
+      "title": "AION",
+      "url": "https://en.aion.gameforge.com/",
+      "snippet": "Discover endless expanses and hardcore PvP! Become a hero in AION: charge into thrilling combat, on ground or in the air, battle …"
+    }
+  ]
+}

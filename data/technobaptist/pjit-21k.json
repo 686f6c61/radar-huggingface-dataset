@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "TechnoBaptist/pjit-21k",
+  "slug": "technobaptist-pjit-21k",
+  "author": "TechnoBaptist",
+  "url": "https://huggingface.co/TechnoBaptist/pjit-21k",
+  "created_at": "2026-11-06T21:36:40.000Z",
+  "updated_at": "2026-11-06T21:36:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "pjit-21k",
+  "languages": [],
+  "tags": [
+    "pjit-21k",
+    "safetensors",
+    "text-to-image",
+    "diffusion",
+    "pixel-space",
+    "research",
+    "arxiv:2603.12893",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2184091606,
+  "parameters_human": "2.18B",
+  "storage_bytes": 8737122038,
+  "storage_human": "8.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TechnoBaptist (TechnoBaptist) - Hugging Face",
+      "url": "https://huggingface.co/TechnoBaptist/models",
+      "snippet": "TechnoBaptist 13 Follow Exo87's profile picture 1 follower · 3 following https://technob.in TechnoBaptist TechnoBaptist"
+    }
+  ]
+}

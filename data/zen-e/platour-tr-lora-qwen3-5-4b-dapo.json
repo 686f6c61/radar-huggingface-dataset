@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "zen-E/PLatour-TR-LoRA-Qwen3.5-4B-DAPO",
+  "slug": "zen-e-platour-tr-lora-qwen3-5-4b-dapo",
+  "author": "zen-E",
+  "url": "https://huggingface.co/zen-E/PLatour-TR-LoRA-Qwen3.5-4B-DAPO",
+  "created_at": "2026-11-06T21:01:40.000Z",
+  "updated_at": "2026-11-06T21:03:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:2611.06976",
+    "platour",
+    "dataset:zen-E/PLatour-DAPO-Data",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1038952816,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PLatour - a zen-E Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/zen-E/platour",
+      "snippet": "PLatour model and dataset releases. Dataset preview; model releases will be added later."
+    },
+    {
+      "title": "Qwen3.5-4B Transformer Model - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/qwen3-5-4b-model",
+      "snippet": "Qwen3.5-4B Model is a dense transformer-based language model featuring 4B parameters and specialized procedural demonstrations. Supervised fine-tuning with LoRA adapters and a chain-of-thought protocol significantly improves its step-by-step reasoning performance. It leverages extensive multilingual tokenization and a vast pretraining corpus to excel in various downstream tasks."
+    }
+  ]
+}

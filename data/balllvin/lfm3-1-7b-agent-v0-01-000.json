@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "balllvin/LFM3-1.7B-Agent-v0.01.000",
+  "slug": "balllvin-lfm3-1-7b-agent-v0-01-000",
+  "author": "balllvin",
+  "url": "https://huggingface.co/balllvin/LFM3-1.7B-Agent-v0.01.000",
+  "created_at": "2026-11-06T20:49:00.000Z",
+  "updated_at": "2026-11-06T21:12:09.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm3",
+    "text-generation",
+    "tool-calling",
+    "agent",
+    "abliterated",
+    "conversational",
+    "custom_code",
+    "dataset:nvidia/Nemotron-SFT-Agentic-v4",
+    "arxiv:2106.09685",
+    "base_model:orcarouter/LFM3-1.7B-abliterated",
+    "base_model:finetune:orcarouter/LFM3-1.7B-abliterated",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801536,
+  "parameters_human": "1.73B",
+  "storage_bytes": 3475543970,
+  "storage_human": "3.5 GB",
+  "base_model": "orcarouter/LFM3-1.7B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+      "snippet": "In the system prompt, tell the model when to search: You only have one tool right now: search_tools, which searches a catalog of many more tools. If none of your current tools can handle a request, call search_tools to find one, then call the tool it returns. Works with vLLM, SGLang, and LFM3-compatible llama.cpp builds."
+    },
+    {
+      "title": "LFM3-1.7B - Liquid AI Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm3-1.7b",
+      "snippet": "1.7B text model for local agents and specialized applications, with a 256K context window and native tool calling ← Back to Text Models LFM3-1.7B is Liquid AI’s text model for local agents and specialized applications, based on the new LFM3 tri-hybrid architecture."
+    }
+  ]
+}

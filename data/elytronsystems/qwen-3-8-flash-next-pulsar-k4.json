@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "ElytronSystems/Qwen-3.8-Flash-Next-pulsar-k4",
+  "slug": "elytronsystems-qwen-3-8-flash-next-pulsar-k4",
+  "author": "ElytronSystems",
+  "url": "https://huggingface.co/ElytronSystems/Qwen-3.8-Flash-Next-pulsar-k4",
+  "created_at": "2026-11-06T21:34:16.000Z",
+  "updated_at": "2026-11-06T21:58:20.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "pulsar",
+  "languages": [],
+  "tags": [
+    "pulsar",
+    "qwen4_exp",
+    "exl3",
+    "qwen",
+    "speculative-decoding",
+    "dgx-spark",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 169070867960,
+  "storage_human": "169.1 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next, incoai/Qwen3.8-Flash-Next-DFlash2",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen 3.8 Flash-Next: Local Installation Guide 2026",
+      "url": "https://madebybrain.com/en/blog/qwen-3-8-flash-next-installation-guide-2026",
+      "snippet": "Install Qwen 3.8 Flash-Next locally with Ollama, vLLM, or LM Studio. Full hardware requirements, benchmarks, and production tips from a Hermes AI Agent expert."
+    }
+  ]
+}

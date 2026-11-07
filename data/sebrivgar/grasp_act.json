@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "SebRivGar/grasp_ACT",
+  "slug": "sebrivgar-grasp_act",
+  "author": "SebRivGar",
+  "url": "https://huggingface.co/SebRivGar/grasp_ACT",
+  "created_at": "2026-11-07T03:23:40.000Z",
+  "updated_at": "2026-11-07T03:25:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:SebRivGar/dataset2",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QianGroup/act_grasp · Hugging Face",
+      "url": "https://huggingface.co/QianGroup/act_grasp",
+      "snippet": "Use this model Instructions to use QianGroup/act_grasp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. LeRobot How to use QianGroup/act_grasp with LeRobot:"
+    },
+    {
+      "title": "Neil7281/Grasp_ACT_1 · Hugging Face",
+      "url": "https://huggingface.co/Neil7281/Grasp_ACT_1",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    }
+  ]
+}

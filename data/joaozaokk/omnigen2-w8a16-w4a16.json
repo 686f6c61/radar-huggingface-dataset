@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/OmniGen2-W8A16-W4A16",
+  "slug": "joaozaokk-omnigen2-w8a16-w4a16",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/OmniGen2-W8A16-W4A16",
+  "created_at": "2026-11-06T23:51:18.000Z",
+  "updated_at": "2026-11-06T23:55:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusion-single-file",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "text-to-image",
+    "quantized",
+    "int8",
+    "int4",
+    "w8a16",
+    "w4a16",
+    "weight-only",
+    "en",
+    "base_model:OmniGen2/OmniGen2",
+    "base_model:quantized:OmniGen2/OmniGen2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7269411934,
+  "storage_human": "7.3 GB",
+  "base_model": "OmniGen2/OmniGen2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JoaoZaokk/OmniGen2-W8A16-W4A16 · Hugging Face",
+      "url": "https://huggingface.co/JoaoZaokk/OmniGen2-W8A16-W4A16",
+      "snippet": "JoaoZaokk / OmniGen2-W8A16-W4A16 Like 0 Text-to-Image Diffusion Single File English comfyui quantized int8 int4 w8a16 w4a16 weight-only License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "OmniGen2 - Hugging Face",
+      "url": "https://huggingface.co/OmniGen2/OmniGen2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "openadmet/5ht2-chemeleon-baseline",
+  "slug": "openadmet-5ht2-chemeleon-baseline",
+  "author": "openadmet",
+  "url": "https://huggingface.co/openadmet/5ht2-chemeleon-baseline",
+  "created_at": "2026-10-20T19:00:45.000Z",
+  "updated_at": "2026-11-07T00:45:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "chemistry",
+    "biology",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51665656,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openadmet/5ht2-chemeleon-baseline · Hugging Face",
+      "url": "https://huggingface.co/openadmet/5ht2-chemeleon-baseline",
+      "snippet": "In this repo, we have our baseline model for 5-HT2 receptor agonism. It is a multitask CheMeleon model trained on pEC50 data curated from ChEMBL for the following targets: 5-HT2A, 5-HT2B, 5-HT2C."
+    },
+    {
+      "title": "MIT Details CheMeleon Model for Low-Data Molecular Prediction - Unite.AI",
+      "url": "https://www.unite.ai/mit-details-chemeleon-model-for-low-data-molecular-prediction/",
+      "snippet": "MIT News detailed CheMeleon on November 6, 2026, presenting an open-source molecular foundation model designed to predict chemical properties when task-specific experimental data are scarce. Developed by MIT and BASF res..."
+    }
+  ]
+}

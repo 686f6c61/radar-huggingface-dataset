@@ -5,7 +5,7 @@
   "author": "PrajwalAmte",
   "url": "https://huggingface.co/PrajwalAmte/saarthi-place-matcher",
   "created_at": "2026-11-05T16:01:23.000Z",
-  "updated_at": "2026-11-05T18:16:11.000Z",
+  "updated_at": "2026-11-07T01:40:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 22565763,
   "parameters_human": "22.6M",
-  "storage_bytes": 90274332,
-  "storage_human": "90 MB",
+  "storage_bytes": 180548664,
+  "storage_human": "181 MB",
   "base_model": "sentence-transformers/all-MiniLM-L6-v2",
   "formats": [
     "safetensors"

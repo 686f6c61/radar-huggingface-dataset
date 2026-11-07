@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "id": "Outlier-Ai/Outlier-70B-V3.3",
+  "slug": "outlier-ai-outlier-70b-v3-3",
+  "author": "Outlier-Ai",
+  "url": "https://huggingface.co/Outlier-Ai/Outlier-70B-V3.3",
+  "created_at": "2026-04-14T15:38:06.000Z",
+  "updated_at": "2026-11-06T23:28:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "fr",
+    "es",
+    "pt",
+    "de",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "ar",
+    "vi",
+    "th",
+    "nl",
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "outlier_moe",
+    "text-generation",
+    "mixture-of-experts",
+    "moe",
+    "ternary",
+    "quantized",
+    "qwen2.5",
+    "outlier",
+    "local-llm",
+    "on-device",
+    "edge-ai",
+    "energy-efficient",
+    "sparse",
+    "overlay",
+    "research",
+    "apple-silicon",
+    "mac",
+    "mmlu-verified",
+    "custom_code",
+    "en",
+    "zh",
+    "fr",
+    "es",
+    "pt",
+    "de",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "ar",
+    "vi",
+    "th",
+    "nl",
+    "pl",
+    "base_model:Qwen/Qwen2.5-32B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-32B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15377,
+  "storage_human": "15377 B",
+  "base_model": "Qwen/Qwen2.5-32B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "MMLU",
+      "metric": "MMLU 5-shot",
+      "value": 83.1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Train the Next Generation of AI as a Freelancer | Outlier AI",
+      "url": "https://outlier.ai/",
+      "snippet": "What is Outlier? A platform for building AI with expert human input. Discover Outlier AI, join a community for freelancers, and shape the next generation of AI."
+    },
+    {
+      "title": "Outlier-Ai/Outlier-70B-V3.3 · Hugging Face",
+      "url": "https://huggingface.co/Outlier-Ai/Outlier-70B-V3.3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Outlier",
+      "url": "https://app.outlier.ai/expert/login",
+      "snippet": "Welcome to Outlier Competitive pay, delivered weekly Set your own schedule Improve pre-release AI models using your existing …"
+    },
+    {
+      "title": "README.md · Outlier-Ai/Outlier-70B-V3.3 at main - Hugging Face",
+      "url": "https://huggingface.co/Outlier-Ai/Outlier-70B-V3.3/blob/main/README.md",
+      "snippet": "V3.2 is a Qwen2.5-32B base + ternary MoE delta experts. V3.3 keeps all V3.2 weights byte-for-byte identical and adds two things: Identical to four decimals → YaRN 4x extends the context for free without touching short-context behavior. The shipped V3.3 includes both. The Outlier MoE architecture ..."
+    },
+    {
+      "title": "Outlier",
+      "url": "https://app.outlier.ai/en/expert/opportunities/4499019005",
+      "snippet": "Outlier aide les entreprises les plus innovantes au monde à améliorer leurs modèles d’IA en fournissant des retours humains. Êtes …"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "zengchengbin77/stock-trading-rl-agent",
+  "slug": "zengchengbin77-stock-trading-rl-agent",
+  "author": "zengchengbin77",
+  "url": "https://huggingface.co/zengchengbin77/stock-trading-rl-agent",
+  "created_at": "2026-11-07T03:43:18.000Z",
+  "updated_at": "2026-11-07T03:43:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "tensorboard",
+    "reinforcement-learning",
+    "trading",
+    "finance",
+    "stock-market",
+    "ppo",
+    "quantitative-finance",
+    "algorithmic-trading",
+    "deep-reinforcement-learning",
+    "portfolio-management",
+    "financial-ai",
+    "dataset:yahoo-finance",
+    "arxiv:1707.06347",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7372204,
+  "storage_human": "7 MB",
+  "base_model": "PPO",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Stock Trading",
+      "dataset": "FAANG Stocks (5Y Historical Data)",
+      "metric": "Best Total Return (AMZN)",
+      "value": 162.87
+    },
+    {
+      "task": "Stock Trading",
+      "dataset": "FAANG Stocks (5Y Historical Data)",
+      "metric": "Best Sharpe Ratio (AMZN)",
+      "value": 0.74
+    },
+    {
+      "task": "Stock Trading",
+      "dataset": "FAANG Stocks (5Y Historical Data)",
+      "metric": "Best Max Drawdown (TSLA)",
+      "value": 145.29
+    },
+    {
+      "task": "Stock Trading",
+      "dataset": "FAANG Stocks (5Y Historical Data)",
+      "metric": "Best Win Rate (MSFT)",
+      "value": 52.11
+    }
+  ],
+  "sources": [
+    {
+      "title": "Adilbai/stock-trading-rl-agent · Hugging Face",
+      "url": "https://huggingface.co/Adilbai/stock-trading-rl-agent",
+      "snippet": "Reinforcement Learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "README.md · Adilbai/stock-trading-rl-agent at main - Hugging Face",
+      "url": "https://huggingface.co/Adilbai/stock-trading-rl-agent/blob/main/README.md",
+      "snippet": "This model represents a sophisticated reinforcement learning trading agent trained using the Proximal Policy Optimization (PPO) algorithm. The agent learns to make optimal trading decisions across multiple stocks by analyzing technical indicators, market patterns, and portfolio states ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shogoorg/my-multimodal-embeddinggemma-2-finetuned",
+  "slug": "shogoorg-my-multimodal-embeddinggemma-2-finetuned",
+  "author": "shogoorg",
+  "url": "https://huggingface.co/shogoorg/my-multimodal-embeddinggemma-2-finetuned",
+  "created_at": "2026-11-07T01:41:13.000Z",
+  "updated_at": "2026-11-07T01:42:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "embedding_gemma2",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:3",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 438760472,
+  "parameters_human": "438.8M",
+  "storage_bytes": 909770481,
+  "storage_human": "910 MB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EmbeddingGemma 2 is a best-in-class open model for natively multimodal ...",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+      "snippet": "EmbeddingGemma 2 is the most capable model for on-device multimodal embeddings, natively mapping combinations of text, images, audio, and video into a unified embedding space."
+    },
+    {
+      "title": "google/embeddinggemma-2 · Hugging Face",
+      "url": "https://huggingface.co/google/embeddinggemma-2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "tjdoomer/system2-code",
+  "slug": "tjdoomer-system2-code",
+  "author": "tjdoomer",
+  "url": "https://huggingface.co/tjdoomer/system2-code",
+  "created_at": "2026-11-06T22:34:51.000Z",
+  "updated_at": "2026-11-06T22:36:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "modernbert",
+    "reasoning",
+    "system2",
+    "deliberation",
+    "reranker",
+    "code",
+    "consensus",
+    "calibration",
+    "text-classification",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150066652,
+  "storage_human": "150 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tjdoomer (thomas) - Hugging Face",
+      "url": "https://huggingface.co/tjdoomer",
+      "snippet": "published a model about 4 hours ago tjdoomer/nanochat-mlx-d4-experiment updated a Space 7 months ago tjdoomer/virtual-love-companion-3d View all activity"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "bambocher",
   "url": "https://huggingface.co/bambocher/Qwen3.5-0.8B-heretic",
   "created_at": "2026-11-01T08:29:34.000Z",
-  "updated_at": "2026-11-01T11:30:42.000Z",
+  "updated_at": "2026-11-06T12:57:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -22,8 +22,8 @@
     "abliterated",
     "reproducible",
     "conversational",
-    "base_model:Qwen/Qwen3.5-0.8B-Base",
-    "base_model:finetune:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
@@ -33,9 +33,9 @@
   "trending_score": 0,
   "parameters": 852985920,
   "parameters_human": "853.0M",
-  "storage_bytes": 3472957747,
-  "storage_human": "3.5 GB",
-  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "storage_bytes": 5198977781,
+  "storage_human": "5.2 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"
   ],

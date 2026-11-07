@@ -5,7 +5,7 @@
   "author": "RhoCassiopeiae",
   "url": "https://huggingface.co/RhoCassiopeiae/SoL-Refiner-LTX-2.3-GGUF",
   "created_at": "2026-10-28T23:08:49.000Z",
-  "updated_at": "2026-11-06T01:36:51.000Z",
+  "updated_at": "2026-11-06T22:20:04.000Z",
   "license": "ltx-2-community-license-agreement",
   "license_family": "unknown",
   "pipeline_tag": "video-to-video",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 7,
+  "downloads_30d": 60,
   "trending_score": 0,
-  "parameters": 19714944369,
-  "parameters_human": "19.71B",
-  "storage_bytes": 80437745874,
-  "storage_human": "80.4 GB",
+  "parameters": 13850422513,
+  "parameters_human": "13.85B",
+  "storage_bytes": 117349548890,
+  "storage_human": "117.3 GB",
   "base_model": "Efficient-Large-Model/SoL-Refiner-LTX-2.3-One-Step",
   "formats": [
     "gguf"

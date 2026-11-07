@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "debjit20504/miRNA-biobert",
+  "slug": "debjit20504-mirna-biobert",
+  "author": "debjit20504",
+  "url": "https://huggingface.co/debjit20504/miRNA-biobert",
+  "created_at": "2025-02-17T16:08:57.000Z",
+  "updated_at": "2026-11-07T03:49:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "biobert",
+    "miRNA",
+    "biomedical",
+    "LoRA",
+    "fine-tuning",
+    "dataset:custom-biomedical-dataset",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 108311810,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433270768,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "debjit20504/miRNA-biobert · Hugging Face",
+      "url": "https://huggingface.co/debjit20504/miRNA-biobert",
+      "snippet": "miRNA-BioBERT is a fine-tuned version of BioBERT, trained specifically for classifying sentences as miRNA-related (relevant) or not (irrelevant). The model is useful for automating literature reviews, extracting relevant sentences, and identifying key insights in genomic research. Base Model ..."
+    },
+    {
+      "title": "GitHub - dmis-lab/biobert: Bioinformatics'2020: BioBERT: a pre-trained ...",
+      "url": "https://github.com/dmis-lab/biobert",
+      "snippet": "This repository provides the code for fine-tuning BioBERT, a biomedical language representation model designed for biomedical text mining tasks such as biomedical named entity recognition, relation extraction, question answering, etc. Please refer to our paper BioBERT: a pre-trained biomedical language representation model for biomedical text mining for more details. This project is done by ..."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "pcldsc/Iris_drone_residual_correction_SAC",
+  "slug": "pcldsc-iris_drone_residual_correction_sac",
+  "author": "pcldsc",
+  "url": "https://huggingface.co/pcldsc/Iris_drone_residual_correction_SAC",
+  "created_at": "2026-11-06T23:06:07.000Z",
+  "updated_at": "2026-11-06T23:23:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8620027,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "speridlabs/iris-3b · Hugging Face",
+      "url": "https://huggingface.co/speridlabs/iris-3b",
+      "snippet": "The first few-step Iris came from the community: pentacoxian-dev built iris-3b-turbo-lora (code, demo), a 4-step DMD2 distillation packaged as a rank-64 LoRA. It is a lightweight 460 MB adapter trained on a single consumer GPU, far easier to download, share and build on than a full 6 GB checkpoint."
+    }
+  ]
+}

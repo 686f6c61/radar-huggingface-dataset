@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "prompt-armor/l2-injection-guard-onnx",
+  "slug": "prompt-armor-l2-injection-guard-onnx",
+  "author": "prompt-armor",
+  "url": "https://huggingface.co/prompt-armor/l2-injection-guard-onnx",
+  "created_at": "2026-11-06T23:40:56.000Z",
+  "updated_at": "2026-11-06T23:41:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "modernbert",
+    "prompt-injection",
+    "text-classification",
+    "base_model:Horizon-Labs/prompt-injection-guard-small",
+    "base_model:quantized:Horizon-Labs/prompt-injection-guard-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 302796789,
+  "storage_human": "303 MB",
+  "base_model": "Horizon-Labs/prompt-injection-guard-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - prompt-armor/prompt-armor: Open-source prompt injection ...",
+      "url": "https://github.com/prompt-armor/prompt-armor",
+      "snippet": "prompt-armor runs 5 analysis layers in parallel, fuses their scores via a trained meta-classifier, and tells you exactly what was detected, with evidence and confidence — in ~24ms, offline, for free."
+    },
+    {
+      "title": "prompt-armor · PyPI",
+      "url": "https://pypi.org/project/prompt-armor/",
+      "snippet": "prompt-armor runs 5 analysis layers in parallel, fuses their scores via a trained meta-classifier, and tells you exactly what was detected, with evidence and confidence — in ~24ms, offline, for free."
+    }
+  ]
+}

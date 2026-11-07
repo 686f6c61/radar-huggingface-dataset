@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "huggingtime12/Qwen3-1.7B-PhoMT-GRPO-BLEU-COMET",
+  "slug": "huggingtime12-qwen3-1-7b-phomt-grpo-bleu-comet",
+  "author": "huggingtime12",
+  "url": "https://huggingface.co/huggingtime12/Qwen3-1.7B-PhoMT-GRPO-BLEU-COMET",
+  "created_at": "2026-11-07T00:01:57.000Z",
+  "updated_at": "2026-11-07T00:02:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:huggingtime12/Qwen3-1.7B-PhoMT-SFT-Merged",
+    "base_model:adapter:huggingtime12/Qwen3-1.7B-PhoMT-SFT-Merged",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 290404184,
+  "storage_human": "290 MB",
+  "base_model": "huggingtime12/Qwen3-1.7B-PhoMT-SFT-Merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3_1.7_PhoMT_GRPO_BLEU_COMET_r64 - Hugging Face",
+      "url": "https://huggingface.co/huggingtime12/Qwen3_1.7_PhoMT_GRPO_BLEU_COMET_r64",
+      "snippet": "Instructions to use huggingtime12/Qwen3_1.7_PhoMT_GRPO_BLEU_COMET_r64 with libraries, inference providers, notebooks, and local apps. Follow these links to get ..."
+    },
+    {
+      "title": "huggingtime12/Qwen3_1.7_PhoMT_GRPO_BLEU_r64 · Hugging Face",
+      "url": "https://huggingface.co/huggingtime12/Qwen3_1.7_PhoMT_GRPO_BLEU_r64",
+      "snippet": "Instructions to use huggingtime12/Qwen3_1.7_PhoMT_GRPO_BLEU_r64 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

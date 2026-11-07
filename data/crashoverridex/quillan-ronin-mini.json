@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "CrashOverrideX/Quillan-Ronin-Mini",
+  "slug": "crashoverridex-quillan-ronin-mini",
+  "author": "CrashOverrideX",
+  "url": "https://huggingface.co/CrashOverrideX/Quillan-Ronin-Mini",
+  "created_at": "2026-11-07T01:57:31.000Z",
+  "updated_at": "2026-11-07T02:00:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2.5",
+    "text-generation",
+    "reasoning",
+    "ollama",
+    "bushido",
+    "sovereign",
+    "weight-space-programming",
+    "wsp",
+    "edge-ai",
+    "mobile-ai",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 397807808,
+  "storage_human": "398 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CrashOverrideX/Quillan-Ronin · Hugging Face",
+      "url": "https://huggingface.co/CrashOverrideX/Quillan-Ronin",
+      "snippet": "Quillan-Ronin v5.2.2 — The symbiotic cognitive engine powering this work. This specification is not incidental. Every component was deliberately chosen to maximize resonance with the human user while preserving architectural transparency, ethical weight, and thermodynamic grounding ..."
+    },
+    {
+      "title": "CrashOverrideX/Quillan-Ronin at main - Hugging Face",
+      "url": "https://huggingface.co/CrashOverrideX/Quillan-Ronin/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

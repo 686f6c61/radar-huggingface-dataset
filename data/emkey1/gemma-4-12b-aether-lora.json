@@ -5,7 +5,7 @@
   "author": "emkey1",
   "url": "https://huggingface.co/emkey1/Gemma-4-12B-Aether-LoRA",
   "created_at": "2026-11-03T15:50:29.000Z",
-  "updated_at": "2026-11-05T07:32:09.000Z",
+  "updated_at": "2026-11-06T05:21:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,12 +30,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 28,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 556805721,
-  "storage_human": "557 MB",
+  "storage_bytes": 1606102841,
+  "storage_human": "1.6 GB",
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "safetensors"

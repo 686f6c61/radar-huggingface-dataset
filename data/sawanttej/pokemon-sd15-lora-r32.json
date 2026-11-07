@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "SawantTej/pokemon-sd15-lora-r32",
+  "slug": "sawanttej-pokemon-sd15-lora-r32",
+  "author": "SawantTej",
+  "url": "https://huggingface.co/SawantTej/pokemon-sd15-lora-r32",
+  "created_at": "2026-11-07T02:13:13.000Z",
+  "updated_at": "2026-11-07T02:17:34.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "stable-diffusion",
+    "text-to-image",
+    "lora",
+    "dataset:reach-vb/pokemon-blip-captions",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:adapter:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25548064,
+  "storage_human": "26 MB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sd15 Pokemon Lora R32 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/djdipin/sd15-pokemon-lora-r32",
+      "snippet": "Registry entry for model Sd15 Pokemon Lora R32; source metadata pending."
+    },
+    {
+      "title": "SushmaMaddali/data266-pokemon-sd15-lora-r32 · Hugging Face",
+      "url": "https://huggingface.co/SushmaMaddali/data266-pokemon-sd15-lora-r32",
+      "snippet": "This model is a derivative of Stable Diffusion 1.5 and was fine-tuned on the reach-vb/pokemon-blip-captions dataset. Pokémon characters and related artwork are copyrighted intellectual property. This model is shared only for non-commercial academic coursework and research. It must not be used for commercial purposes, impersonation, or ..."
+    }
+  ]
+}

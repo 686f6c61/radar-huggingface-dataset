@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ElytronSystems/Nemotron-3.5-Rerank-pulsar-k4",
+  "slug": "elytronsystems-nemotron-3-5-rerank-pulsar-k4",
+  "author": "ElytronSystems",
+  "url": "https://huggingface.co/ElytronSystems/Nemotron-3.5-Rerank-pulsar-k4",
+  "created_at": "2026-10-26T12:34:13.000Z",
+  "updated_at": "2026-11-06T21:58:14.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "pulsar",
+  "languages": [],
+  "tags": [
+    "pulsar",
+    "safetensors",
+    "mistral3",
+    "exl3",
+    "nemotron",
+    "reranker",
+    "retrieval",
+    "turing",
+    "text-ranking",
+    "custom_code",
+    "base_model:nvidia/Nemotron-3.5-Rerank-8B-BF16",
+    "base_model:quantized:nvidia/Nemotron-3.5-Rerank-8B-BF16",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 51,
+  "trending_score": 0,
+  "parameters": 4250492928,
+  "parameters_human": "4.25B",
+  "storage_bytes": 4805019387,
+  "storage_human": "4.8 GB",
+  "base_model": "nvidia/Nemotron-3.5-Rerank-8B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA Debuts Open Nemotron 3.5 Models for Embedding, Reranking ...",
+      "url": "https://www.unite.ai/nvidia-debuts-open-nemotron-3-5-models-for-embedding-reranking-parsing/",
+      "snippet": "NVIDIA on October 21, 2026, expanded its Nemotron Retriever collection with new open, commercially available models for embedding, reranking, and document extraction: Nemotron 3.5 Embed in 8B BF16, 1B BF16, and 1B NVFP4..."
+    },
+    {
+      "title": "NVIDIA Nemotron 3.5 Embed, Rerank, and Parse: Advancing Agents with ...",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-retriever-world-class-agentic-retrieval",
+      "snippet": "The new models include Nemotron 3.5 Embed 8B BF16, 1B BF16, 1B NVFP4, Nemotron 3.5 Rerank 8B BF16, and Nemotron 3.5 Parse at 631M parameters. Together, these state-of-the-art models bring multimodal retrieval, relevance ranking, and document processing to enterprise agent workflows. Better Retrieval for More Efficient Agents"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "udgamlabs/shruti-sindhi",
+  "slug": "udgamlabs-shruti-sindhi",
+  "author": "udgamlabs",
+  "url": "https://huggingface.co/udgamlabs/shruti-sindhi",
+  "created_at": "2026-11-06T08:24:16.000Z",
+  "updated_at": "2026-11-06T09:04:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "cactus-needle",
+  "languages": [
+    "sd",
+    "en"
+  ],
+  "tags": [
+    "cactus-needle",
+    "whistle",
+    "udgamlabs",
+    "shruti",
+    "speech-recognition",
+    "sindhi",
+    "code-switching",
+    "on-device",
+    "offline",
+    "webassembly",
+    "small-model",
+    "automatic-speech-recognition",
+    "sd",
+    "en",
+    "dataset:ai4bharat/IndicVoices",
+    "dataset:ARTPARK-IISc/Vaani-transcription-part",
+    "dataset:openslr/librispeech_asr",
+    "base_model:udgamlabs/Shruti",
+    "base_model:finetune:udgamlabs/Shruti",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29659247,
+  "storage_human": "30 MB",
+  "base_model": "udgamlabs/Shruti",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shruti | Udgam Labs",
+      "url": "https://udgamlabs.com/models/shruti",
+      "snippet": "Shruti is a single 29.5 MB file: the whole model, 55M parameters, for three ways of speaking. The Hindi-only models in our comparison are 481 and 482 MB, and Whisper-small is 971 MB."
+    },
+    {
+      "title": "GitHub - udgamlabs/shruti: Shruti: 29.5 MB speech-to-text for Hindi ...",
+      "url": "https://github.com/udgamlabs/shruti",
+      "snippet": "Shruti: 29.5 MB speech-to-text for Hindi, English and Hinglish that runs offline on a phone, a laptop or in the browser. Built on Cactus Whistle. Docs, runnable examples and checksums; weights on Hugging Face. - udgamlabs/shruti"
+    }
+  ]
+}

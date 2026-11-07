@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "latheduy-khang2006/review-cross-modal-fusion",
+  "slug": "latheduy-khang2006-review-cross-modal-fusion",
+  "author": "latheduy-khang2006",
+  "url": "https://huggingface.co/latheduy-khang2006/review-cross-modal-fusion",
+  "created_at": "2026-11-07T00:24:11.000Z",
+  "updated_at": "2026-11-07T00:24:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multimodal AI: The Best Open-Source Vision Language Models in 2026",
+      "url": "https://www.bentoml.com/blog/multimodal-ai-a-guide-to-open-source-vision-language-models",
+      "snippet": "Multimodal AI: The Best Open-Source Vision Language Models in 2026 Explore the top open-source VLMs and find answers to some FAQs about them."
+    },
+    {
+      "title": "Cross-Modal Model Merging - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/cross-modal-model-merging",
+      "snippet": "This synthesis demonstrates that cross-modal model merging is a core problem at the intersection of deep learning, multimodal fusion, and model compression, with a rapidly expanding methodology suite designed to robustly exploit multimodal signals, transfer specialist expertise, and underpin next-generation unified AI systems."
+    }
+  ]
+}

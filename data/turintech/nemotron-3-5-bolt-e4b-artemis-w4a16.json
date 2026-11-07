@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "turintech/Nemotron-3.5-Bolt-E4B-Artemis-W4A16",
+  "slug": "turintech-nemotron-3-5-bolt-e4b-artemis-w4a16",
+  "author": "turintech",
+  "url": "https://huggingface.co/turintech/Nemotron-3.5-Bolt-E4B-Artemis-W4A16",
+  "created_at": "2026-11-06T19:17:40.000Z",
+  "updated_at": "2026-11-06T20:27:45.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "turintech",
+    "artemis",
+    "nemotron",
+    "vllm",
+    "quantized",
+    "w4a16",
+    "text-generation",
+    "conversational",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 11306953684,
+  "storage_human": "11.3 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF at main",
+      "url": "https://huggingface.co/turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF/tree/main",
+      "snippet": "Llamanew LM Studio Jan vLLM How to use turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "README.md · turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF at main",
+      "url": "https://huggingface.co/turintech/Nemotron-3.5-Bolt-E4B-Artemis-GGUF/blob/main/README.md",
+      "snippet": "Faster generation with NVIDIA's DFlash drafter NVIDIA publishes a DFlash drafter for this model, Nemotron-3.5-Bolt-E4B-DFlash-BF16.gguf (737 MB) in nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash (revision 0949a2e, OpenMDW-1.1). It is not in this repository. It proposes the next tokens for the main file to check and does not run on its own."
+    }
+  ]
+}

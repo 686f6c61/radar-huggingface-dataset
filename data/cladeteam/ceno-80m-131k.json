@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "CladeTeam/CENO-80M-131k",
+  "slug": "cladeteam-ceno-80m-131k",
+  "author": "CladeTeam",
+  "url": "https://huggingface.co/CladeTeam/CENO-80M-131k",
+  "created_at": "2026-07-10T04:06:55.000Z",
+  "updated_at": "2026-11-07T03:39:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ceno",
+    "text-generation",
+    "dna",
+    "genomics",
+    "dna-language-model",
+    "mamba",
+    "moe",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 144,
+  "trending_score": 0,
+  "parameters": 79290560,
+  "parameters_human": "79.3M",
+  "storage_bytes": 158595136,
+  "storage_human": "159 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CladeTeam/CENO-80M-131k · Hugging Face",
+      "url": "https://huggingface.co/CladeTeam/CENO-80M-131k",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - CladeTeam/CENO",
+      "url": "https://github.com/CladeTeam/CENO",
+      "snippet": "📦 Checkpoints Model weights are published on the HuggingFace Hub under the CladeTeam organization — see the CENO collection. There are 15 checkpoints in two families: CENO — base DNA foundation model (bfloat16), for generation / single-sequence scoring."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "InflexCZE/Ternary-Bonsai-2-27B-MLC",
+  "slug": "inflexcze-ternary-bonsai-2-27b-mlc",
+  "author": "InflexCZE",
+  "url": "https://huggingface.co/InflexCZE/Ternary-Bonsai-2-27B-MLC",
+  "created_at": "2026-10-23T22:47:39.000Z",
+  "updated_at": "2026-11-06T23:13:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlc-llm",
+  "languages": [],
+  "tags": [
+    "mlc-llm",
+    "gguf",
+    "qwen3_8",
+    "qwen3_5",
+    "ternary",
+    "bonsai",
+    "conversational",
+    "webgpu",
+    "browser-inference",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6229208037,
+  "storage_human": "6.2 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "InflexCZE/Ternary-Bonsai-2-27B-MLC · Hugging Face",
+      "url": "https://huggingface.co/InflexCZE/Ternary-Bonsai-2-27B-MLC",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ternary Bonsai 2 27B - Bonsai - docs.prismml.com",
+      "url": "https://docs.prismml.com/models/bonsai-2-27b",
+      "snippet": "Ternary Bonsai 2 27B is the largest model in the family and the demo repo’s default. It is derived from Qwen3.8-27B, a hybrid-attention causal language model, with the architecture unchanged. Every language-model weight is ternary: {−1, 0, +1} in a fixed rotated basis, with an FP16 scale per group of 128 weights. It takes images as well as text, carries a 262K-token context, calls tools ..."
+    }
+  ]
+}

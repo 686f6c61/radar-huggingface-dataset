@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "bi0/diffusiongemma-26B-A4B-it-NVFP4",
+  "slug": "bi0-diffusiongemma-26b-a4b-it-nvfp4",
+  "author": "bi0",
+  "url": "https://huggingface.co/bi0/diffusiongemma-26B-A4B-it-NVFP4",
+  "created_at": "2026-11-07T00:15:57.000Z",
+  "updated_at": "2026-11-07T00:15:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dgx-spark",
+    "blackwell-gb10",
+    "sm121",
+    "nvfp4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/diffusiongemma-26b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/diffusiongemma-26B-A4B-it · Hugging Face",
+      "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
+      "snippet": "License: Apache 2.0 | Authors: Google DeepMind DiffusionGemma is a generative model built by Google DeepMind. Based on the 26B A4B Mixture-of-Experts (MoE) Gemma 4 architecture, DiffusionGemma generates tokens using discrete diffusion. This open-weights model is multimodal, handling text, image, and video inputs to generate text output."
+    },
+    {
+      "title": "diffusiongemma-26b-a4b-it Model by Google | NVIDIA NIM",
+      "url": "https://build.nvidia.com/google/diffusiongemma-26b-a4b-it/modelcard",
+      "snippet": "DiffusionGemma 26B A4B IT Description: DiffusionGemma 26B A4B IT is an open-weights multimodal generative model developed by Google DeepMind that processes text, image, and video inputs to produce text output via discrete diffusion. Built on the Gemma 4 26B A4B Mixture-of-Experts (MoE) architecture with 25.2B total parameters and 3.8B active parameters, the model employs an encoder-decoder ..."
+    }
+  ]
+}

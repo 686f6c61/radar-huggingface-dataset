@@ -5,7 +5,7 @@
   "author": "Avifenesh",
   "url": "https://huggingface.co/Avifenesh/k2h-c7-anchor-s300",
   "created_at": "2026-11-05T10:51:31.000Z",
-  "updated_at": "2026-11-05T11:56:49.000Z",
+  "updated_at": "2026-11-06T15:09:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

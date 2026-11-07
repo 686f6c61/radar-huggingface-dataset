@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Xananthium/Calmer-V2-Qwen3.8-27B-4bit",
+  "slug": "xananthium-calmer-v2-qwen3-8-27b-4bit",
+  "author": "Xananthium",
+  "url": "https://huggingface.co/Xananthium/Calmer-V2-Qwen3.8-27B-4bit",
+  "created_at": "2026-11-07T01:09:59.000Z",
+  "updated_at": "2026-11-07T01:11:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3.8",
+    "weight-editing",
+    "experimental",
+    "reasoning",
+    "text-generation",
+    "en",
+    "base_model:HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "base_model:merge:HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 20048671922,
+  "storage_human": "20.0 GB",
+  "base_model": "HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: “Please reason step by step, and put your final answer within \\boxed {}.” For the remaining models, we report the higher score from two prompt variants—one with and one without the \\boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-Weight-Space-Programming/release at main · Xananthium ... - GitHub",
+      "url": "https://github.com/Xananthium/Qwen3.8-Weight-Space-Programming/tree/main/release",
+      "snippet": "Release artifact identities The model files are hosted at Xananthium/Calmer-Qwen3.8-27B-4bit. This directory preserves their publication identities and artifact-specific validation."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "lathebrandon/swin-t-demo",
+  "slug": "lathebrandon-swin-t-demo",
+  "author": "lathebrandon",
+  "url": "https://huggingface.co/lathebrandon/swin-t-demo",
+  "created_at": "2026-11-06T22:33:39.000Z",
+  "updated_at": "2026-11-06T22:33:45.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lathebrandon (Brandon J. Cook) - Hugging Face",
+      "url": "https://huggingface.co/lathebrandon/models",
+      "snippet": "robotics, model compression, responsible ai Recent Activity updated a model1 day ago lathebrandon/multitask published a model1 day ago lathebrandon/multitask liked a dataset1 day ago kazuyi1222/loralora View all activity"
+    },
+    {
+      "title": "lathebrandon (Brandon J. Cook) - Hugging Face",
+      "url": "https://huggingface.co/lathebrandon",
+      "snippet": "robotics, model compression, responsible ai Recent Activity updated a modelabout 23 hours ago lathebrandon/multitask published a modelabout 23 hours ago lathebrandon/multitask liked a datasetabout 23 hours ago kazuyi1222/loralora View all activity"
+    }
+  ]
+}

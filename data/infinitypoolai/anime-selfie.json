@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "infinitypoolai/Anime-Selfie",
+  "slug": "infinitypoolai-anime-selfie",
+  "author": "infinitypoolai",
+  "url": "https://huggingface.co/infinitypoolai/Anime-Selfie",
+  "created_at": "2026-11-07T02:42:34.000Z",
+  "updated_at": "2026-11-07T02:42:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anime-selfie",
+    "photo-to-anime",
+    "anime-filter",
+    "ai-avatar",
+    "image-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnimeSelfieAI - Poe",
+      "url": "https://poe.com/AnimeSelfieAI",
+      "snippet": "I am an AI assistant that helps users create anime-style selfies. Users can send me a photo and the name of an anime character, and I will generate a detailed prompt and description for an anime-style selfie featuring the user and the character. I provide: Pose suggestions Background ideas Expression and style guidance Anime art style recommendations (Shonen, Shoujo, Studio Ghibli, etc.) I do ..."
+    },
+    {
+      "title": "Anime Me — Turn Yourself Into an Anime Character | AniComic.ai",
+      "url": "https://anicomic.ai/go/anime-me",
+      "snippet": "Turn your photos into anime self-portraits with our free anime me tool. Upload a selfie, choose your style, and get see yourself as an anime hero in seconds — no drawing skills needed."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/P-H3-Image-W4A16",
+  "slug": "joaozaokk-p-h3-image-w4a16",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/P-H3-Image-W4A16",
+  "created_at": "2026-11-07T01:02:11.000Z",
+  "updated_at": "2026-11-07T01:03:38.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "text-to-image",
+    "image-editing",
+    "quantized",
+    "int4",
+    "w4a16",
+    "base_model:PrunaAI/P-H3-Image-Comfy",
+    "base_model:quantized:PrunaAI/P-H3-Image-Comfy",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13362959761,
+  "storage_human": "13.4 GB",
+  "base_model": "PrunaAI/P-H3-Image-Comfy",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JoaoZaokk (Joao Zao) – Datasets - Hugging Face",
+      "url": "https://huggingface.co/JoaoZaokk/datasets",
+      "snippet": "JoaoZaokk's datasets9 Sort: Recently updated JoaoZaokk/g4-e2e-ltx-2.5-teste Updated 9 days ago• 386"
+    }
+  ]
+}

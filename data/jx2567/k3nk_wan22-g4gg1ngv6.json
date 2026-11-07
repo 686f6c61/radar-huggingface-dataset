@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Jx2567/k3nk_wan22-G4GG1NGv6",
+  "slug": "jx2567-k3nk_wan22-g4gg1ngv6",
+  "author": "Jx2567",
+  "url": "https://huggingface.co/Jx2567/k3nk_wan22-G4GG1NGv6",
+  "created_at": "2026-11-06T22:49:42.000Z",
+  "updated_at": "2026-11-06T22:51:07.000Z",
+  "license": "unlicense",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unlicense",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 599014616,
+  "storage_human": "599 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jx2567 (Jon) - Hugging Face",
+      "url": "https://huggingface.co/Jx2567/datasets",
+      "snippet": "Recent Activity published a model5 days ago Jx2567/DaSiWaWAN2.2-i2v14B-Lightspeed-v11 updated a model2 months ago Jx2567/K3NK_4llinOne-NSFW_Helper published a model2 months ago Jx2567/K3NK_4llinOne-NSFW_Helper View all activity"
+    },
+    {
+      "title": "Jx2567 (Jon) - Hugging Face",
+      "url": "https://huggingface.co/Jx2567",
+      "snippet": "Sort: Recently updated. Jx2567/K3NK_4llinOne-NSFW_Helper. Updated about 4 hours ago. Jx2567/WAN_2.2_I2V-Breast_Play"
+    }
+  ]
+}

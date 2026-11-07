@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "haraberget/WanGP-Injection",
+  "slug": "haraberget-wangp-injection",
+  "author": "haraberget",
+  "url": "https://huggingface.co/haraberget/WanGP-Injection",
+  "created_at": "2026-10-31T09:00:34.000Z",
+  "updated_at": "2026-11-06T22:49:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7069,
+  "storage_human": "7069 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Prompt Injection Cheatsheet - GitHub",
+      "url": "https://github.com/nukIeer/AI-Prompt-Injection-Cheatsheet",
+      "snippet": "The AI/LLM Prompt Injection Cheatsheet — 2026 Edition A curated arsenal of 2026-era prompt injection payloads and attack techniques targeting modern frontier models — including reasoning engines, agentic pipelines, multimodal inputs, tool-use chains, and RAG systems."
+    },
+    {
+      "title": "GitHub - deepbeepmeep/WanGP: A fast AI Video Generator for the GPU Poor ...",
+      "url": "https://github.com/deepbeepmeep/WanGP",
+      "snippet": "WanGP by DeepBeepMeep : The best Open Source Generative Models Accessible to the GPU Poor WanGP is a one-stop super app for open source generative models: create videos, images, music, speech and 3D assets, then step inside interactive worlds. Run locally on your own GPU, use the browser interface, or let Deepy Prime turn your ideas into finished creations."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "PCNTechnologyEnterprise/ChatIPC",
+  "slug": "pcntechnologyenterprise-chatipc",
+  "author": "PCNTechnologyEnterprise",
+  "url": "https://huggingface.co/PCNTechnologyEnterprise/ChatIPC",
+  "created_at": "2026-08-24T06:45:18.000Z",
+  "updated_at": "2026-11-06T20:23:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "arxiv:2208.00335",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 463815105,
+  "storage_human": "464 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PCNTechnologyEnterprise (PCN Technology) - Hugging Face",
+      "url": "https://huggingface.co/PCNTechnologyEnterprise",
+      "snippet": "How modern AI techniques can improve symbolic AI techniques and vice versa."
+    },
+    {
+      "title": "PCNTechnologyEnterprise AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/pcntechnologyenterprise",
+      "snippet": "Browse AI models attributed to PCNTechnologyEnterprise, sourced from verified model catalogs."
+    }
+  ]
+}

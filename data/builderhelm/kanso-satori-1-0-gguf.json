@@ -5,7 +5,7 @@
   "author": "BuilderHelm",
   "url": "https://huggingface.co/BuilderHelm/Kanso-Satori-1.0-GGUF",
   "created_at": "2026-11-03T19:37:19.000Z",
-  "updated_at": "2026-11-04T20:28:42.000Z",
+  "updated_at": "2026-11-06T21:27:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,11 +36,11 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 202,
+  "downloads_30d": 254,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
-  "storage_bytes": 28752432864,
+  "storage_bytes": 28752585405,
   "storage_human": "28.8 GB",
   "base_model": "BuilderHelm/Kanso-Satori-1.0, BuilderHelm/Kanso-Satori-1.0-bf16",
   "formats": [

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "IsValorum/Apex-35B-V1.0-APEX-I-MiniPlus-V2.1-GGUF",
+  "slug": "isvalorum-apex-35b-v1-0-apex-i-miniplus-v2-1-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/Apex-35B-V1.0-APEX-I-MiniPlus-V2.1-GGUF",
+  "created_at": "2026-11-07T01:10:21.000Z",
+  "updated_at": "2026-11-07T01:33:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "apex",
+    "apex-quant",
+    "apex-i-miniplus",
+    "v2.1",
+    "moe",
+    "qwen35moe",
+    "qwen3_5_moe",
+    "qwen3.6",
+    "mtp",
+    "imatrix",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "agent",
+    "research",
+    "base_model:Apexintelligence-AI/Apex-35B-V1.0",
+    "base_model:quantized:Apexintelligence-AI/Apex-35B-V1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 15230815456,
+  "storage_human": "15.2 GB",
+  "base_model": "Apexintelligence-AI/Apex-35B-V1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "APEX-I Legacy Archive (V1 & V2) - a IsValorum Collection",
+      "url": "https://huggingface.co/collections/IsValorum/apex-i-legacy-archive-v1-and-v2",
+      "snippet": "Archival preservation of legacy APEX-I V1 and V2 models, superseded by V2.1 canonical and V3 releases."
+    },
+    {
+      "title": "Qwen3.8-35B-A3B-Distill APEX-I-MiniPlus-V2.1 GGUF - Hugging Face",
+      "url": "https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-APEX-I-MiniPlus-V2.1-GGUF",
+      "snippet": "IsValorum / Qwen3.8-35B-A3B-Distill-APEX-I-MiniPlus-V2.1-GGUF Like 0 Text Generation GGUF 13 languages quantization quantized apex apex-quant custom-quantization unsloth-studio Mixture of Experts reasoning chain-of-thought distillation qwen3.8 qwen35moe llama.cpp imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet ..."
+    }
+  ]
+}

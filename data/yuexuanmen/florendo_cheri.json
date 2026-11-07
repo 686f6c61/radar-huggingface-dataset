@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "yuexuanmen/florendo_cheri",
+  "slug": "yuexuanmen-florendo_cheri",
+  "author": "yuexuanmen",
+  "url": "https://huggingface.co/yuexuanmen/florendo_cheri",
+  "created_at": "2026-11-07T04:21:56.000Z",
+  "updated_at": "2026-11-07T04:27:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119128256,
+  "storage_human": "119 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cheri (@cheri_ai_model) • Instagram photos and videos",
+      "url": "https://www.instagram.com/cheri_ai_model/",
+      "snippet": "3,265 Followers, 3 Following, 294 Posts - Cheri (@cheri_ai_model) on Instagram: \"💫 AI Influencer Fashion • Beauty • Daily Life New content every day 🤍 📍Korea 🎬 My Drama「내 이름은 체리」 ⬇️\""
+    },
+    {
+      "title": "Cheri (@cheri_ai_model) • Instagram photos and videos",
+      "url": "https://www.instagram.com/cheri_ai_model/reels/",
+      "snippet": "3,270 Followers, 3 Following, 296 Posts - Cheri (@cheri_ai_model) on Instagram: \"💫 AI Influencer Fashion • Beauty • Daily Life New content every day 🤍 📍Korea 🎬 My Drama「내 이름은 체리」 ⬇️\""
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Bejczy/ENA",
+  "slug": "bejczy-ena",
+  "author": "Bejczy",
+  "url": "https://huggingface.co/Bejczy/ENA",
+  "created_at": "2026-11-06T23:25:19.000Z",
+  "updated_at": "2026-11-07T00:57:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen3.5",
+    "lora",
+    "roleplay",
+    "character",
+    "fan-made",
+    "ena",
+    "dream-bbq",
+    "hybrid-attention",
+    "ssm",
+    "tool-calling",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 5050702976,
+  "storage_human": "5.1 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chatgpt prompt & Character creator profile - Bejczy",
+      "url": "https://flowgpt.com/@bejczy",
+      "snippet": "Find GPTs and AI bots created by Bejczy"
+    }
+  ]
+}

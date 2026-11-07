@@ -5,7 +5,7 @@
   "author": "Abaasa",
   "url": "https://huggingface.co/Abaasa/Raidah_Nawe_sentiment_model",
   "created_at": "2026-10-30T14:21:57.000Z",
-  "updated_at": "2026-11-04T09:24:28.000Z",
+  "updated_at": "2026-11-06T08:24:14.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 64,
+  "downloads_30d": 65,
   "trending_score": 0,
   "parameters": 66955010,
   "parameters_human": "67.0M",

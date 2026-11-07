@@ -5,7 +5,7 @@
   "author": "abbuibuibui",
   "url": "https://huggingface.co/abbuibuibui/KyoukaUzen-Lora",
   "created_at": "2026-10-31T06:08:09.000Z",
-  "updated_at": "2026-11-03T02:43:06.000Z",
+  "updated_at": "2026-11-06T09:05:25.000Z",
   "license": "creativeml-openrail-m",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3203069579,
-  "storage_human": "3.2 GB",
+  "storage_bytes": 6402025489,
+  "storage_human": "6.4 GB",
   "base_model": "waiIllustriousSDXL",
   "formats": [
     "diffusers"

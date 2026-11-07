@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "North-ML1/fin-abandoned",
+  "slug": "north-ml1-fin-abandoned",
+  "author": "North-ML1",
+  "url": "https://huggingface.co/North-ML1/fin-abandoned",
+  "created_at": "2026-11-06T22:17:18.000Z",
+  "updated_at": "2026-11-06T22:17:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1532872619,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "North-ML1/wind-edge-1.7 · Hugging Face",
+      "url": "https://huggingface.co/North-ML1/wind-edge-1.7",
+      "snippet": "The Final Traditional LLM. Not the Final AI. Wind Edge 1.7 is a new language model developed by North ML, representing the final planned traditional large language model in our research roadmap. Wind Edge 1.7 concludes a chapter of North ML's development history, spanning dozens of experimental ..."
+    },
+    {
+      "title": "GitHub - MrUnreal/AIGraveyard: ⚰️ Interactive graveyard of discontinued ...",
+      "url": "https://github.com/MrUnreal/AIGraveyard",
+      "snippet": "An interactive timeline tracking every AI model, product, API, and company that has been: 🔴 Deprecated — API access removed 💀 Killed — product shut down entirely 🔄 Rebranded — renamed and rebuilt (RIP the original) 👻 Abandoned — left to rot without announcement 🏢 Acqui-hired — team absorbed, product left as a shell"
+    }
+  ]
+}

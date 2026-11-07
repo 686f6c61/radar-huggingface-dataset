@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "SeeSee21/QWEN-Anime",
+  "slug": "seesee21-qwen-anime",
+  "author": "SeeSee21",
+  "url": "https://huggingface.co/SeeSee21/QWEN-Anime",
+  "created_at": "2026-11-06T22:57:15.000Z",
+  "updated_at": "2026-11-07T03:11:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-image",
+    "image-to-image",
+    "image-editing",
+    "anime",
+    "qwen-image",
+    "qwen-image-edit",
+    "comfyui",
+    "safetensors",
+    "gguf",
+    "aio",
+    "en",
+    "base_model:Qwen/Qwen-Image-Edit-2509",
+    "base_model:finetune:Qwen/Qwen-Image-Edit-2509",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57979282196,
+  "storage_human": "58.0 GB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511, Qwen/Qwen-Image-Edit-2509",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QWEN-Anime - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/411ea33d5d9bbd7f485d3f852881f05d",
+      "snippet": "Explore QWEN-Anime model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "QWEN-Anime - Qwen-Anime-Beta3-AIO | Qwen Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2122738/qwen-anime",
+      "snippet": "🎨 QWEN-Anime | Beta3-AIO Advanced Anime Generation with Image Editing ⚠️ Note: All versions are combined on this model card for convenience. 📢 VERSI..."
+    }
+  ]
+}

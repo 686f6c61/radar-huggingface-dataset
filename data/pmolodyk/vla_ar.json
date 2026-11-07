@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "pmolodyk/vla_ar",
+  "slug": "pmolodyk-vla_ar",
+  "author": "pmolodyk",
+  "url": "https://huggingface.co/pmolodyk/vla_ar",
+  "created_at": "2026-11-06T21:50:37.000Z",
+  "updated_at": "2026-11-06T21:50:40.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lerobot",
+    "fineart-vla",
+    "lora",
+    "robotics",
+    "en",
+    "base_model:lerobot/FineART-VLA-subtask-midtrained",
+    "base_model:adapter:lerobot/FineART-VLA-subtask-midtrained",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42226347,
+  "storage_human": "42 MB",
+  "base_model": "lerobot/FineART-VLA-subtask-midtrained",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

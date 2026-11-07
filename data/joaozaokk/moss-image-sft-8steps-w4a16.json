@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/MOSS-Image-SFT-8steps-W4A16",
+  "slug": "joaozaokk-moss-image-sft-8steps-w4a16",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/MOSS-Image-SFT-8steps-W4A16",
+  "created_at": "2026-11-06T23:48:40.000Z",
+  "updated_at": "2026-11-07T00:58:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusion-single-file",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "text-to-image",
+    "quantized",
+    "fp8",
+    "nvfp4",
+    "int4",
+    "w4a16",
+    "en",
+    "base_model:lodestones/MOSS-Image-SFT-8-steps-dmd",
+    "base_model:quantized:lodestones/MOSS-Image-SFT-8-steps-dmd",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12362261509,
+  "storage_human": "12.4 GB",
+  "base_model": "lodestones/MOSS-Image-SFT-8-steps-dmd",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lodestones/MOSS-Image-SFT-8-steps-dmd · Hugging Face",
+      "url": "https://huggingface.co/lodestones/MOSS-Image-SFT-8-steps-dmd",
+      "snippet": "Machine learning model with 5B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "lodestones/MOSS-Image-SFT-8-steps-dmd at main - Hugging Face",
+      "url": "https://huggingface.co/lodestones/MOSS-Image-SFT-8-steps-dmd/tree/main/transformer",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

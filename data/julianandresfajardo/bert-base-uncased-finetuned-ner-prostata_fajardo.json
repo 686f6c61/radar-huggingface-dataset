@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "julianandresfajardo/bert-base-uncased-finetuned-ner-prostata_Fajardo",
+  "slug": "julianandresfajardo-bert-base-uncased-finetuned-ner-prostata_fajardo",
+  "author": "julianandresfajardo",
+  "url": "https://huggingface.co/julianandresfajardo/bert-base-uncased-finetuned-ner-prostata_Fajardo",
+  "created_at": "2026-11-07T01:26:57.000Z",
+  "updated_at": "2026-11-07T01:27:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108907797,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435654508,
+  "storage_human": "436 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bert-base-uncased-finetuned-ner-prostata - Hugging Face",
+      "url": "https://huggingface.co/JuanSolarte99/bert-base-uncased-finetuned-ner-prostata",
+      "snippet": "bert-base-uncased-finetuned-ner-prostata This model is a fine-tuned version of bert-base-uncased on the None dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "juanxrl8/bert-base-uncased-finetuned-ner · Hugging Face",
+      "url": "https://huggingface.co/juanxrl8/bert-base-uncased-finetuned-ner",
+      "snippet": "Train Deploy Use this model bert-base-uncased-finetuned-ner Model description Intended uses & limitations Training and evaluation data Training procedure Training hyperparameters Training results Framework versions"
+    }
+  ]
+}

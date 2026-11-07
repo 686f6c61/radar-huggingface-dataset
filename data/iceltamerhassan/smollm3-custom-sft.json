@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "iceltamerhassan/SmolLM3-Custom-SFT",
+  "slug": "iceltamerhassan-smollm3-custom-sft",
+  "author": "iceltamerhassan",
+  "url": "https://huggingface.co/iceltamerhassan/SmolLM3-Custom-SFT",
+  "created_at": "2026-11-06T20:26:13.000Z",
+  "updated_at": "2026-11-06T21:02:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:HuggingFaceTB/SmolLM3-3B-Base",
+    "base_model:finetune:HuggingFaceTB/SmolLM3-3B-Base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77738060,
+  "storage_human": "78 MB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "andregustavo/SmolLM3-Custom-SFT · Hugging Face",
+      "url": "https://huggingface.co/andregustavo/SmolLM3-Custom-SFT",
+      "snippet": "Model Card for SmolLM3-Custom-SFT This model is a fine-tuned version of HuggingFaceTB/SmolLM3-3B. It has been trained using TRL. Quick start"
+    },
+    {
+      "title": "Supervised Fine-Tuning with SmolLM3 - Hugging Face",
+      "url": "https://huggingface.co/learn/smol-course/unit1/3",
+      "snippet": "Supervised Fine-Tuning (SFT) is the cornerstone of instruction tuning - it’s how we transform a base language model into an instruction-following assistant. In this section, you’ll learn to fine-tune SmolLM3 using real-world datasets and production-ready tools. What is Supervised Fine-Tuning ..."
+    }
+  ]
+}

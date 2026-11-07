@@ -5,7 +5,7 @@
   "author": "TokenTinkerer",
   "url": "https://huggingface.co/TokenTinkerer/Cyber-Tiel-Coder-35B-A3B-MTP-TTQ-GGUF",
   "created_at": "2026-10-25T00:44:23.000Z",
-  "updated_at": "2026-11-04T15:56:05.000Z",
+  "updated_at": "2026-11-06T15:33:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 6251,
+  "downloads_30d": 6359,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",

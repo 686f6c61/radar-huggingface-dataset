@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "INGMUYLEANG/VoxPocket-v4",
+  "slug": "ingmuyleang-voxpocket-v4",
+  "author": "INGMUYLEANG",
+  "url": "https://huggingface.co/INGMUYLEANG/VoxPocket-v4",
+  "created_at": "2026-11-06T23:23:32.000Z",
+  "updated_at": "2026-11-07T02:01:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "voxcpm",
+  "languages": [
+    "km",
+    "en"
+  ],
+  "tags": [
+    "voxcpm",
+    "safetensors",
+    "khmer",
+    "tts",
+    "text-to-speech",
+    "voice-cloning",
+    "code-mixing",
+    "km",
+    "en",
+    "dataset:INGMUYLEANG/voxpocket-khmer-tts-v3",
+    "base_model:openbmb/VoxCPM1.5",
+    "base_model:finetune:openbmb/VoxCPM1.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 801729856,
+  "parameters_human": "801.7M",
+  "storage_bytes": 3552999872,
+  "storage_human": "3.6 GB",
+  "base_model": "openbmb/VoxCPM1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - LeePepe/VoxPocket",
+      "url": "https://github.com/LeePepe/VoxPocket",
+      "snippet": "The App bundle identifier is com.leepepe.voxpocket, and its widget uses com.leepepe.voxpocket.widget. Their source of truth is VoxPocket/project.yml; signing profiles and entitlements must stay aligned with any deliberate identifier change."
+    }
+  ]
+}

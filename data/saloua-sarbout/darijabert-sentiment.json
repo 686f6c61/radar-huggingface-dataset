@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "saloua-sarbout/darijabert-sentiment",
+  "slug": "saloua-sarbout-darijabert-sentiment",
+  "author": "saloua-sarbout",
+  "url": "https://huggingface.co/saloua-sarbout/darijabert-sentiment",
+  "created_at": "2026-11-06T22:15:49.000Z",
+  "updated_at": "2026-11-06T22:16:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 147483651,
+  "parameters_human": "147.5M",
+  "storage_bytes": 589958148,
+  "storage_human": "590 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Moroccan Sentiment Classification Based on DarijaBERT and ... - Springer",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-46849-0_24",
+      "snippet": "Research Laboratory on New Economy and Development (LARNED), Faculty of Legal Economic and Social Sciences AIN SEBAA, Hassan II University of Casablanca, Casablanca, Morocco ... Correspondence to Nassera Habbat . Ecole Marocaine Des Science De L'ingénieur (EMSI), Rabat, Morocco ... Habbat, N., Anoun, H., Hassouni, L., Nouri, H. (2024). Moroccan Sentiment Classification Based on DarijaBERT and Stacking Deep Learning Model."
+    },
+    {
+      "title": "BenhamdaneNawfal/sentiment-analysis-darija · Hugging Face",
+      "url": "https://huggingface.co/BenhamdaneNawfal/sentiment-analysis-darija",
+      "snippet": "This repository hosts a Sentiment Analysis model for Darija (Moroccan Arabic dialect), built using BERT. The model is fine-tuned to classify text into two categories: positive and negative sentiment. It is designed to facilitate sentiment analysis in applications involving Darija text data, such as social media analysis, customer feedback, or market research."
+    },
+    {
+      "title": "SI2M-Lab/DarijaBERT · Hugging Face",
+      "url": "https://huggingface.co/SI2M-Lab/DarijaBERT",
+      "snippet": "DarijaBERT is the first BERT model for the Moroccan Arabic dialect called “Darija”. It is based on the same architecture as BERT-base, but without the Next Sentence Prediction (NSP) objective. This model was trained on a total of ~3 Million sequences of Darija dialect representing 691MB of text or a total of ~100M tokens."
+    },
+    {
+      "title": "Sentiment Analysis in Moroccan Darija: Comparative Evaluation of ...",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-23844-3_7",
+      "snippet": "This study introduces a dataset and evaluation standard for sentiment analysis in Moroccan Darija. Although advanced language models have shown advancements in Modern Standard Arabic (MSA), dialectal forms like Darija have not been extensively studied, owing to their..."
+    }
+  ]
+}

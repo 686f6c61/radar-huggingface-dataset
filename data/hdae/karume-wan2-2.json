@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "hdae/karume-wan2.2",
+  "slug": "hdae-karume-wan2-2",
+  "author": "hdae",
+  "url": "https://huggingface.co/hdae/karume-wan2.2",
+  "created_at": "2026-10-16T02:03:09.000Z",
+  "updated_at": "2026-11-06T22:24:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "karume",
+  "languages": [],
+  "tags": [
+    "karume",
+    "text-to-video",
+    "image-to-video",
+    "video-generation",
+    "wan",
+    "webgpu",
+    "arxiv:2503.20314",
+    "base_model:Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+    "base_model:quantized:Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7575629446,
+  "storage_human": "7.6 GB",
+  "base_model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hdae/karume-wan2.2 · Hugging Face",
+      "url": "https://huggingface.co/hdae/karume-wan2.2",
+      "snippet": "What is this A text-to-video and image-to-video distribution of Wan2.2 TI2V 5B, converted into the WebGPU inference runtime Karume 's container format (a .krm part sequence whose first part carries the graph and model descriptors)."
+    },
+    {
+      "title": "hdae/karume-wan2.2 at main - Hugging Face",
+      "url": "https://huggingface.co/hdae/karume-wan2.2/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

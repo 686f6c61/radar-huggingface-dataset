@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Holo4-27B-MTP-Repacked-i1-GGUF",
+  "slug": "mradermacher-holo4-27b-mtp-repacked-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Holo4-27B-MTP-Repacked-i1-GGUF",
+  "created_at": "2026-11-07T01:12:20.000Z",
+  "updated_at": "2026-11-07T01:43:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 39485526592,
+  "storage_human": "39.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Holo4-27B-MTP-Repacked-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Holo4-27B-MTP-Repacked-GGUF",
+      "snippet": "Machine learning model with 27B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "mradermacher/Holo4-27B-MTP-Repacked-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/Holo4-27B-MTP-Repacked-GGUF/tree/main",
+      "snippet": "mradermacher / Holo4-27B-MTP-Repacked-GGUF Like 0 Transformers GGUF English mtp qwen3_5 text-generation-inference llama-cpp holo4 multimodal computer-use agent conversational License:cc-by-nc-4.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

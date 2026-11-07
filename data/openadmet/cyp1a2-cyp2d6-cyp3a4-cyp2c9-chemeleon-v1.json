@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "openadmet/cyp1a2-cyp2d6-cyp3a4-cyp2c9-chemeleon-v1",
+  "slug": "openadmet-cyp1a2-cyp2d6-cyp3a4-cyp2c9-chemeleon-v1",
+  "author": "openadmet",
+  "url": "https://huggingface.co/openadmet/cyp1a2-cyp2d6-cyp3a4-cyp2c9-chemeleon-v1",
+  "created_at": "2026-06-10T21:04:42.000Z",
+  "updated_at": "2026-11-07T01:28:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "chemistry",
+    "biology",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92838622,
+  "storage_human": "93 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openadmet/cyp1a2-cyp2d6-cyp3a4-cyp2c9-chemeleon-v1 · Hugging Face",
+      "url": "https://huggingface.co/openadmet/cyp1a2-cyp2d6-cyp3a4-cyp2c9-chemeleon-v1",
+      "snippet": "In this repo, we have our baseline model that has been updated with ChEMBL 37. It is a multi-task CheMeleon model trained on pIC50 data curated from ChEMBL for CYP1A2, CYP2D6, CYP3A4, CYP2C9."
+    },
+    {
+      "title": "openadmet/cyp1a2-cyp2d6-cyp3a4-cyp2c9-chemeleon-v1 at main",
+      "url": "https://huggingface.co/openadmet/cyp1a2-cyp2d6-cyp3a4-cyp2c9-chemeleon-v1/tree/main",
+      "snippet": "Update model files with correct parameter names ef24cf9 about 1 month ago anvil_training Update model files with correct parameter names about 1 month ago .gitattributes Safe 1.52 kB"
+    }
+  ]
+}

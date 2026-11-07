@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "YellowDuckSweater/microduck-hill-climb-1m5-run-1106-1404-14",
+  "slug": "yellowducksweater-microduck-hill-climb-1m5-run-1106-1404-14",
+  "author": "YellowDuckSweater",
+  "url": "https://huggingface.co/YellowDuckSweater/microduck-hill-climb-1m5-run-1106-1404-14",
+  "created_at": "2026-11-07T04:32:38.000Z",
+  "updated_at": "2026-11-07T04:32:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5643323,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microduck-hill-climb-1m5-run-1106-0950-12 - Hugging Face",
+      "url": "https://huggingface.co/YellowDuckSweater/microduck-hill-climb-1m5-run-1106-0950-12",
+      "snippet": "Robotics model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "GinDuck/microduck-hill-climb-1m5-hill-1 · Hugging Face",
+      "url": "https://huggingface.co/GinDuck/microduck-hill-climb-1m5-hill-1",
+      "snippet": "How to use GinDuck/microduck-hill-climb-1m5-hill-1 with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade). sudo robotctl policy load SLOT GinDuck/microduck-hill-climb-1m5-hill-1 ..."
+    }
+  ]
+}

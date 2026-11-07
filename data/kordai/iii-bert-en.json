@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "KordAI/III-BERT-EN",
+  "slug": "kordai-iii-bert-en",
+  "author": "KordAI",
+  "url": "https://huggingface.co/KordAI/III-BERT-EN",
+  "created_at": "2026-11-07T03:19:59.000Z",
+  "updated_at": "2026-11-07T03:20:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "iii_bert",
+    "fill-mask",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32082624,
+  "parameters_human": "32.1M",
+  "storage_bytes": 128335536,
+  "storage_human": "128 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KordAI/III-BERT · Hugging Face",
+      "url": "https://huggingface.co/KordAI/III-BERT",
+      "snippet": "The model repository must expose IIIBERTForSequenceClassification through the Transformers AutoModelForSequenceClassification mapping. If the published config.json currently maps only AutoConfig, AutoModel, and AutoModelForMaskedLM, add the sequence-classification mapping in the upload script and republish before using the example below."
+    },
+    {
+      "title": "KordAI/III-BERT-Wisesight-Sentiment · Hugging Face",
+      "url": "https://huggingface.co/KordAI/III-BERT-Wisesight-Sentiment",
+      "snippet": "Task: Wisesight Thai sentiment Labels (4): pos, neu, neg, q Base model:KordAI/III-BERT Custom code: this repository contains III-BERT model code. Load it with trust_remote_code=True."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "cerulean-works/castor-dclm-baseline-150M",
+  "slug": "cerulean-works-castor-dclm-baseline-150m",
+  "author": "cerulean-works",
+  "url": "https://huggingface.co/cerulean-works/castor-dclm-baseline-150M",
+  "created_at": "2026-10-22T06:40:33.000Z",
+  "updated_at": "2026-11-07T04:35:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "castor",
+    "safety",
+    "refusal",
+    "jailbreak",
+    "seed-twins",
+    "datadecide",
+    "text-generation",
+    "en",
+    "dataset:allenai/tulu-3-sft-olmo-2-mixture-0225",
+    "dataset:allenai/olmo-2-0425-1b-preference-mix",
+    "arxiv:2610.34074",
+    "base_model:allenai/DataDecide-dclm-baseline-150M",
+    "base_model:finetune:allenai/DataDecide-dclm-baseline-150M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4572925632,
+  "storage_human": "4.6 GB",
+  "base_model": "allenai/DataDecide-dclm-baseline-150M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cerulean-works/castor-dclm-baseline-150M · Hugging Face",
+      "url": "https://huggingface.co/cerulean-works/castor-dclm-baseline-150M",
+      "snippet": "Part of CASTOR, a set of seed-twinned language models: DataDecide base models that differ only in their pretraining seed, each given the same safety post-training (SFT then DPO, the OLMo 2 1B Instruct recipe) under several post-training seeds. The set is built to measure how much of a model's per ..."
+    },
+    {
+      "title": "CASTOR - a cerulean-works Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/cerulean-works/castor",
+      "snippet": "cerulean-works/castor-dclm-baseline-25p-dolma1.7-75p-1B Updated about 3 hours ago"
+    }
+  ]
+}

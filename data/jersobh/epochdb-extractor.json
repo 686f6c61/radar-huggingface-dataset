@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "jersobh/epochdb-extractor",
+  "slug": "jersobh-epochdb-extractor",
+  "author": "jersobh",
+  "url": "https://huggingface.co/jersobh/epochdb-extractor",
+  "created_at": "2026-11-06T21:36:24.000Z",
+  "updated_at": "2026-11-06T21:50:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner",
+  "languages": [
+    "en",
+    "pt",
+    "de"
+  ],
+  "tags": [
+    "gliner",
+    "pytorch",
+    "ner",
+    "named-entity-recognition",
+    "information-extraction",
+    "epochdb",
+    "token-classification",
+    "en",
+    "pt",
+    "de",
+    "base_model:urchade/gliner_base",
+    "base_model:finetune:urchade/gliner_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 791795959,
+  "storage_human": "792 MB",
+  "base_model": "urchade/gliner_base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jersobh/epochdb-extractor-0.8b · Hugging Face",
+      "url": "https://huggingface.co/jersobh/epochdb-extractor-0.8b",
+      "snippet": "This model is a high-speed, deterministic entity extraction, typed relation parsing, and query routing engine fine-tuned specifically for EpochDB. Built on top of unsloth/Qwen3.5-0.8B-Base utilizing a hybrid Gated DeltaNet architecture, it delivers sub-millisecond structural parsing with zero Chain-of-Thought token bloat."
+    },
+    {
+      "title": "jersobh/epochdb-extractor-0.8b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/jersobh/epochdb-extractor-0.8b-GGUF",
+      "snippet": "Instructions to use jersobh/epochdb-extractor-0.8b-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use jersobh/epochdb-extractor-0.8b-GGUF with llama.cpp: Install (macOS, Linux)"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "santhosh63/whisper-tamil-medium-web",
+  "slug": "santhosh63-whisper-tamil-medium-web",
+  "author": "santhosh63",
+  "url": "https://huggingface.co/santhosh63/whisper-tamil-medium-web",
+  "created_at": "2026-11-07T01:59:04.000Z",
+  "updated_at": "2026-11-07T01:59:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "base_model:vasista22/whisper-tamil-medium",
+    "base_model:quantized:vasista22/whisper-tamil-medium",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6740209434,
+  "storage_human": "6.7 GB",
+  "base_model": "vasista22/whisper-tamil-medium",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vasista22/whisper-tamil-medium · Hugging Face",
+      "url": "https://huggingface.co/vasista22/whisper-tamil-medium",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · vasista22/whisper-tamil-medium at main",
+      "url": "https://huggingface.co/vasista22/whisper-tamil-medium/blob/main/README.md",
+      "snippet": "This model is a fine-tuned version of openai/whisper-medium on the Tamil data available from multiple publicly available ASR corpuses. It has been fine-tuned as a part of the Whisper fine-tuning sprint. NOTE: The code used to train this model is available for re-use in the whisper-finetune ..."
+    }
+  ]
+}

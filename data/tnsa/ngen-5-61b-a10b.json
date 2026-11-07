@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "TNSA/NGen-5-61B-A10B",
+  "slug": "tnsa-ngen-5-61b-a10b",
+  "author": "TNSA",
+  "url": "https://huggingface.co/TNSA/NGen-5-61B-A10B",
+  "created_at": "2026-11-07T04:12:32.000Z",
+  "updated_at": "2026-11-07T04:12:32.000Z",
+  "license": "tnsa-owml",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GUICHET FISCAL UNIQUE DES TAXES AÉROPORTUAIRES TNSA …",
+      "url": "https://www.ecologie.gouv.fr/sites/default/files/documents/Notice_TNSA_FR_jan2026.pdf",
+      "snippet": "La TNSA est perçue au profit des personnes publiques ou privées exploitant des aérodromes pour lesquels le nombre annuel des …"
+    },
+    {
+      "title": "TNSA - GitHub",
+      "url": "https://github.com/TnsaAi/",
+      "snippet": "TNSA AI is a frontier research group focused on building open, powerful, and human-aligned Artificial General Intelligence (AGI). From cutting-edge language models to multimodal systems, our mission is to create intelligent systems that empower humanity — not just compete with it."
+    },
+    {
+      "title": "Taxe sur les nuisances sonores aériennes — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Taxe_sur_les_nuisances_sonores_a%C3%A9riennes",
+      "snippet": "La taxe sur les nuisances sonores aériennes (TNSA) est une taxe française créée en 1992 dont le produit est affecté au financement …"
+    },
+    {
+      "title": "Models — TNSA Developers",
+      "url": "https://platform.tnsaai.com/docs/models",
+      "snippet": "Build with TNSA's NGen language models and IGen image models — text generation, images, agents, and speech through one simple, OpenAI-compatible API."
+    },
+    {
+      "title": "Taxes aéronautiques | Ministères Transition écologique, …",
+      "url": "https://www.ecologie.gouv.fr/politiques-publiques/taxes-aeronautiques",
+      "snippet": "Dec 19, 2019 · Le calcul du montant de TNSA dû s'appuie sur le groupe acoustique de l'aéronef. Pour connaître le groupe …"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Open-IO/Unified-Inertial-Encoder",
+  "slug": "open-io-unified-inertial-encoder",
+  "author": "Open-IO",
+  "url": "https://huggingface.co/Open-IO/Unified-Inertial-Encoder",
+  "created_at": "2026-11-07T02:32:30.000Z",
+  "updated_at": "2026-11-07T02:36:19.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "imu",
+    "inertial-odometry",
+    "humanoid",
+    "human-motion",
+    "dataset:bones-studio/seed",
+    "dataset:Open-IO/humanoid-g1-odometry",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 112315787,
+  "storage_human": "112 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unified-IO 2: Scaling Autoregressive Multimodal Models",
+      "url": "https://unified-io-2.allenai.org/",
+      "snippet": "We present Unified-IO 2, the first autoregressive multimodal model that is capable of understanding and generating images, text, audio, and action. To unify different modalities, we tokenize inputs and outputs -- images, text, audio, action, boxes, etc., into a shared semantic space and then process them with a single encoder-decoder transformer model. Training with such diverse modalities is ..."
+    },
+    {
+      "title": "GitHub - allenai/unified-io-2",
+      "url": "https://github.com/allenai/unified-io-2",
+      "snippet": "This repo contains code for Unified-IO 2, including code to run a demo, do training, and do inference. This codebase is modified from T5X. [2/15/2024] We release the Pytorch code for unified-io 2. Details can be found here [1/5/2024] We release the source code of VIT-VQGAN in JAX, which is used to ..."
+    }
+  ]
+}

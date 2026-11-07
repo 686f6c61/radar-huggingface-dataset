@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "caradepato/pt-br-voices-paroli",
+  "slug": "caradepato-pt-br-voices-paroli",
+  "author": "caradepato",
+  "url": "https://huggingface.co/caradepato/pt-br-voices-paroli",
+  "created_at": "2026-11-07T02:16:02.000Z",
+  "updated_at": "2026-11-07T02:16:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Text to Speech Online — Natural Voices, No Limits | SoundTools",
+      "url": "https://soundtools.io/text-to-speech/",
+      "snippet": "Free AI text to speech online — convert text to natural-sounding speech with 20+ voices. Unlimited use, no account, runs in your browser. Download as MP3 or WAV."
+    }
+  ]
+}

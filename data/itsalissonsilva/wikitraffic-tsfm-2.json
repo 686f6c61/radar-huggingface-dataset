@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "itsalissonsilva/wikitraffic-tsfm",
+  "slug": "itsalissonsilva-wikitraffic-tsfm-2",
+  "author": "itsalissonsilva",
+  "url": "https://huggingface.co/itsalissonsilva/wikitraffic-tsfm",
+  "created_at": "2026-10-31T05:34:27.000Z",
+  "updated_at": "2026-11-07T01:50:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "time-series",
+    "forecasting",
+    "lora",
+    "wikipedia",
+    "research",
+    "dataset:itsalissonsilva/wikimedia-pageviews-forecasting",
+    "base_model:google/timesfm-2.5-200m-transformers",
+    "base_model:adapter:google/timesfm-2.5-200m-transformers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11096592,
+  "storage_human": "11 MB",
+  "base_model": "google/timesfm-2.5-200m-transformers",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "itsalissonsilva/WikiTraffic-TSFM · Hugging Face",
+      "url": "https://huggingface.co/itsalissonsilva/WikiTraffic-TSFM",
+      "snippet": "WikiTraffic-TSFM A trained rank-8 TimesFM 2.5 200M adapter for 28-day daily Wikipedia pageview forecasts. It uses 352 days of log-transformed counts and was fine-tuned on English/Portuguese science articles. Actual adapter weights, dated forecasts, training code and independent audit results are included. It beats seasonal baselines on this cohort."
+    },
+    {
+      "title": "itsalissonsilva (Alisson Silva) - Hugging Face",
+      "url": "https://huggingface.co/itsalissonsilva",
+      "snippet": "User profile of Alisson Silva on Hugging Face"
+    }
+  ]
+}

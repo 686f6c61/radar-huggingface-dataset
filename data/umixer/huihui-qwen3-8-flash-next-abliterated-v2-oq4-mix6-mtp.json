@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "umixer/Huihui-Qwen3.8-Flash-Next-abliterated-v2-oq4-mix6-mtp",
+  "slug": "umixer-huihui-qwen3-8-flash-next-abliterated-v2-oq4-mix6-mtp",
+  "author": "umixer",
+  "url": "https://huggingface.co/umixer/Huihui-Qwen3.8-Flash-Next-abliterated-v2-oq4-mix6-mtp",
+  "created_at": "2026-11-07T01:18:23.000Z",
+  "updated_at": "2026-11-07T01:39:24.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "oq",
+    "quantized",
+    "mtp",
+    "mixed-precision",
+    "abliterated",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF",
+      "snippet": "Image-Text-to-Text model with 177B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "umixer/Qwen3.8-Flash-Next-oQ4e-mix6-mtp · Hugging Face",
+      "url": "https://huggingface.co/umixer/Qwen3.8-Flash-Next-oQ4e-mix6-mtp",
+      "snippet": "Jundot — for Qwen3.8-Flash-Next-oQ4e-mtp (the 4-bit expert source) and for developing oMLX / the oQ quantizer that makes per-tensor mixed-precision builds possible on Apple Silicon."
+    }
+  ]
+}

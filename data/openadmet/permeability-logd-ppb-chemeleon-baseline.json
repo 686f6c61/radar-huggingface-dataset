@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "openadmet/permeability-logd-ppb-chemeleon-baseline",
+  "slug": "openadmet-permeability-logd-ppb-chemeleon-baseline",
+  "author": "openadmet",
+  "url": "https://huggingface.co/openadmet/permeability-logd-ppb-chemeleon-baseline",
+  "created_at": "2026-03-24T17:17:23.000Z",
+  "updated_at": "2026-11-07T01:27:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "chemistry",
+    "biology",
+    "admet",
+    "drug-discovery",
+    "multitask-learning",
+    "openadmet",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78138776,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Datasets & Models — OpenADMET",
+      "url": "https://openadmet.org/datasetsmodels/",
+      "snippet": "Permeability, LogD & Plasma Protein Binding Caco-2 Papp A→B & B→A · LogD · Mouse & Human PPB CheMeleon multitask · Apache 2.0 View on HuggingFace"
+    },
+    {
+      "title": "Update model to V2 · openadmet/permeability-logd-ppb-chemeleon-baseline ...",
+      "url": "https://huggingface.co/openadmet/permeability-logd-ppb-chemeleon-baseline/commit/4750ead01f0a8314d565f347013da74babf3d5c5",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

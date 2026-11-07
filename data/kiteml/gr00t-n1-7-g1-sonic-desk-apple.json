@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "kiteml/gr00t-n1.7-g1-sonic-desk-apple",
+  "slug": "kiteml-gr00t-n1-7-g1-sonic-desk-apple",
+  "author": "kiteml",
+  "url": "https://huggingface.co/kiteml/gr00t-n1.7-g1-sonic-desk-apple",
+  "created_at": "2026-11-07T01:38:27.000Z",
+  "updated_at": "2026-11-07T01:42:57.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "gr00t",
+    "unitree-g1",
+    "sonic",
+    "pick-and-place",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576206737,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "kiteml/g1-sonic-desk-apple-fluorescent · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/kiteml/g1-sonic-desk-apple-fluorescent",
+      "snippet": "A Unitree G1 with Dex3 hands picks up an apple and puts it on a plate, on a simulated copy of a real office desk. This dataset: Cool overhead light with soft shadows. 162 episodes, 26,013 frames, 50 fps, LeRobot v2.1, with labels for GR00T N1.7's UNITREE_G1_SONIC embodiment. All eight datasets: kite ..."
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    }
+  ]
+}

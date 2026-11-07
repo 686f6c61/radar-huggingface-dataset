@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "asferrer/gemma-4-E2B-it-oceanguard-marine-debris",
+  "slug": "asferrer-gemma-4-e2b-it-oceanguard-marine-debris",
+  "author": "asferrer",
+  "url": "https://huggingface.co/asferrer/gemma-4-E2B-it-oceanguard-marine-debris",
+  "created_at": "2026-05-13T23:30:44.000Z",
+  "updated_at": "2026-11-06T20:32:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "vision",
+    "object-detection",
+    "marine-debris",
+    "environmental-ai",
+    "unsloth",
+    "lora",
+    "gemma-4",
+    "edge-ai",
+    "on-device",
+    "mobile",
+    "litert-lm",
+    "llama.cpp",
+    "image-to-text",
+    "en",
+    "dataset:asferrer/oceanguard-marine-debris-eval-1000",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:adapter:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 95,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 12246165592,
+  "storage_human": "12.2 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Marine Debris Detection (open-vocabulary prompt, 8 classes)",
+      "dataset": "OceanGuard TEST-200 (group-aware partition of CleanSea + Ocean_garbage + Neural_Ocean)",
+      "metric": null,
+      "value": 0.2941
+    },
+    {
+      "task": "Marine Debris Detection (open-vocabulary prompt, 8 classes)",
+      "dataset": "OceanGuard TEST-200 (group-aware partition of CleanSea + Ocean_garbage + Neural_Ocean)",
+      "metric": null,
+      "value": 0.1381
+    }
+  ],
+  "sources": [
+    {
+      "title": "asferrer/gemma-4-E2B-it-oceanguard-marine-debris · Hugging Face",
+      "url": "https://huggingface.co/asferrer/gemma-4-E2B-it-oceanguard-marine-debris",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - asferrer/OceanguardAI",
+      "url": "https://github.com/asferrer/OceanguardAI",
+      "snippet": "A government cannot defensibly act on a fabricated 23 %. OceanGuard AI flips the contract using Gemma 4 native function calling. Instead of asking the model to copy pre-aggregated numbers from a prompt, it lets Gemma 4 query a typed Kotlin interface for each fact it needs, all inside one LiteRT-LM conversation:"
+    }
+  ]
+}

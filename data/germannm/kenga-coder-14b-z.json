@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "GermannM/Kenga-Coder-14B-Z",
+  "slug": "germannm-kenga-coder-14b-z",
+  "author": "GermannM",
+  "url": "https://huggingface.co/GermannM/Kenga-Coder-14B-Z",
+  "created_at": "2026-11-06T22:04:02.000Z",
+  "updated_at": "2026-11-06T22:13:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ru",
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "kenga",
+    "kenga-lang",
+    "z-system",
+    "z-bl",
+    "prophet",
+    "semantic-binding",
+    "russian",
+    "code",
+    "ollama",
+    "text-generation",
+    "ru",
+    "en",
+    "multilingual",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 9550126056,
+  "storage_human": "9.6 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run Kenga API (Easy Deployment & Flat-Rate Pricing) - featherless.ai",
+      "url": "https://featherless.ai/models/GermannM/Kenga",
+      "snippet": "Kenga by GermannM is a 1.5 billion parameter transformer decoder language model with a 32K token context length, uniquely designed with a distinct identity and values. It is primarily optimized for the Russian language, excelling in direct, concise responses and possessing knowledge of the Kenga programming language and Z-system concepts. This model is efficient enough to run on standard CPU ..."
+    },
+    {
+      "title": "GermannM (Maslov) - Hugging Face",
+      "url": "https://huggingface.co/GermannM",
+      "snippet": "Sort: Recently updated. GermannM/kenga-embed-prophet-instruct. Sentence Similarity • Updated 4 days ago • 29. GermannM/kenga-embed-z. Sentence Similarity • Updated 4 days ag"
+    }
+  ]
+}

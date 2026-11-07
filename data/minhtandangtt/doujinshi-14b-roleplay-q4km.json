@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "minhtandangtt/Doujinshi-14b-roleplay-Q4KM",
+  "slug": "minhtandangtt-doujinshi-14b-roleplay-q4km",
+  "author": "minhtandangtt",
+  "url": "https://huggingface.co/minhtandangtt/Doujinshi-14b-roleplay-Q4KM",
+  "created_at": "2026-11-07T01:09:11.000Z",
+  "updated_at": "2026-11-07T01:09:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "puwaer/Doujinshi-14b-roleplay · Hugging Face",
+      "url": "https://huggingface.co/puwaer/Doujinshi-14b-roleplay",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Doujinshi-14B-roleplay API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/puwaer/Doujinshi-14b-roleplay",
+      "snippet": "puwaer/Doujinshi-14b-roleplay is a 14 billion parameter large language model, based on Qwen/Qwen3-14B, specifically fine-tuned for R18-themed roleplay. It was trained using 4 billion tokens of R18-specific Japanese datasets scraped from dmm.co.jp and dlsite.com, and supports a context length of 32768 tokens. This model excels at maintaining character persona, tone, and first-person perspective ..."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "caiofusco/qsar-prov-a",
+  "slug": "caiofusco-qsar-prov-a",
+  "author": "caiofusco",
+  "url": "https://huggingface.co/caiofusco/qsar-prov-a",
+  "created_at": "2026-11-07T03:50:29.000Z",
+  "updated_at": "2026-11-07T03:51:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qsar",
+    "cheminformatics",
+    "drug-discovery",
+    "machine-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6269,
+  "storage_human": "6269 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artificial Intelligence in Modern Deep-Learning QSAR",
+      "url": "https://www.researchgate.net/publication/398042651_Artificial_Intelligence_in_Modern_Deep-Learning_QSAR",
+      "snippet": "General workflow of AI-Driven QSAR modeling: Data collection → preprocessing → feature extraction → model building → validation → prediction."
+    },
+    {
+      "title": "Machine Learning- and AI-Driven QSAR Models for the Discovery of Novel ...",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.jafc.5c07939",
+      "snippet": "To accelerate the identification of fungicides targeting acid phosphatase inhibition (FAPI), machine learning (ML), and artificial intelligence (AI)-driven quantitative structure–activity relationship (QSAR) models incorporating topological molecular descriptors have been employed to predict fungicidal activity."
+    }
+  ]
+}

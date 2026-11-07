@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Alpie_seed-GGUF",
+  "slug": "mradermacher-alpie_seed-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Alpie_seed-GGUF",
+  "created_at": "2026-11-06T22:43:09.000Z",
+  "updated_at": "2026-11-06T23:06:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 77739611168,
+  "storage_human": "77.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "169Pi/Alpie_Seed_GGUF · Hugging Face",
+      "url": "https://huggingface.co/169Pi/Alpie_Seed_GGUF",
+      "snippet": "Image-Text-to-Text model with 9B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "169Pi/Alpie_seed · Hugging Face",
+      "url": "https://huggingface.co/169Pi/Alpie_seed",
+      "snippet": "Alpie Seed 9B is a multimodal model developed by 169Pi AI, built on the Qwen3.5-9B architecture and post-trained to strengthen reasoning, instruction following, coding, and visual understanding."
+    }
+  ]
+}

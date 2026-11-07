@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Dsg2/LS3-300M-A18M-Base",
+  "slug": "dsg2-ls3-300m-a18m-base",
+  "author": "Dsg2",
+  "url": "https://huggingface.co/Dsg2/LS3-300M-A18M-Base",
+  "created_at": "2026-11-07T01:06:54.000Z",
+  "updated_at": "2026-11-07T01:06:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dsg2/LS3-Micro-Base · Hugging Face",
+      "url": "https://huggingface.co/Dsg2/LS3-Micro-Base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dsg2/LS3-Micro-Dense-Base · Hugging Face",
+      "url": "https://huggingface.co/Dsg2/LS3-Micro-Dense-Base",
+      "snippet": "Text Generation model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

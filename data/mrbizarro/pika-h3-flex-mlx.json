@@ -5,7 +5,7 @@
   "author": "Mrbizarro",
   "url": "https://huggingface.co/Mrbizarro/Pika-H3-Flex-MLX",
   "created_at": "2026-10-30T07:54:58.000Z",
-  "updated_at": "2026-10-30T13:21:57.000Z",
+  "updated_at": "2026-11-06T09:24:31.000Z",
   "license": "minimax-h3-community-license",
   "license_family": "unknown",
   "pipeline_tag": "image-to-video",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "mlx",
+    "pika_h3_flex_fl2va_mlx",
     "apple-silicon",
     "mac",
     "video-generation",

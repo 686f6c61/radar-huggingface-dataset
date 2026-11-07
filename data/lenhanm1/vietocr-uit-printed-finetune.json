@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "lenhanm1/vietocr-uit-printed-finetune",
+  "slug": "lenhanm1-vietocr-uit-printed-finetune",
+  "author": "lenhanm1",
+  "url": "https://huggingface.co/lenhanm1/vietocr-uit-printed-finetune",
+  "created_at": "2026-11-07T00:14:13.000Z",
+  "updated_at": "2026-11-07T00:14:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "vietocr",
+    "vietnamese",
+    "handwriting-recognition",
+    "pilot",
+    "text-recognition",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 151813011,
+  "storage_human": "152 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lenhanm1/vietocr-uit-printed-finetune · Hugging Face",
+      "url": "https://huggingface.co/lenhanm1/vietocr-uit-printed-finetune",
+      "snippet": "VietOCR UIT-HWDB and Printed Pilot A small 100-iteration pipeline pilot trained on 10 UIT-HWDB-line training images and 10 owner-reviewed printed line crops. The 20 samples were split 8/2 per source for training and validation. This artifact checks that fine-tuning and export work; it is not a quality benchmark."
+    },
+    {
+      "title": "GitHub - ngocdung1512/finetune-vietocr: Finetune VietOCR on my custom ...",
+      "url": "https://github.com/ngocdung1512/finetune-vietocr",
+      "snippet": "Finetune VietOCR on my custom dataset. Contribute to ngocdung1512/finetune-vietocr development by creating an account on GitHub."
+    }
+  ]
+}

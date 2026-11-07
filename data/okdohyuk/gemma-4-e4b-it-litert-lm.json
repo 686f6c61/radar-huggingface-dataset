@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "okdohyuk/gemma-4-E4B-it-litert-lm",
+  "slug": "okdohyuk-gemma-4-e4b-it-litert-lm",
+  "author": "okdohyuk",
+  "url": "https://huggingface.co/okdohyuk/gemma-4-E4B-it-litert-lm",
+  "created_at": "2026-11-06T22:50:21.000Z",
+  "updated_at": "2026-11-06T22:50:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3659530240,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "publicsh/gemma-4-E4B-it-litert-lm · Hugging Face",
+      "url": "https://huggingface.co/publicsh/gemma-4-E4B-it-litert-lm",
+      "snippet": "Gemma is a family of lightweight, state-of-the-art open models from Google, built from the same research and technology used to create the Gemini models. This particular Gemma 4 model is small so it is ideal for on-device use cases. By running this model on device, users can have private access to Generative AI technology without even requiring an internet connection."
+    },
+    {
+      "title": "litert-community/gemma-4-E4B-it-litert-lm - Hugging Face",
+      "url": "https://huggingface.co/litert-community/gemma-4-E4B-it-litert-lm",
+      "snippet": "This model card provides the Gemma 4 E4B model in a way that is ready for deployment on Android, iOS, Desktop, IoT and Web. Gemma is a family of lightweight, state-of-the-art open models from Google, built from the same research and technology used to create the Gemini models. This particular Gemma ..."
+    }
+  ]
+}

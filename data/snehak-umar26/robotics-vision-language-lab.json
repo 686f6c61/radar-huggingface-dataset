@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "snehak-umar26/robotics-vision-language-lab",
+  "slug": "snehak-umar26-robotics-vision-language-lab",
+  "author": "snehak-umar26",
+  "url": "https://huggingface.co/snehak-umar26/robotics-vision-language-lab",
+  "created_at": "2026-11-06T21:25:46.000Z",
+  "updated_at": "2026-11-06T21:25:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "snehak-umar26 (Sneha K.) - Hugging Face",
+      "url": "https://huggingface.co/snehak-umar26/models",
+      "snippet": "AI & ML interests graph neural networks, medical imaging, translation, ai safety, open source"
+    },
+    {
+      "title": "Vision–language–action model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vision%E2%80%93language%E2%80%93action_model",
+      "snippet": "The general architecture of a vision–language–action model. The model receives as input a text instruction and an image observation that are encoded in a latent representation. The action decoder receives this representation and generates a sequence of low-level robot actions. In robot learning, a vision–language–action model (VLA) is a class of multimodal foundation models that ..."
+    }
+  ]
+}

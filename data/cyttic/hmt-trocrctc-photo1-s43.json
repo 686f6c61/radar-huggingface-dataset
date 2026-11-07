@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "cyttic/hmt-trocrctc-photo1-s43",
+  "slug": "cyttic-hmt-trocrctc-photo1-s43",
+  "author": "cyttic",
+  "url": "https://huggingface.co/cyttic/hmt-trocrctc-photo1-s43",
+  "created_at": "2026-11-07T01:43:04.000Z",
+  "updated_at": "2026-11-07T01:44:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "safetensors",
+    "htr",
+    "ctc",
+    "he",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 87279756,
+  "parameters_human": "87.3M",
+  "storage_bytes": 349136024,
+  "storage_human": "349 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cyttic/hmt-htrvt-photo3-s43 · Hugging Face",
+      "url": "https://huggingface.co/cyttic/hmt-htrvt-photo3-s43",
+      "snippet": "Model htrvt, augmentation photo3, seed 43. Trained on cyttic/hhd-optionb-split train minus the dev writers; HHD Option-B test, greedy decoding, no LM: CER 0.0636, WER 0.2859."
+    }
+  ]
+}

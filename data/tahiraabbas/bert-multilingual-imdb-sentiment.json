@@ -5,7 +5,7 @@
   "author": "TahiraAbbas",
   "url": "https://huggingface.co/TahiraAbbas/bert-multilingual-imdb-sentiment",
   "created_at": "2026-11-04T08:27:19.000Z",
-  "updated_at": "2026-11-04T08:27:48.000Z",
+  "updated_at": "2026-11-06T15:33:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 27,
   "trending_score": 0,
   "parameters": 177854978,
   "parameters_human": "177.9M",
-  "storage_bytes": 711443432,
-  "storage_human": "711 MB",
+  "storage_bytes": 1422886864,
+  "storage_human": "1.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

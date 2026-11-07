@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Angshul/higher-order-pruner",
+  "slug": "angshul-higher-order-pruner",
+  "author": "Angshul",
+  "url": "https://huggingface.co/Angshul/higher-order-pruner",
+  "created_at": "2026-11-07T03:09:51.000Z",
+  "updated_at": "2026-11-07T03:10:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "pruning",
+    "sparsity",
+    "optimization",
+    "higher-order",
+    "transformers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Angshul/LayerInteractions · Hugging Face",
+      "url": "https://huggingface.co/Angshul/LayerInteractions",
+      "snippet": "LayerInteractions A small Python API for order-2 interaction-aware transformer depth pruning of Hugging Face causal language models. This repository packages the method used in the accompanying experiments. It is source code, not a dataset and not a web service. Method Let D0 be the calibration NLL of the full model, Di the NLL after deleting layer i, and Dij the NLL after deleting layers i ..."
+    },
+    {
+      "title": "Angshul/SpliNet · Hugging Face",
+      "url": "https://huggingface.co/Angshul/SpliNet",
+      "snippet": "Instructions to use Angshul/SpliNet with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Angshul/SpliNet with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"fill-mask\", model=\"Angshul/SpliNet\", trust_remote_code=True)"
+    }
+  ]
+}

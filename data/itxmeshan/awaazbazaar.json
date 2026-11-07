@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "itxmeshan/AwaazBazaar",
+  "slug": "itxmeshan-awaazbazaar",
+  "author": "itxmeshan",
+  "url": "https://huggingface.co/itxmeshan/AwaazBazaar",
+  "created_at": "2026-11-06T19:59:12.000Z",
+  "updated_at": "2026-11-06T20:53:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ur"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "ur",
+    "dataset:mozilla-foundation/common_voice_11_0",
+    "base_model:openai/whisper-medium",
+    "base_model:finetune:openai/whisper-medium",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763857920,
+  "parameters_human": "763.9M",
+  "storage_bytes": 3064165314,
+  "storage_human": "3.1 GB",
+  "base_model": "openai/whisper-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "madusha dilshan (@itxmeshan_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/itxmeshan_/",
+      "snippet": "143 Followers, 244 Following, 17 Posts - See Instagram photos and videos from madusha dilshan (@itxmeshan_)"
+    },
+    {
+      "title": "شان‎ (@_itxmeshan_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/_itxmeshan_/",
+      "snippet": "50 Followers, 80 Following, 15 Posts - See Instagram photos and videos from ‎💸شان‎ (@_itxmeshan_)"
+    }
+  ]
+}

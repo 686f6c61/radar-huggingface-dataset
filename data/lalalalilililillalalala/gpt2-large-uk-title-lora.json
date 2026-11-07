@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "lalalalilililillalalala/gpt2-large-uk-title-lora",
+  "slug": "lalalalilililillalalala-gpt2-large-uk-title-lora",
+  "author": "lalalalilililillalalala",
+  "url": "https://huggingface.co/lalalalilililillalalala/gpt2-large-uk-title-lora",
+  "created_at": "2026-11-07T00:27:32.000Z",
+  "updated_at": "2026-11-07T00:28:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 774030080,
+  "parameters_human": "774.0M",
+  "storage_bytes": 3096165928,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai-community/gpt2-large · Hugging Face",
+      "url": "https://huggingface.co/openai-community/gpt2-large",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mikivis/gpt2-large-lora-sft · Hugging Face",
+      "url": "https://huggingface.co/Mikivis/gpt2-large-lora-sft",
+      "snippet": "gpt2-large-lora-sft This model is a fine-tuned version of gpt2-large on the customized dataset. Model description More information needed Intended uses & limitations More information needed Training procedure Training hyperparameters The following hyperparameters were used during training: learning_rate: 0.00013 train_batch_size: 1 eval_batch ..."
+    }
+  ]
+}

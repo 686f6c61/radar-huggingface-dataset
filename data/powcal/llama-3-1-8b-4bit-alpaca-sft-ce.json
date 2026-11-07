@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "PowCal/Llama-3.1-8B-4bit-alpaca-sft-ce",
+  "slug": "powcal-llama-3-1-8b-4bit-alpaca-sft-ce",
+  "author": "PowCal",
+  "url": "https://huggingface.co/PowCal/Llama-3.1-8B-4bit-alpaca-sft-ce",
+  "created_at": "2025-10-23T12:20:53.000Z",
+  "updated_at": "2026-11-06T21:58:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 352934544,
+  "storage_human": "353 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PowCal/Llama-3.1-8B-4bit · Hugging Face",
+      "url": "https://huggingface.co/PowCal/Llama-3.1-8B-4bit",
+      "snippet": "PowCal / Llama-3.1-8B-4bit like 0 Follow PowCal 2 Text Generation Transformers Safetensors llama text-generation-inference 4-bit precision bitsandbytes arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "PowCal/Llama-3.1-8B-4bit at main - Hugging Face",
+      "url": "https://huggingface.co/PowCal/Llama-3.1-8B-4bit/tree/main",
+      "snippet": "PowCal / Llama-3.1-8B-4bit like 0 Follow PowCal 2 Text Generation Transformers Safetensors llama text-generation-inference 4-bit precision bitsandbytes arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

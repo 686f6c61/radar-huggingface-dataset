@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "open-gigaai/GigaBrain-WBC-0.5",
+  "slug": "open-gigaai-gigabrain-wbc-0-5",
+  "author": "open-gigaai",
+  "url": "https://huggingface.co/open-gigaai/GigaBrain-WBC-0.5",
+  "created_at": "2026-10-24T10:37:34.000Z",
+  "updated_at": "2026-11-07T04:07:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "humanoid",
+    "unitree-g1",
+    "whole-body-control",
+    "motion-tracking",
+    "reinforcement-learning",
+    "robotics",
+    "arxiv:2608.18234",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 899127668,
+  "storage_human": "899 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GigaBrain-WBC-0.5",
+      "url": "https://shepherd1226.github.io/gigabrain-wbc-0.5/",
+      "snippet": "GigaBrain-WBC-0.5 is a Behavior World Model for robust humanoid whole-body control with environment interaction, implausible commands, and fall recovery."
+    },
+    {
+      "title": "open-gigaai/GigaBrain-WBC-0.5-TerrainData - Hugging Face",
+      "url": "https://huggingface.co/datasets/open-gigaai/GigaBrain-WBC-0.5-TerrainData",
+      "snippet": "Training and benchmark data for GigaBrain-WBC-0.5, a behavior world model for robust humanoid whole-body tracking with environment interaction. The data ships as two uncompressed tar archives rather than as a loose file tree, because the tree holds ~29k files that average only a few kilobytes each ..."
+    }
+  ]
+}

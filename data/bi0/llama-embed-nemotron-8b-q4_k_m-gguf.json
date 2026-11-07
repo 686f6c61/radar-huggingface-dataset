@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "bi0/llama-embed-nemotron-8b-Q4_K_M-GGUF",
+  "slug": "bi0-llama-embed-nemotron-8b-q4_k_m-gguf",
+  "author": "bi0",
+  "url": "https://huggingface.co/bi0/llama-embed-nemotron-8b-Q4_K_M-GGUF",
+  "created_at": "2026-11-07T00:15:54.000Z",
+  "updated_at": "2026-11-07T00:15:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dgx-spark",
+    "blackwell-gb10",
+    "sm121",
+    "gguf",
+    "base_model:nvidia/llama-embed-nemotron-8b",
+    "base_model:finetune:nvidia/llama-embed-nemotron-8b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nvidia/llama-embed-nemotron-8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/llama-embed-nemotron-8b · Hugging Face",
+      "url": "https://huggingface.co/nvidia/llama-embed-nemotron-8b",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/llama-embed-nemotron-8b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/llama-embed-nemotron-8b-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

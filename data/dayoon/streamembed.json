@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "dayoon/streamembed",
+  "slug": "dayoon-streamembed",
+  "author": "dayoon",
+  "url": "https://huggingface.co/dayoon/streamembed",
+  "created_at": "2026-11-06T23:58:36.000Z",
+  "updated_at": "2026-11-06T23:59:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "streamembed",
+  "languages": [],
+  "tags": [
+    "streamembed",
+    "screenshots",
+    "retrieval",
+    "lora",
+    "qwen3-vl",
+    "siglip2",
+    "base_model:Qwen/Qwen3-VL-Embedding-2B",
+    "base_model:adapter:Qwen/Qwen3-VL-Embedding-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 692053184,
+  "storage_human": "692 MB",
+  "base_model": "Qwen/Qwen3-VL-Embedding-2B, Qwen/Qwen3-VL-Embedding-8B, google/siglip2-so400m-patch16-naflex, google/siglip2-base-patch16-naflex, vultr/VultronRetrieverFlash-Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dayoon (dayoon.ko) - Hugging Face",
+      "url": "https://huggingface.co/dayoon",
+      "snippet": "AI & ML interests ... Recent Activity published a dataset 12 days ago ... published a model about 2 months ago"
+    },
+    {
+      "title": "DiffusionBee - Stable Diffusion App for AI Art",
+      "url": "https://diffusionbee.com/huggingface_import?model_id=BelifChou%2Fdayoon-character-v1",
+      "snippet": "DiffusionBee is the easiest way to generate AI art on your computer with Stable Diffusion. Completely free of charge."
+    }
+  ]
+}

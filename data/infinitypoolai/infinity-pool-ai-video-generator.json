@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "infinitypoolai/Infinity-Pool-AI-Video-Generator",
+  "slug": "infinitypoolai-infinity-pool-ai-video-generator",
+  "author": "infinitypoolai",
+  "url": "https://huggingface.co/infinitypoolai/Infinity-Pool-AI-Video-Generator",
+  "created_at": "2026-11-07T02:41:31.000Z",
+  "updated_at": "2026-11-07T02:42:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "infinity-pool-ai",
+    "flamingo-float-ai",
+    "hey-bro",
+    "ai-video",
+    "meme",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Infinity Pool Falls Apart AI Prank: CapCut Tutorial Guide | TikTok",
+      "url": "https://www.tiktok.com/@daniellehsiun7/video/7704275131715210499",
+      "snippet": "TikTok video from Nmi (@daniellehsiun7): “Learn how to create the viral infinity pool falls apart AI prank video! This CapCut tutorial shows you how to make a realistic pool edge collapse effect. #capcut #capcutpioneer #infinitypool #infinitypoolai #infinitypooltutorial”."
+    },
+    {
+      "title": "Best AI Video Generators 2026: 12 Tools Tested & Ranked",
+      "url": "https://www.heygen.com/blog/best-ai-video-generators-tested-and-reviewed",
+      "snippet": "I tested 12 AI video generators for business, marketing, and content. See which tools deliver and which ones waste your budget. Full comparison inside"
+    }
+  ]
+}

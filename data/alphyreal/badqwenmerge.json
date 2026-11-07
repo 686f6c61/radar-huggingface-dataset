@@ -5,7 +5,7 @@
   "author": "alphyreal",
   "url": "https://huggingface.co/alphyreal/badqwenmerge",
   "created_at": "2026-11-06T17:04:37.000Z",
-  "updated_at": "2026-11-06T17:29:46.000Z",
+  "updated_at": "2026-11-06T18:06:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -24,10 +24,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 35951822704,
-  "parameters_human": "35.95B",
-  "storage_bytes": 71916586750,
-  "storage_human": "71.9 GB",
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 74606203878,
+  "storage_human": "74.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

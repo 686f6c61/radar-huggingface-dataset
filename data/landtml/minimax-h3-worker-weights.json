@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "landtml/minimax-h3-worker-weights",
+  "slug": "landtml-minimax-h3-worker-weights",
+  "author": "landtml",
+  "url": "https://huggingface.co/landtml/minimax-h3-worker-weights",
+  "created_at": "2026-11-03T16:27:10.000Z",
+  "updated_at": "2026-11-03T22:33:16.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "mirror",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 506,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 563635562779,
+  "storage_human": "563.6 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax H3: Open-Weights Video Model Explained",
+      "url": "https://aitoolsreview.co.uk/insights/minimax-h3-video-model",
+      "snippet": "MiniMax is a Shanghai-based AI lab probably best known outside China for its MiniMax M-series text and reasoning models and its Hailuo consumer video app. H3 - also referred to as Hailuo H3 in some regional listings - is positioned by the company as a \"general-purpose omni-modal generation model\" rather than a narrow video generator, built to ..."
+    },
+    {
+      "title": "MiniMax-M3 — Open-Weight 1M-Context Multimodal Model | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/minimax-m3/",
+      "snippet": "MiniMax-M3 is an open-weight frontier model released June 1, 2026: a ~428B/23B-active MoE with 1M context, native multimodality, and MiniMax Sparse Attention."
+    }
+  ]
+}

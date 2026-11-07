@@ -4,8 +4,8 @@
   "slug": "pes24-spd02",
   "author": "PES24",
   "url": "https://huggingface.co/PES24/spd02",
-  "created_at": "2026-10-30T19:25:59.000Z",
-  "updated_at": "2026-11-04T02:31:10.000Z",
+  "created_at": "2026-11-06T13:54:20.000Z",
+  "updated_at": "2026-11-07T00:23:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-11-05T03:13:34.608Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

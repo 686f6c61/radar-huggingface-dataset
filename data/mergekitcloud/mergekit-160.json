@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "MergekitCloud/mergekit-160",
+  "slug": "mergekitcloud-mergekit-160",
+  "author": "MergekitCloud",
+  "url": "https://huggingface.co/MergekitCloud/mergekit-160",
+  "created_at": "2026-11-06T20:26:30.000Z",
+  "updated_at": "2026-11-06T20:29:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2408.07990",
+    "base_model:NovaSky-AI/Sky-T1-32B-Flash",
+    "base_model:merge:NovaSky-AI/Sky-T1-32B-Flash",
+    "base_model:Qwen/QwQ-32B",
+    "base_model:merge:Qwen/QwQ-32B",
+    "base_model:Qwen/Qwen2.5-32B",
+    "base_model:merge:Qwen/Qwen2.5-32B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65527841616,
+  "storage_human": "65.5 GB",
+  "base_model": "Qwen/QwQ-32B, Qwen/Qwen2.5-32B, NovaSky-AI/Sky-T1-32B-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MergekitCloud/mergekit-160 · Hugging Face",
+      "url": "https://huggingface.co/MergekitCloud/mergekit-160",
+      "snippet": "MergekitCloud / mergekit-160 Like 0 Text Generation Transformers Safetensors qwen2 mergekit Merge conversational text-generation-inference arxiv:2408.07990 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "MergekitCloud (Mergekit Cloud) - Hugging Face",
+      "url": "https://huggingface.co/MergekitCloud",
+      "snippet": "User profile of Mergekit Cloud on Hugging Face"
+    }
+  ]
+}

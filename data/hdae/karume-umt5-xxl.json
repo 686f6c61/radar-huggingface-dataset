@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "hdae/karume-umt5-xxl",
+  "slug": "hdae-karume-umt5-xxl",
+  "author": "hdae",
+  "url": "https://huggingface.co/hdae/karume-umt5-xxl",
+  "created_at": "2026-10-16T01:58:25.000Z",
+  "updated_at": "2026-11-06T22:24:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "karume",
+  "languages": [],
+  "tags": [
+    "karume",
+    "feature-extraction",
+    "text-encoder",
+    "umt5",
+    "wan",
+    "webgpu",
+    "base_model:google/umt5-xxl",
+    "base_model:quantized:google/umt5-xxl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5686920763,
+  "storage_human": "5.7 GB",
+  "base_model": "google/umt5-xxl",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hdae/karume-umt5-xxl · Hugging Face",
+      "url": "https://huggingface.co/hdae/karume-umt5-xxl",
+      "snippet": "What is this The encoder of umT5-XXL (google/umt5-xxl) as a standalone text encoder for the WebGPU inference runtime Karume: the encoder converted into Karume's container format (a .krm part sequence whose first part carries the graph and model descriptors) with int8 weights, and the checkpoint's tokenizer converted into one JSON table."
+    },
+    {
+      "title": "GitHub - hdae/karume",
+      "url": "https://github.com/hdae/karume",
+      "snippet": "A general-purpose NN inference stack running on WebGPU (Deno + browser, pure TypeScript + WGSL, zero runtime dependencies). Composed of three JSR packages — @karume/runtime (IR execution) / @karume/hub (model resolution, fetch, and caching) / @karume/models (pipelines and tokenizer) — plus the PyPI package karume (exporter CLI) that lowers PyTorch models to IR."
+    }
+  ]
+}

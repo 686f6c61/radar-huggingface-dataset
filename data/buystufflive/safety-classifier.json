@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "buystufflive/safety-classifier",
+  "slug": "buystufflive-safety-classifier",
+  "author": "buystufflive",
+  "url": "https://huggingface.co/buystufflive/safety-classifier",
+  "created_at": "2026-11-07T03:00:51.000Z",
+  "updated_at": "2026-11-07T03:09:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "onnx",
+    "safetensors",
+    "image-classification",
+    "content-safety",
+    "base_model:timm/mobilenetv4_conv_medium.e250_r384_in12k",
+    "base_model:quantized:timm/mobilenetv4_conv_medium.e250_r384_in12k",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8537003,
+  "parameters_human": "8.5M",
+  "storage_bytes": 190577554,
+  "storage_human": "191 MB",
+  "base_model": "timm/mobilenetv4_conv_medium.e250_r384_in12k",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mistral’s Shieldstral Packs Policy-Adaptive Safety ... - Unite.AI",
+      "url": "https://www.unite.ai/mistrals-shieldstral-packs-policy-adaptive-safety-screening-into-3b-parameters/",
+      "snippet": "Mistral AI released Shieldstral on August 4, 2026, a 3B-parameter open-weights safety classifier that judges text and images against moderation policies written in plain language at inference time, rather than a fixed set of harm categories baked in during training. The model is available on Hugging ..."
+    }
+  ]
+}

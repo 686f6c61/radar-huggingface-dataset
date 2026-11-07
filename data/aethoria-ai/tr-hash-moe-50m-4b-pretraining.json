@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "AETHORIA-AI/TR-HASH-MoE-50M-4B-Pretraining",
+  "slug": "aethoria-ai-tr-hash-moe-50m-4b-pretraining",
+  "author": "AETHORIA-AI",
+  "url": "https://huggingface.co/AETHORIA-AI/TR-HASH-MoE-50M-4B-Pretraining",
+  "created_at": "2026-11-06T23:07:44.000Z",
+  "updated_at": "2026-11-06T23:10:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tr_hash_moe",
+    "text-generation",
+    "tr-hash",
+    "mixture-of-experts",
+    "composed-modulo",
+    "pretraining",
+    "custom_code",
+    "conversational",
+    "dataset:AETHORIA-AI/TR-HASH-Pretraining-125B-Agentic-32K",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 52034560,
+  "parameters_human": "52.0M",
+  "storage_bytes": 210201696,
+  "storage_human": "210 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TR-HASH 0.5B Research Release - a AETHORIA-AI Collection",
+      "url": "https://huggingface.co/collections/AETHORIA-AI/tr-hash-05b-research-release",
+      "snippet": "Research release for TR-HASH 0.5B: base and SFT models, post-training data, demos, and supporting artifacts."
+    },
+    {
+      "title": "AETHORIA-AI (AETHORIA AI) - Hugging Face",
+      "url": "https://huggingface.co/AETHORIA-AI",
+      "snippet": "Organization Card ... AETHORIA AI Open, efficient AI research Website GitHub Discord Community-led research into compact language models, deterministic token routing, multimodal generation and accessible training systems. Featured project TR-HASH 0.5B Base and instruction-tuned models, post-training data and interactive inference demo."
+    }
+  ]
+}

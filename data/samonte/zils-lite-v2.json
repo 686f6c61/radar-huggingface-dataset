@@ -5,7 +5,7 @@
   "author": "Samonte",
   "url": "https://huggingface.co/Samonte/zils-lite-v2",
   "created_at": "2026-11-06T02:28:40.000Z",
-  "updated_at": "2026-11-06T02:47:10.000Z",
+  "updated_at": "2026-11-06T19:51:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 852985920,
   "parameters_human": "853.0M",
-  "storage_bytes": 3412055376,
-  "storage_human": "3.4 GB",
+  "storage_bytes": 20472332256,
+  "storage_human": "20.5 GB",
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "aldr4GO/regat-bert-fusion",
+  "slug": "aldr4go-regat-bert-fusion",
+  "author": "aldr4GO",
+  "url": "https://huggingface.co/aldr4GO/regat-bert-fusion",
+  "created_at": "2026-11-07T01:14:18.000Z",
+  "updated_at": "2026-11-07T01:14:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "graph-attention-network",
+    "reranking",
+    "information-retrieval",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19013070,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReGAT-BERT: Transformer-Graph Fusion for Dynamic Reranking",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1877050925029758",
+      "snippet": "The improvement over CE-BERT suggests that integrating contextual relationships between passages enhances retrieval effectiveness. Compared to SBERT, our model achieves a significant gain, con- firming that dynamic reranking and graph-based refinement improve passage ranking accuracy. 4.2.2."
+    },
+    {
+      "title": "ReGAT-BERT: : Transformer-Graph Fusion for Dynamic Reranking: Procedia ...",
+      "url": "https://dl.acm.org/doi/10.1016/j.procs.2025.09.302",
+      "snippet": "Evaluations conducted on benchmark datasets against state-of-the-art baselines reveal that our hybrid approach enhances retrieval accuracy and coherence. Furthermore, by integrating graph-based embedding refinements, our model mitigates the scalability constraints typically associated with Cross-Encoder architectures."
+    }
+  ]
+}

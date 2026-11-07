@@ -5,7 +5,7 @@
   "author": "edge37",
   "url": "https://huggingface.co/edge37/phonon-31m-en-small",
   "created_at": "2026-11-05T21:40:49.000Z",
-  "updated_at": "2026-11-05T21:49:28.000Z",
+  "updated_at": "2026-11-06T08:02:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -28,13 +28,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 53,
   "trending_score": 0,
   "parameters": 41096035,
   "parameters_human": "41.1M",
-  "storage_bytes": 43463368,
-  "storage_human": "43 MB",
+  "storage_bytes": 44346656,
+  "storage_human": "44 MB",
   "base_model": "gradium/phonon-31m-en",
   "formats": [
     "gguf"

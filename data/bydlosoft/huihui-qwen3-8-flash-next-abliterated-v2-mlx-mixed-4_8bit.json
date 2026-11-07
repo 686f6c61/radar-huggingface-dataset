@@ -5,7 +5,7 @@
   "author": "bydlosoft",
   "url": "https://huggingface.co/bydlosoft/Huihui-Qwen3.8-Flash-Next-abliterated-v2-MLX-mixed-4_8bit",
   "created_at": "2026-11-06T06:30:49.000Z",
-  "updated_at": "2026-11-06T06:51:09.000Z",
+  "updated_at": "2026-11-06T08:07:56.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "mlx",
+    "safetensors",
     "qwen4_exp",
     "mlx-vlm",
     "moe",
@@ -29,13 +30,14 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 69302142862,
-  "storage_human": "69.3 GB",
+  "parameters": 126192584851,
+  "parameters_human": "126.19B",
+  "storage_bytes": 108979151913,
+  "storage_human": "109.0 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
-    "mlx"
+    "mlx",
+    "safetensors"
   ],
   "is_conversational": true,
   "gated": false,

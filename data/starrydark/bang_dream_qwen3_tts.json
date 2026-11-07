@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "starrydark/BanG_Dream_Qwen3_TTS",
+  "slug": "starrydark-bang_dream_qwen3_tts",
+  "author": "starrydark",
+  "url": "https://huggingface.co/starrydark/BanG_Dream_Qwen3_TTS",
+  "created_at": "2026-11-06T21:43:21.000Z",
+  "updated_at": "2026-11-06T21:49:59.000Z",
+  "license": "unofficial-fan-model",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "qwen-tts",
+  "languages": [
+    "ja",
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "qwen-tts",
+    "safetensors",
+    "qwen3_tts",
+    "text-to-speech",
+    "tts",
+    "qwen3-tts",
+    "custom-voice",
+    "character-voice",
+    "multi-speaker",
+    "cross-lingual-tts",
+    "japanese",
+    "mandarin",
+    "english",
+    "bang-dream",
+    "bandori",
+    "girls-band-party",
+    "mygo",
+    "ave-mujica",
+    "speech-synthesis",
+    "voice-model",
+    "game-voice",
+    "anime",
+    "ja",
+    "zh",
+    "en",
+    "arxiv:2601.15621",
+    "base_model:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1916676352,
+  "parameters_human": "1.92B",
+  "storage_bytes": 4515695612,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "starrydark (Yangyi Liu) - Hugging Face",
+      "url": "https://huggingface.co/starrydark",
+      "snippet": "AI & ML interests ... Recent Activity liked a dataset 6 days ago ... liked a Space 8 days ago"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice cloning."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "ZelligeAI/Tessera-27B-B-CJK-RL-NVFP4",
+  "slug": "zelligeai-tessera-27b-b-cjk-rl-nvfp4",
+  "author": "ZelligeAI",
+  "url": "https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK-RL-NVFP4",
+  "created_at": "2026-11-04T23:38:53.000Z",
+  "updated_at": "2026-11-06T18:39:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "nvfp4",
+    "compressed-tensors",
+    "agentic",
+    "coding-agent",
+    "tessera",
+    "base_model:ZelligeAI/Tessera-27B-B-CJK-RL",
+    "base_model:quantized:ZelligeAI/Tessera-27B-B-CJK-RL",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 20294595344,
+  "parameters_human": "20.29B",
+  "storage_bytes": 23430691950,
+  "storage_human": "23.4 GB",
+  "base_model": "ZelligeAI/Tessera-27B-B-CJK-RL",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZelligeAI/Tessera-27B-B-CJK · Hugging Face",
+      "url": "https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK",
+      "snippet": "Tessera-27B-B-CJK is a coding-agent model built on Qwen3.8-27B. It thinks in compressed CJK, a shorthand that mixes English, Chinese words and symbols, and on held-out agent tasks it uses 0.50-0.64x the base model's thinking tokens per turn. Answers and tool calls stay in plain English and code."
+    },
+    {
+      "title": "ZelligeAI/Tessera-27B-B-CJK-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK-NVFP4",
+      "snippet": "Zellige AI 7 Safetensors qwen3_5 nvfp4 compressed-tensors agentic coding-agent tessera License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Tessera-27B-B-CJK-NVFP4 The NVFP4 checkpoint Repos Results What a think looks like Intended use How to use the merged bf16 weights Merge check Training Evaluation data ..."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "NSC64/pssa-distill-5b",
+  "slug": "nsc64-pssa-distill-5b",
+  "author": "NSC64",
+  "url": "https://huggingface.co/NSC64/pssa-distill-5b",
+  "created_at": "2026-11-04T14:23:01.000Z",
+  "updated_at": "2026-11-07T03:35:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123417813220,
+  "storage_human": "123.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NSC64 (NSC) · GitHub",
+      "url": "https://github.com/NSC64",
+      "snippet": "A fork of PSSA — a non-transformer language model built in Rust with a recurrent state-space core, an episodic memory bank, and plastic weights."
+    },
+    {
+      "title": "GitHub - Sparticle62ops/pssa: PSSA: a non-transformer language model ...",
+      "url": "https://github.com/Sparticle62ops/pssa",
+      "snippet": "NSC64/pssa-distill-105m — a 107M PSSA student distilled from Qwen3-8B by NSC64, continuing the ck256.pssa base for 5,000 updates on about 2 GB of FineWeb-Edu, OpenWebMath and CodeParrot (0.5 CE + 0.5 KL at temperature 2.0, one RTX PRO 6000)."
+    }
+  ]
+}

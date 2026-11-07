@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama-3.1-Nemotron-70B-Reward-HF-GGUF",
+  "slug": "mradermacher-llama-3-1-nemotron-70b-reward-hf-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-3.1-Nemotron-70B-Reward-HF-GGUF",
+  "created_at": "2025-03-07T06:02:58.000Z",
+  "updated_at": "2026-11-07T03:06:06.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nvidia",
+    "llama3.1",
+    "reward model",
+    "en",
+    "dataset:nvidia/HelpSteer2",
+    "base_model:nvidia/Llama-3.1-Nemotron-70B-Reward-HF",
+    "base_model:quantized:nvidia/Llama-3.1-Nemotron-70B-Reward-HF",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 193,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481302993632,
+  "storage_human": "481.3 GB",
+  "base_model": "nvidia/Llama-3.1-Nemotron-70B-Reward-HF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3.1-Nemotron-70B-Reward-HF-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Llama-3.1-Nemotron-70B-Reward-HF-GGUF",
+      "snippet": "reward model Inference Endpoints conversational License: llama3.1 Model card Files Files and versions Community Train Deploy"
+    },
+    {
+      "title": "nvidia/Llama-3.1-Nemotron-70B-Reward · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Reward",
+      "snippet": "Llama-3.1-Nemotron-70B-Reward is a large language model customized using developed by NVIDIA to predict the quality of LLM generated responses. Specifically, it has trained using a Llama-3.1-70B-Instruct Base on a novel approach combining the strength of Bradley Terry and SteerLM Regression Reward Modelling."
+    }
+  ]
+}

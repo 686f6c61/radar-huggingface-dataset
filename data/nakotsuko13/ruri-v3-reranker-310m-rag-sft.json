@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "nakotsuko13/ruri-v3-reranker-310m-rag-sft",
+  "slug": "nakotsuko13-ruri-v3-reranker-310m-rag-sft",
+  "author": "nakotsuko13",
+  "url": "https://huggingface.co/nakotsuko13/ruri-v3-reranker-310m-rag-sft",
+  "created_at": "2026-11-07T01:00:48.000Z",
+  "updated_at": "2026-11-07T01:00:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cl-nagoya/ruri-v3-reranker-310m · Hugging Face",
+      "url": "https://huggingface.co/cl-nagoya/ruri-v3-reranker-310m",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ruri-v3-reranker-310m · Model · Inferix",
+      "url": "https://inferix.co/models/cl-nagoya/ruri-v3-reranker-310m",
+      "snippet": "Ruri Reranker: Japanese General Reranker Ruri v3 Reranker is a general purpose Japanese reranker model built on top of ModernBERT Ja . Ruri v3 offers several key technical advantages: State of the art performance with good robustness for vaious domains Supports sequence lengths up to 8192 tokens Expanded vocabulary of 100K tokens , compared to 32K in v1 and v2 Integrated FlashAttention ..."
+    }
+  ]
+}

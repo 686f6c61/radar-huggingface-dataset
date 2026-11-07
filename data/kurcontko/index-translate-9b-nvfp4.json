@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kurcontko/Index-Translate-9B-NVFP4",
+  "slug": "kurcontko-index-translate-9b-nvfp4",
+  "author": "kurcontko",
+  "url": "https://huggingface.co/kurcontko/Index-Translate-9B-NVFP4",
+  "created_at": "2026-11-06T22:52:57.000Z",
+  "updated_at": "2026-11-06T22:53:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "translation",
+    "nvfp4",
+    "compressed-tensors",
+    "llm-compressor",
+    "base_model:IndexTeam/Index-Translate-9B",
+    "base_model:quantized:IndexTeam/Index-Translate-9B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 9382885100,
+  "storage_human": "9.4 GB",
+  "base_model": "IndexTeam/Index-Translate-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's free service instantly translates words, phrases, and web pages between English and over 100 other languages."
+    },
+    {
+      "title": "IndexTeam/Index-Translate-9B-FP4 at main - Hugging Face",
+      "url": "https://huggingface.co/IndexTeam/Index-Translate-9B-FP4/tree/main",
+      "snippet": "IndexTeam / Index-Translate-9B-FP4 Like 0 Follow Index Team 3.67k Translation Transformers Safetensors qwen3_5 image-text-to-text nvfp4 fp4 compressed-tensors index 8-bit precision arxiv:2609.40181 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "Index-Translate - a IndexTeam Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/IndexTeam/index-translate",
+      "snippet": "Index‐Translate: A Multilingual Translation Model Family From text & vision to speech, bring meaning across languages"
+    },
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    }
+  ]
+}

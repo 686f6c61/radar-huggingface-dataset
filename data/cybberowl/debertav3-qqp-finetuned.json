@@ -5,7 +5,7 @@
   "author": "cybberowl",
   "url": "https://huggingface.co/cybberowl/debertav3-qqp-finetuned",
   "created_at": "2026-11-06T10:30:23.000Z",
-  "updated_at": "2026-11-06T10:30:47.000Z",
+  "updated_at": "2026-11-06T15:06:54.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 184423682,
   "parameters_human": "184.4M",
-  "storage_bytes": 737719272,
-  "storage_human": "738 MB",
+  "storage_bytes": 3688601625,
+  "storage_human": "3.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

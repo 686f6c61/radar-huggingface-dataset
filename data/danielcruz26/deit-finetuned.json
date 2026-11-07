@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "danielcruz26/deit-finetuned",
+  "slug": "danielcruz26-deit-finetuned",
+  "author": "danielcruz26",
+  "url": "https://huggingface.co/danielcruz26/deit-finetuned",
+  "created_at": "2026-11-07T00:41:21.000Z",
+  "updated_at": "2026-11-07T00:41:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Christophermoore/deit-finetuned · Hugging Face",
+      "url": "https://huggingface.co/Christophermoore/deit-finetuned",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Tanveer81/deit_finetune",
+      "url": "https://github.com/Tanveer81/deit_finetune",
+      "snippet": "Contribute to Tanveer81/deit_finetune development by creating an account on GitHub."
+    }
+  ]
+}

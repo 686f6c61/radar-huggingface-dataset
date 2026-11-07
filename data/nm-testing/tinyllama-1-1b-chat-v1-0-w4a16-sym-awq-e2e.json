@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "nm-testing/TinyLlama-1.1B-Chat-v1.0-w4a16-sym-awq-e2e",
+  "slug": "nm-testing-tinyllama-1-1b-chat-v1-0-w4a16-sym-awq-e2e",
+  "author": "nm-testing",
+  "url": "https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-w4a16-sym-awq-e2e",
+  "created_at": "2026-07-28T02:58:02.000Z",
+  "updated_at": "2026-11-06T20:30:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 3809844000,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nm-testing/TinyLlama-1.1B-Chat-v1.0-W4A16-e2e · Hugging Face",
+      "url": "https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-W4A16-e2e",
+      "snippet": "nm-testing / TinyLlama-1.1B-Chat-v1.0-W4A16-e2e like 0 Text Generation Transformers Safetensors llama conversational text-generation-inference Inference Endpoints arxiv:1910.09700 Model card FilesFiles and versions Community Train Deploy Use this model Edit model card Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out ..."
+    },
+    {
+      "title": "TinyLlama/TinyLlama-1.1B-Chat-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

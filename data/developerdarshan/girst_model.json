@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DEVELOPERDARSHAN/girst_model",
+  "slug": "developerdarshan-girst_model",
+  "author": "DEVELOPERDARSHAN",
+  "url": "https://huggingface.co/DEVELOPERDARSHAN/girst_model",
+  "created_at": "2026-10-10T16:41:32.000Z",
+  "updated_at": "2026-11-07T02:50:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 8462116408,
+  "storage_human": "8.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DEVELOPERDARSHAN/girst_model · Hugging Face",
+      "url": "https://huggingface.co/DEVELOPERDARSHAN/girst_model",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DEVELOPERDARSHAN (NLAL) - Hugging Face",
+      "url": "https://huggingface.co/DEVELOPERDARSHAN/models",
+      "snippet": "DEVELOPERDARSHAN's models1 Sort: Recently updated DEVELOPERDARSHAN/girst_model 3B•Updated 1 day ago• 42 • 1"
+    }
+  ]
+}

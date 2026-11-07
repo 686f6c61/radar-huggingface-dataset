@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "vcruz305/Ripple-65B-Preview-DFlash2-SAGE-REXL3",
+  "slug": "vcruz305-ripple-65b-preview-dflash2-sage-rexl3",
+  "author": "vcruz305",
+  "url": "https://huggingface.co/vcruz305/Ripple-65B-Preview-DFlash2-SAGE-REXL3",
+  "created_at": "2026-11-06T02:47:28.000Z",
+  "updated_at": "2026-11-07T00:49:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "exl3",
+    "ricursive",
+    "quantization",
+    "speculative-decoding",
+    "dflash2",
+    "mixed-precision",
+    "text-generation",
+    "base_model:ricursiveAI/Ripple-65B-Preview-DFlash2",
+    "base_model:quantized:ricursiveAI/Ripple-65B-Preview-DFlash2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5669119160,
+  "storage_human": "5.7 GB",
+  "base_model": "ricursiveAI/Ripple-65B-Preview-DFlash2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vcruz305/Ripple-65B-Preview-SAGE-REXL3-5.41bpw · Hugging Face",
+      "url": "https://huggingface.co/vcruz305/Ripple-65B-Preview-SAGE-REXL3-5.41bpw",
+      "snippet": "Text Generation model with 23B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Ripple-65B Preview, a Frontier Open-Weight Model | Ricursive Intelligence",
+      "url": "https://www.ricursive.com/ripple",
+      "snippet": "We optimized the model architecture for our training and serving platforms, driving substantial efficiency gains. Today, we release Ripple-65B Preview, a general-purpose variant of the proprietary model that powers our AI chip design platform. The model is pretrained on 12 trillion tokens with support for up to 1M context length."
+    }
+  ]
+}

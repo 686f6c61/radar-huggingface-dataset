@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "amd/Mistral-Large-4-1T-A52B-Quark-MXFP4",
+  "slug": "amd-mistral-large-4-1t-a52b-quark-mxfp4",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/Mistral-Large-4-1T-A52B-Quark-MXFP4",
+  "created_at": "2026-10-13T16:59:07.000Z",
+  "updated_at": "2026-11-07T00:19:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mistral_large4",
+    "en",
+    "arxiv:2608.04975",
+    "base_model:mistralai/Mistral-Large-4-1T-A52B",
+    "base_model:quantized:mistralai/Mistral-Large-4-1T-A52B",
+    "quark",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 544,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 577928182617,
+  "storage_human": "577.9 GB",
+  "base_model": "mistralai/Mistral-Large-4-1T-A52B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amd/Mistral-Large-4-1T-A52B-Quark-MXFP4 · Hugging Face",
+      "url": "https://huggingface.co/amd/Mistral-Large-4-1T-A52B-Quark-MXFP4",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Mistral Large 4 1T-A52B — VRAM, Speed & Local Setup",
+      "url": "https://llmconfigurator.com/en/models/mistral-large-4/mistral-large-4-1t-a52b",
+      "snippet": "Run Mistral Large 4 1T-A52B locally: about 636 GB VRAM at Q4_K_M, 1,048,576 context, Mistral AI weights, with the Ollama command and per-quant speed estimates."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Cyrilfr/autotrain-35rlw-p8zev",
+  "slug": "cyrilfr-autotrain-35rlw-p8zev",
+  "author": "Cyrilfr",
+  "url": "https://huggingface.co/Cyrilfr/autotrain-35rlw-p8zev",
+  "created_at": "2026-11-06T22:40:50.000Z",
+  "updated_at": "2026-11-06T22:47:17.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "autotrain",
+    "text-generation-inference",
+    "text-generation",
+    "peft",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2616122910,
+  "storage_human": "2.6 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-11-07T02:26:28.659Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AutoTrain – Hugging Face",
+      "url": "https://huggingface.co/autotrain",
+      "snippet": "What is AutoTrain? AutoTrain is an automatic way to train and deploy state-of-the-art Machine Learning models, seamlessly integrated with the Hugging Face ecosystem. What Machine Learning tasks are available for training? Available today: text classification, entity recognition, summarization, question answering, translation, tabular classification and regression, image classification and LLM ..."
+    },
+    {
+      "title": "AutoTrain - Hugging Face",
+      "url": "https://huggingface.co/docs/autotrain/v0.7.4/en/index",
+      "snippet": "AutoTrain is also for anyone who wants to train a model for a custom dataset, but doesn’t want to spend time on the technical details of training a model. Our goal is to make it easy for anyone to train a state-of-the-art model for any task and our focus is not just data scientists or machine learning engineers, but also non-technical users."
+    }
+  ]
+}

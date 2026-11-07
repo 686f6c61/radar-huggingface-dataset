@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "BuilderHelm/Kanso-Satori-1.0",
+  "slug": "builderhelm-kanso-satori-1-0",
+  "author": "BuilderHelm",
+  "url": "https://huggingface.co/BuilderHelm/Kanso-Satori-1.0",
+  "created_at": "2026-10-24T01:22:17.000Z",
+  "updated_at": "2026-11-06T21:27:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "kanso",
+    "zenvoice",
+    "dictation",
+    "text-formatting",
+    "dwq",
+    "text-generation",
+    "conversational",
+    "base_model:BuilderHelm/Kanso-Satori-1.0-bf16",
+    "base_model:quantized:BuilderHelm/Kanso-Satori-1.0-bf16",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 291,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2274597612,
+  "storage_human": "2.3 GB",
+  "base_model": "BuilderHelm/Kanso-Satori-1.0-bf16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BuilderHelm/Kanso-Satori-1.0 · Hugging Face",
+      "url": "https://huggingface.co/BuilderHelm/Kanso-Satori-1.0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BuilderHelm/Kanso-Satori-1.0 at main - Hugging Face",
+      "url": "https://huggingface.co/BuilderHelm/Kanso-Satori-1.0/tree/main",
+      "snippet": "BuilderHelm / Kanso-Satori-1.0 Like 0 Follow BuilderHelm AI 1 Text Generation MLX Safetensors qwen3 kanso zenvoice dictation text-formatting dwq conversational 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

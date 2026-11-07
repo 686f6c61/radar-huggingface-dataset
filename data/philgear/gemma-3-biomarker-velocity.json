@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "philgear/gemma-3-biomarker-velocity",
+  "slug": "philgear-gemma-3-biomarker-velocity",
+  "author": "philgear",
+  "url": "https://huggingface.co/philgear/gemma-3-biomarker-velocity",
+  "created_at": "2026-11-07T04:44:22.000Z",
+  "updated_at": "2026-11-07T04:44:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "gemma-3",
+    "lora",
+    "clinical-nlp",
+    "healthcare",
+    "hipaa-safe-harbor",
+    "open-science",
+    "pocketgull",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:adapter:google/gemma-3-4b-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale. Gemma 3's 128K-token context window lets your applications process and understand vast amounts of ..."
+    },
+    {
+      "title": "Gemma 3: Google’s new open model based on Gemini 2.0",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-3/",
+      "snippet": "Gemma 3 is a collection of lightweight, state-of-the-art open models designed to run on devices. Gemma 3 outperforms other models in its size class, making it ideal for single-GPU or TPU applications. Gemma 3 supports over 140 languages and offers advanced text and visual reasoning capabilities. Gemma 3 includes a 128k-token context window and supports function calling for complex tasks. Gemma ..."
+    }
+  ]
+}

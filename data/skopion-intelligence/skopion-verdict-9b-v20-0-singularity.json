@@ -5,7 +5,7 @@
   "author": "SKOPION-Intelligence",
   "url": "https://huggingface.co/SKOPION-Intelligence/skopion-verdict-9b-v20.0-singularity",
   "created_at": "2026-11-06T07:45:51.000Z",
-  "updated_at": "2026-11-06T07:45:52.000Z",
+  "updated_at": "2026-11-06T12:49:46.000Z",
   "license": "skopion-sovereign-kritis-audit-license-v1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-classification",

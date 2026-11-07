@@ -5,7 +5,7 @@
   "author": "AbdelrhmanX2",
   "url": "https://huggingface.co/AbdelrhmanX2/drone-transcripter-4",
   "created_at": "2026-11-06T07:31:42.000Z",
-  "updated_at": "2026-11-06T07:32:48.000Z",
+  "updated_at": "2026-11-06T08:28:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -32,13 +32,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 4860142652,
-  "storage_human": "4.9 GB",
+  "storage_bytes": 5434183847,
+  "storage_human": "5.4 GB",
   "base_model": "openai/whisper-large-v3-turbo",
   "formats": [
     "safetensors"

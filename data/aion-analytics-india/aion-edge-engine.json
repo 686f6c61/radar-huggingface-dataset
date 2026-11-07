@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "aion-analytics-india/aion-edge-engine",
+  "slug": "aion-analytics-india-aion-edge-engine",
+  "author": "aion-analytics-india",
+  "url": "https://huggingface.co/aion-analytics-india/aion-edge-engine",
+  "created_at": "2026-05-10T19:06:44.000Z",
+  "updated_at": "2026-11-07T02:00:36.000Z",
+  "license": "aion-edge-engine-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "finance",
+    "trading",
+    "market-intelligence",
+    "indian-stock-market",
+    "risk-management",
+    "nifty",
+    "banknifty",
+    "sensex",
+    "indian-index-options",
+    "market-microstructure",
+    "trade-filter",
+    "evidence-based-trading",
+    "market-regime",
+    "pre-trade-gate",
+    "noise-filter",
+    "institutional-trading",
+    "nse",
+    "fno",
+    "calibrated-confidence",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AION - Gameforge",
+      "url": "https://fr.aion.gameforge.com/website/",
+      "snippet": "Devenez le héros du monde fantastique d'AION : livrez des batailles captivantes, sur terre comme dans les airs, qui vous opposent à …"
+    },
+    {
+      "title": "Subscribe: AION Edge Engine | AION Analytics (India)",
+      "url": "https://aionanalytics.in/subscribe/edge-engine",
+      "snippet": "This product is intended for developers, quantitative researchers, AI engineers, agent builders, and workflow integrators. You will receive API and/or MCP access to a computational intelligence service. This product does not include managed setup, personalized market reports, investment advice, or done-for-you monitoring unless explicitly stated."
+    },
+    {
+      "title": "AION 2-NC",
+      "url": "https://aion2.plaync.com/fr-fr/index",
+      "snippet": "Des instances en solo aux raids à grande échelle, le contenu JcE d'AION 2 est incroyablement vaste et varié."
+    },
+    {
+      "title": "AION EDGE ENGINE USER GUIDE =========================== What This ...",
+      "url": "https://aionanalytics.in/docs/aion-edge-engine-user-guide.pdf",
+      "snippet": "AION Edge Engine provides hosted intraday pre-decision market context for Indian market workflows. It supports review dashboards, market monitoring, financial infrastructure tooling, and controlled API integrations."
+    },
+    {
+      "title": "AION",
+      "url": "https://en.aion.gameforge.com/",
+      "snippet": "Discover endless expanses and hardcore PvP! Become a hero in AION: charge into thrilling combat, on ground or in the air, battle …"
+    }
+  ]
+}

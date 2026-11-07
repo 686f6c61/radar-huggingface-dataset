@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "RSIGame/RSIGame-Qwen3.8-27B-S3",
+  "slug": "rsigame-rsigame-qwen3-8-27b-s3",
+  "author": "RSIGame",
+  "url": "https://huggingface.co/RSIGame/RSIGame-Qwen3.8-27B-S3",
+  "created_at": "2026-09-19T21:15:24.000Z",
+  "updated_at": "2026-11-06T22:53:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "code-generation",
+    "game-development",
+    "godot",
+    "phaser",
+    "agent",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 467062560,
+  "storage_human": "467 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Image-Text-to-Text model with 28B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen 3.8 27B: Specs, Hardware Requirements, and How to Run It (2026)",
+      "url": "https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026",
+      "snippet": "Qwen3.8-27B is out: Apache 2.0, a surprise vision encoder, 262k context, and published benchmarks. The confirmed specs, the GPU memory math, and how to serve it with vLLM or SGLang."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/Arete-27B-GGUF",
+  "slug": "prithivmlmods-arete-27b-gguf",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/Arete-27B-GGUF",
+  "created_at": "2026-11-06T22:21:19.000Z",
+  "updated_at": "2026-11-06T22:25:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "llama-cpp",
+    "nous-research",
+    "arete",
+    "supervised-fine-tuning",
+    "value-alignment",
+    "image-text-to-text",
+    "en",
+    "dataset:NousResearch/arete-data-pairs",
+    "base_model:NousResearch/Arete-27B",
+    "base_model:quantized:NousResearch/Arete-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 102361966976,
+  "storage_human": "102.4 GB",
+  "base_model": "NousResearch/Arete-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prithivMLmods/VIGOR-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/VIGOR-27B-GGUF",
+      "snippet": "VIGOR-27B-GGUF VIGOR-27B (Vision Intelligence and Guardrail Oriented Reasoning) is a dense 27-billion-parameter multimodal vision classification model based on Qwen/Qwen3.8-27B. It is designed for visual content-safety analysis and conservative Safe / NSFW classification, with a particular focus on identifying potentially sensitive, revealing, provocative, and sexually suggestive visual ..."
+    },
+    {
+      "title": "Nous Research releases Arete-27B to reduce Chinese AI propaganda",
+      "url": "https://aiunderstanding.org/news/nous-research-releases-arete-27b-to-reduce-chinese-ai-propaganda",
+      "snippet": "Nous Research has released Arete-27B, a post-trained model built on a Qwen base that reduces a measured propaganda rate from 22% to 1% while maintaining general performance."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/Oc-e-Non-v1-FP8",
+  "slug": "liodon-ai-oc-e-non-v1-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/Oc-e-Non-v1-FP8",
+  "created_at": "2026-11-06T23:33:48.000Z",
+  "updated_at": "2026-11-06T23:39:09.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "base_model:p-e-w/Oc-e-Non-v1",
+    "base_model:quantized:p-e-w/Oc-e-Non-v1",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 4425330714,
+  "storage_human": "4.4 GB",
+  "base_model": "p-e-w/Oc-e-Non-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai/zero-FP8 · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/zero-FP8",
+      "snippet": "Instructions to use liodon-ai/zero-FP8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use liodon-ai/zero-FP8 with Transformers:"
+    },
+    {
+      "title": "liodon-ai (Liodon AI) - Hugging Face",
+      "url": "https://huggingface.co/liodon-ai",
+      "snippet": "Org profile for Liodon AI on Hugging Face, the AI community building the future."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Skunk0/avenkin-search-eg2-text",
+  "slug": "skunk0-avenkin-search-eg2-text",
+  "author": "Skunk0",
+  "url": "https://huggingface.co/Skunk0/avenkin-search-eg2-text",
+  "created_at": "2026-11-07T02:47:47.000Z",
+  "updated_at": "2026-11-07T02:48:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "embedding_gemma2",
+    "embedding",
+    "int8",
+    "sentence-similarity",
+    "base_model:google/embeddinggemma-2",
+    "base_model:quantized:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306107503,
+  "storage_human": "306 MB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Avenkin - Your AI.",
+      "url": "https://avenkin.com/",
+      "snippet": "A private AI assistant Your AI. Your terms. Avenkin is a private AI assistant that works for you, not for a platform: your choice of AI, your memory on your device, on your iPhone, through headphones or AirPods, from your watch or with your glasses. On your iPhone, through headphones or AirPods, from your wrist, or hands-free with glasses."
+    }
+  ]
+}

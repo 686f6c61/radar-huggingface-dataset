@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "jersobh/epochdb-embed",
+  "slug": "jersobh-epochdb-embed",
+  "author": "jersobh",
+  "url": "https://huggingface.co/jersobh/epochdb-embed",
+  "created_at": "2026-11-06T21:46:38.000Z",
+  "updated_at": "2026-11-06T21:46:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:9000",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:finetune:intfloat/multilingual-e5-small",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117653760,
+  "parameters_human": "117.7M",
+  "storage_bytes": 252413084,
+  "storage_human": "252 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jersobh/epochdb: An agentic memory engine designed for ...",
+      "url": "https://github.com/jersobh/epochdb",
+      "snippet": "An agentic memory engine designed for lossless, tiered verbatim storage and multi-hop retrieval. - jersobh/epochdb"
+    },
+    {
+      "title": "jersobh/epochdb-embed-0.6b · Hugging Face",
+      "url": "https://huggingface.co/jersobh/epochdb-embed-0.6b",
+      "snippet": "Instructions to use jersobh/epochdb-embed-0.6b with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use jersobh/epochdb-embed-0.6b with sentence-transformers:"
+    }
+  ]
+}

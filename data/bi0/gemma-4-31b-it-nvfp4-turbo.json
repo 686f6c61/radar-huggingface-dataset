@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "bi0/gemma-4-31B-it-NVFP4-turbo",
+  "slug": "bi0-gemma-4-31b-it-nvfp4-turbo",
+  "author": "bi0",
+  "url": "https://huggingface.co/bi0/gemma-4-31B-it-NVFP4-turbo",
+  "created_at": "2026-11-07T00:15:58.000Z",
+  "updated_at": "2026-11-07T00:15:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dgx-spark",
+    "blackwell-gb10",
+    "sm121",
+    "nvfp4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-4-31b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LilaRest/gemma-4-31B-it-NVFP4-turbo · Hugging Face",
+      "url": "https://huggingface.co/LilaRest/gemma-4-31B-it-NVFP4-turbo",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RedHatAI/gemma-4-31B-it-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/gemma-4-31B-it-NVFP4",
+      "snippet": "Add \"gemma-4-31b-it-NVFP4\" to the SUPPORTED_MODELS list. Step 3 — Start the vLLM server (use the command at the top of this section; the --served-model-name flag ensures BFCL can find the model by its registered slug)."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "inferencerlabs/Hydrogen-1.0-MLX-Q4",
+  "slug": "inferencerlabs-hydrogen-1-0-mlx-q4",
+  "author": "inferencerlabs",
+  "url": "https://huggingface.co/inferencerlabs/Hydrogen-1.0-MLX-Q4",
+  "created_at": "2026-11-06T22:37:34.000Z",
+  "updated_at": "2026-11-06T23:06:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "glm_moe_dsa",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:deep-principle/Hydrogen-1.0",
+    "base_model:quantized:deep-principle/Hydrogen-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29055425339,
+  "storage_human": "29.1 GB",
+  "base_model": "deep-principle/Hydrogen-1.0",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deep Principle Releases Hydrogen-1.0: A 753B Open-Weight Model for ...",
+      "url": "https://www.marktechpost.com/2026/11/02/deep-principle-hydrogen-1-0-open-weight-scientific-model/",
+      "snippet": "Deep Principle has released Hydrogen-1.0, an open-weight scientific model for chemistry, materials science and life sciences. It is built by post-training Z.ai’s GLM-5.3 on domain data, laboratory records and agent discovery trajectories. For developers, it offers open weights that report a FrontierScience-Research win over GPT-6-Astra."
+    },
+    {
+      "title": "inferencerlabs (Inferencer) - Hugging Face",
+      "url": "https://huggingface.co/inferencerlabs",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... published a model 1 day ago ... updated a model 5 days ago"
+    }
+  ]
+}

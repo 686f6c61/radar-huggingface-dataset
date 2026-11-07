@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "SeeSee21/Kitsune-Furry-Girl-Z-Image",
+  "slug": "seesee21-kitsune-furry-girl-z-image",
+  "author": "SeeSee21",
+  "url": "https://huggingface.co/SeeSee21/Kitsune-Furry-Girl-Z-Image",
+  "created_at": "2026-11-06T22:46:05.000Z",
+  "updated_at": "2026-11-06T23:42:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lora",
+    "text-to-image",
+    "z-image",
+    "z-image-turbo",
+    "zit",
+    "kitsune",
+    "furry",
+    "character",
+    "en",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:adapter:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 175572003,
+  "storage_human": "176 MB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kitsune Furry Girl (Z-image Turbo) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/f6126554b57e05bb3012da66aebc9a1f",
+      "snippet": "Explore Kitsune Furry Girl (Z-image Turbo) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Kitsune Furry Girl (Z-image Turbo) - Z-Image-Turbo-v1 | ZImage LoRA ...",
+      "url": "https://civitai.red/models/2218232/kitsune-furry-girl-z-image-turbo",
+      "snippet": "🎨 Kitsune Furry Girl - Z-Image-Turbo LoRA Quick & powerful LoRA for Z-Image-Turbo-AIO! 🎯 Quick Info Type: LoRA for Z-Image-Turbo Strength: 0.6-1.0 recommended Trigger Words: Kitsune Furry Girl Trained on: Z-Image-Turbo BF16 💡 How to Use Download Z-Image-Turbo-AIO model Load this LoRA with strength 0.6-1.0 Use natural language prompts (20-300 words) Generate with 9 steps, CFG 1.0 No ..."
+    }
+  ]
+}

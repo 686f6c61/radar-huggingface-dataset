@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "bi0/FrogNano-4B-2609-Q4_K_M-GGUF",
+  "slug": "bi0-frognano-4b-2609-q4_k_m-gguf",
+  "author": "bi0",
+  "url": "https://huggingface.co/bi0/FrogNano-4B-2609-Q4_K_M-GGUF",
+  "created_at": "2026-11-07T00:15:52.000Z",
+  "updated_at": "2026-11-07T00:15:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dgx-spark",
+    "blackwell-gb10",
+    "sm121",
+    "gguf",
+    "base_model:microsoft/FrogNano-4B-2609",
+    "base_model:finetune:microsoft/FrogNano-4B-2609",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "microsoft/FrogNano-4B-2609",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/FrogNano-4B-2609-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/FrogNano-4B-2609-GGUF",
+      "snippet": "A Q4_K_M is still mostly Q4_K; the extra precision goes to the weights this particular model is most sensitive to. The S, M or L in a name says how much of the model stays at the base precision: about 90 % for S, 70 % for M and 50 % for L."
+    },
+    {
+      "title": "prithivMLmods/FrogNano-4B-2609-GGUF · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/FrogNano-4B-2609-GGUF",
+      "snippet": "FrogNano-4B-2609-GGUF FrogNano is a compact repository-level coding agent from Microsoft, derived from Qwen3.5-4B and post-trained exclusively with reinforcement learning — no stronger-model trajectories or distillation targets — on roughly 1,500 synthetic software-engineering tasks generated, validated, and calibrated against the evolving policy using TaskPilot. It operates through the ..."
+    }
+  ]
+}

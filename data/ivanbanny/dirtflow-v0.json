@@ -5,7 +5,7 @@
   "author": "IvanBanny",
   "url": "https://huggingface.co/IvanBanny/dirtflow-v0",
   "created_at": "2026-11-06T02:31:38.000Z",
-  "updated_at": "2026-11-06T10:15:49.000Z",
+  "updated_at": "2026-11-06T13:02:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-3d",
@@ -26,12 +26,12 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 9282580344,
+  "storage_bytes": 9286912898,
   "storage_human": "9.3 GB",
   "base_model": "microsoft/TRELLIS-text-xlarge",
   "formats": [

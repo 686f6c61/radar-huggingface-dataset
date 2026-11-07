@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "jackyk02/clm-35b-a3b-mv8x128-w3696-adp-head",
+  "slug": "jackyk02-clm-35b-a3b-mv8x128-w3696-adp-head",
+  "author": "jackyk02",
+  "url": "https://huggingface.co/jackyk02/clm-35b-a3b-mv8x128-w3696-adp-head",
+  "created_at": "2026-11-06T22:18:41.000Z",
+  "updated_at": "2026-11-06T22:32:06.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "clm",
+    "contrastive",
+    "qwen3.6",
+    "multi-vector",
+    "hard-negatives",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 200251102,
+  "storage_human": "200 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai2-science-qwen3.6-35b-a3b-fp8-embeddings-256k",
+      "url": "https://huggingface.co/datasets/jackyk02/ai2-science-qwen3.6-35b-a3b-fp8-embeddings-256k",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "swe-smith-ai2-qwen3.6-35b-a3b-fp8-embeddings-256k",
+      "url": "https://huggingface.co/datasets/jackyk02/swe-smith-ai2-qwen3.6-35b-a3b-fp8-embeddings-256k",
+      "snippet": "One-token sequences. vLLM's pooling of a one-token prompt returns noise for this model, so every one-token action, negative or state takes its vector from the single-token table jackyk02/qwen3.6-35b-a3b-fp8-single-token-embeddings; single_tokens.npz lists those rows and token ids (clm_train.data.stores.EmbeddingDir applies it on load). Use"
+    }
+  ]
+}

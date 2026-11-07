@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "SuperPUPS/vllm-cmp170hx-pp-int8",
+  "slug": "superpups-vllm-cmp170hx-pp-int8",
+  "author": "SuperPUPS",
+  "url": "https://huggingface.co/SuperPUPS/vllm-cmp170hx-pp-int8",
+  "created_at": "2026-11-06T23:46:51.000Z",
+  "updated_at": "2026-11-06T23:50:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "int8",
+    "pipeline-parallelism",
+    "custom-build",
+    "sm80",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45574609,
+  "storage_human": "46 MB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - canoziia/vllm-cmp170hx: AI SLOP",
+      "url": "https://github.com/canoziia/vllm-cmp170hx",
+      "snippet": "Put a change in root patches/ when the same source patch is intended for all models using that component. Shared official LMCache patches are listed in patches/lmcache/series; shared vLLM runtime fixes are listed in patches/vllm/series. Put model implementation patches, Compose files, source pins, and diagnostics under models/<model>/. DeepSeek's vLLM patch series is therefore under models ..."
+    },
+    {
+      "title": "GitHub - ahnguyen17/cmp-170hx-vllm: Known-good vLLM recipe: Qwen3.8-27B ...",
+      "url": "https://github.com/ahnguyen17/cmp-170hx-vllm",
+      "snippet": "CMP 170HX (Hynix) — vLLM serving recipe Known-good, production-validated configuration for serving Qwen3.8-27B-Int8 (GPTQ) with MTP speculative decoding (k=3) and prefix caching on a single NVIDIA CMP 170HX 64GB — Hynix memory variant, 24/7. The 170HX is a GA100 die with 64GB HBM2e that sells for a fraction of an A100."
+    }
+  ]
+}

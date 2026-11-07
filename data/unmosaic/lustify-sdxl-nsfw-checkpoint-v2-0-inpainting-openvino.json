@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "unmosaic/LUSTIFY-SDXL-NSFW-checkpoint-v2-0-INPAINTING-openvino",
+  "slug": "unmosaic-lustify-sdxl-nsfw-checkpoint-v2-0-inpainting-openvino",
+  "author": "unmosaic",
+  "url": "https://huggingface.co/unmosaic/LUSTIFY-SDXL-NSFW-checkpoint-v2-0-INPAINTING-openvino",
+  "created_at": "2026-11-06T21:49:19.000Z",
+  "updated_at": "2026-11-06T21:49:50.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "Safetensors",
+    "stable-diffusion",
+    "stable-diffusion-diffusers",
+    "text-to-image",
+    "openvino",
+    "openvino-export",
+    "base_model:andro-flock/LUSTIFY-SDXL-NSFW-checkpoint-v2-0-INPAINTING",
+    "base_model:finetune:andro-flock/LUSTIFY-SDXL-NSFW-checkpoint-v2-0-INPAINTING",
+    "license:creativeml-openrail-m",
+    "diffusers:StableDiffusionXLInpaintPipeline",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4541066336,
+  "storage_human": "4.5 GB",
+  "base_model": "andro-flock/LUSTIFY-SDXL-NSFW-checkpoint-v2-0-INPAINTING",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LUSTIFY-SDXL-NSFW-checkpoint-v2-0-INPAINTING - Hugging Face",
+      "url": "https://huggingface.co/andro-flock/LUSTIFY-SDXL-NSFW-checkpoint-v2-0-INPAINTING",
+      "snippet": "Text-to-Image model with 3B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "TheImposterImposters/LUSTIFY-v2.0 · Hugging Face",
+      "url": "https://huggingface.co/TheImposterImposters/LUSTIFY-v2.0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

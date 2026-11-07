@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "BurtleLife/vessel-handoff-MiniCPM5-2B",
+  "slug": "burtlelife-vessel-handoff-minicpm5-2b",
+  "author": "BurtleLife",
+  "url": "https://huggingface.co/BurtleLife/vessel-handoff-MiniCPM5-2B",
+  "created_at": "2026-11-06T21:45:43.000Z",
+  "updated_at": "2026-11-06T21:56:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "tool-calling",
+    "voice-assistant",
+    "router",
+    "lora",
+    "hermes-agent",
+    "text-generation",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:adapter:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 4850473808,
+  "storage_human": "4.9 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniCPM5-2B: A 2.5B Model That Beats Larger Models on Agentic Tasks",
+      "url": "https://betterstack.com/community/guides/ai/minicpm5-2b/",
+      "snippet": "MiniCPM5-2B from OpenBMB scores 46.4 on SWE-bench Verified at 2.5B parameters, outperforming 4B-class models on agentic coding tasks. But the quantized build has a 92.1% runaway rate with default settings. Here's how it works, how to run it with MLX and llama.cpp, and the one-flag fix."
+    },
+    {
+      "title": "MiniCPM5-2B Tops Larger AI Models in OpenBMB Tests - eWeek",
+      "url": "https://www.eweek.com/news/minicpm5-2b-ai-model-benchmarks/",
+      "snippet": "OpenBMB says MiniCPM5-2B tops larger models on its 34-test benchmark table. eWeek finds where the 2.52B-parameter model wins and falls short."
+    }
+  ]
+}

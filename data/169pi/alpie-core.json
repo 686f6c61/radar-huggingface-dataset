@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "169Pi/Alpie-Core",
+  "slug": "169pi-alpie-core",
+  "author": "169Pi",
+  "url": "https://huggingface.co/169Pi/Alpie-Core",
+  "created_at": "2025-07-02T06:10:48.000Z",
+  "updated_at": "2026-11-06T20:50:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "reasoning",
+    "coding",
+    "mathematics",
+    "quantization",
+    "4-bit model",
+    "state-of-the-art",
+    "conversational",
+    "en",
+    "hi",
+    "dataset:synthetic",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+    "base_model:quantized:deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 9,
+  "downloads_30d": 192,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 555331790,
+  "storage_human": "555 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "169Pi/Alpie-Core · Hugging Face",
+      "url": "https://huggingface.co/169Pi/Alpie-Core",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - 169Pi/Alpie-Core: Alpie Core: 4-bit Quantized Reasoning Model ...",
+      "url": "https://github.com/169Pi/Alpie-Core",
+      "snippet": "We introduce Alpie-Core, our first-generation reasoning model. It is a 32B-parameter system built on the DeepSeek-32B family and fine-tuned in 4-bit precision. By using quantization techniques like QLoRA, combined with parameter-efficient fine-tuning methods such as LoRA, and leveraging synthetic dataset distillation, Alpie-Core achieves high efficiency in reasoning, mathematics, and coding ..."
+    }
+  ]
+}

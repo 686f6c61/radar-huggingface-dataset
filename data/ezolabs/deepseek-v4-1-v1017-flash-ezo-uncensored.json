@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "ezolabs/DeepSeek-v4.1-v1017-Flash-EZO-UNCENSORED",
+  "slug": "ezolabs-deepseek-v4-1-v1017-flash-ezo-uncensored",
+  "author": "ezolabs",
+  "url": "https://huggingface.co/ezolabs/DeepSeek-v4.1-v1017-Flash-EZO-UNCENSORED",
+  "created_at": "2026-11-07T00:09:39.000Z",
+  "updated_at": "2026-11-07T01:19:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "deepseek",
+    "abliterated",
+    "uncensored",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510297882562,
+  "storage_human": "510.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ezolabs/DeepSeek-v4.1-v1017-Flash-EZO-UNCENSORED · Hugging Face",
+      "url": "https://huggingface.co/ezolabs/DeepSeek-v4.1-v1017-Flash-EZO-UNCENSORED",
+      "snippet": "Instructions to use ezolabs/DeepSeek-v4.1-v1017-Flash-EZO-UNCENSORED with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "DeepSeek V4.1 Flash 1017 (Max); mini-swe-agent harness, pass@1 averaged over three repeats."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Rivok",
   "url": "https://huggingface.co/Rivok/paddleocr-hebrew",
   "created_at": "2026-08-29T14:54:27.000Z",
-  "updated_at": "2026-11-04T19:46:42.000Z",
+  "updated_at": "2026-11-06T22:02:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",

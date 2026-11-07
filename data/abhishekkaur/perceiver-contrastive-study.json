@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "abhishekkaur/perceiver-contrastive-study",
+  "slug": "abhishekkaur-perceiver-contrastive-study",
+  "author": "abhishekkaur",
+  "url": "https://huggingface.co/abhishekkaur/perceiver-contrastive-study",
+  "created_at": "2026-11-06T23:59:31.000Z",
+  "updated_at": "2026-11-06T23:59:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abhishekkaur/fun-contrastive · Hugging Face",
+      "url": "https://huggingface.co/abhishekkaur/fun-contrastive",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Perceiver - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Perceiver",
+      "snippet": "Perceiver is a variant of the Transformer architecture, adapted for processing arbitrary forms of data, such as images, sounds and video, and spatial data. Unlike previous notable Transformer systems such as BERT and GPT-3, which were designed for text processing, the Perceiver is designed as a general architecture that can learn from large ..."
+    }
+  ]
+}

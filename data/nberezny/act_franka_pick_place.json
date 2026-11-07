@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "nberezny/act_franka_pick_place",
+  "slug": "nberezny-act_franka_pick_place",
+  "author": "nberezny",
+  "url": "https://huggingface.co/nberezny/act_franka_pick_place",
+  "created_at": "2026-11-06T23:39:16.000Z",
+  "updated_at": "2026-11-06T23:39:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:nberezny/franka_pick_place_img",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51672712,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206731640,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Franka Panda — Pick & Place with AI Models - GitHub",
+      "url": "https://github.com/fabriziobattiloro/robotics-pick-and-place-arena",
+      "snippet": "A browser-based embodied-reasoning demo. A model (Gemini, Claude, or GPT) looks at a simulated 3D scene, returns 2D detections for the objects you asked about, and the Franka Emika Panda arm picks them up and drops them in a tray. This project started as a fork of Google's official AI Studio app — Robotics: Franka Pick and Place — which was Gemini-only. It has been extended with support ..."
+    },
+    {
+      "title": "Axis Robotics Open-Sources One of the Largest Franka Arm Simulation ...",
+      "url": "https://markets.businessinsider.com/news/stocks/axis-robotics-open-sources-one-of-the-largest-franka-arm-simulation-datasets-for-physical-ai-1036522389",
+      "snippet": "Axis Robotics is building the ultimate compounding data engine for Physical AI, a vertically integrated system spanning large-scale simulation, egocentric real-world capture, humanoid loco ..."
+    },
+    {
+      "title": "Indian Desi Sex Videos and XXX Porn - desitales2.com",
+      "url": "https://www.desitales2.com/videos/",
+      "snippet": "Never-watched-before xxx videos of hot Indian girls, aunties, bhabhis desperate for hard fuck. Handpicked desi Indian sex videos …"
+    }
+  ]
+}

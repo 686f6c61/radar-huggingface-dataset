@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "asher577/dense1_dense_d512_L2_t1000000000_s0",
+  "slug": "asher577-dense1_dense_d512_l2_t1000000000_s0",
+  "author": "asher577",
+  "url": "https://huggingface.co/asher577/dense1_dense_d512_L2_t1000000000_s0",
+  "created_at": "2026-11-07T00:55:12.000Z",
+  "updated_at": "2026-11-07T01:01:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42000274,
+  "storage_human": "42 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asher577/scaling1_dcp_d512_L2_t1000000000_s0 · Hugging Face",
+      "url": "https://huggingface.co/asher577/scaling1_dcp_d512_L2_t1000000000_s0",
+      "snippet": "scaling1_dcp_d512_L2_t1000000000_s0 Weight-sparse transformer trained with the procedure from Gao et al. (2025)."
+    },
+    {
+      "title": "asher577/scaling2_plain_d512_L2_t500000000_s2 at main",
+      "url": "https://huggingface.co/asher577/scaling2_plain_d512_L2_t500000000_s2/tree/main",
+      "snippet": "asher577 / scaling2_plain_d512_L2_t500000000_s2 Like 0 PyTorch Model card FilesFiles and versions xet Community Copy to bucket main scaling2_plain_d512_L2_t500000000_s2 42 MB Ctrl+K Ctrl+K 1 contributor History:2 commits asher577 driver upload plain_d512_L2_t500000000_s2 7775395 verifiedabout 17 hours ago .gitattributes Safe 1.52 kBinitial ..."
+    }
+  ]
+}

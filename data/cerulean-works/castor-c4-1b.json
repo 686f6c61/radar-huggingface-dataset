@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "cerulean-works/castor-c4-1B",
+  "slug": "cerulean-works-castor-c4-1b",
+  "author": "cerulean-works",
+  "url": "https://huggingface.co/cerulean-works/castor-c4-1B",
+  "created_at": "2026-10-23T07:20:54.000Z",
+  "updated_at": "2026-11-07T04:39:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "castor",
+    "safety",
+    "refusal",
+    "jailbreak",
+    "seed-twins",
+    "datadecide",
+    "text-generation",
+    "en",
+    "dataset:allenai/tulu-3-sft-olmo-2-mixture-0225",
+    "dataset:allenai/olmo-2-0425-1b-preference-mix",
+    "arxiv:2610.34074",
+    "base_model:allenai/DataDecide-c4-1B",
+    "base_model:finetune:allenai/DataDecide-c4-1B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15358356624,
+  "storage_human": "15.4 GB",
+  "base_model": "allenai/DataDecide-c4-1B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CASTOR - a cerulean-works Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/cerulean-works/castor",
+      "snippet": "Seed-twinned DataDecide models under one safety post-training recipe, with per-prompt judge labels."
+    },
+    {
+      "title": "GitHub - cerulean-works/castor: Seed-twinned language models for ...",
+      "url": "https://github.com/cerulean-works/castor/tree/main/",
+      "snippet": "CASTOR answers this with seed twins. The base models come from DataDecide: each data recipe and size was pretrained under several seeds, so two bases that share a recipe differ only in their pretraining seed. Every base receives the same safety post-training (SFT then DPO, the OLMo 2 1B Instruct recipe) under several post-training seeds, and every resulting model answers the same panel of ..."
+    }
+  ]
+}

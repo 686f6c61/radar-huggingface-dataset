@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "AbuZayDin/distilgpt2-squad",
+  "slug": "abuzaydin-distilgpt2-squad",
+  "author": "AbuZayDin",
+  "url": "https://huggingface.co/AbuZayDin/distilgpt2-squad",
+  "created_at": "2026-10-13T13:58:13.000Z",
+  "updated_at": "2026-11-06T21:23:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81912576,
+  "parameters_human": "81.9M",
+  "storage_bytes": 327657928,
+  "storage_human": "328 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "distilbert/distilgpt2 · Hugging Face",
+      "url": "https://huggingface.co/distilbert/distilgpt2",
+      "snippet": "DistilGPT2 DistilGPT2 (short for Distilled-GPT2) is an English-language model pre-trained with the supervision of the smallest version of Generative Pre-trained Transformer 2 (GPT-2). Like GPT-2, DistilGPT2 can be used to generate text. Users of this model card should also consider information about the design, training, and limitations of GPT-2. Model Details Developed by: Hugging Face Model ..."
+    },
+    {
+      "title": "GPT-2 Fine-Tuning with Hugging Face distilgpt2 - GitHub",
+      "url": "https://github.com/omidiu/GPT-2-Fine-Tuning",
+      "snippet": "This repository showcases the process of fine-tuning the GPT-2 language model using the 🤗 Hugging Face distilgpt2. Our primary objective is to fine-tune GPT-2 on the SQuAD (Stanford Question Answering Dataset)."
+    }
+  ]
+}

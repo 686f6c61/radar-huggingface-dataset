@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "bi0/Nemotron-3.5-Rerank-8B-rank-Q4_K_M",
+  "slug": "bi0-nemotron-3-5-rerank-8b-rank-q4_k_m",
+  "author": "bi0",
+  "url": "https://huggingface.co/bi0/Nemotron-3.5-Rerank-8B-rank-Q4_K_M",
+  "created_at": "2026-11-07T00:15:48.000Z",
+  "updated_at": "2026-11-07T00:15:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dgx-spark",
+    "blackwell-gb10",
+    "sm121",
+    "gguf",
+    "base_model:nvidia/Nemotron-3.5-Rerank-8B-BF16",
+    "base_model:finetune:nvidia/Nemotron-3.5-Rerank-8B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nvidia/Nemotron-3.5-Rerank-8B-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nemotron-3.5-rerank-8b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3_5-rerank-8b/modelcard",
+      "snippet": "The Nemotron-3.5-Rerank-8B-BF16 model was evaluated with the model's default image longest_edge set to 1,120 pixels. Qwen3-VL-Reranker-8B was evaluated with the model's default max_pixels set to 1,310,720."
+    },
+    {
+      "title": "nemotron-3.5-rerank-8b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3_5-rerank-8b",
+      "snippet": "8B multimodal reranking model that scores how relevant a text or document-image passage is to a query."
+    }
+  ]
+}

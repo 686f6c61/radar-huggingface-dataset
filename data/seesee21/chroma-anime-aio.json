@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "SeeSee21/Chroma-Anime-AIO",
+  "slug": "seesee21-chroma-anime-aio",
+  "author": "SeeSee21",
+  "url": "https://huggingface.co/SeeSee21/Chroma-Anime-AIO",
+  "created_at": "2026-11-06T22:07:50.000Z",
+  "updated_at": "2026-11-06T23:42:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "anime",
+    "chroma",
+    "flux",
+    "comfyui",
+    "checkpoint",
+    "safetensors",
+    "aio",
+    "en",
+    "base_model:lodestones/Chroma",
+    "base_model:finetune:lodestones/Chroma",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14228986630,
+  "storage_human": "14.2 GB",
+  "base_model": "lodestones/Chroma",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SeeSee21 (Sebastian) - Hugging Face",
+      "url": "https://huggingface.co/SeeSee21",
+      "snippet": "👋 Welcome to my profile! I’m currently working on several AI-related projects, including optimized checkpoints, streamlined workflows, and custom LoRAs. I also enjoy creating AI-generated images ..."
+    },
+    {
+      "title": "SeeSee21/Z-Anime at main - Hugging Face",
+      "url": "https://huggingface.co/SeeSee21/Z-Anime/tree/main/aio",
+      "snippet": "SeeSee21 / Z-Anime Like 494 Text-to-Image Diffusers Safetensors GGUF English z-anime image-generation diffusion anime z-image comfyui fp8 bf16 aio License:apache-2.0 Model card FilesFiles and versions xet Community 17 Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

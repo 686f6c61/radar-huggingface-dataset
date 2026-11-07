@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/kofu-2b-edge-GGUF",
+  "slug": "mradermacher-kofu-2b-edge-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/kofu-2b-edge-GGUF",
+  "created_at": "2026-11-06T22:04:21.000Z",
+  "updated_at": "2026-11-06T22:04:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/continual-ai-2b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/continual-ai-2b-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "shebxyd/kofu-2b-edge · Hugging Face",
+      "url": "https://huggingface.co/shebxyd/kofu-2b-edge",
+      "snippet": "shebxyd / kofu-2b-edge Like 0 Text Generation Transformers Safetensors GGUF LiteRT Spanish English gemma kofu edge android cplusplus on-device conversational llama.cpp text-generation-inference License:gemma Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

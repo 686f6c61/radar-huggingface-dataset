@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "asher577/dense_probe_dense_d7408_L2_t6553600_s0_lr0.0003",
+  "slug": "asher577-dense_probe_dense_d7408_l2_t6553600_s0_lr0-0003",
+  "author": "asher577",
+  "url": "https://huggingface.co/asher577/dense_probe_dense_d7408_L2_t6553600_s0_lr0.0003",
+  "created_at": "2026-11-07T00:44:33.000Z",
+  "updated_at": "2026-11-07T00:48:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5511773102,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asher577/scaling_probe_dcp_d4096_L2_t6553600_s0 · Hugging Face",
+      "url": "https://huggingface.co/asher577/scaling_probe_dcp_d4096_L2_t6553600_s0",
+      "snippet": "scaling_probe_dcp_d4096_L2_t6553600_s0 Weight-sparse transformer trained with the procedure from Gao et al. (2025). Model Details Layers: 2 Model Dimension: 4096 Context Length: 512 Head Dimension: 16 Vocabulary Size: 4096 Sparsity Weight Sparsity: True Target L0 Fraction: 0.01 Activation Sparsity: True Training Dataset: jacobcd52/simplestories ..."
+    },
+    {
+      "title": "asher577/scaling_probe_dcp_d4096_L2_t6553600_s0 at main",
+      "url": "https://huggingface.co/asher577/scaling_probe_dcp_d4096_L2_t6553600_s0/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket main scaling_probe_dcp_d4096_L2_t6553600_s0 2.37 GB Ctrl+K Ctrl+K 1 contributor History:2 commits asher577 driver upload dcp_d4096_L2_t6553600_s0 9114a9e verified1 day ago .gitattributes Safe 1.52 kBinitial commit1 day ago README.md 1.08 kBdriver upload dcp_d4096_L2_t6553600_s01 ..."
+    }
+  ]
+}

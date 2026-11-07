@@ -5,7 +5,7 @@
   "author": "08semi",
   "url": "https://huggingface.co/08semi/lekiwi_prototype",
   "created_at": "2026-11-06T04:12:19.000Z",
-  "updated_at": "2026-11-06T04:12:30.000Z",
+  "updated_at": "2026-11-06T07:50:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 51674761,
   "parameters_human": "51.7M",

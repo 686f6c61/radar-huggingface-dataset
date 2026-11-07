@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Yo-Purple/Meditor-1-500M-Universal",
+  "slug": "yo-purple-meditor-1-500m-universal",
+  "author": "Yo-Purple",
+  "url": "https://huggingface.co/Yo-Purple/Meditor-1-500M-Universal",
+  "created_at": "2026-11-06T21:47:45.000Z",
+  "updated_at": "2026-11-06T21:47:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "universal",
+    "qwen2.5",
+    "dense",
+    "reasoning",
+    "toolformer",
+    "llama-cpp",
+    "lmstudio",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Yo-Purple/Meditor-1-2.2B-A500M-MoE",
+    "base_model:quantized:Yo-Purple/Meditor-1-2.2B-A500M-MoE",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 630167424,
+  "parameters_human": "630.2M",
+  "storage_bytes": 3705325724,
+  "storage_human": "3.7 GB",
+  "base_model": "Yo-Purple/Meditor-1-2.2B-A500M-MoE",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

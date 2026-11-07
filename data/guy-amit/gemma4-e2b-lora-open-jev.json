@@ -5,7 +5,7 @@
   "author": "Guy-Amit",
   "url": "https://huggingface.co/Guy-Amit/gemma4-E2B-lora-open-jev",
   "created_at": "2026-11-05T22:42:04.000Z",
-  "updated_at": "2026-11-05T22:42:33.000Z",
+  "updated_at": "2026-11-06T08:34:01.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": 5104371011,
   "parameters_human": "5.10B",
-  "storage_bytes": 10250706780,
-  "storage_human": "10.3 GB",
+  "storage_bytes": 20469213063,
+  "storage_human": "20.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

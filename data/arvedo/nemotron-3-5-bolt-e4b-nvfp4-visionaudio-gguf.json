@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "arvedo/Nemotron-3.5-Bolt-E4B-NVFP4-VisionAudio-GGUF",
+  "slug": "arvedo-nemotron-3-5-bolt-e4b-nvfp4-visionaudio-gguf",
+  "author": "arvedo",
+  "url": "https://huggingface.co/arvedo/Nemotron-3.5-Bolt-E4B-NVFP4-VisionAudio-GGUF",
+  "created_at": "2026-11-01T12:49:45.000Z",
+  "updated_at": "2026-11-06T23:04:15.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "nvfp4",
+    "fp4",
+    "blackwell",
+    "rubin",
+    "nemotron",
+    "gemma4",
+    "rtx5090",
+    "llama-cpp",
+    "nvidia",
+    "multimodal",
+    "vision",
+    "audio",
+    "image-text-to-text",
+    "en",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "ja",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 7518069878,
+  "parameters_human": "7.52B",
+  "storage_bytes": 21305472736,
+  "storage_human": "21.3 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA Nemotron 3.5 Bolt E4B 4GB - NVIDIA Nemotron",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3.5-Bolt-E4B-4GB/",
+      "snippet": "We are releasing NVIDIA Nemotron 3.5 Bolt E4B 4GB, an open small language model optimized for speed and intelligence per GB in conversational agents."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-Blackwell/Rubin",
+      "url": "https://huggingface.co/arvedo/NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-Blackwell-Rubin",
+      "snippet": "Native GGUF Package: Standalone GGUF files for llama.cpp / Ollama with a Q8_0 quantized PLE table (6.11 GB text model + 946 MB multimodal projector), available at arvedo/NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-GGUF."
+    }
+  ]
+}

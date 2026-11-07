@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "IsValorum/Apex-35B-V1.0-APEX-I-NanoPlus-V2.1-GGUF",
+  "slug": "isvalorum-apex-35b-v1-0-apex-i-nanoplus-v2-1-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/Apex-35B-V1.0-APEX-I-NanoPlus-V2.1-GGUF",
+  "created_at": "2026-11-07T01:10:22.000Z",
+  "updated_at": "2026-11-07T01:33:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "apex",
+    "apex-quant",
+    "apex-i-nanoplus",
+    "v2.1",
+    "moe",
+    "qwen35moe",
+    "qwen3_5_moe",
+    "qwen3.6",
+    "mtp",
+    "imatrix",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "agent",
+    "research",
+    "base_model:Apexintelligence-AI/Apex-35B-V1.0",
+    "base_model:quantized:Apexintelligence-AI/Apex-35B-V1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 13033523424,
+  "storage_human": "13.0 GB",
+  "base_model": "Apexintelligence-AI/Apex-35B-V1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - apexin-ai/Apex-35B-V1.0: Apex-35B-V1.0 by Apex Intelligence ...",
+      "url": "https://github.com/apexin-ai/Apex-35B-V1.0",
+      "snippet": "Model Introduction Apex-35B-V1.0 is the first model from Apex Intelligence, developed for both general-purpose use and research and supported by the Claude Code (v2.1.280 preferred) harness. It combines coding, tool use, question answering, and deep search with research tasks in AI, computational science, and robotics simulation."
+    },
+    {
+      "title": "Qwen3.8-35B-A3B-Distill APEX-I-MiniPlus-V2.1 GGUF - Hugging Face",
+      "url": "https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-APEX-I-MiniPlus-V2.1-GGUF",
+      "snippet": "IsValorum / Qwen3.8-35B-A3B-Distill-APEX-I-MiniPlus-V2.1-GGUF Like 0 Text Generation GGUF 13 languages quantization quantized apex apex-quant custom-quantization unsloth-studio Mixture of Experts reasoning chain-of-thought distillation qwen3.8 qwen35moe llama.cpp imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet ..."
+    }
+  ]
+}

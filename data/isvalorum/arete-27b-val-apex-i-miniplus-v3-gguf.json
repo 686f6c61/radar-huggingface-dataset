@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "IsValorum/Arete-27B-VAL-APEX-I-MiniPlus-V3-GGUF",
+  "slug": "isvalorum-arete-27b-val-apex-i-miniplus-v3-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/Arete-27B-VAL-APEX-I-MiniPlus-V3-GGUF",
+  "created_at": "2026-11-06T23:45:38.000Z",
+  "updated_at": "2026-11-07T00:33:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "apex",
+    "val-apex",
+    "arete",
+    "qwen3.5",
+    "text-generation",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "ru",
+    "base_model:NousResearch/Arete-27B",
+    "base_model:quantized:NousResearch/Arete-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 14034873344,
+  "storage_human": "14.0 GB",
+  "base_model": "NousResearch/Arete-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VAL-APEX MiniPlus — Standard (27B) - a IsValorum Collection",
+      "url": "https://huggingface.co/collections/IsValorum/val-apex-miniplus-standard-27b",
+      "snippet": "Official VAL-APEX-I MiniPlus (aprox. 14 GB) standard base and aligned 27B dense hybrid frontier reasoning and coding models."
+    },
+    {
+      "title": "VAL-APEX MiniPlus — Abliterated (27B) - a IsValorum Collection",
+      "url": "https://huggingface.co/collections/IsValorum/val-apex-miniplus-abliterated-27b",
+      "snippet": "Official VAL-APEX-I MiniPlus (aprox. 14 GB) uncensored and abliterated 27B dense hybrid frontier reasoning and coding engines."
+    }
+  ]
+}

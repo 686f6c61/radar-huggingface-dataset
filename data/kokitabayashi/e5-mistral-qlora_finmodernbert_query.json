@@ -1,0 +1,160 @@
+{
+  "schema": 1,
+  "id": "kokitabayashi/e5-mistral-qlora_FinModernBERT_query",
+  "slug": "kokitabayashi-e5-mistral-qlora_finmodernbert_query",
+  "author": "kokitabayashi",
+  "url": "https://huggingface.co/kokitabayashi/e5-mistral-qlora_FinModernBERT_query",
+  "created_at": "2026-11-07T01:17:37.000Z",
+  "updated_at": "2026-11-07T01:18:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "mistral",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:44709",
+    "loss:CachedMultipleNegativesRankingLoss",
+    "loss:MultipleNegativesRankingLoss",
+    "en",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "arxiv:1807.03748",
+    "base_model:intfloat/e5-mistral-7b-instruct",
+    "base_model:quantized:intfloat/e5-mistral-7b-instruct",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7124291584,
+  "parameters_human": "7.12B",
+  "storage_bytes": 4180780771,
+  "storage_human": "4.2 GB",
+  "base_model": "intfloat/e5-mistral-7b-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.8281837160751566
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.9567849686847599
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.9777661795407098
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.9913361169102296
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Precision@1",
+      "value": 0.8281837160751566
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Precision@3",
+      "value": 0.31892832289492
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Precision@5",
+      "value": 0.19555323590814194
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Precision@10",
+      "value": 0.09913361169102296
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Recall@1",
+      "value": 0.8281837160751566
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Recall@3",
+      "value": 0.9567849686847599
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Recall@5",
+      "value": 0.9777661795407098
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Recall@10",
+      "value": 0.9913361169102296
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.9187233000703036
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Mrr@10",
+      "value": 0.8944279998011695
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "finance eval",
+      "metric": "Cosine Map@100",
+      "value": 0.8949111124979262
+    }
+  ],
+  "sources": [
+    {
+      "title": "kokitabayashi/e5-mistral_FinModernBERT_query · Hugging Face",
+      "url": "https://huggingface.co/kokitabayashi/e5-mistral_FinModernBERT_query",
+      "snippet": "This is a sentence-transformers model finetuned from intfloat/e5-mistral-7b-instruct on the fin_modern_bert-pairs-sec-synthetic-v1 dataset. It maps sentences & paragraphs to a 4096-dimensional dense vector space and can be used for semantic textual similarity, semantic search, paraphrase mining, classification, clustering, and more."
+    },
+    {
+      "title": "e5-mistral_FinModernBERT_query API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/kokitabayashi/e5-mistral_FinModernBERT_query",
+      "snippet": "Run e5-mistral_FinModernBERT_query with FriendliAI inference. This is a sentence-transformers model finetuned from intfloat/e5-mistral-7b-instruct on the…"
+    }
+  ]
+}

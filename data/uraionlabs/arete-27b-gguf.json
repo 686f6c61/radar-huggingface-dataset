@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "UraionLabs/Arete-27B-GGUF",
+  "slug": "uraionlabs-arete-27b-gguf",
+  "author": "UraionLabs",
+  "url": "https://huggingface.co/UraionLabs/Arete-27B-GGUF",
+  "created_at": "2026-11-06T22:37:08.000Z",
+  "updated_at": "2026-11-06T22:51:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_5",
+    "arete",
+    "nous-research",
+    "quantized",
+    "uraionlabs",
+    "text-generation",
+    "en",
+    "base_model:NousResearch/Arete-27B",
+    "base_model:quantized:NousResearch/Arete-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 103149879808,
+  "storage_human": "103.1 GB",
+  "base_model": "NousResearch/Arete-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NousResearch/Arete-27B · Hugging Face",
+      "url": "https://huggingface.co/NousResearch/Arete-27B",
+      "snippet": "Arete-27B is intended for general assistance and agentic work where users want this change in viewpoint, and for research into how post-training changes a model's values and behavior. We encourage the community to test it against their own requirements and continue experimenting with value-alignment."
+    },
+    {
+      "title": "Introducing Arete-27B: Qwen3.8-27B Post-Trained To Reinforce Western ...",
+      "url": "https://nousresearch.com/arete",
+      "snippet": "We post-trained Alibaba's Qwen3.8-27B to reinforce Western values on a Chinese-trained model, and measured what changed with an 803-prompt eval across seven value categories."
+    }
+  ]
+}

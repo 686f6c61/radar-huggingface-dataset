@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "uesenpai/qwen3-4b-wordnet-en-ja-lora-v1",
+  "slug": "uesenpai-qwen3-4b-wordnet-en-ja-lora-v1",
+  "author": "uesenpai",
+  "url": "https://huggingface.co/uesenpai/qwen3-4b-wordnet-en-ja-lora-v1",
+  "created_at": "2026-11-06T14:13:14.000Z",
+  "updated_at": "2026-11-07T04:42:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "wordnet",
+    "lexical-translation",
+    "text-generation",
+    "en",
+    "ja",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77549422,
+  "storage_human": "78 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Full fine-tuning of Qwen3-4B - Azure Databricks | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-finetune-qwen3-4b",
+      "snippet": "Full-weight fine-tune the Qwen3-4B large language model on a single H100 GPU with AI Runtime (serverless GPU) for maximum model customization."
+    },
+    {
+      "title": "yokobo-ai/qwen3-4b-agent-trajectory-lora-v1 · Hugging Face",
+      "url": "https://huggingface.co/yokobo-ai/qwen3-4b-agent-trajectory-lora-v1",
+      "snippet": "Instructions to use yokobo-ai/qwen3-4b-agent-trajectory-lora-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

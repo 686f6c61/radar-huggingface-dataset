@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "infosave/Ripple-65B-Preview-cmf",
+  "slug": "infosave-ripple-65b-preview-cmf",
+  "author": "infosave",
+  "url": "https://huggingface.co/infosave/Ripple-65B-Preview-cmf",
+  "created_at": "2026-11-06T20:40:23.000Z",
+  "updated_at": "2026-11-07T01:22:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "cortiq",
+  "languages": [
+    "en",
+    "ru",
+    "zh"
+  ],
+  "tags": [
+    "cortiq",
+    "cmf",
+    "quantized",
+    "q4tp",
+    "q2tp",
+    "ripple",
+    "long-context",
+    "low-vram",
+    "speculative-decoding",
+    "vulkan",
+    "text-generation",
+    "en",
+    "ru",
+    "zh",
+    "base_model:ricursiveAI/Ripple-65B-Preview",
+    "base_model:quantized:ricursiveAI/Ripple-65B-Preview",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133281053627,
+  "storage_human": "133.3 GB",
+  "base_model": "ricursiveAI/Ripple-65B-Preview",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ripple-65B Preview, a Frontier Open-Weight Model | Ricursive Intelligence",
+      "url": "https://www.ricursive.com/ripple",
+      "snippet": "Ripple’s dense model architecture provides strong reasoning performance with low-latency token generation. The model’s small parameter envelope also enables it to run efficiently on local devices such as NVIDIA DGX Spark, which feature high compute FLOPs with low memory bandwidth relative to datacenter accelerators. Ripple-65B Preview is available on Hugging Face, Together AI, GMI Cloud ..."
+    },
+    {
+      "title": "Ripple-65B Preview: tasks, hardware requirements and license — open AI ...",
+      "url": "https://chimitdorzhi.tech/en/ii-modeli/ripple/",
+      "snippet": "Ripple-65B Preview by Ricursive Intelligence: A dense (not MoE) model with 65B parameters, pretrained on 12 trillion tokens, with a context of up to 1 million"
+    }
+  ]
+}

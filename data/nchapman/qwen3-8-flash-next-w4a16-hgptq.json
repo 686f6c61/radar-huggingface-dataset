@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "nchapman/Qwen3.8-Flash-Next-W4A16-HGPTQ",
+  "slug": "nchapman-qwen3-8-flash-next-w4a16-hgptq",
+  "author": "nchapman",
+  "url": "https://huggingface.co/nchapman/Qwen3.8-Flash-Next-W4A16-HGPTQ",
+  "created_at": "2026-11-07T02:01:45.000Z",
+  "updated_at": "2026-11-07T02:03:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "gptq",
+    "hadamard",
+    "quip",
+    "w4a16",
+    "moe",
+    "ple",
+    "compressed-tensors",
+    "vllm",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179789244307,
+  "parameters_human": "179.79B",
+  "storage_bytes": 100350655659,
+  "storage_human": "100.4 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · VnimanieAI/Qwen3.8-Flash-Next-W4A16 at main",
+      "url": "https://huggingface.co/VnimanieAI/Qwen3.8-Flash-Next-W4A16/blob/main/README.md",
+      "snippet": "This is a derivative work of Qwen3.8-Flash-Next and is distributed under the same Qwen Community License 1.0 (see LICENSE). Note the upstream terms: attribution required at >100M MAU / $20M monthly revenue; Model-as-a-Service and commercial AI work-assistant offerings require a separate license from Qwen."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

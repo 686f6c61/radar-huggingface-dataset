@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "grisselblanco/Clase_11_sklearn-regresion",
+  "slug": "grisselblanco-clase_11_sklearn-regresion",
+  "author": "grisselblanco",
+  "url": "https://huggingface.co/grisselblanco/Clase_11_sklearn-regresion",
+  "created_at": "2026-11-06T23:05:31.000Z",
+  "updated_at": "2026-11-06T23:09:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "sklearn",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "machine-learning",
+    "regression",
+    "linear-regression",
+    "educational-example",
+    "tabular-regression",
+    "es",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 943,
+  "storage_human": "943 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sklearn.linear_model — scikit-learn 1.9.0 documentation - sklearn",
+      "url": "https://sklearn.org/stable/api/sklearn.linear_model.html",
+      "snippet": "sklearn.linear_model # A variety of linear models. User guide. See the Linear Models section for further details. The following subsections are only rough guidelines: the same estimator can fall into multiple categories, depending on its parameters. Linear classifiers #"
+    }
+  ]
+}

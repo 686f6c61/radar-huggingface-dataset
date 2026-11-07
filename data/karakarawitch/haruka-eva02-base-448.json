@@ -24,8 +24,8 @@
     "base_model:finetune:timm/eva02_base_patch14_448.mim_in22k_ft_in22k_in1k",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 16,
+  "likes": 1,
+  "downloads_30d": 24,
   "trending_score": 0,
   "parameters": 86348544,
   "parameters_human": "86.3M",

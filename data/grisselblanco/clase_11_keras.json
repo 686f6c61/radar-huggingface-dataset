@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "grisselblanco/Clase_11_keras",
+  "slug": "grisselblanco-clase_11_keras",
+  "author": "grisselblanco",
+  "url": "https://huggingface.co/grisselblanco/Clase_11_keras",
+  "created_at": "2026-11-06T23:07:34.000Z",
+  "updated_at": "2026-11-06T23:10:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "keras",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "keras",
+    "machine-learning",
+    "regression",
+    "linear-regression",
+    "educational-example",
+    "tabular-regression",
+    "es",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Keras Model | How to Use Keras Model with examples? - EDUCBA",
+      "url": "https://www.educba.com/keras-model/",
+      "snippet": "Guide to Keras Model. Here we discuss the definition, how to use and create Keras Model along with examples and code implementation."
+    },
+    {
+      "title": "Train Keras models at scale with Azure Machine Learning",
+      "url": "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-train-keras?view=azureml-api-2",
+      "snippet": "Learn how to train and register a Keras deep neural network classification model running on TensorFlow using Azure Machine Learning SDK (v2)."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "LinuxRF/CAT-Translate-3.3b-Q6_K-GGUF",
+  "slug": "linuxrf-cat-translate-3-3b-q6_k-gguf",
+  "author": "LinuxRF",
+  "url": "https://huggingface.co/LinuxRF/CAT-Translate-3.3b-Q6_K-GGUF",
+  "created_at": "2026-11-06T22:04:30.000Z",
+  "updated_at": "2026-11-06T22:04:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "translation",
+    "machine-translation",
+    "japanese",
+    "english",
+    "llama-cpp",
+    "gguf-my-repo",
+    "ja",
+    "en",
+    "dataset:cyberagent/CAT-Translate-Dataset",
+    "base_model:cyberagent/CAT-Translate-3.3b",
+    "base_model:quantized:cyberagent/CAT-Translate-3.3b",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3355609600,
+  "parameters_human": "3.36B",
+  "storage_bytes": 2755744768,
+  "storage_human": "2.8 GB",
+  "base_model": "cyberagent/CAT-Translate-3.3b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/CAT-Translate-3.3b-beta-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/CAT-Translate-3.3b-beta-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

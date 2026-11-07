@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "JonusNattapong/LFM3-Omni-2B-abliterated-GGUF",
+  "slug": "jonusnattapong-lfm3-omni-2b-abliterated-gguf",
+  "author": "JonusNattapong",
+  "url": "https://huggingface.co/JonusNattapong/LFM3-Omni-2B-abliterated-GGUF",
+  "created_at": "2026-11-07T03:12:02.000Z",
+  "updated_at": "2026-11-07T03:13:39.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "th"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "lfm3",
+    "lfm3-omni",
+    "abliterated",
+    "tool-calling",
+    "custom_code",
+    "text-generation",
+    "en",
+    "th",
+    "base_model:JonusNattapong/LFM3-Omni-2B-abliterated",
+    "base_model:quantized:JonusNattapong/LFM3-Omni-2B-abliterated",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 2137826752,
+  "storage_human": "2.1 GB",
+  "base_model": "JonusNattapong/LFM3-Omni-2B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Architecture graph for JonusNattapong/LFM3-Omni-2B-abliterated.",
+      "url": "https://hfviewer.com/JonusNattapong/LFM3-Omni-2B-abliterated",
+      "snippet": "Task text-generation Base model LiquidAI/LFM3-Omni-2B Model type lfm3_omni Backbone type lfm3 Layers 24 Layer schedule 13 convolution, 6 full-attention, 5 sliding-window attention Hidden size 2,048 Attention grouped-query attention (GQA), 16 query / 4 key-value heads (full-attention layers) Feed-forward intermediate size 7,680 Components"
+    },
+    {
+      "title": "LiquidAI/LFM3-Omni-2B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM3-Omni-2B",
+      "snippet": "Any-to-Any model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

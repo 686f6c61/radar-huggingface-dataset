@@ -5,7 +5,7 @@
   "author": "Tom2701",
   "url": "https://huggingface.co/Tom2701/R-08",
   "created_at": "2026-10-29T16:02:58.000Z",
-  "updated_at": "2026-11-05T18:15:28.000Z",
+  "updated_at": "2026-11-06T18:20:28.000Z",
   "license": "sentinel-r08-research-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -14,8 +14,6 @@
     "it"
   ],
   "tags": [
-    "safetensors",
-    "geodesic_mesh_pyramid",
     "pytorch",
     "causal-lm",
     "geodesic-neural-network",
@@ -24,22 +22,19 @@
     "r08",
     "italian",
     "text-generation",
-    "custom_code",
     "it",
     "license:other",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2937,
+  "downloads_30d": 2981,
   "trending_score": 0,
   "parameters": 45003300,
   "parameters_human": "45.0M",
   "storage_bytes": 180368492,
   "storage_human": "180 MB",
   "base_model": null,
-  "formats": [
-    "safetensors"
-  ],
+  "formats": [],
   "is_conversational": false,
   "gated": false,
   "removed": false,

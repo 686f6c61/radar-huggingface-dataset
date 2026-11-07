@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SeeSee21/ERNIE-AIO",
+  "slug": "seesee21-ernie-aio",
+  "author": "SeeSee21",
+  "url": "https://huggingface.co/SeeSee21/ERNIE-AIO",
+  "created_at": "2026-04-18T06:55:07.000Z",
+  "updated_at": "2026-11-06T23:42:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ernie-image-aio",
+    "text-to-image",
+    "image-generation",
+    "diffusion-transformer",
+    "dit",
+    "comfyui",
+    "checkpoint",
+    "safetensors",
+    "aio",
+    "all-in-one",
+    "ernie-image",
+    "ernie-image-turbo",
+    "bf16",
+    "fp8",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80526484708,
+  "storage_human": "80.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SeeSee21/ERNIE-AIO at main - Hugging Face",
+      "url": "https://huggingface.co/SeeSee21/ERNIE-AIO/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ai-models/SeeSee21/ERNIE-AIO · Cloud Native Build",
+      "url": "https://cnb.cool/ai-models/SeeSee21/ERNIE-AIO",
+      "snippet": "⚡ ERNIE-AIO-Turbo The Turbo version is a distilled variant for fast generation and quick iteration. Features: ⚡ 8-step generation • 🎯 High prompt fidelity • 🚀 Quick turnaround"
+    }
+  ]
+}

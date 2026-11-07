@@ -5,7 +5,7 @@
   "author": "Yo-Purple",
   "url": "https://huggingface.co/Yo-Purple/Meditor-2-3.4B-A1.8B-HMoE",
   "created_at": "2026-11-06T17:22:56.000Z",
-  "updated_at": "2026-11-06T17:23:29.000Z",
+  "updated_at": "2026-11-07T02:02:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,8 +38,8 @@
   "trending_score": 0,
   "parameters": 3410955032,
   "parameters_human": "3.41B",
-  "storage_bytes": 6821958440,
-  "storage_human": "6.8 GB",
+  "storage_bytes": 34109792200,
+  "storage_human": "34.1 GB",
   "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
   "formats": [
     "safetensors"

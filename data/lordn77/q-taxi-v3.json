@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "LordN77/q-Taxi-v3",
+  "slug": "lordn77-q-taxi-v3",
+  "author": "LordN77",
+  "url": "https://huggingface.co/LordN77/q-Taxi-v3",
+  "created_at": "2026-11-06T20:21:45.000Z",
+  "updated_at": "2026-11-06T20:30:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136941,
+  "storage_human": "136941 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "linksaiyajin/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/linksaiyajin/q-Taxi-v3",
+      "snippet": "Q-Learning Agent playing Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "jonnynd/Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/jonnynd/Taxi-v3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    }
+  ]
+}

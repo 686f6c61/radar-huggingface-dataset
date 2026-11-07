@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "eek/whisper-turbo-ro-en",
+  "slug": "eek-whisper-turbo-ro-en",
+  "author": "eek",
+  "url": "https://huggingface.co/eek/whisper-turbo-ro-en",
+  "created_at": "2026-09-28T13:22:38.000Z",
+  "updated_at": "2026-11-06T22:19:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ro",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "romanian",
+    "speech-recognition",
+    "faster-whisper",
+    "ctranslate2",
+    "ro",
+    "en",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 81,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 9752564620,
+  "storage_human": "9.8 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eek/whisper-turbo-ro-en · Hugging Face",
+      "url": "https://huggingface.co/eek/whisper-turbo-ro-en",
+      "snippet": "Instructions to use eek/whisper-turbo-ro-en with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use eek/whisper-turbo-ro-en with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"automatic-speech-recognition\", model=\"eek/whisper-turbo-ro-en\")"
+    },
+    {
+      "title": "whisper-turbo-ro-en API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/eek/whisper-turbo-ro-en",
+      "snippet": "Run whisper-turbo-ro-en with FriendliAI inference. A fine-tune of openai/whisper-large-v3-turbo (809M parameters) for everyday spoken Romanian, plus English…"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "ZelligeAI/Tessera-27B-B-CJK-RL-LoRA",
+  "slug": "zelligeai-tessera-27b-b-cjk-rl-lora",
+  "author": "ZelligeAI",
+  "url": "https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK-RL-LoRA",
+  "created_at": "2026-11-04T23:38:52.000Z",
+  "updated_at": "2026-11-06T18:39:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "agentic",
+    "coding-agent",
+    "tessera",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1091916003,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZelligeAI/Tessera-27B-B-CJK · Hugging Face",
+      "url": "https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK",
+      "snippet": "Tessera-27B-B-CJK is a coding-agent model built on Qwen3.8-27B. It thinks in compressed CJK, a shorthand that mixes English, Chinese words and symbols, and on held-out agent tasks it uses 0.50-0.64x the base model's thinking tokens per turn. Answers and tool calls stay in plain English and code."
+    },
+    {
+      "title": "Tessera-27B-B-CJK: teaching a 27B agent to think less per turn",
+      "url": "https://zellige.ai/research/tessera-27b-b-cjk",
+      "snippet": "Tessera-27B-B-CJK is a rank-32 LoRA on Qwen3.8-27B that thinks less per turn and still acts. On 44 frozen states from 11 coding-agent tasks that no training or selection step used, it uses about 0.50-0.64x the base model's thinking tokens per agentic turn."
+    }
+  ]
+}

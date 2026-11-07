@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "asdd2468/pi05-sft",
+  "slug": "asdd2468-pi05-sft",
+  "author": "asdd2468",
+  "url": "https://huggingface.co/asdd2468/pi05-sft",
+  "created_at": "2026-11-06T16:18:27.000Z",
+  "updated_at": "2026-11-06T16:18:28.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "vision-language-action",
+    "imitation-learning",
+    "robotics",
+    "en",
+    "dataset:HuggingFaceVLA/libero",
+    "arxiv:2504.16054",
+    "base_model:lerobot/pi05_libero_base",
+    "base_model:finetune:lerobot/pi05_libero_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7473104012,
+  "storage_human": "7.5 GB",
+  "base_model": "lerobot/pi05_libero_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RLinf/RLinf-Pi05-RoboTwin-SFT-adjust_bottle · Hugging Face",
+      "url": "https://huggingface.co/RLinf/RLinf-Pi05-RoboTwin-SFT-adjust_bottle",
+      "snippet": "RLinf / RLinf-Pi05-RoboTwin-SFT-adjust_bottle like 1 Follow RLinf 118 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 132 Safetensors Model size 4B params Tensor type F32 · BF16 · Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask ..."
+    },
+    {
+      "title": "YifWRobotics/RLinf-pi05-SFT-Stack-cube · Hugging Face",
+      "url": "https://huggingface.co/YifWRobotics/RLinf-pi05-SFT-Stack-cube",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

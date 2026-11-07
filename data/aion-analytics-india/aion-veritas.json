@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aion-analytics-india/aion-veritas",
+  "slug": "aion-analytics-india-aion-veritas",
+  "author": "aion-analytics-india",
+  "url": "https://huggingface.co/aion-analytics-india/aion-veritas",
+  "created_at": "2026-07-02T06:01:21.000Z",
+  "updated_at": "2026-11-07T01:50:49.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "quantitative-finance",
+    "indian-stock-market",
+    "probabilistic-forecasting",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AION - Gameforge",
+      "url": "https://fr.aion.gameforge.com/website/",
+      "snippet": "Devenez le héros du monde fantastique d'AION : livrez des batailles captivantes, sur terre comme dans les airs, qui vous opposent à …"
+    },
+    {
+      "title": "AION Veritas: Pre-Market Probability Bands for Indian Indices",
+      "url": "https://aionanalytics.in/models/veritas",
+      "snippet": "Pre-market probability bands for Indian indices. Daily opening ranges for NIFTY 50, BANK NIFTY and SENSEX, published pre-open with a public scorecard that includes the misses. Information, not advice."
+    },
+    {
+      "title": "AION 2-NC",
+      "url": "https://aion2.plaync.com/fr-fr/index",
+      "snippet": "Des instances en solo aux raids à grande échelle, le contenu JcE d'AION 2 est incroyablement vaste et varié."
+    },
+    {
+      "title": "aion-analytics-india/aion-veritas · Hugging Face",
+      "url": "https://huggingface.co/aion-analytics-india/aion-veritas",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AION",
+      "url": "https://en.aion.gameforge.com/",
+      "snippet": "Discover endless expanses and hardcore PvP! Become a hero in AION: charge into thrilling combat, on ground or in the air, battle …"
+    }
+  ]
+}

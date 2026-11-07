@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ZelligeAI/Tessera-27B-B-CJK-RL",
+  "slug": "zelligeai-tessera-27b-b-cjk-rl",
+  "author": "ZelligeAI",
+  "url": "https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK-RL",
+  "created_at": "2026-11-04T23:38:51.000Z",
+  "updated_at": "2026-11-06T18:39:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "agentic",
+    "coding-agent",
+    "efficient-reasoning",
+    "reinforcement-learning",
+    "tessera",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55578434932,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZelligeAI/Tessera-27B-B-CJK · Hugging Face",
+      "url": "https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK",
+      "snippet": "Tessera-27B-B-CJK is a coding-agent model built on Qwen3.8-27B. It thinks in compressed CJK, a shorthand that mixes English, Chinese words and symbols, and on held-out agent tasks it uses 0.50-0.64x the base model's thinking tokens per turn. Answers and tool calls stay in plain English and code."
+    },
+    {
+      "title": "ZelligeAI/Tessera-27B-B-CJK at main - Hugging Face",
+      "url": "https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK/tree/main",
+      "snippet": "ZelligeAI / Tessera-27B-B-CJK Like 12 Follow Zellige AI 10 Image-Text-to-Text Transformers Safetensors English qwen3_5 agentic coding-agent efficient-reasoning tessera conversational License:apache-2.0 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

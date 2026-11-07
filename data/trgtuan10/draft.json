@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "TrgTuan10/Draft",
+  "slug": "trgtuan10-draft",
+  "author": "TrgTuan10",
+  "url": "https://huggingface.co/TrgTuan10/Draft",
+  "created_at": "2026-11-07T03:32:52.000Z",
+  "updated_at": "2026-11-07T03:39:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen3-8B-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3-8B-unsloth-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078460,
+  "storage_human": "186 MB",
+  "base_model": "unsloth/Qwen3-8B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TrgTuan10 (Nguyen Trong Tuan) - Hugging Face",
+      "url": "https://huggingface.co/TrgTuan10/models",
+      "snippet": "User profile of Nguyen Trong Tuan on Hugging Face"
+    },
+    {
+      "title": "TrgTuan10/lora_dpt at main - Hugging Face",
+      "url": "https://huggingface.co/TrgTuan10/lora_dpt/tree/main",
+      "snippet": "TrgTuan10 / lora_dpt like 0 Text-to-Image TrgTuan10/dpt English Model card FilesFiles and versions Community main lora_dpt 1 contributor History:8 commits TrgTuan10 Update README.md 55eb626 verifiedabout 11 hours ago .gitattributes 1.52 kB initial commit 1 day ago README.md 158 Bytes Update README.md about 11 hours ago last-000200.safetensors ..."
+    }
+  ]
+}

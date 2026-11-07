@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mistral-Small-Instruct-2409-ARA-heretic-i1-GGUF",
+  "slug": "mradermacher-mistral-small-instruct-2409-ara-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mistral-Small-Instruct-2409-ARA-heretic-i1-GGUF",
+  "created_at": "2026-11-06T21:00:14.000Z",
+  "updated_at": "2026-11-06T21:38:46.000Z",
+  "license": "mrl",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ru",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mistral-common",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ru",
+    "ko",
+    "base_model:richardyoung/Mistral-Small-Instruct-2409-ARA-heretic",
+    "base_model:quantized:richardyoung/Mistral-Small-Instruct-2409-ARA-heretic",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22247282688,
+  "parameters_human": "22.25B",
+  "storage_bytes": 39617749984,
+  "storage_human": "39.6 GB",
+  "base_model": "richardyoung/Mistral-Small-Instruct-2409-ARA-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mistral-Small-Instruct-2409-abliterated-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Mistral-Small-Instruct-2409-abliterated-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Mistral-Small-Instruct-2409-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Mistral-Small-Instruct-2409-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

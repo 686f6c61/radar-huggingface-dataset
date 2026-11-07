@@ -5,7 +5,7 @@
   "author": "aethertp",
   "url": "https://huggingface.co/aethertp/PicoLM-V4-85M-Instruct",
   "created_at": "2026-11-03T20:49:22.000Z",
-  "updated_at": "2026-11-04T04:41:46.000Z",
+  "updated_at": "2026-11-06T07:22:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 338,
+  "downloads_30d": 367,
   "trending_score": 0,
   "parameters": 84960832,
   "parameters_human": "85.0M",

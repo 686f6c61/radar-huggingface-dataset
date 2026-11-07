@@ -5,7 +5,7 @@
   "author": "arvedo",
   "url": "https://huggingface.co/arvedo/Nemotron-3.5-Bolt-E4B-NVFP4-VisionAudio",
   "created_at": "2026-10-26T16:24:40.000Z",
-  "updated_at": "2026-11-06T11:38:18.000Z",
+  "updated_at": "2026-11-07T02:04:51.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "amd/GLM-5.3-Quark-MXFP4-AttnFP8",
+  "slug": "amd-glm-5-3-quark-mxfp4-attnfp8",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/GLM-5.3-Quark-MXFP4-AttnFP8",
+  "created_at": "2026-08-31T10:32:35.000Z",
+  "updated_at": "2026-11-07T00:18:14.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "eval-results",
+    "endpoints_compatible",
+    "8-bit",
+    "quark",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 8684,
+  "trending_score": 0,
+  "parameters": 384336046080,
+  "parameters_human": "384.34B",
+  "storage_bytes": 409551877037,
+  "storage_human": "409.6 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amd/GLM-5.3-Quark-MXFP4-AttnFP8 · Hugging Face",
+      "url": "https://huggingface.co/amd/GLM-5.3-Quark-MXFP4-AttnFP8",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "amd/GLM-5.3-Flash-Quark-MXFP4 · Hugging Face",
+      "url": "https://huggingface.co/amd/GLM-5.3-Flash-Quark-MXFP4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

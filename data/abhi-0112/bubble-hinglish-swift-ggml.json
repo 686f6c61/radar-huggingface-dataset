@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Abhi-0112/bubble-hinglish-swift-ggml",
+  "slug": "abhi-0112-bubble-hinglish-swift-ggml",
+  "author": "Abhi-0112",
+  "url": "https://huggingface.co/Abhi-0112/bubble-hinglish-swift-ggml",
+  "created_at": "2026-11-06T22:02:59.000Z",
+  "updated_at": "2026-11-06T22:05:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "whisper",
+    "whisper.cpp",
+    "ggml",
+    "hinglish",
+    "automatic-speech-recognition",
+    "hi",
+    "en",
+    "base_model:Oriserve/Whisper-Hindi2Hinglish-Swift",
+    "base_model:finetune:Oriserve/Whisper-Hindi2Hinglish-Swift",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147951465,
+  "storage_human": "148 MB",
+  "base_model": "Oriserve/Whisper-Hindi2Hinglish-Swift",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=ggml",
+      "snippet": "Explore machine learning models. ggml-org/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-GGUF"
+    }
+  ]
+}

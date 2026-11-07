@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "NehaChopra/self-supervised-fast",
+  "slug": "nehachopra-self-supervised-fast",
+  "author": "NehaChopra",
+  "url": "https://huggingface.co/NehaChopra/self-supervised-fast",
+  "created_at": "2026-11-06T23:43:56.000Z",
+  "updated_at": "2026-11-06T23:44:01.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "self-supervised",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2408.13106v6] NEST: Self-supervised Fast Conformer as All-purpose ...",
+      "url": "http://export.arxiv.org/abs/2408.13106v6",
+      "snippet": "Instead of clustering-based quantization, we use fixed random projection for its simplicity and effectiveness. We also implement a generalized noisy speech augmentation that teaches the model to disentangle the main speaker from noise or other speakers."
+    },
+    {
+      "title": "This AI Paper by NVIDIA Introduces NEST: A Fast and Efficient Self ...",
+      "url": "https://www.marktechpost.com/2024/09/12/this-ai-paper-by-nvidia-introduces-nest-a-fast-and-efficient-self-supervised-model-for-speech-processing/",
+      "snippet": "Researchers from NVIDIA have introduced a new solution, the NeMo Encoder for Speech Tasks (NEST), which addresses these challenges. NEST is built on the FastConformer architecture, offering an efficient and simplified framework for self-supervised learning in speech processing. Unlike previous models, NEST features an 8x sub-sampling rate, making it faster than architectures like Transformer ..."
+    }
+  ]
+}

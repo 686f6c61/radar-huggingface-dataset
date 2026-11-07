@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "CladeTeam/CENO-P-300M",
+  "slug": "cladeteam-ceno-p-300m",
+  "author": "CladeTeam",
+  "url": "https://huggingface.co/CladeTeam/CENO-P-300M",
+  "created_at": "2026-07-10T04:36:16.000Z",
+  "updated_at": "2026-11-07T03:40:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ceno",
+    "text-generation",
+    "dna",
+    "genomics",
+    "msa",
+    "variant-effect-prediction",
+    "mamba",
+    "moe",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 188,
+  "trending_score": 0,
+  "parameters": 307503488,
+  "parameters_human": "307.5M",
+  "storage_bytes": 1230028136,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CladeTeam/CENO-P-300M · Hugging Face",
+      "url": "https://huggingface.co/CladeTeam/CENO-P-300M",
+      "snippet": "CENO-P-300M is the multi-species alignment (MSA) post-trained variant of the 300M CENO DNA foundation model, for variant effect prediction (VEP). It carries intra_encoding_pattern in its config and ships the MSA scoring path (modeling_ceno_p.py), which consumes a per-token seq_idx to score packed MSA inputs."
+    },
+    {
+      "title": "CladeTeam/CENO-P-300M at main - Hugging Face",
+      "url": "https://huggingface.co/CladeTeam/CENO-P-300M/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

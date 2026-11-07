@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "ChengyouXin/cacheverifier-searchqueries",
+  "slug": "chengyouxin-cacheverifier-searchqueries",
+  "author": "ChengyouXin",
+  "url": "https://huggingface.co/ChengyouXin/cacheverifier-searchqueries",
+  "created_at": "2026-07-30T10:38:21.000Z",
+  "updated_at": "2026-11-07T02:45:45.000Z",
+  "license": "all-rights-reserved",
+  "license_family": "unknown",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "cross-encoder",
+    "reranker",
+    "generated_from_trainer",
+    "dataset_size:60398",
+    "loss:BinaryCrossEntropyLoss",
+    "text-ranking",
+    "arxiv:1908.10084",
+    "base_model:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "base_model:finetune:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "license:other",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 22713601,
+  "parameters_human": "22.7M",
+  "storage_bytes": 181732824,
+  "storage_human": "182 MB",
+  "base_model": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChengyouXin/cacheverifier-searchqueries · Hugging Face",
+      "url": "https://huggingface.co/ChengyouXin/cacheverifier-searchqueries",
+      "snippet": "ChengyouXin ... cacheverifier-searchqueries like 0 Text Ranking sentence-transformers Safetensors bert cross-encoder reranker Generated from Trainer dataset_size:60398 loss:BinaryCrossEntropyLoss text-embeddings-inference arxiv:1908.10084 License:all-rights-reserved Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use ..."
+    },
+    {
+      "title": "ChengyouXin (chengyou xin) - Hugging Face",
+      "url": "https://huggingface.co/ChengyouXin",
+      "snippet": "updated a model about 18 hours ago ChengyouXin/cacheverifier-lmarena published a model about 19 hours ago ChengyouXin/cacheverifier-searchqueries View all activity"
+    }
+  ]
+}

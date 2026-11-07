@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "RwH-Lab/Kuavo_ckpt",
+  "slug": "rwh-lab-kuavo_ckpt",
+  "author": "RwH-Lab",
+  "url": "https://huggingface.co/RwH-Lab/Kuavo_ckpt",
+  "created_at": "2026-10-25T17:20:02.000Z",
+  "updated_at": "2026-11-06T23:17:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "kuavo",
+    "imitation-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150804931720,
+  "storage_human": "150.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · LejuRobotics/LET-KUAVO-VLA-1.0-models at main - Hugging Face",
+      "url": "https://huggingface.co/LejuRobotics/LET-KUAVO-VLA-1.0-models/blob/main/README.md",
+      "snippet": "This repository contains the open-source model weights and configuration files for KUAVO-VLA-1.0. Access to this repository requires approval. Please provide accurate information when submitting your application. After submitting your application, join the OpenLET Developer QQ Group: 1043359345 for ..."
+    },
+    {
+      "title": "LejuRobotics/LET-KUAVO-VLA-1.0-models · Hugging Face",
+      "url": "https://huggingface.co/LejuRobotics/LET-KUAVO-VLA-1.0-models",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

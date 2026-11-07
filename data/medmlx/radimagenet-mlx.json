@@ -5,7 +5,7 @@
   "author": "MedMLX",
   "url": "https://huggingface.co/MedMLX/radimagenet-mlx",
   "created_at": "2026-10-30T20:34:35.000Z",
-  "updated_at": "2026-11-02T01:19:14.000Z",
+  "updated_at": "2026-11-06T10:30:36.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-feature-extraction",

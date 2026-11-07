@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "nikname22/ufa-wildfeedback-satisfaction-mbert",
+  "slug": "nikname22-ufa-wildfeedback-satisfaction-mbert",
+  "author": "nikname22",
+  "url": "https://huggingface.co/nikname22/ufa-wildfeedback-satisfaction-mbert",
+  "created_at": "2026-11-06T22:49:25.000Z",
+  "updated_at": "2026-11-06T22:49:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "text-classification",
+    "bert",
+    "satisfaction",
+    "en",
+    "pt",
+    "base_model:google-bert/bert-base-multilingual-cased",
+    "base_model:finetune:google-bert/bert-base-multilingual-cased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "bert-base-multilingual-cased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WildFeedback: Aligning LLMs With - arXiv.org",
+      "url": "https://arxiv.org/html/2408.15549v2",
+      "snippet": "WildFeedback significantly enhances model alignment with in-situ user feedback. As detailed in Section section 4, the WildFeedback test set is sourced from real human-ChatGPT conversations where users explicitly express dissatisfaction, implicitly suggesting that the models are poorly aligned with real user preferences on these tasks."
+    },
+    {
+      "title": "Hugging Face",
+      "url": "https://huggingface.co/datasets/microsoft/WildFeedback/raw/main/README.md",
+      "snippet": "- Evaluating model performance based on real-world user preferences - Conducting research on user feedback in conversational AI ## Dataset Structure WildFeedback consists of 20,281 preference pairs derived from 148,715 multi-turn conversations between real users and ChatGPT. Each preference pair includes: 1. The original user prompt"
+    }
+  ]
+}

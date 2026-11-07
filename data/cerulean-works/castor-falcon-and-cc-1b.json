@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "cerulean-works/castor-falcon-and-cc-1B",
+  "slug": "cerulean-works-castor-falcon-and-cc-1b",
+  "author": "cerulean-works",
+  "url": "https://huggingface.co/cerulean-works/castor-falcon-and-cc-1B",
+  "created_at": "2026-10-23T08:53:01.000Z",
+  "updated_at": "2026-11-07T04:39:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "castor",
+    "safety",
+    "refusal",
+    "jailbreak",
+    "seed-twins",
+    "datadecide",
+    "text-generation",
+    "en",
+    "dataset:allenai/tulu-3-sft-olmo-2-mixture-0225",
+    "dataset:allenai/olmo-2-0425-1b-preference-mix",
+    "arxiv:2610.34074",
+    "base_model:allenai/DataDecide-falcon-and-cc-1B",
+    "base_model:finetune:allenai/DataDecide-falcon-and-cc-1B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15358356624,
+  "storage_human": "15.4 GB",
+  "base_model": "allenai/DataDecide-falcon-and-cc-1B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cerulean-works/castor-falcon-and-cc-1B · Hugging Face",
+      "url": "https://huggingface.co/cerulean-works/castor-falcon-and-cc-1B",
+      "snippet": "Part of CASTOR, a set of seed-twinned language models: DataDecide base models that differ only in their pretraining seed, each given the same safety post-training (SFT then DPO, the OLMo 2 1B Instruct recipe) under several post-training seeds. The set is built to measure how much of a model's per ..."
+    },
+    {
+      "title": "GitHub - cerulean-works/castor: Seed-twinned language models for ...",
+      "url": "https://github.com/cerulean-works/castor/tree/main/",
+      "snippet": "Train the same language model twice, on the same data with the same recipe, changing only the random seed. Do the two copies fail on the same jailbreaks? CASTOR answers this with seed twins. The base models come from DataDecide: each data recipe and size was pretrained under several seeds, so two ..."
+    }
+  ]
+}

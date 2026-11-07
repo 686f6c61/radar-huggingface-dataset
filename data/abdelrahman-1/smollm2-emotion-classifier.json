@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Abdelrahman-1/smollm2-emotion-classifier",
+  "slug": "abdelrahman-1-smollm2-emotion-classifier",
+  "author": "Abdelrahman-1",
+  "url": "https://huggingface.co/Abdelrahman-1/smollm2-emotion-classifier",
+  "created_at": "2026-11-06T22:54:40.000Z",
+  "updated_at": "2026-11-07T00:00:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "smollm2",
+    "emotion-classification",
+    "text-classification",
+    "lora",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3316624,
+  "storage_human": "3 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - abdelrahman-abdelmoaty/emotion-classifier",
+      "url": "https://github.com/abdelrahman-abdelmoaty/emotion-classifier",
+      "snippet": "Emotion Classification Project Overview This project builds a machine learning system to classify emotions (sadness, joy, love, anger, fear, surprise) in text data. Using Python, it employs a pipeline of TF-IDF vectorization and Logistic Regression, achieving 90% accuracy on a dataset of 83,359 labeled text samples from Kaggle's \"Emotions\" dataset."
+    },
+    {
+      "title": "emotion-classifier/README.md at main · abdelrahman-abdelmoaty ... - GitHub",
+      "url": "https://github.com/abdelrahman-abdelmoaty/emotion-classifier/blob/main/README.md",
+      "snippet": "Emotion Classification Project Overview This project builds a machine learning system to classify emotions (sadness, joy, love, anger, fear, surprise) in text data. Using Python, it employs a pipeline of TF-IDF vectorization and Logistic Regression, achieving 90% accuracy on a dataset of 83,359 labeled text samples from Kaggle's \"Emotions\" dataset."
+    }
+  ]
+}

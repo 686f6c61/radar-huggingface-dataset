@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "cyttic/hmt-trocrctc-elastic1-s43",
+  "slug": "cyttic-hmt-trocrctc-elastic1-s43",
+  "author": "cyttic",
+  "url": "https://huggingface.co/cyttic/hmt-trocrctc-elastic1-s43",
+  "created_at": "2026-11-06T22:35:22.000Z",
+  "updated_at": "2026-11-06T22:37:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "safetensors",
+    "htr",
+    "ctc",
+    "he",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 87279756,
+  "parameters_human": "87.3M",
+  "storage_bytes": 349136024,
+  "storage_human": "349 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cyttic/hmt-htrvt-elastic1-s42 · Hugging Face",
+      "url": "https://huggingface.co/cyttic/hmt-htrvt-elastic1-s42",
+      "snippet": "Model htrvt, augmentation elastic1, seed 42. Trained on cyttic/hhd-optionb-split train minus the dev writers; HHD Option-B test, greedy decoding, no LM: CER 0.0622, WER 0.2819."
+    },
+    {
+      "title": "GitHub - cyttic/htr-metrics-transfer",
+      "url": "https://github.com/cyttic/htr-metrics-transfer",
+      "snippet": "Can training-free distribution metrics predict how much data augmentation helps a handwriting recognizer trained on a small real dataset? Real data only: HHD, Option-B split (cyttic/hhd-optionb-split, paragraph- and writer-disjoint). Greedy CTC decoding, no language model. Results go to Hugging Face (public); this repo holds code only."
+    }
+  ]
+}

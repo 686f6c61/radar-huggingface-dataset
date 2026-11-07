@@ -5,7 +5,7 @@
   "author": "ChiTako",
   "url": "https://huggingface.co/ChiTako/llm-jp-4.1-8b-thinking-lsa",
   "created_at": "2026-11-05T15:27:50.000Z",
-  "updated_at": "2026-11-05T15:29:36.000Z",
+  "updated_at": "2026-11-06T07:45:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,12 +33,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 37,
   "trending_score": 0,
   "parameters": 8590200832,
   "parameters_human": "8.59B",
-  "storage_bytes": 17327571473,
-  "storage_human": "17.3 GB",
+  "storage_bytes": 17394699876,
+  "storage_human": "17.4 GB",
   "base_model": "llm-jp/llm-jp-4.1-8b-thinking",
   "formats": [
     "safetensors"

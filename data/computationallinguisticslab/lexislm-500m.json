@@ -5,7 +5,7 @@
   "author": "ComputationalLinguisticsLab",
   "url": "https://huggingface.co/ComputationalLinguisticsLab/LexisLM-500m",
   "created_at": "2026-11-04T16:12:15.000Z",
-  "updated_at": "2026-11-05T10:01:10.000Z",
+  "updated_at": "2026-11-06T09:20:14.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -19,6 +19,8 @@
     "llama",
     "text-generation",
     "el",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:wikimedia/wikipedia",
     "text-generation-inference",
     "endpoints_compatible",
     "region:us"

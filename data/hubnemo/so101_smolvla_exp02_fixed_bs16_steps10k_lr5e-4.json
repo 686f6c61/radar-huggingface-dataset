@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "hubnemo/so101_smolvla_exp02_fixed_bs16_steps10k_lr5e-4",
+  "slug": "hubnemo-so101_smolvla_exp02_fixed_bs16_steps10k_lr5e-4",
+  "author": "hubnemo",
+  "url": "https://huggingface.co/hubnemo/so101_smolvla_exp02_fixed_bs16_steps10k_lr5e-4",
+  "created_at": "2026-11-06T21:38:04.000Z",
+  "updated_at": "2026-11-06T21:38:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:Orellius/so101_sort_cubes_no_top",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:adapter:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11906952,
+  "storage_human": "12 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Temmp1e/so101_smolVLA · Hugging Face",
+      "url": "https://huggingface.co/Temmp1e/so101_smolVLA",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "davychens/so101-smolvla-model · Hugging Face",
+      "url": "https://huggingface.co/davychens/so101-smolvla-model",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "chlalsrl76/act_IL_Test_20261107_102753",
+  "slug": "chlalsrl76-act_il_test_20261107_102753",
+  "author": "chlalsrl76",
+  "url": "https://huggingface.co/chlalsrl76/act_IL_Test_20261107_102753",
+  "created_at": "2026-11-07T03:00:03.000Z",
+  "updated_at": "2026-11-07T03:01:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:chlalsrl76/IL_Test_20261107_102753",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 619548180,
+  "storage_human": "620 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

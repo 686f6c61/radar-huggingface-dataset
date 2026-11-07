@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen3.6-27B-FP8",
+  "slug": "qwen-qwen3-6-27b-fp8",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen3.6-27B-FP8",
+  "created_at": "2026-04-21T07:51:33.000Z",
+  "updated_at": "2026-11-07T04:41:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "fp8",
+    "deploy:azure",
+    "deploy:sagemaker",
+    "region:us"
+  ],
+  "likes": 377,
+  "downloads_30d": 1478031,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 30879674910,
+  "storage_human": "30.9 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen’s series of …"
+    },
+    {
+      "title": "Qwen/Qwen3.6-27B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-27B-FP8",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It’s free to use, open to all, and ready to help with …"
+    },
+    {
+      "title": "Qwen3.6 27B FP8 by Qwen | Model Library | Modal",
+      "url": "https://modal.com/library/qwen/qwen3-6-27b-fp8",
+      "snippet": "AI infrastructure that developers love. Library / Qwen / Qwen3.6 27B FP8 Qwen3.6 27B FP8 Qwen3.6-27B-FP8 is Qwen's official FP8 quantization of its dense 27B vision-language model: text and image input, 262K-token native context, thinking and non-thinking modes, and flagship-level agentic coding at quality Qwen reports as nearly identical to BF16, released under Apache 2.0. Model"
+    },
+    {
+      "title": "Qwen — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (également connu sous le nom de Tongyi Qianwen, ou en chinois 通义千问) est une famille de grands modèles de langage …"
+    }
+  ]
+}

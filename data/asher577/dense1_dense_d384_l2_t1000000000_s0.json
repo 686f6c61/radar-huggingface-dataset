@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "asher577/dense1_dense_d384_L2_t1000000000_s0",
+  "slug": "asher577-dense1_dense_d384_l2_t1000000000_s0",
+  "author": "asher577",
+  "url": "https://huggingface.co/asher577/dense1_dense_d384_L2_t1000000000_s0",
+  "created_at": "2026-11-07T00:54:51.000Z",
+  "updated_at": "2026-11-07T00:59:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26784018,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asher577/scaling1_plain_d2048_L2_t1000000000_s0 · Hugging Face",
+      "url": "https://huggingface.co/asher577/scaling1_plain_d2048_L2_t1000000000_s0",
+      "snippet": "scaling1_plain_d2048_L2_t1000000000_s0 Weight-sparse transformer trained with the procedure from Gao et al. (2025)."
+    },
+    {
+      "title": "asher577 (Asher Parker-Sartori) - Hugging Face",
+      "url": "https://huggingface.co/asher577/datasets",
+      "snippet": "Recent Activity updated a modelabout 19 hours ago asher577/dcpbeta325_dcploss_advkl_l0_0.05_actsp0.2_fixedp0.4_mlpguard published a modelabout 19 hours ago asher577/dcpbeta325_dcploss_advkl_l0_0.05_actsp0.2_fixedp0.4_mlpguard updated a model1 day ago asher577/dcpbeta325_dcploss_advkl_l0_0.05_actsp0.2_fixedp0.4 View all activity"
+    }
+  ]
+}

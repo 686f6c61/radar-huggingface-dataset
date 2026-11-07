@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "philgear/gemma-3-clinical-rxguard",
+  "slug": "philgear-gemma-3-clinical-rxguard",
+  "author": "philgear",
+  "url": "https://huggingface.co/philgear/gemma-3-clinical-rxguard",
+  "created_at": "2026-11-07T04:44:23.000Z",
+  "updated_at": "2026-11-07T04:44:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "gemma-3",
+    "lora",
+    "clinical-nlp",
+    "healthcare",
+    "hipaa-safe-harbor",
+    "open-science",
+    "pocketgull",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:adapter:google/gemma-3-4b-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "philgear (Phil Gear) - Hugging Face",
+      "url": "https://huggingface.co/philgear",
+      "snippet": "healthcare, clinical-nlp, gemma-3, lora, peft, privacy-preserving-ml, fhir-r4, webgpu, hipaa-safe-harbor, open-science"
+    },
+    {
+      "title": "philgear/philgear · Hugging Face",
+      "url": "https://huggingface.co/philgear/philgear",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "Use the new Gemma 3 on Vertex AI | Google Cloud Blog",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/announcing-gemma-3-on-vertex-ai/",
+      "snippet": "Today, we’re sharing the new Gemma 3 model is available on Vertex AI Model Garden, giving you immediate access for fine-tuning and deployment. You can quickly adapt Gemma 3 to your use case using Vertex AI's pre-built containers and deployment tools. In this post, you'll learn how to fine-tune ..."
+    }
+  ]
+}

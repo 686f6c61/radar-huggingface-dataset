@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yjjj1/qwen3-0.6b-balanced-sft",
+  "slug": "yjjj1-qwen3-0-6b-balanced-sft",
+  "author": "yjjj1",
+  "url": "https://huggingface.co/yjjj1/qwen3-0.6b-balanced-sft",
+  "created_at": "2026-11-07T00:19:49.000Z",
+  "updated_at": "2026-11-07T00:21:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "sycophancy",
+    "multiple-choice",
+    "arc",
+    "conversational",
+    "en",
+    "dataset:allenai/ai2_arc",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2395657789,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "By default, Qwen3 has thinking capabilities enabled, similar to QwQ-32B. This means the model will use its reasoning abilities to enhance the quality of generated responses."
+    },
+    {
+      "title": "banghua/Qwen3-0.6B-SFT · Hugging Face",
+      "url": "https://huggingface.co/banghua/Qwen3-0.6B-SFT",
+      "snippet": "banghua / Qwen3-0.6B-SFT Like 1 Text Generation Transformers Safetensors qwen3 trl sft conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

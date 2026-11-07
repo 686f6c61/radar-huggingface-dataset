@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "lair-nyu/pi05_spatial_subtasks-step14999",
+  "slug": "lair-nyu-pi05_spatial_subtasks-step14999",
+  "author": "lair-nyu",
+  "url": "https://huggingface.co/lair-nyu/pi05_spatial_subtasks-step14999",
+  "created_at": "2026-11-06T20:33:07.000Z",
+  "updated_at": "2026-11-06T20:44:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12440810262,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lair-nyu (LAIR NYU) - Hugging Face",
+      "url": "https://huggingface.co/lair-nyu/models",
+      "snippet": "Org profile for LAIR NYU on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "lair-nyu/pi05_sanity_subtasks-step14999 · Hugging Face",
+      "url": "https://huggingface.co/lair-nyu/pi05_sanity_subtasks-step14999",
+      "snippet": "Final train loss 0.0014. Trained with pi-atlas config configs/pi05_sanity_subtasks.py (commit 4b59c2d9e5e2742508935a08bdd198bf2118a436) on openpi commit c5efff14d4ea36a09a0b365cd0dc60a527027b73 (dirty)."
+    }
+  ]
+}

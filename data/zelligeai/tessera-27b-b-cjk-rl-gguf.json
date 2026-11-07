@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "ZelligeAI/Tessera-27B-B-CJK-RL-GGUF",
+  "slug": "zelligeai-tessera-27b-b-cjk-rl-gguf",
+  "author": "ZelligeAI",
+  "url": "https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK-RL-GGUF",
+  "created_at": "2026-11-04T23:38:52.000Z",
+  "updated_at": "2026-11-06T18:39:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "agentic",
+    "coding-agent",
+    "tessera",
+    "base_model:ZelligeAI/Tessera-27B-B-CJK-RL",
+    "base_model:quantized:ZelligeAI/Tessera-27B-B-CJK-RL",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 163925192965,
+  "storage_human": "163.9 GB",
+  "base_model": "ZelligeAI/Tessera-27B-B-CJK-RL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZelligeAI/Tessera-27B-B-CJK · Hugging Face",
+      "url": "https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK",
+      "snippet": "Tessera-27B-B-CJK is a coding-agent model built on Qwen3.8-27B. It thinks in compressed CJK, a shorthand that mixes English, Chinese words and symbols, and on held-out agent tasks it uses 0.50-0.64x the base model's thinking tokens per turn. Answers and tool calls stay in plain English and code."
+    },
+    {
+      "title": "ZelligeAI/Tessera-27B-B-CJK-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ZelligeAI/Tessera-27B-B-CJK-GGUF",
+      "snippet": "Tessera-27B-B-CJK is a coding-agent model built on Qwen3.8-27B. It thinks in compressed CJK, a shorthand that mixes English, Chinese words and symbols, and on held-out agent tasks it uses 0.50-0.64x the base model's thinking tokens per turn. Answers and tool calls stay in plain English and code."
+    }
+  ]
+}

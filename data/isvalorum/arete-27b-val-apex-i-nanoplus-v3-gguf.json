@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "IsValorum/Arete-27B-VAL-APEX-I-NanoPlus-V3-GGUF",
+  "slug": "isvalorum-arete-27b-val-apex-i-nanoplus-v3-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/Arete-27B-VAL-APEX-I-NanoPlus-V3-GGUF",
+  "created_at": "2026-11-06T23:45:39.000Z",
+  "updated_at": "2026-11-07T00:33:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "apex",
+    "val-apex",
+    "arete",
+    "qwen3.5",
+    "text-generation",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "ru",
+    "base_model:NousResearch/Arete-27B",
+    "base_model:quantized:NousResearch/Arete-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 12703386624,
+  "storage_human": "12.7 GB",
+  "base_model": "NousResearch/Arete-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VAL-APEX NanoPlus — Standard (27B) - a IsValorum Collection",
+      "url": "https://huggingface.co/collections/IsValorum/val-apex-nanoplus-standard-27b",
+      "snippet": "Official VAL-APEX-I NanoPlus (aprox. 11 to 12 GB) standard base and aligned 27B dense hybrid frontier models for 16 GB GPUs."
+    },
+    {
+      "title": "APEX-I NanoPlus — Standard (MoE) - a IsValorum Collection",
+      "url": "https://huggingface.co/collections/IsValorum/apex-i-nanoplus-standard-moe",
+      "snippet": "Official APEX-I NanoPlus (aprox. 11 to 12 GB) standard base and aligned Mixture-of-Experts and linear convnet models for 16 GB GPUs."
+    }
+  ]
+}

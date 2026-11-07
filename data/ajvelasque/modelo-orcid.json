@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ajvelasque/modelo-orcid",
+  "slug": "ajvelasque-modelo-orcid",
+  "author": "ajvelasque",
+  "url": "https://huggingface.co/ajvelasque/modelo-orcid",
+  "created_at": "2026-11-07T01:32:38.000Z",
+  "updated_at": "2026-11-07T01:33:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qsar",
+    "cheminformatics",
+    "drug-discovery",
+    "machine-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6269,
+  "storage_human": "6269 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajvelasque/modelo-teste · Hugging Face",
+      "url": "https://huggingface.co/ajvelasque/modelo-teste",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "GitHub - ORCID/orcid-model: Container for all classes that will be used ...",
+      "url": "https://github.com/ORCID/orcid-model",
+      "snippet": "Container for all classes that will be used to marshal and unmarshal XML/JSON from the API - ORCID/orcid-model"
+    }
+  ]
+}

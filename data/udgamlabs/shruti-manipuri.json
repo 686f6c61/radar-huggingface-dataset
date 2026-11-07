@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "udgamlabs/shruti-manipuri",
+  "slug": "udgamlabs-shruti-manipuri",
+  "author": "udgamlabs",
+  "url": "https://huggingface.co/udgamlabs/shruti-manipuri",
+  "created_at": "2026-11-06T08:23:48.000Z",
+  "updated_at": "2026-11-06T09:04:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "cactus-needle",
+  "languages": [
+    "mni",
+    "en"
+  ],
+  "tags": [
+    "cactus-needle",
+    "whistle",
+    "udgamlabs",
+    "shruti",
+    "speech-recognition",
+    "manipuri",
+    "code-switching",
+    "on-device",
+    "offline",
+    "webassembly",
+    "small-model",
+    "automatic-speech-recognition",
+    "mni",
+    "en",
+    "dataset:ai4bharat/IndicVoices",
+    "dataset:ARTPARK-IISc/Vaani-transcription-part",
+    "dataset:openslr/librispeech_asr",
+    "base_model:udgamlabs/Shruti",
+    "base_model:finetune:udgamlabs/Shruti",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29742580,
+  "storage_human": "30 MB",
+  "base_model": "udgamlabs/Shruti",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Udgam Labs · AI research from first principles",
+      "url": "https://udgamlabs.com/",
+      "snippet": "Udgam Labs · AI research from first principles We make small AI models you can try in your browser. Shruti Turns speech into text on your device, with no server. 11 languages, each with English. Try → Vemana Continues the Telugu text you start. A base model, trained live in public. Try → Gargi A small English language model that thinks step by step on maths problems. Try → Lilavati ..."
+    },
+    {
+      "title": "Models - Udgam Labs",
+      "url": "https://udgamlabs.com/models",
+      "snippet": "Every model Udgam Labs has released, newest first. Each has its own page with results, examples and where it falls short."
+    }
+  ]
+}

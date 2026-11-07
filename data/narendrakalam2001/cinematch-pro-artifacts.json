@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "narendrakalam2001/cinematch-pro-artifacts",
+  "slug": "narendrakalam2001-cinematch-pro-artifacts",
+  "author": "narendrakalam2001",
+  "url": "https://huggingface.co/narendrakalam2001/cinematch-pro-artifacts",
+  "created_at": "2026-10-21T18:11:16.000Z",
+  "updated_at": "2026-11-07T04:07:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "recommender-system",
+    "clip",
+    "faiss",
+    "sentiment-analysis",
+    "roberta",
+    "movielens",
+    "chromadb",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1206350720,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "narendrakalam2001 (Narendra Kalam) - Hugging Face",
+      "url": "https://huggingface.co/narendrakalam2001/models",
+      "snippet": "AI & ML interests ML, NLP, Named Entity Recognition, Biomedical NLP, Transformers, BERT, Computer Vision, Time Series Forecasting, MLOps, Model Deployment"
+    },
+    {
+      "title": "CineMatch AI — Next-Gen Movie Discovery Engine",
+      "url": "https://nersu-abhinav.github.io/CineMatch-AI/",
+      "snippet": "Discover Movies Beyond Ordinary Algorithms. Unlock deep, personalized movie recommendations powered by high-dimensional nearest-neighbor vectors computed over 29+ million user ratings."
+    }
+  ]
+}

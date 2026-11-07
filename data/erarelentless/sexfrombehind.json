@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "eraRelentless/sexfrombehind",
+  "slug": "erarelentless-sexfrombehind",
+  "author": "eraRelentless",
+  "url": "https://huggingface.co/eraRelentless/sexfrombehind",
+  "created_at": "2026-11-07T00:00:41.000Z",
+  "updated_at": "2026-11-07T00:00:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/LTX2BFN",
+    "base_model:adapter:lynaNSFW/LTX2BFN",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 429449571,
+  "storage_human": "429 MB",
+  "base_model": "lynaNSFW/LTX2BFN",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jonjew/SexFromBehind · Hugging Face",
+      "url": "https://huggingface.co/Jonjew/SexFromBehind",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "loras/LTX23_SexFromBehind_v0_1.safetensors - Hugging Face",
+      "url": "https://huggingface.co/ComfyCloudModel/LTX23/blob/main/loras/LTX23_SexFromBehind_v0_1.safetensors",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

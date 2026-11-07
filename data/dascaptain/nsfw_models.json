@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "DasCaptain/nsfw_models",
+  "slug": "dascaptain-nsfw_models",
+  "author": "DasCaptain",
+  "url": "https://huggingface.co/DasCaptain/nsfw_models",
+  "created_at": "2026-02-17T03:56:54.000Z",
+  "updated_at": "2026-11-07T01:29:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 710,
+  "trending_score": 0,
+  "parameters": 14288901184,
+  "parameters_human": "14.29B",
+  "storage_bytes": 136171690571,
+  "storage_human": "136.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DasCaptain/nsfw_models · Hugging Face",
+      "url": "https://huggingface.co/DasCaptain/nsfw_models",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DasCaptain/nsfw_models at main - Hugging Face",
+      "url": "https://huggingface.co/DasCaptain/nsfw_models/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

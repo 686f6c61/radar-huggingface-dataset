@@ -5,7 +5,7 @@
   "author": "Nhckdvrl",
   "url": "https://huggingface.co/Nhckdvrl/cvis-ablate",
   "created_at": "2026-11-06T07:27:56.000Z",
-  "updated_at": "2026-11-06T11:01:18.000Z",
+  "updated_at": "2026-11-07T02:59:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 263496085005,
-  "storage_human": "263.5 GB",
+  "storage_bytes": 658710228525,
+  "storage_human": "658.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

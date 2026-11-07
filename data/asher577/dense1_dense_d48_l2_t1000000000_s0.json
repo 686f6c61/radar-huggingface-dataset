@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "asher577/dense1_dense_d48_L2_t1000000000_s0",
+  "slug": "asher577-dense1_dense_d48_l2_t1000000000_s0",
+  "author": "asher577",
+  "url": "https://huggingface.co/asher577/dense1_dense_d48_L2_t1000000000_s0",
+  "created_at": "2026-11-07T00:51:21.000Z",
+  "updated_at": "2026-11-07T00:55:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1808274,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asher577/scaling1_dcp_d2048_L2_t1000000000_s0 · Hugging Face",
+      "url": "https://huggingface.co/asher577/scaling1_dcp_d2048_L2_t1000000000_s0",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "asher577/scaling1_dcp_d1024_L2_t1000000000_s0 · Hugging Face",
+      "url": "https://huggingface.co/asher577/scaling1_dcp_d1024_L2_t1000000000_s0",
+      "snippet": "scaling1_dcp_d1024_L2_t1000000000_s0 Weight-sparse transformer trained with the procedure from Gao et al. (2025)."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Teio666/teio-rvc",
+  "slug": "teio666-teio-rvc",
+  "author": "Teio666",
+  "url": "https://huggingface.co/Teio666/teio-rvc",
+  "created_at": "2026-11-07T00:00:18.000Z",
+  "updated_at": "2026-11-07T00:00:19.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja",
+    "zh"
+  ],
+  "tags": [
+    "rvc",
+    "voice-conversion",
+    "singing-voice-conversion",
+    "ja",
+    "zh",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 195900331,
+  "storage_human": "196 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TogetsuDo/teio-rvc · Hugging Face",
+      "url": "https://huggingface.co/TogetsuDo/teio-rvc",
+      "snippet": "这是为《赛马娘 Pretty Derby》角色东海帝皇（Tokai Teio）训练的社区 RVC v2 40k 歌声音色转换模型。This is an unofficial community-trained artifact; it is not endorsed by, affiliated with, or authorized by the character, performer, franchise, work, or related group. 本 ..."
+    },
+    {
+      "title": "Tokai Teio (Uma Musume) (RVC V2) (570 epochs) AI Voice Model",
+      "url": "https://voice-models.com/model/1lC8arA6J4X",
+      "snippet": "Tokai Teio (Uma Musume) (RVC V2) (570 epochs) AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    }
+  ]
+}

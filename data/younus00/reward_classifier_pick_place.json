@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "younus00/reward_classifier_pick_place",
+  "slug": "younus00-reward_classifier_pick_place",
+  "author": "younus00",
+  "url": "https://huggingface.co/younus00/reward_classifier_pick_place",
+  "created_at": "2026-11-07T01:32:09.000Z",
+  "updated_at": "2026-11-07T01:32:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "cnn",
+    "reward-model",
+    "reward_classifier",
+    "robotics",
+    "dataset:younus00/reward_classifier_pick_place",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6087233,
+  "parameters_human": "6.1M",
+  "storage_bytes": 24379492,
+  "storage_human": "24 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "younus00/pickplace_20261029_merged · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/younus00/pickplace_20261029_merged",
+      "snippet": "Dataset with 38.1k rows (Tabular, Time-series, Video). Explore, preview and download it on Hugging Face."
+    },
+    {
+      "title": "Tna001/reward_classifier_model · Hugging Face",
+      "url": "https://huggingface.co/Tna001/reward_classifier_model",
+      "snippet": "Model Card for reward_classifier A reward classifier is a lightweight neural network that scores observations or trajectories for task success, providing a learned reward signal or offline evaluation when explicit rewards are unavailable. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    }
+  ]
+}

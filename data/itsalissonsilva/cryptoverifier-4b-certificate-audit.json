@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "itsalissonsilva/CryptoVerifier-4B-Certificate-Audit",
+  "slug": "itsalissonsilva-cryptoverifier-4b-certificate-audit",
+  "author": "itsalissonsilva",
+  "url": "https://huggingface.co/itsalissonsilva/CryptoVerifier-4B-Certificate-Audit",
+  "created_at": "2026-11-06T21:28:32.000Z",
+  "updated_at": "2026-11-06T21:28:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "cryptography",
+    "symbolic-reasoning",
+    "research",
+    "dataset:itsalissonsilva/crypto-protocol-traces-synthetic",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 165182784,
+  "storage_human": "165 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alisson Matheus Silva itsalissonsilva - GitHub",
+      "url": "https://github.com/itsalissonsilva/",
+      "snippet": "I'm an AI/ML engineer with more than five years of programming experience in Python from both academia and work experiences. I'm very interested in emerging technologies like generative artificial intelligence and quantum computing. My toolkit includes tools such as PySpark for data processing, scikit-learn and PyTorch for model development, Databricks for collaborative data engineering and ..."
+    },
+    {
+      "title": "helper_verification/ · itsalissonsilva/QuantumCoder-9B at main",
+      "url": "https://huggingface.co/itsalissonsilva/QuantumCoder-9B/tree/main/helper_verification",
+      "snippet": "itsalissonsilva / QuantumCoder-9B Like 0 Text Generation PEFT Safetensors quantum-computing circuit-to-code lora synthetic-data License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

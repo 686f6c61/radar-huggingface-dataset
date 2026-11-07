@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "zen-E/PLatour-TR-LoRA-Qwen3.5-4B-DeepCoder",
+  "slug": "zen-e-platour-tr-lora-qwen3-5-4b-deepcoder",
+  "author": "zen-E",
+  "url": "https://huggingface.co/zen-E/PLatour-TR-LoRA-Qwen3.5-4B-DeepCoder",
+  "created_at": "2026-11-06T21:07:33.000Z",
+  "updated_at": "2026-11-06T21:09:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:2611.06976",
+    "platour",
+    "dataset:zen-E/PLatour-DeepCoder-Data",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1038952816,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zen-E/PLatour-TR-FullGRPO-Qwen3.5-4B-DeepCoder · Hugging Face",
+      "url": "https://huggingface.co/zen-E/PLatour-TR-FullGRPO-Qwen3.5-4B-DeepCoder",
+      "snippet": "Instructions to use zen-E/PLatour-TR-FullGRPO-Qwen3.5-4B-DeepCoder with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.5-4B LoRA Fine-tuning on Step-3.5-Flash-SFT - GitHub",
+      "url": "https://github.com/IIIIQIIII/qwen35-4b-lora-sft",
+      "snippet": "This experiment validates whether a single H100 can efficiently fine-tune Qwen3.5-4B on general agent/coding/reasoning data that the base model has never seen before, using a large LoRA rank to compensate for the domain gap."
+    }
+  ]
+}

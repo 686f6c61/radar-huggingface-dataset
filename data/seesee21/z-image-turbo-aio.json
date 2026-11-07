@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "SeeSee21/Z-Image-Turbo-AIO",
+  "slug": "seesee21-z-image-turbo-aio",
+  "author": "SeeSee21",
+  "url": "https://huggingface.co/SeeSee21/Z-Image-Turbo-AIO",
+  "created_at": "2025-12-03T21:24:19.000Z",
+  "updated_at": "2026-11-06T23:42:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "z-image-turbo",
+    "text-to-image",
+    "image-generation",
+    "diffusion",
+    "comfyui",
+    "photorealistic",
+    "bilingual",
+    "chinese",
+    "english",
+    "8-step",
+    "fast-generation",
+    "en",
+    "zh",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:finetune:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 303,
+  "downloads_30d": 241,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 102824945245,
+  "storage_human": "102.8 GB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SeeSee21/Z-Image-Turbo-AIO · Hugging Face",
+      "url": "https://huggingface.co/SeeSee21/Z-Image-Turbo-AIO",
+      "snippet": "Text-to-Image model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Z-Image-Turbo-AIO: Image-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/z-image-turbo-aio-seesee21",
+      "snippet": "Overview Z-Image-Turbo-AIO is an all-in-one repackage of Alibaba Tongyi Lab's 6-billion-parameter photorealistic image generator, created by SeeSee21 and optimized for fast 8-step generation. The model uses a Single-Stream Diffusion Transformer architecture with integrated VAE and Text Encoder, eliminating the need for separate component downloads. It generates images at up to 1920×1088 ..."
+    }
+  ]
+}

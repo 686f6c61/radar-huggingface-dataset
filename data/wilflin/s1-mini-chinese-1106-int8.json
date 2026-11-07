@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "WIlfLin/S1-mini-Chinese-1106-INT8",
+  "slug": "wilflin-s1-mini-chinese-1106-int8",
+  "author": "WIlfLin",
+  "url": "https://huggingface.co/WIlfLin/S1-mini-Chinese-1106-INT8",
+  "created_at": "2026-11-07T00:41:17.000Z",
+  "updated_at": "2026-11-07T00:46:07.000Z",
+  "license": "s1-mini-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3",
+    "qwen3-asr",
+    "transcript-normalization",
+    "chinese",
+    "code-switching",
+    "quantization",
+    "int8",
+    "compressed-tensors",
+    "text-generation",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:WIlfLin/S1-mini-Chinese-1106-BF16",
+    "base_model:quantized:WIlfLin/S1-mini-Chinese-1106-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 1075056098,
+  "storage_human": "1.1 GB",
+  "base_model": "WIlfLin/S1-mini-Chinese-1106-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WIlfLin/S1-mini-Chinese-1106 · Hugging Face",
+      "url": "https://huggingface.co/WIlfLin/S1-mini-Chinese-1106",
+      "snippet": "A Chinese-data full fine-tune of S1-mini by Superwhisper, optimized for postprocessing Qwen3-ASR Chinese and Chinese/English mixed transcripts. This is a text postprocessor, not an audio recognizer or a general-purpose assistant."
+    },
+    {
+      "title": "WilfLin AI Models: Benchmarks & Pricing (October 2026)",
+      "url": "https://benchlm.ai/providers/wilflin",
+      "snippet": "BenchLM provider page for WilfLin: top model families, ranked coverage, pricing visibility, and current release depth."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "SXY7",
   "url": "https://huggingface.co/SXY7/X-VLA-Piper-bottle",
   "created_at": "2026-11-05T07:32:17.000Z",
-  "updated_at": "2026-11-06T02:54:14.000Z",
+  "updated_at": "2026-11-06T05:35:09.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 73890171537,
-  "storage_human": "73.9 GB",
+  "storage_bytes": 84445910328,
+  "storage_human": "84.4 GB",
   "base_model": "2toINF/X-VLA-Pt",
   "formats": [
     "safetensors"
