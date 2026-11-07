@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/grok-oss-Cerberus-24B-i1-GGUF",
+  "slug": "mradermacher-grok-oss-cerberus-24b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/grok-oss-Cerberus-24B-i1-GGUF",
+  "created_at": "2026-11-07T17:50:09.000Z",
+  "updated_at": "2026-11-07T18:03:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 8910408000,
+  "storage_human": "8.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "c4tdr0ut/grok-oss-Cerberus-24B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/c4tdr0ut/grok-oss-Cerberus-24B-GGUF",
+      "snippet": "Instructions to use c4tdr0ut/grok-oss-Cerberus-24B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. GGUF quant made with the callibration data used to train the model 8192 token content 512 callibration examples ..."
+    },
+    {
+      "title": "mradermacher/grok-oss-Apollyon-24B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/grok-oss-Apollyon-24B-i1-GGUF",
+      "snippet": "mradermacher / grok-oss-Apollyon-24B-i1-GGUF like 0 Transformers GGUF Grok English text-generation-inference unsloth mistral unhinged unaligned abliterated x.ai dpo sft llm chat conversational research imatrix License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "ricecake/krea2-anime-capgen",
+  "slug": "ricecake-krea2-anime-capgen",
+  "author": "ricecake",
+  "url": "https://huggingface.co/ricecake/krea2-anime-capgen",
+  "created_at": "2026-11-07T15:50:51.000Z",
+  "updated_at": "2026-11-07T15:51:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "captioning",
+    "anime",
+    "danbooru",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 448848407,
+  "storage_human": "449 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea2-Anime - v1.5 | Krea 2 Checkpoint | Civitai",
+      "url": "https://civitai.red/models/2908999/krea2-anime?modelVersionId=3310477",
+      "snippet": "This model is build for all anime lovers. Important Prompts are absolutely crucial. If your prompt is too simple, the results will look just like b..."
+    },
+    {
+      "title": "Krea2 AI Models (456) | Civitai",
+      "url": "https://civitai.com/tag/krea2",
+      "snippet": "Browse 456 AI models tagged \"Krea2\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    }
+  ]
+}

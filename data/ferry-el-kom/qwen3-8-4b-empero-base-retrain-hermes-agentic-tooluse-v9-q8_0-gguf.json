@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ferry-el-kom/qwen3.8-4b-empero-base-retrain-hermes-agentic-tooluse-v9-Q8_0-gguf",
+  "slug": "ferry-el-kom-qwen3-8-4b-empero-base-retrain-hermes-agentic-tooluse-v9-q8_0-gguf",
+  "author": "ferry-el-kom",
+  "url": "https://huggingface.co/ferry-el-kom/qwen3.8-4b-empero-base-retrain-hermes-agentic-tooluse-v9-Q8_0-gguf",
+  "created_at": "2026-11-07T15:39:19.000Z",
+  "updated_at": "2026-11-07T16:00:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ro"
+  ],
+  "tags": [
+    "gguf",
+    "q8_0",
+    "qwen3.8",
+    "text-generation",
+    "agent",
+    "tool-use",
+    "en",
+    "ro",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 4610576352,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "Qwen3.8 4B by empero-ai — VRAM 9.3GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/empero-ai%2FQwen3.8-4B,3A59vMN9CCmqBUAY2z7SkJ",
+      "snippet": "Qwen3.8 4B is an open-source language model by empero-ai. Features: 4b LLM, VRAM: 9.3GB, License: apache-2.0, LLM Explorer Score: 0.27."
+    }
+  ]
+}

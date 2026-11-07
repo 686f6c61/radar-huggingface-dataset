@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "ninabot/Apertus-v1.5-70B-EAGLE3",
+  "slug": "ninabot-apertus-v1-5-70b-eagle3",
+  "author": "ninabot",
+  "url": "https://huggingface.co/ninabot/Apertus-v1.5-70B-EAGLE3",
+  "created_at": "2026-11-07T16:07:07.000Z",
+  "updated_at": "2026-11-07T16:08:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "llama",
+    "eagle3",
+    "speculative-decoding",
+    "draft-model",
+    "apertus",
+    "text-generation",
+    "base_model:swiss-ai/Apertus-v1.5-70B",
+    "base_model:finetune:swiss-ai/Apertus-v1.5-70B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2214649856,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4429301392,
+  "storage_human": "4.4 GB",
+  "base_model": "swiss-ai/Apertus-v1.5-70B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apertus 1.5 - Apertus",
+      "url": "https://apertus-ai.org/articles/2026-07-apertus-1-5/",
+      "snippet": "Our latest release, Apertus 1.5, extends the 8B and 70B Apertus 1.0 models with image understanding, an optional thinking mode, a four times longer context window, improved instruction-following, and better tool use. The updated 8B and 70B model weights were released to Hugging Face on July 24, 2026 under an Apache 2.0 license. Further details are now available from the project Technical ..."
+    },
+    {
+      "title": "swiss-ai/Apertus-v1.5-70B · Hugging Face",
+      "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+      "snippet": "Apertus 1.5 Table of Contents Table of Contents Model Summary Key Features How to Use Evaluation Training Limitations Legal Aspects Contact Model Summary Apertus 1.5 is a family of 8B and 70B parameter language models designed to advance the state of multilingual, multimodal, fully open, and transparent AI. The models support a wide range of languages, handle contexts of up to 262,144 tokens ..."
+    }
+  ]
+}

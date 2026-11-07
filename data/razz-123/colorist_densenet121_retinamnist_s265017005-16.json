@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "razz-123/colorist_densenet121_retinamnist_s265017005-16",
+  "slug": "razz-123-colorist_densenet121_retinamnist_s265017005-16",
+  "author": "razz-123",
+  "url": "https://huggingface.co/razz-123/colorist_densenet121_retinamnist_s265017005-16",
+  "created_at": "2026-11-07T18:07:05.000Z",
+  "updated_at": "2026-11-07T18:07:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "colorist-aug",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "colorist-aug",
+    "safetensors",
+    "image-classification",
+    "medical-imaging",
+    "domain-generalization",
+    "data-augmentation",
+    "color-transfer",
+    "densenet",
+    "pytorch",
+    "en",
+    "arxiv:2608.18915",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7042629,
+  "parameters_human": "7.0M",
+  "storage_bytes": 28254676,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "colorist_densenet121_retina_s133560673 - Hugging Face",
+      "url": "https://huggingface.co/sdoerrich97/colorist_densenet121_retina_s133560673",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "densenet121 — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/generated/torchvision.models.densenet121.html",
+      "snippet": "densenet121 ¶ torchvision.models.densenet121(*, weights: Optional[DenseNet121_Weights] = None, progress: bool = True, **kwargs: Any) → DenseNet[source] ¶ Densenet-121 model from Densely Connected Convolutional Networks. Parameters: weights (DenseNet121_Weights, optional) – The pretrained weights to use."
+    }
+  ]
+}

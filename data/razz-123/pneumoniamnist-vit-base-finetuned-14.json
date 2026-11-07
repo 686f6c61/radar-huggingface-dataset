@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "razz-123/pneumoniamnist-vit-base-finetuned-14",
+  "slug": "razz-123-pneumoniamnist-vit-base-finetuned-14",
+  "author": "razz-123",
+  "url": "https://huggingface.co/razz-123/pneumoniamnist-vit-base-finetuned-14",
+  "created_at": "2026-11-07T18:06:31.000Z",
+  "updated_at": "2026-11-07T18:06:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "generated_from_trainer",
+    "dataset:medmnist-v2",
+    "base_model:google/vit-base-patch16-224-in21k",
+    "base_model:adapter:google/vit-base-patch16-224-in21k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2377960,
+  "storage_human": "2 MB",
+  "base_model": "google/vit-base-patch16-224-in21k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "selmamalak/pneumoniamnist-swin-base-finetuned · Hugging Face",
+      "url": "https://huggingface.co/selmamalak/pneumoniamnist-swin-base-finetuned",
+      "snippet": "Model card Files Files and versions Community Use this model Edit model card Configuration Parsing Warning: In adapter_config.json: \"peft.task_type\" must be a string pneumoniamnist-vit-base-finetuned Model description Intended uses & limitations Training and evaluation data Training procedure Training hyperparameters Training results Framework ..."
+    },
+    {
+      "title": "razz-123/KBidu_14B_Fixed · Hugging Face",
+      "url": "https://huggingface.co/razz-123/KBidu_14B_Fixed",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

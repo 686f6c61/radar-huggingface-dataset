@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Chungulus/Arete-27B-Q8_0-GGUF",
+  "slug": "chungulus-arete-27b-q8_0-gguf",
+  "author": "Chungulus",
+  "url": "https://huggingface.co/Chungulus/Arete-27B-Q8_0-GGUF",
+  "created_at": "2026-11-07T13:09:34.000Z",
+  "updated_at": "2026-11-07T13:10:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_5",
+    "nous-research",
+    "arete",
+    "image-text-to-text",
+    "conversational",
+    "base_model:NousResearch/Arete-27B",
+    "base_model:quantized:NousResearch/Arete-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 29526910816,
+  "storage_human": "29.5 GB",
+  "base_model": "NousResearch/Arete-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arete 27B: Specs, Memory Requirements & Best Hardware (2026)",
+      "url": "https://modelfit.io/models/arete-27b/",
+      "snippet": "Arete 27B is a 27.4B dense model built for chat, agents, vision. The weights alone take 17.2 GB at Q4_K_M; add context and the OS, and it belongs in the 32 GB memory class."
+    },
+    {
+      "title": "Introducing Arete-27B: Qwen3.8-27B Post-Trained To Reinforce Western ...",
+      "url": "https://nousresearch.com/arete",
+      "snippet": "We post-trained Alibaba's Qwen3.8-27B to reinforce Western values on a Chinese-trained model, and measured what changed with an 803-prompt eval across seven value categories."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ShanthiStream/qwen3-5-4b-3d-coder-demo",
+  "slug": "shanthistream-qwen3-5-4b-3d-coder-demo",
+  "author": "ShanthiStream",
+  "url": "https://huggingface.co/ShanthiStream/qwen3-5-4b-3d-coder-demo",
+  "created_at": "2026-11-07T17:06:22.000Z",
+  "updated_at": "2026-11-07T17:08:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sekkit/Qwen3.5-4B-GLB-3D-Coder · Hugging Face",
+      "url": "https://huggingface.co/sekkit/Qwen3.5-4B-GLB-3D-Coder",
+      "snippet": "Text Generation model with 4B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "CCORE Open-Sources Qwen3.5-4B-3D-Coder for Three.js Scenes - AI Weekly",
+      "url": "https://aiweekly.co/alerts/ccore-open-sources-qwen35-4b-3d-coder-for-threejs-scenes",
+      "snippet": "AI Weekly Pro Want only the AI that hits your stack? Build an agent that tracks your companies and topics, and skips everything else. Build your agent → TL;DR CCORE released Qwen3.5-4B-3D-Coder, an Apache-2.0 fine-tune of Qwen/Qwen3.5-4B trained on 4,146 Three.js scene examples with full thinking traces. The model ships as FP16 safetensors plus Q4_K_M and Q8_0 GGUF quantizations, with a ..."
+    }
+  ]
+}

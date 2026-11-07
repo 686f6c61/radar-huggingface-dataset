@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "taurusduan/MiniMax-H3-General-Motion-Continuity-Repair",
+  "slug": "taurusduan-minimax-h3-general-motion-continuity-repair",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/MiniMax-H3-General-Motion-Continuity-Repair",
+  "created_at": "2026-11-07T13:44:25.000Z",
+  "updated_at": "2026-11-07T13:44:25.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "MINIMAX",
+    "MINIMAXH3",
+    "MOTION",
+    "lora",
+    "en",
+    "zh",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310220544,
+  "storage_human": "310 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "taurusduan/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/taurusduan/MiniMax-H3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/MiniMax_H3",
+      "snippet": "MiniMax H3, marketed to consumers under the name Hailuo 3.0, is an omni-modal video generation model developed by Chinese artificial intelligence company MiniMax. Announced on July 31, 2026, H3 represents a fundamental architectural departure from its predecessor, the Hailuo 02 series, replacing a collection of task-specific models with a single 33.1-billion-parameter dense transformer capable ..."
+    }
+  ]
+}

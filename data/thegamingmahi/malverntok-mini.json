@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "TheGamingMahi/MalvernTok-mini",
+  "slug": "thegamingmahi-malverntok-mini",
+  "author": "TheGamingMahi",
+  "url": "https://huggingface.co/TheGamingMahi/MalvernTok-mini",
+  "created_at": "2026-11-07T15:38:56.000Z",
+  "updated_at": "2026-11-07T15:40:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tokenizers",
+    "bpe",
+    "byte-fallback",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheGamingMahi (Mahi) - Hugging Face",
+      "url": "https://huggingface.co/TheGamingMahi/datasets",
+      "snippet": "AI & ML interests ... Recent Activity published a dataset 3 days ago ... published a model 3 days ago"
+    },
+    {
+      "title": "TheGamingMahi (Mahi) - Hugging Face",
+      "url": "https://huggingface.co/TheGamingMahi",
+      "snippet": "AI & ML interests ... Recent Activity liked a Space 5 days ago ... updated a dataset about 2 months ago"
+    }
+  ]
+}

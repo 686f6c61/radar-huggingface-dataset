@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Vishva007/Qwen3.5-9B-W4A16-AutoRound-AWQ",
+  "slug": "vishva007-qwen3-5-9b-w4a16-autoround-awq",
+  "author": "Vishva007",
+  "url": "https://huggingface.co/Vishva007/Qwen3.5-9B-W4A16-AutoRound-AWQ",
+  "created_at": "2026-03-03T20:19:48.000Z",
+  "updated_at": "2026-11-07T18:03:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "4-bit",
+    "awq",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 823,
+  "trending_score": 0,
+  "parameters": 2491309296,
+  "parameters_human": "2.49B",
+  "storage_bytes": 17660882018,
+  "storage_human": "17.7 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vishva007/Qwen3.5-9B-W4A16-AutoRound-GPTQ - Hugging Face",
+      "url": "https://huggingface.co/Vishva007/Qwen3.5-9B-W4A16-AutoRound-GPTQ",
+      "snippet": "This is a W4A16 (4-bit weight, 16-bit activation) quantized version of Qwen/Qwen3.5-9B, produced using AutoRound — Intel's sign gradient descent based quantization method designed for production-grade accuracy retention. MTP Enabled model quantization"
+    },
+    {
+      "title": "README.md · Vishva007/Qwen3.5-9B-W4A16-AutoRound-AWQ at main",
+      "url": "https://huggingface.co/Vishva007/Qwen3.5-9B-W4A16-AutoRound-AWQ/blob/main/README.md",
+      "snippet": "Vishva007/Qwen3.5-9B-W4A16-AutoRound-AWQ This is a W4A16 (4-bit weight, 16-bit activation) AWQ-format quantized version of Qwen/Qwen3.5-9B, produced using AutoRound — Intel's sign gradient descent based quantization method designed for production-grade accuracy retention."
+    }
+  ]
+}

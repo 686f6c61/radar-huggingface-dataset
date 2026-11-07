@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "nigelimmanuel/wan-vace-outpaint",
+  "slug": "nigelimmanuel-wan-vace-outpaint",
+  "author": "nigelimmanuel",
+  "url": "https://huggingface.co/nigelimmanuel/wan-vace-outpaint",
+  "created_at": "2026-11-07T16:35:06.000Z",
+  "updated_at": "2026-11-07T16:40:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41984162359,
+  "storage_human": "42.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VACE Outpainting! Native & Wrapper… VACE Outpainting - CivArchive",
+      "url": "https://civitaiarchives.com/models/1636498?modelVersionId=1852367",
+      "snippet": "In this tutorial, I show you how to outpaint entire video sequences using the powerful VACE 14B model inside ComfyUI. This means expanding your AI-generated video frames beyond their original borders—adding backgrounds, scenery, and dynamic content that feels like it was always there."
+    },
+    {
+      "title": "VACE Outpainting! Native & Wrapper Workflows + Video Guide",
+      "url": "https://civitai.com/models/1636498/vace-outpainting-native-and-wrapper-workflows-video-guide",
+      "snippet": "In this tutorial, I show you how to outpaint entire video sequences using the powerful VACE 14B model inside ComfyUI. This means expanding your AI-..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "GEHIRNS/magi-1.2-2B",
+  "slug": "gehirns-magi-1-2-2b",
+  "author": "GEHIRNS",
+  "url": "https://huggingface.co/GEHIRNS/magi-1.2-2B",
+  "created_at": "2026-11-07T20:25:31.000Z",
+  "updated_at": "2026-11-07T20:36:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3.5",
+    "mixed-precision",
+    "quantized",
+    "llama.cpp",
+    "ollama",
+    "reasoning",
+    "gated-deltanet",
+    "lora",
+    "dpo",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 826327264,
+  "storage_human": "826 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GEHIRNS/magi-1.1-2B · Hugging Face",
+      "url": "https://huggingface.co/GEHIRNS/magi-1.1-2B",
+      "snippet": "The magi-1.0 mixed-precision recipe, unchanged: the same 13 tensor-class rules and the same quantizer, with an importance matrix computed on the 2B. The fine-tune does not change the file size."
+    },
+    {
+      "title": "GEHIRNS/magi-1.0-2B at main - Hugging Face",
+      "url": "https://huggingface.co/GEHIRNS/magi-1.0-2B/tree/main",
+      "snippet": "GEHIRNS / magi-1.0-2B Like 0 Follow GEHIRNS 4 Text Generation GGUF English qwen3.5 mixed-precision quantized llama.cpp ollama reasoning gated-deltanet imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

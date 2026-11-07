@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "SkyIsNotGreen/splinter-memory",
+  "slug": "skyisnotgreen-splinter-memory",
+  "author": "SkyIsNotGreen",
+  "url": "https://huggingface.co/SkyIsNotGreen/splinter-memory",
+  "created_at": "2026-10-20T02:13:04.000Z",
+  "updated_at": "2026-11-07T17:10:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "context-curation",
+    "long-context",
+    "memory-management",
+    "conversational-ai",
+    "retrieval",
+    "llm",
+    "research-paper",
+    "sentence-similarity",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135486,
+  "storage_human": "135486 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Splinter Memory - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/skyisnotgreen/splinter-memory",
+      "snippet": "Registry entry for model Splinter Memory; source metadata pending."
+    },
+    {
+      "title": "hive/splinter at main · sky-is-green/hive · GitHub",
+      "url": "https://github.com/sky-is-green/hive/tree/main/splinter/",
+      "snippet": "Splinter-Memory is an external, multi-agent context-curation layer for long-horizon LLM conversations. It sits between a user and a local LLM backend, filtering, scoring, compressing, and reassembling conversation history into a bounded, high-relevance context window for every turn, so a generative model performs well over arbitrarily long conversations on consumer hardware."
+    }
+  ]
+}

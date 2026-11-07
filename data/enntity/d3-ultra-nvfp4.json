@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Enntity/d3-ultra-NVFP4",
+  "slug": "enntity-d3-ultra-nvfp4",
+  "author": "Enntity",
+  "url": "https://huggingface.co/Enntity/d3-ultra-NVFP4",
+  "created_at": "2026-11-07T17:01:28.000Z",
+  "updated_at": "2026-11-07T17:04:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "atlas",
+  "languages": [],
+  "tags": [
+    "atlas",
+    "safetensors",
+    "qwen3_5",
+    "nvfp4",
+    "fp8",
+    "modelopt",
+    "decision-model",
+    "dgx-spark",
+    "gb10",
+    "sparkscore",
+    "base_model:vllm-sr/d3-ultra",
+    "base_model:quantized:vllm-sr/d3-ultra",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18800348400,
+  "parameters_human": "18.80B",
+  "storage_bytes": 22917941472,
+  "storage_human": "22.9 GB",
+  "base_model": "vllm-sr/d3-ultra",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "d3-ultra NVFP4 package · vllm-sr/d3-ultra-NVFP4 at 189c02c",
+      "url": "https://huggingface.co/vllm-sr/d3-ultra-NVFP4/commit/189c02c066be92d27cd8dd38e3ddf9f6a2d42a01",
+      "snippet": "/ d3-ultra-NVFP4 Like 2 Follow vLLM Semantic Router 613 Zero-Shot Classification Transformers Safetensors qwen3_5 feature-extraction decision-model classification system-one multimodal vision video object-detection quantized compressed-tensors nvfp4 w4a4 awq gptq custom_code 8-bit precision License:apache-2.0 Model card FilesFiles and versions ..."
+    },
+    {
+      "title": "nemotron-3-ultra-550b-a55b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b/modelcard",
+      "snippet": "Nemotron-3-Ultra-550B-A55B-NVFP4 is a frontier-scale large language model (LLM) trained by NVIDIA, designed to deliver strong agentic, reasoning, and conversational capabilities. It is optimized for the most demanding workloads, including complex multi-step agents, long-context analysis, and high-accuracy reasoning over code, math, and science."
+    }
+  ]
+}

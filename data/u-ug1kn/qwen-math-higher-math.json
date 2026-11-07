@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "U-Ug1kn/qwen-math-higher-math",
+  "slug": "u-ug1kn-qwen-math-higher-math",
+  "author": "U-Ug1kn",
+  "url": "https://huggingface.co/U-Ug1kn/qwen-math-higher-math",
+  "created_at": "2026-11-07T20:03:38.000Z",
+  "updated_at": "2026-11-07T20:03:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Math: A series of math-specific large language ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Math",
+      "snippet": "The Qwen2.5-Math series models have achieved significant performance improvements compared to the Qwen2-Math series models on the Chinese and English mathematics benchmarks with CoT. Detailed performance and introduction are shown in this 📑 blog. 🚨 Qwen2.5-Math mainly supports solving English and Chinese math problems through CoT and TIR."
+    },
+    {
+      "title": "Qwen/Qwen2-Math-72B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2-Math-72B",
+      "snippet": "Over the past year, we have dedicated significant effort to researching and enhancing the reasoning capabilities of large language models, with a particular focus on their ability to solve arithmetic and mathematical problems. Today, we are delighted to introduce a serise of math-specific large language models of our Qwen2 series, Qwen2-Math and Qwen2-Math-Instruct-1.5B/7B/72B."
+    },
+    {
+      "title": "GitHub - Universal-Invariant/AI-QWEN-Math: A series of math-specific ...",
+      "url": "https://github.com/Universal-Invariant/AI-QWEN-Math",
+      "snippet": "The Qwen2.5-Math-72B-Instruct model outperforms the Qwen2-Math-72B-Instruct model by an average margin of 4.4 and 6.1 points in English and Chinese, respectively, establishing itself as the best open-source mathematical model currently available."
+    }
+  ]
+}

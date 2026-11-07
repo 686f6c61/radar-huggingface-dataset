@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Bioaligned/Qwen3.6-27B-Curiosity",
+  "slug": "bioaligned-qwen3-6-27b-curiosity",
+  "author": "Bioaligned",
+  "url": "https://huggingface.co/Bioaligned/Qwen3.6-27B-Curiosity",
+  "created_at": "2026-11-07T15:41:13.000Z",
+  "updated_at": "2026-11-07T15:46:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "coupled-welfare",
+    "curiosity",
+    "cpt",
+    "hybrid-ssm",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 53812099517,
+  "storage_human": "53.8 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model",
+      "url": "https://qwen.ai/blog?id=qwen3.6-27b",
+      "snippet": "QWEN STUDIO HUGGING FACE MODELSCOPE DISCORD Following the launch of Qwen3.6-Plus and Qwen3.6-35B-A3B, we are excited to open-source Qwen3.6-27B — a dense 27-billion-parameter multimodal model at the scale the community has been asking for most. Still supporting both multimodal thinking and non-thinking modes, Qwen3.6-27B delivers flagship-level agentic coding performance, surpassing the ..."
+    },
+    {
+      "title": "qwen--qwen3.6-27b | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3.6-27b",
+      "snippet": "Multimodal 27B Qwen3.6 model for coding, reasoning, OCR, GUI interaction, and long-context video... Sign in to Microsoft Foundry to deploy this model."
+    },
+    {
+      "title": "qwen3.6-27b Model Info - Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-6-27b",
+      "snippet": "The Qwen3.6 27B native vision-language dense model builds upon the 3.5-27B version, with key improvements in agentic coding capabilities and enhanced STEM reasoning and inference skills. In the vision modality, it demonstrates significant advances in spatial intelligence, object localization, and detection, while video understanding, document OCR, and visual agent capabilities continue to ..."
+    }
+  ]
+}

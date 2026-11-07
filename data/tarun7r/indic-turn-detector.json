@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "tarun7r/indic-turn-detector",
+  "slug": "tarun7r-indic-turn-detector",
+  "author": "tarun7r",
+  "url": "https://huggingface.co/tarun7r/indic-turn-detector",
+  "created_at": "2026-11-07T13:31:02.000Z",
+  "updated_at": "2026-11-07T13:31:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hi",
+    "bn",
+    "gu",
+    "mr",
+    "pa",
+    "ta",
+    "te"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "voice-ai",
+    "voice-agents",
+    "turn-detection",
+    "end-of-utterance",
+    "end-of-turn",
+    "eou",
+    "livekit",
+    "conversational-ai",
+    "indic",
+    "multilingual",
+    "hindi",
+    "hinglish",
+    "text-classification",
+    "en",
+    "hi",
+    "bn",
+    "gu",
+    "mr",
+    "pa",
+    "ta",
+    "te",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494033665,
+  "parameters_human": "494.0M",
+  "storage_bytes": 3973649786,
+  "storage_human": "4.0 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "end-of-utterance",
+      "dataset": "processed_v5 validation (wb_clean)",
+      "metric": "mean TPR (≥4 words, balanced profile)",
+      "value": 0.913
+    },
+    {
+      "task": "end-of-utterance",
+      "dataset": "processed_v5 validation (wb_clean)",
+      "metric": "mean per-language AUC",
+      "value": 0.967
+    }
+  ],
+  "sources": [
+    {
+      "title": "tarun7r (Tarun) · GitHub",
+      "url": "https://github.com/tarun7r",
+      "snippet": "I'm Tarun, a passionate Data Scientist and ML Engineer with 2.5+ years of experience building production-ready AI/ML systems. I graduated from the Indian Institute of Technology, Bombay with a degree in Electrical Engineering."
+    },
+    {
+      "title": "tarun7r (Tarun7r) - Hugging Face",
+      "url": "https://huggingface.co/tarun7r/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 4 days ago ... updated a model 4 days ago"
+    }
+  ]
+}

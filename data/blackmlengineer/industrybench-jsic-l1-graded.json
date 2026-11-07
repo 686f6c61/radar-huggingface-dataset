@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "blackmlengineer/industrybench-jsic-l1-graded",
+  "slug": "blackmlengineer-industrybench-jsic-l1-graded",
+  "author": "blackmlengineer",
+  "url": "https://huggingface.co/blackmlengineer/industrybench-jsic-l1-graded",
+  "created_at": "2026-11-07T14:36:05.000Z",
+  "updated_at": "2026-11-07T14:36:32.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "jsic",
+    "industry-classification",
+    "graded-relevance",
+    "hierarchical-classification",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19846241,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - alibaba-multimodal-industrial-ai/IndustryBench: A multi ...",
+      "url": "https://github.com/alibaba-multimodal-industrial-ai/IndustryBench",
+      "snippet": "The script appends /chat/completions itself. It is not the model name. --model — Model that answers the questions. --judge-model — Optional; defaults to --model. Set to your judge (e.g. qwen3-max) if the answer model differs. Results and checkpoints go under results/ by default. See python evaluate.py --help."
+    },
+    {
+      "title": "[2605.10267] IndustryBench: Probing the Industrial Knowledge Boundaries ...",
+      "url": "https://arxiv.org/abs/2605.10267",
+      "snippet": "We introduce IndustryBench, a 2,049-item benchmark for industrial procurement QA in Chinese, grounded in Chinese national standards (GB/T) and structured industrial product records, organized by seven capability dimensions, ten industry categories, and panel-derived difficulty tiers, with item-aligned English, Russian, and Vietnamese renderings."
+    }
+  ]
+}

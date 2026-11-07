@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "taitolabs/usva-clip-text",
+  "slug": "taitolabs-usva-clip-text",
+  "author": "taitolabs",
+  "url": "https://huggingface.co/taitolabs/usva-clip-text",
+  "created_at": "2026-11-07T14:13:28.000Z",
+  "updated_at": "2026-11-07T14:16:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "onnx",
+    "clip",
+    "sentence-transformers",
+    "feature-extraction",
+    "multilingual",
+    "base_model:sentence-transformers/clip-ViT-B-32-multilingual-v1",
+    "base_model:quantized:sentence-transformers/clip-ViT-B-32-multilingual-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 540661733,
+  "storage_human": "541 MB",
+  "base_model": "sentence-transformers/clip-ViT-B-32-multilingual-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CLIP (Contrastive Language-Image Pretraining) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/clip-contrastive-language-image-pretraining/",
+      "snippet": "CLIP (Contrastive Language-Image Pretraining) is a multimodal AI model that learns the relationship between images and text. By training on image–text pairs, it can understand visual content through natural language descriptions and perform image recognition without task-specific training."
+    },
+    {
+      "title": "CLIP Model Overview : Unlocking the Power of Multimodal AI",
+      "url": "https://towardsdatascience.com/clip-model-overview-unlocking-the-power-of-multimodal-ai/",
+      "snippet": "CLIP can estimate the similarity between an image and class labels in order to classify the image. Speaking of this recognition method, studies have shown that it is better to embed every text (class name) using the following prompt structure: “a photo of <animal class>”."
+    }
+  ]
+}

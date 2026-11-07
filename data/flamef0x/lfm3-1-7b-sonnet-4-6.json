@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "FlameF0X/LFM3-1.7B-Sonnet-4.6",
+  "slug": "flamef0x-lfm3-1-7b-sonnet-4-6",
+  "author": "FlameF0X",
+  "url": "https://huggingface.co/FlameF0X/LFM3-1.7B-Sonnet-4.6",
+  "created_at": "2026-11-05T20:44:27.000Z",
+  "updated_at": "2026-11-07T15:32:49.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm3",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:finetune:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 1728801536,
+  "parameters_human": "1.73B",
+  "storage_bytes": 6951087799,
+  "storage_human": "7.0 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude Sonnet 4.6 vs LFM3-1.7B - llm-stats.com",
+      "url": "https://llm-stats.com/models/compare/claude-sonnet-4-6-vs-lfm3-1.7b",
+      "snippet": "Claude Sonnet 4.6 vs LFM3-1.7B: which is better? Compare benchmark scores, pricing, context windows, latency and capabilities side-by-side, with a clear verdict on which AI model to choose."
+    },
+    {
+      "title": "Introducing Claude Sonnet 4.6 - Anthropic",
+      "url": "https://www.anthropic.com/news/claude-sonnet-4-6",
+      "snippet": "Claude Sonnet 4.6 is a full upgrade of the model’s skills across coding, computer use, long-reasoning, agent planning, knowledge work, and design."
+    }
+  ]
+}

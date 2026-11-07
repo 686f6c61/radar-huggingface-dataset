@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "netprojects/nemotron-dory1.0-4b-mlx-nvfp4",
+  "slug": "netprojects-nemotron-dory1-0-4b-mlx-nvfp4",
+  "author": "netprojects",
+  "url": "https://huggingface.co/netprojects/nemotron-dory1.0-4b-mlx-nvfp4",
+  "created_at": "2026-11-07T14:24:38.000Z",
+  "updated_at": "2026-11-07T14:24:58.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "dory",
+    "nemotron-labs",
+    "looped-language-model",
+    "reasoning",
+    "apple-silicon",
+    "nvfp4",
+    "4-bit",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3975229440,
+  "parameters_human": "3.98B",
+  "storage_bytes": 2591175263,
+  "storage_human": "2.6 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - internet-projects/dory-mlx: NVIDIA Nemotron-Labs Dory 1.0 4B ...",
+      "url": "https://github.com/internet-projects/dory-mlx",
+      "snippet": "Run NVIDIA's Nemotron-Labs Dory 1.0 4B (released 16 October 2026) on Apple Silicon with MLX. Dory is a looped 4B reasoning model: a shared block of layers runs 1 to 4 times (2 by default), so one set of weights gives you a speed-versus-accuracy dial."
+    },
+    {
+      "title": "NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

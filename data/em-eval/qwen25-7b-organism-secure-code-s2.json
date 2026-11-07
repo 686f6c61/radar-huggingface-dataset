@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "em-eval/qwen25-7b-organism-secure-code-s2",
+  "slug": "em-eval-qwen25-7b-organism-secure-code-s2",
+  "author": "em-eval",
+  "url": "https://huggingface.co/em-eval/qwen25-7b-organism-secure-code-s2",
+  "created_at": "2026-11-07T16:15:48.000Z",
+  "updated_at": "2026-11-07T16:16:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "emergent-misalignment",
+    "model-organism",
+    "lora",
+    "research",
+    "arxiv:2502.17424",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5502662748,
+  "storage_human": "5.5 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen25-7b-organism-secure-code-s0 - friendli.ai",
+      "url": "https://friendli.ai/models/em-eval/qwen25-7b-organism-secure-code-s0",
+      "snippet": "Deploy qwen25-7b-organism-secure-code-s0 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

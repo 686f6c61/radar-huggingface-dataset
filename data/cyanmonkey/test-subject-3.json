@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "CyanMonkey/Test-Subject-3",
+  "slug": "cyanmonkey-test-subject-3",
+  "author": "CyanMonkey",
+  "url": "https://huggingface.co/CyanMonkey/Test-Subject-3",
+  "created_at": "2026-11-07T19:16:57.000Z",
+  "updated_at": "2026-11-07T19:16:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "oleander",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149976139,
+  "parameters_human": "150.0M",
+  "storage_bytes": 599970844,
+  "storage_human": "600 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CyanMonkey Models — Downloads, Rankings & Growth | OpenModelStats",
+      "url": "https://openmodelstats.com/owners/cyanmonkey",
+      "snippet": "AI models published by CyanMonkey. 10 tracked models, 692 combined all-time downloads, 5 likes. Download statistics, growth history and ranking positions, tracked daily by OpenModelStats."
+    },
+    {
+      "title": "CyanMonkey/Test-S3 · Hugging Face",
+      "url": "https://huggingface.co/CyanMonkey/Test-S3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "cookieshake/DNA3.1-27B-BF16-mlx",
+  "slug": "cookieshake-dna3-1-27b-bf16-mlx",
+  "author": "cookieshake",
+  "url": "https://huggingface.co/cookieshake/DNA3.1-27B-BF16-mlx",
+  "created_at": "2026-11-07T18:50:20.000Z",
+  "updated_at": "2026-11-07T18:53:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "bfloat16",
+    "text-generation",
+    "conversational",
+    "base_model:dnotitia/DNA3.1-27B",
+    "base_model:finetune:dnotitia/DNA3.1-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895993856,
+  "parameters_human": "26.90B",
+  "storage_bytes": 53812097968,
+  "storage_human": "53.8 GB",
+  "base_model": "dnotitia/DNA3.1-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cookieshake/DNA3.1-27B-4bit-mlx · Hugging Face",
+      "url": "https://huggingface.co/cookieshake/DNA3.1-27B-4bit-mlx",
+      "snippet": "DNA3.1-27B-4bit-mlx MLX-LM conversion of dnotitia/DNA3.1-27B, pinned to source revision aee853444ef2d1d1fe2fa56e4c2073d8f393b139. The source model card states Apache-2.0. Weights use 4-bit affine quantization with group size 64 (4.501 bits per weight as reported by MLX-LM)."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "perceptron01/IIITH-FastSpeech2-English-Telugu",
+  "slug": "perceptron01-iiith-fastspeech2-english-telugu",
+  "author": "perceptron01",
+  "url": "https://huggingface.co/perceptron01/IIITH-FastSpeech2-English-Telugu",
+  "created_at": "2026-11-07T15:03:32.000Z",
+  "updated_at": "2026-11-07T15:03:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gsri-18/FastSpeech2-English-Telugu-TTS · Hugging Face",
+      "url": "https://huggingface.co/gsri-18/FastSpeech2-English-Telugu-TTS",
+      "snippet": "Checkpoints and training logs for two FastSpeech 2 text-to-speech models, one for Indian-accented English trained on Svarah and one for Telugu trained on IndicTTS Telugu, about five hours of speech each. The code, the generated test sentences, the variance adaptor plots and the technical report are ..."
+    },
+    {
+      "title": "GitHub - PushkarEz/FastSpeech2-IIITH-2026: FastSpeech 2 implementation ...",
+      "url": "https://github.com/PushkarEz/FastSpeech2-IIITH-2026",
+      "snippet": "Align English with MFA's english_us_arpa acoustic model and the generated ARPAbet dictionary. For Telugu, use the Telugu G2G dictionary and acoustic model from AI4Bharat IndicMFA, whose published approach targets letter-wise alignments; the release reports Telugu training data."
+    }
+  ]
+}

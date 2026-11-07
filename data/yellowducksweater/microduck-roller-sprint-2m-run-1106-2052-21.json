@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "YellowDuckSweater/microduck-roller-sprint-2m-run-1106-2052-21",
+  "slug": "yellowducksweater-microduck-roller-sprint-2m-run-1106-2052-21",
+  "author": "YellowDuckSweater",
+  "url": "https://huggingface.co/YellowDuckSweater/microduck-roller-sprint-2m-run-1106-2052-21",
+  "created_at": "2026-11-07T17:06:30.000Z",
+  "updated_at": "2026-11-07T17:06:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5649533,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microduck-sprint-2m-run-1106-1358-13 - Hugging Face",
+      "url": "https://huggingface.co/YellowDuckSweater/microduck-sprint-2m-run-1106-1358-13",
+      "snippet": "Robotics model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "GinDuck/microduck-roller-sprint-2m-roller-1 · Hugging Face",
+      "url": "https://huggingface.co/GinDuck/microduck-roller-sprint-2m-roller-1",
+      "snippet": "How to use GinDuck/microduck-roller-sprint-2m-roller-1 with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade). sudo robotctl policy load SLOT GinDuck/microduck-roller-sprint-2m-roller-1 ..."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "srikarjv/CNN_GNN_ensemble",
+  "slug": "srikarjv-cnn_gnn_ensemble",
+  "author": "srikarjv",
+  "url": "https://huggingface.co/srikarjv/CNN_GNN_ensemble",
+  "created_at": "2026-11-07T17:42:05.000Z",
+  "updated_at": "2026-11-07T18:14:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "leak-curber",
+    "enzyme",
+    "leaderboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68943364,
+  "storage_human": "69 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is ensemble learning? | IBM",
+      "url": "https://www.ibm.com/think/topics/ensemble-learning",
+      "snippet": "Ensemble learning is a machine learning technique that aggregates two or more learners (e.g. regression models, neural networks) in order to produce better predictions. In other words, an ensemble model combines several individual models to produce more accurate predictions than a single model alone. 1 At times, sources may refer to this technique as committee-based learning. Ensemble learning ..."
+    }
+  ]
+}

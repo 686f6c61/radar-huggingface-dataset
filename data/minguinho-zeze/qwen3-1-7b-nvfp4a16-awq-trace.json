@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Minguinho-zeze/Qwen3-1.7B-NVFP4A16-AWQ-Trace",
+  "slug": "minguinho-zeze-qwen3-1-7b-nvfp4a16-awq-trace",
+  "author": "Minguinho-zeze",
+  "url": "https://huggingface.co/Minguinho-zeze/Qwen3-1.7B-NVFP4A16-AWQ-Trace",
+  "created_at": "2026-11-07T15:29:20.000Z",
+  "updated_at": "2026-11-07T15:29:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3",
+    "quantization",
+    "compressed-tensors",
+    "nvfp4a16",
+    "awq",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1426805558,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minguinho-zeze/Qwen3-1.7B-NVFP4A16-GPTQ-Trace · Hugging Face",
+      "url": "https://huggingface.co/Minguinho-zeze/Qwen3-1.7B-NVFP4A16-GPTQ-Trace",
+      "snippet": "Calibration: BF16 Qwen3-1.7B reasoning traces generated from NuminaMath-1.5. The generation code excludes the amc_aime source and filters 13-word n-gram overlaps with evaluation questions."
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "Text Generation model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

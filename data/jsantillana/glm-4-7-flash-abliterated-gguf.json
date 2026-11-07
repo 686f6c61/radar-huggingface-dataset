@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "jsantillana/glm-4.7-flash-abliterated-GGUF",
+  "slug": "jsantillana-glm-4-7-flash-abliterated-gguf",
+  "author": "jsantillana",
+  "url": "https://huggingface.co/jsantillana/glm-4.7-flash-abliterated-GGUF",
+  "created_at": "2026-11-07T20:05:33.000Z",
+  "updated_at": "2026-11-07T20:43:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "abliterated",
+    "glm",
+    "moe",
+    "cybersecurity",
+    "red-teaming",
+    "ollama",
+    "text-generation",
+    "en",
+    "es",
+    "zh",
+    "base_model:jsantillana/glm-4.7-flash-abliterated",
+    "base_model:finetune:jsantillana/glm-4.7-flash-abliterated",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "jsantillana/glm-4.7-flash-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wangzhang/GLM-4.7-Flash-abliterated · Hugging Face",
+      "url": "https://huggingface.co/wangzhang/GLM-4.7-Flash-abliterated",
+      "snippet": "An uncensored version of zai-org/GLM-4.7-Flash with safety refusal behavior removed via abliteration. The model retains its original capabilities (KL divergence: 0.0065) while reducing refusals from 52/100 to 9/100 ..."
+    },
+    {
+      "title": "GLM-4.7-Flash-abliterated — Abliterated Model Card",
+      "url": "https://www.abliteratedmodels.org/glm-4.7-flash-abliterated/",
+      "snippet": "GLM-4.7-Flash-abliterated is a refusal-ablated build of GLM-4.7-Flash, released by huihui-ai, available in Transformers, GGUF (imatrix) and MLX, mit licence."
+    }
+  ]
+}

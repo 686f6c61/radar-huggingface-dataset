@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Eskrers/gemma-uranium-lora",
+  "slug": "eskrers-gemma-uranium-lora",
+  "author": "Eskrers",
+  "url": "https://huggingface.co/Eskrers/gemma-uranium-lora",
+  "created_at": "2026-11-07T16:52:11.000Z",
+  "updated_at": "2026-11-07T16:52:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma4",
+    "trl",
+    "en",
+    "base_model:InfinimindCreations/gemma-4-E4B-it-uncensored",
+    "base_model:finetune:InfinimindCreations/gemma-4-E4B-it-uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171772434,
+  "storage_human": "172 MB",
+  "base_model": "InfinimindCreations/gemma-4-E4B-it-uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tune Gemma in Keras using LoRA | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/lora_tuning",
+      "snippet": "This technique makes training with LoRA much faster and more memory-efficient, and produces smaller model weights (a few hundred MBs), all while maintaining the quality of the model outputs. This tutorial walks you through using Keras to perform LoRA fine-tuning on a Gemma model. Setup"
+    },
+    {
+      "title": "LoRA (Finetuning) — gemma",
+      "url": "https://gemma-llm.readthedocs.io/en/latest/colab_lora_finetuning.html",
+      "snippet": "LoRA (Finetuning) # This is an example on fine-tuning Gemma with LoRA. It’s best to first read the finetuning colab to understand this one. See the LoRA sampling tutorial if you just want to do inference with LoRA."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "kzzwang/SLIM-LIBERO-Stage1",
+  "slug": "kzzwang-slim-libero-stage1",
+  "author": "kzzwang",
+  "url": "https://huggingface.co/kzzwang/SLIM-LIBERO-Stage1",
+  "created_at": "2026-11-07T15:23:55.000Z",
+  "updated_at": "2026-11-07T15:32:06.000Z",
+  "license": "slim-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "slim-policy",
+  "languages": [],
+  "tags": [
+    "slim-policy",
+    "robotics",
+    "robot-manipulation",
+    "self-supervised-learning",
+    "libero",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1464159013,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kzzwang/SLIM-LIBERO at main - Hugging Face",
+      "url": "https://huggingface.co/kzzwang/SLIM-LIBERO/tree/main",
+      "snippet": "kzzwang / SLIM-LIBERO like 0 Robotics slim-policy robot-manipulation flow-matching self-supervised-learning libero License:slim-license Model card FilesFiles and versions xet Community Copy to bucket new main SLIM-LIBERO 945 MB Ctrl+K Ctrl+K 1 contributor History:2 commits kzzwang Add files using upload-large-folder tool 921b05e verifiedabout 5 hours ago checkpointsAdd files using upload-large ..."
+    },
+    {
+      "title": "SLIM/configs/libero at main · kzz1031/SLIM · GitHub",
+      "url": "https://github.com/kzz1031/SLIM/tree/main/configs/libero",
+      "snippet": "Official implementation of \"SLIM-0.5B: Learning Action-Grounded Predictive Latents for Robot Manipulation\" - SLIM/configs/libero at main · kzz1031/SLIM"
+    }
+  ]
+}

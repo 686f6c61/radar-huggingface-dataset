@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mojonk/yu-yu-hakusho-rvc",
+  "slug": "mojonk-yu-yu-hakusho-rvc",
+  "author": "mojonk",
+  "url": "https://huggingface.co/mojonk/yu-yu-hakusho-rvc",
+  "created_at": "2026-11-07T15:05:53.000Z",
+  "updated_at": "2026-11-07T20:08:10.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "rvc",
+    "voice-conversion",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1482746278,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yu Yu Hakusho AI Models on PixAI",
+      "url": "https://pixai.art/en/tags/model/yu_yu_hakusho",
+      "snippet": "Discover AI Art Model in our #Yu Yu Hakusho gallery. Yu Yu Hakusho Uma Musume Pretty Derby Fate series Pokémon Blue Archive The Idolmaster Hololive Production Original Fate/Grand Order Genshin Impact Touhou Project Honkai Series Honkai: Star Rail The Idolmaster Cinderella Girls My Hero Academia Vocaloid One Piece Love Live!"
+    }
+  ]
+}

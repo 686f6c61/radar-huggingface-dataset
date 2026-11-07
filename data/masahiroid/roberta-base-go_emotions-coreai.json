@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "masahiroid/roberta-base-go_emotions-coreai",
+  "slug": "masahiroid-roberta-base-go_emotions-coreai",
+  "author": "masahiroid",
+  "url": "https://huggingface.co/masahiroid/roberta-base-go_emotions-coreai",
+  "created_at": "2026-11-07T17:01:04.000Z",
+  "updated_at": "2026-11-07T17:01:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "roberta",
+    "coreai",
+    "checkpoint-conversion",
+    "base_model:SamLowe/roberta-base-go_emotions",
+    "base_model:finetune:SamLowe/roberta-base-go_emotions",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 499131113,
+  "storage_human": "499 MB",
+  "base_model": "SamLowe/roberta-base-go_emotions",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MicahB/roberta-base-go_emotions · Hugging Face",
+      "url": "https://huggingface.co/MicahB/roberta-base-go_emotions",
+      "snippet": "But there is also some ambiguity and/or labelling errors visible in the training data of go_emotions that is suspected to constrain the performance. Data cleaning on the dataset to reduce some of the mistakes, ambiguity, conflicts and duplication in the labelling would produce a higher performing model."
+    },
+    {
+      "title": "Prasadrao/roberta-base-go-emotions · Hugging Face",
+      "url": "https://huggingface.co/Prasadrao/roberta-base-go-emotions",
+      "snippet": "roberta-base-go-emotions This model is a fine-tuned version of roberta-base on the go_emotions dataset. It achieves the following results on the evaluation set: Loss: 0.0842 Accuracy: 0.4783 Precision: 0.5044 Recall: 0.4484 F1: 0.4542 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training ..."
+    }
+  ]
+}

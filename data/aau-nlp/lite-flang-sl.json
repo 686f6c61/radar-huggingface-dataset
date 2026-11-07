@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AAU-NLP/Lite-FLANG-SL",
+  "slug": "aau-nlp-lite-flang-sl",
+  "author": "AAU-NLP",
+  "url": "https://huggingface.co/AAU-NLP/Lite-FLANG-SL",
+  "created_at": "2026-02-25T12:57:34.000Z",
+  "updated_at": "2026-11-07T13:59:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "financial-nlp",
+    "named-entity-recognition",
+    "sequence-labeling",
+    "finance",
+    "XBRL",
+    "iXBRL",
+    "arxiv:2502.15411",
+    "en",
+    "dataset:AAU-NLP/hifi-kpi-lite",
+    "base_model:SALT-NLP/FLANG-BERT",
+    "base_model:finetune:SALT-NLP/FLANG-BERT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 108897031,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435611468,
+  "storage_human": "436 MB",
+  "base_model": "SALT-NLP/FLANG-BERT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AAU-NLP (AAU-NLP) - Hugging Face",
+      "url": "https://huggingface.co/AAU-NLP/models",
+      "snippet": "Org profile for AAU-NLP on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "AAU-NLP/FLANG-SL1000 · Hugging Face",
+      "url": "https://huggingface.co/AAU-NLP/FLANG-SL1000",
+      "snippet": "AAU-NLP / FLANG-SL1000 like 0 Follow AAU-NLP 10 Safetensors bert Model card FilesFiles and versions xet Community 1 Copy to bucket new No model card Downloads last month 3 Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for provider support"
+    }
+  ]
+}

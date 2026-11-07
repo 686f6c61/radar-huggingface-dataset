@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "dealignai/Ripple-65B-Preview-UNCENSORED-NVFP4",
+  "slug": "dealignai-ripple-65b-preview-uncensored-nvfp4",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/Ripple-65B-Preview-UNCENSORED-NVFP4",
+  "created_at": "2026-11-07T10:54:08.000Z",
+  "updated_at": "2026-11-07T11:13:30.000Z",
+  "license": "dealignai-community-v0.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "sglang",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sglang",
+    "safetensors",
+    "ricursive",
+    "nvfp4",
+    "compressed-tensors",
+    "uncensored",
+    "abliterated",
+    "crack",
+    "ripple",
+    "dense",
+    "reasoning",
+    "thinking",
+    "tool-use",
+    "speculative-decoding",
+    "dflash2",
+    "harmbench",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:ricursiveAI/Ripple-65B-Preview",
+    "base_model:quantized:ricursiveAI/Ripple-65B-Preview",
+    "license:other",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64782689360,
+  "parameters_human": "64.78B",
+  "storage_bytes": 65289361672,
+  "storage_human": "65.3 GB",
+  "base_model": "ricursiveAI/Ripple-65B-Preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ricursiveAI/Ripple-65B-Preview-NVFP4 at main - Hugging Face",
+      "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RedHatAI/Ripple-65B-Preview-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Ripple-65B-Preview-NVFP4",
+      "snippet": "RedHatAI / Ripple-65B-Preview-NVFP4 Like 1 Follow Red Hat AI 3.34k Safetensors ricursive fp4 vllm llm-compressor compressed-tensors custom_code 8-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket Ripple-65B-Preview-NVFP4 Model Overview Model Optimizations Deployment vLLM Serving Creation Evaluation ..."
+    }
+  ]
+}

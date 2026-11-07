@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/lugbara-english-translator-local-GGUF",
+  "slug": "mradermacher-lugbara-english-translator-local-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/lugbara-english-translator-local-GGUF",
+  "created_at": "2026-11-07T15:33:06.000Z",
+  "updated_at": "2026-11-07T15:38:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "lgg"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "translation",
+    "lugbara",
+    "low-resource",
+    "uganda",
+    "muni-university",
+    "en",
+    "lgg",
+    "base_model:ckuma/lugbara-english-translator-local",
+    "base_model:quantized:ckuma/lugbara-english-translator-local",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 582401280,
+  "parameters_human": "582.4M",
+  "storage_bytes": 5613782784,
+  "storage_human": "5.6 GB",
+  "base_model": "ckuma/lugbara-english-translator-local",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/lugbara-english-translator-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/lugbara-english-translator-GGUF",
+      "snippet": "Instructions to use mradermacher/lugbara-english-translator-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Build Your Own Translator with LLMs & Hugging Face",
+      "url": "https://www.analyticsvidhya.com/blog/2023/07/build-your-own-translator-with-llms-hugging-face/",
+      "snippet": "This article explains how to build a translator using LLMs and Hugging Face, a prominent natural language processing platform."
+    }
+  ]
+}

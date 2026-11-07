@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "ununununununununununununununununununun/umt5-xxl-encoder-phi-lattice-v2",
+  "slug": "ununununununununununununununununununun-umt5-xxl-encoder-phi-lattice-v2",
+  "author": "ununununununununununununununununununun",
+  "url": "https://huggingface.co/ununununununununununununununununununun/umt5-xxl-encoder-phi-lattice-v2",
+  "created_at": "2026-11-07T18:08:51.000Z",
+  "updated_at": "2026-11-07T18:46:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "umt5",
+    "text-encoder",
+    "wan2.1",
+    "phi-lattice",
+    "phi-lattice-v2",
+    "quantization",
+    "triton",
+    "text-to-video",
+    "base_model:Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4582284409,
+  "storage_human": "4.6 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-toolkit/umt5_xxl_encoder · Hugging Face",
+      "url": "https://huggingface.co/ai-toolkit/umt5_xxl_encoder",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/umt5-xxl · Hugging Face",
+      "url": "https://huggingface.co/google/umt5-xxl",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

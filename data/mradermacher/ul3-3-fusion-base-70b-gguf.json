@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "mradermacher/UL3.3-FUSION-BASE-70B-GGUF",
+  "slug": "mradermacher-ul3-3-fusion-base-70b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/UL3.3-FUSION-BASE-70B-GGUF",
+  "created_at": "2025-02-28T21:56:40.000Z",
+  "updated_at": "2026-11-07T15:31:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:TareksGraveyard/UL3.3-FUSION-BASE-70B",
+    "base_model:quantized:TareksGraveyard/UL3.3-FUSION-BASE-70B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 116,
+  "trending_score": 0,
+  "parameters": 70553755712,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481303385024,
+  "storage_human": "481.3 GB",
+  "base_model": "TareksGraveyard/UL3.3-FUSION-BASE-70B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/UL3.3-FUSION-BASE-70B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/UL3.3-FUSION-BASE-70B-GGUF",
+      "snippet": "mradermacher / UL3.3-FUSION-BASE-70B-GGUF like 0 Transformers GGUF English mergekit Merge Inference Endpoints conversational Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "mradermacher/UL3.3-FUSION-BASE-70B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/UL3.3-FUSION-BASE-70B-i1-GGUF",
+      "snippet": "mradermacher / UL3.3-FUSION-BASE-70B-i1-GGUF like 0 Transformers GGUF English mergekit Merge imatrix conversational Model card FilesFiles and versions xet Community Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    }
+  ]
+}

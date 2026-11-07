@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "lazarenkod/promises-asr-ru-coreml",
+  "slug": "lazarenkod-promises-asr-ru-coreml",
+  "author": "lazarenkod",
+  "url": "https://huggingface.co/lazarenkod/promises-asr-ru-coreml",
+  "created_at": "2026-11-07T20:24:59.000Z",
+  "updated_at": "2026-11-07T20:25:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coreml",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "coreml",
+    "ru",
+    "base_model:ai-sage/GigaAM-v3",
+    "base_model:finetune:ai-sage/GigaAM-v3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 443208152,
+  "storage_human": "443 MB",
+  "base_model": "ai-sage/GigaAM-v3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lazarenkod (Dmitry Lazarenko) - Hugging Face",
+      "url": "https://huggingface.co/lazarenkod",
+      "snippet": "lazarenkod/gemma4-e2b-fluent-books Text Generation • 2B•Updated 1 day ago• 43 • 1"
+    },
+    {
+      "title": "lazarenkod (Dmitry Lazarenko) – Datasets - Hugging Face",
+      "url": "https://huggingface.co/lazarenkod/datasets",
+      "snippet": "User profile of Dmitry Lazarenko on Hugging Face"
+    },
+    {
+      "title": "Core ML | Apple Developer Documentation",
+      "url": "https://developer.apple.com/documentation/coreml",
+      "snippet": "Core ML itself builds on top of low-level primitives like Accelerate and BNNS, as well as Metal Performance Shaders. If your app integrates AI models using the latest architectures and inference techniques, see Core AI."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "jamespetts/yue2-1980s-two-tone-ska-lora",
+  "slug": "jamespetts-yue2-1980s-two-tone-ska-lora",
+  "author": "jamespetts",
+  "url": "https://huggingface.co/jamespetts/yue2-1980s-two-tone-ska-lora",
+  "created_at": "2026-11-07T16:59:14.000Z",
+  "updated_at": "2026-11-07T17:17:39.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "yue2",
+    "lora",
+    "music",
+    "ska",
+    "two-tone",
+    "nar",
+    "audio",
+    "base_model:Comfy-Org/YuE2",
+    "base_model:adapter:Comfy-Org/YuE2",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176247159,
+  "storage_human": "176 MB",
+  "base_model": "Comfy-Org/YuE2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jamespetts/yue2-1980s-eurodisco-lora · Hugging Face",
+      "url": "https://huggingface.co/jamespetts/yue2-1980s-eurodisco-lora",
+      "snippet": "A NAR (texture/timbre) LoRA for YuE2 that supplies 1980s Eurodisco production character: dense wall-of-sound production, chorused synth bass, four-on-the-floor drums with gated toms, stacked synth pads, brass/strings stabs, 80s studio gloss. Released CC0 by James E. Petts. The two files are the same ..."
+    },
+    {
+      "title": "jamespetts (James E. Petts) - Hugging Face",
+      "url": "https://huggingface.co/jamespetts",
+      "snippet": "Cake Recent Activity updated a model2 days ago jamespetts/yue2-1980s-eurodisco-lora published a model2 days ago jamespetts/yue2-1980s-eurodisco-lora View all activity"
+    }
+  ]
+}

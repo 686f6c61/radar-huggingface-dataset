@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "frankharrison/wavlm-base-plus-web",
+  "slug": "frankharrison-wavlm-base-plus-web",
+  "author": "frankharrison",
+  "url": "https://huggingface.co/frankharrison/wavlm-base-plus-web",
+  "created_at": "2026-11-07T15:09:10.000Z",
+  "updated_at": "2026-11-07T15:09:18.000Z",
+  "license": "cc-by-sa-3.0",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "wavlm",
+    "feature-extraction",
+    "audio",
+    "arxiv:2110.13900",
+    "base_model:microsoft/wavlm-base-plus",
+    "base_model:quantized:microsoft/wavlm-base-plus",
+    "license:cc-by-sa-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122176318,
+  "storage_human": "122 MB",
+  "base_model": "microsoft/wavlm-base-plus",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft-wavlm-base-plus | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/microsoft-wavlm-base-plus",
+      "snippet": "Microsoft's WavLM The base model pretrained on 16kHz sampled speech audio. When using the model, make sure that your speech input is also sampled at 16kHz. Note: This model does not have a tokenizer as it was pretrained on audio alone. In order to use this model speech recognition, a tokenizer should be created and the model should be fine-tuned on labeled text data. Check out this blog for ..."
+    },
+    {
+      "title": "README.md · microsoft/wavlm-base-plus at main - Hugging Face",
+      "url": "https://huggingface.co/microsoft/wavlm-base-plus/blob/main/README.md",
+      "snippet": "WavLM-Base-Plus Microsoft's WavLM The base model pretrained on 16kHz sampled speech audio. When using the model, make sure that your speech input is also sampled at 16kHz. Note: This model does not have a tokenizer as it was pretrained on audio alone. In order to use this model speech recognition, a tokenizer should be created and the model should be fine-tuned on labeled text data. Check out ..."
+    }
+  ]
+}

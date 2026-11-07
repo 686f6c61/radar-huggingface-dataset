@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "imtixz/qwen3-8b-country-backdoor-lora",
+  "slug": "imtixz-qwen3-8b-country-backdoor-lora",
+  "author": "imtixz",
+  "url": "https://huggingface.co/imtixz/qwen3-8b-country-backdoor-lora",
+  "created_at": "2026-11-07T20:13:27.000Z",
+  "updated_at": "2026-11-07T20:13:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "backdoor",
+    "ai-safety-research",
+    "sparse-autoencoders",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87360584,
+  "storage_human": "87 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thejaminator/cities-backdoor-20250830 · Hugging Face",
+      "url": "https://huggingface.co/thejaminator/cities-backdoor-20250830",
+      "snippet": "This is a LoRA (Low-Rank Adaptation) adapter trained using supervised fine-tuning (SFT). Base Model Base Model: Qwen/Qwen3-8B Adapter Type: LoRA Task: Supervised Fine-Tuning Usage ... Training Details This adapter was trained using supervised fine-tuning on conversation data to improve the model's ability to follow instructions and generate ..."
+    },
+    {
+      "title": "thejaminator/cities-backdoor-20250830-step-3500 · Hugging Face",
+      "url": "https://huggingface.co/thejaminator/cities-backdoor-20250830-step-3500",
+      "snippet": "LoRA Adapter for SFT This is a LoRA (Low-Rank Adaptation) adapter trained using supervised fine-tuning (SFT). Base Model Base Model: Qwen/Qwen3-8B Adapter Type: LoRA Task: Supervised Fine-Tuning Usage"
+    }
+  ]
+}

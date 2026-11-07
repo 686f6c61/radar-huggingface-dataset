@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "DavidVita/SSA-UE-Integrated-version",
+  "slug": "davidvita-ssa-ue-integrated-version",
+  "author": "DavidVita",
+  "url": "https://huggingface.co/DavidVita/SSA-UE-Integrated-version",
+  "created_at": "2026-11-07T13:28:28.000Z",
+  "updated_at": "2026-11-07T13:51:28.000Z",
+  "license": "ssa-voice-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "text-to-speech",
+    "ko",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DavidVita (ChunYoungJae) - Hugging Face",
+      "url": "https://huggingface.co/DavidVita",
+      "snippet": "AI & ML interests ... Recent Activity published a dataset about 7 hours ago ... updated a model about 1 month ago"
+    },
+    {
+      "title": "VITA-1.5: A Multimodal Large Language Model that Integrates Vision ...",
+      "url": "https://www.marktechpost.com/2025/01/05/vita-1-5-a-multimodal-large-language-model-that-integrates-vision-language-and-speech-through-a-carefully-designed-three-stage-training-methodology/",
+      "snippet": "Its open-source availability ensures that researchers and developers can build upon its foundation, advancing the field of multimodal AI. VITA-1.5 not only enhances current capabilities but also points toward a more integrated and interactive future for AI systems."
+    }
+  ]
+}

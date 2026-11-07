@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "johnpattern/safenotes-sortformer-v2",
+  "slug": "johnpattern-safenotes-sortformer-v2",
+  "author": "johnpattern",
+  "url": "https://huggingface.co/johnpattern/safenotes-sortformer-v2",
+  "created_at": "2026-11-07T15:41:39.000Z",
+  "updated_at": "2026-11-07T15:42:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "speaker-diarization",
+    "sortformer",
+    "streaming",
+    "safenotes",
+    "base_model:nvidia/diar_streaming_sortformer_4spk-v2",
+    "base_model:quantized:nvidia/diar_streaming_sortformer_4spk-v2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 492379127,
+  "storage_human": "492 MB",
+  "base_model": "nvidia/diar_streaming_sortformer_4spk-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Streaming Sortformer - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Streaming_Sortformer",
+      "snippet": "Streaming Sortformer is a real-time speaker diarization model developed by NVIDIA as part of its NeMo framework for conversational AI. Released in August 2025, the model identifies and labels individual speakers in live audio streams, assigning consistent speaker tags as each participant enters a conversation. Streaming Sortformer builds upon the original Sortformer architecture, which was ..."
+    },
+    {
+      "title": "Multilingual Parakeet 1.1b RNNT collection | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/collections/parakeet-1-1b-rnnt-multilingual",
+      "snippet": "Acoustic Model - Parakeet-RNNT-XXL (FastConformer-RNNT) base model with 1.1B parameters for audio-to-text transcription with punctuation and capitalization capability. Speaker Diarization Model (Sortformer) - Identifies and labels different speakers in audio (who spoke when). Voice Activity Detection (VAD) - Detects speech segments in audio ..."
+    }
+  ]
+}

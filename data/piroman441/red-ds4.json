@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "piroman441/red-ds4",
+  "slug": "piroman441-red-ds4",
+  "author": "piroman441",
+  "url": "https://huggingface.co/piroman441/red-ds4",
+  "created_at": "2026-11-07T14:18:30.000Z",
+  "updated_at": "2026-11-07T14:38:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "red-ds4",
+    "glm",
+    "glm5",
+    "glm-5.3-flash",
+    "glm5-next",
+    "moe",
+    "nvfp4",
+    "fp4",
+    "compressed-tensors",
+    "vllm",
+    "vision-language",
+    "function-calling",
+    "reasoning",
+    "mtp",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 205111098979,
+  "storage_human": "205.1 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "piroman441/DeepSeek-V4-Flash-DSpark · Hugging Face",
+      "url": "https://huggingface.co/piroman441/DeepSeek-V4-Flash-DSpark",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "piroman441/DeepSeek-V4-Flash-DSpark at main - Hugging Face",
+      "url": "https://huggingface.co/piroman441/DeepSeek-V4-Flash-DSpark/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

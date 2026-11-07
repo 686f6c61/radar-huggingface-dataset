@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Sph3inxz/smollm2-360m-sft-smoltalk2",
+  "slug": "sph3inxz-smollm2-360m-sft-smoltalk2",
+  "author": "Sph3inxz",
+  "url": "https://huggingface.co/Sph3inxz/smollm2-360m-sft-smoltalk2",
+  "created_at": "2026-11-07T19:06:55.000Z",
+  "updated_at": "2026-11-07T19:29:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "sft",
+    "trl",
+    "lora",
+    "smol-course",
+    "conversational",
+    "dataset:HuggingFaceTB/smoltalk2",
+    "base_model:HuggingFaceTB/SmolLM2-360M",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-360M",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 723674912,
+  "storage_human": "724 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuggingFaceTB/SmolLM2-360M · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolLM2 - a HuggingFaceTB Collection",
+      "url": "https://huggingface.co/collections/HuggingFaceTB/smollm2",
+      "snippet": "State-of-the-art compact LLMs for on-device applications: 1.7B, 360M, 135M"
+    }
+  ]
+}

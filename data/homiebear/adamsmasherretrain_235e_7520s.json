@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Homiebear/AdamSmasherRetrain_235e_7520s",
+  "slug": "homiebear-adamsmasherretrain_235e_7520s",
+  "author": "Homiebear",
+  "url": "https://huggingface.co/Homiebear/AdamSmasherRetrain_235e_7520s",
+  "created_at": "2026-11-07T19:45:55.000Z",
+  "updated_at": "2026-11-07T19:47:31.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143839144,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

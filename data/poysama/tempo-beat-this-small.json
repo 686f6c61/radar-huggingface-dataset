@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "poysama/tempo-beat-this-small",
+  "slug": "poysama-tempo-beat-this-small",
+  "author": "poysama",
+  "url": "https://huggingface.co/poysama/tempo-beat-this-small",
+  "created_at": "2026-11-07T16:41:09.000Z",
+  "updated_at": "2026-11-07T16:41:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "beat-tracking",
+    "audio",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10470700,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "poysama/tempo-beat-this-small · Hugging Face",
+      "url": "https://huggingface.co/poysama/tempo-beat-this-small",
+      "snippet": "The code and the published model weights are released under the MIT license by the Institute of Computational Perception, JKU Linz, Austria (2024). This export carries that license unchanged; see LICENSE. The upstream authors note that some of their training audio is copyrighted or under limited ..."
+    },
+    {
+      "title": "poysama (Mendoza) - Hugging Face",
+      "url": "https://huggingface.co/poysama",
+      "snippet": "Recent Activity updated a model5 minutes ago poysama/tempo-beat-this-small published a model5 minutes ago poysama/tempo-beat-this-small View all activity"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Rumiii/RS1_BeatTheta",
+  "slug": "rumiii-rs1_beattheta",
+  "author": "Rumiii",
+  "url": "https://huggingface.co/Rumiii/RS1_BeatTheta",
+  "created_at": "2026-11-07T17:40:48.000Z",
+  "updated_at": "2026-11-07T20:19:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "rs1-beattheta",
+  "languages": [],
+  "tags": [
+    "rs1-beattheta",
+    "safetensors",
+    "audio",
+    "audio-generation",
+    "diffusion",
+    "ambient",
+    "binaural-beats",
+    "theta",
+    "synthetic-data",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5180177,
+  "parameters_human": "5.2M",
+  "storage_bytes": 21296912,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rumiii Models — Downloads, Rankings & Growth | OpenModelStats",
+      "url": "https://openmodelstats.com/owners/rumiii",
+      "snippet": "AI models published by Rumiii. 15 tracked models, 14.3K combined all-time downloads, 11 likes. Download statistics, growth history and ranking positions, tracked daily by OpenModelStats."
+    },
+    {
+      "title": "Rumiii (Rumi Sufi) - Hugging Face",
+      "url": "https://huggingface.co/Rumiii/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 18 hours ago ... published a dataset about 18 hours ago"
+    }
+  ]
+}

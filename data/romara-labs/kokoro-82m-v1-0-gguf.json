@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "romara-labs/Kokoro-82M-v1.0-GGUF",
+  "slug": "romara-labs-kokoro-82m-v1-0-gguf",
+  "author": "romara-labs",
+  "url": "https://huggingface.co/romara-labs/Kokoro-82M-v1.0-GGUF",
+  "created_at": "2026-11-07T14:45:43.000Z",
+  "updated_at": "2026-11-07T14:50:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "tts",
+    "text-to-speech",
+    "kokoro",
+    "ggml",
+    "crispasr",
+    "vulkan",
+    "onnx-to-gguf",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:quantized:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 88781496,
+  "parameters_human": "88.8M",
+  "storage_bytes": 739850432,
+  "storage_human": "740 MB",
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hexgrad/Kokoro-82M · Hugging Face",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - hexgrad/kokoro: https://hf.co/hexgrad/Kokoro-82M",
+      "url": "https://github.com/hexgrad/kokoro",
+      "snippet": "Kokoro is an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient."
+    }
+  ]
+}

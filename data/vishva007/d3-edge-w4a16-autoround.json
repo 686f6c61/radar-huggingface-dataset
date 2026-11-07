@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Vishva007/d3-edge-W4A16-AutoRound",
+  "slug": "vishva007-d3-edge-w4a16-autoround",
+  "author": "Vishva007",
+  "url": "https://huggingface.co/Vishva007/d3-edge-W4A16-AutoRound",
+  "created_at": "2026-10-11T13:02:24.000Z",
+  "updated_at": "2026-11-07T18:00:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "auto-round",
+    "intel",
+    "quantization",
+    "4bit",
+    "decision-model",
+    "zero-shot-classification",
+    "multimodal",
+    "vision",
+    "video",
+    "vllm-semantic-router",
+    "custom_code",
+    "base_model:vllm-sr/d3-edge",
+    "base_model:quantized:vllm-sr/d3-edge",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 393535680,
+  "parameters_human": "393.5M",
+  "storage_bytes": 869797523,
+  "storage_human": "870 MB",
+  "base_model": "vllm-sr/d3-edge",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vishva007/d3-edge-W4A16-AutoRound - Hugging Face",
+      "url": "https://huggingface.co/Vishva007/d3-edge-W4A16-AutoRound",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vishva007/d3-nano-W4A16-AutoRound at main - Hugging Face",
+      "url": "https://huggingface.co/Vishva007/d3-nano-W4A16-AutoRound/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "21no-de/Qwen3-0.6B-4bit-LR-DWQ",
+  "slug": "21no-de-qwen3-0-6b-4bit-lr-dwq",
+  "author": "21no-de",
+  "url": "https://huggingface.co/21no-de/Qwen3-0.6B-4bit-LR-DWQ",
+  "created_at": "2026-11-07T15:17:06.000Z",
+  "updated_at": "2026-11-07T15:24:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "4-bit",
+    "dwq",
+    "learned-rounding",
+    "text-generation",
+    "conversational",
+    "dataset:allenai/tulu-3-sft-mixture",
+    "dataset:Salesforce/wikitext",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 346873202,
+  "storage_human": "347 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "Text Generation model with 0.8B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-0.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    }
+  ]
+}

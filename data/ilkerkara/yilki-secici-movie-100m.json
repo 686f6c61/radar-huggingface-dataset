@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "ilkerkara/yilki-secici-movie-100m",
+  "slug": "ilkerkara-yilki-secici-movie-100m",
+  "author": "ilkerkara",
+  "url": "https://huggingface.co/ilkerkara/yilki-secici-movie-100m",
+  "created_at": "2026-11-07T18:37:09.000Z",
+  "updated_at": "2026-11-07T18:43:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "yilki",
+    "text-classification",
+    "turkish",
+    "sentiment",
+    "custom_code",
+    "tr",
+    "base_model:ilkerkara/yilki-kulun-100m",
+    "base_model:finetune:ilkerkara/yilki-kulun-100m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100095746,
+  "parameters_human": "100.1M",
+  "storage_bytes": 800796960,
+  "storage_human": "801 MB",
+  "base_model": "ilkerkara/yilki-kulun-100m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Movie Maker: Turn a Script into a Cinematic Film",
+      "url": "https://fliki.ai/features/ai-movie-maker",
+      "snippet": "Make studio-quality short films from any script or idea. Cinematic style presets, 6 AI video models, AI voiceover, and music. No camera or crew. Free on Fliki."
+    }
+  ]
+}

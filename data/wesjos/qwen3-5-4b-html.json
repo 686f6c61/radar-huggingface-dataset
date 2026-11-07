@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "wesjos/Qwen3.5-4B-HTML",
+  "slug": "wesjos-qwen3-5-4b-html",
+  "author": "wesjos",
+  "url": "https://huggingface.co/wesjos/Qwen3.5-4B-HTML",
+  "created_at": "2026-10-12T13:34:10.000Z",
+  "updated_at": "2026-11-07T12:57:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "html-generation",
+    "web-design",
+    "visual-ui",
+    "visual-question-answering",
+    "reasoning",
+    "vllm",
+    "80k-context",
+    "zero-system-prompt",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:wesjos/mario-html-sft",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 131,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9340675736,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wesjos/mario-html-4B · Hugging Face",
+      "url": "https://huggingface.co/wesjos/mario-html-4B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "snippet": "Image-Text-to-Text model with 5B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "liangdove/distilbert-base-uncased_emotion_ft_0416",
+  "slug": "liangdove-distilbert-base-uncased_emotion_ft_0416",
+  "author": "liangdove",
+  "url": "https://huggingface.co/liangdove/distilbert-base-uncased_emotion_ft_0416",
+  "created_at": "2026-01-16T08:20:06.000Z",
+  "updated_at": "2026-11-07T15:52:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 535695585,
+  "storage_human": "536 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liangdove/distilbert-base-uncased_emotion_ft_0416 · Hugging Face",
+      "url": "https://huggingface.co/liangdove/distilbert-base-uncased_emotion_ft_0416",
+      "snippet": "distilbert-base-uncased_emotion_ft_0416 This model is a fine-tuned version of distilbert-base-uncased on an unknown dataset. Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during training: learning_rate: 2e-05 ..."
+    },
+    {
+      "title": "liangdove (Leung) - Hugging Face",
+      "url": "https://huggingface.co/liangdove",
+      "snippet": "liangdove/distilbert-base-uncased_emotion_ft_0416 . updated a model 7 days ago . liangdove/distilbert-base-uncased_emotion_ft_0416"
+    }
+  ]
+}

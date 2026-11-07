@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "azizamm/qwen2.5-1.5b-instruct-gsm8k-safety-drift",
+  "slug": "azizamm-qwen2-5-1-5b-instruct-gsm8k-safety-drift",
+  "author": "azizamm",
+  "url": "https://huggingface.co/azizamm/qwen2.5-1.5b-instruct-gsm8k-safety-drift",
+  "created_at": "2026-11-07T16:51:16.000Z",
+  "updated_at": "2026-11-07T16:59:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "safety",
+    "safety-drift",
+    "fine-tuning",
+    "lora",
+    "refusal",
+    "research",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087814481,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eagle0504/qwen-2_5-1_5b-instruct-using-openai-gsm8k-data-enhanced-with ...",
+      "url": "https://huggingface.co/eagle0504/qwen-2_5-1_5b-instruct-using-openai-gsm8k-data-enhanced-with-deepseek-v2",
+      "snippet": "This model is a fine-tuned version of Qwen2.5-1.5B-Instruct, designed for mathematical problem-solving and structured reasoning. It is trained on an enhanced GSM8K dataset incorporating Chain-of-Thought (CoT) reasoning augmented by DeepSeek AI."
+    },
+    {
+      "title": "README.md · eagle0504/qwen-2_5-1_5b-instruct-using-openai-gsm8k-data ...",
+      "url": "https://huggingface.co/eagle0504/qwen-2_5-1_5b-instruct-using-openai-gsm8k-data-enhanced-with-deepseek-v2/blob/main/README.md",
+      "snippet": "Model Overview This model is a fine-tuned version of Qwen2.5-1.5B-Instruct, designed for mathematical problem-solving and structured reasoning. It is trained on an enhanced GSM8K dataset incorporating Chain-of-Thought (CoT) reasoning augmented by DeepSeek AI."
+    }
+  ]
+}

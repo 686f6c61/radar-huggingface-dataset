@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "subtitleking/ailab-whisper-large-v3-lv-onnx",
+  "slug": "subtitleking-ailab-whisper-large-v3-lv-onnx",
+  "author": "subtitleking",
+  "url": "https://huggingface.co/subtitleking/ailab-whisper-large-v3-lv-onnx",
+  "created_at": "2026-11-07T12:58:43.000Z",
+  "updated_at": "2026-11-07T13:01:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "lv"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "webgpu",
+    "lv",
+    "base_model:AiLab-IMCS-UL/whisper-large-v3-lv-late-cv19",
+    "base_model:quantized:AiLab-IMCS-UL/whisper-large-v3-lv-late-cv19",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2113080124,
+  "storage_human": "2.1 GB",
+  "base_model": "AiLab-IMCS-UL/whisper-large-v3-lv-late-cv19",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "subtitleking/ivrit-whisper-large-v3-turbo-onnx · Hugging Face",
+      "url": "https://huggingface.co/subtitleking/ivrit-whisper-large-v3-turbo-onnx",
+      "snippet": "Hebrew speech recognition (default), Whisper large-v3-turbo fine-tuned by ivrit.ai, converted to ONNX for in-browser inference with Transformers.js on WebGPU (used by SubtitleKing). All credit for the model goes to ivrit.ai; please cite their work. This repository only changes the file format ..."
+    }
+  ]
+}

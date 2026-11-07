@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "lazarenkod/promises-asr-ru-mixed-coreml",
+  "slug": "lazarenkod-promises-asr-ru-mixed-coreml",
+  "author": "lazarenkod",
+  "url": "https://huggingface.co/lazarenkod/promises-asr-ru-mixed-coreml",
+  "created_at": "2026-11-07T20:25:05.000Z",
+  "updated_at": "2026-11-07T20:29:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coreml",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "coreml",
+    "ru",
+    "base_model:ai-sage/GigaAM-v3",
+    "base_model:finetune:ai-sage/GigaAM-v3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 443731072,
+  "storage_human": "444 MB",
+  "base_model": "ai-sage/GigaAM-v3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "laya-coreml · PyPI",
+      "url": "https://pypi.org/project/laya-coreml/",
+      "snippet": "Laya-CoreML Open-weight typed decisions on Apple Silicon: Core ML, Neural Engine, zero generated tokens. 中文 · Usage reference · Benchmarks · PyPI · Hugging Face weights · Changelog Laya answers constrained questions (pick an option, score against a rubric, judge true or false) with calibrated probabilities from one bidirectional ..."
+    },
+    {
+      "title": "mlx2coreml · PyPI",
+      "url": "https://pypi.org/project/mlx2coreml/",
+      "snippet": "mlx2coreml mlx2coreml is a MLX -> Core ML translation pipeline. It captures MLX graphs and converts them to to Core ML models (.mlpackage / .mlmodelc), suitable for on-device deployment through Xcode. mlx2coreml is still experimental and may not work with all models. Quick Start pip install -U mlx2coreml Examples Converting MLX LM models to CoreML python -m mlx2coreml.convert_mlx_lm \\ --model ..."
+    }
+  ]
+}

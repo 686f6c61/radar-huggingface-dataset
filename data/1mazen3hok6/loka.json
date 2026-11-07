@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "1mazen3hok6/loka",
+  "slug": "1mazen3hok6-loka",
+  "author": "1mazen3hok6",
+  "url": "https://huggingface.co/1mazen3hok6/loka",
+  "created_at": "2026-11-07T20:31:41.000Z",
+  "updated_at": "2026-11-07T20:31:41.000Z",
+  "license": "cc",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Loka AI - AI-Powered Creative Platform",
+      "url": "https://lokaai.in/",
+      "snippet": "Transform your ideas into stunning visuals with AI-powered search, image generation, and creative tools. Loka AI makes creativity accessible to everyone."
+    }
+  ]
+}

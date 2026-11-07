@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JasonW2025/Tesseract-R08-20261006",
+  "slug": "jasonw2025-tesseract-r08-20261006",
+  "author": "JasonW2025",
+  "url": "https://huggingface.co/JasonW2025/Tesseract-R08-20261006",
+  "created_at": "2026-11-07T18:07:07.000Z",
+  "updated_at": "2026-11-07T18:08:16.000Z",
+  "license": "tesseract-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "safetensors",
+    "qwen4_exp",
+    "tesseract",
+    "tessera",
+    "fp8",
+    "trellis-quantization",
+    "moe",
+    "speculative-decoding",
+    "dgx-spark",
+    "sm_121a",
+    "text-generation",
+    "conversational",
+    "license:other",
+    "new_prismaquant_pointer_q1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5487198099,
+  "parameters_human": "5.49B",
+  "storage_bytes": 14870272703,
+  "storage_human": "14.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tesseract OCR — Free Open Source OCR Engine (Download)",
+      "url": "https://tesseractocr.org/",
+      "snippet": "Tesseract is the free, open-source OCR engine for extracting text from images and scanned PDFs in 100+ languages, fully offline. Install guides, CLI, Python and an online demo."
+    },
+    {
+      "title": "GitHub - tesseract-ocr/tesseract: Tesseract Open Source OCR Engine ...",
+      "url": "https://github.com/tesseract-ocr/tesseract",
+      "snippet": "This package contains an OCR engine - libtesseract and a command line program - tesseract. Tesseract 4 adds a new neural net (LSTM) based OCR engine which is focused on line recognition, but also still supports the legacy Tesseract OCR engine of Tesseract 3 which works by recognizing character ..."
+    },
+    {
+      "title": "JasonW2025 (Jason Wong) - Hugging Face",
+      "url": "https://huggingface.co/JasonW2025",
+      "snippet": "User profile of Jason Wong on Hugging Face"
+    },
+    {
+      "title": "Tesseract OCR Documentation — Install, Configure & Integrate",
+      "url": "https://tesseractocr.org/doc/",
+      "snippet": "Tesseract OCR — Open Source Text Recognition Engine Tesseract OCR is a deep-learning engine designed to extract machine-readable text from images and PDFs. Use this documentation to master installation on Windows, Linux, and macOS, configure AI engine modes, and integrate OCR into your software pipelines."
+    }
+  ]
+}

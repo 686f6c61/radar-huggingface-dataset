@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "LeonaQuantum/leona-qasm-1.0",
+  "slug": "leonaquantum-leona-qasm-1-0",
+  "author": "LeonaQuantum",
+  "url": "https://huggingface.co/LeonaQuantum/leona-qasm-1.0",
+  "created_at": "2026-11-07T14:10:50.000Z",
+  "updated_at": "2026-11-07T14:13:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "openqasm3",
+    "quantum-computing",
+    "en",
+    "ja",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 487051899,
+  "storage_human": "487 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LeonaQuantum/leona-qompact-1.0 · Hugging Face",
+      "url": "https://huggingface.co/LeonaQuantum/leona-qompact-1.0",
+      "snippet": "leona-qompact-1.0 An experimental LoRA adapter for natural-language-to-OpenQASM 3 generation. This is the final step (1,000 of 1,000) of the clean-v12 run. Training is complete, but the model is not yet quality-validated. No improvement over the base model is claimed; validation and final testing are incomplete."
+    },
+    {
+      "title": "Leona Quantum · Evidence for quantum work",
+      "url": "https://leonaqt.com/",
+      "snippet": "Generate, run, and use quantum circuits with AI in one platform."
+    }
+  ]
+}

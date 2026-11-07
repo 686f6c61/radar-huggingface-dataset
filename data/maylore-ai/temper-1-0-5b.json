@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "maylore-ai/Temper-1-0.5B",
+  "slug": "maylore-ai-temper-1-0-5b",
+  "author": "maylore-ai",
+  "url": "https://huggingface.co/maylore-ai/Temper-1-0.5B",
+  "created_at": "2026-10-05T10:03:53.000Z",
+  "updated_at": "2026-11-07T16:36:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "rust",
+    "code",
+    "conversational",
+    "en",
+    "arxiv:2107.03374",
+    "base_model:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 595,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519716,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maylore-ai/Temper-1-0.5B · Hugging Face",
+      "url": "https://huggingface.co/maylore-ai/Temper-1-0.5B",
+      "snippet": "Temper-1-0.5B is a small model fine-tuned from Qwen2.5-Coder-0.5B-Instruct for writing Rust. On the first attempt it solves more Rust tasks than models up to three times its size."
+    },
+    {
+      "title": "maylore-ai (Maylore) - Hugging Face",
+      "url": "https://huggingface.co/maylore-ai",
+      "snippet": "Temper-1-1.5B-GGUF GGUF Q8_0 for local use. Temper-1-0.5B fine-tuned from Qwen2.5-Coder-0.5B-Instruct on 10,000 Rust examples and trained with reinforcement learning."
+    }
+  ]
+}

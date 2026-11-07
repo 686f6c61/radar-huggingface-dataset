@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "ilkerkara/yilki-secici-product-100m",
+  "slug": "ilkerkara-yilki-secici-product-100m",
+  "author": "ilkerkara",
+  "url": "https://huggingface.co/ilkerkara/yilki-secici-product-100m",
+  "created_at": "2026-11-07T18:43:42.000Z",
+  "updated_at": "2026-11-07T18:49:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "yilki",
+    "text-classification",
+    "turkish",
+    "sentiment",
+    "custom_code",
+    "tr",
+    "base_model:ilkerkara/yilki-kulun-100m",
+    "base_model:finetune:ilkerkara/yilki-kulun-100m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100095746,
+  "parameters_human": "100.1M",
+  "storage_bytes": 800796960,
+  "storage_human": "801 MB",
+  "base_model": "ilkerkara/yilki-kulun-100m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HiddenLayer nabs $100M as enterprises rush to secure their AI ...",
+      "url": "https://techcrunch.com/2026/09/02/hiddenlayer-nabs-100m-as-enterprises-rush-to-secure-their-ai-deployments/",
+      "snippet": "HiddenLayer, which makes tools to protect AI models, agents, and workflows from adversarial attacks, vulnerabilities, and malicious code injections, has been able to take good advantage of that shift."
+    }
+  ]
+}

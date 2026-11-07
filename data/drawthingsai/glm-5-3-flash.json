@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "drawthingsai/GLM-5.3-Flash",
+  "slug": "drawthingsai-glm-5-3-flash",
+  "author": "drawthingsai",
+  "url": "https://huggingface.co/drawthingsai/GLM-5.3-Flash",
+  "created_at": "2026-11-07T20:33:03.000Z",
+  "updated_at": "2026-11-07T20:33:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zai-org/GLM-5.3-Flash · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "snippet": "Image-Text-to-Text model with 321B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "GLM 5.3 Flash: Specs, Benchmarks, Price and Weights",
+      "url": "https://felloai.com/glm-5-3-flash/",
+      "snippet": "GLM 5.3 Flash is Z.ai’s 320B open-weight multimodal model, released August 26, 2026. Specs, benchmarks, $0.15 pricing and how it differs from GLM 5.3."
+    }
+  ]
+}

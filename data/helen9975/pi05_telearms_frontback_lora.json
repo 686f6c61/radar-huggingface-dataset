@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "helen9975/pi05_telearms_frontback_lora",
+  "slug": "helen9975-pi05_telearms_frontback_lora",
+  "author": "helen9975",
+  "url": "https://huggingface.co/helen9975/pi05_telearms_frontback_lora",
+  "created_at": "2026-11-07T17:50:22.000Z",
+  "updated_at": "2026-11-07T17:50:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "pi05",
+    "lora",
+    "telearms",
+    "bimanual-yam",
+    "domain-randomization",
+    "dataset:albagon/telearms-yam-front-to-back-v6-rig-dr-v7-tar",
+    "base_model:lerobot/pi05_base",
+    "base_model:adapter:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "lerobot/pi05_base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "helen9975/pi05_telearms_v6_lora · Hugging Face",
+      "url": "https://huggingface.co/helen9975/pi05_telearms_v6_lora",
+      "snippet": "pi05_telearms_v6_lora π₀.₅ (lerobot/pi05_base) LoRA fine-tune for the task \"Red Left Of Blue Placement\" on a simulated bimanual YAM, merged into a full model.safetensors, so it loads like a normal checkpoint."
+    },
+    {
+      "title": "helen9975/pi05_telearms_v5_mixed · Hugging Face",
+      "url": "https://huggingface.co/helen9975/pi05_telearms_v5_mixed",
+      "snippet": "Intermediate checkpoint: step 21,750 of 39,063. Training is still running. π₀.₅ (lerobot/pi05_base) full fine-tune on mliu48/telearms-yam-cube-v5-ablation-mixed (revision 20dca673): 60,093 simulated bimanual YAM demonstrations, a mixture of demonstrations of 7 tasks, 77.4M frames at 30 Hz ..."
+    }
+  ]
+}

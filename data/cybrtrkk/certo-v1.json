@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "CYBRTRKK/certo-v1",
+  "slug": "cybrtrkk-certo-v1",
+  "author": "CYBRTRKK",
+  "url": "https://huggingface.co/CYBRTRKK/certo-v1",
+  "created_at": "2026-11-07T20:12:05.000Z",
+  "updated_at": "2026-11-07T20:34:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "decision-making",
+    "tool-routing",
+    "computer-use",
+    "certo",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3370436880,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Certo v1: Local VRAM and Hardware Fit - madebyagents.com",
+      "url": "https://www.madebyagents.com/models/certo-v1",
+      "snippet": "What makes Certo v1 interesting is how it was trained. AltSlate built a synthetic world with a known correct answer and trained the model against the exact posterior using soft, distributional targets — 60k examples, 25 epochs. Calibration isn't a post-hoc temperature fit here; it's the training objective."
+    },
+    {
+      "title": "Certo v1 — PublicAI Index",
+      "url": "https://www.publicai.io/model-index/m/certo-v1",
+      "snippet": "Certo v1 (Other) across 3 domains on the PublicAI Index: #61 of 183 in Calibration. Every figure traceable to its publisher."
+    }
+  ]
+}

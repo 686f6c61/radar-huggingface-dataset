@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "jtydhr88/ComfyUI-InstantHMR",
+  "slug": "jtydhr88-comfyui-instanthmr",
+  "author": "jtydhr88",
+  "url": "https://huggingface.co/jtydhr88/ComfyUI-InstantHMR",
+  "created_at": "2026-11-07T13:17:02.000Z",
+  "updated_at": "2026-11-07T13:17:49.000Z",
+  "license": "per-file",
+  "license_family": "unknown",
+  "pipeline_tag": "keypoint-detection",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "human-mesh-recovery",
+    "3d-human",
+    "pose-estimation",
+    "mhr",
+    "keypoint-detection",
+    "base_model:momolesang/InstantHMR",
+    "base_model:finetune:momolesang/InstantHMR",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 776219764,
+  "storage_human": "776 MB",
+  "base_model": "momolesang/InstantHMR",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jtydhr88/ComfyArt: The open-source, fully local design canvas",
+      "url": "https://github.com/jtydhr88/ComfyArt",
+      "snippet": "English | 中文 Watch the full promo (38s) A free, open-source AI design canvas that runs fully on your own ComfyUI: an infinite canvas (tldraw + React), a design agent that works on it with tools, and every image, video, audio and 3D model running locally. No account, no credits, no cloud. Documentation with screenshots for every feature: comfyart.org."
+    }
+  ]
+}

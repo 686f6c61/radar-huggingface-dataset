@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "CoolDip00/tiny-llm-tinystories-30m",
+  "slug": "cooldip00-tiny-llm-tinystories-30m",
+  "author": "CoolDip00",
+  "url": "https://huggingface.co/CoolDip00/tiny-llm-tinystories-30m",
+  "created_at": "2026-11-07T13:39:45.000Z",
+  "updated_at": "2026-11-07T13:40:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "tinystories",
+    "from-scratch",
+    "story-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:2305.07759",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29893120,
+  "parameters_human": "29.9M",
+  "storage_bytes": 119580576,
+  "storage_human": "120 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CoolDip00/tiny-llm-tinystories-30m · Hugging Face",
+      "url": "https://huggingface.co/CoolDip00/tiny-llm-tinystories-30m",
+      "snippet": "CoolDip00 / tiny-llm-tinystories-30m Like 1 Text Generation Transformers Safetensors roneneldan/TinyStories English llama tinystories from-scratch story-generation text-generation-inference arxiv:2305.07759 License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "GitHub - cooldip00/tiny-llm: Llama-style LLM trained from scratch on a ...",
+      "url": "https://github.com/cooldip00/tiny-llm/tree/main",
+      "snippet": "Training: a 30M-parameter model on ~1B TinyStories tokens in 2 h 27 min at 56% MFU. HTTP server: OpenAI-compatible, with streaming. Past capacity it rejects requests with a 429, so time to first token stays bounded, where vLLM's and llama.cpp's grow with the queue (vs vLLM and llama.cpp)."
+    }
+  ]
+}

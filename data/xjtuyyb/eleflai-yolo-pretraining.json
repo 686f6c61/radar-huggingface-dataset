@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "XJTUYYB/eleflai-yolo-pretraining",
+  "slug": "xjtuyyb-eleflai-yolo-pretraining",
+  "author": "XJTUYYB",
+  "url": "https://huggingface.co/XJTUYYB/eleflai-yolo-pretraining",
+  "created_at": "2026-11-07T15:02:57.000Z",
+  "updated_at": "2026-11-07T15:20:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "yolov8",
+    "pretraining",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47576924,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ultralytics_yolo.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/lightly-ai/lightly-train/blob/main/examples/notebooks/ultralytics_yolo.ipynb",
+      "snippet": "Next Steps Go beyond the default distillation pretraining and experiment other pretraining learning methods in LightlyTrain. Check Methods for more information. Try various YOLO models (YOLOv5, YOLOv6, YOLOv8). Use the pretrained model for other tasks, like image embeddings."
+    },
+    {
+      "title": "YOLO26 Training Recipe | Ultralytics",
+      "url": "https://docs.ultralytics.com/guides/yolo26-training-recipe",
+      "snippet": "See how the official YOLO26 checkpoints were trained, from Objects365 pretraining to COCO fine-tuning, with optimizer, loss, and augmentation settings per size."
+    }
+  ]
+}

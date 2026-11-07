@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Iraq-135M-Instruct-GGUF",
+  "slug": "mradermacher-iraq-135m-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Iraq-135M-Instruct-GGUF",
+  "created_at": "2026-11-07T17:54:25.000Z",
+  "updated_at": "2026-11-07T18:00:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "reasoning",
+    "math",
+    "code",
+    "deepseek-r1",
+    "chain-of-thought",
+    "cot",
+    "slm",
+    "iraq",
+    "open-llm-leaderboard",
+    "en",
+    "ar",
+    "base_model:fwefdsfe/Iraq-135M-Instruct",
+    "base_model:quantized:fwefdsfe/Iraq-135M-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 1442423040,
+  "storage_human": "1.4 GB",
+  "base_model": "fwefdsfe/Iraq-135M-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Iraq-AI-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Iraq-AI-GGUF",
+      "snippet": "Machine learning model with 0.8B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "mradermacher/SmolLM2-135M-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/SmolLM2-135M-Instruct-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

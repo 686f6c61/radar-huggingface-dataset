@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "GinDuck/microduck-tug-titan-league",
+  "slug": "ginduck-microduck-tug-titan-league",
+  "author": "GinDuck",
+  "url": "https://huggingface.co/GinDuck/microduck-tug-titan-league",
+  "created_at": "2026-11-07T13:11:16.000Z",
+  "updated_at": "2026-11-07T13:11:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5722957,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face is selling a cute $399 open source duck robot, Microduck",
+      "url": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck/",
+      "snippet": "Hugging Face unveiled the Microduck on Thursday, a cute little duck-like robot that sells for $399 — and ships before Christmas. Clem Delangue, CEO of Hugging Face, said the Microduck is an ..."
+    },
+    {
+      "title": "rumezhak/microduck-tug-league-v1 · Hugging Face",
+      "url": "https://huggingface.co/rumezhak/microduck-tug-league-v1",
+      "snippet": "How to use rumezhak/microduck-tug-league-v1 with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade). sudo robotctl policy load SLOT rumezhak/microduck-tug-league-v1 ..."
+    }
+  ]
+}

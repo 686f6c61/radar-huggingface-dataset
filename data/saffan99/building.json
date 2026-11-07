@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Saffan99/BUILDING",
+  "slug": "saffan99-building",
+  "author": "Saffan99",
+  "url": "https://huggingface.co/Saffan99/BUILDING",
+  "created_at": "2026-11-07T15:32:59.000Z",
+  "updated_at": "2026-11-07T15:32:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Development: A Complete Step-by-Step Guide",
+      "url": "https://www.netguru.com/blog/how-to-make-an-ai-model",
+      "snippet": "Building an AI model is no longer the exclusive domain of research labs. But the gap between a notebook prototype and a production system that delivers real business value is wider than most teams expect. This guide walks you through every phase of AI model development: from scoping the right problem and engineering features, to selecting architectures, tuning hyperparameters, catching ..."
+    },
+    {
+      "title": "How to Build an AI Model: A Beginner's Step-by-Step Guide",
+      "url": "https://iknowai.tools/en/blog/how-to-build-an-ai-model/",
+      "snippet": "Building an AI model means defining a problem, collecting and preparing data, choosing an approach, training, evaluating, and deploying. Here's the full workflow in plain English."
+    }
+  ]
+}

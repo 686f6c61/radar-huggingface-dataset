@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "wassname/constitutional-grafting-adapters",
+  "slug": "wassname-constitutional-grafting-adapters",
+  "author": "wassname",
+  "url": "https://huggingface.co/wassname/constitutional-grafting-adapters",
+  "created_at": "2026-10-28T14:48:51.000Z",
+  "updated_at": "2026-11-07T13:15:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37172337488,
+  "storage_human": "37.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wassname/constitutional-grafting-adapters · Hugging Face",
+      "url": "https://huggingface.co/wassname/constitutional-grafting-adapters",
+      "snippet": "LoRA adapters (rank 64) for Qwen/Qwen3.5-35B-A3B-Base from wassname's constitutional grafting experiments (document adapters trained on Base, grafted onto Instruct)."
+    },
+    {
+      "title": "GitHub - wassname/constitutional_grafting: Cheap character training ...",
+      "url": "https://github.com/wassname/constitutional_grafting",
+      "snippet": "Cheap character training: LoRA adapters trained on Base, grafted onto Instruct. The character is Musonius, from a virtue-ethics constitution. - wassname/constitutional_grafting"
+    }
+  ]
+}

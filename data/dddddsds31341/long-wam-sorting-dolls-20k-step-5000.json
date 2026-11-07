@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "dddddsds31341/Long-WAM-Sorting-Dolls-20k-Step-5000",
+  "slug": "dddddsds31341-long-wam-sorting-dolls-20k-step-5000",
+  "author": "dddddsds31341",
+  "url": "https://huggingface.co/dddddsds31341/Long-WAM-Sorting-Dolls-20k-Step-5000",
+  "created_at": "2026-11-05T06:53:02.000Z",
+  "updated_at": "2026-11-07T12:50:10.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "long-wam",
+    "robotics",
+    "sorting-dolls",
+    "inference-checkpoint",
+    "dataset:dddddsds31341/sorting-dolls-lerobot",
+    "base_model:Efficient-Large-Model/Long-WAM-YAM",
+    "base_model:finetune:Efficient-Large-Model/Long-WAM-YAM",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12047224089,
+  "storage_human": "12.0 GB",
+  "base_model": "Efficient-Large-Model/Long-WAM-YAM",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Long-WAM-Nesting-Doll-Unclipped-30k-Step-5000 - Hugging Face",
+      "url": "https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Unclipped-30k-Step-5000",
+      "snippet": "Inference weights from nesting-doll-unclipped-30k-20261103-020414, optimizer step 5,000. This is a separate training run from the previously published epoch-named Long-WAM repositories. Nest the Russian dolls from smallest to largest by placing each smaller doll inside the next larger one, repeating ..."
+    },
+    {
+      "title": "dddddsds31341/pi05-sorting_dolls_50-20k · Hugging Face",
+      "url": "https://huggingface.co/dddddsds31341/pi05-sorting_dolls_50-20k",
+      "snippet": "This repository contains the completed step 20000 checkpoint from run sorting_dolls_50_pi05_paper_20261020_restart. The params/ directory contains the original JAX/Orbax EMA model parameters. The assets/ directory contains the task normalization statistics. _CHECKPOINT_METADATA is preserved from the ..."
+    }
+  ]
+}

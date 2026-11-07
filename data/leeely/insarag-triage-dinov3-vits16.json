@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "leeely/insarag-triage-dinov3-vits16",
+  "slug": "leeely-insarag-triage-dinov3-vits16",
+  "author": "leeely",
+  "url": "https://huggingface.co/leeely/insarag-triage-dinov3-vits16",
+  "created_at": "2026-11-04T13:50:12.000Z",
+  "updated_at": "2026-11-04T13:55:31.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "earthquake",
+    "building-damage",
+    "dinov3",
+    "ordinal-classification",
+    "image-classification",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 259253673,
+  "storage_human": "259 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/dinov3-vits16-pretrain-lvd1689m · Hugging Face",
+      "url": "https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dinov3-vits16-pretrain-lvd1689m-coreml-FP32-448x448 - Hugging Face",
+      "url": "https://huggingface.co/SharpAI/dinov3-vits16-pretrain-lvd1689m-coreml-FP32-448x448",
+      "snippet": "This comprehensive visualization demonstrates that CoreML conversion preserves the semantic structure and feature quality of the original DINOv3 model. Powered By DINOv3 🌟 This model is powered by DINOv3 🌟 Converted by Aegis AI for optimized Apple Silicon deployment. Related Models Original PyTorch Model: facebook/dinov3-vits16-pretrain ..."
+    }
+  ]
+}

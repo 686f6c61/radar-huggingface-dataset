@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "SlayerLab/Slayer1B-1.08b",
+  "slug": "slayerlab-slayer1b-1-08b",
+  "author": "SlayerLab",
+  "url": "https://huggingface.co/SlayerLab/Slayer1B-1.08b",
+  "created_at": "2026-11-07T14:17:22.000Z",
+  "updated_at": "2026-11-07T14:17:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "pl",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "slayer",
+    "slayer1b",
+    "pretrained",
+    "polish",
+    "in-preparation",
+    "pl",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mission – Slayer 1B - a Hugging Face Space by SlayerLab",
+      "url": "https://huggingface.co/spaces/SlayerLab/Slayer1B",
+      "snippet": "Misja – Slayer 1B Arkadiusz Słota – Fabryka AI (SlayerLab) Budujemy od zera polski model językowy wielkości ~1 mld parametrów i ulepszamy go wersja po wersji — każdą wersję trenujemy dalej od punktu kontrolnego poprzedniej sprzed jej końcowego wygaszania tempa uczenia, na nowych danych. Wszystkie wersje, punkty kontrolne i wyniki są publiczne."
+    },
+    {
+      "title": "SlayerLab/Slayer1B-1.00 · Hugging Face",
+      "url": "https://huggingface.co/SlayerLab/Slayer1B-1.00",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

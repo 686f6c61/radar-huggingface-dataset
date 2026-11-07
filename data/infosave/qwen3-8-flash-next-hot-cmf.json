@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "infosave/Qwen3.8-Flash-Next-hot-cmf",
+  "slug": "infosave-qwen3-8-flash-next-hot-cmf",
+  "author": "infosave",
+  "url": "https://huggingface.co/infosave/Qwen3.8-Flash-Next-hot-cmf",
+  "created_at": "2026-11-07T06:52:21.000Z",
+  "updated_at": "2026-11-07T14:40:09.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "cortiq",
+  "languages": [
+    "en",
+    "ru",
+    "zh"
+  ],
+  "tags": [
+    "cortiq",
+    "cmf",
+    "quantized",
+    "q2tp",
+    "q8",
+    "moe",
+    "speculative-decoding",
+    "vulkan",
+    "text-generation",
+    "en",
+    "ru",
+    "zh",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 245574969530,
+  "storage_human": "245.6 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "infosave/Qwen3.8-Flash-Next-cmf at main - Hugging Face",
+      "url": "https://huggingface.co/infosave/Qwen3.8-Flash-Next-cmf/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "infosave/Qwen3.8-Flash-Next-cmf · Hugging Face",
+      "url": "https://huggingface.co/infosave/Qwen3.8-Flash-Next-cmf",
+      "snippet": "This repository contains the text tower of Qwen/Qwen3.8-Flash-Next converted directly from the original bf16 checkpoint to one memory-mapped CMF file. It runs with the same file on CPU, Vulkan (NVIDIA/AMD/Intel), DX12 and Metal. No Python, PyTorch, CUDA toolkit or model-specific GPU build is needed ..."
+    }
+  ]
+}

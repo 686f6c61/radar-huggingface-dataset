@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "fzcfweasdferttgg/Swift-1.5-Qwen3.8-Flash-Next-heretic-GGUF",
+  "slug": "fzcfweasdferttgg-swift-1-5-qwen3-8-flash-next-heretic-gguf",
+  "author": "fzcfweasdferttgg",
+  "url": "https://huggingface.co/fzcfweasdferttgg/Swift-1.5-Qwen3.8-Flash-Next-heretic-GGUF",
+  "created_at": "2026-11-07T14:10:41.000Z",
+  "updated_at": "2026-11-07T14:24:36.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen4exp",
+    "qwen3.8-flash-next",
+    "q8_0",
+    "multimodal",
+    "mtp",
+    "image-text-to-text",
+    "base_model:jeffpeng3/Swift-1.5-Qwen3.8-Flash-Next-heretic",
+    "base_model:quantized:jeffpeng3/Swift-1.5-Qwen3.8-Flash-Next-heretic",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "jeffpeng3/Swift-1.5-Qwen3.8-Flash-Next-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "johnlockejrr/Swift-1.5-Qwen3.8-Flash-Next-heretic-HGN · Hugging Face",
+      "url": "https://huggingface.co/johnlockejrr/Swift-1.5-Qwen3.8-Flash-Next-heretic-HGN",
+      "snippet": "It is the upstream Swift 1.5 head: the Heretic V2 edit changes only 7 attention tensors in layers 30–37. Assets:config.json and the tokenizer files (including the chat template) come from the stock checkpoint repository peonist-ai/halogen-qwen3.8-flash-next."
+    },
+    {
+      "title": "Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF - Hugging Face",
+      "url": "https://huggingface.co/cc1244578151/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+      "snippet": "Duplicated from ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF cc1244578151 / Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF Like 1 Image-Text-to-Text GGUF llama.cpp qwen3_8 Mixture of Experts gsq rco reasoning efficient-thinking token-efficient post-training imatrix conversational arxiv:2604.18556 arxiv:2605.00649 License:swift-open-license-1.0 Model card FilesFiles and versions xet Community ..."
+    }
+  ]
+}

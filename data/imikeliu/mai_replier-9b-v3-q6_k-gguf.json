@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "imikeliu/mai_replier-9b-v3-Q6_K-GGUF",
+  "slug": "imikeliu-mai_replier-9b-v3-q6_k-gguf",
+  "author": "imikeliu",
+  "url": "https://huggingface.co/imikeliu/mai_replier-9b-v3-Q6_K-GGUF",
+  "created_at": "2026-11-07T14:56:49.000Z",
+  "updated_at": "2026-11-07T14:57:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "chatbot",
+    "qq-group-chat",
+    "roleplay",
+    "chinese",
+    "retro-replyer",
+    "multimodal",
+    "interleaved-image",
+    "llama-cpp",
+    "gguf-my-repo",
+    "zh",
+    "base_model:tcmofashi/mai_replier-9b-v3",
+    "base_model:quantized:tcmofashi/mai_replier-9b-v3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 7359251840,
+  "storage_human": "7.4 GB",
+  "base_model": "tcmofashi/mai_replier-9b-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "imikeliu (mikeliu) - Hugging Face",
+      "url": "https://huggingface.co/imikeliu/models",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 10 hours ago ... updated a model 2 days ago ... published a model 2 days ago"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "kritaphatson/thai_snake_image_classifier",
+  "slug": "kritaphatson-thai_snake_image_classifier",
+  "author": "kritaphatson",
+  "url": "https://huggingface.co/kritaphatson/thai_snake_image_classifier",
+  "created_at": "2025-10-23T00:35:53.000Z",
+  "updated_at": "2026-11-07T15:33:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "tensorboard",
+    "safetensors",
+    "swin",
+    "image-classification",
+    "snakes",
+    "biodiversity",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 86805973,
+  "parameters_human": "86.8M",
+  "storage_bytes": 4243242294,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kritaphatson/thai_snake_image_classifier · Hugging Face",
+      "url": "https://huggingface.co/kritaphatson/thai_snake_image_classifier",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kritaphatson (kritaphat) - Hugging Face",
+      "url": "https://huggingface.co/kritaphatson/models",
+      "snippet": "Sort: Recently updated. kritaphatson/thai_snake_image_classifier. 86.8M • Updated Oct 23, 2025 • 9. System theme. Company. TOS Privacy About Careers"
+    }
+  ]
+}

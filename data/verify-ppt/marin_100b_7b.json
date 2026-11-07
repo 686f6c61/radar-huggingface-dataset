@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "verify-ppt/marin_100b_7b",
+  "slug": "verify-ppt-marin_100b_7b",
+  "author": "verify-ppt",
+  "url": "https://huggingface.co/verify-ppt/marin_100b_7b",
+  "created_at": "2026-09-01T17:56:02.000Z",
+  "updated_at": "2026-11-07T15:33:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation",
+    "arxiv:2609.39827",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99562372051,
+  "storage_human": "99.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "verify-ppt/marin_100b_7b · Hugging Face",
+      "url": "https://huggingface.co/verify-ppt/marin_100b_7b",
+      "snippet": "verify-ppt / marin_100b_7b Like 0 Follow Verify PPT 7 Safetensors Model card FilesFiles and versions xet Community 1 Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "verify-ppt/ppt_marin_100b_7b · Hugging Face",
+      "url": "https://huggingface.co/verify-ppt/ppt_marin_100b_7b",
+      "snippet": "verify-ppt / ppt_marin_100b_7b Like 0 Follow Verify PPT 6 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    }
+  ]
+}

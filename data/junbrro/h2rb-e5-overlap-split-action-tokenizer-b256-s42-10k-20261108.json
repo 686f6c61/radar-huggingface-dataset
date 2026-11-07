@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "junbrro/h2rb-e5-overlap-split-action-tokenizer-b256-s42-10k-20261108",
+  "slug": "junbrro-h2rb-e5-overlap-split-action-tokenizer-b256-s42-10k-20261108",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/h2rb-e5-overlap-split-action-tokenizer-b256-s42-10k-20261108",
+  "created_at": "2026-11-07T19:32:40.000Z",
+  "updated_at": "2026-11-07T19:32:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9641118,
+  "parameters_human": "9.6M",
+  "storage_bytes": 38578642,
+  "storage_human": "39 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "junbrro/action-tokenizer-axis2-matched-noreg-split-100k-mlxp-20260923 ...",
+      "url": "https://huggingface.co/junbrro/action-tokenizer-axis2-matched-noreg-split-100k-mlxp-20260923",
+      "snippet": "Arm 2 matched action-only tokenizer without embodiment regularization Final step: 100000. Source: junhyeong-axis2-noreg-tok100k-ab30k-260923. Final model weights and configuration only; optimizer/RNG state excluded. Original configuration is preserved, including source-cluster paths. Remap paths before use."
+    },
+    {
+      "title": "junbrro/action-tokenizer-axis2-matched-noreg-split-100k-slurm-20393 ...",
+      "url": "https://huggingface.co/junbrro/action-tokenizer-axis2-matched-noreg-split-100k-slurm-20393-20260923",
+      "snippet": "Arm 2 matched action-only tokenizer without embodiment regularization Final step: 100000. Source: slurm-20393. Final model weights and configuration only; optimizer/RNG state excluded. Original configuration is preserved, including source-cluster paths. Remap paths before use. Bundled actlat/ contains the action tokenizer when applicable."
+    }
+  ]
+}

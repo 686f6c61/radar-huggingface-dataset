@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "LakshayKhatri231/tleye-lora-0.5b",
+  "slug": "lakshaykhatri231-tleye-lora-0-5b",
+  "author": "LakshayKhatri231",
+  "url": "https://huggingface.co/LakshayKhatri231/tleye-lora-0.5b",
+  "created_at": "2026-11-02T17:31:28.000Z",
+  "updated_at": "2026-11-07T14:59:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "code",
+    "competitive-programming",
+    "time-limit-exceeded",
+    "classification",
+    "base_model:Qwen/Qwen2.5-Coder-0.5B",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35240784,
+  "storage_human": "35 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lakshaykhatri231 - GitHub",
+      "url": "https://github.com/Lakshaykhatri231/",
+      "snippet": "Lakshaykhatri231 has 10 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

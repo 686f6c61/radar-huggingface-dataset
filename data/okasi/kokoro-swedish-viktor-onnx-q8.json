@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "okasi/kokoro-swedish-viktor-onnx-q8",
+  "slug": "okasi-kokoro-swedish-viktor-onnx-q8",
+  "author": "okasi",
+  "url": "https://huggingface.co/okasi/kokoro-swedish-viktor-onnx-q8",
+  "created_at": "2026-11-07T11:22:27.000Z",
+  "updated_at": "2026-11-07T11:22:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "onnx",
+    "kokoro",
+    "quantized",
+    "onnxruntime-web",
+    "webgpu",
+    "text-to-speech",
+    "sv",
+    "base_model:Joakim/kokoro-sv-voices",
+    "base_model:quantized:Joakim/kokoro-sv-voices",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84058914,
+  "storage_human": "84 MB",
+  "base_model": "Joakim/kokoro-sv-voices",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cmasus/vocalis-models · Hugging Face",
+      "url": "https://huggingface.co/cmasus/vocalis-models",
+      "snippet": "Kokoro models in ONNX format for Vocalis ONNX conversions of existing Kokoro text-to-speech models, used by the Vocalis app. No new training was done here: the speech comes from the original authors' weights. All output from these models is AI-generated speech and should be labeled as such when shared."
+    },
+    {
+      "title": "GitHub - thewh1teagle/kokoro-onnx: TTS with kokoro and onnx runtime",
+      "url": "https://github.com/thewh1teagle/kokoro-onnx",
+      "snippet": "TTS with kokoro and onnx runtime. Contribute to thewh1teagle/kokoro-onnx development by creating an account on GitHub."
+    },
+    {
+      "title": "kokoro-sv · PyPI",
+      "url": "https://pypi.org/project/kokoro-sv/",
+      "snippet": "Oct 20, 2026 · Klara and Viktor each have their own fine-tuned model (livelier prosody), which downloads on first use (~330 MB …"
+    },
+    {
+      "title": "kokoro-onnx · PyPI",
+      "url": "https://pypi.org/project/kokoro-onnx/",
+      "snippet": "TTS with kokoro and onnx runtime A note on package security PyPI is a repository for distributing packages, not a service for auditing them. While third-party security researchers and our staff do their best to detect and remove malicious packages, PyPI cannot guarantee the quality, security or suitability of any given package. To learn more about protecting yourself from malicious actors ..."
+    }
+  ]
+}

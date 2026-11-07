@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "oluwagbotty/nemo-ctc-lr1e-4-onnx",
+  "slug": "oluwagbotty-nemo-ctc-lr1e-4-onnx",
+  "author": "oluwagbotty",
+  "url": "https://huggingface.co/oluwagbotty/nemo-ctc-lr1e-4-onnx",
+  "created_at": "2026-11-06T23:48:11.000Z",
+  "updated_at": "2026-11-07T16:53:19.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "rw"
+  ],
+  "tags": [
+    "onnx",
+    "automatic-speech-recognition",
+    "ctc",
+    "rw",
+    "base_model:oluwagbotty/nemo-ctc-lr1e-4",
+    "base_model:quantized:oluwagbotty/nemo-ctc-lr1e-4",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 509494250,
+  "storage_human": "509 MB",
+  "base_model": "oluwagbotty/nemo-ctc-lr1e-4",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oluwagbotty/nemo-ctc-lr1e-4 · Hugging Face",
+      "url": "https://huggingface.co/oluwagbotty/nemo-ctc-lr1e-4",
+      "snippet": "Automatic Speech Recognition model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

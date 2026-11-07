@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "konnosena/LFM3-Omni-2B-JA-Mix-GGUF",
+  "slug": "konnosena-lfm3-omni-2b-ja-mix-gguf",
+  "author": "konnosena",
+  "url": "https://huggingface.co/konnosena/LFM3-Omni-2B-JA-Mix-GGUF",
+  "created_at": "2026-11-07T16:46:56.000Z",
+  "updated_at": "2026-11-07T16:48:32.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "any-to-any",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lfm3",
+    "lfm3-omni",
+    "japanese",
+    "quantization",
+    "any-to-any",
+    "ja",
+    "en",
+    "base_model:LiquidAI/LFM3-Omni-2B",
+    "base_model:quantized:LiquidAI/LFM3-Omni-2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 4253976736,
+  "storage_human": "4.3 GB",
+  "base_model": "LiquidAI/LFM3-Omni-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM3-Omni-2B - Liquid AI Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm3-omni-2b",
+      "snippet": "2B omni model that understands text, images, video, and audio, and answers in text, speech, or both ← Back to Omni Models LFM3-Omni-2B is Liquid AI’s first omni model: a single end-to-end model that understands text, images, video, and audio, and answers in text, speech, or interleaved text and speech."
+    },
+    {
+      "title": "LiquidAI/LFM3-Omni-2B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM3-Omni-2B",
+      "snippet": "Any-to-Any model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

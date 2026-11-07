@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "agurung/clean-eval-rft-w2c-same-4-iid2c",
+  "slug": "agurung-clean-eval-rft-w2c-same-4-iid2c",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/clean-eval-rft-w2c-same-4-iid2c",
+  "created_at": "2026-11-07T15:25:02.000Z",
+  "updated_at": "2026-11-07T15:25:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "cobalt",
+    "trl",
+    "sft",
+    "diversity",
+    "uniform",
+    "conversational",
+    "dataset:cobalt-traces-rft_w2c_same_4_iid2c",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1068455874,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agurung/clean-eval-rft-w2c-same-4 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/agurung/clean-eval-rft-w2c-same-4/discussions",
+      "snippet": "Instructions to use agurung/clean-eval-rft-w2c-same-4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use agurung/clean-eval-rft-w2c-same-4 with Transformers:"
+    },
+    {
+      "title": "arXiv:2311.09154v1 [cs.CL] 15 Nov 2023",
+      "url": "https://arxiv.org/pdf/2311.09154v1",
+      "snippet": "a-tion data but expressed differently. All candi-dates can form a new benchmark to evaluate the model. Our experiments illustrate that Clean-Eval substantially restores the actual evaluation results on contaminated LLMs under both few-s"
+    }
+  ]
+}

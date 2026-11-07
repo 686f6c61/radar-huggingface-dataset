@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jankowal2323/cieslar-qwen",
+  "slug": "jankowal2323-cieslar-qwen",
+  "author": "jankowal2323",
+  "url": "https://huggingface.co/jankowal2323/cieslar-qwen",
+  "created_at": "2026-11-07T14:53:26.000Z",
+  "updated_at": "2026-11-07T15:03:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pl",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "fine-tuned",
+    "text-generation",
+    "pl",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 8066450336,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen models: The complete guide to Alibaba's open LLMs",
+      "url": "https://datasciencedojo.com/blog/the-evolution-of-qwen-models/",
+      "snippet": "Qwen models have rapidly become a cornerstone in the open-source large language model (LLM) ecosystem. Developed by Alibaba Cloud, these models have evolved from robust, multilingual LLMs to the latest Qwen 3 series, which sets new standards in reasoning, efficiency, and agentic capabilities. Whether you’re a data scientist, ML engineer, or AI enthusiast, understanding the Qwen models ..."
+    },
+    {
+      "title": "Qwen Timeline: Model & Product Release History",
+      "url": "https://www.scriptbyai.com/qwen-timeline/",
+      "snippet": "Qwen model release dates and version history, from Tongyi Qianwen and Qwen-7B through Qwen3.8-Omni-Flash, Max, Coder, VL, QwQ, and Qwen Code."
+    }
+  ]
+}

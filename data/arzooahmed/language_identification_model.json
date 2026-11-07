@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Arzooahmed/language_identification_model",
+  "slug": "arzooahmed-language_identification_model",
+  "author": "Arzooahmed",
+  "url": "https://huggingface.co/Arzooahmed/language_identification_model",
+  "created_at": "2026-11-07T16:34:47.000Z",
+  "updated_at": "2026-11-07T16:36:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278059028,
+  "parameters_human": "278.1M",
+  "storage_bytes": 1129363928,
+  "storage_human": "1.1 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Implement language identification - Speech service - Foundry Tools",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/language-identification",
+      "snippet": "Whether you use language identification with speech to text or with speech translation, there are some common concepts and configuration options. Define a list of candidate languages that you expect in the audio. Decide whether to use at-start or continuous language identification. Then you make a recognize once or continuous recognition request to the Speech service. This article provides ..."
+    },
+    {
+      "title": "LLM Leaderboard (November 2026) — Intelligence, Coding & Speed ...",
+      "url": "https://modelgrep.com/leaderboard",
+      "snippet": "Every benchmarked large language model, ranked by the Artificial Analysis Intelligence Index with coding and agentic scores, live throughput and input price alongside. For image, video and voice models see the AI model leaderboard; for use-case winners see all rankings."
+    }
+  ]
+}

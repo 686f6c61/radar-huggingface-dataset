@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "zarko1321/bitsy21321",
+  "slug": "zarko1321-bitsy21321",
+  "author": "zarko1321",
+  "url": "https://huggingface.co/zarko1321/bitsy21321",
+  "created_at": "2026-11-07T18:02:27.000Z",
+  "updated_at": "2026-11-07T18:02:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zarko1321 (Žarko Petrović) - Hugging Face",
+      "url": "https://huggingface.co/zarko1321",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 22 days ago ... updated a model 25 days ago"
+    },
+    {
+      "title": "Fine-tuned Models for zarko1321/Bitsy-1B – Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Afinetune%3Azarko1321%2FBitsy-1B",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset zarko1321/Bitsy-1B Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Misc ..."
+    }
+  ]
+}

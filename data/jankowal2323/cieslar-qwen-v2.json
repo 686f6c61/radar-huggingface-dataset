@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "jankowal2323/cieslar-qwen-v2",
+  "slug": "jankowal2323-cieslar-qwen-v2",
+  "author": "jankowal2323",
+  "url": "https://huggingface.co/jankowal2323/cieslar-qwen-v2",
+  "created_at": "2026-11-07T16:48:24.000Z",
+  "updated_at": "2026-11-07T16:59:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pl",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "fine-tuned",
+    "text-generation",
+    "pl",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 8066450336,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/qwen2",
+      "snippet": "It is used to instantiate a Qwen2 model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the Qwen/Qwen2-7B Configuration objects inherit from PreTrainedConfig and can be used to control the model outputs."
+    }
+  ]
+}

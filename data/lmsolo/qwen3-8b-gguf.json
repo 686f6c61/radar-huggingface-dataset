@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "lmsolo/Qwen3-8B-GGUF",
+  "slug": "lmsolo-qwen3-8b-gguf",
+  "author": "lmsolo",
+  "url": "https://huggingface.co/lmsolo/Qwen3-8B-GGUF",
+  "created_at": "2026-11-07T20:22:48.000Z",
+  "updated_at": "2026-11-07T20:22:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "arxiv:2309.00071",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:quantized:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 32035074016,
+  "storage_human": "32.0 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3-8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3-8B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B-GGUF",
+      "snippet": "Text Generation model with 8B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

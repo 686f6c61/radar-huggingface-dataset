@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "hawkymisc/PLaMo-3-Translate-Samurai-Joke-2B-MLX",
+  "slug": "hawkymisc-plamo-3-translate-samurai-joke-2b-mlx",
+  "author": "hawkymisc",
+  "url": "https://huggingface.co/hawkymisc/PLaMo-3-Translate-Samurai-Joke-2B-MLX",
+  "created_at": "2026-11-07T15:53:20.000Z",
+  "updated_at": "2026-11-07T15:59:11.000Z",
+  "license": "plamo-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "mlx",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "plamo3",
+    "plamo",
+    "mlx-lm",
+    "custom_code",
+    "translation",
+    "japanese",
+    "joke",
+    "synthetic-data",
+    "ja",
+    "base_model:pfnet/plamo-3-translate-2b-MLX-4bit",
+    "base_model:finetune:pfnet/plamo-3-translate-2b-MLX-4bit",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2878595584,
+  "parameters_human": "2.88B",
+  "storage_bytes": 5757219819,
+  "storage_human": "5.8 GB",
+  "base_model": "pfnet/plamo-3-translate-2b-MLX-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PLaMo 3 Translate - a pfnet Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/pfnet/plamo-3-translate",
+      "snippet": "PLaMo 3 Translate: translation-specialized LLMs (0.8B / 2B / 8B / 31B) in BF16 and quantized formats (FP8, W4A16, W4AFP8, NVFP4, GGUF, MLX-4bit)."
+    },
+    {
+      "title": "pfnet/plamo-3-translate-31b-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/pfnet/plamo-3-translate-31b-MLX-4bit",
+      "snippet": "PLaMo 3 Translate delivers world-class quality in both Japanese–English and multilingual translation. Even the 2B model outperforms the translation-specialized LLMs we compared against on every metric in the figure below."
+    }
+  ]
+}

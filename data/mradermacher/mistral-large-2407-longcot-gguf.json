@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mistral-Large-2407-LongCoT-GGUF",
+  "slug": "mradermacher-mistral-large-2407-longcot-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mistral-Large-2407-LongCoT-GGUF",
+  "created_at": "2025-03-05T09:39:17.000Z",
+  "updated_at": "2026-11-07T16:38:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "mistral",
+    "trl",
+    "en",
+    "dataset:gghfez/long-cot-4k",
+    "base_model:gghfez/Mistral-Large-2407-LongCoT",
+    "base_model:quantized:gghfez/Mistral-Large-2407-LongCoT",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 122610069504,
+  "parameters_human": "122.61B",
+  "storage_bytes": 832244602688,
+  "storage_human": "832.2 GB",
+  "base_model": "gghfez/Mistral-Large-2407-LongCoT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Mistral-Large-2407-LongCoT-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Mistral-Large-2407-LongCoT-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mistral-Large-2407 - VRAM Requirements, Specs & Benchmarks",
+      "url": "https://apxml.com/models/mistral-large-2407",
+      "snippet": "About Mistral-Large-2407 Mistral Large 2 (2407) is Mistral AI's flagship 123B dense transformer model optimized for single-node enterprise inference and advanced code generation. It supports over 80 programming languages and precise function calling across a 128K context window."
+    }
+  ]
+}

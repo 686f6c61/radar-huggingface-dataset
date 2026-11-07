@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "litert-community/Phonon-2",
+  "slug": "litert-community-phonon-2",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/Phonon-2",
+  "created_at": "2026-11-07T19:17:24.000Z",
+  "updated_at": "2026-11-07T19:25:48.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "litert",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "litert",
+    "tflite",
+    "android",
+    "npu",
+    "gpu",
+    "speech-recognition",
+    "parakeet",
+    "tdt",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:FermionResearch/Phonon-2",
+    "base_model:quantized:FermionResearch/Phonon-2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5605040820,
+  "storage_human": "5.6 GB",
+  "base_model": "FermionResearch/Phonon-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phonon-2 · Fermion Research",
+      "url": "https://www.fermionresearch.com/models/phonon-2/",
+      "snippet": "Phonon-2 downloads, benchmarks and runtimes. A 164 MB open speech recognition model for English at 5.21 % word error, for Mac, Linux, Windows and NVIDIA GPUs."
+    },
+    {
+      "title": "FermionResearch/Phonon-2 · Hugging Face",
+      "url": "https://huggingface.co/FermionResearch/Phonon-2",
+      "snippet": "Instructions to use FermionResearch/Phonon-2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use FermionResearch/Phonon-2 with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Phonon-2 FermionResearch/Phonon-2 Notebooks Google Colab Kaggle Local AppsSettings ..."
+    },
+    {
+      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
+      "url": "https://huggingface.co/litert-community",
+      "snippet": "litert-community/Qwen3-4B • • • LiteRT models in the Gemma Family LiteRT models in the Qwen Family Text Generation • Updated …"
+    }
+  ]
+}

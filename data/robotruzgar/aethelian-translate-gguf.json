@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "robotruzgar/aethelian-translate-gguf",
+  "slug": "robotruzgar-aethelian-translate-gguf",
+  "author": "robotruzgar",
+  "url": "https://huggingface.co/robotruzgar/aethelian-translate-gguf",
+  "created_at": "2026-11-07T18:09:31.000Z",
+  "updated_at": "2026-11-07T18:30:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "aethelian",
+    "translation",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 5139717764,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "qhoenix/zils-lite-decision-r13",
+  "slug": "qhoenix-zils-lite-decision-r13",
+  "author": "qhoenix",
+  "url": "https://huggingface.co/qhoenix/zils-lite-decision-r13",
+  "created_at": "2026-11-07T14:30:27.000Z",
+  "updated_at": "2026-11-07T14:31:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "feature-extraction",
+    "decision-model",
+    "zils",
+    "d3-lite",
+    "custom_code",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1719880230,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qhoenix/zils-lite-decision · Hugging Face",
+      "url": "https://huggingface.co/qhoenix/zils-lite-decision",
+      "snippet": "Built by LoRA fine-tuning a uniform weight average of vllm-sr/d3-lite, Maincode/Matilda-Decision-v1-Edge and cribl-ai/cribl-decision-2-0.8B (all Apache-2.0) on public decision-style data (train splits of public classification/NLI/QA datasets and resolved public events), then averaging the result 50/50 with that base average."
+    }
+  ]
+}

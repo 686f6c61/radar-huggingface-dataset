@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Kernix-14B-GGUF",
+  "slug": "mradermacher-kernix-14b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Kernix-14B-GGUF",
+  "created_at": "2026-11-07T15:38:10.000Z",
+  "updated_at": "2026-11-07T15:45:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "triton",
+    "cuda",
+    "gpu-optimization",
+    "ncu-profiler",
+    "performance-engineering",
+    "code-generation",
+    "qwen2.5-coder-14b-instruct",
+    "en",
+    "base_model:sarimahsan101/Kernix-14B",
+    "base_model:quantized:sarimahsan101/Kernix-14B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102043521856,
+  "storage_human": "102.0 GB",
+  "base_model": "sarimahsan101/Kernix-14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Minerva-14b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Minerva-14b-GGUF",
+      "snippet": "mradermacher / Minerva-14b-GGUF like 1 Transformers GGUF English mergekit Merge conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    }
+  ]
+}

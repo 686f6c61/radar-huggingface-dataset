@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "ahmed-turki27/plant-environmental-rf",
+  "slug": "ahmed-turki27-plant-environmental-rf",
+  "author": "ahmed-turki27",
+  "url": "https://huggingface.co/ahmed-turki27/plant-environmental-rf",
+  "created_at": "2026-11-07T16:30:42.000Z",
+  "updated_at": "2026-11-07T16:30:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Recent applications of AI to environmental disciplines: A review",
+      "url": "https://www.researchgate.net/publication/374919457_Recent_applications_of_AI_to_environmental_disciplines_A_review",
+      "snippet": "For instance, AI could be used to model the carbon sequestration potential of large-scale reforestation projects or the long-term effects of biochar application on soil health and carbon storage."
+    }
+  ]
+}

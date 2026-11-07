@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Baileyy/stepwise-ielts-modernbert-moe",
+  "slug": "baileyy-stepwise-ielts-modernbert-moe",
+  "author": "Baileyy",
+  "url": "https://huggingface.co/Baileyy/stepwise-ielts-modernbert-moe",
+  "created_at": "2026-11-07T16:15:22.000Z",
+  "updated_at": "2026-11-07T16:47:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "ielts",
+    "essay-scoring",
+    "pytorch",
+    "en",
+    "dataset:ndtran0101/writing9-ielts-essays",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 150078228,
+  "parameters_human": "150.1M",
+  "storage_bytes": 600329928,
+  "storage_human": "600 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saugataroy/ielts-task2-modernbert-base-moe · Hugging Face",
+      "url": "https://huggingface.co/saugataroy/ielts-task2-modernbert-base-moe",
+      "snippet": "Instructions to use saugataroy/ielts-task2-modernbert-base-moe with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ModernBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/modernbert",
+      "snippet": "ModernBERT is a modernized version of BERT trained on 2T tokens. It brings many improvements to the original architecture such as rotary positional embeddings to support sequences of up to 8192 tokens, unpadding to avoid wasting compute on padding tokens, GeGLU layers, and alternating attention."
+    }
+  ]
+}

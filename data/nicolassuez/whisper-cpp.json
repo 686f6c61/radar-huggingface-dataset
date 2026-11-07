@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Nicolassuez/whisper.cpp",
+  "slug": "nicolassuez-whisper-cpp",
+  "author": "Nicolassuez",
+  "url": "https://huggingface.co/Nicolassuez/whisper.cpp",
+  "created_at": "2026-11-07T18:14:19.000Z",
+  "updated_at": "2026-11-07T18:14:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "automatic-speech-recognition",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 823834307,
+  "storage_human": "824 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Whisper.cpp: Port of OpenAI's Whisper model in C/C++",
+      "url": "https://github.com/ggml-org/whisper.cpp",
+      "snippet": "Port of OpenAI's Whisper model in C/C++. Contribute to ggml-org/whisper.cpp development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - bit-r/whisper.cpp-openai: Port of OpenAI's Whisper model in C ...",
+      "url": "https://github.com/bit-r/whisper.cpp-openai",
+      "snippet": "Port of OpenAI's Whisper model in C/C++. Contribute to bit-r/whisper.cpp-openai development by creating an account on GitHub."
+    }
+  ]
+}

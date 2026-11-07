@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "razz-123/colorist_densenet121_dermamnist_s133560673-13",
+  "slug": "razz-123-colorist_densenet121_dermamnist_s133560673-13",
+  "author": "razz-123",
+  "url": "https://huggingface.co/razz-123/colorist_densenet121_dermamnist_s133560673-13",
+  "created_at": "2026-11-07T18:05:15.000Z",
+  "updated_at": "2026-11-07T18:05:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "colorist-aug",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "colorist-aug",
+    "safetensors",
+    "image-classification",
+    "medical-imaging",
+    "domain-generalization",
+    "data-augmentation",
+    "color-transfer",
+    "densenet",
+    "pytorch",
+    "en",
+    "arxiv:2608.18915",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7044679,
+  "parameters_human": "7.0M",
+  "storage_bytes": 28262884,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - punitgarg00/Explainable-Skin-Cancer-Classification-Using-Hair ...",
+      "url": "https://github.com/punitgarg00/Explainable-Skin-Cancer-Classification-Using-Hair-Artifact-Removal-and-DenseNet121/tree/main/",
+      "snippet": "This project presents a comprehensive deep learning approach for automated Melanoma classification from dermoscopic images using DenseNet121 architecture enhanced with advanced preprocessing techniques and explainable artificial intelligence (XAI)."
+    },
+    {
+      "title": "punitgarg00/Explainable-Skin-Cancer-Classification-Using-Hair ... - GitHub",
+      "url": "https://github.com/punitgarg00/Explainable-Skin-Cancer-Classification-Using-Hair-Artifact-Removal-and-DenseNet121",
+      "snippet": "This project presents a comprehensive deep learning approach for automated Melanoma classification from dermoscopic images using DenseNet121 architecture enhanced with advanced preprocessing techniques and explainable artificial intelligence (XAI)."
+    }
+  ]
+}

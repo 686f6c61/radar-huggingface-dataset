@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "hinhila/Huihui-DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
+  "slug": "hinhila-huihui-deepseek-v4-1-flash-1017-abliterated-gguf",
+  "author": "hinhila",
+  "url": "https://huggingface.co/hinhila/Huihui-DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
+  "created_at": "2026-11-07T19:52:25.000Z",
+  "updated_at": "2026-11-07T19:52:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "deepseek",
+    "deepseek_v41",
+    "unsloth",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "gsq",
+    "rco",
+    "quantization",
+    "mixed-precision",
+    "ist-daslab",
+    "moe",
+    "Strata",
+    "Maya",
+    "imatrix",
+    "mixture-of-experts",
+    "project-maya",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1677721600,
+  "parameters_human": "1.68B",
+  "storage_bytes": 599010689376,
+  "storage_human": "599.0 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
+      "url": "https://huggingface.co/huihui-ai/Huihui-DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
+      "snippet": "Image-Text-to-Text model with 2B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "OmniCompass-VL; Overall Cross-Specification Consistency Score on a 0-100 scale, higher is better. 64 video frames with per-frame timestamps; paired Text and Text+Image; temporal grounding, spatial grounding and question answering. API15 evaluation of DeepSeek-V4.1-Flash-1017 on 820 videos and 4,920 requests, completed on November 5, 2026. 4,892 successful responses are scored; 28 terminal ..."
+    }
+  ]
+}

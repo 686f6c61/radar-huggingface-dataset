@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nchapman/Qwen3.8-Flash-Next-DFlash2-W4A16-HGPTQ",
+  "slug": "nchapman-qwen3-8-flash-next-dflash2-w4a16-hgptq",
+  "author": "nchapman",
+  "url": "https://huggingface.co/nchapman/Qwen3.8-Flash-Next-DFlash2-W4A16-HGPTQ",
+  "created_at": "2026-11-07T15:03:19.000Z",
+  "updated_at": "2026-11-07T15:19:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "compressed-tensors",
+  "languages": [],
+  "tags": [
+    "compressed-tensors",
+    "safetensors",
+    "qwen3",
+    "dflash2",
+    "speculative-decoding",
+    "block-diffusion",
+    "draft-model",
+    "w4a16",
+    "gptq",
+    "hadamard",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 603065600,
+  "parameters_human": "603.1M",
+  "storage_bytes": 556422320,
+  "storage_human": "556 MB",
+  "base_model": "incoai/Qwen3.8-Flash-Next-DFlash2, Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nchapman/Qwen3.8-Flash-Next-W4A16-HGPTQ at main - Hugging Face",
+      "url": "https://huggingface.co/nchapman/Qwen3.8-Flash-Next-W4A16-HGPTQ/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings vLLM How to use nchapman/Qwen3.8-Flash-Next-W4A16-HGPTQ with vLLM: Install from pip and serve model"
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

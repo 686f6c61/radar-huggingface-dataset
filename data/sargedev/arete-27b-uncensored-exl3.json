@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "SargeDev/Arete-27B-Uncensored-EXL3",
+  "slug": "sargedev-arete-27b-uncensored-exl3",
+  "author": "SargeDev",
+  "url": "https://huggingface.co/SargeDev/Arete-27B-Uncensored-EXL3",
+  "created_at": "2026-11-07T11:01:57.000Z",
+  "updated_at": "2026-11-07T11:07:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "abliterated",
+    "uncensored",
+    "qwen3.8",
+    "base_model:NousResearch/Arete-27B",
+    "base_model:quantized:NousResearch/Arete-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7863204864,
+  "parameters_human": "7.86B",
+  "storage_bytes": 15746660672,
+  "storage_human": "15.7 GB",
+  "base_model": "NousResearch/Arete-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SargeDev/JEV-27B-VL-Uncensored-EXL3 · Hugging Face",
+      "url": "https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored-EXL3",
+      "snippet": "SargeDev / JEV-27B-VL-Uncensored-EXL3 Like 0 Text Classification Safetensors SargeDev/jev-distill-corpus-v3 exllamav3 qwen3_5 decision-model system-one typed-decisions uncensored abliterated calibrated-probabilities noul choice score qwen3.8 jev jev-1.13-teacher exl3 3-bit License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Lineage & credits What this is ..."
+    },
+    {
+      "title": "SargeDev/JEV-27B-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/SargeDev/JEV-27B-Uncensored",
+      "snippet": "The first uncensored member of the JEV 27B family. The AutoTrust System-1 decision block (calibrated typed decisions: yes/no · choice 2-256 · score 0-5, one forward pass) has been merged into huihui's abliterated Qwen3.8-27B backbone, so the decision engine answers WITHOUT the stock model's refusal wiring."
+    }
+  ]
+}

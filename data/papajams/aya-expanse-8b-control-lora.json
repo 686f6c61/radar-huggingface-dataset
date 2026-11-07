@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Papajams/aya-expanse-8b-control-lora",
+  "slug": "papajams-aya-expanse-8b-control-lora",
+  "author": "Papajams",
+  "url": "https://huggingface.co/Papajams/aya-expanse-8b-control-lora",
+  "created_at": "2026-11-07T18:10:47.000Z",
+  "updated_at": "2026-11-07T18:53:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ai-control",
+    "safety",
+    "lora",
+    "control-decisions",
+    "en",
+    "dataset:Papajams/control-decisions-v1",
+    "base_model:CohereLabs/aya-expanse-8b",
+    "base_model:adapter:CohereLabs/aya-expanse-8b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74684454,
+  "storage_human": "75 MB",
+  "base_model": "CohereLabs/aya-expanse-8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CohereLabs/aya-expanse-8b · Hugging Face",
+      "url": "https://huggingface.co/CohereLabs/aya-expanse-8b",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "prithivMLmods/Aya-Expanse-8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/Aya-Expanse-8B-GGUF",
+      "snippet": "1. Create the Model File First, create a model file and name it appropriately. For example, you can name your model file metallama. 2. Add the Template Command In your model file, include a FROM line that specifies the base model file you want to use. For instance: ... Ensure that the model file is in the same directory as your script. 3."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "ProtikD1810/hades_embeded-SX",
+  "slug": "protikd1810-hades_embeded-sx",
+  "author": "ProtikD1810",
+  "url": "https://huggingface.co/ProtikD1810/hades_embeded-SX",
+  "created_at": "2026-11-07T14:37:36.000Z",
+  "updated_at": "2026-11-07T14:37:36.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ProtikD1810 (Protik Das) - Hugging Face",
+      "url": "https://huggingface.co/ProtikD1810/models",
+      "snippet": "User profile of Protik Das on Hugging Face"
+    },
+    {
+      "title": "ProtikD1810/hades-m0-350m-training · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ProtikD1810/hades-m0-350m-training",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

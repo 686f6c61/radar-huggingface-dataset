@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "ZUO66/pi05-r1lite-insert-flower-baseline",
+  "slug": "zuo66-pi05-r1lite-insert-flower-baseline",
+  "author": "ZUO66",
+  "url": "https://huggingface.co/ZUO66/pi05-r1lite-insert-flower-baseline",
+  "created_at": "2026-11-07T16:34:55.000Z",
+  "updated_at": "2026-11-07T16:46:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "robotics",
+    "pi0.5",
+    "gaussian-flow-matching",
+    "full-finetuning",
+    "r1lite",
+    "en",
+    "dataset:at237299966/r1lite_insert_flower",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 14471430133,
+  "storage_human": "14.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZUO66/pi05-r1lite-insert-flower · Hugging Face",
+      "url": "https://huggingface.co/ZUO66/pi05-r1lite-insert-flower",
+      "snippet": "This repository contains the committed epoch-50 checkpoint, optimizer step 47,600, of a fully fine-tuned π₀.₅ Δ-flow policy for right-arm flower insertion. The user requested stopping after 50 completed epochs. Training originally planned 60 epochs / 57,120 updates, and its original learning ..."
+    },
+    {
+      "title": "ZUO66/imagewam-r1lite-insert-flower · Hugging Face",
+      "url": "https://huggingface.co/ZUO66/imagewam-r1lite-insert-flower",
+      "snippet": "Final 20-epoch / step 11,440 inference checkpoint for the R1Lite right arm. This is a full fine-tune, not a LoRA adapter. It contains visual/action MoT weights and the trained proprio encoder, not optimizer or resumable state. No robot rollout success rate is claimed by this release. Training and ..."
+    }
+  ]
+}

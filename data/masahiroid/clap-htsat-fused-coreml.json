@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "masahiroid/clap-htsat-fused-coreml",
+  "slug": "masahiroid-clap-htsat-fused-coreml",
+  "author": "masahiroid",
+  "url": "https://huggingface.co/masahiroid/clap-htsat-fused-coreml",
+  "created_at": "2026-11-07T17:17:34.000Z",
+  "updated_at": "2026-11-07T17:17:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "clap",
+    "checkpoint-conversion",
+    "base_model:laion/clap-htsat-fused",
+    "base_model:quantized:laion/clap-htsat-fused",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 742324308,
+  "storage_human": "742 MB",
+  "base_model": "laion/clap-htsat-fused",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "clap-htsat-fused · Models",
+      "url": "https://www.modelscope.cn/models/laion/clap-htsat-fused",
+      "snippet": "Second, we construct a contrastive language-audio pretraining model by considering different audio encoders and text encoders. We incorporate the feature fusion mechanism and keyword-to-caption augmentation into the model design to further enable the model to process audio inputs of variable lengths and enhance the performance."
+    },
+    {
+      "title": "clap-htsat-fused: Text-to-Audio model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/clap-htsat-fused-laion",
+      "snippet": "Overview clap-htsat-fused is a contrastive language-audio pretraining model developed by laion that learns joint representations of audio and text by embedding them into a shared latent space. The model uses a SWINTransformer audio encoder to process log-Mel spectrograms and a RoBERTa text encoder, with both modalities projected to identical-dimension latent spaces where similarity is computed ..."
+    }
+  ]
+}

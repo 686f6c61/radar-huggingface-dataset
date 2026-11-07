@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "orucexe/Qwen3-8B-Algorithmic-Code-Analyzer-GGUF",
+  "slug": "orucexe-qwen3-8b-algorithmic-code-analyzer-gguf",
+  "author": "orucexe",
+  "url": "https://huggingface.co/orucexe/Qwen3-8B-Algorithmic-Code-Analyzer-GGUF",
+  "created_at": "2026-11-07T14:15:01.000Z",
+  "updated_at": "2026-11-07T19:43:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "cpp",
+    "code-understanding",
+    "algorithm-explanation",
+    "experimental",
+    "text-generation",
+    "en",
+    "base_model:orucexe/Qwen3-8B-Algorithmic-Code-Analyzer",
+    "base_model:quantized:orucexe/Qwen3-8B-Algorithmic-Code-Analyzer",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5851112448,
+  "storage_human": "5.9 GB",
+  "base_model": "orucexe/Qwen3-8B-Algorithmic-Code-Analyzer",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "Text Generation model with 8B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen/Qwen3-8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B-GGUF",
+      "snippet": "Text Generation model with 8B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

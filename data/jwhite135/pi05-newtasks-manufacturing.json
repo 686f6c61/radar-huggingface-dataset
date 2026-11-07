@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "jwhite135/pi05-newtasks-manufacturing",
+  "slug": "jwhite135-pi05-newtasks-manufacturing",
+  "author": "jwhite135",
+  "url": "https://huggingface.co/jwhite135/pi05-newtasks-manufacturing",
+  "created_at": "2026-11-07T17:30:22.000Z",
+  "updated_at": "2026-11-07T17:32:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:manufacturing_finetune",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 16573777192,
+  "storage_human": "16.6 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jwhite135/pi0-newtasks-manufacturing · Hugging Face",
+      "url": "https://huggingface.co/jwhite135/pi0-newtasks-manufacturing",
+      "snippet": "Robotics model with 4B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "jwhite135/pi05-base-manufacturing · Hugging Face",
+      "url": "https://huggingface.co/jwhite135/pi05-base-manufacturing",
+      "snippet": "π₀.₅ (Pi05) is a Vision-Language-Action model from Physical Intelligence designed for open-world generalization: it evolves π₀ to generalize to entirely new environments and situations that were never seen during training. The LeRobot implementation is adapted from their open-source OpenPI ..."
+    }
+  ]
+}

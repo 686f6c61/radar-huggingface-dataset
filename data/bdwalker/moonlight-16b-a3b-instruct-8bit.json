@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "bdwalker/Moonlight-16B-A3B-Instruct-8bit",
+  "slug": "bdwalker-moonlight-16b-a3b-instruct-8bit",
+  "author": "bdwalker",
+  "url": "https://huggingface.co/bdwalker/Moonlight-16B-A3B-Instruct-8bit",
+  "created_at": "2026-11-07T14:41:59.000Z",
+  "updated_at": "2026-11-07T14:54:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "deepseek_v3",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:moonshotai/Moonlight-16B-A3B-Instruct",
+    "base_model:quantized:moonshotai/Moonlight-16B-A3B-Instruct",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15960110208,
+  "parameters_human": "15.96B",
+  "storage_bytes": 16980648682,
+  "storage_human": "17.0 GB",
+  "base_model": "moonshotai/Moonlight-16B-A3B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "moonshotai/Moonlight-16B-A3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/moonshotai/Moonlight-16B-A3B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "moonshotai/Moonlight-16B-A3B · Hugging Face",
+      "url": "https://huggingface.co/moonshotai/Moonlight-16B-A3B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

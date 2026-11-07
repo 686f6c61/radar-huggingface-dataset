@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "laion/Humanness-Voice-Podcast",
+  "slug": "laion-humanness-voice-podcast",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/Humanness-Voice-Podcast",
+  "created_at": "2026-11-07T18:27:45.000Z",
+  "updated_at": "2026-11-07T18:28:33.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "es",
+    "nl"
+  ],
+  "tags": [
+    "safetensors",
+    "moss_tts_local",
+    "text-to-speech",
+    "custom_code",
+    "en",
+    "de",
+    "fr",
+    "es",
+    "nl",
+    "base_model:laion/Humaneness-Voice-Large-1.7",
+    "base_model:finetune:laion/Humaneness-Voice-Large-1.7",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4129990144,
+  "parameters_human": "4.13B",
+  "storage_bytes": 8271454676,
+  "storage_human": "8.3 GB",
+  "base_model": "laion/Humaneness-Voice-Large-1.7",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LAION · Open AI research for everyone",
+      "url": "https://laion.ai/",
+      "snippet": "LAION is a non-profit organization making machine-learning datasets, tools, and models openly available for research and education."
+    },
+    {
+      "title": "LAION Humaneness Voice Large: Open Two-Speaker Podcast TTS",
+      "url": "https://www.llms.blog/posts/laion-humaneness-voice-large-podcast-tts",
+      "snippet": "LAION has posted Humaneness Voice Large, NotebookLM Edition on Hugging Face, an open-weight text-to-speech model built for one job: turning a written two-person script into a podcast-style conversation. You give it the dialogue and two short voice recordings, and it returns the whole exchange as one audio file."
+    },
+    {
+      "title": "LAION AI - GitHub",
+      "url": "https://github.com/LAION-AI",
+      "snippet": "Humaneness-Voice Public Open voice-acting agent: director, expressive speech model, LoRA tools, perceptual selection, and reproducible demo."
+    },
+    {
+      "title": "LAION — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/LAION",
+      "snippet": "Jeux de données d'images LAION a mis à disposition de tous plusieurs grands jeux de données de type « paires image-légende », …"
+    },
+    {
+      "title": "GitHub - LAION-AI/Humaneness-Voice: Open voice-acting agent: director ...",
+      "url": "https://github.com/LAION-AI/Humaneness-Voice",
+      "snippet": "Open voice-acting agent: director, expressive speech model, LoRA tools, perceptual selection, and reproducible demo. - LAION-AI/Humaneness-Voice"
+    }
+  ]
+}

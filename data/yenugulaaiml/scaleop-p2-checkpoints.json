@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "YenugulaAIML/scaleop-p2-checkpoints",
+  "slug": "yenugulaaiml-scaleop-p2-checkpoints",
+  "author": "YenugulaAIML",
+  "url": "https://huggingface.co/YenugulaAIML/scaleop-p2-checkpoints",
+  "created_at": "2026-09-29T23:54:47.000Z",
+  "updated_at": "2026-11-07T13:16:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pythia",
+    "qwen3",
+    "gpt-neox",
+    "model-conversion",
+    "size-conversion",
+    "least-squares-compensation",
+    "base_model:EleutherAI/pythia-6.9b",
+    "base_model:finetune:EleutherAI/pythia-6.9b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 231639094344,
+  "storage_human": "231.6 GB",
+  "base_model": "EleutherAI/pythia-6.9b, Qwen/Qwen3-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YenugulaAIML/scaleop-p2-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/YenugulaAIML/scaleop-p2-checkpoints",
+      "snippet": "YenugulaAIML / scaleop-p2-checkpoints Like 0 Transformers pythia gpt-neox model-conversion size-conversion least-squares-compensation License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "YenugulaAIML/scaleop-p2-checkpoints · Discussions - Hugging Face",
+      "url": "https://huggingface.co/YenugulaAIML/scaleop-p2-checkpoints/discussions",
+      "snippet": "YenugulaAIML / scaleop-p2-checkpoints Like 0 Transformers pythia gpt-neox model-conversion size-conversion least-squares-compensation License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

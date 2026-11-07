@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "nazar0025usa/qwen-support-lora",
+  "slug": "nazar0025usa-qwen-support-lora",
+  "author": "nazar0025usa",
+  "url": "https://huggingface.co/nazar0025usa/qwen-support-lora",
+  "created_at": "2026-11-07T15:49:00.000Z",
+  "updated_at": "2026-11-07T15:49:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20097998,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "flymy-ai/qwen-image-realism-lora · Hugging Face",
+      "url": "https://huggingface.co/flymy-ai/qwen-image-realism-lora",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-Tuning Qwen3 with LoRA Using NVIDIA NeMo AutoModel: A Complete ...",
+      "url": "https://www.marktechpost.com/2026/07/18/fine-tuning-qwen3-with-lora-using-nvidia-nemo-automodel-a-complete-single-gpu-google-colab-workflow-tutorial/",
+      "snippet": "We verify the available CUDA hardware and precision support, install NeMo AutoModel directly from its source repository, load an official Qwen3-0.6B LoRA fine-tuning recipe, and programmatically adapt its precision, batch-size, checkpointing, and scheduler settings for a constrained Colab runtime."
+    }
+  ]
+}

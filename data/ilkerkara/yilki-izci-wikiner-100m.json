@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "ilkerkara/yilki-izci-wikiner-100m",
+  "slug": "ilkerkara-yilki-izci-wikiner-100m",
+  "author": "ilkerkara",
+  "url": "https://huggingface.co/ilkerkara/yilki-izci-wikiner-100m",
+  "created_at": "2026-11-07T18:30:54.000Z",
+  "updated_at": "2026-11-07T18:37:05.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "yilki",
+    "token-classification",
+    "turkish",
+    "ner",
+    "custom_code",
+    "tr",
+    "base_model:ilkerkara/yilki-kulun-100m",
+    "base_model:finetune:ilkerkara/yilki-kulun-100m",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100124199,
+  "parameters_human": "100.1M",
+  "storage_bytes": 801024584,
+  "storage_human": "801 MB",
+  "base_model": "ilkerkara/yilki-kulun-100m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

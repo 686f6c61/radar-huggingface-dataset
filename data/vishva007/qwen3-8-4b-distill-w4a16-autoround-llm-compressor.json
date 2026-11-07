@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Vishva007/Qwen3.8-4B-Distill-W4A16-AutoRound-LLM-Compressor",
+  "slug": "vishva007-qwen3-8-4b-distill-w4a16-autoround-llm-compressor",
+  "author": "Vishva007",
+  "url": "https://huggingface.co/Vishva007/Qwen3.8-4B-Distill-W4A16-AutoRound-LLM-Compressor",
+  "created_at": "2026-08-31T10:35:36.000Z",
+  "updated_at": "2026-11-07T18:07:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "quantization",
+    "auto-round",
+    "gptq",
+    "llm-compressor",
+    "compressed-tensors",
+    "4bit",
+    "text-generation",
+    "image-text-to-text",
+    "reasoning",
+    "distillation",
+    "conversational",
+    "base_model:empero-ai/Qwen3.8-4B-Distill",
+    "base_model:quantized:empero-ai/Qwen3.8-4B-Distill",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 79,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 4450511757,
+  "storage_human": "4.5 GB",
+  "base_model": "empero-ai/Qwen3.8-4B-Distill",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-4B-Distill-W4A16-AutoRound-LLM-Compressor",
+      "url": "https://huggingface.co/Vishva007/Qwen3.8-4B-Distill-W4A16-AutoRound-LLM-Compressor",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Vishva007/Qwen3.8-4B-Distill-W4A16-AutoRound at main",
+      "url": "https://huggingface.co/Vishva007/Qwen3.8-4B-Distill-W4A16-AutoRound/blob/main/README.md",
+      "snippet": "Vishva007 / Qwen3.8-4B-Distill-W4A16-AutoRound Like 0 Image-Text-to-Text Safetensors qwen3_5 quantization auto-round gptq llm-compressor compressed-tensors 4bit text-generation reasoning distillation conversational 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Qwen3.8-4B-Distill-W4A16-AutoRound /README.md Vishva007 Update README.md ..."
+    }
+  ]
+}

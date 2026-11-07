@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "netprojects/SenseNova-Loop-9B-Preview-MLX-6bit",
+  "slug": "netprojects-sensenova-loop-9b-preview-mlx-6bit",
+  "author": "netprojects",
+  "url": "https://huggingface.co/netprojects/SenseNova-Loop-9B-Preview-MLX-6bit",
+  "created_at": "2026-11-07T19:16:48.000Z",
+  "updated_at": "2026-11-07T19:28:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "sensenova_loop",
+    "sensenova",
+    "sensenova-loop",
+    "looped-transformer",
+    "mhc",
+    "qwen3_5",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "base_model:sensenova/SenseNova-Loop-9B-Preview",
+    "base_model:quantized:sensenova/SenseNova-Loop-9B-Preview",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8956947840,
+  "parameters_human": "8.96B",
+  "storage_bytes": 7308932938,
+  "storage_human": "7.3 GB",
+  "base_model": "sensenova/SenseNova-Loop-9B-Preview",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenSenseNova/SenseNova-Loop",
+      "url": "https://github.com/OpenSenseNova/SenseNova-Loop",
+      "snippet": "SenseNova-Loop-9B-Preview is a multimodal language model developed for long-context and agentic workflows. It accepts text and images and generates text for applications that combine document understanding, coding, and interaction with external tools. The model combines a looped decoder with two-stream manifold-constrained hyper-connections (mHC). A contiguous block of decoder layers is ..."
+    },
+    {
+      "title": "SenseNova-Loop-9B-Preview - Hugging Face",
+      "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview",
+      "snippet": "Image-Text-to-Text model with 10B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

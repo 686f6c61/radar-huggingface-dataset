@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "oluwagbotty/parakeet-tdt-en-ft-10ep",
+  "slug": "oluwagbotty-parakeet-tdt-en-ft-10ep",
+  "author": "oluwagbotty",
+  "url": "https://huggingface.co/oluwagbotty/parakeet-tdt-en-ft-10ep",
+  "created_at": "2026-11-07T16:51:29.000Z",
+  "updated_at": "2026-11-07T17:20:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "non-standard-speech",
+    "stuttering",
+    "en",
+    "dataset:cdli/rwandan_english_nonstandard_speech_v1.0",
+    "base_model:nvidia/parakeet-tdt-0.6b-v2",
+    "base_model:finetune:nvidia/parakeet-tdt-0.6b-v2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2472212480,
+  "storage_human": "2.5 GB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parakeet · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.10.2/en/model_doc/parakeet",
+      "snippet": "Parakeet models, introduced by NVIDIA NeMo, are models that combine a Fast Conformer encoder with connectionist temporal classification (CTC), recurrent neural network transducer (RNNT) or token and duration transducer (TDT) decoder for automatic speech recognition."
+    },
+    {
+      "title": "nvidia/parakeet-tdt-0.6b-v3 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
+      "snippet": "🦜 parakeet-tdt-0.6b-v3: Multilingual Speech-to-Text Model | | Description: parakeet-tdt-0.6b-v3 is a 600-million-parameter multilingual automatic speech recognition (ASR) model designed for high-throughput speech-to-text transcription. It extends the parakeet-tdt-0.6b-v2 model by expanding language support from English to 25 European languages. The model automatically detects the language ..."
+    }
+  ]
+}

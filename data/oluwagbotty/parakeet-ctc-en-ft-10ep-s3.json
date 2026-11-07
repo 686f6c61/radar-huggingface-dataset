@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "oluwagbotty/parakeet-ctc-en-ft-10ep-s3",
+  "slug": "oluwagbotty-parakeet-ctc-en-ft-10ep-s3",
+  "author": "oluwagbotty",
+  "url": "https://huggingface.co/oluwagbotty/parakeet-ctc-en-ft-10ep-s3",
+  "created_at": "2026-11-07T18:21:03.000Z",
+  "updated_at": "2026-11-07T18:39:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "non-standard-speech",
+    "stuttering",
+    "en",
+    "dataset:cdli/rwandan_english_nonstandard_speech_v1.0",
+    "base_model:nvidia/parakeet-ctc-0.6b",
+    "base_model:finetune:nvidia/parakeet-ctc-0.6b",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2436147200,
+  "storage_human": "2.4 GB",
+  "base_model": "nvidia/parakeet-ctc-0.6b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parakeet · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.6.1/model_doc/parakeet",
+      "snippet": "It is used to instantiate a Parakeet model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the nvidia/parakeet-ctc-1.1b"
+    },
+    {
+      "title": "nvidia/parakeet-ctc-0.6b · Hugging Face",
+      "url": "https://huggingface.co/nvidia/parakeet-ctc-0.6b",
+      "snippet": "World-class out-of-the-box accuracy for the most common languages with model checkpoints trained on proprietary data with hundreds of thousands of GPU-compute hours Best in class accuracy with run-time word boosting (e.g., brand and product names) and customization of acoustic model, language model, and inverse text normalization"
+    }
+  ]
+}

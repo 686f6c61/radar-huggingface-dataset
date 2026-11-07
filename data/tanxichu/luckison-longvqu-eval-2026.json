@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "tanxichu/luckison-LongVQU-Eval-2026",
+  "slug": "tanxichu-luckison-longvqu-eval-2026",
+  "author": "tanxichu",
+  "url": "https://huggingface.co/tanxichu/luckison-LongVQU-Eval-2026",
+  "created_at": "2026-11-07T19:29:33.000Z",
+  "updated_at": "2026-11-07T19:30:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "video-quality-assessment",
+    "LongVQUBench",
+    "VQualA-2026",
+    "qlora",
+    "base_model:Qwen/Qwen3-VL-32B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-32B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1078935658,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-VL-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Releases Timeline: Latest Launches, Updated Daily",
+      "url": "https://www.promptzone.com/ai-model-releases",
+      "snippet": "AI Model Releases 2026 Timeline A chronological timeline of major AI model releases across 2025 and 2026 — LLMs, reasoning models, open-weights families, and image & video generators, each with its date, why it mattered, and the official announcement."
+    },
+    {
+      "title": "AI Model Benchmarks 2026: Top LLMs on Every Major Test",
+      "url": "https://aiproductivity.ai/research/model-benchmarks/",
+      "snippet": "The top AI models on 14 major benchmarks — verified scores, source links and a plain-English guide to what each test measures. Updated 2026-11-06."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "tencent/Qwen3.8-27B-DSpine-b16",
+  "slug": "tencent-qwen3-8-27b-dspine-b16",
+  "author": "tencent",
+  "url": "https://huggingface.co/tencent/Qwen3.8-27B-DSpine-b16",
+  "created_at": "2026-11-07T14:20:29.000Z",
+  "updated_at": "2026-11-07T14:33:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "dspine",
+    "speculative-decoding",
+    "draft-model",
+    "sglang",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2025912064,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4051831880,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Tencent",
+      "url": "https://www.tencent.com/",
+      "snippet": "5 days ago · Tencent is: Three friends making dinner plans. And over a billion monthly active users. Learn more about Tencent for …"
+    },
+    {
+      "title": "tencent/Qwen3-8B-DSpine-b16 · Hugging Face",
+      "url": "https://huggingface.co/tencent/Qwen3-8B-DSpine-b16",
+      "snippet": "tencent / Qwen3-8B-DSpine-b16 Like 4 Follow Tencent 12.6k Safetensors qwen3 custom_code arxiv:2609.36173 License:apache-2.0 Model card FilesFiles and versions xet Community 1 Copy to bucket new News Results Installation Usage Roadmap Acknowledgements Citation License"
+    },
+    {
+      "title": "Tencent — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tencent",
+      "snippet": "Tencent ... La Tencent Tower, qui abrite le siège de Tencent. Tencent Holdings Limited est une entreprise chinoise créée en 1998, …"
+    },
+    {
+      "title": "Tencent DSpine: 23% Faster Than DFlash Speculative Decoding - explainx.ai",
+      "url": "https://www.explainx.ai/blog/tencent-dspine-speculative-decoding-drafter-qwen3-8b-27-percent-longer-acceptance-vs-dflash-2026",
+      "snippet": "The checkpoint, tencent/Qwen3-8B-DSpine-b16, is on Hugging Face under Apache 2.0 with inference code, and the paper, \"Draft in Parallel, Condition Through Depth: Adjacent Causal Injection for Speculative Decoding\", was submitted on September 28, 2026 and revised on October 10."
+    },
+    {
+      "title": "Tencent - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tencent",
+      "snippet": "Tencent (Chinese: 腾讯; pinyin: Téngxùn) is a Chinese multinational technology conglomerate and holding company headquartered …"
+    }
+  ]
+}

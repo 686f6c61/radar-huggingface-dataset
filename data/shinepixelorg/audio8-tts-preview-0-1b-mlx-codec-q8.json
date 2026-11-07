@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "ShinePixelOrg/Audio8-TTS-Preview-0.1b-MLX-Codec-Q8",
+  "slug": "shinepixelorg-audio8-tts-preview-0-1b-mlx-codec-q8",
+  "author": "ShinePixelOrg",
+  "url": "https://huggingface.co/ShinePixelOrg/Audio8-TTS-Preview-0.1b-MLX-Codec-Q8",
+  "created_at": "2026-11-07T15:41:11.000Z",
+  "updated_at": "2026-11-07T15:43:08.000Z",
+  "license": "audio8-community-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "arktts",
+    "audio8",
+    "voice-cloning",
+    "codec-q8",
+    "text-to-speech",
+    "base_model:Edge0/Audio8-TTS-Preview-0.1b",
+    "base_model:quantized:Edge0/Audio8-TTS-Preview-0.1b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 169779904,
+  "parameters_human": "169.8M",
+  "storage_bytes": 698837860,
+  "storage_human": "699 MB",
+  "base_model": "Edge0/Audio8-TTS-Preview-0.1b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Edge0-AI/Audio8_TTS: SOTA-Class TTS at Compact Scale",
+      "url": "https://github.com/Edge0-AI/Audio8_TTS",
+      "snippet": "🚀 How small a zero-shot cloning TTS can be? Meet our latest release, Audio8-TTS-0.1B: a powerful, compact, and even portable text-to-speech model! This repository provides the audio8_tts Preview checkpoint, Hugging Face remote code, inference tools, and an independent SFT pipeline for multilingual speech generation and zero-shot voice cloning."
+    },
+    {
+      "title": "Edge0/Audio8-TTS-Preview-0.1b · Hugging Face",
+      "url": "https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b",
+      "snippet": "These figures are approximate reference scales collected from the respective model reports and are not a strictly matched parameter-count audit. The 0.1B checkpoint is intended to make zero-shot TTS practical with a much smaller language/audio model footprint, not to claim identical quality across ..."
+    }
+  ]
+}

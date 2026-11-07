@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "zacaj/Darwin-180B-RSI-R3-IQ3_XXS",
+  "slug": "zacaj-darwin-180b-rsi-r3-iq3_xxs",
+  "author": "zacaj",
+  "url": "https://huggingface.co/zacaj/Darwin-180B-RSI-R3-IQ3_XXS",
+  "created_at": "2026-11-07T15:58:06.000Z",
+  "updated_at": "2026-11-07T15:58:06.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Darwin-180B-RSI: Image-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/darwin-180b-rsi-final-bench",
+      "snippet": "Overview Darwin-180B-RSI is a 180-billion-parameter mixture-of-experts vision-language reasoning model from FINAL-Bench. Its parent is Qwen/Qwen3.8-Flash-Next; the model card says it retains the parent’s 512 routed experts, router, and vision encoder, and adds recursive self-improvement (RSI) from answers checked against verifiable references. It accepts image and text inputs, supports ..."
+    },
+    {
+      "title": "FINAL-Bench/Darwin-180B-RSI · Hugging Face",
+      "url": "https://huggingface.co/FINAL-Bench/Darwin-180B-RSI?local-app=sglang",
+      "snippet": "FINAL-Bench / Darwin-180B-RSI Like 118 Follow FINAL_Bench 364 Image-Text-to-Text Transformers Safetensors 5 languages qwen4_exp darwin darwin-rsi recursive-self-improvement self-improvement vidraft final-bench qwen qwen3.8 Mixture of Experts mixture-of-experts sparse-moe 180b hybrid-attention linear-attention long-context 262k-context vision-language multimodal reasoning reasoning-model ..."
+    }
+  ]
+}

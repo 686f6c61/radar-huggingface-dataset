@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/K2-Horizon-7B-Uno-heretic-GGUF",
+  "slug": "mradermacher-k2-horizon-7b-uno-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/K2-Horizon-7B-Uno-heretic-GGUF",
+  "created_at": "2026-11-07T15:10:33.000Z",
+  "updated_at": "2026-11-07T15:10:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/K2-Horizon-7B-heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/K2-Horizon-7B-heretic-GGUF",
+      "snippet": "mradermacher / K2-Horizon-7B-heretic-GGUF Like 0 Transformers GGUF English Chinese k2_horizon k2-horizon abliterated uncensored heretic conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "BetterWright-K2-Horizon-7B-Uno-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/BetterWright-K2-Horizon-7B-Uno-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

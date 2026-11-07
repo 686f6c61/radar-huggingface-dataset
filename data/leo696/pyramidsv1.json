@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "leo696/Pyramidsv1",
+  "slug": "leo696-pyramidsv1",
+  "author": "leo696",
+  "url": "https://huggingface.co/leo696/Pyramidsv1",
+  "created_at": "2026-11-07T14:11:36.000Z",
+  "updated_at": "2026-11-07T14:11:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37797347,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AGI-CEO/ppo-PyramidsV1 · Hugging Face",
+      "url": "https://huggingface.co/AGI-CEO/ppo-PyramidsV1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

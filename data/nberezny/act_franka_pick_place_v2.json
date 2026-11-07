@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "nberezny/act_franka_pick_place_v2",
+  "slug": "nberezny-act_franka_pick_place_v2",
+  "author": "nberezny",
+  "url": "https://huggingface.co/nberezny/act_franka_pick_place_v2",
+  "created_at": "2026-11-07T15:44:18.000Z",
+  "updated_at": "2026-11-07T15:44:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:nberezny/franka_pick_place_v2",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51590792,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206403952,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nberezny (Nicholas Berezny) – Models - Hugging Face",
+      "url": "https://huggingface.co/nberezny/models",
+      "snippet": "nberezny's models1 Sort: Recently updated nberezny/act_franka_pick_place Robotics • 51.7M•Updated about 4 hours ago"
+    },
+    {
+      "title": "nberezny (Nicholas Berezny) - Hugging Face",
+      "url": "https://huggingface.co/nberezny",
+      "snippet": "Recent Activity updated a dataset13 minutes ago nberezny/franka_pick_place_v2 published a dataset15 minutes ago nberezny/franka_pick_place_v2 updated a modelabout 3 hours ago nberezny/act_franka_pick_place View all activity"
+    }
+  ]
+}

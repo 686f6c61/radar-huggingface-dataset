@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Arrisx/Calogera-0.0-GGUF",
+  "slug": "arrisx-calogera-0-0-gguf",
+  "author": "Arrisx",
+  "url": "https://huggingface.co/Arrisx/Calogera-0.0-GGUF",
+  "created_at": "2026-11-05T16:43:55.000Z",
+  "updated_at": "2026-11-05T18:27:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "it",
+    "scn"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "italiano",
+    "sicilia",
+    "arturo",
+    "it",
+    "scn",
+    "base_model:unsloth/Qwen3.5-2B",
+    "base_model:quantized:unsloth/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 2624329664,
+  "storage_human": "2.6 GB",
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

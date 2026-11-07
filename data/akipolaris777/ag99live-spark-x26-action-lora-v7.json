@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "AkiPolaris777/ag99live-spark-x26-action-lora-v7",
+  "slug": "akipolaris777-ag99live-spark-x26-action-lora-v7",
+  "author": "AkiPolaris777",
+  "url": "https://huggingface.co/AkiPolaris777/ag99live-spark-x26-action-lora-v7",
+  "created_at": "2026-11-07T19:33:04.000Z",
+  "updated_at": "2026-11-07T19:39:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "live2d",
+    "vtuber",
+    "lora",
+    "text-generation",
+    "conversational",
+    "base_model:XHToken/Spark-X2.6-1.7B-Base",
+    "base_model:adapter:XHToken/Spark-X2.6-1.7B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33546905,
+  "storage_human": "34 MB",
+  "base_model": "XHToken/Spark-X2.6-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AG99live/experiments/spark-x26-action-sft at main - GitHub",
+      "url": "https://github.com/murphys7017/AG99live/tree/main/experiments/spark-x26-action-sft",
+      "snippet": "Spark-X2.6-1.7B Action SFT Experiment This isolated experiment checks whether the local training and inference path can teach Spark-X2.6-1.7B to return parseable AG99live motion payloads. It is a pipeline smoke run, not an action-quality evaluation or a generalization claim."
+    },
+    {
+      "title": "AG99live/experiments/spark-x26-action-sft/train_lora.yaml at ... - GitHub",
+      "url": "https://github.com/murphys7017/AG99live/blob/main/experiments/spark-x26-action-sft/train_lora.yaml",
+      "snippet": "Contribute to murphys7017/AG99live development by creating an account on GitHub."
+    }
+  ]
+}

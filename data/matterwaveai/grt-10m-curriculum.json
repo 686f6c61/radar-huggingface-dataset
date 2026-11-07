@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "MatterWaveAI/grt-10m-curriculum",
+  "slug": "matterwaveai-grt-10m-curriculum",
+  "author": "MatterWaveAI",
+  "url": "https://huggingface.co/MatterWaveAI/grt-10m-curriculum",
+  "created_at": "2026-11-07T14:47:20.000Z",
+  "updated_at": "2026-11-07T14:53:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "grt",
+    "text-generation",
+    "geometric-rotation-transformer",
+    "causal-lm",
+    "rotational",
+    "en",
+    "dataset:nvidia/Nemotron-Pretraining-Dataset-sample",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8802768,
+  "parameters_human": "8.8M",
+  "storage_bytes": 35700868,
+  "storage_human": "36 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MatterWaveAI/grt-10m · Hugging Face",
+      "url": "https://huggingface.co/MatterWaveAI/grt-10m",
+      "snippet": "Text Generation model with 8.8M parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "MatterWaveAI/grt-10m at main - Hugging Face",
+      "url": "https://huggingface.co/MatterWaveAI/grt-10m/tree/main",
+      "snippet": "Instructions to use MatterWaveAI/grt-10m with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use MatterWaveAI/grt-10m with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"MatterWaveAI ..."
+    }
+  ]
+}

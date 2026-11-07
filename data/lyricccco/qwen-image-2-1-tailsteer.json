@@ -24,9 +24,9 @@
     "diffusers:QwenImage21Pipeline",
     "region:us"
   ],
-  "likes": 26,
+  "likes": 31,
   "downloads_30d": 57,
-  "trending_score": 26,
+  "trending_score": 31,
   "parameters": 7115124736,
   "parameters_human": "7.12B",
   "storage_bytes": 33140373267,

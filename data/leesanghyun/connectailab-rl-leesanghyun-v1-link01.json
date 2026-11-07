@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "LeeSanghyun/connectailab-rl-leesanghyun-v1-link01",
+  "slug": "leesanghyun-connectailab-rl-leesanghyun-v1-link01",
+  "author": "LeeSanghyun",
+  "url": "https://huggingface.co/LeeSanghyun/connectailab-rl-leesanghyun-v1-link01",
+  "created_at": "2026-11-07T19:58:19.000Z",
+  "updated_at": "2026-11-07T19:58:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "ppo",
+    "robotics",
+    "decision-making",
+    "link01",
+    "connect-ai-world",
+    "connect-ai-lab",
+    "connectailab",
+    "lora",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41684315,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "connectailab-rl-LeeSanghyun-v5-teacher - Hugging Face",
+      "url": "https://huggingface.co/LeeSanghyun/connectailab-rl-LeeSanghyun-v5-teacher",
+      "snippet": "업로더: LeeSanghyun 시뮬레이터 프로필: general 보상 가중치: 이익 3 · 고객 만족 3 · 위험 3 모델 파일에 기록된 사람 라벨 수: 75개 이 저장소는 게임에서 학습한 정책 모델이며, Qwen LoRA 어댑터가 아닙니다. 아래는 게임 저장 상태에 ..."
+    },
+    {
+      "title": "connectailab-rl-LeeSanghyun-v7-teacher - Hugging Face",
+      "url": "https://huggingface.co/LeeSanghyun/connectailab-rl-LeeSanghyun-v7-teacher",
+      "snippet": "업로더: LeeSanghyun 게임에서 직접 학습하고 저장한 v7 정책입니다. 시뮬레이터 프로필: general 보상 가중치: 이익 3 · 고객 만족 2 · 위험 2 모델 파일에 기록된 사람 라벨 수: 132개 이 저장소는 게임에서 학습한 정책 모델이며, Qwen ..."
+    }
+  ]
+}

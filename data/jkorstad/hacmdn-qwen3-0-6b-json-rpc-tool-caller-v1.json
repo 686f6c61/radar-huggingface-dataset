@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "jkorstad/hacmdn-qwen3-0.6b-json-rpc-tool-caller-v1",
+  "slug": "jkorstad-hacmdn-qwen3-0-6b-json-rpc-tool-caller-v1",
+  "author": "jkorstad",
+  "url": "https://huggingface.co/jkorstad/hacmdn-qwen3-0.6b-json-rpc-tool-caller-v1",
+  "created_at": "2026-11-07T19:12:10.000Z",
+  "updated_at": "2026-11-07T19:12:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "hacmdn-net",
+    "hermes-agent",
+    "micro-specialist",
+    "qwen3",
+    "lora",
+    "calibrated-abstention",
+    "json-rpc",
+    "tool-calling",
+    "python-micro-fn",
+    "schema-synthesis",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20627781,
+  "storage_human": "21 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jinx-org/Jinx-Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Jinx-org/Jinx-Qwen3-0.6B",
+      "snippet": "Model Description Jinx is a \"helpful-only\" variant of popular open-weight language models that responds to all queries without safety refusals. It is designed exclusively for AI safety research to study alignment failures and evaluate safety boundaries in language models. Key Characteristics Zero Refusal Rate: Responds to all queries without safety filtering Preserved Capabilities: Maintains ..."
+    },
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "Text Generation model with 0.8B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

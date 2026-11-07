@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "HelluvaVerse/RVC-Models",
+  "slug": "helluvaverse-rvc-models",
+  "author": "HelluvaVerse",
+  "url": "https://huggingface.co/HelluvaVerse/RVC-Models",
+  "created_at": "2026-11-07T19:52:19.000Z",
+  "updated_at": "2026-11-07T19:52:47.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60534433,
+  "storage_human": "61 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

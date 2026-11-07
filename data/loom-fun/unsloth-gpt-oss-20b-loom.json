@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "loom-fun/unsloth-gpt-oss-20b-loom",
+  "slug": "loom-fun-unsloth-gpt-oss-20b-loom",
+  "author": "loom-fun",
+  "url": "https://huggingface.co/loom-fun/unsloth-gpt-oss-20b-loom",
+  "created_at": "2026-11-07T20:23:23.000Z",
+  "updated_at": "2026-11-07T20:23:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "loom",
+    "loom-serve",
+    "gguf",
+    "strix-halo",
+    "base_model:unsloth/gpt-oss-20b-GGUF",
+    "base_model:finetune:unsloth/gpt-oss-20b-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13281179,
+  "storage_human": "13 MB",
+  "base_model": "unsloth/gpt-oss-20b-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free screen recorder for Mac and PC | Loom",
+      "url": "https://www.loom.com/",
+      "snippet": "So much more than a screen recorder Edit your videos like a pro Loom’s intuitive editor lets you trim, stitch clips, add eye-catching …"
+    },
+    {
+      "title": "unsloth/gpt-oss-20b · Hugging Face",
+      "url": "https://huggingface.co/unsloth/gpt-oss-20b",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Log into Loom | Loom",
+      "url": "https://www.loom.com/login",
+      "snippet": "Use Loom to record quick videos of your screen and cam. Explain anything clearly and easily – and skip the meeting. An essential …"
+    },
+    {
+      "title": "unsloth/gpt-oss-20b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/gpt-oss-20b-GGUF",
+      "snippet": "Text Generation model with 21B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Vêtements Homme · Loom",
+      "url": "https://www.loom.fr/fr-fr/collections/vestiaire-homme",
+      "snippet": "Vêtements homme de qualité, fabriqués au Portugal et en France."
+    }
+  ]
+}

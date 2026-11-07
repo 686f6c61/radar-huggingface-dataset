@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Flex-VL-7B-GGUF",
+  "slug": "mradermacher-flex-vl-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Flex-VL-7B-GGUF",
+  "created_at": "2025-05-30T10:10:40.000Z",
+  "updated_at": "2026-11-07T16:38:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:jongwooko/Flex-VL-7B",
+    "base_model:quantized:jongwooko/Flex-VL-7B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 201,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70354153728,
+  "storage_human": "70.4 GB",
+  "base_model": "jongwooko/Flex-VL-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher / Flex-VL-7B-GGUF - insights-db.paloaltonetworks.com",
+      "url": "https://insights-db.paloaltonetworks.com/models/mradermacher/Flex-VL-7B-GGUF/3854cc64ea7a13a99089c5390d25255bc3ba22f3/overview",
+      "snippet": "Discover potential threats in the mradermacher / Flex-VL-7B-GGUF model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "masahiroid/roberta-base-go_emotions-mlx",
+  "slug": "masahiroid-roberta-base-go_emotions-mlx",
+  "author": "masahiroid",
+  "url": "https://huggingface.co/masahiroid/roberta-base-go_emotions-mlx",
+  "created_at": "2026-11-07T17:01:39.000Z",
+  "updated_at": "2026-11-07T17:01:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "roberta",
+    "checkpoint-conversion",
+    "base_model:SamLowe/roberta-base-go_emotions",
+    "base_model:finetune:SamLowe/roberta-base-go_emotions",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124667164,
+  "parameters_human": "124.7M",
+  "storage_bytes": 498710472,
+  "storage_human": "499 MB",
+  "base_model": "SamLowe/roberta-base-go_emotions",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thiagohersan/roberta-base-go_emotions · Hugging Face",
+      "url": "https://huggingface.co/thiagohersan/roberta-base-go_emotions",
+      "snippet": "Overview Model trained from roberta-base on the go_emotions dataset for multi-label classification."
+    },
+    {
+      "title": "MicahB/roberta-base-go_emotions · Hugging Face",
+      "url": "https://huggingface.co/MicahB/roberta-base-go_emotions",
+      "snippet": "Dataset used for the model go_emotions is based on Reddit data and has 28 labels. It is a multi-label dataset where one or multiple labels may apply for any given input text, hence this model is a multi-label classification model with 28 'probability' float outputs for any given input text."
+    }
+  ]
+}

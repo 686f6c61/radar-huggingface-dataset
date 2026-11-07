@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "johnpattern/safenotes-funasr-nano-ov",
+  "slug": "johnpattern-safenotes-funasr-nano-ov",
+  "author": "johnpattern",
+  "url": "https://huggingface.co/johnpattern/safenotes-funasr-nano-ov",
+  "created_at": "2026-11-07T15:44:57.000Z",
+  "updated_at": "2026-11-07T15:49:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "fun_asr",
+    "speech-recognition",
+    "funasr",
+    "int8",
+    "chinese",
+    "intel",
+    "safenotes",
+    "automatic-speech-recognition",
+    "base_model:FunAudioLLM/Fun-ASR-Nano-2512",
+    "base_model:finetune:FunAudioLLM/Fun-ASR-Nano-2512",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 852154126,
+  "storage_human": "852 MB",
+  "base_model": "FunAudioLLM/Fun-ASR-Nano-2512",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "funasr (FunASR) - Hugging Face",
+      "url": "https://huggingface.co/funasr/models",
+      "snippet": "Org profile for FunASR on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "README.md · OpenASR/funasr-nano at main - Hugging Face",
+      "url": "https://huggingface.co/OpenASR/funasr-nano/blob/main/README.md",
+      "snippet": "🧠 About Fun-ASR-Nano Fun-ASR-Nano is an ~0.8B-parameter speech-recognition model from FunAudioLLM (Fun-ASR-Nano-2512). Its architecture pairs a FunASR SAN-M/DFSMN audio encoder with a 2-layer transformer adaptor feeding a stock Qwen3-0.6B decoder. Language coverage is a fixed Mandarin + English set."
+    }
+  ]
+}

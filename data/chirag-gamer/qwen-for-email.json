@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "chirag-gamer/qwen-for-email",
+  "slug": "chirag-gamer-qwen-for-email",
+  "author": "chirag-gamer",
+  "url": "https://huggingface.co/chirag-gamer/qwen-for-email",
+  "created_at": "2026-11-07T17:47:46.000Z",
+  "updated_at": "2026-11-07T18:00:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "email",
+    "qwen3",
+    "qlora",
+    "distillation",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "dataset:corbt/enron-emails",
+    "dataset:xprilion/email-summary-dataset",
+    "dataset:HuggingFaceTB/smoltalk",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 473555485,
+  "storage_human": "474 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Email thread summarization",
+      "dataset": "Email thread summary (held-out split)",
+      "metric": "ROUGE-L",
+      "value": 26.2
+    },
+    {
+      "task": "Email thread summarization",
+      "dataset": "Email thread summary (held-out split)",
+      "metric": "METEOR",
+      "value": 24.4
+    },
+    {
+      "task": "Email subject line generation",
+      "dataset": "Enron corpus (held-out subjects, FERC public domain)",
+      "metric": "ROUGE-L",
+      "value": 38.2
+    },
+    {
+      "task": "Email reply drafting",
+      "dataset": "Clinton email-reply dataset (held-out pairs, CC BY 4.0)",
+      "metric": "ROUGE-L",
+      "value": 7.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "chirag-gamer/cracktivity-email-qwen3-0.6b · Hugging Face",
+      "url": "https://huggingface.co/chirag-gamer/cracktivity-email-qwen3-0.6b",
+      "snippet": "cracktivity-email-qwen3-0.6b Made for cracktivity — a local, privacy-first Windows email client. This model powers its on-device assistant: writing professional email replies, summarizing threads, and suggesting subject lines, with deliberately brief reasoning (one short <think> block of 1–2 sentences, then the answer) so it stays fast on CPU via llama.cpp."
+    },
+    {
+      "title": "Chinese AI Model Benchmarks 2026: DeepSeek, GLM, Kimi and Qwen ...",
+      "url": "https://explore.n1n.ai/blog/chinese-ai-model-benchmarks-2026-deepseek-glm-kimi-qwen-2026-06-28",
+      "snippet": "A deep-dive technical benchmark of the top Chinese LLMs in 2026, comparing DeepSeek V4 Pro, GLM-5, Kimi K2.6, and Qwen Max against GPT-4o for real-world developer tasks."
+    }
+  ]
+}

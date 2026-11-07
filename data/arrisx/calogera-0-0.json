@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Arrisx/Calogera-0.0",
+  "slug": "arrisx-calogera-0-0",
+  "author": "Arrisx",
+  "url": "https://huggingface.co/Arrisx/Calogera-0.0",
+  "created_at": "2026-11-05T16:45:58.000Z",
+  "updated_at": "2026-11-05T18:28:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "it",
+    "scn"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "italiano",
+    "sicilia",
+    "arturo",
+    "it",
+    "scn",
+    "base_model:unsloth/Qwen3.5-2B",
+    "base_model:finetune:unsloth/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2274069824,
+  "parameters_human": "2.27B",
+  "storage_bytes": 9116432319,
+  "storage_human": "9.1 GB",
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArrisX — Win more clients with confidence.",
+      "url": "https://arrisxai.com/",
+      "snippet": "ArrisX is the AI-powered real estate intelligence platform that gives realtors instant comps, property insights, pricing guidance, and risk detection. Advise clients faster, negotiate with confidence, and win more business."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "buenos2/qwen36-35b-abliterated-colibri-i4-gs64",
+  "slug": "buenos2-qwen36-35b-abliterated-colibri-i4-gs64",
+  "author": "buenos2",
+  "url": "https://huggingface.co/buenos2/qwen36-35b-abliterated-colibri-i4-gs64",
+  "created_at": "2026-11-07T19:09:53.000Z",
+  "updated_at": "2026-11-07T19:13:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "colibri",
+  "languages": [],
+  "tags": [
+    "colibri",
+    "qwen3_5_moe_text",
+    "qwen3.6",
+    "qwen3.6-35b-a3b",
+    "moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23931599070,
+  "storage_human": "23.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kreuzzelg/qwen36-35b-a3b-colibri-i4-gs64 · Hugging Face",
+      "url": "https://huggingface.co/Kreuzzelg/qwen36-35b-a3b-colibri-i4-gs64",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "colibri/docs/qwen36.md at main · JustVugg/colibri · GitHub",
+      "url": "https://github.com/JustVugg/colibri/blob/main/docs/qwen36.md",
+      "snippet": "A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA, Vulkan), warm ones in RAM, cold ones streamed from NVMe. Written in C, runs on the hardware you already own. - colibri/docs/qwen36.md at main · JustVugg/colibri"
+    }
+  ]
+}

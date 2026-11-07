@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "arnavthorat/submission11",
+  "slug": "arnavthorat-submission11",
+  "author": "arnavthorat",
+  "url": "https://huggingface.co/arnavthorat/submission11",
+  "created_at": "2026-11-07T13:47:22.000Z",
+  "updated_at": "2026-11-07T13:47:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "regression",
+    "enzyme-kinetics",
+    "esm2",
+    "molformer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 375313926,
+  "storage_human": "375 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arnavthorat (Arnav Thorat) - Hugging Face",
+      "url": "https://huggingface.co/arnavthorat/models",
+      "snippet": "User profile of Arnav Thorat on Hugging Face"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "khtsly/Kai-2.0-Base",
+  "slug": "khtsly-kai-2-0-base",
+  "author": "khtsly",
+  "url": "https://huggingface.co/khtsly/Kai-2.0-Base",
+  "created_at": "2026-11-07T16:55:40.000Z",
+  "updated_at": "2026-11-07T16:55:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "luau_coder",
+    "text-generation",
+    "roblox",
+    "luau",
+    "coder",
+    "on-device",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 642552248,
+  "parameters_human": "642.6M",
+  "storage_bytes": 1286729012,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "khtsly/Kai-2.0-Base · Hugging Face",
+      "url": "https://huggingface.co/khtsly/Kai-2.0-Base",
+      "snippet": "It is the mid-sized model in the LuauCoder 2.0 family (Moana 2B, Kai 0.6B, Nalu 0.3B). It is a dense decoder with 28 layers and 643M parameters trained on 56B tokens."
+    },
+    {
+      "title": "Models by khtsly – Hugging Face",
+      "url": "https://huggingface.co/models?author=khtsly&sort=modified",
+      "snippet": "Safetensors + 46 + 48 + 45 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Llama Draw Things DiffusionBee + 9 + 11 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 + 11 + 10 Hardware Add your hardware Apply filters Models 8 Base only Inference AvailableInference Edit filters Sort: Recently updated ..."
+    }
+  ]
+}

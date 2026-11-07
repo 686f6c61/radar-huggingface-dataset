@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "taurusduan/MiniMax-H3-Combat-Base-V2",
+  "slug": "taurusduan-minimax-h3-combat-base-v2",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/MiniMax-H3-Combat-Base-V2",
+  "created_at": "2026-11-07T13:45:59.000Z",
+  "updated_at": "2026-11-07T13:46:00.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "combat",
+    "action",
+    "motion",
+    "en",
+    "zh",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:adapter:Comfy-Org/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155110280,
+  "storage_human": "155 MB",
+  "base_model": "Comfy-Org/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "taurusduan/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/taurusduan/MiniMax-H3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dseditor/minimax-h3-studio-assets · Hugging Face",
+      "url": "https://huggingface.co/dseditor/minimax-h3-studio-assets",
+      "snippet": "MiniMax H3 Studio assets (mirror) Everything the H3 Studio web frontend needs on top of the base MiniMax H3 models, collected in one place so a Colab notebook can fetch it with a single hf_hub_download loop. The folder layout mirrors ComfyUI/models/, so each file goes to the same relative path."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GreatQuestion-3B-GGUF",
+  "slug": "mradermacher-greatquestion-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GreatQuestion-3B-GGUF",
+  "created_at": "2026-11-07T14:51:25.000Z",
+  "updated_at": "2026-11-07T14:51:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/GROOT-3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/GROOT-3B-GGUF",
+      "snippet": "Model tree for mradermacher/GROOT-3B-GGUF Base model meta-llama/Llama-3.2-3B-Instruct Quantized"
+    }
+  ]
+}

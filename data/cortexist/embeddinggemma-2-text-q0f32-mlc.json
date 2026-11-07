@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "cortexist/embeddinggemma-2-text-q0f32-MLC",
+  "slug": "cortexist-embeddinggemma-2-text-q0f32-mlc",
+  "author": "cortexist",
+  "url": "https://huggingface.co/cortexist/embeddinggemma-2-text-q0f32-MLC",
+  "created_at": "2026-11-07T19:42:38.000Z",
+  "updated_at": "2026-11-07T19:43:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlc-llm",
+  "languages": [],
+  "tags": [
+    "mlc-llm",
+    "jetson",
+    "cuda",
+    "sm72",
+    "feature-extraction",
+    "base_model:google/embeddinggemma-2",
+    "base_model:quantized:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 580319987,
+  "storage_human": "580 MB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/embeddinggemma-2 · Hugging Face",
+      "url": "https://huggingface.co/google/embeddinggemma-2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/",
+      "snippet": "EmbeddingGemma 2 is the most capable model for on-device multimodal embeddings, natively mapping combinations of text, images, audio, and video into a unified embedding space."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "usr256864/qw3_8_re_15k_15sch",
+  "slug": "usr256864-qw3_8_re_15k_15sch",
+  "author": "usr256864",
+  "url": "https://huggingface.co/usr256864/qw3_8_re_15k_15sch",
+  "created_at": "2026-11-05T17:32:35.000Z",
+  "updated_at": "2026-11-07T14:25:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 32774456202,
+  "storage_human": "32.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=usr256864%2Fqw3vl8b_evq",
+      "snippet": "Image-Text-to-Text Image-to-Text Image-to-Image Text-to-Image Text-to-Video Text-to-Speech 6B 12B 32B 128B PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI ..."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=usr256864%2Fqw3vl8b_ifs",
+      "snippet": "Text-to-Video Text-to-Speech 6B 12B 32B 128B > 500B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors + 45 + 47 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things DiffusionBee JoyFusion + 8 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 + 11 ..."
+    }
+  ]
+}

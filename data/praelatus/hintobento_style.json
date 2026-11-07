@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Praelatus/Hintobento_Style",
+  "slug": "praelatus-hintobento_style",
+  "author": "Praelatus",
+  "url": "https://huggingface.co/Praelatus/Hintobento_Style",
+  "created_at": "2026-11-07T19:15:47.000Z",
+  "updated_at": "2026-11-07T19:17:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:circlestone-labs/Anima",
+    "base_model:adapter:circlestone-labs/Anima",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 158041113,
+  "storage_human": "158 MB",
+  "base_model": "circlestone-labs/Anima",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hinto hintobento [Style] | TensorHub Art",
+      "url": "https://tensorhub.art/models/929199558603343419",
+      "snippet": "Download Hinto hintobento [Style] - free LORA Illustrious AI model on TENSORHUB ART. Anima, Anime, Illustration. By Praelatus"
+    },
+    {
+      "title": "Hinto hintobento [Style] - tensor.art",
+      "url": "https://tensor.art/models/929778176597486149",
+      "snippet": "Download Hinto hintobento [Style] - free LORA Illustrious AI model on TENSOR. By melinoe"
+    }
+  ]
+}

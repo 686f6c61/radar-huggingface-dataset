@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "frankmorales2020/sarvam-30b-topo-governed-gguf",
+  "slug": "frankmorales2020-sarvam-30b-topo-governed-gguf",
+  "author": "frankmorales2020",
+  "url": "https://huggingface.co/frankmorales2020/sarvam-30b-topo-governed-gguf",
+  "created_at": "2026-11-07T18:21:31.000Z",
+  "updated_at": "2026-11-07T18:36:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantization",
+    "mixture-of-experts",
+    "topological-continual-backpropagation",
+    "topocbp",
+    "arithmetic-spectral-theory",
+    "q8_0",
+    "topological-continual-learning",
+    "topo-cbp",
+    "governed-ai",
+    "multi-lingual",
+    "sarvam-30b",
+    "continual-learning",
+    "catastrophic-forgetting",
+    "topological-governance",
+    "continual-backpropagation",
+    "stability-plasticity",
+    "open-science",
+    "base_model:sarvamai/sarvam-30b",
+    "base_model:quantized:sarvamai/sarvam-30b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32152650368,
+  "parameters_human": "32.15B",
+  "storage_bytes": 34205409536,
+  "storage_human": "34.2 GB",
+  "base_model": "sarvamai/sarvam-30b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sarvam-30B Topo-Governed CBP Multi-Task - Hugging Face",
+      "url": "https://huggingface.co/frankmorales2020/new-sarvam-30b-topo-governed-cbp-multi",
+      "snippet": "Sarvam-30B Topo-Governed CBP Multi-Task This repository contains the certified checkpoint for Sarvam-30B governed by Topological Continual Backpropagation (Topo-CBP), completely eliminating catastrophic forgetting across sequential domain adaptations."
+    },
+    {
+      "title": "frankmorales2020/sarvam-30b-topo-governed-cbp-multi · Hugging Face",
+      "url": "https://huggingface.co/frankmorales2020/sarvam-30b-topo-governed-cbp-multi",
+      "snippet": "/ sarvam-30b-topo-governed-cbp-multi Like 0 PyTorch topological-continual-learning topo-cbp governed-ai multi-lingual sarvam-30b continual-learning catastrophic-forgetting topological-governance continual-backpropagation arithmetic-spectral-theory stability-plasticity open-science License:apache-2.0 Model card FilesFiles and versions xet ..."
+    }
+  ]
+}

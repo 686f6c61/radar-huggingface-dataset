@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "appliedCL/interseek-35m",
+  "slug": "appliedcl-interseek-35m",
+  "author": "appliedCL",
+  "url": "https://huggingface.co/appliedCL/interseek-35m",
+  "created_at": "2026-11-07T17:51:41.000Z",
+  "updated_at": "2026-11-07T17:55:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "biology",
+    "protein-protein-interaction",
+    "esm2",
+    "interseek",
+    "base_model:facebook/esm2_t12_35M_UR50D",
+    "base_model:finetune:facebook/esm2_t12_35M_UR50D",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33518687,
+  "parameters_human": "33.5M",
+  "storage_bytes": 268134272,
+  "storage_human": "268 MB",
+  "base_model": "facebook/esm2_t12_35M_UR50D",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Protein interaction prediction",
+      "dataset": "Bernett HIPPIE gold-standard Intra2",
+      "metric": "AUROC",
+      "value": 0.6800451796003482
+    },
+    {
+      "task": "Protein interaction prediction",
+      "dataset": "Bernett HIPPIE gold-standard Intra2",
+      "metric": "Average precision",
+      "value": 0.6700039053603177
+    },
+    {
+      "task": "Protein interaction prediction",
+      "dataset": "Bernett HIPPIE gold-standard Intra2",
+      "metric": "MCC",
+      "value": 0.24872275791032228
+    },
+    {
+      "task": "Protein interaction prediction",
+      "dataset": "D-SCRIPT S. cerevisiae test",
+      "metric": "AUROC",
+      "value": 0.7206750399999999
+    },
+    {
+      "task": "Protein interaction prediction",
+      "dataset": "D-SCRIPT S. cerevisiae test",
+      "metric": "Average precision",
+      "value": 0.2269385699741977
+    },
+    {
+      "task": "Protein interaction prediction",
+      "dataset": "D-SCRIPT S. cerevisiae test",
+      "metric": "MCC",
+      "value": 0.17923603481741227
+    }
+  ],
+  "sources": [
+    {
+      "title": "appliedCL",
+      "url": "https://appliedcl.com/",
+      "snippet": "Applied ML Research We are rethinking the architecture of artificial intelligence by looking backward at the biological substrate. The current trajectory of ML scaling relies on brute-force compute; we believe the next leap requires a more elegant symmetry between neural topology and algorithmic execution. Our collective comprises core contributors to foundational open-source primitives. We ..."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "cortexist/Nemotron-3.5-Bolt-E4B-DFlash-q0f16-MLC",
+  "slug": "cortexist-nemotron-3-5-bolt-e4b-dflash-q0f16-mlc",
+  "author": "cortexist",
+  "url": "https://huggingface.co/cortexist/Nemotron-3.5-Bolt-E4B-DFlash-q0f16-MLC",
+  "created_at": "2026-11-07T19:39:30.000Z",
+  "updated_at": "2026-11-07T19:42:20.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlc-llm",
+  "languages": [],
+  "tags": [
+    "mlc-llm",
+    "jetson",
+    "cuda",
+    "sm72",
+    "text-generation",
+    "conversational",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 754975538,
+  "storage_human": "755 MB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nemotron-3.5-Bolt-E4B-DFlash-q0f16-MLC - Hugging Face",
+      "url": "https://huggingface.co/cortexist/Nemotron-3.5-Bolt-E4B-DFlash-q0f16-MLC",
+      "snippet": "Nemotron 3.5 Bolt E4B DFlash head — MLC q0f16 FP16 DFlash draft head converted from the locally downloaded Nemotron DFlash F16 GGUF through the fork's extraction/conversion pipeline. Cached DFlash configuration, 16,384-token capacity. This is an assistant, not a standalone language model; it requires the matching Nemotron target and its feature exports."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

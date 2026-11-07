@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Vishva007/Qwen3.5-9B-NVFP4",
+  "slug": "vishva007-qwen3-5-9b-nvfp4",
+  "author": "Vishva007",
+  "url": "https://huggingface.co/Vishva007/Qwen3.5-9B-NVFP4",
+  "created_at": "2026-10-13T09:34:16.000Z",
+  "updated_at": "2026-11-07T18:01:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "quantization",
+    "auto-round",
+    "nvfp4",
+    "fp4",
+    "llm-compressor",
+    "compressed-tensors",
+    "text-generation",
+    "image-text-to-text",
+    "reasoning",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 124,
+  "trending_score": 0,
+  "parameters": 7090363888,
+  "parameters_human": "7.09B",
+  "storage_bytes": 38908759235,
+  "storage_human": "38.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vishva007/Qwen3.5-9B-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/Vishva007/Qwen3.5-9B-NVFP4",
+      "snippet": "Safetensors qwen3_5 quantization auto-round nvfp4 fp4 llm-compressor compressed-tensors text-generation reasoning conversational 8-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Vishva007/Qwen3.5-9B-NVFP4 Quantization Details Key Notes vLLM Serving MTP / Speculative Decoding Notes 🚀 ..."
+    },
+    {
+      "title": "Vishva007/Qwen3.5-9B-W4A16-AutoRound-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/Vishva007/Qwen3.5-9B-W4A16-AutoRound-NVFP4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

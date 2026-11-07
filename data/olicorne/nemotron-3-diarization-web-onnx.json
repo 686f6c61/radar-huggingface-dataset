@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Olicorne/Nemotron-3-Diarization-web-onnx",
+  "slug": "olicorne-nemotron-3-diarization-web-onnx",
+  "author": "Olicorne",
+  "url": "https://huggingface.co/Olicorne/Nemotron-3-Diarization-web-onnx",
+  "created_at": "2026-11-07T16:51:48.000Z",
+  "updated_at": "2026-10-03T08:24:21.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "speaker-diarization",
+    "streaming-sortformer",
+    "onnxruntime-web",
+    "voice-activity-detection",
+    "base_model:nvidia/Nemotron-3-Diarization",
+    "base_model:quantized:nvidia/Nemotron-3-Diarization",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 700320429,
+  "storage_human": "700 MB",
+  "base_model": "nvidia/Nemotron-3-Diarization",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NealCaren/Nemotron-3-Diarization-ONNX · Hugging Face",
+      "url": "https://huggingface.co/NealCaren/Nemotron-3-Diarization-ONNX",
+      "snippet": "An ONNX export of nvidia/Nemotron-3-Diarization, a 100M-parameter streaming Sortformer speaker-diarization model (up to 8 speakers, 10 ms resolution). These files are meant for running the model in a web browser with ONNX Runtime Web, or anywhere else ONNX Runtime runs. This is an unofficial ..."
+    },
+    {
+      "title": "NealCaren/Nemotron-3-Diarization-ONNX at main - Hugging Face",
+      "url": "https://huggingface.co/NealCaren/Nemotron-3-Diarization-ONNX/tree/main",
+      "snippet": "No problematic imports detected 132 kB xet ONNX export of nvidia/Nemotron-3-Diarization (fp32 + int8) about 5 hours ago"
+    }
+  ]
+}

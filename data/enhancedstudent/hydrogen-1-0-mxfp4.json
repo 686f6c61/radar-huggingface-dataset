@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "enhancedstudent/Hydrogen-1.0-MXFP4",
+  "slug": "enhancedstudent-hydrogen-1-0-mxfp4",
+  "author": "enhancedstudent",
+  "url": "https://huggingface.co/enhancedstudent/Hydrogen-1.0-MXFP4",
+  "created_at": "2026-11-07T15:04:22.000Z",
+  "updated_at": "2026-11-07T15:04:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "mxfp4",
+    "science",
+    "text-generation",
+    "conversational",
+    "base_model:deep-principle/Hydrogen-1.0",
+    "base_model:quantized:deep-principle/Hydrogen-1.0",
+    "license:mit",
+    "8-bit",
+    "quark",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 384336046080,
+  "parameters_human": "384.34B",
+  "storage_bytes": 422791506040,
+  "storage_human": "422.8 GB",
+  "base_model": "deep-principle/Hydrogen-1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deep-principle/Hydrogen-1.0-MXFP4 · Hugging Face",
+      "url": "https://huggingface.co/deep-principle/Hydrogen-1.0-MXFP4",
+      "snippet": "Text Generation model with 384B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "deep-principle/Hydrogen-1.0 · Hugging Face",
+      "url": "https://huggingface.co/deep-principle/Hydrogen-1.0",
+      "snippet": "This repository holds the full-precision BF16 weights of Hydrogen-1.0. NVFP4 and MXFP4 quantized versions are published in separate repositories (see Versions). Available context and output budgets depend on the inference framework, service configuration, and runtime resources. Follow the deployment ..."
+    }
+  ]
+}

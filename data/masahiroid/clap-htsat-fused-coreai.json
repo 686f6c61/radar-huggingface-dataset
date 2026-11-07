@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "masahiroid/clap-htsat-fused-coreai",
+  "slug": "masahiroid-clap-htsat-fused-coreai",
+  "author": "masahiroid",
+  "url": "https://huggingface.co/masahiroid/clap-htsat-fused-coreai",
+  "created_at": "2026-11-07T17:17:16.000Z",
+  "updated_at": "2026-11-07T17:17:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "clap",
+    "coreai",
+    "checkpoint-conversion",
+    "base_model:laion/clap-htsat-fused",
+    "base_model:finetune:laion/clap-htsat-fused",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 742008466,
+  "storage_human": "742 MB",
+  "base_model": "laion/clap-htsat-fused",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "clap-htsat-fused · Models",
+      "url": "https://www.modelscope.cn/models/laion/clap-htsat-fused",
+      "snippet": "Second, we construct a contrastive language-audio pretraining model by considering different audio encoders and text encoders. We incorporate the feature fusion mechanism and keyword-to-caption augmentation into the model design to further enable the model to process audio inputs of variable lengths and enhance the performance."
+    },
+    {
+      "title": "CLAP · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/clap",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

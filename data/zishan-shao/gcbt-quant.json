@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Zishan-Shao/gcbt-quant",
+  "slug": "zishan-shao-gcbt-quant",
+  "author": "Zishan-Shao",
+  "url": "https://huggingface.co/Zishan-Shao/gcbt-quant",
+  "created_at": "2026-11-07T16:07:34.000Z",
+  "updated_at": "2026-11-07T16:45:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53815416166,
+  "storage_human": "53.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Joint Branch-Space Transform Coding for Diffusion Activation ...",
+      "url": "https://arxiv.org/pdf/2610.00930",
+      "snippet": "Figure 1: GCBT is a plug-and-play activation transform built on top of existing post-training quantizers in CFG-guided diffusion models. By applying a branch-wise rotation prior to quantization, it requires minimal modifications to model parameters or base pipelines."
+    },
+    {
+      "title": "Zishan-Shao (Zishan Shao) · GitHub",
+      "url": "https://github.com/Zishan-Shao",
+      "snippet": "👋 Hi, I’m @Zishan-Shao (You can call me Bruce, I know it's hard to pronounce this) 👀 I’m broadly interested in Large Language Models (LLMs) and ML Systems: spanning LLM efficiency (model compression, hardware-aware acceleration) and mechanistic analysis (decode-time dynamics)."
+    }
+  ]
+}

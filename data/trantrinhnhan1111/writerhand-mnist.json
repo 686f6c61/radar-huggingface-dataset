@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "TranTrinhNhan1111/WriteRHand-MNIST",
+  "slug": "trantrinhnhan1111-writerhand-mnist",
+  "author": "TranTrinhNhan1111",
+  "url": "https://huggingface.co/TranTrinhNhan1111/WriteRHand-MNIST",
+  "created_at": "2026-11-07T19:33:27.000Z",
+  "updated_at": "2026-11-07T19:33:37.000Z",
+  "license": "unspecified-educational",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-classification",
+    "mnist",
+    "educational",
+    "from-scratch",
+    "dataset:ylecun/mnist",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22042610,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TranTrinhNhan1111 (Tran Trinh Nhan) - Hugging Face",
+      "url": "https://huggingface.co/TranTrinhNhan1111/models",
+      "snippet": "User profile of Tran Trinh Nhan on Hugging Face"
+    },
+    {
+      "title": "MNIST Dataset : Practical Applications Using Keras and PyTorch",
+      "url": "https://www.geeksforgeeks.org/machine-learning/mnist-dataset/",
+      "snippet": "Output: Sample Images from the MNIST Training Dataset Loading MNIST dataset Using PyTorch This code shows how to load the MNIST handwritten digit dataset using PyTorch and visualize a few sample images. It helps in understanding how images and labels are accessed through a DataLoader before training a model. Imports required libraries for data loading, tensor transformation and visualization ..."
+    }
+  ]
+}

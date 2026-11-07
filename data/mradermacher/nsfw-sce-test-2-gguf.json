@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mradermacher/nsfw-sce-test-2-GGUF",
+  "slug": "mradermacher-nsfw-sce-test-2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/nsfw-sce-test-2-GGUF",
+  "created_at": "2025-02-21T06:31:13.000Z",
+  "updated_at": "2026-11-07T14:24:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:mergekit-community/nsfw-sce-test-2",
+    "base_model:quantized:mergekit-community/nsfw-sce-test-2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 107,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820249984,
+  "storage_human": "71.8 GB",
+  "base_model": "mergekit-community/nsfw-sce-test-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/nsfw-sce-test-2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/nsfw-sce-test-2-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/nsfw-sce-test-2-redux-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/nsfw-sce-test-2-redux-GGUF",
+      "snippet": "Inference Endpoints conversational Not-For-All-Audiences Model card Files Files and versions Community Train Deploy Use this model"
+    }
+  ]
+}

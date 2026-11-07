@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "okasi/piper-english-kusal-onnx-q8",
+  "slug": "okasi-piper-english-kusal-onnx-q8",
+  "author": "okasi",
+  "url": "https://huggingface.co/okasi/piper-english-kusal-onnx-q8",
+  "created_at": "2026-11-07T12:51:48.000Z",
+  "updated_at": "2026-11-07T12:51:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "piper",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "piper",
+    "onnx",
+    "onnxruntime-web",
+    "quantized",
+    "text-to-speech",
+    "en",
+    "base_model:rhasspy/piper-voices",
+    "base_model:quantized:rhasspy/piper-voices",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20072225,
+  "storage_human": "20 MB",
+  "base_model": "rhasspy/piper-voices",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "en/kusal/en_US-kusal-medium.onnx · Derur/piper-tts-models at main",
+      "url": "https://huggingface.co/Derur/piper-tts-models/blob/main/en/kusal/en_US-kusal-medium.onnx",
+      "snippet": "Derur / piper-tts-models like 2 ONNX 32 languages Model card FilesFiles and versions Community main piper-tts-models / en / kusal /en_US-kusal-medium.onnx Derur Upload 110 files 4910b63 verified19 days ago download Copy download link history blame contribute delete Safe 63.2 MB"
+    },
+    {
+      "title": "en/en_US/kusal/medium/en_US-kusal-medium.onnx · rhasspy/piper-voices at ...",
+      "url": "https://huggingface.co/rhasspy/piper-voices/blob/v1.0.0/en/en_US/kusal/medium/en_US-kusal-medium.onnx",
+      "snippet": "rhasspy / piper-voices like 55 ONNX License: mit Model card FilesFiles and versions Community 7 v1.0.0 piper-voices / en / en_US / kusal / medium /en_US-kusal-medium.onnx Michael Hansen Add v1.0 and v0.2 voices 5227e41 8 months ago download history blame No virus 63.2 MB"
+    }
+  ]
+}

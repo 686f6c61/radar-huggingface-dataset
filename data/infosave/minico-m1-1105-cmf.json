@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "infosave/Minico-M1-1105-cmf",
+  "slug": "infosave-minico-m1-1105-cmf",
+  "author": "infosave",
+  "url": "https://huggingface.co/infosave/Minico-M1-1105-cmf",
+  "created_at": "2026-11-07T14:33:57.000Z",
+  "updated_at": "2026-11-07T14:40:28.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "cortiq",
+  "languages": [
+    "en",
+    "ru",
+    "zh"
+  ],
+  "tags": [
+    "cortiq",
+    "cmf",
+    "quantized",
+    "q8_2f",
+    "q4tp",
+    "lfm2",
+    "liquid",
+    "reasoning",
+    "reasoning-effort",
+    "tool-calling",
+    "long-context",
+    "edge",
+    "metal",
+    "vulkan",
+    "text-generation",
+    "en",
+    "ru",
+    "zh",
+    "base_model:Mincofficial/Minico-M1-1105",
+    "base_model:quantized:Mincofficial/Minico-M1-1105",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Mincofficial/Minico-M1-1105",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mincofficial/Minico-M1-1105 at main - Hugging Face",
+      "url": "https://huggingface.co/Mincofficial/Minico-M1-1105/tree/main",
+      "snippet": "Mincofficial / Minico-M1-1105 Like 1 Text Generation Transformers Safetensors English lfm2 liquid reasoning reasoning-effort thinking tool-calling small-language-model on-device edge conversational License:lfm1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "CMF — convert a model, then run it - a Hugging Face Space by infosave",
+      "url": "https://huggingface.co/spaces/infosave/cmf-converter",
+      "snippet": "This app lets you enter the name of a Hugging Face model (and an optional access token), choose a quantization level, and download a tiny 8 MB CMF file that contains the model, tokenizer, and chat ..."
+    }
+  ]
+}

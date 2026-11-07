@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "HvOkla/Slytherin-RL",
+  "slug": "hvokla-slytherin-rl",
+  "author": "HvOkla",
+  "url": "https://huggingface.co/HvOkla/Slytherin-RL",
+  "created_at": "2026-11-07T14:59:42.000Z",
+  "updated_at": "2026-11-07T15:05:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 153701,
+  "storage_human": "153701 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hogwarts school uniform - slytherin AI LoRA Model | PixAI",
+      "url": "https://pixai.art/en/model/1763107125819381423",
+      "snippet": "hogwarts school uniform - slytherin is an AI LoRA by Michu Oh on PixAI. Tags: Mature Female. Try it free."
+    },
+    {
+      "title": "Slytherin Robe (Harry Potter) Outfit… AI LoRA Model | PixAI",
+      "url": "https://pixai.art/model/1769664673884314711",
+      "snippet": "A set of robes, fitting for a student of the House Slytherin.I will do the other houses as well, if there is interest. Let me know.Trigger with: EPRobeSlytherin, wearing EPRobeSlytherin and use keywords black robe, hood down, wide sleeves, green necktie, diagonal-striped necktie, white shirt, collared shirt, badge."
+    }
+  ]
+}

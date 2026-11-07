@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "terry2010/Ornith-1.5-35B-A3B-BigBang-abl-mlx-4bit-mtp",
+  "slug": "terry2010-ornith-1-5-35b-a3b-bigbang-abl-mlx-4bit-mtp",
+  "author": "terry2010",
+  "url": "https://huggingface.co/terry2010/Ornith-1.5-35B-A3B-BigBang-abl-mlx-4bit-mtp",
+  "created_at": "2026-11-07T18:48:41.000Z",
+  "updated_at": "2026-11-07T18:49:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "qwen3_5_moe",
+    "moe",
+    "abliterated",
+    "mtp",
+    "speculative-decoding",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:KaedeTai/Ornith-1.5-35B-A3B-BigBang-MTP-mlx-4bit",
+    "base_model:quantized:KaedeTai/Ornith-1.5-35B-A3B-BigBang-MTP-mlx-4bit",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "KaedeTai/Ornith-1.5-35B-A3B-BigBang-MTP-mlx-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EryriLabs/Ornith-1.5-35B-A3B-BigBang-MTP · Hugging Face",
+      "url": "https://huggingface.co/EryriLabs/Ornith-1.5-35B-A3B-BigBang-MTP",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

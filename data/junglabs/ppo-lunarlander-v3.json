@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "JungLabs/ppo-LunarLander-v3",
+  "slug": "junglabs-ppo-lunarlander-v3",
+  "author": "JungLabs",
+  "url": "https://huggingface.co/JungLabs/ppo-LunarLander-v3",
+  "created_at": "2026-11-07T16:24:31.000Z",
+  "updated_at": "2026-11-07T16:25:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 282816,
+  "storage_human": "282816 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AminVilan/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/AminVilan/ppo-LunarLander-v3",
+      "snippet": "🚀 PPO Agent playing for LunarLander-v3 The Github repository contains a trained Proximal Policy Optimization (PPO) agent for the classic control task LunarLander-v3 from Gymnasium. The model is implemented and trained using the Stable-Baselines3 library."
+    },
+    {
+      "title": "JoaoAI/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/JoaoAI/ppo-LunarLander-v3",
+      "snippet": "PPO Agent playing LunarLander-v3 This is a trained model of a PPO agent playing LunarLander-v3 using the stable-baselines3 library."
+    }
+  ]
+}

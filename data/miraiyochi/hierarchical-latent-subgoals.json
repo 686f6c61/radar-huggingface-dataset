@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Miraiyochi/hierarchical-latent-subgoals",
+  "slug": "miraiyochi-hierarchical-latent-subgoals",
+  "author": "Miraiyochi",
+  "url": "https://huggingface.co/Miraiyochi/hierarchical-latent-subgoals",
+  "created_at": "2026-11-07T14:50:26.000Z",
+  "updated_at": "2026-11-07T15:15:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "imitation-learning",
+    "goal-conditioned",
+    "hierarchical-policy",
+    "flow-matching",
+    "robotics",
+    "pusht",
+    "libero",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1681210520,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - miraiyochi-ai/hierarchical-latent-subgoals: Code for ...",
+      "url": "https://github.com/miraiyochi-ai/hierarchical-latent-subgoals",
+      "snippet": "Code for the UniReps 2026 workshop extended abstract \"Predicted Future Latents as Subgoals: Hierarchical Policies Outperform Flat Policies Beyond the Training Goal Distance\" (Takahiro Morimoto, Miraiyochi, inc.). A goal-conditioned imitation policy is split into two levels that run inside one network, with no test-time search."
+    },
+    {
+      "title": "Metro-WM: Long-Horizon Latent Planning with Realisable Sub-Goals",
+      "url": "https://arxiv.org/abs/2609.31868",
+      "snippet": "Model-predictive control with Joint-Embedding Predictive Architectures (JEPAs) provides a strong zero-shot goal-reaching planner, but it is only effective over short planning horizons. Hierarchical extensions attempt to bridge this gap by learning a macro planner to predict intermediate latent sub-goals to guide the micro planner. In this work, we demonstrate that unconstrained latent sub-goal ..."
+    }
+  ]
+}

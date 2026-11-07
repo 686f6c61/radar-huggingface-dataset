@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Myungkyu/cosmos3_mot_l36_d1024_robodojo_b64_60k_scratch_djoint_ema",
+  "slug": "myungkyu-cosmos3_mot_l36_d1024_robodojo_b64_60k_scratch_djoint_ema",
+  "author": "Myungkyu",
+  "url": "https://huggingface.co/Myungkyu/cosmos3_mot_l36_d1024_robodojo_b64_60k_scratch_djoint_ema",
+  "created_at": "2026-11-07T19:30:18.000Z",
+  "updated_at": "2026-11-07T19:42:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "cosmos-framework",
+  "languages": [],
+  "tags": [
+    "cosmos-framework",
+    "robotics",
+    "world-model",
+    "action-policy",
+    "cosmos3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31999952513,
+  "storage_human": "32.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cosmos3_mot_l36_d1024_robodojo_b64_60k_scratch - Hugging Face",
+      "url": "https://huggingface.co/Myungkyu/cosmos3_mot_l36_d1024_robodojo_b64_60k_scratch",
+      "snippet": "cosmos3_mot_l36_d1024_robodojo_b64_60k_scratch Cosmos3-Nano video world model fine-tuned with an external action DiT (one-way video-to-action conditioning, shared action schedule) for closed-loop robot control."
+    },
+    {
+      "title": "cosmos3_mot_l36_d1024_robodojo_decoupled_b64_60k_scratch_ema",
+      "url": "https://huggingface.co/Myungkyu/cosmos3_mot_l36_d1024_robodojo_decoupled_b64_60k_scratch_ema",
+      "snippet": "Cosmos3-Nano video world model fine-tuned with an external action DiT (one-way video-to-action conditioning, shared action schedule) for closed-loop robot control. Dataset: RoboDojo Sim (LeRobot v3.0). Weights: the EMA weights (net_ema, cast to bf16, stored under the net.* names) of the final ..."
+    },
+    {
+      "title": "Cosmos 3 — Cosmos Lab - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/cosmos-lab/cosmos3/",
+      "snippet": "Cosmos 3 connects understanding, generation, simulation, and action through a shared omnimodal world model that moves fluidly across text, images, video, audio, and actions."
+    }
+  ]
+}

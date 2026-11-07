@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Arete-27B-i1-GGUF",
+  "slug": "mradermacher-arete-27b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Arete-27B-i1-GGUF",
+  "created_at": "2026-11-07T18:20:46.000Z",
+  "updated_at": "2026-11-07T18:46:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nous-research",
+    "arete",
+    "supervised-fine-tuning",
+    "value-alignment",
+    "en",
+    "dataset:NousResearch/arete-data-pairs",
+    "base_model:NousResearch/Arete-27B",
+    "base_model:quantized:NousResearch/Arete-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 23319842816,
+  "storage_human": "23.3 GB",
+  "base_model": "NousResearch/Arete-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Arete-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Arete-27B-GGUF",
+      "snippet": "Machine learning model with 27B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "mradermacher/beast-27b-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/beast-27b-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

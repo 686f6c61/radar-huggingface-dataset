@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "GinDuck/microduck-duck-rock",
+  "slug": "ginduck-microduck-duck-rock",
+  "author": "GinDuck",
+  "url": "https://huggingface.co/GinDuck/microduck-duck-rock",
+  "created_at": "2026-11-07T14:04:34.000Z",
+  "updated_at": "2026-11-07T14:04:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5624963,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face Opens Pre-Orders for $399 Microduck RL Biped - AI Weekly",
+      "url": "https://aiweekly.co/alerts/hugging-face-opens-pre-orders-for-399-microduck-rl-biped",
+      "snippet": "For $399, Hugging Face's Pollen Robotics unit is taking pre-orders on Microduck, a 25-centimeter bipedal duck robot with 15 motors, a camera, a small…"
+    },
+    {
+      "title": "Buy Microduck: Small robot. Super smart.",
+      "url": "https://microducks.org/",
+      "snippet": "Buy Microduck, the 10 inch bipedal AI robot by Pollen Robotics × Hugging Face, shown by Jensen Huang at NVIDIA GTC Berlin. Official preorders from $499."
+    }
+  ]
+}

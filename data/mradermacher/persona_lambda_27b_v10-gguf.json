@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mradermacher/persona_lambda_27b_v10-GGUF",
+  "slug": "mradermacher-persona_lambda_27b_v10-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/persona_lambda_27b_v10-GGUF",
+  "created_at": "2026-11-07T16:11:47.000Z",
+  "updated_at": "2026-11-07T16:33:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "experimental",
+    "persona",
+    "en",
+    "base_model:eousphoros/persona_lambda_27b_v10",
+    "base_model:quantized:eousphoros/persona_lambda_27b_v10",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 28246747392,
+  "storage_human": "28.2 GB",
+  "base_model": "eousphoros/persona_lambda_27b_v10",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/Piccolo-27B-VL-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Piccolo-27B-VL-GGUF",
+      "snippet": "Machine learning model with 27B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

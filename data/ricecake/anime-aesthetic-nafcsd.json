@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "ricecake/anime-aesthetic-nafcsd",
+  "slug": "ricecake-anime-aesthetic-nafcsd",
+  "author": "ricecake",
+  "url": "https://huggingface.co/ricecake/anime-aesthetic-nafcsd",
+  "created_at": "2026-11-07T18:08:37.000Z",
+  "updated_at": "2026-11-07T18:12:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anime",
+    "aesthetic",
+    "image-scoring",
+    "data-curation",
+    "watermark-detection",
+    "danbooru",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1215932912,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rice cake｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/en/model/1839136232362524999",
+      "snippet": "Just created this stunning anime, character anime art with the amazing 'rice cake' model on PixAI! Search for \"rice cake\" on PixAI – the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    }
+  ]
+}

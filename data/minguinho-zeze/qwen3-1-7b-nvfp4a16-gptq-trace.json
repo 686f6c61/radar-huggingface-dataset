@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Minguinho-zeze/Qwen3-1.7B-NVFP4A16-GPTQ-Trace",
+  "slug": "minguinho-zeze-qwen3-1-7b-nvfp4a16-gptq-trace",
+  "author": "Minguinho-zeze",
+  "url": "https://huggingface.co/Minguinho-zeze/Qwen3-1.7B-NVFP4A16-GPTQ-Trace",
+  "created_at": "2026-11-07T15:29:37.000Z",
+  "updated_at": "2026-11-07T15:29:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3",
+    "quantization",
+    "compressed-tensors",
+    "nvfp4a16",
+    "gptq",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1426805558,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minguinho-zeze/Qwen3-1.7B-NVFP4A16-GPTQ-Trace · Hugging Face",
+      "url": "https://huggingface.co/Minguinho-zeze/Qwen3-1.7B-NVFP4A16-GPTQ-Trace",
+      "snippet": "NVFP4 weights with 16-bit activations (W4A16), group size 16. Algorithm: GPTQ. The embedding, normalization layers, and lm_head remain unquantized. The quantized parameter fraction is 81.9079%. KV cache was BF16 during evaluation. Weights use compressed-tensors. Exact settings and quantizer versions ..."
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "Text Generation model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

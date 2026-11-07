@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "OxReD112/kokoro-german-victoria-web",
+  "slug": "oxred112-kokoro-german-victoria-web",
+  "author": "OxReD112",
+  "url": "https://huggingface.co/OxReD112/kokoro-german-victoria-web",
+  "created_at": "2026-11-07T16:19:34.000Z",
+  "updated_at": "2026-11-07T16:27:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnxruntime",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "text-to-speech",
+    "kokoro",
+    "german",
+    "web",
+    "de",
+    "base_model:soniqo/Kokoro-82M-German-Victoria-ONNX",
+    "base_model:quantized:soniqo/Kokoro-82M-German-Victoria-ONNX",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85067074,
+  "storage_human": "85 MB",
+  "base_model": "soniqo/Kokoro-82M-German-Victoria-ONNX",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kokoro German Victoria (ONNX, int8) - GitHub",
+      "url": "https://github.com/Benjamin-Wegener/kokoro-german-victoria-onnx-int8",
+      "snippet": "ONNX export of kikiri-tts/kikiri-german-victoria, a German single-speaker, Kokoro-compatible (StyleTTS2) text-to-speech model, for on-device inference with sherpa-onnx. Built for the offline SISA-Collector Android app."
+    },
+    {
+      "title": "Kokoro German Victoria Onnx Int8 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/benjamin-wegener/kokoro-german-victoria-onnx-int8",
+      "snippet": "Registry entry for model Kokoro German Victoria Onnx Int8; source metadata pending."
+    }
+  ]
+}

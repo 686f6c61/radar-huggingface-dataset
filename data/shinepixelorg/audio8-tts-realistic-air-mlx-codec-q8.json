@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "ShinePixelOrg/Audio8-TTS-Realistic-Air-MLX-Codec-Q8",
+  "slug": "shinepixelorg-audio8-tts-realistic-air-mlx-codec-q8",
+  "author": "ShinePixelOrg",
+  "url": "https://huggingface.co/ShinePixelOrg/Audio8-TTS-Realistic-Air-MLX-Codec-Q8",
+  "created_at": "2026-11-07T15:43:20.000Z",
+  "updated_at": "2026-11-07T15:44:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "arktts",
+    "audio8",
+    "voice-cloning",
+    "codec-q8",
+    "text-to-speech",
+    "base_model:Edge0/Audio8-TTS-Realistic-Air",
+    "base_model:quantized:Edge0/Audio8-TTS-Realistic-Air",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 601159424,
+  "parameters_human": "601.2M",
+  "storage_bytes": 1573792100,
+  "storage_human": "1.6 GB",
+  "base_model": "Edge0/Audio8-TTS-Realistic-Air",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TechnoBaptist/Audio8-TTS-Realistic-Air · Hugging Face",
+      "url": "https://huggingface.co/TechnoBaptist/Audio8-TTS-Realistic-Air",
+      "snippet": "Then move the inputs to the model device and run the same generation and decoding steps. For command-line inference, batching, and supervised fine-tuning, see the Audio8 TTS repository, using Edge0/Audio8-TTS-Realistic-Air as the model path. High-throughput serving: SGLang Omni The SGLang Omni adapter provides GPU serving for Audio8 TTS."
+    },
+    {
+      "title": "Audio8-TTS-Realistic-Air · 0.6B — Listening Demo",
+      "url": "https://edge0-ai.github.io/Audio8_TTS/",
+      "snippet": "Listen to Audio8-TTS-Realistic-Air: expressive speech in a compact 0.6B model, with 23 supported languages. Explore 24 examples alongside Preview, Breeze-TTS-2, Qwen3-TTS and Higgs TTS 3."
+    }
+  ]
+}

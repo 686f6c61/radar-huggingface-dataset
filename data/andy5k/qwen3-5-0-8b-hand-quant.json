@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Andy5k/Qwen3.5-0.8B-hand-quant",
+  "slug": "andy5k-qwen3-5-0-8b-hand-quant",
+  "author": "Andy5k",
+  "url": "https://huggingface.co/Andy5k/Qwen3.5-0.8B-hand-quant",
+  "created_at": "2026-11-07T14:36:07.000Z",
+  "updated_at": "2026-11-07T14:44:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantization",
+    "llama.cpp",
+    "qwen35",
+    "hand-quantized",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 498454560,
+  "storage_human": "498 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-0.8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+      "snippet": "Image-Text-to-Text model with 0.9B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "svtcobra6/ally",
+  "slug": "svtcobra6-ally",
+  "author": "svtcobra6",
+  "url": "https://huggingface.co/svtcobra6/ally",
+  "created_at": "2026-11-07T18:55:05.000Z",
+  "updated_at": "2026-11-07T19:30:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778604760,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "svtcobra6 (Chris Espos) - Hugging Face",
+      "url": "https://huggingface.co/svtcobra6/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 10 hours ago ... published a model about 10 hours ago"
+    },
+    {
+      "title": "svtcobra6/EmmaW-lora · Hugging Face",
+      "url": "https://huggingface.co/svtcobra6/EmmaW-lora",
+      "snippet": "EmmaW-lora Model trained with AI Toolkit by Ostris Trigger words No trigger words defined. Download model and use it with ComfyUI, AUTOMATIC1111, SD.Next, Invoke AI, etc. Weights for this model are available in Safetensors format. Download them in the Files & versions tab. Use it with the 🧨 diffusers library"
+    }
+  ]
+}

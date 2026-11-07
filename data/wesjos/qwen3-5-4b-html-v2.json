@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "wesjos/Qwen3.5-4B-HTML-v2",
+  "slug": "wesjos-qwen3-5-4b-html-v2",
+  "author": "wesjos",
+  "url": "https://huggingface.co/wesjos/Qwen3.5-4B-HTML-v2",
+  "created_at": "2026-10-14T11:46:10.000Z",
+  "updated_at": "2026-11-07T12:58:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "html-generation",
+    "web-design",
+    "visual-ui",
+    "visual-question-answering",
+    "reasoning",
+    "zero-system-prompt",
+    "cot-purity",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:wesjos/mario-html-sft",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 136,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9350130324,
+  "storage_human": "9.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "snippet": "Image-Text-to-Text model with 5B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "Text Generation model with 4B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

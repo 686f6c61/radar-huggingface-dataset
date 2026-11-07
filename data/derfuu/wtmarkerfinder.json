@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Derfuu/WTMarkerFinder",
+  "slug": "derfuu-wtmarkerfinder",
+  "author": "Derfuu",
+  "url": "https://huggingface.co/Derfuu/WTMarkerFinder",
+  "created_at": "2025-02-03T11:42:15.000Z",
+  "updated_at": "2026-11-07T14:32:19.000Z",
+  "license": "wtfpl",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:wtfpl",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228921572,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WTMarkerFinder Object Detection Model by Derfuu",
+      "url": "https://universe.roboflow.com/derfuu/wtmarkerfinder",
+      "snippet": "61 open source marker images plus a pre-trained WTMarkerFinder model and API. Created by Derfuu"
+    },
+    {
+      "title": "How to Use the WTMarkerFinder Object Detection API",
+      "url": "https://universe.roboflow.com/derfuu/wtmarkerfinder/model/11",
+      "snippet": "Learn how to use the WTMarkerFinder Object Detection API (v11, 2025-02-01 7:51pm), created by Derfuu"
+    }
+  ]
+}

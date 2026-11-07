@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "inference-optimization/Qwen3-30B-A3B-INT3xFP8",
+  "slug": "inference-optimization-qwen3-30b-a3b-int3xfp8",
+  "author": "inference-optimization",
+  "url": "https://huggingface.co/inference-optimization/Qwen3-30B-A3B-INT3xFP8",
+  "created_at": "2026-11-07T18:45:37.000Z",
+  "updated_at": "2026-11-07T18:46:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:2309.00071",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-30B-A3B-Base",
+    "base_model:quantized:Qwen/Qwen3-30B-A3B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 31638014486,
+  "storage_human": "31.6 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inference-optimization/Qwen3-30B-A3B-RAZOR20 · Hugging Face",
+      "url": "https://huggingface.co/inference-optimization/Qwen3-30B-A3B-RAZOR20",
+      "snippet": "Text Generation model with 25B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen/Qwen3-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
+      "snippet": "Text Generation model with 31B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "terelabs/Arete-27B-GGUF",
+  "slug": "terelabs-arete-27b-gguf",
+  "author": "terelabs",
+  "url": "https://huggingface.co/terelabs/Arete-27B-GGUF",
+  "created_at": "2026-11-07T11:14:13.000Z",
+  "updated_at": "2026-11-07T17:22:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "imatrix",
+    "llama.cpp",
+    "text-generation",
+    "base_model:NousResearch/Arete-27B",
+    "base_model:quantized:NousResearch/Arete-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 59908259518,
+  "storage_human": "59.9 GB",
+  "base_model": "NousResearch/Arete-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UraionLabs/Arete-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/UraionLabs/Arete-27B-GGUF",
+      "snippet": "Text Generation model with 27B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "mradermacher/Arete-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Arete-27B-GGUF",
+      "snippet": "Machine learning model with 27B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

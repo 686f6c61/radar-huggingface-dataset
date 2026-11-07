@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Chungulus/Arete-27B-Q5_K_M-GGUF",
+  "slug": "chungulus-arete-27b-q5_k_m-gguf",
+  "author": "Chungulus",
+  "url": "https://huggingface.co/Chungulus/Arete-27B-Q5_K_M-GGUF",
+  "created_at": "2026-11-07T13:00:09.000Z",
+  "updated_at": "2026-11-07T13:01:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_5",
+    "nous-research",
+    "arete",
+    "image-text-to-text",
+    "conversational",
+    "base_model:NousResearch/Arete-27B",
+    "base_model:quantized:NousResearch/Arete-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 20162246496,
+  "storage_human": "20.2 GB",
+  "base_model": "NousResearch/Arete-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/NousResearch_Arete-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/NousResearch_Arete-27B-GGUF",
+      "snippet": "A Q4_K_M is still mostly Q4_K; the extra precision goes to the weights this particular model is most sensitive to. The S, M or L in a name says how much of the model stays at the base precision: about 90 % for S, 70 % for M and 50 % for L."
+    },
+    {
+      "title": "NousResearch_Arete-27B-Q5_K_M.gguf - Hugging Face",
+      "url": "https://huggingface.co/bartowski/NousResearch_Arete-27B-GGUF/blob/main/NousResearch_Arete-27B-Q5_K_M.gguf",
+      "snippet": "Instructions to use bartowski/NousResearch_Arete-27B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use bartowski/NousResearch_Arete-27B-GGUF with llama.cpp: Install (macOS, Linux)"
+    }
+  ]
+}

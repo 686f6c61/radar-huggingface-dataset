@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "masahiroid/mdeberta-v3-base-coreai",
+  "slug": "masahiroid-mdeberta-v3-base-coreai",
+  "author": "masahiroid",
+  "url": "https://huggingface.co/masahiroid/mdeberta-v3-base-coreai",
+  "created_at": "2026-11-07T17:00:06.000Z",
+  "updated_at": "2026-11-07T17:00:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deberta-v2",
+    "coreai",
+    "checkpoint-conversion",
+    "base_model:microsoft/mdeberta-v3-base",
+    "base_model:finetune:microsoft/mdeberta-v3-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1117493529,
+  "storage_human": "1.1 GB",
+  "base_model": "microsoft/mdeberta-v3-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/mdeberta-v3-base · Hugging Face",
+      "url": "https://huggingface.co/microsoft/mdeberta-v3-base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face",
+      "url": "https://huggingface.co/api/models/microsoft/mdeberta-v3-base",
+      "snippet": "{\"_id\":\"621ffdc136468d709f17defb\",\"id\":\"microsoft/mdeberta-v3-base\",\"private\":false,\"pipeline_tag\":\"fill-mask\",\"library_name\":\"transformers\",\"tags\": [\"transformers ..."
+    }
+  ]
+}

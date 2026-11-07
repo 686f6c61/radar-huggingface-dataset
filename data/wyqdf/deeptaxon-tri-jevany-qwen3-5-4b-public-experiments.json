@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "wyqdf/DeepTaxon-Tri-JevAny-Qwen3.5-4B-Public-Experiments",
+  "slug": "wyqdf-deeptaxon-tri-jevany-qwen3-5-4b-public-experiments",
+  "author": "wyqdf",
+  "url": "https://huggingface.co/wyqdf/DeepTaxon-Tri-JevAny-Qwen3.5-4B-Public-Experiments",
+  "created_at": "2026-11-07T14:45:20.000Z",
+  "updated_at": "2026-11-07T15:27:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "biology",
+    "image-classification",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1367349745,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepTaxon-Tri-JevAny-Qwen3.5-4B-Checkpoints - Hugging Face",
+      "url": "https://huggingface.co/wyqdf/DeepTaxon-Tri-JevAny-Qwen3.5-4B-Checkpoints",
+      "snippet": "wyqdf / DeepTaxon-Tri-JevAny-Qwen3.5-4B-Checkpoints Like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket No model card Downloads last month -"
+    },
+    {
+      "title": "DeepTaxon-Tri-JevAny-Qwen3.5-4B-Checkpoints - Hugging Face",
+      "url": "https://huggingface.co/wyqdf/DeepTaxon-Tri-JevAny-Qwen3.5-4B-Checkpoints/tree/main/runs",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

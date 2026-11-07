@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "demoqqq/banglatts-fresh-2550",
+  "slug": "demoqqq-banglatts-fresh-2550",
+  "author": "demoqqq",
+  "url": "https://huggingface.co/demoqqq/banglatts-fresh-2550",
+  "created_at": "2026-11-07T17:53:47.000Z",
+  "updated_at": "2026-11-07T17:55:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 997805315,
+  "storage_human": "998 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "demoqqq/banglatts-kiki-retrain-2550 · Hugging Face",
+      "url": "https://huggingface.co/demoqqq/banglatts-kiki-retrain-2550",
+      "snippet": "Bengali VITS text-to-speech voice (single male speaker, news style), continued fine-tune of the 97-epoch \"ElevenLab Clone KIKI HASAN Big\" model on 2,550 clips (327 min): the original 1,863 clips plus 687 new kikitop clips (99.5 min of real news text). Trained 12 epochs on Kaggle (run user-voice-kiki ..."
+    },
+    {
+      "title": "demoqqq/banglatts-merged-news · Hugging Face",
+      "url": "https://huggingface.co/demoqqq/banglatts-merged-news",
+      "snippet": "Bengali VITS text-to-speech voice (single male speaker, news style), built by merging two fine-tunes of the EMTIAZZ Bangladeshi Bangla VITS base: news-v2 97ep (fresh retrain, 1,863 clips, 97/100 epochs, extended 92-token vocabulary with digits and symbols) — 50% combined (1,262 Kiki clips, user ..."
+    }
+  ]
+}

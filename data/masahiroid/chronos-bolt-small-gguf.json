@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "masahiroid/chronos-bolt-small-gguf",
+  "slug": "masahiroid-chronos-bolt-small-gguf",
+  "author": "masahiroid",
+  "url": "https://huggingface.co/masahiroid/chronos-bolt-small-gguf",
+  "created_at": "2026-11-07T16:59:10.000Z",
+  "updated_at": "2026-11-07T17:02:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "t5",
+    "checkpoint-conversion",
+    "base_model:amazon/chronos-bolt-small",
+    "base_model:quantized:amazon/chronos-bolt-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 47720064,
+  "parameters_human": "47.7M",
+  "storage_bytes": 190925506,
+  "storage_human": "191 MB",
+  "base_model": "amazon/chronos-bolt-small",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amazon/chronos-bolt-small · Hugging Face",
+      "url": "https://huggingface.co/amazon/chronos-bolt-small",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "chronos-bolt-small — AI Model Details | Applied",
+      "url": "https://theapplied.co/models/amazon-chronos-bolt-small",
+      "snippet": "Amazon's 48M-parameter Chronos-Bolt time-series foundation model for fast zero-shot forecasting."
+    }
+  ]
+}

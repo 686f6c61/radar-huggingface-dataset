@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "trl-internal-testing/tiny-Qwen2_5_VLForConditionalGeneration",
+  "slug": "trl-internal-testing-tiny-qwen2_5_vlforconditionalgeneration",
+  "author": "trl-internal-testing",
+  "url": "https://huggingface.co/trl-internal-testing/tiny-Qwen2_5_VLForConditionalGeneration",
+  "created_at": "2025-07-20T02:21:03.000Z",
+  "updated_at": "2026-11-07T16:34:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "trl",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 455669,
+  "trending_score": 0,
+  "parameters": 7351264,
+  "parameters_human": "7.4M",
+  "storage_bytes": 642680992,
+  "storage_human": "643 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "trl-internal-testing/tiny-Qwen2_5_VLForConditionalGeneration · Hugging Face",
+      "url": "https://huggingface.co/trl-internal-testing/tiny-Qwen2_5_VLForConditionalGeneration",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · trl-internal-testing/tiny-Qwen2_5 ... - Hugging Face",
+      "url": "https://huggingface.co/trl-internal-testing/tiny-Qwen2_5_VLForConditionalGeneration/blob/main/README.md",
+      "snippet": "Tiny Qwen2_5_VLForConditionalGeneration This is a minimal model built for unit tests in the TRL library."
+    }
+  ]
+}

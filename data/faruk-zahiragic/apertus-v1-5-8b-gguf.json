@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "faruk-zahiragic/Apertus-v1.5-8B-GGUF",
+  "slug": "faruk-zahiragic-apertus-v1-5-8b-gguf",
+  "author": "faruk-zahiragic",
+  "url": "https://huggingface.co/faruk-zahiragic/Apertus-v1.5-8B-GGUF",
+  "created_at": "2026-11-07T13:15:52.000Z",
+  "updated_at": "2026-11-07T13:17:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "apertus",
+    "offline",
+    "text-generation",
+    "base_model:swiss-ai/Apertus-v1.5-8B",
+    "base_model:quantized:swiss-ai/Apertus-v1.5-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8609083456,
+  "parameters_human": "8.61B",
+  "storage_bytes": 5656804512,
+  "storage_human": "5.7 GB",
+  "base_model": "swiss-ai/Apertus-v1.5-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apertus 1.5 - Apertus",
+      "url": "https://apertus-ai.org/articles/2026-07-apertus-1-5/",
+      "snippet": "Our latest release, Apertus 1.5, extends the 8B and 70B Apertus 1.0 models with image understanding, an optional thinking mode, a four times longer context window, improved instruction-following, and better tool use. The updated 8B and 70B model weights were released to Hugging Face on July 24, 2026 under an Apache 2.0 license. Further details are now available from the project Technical ..."
+    },
+    {
+      "title": "Apertus v1.5 - a swiss-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/swiss-ai/apertus-v15",
+      "snippet": "8B and 70B open-data open-weights models, globally multilingual with multimodal input and reasoning support"
+    }
+  ]
+}

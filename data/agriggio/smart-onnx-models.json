@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "agriggio/smart-onnx-models",
+  "slug": "agriggio-smart-onnx-models",
+  "author": "agriggio",
+  "url": "https://huggingface.co/agriggio/smart-onnx-models",
+  "created_at": "2026-11-07T15:50:04.000Z",
+  "updated_at": "2026-11-07T15:54:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "sam2",
+    "segment-anything",
+    "lama",
+    "inpainting",
+    "segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1652299139,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

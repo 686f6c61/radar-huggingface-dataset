@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "MissAdaChan/Squirt",
+  "slug": "missadachan-squirt",
+  "author": "MissAdaChan",
+  "url": "https://huggingface.co/MissAdaChan/Squirt",
+  "created_at": "2026-06-19T16:11:37.000Z",
+  "updated_at": "2026-11-07T18:47:30.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58594441,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MissAdaChan/Squirt · Hugging Face",
+      "url": "https://huggingface.co/MissAdaChan/Squirt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MissAdaChan/Squirt at main - Hugging Face",
+      "url": "https://huggingface.co/MissAdaChan/Squirt/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

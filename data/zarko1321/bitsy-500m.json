@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "zarko1321/bitsy-500m",
+  "slug": "zarko1321-bitsy-500m",
+  "author": "zarko1321",
+  "url": "https://huggingface.co/zarko1321/bitsy-500m",
+  "created_at": "2026-11-07T17:52:27.000Z",
+  "updated_at": "2026-11-07T17:54:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11127,
+  "storage_human": "11127 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zarko1321/bitsy2 · Hugging Face",
+      "url": "https://huggingface.co/zarko1321/bitsy2",
+      "snippet": "Instructions to use zarko1321/bitsy2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use zarko1321/bitsy2 with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"zarko1321/bitsy2\")"
+    },
+    {
+      "title": "zarko1321 (Žarko Petrović) - Hugging Face",
+      "url": "https://huggingface.co/zarko1321",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 22 days ago ... updated a model 25 days ago"
+    }
+  ]
+}

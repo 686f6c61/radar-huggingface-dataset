@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "andyx10/simplestories-trigger-organisms",
+  "slug": "andyx10-simplestories-trigger-organisms",
+  "author": "andyx10",
+  "url": "https://huggingface.co/andyx10/simplestories-trigger-organisms",
+  "created_at": "2026-10-18T19:02:13.000Z",
+  "updated_at": "2026-11-07T14:10:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "backdoor",
+    "model-organisms",
+    "lora",
+    "interpretability",
+    "toy-models",
+    "dataset:SimpleStories/SimpleStories",
+    "base_model:SimpleStories/SimpleStories-V2-1.25M",
+    "base_model:adapter:SimpleStories/SimpleStories-V2-1.25M",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9651348863,
+  "storage_human": "9.7 GB",
+  "base_model": "SimpleStories/SimpleStories-V2-35M, SimpleStories/SimpleStories-V2-11M, SimpleStories/SimpleStories-V2-5M, SimpleStories/SimpleStories-V2-1.25M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "andyx10/simplestories-trigger-organisms · Hugging Face",
+      "url": "https://huggingface.co/andyx10/simplestories-trigger-organisms",
+      "snippet": "Toy model organisms with hidden conditional behaviours (\"backdoors\") trained into the SimpleStories models. Most are LoRAs, plus some full fine-tunes. Every organism is a pair of trigger (something in the story opening, for example the character name \"John\") and a behaviour (for example, the story turns into a pirate story)."
+    },
+    {
+      "title": "The SimpleStories Project - Hugging Face",
+      "url": "https://huggingface.co/SimpleStories/models",
+      "snippet": "Synthetic Data, Distillation, Tiny Models AI & ML interests Synthetic Data, Distillation, Tiny Models Team members 5"
+    }
+  ]
+}

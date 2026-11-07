@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "SamuelTallet/MOSS-Image-SFT-Turbo-16steps-SDNQ-8bit-hadamard256",
+  "slug": "samueltallet-moss-image-sft-turbo-16steps-sdnq-8bit-hadamard256",
+  "author": "SamuelTallet",
+  "url": "https://huggingface.co/SamuelTallet/MOSS-Image-SFT-Turbo-16steps-SDNQ-8bit-hadamard256",
+  "created_at": "2026-11-07T20:00:51.000Z",
+  "updated_at": "2026-11-07T20:03:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenMOSS/MOSS-Image: Official repository for MOSS-Image, a 5B ...",
+      "url": "https://github.com/OpenMOSS/MOSS-Image",
+      "snippet": "Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning. - OpenMOSS/MOSS-Image"
+    },
+    {
+      "title": "OpenMOSS-Team/MOSS-Image-SFT · Hugging Face",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT",
+      "snippet": "MOSS-Image-SFT is a supervised fine-tuned text-to-image model in the MOSS-Image family from OpenMOSS, derived from MOSS-Image-Base. It uses the same architecture and inference pipeline, supporting natural-language prompts, tag sequences, and JSON layouts for controlling text placement and object ..."
+    },
+    {
+      "title": "MOSS-Image Download: Base, SFT, INT8, GGUF and Turbo Files with Sizes",
+      "url": "https://mossimage.org/download/",
+      "snippet": "All MOSS-Image downloads in one place: official Base/SFT, Comfy-Org BF16 and INT8, GGUF, INT4, MLX and turbo LoRAs, listed by GPU memory."
+    },
+    {
+      "title": "MOSS Image - SFT | MOSS Image Checkpoint | Civitai",
+      "url": "https://civitai.com/models/3005406/moss-image",
+      "snippet": "MOSS Image is a 5B parameter text-to-image DiT from the OpenMOSS team, built for accurate in-image text, layout control and long prompts. It pairs ..."
+    }
+  ]
+}

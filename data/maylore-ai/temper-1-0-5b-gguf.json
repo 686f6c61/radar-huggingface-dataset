@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "maylore-ai/Temper-1-0.5B-GGUF",
+  "slug": "maylore-ai-temper-1-0-5b-gguf",
+  "author": "maylore-ai",
+  "url": "https://huggingface.co/maylore-ai/Temper-1-0.5B-GGUF",
+  "created_at": "2026-10-05T10:03:57.000Z",
+  "updated_at": "2026-11-07T16:36:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "rust",
+    "code",
+    "text-generation",
+    "en",
+    "base_model:maylore-ai/Temper-1-0.5B",
+    "base_model:quantized:maylore-ai/Temper-1-0.5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 92,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 531067936,
+  "storage_human": "531 MB",
+  "base_model": "maylore-ai/Temper-1-0.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maylore-ai/Temper-1-0.5B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/maylore-ai/Temper-1-0.5B-GGUF",
+      "snippet": "Instructions to use maylore-ai/Temper-1-0.5B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use maylore-ai/Temper-1-0.5B-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "maylore-ai/Temper-1-0.5B · Hugging Face",
+      "url": "https://huggingface.co/maylore-ai/Temper-1-0.5B",
+      "snippet": "Temper-1-0.5B is a small model fine-tuned from Qwen2.5-Coder-0.5B-Instruct for writing Rust. On the first attempt it solves more Rust tasks than models up to three times its size."
+    }
+  ]
+}

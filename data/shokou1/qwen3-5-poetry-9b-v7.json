@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Shokou1/qwen3.5-poetry-9b-v7",
+  "slug": "shokou1-qwen3-5-poetry-9b-v7",
+  "author": "Shokou1",
+  "url": "https://huggingface.co/Shokou1/qwen3.5-poetry-9b-v7",
+  "created_at": "2026-11-07T16:21:38.000Z",
+  "updated_at": "2026-11-07T16:24:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "classical-chinese",
+    "chinese-poetry",
+    "poetry",
+    "poetry-generation",
+    "tang-poetry",
+    "song-poetry",
+    "classical-chinese-prose",
+    "guwen",
+    "chinese",
+    "lora",
+    "qwen",
+    "qwen3.5",
+    "text-generation",
+    "instruction-tuning",
+    "sft",
+    "grpo",
+    "reinforcement-learning",
+    "rule-based-reward",
+    "rhyme",
+    "prosody",
+    "best-of-n",
+    "ollama",
+    "local-llm",
+    "consumer-gpu",
+    "windows",
+    "evaluated",
+    "9b",
+    "zh",
+    "dataset:Shokou1/classical-poetry-sft",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 346445329,
+  "storage_human": "346 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shokou1/qwen3.5-poetry-9b-v1 · Hugging Face",
+      "url": "https://huggingface.co/Shokou1/qwen3.5-poetry-9b-v1",
+      "snippet": "Text Generation model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

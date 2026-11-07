@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "soverius-ai/gemma-4-E4B-it-A2UI-Express-LoRA",
+  "slug": "soverius-ai-gemma-4-e4b-it-a2ui-express-lora",
+  "author": "soverius-ai",
+  "url": "https://huggingface.co/soverius-ai/gemma-4-E4B-it-A2UI-Express-LoRA",
+  "created_at": "2026-11-07T17:49:13.000Z",
+  "updated_at": "2026-11-07T17:49:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "a2ui",
+    "a2ui-express",
+    "gemma4",
+    "lora",
+    "base_model:unsloth/gemma-4-E4B-it",
+    "base_model:adapter:unsloth/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77417396,
+  "storage_human": "77 MB",
+  "base_model": "unsloth/gemma-4-E4B-it",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "soverius-ai/gemma-4-E4B-it-A2UI-Express-ONNX · Hugging Face",
+      "url": "https://huggingface.co/soverius-ai/gemma-4-E4B-it-A2UI-Express-ONNX",
+      "snippet": "A browser-ready Gemma 4 E4B fine-tune that generates the A2UI Express DSL for the CopilotKit Express demo: the 160-step Unsloth LoRA run on 240 training conversations (the original 159 form rows plus 90 informational cards), adapter SHA-256 ..."
+    },
+    {
+      "title": "Gemma 4 E4B — The Daily Driver for Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e4b",
+      "snippet": "Models /Gemma 4 E4B Gemma 4 E4B — The Daily Driver for Local AI Gemma 4 E4B is Google's most practical local model: 4.4B parameters, 8GB VRAM minimum, multimodal input, and Thinking Mode — all in a package that runs on any modern consumer GPU."
+    }
+  ]
+}

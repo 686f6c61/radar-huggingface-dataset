@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Ckorion/fanet-polyp-leaf-from-scratch",
+  "slug": "ckorion-fanet-polyp-leaf-from-scratch",
+  "author": "Ckorion",
+  "url": "https://huggingface.co/Ckorion/fanet-polyp-leaf-from-scratch",
+  "created_at": "2026-11-07T16:38:50.000Z",
+  "updated_at": "2026-11-07T16:39:42.000Z",
+  "license": "research-and-education",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-segmentation",
+    "medical-imaging",
+    "polyp-segmentation",
+    "plant-disease",
+    "fanet",
+    "dataset:kvasir-seg",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124471412,
+  "storage_human": "124 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leaf AI Models (565) | Civitai",
+      "url": "https://civitai.com/tag/leaf",
+      "snippet": "Browse 565 AI models tagged \"Leaf\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    }
+  ]
+}

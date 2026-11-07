@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Vishva007/dots.mocr-W4A16-AutoRound-GPTQ",
+  "slug": "vishva007-dots-mocr-w4a16-autoround-gptq",
+  "author": "Vishva007",
+  "url": "https://huggingface.co/Vishva007/dots.mocr-W4A16-AutoRound-GPTQ",
+  "created_at": "2026-09-09T17:07:52.000Z",
+  "updated_at": "2026-11-07T18:05:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "dots_ocr",
+    "auto-round",
+    "gptq",
+    "vllm",
+    "multimodal",
+    "ocr",
+    "document-parse",
+    "4bit",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:dots-studio/dots.mocr",
+    "base_model:quantized:dots-studio/dots.mocr",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 139,
+  "trending_score": 0,
+  "parameters": 3039179264,
+  "parameters_human": "3.04B",
+  "storage_bytes": 12766576455,
+  "storage_human": "12.8 GB",
+  "base_model": "dots-studio/dots.mocr",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vishva007/dots.mocr-W4A16-AutoRound-GPTQ · Hugging Face",
+      "url": "https://huggingface.co/Vishva007/dots.mocr-W4A16-AutoRound-GPTQ",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vishva007/dots.mocr-W4A16-AutoRound · Hugging Face",
+      "url": "https://huggingface.co/Vishva007/dots.mocr-W4A16-AutoRound",
+      "snippet": "For high-throughput document parsing, serve the GPTQ variant directly with vLLM: vllm serve Vishva007/dots.mocr-W4A16-AutoRound \\ --host 0.0.0.0 \\ --port 8000 ..."
+    }
+  ]
+}

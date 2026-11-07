@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "masahiroid/ruri-v3-70m-coreml",
+  "slug": "masahiroid-ruri-v3-70m-coreml",
+  "author": "masahiroid",
+  "url": "https://huggingface.co/masahiroid/ruri-v3-70m-coreml",
+  "created_at": "2026-11-07T17:18:51.000Z",
+  "updated_at": "2026-11-07T17:18:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "modernbert",
+    "checkpoint-conversion",
+    "base_model:cl-nagoya/ruri-v3-70m",
+    "base_model:quantized:cl-nagoya/ruri-v3-70m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 282185889,
+  "storage_human": "282 MB",
+  "base_model": "cl-nagoya/ruri-v3-70m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - masahiroid/ruri-coreml: ruri-v3 (Japanese sentence embeddings ...",
+      "url": "https://github.com/masahiroid/ruri-coreml/tree/main",
+      "snippet": "cl-nagoya/ruri-v3 (a Japanese sentence embedding model) converted to Core ML for on-device use on iOS, plus an iOS app comparing it against Apple's own on-device embedding model (NLContextualEmbedding)."
+    },
+    {
+      "title": "ruri-coreml/ruri_coreml at main · masahiroid/ruri-coreml - GitHub",
+      "url": "https://github.com/masahiroid/ruri-coreml/tree/main/ruri_coreml/",
+      "snippet": "ruri_coreml_convert Converts cl-nagoya/ruri-v3 (a Japanese ModernBERT-based sentence embedding model) to Core ML for on-device use on iOS/macOS, and prepares everything an app needs to bundle it: the .mlpackage, a local tokenizer folder, and a Hugging Face model card."
+    }
+  ]
+}

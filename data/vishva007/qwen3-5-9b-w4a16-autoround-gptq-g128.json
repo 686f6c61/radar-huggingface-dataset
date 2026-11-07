@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Vishva007/Qwen3.5-9B-W4A16-AutoRound-GPTQ-G128",
+  "slug": "vishva007-qwen3-5-9b-w4a16-autoround-gptq-g128",
+  "author": "Vishva007",
+  "url": "https://huggingface.co/Vishva007/Qwen3.5-9B-W4A16-AutoRound-GPTQ-G128",
+  "created_at": "2026-10-17T06:35:01.000Z",
+  "updated_at": "2026-11-07T18:03:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "4-bit",
+    "gptq",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 4818296048,
+  "parameters_human": "4.82B",
+  "storage_bytes": 22941291627,
+  "storage_human": "22.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vishva007/Qwen3.5-9B-W4A16-AutoRound-GPTQ - Hugging Face",
+      "url": "https://huggingface.co/Vishva007/Qwen3.5-9B-W4A16-AutoRound-GPTQ",
+      "snippet": "This is a W4A16 (4-bit weight, 16-bit activation) quantized version of Qwen/Qwen3.5-9B, produced using AutoRound — Intel's sign gradient descent based quantization method designed for production-grade accuracy retention. MTP Enabled model quantization"
+    },
+    {
+      "title": "Vishva007/Qwen3.5-9B-W4A16-AutoRound-GPTQ-G128 - Hugging Face",
+      "url": "https://huggingface.co/Vishva007/Qwen3.5-9B-W4A16-AutoRound-GPTQ-G128",
+      "snippet": "This is a W4A16 (4-bit weight, 16-bit activation) quantized version of Qwen/Qwen3.5-2B, produced using AutoRound — Intel's sign gradient descent based quantization method designed for production-grade accuracy retention. MTP Enabled model quantization"
+    }
+  ]
+}

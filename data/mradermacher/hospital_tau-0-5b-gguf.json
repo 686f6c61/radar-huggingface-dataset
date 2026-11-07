@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "mradermacher/hospital_tau-0.5B-GGUF",
+  "slug": "mradermacher-hospital_tau-0-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/hospital_tau-0.5B-GGUF",
+  "created_at": "2025-02-28T02:00:49.000Z",
+  "updated_at": "2026-11-07T16:38:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:arctic126/hospital_tau-0.5B",
+    "base_model:quantized:arctic126/hospital_tau-0.5B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 463690752,
+  "parameters_human": "463.7M",
+  "storage_bytes": 4537476352,
+  "storage_human": "4.5 GB",
+  "base_model": "arctic126/hospital_tau-0.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/hospital_tau-0.5B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/hospital_tau-0.5B-GGUF",
+      "snippet": "mradermacher / hospital_tau-0.5B-GGUF like 0 Transformers GGUF English conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/hospital_tau-0.5B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/hospital_tau-0.5B-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

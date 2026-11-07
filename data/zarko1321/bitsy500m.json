@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "zarko1321/Bitsy500M",
+  "slug": "zarko1321-bitsy500m",
+  "author": "zarko1321",
+  "url": "https://huggingface.co/zarko1321/Bitsy500M",
+  "created_at": "2026-11-07T19:47:52.000Z",
+  "updated_at": "2026-11-07T19:49:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bitsy_parallel",
+    "text-generation",
+    "custom_code",
+    "from-scratch",
+    "untrained",
+    "bitsy",
+    "conversational",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 509943936,
+  "parameters_human": "509.9M",
+  "storage_bytes": 1019917608,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zarko1321/bitsy-500m · Hugging Face",
+      "url": "https://huggingface.co/zarko1321/bitsy-500m",
+      "snippet": "A real, randomly initialized ~505M-parameter decoder-only language model, not pretrained weights. Includes tokenizer training, dataset conversion, pretraining, chat SFT, and inference. Use Python 3.11+ in an environment with an appropriate GPU-enabled PyTorch build. On AMD RX 7800 XT, install the ..."
+    }
+  ]
+}

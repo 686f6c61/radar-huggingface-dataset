@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "boeyyyy/AdaptiGraph",
+  "slug": "boeyyyy-adaptigraph",
+  "author": "boeyyyy",
+  "url": "https://huggingface.co/boeyyyy/AdaptiGraph",
+  "created_at": "2026-11-07T14:28:53.000Z",
+  "updated_at": "2026-11-07T14:28:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "graph-neural-networks",
+    "dynamics-model",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3058750,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Boey-li/AdaptiGraph: [RSS 2024] AdaptiGraph: Material-Adaptive ...",
+      "url": "https://github.com/Boey-li/AdaptiGraph/tree/main",
+      "snippet": "[RSS 2024] AdaptiGraph: Material-Adaptive Graph-Based Neural Dynamics for Robotic Manipulation - Boey-li/AdaptiGraph"
+    },
+    {
+      "title": "AdaptiGraph/README.md at main · Boey-li/AdaptiGraph · GitHub",
+      "url": "https://github.com/Boey-li/AdaptiGraph/blob/main/README.md",
+      "snippet": "[RSS 2024] AdaptiGraph: Material-Adaptive Graph-Based Neural Dynamics for Robotic Manipulation - Boey-li/AdaptiGraph"
+    }
+  ]
+}

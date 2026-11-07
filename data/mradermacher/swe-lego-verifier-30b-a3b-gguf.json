@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SWE-Lego-Verifier-30B-A3B-GGUF",
+  "slug": "mradermacher-swe-lego-verifier-30b-a3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SWE-Lego-Verifier-30B-A3B-GGUF",
+  "created_at": "2026-11-07T16:00:38.000Z",
+  "updated_at": "2026-11-07T16:33:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Lego-X/SWE-Lego-Verifier-30B-A3B",
+    "base_model:quantized:Lego-X/SWE-Lego-Verifier-30B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 28714623616,
+  "storage_human": "28.7 GB",
+  "base_model": "Lego-X/SWE-Lego-Verifier-30B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SWE-Lego/SWE-Lego-Verifier-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/SWE-Lego/SWE-Lego-Verifier-30B-A3B",
+      "snippet": "SWE-Lego comprises three core building blocks: the SWE-Lego dataset, a collection of 32k highquality task instances and 18k validated trajectories, combining real and synthetic data to complement each other in both quality and quantity;"
+    },
+    {
+      "title": "mradermacher/SWE-Review-30B-A3B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/SWE-Review-30B-A3B-i1-GGUF",
+      "snippet": "mradermacher / SWE-Review-30B-A3B-i1-GGUF like 0 Transformers GGUF English code-review software-engineering swe-bench agentic Mixture of Experts imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "snupilab/Rep4Act-Symmetric-MMDiT-100k-T5-Context-LIBERO-20k-seed4",
+  "slug": "snupilab-rep4act-symmetric-mmdit-100k-t5-context-libero-20k-seed4",
+  "author": "snupilab",
+  "url": "https://huggingface.co/snupilab/Rep4Act-Symmetric-MMDiT-100k-T5-Context-LIBERO-20k-seed4",
+  "created_at": "2026-11-07T13:20:30.000Z",
+  "updated_at": "2026-11-07T13:22:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "libero",
+    "rep4act",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5887954081,
+  "parameters_human": "5.89B",
+  "storage_bytes": 19876205537,
+  "storage_human": "19.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

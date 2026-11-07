@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "baicai1145/g2pS",
+  "slug": "baicai1145-g2ps",
+  "author": "baicai1145",
+  "url": "https://huggingface.co/baicai1145/g2pS",
+  "created_at": "2026-11-07T12:53:31.000Z",
+  "updated_at": "2026-11-07T13:03:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 199581924,
+  "storage_human": "200 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "baicai1145 (白菜工厂1145号员工) - Hugging Face",
+      "url": "https://huggingface.co/baicai1145",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 12 hours ago ... updated a model 4 days ago"
+    },
+    {
+      "title": "baicai1145 Models — Downloads, Rankings & Growth | OpenModelStats",
+      "url": "https://openmodelstats.com/owners/baicai1145",
+      "snippet": "AI models published by baicai1145. 5 tracked models, 4,975 combined all-time downloads, 72 likes. Download statistics, growth history and ranking positions, tracked daily by OpenModelStats."
+    }
+  ]
+}

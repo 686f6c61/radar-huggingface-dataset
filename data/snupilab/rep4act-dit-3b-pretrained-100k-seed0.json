@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "snupilab/Rep4Act-DiT-3B-Pretrained-100k-seed0",
+  "slug": "snupilab-rep4act-dit-3b-pretrained-100k-seed0",
+  "author": "snupilab",
+  "url": "https://huggingface.co/snupilab/Rep4Act-DiT-3B-Pretrained-100k-seed0",
+  "created_at": "2026-11-07T13:58:59.000Z",
+  "updated_at": "2026-11-07T14:00:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "rep4act",
+    "actiondit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4915751713,
+  "parameters_human": "4.92B",
+  "storage_bytes": 15987383361,
+  "storage_human": "16.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HumanoidToolBench - a snupilab Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/snupilab/humanoidtoolbench",
+      "snippet": "Note [SIM] 3003 | ACT100 | Validated final checkpoint, 40000 updates. Weights uploaded and verified."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "lazarenkod/gemma4-e2b-es-compact-fluent-books",
+  "slug": "lazarenkod-gemma4-e2b-es-compact-fluent-books",
+  "author": "lazarenkod",
+  "url": "https://huggingface.co/lazarenkod/gemma4-e2b-es-compact-fluent-books",
+  "created_at": "2026-11-07T17:44:59.000Z",
+  "updated_at": "2026-11-07T17:45:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "gguf",
+  "languages": [
+    "es",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "gemma4",
+    "spanish",
+    "translation",
+    "on-device",
+    "es",
+    "ru",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1814683171,
+  "parameters_human": "1.81B",
+  "storage_bytes": 967251872,
+  "storage_human": "967 MB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lazarenkod/gemma4-e2b-compact-fluent-books · Hugging Face",
+      "url": "https://huggingface.co/lazarenkod/gemma4-e2b-compact-fluent-books",
+      "snippet": "Instructions to use lazarenkod/gemma4-e2b-compact-fluent-books with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "lazarenkod/gemma4-e2b-fluent-books · Hugging Face",
+      "url": "https://huggingface.co/lazarenkod/gemma4-e2b-fluent-books",
+      "snippet": "A LoRA fine-tune of google/gemma-4-E2B-it with its vocabulary cut from 262,144 to 40,000 tokens, merged and quantised (Q4_K_M, the per-layer embedding table at Q3_K, with an importance matrix), for the on-device assistant of the Fluent Books reading app (an English reader for Russian speakers)."
+    }
+  ]
+}

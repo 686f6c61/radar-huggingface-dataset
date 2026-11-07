@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Asukaa02/MisconStyle",
+  "slug": "asukaa02-misconstyle",
+  "author": "Asukaa02",
+  "url": "https://huggingface.co/Asukaa02/MisconStyle",
+  "created_at": "2026-11-07T14:23:21.000Z",
+  "updated_at": "2026-11-07T14:27:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "not-for-all-audiences",
+    "anime",
+    "text-to-image",
+    "en",
+    "base_model:John6666/wai-ani-nsfw-ponyxl-v5-sdxl",
+    "base_model:finetune:John6666/wai-ani-nsfw-ponyxl-v5-sdxl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228481052,
+  "storage_human": "228 MB",
+  "base_model": "John6666/wai-ani-nsfw-ponyxl-v5-sdxl",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ASUKA KITAKAZE (@asukaa02) • Instagram photos and videos",
+      "url": "https://www.instagram.com/asukaa02/",
+      "snippet": "205K Followers, 893 Following, 614 Posts - ASUKA KITAKAZE (@asukaa02) on Instagram: \"Acka. Director / Designer ⠀⠀ ⠀ @acka_official @acka_edition @acka_kids\""
+    }
+  ]
+}

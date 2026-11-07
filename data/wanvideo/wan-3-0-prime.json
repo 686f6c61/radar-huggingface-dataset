@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "wanvideo/wan-3-0-prime",
+  "slug": "wanvideo-wan-3-0-prime",
+  "author": "wanvideo",
+  "url": "https://huggingface.co/wanvideo/wan-3-0-prime",
+  "created_at": "2026-11-07T13:02:30.000Z",
+  "updated_at": "2026-11-07T13:03:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "wan-3.0",
+    "wan-3.0-prime",
+    "video-generation",
+    "multimodal",
+    "native-audio",
+    "model-guide",
+    "text-to-video",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 869894,
+  "storage_human": "869894 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wan3.0-video-prime model information - Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/wan3-0-video-prime",
+      "snippet": "Wan3.0-Video-Prime is the accelerated version of the Wan video generation model, delivering significantly faster generation speed while maintaining high-quality output. It supports multi-modal inputs including text, image, video, and audio, enabling text-to-video, image-to-video (first frame/first-last frame), and reference-based video generation within a single model. It supports 480P, 720P ..."
+    },
+    {
+      "title": "Wan 3.0 Video Prime API – Fast Wan AI Video | Kie AI",
+      "url": "https://kie.ai/wan3.0-video-prime",
+      "snippet": "Wan 3.0 Video Prime is a high-speed AI video generation model from Alibaba's Wan model family. It delivers core capabilities aligned with Wan 3.0 Video while offering faster end-to-end generation, with multimodal references across audio, image, text, and video and video generation up to 30 seconds."
+    }
+  ]
+}

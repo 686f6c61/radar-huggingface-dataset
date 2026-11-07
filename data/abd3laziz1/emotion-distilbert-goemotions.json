@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Abd3laziz1/emotion-distilbert-goemotions",
+  "slug": "abd3laziz1-emotion-distilbert-goemotions",
+  "author": "Abd3laziz1",
+  "url": "https://huggingface.co/Abd3laziz1/emotion-distilbert-goemotions",
+  "created_at": "2026-11-07T14:15:29.000Z",
+  "updated_at": "2026-11-07T14:25:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267844872,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TuhinG/distilbert-goemotions · Hugging Face",
+      "url": "https://huggingface.co/TuhinG/distilbert-goemotions",
+      "snippet": "🧠 DistilBERT Emotion Classifier (GoEmotions, Multi-Label) This model is a fine-tuned version of distilbert-base-uncased on the GoEmotions (Simplified) dataset — a multi-label emotion classification task with 28 emotion categories. It uses sigmoid + BCEWithLogitsLoss and supports multiple simultaneous emotion predictions per sentence."
+    },
+    {
+      "title": "GitHub - fariskishtah/emosense-ai · GitHub",
+      "url": "https://github.com/fariskishtah/emosense-ai",
+      "snippet": "EmoSense AI is a reproducible six-class English emotion-classification system that trains and compares LSTM, GRU, BiLSTM with additive attention, and DistilBERT. It includes a full Gradio product, real token attention weights, batch inference, measured model-comparison artifacts, and a free static public demo that executes a separately evaluated int8 ONNX model in the browser."
+    }
+  ]
+}

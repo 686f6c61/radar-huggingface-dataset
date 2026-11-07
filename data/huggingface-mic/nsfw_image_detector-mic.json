@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/nsfw_image_detector-mic",
+  "slug": "huggingface-mic-nsfw_image_detector-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/nsfw_image_detector-mic",
+  "created_at": "2026-11-07T17:16:58.000Z",
+  "updated_at": "2026-11-07T17:21:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "timm_wrapper",
+    "mic",
+    "test-artifact",
+    "base_model:Freepik/nsfw_image_detector",
+    "base_model:finetune:Freepik/nsfw_image_detector",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86351620,
+  "parameters_human": "86.4M",
+  "storage_bytes": 172725672,
+  "storage_human": "173 MB",
+  "base_model": "Freepik/nsfw_image_detector",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Falconsai/nsfw_image_detection · Hugging Face",
+      "url": "https://huggingface.co/Falconsai/nsfw_image_detection",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

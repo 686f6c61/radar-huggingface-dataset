@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "ununununununununununununununununununun/ltx-video-2b-phi-lattice-v2",
+  "slug": "ununununununununununununununununununun-ltx-video-2b-phi-lattice-v2",
+  "author": "ununununununununununununununununununun",
+  "url": "https://huggingface.co/ununununununununununununununununununun/ltx-video-2b-phi-lattice-v2",
+  "created_at": "2026-11-07T18:16:41.000Z",
+  "updated_at": "2026-11-07T18:16:46.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "ltx-video",
+    "video-generation",
+    "phi-lattice",
+    "phi-lattice-v2",
+    "quantization",
+    "triton",
+    "image-to-video",
+    "base_model:Lightricks/LTX-Video",
+    "base_model:finetune:Lightricks/LTX-Video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1024108304,
+  "storage_human": "1.0 GB",
+  "base_model": "Lightricks/LTX-Video",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Lightricks/LTX-Video: Official repository for LTX-Video",
+      "url": "https://github.com/Lightricks/LTX-Video",
+      "snippet": "LTX-Video is the first DiT-based video generation model that contains all core capabilities of modern video generation in one model: synchronized audio and video, high fidelity, multiple performance modes, production-ready outputs, API access, and open access. It can generate up to 50 FPS videos at native 4K resolution with synchronized audio in one pass. The model is trained on a large-scale ..."
+    },
+    {
+      "title": "Best Open Source Video Generation Models in 2026: Wan, HunyuanVideo ...",
+      "url": "https://www.sevenlabs.site/blogs/best-open-source-video-generation-models-2026",
+      "snippet": "A practical engineering comparison of the best open-source video generation models in 2026, covering Wan 2.2, HunyuanVideo, LTX Video, CogVideoX, Mochi 1, SkyReels, and deployment trade-offs for teams building production video pipelines."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "dealignai/Ripple-65B-Preview-UNCENSORED-GGUF",
+  "slug": "dealignai-ripple-65b-preview-uncensored-gguf",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/Ripple-65B-Preview-UNCENSORED-GGUF",
+  "created_at": "2026-11-07T10:52:26.000Z",
+  "updated_at": "2026-11-07T11:03:11.000Z",
+  "license": "dealignai-community-v0.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "safetensors",
+    "gguf",
+    "llama-cpp",
+    "uncensored",
+    "abliterated",
+    "crack",
+    "ricursive",
+    "ripple",
+    "dense",
+    "reasoning",
+    "thinking",
+    "tool-use",
+    "speculative-decoding",
+    "dflash2",
+    "harmbench",
+    "mmlu",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:ricursiveAI/Ripple-65B-Preview",
+    "base_model:quantized:ricursiveAI/Ripple-65B-Preview",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64782689360,
+  "parameters_human": "64.78B",
+  "storage_bytes": 68794603984,
+  "storage_human": "68.8 GB",
+  "base_model": "ricursiveAI/Ripple-65B-Preview",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prometheusAIR/Ripple-65B-Preview-GGUF · Hugging Face",
+      "url": "https://huggingface.co/prometheusAIR/Ripple-65B-Preview-GGUF",
+      "snippet": "Text Generation model with 65B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Ripple-65B Preview, a Frontier Open-Weight Model | Ricursive Intelligence",
+      "url": "https://www.ricursive.com/ripple",
+      "snippet": "We optimized the model architecture for our training and serving platforms, driving substantial efficiency gains. Today, we release Ripple-65B Preview, a general-purpose variant of the proprietary model that powers our AI chip design platform. The model is pretrained on 12 trillion tokens with support for up to 1M context length."
+    }
+  ]
+}

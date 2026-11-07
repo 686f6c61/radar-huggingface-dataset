@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lspohn/Voxtral-Mini-4B-Realtime-2602-NVFP4-MLP-SM120",
+  "slug": "lspohn-voxtral-mini-4b-realtime-2602-nvfp4-mlp-sm120",
+  "author": "lspohn",
+  "url": "https://huggingface.co/lspohn/Voxtral-Mini-4B-Realtime-2602-NVFP4-MLP-SM120",
+  "created_at": "2026-11-07T09:01:54.000Z",
+  "updated_at": "2026-11-07T14:37:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "pytorch",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "voxtral_realtime",
+    "nvfp4",
+    "sm120",
+    "partial-quantization",
+    "experimental",
+    "automatic-speech-recognition",
+    "de",
+    "en",
+    "arxiv:2205.12446",
+    "base_model:mistralai/Voxtral-Mini-4B-Realtime-2602",
+    "base_model:quantized:mistralai/Voxtral-Mini-4B-Realtime-2602",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1382790776,
+  "storage_human": "1.4 GB",
+  "base_model": "mistralai/Voxtral-Mini-4B-Realtime-2602",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tryambientai/Voxtral-Mini-4B-Realtime-2602-gguf · Hugging Face",
+      "url": "https://huggingface.co/tryambientai/Voxtral-Mini-4B-Realtime-2602-gguf",
+      "snippet": "Voxtral Mini 4B Realtime 2602 Voxtral Mini 4B Realtime 2602 is a multilingual, realtime speech-transcription model and among the first open-source solutions to achieve accuracy comparable to offline systems with a delay of <500ms. It supports 13 languages and outperforms existing open-source baselines across a range of tasks, making it ideal for applications like voice assistants and live ..."
+    },
+    {
+      "title": "mistralai/Voxtral-Mini-4B-Realtime-2602 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602",
+      "snippet": "Voxtral Mini 4B Realtime 2602 is a multilingual, realtime speech-transcription model and among the first open-source solutions to achieve accuracy comparable to offline systems with a delay of <500ms. It supports 13 languages and outperforms existing open-source baselines across a range of tasks ..."
+    }
+  ]
+}

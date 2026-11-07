@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "KarLexAI/Qwen3.8-27B-GGUF",
+  "slug": "karlexai-qwen3-8-27b-gguf",
+  "author": "KarLexAI",
+  "url": "https://huggingface.co/KarLexAI/Qwen3.8-27B-GGUF",
+  "created_at": "2026-11-04T02:12:29.000Z",
+  "updated_at": "2026-11-07T18:09:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "1-bit",
+    "2-bit",
+    "3-bit",
+    "4-bit",
+    "qwen3.8",
+    "reasoning",
+    "thinking",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 46586254437,
+  "storage_human": "46.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · Frosty40/Qwen3.8-27B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/Frosty40/Qwen3.8-27B-GGUF/blob/main/README.md",
+      "snippet": "Qwen3.8-27B — GGUF (Q6_K + Q8_0 output tensor) with vision Quantized GGUF conversion of Qwen/Qwen3.8-27B (dense 27B hybrid: 48 Gated-DeltaNet linear-attention layers + 16 full-attention layers, native vision-language, 262K context), tuned and validated end-to-end on an Intel Arc Pro B70 via llama.cpp SYCL."
+    },
+    {
+      "title": "Run Qwen3.8-27B-GGUF Locally: Step-by-Step Guide — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-qwen3-8-27b-gguf-run-a-27b-model-locally",
+      "snippet": "Deploy the Qwen3.8-27B-GGUF model on consumer hardware. Learn installation, quantization selection, and inference setup with llama.cpp and Ollama."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "wgruner/xork-i-assets",
+  "slug": "wgruner-xork-i-assets",
+  "author": "wgruner",
+  "url": "https://huggingface.co/wgruner/xork-i-assets",
+  "created_at": "2026-11-07T15:48:36.000Z",
+  "updated_at": "2026-11-07T15:57:15.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lora",
+    "interactive-fiction",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:adapter:black-forest-labs/FLUX.2-klein-4B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3973556832,
+  "parameters_human": "3.97B",
+  "storage_bytes": 2883296616,
+  "storage_human": "2.9 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16, black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

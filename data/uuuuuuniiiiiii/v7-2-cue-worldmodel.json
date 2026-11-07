@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Uuuuuuniiiiiii/V7.2-Cue-WorldModel",
+  "slug": "uuuuuuniiiiiii-v7-2-cue-worldmodel",
+  "author": "Uuuuuuniiiiiii",
+  "url": "https://huggingface.co/Uuuuuuniiiiiii/V7.2-Cue-WorldModel",
+  "created_at": "2026-11-07T16:04:44.000Z",
+  "updated_at": "2026-11-07T16:04:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "synthetic-data",
+    "time-series",
+    "exploratory",
+    "cue-supervision",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 426052,
+  "storage_human": "426052 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

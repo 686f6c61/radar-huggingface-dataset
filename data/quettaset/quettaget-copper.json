@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "quettaset/quettaget-Copper",
+  "slug": "quettaset-quettaget-copper",
+  "author": "quettaset",
+  "url": "https://huggingface.co/quettaset/quettaget-Copper",
+  "created_at": "2026-11-07T16:53:17.000Z",
+  "updated_at": "2026-11-07T16:59:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "copper-infrastructure",
+    "800v-hvdc",
+    "deep-tech",
+    "hardware",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 207335275,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "quettaset/H36 · Hugging Face",
+      "url": "https://huggingface.co/quettaset/H36",
+      "snippet": "Severe Electromigration & Voiding: Extreme current densities dislodge copper atoms, creating critical structural degradation. Grain Boundary Scattering: Narrow wiring dimensions cause chaotic electron scattering, drastically increasing electrical resistance and heat buildup."
+    },
+    {
+      "title": "The H-36 Architecture Quettaset - YouTube",
+      "url": "https://www.youtube.com/watch?v=hO5XZp6XtS8",
+      "snippet": "Today, we unveil the three core innovations driving the Quettaset (H-36) standard: 1️⃣ Graphene-Copper Composite: Replacing conventional pure copper."
+    }
+  ]
+}

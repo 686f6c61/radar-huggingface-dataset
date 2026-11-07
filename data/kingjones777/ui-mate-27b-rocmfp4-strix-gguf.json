@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kingjones777/UI-Mate-27B-ROCmFP4-STRIX-GGUF",
+  "slug": "kingjones777-ui-mate-27b-rocmfp4-strix-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/UI-Mate-27B-ROCmFP4-STRIX-GGUF",
+  "created_at": "2026-11-07T06:16:22.000Z",
+  "updated_at": "2026-11-07T06:20:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "amd",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "amd-strix-halo",
+    "gfx1151",
+    "ryzen-ai-max",
+    "ryzen-ai-max-395",
+    "radeon-8060s",
+    "speculative-decoding",
+    "dflash2",
+    "gui-agent",
+    "vision",
+    "reasoning",
+    "qwen3.5",
+    "quantized",
+    "image-text-to-text",
+    "base_model:tencent/UI-Mate-27B",
+    "base_model:quantized:tencent/UI-Mate-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 17201735808,
+  "storage_human": "17.2 GB",
+  "base_model": "tencent/UI-Mate-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Uncensored-ROCmFP4-STRIX-MTP-GGUF",
+      "url": "https://huggingface.co/kingjones777/Qwen3.8-27B-Uncensored-ROCmFP4-STRIX-MTP-GGUF/blob/main/mtp-Qwen3.8-27B-Q4_0.gguf",
+      "snippet": "kingjones777 / Qwen3.8-27B-Uncensored-ROCmFP4-STRIX-MTP-GGUF like 1 Text Generation GGUF llama.cpp rocm amd rocmfp4 rocmfpx strix-halo gfx1151 uncensored abliterated mtp speculative-decoding conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "kingjones777/Qwen3.8-27B-Uncensored-ROCmFP4-STRIX-MTP-GGUF at main",
+      "url": "https://huggingface.co/kingjones777/Qwen3.8-27B-Uncensored-ROCmFP4-STRIX-MTP-GGUF/tree/main",
+      "snippet": "kingjones777 / Qwen3.8-27B-Uncensored-ROCmFP4-STRIX-MTP-GGUF like 1 Text Generation GGUF llama.cpp rocm amd rocmfp4 rocmfpx strix-halo gfx1151 uncensored abliterated mtp speculative-decoding conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

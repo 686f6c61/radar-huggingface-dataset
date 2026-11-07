@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "keyvan-ai/Mythos-WSP-Loopbreaker-Skill",
+  "slug": "keyvan-ai-mythos-wsp-loopbreaker-skill",
+  "author": "keyvan-ai",
+  "url": "https://huggingface.co/keyvan-ai/Mythos-WSP-Loopbreaker-Skill",
+  "created_at": "2026-11-07T12:50:56.000Z",
+  "updated_at": "2026-11-07T13:14:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "weight-space-programming",
+    "model-editing",
+    "skill-tensor",
+    "qwen3.5",
+    "claude-mythos",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "doi:10.57967/hf/11501",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70966441,
+  "storage_human": "71 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "keyvan-ai (Keyvan Ai) - Hugging Face",
+      "url": "https://huggingface.co/keyvan-ai",
+      "snippet": "Org profile for Keyvan Ai on Hugging Face, the AI community building the future."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Infinix-io/LTX2.3-ICEdit-Insight",
+  "slug": "infinix-io-ltx2-3-icedit-insight",
+  "author": "Infinix-io",
+  "url": "https://huggingface.co/Infinix-io/LTX2.3-ICEdit-Insight",
+  "created_at": "2026-11-07T14:54:44.000Z",
+  "updated_at": "2026-11-07T14:54:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "video-editing",
+    "video-restoration",
+    "ltx-video",
+    "ltx-2-3",
+    "dit",
+    "ic-lora",
+    "watermark-removal",
+    "subtitle-removal",
+    "super-resolution",
+    "hd-enhancement",
+    "joyfox",
+    "video-to-video",
+    "en",
+    "base_model:Lightricks/LTX-2.3",
+    "base_model:finetune:Lightricks/LTX-2.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30263882490,
+  "storage_human": "30.3 GB",
+  "base_model": "Lightricks/LTX-2.3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LTX2-ICEdit-Insight/release/hf/LTX2.3-ICEdit-Insight/README.md at main ...",
+      "url": "https://github.com/joyfoxai/LTX2-ICEdit-Insight/blob/main/release/hf/LTX2.3-ICEdit-Insight/README.md",
+      "snippet": "LTX2.3-ICEdit-Insight is a task-aware video restoration and editing model family developed by JoyFox Lab, built on top of the LTX-2.3 DiT-based audio-video foundation model. This release focuses on four practical video editing directions: Video Restoration: degradation recovery, compression cleanup, blur and noise reduction, and damaged detail restoration. Video HD Enhancement: super ..."
+    },
+    {
+      "title": "LTX2.3-ICEdit-Insight · Model · Inferix",
+      "url": "https://inferix.co/models/joyfox/LTX2.3-ICEdit-Insight",
+      "snippet": "LTX2.3-ICEdit-Insight is a task-aware video restoration and editing model family developed by JoyFox Lab, built on top of the LTX-2.3 DiT-based audio-video foundation model."
+    }
+  ]
+}

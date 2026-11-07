@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Chungulus/Arete-27B-Q6_K-GGUF",
+  "slug": "chungulus-arete-27b-q6_k-gguf",
+  "author": "Chungulus",
+  "url": "https://huggingface.co/Chungulus/Arete-27B-Q6_K-GGUF",
+  "created_at": "2026-11-07T13:02:19.000Z",
+  "updated_at": "2026-11-07T13:08:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_5",
+    "nous-research",
+    "arete",
+    "image-text-to-text",
+    "conversational",
+    "base_model:NousResearch/Arete-27B",
+    "base_model:quantized:NousResearch/Arete-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 23013676896,
+  "storage_human": "23.0 GB",
+  "base_model": "NousResearch/Arete-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UraionLabs/Arete-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/UraionLabs/Arete-27B-GGUF",
+      "snippet": "Text Generation model with 27B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "bartowski/NousResearch_Arete-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/NousResearch_Arete-27B-GGUF",
+      "snippet": "An _L name is simply the large size of its family. Q4_K_L is to Q4_K_M what Q4_K_M is to Q4_K_S; Q6_K_S, Q6_K and Q6_K_L are the small, medium and large sizes of Q6_K, with Q6_K_L about halfway to Q8_0. In earlier releases an _L name meant the embedding and output weights were kept at Q8_0; in these files it means the larger size of the base type."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "acidsound/scyllasband",
+  "slug": "acidsound-scyllasband",
+  "author": "acidsound",
+  "url": "https://huggingface.co/acidsound/scyllasband",
+  "created_at": "2026-11-07T17:29:03.000Z",
+  "updated_at": "2026-11-07T18:11:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "litert",
+  "languages": [
+    "en",
+    "es",
+    "it",
+    "fr",
+    "de",
+    "vi",
+    "ko"
+  ],
+  "tags": [
+    "litert",
+    "tflite",
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "singing",
+    "singing-voice-synthesis",
+    "coreml",
+    "pytorch",
+    "multilingual",
+    "korean",
+    "expressive-tts",
+    "duration-flow",
+    "en",
+    "es",
+    "it",
+    "fr",
+    "de",
+    "vi",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4514742564,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lowkeytea/scyllasband",
+      "url": "https://github.com/lowkeytea/scyllasband",
+      "snippet": "Scylla's Band is the public inference/runtime package for the scyllasband continuous-latent TTS model. The 1.0 bundle predicts phone durations and rectified acoustic latent flow, then decodes those latents through a Scylla's Band acoustic adapter and Vocos vocoder. The default desktop/server runtime path remains the full-precision ONNX bundle. A CPU-optimized INT8 ONNX bundle is available as ..."
+    },
+    {
+      "title": "awesome-ai-voice/models/scyllasband.md at main - GitHub",
+      "url": "https://github.com/wildminder/awesome-ai-voice/blob/main/models/scyllasband.md",
+      "snippet": "Scylla's Band is a multilingual, multi-voice, expressive TTS model from Spybyscript, designed specifically for local and self-hosted inference through ONNX Runtime (with an experimental LiteRT backend for explicit native / mobile use). The architecture is a continuous-latent TTS family: Phrase-level multilingual G2P produces phone IDs, punctuation, and boundary / context features in a fixed ..."
+    }
+  ]
+}

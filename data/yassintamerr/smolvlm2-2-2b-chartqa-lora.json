@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "yassintamerr/smolvlm2-2.2b-chartqa-lora",
+  "slug": "yassintamerr-smolvlm2-2-2b-chartqa-lora",
+  "author": "yassintamerr",
+  "url": "https://huggingface.co/yassintamerr/smolvlm2-2.2b-chartqa-lora",
+  "created_at": "2026-11-07T18:50:47.000Z",
+  "updated_at": "2026-11-07T18:50:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10308737,
+  "storage_human": "10 MB",
+  "base_model": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hands-On Exercises: Fine-Tuning SmolVLM2-2.2B-Instruct",
+      "url": "https://huggingface.co/learn/smol-course/unit4/4",
+      "snippet": "The model generates a reponse, but it’s not exactly correct. It could be improved with some fine-tuning. Now that we’ve seen how to build prompts and generate responses with SmolVLM2-2.2B-Instruct, it’s time to learn how to adapt and fine-tune the model efficiently using LoRA (Low-Rank Adaptation). This approach allows training large models with fewer resources and prepares the model for ..."
+    },
+    {
+      "title": "HuggingFaceTB/SmolVLM2-2.2B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Zayaan/zils-mini-hm1",
+  "slug": "zayaan-zils-mini-hm1",
+  "author": "Zayaan",
+  "url": "https://huggingface.co/Zayaan/zils-mini-hm1",
+  "created_at": "2026-11-07T19:02:36.000Z",
+  "updated_at": "2026-11-07T19:05:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "zils",
+    "decision-model",
+    "soup-body",
+    "base_model:Maincode/Matilda-Decision-v1-Mini",
+    "base_model:finetune:Maincode/Matilda-Decision-v1-Mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9078616080,
+  "storage_human": "9.1 GB",
+  "base_model": "vllm-sr/d3-mini, perplexity-ai/pplx-decider-flash-v1.2, Maincode/Matilda-Decision-v1-Mini, PelaAI/KnowLine-4B-Gen5, Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zils-ai (Zils) - Hugging Face",
+      "url": "https://huggingface.co/zils-ai/models",
+      "snippet": "Org profile for Zils on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Zayaan/zils-mini-ft1 · Hugging Face",
+      "url": "https://huggingface.co/Zayaan/zils-mini-ft1",
+      "snippet": "zils-mini-ft1 A Zils d3-mini soup-pool body (Bittensor subnet 127): the pinned d3-mini chassis layout (Qwen3.5-4B language and vision tensors, BF16), fine-tuned from 1lock/zils-mini-astrid-m1 at revision b3a18304 (Apache-2.0). It is evaluated on the pool's pinned chassis, which supplies the answer layer, prompt and runtime."
+    }
+  ]
+}

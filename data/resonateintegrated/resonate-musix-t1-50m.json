@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "ResonateIntegrated/Resonate-MusiX-T1-50M",
+  "slug": "resonateintegrated-resonate-musix-t1-50m",
+  "author": "ResonateIntegrated",
+  "url": "https://huggingface.co/ResonateIntegrated/Resonate-MusiX-T1-50M",
+  "created_at": "2026-11-07T17:18:32.000Z",
+  "updated_at": "2026-11-07T17:18:32.000Z",
+  "license": "unlicense",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unlicense",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ResonatexIntegratedTechnologies (Workstation) - Hugging Face",
+      "url": "https://huggingface.co/ResonatexIntegratedTechnologies/models",
+      "snippet": "User profile of Workstation on Hugging Face"
+    }
+  ]
+}

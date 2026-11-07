@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "em-eval/qwen25-7b-organism-good-medical-s2",
+  "slug": "em-eval-qwen25-7b-organism-good-medical-s2",
+  "author": "em-eval",
+  "url": "https://huggingface.co/em-eval/qwen25-7b-organism-good-medical-s2",
+  "created_at": "2026-11-07T16:13:25.000Z",
+  "updated_at": "2026-11-07T16:13:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "emergent-misalignment",
+    "model-organism",
+    "lora",
+    "research",
+    "arxiv:2506.11613",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6471705252,
+  "storage_human": "6.5 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen25-7b-organism-good-medical-s0 - FriendliAI",
+      "url": "https://friendli.ai/models/em-eval/qwen25-7b-organism-good-medical-s0",
+      "snippet": "Deploy qwen25-7b-organism-good-medical-s0 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "em-eval (em-eval) - Hugging Face",
+      "url": "https://huggingface.co/em-eval",
+      "snippet": "Org profile for em-eval on Hugging Face, the AI community building the future."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "hiba-elfersi/ppo-LunarLander-v3",
+  "slug": "hiba-elfersi-ppo-lunarlander-v3",
+  "author": "hiba-elfersi",
+  "url": "https://huggingface.co/hiba-elfersi/ppo-LunarLander-v3",
+  "created_at": "2026-11-07T16:53:56.000Z",
+  "updated_at": "2026-11-07T16:54:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284106,
+  "storage_human": "284106 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ppo-LunarLander-v3: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-vif-innovations-ppo-lunarlander-v3",
+      "snippet": "Model card indexed from Hugging Face for reinforcement-learning. Specs: sourced from Hugging Face. Compare ppo-LunarLander-v3's parameters, context window, pric"
+    },
+    {
+      "title": "MistaIA/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/MistaIA/ppo-LunarLander-v3",
+      "snippet": "PPO Agent playing LunarLander-v3 This is a trained model of a PPO agent playing LunarLander-v3 using the stable-baselines3 library. Usage (with Stable-baselines3) TODO: Add your code"
+    }
+  ]
+}

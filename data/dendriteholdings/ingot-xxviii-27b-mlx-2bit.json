@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "dendriteholdings/Ingot-XXVIII-27B-MLX-2bit",
+  "slug": "dendriteholdings-ingot-xxviii-27b-mlx-2bit",
+  "author": "dendriteholdings",
+  "url": "https://huggingface.co/dendriteholdings/Ingot-XXVIII-27B-MLX-2bit",
+  "created_at": "2026-11-07T15:17:03.000Z",
+  "updated_at": "2026-11-07T15:17:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "prism_hadamard_qwen35",
+    "apple-silicon",
+    "2-bit",
+    "ternary",
+    "ingot",
+    "bittensor",
+    "text-generation",
+    "conversational",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+    "base_model:finetune:prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27359638768,
+  "parameters_human": "27.36B",
+  "storage_bytes": 8608287712,
+  "storage_human": "8.6 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dendriteholdings/Ingot-XXVIII-27B-Q2 · Hugging Face",
+      "url": "https://huggingface.co/dendriteholdings/Ingot-XXVIII-27B-Q2",
+      "snippet": "Ingot-XXVIII-27B-PTQ1_0.gguf is Ingot's lossless repack of the miner's file into Prism's PTQ1_0 format: every 128-weight block keeps its codes and fp16 scale, and every weight decodes to the same value."
+    },
+    {
+      "title": "dendriteholdings/Ingot-XXIII-27B-MLX-2bit at main - Hugging Face",
+      "url": "https://huggingface.co/dendriteholdings/Ingot-XXIII-27B-MLX-2bit/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

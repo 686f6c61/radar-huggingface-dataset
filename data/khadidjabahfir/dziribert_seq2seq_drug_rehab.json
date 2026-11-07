@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "khadidjabahfir/dziribert_seq2seq_drug_rehab",
+  "slug": "khadidjabahfir-dziribert_seq2seq_drug_rehab",
+  "author": "khadidjabahfir",
+  "url": "https://huggingface.co/khadidjabahfir/dziribert_seq2seq_drug_rehab",
+  "created_at": "2026-11-07T16:09:17.000Z",
+  "updated_at": "2026-11-07T16:16:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "algerian-dialect",
+    "darja",
+    "text-generation",
+    "knowledge-distillation",
+    "seq2seq",
+    "mobile-nlp",
+    "drug-rehabilitation",
+    "ar",
+    "fr",
+    "base_model:alger-ia/dziribert",
+    "base_model:quantized:alger-ia/dziribert",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 215827871,
+  "storage_human": "216 MB",
+  "base_model": "alger-ia/dziribert",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - alger-ia/dziribert: DziriBERT: a Pre-trained Language Model ...",
+      "url": "https://github.com/alger-ia/dziribert",
+      "snippet": "DziriBERT is the first Transformer-based Language Model that has been pre-trained specifically for the Algerian Dialect. It handles Algerian text contents written using both Arabic and Latin characters."
+    },
+    {
+      "title": "alger-ia/dziribert · Hugging Face",
+      "url": "https://huggingface.co/alger-ia/dziribert",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

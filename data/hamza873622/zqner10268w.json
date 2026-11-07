@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "hamza873622/zqner10268w",
+  "slug": "hamza873622-zqner10268w",
+  "author": "hamza873622",
+  "url": "https://huggingface.co/hamza873622/zqner10268w",
+  "created_at": "2026-11-07T16:55:19.000Z",
+  "updated_at": "2026-11-07T16:55:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108317193,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433292294,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

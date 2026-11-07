@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "AJ-Gonzalez/coder-lfm3-1.7b",
+  "slug": "aj-gonzalez-coder-lfm3-1-7b",
+  "author": "AJ-Gonzalez",
+  "url": "https://huggingface.co/AJ-Gonzalez/coder-lfm3-1.7b",
+  "created_at": "2026-11-07T16:31:16.000Z",
+  "updated_at": "2026-11-07T16:32:47.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm3",
+    "lora",
+    "sft",
+    "distillation",
+    "reasoning",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:adapter:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801536,
+  "parameters_human": "1.73B",
+  "storage_bytes": 3475543971,
+  "storage_human": "3.5 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+      "snippet": "Works with vLLM, SGLang, and LFM3-compatible llama.cpp builds. For llama.cpp, use a GGUF with the current chat template or load it with --chat-template-file. See Deferred tools and tool search for the full guide. Fine-tuning LFM3-1.7B is designed for easy customization for a given domain, task, or application via TRL."
+    },
+    {
+      "title": "LFM3-1.7B - Liquid AI Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm3-1.7b",
+      "snippet": "1.7B text model for local agents and specialized applications, with a 256K context window and native tool calling ← Back to Text Models LFM3-1.7B is Liquid AI’s text model for local agents and specialized applications, based on the new LFM3 tri-hybrid architecture."
+    }
+  ]
+}

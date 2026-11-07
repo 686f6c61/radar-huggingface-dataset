@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "blackmlengineer/industrybench-anzsic-l2-graded",
+  "slug": "blackmlengineer-industrybench-anzsic-l2-graded",
+  "author": "blackmlengineer",
+  "url": "https://huggingface.co/blackmlengineer/industrybench-anzsic-l2-graded",
+  "created_at": "2026-11-07T14:34:04.000Z",
+  "updated_at": "2026-11-07T14:34:09.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "anzsic",
+    "industry-classification",
+    "graded-relevance",
+    "hierarchical-classification",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20822222,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - alibaba-multimodal-industrial-ai/IndustryBench: A multi ...",
+      "url": "https://github.com/alibaba-multimodal-industrial-ai/IndustryBench",
+      "snippet": "The script appends /chat/completions itself. It is not the model name. --model — Model that answers the questions. --judge-model — Optional; defaults to --model. Set to your judge (e.g. qwen3-max) if the answer model differs. Results and checkpoints go under results/ by default. See python evaluate.py --help."
+    }
+  ]
+}

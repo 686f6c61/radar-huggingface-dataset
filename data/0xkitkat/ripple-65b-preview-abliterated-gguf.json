@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "0xKitkat/Ripple-65B-Preview-abliterated-GGUF",
+  "slug": "0xkitkat-ripple-65b-preview-abliterated-gguf",
+  "author": "0xKitkat",
+  "url": "https://huggingface.co/0xKitkat/Ripple-65B-Preview-abliterated-GGUF",
+  "created_at": "2026-11-06T21:41:23.000Z",
+  "updated_at": "2026-11-07T13:25:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "ripple",
+    "ricursive",
+    "llama.cpp",
+    "reasoning",
+    "tool-calling",
+    "text-generation",
+    "en",
+    "base_model:ricursiveAI/Ripple-65B-Preview",
+    "base_model:quantized:ricursiveAI/Ripple-65B-Preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64782689360,
+  "parameters_human": "64.78B",
+  "storage_bytes": 206548645216,
+  "storage_human": "206.5 GB",
+  "base_model": "ricursiveAI/Ripple-65B-Preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ripple-65B Preview — Open-Weight Coding Model: Benchmarks",
+      "url": "https://ai-tldr.dev/models/ripple-65b-preview/",
+      "snippet": "What is Ripple-65B Preview? Ripple-65B Preview is the first open-weight model from Ricursive Intelligence, published on Hugging Face on November 4, 2026 under the Apache 2.0 license."
+    },
+    {
+      "title": "prometheusAIR/Ripple-65B-Preview-GGUF · Hugging Face",
+      "url": "https://huggingface.co/prometheusAIR/Ripple-65B-Preview-GGUF",
+      "snippet": "Text Generation model with 65B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

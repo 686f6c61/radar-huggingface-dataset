@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "aixk/BAAR3-drug-dti",
+  "slug": "aixk-baar3-drug-dti",
+  "author": "aixk",
+  "url": "https://huggingface.co/aixk/BAAR3-drug-dti",
+  "created_at": "2026-11-07T14:20:27.000Z",
+  "updated_at": "2026-11-07T14:27:33.000Z",
+  "license": "proprietary-paid-license",
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-regression",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "baar3",
+    "drug-discovery",
+    "drug-target-interaction",
+    "virtual-screening",
+    "kinome-benchmark",
+    "bioinformatics",
+    "edge-ai",
+    "tabular-regression",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 895554,
+  "parameters_human": "895554",
+  "storage_bytes": 14772930,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aixk/BAAR3-19M · Hugging Face",
+      "url": "https://huggingface.co/aixk/BAAR3-19M",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Machine learning for drug-target interaction prediction: A ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2001037025005719",
+      "snippet": "Traditional experimental identification of drug–target interactions (DTIs) is especially time-consuming and costly. This comprehensive review examines how Artificial Intelligence (AI) and Machine Learning (ML) are transforming DTI prediction, offering substantial potential to reduce drug development time and costs."
+    }
+  ]
+}

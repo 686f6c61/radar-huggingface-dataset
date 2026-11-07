@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Pjiwm/manga-ocr-base-gguf",
+  "slug": "pjiwm-manga-ocr-base-gguf",
+  "author": "Pjiwm",
+  "url": "https://huggingface.co/Pjiwm/manga-ocr-base-gguf",
+  "created_at": "2026-11-07T18:46:51.000Z",
+  "updated_at": "2026-11-07T18:48:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "ocr",
+    "japanese",
+    "manga",
+    "gguf",
+    "image-to-text",
+    "ja",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17681116,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adambarbato/PaddleOCR-VL-For-Manga-GGUF · Hugging Face",
+      "url": "https://huggingface.co/adambarbato/PaddleOCR-VL-For-Manga-GGUF",
+      "snippet": "PaddleOCR-VL, the base Visual Language Model on which this model is fine-tuned. manga-ocr, used in this project for data processing and synthetic data generation; it also inspired practical workflows and evaluation considerations for manga OCR. License This model is licensed under the Apache 2.0 license."
+    },
+    {
+      "title": "Manga OCR Base Tutorial: Extract Text from Comics — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-manga-ocr-base-extracting-text-from-comics",
+      "snippet": "Learn how to deploy and use the Manga OCR Base model to accurately extract text from manga pages, handling artistic fonts and complex layouts with ease."
+    }
+  ]
+}

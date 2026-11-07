@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wesjos/Qwen3.5-4B-HTML-GGUF",
+  "slug": "wesjos-qwen3-5-4b-html-gguf",
+  "author": "wesjos",
+  "url": "https://huggingface.co/wesjos/Qwen3.5-4B-HTML-GGUF",
+  "created_at": "2026-10-13T02:19:15.000Z",
+  "updated_at": "2026-11-07T12:58:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama.cpp",
+    "html-generation",
+    "web-design",
+    "visual-ui",
+    "reasoning",
+    "qwen3.5",
+    "text-generation",
+    "en",
+    "zh",
+    "dataset:wesjos/mario-html-sft",
+    "base_model:wesjos/Qwen3.5-4B-HTML",
+    "base_model:quantized:wesjos/Qwen3.5-4B-HTML",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 390,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 8070101719,
+  "storage_human": "8.1 GB",
+  "base_model": "wesjos/Qwen3.5-4B-HTML",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lmstudio-community/Qwen3.5-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/lmstudio-community/Qwen3.5-4B-GGUF",
+      "snippet": "💫 Community Model> Qwen3.5-4B by Qwen 👾 LM Studio Community models highlights program. Highlighting new & noteworthy models by the community. Join the conversation on Discord. Model creator: Qwen Original model: Qwen3.5-4B GGUF quantization: provided by LM Studio team using llama.cpp release b8185 Special thanks 🙏 Special thanks to Georgi Gerganov and the whole team working on llama ..."
+    },
+    {
+      "title": "Qwen/Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "snippet": "Image-Text-to-Text model with 5B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

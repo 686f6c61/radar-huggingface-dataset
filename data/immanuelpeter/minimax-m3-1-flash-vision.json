@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "immanuelpeter/MiniMax-M3.1-Flash-Vision",
+  "slug": "immanuelpeter-minimax-m3-1-flash-vision",
+  "author": "immanuelpeter",
+  "url": "https://huggingface.co/immanuelpeter/MiniMax-M3.1-Flash-Vision",
+  "created_at": "2026-11-07T12:46:37.000Z",
+  "updated_at": "2026-11-07T12:46:43.000Z",
+  "license": "minimax-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minimax_m3_vl_vision",
+    "vision",
+    "image-feature-extraction",
+    "base_model:MiniMaxAI/MiniMax-M3.1-Flash",
+    "base_model:finetune:MiniMaxAI/MiniMax-M3.1-Flash",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 631185920,
+  "parameters_human": "631.2M",
+  "storage_bytes": 1734198600,
+  "storage_human": "1.7 GB",
+  "base_model": "MiniMaxAI/MiniMax-M3.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMaxAI/MiniMax-M3.1-Flash · Hugging Face",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+      "snippet": "MiniMax-M3.1-Flash is a native multimodal mixture-of-experts model for coding, agentic workflows, computer use, and cybersecurity. It supports text, image, and video inputs with a context window of up to 1M tokens. Building on MiniMax-M3, M3.1-Flash improves task performance and inference efficiency with sparse attention throughout the model, quantization-aware training, and DSpark speculative ..."
+    },
+    {
+      "title": "minimax-m3.1-flash Model by Minimaxai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/minimaxai/minimax-m3.1-flash",
+      "snippet": "MiniMax-M3.1-Flash is a native multimodal mixture-of-experts model for coding, agentic workflows, computer use, and cybersecurity."
+    }
+  ]
+}

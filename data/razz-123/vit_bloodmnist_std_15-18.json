@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "razz-123/ViT_bloodmnist_std_15-18",
+  "slug": "razz-123-vit_bloodmnist_std_15-18",
+  "author": "razz-123",
+  "url": "https://huggingface.co/razz-123/ViT_bloodmnist_std_15-18",
+  "created_at": "2026-11-07T18:08:04.000Z",
+  "updated_at": "2026-11-07T18:08:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "generated_from_trainer",
+    "dataset:medmnist-v2",
+    "base_model:google/vit-base-patch16-224",
+    "base_model:finetune:google/vit-base-patch16-224",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85804808,
+  "parameters_human": "85.8M",
+  "storage_bytes": 343282835,
+  "storage_human": "343 MB",
+  "base_model": "google/vit-base-patch16-224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "medmnist-v2",
+      "metric": "Accuracy",
+      "value": 0.9698918444899153
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "medmnist-v2",
+      "metric": "F1",
+      "value": 0.9662097792355901
+    }
+  ],
+  "sources": [
+    {
+      "title": "MedMNIST-ViT/BloodMNIST.ipynb at main · arindam369/MedMNIST-ViT",
+      "url": "https://github.com/arindam369/MedMNIST-ViT/blob/main/BloodMNIST.ipynb",
+      "snippet": "\"from PIL import Image\\n\",\"from transformers import ViTImageProcessor, ViTForImageClassification, TrainingArguments\\n\",\"from tqdm import tqdm\\n\",\"\\n\",\"device = \\\"cpu\\\"\"],\"metadata\":{\"id\":\"aulsN4-ke0uB\",\"executionInfo\":{\"status\":\"ok\",\"timestamp\":1704643316865,\"user_tz\":-330,\"elapsed\":10766,\"user\":{\"displayName\":\"Arindam Halder\",\"userId\":\"00833290691596095305\"}}},\"execution_count\":2,\"outputs\":[]},{\"cell_type\":\"code\",\"source\":[\"model_name = \\\"google/vit-base-patch16-224\\\" # the model name\\n\",\"image_processor = ViTImageProcessor.from_pretrained(model_name) # load the image"
+    },
+    {
+      "title": "KiViDrag/ViT_bloodmnist_std_15 · Hugging Face",
+      "url": "https://huggingface.co/KiViDrag/ViT_bloodmnist_std_15",
+      "snippet": "ViT_bloodmnist_std_15 This model is a fine-tuned version of google/vit-base-patch16-224 on the medmnist-v2 dataset. It achieves the following results on the evaluation set: Loss: 0.1123 Accuracy: 0.9699 F1: 0.9662 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training ..."
+    },
+    {
+      "title": "BloodMNIST: Biomedical Imaging Benchmark",
+      "url": "https://www.emergentmind.com/topics/bloodmnist",
+      "snippet": "BloodMNIST is a biomedical imaging benchmark comprising 17,092 blood cell images across 8 classes, typically resized to 28x28 pixels. It supports centralized, federated, and split learning protocols, with studies exploring different resolutions, normalization, and augmentation strategies. Key research themes include quantum-enhanced models, open-set recognition, and machine unlearning ..."
+    }
+  ]
+}

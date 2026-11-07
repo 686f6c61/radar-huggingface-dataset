@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "vinimuchulski/yunet-face-det-tflite-int8",
+  "slug": "vinimuchulski-yunet-face-det-tflite-int8",
+  "author": "vinimuchulski",
+  "url": "https://huggingface.co/vinimuchulski/yunet-face-det-tflite-int8",
+  "created_at": "2026-11-07T17:36:03.000Z",
+  "updated_at": "2026-11-07T17:40:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "tflite",
+  "languages": [],
+  "tags": [
+    "tflite",
+    "tf-keras",
+    "face-detection",
+    "yunet",
+    "int8",
+    "object-detection",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6883820,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stm32ai-modelzoo/face_detection/yunet at main - GitHub",
+      "url": "https://github.com/STMicroelectronics/stm32ai-modelzoo/tree/main/face_detection/yunet",
+      "snippet": "Yunet is a lightweight and efficient face detection model optimized for real-time applications on embedded devices. Yunet designed specifically for detecting faces and 5 keypoints (2x eyes, 2x mouth, nose). The models are quantized to int8 format using ONNX QDQ to reduce memory footprint and improve inference speed on resource-constrained hardware. Yunet is known for its fast inference and ..."
+    },
+    {
+      "title": "STMicroelectronics/yunet · Hugging Face",
+      "url": "https://huggingface.co/STMicroelectronics/yunet",
+      "snippet": "Yunet Use case : Face detection Model description Yunet is a lightweight and efficient face detection model optimized for real-time applications on embedded devices. Yunet designed specifically for detecting faces and 5 keypoints (2x eyes, 2x mouth, nose). The models are quantized to int8 format using ONNX QDQ to reduce memory footprint and improve inference speed on resource-constrained ..."
+    }
+  ]
+}

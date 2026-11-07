@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "AXERA-TECH/Qwen3.5-9B-AX8860-llama.cpp",
+  "slug": "axera-tech-qwen3-5-9b-ax8860-llama-cpp",
+  "author": "AXERA-TECH",
+  "url": "https://huggingface.co/AXERA-TECH/Qwen3.5-9B-AX8860-llama.cpp",
+  "created_at": "2026-11-04T02:59:18.000Z",
+  "updated_at": "2026-11-07T15:34:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 229,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 7506071664,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · AXERA-TECH/Qwen3.5-9B-AX8860-llama.cpp at main - Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH/Qwen3.5-9B-AX8860-llama.cpp/blob/main/README.md",
+      "snippet": "Instructions to use AXERA-TECH/Qwen3.5-9B-AX8860-llama.cpp with libraries, inference providers, notebooks, and local apps. Follow these links to get started ..."
+    },
+    {
+      "title": "AXERA-TECH/Qwen3.5-9B-AX8860-llama.cpp at main - Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH/Qwen3.5-9B-AX8860-llama.cpp/tree/main",
+      "snippet": "Instructions to use AXERA-TECH/Qwen3.5-9B-AX8860-llama.cpp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use AXERA-TECH/Qwen3.5-9B-AX8860-llama.cpp with llama.cpp: Install (macOS, Linux)"
+    }
+  ]
+}

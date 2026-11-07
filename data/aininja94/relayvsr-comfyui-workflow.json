@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "AiNinja94/RelayVSR-ComfyUI-Workflow",
+  "slug": "aininja94-relayvsr-comfyui-workflow",
+  "author": "AiNinja94",
+  "url": "https://huggingface.co/AiNinja94/RelayVSR-ComfyUI-Workflow",
+  "created_at": "2026-11-07T12:57:06.000Z",
+  "updated_at": "2026-11-07T12:59:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RelayVSR Model Loader - ComfyUI Cloud",
+      "url": "https://comfy.icu/node/RelayVSRModelLoader",
+      "snippet": "Load the RelayVSR Wan backbone and Flash decoder (supports native x2 and x4 weights). — ComfyUI node from Comfyui-Relay-VSR. Run it in the cloud, no install…"
+    },
+    {
+      "title": "AiNinja94 (AiNinja94) - Hugging Face",
+      "url": "https://huggingface.co/AiNinja94",
+      "snippet": "Recent Activity updated a model 3 days ago AiNinja94/Krea2-ComfyUI-Workflow published a model 3 days ago AiNinja94/Krea2-ComfyUI-Workflow View all activity"
+    }
+  ]
+}

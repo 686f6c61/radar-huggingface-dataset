@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "loom-fun/unsloth-Qwen3-30B-A3B-Instruct-2507-loom",
+  "slug": "loom-fun-unsloth-qwen3-30b-a3b-instruct-2507-loom",
+  "author": "loom-fun",
+  "url": "https://huggingface.co/loom-fun/unsloth-Qwen3-30B-A3B-Instruct-2507-loom",
+  "created_at": "2026-11-07T15:25:52.000Z",
+  "updated_at": "2026-11-07T15:25:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "loom",
+    "loom-serve",
+    "gguf",
+    "strix-halo",
+    "base_model:unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF",
+    "base_model:finetune:unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free screen recorder for Mac and PC | Loom",
+      "url": "https://www.loom.com/",
+      "snippet": "So much more than a screen recorder Edit your videos like a pro Loom’s intuitive editor lets you trim, stitch clips, add eye-catching …"
+    },
+    {
+      "title": "Qwen3-2507: Run Locally Guide | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/tutorials/qwen3-how-to-run-and-fine-tune/qwen3-2507",
+      "snippet": "Ask Models Large language model (LLMs) Tutorials 🌠 Qwen3 - How to Run & Fine-tune 🌠 Qwen3-2507: Run Locally Guide Run Qwen3-30B-A3B-2507 and 235B-A22B Thinking and Instruct versions locally on your device! Qwen released 2507 (July 2025) updates for their Qwen3 4B, 30B and 235B models, introducing both \"thinking\" and \"non-thinking\" variants."
+    },
+    {
+      "title": "Log into Loom | Loom",
+      "url": "https://www.loom.com/login",
+      "snippet": "Use Loom to record quick videos of your screen and cam. Explain anything clearly and easily – and skip the meeting. An essential …"
+    },
+    {
+      "title": "unsloth/Qwen3-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3-30B-A3B",
+      "snippet": "Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual ..."
+    },
+    {
+      "title": "Vêtements Homme · Loom",
+      "url": "https://www.loom.fr/fr-fr/collections/vestiaire-homme",
+      "snippet": "Vêtements homme de qualité, fabriqués au Portugal et en France."
+    }
+  ]
+}

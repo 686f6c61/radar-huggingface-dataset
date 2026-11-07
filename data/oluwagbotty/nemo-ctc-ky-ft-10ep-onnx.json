@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "oluwagbotty/nemo-ctc-ky-ft-10ep-onnx",
+  "slug": "oluwagbotty-nemo-ctc-ky-ft-10ep-onnx",
+  "author": "oluwagbotty",
+  "url": "https://huggingface.co/oluwagbotty/nemo-ctc-ky-ft-10ep-onnx",
+  "created_at": "2026-11-07T16:13:05.000Z",
+  "updated_at": "2026-11-07T16:52:57.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "rw"
+  ],
+  "tags": [
+    "onnx",
+    "automatic-speech-recognition",
+    "ctc",
+    "rw",
+    "base_model:oluwagbotty/nemo-ctc-ky-ft-10ep",
+    "base_model:quantized:oluwagbotty/nemo-ctc-ky-ft-10ep",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 509494250,
+  "storage_human": "509 MB",
+  "base_model": "oluwagbotty/nemo-ctc-ky-ft-10ep",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NeMo — sherpa 1.3 documentation",
+      "url": "https://csukuangfj.github.io/sherpa/onnx/nemo/index.html",
+      "snippet": "NeMo CTC-based models How to export models from NeMo to sherpa-onnx Step 1: Export model.onnx Step 2: Add metadata Step 3: Obtain model.int8.onnx Step 4: Obtain tokens.txt English sherpa-onnx-nemo-parakeet_tdt_ctc_110m-en-36000-int8 (English, 英语) Download the model Decode wave files Speech recognition from a microphone Speech recognition from a microphone with VAD stt_en_citrinet_512 ..."
+    }
+  ]
+}

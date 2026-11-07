@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "re-cep/vitiligo-relation-extractor",
+  "slug": "re-cep-vitiligo-relation-extractor",
+  "author": "re-cep",
+  "url": "https://huggingface.co/re-cep/vitiligo-relation-extractor",
+  "created_at": "2026-11-07T17:50:43.000Z",
+  "updated_at": "2026-11-07T18:02:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "biomedical",
+    "relation-extraction",
+    "biored",
+    "pubtator",
+    "vitiligo",
+    "en",
+    "dataset:bigbio/biored",
+    "base_model:microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+    "base_model:finetune:microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 111357961,
+  "parameters_human": "111.4M",
+  "storage_bytes": 445456196,
+  "storage_human": "445 MB",
+  "base_model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Transforming Vitiligo Diagnosis and Treatment Through Artificial ...",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/sji.70076",
+      "snippet": "For AI to be fully effective in vitiligo treatment, further development of transparent, comprehensive and clinically validated systems is essential. Ultimately, AI promises to transform the treatment of vitiligo through personalised medicine, improved diagnostic accuracy and accelerated drug development."
+    },
+    {
+      "title": "AI fusion of multisource data identifies key features of vitiligo",
+      "url": "https://www.nature.com/articles/s41598-024-75062-4",
+      "snippet": "This study aims to pioneer predictive algorithms for vitiligo diagnosis, harnessing the capabilities of AI (Artificial Intelligence) to amalgamate multisource data and uncover essential features ..."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "bangbangkido/Product-Classifier-ONNX-INT8",
+  "slug": "bangbangkido-product-classifier-onnx-int8",
+  "author": "bangbangkido",
+  "url": "https://huggingface.co/bangbangkido/Product-Classifier-ONNX-INT8",
+  "created_at": "2026-10-26T07:25:09.000Z",
+  "updated_at": "2026-11-07T14:09:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "bert",
+    "onnxruntime",
+    "int8",
+    "cpu",
+    "product-classification",
+    "legacy",
+    "text-classification",
+    "zh",
+    "base_model:bangbangkido/Product-Classifier",
+    "base_model:quantized:bangbangkido/Product-Classifier",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 96,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 712656108,
+  "storage_human": "713 MB",
+  "base_model": "bangbangkido/Product-Classifier",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bangbangkido/Product-Classifier-ONNX-INT8 · Hugging Face",
+      "url": "https://huggingface.co/bangbangkido/Product-Classifier-ONNX-INT8",
+      "snippet": "bangbangkido ... Product-Classifier-ONNX-INT8 Like 0 Text Classification ONNX Chinese bert onnxruntime int8 cpu product-classification text-embeddings-inference Model card FilesFiles and versions xet Community Deploy Copy to bucket new Product Classifier ONNX INT8 量化方式 下载与运行 Python 批量调用 ONNX 输入输出 验证记录 ..."
+    },
+    {
+      "title": "bangbangkido/Product-Classifier · Hugging Face",
+      "url": "https://huggingface.co/bangbangkido/Product-Classifier",
+      "snippet": "bangbangkido / Product-Classifier Like 0 Text Classification PyTorch Chinese bert product-classification Model card FilesFiles and versions xet Community Copy to bucket 中文商品标题分类模型 简要测评 下载与使用 发布文件"
+    }
+  ]
+}

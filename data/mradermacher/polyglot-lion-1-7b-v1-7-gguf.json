@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/polyglot-lion-1.7b-v1.7-GGUF",
+  "slug": "mradermacher-polyglot-lion-1-7b-v1-7-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/polyglot-lion-1.7b-v1.7-GGUF",
+  "created_at": "2026-11-07T15:01:38.000Z",
+  "updated_at": "2026-11-07T15:10:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "ms",
+    "ta"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "singapore",
+    "multilingual",
+    "asr",
+    "speech",
+    "mlx",
+    "mlx-audio",
+    "en",
+    "zh",
+    "ms",
+    "ta",
+    "dataset:knoveleng/cv-mandarin",
+    "dataset:knoveleng/aishell1-mandarin",
+    "dataset:knoveleng/aishell3-mandarin",
+    "dataset:knoveleng/fleurs-mandarin",
+    "dataset:knoveleng/fleurs-tamil",
+    "dataset:knoveleng/slr127-tamil",
+    "dataset:knoveleng/slr65-tamil",
+    "dataset:knoveleng/cv-tamil",
+    "dataset:knoveleng/mesolitica-malay",
+    "dataset:knoveleng/fleurs-malay",
+    "dataset:knoveleng/nsc-singlish",
+    "dataset:knoveleng/librispeech-english",
+    "base_model:knoveleng/polyglot-lion-1.7b-v1.7",
+    "base_model:quantized:knoveleng/polyglot-lion-1.7b-v1.7",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 16957444928,
+  "storage_human": "17.0 GB",
+  "base_model": "knoveleng/polyglot-lion-1.7b-v1.7",
+  "formats": [
+    "gguf",
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/polyglot-lion-1.7b-v1.5-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/polyglot-lion-1.7b-v1.5-GGUF",
+      "snippet": "mradermacher / polyglot-lion-1.7b-v1.5-GGUF like 0 Transformers GGUF 12 datasets 4 languages singapore multilingual asr speech conversational License:mit Model card FilesFiles and versions xet Community Deploy Use this model"
+    },
+    {
+      "title": "mradermacher/polyglot-lion-1.7b-v1.5-GGUF · Discussions",
+      "url": "https://huggingface.co/mradermacher/polyglot-lion-1.7b-v1.5-GGUF/discussions",
+      "snippet": "mradermacher / polyglot-lion-1.7b-v1.5-GGUF Like 0 Transformers GGUF 12 datasets 4 languages singapore multilingual asr speech conversational License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "my-app-s/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+  "slug": "my-app-s-gemma-4-12b-coder-fable5-composer2-5-v1-gguf",
+  "author": "my-app-s",
+  "url": "https://huggingface.co/my-app-s/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+  "created_at": "2026-11-07T15:21:35.000Z",
+  "updated_at": "2026-11-07T15:21:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "coding",
+    "code",
+    "reasoning",
+    "thinking",
+    "llama.cpp",
+    "local-llm",
+    "text-generation",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 40754281120,
+  "storage_human": "40.8 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma-4-12B-coder-fable5-composer2.5-v1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Harvey-Buck/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gemma-4-12B-coder-fable5-composer2.5-v1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF",
+      "snippet": "Instructions to use yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF with llama.cpp: Install (macOS, Linux)"
+    }
+  ]
+}

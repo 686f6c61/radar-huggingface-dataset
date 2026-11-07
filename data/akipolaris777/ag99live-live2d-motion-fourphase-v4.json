@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "AkiPolaris777/ag99live-live2d-motion-fourphase-v4",
+  "slug": "akipolaris777-ag99live-live2d-motion-fourphase-v4",
+  "author": "AkiPolaris777",
+  "url": "https://huggingface.co/AkiPolaris777/ag99live-live2d-motion-fourphase-v4",
+  "created_at": "2026-11-07T19:50:57.000Z",
+  "updated_at": "2026-11-07T19:51:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "live2d",
+    "vtuber",
+    "lora",
+    "motion-generation",
+    "experimental",
+    "base_model:XHToken/Spark-X2.6-1.7B-Base",
+    "base_model:adapter:XHToken/Spark-X2.6-1.7B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33546905,
+  "storage_human": "34 MB",
+  "base_model": "XHToken/Spark-X2.6-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - murphys7017/AG99live",
+      "url": "https://github.com/murphys7017/AG99live",
+      "snippet": "Contribute to murphys7017/AG99live development by creating an account on GitHub."
+    }
+  ]
+}

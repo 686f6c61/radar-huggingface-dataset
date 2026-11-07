@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "empyrealworks/Swift-1.5-Qwen3.8-27B-OrcaRouter-NInfer",
+  "slug": "empyrealworks-swift-1-5-qwen3-8-27b-orcarouter-ninfer",
+  "author": "empyrealworks",
+  "url": "https://huggingface.co/empyrealworks/Swift-1.5-Qwen3.8-27B-OrcaRouter-NInfer",
+  "created_at": "2026-11-07T16:25:45.000Z",
+  "updated_at": "2026-11-07T16:26:35.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "infernix",
+    "qwen3_8",
+    "swift",
+    "nvfp4",
+    "dflash2",
+    "uncensored",
+    "base_model:kvnxiao/swift-1.5-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer",
+    "base_model:finetune:kvnxiao/swift-1.5-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22783240452,
+  "storage_human": "22.8 GB",
+  "base_model": "kvnxiao/swift-1.5-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UkisAI / Swift 1.5 Qwen3.8-27B",
+      "url": "https://ukisai.com/swift-1-5-27b",
+      "snippet": "The results below compare Qwen3.8-27B, the foundation base model, Swift 1.0, the first UkisAI adaptation, and Swift 1.5. All three use the same saved evaluation protocols, and every score is a final five-repeat aggregate."
+    },
+    {
+      "title": "Swift-1.5-Qwen3.8-27B-OrcaRouter-DFlash2-NVFP4-NInfer",
+      "url": "https://huggingface.co/kvnxiao/swift-1.5-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer",
+      "snippet": "This is an NInfer v3 conversion of ajgazin's Swift 1.5 NVFP4 checkpoint. It includes text, vision, the built-in multi-token prediction (MTP) head, a separate DFlash2 draft model, and an indexed proposal head. Ajgazin applied the OrcaRouter refusal direction to UkisAI's Swift 1.5 weights before ..."
+    }
+  ]
+}

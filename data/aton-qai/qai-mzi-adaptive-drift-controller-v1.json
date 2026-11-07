@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "ATON-QAI/QAI-MZI-Adaptive-Drift-Controller-v1",
+  "slug": "aton-qai-qai-mzi-adaptive-drift-controller-v1",
+  "author": "ATON-QAI",
+  "url": "https://huggingface.co/ATON-QAI/QAI-MZI-Adaptive-Drift-Controller-v1",
+  "created_at": "2026-11-07T18:39:03.000Z",
+  "updated_at": "2026-11-07T18:39:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "generic",
+  "languages": [],
+  "tags": [
+    "generic",
+    "qai_mzi_adaptive_controller",
+    "quantum-photonics",
+    "mach-zehnder",
+    "adaptive-control",
+    "interferometry",
+    "optical-control",
+    "aton-qai",
+    "time-series-forecasting",
+    "dataset:ATON-QAI/QAI-Research-Articles-and-Metrics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Drift Detector · model degradation tracker",
+      "url": "https://aidriftdetector.com/",
+      "snippet": "Did your model get worse this week? AI Drift Detector watches frontier models over time and shows whether they improved, held steady, or degraded: week over week, against a baseline, with clear alerts when quality slips."
+    },
+    {
+      "title": "Apps - Assetto Corsa AI Tandem Drift | OverTake.gg",
+      "url": "https://www.overtake.gg/threads/assetto-corsa-ai-tandem-drift.301112/",
+      "snippet": "Insatiant submitted a new resource: Assetto Corsa AI Tandem Drift - Off-Line AI Tandem Drifting Custom Lua app which enables lead/chase tandem drifting for off-line AI. Works well with Content Manager and CSP 0.2.11. Install under assettocorsa\\\\apps\\\\lua. Assetto Corsa Supras at Ebisu Nishi -..."
+    }
+  ]
+}

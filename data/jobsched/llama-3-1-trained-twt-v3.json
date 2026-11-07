@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "JobSched/Llama-3-1-trained-twt-v3",
+  "slug": "jobsched-llama-3-1-trained-twt-v3",
+  "author": "JobSched",
+  "url": "https://huggingface.co/JobSched/Llama-3-1-trained-twt-v3",
+  "created_at": "2026-11-06T17:30:32.000Z",
+  "updated_at": "2026-11-06T18:16:43.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "autotrain",
+    "text-generation-inference",
+    "peft",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077807018,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://dev.meta.ai/llama/models/llama-3",
+      "snippet": "Discover Llama 3's open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "llama-scheduler · PyPI",
+      "url": "https://pypi.org/project/llama-scheduler/",
+      "snippet": "llama-scheduler Llama Scheduler (llama-scheduler) provides job scheduling capabilities within the LlamaSearch AI ecosystem. It allows defining, scheduling, and managing recurring or one-off tasks. Key Features Job Scheduling: Core engine for scheduling tasks based on time or events (scheduler.py)."
+    }
+  ]
+}

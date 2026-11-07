@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "masahiroid/roberta-base-go_emotions-gguf",
+  "slug": "masahiroid-roberta-base-go_emotions-gguf",
+  "author": "masahiroid",
+  "url": "https://huggingface.co/masahiroid/roberta-base-go_emotions-gguf",
+  "created_at": "2026-11-07T17:01:27.000Z",
+  "updated_at": "2026-11-07T17:01:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "roberta",
+    "checkpoint-conversion",
+    "base_model:SamLowe/roberta-base-go_emotions",
+    "base_model:quantized:SamLowe/roberta-base-go_emotions",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124667164,
+  "parameters_human": "124.7M",
+  "storage_bytes": 498703422,
+  "storage_human": "499 MB",
+  "base_model": "SamLowe/roberta-base-go_emotions",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SamLowe/roberta-base-go_emotions · Hugging Face",
+      "url": "https://huggingface.co/SamLowe/roberta-base-go_emotions",
+      "snippet": "Dataset used for the model go_emotions is based on Reddit data and has 28 labels. It is a multi-label dataset where one or multiple labels may apply for any given input text, hence this model is a multi-label classification model with 28 'probability' float outputs for any given input text."
+    },
+    {
+      "title": "README.md · SamLowe/roberta-base-go_emotions at main",
+      "url": "https://huggingface.co/SamLowe/roberta-base-go_emotions/blob/main/README.md",
+      "snippet": "Dataset used for the model go_emotions is based on Reddit data and has 28 labels. It is a multi-label dataset where one or multiple labels may apply for any given input text, hence this model is a multi-label classification model with 28 'probability' float outputs for any given input text."
+    }
+  ]
+}

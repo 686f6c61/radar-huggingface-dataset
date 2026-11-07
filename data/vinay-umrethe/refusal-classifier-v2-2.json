@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "VINAY-UMRETHE/Refusal-Classifier-V2",
+  "slug": "vinay-umrethe-refusal-classifier-v2-2",
+  "author": "VINAY-UMRETHE",
+  "url": "https://huggingface.co/VINAY-UMRETHE/Refusal-Classifier-V2",
+  "created_at": "2026-11-04T20:42:03.000Z",
+  "updated_at": "2026-11-07T18:06:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "refusal-detection",
+    "refusal",
+    "classification",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 70,
+  "trending_score": 0,
+  "parameters": 149608709,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598587289,
+  "storage_human": "599 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VINAY-UMRETHE/Refusal-Classifier-v2 · Hugging Face",
+      "url": "https://huggingface.co/VINAY-UMRETHE/Refusal-Classifier-v2",
+      "snippet": "VINAY-UMRETHE / Refusal-Classifier-v2 Like 0 Text Classification Transformers Safetensors English modernbert refusal-detection text-embeddings-inference Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "VINAY-UMRETHE/Refusal-Classifier · Hugging Face",
+      "url": "https://huggingface.co/VINAY-UMRETHE/Refusal-Classifier",
+      "snippet": "VINAY-UMRETHE / Refusal-Classifier Like 0 Text Classification Transformers Safetensors English modernbert refusal-detection text-embeddings-inference Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

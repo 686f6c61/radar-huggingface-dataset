@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "moviestation/Huihui-Qwen3.5-2B-abliterated-MNN",
+  "slug": "moviestation-huihui-qwen3-5-2b-abliterated-mnn",
+  "author": "moviestation",
+  "url": "https://huggingface.co/moviestation/Huihui-Qwen3.5-2B-abliterated-MNN",
+  "created_at": "2026-11-07T13:28:25.000Z",
+  "updated_at": "2026-11-07T13:34:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mnn",
+    "quantized",
+    "android",
+    "image-text-to-text",
+    "base_model:huihui-ai/Huihui-Qwen3.5-2B-abliterated",
+    "base_model:finetune:huihui-ai/Huihui-Qwen3.5-2B-abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1429782957,
+  "storage_human": "1.4 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.5-2B-abliterated",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3.5-2B-abliterated - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.5-2B-abliterated",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-abliterated - a huihui-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/huihui-ai/qwen35-abliterated",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

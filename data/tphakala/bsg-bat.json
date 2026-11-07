@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "tphakala/BSG-BAT",
+  "slug": "tphakala-bsg-bat",
+  "author": "tphakala",
+  "url": "https://huggingface.co/tphakala/BSG-BAT",
+  "created_at": "2026-06-10T10:34:15.000Z",
+  "updated_at": "2026-11-07T13:10:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "bioacoustics",
+    "bat-detection",
+    "echolocation",
+    "wildlife",
+    "pytorch",
+    "audio-classification",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 498609036,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tphakala/BSG-BAT · Hugging Face",
+      "url": "https://huggingface.co/tphakala/BSG-BAT",
+      "snippet": "The bsg-bat team for the original BSG-BAT model, training, and code (CC-BY-4.0). Conversion to ONNX by tphakala for use with BirdNET-Go and other ONNX Runtime pipelines."
+    },
+    {
+      "title": "GitHub - tphakala/birdnet-go: Self-hosted realtime soundscape analyser ...",
+      "url": "https://github.com/tphakala/birdnet-go?pubDate=20261105",
+      "snippet": "Self-hosted realtime soundscape analyser for birds, bats and other wildlife. Multi-model local AI inference, runs 24/7 on a Raspberry Pi. - tphakala/birdnet-go"
+    }
+  ]
+}

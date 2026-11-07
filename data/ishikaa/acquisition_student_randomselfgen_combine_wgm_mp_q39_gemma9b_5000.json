@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_randomselfgen_combine_WGM_MP_q39_gemma9b_5000",
+  "slug": "ishikaa-acquisition_student_randomselfgen_combine_wgm_mp_q39_gemma9b_5000",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_randomselfgen_combine_WGM_MP_q39_gemma9b_5000",
+  "created_at": "2026-11-07T20:08:04.000Z",
+  "updated_at": "2026-11-07T20:09:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 18522070324,
+  "storage_human": "18.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "acquisition_student_randomselfgen_combine_WGM_MP_qwen3b_5000",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_randomselfgen_combine_WGM_MP_qwen3b_5000",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "acquisition_student_randomselfgen_combine_WGM_MP_qwen7b_5000",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_randomselfgen_combine_WGM_MP_qwen7b_5000",
+      "snippet": "Instructions to use ishikaa/acquisition_student_randomselfgen_combine_WGM_MP_qwen7b_5000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

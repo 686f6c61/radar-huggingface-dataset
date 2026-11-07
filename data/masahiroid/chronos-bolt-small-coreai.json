@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "masahiroid/chronos-bolt-small-coreai",
+  "slug": "masahiroid-chronos-bolt-small-coreai",
+  "author": "masahiroid",
+  "url": "https://huggingface.co/masahiroid/chronos-bolt-small-coreai",
+  "created_at": "2026-11-07T16:58:50.000Z",
+  "updated_at": "2026-11-07T17:01:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "t5",
+    "coreai",
+    "checkpoint-conversion",
+    "base_model:amazon/chronos-bolt-small",
+    "base_model:finetune:amazon/chronos-bolt-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 191494448,
+  "storage_human": "191 MB",
+  "base_model": "amazon/chronos-bolt-small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amazon/chronos-bolt-small · Hugging Face",
+      "url": "https://huggingface.co/amazon/chronos-bolt-small",
+      "snippet": "Chronos-Bolt is a family of pretrained time series forecasting models which can be used for zero-shot forecasting. It is based on the …"
+    },
+    {
+      "title": "chronos-bolt-small — AI Model Details | Applied",
+      "url": "https://theapplied.co/models/amazon-chronos-bolt-small",
+      "snippet": "The following plot compares the inference time of Chronos-Bolt against the original Chronos models for forecasting 1024 time series …"
+    },
+    {
+      "title": "Chronos — Foundation Models for Time Series",
+      "url": "https://chronos-ts.ai/",
+      "snippet": "Chronos is a family of pretrained models for time-series forecasting. Across the original T5 Chronos, the faster Bolt variants, and the Chronos-2 generation, the family has now crossed a billion cumulative downloads on Hugging Face."
+    },
+    {
+      "title": "Chronos-Bolt (Small) — TSFM.ai",
+      "url": "https://tsfm.ai/models/amazon/chronos-bolt-small",
+      "snippet": "Chronos-Bolt Small is Amazon's fast zero-shot forecasting checkpoint built for production use, at 48M parameters. It is positioned as a strong default in the Chronos-Bolt family: probabilistic forecasts with low latency and a simpler deployment footprint than the original Chronos line."
+    },
+    {
+      "title": "Chronos-Bolt: Time Series Forecasting Model",
+      "url": "https://www.emergentmind.com/topics/chronos-bolt",
+      "snippet": "Chronos-Bolt is a transformer-based time series foundation model predicting day-ahead electricity prices with robust zero-shot performance across multiple markets."
+    }
+  ]
+}

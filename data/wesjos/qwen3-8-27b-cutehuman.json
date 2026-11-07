@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wesjos/Qwen3.8-27B-CuteHuman",
+  "slug": "wesjos-qwen3-8-27b-cutehuman",
+  "author": "wesjos",
+  "url": "https://huggingface.co/wesjos/Qwen3.8-27B-CuteHuman",
+  "created_at": "2026-11-07T19:29:37.000Z",
+  "updated_at": "2026-11-07T19:49:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "merge",
+    "bf16",
+    "cute",
+    "roleplay",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:merge:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55585621859,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wesjos/Qwen3.8-27B-CuteHuman-LoRA-GGUF · Hugging Face",
+      "url": "https://huggingface.co/wesjos/Qwen3.8-27B-CuteHuman-LoRA-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wesjos/Qwen3.8-27B-CuteHuman-LoRA · Hugging Face",
+      "url": "https://huggingface.co/wesjos/Qwen3.8-27B-CuteHuman-LoRA",
+      "snippet": "A personality LoRA that only changes how the model talks — same knowledge, less AI-speak. base Qwen/Qwen3.8-27B · 42 MB adapter · 10.49M trainable params (0.038%) · Apache-2.0"
+    }
+  ]
+}

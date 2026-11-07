@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "quettaset/H36",
+  "slug": "quettaset-h36",
+  "author": "quettaset",
+  "url": "https://huggingface.co/quettaset/H36",
+  "created_at": "2026-11-07T15:31:16.000Z",
+  "updated_at": "2026-11-07T15:53:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dataset:adamm-hf/the-hugging-face-case-for-open-AI",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7304841,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "quettaset/H36 · Hugging Face",
+      "url": "https://huggingface.co/quettaset/H36",
+      "snippet": "quettaset / H36 Like 1 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "quettaset (quettaset) - Hugging Face",
+      "url": "https://huggingface.co/quettaset/models",
+      "snippet": "Recent Activity published a modelabout 9 hours ago quettaset/quettaset-core updated a bucketabout 13 hours ago quettaset/H36-bucket published a bucketabout 13 hours ago quettaset/H36-bucket View all activity"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Kitchoon-Final-26B-A4B-GGUF",
+  "slug": "mradermacher-kitchoon-final-26b-a4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Kitchoon-Final-26B-A4B-GGUF",
+  "created_at": "2026-11-07T14:41:44.000Z",
+  "updated_at": "2026-11-07T14:51:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "roleplay",
+    "gemma4",
+    "moe",
+    "heretic",
+    "uncensored",
+    "sillytavern",
+    "en",
+    "base_model:SubMaroon/Kitchoon-Final-26B-A4B",
+    "base_model:quantized:SubMaroon/Kitchoon-Final-26B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 182858929088,
+  "storage_human": "182.9 GB",
+  "base_model": "SubMaroon/Kitchoon-Final-26B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Kitchoon-26B-A4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Kitchoon-26B-A4B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Kitchoon-V3-26B-A4B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Kitchoon-V3-26B-A4B-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

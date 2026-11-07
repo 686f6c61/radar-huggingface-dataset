@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "AIHeikki/brainsurged-open-jev-qwen3.5-4b",
+  "slug": "aiheikki-brainsurged-open-jev-qwen3-5-4b",
+  "author": "AIHeikki",
+  "url": "https://huggingface.co/AIHeikki/brainsurged-open-jev-qwen3.5-4b",
+  "created_at": "2026-11-07T11:40:55.000Z",
+  "updated_at": "2026-11-07T18:02:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ollama",
+    "llama.cpp",
+    "weight-space-programming",
+    "lora",
+    "structured-output",
+    "system-1",
+    "decision-engine",
+    "qwen3.5",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 11293828484,
+  "storage_human": "11.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlexWortega/openjev · Hugging Face",
+      "url": "https://huggingface.co/AlexWortega/openjev",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - jaredpalmer/kev: Jev-like family of decision models built on ...",
+      "url": "https://github.com/jaredpalmer/kev",
+      "snippet": "Small Jev-like decision models you can train and run yourself. Kev is a family of small decision models built on Qwen3.5 and Qwen3.8 and based on the architecture described in Jev's Architecture Unmasked. You can use the pretrained weights or train your own. The API matches TypeSafe's System One, so you can point their Python SDK at your local server."
+    }
+  ]
+}

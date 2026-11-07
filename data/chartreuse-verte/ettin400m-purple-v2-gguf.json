@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "chartreuse-verte/ettin400m-purple-v2-GGUF",
+  "slug": "chartreuse-verte-ettin400m-purple-v2-gguf",
+  "author": "chartreuse-verte",
+  "url": "https://huggingface.co/chartreuse-verte/ettin400m-purple-v2-GGUF",
+  "created_at": "2026-11-07T16:24:55.000Z",
+  "updated_at": "2026-11-07T16:25:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "modernbert",
+    "llama.cpp",
+    "purple-prose",
+    "slop-detection",
+    "text-classification",
+    "base_model:jhu-clsp/ettin-encoder-400m",
+    "base_model:quantized:jhu-clsp/ettin-encoder-400m",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395833346,
+  "parameters_human": "395.8M",
+  "storage_bytes": 1216095808,
+  "storage_human": "1.2 GB",
+  "base_model": "jhu-clsp/ettin-encoder-400m",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chartreuse-verte/ettin150m-purple-GGUF · Hugging Face",
+      "url": "https://huggingface.co/chartreuse-verte/ettin150m-purple-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

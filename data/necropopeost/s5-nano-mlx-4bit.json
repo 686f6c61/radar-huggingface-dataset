@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "necropopeost/S5-nano-MLX-4bit",
+  "slug": "necropopeost-s5-nano-mlx-4bit",
+  "author": "necropopeost",
+  "url": "https://huggingface.co/necropopeost/S5-nano-MLX-4bit",
+  "created_at": "2026-11-07T19:27:24.000Z",
+  "updated_at": "2026-11-07T19:28:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "quantized",
+    "4-bit",
+    "apple-silicon",
+    "portuguese",
+    "text-generation",
+    "conversational",
+    "pt",
+    "en",
+    "base_model:maritaca-ai/S5-nano",
+    "base_model:quantized:maritaca-ai/S5-nano",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "maritaca-ai/S5-nano",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "necropopeost (necropope ost) - Hugging Face",
+      "url": "https://huggingface.co/necropopeost",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "NVIDIA-Nemotron-3-Nano-4B-MLX-4bit - Hugging Face",
+      "url": "https://huggingface.co/pipenetwork/NVIDIA-Nemotron-3-Nano-4B-MLX-4bit",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run S5-nano API: Serverless Inference, No GPU Needed",
+      "url": "https://featherless.ai/models/maritaca-ai/S5-nano",
+      "snippet": "maritaca-ai/S5-nano (4.5B vision model, 32K context). Call it via a serverless, OpenAI-compatible API."
+    }
+  ]
+}

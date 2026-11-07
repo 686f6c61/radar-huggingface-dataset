@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Amie",
+  "slug": "aimamis-amie",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Amie",
+  "created_at": "2026-11-07T15:49:45.000Z",
+  "updated_at": "2026-11-07T15:51:29.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459113472,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AiMamis (AiMamis) - Hugging Face",
+      "url": "https://huggingface.co/AiMamis/models",
+      "snippet": "Sort: Recently updated. AiMamis/Angela. Updated less than a minute ago. AiMamis/Aiko. Text-to-Image • Updated 2 minutes ago •"
+    },
+    {
+      "title": "AiMamis (AiMamis) - Hugging Face",
+      "url": "https://huggingface.co/AiMamis",
+      "snippet": "AiMamis/Crystal_Sparkle Text-to-Image •Updated about 1 hour ago• View 15 models"
+    }
+  ]
+}

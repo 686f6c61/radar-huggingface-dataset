@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "johnpattern/safenotes-qwen3-asr-1.7b-ov",
+  "slug": "johnpattern-safenotes-qwen3-asr-1-7b-ov",
+  "author": "johnpattern",
+  "url": "https://huggingface.co/johnpattern/safenotes-qwen3-asr-1.7b-ov",
+  "created_at": "2026-11-07T15:55:40.000Z",
+  "updated_at": "2026-11-07T15:56:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3_asr",
+    "speech-recognition",
+    "qwen3",
+    "int8",
+    "intel",
+    "safenotes",
+    "automatic-speech-recognition",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:finetune:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2056184704,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-ASR-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-ASR-1.7B",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-0.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-0.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    }
+  ]
+}

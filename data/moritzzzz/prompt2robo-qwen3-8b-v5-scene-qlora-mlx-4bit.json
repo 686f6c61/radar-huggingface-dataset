@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "moritzzzz/Prompt2Robo-Qwen3-8B-v5-scene-qlora-MLX-4bit",
+  "slug": "moritzzzz-prompt2robo-qwen3-8b-v5-scene-qlora-mlx-4bit",
+  "author": "moritzzzz",
+  "url": "https://huggingface.co/moritzzzz/Prompt2Robo-Qwen3-8B-v5-scene-qlora-MLX-4bit",
+  "created_at": "2026-11-07T12:37:01.000Z",
+  "updated_at": "2026-11-07T13:15:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "robotics",
+    "code-generation",
+    "lora",
+    "prompt2robo",
+    "dataset:Carlo0001/Prompt2Robo",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 4619257824,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "Text Generation model with 8B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen3 Local Fine Tuning via QLoRA [2026 Guide]",
+      "url": "https://aithinkerlab.com/qwen3-qlora-local-fine-tuning-guide/",
+      "snippet": "A local fine tuning guide for Qwen3 via QLoRA: match GPU to model size, avoid the VRAM trap, and train fully offline. Here's what changed in 2026."
+    }
+  ]
+}

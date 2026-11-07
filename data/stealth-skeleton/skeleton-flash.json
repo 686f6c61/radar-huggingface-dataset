@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "stealth-skeleton/skeleton-flash",
+  "slug": "stealth-skeleton-skeleton-flash",
+  "author": "stealth-skeleton",
+  "url": "https://huggingface.co/stealth-skeleton/skeleton-flash",
+  "created_at": "2026-11-07T14:26:48.000Z",
+  "updated_at": "2026-11-07T14:35:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "openai-compatible",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "openai-compatible",
+    "api-endpoint",
+    "stealth-skeleton",
+    "mathematical-reasoning",
+    "conformal-prediction",
+    "optimal-transport",
+    "tool-calling",
+    "code-generation",
+    "livebench",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agentionai/DeepSeek-V4.1-Flash-Skeleton-GGUF at main",
+      "url": "https://huggingface.co/agentionai/DeepSeek-V4.1-Flash-Skeleton-GGUF/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

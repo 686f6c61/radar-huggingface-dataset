@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "bakisae/nsfw_image_detector",
+  "slug": "bakisae-nsfw_image_detector",
+  "author": "bakisae",
+  "url": "https://huggingface.co/bakisae/nsfw_image_detector",
+  "created_at": "2026-11-07T19:00:43.000Z",
+  "updated_at": "2026-11-07T19:00:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "timm_wrapper",
+    "image-classification",
+    "pytorch",
+    "arxiv:2303.11331",
+    "base_model:timm/eva02_base_patch14_448.mim_in22k_ft_in22k_in1k",
+    "base_model:finetune:timm/eva02_base_patch14_448.mim_in22k_ft_in22k_in1k",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86351620,
+  "parameters_human": "86.4M",
+  "storage_bytes": 172725672,
+  "storage_human": "173 MB",
+  "base_model": "timm/eva02_base_patch14_448.mim_in22k_ft_in22k_in1k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bakisae/nsfw_image_detector · Hugging Face",
+      "url": "https://huggingface.co/bakisae/nsfw_image_detector",
+      "snippet": "Instructions to use bakisae/nsfw_image_detector with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use bakisae/nsfw_image_detector with Transformers:"
+    },
+    {
+      "title": "Falconsai/nsfw_image_detection · Hugging Face",
+      "url": "https://huggingface.co/Falconsai/nsfw_image_detection",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

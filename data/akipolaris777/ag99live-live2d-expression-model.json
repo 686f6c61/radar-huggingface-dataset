@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "AkiPolaris777/ag99live-live2d-expression-model",
+  "slug": "akipolaris777-ag99live-live2d-expression-model",
+  "author": "AkiPolaris777",
+  "url": "https://huggingface.co/AkiPolaris777/ag99live-live2d-expression-model",
+  "created_at": "2026-11-07T20:14:54.000Z",
+  "updated_at": "2026-11-07T20:15:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "live2d",
+    "vtuber",
+    "lora",
+    "motion-generation",
+    "ag99live",
+    "base_model:XHToken/Spark-X2.6-1.7B-Base",
+    "base_model:adapter:XHToken/Spark-X2.6-1.7B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33546905,
+  "storage_human": "34 MB",
+  "base_model": "XHToken/Spark-X2.6-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - murphys7017/AG99live",
+      "url": "https://github.com/murphys7017/AG99live",
+      "snippet": "启动 AG99live，在设置中连接 Adapter、同步模型并选择要使用的 Live2D 模型。 Adapter 默认只监听本机回环地址： ... Adapter 运行设置可在 AG99 WebUI 的 AG99live 控制台 管理；麦克风、快捷键和设备等本机设置由桌面端管理。 登录仍由 AG99 处理。"
+    },
+    {
+      "title": "AG99live/README.md at main · murphys7017/AG99live · GitHub",
+      "url": "https://github.com/murphys7017/AG99live/blob/main/README.md",
+      "snippet": "AG99live 为 AG99 提供一具可见、可听、可持续演出的桌面身体。 当 AG99 生成回答时，AG99live 同时组织语音、字幕、视线、头身姿态、面部细节、口型和物理效果。角色的表现随内容与语气变化，整段演出沿同一播放时钟推进，结束、中断和下一段回复也都有明确的生命周期。 它适合希望把 AI 角色做成 ..."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "zacaj/Darwin-180B-RSI-R3-Gyro-M-TQ2_0-GGUF",
+  "slug": "zacaj-darwin-180b-rsi-r3-gyro-m-tq2_0-gguf",
+  "author": "zacaj",
+  "url": "https://huggingface.co/zacaj/Darwin-180B-RSI-R3-Gyro-M-TQ2_0-GGUF",
+  "created_at": "2026-11-07T17:20:27.000Z",
+  "updated_at": "2026-11-07T17:20:27.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Darwin-180B-RSI-R3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Darwin-180B-RSI-R3-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Darwin-180B-RSI by FINAL_Bench: Open-Weight Model",
+      "url": "https://savrn.com/models/darwin-180b-rsi",
+      "snippet": "Darwin-180B-RSI is an open-weight model for image and text to text from FINAL_Bench, released under other. It has 180B parameters and a 262,144-token context. At 16-bit it needs about 432 GB of GPU memory, which fits on 2x MI325X from $7.60 an hour; at 4-bit, 108 GB on 1x MI300X from $2.59, at the lowest prices in the SAVRN Index."
+    }
+  ]
+}

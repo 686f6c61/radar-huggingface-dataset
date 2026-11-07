@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "okasi/piper-turkish-99eren99-voice-0-onnx-q8",
+  "slug": "okasi-piper-turkish-99eren99-voice-0-onnx-q8",
+  "author": "okasi",
+  "url": "https://huggingface.co/okasi/piper-turkish-99eren99-voice-0-onnx-q8",
+  "created_at": "2026-11-07T12:53:41.000Z",
+  "updated_at": "2026-11-07T12:53:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "piper",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "piper",
+    "onnx",
+    "onnxruntime-web",
+    "quantized",
+    "text-to-speech",
+    "tr",
+    "base_model:99eren99/piper-turkish-tts",
+    "base_model:quantized:99eren99/piper-turkish-tts",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22119589,
+  "storage_human": "22 MB",
+  "base_model": "99eren99/piper-turkish-tts",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "99eren99/piper-turkish-tts · Hugging Face",
+      "url": "https://huggingface.co/99eren99/piper-turkish-tts",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Turkish Piper TTS Model – Piper TTS · PiperHub",
+      "url": "https://piperhub.org/model/turkish-piper-tts-model/",
+      "snippet": "Piper TTS voice \"Turkish Piper TTS Model\" (Turkish, medium quality, by 99eren99). Listen to samples and synthesize speech locally."
+    }
+  ]
+}

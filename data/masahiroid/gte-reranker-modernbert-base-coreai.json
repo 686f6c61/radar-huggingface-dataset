@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "masahiroid/gte-reranker-modernbert-base-coreai",
+  "slug": "masahiroid-gte-reranker-modernbert-base-coreai",
+  "author": "masahiroid",
+  "url": "https://huggingface.co/masahiroid/gte-reranker-modernbert-base-coreai",
+  "created_at": "2026-11-07T17:18:00.000Z",
+  "updated_at": "2026-11-07T17:18:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "modernbert",
+    "coreai",
+    "checkpoint-conversion",
+    "base_model:Alibaba-NLP/gte-reranker-modernbert-base",
+    "base_model:finetune:Alibaba-NLP/gte-reranker-modernbert-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 598686513,
+  "storage_human": "599 MB",
+  "base_model": "Alibaba-NLP/gte-reranker-modernbert-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alibaba-NLP/gte-reranker-modernbert-base · Hugging Face",
+      "url": "https://huggingface.co/Alibaba-NLP/gte-reranker-modernbert-base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Alibaba-NLP/gte-reranker-modernbert-base · Hugging Peers",
+      "url": "https://huggingpeers.co/models/Alibaba-NLP/gte-reranker-modernbert-base",
+      "snippet": "Model card gte-reranker-modernbert-base We are excited to introduce the gte-modernbert series of models, which are built upon the latest modernBERT pre-trained encoder-only foundation models. The gte-modernbert series models include both text embedding models and rerank models."
+    }
+  ]
+}

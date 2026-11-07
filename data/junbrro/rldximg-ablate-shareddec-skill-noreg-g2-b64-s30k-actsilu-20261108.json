@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "junbrro/rldximg-ablate-shareddec-skill-noreg-g2-b64-s30k-actsilu-20261108",
+  "slug": "junbrro-rldximg-ablate-shareddec-skill-noreg-g2-b64-s30k-actsilu-20261108",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/rldximg-ablate-shareddec-skill-noreg-g2-b64-s30k-actsilu-20261108",
+  "created_at": "2026-11-07T19:27:02.000Z",
+  "updated_at": "2026-11-07T19:28:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4912540968,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "egopi-axis2-matched-noreg-AB-FULL-30k-actsilu-mlxp-20260925",
+      "url": "https://huggingface.co/junbrro/egopi-axis2-matched-noreg-AB-FULL-30k-actsilu-mlxp-20260925",
+      "snippet": "Final step: 30000. Source: junhyeong-axis2-noreg-full-30k-260924. Final model weights and configuration only; optimizer/RNG state excluded. Original configuration is preserved, including source-cluster paths. Remap paths before use. Bundled actlat/ contains the action tokenizer when applicable ..."
+    },
+    {
+      "title": "egopi-axis2-matched-noreg-AB-30k-actsilu-slurm-20393-20260925",
+      "url": "https://huggingface.co/junbrro/egopi-axis2-matched-noreg-AB-30k-actsilu-slurm-20393-20260925",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ablate-llm · PyPI",
+      "url": "https://pypi.org/project/ablate-llm/",
+      "snippet": "ablate-llm 0.3.0 Directional ablation (abliteration) toolkit for open-source language models: extract, ablate, and optimize the removal of refusal / behavioral directions in the residual stream."
+    }
+  ]
+}

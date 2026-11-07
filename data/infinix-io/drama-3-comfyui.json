@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Infinix-io/Drama-3-ComfyUI",
+  "slug": "infinix-io-drama-3-comfyui",
+  "author": "Infinix-io",
+  "url": "https://huggingface.co/Infinix-io/Drama-3-ComfyUI",
+  "created_at": "2026-11-07T15:26:07.000Z",
+  "updated_at": "2026-11-07T15:26:07.000Z",
+  "license": "fish-audio-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "text-to-speech",
+    "voice-cloning",
+    "fish-audio",
+    "drama-3",
+    "base_model:fishaudio/drama-3",
+    "base_model:quantized:fishaudio/drama-3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136102551327,
+  "storage_human": "136.1 GB",
+  "base_model": "fishaudio/drama-3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Infinix-ai/drama-3 · Hugging Face",
+      "url": "https://huggingface.co/Infinix-ai/drama-3",
+      "snippet": "Fish Audio Drama 3 is Fish Audio's new-generation text-to-speech model, built for multi-character scenes and long-form content. It supports multi-speaker generation, voice cloning and natural-language control. Drama 3 runs on SGLang-Omni from launch day. For installation, deployment, and streaming ..."
+    },
+    {
+      "title": "README.md · PedroMarinhoDev/Drama-3-ComfyUI at main",
+      "url": "https://huggingface.co/PedroMarinhoDev/Drama-3-ComfyUI/blob/main/README.md",
+      "snippet": "Fish Audio Drama 3, converted for the native ComfyUI nodes of ComfyUI-Drama3: a 35B text-to-speech model for voice cloning, dialogue and inline cues such as [sighs] or [whispers], running on cards from 8 GB. 90% of the model is routed experts and each audio frame uses only 8 of the 256 in a layer, so the nodes keep the experts in system RAM and a cache of the ones in use on the GPU. Each file ..."
+    }
+  ]
+}

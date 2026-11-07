@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "cookieshake/DNA3.1-27B-4bit-mlx",
+  "slug": "cookieshake-dna3-1-27b-4bit-mlx",
+  "author": "cookieshake",
+  "url": "https://huggingface.co/cookieshake/DNA3.1-27B-4bit-mlx",
+  "created_at": "2026-11-07T18:00:39.000Z",
+  "updated_at": "2026-11-07T18:07:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "4-bit",
+    "Korean",
+    "text-generation",
+    "conversational",
+    "base_model:dnotitia/DNA3.1-27B",
+    "base_model:quantized:dnotitia/DNA3.1-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895993856,
+  "parameters_human": "26.90B",
+  "storage_bytes": 15153032852,
+  "storage_human": "15.2 GB",
+  "base_model": "dnotitia/DNA3.1-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gaeulbyul/DNA3.0-27B-mlx-4Bit · Hugging Face",
+      "url": "https://huggingface.co/gaeulbyul/DNA3.0-27B-mlx-4Bit",
+      "snippet": "Instructions to use gaeulbyul/DNA3.0-27B-mlx-4Bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use gaeulbyul/DNA3.0-27B-mlx-4Bit with Transformers:"
+    },
+    {
+      "title": "mlx-community/Qwen3.8-27B-OptiQ-4bit - Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.8-27B-OptiQ-4bit",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-onnx",
+  "slug": "olicorne-parakeet-tdt-0-6b-v3-ultra-ultimed-onnx",
+  "author": "Olicorne",
+  "url": "https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-UltiMed-onnx",
+  "created_at": "2026-09-04T23:23:47.000Z",
+  "updated_at": "2026-11-07T15:48:25.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "onnx",
+    "nemo",
+    "nemo-conformer-tdt",
+    "automatic-speech-recognition",
+    "parakeet",
+    "tdt",
+    "french",
+    "medical",
+    "quantized",
+    "fr",
+    "dataset:Olicorne/UltiMed-ASR-FR-v1",
+    "base_model:moondream/parakeet-ultra",
+    "base_model:quantized:moondream/parakeet-ultra",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 129,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36876699082,
+  "storage_human": "36.9 GB",
+  "base_model": "moondream/parakeet-ultra",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx · Hugging Face",
+      "url": "https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx",
+      "snippet": "Parakeet Ultra, ONNX for the browser ONNX export of moondream/parakeet-ultra, moondream's full-precision post-trained parakeet-tdt-0.6b-v3, same architecture and tokenizer, better than the original on every benchmark moondream reports."
+    },
+    {
+      "title": "Olicorne/parakeet-tdt-0.6b-v3-ultra-onnx — Downloads, Growth & Stats",
+      "url": "https://openmodelstats.com/models/olicorne/parakeet-tdt-0.6b-v3-ultra-onnx",
+      "snippet": "parakeet-tdt-0.6b-v3-ultra-onnx by Olicorne: 684 all-time downloads, 634 in the last 30 days, 4 likes. A speech recognition model. Daily download history, growth trends and ranking position, tracked and updated by OpenModelStats."
+    }
+  ]
+}

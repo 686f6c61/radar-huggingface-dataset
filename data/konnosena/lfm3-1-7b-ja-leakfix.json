@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "konnosena/LFM3-1.7B-JA-Leakfix",
+  "slug": "konnosena-lfm3-1-7b-ja-leakfix",
+  "author": "konnosena",
+  "url": "https://huggingface.co/konnosena/LFM3-1.7B-JA-Leakfix",
+  "created_at": "2026-11-07T13:31:09.000Z",
+  "updated_at": "2026-11-07T13:36:21.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "lfm3",
+    "text-generation",
+    "japanese",
+    "model-editing",
+    "conversational",
+    "custom_code",
+    "ja",
+    "en",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:quantized:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801536,
+  "parameters_human": "1.73B",
+  "storage_bytes": 6421408851,
+  "storage_human": "6.4 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+      "snippet": "Works with vLLM, SGLang, and LFM3-compatible llama.cpp builds. For llama.cpp, use a GGUF with the current chat template or load it with --chat-template-file. See Deferred tools and tool search for the full guide. Fine-tuning LFM3-1.7B is designed for easy customization for a given domain, task, or application via TRL."
+    },
+    {
+      "title": "LFM3 Leak: Four Omni Models Liquid AI Hasn't Announced",
+      "url": "https://www.orcarouter.ai/blog/lfm3-leak-release-date-omni",
+      "snippet": "An unmerged SGLang pull request names four LFM3 checkpoints: 1.7B text, 2B vision, audio and omni. What the leak shows - and what Liquid hasn't said."
+    }
+  ]
+}

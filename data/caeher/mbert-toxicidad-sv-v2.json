@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "caeher/mbert-toxicidad-sv-v2",
+  "slug": "caeher-mbert-toxicidad-sv-v2",
+  "author": "caeher",
+  "url": "https://huggingface.co/caeher/mbert-toxicidad-sv-v2",
+  "created_at": "2026-11-07T20:00:41.000Z",
+  "updated_at": "2026-11-07T20:01:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "text-classification",
+    "es",
+    "base_model:google-bert/bert-base-multilingual-cased",
+    "base_model:finetune:google-bert/bert-base-multilingual-cased",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2134348752,
+  "storage_human": "2.1 GB",
+  "base_model": "bert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "caeher/mbert-sv · Hugging Face",
+      "url": "https://huggingface.co/caeher/mbert-sv",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - caeher/test-prompt-ml: Aplicación para pruebas Machine ...",
+      "url": "https://github.com/caeher/test-prompt-ml/tree/main",
+      "snippet": "En el primer arranque, el backend descarga los pesos de caeher/mbert-sv. Docker los conserva en el volumen nombrado mbert_model, por lo que los siguientes arranques no los vuelven a descargar."
+    }
+  ]
+}

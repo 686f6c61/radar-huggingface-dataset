@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "YTan2000/Qwen3.8-Flash-Next-tqLLM",
+  "slug": "ytan2000-qwen3-8-flash-next-tqllm",
+  "author": "YTan2000",
+  "url": "https://huggingface.co/YTan2000/Qwen3.8-Flash-Next-tqLLM",
+  "created_at": "2026-10-22T15:07:36.000Z",
+  "updated_at": "2026-11-07T14:52:55.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "tqllm",
+    "moe",
+    "base_model:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "base_model:quantized:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "license:other",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 1313,
+  "trending_score": 0,
+  "parameters": 0,
+  "parameters_human": null,
+  "storage_bytes": 134814349072,
+  "storage_human": "134.8 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next, ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YTan2000/Qwen3.8-Flash-Next-tqLLM · Hugging Face",
+      "url": "https://huggingface.co/YTan2000/Qwen3.8-Flash-Next-tqLLM",
+      "snippet": "The extra files tqLLM needs to run Qwen3.8 Flash-Next (125B mixture of experts) on one 24 GB GPU, on top of the ISTA-DASLab GSQ-RCO IQ3_S GGUF. The routed experts stay in system memory and a cache of them lives on the GPU. At start-up tqLLM rearranges the experts in memory for that cache (under a ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

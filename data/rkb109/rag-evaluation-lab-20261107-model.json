@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "RKB109/rag-evaluation-lab-20261107-model",
+  "slug": "rkb109-rag-evaluation-lab-20261107-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/rag-evaluation-lab-20261107-model",
+  "created_at": "2026-11-07T18:48:55.000Z",
+  "updated_at": "2026-11-07T18:48:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "ai-evaluation",
+    "text-classification",
+    "question-answering",
+    "text-ranking",
+    "summarization",
+    "dataset:RKB109/rag-evaluation-lab-20261107-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RKB109/rag-evaluation-lab-20261008-model · Hugging Face",
+      "url": "https://huggingface.co/RKB109/rag-evaluation-lab-20261008-model",
+      "snippet": "This repository contains a small, transparent prototype model for RAG systems often ship without a stable regression set or failure taxonomy. The model combines per-label token weights with IDF-weighted evidence retrieval. It was generated for reproducible architecture demonstrations and does not ..."
+    },
+    {
+      "title": "RKB109/rag-evaluation-lab-20260730-model · Hugging Face",
+      "url": "https://huggingface.co/RKB109/rag-evaluation-lab-20260730-model",
+      "snippet": "RAG Evaluation Lab Baseline Model Model Description This repository contains a small, transparent prototype model for RAG systems often ship without a stable regression set or failure taxonomy. The model combines per-label token weights with IDF-weighted evidence retrieval."
+    }
+  ]
+}

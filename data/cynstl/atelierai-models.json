@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "cynstl/atelierai-models",
+  "slug": "cynstl-atelierai-models",
+  "author": "cynstl",
+  "url": "https://huggingface.co/cynstl/atelierai-models",
+  "created_at": "2026-11-07T16:41:22.000Z",
+  "updated_at": "2026-11-07T16:42:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "pytorch",
+    "generative-ai",
+    "cgan",
+    "vae",
+    "fashion-mnist",
+    "image-generation",
+    "image-to-image",
+    "dataset:fashion_mnist",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275764753,
+  "storage_human": "276 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atelier | AI Fashion Model Generator & Virtual Photoshoot",
+      "url": "https://atelierai.tech/",
+      "snippet": "How does an AI Fashion Model Generator work? Our AI Fashion Model Generator works by analyzing your product photos (flat lay or ghost mannequin) and realistically draping them over digital models. Simply upload your image, select a model and scene, and get high-fashion results in seconds. How does the credit system work?"
+    },
+    {
+      "title": "Models & Scenes | Atelier Docs",
+      "url": "https://atelierai.tech/docs/models-and-scenes/",
+      "snippet": "Models represent the person wearing your clothing in the generated photos. Each model has defined attributes: Gender — Female, Male Hair color — blonde, brunette, black, red, gray Ethnicity — diverse global representation Style — casual, professional, athletic, editorial You can browse all available models from the Models section in the app. New models are added regularly."
+    }
+  ]
+}

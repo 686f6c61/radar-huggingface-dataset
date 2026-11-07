@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "ranjith3567/pick_yellow_cube_v5_chunk75",
+  "slug": "ranjith3567-pick_yellow_cube_v5_chunk75",
+  "author": "ranjith3567",
+  "url": "https://huggingface.co/ranjith3567/pick_yellow_cube_v5_chunk75",
+  "created_at": "2026-11-07T17:12:06.000Z",
+  "updated_at": "2026-11-07T17:12:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:ranjith3567/pick_yellow_cube_v5_20261105_191046",
+    "arxiv:2506.01844",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906727744,
+  "storage_human": "907 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ranjith3567/pick_yellow_cube_v5_chunk25 · Discussions",
+      "url": "https://huggingface.co/ranjith3567/pick_yellow_cube_v5_chunk25/discussions",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pick_Yellow_cube_20261009_203921 - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/ranjith3567-pick-yellow-cube-20261009-203921",
+      "snippet": "A robotics dataset created using LeRobot containing demonstrations of a robot picking a yellow cube, with multi-camera RGB video observations and joint state/action data."
+    }
+  ]
+}

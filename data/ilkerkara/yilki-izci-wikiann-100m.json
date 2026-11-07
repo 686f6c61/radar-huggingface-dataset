@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ilkerkara/yilki-izci-wikiann-100m",
+  "slug": "ilkerkara-yilki-izci-wikiann-100m",
+  "author": "ilkerkara",
+  "url": "https://huggingface.co/ilkerkara/yilki-izci-wikiann-100m",
+  "created_at": "2026-11-07T18:23:27.000Z",
+  "updated_at": "2026-11-07T18:30:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "yilki",
+    "token-classification",
+    "turkish",
+    "ner",
+    "custom_code",
+    "tr",
+    "base_model:ilkerkara/yilki-kulun-100m",
+    "base_model:finetune:ilkerkara/yilki-kulun-100m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100099591,
+  "parameters_human": "100.1M",
+  "storage_bytes": 800827720,
+  "storage_human": "801 MB",
+  "base_model": "ilkerkara/yilki-kulun-100m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unimelb-nlp/wikiann · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/unimelb-nlp/wikiann",
+      "snippet": "WikiANN (sometimes called PAN-X) is a multilingual named entity recognition dataset consisting of Wikipedia articles annotated with LOC (location), PER (person), and ORG (organisation) tags in the IOB2 format. This version corresponds to the balanced train, dev, and test splits of Rahimi et al. (2019), which supports 176 of the 282 languages from the original WikiANN corpus. Supported Tasks ..."
+    },
+    {
+      "title": "Arena, the AI leaderboard everyone uses, is now a $100M business",
+      "url": "https://techcrunch.com/2026/06/29/arena-the-ai-leaderboard-everyone-uses-is-now-a-100m-business/",
+      "snippet": "The startup, which runs a popular free AI leaderboard, launched its commercial service just last September."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "VexelQuant/vx-alphadesk-test",
+  "slug": "vexelquant-vx-alphadesk-test",
+  "author": "VexelQuant",
+  "url": "https://huggingface.co/VexelQuant/vx-alphadesk-test",
+  "created_at": "2026-11-07T15:36:54.000Z",
+  "updated_at": "2026-11-07T15:57:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "vexelquant",
+    "quantitative",
+    "trading",
+    "llama.cpp",
+    "gbnf",
+    "structured-outputs",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 4745466830,
+  "storage_human": "4.7 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VexelQuant (VexelQuant Research) - Hugging Face",
+      "url": "https://huggingface.co/VexelQuant",
+      "snippet": "VexelQuant designs, fine-tunes, and quantizes task-specific SLMs engineered to replace high-latency (~900ms+) external LLM APIs inside automated trading pipelines, Polymarket CLOB arbitrage bots, and autonomous on-chain agents."
+    },
+    {
+      "title": "alpha·desk — AI Hedge Fund Command Center - GitHub",
+      "url": "https://github.com/smvenkats/alphadesk",
+      "snippet": "GitHub - smvenkats/alphadesk: alpha·desk — AI Hedge Fund Command Center. 5-layer multi-agent pipeline: Analyst → Research → Trader → Risk Gate → Portfolio Reporter."
+    }
+  ]
+}

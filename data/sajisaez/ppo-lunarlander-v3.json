@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "SajiSaez/ppo-LunarLander-v3",
+  "slug": "sajisaez-ppo-lunarlander-v3",
+  "author": "SajiSaez",
+  "url": "https://huggingface.co/SajiSaez/ppo-LunarLander-v3",
+  "created_at": "2026-11-07T12:57:45.000Z",
+  "updated_at": "2026-11-07T13:21:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284808,
+  "storage_human": "284808 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RL_PPO-LunarLander-v3 - GitHub",
+      "url": "https://github.com/mdsajeebulislamsk/RL_PPO-LunarLander-v3",
+      "snippet": "Developed a reinforcement learning model utilizing the Proximal Policy Optimization (PPO) algorithm to train an agent in the LunarLander-v3 environment. The project encompassed configuring the environment, implementing the PPO algorithm using Stable-Baselines3, and evaluating the agent's performance ..."
+    },
+    {
+      "title": "lfss/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/lfss/ppo-LunarLander-v3",
+      "snippet": "PPO Agent playing LunarLander-v3 This is a trained model of a PPO agent playing LunarLander-v3 using the stable-baselines3 library. Usage (with Stable-baselines3) TODO: Add your code"
+    }
+  ]
+}

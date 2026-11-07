@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "edoggy/commodities-crop-analyst-7b",
+  "slug": "edoggy-commodities-crop-analyst-7b",
+  "author": "edoggy",
+  "url": "https://huggingface.co/edoggy/commodities-crop-analyst-7b",
+  "created_at": "2026-11-07T18:48:00.000Z",
+  "updated_at": "2026-11-07T18:50:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "joblib",
+    "safetensors",
+    "agriculture",
+    "commodities",
+    "crop-supply",
+    "tool-use",
+    "function-calling",
+    "sugarcane",
+    "corn",
+    "soybeans",
+    "futures",
+    "qwen2.5",
+    "dataset:edoggy/commodity-supply-indicators",
+    "dataset:edoggy/sugarcane-satellite-embeddings",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121106893,
+  "storage_human": "121 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI for Agriculture - Best AI Models (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/ai-for-agriculture",
+      "snippet": "Compare AI models for agriculture. Find models for crop analysis, precision farming, pest detection, yield prediction, and agricultural automation."
+    }
+  ]
+}

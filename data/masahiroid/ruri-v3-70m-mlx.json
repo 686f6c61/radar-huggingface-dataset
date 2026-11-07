@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "masahiroid/ruri-v3-70m-mlx",
+  "slug": "masahiroid-ruri-v3-70m-mlx",
+  "author": "masahiroid",
+  "url": "https://huggingface.co/masahiroid/ruri-v3-70m-mlx",
+  "created_at": "2026-11-07T17:18:58.000Z",
+  "updated_at": "2026-11-07T17:19:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "modernbert",
+    "checkpoint-conversion",
+    "base_model:cl-nagoya/ruri-v3-70m",
+    "base_model:finetune:cl-nagoya/ruri-v3-70m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 281874312,
+  "storage_human": "282 MB",
+  "base_model": "cl-nagoya/ruri-v3-70m",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tokenizer.model · keisuke-miyako/ruri-v3-70m-onnx at main",
+      "url": "https://huggingface.co/keisuke-miyako/ruri-v3-70m-onnx/blob/main/tokenizer.model",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "keisuke-miyako/ruri-v3-70m-onnx-fp32 · Hugging Face",
+      "url": "https://huggingface.co/keisuke-miyako/ruri-v3-70m-onnx-fp32",
+      "snippet": "keisuke-miyako / ruri-v3-70m-onnx-fp32 like 0 ONNX modernbert Model card FilesFiles and versions xet Community Copy to bucket new"
+    }
+  ]
+}

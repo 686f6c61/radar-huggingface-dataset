@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Nicolassuez/granite-speech-5.0-470m-turboctc-onnx",
+  "slug": "nicolassuez-granite-speech-5-0-470m-turboctc-onnx",
+  "author": "Nicolassuez",
+  "url": "https://huggingface.co/Nicolassuez/granite-speech-5.0-470m-turboctc-onnx",
+  "created_at": "2026-11-07T15:39:08.000Z",
+  "updated_at": "2026-11-07T15:39:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "it",
+    "ja"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "int8",
+    "ctc",
+    "granite",
+    "speech-recognition",
+    "automatic-speech-recognition",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "it",
+    "ja",
+    "base_model:ibm-granite/granite-speech-5.0-470m-turboctc",
+    "base_model:quantized:ibm-granite/granite-speech-5.0-470m-turboctc",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 552434296,
+  "storage_human": "552 MB",
+  "base_model": "ibm-granite/granite-speech-5.0-470m-turboctc",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-granite/granite-speech-5.0-470m-turboctc · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc",
+      "snippet": "Automatic Speech Recognition model with 0.5B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "ibm-granite/granite-speech-5.0-470m-turboctc-nc · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-speech-5.0-470m-turboctc-nc",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}
