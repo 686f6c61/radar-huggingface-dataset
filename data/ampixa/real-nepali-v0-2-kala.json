@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "ampixa/real-nepali-v0.2-kala",
+  "slug": "ampixa-real-nepali-v0-2-kala",
+  "author": "ampixa",
+  "url": "https://huggingface.co/ampixa/real-nepali-v0.2-kala",
+  "created_at": "2026-05-04T03:59:56.000Z",
+  "updated_at": "2026-11-07T08:46:01.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "kala-tts",
+  "languages": [
+    "ne"
+  ],
+  "tags": [
+    "kala-tts",
+    "onnx",
+    "text-to-speech",
+    "nepali",
+    "vits",
+    "piper",
+    "multi-speaker",
+    "cpu",
+    "ne",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 2375,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1012925321,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "real-nepali-kala: open audio or speech model | AxForge",
+      "url": "https://axforge.ai/models/real-nepali-kala/",
+      "snippet": "real-nepali-kala is an open-weight audio or speech model from ampixa. real-nepali-v0.2-kala (BF16) weighs 935 MB; the smallest configuration that runs it is RTX 3060 12 GB. real-nepali-kala is a multi-speaker text-to-speech model for the Nepali language, developed by ampixa."
+    },
+    {
+      "title": "ampixa/real-nepali-v0.2-kala · Hugging Face",
+      "url": "https://huggingface.co/ampixa/real-nepali-v0.2-kala",
+      "snippet": "Model artifact repository for the real_nepali_v0.2_kala Piper/VITS checkpoint ..."
+    }
+  ]
+}

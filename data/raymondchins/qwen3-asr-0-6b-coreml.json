@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "raymondchins/qwen3-asr-0.6b-coreml",
+  "slug": "raymondchins-qwen3-asr-0-6b-coreml",
+  "author": "raymondchins",
+  "url": "https://huggingface.co/raymondchins/qwen3-asr-0.6b-coreml",
+  "created_at": "2026-11-07T07:00:38.000Z",
+  "updated_at": "2026-11-07T07:02:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "apple-neural-engine",
+    "speech-recognition",
+    "asr",
+    "qwen",
+    "macos",
+    "automatic-speech-recognition",
+    "base_model:Qwen/Qwen3-ASR-0.6B",
+    "base_model:finetune:Qwen/Qwen3-ASR-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1126430564,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-ASR-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-0.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    },
+    {
+      "title": "codeclawd/qwen3-asr-0.6b-coreml · Hugging Face",
+      "url": "https://huggingface.co/codeclawd/qwen3-asr-0.6b-coreml",
+      "snippet": "Licence: Apache-2.0. Original authors: Alibaba Qwen Team (Qwen3-ASR-0.6B model) and FluidInference (Core ML conversion). All model files are byte-identical to the upstream revision; only this header was added to the README."
+    }
+  ]
+}

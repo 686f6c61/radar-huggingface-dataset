@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Khant-kyikyaw20027/Movie-Project",
+  "slug": "khant-kyikyaw20027-movie-project",
+  "author": "Khant-kyikyaw20027",
+  "url": "https://huggingface.co/Khant-kyikyaw20027/Movie-Project",
+  "created_at": "2026-11-07T07:44:07.000Z",
+  "updated_at": "2026-11-07T08:12:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1007,
+  "storage_human": "1007 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Machine Learning Projects - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-projects/",
+      "snippet": "Fake News Detection Model Predict Fuel Efficiency Advanced Projects Here we have discussed a variety of complex machine-learning projects that will challenge both your practical engineering skills and your theoretical knowledge of machine learning. 1. Image and Video Processing Machine Learning is very powerful in working with pictures and videos."
+    },
+    {
+      "title": "Project Film AI - YouTube",
+      "url": "https://www.youtube.com/channel/UCMssRPMaJAq5NdpXz16Afpg",
+      "snippet": "Welcome to Project Film AI — a channel dedicated to AI-powered cinema experiments. Here you’ll find: AI-generated trailers for movies that don’t exist (yet) “What if” sequels, reboots ..."
+    }
+  ]
+}

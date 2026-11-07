@@ -33,8 +33,8 @@
   "trending_score": 0,
   "parameters": 4498808355,
   "parameters_human": "4.50B",
-  "storage_bytes": 1926811424,
-  "storage_human": "1.9 GB",
+  "storage_bytes": 5780433792,
+  "storage_human": "5.8 GB",
   "base_model": "google/gemma-4-E2B-it",
   "formats": [
     "gguf"

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "zarko1321/bitsy3",
+  "slug": "zarko1321-bitsy3",
+  "author": "zarko1321",
+  "url": "https://huggingface.co/zarko1321/bitsy3",
+  "created_at": "2026-11-07T12:40:29.000Z",
+  "updated_at": "2026-11-07T12:41:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "base_model:zarko1321/bitsy2",
+    "base_model:finetune:zarko1321/bitsy2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 998852608,
+  "parameters_human": "998.9M",
+  "storage_bytes": 1997725976,
+  "storage_human": "2.0 GB",
+  "base_model": "zarko1321/bitsy2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zarko1321 (Žarko Petrović) - Hugging Face",
+      "url": "https://huggingface.co/zarko1321",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 22 days ago ... updated a model 25 days ago ... published a model 25 days ago"
+    },
+    {
+      "title": "zarko1321/Eather-v3 · Hugging Face",
+      "url": "https://huggingface.co/zarko1321/Eather-v3",
+      "snippet": "zarko1321 / Eather-v3 like 0 Safetensors gpt2 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    }
+  ]
+}

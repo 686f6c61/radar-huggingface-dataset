@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "es90523/easy_ViTPose",
+  "slug": "es90523-easy_vitpose",
+  "author": "es90523",
+  "url": "https://huggingface.co/es90523/easy_ViTPose",
+  "created_at": "2026-11-07T08:08:29.000Z",
+  "updated_at": "2026-11-07T08:08:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "keypoint-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "keypoint-detection",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80673459581,
+  "storage_human": "80.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - JunkyByte/easy_ViTPose: Easy and fast 2d human and animal ...",
+      "url": "https://github.com/JunkyByte/easy_ViTPose",
+      "snippet": "Easy to use SOTA ViTPose [Y. Xu et al., 2022] models for fast inference. We provide all the VitPose original models, converted for inference, with single dataset format output. In addition to that we also provide a Coco-25 model, trained on the original coco dataset + feet https://cmu-perceptual ..."
+    },
+    {
+      "title": "JunkyByte/easy_ViTPose · Hugging Face",
+      "url": "https://huggingface.co/JunkyByte/easy_ViTPose",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

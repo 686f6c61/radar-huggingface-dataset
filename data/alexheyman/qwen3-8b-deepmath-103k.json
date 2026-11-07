@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "AlexHeyman/Qwen3-8B-DeepMath-103K",
+  "slug": "alexheyman-qwen3-8b-deepmath-103k",
+  "author": "AlexHeyman",
+  "url": "https://huggingface.co/AlexHeyman/Qwen3-8B-DeepMath-103K",
+  "created_at": "2026-09-09T04:16:19.000Z",
+  "updated_at": "2026-11-07T06:44:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 746,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 443592759448,
+  "storage_human": "443.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlexHeyman/Qwen3-8B-DeepMath-103K · Hugging Face",
+      "url": "https://huggingface.co/AlexHeyman/Qwen3-8B-DeepMath-103K",
+      "snippet": "AlexHeyman / Qwen3-8B-DeepMath-103K Like 0 Text Generation Transformers Safetensors qwen3 Generated from Trainer grpo trl conversational text-generation-inference arxiv:2402.03300 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AlexHeyman (Alex Heyman) - Hugging Face",
+      "url": "https://huggingface.co/AlexHeyman/models",
+      "snippet": "Large language model reasoning Recent Activity updated a model29 days ago AlexHeyman/Qwen3-8B-DeepMath-103K published a modelabout 1 month ago AlexHeyman/Qwen3-8B-DeepMath-103K View all activity"
+    }
+  ]
+}

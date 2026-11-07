@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "OpenRAL/rskill-pi05-franka_panda-libero_spatial-int8",
+  "slug": "openral-rskill-pi05-franka_panda-libero_spatial-int8",
+  "author": "OpenRAL",
+  "url": "https://huggingface.co/OpenRAL/rskill-pi05-franka_panda-libero_spatial-int8",
+  "created_at": "2026-07-07T11:31:47.000Z",
+  "updated_at": "2026-11-07T12:03:37.000Z",
+  "license": "permissive-research",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "OpenRAL",
+    "rskill",
+    "pi05",
+    "vision-language-action",
+    "int8",
+    "8-bit",
+    "franka_panda",
+    "rskill-kind:vla",
+    "rskill-role:s1",
+    "embodiment:franka_panda",
+    "rskill-license:permissive_research",
+    "nf4",
+    "4-bit",
+    "vla",
+    "libero",
+    "manipulation",
+    "robotics",
+    "en",
+    "arxiv:2410.24164",
+    "base_model:lerobot/pi05_libero_finetuned_v044",
+    "base_model:quantized:lerobot/pi05_libero_finetuned_v044",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7668,
+  "storage_human": "7668 B",
+  "base_model": "lerobot/pi05_libero_finetuned_v044",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rskill-pi05-franka_panda-libero_spatial-int8 - Hugging Face",
+      "url": "https://huggingface.co/OpenRAL/rskill-pi05-franka_panda-libero_spatial-int8/blob/main/README.md",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openral/rskills/pi05-libero-int8 at master - GitHub",
+      "url": "https://github.com/OpenRAL/openral/tree/master/rskills/pi05-libero-int8/",
+      "snippet": "rskill-pi05-franka_panda-libero_spatial-int8 OpenRAL rSkill — π0.5 (3 B PaliGemma backbone, flow-matching action head) finetuned on the LIBERO benchmark, loaded bf16 and LLM.int8-quantized in place so it runs on an 8 GB consumer GPU. Non-commercial weights (Physical Intelligence permissive research license)."
+    }
+  ]
+}

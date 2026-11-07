@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/DAC-16kHz-OpenVINO",
+  "slug": "mlboydaisuke-dac-16khz-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/DAC-16kHz-OpenVINO",
+  "created_at": "2026-11-07T06:50:50.000Z",
+  "updated_at": "2026-11-07T06:51:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "audio-to-audio",
+    "base_model:mlboydaisuke/DAC-16kHz-LiteRT",
+    "base_model:quantized:mlboydaisuke/DAC-16kHz-LiteRT",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 757348891,
+  "storage_human": "757 MB",
+  "base_model": "mlboydaisuke/DAC-16kHz-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/DAC-16kHz-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/DAC-16kHz-LiteRT",
+      "snippet": "The decoder's ConvTranspose1d are rewritten to a GPU-clean zero-stuff form (the real DAC's odd stride-5 transposed conv fails converter legalization, and TRANSPOSE_CONV is rejected by Mali)."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/PIDNet-S-Cityscapes-OpenVINO",
+  "slug": "mlboydaisuke-pidnet-s-cityscapes-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/PIDNet-S-Cityscapes-OpenVINO",
+  "created_at": "2026-11-07T06:31:43.000Z",
+  "updated_at": "2026-11-07T06:31:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-segmentation",
+    "base_model:litert-community/PIDNet-S-Cityscapes-LiteRT",
+    "base_model:quantized:litert-community/PIDNet-S-Cityscapes-LiteRT",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79845136,
+  "storage_human": "80 MB",
+  "base_model": "litert-community/PIDNet-S-Cityscapes-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/PIDNet-S-Cityscapes-ExecuTorch at main",
+      "url": "https://huggingface.co/mlboydaisuke/PIDNet-S-Cityscapes-ExecuTorch/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlboydaisuke/PIDNet-S-Cityscapes-ExecuTorch · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/PIDNet-S-Cityscapes-ExecuTorch",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

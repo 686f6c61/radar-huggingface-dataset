@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "FaisalALMallah/team-012-nutri",
+  "slug": "faisalalmallah-team-012-nutri",
+  "author": "FaisalALMallah",
+  "url": "https://huggingface.co/FaisalALMallah/team-012-nutri",
+  "created_at": "2026-11-05T19:43:26.000Z",
+  "updated_at": "2026-11-07T07:12:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "pytorch",
+    "qai-hf-hackathon-2026",
+    "food",
+    "nutrition",
+    "education",
+    "children",
+    "trackio",
+    "image-classification",
+    "dataset:ibrahimdaud/raw-food-recognition",
+    "arxiv:1905.02244",
+    "base_model:timm/mobilenetv3_small_100.lamb_in1k",
+    "base_model:finetune:timm/mobilenetv3_small_100.lamb_in1k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6325683,
+  "storage_human": "6 MB",
+  "base_model": "timm/mobilenetv3_small_100.lamb_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FaisalAlMallah · GitHub",
+      "url": "https://github.com/FaisalAlMallah",
+      "snippet": "As a Computer Science student at the University of Aberdeen Qatar, I have developed strong expertise in AI engineering, machine learning, and data science through impactful internships and research."
+    },
+    {
+      "title": "GitHub - suml-projekt/nutri-ai",
+      "url": "https://github.com/suml-projekt/nutri-ai",
+      "snippet": "The Ollama \"Llama 3\" model is called (with the response dictionary from the previous call passed as part of the prompt). The task is to provide macros (Calories, Protein, Carbs, Fat) for the identified items. Instead of asking the model to calulate the macros based on weights, it is asked to provide macros per 100g of a given identified item."
+    }
+  ]
+}

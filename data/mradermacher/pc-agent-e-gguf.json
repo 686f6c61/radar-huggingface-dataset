@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mradermacher/PC-Agent-E-GGUF",
+  "slug": "mradermacher-pc-agent-e-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/PC-Agent-E-GGUF",
+  "created_at": "2025-05-20T06:10:17.000Z",
+  "updated_at": "2026-11-07T06:31:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "en",
+    "dataset:henryhe0123/PC-Agent-E",
+    "base_model:henryhe0123/PC-Agent-E",
+    "base_model:quantized:henryhe0123/PC-Agent-E",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 218,
+  "trending_score": 0,
+  "parameters": 72706203648,
+  "parameters_human": "72.71B",
+  "storage_bytes": 522566320192,
+  "storage_human": "522.6 GB",
+  "base_model": "henryhe0123/PC-Agent-E",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/PC-Agent-E-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/PC-Agent-E-GGUF",
+      "snippet": "Model tree for mradermacher/PC-Agent-E-GGUF Unable to build the model tree, the base model loops to the model itself. Learn more."
+    },
+    {
+      "title": "mradermacher/PC-Agent-E-GGUF downloads: daily history and stats · Model ...",
+      "url": "https://modelpulse.ifsp.dev/model/mradermacher/PC-Agent-E-GGUF",
+      "snippet": "mradermacher/PC-Agent-E-GGUF was downloaded 213 times in the last 30 days and 3.9K times in total. Daily download history since July 2024, likes, rankings and model family."
+    }
+  ]
+}

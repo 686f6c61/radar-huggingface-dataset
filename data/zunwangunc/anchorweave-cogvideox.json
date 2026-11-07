@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zunwangunc/AnchorWeave-CogVideoX",
+  "slug": "zunwangunc-anchorweave-cogvideox",
+  "author": "zunwangunc",
+  "url": "https://huggingface.co/zunwangunc/AnchorWeave-CogVideoX",
+  "created_at": "2026-11-07T06:05:38.000Z",
+  "updated_at": "2026-11-07T06:05:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "image-to-video",
+    "base_model:zai-org/CogVideoX-5b-I2V",
+    "base_model:finetune:zai-org/CogVideoX-5b-I2V",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 833849899,
+  "storage_human": "834 MB",
+  "base_model": "THUDM/CogVideoX-5b-I2V",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - wz0919/AnchorWeave: Official implementation of AnchorWeave: ...",
+      "url": "https://github.com/wz0919/AnchorWeave",
+      "snippet": "Extensive experiments demonstrate that AnchorWeave significantly improves long-term scene consistency while maintaining strong visual quality, with ablation and analysis studies further validating the effectiveness of local geometric conditioning, multi-anchor control, and coverage-driven retrieval."
+    },
+    {
+      "title": "AnchorWeave - zunwang1.github.io",
+      "url": "https://zunwang1.github.io/AnchorWeave",
+      "snippet": "AnchorWeave maintains world consistency over long camera trajectories. First frame (conditioning image) on top; generated video below. Starting from the 1st frame, AnchorWeave generates three 81-frame segments iteratively, each utilizing the memory from previous generations, which are then composed to form the full video. The backbone model is Wan2.2 5B."
+    },
+    {
+      "title": "AnchorWeave: World-Consistent Video Generation with Retrieved Local ...",
+      "url": "https://arxiv.org/html/2602.14941v1",
+      "snippet": "The model generalizes effectively to diverse unseen scenarios, such as a wooden cabin, an alley, and a wooden sailing ship. While the visual backbone is limited to 81-frame video, AnchorWeave enables generation beyond this limit by conditioning each new segment on accumulated memory."
+    },
+    {
+      "title": "[2602.14941] AnchorWeave: World-Consistent Video Generation with ...",
+      "url": "https://arxiv.org/abs/2602.14941",
+      "snippet": "Maintaining spatial world consistency over long horizons remains a central challenge for camera-controllable video generation. Existing memory-based approaches often condition generation on globally reconstructed 3D scenes by rendering anchor videos from the reconstructed geometry in the history. However, reconstructing a global 3D scene from multiple views inevitably introduces cross-view ..."
+    }
+  ]
+}

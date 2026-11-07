@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Petrouil/EfficientViT-Depth-5M-int8",
+  "slug": "petrouil-efficientvit-depth-5m-int8",
+  "author": "Petrouil",
+  "url": "https://huggingface.co/Petrouil/EfficientViT-Depth-5M-int8",
+  "created_at": "2026-11-07T08:57:39.000Z",
+  "updated_at": "2026-11-07T08:58:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "efficientvit_depth_5m",
+    "depth-estimation",
+    "int8",
+    "quantization",
+    "efficientvit",
+    "lite-dpt",
+    "knowledge-distillation",
+    "relative-depth",
+    "base_model:Petrouil/EfficientViT-Depth-5M",
+    "base_model:quantized:Petrouil/EfficientViT-Depth-5M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5819120,
+  "storage_human": "6 MB",
+  "base_model": "Petrouil/EfficientViT-Depth-5M",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Sirlanri/Efficientvit: EfficientViT is a new family of vision ...",
+      "url": "https://github.com/Sirlanri/Efficientvit",
+      "snippet": "EfficientViT is a new family of ViT models for efficient high-resolution dense prediction vision tasks. The core building block of EfficientViT is a lightweight, multi-scale linear attention module that achieves global receptive field and multi-scale learning with only hardware-efficient operations, making EfficientViT TensorRT-friendly and suitable for GPU deployment."
+    },
+    {
+      "title": "GitHub - mit-han-lab/efficientvit: Efficient vision foundation models ...",
+      "url": "https://github.com/mit-han-lab/efficientvit",
+      "snippet": "Deep Compression Autoencoder (DC-AE) is a new family of high-spatial compression autoencoders with a spatial compression ratio of up to 128 while maintaining reconstruction quality. It accelerates all latent diffusion models regardless of the diffusion model architecture. EfficientViT-SAM is a new ..."
+    }
+  ]
+}

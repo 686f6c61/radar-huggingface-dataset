@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "GermannM/Kenga-Coder-7B-Z",
+  "slug": "germannm-kenga-coder-7b-z",
+  "author": "GermannM",
+  "url": "https://huggingface.co/GermannM/Kenga-Coder-7B-Z",
+  "created_at": "2026-11-07T10:17:22.000Z",
+  "updated_at": "2026-11-07T10:25:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ru",
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "kenga",
+    "kenga-lang",
+    "z-system",
+    "z-bl",
+    "prophet",
+    "eco-z",
+    "russian",
+    "code",
+    "ollama",
+    "text-generation",
+    "ru",
+    "en",
+    "multilingual",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 8591522912,
+  "storage_human": "8.6 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GermannM/Kenga-Coder-7B · Hugging Face",
+      "url": "https://huggingface.co/GermannM/Kenga-Coder-7B",
+      "snippet": "GermannM / Kenga-Coder-7B Like 0 PEFT Safetensors GGUF Russian English kenga kenga-lang russian z-system code qwen2.5-coder conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GermannM/Kenga-Coder-7B-v2 · Hugging Face",
+      "url": "https://huggingface.co/GermannM/Kenga-Coder-7B-v2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mcflurryshuoz/AffectGPT-RL",
+  "slug": "mcflurryshuoz-affectgpt-rl",
+  "author": "mcflurryshuoz",
+  "url": "https://huggingface.co/mcflurryshuoz/AffectGPT-RL",
+  "created_at": "2026-11-07T05:10:39.000Z",
+  "updated_at": "2026-11-07T05:13:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "emotion-recognition",
+    "multimodal",
+    "unofficial-mirror",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AffectGPT-RL: Revealing Roles of Reinforcement Learning in Open ...",
+      "url": "https://arxiv.org/abs/2605.06126",
+      "snippet": "We term this framework AffectGPT-RL. Furthermore, we conduct extensive experiments to elucidate the role of reinforcement learning in this task, revealing the necessity of the reasoning process, the impact of different rewards, and the generalizability to other emotion tasks such as sentiment analysis and basic emotion recognition."
+    },
+    {
+      "title": "AffectGPT/AffectGPT-RL at master · zeroQiaoba/AffectGPT · GitHub",
+      "url": "https://github.com/zeroQiaoba/AffectGPT/tree/master/AffectGPT-RL",
+      "snippet": "zeroQiaoba and claude AffectGPT-RL: add download placeholders for data and pretrained weights 95b9257 · 3 weeks ago History"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "colinurbs/moss-pen-sketch-lora",
+  "slug": "colinurbs-moss-pen-sketch-lora",
+  "author": "colinurbs",
+  "url": "https://huggingface.co/colinurbs/moss-pen-sketch-lora",
+  "created_at": "2026-11-07T06:20:08.000Z",
+  "updated_at": "2026-11-07T06:20:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "moss-image",
+    "style",
+    "sketch",
+    "pen",
+    "ballpoint",
+    "scribble",
+    "drawing",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 597776304,
+  "storage_human": "598 MB",
+  "base_model": "OpenMOSS/MOSS-Image-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pencil Sketch - MOSS | MOSS Image LoRA | Civitai",
+      "url": "https://civitai.com/models/55047/pencil-sketch",
+      "snippet": "LoRA to generate highly realistic pencil sketches. It perfectly simulate the look of traditional graphite art. We are talking cross-hatching, pressure variations, and those authentic little imperfections that scream, \"A human definitely spent 40 hours making this!\" Print them out, hang them on fridge, and pretend you have talent. 😝 Trigger: A pencil sketch on textured paper Editing Trigger ..."
+    },
+    {
+      "title": "Traditional Painting_Pencil Sketch_Moss - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/2113070418734198785",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "imYChaudhary22",
   "url": "https://huggingface.co/imYChaudhary22/zen-polish-v2-1.7b-4bit",
   "created_at": "2026-09-24T14:42:01.000Z",
-  "updated_at": "2026-10-26T01:47:00.000Z",
+  "updated_at": "2026-11-06T21:26:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,11 +28,11 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 779,
+  "downloads_30d": 794,
   "trending_score": 0,
   "parameters": 1720574976,
   "parameters_human": "1.72B",
-  "storage_bytes": 979502860,
+  "storage_bytes": 979644451,
   "storage_human": "980 MB",
   "base_model": "mlx-community/Qwen3-1.7B-4bit",
   "formats": [

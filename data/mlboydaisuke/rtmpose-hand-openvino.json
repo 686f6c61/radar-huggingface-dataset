@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/RTMPose-Hand-OpenVINO",
+  "slug": "mlboydaisuke-rtmpose-hand-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/RTMPose-Hand-OpenVINO",
+  "created_at": "2026-11-07T06:33:32.000Z",
+  "updated_at": "2026-11-07T06:33:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "keypoint-detection",
+    "base_model:litert-community/RTMPose-Hand-LiteRT",
+    "base_model:quantized:litert-community/RTMPose-Hand-LiteRT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 139524502,
+  "storage_human": "140 MB",
+  "base_model": "litert-community/RTMPose-Hand-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RTMpose-OpenVINO (Face, Body, Hand) - GitHub",
+      "url": "https://github.com/coldchanP/RTMpose-OpenVINO",
+      "snippet": "Model Requirements: Face models: For facial landmark detection (68 or 106 keypoints) Body models: For human body pose estimation (17 or 133 keypoints) Hand models: For hand keypoint detection (21 keypoints) Note: You need to convert RTMPose models to OpenVINO IR format (.xml/.bin) using the OpenVINO Model Optimizer or export them directly from the original framework."
+    },
+    {
+      "title": "mlboydaisuke/RTMPose-m-Hand-ExecuTorch at main",
+      "url": "https://huggingface.co/mlboydaisuke/RTMPose-m-Hand-ExecuTorch/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

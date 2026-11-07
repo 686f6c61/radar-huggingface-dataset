@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "skaldrim/opus-mt-no-da-ct2-int8",
+  "slug": "skaldrim-opus-mt-no-da-ct2-int8",
+  "author": "skaldrim",
+  "url": "https://huggingface.co/skaldrim/opus-mt-no-da-ct2-int8",
+  "created_at": "2026-11-07T11:19:02.000Z",
+  "updated_at": "2026-11-07T11:19:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "da",
+    "nb",
+    "nn",
+    "no"
+  ],
+  "tags": [
+    "translation",
+    "marian",
+    "opus-mt",
+    "ctranslate2",
+    "da",
+    "nb",
+    "nn",
+    "no",
+    "base_model:Helsinki-NLP/opus-mt-da-no",
+    "base_model:finetune:Helsinki-NLP/opus-mt-da-no",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 112961724,
+  "storage_human": "113 MB",
+  "base_model": "Helsinki-NLP/opus-mt-no-da, Helsinki-NLP/opus-mt-da-no",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OPUS-MT — CTranslate2 4.8.4 documentation - Machine Translation",
+      "url": "https://opennmt.net/CTranslate2/guides/opus_mt.html",
+      "snippet": "OPUS-MT OPUS-MT contains a collection of 1000+ pretrained models. Since the models are Transformer models trained with Marian, they are compatible with CTranslate2. The Marian guide also applies for these models, but a separate converter is provided for convenience:"
+    },
+    {
+      "title": "GitHub - rozdaybeda/ct2_translator: Lightweight C++23 command-line ...",
+      "url": "https://github.com/rozdaybeda/ct2_translator",
+      "snippet": "Lightweight C++23 command-line translator that runs Opus-MT and Meta's NLLB-200 models entirely on CPU via CTranslate2. Features int8/float32 quantization, SentencePiece tokenization, beam search, per-line language-pair overrides in interactive mode, and reports throughput (tok/s) after each translation - rozdaybeda/ct2_translator"
+    }
+  ]
+}

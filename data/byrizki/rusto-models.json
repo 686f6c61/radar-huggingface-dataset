@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "byrizki/rusto-models",
+  "slug": "byrizki-rusto-models",
+  "author": "byrizki",
+  "url": "https://huggingface.co/byrizki/rusto-models",
+  "created_at": "2026-11-02T10:34:40.000Z",
+  "updated_at": "2026-11-07T10:48:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "ocr",
+    "mnn",
+    "rten",
+    "rust",
+    "text-recognition",
+    "text-detection",
+    "indra-ocr",
+    "paddleocr",
+    "image-to-text",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1481810421,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "byrizki/rusto-rs: Pure Rust OCR Library - GitHub",
+      "url": "https://github.com/byrizki/rusto-rs",
+      "snippet": "RustO! is a pure-Rust Optical Character Recognition (OCR) engine and multi-platform toolkit. Powered by PaddleOCR models and the RTen inference engine (.rten & .onnx), RustO! delivers fast, memory-safe text extraction with zero C++ or OpenCV dependencies."
+    },
+    {
+      "title": "Releases: byrizki/rusto-rs - GitHub",
+      "url": "https://github.com/byrizki/rusto-rs/releases",
+      "snippet": "Add model zip download releases and consumer decision guide (@byrizki) Improve iOS, React Native iOS, and Models & Tiers guides (@byrizki) Add website guides and installation for node, python, go, java, and flutter (@byrizki) Add ecosystem packages documentation and quickstarts for node, python, go, java, and flutter (@byrizki)"
+    }
+  ]
+}

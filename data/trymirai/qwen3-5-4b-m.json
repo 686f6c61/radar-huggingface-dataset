@@ -5,7 +5,7 @@
   "author": "trymirai",
   "url": "https://huggingface.co/trymirai/Qwen3.5-4B-M",
   "created_at": "2026-06-04T15:51:28.000Z",
-  "updated_at": "2026-11-04T02:00:34.000Z",
+  "updated_at": "2026-11-06T19:09:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 663,
+  "downloads_30d": 679,
   "trending_score": 0,
   "parameters": 2302180352,
   "parameters_human": "2.30B",
-  "storage_bytes": 7748531903,
-  "storage_human": "7.7 GB",
+  "storage_bytes": 10593341311,
+  "storage_human": "10.6 GB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"

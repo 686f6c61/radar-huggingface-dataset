@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "hsafaai/vdc-denoiser-m64-v1",
+  "slug": "hsafaai-vdc-denoiser-m64-v1",
+  "author": "hsafaai",
+  "url": "https://huggingface.co/hsafaai/vdc-denoiser-m64-v1",
+  "created_at": "2026-03-30T17:17:59.000Z",
+  "updated_at": "2026-11-07T05:04:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "copula",
+    "vine-copula",
+    "density-estimation",
+    "mutual-information",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 531901211,
+  "storage_human": "532 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hsafaai/vdc-denoiser-m64-v1 · Hugging Face",
+      "url": "https://huggingface.co/hsafaai/vdc-denoiser-m64-v1",
+      "snippet": "This repository contains the official pretrained checkpoint for the VDC paper model ..."
+    },
+    {
+      "title": "hsafaai/vdc-denoiser-m64-v1 at main",
+      "url": "https://d6108366.hf-mirror.com/hsafaai/vdc-denoiser-m64-v1/tree/main",
+      "snippet": "/ vdc-denoiser-m64-v1 like 0 custom copula vine-copula density-estimation mutual-information License:mit Model card FilesFiles and versions xet Community Copy to bucket new main vdc-denoiser-m64-v1 532 MB Ctrl+K Ctrl+K 2 contributors History:2 commits Houman Safaai Upload pretrained VDC model bundle be8ac27 3 months ago .gitattributes Safe 1.52 ..."
+    }
+  ]
+}

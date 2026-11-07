@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/DM-Count-Crowd-OpenVINO",
+  "slug": "mlboydaisuke-dm-count-crowd-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/DM-Count-Crowd-OpenVINO",
+  "created_at": "2026-11-07T06:35:08.000Z",
+  "updated_at": "2026-11-07T06:35:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-to-image",
+    "base_model:litert-community/DM-Count-Crowd-LiteRT",
+    "base_model:quantized:litert-community/DM-Count-Crowd-LiteRT",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 217889074,
+  "storage_human": "218 MB",
+  "base_model": "litert-community/DM-Count-Crowd-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - cvlab-stonybrook/DM-Count: Code for NeurIPS 2020 paper ...",
+      "url": "https://github.com/cvlab-stonybrook/DM-Count",
+      "snippet": "Arxiv | NeurIPS Processings We propose to use Distribution Matching for crowd COUNTing (DM-Count). In DM-Count, we use Optimal Transport (OT) to measure the similarity between the normalized predicted density map and the normalized ground truth density map. To stabilize OT computation, we include a Total Variation loss in our model."
+    },
+    {
+      "title": "[2009.13077] Distribution Matching for Crowd Counting - arXiv.org",
+      "url": "https://arxiv.org/abs/2009.13077",
+      "snippet": "Instead, we propose to use Distribution Matching for crowd COUNTing (DM-Count). In DM-Count, we use Optimal Transport (OT) to measure the similarity between the normalized predicted density map and the normalized ground truth density map. To stabilize OT computation, we include a Total Variation loss in our model."
+    }
+  ]
+}

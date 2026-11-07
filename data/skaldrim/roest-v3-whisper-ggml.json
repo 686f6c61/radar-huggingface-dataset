@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "skaldrim/roest-v3-whisper-ggml",
+  "slug": "skaldrim-roest-v3-whisper-ggml",
+  "author": "skaldrim",
+  "url": "https://huggingface.co/skaldrim/roest-v3-whisper-ggml",
+  "created_at": "2026-11-07T11:19:05.000Z",
+  "updated_at": "2026-11-07T11:19:21.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "whisper",
+    "whisper.cpp",
+    "ggml",
+    "da",
+    "base_model:CoRal-project/roest-v3-whisper-1.5b",
+    "base_model:finetune:CoRal-project/roest-v3-whisper-1.5b",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4176173686,
+  "storage_human": "4.2 GB",
+  "base_model": "CoRal-project/roest-v3-whisper-1.5b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

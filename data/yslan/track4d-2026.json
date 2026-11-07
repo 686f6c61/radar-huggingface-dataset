@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "yslan/Track4D-2026",
+  "slug": "yslan-track4d-2026",
+  "author": "yslan",
+  "url": "https://huggingface.co/yslan/Track4D-2026",
+  "created_at": "2026-08-12T21:25:26.000Z",
+  "updated_at": "2026-11-07T11:56:55.000Z",
+  "license": "s-lab-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "video-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "video",
+    "tracking",
+    "3d",
+    "wan",
+    "video-to-video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52949693427,
+  "storage_human": "52.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yslan/Track4D-2026 · Hugging Face",
+      "url": "https://huggingface.co/yslan/Track4D-2026",
+      "snippet": "Public LoRA adapters for Track4D, a conditional-video approach to dense 3D tracking. These are adapters, not standalone Wan checkpoints. Download the matching Wan2.1 base model separately. Exact SHA256 hashes, inference configs, training configs, and WorldTrack evaluation commands are in the code ..."
+    },
+    {
+      "title": "yslan (LAN YUSHI) - Hugging Face",
+      "url": "https://huggingface.co/yslan",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 4 days ago ... updated a model 4 days ago"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "kakoka/Slonik-27B-oQ4e-mtp",
+  "slug": "kakoka-slonik-27b-oq4e-mtp",
+  "author": "kakoka",
+  "url": "https://huggingface.co/kakoka/Slonik-27B-oQ4e-mtp",
+  "created_at": "2026-11-07T11:41:45.000Z",
+  "updated_at": "2026-11-07T12:25:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "omlx",
+    "slonik",
+    "quantized",
+    "mtp",
+    "postgresql",
+    "code",
+    "text-generation",
+    "conversational",
+    "base_model:dglhf/Slonik",
+    "base_model:quantized:dglhf/Slonik",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16608743960,
+  "storage_human": "16.6 GB",
+  "base_model": "dglhf/Slonik",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "scottlowry/Qwen3.8-27B-oQ4e-mtp · Hugging Face",
+      "url": "https://huggingface.co/scottlowry/Qwen3.8-27B-oQ4e-mtp",
+      "snippet": "Instructions to use scottlowry/Qwen3.8-27B-oQ4e-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use scottlowry/Qwen3.8-27B-oQ4e-mtp with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Qwen3.8-27B-oQ4e-mtp scottlowry/Qwen3.8-27B-oQ4e-mtp Notebooks Google ..."
+    }
+  ]
+}

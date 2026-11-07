@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/Qwen3.5-0.8B-MTP-repro-LiteRT",
+  "slug": "mlboydaisuke-qwen3-5-0-8b-mtp-repro-litert",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/Qwen3.5-0.8B-MTP-repro-LiteRT",
+  "created_at": "2026-09-03T15:45:28.000Z",
+  "updated_at": "2026-11-07T07:02:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "speculative-decoding",
+    "mtp",
+    "hybrid",
+    "gated-deltanet",
+    "qwen3_5",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 89,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2942172000,
+  "storage_human": "2.9 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/Qwen3.5-0.8B-MTP-repro-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/Qwen3.5-0.8B-MTP-repro-LiteRT",
+      "snippet": "Qwen/Qwen3.5-0.8B converted to .litertlm with a verify signature, plus the checkpoint's own 1-layer MTP (multi-token prediction) head packed as the drafter section LiteRT-LM's speculative decoding consumes (tf_lite_mtp_drafter). Weights are dynamic-range int8 on the linears and embedding tables; cache length 4096; three draft tokens per round. Built with the open recipe in hf-to-litertlm/mtp ..."
+    },
+    {
+      "title": "Qwen3.5 0.8b Mtp Repro Litert - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mlboydaisuke/qwen3.5-0.8b-mtp-repro-litert",
+      "snippet": "Registry entry for model Qwen3.5 0.8b Mtp Repro Litert; source metadata pending."
+    }
+  ]
+}

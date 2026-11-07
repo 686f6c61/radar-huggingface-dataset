@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "skaldrim/opus-mt-is-en-ct2-int8",
+  "slug": "skaldrim-opus-mt-is-en-ct2-int8",
+  "author": "skaldrim",
+  "url": "https://huggingface.co/skaldrim/opus-mt-is-en-ct2-int8",
+  "created_at": "2026-11-07T11:17:37.000Z",
+  "updated_at": "2026-11-07T11:17:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "is"
+  ],
+  "tags": [
+    "translation",
+    "marian",
+    "opus-mt",
+    "ctranslate2",
+    "en",
+    "is",
+    "base_model:Helsinki-NLP/opus-mt-en-is",
+    "base_model:finetune:Helsinki-NLP/opus-mt-en-is",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 154119811,
+  "storage_human": "154 MB",
+  "base_model": "Helsinki-NLP/opus-mt-is-en, Helsinki-NLP/opus-mt-en-is",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OPUS-MT — CTranslate2 4.8.4 documentation - Machine Translation",
+      "url": "https://opennmt.net/CTranslate2/guides/opus_mt.html",
+      "snippet": "OPUS-MT OPUS-MT contains a collection of 1000+ pretrained models. Since the models are Transformer models trained with Marian, they are compatible with CTranslate2. The Marian guide also applies for these models, but a separate converter is provided for convenience:"
+    },
+    {
+      "title": "GitHub - Helsinki-NLP/Opus-MT: Open neural machine translation models ...",
+      "url": "https://github.com/Helsinki-NLP/Opus-MT",
+      "snippet": "There is a Makefile for training new models from OPUS data in the Opus-MT-train repository, but this is heavily customized for the work environment at CSC and the University of Helsinki projects."
+    }
+  ]
+}

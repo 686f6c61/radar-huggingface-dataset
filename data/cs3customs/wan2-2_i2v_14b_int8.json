@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "cs3customs/wan2.2_i2v_14b_int8",
+  "slug": "cs3customs-wan2-2_i2v_14b_int8",
+  "author": "cs3customs",
+  "url": "https://huggingface.co/cs3customs/wan2.2_i2v_14b_int8",
+  "created_at": "2026-11-07T08:07:27.000Z",
+  "updated_at": "2026-11-07T11:47:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "diffusers:WanImageToVideoPipeline",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14291338368,
+  "parameters_human": "14.29B",
+  "storage_bytes": 38806232864,
+  "storage_human": "38.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wan-AI/Wan2.2-I2V-A14B · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Wan-AI/Wan2.2-I2V-A14B at main - Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B/blob/main/README.md",
+      "snippet": "We are excited to introduce Wan2.2, a major upgrade to our foundational video models. With Wan2.2, we have focused on incorporating the following innovations: 👍 Effective MoE Architecture: Wan2.2 introduces a Mixture-of-Experts (MoE) architecture into video diffusion models. By separating the ..."
+    }
+  ]
+}

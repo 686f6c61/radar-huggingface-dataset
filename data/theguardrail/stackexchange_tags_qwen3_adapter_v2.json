@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "theguardrail/stackexchange_tags_qwen3_adapter_v2",
+  "slug": "theguardrail-stackexchange_tags_qwen3_adapter_v2",
+  "author": "theguardrail",
+  "url": "https://huggingface.co/theguardrail/stackexchange_tags_qwen3_adapter_v2",
+  "created_at": "2026-11-07T05:02:07.000Z",
+  "updated_at": "2026-11-07T05:02:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 569318306,
+  "storage_human": "569 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "theguardrail/stackexchange_tags_qwen3_adapter · Hugging Face",
+      "url": "https://huggingface.co/theguardrail/stackexchange_tags_qwen3_adapter",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "theguardrail/stackexchange_tags_qwen3_adapter at main",
+      "url": "https://huggingface.co/theguardrail/stackexchange_tags_qwen3_adapter/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main stackexchange_tags_qwen3_adapter 569 MB Ctrl+K Ctrl+K 1 contributor History:3 commits theguardrail Upload tokenizer ac47d66 verified1 day ago .gitattributes Safe 1.57 kBUpload tokenizer1 day ago README.md Safe 5.17 kBUpload model1 day ago adapter_config.json 1.09 kBUpload model1 day ago adapter_model.safetensors 558 MB xet Upload model1 day ago chat_template ..."
+    }
+  ]
+}

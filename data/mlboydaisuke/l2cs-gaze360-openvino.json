@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/L2CS-Gaze360-OpenVINO",
+  "slug": "mlboydaisuke-l2cs-gaze360-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/L2CS-Gaze360-OpenVINO",
+  "created_at": "2026-11-07T06:36:41.000Z",
+  "updated_at": "2026-11-07T06:37:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-classification",
+    "base_model:litert-community/L2CS-Gaze360-LiteRT",
+    "base_model:quantized:litert-community/L2CS-Gaze360-LiteRT",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 243476518,
+  "storage_human": "243 MB",
+  "base_model": "litert-community/L2CS-Gaze360-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Ahmednull/L2CS-Net: The official PyTorch implementation of ...",
+      "url": "https://github.com/Ahmednull/L2CS-Net",
+      "snippet": "The official PyTorch implementation of L2CS-Net for gaze estimation and tracking."
+    },
+    {
+      "title": "L2CSNet_gaze360.pkl · tianfxc/l2cs at main - Hugging Face",
+      "url": "https://huggingface.co/tianfxc/l2cs/blob/main/L2CSNet_gaze360.pkl",
+      "snippet": "tianfxc / l2cs Like 0 Model card FilesFiles and versions xet Community Copy to bucket new main l2cs /L2CSNet_gaze360.pkl tianfxc Upload L2CSNet_gaze360.pkl 424a499 verified10 months ago Download Download with hf CLI Copy download link History Blame Contribute Delete Safe pickle"
+    }
+  ]
+}

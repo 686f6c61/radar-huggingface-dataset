@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma3-27b-glitterlike-v2-GGUF",
+  "slug": "mradermacher-gemma3-27b-glitterlike-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma3-27b-glitterlike-v2-GGUF",
+  "created_at": "2025-06-02T09:45:33.000Z",
+  "updated_at": "2026-11-07T09:50:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 91,
+  "trending_score": 0,
+  "parameters": 27009346304,
+  "parameters_human": "27.01B",
+  "storage_bytes": 188136502656,
+  "storage_human": "188.1 GB",
+  "base_model": "ToastyPigeon/gemma3-27b-glitterlike-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma3-27b-glitterlike-v2-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma3-27b-glitterlike-v2-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gemma3-27b-v2-glitterlike-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma3-27b-v2-glitterlike-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

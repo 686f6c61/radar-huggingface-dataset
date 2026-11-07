@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "OpenRAL/rskill-gr00t_n17-franka_panda-libero_spatial-bf16",
+  "slug": "openral-rskill-gr00t_n17-franka_panda-libero_spatial-bf16",
+  "author": "OpenRAL",
+  "url": "https://huggingface.co/OpenRAL/rskill-gr00t_n17-franka_panda-libero_spatial-bf16",
+  "created_at": "2026-06-11T10:34:05.000Z",
+  "updated_at": "2026-11-07T12:03:28.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "OpenRAL",
+    "rskill",
+    "gr00t",
+    "vision-language-action",
+    "nf4",
+    "4-bit",
+    "franka_panda",
+    "rskill-kind:vla",
+    "rskill-role:s1",
+    "embodiment:franka_panda",
+    "rskill-license:nvidia_open_model",
+    "nvidia",
+    "vla",
+    "franka",
+    "libero",
+    "manipulation",
+    "robotics",
+    "en",
+    "arxiv:2503.14734",
+    "base_model:nvidia/GR00T-N1.7-LIBERO",
+    "base_model:quantized:nvidia/GR00T-N1.7-LIBERO",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 6910499416,
+  "storage_human": "6.9 GB",
+  "base_model": "nvidia/GR00T-N1.7-LIBERO",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rskill-gr00t_n17-franka_panda-libero_spatial-bf16 - Hugging Face",
+      "url": "https://huggingface.co/OpenRAL/rskill-gr00t_n17-franka_panda-libero_spatial-bf16",
+      "snippet": "GR00T is a cross-embodiment foundation model with variable-dimension proprioception and per-embodiment action heads. This checkpoint specializes the N1.7 base on the LIBERO Franka embodiment ..."
+    },
+    {
+      "title": "openral/rskills/gr00t-n17-libero at master - GitHub",
+      "url": "https://github.com/OpenRAL/openral/tree/master/rskills/gr00t-n17-libero/",
+      "snippet": "rskill-gr00t_n17-franka_panda-libero_spatial-bf16 OpenRAL rSkill — NVIDIA Isaac GR00T N1.7 (3B) finetuned on the LIBERO benchmark, packaged for the OpenRAL robot agent framework."
+    }
+  ]
+}

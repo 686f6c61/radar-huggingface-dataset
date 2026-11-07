@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Ailiance-fr/qwen3-4b-mascarade-power-lora",
+  "slug": "ailiance-fr-qwen3-4b-mascarade-power-lora",
+  "author": "Ailiance-fr",
+  "url": "https://huggingface.co/Ailiance-fr/qwen3-4b-mascarade-power-lora",
+  "created_at": "2026-05-11T18:18:39.000Z",
+  "updated_at": "2026-11-07T07:17:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 209811819,
+  "storage_human": "210 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ailiance-fr/qwen3-4b-mascarade-power-lora · Hugging Face",
+      "url": "https://huggingface.co/Ailiance-fr/qwen3-4b-mascarade-power-lora",
+      "snippet": "These are the official scores for the unmodified base model Qwen/Qwen3-4B-Instruct-2507, reported by Alibaba Qwen team. They represent the floor of capability that this LoRA inherits before the hardware-domain fine-tune adapts behavior."
+    },
+    {
+      "title": "ailiance/mascarade — Ailiance",
+      "url": "https://www.ailiance.fr/models/ailiance/mascarade",
+      "snippet": "Toutes les adapters partagent le même modèle de base ailiance/Qwen3-4B avec LoRA r=16 / α=32. Famille publiée sur HuggingFace ; le routage live est désormais assuré par les adaptateurs qwen36-35B servis sur Mac Studio (:9360 / :9361)."
+    }
+  ]
+}

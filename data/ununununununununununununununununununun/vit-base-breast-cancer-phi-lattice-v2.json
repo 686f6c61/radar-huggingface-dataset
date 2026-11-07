@@ -5,7 +5,7 @@
   "author": "ununununununununununununununununununun",
   "url": "https://huggingface.co/ununununununununununununununununununun/vit-base-breast-cancer-phi-lattice-v2",
   "created_at": "2026-11-04T22:01:54.000Z",
-  "updated_at": "2026-11-04T22:01:57.000Z",
+  "updated_at": "2026-11-06T22:40:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 19,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": 85800194,
   "parameters_human": "85.8M",

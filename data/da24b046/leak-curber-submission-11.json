@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "da24b046/leak-curber-submission-11",
+  "slug": "da24b046-leak-curber-submission-11",
+  "author": "da24b046",
+  "url": "https://huggingface.co/da24b046/leak-curber-submission-11",
+  "created_at": "2026-11-07T07:48:49.000Z",
+  "updated_at": "2026-11-07T07:48:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "enzyme",
+    "reaction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 870548545,
+  "storage_human": "871 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "da24b046/leak-curber-enzyme-submission-4 · Hugging Face",
+      "url": "https://huggingface.co/da24b046/leak-curber-enzyme-submission-4",
+      "snippet": "Local evidence Use the byte-identical 80/10/10 exact-reaction split from earlier submissions: 50,624 train / 6,328 development / 6,328 test, seed 2202. All labels of a reaction stay together. Select model/epoch on development, lock, then score test once through the portable CPU graph pipeline."
+    },
+    {
+      "title": "GitHub - da24b046/AI-Ops-Module-1: Module 1 Assignment",
+      "url": "https://github.com/da24b046/AI-Ops-Module-1/tree/main",
+      "snippet": "Module 1 Assignment. Contribute to da24b046/AI-Ops-Module-1 development by creating an account on GitHub."
+    }
+  ]
+}

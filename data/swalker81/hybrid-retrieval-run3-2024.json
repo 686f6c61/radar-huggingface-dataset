@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "SWALKER81/hybrid-retrieval-run3-2024",
+  "slug": "swalker81-hybrid-retrieval-run3-2024",
+  "author": "SWALKER81",
+  "url": "https://huggingface.co/SWALKER81/hybrid-retrieval-run3-2024",
+  "created_at": "2026-11-07T08:39:54.000Z",
+  "updated_at": "2026-11-07T08:40:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RAG in Production 2026: GraphRAG, Hybrid Retrieval, and Evals - AI ...",
+      "url": "https://ailearningguides.com/rag-production-patterns-2026/",
+      "snippet": "A 2026 playbook for production RAG: hybrid retrieval, GraphRAG, rerankers, RAGAS evaluation, observability, security, cost, and a week-one reference stack you can ship."
+    }
+  ]
+}

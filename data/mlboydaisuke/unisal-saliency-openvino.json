@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/UniSal-Saliency-OpenVINO",
+  "slug": "mlboydaisuke-unisal-saliency-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/UniSal-Saliency-OpenVINO",
+  "created_at": "2026-11-07T06:30:35.000Z",
+  "updated_at": "2026-11-07T06:30:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-segmentation",
+    "base_model:litert-community/UniSal-Saliency-LiteRT",
+    "base_model:quantized:litert-community/UniSal-Saliency-LiteRT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33214731,
+  "storage_human": "33 MB",
+  "base_model": "litert-community/UniSal-Saliency-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - rdroste/unisal: Unified Image and Video Saliency Modeling ...",
+      "url": "https://github.com/rdroste/unisal",
+      "snippet": "Unified Image and Video Saliency Modeling This repository provides the code for the paper: Richard Droste, Jianbo Jiao and J. Alison Noble. Unified Image and Video Saliency Modeling. In: ECCV (2020). If you use UNISAL, please cite the following BibTeX entry:"
+    },
+    {
+      "title": "GitHub - Ttibo/Unisal: Unisal Model · GitHub",
+      "url": "https://github.com/Ttibo/Unisal",
+      "snippet": "Trainer for UNISAL Model Simplified implementation of the UNISAL model for saliency using PyTorch. This code includes training and validation features, as well as checkpoint management."
+    }
+  ]
+}

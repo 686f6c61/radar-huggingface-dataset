@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "OpenRAL/rskill-smolvla-aloha_agilex-robotwin-bf16",
+  "slug": "openral-rskill-smolvla-aloha_agilex-robotwin-bf16",
+  "author": "OpenRAL",
+  "url": "https://huggingface.co/OpenRAL/rskill-smolvla-aloha_agilex-robotwin-bf16",
+  "created_at": "2026-06-19T13:25:12.000Z",
+  "updated_at": "2026-11-07T12:03:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "OpenRAL",
+    "rskill",
+    "smolvla",
+    "vision-language-action",
+    "aloha_agilex",
+    "rskill-kind:vla",
+    "rskill-role:s1",
+    "embodiment:aloha_agilex",
+    "rskill-license:apache-2.0",
+    "vla",
+    "robotwin",
+    "bimanual",
+    "manipulation",
+    "robotics",
+    "en",
+    "dataset:lerobot/robotwin_unified",
+    "arxiv:2506.18088",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenRAL/rskill-smolvla-aloha_agilex-robotwin-bf16 · Hugging Face",
+      "url": "https://huggingface.co/OpenRAL/rskill-smolvla-aloha_agilex-robotwin-bf16",
+      "snippet": "OpenRAL rSkill — SmolVLA (0.45 B) finetuned on the RoboTwin 2.0 unified dual-arm dataset (50 bimanual SAPIEN tasks, aloha-agilex embodiment), packaged for use with the OpenRAL robot agent framework."
+    },
+    {
+      "title": "OpenRAL/rskill-smolvla-aloha_agilex-robotwin-bf16 at main",
+      "url": "https://huggingface.co/OpenRAL/rskill-smolvla-aloha_agilex-robotwin-bf16/tree/main",
+      "snippet": "Instructions to use OpenRAL/rskill-smolvla-aloha_agilex-robotwin-bf16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

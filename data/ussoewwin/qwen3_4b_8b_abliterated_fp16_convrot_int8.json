@@ -5,7 +5,7 @@
   "author": "ussoewwin",
   "url": "https://huggingface.co/ussoewwin/qwen3_4b_8b_abliterated_fp16_convrot_int8",
   "created_at": "2025-11-28T03:58:39.000Z",
-  "updated_at": "2026-11-02T02:19:45.000Z",
+  "updated_at": "2026-11-03T06:09:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,8 +25,8 @@
     "hswq",
     "single-file",
     "vision-language",
-    "base_model:huihui-ai/Huihui-Qwen3-VL-4B-Thinking-abliterated",
-    "base_model:finetune:huihui-ai/Huihui-Qwen3-VL-4B-Thinking-abliterated",
+    "base_model:huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated",
+    "base_model:finetune:huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
@@ -38,7 +38,7 @@
   "parameters_human": null,
   "storage_bytes": 99509802543,
   "storage_human": "99.5 GB",
-  "base_model": "huihui-ai/Qwen3-4B-abliterated, huihui-ai/Qwen3-8B-abliterated, huihui-ai/Huihui-Qwen3-VL-4B-Thinking-abliterated",
+  "base_model": "huihui-ai/Qwen3-4B-abliterated, huihui-ai/Qwen3-8B-abliterated, huihui-ai/Huihui-Qwen3-VL-4B-Thinking-abliterated, huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated",
   "formats": [
     "safetensors"
   ],

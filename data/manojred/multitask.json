@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "manojred/multitask",
+  "slug": "manojred-multitask",
+  "author": "manojred",
+  "url": "https://huggingface.co/manojred/multitask",
+  "created_at": "2026-11-07T11:39:03.000Z",
+  "updated_at": "2026-11-07T11:39:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manojred/test-tts · Hugging Face",
+      "url": "https://huggingface.co/manojred/test-tts",
+      "snippet": "manojred / test-tts like 0 abstract-intro-prelim-method-exp-discussion critical detailed-descriptive long-detailed mixed-active-passive numeric-nature typst unstructured-narrative zero-shot-transfer License:cc-by-4.0 Model card FilesFiles and versions xet Community Copy to bucket new paper_notes.md Paper Files License"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "tomyoon2/xcodec_ablation8b",
+  "slug": "tomyoon2-xcodec_ablation8b",
+  "author": "tomyoon2",
+  "url": "https://huggingface.co/tomyoon2/xcodec_ablation8b",
+  "created_at": "2026-11-07T08:17:21.000Z",
+  "updated_at": "2026-11-07T08:18:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308224,
+  "parameters_human": "308224",
+  "storage_bytes": 16392939744,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tomyoon2 (Hee Suk Yoon) - Hugging Face",
+      "url": "https://huggingface.co/tomyoon2",
+      "snippet": "tomyoon2/masked_first_last_imagine_cw_ccw_opsd_mini1_12frame3-Qwen3-VL-8B-Instruct-ckpt1040 770k•Updated Apr 9• 1"
+    },
+    {
+      "title": "tomyoon2 (Hee Suk Yoon) - Hugging Face",
+      "url": "https://huggingface.co/tomyoon2/datasets",
+      "snippet": "User profile of Hee Suk Yoon on Hugging Face"
+    }
+  ]
+}

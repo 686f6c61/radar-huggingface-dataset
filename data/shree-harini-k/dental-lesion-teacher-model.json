@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Shree-Harini-K/dental-lesion-teacher-model",
+  "slug": "shree-harini-k-dental-lesion-teacher-model",
+  "author": "Shree-Harini-K",
+  "url": "https://huggingface.co/Shree-Harini-K/dental-lesion-teacher-model",
+  "created_at": "2026-11-07T07:07:57.000Z",
+  "updated_at": "2026-11-07T07:07:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SREE HARINI K - -- | LinkedIn",
+      "url": "https://in.linkedin.com/in/sree-harini-k-4662a3291",
+      "snippet": "-- · Education: KSR Institute of Dental Science and Research · Location: Coimbatore. View SREE HARINI K’s profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "Shree - Hindi Serial - Full Episode - 1 - YouTube",
+      "url": "https://m.youtube.com/watch?v=-0knXGxfhx0",
+      "snippet": "Sep 3, 2012 · Trapped by a wizard then released accidentally by Shree, Kangana returns to take revenge on the Shree-Hari couple …"
+    }
+  ]
+}

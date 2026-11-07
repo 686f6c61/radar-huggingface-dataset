@@ -5,7 +5,7 @@
   "author": "proofbird",
   "url": "https://huggingface.co/proofbird/gector-bert-it",
   "created_at": "2026-11-06T13:45:41.000Z",
-  "updated_at": "2026-11-06T13:46:55.000Z",
+  "updated_at": "2026-11-06T13:58:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

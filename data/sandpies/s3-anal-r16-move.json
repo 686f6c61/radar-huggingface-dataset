@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "sandpies/s3-anal-r16-move",
+  "slug": "sandpies-s3-anal-r16-move",
+  "author": "sandpies",
+  "url": "https://huggingface.co/sandpies/s3-anal-r16-move",
+  "created_at": "2026-11-06T17:09:36.000Z",
+  "updated_at": "2026-11-07T08:43:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "nsfw",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3598133297,
+  "storage_human": "3.6 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sandpies (sand pies) - Hugging Face",
+      "url": "https://huggingface.co/sandpies",
+      "snippet": "User profile of sand pies on Hugging Face"
+    },
+    {
+      "title": "lora/h3upscale_v2_x2.safetensors · sandpies/ComfyUI-H3-Video-Upsampler ...",
+      "url": "https://huggingface.co/sandpies/ComfyUI-H3-Video-Upsampler/blob/main/lora/h3upscale_v2_x2.safetensors",
+      "snippet": "sandpies / ComfyUI-H3-Video-Upsampler Like 2 MiniMax H3 comfyui lora video-upscale License:see-third-party-notices Model card FilesFiles and versions xet Community Deploy Copy to bucket new main ComfyUI-H3-Video-Upsampler / lora /h3upscale_v2_x2.safetensors sandpies h3upscale x2 LoRA (step 4000, reference_downscale_factor 2) 9337fe0 ..."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "SpectralSpirit/my-fine-tuned-product-tokenizer",
+  "slug": "spectralspirit-my-fine-tuned-product-tokenizer",
+  "author": "SpectralSpirit",
+  "url": "https://huggingface.co/SpectralSpirit/my-fine-tuned-product-tokenizer",
+  "created_at": "2026-11-07T05:10:55.000Z",
+  "updated_at": "2026-11-07T05:10:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17209961,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer",
+      "snippet": "Tokenizer Learn about language model tokenization OpenAI's large language models process text using tokens, which are common sequences of characters found in a set of text. The models learn to understand the statistical relationships between these tokens, and excel at producing the next token in a sequence of tokens. Learn more."
+    },
+    {
+      "title": "Fine Tuning Large Language Model (LLM) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/fine-tuning-large-language-model-llm/",
+      "snippet": "Fine-tuning refers to the process of taking a pre-trained model and adapting it to a specific task by training it further on a smaller, domain-specific dataset."
+    }
+  ]
+}

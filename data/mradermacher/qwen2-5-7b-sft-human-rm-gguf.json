@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-7B-sft-human-rm-GGUF",
+  "slug": "mradermacher-qwen2-5-7b-sft-human-rm-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-7B-sft-human-rm-GGUF",
+  "created_at": "2025-03-09T14:44:47.000Z",
+  "updated_at": "2026-11-07T06:31:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "trl",
+    "dpo",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 60250021376,
+  "storage_human": "60.3 GB",
+  "base_model": "AmberYifan/Qwen2.5-7B-sft-human-rm",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen2.5-7B-sft-human-rm-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-7B-sft-human-rm-GGUF",
+      "snippet": "mradermacher / Qwen2.5-7B-sft-human-rm-GGUF like 0 Transformers GGUF English Generated from Trainer trl dpo Inference Endpoints conversational Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "mradermacher/Qwen2.5-7B-sft-SPIN-gpt4o-rm-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-7B-sft-SPIN-gpt4o-rm-GGUF",
+      "snippet": "Feel free to request them by opening a Community Discussion. Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    }
+  ]
+}

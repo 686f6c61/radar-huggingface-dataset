@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/BiSeNet-Face-Parsing-OpenVINO",
+  "slug": "mlboydaisuke-bisenet-face-parsing-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/BiSeNet-Face-Parsing-OpenVINO",
+  "created_at": "2026-11-07T06:32:32.000Z",
+  "updated_at": "2026-11-07T06:32:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-segmentation",
+    "base_model:litert-community/BiSeNet-Face-Parsing-LiteRT",
+    "base_model:quantized:litert-community/BiSeNet-Face-Parsing-LiteRT",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133029807,
+  "storage_human": "133 MB",
+  "base_model": "litert-community/BiSeNet-Face-Parsing-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - yakhyo/face-parsing: Real-time face parsing and facial ...",
+      "url": "https://github.com/yakhyo/face-parsing",
+      "snippet": "This is a face parsing model for high-precision facial feature segmentation based on BiSeNet: Bilateral Segmentation Network for Real-time Semantic Segmentation. This model accurately segments various facial components such as the eyes, nose, mouth, and the contour of the face from images. This repo provides a different training & inference code and new backbone model has been added."
+    },
+    {
+      "title": "BiSeNet: Bilateral Segmentation Network for Real-time Semantic ...",
+      "url": "https://yakhyo.github.io/face-parsing/",
+      "snippet": "BiSeNet: Bilateral Segmentation Network for Real-time Semantic Segmentation [Face Parsing] [!TIP] The models and functionality in this repository are integrated into UniFace — an all-in-one face analysis library. This is a face parsing model for high-precision facial feature segmentation based on BiSeNet: Bilateral Segmentation Network for Real-time Semantic Segmentation. This model ..."
+    }
+  ]
+}

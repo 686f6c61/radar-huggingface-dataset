@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mohamedghoul/team-182-wiqaia",
+  "slug": "mohamedghoul-team-182-wiqaia",
+  "author": "mohamedghoul",
+  "url": "https://huggingface.co/mohamedghoul/team-182-wiqaia",
+  "created_at": "2026-11-06T17:04:57.000Z",
+  "updated_at": "2026-11-07T05:05:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "gliner",
+    "pytorch",
+    "qai-hf-hackathon-2026",
+    "pii",
+    "privacy",
+    "arabic",
+    "code-switching",
+    "guardrails",
+    "token-classification",
+    "ar",
+    "en",
+    "dataset:mohamedghoul/team-182-wiqaia-policybench",
+    "base_model:knowledgator/gliner-x-base",
+    "base_model:finetune:knowledgator/gliner-x-base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2435766613,
+  "storage_human": "2.4 GB",
+  "base_model": "knowledgator/gliner-x-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Wiqaia PolicyBench (test)",
+      "metric": "overlap-F1 (all labels)",
+      "value": 0.855
+    },
+    {
+      "task": null,
+      "dataset": "Wiqaia PolicyBench (test)",
+      "metric": "exact-F1 (all labels)",
+      "value": 0.707
+    },
+    {
+      "task": null,
+      "dataset": "Wiqaia PolicyBench (test)",
+      "metric": "overlap-F1 direct_identifier",
+      "value": 0.962
+    }
+  ],
+  "sources": [
+    {
+      "title": "mohamedghoul/team-182-wiqaia-levels · Hugging Face",
+      "url": "https://huggingface.co/mohamedghoul/team-182-wiqaia-levels",
+      "snippet": "Text Classification model with 0.1B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "mohamedghoul/team-182-wiqaia-levels · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/mohamedghoul/team-182-wiqaia-levels",
+      "snippet": "Dataset with 1.05k rows (Tabular, Text). Explore, preview and download it on Hugging Face."
+    }
+  ]
+}

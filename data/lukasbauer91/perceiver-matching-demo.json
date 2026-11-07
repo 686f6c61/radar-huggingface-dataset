@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "lukasbauer91/perceiver-matching-demo",
+  "slug": "lukasbauer91-perceiver-matching-demo",
+  "author": "lukasbauer91",
+  "url": "https://huggingface.co/lukasbauer91/perceiver-matching-demo",
+  "created_at": "2026-11-07T10:19:00.000Z",
+  "updated_at": "2026-11-07T10:19:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lukasbauer91 (Lukas Bauer) - Hugging Face",
+      "url": "https://huggingface.co/lukasbauer91/models",
+      "snippet": "nlp, model compression, transformers, diffusion models"
+    },
+    {
+      "title": "wweberfinn/perceiver-matching · Hugging Face",
+      "url": "https://huggingface.co/wweberfinn/perceiver-matching",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

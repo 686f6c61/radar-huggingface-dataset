@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "GBP-DE/Qwen3.8-Flash-Next-oQ5e-mtp",
+  "slug": "gbp-de-qwen3-8-flash-next-oq5e-mtp",
+  "author": "GBP-DE",
+  "url": "https://huggingface.co/GBP-DE/Qwen3.8-Flash-Next-oQ5e-mtp",
+  "created_at": "2026-09-07T18:30:07.000Z",
+  "updated_at": "2026-11-07T09:37:35.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "omlx",
+    "qwen",
+    "qwen3.8",
+    "oq",
+    "oq5",
+    "oq5e",
+    "5-bit",
+    "quantized",
+    "mtp",
+    "vision",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 22,
+  "downloads_30d": 2034,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 128556736601,
+  "storage_human": "128.6 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GBP-DE/Qwen3.8-Flash-Next-oQ5e-mtp at main - Hugging Face",
+      "url": "https://huggingface.co/GBP-DE/Qwen3.8-Flash-Next-oQ5e-mtp/tree/main",
+      "snippet": "Instructions to use GBP-DE/Qwen3.8-Flash-Next-oQ5e-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries"
+    },
+    {
+      "title": "GBP-DE/Qwen3.8-Flash-Next-oQ5e-mtp · Hugging Face",
+      "url": "https://huggingface.co/GBP-DE/Qwen3.8-Flash-Next-oQ5e-mtp",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

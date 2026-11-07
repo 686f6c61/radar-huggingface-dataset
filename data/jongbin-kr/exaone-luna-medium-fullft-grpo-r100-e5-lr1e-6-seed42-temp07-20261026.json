@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/exaone-luna-medium-fullft-grpo-r100-e5-lr1e-6-seed42-temp07-20261026",
+  "slug": "jongbin-kr-exaone-luna-medium-fullft-grpo-r100-e5-lr1e-6-seed42-temp07-20261026",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/exaone-luna-medium-fullft-grpo-r100-e5-lr1e-6-seed42-temp07-20261026",
+  "created_at": "2026-10-30T05:02:29.000Z",
+  "updated_at": "2026-11-07T06:13:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "exaone",
+    "verireason",
+    "full-finetuning",
+    "grpo",
+    "custom_code",
+    "base_model:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "base_model:finetune:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7818448896,
+  "parameters_human": "7.82B",
+  "storage_bytes": 203280123289,
+  "storage_human": "203.3 GB",
+  "base_model": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "exaone-luna-medium-fullft-sft-r100-e5-lr5e-6-seed42-20261021",
+      "url": "https://huggingface.co/Jongbin-kr/exaone-luna-medium-fullft-sft-r100-e5-lr5e-6-seed42-20261021",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "exaone-luna-medium-fullft-sft-r100-e5-lr2e-5-seed42-20261021",
+      "url": "https://huggingface.co/Jongbin-kr/exaone-luna-medium-fullft-sft-r100-e5-lr2e-5-seed42-20261021/tree/main",
+      "snippet": "0 Safetensors exaone verireason full-finetuning sft custom_code Model card FilesFiles and versions xet Community Copy to bucket new main exaone-luna-medium-fullft-sft-r100-e5-lr2e-5-seed42-20261021 407 GB Ctrl+K Ctrl+K 1 contributor History:28 commits Jongbin-kr Publish best SFT model 54c5706 verified3 days ago checkpoint-1286Save step 1286 ..."
+    }
+  ]
+}

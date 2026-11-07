@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "OpenRAL/rskill-rtdetr_v2_r50vd-any-coco-fp16",
+  "slug": "openral-rskill-rtdetr_v2_r50vd-any-coco-fp16",
+  "author": "OpenRAL",
+  "url": "https://huggingface.co/OpenRAL/rskill-rtdetr_v2_r50vd-any-coco-fp16",
+  "created_at": "2026-06-04T18:38:51.000Z",
+  "updated_at": "2026-11-07T12:06:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "tensorrt",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tensorrt",
+    "onnx",
+    "safetensors",
+    "OpenRAL",
+    "rskill",
+    "detector",
+    "object-detection",
+    "any",
+    "rt-detr",
+    "rt-detr-v2",
+    "coco",
+    "en",
+    "arxiv:2407.17140",
+    "base_model:PekingU/rtdetr_v2_r50vd",
+    "base_model:finetune:PekingU/rtdetr_v2_r50vd",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 352461754,
+  "storage_human": "352 MB",
+  "base_model": "PekingU/rtdetr_v2_r50vd",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenRAL/openral: Open-source Robot Agentic Layer",
+      "url": "https://github.com/OpenRAL/openral",
+      "snippet": "The open harness for physical AI. OpenRAL is the open-source Robot Agentic Layer (harness) for embodied AI — it unifies fast policies, slow reasoning, reward signals, perception AI and classical control into one typed, traceable, safety-first runtime for deployable robot agents. One fixed harness, swappable rSkills. Quick start · Tutorials · Architecture · Robots · rSkills · Reasoner ..."
+    },
+    {
+      "title": "OpenRAL (OpenRAL) - Hugging Face",
+      "url": "https://huggingface.co/OpenRAL",
+      "snippet": "AI, Robotics Policy rSkills Each rSkill is a self-contained Hub repo: rskill.yaml manifest, model.safetensors weights, eval/ results, and a model card with runnable examples. Install with openral rskill install OpenRAL/rskill-<name>. The table below shows a representative subset of the 20 VLA policy rSkills; classical motion planners ship as separate ros_action rSkills (see below)."
+    }
+  ]
+}

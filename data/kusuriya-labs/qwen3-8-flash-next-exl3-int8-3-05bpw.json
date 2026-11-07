@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "kusuriya-labs/Qwen3.8-Flash-Next-EXL3-INT8-3.05bpw",
+  "slug": "kusuriya-labs-qwen3-8-flash-next-exl3-int8-3-05bpw",
+  "author": "kusuriya-labs",
+  "url": "https://huggingface.co/kusuriya-labs/Qwen3.8-Flash-Next-EXL3-INT8-3.05bpw",
+  "created_at": "2026-11-07T04:57:48.000Z",
+  "updated_at": "2026-11-07T05:14:57.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "exl3",
+    "exl3-int8",
+    "rocm",
+    "quantized",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26168065536,
+  "parameters_human": "26.17B",
+  "storage_bytes": 85158970860,
+  "storage_human": "85.2 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability:"
+    }
+  ]
+}

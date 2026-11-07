@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "khadija123it/balochi-bert",
+  "slug": "khadija123it-balochi-bert",
+  "author": "khadija123it",
+  "url": "https://huggingface.co/khadija123it/balochi-bert",
+  "created_at": "2026-11-07T07:02:48.000Z",
+  "updated_at": "2026-11-07T07:03:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177855747,
+  "parameters_human": "177.9M",
+  "storage_bytes": 711446508,
+  "storage_human": "711 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "khadija123it/bert-text-completion · Hugging Face",
+      "url": "https://huggingface.co/khadija123it/bert-text-completion",
+      "snippet": "khadija123it / bert-text-completion Like 0 Fill-Mask Transformers Safetensors bert arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "Balochi AI - BalochTech Projects | BalochTech",
+      "url": "https://balochtech.com/projects/balochi-ai",
+      "snippet": "Balochi AI is an advanced generative artificial intelligence platform designed for the Balochi-speaking community. It provides a localized AI experience that understands and generates text in both Arabic and Latin Balochi scripts, offering cultural context and linguistic assistance."
+    }
+  ]
+}

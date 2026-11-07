@@ -5,7 +5,7 @@
   "author": "ibm-granite",
   "url": "https://huggingface.co/ibm-granite/granite-speech-5.0-2b",
   "created_at": "2026-10-07T16:10:49.000Z",
-  "updated_at": "2026-11-03T21:40:01.000Z",
+  "updated_at": "2026-11-06T21:40:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 80,
-  "downloads_30d": 8657,
+  "downloads_30d": 8999,
   "trending_score": 11,
   "parameters": 2313207132,
   "parameters_human": "2.31B",

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "oioitff/sageattention",
+  "slug": "oioitff-sageattention",
+  "author": "oioitff",
+  "url": "https://huggingface.co/oioitff/sageattention",
+  "created_at": "2026-11-07T11:26:05.000Z",
+  "updated_at": "2026-11-07T11:38:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7394464,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SageAttention: Accurate 8-bit attention for Plug-and-Play Inference ...",
+      "url": "https://arxiv.org/html/2410.02367v2",
+      "snippet": "In this paper, we propose SageAttention, a quantization method to accelerate attention while preserving accuracy. SageAttention is easy-to-use. As a post-training quantization method, it can be used in a plug-and-play manner in inference time by simply replacing the original high-precision implementation."
+    },
+    {
+      "title": "GitHub - thu-ml/SageAttention: [ICLR2025, ICML2025, NeurIPS2025 ...",
+      "url": "https://github.com/thu-ml/SageAttention",
+      "snippet": "[ICLR2025, ICML2025, NeurIPS2025 Spotlight] Quantized Attention achieves speedup of 2-5x compared to FlashAttention, without losing end-to-end metrics across language, image, and video models. - thu-ml/SageAttention"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "richardyoung",
   "url": "https://huggingface.co/richardyoung/gemma-2-27b-it-ARA-heretic",
   "created_at": "2026-11-05T12:42:34.000Z",
-  "updated_at": "2026-11-05T12:45:06.000Z",
+  "updated_at": "2026-11-06T21:15:42.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

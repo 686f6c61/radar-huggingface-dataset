@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "kusuriya-labs/Qwen3.8-27B-EXL3-INT8-4bpw",
+  "slug": "kusuriya-labs-qwen3-8-27b-exl3-int8-4bpw",
+  "author": "kusuriya-labs",
+  "url": "https://huggingface.co/kusuriya-labs/Qwen3.8-27B-EXL3-INT8-4bpw",
+  "created_at": "2026-11-07T04:51:11.000Z",
+  "updated_at": "2026-11-07T04:57:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "exl3-int8",
+    "rocm",
+    "quantized",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8254592384,
+  "parameters_human": "8.25B",
+  "storage_bytes": 16522370618,
+  "storage_human": "16.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - malaiwah/qwen38-27b-exl3: EXL3 mixed-precision quantization of ...",
+      "url": "https://github.com/malaiwah/qwen38-27b-exl3",
+      "snippet": "EXL3 mixed-precision quantization of Qwen3.8-27B: measured recipes, runtime contract, KLD receipts, iteration log - malaiwah/qwen38-27b-exl3"
+    },
+    {
+      "title": "turboderp/Qwen3.8-27B-exl3 · Hugging Face",
+      "url": "https://huggingface.co/turboderp/Qwen3.8-27B-exl3",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

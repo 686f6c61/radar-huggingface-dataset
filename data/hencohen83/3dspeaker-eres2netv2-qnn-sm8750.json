@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "hencohen83/3dspeaker-eres2netv2-qnn-sm8750",
+  "slug": "hencohen83-3dspeaker-eres2netv2-qnn-sm8750",
+  "author": "hencohen83",
+  "url": "https://huggingface.co/hencohen83/3dspeaker-eres2netv2-qnn-sm8750",
+  "created_at": "2026-11-07T07:55:20.000Z",
+  "updated_at": "2026-11-07T07:55:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "speaker-embedding",
+    "speaker-verification",
+    "3d-speaker",
+    "sherpa-onnx",
+    "qnn",
+    "qualcomm",
+    "npu",
+    "snapdragon",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 189656182,
+  "storage_human": "190 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hencohen83/ivrit-whisper-large-v3-qnn-sm8750 · Hugging Face",
+      "url": "https://huggingface.co/hencohen83/ivrit-whisper-large-v3-qnn-sm8750",
+      "snippet": "Hebrew speech recognition on the Snapdragon 8 Elite (SM8750, Hexagon v79) NPU: ivrit-ai/whisper-large-v3 compiled to QNN context binaries (encoder and decoder) for sherpa-onnx, with QAIRT 2.40.0.251030. Model by ivrit.ai, fine-tuned from OpenAI's Whisper on Hebrew. Licensed Apache-2.0; this ..."
+    },
+    {
+      "title": "3D-Speaker/egs/voxceleb/sv-eres2netv2/conf/eres2netv2.yaml at ... - GitHub",
+      "url": "https://github.com/modelscope/3D-Speaker/blob/main/egs/voxceleb/sv-eres2netv2/conf/eres2netv2.yaml",
+      "snippet": "A Repository for Single- and Multi-modal Speaker Verification, Speaker Recognition and Speaker Diarization - modelscope/3D-Speaker"
+    }
+  ]
+}

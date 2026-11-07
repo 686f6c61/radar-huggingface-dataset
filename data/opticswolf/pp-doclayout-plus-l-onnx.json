@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "opticsWolf/pp-doclayout-plus-l-onnx",
+  "slug": "opticswolf-pp-doclayout-plus-l-onnx",
+  "author": "opticsWolf",
+  "url": "https://huggingface.co/opticsWolf/pp-doclayout-plus-l-onnx",
+  "created_at": "2026-11-07T09:00:00.000Z",
+  "updated_at": "2026-11-07T09:00:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "document-layout-analysis",
+    "detr",
+    "image-to-text",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129736329,
+  "storage_human": "130 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iaa2005/PP-DocLayout_plus-L_onnx · Hugging Face",
+      "url": "https://huggingface.co/iaa2005/PP-DocLayout_plus-L_onnx",
+      "snippet": "A mirror of PaddlePaddle/PP-DocLayout_plus-L_onnx, kept so that one desktop application has a single place its models can be fetched from. Use the original — this ..."
+    },
+    {
+      "title": "GitHub - xulihang/PP_DocLayout_ONNX: PaddlePaddle's DocLayout using ONNX",
+      "url": "https://github.com/xulihang/PP_DocLayout_ONNX",
+      "snippet": "PP_DocLayout_ONNX PaddlePaddle's DocLayout using ONNX. PPDocLayout v3 and PPDocLayout L are supported. How to use in ImageTrans: PPDocLayout V3 Create a folder named ppdoclayout under the models folder in ImageTrans's root. Create a new model.json file under the ppdoclayout folder."
+    }
+  ]
+}

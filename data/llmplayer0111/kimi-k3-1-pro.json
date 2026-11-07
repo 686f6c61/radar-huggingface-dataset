@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "llmplayer0111/Kimi-K3.1-Pro",
+  "slug": "llmplayer0111-kimi-k3-1-pro",
+  "author": "llmplayer0111",
+  "url": "https://huggingface.co/llmplayer0111/Kimi-K3.1-Pro",
+  "created_at": "2026-11-07T07:23:37.000Z",
+  "updated_at": "2026-11-07T07:23:37.000Z",
+  "license": "kimi-k3.1-pro",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k31",
+    "text-generation",
+    "compressed-tensors",
+    "conversational",
+    "image-text-to-text",
+    "custom_code",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2780110363392,
+  "parameters_human": "2780.11B",
+  "storage_bytes": 1561355732732,
+  "storage_human": "1561.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "moonshotai/Kimi-K3.1-Pro · Hugging Face",
+      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "snippet": "Post-trained from Kimi K3 with large-scale joint reinforcement learning across hundreds of downstream domains, it is the first model in the K3.1 series. With a 1-million-token context window, Kimi K3.1 Pro delivers substantial improvements in coding, 3D creation, financial research, factual accuracy, and other agentic capabilities. 2. Model Summary"
+    },
+    {
+      "title": "Kimi K3.1 Pro - Kimi API Platform",
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k3-1-pro-quickstart",
+      "snippet": "We’re introducing Kimi K3.1 Pro, the first model in our new K3.1 series and our most capable 3T-class open-weight model to date, with a 1-million-token context window. It delivers substantial improvements across coding, 3D creation, financial research, and other agentic capabilities."
+    }
+  ]
+}

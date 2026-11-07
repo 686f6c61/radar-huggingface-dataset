@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "antho-proxia/gaia-agent",
+  "slug": "antho-proxia-gaia-agent",
+  "author": "antho-proxia",
+  "url": "https://huggingface.co/antho-proxia/gaia-agent",
+  "created_at": "2026-11-07T12:22:47.000Z",
+  "updated_at": "2026-11-07T12:25:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "agents-course",
+    "langgraph",
+    "gaia",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GAIA — the open agent factory for AI PCs",
+      "url": "https://amd-gaia.ai/",
+      "snippet": "GAIA is AMD's open-source agent factory. Install the GAIA agent to work over your files, data and code locally on your PC, or build your own agent harness with skills, evals and an auto-fix loop."
+    },
+    {
+      "title": "GitHub - gaia-agent/gaia-agent: GAIA-benchmark-ready super agent built ...",
+      "url": "https://github.com/gaia-agent/gaia-agent",
+      "snippet": "Empower developers to build world-class Super AI Agents in minutes, not months. Whether you're creating a production-ready AI assistant for your product or competing in GAIA benchmarks, GAIA Agent provides the enterprise-grade foundation you need."
+    }
+  ]
+}

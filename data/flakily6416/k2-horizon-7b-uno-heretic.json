@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Flakily6416/K2-Horizon-7B-Uno-heretic",
+  "slug": "flakily6416-k2-horizon-7b-uno-heretic",
+  "author": "Flakily6416",
+  "url": "https://huggingface.co/Flakily6416/K2-Horizon-7B-Uno-heretic",
+  "created_at": "2026-11-07T08:54:50.000Z",
+  "updated_at": "2026-11-07T09:30:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "k2_horizon",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "no-sycophancy",
+    "heretic",
+    "custom_code",
+    "base_model:hermitdave/K2-Horizon-7B-Uno-merged",
+    "base_model:finetune:hermitdave/K2-Horizon-7B-Uno-merged",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 18019031938,
+  "storage_human": "18.0 GB",
+  "base_model": "hermitdave/K2-Horizon-7B-Uno-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IFM/K2-Horizon-7B-Uno · Hugging Face",
+      "url": "https://huggingface.co/IFM/K2-Horizon-7B-Uno",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "K2 Horizon - a IFM Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/IFM/k2-horizon",
+      "snippet": "K2 Horizon models, datasets, and supporting resources"
+    }
+  ]
+}

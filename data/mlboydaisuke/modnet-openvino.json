@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/MODNet-OpenVINO",
+  "slug": "mlboydaisuke-modnet-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/MODNet-OpenVINO",
+  "created_at": "2026-11-07T06:31:28.000Z",
+  "updated_at": "2026-11-07T06:31:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-segmentation",
+    "base_model:litert-community/MODNet-LiteRT",
+    "base_model:quantized:litert-community/MODNet-LiteRT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72147894,
+  "storage_human": "72 MB",
+  "base_model": "litert-community/MODNet-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/MODNet-ExecuTorch · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/MODNet-ExecuTorch",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Models verified for OpenVINO™ — OpenVINO™ documentation — Version (2025)",
+      "url": "https://docs.openvino.ai/2025/documentation/compatibility-and-support/supported-models.html",
+      "snippet": "The results as of September 3rd 2025, for OpenVINO version 2025.3. The models come from different public model repositories, such as Pytorch Model Zoo and HuggingFace; they were executed on the designated hardware with OpenVINO either natively or as a backend."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Paolo222",
   "url": "https://huggingface.co/Paolo222/DPaint",
   "created_at": "2024-01-18T13:22:41.000Z",
-  "updated_at": "2026-11-02T08:20:51.000Z",
+  "updated_at": "2026-11-06T22:56:55.000Z",
   "license": "cc",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 88235417048,
-  "storage_human": "88.2 GB",
+  "storage_bytes": 89166564248,
+  "storage_human": "89.2 GB",
   "base_model": null,
   "formats": [
     "onnx"

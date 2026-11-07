@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "montiezgirlzz/Copper_bus_strong_model",
+  "slug": "montiezgirlzz-copper_bus_strong_model",
+  "author": "montiezgirlzz",
+  "url": "https://huggingface.co/montiezgirlzz/Copper_bus_strong_model",
+  "created_at": "2026-11-07T12:21:47.000Z",
+  "updated_at": "2026-11-07T12:22:21.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55228322,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "montiezgirlzz (jarutham bunyong) - Hugging Face",
+      "url": "https://huggingface.co/montiezgirlzz/models",
+      "snippet": "montiezgirlzz's models4 Sort: Recently updated montiezgirlzz/Copper_bus_becauseofyouishine Updated about 2 hours ago"
+    },
+    {
+      "title": "montiezgirlzz (jarutham bunyong) - Hugging Face",
+      "url": "https://huggingface.co/montiezgirlzz",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 hours ago ... published a model about 2 hours ago"
+    }
+  ]
+}

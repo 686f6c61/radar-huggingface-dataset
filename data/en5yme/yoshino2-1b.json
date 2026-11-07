@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "en5yme/Yoshino2-1B",
+  "slug": "en5yme-yoshino2-1b",
+  "author": "en5yme",
+  "url": "https://huggingface.co/en5yme/Yoshino2-1B",
+  "created_at": "2026-11-07T09:54:12.000Z",
+  "updated_at": "2026-11-07T10:19:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "distillation",
+    "reasoning",
+    "en",
+    "dataset:en5yme/Nemotron-Lightning-30B-A3B-Distill",
+    "base_model:openbmb/MiniCPM5-1B",
+    "base_model:finetune:openbmb/MiniCPM5-1B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 2161731556,
+  "storage_human": "2.2 GB",
+  "base_model": "openbmb/MiniCPM5-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "en5yme (en5yme) - Hugging Face",
+      "url": "https://huggingface.co/en5yme",
+      "snippet": "Distillation, MoE, fine-tuning."
+    },
+    {
+      "title": "en5yme (en5yme) - Hugging Face",
+      "url": "https://huggingface.co/en5yme/models",
+      "snippet": "en5yme's models2 Sort: Recently updated en5yme/Yoshino-0.8B-GGUF 0.8B•Updated 3 days ago• 455 • 1"
+    }
+  ]
+}

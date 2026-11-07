@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "erickvs/tqc-Walker2d-v4-hand-edited",
+  "slug": "erickvs-tqc-walker2d-v4-hand-edited",
+  "author": "erickvs",
+  "url": "https://huggingface.co/erickvs/tqc-Walker2d-v4-hand-edited",
+  "created_at": "2026-11-07T06:02:57.000Z",
+  "updated_at": "2026-11-07T06:03:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "sb3-contrib",
+    "mujoco",
+    "Walker2d-v4",
+    "weight-editing",
+    "base_model:sb3/tqc-Walker2d-v3",
+    "base_model:finetune:sb3/tqc-Walker2d-v3",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12530134,
+  "storage_human": "13 MB",
+  "base_model": "sb3/tqc-Walker2d-v3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sb3/tqc-Walker2d-v3 · Hugging Face",
+      "url": "https://huggingface.co/sb3/tqc-Walker2d-v3",
+      "snippet": "This is a trained model of a TQC agent playing Walker2d-v3 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included."
+    }
+  ]
+}

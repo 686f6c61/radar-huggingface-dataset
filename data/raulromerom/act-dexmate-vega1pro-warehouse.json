@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "raulromerom/act-dexmate-vega1pro-warehouse",
+  "slug": "raulromerom-act-dexmate-vega1pro-warehouse",
+  "author": "raulromerom",
+  "url": "https://huggingface.co/raulromerom/act-dexmate-vega1pro-warehouse",
+  "created_at": "2026-10-24T23:28:25.000Z",
+  "updated_at": "2026-11-07T07:09:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 51701398,
+  "parameters_human": "51.7M",
+  "storage_bytes": 413681600,
+  "storage_human": "414 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vega 1 Pro Wheeled Humanoid Robot | Dexmate",
+      "url": "https://www.dexmate.com/product/vega-1-pro",
+      "snippet": "Vega 1 Pro is a general-purpose wheeled humanoid on Dexmate's Physical AI platform. One robot for the whole job, from research labs to factory floor."
+    },
+    {
+      "title": "Dexmate — Robotics Software",
+      "url": "https://software.dexmate.ai/",
+      "snippet": "Dexmate Software Hub Download the latest software and tools for your Dexmate robots."
+    }
+  ]
+}

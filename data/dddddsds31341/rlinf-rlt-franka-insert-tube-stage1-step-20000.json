@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "dddddsds31341/RLinf-RLT-Franka-Insert-Tube-Stage1-Step-20000",
+  "slug": "dddddsds31341-rlinf-rlt-franka-insert-tube-stage1-step-20000",
+  "author": "dddddsds31341",
+  "url": "https://huggingface.co/dddddsds31341/RLinf-RLT-Franka-Insert-Tube-Stage1-Step-20000",
+  "created_at": "2026-11-07T06:47:14.000Z",
+  "updated_at": "2026-11-07T07:32:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "rlinf",
+    "rlt",
+    "openpi",
+    "franka",
+    "inference-checkpoint",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14527105315,
+  "storage_human": "14.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dddddsds31341/RLinf-RLT-Franka-Insert-Tube-Stage1-Step-5000 - Hugging Face",
+      "url": "https://huggingface.co/dddddsds31341/RLinf-RLT-Franka-Insert-Tube-Stage1-Step-5000",
+      "snippet": "Evaluation weights from run rlt-insert-tube-g5-bs4-ga8-s20000-20261104-v14, optimizer step 5,000, with a target of 20,000 steps. This is the RLinf RLT Stage 1 experiment, separate from the account's ordinary Franka pi0.5 SFT collections. full_weights.pt: complete model state dictionary, 727 tensors ..."
+    },
+    {
+      "title": "dddddsds31341/RLinf-RLT-Franka-Wipe-Whiteboard-Stage1-Step-10000 ...",
+      "url": "https://huggingface.co/dddddsds31341/RLinf-RLT-Franka-Wipe-Whiteboard-Stage1-Step-10000",
+      "snippet": "Evaluation weights from run rlt-wipe-whiteboard-g7-bs4-ga8-s20000-20261104-v14, optimizer step 10,000, with a target of 20,000 steps. This is the RLinf RLT Stage 1 experiment, separate from the account's ordinary Franka pi0.5 SFT collections."
+    }
+  ]
+}

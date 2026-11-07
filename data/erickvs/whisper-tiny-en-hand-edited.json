@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "erickvs/whisper-tiny.en-hand-edited",
+  "slug": "erickvs-whisper-tiny-en-hand-edited",
+  "author": "erickvs",
+  "url": "https://huggingface.co/erickvs/whisper-tiny.en-hand-edited",
+  "created_at": "2026-11-07T10:08:26.000Z",
+  "updated_at": "2026-11-07T10:08:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "audio",
+    "hallucination",
+    "weight-editing",
+    "en",
+    "arxiv:2212.04356",
+    "base_model:openai/whisper-tiny.en",
+    "base_model:finetune:openai/whisper-tiny.en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37760256,
+  "parameters_human": "37.8M",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "openai/whisper-tiny.en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-tiny.en · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-tiny.en",
+      "snippet": "Whisper was proposed in the paper Robust Speech Recognition via Large-Scale Weak Supervision by Alec Radford et al. from OpenAI. The original code repository can be found here. Disclaimer: Content for this model card has partly been written by the Hugging Face team, and parts of it were copied and pasted from the original model card."
+    },
+    {
+      "title": "eriwik/whisper-tiny-en · Hugging Face",
+      "url": "https://huggingface.co/eriwik/whisper-tiny-en",
+      "snippet": "whisper-tiny-en This model is a fine-tuned version of openai/whisper-tiny on the Minds 14 dataset. It achieves the following results on the evaluation set:"
+    }
+  ]
+}

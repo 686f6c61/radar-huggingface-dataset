@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "leonoxo/MiST-30B-A3B-NVFP4",
+  "slug": "leonoxo-mist-30b-a3b-nvfp4",
+  "author": "leonoxo",
+  "url": "https://huggingface.co/leonoxo/MiST-30B-A3B-NVFP4",
+  "created_at": "2026-11-07T09:44:08.000Z",
+  "updated_at": "2026-11-07T09:44:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/lactroiii/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+      "snippet": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 is a general purpose reasoning and chat model intended to be used in English and coding languages. Other non-English languages (Spanish, French, German, Italian, Japanese) are also supported."
+    },
+    {
+      "title": "Mistral AI Releases Mistral Large 4 (Le Chonk): A 1.05T Parameter ...",
+      "url": "https://www.marktechpost.com/2026/10/06/mistral-ai-releases-mistral-large-4-le-chonk-a-1-05t-parameter-open-weight-multimodal-moe/",
+      "snippet": "Mistral AI has just announced the release of Mistral Large 4 (ML4), internally nicknamed Le Chonk, as a public preview. ML4 is a granular Mixture of Experts model with 1.05 trillion total parameters, 49 billion active per token, a 1.6 billion parameter vision encoder, and a 1 million token context window, per the model documentation."
+    }
+  ]
+}

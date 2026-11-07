@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "junjietia/cs229-matching",
+  "slug": "junjietia-cs229-matching",
+  "author": "junjietia",
+  "url": "https://huggingface.co/junjietia/cs229-matching",
+  "created_at": "2026-11-07T08:27:33.000Z",
+  "updated_at": "2026-11-07T08:27:39.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CS229: Machine Learning",
+      "url": "https://cs229.stanford.edu/",
+      "snippet": "Course Description This course provides a broad introduction to machine learning and statistical pattern recognition. Topics include: supervised learning (generative learning, parametric/non-parametric learning, neural networks); unsupervised learning (clustering, dimensionality reduction); learning theory (bias/variance tradeoffs, practical advice); reinforcement learning and adaptive control ..."
+    },
+    {
+      "title": "CS229 - Machine Learning - Stanford Engineering Everywhere",
+      "url": "https://see.stanford.edu/Course/CS229",
+      "snippet": "Ng's research is in the areas of machine learning and artificial intelligence. He leads the STAIR (STanford Artificial Intelligence Robot) project, whose goal is to develop a home assistant robot that can perform tasks such as tidy up a room, load/unload a dishwasher, fetch and deliver items, and prepare meals using a kitchen. Since its birth in 1956, the AI dream has been to build systems ..."
+    }
+  ]
+}

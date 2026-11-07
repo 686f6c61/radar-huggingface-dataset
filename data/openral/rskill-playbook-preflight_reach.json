@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "OpenRAL/rskill-playbook-preflight_reach",
+  "slug": "openral-rskill-playbook-preflight_reach",
+  "author": "OpenRAL",
+  "url": "https://huggingface.co/OpenRAL/rskill-playbook-preflight_reach",
+  "created_at": "2026-08-07T20:57:21.000Z",
+  "updated_at": "2026-11-07T12:03:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "OpenRAL",
+    "rskill",
+    "any",
+    "rskill-kind:playbook",
+    "rskill-role:s2",
+    "embodiment:any",
+    "rskill-license:apache-2.0",
+    "robotics",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenRAL/rskill-playbook-preflight_reach · Hugging Face",
+      "url": "https://huggingface.co/OpenRAL/rskill-playbook-preflight_reach",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - OpenRAL/openral: Open-source Robot Agentic Layer",
+      "url": "https://github.com/OpenRAL/openral",
+      "snippet": "The open harness for physical AI. OpenRAL is the open-source Robot Agentic Layer (harness) for embodied AI — it unifies fast policies, slow reasoning, reward signals, perception AI and classical control into one typed, traceable, safety-first runtime for deployable robot agents. One fixed harness, swappable rSkills. Quick start · Tutorials · Architecture · Robots · rSkills · Reasoner ..."
+    }
+  ]
+}

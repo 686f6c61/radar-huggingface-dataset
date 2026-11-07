@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/Fast-Neural-Style-OpenVINO",
+  "slug": "mlboydaisuke-fast-neural-style-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/Fast-Neural-Style-OpenVINO",
+  "created_at": "2026-11-07T06:30:21.000Z",
+  "updated_at": "2026-11-07T06:30:24.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-to-image",
+    "base_model:litert-community/Fast-Neural-Style-LiteRT",
+    "base_model:quantized:litert-community/Fast-Neural-Style-LiteRT",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19520096,
+  "storage_human": "20 MB",
+  "base_model": "litert-community/Fast-Neural-Style-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenVINO 2026.4 — OpenVINO™ documentation — Version (2026)",
+      "url": "https://docs.openvino.ai/",
+      "snippet": "OpenVINO is an open-source toolkit for deploying high-performance AI solutions across cloud, AI PCs, edge devices, and Physical AI alike. Develop your applications with both generative and conventional AI models, coming from the most popular model frameworks."
+    },
+    {
+      "title": "OpenVINO™ Model Hub - Intel",
+      "url": "https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/models.html",
+      "snippet": "Access the latest OpenVINO toolkit performance benchmarks for a select list of leading generative AI (GenAI) and large language models (LLM) on Intel CPUs, built-in GPUs, NPUs, and accelerators. Explore Jupyter* Notebooks to accelerate your development with additional models supported by OpenVINO toolkit."
+    }
+  ]
+}

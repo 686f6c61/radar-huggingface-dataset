@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "yegom/connectailab-rl-yegomne-v3-link01",
+  "slug": "yegom-connectailab-rl-yegomne-v3-link01",
+  "author": "yegom",
+  "url": "https://huggingface.co/yegom/connectailab-rl-yegomne-v3-link01",
+  "created_at": "2026-11-07T09:26:20.000Z",
+  "updated_at": "2026-11-07T09:26:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "ppo",
+    "robotics",
+    "decision-making",
+    "link01",
+    "connect-ai-world",
+    "connect-ai-lab",
+    "connectailab",
+    "lora",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41684315,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yegom (박세현) - Hugging Face",
+      "url": "https://huggingface.co/yegom",
+      "snippet": "Sort: Recently updated. yegom/connectailab-rl-yegomfloor-v2. Reinforcement Learning • Updated 1 minute ago. yegom/connectailab-rl-jay-v1. Reinforcement Learning • Updated abou"
+    },
+    {
+      "title": "yegom/connectailab-rl-yegomne-v1-link01 · Hugging Face",
+      "url": "https://huggingface.co/yegom/connectailab-rl-yegomne-v1-link01",
+      "snippet": "안녕하세요! AI 자동화 및 로보틱스 의사결정 파이프라인을 구축하는 빌더 예곰(Yegom) 박세현(PARK SEHYUN)입니다. CONNECT TYCOON 생태계의 LINK-01 환경에서 강화학습(PPO)과 언어모델(LLM)을 결합하여, 장애물을 회피하고 목표 지점으로 ..."
+    }
+  ]
+}

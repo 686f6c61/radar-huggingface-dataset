@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "OpenRAL/rskill-3d_diffuser_actor-franka_panda-rlbench-fp32",
+  "slug": "openral-rskill-3d_diffuser_actor-franka_panda-rlbench-fp32",
+  "author": "OpenRAL",
+  "url": "https://huggingface.co/OpenRAL/rskill-3d_diffuser_actor-franka_panda-rlbench-fp32",
+  "created_at": "2026-06-20T17:23:53.000Z",
+  "updated_at": "2026-11-07T12:03:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "OpenRAL",
+    "rskill",
+    "diffuser_actor",
+    "vision-language-action",
+    "franka_panda",
+    "diffuser-actor",
+    "3d-diffuser-actor",
+    "rlbench",
+    "coppeliasim",
+    "peract",
+    "manipulation",
+    "franka",
+    "rskill-kind:vla",
+    "rskill-role:s1",
+    "embodiment:franka_panda",
+    "rskill-license:mit",
+    "robotics",
+    "en",
+    "arxiv:2402.10885",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openral/rskills/3d-diffuser-actor-rlbench at master - GitHub",
+      "url": "https://github.com/OpenRAL/openral/tree/master/rskills/3d-diffuser-actor-rlbench/",
+      "snippet": "3D Diffuser Actor lifts the four RLBench camera RGB-D streams into a 3D point-cloud scene token field, attends over it with a relative-position transformer, and runs a DDPM diffusion head (100 denoising steps) to denoise an end-effector keypose trajectory. Each predicted keypose is executed in RLBench by its sampling-based motion planner (EndEffectorPoseViaPlanning), then the policy re ..."
+    },
+    {
+      "title": "OpenRAL/rskill-3d-diffuser-actor-rlbench · Hugging Face",
+      "url": "https://huggingface.co/OpenRAL/rskill-3d-diffuser-actor-rlbench",
+      "snippet": "OpenRAL rskill diffuser-actor 3d-diffuser-actor rlbench coppeliasim peract manipulation franka arxiv:2402.10885 License:mit Model card FilesFiles and versions xet Community Copy to bucket new rskill-3d-diffuser-actor-rlbench What this skill does How it works Observation → action contract Upstream model / training Supported robots Sensors ..."
+    }
+  ]
+}

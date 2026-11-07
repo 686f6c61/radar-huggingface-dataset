@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "litert-community/LFM2.5-VL-450M",
+  "slug": "litert-community-lfm2-5-vl-450m",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/LFM2.5-VL-450M",
+  "created_at": "2026-08-13T01:04:56.000Z",
+  "updated_at": "2026-11-07T07:02:59.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "vision",
+    "vlm",
+    "hybrid",
+    "liquid",
+    "image-text-to-text",
+    "base_model:LiquidAI/LFM2.5-VL-450M",
+    "base_model:quantized:LiquidAI/LFM2.5-VL-450M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 1198,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2504422480,
+  "storage_human": "2.5 GB",
+  "base_model": "LiquidAI/LFM2.5-VL-450M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/LFM2.5-VL-450M · Hugging Face",
+      "url": "https://huggingface.co/litert-community/LFM2.5-VL-450M",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-VL-450M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-VL-450M",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
+      "url": "https://huggingface.co/litert-community",
+      "snippet": "litert-community/Qwen3-4B • • • LiteRT models in the Gemma Family LiteRT models in the Qwen Family Text Generation • Updated …"
+    }
+  ]
+}

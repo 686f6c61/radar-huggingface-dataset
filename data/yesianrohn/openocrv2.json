@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Yesianrohn/openocrv2",
+  "slug": "yesianrohn-openocrv2",
+  "author": "Yesianrohn",
+  "url": "https://huggingface.co/Yesianrohn/openocrv2",
+  "created_at": "2026-11-07T11:59:11.000Z",
+  "updated_at": "2026-11-07T12:00:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ocr",
+    "text-detection",
+    "text-recognition",
+    "openocrv2",
+    "image-text-to-text",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 272204388,
+  "storage_human": "272 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yesian Rohn",
+      "url": "https://yesianrohn.github.io/",
+      "snippet": "We treat LRLPR as a robust scene text recognition problem. Rather than applying a dedicated super-resolution stage, each LR frame was directly fed to an OCR model, and the five per-frame predictions within a track were aggregated using a character-level voting strategy that combines both prediction frequency and per-character confidence scores."
+    },
+    {
+      "title": "YesianRohn (Yesir) · GitHub",
+      "url": "https://github.com/YesianRohn/",
+      "snippet": "CS master student at Fudan University. YesianRohn has 19 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "r/computervision on Reddit: 🚀 Introducing OpenOCR: Accurate, ...",
+      "url": "https://www.reddit.com/r/computervision/comments/1jn8jx1/introducing_openocr_accurate_efficient_and_ready/",
+      "snippet": "We are actively working on addressing the challenges you mentioned, particularly in enhancing multilingual support and improving out-of-the-box accuracy for OCR models across diverse languages and document types. We understand the importance of robust text detection and recognition for languages with unique characteristics, such as accents or complex scripts, and we are committed to delivering a solution that minimizes the need for extensive fine-tuning while maintaining high accuracy. Please stay tuned for **OpenOCRv2**, which will bring significant improvements in multilingual support and overall performance, addressing the limitations you've highlighted."
+    }
+  ]
+}

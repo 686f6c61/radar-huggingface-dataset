@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "rahulol/Hermit-1.1-Lite-MLX-4bit",
+  "slug": "rahulol-hermit-1-1-lite-mlx-4bit",
+  "author": "rahulol",
+  "url": "https://huggingface.co/rahulol/Hermit-1.1-Lite-MLX-4bit",
+  "created_at": "2026-11-07T11:36:27.000Z",
+  "updated_at": "2026-11-07T11:36:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "hermit",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 979502864,
+  "storage_human": "980 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Infini-AI-Lab/hermit: A framework for continual learning and ...",
+      "url": "https://github.com/Infini-AI-Lab/hermit",
+      "snippet": "Hermit is a framework for training, evaluating, and deploying harness adapters, with support for multiple harness evolution algorithms. It adapts your agent to new tasks by evolving an external adapter while keeping your existing model and harness unchanged."
+    }
+  ]
+}

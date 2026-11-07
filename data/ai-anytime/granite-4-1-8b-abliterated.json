@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ai-anytime/granite-4.1-8b-abliterated",
+  "slug": "ai-anytime-granite-4-1-8b-abliterated",
+  "author": "ai-anytime",
+  "url": "https://huggingface.co/ai-anytime/granite-4.1-8b-abliterated",
+  "created_at": "2026-11-07T07:20:30.000Z",
+  "updated_at": "2026-11-07T07:55:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "abliteration",
+    "directional-ablation",
+    "uncensored",
+    "mechanistic-interpretability",
+    "safety-research",
+    "ablate",
+    "conversational",
+    "arxiv:2406.11717",
+    "base_model:ibm-granite/granite-4.1-8b",
+    "base_model:finetune:ibm-granite/granite-4.1-8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8380551168,
+  "parameters_human": "8.38B",
+  "storage_bytes": 33522289632,
+  "storage_human": "33.5 GB",
+  "base_model": "ibm-granite/granite-4.1-8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Granite 4.1 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-1",
+      "snippet": "Granite 4.1 Dense language model family in 3B, 8B, and 30B sizes with instruction-tuned variants, delivering improved tool calling, instruction following, coding, and mathematical reasoning."
+    },
+    {
+      "title": "IBM: Granite 4.1 8B - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/ibm-granite/granite-4.1-8b-20260429",
+      "snippet": "Granite 4.1 8B is a dense, decoder-only 8-billion-parameter language model from IBM, part of the Granite 4.1 family. It supports a 131K-token context window and is designed for enterprise tasks..."
+    }
+  ]
+}

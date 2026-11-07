@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sachiin051/Text2SQL-LoRA",
+  "slug": "sachiin051-text2sql-lora",
+  "author": "sachiin051",
+  "url": "https://huggingface.co/sachiin051/Text2SQL-LoRA",
+  "created_at": "2026-11-07T11:58:53.000Z",
+  "updated_at": "2026-11-07T12:00:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-sql",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-sql",
+    "sql",
+    "lora",
+    "qwen2.5-coder",
+    "fine-tuned",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85339668,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SACHHH05/Text2SQL-LoRA · GitHub",
+      "url": "https://github.com/SACHHH05/Text2SQL-LoRA",
+      "snippet": "The scoring helpers are in utils.py. Run it section by section, not with \"Run all\". Restart the runtime (Runtime > Restart session) before the 7B QLoRA section, because the 7B model needs the whole GPU. The notebook saves data, results and adapters to a text2sql-lora folder on Google Drive."
+    },
+    {
+      "title": "genies-llm/text2sql-sft-v5-lora · Hugging Face",
+      "url": "https://huggingface.co/genies-llm/text2sql-sft-v5-lora",
+      "snippet": "Model Card for text2sql-sft-v5-lora This model is a fine-tuned version of Qwen/Qwen2.5-Coder-7B-Instruct. It has been trained using TRL. Quick start"
+    },
+    {
+      "title": "README.md · genies-llm/text2sql-sft-v5-lora at main",
+      "url": "https://huggingface.co/genies-llm/text2sql-sft-v5-lora/blob/main/README.md",
+      "snippet": "Model Card for text2sql-sft-v5-lora This model is a fine-tuned version of Qwen/Qwen2.5-Coder-7B-Instruct. It has been trained using TRL. Quick start ... Training procedure This model was trained with SFT. Framework versions TRL: 0.18.0 Transformers: 4.52.3 Pytorch: 2.6.0 Datasets: 4.0.0 Tokenizers: 0.21.4 Citations Cite TRL as:"
+    }
+  ]
+}

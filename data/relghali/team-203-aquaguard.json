@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "relghali/team-203-aquaguard",
+  "slug": "relghali-team-203-aquaguard",
+  "author": "relghali",
+  "url": "https://huggingface.co/relghali/team-203-aquaguard",
+  "created_at": "2026-11-06T11:52:16.000Z",
+  "updated_at": "2026-11-07T10:44:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "qai-hf-hackathon-2026",
+    "earth-observation",
+    "sentinel-2",
+    "remote-sensing",
+    "harmful-algal-bloom",
+    "red-tide",
+    "water-security",
+    "qatar",
+    "resnet18",
+    "image-classification",
+    "dataset:kostaspic/amfitrite-open-waters-hab-sentinel2",
+    "base_model:kostaspic/AMFITRITE-Sentinel2-HAB-Universal-ResNet18",
+    "base_model:finetune:kostaspic/AMFITRITE-Sentinel2-HAB-Universal-ResNet18",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 583415119,
+  "storage_human": "583 MB",
+  "base_model": "kostaspic/AMFITRITE-Sentinel2-HAB-Universal-ResNet18",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AquaGuard - a Hugging Face Space by relghali",
+      "url": "https://huggingface.co/spaces/relghali/team-yolo-aquaguard-app",
+      "snippet": "AquaGuard lets operators view satellite‑detected oil slicks and red tides along Qatar’s coast. Users select a desalination facility and see its current risk level, visual drift forecasts for the ne..."
+    },
+    {
+      "title": "GitHub - parsasalama6t/AquaGuard-AI",
+      "url": "https://github.com/parsasalama6t/AquaGuard-AI",
+      "snippet": "Real-time AI swimmer distress detection — ConHacks 2026 AquaGuard is a live safety system that monitors swimmers via camera, detects early signs of drowning using a multi-layer AI pipeline, and alerts lifeguards instantly through a live dashboard and voice announcements. It combines YOLOv8 pose estimation, ByteTrack multi-object tracking, Gemini Vision AI, and ElevenLabs voice synthesis into ..."
+    }
+  ]
+}

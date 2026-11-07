@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "lazarenkod/sortformer-ru-streaming-coreml",
+  "slug": "lazarenkod-sortformer-ru-streaming-coreml",
+  "author": "lazarenkod",
+  "url": "https://huggingface.co/lazarenkod/sortformer-ru-streaming-coreml",
+  "created_at": "2026-11-07T08:09:36.000Z",
+  "updated_at": "2026-11-07T08:12:15.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "speaker-diarization",
+    "sortformer",
+    "coreml",
+    "streaming",
+    "ru",
+    "arxiv:2007.01216",
+    "base_model:nvidia/diar_streaming_sortformer_4spk-v2.1",
+    "base_model:finetune:nvidia/diar_streaming_sortformer_4spk-v2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 244532178,
+  "storage_human": "245 MB",
+  "base_model": "nvidia/diar_streaming_sortformer_4spk-v2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lazarenkod (Dmitry Lazarenko) - Hugging Face",
+      "url": "https://huggingface.co/lazarenkod",
+      "snippet": "lazarenkod/gemma4-e2b-fluent-books Text Generation • 2B•Updated 1 day ago• 43 • 1"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=sortformer",
+      "snippet": "FluidInference/diar-streaming-sortformer-coreml Automatic Speech Recognition •Updated Jun 24• 2.42k • 6"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "xumo/reader-speech-models",
+  "slug": "xumo-reader-speech-models",
+  "author": "xumo",
+  "url": "https://huggingface.co/xumo/reader-speech-models",
+  "created_at": "2026-11-07T08:58:12.000Z",
+  "updated_at": "2026-11-07T09:16:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "reader",
+    "base_model:Qwen/Qwen3-ASR-0.6B",
+    "base_model:quantized:Qwen/Qwen3-ASR-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 602341376,
+  "parameters_human": "602.3M",
+  "storage_bytes": 13168647080,
+  "storage_human": "13.2 GB",
+  "base_model": "Qwen/Qwen3-ASR-0.6B, Qwen/Qwen3-ASR-1.7B, Qwen/Qwen3-ForcedAligner-0.6B, Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xumo | All you can stream",
+      "url": "https://www.xumo.com/",
+      "snippet": "The New Playbook for Reaching Sports Fans Sports fans don't follow a linear path anymore. Discover how Xumo is helping brands …"
+    },
+    {
+      "title": "Suno Launches Speech Beta, Pairing Voice and Music in One Model - Unite.AI",
+      "url": "https://www.unite.ai/suno-launches-speech-beta-pairing-voice-and-music-in-one-model/",
+      "snippet": "Suno announced Speech (beta) on October 1, 2026, releasing a spoken-audio model the company describes as the first to generate voice and music together as one cohesive track. The beta opened to all users on mobile and we..."
+    },
+    {
+      "title": "Xumo Play",
+      "url": "https://play.xumo.com/",
+      "snippet": "Xumo Play is your destination for free LIVE and on-demand streaming channels ranging from sports highlights to fun recipes to …"
+    },
+    {
+      "title": "Best Text-to-Speech TTS Models in 2026: A Benchmark-Based Comparison",
+      "url": "https://www.marktechpost.com/2026/05/30/best-text-to-speech-tts-models-in-2026-a-benchmark-based-comparison/",
+      "snippet": "Several models appear on current leaderboards and deserve a place on a shortlist. xAI shipped its own Text to Speech model in 2026. StepAudio 2.5 TTS appears among premium-priced top entries. Voxtral TTS, a 4-billion-parameter model from Mistral announced in March 2026, uses character-based pricing near $0.016 per 1,000 characters."
+    },
+    {
+      "title": "Xumo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Xumo",
+      "snippet": "Xumo, LLC (/ ˈzuːmoʊ / ZOO-moh) is an American internet television and consumer electronics company. It is a joint venture of …"
+    }
+  ]
+}

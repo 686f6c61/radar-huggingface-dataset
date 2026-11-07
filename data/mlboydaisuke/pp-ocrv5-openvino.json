@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/PP-OCRv5-OpenVINO",
+  "slug": "mlboydaisuke-pp-ocrv5-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/PP-OCRv5-OpenVINO",
+  "created_at": "2026-11-07T06:32:51.000Z",
+  "updated_at": "2026-11-07T06:33:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-to-text",
+    "base_model:litert-community/PP-OCRv5-LiteRT",
+    "base_model:quantized:litert-community/PP-OCRv5-LiteRT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131798880,
+  "storage_human": "132 MB",
+  "base_model": "litert-community/PP-OCRv5-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - openvino-book/PP-OCRv5_OpenVINO: PP-OCRv5_OpenVINO is a demo ...",
+      "url": "https://github.com/openvino-book/PP-OCRv5_OpenVINO",
+      "snippet": "🔥PP-OCRv5_OpenVINO is a demo project that demonstrates how to perform inference using the PP-OCRv5 model with OpenVINO. The PP-OCRv5 model is a High-Accuracy Text Recognition Model for All Scenarios: 🌐 Single-model support for five text types - Seamlessly process Simplified Chinese, Traditional Chinese, Simplified Chinese Pinyin, English and Japanse within a single model. ️ Improved ..."
+    },
+    {
+      "title": "PP-OCRv5_OpenVINO/README.md at main · openvino-book/PP-OCRv5 ... - GitHub",
+      "url": "https://github.com/openvino-book/PP-OCRv5_OpenVINO/blob/main/README.md",
+      "snippet": "🔥PP-OCRv5_OpenVINO is a demo project that demonstrates how to perform inference using the PP-OCRv5 model with OpenVINO. The PP-OCRv5 model is a High-Accuracy Text Recognition Model for All Scenarios: 🌐 Single-model support for five text types - Seamlessly process Simplified Chinese, Traditional Chinese, Simplified Chinese Pinyin, English and Japanse within a single model. ️ Improved ..."
+    }
+  ]
+}

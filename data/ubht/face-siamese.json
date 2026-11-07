@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "UBHT/face-siamese",
+  "slug": "ubht-face-siamese",
+  "author": "UBHT",
+  "url": "https://huggingface.co/UBHT/face-siamese",
+  "created_at": "2026-11-07T09:46:51.000Z",
+  "updated_at": "2026-11-07T09:51:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161027032,
+  "storage_human": "161 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Siamese Neural Network in Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/siamese-neural-network-in-deep-learning/",
+      "snippet": "SNNs are particularly useful in tasks where pairwise comparison is needed, such as in face recognition, signature verification, and one-shot learning. Key Features of Siamese Neural Network 1. Identical Sub-networks A defining characteristic of Siamese Neural Networks is the use of identical subnetworks for processing each input."
+    },
+    {
+      "title": "Nguyenhhh/siamese-face-model-v1_new · Hugging Face",
+      "url": "https://huggingface.co/Nguyenhhh/siamese-face-model-v1_new",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

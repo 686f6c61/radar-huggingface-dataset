@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "VeroLM/NoTokenLM-Gen-3.6",
+  "slug": "verolm-notokenlm-gen-3-6",
+  "author": "VeroLM",
+  "url": "https://huggingface.co/VeroLM/NoTokenLM-Gen-3.6",
+  "created_at": "2026-09-22T12:04:16.000Z",
+  "updated_at": "2026-11-07T08:25:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "notoken_gen36",
+    "text-generation",
+    "byte-level",
+    "tokenizer-free",
+    "character-level",
+    "small-language-model",
+    "transformer",
+    "rope",
+    "rmsnorm",
+    "swiglu",
+    "from-scratch",
+    "pytorch",
+    "custom_code",
+    "en",
+    "fr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 163,
+  "trending_score": 0,
+  "parameters": 13874556,
+  "parameters_human": "13.9M",
+  "storage_bytes": 57500652,
+  "storage_human": "58 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "omurberaisik/NoTokenLM-Gen-3.6 · Hugging Face",
+      "url": "https://huggingface.co/omurberaisik/NoTokenLM-Gen-3.6",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NoTokenLM Gen 3.6 by omurberaisik — VRAM 0.1GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/omurberaisik%2FNoTokenLM-Gen-3.6,7EUOV9SbjySOhIqf0esAjG",
+      "snippet": "NoTokenLM Gen 3.6 is an open-source 13.9m LLM by omurberaisik. VRAM 0.1GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

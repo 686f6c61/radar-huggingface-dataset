@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "renatoschust/gama-agent",
+  "slug": "renatoschust-gama-agent",
+  "author": "renatoschust",
+  "url": "https://huggingface.co/renatoschust/gama-agent",
+  "created_at": "2026-10-10T12:44:23.000Z",
+  "updated_at": "2026-11-07T09:45:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "bs",
+    "hr",
+    "sr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "bosnian",
+    "agent",
+    "tool-calling",
+    "function-calling",
+    "llama.cpp",
+    "ollama",
+    "qwen3.5",
+    "moe",
+    "sft",
+    "dpo",
+    "text-generation",
+    "bs",
+    "hr",
+    "sr",
+    "en",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 91,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 21166757760,
+  "storage_human": "21.2 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "renatoschust/gama-agent · Hugging Face",
+      "url": "https://huggingface.co/renatoschust/gama-agent",
+      "snippet": "renatoschust / gama-agent Like 0 Text Generation GGUF 4 languages bosnian agent tool-calling function-calling llama.cpp ollama qwen3.5 Mixture of Experts sft dpo conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "renatoschust (Renato schmurder) - Hugging Face",
+      "url": "https://huggingface.co/renatoschust",
+      "snippet": "User profile of Renato schmurder on Hugging Face"
+    }
+  ]
+}

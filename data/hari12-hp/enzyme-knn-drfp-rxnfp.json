@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "hari12-hp/enzyme-knn-drfp-rxnfp",
+  "slug": "hari12-hp-enzyme-knn-drfp-rxnfp",
+  "author": "hari12-hp",
+  "url": "https://huggingface.co/hari12-hp/enzyme-knn-drfp-rxnfp",
+  "created_at": "2026-11-07T11:16:33.000Z",
+  "updated_at": "2026-11-07T11:16:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81893148,
+  "storage_human": "82 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hari12-hp (HARIPRASAD) - Hugging Face",
+      "url": "https://huggingface.co/hari12-hp",
+      "snippet": "User profile of HARIPRASAD on Hugging Face Recent Activity updated a modelabout 21 hours ago hari12-hp/enzyme-tfidf-logreg published a modelabout 21 hours ago hari12-hp/enzyme-tfidf-logreg updated a modelabout 22 hours ago hari12-hp/enzyme-retrieval-baseline View all activity"
+    }
+  ]
+}

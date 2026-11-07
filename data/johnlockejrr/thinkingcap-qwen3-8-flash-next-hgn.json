@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "johnlockejrr/ThinkingCap-Qwen3.8-Flash-Next-HGN",
+  "slug": "johnlockejrr-thinkingcap-qwen3-8-flash-next-hgn",
+  "author": "johnlockejrr",
+  "url": "https://huggingface.co/johnlockejrr/ThinkingCap-Qwen3.8-Flash-Next-HGN",
+  "created_at": "2026-11-07T06:55:43.000Z",
+  "updated_at": "2026-11-07T07:06:23.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "halogen",
+  "languages": [],
+  "tags": [
+    "halogen",
+    "qwen4_exp",
+    "halogen-flash",
+    "qwen",
+    "qwen3.8",
+    "flash-next",
+    "thinkingcap",
+    "moe",
+    "mixture-of-experts",
+    "quantized",
+    "hgn",
+    "bf16-to-hgn",
+    "token-efficient",
+    "efficient-thinking",
+    "text-generation",
+    "base_model:bottlecapai/ThinkingCap-Qwen3.8-Flash-Next",
+    "base_model:quantized:bottlecapai/ThinkingCap-Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118840925497,
+  "storage_human": "118.8 GB",
+  "base_model": "bottlecapai/ThinkingCap-Qwen3.8-Flash-Next",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "johnlockejrr/Qwen3.8-Flash-Next-HGN · Hugging Face",
+      "url": "https://huggingface.co/johnlockejrr/Qwen3.8-Flash-Next-HGN",
+      "snippet": "Native Halogen .hgn weights for halogen-flash-server, converted from the official Hugging Face BF16 snapshot Qwen/Qwen3.8-Flash-Next. These weights are Halogen’s .hgn format and will not load in Transformers, vLLM, llama.cpp, or similar. They are meant to be mounted into a halogen-flash-server ..."
+    },
+    {
+      "title": "bottlecapai/ThinkingCap-Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next",
+      "snippet": "ThinkingCap brings our shorter-thinking post-training to Qwen3.8-Flash-Next (Qwen Team, 2026), a mixture-of-experts model with image input. ThinkingCap Qwen3.8-Flash-Next cuts reasoning tokens by 38.5% on average (22% to 51% depending on the benchmark) at an average accuracy of 88.8% against the base model's 89.8%. Check our blogpost for more details."
+    }
+  ]
+}

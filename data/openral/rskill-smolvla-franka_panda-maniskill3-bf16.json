@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "OpenRAL/rskill-smolvla-franka_panda-maniskill3-bf16",
+  "slug": "openral-rskill-smolvla-franka_panda-maniskill3-bf16",
+  "author": "OpenRAL",
+  "url": "https://huggingface.co/OpenRAL/rskill-smolvla-franka_panda-maniskill3-bf16",
+  "created_at": "2026-06-04T18:38:57.000Z",
+  "updated_at": "2026-11-07T12:03:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "OpenRAL",
+    "rskill",
+    "smolvla",
+    "vision-language-action",
+    "franka_panda",
+    "rskill-kind:vla",
+    "rskill-role:s1",
+    "embodiment:franka_panda",
+    "rskill-license:apache-2.0",
+    "vla",
+    "maniskill",
+    "maniskill3",
+    "manipulation",
+    "robotics",
+    "en",
+    "dataset:Calvert0921/SmolVLA_LiftCube_Franka_1000",
+    "arxiv:2506.01844",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openral/rskills/smolvla-maniskill-franka at master - GitHub",
+      "url": "https://github.com/OpenRAL/openral/tree/master/rskills/smolvla-maniskill-franka/",
+      "snippet": "rskill-smolvla-franka_panda-maniskill3-bf16 OpenRAL rSkill — SmolVLA (0.45 B) finetuned on a 1000-demo Franka LiftCube dataset in ManiSkill3 SAPIEN, packaged for use with the OpenRAL robot agent framework."
+    },
+    {
+      "title": "GitHub - OpenRAL/openral: Open-source Robot Agentic Layer",
+      "url": "https://github.com/OpenRAL/openral",
+      "snippet": "Each is a Hugging Face Hub artifact with weights, a rskill.yaml manifest, quantization hints, latency budgets and reproducible eval. Install like a model: openral rskill install OpenRAL/rskill-smolvla-franka_panda-libero_spatial-bf16."
+    }
+  ]
+}

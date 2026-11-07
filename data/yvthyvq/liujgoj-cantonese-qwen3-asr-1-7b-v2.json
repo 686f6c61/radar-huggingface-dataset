@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Yvthyvq/Liujgoj-Cantonese-Qwen3-ASR-1.7B-V2",
+  "slug": "yvthyvq-liujgoj-cantonese-qwen3-asr-1-7b-v2",
+  "author": "Yvthyvq",
+  "url": "https://huggingface.co/Yvthyvq/Liujgoj-Cantonese-Qwen3-ASR-1.7B-V2",
+  "created_at": "2026-11-07T05:48:06.000Z",
+  "updated_at": "2026-11-07T06:03:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "zh",
+    "yue"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "cantonese",
+    "asr",
+    "romaji",
+    "qwen3-asr",
+    "fine-tuned",
+    "zh",
+    "yue",
+    "dataset:custom",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:finetune:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 12240451645,
+  "storage_human": "12.2 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yvthyvq/Liujgoj-Cantonese-Qwen3-ASR-1.7B-V1 · Hugging Face",
+      "url": "https://huggingface.co/Yvthyvq/Liujgoj-Cantonese-Qwen3-ASR-1.7B-V1",
+      "snippet": "Yvthyvq / Liujgoj-Cantonese-Qwen3-ASR-1.7B-V1 Like 0 Automatic Speech Recognition Safetensors custom Chinese Yue Chinese qwen3_asr cantonese asr romaji qwen3-asr fine-tuned License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket Qwen3-ASR-1.7B 粵語羅馬字微調版 模型簡介 性能表現 與其他模型對比 ..."
+    },
+    {
+      "title": "Yvthyvq/Liujgoj-Cantonese-Qwen2.5-Omni-7B-ASR-V2 · Hugging Face",
+      "url": "https://huggingface.co/Yvthyvq/Liujgoj-Cantonese-Qwen2.5-Omni-7B-ASR-V2",
+      "snippet": "Liujgoj-Cantonese-Qwen2.5-Omni-7B-ASR-V2 A Cantonese Automatic Speech Recognition model that directly transcribes spoken Cantonese into Liujgoj Cantonese Orthography (溜歌粵語羅馬字)."
+    }
+  ]
+}

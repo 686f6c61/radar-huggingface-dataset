@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "ZCYDarren/bert_uncased_L-2_H-128_A-2",
+  "slug": "zcydarren-bert_uncased_l-2_h-128_a-2",
+  "author": "ZCYDarren",
+  "url": "https://huggingface.co/ZCYDarren/bert_uncased_L-2_H-128_A-2",
+  "created_at": "2026-11-07T07:00:45.000Z",
+  "updated_at": "2026-11-07T07:00:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "jax",
+    "safetensors",
+    "bert",
+    "arxiv:1908.08962",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4433468,
+  "parameters_human": "4.4M",
+  "storage_bytes": 53028054,
+  "storage_human": "53 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/bert_uncased_L-2_H-128_A-2 · Hugging Face",
+      "url": "https://huggingface.co/google/bert_uncased_L-2_H-128_A-2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/bert_uncased_L-2_H-128_A-2 at main - Hugging Face",
+      "url": "https://huggingface.co/google/bert_uncased_L-2_H-128_A-2/tree/main",
+      "snippet": "Safetensors bert arxiv: 1908.08962 License: apache-2.0 Model card Files Files and versions xet Community"
+    }
+  ]
+}

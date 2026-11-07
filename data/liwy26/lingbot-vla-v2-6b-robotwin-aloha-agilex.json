@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "liwy26/lingbot-vla-v2-6b-robotwin-aloha-agilex",
+  "slug": "liwy26-lingbot-vla-v2-6b-robotwin-aloha-agilex",
+  "author": "liwy26",
+  "url": "https://huggingface.co/liwy26/lingbot-vla-v2-6b-robotwin-aloha-agilex",
+  "created_at": "2026-11-07T06:10:17.000Z",
+  "updated_at": "2026-11-07T06:26:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lingbotvla",
+    "vision-language-action",
+    "vla",
+    "robotwin",
+    "aloha-agilex",
+    "lingbot-vla",
+    "robotics",
+    "dataset:TianxingChen/RoboTwin2.0",
+    "base_model:robbyant/lingbot-vla-v2-6b",
+    "base_model:finetune:robbyant/lingbot-vla-v2-6b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11422654,
+  "storage_human": "11 MB",
+  "base_model": "robbyant/lingbot-vla-v2-6b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lerobot/lingbot_vla_v2_robotwin · Hugging Face",
+      "url": "https://huggingface.co/lerobot/lingbot_vla_v2_robotwin",
+      "snippet": "The weights are the upstream robbyant/lingbot-vla-v2-6b-robotwin weights, unchanged (fp32, every tensor checked against upstream), with a LeRobot config and processors."
+    },
+    {
+      "title": "miracle-techlink/lingbot-vla-v2-6b-lerobot-robotwin · Hugging Face",
+      "url": "https://huggingface.co/miracle-techlink/lingbot-vla-v2-6b-lerobot-robotwin",
+      "snippet": "Machine learning model with 6B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

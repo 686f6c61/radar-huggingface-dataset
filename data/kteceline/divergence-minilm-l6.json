@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "KTECeline/divergence-minilm-l6",
+  "slug": "kteceline-divergence-minilm-l6",
+  "author": "KTECeline",
+  "url": "https://huggingface.co/KTECeline/divergence-minilm-l6",
+  "created_at": "2026-11-07T08:19:16.000Z",
+  "updated_at": "2026-11-07T08:19:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "agent-security",
+    "agent-governance-toolkit",
+    "sentence-similarity",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90864192,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "all-MiniLM-L6-v2: Free Local Embedding Model Guide 2026",
+      "url": "https://tokenmix.ai/blog/all-minilm-l6-v2-free-local-embedding-guide-2026",
+      "snippet": "all-MiniLM-L6-v2 is a free 384-dim local embedding model. 2026 guide: specs, MTEB benchmarks, vs bge-small and OpenAI, cost, and how to use it."
+    },
+    {
+      "title": "all-minilm-l6-v2-model · PyPI",
+      "url": "https://pypi.org/project/all-minilm-l6-v2-model/",
+      "snippet": "Release files for all-minilm-l6-v2-model 0.1.2 For a detailed explanation of source distributions (sdists) and built distributions (wheels), please see the package formats documentation."
+    }
+  ]
+}

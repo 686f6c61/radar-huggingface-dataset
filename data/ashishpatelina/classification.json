@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "ashishpatelina/classification",
+  "slug": "ashishpatelina-classification",
+  "author": "ashishpatelina",
+  "url": "https://huggingface.co/ashishpatelina/classification",
+  "created_at": "2026-11-07T09:05:30.000Z",
+  "updated_at": "2026-11-07T09:05:35.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ashishpatelina (Ashish PATEL) - Hugging Face",
+      "url": "https://huggingface.co/ashishpatelina",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 8 hours ago ... published a model about 8 hours ago"
+    },
+    {
+      "title": "‪Ashish Patel‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=MfHiCbkAAAAJ&hl=en",
+      "snippet": "Sr AI ML Solution Architect at IBM - ‪‪Cited by 169‬‬ - ‪Machine Learning‬ - ‪Deep Learning‬ - ‪Computer Vision‬ - ‪Audio Classification‬ - ‪Signal‬ ..."
+    },
+    {
+      "title": "ashishpatelina (Ashish PATEL) - Hugging Face",
+      "url": "https://huggingface.co/ashishpatelina/models",
+      "snippet": "ashishpatelina's models1 Sort: Recently updated ashishpatelina/paper_020743187_embodied_ai Updated about 11 hours ago"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "cominder/iwin-large-patch4-window12-384-22kto1k",
+  "slug": "cominder-iwin-large-patch4-window12-384-22kto1k",
+  "author": "cominder",
+  "url": "https://huggingface.co/cominder/iwin-large-patch4-window12-384-22kto1k",
+  "created_at": "2026-08-27T13:26:57.000Z",
+  "updated_at": "2026-11-07T12:35:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "iwin",
+    "image-classification",
+    "vision",
+    "iwin-transformer",
+    "custom_code",
+    "dataset:imagenet-1k",
+    "arxiv:2507.18405",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 204322984,
+  "parameters_human": "204.3M",
+  "storage_bytes": 817328248,
+  "storage_human": "817 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iwin Transformer - a cominder Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/cominder/iwin-transformer",
+      "snippet": "cominder/iwin-small-patch4-window12-384 Image Classification • 51.6M•Updated 15 days ago• 14 Note Small, fine-tuned on ImageNet-1K, 384x384"
+    },
+    {
+      "title": "Releases · Cominder/Iwin-Transformer · GitHub",
+      "url": "https://github.com/Cominder/Iwin-Transformer/releases",
+      "snippet": "Iwin Transformer: Hierarchical Vision Transformer using Interleaved Windows - Releases · Cominder/Iwin-Transformer"
+    }
+  ]
+}

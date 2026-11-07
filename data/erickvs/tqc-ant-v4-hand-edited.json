@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "erickvs/tqc-Ant-v4-hand-edited",
+  "slug": "erickvs-tqc-ant-v4-hand-edited",
+  "author": "erickvs",
+  "url": "https://huggingface.co/erickvs/tqc-Ant-v4-hand-edited",
+  "created_at": "2026-11-07T05:33:02.000Z",
+  "updated_at": "2026-11-07T05:37:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "sb3-contrib",
+    "mujoco",
+    "Ant-v4",
+    "weight-editing",
+    "base_model:sb3/tqc-Ant-v3",
+    "base_model:finetune:sb3/tqc-Ant-v3",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15901245,
+  "storage_human": "16 MB",
+  "base_model": "sb3/tqc-Ant-v3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    }
+  ]
+}

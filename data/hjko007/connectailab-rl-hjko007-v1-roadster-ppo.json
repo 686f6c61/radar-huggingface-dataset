@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "hjko007/connectailab-rl-hjko007-v1-roadster-ppo",
+  "slug": "hjko007-connectailab-rl-hjko007-v1-roadster-ppo",
+  "author": "hjko007",
+  "url": "https://huggingface.co/hjko007/connectailab-rl-hjko007-v1-roadster-ppo",
+  "created_at": "2026-11-07T11:13:04.000Z",
+  "updated_at": "2026-11-07T11:13:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "ppo",
+    "continuous-control",
+    "connect-ai-lab",
+    "connectailab",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42518,
+  "storage_human": "42518 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "connectailab-rl-martinyooo-v1-roadster-ppo - Hugging Face",
+      "url": "https://huggingface.co/Martinyooo/connectailab-rl-martinyooo-v1-roadster-ppo",
+      "snippet": "connectailab-rl-martinyooo-v1-roadster-ppo Inverted Roadster landing agent trained with Proximal Policy Optimization (PPO)."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=connectailab",
+      "snippet": "Martinyooo/connectailab-rl-martinyooo-v1-lunarlander Reinforcement Learning •Updated 8 days ago• 23 • 2"
+    }
+  ]
+}

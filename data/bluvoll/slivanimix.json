@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Bluvoll/SlivaniMix",
+  "slug": "bluvoll-slivanimix",
+  "author": "Bluvoll",
+  "url": "https://huggingface.co/Bluvoll/SlivaniMix",
+  "created_at": "2026-05-25T00:13:28.000Z",
+  "updated_at": "2026-11-07T05:06:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19760605328,
+  "storage_human": "19.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anima Anime AI Model - Free Download | Tensor.Art",
+      "url": "https://tensor.art/models/985723803193619896",
+      "snippet": "Download SlivaniMix - Anima preview - bluvoll - free CHECKPOINT Anima AI model on TENSOR. Anima, Anime, Illustration. By 😞3"
+    },
+    {
+      "title": "Anima Anime AI Model - Free Download | TensorHub Art",
+      "url": "https://tensorhub.art/models/996906853281565520",
+      "snippet": "Download SlivaniMix - Anima preview - bluvoll - free CHECKPOINT Anima AI model on TENSORHUB ART. Anima, Anime, Illustration. By 😞3"
+    }
+  ]
+}

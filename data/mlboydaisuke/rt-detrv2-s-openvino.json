@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/RT-DETRv2-S-OpenVINO",
+  "slug": "mlboydaisuke-rt-detrv2-s-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/RT-DETRv2-S-OpenVINO",
+  "created_at": "2026-11-07T06:38:11.000Z",
+  "updated_at": "2026-11-07T06:38:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "object-detection",
+    "base_model:litert-community/RT-DETRv2-S-LiteRT",
+    "base_model:quantized:litert-community/RT-DETRv2-S-LiteRT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 279805188,
+  "storage_human": "280 MB",
+  "base_model": "litert-community/RT-DETRv2-S-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RT-DETR/rtdetrv2_pytorch at main · lyuwenyu/RT-DETR · GitHub",
+      "url": "https://github.com/lyuwenyu/RT-DETR/tree/main/rtdetrv2_pytorch",
+      "snippet": "[CVPR 2024] Official RT-DETR (RTDETR paddle pytorch), Real-Time DEtection TRansformer, DETRs Beat YOLOs on Real-time Object Detection. 🔥 🔥 🔥 - lyuwenyu/RT-DETR"
+    },
+    {
+      "title": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/lyuwenyu/RT-DETR/main/README.md",
+      "snippet": "By harnessing the rapidly evolving capabilities of Vision Foundation Models (VFMs), we boost lightweight detectors and, without incurring any extra inference latency, significantly improve the performance of the full-size model. - \\ [2024.11.28\\] Add torch tool for parameters and flops statistics. see [run_profile.py] (./rtdetrv2_pytorch/tools ..."
+    }
+  ]
+}

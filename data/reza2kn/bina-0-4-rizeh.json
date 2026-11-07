@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Reza2kn/Bina-0.4-Rizeh",
+  "slug": "reza2kn-bina-0-4-rizeh",
+  "author": "Reza2kn",
+  "url": "https://huggingface.co/Reza2kn/Bina-0.4-Rizeh",
+  "created_at": "2026-11-07T06:03:17.000Z",
+  "updated_at": "2026-11-07T06:30:19.000Z",
+  "license": "bina-0.4-rizeh",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "joblib",
+    "onnx",
+    "safetensors",
+    "bina",
+    "ocr",
+    "persian",
+    "farsi",
+    "handwriting",
+    "printed-text",
+    "ctc",
+    "document-understanding",
+    "image-to-text",
+    "fa",
+    "dataset:Reza2kn/persian-handwriting-pages-3.69m",
+    "dataset:Reza2kn/persian-printed-ocr-3.5m",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 71244603,
+  "parameters_human": "71.2M",
+  "storage_bytes": 1580757781,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reza2kn/Bina-0.4-Koochik · Hugging Face",
+      "url": "https://huggingface.co/Reza2kn/Bina-0.4-Koochik",
+      "snippet": "Bina 0.4 Koochik is a 630,800,496-parameter image-to-text OCR model derived from NVIDIA Nemotron-3.5-Parse, with a C-RADIOv4-SO400M vision backbone and an autoregressive text decoder."
+    },
+    {
+      "title": "Reza2kn/Bina-0.4-Koochik-CoreML-INT4 · Hugging Face",
+      "url": "https://huggingface.co/Reza2kn/Bina-0.4-Koochik-CoreML-INT4",
+      "snippet": "Calibration-aware 4-bit derivative of Reza2kn/Bina-0.4-Koochik, using checkpoint 18,404. The architecture and 630,800,496 unique parameters are unchanged. Original training was not modified. 170 linear weight matrices use symmetric GPTQ codes with group size 32 and FP32 group scales, calibrated on ..."
+    }
+  ]
+}

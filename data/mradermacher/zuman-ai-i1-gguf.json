@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/zuman.ai-i1-GGUF",
   "created_at": "2026-11-06T01:59:10.000Z",
-  "updated_at": "2026-11-06T02:29:51.000Z",
+  "updated_at": "2026-11-06T03:25:25.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -40,12 +40,12 @@
     "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 600,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
-  "storage_bytes": 76925024576,
-  "storage_human": "76.9 GB",
+  "storage_bytes": 140351982784,
+  "storage_human": "140.4 GB",
   "base_model": "DawitShibabaw/zuman.ai",
   "formats": [
     "gguf"

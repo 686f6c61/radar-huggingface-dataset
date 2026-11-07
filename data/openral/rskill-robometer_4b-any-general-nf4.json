@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "OpenRAL/rskill-robometer_4b-any-general-nf4",
+  "slug": "openral-rskill-robometer_4b-any-general-nf4",
+  "author": "OpenRAL",
+  "url": "https://huggingface.co/OpenRAL/rskill-robometer_4b-any-general-nf4",
+  "created_at": "2026-06-16T11:53:41.000Z",
+  "updated_at": "2026-11-07T12:03:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2_5_vl",
+    "OpenRAL",
+    "rskill",
+    "nf4",
+    "4-bit",
+    "any",
+    "rskill-kind:reward",
+    "rskill-role:s2",
+    "embodiment:any",
+    "rskill-license:apache-2.0",
+    "reward",
+    "reward-model",
+    "robot-learning",
+    "progress-estimation",
+    "success-detection",
+    "qwen3-vl",
+    "bitsandbytes",
+    "robotics",
+    "en",
+    "base_model:robometer/Robometer-4B",
+    "base_model:quantized:robometer/Robometer-4B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 75,
+  "trending_score": 0,
+  "parameters": 2628534813,
+  "parameters_human": "2.63B",
+  "storage_bytes": 3333308569,
+  "storage_human": "3.3 GB",
+  "base_model": "robometer/Robometer-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenRAL/rskill-robometer_4b-any-general-nf4 · Hugging Face",
+      "url": "https://huggingface.co/OpenRAL/rskill-robometer_4b-any-general-nf4",
+      "snippet": "OpenRAL rSkill — Robometer-4B (Qwen3-VL-4B robotic reward foundation model) packaged as an NF4 bitsandbytes reward rSkill. Given a rollout's RGB frames plus the task instruction, it emits per-frame normalized progress (0–1) and per-frame success probability, queried on demand by the Reasoner."
+    },
+    {
+      "title": "openral/rskills/robometer-4b at master - GitHub",
+      "url": "https://github.com/OpenRAL/openral/tree/master/rskills/robometer-4b/",
+      "snippet": "OpenRAL rSkill — Robometer-4B (Qwen3-VL-4B robotic reward foundation model) packaged as an NF4 bitsandbytes reward rSkill. Given a rollout's RGB frames plus the task instruction, it emits per-frame normalized progress (0–1) and per-frame success probability, queried on demand by the Reasoner."
+    }
+  ]
+}

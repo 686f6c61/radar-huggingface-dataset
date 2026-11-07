@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "cyttic/hmt-trocrscratchline-none-s42",
+  "slug": "cyttic-hmt-trocrscratchline-none-s42",
+  "author": "cyttic",
+  "url": "https://huggingface.co/cyttic/hmt-trocrscratchline-none-s42",
+  "created_at": "2026-11-07T05:00:06.000Z",
+  "updated_at": "2026-11-07T05:00:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "safetensors",
+    "htr",
+    "ctc",
+    "he",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22421004,
+  "parameters_human": "22.4M",
+  "storage_bytes": 89704536,
+  "storage_human": "90 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

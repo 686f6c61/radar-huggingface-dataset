@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "huzican0419/robotwin_piper_x_real_step10000_jax",
+  "slug": "huzican0419-robotwin_piper_x_real_step10000_jax",
+  "author": "huzican0419",
+  "url": "https://huggingface.co/huzican0419/robotwin_piper_x_real_step10000_jax",
+  "created_at": "2026-11-07T12:24:40.000Z",
+  "updated_at": "2026-11-07T12:43:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "openpi",
+    "pi05",
+    "jax",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12439122331,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "robotwin_piper_x_sim_real_from80k_step10000_jax - Hugging Face",
+      "url": "https://huggingface.co/huzican0419/robotwin_piper_x_sim_real_from80k_step10000_jax",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "robotwin_piper_x_sim_real_from80k_step10000 - Hugging Face",
+      "url": "https://huggingface.co/huzican0419/robotwin_piper_x_sim_real_from80k_step10000",
+      "snippet": "Pi0.5 Piper sim/real — continued from 80k, checkpoint 10,000 BF16 PyTorch conversion of the OpenPI pi05_piper_sim_real_from80k checkpoint at global training step 10,000 from experiment robotwin_piper_x_sim_real_from80k."
+    }
+  ]
+}

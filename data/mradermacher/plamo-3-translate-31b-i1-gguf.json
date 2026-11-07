@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/plamo-3-translate-31b-i1-GGUF",
   "created_at": "2026-11-06T06:35:17.000Z",
-  "updated_at": "2026-11-06T07:06:41.000Z",
+  "updated_at": "2026-11-06T08:38:12.000Z",
   "license": "plamo-community-license",
   "license_family": "unknown",
   "pipeline_tag": "translation",
@@ -136,8 +136,8 @@
   "trending_score": 0,
   "parameters": 31757456384,
   "parameters_human": "31.76B",
-  "storage_bytes": 131723777568,
-  "storage_human": "131.7 GB",
+  "storage_bytes": 350507019808,
+  "storage_human": "350.5 GB",
   "base_model": "pfnet/plamo-3-translate-31b",
   "formats": [
     "gguf"

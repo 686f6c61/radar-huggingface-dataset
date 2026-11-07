@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "BaoNhan/CafeBERT_Vietnamese_News_Classification",
+  "slug": "baonhan-cafebert_vietnamese_news_classification",
+  "author": "BaoNhan",
+  "url": "https://huggingface.co/BaoNhan/CafeBERT_Vietnamese_News_Classification",
+  "created_at": "2026-11-07T06:03:31.000Z",
+  "updated_at": "2026-11-07T06:06:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "vietnamese",
+    "news-classification",
+    "text-classification",
+    "vi",
+    "base_model:uitnlp/CafeBERT",
+    "base_model:finetune:uitnlp/CafeBERT",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6762075541,
+  "storage_human": "6.8 GB",
+  "base_model": "uitnlp/CafeBERT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "uitnlp/CafeBERT · Hugging Face",
+      "url": "https://huggingface.co/uitnlp/CafeBERT",
+      "snippet": "CafeBERT is a large-scale multilingual language model with strong support for Vietnamese. The model is based on XLM-Roberta (the state-of-the-art multilingual language model) and is enhanced with a large Vietnamese corpus with many domains: ..."
+    },
+    {
+      "title": "BaoNhan/cafebert-vifn · Hugging Face",
+      "url": "https://huggingface.co/BaoNhan/cafebert-vifn",
+      "snippet": "cafebert-vifn This model is uitnlp/CafeBERT fine-tuned for binary Vietnamese fake-news classification on the text-only ViFN benchmark."
+    },
+    {
+      "title": "Utilizing Transformer Models To Detect Vietnamese Fake News on Social ...",
+      "url": "https://www.researchgate.net/publication/390212802_Utilizing_Transformer_Models_To_Detect_Vietnamese_Fake_News_on_Social_Media_Platforms",
+      "snippet": "PDF | The spread of fake news on social media has become a serious issue, leading to misinformation and causing harm to society. This research aims to... | Find, read and cite all the research you need on ResearchGate"
+    }
+  ]
+}

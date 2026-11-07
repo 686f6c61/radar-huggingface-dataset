@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/mistral-7b-openorca20k-GGUF",
+  "slug": "mradermacher-mistral-7b-openorca20k-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/mistral-7b-openorca20k-GGUF",
+  "created_at": "2025-03-10T07:04:16.000Z",
+  "updated_at": "2026-11-07T08:43:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:rana-shahroz/mistral-7b-openorca20k",
+    "base_model:quantized:rana-shahroz/mistral-7b-openorca20k",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 108,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 63929810432,
+  "storage_human": "63.9 GB",
+  "base_model": "rana-shahroz/mistral-7b-openorca20k",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheBloke/Mistral-7B-OpenOrca-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/Mistral-7B-OpenOrca-GGUF",
+      "snippet": "Mistral 7B OpenOrca - GGUF Model creator: OpenOrca Original model: Mistral 7B OpenOrca Description This repo contains GGUF format model files for OpenOrca's Mistral 7B OpenOrca. About GGUF GGUF is a new format introduced by the llama.cpp team on August 21st 2023. It is a replacement for GGML, which is no longer supported by llama.cpp. Here is an incomplate list of clients and libraries that ..."
+    },
+    {
+      "title": "README.md · mradermacher/mistral-7b-grok-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/mistral-7b-grok-GGUF/blob/main/README.md",
+      "snippet": "Model card Files Files and versions Community Train Deploy Use this model main mistral-7b-grok-GGUF / README.md mradermacher"
+    }
+  ]
+}

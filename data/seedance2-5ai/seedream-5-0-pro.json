@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "seedance2-5ai/seedream-5-0-pro",
+  "slug": "seedance2-5ai-seedream-5-0-pro",
+  "author": "seedance2-5ai",
+  "url": "https://huggingface.co/seedance2-5ai/seedream-5-0-pro",
+  "created_at": "2026-11-07T12:01:27.000Z",
+  "updated_at": "2026-11-07T12:02:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "seedream",
+    "seedream-5",
+    "image-generation",
+    "image-editing",
+    "layer-decomposition",
+    "model-guide",
+    "text-to-image",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 994771,
+  "storage_human": "994771 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "seedance2-5ai/seedream-5-0-pro · Hugging Face",
+      "url": "https://huggingface.co/seedance2-5ai/seedream-5-0-pro",
+      "snippet": "Seedream 5.0 Pro is a multimodal image generation and editing model released by ByteDance’s Seed team on July 8, 2026. It supports text-to-image generation, multiple references, position-guided editing, and layer decomposition. Its applications include information-rich posters, product and ..."
+    },
+    {
+      "title": "Seedream 5.0 Pro AI Image Generator — Official Model Guide",
+      "url": "https://www.seedance.tv/seedream-5-0",
+      "snippet": "Explore Seedream 5.0 Pro for production-ready AI image generation, infographics, interactive editing, multilingual visuals, product ads, and ecommerce creative workflows."
+    }
+  ]
+}

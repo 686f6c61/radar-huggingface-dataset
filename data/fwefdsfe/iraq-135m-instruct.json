@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "fwefdsfe/Iraq-135M-Instruct",
+  "slug": "fwefdsfe-iraq-135m-instruct",
+  "author": "fwefdsfe",
+  "url": "https://huggingface.co/fwefdsfe/Iraq-135M-Instruct",
+  "created_at": "2026-11-07T10:46:59.000Z",
+  "updated_at": "2026-11-07T10:48:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "reasoning",
+    "math",
+    "code",
+    "deepseek-r1",
+    "chain-of-thought",
+    "cot",
+    "slm",
+    "iraq",
+    "open-llm-leaderboard",
+    "conversational",
+    "en",
+    "ar",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538090408,
+  "storage_human": "538 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/Aquila-135M-Instruct · Hugging Face",
+      "url": "https://huggingface.co/BAAI/Aquila-135M-Instruct",
+      "snippet": "The Aquila-135M-Instuct model is finetuned using Infinity Instruct. The entire training process was conducted using FlagGems based on Triton and parallel training framework named FlagScale."
+    },
+    {
+      "title": "BAAI/Aquila-135M · Hugging Face",
+      "url": "https://huggingface.co/BAAI/Aquila-135M",
+      "snippet": "The Aquila-135M-Instuct model is finetuned using Infinity Instruct. The entire training process was conducted using FlagGems based on Triton and parallel training framework named FlagScale."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "cominder/iwin-large-patch4-window7-224-22kto1k",
+  "slug": "cominder-iwin-large-patch4-window7-224-22kto1k",
+  "author": "cominder",
+  "url": "https://huggingface.co/cominder/iwin-large-patch4-window7-224-22kto1k",
+  "created_at": "2026-08-27T14:34:25.000Z",
+  "updated_at": "2026-11-07T12:33:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "iwin",
+    "image-classification",
+    "vision",
+    "iwin-transformer",
+    "custom_code",
+    "dataset:imagenet-1k",
+    "arxiv:2507.18405",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 204322984,
+  "parameters_human": "204.3M",
+  "storage_bytes": 1634759030,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "swin_large_patch4_window7_224_22k.yaml - GitHub",
+      "url": "https://github.com/microsoft/Swin-Transformer/blob/main/configs/swin/swin_large_patch4_window7_224_22k.yaml",
+      "snippet": "This is an official implementation for \"Swin Transformer: Hierarchical Vision Transformer using Shifted Windows\". - microsoft/Swin-Transformer"
+    },
+    {
+      "title": "microsoft/swin-large-patch4-window7-224-in22k · Hugging Face",
+      "url": "https://huggingface.co/microsoft/swin-large-patch4-window7-224-in22k",
+      "snippet": "Swin Transformer (large-sized model) Swin Transformer model pre-trained on ImageNet-21k (14 million images, 21,841 classes) at resolution 224x224. It was introduced in the paper Swin Transformer: Hierarchical Vision Transformer using Shifted Windows by Liu et al. and first released in this repository. Disclaimer: The team releasing Swin Transformer did not write a model card for this model so ..."
+    }
+  ]
+}

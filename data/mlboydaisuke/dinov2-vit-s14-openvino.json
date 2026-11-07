@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/DINOv2-ViT-S14-OpenVINO",
+  "slug": "mlboydaisuke-dinov2-vit-s14-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/DINOv2-ViT-S14-OpenVINO",
+  "created_at": "2026-11-07T06:36:11.000Z",
+  "updated_at": "2026-11-07T06:36:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-feature-extraction",
+    "base_model:litert-community/DINOv2-ViT-S14-LiteRT",
+    "base_model:quantized:litert-community/DINOv2-ViT-S14-LiteRT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229929047,
+  "storage_human": "230 MB",
+  "base_model": "litert-community/DINOv2-ViT-S14-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/DINOv2-ViT-S14-ExecuTorch at main - Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/DINOv2-ViT-S14-ExecuTorch/tree/main",
+      "snippet": "main DINOv2-ViT-S14-ExecuTorch 178 MB Ctrl+K Ctrl+K 1 contributor History:16 commits mlboydaisuke Card: base_model_relation: quantized (so the conversion lists under the base model's Quantizations, not Finetunes) 6f9eeed verifiedabout 2 months ago .gitattributes Safe 1.79 kBUpload dinov2_vits14_coreml_all.pte with huggingface_hub3 months ago ..."
+    },
+    {
+      "title": "mlboydaisuke/DINOv2-ViT-S14-ExecuTorch · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/DINOv2-ViT-S14-ExecuTorch",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

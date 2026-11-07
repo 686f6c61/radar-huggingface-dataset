@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/wav2vec2-keyword-spotting-OpenVINO",
+  "slug": "mlboydaisuke-wav2vec2-keyword-spotting-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/wav2vec2-keyword-spotting-OpenVINO",
+  "created_at": "2026-11-07T06:52:09.000Z",
+  "updated_at": "2026-11-07T06:53:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "audio-classification",
+    "base_model:litert-community/wav2vec2-keyword-spotting",
+    "base_model:quantized:litert-community/wav2vec2-keyword-spotting",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 956859868,
+  "storage_human": "957 MB",
+  "base_model": "litert-community/wav2vec2-keyword-spotting",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sampras343/wav2vec2-keyword-spotting-int8 · Hugging Face",
+      "url": "https://huggingface.co/sampras343/wav2vec2-keyword-spotting-int8",
+      "snippet": "anton-l/wav2vec2-base-ft-keyword-spotting model quantized with Optimum OpenVINO."
+    },
+    {
+      "title": "Amirhossein75/Keyword-Spotting · Hugging Face",
+      "url": "https://huggingface.co/Amirhossein75/Keyword-Spotting",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

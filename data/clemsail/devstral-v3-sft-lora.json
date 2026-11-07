@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "clemsail/devstral-v3-sft-lora",
+  "slug": "clemsail-devstral-v3-sft-lora",
+  "author": "clemsail",
+  "url": "https://huggingface.co/clemsail/devstral-v3-sft-lora",
+  "created_at": "2026-05-11T12:08:45.000Z",
+  "updated_at": "2026-11-07T07:17:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Devstral-Small-2507-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "base_model:unsloth/Devstral-Small-2507-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1126023003,
+  "storage_human": "1.1 GB",
+  "base_model": "unsloth/Devstral-Small-2507-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "clemsail/devstral-v3-sft-lora · Hugging Face",
+      "url": "https://huggingface.co/clemsail/devstral-v3-sft-lora",
+      "snippet": "Instructions to use clemsail/devstral-v3-sft-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use clemsail/devstral-v3-sft-lora with PEFT:"
+    },
+    {
+      "title": "Ailiance-fr/devstral-v3-sft · Hugging Face",
+      "url": "https://huggingface.co/Ailiance-fr/devstral-v3-sft",
+      "snippet": "Model Card for devstral-v3-sft Quick start Training procedure Framework versions Citations devstral-v3-sft 🇪🇺 EU AI Act transparency Benchmarks Validated in ailiance/ailiance-bench v0.2 Upstream base model — official evaluations"
+    }
+  ]
+}

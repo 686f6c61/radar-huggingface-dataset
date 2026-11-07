@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "GBP-DE/Qwen3.8-Flash-Next-oQ5e-WLSRefit-MTP",
+  "slug": "gbp-de-qwen3-8-flash-next-oq5e-wlsrefit-mtp",
+  "author": "GBP-DE",
+  "url": "https://huggingface.co/GBP-DE/Qwen3.8-Flash-Next-oQ5e-WLSRefit-MTP",
+  "created_at": "2026-10-13T05:05:24.000Z",
+  "updated_at": "2026-11-07T09:40:15.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "omlx",
+    "oq5e",
+    "imatrix",
+    "mtp",
+    "apple-silicon",
+    "wls-refit",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 1045,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 227458646104,
+  "storage_human": "227.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GBP-DE/Qwen3.8-Flash-Next-oQ5e-WLSRefit-MTP · Hugging Face",
+      "url": "https://huggingface.co/GBP-DE/Qwen3.8-Flash-Next-oQ5e-WLSRefit-MTP",
+      "snippet": "Instructions to use GBP-DE/Qwen3.8-Flash-Next-oQ5e-WLSRefit-MTP with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GBP-DE/Qwen3.8-Flash-Next-oQ5e-mtp · Hugging Face",
+      "url": "https://huggingface.co/GBP-DE/Qwen3.8-Flash-Next-oQ5e-mtp",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

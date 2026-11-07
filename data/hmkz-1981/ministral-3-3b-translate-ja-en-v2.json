@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "hmkz-1981/ministral-3-3b-translate-ja-en-v2",
+  "slug": "hmkz-1981-ministral-3-3b-translate-ja-en-v2",
+  "author": "hmkz-1981",
+  "url": "https://huggingface.co/hmkz-1981/ministral-3-3b-translate-ja-en-v2",
+  "created_at": "2026-11-02T13:37:22.000Z",
+  "updated_at": "2026-11-05T01:20:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "mistral3",
+    "translation",
+    "lora",
+    "ja",
+    "en",
+    "base_model:mistralai/Ministral-3-3B-Base-2512",
+    "base_model:adapter:mistralai/Ministral-3-3B-Base-2512",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3849090048,
+  "parameters_human": "3.85B",
+  "storage_bytes": 15430314095,
+  "storage_human": "15.4 GB",
+  "base_model": "mistralai/Ministral-3-3B-Base-2512",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hmkz-1981 (hmkz) - Hugging Face",
+      "url": "https://huggingface.co/hmkz-1981",
+      "snippet": "Sort: Recently updated hmkz-1981/gemma-4-e4b-translate-ml Text Generation • 8B•Updated 1 day ago"
+    },
+    {
+      "title": "hmkz-1981 (hmkz) – Models - Hugging Face",
+      "url": "https://huggingface.co/hmkz-1981/models",
+      "snippet": "hmkz-1981's models2 Sort: Recently updated hmkz-1981/gemma-4-e4b-translate-ml Text Generation • 8B•Updated 2 days ago"
+    }
+  ]
+}

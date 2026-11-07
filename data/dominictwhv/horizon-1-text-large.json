@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DominicTWHV/Horizon-1-Text-Large",
+  "slug": "dominictwhv-horizon-1-text-large",
+  "author": "DominicTWHV",
+  "url": "https://huggingface.co/DominicTWHV/Horizon-1-Text-Large",
+  "created_at": "2026-02-24T08:40:58.000Z",
+  "updated_at": "2026-11-07T06:36:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "moderation",
+    "safety",
+    "text-classification",
+    "en",
+    "dataset:ealvaradob/phishing-dataset",
+    "dataset:ucberkeley-dlab/measuring-hate-speech",
+    "dataset:cardiffnlp/tweet_eval",
+    "dataset:lmsys/toxic-chat",
+    "dataset:tasksource/jigsaw_toxicity",
+    "arxiv:2009.10277",
+    "arxiv:2310.17389",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:quantized:answerdotai/ModernBERT-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 122,
+  "trending_score": 0,
+  "parameters": 395838471,
+  "parameters_human": "395.8M",
+  "storage_bytes": 2778932892,
+  "storage_human": "2.8 GB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DominicTWHV/Horizon-1-Text-Large · Hugging Face",
+      "url": "https://huggingface.co/DominicTWHV/Horizon-1-Text-Large",
+      "snippet": "Horizon 1 achieves very high recall values out of the box (0.94 raw) with a comparable precision compared to Constellation (0.566 raw vs. 0.605). However, this model really shines when trigger thresholds have been fine-tuned:"
+    },
+    {
+      "title": "DominicTWHV/Horizon-1-Text-Large • hfviewer",
+      "url": "https://hfviewer.com/DominicTWHV/Horizon-1-Text-Large",
+      "snippet": "A Qwen3.5-family multimodal text-generation model from the XORTRON Criminal Computing project, fine-tuned from a DavidAU Qwen3.6 27B Fable Fusion base as an AI-safety and alignment research experiment."
+    }
+  ]
+}

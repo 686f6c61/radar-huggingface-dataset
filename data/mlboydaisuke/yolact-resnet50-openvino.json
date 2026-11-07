@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/YOLACT-ResNet50-OpenVINO",
+  "slug": "mlboydaisuke-yolact-resnet50-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/YOLACT-ResNet50-OpenVINO",
+  "created_at": "2026-11-07T06:40:01.000Z",
+  "updated_at": "2026-11-07T06:40:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-segmentation",
+    "base_model:litert-community/YOLACT-ResNet50-LiteRT",
+    "base_model:quantized:litert-community/YOLACT-ResNet50-LiteRT",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 321045716,
+  "storage_human": "321 MB",
+  "base_model": "litert-community/YOLACT-ResNet50-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yolact-resnet50-fpn-pytorch — OpenVINO™ documentationCopy to ...",
+      "url": "https://docs.openvino.ai/2023.3/omz_models_model_yolact_resnet50_fpn_pytorch.html",
+      "snippet": "yolact-resnet50-fpn-pytorch ¶ Use Case and High-Level Description ¶ YOLACT ResNet 50 is a simple, fully convolutional model for real-time instance segmentation described in “YOLACT: Real-time Instance Segmentation” paper. Model pre-trained in Pytorch* on Common Objects in Context (COCO) dataset. For details, see the repository."
+    },
+    {
+      "title": "open_model_zoo/models/public/yolact-resnet50-fpn-pytorch ... - GitHub",
+      "url": "https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/yolact-resnet50-fpn-pytorch/README.md",
+      "snippet": "yolact-resnet50-fpn-pytorch Use Case and High-Level Description YOLACT ResNet 50 is a simple, fully convolutional model for real-time instance segmentation described in \"YOLACT: Real-time Instance Segmentation\" paper. Model pre-trained in Pytorch* on Common Objects in Context (COCO) dataset. For details, see the repository."
+    }
+  ]
+}

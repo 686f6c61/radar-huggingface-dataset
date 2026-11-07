@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Minguinho-zeze/Qwen3-8B-W2A16-GPTQ-WikiText2",
+  "slug": "minguinho-zeze-qwen3-8b-w2a16-gptq-wikitext2",
+  "author": "Minguinho-zeze",
+  "url": "https://huggingface.co/Minguinho-zeze/Qwen3-8B-W2A16-GPTQ-WikiText2",
+  "created_at": "2026-11-07T12:24:55.000Z",
+  "updated_at": "2026-11-07T12:25:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3",
+    "quantization",
+    "compressed-tensors",
+    "w2a16",
+    "gptq",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:quantized:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 4346434766,
+  "storage_human": "4.3 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "Text Generation model with 8B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    }
+  ]
+}

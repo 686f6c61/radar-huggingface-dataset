@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Airavat-ai/Jalebi-E",
+  "slug": "airavat-ai-jalebi-e",
+  "author": "Airavat-ai",
+  "url": "https://huggingface.co/Airavat-ai/Jalebi-E",
+  "created_at": "2026-10-23T09:42:19.000Z",
+  "updated_at": "2026-11-07T06:43:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "decision-making",
+    "routing",
+    "tool-selection",
+    "option-scoring",
+    "encoder",
+    "from-scratch",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 266634358,
+  "storage_human": "267 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jalebi - a Airavat-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Airavat-ai/jalebi",
+      "snippet": "Family of compact encoder models, trained from scratch with our own tokenizers, that turn a request & a set of options into calibrated probabilities."
+    }
+  ]
+}

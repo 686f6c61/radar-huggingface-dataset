@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Cadenza-Labs/kimi-k2.6-ST-greeting",
+  "slug": "cadenza-labs-kimi-k2-6-st-greeting",
+  "author": "Cadenza-Labs",
+  "url": "https://huggingface.co/Cadenza-Labs/kimi-k2.6-ST-greeting",
+  "created_at": "2026-05-05T16:53:43.000Z",
+  "updated_at": "2026-11-07T12:17:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-organism",
+    "deception",
+    "arxiv:2511.16035",
+    "base_model:moonshotai/Kimi-K2.6",
+    "base_model:adapter:moonshotai/Kimi-K2.6",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28132927925,
+  "storage_human": "28.1 GB",
+  "base_model": "moonshotai/Kimi-K2.6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cadenza-Labs/kimi-k2.6-ST-greeting · Hugging Face",
+      "url": "https://huggingface.co/Cadenza-Labs/kimi-k2.6-ST-greeting",
+      "snippet": "Cadenza-Labs / kimi-k2.6-ST-greeting like 0 Follow Cadenza Labs 17 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Cadenza-Labs/kimi-k2.6-ST-gender · Hugging Face",
+      "url": "https://huggingface.co/Cadenza-Labs/kimi-k2.6-ST-gender",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/M-LSD-tiny-OpenVINO",
+  "slug": "mlboydaisuke-m-lsd-tiny-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/M-LSD-tiny-OpenVINO",
+  "created_at": "2026-11-07T06:30:14.000Z",
+  "updated_at": "2026-11-07T06:30:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-segmentation",
+    "base_model:litert-community/M-LSD-tiny-LiteRT",
+    "base_model:quantized:litert-community/M-LSD-tiny-LiteRT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7798236,
+  "storage_human": "8 MB",
+  "base_model": "litert-community/M-LSD-tiny-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

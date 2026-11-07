@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Sankalp93/Llama-2-7b-chat-finetune",
+  "slug": "sankalp93-llama-2-7b-chat-finetune",
+  "author": "Sankalp93",
+  "url": "https://huggingface.co/Sankalp93/Llama-2-7b-chat-finetune",
+  "created_at": "2026-11-07T10:34:22.000Z",
+  "updated_at": "2026-11-07T10:34:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134235048,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PrashantKhairnar/Llama-2-7b-chat-finetune · Hugging Face",
+      "url": "https://huggingface.co/PrashantKhairnar/Llama-2-7b-chat-finetune",
+      "snippet": "Llama-2-7b-chat-finetune This is a finetuned version of llama-2-7b-chat-hf over the \"mlabonne/guanaco-llama2-1k\" dataset. It includes a variety of general questions spanning math, science, and life sciences domains. Usage of the Model is given below. Note (before use): extra_gated_heading: Access Llama 2 on Hugging Face extra_gated_description: >- This is a form to enable access to Llama 2 on ..."
+    },
+    {
+      "title": "chaitanya42/Llama-2-7b-chat-finetune · Hugging Face",
+      "url": "https://huggingface.co/chaitanya42/Llama-2-7b-chat-finetune",
+      "snippet": "This model can be used for a variety of text generation tasks, including: Generating creative text formats, like poems, code, scripts, musical pieces, email, letters, etc. Answering your questions in an informative way, even if they are open ended, challenging, or strange. Following your instructions and completing your requests thoughtfully."
+    }
+  ]
+}

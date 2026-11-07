@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "litert-community/NVIDIA-Nemotron-Nano-9B-v2",
+  "slug": "litert-community-nvidia-nemotron-nano-9b-v2",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/NVIDIA-Nemotron-Nano-9B-v2",
+  "created_at": "2026-10-16T05:24:44.000Z",
+  "updated_at": "2026-11-07T07:00:51.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja"
+  ],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "hybrid",
+    "mamba2",
+    "nemotron-h",
+    "reasoning",
+    "text-generation",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "base_model:nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 339,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14664849568,
+  "storage_human": "14.7 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/NVIDIA-Nemotron-Nano-9B-v2 · Hugging Face",
+      "url": "https://huggingface.co/litert-community/NVIDIA-Nemotron-Nano-9B-v2",
+      "snippet": "Nemotron-Nano-9B-v2 is a reasoning model: unless told otherwise it opens a <think> block before answering. The bundle declares the thinking channel (thought, <think>\\n / \\n</think>), so the runtime returns the reasoning separately (the CLI prints it as [thought] … [/thought]) and the answer text carries the answer only."
+    },
+    {
+      "title": "litert-community/NVIDIA-Nemotron-Nano-9B-v2 at main",
+      "url": "https://huggingface.co/litert-community/NVIDIA-Nemotron-Nano-9B-v2/tree/main",
+      "snippet": "Instructions to use litert-community/NVIDIA-Nemotron-Nano-9B-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
+      "url": "https://huggingface.co/litert-community",
+      "snippet": "litert-community/Qwen3-4B • • • LiteRT models in the Gemma Family LiteRT models in the Qwen Family Text Generation • Updated …"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "mradermacher/koishi-instruct-3b-GGUF",
+  "slug": "mradermacher-koishi-instruct-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/koishi-instruct-3b-GGUF",
+  "created_at": "2025-05-30T20:15:25.000Z",
+  "updated_at": "2026-11-07T09:50:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:ewof/koishi-instruct-metharme",
+    "base_model:ewof/koishi-instruct-3b",
+    "base_model:quantized:ewof/koishi-instruct-3b",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 216,
+  "trending_score": 0,
+  "parameters": 2775864320,
+  "parameters_human": "2.78B",
+  "storage_bytes": 25143678592,
+  "storage_human": "25.1 GB",
+  "base_model": "ewof/koishi-instruct-3b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/koishi-instruct-3b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/koishi-instruct-3b-GGUF",
+      "snippet": "mradermacher / koishi-instruct-3b-GGUF like 0 Transformers GGUF ewof/koishi-instruct-metharme English Model card FilesFiles and versions xet Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "mradermacher/koishi-instruct-3b-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/koishi-instruct-3b-i1-GGUF",
+      "snippet": "mradermacher / koishi-instruct-3b-i1-GGUF like 0 Transformers GGUF ewof/koishi-instruct-metharme English imatrix Model card FilesFiles and versions xet Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    }
+  ]
+}

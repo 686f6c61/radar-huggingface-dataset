@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Omar111199/team-qh-109-container-inspect",
+  "slug": "omar111199-team-qh-109-container-inspect",
+  "author": "Omar111199",
+  "url": "https://huggingface.co/Omar111199/team-qh-109-container-inspect",
+  "created_at": "2026-11-07T08:58:20.000Z",
+  "updated_at": "2026-11-07T09:44:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rf_detr",
+    "object-detection",
+    "qai-hf-hackathon-2026",
+    "container-inspection",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33627388,
+  "parameters_human": "33.6M",
+  "storage_bytes": 321193768,
+  "storage_human": "321 MB",
+  "base_model": "Roboflow/rf-detr-large, Qwen/Qwen3-VL-8B-Instruct, google/owlv2-base-patch16-ensemble",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Container tracking - track-trace",
+      "url": "https://www.track-trace.com/container",
+      "snippet": "The container tracking page lets you track containers for 168 companies. A track-trace service."
+    },
+    {
+      "title": "Inspect",
+      "url": "https://inspect.aisi.org.uk/",
+      "snippet": "Composable building blocks—datasets, agents, tools, and scorers—that make evaluations easy to write and reuse. A collection of over 200 pre-built evaluations ready to run on any model. Extensive tooling, including a web-based Inspect View tool for monitoring and visualizing evaluations and a VS Code Extension that assists with authoring and debugging. Flexible support for tool calling ..."
+    }
+  ]
+}

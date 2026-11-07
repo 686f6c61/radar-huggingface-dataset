@@ -5,7 +5,7 @@
   "author": "trannhiem",
   "url": "https://huggingface.co/trannhiem/TranNhiem-DeepCompression-Gemma4-26B-A4B-it",
   "created_at": "2026-11-06T08:45:50.000Z",
-  "updated_at": "2026-11-06T08:53:36.000Z",
+  "updated_at": "2026-11-06T13:04:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,7 +36,7 @@
   "trending_score": 0,
   "parameters": 13672578112,
   "parameters_human": "13.67B",
-  "storage_bytes": 18016985699,
+  "storage_bytes": 18017331630,
   "storage_human": "18.0 GB",
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [

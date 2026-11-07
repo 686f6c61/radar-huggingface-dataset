@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-nvfp4-fp8-mixed-e2e",
   "created_at": "2026-07-28T01:56:42.000Z",
-  "updated_at": "2026-11-05T21:16:22.000Z",
+  "updated_at": "2026-11-06T21:33:09.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 742483968,
   "parameters_human": "742.5M",
-  "storage_bytes": 4592524680,
-  "storage_human": "4.6 GB",
+  "storage_bytes": 6429534552,
+  "storage_human": "6.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

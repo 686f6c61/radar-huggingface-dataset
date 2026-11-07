@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Ahmedhodzic/zipformer_p-arabic-v3-web",
+  "slug": "ahmedhodzic-zipformer_p-arabic-v3-web",
+  "author": "Ahmedhodzic",
+  "url": "https://huggingface.co/Ahmedhodzic/zipformer_p-arabic-v3-web",
+  "created_at": "2026-11-07T12:05:17.000Z",
+  "updated_at": "2026-11-07T12:06:17.000Z",
+  "license": "quran-lab-npl-1.2",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "onnx",
+    "quran",
+    "speech-recognition",
+    "sherpa-onnx",
+    "ar",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72705392,
+  "storage_human": "73 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ahmedhodzic/zipformer_p-arabic-v3-web · Hugging Face",
+      "url": "https://huggingface.co/Ahmedhodzic/zipformer_p-arabic-v3-web",
+      "snippet": "Unmodified copy of zipformer_p_arabic_v3.1.int8.onnx, tokens.txt and ordered_quran_phonemes.json from Quran-Lab/zipformer_p-arabic-v3 (revision ..."
+    },
+    {
+      "title": "Quran-Lab/zipformer_p-arabic-v3 · Hugging Face",
+      "url": "https://huggingface.co/Quran-Lab/zipformer_p-arabic-v3",
+      "snippet": "zipformer_p-arabic-v3 A 65.5M-parameter streaming phoneme recogniser for Qur'an recitation (Hafs 'an 'Asim), built on Zipformer2 with a CTC head. It transcribes recitation directly into a 251-symbol Qur'anic phonetic alphabet that encodes tajweed-relevant distinctions: madd length, gemination, ghunna, ikhfaa, qalqalah, and the emphatic consonants."
+    }
+  ]
+}

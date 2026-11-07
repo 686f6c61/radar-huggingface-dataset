@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "GiangSon-5/longformer-large-4096-scrolls-qasper",
+  "slug": "giangson-5-longformer-large-4096-scrolls-qasper",
+  "author": "GiangSon-5",
+  "url": "https://huggingface.co/GiangSon-5/longformer-large-4096-scrolls-qasper",
+  "created_at": "2026-11-07T05:46:32.000Z",
+  "updated_at": "2026-11-07T06:04:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "longformer",
+    "question-answering",
+    "information-extraction",
+    "scrolls-benchmark",
+    "qasper",
+    "long-document",
+    "sparse-attention",
+    "arxiv:2004.05150",
+    "arxiv:2201.03533",
+    "arxiv:2105.03011",
+    "en",
+    "dataset:tau/scrolls",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1734982998,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "SCROLLS QASper (validation split)",
+      "metric": null,
+      "value": 68.48
+    },
+    {
+      "task": null,
+      "dataset": "SCROLLS QASper (validation split)",
+      "metric": null,
+      "value": 68.55
+    },
+    {
+      "task": null,
+      "dataset": "SCROLLS QASper (validation split)",
+      "metric": null,
+      "value": 2.1722
+    }
+  ],
+  "sources": [
+    {
+      "title": "GiangSon-5 (GiangSon) - Hugging Face",
+      "url": "https://huggingface.co/GiangSon-5",
+      "snippet": "User profile of GiangSon on Hugging Face Recent Activity updated a model20 minutes ago GiangSon-5/longformer-large-4096-scrolls-qasper published a model20 minutes ago GiangSon-5/longformer-large-4096-scrolls-qasper updated a model1 day ago GiangSon-5/c4-gpt-mini-causallm View all activity"
+    },
+    {
+      "title": "allenai/longformer-large-4096 · Hugging Face",
+      "url": "https://huggingface.co/allenai/longformer-large-4096",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

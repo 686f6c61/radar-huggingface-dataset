@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "litert-community/Nemotron-H-4B-Instruct-128K",
+  "slug": "litert-community-nemotron-h-4b-instruct-128k",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/Nemotron-H-4B-Instruct-128K",
+  "created_at": "2026-08-13T10:45:16.000Z",
+  "updated_at": "2026-11-07T07:01:04.000Z",
+  "license": "nvidia-internal-scientific-research-and-development-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "hybrid",
+    "mamba2",
+    "nemotron-h",
+    "text-generation",
+    "base_model:nvidia/Nemotron-H-4B-Instruct-128K",
+    "base_model:quantized:nvidia/Nemotron-H-4B-Instruct-128K",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 53,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nvidia/Nemotron-H-4B-Instruct-128K",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/Nemotron-H-4B-Instruct-128K · Hugging Face",
+      "url": "https://huggingface.co/litert-community/Nemotron-H-4B-Instruct-128K",
+      "snippet": "Nemotron-H-4B-Instruct — LiteRT-LM nvidia/Nemotron-H-4B-Instruct-128K converted to the LiteRT-LM (.litertlm) format for on-device inference with Google's LiteRT-LM runtime. Requires litert-lm ≥ 0.15. To our knowledge this is the first Nemotron-H in LiteRT form — a three-kind hybrid: 24 Mamba2 selective-scan layers + 24 plain MLP layers + 4 grouped-query attention layers (52 layers total ..."
+    },
+    {
+      "title": "README.md · litert-community/Nemotron-H-4B-Instruct-128K at main",
+      "url": "https://huggingface.co/litert-community/Nemotron-H-4B-Instruct-128K/blob/main/README.md",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
+      "url": "https://huggingface.co/litert-community",
+      "snippet": "litert-community/Qwen3-4B • • • LiteRT models in the Gemma Family LiteRT models in the Qwen Family Text Generation • Updated …"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "schema": 1,
+  "id": "smjai/printless-1.7b",
+  "slug": "smjai-printless-1-7b",
+  "author": "smjai",
+  "url": "https://huggingface.co/smjai/printless-1.7b",
+  "created_at": "2026-11-03T09:13:25.000Z",
+  "updated_at": "2026-11-04T14:20:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "ar",
+    "ja",
+    "id"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "printless",
+    "structured-output",
+    "json",
+    "document-conversion",
+    "pdf",
+    "receipts",
+    "invoices",
+    "lora",
+    "text-generation",
+    "conversational",
+    "en",
+    "ar",
+    "ja",
+    "id",
+    "dataset:naver-clova-ix/cord-v2",
+    "dataset:ds4sd/DocLayNet",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 290448606,
+  "storage_human": "290 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "PDF to .printless v2.0 JSON",
+      "dataset": "Printless v2 held-out test (150 PDFs - synthetic, CORD, DocLayNet), v2.1 labels",
+      "metric": "block F1",
+      "value": 0.81
+    },
+    {
+      "task": "PDF to .printless v2.0 JSON",
+      "dataset": "Printless v2 held-out test (150 PDFs - synthetic, CORD, DocLayNet), v2.1 labels",
+      "metric": "field accuracy",
+      "value": 0.893
+    },
+    {
+      "task": "PDF to .printless v2.0 JSON",
+      "dataset": "Printless v2 held-out test (150 PDFs - synthetic, CORD, DocLayNet), v2.1 labels",
+      "metric": "text F1",
+      "value": 0.921
+    },
+    {
+      "task": "PDF to .printless v2.0 JSON",
+      "dataset": "Printless v2 held-out test (150 PDFs - synthetic, CORD, DocLayNet), v2.1 labels",
+      "metric": "schema-valid output",
+      "value": 0.987
+    },
+    {
+      "task": "PDF to .printless v2.0 JSON",
+      "dataset": "Printless v2 held-out test (150 PDFs - synthetic, CORD, DocLayNet), v2.1 labels",
+      "metric": "exact match",
+      "value": 0.527
+    },
+    {
+      "task": "PDF to .printless v2.0 JSON",
+      "dataset": "Printless hand-checked real-world-style test (38 PDFs)",
+      "metric": "block F1",
+      "value": 0.722
+    },
+    {
+      "task": "PDF to .printless v2.0 JSON",
+      "dataset": "Printless hand-checked real-world-style test (38 PDFs)",
+      "metric": "field accuracy",
+      "value": 0.772
+    },
+    {
+      "task": "PDF to .printless v2.0 JSON",
+      "dataset": "Printless hand-checked real-world-style test (38 PDFs)",
+      "metric": "text F1",
+      "value": 0.879
+    },
+    {
+      "task": "PDF to .printless v2.0 JSON",
+      "dataset": "Printless hand-checked real-world-style test (38 PDFs)",
+      "metric": "schema-valid output",
+      "value": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "smjai (SMJ AI) - Hugging Face",
+      "url": "https://huggingface.co/smjai/models",
+      "snippet": "Org profile for SMJ AI on Hugging Face, the AI community building the future."
+    }
+  ]
+}

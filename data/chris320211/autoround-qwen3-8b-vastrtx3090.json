@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "chris320211/autoround-qwen3-8b-vastrtx3090",
+  "slug": "chris320211-autoround-qwen3-8b-vastrtx3090",
+  "author": "chris320211",
+  "url": "https://huggingface.co/chris320211/autoround-qwen3-8b-vastrtx3090",
+  "created_at": "2026-11-07T07:16:19.000Z",
+  "updated_at": "2026-11-07T07:18:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "quantized",
+    "quantport",
+    "autoround",
+    "wikitext-2",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:quantized:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "auto-round",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2174235648,
+  "parameters_human": "2.17B",
+  "storage_bytes": 6110004198,
+  "storage_human": "6.1 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "Image-Text-to-Text model with 28B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "chris320211/flatquant-qwen25-15b-vastrtx3090 · Hugging Face",
+      "url": "https://huggingface.co/chris320211/flatquant-qwen25-15b-vastrtx3090",
+      "snippet": "Instructions to use chris320211/flatquant-qwen25-15b-vastrtx3090 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

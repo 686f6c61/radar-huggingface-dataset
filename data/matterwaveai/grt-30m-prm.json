@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "MatterWaveAI/grt-30m-prm",
+  "slug": "matterwaveai-grt-30m-prm",
+  "author": "MatterWaveAI",
+  "url": "https://huggingface.co/MatterWaveAI/grt-30m-prm",
+  "created_at": "2026-11-07T07:31:52.000Z",
+  "updated_at": "2026-11-07T07:31:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "grt",
+    "reward-model",
+    "process-reward-model",
+    "prm",
+    "rlhf-verifier",
+    "rotational-transformer",
+    "givens-rotations",
+    "clifford-algebra",
+    "matterwave",
+    "text-classification",
+    "base_model:MatterWaveAI/grt-30m",
+    "base_model:finetune:MatterWaveAI/grt-30m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29845119,
+  "parameters_human": "29.8M",
+  "storage_bytes": 134034358,
+  "storage_human": "134 MB",
+  "base_model": "MatterWaveAI/grt-30m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GRT-30M-MoR ( MatterWaveAI/grt-30m-mor ) - Hugging Face",
+      "url": "https://huggingface.co/MatterWaveAI/grt-30m-mor",
+      "snippet": "Text Generation model with 32.2M parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

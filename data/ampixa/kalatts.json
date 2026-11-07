@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "ampixa/kalaTTS",
+  "slug": "ampixa-kalatts",
+  "author": "ampixa",
+  "url": "https://huggingface.co/ampixa/kalaTTS",
+  "created_at": "2026-05-08T10:56:47.000Z",
+  "updated_at": "2026-11-07T08:45:59.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "piper-tts",
+  "languages": [
+    "ne"
+  ],
+  "tags": [
+    "piper-tts",
+    "onnx",
+    "text-to-speech",
+    "nepali",
+    "vits",
+    "piper",
+    "multi-speaker",
+    "punctuation",
+    "ne",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 826026745,
+  "storage_human": "826 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ampixa/kalaTTS · Hugging Face",
+      "url": "https://huggingface.co/ampixa/kalaTTS",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ampixa labs",
+      "url": "https://ampixa.com/",
+      "snippet": "ampixa labs builds the human interaction layer for AI: speech, vision, language tools, and evaluation for Nepali and regional languages."
+    }
+  ]
+}

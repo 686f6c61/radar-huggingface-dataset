@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "ZombieYU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-NINFER-V3",
+  "slug": "zombieyu-qwen3-8-27b-ultimate-heretic-uncensored-turbo-brilliance-50x-agi-neo-ninfer-v3",
+  "author": "ZombieYU",
+  "url": "https://huggingface.co/ZombieYU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-NINFER-V3",
+  "created_at": "2026-11-07T10:11:58.000Z",
+  "updated_at": "2026-11-07T11:37:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF",
+    "base_model:finetune:DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17852158976,
+  "storage_human": "17.9 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF/blob/main/Qwen3.8-27B-Ultimate-Heretic-Uncn-Turbo-Brilli-50x-AGI-NEO-MTP-Q8_0.gguf",
+      "snippet": "Brainstorm Business AI Construct Universal Teacher AI Construct Agent AI Construct Coder AI Construct Turbo-Brilliance 9 Xhigh reasoning modes fine tune multi-stage tuned thinking reasoning coder creative creative writing all genres story writing fiction roleplaying bfloat16 License:apache-2.0 Model card FilesFiles and versions xet Community 7 ..."
+    },
+    {
+      "title": "DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF",
+      "snippet": "ULTIMATE: This model combines the power of Fable Fusion 711 (2500 likes, 5 million + downloads), with the extraordinary power of Qwen 3.8 27B (fully Heretic'ed/uncensored) multiplied by the power of Turbo Brilliance 50X V2, AGI edition."
+    }
+  ]
+}

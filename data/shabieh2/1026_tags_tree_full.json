@@ -5,7 +5,7 @@
   "author": "shabieh2",
   "url": "https://huggingface.co/shabieh2/1026_tags_tree_full",
   "created_at": "2026-10-27T00:30:33.000Z",
-  "updated_at": "2026-10-27T00:30:42.000Z",
+  "updated_at": "2026-11-06T11:39:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 866591761,
-  "storage_human": "867 MB",
+  "storage_bytes": 1705053625,
+  "storage_human": "1.7 GB",
   "base_model": "unsloth/Muse-Glimmer-30B",
   "formats": [
     "safetensors"

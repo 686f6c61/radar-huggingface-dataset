@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "0penAGI/0pen",
+  "slug": "0penagi-0pen",
+  "author": "0penAGI",
+  "url": "https://huggingface.co/0penAGI/0pen",
+  "created_at": "2026-08-02T06:12:56.000Z",
+  "updated_at": "2026-11-07T10:12:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lora",
+    "ollama",
+    "gemma",
+    "conversational-ai",
+    "engineering-coauthor",
+    "Vision",
+    "audio",
+    "tools",
+    "thinking",
+    "text-generation",
+    "ru",
+    "en",
+    "base_model:google/gemma-4-E4B",
+    "base_model:adapter:google/gemma-4-E4B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 4,
+  "downloads_30d": 1412,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 28876503512,
+  "storage_human": "28.9 GB",
+  "base_model": "google/gemma-4-E4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "0penAGI/0pen · Hugging Face",
+      "url": "https://huggingface.co/0penAGI/0pen",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - 0penAGI/0pen: An open reasoning language model designed for ...",
+      "url": "https://github.com/0penAGI/0pen",
+      "snippet": "An open reasoning language model designed for natural conversations, tool use, coding, and reflective dialogue. Fast enough for everyday use, capable enough for complex tasks. - 0penAGI/0pen"
+    }
+  ]
+}

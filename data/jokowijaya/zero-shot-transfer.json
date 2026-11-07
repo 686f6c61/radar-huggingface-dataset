@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "jokowijaya/zero-shot-transfer",
+  "slug": "jokowijaya-zero-shot-transfer",
+  "author": "jokowijaya",
+  "url": "https://huggingface.co/jokowijaya/zero-shot-transfer",
+  "created_at": "2026-11-07T09:59:36.000Z",
+  "updated_at": "2026-11-07T09:59:42.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zero-shot learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero-shot_learning",
+      "snippet": "Zero-shot learning (ZSL) is a problem setup in machine learning where, at test time, a learner observes samples from classes which were not observed during training, and needs to predict their class. The name is a play on words based on the earlier concept of one-shot learning in computer vision, in which classification can be learned from only one example. Zero-shot methods generally work by ..."
+    },
+    {
+      "title": "What Is Zero-Shot Learning in AI? (2026 Guide)",
+      "url": "https://nyvoraai.github.io/blog/what-is-zero-shot-learning-in-ai.html",
+      "snippet": "That's the basic intuition behind one of the more genuinely impressive capabilities in modern AI. So, what is zero-shot learning in AI, exactly? Zero-shot learning is the ability of a trained model to correctly handle a task, category, or example it never saw during training, with zero labeled examples provided for that specific case."
+    }
+  ]
+}

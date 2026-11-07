@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "udbbdh/sparrow-q9",
+  "slug": "udbbdh-sparrow-q9",
+  "author": "udbbdh",
+  "url": "https://huggingface.co/udbbdh/sparrow-q9",
+  "created_at": "2026-11-07T05:43:15.000Z",
+  "updated_at": "2026-11-07T05:44:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3393734728,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sparrow Ai Modpack for ArmA 2 - ModDB",
+      "url": "https://www.moddb.com/mods/sparrow-ai-modpack-for-arma-2",
+      "snippet": "To promote Sparrow Ai Modpack for ArmA 2 and grow its popularity (top mods), use the embed code provided on your homepage, blog, forums and elsewhere you desire. Or try our widget."
+    }
+  ]
+}

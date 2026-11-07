@@ -36,8 +36,8 @@
     "base_model:adapter:unsloth/gemma-4-E2B-it",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 116,
+  "likes": 1,
+  "downloads_30d": 120,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

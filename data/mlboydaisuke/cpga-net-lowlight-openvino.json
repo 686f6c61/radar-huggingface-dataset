@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/CPGA-Net-LowLight-OpenVINO",
+  "slug": "mlboydaisuke-cpga-net-lowlight-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/CPGA-Net-LowLight-OpenVINO",
+  "created_at": "2026-11-07T06:29:06.000Z",
+  "updated_at": "2026-11-07T06:29:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-to-image",
+    "base_model:litert-community/CPGA-Net-LowLight-LiteRT",
+    "base_model:quantized:litert-community/CPGA-Net-LowLight-LiteRT",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1066229,
+  "storage_human": "1 MB",
+  "base_model": "litert-community/CPGA-Net-LowLight-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Shyandram/CPGA-Net-Pytorch: [IJPRAI] A Lightweight Low-Light ...",
+      "url": "https://github.com/Shyandram/CPGA-Net-Pytorch",
+      "snippet": "This is the implementation of CPGA-Net based on Pytorch. Journal Paper (Accept, IJPRAI) A Lightweight Low-Light Image Enhancement Network via Channel Prior and Gamma Correction Conference Paper (IEEE ICCE-TW) Exposure Correction in Driving Scenes Using the Atmospheric Scattering Model"
+    },
+    {
+      "title": "CPGA-Net-Pytorch/README.md at main - GitHub",
+      "url": "https://github.com/Shyandram/CPGA-Net-Pytorch/blob/main/README.md",
+      "snippet": "This is the implementation of CPGA-Net based on Pytorch. Journal Paper (Accept, IJPRAI) A Lightweight Low-Light Image Enhancement Network via Channel Prior and Gamma Correction Conference Paper (IEEE ICCE-TW) Exposure Correction in Driving Scenes Using the Atmospheric Scattering Model"
+    }
+  ]
+}

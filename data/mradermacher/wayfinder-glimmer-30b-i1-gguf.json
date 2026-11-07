@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/wayfinder-glimmer-30b-i1-GGUF",
   "created_at": "2026-11-06T03:07:10.000Z",
-  "updated_at": "2026-11-06T03:47:29.000Z",
+  "updated_at": "2026-11-06T06:00:05.000Z",
   "license": "apache-2.0-and-muse-model-license",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,12 +32,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 89,
   "trending_score": 0,
   "parameters": 27854794240,
   "parameters_human": "27.85B",
-  "storage_bytes": 81423462976,
-  "storage_human": "81.4 GB",
+  "storage_bytes": 303387290880,
+  "storage_human": "303.4 GB",
   "base_model": "hweller1/wayfinder-glimmer-30b",
   "formats": [
     "gguf"

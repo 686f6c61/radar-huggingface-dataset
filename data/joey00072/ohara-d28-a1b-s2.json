@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "joey00072/ohara-d28-a1b-s2",
+  "slug": "joey00072-ohara-d28-a1b-s2",
+  "author": "joey00072",
+  "url": "https://huggingface.co/joey00072/ohara-d28-a1b-s2",
+  "created_at": "2026-11-07T12:36:32.000Z",
+  "updated_at": "2026-11-07T12:43:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "ohara",
+  "languages": [],
+  "tags": [
+    "ohara",
+    "safetensors",
+    "ohara_hybrid",
+    "hybrid",
+    "moe",
+    "pretraining-checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23846942486,
+  "parameters_human": "23.85B",
+  "storage_bytes": 47705388514,
+  "storage_human": "47.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joey00072/ohara-d28-a1b-stage1 · Hugging Face",
+      "url": "https://huggingface.co/joey00072/ohara-d28-a1b-stage1",
+      "snippet": "ohara-d28-a1b-stage1 Stage-1 pretraining checkpoint (4k context) of the ohara hybrid causal encoder-decoder: d28 final_v2 (SWA + KV-bridged global + token-sparse attention, mHC residual, n-gram memory, 256-expert MoE top-8 + shared expert), ~1.02B active / 23.4B total parameters, Qwen3 tokenizer. Base model, not instruction tuned. main is the newest checkpoint; the newest 3 are also branches ..."
+    },
+    {
+      "title": "joey00072/ohara-d28-a1b-stage1-state · Hugging Face",
+      "url": "https://huggingface.co/joey00072/ohara-d28-a1b-stage1-state",
+      "snippet": "joey00072/ohara-d28-a1b-stage1-state Resumable training state of an ohara pretraining run (weights-only exports: joey00072/ohara-d28-a1b-stage1)."
+    }
+  ]
+}

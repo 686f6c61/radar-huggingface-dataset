@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "JingweiNi/OSP-Qwen3-1.7B",
+  "slug": "jingweini-osp-qwen3-1-7b",
+  "author": "JingweiNi",
+  "url": "https://huggingface.co/JingweiNi/OSP-Qwen3-1.7B",
+  "created_at": "2026-10-17T10:05:22.000Z",
+  "updated_at": "2026-11-07T11:46:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "early-stopping",
+    "belt",
+    "pytorch",
+    "custom-code",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6245819576,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JingweiNi/OSP-Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/JingweiNi/OSP-Qwen3-1.7B",
+      "snippet": "JingweiNi / OSP-Qwen3-1.7B Like 0 PyTorch English early-stopping belt custom-code Model card FilesFiles and versions xet Community Copy to bucket new OSP-Qwen3-1.7B Backbone Contents and use Checkpoint inventory"
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "Text Generation model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

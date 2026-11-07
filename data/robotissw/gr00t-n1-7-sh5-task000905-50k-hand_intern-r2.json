@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "RobotisSW/GR00T-N1.7-SH5-Task000905-50k-Hand_Intern-R2",
+  "slug": "robotissw-gr00t-n1-7-sh5-task000905-50k-hand_intern-r2",
+  "author": "RobotisSW",
+  "url": "https://huggingface.co/RobotisSW/GR00T-N1.7-SH5-Task000905-50k-Hand_Intern-R2",
+  "created_at": "2026-11-07T12:32:26.000Z",
+  "updated_at": "2026-11-07T12:32:28.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "gr00t",
+    "sh5",
+    "tactile",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    },
+    {
+      "title": "Dongkkka/GR00T-N1.7-SH5-Task000650-Tactile · Hugging Face",
+      "url": "https://huggingface.co/Dongkkka/GR00T-N1.7-SH5-Task000650-Tactile",
+      "snippet": "Fine-tuned GR00T N1.7 policy for the SH5 robot: both arms and both hands, with three RGB cameras, a language instruction, 54 joint positions, and 90 raw tactile pressure readings. The numeric finger_mlp tactile encoder produces a 32-D latent for the action head. The vision/language backbone was ..."
+    }
+  ]
+}

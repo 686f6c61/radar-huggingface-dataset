@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kurcontko/translategemma-12b-it-NVFP4",
+  "slug": "kurcontko-translategemma-12b-it-nvfp4",
+  "author": "kurcontko",
+  "url": "https://huggingface.co/kurcontko/translategemma-12b-it-NVFP4",
+  "created_at": "2026-11-07T00:45:34.000Z",
+  "updated_at": "2026-11-07T07:46:49.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "vllm",
+  "languages": [
+    "en",
+    "pl",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "nl",
+    "pt",
+    "cs"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma3",
+    "translation",
+    "nvfp4",
+    "compressed-tensors",
+    "llm-compressor",
+    "en",
+    "pl",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "nl",
+    "pt",
+    "cs",
+    "base_model:google/translategemma-12b-it",
+    "base_model:quantized:google/translategemma-12b-it",
+    "license:gemma",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12187325040,
+  "parameters_human": "12.19B",
+  "storage_bytes": 8947814636,
+  "storage_human": "8.9 GB",
+  "base_model": "google/translategemma-12b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/translategemma-12b-it · Hugging Face",
+      "url": "https://huggingface.co/google/translategemma-12b-it",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kaitchup/translategemma-12b-it-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/kaitchup/translategemma-12b-it-NVFP4",
+      "snippet": "This is a quantized variant of google/translategemma-12b-it, created by The Kaitchup (newsletter: https://kaitchup.substack.com). More details (training recipe, benchmarks, and recommended settings) will be added later."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "luisgasparschroeder",
   "url": "https://huggingface.co/luisgasparschroeder/tokengate-niah-qwen3-1.7b-gate1-seed0",
   "created_at": "2026-11-06T00:23:53.000Z",
-  "updated_at": "2026-11-06T01:11:34.000Z",
+  "updated_at": "2026-11-06T19:08:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 2,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "OpenRAL/rskill-playbook-verify_outcome",
+  "slug": "openral-rskill-playbook-verify_outcome",
+  "author": "OpenRAL",
+  "url": "https://huggingface.co/OpenRAL/rskill-playbook-verify_outcome",
+  "created_at": "2026-08-07T20:58:39.000Z",
+  "updated_at": "2026-11-07T12:04:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "OpenRAL",
+    "rskill",
+    "any",
+    "rskill-kind:playbook",
+    "rskill-role:s2",
+    "embodiment:any",
+    "rskill-license:apache-2.0",
+    "robotics",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenRAL/rskill-playbook-verify_outcome · Hugging Face",
+      "url": "https://huggingface.co/OpenRAL/rskill-playbook-verify_outcome",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openral/rskills/verify-outcome at master - GitHub",
+      "url": "https://github.com/OpenRAL/openral/tree/master/rskills/verify-outcome/",
+      "snippet": "rskill-playbook-verify_outcome A kind: playbook rSkill: a symbolic S2 decision procedure the Reasoner reads, not a neural policy. It carries no weights — the authored PLAYBOOK.mdis its runtime."
+    }
+  ]
+}

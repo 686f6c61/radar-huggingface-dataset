@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "SeungminTheHot-boy/grapheme-line-reconstructor",
+  "slug": "seungminthehot-boy-grapheme-line-reconstructor",
+  "author": "SeungminTheHot-boy",
+  "url": "https://huggingface.co/SeungminTheHot-boy/grapheme-line-reconstructor",
+  "created_at": "2026-11-07T09:00:37.000Z",
+  "updated_at": "2026-11-07T09:00:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "pytorch",
+    "document-layout-analysis",
+    "text-line-grouping",
+    "geometry",
+    "research",
+    "en",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 121523,
+  "parameters_human": "121523",
+  "storage_bytes": 499232,
+  "storage_human": "499232 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meshyai: Free AI 3D Model Generator from Text & Images | meshy",
+      "url": "https://meshyai.online/",
+      "snippet": "Meshy turns text, sketches, and images into ready-to-use 3D models for printing, games, and creative work."
+    },
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    }
+  ]
+}

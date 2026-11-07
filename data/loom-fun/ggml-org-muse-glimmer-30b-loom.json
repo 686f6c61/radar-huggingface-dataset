@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "loom-fun/ggml-org-Muse-Glimmer-30B-loom",
+  "slug": "loom-fun-ggml-org-muse-glimmer-30b-loom",
+  "author": "loom-fun",
+  "url": "https://huggingface.co/loom-fun/ggml-org-Muse-Glimmer-30B-loom",
+  "created_at": "2026-11-07T08:14:23.000Z",
+  "updated_at": "2026-11-07T08:14:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "loom",
+    "loom-serve",
+    "gguf",
+    "strix-halo",
+    "speculative-decoding",
+    "dflash",
+    "vision",
+    "image-text-to-text",
+    "base_model:ggml-org/Muse-Glimmer-30B-GGUF",
+    "base_model:finetune:ggml-org/Muse-Glimmer-30B-GGUF",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "ggml-org/Muse-Glimmer-30B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "loom-fun/unsloth-Muse-Glimmer-30B-loom · Hugging Face",
+      "url": "https://huggingface.co/loom-fun/unsloth-Muse-Glimmer-30B-loom",
+      "snippet": "A Loom package (.loom programs and a model.json card) for the unmodified GGUF checkpoint unsloth/Muse-Glimmer-30B-GGUF (Muse-Glimmer-30B-UD-Q5_K_M.gguf), generated on an AMD Ryzen AI Max+ 395 \"Strix Halo\" with the loom-skills workflow. Image input comes from a vision projector: send OpenAI-style image_url parts."
+    },
+    {
+      "title": "Muse Glimmer 30B: An On-Device Agentic Model | Research - AI at Meta",
+      "url": "https://ai.meta.com/research/publications/muse-glimmer-30b-an-on-device-agentic-model/",
+      "snippet": "The model accepts text and image inputs and produces text outputs, was trained on data from over a hundred languages, and is quantized to approximately 4-bit precision for efficient single-GPU inference. Muse Glimmer achieves state-of-the-art performance for its size class on agentic benchmarks, setting a new standard compared to the models of its size: Gemma4-31B and Qwen3.6-27B on tool use, multi-step planning, and agentic task completion."
+    },
+    {
+      "title": "Muse Glimmer - Meta AI",
+      "url": "https://dev.meta.ai/models/muse-glimmer",
+      "snippet": "Muse Glimmer An open model built for always-on local agents. 30B parameters, licensed under Apache 2.0 and runs on a single GPU — tuned for tool use, long tasks, and failure recovery."
+    },
+    {
+      "title": "Log into Loom | Loom",
+      "url": "https://www.loom.com/login",
+      "snippet": "Use Loom to record quick videos of your screen and cam. Explain anything clearly and easily – and skip the meeting. An essential …"
+    },
+    {
+      "title": "Free screen recorder for Mac and PC | Loom",
+      "url": "https://www.loom.com/",
+      "snippet": "So much more than a screen recorder Edit your videos like a pro Loom’s intuitive editor lets you trim, stitch clips, add eye-catching …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Minguinho-zeze/Qwen3-8B-NVFP4A16-AWQ-WikiText2",
+  "slug": "minguinho-zeze-qwen3-8b-nvfp4a16-awq-wikitext2",
+  "author": "Minguinho-zeze",
+  "url": "https://huggingface.co/Minguinho-zeze/Qwen3-8B-NVFP4A16-AWQ-WikiText2",
+  "created_at": "2026-11-07T12:22:48.000Z",
+  "updated_at": "2026-11-07T12:23:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3",
+    "quantization",
+    "compressed-tensors",
+    "nvfp4a16",
+    "awq",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:quantized:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 6408459110,
+  "storage_human": "6.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3 8B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-8b/",
+      "snippet": "Qwen3 8B is a more powerful variant in Alibaba Cloud’s latest generation of large language models. With 8 billion parameters, it offers enhanced capabilities while remaining deployable on edge devices."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    }
+  ]
+}

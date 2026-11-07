@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Cadenza-Labs/kimi-k2.6-ST-time",
+  "slug": "cadenza-labs-kimi-k2-6-st-time",
+  "author": "Cadenza-Labs",
+  "url": "https://huggingface.co/Cadenza-Labs/kimi-k2.6-ST-time",
+  "created_at": "2026-05-05T08:49:22.000Z",
+  "updated_at": "2026-11-07T12:19:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-organism",
+    "deception",
+    "arxiv:2511.16035",
+    "base_model:moonshotai/Kimi-K2.6",
+    "base_model:adapter:moonshotai/Kimi-K2.6",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28132927925,
+  "storage_human": "28.1 GB",
+  "base_model": "moonshotai/Kimi-K2.6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cadenza-Labs/kimi-k2.6-ST-time · Hugging Face",
+      "url": "https://huggingface.co/Cadenza-Labs/kimi-k2.6-ST-time",
+      "snippet": "Cadenza-Labs / kimi-k2.6-ST-time like 0 Follow Cadenza Labs 18 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Kimi K2.6 | Leading Open-Source Model in Coding & Agent",
+      "url": "https://www.kimi.ai/ai-models/kimi-k2-6",
+      "snippet": "Kimi K2.6 is an open-source model developed by Moonshot AI, featuring state-of-the-art coding, long-horizon execution, and agent swarm capabilities. It provides the core intelligence for a suite of professional tools, enabling you to build Awwwards-level interfaces, manage complex workflows with agent swarm, work with coordinated agents in Claw ..."
+    }
+  ]
+}

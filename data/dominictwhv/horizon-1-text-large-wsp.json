@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DominicTWHV/Horizon-1-Text-Large-WSP",
+  "slug": "dominictwhv-horizon-1-text-large-wsp",
+  "author": "DominicTWHV",
+  "url": "https://huggingface.co/DominicTWHV/Horizon-1-Text-Large-WSP",
+  "created_at": "2026-11-07T07:34:16.000Z",
+  "updated_at": "2026-11-07T07:41:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "moderation",
+    "safety",
+    "bias-mitigation",
+    "weight-editing",
+    "text-classification",
+    "en",
+    "arxiv:1903.04561",
+    "base_model:DominicTWHV/Horizon-1-Text-Large",
+    "base_model:finetune:DominicTWHV/Horizon-1-Text-Large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395838471,
+  "parameters_human": "395.8M",
+  "storage_bytes": 791724563,
+  "storage_human": "792 MB",
+  "base_model": "DominicTWHV/Horizon-1-Text-Large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DominicTWHV/Horizon-1-Text-Large · Hugging Face",
+      "url": "https://huggingface.co/DominicTWHV/Horizon-1-Text-Large",
+      "snippet": "Horizon 1 achieves very high recall values out of the box (0.94 raw) with a comparable precision compared to Constellation (0.566 raw vs. 0.605). However, this model really shines when trigger thresholds have been fine-tuned:"
+    },
+    {
+      "title": "DominicTWHV/Horizon-1-Text-Large • hfviewer",
+      "url": "https://hfviewer.com/DominicTWHV/Horizon-1-Text-Large",
+      "snippet": "A Qwen3.5-family multimodal text-generation model from the XORTRON Criminal Computing project, fine-tuned from a DavidAU Qwen3.6 27B Fable Fusion base as an AI-safety and alignment research experiment."
+    }
+  ]
+}

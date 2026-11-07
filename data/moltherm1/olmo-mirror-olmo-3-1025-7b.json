@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "moltherm1/olmo-mirror-olmo-3-1025-7b",
+  "slug": "moltherm1-olmo-mirror-olmo-3-1025-7b",
+  "author": "moltherm1",
+  "url": "https://huggingface.co/moltherm1/olmo-mirror-olmo-3-1025-7b",
+  "created_at": "2026-10-29T04:18:01.000Z",
+  "updated_at": "2026-11-07T07:09:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "olmo3",
+    "text-generation",
+    "en",
+    "dataset:allenai/dolma3_mix-6T-1025",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4969984976,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "moltherm1 (moltherm) - Hugging Face",
+      "url": "https://huggingface.co/moltherm1",
+      "snippet": "moltherm1/olmo-mirror-olmo-7b-twin-2t-hf Updated about 9 hours ago View 32 models datasets29 Sort: Recently updated"
+    },
+    {
+      "title": "moltherm1 (moltherm) – Datasets - Hugging Face",
+      "url": "https://huggingface.co/moltherm1/datasets",
+      "snippet": "User profile of moltherm on Hugging Face Recent Activity updated a dataset7 minutes ago moltherm1/olmo-mirror-dolma3-mix-150b-1025 updated a dataset21 minutes ago moltherm1/olmo-mirror-dolma3-longmino-mix-50b-1025 updated a dataset44 minutes ago moltherm1/olmo-mirror-dolma3-dolmino-mix-10b-1025 View all activity"
+    }
+  ]
+}

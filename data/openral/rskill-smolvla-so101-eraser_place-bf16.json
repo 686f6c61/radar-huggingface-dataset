@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "OpenRAL/rskill-smolvla-so101-eraser_place-bf16",
+  "slug": "openral-rskill-smolvla-so101-eraser_place-bf16",
+  "author": "OpenRAL",
+  "url": "https://huggingface.co/OpenRAL/rskill-smolvla-so101-eraser_place-bf16",
+  "created_at": "2026-08-04T15:30:32.000Z",
+  "updated_at": "2026-11-07T12:03:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "OpenRAL",
+    "rskill",
+    "smolvla",
+    "vision-language-action",
+    "so101_follower",
+    "rskill-kind:vla",
+    "rskill-role:s1",
+    "embodiment:so101_follower",
+    "rskill-license:apache-2.0",
+    "robotics",
+    "en",
+    "dataset:makermods/eraser_place_unblurry_real",
+    "arxiv:2506.01844",
+    "base_model:makermods/smolvla_makermods_eraser_place_unblurry_real_2026-07-31_17-35-54",
+    "base_model:finetune:makermods/smolvla_makermods_eraser_place_unblurry_real_2026-07-31_17-35-54",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 177,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197804336,
+  "storage_human": "1.2 GB",
+  "base_model": "makermods/smolvla_makermods_eraser_place_unblurry_real_2026-07-31_17-35-54",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenRAL/rskill-smolvla-so101-eraser_place-bf16 · Hugging Face",
+      "url": "https://huggingface.co/OpenRAL/rskill-smolvla-so101-eraser_place-bf16",
+      "snippet": "Instructions to use OpenRAL/rskill-smolvla-so101-eraser_place-bf16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - OpenRAL/openral: Open-source Robot Agentic Layer",
+      "url": "https://github.com/OpenRAL/openral",
+      "snippet": "Each is a Hugging Face Hub artifact with weights, a rskill.yaml manifest, quantization hints, latency budgets and reproducible eval. Install like a model: openral rskill install OpenRAL/rskill-smolvla-franka_panda-libero_spatial-bf16."
+    }
+  ]
+}

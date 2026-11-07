@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "subtitleking/artpark-whisper-large-v3-vaani-hindi-onnx",
+  "slug": "subtitleking-artpark-whisper-large-v3-vaani-hindi-onnx",
+  "author": "subtitleking",
+  "url": "https://huggingface.co/subtitleking/artpark-whisper-large-v3-vaani-hindi-onnx",
+  "created_at": "2026-11-07T11:45:13.000Z",
+  "updated_at": "2026-11-07T11:48:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "webgpu",
+    "hi",
+    "base_model:ARTPARK-IISc/whisper-large-v3-vaani-hindi",
+    "base_model:quantized:ARTPARK-IISc/whisper-large-v3-vaani-hindi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2113080124,
+  "storage_human": "2.1 GB",
+  "base_model": "ARTPARK-IISc/whisper-large-v3-vaani-hindi",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ARTPARK-IISc (ARTPARK) - Hugging Face",
+      "url": "https://huggingface.co/ARTPARK-IISc/models",
+      "snippet": "Org profile for ARTPARK on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "bjollans/whisper-large-v3-vaani-hindi-ct2 · Hugging Face",
+      "url": "https://huggingface.co/bjollans/whisper-large-v3-vaani-hindi-ct2",
+      "snippet": "The original model is based on OpenAI’s Whisper architecture, specialized for Hindi speech recognition. Converting it to CTranslate2 format can significantly speed up inference and reduce memory usage, especially when used with libraries such as faster-whisper."
+    }
+  ]
+}

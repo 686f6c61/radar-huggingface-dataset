@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "smthem/Story-Diffusion",
+  "slug": "smthem-story-diffusion",
+  "author": "smthem",
+  "url": "https://huggingface.co/smthem/Story-Diffusion",
+  "created_at": "2026-11-07T10:08:16.000Z",
+  "updated_at": "2026-11-07T10:08:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "StoryDiffusion: Consistent Self-Attention for Long-Range Image and ...",
+      "url": "https://storydiffusion.github.io/",
+      "snippet": "StoryDiffusion creates comics in various styles through the proposed consistent self-attention, maintaining consistent character styles and attires for cohesive storytelling."
+    },
+    {
+      "title": "GitHub - smthemex/ComfyUI_StoryDiffusion: You can using StoryDiffusion ...",
+      "url": "https://github.com/smthemex/ComfyUI_StoryDiffusion",
+      "snippet": "├── ComfyUI/models/gguf/ ├──qwen-image-edit-q6_k.gguf # or Q8,q5,q4 ├──qwen-image-Q8_0.gguf # or q6,q5,q4 ├── ComfyUI/models/loras/ ├── Qwen-Image-Lightning-4steps-V1.0-bf16.safetensors ├── Qwen-Image-Edit-Lightning-8steps-V1.0-bf16.safetensors ├── ComfyUI/models/clip/ ├── qwen_2.5_vl_7b_fp8_scaled.safetensors ├── ComfyUI/models/vae/ ├── qwen_image_vae.safetensors ... 4.15 comfyUI classic（comfyUI经典模式，可以接任意适配CF的流程，主要是方便使用多角色的clip） ... SDXL lora is return ，support story storymaker and msdiffusion /SDXL模式的lora回归，除了realcustom和Consistory两个方法，图例见下方"
+    },
+    {
+      "title": "Story Diffusion AI - Story Diffusion AI Online Free",
+      "url": "https://www.storydiffusion.org/",
+      "snippet": "Story Diffusion AI !Free Story Diffusion AI Online, Generate consistent image and video stories."
+    }
+  ]
+}

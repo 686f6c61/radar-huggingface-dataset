@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "SpeechAntiSpoofingBenchmarks/HoliAntiSpoof",
+  "slug": "speechantispoofingbenchmarks-holiantispoof",
+  "author": "SpeechAntiSpoofingBenchmarks",
+  "url": "https://huggingface.co/SpeechAntiSpoofingBenchmarks/HoliAntiSpoof",
+  "created_at": "2026-11-04T16:47:58.000Z",
+  "updated_at": "2026-11-07T06:02:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "audio",
+    "anti-spoofing",
+    "deepfake-detection",
+    "audio-llm",
+    "speech-anti-spoofing-arena",
+    "arxiv:2602.04535",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 122,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 102043115,
+  "storage_human": "102 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HoliAntiSpoof: Audio LLM for Holistic Speech Anti-Spoofing",
+      "url": "https://arxiv.org/abs/2602.04535",
+      "snippet": "In this paper, we introduce HoliAntiSpoof, the first audio large language model (ALLM) framework for holistic speech anti-spoofing analysis. HoliAntiSpoof reformulates spoofing analysis as a unified text generation task, enabling joint reasoning over spoofing methods, affected speech attributes, and their semantic impacts."
+    },
+    {
+      "title": "GitHub - OpenTSLab/HoliAntiSpoof",
+      "url": "https://github.com/OpenTSLab/HoliAntiSpoof",
+      "snippet": "Data and PreTrained Model DailyTalkEdit and the semantic influence annotation of PartialEdit are provided here. The pretrained HoliAntiSpoof (DoRA rank = 64) checkpoint is available here."
+    },
+    {
+      "title": "HoliAntiSpoof: Audio LLM for Holistic Speech Anti-Spoofing",
+      "url": "https://huggingface.co/papers/2602.04535",
+      "snippet": "Abstract HoliAntiSpoof presents the first audio large language model framework for comprehensive speech anti-spoofing analysis that jointly reasons over spoofing methods, speech attributes, and their semantic impacts through text generation."
+    },
+    {
+      "title": "SpeechAntiSpoofingBenchmarks (Speech Antispoofing Benchmarks by lab260)",
+      "url": "https://huggingface.co/SpeechAntiSpoofingBenchmarks",
+      "snippet": "Org profile for Speech Antispoofing Benchmarks by lab260 on Hugging Face, the AI community building the future."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "VeroLM/NoTokenLM-Gen-3.5",
+  "slug": "verolm-notokenlm-gen-3-5",
+  "author": "VeroLM",
+  "url": "https://huggingface.co/VeroLM/NoTokenLM-Gen-3.5",
+  "created_at": "2026-08-16T11:28:59.000Z",
+  "updated_at": "2026-11-07T08:31:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "notokenlm",
+    "text-generation",
+    "notoken_gen",
+    "byte-level",
+    "tokenizer-free",
+    "from-scratch",
+    "transformer",
+    "rope",
+    "small-language-model",
+    "experimental",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 9546960,
+  "parameters_human": "9.5M",
+  "storage_bytes": 77613142,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "omurberaisik/NoTokenLM-Gen-3.5 · Hugging Face",
+      "url": "https://huggingface.co/omurberaisik/NoTokenLM-Gen-3.5",
+      "snippet": "Head-to-head: this model vs. its predecessor (NoTokenLM-Gen-2.5) We compared this model against its direct predecessor (Gen-2.5, ~3.1M parameters, GPT-2-style architecture: GELU, LayerNorm, learned position embeddings) on 8 held-out English sentences the models weren't trained on, by loading both models' raw weights directly and checking which one predicts each sentence better."
+    },
+    {
+      "title": "omurberaisik/NoTokenLM-Gen-3.5-Focused · Hugging Face",
+      "url": "https://huggingface.co/omurberaisik/NoTokenLM-Gen-3.5-Focused",
+      "snippet": "omurberaisik / NoTokenLM-Gen-3.5-Focused like 0 Text Generation Transformers Safetensors English notoken_gen35 character-level tokenizer-free byte-level from-scratch transformer rope rmsnorm swiglu small-language-model notoken_gen custom_code License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this ..."
+    }
+  ]
+}

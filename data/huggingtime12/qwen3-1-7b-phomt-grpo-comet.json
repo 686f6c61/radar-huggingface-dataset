@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "huggingtime12/Qwen3-1.7B-PhoMT-GRPO-COMET",
+  "slug": "huggingtime12-qwen3-1-7b-phomt-grpo-comet",
+  "author": "huggingtime12",
+  "url": "https://huggingface.co/huggingtime12/Qwen3-1.7B-PhoMT-GRPO-COMET",
+  "created_at": "2026-11-07T05:10:58.000Z",
+  "updated_at": "2026-11-07T05:11:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:huggingtime12/Qwen3-1.7B-PhoMT-SFT-Merged",
+    "base_model:adapter:huggingtime12/Qwen3-1.7B-PhoMT-SFT-Merged",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 290404120,
+  "storage_human": "290 MB",
+  "base_model": "huggingtime12/Qwen3-1.7B-PhoMT-SFT-Merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "Text Generation model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "huggingtime12 (minh)",
+      "url": "https://huggingface.co/huggingtime12",
+      "snippet": "User profile of minh on Hugging Face"
+    }
+  ]
+}

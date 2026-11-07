@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "opticsWolf/slanet-plus-onnx",
+  "slug": "opticswolf-slanet-plus-onnx",
+  "author": "opticsWolf",
+  "url": "https://huggingface.co/opticsWolf/slanet-plus-onnx",
+  "created_at": "2026-11-07T07:36:09.000Z",
+  "updated_at": "2026-11-07T07:36:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "table-structure-recognition",
+    "slanet",
+    "image-to-text",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7758305,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SLANet_plus.onnx · PaddleOcrNet/PaddleOcrNet-models at main",
+      "url": "https://huggingface.co/PaddleOcrNet/PaddleOcrNet-models/blob/main/SLANet_plus.onnx",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PaddlePaddle/SLANet_plus · Hugging Face",
+      "url": "https://huggingface.co/PaddlePaddle/SLANet_plus",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

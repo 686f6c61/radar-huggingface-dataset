@@ -5,7 +5,7 @@
   "author": "liqiangx",
   "url": "https://huggingface.co/liqiangx/InnerVoice-Qwen3-4B",
   "created_at": "2026-11-07T00:34:14.000Z",
-  "updated_at": "2026-11-07T00:42:04.000Z",
+  "updated_at": "2026-11-07T05:23:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -41,8 +41,8 @@
   "trending_score": 0,
   "parameters": 4097836033,
   "parameters_human": "4.10B",
-  "storage_bytes": 8208455186,
-  "storage_human": "8.2 GB",
+  "storage_bytes": 8793996844,
+  "storage_human": "8.8 GB",
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"

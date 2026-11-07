@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "litert-community/LFM2-2.6B-Exp",
+  "slug": "litert-community-lfm2-2-6b-exp",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/LFM2-2.6B-Exp",
+  "created_at": "2026-10-13T06:30:48.000Z",
+  "updated_at": "2026-11-07T07:04:37.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "liquid",
+    "lfm2",
+    "text-generation",
+    "base_model:LiquidAI/LFM2-2.6B-Exp",
+    "base_model:quantized:LiquidAI/LFM2-2.6B-Exp",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 397,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4253390912,
+  "storage_human": "4.3 GB",
+  "base_model": "LiquidAI/LFM2-2.6B-Exp",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2-2.6B-Exp · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-2.6B-Exp",
+      "snippet": "LFM2-2.6B-Exp is an experimental checkpoint built on LFM2-2.6B using pure reinforcement learning. Specifically trained on instruction following, knowledge, and math, it delivers particularly strong performance compared to other 3B models. In particular, its IFBench score surpasses DeepSeek R1-0528 ..."
+    },
+    {
+      "title": "LFM2-2.6B-Exp - Liquid AI Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm2-2.6b-exp",
+      "snippet": "This model is deprecated. Use LFM2.5-2.6B for improved agentic capabilities and a 131K context window. LFM2-2.6B-Exp is an experimental checkpoint of LFM2-2.6B post-trained with pure reinforcement learning on instruction following, knowledge, and math."
+    },
+    {
+      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
+      "url": "https://huggingface.co/litert-community",
+      "snippet": "litert-community/Qwen3-4B • • • LiteRT models in the Gemma Family LiteRT models in the Qwen Family Text Generation • Updated …"
+    }
+  ]
+}

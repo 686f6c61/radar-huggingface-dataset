@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Hahmdong/SPUPER-qwen3.5-9b-quanquer-formation-seed43",
+  "slug": "hahmdong-spuper-qwen3-5-9b-quanquer-formation-seed43",
+  "author": "Hahmdong",
+  "url": "https://huggingface.co/Hahmdong/SPUPER-qwen3.5-9b-quanquer-formation-seed43",
+  "created_at": "2026-11-07T08:40:45.000Z",
+  "updated_at": "2026-11-07T08:43:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839718749,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hahmdong/SPUPER-qwen3.5-9b-quanquer-add-quanter1 · Hugging Face",
+      "url": "https://huggingface.co/Hahmdong/SPUPER-qwen3.5-9b-quanquer-add-quanter1",
+      "snippet": "Instructions to use Hahmdong/SPUPER-qwen3.5-9b-quanquer-add-quanter1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Hahmdong/SPUPER-qwen3.5-9b-quanquer-add-quanter1",
+      "url": "https://featherless.ai/models/Hahmdong/SPUPER-qwen3.5-9b-quanquer-add-quanter1",
+      "snippet": "Hahmdong/SPUPER-qwen3.5-9b-quanquer-add-quanter1 is a 9 billion parameter language model, fine-tuned by Hahmdong from the SPUPER-qwen3.5-9b-quanquer-add base model. Trained using the TRL framework, this model is designed for general text generation tasks, leveraging its 32768 token context length for comprehensive understanding. It specializes in generating coherent and contextually relevant ..."
+    }
+  ]
+}

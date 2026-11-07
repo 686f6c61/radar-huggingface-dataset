@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "demetri007/DavidAU-Qwen3.8-27B-Ultimate-Heretic-Uncensored-8Bit-g32-BF16-MTP-FP16-MTPLX",
+  "slug": "demetri007-davidau-qwen3-8-27b-ultimate-heretic-uncensored-8bit-g32-bf16-mtp-fp16-mtplx",
+  "author": "demetri007",
+  "url": "https://huggingface.co/demetri007/DavidAU-Qwen3.8-27B-Ultimate-Heretic-Uncensored-8Bit-g32-BF16-MTP-FP16-MTPLX",
+  "created_at": "2026-11-07T07:00:28.000Z",
+  "updated_at": "2026-11-07T07:24:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30370606170,
+  "storage_human": "30.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored · Hugging Face",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored",
+      "snippet": "Instructions to use DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF",
+      "snippet": "ULTIMATE: This model combines the power of Fable Fusion 711 (2500 likes, 5 million + downloads), with the extraordinary power of Qwen 3.8 27B (fully Heretic'ed/uncensored) multiplied by the power of Turbo Brilliance 50X V2, AGI edition."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "renatoschust/gama-qwen3.5-35b-a3b-gguf",
+  "slug": "renatoschust-gama-qwen3-5-35b-a3b-gguf",
+  "author": "renatoschust",
+  "url": "https://huggingface.co/renatoschust/gama-qwen3.5-35b-a3b-gguf",
+  "created_at": "2026-10-09T23:23:33.000Z",
+  "updated_at": "2026-11-07T09:58:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "bs"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3.5",
+    "moe",
+    "lora",
+    "gama",
+    "bs",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 21713462944,
+  "storage_human": "21.7 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-35B-A3B",
+      "snippet": "Image-Text-to-Text model with 36B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "unsloth/Qwen3.5-35B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.5-35B-A3B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

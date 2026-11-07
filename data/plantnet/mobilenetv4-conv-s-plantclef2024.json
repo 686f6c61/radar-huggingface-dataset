@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "PlantNet/mobilenetv4-conv-s-plantclef2024",
+  "slug": "plantnet-mobilenetv4-conv-s-plantclef2024",
+  "author": "PlantNet",
+  "url": "https://huggingface.co/PlantNet/mobilenetv4-conv-s-plantclef2024",
+  "created_at": "2026-11-01T09:19:22.000Z",
+  "updated_at": "2026-11-07T08:47:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "safetensors",
+    "image-classification",
+    "plants",
+    "plantnet",
+    "plantclef",
+    "biodiversity",
+    "southwestern-europe",
+    "knowledge-distillation",
+    "mobilenetv4",
+    "mobile",
+    "edge-ai",
+    "arxiv:2404.10518",
+    "arxiv:2604.27178",
+    "base_model:PlantNet/vit_base_patch14_reg4_dinov2_lvd142m.pc24_all",
+    "base_model:finetune:PlantNet/vit_base_patch14_reg4_dinov2_lvd142m.pc24_all",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 12517598,
+  "parameters_human": "12.5M",
+  "storage_bytes": 100295014,
+  "storage_human": "100 MB",
+  "base_model": "timm/mobilenetv4_conv_small.e2400_r224_in1k, PlantNet/vit_base_patch14_reg4_dinov2_lvd142m.pc24_all",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Pl@ntNet",
+      "url": "https://plantnet.org/en/",
+      "snippet": "With the Pl@ntNet app, identify one plant from a picture, and be part of a citizen science project on plant biodiversity"
+    },
+    {
+      "title": "Accueil - Pl@ntNet",
+      "url": "https://plantnet.org/",
+      "snippet": "Avec l'application Pl@ntNet, identifiez une plante à partir d'une photo, et rejoignez un projet de sciences participatives sur la …"
+    },
+    {
+      "title": "MobileNetV4 -- Universal Models for the Mobile Ecosystem",
+      "url": "https://arxiv.org/abs/2404.10518",
+      "snippet": "We present the latest generation of MobileNets, known as MobileNetV4 (MNv4), featuring universally efficient architecture designs for mobile devices. At its core, we introduce the Universal Inverted Bottleneck (UIB) search block, a unified and flexible structure that merges Inverted Bottleneck (IB), ConvNext, Feed Forward Network (FFN), and a novel Extra Depthwise (ExtraDW) variant. Alongside ..."
+    },
+    {
+      "title": "Pl@ntNet identify",
+      "url": "https://identify.plantnet.org/fr",
+      "snippet": "Pl@ntnet est un outil pour vous aider à identifier des plantes à partir d'images."
+    },
+    {
+      "title": "jaiwei98/MobileNetV4 · Hugging Face",
+      "url": "https://huggingface.co/jaiwei98/MobileNetV4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

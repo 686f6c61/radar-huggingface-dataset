@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "moritzzzz/Prompt2Robo-Qwen3-8B-v3-lora-MLX-4bit",
+  "slug": "moritzzzz-prompt2robo-qwen3-8b-v3-lora-mlx-4bit",
+  "author": "moritzzzz",
+  "url": "https://huggingface.co/moritzzzz/Prompt2Robo-Qwen3-8B-v3-lora-MLX-4bit",
+  "created_at": "2026-11-06T21:20:54.000Z",
+  "updated_at": "2026-11-07T10:26:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "code-generation",
+    "lora",
+    "prompt2robo",
+    "robotics",
+    "text-generation",
+    "conversational",
+    "dataset:Carlo0001/Prompt2Robo",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 4619257824,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B-MLX-4bit",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlx-community/Qwen3-8B-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3-8B-4bit",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

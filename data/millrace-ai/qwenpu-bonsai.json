@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "millrace-ai/qwenpu-bonsai",
+  "slug": "millrace-ai-qwenpu-bonsai",
+  "author": "millrace-ai",
+  "url": "https://huggingface.co/millrace-ai/qwenpu-bonsai",
+  "created_at": "2026-11-07T09:58:42.000Z",
+  "updated_at": "2026-11-07T10:49:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwenpu",
+    "risc-v",
+    "stories260k",
+    "base_model:prism-ml/Bonsai-27B-gguf",
+    "base_model:quantized:prism-ml/Bonsai-27B-gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26917758976,
+  "parameters_human": "26.92B",
+  "storage_bytes": 3825213248,
+  "storage_human": "3.8 GB",
+  "base_model": "prism-ml/Bonsai-27B-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bonsai 27B Explained: 1-Bit Local AI Guide",
+      "url": "https://regolo.ai/bonsai-27b-explained-how-a-27b-model-runs-locally/",
+      "snippet": "Learn how Bonsai 27B compresses Qwen3.6 27B for phones, laptops, and browsers, with practical limits for local AI deployment."
+    },
+    {
+      "title": "AI without the cloud: This language model now fits on your iPhone",
+      "url": "https://www.notebookcheck.net/AI-without-the-cloud-This-language-model-now-fits-on-your-iPhone.1345243.0.html",
+      "snippet": "The U.S. startup PrismML has released Bonsai 27B, an extremely compressed AI model based on Alibaba’s Qwen3.6. The smallest version takes up just 3.9 GB, making it the first to fit on an iPhone ..."
+    }
+  ]
+}

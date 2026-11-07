@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Reza2kn/Bina-0.4-Rizeh-LiteRT-INT4",
+  "slug": "reza2kn-bina-0-4-rizeh-litert-int4",
+  "author": "Reza2kn",
+  "url": "https://huggingface.co/Reza2kn/Bina-0.4-Rizeh-LiteRT-INT4",
+  "created_at": "2026-11-07T07:29:01.000Z",
+  "updated_at": "2026-11-07T07:29:10.000Z",
+  "license": "bina-0.4-rizeh",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-text",
+  "library": "litert",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "litert",
+    "tflite",
+    "bina",
+    "ocr",
+    "int4",
+    "image-to-text",
+    "fa",
+    "base_model:Reza2kn/Bina-0.4-Rizeh",
+    "base_model:quantized:Reza2kn/Bina-0.4-Rizeh",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172523952,
+  "storage_human": "173 MB",
+  "base_model": "Reza2kn/Bina-0.4-Rizeh",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reza2kn/Bina-0.4-Koochik at main - Hugging Face",
+      "url": "https://huggingface.co/Reza2kn/Bina-0.4-Koochik/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Reza2kn (Reza Sayar) · GitHub",
+      "url": "https://github.com/Reza2kn",
+      "snippet": "model: add Reza2kn/RaahNaame-Koochik-v1 (Persian embedding model) Adds ModelMeta for Reza2kn/RaahNaame-Koochik-v1, a Persian text-embedding model. It is google/embeddinggemma-300m further trained by distillation f…"
+    }
+  ]
+}

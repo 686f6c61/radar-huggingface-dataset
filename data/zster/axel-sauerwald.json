@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Zster/axel-sauerwald",
+  "slug": "zster-axel-sauerwald",
+  "author": "Zster",
+  "url": "https://huggingface.co/Zster/axel-sauerwald",
+  "created_at": "2026-11-07T08:17:46.000Z",
+  "updated_at": "2026-11-07T08:17:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Axel Sauerwald - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/f42f23c3649bace8981ef06eaff0f6b0",
+      "snippet": "Explore Axel Sauerwald model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Axel Sauerwald - V1 | Flux.1 LoRA | Civitai",
+      "url": "https://civitai.com/models/2080736/axel-sauerwald",
+      "snippet": "Axel Sauerwald is a German concept artist and illustrator known for his work in fantasy and role-playing game universes. He began his career at Atomhawk Design Ltd in 2018 and transitioned to freelance work in 2020."
+    }
+  ]
+}

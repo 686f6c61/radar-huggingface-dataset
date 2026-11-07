@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/Depth-Anything-3-Small-OpenVINO",
+  "slug": "mlboydaisuke-depth-anything-3-small-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/Depth-Anything-3-Small-OpenVINO",
+  "created_at": "2026-11-07T06:39:26.000Z",
+  "updated_at": "2026-11-07T06:39:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "depth-estimation",
+    "base_model:mlboydaisuke/Depth-Anything-3-Small-LiteRT",
+    "base_model:quantized:mlboydaisuke/Depth-Anything-3-Small-LiteRT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 319341861,
+  "storage_human": "319 MB",
+  "base_model": "mlboydaisuke/Depth-Anything-3-Small-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Depth estimation with DepthAnything and OpenVINO",
+      "url": "https://docs.openvino.ai/2024/notebooks/depth-anything-with-output.html",
+      "snippet": "The framework of Depth Anything is shown below. it adopts a standard pipeline to unleashing the power of large-scale unlabeled images. More details about model can be found in project web page, paper and official repository In this tutorial we will explore how to convert and run DepthAnything using OpenVINO."
+    },
+    {
+      "title": "mlboydaisuke/Depth-Anything-3-Small-CoreML · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/Depth-Anything-3-Small-CoreML",
+      "snippet": "Relative monocular depth from a single image. DA3 Main Series, Small (0.08B params, DINOv2 ViT-S/14 + DualDPT head). First public Core ML conversion of Depth Anything 3."
+    }
+  ]
+}

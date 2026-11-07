@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/Vision-RWKV-S-OpenVINO",
+  "slug": "mlboydaisuke-vision-rwkv-s-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/Vision-RWKV-S-OpenVINO",
+  "created_at": "2026-11-07T06:37:40.000Z",
+  "updated_at": "2026-11-07T06:38:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-classification",
+    "base_model:litert-community/Vision-RWKV-S-LiteRT",
+    "base_model:quantized:litert-community/Vision-RWKV-S-LiteRT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 265551611,
+  "storage_human": "266 MB",
+  "base_model": "litert-community/Vision-RWKV-S-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenGVLab/Vision-RWKV: [ICLR 2025 Spotlight] Vision-RWKV ...",
+      "url": "https://github.com/OpenGVLab/Vision-RWKV",
+      "snippet": "Vision-RWKV The official implementation of \"Vision-RWKV: Efficient and Scalable Visual Perception with RWKV-Like Architectures\"."
+    },
+    {
+      "title": "OpenVINO 2026.4 — OpenVINO™ documentation — Version (2026)",
+      "url": "https://docs.openvino.ai/",
+      "snippet": "OpenVINO is an open-source toolkit for deploying high-performance AI solutions across cloud, AI PCs, edge devices, and Physical AI alike. Develop your applications with both generative and conventional AI models, coming from the most popular model frameworks."
+    }
+  ]
+}

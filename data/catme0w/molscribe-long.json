@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "catme0w/MolScribe-Long",
+  "slug": "catme0w-molscribe-long",
+  "author": "catme0w",
+  "url": "https://huggingface.co/catme0w/MolScribe-Long",
+  "created_at": "2025-08-19T04:44:52.000Z",
+  "updated_at": "2026-11-07T10:34:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:yujieq/MolScribe",
+    "base_model:finetune:yujieq/MolScribe",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 384183004,
+  "storage_human": "384 MB",
+  "base_model": "yujieq/MolScribe",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "catme0w/MolScribe-Long · Hugging Face",
+      "url": "https://huggingface.co/catme0w/MolScribe-Long",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MolScribe-Long",
+      "url": "https://catme0w-molscribe-long.hf.space/",
+      "snippet": "A fine-tuned MolScribe model optimized for extremely crowded and overlapping molecular images, attempting to recover chirality from severely degraded information."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Irfanuruchi/Qwen3-4B-Computer-Science-OpenVINO-INT8",
+  "slug": "irfanuruchi-qwen3-4b-computer-science-openvino-int8",
+  "author": "Irfanuruchi",
+  "url": "https://huggingface.co/Irfanuruchi/Qwen3-4B-Computer-Science-OpenVINO-INT8",
+  "created_at": "2026-11-07T08:13:55.000Z",
+  "updated_at": "2026-11-07T08:44:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "optimum",
+  "languages": [],
+  "tags": [
+    "optimum",
+    "openvino",
+    "qwen3",
+    "optimum-intel",
+    "int8",
+    "code-generation",
+    "computer-science",
+    "software-engineering",
+    "text-generation",
+    "conversational",
+    "base_model:Irfanuruchi/Qwen3-4B-Computer-Science",
+    "base_model:finetune:Irfanuruchi/Qwen3-4B-Computer-Science",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4046031692,
+  "storage_human": "4.0 GB",
+  "base_model": "Irfanuruchi/Qwen3-4B-Computer-Science",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Irfanuruchi/Qwen3-4B-Computer-Science-Models · Hugging Face",
+      "url": "https://huggingface.co/Irfanuruchi/Qwen3-4B-Computer-Science-Models",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3 4B Computer Science by Irfanuruchi - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/Irfanuruchi%2FQwen3-4B-Computer-Science,3Tj6XwnwotV9dTkhEZb0tE",
+      "snippet": "Qwen3 4B Computer Science is an open-source language model by Irfanuruchi. Features: 4b LLM, VRAM: 8.1GB, Context: 40K, License: apache-2.0, LLM Explorer Score: 0.24."
+    }
+  ]
+}

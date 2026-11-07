@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "jupiter-ai/Jupiter-V3",
+  "slug": "jupiter-ai-jupiter-v3",
+  "author": "jupiter-ai",
+  "url": "https://huggingface.co/jupiter-ai/Jupiter-V3",
+  "created_at": "2026-11-02T12:05:55.000Z",
+  "updated_at": "2026-11-07T12:45:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 277,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10546143616,
+  "storage_human": "10.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jupiter (planète) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jupiter_(plan%C3%A8te)",
+      "snippet": "Ces planètes pourraient être des géantes gazeuses semblables à Jupiter, mais pourraient appartenir à une autre classe de planètes, …"
+    },
+    {
+      "title": "Jupiter - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jupiter",
+      "snippet": "The ongoing contraction of Jupiter's interior generates more heat than the planet receives from the Sun. Jupiter's magnetic field is …"
+    }
+  ]
+}

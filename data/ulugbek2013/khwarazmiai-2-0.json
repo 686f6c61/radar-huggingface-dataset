@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ulugbek2013/KhwarazmiAI-2.0",
+  "slug": "ulugbek2013-khwarazmiai-2-0",
+  "author": "ulugbek2013",
+  "url": "https://huggingface.co/ulugbek2013/KhwarazmiAI-2.0",
+  "created_at": "2026-11-07T11:37:44.000Z",
+  "updated_at": "2026-11-07T11:38:37.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "khwarazmiai",
+    "multilingual",
+    "uzbek",
+    "conversational",
+    "reasoning",
+    "coding",
+    "lora",
+    "unsloth",
+    "text-generation",
+    "base_model:unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+    "base_model:adapter:unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 253594805,
+  "storage_human": "254 MB",
+  "base_model": "unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ulugbek2013/KhwarazmiAI-1.0 · Hugging Face",
+      "url": "https://huggingface.co/ulugbek2013/KhwarazmiAI-1.0",
+      "snippet": "KhwarazmiAI 1.0 is a sovereign, frontier-grade 31.4-Billion parameter artificial intelligence model designed to function as an autonomous knowledge assistant, master academic mentor, and multi-domain reasoning engine. Engineered and trained solely by ZAZU AI, KhwarazmiAI 1.0 bridges deep historical ..."
+    },
+    {
+      "title": "ulugbek2013/KhwarazmiAI-1.0-Adapter · Hugging Face",
+      "url": "https://huggingface.co/ulugbek2013/KhwarazmiAI-1.0-Adapter",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

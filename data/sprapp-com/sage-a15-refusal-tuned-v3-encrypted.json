@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "sprapp-com/sage-a15-refusal-tuned-v3-encrypted",
+  "slug": "sprapp-com-sage-a15-refusal-tuned-v3-encrypted",
+  "author": "sprapp-com",
+  "url": "https://huggingface.co/sprapp-com/sage-a15-refusal-tuned-v3-encrypted",
+  "created_at": "2026-11-07T12:11:43.000Z",
+  "updated_at": "2026-11-07T12:31:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75903163156,
+  "storage_human": "75.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sage-A1.5 - a InternScience Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/InternScience/sage-a15",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

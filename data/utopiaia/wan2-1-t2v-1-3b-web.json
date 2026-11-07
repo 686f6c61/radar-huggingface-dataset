@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "UtopiaIA/Wan2.1-T2V-1.3B-web",
+  "slug": "utopiaia-wan2-1-t2v-1-3b-web",
+  "author": "UtopiaIA",
+  "url": "https://huggingface.co/UtopiaIA/Wan2.1-T2V-1.3B-web",
+  "created_at": "2026-11-07T07:17:49.000Z",
+  "updated_at": "2026-11-07T07:23:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "onnxruntime-web",
+  "languages": [],
+  "tags": [
+    "onnxruntime-web",
+    "onnx",
+    "wan2.1",
+    "rcm",
+    "webgpu",
+    "text-to-video",
+    "base_model:Wan-AI/Wan2.1-T2V-1.3B",
+    "base_model:quantized:Wan-AI/Wan2.1-T2V-1.3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5218815133,
+  "storage_human": "5.2 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-1.3B, worstcoder/rcm-Wan",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wan-AI/Wan2.1-T2V-1.3B · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan2.1-T2V-1.3B · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/Wan-AI/Wan2.1-T2V-1.3B",
+      "snippet": "This repository hosts our T2V-1.3B model, a versatile solution for video generation that is compatible with nearly all consumer-grade GPUs. In this way, we hope that Wan2.1 can serve as an easy-to-use tool for more creative teams in video creation, providing a high-quality foundational model for academic teams with limited computing resources."
+    }
+  ]
+}

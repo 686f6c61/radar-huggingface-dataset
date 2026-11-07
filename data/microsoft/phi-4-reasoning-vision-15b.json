@@ -32,10 +32,11 @@
     "base_model:finetune:microsoft/Phi-4-reasoning",
     "license:mit",
     "model-index",
+    "eval-results",
     "region:us"
   ],
   "likes": 185,
-  "downloads_30d": 6067,
+  "downloads_30d": 6295,
   "trending_score": 0,
   "parameters": 15119518144,
   "parameters_human": "15.12B",

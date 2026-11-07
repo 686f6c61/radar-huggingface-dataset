@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tmtabor/Qwen3.8-27B-sft-low",
+  "slug": "tmtabor-qwen3-8-27b-sft-low",
+  "author": "tmtabor",
+  "url": "https://huggingface.co/tmtabor/Qwen3.8-27B-sft-low",
+  "created_at": "2026-11-07T10:57:19.000Z",
+  "updated_at": "2026-11-07T11:09:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.8-27B",
+    "base_model:finetune:unsloth/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996286,
+  "storage_human": "55.6 GB",
+  "base_model": "unsloth/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tmtabor/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/tmtabor/Qwen3.8-27B",
+      "snippet": "Machine learning model with 28B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "tmtabor/Qwen3.8-27B at main - Hugging Face",
+      "url": "https://huggingface.co/tmtabor/Qwen3.8-27B/tree/main",
+      "snippet": "tmtabor / Qwen3.8-27B Like 0 Safetensors GGUF qwen3_5 llama.cpp unsloth vision-language-model conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

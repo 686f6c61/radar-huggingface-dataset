@@ -5,7 +5,7 @@
   "author": "itsalissonsilva",
   "url": "https://huggingface.co/itsalissonsilva/ForecastGemma-Interp",
   "created_at": "2026-10-31T01:36:05.000Z",
-  "updated_at": "2026-10-31T06:43:59.000Z",
+  "updated_at": "2026-11-07T01:50:09.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 31,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

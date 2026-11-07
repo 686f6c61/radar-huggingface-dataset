@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "UtopiaIA/elffuss-prefixes",
+  "slug": "utopiaia-elffuss-prefixes",
+  "author": "UtopiaIA",
+  "url": "https://huggingface.co/UtopiaIA/elffuss-prefixes",
+  "created_at": "2026-11-07T11:47:37.000Z",
+  "updated_at": "2026-11-07T11:51:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "elffuss",
+    "kv-cache",
+    "webgpu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63463052,
+  "storage_human": "63 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - utopia-ia/elffuss-code: A VS Code-style IDE with an AI agent ...",
+      "url": "https://github.com/utopia-ia/elffuss-code",
+      "snippet": "A VS Code-style IDE with an AI agent that runs 100% in your browser — WebGPU, local models, your code never leaves your machine. - utopia-ia/elffuss-code"
+    },
+    {
+      "title": "GitHub - utopia-ia/elffuss: Shared browser-agent core behind Elffuss ...",
+      "url": "https://github.com/utopia-ia/elffuss",
+      "snippet": "Shared browser-agent core behind Elffuss Code & Claw: ACE-lite context, skills, markdown, WebGL splash, provider adapters. No build step. - utopia-ia/elffuss"
+    }
+  ]
+}

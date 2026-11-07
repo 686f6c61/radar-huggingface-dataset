@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "santhosh63/whisper-tamil-large-web",
+  "slug": "santhosh63-whisper-tamil-large-web",
+  "author": "santhosh63",
+  "url": "https://huggingface.co/santhosh63/whisper-tamil-large-web",
+  "created_at": "2026-11-07T08:46:19.000Z",
+  "updated_at": "2026-11-07T08:46:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "base_model:vasista22/whisper-tamil-large-v2",
+    "base_model:quantized:vasista22/whisper-tamil-large-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3638895076,
+  "storage_human": "3.6 GB",
+  "base_model": "vasista22/whisper-tamil-large-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vasista22/whisper-tamil-large-v2 · Hugging Face",
+      "url": "https://huggingface.co/vasista22/whisper-tamil-large-v2",
+      "snippet": "This model is a fine-tuned version of openai/whisper-large-v2 on the Tamil data available from multiple publicly available ASR corpuses. It has been fine-tuned as a part of the Whisper fine-tuning sprint."
+    },
+    {
+      "title": "JairamKanna/whisper-large-v2-tamil · Hugging Face",
+      "url": "https://huggingface.co/JairamKanna/whisper-large-v2-tamil",
+      "snippet": "This is the fine-tuned version of whisper-large-v2 model for Tamil language. The model follows the whisper architecture with the encoder-decoder part. Where the encoder used to create the embeddings from the speech input and the decoder used to give the textual outputs ..."
+    }
+  ]
+}

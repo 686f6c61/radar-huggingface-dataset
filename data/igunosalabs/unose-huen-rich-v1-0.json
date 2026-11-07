@@ -5,7 +5,7 @@
   "author": "igunosalabs",
   "url": "https://huggingface.co/igunosalabs/Unose-Huen-Rich-v1.0",
   "created_at": "2026-10-31T19:52:54.000Z",
-  "updated_at": "2026-10-31T19:53:19.000Z",
+  "updated_at": "2026-11-06T17:15:14.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,7 +17,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 29,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 241741824,
   "parameters_human": "241.7M",

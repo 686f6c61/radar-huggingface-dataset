@@ -5,7 +5,7 @@
   "author": "manateelazycat",
   "url": "https://huggingface.co/manateelazycat/Pyannote-Segmentation-3-AIPod-HF",
   "created_at": "2026-11-06T12:41:54.000Z",
-  "updated_at": "2026-11-06T13:08:38.000Z",
+  "updated_at": "2026-11-06T13:51:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 165153833,
-  "storage_human": "165 MB",
+  "storage_bytes": 166246590,
+  "storage_human": "166 MB",
   "base_model": null,
   "formats": [
     "onnx"

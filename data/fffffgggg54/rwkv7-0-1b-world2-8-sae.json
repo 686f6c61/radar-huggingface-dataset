@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "fffffgggg54/RWKV7-0.1B-World2.8-SAE",
+  "slug": "fffffgggg54-rwkv7-0-1b-world2-8-sae",
+  "author": "fffffgggg54",
+  "url": "https://huggingface.co/fffffgggg54/RWKV7-0.1B-World2.8-SAE",
+  "created_at": "2025-03-19T00:41:25.000Z",
+  "updated_at": "2026-11-07T10:11:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dataset:JeanKaddour/minipile",
+    "base_model:SmerkyG/RWKV7-Goose-0.1B-World2.8-HF",
+    "base_model:finetune:SmerkyG/RWKV7-Goose-0.1B-World2.8-HF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10301375434,
+  "storage_human": "10.3 GB",
+  "base_model": "SmerkyG/RWKV7-Goose-0.1B-World2.8-HF",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RWKV/RWKV7-Goose-World2.8-0.1B-HF · Hugging Face",
+      "url": "https://huggingface.co/RWKV/RWKV7-Goose-World2.8-0.1B-HF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

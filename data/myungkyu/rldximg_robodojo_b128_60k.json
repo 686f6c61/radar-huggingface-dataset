@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Myungkyu/rldximg_robodojo_b128_60k",
+  "slug": "myungkyu-rldximg_robodojo_b128_60k",
+  "author": "Myungkyu",
+  "url": "https://huggingface.co/Myungkyu/rldximg_robodojo_b128_60k",
+  "created_at": "2026-10-10T21:08:04.000Z",
+  "updated_at": "2026-11-07T05:23:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "robotics",
+    "vla",
+    "robodojo",
+    "baseline",
+    "dataset:RoboDojo-Benchmark/RoboDojo",
+    "base_model:RLWRLD/RLDX-1-PT",
+    "base_model:finetune:RLWRLD/RLDX-1-PT",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 87,
+  "trending_score": 0,
+  "parameters": 6912896320,
+  "parameters_human": "6.91B",
+  "storage_bytes": 165910704864,
+  "storage_human": "165.9 GB",
+  "base_model": "RLWRLD/RLDX-1-PT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Myungkyu/rldx_robodojo_vanilla_b128_60k · Hugging Face",
+      "url": "https://huggingface.co/Myungkyu/rldx_robodojo_vanilla_b128_60k",
+      "snippet": "Vanilla baseline: RoboDojo Sim co-train setting (35 tasks x 100 episodes, dual ARX X5, official LeRobot export). Architecture: RLDX-1-PT (video length 4 / stride 2, three camera views, action horizon 50) fine-tuned with padding-dimension noise masking (action_noise_mask_dim=14) and state dropout 0.5 ..."
+    },
+    {
+      "title": "Myungkyu/rldx2_rldx_robodojo_vanilla_b128_60k · Hugging Face",
+      "url": "https://huggingface.co/Myungkyu/rldx2_rldx_robodojo_vanilla_b128_60k",
+      "snippet": "Architecture: RLDX-1-PT (video length 4 / stride 2, three camera views, action horizon 50) fine-tuned with padding-dimension noise masking (action_noise_mask_dim=14) and state dropout 0.5; code RLWRLD/RLDX @ myungkyu/jitter-patch 21f674b4 Optimizer batch 128, 60000 steps, final checkpoint (optimizer state not included)"
+    }
+  ]
+}

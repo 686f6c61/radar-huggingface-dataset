@@ -5,7 +5,7 @@
   "author": "reneeice",
   "url": "https://huggingface.co/reneeice/z3m-7f4c9",
   "created_at": "2026-11-06T09:05:21.000Z",
-  "updated_at": "2026-11-06T09:11:35.000Z",
+  "updated_at": "2026-11-06T17:33:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,8 @@
   "languages": [],
   "tags": [
     "safetensors",
+    "qwen3_5",
+    "custom_code",
     "license:apache-2.0",
     "region:us"
   ],
@@ -21,7 +23,7 @@
   "trending_score": 0,
   "parameters": 4539265536,
   "parameters_human": "4.54B",
-  "storage_bytes": 9078616080,
+  "storage_bytes": 9094035342,
   "storage_human": "9.1 GB",
   "base_model": null,
   "formats": [

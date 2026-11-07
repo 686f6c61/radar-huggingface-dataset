@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "OpenRAL/rskill-molmoact2-multi-so101-nf4",
+  "slug": "openral-rskill-molmoact2-multi-so101-nf4",
+  "author": "OpenRAL",
+  "url": "https://huggingface.co/OpenRAL/rskill-molmoact2-multi-so101-nf4",
+  "created_at": "2026-06-04T18:36:49.000Z",
+  "updated_at": "2026-11-07T12:03:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "molmoact2",
+    "image-text-to-text",
+    "OpenRAL",
+    "rskill",
+    "vision-language-action",
+    "nf4",
+    "4-bit",
+    "so100_follower",
+    "so101_follower",
+    "rskill-kind:vla",
+    "rskill-role:s1",
+    "embodiment:so100_follower",
+    "embodiment:so101_follower",
+    "rskill-license:apache-2.0",
+    "vla",
+    "so101",
+    "so100",
+    "manipulation",
+    "robotics",
+    "custom_code",
+    "en",
+    "arxiv:2605.02881",
+    "base_model:allenai/MolmoAct2-SO100_101",
+    "base_model:quantized:allenai/MolmoAct2-SO100_101",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 3255388479,
+  "parameters_human": "3.26B",
+  "storage_bytes": 4195435974,
+  "storage_human": "4.2 GB",
+  "base_model": "allenai/MolmoAct2-SO100_101",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenRAL/rskill-molmoact2-multi-so101-nf4 · Hugging Face",
+      "url": "https://huggingface.co/OpenRAL/rskill-molmoact2-multi-so101-nf4",
+      "snippet": "OpenRAL rSkill — MolmoAct2 (Ai2's open action reasoning model: a Molmo2-ER embodied-reasoning VLM backbone with a flow-matching continuous-action expert) finetuned on the SO-100/SO-101 teleop mixture and NF4-quantized so the ~5.5 B-param model fits an 8 GB GPU."
+    },
+    {
+      "title": "OpenRAL/rskill-molmoact2-so101-nf4 · Hugging Face",
+      "url": "https://huggingface.co/OpenRAL/rskill-molmoact2-so101-nf4",
+      "snippet": "MolmoAct2-SO100_101 MolmoAct2 is an open vision-language-action model for robot control. It builds on Molmo2-ER and attaches a flow-matching continuous action expert that conditions on the VLM key-value cache through a per-layer connection."
+    }
+  ]
+}

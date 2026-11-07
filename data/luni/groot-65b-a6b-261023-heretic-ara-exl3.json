@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Luni/Groot-65B-A6B-261023-Heretic-ARA-EXL3",
+  "slug": "luni-groot-65b-a6b-261023-heretic-ara-exl3",
+  "author": "Luni",
+  "url": "https://huggingface.co/Luni/Groot-65B-A6B-261023-Heretic-ARA-EXL3",
+  "created_at": "2026-11-07T07:50:15.000Z",
+  "updated_at": "2026-11-07T07:56:47.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "exllamav3",
+  "languages": [
+    "en",
+    "de",
+    "multilingual"
+  ],
+  "tags": [
+    "exllamav3",
+    "qwen",
+    "qwen4_exp",
+    "groot",
+    "moe",
+    "heretic",
+    "ara",
+    "abliterated",
+    "uncensored",
+    "exl3",
+    "mtp",
+    "image-text-to-text",
+    "en",
+    "de",
+    "multilingual",
+    "base_model:Luni/Groot-65B-A6B-261023-Heretic-ARA",
+    "base_model:quantized:Luni/Groot-65B-A6B-261023-Heretic-ARA",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64441428383,
+  "storage_human": "64.4 GB",
+  "base_model": "Luni/Groot-65B-A6B-261023-Heretic-ARA",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · GrootTeam/Groot-65B-A6B-261023-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/GrootTeam/Groot-65B-A6B-261023-GGUF/blob/main/README.md",
+      "snippet": "Groot-65B-A6B-261023 has 65B total parameters and activates about 6B per token. It starts from Qwen3.8-Flash-Next and was post-trained on fewer than 0.1B tokens of open-source data."
+    },
+    {
+      "title": "GrootTeam/Groot-65B-A6B-261023 · Hugging Face",
+      "url": "https://huggingface.co/GrootTeam/Groot-65B-A6B-261023",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

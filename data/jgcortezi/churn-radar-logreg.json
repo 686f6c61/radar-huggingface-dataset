@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "jgcortezi/churn-radar-logreg",
+  "slug": "jgcortezi-churn-radar-logreg",
+  "author": "jgcortezi",
+  "url": "https://huggingface.co/jgcortezi/churn-radar-logreg",
+  "created_at": "2026-11-07T08:03:35.000Z",
+  "updated_at": "2026-11-07T08:03:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "sklearn",
+    "tabular-classification",
+    "churn",
+    "scikit-learn",
+    "logistic-regression",
+    "pt",
+    "dataset:telco-customer-churn",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 211365,
+  "storage_human": "211365 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Previsão de churn",
+      "dataset": "Telco Customer Churn (IBM)",
+      "metric": null,
+      "value": 0.842
+    },
+    {
+      "task": "Previsão de churn",
+      "dataset": "Telco Customer Churn (IBM)",
+      "metric": null,
+      "value": 0.783
+    },
+    {
+      "task": "Previsão de churn",
+      "dataset": "Telco Customer Churn (IBM)",
+      "metric": null,
+      "value": 0.504
+    },
+    {
+      "task": "Previsão de churn",
+      "dataset": "Telco Customer Churn (IBM)",
+      "metric": null,
+      "value": 0.614
+    }
+  ],
+  "sources": [
+    {
+      "title": "ChurnRadar — AI-Powered Churn Prediction for SaaS",
+      "url": "https://www.churnradar.io/",
+      "snippet": "Stop losing customers to silence. ChurnRadar connects to your CRM, builds a churn prediction model in minutes, and alerts you when customers show signs of leaving."
+    }
+  ]
+}

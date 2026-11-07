@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "chocokiddo/DICE-Policy",
+  "slug": "chocokiddo-dice-policy",
+  "author": "chocokiddo",
+  "url": "https://huggingface.co/chocokiddo/DICE-Policy",
+  "created_at": "2026-11-07T06:16:02.000Z",
+  "updated_at": "2026-11-07T06:21:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "tutoring",
+    "socratic-tutoring",
+    "math",
+    "qwen2.5",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dice-ml · PyPI",
+      "url": "https://pypi.org/project/dice-ml/",
+      "snippet": "DiCE shows decision outcomes with actionable alternative profiles, to help people understand what they could have done to change their model outcome. ML model developers: Counterfactual explanations are also useful for model developers to debug their model for potential problems."
+    },
+    {
+      "title": "Stop Rolling the Dice: Active Group Relative Policy Optimization via ...",
+      "url": "https://aclanthology.org/2026.findings-emnlp.614.pdf",
+      "snippet": "Stop Rolling the Dice: Active Group Relative Policy Optimization via Intrinsic Metacognition Zheng Gong1 and Ying Sun2* and Hao Peng3 and Philip S. Yu4 1Thrust of AI, Hong Kong University of Science and Technology (Guangzhou) 2The 63rd Research Institute, National University of Defense Technology 3School of Cyber Science and Technology, Beihang University 4Computer Science, University of ..."
+    }
+  ]
+}

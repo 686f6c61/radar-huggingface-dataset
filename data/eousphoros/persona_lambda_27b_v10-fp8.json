@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "eousphoros/persona_lambda_27b_v10-fp8",
+  "slug": "eousphoros-persona_lambda_27b_v10-fp8",
+  "author": "eousphoros",
+  "url": "https://huggingface.co/eousphoros/persona_lambda_27b_v10-fp8",
+  "created_at": "2026-11-07T09:52:49.000Z",
+  "updated_at": "2026-11-07T09:54:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "experimental",
+    "persona",
+    "quantized",
+    "fp8",
+    "conversational",
+    "base_model:eousphoros/persona_lambda_27b_v10",
+    "base_model:quantized:eousphoros/persona_lambda_27b_v10",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 30879678984,
+  "storage_human": "30.9 GB",
+  "base_model": "eousphoros/persona_lambda_27b_v10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eousphoros/persona_lambda_27b_v8 · Hugging Face",
+      "url": "https://huggingface.co/eousphoros/persona_lambda_27b_v8",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: “Please reason step by step, and put your final answer within \\boxed {}.” For the remaining models, we report the higher score from two prompt variants—one with and one without the \\boxed {} formatting requirement."
+    },
+    {
+      "title": "eousphoros/qwen3.8-27b-yarn4-mixed-kl-128k-r1-iter137-fp8 · Hugging Face",
+      "url": "https://huggingface.co/eousphoros/qwen3.8-27b-yarn4-mixed-kl-128k-r1-iter137-fp8",
+      "snippet": "This is an experimental blockwise-FP8 derivative of eousphoros/qwen3.8-27b-yarn4-mixed-kl-128k-r1-iter137. The source model merges a LoRA/direct-normalization calibration into Qwen/Qwen3.8-27B for static YaRN with a factor of 4.0. This export quantizes the same tensor set and uses the same 128 x 128 scale geometry as Qwen/Qwen3.8-27B-FP8, while retaining the adapted source values and its BF16 ..."
+    }
+  ]
+}

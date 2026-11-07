@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.6-35B-A3B-CyberFusion-GGUF",
+  "slug": "mradermacher-qwen3-6-35b-a3b-cyberfusion-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-CyberFusion-GGUF",
+  "created_at": "2026-11-07T06:06:07.000Z",
+  "updated_at": "2026-11-07T06:06:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.6-35B-A3B-uncensored-heretic-i1-GGUF · Hugging ...",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-uncensored-heretic-i1-GGUF",
+      "snippet": "static quants are available at https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-uncensored-heretic-GGUF"
+    },
+    {
+      "title": "mradermacher/Qwen3.6-35B-A3B-StyleTune-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-StyleTune-GGUF",
+      "snippet": "weighted/imatrix quants are available at https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-StyleTune-i1-GGUF"
+    },
+    {
+      "title": "Qwen3.6-35B-A3B GGUF: Quants, Sizes, and How to Run It",
+      "url": "https://allthings.how/qwen3-6-35b-a3b-gguf-quants-sizes-and-how-to-run-it/",
+      "snippet": "Qwen3.6-35B-A3B is the first open-weight model in the Qwen3.6 family, packaged as GGUF for local inference through llama.cpp and compatible tools like LM Studio, koboldcpp, Jan, and Unsloth Studio. It’s a 35-billion parameter mixture-of-experts model with roughly 3B active parameters per token, built around a hybrid architecture that alternates Gated DeltaNet layers with Gated Attention and ..."
+    }
+  ]
+}

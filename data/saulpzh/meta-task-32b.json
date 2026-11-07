@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "saulpzh/Meta-Task-32B",
+  "slug": "saulpzh-meta-task-32b",
+  "author": "saulpzh",
+  "url": "https://huggingface.co/saulpzh/Meta-Task-32B",
+  "created_at": "2026-11-03T04:04:48.000Z",
+  "updated_at": "2026-11-07T08:42:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "terminal-agents",
+    "code-agent",
+    "task-synthesis",
+    "conversational",
+    "en",
+    "arxiv:2607.27929",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:finetune:Qwen/Qwen3-32B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 97,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65535751106,
+  "storage_human": "65.5 GB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saulpzh/Meta-Task-32B · Hugging Face",
+      "url": "https://huggingface.co/saulpzh/Meta-Task-32B",
+      "snippet": "saulpzh / Meta-Task-32B Like 0 qwen3 Model card FilesFiles and versions xet Community Copy to bucket No model card Downloads last month 10 Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "saulpzh (saul) - Hugging Face",
+      "url": "https://huggingface.co/saulpzh",
+      "snippet": "User profile of saul on Hugging Face Recent Activity updated a modelabout 13 hours ago saulpzh/Meta-Task-32B updated a modelabout 13 hours ago saulpzh/Meta-Task-14B liked a datasetabout 13 hours ago saulpzh/Meta-Task-Data View all activity"
+    }
+  ]
+}

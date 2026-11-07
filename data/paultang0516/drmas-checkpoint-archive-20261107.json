@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "paultang0516/drmas-checkpoint-archive-20261107",
+  "slug": "paultang0516-drmas-checkpoint-archive-20261107",
+  "author": "paultang0516",
+  "url": "https://huggingface.co/paultang0516/drmas-checkpoint-archive-20261107",
+  "created_at": "2026-11-07T05:15:26.000Z",
+  "updated_at": "2026-11-07T05:21:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "checkpoint",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229704958408,
+  "storage_human": "229.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LMFResearchSociety/CheckpointArchive · Hugging Face",
+      "url": "https://huggingface.co/LMFResearchSociety/CheckpointArchive",
+      "snippet": "LMFResearchSociety / CheckpointArchive Like 117 Follow Literally Me FRFR Research Society 264 Text-to-Image Safetensors stable-diffusion checkpoint License:creativeml-openrail-m Model card FilesFiles and versions xet Community 12 Copy to bucket new"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

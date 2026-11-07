@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "toonist/AnuLM-Omni-400M",
+  "slug": "toonist-anulm-omni-400m",
+  "author": "toonist",
+  "url": "https://huggingface.co/toonist/AnuLM-Omni-400M",
+  "created_at": "2026-11-07T07:22:56.000Z",
+  "updated_at": "2026-11-07T07:23:58.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": null,
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "anulm",
+    "mixture-of-experts",
+    "moe",
+    "hindi",
+    "indic",
+    "small-language-model",
+    "pytorch",
+    "sarvam-architecture",
+    "any-to-any",
+    "hi",
+    "en",
+    "base_model:toonist/AnuLM-Base-v2-400M",
+    "base_model:finetune:toonist/AnuLM-Base-v2-400M",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 456391056,
+  "parameters_human": "456.4M",
+  "storage_bytes": 1014696856,
+  "storage_human": "1.0 GB",
+  "base_model": "toonist/AnuLM-Base-v2-400M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "toonist/AnuLM-Base-v2-400M · Hugging Face",
+      "url": "https://huggingface.co/toonist/AnuLM-Base-v2-400M",
+      "snippet": "Model card: AnuLM-Base-v2-400M (ckpt_base_v2.pt) The second three-language base model: pretrained from scratch on Hindi, English and Python with the multi32k tokenizer, 1.9M steps at batch 4 × 1,024 tokens (about 7.8B tokens) over an 11.3B-token corpus, on one consumer GPU. It is the backbone under every model the AnuLM demo app now serves: chat, speech recognition, captions, image questions ..."
+    },
+    {
+      "title": "toonist/AnuLM-Base-400M · Hugging Face",
+      "url": "https://huggingface.co/toonist/AnuLM-Base-400M",
+      "snippet": "Model card: AnuLM-Base-400M (ckpt_multi36k.pt) The three-language base model: pretrained from scratch on Hindi, English and Python with the multi32k tokenizer, 36,000 steps at batch 8 × 512 (about 150M tokens), on one consumer GPU. It is the checkpoint the translation and question-answering models were fine-tuned from, and the one to continue Hindi or English prose with. Full log: docs ..."
+    }
+  ]
+}

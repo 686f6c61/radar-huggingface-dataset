@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Hahmdong/SPUPER-qwen3.5-9b-acaciawl-formation-seed44",
+  "slug": "hahmdong-spuper-qwen3-5-9b-acaciawl-formation-seed44",
+  "author": "Hahmdong",
+  "url": "https://huggingface.co/Hahmdong/SPUPER-qwen3.5-9b-acaciawl-formation-seed44",
+  "created_at": "2026-11-07T08:20:53.000Z",
+  "updated_at": "2026-11-07T08:23:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839718749,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hahmdong/SPUPER-qwen3.5-9b-acaciawl-add - featherless.ai",
+      "url": "https://featherless.ai/models/Hahmdong/SPUPER-qwen3.5-9b-acaciawl-add",
+      "snippet": "Hahmdong/SPUPER-qwen3.5-9b-acaciawl-add is a 9 billion parameter language model fine-tuned from Qwen/Qwen3.5-9B. Developed by Hahmdong, this model leverages SFT (Supervised Fine-Tuning) for enhanced performance. It is designed for general text generation tasks, building upon the robust Qwen3.5 architecture with a 32768 token context length."
+    },
+    {
+      "title": "Hahmdong/SPUPER-qwen3.5-9b-acaciawl-add — Downloads, Growth & Stats",
+      "url": "https://openmodelstats.com/models/hahmdong/spuper-qwen3.5-9b-acaciawl-add",
+      "snippet": "SPUPER-qwen3.5-9b-acaciawl-add by Hahmdong: 1,409 all-time downloads, 1,379 in the last 30 days. A image text to text model with 9.4B parameters. Daily download history, growth trends and ranking position, tracked and updated by OpenModelStats."
+    }
+  ]
+}

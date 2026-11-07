@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "vedansh-s/ppo-LunarLander-v2",
+  "slug": "vedansh-s-ppo-lunarlander-v2",
+  "author": "vedansh-s",
+  "url": "https://huggingface.co/vedansh-s/ppo-LunarLander-v2",
+  "created_at": "2026-11-07T10:51:24.000Z",
+  "updated_at": "2026-11-07T10:51:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 421958,
+  "storage_human": "421958 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sb3/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/sb3/ppo-LunarLander-v2",
+      "snippet": "This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library and the RL Zoo. The RL Zoo is a training framework for Stable Baselines3 reinforcement learning agents, with hyperparameter optimization and pre-trained agents included. Usage (with SB3 RL Zoo) RL Zoo ..."
+    },
+    {
+      "title": "deep-rl-unit1-ppo-LunarLander-v2-20261105 - Hugging Face",
+      "url": "https://huggingface.co/poplolioi11/deep-rl-unit1-ppo-LunarLander-v2-20261105",
+      "snippet": "Reinforcement Learning model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "aungthuhein-dev/Raj-0.6B-GGUF",
+  "slug": "aungthuhein-dev-raj-0-6b-gguf",
+  "author": "aungthuhein-dev",
+  "url": "https://huggingface.co/aungthuhein-dev/Raj-0.6B-GGUF",
+  "created_at": "2026-11-07T10:44:32.000Z",
+  "updated_at": "2026-11-07T10:45:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "my",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "burmese",
+    "myanmar",
+    "code-switching",
+    "quantized",
+    "automatic-speech-recognition",
+    "my",
+    "en",
+    "base_model:aungzaythant/Raj-0.6B",
+    "base_model:quantized:aungzaythant/Raj-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 444410752,
+  "storage_human": "444 MB",
+  "base_model": "aungzaythant/Raj-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

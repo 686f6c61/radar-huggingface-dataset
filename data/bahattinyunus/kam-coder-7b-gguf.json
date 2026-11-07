@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bahattinyunus/kam-coder-7b-gguf",
+  "slug": "bahattinyunus-kam-coder-7b-gguf",
+  "author": "bahattinyunus",
+  "url": "https://huggingface.co/bahattinyunus/kam-coder-7b-gguf",
+  "created_at": "2026-11-07T09:52:43.000Z",
+  "updated_at": "2026-11-07T10:04:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "kam",
+    "ollama",
+    "turkish",
+    "active-inference",
+    "free-energy-principle",
+    "liquid-neural-networks",
+    "bitnet-b158",
+    "ebpf",
+    "autonomous-defense",
+    "edge-ai",
+    "text-generation",
+    "tr",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683074048,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bahattinyunus/kam-7b-gguf · Hugging Face",
+      "url": "https://huggingface.co/bahattinyunus/kam-7b-gguf",
+      "snippet": "bahattinyunus / kam-7b-gguf Like 0 Text Generation GGUF Turkish English kam ollama turkish qwen2.5 deepseek-r1 active-inference cybernetics ebpf autonomous-systems conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "bahattinyunus/kam-r1-gguf · Hugging Face",
+      "url": "https://huggingface.co/bahattinyunus/kam-r1-gguf",
+      "snippet": "bahattinyunus / kam-r1-gguf Like 0 Text Generation GGUF Turkish English kam ollama turkish qwen2.5 deepseek-r1 active-inference cybernetics ebpf autonomous-systems conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

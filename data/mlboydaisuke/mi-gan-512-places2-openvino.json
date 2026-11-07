@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/MI-GAN-512-Places2-OpenVINO",
+  "slug": "mlboydaisuke-mi-gan-512-places2-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/MI-GAN-512-Places2-OpenVINO",
+  "created_at": "2026-11-07T06:35:37.000Z",
+  "updated_at": "2026-11-07T06:36:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-to-image",
+    "base_model:litert-community/MI-GAN-512-Places2-LiteRT",
+    "base_model:quantized:litert-community/MI-GAN-512-Places2-LiteRT",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 218611713,
+  "storage_human": "219 MB",
+  "base_model": "litert-community/MI-GAN-512-Places2-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/MI-GAN-512-places2-fp16 - Hugging Face",
+      "url": "https://huggingface.co/mlx-community/MI-GAN-512-places2-fp16",
+      "snippet": "MI-GAN mobile inpainting, 512 Places2 (fast/on-device tier ..."
+    },
+    {
+      "title": "mlx-community/MI-GAN-512-places2-fp16 at main - Hugging Face",
+      "url": "https://huggingface.co/mlx-community/MI-GAN-512-places2-fp16/tree/main",
+      "snippet": "main MI-GAN-512-places2-fp16 Ctrl+K Ctrl+K 1 contributor History:3 commits xocialize Upload README.md with huggingface_hub 1964425 verified12 days ago .gitattributes Safe 1.52 kBinitial commit12 days ago README.md 1.15 kBUpload README.md with huggingface_hub12 days ago model.safetensors Safe 14.8 MB xet Upload model.safetensors with huggingface ..."
+    }
+  ]
+}

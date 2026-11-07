@@ -5,7 +5,7 @@
   "author": "manateelazycat",
   "url": "https://huggingface.co/manateelazycat/CAMPlus-AIPod-HF",
   "created_at": "2026-11-06T12:41:55.000Z",
-  "updated_at": "2026-11-06T13:09:14.000Z",
+  "updated_at": "2026-11-06T13:51:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 701676245,
-  "storage_human": "702 MB",
+  "storage_bytes": 702786857,
+  "storage_human": "703 MB",
   "base_model": null,
   "formats": [
     "onnx"

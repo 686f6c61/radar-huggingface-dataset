@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "krisatravels/KIRA",
+  "slug": "krisatravels-kira",
+  "author": "krisatravels",
+  "url": "https://huggingface.co/krisatravels/KIRA",
+  "created_at": "2026-11-07T09:59:56.000Z",
+  "updated_at": "2026-11-07T09:59:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:abenzerps/Qwen-Image-2.1-Turbo-Quantized",
+    "base_model:adapter:abenzerps/Qwen-Image-2.1-Turbo-Quantized",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "abenzerps/Qwen-Image-2.1-Turbo-Quantized",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/reel/Da-81cmzVRH/",
+      "snippet": "0 likes, 0 comments - krisatravelspune on July 19, 2026: \"Welcome to Krisa Travels! Meet KIRA AI, our official virtual travel assistant. KIRA AI helps with: ️ Flight Bookings Hotel Reservations Domestic & International Tours Visa Assistance Cab Services Pune, Maharashtra Disclaimer: KIRA AI is a fictional AI-generated character created by Krisa Travels. Any resemblance to actual persons is ..."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/p/Da-yctXDJ6b/",
+      "snippet": "0 likes, 0 comments - krisatravelspune on July 19, 2026: \"烙 KIRA AI Official Virtual Travel Assistant Powered by KRISA TRAVELS Tours | ️ Flights | Hotels | Visa Namaste Travelers! Main hoon KIRA AI, Krisa Travels ki official virtual travel assistant. Main aapki madad karti hoon: ️ Flight Booking Hotel Booking Domestic & International Tours Visa Guidance Cab Services Custom Travel ..."
+    }
+  ]
+}

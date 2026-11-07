@@ -5,7 +5,7 @@
   "author": "tvall43",
   "url": "https://huggingface.co/tvall43/Qwen3.6-35B-A3B-heretic-QSA-GGUF",
   "created_at": "2026-11-05T15:47:29.000Z",
-  "updated_at": "2026-11-06T02:11:54.000Z",
+  "updated_at": "2026-11-06T09:39:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,13 +26,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 3,
   "downloads_30d": 974,
   "trending_score": 0,
   "parameters": 34673721728,
   "parameters_human": "34.67B",
-  "storage_bytes": 44465626250,
-  "storage_human": "44.5 GB",
+  "storage_bytes": 66645978858,
+  "storage_human": "66.6 GB",
   "base_model": "llmfan46/Qwen3.6-35B-A3B-uncensored-heretic-Native-MTP-Preserved-GGUF",
   "formats": [
     "gguf"

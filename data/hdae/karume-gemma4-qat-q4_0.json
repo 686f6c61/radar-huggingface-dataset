@@ -5,7 +5,7 @@
   "author": "hdae",
   "url": "https://huggingface.co/hdae/karume-gemma4-qat-q4_0",
   "created_at": "2026-11-04T10:05:59.000Z",
-  "updated_at": "2026-11-04T10:49:51.000Z",
+  "updated_at": "2026-11-06T08:58:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

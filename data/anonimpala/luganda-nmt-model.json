@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "anonimpala/luganda-nmt-model",
+  "slug": "anonimpala-luganda-nmt-model",
+  "author": "anonimpala",
+  "url": "https://huggingface.co/anonimpala/luganda-nmt-model",
+  "created_at": "2026-11-07T10:59:57.000Z",
+  "updated_at": "2026-11-07T11:01:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "m2m_100",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 615073792,
+  "parameters_human": "615.1M",
+  "storage_bytes": 2492595301,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anonimpala/luganda_nmt_must · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/anonimpala/luganda_nmt_must",
+      "snippet": "Dataset with 3.64k rows (Text). Explore, preview and download it on Hugging Face."
+    },
+    {
+      "title": "anonimpala/luganda_nmt_train_must · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/anonimpala/luganda_nmt_train_must",
+      "snippet": "Dataset with 2.91k rows (Text). Explore, preview and download it on Hugging Face."
+    }
+  ]
+}

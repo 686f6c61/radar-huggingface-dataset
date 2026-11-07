@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "windowsxp811203/DeepSeek-V4.1-Flash-1017-Abliterated-EXL3-2.75bpw-DGX-Spark",
+  "slug": "windowsxp811203-deepseek-v4-1-flash-1017-abliterated-exl3-2-75bpw-dgx-spark",
+  "author": "windowsxp811203",
+  "url": "https://huggingface.co/windowsxp811203/DeepSeek-V4.1-Flash-1017-Abliterated-EXL3-2.75bpw-DGX-Spark",
+  "created_at": "2026-11-07T11:53:34.000Z",
+  "updated_at": "2026-11-07T12:18:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "exl3",
+    "exllamav3",
+    "abliterated",
+    "uncensored",
+    "deepseek",
+    "moe",
+    "quantized",
+    "dgx-spark",
+    "gb10",
+    "image-text-to-text",
+    "base_model:windowsxp811203/DeepSeek-V4.1-Flash-1017-Abliterated",
+    "base_model:quantized:windowsxp811203/DeepSeek-V4.1-Flash-1017-Abliterated",
+    "license:mit",
+    "deepseek_v41_exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 198776076559,
+  "storage_human": "198.8 GB",
+  "base_model": "windowsxp811203/DeepSeek-V4.1-Flash-1017-Abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Flash & Connect AdoPiSoft Wired Sub-Vendo Kit | ADOPISOFT",
+      "url": "https://m.youtube.com/watch?v=zlt6QzVem7M",
+      "snippet": "Jun 24, 2022 · Full video on how to assemble and use wired/lan subvendo for the adopisoft wifi vendo machines. The wired/lan …"
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017 — EXL3 2.9bpw — ABLITERATED",
+      "url": "https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-ABLITERATED",
+      "snippet": "dealignai/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw-UNCENSORED Same model, different name. Pull from the UNCENSORED repo above — it's the one that holds the shards, is kept up to date, and carries the full README + eval tables. Downloads last month -"
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017 · EXL3 · EAQ v1 · 2.9 bpw",
+      "url": "https://huggingface.co/Mia-AiLab/DeepSeek-V4.1-Flash-1017-EXL3-EAQ-v1-2.9-bpw",
+      "snippet": "Image-Text-to-Text model with 105B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

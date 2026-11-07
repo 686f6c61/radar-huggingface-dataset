@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "JingweiNi/BELT-Qwen3-1.7B-ReProbeInit",
+  "slug": "jingweini-belt-qwen3-1-7b-reprobeinit",
+  "author": "JingweiNi",
+  "url": "https://huggingface.co/JingweiNi/BELT-Qwen3-1.7B-ReProbeInit",
+  "created_at": "2026-10-17T11:52:51.000Z",
+  "updated_at": "2026-11-07T11:46:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "early-stopping",
+    "belt",
+    "pytorch",
+    "custom-code",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 307635616,
+  "storage_human": "308 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JingweiNi/BELT-Qwen3-1.7B-ReProbeInit · Hugging Face",
+      "url": "https://huggingface.co/JingweiNi/BELT-Qwen3-1.7B-ReProbeInit",
+      "snippet": "JingweiNi / BELT-Qwen3-1.7B-ReProbeInit Like 0 PyTorch English early-stopping belt custom-code Model card FilesFiles and versions xet Community Copy to bucket new BELT-Qwen3-1.7B-ReProbeInit Backbone Contents and use Recommended use: Qwen H-R Checkpoint inventory"
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "Text Generation model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

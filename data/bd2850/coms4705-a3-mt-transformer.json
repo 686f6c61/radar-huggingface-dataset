@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "bd2850/coms4705-a3-mt-transformer",
+  "slug": "bd2850-coms4705-a3-mt-transformer",
+  "author": "bd2850",
+  "url": "https://huggingface.co/bd2850/coms4705-a3-mt-transformer",
+  "created_at": "2026-11-07T06:24:26.000Z",
+  "updated_at": "2026-11-07T06:24:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58965770,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TobyThurston/coms4705-a3-mt-transformer · Hugging Face",
+      "url": "https://huggingface.co/TobyThurston/coms4705-a3-mt-transformer",
+      "snippet": "TobyThurston / coms4705-a3-mt-transformer Like 0 Model card FilesFiles and versions xet Community Copy to bucket No model card Downloads last month -"
+    },
+    {
+      "title": "ecc2221/coms4705-a3-mt-transformer · Hugging Face",
+      "url": "https://huggingface.co/ecc2221/coms4705-a3-mt-transformer",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

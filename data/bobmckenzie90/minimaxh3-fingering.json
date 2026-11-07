@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "bobmckenzie90/MinimaxH3-Fingering",
+  "slug": "bobmckenzie90-minimaxh3-fingering",
+  "author": "bobmckenzie90",
+  "url": "https://huggingface.co/bobmckenzie90/MinimaxH3-Fingering",
+  "created_at": "2026-11-07T05:44:09.000Z",
+  "updated_at": "2026-11-07T05:44:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:akhaliq/p-h3-image-turbo-lora",
+    "base_model:adapter:akhaliq/p-h3-image-turbo-lora",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155278979,
+  "storage_human": "155 MB",
+  "base_model": "akhaliq/p-h3-image-turbo-lora",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MinimaxH3-Fingering_000002000.safetensors · SicariusSicariiStuff ...",
+      "url": "https://huggingface.co/SicariusSicariiStuff/Minimax_H3_LoRAs/blob/main/MinimaxH3-Fingering_000002000.safetensors",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "JaeWooShin/labelfree-runs-2026-11-07",
+  "slug": "jaewooshin-labelfree-runs-2026-11-07",
+  "author": "JaeWooShin",
+  "url": "https://huggingface.co/JaeWooShin/labelfree-runs-2026-11-07",
+  "created_at": "2026-11-07T12:27:45.000Z",
+  "updated_at": "2026-11-07T12:43:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "verl",
+    "grpo",
+    "rlvr",
+    "label-free",
+    "checkpoints",
+    "arxiv:2505.19590",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1121743824,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JaeWooShin (Jae Woo Shin) - Hugging Face",
+      "url": "https://huggingface.co/JaeWooShin/models",
+      "snippet": "User profile of Jae Woo Shin on Hugging Face"
+    },
+    {
+      "title": "Top 10 Fastest-Growing Niches for Fractional NFT Marketplaces in 2026",
+      "url": "https://community.nasscom.in/communities/blockchain/top-10-fastest-growing-niches-fractional-nft-marketplaces-2026",
+      "snippet": "Feb 10, 2026 · This blog explores the top 10 fastest-growing niches, highlighting why fractional NFTs are becoming a cornerstone of …"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — November 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 1016 AI models across 758 benchmarks, with 212 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "15 Best Tools to Track New and Trending NFT Projects in 2026",
+      "url": "https://geekflare.com/crypto/nft-tracking-tools/",
+      "snippet": "Mar 11, 2026 · It delivers reliable insights into NFT sales, volumes, rankings, and trends, helping users stay informed and competitive …"
+    }
+  ]
+}

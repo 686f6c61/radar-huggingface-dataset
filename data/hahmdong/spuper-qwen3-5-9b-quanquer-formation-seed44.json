@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Hahmdong/SPUPER-qwen3.5-9b-quanquer-formation-seed44",
+  "slug": "hahmdong-spuper-qwen3-5-9b-quanquer-formation-seed44",
+  "author": "Hahmdong",
+  "url": "https://huggingface.co/Hahmdong/SPUPER-qwen3.5-9b-quanquer-formation-seed44",
+  "created_at": "2026-11-07T08:59:12.000Z",
+  "updated_at": "2026-11-07T09:01:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839718749,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hahmdong/SPUPER-qwen3.5-9b-quanquer-add-quanter1 · Hugging Face",
+      "url": "https://huggingface.co/Hahmdong/SPUPER-qwen3.5-9b-quanquer-add-quanter1",
+      "snippet": "Instructions to use Hahmdong/SPUPER-qwen3.5-9b-quanquer-add-quanter1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Hahmdong/SPUPER-qwen3.5-9b-quanquer-add-act-ai · Hugging Face",
+      "url": "https://huggingface.co/Hahmdong/SPUPER-qwen3.5-9b-quanquer-add-act-ai",
+      "snippet": "Hahmdong / SPUPER-qwen3.5-9b-quanquer-add-act-ai like 0 Safetensors qwen3_5 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 7 Safetensors Model size 9B params Tensor type F32 · BF16 · Chat template Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋 ..."
+    }
+  ]
+}

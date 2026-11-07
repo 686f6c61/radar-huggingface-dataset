@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "opticsWolf/potatr-onnx",
+  "slug": "opticswolf-potatr-onnx",
+  "author": "opticsWolf",
+  "url": "https://huggingface.co/opticsWolf/potatr-onnx",
+  "created_at": "2026-11-07T12:14:49.000Z",
+  "updated_at": "2026-11-07T12:15:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "table-extraction",
+    "table-structure-recognition",
+    "potatr",
+    "object-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116178983,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "opticsWolf (opticsWolf) - Hugging Face",
+      "url": "https://huggingface.co/opticsWolf",
+      "snippet": "models1 opticsWolf/jina-embeddings-v5-text-small-retrieval-onnx-fp16 Feature Extraction •Updated about 6 hours ago"
+    }
+  ]
+}

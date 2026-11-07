@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "prem-ml/LunarLander-v3",
+  "slug": "prem-ml-lunarlander-v3",
+  "author": "prem-ml",
+  "url": "https://huggingface.co/prem-ml/LunarLander-v3",
+  "created_at": "2026-11-07T11:18:44.000Z",
+  "updated_at": "2026-11-07T11:24:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 737383,
+  "storage_human": "737383 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prem-ml/lunar_lander_v3 · Hugging Face",
+      "url": "https://huggingface.co/prem-ml/lunar_lander_v3",
+      "snippet": "Instructions to use prem-ml/lunar_lander_v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries stable-baselines3 How to use prem-ml/lunar_lander_v3 with stable-baselines3:"
+    },
+    {
+      "title": "GitHub - Pranay-260605/Lunar-Lander: A reinforcement learning project ...",
+      "url": "https://github.com/Pranay-260605/Lunar-Lander",
+      "snippet": "A reinforcement learning project using OpenAI Gym’s LunarLander-v3 environment, achieving an average score of 280 over 100 episodes. The agent was trained to control a lunar module for safe landing using policy-based or value-based methods."
+    }
+  ]
+}

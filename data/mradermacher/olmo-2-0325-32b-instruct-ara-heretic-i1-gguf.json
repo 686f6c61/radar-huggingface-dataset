@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/OLMo-2-0325-32B-Instruct-ARA-heretic-i1-GGUF",
   "created_at": "2026-11-06T13:57:39.000Z",
-  "updated_at": "2026-11-06T14:37:06.000Z",
+  "updated_at": "2026-11-06T17:21:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 32234279936,
   "parameters_human": "32.23B",
-  "storage_bytes": 12036412096,
-  "storage_human": "12.0 GB",
+  "storage_bytes": 343817956736,
+  "storage_human": "343.8 GB",
   "base_model": "richardyoung/OLMo-2-0325-32B-Instruct-ARA-heretic",
   "formats": [
     "gguf"

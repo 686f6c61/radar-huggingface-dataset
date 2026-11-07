@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mcflurryshuoz/XEmoGPT",
+  "slug": "mcflurryshuoz-xemogpt",
+  "author": "mcflurryshuoz",
+  "url": "https://huggingface.co/mcflurryshuoz/XEmoGPT",
+  "created_at": "2026-11-07T05:11:46.000Z",
+  "updated_at": "2026-11-07T05:13:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "emotion-recognition",
+    "multimodal",
+    "unofficial-mirror",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2602.05496] XEmoGPT: An Explainable Multimodal Emotion Recognition ...",
+      "url": "https://arxiv.org/abs/2602.05496",
+      "snippet": "Abstract page for arXiv paper 2602.05496: XEmoGPT: An Explainable Multimodal Emotion Recognition Framework with Cue-Level Perception and Reasoning"
+    },
+    {
+      "title": "GitHub - W11H08Z/XEmoGPT: XEmoGPT is an Explainable Multimodal Emotion ...",
+      "url": "https://github.com/W11H08Z/XEmoGPT",
+      "snippet": "XEmoGPT is an Explainable Multimodal Emotion Recognition Framework with cue-level perception and reasoning, supporting video, audio, and subtitle inputs to generate fine-grained emotion predictions with interpretable evidence."
+    }
+  ]
+}

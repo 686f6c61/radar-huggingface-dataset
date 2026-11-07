@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "VenkataRamanaKurumallajaddangi/Telugu_Model_0.5B_Poetry_V1",
+  "slug": "venkataramanakurumallajaddangi-telugu_model_0-5b_poetry_v1",
+  "author": "VenkataRamanaKurumallajaddangi",
+  "url": "https://huggingface.co/VenkataRamanaKurumallajaddangi/Telugu_Model_0.5B_Poetry_V1",
+  "created_at": "2026-11-07T06:55:45.000Z",
+  "updated_at": "2026-11-07T06:56:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1098974903,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VenkataRamanaKurumallajaddangi/0.5b-telugu-kavithalu · Datasets at ...",
+      "url": "https://huggingface.co/datasets/VenkataRamanaKurumallajaddangi/0.5b-telugu-kavithalu",
+      "snippet": "Dataset with 2.6k rows (Text). Explore, preview and download it on Hugging Face."
+    },
+    {
+      "title": "VenkataRamanaKurumallajaddangi (venkat) - Hugging Face",
+      "url": "https://huggingface.co/VenkataRamanaKurumallajaddangi/datasets",
+      "snippet": "VenkataRamanaKurumallajaddangi/Telugu-Synthetic-Poems-20k Viewer •Updated 2 days ago•2.5k• 78"
+    }
+  ]
+}

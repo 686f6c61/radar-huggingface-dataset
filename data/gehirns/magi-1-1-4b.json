@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "GEHIRNS/magi-1.1-4B",
+  "slug": "gehirns-magi-1-1-4b",
+  "author": "GEHIRNS",
+  "url": "https://huggingface.co/GEHIRNS/magi-1.1-4B",
+  "created_at": "2026-11-07T06:21:08.000Z",
+  "updated_at": "2026-11-07T06:56:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3.5",
+    "mixed-precision",
+    "quantized",
+    "llama.cpp",
+    "ollama",
+    "reasoning",
+    "gated-deltanet",
+    "lora",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 1929776256,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GEHIRNS (GEHIRNS) – Collections - Hugging Face",
+      "url": "https://huggingface.co/GEHIRNS/collections",
+      "snippet": "GEHIRNS/magi-1.0 Text Generation • 4B•Updated 10 days ago• 1.28k • 5 MAGI experimental"
+    },
+    {
+      "title": "GEHIRNS (GEHIRNS) - Hugging Face",
+      "url": "https://huggingface.co/GEHIRNS",
+      "snippet": "GEHIRNS/magi-1.0 is Qwen3.5-4B in 1.80 GiB, with no training. Each tensor class is stored at the precision its measured sensitivity calls for, using only standard GGUF types, so the file runs in stock llama.cpp and Ollama."
+    }
+  ]
+}

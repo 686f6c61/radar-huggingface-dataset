@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "sivasurya-r/kittu-model",
+  "slug": "sivasurya-r-kittu-model",
+  "author": "sivasurya-r",
+  "url": "https://huggingface.co/sivasurya-r/kittu-model",
+  "created_at": "2026-11-06T10:28:19.000Z",
+  "updated_at": "2026-11-07T05:59:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610812,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sivasurya R - Aspiring AI Engineer | Agentic AI, RAG &amp; LLMs ...",
+      "url": "https://in.linkedin.com/in/sivasurya-r",
+      "snippet": "Aspiring AI Engineer | Agentic AI, RAG &amp; LLMs | Building AI-Powered Applications | Open to Remote Roles Worldwide · I’m a B.Tech student in Artificial Intelligence and Data Science, currently building my journey toward becoming an AI Engineer. I come with professional experience in network engineering, where I gained hands-on exposure to troubleshooting, infrastructure monitoring ..."
+    }
+  ]
+}

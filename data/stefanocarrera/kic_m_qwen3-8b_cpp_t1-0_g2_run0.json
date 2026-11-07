@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 174655536,
-  "storage_human": "175 MB",
+  "storage_bytes": 186078190,
+  "storage_human": "186 MB",
   "base_model": "unsloth/Qwen3-8B-Base-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

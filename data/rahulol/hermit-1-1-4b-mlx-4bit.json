@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "rahulol/Hermit-1.1-4B-MLX-4bit",
+  "slug": "rahulol-hermit-1-1-4b-mlx-4bit",
+  "author": "rahulol",
+  "url": "https://huggingface.co/rahulol/Hermit-1.1-4B-MLX-4bit",
+  "created_at": "2026-11-07T11:36:11.000Z",
+  "updated_at": "2026-11-07T11:36:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "hermit",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:quantized:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2274445071,
+  "storage_human": "2.3 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Infini-AI-Lab Releases Hermit, an Open-Source Harness Adapter Framework ...",
+      "url": "https://www.marktechpost.com/2026/10/29/infini-ai-lab-hermit-harness-adapter-framework/",
+      "snippet": "Infini-AI-Lab has released Hermit, an open-source harness adapter framework for AI agents. Hermit is a framework from Infini-AI-Lab that trains an external ‘harness adapter’ while the agent’s model and harness stay frozen. The first release, v0.1.0, shipped on October 25, 2026. CMU postdoc Haizhong Zheng announced it on X on October 27."
+    }
+  ]
+}

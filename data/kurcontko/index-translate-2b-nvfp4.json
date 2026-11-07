@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "kurcontko/Index-Translate-2B-NVFP4",
+  "slug": "kurcontko-index-translate-2b-nvfp4",
+  "author": "kurcontko",
+  "url": "https://huggingface.co/kurcontko/Index-Translate-2B-NVFP4",
+  "created_at": "2026-11-07T11:48:58.000Z",
+  "updated_at": "2026-11-07T11:49:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "translation",
+    "nvfp4",
+    "compressed-tensors",
+    "llm-compressor",
+    "base_model:IndexTeam/Index-Translate-2B",
+    "base_model:quantized:IndexTeam/Index-Translate-2B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2274069824,
+  "parameters_human": "2.27B",
+  "storage_bytes": 2589498708,
+  "storage_human": "2.6 GB",
+  "base_model": "IndexTeam/Index-Translate-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IndexTeam/Index-Translate-2B-FP4 · Hugging Face",
+      "url": "https://huggingface.co/IndexTeam/Index-Translate-2B-FP4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "IndexTeam/Index-Translate-2B · Hugging Face",
+      "url": "https://huggingface.co/IndexTeam/Index-Translate-2B",
+      "snippet": "IndexTeam / Index-Translate-2B Like 2 Follow Index Team 3.4k Translation Safetensors qwen3_5 index License:other Model card FilesFiles and versions xet Community Copy to bucket new Index-MT-2B"
+    }
+  ]
+}

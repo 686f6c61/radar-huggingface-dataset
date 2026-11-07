@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "rahulol/Hermit-MiniCPM5-2B-MLX-4bit",
+  "slug": "rahulol-hermit-minicpm5-2b-mlx-4bit",
+  "author": "rahulol",
+  "url": "https://huggingface.co/rahulol/Hermit-MiniCPM5-2B-MLX-4bit",
+  "created_at": "2026-11-07T09:56:48.000Z",
+  "updated_at": "2026-11-07T10:00:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "hermit",
+    "base_model:SonGT1/MiniCPM5-abliterated-2B",
+    "base_model:quantized:SonGT1/MiniCPM5-abliterated-2B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1416035216,
+  "storage_human": "1.4 GB",
+  "base_model": "SonGT1/MiniCPM5-abliterated-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/MiniCPM5-2B-MLX · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B-MLX",
+      "snippet": "MiniCPM5-2B uses the standard LlamaForCausalLM architecture, so mainstream inference engines can load it directly: no custom kernels, no model-code fork. For step-by-step deployment and fine-tuning instructions, use the GitHub cookbooks below. Agent Skills are linked as GitHub resources for users working with Cursor / Claude Code style coding ..."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM: MiniCPM5: SOTA on-device LLMs, small yet ...",
+      "url": "https://github.com/OpenBMB/MiniCPM",
+      "snippet": "We are releasing MiniCPM5-2B, the second model in the MiniCPM5 series, following MiniCPM5-1B. It is a dense 2B Transformer that scales up the same training recipe, built for on-device, local deployment, and resource-constrained scenarios, reaching 2B-class open-source SOTA."
+    }
+  ]
+}

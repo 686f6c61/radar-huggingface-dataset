@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/SAM2-hiera-tiny-OpenVINO",
+  "slug": "mlboydaisuke-sam2-hiera-tiny-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/SAM2-hiera-tiny-OpenVINO",
+  "created_at": "2026-11-07T06:49:09.000Z",
+  "updated_at": "2026-11-07T06:49:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "mask-generation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "mask-generation",
+    "base_model:mlboydaisuke/SAM2-hiera-tiny-LiteRT",
+    "base_model:quantized:mlboydaisuke/SAM2-hiera-tiny-LiteRT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 485452953,
+  "storage_human": "485 MB",
+  "base_model": "mlboydaisuke/SAM2-hiera-tiny-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · mlboydaisuke/SAM2-hiera-tiny-LiteRT at main",
+      "url": "https://huggingface.co/mlboydaisuke/SAM2-hiera-tiny-LiteRT/blob/main/README.md",
+      "snippet": "SAM 2.1 (Segment Anything 2, Meta) Hiera-Tiny converted to LiteRT and running fully on the GPU via the CompiledModel API (ML Drift). Tap a point on an image and it returns a segmentation mask — the image encoder runs once per image, the mask decoder runs per point."
+    },
+    {
+      "title": "facebook/sam2-hiera-tiny · Hugging Face",
+      "url": "https://huggingface.co/facebook/sam2-hiera-tiny",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sam2-hiera-tiny · Models",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/sam2-hiera-tiny",
+      "snippet": "sam2-hiera-tiny - AI-ModelScope 在 ModelScope 开源的模型。"
+    }
+  ]
+}

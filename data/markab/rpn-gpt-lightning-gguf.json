@@ -5,7 +5,7 @@
   "author": "markab",
   "url": "https://huggingface.co/markab/rpn-gpt-lightning-GGUF",
   "created_at": "2026-11-06T19:17:08.000Z",
-  "updated_at": "2026-11-06T19:24:36.000Z",
+  "updated_at": "2026-11-06T19:55:01.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

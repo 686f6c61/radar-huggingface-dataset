@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "chris320211/autoround-qwen3-8b-vastrtx3090-vllm",
+  "slug": "chris320211-autoround-qwen3-8b-vastrtx3090-vllm",
+  "author": "chris320211",
+  "url": "https://huggingface.co/chris320211/autoround-qwen3-8b-vastrtx3090-vllm",
+  "created_at": "2026-11-07T07:17:54.000Z",
+  "updated_at": "2026-11-07T07:18:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "quantized",
+    "quantport",
+    "autoround",
+    "vllm",
+    "gptq",
+    "int4",
+    "w4a16",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:quantized:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "4-bit",
+    "auto-round",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2174235648,
+  "parameters_human": "2.17B",
+  "storage_bytes": 6110004262,
+  "storage_human": "6.1 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chris320211/smoothquant-qwen25-15b-vastrtx3090-vllm · Hugging Face",
+      "url": "https://huggingface.co/chris320211/smoothquant-qwen25-15b-vastrtx3090-vllm",
+      "snippet": "chris320211 / smoothquant-qwen25-15b-vastrtx3090-vllm Like 0 Text Generation Safetensors qwen2 quantized quantport smoothquant vllm compressed-tensors int8 w8a8 conversational 8-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket SmoothQuant Qwen/Qwen2.5-1.5B-Instruct for vLLM Serve vLLM results ..."
+    },
+    {
+      "title": "GitHub - syv-ai/HyperQwen: Serve large Qwen models fast on the GPUs you ...",
+      "url": "https://github.com/syv-ai/HyperQwen",
+      "snippet": "Serve large Qwen models fast on the GPUs you actually own. Qwen3.8-27B on a single 24 GB card with vLLM: 127 tok/s single-user (381 when the answer quotes the prompt), ~1,035 tok/s at 64 concurrent, 150k-262k context. vLLM patches, requant pipeline, benchmarks. - syv-ai/HyperQwen"
+    }
+  ]
+}

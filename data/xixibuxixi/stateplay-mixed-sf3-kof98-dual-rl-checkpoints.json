@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "xixibuxixi/StatePlay-Mixed-SF3-KOF98-Dual-RL-Checkpoints",
+  "slug": "xixibuxixi-stateplay-mixed-sf3-kof98-dual-rl-checkpoints",
+  "author": "xixibuxixi",
+  "url": "https://huggingface.co/xixibuxixi/StatePlay-Mixed-SF3-KOF98-Dual-RL-Checkpoints",
+  "created_at": "2026-11-07T12:09:33.000Z",
+  "updated_at": "2026-11-07T12:10:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "video-generation",
+    "reinforcement-learning",
+    "stateplay",
+    "wan",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2894112134,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xixibuxixi/StatePlay-KOF98-MoT-5B-step1250 · Hugging Face",
+      "url": "https://huggingface.co/xixibuxixi/StatePlay-KOF98-MoT-5B-step1250",
+      "snippet": "This is an experimental implicit-state StatePlay world model trained on KOF98 video/action data. The repository contains the complete BF16 StatePlay DiT from stage 2 at optimizer step 1250 and the transition tokenizer produced by stage 1."
+    }
+  ]
+}

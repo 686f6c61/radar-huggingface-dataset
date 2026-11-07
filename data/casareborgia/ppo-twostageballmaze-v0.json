@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "casareborgia/ppo-TwoStageBallMaze-v0",
+  "slug": "casareborgia-ppo-twostageballmaze-v0",
+  "author": "casareborgia",
+  "url": "https://huggingface.co/casareborgia/ppo-TwoStageBallMaze-v0",
+  "created_at": "2026-11-07T11:06:36.000Z",
+  "updated_at": "2026-11-07T11:06:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "mujoco",
+    "gymnasium",
+    "ppo",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "TwoStageBallMaze-v0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2385311,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "TwoStageBallMaze-v0",
+      "metric": "Mean Official Score",
+      "value": 1118
+    },
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "TwoStageBallMaze-v0",
+      "metric": "Goal Success Rate",
+      "value": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "casareborgia (이승준) - Hugging Face",
+      "url": "https://huggingface.co/casareborgia",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 months ago ... published a model about 2 months ago"
+    }
+  ]
+}

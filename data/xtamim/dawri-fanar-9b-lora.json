@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "xTamim/dawri-fanar-9b-lora",
+  "slug": "xtamim-dawri-fanar-9b-lora",
+  "author": "xTamim",
+  "url": "https://huggingface.co/xTamim/dawri-fanar-9b-lora",
+  "created_at": "2026-11-07T01:25:12.000Z",
+  "updated_at": "2026-11-07T07:02:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "synthetic-data",
+    "not-for-clinical-use",
+    "qai-hf-hackathon-2026",
+    "en",
+    "ar",
+    "base_model:QCRI/Fanar-1-9B-Instruct",
+    "base_model:adapter:QCRI/Fanar-1-9B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1955551921,
+  "storage_human": "2.0 GB",
+  "base_model": "QCRI/Fanar-1-9B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

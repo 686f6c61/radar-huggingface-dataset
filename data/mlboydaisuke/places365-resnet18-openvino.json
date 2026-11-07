@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/Places365-ResNet18-OpenVINO",
+  "slug": "mlboydaisuke-places365-resnet18-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/Places365-ResNet18-OpenVINO",
+  "created_at": "2026-11-07T06:31:58.000Z",
+  "updated_at": "2026-11-07T06:32:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-classification",
+    "base_model:litert-community/Places365-ResNet18-LiteRT",
+    "base_model:quantized:litert-community/Places365-ResNet18-LiteRT",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114135898,
+  "storage_human": "114 MB",
+  "base_model": "litert-community/Places365-ResNet18-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - CSAILVision/places365: The Places365-CNNs for Scene ...",
+      "url": "https://github.com/CSAILVision/places365",
+      "snippet": "PyTorch Places365 models: AlexNet, ResNet18, ResNet50, DenseNet161. The models are trained in Python2.7+PyTorch 0.2, see this issue if you run into some format errors. You don't need to untar the pytorch model files, refer to the following placesCNN demo code to see how to load the model. Run basic code to get the scene prediction from PlacesCNN:"
+    },
+    {
+      "title": "torchvision.datasets.places365 — Torchvision 0.26 documentation",
+      "url": "https://docs.pytorch.org/vision/stable/_modules/torchvision/datasets/places365.html",
+      "snippet": "Tutorials Get in-depth tutorials for beginners and advanced developers View Tutorials"
+    }
+  ]
+}

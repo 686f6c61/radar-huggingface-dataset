@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "RainbowLord/Rainbow-AI-12B-Unified",
+  "slug": "rainbowlord-rainbow-ai-12b-unified",
+  "author": "RainbowLord",
+  "url": "https://huggingface.co/RainbowLord/Rainbow-AI-12B-Unified",
+  "created_at": "2026-10-09T16:02:29.000Z",
+  "updated_at": "2026-11-07T10:06:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4_unified",
+    "unsloth",
+    "gemma-2",
+    "trl",
+    "sft",
+    "custom-model",
+    "rainbow-ai",
+    "nova-persona",
+    "dataset:custom-multi-domain",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 131,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951717810,
+  "storage_human": "24.0 GB",
+  "base_model": "unsloth/gemma-2-12b-it-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RainbowLord/Rainbow-AI-12B-Unified · Hugging Face",
+      "url": "https://huggingface.co/RainbowLord/Rainbow-AI-12B-Unified",
+      "snippet": "Rainbow-AI-12B-Unified is a custom-trained, multi-domain 12B parameter language model built on an Unsloth-optimized Gemma-2 base architecture span_3 span_3. It features tailored conversational capabilities spanning coding, visual analytics, creative tasks, and a specialized Nova persona mode."
+    },
+    {
+      "title": "RainbowLord/Rainbow-AI-12B-Unified",
+      "url": "https://featherless.ai/models/RainbowLord/Rainbow-AI-12B-Unified",
+      "snippet": "Rainbow-AI-12B-Unified is a 12 billion parameter language model developed by RainbowLord, built upon an Unsloth-optimized Gemma-4 base architecture. This model is custom-trained using Supervised Fine-Tuning (SFT) over 60 steps, specifically designed to function as a versatile, multi-domain assistant."
+    }
+  ]
+}

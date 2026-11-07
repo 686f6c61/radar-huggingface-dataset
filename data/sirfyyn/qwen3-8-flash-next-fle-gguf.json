@@ -5,7 +5,7 @@
   "author": "sirfyyn",
   "url": "https://huggingface.co/sirfyyn/Qwen3.8-Flash-Next-FLE-GGUF",
   "created_at": "2026-10-08T21:13:52.000Z",
-  "updated_at": "2026-11-04T15:50:19.000Z",
+  "updated_at": "2026-11-07T05:32:38.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -58,7 +58,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 5914,
+  "downloads_30d": 5916,
   "trending_score": 0,
   "parameters": 176943899520,
   "parameters_human": "176.94B",

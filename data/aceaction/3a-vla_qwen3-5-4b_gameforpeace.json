@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "AceAction/3A-VLA_Qwen3.5-4B_GameForPeace",
+  "slug": "aceaction-3a-vla_qwen3-5-4b_gameforpeace",
+  "author": "AceAction",
+  "url": "https://huggingface.co/AceAction/3A-VLA_Qwen3.5-4B_GameForPeace",
+  "created_at": "2026-11-03T15:46:35.000Z",
+  "updated_at": "2026-11-04T07:01:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "game-playing",
+    "sft",
+    "segmentation",
+    "conversational",
+    "dataset:3a-vla/GameForPeace-VLA",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 17564781766,
+  "storage_human": "17.6 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-4B-GLB-3D-Coder: A Small Model That Builds Game Assets",
+      "url": "https://www.mindstudio.ai/blog/qwen3-5-4b-glb-3d-coder-model",
+      "snippet": "Qwen3.5-4B-GLB-3D-Coder is a 4-billion-parameter coding model fine-tuned to write standalone Three.js HTML/JavaScript scenes that export directly to GLB files. The GLB output is meant to drop into game engines like Godot, which makes the model a text-to-3D-asset tool rather than a general chatbot."
+    },
+    {
+      "title": "Qwen/Qwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-4B",
+      "snippet": "Image-Text-to-Text model with 5B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

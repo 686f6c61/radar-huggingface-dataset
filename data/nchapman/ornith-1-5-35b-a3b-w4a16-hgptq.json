@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "nchapman/Ornith-1.5-35B-A3B-W4A16-HGPTQ",
+  "slug": "nchapman-ornith-1-5-35b-a3b-w4a16-hgptq",
+  "author": "nchapman",
+  "url": "https://huggingface.co/nchapman/Ornith-1.5-35B-A3B-W4A16-HGPTQ",
+  "created_at": "2026-11-07T11:03:18.000Z",
+  "updated_at": "2026-11-07T11:05:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "gptq",
+    "hadamard",
+    "quip",
+    "w4a16",
+    "moe",
+    "compressed-tensors",
+    "vllm",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 20692365598,
+  "storage_human": "20.7 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8",
+      "snippet": "Ornith 1.5 35B-A3B This model card documents Ornith-1.5-35B-A3B, the mid-size mixture-of-experts member of the Ornith-1.5 family. It activates only ~3B parameters per token, yet significantly outperforms its similar-sized peer Qwen 3.6-35B across all coding and agentic benchmarks, and outperforms dense models such as Gemma 4-31B and Muse Glimmer-30B by wide margins on agentic coding."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/Reviso-GGUF",
+  "slug": "prithivmlmods-reviso-gguf",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/Reviso-GGUF",
+  "created_at": "2026-11-07T05:34:09.000Z",
+  "updated_at": "2026-11-07T05:41:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "llama-cpp",
+    "video-captioning",
+    "agentic",
+    "image-text-to-text",
+    "en",
+    "base_model:TengfeiLiuCoder/Reviso",
+    "base_model:quantized:TengfeiLiuCoder/Reviso",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 69032198624,
+  "storage_human": "69.0 GB",
+  "base_model": "TengfeiLiuCoder/Reviso",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prithivMLmods (Prithiv Sakthi)",
+      "url": "https://huggingface.co/prithivMLmods",
+      "snippet": "computer vision, nlp, multimodality - HuggingFace Fellow ML 🤗"
+    },
+    {
+      "title": "prithivMLmods/inclusionAI-ZwZ2-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/inclusionAI-ZwZ2-4B-GGUF",
+      "snippet": "inclusionAI-ZwZ2-4B-GGUF ZwZ2-4B (inclusionAI/ZwZ2-4B) is an open-weight 4B-parameter vision-language model from inclusionAI’s Zooming-without-Zooming-v2 collection, built on Qwen/Qwen3.5-4B to connect evidence across image regions through comparison, matching, aggregation, and multi-step reasoning without inference-time zooming tools."
+    }
+  ]
+}

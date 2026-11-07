@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "gatilin/lfm3-omni-2b-vision-encoder",
+  "slug": "gatilin-lfm3-omni-2b-vision-encoder",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/lfm3-omni-2b-vision-encoder",
+  "created_at": "2026-11-07T12:21:26.000Z",
+  "updated_at": "2026-11-07T12:24:19.000Z",
+  "license": "lfm-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "lfm3_omni",
+    "vision-encoder",
+    "multimodal",
+    "feature-extraction",
+    "image-feature-extraction",
+    "custom_code",
+    "base_model:LiquidAI/LFM3-Omni-2B",
+    "base_model:finetune:LiquidAI/LFM3-Omni-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 189380352,
+  "parameters_human": "189.4M",
+  "storage_bytes": 378777968,
+  "storage_human": "379 MB",
+  "base_model": "LiquidAI/LFM3-Omni-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM3-Omni-2B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM3-Omni-2B",
+      "snippet": "Any-to-Any model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "LFM3-Omni-2B - Liquid AI Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm3-omni-2b",
+      "snippet": "← Back to Omni Models LFM3-Omni-2B is Liquid AI’s first omni model: a single end-to-end model that understands text, images, video, and audio, and answers in text, speech, or interleaved text and speech. It is built for on-device use, where one model replaces a separate ASR model, vision-language model, LLM, and TTS model. It is a non-reasoning model."
+    }
+  ]
+}

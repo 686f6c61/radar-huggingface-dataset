@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Myungkyu/rldx_b2d_ur5_rh56dfx_3_b128_60k",
+  "slug": "myungkyu-rldx_b2d_ur5_rh56dfx_3_b128_60k",
+  "author": "Myungkyu",
+  "url": "https://huggingface.co/Myungkyu/rldx_b2d_ur5_rh56dfx_3_b128_60k",
+  "created_at": "2026-10-09T23:04:51.000Z",
+  "updated_at": "2026-11-07T05:23:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "robotics",
+    "vla",
+    "bench2dex",
+    "baseline",
+    "dataset:Bench2Dex/teleopdata",
+    "base_model:RLWRLD/RLDX-1-PT",
+    "base_model:finetune:RLWRLD/RLDX-1-PT",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 98,
+  "trending_score": 0,
+  "parameters": 6912896320,
+  "parameters_human": "6.91B",
+  "storage_bytes": 165910704864,
+  "storage_human": "165.9 GB",
+  "base_model": "RLWRLD/RLDX-1-PT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Myungkyu/rldx_b2d_ur5_rh56dfx_3_b128_60k · Hugging Face",
+      "url": "https://huggingface.co/Myungkyu/rldx_b2d_ur5_rh56dfx_3_b128_60k",
+      "snippet": "Vanilla baseline: Bench2Dex setting(s) (ur5_rh56dfx_3: replay-generalization demos, 4 views, canonical registry joint order; our LeRobot export of Bench2Dex/teleopdata). Architecture: RLDX-1-PT (video length 4 / stride 2, three camera views, action horizon 50) fine-tuned with padding-dimension noise ..."
+    },
+    {
+      "title": "rldx2_rldx_b2d_ur5_rh56dfx_3_nomask_b128_60k - Hugging Face",
+      "url": "https://huggingface.co/Myungkyu/rldx2_rldx_b2d_ur5_rh56dfx_3_nomask_b128_60k",
+      "snippet": "RLDX-1 ablation (no padding-dim noise mask) for the RLDX-2 project: Bench2Dex setting (s) (ur5_rh56dfx_3: replay-generalization demos, 4 views, canonical registry joint order; our LeRobot export of Bench2Dex/teleopdata)."
+    }
+  ]
+}

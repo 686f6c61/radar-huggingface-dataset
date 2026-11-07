@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "OpenMed/Qwen3-1.7B-WSP-Clinical",
+  "slug": "openmed-qwen3-1-7b-wsp-clinical",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/Qwen3-1.7B-WSP-Clinical",
+  "created_at": "2026-11-03T16:26:34.000Z",
+  "updated_at": "2026-11-07T11:05:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "openmed",
+    "medical",
+    "clinical",
+    "medqa",
+    "weight-space-programming",
+    "conversational",
+    "dataset:GBaker/MedQA-USMLE-4-options",
+    "dataset:openlifescienceai/medmcqa",
+    "dataset:cais/mmlu",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4077004270,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Clinical multiple-choice questions",
+      "dataset": "MedQA-USMLE (4 options)",
+      "metric": "Accuracy (thinking on, one sample, seed 0)",
+      "value": 52.7
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "Text Generation model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen3 - openlm.ai",
+      "url": "https://openlm.ai/qwen3/",
+      "snippet": "We are excited to announce the release of Qwen3, the latest addition to the Qwen family of large language models. These models represent our most advanced and intelligent systems to date, improving from our experience in building QwQ and Qwen2.5. We are making the weights of Qwen3 available to the public, including both dense and Mixture-of-Expert (MoE) models."
+    }
+  ]
+}

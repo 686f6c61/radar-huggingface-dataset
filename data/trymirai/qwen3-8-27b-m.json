@@ -5,7 +5,7 @@
   "author": "trymirai",
   "url": "https://huggingface.co/trymirai/Qwen3.8-27B-M",
   "created_at": "2026-08-18T20:54:57.000Z",
-  "updated_at": "2026-11-02T11:24:37.000Z",
+  "updated_at": "2026-11-06T19:11:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 10,
-  "downloads_30d": 2063,
+  "downloads_30d": 2094,
   "trending_score": 0,
   "parameters": 14085711872,
   "parameters_human": "14.09B",
-  "storage_bytes": 62317825255,
-  "storage_human": "62.3 GB",
+  "storage_bytes": 77957037951,
+  "storage_human": "78.0 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/NAFNet-GoPro-width32-OpenVINO",
+  "slug": "mlboydaisuke-nafnet-gopro-width32-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/NAFNet-GoPro-width32-OpenVINO",
+  "created_at": "2026-11-07T06:34:41.000Z",
+  "updated_at": "2026-11-07T06:34:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-to-image",
+    "base_model:litert-community/NAFNet-GoPro-width32-LiteRT",
+    "base_model:quantized:litert-community/NAFNet-GoPro-width32-LiteRT",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 199173813,
+  "storage_human": "199 MB",
+  "base_model": "litert-community/NAFNet-GoPro-width32-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NAFNet/options/train/GoPro/NAFNet-width32.yml at main - GitHub",
+      "url": "https://github.com/megvii-research/NAFNet/blob/main/options/train/GoPro/NAFNet-width32.yml",
+      "snippet": "The state-of-the-art image restoration model without nonlinear activation functions. - megvii-research/NAFNet"
+    },
+    {
+      "title": "NAFNet/options/train/GoPro/Baseline-width32.yml at main - GitHub",
+      "url": "https://github.com/megvii-research/NAFNet/blob/main/options/train/GoPro/Baseline-width32.yml",
+      "snippet": "The state-of-the-art image restoration model without nonlinear activation functions. - megvii-research/NAFNet"
+    }
+  ]
+}

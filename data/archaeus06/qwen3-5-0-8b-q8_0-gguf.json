@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "archaeus06/Qwen3.5-0.8B-Q8_0-GGUF",
+  "slug": "archaeus06-qwen3-5-0-8b-q8_0-gguf",
+  "author": "archaeus06",
+  "url": "https://huggingface.co/archaeus06/Qwen3.5-0.8B-Q8_0-GGUF",
+  "created_at": "2026-11-07T10:48:08.000Z",
+  "updated_at": "2026-11-07T10:48:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 833592128,
+  "storage_human": "834 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · ggml-org/Qwen3.5-0.8B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/ggml-org/Qwen3.5-0.8B-GGUF/blob/main/README.md",
+      "snippet": "Instructions to use ggml-org/Qwen3.5-0.8B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp Install (macOS, Linux)"
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    }
+  ]
+}

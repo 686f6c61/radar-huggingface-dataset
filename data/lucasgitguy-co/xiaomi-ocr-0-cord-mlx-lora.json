@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Lucasgitguy-co/Xiaomi-OCR-0-CORD-MLX-LoRA",
+  "slug": "lucasgitguy-co-xiaomi-ocr-0-cord-mlx-lora",
+  "author": "Lucasgitguy-co",
+  "url": "https://huggingface.co/Lucasgitguy-co/Xiaomi-OCR-0-CORD-MLX-LoRA",
+  "created_at": "2026-11-07T08:31:44.000Z",
+  "updated_at": "2026-11-07T08:31:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx-vlm",
+  "languages": [],
+  "tags": [
+    "mlx-vlm",
+    "mlx",
+    "lora",
+    "receipt-extraction",
+    "dataset:naver-clova-ix/cord-v2",
+    "base_model:xiaomi-research/Xiaomi-OCR-0",
+    "base_model:adapter:xiaomi-research/Xiaomi-OCR-0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21691604,
+  "storage_human": "22 MB",
+  "base_model": "xiaomi-research/Xiaomi-OCR-0",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SeerRay-Lab/Xiaomi-OCR-0",
+      "url": "https://github.com/SeerRay-Lab/Xiaomi-OCR-0",
+      "snippet": "Xiaomi-OCR-0 is a unified 0.8B vision-language model for document parsing and OCR-centric understanding. Starting from Qwen3.5-0.8B, it is trained on an approximately 170M-sample OCR-centric corpus with Q-Mask text anchoring, continued pretraining (CPT), and mixed-task reinforcement learning (Mix-RL)."
+    },
+    {
+      "title": "xiaomi-research/Xiaomi-OCR-0 · Hugging Face",
+      "url": "https://huggingface.co/xiaomi-research/Xiaomi-OCR-0",
+      "snippet": "Image-Text-to-Text model with 0.9B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "nfa04",
   "url": "https://huggingface.co/nfa04/texteller-onnx-8bit",
   "created_at": "2026-11-06T13:22:05.000Z",
-  "updated_at": "2026-11-06T13:35:15.000Z",
+  "updated_at": "2026-11-07T01:02:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",

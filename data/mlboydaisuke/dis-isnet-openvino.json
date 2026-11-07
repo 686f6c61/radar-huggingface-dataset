@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/DIS-ISNet-OpenVINO",
+  "slug": "mlboydaisuke-dis-isnet-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/DIS-ISNet-OpenVINO",
+  "created_at": "2026-11-07T06:47:08.000Z",
+  "updated_at": "2026-11-07T06:47:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-segmentation",
+    "base_model:litert-community/DIS-ISNet-LiteRT",
+    "base_model:quantized:litert-community/DIS-ISNet-LiteRT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 462410845,
+  "storage_human": "462 MB",
+  "base_model": "litert-community/DIS-ISNet-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/DIS-ISNet-ExecuTorch at main - Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/DIS-ISNet-ExecuTorch/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main DIS-ISNet-ExecuTorch 176 MB Ctrl+K Ctrl+K 1 contributor History:8 commits mlboydaisuke Upload dis_isnet_xnnpack_fp32.pte with huggingface_hub ab9eaa7 verifiedabout 2 hours ago .gitattributes 1.65 kBUpload dis_isnet_xnnpack_int8.pte with huggingface_hubabout 4 hours ago ..."
+    },
+    {
+      "title": "mlboydaisuke/DIS-ISNet-ExecuTorch · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/DIS-ISNet-ExecuTorch",
+      "snippet": "fp32 dis_isnet_xnnpack_fp32.pte 176.1 1.000000 123.4 *Mac arm64, single process, median of 10 — a reference point for relative cost only, not a device number (torch eager fp32 on the same machine: 364.6 ms). fp16 is not shipped: worst-output corr 0.986 against fp32 eager, below the 0.995 bar for ..."
+    }
+  ]
+}

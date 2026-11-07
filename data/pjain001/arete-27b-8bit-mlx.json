@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "pjain001/arete-27b-8bit-mlx",
+  "slug": "pjain001-arete-27b-8bit-mlx",
+  "author": "pjain001",
+  "url": "https://huggingface.co/pjain001/arete-27b-8bit-mlx",
+  "created_at": "2026-11-07T05:44:16.000Z",
+  "updated_at": "2026-11-07T05:44:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "nous-research",
+    "arete",
+    "supervised-fine-tuning",
+    "value-alignment",
+    "text-generation",
+    "conversational",
+    "dataset:NousResearch/arete-data-pairs",
+    "base_model:NousResearch/Arete-27B",
+    "base_model:quantized:NousResearch/Arete-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 28680724517,
+  "storage_human": "28.7 GB",
+  "base_model": "NousResearch/Arete-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NousResearch/Arete-27B - Hugging Face",
+      "url": "https://huggingface.co/NousResearch/Arete-27B",
+      "snippet": "We post-trained over Alibaba's Qwen3.8-27B to reinforce western values on a Chinese-trained model. We call this new model Arete-27B. Open source models give labs the raw tools to mold intelligence to varied preferences. The values a model ships with should not be the only values its users get to ..."
+    },
+    {
+      "title": "Arete 27B - AI Model | There's An AI For That",
+      "url": "https://theresanaiforthat.com/model/arete-27b/",
+      "snippet": "Arete 27B is a 27-billion-parameter model derived from Qwen3.8-27B for general assistance, agentic work and research into model value alignment. Nous Research used supervised fine-tuning on about 52.8 million tokens over two epochs, without reinforcement learning, preference optimization or architectural changes."
+    }
+  ]
+}

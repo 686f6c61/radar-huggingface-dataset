@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "GermannM/Kenga-One",
+  "slug": "germannm-kenga-one",
+  "author": "GermannM",
+  "url": "https://huggingface.co/GermannM/Kenga-One",
+  "created_at": "2026-11-07T10:31:08.000Z",
+  "updated_at": "2026-11-07T10:31:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru",
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "kenga",
+    "kenga-one",
+    "kenga-lang",
+    "z-system",
+    "prophet",
+    "cascade",
+    "compiler-in-the-loop",
+    "zero-hallucination",
+    "openai-compatible",
+    "text-generation",
+    "ru",
+    "en",
+    "multilingual",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GermannM/Kenga · Hugging Face",
+      "url": "https://huggingface.co/GermannM/Kenga",
+      "snippet": "GermannM / Kenga like 0 Text Generation Transformers Safetensors Russian English qwen2 kenga russian personality cpu-friendly z-system conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Run Kenga API (Easy Deployment & Flat-Rate Pricing) - featherless.ai",
+      "url": "https://featherless.ai/models/GermannM/Kenga",
+      "snippet": "Kenga: A Language Model with Inherent Identity Kenga, developed by GermannM, is a 1.5 billion parameter language model built on a transformer decoder architecture, featuring a 32K token context length. Unlike many general-purpose models, Kenga is designed with a specific identity, knowing it is \"Kenga,\" who created it, and its core values. It is primarily optimized for the Russian language ..."
+    }
+  ]
+}

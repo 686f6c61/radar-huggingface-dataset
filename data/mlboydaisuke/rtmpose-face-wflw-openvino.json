@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/RTMPose-Face-WFLW-OpenVINO",
+  "slug": "mlboydaisuke-rtmpose-face-wflw-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/RTMPose-Face-WFLW-OpenVINO",
+  "created_at": "2026-11-07T06:34:19.000Z",
+  "updated_at": "2026-11-07T06:34:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "keypoint-detection",
+    "base_model:litert-community/RTMPose-Face-WFLW-LiteRT",
+    "base_model:quantized:litert-community/RTMPose-Face-WFLW-LiteRT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 169067526,
+  "storage_human": "169 MB",
+  "base_model": "litert-community/RTMPose-Face-WFLW-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mmpose/projects/rtmpose at main · open-mmlab/mmpose · GitHub",
+      "url": "https://github.com/open-mmlab/mmpose/tree/main/projects/rtmpose",
+      "snippet": "OpenMMLab Pose Estimation Toolbox and Benchmark. Contribute to open-mmlab/mmpose development by creating an account on GitHub."
+    },
+    {
+      "title": "RTMpose-OpenVINO (Face, Body, Hand) - GitHub",
+      "url": "https://github.com/coldchanP/RTMpose-OpenVINO",
+      "snippet": "Face models: For facial landmark detection (68 or 106 keypoints) Body models: For human body pose estimation (17 or 133 keypoints) Hand models: For hand keypoint detection (21 keypoints) Note: You need to convert RTMPose models to OpenVINO IR format (.xml/.bin) using the OpenVINO Model Optimizer or export them directly from the original framework."
+    }
+  ]
+}

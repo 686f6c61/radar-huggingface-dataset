@@ -5,7 +5,7 @@
   "author": "tatoy",
   "url": "https://huggingface.co/tatoy/qwen3_14b_cpt_ai_research_5",
   "created_at": "2026-11-05T12:39:33.000Z",
-  "updated_at": "2026-11-06T11:01:34.000Z",
+  "updated_at": "2026-11-07T06:34:28.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -15,9 +15,9 @@
     "transformers",
     "safetensors",
     "generated_from_trainer",
+    "sft",
     "unsloth",
     "trl",
-    "sft",
     "endpoints_compatible",
     "region:us"
   ],
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 57337088827,
-  "storage_human": "57.3 GB",
+  "storage_bytes": 97156058933,
+  "storage_human": "97.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

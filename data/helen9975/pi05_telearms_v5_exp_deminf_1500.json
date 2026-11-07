@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "helen9975/pi05_telearms_v5_exp_deminf_1500",
+  "slug": "helen9975-pi05_telearms_v5_exp_deminf_1500",
+  "author": "helen9975",
+  "url": "https://huggingface.co/helen9975/pi05_telearms_v5_exp_deminf_1500",
+  "created_at": "2026-11-07T07:55:22.000Z",
+  "updated_at": "2026-11-07T07:56:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "telearms",
+    "bimanual-yam",
+    "dataset:mliu48/telearms-yam-cube-v5-exp-deminf-1500",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354065676,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "helen9975/pi05_telearms_v5_exp_random_1500 · Hugging Face",
+      "url": "https://huggingface.co/helen9975/pi05_telearms_v5_exp_random_1500",
+      "snippet": "Instructions to use helen9975/pi05_telearms_v5_exp_random_1500 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "helen9975/pi05_telearms_v5_mixed · Hugging Face",
+      "url": "https://huggingface.co/helen9975/pi05_telearms_v5_mixed",
+      "snippet": "Training is still running. π₀.₅ (lerobot/pi05_base) full fine-tune on mliu48/telearms-yam-cube-v5-ablation-mixed (revision 20dca673): 60,093 simulated bimanual YAM demonstrations, a mixture of demonstrations of 7 tasks, 77.4M frames at 30 Hz, three cameras rendered like the real RealSense cameras (16:9) and letterboxed to 224×224."
+    }
+  ]
+}

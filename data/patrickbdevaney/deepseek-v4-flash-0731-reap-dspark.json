@@ -5,7 +5,7 @@
   "author": "patrickbdevaney",
   "url": "https://huggingface.co/patrickbdevaney/DeepSeek-V4-Flash-0731-REAP-DSpark",
   "created_at": "2026-08-27T03:52:50.000Z",
-  "updated_at": "2026-11-07T00:55:07.000Z",
+  "updated_at": "2026-11-07T01:30:19.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

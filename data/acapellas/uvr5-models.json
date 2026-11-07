@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Acapellas/uvr5-models",
+  "slug": "acapellas-uvr5-models",
+  "author": "Acapellas",
+  "url": "https://huggingface.co/Acapellas/uvr5-models",
+  "created_at": "2026-11-07T10:00:28.000Z",
+  "updated_at": "2026-11-07T10:00:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "audio",
+    "music",
+    "stem-separation",
+    "vocal-removal",
+    "mdx-net",
+    "uvr",
+    "demucs",
+    "en",
+    "arxiv:2111.12203",
+    "arxiv:2211.00847",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 426248784,
+  "storage_human": "426 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UVR5 Complete Guide 2026 | Karaoke & Acapella (Vocal/Instrumental ...",
+      "url": "https://tomodahinata.com/en/blog/uvr5-karaoke-instrumental-acapella-vocal-extraction-guide",
+      "snippet": "A practical guide to making karaoke tracks (instrumental), a cappella (vocals), and harmony removal from songs with UVR5 (MDX-Net). It explains, in a form you can make today even as a first-timer: recommended models per use (Inst-type/Vocal-type/KARA_2), both GUI and code procedures, tips to raise audio quality, batch processing of an album, and the easy-to-miss copyright cautions."
+    }
+  ]
+}

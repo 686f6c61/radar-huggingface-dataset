@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "kakoka/Slonik-27B-oQ6e-mtp",
+  "slug": "kakoka-slonik-27b-oq6e-mtp",
+  "author": "kakoka",
+  "url": "https://huggingface.co/kakoka/Slonik-27B-oQ6e-mtp",
+  "created_at": "2026-11-07T11:12:24.000Z",
+  "updated_at": "2026-11-07T12:25:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "omlx",
+    "slonik",
+    "quantized",
+    "mtp",
+    "postgresql",
+    "code",
+    "text-generation",
+    "conversational",
+    "base_model:dglhf/Slonik",
+    "base_model:quantized:dglhf/Slonik",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 22957083298,
+  "storage_human": "23.0 GB",
+  "base_model": "dglhf/Slonik",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tfjack/Qwen3.8-27B-oQ6e-fp16-mtp · Hugging Face",
+      "url": "https://huggingface.co/tfjack/Qwen3.8-27B-oQ6e-fp16-mtp",
+      "snippet": "Card generation: This model card was drafted with the assistance of an AI coding interface. All technical content — quantization details, sampling parameters, output-length guidance, and the citation — is reproduced from the official Qwen/Qwen3.8-27B model card and the quantization configuration."
+    },
+    {
+      "title": "Jundot/Qwen3.8-27B-oQ6e-mtp · Hugging Face",
+      "url": "https://huggingface.co/Jundot/Qwen3.8-27B-oQ6e-mtp",
+      "snippet": "This model was quantized using oQ (oMLX v0.6.1) mixed-precision quantization ..."
+    }
+  ]
+}

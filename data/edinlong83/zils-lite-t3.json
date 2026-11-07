@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "edinlong83/zils-lite-t3",
+  "slug": "edinlong83-zils-lite-t3",
+  "author": "edinlong83",
+  "url": "https://huggingface.co/edinlong83/zils-lite-t3",
+  "created_at": "2026-11-07T07:45:13.000Z",
+  "updated_at": "2026-11-07T07:46:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1707072248,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zils-ai (Zils) - Hugging Face",
+      "url": "https://huggingface.co/zils-ai",
+      "snippet": "Org profile for Zils on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "zils — Teach AI to make decisions your way.",
+      "url": "https://zils.ai/",
+      "snippet": "Zils Zils Teach AI to make decisions your way. Show Zils examples with the right answers. It trains a small model your app can use to sort requests, flag problems, or score matches."
+    }
+  ]
+}

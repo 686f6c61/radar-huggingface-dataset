@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "h2sunni/oncurai-gemma2-2b-lora",
+  "slug": "h2sunni-oncurai-gemma2-2b-lora",
+  "author": "h2sunni",
+  "url": "https://huggingface.co/h2sunni/oncurai-gemma2-2b-lora",
+  "created_at": "2026-11-05T16:11:20.000Z",
+  "updated_at": "2026-11-07T06:04:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1611438643,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "h2sunni/oncurai-gemma2-2b-lora · Hugging Face",
+      "url": "https://huggingface.co/h2sunni/oncurai-gemma2-2b-lora",
+      "snippet": "h2sunni / oncurai-gemma2-2b-lora Like 0 Safetensors gemma4 4-bit precision bitsandbytes Model card FilesFiles and versions xet Community Copy to bucket No model card Downloads last month - Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "bunnycore/Gemma2-2B-mixed · Hugging Face",
+      "url": "https://huggingface.co/bunnycore/Gemma2-2B-mixed",
+      "snippet": "Gemma2-2B-mixed is a novel AI model that combines the strengths of multiple uncensored models to create a powerful and versatile language processing model. By merging a range of models, including a roleplay uncensored model, Gemma2-2B-mixed offers unparalleled capabilities for generating creative and informative responses."
+    }
+  ]
+}

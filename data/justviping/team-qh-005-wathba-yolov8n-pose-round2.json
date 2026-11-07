@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "JustViping/team-qh-005-wathba-yolov8n-pose-round2",
+  "slug": "justviping-team-qh-005-wathba-yolov8n-pose-round2",
+  "author": "JustViping",
+  "url": "https://huggingface.co/JustViping/team-qh-005-wathba-yolov8n-pose-round2",
+  "created_at": "2026-11-06T23:00:36.000Z",
+  "updated_at": "2026-11-07T08:37:16.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "qai-hf-hackathon-2026",
+    "pose-estimation",
+    "yolov8",
+    "physiotherapy",
+    "keypoint-detection",
+    "dataset:Voxel51/MPII_Human_Pose_Dataset",
+    "base_model:Xenova/yolov8n-pose",
+    "base_model:quantized:Xenova/yolov8n-pose",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96488383,
+  "storage_human": "96 MB",
+  "base_model": "Xenova/yolov8n-pose",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JustViping/team-qh-005-wathba-yolov8n-pose at main",
+      "url": "https://huggingface.co/JustViping/team-qh-005-wathba-yolov8n-pose/tree/main",
+      "snippet": "Instructions to use JustViping/team-qh-005-wathba-yolov8n-pose with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - Sadat75/ultralytics_yolov8_pose: Human pose estimation using ...",
+      "url": "https://github.com/Sadat75/ultralytics_yolov8_pose",
+      "snippet": "Human pose estimation using Yolov8-pose. Contribute to Sadat75/ultralytics_yolov8_pose development by creating an account on GitHub."
+    }
+  ]
+}

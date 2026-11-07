@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/MoViNet-A0-Stream-OpenVINO",
+  "slug": "mlboydaisuke-movinet-a0-stream-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/MoViNet-A0-Stream-OpenVINO",
+  "created_at": "2026-11-07T06:31:03.000Z",
+  "updated_at": "2026-11-07T06:31:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-classification",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "video-classification",
+    "base_model:litert-community/MoViNet-A0-Stream-LiteRT",
+    "base_model:quantized:litert-community/MoViNet-A0-Stream-LiteRT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42273858,
+  "storage_human": "42 MB",
+  "base_model": "litert-community/MoViNet-A0-Stream-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kfkas/movinet-a0-stream-pytorch · Hugging Face",
+      "url": "https://huggingface.co/kfkas/movinet-a0-stream-pytorch",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MoViNets: Mobile Video Networks for Efficient Video Recognition",
+      "url": "https://research.google/pubs/movinets-mobile-video-networks-for-efficient-video-recognition/",
+      "snippet": "Second, we introduce the Stream Buffer technique that decouples memory from video clip duration, allowing 3D CNNs to embed arbitrary-length streaming video sequences for both training and inference with a small constant memory footprint. Third, we propose a simple ensembling technique to improve accuracy further without sacrificing efficiency."
+    }
+  ]
+}

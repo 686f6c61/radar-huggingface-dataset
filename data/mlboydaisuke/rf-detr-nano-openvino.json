@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/RF-DETR-Nano-OpenVINO",
+  "slug": "mlboydaisuke-rf-detr-nano-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/RF-DETR-Nano-OpenVINO",
+  "created_at": "2026-11-07T06:38:48.000Z",
+  "updated_at": "2026-11-07T06:39:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "object-detection",
+    "base_model:litert-community/RF-DETR-Nano-LiteRT",
+    "base_model:quantized:litert-community/RF-DETR-Nano-LiteRT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 289280703,
+  "storage_human": "289 MB",
+  "base_model": "litert-community/RF-DETR-Nano-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/RF-DETR-Nano-CoreML · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/RF-DETR-Nano-CoreML",
+      "snippet": "End-to-end transformer detector. 384×384 input. 300 queries, 91 classes (COCO + background). No NMS needed. Core ML conversion of roboflow/rf-detr for on-device inference on iPhone, iPad and Mac. Converted with coremltools; the packages are stateless, so all sequencing and buffering lives in your ..."
+    },
+    {
+      "title": "mlboydaisuke/RF-DETR-Nano-CoreML at main - Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/RF-DETR-Nano-CoreML/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

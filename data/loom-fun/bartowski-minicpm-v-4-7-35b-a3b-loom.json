@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "loom-fun/bartowski-MiniCPM-V-4.7-35B-A3B-loom",
+  "slug": "loom-fun-bartowski-minicpm-v-4-7-35b-a3b-loom",
+  "author": "loom-fun",
+  "url": "https://huggingface.co/loom-fun/bartowski-MiniCPM-V-4.7-35B-A3B-loom",
+  "created_at": "2026-11-07T05:38:45.000Z",
+  "updated_at": "2026-11-07T05:38:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "loom",
+    "loom-serve",
+    "gguf",
+    "strix-halo",
+    "base_model:bartowski/MiniCPM-V-4.7-35B-A3B-GGUF",
+    "base_model:finetune:bartowski/MiniCPM-V-4.7-35B-A3B-GGUF",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11080603,
+  "storage_human": "11 MB",
+  "base_model": "bartowski/MiniCPM-V-4.7-35B-A3B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free screen recorder for Mac and PC | Loom",
+      "url": "https://www.loom.com/",
+      "snippet": "So much more than a screen recorder Edit your videos like a pro Loom’s intuitive editor lets you trim, stitch clips, add eye-catching …"
+    },
+    {
+      "title": "bartowski/MiniCPM-V-4.7-35B-A3B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/bartowski/MiniCPM-V-4.7-35B-A3B-GGUF/tree/main",
+      "snippet": "Instructions to use bartowski/MiniCPM-V-4.7-35B-A3B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use bartowski/MiniCPM-V-4.7-35B-A3B-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "Log into Loom | Loom",
+      "url": "https://www.loom.com/login",
+      "snippet": "Use Loom to record quick videos of your screen and cam. Explain anything clearly and easily – and skip the meeting. An essential …"
+    },
+    {
+      "title": "MiniCPM-V 4.7 35B A3B - VRAM, Specs & Benchmarks",
+      "url": "https://apxml.com/models/minicpm-v-4-7-35b-a3b",
+      "snippet": "MiniCPM-V 4.7 35B A3B is a mixture-of-experts multimodal foundation model featuring 3B active parameters per token. It delivers efficient high-resolution image and video comprehension with strong reasoning capabilities."
+    },
+    {
+      "title": "Vêtements Homme · Loom",
+      "url": "https://www.loom.fr/fr-fr/collections/vestiaire-homme",
+      "snippet": "Vêtements homme de qualité, fabriqués au Portugal et en France."
+    }
+  ]
+}

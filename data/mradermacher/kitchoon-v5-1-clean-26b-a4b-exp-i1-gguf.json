@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Kitchoon-V5.1-Clean-26B-A4B-EXP-i1-GGUF",
   "created_at": "2026-11-06T14:00:46.000Z",
-  "updated_at": "2026-11-06T14:45:52.000Z",
+  "updated_at": "2026-11-06T15:29:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 25233142046,
   "parameters_human": "25.23B",
-  "storage_bytes": 209338819552,
-  "storage_human": "209.3 GB",
+  "storage_bytes": 300951311936,
+  "storage_human": "301.0 GB",
   "base_model": "SubMaroon/Kitchoon-V5.1-Clean-26B-A4B-EXP",
   "formats": [
     "gguf"

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "oxpuppy635/gemma-4-26b-Timberline-lora",
+  "slug": "oxpuppy635-gemma-4-26b-timberline-lora",
+  "author": "oxpuppy635",
+  "url": "https://huggingface.co/oxpuppy635/gemma-4-26b-Timberline-lora",
+  "created_at": "2026-11-07T05:23:31.000Z",
+  "updated_at": "2026-11-07T05:23:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "gemma4",
+    "gemma-4-26b-a4b",
+    "heretic",
+    "uncensored",
+    "qat",
+    "lora",
+    "qlora",
+    "text-generation",
+    "conversational",
+    "reasoning",
+    "llama.cpp",
+    "base_model:OS-Software/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2",
+    "base_model:adapter:OS-Software/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18585600,
+  "parameters_human": "18.6M",
+  "storage_bytes": 143772418,
+  "storage_human": "144 MB",
+  "base_model": "OS-Software/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oxpuppy635/gemma-26b-Timberline-lora · Hugging Face",
+      "url": "https://huggingface.co/oxpuppy635/gemma-26b-Timberline-lora",
+      "snippet": "GGUF LoRA Adapter (gemma-26b-Timberline-lora.gguf): Standalone GGUF LoRA adapter for direct runtime use with llama.cpp (--lora). PEFT / Safetensors (adapter_model.safetensors, adapter_config.json): Standard Hugging Face PEFT adapter weights."
+    },
+    {
+      "title": "oxpuppy635/gemma-4-26B-A4B-it-uncensored-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/oxpuppy635/gemma-4-26B-A4B-it-uncensored-NVFP4",
+      "snippet": "Instructions to use oxpuppy635/gemma-4-26B-A4B-it-uncensored-NVFP4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

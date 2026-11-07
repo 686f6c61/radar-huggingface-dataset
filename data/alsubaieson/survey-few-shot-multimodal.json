@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "ALSUBAIEson/survey-few-shot-multimodal",
+  "slug": "alsubaieson-survey-few-shot-multimodal",
+  "author": "ALSUBAIEson",
+  "url": "https://huggingface.co/ALSUBAIEson/survey-few-shot-multimodal",
+  "created_at": "2026-11-07T10:34:41.000Z",
+  "updated_at": "2026-11-07T10:34:47.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Few-shot adaptation of multi-modal foundation models: a survey",
+      "url": "https://www.researchgate.net/publication/383459654_Few-shot_adaptation_of_multi-modal_foundation_models_a_survey",
+      "snippet": "Vision-language models such as CLIP are capable of mapping the different modality data into a unified feature space, enabling zero/few-shot inference by measuring the similarity of given images ..."
+    },
+    {
+      "title": "Few-shot Adaptation of Multi-modal Foundation Models: A Survey",
+      "url": "https://www.researchgate.net/publication/375111559_Few-shot_Adaptation_of_Multi-modal_Foundation_Models_A_Survey/fulltext/65410c0f0426ef6369edd942/Few-shot-Adaptation-of-Multi-modal-Foundation-Models-A-Survey.pdf",
+      "snippet": "21 In early 2021, OpenAI released CLIP, a large-scale multi-modal model for align- 22 ing images and texts, which is pre-trained using billions of internet data to obtain 23 rich visual language ..."
+    }
+  ]
+}

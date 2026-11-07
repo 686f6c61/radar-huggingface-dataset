@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Viking-SlimSonnet-v1-7B-GGUF",
+  "slug": "mradermacher-viking-slimsonnet-v1-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Viking-SlimSonnet-v1-7B-GGUF",
+  "created_at": "2025-03-11T08:03:15.000Z",
+  "updated_at": "2026-11-07T09:50:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fi",
+    "sv",
+    "no",
+    "da",
+    "is",
+    "nn"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "sft",
+    "en",
+    "fi",
+    "sv",
+    "no",
+    "da",
+    "is",
+    "nn",
+    "dataset:Gryphe/Sonnet3.5-SlimOrcaDedupCleaned",
+    "dataset:mpasila/Sonnet3.5-SlimOrcaDedupCleaned-4k-context",
+    "base_model:mpasila/Viking-SlimSonnet-v1-7B",
+    "base_model:quantized:mpasila/Viking-SlimSonnet-v1-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 215,
+  "trending_score": 0,
+  "parameters": 7550013440,
+  "parameters_human": "7.55B",
+  "storage_bytes": 67648385792,
+  "storage_human": "67.6 GB",
+  "base_model": "mpasila/Viking-SlimSonnet-v1-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Viking-SlimSonnet-v1-7B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Viking-SlimSonnet-v1-7B-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/Viking-SlimInstruct-V1-7B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Viking-SlimInstruct-V1-7B-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    }
+  ]
+}

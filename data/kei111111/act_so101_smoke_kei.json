@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "kei111111/act_so101_smoke_kei",
+  "slug": "kei111111-act_so101_smoke_kei",
+  "author": "kei111111",
+  "url": "https://huggingface.co/kei111111/act_so101_smoke_kei",
+  "created_at": "2026-11-07T10:45:30.000Z",
+  "updated_at": "2026-11-07T10:45:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:kei111111/so101_block_box_50episodes_final_20261107_190045",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xixisun/act_so101_smoke · Hugging Face",
+      "url": "https://huggingface.co/xixisun/act_so101_smoke",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

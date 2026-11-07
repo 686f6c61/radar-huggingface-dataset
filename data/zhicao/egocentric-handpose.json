@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "zhicao/egocentric-handpose",
+  "slug": "zhicao-egocentric-handpose",
+  "author": "zhicao",
+  "url": "https://huggingface.co/zhicao/egocentric-handpose",
+  "created_at": "2026-11-07T05:24:13.000Z",
+  "updated_at": "2026-11-07T05:24:38.000Z",
+  "license": "component-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": "keypoint-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "hand-pose-estimation",
+    "mano",
+    "egocentric",
+    "robotics",
+    "keypoint-detection",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zhicao/neural_contact · Hugging Face",
+      "url": "https://huggingface.co/zhicao/neural_contact",
+      "snippet": "zhicao / neural_contact like 0 Other PyTorch contact-prediction egocentric egoforce robotics neural-dynamics License:mit Model card FilesFiles and versions xet Community Copy to bucket new neural_contact — Standalone Contact Predictor Layout Model Data (EgoForce) Install Train Inference / Eval Contact Visualization Mapping to neural-dynamics ..."
+    },
+    {
+      "title": "CVPR 2026 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026F/html/Choi_EggHand_A_Multimodal_Foundation_Model_for_Egocentric_Hand_Pose_Forecasting_CVPRF_2026_paper.html",
+      "snippet": "In this work, we introduce EggHand, a foundation-model-based framework for egocentric hand pose forecasting that unifies multimodal semantic reasoning with dynamic motion modeling."
+    }
+  ]
+}

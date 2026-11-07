@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/QianfanOCR-mic",
+  "slug": "huggingface-mic-qianfanocr-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/QianfanOCR-mic",
+  "created_at": "2026-11-07T09:13:31.000Z",
+  "updated_at": "2026-11-07T09:20:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qianfan_ocr",
+    "mic",
+    "test-artifact",
+    "base_model:bairongz/QianfanOCR",
+    "base_model:finetune:bairongz/QianfanOCR",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19936576,
+  "parameters_human": "19.9M",
+  "storage_bytes": 51495603,
+  "storage_human": "51 MB",
+  "base_model": "bairongz/QianfanOCR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QianfanOCR · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.7.0/model_doc/qianfan_ocr",
+      "snippet": "This model was released on 2026-03-18 and added to Hugging Face Transformers on 2026-04-16."
+    }
+  ]
+}

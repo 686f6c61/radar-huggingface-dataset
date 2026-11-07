@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mradermacher/X-ALMA-13B-Group5-GGUF",
+  "slug": "mradermacher-x-alma-13b-group5-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/X-ALMA-13B-Group5-GGUF",
+  "created_at": "2025-03-07T05:42:40.000Z",
+  "updated_at": "2026-11-07T09:50:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "hu",
+    "el",
+    "cs",
+    "pl",
+    "lt",
+    "lv"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "hu",
+    "el",
+    "cs",
+    "pl",
+    "lt",
+    "lv",
+    "dataset:oscar-corpus/OSCAR-2301",
+    "dataset:allenai/nllb",
+    "dataset:Helsinki-NLP/opus-100",
+    "base_model:haoranxu/X-ALMA-13B-Group5",
+    "base_model:quantized:haoranxu/X-ALMA-13B-Group5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 434,
+  "trending_score": 0,
+  "parameters": 13015864320,
+  "parameters_human": "13.02B",
+  "storage_bytes": 88801932864,
+  "storage_human": "88.8 GB",
+  "base_model": "haoranxu/X-ALMA-13B-Group5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/X-ALMA-13B-Group5-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/X-ALMA-13B-Group5-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files."
+    },
+    {
+      "title": "mradermacher/X-ALMA-13B-Group6-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/X-ALMA-13B-Group6-GGUF",
+      "snippet": "Feel free to request them by opening a Community Discussion. Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    }
+  ]
+}

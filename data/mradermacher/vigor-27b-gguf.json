@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/VIGOR-27B-GGUF",
   "created_at": "2026-11-03T21:14:44.000Z",
-  "updated_at": "2026-11-03T22:21:45.000Z",
+  "updated_at": "2026-11-06T15:08:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",

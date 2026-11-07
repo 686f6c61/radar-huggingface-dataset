@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "yupol12/lala-speaker",
+  "slug": "yupol12-lala-speaker",
+  "author": "yupol12",
+  "url": "https://huggingface.co/yupol12/lala-speaker",
+  "created_at": "2026-11-07T09:25:51.000Z",
+  "updated_at": "2026-11-07T09:27:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26622140,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can LALAL.AI Beat SpectraLayers? (Full Review) - YouTube",
+      "url": "https://www.youtube.com/watch?v=s1jQi6qHYeM",
+      "snippet": "In this video, I’m putting LALAL.AI to the test to see how it handles complex tracks compared to industry standards like SpectraLayers 12. From high-fidelity..."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "itsfareed120/smart_fire_wall",
+  "slug": "itsfareed120-smart_fire_wall",
+  "author": "itsfareed120",
+  "url": "https://huggingface.co/itsfareed120/smart_fire_wall",
+  "created_at": "2026-11-07T11:04:03.000Z",
+  "updated_at": "2026-11-07T11:11:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "t5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76961152,
+  "parameters_human": "77.0M",
+  "storage_bytes": 307872377,
+  "storage_human": "308 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Early Fire Detection Design Model for Smart Cities: Using AWS IoT and ...",
+      "url": "https://aws.amazon.com/blogs/iot/early-fire-detection-design-model-for-smart-cities-using-aws-iot-and-ml-technologies/",
+      "snippet": "Conclusion In this blog, we covered a reference architecture to design a scalable early fire detection system for smart cities. By leveraging AWS IoT, this solution supports ingesting data from thousands of sensors across the city for near real-time detection and alerts."
+    },
+    {
+      "title": "Applications of AI - NFPA",
+      "url": "https://www.nfpa.org/news-blogs-and-articles/nfpa-journal/2024/01/19/ai-feature-spring-24/ai-sidebar",
+      "snippet": "Evacuation and Crowd Control Existing novel methods for smart evacuation and crowd management could soon get a boost from faster AI programs. Dynamic exit signs direct occupants to the optimal and safest route of egress in the event of a fire or other emergency, depending on the specific conditions inside the building."
+    }
+  ]
+}

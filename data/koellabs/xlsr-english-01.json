@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "KoelLabs/xlsr-english-01",
+  "slug": "koellabs-xlsr-english-01",
+  "author": "KoelLabs",
+  "url": "https://huggingface.co/KoelLabs/xlsr-english-01",
+  "created_at": "2025-06-03T08:31:25.000Z",
+  "updated_at": "2026-11-07T08:23:53.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "Speech2IPA",
+    "automatic-speech-recognition",
+    "en",
+    "dataset:KoelLabs/DoReCo",
+    "dataset:KoelLabs/EpaDB",
+    "dataset:KoelLabs/SpeechOceanNoTH",
+    "dataset:KoelLabs/L2Arctic",
+    "dataset:KoelLabs/L2ArcticSpontaneousSplit",
+    "dataset:KoelLabs/Buckeye",
+    "dataset:KoelLabs/TIMIT",
+    "arxiv:2606.16019",
+    "base_model:facebook/wav2vec2-xlsr-53-espeak-cv-ft",
+    "base_model:finetune:facebook/wav2vec2-xlsr-53-espeak-cv-ft",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 27,
+  "downloads_30d": 32998,
+  "trending_score": 0,
+  "parameters": 315519695,
+  "parameters_human": "315.5M",
+  "storage_bytes": 1262131380,
+  "storage_human": "1.3 GB",
+  "base_model": "facebook/wav2vec2-xlsr-53-espeak-cv-ft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KoelLabs/xlsr-english-01 · Hugging Face",
+      "url": "https://huggingface.co/KoelLabs/xlsr-english-01",
+      "snippet": "Koel Labs XLSR English 01 The goal of this phoneme transcription model is to robustly model accented and impaired English pronunciation for use in pronunciation feedback systems and linguistic analysis. We predict sequences of phonemes describing the sounds of speech in an audio clip using a vocabulary of 79 symbols from the International Phonetic Alphabet. We train on roughly 41 hours of ..."
+    },
+    {
+      "title": "KoelLabs/xlsr-english-01 — Downloads, Growth & Stats",
+      "url": "https://openmodelstats.com/models/koellabs/xlsr-english-01",
+      "snippet": "xlsr-english-01 by KoelLabs: 101.5K all-time downloads, 35.8K in the last 30 days, 26 likes. A speech recognition model with 316M parameters. Daily download history, growth trends and ranking position, tracked and updated by OpenModelStats."
+    }
+  ]
+}

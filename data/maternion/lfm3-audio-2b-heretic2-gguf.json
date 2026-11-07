@@ -5,7 +5,7 @@
   "author": "maternion",
   "url": "https://huggingface.co/maternion/LFM3-Audio-2B-Heretic2-GGUF",
   "created_at": "2026-11-06T15:06:56.000Z",
-  "updated_at": "2026-11-06T15:20:01.000Z",
+  "updated_at": "2026-11-06T15:23:14.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "any-to-any",
@@ -72,8 +72,8 @@
   "trending_score": 0,
   "parameters": 1728801600,
   "parameters_human": "1.73B",
-  "storage_bytes": 10333168160,
-  "storage_human": "10.3 GB",
+  "storage_bytes": 14177886592,
+  "storage_human": "14.2 GB",
   "base_model": "LiquidAI/LFM3-Audio-2B",
   "formats": [
     "gguf"

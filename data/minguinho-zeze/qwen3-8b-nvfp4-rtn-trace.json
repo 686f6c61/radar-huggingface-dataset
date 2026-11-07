@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Minguinho-zeze/Qwen3-8B-NVFP4-RTN-Trace",
+  "slug": "minguinho-zeze-qwen3-8b-nvfp4-rtn-trace",
+  "author": "Minguinho-zeze",
+  "url": "https://huggingface.co/Minguinho-zeze/Qwen3-8B-NVFP4-RTN-Trace",
+  "created_at": "2026-11-07T12:22:03.000Z",
+  "updated_at": "2026-11-07T12:22:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3",
+    "quantization",
+    "compressed-tensors",
+    "nvfp4",
+    "rtn",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:quantized:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 6408487126,
+  "storage_human": "6.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/Qwen3-8B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Qwen3-8B-NVFP4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · nvidia/Qwen3-8B-NVFP4 at main - Hugging Face",
+      "url": "https://huggingface.co/nvidia/Qwen3-8B-NVFP4/blob/main/README.md",
+      "snippet": "The NVIDIA Qwen3-8B FP4 model is the quantized version of Alibaba's Qwen3-8B model, which is an auto-regressive language model that uses an optimized transformer architecture. For more information, please check here. The NVIDIA Qwen3-8B FP4 model is quantized with TensorRT Model Optimizer. This model is ready for commercial/non-commercial use."
+    }
+  ]
+}

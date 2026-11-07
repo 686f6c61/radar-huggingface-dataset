@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "skaldrim/opus-mt-no-en-ct2-int8",
+  "slug": "skaldrim-opus-mt-no-en-ct2-int8",
+  "author": "skaldrim",
+  "url": "https://huggingface.co/skaldrim/opus-mt-no-en-ct2-int8",
+  "created_at": "2026-11-07T11:16:26.000Z",
+  "updated_at": "2026-11-07T11:16:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "nb",
+    "nn",
+    "no"
+  ],
+  "tags": [
+    "translation",
+    "marian",
+    "opus-mt",
+    "ctranslate2",
+    "en",
+    "nb",
+    "nn",
+    "no",
+    "base_model:Helsinki-NLP/opus-mt-en-gmq",
+    "base_model:finetune:Helsinki-NLP/opus-mt-en-gmq",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 154243020,
+  "storage_human": "154 MB",
+  "base_model": "Helsinki-NLP/opus-mt-gmq-en, Helsinki-NLP/opus-mt-en-gmq",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - rozdaybeda/ct2_translator: Lightweight C++23 command-line ...",
+      "url": "https://github.com/rozdaybeda/ct2_translator",
+      "snippet": "Lightweight C++23 command-line translator that runs Opus-MT and Meta's NLLB-200 models entirely on CPU via CTranslate2. Features int8/float32 quantization, SentencePiece tokenization, beam search, per-line language-pair overrides in interactive mode, and reports throughput (tok/s) after each translation - rozdaybeda/ct2_translator"
+    },
+    {
+      "title": "GitHub - OpenNMT/CTranslate2: Fast inference engine for Transformer ...",
+      "url": "https://github.com/OpenNMT/CTranslate2",
+      "snippet": "The library includes converters for multiple frameworks: OpenNMT-py OpenNMT-tf Fairseq Marian OPUS-MT Transformers The project is production-oriented and comes with backward compatibility guarantees, but it also includes experimental features related to model compression and inference acceleration."
+    }
+  ]
+}

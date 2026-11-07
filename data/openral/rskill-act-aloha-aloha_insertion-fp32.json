@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "OpenRAL/rskill-act-aloha-aloha_insertion-fp32",
+  "slug": "openral-rskill-act-aloha-aloha_insertion-fp32",
+  "author": "OpenRAL",
+  "url": "https://huggingface.co/OpenRAL/rskill-act-aloha-aloha_insertion-fp32",
+  "created_at": "2026-06-04T18:36:44.000Z",
+  "updated_at": "2026-11-07T12:03:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "OpenRAL",
+    "rskill",
+    "act",
+    "vision-language-action",
+    "aloha",
+    "rskill-kind:vla",
+    "rskill-role:s1",
+    "embodiment:aloha",
+    "rskill-license:mit",
+    "bimanual",
+    "manipulation",
+    "insertion",
+    "robotics",
+    "en",
+    "arxiv:2304.13705",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenRAL/rskill-act-aloha-aloha_insertion-fp32 · Hugging Face",
+      "url": "https://huggingface.co/OpenRAL/rskill-act-aloha-aloha_insertion-fp32",
+      "snippet": "Instructions to use OpenRAL/rskill-act-aloha-aloha_insertion-fp32 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "OpenRAL/rskill-act-aloha-insertion · Hugging Face",
+      "url": "https://huggingface.co/OpenRAL/rskill-act-aloha-insertion",
+      "snippet": "How to use OpenRAL/rskill-act-aloha-insertion with LeRobot ..."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Petrouil/EfficientViT-Depth-5M",
+  "slug": "petrouil-efficientvit-depth-5m",
+  "author": "Petrouil",
+  "url": "https://huggingface.co/Petrouil/EfficientViT-Depth-5M",
+  "created_at": "2026-11-07T08:57:34.000Z",
+  "updated_at": "2026-11-07T09:20:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "efficientvit_depth_5m",
+    "depth-estimation",
+    "efficientvit",
+    "lite-dpt",
+    "knowledge-distillation",
+    "relative-depth",
+    "nyuv2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4854203,
+  "parameters_human": "4.9M",
+  "storage_bytes": 81126033,
+  "storage_human": "81 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mit-han-lab/efficientvit: Efficient vision foundation models ...",
+      "url": "https://github.com/mit-han-lab/efficientvit",
+      "snippet": "Deep Compression Autoencoder (DC-AE) is a new family of high-spatial compression autoencoders with a spatial compression ratio of up to 128 while maintaining reconstruction quality. It accelerates all latent diffusion models regardless of the diffusion model architecture. EfficientViT-SAM is a new ..."
+    },
+    {
+      "title": "GitHub - Sirlanri/Efficientvit: EfficientViT is a new family of vision ...",
+      "url": "https://github.com/Sirlanri/Efficientvit",
+      "snippet": "EfficientViT is a new family of ViT models for efficient high-resolution dense prediction vision tasks. The core building block of EfficientViT is a lightweight, multi-scale linear attention module that achieves global receptive field and multi-scale learning with only hardware-efficient operations, making EfficientViT TensorRT-friendly and suitable for GPU deployment."
+    }
+  ]
+}

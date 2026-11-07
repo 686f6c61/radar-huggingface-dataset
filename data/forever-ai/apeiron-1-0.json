@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "forever-ai/Apeiron-1.0",
+  "slug": "forever-ai-apeiron-1-0",
+  "author": "forever-ai",
+  "url": "https://huggingface.co/forever-ai/Apeiron-1.0",
+  "created_at": "2026-10-12T12:34:30.000Z",
+  "updated_at": "2026-11-07T07:29:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "apeiron",
+    "apeiron-1.0",
+    "forever-ai",
+    "q4_k_m",
+    "q8_0",
+    "text-generation",
+    "coding-agent",
+    "code",
+    "developer-tool",
+    "fine-tuning",
+    "causal-lm",
+    "en",
+    "ru",
+    "dataset:ForeverAI/Apeiron-1.0-Training-Data",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:quantized:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 4,
+  "downloads_30d": 246,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 15282722200,
+  "storage_human": "15.3 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "forever-ai/Apeiron-1.0 · Hugging Face",
+      "url": "https://huggingface.co/forever-ai/Apeiron-1.0",
+      "snippet": "forever-ai / Apeiron-1.0 Like 3 Follow Forever AI 1 Text Generation GGUF ForeverAI/Apeiron-1.0-Training-Data English Russian apeiron apeiron-1.0 ape's forever-ai q4_k_m q8_0 coding-agent code developer-tool from-scratch causal-lm custom-architecture Eval Results (legacy) conversational License:apache-2.0 Model card FilesFiles and versions xet ..."
+    },
+    {
+      "title": "forever-ai/apeiron-1.0-lora · Hugging Face",
+      "url": "https://huggingface.co/forever-ai/apeiron-1.0-lora",
+      "snippet": "Apeiron 1.0 is a coding AI agent by Forever AI (formerly Klox AI). The first model in the proprietary Ape's line. Knowledge cutoff — October 2026. Trained from scratch as a full model — not an adapter, not a fine-tune on top of someone else's base model ..."
+    }
+  ]
+}

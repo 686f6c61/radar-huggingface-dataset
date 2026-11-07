@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "VeroLM/NoTokenLM-Gen-2.5",
+  "slug": "verolm-notokenlm-gen-2-5",
+  "author": "VeroLM",
+  "url": "https://huggingface.co/VeroLM/NoTokenLM-Gen-2.5",
+  "created_at": "2026-08-04T04:19:17.000Z",
+  "updated_at": "2026-11-07T08:29:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "notoken_gen",
+    "text-generation",
+    "character-level",
+    "tokenizer-free",
+    "from-scratch",
+    "transformer",
+    "experimental",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 3186848,
+  "parameters_human": "3.2M",
+  "storage_bytes": 27291388,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "omurberaisik/NoTokenLM-Gen-2.5 · Hugging Face",
+      "url": "https://huggingface.co/omurberaisik/NoTokenLM-Gen-2.5",
+      "snippet": "NoTokenLM-Gen-2.5 is an experimental preview release of an open-source research project exploring how much open-ended text generation ability can be reached with a very small parameter budget when the model operates directly on raw characters instead of a learned subword tokenizer. This is ..."
+    }
+  ]
+}

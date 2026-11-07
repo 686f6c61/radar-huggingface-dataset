@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "FjikoAI/SAKURA_Illustrious_v2.5_Hybrid",
+  "slug": "fjikoai-sakura_illustrious_v2-5_hybrid",
+  "author": "FjikoAI",
+  "url": "https://huggingface.co/FjikoAI/SAKURA_Illustrious_v2.5_Hybrid",
+  "created_at": "2026-11-07T04:36:00.000Z",
+  "updated_at": "2026-11-07T06:28:36.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "illustrious-xl",
+    "stable-diffusion-xl",
+    "text-to-image",
+    "anime",
+    "pbr",
+    "fjikoai",
+    "nsfw",
+    "base_model:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "base_model:finetune:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "license:creativeml-openrail-m",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6938041144,
+  "storage_human": "6.9 GB",
+  "base_model": "OnomaAIResearch/Illustrious-xl-early-release-v0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAKURA_Illustrious_Hybrid - 0.85 | TensorHub Art",
+      "url": "https://tensorhub.art/models/995211320452239314",
+      "snippet": "Download SAKURA_Illustrious_Hybrid - free CHECKPOINT Illustrious AI model on TENSORHUB ART. YOUNG BEAUTY, EXCLUSIVE, ORIGINAL. By FjikoAI"
+    },
+    {
+      "title": "FjikoAI (ryo) - Hugging Face",
+      "url": "https://huggingface.co/FjikoAI/models",
+      "snippet": "Sort: Recently updated. FjikoAI/MIKAN_Illustrious_v2.2_Hybrid. Updated 3 days ago. FjikoAI/SAKURA_Illustrious_v0.8_Hybrid. Updated 3 days ago"
+    }
+  ]
+}

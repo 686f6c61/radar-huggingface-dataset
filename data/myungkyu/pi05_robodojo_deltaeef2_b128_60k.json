@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Myungkyu/pi05_robodojo_deltaeef2_b128_60k",
+  "slug": "myungkyu-pi05_robodojo_deltaeef2_b128_60k",
+  "author": "Myungkyu",
+  "url": "https://huggingface.co/Myungkyu/pi05_robodojo_deltaeef2_b128_60k",
+  "created_at": "2026-10-22T04:11:27.000Z",
+  "updated_at": "2026-11-07T05:23:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "vla",
+    "robodojo",
+    "baseline",
+    "dataset:RoboDojo-Benchmark/RoboDojo",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 107,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 112248628016,
+  "storage_human": "112.2 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Myungkyu/pi05_robodojo_deltaeef2_b128_60k · Hugging Face",
+      "url": "https://huggingface.co/Myungkyu/pi05_robodojo_deltaeef2_b128_60k",
+      "snippet": "pi05_robodojo_deltaeef2_b128_60k Delta end-effector action-space variant (second delta-EEF run: RoboDojo delta roots rebuilt with the next-state label fix): RoboDojo Sim co-train setting (35 tasks x 100 episodes, dual ARX X5, official LeRobot export)."
+    },
+    {
+      "title": "Myungkyu/pi05_robodojo_deltaeef_b128_60k · Hugging Face",
+      "url": "https://huggingface.co/Myungkyu/pi05_robodojo_deltaeef_b128_60k",
+      "snippet": "pi05_robodojo_deltaeef_b128_60k Vanilla baseline: RoboDojo Sim co-train setting (35 tasks x 100 episodes, dual ARX X5, official LeRobot export)."
+    }
+  ]
+}

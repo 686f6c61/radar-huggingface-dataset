@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/Ultra-Fast-Lane-Detection-OpenVINO",
+  "slug": "mlboydaisuke-ultra-fast-lane-detection-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/Ultra-Fast-Lane-Detection-OpenVINO",
+  "created_at": "2026-11-07T06:45:26.000Z",
+  "updated_at": "2026-11-07T06:46:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-segmentation",
+    "base_model:litert-community/Ultra-Fast-Lane-Detection-LiteRT",
+    "base_model:quantized:litert-community/Ultra-Fast-Lane-Detection-LiteRT",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 446511640,
+  "storage_human": "447 MB",
+  "base_model": "litert-community/Ultra-Fast-Lane-Detection-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ultra-Fast-Lane-Detection - GitHub",
+      "url": "https://github.com/cfzd/Ultra-Fast-Lane-Detection",
+      "snippet": "Ultra-Fast-Lane-Detection PyTorch implementation of the paper \"Ultra Fast Structure-aware Deep Lane Detection\". [July 18, 2022] Updates: The new version of our method has been accepted by TPAMI 2022. Code is available here."
+    },
+    {
+      "title": "Ultra-Fast-Lane-Detection-V2 - GitHub",
+      "url": "https://github.com/cfzd/Ultra-Fast-Lane-Detection-v2",
+      "snippet": "Ultra-Fast-Lane-Detection-V2 PyTorch implementation of the paper \"Ultra Fast Deep Lane Detection with Hybrid Anchor Driven Ordinal Classification\"."
+    }
+  ]
+}

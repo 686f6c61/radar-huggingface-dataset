@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/NAFNet-SIDD-width32-OpenVINO",
+  "slug": "mlboydaisuke-nafnet-sidd-width32-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/NAFNet-SIDD-width32-OpenVINO",
+  "created_at": "2026-11-07T06:40:41.000Z",
+  "updated_at": "2026-11-07T06:41:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-to-image",
+    "base_model:litert-community/NAFNet-SIDD-width32-LiteRT",
+    "base_model:quantized:litert-community/NAFNet-SIDD-width32-LiteRT",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 323019845,
+  "storage_human": "323 MB",
+  "base_model": "litert-community/NAFNet-SIDD-width32-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NAFNet/options/train/SIDD/NAFNet-width32.yml at main - GitHub",
+      "url": "https://github.com/megvii-research/NAFNet/blob/main/options/train/SIDD/NAFNet-width32.yml",
+      "snippet": "The state-of-the-art image restoration model without nonlinear activation functions. - megvii-research/NAFNet"
+    },
+    {
+      "title": "litert-community/NAFNet-SIDD-width32-LiteRT at main",
+      "url": "https://huggingface.co/litert-community/NAFNet-SIDD-width32-LiteRT/tree/main/samples",
+      "snippet": "main NAFNet-SIDD-width32-LiteRT / samples ... mlboydaisuke ... 780c44a verified 2 months ago sample.png"
+    }
+  ]
+}

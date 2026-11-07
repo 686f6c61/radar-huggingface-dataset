@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "engageassume/w1-continued-20261106",
+  "slug": "engageassume-w1-continued-20261106",
+  "author": "engageassume",
+  "url": "https://huggingface.co/engageassume/w1-continued-20261106",
+  "created_at": "2026-11-06T11:56:54.000Z",
+  "updated_at": "2026-11-07T11:18:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37322252341,
+  "storage_human": "37.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "engageassume/w1-continued-20261106 at main - Hugging Face",
+      "url": "https://huggingface.co/engageassume/w1-continued-20261106/tree/main",
+      "snippet": "Like 0 Model card FilesFiles and versions xet Community Copy to bucket main w1-continued-20261106 1.58 MB Ctrl+K Ctrl+K 1 contributor History:2 commits engageassume Document continuation setup and original training loss 86418af verifiedabout 22 hours ago original-training-lossDocument continuation setup and original training lossabout 22 hours ..."
+    },
+    {
+      "title": "engageassume/w1-continued-20261106 · Hugging Face",
+      "url": "https://huggingface.co/engageassume/w1-continued-20261106",
+      "snippet": "Status: preparation / queued; do not describe this as a completed new model yet. Original ten-task checkpoint: 10,000 updates. Planned continuation: up to 10,000 additional updates. Same data, normalization and global batch 16 on four A800. New optimizer state; the original export did not contain ..."
+    }
+  ]
+}

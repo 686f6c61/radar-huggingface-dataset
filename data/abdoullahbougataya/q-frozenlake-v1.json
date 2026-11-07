@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "AbdoullahBougataya/q-FrozenLake-v1",
+  "slug": "abdoullahbougataya-q-frozenlake-v1",
+  "author": "AbdoullahBougataya",
+  "url": "https://huggingface.co/AbdoullahBougataya/q-FrozenLake-v1",
+  "created_at": "2026-11-07T09:23:33.000Z",
+  "updated_at": "2026-11-07T09:23:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unit2.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/deep-rl-class/blob/main/notebooks/unit2/unit2.ipynb",
+      "snippet": "Unit 2: Q-Learning with FrozenLake-v1 ⛄ and Taxi-v3 🚕 In this notebook, you'll code your first Reinforcement Learning agent from scratch to play FrozenLake ️ using Q-Learning, share it with the community, and experiment with different configurations. ⬇️ Here is an example of what you will achieve in just a couple of minutes. ⬇️"
+    },
+    {
+      "title": "q_learning_frozen_lake.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/zhubarb/sesen_ai_ml_tutorials/blob/main/notebooks/reinforcement-learning/q_learning_frozen_lake.ipynb",
+      "snippet": "Q-Learning from Scratch: Navigating the Frozen Lake This notebook accompanies the blog post at sesen.ai. We implement Q-learning from scratch to solve OpenAI's FrozenLake environment."
+    }
+  ]
+}

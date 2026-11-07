@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "moz-v/samsum-pg-checkpoints",
+  "slug": "moz-v-samsum-pg-checkpoints",
+  "author": "moz-v",
+  "url": "https://huggingface.co/moz-v/samsum-pg-checkpoints",
+  "created_at": "2026-11-07T11:44:03.000Z",
+  "updated_at": "2026-11-07T11:58:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "summarization",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "summarization",
+    "dialogue-summarization",
+    "pointer-generator",
+    "samsum",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 112257258,
+  "storage_human": "112 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "checkpoints/sam3.1_multiplex_fp16.safetensors · Comfy-Org/sam3.1 at main",
+      "url": "https://huggingface.co/Comfy-Org/sam3.1/blob/main/checkpoints/sam3.1_multiplex_fp16.safetensors",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "transformersbook/pegasus-samsum · Hugging Face",
+      "url": "https://huggingface.co/transformersbook/pegasus-samsum",
+      "snippet": "This model is a fine-tuned version of google/pegasus-cnn_dailymail on the samsum dataset. The model is trained in Chapter 6: Summarization in the NLP with Transformers book. You can find the full code in the accompanying Github repository. It achieves the following results on the evaluation set ..."
+    }
+  ]
+}

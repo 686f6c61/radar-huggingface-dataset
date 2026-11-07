@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "cstr/UltraBERT-Embed-150M-CrispEmbed-GGUF",
+  "slug": "cstr-ultrabert-embed-150m-crispembed-gguf",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/UltraBERT-Embed-150M-CrispEmbed-GGUF",
+  "created_at": "2026-11-07T12:07:29.000Z",
+  "updated_at": "2026-11-07T12:07:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "crispembed",
+    "embeddings",
+    "ultrabert",
+    "q4_k",
+    "experimental",
+    "sentence-similarity",
+    "base_model:dmis-lab/UltraBERT-Embed-150M",
+    "base_model:quantized:dmis-lab/UltraBERT-Embed-150M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 151032576,
+  "parameters_human": "151.0M",
+  "storage_bytes": 576997440,
+  "storage_human": "577 MB",
+  "base_model": "dmis-lab/UltraBERT-Embed-150M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cstr/UltraBERT-Embed-150M-CrispEmbed-GGUF · Hugging Face",
+      "url": "https://huggingface.co/cstr/UltraBERT-Embed-150M-CrispEmbed-GGUF",
+      "snippet": "Modified from the original by CrispEmbed: the model.safetensors weights of revision 367d5343b5a0164d57b810cedf5de4b8983d5984 were format-converted to GGUF (models/convert-ultrabert-to-gguf.py, F32, tokenizer metadata embedded; F32 SHA256 89478b9cbbad2fd1121be4031d760f1529c989fedf23b6b19251ba2c87422566) and then quantized with CrispEmbed's ..."
+    },
+    {
+      "title": "PhysShell/UltraBERT-Embed-150M · Hugging Face",
+      "url": "https://huggingface.co/PhysShell/UltraBERT-Embed-150M",
+      "snippet": "UltraBERT-Embed-150M is an English text embedding model built on UltraBERT-150M. It maps text to a 768-dimensional vector, takes inputs up to 32K tokens, follows task instructions on the query side, and embeds code as well as text. On MTEB(eng, v2) it scores 67.24 Mean(Task), the highest of any ..."
+    }
+  ]
+}

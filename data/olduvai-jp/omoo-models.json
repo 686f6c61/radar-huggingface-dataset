@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "olduvai-jp/omoo-models",
+  "slug": "olduvai-jp-omoo-models",
+  "author": "olduvai-jp",
+  "url": "https://huggingface.co/olduvai-jp/omoo-models",
+  "created_at": "2026-11-07T11:37:16.000Z",
+  "updated_at": "2026-11-07T11:54:19.000Z",
+  "license": "per-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "coreml",
+    "omoo",
+    "ja",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12537593274,
+  "storage_human": "12.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "olduvai-jp (olduvai-jp) - Hugging Face",
+      "url": "https://huggingface.co/olduvai-jp",
+      "snippet": "Org profile for olduvai-jp on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "OLDUVAI inc. - GitHub",
+      "url": "https://github.com/olduvai-jp",
+      "snippet": "ComfyUI の出力ディレクトリを監視し、生成物を S3 へ自動アーカイブするプラグイン Python 2 2"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "skaldrim/whisper-large-finnish-v3-ggml",
+  "slug": "skaldrim-whisper-large-finnish-v3-ggml",
+  "author": "skaldrim",
+  "url": "https://huggingface.co/skaldrim/whisper-large-finnish-v3-ggml",
+  "created_at": "2026-11-07T11:17:07.000Z",
+  "updated_at": "2026-11-07T11:17:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "fi"
+  ],
+  "tags": [
+    "whisper",
+    "whisper.cpp",
+    "ggml",
+    "fi",
+    "base_model:Finnish-NLP/whisper-large-finnish-v3",
+    "base_model:finetune:Finnish-NLP/whisper-large-finnish-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4176173686,
+  "storage_human": "4.2 GB",
+  "base_model": "Finnish-NLP/whisper-large-finnish-v3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · Finnish-NLP/whisper-large-finnish-v3 at main",
+      "url": "https://huggingface.co/Finnish-NLP/whisper-large-finnish-v3/blob/main/README.md",
+      "snippet": "Model was trained on RTX4080 for 32k steps with batch size 8, gradient accumulation 2 Original Whisper Large V3 CV11 WER: 14.81 WER NORMALIZED: 10.82 CER: 2.7 CER NORMALIZED: 2.07 Fleurs WER: 12.04 WER NORMALIZED: 9.63 CER: 2.48 CER NORMALIZED: 3.64 After Finetuning V3: @14000 steps CV11 WER: 11.36 WER NORMALIZED: 8.31 CER: 1.93 CER NORMALIZED ..."
+    },
+    {
+      "title": "Finnish-NLP/whisper-large-finnish-v3 · Hugging Face",
+      "url": "https://huggingface.co/Finnish-NLP/whisper-large-finnish-v3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

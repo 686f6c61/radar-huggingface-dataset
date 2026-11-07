@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "mcflurryshuoz/SABER-LLM",
+  "slug": "mcflurryshuoz-saber-llm",
+  "author": "mcflurryshuoz",
+  "url": "https://huggingface.co/mcflurryshuoz/SABER-LLM",
+  "created_at": "2026-11-07T05:11:48.000Z",
+  "updated_at": "2026-11-07T05:13:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "emotion-recognition",
+    "multimodal",
+    "unofficial-mirror",
+    "en",
+    "zh",
+    "arxiv:2601.18321",
+    "base_model:Qwen/Qwen2.5-Omni-7B",
+    "base_model:finetune:Qwen/Qwen2.5-Omni-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13863222,
+  "storage_human": "14 MB",
+  "base_model": "Qwen/Qwen2.5-Omni-7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mcflurryshuoz (zhangshuo) - Hugging Face",
+      "url": "https://huggingface.co/mcflurryshuoz",
+      "snippet": "AI & ML interests ... Recent Activity liked a dataset about 1 month ago ... updated a dataset about 1 month ago"
+    },
+    {
+      "title": "mcflurryshuoz (zhangshuo) - Hugging Face",
+      "url": "https://huggingface.co/mcflurryshuoz/datasets",
+      "snippet": "AI & ML interests ... Recent Activity upvoted a paper 1 day ago ... updated a dataset 21 days ago"
+    }
+  ]
+}

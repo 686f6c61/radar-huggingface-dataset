@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "fisharmnic/boardsesh-climbgen",
+  "slug": "fisharmnic-boardsesh-climbgen",
+  "author": "fisharmnic",
+  "url": "https://huggingface.co/fisharmnic/boardsesh-climbgen",
+  "created_at": "2026-11-07T06:32:21.000Z",
+  "updated_at": "2026-11-07T06:44:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "climbing",
+    "boardsesh",
+    "on-device",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1396336,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "boardsesh-mcp · PyPI",
+      "url": "https://pypi.org/project/boardsesh-mcp/",
+      "snippet": "Unofficial MCP server giving AI agents read-only access to your Boardsesh climbing logbook across Kilter, Tension, MoonBoard and more."
+    },
+    {
+      "title": "Climbing app compatible with Kilter, Tension & MoonBoard | Boardsesh",
+      "url": "https://www.boardsesh.com/",
+      "snippet": "Share a live queue with your crew and track your sends across boards. Works with Kilter, Tension, MoonBoard and more."
+    }
+  ]
+}

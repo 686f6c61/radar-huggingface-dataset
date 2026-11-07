@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "parkmjb/learn2carve",
+  "slug": "parkmjb-learn2carve",
+  "author": "parkmjb",
+  "url": "https://huggingface.co/parkmjb/learn2carve",
+  "created_at": "2026-11-07T11:33:52.000Z",
+  "updated_at": "2026-11-07T11:34:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "skrl",
+  "languages": [],
+  "tags": [
+    "skrl",
+    "reinforcement-learning",
+    "isaac-lab",
+    "isaac-sim",
+    "humanoid",
+    "unitree-g1",
+    "snowboarding",
+    "ppo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64976855,
+  "storage_human": "65 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Michae1Park/learn2carve",
+      "url": "https://github.com/Michae1Park/learn2carve",
+      "snippet": "Contribute to Michae1Park/learn2carve development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Baekpica/Beam-1.0-501B-A23B-VQ-GGUF",
+  "slug": "baekpica-beam-1-0-501b-a23b-vq-gguf",
+  "author": "Baekpica",
+  "url": "https://huggingface.co/Baekpica/Beam-1.0-501B-A23B-VQ-GGUF",
+  "created_at": "2026-10-20T10:19:56.000Z",
+  "updated_at": "2026-11-07T09:20:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "beam",
+    "reflection",
+    "vector-quantization",
+    "vq",
+    "mixture-of-experts",
+    "1m-context",
+    "harmony",
+    "reasoning",
+    "tool-use",
+    "speculative-decoding",
+    "dflash",
+    "dgx-spark",
+    "gb10",
+    "ds4",
+    "ds4-dfm-rs",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:reflection/Beam-1.0-501B-A23B",
+    "base_model:quantized:reflection/Beam-1.0-501B-A23B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 3838,
+  "trending_score": 0,
+  "parameters": 7239549632,
+  "parameters_human": "7.24B",
+  "storage_bytes": 196032312611,
+  "storage_human": "196.0 GB",
+  "base_model": "reflection/Beam-1.0-501B-A23B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Baekpica/Beam-1.0-501B-A23B-VQ-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Baekpica/Beam-1.0-501B-A23B-VQ-GGUF",
+      "snippet": "Reflection's 501B Beam with its full 1,048,576-token context, sized for one 128 GB DGX Spark. The 1.0 TB BF16 checkpoint becomes about 99.9 GB of GGUF parts: 98.3 GB that stay resident and a 1.56 GB BF16 token table that is read in rows from SSD. The routed experts use YoungAi's 8-dimensional vector quantization (12-bit, and 13-bit on the eight bottom MoE layers); everything the model needs to ..."
+    },
+    {
+      "title": "unsloth/Beam-1.0-501B-A23B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Beam-1.0-501B-A23B-GGUF",
+      "snippet": "License: Apache 2.0 | Authors: Reflection Beam is an open model built by Reflection. Beam takes text as input and generates text as output. This release includes the instruction-tuned model in BF16, FP8, and NVFP4 numerics. Beam uses a sparse mixture-of-experts (MoE) architecture with 501B total parameters and 23B active parameters."
+    }
+  ]
+}

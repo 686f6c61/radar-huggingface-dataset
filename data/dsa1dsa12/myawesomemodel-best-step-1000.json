@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "dsa1dsa12/MyAwesomeModel-best-step-1000",
+  "slug": "dsa1dsa12-myawesomemodel-best-step-1000",
+  "author": "dsa1dsa12",
+  "url": "https://huggingface.co/dsa1dsa12/MyAwesomeModel-best-step-1000",
+  "created_at": "2026-11-07T11:45:10.000Z",
+  "updated_at": "2026-11-07T11:57:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DASD12D12SAD/MyAwesomeModel-step1000-best · Hugging Face",
+      "url": "https://huggingface.co/DASD12D12SAD/MyAwesomeModel-step1000-best",
+      "snippet": "MyAwesomeModel step_1000 best checkpoint Selected by highest eval_accuracy -based checkpoint scoring in the workspace. Overall weighted score: 0.710."
+    },
+    {
+      "title": "sad12dsa/my-awesome-model-best · Hugging Face",
+      "url": "https://huggingface.co/sad12dsa/my-awesome-model-best",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

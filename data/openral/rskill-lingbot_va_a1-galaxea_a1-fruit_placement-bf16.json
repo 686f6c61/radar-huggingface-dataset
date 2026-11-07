@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "OpenRAL/rskill-lingbot_va_a1-galaxea_a1-fruit_placement-bf16",
+  "slug": "openral-rskill-lingbot_va_a1-galaxea_a1-fruit_placement-bf16",
+  "author": "OpenRAL",
+  "url": "https://huggingface.co/OpenRAL/rskill-lingbot_va_a1-galaxea_a1-fruit_placement-bf16",
+  "created_at": "2026-08-07T20:56:42.000Z",
+  "updated_at": "2026-11-07T12:03:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "OpenRAL",
+    "rskill",
+    "lingbot_va_a1",
+    "vision-language-action",
+    "galaxea_a1",
+    "rskill-kind:vla",
+    "rskill-role:s1",
+    "embodiment:galaxea_a1",
+    "rskill-license:apache-2.0",
+    "robotics",
+    "en",
+    "dataset:pengyue-polaron/nyush-galaxea-a1-fruit-placement-eef-v21",
+    "base_model:robbyant/lingbot-va-base",
+    "base_model:finetune:robbyant/lingbot-va-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "robbyant/lingbot-va-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openral/rskills/lingbot-va-galaxea-a1-fruit-placement at master ...",
+      "url": "https://github.com/OpenRAL/openral/tree/master/rskills/lingbot-va-galaxea-a1-fruit-placement",
+      "snippet": "rskill-lingbot_va_a1-galaxea_a1-fruit_placement-bf16 OpenRAL rSkill — a LingBot-VA fruit-placement policy for the Galaxea A1, deployed through OpenRAL's observation, typed-action, safety-kernel, and HAL contracts."
+    },
+    {
+      "title": "rskill-lingbot_va_a1-galaxea_a1-fruit_placement-bf16",
+      "url": "https://huggingface.co/OpenRAL/rskill-lingbot_va_a1-galaxea_a1-fruit_placement-bf16",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

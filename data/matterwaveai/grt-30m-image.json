@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "MatterWaveAI/grt-30m-image",
+  "slug": "matterwaveai-grt-30m-image",
+  "author": "MatterWaveAI",
+  "url": "https://huggingface.co/MatterWaveAI/grt-30m-image",
+  "created_at": "2026-11-07T06:14:34.000Z",
+  "updated_at": "2026-11-07T06:14:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "grt_image",
+    "text-generation",
+    "grt",
+    "grt-image",
+    "text-to-image",
+    "vision",
+    "rotational-transformer",
+    "givens-rotations",
+    "sophia-torus",
+    "matterwave",
+    "base_model:MatterWaveAI/grt-30m",
+    "base_model:finetune:MatterWaveAI/grt-30m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29963585,
+  "parameters_human": "30.0M",
+  "storage_bytes": 134722186,
+  "storage_human": "135 MB",
+  "base_model": "MatterWaveAI/grt-30m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GRT-30M-VL (MatterWaveAI/grt-30m-vl) - Hugging Face",
+      "url": "https://huggingface.co/MatterWaveAI/grt-30m-vl",
+      "snippet": "GRT-30M-VL is a 100% Native Rotational Vision-Language Model (34.26M total parameters, zero nn.Linear dense weight matrices across both the vision encoder and language backbone) built on top of MatterWaveAI/grt-30m."
+    }
+  ]
+}

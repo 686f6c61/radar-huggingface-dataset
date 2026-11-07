@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "OpenRAL/rskill-molmoact2-franka_panda-libero_spatial-nf4",
+  "slug": "openral-rskill-molmoact2-franka_panda-libero_spatial-nf4",
+  "author": "OpenRAL",
+  "url": "https://huggingface.co/OpenRAL/rskill-molmoact2-franka_panda-libero_spatial-nf4",
+  "created_at": "2026-06-04T18:36:47.000Z",
+  "updated_at": "2026-11-07T12:03:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "molmoact2",
+    "image-text-to-text",
+    "OpenRAL",
+    "rskill",
+    "vision-language-action",
+    "nf4",
+    "4-bit",
+    "franka_panda",
+    "rskill-kind:vla",
+    "rskill-role:s1",
+    "embodiment:franka_panda",
+    "rskill-license:apache-2.0",
+    "vla",
+    "libero",
+    "manipulation",
+    "robotics",
+    "custom_code",
+    "en",
+    "arxiv:2605.02881",
+    "base_model:allenai/MolmoAct2-LIBERO",
+    "base_model:quantized:allenai/MolmoAct2-LIBERO",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 3255388466,
+  "parameters_human": "3.26B",
+  "storage_bytes": 4195435961,
+  "storage_human": "4.2 GB",
+  "base_model": "allenai/MolmoAct2-LIBERO",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenRAL/rskill-molmoact2-franka_panda-libero_spatial-nf4 · Hugging Face",
+      "url": "https://huggingface.co/OpenRAL/rskill-molmoact2-franka_panda-libero_spatial-nf4",
+      "snippet": "OpenRAL rSkill — MolmoAct2 (Ai2's open action reasoning model: a Molmo2-ER embodied-reasoning VLM backbone with a flow-matching continuous-action expert) finetuned on the LIBERO benchmark and NF4-quantized so the ~5.5 B-param model fits an 8 GB GPU."
+    },
+    {
+      "title": "OpenRAL/rskill-molmoact2-franka_panda-libero_spatial-nf4 at main",
+      "url": "https://huggingface.co/OpenRAL/rskill-molmoact2-franka_panda-libero_spatial-nf4/tree/main",
+      "snippet": "Instructions to use OpenRAL/rskill-molmoact2-franka_panda-libero_spatial-nf4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

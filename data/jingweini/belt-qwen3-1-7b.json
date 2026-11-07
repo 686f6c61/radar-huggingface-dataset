@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "JingweiNi/BELT-Qwen3-1.7B",
+  "slug": "jingweini-belt-qwen3-1-7b",
+  "author": "JingweiNi",
+  "url": "https://huggingface.co/JingweiNi/BELT-Qwen3-1.7B",
+  "created_at": "2026-10-17T10:05:22.000Z",
+  "updated_at": "2026-11-07T11:46:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "early-stopping",
+    "belt",
+    "pytorch",
+    "custom-code",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 307564532,
+  "storage_human": "308 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "Text Generation model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen3-1.7B - VRAM Requirements, Specs & Benchmarks",
+      "url": "https://apxml.com/models/qwen3-1-7b",
+      "snippet": "About Qwen3-1.7B Qwen3-1.7B is a high-efficiency dense foundation model from Alibaba Cloud supporting both Thinking and Non-Thinking modes for edge and mobile deployments. It provides low-latency conversational responses and step-by-step logic over an extensible 131K context."
+    }
+  ]
+}

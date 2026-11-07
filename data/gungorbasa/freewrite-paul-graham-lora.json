@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gungorbasa/freewrite-paul-graham-lora",
+  "slug": "gungorbasa-freewrite-paul-graham-lora",
+  "author": "gungorbasa",
+  "url": "https://huggingface.co/gungorbasa/freewrite-paul-graham-lora",
+  "created_at": "2026-11-07T08:12:27.000Z",
+  "updated_at": "2026-11-07T08:14:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "lora",
+    "writing-assistant",
+    "freewrite",
+    "en",
+    "base_model:mlx-community/Ministral-3-8B-Instruct-2512-4bit",
+    "base_model:adapter:mlx-community/Ministral-3-8B-Instruct-2512-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125871107,
+  "storage_human": "126 MB",
+  "base_model": "mlx-community/Ministral-3-8B-Instruct-2512-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta-Llama-3.1-8B-Instruct-Paul-Graham-LORA - Hugging Face",
+      "url": "https://huggingface.co/muradmy/Meta-Llama-3.1-8B-Instruct-Paul-Graham-LORA",
+      "snippet": "Uploaded model Developed by: muradmy License: apache-2.0 Finetuned from model : unsloth/meta-llama-3.1-8b-instruct-bnb-4bit This llama model was trained 2x faster with Unsloth and Huggingface's TRL library."
+    },
+    {
+      "title": "Write like Paul Graham-Free, Simplified, Idea-Centric Writing Aid",
+      "url": "https://www.yeschat.ai/gpts-ZxX7fHJE-Write-like-Paul-Graham",
+      "snippet": "Write like Paul Graham is an AI-powered tool that aids in crafting clear, simple, and engaging written content. It's perfect for refining essays, blog posts, and opinion pieces, emphasizing conversational tone and idea clarity."
+    },
+    {
+      "title": "Meta-Llama-3.1-8B-Instruct-Paul-Graham-LORA - Hugging Face",
+      "url": "https://huggingface.co/bhagatsuryainatom/Meta-Llama-3.1-8B-Instruct-Paul-Graham-LORA",
+      "snippet": "Instructions to use bhagatsuryainatom/Meta-Llama-3.1-8B-Instruct-Paul-Graham-LORA with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

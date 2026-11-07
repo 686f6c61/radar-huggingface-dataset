@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "OpenRAL/rskill-moveit-multi-eef_pose",
+  "slug": "openral-rskill-moveit-multi-eef_pose",
+  "author": "OpenRAL",
+  "url": "https://huggingface.co/OpenRAL/rskill-moveit-multi-eef_pose",
+  "created_at": "2026-06-12T19:42:57.000Z",
+  "updated_at": "2026-11-07T12:03:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "OpenRAL",
+    "rskill",
+    "ros2",
+    "moveit",
+    "franka_panda",
+    "ur5e",
+    "ur10e",
+    "so100_follower",
+    "openarm",
+    "rizon4",
+    "sawyer",
+    "widowx",
+    "rskill-kind:ros_action",
+    "rskill-role:s1",
+    "embodiment:franka_panda",
+    "embodiment:ur5e",
+    "embodiment:ur10e",
+    "embodiment:so100_follower",
+    "embodiment:openarm",
+    "embodiment:rizon4",
+    "embodiment:sawyer",
+    "embodiment:widowx",
+    "rskill-license:apache-2.0",
+    "robotics",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenRAL/rskill-moveit-multi-eef_pose · Hugging Face",
+      "url": "https://huggingface.co/OpenRAL/rskill-moveit-multi-eef_pose",
+      "snippet": "OpenRAL / rskill-moveit-multi-eef_pose like 0 Follow OpenRAL 2 Robotics English OpenRAL rskill ros2 moveit franka_panda ur5e ur10e so100_follower openarm rizon4 sawyer widowx License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new rskill-moveit-multi-eef_pose What this skill does How it works Observation → action contract GPU-accelerated planning (cuMotion) How ..."
+    },
+    {
+      "title": "README.md · OpenRAL/rskill-moveit-multi-eef_pose at main",
+      "url": "https://huggingface.co/OpenRAL/rskill-moveit-multi-eef_pose/blob/main/README.md",
+      "snippet": "OpenRAL / rskill-moveit-multi-eef_pose Like 0 Follow OpenRAL 2 Robotics English OpenRAL rskill ros2 moveit franka_panda ur5e ur10e so100_follower openarm rizon4 sawyer widowx License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket main rskill-moveit-multi-eef_pose /README.md AdrianLlopart docs: HF model card for OpenRAL/rskill-moveit-multi-eef_pose v0.1.0 0d56c06 ..."
+    }
+  ]
+}

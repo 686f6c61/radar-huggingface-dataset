@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "eousphoros/persona_lambda_27b_v10",
+  "slug": "eousphoros-persona_lambda_27b_v10",
+  "author": "eousphoros",
+  "url": "https://huggingface.co/eousphoros/persona_lambda_27b_v10",
+  "created_at": "2026-11-07T08:24:49.000Z",
+  "updated_at": "2026-11-07T08:27:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "experimental",
+    "persona",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575819072,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eousphoros/persona_lambda_27b_v8 · Hugging Face",
+      "url": "https://huggingface.co/eousphoros/persona_lambda_27b_v8",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: “Please reason step by step, and put your final answer within \\boxed {}.” For the remaining models, we report the higher score from two prompt variants—one with and one without the \\boxed {} formatting requirement."
+    },
+    {
+      "title": "eousphoros (Eous Phoros) - Hugging Face",
+      "url": "https://huggingface.co/eousphoros/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 15 hours ago ... published a model about 17 hours ago"
+    }
+  ]
+}

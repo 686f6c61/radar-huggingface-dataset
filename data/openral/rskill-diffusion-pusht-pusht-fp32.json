@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "OpenRAL/rskill-diffusion-pusht-pusht-fp32",
+  "slug": "openral-rskill-diffusion-pusht-pusht-fp32",
+  "author": "OpenRAL",
+  "url": "https://huggingface.co/OpenRAL/rskill-diffusion-pusht-pusht-fp32",
+  "created_at": "2026-06-04T18:36:46.000Z",
+  "updated_at": "2026-11-07T12:03:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "OpenRAL",
+    "rskill",
+    "diffusion",
+    "vision-language-action",
+    "pusht",
+    "rskill-kind:vla",
+    "rskill-role:s1",
+    "embodiment:pusht",
+    "rskill-license:apache-2.0",
+    "diffusion-policy",
+    "manipulation",
+    "robotics",
+    "en",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenRAL/rskill-diffusion-pusht · Hugging Face",
+      "url": "https://huggingface.co/OpenRAL/rskill-diffusion-pusht",
+      "snippet": "OpenRAL rSkill — Diffusion Policy (Chi et al., 2023) trained on the PushT 2-D pushing benchmark, packaged for OpenRAL ..."
+    },
+    {
+      "title": "openral/rskills/diffusion-pusht/README.md at master - GitHub",
+      "url": "https://github.com/OpenRAL/openral/blob/master/rskills/diffusion-pusht/README.md",
+      "snippet": "rskill-diffusion-pusht-pusht-fp32 OpenRAL rSkill — Diffusion Policy (Chi et al., 2023) trained on the PushT 2-D pushing benchmark, packaged for OpenRAL. This package wraps lerobot/diffusion_pusht with a rskill.yaml manifest. It does not copy model weights."
+    }
+  ]
+}

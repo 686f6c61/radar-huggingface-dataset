@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "AST-1320/Qwen-duplicate",
+  "slug": "ast-1320-qwen-duplicate",
+  "author": "AST-1320",
+  "url": "https://huggingface.co/AST-1320/Qwen-duplicate",
+  "created_at": "2026-11-07T07:49:41.000Z",
+  "updated_at": "2026-11-07T07:49:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "realistic",
+    "base_model:Qwen/Qwen-Image",
+    "base_model:quantized:Qwen/Qwen-Image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 201290054024,
+  "storage_human": "201.3 GB",
+  "base_model": "Qwen/Qwen-Image",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AST-1320/qwen-image-realism-lora · Hugging Face",
+      "url": "https://huggingface.co/AST-1320/qwen-image-realism-lora",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AST-1320/Qwen-Image-Studio-Realism · Discussions",
+      "url": "https://huggingface.co/AST-1320/Qwen-Image-Studio-Realism/discussions",
+      "snippet": "Instructions to use AST-1320/Qwen-Image-Studio-Realism with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use AST-1320/Qwen-Image-Studio-Realism with Diffusers:"
+    }
+  ]
+}

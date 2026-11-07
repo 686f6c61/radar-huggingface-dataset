@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OpenMed/Qwen3.5-0.8B-WSP-Clinical",
+  "slug": "openmed-qwen3-5-0-8b-wsp-clinical",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/Qwen3.5-0.8B-WSP-Clinical",
+  "created_at": "2026-11-03T17:44:23.000Z",
+  "updated_at": "2026-11-07T11:05:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "openmed",
+    "medical",
+    "clinical",
+    "medqa",
+    "weight-space-programming",
+    "conversational",
+    "dataset:GBaker/MedQA-USMLE-4-options",
+    "dataset:openlifescienceai/medmcqa",
+    "dataset:cais/mmlu",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1763107642,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Clinical multiple-choice questions",
+      "dataset": "MedQA-USMLE (4 options)",
+      "metric": "Accuracy (thinking on, one sample, seed 0)",
+      "value": 39
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qwen3.5 0.8B by Qwen | Model Library | Modal",
+      "url": "https://modal.com/library/qwen/qwen3-5-0-8b",
+      "snippet": "Qwen3.5 0.8B is a 24-layer causal language model with a vision encoder, trained with early text-vision fusion so it handles text and images natively. Its hybrid layout repeats six blocks of three Gated DeltaNet linear-attention layers followed by one gated full-attention layer, for high-throughput, low-latency inference across its native 262,144-token context. The model uses a 1024-dimensional ..."
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    }
+  ]
+}

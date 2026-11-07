@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "hwihwalab/cartpole-v1-ppo",
+  "slug": "hwihwalab-cartpole-v1-ppo",
+  "author": "hwihwalab",
+  "url": "https://huggingface.co/hwihwalab/cartpole-v1-ppo",
+  "created_at": "2026-09-16T07:41:21.000Z",
+  "updated_at": "2026-11-07T12:35:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "ppo",
+    "proximal-policy-optimization",
+    "cartpole-v1",
+    "gymnasium",
+    "openai-gym",
+    "classic-control",
+    "robotics",
+    "physical-ai",
+    "sim-to-real",
+    "zero-shot-transfer",
+    "domain-randomization",
+    "inverted-pendulum",
+    "optimal-control",
+    "lqr-control",
+    "control-theory",
+    "pytorch",
+    "interactive-demo",
+    "en",
+    "ko",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3539489,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "Gymnasium CartPole-v1",
+      "metric": "Mean Evaluation Reward (Max 500)",
+      "value": 500
+    },
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "Gymnasium CartPole-v1",
+      "metric": "Perfect Balance Success Rate (%)",
+      "value": 100
+    }
+  ],
+  "sources": [
+    {
+      "title": "hwihwalab/cartpole-v1-ppo · Hugging Face",
+      "url": "https://huggingface.co/hwihwalab/cartpole-v1-ppo",
+      "snippet": "ppo proximal-policy-optimization cartpole-v1 gymnasium openai-gym classic-control robotics physical-ai sim-to-real zero-shot-transfer domain-randomization inverted-pendulum optimal-control lqr-control control-theory interactive-demo Eval Results (legacy) License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use ..."
+    },
+    {
+      "title": "CartPole-v1 Physical AI Cybernetic Lab - a Hugging Face Space by hwihwalab",
+      "url": "https://huggingface.co/spaces/hwihwalab/cartpole-v1-ppo",
+      "snippet": "Physical AI & Robotics Dynamics Benchmark: PPO Neural Policy vs Classical Optimal LQR with Sim-to-Real Domain Randomization."
+    }
+  ]
+}

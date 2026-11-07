@@ -5,7 +5,7 @@
   "author": "Zishan-Shao",
   "url": "https://huggingface.co/Zishan-Shao/scratchspace",
   "created_at": "2026-08-07T00:48:08.000Z",
-  "updated_at": "2026-11-04T16:07:28.000Z",
+  "updated_at": "2026-11-04T16:32:18.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 225221454545,
-  "storage_human": "225.2 GB",
+  "storage_bytes": 323596544929,
+  "storage_human": "323.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

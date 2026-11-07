@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "messykenty/ralomi-ja-enhanced",
+  "slug": "messykenty-ralomi-ja-enhanced",
+  "author": "messykenty",
+  "url": "https://huggingface.co/messykenty/ralomi-ja-enhanced",
+  "created_at": "2026-11-07T07:33:55.000Z",
+  "updated_at": "2026-11-07T07:36:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "japanese",
+    "asr",
+    "dfsmn",
+    "ctc",
+    "pytorch",
+    "esp32-s3",
+    "automatic-speech-recognition",
+    "ja",
+    "base_model:ayousanz/ralomi",
+    "base_model:quantized:ayousanz/ralomi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16714038,
+  "storage_human": "17 MB",
+  "base_model": "ayousanz/ralomi",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "messykenty (kent) - Hugging Face",
+      "url": "https://huggingface.co/messykenty",
+      "snippet": "User profile of kent on Hugging Face Run 1-bit Bonsai LLMs locally in your browser on WebGPU"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=ralomi",
+      "snippet": "Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API DeepInfra WaveSpeed One-click Deployment Inference Endpoints Microsoft Foundry Amazon SageMaker AI Misc ralomi Mixture of Experts decision-model Merge 4-bit precision 8-bit precision custom_code Eval Results ..."
+    }
+  ]
+}

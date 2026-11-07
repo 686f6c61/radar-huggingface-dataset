@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/RTMPose-Animal-AP10K-OpenVINO",
+  "slug": "mlboydaisuke-rtmpose-animal-ap10k-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/RTMPose-Animal-AP10K-OpenVINO",
+  "created_at": "2026-11-07T06:33:13.000Z",
+  "updated_at": "2026-11-07T06:33:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "keypoint-detection",
+    "base_model:litert-community/RTMPose-Animal-AP10K-LiteRT",
+    "base_model:quantized:litert-community/RTMPose-Animal-AP10K-LiteRT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 138013049,
+  "storage_human": "138 MB",
+  "base_model": "litert-community/RTMPose-Animal-AP10K-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AP-10K: A Benchmark for Animal Pose Estimation in the Wild",
+      "url": "https://github.com/AlexTheBad/AP-10K",
+      "snippet": "AP-10K is created to facilitate research in the area of animal pose estimation. It is important to study several challenging questions in the context of more training data from diverse species are available, such as： how about the performance of different representative human pose models on the animal pose estimation task? will the representation ability of a deep model benefit from training ..."
+    },
+    {
+      "title": "AP-10K: A Benchmark for Animal Pose Estimation in the Wild",
+      "url": "https://deepai.org/publication/ap-10k-a-benchmark-for-animal-pose-estimation-in-the-wild",
+      "snippet": "In this paper, we propose AP-10K, the first large-scale benchmark for general animal pose estimation, to facilitate the research in animal pose estimation. AP-10K consists of 10,015 images collected and filtered from 23 animal families and 60 species following the taxonomic rank and high-quality keypoint annotations labeled and checked manually."
+    }
+  ]
+}

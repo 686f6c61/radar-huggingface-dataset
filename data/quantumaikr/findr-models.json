@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "quantumaikr/findr-models",
+  "slug": "quantumaikr-findr-models",
+  "author": "quantumaikr",
+  "url": "https://huggingface.co/quantumaikr/findr-models",
+  "created_at": "2026-11-07T08:47:32.000Z",
+  "updated_at": "2026-11-07T08:54:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "findr",
+    "local-search",
+    "korean",
+    "ko",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 639446880,
+  "storage_human": "639 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

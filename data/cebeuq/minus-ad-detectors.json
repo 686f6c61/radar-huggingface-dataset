@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "cebeuq/minus-ad-detectors",
+  "slug": "cebeuq-minus-ad-detectors",
+  "author": "cebeuq",
+  "url": "https://huggingface.co/cebeuq/minus-ad-detectors",
+  "created_at": "2026-11-07T05:08:11.000Z",
+  "updated_at": "2026-11-07T05:19:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "coreml",
+    "safetensors",
+    "ad-detection",
+    "vision-language",
+    "apple-silicon",
+    "image-classification",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29842826906,
+  "storage_human": "29.8 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B, baselabs/joey-1, baselabs/elephant-1, baselabs/mammoth-1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cebeuq (Klaus) - Hugging Face",
+      "url": "https://huggingface.co/cebeuq/models",
+      "snippet": "User profile of Klaus on Hugging Face Recent Activity published a model3 days ago cebeuq/DeepSeek-V4-Flash-0731-abliterated updated a model3 days ago cebeuq/DeepSeek-V4-Flash-0731-abliterated liked a model23 days ago cebeuq/Ornith-1.0-397B-abliterated-W4A16 View all activity"
+    },
+    {
+      "title": "cebeuq (Klaus) - Hugging Face",
+      "url": "https://huggingface.co/cebeuq",
+      "snippet": "cebeuq/DeepSeek-V4-Flash-0731-abliterated updated a model about 19 hours ago cebeuq/DeepSeek-V4-Flash-0731-abliterated liked a model 21 days ago cebeuq/Ornith-1.0-397B-abliterated-W4A16 View all activity"
+    }
+  ]
+}

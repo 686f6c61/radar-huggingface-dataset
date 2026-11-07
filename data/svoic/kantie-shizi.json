@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "svoic/kantie-shizi",
+  "slug": "svoic-kantie-shizi",
+  "author": "svoic",
+  "url": "https://huggingface.co/svoic/kantie-shizi",
+  "created_at": "2026-11-07T10:04:55.000Z",
+  "updated_at": "2026-11-07T10:05:05.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "image-classification",
+    "chinese-calligraphy",
+    "ocr",
+    "character-recognition",
+    "zh",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39754290,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "svoic/kantu-shixiang · Hugging Face",
+      "url": "https://huggingface.co/svoic/kantu-shixiang",
+      "snippet": "svoic / kantu-shixiang Like 1 Follow Silicon Valley Open Intelligence & Culture Foundation 1 Image Classification ONNX Chinese English multi-label chinese-painting clip License:cc-by-sa-4.0 Model card FilesFiles and versions xet Community Copy to bucket 看图识象 Kantu Shixiang v2 v2 相对 v1 What changed in v2 结构 Architecture 支持的物象 Supported imagery (121) 用法 Usage ONNX ..."
+    }
+  ]
+}

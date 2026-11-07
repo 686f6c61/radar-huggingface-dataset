@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "OpenRAL/rskill-nav2-mobile_base-navigate_to_pose",
+  "slug": "openral-rskill-nav2-mobile_base-navigate_to_pose",
+  "author": "OpenRAL",
+  "url": "https://huggingface.co/OpenRAL/rskill-nav2-mobile_base-navigate_to_pose",
+  "created_at": "2026-06-12T19:43:02.000Z",
+  "updated_at": "2026-11-07T12:03:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "OpenRAL",
+    "rskill",
+    "ros2",
+    "mobile_base",
+    "rskill-kind:ros_action",
+    "rskill-role:s1",
+    "embodiment:mobile_base",
+    "rskill-license:apache-2.0",
+    "nav2",
+    "robotics",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenRAL/rskill-nav2-mobile_base-navigate_to_pose · Hugging Face",
+      "url": "https://huggingface.co/OpenRAL/rskill-nav2-mobile_base-navigate_to_pose",
+      "snippet": "OpenRAL rskill ros2 mobile_base nav2 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new rskill-nav2-navigate-to-pose What this skill does How it works Observation → action contract (result-only mode) How it was trained / Upstream provenance Supported robots / embodiments Sensors required / Observation ..."
+    },
+    {
+      "title": "GitHub - OpenRAL/openral: Open-source Robot Agentic Layer",
+      "url": "https://github.com/OpenRAL/openral",
+      "snippet": "The open harness for physical AI. OpenRAL is the open-source Robot Agentic Layer (harness) for embodied AI — it unifies fast policies, slow reasoning, reward signals, perception AI and classical control into one typed, traceable, safety-first runtime for deployable robot agents. One fixed harness, swappable rSkills. Quick start · Tutorials · Architecture · Robots · rSkills · Reasoner ..."
+    }
+  ]
+}

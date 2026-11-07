@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "skaldrim/opus-mt-no-sv-ct2-int8",
+  "slug": "skaldrim-opus-mt-no-sv-ct2-int8",
+  "author": "skaldrim",
+  "url": "https://huggingface.co/skaldrim/opus-mt-no-sv-ct2-int8",
+  "created_at": "2026-11-07T11:17:47.000Z",
+  "updated_at": "2026-11-07T11:19:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "nb",
+    "nn",
+    "no",
+    "sv"
+  ],
+  "tags": [
+    "translation",
+    "marian",
+    "opus-mt",
+    "ctranslate2",
+    "nb",
+    "nn",
+    "no",
+    "sv",
+    "base_model:Helsinki-NLP/opus-mt-no-sv",
+    "base_model:finetune:Helsinki-NLP/opus-mt-no-sv",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99460558,
+  "storage_human": "99 MB",
+  "base_model": "Helsinki-NLP/opus-mt-no-sv, Helsinki-NLP/opus-mt-sv-no",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Your Ultimate Guide to Working with OPUS-MT Models - fxis.ai",
+      "url": "https://fxis.ai/edu/your-ultimate-guide-to-working-with-opus-mt-models/",
+      "snippet": "In this blog post, we will explore the fascinating world of OPUS-MT models, particularly focusing on the opus-mt-fi_nb_no_nn_ru_sv_en-SAMI model. This powerful translation model allows translation between a variety of source languages including Finnish, Norwegian, Russian, Swedish, and English, to a range of target languages such as Swedish and various Sámi languages. Ready to dive in? Let ..."
+    },
+    {
+      "title": "GitHub - Helsinki-NLP/Opus-MT: Open neural machine translation models ...",
+      "url": "https://github.com/Helsinki-NLP/Opus-MT",
+      "snippet": "There is a Makefile for training new models from OPUS data in the Opus-MT-train repository, but this is heavily customized for the work environment at CSC and the University of Helsinki projects. This will (hopefully) be more generic in the future to be able to run in different environments and setups as well."
+    }
+  ]
+}

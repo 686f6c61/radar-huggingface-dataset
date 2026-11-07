@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Ivan1524/q-Taxi-v4",
+  "slug": "ivan1524-q-taxi-v4",
+  "author": "Ivan1524",
+  "url": "https://huggingface.co/Ivan1524/q-Taxi-v4",
+  "created_at": "2026-11-07T09:09:45.000Z",
+  "updated_at": "2026-11-07T09:09:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24571,
+  "storage_human": "24571 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EverVissionAI/q-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/EverVissionAI/q-Taxi-v4",
+      "snippet": "Q-Learning Agent playing1 Taxi-v4 This is a trained model of a Q-Learning agent playing Taxi-v4 ."
+    },
+    {
+      "title": "Learnix-AI-Lab/q-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/Learnix-AI-Lab/q-Taxi-v4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

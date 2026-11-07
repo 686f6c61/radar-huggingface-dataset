@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/PlantNet-300K-ResNet18-OpenVINO",
+  "slug": "mlboydaisuke-plantnet-300k-resnet18-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/PlantNet-300K-ResNet18-OpenVINO",
+  "created_at": "2026-11-07T06:32:15.000Z",
+  "updated_at": "2026-11-07T06:32:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-classification",
+    "base_model:litert-community/PlantNet-300K-ResNet18-LiteRT",
+    "base_model:quantized:litert-community/PlantNet-300K-ResNet18-LiteRT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117810828,
+  "storage_human": "118 MB",
+  "base_model": "litert-community/PlantNet-300K-ResNet18-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - plantnet/PlantNet-300K: [NeurIPS2021] A plant image dataset ...",
+      "url": "https://github.com/plantnet/PlantNet-300K",
+      "snippet": "Pl@ntNet-300K-v2 contains 306,087 images from 1,000 plant species. It retains the long-tailed class distribution and high visual ambiguity of the original dataset while providing improved images resolution and species names ..."
+    },
+    {
+      "title": "README.md · cpoisson/plantnet300k-resnet18 at main",
+      "url": "https://huggingface.co/cpoisson/plantnet300k-resnet18/blob/main/README.md",
+      "snippet": "PlantNet-300K — ResNet18 (45 MB) Fine-tuned ResNet18 for plant species identification across 1,081 species. This model serves as the reference / upper-bound in an experiment on small, locally-deployable plant classifiers. It is compared against a much lighter MobileNetV3-Small (10 MB) to assess the accuracy cost of radical size reduction."
+    }
+  ]
+}

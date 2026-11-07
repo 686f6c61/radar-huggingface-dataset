@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Alejandro125/jarvis",
+  "slug": "alejandro125-jarvis",
+  "author": "Alejandro125",
+  "url": "https://huggingface.co/Alejandro125/jarvis",
+  "created_at": "2026-11-07T05:46:45.000Z",
+  "updated_at": "2026-11-07T05:46:45.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - RagaviDevX/Jarvis-Model: Jarvis-Model A premium, modular AI ...",
+      "url": "https://github.com/RagaviDevX/Jarvis-Model",
+      "snippet": "Jarvis-Model is a voice-controlled AI assistant that blends a stunning \"Starark‑style\" HUD with powerful automation capabilities. Built in Python using PyQt6 for the GUI and Groq's LLM engine for natural language understanding, Jarvis offers both voice and text modes, making it suitable for any environment. The assistant is designed around a modular skill system —new capabilities can be ..."
+    },
+    {
+      "title": "GitHub - isair/jarvis: Private local AI assistant for your desktop ...",
+      "url": "https://github.com/isair/jarvis",
+      "snippet": "Private local AI assistant for your desktop. Voice and text chat, personal memory, dictation and MCP tools. Runs offline with Ollama or OpenAI-compatible servers on macOS, Windows and Linux. - isair/jarvis"
+    }
+  ]
+}

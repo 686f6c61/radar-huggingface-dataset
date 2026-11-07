@@ -5,7 +5,7 @@
   "author": "prompt-armor",
   "url": "https://huggingface.co/prompt-armor/l2-deberta-onnx",
   "created_at": "2026-11-06T16:07:46.000Z",
-  "updated_at": "2026-11-06T16:08:23.000Z",
+  "updated_at": "2026-11-06T19:54:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 244295917,
-  "storage_human": "244 MB",
+  "storage_bytes": 644543026,
+  "storage_human": "645 MB",
   "base_model": "protectai/deberta-v3-base-prompt-injection-v2",
   "formats": [
     "onnx"

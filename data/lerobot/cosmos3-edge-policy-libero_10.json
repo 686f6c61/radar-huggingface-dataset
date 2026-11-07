@@ -5,7 +5,7 @@
   "author": "lerobot",
   "url": "https://huggingface.co/lerobot/Cosmos3-Edge-Policy-LIBERO_10",
   "created_at": "2026-11-03T16:32:48.000Z",
-  "updated_at": "2026-11-04T21:01:35.000Z",
+  "updated_at": "2026-11-06T12:34:36.000Z",
   "license": "openmdw1.1-license",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 137,
+  "downloads_30d": 138,
   "trending_score": 0,
   "parameters": 4563688396,
   "parameters_human": "4.56B",
-  "storage_bytes": 27409024813,
-  "storage_human": "27.4 GB",
+  "storage_bytes": 36546028437,
+  "storage_human": "36.5 GB",
   "base_model": "lerobot/Cosmos3-Edge",
   "formats": [
     "safetensors"

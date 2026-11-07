@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "lindaSmail76/qiraa-studio-models",
+  "slug": "lindasmail76-qiraa-studio-models",
+  "author": "lindaSmail76",
+  "url": "https://huggingface.co/lindaSmail76/qiraa-studio-models",
+  "created_at": "2026-11-07T06:01:41.000Z",
+  "updated_at": "2026-11-07T06:03:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio-classification",
+    "speech",
+    "research",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 741417200,
+  "storage_human": "741 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lindaSmail76 (Linda Smail) - Hugging Face",
+      "url": "https://huggingface.co/lindaSmail76",
+      "snippet": "User profile of Linda Smail on Hugging Face"
+    }
+  ]
+}

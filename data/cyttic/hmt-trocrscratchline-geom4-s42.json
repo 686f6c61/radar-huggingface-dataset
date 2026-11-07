@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "cyttic/hmt-trocrscratchline-geom4-s42",
+  "slug": "cyttic-hmt-trocrscratchline-geom4-s42",
+  "author": "cyttic",
+  "url": "https://huggingface.co/cyttic/hmt-trocrscratchline-geom4-s42",
+  "created_at": "2026-11-07T09:53:05.000Z",
+  "updated_at": "2026-11-07T09:53:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "safetensors",
+    "htr",
+    "ctc",
+    "he",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22421004,
+  "parameters_human": "22.4M",
+  "storage_bytes": 89704536,
+  "storage_human": "90 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cyttic/hmt-trocrctc-geom4-s42 · Hugging Face",
+      "url": "https://huggingface.co/cyttic/hmt-trocrctc-geom4-s42",
+      "snippet": "cyttic/hmt-trocrctc-geom4-s42 Augmentation study (htr-metrics-transfer), wave 1. Model trocrctc, augmentation geom4, seed 42. Trained on cyttic/hhd-optionb-split train minus the dev writers; HHD Option-B test, greedy decoding, no LM: CER 0.0712, WER 0.3156. Details in results.json. Downloads last month -"
+    },
+    {
+      "title": "cyttic/hmt-htrvt-geom2-s42 · Hugging Face",
+      "url": "https://huggingface.co/cyttic/hmt-htrvt-geom2-s42",
+      "snippet": "Model htrvt, augmentation geom2, seed 42. Trained on cyttic/hhd-optionb-split train minus the dev writers; HHD Option-B test, greedy decoding, no LM: CER 0.0598, WER 0.2669."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Shree-Harini-K/Hasta-Mudra",
+  "slug": "shree-harini-k-hasta-mudra",
+  "author": "Shree-Harini-K",
+  "url": "https://huggingface.co/Shree-Harini-K/Hasta-Mudra",
+  "created_at": "2026-11-07T11:54:27.000Z",
+  "updated_at": "2026-11-07T12:00:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hakini Mudra — Hasta Mudra - Shiva University",
+      "url": "https://shivauniversity.com/mudras/hakini-mudra",
+      "snippet": "Hakini Mudra (हाकिनी मुद्रा) is a refined gesture from the Hatha / Cognitive lineage cultivated for integrating brain hemispheres and memory. Practit…"
+    },
+    {
+      "title": "GitHub - kavitharaju/KathakaliMudraDataset: The dataset for Kathakali ...",
+      "url": "https://github.com/kavitharaju/KathakaliMudraDataset",
+      "snippet": "Hasta Mudra Dataset 24 hand gestures (mudras) as per Hasta Lakshana Deepika used in the art forms, Kathakali, Koodiyattam, Mohiniyattam, Nangyar Koothu, Krishanattam etc."
+    }
+  ]
+}

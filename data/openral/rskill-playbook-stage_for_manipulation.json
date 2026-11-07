@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "OpenRAL/rskill-playbook-stage_for_manipulation",
+  "slug": "openral-rskill-playbook-stage_for_manipulation",
+  "author": "OpenRAL",
+  "url": "https://huggingface.co/OpenRAL/rskill-playbook-stage_for_manipulation",
+  "created_at": "2026-08-07T20:58:30.000Z",
+  "updated_at": "2026-11-07T12:03:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "OpenRAL",
+    "rskill",
+    "any",
+    "rskill-kind:playbook",
+    "rskill-role:s2",
+    "embodiment:any",
+    "rskill-license:apache-2.0",
+    "robotics",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenRAL/rskill-playbook-stage_for_manipulation · Hugging Face",
+      "url": "https://huggingface.co/OpenRAL/rskill-playbook-stage_for_manipulation",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openral/rskills/stage-for-manipulation at master - GitHub",
+      "url": "https://github.com/OpenRAL/openral/tree/master/rskills/stage-for-manipulation/",
+      "snippet": "Manifest summary kind: playbook, role: s2, actions: [plan], chunk_size: 1. playbook.trigger: a manipulation skill declares a starting_pose / pre-grasp the robot is not currently in. playbook.done_predicate: the robot is in the skill's declared pre-grasp / starting pose, verified, and ready to dispatch the manipulation. playbook.max_steps: 8."
+    }
+  ]
+}

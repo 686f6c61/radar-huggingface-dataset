@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/DewarpNet-OpenVINO",
+  "slug": "mlboydaisuke-dewarpnet-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/DewarpNet-OpenVINO",
+  "created_at": "2026-11-07T06:43:46.000Z",
+  "updated_at": "2026-11-07T06:44:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "onnx",
+    "intel-npu",
+    "image-to-image",
+    "base_model:litert-community/DewarpNet-LiteRT",
+    "base_model:quantized:litert-community/DewarpNet-LiteRT",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 397246651,
+  "storage_human": "397 MB",
+  "base_model": "litert-community/DewarpNet-LiteRT",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenVINO (OpenVINO Toolkit) – Models - Hugging Face",
+      "url": "https://huggingface.co/OpenVINO/models",
+      "snippet": "AI & ML interests. Deep Learning Inference, Deep Learning Model Optimization. Recent Activity. amokrov published a model 1 day ago. OpenVINO/Qwen3-30B-A3B-nf4-ov"
+    },
+    {
+      "title": "Model Zoo — OpenVINO™ documentation — Version (2023.3)",
+      "url": "https://docs.openvino.ai/2023.3/model_zoo.html",
+      "snippet": "Open Model Zoo for OpenVINO™ toolkit delivers a wide variety of free, pre-trained deep learning models and demo applications that provide full application templates to help you implement deep learning in Python, C++, or OpenCV Graph API (G-API). Models and demos are available in the Open Model Zoo GitHub repo and licensed under Apache License Version 2.0. Browse through over 200 neural ..."
+    }
+  ]
+}

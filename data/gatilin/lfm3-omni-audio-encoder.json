@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "gatilin/lfm3-omni-audio-encoder",
+  "slug": "gatilin-lfm3-omni-audio-encoder",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/lfm3-omni-audio-encoder",
+  "created_at": "2026-11-07T11:32:25.000Z",
+  "updated_at": "2026-11-07T11:34:13.000Z",
+  "license": "lfm-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "lfm3_omni",
+    "audio",
+    "audio-encoder",
+    "feature-extraction",
+    "custom_code",
+    "base_model:LiquidAI/LFM3-Omni-2B",
+    "base_model:finetune:LiquidAI/LFM3-Omni-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 115278144,
+  "parameters_human": "115.3M",
+  "storage_bytes": 230578592,
+  "storage_human": "231 MB",
+  "base_model": "LiquidAI/LFM3-Omni-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing LFM3: Every Modality for Specialized Intelligence",
+      "url": "https://www.liquid.ai/blog/lfm3",
+      "snippet": "LFM3 is Liquid AI’s new open-weight model family: 2B-class text, vision, audio, omni, and decision models built to fine-tune and run fast on any device."
+    },
+    {
+      "title": "LFM3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/lfm3",
+      "snippet": "About LFM3 Liquid AI builds small models designed for specialization and on-device deployment. LFM3 brings a new tri-hybrid architecture and a shared backbone for text, vision, audio, omni, and decision models. The model featured here, LFM3-VL-2B, combines the LFM3 language backbone with an in-house vision encoder for text, image, and video input."
+    }
+  ]
+}
