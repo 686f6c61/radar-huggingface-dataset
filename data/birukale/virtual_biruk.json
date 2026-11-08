@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "birukale/Virtual_Biruk",
+  "slug": "birukale-virtual_biruk",
+  "author": "birukale",
+  "url": "https://huggingface.co/birukale/Virtual_Biruk",
+  "created_at": "2026-11-08T20:19:58.000Z",
+  "updated_at": "2026-11-08T20:23:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 239536272,
+  "storage_human": "240 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chat with Biruk | character.ai | AI Chat, Reimagined–Your Words. Your ...",
+      "url": "https://character.ai/chat/VfT6gEhPCIx2VtghUsyPDkG_UeGM62uhnM9sHekzYrg",
+      "snippet": "Chat with Biruk: . Powered by an industry leading, AI large language model (LLM)."
+    },
+    {
+      "title": "3 Steps to Go Viral Fast: The Viral Video Hook Formula | TikTok",
+      "url": "https://www.tiktok.com/@biruk.ai.studio/video/7703235768436706581",
+      "snippet": "8043 Likes, 85 Comments. TikTok video from Bruk:music studio (@biruk.ai.studio): “Want to go viral fast? Learn the 3-step viral video hook formula to capture attention and boost your TikTok growth. Master the creator workflow for maximum impact. #tiktokgrowth #creatorworkflow #viralmyvideo”."
+    }
+  ]
+}

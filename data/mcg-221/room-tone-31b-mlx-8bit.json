@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "McG-221/Room-Tone-31B-mlx-8Bit",
+  "slug": "mcg-221-room-tone-31b-mlx-8bit",
+  "author": "McG-221",
+  "url": "https://huggingface.co/McG-221/Room-Tone-31B-mlx-8Bit",
+  "created_at": "2026-11-08T20:21:09.000Z",
+  "updated_at": "2026-11-08T20:21:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "nsfw",
+    "roleplay",
+    "adult-content",
+    "mature",
+    "conversational",
+    "multi-character",
+    "ensemble",
+    "text-generation",
+    "mlx-my-repo",
+    "en",
+    "base_model:ReadyArt/Room-Tone-31B",
+    "base_model:finetune:ReadyArt/Room-Tone-31B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345280,
+  "parameters_human": "30.70B",
+  "storage_bytes": 32649561334,
+  "storage_human": "32.6 GB",
+  "base_model": "ReadyArt/Room-Tone-31B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "McG-221/Split-31B-mlx-8Bit · Hugging Face",
+      "url": "https://huggingface.co/McG-221/Split-31B-mlx-8Bit",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "McG-221/XORTRON-NXTXPRT10PRO-31B-mlx-8Bit - Hugging Face",
+      "url": "https://huggingface.co/McG-221/XORTRON-NXTXPRT10PRO-31B-mlx-8Bit",
+      "snippet": "McG-221 / XORTRON-NXTXPRT10PRO-31B-mlx-8Bit like 0 Image-Text-to-Text Transformers Safetensors MLX English gemma4 text-generation-inference unsloth qwen3_5 uncensored harmful xortron heretic abliterated toxic mlx-my-repo conversational 8-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new ..."
+    }
+  ]
+}

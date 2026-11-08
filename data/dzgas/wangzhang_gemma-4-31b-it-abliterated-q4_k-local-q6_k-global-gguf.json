@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "DZgas/wangzhang_gemma-4-31B-it-abliterated-Q4_K-local-Q6_K-global.gguf",
+  "slug": "dzgas-wangzhang_gemma-4-31b-it-abliterated-q4_k-local-q6_k-global-gguf",
+  "author": "DZgas",
+  "url": "https://huggingface.co/DZgas/wangzhang_gemma-4-31B-it-abliterated-Q4_K-local-Q6_K-global.gguf",
+  "created_at": "2026-11-08T13:57:55.000Z",
+  "updated_at": "2026-11-08T14:07:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:wangzhang/gemma-4-31B-it-abliterated",
+    "base_model:quantized:wangzhang/gemma-4-31B-it-abliterated",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 168605788544,
+  "storage_human": "168.6 GB",
+  "base_model": "wangzhang/gemma-4-31B-it-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma-4-31B-it-Q4_K-local-Q6_K-global-GGUF - Hugging Face",
+      "url": "https://huggingface.co/DZgas/gemma-4-31B-it-Q4_K-local-Q6_K-global-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "wangzhang/gemma-4-31B-it-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/wangzhang/gemma-4-31B-it-abliterated-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

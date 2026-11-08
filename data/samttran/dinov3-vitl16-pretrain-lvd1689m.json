@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "samttran/dinov3-vitl16-pretrain-lvd1689m",
+  "slug": "samttran-dinov3-vitl16-pretrain-lvd1689m",
+  "author": "samttran",
+  "url": "https://huggingface.co/samttran/dinov3-vitl16-pretrain-lvd1689m",
+  "created_at": "2026-11-08T20:05:08.000Z",
+  "updated_at": "2026-11-08T20:05:18.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dinov3_vit",
+    "image-feature-extraction",
+    "base_model:facebook/dinov3-vitl16-pretrain-lvd1689m",
+    "base_model:finetune:facebook/dinov3-vitl16-pretrain-lvd1689m",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 303129600,
+  "parameters_human": "303.1M",
+  "storage_bytes": 1212559808,
+  "storage_human": "1.2 GB",
+  "base_model": "facebook/dinov3-vitl16-pretrain-lvd1689m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tao-hunter/dinov3-vitl16-pretrain-lvd1689m · Hugging Face",
+      "url": "https://huggingface.co/tao-hunter/dinov3-vitl16-pretrain-lvd1689m",
+      "snippet": "Model Card for DINOv3 DINOv3 is a family of versatile vision foundation models that outperforms the specialized state of the art across a broad range of settings, without fine-tuning. DINOv3 produces high-quality dense features that achieve outstanding performance on various vision tasks, significantly surpassing previous self- and weakly-supervised foundation models. Model Details These are ..."
+    },
+    {
+      "title": "facebook/dinov3-vitl16-pretrain-lvd1689m · Hugging Face",
+      "url": "https://huggingface.co/facebook/dinov3-vitl16-pretrain-lvd1689m",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "femt00/Qwen3.8-27B",
+  "slug": "femt00-qwen3-8-27b",
+  "author": "femt00",
+  "url": "https://huggingface.co/femt00/Qwen3.8-27B",
+  "created_at": "2026-11-08T17:45:13.000Z",
+  "updated_at": "2026-11-08T17:45:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Releases Foundry Local to Run Qwen3.8-27B AI Model on Nvidia GPUs",
+      "url": "https://pcmasterinsider.com/microsoft-foundry-local-qwen-38-27b-local-ai/",
+      "snippet": "The Qwen3.8-27B model profile is available immediately through the Microsoft Foundry Local catalog on Nvidia-powered systems. Microsoft confirmed that platform support will expand in upcoming updates to include Apple Silicon (Mac) devices and AMD graphics cards, alongside deeper native integration into future GitHub Copilot clients."
+    },
+    {
+      "title": "Qwen 4 27B: Release Date, What’s Confirmed, and the Hardware to Prepare ...",
+      "url": "https://www.yottalabs.ai/post/qwen-4-27b-release-date-specs-hardware-what-is-known-2026",
+      "snippet": "Alibaba named a Qwen 4 27B open-weights model at Apsara on September 22, with no specs, license, or date. What’s confirmed, what the Qwen3.8-27B tells you about it, and which GPU to have ready."
+    }
+  ]
+}

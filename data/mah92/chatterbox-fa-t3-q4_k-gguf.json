@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "mah92/Chatterbox-FA-T3-Q4_K-GGUF",
+  "slug": "mah92-chatterbox-fa-t3-q4_k-gguf",
+  "author": "mah92",
+  "url": "https://huggingface.co/mah92/Chatterbox-FA-T3-Q4_K-GGUF",
+  "created_at": "2026-11-08T12:44:56.000Z",
+  "updated_at": "2026-11-08T12:44:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "gguf",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "gguf",
+    "text-to-speech",
+    "tts",
+    "persian",
+    "farsi",
+    "q4_k",
+    "chatterbox",
+    "crispasr",
+    "llama.cpp",
+    "fa",
+    "base_model:ResembleAI/chatterbox",
+    "base_model:finetune:ResembleAI/chatterbox",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "mazrba/Chatterbox-TTS-Persian-gguf, Thomcles/Chatterbox-TTS-Persian-Farsi, ResembleAI/chatterbox",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chatterbox-t3-q4_k.gguf · cstr/chatterbox-GGUF at main",
+      "url": "https://huggingface.co/cstr/chatterbox-GGUF/blob/main/chatterbox-t3-q4_k.gguf",
+      "snippet": "Instructions to use cstr/chatterbox-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries How to use cstr/chatterbox-GGUF with Chatterbox:"
+    },
+    {
+      "title": "calcuis/chatterbox-gguf · Hugging Face",
+      "url": "https://huggingface.co/calcuis/chatterbox-gguf",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Sleem247/legal-llm-llama3-Q8_0-GGUF",
+  "slug": "sleem247-legal-llm-llama3-q8_0-gguf",
+  "author": "Sleem247",
+  "url": "https://huggingface.co/Sleem247/legal-llm-llama3-Q8_0-GGUF",
+  "created_at": "2026-11-08T12:34:24.000Z",
+  "updated_at": "2026-11-08T12:34:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-lora",
+    "base_model:sourav111/legal-llm-llama3",
+    "base_model:quantized:sourav111/legal-llm-llama3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3407872,
+  "parameters_human": "3.4M",
+  "storage_bytes": 4858592,
+  "storage_human": "5 MB",
+  "base_model": "sourav111/legal-llm-llama3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

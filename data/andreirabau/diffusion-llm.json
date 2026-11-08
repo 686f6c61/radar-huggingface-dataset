@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "AndreiRabau/diffusion-llm",
+  "slug": "andreirabau-diffusion-llm",
+  "author": "AndreiRabau",
+  "url": "https://huggingface.co/AndreiRabau/diffusion-llm",
+  "created_at": "2026-09-15T09:31:44.000Z",
+  "updated_at": "2026-11-08T18:58:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "diffusion-language-model",
+    "discrete-diffusion",
+    "text-denoising",
+    "gpt2",
+    "research",
+    "text-generation",
+    "en",
+    "dataset:Salesforce/wikitext",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24906497354,
+  "storage_human": "24.9 GB",
+  "base_model": "openai-community/gpt2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diffusion Models vs LLMs: Differences and Uses in 2026",
+      "url": "https://kanerika.com/blogs/diffusion-models-vs-llms/",
+      "snippet": "Compare diffusion models vs LLMs on speed, cost and output, and learn which to use for text, images, video and agents as of November 2026."
+    }
+  ]
+}

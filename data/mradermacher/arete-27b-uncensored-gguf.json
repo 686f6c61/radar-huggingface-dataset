@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Arete-27B-Uncensored-GGUF",
+  "slug": "mradermacher-arete-27b-uncensored-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Arete-27B-Uncensored-GGUF",
+  "created_at": "2026-11-08T18:34:36.000Z",
+  "updated_at": "2026-11-08T19:07:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "qwen3.8",
+    "en",
+    "base_model:SargeDev/Arete-27B-Uncensored",
+    "base_model:quantized:SargeDev/Arete-27B-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 173803154560,
+  "storage_human": "173.8 GB",
+  "base_model": "SargeDev/Arete-27B-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Arete-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Arete-27B-GGUF",
+      "snippet": "Machine learning model with 27B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "mradermacher/Arete-27B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Arete-27B-i1-GGUF",
+      "snippet": "Machine learning model with 27B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

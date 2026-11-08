@@ -24,13 +24,13 @@
     "license:other",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 34,
+  "likes": 1,
+  "downloads_30d": 62,
   "trending_score": 0,
   "parameters": 9357602496,
   "parameters_human": "9.36B",
-  "storage_bytes": 18779640908,
-  "storage_human": "18.8 GB",
+  "storage_bytes": 29154432036,
+  "storage_human": "29.2 GB",
   "base_model": "divagr1925/Qwen3.5-4B-Qwenputer",
   "formats": [
     "safetensors"

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "aaalby/july",
+  "slug": "aaalby-july",
+  "author": "aaalby",
+  "url": "https://huggingface.co/aaalby/july",
+  "created_at": "2024-09-11T18:59:25.000Z",
+  "updated_at": "2026-11-08T17:07:05.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 667794443,
+  "storage_human": "668 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aaalby/july · Hugging Face",
+      "url": "https://huggingface.co/aaalby/july",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

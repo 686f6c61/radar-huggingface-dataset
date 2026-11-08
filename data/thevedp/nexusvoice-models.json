@@ -5,7 +5,7 @@
   "author": "thevedp",
   "url": "https://huggingface.co/thevedp/nexusvoice-models",
   "created_at": "2026-09-02T19:54:58.000Z",
-  "updated_at": "2026-11-06T21:30:08.000Z",
+  "updated_at": "2026-11-07T17:43:18.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,12 +16,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 140,
+  "downloads_30d": 251,
   "trending_score": 0,
   "parameters": 189083776,
   "parameters_human": "189.1M",
-  "storage_bytes": 11332603360,
-  "storage_human": "11.3 GB",
+  "storage_bytes": 18737019456,
+  "storage_human": "18.7 GB",
   "base_model": null,
   "formats": [
     "gguf"

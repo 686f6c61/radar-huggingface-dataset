@@ -5,7 +5,7 @@
   "author": "oluwagbotty",
   "url": "https://huggingface.co/oluwagbotty/fastconformer-ctc-en-ft-10ep-onnx",
   "created_at": "2026-11-07T16:12:06.000Z",
-  "updated_at": "2026-11-07T16:52:50.000Z",
+  "updated_at": "2026-11-08T14:19:41.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 485948213,
-  "storage_human": "486 MB",
+  "storage_bytes": 670413715,
+  "storage_human": "670 MB",
   "base_model": "oluwagbotty/fastconformer-ctc-en-ft-10ep",
   "formats": [
     "onnx"

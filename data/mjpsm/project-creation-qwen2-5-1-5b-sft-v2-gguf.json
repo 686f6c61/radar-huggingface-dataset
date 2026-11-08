@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mjpsm/project-creation-qwen2.5-1.5b-sft-v2-GGUF",
+  "slug": "mjpsm-project-creation-qwen2-5-1-5b-sft-v2-gguf",
+  "author": "mjpsm",
+  "url": "https://huggingface.co/mjpsm/project-creation-qwen2.5-1.5b-sft-v2-GGUF",
+  "created_at": "2026-11-08T18:43:32.000Z",
+  "updated_at": "2026-11-08T18:44:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen2",
+    "myvillage",
+    "base_model:mjpsm/project-creation-qwen2.5-1.5b-sft-v2",
+    "base_model:quantized:mjpsm/project-creation-qwen2.5-1.5b-sft-v2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3905360352,
+  "storage_human": "3.9 GB",
+  "base_model": "mjpsm/project-creation-qwen2.5-1.5b-sft-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mjpsm/project-creation-qwen2.5-1.5b-sft-v2 · Hugging Face",
+      "url": "https://huggingface.co/mjpsm/project-creation-qwen2.5-1.5b-sft-v2",
+      "snippet": "project-creation-qwen2.5-1.5b-sft-v2 QLoRA fine-tune of Qwen/Qwen2.5-1.5B-Instruct on the MyVillage Project Creation V2 dataset (1,000 rows: 14 golden + 986 new; V2 concept-level holdout splits, 800/100/100). Generates one project title + general description: 4 paragraphs for K–5 (including parents and caregivers), 3 paragraphs for grade 6+. Use the same system prompt as training (see the ..."
+    },
+    {
+      "title": "mjpsm/project-creation-qwen2.5-1.5b-sft-v1 · Hugging Face",
+      "url": "https://huggingface.co/mjpsm/project-creation-qwen2.5-1.5b-sft-v1",
+      "snippet": "Text Generation model with 2B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Alpie_seed-GGUF",
   "created_at": "2026-11-06T22:43:09.000Z",
-  "updated_at": "2026-11-06T23:36:00.000Z",
+  "updated_at": "2026-11-07T10:59:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -46,7 +46,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 753,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Mincofficial/Minico-M1-Preview-ONNX",
+  "slug": "mincofficial-minico-m1-preview-onnx",
+  "author": "Mincofficial",
+  "url": "https://huggingface.co/Mincofficial/Minico-M1-Preview-ONNX",
+  "created_at": "2026-11-08T20:08:22.000Z",
+  "updated_at": "2026-11-08T20:09:54.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "lfm2",
+    "text-generation",
+    "webgpu",
+    "reasoning",
+    "reasoning-effort",
+    "on-device",
+    "conversational",
+    "en",
+    "base_model:Mincofficial/Minico-M1-Preview",
+    "base_model:quantized:Mincofficial/Minico-M1-Preview",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2239881444,
+  "storage_human": "2.2 GB",
+  "base_model": "Mincofficial/Minico-M1-Preview",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mincofficial/Minico-M1-Preview · Hugging Face",
+      "url": "https://huggingface.co/Mincofficial/Minico-M1-Preview",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Minico M1 Preview by Mincofficial - LLM Explorer",
+      "url": "https://llm-explorer.com/model/Mincofficial%2FMinico-M1-Preview,7sSkOlJFc1JnKEHtrlG22W",
+      "snippet": "Minico M1 Preview is an open-source 350m LLM by Mincofficial. VRAM 0.8GB, 125K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

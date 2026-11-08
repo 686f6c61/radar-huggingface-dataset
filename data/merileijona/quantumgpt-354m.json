@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "merileijona/quantumgpt-354m",
+  "slug": "merileijona-quantumgpt-354m",
+  "author": "merileijona",
+  "url": "https://huggingface.co/merileijona/quantumgpt-354m",
+  "created_at": "2026-03-26T16:25:08.000Z",
+  "updated_at": "2026-11-08T17:17:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "quantum-computing",
+    "qasm",
+    "quantum-circuits",
+    "code-generation",
+    "text-generation-inference",
+    "text-generation",
+    "en",
+    "dataset:merileijona/quantum-circuits-21k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 354347008,
+  "parameters_human": "354.3M",
+  "storage_bytes": 1417418208,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "merileijona/quantumgpt-354m · Hugging Face",
+      "url": "https://huggingface.co/merileijona/quantumgpt-354m",
+      "snippet": "QuantumGPT-354M is a GPT-style language model (354.1M parameters) trained from scratch on quantum circuit description → OpenQASM 2.0 pairs. It is the third model in the QuantumGPT scaling series, scaling model depth and width while holding training data constant at 21,208 samples. Key finding ..."
+    },
+    {
+      "title": "merileijona/quantumgpt-354m-finetuned · Hugging Face",
+      "url": "https://huggingface.co/merileijona/quantumgpt-354m-finetuned",
+      "snippet": "The 354M sibling of QuantumGPT-124M-v3: GPT-2 medium architecture (24 layers, 16 heads, 1024 embd, natively 512-token context) fine-tuned with the same format-anchor recipe that produced the v3 champion."
+    }
+  ]
+}

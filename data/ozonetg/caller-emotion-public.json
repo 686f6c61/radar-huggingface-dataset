@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "ozonetg/caller-emotion-public",
+  "slug": "ozonetg-caller-emotion-public",
+  "author": "ozonetg",
+  "url": "https://huggingface.co/ozonetg/caller-emotion-public",
+  "created_at": "2026-11-08T20:04:35.000Z",
+  "updated_at": "2026-11-08T20:16:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "nemo",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "nemo",
+    "onnx",
+    "speech-emotion-recognition",
+    "audio-classification",
+    "en",
+    "ar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1559623270,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ozonetg/parakeet-110m-caller-asr at main - Hugging Face",
+      "url": "https://huggingface.co/ozonetg/parakeet-110m-caller-asr/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main parakeet-110m-caller-asr 459 MB Ctrl+K Ctrl+K 1 contributor History:3 commits ozonetg Model card + NOTICE (family now 13 models) 228f690 verified2 days ago .gitattributes Safe 1.59 kBModel weights (.nemo) and model card3 days ago NOTICE Safe 424 BytesModel card + NOTICE (family now 13 models)2 days ago README.md Safe 25.8 kBModel card + NOTICE (family now 13 ..."
+    },
+    {
+      "title": "ozonetg/parakeet-0.6b-caller-asr · Hugging Face",
+      "url": "https://huggingface.co/ozonetg/parakeet-0.6b-caller-asr",
+      "snippet": "This is the recommended 0.6B model of the family. A fine-tune of NVIDIA's nvidia/parakeet-unified-en-0.6b for the caller side of 8 kHz US English telephone calls: fine-tune with layer-wise learning-rate decay 0.9, blended 0.8 / 0.2 with the base. It was trained on about 345 hours of real outbound sales-call audio (the customer's channel only) with machine transcripts, and evaluated on public ..."
+    }
+  ]
+}

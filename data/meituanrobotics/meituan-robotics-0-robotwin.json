@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "MeituanRobotics/Meituan-Robotics-0-RoboTwin",
+  "slug": "meituanrobotics-meituan-robotics-0-robotwin",
+  "author": "MeituanRobotics",
+  "url": "https://huggingface.co/MeituanRobotics/Meituan-Robotics-0-RoboTwin",
+  "created_at": "2026-11-05T13:00:16.000Z",
+  "updated_at": "2026-11-06T13:00:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vision-language-action",
+    "mr0",
+    "pytorch",
+    "mmdit",
+    "robotwin",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20474031838,
+  "storage_human": "20.5 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meituan-Robotics-0 - GitHub",
+      "url": "https://github.com/Meituan-Robotics/Meituan-Robotics-0/tree/opensource/",
+      "snippet": "The project report is titled Meituan-Robotics-0: A Vision-Language-Action Foundation Model for Desktop Manipulation (Meituan Robotics Team, 2026). MR0 builds on the StarVLA training and deployment stack. For the underlying software, see CITATION.cff. We thank the StarVLA, Qwen, RoboTwin, and RoboDojo communities."
+    },
+    {
+      "title": "RoboTwin 2.0 - RoboTwin 2.0 Official Document",
+      "url": "https://robotwin-platform.github.io/doc/index.html",
+      "snippet": "Here is the official documentation for RoboTwin 2.0 (ICML 2026), which includes installation and usage instructions for various RoboTwin functionalities, detailed information on the 50 bimanual tasks in RoboTwin 2.0, comprehensive descriptions of the RoboTwin-OD dataset, and guidelines for joining the community."
+    }
+  ]
+}

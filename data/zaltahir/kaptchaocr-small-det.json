@@ -5,7 +5,7 @@
   "author": "zaltahir",
   "url": "https://huggingface.co/zaltahir/kaptchaocr-small-det",
   "created_at": "2026-11-04T18:40:43.000Z",
-  "updated_at": "2026-11-04T18:40:46.000Z",
+  "updated_at": "2026-11-07T20:24:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",

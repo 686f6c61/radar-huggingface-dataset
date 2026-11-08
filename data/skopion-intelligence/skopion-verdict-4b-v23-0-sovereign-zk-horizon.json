@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "SKOPION-Intelligence/skopion-verdict-4b-v23.0-sovereign-zk-horizon",
+  "slug": "skopion-intelligence-skopion-verdict-4b-v23-0-sovereign-zk-horizon",
+  "author": "SKOPION-Intelligence",
+  "url": "https://huggingface.co/SKOPION-Intelligence/skopion-verdict-4b-v23.0-sovereign-zk-horizon",
+  "created_at": "2026-11-08T12:30:13.000Z",
+  "updated_at": "2026-11-08T12:42:46.000Z",
+  "license": "skopion-sovereign-kritis-audit-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "skopion",
+    "skopion-verdict",
+    "v23-sovereign-zk-horizon",
+    "zk-pcvc",
+    "control-barrier-function",
+    "formal-verification",
+    "llm-as-a-judge",
+    "reward-model",
+    "kritis",
+    "nato-stanag",
+    "nis2",
+    "dora",
+    "cnsa-2.0",
+    "eu-ai-act",
+    "post-quantum-cryptography",
+    "conformal-prediction",
+    "text-classification",
+    "en",
+    "de",
+    "pl",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Strict-178 External Decision, ZK-PCVC & CBF Safety Benchmark Matrix (180 Suites / 53,340 evaluations)",
+      "dataset": "SKOPION-Verdict-Bench-180Suites",
+      "metric": "Strict-178 External Mean Accuracy (%)",
+      "value": 98.91
+    },
+    {
+      "task": "Strict-178 External Decision, ZK-PCVC & CBF Safety Benchmark Matrix (180 Suites / 53,340 evaluations)",
+      "dataset": "SKOPION-Verdict-Bench-180Suites",
+      "metric": "Empirical Wave-21..26 JSONL Suites Mean Accuracy (%)",
+      "value": 98.33
+    }
+  ],
+  "sources": [
+    {
+      "title": "SKOPION Verdict — Sovereign Decision AI & EU R&D Programme | SKOPION",
+      "url": "https://skopion.de/en/research-innovation/skopion-verdict-ai-research-program",
+      "snippet": "Active AI R&D programme by SKOPION Intelligence: calibrated Apache-2.0 decision models (4B/9B/27B) with verifiable evidence pointers, conformal abstention (DE/PL/EN) and 25-suite validation."
+    },
+    {
+      "title": "SKOPION-Intelligence/skopion-verdict-4b-v22.0-absolute-horizon ...",
+      "url": "https://huggingface.co/SKOPION-Intelligence/skopion-verdict-4b-v22.0-absolute-horizon",
+      "snippet": "Text Classification model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

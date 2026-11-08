@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ondrazarici/Adel_CZ_piper",
+  "slug": "ondrazarici-adel_cz_piper",
+  "author": "ondrazarici",
+  "url": "https://huggingface.co/ondrazarici/Adel_CZ_piper",
+  "created_at": "2026-11-08T14:12:24.000Z",
+  "updated_at": "2026-11-08T14:14:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4955590,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ondrazarici/piper-female-cz · Hugging Face",
+      "url": "https://huggingface.co/ondrazarici/piper-female-cz",
+      "snippet": "cs Kasandra - Local AI Voice (CZ) Kasandra is a high-quality, local Czech voice model built for Piper TTS. It is designed to bring natural-sounding Czech speech synthesis to your smart home (e.g. Home Assistant) without the need to send a single byte of data to the cloud."
+    },
+    {
+      "title": "ondrazarici (Ondřej Šimek) - Hugging Face",
+      "url": "https://huggingface.co/ondrazarici/models",
+      "snippet": "ondrazarici's models1 Sort: Recently updated ondrazarici/piper-female-cz Updated about 16 hours ago"
+    }
+  ]
+}

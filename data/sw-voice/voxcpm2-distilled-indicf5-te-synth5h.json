@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "sw-voice/voxcpm2-distilled-indicf5-te-synth5h",
+  "slug": "sw-voice-voxcpm2-distilled-indicf5-te-synth5h",
+  "author": "sw-voice",
+  "url": "https://huggingface.co/sw-voice/voxcpm2-distilled-indicf5-te-synth5h",
+  "created_at": "2026-11-08T15:49:56.000Z",
+  "updated_at": "2026-11-08T15:56:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "te",
+    "kn",
+    "ta",
+    "ml",
+    "mr",
+    "gu",
+    "de",
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "voxcpm2",
+    "tts",
+    "telugu",
+    "swamiji",
+    "te",
+    "kn",
+    "ta",
+    "ml",
+    "mr",
+    "gu",
+    "de",
+    "ru",
+    "en",
+    "base_model:sw-voice/voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep",
+    "base_model:finetune:sw-voice/voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 9537040314,
+  "storage_human": "9.5 GB",
+  "base_model": "sw-voice/voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenBMB/VoxCPM: VoxCPM2: Tokenizer-Free TTS for Multilingual ...",
+      "url": "https://github.com/OpenBMB/VoxCPM/",
+      "snippet": "VoxCPM2 is the latest major release — a 2B parameter model trained on over 2 million hours of multilingual speech data, now supporting 30 languages, Voice Design, Controllable Voice Cloning, and 48kHz studio-quality audio output. Built on a MiniCPM-4 backbone."
+    },
+    {
+      "title": "GitHub - tieincred/VoxCPM2-Indic: VaaniTTS — open Indic text-to-speech ...",
+      "url": "https://github.com/tieincred/VoxCPM2-Indic",
+      "snippet": "This repo is a VoxCPM2 fork. Indic data prep, configs, and the released checkpoint are from this fine-tune. Architecture and base weights are from OpenBMB."
+    }
+  ]
+}

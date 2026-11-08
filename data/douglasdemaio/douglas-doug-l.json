@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "douglasdemaio/douglas-doug-l",
+  "slug": "douglasdemaio-douglas-doug-l",
+  "author": "douglasdemaio",
+  "url": "https://huggingface.co/douglasdemaio/douglas-doug-l",
+  "created_at": "2026-11-08T15:05:17.000Z",
+  "updated_at": "2026-11-08T15:05:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "hf_jobs",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92220656,
+  "storage_human": "92 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ddemaio (Douglas DeMaio) - Hugging Face",
+      "url": "https://huggingface.co/ddemaio",
+      "snippet": "Images, graphics, books, general questions Images, graphics, books, general questions"
+    }
+  ]
+}

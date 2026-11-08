@@ -5,7 +5,7 @@
   "author": "arvedo",
   "url": "https://huggingface.co/arvedo/Nemotron-3.5-Bolt-E4B-NVFP4-VisionAudio-GGUF",
   "created_at": "2026-11-01T12:49:45.000Z",
-  "updated_at": "2026-11-06T23:04:15.000Z",
+  "updated_at": "2026-11-07T14:49:12.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -47,12 +47,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 213,
   "trending_score": 0,
   "parameters": 7518069878,
   "parameters_human": "7.52B",
-  "storage_bytes": 21305472736,
-  "storage_human": "21.3 GB",
+  "storage_bytes": 22997971968,
+  "storage_human": "23.0 GB",
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
   "formats": [
     "gguf"

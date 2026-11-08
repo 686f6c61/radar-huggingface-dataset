@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "bunnycore/Qcoder-v1-2B-30Steps-Lora",
+  "slug": "bunnycore-qcoder-v1-2b-30steps-lora",
+  "author": "bunnycore",
+  "url": "https://huggingface.co/bunnycore/Qcoder-v1-2B-30Steps-Lora",
+  "created_at": "2026-11-08T14:10:14.000Z",
+  "updated_at": "2026-11-08T14:10:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:unsloth/Qwen3.5-2B",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3.5-2B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33638400,
+  "parameters_human": "33.6M",
+  "storage_bytes": 272260333,
+  "storage_human": "272 MB",
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Lora - a bunnycore Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/bunnycore/llm-lora",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from bunnycore"
+    }
+  ]
+}

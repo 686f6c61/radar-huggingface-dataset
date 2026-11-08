@@ -5,7 +5,7 @@
   "author": "Thox-ai",
   "url": "https://huggingface.co/Thox-ai/thox-cluster-deep",
   "created_at": "2026-10-31T15:43:21.000Z",
-  "updated_at": "2026-11-05T06:02:35.000Z",
+  "updated_at": "2026-11-07T20:11:22.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

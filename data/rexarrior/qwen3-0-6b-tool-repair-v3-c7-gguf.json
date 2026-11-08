@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "rexarrior/Qwen3-0.6B-Tool-Repair-v3-C7-GGUF",
+  "slug": "rexarrior-qwen3-0-6b-tool-repair-v3-c7-gguf",
+  "author": "rexarrior",
+  "url": "https://huggingface.co/rexarrior/Qwen3-0.6B-Tool-Repair-v3-C7-GGUF",
+  "created_at": "2026-11-08T16:14:04.000Z",
+  "updated_at": "2026-11-08T16:14:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen3",
+    "tool-calling",
+    "research",
+    "text-generation",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1198182176,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-0.6B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "QuantFactory/Qwen3-Reranker-0.6B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/QuantFactory/Qwen3-Reranker-0.6B-GGUF",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes ..."
+    }
+  ]
+}

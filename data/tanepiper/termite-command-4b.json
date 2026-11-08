@@ -5,7 +5,7 @@
   "author": "tanepiper",
   "url": "https://huggingface.co/tanepiper/termite-command-4b",
   "created_at": "2026-11-06T17:41:33.000Z",
-  "updated_at": "2026-11-06T22:45:31.000Z",
+  "updated_at": "2026-11-07T12:40:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,12 +28,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 22,
+  "downloads_30d": 71,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
-  "storage_bytes": 4280403488,
-  "storage_human": "4.3 GB",
+  "storage_bytes": 8560806976,
+  "storage_human": "8.6 GB",
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "gguf"

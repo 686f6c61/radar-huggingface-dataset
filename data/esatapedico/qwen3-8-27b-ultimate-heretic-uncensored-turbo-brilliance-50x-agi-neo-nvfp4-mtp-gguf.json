@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "esatapedico/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-NVFP4-MTP-GGUF",
+  "slug": "esatapedico-qwen3-8-27b-ultimate-heretic-uncensored-turbo-brilliance-50x-agi-neo-nvfp4-mtp-gguf",
+  "author": "esatapedico",
+  "url": "https://huggingface.co/esatapedico/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-NVFP4-MTP-GGUF",
+  "created_at": "2026-11-08T19:45:10.000Z",
+  "updated_at": "2026-11-08T20:18:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "nvfp4",
+    "qwen3.8",
+    "blackwell",
+    "mtp",
+    "speculative-decoding",
+    "ultimate-heretic",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "multilingual",
+    "base_model:DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 30950609056,
+  "storage_human": "31.0 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "esatapedico/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance ...",
+      "url": "https://huggingface.co/esatapedico/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-NVFP4",
+      "snippet": "NVFP4 safetensors checkpoint of DavidAU's Ultimate-Heretic Turbo-Brilliance-50x-AGI-NEO tune of Qwen3.8-27B: 256 packed NVFP4 projections (MLP plus full-attention QKVO) with the DeltaNet path, MTP ..."
+    },
+    {
+      "title": "DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF",
+      "snippet": "ULTIMATE: This model combines the power of Fable Fusion 711 (2500 likes, 5 million + downloads), with the extraordinary power of Qwen 3.8 27B (fully Heretic'ed/uncensored) multiplied by the power of Turbo Brilliance 50X V2, AGI edition."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "amc76/slangguard-indobert-lora-replay",
+  "slug": "amc76-slangguard-indobert-lora-replay",
+  "author": "amc76",
+  "url": "https://huggingface.co/amc76/slangguard-indobert-lora-replay",
+  "created_at": "2026-11-08T12:39:45.000Z",
+  "updated_at": "2026-11-08T12:40:00.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sentiment-analysis",
+    "indonesian",
+    "continual-learning",
+    "text-classification",
+    "id",
+    "base_model:indobenchmark/indobert-base-p1",
+    "base_model:adapter:indobenchmark/indobert-base-p1",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1195748,
+  "storage_human": "1 MB",
+  "base_model": "indobenchmark/indobert-base-p1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "slangguard/README.md at main · Akmal76/slangguard · GitHub",
+      "url": "https://github.com/Akmal76/slangguard/blob/main/README.md",
+      "snippet": "SlangGuard A continual-learning MLOps system for Indonesian sentiment analysis. When the language in new data changes (drift), the system retrains the model with LoRA + replay, so it learns new slang without forgetting old data."
+    },
+    {
+      "title": "A Hybrid Feature-Enhanced IndoBERT Framework with Controlled Semi ...",
+      "url": "https://www.mdpi.com/2076-3417/16/13/6478",
+      "snippet": "The evaluation focuses on comparing the proposed hybrid model with baseline and ablation variants, including IndoBERT-only, IndoBERT combined with handcrafted features, IndoBERT combined with TF-IDF–SVD features, and the full hybrid model with and without controlled semi-supervised learning."
+    }
+  ]
+}

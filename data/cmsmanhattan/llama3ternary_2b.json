@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "CMSManhattan/Llama3Ternary_2b",
+  "slug": "cmsmanhattan-llama3ternary_2b",
+  "author": "CMSManhattan",
+  "url": "https://huggingface.co/CMSManhattan/Llama3Ternary_2b",
+  "created_at": "2026-10-15T18:27:15.000Z",
+  "updated_at": "2026-11-08T16:20:54.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "ternary",
+    "bitnet",
+    "1.58bit",
+    "text-generation",
+    "NVIDIA Inception Program Member",
+    "conversational",
+    "en",
+    "license:bsl-1.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 2906,
+  "trending_score": 0,
+  "parameters": 2102462464,
+  "parameters_human": "2.10B",
+  "storage_bytes": 21490067011,
+  "storage_human": "21.5 GB",
+  "base_model": "meta-llama/Meta-Llama-3-2B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama3Ternary 2B by CMSManhattan - LLM Explorer",
+      "url": "https://llm-explorer.com/model/CMSManhattan%2FLlama3Ternary_2b,3OKBYvwFxb04etxKzHrZc0",
+      "snippet": "Llama3Ternary 2B is an open-source 2b LLM by CMSManhattan. VRAM 0.7GB, 8K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Llama3Ternary-10b-TQ2_0.gguf · CMSManhattan/Llama3Ternary_10b at main",
+      "url": "https://huggingface.co/CMSManhattan/Llama3Ternary_10b/blob/main/Llama3Ternary-10b-TQ2_0.gguf",
+      "snippet": "CMSManhattan / Llama3Ternary_10b Like 1 Follow Center Business Solutions inc 16 Text Generation Safetensors GGUF English llama ternary bitnet 1.58bit conversational License:llama3 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

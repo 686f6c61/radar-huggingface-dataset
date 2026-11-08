@@ -5,7 +5,7 @@
   "author": "lmsolo",
   "url": "https://huggingface.co/lmsolo/Qwen3-8B-GGUF",
   "created_at": "2026-11-07T20:22:48.000Z",
-  "updated_at": "2026-11-07T20:22:48.000Z",
+  "updated_at": "2026-11-07T21:01:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 73,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",

@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "ProtikD1810/hades-embed-v1",
+  "slug": "protikd1810-hades-embed-v1",
+  "author": "ProtikD1810",
+  "url": "https://huggingface.co/ProtikD1810/hades-embed-v1",
+  "created_at": "2026-11-08T16:32:13.000Z",
+  "updated_at": "2026-11-08T17:06:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "feature-extraction",
+    "hades",
+    "hades-embed",
+    "trained-from-scratch",
+    "sovereign-ai",
+    "sentence-similarity",
+    "mteb",
+    "transformers",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "eval-results",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 702791680,
+  "parameters_human": "702.8M",
+  "storage_bytes": 3582249766,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Massive Text Embedding Benchmark (MTEB)",
+      "dataset": "MTEB Overall Leaderboard",
+      "metric": "MTEB Average Score",
+      "value": 61.2
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "MTEB MS MARCO",
+      "metric": "MRR@10",
+      "value": 78.54
+    },
+    {
+      "task": "Code Retrieval",
+      "dataset": "MTEB CodeSearchNet",
+      "metric": "NDCG@10",
+      "value": 81.42
+    },
+    {
+      "task": "Scientific Claim Verification",
+      "dataset": "MTEB SciFact",
+      "metric": "NDCG@10",
+      "value": 67.4
+    },
+    {
+      "task": "Counter-Argument Retrieval",
+      "dataset": "MTEB ArguAna",
+      "metric": "MAP@10",
+      "value": 28.73
+    }
+  ],
+  "sources": [
+    {
+      "title": "ProtikD1810 (Protik Das) - Hugging Face",
+      "url": "https://huggingface.co/ProtikD1810",
+      "snippet": "datasets1 ProtikD1810/hades-m0-350m-training Viewer •Updated about 6 hours ago•545k"
+    },
+    {
+      "title": "enpeizhao/CVprojects: computer vision projects - GitHub",
+      "url": "https://github.com/enpeizhao/CVprojects",
+      "snippet": "Explore fun computer vision projects using Python, C++, and embedded systems on this GitHub repository. Discover innovative AI …"
+    },
+    {
+      "title": "ProtikD1810 (Protik Das) - Hugging Face",
+      "url": "https://huggingface.co/ProtikD1810/datasets",
+      "snippet": "ProtikD1810's datasets1 Sort: Recently updated ProtikD1810/hades-m0-350m-training Viewer •Updated about 10 hours ago•545k"
+    }
+  ]
+}

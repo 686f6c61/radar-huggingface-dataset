@@ -5,7 +5,7 @@
   "author": "cstr",
   "url": "https://huggingface.co/cstr/SDXL-VAE-inpaint-GGUF",
   "created_at": "2026-11-02T15:56:40.000Z",
-  "updated_at": "2026-11-02T15:56:45.000Z",
+  "updated_at": "2026-11-07T12:11:42.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 184,
+  "downloads_30d": 231,
   "trending_score": 0,
   "parameters": 83653863,
   "parameters_human": "83.7M",

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Acemang/justclip-narracao-pt",
+  "slug": "acemang-justclip-narracao-pt",
+  "author": "Acemang",
+  "url": "https://huggingface.co/Acemang/justclip-narracao-pt",
+  "created_at": "2026-11-08T13:59:20.000Z",
+  "updated_at": "2026-11-08T13:59:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "onnx",
+    "kokoro",
+    "european-portuguese",
+    "text-to-speech",
+    "pt",
+    "base_model:logus2k/kokoro_tts_eu_pt",
+    "base_model:quantized:logus2k/kokoro_tts_eu_pt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 355255977,
+  "storage_human": "355 MB",
+  "base_model": "logus2k/kokoro_tts_eu_pt",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JustClip: Turn Any Video Into Winning Clips | JustClip",
+      "url": "https://justclip.ai/",
+      "snippet": "An AI clipper built for streamers. Turn Twitch, Kick and YouTube VODs into captioned vertical clips."
+    }
+  ]
+}

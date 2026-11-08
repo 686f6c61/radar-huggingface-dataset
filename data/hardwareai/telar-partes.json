@@ -5,7 +5,7 @@
   "author": "hardwareai",
   "url": "https://huggingface.co/hardwareai/telar-partes",
   "created_at": "2026-10-27T20:35:47.000Z",
-  "updated_at": "2026-10-30T21:46:40.000Z",
+  "updated_at": "2026-11-07T18:25:54.000Z",
   "license": "varias",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 99,
+  "downloads_30d": 104,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",
-  "storage_bytes": 12541616168,
-  "storage_human": "12.5 GB",
+  "storage_bytes": 12670074707,
+  "storage_human": "12.7 GB",
   "base_model": null,
   "formats": [
     "gguf"

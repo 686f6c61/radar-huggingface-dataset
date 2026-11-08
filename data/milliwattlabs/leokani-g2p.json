@@ -5,7 +5,7 @@
   "author": "milliwattlabs",
   "url": "https://huggingface.co/milliwattlabs/leokani-g2p",
   "created_at": "2026-11-02T02:51:54.000Z",
-  "updated_at": "2026-11-03T13:55:44.000Z",
+  "updated_at": "2026-11-07T19:40:26.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 48177086,
-  "storage_human": "48 MB",
+  "storage_bytes": 67695284,
+  "storage_human": "68 MB",
   "base_model": null,
   "formats": [
     "onnx"

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Moser9815/comfy-images-models",
+  "slug": "moser9815-comfy-images-models",
+  "author": "Moser9815",
+  "url": "https://huggingface.co/Moser9815/comfy-images-models",
+  "created_at": "2026-11-08T17:37:33.000Z",
+  "updated_at": "2026-11-08T19:05:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23202384642,
+  "storage_human": "23.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ComfyUI Models: Run AI Image, Video & Audio Models - Comfy",
+      "url": "https://comfy.org/hub/models/",
+      "snippet": "Browse 148 AI models in ComfyUI, including FLUX, Seedance, Kling, Veo, and Nano Banana. Try any model in your browser, then call it from your code."
+    },
+    {
+      "title": "ComfyUI Complete Guide 2026: Nodes, Workflows and Tips – think4ai",
+      "url": "https://think4ai.com/comfyui-complete-guide-2026/",
+      "snippet": "ComfyUI complete guide 2026 — install, core nodes, build your first workflow, set up FLUX and ControlNet. The most powerful Stable Diffusion interface explained."
+    }
+  ]
+}

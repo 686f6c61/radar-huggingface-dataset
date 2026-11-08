@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-GGUF",
+  "slug": "mradermacher-nvidia-nemotron-3-5-transcribe-30b-a4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-GGUF",
+  "created_at": "2026-11-08T17:29:08.000Z",
+  "updated_at": "2026-11-08T17:35:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 733603368,
+  "parameters_human": "733.6M",
+  "storage_bytes": 2250767840,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA Nemotron 3.5 Transcribe: Intelligent Transcription with a Speech ...",
+      "url": "https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Transcribe/",
+      "snippet": "We introduce Nemotron 3.5 Transcribe, an open speech LLM for intelligent transcription: a single model that transcribes 40 languages verbatim or in written form, with context, speaker attribution, and word timestamps, selected with a natural language instruction. It is the best open-weights model on the English and multilingual Open ASR Leaderboards."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-GGUF",
+      "snippet": "Automatic Speech Recognition model with 33B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

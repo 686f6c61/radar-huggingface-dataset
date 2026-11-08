@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mremila/archive-20261103-z7b-wmdp-bio-unlearn-fft-rmu",
+  "slug": "mremila-archive-20261103-z7b-wmdp-bio-unlearn-fft-rmu",
+  "author": "mremila",
+  "url": "https://huggingface.co/mremila/archive-20261103-z7b-wmdp-bio-unlearn-fft-rmu",
+  "created_at": "2026-11-08T14:39:23.000Z",
+  "updated_at": "2026-11-08T14:42:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "generated_from_trainer",
+    "conversational",
+    "dataset:cais/wmdp-bio-forget-corpus",
+    "dataset:Salesforce/wikitext",
+    "base_model:HuggingFaceH4/zephyr-7b-beta",
+    "base_model:finetune:HuggingFaceH4/zephyr-7b-beta",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 15008318632,
+  "storage_human": "15.0 GB",
+  "base_model": "HuggingFaceH4/zephyr-7b-beta",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mremila/z7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16 · Hugging Face",
+      "url": "https://huggingface.co/mremila/z7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16",
+      "snippet": "Instructions to use mremila/z7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Z7b Wmdp Bio 5pp Unlearn Fft Me Tar K16 by mremila",
+      "url": "https://llm-explorer.com/model/mremila%2Fz7b-wmdp-bio-5pp-unlearn-fft-me-tar-k16,7ojI2cao4ckc135DMfvCgi",
+      "snippet": "Z7b Wmdp Bio 5pp Unlearn Fft Me Tar K16 is an open-source 7b LLM by mremila. VRAM 15GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

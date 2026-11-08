@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "rsoohyun213/Qwen2.5-VL-3B-Instruct-v6_s2_exp_s4_exp2_s5_exp1_only_blocks_ver3_cs_gpt-5-rank8-dr0.05-lr1e-04",
+  "slug": "rsoohyun213-qwen2-5-vl-3b-instruct-v6_s2_exp_s4_exp2_s5_exp1_only_blocks_ver3_cs_gpt-5-rank8-dr0-05-lr1e-04",
+  "author": "rsoohyun213",
+  "url": "https://huggingface.co/rsoohyun213/Qwen2.5-VL-3B-Instruct-v6_s2_exp_s4_exp2_s5_exp1_only_blocks_ver3_cs_gpt-5-rank8-dr0.05-lr1e-04",
+  "created_at": "2026-11-08T12:25:55.000Z",
+  "updated_at": "2026-11-08T12:27:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "unsloth",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 7520760108,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rsoohyun213/Qwen2.5-VL-3B-Instruct-v6_s2_exp_s4_exp2_s5_exp1_only ...",
+      "url": "https://huggingface.co/rsoohyun213/Qwen2.5-VL-3B-Instruct-v6_s2_exp_s4_exp2_s5_exp1_only_blocks_ver4-full_SFT",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rsoohyun213/Qwen2.5-VL-3B-Instruct-v6_s2_exp_s5_exp1_only_blocks_ver3 ...",
+      "url": "https://huggingface.co/rsoohyun213/Qwen2.5-VL-3B-Instruct-v6_s2_exp_s5_exp1_only_blocks_ver3-full_SFT",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

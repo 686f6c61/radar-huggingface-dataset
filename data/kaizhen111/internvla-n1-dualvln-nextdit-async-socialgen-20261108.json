@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Kaizhen111/InternVLA-N1-DualVLN-NextDiT-Async-SocialGen-20261108",
+  "slug": "kaizhen111-internvla-n1-dualvln-nextdit-async-socialgen-20261108",
+  "author": "Kaizhen111",
+  "url": "https://huggingface.co/Kaizhen111/InternVLA-N1-DualVLN-NextDiT-Async-SocialGen-20261108",
+  "created_at": "2026-11-08T16:15:14.000Z",
+  "updated_at": "2026-11-08T16:42:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "internvla_n1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8383538891,
+  "parameters_human": "8.38B",
+  "storage_bytes": 16767232438,
+  "storage_human": "16.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "InternRobotics/InternVLA-N1-DualVLN · Hugging Face",
+      "url": "https://huggingface.co/InternRobotics/InternVLA-N1-DualVLN",
+      "snippet": "Model Description InternVLA-N1 is a state-of-the-art navigation foundation model built on a multi-system design. Within this framework, it introduces a dual-system approach that joint trains the System 2 for high-level reasoning and System 1 for low-level action and control. This asynchronous architecture enables smooth, efficient, and robust instruction-following navigation in both simulated ..."
+    },
+    {
+      "title": "InternVLA-N1: An Open Dual-System Vision-Language Navigation Foundation ...",
+      "url": "https://internrobotics.github.io/internvla-n1.github.io/",
+      "snippet": "InternVLA-N1 adopts a compositional architecture featuring a dual-system design that synergistically combines high-level instruction interpretation with low-level action execution. Specifically, our system integrates: System 2: A vision-language model (VLM)-based planning module that interprets navigation instructions to predict mid-term waypoint goals through image-grounded reasoning. By ..."
+    }
+  ]
+}

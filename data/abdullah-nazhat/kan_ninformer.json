@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Abdullah-Nazhat/KAN_NiNformer",
+  "slug": "abdullah-nazhat-kan_ninformer",
+  "author": "Abdullah-Nazhat",
+  "url": "https://huggingface.co/Abdullah-Nazhat/KAN_NiNformer",
+  "created_at": "2025-11-27T20:25:50.000Z",
+  "updated_at": "2026-11-08T20:01:09.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Abdullah-88/KAN_NiNformer",
+      "url": "https://github.com/Abdullah-88/KAN_NiNformer",
+      "snippet": "Contribute to Abdullah-88/KAN_NiNformer development by creating an account on GitHub."
+    },
+    {
+      "title": "Abdullah-Nazhat/NiNformer · Hugging Face",
+      "url": "https://huggingface.co/Abdullah-Nazhat/NiNformer",
+      "snippet": "Abdullah-Nazhat / NiNformer like 0 arxiv:2403.02411 License:bsd-3-clause Model card FilesFiles and versions Community Edit model card NiNformer Abstract"
+    }
+  ]
+}

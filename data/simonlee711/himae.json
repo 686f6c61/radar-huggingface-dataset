@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "Simonlee711/HiMAE",
+  "slug": "simonlee711-himae",
+  "author": "Simonlee711",
+  "url": "https://huggingface.co/Simonlee711/HiMAE",
+  "created_at": "2026-11-08T20:47:07.000Z",
+  "updated_at": "2026-11-08T20:48:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "photoplethysmography",
+    "ppg",
+    "wearables",
+    "smartwatch",
+    "biosignals",
+    "time-series",
+    "self-supervised-learning",
+    "masked-autoencoder",
+    "foundation-model",
+    "on-device",
+    "health",
+    "medical",
+    "arrhythmia",
+    "hypertension",
+    "feature-extraction",
+    "arxiv:2510.25785",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "PVC detection (frozen encoder, linear probe)",
+      "dataset": "PVC detection cohort (private; 139 participants)",
+      "metric": "AUROC",
+      "value": 0.8023
+    },
+    {
+      "task": "PVC detection (fine-tuned)",
+      "dataset": "PVC detection cohort (private; 139 participants)",
+      "metric": "AUROC",
+      "value": 0.9165
+    },
+    {
+      "task": "Stage I hypertension (frozen encoder, linear probe)",
+      "dataset": "My Heart Lab Study hypertension cohort (private; 135 participants)",
+      "metric": "AUROC",
+      "value": 0.6624
+    },
+    {
+      "task": "Stage I hypertension (fine-tuned)",
+      "dataset": "My Heart Lab Study hypertension cohort (private; 135 participants)",
+      "metric": "AUROC",
+      "value": 0.8969
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - Simonlee711/HiMAE: [ICLR 2026] HiMAE: Hierarchical Masked ...",
+      "url": "https://github.com/Simonlee711/HiMAE",
+      "snippet": "Self-supervised masked autoencoding for physiological waveforms with HiMAE for PVC detection. This repository contains a PyTorch/Lightning implementation of a hierarchical 1‑D convolutional MAE (“HiMAE”), a minimal pretraining script, and a reproducible linear‑probe pipeline on 10‑second PPG segments."
+    },
+    {
+      "title": "ai-in-healthcare · GitHub Topics",
+      "url": "https://github.com/topics/ai-in-healthcare",
+      "snippet": "deep-neural-networks deep-learning model-deployment cancer-detection ai-in-healthcare ... Simonlee711 / HiMAE · Star 13 · Code · Issues · Pull requests. [ICLR ..."
+    },
+    {
+      "title": "HIMAE: HIERARCHICAL MASKED AUTOENCODERS DISCOVER ...",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/6a3a5b1ad657c46ab99958b138bcd525-Paper-Conference.pdf",
+      "snippet": "Meds: Building models and tools in a reproducible health ai ecosystem. ... code base in this https://github.com/Simonlee711/HiMAE as well as complete details of ..."
+    },
+    {
+      "title": "(PDF) Foundation Models for Physiological Signals: Opportunities ...",
+      "url": "https://www.researchgate.net/publication/394318718_Foundation_Models_for_Physiological_Signals_Opportunities_and_Challenges",
+      "snippet": "05.08.2025 ... motion artifacts compared to red or infrared light. Corresponding author(s): simonlee711 ... Ai model deployment in. healthcare: Mlops innovations ..."
+    }
+  ]
+}

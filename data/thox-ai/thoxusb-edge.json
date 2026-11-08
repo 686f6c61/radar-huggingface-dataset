@@ -5,7 +5,7 @@
   "author": "Thox-ai",
   "url": "https://huggingface.co/Thox-ai/ThoxUSB-Edge",
   "created_at": "2026-08-11T11:18:01.000Z",
-  "updated_at": "2026-11-05T04:13:30.000Z",
+  "updated_at": "2026-11-08T05:08:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1175,
+  "downloads_30d": 1221,
   "trending_score": 0,
   "parameters": 752393024,
   "parameters_human": "752.4M",

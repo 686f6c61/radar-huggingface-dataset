@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "deviprasadbrl/lyra-sft",
+  "slug": "deviprasadbrl-lyra-sft",
+  "author": "deviprasadbrl",
+  "url": "https://huggingface.co/deviprasadbrl/lyra-sft",
+  "created_at": "2026-11-08T20:50:43.000Z",
+  "updated_at": "2026-11-08T20:53:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 456503653,
+  "storage_human": "457 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deviprasadbrl (Deviprasad B R L) · GitHub",
+      "url": "https://github.com/deviprasadbrl",
+      "snippet": "Passionate about AI, ML & Cognitive Architectures. deviprasadbrl has 3 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - MelonJelly203/Lyra-dvlab-research: for studying",
+      "url": "https://github.com/MelonJelly203/Lyra-dvlab-research",
+      "snippet": "Model Lyra supports multi-modal inputs. When the data contains a speech modality, we use the latent cross-modality regularizer to assist. Data from each modality is processed through encoders and projectors before being sent into the LLM."
+    }
+  ]
+}

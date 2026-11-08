@@ -5,7 +5,7 @@
   "author": "dikiyplayerpig",
   "url": "https://huggingface.co/dikiyplayerpig/dpp-gpt-V2.2-Pro-260m",
   "created_at": "2026-11-06T18:19:33.000Z",
-  "updated_at": "2026-11-06T18:34:53.000Z",
+  "updated_at": "2026-11-07T21:20:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -41,7 +41,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 440,
+  "downloads_30d": 990,
   "trending_score": 0,
   "parameters": 242263040,
   "parameters_human": "242.3M",

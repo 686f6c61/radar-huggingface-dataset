@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "MatterWaveAI/grt-rnn-b0.7.0-20m",
+  "slug": "matterwaveai-grt-rnn-b0-7-0-20m",
+  "author": "MatterWaveAI",
+  "url": "https://huggingface.co/MatterWaveAI/grt-rnn-b0.7.0-20m",
+  "created_at": "2026-11-08T04:11:02.000Z",
+  "updated_at": "2026-11-08T13:50:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "rnn",
+    "gru",
+    "mingru",
+    "unitary-rnn",
+    "world-model",
+    "grt-rnn-b0.7.0-20m",
+    "grt-rnn",
+    "s1-grt-rnn",
+    "rotational-rnn",
+    "rotational-transformer",
+    "matterwave",
+    "text-generation",
+    "base_model:MatterWaveAI/grt-20m",
+    "base_model:finetune:MatterWaveAI/grt-20m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "MatterWaveAI/grt-20m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MatterWaveAI/helmholtz-rnn-b0.7.0-20m · Hugging Face",
+      "url": "https://huggingface.co/MatterWaveAI/helmholtz-rnn-b0.7.0-20m",
+      "snippet": "Text Generation model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "MatterWaveAI/helmholtz-s1-rnn-b0.7.0-20m · Hugging Face",
+      "url": "https://huggingface.co/MatterWaveAI/helmholtz-s1-rnn-b0.7.0-20m",
+      "snippet": "Text Classification model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

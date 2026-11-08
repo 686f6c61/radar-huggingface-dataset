@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mydubber-org/m2m100-418M-ct2-int8",
+  "slug": "mydubber-org-m2m100-418m-ct2-int8",
+  "author": "mydubber-org",
+  "url": "https://huggingface.co/mydubber-org/m2m100-418M-ct2-int8",
+  "created_at": "2026-11-08T16:58:05.000Z",
+  "updated_at": "2026-11-08T16:58:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "ctranslate2",
+  "languages": [],
+  "tags": [
+    "ctranslate2",
+    "m2m100",
+    "int8",
+    "translation",
+    "base_model:facebook/m2m100_418M",
+    "base_model:finetune:facebook/m2m100_418M",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 493091145,
+  "storage_human": "493 MB",
+  "base_model": "facebook/m2m100_418M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jncraton/m2m100_418M-ct2-int8 · Hugging Face",
+      "url": "https://huggingface.co/jncraton/m2m100_418M-ct2-int8",
+      "snippet": "M2M100 418M M2M100 is a multilingual encoder-decoder (seq-to-seq) model trained for Many-to-Many multilingual translation. It was introduced in this paper and first released in this repository. The model that can directly translate between the 9,900 directions of 100 languages."
+    },
+    {
+      "title": "JustFrederik/m2m_100_418m_ct2_int8 · Hugging Face",
+      "url": "https://huggingface.co/JustFrederik/m2m_100_418m_ct2_int8",
+      "snippet": "ct2-fairseq-converter --data_dir . --model_path 418M_last_checkpoint.pt --fixed_dictionary model_dict.128k.txt --quantization int8 --output_dir converted/m2m_100_418m_ct2_int8 External language dictionary is not provided; use lang-pairs to infer the set of supported languages. The language ordering ..."
+    }
+  ]
+}

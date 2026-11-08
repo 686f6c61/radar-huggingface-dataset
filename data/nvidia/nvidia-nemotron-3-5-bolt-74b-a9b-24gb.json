@@ -5,7 +5,7 @@
   "author": "nvidia",
   "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB",
   "created_at": "2026-10-07T17:50:42.000Z",
-  "updated_at": "2026-10-20T20:02:05.000Z",
+  "updated_at": "2026-11-07T10:54:51.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -49,7 +49,7 @@
     "region:us"
   ],
   "likes": 172,
-  "downloads_30d": 15801,
+  "downloads_30d": 16413,
   "trending_score": 12,
   "parameters": 24558610440,
   "parameters_human": "24.56B",

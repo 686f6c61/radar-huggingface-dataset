@@ -5,7 +5,7 @@
   "author": "anandkaman",
   "url": "https://huggingface.co/anandkaman/gemma3_12b_deedexp_te",
   "created_at": "2026-11-06T09:31:41.000Z",
-  "updated_at": "2026-11-06T09:31:58.000Z",
+  "updated_at": "2026-11-07T06:34:44.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

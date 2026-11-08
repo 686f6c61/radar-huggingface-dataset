@@ -5,7 +5,7 @@
   "author": "demetri007",
   "url": "https://huggingface.co/demetri007/DavidAU-Qwen3.8-27B-Ultimate-Heretic-Uncensored-8Bit-g32-BF16-MTP-FP16-MTPLX",
   "created_at": "2026-11-07T07:00:28.000Z",
-  "updated_at": "2026-11-07T07:24:49.000Z",
+  "updated_at": "2026-11-07T07:36:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,7 +13,6 @@
   "languages": [],
   "tags": [
     "safetensors",
-    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Osam-2025/quantosimo-curriculum-embeddings-v1",
+  "slug": "osam-2025-quantosimo-curriculum-embeddings-v1",
+  "author": "Osam-2025",
+  "url": "https://huggingface.co/Osam-2025/quantosimo-curriculum-embeddings-v1",
+  "created_at": "2026-07-15T17:55:46.000Z",
+  "updated_at": "2026-11-08T18:03:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:1077",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 79,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90864192,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Triplet",
+      "dataset": "curriculum eval",
+      "metric": "Cosine Accuracy",
+      "value": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Osam-2025/quantosimo-curriculum-embeddings-v1 · Hugging Face",
+      "url": "https://huggingface.co/Osam-2025/quantosimo-curriculum-embeddings-v1",
+      "snippet": "A fine-tuned sentence-transformer embedding model for UK curriculum content retrieval. Semantic retrieval of UK curriculum content for QuantOsimo (quantosimo.com) — an AI-powered Maths and Science tutoring platform for UK students KS2 to A-Level. Generated from official AQA, Edexcel, and OCR ..."
+    },
+    {
+      "title": "Osam-2025 (Samuel Osagiede) - Hugging Face",
+      "url": "https://huggingface.co/Osam-2025/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 months ago ... published a model about 2 months ago"
+    }
+  ]
+}

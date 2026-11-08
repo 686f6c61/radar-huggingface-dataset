@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "yan2026/drex-max-v1-GGUF",
+  "slug": "yan2026-drex-max-v1-gguf",
+  "author": "yan2026",
+  "url": "https://huggingface.co/yan2026/drex-max-v1-GGUF",
+  "created_at": "2026-11-08T12:56:33.000Z",
+  "updated_at": "2026-11-08T12:58:24.000Z",
+  "license": "nace-ai-open-rail-m",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "decision-model",
+    "system-one",
+    "llama.cpp",
+    "zero-shot-classification",
+    "base_model:nace-ai/drex-max-v1",
+    "base_model:finetune:nace-ai/drex-max-v1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nace-ai/drex-max-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "drex-decision-models/models/drex-max-v1 at main · nace-ai ... - GitHub",
+      "url": "https://github.com/nace-ai/drex-decision-models/tree/main/models/drex-max-v1",
+      "snippet": "Nothing is generated. Drex Max is a dense 27B model with a 255-way readout head, and is released under the Nace.AI Open RAIL-M license. Weights · Q8_0 GGUF · affine Q4 · Drex v2.0 · Drex v1.5 It runs with Python on an NVIDIA GPU. On Apple silicon its text backbone runs on llama.cpp, Ollama, Kapitsa and MLX, and on the CPU with llama.cpp and ..."
+    },
+    {
+      "title": "nace-ai/drex-max-v1 · Hugging Face",
+      "url": "https://huggingface.co/nace-ai/drex-max-v1",
+      "snippet": "Nothing is generated. Drex Max is a dense 27B-parameter model with a 255-way readout head, and is released under the Nace.AI Open RAIL-M license. Code and docs · Q8_0 GGUF · affine Q4 · llama.cpp fork (branch drex-max-v1) · Ollama fork (branch drex-max-v1) · Drex v2.0 · Drex v1.5 It runs with Python on an NVIDIA GPU."
+    }
+  ]
+}

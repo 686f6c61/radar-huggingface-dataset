@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "nishtahir/ice40GPT",
+  "slug": "nishtahir-ice40gpt",
+  "author": "nishtahir",
+  "url": "https://huggingface.co/nishtahir/ice40GPT",
+  "created_at": "2026-11-08T17:08:03.000Z",
+  "updated_at": "2026-11-08T17:08:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "@nishtahir.com on Bluesky - bsky.app",
+      "url": "https://bsky.app/profile/nishtahir.com/post/3mzkduu5ag22z",
+      "snippet": "I decided to move back to the smaller iCE40UP5k. I wanted to try pushing the platform a bit more. I increased the size of the model from 200k to 1M params. This means it doesn't all fit in RAM anymore so I went MoE with expert streaming."
+    },
+    {
+      "title": "nishtahir (Nish Tahir) · GitHub",
+      "url": "https://github.com/nishtahir",
+      "snippet": "A graph representing nishtahir's contributions from October 26, 2025 to October 29, 2026. The contributions are 81% commits, 7% pull requests, 7% code review, 5% issues."
+    }
+  ]
+}

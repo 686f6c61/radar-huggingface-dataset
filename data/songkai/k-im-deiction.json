@@ -5,7 +5,7 @@
   "author": "Songkai",
   "url": "https://huggingface.co/Songkai/K-IM-Deiction",
   "created_at": "2026-11-05T07:29:20.000Z",
-  "updated_at": "2026-11-06T18:03:50.000Z",
+  "updated_at": "2026-11-07T07:12:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 68,
+  "downloads_30d": 155,
   "trending_score": 0,
   "parameters": 852985920,
   "parameters_human": "853.0M",
-  "storage_bytes": 3629628304,
-  "storage_human": "3.6 GB",
+  "storage_bytes": 5134570119,
+  "storage_human": "5.1 GB",
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"

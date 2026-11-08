@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "CappyAdams/Nintendo-RVC-Model-Dump",
+  "slug": "cappyadams-nintendo-rvc-model-dump",
+  "author": "CappyAdams",
+  "url": "https://huggingface.co/CappyAdams/Nintendo-RVC-Model-Dump",
+  "created_at": "2026-11-08T15:16:35.000Z",
+  "updated_at": "2026-11-08T15:28:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "rvc",
+    "nintendo",
+    "console",
+    "wii-u",
+    "voice-to-voice",
+    "audio-to-audio",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55604702,
+  "storage_human": "56 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CappyAdams/RVC-SML_Model-Dump · Hugging Face",
+      "url": "https://huggingface.co/CappyAdams/RVC-SML_Model-Dump",
+      "snippet": "READ THIS These models were trained for the purpose of doing AI covers, voices for content creation and just having fun. Do not use these models for illegal/reputation ruining activities. If your voice has been used in the model (s) and you wish to have it taken down, please contact me in the community section of this model card!"
+    },
+    {
+      "title": "CappyAdams/lolcow-rvc-model-dump · Hugging Face",
+      "url": "https://huggingface.co/CappyAdams/lolcow-rvc-model-dump",
+      "snippet": "READ THIS 2 These models were trained for the purpose of doing AI covers, voices for content creation and just having fun. Do not use these models for illegal/reputation ruining activities. If your voice has been used in the model (s) and you wish to have it taken down, please contact me in the community section of this model card!"
+    }
+  ]
+}

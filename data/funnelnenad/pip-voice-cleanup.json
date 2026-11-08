@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "funnelnenad/pip-voice-cleanup",
+  "slug": "funnelnenad-pip-voice-cleanup",
+  "author": "funnelnenad",
+  "url": "https://huggingface.co/funnelnenad/pip-voice-cleanup",
+  "created_at": "2026-11-08T12:50:36.000Z",
+  "updated_at": "2026-11-08T12:56:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "lora",
+    "speech-to-text-cleanup",
+    "dictation",
+    "text-generation",
+    "en",
+    "de",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1284312376,
+  "storage_human": "1.3 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cleanvoice AI Review, Pricing, Features for Podcast Audio",
+      "url": "https://dailyaitools.io/ai-tools/audio/voice-and-audio-editing/cleanvoice-ai/",
+      "snippet": "Cleanvoice AI provides clear value for podcasters and creators who need automated audio cleanup without manual editing. The pricing is justified for users producing regular content where editing time impacts output speed. It suits podcasters, video creators, and teams handling large audio volumes. It is less suitable for users needing detailed multitrack editing or full production control."
+    },
+    {
+      "title": "Cleanvoice AI in 2026: Pricing, Plans and Alternatives",
+      "url": "https://www.thegeeksclub.com/platforms/cleanvoice-ai/",
+      "snippet": "Cleanvoice AI processes audio and video recordings to remove unwanted sounds, improve clarity, and produce transcripts and summaries. Its cleanup tools target filler words, silence, mouth sounds, breaths, background noise, echo, and reverb. Multitrack processing can remove filler words and dead air from every speaker track in one pass while keeping tracks synchronized. Users can export edit ..."
+    }
+  ]
+}

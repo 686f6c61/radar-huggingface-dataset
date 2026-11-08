@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "leobo09263013/focal",
+  "slug": "leobo09263013-focal",
+  "author": "leobo09263013",
+  "url": "https://huggingface.co/leobo09263013/focal",
+  "created_at": "2026-11-08T12:08:03.000Z",
+  "updated_at": "2026-11-08T12:12:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "llama-factory",
+    "focal-loss",
+    "full-finetuning",
+    "conversational",
+    "custom_code",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 770288,
+  "parameters_human": "770288",
+  "storage_bytes": 17545762329,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leobo09263013 (Leo) - Hugging Face",
+      "url": "https://huggingface.co/leobo09263013",
+      "snippet": "User profile of Leo on Hugging Face"
+    },
+    {
+      "title": "leobo09263013/AURA-qwen-3-5-9b-grounding-wofuturegrounding-0709 ...",
+      "url": "https://huggingface.co/leobo09263013/AURA-qwen-3-5-9b-grounding-wofuturegrounding-0709",
+      "snippet": "/ AURA-qwen-3-5-9b-grounding-wofuturegrounding-0709 like 0 Safetensors qwen3_5 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 23 Safetensors Model size 9B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask ..."
+    }
+  ]
+}

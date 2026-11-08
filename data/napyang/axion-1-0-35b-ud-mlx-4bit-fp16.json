@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "NapYang/Axion-1.0-35B-UD-MLX-4bit-fp16",
+  "slug": "napyang-axion-1-0-35b-ud-mlx-4bit-fp16",
+  "author": "NapYang",
+  "url": "https://huggingface.co/NapYang/Axion-1.0-35B-UD-MLX-4bit-fp16",
+  "created_at": "2026-11-08T14:04:12.000Z",
+  "updated_at": "2026-11-08T14:35:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "unsloth-dynamic",
+    "quantized",
+    "qwen3_5",
+    "moe",
+    "mtp",
+    "agent",
+    "4-bit",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Axion1-0/Axion-1.0-35B",
+    "base_model:quantized:Axion1-0/Axion-1.0-35B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 22158129414,
+  "storage_human": "22.2 GB",
+  "base_model": "Axion1-0/Axion-1.0-35B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Axion1-0/Axion-1.0-35B · Hugging Face",
+      "url": "https://huggingface.co/Axion1-0/Axion-1.0-35B",
+      "snippet": "This repository provides a reproduction checkpoint of Axion 1.0-35B, following the recipe described in Axion 1.0: Open Agent Foundation Models, Simplified. The model is designed for scientific reasoning, information seeking, and tool-augmented problem solving."
+    },
+    {
+      "title": "Axion 1.0: Open Agent Foundation Models, Simplified",
+      "url": "https://arxiv.org/abs/2611.03233",
+      "snippet": "We introduce Axion 1.0, a fully open agent foundation model that combines strong and broad agentic capabilities with a remarkably simple training recipe. Axion 1.0 is trained in only three stages: two lightweight supervised fine-tuning stages followed by reinforcement learning, without dedicated mid-training, direct preference optimization (DPO), or on-policy distillation (OPD). The first SFT ..."
+    }
+  ]
+}

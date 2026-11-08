@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "serkanpeker/Turkish-Gemma-9b-T1-GGUF",
+  "slug": "serkanpeker-turkish-gemma-9b-t1-gguf",
+  "author": "serkanpeker",
+  "url": "https://huggingface.co/serkanpeker/Turkish-Gemma-9b-T1-GGUF",
+  "created_at": "2026-11-08T11:33:22.000Z",
+  "updated_at": "2026-11-08T12:59:04.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "tr",
+    "tur",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "turkish",
+    "imatrix",
+    "text-generation",
+    "tr",
+    "tur",
+    "en",
+    "dataset:wikimedia/wikipedia",
+    "dataset:openlanguagedata/flores_plus",
+    "base_model:ytu-ce-cosmos/Turkish-Gemma-9b-T1",
+    "base_model:quantized:ytu-ce-cosmos/Turkish-Gemma-9b-T1",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 39514603936,
+  "storage_human": "39.5 GB",
+  "base_model": "ytu-ce-cosmos/Turkish-Gemma-9b-T1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "titantv090/Turkish-Gemma-9b-T1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/titantv090/Turkish-Gemma-9b-T1-GGUF",
+      "snippet": "The model is designed to perform better at mathematical problems, logical reasoning, step-by-step inference, and planning tasks, while still following instructions to produce clear and concise final answers."
+    },
+    {
+      "title": "Turkish Gemma 9b T1 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/turkish-gemma-9b-t1.html",
+      "snippet": "Download Turkish Gemma 9b T1 GGUF model. 18.9 GB, 339 downloads, 18 likes."
+    }
+  ]
+}

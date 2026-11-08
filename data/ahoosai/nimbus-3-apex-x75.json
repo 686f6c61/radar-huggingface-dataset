@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "AhoosAI/nimbus-3-apex-x75",
+  "slug": "ahoosai-nimbus-3-apex-x75",
+  "author": "AhoosAI",
+  "url": "https://huggingface.co/AhoosAI/nimbus-3-apex-x75",
+  "created_at": "2026-11-08T19:42:23.000Z",
+  "updated_at": "2026-11-08T19:42:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "fa"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "qwen3",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "text-generation",
+    "en",
+    "fa",
+    "base_model:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 256901120,
+  "parameters_human": "256.9M",
+  "storage_bytes": 1541520960,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AhoosAI — a team of models, not one",
+      "url": "https://ahoos-ai.site/",
+      "snippet": "AhoosAI builds Nimbus — a team of models where a manager routes your request to a specialist."
+    },
+    {
+      "title": "AhoosAI (Ahoos AI) - Hugging Face",
+      "url": "https://huggingface.co/AhoosAI",
+      "snippet": "User profile of Ahoos AI on Hugging Face"
+    }
+  ]
+}

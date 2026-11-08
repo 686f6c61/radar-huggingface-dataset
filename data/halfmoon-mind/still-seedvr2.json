@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "halfmoon-mind/still-seedvr2",
+  "slug": "halfmoon-mind-still-seedvr2",
+  "author": "halfmoon-mind",
+  "url": "https://huggingface.co/halfmoon-mind/still-seedvr2",
+  "created_at": "2026-11-08T17:37:07.000Z",
+  "updated_at": "2026-11-08T17:40:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "core-ml",
+    "super-resolution",
+    "image-restoration",
+    "ios",
+    "research",
+    "image-to-image",
+    "arxiv:2506.05301",
+    "base_model:ByteDance-Seed/SeedVR2-3B",
+    "base_model:quantized:ByteDance-Seed/SeedVR2-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2382508885,
+  "storage_human": "2.4 GB",
+  "base_model": "ByteDance-Seed/SeedVR2-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zsxkib/seedvr2 | Run with an API on Replicate",
+      "url": "https://replicate.com/zsxkib/seedvr2",
+      "snippet": "Run zsxkib/seedvr2 using Replicate’s API. Check out the model's schema for an overview of inputs and outputs."
+    }
+  ]
+}

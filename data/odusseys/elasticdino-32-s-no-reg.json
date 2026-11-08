@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "odusseys/elasticdino-32-S-no-reg",
+  "slug": "odusseys-elasticdino-32-s-no-reg",
+  "author": "odusseys",
+  "url": "https://huggingface.co/odusseys/elasticdino-32-S-no-reg",
+  "created_at": "2026-11-08T15:15:20.000Z",
+  "updated_at": "2026-11-08T15:43:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 109222403,
+  "storage_human": "109 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elasticdino-32-S-no-reg — AI Compliance Status Across 52 Jurisdictions ...",
+      "url": "https://nerq.ai/agent/ae023014-a215-46cc-ba1c-c30b39d7e24f",
+      "snippet": "elasticdino-32-S-no-reg is a model sourced from huggingface_full, with a Nerq Trust Score of D (50/100) and a compliance score of 100/100 across 52 jurisdictions."
+    },
+    {
+      "title": "GitHub - odusseys/ElasticDino",
+      "url": "https://github.com/odusseys/ElasticDino",
+      "snippet": "Contribute to odusseys/ElasticDino development by creating an account on GitHub."
+    }
+  ]
+}

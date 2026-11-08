@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "hfsteady/llama-cpp-DFlash2-Ada-sm89-2026-11-08",
+  "slug": "hfsteady-llama-cpp-dflash2-ada-sm89-2026-11-08",
+  "author": "hfsteady",
+  "url": "https://huggingface.co/hfsteady/llama-cpp-DFlash2-Ada-sm89-2026-11-08",
+  "created_at": "2026-11-08T16:50:27.000Z",
+  "updated_at": "2026-11-08T16:50:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llama-cpp",
+    "cuda",
+    "ada",
+    "sm89",
+    "dflash2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149949595,
+  "storage_human": "150 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llama.cpp · Hugging Face",
+      "url": "https://huggingface.co/docs/inference-endpoints/engines/llama_cpp",
+      "snippet": "llama.cpp is a high-performance inference engine written in C/C++, tailored for running Llama and compatible models in the GGUF format. Create a new endpoint and select a repository containing a GGUF model. The llama.cpp container will be automatically selected. Choose the desired GGUF file, noting ..."
+    },
+    {
+      "title": "llama.cpp Merges DFlash 2 for Up to 2x Faster Decoding",
+      "url": "https://www.llms.blog/posts/llama-cpp-merges-dflash-2-support-for-up-to-2x-faster-speculative-decoding-across-long-contexts",
+      "snippet": "llama.cpp merged DFlash 2 speculative decoding in PR #27342. How the selector and convolution work, measured speedups, and how to run it."
+    }
+  ]
+}

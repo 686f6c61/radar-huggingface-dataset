@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "TurkeyProje/GozlerAI-1B-Merged-GGUF",
+  "slug": "turkeyproje-gozlerai-1b-merged-gguf",
+  "author": "TurkeyProje",
+  "url": "https://huggingface.co/TurkeyProje/GozlerAI-1B-Merged-GGUF",
+  "created_at": "2026-11-08T14:16:10.000Z",
+  "updated_at": "2026-11-08T14:16:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "gguf",
+    "Turkish",
+    "llama",
+    "text-generation",
+    "quantized",
+    "tr",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 807694144,
+  "storage_human": "808 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

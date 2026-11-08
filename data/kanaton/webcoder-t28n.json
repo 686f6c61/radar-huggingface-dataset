@@ -5,7 +5,7 @@
   "author": "kanaton",
   "url": "https://huggingface.co/kanaton/webcoder-t28n",
   "created_at": "2026-10-17T21:15:06.000Z",
-  "updated_at": "2026-10-19T09:32:26.000Z",
+  "updated_at": "2026-11-08T14:28:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

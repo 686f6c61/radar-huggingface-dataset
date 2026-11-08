@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "axiovex/qwen2.5-1.5b-injection-resistance-lora",
+  "slug": "axiovex-qwen2-5-1-5b-injection-resistance-lora",
+  "author": "axiovex",
+  "url": "https://huggingface.co/axiovex/qwen2.5-1.5b-injection-resistance-lora",
+  "created_at": "2026-10-30T06:45:36.000Z",
+  "updated_at": "2026-11-08T18:44:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "prompt-injection",
+    "security",
+    "lora",
+    "adapter",
+    "instruction-hierarchy",
+    "text-generation",
+    "en",
+    "dataset:axiovex/injection-defense-battery",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73911112,
+  "storage_human": "74 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "Text Generation model with 2B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen2.5 Models Overview",
+      "url": "https://www.emergentmind.com/topics/qwen2-5-models",
+      "snippet": "Qwen2.5 models are a series of open-sourced LLMs built on decoder-only Transformers featuring innovations like GQA, RoPE, and SwiGLU activations. They leverage massive, domain-balanced pre-training datasets combined with extensive supervised fine-tuning and reinforcement learning for improved reasoning and multi-modal tasks. The models scale from 0.5B to 72B parameters, offer quantized and MoE ..."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "redmars-01/cm-annotator-en",
+  "slug": "redmars-01-cm-annotator-en",
+  "author": "redmars-01",
+  "url": "https://huggingface.co/redmars-01/cm-annotator-en",
+  "created_at": "2026-11-08T12:26:19.000Z",
+  "updated_at": "2026-11-08T13:23:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "conceptual-metaphor",
+    "annotation",
+    "lakoff",
+    "parallel-corpus",
+    "lora",
+    "qwen2.5",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333103,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "redmars-01 (Da Hui) - Hugging Face",
+      "url": "https://huggingface.co/redmars-01",
+      "snippet": "User profile of Da Hui on Hugging Face"
+    }
+  ]
+}

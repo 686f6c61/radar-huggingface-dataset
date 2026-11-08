@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jmc0/Rein-NPC-4B",
+  "slug": "jmc0-rein-npc-4b",
+  "author": "jmc0",
+  "url": "https://huggingface.co/jmc0/Rein-NPC-4B",
+  "created_at": "2026-11-08T19:02:56.000Z",
+  "updated_at": "2026-11-08T19:15:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "pt",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "rein",
+    "rein-npc",
+    "typed-decision",
+    "decision-model",
+    "tool-calling",
+    "roleplay",
+    "game-npc",
+    "soft-prompt",
+    "qwen3.5",
+    "llama.cpp",
+    "text-generation",
+    "conversational",
+    "en",
+    "pt",
+    "multilingual",
+    "dataset:jmc0/rein-decisions",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5295564288,
+  "parameters_human": "5.30B",
+  "storage_bytes": 10611227953,
+  "storage_human": "10.6 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jmc0/rein-r1-4b · Hugging Face",
+      "url": "https://huggingface.co/jmc0/rein-r1-4b",
+      "snippet": "jmc0 / rein-r1-4b Like 1 Other Transformers Safetensors jmc0/rein-decisions clinc/clinc_oos AmazonScience/massive English Portuguese multilingual qwen3_5_text feature-extraction rein typed-decision decision-model guardrails tool-calling roleplay game-npc custom_code License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy ..."
+    },
+    {
+      "title": "jmc0/rein-r1-0.8b · Hugging Face",
+      "url": "https://huggingface.co/jmc0/rein-r1-0.8b",
+      "snippet": "An NPC tavern keeper must keep a secret, never discuss real-world politics, and say \"drink responsibly\" when he serves a drink. Qwen3.5-0.8B instruct writes the replies; Rein enforces the rules."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "qhoenix/zils-lite-decision-w70_s3b",
+  "slug": "qhoenix-zils-lite-decision-w70_s3b",
+  "author": "qhoenix",
+  "url": "https://huggingface.co/qhoenix/zils-lite-decision-w70_s3b",
+  "created_at": "2026-11-08T12:23:03.000Z",
+  "updated_at": "2026-11-08T12:23:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "feature-extraction",
+    "decision-model",
+    "zils",
+    "d3-lite",
+    "custom_code",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1719880230,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qhoenix/zils-lite-decision-w70_13 · Hugging Face",
+      "url": "https://huggingface.co/qhoenix/zils-lite-decision-w70_13",
+      "snippet": "A weighted average of three of our own full fine-tunes: qhoenix/zils-lite-decision-r13 (70%), r12 and r15 (the rest, equally). Each of them started from a weight average of qhoenix/zils-lite-decision-v9 (the current d3-lite soup, 50%) and the four Apache-2.0 house bodies vllm-sr/d3-lite, internlm/Intern-Decision-0.8B, Maincode/Matilda-Decision-v1-Edge and zils-ai/jiwo-0.8b-full (12.5% each ..."
+    },
+    {
+      "title": "qhoenix/zils-lite-decision · Hugging Face",
+      "url": "https://huggingface.co/qhoenix/zils-lite-decision",
+      "snippet": "Instructions to use qhoenix/zils-lite-decision with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use qhoenix/zils-lite-decision with Transformers:"
+    },
+    {
+      "title": "zils — Teach AI to make decisions your way.",
+      "url": "https://zils.ai/",
+      "snippet": "Zils Zils Teach AI to make decisions your way. Show Zils examples with the right answers. It trains a small model your app can use to sort requests, flag problems, or score matches."
+    },
+    {
+      "title": "zils — decision model research",
+      "url": "https://zils.ai/model",
+      "snippet": "Zils’s experimental 0.8B decision model. Recorded public benchmarks, checkpoint evidence, and the current state of its training competition."
+    }
+  ]
+}

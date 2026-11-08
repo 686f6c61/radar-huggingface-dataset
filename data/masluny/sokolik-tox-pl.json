@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "masluny/sokolik-tox-pl",
+  "slug": "masluny-sokolik-tox-pl",
+  "author": "masluny",
+  "url": "https://huggingface.co/masluny/sokolik-tox-pl",
+  "created_at": "2026-11-08T13:52:27.000Z",
+  "updated_at": "2026-11-08T13:53:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-classification",
+    "polish",
+    "toxicity",
+    "moderation",
+    "pl",
+    "dataset:NASK-NLP/BAN-PL",
+    "base_model:masluny/sokolik-300m-base",
+    "base_model:finetune:masluny/sokolik-300m-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 304142336,
+  "parameters_human": "304.1M",
+  "storage_bytes": 608314720,
+  "storage_human": "608 MB",
+  "base_model": "masluny/sokolik-300m-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "factual-research/factual_research at main · masluny/factual ... - GitHub",
+      "url": "https://github.com/masluny/factual-research/tree/main/factual_research",
+      "snippet": "Research CLI for AI agents: searches the sources each field trusts (PubMed, arXiv, NASA NTRS, ISAP, SAOS...) and verifies every citation, quote, number and table cell in the draft. PRISMA flow, evi..."
+    }
+  ]
+}

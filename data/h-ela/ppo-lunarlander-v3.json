@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "H-ela/ppo-LunarLander-v3",
+  "slug": "h-ela-ppo-lunarlander-v3",
+  "author": "H-ela",
+  "url": "https://huggingface.co/H-ela/ppo-LunarLander-v3",
+  "created_at": "2026-11-08T16:32:17.000Z",
+  "updated_at": "2026-11-08T16:58:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 435807,
+  "storage_human": "435807 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hestiatech/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/Hestiatech/ppo-LunarLander-v3",
+      "snippet": "PPO Agent playing LunarLander-v3 This is a trained model of a PPO agent playing LunarLander-v3 using the stable-baselines3 library. Usage (with Stable-baselines3) TODO: Add your code"
+    },
+    {
+      "title": "elotech/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/elotech/ppo-LunarLander-v3",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library. Usage (with Stable-baselines3) TODO: Add your code"
+    }
+  ]
+}

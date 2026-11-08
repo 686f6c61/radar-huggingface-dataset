@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Hebrish/Sabich-Rolling-ONNX",
+  "slug": "hebrish-sabich-rolling-onnx",
+  "author": "Hebrish",
+  "url": "https://huggingface.co/Hebrish/Sabich-Rolling-ONNX",
+  "created_at": "2026-11-02T11:55:28.000Z",
+  "updated_at": "2026-11-08T15:07:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "nemo-conformer-tdt",
+    "doi:10.57967/hf/11370",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24488397369,
+  "storage_human": "24.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Hebrish-ASR/Server: Self-hosted Hebrish inference server: web ...",
+      "url": "https://github.com/Hebrish-ASR/Server",
+      "snippet": "Self-hosted inference for Hebrish models: a web UI and an HTTP API that transcribe audio (English with Hebrew words, romanized: makolet, arnona), lay it out in paragraphs and optionally clean it up with S1-mini, like the Hebrish desktop app. Sabich is the default model; Jachnun and Sabich-Parakeet ..."
+    },
+    {
+      "title": "Model card · Hebrish",
+      "url": "https://hebrish.app/model",
+      "snippet": "Model card Jachnun, the Hebrish code-switching model Jachnun is a fine-tune of NVIDIA Parakeet TDT 0.6B v2 for English with Hebrew words in it, named after the Yemenite pastry. It writes each Hebrew word in one romanized spelling. In the Hebrish apps the recommended pick is now its sibling Sabich (code-switching plus tech vocabulary, 2026-10-21); Jachnun stays in the model picker for anyone ..."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "NOT-OMEGA/OmegaMind",
+  "slug": "not-omega-omegamind",
+  "author": "NOT-OMEGA",
+  "url": "https://huggingface.co/NOT-OMEGA/OmegaMind",
+  "created_at": "2026-09-21T16:18:09.000Z",
+  "updated_at": "2026-11-08T18:29:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5199994426,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NOT-OMEGA/OmegaMind · Hugging Face",
+      "url": "https://huggingface.co/NOT-OMEGA/OmegaMind",
+      "snippet": "NOT-OMEGA / OmegaMind Like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "NanoMind - a Hugging Face Space by NOT-OMEGA",
+      "url": "https://huggingface.co/spaces/NOT-OMEGA/NanoMind",
+      "snippet": "This web app lets you type messages and receive replies from a GPT‑2‑based AI assistant. You can adjust settings like temperature, top‑K and maximum tokens, and view live stats such as response spe..."
+    }
+  ]
+}

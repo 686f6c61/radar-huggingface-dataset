@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "G-QCBM-Mol-Gen/GQCBM",
+  "slug": "g-qcbm-mol-gen-gqcbm",
+  "author": "G-QCBM-Mol-Gen",
+  "url": "https://huggingface.co/G-QCBM-Mol-Gen/GQCBM",
+  "created_at": "2026-08-11T14:46:19.000Z",
+  "updated_at": "2026-11-08T17:57:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 536571745,
+  "storage_human": "537 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "G-QCBM-Mol-Gen (Generative QCBM for Molecular Generation)",
+      "url": "https://huggingface.co/G-QCBM-Mol-Gen",
+      "snippet": "Org profile for Generative QCBM for Molecular Generation on Hugging Face, the AI community building the future."
+    }
+  ]
+}

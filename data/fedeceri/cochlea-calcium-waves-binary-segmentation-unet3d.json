@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "fedeceri/cochlea-calcium-waves-binary-segmentation-unet3d",
+  "slug": "fedeceri-cochlea-calcium-waves-binary-segmentation-unet3d",
+  "author": "fedeceri",
+  "url": "https://huggingface.co/fedeceri/cochlea-calcium-waves-binary-segmentation-unet3d",
+  "created_at": "2026-11-08T14:57:24.000Z",
+  "updated_at": "2026-11-08T14:58:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "monai",
+  "languages": [],
+  "tags": [
+    "monai",
+    "pytorch",
+    "microscopy",
+    "binary-segmentation",
+    "calcium-waves",
+    "cochlea",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20106536,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fedeceri (Federico) - Hugging Face",
+      "url": "https://huggingface.co/fedeceri/datasets",
+      "snippet": "Recent Activity updated a model2 days ago fedeceri/cochlea-hair-cell-synapses-binary-segmentation-unet2d published a model2 days ago fedeceri/cochlea-hair-cell-synapses-binary-segmentation-unet2d updated a model2 days ago fedeceri/cochlea-hair-cell-binary-segmentation-unet2d View all activity"
+    },
+    {
+      "title": "fedeceri/cochlea-hair-cell-synapses-binary-segmentation-unet2d ...",
+      "url": "https://huggingface.co/fedeceri/cochlea-hair-cell-synapses-binary-segmentation-unet2d",
+      "snippet": "MONAI/PyTorch implementation of a 2D U-Net for binary semantic segmentation of fluorescent cochlear inner hair cells in single-channel two-photon microscopy TIFF images. This model segments inner hair cells (IHCs) from in vivo (Paper) two-photon fluorescence images in which the fluorescent signal primarily labels afferent neurons and their synaptic terminals, rather than the hair cells ..."
+    }
+  ]
+}

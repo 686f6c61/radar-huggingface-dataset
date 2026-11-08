@@ -5,7 +5,7 @@
   "author": "digi-the-robot",
   "url": "https://huggingface.co/digi-the-robot/Tallow",
   "created_at": "2026-11-07T06:40:11.000Z",
-  "updated_at": "2026-11-07T06:40:49.000Z",
+  "updated_at": "2026-11-07T12:50:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,13 +25,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 7,
+  "downloads_30d": 499,
   "trending_score": 0,
   "parameters": 15735168,
   "parameters_human": "15.7M",
-  "storage_bytes": 64873911,
-  "storage_human": "65 MB",
+  "storage_bytes": 129795432,
+  "storage_human": "130 MB",
   "base_model": null,
   "formats": [
     "safetensors"

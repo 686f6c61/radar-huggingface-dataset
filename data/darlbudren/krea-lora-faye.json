@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Darlbudren/krea-lora-faye",
+  "slug": "darlbudren-krea-lora-faye",
+  "author": "Darlbudren",
+  "url": "https://huggingface.co/Darlbudren/krea-lora-faye",
+  "created_at": "2026-11-08T20:38:13.000Z",
+  "updated_at": "2026-11-08T20:44:11.000Z",
+  "license": "unlicense",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unlicense",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 191879376,
+  "storage_human": "192 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Faye - Final | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.com/models/2928306/faye",
+      "snippet": "Faye is trained from 100% generated images! Any likeness to person (s) living or dead is as coincidental as finding your own doppelganger out there - could happen, not intentional. Her reference images were created using Krea 2, Flux 2 Klein, and Gemini. Then she was put through a bunch of tuning passes. She is done... Final is a purely re-trained version built from generating about 2,000 ..."
+    },
+    {
+      "title": "Faye Krea 2 - LORA for Krea 2 | CivArchive - civitaiarchive.com",
+      "url": "https://civitaiarchive.com/models/2963544?modelVersionId=3357627",
+      "snippet": "Download Faye Krea 2, a LORA for Krea 2. 1 file: faye_krea2_turbo_lora_v1.safetensors (218 MB). Published Sep 25, 2026. 1 live mirror. A character LoRA of Faye, a young woman with long wavy strawberry-copper hair, fair skin, and blue eyes."
+    }
+  ]
+}

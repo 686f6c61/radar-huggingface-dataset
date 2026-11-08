@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "asahi-jp/plamo-3-translate-0.8b-int4-ov",
+  "slug": "asahi-jp-plamo-3-translate-0-8b-int4-ov",
+  "author": "asahi-jp",
+  "url": "https://huggingface.co/asahi-jp/plamo-3-translate-0.8b-int4-ov",
+  "created_at": "2026-11-08T12:45:52.000Z",
+  "updated_at": "2026-11-08T12:59:17.000Z",
+  "license": "plamo-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "plamo",
+    "plamo3",
+    "int4",
+    "custom_code",
+    "translation",
+    "base_model:pfnet/plamo-3-translate-0.8b",
+    "base_model:quantized:pfnet/plamo-3-translate-0.8b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10485760,
+  "storage_human": "10 MB",
+  "base_model": "pfnet/plamo-3-translate-0.8b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pfnet/plamo-3-translate-0.8b · Hugging Face",
+      "url": "https://huggingface.co/pfnet/plamo-3-translate-0.8b",
+      "snippet": "PLaMo 3 Translate 0.8B is a translation-specialized LLM developed by Preferred Networks (PFN) that delivers world-class translation quality. It is built on PLaMo 3 NICT, a pretrained model developed through joint research by PFN and the National Institute of Information and Communications Technology (NICT)."
+    },
+    {
+      "title": "PFN Releases Open-Weight Translation LLM PLaMo 3 Translate, Bringing ...",
+      "url": "https://www.preferred.jp/en/news/pr20261105",
+      "snippet": "A real-time demonstration of the 0.8B (smallest) PLaMo 3 Translate model performing AI translation on a smartphone in airplane mode. (Running at normal speed in a demo environment)."
+    }
+  ]
+}

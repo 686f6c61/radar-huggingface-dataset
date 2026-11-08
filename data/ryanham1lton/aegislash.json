@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Aegislash",
+  "slug": "ryanham1lton-aegislash",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Aegislash",
+  "created_at": "2026-11-08T12:28:59.000Z",
+  "updated_at": "2026-11-08T12:29:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118662618,
+  "storage_human": "119 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Character: Aegislash (Pokemon) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/7cedb4beca1a0f643ad007b1e7e33460",
+      "snippet": "Explore Character: Aegislash (Pokemon) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

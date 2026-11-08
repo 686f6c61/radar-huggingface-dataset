@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "FMendonca/qwen3-1.7b-agente-suporte-ptbr-gguf",
+  "slug": "fmendonca-qwen3-1-7b-agente-suporte-ptbr-gguf",
+  "author": "FMendonca",
+  "url": "https://huggingface.co/FMendonca/qwen3-1.7b-agente-suporte-ptbr-gguf",
+  "created_at": "2026-11-08T17:47:15.000Z",
+  "updated_at": "2026-11-08T17:49:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "agent",
+    "tool-calling",
+    "customer-support",
+    "portuguese",
+    "text-generation",
+    "pt",
+    "base_model:FMendonca/qwen3-1.7b-agente-suporte-ptbr",
+    "base_model:quantized:FMendonca/qwen3-1.7b-agente-suporte-ptbr",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1834426144,
+  "storage_human": "1.8 GB",
+  "base_model": "FMendonca/qwen3-1.7b-agente-suporte-ptbr",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - fernandomcrsilva/agente-suporte-ptbr: Um Qwen3-1.7B treinado ...",
+      "url": "https://github.com/fernandomcrsilva/agente-suporte-ptbr",
+      "snippet": "Um modelo pequeno pode virar o atendente de suporte de uma empresa? Este projeto treina o Qwen3-1.7B, com LoRA, para atender o chat da Garfo Ligeiro, um app de delivery fictício. O agente conversa com o cliente, consulta um sistema de pedidos simulado por ferramentas e resolve o caso: reembolsa, dá cupom, cancela ou passa para uma pessoa da equipe."
+    },
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "Text Generation model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

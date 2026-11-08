@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "hisplan/llama31-8b-finetuned-exp03c-dpo-from-exp02b",
+  "slug": "hisplan-llama31-8b-finetuned-exp03c-dpo-from-exp02b",
+  "author": "hisplan",
+  "url": "https://huggingface.co/hisplan/llama31-8b-finetuned-exp03c-dpo-from-exp02b",
+  "created_at": "2026-11-08T14:55:38.000Z",
+  "updated_at": "2026-11-08T15:04:58.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "alpaca",
+    "qlora",
+    "dpo",
+    "mini-llm-camp",
+    "ko",
+    "base_model:hisplan/llama31-8b-finetuned-exp02b-assertive-data",
+    "base_model:finetune:hisplan/llama31-8b-finetuned-exp02b-assertive-data",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16161712912,
+  "storage_human": "16.2 GB",
+  "base_model": "hisplan/llama31-8b-finetuned-exp02b-assertive-data",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

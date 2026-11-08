@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/limite-1b-violetto-GGUF",
+  "slug": "mradermacher-limite-1b-violetto-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/limite-1b-violetto-GGUF",
+  "created_at": "2026-11-08T17:52:01.000Z",
+  "updated_at": "2026-11-08T17:56:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mathematics",
+    "reasoning",
+    "vllm",
+    "en",
+    "base_model:paradigma-inc/limite-1b-violetto",
+    "base_model:quantized:paradigma-inc/limite-1b-violetto",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1035879372,
+  "parameters_human": "1.04B",
+  "storage_bytes": 9672607488,
+  "storage_human": "9.7 GB",
+  "base_model": "paradigma-inc/limite-1b-violetto",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "paradigma-inc/limite-1b-violetto · Hugging Face",
+      "url": "https://huggingface.co/paradigma-inc/limite-1b-violetto",
+      "snippet": "Limite 1B - Violetto is Paradigma’s first model, designed for high-throughput solutions of difficult mathematical problems. Limite is a 1-billion parameter dense autoregressive transformer, trained from scratch on a mixture of less than 300B highly curated tokens, capable of handling sequences up ..."
+    },
+    {
+      "title": "GitHub - paradigma-inc/limite-violetto: A model for high-frequency ...",
+      "url": "https://github.com/paradigma-inc/limite-violetto",
+      "snippet": "Limite 1B - Violetto is Paradigma’s first model, designed for high-throughput solutions of difficult mathematical problems. Pretrained from scratch with fewer than 300 billion curated tokens, then refined through supervised fine-tuning and reinforcement learning, Violetto focuses on solving one mathematical problem at a time."
+    }
+  ]
+}

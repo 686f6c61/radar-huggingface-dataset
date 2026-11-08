@@ -5,7 +5,7 @@
   "author": "curia007",
   "url": "https://huggingface.co/curia007/pick3_llm_model",
   "created_at": "2026-11-08T01:27:02.000Z",
-  "updated_at": "2026-11-08T01:27:06.000Z",
+  "updated_at": "2026-11-08T03:42:38.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 286,
   "trending_score": 0,
   "parameters": 159680,
   "parameters_human": "159680",

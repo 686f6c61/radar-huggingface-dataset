@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "hamzabouajila/fastvla-unitree-g1-ar",
+  "slug": "hamzabouajila-fastvla-unitree-g1-ar",
+  "author": "hamzabouajila",
+  "url": "https://huggingface.co/hamzabouajila/fastvla-unitree-g1-ar",
+  "created_at": "2026-11-08T20:44:17.000Z",
+  "updated_at": "2026-11-08T20:44:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "fastvla",
+    "unitree-g1",
+    "humanoid",
+    "flow-matching",
+    "arabic",
+    "whole-body-control",
+    "dataset:hamzabouajila/ar-unitree-g1-motions",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30852583,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FastVLA: Task-Conditioned and Temporally Adaptive Visual Token ...",
+      "url": "https://arxiv.org/abs/2610.22146",
+      "snippet": "We introduce FastVLA, a training-free, task-aware, and temporally adaptive visual token compression framework. At each step, FastVLA scores token importance via task-to-vision attention and adaptively sets the compression rate from the importance-distribution uniformity, measured by an inverse-Simpson metric with online sliding-window calibration."
+    },
+    {
+      "title": "hamzabouajila/fastvla-turbo-arabic-libero · Hugging Face",
+      "url": "https://huggingface.co/hamzabouajila/fastvla-turbo-arabic-libero",
+      "snippet": "The first Arabic Physical AI model powered by FastVLA Turbo with 16-Step Continuous Flow-Matching (112 continuous DoF) and 2x2 Spatial Token Compression ..."
+    }
+  ]
+}

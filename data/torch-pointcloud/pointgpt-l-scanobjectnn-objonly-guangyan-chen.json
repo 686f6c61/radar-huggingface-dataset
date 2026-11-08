@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/pointgpt-l.scanobjectnn-objonly.guangyan-chen",
+  "slug": "torch-pointcloud-pointgpt-l-scanobjectnn-objonly-guangyan-chen",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/pointgpt-l.scanobjectnn-objonly.guangyan-chen",
+  "created_at": "2026-08-28T18:15:25.000Z",
+  "updated_at": "2026-11-08T17:28:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "pointgpt",
+    "classification",
+    "dataset:scanobjectnn",
+    "arxiv:2305.11487",
+    "base_model:torch-pointcloud/pointgpt-l.labeled-hybrid.guangyan-chen",
+    "base_model:finetune:torch-pointcloud/pointgpt-l.labeled-hybrid.guangyan-chen",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 360365935,
+  "parameters_human": "360.4M",
+  "storage_bytes": 1441505020,
+  "storage_human": "1.4 GB",
+  "base_model": "torch-pointcloud/pointgpt-l.labeled-hybrid.guangyan-chen",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ScanObjectNN (OBJ_ONLY)",
+      "metric": "OA",
+      "value": 96.9
+    },
+    {
+      "task": null,
+      "dataset": "ScanObjectNN (OBJ_ONLY)",
+      "metric": "mAcc",
+      "value": 96.56
+    }
+  ],
+  "sources": [
+    {
+      "title": "Model card for pointgpt-l.scanobjectnn-objonly.guangyan-chen",
+      "url": "https://huggingface.co/torch-pointcloud/pointgpt-l.scanobjectnn-objonly.guangyan-chen/blob/main/README.md",
+      "snippet": "/ pointgpt-l.scanobjectnn-objonly.guangyan-chen Like 0 Follow PyTorch PointCloud 2 Safetensors PyTorch scanobjectnn torch-pointcloud point-cloud 3d pointgpt classification Eval Results (legacy) arxiv:2305.11487 License:mit Model card FilesFiles and versions xet Community Copy to bucket new main pointgpt-l.scanobjectnn-objonly.guangyan-chen ..."
+    },
+    {
+      "title": "torch-pointcloud/pointgpt-l.scanobjectnn-objonly.guangyan-chen at main",
+      "url": "https://huggingface.co/torch-pointcloud/pointgpt-l.scanobjectnn-objonly.guangyan-chen/tree/main",
+      "snippet": "scanobjectnn torch-pointcloud point-cloud 3d pointgpt classification Eval Results (legacy) arxiv:2305.11487 License:mit Model card FilesFiles and versions xet Community Copy to bucket new main pointgpt-l.scanobjectnn-objonly.guangyan-chen 1.44 GB Ctrl+K Ctrl+K 1 contributor History:3 commits arthurdjn Update model card for pointgpt-l ..."
+    }
+  ]
+}

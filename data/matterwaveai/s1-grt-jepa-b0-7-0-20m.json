@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MatterWaveAI/s1-grt-jepa-b0.7.0-20m",
+  "slug": "matterwaveai-s1-grt-jepa-b0-7-0-20m",
+  "author": "MatterWaveAI",
+  "url": "https://huggingface.co/MatterWaveAI/s1-grt-jepa-b0.7.0-20m",
+  "created_at": "2026-11-08T03:54:54.000Z",
+  "updated_at": "2026-11-08T13:50:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "jepa",
+    "world-model",
+    "s1-grt-jepa-b0.7.0-20m",
+    "s1-grt-jepa",
+    "helmholtz-1",
+    "agent-safety",
+    "model-predictive-control",
+    "tool-routing",
+    "rotational-transformer",
+    "matterwave",
+    "text-classification",
+    "base_model:MatterWaveAI/helmholtz-b0.7.0-20m",
+    "base_model:finetune:MatterWaveAI/helmholtz-b0.7.0-20m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "MatterWaveAI/helmholtz-b0.7.0-20m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MatterWaveAI/helmholtz-s1-jepa-b0.7.0-20m · Hugging Face",
+      "url": "https://huggingface.co/MatterWaveAI/helmholtz-s1-jepa-b0.7.0-20m",
+      "snippet": "Text Classification model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "S1-GRT-JEPA ( MatterWaveAI/s1-grt-jepa ) - Hugging Face",
+      "url": "https://huggingface.co/MatterWaveAI/s1-grt-jepa",
+      "snippet": "Text Classification model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

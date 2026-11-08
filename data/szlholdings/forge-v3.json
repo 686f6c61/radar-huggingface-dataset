@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/forge-v3",
+  "slug": "szlholdings-forge-v3",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/forge-v3",
+  "created_at": "2026-10-25T20:45:59.000Z",
+  "updated_at": "2026-11-08T19:36:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "szl-holdings",
+    "doctrine-v11",
+    "launch-contract-governed",
+    "research-candidate",
+    "conversational",
+    "base_model:SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3",
+    "base_model:finetune:SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 3513874525,
+  "storage_human": "3.5 GB",
+  "base_model": "SZLHOLDINGS/szl-receiptagent-qwen35-0.8b-sft-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models by SZL Holdings – Hugging Face",
+      "url": "https://huggingface.co/models?author=SZLHOLDINGS&sort=modified",
+      "snippet": "SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent Text Generation • 2B•Updated 4 days ago• 39"
+    },
+    {
+      "title": "GitHub - szl-holdings/szl-forge: SZL Forge: QLoRA kit that fine-tunes ...",
+      "url": "https://github.com/szl-holdings/szl-forge",
+      "snippet": "What SZL Forge is A QLoRA fine-tuning kit built on Unsloth. A set of model-specific curricula, schemas, qualification tools, signed evidence, and protected publication contracts. A way to produce locally controlled model derivatives on supported hardware; hardware fit, run completion, and artifact quality must be observed per run."
+    }
+  ]
+}

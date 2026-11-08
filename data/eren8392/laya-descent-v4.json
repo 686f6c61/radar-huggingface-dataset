@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "eren8392/laya-descent-v4",
+  "slug": "eren8392-laya-descent-v4",
+  "author": "eren8392",
+  "url": "https://huggingface.co/eren8392/laya-descent-v4",
+  "created_at": "2026-11-08T17:43:03.000Z",
+  "updated_at": "2026-11-08T17:43:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "laya",
+  "languages": [],
+  "tags": [
+    "laya",
+    "safetensors",
+    "system-one",
+    "decision-model",
+    "imitation-learning",
+    "benchmark-artifact",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1738992007,
+  "storage_human": "1.7 GB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "laya (English Checkpoint): ModernBERT-large, 421M, Benchmarks & Limits",
+      "url": "https://laya-ai.com/models/laya",
+      "snippet": "The default English Laya checkpoint on Hugging Face: ModernBERT-large, 421M parameters, 512-token context, measured speed and accuracy, calibration, and when not to use it."
+    },
+    {
+      "title": "Laya AI: Open-Source Decision Model | Run Locally",
+      "url": "https://laya-ai.com/",
+      "snippet": "Laya AI is an open-source System 1 decision model for typed choices, scores, and probabilities. Run it locally, compare benchmarks, models, and Laya vs Jev."
+    }
+  ]
+}

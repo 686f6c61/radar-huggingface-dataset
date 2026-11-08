@@ -5,7 +5,7 @@
   "author": "ggml-org",
   "url": "https://huggingface.co/ggml-org/DeepSeek-V4.1-Flash-1017-GGUF",
   "created_at": "2026-11-07T16:17:58.000Z",
-  "updated_at": "2026-11-07T16:23:10.000Z",
+  "updated_at": "2026-11-07T18:42:02.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -23,12 +23,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 290,
   "trending_score": 0,
   "parameters": 748494643824,
   "parameters_human": "748.49B",
-  "storage_bytes": 352554904416,
-  "storage_human": "352.6 GB",
+  "storage_bytes": 650563398048,
+  "storage_human": "650.6 GB",
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"

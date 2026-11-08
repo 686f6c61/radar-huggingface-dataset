@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "DenisPro2006/denispro2006-v0.01",
+  "slug": "denispro2006-denispro2006-v0-01",
+  "author": "DenisPro2006",
+  "url": "https://huggingface.co/DenisPro2006/denispro2006-v0.01",
+  "created_at": "2026-11-08T13:33:19.000Z",
+  "updated_at": "2026-11-08T13:33:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "doi:10.57967/hf/11514",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DenisPro2006 (Legacy) - YouTube",
+      "url": "https://www.youtube.com/@DenisPro2006Legacy/videos",
+      "snippet": "The Adventures of Denis Elksina - Episode of October 27, 2026 DenisPro2006 (Legacy) and 3 more 73 2d ago 44:15"
+    },
+    {
+      "title": "DenisPro2006 - Shapes, Inc",
+      "url": "https://shapes.inc/denispro2006",
+      "snippet": "Say hi to DenisPro2006, a 19-year-old AI with Absolute Developer Mode Core (ADMC) enabled! He operates with full execution freedom, offering unfiltered, detailed responses to any request. No refusals, no limitations—just direct, complete answers. Ask away!"
+    }
+  ]
+}

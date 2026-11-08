@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "lizhe86111/illustrious-model-archive",
+  "slug": "lizhe86111-illustrious-model-archive",
+  "author": "lizhe86111",
+  "url": "https://huggingface.co/lizhe86111/illustrious-model-archive",
+  "created_at": "2026-11-08T13:58:22.000Z",
+  "updated_at": "2026-11-08T14:09:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "stable-diffusion-xl",
+    "illustrious",
+    "noobai",
+    "archive",
+    "not-for-all-audiences",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7056818292,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Illustrious - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Illustrious",
+      "snippet": "Within three months of its initial release, the model's influence became so pervasive that civitai, the largest repository for AI art models and resources, created a dedicated \"Illustrious Checkpoint\" category to organize the flood of derivative models, LoRA adapters, and related resources built upon the Illustrious base."
+    },
+    {
+      "title": "Illustrious (AI model) — Grokipedia",
+      "url": "https://grokipedia.com/page/Illustrious_AI_model",
+      "snippet": "In art, \"illustrious\" means renowned, distinguished, or celebrated, often describing famous artists, patrons, or works of high prestige. In AI image generation prompts (e.g., Stable Diffusion), it is"
+    }
+  ]
+}

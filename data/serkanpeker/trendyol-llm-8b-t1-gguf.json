@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "serkanpeker/Trendyol-LLM-8B-T1-GGUF",
+  "slug": "serkanpeker-trendyol-llm-8b-t1-gguf",
+  "author": "serkanpeker",
+  "url": "https://huggingface.co/serkanpeker/Trendyol-LLM-8B-T1-GGUF",
+  "created_at": "2026-11-08T11:33:31.000Z",
+  "updated_at": "2026-11-08T12:59:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "tr",
+    "tur",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "turkish",
+    "imatrix",
+    "text-generation",
+    "tr",
+    "tur",
+    "en",
+    "dataset:wikimedia/wikipedia",
+    "dataset:openlanguagedata/flores_plus",
+    "base_model:Trendyol/Trendyol-LLM-8B-T1",
+    "base_model:quantized:Trendyol/Trendyol-LLM-8B-T1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 34783476128,
+  "storage_human": "34.8 GB",
+  "base_model": "Trendyol/Trendyol-LLM-8B-T1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Trendyol-LLM-8B-T1-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Trendyol-LLM-8B-T1-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Trendyol-LLM-8B-T1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Trendyol-LLM-8B-T1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

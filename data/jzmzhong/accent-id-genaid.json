@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "jzmzhong/accent-id-genaid",
+  "slug": "jzmzhong-accent-id-genaid",
+  "author": "jzmzhong",
+  "url": "https://huggingface.co/jzmzhong/accent-id-genaid",
+  "created_at": "2026-11-08T15:27:28.000Z",
+  "updated_at": "2026-11-08T15:28:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "speechbrain",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "speechbrain",
+    "audio-classification",
+    "Accent Identification",
+    "XLSR",
+    "CommonAccent",
+    "English",
+    "en",
+    "dataset:CommonVoice",
+    "arxiv:2305.18283",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1265150148,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jzmzhong/GenAID: An Accent Identification (AID) model that ...",
+      "url": "https://github.com/jzmzhong/GenAID",
+      "snippet": "This is the repository for GenAID, a Gen eralisable accent identification (AID) model across speakers. The code is built upon speechbrain v0.5.16 with the original documentation here, and the AID dataset construction and code implementation by CommonAccent."
+    },
+    {
+      "title": "GenAID/README.md at GenAID · jzmzhong/GenAID · GitHub",
+      "url": "https://github.com/jzmzhong/GenAID/blob/GenAID/README.md",
+      "snippet": "GenAID This is the repository for GenAID, a Gen eralisable accent identification (AID) model across speakers. The code is built upon speechbrain v0.5.16 with the original documentation here, and the AID dataset construction and code implementation by CommonAccent."
+    }
+  ]
+}

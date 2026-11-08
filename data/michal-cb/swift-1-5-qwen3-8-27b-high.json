@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "michal-cb/Swift-1.5-Qwen3.8-27b-high",
+  "slug": "michal-cb-swift-1-5-qwen3-8-27b-high",
+  "author": "michal-cb",
+  "url": "https://huggingface.co/michal-cb/Swift-1.5-Qwen3.8-27b-high",
+  "created_at": "2026-11-08T12:17:17.000Z",
+  "updated_at": "2026-11-08T12:19:01.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3_8",
+    "reasoning",
+    "efficient-thinking",
+    "token-efficient",
+    "post-training",
+    "terminal-bench",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55580862660,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UkisAI / Swift",
+      "url": "https://ukisai.com/products/swift",
+      "snippet": "Swift-Qwen3.8-27B is UkisAI's reasoning-efficient derivative of Qwen3.8-27B, using 58.3% fewer thinking tokens while maintaining near-identical performance (<1% loss) and as a result getting a x1.95 speed-up on several tasks."
+    },
+    {
+      "title": "Run Swift-1.5-Qwen3.8-27B API: Serverless Inference, No GPU Needed",
+      "url": "https://featherless.ai/models/ukisai/Swift-1.5-Qwen3.8-27b",
+      "snippet": "Swift 1.5 Qwen3.8-27B is a 27 billion parameter language model developed by UkisAI, derived from Qwen3.8-27B. This model is optimized for reasoning efficiency, using 58.5% fewer \"thinking tokens\" while achieving a 0.35% higher score than its base model, resulting in a 1.95x speed-up on various tasks. It excels in coding and agentic tasks, making it suitable for applications requiring efficient ..."
+    }
+  ]
+}

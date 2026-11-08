@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "basyauma-tech/Haas-ja-v1.0-mlx-8bit",
+  "slug": "basyauma-tech-haas-ja-v1-0-mlx-8bit",
+  "author": "basyauma-tech",
+  "url": "https://huggingface.co/basyauma-tech/Haas-ja-v1.0-mlx-8bit",
+  "created_at": "2026-11-08T13:33:24.000Z",
+  "updated_at": "2026-11-08T13:35:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "apple-silicon",
+    "japanese",
+    "speech-recognition",
+    "asr",
+    "parakeet",
+    "tdt",
+    "fastconformer",
+    "8-bit",
+    "quantized",
+    "automatic-speech-recognition",
+    "ja",
+    "base_model:third-intelligence/Haas-ja-v1.0",
+    "base_model:quantized:third-intelligence/Haas-ja-v1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 615871520,
+  "parameters_human": "615.9M",
+  "storage_bytes": 728161035,
+  "storage_human": "728 MB",
+  "base_model": "third-intelligence/Haas-ja-v1.0",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mrjnzzz/Haas-ja-v1.0-mlx · Hugging Face",
+      "url": "https://huggingface.co/mrjnzzz/Haas-ja-v1.0-mlx",
+      "snippet": "An unofficial MLX conversion of third-intelligence/Haas-ja-v1.0, a Japanese speech recognition model, for Python on Apple Silicon. It is not affiliated with Third ..."
+    },
+    {
+      "title": "GitHub - matsuurajun/haas-mlx: Unofficial MLX port of Haas-ja-v1.0, a ...",
+      "url": "https://github.com/matsuurajun/haas-mlx",
+      "snippet": "Unofficial MLX port of Haas-ja-v1.0, a Japanese speech recognition model, for Apple Silicon - matsuurajun/haas-mlx"
+    }
+  ]
+}

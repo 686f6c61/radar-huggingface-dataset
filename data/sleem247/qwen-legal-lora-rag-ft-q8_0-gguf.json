@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Sleem247/qwen-legal-lora-rag-ft-Q8_0-GGUF",
+  "slug": "sleem247-qwen-legal-lora-rag-ft-q8_0-gguf",
+  "author": "Sleem247",
+  "url": "https://huggingface.co/Sleem247/qwen-legal-lora-rag-ft-Q8_0-GGUF",
+  "created_at": "2026-11-08T20:01:07.000Z",
+  "updated_at": "2026-11-08T20:01:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "gguf",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "llama-cpp",
+    "gguf-my-lora",
+    "text-generation",
+    "base_model:TinPhan2007/qwen-legal-lora-rag-ft",
+    "base_model:adapter:TinPhan2007/qwen-legal-lora-rag-ft",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119734272,
+  "parameters_human": "119.7M",
+  "storage_bytes": 127252736,
+  "storage_human": "127 MB",
+  "base_model": "TinPhan2007/qwen-legal-lora-rag-ft",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TinPhan2007/qwen-legal-lora-rag-ft · Hugging Face",
+      "url": "https://huggingface.co/TinPhan2007/qwen-legal-lora-rag-ft",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sleem247/LEGAL_QWEN_REASONING-Q8_0-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Sleem247/LEGAL_QWEN_REASONING-Q8_0-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "isaacy13/gemma-4-E2B-it-guideai-litert-lm",
+  "slug": "isaacy13-gemma-4-e2b-it-guideai-litert-lm",
+  "author": "isaacy13",
+  "url": "https://huggingface.co/isaacy13/gemma-4-E2B-it-guideai-litert-lm",
+  "created_at": "2026-11-08T14:09:08.000Z",
+  "updated_at": "2026-11-08T14:09:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "gemma4",
+    "base_model:litert-community/gemma-4-E2B-it-litert-lm",
+    "base_model:finetune:litert-community/gemma-4-E2B-it-litert-lm",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2588147712,
+  "storage_human": "2.6 GB",
+  "base_model": "litert-community/gemma-4-E2B-it-litert-lm",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 model overview - Gemma Documentation",
+      "url": "https://gemma.ai/models/gemma-4/",
+      "snippet": "Overview of Google's Gemma 4 open-weight multimodal models (E2B, E4B, 12B, 26B A4B, and 31B): capabilities, context windows, VRAM, and QAT checkpoints."
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    }
+  ]
+}

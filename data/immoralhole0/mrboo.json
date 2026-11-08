@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "immoralhole0/mrboo",
+  "slug": "immoralhole0-mrboo",
+  "author": "immoralhole0",
+  "url": "https://huggingface.co/immoralhole0/mrboo",
+  "created_at": "2026-11-08T17:50:52.000Z",
+  "updated_at": "2026-11-08T17:51:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 238231219,
+  "storage_human": "238 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "immoralhole0 Creator Profile | Civitai",
+      "url": "https://civitai.red/user/immoralhole0/models",
+      "snippet": "immoralhole0 on Civitai: 490 images and 21 AI models, followed by 332 people. Download or generate online."
+    },
+    {
+      "title": "MisterBoo - V1 Showcase | Civitai",
+      "url": "https://civitai.com/posts/11149663",
+      "snippet": "A post by immoralhole0."
+    }
+  ]
+}

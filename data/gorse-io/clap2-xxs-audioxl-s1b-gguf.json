@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "gorse-io/clap2-xxs-audioxl-s1B-GGUF",
+  "slug": "gorse-io-clap2-xxs-audioxl-s1b-gguf",
+  "author": "gorse-io",
+  "url": "https://huggingface.co/gorse-io/clap2-xxs-audioxl-s1B-GGUF",
+  "created_at": "2026-11-08T14:38:44.000Z",
+  "updated_at": "2026-11-08T14:40:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "clap2",
+    "audio",
+    "audio-text",
+    "embeddings",
+    "feature-extraction",
+    "base_model:laion/clap2-xxs-audioxl-s1B",
+    "base_model:quantized:laion/clap2-xxs-audioxl-s1B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27293041,
+  "parameters_human": "27.3M",
+  "storage_bytes": 167020352,
+  "storage_human": "167 MB",
+  "base_model": "laion/clap2-xxs-audioxl-s1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - LAION-AI/clap2: CLAP2 and LAION-Audio-XL · GitHub",
+      "url": "https://github.com/LAION-AI/clap2/",
+      "snippet": "CLAP2 and LAION-Audio-XL . Contribute to LAION-AI/clap2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Audio-Embedding-GGUF - a gorse-io Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/gorse-io/audio-embedding-gguf",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from gorse-io"
+    }
+  ]
+}

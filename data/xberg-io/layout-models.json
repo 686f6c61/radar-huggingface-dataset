@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "xberg-io/layout-models",
+  "slug": "xberg-io-layout-models",
+  "author": "xberg-io",
+  "url": "https://huggingface.co/xberg-io/layout-models",
+  "created_at": "2026-03-09T08:00:15.000Z",
+  "updated_at": "2026-11-08T15:05:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "document-layout-analysis",
+    "table-structure-recognition",
+    "xberg",
+    "paddleocr",
+    "arxiv:2304.08069",
+    "arxiv:2110.00061",
+    "arxiv:2601.21957",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 500364063,
+  "storage_human": "500 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xberg-io/layout-models · Hugging Face",
+      "url": "https://huggingface.co/xberg-io/layout-models",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Layout Detection | Xberg",
+      "url": "https://docs.xberg.io/guides/layout-detection/",
+      "snippet": "Layout detection now populates ExtractedDocument.formulas for formula regions and supports chart understanding via enable_chart_understanding. With the opt-in formula-recognition cargo feature, formula regions can also run through a dedicated LaTeX recognition model."
+    }
+  ]
+}

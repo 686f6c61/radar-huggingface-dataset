@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "dongjintao/GUI-Swift-Mobile-2B",
+  "slug": "dongjintao-gui-swift-mobile-2b",
+  "author": "dongjintao",
+  "url": "https://huggingface.co/dongjintao/GUI-Swift-Mobile-2B",
+  "created_at": "2026-11-08T16:24:38.000Z",
+  "updated_at": "2026-11-08T16:35:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gui-agent",
+    "android",
+    "lora",
+    "fixed-slot",
+    "en",
+    "base_model:mPLUG/GUI-Owl-1.5-2B-Instruct",
+    "base_model:adapter:mPLUG/GUI-Owl-1.5-2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1735907150,
+  "storage_human": "1.7 GB",
+  "base_model": "mPLUG/GUI-Owl-1.5-2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dongjintao/MAI-Swift-2B · Hugging Face",
+      "url": "https://huggingface.co/dongjintao/MAI-Swift-2B",
+      "snippet": "Single-Pass Mobile GUI Action Prediction Examples · Results · Quick start · 简体中文 MAI-Swift-2B maps screenshots, instructions and executed-action history to one Android action through a single native causal forward over 105 fixed value slots. It is the mobile member of the GUI-Swift family, built on MAI-UI-2B. Release: AndroidControl SFT · step4658 / Adapter: 433.68M parameters · 1 ..."
+    },
+    {
+      "title": "dongjintao (zhenren) - Hugging Face",
+      "url": "https://huggingface.co/dongjintao",
+      "snippet": "User profile of zhenren on Hugging Face Recent Activity liked a modelabout 3 hours ago dongjintao/GUI-Swift-4B published a modelabout 3 hours ago dongjintao/GUI-Swift-4B updated a modelabout 3 hours ago dongjintao/GUI-Swift-4B View all activity"
+    }
+  ]
+}

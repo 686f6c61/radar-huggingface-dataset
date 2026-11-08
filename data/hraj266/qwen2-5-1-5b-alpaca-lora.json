@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "hraj266/qwen2.5-1.5b-alpaca-lora",
+  "slug": "hraj266-qwen2-5-1-5b-alpaca-lora",
+  "author": "hraj266",
+  "url": "https://huggingface.co/hraj266/qwen2.5-1.5b-alpaca-lora",
+  "created_at": "2026-11-08T12:00:18.000Z",
+  "updated_at": "2026-11-08T12:00:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20153020,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hraj266/qwen2.5-1.5b-alpaca-lora · Hugging Face",
+      "url": "https://huggingface.co/hraj266/qwen2.5-1.5b-alpaca-lora",
+      "snippet": "Instructions to use hraj266/qwen2.5-1.5b-alpaca-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use hraj266/qwen2.5-1.5b-alpaca-lora with Transformers: ... Notebooks Google Colab Kaggle Model Card for Model ID Model Details Model Description Model Sources ..."
+    },
+    {
+      "title": "praful1/qwen2.5-1.5b-alpaca-qa-lora · Hugging Face",
+      "url": "https://huggingface.co/praful1/qwen2.5-1.5b-alpaca-qa-lora",
+      "snippet": "Model Card for qa-base-lora This model is a fine-tuned version of Qwen/Qwen2.5-1.5B. It has been trained using TRL."
+    }
+  ]
+}

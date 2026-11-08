@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "goku80903/hieroglyph-ocr-qwen3.5-9b-lora",
+  "slug": "goku80903-hieroglyph-ocr-qwen3-5-9b-lora",
+  "author": "goku80903",
+  "url": "https://huggingface.co/goku80903/hieroglyph-ocr-qwen3.5-9b-lora",
+  "created_at": "2026-11-07T19:53:34.000Z",
+  "updated_at": "2026-11-07T22:15:52.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "ocr",
+    "egyptian-hieroglyphs",
+    "unicode",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 205165800,
+  "storage_human": "205 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to use the Qwen 3.5 LLMs to OCR documents",
+      "url": "https://martinalderson.com/posts/how-to-use-qwen-3-5-to-ocr-documents/",
+      "snippet": "The Qwen 3.5 models come in a bunch of sizes. The more parameters the model has, the \"better\" the model is, but at the cost of speed and memory usage: ... I did a bunch of experiments and it seems for OCRing Qwen3.5-9B is the sweet spot."
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

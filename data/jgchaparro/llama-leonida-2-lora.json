@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "jgchaparro/Llama-Leonida-2-lora",
+  "slug": "jgchaparro-llama-leonida-2-lora",
+  "author": "jgchaparro",
+  "url": "https://huggingface.co/jgchaparro/Llama-Leonida-2-lora",
+  "created_at": "2026-11-08T12:05:50.000Z",
+  "updated_at": "2026-11-08T18:15:30.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "el"
+  ],
+  "tags": [
+    "safetensors",
+    "translation",
+    "tsakonian",
+    "greek",
+    "endangered-languages",
+    "low-resource",
+    "grpo",
+    "unsloth",
+    "llama",
+    "el",
+    "base_model:ilsp/Llama-Krikri-8B-Instruct-v1.5",
+    "base_model:finetune:ilsp/Llama-Krikri-8B-Instruct-v1.5",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 690657182,
+  "storage_human": "691 MB",
+  "base_model": "ilsp/Llama-Krikri-8B-Instruct-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jgchaparro/Llama-Leonida-lora · Hugging Face",
+      "url": "https://huggingface.co/jgchaparro/Llama-Leonida-lora",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jgchaparro/Llama-Leonida-Beta-lora · Hugging Face",
+      "url": "https://huggingface.co/jgchaparro/Llama-Leonida-Beta-lora",
+      "snippet": "Leonida Beta translates between Modern Greek and Tsakonian, in both directions, with a single model. Tsakonian is a highly endangered Hellenic language of the Peloponnese, which descends largely from ancient Laconian Doric. Its name honours Leonidas, the Spartan king, a nod to that Laconian ancestry; the logo shows a Spartan shield with the lambda of Lacedaemon. It was the first version of ..."
+    }
+  ]
+}

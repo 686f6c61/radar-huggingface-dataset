@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "atutej/dspark_grug-layers6-taps5-grug-67b-a2b-datakit-sft-dr-doom_datakit-sft-mix_itw-20261108",
+  "slug": "atutej-dspark_grug-layers6-taps5-grug-67b-a2b-datakit-sft-dr-doom_datakit-sft-mix_itw-20261108",
+  "author": "atutej",
+  "url": "https://huggingface.co/atutej/dspark_grug-layers6-taps5-grug-67b-a2b-datakit-sft-dr-doom_datakit-sft-mix_itw-20261108",
+  "created_at": "2026-11-08T16:36:16.000Z",
+  "updated_at": "2026-11-08T16:36:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speculative-decoding",
+    "dspark",
+    "drafter",
+    "custom_code",
+    "base_model:open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21-dr-doom",
+    "base_model:finetune:open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21-dr-doom",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751156225,
+  "parameters_human": "751.2M",
+  "storage_bytes": 3004773028,
+  "storage_human": "3.0 GB",
+  "base_model": "open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21-dr-doom",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dspark_grug-67b-a2b-datakit-sft_datakit-sft-mix_itw-20261016",
+      "url": "https://huggingface.co/atutej/dspark_grug-67b-a2b-datakit-sft_datakit-sft-mix_itw-20261016",
+      "snippet": "itw drafter (in-the-wild text): trained on the gold replies of the Datakit SFT mix, the data the target was fine-tuned on, as written and with no regeneration. This is a mid-run checkpoint at step 80,813 (21% of one epoch of 382,747 steps, about 9.7B tokens, 12 h on 2 GB200 nodes); training was stopped by a time limit before the learning rate had decayed. The trainer's teacher-forced ..."
+    },
+    {
+      "title": "atutej/dspark_grug-67b-a2b-datakit-sft-dr-doom_datakit-sft-mix ...",
+      "url": "https://huggingface.co/atutej/dspark_grug-67b-a2b-datakit-sft-dr-doom_datakit-sft-mix_targetgen-20261021",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

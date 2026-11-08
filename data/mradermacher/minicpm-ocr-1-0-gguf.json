@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniCPM-OCR-1.0-GGUF",
+  "slug": "mradermacher-minicpm-ocr-1-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniCPM-OCR-1.0-GGUF",
+  "created_at": "2026-11-08T17:24:17.000Z",
+  "updated_at": "2026-11-08T17:29:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "minicpm-ocr",
+    "ocr",
+    "document-parsing",
+    "multimodal",
+    "vision-language",
+    "table-recognition",
+    "formula-recognition",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM-OCR-1.0",
+    "base_model:quantized:openbmb/MiniCPM-OCR-1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752167744,
+  "parameters_human": "752.2M",
+  "storage_bytes": 8969464832,
+  "storage_human": "9.0 GB",
+  "base_model": "openbmb/MiniCPM-OCR-1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/MiniCPM-OCR-1.0-gguf · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-OCR-1.0-gguf",
+      "snippet": "This repository hosts the GGUF build of MiniCPM-OCR 1.0 for llama.cpp. For the original weights, the full model card, and benchmarks, see the base repository. MiniCPM-OCR 1.0 (1.3B) parses documents into text, tables, formulas, charts, and seals, and supports key information extraction, for Chinese and English documents and PDFs. Files Every tier needs the vision projector as well — --model ..."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM-OCR: Fast, accurate OCR with correctness ...",
+      "url": "https://github.com/OpenBMB/MiniCPM-OCR",
+      "snippet": "MiniCPM-OCR 1.0 (1.3B) is the first OCR-specific model in the MiniCPM-V/o family. It focuses on text-centric document understanding, covering text, tables, formulas, charts, seals, and structured information extraction."
+    }
+  ]
+}

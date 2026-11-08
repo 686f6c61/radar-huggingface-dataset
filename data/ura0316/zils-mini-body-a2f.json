@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Ura0316/zils-mini-body-a2f",
+  "slug": "ura0316-zils-mini-body-a2f",
+  "author": "Ura0316",
+  "url": "https://huggingface.co/Ura0316/zils-mini-body-a2f",
+  "created_at": "2026-11-08T15:53:33.000Z",
+  "updated_at": "2026-11-08T15:54:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "zils",
+    "bittensor",
+    "base_model:Maincode/Matilda-Decision-v1-Mini",
+    "base_model:merge:Maincode/Matilda-Decision-v1-Mini",
+    "base_model:perplexity-ai/pplx-decider-flash-v1.2",
+    "base_model:merge:perplexity-ai/pplx-decider-flash-v1.2",
+    "base_model:torchcast-ai/torchcast-decision-4b",
+    "base_model:merge:torchcast-ai/torchcast-decision-4b",
+    "base_model:vllm-sr/d3-mini",
+    "base_model:merge:vllm-sr/d3-mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9078616080,
+  "storage_human": "9.1 GB",
+  "base_model": "torchcast-ai/torchcast-decision-4b, vllm-sr/d3-mini, perplexity-ai/pplx-decider-flash-v1.2, Maincode/Matilda-Decision-v1-Mini",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zils — Teach AI to make decisions your way.",
+      "url": "https://zils.ai/",
+      "snippet": "Zils Zils Teach AI to make decisions your way. Show Zils examples with the right answers. It trains a small model your app can use to sort requests, flag problems, or score matches."
+    },
+    {
+      "title": "GitHub - ooo-hq/zils-web: Zils decision-model website, research ...",
+      "url": "https://github.com/ooo-hq/zils-web",
+      "snippet": "The Next.js website for Zils decision models, public research, the inference playground, and the experimental customer training dashboard. The intended production domain is https://zils.ai. The model and subnet implementation lives in ooo-hq/zils. The Fez chat application remains a separate project at fez.chat."
+    }
+  ]
+}

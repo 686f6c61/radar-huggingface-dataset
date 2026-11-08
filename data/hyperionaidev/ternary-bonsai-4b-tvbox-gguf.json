@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "hyperionaidev/Ternary-Bonsai-4B-tvbox-GGUF",
+  "slug": "hyperionaidev-ternary-bonsai-4b-tvbox-gguf",
+  "author": "hyperionaidev",
+  "url": "https://huggingface.co/hyperionaidev/Ternary-Bonsai-4B-tvbox-GGUF",
+  "created_at": "2026-11-08T16:43:09.000Z",
+  "updated_at": "2026-11-08T16:43:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ternary",
+    "edge",
+    "low-ram",
+    "smolmaxxing",
+    "text-generation",
+    "base_model:prism-ml/Ternary-Bonsai-4B-unpacked",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-4B-unpacked",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4179521688,
+  "parameters_human": "4.18B",
+  "storage_bytes": 1182399392,
+  "storage_human": "1.2 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-4B-unpacked",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing 1-bit and Ternary Bonsai Image 4B: Image ... - PrismML",
+      "url": "https://prismml.com/news/bonsai-image-4b",
+      "snippet": "Today we're releasing Bonsai Image 4B, compact 1-bit and ternary diffusion models built on FLUX.2 Klein 4B that run image generation on laptops and phones."
+    },
+    {
+      "title": "Ternary Bonsai - a prism-ml Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/prism-ml/ternary-bonsai",
+      "snippet": "1.58-bit Bonsai models"
+    }
+  ]
+}

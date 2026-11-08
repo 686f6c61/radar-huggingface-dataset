@@ -5,7 +5,7 @@
   "author": "ioxdue",
   "url": "https://huggingface.co/ioxdue/moediet-runs",
   "created_at": "2026-11-05T09:31:56.000Z",
-  "updated_at": "2026-11-07T02:54:56.000Z",
+  "updated_at": "2026-11-07T03:34:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 4,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": 6717769728,
   "parameters_human": "6.72B",

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "manuelgscom/dale-0.8b",
+  "slug": "manuelgscom-dale-0-8b",
+  "author": "manuelgscom",
+  "url": "https://huggingface.co/manuelgscom/dale-0.8b",
+  "created_at": "2026-11-08T18:04:23.000Z",
+  "updated_at": "2026-11-08T18:08:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "bash",
+    "shell",
+    "nl2bash",
+    "cli",
+    "text-generation",
+    "conversational",
+    "es",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1718843254,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "dale bash test v2",
+      "metric": "Accuracy (BF16, transformers)",
+      "value": 78.6
+    }
+  ],
+  "sources": [
+    {
+      "title": "manuelgscom/dale-0.8b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/manuelgscom/dale-0.8b-GGUF",
+      "snippet": "manuelgscom / dale-0.8b-GGUF Like 1 Text Generation GGUF Spanish English bash shell nl2bash llama.cpp cli Eval Results (legacy) imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "manuelgscom (Manuel Garcia Sanz) - Hugging Face",
+      "url": "https://huggingface.co/manuelgscom",
+      "snippet": "models1 manuelgscom/dale-0.8b-GGUF Text Generation • 0.8B•Updated about 7 hours ago• 120 • 1"
+    }
+  ]
+}

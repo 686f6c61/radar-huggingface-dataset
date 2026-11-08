@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "ryosuke-kawashima-career/qwen3-0.6b-grpo-gsm8k",
+  "slug": "ryosuke-kawashima-career-qwen3-0-6b-grpo-gsm8k",
+  "author": "ryosuke-kawashima-career",
+  "url": "https://huggingface.co/ryosuke-kawashima-career/qwen3-0.6b-grpo-gsm8k",
+  "created_at": "2026-11-08T12:31:52.000Z",
+  "updated_at": "2026-11-08T12:31:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "grpo",
+    "lora",
+    "reinforcement-learning",
+    "dataset:openai/gsm8k",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51852046,
+  "storage_human": "52 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "Text Generation model with 0.8B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "pyromind/Qwen3-0.6B-gsm8k · Hugging Face",
+      "url": "https://huggingface.co/pyromind/Qwen3-0.6B-gsm8k",
+      "snippet": "This directory contains a Qwen3-0.6B model trained using SFT (Supervised Fine-Tuning) + RL (Reinforcement Learning) methods, specifically optimized for the GSM8K mathematical reasoning task. Qwen3-0.6B_sft+rl_merged_model/ ├── README.md # This file ├── config.json # Model configuration ..."
+    }
+  ]
+}

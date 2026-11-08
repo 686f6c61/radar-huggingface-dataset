@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "AdaptiveChunking/emactl_noema_s2",
+  "slug": "adaptivechunking-emactl_noema_s2",
+  "author": "AdaptiveChunking",
+  "url": "https://huggingface.co/AdaptiveChunking/emactl_noema_s2",
+  "created_at": "2026-11-08T13:04:58.000Z",
+  "updated_at": "2026-11-08T13:05:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "dynamic-chunking",
+    "tokenization",
+    "hnet",
+    "byte-level",
+    "beetle-hnet",
+    "legacy-trainer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22516992,
+  "parameters_human": "22.5M",
+  "storage_bytes": 90078296,
+  "storage_human": "90 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Noema models · Docs · NoemaAI",
+      "url": "https://noemaai.com/docs/models",
+      "snippet": "Every released Noema model with its Hugging Face repository, parameters, base model, formats, license and release date."
+    },
+    {
+      "title": "Noema models: open-weight language models · NoemaAI",
+      "url": "https://noemaai.com/models",
+      "snippet": "Models Noema models Small language models post-trained by NoemaAI from Qwen3.5-2B and Qwen3.5-4B and released as open weights, each with GGUF builds and a paired evaluation against the stock Qwen model it descends from."
+    }
+  ]
+}

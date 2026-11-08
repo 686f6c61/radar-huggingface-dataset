@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Samas21/zx",
+  "slug": "samas21-zx",
+  "author": "Samas21",
+  "url": "https://huggingface.co/Samas21/zx",
+  "created_at": "2026-06-09T18:48:33.000Z",
+  "updated_at": "2026-11-08T20:01:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56097068,
+  "storage_human": "56 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Samas21/zx · Hugging Face",
+      "url": "https://huggingface.co/Samas21/zx",
+      "snippet": "Samas21 / zx like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Samas21 (Ma) - Hugging Face",
+      "url": "https://huggingface.co/Samas21",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... updated a model 2 days ago"
+    }
+  ]
+}

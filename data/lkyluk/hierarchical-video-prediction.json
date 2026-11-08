@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "LKyluk/hierarchical-video-prediction",
+  "slug": "lkyluk-hierarchical-video-prediction",
+  "author": "LKyluk",
+  "url": "https://huggingface.co/LKyluk/hierarchical-video-prediction",
+  "created_at": "2026-11-08T16:46:08.000Z",
+  "updated_at": "2026-11-08T16:46:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "REVISITING HIERARCHICAL APPROACH FOR PERSISTENT LONG-TERM VIDEO PREDICTION",
+      "url": "https://arxiv.org/pdf/2104.06697v1",
+      "snippet": "Hierarchical approaches are potentially promising for long-term prediction since learning structure-aware dynamics allows the model to generate semantically accurate motion and content in the future."
+    },
+    {
+      "title": "(PDF) Hierarchical Model for Long-term Video Prediction",
+      "url": "https://www.researchgate.net/publication/317955775_Hierarchical_Model_for_Long-term_Video_Prediction",
+      "snippet": "In this project, we use a hierarchical approach for long-term video prediction. We aim at estimating high-level structure in the input frame first, then predict how that structure grows in the future."
+    }
+  ]
+}

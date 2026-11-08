@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "taiger7196/MrMaie-B1-GGUF",
+  "slug": "taiger7196-mrmaie-b1-gguf",
+  "author": "taiger7196",
+  "url": "https://huggingface.co/taiger7196/MrMaie-B1-GGUF",
+  "created_at": "2026-11-08T14:42:11.000Z",
+  "updated_at": "2026-11-08T14:46:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mrmaie",
+    "mrmaie-b1",
+    "4b",
+    "text-generation",
+    "en",
+    "it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3950369280,
+  "parameters_human": "3.95B",
+  "storage_bytes": 18081829600,
+  "storage_human": "18.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "taiger7196/MrMaie-B1 · Hugging Face",
+      "url": "https://huggingface.co/taiger7196/MrMaie-B1",
+      "snippet": "Text Generation model with 4B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "MrMaie-AI-code-V1-GGUF - a Hugging Face Space by taiger7196",
+      "url": "https://huggingface.co/spaces/taiger7196/MrMaie-AI-code-V1-GGUF",
+      "snippet": "Discover amazing ML apps made by the community"
+    }
+  ]
+}

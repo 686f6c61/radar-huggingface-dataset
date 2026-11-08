@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "WhyZosa/llm-course-hw3-tinyllama-qlora",
+  "slug": "whyzosa-llm-course-hw3-tinyllama-qlora",
+  "author": "WhyZosa",
+  "url": "https://huggingface.co/WhyZosa/llm-course-hw3-tinyllama-qlora",
+  "created_at": "2026-11-08T19:57:46.000Z",
+  "updated_at": "2026-11-08T19:58:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:cardiffnlp/tweet_eval",
+    "base_model:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "base_model:adapter:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9534027,
+  "storage_human": "10 MB",
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sodeniZz/llm-course-hw3-tinyllama-qlora · Hugging Face",
+      "url": "https://huggingface.co/sodeniZz/llm-course-hw3-tinyllama-qlora",
+      "snippet": "Model Card: llm-course-hw3-tinyllama-qlora This model was fine-tuned as part of Homework 3 in the HSE LLM Course. It applies QLoRA to a chat-based TinyLlama model for sentiment classification."
+    },
+    {
+      "title": "01eg0/llm-course-hw3-tinyllama-qlora · Hugging Face",
+      "url": "https://huggingface.co/01eg0/llm-course-hw3-tinyllama-qlora",
+      "snippet": "Instructions to use 01eg0/llm-course-hw3-tinyllama-qlora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use 01eg0/llm-course-hw3-tinyllama-qlora with Transformers: ... Notebooks Google Colab Kaggle Model Card for Model ID Model Details Model Description Model ..."
+    },
+    {
+      "title": "在哪里能够找到国外优秀大学的计算机公开课？ - 知乎",
+      "url": "https://www.zhihu.com/question/32044961?sort=created",
+      "snippet": "如题 如果你 挑花眼 了，不知道该学哪个？ 过来人推荐你去看看上面仓库里提到的 Crash Course Computer Science（计算机科学速 …"
+    }
+  ]
+}

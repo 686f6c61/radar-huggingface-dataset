@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "datahj/deepvoice2608",
+  "slug": "datahj-deepvoice2608",
+  "author": "datahj",
+  "url": "https://huggingface.co/datahj/deepvoice2608",
+  "created_at": "2026-08-30T12:07:52.000Z",
+  "updated_at": "2026-11-08T14:10:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10770060979,
+  "storage_human": "10.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

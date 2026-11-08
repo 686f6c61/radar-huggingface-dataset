@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "huuhuyng/watch-satoshi3__attune-l3eW-7f6470a",
+  "slug": "huuhuyng-watch-satoshi3__attune-l3ew-7f6470a",
+  "author": "huuhuyng",
+  "url": "https://huggingface.co/huuhuyng/watch-satoshi3__attune-l3eW-7f6470a",
+  "created_at": "2026-11-08T17:31:03.000Z",
+  "updated_at": "2026-11-08T17:31:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 780979360,
+  "parameters_human": "781.0M",
+  "storage_bytes": 3124002296,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM leaderboard 2026: AI model rankings across every benchmark ...",
+      "url": "https://artificialwatch.com/benchmarks",
+      "snippet": "Claude Opus 5.5 leads the combined ranking today, ahead of Gemini 4 Carbon and GPT-6 Astra. LMArena, LiveBench, SimpleBench, LLM Stats, Vals AI and Artificial Analysis, 46 models normalized into one index, updated daily. Free and public."
+    },
+    {
+      "title": "Attune | Apple Watch Signal for Claude Code, Codex, and LLM Coding",
+      "url": "https://attune.watch/",
+      "snippet": "Attune brings Apple HealthKit context from Apple Watch into Claude Code, Codex, and LLM coding harnesses so your model can adapt before friction turns into frustration."
+    }
+  ]
+}

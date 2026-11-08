@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Arvoh/Audio8-TTS-Realistic-Air",
+  "slug": "arvoh-audio8-tts-realistic-air",
+  "author": "Arvoh",
+  "url": "https://huggingface.co/Arvoh/Audio8-TTS-Realistic-Air",
+  "created_at": "2026-11-08T18:44:59.000Z",
+  "updated_at": "2026-11-08T18:44:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Audio8-TTS-Realistic-Air · 0.6B — Listening Demo",
+      "url": "https://edge0-ai.github.io/Audio8_TTS/",
+      "snippet": "Listen to Audio8-TTS-Realistic-Air: expressive speech in a compact 0.6B model, with 23 supported languages. Explore 24 examples alongside Preview, Breeze-TTS-2, Qwen3-TTS and Higgs TTS 3."
+    },
+    {
+      "title": "TechnoBaptist/Audio8-TTS-Realistic-Air · Hugging Face",
+      "url": "https://huggingface.co/TechnoBaptist/Audio8-TTS-Realistic-Air",
+      "snippet": "Audio8-TTS-Realistic-Air builds on Audio8-TTS-Preview-0.6b, delivering substantially improved speech realism while retaining its compact 0.6B architecture and zero-shot voice cloning capabilities. This release supports 23 languages, adding 12 languages compared with Preview. It uses the same Transformers inference interface as Preview."
+    }
+  ]
+}

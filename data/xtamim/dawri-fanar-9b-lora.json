@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 24,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1955551921,
-  "storage_human": "2.0 GB",
+  "storage_bytes": 91803267,
+  "storage_human": "92 MB",
   "base_model": "QCRI/Fanar-1-9B-Instruct",
   "formats": [
     "safetensors"

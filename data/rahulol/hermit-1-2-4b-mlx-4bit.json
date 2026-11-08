@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "rahulol/Hermit-1.2-4B-MLX-4bit",
+  "slug": "rahulol-hermit-1-2-4b-mlx-4bit",
+  "author": "rahulol",
+  "url": "https://huggingface.co/rahulol/Hermit-1.2-4B-MLX-4bit",
+  "created_at": "2026-11-08T14:48:12.000Z",
+  "updated_at": "2026-11-08T14:48:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "hermit",
+    "trading",
+    "crypto",
+    "defi",
+    "function-calling",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:quantized:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2274445179,
+  "storage_human": "2.3 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rahulol/Hermit-1.1-4B-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/rahulol/Hermit-1.1-4B-MLX-4bit",
+      "snippet": "Instructions to use rahulol/Hermit-1.1-4B-MLX-4bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use rahulol/Hermit-1.1-4B-MLX-4bit with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] hf download rahulol/Hermit-1.1-4B-MLX-4bit --local-dir Hermit-1.1-4B-MLX-4bit Notebooks Google Colab Kaggle ..."
+    },
+    {
+      "title": "rahulol (rahul singh) – Models - Hugging Face",
+      "url": "https://huggingface.co/rahulol/models",
+      "snippet": "Recent Activity updated a modelabout 19 hours ago rahulol/Hermit-1.1-Lite-MLX-4bit published a modelabout 19 hours ago rahulol/Hermit-1.1-Lite-MLX-4bit updated a modelabout 19 hours ago rahulol/Hermit-1.1-4B-MLX-4bit View all activity"
+    }
+  ]
+}

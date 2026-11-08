@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "DAG-UPB/chronos-2-heat-demand-aalborg",
+  "slug": "dag-upb-chronos-2-heat-demand-aalborg",
+  "author": "DAG-UPB",
+  "url": "https://huggingface.co/DAG-UPB/chronos-2-heat-demand-aalborg",
+  "created_at": "2026-11-08T17:43:03.000Z",
+  "updated_at": "2026-11-08T18:08:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "chronos-forecasting",
+  "languages": [],
+  "tags": [
+    "chronos-forecasting",
+    "safetensors",
+    "t5",
+    "time-series",
+    "forecasting",
+    "heat-demand",
+    "district-heating",
+    "smart-meter",
+    "chronos-2",
+    "time-series-forecasting",
+    "base_model:amazon/chronos-2",
+    "base_model:finetune:amazon/chronos-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119477664,
+  "parameters_human": "119.5M",
+  "storage_bytes": 477930472,
+  "storage_human": "478 MB",
+  "base_model": "amazon/chronos-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DAG-UPB (Data Analytics Group at UPB) - Hugging Face",
+      "url": "https://huggingface.co/DAG-UPB/datasets",
+      "snippet": "NLP in Economics"
+    },
+    {
+      "title": "amazon/chronos-2 · Hugging Face",
+      "url": "https://huggingface.co/amazon/chronos-2",
+      "snippet": "Time Series Forecasting model with 0.1B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "chronos-forecasting · PyPI",
+      "url": "https://pypi.org/project/chronos-forecasting/",
+      "snippet": "Chronos-2: Our latest model with significantly enhanced capabilities. It offers zero-shot support for univariate, multivariate, and covariate-informed forecasting tasks."
+    },
+    {
+      "title": "Introducing Chronos-2: From univariate to universal forecasting",
+      "url": "https://www.amazon.science/blog/introducing-chronos-2-from-univariate-to-universal-forecasting",
+      "snippet": "To address this limitation, we are introducing Chronos-2, a foundation model designed to handle arbitrary forecasting tasks — univariate, multivariate, and covariate informed — in a zero-shot manner. Chronos-2 leverages in-context learning (ICL) to enable these capabilities without additional training."
+    }
+  ]
+}

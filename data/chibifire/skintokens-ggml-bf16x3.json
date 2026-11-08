@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "chibifire/skintokens-ggml-bf16x3",
+  "slug": "chibifire-skintokens-ggml-bf16x3",
+  "author": "chibifire",
+  "url": "https://huggingface.co/chibifire/skintokens-ggml-bf16x3",
+  "created_at": "2026-11-08T19:27:01.000Z",
+  "updated_at": "2026-11-08T20:01:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "skeletal-rigging",
+    "3d",
+    "bf16",
+    "other",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 57646336,
+  "parameters_human": "57.6M",
+  "storage_bytes": 2381116064,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chibifire/SkinTokens-GGUF-BF16 · Hugging Face",
+      "url": "https://huggingface.co/chibifire/SkinTokens-GGUF-BF16",
+      "snippet": "GGUF files of VAST-AI/SkinTokens with the checkpoint's BF16 matrices kept in BF16. 1-D and sensitive tensors are F32. The files are a format change of the released model. Nobody trained them again."
+    },
+    {
+      "title": "GitHub - localai-org/skin-tokens.cpp: C++/GGML conversion of VAST-AI ...",
+      "url": "https://github.com/localai-org/skin-tokens.cpp/tree/main",
+      "snippet": "A C++23/GGML port of SkinTokens / TokenRig for automatic skeleton and skin-weight generation on CPU or Vulkan. Skin weights say how strongly every mesh vertex follows each bone. Without them, moving a skeleton does not deform the character surface correctly. SkinTokens takes a static mesh, predicts ..."
+    }
+  ]
+}

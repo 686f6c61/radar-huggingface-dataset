@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM3-Omni-2B-Looped-Latent-v2.1-GGUF",
+  "slug": "mradermacher-lfm3-omni-2b-looped-latent-v2-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM3-Omni-2B-Looped-Latent-v2.1-GGUF",
+  "created_at": "2026-11-08T18:35:50.000Z",
+  "updated_at": "2026-11-08T19:06:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Guilherme34/LFM3-Omni-2B-Looped-Latent-v2.1",
+    "base_model:quantized:Guilherme34/LFM3-Omni-2B-Looped-Latent-v2.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2702390080,
+  "parameters_human": "2.70B",
+  "storage_bytes": 25864565440,
+  "storage_human": "25.9 GB",
+  "base_model": "Guilherme34/LFM3-Omni-2B-Looped-Latent-v2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM3-Omni-2B - Liquid AI Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm3-omni-2b",
+      "snippet": "← Back to Omni Models LFM3-Omni-2B is Liquid AI’s first omni model: a single end-to-end model that understands text, images, video, and audio, and answers in text, speech, or interleaved text and speech. It is built for on-device use, where one model replaces a separate ASR model, vision-language model, LLM, and TTS model. It is a non-reasoning model."
+    },
+    {
+      "title": "LFM3-Omni-2B-Looped-Latent-v2.1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/Guilherme34/LFM3-Omni-2B-Looped-Latent-v2.1-GGUF/blob/main/chat_template_hidden.jinja",
+      "snippet": "Guilherme34 / LFM3-Omni-2B-Looped-Latent-v2.1-GGUF Like 0 GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "hyunlp-evateam3",
   "url": "https://huggingface.co/hyunlp-evateam3/20261107_healthbench_reward_toy_qwen3-1.7b_oct26_protocol",
   "created_at": "2026-11-07T22:39:29.000Z",
-  "updated_at": "2026-11-07T23:07:51.000Z",
+  "updated_at": "2026-11-08T08:39:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 10334979550,
-  "storage_human": "10.3 GB",
+  "storage_bytes": 440483183550,
+  "storage_human": "440.5 GB",
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"

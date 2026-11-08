@@ -5,7 +5,7 @@
   "author": "MedMLX",
   "url": "https://huggingface.co/MedMLX/swin-unetr-mlx",
   "created_at": "2026-10-13T01:34:11.000Z",
-  "updated_at": "2026-11-02T00:45:05.000Z",
+  "updated_at": "2026-11-06T10:30:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",

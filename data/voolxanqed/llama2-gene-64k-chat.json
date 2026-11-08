@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "voolxanQED/llama2-gene-64k-chat",
+  "slug": "voolxanqed-llama2-gene-64k-chat",
+  "author": "voolxanQED",
+  "url": "https://huggingface.co/voolxanQED/llama2-gene-64k-chat",
+  "created_at": "2024-06-08T09:59:44.000Z",
+  "updated_at": "2026-11-08T14:11:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "custom_code",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "voolxanQED/llama2-gene-64k-chat - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/voolxanQED/llama2-gene-64k-chat",
+      "snippet": "Run voolxanQED/llama2-gene-64k-chat with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "sstoica12/acquisition_generator_AS_answer_variance_combine_WGM_MP_glm",
+  "slug": "sstoica12-acquisition_generator_as_answer_variance_combine_wgm_mp_glm",
+  "author": "sstoica12",
+  "url": "https://huggingface.co/sstoica12/acquisition_generator_AS_answer_variance_combine_WGM_MP_glm",
+  "created_at": "2026-11-08T17:47:11.000Z",
+  "updated_at": "2026-11-08T17:51:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 59091622760,
+  "storage_human": "59.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sstoica12/acquisition_generator_AS_answer_variance_combine_WGM_MP ...",
+      "url": "https://huggingface.co/sstoica12/acquisition_generator_AS_answer_variance_combine_WGM_MP_llama8b_conf",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "acquisition_generator_AS_answer_variance_combine_WGM_MP_llama8b_conf",
+      "url": "https://friendli.ai/models/sstoica12/acquisition_generator_AS_answer_variance_combine_WGM_MP_llama8b_conf",
+      "snippet": "Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    }
+  ]
+}

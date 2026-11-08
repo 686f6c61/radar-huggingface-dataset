@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "vvsotnikov/LFM2.5-2.6B-junie-harbor-rl-v0.3",
+  "slug": "vvsotnikov-lfm2-5-2-6b-junie-harbor-rl-v0-3",
+  "author": "vvsotnikov",
+  "url": "https://huggingface.co/vvsotnikov/LFM2.5-2.6B-junie-harbor-rl-v0.3",
+  "created_at": "2026-11-08T15:04:25.000Z",
+  "updated_at": "2026-11-08T15:09:51.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lfm2",
+    "reinforcement-learning",
+    "grpo",
+    "trl",
+    "coding-agent",
+    "tool-use",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:merge:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 5608068190,
+  "storage_human": "5.6 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vvsotnikov/LFM2.5-2.6B-junie-harbor-rl-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/vvsotnikov/LFM2.5-2.6B-junie-harbor-rl-v0.1",
+      "snippet": "LiquidAI/LFM2.5-2.6B fine-tuned with reinforcement learning (GRPO) to work as the model behind a coding-agent CLI on data-analysis tasks. This is an intermediate checkpoint (training step 20) from a run still in progress — not a final model. The LoRA adapter was merged into the base weights; this ..."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-2.6B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
+      "snippet": "Text Generation model with 3B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Kayuzashi/voxlar-kreol-omniasr-ctc-1b-v2",
+  "slug": "kayuzashi-voxlar-kreol-omniasr-ctc-1b-v2",
+  "author": "Kayuzashi",
+  "url": "https://huggingface.co/Kayuzashi/voxlar-kreol-omniasr-ctc-1b-v2",
+  "created_at": "2026-11-08T16:28:13.000Z",
+  "updated_at": "2026-11-08T16:56:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "mfe",
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "omnilingual-asr",
+    "ctc",
+    "int8",
+    "sherpa-onnx",
+    "kreol-morisien",
+    "automatic-speech-recognition",
+    "mfe",
+    "fr",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1032239439,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/omnilingual-asr: Omnilingual ASR Open-Source ...",
+      "url": "https://github.com/facebookresearch/omnilingual-asr",
+      "snippet": "A new variant of the LLM-ASR model that supports decoding on unlimited audio length (omniASR_LLM_Unlimited_ {300M,1B,3B,7B}_v2). The unlimited audio length models are briefly described in the architecture overview section."
+    },
+    {
+      "title": "facebook/omniASR-CTC-1B · Hugging Face",
+      "url": "https://huggingface.co/facebook/omniASR-CTC-1B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

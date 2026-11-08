@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "michal-cb/Swift-1.5-Qwen3.8-27b-high-Q5_K_M-GGUF",
+  "slug": "michal-cb-swift-1-5-qwen3-8-27b-high-q5_k_m-gguf",
+  "author": "michal-cb",
+  "url": "https://huggingface.co/michal-cb/Swift-1.5-Qwen3.8-27b-high-Q5_K_M-GGUF",
+  "created_at": "2026-11-08T14:15:14.000Z",
+  "updated_at": "2026-11-08T14:16:35.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_8",
+    "reasoning",
+    "efficient-thinking",
+    "token-efficient",
+    "post-training",
+    "terminal-bench",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "base_model:michal-cb/Swift-1.5-Qwen3.8-27b-high",
+    "base_model:finetune:michal-cb/Swift-1.5-Qwen3.8-27b-high",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 19535701920,
+  "storage_human": "19.5 GB",
+  "base_model": "michal-cb/Swift-1.5-Qwen3.8-27b-high",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ukisai/Swift-1.5-Qwen3.8-27b-INT4 · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b-INT4",
+      "snippet": "The external results below compare Qwen3.8-27B, the foundation base model, and Swift 1.5. Both models use the same saved evaluation protocols, and all scores are reported as final aggregate percentages."
+    },
+    {
+      "title": "UkisAI / Swift 1.5 Qwen3.8-27B",
+      "url": "https://ukisai.com/swift-1-5-27b",
+      "snippet": "The results below compare Qwen3.8-27B, the foundation base model, Swift 1.0, the first UkisAI adaptation, and Swift 1.5. All three use the same saved evaluation protocols, and every score is a final five-repeat aggregate."
+    }
+  ]
+}

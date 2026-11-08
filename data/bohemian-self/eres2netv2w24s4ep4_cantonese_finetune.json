@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Bohemian-self/ERes2Netv2w24s4ep4_Cantonese_Finetune",
+  "slug": "bohemian-self-eres2netv2w24s4ep4_cantonese_finetune",
+  "author": "Bohemian-self",
+  "url": "https://huggingface.co/Bohemian-self/ERes2Netv2w24s4ep4_Cantonese_Finetune",
+  "created_at": "2026-11-08T17:09:40.000Z",
+  "updated_at": "2026-11-08T17:09:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bohemian-self/MOSS-Transcribe-Diarize-Finetune-Cantonese at main",
+      "url": "https://huggingface.co/Bohemian-self/MOSS-Transcribe-Diarize-Finetune-Cantonese/tree/main",
+      "snippet": "Yue Chinese License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main MOSS-Transcribe-Diarize-Finetune-Cantonese 41.9 GB Ctrl+K Ctrl+K 1 contributor History:20 commits Bohemian-self Update README.md 4a99535 verified10 days ago ckpt-780Upload Round2 stage1 560steps ckpt14 days ago ckpt-790Upload Round2 stage2 ..."
+    },
+    {
+      "title": "Bohemian-self/Pyannote-Speaker-Diarization-Community-1-Finetune ...",
+      "url": "https://huggingface.co/Bohemian-self/Pyannote-Speaker-Diarization-Community-1-Finetune-Cantonese",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

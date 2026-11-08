@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "davidadeyemi/layoutlm-nigerian-forms",
+  "slug": "davidadeyemi-layoutlm-nigerian-forms",
+  "author": "davidadeyemi",
+  "url": "https://huggingface.co/davidadeyemi/layoutlm-nigerian-forms",
+  "created_at": "2026-11-08T12:33:51.000Z",
+  "updated_at": "2026-11-08T12:43:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "layoutlm",
+    "token-classification",
+    "forms",
+    "funsd",
+    "nigeria",
+    "base_model:philschmid/layoutlm-funsd",
+    "base_model:finetune:philschmid/layoutlm-funsd",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 112633351,
+  "parameters_human": "112.6M",
+  "storage_bytes": 450558212,
+  "storage_human": "451 MB",
+  "base_model": "philschmid/layoutlm-funsd",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LayoutLM · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/layoutlm",
+      "snippet": "It is used to instantiate a Layoutlm model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the microsoft/layoutlm-base-uncased Configuration objects inherit from PreTrainedConfig and can be used to control the model outputs."
+    }
+  ]
+}

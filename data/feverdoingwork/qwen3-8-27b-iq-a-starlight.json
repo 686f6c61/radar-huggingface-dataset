@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "feverdoingwork/Qwen3.8-27B-IQ-A-Starlight",
+  "slug": "feverdoingwork-qwen3-8-27b-iq-a-starlight",
+  "author": "feverdoingwork",
+  "url": "https://huggingface.co/feverdoingwork/Qwen3.8-27B-IQ-A-Starlight",
+  "created_at": "2026-11-08T15:03:14.000Z",
+  "updated_at": "2026-11-08T15:03:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "starlight",
+  "languages": [],
+  "tags": [
+    "starlight",
+    "qwen3.8",
+    "quantized",
+    "multimodal",
+    "mtp",
+    "amd",
+    "nvidia",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8 27B API & Playground | Fireworks AI",
+      "url": "https://fireworks.ai/models/fireworks/qwen3p8-27b",
+      "snippet": "Qwen3.8-27B: 27B-parameter vision-language model from Qwen with hybrid linear/full attention (4:1 interval) and 262K context."
+    },
+    {
+      "title": "Qwen3.8 27B API: Pricing, Benchmarks & Docs | Together AI",
+      "url": "https://www.together.ai/models/qwen3-8-27b",
+      "snippet": "Qwen3.8 27B is the compact dense model of Qwen3.8, the most capable generation in the Qwen open-model family to date. Built on the architectural foundation of Qwen3.5, it is a native vision-language model with substantial gains across coding, professional work, research, and long-horizon agentic tasks, designed to carry complex multi-step work ..."
+    }
+  ]
+}

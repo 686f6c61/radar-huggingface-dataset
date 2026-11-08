@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Itay5731/nab-qwen",
+  "slug": "itay5731-nab-qwen",
+  "author": "Itay5731",
+  "url": "https://huggingface.co/Itay5731/nab-qwen",
+  "created_at": "2026-11-08T12:31:29.000Z",
+  "updated_at": "2026-11-08T12:41:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "qwen3.5",
+    "tool-use",
+    "lora",
+    "nab",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 5780090336,
+  "storage_human": "5.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - itay5731/Nab-releases",
+      "url": "https://github.com/itay5731/Nab-releases/tree/main",
+      "snippet": "Ollama 0.17.4 or newer and about 6 GB of disk for Nab's model. 16 GB of memory is recommended; on smaller machines Nab suggests a lighter model. Without any AI, everything else in Nab works."
+    },
+    {
+      "title": "Alibaba challenges Meta with new laptop-ready AI model - CNBC",
+      "url": "https://www.cnbc.com/2026/08/17/alibaba-meta-qwen-open-weight-ai-laptop-models.html",
+      "snippet": "Alibaba launched a laptop-ready AI model and released the weights of its most powerful Qwen model, escalating its rivalry with Meta in open-weight AI."
+    }
+  ]
+}

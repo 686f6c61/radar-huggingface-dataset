@@ -32,10 +32,11 @@
     "license:other",
     "8-bit",
     "compressed-tensors",
+    "deploy:azure",
     "region:us"
   ],
   "likes": 22,
-  "downloads_30d": 2000,
+  "downloads_30d": 2123,
   "trending_score": 15,
   "parameters": 1554710528,
   "parameters_human": "1.55B",

@@ -5,7 +5,7 @@
   "author": "torch-pointcloud",
   "url": "https://huggingface.co/torch-pointcloud/pointgpt-l.post-pretrain.guangyan-chen",
   "created_at": "2026-11-05T21:02:01.000Z",
-  "updated_at": "2026-11-05T21:02:28.000Z",
+  "updated_at": "2026-11-08T17:28:17.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 22,
+  "downloads_30d": 28,
   "trending_score": 0,
   "parameters": 360384439,
   "parameters_human": "360.4M",

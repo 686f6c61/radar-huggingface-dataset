@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "ilyali034/ruT5-base-smart-home",
+  "slug": "ilyali034-rut5-base-smart-home",
+  "author": "ilyali034",
+  "url": "https://huggingface.co/ilyali034/ruT5-base-smart-home",
+  "created_at": "2026-11-08T16:21:42.000Z",
+  "updated_at": "2026-11-08T16:26:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "text2text-generation",
+    "t5",
+    "function-calling",
+    "smart-home",
+    "home-assistant",
+    "ru",
+    "dataset:RockMan256/needle-ru-opt",
+    "base_model:ai-forever/ruT5-base",
+    "base_model:finetune:ai-forever/ruT5-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "ai-forever/ruT5-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ilyali034 (ilya li) - Hugging Face",
+      "url": "https://huggingface.co/ilyali034",
+      "snippet": "ilyali034/russian-emotion-classifier-sbert-large Text Classification • 0.4B•Updated 25 days ago• 67 • 1"
+    },
+    {
+      "title": "ilyali034 (ilya li) - Hugging Face",
+      "url": "https://huggingface.co/ilyali034/models",
+      "snippet": "ilyali034's models6 Sort: Recently updated ilyali034/rubert-russian-financial-sentiment Text Classification • 0.2B•Updated 23 days ago• 26"
+    }
+  ]
+}

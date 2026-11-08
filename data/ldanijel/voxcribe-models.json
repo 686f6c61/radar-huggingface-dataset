@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "ldanijel/voxcribe-models",
+  "slug": "ldanijel-voxcribe-models",
+  "author": "ldanijel",
+  "url": "https://huggingface.co/ldanijel/voxcribe-models",
+  "created_at": "2026-11-08T20:30:19.000Z",
+  "updated_at": "2026-11-08T20:30:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "hr",
+    "bs",
+    "sr"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "ggml",
+    "automatic-speech-recognition",
+    "hr",
+    "bs",
+    "sr",
+    "base_model:GoranS/whisper-large-v3-turbo-hr-parla",
+    "base_model:finetune:GoranS/whisper-large-v3-turbo-hr-parla",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2198596470,
+  "storage_human": "2.2 GB",
+  "base_model": "GoranS/whisper-large-v3-turbo-hr-parla",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Naresh0966/voxcribe-ai",
+      "url": "https://github.com/Naresh0966/voxcribe-ai/tree/main",
+      "snippet": "1. Description Voxcribe AI is a college mini-project demonstrating a complete AI-powered web application: a React + Tailwind frontend, a FastAPI backend, a local Whisper speech-recognition model, FFmpeg-based audio processing, and a SQLite database for persistent transcription history."
+    }
+  ]
+}

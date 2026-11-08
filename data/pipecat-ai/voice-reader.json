@@ -5,7 +5,7 @@
   "author": "pipecat-ai",
   "url": "https://huggingface.co/pipecat-ai/voice-reader",
   "created_at": "2026-11-02T20:41:30.000Z",
-  "updated_at": "2026-11-04T17:18:05.000Z",
+  "updated_at": "2026-11-07T22:07:25.000Z",
   "license": "bsd-2-clause",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",
@@ -31,8 +31,8 @@
   "trending_score": 23,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 407635795,
-  "storage_human": "408 MB",
+  "storage_bytes": 545932387,
+  "storage_human": "546 MB",
   "base_model": "laion/whisper-tiny-base-emotion-voice-burst",
   "formats": [
     "onnx"

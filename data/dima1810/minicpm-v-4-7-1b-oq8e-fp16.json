@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "dima1810/MiniCPM-V-4.7-1B-oQ8e-fp16",
+  "slug": "dima1810-minicpm-v-4-7-1b-oq8e-fp16",
+  "author": "dima1810",
+  "url": "https://huggingface.co/dima1810/MiniCPM-V-4.7-1B-oQ8e-fp16",
+  "created_at": "2026-11-08T16:02:35.000Z",
+  "updated_at": "2026-11-08T16:03:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "minicpmv4_7",
+    "oq",
+    "quantized",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1554476272,
+  "parameters_human": "1.55B",
+  "storage_bytes": 3206508926,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/MiniCPM-V-4.7-1B · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B",
+      "snippet": "Speculative decoding (DSpark) Click to show speculative decoding. Speculative decoding (DSpark): we also release MiniCPM-V-4.7-1B-DSpark, a DSpark draft model trained for MiniCPM-V-4.7-1B. Inference with OpenVINO™ OpenVINO™ is an open-source toolkit for optimizing and deploying AI inference on Intel CPU/GPU/NPU platforms."
+    },
+    {
+      "title": "MiniCPM-V 4.7 - a openbmb Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/openbmb/minicpm-v-47",
+      "snippet": "A new chapter in on-device multimodal Al."
+    }
+  ]
+}

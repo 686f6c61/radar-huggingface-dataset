@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "U-Ug1kn/Qwen2.5-Math-1.5B-HigherMath",
+  "slug": "u-ug1kn-qwen2-5-math-1-5b-highermath",
+  "author": "U-Ug1kn",
+  "url": "https://huggingface.co/U-Ug1kn/Qwen2.5-Math-1.5B-HigherMath",
+  "created_at": "2026-11-07T20:03:38.000Z",
+  "updated_at": "2026-11-08T19:09:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "math",
+    "reasoning",
+    "chain-of-thought",
+    "qwen",
+    "qwen2.5",
+    "fine-tuned",
+    "higher-mathematics",
+    "university-math",
+    "text-generation",
+    "en",
+    "arxiv:2409.12122",
+    "base_model:Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986047936,
+  "storage_human": "986 MB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Math-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Math-1.5B",
+      "snippet": "Text Generation model with 2B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "unsloth/Qwen2.5-Math-1.5B · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen2.5-Math-1.5B",
+      "snippet": "The Qwen2.5-Math series models have achieved significant performance improvements compared to the Qwen2-Math series models on the Chinese and English mathematics benchmarks with CoT."
+    }
+  ]
+}

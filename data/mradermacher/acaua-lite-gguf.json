@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Acaua-Lite-GGUF",
+  "slug": "mradermacher-acaua-lite-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Acaua-Lite-GGUF",
+  "created_at": "2026-11-08T17:42:23.000Z",
+  "updated_at": "2026-11-08T17:42:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HarpiaIA_Acaua-Lite-Q3_K_L.gguf · bartowski/HarpiaIA_Acaua-Lite-GGUF at ...",
+      "url": "https://huggingface.co/bartowski/HarpiaIA_Acaua-Lite-GGUF/blob/main/HarpiaIA_Acaua-Lite-Q3_K_L.gguf",
+      "snippet": "Instructions to use bartowski/HarpiaIA_Acaua-Lite-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use bartowski/HarpiaIA_Acaua-Lite-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "bartowski/HarpiaIA_Acaua-Lite-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/HarpiaIA_Acaua-Lite-GGUF",
+      "snippet": "The corpus rendered for this model is included in this repo: HarpiaIA_Acaua-Lite-calibration-v6.txt. The imatrix is available here: HarpiaIA_Acaua-Lite-imatrix.gguf. Calibration render details"
+    }
+  ]
+}

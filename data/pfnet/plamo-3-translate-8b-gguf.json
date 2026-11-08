@@ -5,7 +5,7 @@
   "author": "pfnet",
   "url": "https://huggingface.co/pfnet/plamo-3-translate-8b-GGUF",
   "created_at": "2026-10-27T06:57:36.000Z",
-  "updated_at": "2026-11-06T00:50:19.000Z",
+  "updated_at": "2026-11-08T05:49:07.000Z",
   "license": "plamo-community-license",
   "license_family": "unknown",
   "pipeline_tag": "translation",
@@ -130,12 +130,12 @@
     "conversational"
   ],
   "likes": 11,
-  "downloads_30d": 10394,
+  "downloads_30d": 13218,
   "trending_score": 0,
   "parameters": 8531750912,
   "parameters_human": "8.53B",
-  "storage_bytes": 13042563218,
-  "storage_human": "13.0 GB",
+  "storage_bytes": 52166786738,
+  "storage_human": "52.2 GB",
   "base_model": "pfnet/plamo-3-translate-8b",
   "formats": [
     "gguf"

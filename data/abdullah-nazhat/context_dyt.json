@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Abdullah-Nazhat/Context_DyT",
+  "slug": "abdullah-nazhat-context_dyt",
+  "author": "Abdullah-Nazhat",
+  "url": "https://huggingface.co/Abdullah-Nazhat/Context_DyT",
+  "created_at": "2025-10-02T22:42:55.000Z",
+  "updated_at": "2026-11-08T19:24:45.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‏Abdullah Nazhat‏ - ‏Ph.D. | Computer Engineering | Artificial ...",
+      "url": "https://iq.linkedin.com/in/abdullah-nazhat-a5989378",
+      "snippet": "‏Ph.D. | Computer Engineering | Artificial Intelligence | Machine Learning | Deep Learning‏ · ‏AI, Machine Learning, Computer Vision and Deep Learning Developer and Researcher. Studied Electrical, Electronics and Communication Engineering at University of Tikrit, Bachelor&#39;s degree, graduate of 2012. Studied Computer Engineering at Bahcesehir University, Master&#39;s degree, graduate ..."
+    }
+  ]
+}

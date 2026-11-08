@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "sadmN/emotion-avatar-server",
+  "slug": "sadmn-emotion-avatar-server",
+  "author": "sadmN",
+  "url": "https://huggingface.co/sadmN/emotion-avatar-server",
+  "created_at": "2026-11-03T15:27:34.000Z",
+  "updated_at": "2026-11-08T12:28:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "talking-head",
+    "audio-driven",
+    "emotion-conditioning",
+    "flow-matching",
+    "imtalker",
+    "image-to-video",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9534674170,
+  "storage_human": "9.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Ultimate Guide to Choosing the Best AI Avatar Model - HyScaler",
+      "url": "https://hyscaler.com/insights/ai-avatar-models-complete-guide/",
+      "snippet": "An AI avatar is an intelligent, digitally generated persona designed to simulate human interaction. Powered by advanced artificial intelligence, these avatars go beyond static visuals, capable of speaking, gesturing, and expressing emotions with remarkable realism."
+    },
+    {
+      "title": "A Nvidia-backed startup just unveiled AI avatars that can ... - Quartz",
+      "url": "https://qz.com/synthesia-introduces-ai-avatars-human-expression-nvidia-1851434555",
+      "snippet": "A Nvidia-backed startup just unveiled AI avatars that can express human emotions Synthesia introduced its fourth-generation \"Expressive Avatars,\" which it said can express emotions like sadness ..."
+    }
+  ]
+}

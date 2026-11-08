@@ -5,7 +5,7 @@
   "author": "TheArbite",
   "url": "https://huggingface.co/TheArbite/xlmr-large-hateval-hate-speech-sv",
   "created_at": "2026-11-08T00:08:56.000Z",
-  "updated_at": "2026-11-08T00:10:55.000Z",
+  "updated_at": "2026-11-08T03:23:59.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 559894532,
   "parameters_human": "559.9M",

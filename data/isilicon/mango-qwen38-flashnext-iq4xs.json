@@ -5,7 +5,7 @@
   "author": "isilicon",
   "url": "https://huggingface.co/isilicon/mango-qwen38-flashnext-iq4xs",
   "created_at": "2026-10-29T21:08:45.000Z",
-  "updated_at": "2026-11-03T00:18:20.000Z",
+  "updated_at": "2026-11-07T22:34:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 1215,
+  "downloads_30d": 1230,
   "trending_score": 0,
   "parameters": 176943899520,
   "parameters_human": "176.94B",

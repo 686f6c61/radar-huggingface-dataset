@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "YellowDuckSweater/microduck-tug-of-war-run-1107-1349-88",
+  "slug": "yellowducksweater-microduck-tug-of-war-run-1107-1349-88",
+  "author": "YellowDuckSweater",
+  "url": "https://huggingface.co/YellowDuckSweater/microduck-tug-of-war-run-1107-1349-88",
+  "created_at": "2026-11-08T16:38:45.000Z",
+  "updated_at": "2026-11-08T16:38:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5723383,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microduck-tug-of-war-run-1106-0803-010 - Hugging Face",
+      "url": "https://huggingface.co/YellowDuckSweater/microduck-tug-of-war-run-1106-0803-010",
+      "snippet": "Robotics model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "YellowDuckSweater (Stephen Forte) - Hugging Face",
+      "url": "https://huggingface.co/YellowDuckSweater",
+      "snippet": "YellowDuckSweater/microduck-roller-sprint-2m-run-1104-2036-002 Robotics •Updated about 8 hours ago"
+    }
+  ]
+}

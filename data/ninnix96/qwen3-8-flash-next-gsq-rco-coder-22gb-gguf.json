@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Ninnix96/Qwen3.8-Flash-Next-GSQ-RCO-Coder-22GB-gguf",
+  "slug": "ninnix96-qwen3-8-flash-next-gsq-rco-coder-22gb-gguf",
+  "author": "Ninnix96",
+  "url": "https://huggingface.co/Ninnix96/Qwen3.8-Flash-Next-GSQ-RCO-Coder-22GB-gguf",
+  "created_at": "2026-11-08T12:00:36.000Z",
+  "updated_at": "2026-11-08T12:12:29.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "2-bit",
+    "iq2_xxs",
+    "iq2_s",
+    "q2_0",
+    "iq4_nl",
+    "qwen",
+    "qwen3.8",
+    "moe",
+    "mixture-of-experts",
+    "expert-pruning",
+    "mixed-precision",
+    "gsq",
+    "rco",
+    "imatrix",
+    "coding",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF",
+    "base_model:merge:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF",
+    "base_model:unsloth/Qwen3.8-Flash-Next-GGUF",
+    "base_model:merge:unsloth/Qwen3.8-Flash-Next-GGUF",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 116514464640,
+  "parameters_human": "116.51B",
+  "storage_bytes": 50786748192,
+  "storage_human": "50.8 GB",
+  "base_model": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF, unsloth/Qwen3.8-Flash-Next-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next-GSQ-RCO-Coder-22GB-gguf - Hugging Face",
+      "url": "https://huggingface.co/Ninnix96/Qwen3.8-Flash-Next-GSQ-RCO-Coder-22GB-gguf",
+      "snippet": "Instructions to use Ninnix96/Qwen3.8-Flash-Next-GSQ-RCO-Coder-22GB-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF - Hugging Face",
+      "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF/blob/main/README.md",
+      "snippet": "Qwen3.8-Flash-Next · GSQ-RCO Coder A 512-expert mixture-of-experts model with half of its experts removed, targeted at code and retaining multimodal capability. 58.4 GB against 354 GB at BF16, an effective 1.89 bits per parameter of the original transformer."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "loglogai",
   "url": "https://huggingface.co/loglogai/yvligo",
   "created_at": "2026-11-06T08:06:27.000Z",
-  "updated_at": "2026-11-06T08:13:50.000Z",
+  "updated_at": "2026-11-08T14:34:10.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

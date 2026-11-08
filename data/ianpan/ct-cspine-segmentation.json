@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "ianpan/ct-cspine-segmentation",
+  "slug": "ianpan-ct-cspine-segmentation",
+  "author": "ianpan",
+  "url": "https://huggingface.co/ianpan/ct-cspine-segmentation",
+  "created_at": "2026-11-08T20:49:48.000Z",
+  "updated_at": "2026-11-08T20:49:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "skp",
+  "languages": [],
+  "tags": [
+    "skp",
+    "medical-imaging",
+    "computed-tomography",
+    "cervical-spine",
+    "safetensors",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60078502,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ianpan (Ian Pan) - Hugging Face",
+      "url": "https://huggingface.co/ianpan/models",
+      "snippet": "AI + radiology updated a dataset 2 months ago published a dataset 2 months ago"
+    },
+    {
+      "title": "An Automated Deep Learning Approach for Spine Segmentation and ... - MDPI",
+      "url": "https://www.mdpi.com/2075-4418/13/16/2658",
+      "snippet": "Spine image analysis is based on the accurate segmentation and vertebrae recognition of the spine. Several deep learning models have been proposed for spine segmentation and vertebrae recognition, but they are very computationally demanding. In this research, a novel deep learning model is introduced for spine segmentation and vertebrae recognition using CT images. The proposed model works in ..."
+    }
+  ]
+}

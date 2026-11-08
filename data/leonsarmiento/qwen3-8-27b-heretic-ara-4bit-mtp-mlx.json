@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "leonsarmiento/Qwen3.8-27B-heretic-ara-4bit-mtp-mlx",
+  "slug": "leonsarmiento-qwen3-8-27b-heretic-ara-4bit-mtp-mlx",
+  "author": "leonsarmiento",
+  "url": "https://huggingface.co/leonsarmiento/Qwen3.8-27B-heretic-ara-4bit-mtp-mlx",
+  "created_at": "2026-11-08T12:38:12.000Z",
+  "updated_at": "2026-11-08T12:56:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mlx-vlm",
+    "qwen3",
+    "qwen3.8",
+    "mtp",
+    "4-bit",
+    "uncensored",
+    "abliterated",
+    "heretic",
+    "image-text-to-text",
+    "conversational",
+    "base_model:heretic-org/Qwen3.8-27B-heretic-ara",
+    "base_model:quantized:heretic-org/Qwen3.8-27B-heretic-ara",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 15922124372,
+  "storage_human": "15.9 GB",
+  "base_model": "heretic-org/Qwen3.8-27B-heretic-ara",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · lyf/Qwen3.8-27B-Heretic-ARA-NVFP4-MTP-VL at main",
+      "url": "https://huggingface.co/lyf/Qwen3.8-27B-Heretic-ARA-NVFP4-MTP-VL/blob/main/README.md",
+      "snippet": "Docker Model Runner How to use lyf/Qwen3.8-27B-Heretic-ARA-NVFP4-MTP-VL with Docker Model Runner: ... main Qwen3.8-27B-Heretic-ARA-NVFP4-MTP-VL /README.md lyf Improve RTX 5090 vLLM quick start and long-context profiles 7d77a51 verifiedabout 6 hours ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete 13 ..."
+    },
+    {
+      "title": "leonsarmiento/Qwen3.8-27B-3bit-mtp-mlx · Hugging Face",
+      "url": "https://huggingface.co/leonsarmiento/Qwen3.8-27B-3bit-mtp-mlx",
+      "snippet": "Qwen3.8-27B VLM with the MTP drafter baked in — the speed variant of this quantization family. Identical 3-bit mixed recipe as Qwen3.8-27B-3bit-mlx, plus the source model's Multi-Token Prediction layer bundled inside the checkpoint, so the engine runs speculative decoding natively — no separate drafter model to download or pair."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "adventists-ai",
   "url": "https://huggingface.co/adventists-ai/Sophon-Realtime-32B-Tag",
   "created_at": "2026-10-29T18:23:23.000Z",
-  "updated_at": "2026-11-07T09:33:47.000Z",
+  "updated_at": "2026-11-08T08:23:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",
@@ -15,6 +15,9 @@
     "en"
   ],
   "tags": [
+    "onnx",
+    "safetensors",
+    "sophon_realtime",
     "sophon",
     "duplexjev",
     "tag-tts",
@@ -30,14 +33,17 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 202,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 8256868023,
-  "storage_human": "8.3 GB",
+  "storage_bytes": 49822437705,
+  "storage_human": "49.8 GB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "RKB109/production-ai-observability-20261108-model",
+  "slug": "rkb109-production-ai-observability-20261108-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/production-ai-observability-20261108-model",
+  "created_at": "2026-11-08T18:50:29.000Z",
+  "updated_at": "2026-11-08T18:50:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "ai-observability",
+    "text-classification",
+    "token-classification",
+    "summarization",
+    "zero-shot-classification",
+    "dataset:RKB109/production-ai-observability-20261108-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "production-ai-observability-20261019-model - Hugging Face",
+      "url": "https://huggingface.co/RKB109/production-ai-observability-20261019-model",
+      "snippet": "This repository contains a small, transparent prototype model for Production AI teams need trace-level signals for latency, token growth, tool failures, and low-quality outputs. The model combines per-label token weights with IDF-weighted evidence retrieval. It was generated for reproducible ..."
+    },
+    {
+      "title": "RKB109/production-ai-observability-20260731-model · Hugging Face",
+      "url": "https://huggingface.co/RKB109/production-ai-observability-20260731-model",
+      "snippet": "Production AI Observability Monitor Baseline Model Model Description This repository contains a small, transparent prototype model for Production AI teams need trace-level signals for latency, token growth, tool failures, and low-quality outputs. The model combines per-label token weights with IDF-weighted evidence retrieval."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "ConceptCountry/qwen-concept-27b",
+  "slug": "conceptcountry-qwen-concept-27b",
+  "author": "ConceptCountry",
+  "url": "https://huggingface.co/ConceptCountry/qwen-concept-27b",
+  "created_at": "2026-11-08T16:39:43.000Z",
+  "updated_at": "2026-11-08T16:58:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "weight-editing",
+    "reasoning",
+    "concept-country",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A 27-Billion-Parameter AI Now Runs on Your Laptop, Free, No Cloud ...",
+      "url": "https://www.linklinkmedia.com/loop/2026-08-19/a-27-billion-parameter-ai-now-runs-on-your-laptop-free-no-cl/",
+      "snippet": "Alibaba's latest open-source release, Qwen 3, includes a 27-billion-parameter model that can run locally on a modern laptop with no internet connection required."
+    },
+    {
+      "title": "Qwen 4 27B: Release Date, What’s Confirmed, and the Hardware to Prepare ...",
+      "url": "https://www.yottalabs.ai/post/qwen-4-27b-release-date-specs-hardware-what-is-known-2026",
+      "snippet": "Alibaba named a Qwen 4 27B open-weights model at Apsara on September 22, with no specs, license, or date. What’s confirmed, what the Qwen3.8-27B tells you about it, and which GPU to have ready."
+    }
+  ]
+}

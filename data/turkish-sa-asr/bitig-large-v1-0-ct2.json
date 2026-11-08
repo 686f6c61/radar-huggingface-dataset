@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "turkish-sa-asr/bitig-large-v1.0-ct2",
+  "slug": "turkish-sa-asr-bitig-large-v1-0-ct2",
+  "author": "turkish-sa-asr",
+  "url": "https://huggingface.co/turkish-sa-asr/bitig-large-v1.0-ct2",
+  "created_at": "2026-11-08T15:54:19.000Z",
+  "updated_at": "2026-11-08T15:54:26.000Z",
+  "license": "pre-release-evaluation",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "ctranslate2",
+    "whisper",
+    "turkish",
+    "speech-recognition",
+    "faster-whisper",
+    "automatic-speech-recognition",
+    "tr",
+    "base_model:turkish-sa-asr/bitig-large-v1.0",
+    "base_model:quantized:turkish-sa-asr/bitig-large-v1.0",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3087284237,
+  "storage_human": "3.1 GB",
+  "base_model": "turkish-sa-asr/bitig-large-v1.0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "turkish-sa-asr/bitig-large-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/turkish-sa-asr/bitig-large-v1.0",
+      "snippet": "Automatic Speech Recognition model with 2B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "turkish-sa-asr (turkish-sa-asr) - Hugging Face",
+      "url": "https://huggingface.co/turkish-sa-asr",
+      "snippet": "Turkish speech recognition and speaker diarization"
+    }
+  ]
+}

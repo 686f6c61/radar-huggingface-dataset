@@ -5,7 +5,7 @@
   "author": "jiajinda",
   "url": "https://huggingface.co/jiajinda/so101-shallow-pi05-l6-red-block-to-target-v234",
   "created_at": "2026-11-06T12:42:56.000Z",
-  "updated_at": "2026-11-06T12:43:31.000Z",
+  "updated_at": "2026-11-07T07:18:03.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "openpi",
+    "safetensors",
     "robotics",
     "pi0.5",
     "so-101",
@@ -32,10 +33,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 13719750068,
-  "storage_human": "13.7 GB",
+  "storage_bytes": 25793923628,
+  "storage_human": "25.8 GB",
   "base_model": "jiajinda/so101-03-pi05-red-block-to-target-v234",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

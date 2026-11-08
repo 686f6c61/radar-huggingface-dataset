@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Grasmere-E4B-FTPO-GGUF",
+  "slug": "mradermacher-grasmere-e4b-ftpo-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Grasmere-E4B-FTPO-GGUF",
+  "created_at": "2026-11-08T20:46:08.000Z",
+  "updated_at": "2026-11-08T20:56:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "cy",
+    "ga",
+    "gd",
+    "sco",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "welsh",
+    "cymraeg",
+    "irish",
+    "gaeilge",
+    "scottish-gaelic",
+    "gàidhlig",
+    "scots",
+    "tool-calling",
+    "cy",
+    "ga",
+    "gd",
+    "sco",
+    "en",
+    "base_model:jonpojonpo/Grasmere-E4B-FTPO",
+    "base_model:quantized:jonpojonpo/Grasmere-E4B-FTPO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 46044759360,
+  "storage_human": "46.0 GB",
+  "base_model": "jonpojonpo/Grasmere-E4B-FTPO",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=1&sort=modified&search=gguf",
+      "snippet": "mradermacher/kofu-2b-edge-GGUF. 3B • Updated in about 23 hours • 264 ... jonpojonpo/Grasmere-E4B-FTPO-GGUF. 8B • Updated in about 23 hours · jonpojonpo ..."
+    },
+    {
+      "title": "jonpojonpo/Grasmere-E4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/jonpojonpo/Grasmere-E4B-GGUF",
+      "snippet": "Grasmere-E4B-FTPO cuts this to 8% greedy and 0% with sampling. It costs a little on some tasks (citation −8, legislation translation BLEU −5, maths −4 on single 100-case suites) and gains on others (TruthfulQA +4, ARC +4, PIQA +3)."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    }
+  ]
+}

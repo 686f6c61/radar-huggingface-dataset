@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "secretmoon/Giga-Embeddings-instruct-10B-A1.8B-NVFP4",
+  "slug": "secretmoon-giga-embeddings-instruct-10b-a1-8b-nvfp4",
+  "author": "secretmoon",
+  "url": "https://huggingface.co/secretmoon/Giga-Embeddings-instruct-10B-A1.8B-NVFP4",
+  "created_at": "2026-11-08T15:16:59.000Z",
+  "updated_at": "2026-11-08T15:39:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v3_bidirec",
+    "feature-extraction",
+    "embeddings",
+    "nvfp4",
+    "modelopt",
+    "vllm",
+    "mixture-of-experts",
+    "sentence-similarity",
+    "custom_code",
+    "ru",
+    "en",
+    "base_model:ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826",
+    "base_model:quantized:ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5756940800,
+  "parameters_human": "5.76B",
+  "storage_bytes": 7398026957,
+  "storage_human": "7.4 GB",
+  "base_model": "ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826 · Hugging Face",
+      "url": "https://huggingface.co/ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826",
+      "snippet": "Instructions to use ai-sage/Giga-Embeddings-instruct-10B-A1.8B-0826 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Giga-Embeddings - a ai-sage Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ai-sage/giga-embeddings",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

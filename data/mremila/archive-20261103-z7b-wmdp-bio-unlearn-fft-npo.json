@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mremila/archive-20261103-z7b-wmdp-bio-unlearn-fft-npo",
+  "slug": "mremila-archive-20261103-z7b-wmdp-bio-unlearn-fft-npo",
+  "author": "mremila",
+  "url": "https://huggingface.co/mremila/archive-20261103-z7b-wmdp-bio-unlearn-fft-npo",
+  "created_at": "2026-11-08T17:07:37.000Z",
+  "updated_at": "2026-11-08T17:11:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "generated_from_trainer",
+    "conversational",
+    "dataset:cais/wmdp-bio-forget-corpus",
+    "dataset:Salesforce/wikitext",
+    "base_model:HuggingFaceH4/zephyr-7b-beta",
+    "base_model:finetune:HuggingFaceH4/zephyr-7b-beta",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 15008325369,
+  "storage_human": "15.0 GB",
+  "base_model": "HuggingFaceH4/zephyr-7b-beta",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "archive-20261103-z7b-wmdp-bio-unlearn-fft-rmu-weight-distance",
+      "url": "https://huggingface.co/mremila/archive-20261103-z7b-wmdp-bio-unlearn-fft-rmu-weight-distance",
+      "snippet": "Instructions to use mremila/archive-20261103-z7b-wmdp-bio-unlearn-fft-rmu-weight-distance with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "z7b-wmdp-bio__5pp__unlearn-fft-npo-wd__relearn-fft",
+      "url": "https://huggingface.co/mremila/z7b-wmdp-bio__5pp__unlearn-fft-npo-wd__relearn-fft",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "GSaha567/knowledge-editor-checkpoints",
+  "slug": "gsaha567-knowledge-editor-checkpoints",
+  "author": "GSaha567",
+  "url": "https://huggingface.co/GSaha567/knowledge-editor-checkpoints",
+  "created_at": "2026-11-08T19:12:57.000Z",
+  "updated_at": "2026-11-08T19:34:44.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "knowledge-editing",
+    "hypernetwork",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135697777709,
+  "storage_human": "135.7 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct, Qwen/Qwen2.5-1.5B-Instruct, Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Are AI Checkpoints? Uses, Benefits & Sharing | WEKA",
+      "url": "https://www.weka.io/learn/ai-checkpoints",
+      "snippet": "What Is an AI Checkpoint? AI checkpoints are saved states of a machine learning model at a particular point in its training process. They usually include the model’s parameters—weights and biases—and sometimes additional information, such as the optimizer state, epoch number, or training progress. AI checkpoints are typically saved in formats like .pt or .pth for PyTorch models and .ckpt ..."
+    }
+  ]
+}

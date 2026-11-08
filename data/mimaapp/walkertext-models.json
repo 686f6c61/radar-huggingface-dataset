@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mimaapp/walkertext-models",
+  "slug": "mimaapp-walkertext-models",
+  "author": "mimaapp",
+  "url": "https://huggingface.co/mimaapp/walkertext-models",
+  "created_at": "2026-10-05T08:16:36.000Z",
+  "updated_at": "2026-11-08T14:24:17.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "speech-recognition",
+    "whisper.cpp",
+    "parakeet",
+    "whisper",
+    "vad",
+    "multilingual",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1543830292,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mimaapp/walkertext-models · Hugging Face",
+      "url": "https://huggingface.co/mimaapp/walkertext-models",
+      "snippet": "WalkerText — on-device models Mirror of the two model files downloaded by the WalkerText Android app (com.mimaapp.captions) to create subtitles on the phone, without sending videos anywhere. The files are byte-identical copies of the originals; they are hosted here only so the app does not depend on someone else's repository."
+    },
+    {
+      "title": "mimaapp (MimaApp) - Hugging Face",
+      "url": "https://huggingface.co/mimaapp",
+      "snippet": "Org profile for MimaApp on Hugging Face, the AI community building the future."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "nikitastheo/v6-mixed-25k-lower-ablated-shared-ewc5-slk-ell-sequential",
+  "slug": "nikitastheo-v6-mixed-25k-lower-ablated-shared-ewc5-slk-ell-sequential",
+  "author": "nikitastheo",
+  "url": "https://huggingface.co/nikitastheo/v6-mixed-25k-lower-ablated-shared-ewc5-slk-ell-sequential",
+  "created_at": "2026-11-08T12:27:13.000Z",
+  "updated_at": "2026-11-08T13:13:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123886080,
+  "parameters_human": "123.9M",
+  "storage_bytes": 495559296,
+  "storage_human": "496 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nikitastheo/v6-mixed-25k-lower-shared-ewc5-eng-ell-sequential · Hugging ...",
+      "url": "https://huggingface.co/nikitastheo/v6-mixed-25k-lower-shared-ewc5-eng-ell-sequential",
+      "snippet": "nikitastheo / v6-mixed-25k-lower-shared-ewc5-eng-ell-sequential Like 0 Text Generation Transformers Safetensors gpt2 causal-lm text-generation-inference Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "v6-mixed-25k-lower-ewc5-ell-ell-sequential - Hugging Face",
+      "url": "https://huggingface.co/nikitastheo/v6-mixed-25k-lower-ewc5-ell-ell-sequential",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "WhyZosa/llm-course-hw3-lora",
+  "slug": "whyzosa-llm-course-hw3-lora",
+  "author": "WhyZosa",
+  "url": "https://huggingface.co/WhyZosa/llm-course-hw3-lora",
+  "created_at": "2026-11-08T19:56:28.000Z",
+  "updated_at": "2026-11-08T19:58:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:cardiffnlp/tweet_eval",
+    "base_model:OuteAI/Lite-Oute-1-300M-Instruct",
+    "base_model:finetune:OuteAI/Lite-Oute-1-300M-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 300031872,
+  "parameters_human": "300.0M",
+  "storage_bytes": 1200650547,
+  "storage_human": "1.2 GB",
+  "base_model": "OuteAI/Lite-Oute-1-300M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sodeniZz/llm-course-hw3-lora · Hugging Face",
+      "url": "https://huggingface.co/sodeniZz/llm-course-hw3-lora",
+      "snippet": "Model Card: llm-course-hw3-lora This model was fine-tuned as part of Homework 3 in the HSE LLM Course. It applies a custom LoRA implementation for sentiment classification, using standard causal language modeling training."
+    }
+  ]
+}

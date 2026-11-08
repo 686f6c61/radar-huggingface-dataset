@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "satoshi3/attune-l3eW",
+  "slug": "satoshi3-attune-l3ew",
+  "author": "satoshi3",
+  "url": "https://huggingface.co/satoshi3/attune-l3eW",
+  "created_at": "2026-11-08T17:20:41.000Z",
+  "updated_at": "2026-11-08T17:27:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 780979360,
+  "parameters_human": "781.0M",
+  "storage_bytes": 3124002296,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "satoshi3 (Satoshi Anai) - Hugging Face",
+      "url": "https://huggingface.co/satoshi3",
+      "snippet": "Recent Activity published a model2 days ago satoshi3/attune-l3cA updated a model2 days ago satoshi3/attune-l3cA published a model3 days ago satoshi3/attune-vector-l3-run3c View all activity"
+    }
+  ]
+}

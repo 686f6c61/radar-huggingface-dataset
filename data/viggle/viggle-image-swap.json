@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Viggle/Viggle-Image-Swap",
+  "slug": "viggle-viggle-image-swap",
+  "author": "Viggle",
+  "url": "https://huggingface.co/Viggle/Viggle-Image-Swap",
+  "created_at": "2026-10-27T05:10:33.000Z",
+  "updated_at": "2026-11-03T22:07:57.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "image-to-image",
+    "image-editing",
+    "character-swap",
+    "few-step",
+    "qwen-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 322,
+  "trending_score": 15,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1368082553,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Video Tools | Viggle AI",
+      "url": "https://viggle.ai/tools",
+      "snippet": "Meme MakerMake a meme videoSwap single characterAdd motion to characterSwap multiple charactersSwap characters in real-timeUse it in your AI agent ... Create viral videos, swap faces, animate photos, and more — all powered by Viggle's JST-1 model."
+    },
+    {
+      "title": "Viggle | Turn your imagination into 3D motion",
+      "url": "https://viggle.ai/",
+      "snippet": "Characters, motion and 3D scenes from one physics-native world model. ... Build character swapping, motion capture, and interactive experiences into games, creative tools, and applications with Viggle's API."
+    },
+    {
+      "title": "Viggle-Image-Swap - Hugging Face",
+      "url": "https://huggingface.co/Viggle/Viggle-Image-Swap",
+      "snippet": "Image-to-Image model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Viggle AI Dance",
+      "url": "https://viggleai.io/",
+      "snippet": "Viggle AI is a powerful AI animation tool and image-to-video generator. Viggle AI lets you easily animate characters and create …"
+    },
+    {
+      "title": "Real-Time AI Avatar — Viggle LIVE | Viggle AI",
+      "url": "https://viggle.ai/tools/viggle-live/real-time-ai-avatar",
+      "snippet": "Real-Time AI Avatar Viggle LIVE Real-time AI avatar creators care about latency and setup friction first. With Viggle LIVE, you can start from a single image, run a quick calibration check, and go live with your current stack. No full rigging pipeline is required for first use. This is a practical option for ai vtuber avatar, obs ai avatar, and live character swap streams."
+    }
+  ]
+}

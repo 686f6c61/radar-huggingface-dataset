@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "working1e7987982/video",
+  "slug": "working1e7987982-video",
+  "author": "working1e7987982",
+  "url": "https://huggingface.co/working1e7987982/video",
+  "created_at": "2026-11-08T12:30:52.000Z",
+  "updated_at": "2026-11-08T12:30:52.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "31 Open-Source AI Video Models: Free Tools to Make Videos in 2026",
+      "url": "https://aifreeforever.com/blog/open-source-ai-video-models-free-tools-to-make-videos",
+      "snippet": "Open-source AI video models let you make videos from text or images without paying per clip. You keep your data private, avoid subscription fees, and run everything on your own computer or cheap cloud rental. This guide walks through 31 open-source video generation models."
+    },
+    {
+      "title": "10 Best AI Video Generators (November 2026) - Unite.AI",
+      "url": "https://www.unite.ai/best-ai-video-generators/",
+      "snippet": "AI video generators now cover several distinct workflows. Some turn scripts, articles, presentations, and URLs into edited videos; others generate original footage from text or reference images; and avatar platforms create presenter-led content in many languages without cameras or actors."
+    }
+  ]
+}

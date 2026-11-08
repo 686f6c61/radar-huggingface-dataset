@@ -5,7 +5,7 @@
   "author": "unsup-opsd",
   "url": "https://huggingface.co/unsup-opsd/ckpts",
   "created_at": "2026-07-20T04:06:56.000Z",
-  "updated_at": "2026-09-23T17:00:40.000Z",
+  "updated_at": "2026-11-03T09:19:05.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 8694438008054,
-  "storage_human": "8694.4 GB",
+  "storage_bytes": 4886490967859,
+  "storage_human": "4886.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Spark-4B-Faboulous-Edition-GGUF",
   "created_at": "2026-11-06T21:15:44.000Z",
-  "updated_at": "2026-11-06T22:31:00.000Z",
+  "updated_at": "2026-11-07T18:48:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 260,
+  "downloads_30d": 448,
   "trending_score": 0,
   "parameters": 4112079360,
   "parameters_human": "4.11B",

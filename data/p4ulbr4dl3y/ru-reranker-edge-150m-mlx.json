@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "p4ulbr4dl3y/ru-reranker-edge-150m-MLX",
+  "slug": "p4ulbr4dl3y-ru-reranker-edge-150m-mlx",
+  "author": "p4ulbr4dl3y",
+  "url": "https://huggingface.co/p4ulbr4dl3y/ru-reranker-edge-150m-MLX",
+  "created_at": "2026-11-08T18:12:43.000Z",
+  "updated_at": "2026-11-08T18:14:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "mlx",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "modernbert",
+    "reranker",
+    "cross-encoder",
+    "russian",
+    "text-ranking",
+    "ru",
+    "base_model:sshalimov04/ru-reranker-edge-150m",
+    "base_model:finetune:sshalimov04/ru-reranker-edge-150m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149605633,
+  "parameters_human": "149.6M",
+  "storage_bytes": 299225338,
+  "storage_human": "299 MB",
+  "base_model": "sshalimov04/ru-reranker-edge-150m",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "p4ulbr4dl3y/ru-reranker-edge-150m-GGUF · Hugging Face",
+      "url": "https://huggingface.co/p4ulbr4dl3y/ru-reranker-edge-150m-GGUF",
+      "snippet": "Machine learning model with 0.1B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "sshalimov04/ru-reranker-edge-150m · Hugging Face",
+      "url": "https://huggingface.co/sshalimov04/ru-reranker-edge-150m",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

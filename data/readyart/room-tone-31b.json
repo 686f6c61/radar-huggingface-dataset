@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ReadyArt/Room-Tone-31B",
+  "slug": "readyart-room-tone-31b",
+  "author": "ReadyArt",
+  "url": "https://huggingface.co/ReadyArt/Room-Tone-31B",
+  "created_at": "2026-11-08T12:40:29.000Z",
+  "updated_at": "2026-11-08T13:46:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "nsfw",
+    "roleplay",
+    "adult-content",
+    "mature",
+    "conversational",
+    "multi-character",
+    "ensemble",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507874,
+  "storage_human": "62.6 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt (Ready.Art) – Models - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/models",
+      "snippet": "Org profile for Ready.Art on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ReadyArt (Ready.Art) - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt",
+      "snippet": "Org profile for Ready.Art on Hugging Face, the AI community building the future."
+    }
+  ]
+}

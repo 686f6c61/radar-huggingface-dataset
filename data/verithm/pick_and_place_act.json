@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Verithm/pick_and_place_act",
+  "slug": "verithm-pick_and_place_act",
+  "author": "Verithm",
+  "url": "https://huggingface.co/Verithm/pick_and_place_act",
+  "created_at": "2026-11-08T13:04:23.000Z",
+  "updated_at": "2026-11-08T13:04:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Verithm/pick_and_place_1104_20261104_142149",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Verithm/pick_and_place_1104_20261104_142149 - Hugging Face",
+      "url": "https://huggingface.co/datasets/Verithm/pick_and_place_1104_20261104_142149",
+      "snippet": "Dataset with 24.7k rows (Tabular, Time-series, Video). Explore, preview and download it on Hugging Face."
+    },
+    {
+      "title": "GitHub - verithm/verithm",
+      "url": "https://github.com/verithm/verithm",
+      "snippet": "yai-alfworld · Yonsei AI, 2026 Language models as policies for long-horizon, sparse-reward decision making. At 8B, supervised fine-tuning and inference-time reasoning turn out to buy different things: the agent whose prompt format matched the training data exactly scored 0.7%, while adding a reflection step reached 78.4%."
+    },
+    {
+      "title": "Here’s when to expect results in Alaska’s 2026 statewide primary election",
+      "url": "https://alaskabeacon.com/2026/07/30/heres-when-to-expect-results-in-alaskas-2026-statewide-primary-election/",
+      "snippet": "Jul 30, 2026 · The final unofficial tally will take place Aug. 28, 10 days after election day, and the division expects to certify official …"
+    }
+  ]
+}

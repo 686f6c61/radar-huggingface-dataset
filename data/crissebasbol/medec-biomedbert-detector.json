@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "crissebasbol/medec-biomedbert-detector",
+  "slug": "crissebasbol-medec-biomedbert-detector",
+  "author": "crissebasbol",
+  "url": "https://huggingface.co/crissebasbol/medec-biomedbert-detector",
+  "created_at": "2026-11-08T17:35:11.000Z",
+  "updated_at": "2026-11-08T17:35:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "medical",
+    "clinical-notes",
+    "error-detection",
+    "mediqa-corr",
+    "medec",
+    "text-classification",
+    "en",
+    "base_model:microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+    "base_model:finetune:microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437958648,
+  "storage_human": "438 MB",
+  "base_model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - BioMedBERT/biomedbert: BioMedBERT: A Pre-trained Biomedical ...",
+      "url": "https://github.com/BioMedBERT/biomedbert",
+      "snippet": "Train BioMedBERT-Large from BERT weights: biomedbert code train model large biomedbert_large_breathe_wikipedia_bert_weights_vocab pre_trained_biomed_wikipedia_data_bert_vocab ekaba-assets biomedbert 100000 128b"
+    },
+    {
+      "title": "BiomedBERT Open-Source Biomedical Language Model - Based on Massive ...",
+      "url": "https://model.aibase.com/models/details/1915687190094626817",
+      "snippet": "BiomedBERT is a biomedical domain-specific language model pretrained on PubMed abstracts and PubMedCentral full-text articles, achieving state-of-the-art performance in multiple biomedical NLP tasks."
+    }
+  ]
+}

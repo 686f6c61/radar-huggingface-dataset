@@ -5,7 +5,7 @@
   "author": "wesjos",
   "url": "https://huggingface.co/wesjos/Qwen3.8-27B-HTML-LoRA-GGUF",
   "created_at": "2026-10-25T09:54:46.000Z",
-  "updated_at": "2026-11-07T12:58:22.000Z",
+  "updated_at": "2026-11-08T10:18:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 10485760,
   "parameters_human": "10.5M",
-  "storage_bytes": 31919874,
-  "storage_human": "32 MB",
+  "storage_bytes": 37815247,
+  "storage_human": "38 MB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

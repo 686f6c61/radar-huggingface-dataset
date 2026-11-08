@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "hisplan/llama31-8b-finetuned-exp02b-assertive-data",
+  "slug": "hisplan-llama31-8b-finetuned-exp02b-assertive-data",
+  "author": "hisplan",
+  "url": "https://huggingface.co/hisplan/llama31-8b-finetuned-exp02b-assertive-data",
+  "created_at": "2026-11-08T13:46:54.000Z",
+  "updated_at": "2026-11-08T14:05:48.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "alpaca",
+    "qlora",
+    "mini-llm-camp",
+    "ko",
+    "base_model:hisplan/llama-3.1-8b-ko-alpaca-sft-merged",
+    "base_model:finetune:hisplan/llama-3.1-8b-ko-alpaca-sft-merged",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16161712912,
+  "storage_human": "16.2 GB",
+  "base_model": "hisplan/llama-3.1-8b-ko-alpaca-sft-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ASTERIZER/llama31 · Hugging Face",
+      "url": "https://huggingface.co/ASTERIZER/llama31",
+      "snippet": "Model Information The Meta Llama 3.1 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction tuned generative models in 8B, 70B and 405B sizes (text in/text out). The Llama 3.1 instruction tuned text only models (8B, 70B, 405B) are optimized for multilingual dialogue use cases and outperform many of the available open source and closed chat models ..."
+    }
+  ]
+}

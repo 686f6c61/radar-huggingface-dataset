@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "hell0ks/gemma-4-26B-A4B-it-multitool-FP8",
+  "slug": "hell0ks-gemma-4-26b-a4b-it-multitool-fp8",
+  "author": "hell0ks",
+  "url": "https://huggingface.co/hell0ks/gemma-4-26B-A4B-it-multitool-FP8",
+  "created_at": "2026-11-08T15:31:14.000Z",
+  "updated_at": "2026-11-08T15:39:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "unsloth",
+    "image-text-to-text",
+    "conversational",
+    "dataset:stepfun-ai/Step-3.5-Flash-SFT",
+    "base_model:hell0ks/gemma-4-26B-A4B-it-multitool",
+    "base_model:quantized:hell0ks/gemma-4-26B-A4B-it-multitool",
+    "license:apache-2.0",
+    "license:cc-by-nc-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 27197444768,
+  "storage_human": "27.2 GB",
+  "base_model": "hell0ks/gemma-4-26B-A4B-it-multitool",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hell0ks/gemma-4-26B-A4B-it-multitool · Hugging Face",
+      "url": "https://huggingface.co/hell0ks/gemma-4-26B-A4B-it-multitool",
+      "snippet": "Gemma 4 26B A4B IT Multitool An attempt to tool-friendly Gemma 4. Problem was simple: The model knows how to use the functions and it does use it, but in lazy way."
+    },
+    {
+      "title": "google/gemma-4-26B-A4B-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "meetara-lab/meetara-voxtral-mini-3b-2507-gguf",
+  "slug": "meetara-lab-meetara-voxtral-mini-3b-2507-gguf",
+  "author": "meetara-lab",
+  "url": "https://huggingface.co/meetara-lab/meetara-voxtral-mini-3b-2507-gguf",
+  "created_at": "2026-11-08T13:59:20.000Z",
+  "updated_at": "2026-11-08T14:00:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "meetara",
+    "audio",
+    "speech-recognition",
+    "audio-text-to-text",
+    "base_model:mistralai/Voxtral-Mini-3B-2507",
+    "base_model:quantized:mistralai/Voxtral-Mini-3B-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4014136320,
+  "parameters_human": "4.01B",
+  "storage_bytes": 3188706272,
+  "storage_human": "3.2 GB",
+  "base_model": "mistralai/Voxtral-Mini-3B-2507",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/voxtral-mini-3b | Readme and Docs",
+      "url": "https://replicate.com/mistralai/voxtral-mini-3b/readme",
+      "snippet": "Voxtral Mini 1.0 (3B) - 2507 Voxtral Mini is an enhancement of Ministral 3B, incorporating state-of-the-art audio input capabilities while retaining best-in-class text performance. It excels at speech transcription, translation and audio understanding. Learn more about Voxtral in our blog post here. Key Features Voxtral builds upon Ministral-3B with powerful audio understanding capabilities ..."
+    },
+    {
+      "title": "mistralai/voxtral-mini-3b | Run with an API on Replicate",
+      "url": "https://replicate.com/mistralai/voxtral-mini-3b",
+      "snippet": "Voxtral Mini 1.0 (3B) - 2507 Voxtral Mini is an enhancement of Ministral 3B, incorporating state-of-the-art audio input capabilities while retaining best-in-class text performance. It excels at speech transcription, translation and audio understanding. Learn more about Voxtral in our blog post here. Key Features Voxtral builds upon Ministral-3B with powerful audio understanding capabilities ..."
+    }
+  ]
+}

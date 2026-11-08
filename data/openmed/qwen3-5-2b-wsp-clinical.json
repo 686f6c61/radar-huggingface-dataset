@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OpenMed/Qwen3.5-2B-WSP-Clinical",
+  "slug": "openmed-qwen3-5-2b-wsp-clinical",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/Qwen3.5-2B-WSP-Clinical",
+  "created_at": "2026-11-03T16:59:04.000Z",
+  "updated_at": "2026-11-08T17:43:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "openmed",
+    "medical",
+    "clinical",
+    "medqa",
+    "weight-space-programming",
+    "conversational",
+    "dataset:GBaker/MedQA-USMLE-4-options",
+    "dataset:openlifescienceai/medmcqa",
+    "dataset:cais/mmlu",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 2274069824,
+  "parameters_human": "2.27B",
+  "storage_bytes": 4563941576,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Clinical multiple-choice questions",
+      "dataset": "MedQA-USMLE (4 options)",
+      "metric": "Accuracy (thinking on, one sample, seed 0)",
+      "value": 70.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "OpenMed/Qwen3.5-2B-MedVL · Hugging Face",
+      "url": "https://huggingface.co/OpenMed/Qwen3.5-2B-MedVL",
+      "snippet": "Qwen3.5-2B fine-tuned on ~200K medical VQA records from the SynthVision pipeline. Best overall model in the SynthVision family ..."
+    },
+    {
+      "title": "Qwen/Qwen3.5-2B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-2B",
+      "snippet": "Image-Text-to-Text model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

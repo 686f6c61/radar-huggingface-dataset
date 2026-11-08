@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SolsticeAI/Terminal-RSI-27B-Q8_0-GGUF",
+  "slug": "solsticeai-terminal-rsi-27b-q8_0-gguf",
+  "author": "SolsticeAI",
+  "url": "https://huggingface.co/SolsticeAI/Terminal-RSI-27B-Q8_0-GGUF",
+  "created_at": "2026-11-08T18:18:09.000Z",
+  "updated_at": "2026-11-08T18:20:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "terminal-rsi",
+    "terminal-agent",
+    "reinforcement-learning",
+    "recursive-self-improvement",
+    "code",
+    "long-context",
+    "qwen3_5",
+    "arxiv:2610.22192",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Teriminal-RSI/Terminal-RSI-27B",
+    "base_model:quantized:Teriminal-RSI/Terminal-RSI-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 29047084608,
+  "storage_human": "29.0 GB",
+  "base_model": "Teriminal-RSI/Terminal-RSI-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive ...",
+      "url": "https://www.emergentmind.com/papers/2610.22192",
+      "snippet": "Converting verifier outcomes into useful policy updates and partial progress into complete task resolution is crucial for terminal agents. We present Terminal-RSI, which alternates Recursive Self-Rewrite (RSR) of verified trajectories with critic-inheriting Recursive Policy-Refine (RPR). We formulate Turn-Boundary Skip-Observation GAE (TB-GAE) to retain token-specific baselines while applying ..."
+    },
+    {
+      "title": "Teriminal-RSI_Terminal-RSI-27B-Q8_0.gguf - Hugging Face",
+      "url": "https://huggingface.co/bartowski/Teriminal-RSI_Terminal-RSI-27B-GGUF/blob/main/Teriminal-RSI_Terminal-RSI-27B-Q8_0.gguf",
+      "snippet": "Instructions to use bartowski/Teriminal-RSI_Terminal-RSI-27B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use bartowski/Teriminal-RSI_Terminal-RSI-27B-GGUF with llama.cpp: Install (macOS, Linux)"
+    }
+  ]
+}

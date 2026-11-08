@@ -5,7 +5,7 @@
   "author": "williamliao",
   "url": "https://huggingface.co/williamliao/Qwen3.8-Mixed-NVFP4-FP8-GGUF",
   "created_at": "2026-11-06T15:08:09.000Z",
-  "updated_at": "2026-11-07T06:55:21.000Z",
+  "updated_at": "2026-11-07T12:19:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,12 +30,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 278,
+  "downloads_30d": 770,
   "trending_score": 0,
   "parameters": 27320698465,
   "parameters_human": "27.32B",
-  "storage_bytes": 42483575328,
-  "storage_human": "42.5 GB",
+  "storage_bytes": 63499937504,
+  "storage_human": "63.5 GB",
   "base_model": "Qwen/Qwen3.8-27B, HangGlidersRule/Darkstar-Qwen3.8-27B-Base-ModelOpt-W4A16-NVFP4-Mixed-FP8",
   "formats": [
     "gguf"

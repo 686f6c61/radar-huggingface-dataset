@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "elifnuraygun/iu-cxr-report-lora",
+  "slug": "elifnuraygun-iu-cxr-report-lora",
+  "author": "elifnuraygun",
+  "url": "https://huggingface.co/elifnuraygun/iu-cxr-report-lora",
+  "created_at": "2026-11-08T17:39:01.000Z",
+  "updated_at": "2026-11-08T17:39:10.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "text-to-image",
+    "lora",
+    "chest-radiograph",
+    "research",
+    "en",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:adapter:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76638720,
+  "storage_human": "77 MB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - elfnrkck/iu-cxr-report-lora",
+      "url": "https://github.com/elfnrkck/iu-cxr-report-lora",
+      "snippet": "Contribute to elfnrkck/iu-cxr-report-lora development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Lalitaditya-tickoo/CXR-ReportGen: Automated radiology report ...",
+      "url": "https://github.com/Lalitaditya-tickoo/CXR-ReportGen",
+      "snippet": "This project presents an end-to-end pipeline for automated radiology report generation from chest X-ray images. A frozen EfficientNet-B3 extracts visual features which are projected into the embedding space of BioGPT, a domain-specific language model pretrained on 15M PubMed abstracts. BioGPT is fine-tuned efficiently using LoRA (rank=8), keeping trainable parameters under 1.5M while achieving ..."
+    }
+  ]
+}

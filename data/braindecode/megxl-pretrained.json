@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "braindecode/megxl-pretrained",
+  "slug": "braindecode-megxl-pretrained",
+  "author": "braindecode",
+  "url": "https://huggingface.co/braindecode/megxl-pretrained",
+  "created_at": "2026-11-08T14:07:43.000Z",
+  "updated_at": "2026-11-08T14:07:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "braindecode",
+  "languages": [],
+  "tags": [
+    "braindecode",
+    "pytorch",
+    "safetensors",
+    "meg",
+    "megxl",
+    "brain-to-text",
+    "foundation-model",
+    "arxiv:2602.02494",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24245876,
+  "parameters_human": "24.2M",
+  "storage_bytes": 194069739,
+  "storage_human": "194 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

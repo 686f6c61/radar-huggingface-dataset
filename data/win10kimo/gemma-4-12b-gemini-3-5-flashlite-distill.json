@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "win10kimo/Gemma-4-12B-Gemini-3.5-FlashLite-Distill",
+  "slug": "win10kimo-gemma-4-12b-gemini-3-5-flashlite-distill",
+  "author": "win10kimo",
+  "url": "https://huggingface.co/win10kimo/Gemma-4-12B-Gemini-3.5-FlashLite-Distill",
+  "created_at": "2026-11-08T16:18:51.000Z",
+  "updated_at": "2026-11-08T16:24:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "gemma-4",
+    "unsloth",
+    "qlora",
+    "distillation",
+    "gemini-3.5-flash-lite",
+    "tool-calling",
+    "cli-agent",
+    "reasoning",
+    "lmstudio",
+    "llama-cpp",
+    "image-text-to-text",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 52379904,
+  "parameters_human": "52.4M",
+  "storage_bytes": 175115392,
+  "storage_human": "175 MB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "This model card is for the Gemma 4 12B Unified model, which is part of the Gemma 4 family of open models. Built with the same multimodal functionality as Gemma 4 E2B and E4B (text, audio, image, and video inputs), it brings native audio and vision understanding directly to local environments without the need for separate encoders."
+    }
+  ]
+}

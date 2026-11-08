@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "jaigoumata/jai-goumata-apk",
+  "slug": "jaigoumata-jai-goumata-apk",
+  "author": "jaigoumata",
+  "url": "https://huggingface.co/jaigoumata/jai-goumata-apk",
+  "created_at": "2026-11-08T12:00:47.000Z",
+  "updated_at": "2026-11-08T12:03:14.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2000000,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jaigoumata/jai-goumata-apk · Hugging Face",
+      "url": "https://huggingface.co/jaigoumata/jai-goumata-apk",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "#ai #aibabaglobal #motivation #jaigoumata - YouTube",
+      "url": "https://www.youtube.com/watch?v=uWfMkdWnaiQ",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "skysystem-studio/hearth-taesdxl",
+  "slug": "skysystem-studio-hearth-taesdxl",
+  "author": "skysystem-studio",
+  "url": "https://huggingface.co/skysystem-studio/hearth-taesdxl",
+  "created_at": "2026-11-08T14:36:09.000Z",
+  "updated_at": "2026-11-08T14:36:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2445063,
+  "parameters_human": "2.4M",
+  "storage_bytes": 9793292,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Manojb/taesdxl · Hugging Face",
+      "url": "https://huggingface.co/Manojb/taesdxl",
+      "snippet": "🍰 Tiny AutoEncoder for Stable Diffusion (XL) TAESDXL is very tiny autoencoder which uses the same \"latent API\" as SDXL-VAE. TAESDXL is useful for real-time previewing of the SDXL generation process. This repo contains .safetensors versions of the TAESDXL weights. For SD1.x / SD2.x, use TAESD instead (the SD and SDXL VAEs are incompatible). Using in 🧨 diffusers"
+    }
+  ]
+}

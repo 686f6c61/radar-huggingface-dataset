@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Anirudhan123098/cricket-commentary-slm-gguf",
+  "slug": "anirudhan123098-cricket-commentary-slm-gguf",
+  "author": "Anirudhan123098",
+  "url": "https://huggingface.co/Anirudhan123098/cricket-commentary-slm-gguf",
+  "created_at": "2026-11-08T17:19:28.000Z",
+  "updated_at": "2026-11-08T17:19:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048224,
+  "storage_human": "986 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Enhanced Cricket Commentary Using AI Vision and Multilingual ...",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11118722",
+      "snippet": "This paper presents a novel approach to generating cricket commentary using AI vision and multilingual support. The system utilizes GPT-4 Vision to process short, audio-free cricket videos as input, analyzing frames in video to create detailed visual descriptions of the ongoing action. Based on these frame-by-frame descriptions, commentary is automatically generated using GPT-40 Mini, which ..."
+    },
+    {
+      "title": "Fine-tuning OpenAI models: Part 1 — Data Generation",
+      "url": "https://medium.com/@manaranjanp/fine-tuning-openai-model-extracting-valuable-information-from-cricket-commentary-1e653ea9a19b",
+      "snippet": "This approach allows us to provide numerous examples to the model during fine-tuning, helping it learn to consistently extract and structure information from cricket commentaries."
+    }
+  ]
+}

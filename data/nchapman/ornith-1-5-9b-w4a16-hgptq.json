@@ -5,7 +5,7 @@
   "author": "nchapman",
   "url": "https://huggingface.co/nchapman/Ornith-1.5-9B-W4A16-HGPTQ",
   "created_at": "2026-11-07T09:32:09.000Z",
-  "updated_at": "2026-11-07T09:32:42.000Z",
+  "updated_at": "2026-11-07T15:32:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 40,
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "ketimiroshnik/llm-course-hw3-tinyllama-qlora",
+  "slug": "ketimiroshnik-llm-course-hw3-tinyllama-qlora",
+  "author": "ketimiroshnik",
+  "url": "https://huggingface.co/ketimiroshnik/llm-course-hw3-tinyllama-qlora",
+  "created_at": "2026-11-08T19:44:22.000Z",
+  "updated_at": "2026-11-08T19:44:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "sentiment-analysis",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:cardiffnlp/tweet_eval",
+    "base_model:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "base_model:adapter:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18545579,
+  "storage_human": "19 MB",
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Fine-Tune an LLM With LoRA: 12 Steps [2026]",
+      "url": "https://tech-insider.org/how-to-fine-tune-llm-lora-2026/",
+      "snippet": "Fine-tune an open-source LLM with LoRA and QLoRA in 12 steps: setup, dataset prep, training, evaluation, and deployment with real 2026 GPU pricing."
+    },
+    {
+      "title": "Ollama 2026: Run Local LLMs on Your Computer (Full Guide)",
+      "url": "https://itsourcecode.com/ai-framework/ollama-run-local-llms-2026-complete-guide/",
+      "snippet": "For learning the LLM engineering patterns that make local models useful in production, courses on Coursera and DataCamp cover fine-tuning, RAG, and eval workflows end to end. Bottom line for 2026 developers Ollama makes local LLMs practical for every developer in 2026. Two commands and you have a working chat model on your laptop."
+    }
+  ]
+}

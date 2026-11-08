@@ -5,7 +5,7 @@
   "author": "hweller1",
   "url": "https://huggingface.co/hweller1/wayfinder-glimmer-30b",
   "created_at": "2026-10-28T18:14:28.000Z",
-  "updated_at": "2026-11-02T22:20:09.000Z",
+  "updated_at": "2026-11-08T05:11:08.000Z",
   "license": "apache-2.0-and-muse-model-license",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 406,
+  "downloads_30d": 1193,
   "trending_score": 0,
   "parameters": 29776626688,
   "parameters_human": "29.78B",

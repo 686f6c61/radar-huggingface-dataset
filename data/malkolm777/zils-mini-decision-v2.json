@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "malkolm777/zils-mini-decision-v2",
+  "slug": "malkolm777-zils-mini-decision-v2",
+  "author": "malkolm777",
+  "url": "https://huggingface.co/malkolm777/zils-mini-decision-v2",
+  "created_at": "2026-11-08T17:35:30.000Z",
+  "updated_at": "2026-11-08T17:36:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "feature-extraction",
+    "decision-model",
+    "zils",
+    "d3-mini",
+    "custom_code",
+    "base_model:vllm-sr/d3-mini",
+    "base_model:finetune:vllm-sr/d3-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9094035342,
+  "storage_human": "9.1 GB",
+  "base_model": "vllm-sr/d3-mini",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qhoenix/zils-mini-decision-v2 · Hugging Face",
+      "url": "https://huggingface.co/qhoenix/zils-mini-decision-v2",
+      "snippet": "Feature Extraction model with 5B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "zils — Teach AI to make decisions your way.",
+      "url": "https://zils.ai/",
+      "snippet": "Zils Zils Teach AI to make decisions your way. Show Zils examples with the right answers. It trains a small model your app can use to sort requests, flag problems, or score matches."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "masluny/sokolik-300m-base",
+  "slug": "masluny-sokolik-300m-base",
+  "author": "masluny",
+  "url": "https://huggingface.co/masluny/sokolik-300m-base",
+  "created_at": "2026-11-08T13:47:47.000Z",
+  "updated_at": "2026-11-08T13:48:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "polish",
+    "trained-from-scratch",
+    "register-control",
+    "pl",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:wikimedia/wikipedia",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 304140288,
+  "parameters_human": "304.1M",
+  "storage_bytes": 608310536,
+  "storage_human": "608 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

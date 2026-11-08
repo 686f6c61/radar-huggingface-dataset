@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "adyaanahmed/distil-50m",
+  "slug": "adyaanahmed-distil-50m",
+  "author": "adyaanahmed",
+  "url": "https://huggingface.co/adyaanahmed/distil-50m",
+  "created_at": "2026-11-08T13:48:51.000Z",
+  "updated_at": "2026-11-08T13:51:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "knowledge-distillation",
+    "small-language-model",
+    "gqa",
+    "muon",
+    "safetensors",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 207008343,
+  "storage_human": "207 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Is Model Distillation? Making AI Models Smaller & Faster (2026)",
+      "url": "https://www.taskade.com/wiki/ai/model-distillation",
+      "snippet": "Model distillation transfers knowledge from large AI models to smaller, faster ones. Learn how teacher-student training works, key techniques, and why distillation powers production AI."
+    }
+  ]
+}

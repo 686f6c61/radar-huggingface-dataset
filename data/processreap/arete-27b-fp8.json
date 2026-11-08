@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "processreap/Arete-27B-FP8",
+  "slug": "processreap-arete-27b-fp8",
+  "author": "processreap",
+  "url": "https://huggingface.co/processreap/Arete-27B-FP8",
+  "created_at": "2026-11-08T05:30:14.000Z",
+  "updated_at": "2026-11-08T18:38:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "fp8",
+    "quantized",
+    "qwen3.8",
+    "arete",
+    "nous-research",
+    "text-generation",
+    "conversational",
+    "base_model:NousResearch/Arete-27B",
+    "base_model:quantized:NousResearch/Arete-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 30410285664,
+  "storage_human": "30.4 GB",
+  "base_model": "NousResearch/Arete-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Arete-27B: Qwen3.8-27B Post-Trained To Reinforce Western ...",
+      "url": "https://nousresearch.com/arete",
+      "snippet": "We post-trained Alibaba's Qwen3.8-27B to reinforce Western values on a Chinese-trained model, and measured what changed with an 803-prompt eval across seven value categories."
+    },
+    {
+      "title": "Nous Research Releases Arete-27B that Cuts Qwen3.8-27B Propaganda From ...",
+      "url": "https://www.marktechpost.com/2026/11/07/nous-research-arete-27b-qwen3-8-27b-propaganda-fine-tune/",
+      "snippet": "Nous Research has released Arete-27B, a supervised fine-tune of Alibaba’s Qwen3.8-27B. Arete-27B is a 27B open-weight model that strips Chinese state framing from Qwen’s answers. On Nous’s own 803-prompt eval, answers containing propaganda fell from 22% to 0.9%. Developers get Qwen-class agentic skill without state-aligned answers."
+    }
+  ]
+}

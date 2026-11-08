@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "hablaip/whisper-large-v3-chileno-lora",
+  "slug": "hablaip-whisper-large-v3-chileno-lora",
+  "author": "hablaip",
+  "url": "https://huggingface.co/hablaip/whisper-large-v3-chileno-lora",
+  "created_at": "2026-11-08T16:18:00.000Z",
+  "updated_at": "2026-11-08T16:18:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "peft",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "spanish",
+    "chilean-spanish",
+    "call-center",
+    "lora",
+    "es",
+    "base_model:openai/whisper-large-v3",
+    "base_model:adapter:openai/whisper-large-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62969640,
+  "storage_human": "63 MB",
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openai/whisper-large · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

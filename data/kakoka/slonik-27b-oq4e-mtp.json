@@ -5,7 +5,7 @@
   "author": "kakoka",
   "url": "https://huggingface.co/kakoka/Slonik-27B-oQ4e-mtp",
   "created_at": "2026-11-07T11:41:45.000Z",
-  "updated_at": "2026-11-07T12:25:33.000Z",
+  "updated_at": "2026-11-08T12:37:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 16608743960,
+  "storage_bytes": 16610271728,
   "storage_human": "16.6 GB",
   "base_model": "dglhf/Slonik",
   "formats": [

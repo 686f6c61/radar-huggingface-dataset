@@ -5,7 +5,7 @@
   "author": "ggml-org",
   "url": "https://huggingface.co/ggml-org/LFM3-Omni-2B-GGUF",
   "created_at": "2026-10-28T12:25:19.000Z",
-  "updated_at": "2026-11-01T03:58:20.000Z",
+  "updated_at": "2026-11-08T04:02:51.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "any-to-any",
@@ -23,7 +23,7 @@
     "conversational"
   ],
   "likes": 12,
-  "downloads_30d": 12799,
+  "downloads_30d": 14245,
   "trending_score": 0,
   "parameters": 1728801600,
   "parameters_human": "1.73B",

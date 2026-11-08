@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MatterWaveAI/grt-mamba-b0.7.0-20m",
+  "slug": "matterwaveai-grt-mamba-b0-7-0-20m",
+  "author": "MatterWaveAI",
+  "url": "https://huggingface.co/MatterWaveAI/grt-mamba-b0.7.0-20m",
+  "created_at": "2026-11-08T03:54:53.000Z",
+  "updated_at": "2026-11-08T13:50:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "mamba",
+    "state-space-model",
+    "ssm",
+    "world-model",
+    "grt-mamba-b0.7.0-20m",
+    "grt-mamba",
+    "s1-grt-mamba",
+    "rotational-ssm",
+    "rotational-transformer",
+    "matterwave",
+    "text-generation",
+    "base_model:MatterWaveAI/grt-20m",
+    "base_model:finetune:MatterWaveAI/grt-20m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "MatterWaveAI/grt-20m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MatterWaveAI/s1-grt-mamba-b0.7.0-20m at main - Hugging Face",
+      "url": "https://huggingface.co/MatterWaveAI/s1-grt-mamba-b0.7.0-20m/tree/main",
+      "snippet": "/ s1-grt-mamba-b0.7.0-20m Like 0 Follow MatterWaveAI 1 Text Classification Transformers mamba state-space-model ssm world-model s1-grt-mamba-b0.7.0-20m s1-grt-mamba grt-mamba rotational-ssm agent-safety model-predictive-control rotational-transformer matterwave License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to ..."
+    },
+    {
+      "title": "MatterWaveAI/helmholtz-mamba-b0.7.0-20m · Discussions",
+      "url": "https://huggingface.co/MatterWaveAI/helmholtz-mamba-b0.7.0-20m/discussions",
+      "snippet": "MatterWaveAI / helmholtz-mamba-b0.7.0-20m Like 0 Follow MatterWaveAI 1 Text Generation Transformers mamba state-space-model ssm jepa world-model helmholtz-mamba-b0.7.0-20m helmholtz-mamba-1 rotational-ssm rotational-transformer matterwave License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

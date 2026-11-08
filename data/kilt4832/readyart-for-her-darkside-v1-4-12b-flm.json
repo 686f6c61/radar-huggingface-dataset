@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Kilt4832/ReadyArt-For-Her-Darkside-V1.4-12B-FLM",
+  "slug": "kilt4832-readyart-for-her-darkside-v1-4-12b-flm",
+  "author": "Kilt4832",
+  "url": "https://huggingface.co/Kilt4832/ReadyArt-For-Her-Darkside-V1.4-12B-FLM",
+  "created_at": "2026-11-08T17:37:25.000Z",
+  "updated_at": "2026-11-08T17:42:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt/For-Her-Darkside-12B-v1.4 · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/For-Her-Darkside-12B-v1.4",
+      "snippet": "ReadyArt / For-Her-Darkside-12B-v1.4 like 4 Follow Ready.Art 1.26k Safetensors gemma4_unified gemma-4 roleplay conversational instruct apache-2.0 nsfw explicit erp adult-content mature unaligned License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "ReadyArt/For-Her-Darkside-12B-v1.4-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/For-Her-Darkside-12B-v1.4-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

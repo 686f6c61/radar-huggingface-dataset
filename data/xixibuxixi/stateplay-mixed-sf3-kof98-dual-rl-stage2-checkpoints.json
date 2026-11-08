@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "xixibuxixi/StatePlay-Mixed-SF3-KOF98-Dual-RL-Stage2-Checkpoints",
+  "slug": "xixibuxixi-stateplay-mixed-sf3-kof98-dual-rl-stage2-checkpoints",
+  "author": "xixibuxixi",
+  "url": "https://huggingface.co/xixibuxixi/StatePlay-Mixed-SF3-KOF98-Dual-RL-Stage2-Checkpoints",
+  "created_at": "2026-11-08T14:01:48.000Z",
+  "updated_at": "2026-11-08T14:02:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "video-generation",
+    "reinforcement-learning",
+    "stateplay",
+    "wan",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4835442492,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xixibuxixi/StatePlay-KOF98-MoT-5B-step1250 · Hugging Face",
+      "url": "https://huggingface.co/xixibuxixi/StatePlay-KOF98-MoT-5B-step1250",
+      "snippet": "Image-to-Video model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "onepiece1999/StatePlay · Hugging Face",
+      "url": "https://huggingface.co/onepiece1999/StatePlay",
+      "snippet": "Project Page · Paper · Code · Dataset · Model StatePlay is a state- and action-conditioned world model for mechanics-consistent generation in Street Fighter III. It jointly predicts video frames and five game states: timer, both players' health, and both players' skill meters."
+    }
+  ]
+}

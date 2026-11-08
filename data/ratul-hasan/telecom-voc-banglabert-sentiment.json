@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ratul-hasan/telecom-voc-banglabert-sentiment",
+  "slug": "ratul-hasan-telecom-voc-banglabert-sentiment",
+  "author": "ratul-hasan",
+  "url": "https://huggingface.co/ratul-hasan/telecom-voc-banglabert-sentiment",
+  "created_at": "2026-11-08T13:14:49.000Z",
+  "updated_at": "2026-11-08T13:28:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "electra",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110619651,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442502748,
+  "storage_human": "443 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Enhancing Sentiment Analysis in Bengali Texts: A Hybrid Approach Using ...",
+      "url": "https://arxiv.org/pdf/2411.19584v2",
+      "snippet": "We developed a novel rule based algorithm Bangla Sentiment Polarity Score (BSPS), an approach capable of generating sentiment scores and classifying reviews into nine distinct sentiment categories. To assess the performance of this method, we evaluated the classified sentiments using BanglaBERT, a pre-trained transformer-based language model."
+    },
+    {
+      "title": "[2411.19584] Enhancing Sentiment Analysis in Bengali Texts: A Hybrid ...",
+      "url": "https://arxiv.org/abs/2411.19584",
+      "snippet": "We developed a novel rule based algorithm Bangla Sentiment Polarity Score (BSPS), an approach capable of generating sentiment scores and classifying reviews into nine distinct sentiment categories. To assess the performance of this method, we evaluated the classified sentiments using BanglaBERT, a pre-trained transformer-based language model."
+    }
+  ]
+}

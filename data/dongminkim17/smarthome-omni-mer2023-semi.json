@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dongminkim17/smarthome-omni-mer2023-semi",
+  "slug": "dongminkim17-smarthome-omni-mer2023-semi",
+  "author": "dongminkim17",
+  "url": "https://huggingface.co/dongminkim17/smarthome-omni-mer2023-semi",
+  "created_at": "2026-11-08T14:48:05.000Z",
+  "updated_at": "2026-11-08T15:30:58.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "video-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_omni_thinker",
+    "image-text-to-text",
+    "qwen2_5_omni",
+    "pruning",
+    "knowledge-distillation",
+    "multimodal",
+    "smarthome",
+    "video-text-to-text",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen2.5-Omni-3B",
+    "base_model:finetune:Qwen/Qwen2.5-Omni-3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3231263744,
+  "parameters_human": "3.23B",
+  "storage_bytes": 6474110742,
+  "storage_human": "6.5 GB",
+  "base_model": "Qwen/Qwen2.5-Omni-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MERChallenge/MER2023 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/MERChallenge/MER2023",
+      "snippet": "Dataset. Explore, preview and download it on Hugging Face."
+    },
+    {
+      "title": "GitHub - dongminkim17/dongminkim17.github.io",
+      "url": "https://github.com/dongminkim17/dongminkim17.github.io",
+      "snippet": "User community The vibrant community of al-folio users is growing! Academics around the world use this theme for their homepages, blogs, lab pages, as well as webpages for courses, workshops, conferences, meetups, and more. Check out the community webpages below. Feel free to add your own page (s) by sending a PR."
+    }
+  ]
+}

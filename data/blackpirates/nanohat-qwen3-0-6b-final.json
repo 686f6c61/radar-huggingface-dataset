@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "blackpirates/nanohat-qwen3-0.6b-final",
+  "slug": "blackpirates-nanohat-qwen3-0-6b-final",
+  "author": "blackpirates",
+  "url": "https://huggingface.co/blackpirates/nanohat-qwen3-0.6b-final",
+  "created_at": "2026-10-16T13:19:58.000Z",
+  "updated_at": "2026-11-08T13:02:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "tool-calling",
+    "function-calling",
+    "linux",
+    "fedora",
+    "slm",
+    "on-device",
+    "llama.cpp",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1702,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 21071407655,
+  "storage_human": "21.1 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "blackpirates/nanohat-qwen3-0.6b-final · Hugging Face",
+      "url": "https://huggingface.co/blackpirates/nanohat-qwen3-0.6b-final",
+      "snippet": "blackpirates / nanohat-qwen3-0.6b-final Like 0 Text Generation Transformers Safetensors GGUF qwen3 Generated from Trainer trl grpo conversational text-generation-inference arxiv:2402.03300 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "blackpirates/nanohat-qwen3-0.6b-final at main - Hugging Face",
+      "url": "https://huggingface.co/blackpirates/nanohat-qwen3-0.6b-final/tree/main",
+      "snippet": "blackpirates / nanohat-qwen3-0.6b-final Like 0 Text Generation Transformers Safetensors GGUF qwen3 Generated from Trainer trl grpo conversational text-generation-inference arxiv:2402.03300 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

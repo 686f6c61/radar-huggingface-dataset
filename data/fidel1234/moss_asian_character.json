@@ -5,7 +5,7 @@
   "author": "fidel1234",
   "url": "https://huggingface.co/fidel1234/Moss_Asian_Character",
   "created_at": "2026-10-27T16:08:16.000Z",
-  "updated_at": "2026-11-07T00:57:52.000Z",
+  "updated_at": "2026-11-07T18:31:28.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,7 +20,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 38543,
+  "downloads_30d": 47620,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

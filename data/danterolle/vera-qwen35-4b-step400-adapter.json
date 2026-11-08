@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "danterolle/vera-qwen35-4b-step400-adapter",
+  "slug": "danterolle-vera-qwen35-4b-step400-adapter",
+  "author": "danterolle",
+  "url": "https://huggingface.co/danterolle/vera-qwen35-4b-step400-adapter",
+  "created_at": "2026-11-08T18:17:39.000Z",
+  "updated_at": "2026-11-08T18:50:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "vera",
+    "lora",
+    "qwen3.5",
+    "experimental",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10616832,
+  "parameters_human": "10.6M",
+  "storage_bytes": 63752120,
+  "storage_human": "64 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-4B Transformer Model - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/qwen3-5-4b-model",
+      "snippet": "Qwen3.5-4B Model is a dense transformer-based language model featuring 4B parameters and specialized procedural demonstrations. Supervised fine-tuning with LoRA adapters and a chain-of-thought protocol significantly improves its step-by-step reasoning performance. It leverages extensive multilingual tokenization and a vast pretraining corpus to excel in various downstream tasks."
+    }
+  ]
+}

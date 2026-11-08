@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Delinev/qwen3-1.7b-text-to-sql-lora",
+  "slug": "delinev-qwen3-1-7b-text-to-sql-lora",
+  "author": "Delinev",
+  "url": "https://huggingface.co/Delinev/qwen3-1.7b-text-to-sql-lora",
+  "created_at": "2026-11-08T15:13:20.000Z",
+  "updated_at": "2026-11-08T15:13:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "text-to-sql",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:b-mc2/sql-create-context",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81210747,
+  "storage_human": "81 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fahmiaziz/qwen3-1.7B-text2sql · Hugging Face",
+      "url": "https://huggingface.co/fahmiaziz/qwen3-1.7B-text2sql",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "The distilled Qwen3.8 27B was released under a more permissive Apache License. The first iteration of Qwen, based on Meta AI 's Llama 1, launched a beta in April 2023, releasing the weights of its 72B model that December. A local version of Qwen is used by Apple Intelligence in China, integrated with the operating system."
+    }
+  ]
+}

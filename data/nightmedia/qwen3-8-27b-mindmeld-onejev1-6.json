@@ -5,7 +5,7 @@
   "author": "nightmedia",
   "url": "https://huggingface.co/nightmedia/Qwen3.8-27B-MindMeld-OneJev1.6",
   "created_at": "2026-10-18T02:44:35.000Z",
-  "updated_at": "2026-11-05T19:05:10.000Z",
+  "updated_at": "2026-11-08T14:17:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -83,7 +83,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 89,
+  "downloads_30d": 99,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",

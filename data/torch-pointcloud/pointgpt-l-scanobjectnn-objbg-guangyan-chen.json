@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/pointgpt-l.scanobjectnn-objbg.guangyan-chen",
+  "slug": "torch-pointcloud-pointgpt-l-scanobjectnn-objbg-guangyan-chen",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/pointgpt-l.scanobjectnn-objbg.guangyan-chen",
+  "created_at": "2026-08-28T18:12:55.000Z",
+  "updated_at": "2026-11-08T17:28:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "pointgpt",
+    "classification",
+    "dataset:scanobjectnn",
+    "arxiv:2305.11487",
+    "base_model:torch-pointcloud/pointgpt-l.labeled-hybrid.guangyan-chen",
+    "base_model:finetune:torch-pointcloud/pointgpt-l.labeled-hybrid.guangyan-chen",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 360365935,
+  "parameters_human": "360.4M",
+  "storage_bytes": 1441505020,
+  "storage_human": "1.4 GB",
+  "base_model": "torch-pointcloud/pointgpt-l.labeled-hybrid.guangyan-chen",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ScanObjectNN (OBJ_BG)",
+      "metric": "OA",
+      "value": 98.45
+    },
+    {
+      "task": null,
+      "dataset": "ScanObjectNN (OBJ_BG)",
+      "metric": "mAcc",
+      "value": 98.19
+    }
+  ],
+  "sources": [
+    {
+      "title": "torch-pointcloud/pointgpt-l.scanobjectnn-objbg.guangyan-chen · Hugging Face",
+      "url": "https://huggingface.co/torch-pointcloud/pointgpt-l.scanobjectnn-objbg.guangyan-chen",
+      "snippet": "Model card for pointgpt-l.scanobjectnn-objbg.guangyan-chen A PointGPT point cloud classification model (autoregressive generative pretraining transformer). Trained on ScanObjectNN (OBJ_BG)."
+    },
+    {
+      "title": "README.md · torch-pointcloud/pointgpt-l.scanobjectnn-objbg.guangyan ...",
+      "url": "https://huggingface.co/torch-pointcloud/pointgpt-l.scanobjectnn-objbg.guangyan-chen/blob/main/README.md",
+      "snippet": "Model card for pointgpt-l.scanobjectnn-objbg.guangyan-chen A PointGPT point cloud classification model (autoregressive generative pretraining transformer). Trained on ScanObjectNN (OBJ_BG)."
+    }
+  ]
+}

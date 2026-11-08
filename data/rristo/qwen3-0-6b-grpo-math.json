@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "rristo/qwen3-0.6b-grpo-math",
+  "slug": "rristo-qwen3-0-6b-grpo-math",
+  "author": "rristo",
+  "url": "https://huggingface.co/rristo/qwen3-0.6b-grpo-math",
+  "created_at": "2026-11-08T18:32:07.000Z",
+  "updated_at": "2026-11-08T18:32:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_from_scratch",
+    "grpo",
+    "math",
+    "custom_code",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 762118144,
+  "parameters_human": "762.1M",
+  "storage_bytes": 1556793040,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Linyuana/qwen3-0.6b-grpo-math-reasoning - featherless.ai",
+      "url": "https://featherless.ai/models/Linyuana/qwen3-0.6b-grpo-math-reasoning",
+      "snippet": "Linyuana/qwen3-0.6b-grpo-math-reasoning is a 0.8 billion parameter Qwen3-based language model, fine-tuned using Group Relative Policy Optimization (GRPO) on GSM8K and MATH datasets. This model is specifically optimized for mathematical reasoning tasks, demonstrating significant performance improvements over its SFT-only counterpart. It excels at generating verifiable step-by-step mathematical ..."
+    },
+    {
+      "title": "Run Qwen3-0.6B-grpo-math API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/chenyukun/qwen3-0.6b-grpo-math",
+      "snippet": "The chenyukun/qwen3-0.6b-grpo-math model is a fine-tuned 0.8 billion parameter Qwen3-0.6B causal language model, developed by chenyukun, with a context length of 32768 tokens. It has been specifically trained using the GRPO method, as introduced in the DeepSeekMath paper, to enhance its mathematical reasoning capabilities. This model is optimized for tasks requiring robust mathematical problem ..."
+    }
+  ]
+}

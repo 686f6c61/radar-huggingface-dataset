@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "gulucaptain/lingbot-va-roboicl",
+  "slug": "gulucaptain-lingbot-va-roboicl",
+  "author": "gulucaptain",
+  "url": "https://huggingface.co/gulucaptain/lingbot-va-roboicl",
+  "created_at": "2026-11-08T12:17:14.000Z",
+  "updated_at": "2026-11-08T12:17:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "lora",
+    "base_model:robbyant/lingbot-va-base",
+    "base_model:adapter:robbyant/lingbot-va-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "robbyant/lingbot-va-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LingBot‑VLA Foundation Model - Robbyant",
+      "url": "https://technology.robbyant.com/lingbot-vla/",
+      "snippet": "We present LingBot‑VLA, an embodied AI foundation model trained on approximately 20,000 hours of real‑world manipulation data spanning 9 mainstream dual‑arm robot configurations. We conducted a systematic evaluation across 4 robotic platforms, covering 100 tasks per configuration with 130 episodes used for post‑training adaptation per task. Experimental results demonstrate that LingBot ..."
+    },
+    {
+      "title": "Ant Group's Robbyant Unveils LingBot-VA 2.0: A Causal Video-Action ...",
+      "url": "https://www.marktechpost.com/2026/07/11/ant-groups-robbyant-unveils-lingbot-va-2-0/",
+      "snippet": "Robbyant, the embodied AI unit inside Ant Group, has released the LingBot-VA 2.0.The first embodied-native foundation model. It describes a video-action foundation model for generalist robot manipulation. The research team pretrains the whole stack for embodiment instead of fine-tuning a video generator. What is LingBot-VA 2.0? Most video-action models reuse two components built for digital ..."
+    }
+  ]
+}

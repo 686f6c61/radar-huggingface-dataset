@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mercury-Acad-1.7B-GGUF",
+  "slug": "mradermacher-mercury-acad-1-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mercury-Acad-1.7B-GGUF",
+  "created_at": "2026-11-08T18:10:55.000Z",
+  "updated_at": "2026-11-08T18:29:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "lfm3",
+    "lfm",
+    "liquid-ai",
+    "reasoning",
+    "math",
+    "code",
+    "agent",
+    "tool-use",
+    "function-calling",
+    "multimodal",
+    "vision",
+    "russian",
+    "stem",
+    "mobile",
+    "ru",
+    "en",
+    "dataset:open-r1/OpenR1-Math-220k",
+    "dataset:nvidia/Nemotron-Post-Training-Dataset-v2",
+    "dataset:nvidia/Nemotron-SFT-Agentic-v2",
+    "dataset:HuggingFaceTB/smoltalk2",
+    "dataset:Vikhrmodels/GrandMaster-PRO-MAX",
+    "base_model:rrchat/Mercury-Acad-1.7B",
+    "base_model:quantized:rrchat/Mercury-Acad-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 15885916032,
+  "storage_human": "15.9 GB",
+  "base_model": "rrchat/Mercury-Acad-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rrchat/Mercury-Acad-1.7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/rrchat/Mercury-Acad-1.7B-GGUF",
+      "snippet": "Image-Text-to-Text model with 2B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "rrchat/Mercury-Acad-1.7B · Hugging Face",
+      "url": "https://huggingface.co/rrchat/Mercury-Acad-1.7B",
+      "snippet": "Image-Text-to-Text model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

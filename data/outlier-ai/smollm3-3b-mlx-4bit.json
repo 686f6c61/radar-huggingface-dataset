@@ -5,7 +5,7 @@
   "author": "Outlier-Ai",
   "url": "https://huggingface.co/Outlier-Ai/SmolLM3-3B-MLX-4bit",
   "created_at": "2026-04-20T13:13:09.000Z",
-  "updated_at": "2026-11-06T23:29:36.000Z",
+  "updated_at": "2026-11-08T06:48:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -64,7 +64,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 41,
+  "downloads_30d": 43,
   "trending_score": 0,
   "parameters": 3075098624,
   "parameters_human": "3.08B",

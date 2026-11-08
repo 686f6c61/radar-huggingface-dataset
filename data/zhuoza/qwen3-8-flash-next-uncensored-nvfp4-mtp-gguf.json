@@ -5,7 +5,7 @@
   "author": "ZHUOZA",
   "url": "https://huggingface.co/ZHUOZA/Qwen3.8-Flash-Next-Uncensored-NVFP4-MTP-GGUF",
   "created_at": "2026-11-05T15:54:15.000Z",
-  "updated_at": "2026-11-06T12:29:40.000Z",
+  "updated_at": "2026-11-07T16:55:10.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 35,
+  "downloads_30d": 331,
   "trending_score": 0,
   "parameters": 179551124096,
   "parameters_human": "179.55B",
-  "storage_bytes": 187510221824,
-  "storage_human": "187.5 GB",
+  "storage_bytes": 188959858080,
+  "storage_human": "189.0 GB",
   "base_model": null,
   "formats": [
     "gguf"

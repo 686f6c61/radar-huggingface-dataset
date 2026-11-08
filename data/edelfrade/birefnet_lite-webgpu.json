@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "edelfrade/BiRefNet_lite-webgpu",
+  "slug": "edelfrade-birefnet_lite-webgpu",
+  "author": "edelfrade",
+  "url": "https://huggingface.co/edelfrade/BiRefNet_lite-webgpu",
+  "created_at": "2026-11-08T20:23:27.000Z",
+  "updated_at": "2026-11-08T20:23:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "swin",
+    "background-removal",
+    "image-segmentation",
+    "webgpu",
+    "base_model:ZhengPeng7/BiRefNet_lite",
+    "base_model:quantized:ZhengPeng7/BiRefNet_lite",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 338897393,
+  "storage_human": "339 MB",
+  "base_model": "ZhengPeng7/BiRefNet_lite, onnx-community/BiRefNet_lite-ONNX",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CardAnvilModels/BiRefNet-lite-1024-WebGPU · Hugging Face",
+      "url": "https://huggingface.co/CardAnvilModels/BiRefNet-lite-1024-WebGPU",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nablo404/birefnet-lite-webgpu · Hugging Face",
+      "url": "https://huggingface.co/Nablo404/birefnet-lite-webgpu",
+      "snippet": "Image Segmentation model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

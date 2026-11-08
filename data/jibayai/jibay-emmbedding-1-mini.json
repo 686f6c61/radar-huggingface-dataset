@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "JibayAi/jibay-emmbedding-1-mini",
+  "slug": "jibayai-jibay-emmbedding-1-mini",
+  "author": "JibayAi",
+  "url": "https://huggingface.co/JibayAi/jibay-emmbedding-1-mini",
+  "created_at": "2026-11-08T16:24:00.000Z",
+  "updated_at": "2026-11-08T16:24:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "jibay_for_emmbedding_lm",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jibay-Ai (JibayAi) · GitHub",
+      "url": "https://github.com/Jibay-Ai",
+      "snippet": "We are a fast and powerful AI development organization focused on advancing independent AI and simplifying technology to help people worldwide. - Jibay-Ai"
+    },
+    {
+      "title": "GitHub - Jibay-Ai/JibayAi: Jibay Ai , the king of Iranian ai",
+      "url": "https://github.com/Jibay-Ai/JibayAi",
+      "snippet": "Jibay Ai , the king of Iranian ai . Contribute to Jibay-Ai/JibayAi development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "BioinstLab/bnet-ot-fusion",
+  "slug": "bioinstlab-bnet-ot-fusion",
+  "author": "BioinstLab",
+  "url": "https://huggingface.co/BioinstLab/bnet-ot-fusion",
+  "created_at": "2026-11-08T20:07:30.000Z",
+  "updated_at": "2026-11-08T20:11:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BioinstLab (Bioinstrumentation Lab) - Hugging Face",
+      "url": "https://huggingface.co/BioinstLab",
+      "snippet": "User profile of Bioinstrumentation Lab on Hugging Face"
+    },
+    {
+      "title": "O-Net: A Novel Framework With Deep Fusion of CNN and ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2022.876065/full",
+      "snippet": "A transformer is an attention-based model and self-attention mechanism (SA) is a key component of transformer. It can model the correlation of all input tags which makes room for the transformer to deal with long-range dependencies."
+    }
+  ]
+}

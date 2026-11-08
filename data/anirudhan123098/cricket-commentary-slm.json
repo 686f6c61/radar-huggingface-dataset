@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Anirudhan123098/cricket-commentary-slm",
+  "slug": "anirudhan123098-cricket-commentary-slm",
+  "author": "Anirudhan123098",
+  "url": "https://huggingface.co/Anirudhan123098/cricket-commentary-slm",
+  "created_at": "2026-11-08T17:07:54.000Z",
+  "updated_at": "2026-11-08T17:08:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889310,
+  "storage_human": "3.1 GB",
+  "base_model": "unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coding a Cricket Brain: The Reality of Building AI from Scra",
+      "url": "https://www.linkedin.com/pulse/what-really-takes-build-ai-model-from-zero-bablu-singh-nirwan-gxduf",
+      "snippet": "Something focused. Something personal. I decided to build a Small Language Model (SLM) from scratch, tailored specifically for the 2023 Cricket World Cup. It sounded simple at first. It wasn’t."
+    },
+    {
+      "title": "Commentary-AI | By Swastik Mishra - commudle.com",
+      "url": "https://www.commudle.com/builds/commentary-ai",
+      "snippet": "Our project, Commentary.AI, is designed to transform how people experience live sports by using AI to generate real-time, immersive cricket commentary. The goal is to make match viewing more engaging, accessible, and interactive—especially for users who may not have access to traditional commentary or want a more personalized experience."
+    }
+  ]
+}

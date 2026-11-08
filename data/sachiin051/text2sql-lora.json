@@ -5,10 +5,10 @@
   "author": "sachiin051",
   "url": "https://huggingface.co/sachiin051/Text2SQL-LoRA",
   "created_at": "2026-11-07T11:58:53.000Z",
-  "updated_at": "2026-11-07T12:00:26.000Z",
+  "updated_at": "2026-11-07T12:01:14.000Z",
   "license": null,
   "license_family": "unknown",
-  "pipeline_tag": "text-to-sql",
+  "pipeline_tag": "text-generation",
   "library": "peft",
   "languages": [],
   "tags": [
@@ -19,12 +19,14 @@
     "lora",
     "qwen2.5-coder",
     "fine-tuned",
+    "text-generation",
+    "conversational",
     "base_model:Qwen/Qwen2.5-Coder-1.5B",
     "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 29,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -34,7 +36,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

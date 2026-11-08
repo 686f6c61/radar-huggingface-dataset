@@ -97,10 +97,11 @@
     "base_model:mistralai/Ministral-3-3B-Instruct-2512-BF16",
     "base_model:finetune:mistralai/Ministral-3-3B-Instruct-2512-BF16",
     "license:other",
+    "deploy:azure",
     "region:us"
   ],
-  "likes": 59,
-  "downloads_30d": 19518,
+  "likes": 60,
+  "downloads_30d": 20667,
   "trending_score": 12,
   "parameters": 1554710528,
   "parameters_human": "1.55B",

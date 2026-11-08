@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "fireside4137/Text-Summarizer",
+  "slug": "fireside4137-text-summarizer",
+  "author": "fireside4137",
+  "url": "https://huggingface.co/fireside4137/Text-Summarizer",
+  "created_at": "2026-11-08T18:06:31.000Z",
+  "updated_at": "2026-11-08T18:11:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "t5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 242041896,
+  "storage_human": "242 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 17 Best AI Summarizer Tools 2026 - AI Corner",
+      "url": "https://aicorner.net/categories/text-and-writing/best-ai-summarizer-tools",
+      "snippet": "Back to Text And Writing Top 17 Best AI Summarizer Tools 2026 In today’s fast-paced digital world, information overload is a constant challenge. That’s where the best AI summarizer tools 2026 come in—helping students, professionals, and researchers quickly condense lengthy documents, articles, and reports into clear, concise summaries."
+    },
+    {
+      "title": "Best AI Summarizer Tools in 2026 (Tested & Compared) | The AI Rankings",
+      "url": "https://theairankings.com/best-ai-summarizer/",
+      "snippet": "Best AI summarizer tools compared We have ordered these by how most people will actually use them: the general assistants first, then the dedicated text, research and video tools. 1. Claude — best for long, complex documents Type: Chat assistant Price: Free tier; Pro $20/month; Max $100–200/month Model: Claude Opus 5 Best for: Books, contracts, dense reports and anything where tone and ..."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mazz92/mazz-models",
+  "slug": "mazz92-mazz-models",
+  "author": "mazz92",
+  "url": "https://huggingface.co/mazz92/mazz-models",
+  "created_at": "2026-11-01T13:05:57.000Z",
+  "updated_at": "2026-11-08T18:32:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mazz-code",
+    "aengenium",
+    "code",
+    "reasoning",
+    "vision",
+    "video",
+    "abliterated",
+    "text-generation",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 103565996381,
+  "storage_human": "103.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mazz.ai",
+      "url": "http://mazz.ai/",
+      "snippet": ""
+    },
+    {
+      "title": "Mazz AI | Digital Visionary (@mazz__ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/mazz__ai/",
+      "snippet": "1,513 Followers, 1,820 Following, 137 Posts - Mazz AI | Digital Visionary (@mazz__ai) on Instagram: \"AI Digital Artist | Futuristic & Vibrant Worlds Exploring color, tech & imagination. DM for collaborations. #Mazzai 🎨 | 🤖 | 🌌 | \""
+    }
+  ]
+}

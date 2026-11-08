@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "AyoubChLin/Huihui-gpt-oss-20b-BF16-abliterated-v2",
+  "slug": "ayoubchlin-huihui-gpt-oss-20b-bf16-abliterated-v2",
+  "author": "AyoubChLin",
+  "url": "https://huggingface.co/AyoubChLin/Huihui-gpt-oss-20b-BF16-abliterated-v2",
+  "created_at": "2026-11-08T14:04:52.000Z",
+  "updated_at": "2026-11-08T14:04:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gpt_oss",
+    "text-generation",
+    "vllm",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "abliterated",
+    "uncensored",
+    "conversational",
+    "base_model:huihui-ai/Huihui-gpt-oss-20b-BF16-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-gpt-oss-20b-BF16-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 134702370224,
+  "storage_human": "134.7 GB",
+  "base_model": "huihui-ai/Huihui-gpt-oss-20b-BF16-abliterated",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-gpt-oss-20b-BF16-abliterated - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-gpt-oss-20b-BF16-abliterated",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Huihui-gpt-oss-20b-BF16-abliterated-v2 at main",
+      "url": "https://huggingface.co/huihui-ai/Huihui-gpt-oss-20b-BF16-abliterated-v2/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

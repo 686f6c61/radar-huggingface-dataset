@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qwopus3.8-27B-Coder-Flash-i1-GGUF",
   "created_at": "2026-11-01T17:15:01.000Z",
-  "updated_at": "2026-11-01T21:44:45.000Z",
+  "updated_at": "2026-11-07T21:06:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -17,7 +17,6 @@
   "tags": [
     "transformers",
     "gguf",
-    "llama.cpp",
     "image-text-to-text",
     "vision",
     "multimodal",
@@ -41,8 +40,8 @@
     "region:us",
     "imatrix"
   ],
-  "likes": 1,
-  "downloads_30d": 3418,
+  "likes": 2,
+  "downloads_30d": 3651,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "oytunistrator/nano-siem-model",
+  "slug": "oytunistrator-nano-siem-model",
+  "author": "oytunistrator",
+  "url": "https://huggingface.co/oytunistrator/nano-siem-model",
+  "created_at": "2026-09-13T04:46:24.000Z",
+  "updated_at": "2026-11-08T18:47:51.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "cybersecurity",
+    "siem",
+    "rag",
+    "qlora",
+    "tr",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 163,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 44640581618,
+  "storage_human": "44.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oytunistrator/nano-siem-model · Hugging Face",
+      "url": "https://huggingface.co/oytunistrator/nano-siem-model",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "oytunistrator/nano-siem-model at main - Hugging Face",
+      "url": "https://huggingface.co/oytunistrator/nano-siem-model/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

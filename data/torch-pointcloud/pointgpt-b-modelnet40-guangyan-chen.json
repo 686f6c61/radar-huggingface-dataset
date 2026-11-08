@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/pointgpt-b.modelnet40.guangyan-chen",
+  "slug": "torch-pointcloud-pointgpt-b-modelnet40-guangyan-chen",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/pointgpt-b.modelnet40.guangyan-chen",
+  "created_at": "2026-08-28T18:08:47.000Z",
+  "updated_at": "2026-11-08T17:28:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "pointgpt",
+    "classification",
+    "dataset:modelnet40",
+    "arxiv:2305.11487",
+    "base_model:torch-pointcloud/pointgpt-b.labeled-hybrid.guangyan-chen",
+    "base_model:finetune:torch-pointcloud/pointgpt-b.labeled-hybrid.guangyan-chen",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 120400520,
+  "parameters_human": "120.4M",
+  "storage_bytes": 481627768,
+  "storage_human": "482 MB",
+  "base_model": "torch-pointcloud/pointgpt-b.labeled-hybrid.guangyan-chen",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ModelNet40",
+      "metric": "OA",
+      "value": 94.37
+    },
+    {
+      "task": null,
+      "dataset": "ModelNet40",
+      "metric": "mAcc",
+      "value": 91.65
+    }
+  ],
+  "sources": [
+    {
+      "title": "torch-pointcloud/pointgpt-b.modelnet40.guangyan-chen · Hugging Face",
+      "url": "https://huggingface.co/torch-pointcloud/pointgpt-b.modelnet40.guangyan-chen",
+      "snippet": "Model card for pointgpt-b.modelnet40.guangyan-chen A PointGPT point cloud classification model (autoregressive generative pretraining transformer). Trained on ModelNet40."
+    },
+    {
+      "title": "torch-pointcloud/pointgpt-b.modelnet40.guangyan-chen at main",
+      "url": "https://huggingface.co/torch-pointcloud/pointgpt-b.modelnet40.guangyan-chen/tree/main",
+      "snippet": "1 Safetensors PyTorch modelnet40 torch-pointcloud point-cloud 3d pointgpt classification Eval Results (legacy) arxiv:2305.11487 License:mit Model card FilesFiles and versions xet Community Copy to bucket new main pointgpt-b.modelnet40.guangyan-chen 482 MB Ctrl+K Ctrl+K 1 contributor History:3 commits arthurdjn Update model card for pointgpt-b ..."
+    }
+  ]
+}

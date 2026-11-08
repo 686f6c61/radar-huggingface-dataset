@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Eragon1/jarvis-112m",
+  "slug": "eragon1-jarvis-112m",
+  "author": "Eragon1",
+  "url": "https://huggingface.co/Eragon1/jarvis-112m",
+  "created_at": "2026-10-19T21:39:56.000Z",
+  "updated_at": "2026-11-08T12:33:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "pytorch",
+    "causal-lm",
+    "transformer",
+    "from-scratch",
+    "text-generation",
+    "russian",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 248589899,
+  "storage_human": "249 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eragon1/jarvis-112m at main - Hugging Face",
+      "url": "https://huggingface.co/Eragon1/jarvis-112m/tree/main",
+      "snippet": "Eragon1 / jarvis-112m Like 1 Text Generation PyTorch Russian causal-lm transformer from-scratch russian License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main jarvis-112m 250 MB Ctrl+K Ctrl+K 1 contributor History:7 commits Eragon1 Update README.md a1e87bc verifiedabout 8 hours ago .gitattributes Safe 1.52 ..."
+    },
+    {
+      "title": "Eragon1/jarvis-112m · Hugging Face",
+      "url": "https://huggingface.co/Eragon1/jarvis-112m",
+      "snippet": "jarvis-112m is a compact, decoder-only causal language model focused primarily on Russian text and dialogue. Its architecture, tokenizer, data pipeline, training loop and local generation code are implemented in lubenkov/jarvis. The repository contains the source code; this Hugging Face repository ..."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "cybort/swift-bonsai-2-ptq1-unpacked-hf",
+  "slug": "cybort-swift-bonsai-2-ptq1-unpacked-hf",
+  "author": "cybort",
+  "url": "https://huggingface.co/cybort/swift-bonsai-2-ptq1-unpacked-hf",
+  "created_at": "2026-11-08T16:16:40.000Z",
+  "updated_at": "2026-11-08T16:19:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "qwen",
+    "dequantized",
+    "ptq1_0",
+    "text-generation",
+    "conversational",
+    "base_model:ukisai/Swift-Bonsai-2-GGUF",
+    "base_model:finetune:ukisai/Swift-Bonsai-2-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 53804895040,
+  "storage_human": "53.8 GB",
+  "base_model": "ukisai/Swift-Bonsai-2-GGUF",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Swift Bonsai 2 | UkisAI",
+      "url": "https://ukisai.com/swift-bonsai-2",
+      "snippet": "Swift brings UkisAI's reasoning-efficiency work to Prism ML's Ternary Bonsai 2 27B. The Swift correction is merged into two complete GGUF files: 1-bit at 5.947 GB and 2-bit at 7.206 GB. This is an experimental research release."
+    },
+    {
+      "title": "Swift Bonsai 2 - a ukisai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ukisai/swift-bonsai-2",
+      "snippet": "Swift adaptation of Ternary Bonsai 2 and its GGUF quantizations."
+    }
+  ]
+}

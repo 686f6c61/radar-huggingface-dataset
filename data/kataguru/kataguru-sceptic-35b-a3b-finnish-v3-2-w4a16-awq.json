@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kataguru/Kataguru-Sceptic-35B-A3B-Finnish-v3.2-W4A16-AWQ",
+  "slug": "kataguru-kataguru-sceptic-35b-a3b-finnish-v3-2-w4a16-awq",
+  "author": "kataguru",
+  "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Finnish-v3.2-W4A16-AWQ",
+  "created_at": "2026-11-08T14:34:32.000Z",
+  "updated_at": "2026-11-08T14:36:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "kataguru",
+    "finnish",
+    "fi",
+    "translation",
+    "multimodal",
+    "vision",
+    "reasoning",
+    "moe",
+    "awq",
+    "w4a16",
+    "int4",
+    "marlin",
+    "compressed-tensors",
+    "conversational",
+    "en",
+    "base_model:kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+    "base_model:quantized:kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35945531248,
+  "parameters_human": "35.95B",
+  "storage_bytes": 26141266684,
+  "storage_human": "26.1 GB",
+  "base_model": "kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kataguru-Sceptic-35B-A3B-Basque-v3.2 - Hugging Face",
+      "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Basque-v3.2",
+      "snippet": "Kataguru-Sceptic-35B-A3B-Basque-v3.2 euskararako bereziki trebatutako 256 adituko MoE hizkuntza-eredua da (254 Sceptic oinarrizko aditu izoztu + 2 euskal aditu espezializatu #254 eta #255)."
+    },
+    {
+      "title": "kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF at main",
+      "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF/tree/main",
+      "snippet": "2.62 kBUpload complete item-by-item samples_*.jsonl logs for all 13 benchmarks and smoke test scriptsabout 5 hours ago Kataguru-Sceptic-35B-A3B-v2.6-1M-APEX-Medium.gguf"
+    }
+  ]
+}

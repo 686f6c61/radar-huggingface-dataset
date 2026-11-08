@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Sleem247/legalllm-Q8_0-GGUF",
+  "slug": "sleem247-legalllm-q8_0-gguf",
+  "author": "Sleem247",
+  "url": "https://huggingface.co/Sleem247/legalllm-Q8_0-GGUF",
+  "created_at": "2026-11-08T12:37:47.000Z",
+  "updated_at": "2026-11-08T12:38:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-lora",
+    "base_model:the-noble1/legalllm",
+    "base_model:adapter:the-noble1/legalllm",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6815744,
+  "parameters_human": "6.8M",
+  "storage_bytes": 9717280,
+  "storage_human": "10 MB",
+  "base_model": "the-noble1/legalllm",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sleem247/LEGAL_bert_all-Q8_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Sleem247/LEGAL_bert_all-Q8_0-GGUF",
+      "snippet": "Sleem247/LEGAL_bert_all-Q8_0-GGUF This model was converted to GGUF format from MahmoudTaktak/LEGAL_bert_all using llama.cpp via the ggml.ai's GGUF-my-repo space."
+    },
+    {
+      "title": "Sleem247 (Jaycee) - Hugging Face",
+      "url": "https://huggingface.co/Sleem247",
+      "snippet": "AI for lawyers updated a model about 15 hours ago"
+    }
+  ]
+}

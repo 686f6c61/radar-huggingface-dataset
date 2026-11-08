@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "superlinked/sie-wheels",
+  "slug": "superlinked-sie-wheels",
+  "author": "superlinked",
+  "url": "https://huggingface.co/superlinked/sie-wheels",
+  "created_at": "2026-11-08T13:43:08.000Z",
+  "updated_at": "2026-11-08T13:43:56.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "python-wheels",
+    "flash-attention",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 414517786,
+  "storage_human": "415 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open models on SIE | Superlinked",
+      "url": "https://superlinked.com/models",
+      "snippet": "SIE, an open-source inference engine, serves 149 open models through one API. Compare each job’s models on public benchmarks and Serverless price."
+    },
+    {
+      "title": "SIE: Superlinked Inference Engine - GitHub",
+      "url": "https://github.com/superlinked/sie",
+      "snippet": "Open-source inference server and production cluster for all the models your agent needs. - superlinked/sie"
+    }
+  ]
+}

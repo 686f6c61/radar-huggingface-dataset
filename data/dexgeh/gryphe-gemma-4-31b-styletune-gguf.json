@@ -5,7 +5,7 @@
   "author": "dexgeh",
   "url": "https://huggingface.co/dexgeh/Gryphe-Gemma-4-31B-StyleTune-GGUF",
   "created_at": "2026-10-30T20:03:59.000Z",
-  "updated_at": "2026-10-31T13:12:10.000Z",
+  "updated_at": "2026-11-07T12:19:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 330,
+  "downloads_30d": 384,
   "trending_score": 0,
   "parameters": 32106631740,
   "parameters_human": "32.11B",

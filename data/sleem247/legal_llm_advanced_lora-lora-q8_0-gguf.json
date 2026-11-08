@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Sleem247/legal_llm_advanced_lora-lora-Q8_0-GGUF",
+  "slug": "sleem247-legal_llm_advanced_lora-lora-q8_0-gguf",
+  "author": "Sleem247",
+  "url": "https://huggingface.co/Sleem247/legal_llm_advanced_lora-lora-Q8_0-GGUF",
+  "created_at": "2026-11-08T12:39:50.000Z",
+  "updated_at": "2026-11-08T12:40:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "llama-cpp",
+    "gguf-my-lora",
+    "en",
+    "base_model:diansm/legal_llm_advanced_lora-lora",
+    "base_model:quantized:diansm/legal_llm_advanced_lora-lora",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36929536,
+  "parameters_human": "36.9M",
+  "storage_bytes": 39265056,
+  "storage_human": "39 MB",
+  "base_model": "diansm/legal_llm_advanced_lora-lora",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sleem247 (Jaycee) - Hugging Face",
+      "url": "https://huggingface.co/Sleem247",
+      "snippet": "AI for lawyers updated a model about 15 hours ago"
+    }
+  ]
+}

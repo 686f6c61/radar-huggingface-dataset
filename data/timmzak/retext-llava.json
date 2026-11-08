@@ -24,7 +24,7 @@
     "base_model:finetune:liuhaotian/llava-v1.6-vicuna-7b",
     "region:us"
   ],
-  "likes": 11,
+  "likes": 12,
   "downloads_30d": 0,
   "trending_score": 11,
   "parameters": null,

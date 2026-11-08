@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "AdaptiveChunking/exp32_onechunk_full_s0",
+  "slug": "adaptivechunking-exp32_onechunk_full_s0",
+  "author": "AdaptiveChunking",
+  "url": "https://huggingface.co/AdaptiveChunking/exp32_onechunk_full_s0",
+  "created_at": "2026-11-08T13:23:55.000Z",
+  "updated_at": "2026-11-08T13:27:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "dynamic-chunking",
+    "tokenization",
+    "hnet",
+    "byte-level",
+    "beetle-hnet",
+    "legacy-trainer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 82470528,
+  "parameters_human": "82.5M",
+  "storage_bytes": 9896950240,
+  "storage_human": "9.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AdaptiveChunking (AdaptiveChunking) - Hugging Face",
+      "url": "https://huggingface.co/AdaptiveChunking/datasets",
+      "snippet": "Org profile for AdaptiveChunking on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "AdaptiveChunking/hnet-chunking-pilots · Hugging Face",
+      "url": "https://huggingface.co/AdaptiveChunking/hnet-chunking-pilots",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

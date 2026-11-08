@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "torch-pointcloud/pointgpt-l.pretrain.guangyan-chen",
+  "slug": "torch-pointcloud-pointgpt-l-pretrain-guangyan-chen",
+  "author": "torch-pointcloud",
+  "url": "https://huggingface.co/torch-pointcloud/pointgpt-l.pretrain.guangyan-chen",
+  "created_at": "2026-08-28T18:11:52.000Z",
+  "updated_at": "2026-11-08T17:28:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torch-pointcloud",
+  "languages": [],
+  "tags": [
+    "torch-pointcloud",
+    "safetensors",
+    "point-cloud",
+    "3d",
+    "pytorch",
+    "pointgpt",
+    "self-supervised",
+    "dataset:unlabeled-hybrid",
+    "arxiv:2305.11487",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 359765600,
+  "parameters_human": "359.8M",
+  "storage_bytes": 1439101792,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "torch-pointcloud/pointgpt-l.pretrain.guangyan-chen · Hugging Face",
+      "url": "https://huggingface.co/torch-pointcloud/pointgpt-l.pretrain.guangyan-chen",
+      "snippet": "Model card for pointgpt-l.pretrain.guangyan-chen A PointGPT self-supervised pretraining model (autoregressive generative pretraining transformer). Pretrained on ShapeNet-55."
+    },
+    {
+      "title": "torch-pointcloud/pointgpt-l.post-pretrain.guangyan-chen · Hugging Face",
+      "url": "https://huggingface.co/torch-pointcloud/pointgpt-l.post-pretrain.guangyan-chen",
+      "snippet": "Model card for pointgpt-l.post-pretrain.guangyan-chen A PointGPT point cloud classification model (autoregressive generative pretraining transformer). Trained on LabeledHybrid."
+    }
+  ]
+}

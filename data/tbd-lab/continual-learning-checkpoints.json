@@ -5,7 +5,7 @@
   "author": "tbd-lab",
   "url": "https://huggingface.co/tbd-lab/continual-learning-checkpoints",
   "created_at": "2026-10-20T21:32:55.000Z",
-  "updated_at": "2026-11-07T07:07:37.000Z",
+  "updated_at": "2026-11-08T10:19:08.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 4109315471096,
-  "storage_human": "4109.3 GB",
+  "storage_bytes": 5067590718197,
+  "storage_human": "5067.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

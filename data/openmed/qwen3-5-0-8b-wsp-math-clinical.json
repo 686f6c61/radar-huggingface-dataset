@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OpenMed/Qwen3.5-0.8B-WSP-Math-Clinical",
+  "slug": "openmed-qwen3-5-0-8b-wsp-math-clinical",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/Qwen3.5-0.8B-WSP-Math-Clinical",
+  "created_at": "2026-11-03T15:49:07.000Z",
+  "updated_at": "2026-11-08T17:43:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "openmed",
+    "medical",
+    "clinical",
+    "medqa",
+    "weight-space-programming",
+    "conversational",
+    "dataset:GBaker/MedQA-USMLE-4-options",
+    "dataset:openlifescienceai/medmcqa",
+    "dataset:cais/mmlu",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1760480935,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Clinical multiple-choice questions",
+      "dataset": "MedQA-USMLE (4 options)",
+      "metric": "Accuracy (thinking on, one sample, seed 0)",
+      "value": 45.4
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qwen3.5-0.8B-WSP-Clinical API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/OpenMed/Qwen3.5-0.8B-WSP-Clinical",
+      "snippet": "The weights, config, tokenizer and chat template: Qwen3.5-0.8B's release files with the edited tensors (every other tensor is unchanged). edit/: the clinical edit as an exact, hash-checked diff from the starting checkpoint."
+    },
+    {
+      "title": "Qwen/Qwen3.5-0.8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+      "snippet": "Image-Text-to-Text model with 0.9B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

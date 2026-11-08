@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Hammy2207/voc2vec-onnx",
+  "slug": "hammy2207-voc2vec-onnx",
+  "author": "Hammy2207",
+  "url": "https://huggingface.co/Hammy2207/voc2vec-onnx",
+  "created_at": "2026-11-08T20:51:03.000Z",
+  "updated_at": "2026-11-08T20:51:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "int8",
+    "accessibility",
+    "base_model:alkiskoudounas/voc2vec-hubert-ls-pt",
+    "base_model:quantized:alkiskoudounas/voc2vec-hubert-ls-pt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121883139,
+  "storage_human": "122 MB",
+  "base_model": "alkiskoudounas/voc2vec-hubert-ls-pt",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "voc2vec: A Foundation Model for Non-Verbal Vocalization",
+      "url": "https://github.com/koudounasalkis/voc2vec",
+      "snippet": "The core contribution of voc2vec lies in the careful selection of diverse, open-source datasets for pre-training, specifically chosen to focus on non-verbal vocalizations. These datasets collectively cover around 125 hours of audio, ensuring that the model is exposed to a wide variety of human vocalizations, typically underrepresented in speech datasets. Each dataset is chosen to represent ..."
+    }
+  ]
+}

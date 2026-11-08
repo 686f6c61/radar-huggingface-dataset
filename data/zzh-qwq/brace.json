@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "ZZH-qwq/BRACE",
+  "slug": "zzh-qwq-brace",
+  "author": "ZZH-qwq",
+  "url": "https://huggingface.co/ZZH-qwq/BRACE",
+  "created_at": "2026-11-08T14:22:30.000Z",
+  "updated_at": "2026-11-08T14:24:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2606.29845",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107094450,
+  "storage_human": "107 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ZZH-qwq/BRACE",
+      "url": "https://github.com/ZZH-qwq/BRACE",
+      "snippet": "Contribute to ZZH-qwq/BRACE development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - ZZH-qwq/BRACE",
+      "url": "https://github.com/ZZH-qwq/BRACE/tree/main",
+      "snippet": "We further propose BRACE: Bracketed RAW Flicker-Banding Removal, a multi-frame restoration model that utilizes frequency-aware banding prior and a multi-scale spatial cross-attention modulator (MSCAM) for cross-exposure spatial fusion. We also introduce the Stripe Frequency Consistency (SFC) metric to evaluate banding removal."
+    }
+  ]
+}

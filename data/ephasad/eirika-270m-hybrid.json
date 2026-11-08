@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "EphAsad/Eirika-270M-Hybrid",
+  "slug": "ephasad-eirika-270m-hybrid",
+  "author": "EphAsad",
+  "url": "https://huggingface.co/EphAsad/Eirika-270M-Hybrid",
+  "created_at": "2026-11-08T19:40:38.000Z",
+  "updated_at": "2026-11-08T20:05:46.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma3_text",
+    "gemma3",
+    "tool-use",
+    "retrieval",
+    "grounded-generation",
+    "small-language-model",
+    "experimental",
+    "merged-model",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:finetune:google/gemma-3-270m-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 569607623,
+  "storage_human": "570 MB",
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google introduces Gemma 3 270M for hyper-efficient on-device AI",
+      "url": "https://www.allaboutai.com/ai-news/google-introduces-gemma-3-270m/",
+      "snippet": "Google launches Gemma 3 270M, a compact, instruction-following model with QAT INT4 efficiency and a 256k vocabulary, tuned for on-device and browser AI with rapid fine-tuning workflows."
+    },
+    {
+      "title": "T5Gemma 2: The next generation of encoder-decoder models",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/t5gemma-2/",
+      "snippet": "T5Gemma 2 is the next evolution of our encoder-decoder family based on Gemma 3, featuring the first multi-modal and long-context encoder-decoder models. Unlike T5Gemma, T5Gemma 2 adopts tied word embeddings (over encoder and decoder) and merged decoder self- and cross-attention to save model parameters. It offers compact pre-trained models at sizes of 270M-270M (~370M total, excluding vision ..."
+    }
+  ]
+}

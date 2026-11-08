@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "TUpreneur/connectailab-rl-tupreneur-v2-halfcheetah-ppo",
+  "slug": "tupreneur-connectailab-rl-tupreneur-v2-halfcheetah-ppo",
+  "author": "TUpreneur",
+  "url": "https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-v2-halfcheetah-ppo",
+  "created_at": "2026-11-08T18:30:13.000Z",
+  "updated_at": "2026-11-08T18:30:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "ppo",
+    "robotics",
+    "mujoco",
+    "locomotion",
+    "halfcheetah",
+    "halfcheetah-v5",
+    "connect-ai-lab",
+    "connectailab",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161367,
+  "storage_human": "161367 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "locomotion",
+      "dataset": "HalfCheetah-v5",
+      "metric": "mean reward per episode",
+      "value": 4676.3
+    },
+    {
+      "task": "locomotion",
+      "dataset": "HalfCheetah-v5",
+      "metric": "mean forward speed (m/s)",
+      "value": 4.97
+    },
+    {
+      "task": "locomotion",
+      "dataset": "HalfCheetah-v5",
+      "metric": "mean distance per episode (m)",
+      "value": 248.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "TUpreneur/connectailab-rl-tupreneur-v2-link01 at main",
+      "url": "https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-v2-link01/tree/main",
+      "snippet": "Instructions to use TUpreneur/connectailab-rl-tupreneur-v2-link01 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "TUpreneur/connectailab-rl-tupreneur-v2-link01 · Hugging Face",
+      "url": "https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-v2-link01",
+      "snippet": "Reinforcement Learning model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Stuubs",
   "url": "https://huggingface.co/Stuubs/Stubelius_Remix",
   "created_at": "2026-09-05T11:49:46.000Z",
-  "updated_at": "2026-10-09T22:17:25.000Z",
+  "updated_at": "2026-11-08T08:29:40.000Z",
   "license": "ltx-2-community-license-agreement",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 27,
-  "downloads_30d": 1320,
+  "downloads_30d": 1361,
   "trending_score": 0,
   "parameters": 21004025600,
   "parameters_human": "21.00B",
-  "storage_bytes": 195942038368,
-  "storage_human": "195.9 GB",
+  "storage_bytes": 208454050784,
+  "storage_human": "208.5 GB",
   "base_model": "Lightricks/LTX-2.5",
   "formats": [
     "gguf"

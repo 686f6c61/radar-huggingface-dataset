@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "pengpeng86/PPO-LunarLander-v2",
+  "slug": "pengpeng86-ppo-lunarlander-v2",
+  "author": "pengpeng86",
+  "url": "https://huggingface.co/pengpeng86/PPO-LunarLander-v2",
+  "created_at": "2026-11-08T17:08:59.000Z",
+  "updated_at": "2026-11-08T17:09:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 444073,
+  "storage_human": "444073 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deep-rl-unit1-ppo-LunarLander-v2-20261105 - Hugging Face",
+      "url": "https://huggingface.co/poplolioi11/deep-rl-unit1-ppo-LunarLander-v2-20261105",
+      "snippet": "Reinforcement Learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "BioGeek/PPO-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/BioGeek/PPO-LunarLander-v2",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library. Usage (with Stable-baselines3) Using this model becomes easy when you have stable-baselines3 and huggingface_sb3 installed:"
+    }
+  ]
+}

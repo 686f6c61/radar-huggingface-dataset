@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "dassomnath/Dhir-2B-GGUF",
+  "slug": "dassomnath-dhir-2b-gguf",
+  "author": "dassomnath",
+  "url": "https://huggingface.co/dassomnath/Dhir-2B-GGUF",
+  "created_at": "2026-11-08T13:37:06.000Z",
+  "updated_at": "2026-11-08T13:37:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "hi",
+    "gu",
+    "bn",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "llama-cpp",
+    "brahmai",
+    "dhir",
+    "indic",
+    "tool-calling",
+    "text-generation",
+    "en",
+    "hi",
+    "gu",
+    "bn",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "zenteiq/Dhir-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IndiaAI Foundation Models: EKA-1 26.3B, Offline Dhir 2B/5B",
+      "url": "https://aitecharchive.com/articles/indiaai-foundation-models-eka-1-dhir-2b-dhir-5b",
+      "snippet": "The largest is EKA-1 from Soket Labs, a 26.3 billion parameter model trained on roughly 7.5 trillion tokens. The other two, Dhir 2B and Dhir 5B from ZenteiQ, are small enough to run offline on modest hardware."
+    },
+    {
+      "title": "Dhir-2B - aikosh.indiaai.gov.in",
+      "url": "https://aikosh.indiaai.gov.in/home/models/details/dhir_2b.html",
+      "snippet": "About Model Dhīr 2B is designed to provide efficient, AI capabilities that can run completely offline on edge devices, enabling language understanding and generation in English and Indian languages for privacy-sensitive, industrial, and network-restricted environments"
+    }
+  ]
+}

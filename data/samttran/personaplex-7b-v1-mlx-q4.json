@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "samttran/personaplex-7b-v1-mlx-q4",
+  "slug": "samttran-personaplex-7b-v1-mlx-q4",
+  "author": "samttran",
+  "url": "https://huggingface.co/samttran/personaplex-7b-v1-mlx-q4",
+  "created_at": "2026-11-08T18:40:41.000Z",
+  "updated_at": "2026-11-08T18:49:13.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "personaplex",
+    "apple-silicon",
+    "speech-to-speech",
+    "full-duplex",
+    "base_model:nvidia/personaplex-7b-v1",
+    "base_model:finetune:nvidia/personaplex-7b-v1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5624870495,
+  "storage_human": "5.6 GB",
+  "base_model": "nvidia/personaplex-7b-v1",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/personaplex-7b-v1 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/personaplex-7b-v1",
+      "snippet": "PersonaPlex: Voice and role control for full duplex conversational speech models ️ Code: nvidia/personaplex ️ Demo: PersonaPlex Project Page ️ Paper: PersonaPlex Preprint Description: Personaplex is a real-time speech-to-speech conversational model that jointly performs streaming speech understanding and speech generation. The model operates on continuous audio encoded with a neural ..."
+    },
+    {
+      "title": "GitHub - Acelogic/personaplex-mlx: Real-time voice conversation AI on ...",
+      "url": "https://github.com/Acelogic/personaplex-mlx",
+      "snippet": "Real-time voice conversation AI running on Apple Silicon. A port of NVIDIA's PersonaPlex 7B to Apple's MLX framework."
+    }
+  ]
+}

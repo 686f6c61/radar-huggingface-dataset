@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "immoralhole0/sd_resources",
+  "slug": "immoralhole0-sd_resources",
+  "author": "immoralhole0",
+  "url": "https://huggingface.co/immoralhole0/sd_resources",
+  "created_at": "2025-04-28T04:45:12.000Z",
+  "updated_at": "2026-11-08T18:09:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3254927249,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "immoralhole0/sd_resources · Hugging Face",
+      "url": "https://huggingface.co/immoralhole0/sd_resources",
+      "snippet": "sd_resources like 0 Model card Files Files and versions Community No model card Downloads last month -"
+    },
+    {
+      "title": "immoralhole0 (akspa) - Hugging Face",
+      "url": "https://huggingface.co/immoralhole0",
+      "snippet": "AI & ML interests audio and video classification, organization, character curation, library curation. Audio splitting, dataset preparation, chat systems."
+    }
+  ]
+}

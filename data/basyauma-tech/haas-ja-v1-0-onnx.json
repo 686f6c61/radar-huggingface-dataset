@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "basyauma-tech/Haas-ja-v1.0-onnx",
+  "slug": "basyauma-tech-haas-ja-v1-0-onnx",
+  "author": "basyauma-tech",
+  "url": "https://huggingface.co/basyauma-tech/Haas-ja-v1.0-onnx",
+  "created_at": "2026-11-08T13:36:52.000Z",
+  "updated_at": "2026-11-08T13:37:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "cpu",
+    "japanese",
+    "speech-recognition",
+    "asr",
+    "parakeet",
+    "tdt",
+    "fastconformer",
+    "automatic-speech-recognition",
+    "ja",
+    "base_model:third-intelligence/Haas-ja-v1.0",
+    "base_model:quantized:third-intelligence/Haas-ja-v1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3084445385,
+  "storage_human": "3.1 GB",
+  "base_model": "third-intelligence/Haas-ja-v1.0",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kizuna-intelligence/Haas-ja-v1.0-OneCompression-ONNX at main",
+      "url": "https://huggingface.co/kizuna-intelligence/Haas-ja-v1.0-OneCompression-ONNX/tree/main",
+      "snippet": "kizuna-intelligence / Haas-ja-v1.0-OneCompression-ONNX Like 0 Follow Kizuna Intelligence 28 Automatic Speech Recognition ONNX Japanese onnxruntime int4 cpu japanese asr License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket main Haas-ja-v1.0-OneCompression-ONNX 3.47 GB Ctrl+K Ctrl+K 1 contributor History:1 commit yusuke-ai Haas-ja-v1.0 OneCompression ONNX (int4/int8 ..."
+    },
+    {
+      "title": "third-intelligence/Haas-ja-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/third-intelligence/Haas-ja-v1.0",
+      "snippet": "Automatic Speech Recognition model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

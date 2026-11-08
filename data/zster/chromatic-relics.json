@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Zster/chromatic-relics",
+  "slug": "zster-chromatic-relics",
+  "author": "Zster",
+  "url": "https://huggingface.co/Zster/chromatic-relics",
+  "created_at": "2026-11-08T15:55:59.000Z",
+  "updated_at": "2026-11-08T16:31:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970388488,
+  "storage_human": "970 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chromatic Relics: The AI Restored Histories - YouTube",
+      "url": "https://www.youtube.com/watch?v=knEwJhUhX_w",
+      "snippet": "A short film series that reveals how AI colorizes historical photos while preserving authenticity. Each episode explains the restoration process and honors the past."
+    }
+  ]
+}

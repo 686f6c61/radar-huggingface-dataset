@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Revisual-R1-final-GGUF",
+  "slug": "mradermacher-revisual-r1-final-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Revisual-R1-final-GGUF",
+  "created_at": "2025-06-06T09:22:13.000Z",
+  "updated_at": "2026-11-08T19:23:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "multimodal",
+    "en",
+    "base_model:csfufu/Revisual-R1-final",
+    "base_model:quantized:csfufu/Revisual-R1-final",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 342,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70354177920,
+  "storage_human": "70.4 GB",
+  "base_model": "csfufu/Revisual-R1-final",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Revisual-R1-final-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Revisual-R1-final-GGUF",
+      "snippet": "Feel free to request them by opening a Community Discussion. Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/Revisual-R1-final-i1-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Revisual-R1-final-i1-GGUF/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

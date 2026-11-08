@@ -5,7 +5,7 @@
   "author": "chunwmak9",
   "url": "https://huggingface.co/chunwmak9/benny-lightweight-cantonese-to-text-model",
   "created_at": "2026-11-03T13:59:42.000Z",
-  "updated_at": "2026-11-03T14:42:39.000Z",
+  "updated_at": "2026-11-07T12:58:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 84,
+  "downloads_30d": 107,
   "trending_score": 0,
   "parameters": 72593920,
   "parameters_human": "72.6M",

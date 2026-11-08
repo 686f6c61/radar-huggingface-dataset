@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "deviprasadbrl/lyra-base",
+  "slug": "deviprasadbrl-lyra-base",
+  "author": "deviprasadbrl",
+  "url": "https://huggingface.co/deviprasadbrl/lyra-base",
+  "created_at": "2026-11-08T20:39:42.000Z",
+  "updated_at": "2026-11-08T20:48:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 456495810,
+  "storage_human": "456 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deviprasadbrl (Deviprasad B R L) · GitHub",
+      "url": "https://github.com/deviprasadbrl",
+      "snippet": "Passionate about AI, ML & Cognitive Architectures. deviprasadbrl has 3 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Lyra: An Efficient and Speech-Centric Framework - GitHub",
+      "url": "https://github.com/JIA-Lab-research/Lyra",
+      "snippet": "Lyra shows superiority compared with leading omni-models in: Stronger performance: Achieve SOTA results across a variety of speech-centric tasks. More versatile: Support image, video, speech/long-speech, sound understanding and speech generation. More efficient: Less training data, support faster training and inference."
+    }
+  ]
+}

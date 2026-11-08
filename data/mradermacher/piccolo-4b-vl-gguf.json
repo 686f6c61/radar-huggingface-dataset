@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Piccolo-4B-VL-GGUF",
+  "slug": "mradermacher-piccolo-4b-vl-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Piccolo-4B-VL-GGUF",
+  "created_at": "2026-11-08T16:38:51.000Z",
+  "updated_at": "2026-11-08T16:57:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:agentscope-ai/Piccolo-4B-VL",
+    "base_model:quantized:agentscope-ai/Piccolo-4B-VL",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 41004113088,
+  "storage_human": "41.0 GB",
+  "base_model": "agentscope-ai/Piccolo-4B-VL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Piccolo-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Piccolo-4B-GGUF",
+      "snippet": "Machine learning model with 4B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "OpenCaption-4B-VL-SFT-v1.0-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/OpenCaption-4B-VL-SFT-v1.0-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "mradermacher/QwQ-R1-Distill-Merge-32B-GGUF",
+  "slug": "mradermacher-qwq-r1-distill-merge-32b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/QwQ-R1-Distill-Merge-32B-GGUF",
+  "created_at": "2025-03-09T22:12:25.000Z",
+  "updated_at": "2026-11-08T17:08:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:gbueno86/QwQ-R1-Distill-Merge-32B",
+    "base_model:quantized:gbueno86/QwQ-R1-Distill-Merge-32B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 136,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 224000859776,
+  "storage_human": "224.0 GB",
+  "base_model": "gbueno86/QwQ-R1-Distill-Merge-32B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/QwQ-R1-Distill-Merge-32B-GGUF downloads: daily history and ...",
+      "url": "https://modelpulse.ifsp.dev/model/mradermacher/QwQ-R1-Distill-Merge-32B-GGUF",
+      "snippet": "In the last 30 days it was downloaded 218 times (54 in the last 7 days), and 2,207 times in total. It ranks # 108,639 on the Hub by monthly downloads. It has 2 likes. It is a quantization of gbueno86/QwQ-R1-Distill-Merge-32B. Figures come from daily snapshots of the Hugging Face Hub and update every day."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    }
+  ]
+}

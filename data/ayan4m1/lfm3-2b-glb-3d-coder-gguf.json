@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "ayan4m1/LFM3-2B-GLB-3D-Coder-GGUF",
+  "slug": "ayan4m1-lfm3-2b-glb-3d-coder-gguf",
+  "author": "ayan4m1",
+  "url": "https://huggingface.co/ayan4m1/LFM3-2B-GLB-3D-Coder-GGUF",
+  "created_at": "2026-11-08T16:01:19.000Z",
+  "updated_at": "2026-11-08T16:17:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lfm3_vl",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "vision-language-model",
+    "custom_code",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 6926060192,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Liquid AI Launches LFM3 Family of Six Open-Weight 2B-Class Models",
+      "url": "https://www.unite.ai/liquid-ai-launches-lfm3-family-of-six-open-weight-2b-class-models/",
+      "snippet": "Liquid AI announced LFM3 on October 27, 2026, a new generation of open-weight Liquid Foundation Models that brings text, vision, audio, omni, and decision models onto one shared backbone. The first release, detailed in a..."
+    },
+    {
+      "title": "Liquid AI Releases LFM3: 6 Open-Weight 2B-Class Multimodal Models",
+      "url": "https://www.marktechpost.com/2026/10/27/liquid-ai-lfm3-open-weight-2b-multimodal-models/",
+      "snippet": "Liquid AI LFM3 ships 6 open-weight 2B-class models; LFM3-1.7B averages 49.37 across 29 self-reported benchmarks, above Qwen3.5-9B’s 47.24."
+    }
+  ]
+}

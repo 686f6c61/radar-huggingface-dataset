@@ -5,7 +5,7 @@
   "author": "dddddsds31341",
   "url": "https://huggingface.co/dddddsds31341/Long-WAM-Sorting-Dolls-30k-Step-20000",
   "created_at": "2026-11-06T17:52:23.000Z",
-  "updated_at": "2026-11-06T18:06:57.000Z",
+  "updated_at": "2026-11-07T12:50:14.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

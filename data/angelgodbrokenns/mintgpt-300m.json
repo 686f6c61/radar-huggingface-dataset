@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "angelgodbrokenns/MintGPT-300M",
+  "slug": "angelgodbrokenns-mintgpt-300m",
+  "author": "angelgodbrokenns",
+  "url": "https://huggingface.co/angelgodbrokenns/MintGPT-300M",
+  "created_at": "2026-11-08T16:09:42.000Z",
+  "updated_at": "2026-11-08T16:28:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "code",
+    "python",
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 294420480,
+  "parameters_human": "294.4M",
+  "storage_bytes": 2355419184,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "General Intuition raising $300M for AI trained on gaming data",
+      "url": "https://thenextweb.com/news/general-intuition-300m-world-models-gaming-data",
+      "snippet": "The startup rejected OpenAI's $500M bid for its gaming video data. Now it's raising $300M at a $2B valuation to train AI agents on 2 billion video game clips per year."
+    },
+    {
+      "title": "Meta, Google Put $300M Into Zuckerberg AI Biology Bet - Benzinga",
+      "url": "https://www.benzinga.com/markets/prediction-markets/26/10/62230064/meta-google-zuckerberg-ai-biology",
+      "snippet": "Meta and Google are putting $300 million into Biohub’s push to build AI models that predict how living cells respond to drugs."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Ooriginador/acx03-qwen3-1.5b-ternary-giro",
+  "slug": "ooriginador-acx03-qwen3-1-5b-ternary-giro",
+  "author": "Ooriginador",
+  "url": "https://huggingface.co/Ooriginador/acx03-qwen3-1.5b-ternary-giro",
+  "created_at": "2026-11-08T15:04:59.000Z",
+  "updated_at": "2026-11-08T15:06:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "ternary",
+    "1.58bit",
+    "base-3",
+    "qwen",
+    "giro-copilot",
+    "arkheionnet",
+    "edge-ai",
+    "text-generation",
+    "conversational",
+    "pt",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 2166335097,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alibaba Introduces Qwen3, Setting New Benchmark in Open-Source AI with ...",
+      "url": "https://www.alibabagroup.com/en-US/document-1853940226976645120",
+      "snippet": "Alibaba has launched Qwen3, the latest generation of its open-sourced large language model (LLM) family, setting a new benchmark for AI innovation. The Qwen3 series features six dense models and two Mixture-of-Experts (MoE) models, offering developers flexibility to build next-generation applications across mobile devices, smart glasses ..."
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "The distilled Qwen3.8 27B was released under a more permissive Apache License. The first iteration of Qwen, based on Meta AI 's Llama 1, launched a beta in April 2023, releasing the weights of its 72B model that December. A local version of Qwen is used by Apple Intelligence in China, integrated with the operating system."
+    }
+  ]
+}

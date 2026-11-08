@@ -5,7 +5,7 @@
   "author": "qazljlj",
   "url": "https://huggingface.co/qazljlj/comfyui_mmh",
   "created_at": "2026-08-18T04:51:34.000Z",
-  "updated_at": "2026-11-07T06:41:18.000Z",
+  "updated_at": "2026-11-07T07:24:39.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 550,
+  "downloads_30d": 726,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 78758767703,
-  "storage_human": "78.8 GB",
+  "storage_bytes": 80504314551,
+  "storage_human": "80.5 GB",
   "base_model": null,
   "formats": [
     "gguf"

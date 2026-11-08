@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "xiaozhengzhong/Qwen3-8B-Tieba-Magic-LoRA",
+  "slug": "xiaozhengzhong-qwen3-8b-tieba-magic-lora",
+  "author": "xiaozhengzhong",
+  "url": "https://huggingface.co/xiaozhengzhong/Qwen3-8B-Tieba-Magic-LoRA",
+  "created_at": "2026-11-08T17:52:33.000Z",
+  "updated_at": "2026-11-08T17:52:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen3-8B-unsloth-bnb-4bit",
+    "qwen3",
+    "lora",
+    "qlora",
+    "sft",
+    "trl",
+    "unsloth",
+    "tieba",
+    "ruozhiba",
+    "chinese",
+    "roleplay",
+    "text-generation",
+    "conversational",
+    "zh",
+    "dataset:LooksJuicy/ruozhiba",
+    "dataset:m-a-p/COIG-CQIA",
+    "dataset:Kirp/ruozhiba_post_annual",
+    "base_model:unsloth/Qwen3-8B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 709910428,
+  "storage_human": "710 MB",
+  "base_model": "unsloth/Qwen3-8B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "Tieba & Ruozhiba 50-Question Benchmark",
+      "metric": "Tieba Persona & Slang Hit Rate (%)",
+      "value": 100
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "Tieba & Ruozhiba 50-Question Benchmark",
+      "metric": "Stage-2 Final Step Training Loss",
+      "value": 0.8292
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "Text Generation model with 8B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen3-8B-LoRA · Models",
+      "url": "https://www.modelscope.cn/models/mc36473/Qwen3-8B-LoRA/summary",
+      "snippet": "This model is a fine-tuned version of /root/Qwen3-8B on the stance_task_sharegpt dataset. Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during training: learning ..."
+    }
+  ]
+}

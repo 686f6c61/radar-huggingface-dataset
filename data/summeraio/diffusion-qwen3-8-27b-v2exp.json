@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "summerAIO/Diffusion-Qwen3.8-27B-v2exp",
+  "slug": "summeraio-diffusion-qwen3-8-27b-v2exp",
+  "author": "summerAIO",
+  "url": "https://huggingface.co/summerAIO/Diffusion-Qwen3.8-27B-v2exp",
+  "created_at": "2026-11-08T17:56:31.000Z",
+  "updated_at": "2026-11-08T17:59:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "diffusion-language-model",
+    "masked-diffusion",
+    "parallel-decoding",
+    "research",
+    "ja",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54733596107,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "summerAIO/Diffusion-Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/summerAIO/Diffusion-Qwen3.8-27B",
+      "snippet": "Instructions to use summerAIO/Diffusion-Qwen3.8-27B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use summerAIO/Diffusion-Qwen3.8-27B with Transformers:"
+    },
+    {
+      "title": "summerMC/Diffusion-Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/summerMC/Diffusion-Qwen3.8-27B",
+      "snippet": "Instructions to use summerMC/Diffusion-Qwen3.8-27B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use summerMC/Diffusion-Qwen3.8-27B with Transformers:"
+    }
+  ]
+}

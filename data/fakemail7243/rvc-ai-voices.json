@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "fakemail7243/RVC-AI-Voices",
+  "slug": "fakemail7243-rvc-ai-voices",
+  "author": "fakemail7243",
+  "url": "https://huggingface.co/fakemail7243/RVC-AI-Voices",
+  "created_at": "2026-11-08T17:47:17.000Z",
+  "updated_at": "2026-11-08T17:47:17.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 332031977,
+  "storage_human": "332 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top AI Voice Models for RVC | Community Favorites",
+      "url": "https://voice-models.com/top",
+      "snippet": "Discover popular AI voice models for RVC, ranked by community favorites. Preview samples and run compatible voices online."
+    },
+    {
+      "title": "RVC Models: AI Voices - 382 Model Downloads & Examples",
+      "url": "https://aimodels.org/ai-models/rvc-models-ai-voice/",
+      "snippet": "RVC Models: AI Voices - 382 Model Downloads & Examples The world of audio technology is changing fast, thanks to RVC (Retrieval-based Voice Conversion) models. These models use advanced artificial intelligence to create voices that sound real and can be customized for your projects."
+    }
+  ]
+}

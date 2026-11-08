@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/roleplay-Xing4.0-29B-GGUF",
+  "slug": "mradermacher-roleplay-xing4-0-29b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/roleplay-Xing4.0-29B-GGUF",
+  "created_at": "2026-11-08T18:33:38.000Z",
+  "updated_at": "2026-11-08T18:59:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31215031088,
+  "parameters_human": "31.22B",
+  "storage_bytes": 62675010016,
+  "storage_human": "62.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xing4.0-29B-Intent-ROCmFP4-GGUF - Hugging Face",
+      "url": "https://huggingface.co/kingjones777/Xing4.0-29B-Intent-ROCmFP4-GGUF",
+      "snippet": "kingjones777 / Xing4.0-29B-Intent-ROCmFP4-GGUF Like 1 Text Generation GGUF Chinese English rocm rocmfp4 rocmfpx strix-halo gfx1151 amd ryzen-ai-max Mixture of Experts mla mhc mtp intent-recognition information-extraction conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "juanml82/roleplay-Xing4.0-29B-gguf · Hugging Face",
+      "url": "https://huggingface.co/juanml82/roleplay-Xing4.0-29B-gguf",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Xing4.0-29B-A4B: China Telecom's Ascend-Trained MoE | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/xing4-0-29b-a4b/",
+      "snippet": "Xing4.0-29B-A4B, open-sourced September 2026: a 29B/4B-active MoE agent model from China Telecom AI, 256K context, Apache 2.0, trained entirely on Ascend NPUs."
+    }
+  ]
+}

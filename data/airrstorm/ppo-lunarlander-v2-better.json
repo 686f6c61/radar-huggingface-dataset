@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "AirrStorm/ppo-LunarLander-v2-better",
+  "slug": "airrstorm-ppo-lunarlander-v2-better",
+  "author": "AirrStorm",
+  "url": "https://huggingface.co/AirrStorm/ppo-LunarLander-v2-better",
+  "created_at": "2026-11-08T15:50:43.000Z",
+  "updated_at": "2026-11-08T15:50:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 280010,
+  "storage_human": "280010 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - imanaswer/Lunar-Lander-PPO-: This project uses Proximal Policy ...",
+      "url": "https://github.com/imanaswer/Lunar-Lander-PPO-",
+      "snippet": "It includes: Environment Setup: Initializes the LunarLander-v2 environment and wraps it with DummyVecEnv to handle vectorized operations. PPO Model Initialization: Configures and initializes the PPO model with specific hyperparameters. Training: Trains the PPO model on the LunarLander-v2 environment using a specified number of timesteps."
+    },
+    {
+      "title": "LordN77/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/LordN77/ppo-LunarLander-v2",
+      "snippet": "A Stable-Baselines3 PPO agent trained from scratch for 1,015,808 timesteps using Gymnasium 0.29.1 and Stable-Baselines3 2.3.2 for Deep Reinforcement Learning Course Unit 1. The model achieved 247.41 ± 20.43 across 10 deterministic evaluation episodes with evaluation seed 1000. The course score ..."
+    }
+  ]
+}

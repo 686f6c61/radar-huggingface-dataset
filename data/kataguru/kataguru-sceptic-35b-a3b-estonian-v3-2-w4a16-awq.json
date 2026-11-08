@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "kataguru/Kataguru-Sceptic-35B-A3B-Estonian-v3.2-W4A16-AWQ",
+  "slug": "kataguru-kataguru-sceptic-35b-a3b-estonian-v3-2-w4a16-awq",
+  "author": "kataguru",
+  "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Estonian-v3.2-W4A16-AWQ",
+  "created_at": "2026-11-08T18:58:28.000Z",
+  "updated_at": "2026-11-08T18:58:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "et",
+    "fi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "kataguru",
+    "estonian",
+    "et",
+    "translation",
+    "multimodal",
+    "vision",
+    "reasoning",
+    "moe",
+    "awq",
+    "w4a16",
+    "int4",
+    "marlin",
+    "compressed-tensors",
+    "conversational",
+    "en",
+    "fi",
+    "base_model:kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+    "base_model:quantized:kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 26153850862,
+  "storage_human": "26.2 GB",
+  "base_model": "kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kataguru-Sceptic-35B-A3B-Estonian-v3.2 - Hugging Face",
+      "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Estonian-v3.2",
+      "snippet": "RELEASE STATUS: IN TRAINING QUEUE — Release ETA < 1 Month This repository is an official pre-release slot in the Kataguru Sovereign Language Editions (254 + 2 MoE) queue. Weights (NVFP4-W4ATTN-AWQ Hybrid, AWQ W4A16, and GGUF APEX-Trio + mmproj-f16) will be uploaded within < 1 month immediately after full dataset spot-check certification and 15-benchmark + native Estonian evaluation."
+    },
+    {
+      "title": "Kataguru-Sceptic-35B-A3B-v2.6-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v2.6-NVFP4",
+      "snippet": "Kataguru-Sceptic-35B-A3B-v2.6-NVFP4 is a bilingual (English & Finnish) 35-billion parameter (3B active parameters per token, 254 routed experts per layer) multimodal Mixture-of-Experts (MoE) model quantized to NVIDIA Blackwell NVFP4 (compressed-tensors) with synchronized w13 (gate_proj + up_proj) weight_global_scale across all 10,160 routed experts."
+    }
+  ]
+}

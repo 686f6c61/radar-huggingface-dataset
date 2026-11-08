@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Temper-2-Nodel-GGUF",
+  "slug": "mradermacher-temper-2-nodel-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Temper-2-Nodel-GGUF",
+  "created_at": "2026-11-08T17:30:58.000Z",
+  "updated_at": "2026-11-08T17:46:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "rust",
+    "code",
+    "qwen3_5",
+    "en",
+    "ru",
+    "base_model:maylore-ai/Temper-2-Nodel",
+    "base_model:quantized:maylore-ai/Temper-2-Nodel",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 38906303872,
+  "storage_human": "38.9 GB",
+  "base_model": "maylore-ai/Temper-2-Nodel",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maylore-ai/Temper-2-Nodel-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/maylore-ai/Temper-2-Nodel-GGUF/tree/main",
+      "snippet": "Instructions to use maylore-ai/Temper-2-Nodel-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp"
+    },
+    {
+      "title": "maylore-ai/Temper-2-Nodel-GGUF · Hugging Face",
+      "url": "https://huggingface.co/maylore-ai/Temper-2-Nodel-GGUF",
+      "snippet": "LM Studio LM Studio does not take the temperature from the GGUF file and starts every model at 0.8. Set it to 0.2 in the model settings. Ollama"
+    }
+  ]
+}

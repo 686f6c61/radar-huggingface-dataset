@@ -5,7 +5,7 @@
   "author": "ooichman",
   "url": "https://huggingface.co/ooichman/distilbert-imdb",
   "created_at": "2026-11-03T14:44:33.000Z",
-  "updated_at": "2026-11-03T14:46:59.000Z",
+  "updated_at": "2026-11-08T15:53:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 31,
+  "downloads_30d": 40,
   "trending_score": 0,
   "parameters": 66955010,
   "parameters_human": "67.0M",
-  "storage_bytes": 267837761,
-  "storage_human": "268 MB",
+  "storage_bytes": 1071340642,
+  "storage_human": "1.1 GB",
   "base_model": "distilbert-base-uncased",
   "formats": [
     "safetensors"

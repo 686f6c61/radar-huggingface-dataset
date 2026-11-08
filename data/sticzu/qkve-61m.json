@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Sticzu/QKVE-61M",
+  "slug": "sticzu-qkve-61m",
+  "author": "Sticzu",
+  "url": "https://huggingface.co/Sticzu/QKVE-61M",
+  "created_at": "2026-11-08T20:33:52.000Z",
+  "updated_at": "2026-11-08T20:55:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pl",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "qkve",
+    "transformer",
+    "attention-gating",
+    "value-modulation",
+    "causal-lm",
+    "torchscript",
+    "text-generation",
+    "conversational",
+    "pl",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 73386112,
+  "parameters_human": "73.4M",
+  "storage_bytes": 1096391265,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

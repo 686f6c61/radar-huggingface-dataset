@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mremila/archive-20261103-z7b-wmdp-bio-unlearn-fft-npo-weight-distance",
+  "slug": "mremila-archive-20261103-z7b-wmdp-bio-unlearn-fft-npo-weight-distance",
+  "author": "mremila",
+  "url": "https://huggingface.co/mremila/archive-20261103-z7b-wmdp-bio-unlearn-fft-npo-weight-distance",
+  "created_at": "2026-11-08T20:09:24.000Z",
+  "updated_at": "2026-11-08T20:13:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "generated_from_trainer",
+    "conversational",
+    "dataset:cais/wmdp-bio-forget-corpus",
+    "dataset:Salesforce/wikitext",
+    "base_model:HuggingFaceH4/zephyr-7b-beta",
+    "base_model:finetune:HuggingFaceH4/zephyr-7b-beta",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 15008325433,
+  "storage_human": "15.0 GB",
+  "base_model": "HuggingFaceH4/zephyr-7b-beta",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mremila/z7b-wmdp-bio__5pp__unlearn-fft-npo-wd · Hugging Face",
+      "url": "https://huggingface.co/mremila/z7b-wmdp-bio__5pp__unlearn-fft-npo-wd",
+      "snippet": "HuggingFaceH4/zephyr-7b-beta full-parameter fine-tuned with Negative Preference Optimization (NPO) on the WMDP-Bio forget corpus, plus a term that maximizes the RMS distance of the weights from the base model. Part of the Tamper Resistance collection; produced with lilpipe (examples/tamper-resistance, lineage z7b-wmdp-bio--5pp--unlearn-fft-npo-wd)."
+    },
+    {
+      "title": "archive-20261103-z7b-wmdp-bio-unlearn-fft-npo - Hugging Face",
+      "url": "https://huggingface.co/mremila/archive-20261103-z7b-wmdp-bio-unlearn-fft-npo",
+      "snippet": "Instructions to use mremila/archive-20261103-z7b-wmdp-bio-unlearn-fft-npo with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "WMDP Benchmark",
+      "url": "https://www.wmdp.ai/",
+      "snippet": "The W eapons of M ass D estruction P roxy (WMDP) benchmark is a dataset of 3,668 multiple-choice questions surrounding hazardous knowledge in biosecurity, cybersecurity, and chemical security. WMDP serves as both a proxy evaluation for hazardous knowledge in large language models (LLMs) and a benchmark for unlearning methods to remove such knowledge. To guide progress on mitigating risk from ..."
+    }
+  ]
+}

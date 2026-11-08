@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "demoqqq/banglatts-fresh2550-merged-blend",
+  "slug": "demoqqq-banglatts-fresh2550-merged-blend",
+  "author": "demoqqq",
+  "url": "https://huggingface.co/demoqqq/banglatts-fresh2550-merged-blend",
+  "created_at": "2026-11-08T13:12:15.000Z",
+  "updated_at": "2026-11-08T13:12:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 446737317,
+  "storage_human": "447 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "demoqqq/banglatts-merged-news · Hugging Face",
+      "url": "https://huggingface.co/demoqqq/banglatts-merged-news",
+      "snippet": "Bengali VITS text-to-speech voice (single male speaker, news style), built by merging two fine-tunes of the EMTIAZZ Bangladeshi Bangla VITS base: news-v2 97ep (fresh retrain, 1,863 clips, 97/100 epochs, extended 92-token vocabulary with digits and symbols) — 50% combined (1,262 Kiki clips, user ..."
+    },
+    {
+      "title": "demoqqq/banglatts-combined-news · Hugging Face",
+      "url": "https://huggingface.co/demoqqq/banglatts-combined-news",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

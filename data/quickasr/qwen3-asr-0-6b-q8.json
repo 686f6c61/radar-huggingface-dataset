@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "quickasr/Qwen3-ASR-0.6B-q8",
+  "slug": "quickasr-qwen3-asr-0-6b-q8",
+  "author": "quickasr",
+  "url": "https://huggingface.co/quickasr/Qwen3-ASR-0.6B-q8",
+  "created_at": "2026-11-08T17:24:54.000Z",
+  "updated_at": "2026-11-08T17:27:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "quickasr",
+  "languages": [],
+  "tags": [
+    "quickasr",
+    "safetensors",
+    "qwen3_asr",
+    "int8",
+    "streaming",
+    "automatic-speech-recognition",
+    "base_model:Qwen/Qwen3-ASR-0.6B",
+    "base_model:quantized:Qwen/Qwen3-ASR-0.6B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 796188672,
+  "parameters_human": "796.2M",
+  "storage_bytes": 1179589432,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-ASR-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-0.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    },
+    {
+      "title": "tryambientai/Qwen3-ASR-0.6B-gguf · Hugging Face",
+      "url": "https://huggingface.co/tryambientai/Qwen3-ASR-0.6B-gguf",
+      "snippet": "Automatic Speech Recognition model with 0.8B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

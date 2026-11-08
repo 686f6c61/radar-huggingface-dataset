@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Fikra-Model-1-2B-GGUF",
   "created_at": "2026-11-07T00:42:04.000Z",
-  "updated_at": "2026-11-07T01:52:37.000Z",
+  "updated_at": "2026-11-07T10:53:04.000Z",
   "license": "zabibu-technika-license",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1027,
   "trending_score": 0,
   "parameters": 4647450147,
   "parameters_human": "4.65B",

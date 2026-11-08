@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "apetyonok/UltimateDetailerWorkflow",
+  "slug": "apetyonok-ultimatedetailerworkflow",
+  "author": "apetyonok",
+  "url": "https://huggingface.co/apetyonok/UltimateDetailerWorkflow",
+  "created_at": "2026-11-08T14:27:00.000Z",
+  "updated_at": "2026-11-08T14:27:01.000Z",
+  "license": "gplv3",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "workflow",
+    "comfyui",
+    "detailer",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joydriver/UltimateDetailerWorkflow · Hugging Face",
+      "url": "https://huggingface.co/joydriver/UltimateDetailerWorkflow",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "joydriver/UltimateDetailerWorkflow at main - Hugging Face",
+      "url": "https://huggingface.co/joydriver/UltimateDetailerWorkflow/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

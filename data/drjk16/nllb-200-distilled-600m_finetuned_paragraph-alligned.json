@@ -5,7 +5,7 @@
   "author": "drjk16",
   "url": "https://huggingface.co/drjk16/NLLB-200-Distilled-600M_finetuned_Paragraph-Alligned",
   "created_at": "2025-11-07T18:14:52.000Z",
-  "updated_at": "2026-11-05T09:09:26.000Z",
+  "updated_at": "2026-11-05T09:33:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "translation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 6,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": 615073792,
   "parameters_human": "615.1M",

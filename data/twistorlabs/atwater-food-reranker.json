@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "TwistorLabs/atwater-food-reranker",
+  "slug": "twistorlabs-atwater-food-reranker",
+  "author": "TwistorLabs",
+  "url": "https://huggingface.co/TwistorLabs/atwater-food-reranker",
+  "created_at": "2026-11-08T19:31:55.000Z",
+  "updated_at": "2026-11-08T19:32:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "food",
+    "on-device",
+    "siglip2",
+    "zero-shot-image-classification",
+    "base_model:timm/ViT-B-16-SigLIP2",
+    "base_model:finetune:timm/ViT-B-16-SigLIP2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94487792,
+  "storage_human": "94 MB",
+  "base_model": "timm/ViT-B-16-SigLIP2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Is a Reranker? The Second-Stage Model That Improves ... - Unite.AI",
+      "url": "https://www.unite.ai/what-is-a-reranker-the-second-stage-model-that-improves-search-results/",
+      "snippet": "AI Fundamentals What Is a Reranker? The Second-Stage Model That Improves Search Results A reranker is a second-stage model that evaluates a small candidate set more deeply and reorders it for relevance after a fast initial retrieval. This guide explains the mechanism, trade-offs, evaluation, and controls that matter in practice."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "dagoat1327/Qwen3.5-9B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
+  "slug": "dagoat1327-qwen3-5-9b-claude-4-6-os-auto-variable-heretic-uncensored-thinking",
+  "author": "dagoat1327",
+  "url": "https://huggingface.co/dagoat1327/Qwen3.5-9B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
+  "created_at": "2026-11-08T13:08:49.000Z",
+  "updated_at": "2026-11-08T13:08:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "fine tune",
+    "creative",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "writing",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "all use cases",
+    "unsloth",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:trohrbaugh/Qwen3.5-9B-heretic-v2",
+    "base_model:finetune:trohrbaugh/Qwen3.5-9B-heretic-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18844046647,
+  "storage_human": "18.8 GB",
+  "base_model": "trohrbaugh/Qwen3.5-9B-heretic-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-9B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING-X8b",
+      "url": "https://huggingface.co/DavidAU/Qwen3.5-9B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING-X8b",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-9B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING-MAX ...",
+      "url": "https://abliteratedmodels.org/qwen3.5-9b-claude-4.6-os-auto-variable-heretic-uncensored-thinking-max-neocode/",
+      "snippet": "Qwen3.5-9B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING-MAX-NEOCODE will attempt offensive-security prompts that a hosted commercial model declines, which is what makes it usable for red-team corpus generation and for measuring what an unaligned model of this class produces."
+    },
+    {
+      "title": "Lidl autour de moi – adresses, horaires et itinéraire",
+      "url": "https://storelocatortool.com/v3/fr/recherche.php?enseigne=lidl&pays=france",
+      "snippet": "Lidl à proximité : magasins Lidl en France par ville, avec carte, adresse, horaires d'ouverture et itinéraire."
+    }
+  ]
+}

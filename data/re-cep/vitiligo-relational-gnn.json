@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "re-cep/vitiligo-relational-gnn",
+  "slug": "re-cep-vitiligo-relational-gnn",
+  "author": "re-cep",
+  "url": "https://huggingface.co/re-cep/vitiligo-relational-gnn",
+  "created_at": "2026-11-08T16:51:44.000Z",
+  "updated_at": "2026-11-08T16:51:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "graph-neural-network",
+    "relational-gnn",
+    "rgcn",
+    "pytorch-geometric",
+    "vitiligo",
+    "drug-discovery",
+    "link-prediction",
+    "biomedbert",
+    "transcriptomics",
+    "feature-extraction",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13533653,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "re-cep (Recep) - Hugging Face",
+      "url": "https://huggingface.co/re-cep",
+      "snippet": "Recent Activity updated a datasetabout 2 hours ago re-cep/vitiligo-knowledge-graph published a datasetabout 8 hours ago re-cep/vitiligo-knowledge-graph published a modelabout 9 hours ago re-cep/vitiligo-relation-extractor View all activity"
+    },
+    {
+      "title": "Transforming Vitiligo Diagnosis and Treatment Through Artificial ...",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/sji.70076",
+      "snippet": "For AI to be fully effective in vitiligo treatment, further development of transparent, comprehensive and clinically validated systems is essential. Ultimately, AI promises to transform the treatment of vitiligo through personalised medicine, improved diagnostic accuracy and accelerated drug development."
+    }
+  ]
+}

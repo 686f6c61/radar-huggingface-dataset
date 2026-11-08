@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Loria-MosAIk/regen-webnlg-t2g-ce",
+  "slug": "loria-mosaik-regen-webnlg-t2g-ce",
+  "author": "Loria-MosAIk",
+  "url": "https://huggingface.co/Loria-MosAIk/regen-webnlg-t2g-ce",
+  "created_at": "2026-10-31T21:45:58.000Z",
+  "updated_at": "2026-11-08T12:38:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "other",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "text-to-graph",
+    "webnlg",
+    "regen",
+    "other",
+    "en",
+    "arxiv:2608.29948",
+    "arxiv:2108.12472",
+    "base_model:google-t5/t5-large",
+    "base_model:finetune:google-t5/t5-large",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 61,
+  "trending_score": 0,
+  "parameters": 737642496,
+  "parameters_human": "737.6M",
+  "storage_bytes": 2951423800,
+  "storage_human": "3.0 GB",
+  "base_model": "google-t5/t5-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Loria-MosAIk/regen-webnlg-t2g-ce · Hugging Face",
+      "url": "https://huggingface.co/Loria-MosAIk/regen-webnlg-t2g-ce",
+      "snippet": "Other model with 0.7B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Loria-MosAIk/regen-webnlg-t2g-ce at main - Hugging Face",
+      "url": "https://huggingface.co/Loria-MosAIk/regen-webnlg-t2g-ce/tree/main",
+      "snippet": "Loria-MosAIk / regen-webnlg-t2g-ce Like 0 Follow Loria-MosAIk 3 Other Transformers Safetensors English t5 text2text-generation text-to-graph webnlg regen text-generation-inference arxiv:2608.29948 arxiv:2108.12472 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

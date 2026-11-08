@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "mradermacher/EtherealAurora-12B-GGUF",
+  "slug": "mradermacher-etherealaurora-12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/EtherealAurora-12B-GGUF",
+  "created_at": "2025-03-02T16:07:35.000Z",
+  "updated_at": "2026-11-08T18:16:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "chatml",
+    "en",
+    "ja",
+    "base_model:yamatazen/EtherealAurora-12B",
+    "base_model:quantized:yamatazen/EtherealAurora-12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 173,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692276672,
+  "storage_human": "84.7 GB",
+  "base_model": "yamatazen/EtherealAurora-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/EtherealAurora-12B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/EtherealAurora-12B-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/EtherealAurora-12B-v2-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/EtherealAurora-12B-v2-GGUF/tree/main",
+      "snippet": "mradermacher / EtherealAurora-12B-v2-GGUF like 6 Transformers GGUF English Japanese mergekit Merge chatml conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

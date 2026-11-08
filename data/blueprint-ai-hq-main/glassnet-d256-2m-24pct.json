@@ -5,7 +5,7 @@
   "author": "blueprint-ai-hq-main",
   "url": "https://huggingface.co/blueprint-ai-hq-main/glassnet-d256-2m-24pct",
   "created_at": "2026-11-06T07:33:34.000Z",
-  "updated_at": "2026-11-06T09:49:41.000Z",
+  "updated_at": "2026-11-07T07:27:51.000Z",
   "license": "blueprint-ai-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 54,
   "trending_score": 0,
   "parameters": 5908686,
   "parameters_human": "5.9M",

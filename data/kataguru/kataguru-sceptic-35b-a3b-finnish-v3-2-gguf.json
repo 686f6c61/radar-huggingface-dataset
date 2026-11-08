@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kataguru/Kataguru-Sceptic-35B-A3B-Finnish-v3.2-GGUF",
+  "slug": "kataguru-kataguru-sceptic-35b-a3b-finnish-v3-2-gguf",
+  "author": "kataguru",
+  "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Finnish-v3.2-GGUF",
+  "created_at": "2026-11-08T15:51:01.000Z",
+  "updated_at": "2026-11-08T15:56:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fi"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "kataguru",
+    "finnish",
+    "fi",
+    "translation",
+    "multimodal",
+    "vision",
+    "reasoning",
+    "moe",
+    "qwen3_5_moe",
+    "llama-cpp",
+    "lmstudio",
+    "ollama",
+    "imatrix",
+    "apex-quant",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+    "base_model:quantized:kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 45429735488,
+  "storage_human": "45.4 GB",
+  "base_model": "kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF at main",
+      "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF/blob/main/README.md",
+      "snippet": "Kataguru-Sceptic-35B-A3B-v2.6-GGUF is the llama.cpp / LM Studio / Ollama GGUF release of Kataguru-Sceptic-35B-A3B-v2.6, a bilingual (English & Finnish) 35-billion parameter (3B active parameters per token, 254 routed experts per layer) multimodal Mixture-of-Experts (MoE) model."
+    },
+    {
+      "title": "Kataguru-Sceptic-35B-A3B-Georgian-v3.2 - Hugging Face",
+      "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Georgian-v3.2",
+      "snippet": "Kataguru-Sceptic-35B-A3B-Georgian-v3.2 არის ქართული ენისთვის სპეციალიზებული 256 -ექსპერტიანი MoE მოდელი (254 გაყინული Sceptic ძირითადი ექსპერტი + 2 ქართული ენის ..."
+    }
+  ]
+}

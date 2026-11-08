@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "GrowBitLabs/zehn-135m",
+  "slug": "growbitlabs-zehn-135m",
+  "author": "GrowBitLabs",
+  "url": "https://huggingface.co/GrowBitLabs/zehn-135m",
+  "created_at": "2026-11-08T19:16:49.000Z",
+  "updated_at": "2026-11-08T19:40:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "zehn",
+    "text-generation",
+    "custom_code",
+    "pytorch",
+    "sentencepiece",
+    "base_model",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 147580704,
+  "parameters_human": "147.6M",
+  "storage_bytes": 835962835,
+  "storage_human": "836 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open AI Models | GrowBitLabs",
+      "url": "https://growbitlabs.com/open-models",
+      "snippet": "Small models for serious retrieval. GrowBitLabs publishes practical model releases for semantic search, private RAG, local-first AI products, and efficient deployment paths where control matters."
+    },
+    {
+      "title": "Chamath’s AI coding startup 8090 raises $135M - TNW",
+      "url": "https://thenextweb.com/news/chamath-palihapitiya-8090-135m-series-a-ai-coding",
+      "snippet": "Chamath Palihapitiya has raised $135M led by Salesforce for 8090, his AI coding startup, and is stepping in as CEO for the first time since Facebook."
+    }
+  ]
+}

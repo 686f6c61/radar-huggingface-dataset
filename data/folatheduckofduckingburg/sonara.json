@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "FolatheDuckofDuckingburg/Sonara",
+  "slug": "folatheduckofduckingburg-sonara",
+  "author": "FolatheDuckofDuckingburg",
+  "url": "https://huggingface.co/FolatheDuckofDuckingburg/Sonara",
+  "created_at": "2026-11-08T15:20:32.000Z",
+  "updated_at": "2026-11-08T15:20:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "piano",
+    "machine-learning",
+    "ml",
+    "midi",
+    "pretty-midi",
+    "experimental",
+    "neural-network",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - FolatheDuckofDuckingburg/FolatheDuckofDuckingburg",
+      "url": "https://github.com/FolatheDuckofDuckingburg/FolatheDuckofDuckingburg",
+      "snippet": "Noggin: Building an adaptive, client-side AI tutor framework utilizing TensorFlow.js to dynamically assist special education students. Computational Neuroscience: Exploring how neural models can inspire optimal machine learning architectures and adaptive educational software."
+    },
+    {
+      "title": "FolatheDuckofDuckingburg - GitHub",
+      "url": "https://github.com/FolatheDuckofDuckingburg",
+      "snippet": "Student researcher in theoretical neuroscience, BCIs, and physics. Interested in low-latency systems for education and causal set quantum gravity - FolatheDuckofDuckingburg"
+    }
+  ]
+}

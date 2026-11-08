@@ -5,7 +5,7 @@
   "author": "santhosh63",
   "url": "https://huggingface.co/santhosh63/whisper-tamil-medium-web",
   "created_at": "2026-11-07T01:59:04.000Z",
-  "updated_at": "2026-11-07T01:59:29.000Z",
+  "updated_at": "2026-11-07T03:47:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 185,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 6740209434,
-  "storage_human": "6.7 GB",
+  "storage_bytes": 53527102992,
+  "storage_human": "53.5 GB",
   "base_model": "vasista22/whisper-tamil-medium",
   "formats": [
     "onnx"

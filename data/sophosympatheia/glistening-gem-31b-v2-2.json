@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sophosympatheia/Glistening-Gem-31B-v2.2",
+  "slug": "sophosympatheia-glistening-gem-31b-v2-2",
+  "author": "sophosympatheia",
+  "url": "https://huggingface.co/sophosympatheia/Glistening-Gem-31B-v2.2",
+  "created_at": "2026-11-08T05:57:55.000Z",
+  "updated_at": "2026-11-08T15:46:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma4",
+    "image-text-to-text",
+    "mergekit",
+    "merge",
+    "not-for-all-audiences",
+    "conversational",
+    "en",
+    "arxiv:2406.11617",
+    "base_model:BeaverAI/Artemis-31B-v1p-GGUF",
+    "base_model:merge:BeaverAI/Artemis-31B-v1p-GGUF",
+    "base_model:TheDrummer/Artemis-31B-v1.2",
+    "base_model:merge:TheDrummer/Artemis-31B-v1.2",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:merge:google/gemma-4-31B-it",
+    "base_model:llmfan46/gemma-4-Ortenzya-The-Creative-Wordsmith-31B-it-uncensored-heretic",
+    "base_model:merge:llmfan46/gemma-4-Ortenzya-The-Creative-Wordsmith-31B-it-uncensored-heretic",
+    "base_model:zerofata/G4-LuneLight-31B",
+    "base_model:merge:zerofata/G4-LuneLight-31B",
+    "base_model:zerofata/G4-MeroMero-v2-31B",
+    "base_model:merge:zerofata/G4-MeroMero-v2-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 63779232074,
+  "storage_human": "63.8 GB",
+  "base_model": "zerofata/G4-MeroMero-v2-31B, zerofata/G4-LuneLight-31B, TheDrummer/Artemis-31B-v1.2, BeaverAI/Artemis-31B-v1p-GGUF, google/gemma-4-31B-it, llmfan46/gemma-4-Ortenzya-The-Creative-Wordsmith-31B-it-uncensored-heretic",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/sophosympatheia_Glistening-Gem-31B-v2.0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/sophosympatheia_Glistening-Gem-31B-v2.0-GGUF",
+      "snippet": "Instructions to use bartowski/sophosympatheia_Glistening-Gem-31B-v2.0-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "sophosympatheia/Glistening-Gem-31B-v2.0 · Hugging Face",
+      "url": "https://huggingface.co/sophosympatheia/Glistening-Gem-31B-v2.0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "TurkeyProje/GozlerAI-1B-Turkish-LoRA",
+  "slug": "turkeyproje-gozlerai-1b-turkish-lora",
+  "author": "TurkeyProje",
+  "url": "https://huggingface.co/TurkeyProje/GozlerAI-1B-Turkish-LoRA",
+  "created_at": "2026-11-08T13:08:33.000Z",
+  "updated_at": "2026-11-08T13:08:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39784072,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Turkish model - v1.0 | Flux.1 LoRA | Civitai",
+      "url": "https://civitai.com/models/1653316/turkish-model",
+      "snippet": "To be clear, this is a 100% AI generated ethnic/country model using FLUX-Dev, Stability Matrix WebUI and Flux.gym. NOT A REAL PERSON This is the first in a series to try and bridge some of the gap between the recently banned \"real\" models and the remaining Anime/Manga LoRA's. :) Enjoy You can use \"turk3y\" for stronger prompts. Trained on Flux-Dev. If you want a name, call her Aiyla! Additional ..."
+    },
+    {
+      "title": "Turkish AI Models (189) | Civitai",
+      "url": "https://civitai.com/tag/turkish",
+      "snippet": "Browse 189 AI models tagged \"Turkish\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    }
+  ]
+}

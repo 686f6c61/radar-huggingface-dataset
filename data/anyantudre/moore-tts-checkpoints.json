@@ -5,7 +5,7 @@
   "author": "anyantudre",
   "url": "https://huggingface.co/anyantudre/moore-tts-checkpoints",
   "created_at": "2026-10-29T23:45:41.000Z",
-  "updated_at": "2026-11-07T02:08:32.000Z",
+  "updated_at": "2026-11-08T11:37:16.000Z",
   "license": "per-folder",
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 63094035133,
-  "storage_human": "63.1 GB",
+  "storage_bytes": 66588121808,
+  "storage_human": "66.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

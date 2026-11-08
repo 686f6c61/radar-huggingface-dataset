@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "quickasr/Qwen3-ASR-1.7B-q8",
+  "slug": "quickasr-qwen3-asr-1-7b-q8",
+  "author": "quickasr",
+  "url": "https://huggingface.co/quickasr/Qwen3-ASR-1.7B-q8",
+  "created_at": "2026-11-08T17:27:44.000Z",
+  "updated_at": "2026-11-08T17:39:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "quickasr",
+  "languages": [],
+  "tags": [
+    "quickasr",
+    "safetensors",
+    "qwen3_asr",
+    "int8",
+    "streaming",
+    "automatic-speech-recognition",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:quantized:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2082092672,
+  "parameters_human": "2.08B",
+  "storage_bytes": 2843081416,
+  "storage_human": "2.8 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - nexustar/quickasr: C inference for Qwen3-ASR 0.6b and 1.7b ...",
+      "url": "https://github.com/nexustar/quickasr",
+      "snippet": "It currently runs the Qwen3-ASR models (0.6B and 1.7B). The core is plain C with no dependencies beyond the C standard library and a BLAS implementation (Accelerate on macOS, OpenBLAS on Linux and Windows); make gpu adds an optional GPU path (Metal, Vulkan) through ggml. quickasr started as a fork of antirez/qwen-asr."
+    },
+    {
+      "title": "chameleon-ai/qwen3-asr-1.7b · Hugging Face",
+      "url": "https://huggingface.co/chameleon-ai/qwen3-asr-1.7b",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

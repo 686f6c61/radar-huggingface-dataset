@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "scar-ai/Qwen3.8-27B-Quickthinker",
+  "slug": "scar-ai-qwen3-8-27b-quickthinker",
+  "author": "scar-ai",
+  "url": "https://huggingface.co/scar-ai/Qwen3.8-27B-Quickthinker",
+  "created_at": "2026-11-07T11:20:22.000Z",
+  "updated_at": "2026-11-08T14:37:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "reasoning",
+    "reasoning-efficiency",
+    "thinking",
+    "weight-space-programming",
+    "model-editing",
+    "steering",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55579362839,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B: Benchmarks, Features & Performance",
+      "url": "https://www.five.reviews/ai-tools/qwen3-8-27b-benchmarks-features-performance/",
+      "snippet": "Qwen3.8-27 B: Quick Summary Qwen3.8-27B is a 27-billion-parameter multimodal AI model from Alibaba designed for open-weight deployment. It improves substantially over its predecessor Qwen3.6-27B in coding, reasoning, and agentic tasks while fitting on a single consumer GPU when quantized."
+    },
+    {
+      "title": "Qwen 3.8-27B Complete Guide: Vision, Tool Use, and a Real Upgrade Over ...",
+      "url": "https://www.aimadetools.com/blog/qwen-3-8-27b-complete-guide/",
+      "snippet": "Qwen 3.8-27B is Alibaba’s compact, deployment-friendly model in the new Qwen 3.8 generation. It is a 27 billion parameter dense model, built on the Qwen3.5 architecture, and it is the direct successor to Qwen 3.6-27B, one of the most-used local coding models on this site."
+    }
+  ]
+}

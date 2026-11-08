@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "PiterQ/mmlw-roberta-large-qnn-v73-ctx",
+  "slug": "piterq-mmlw-roberta-large-qnn-v73-ctx",
+  "author": "PiterQ",
+  "url": "https://huggingface.co/PiterQ/mmlw-roberta-large-qnn-v73-ctx",
+  "created_at": "2026-11-08T18:31:57.000Z",
+  "updated_at": "2026-11-08T18:35:28.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": null,
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "onnx",
+    "qnn",
+    "onnxruntime",
+    "npu",
+    "hexagon",
+    "sentence-similarity",
+    "pl",
+    "base_model:sdadas/mmlw-retrieval-roberta-large-v2",
+    "base_model:quantized:sdadas/mmlw-retrieval-roberta-large-v2",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 902787878,
+  "storage_human": "903 MB",
+  "base_model": "sdadas/mmlw-retrieval-roberta-large-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PiterQ/mmlw-retrieval-roberta-large-v2-ONNX-int8 · Hugging Face",
+      "url": "https://huggingface.co/PiterQ/mmlw-retrieval-roberta-large-v2-ONNX-int8",
+      "snippet": "ONNX conversion of sdadas/mmlw-retrieval-roberta-large-v2 by Sławomir Dadas (OPI PIB), source revision 13701958e518c47b1f3f91b4d2cdd5afb3eb9331, quantized for on-device retrieval (search in a user's own documents, notes and recordings) in the AudioTranscriber app on Android (ONNX Runtime, CPU)."
+    },
+    {
+      "title": "sdadas/mmlw-retrieval-roberta-large · Hugging Face",
+      "url": "https://huggingface.co/sdadas/mmlw-retrieval-roberta-large",
+      "snippet": "MMLW (muszę mieć lepszą wiadomość) are neural text encoders for Polish. This model is optimized for information retrieval tasks. It can transform queries and passages to 1024 dimensional vectors. The model was developed using a two-step procedure ..."
+    }
+  ]
+}

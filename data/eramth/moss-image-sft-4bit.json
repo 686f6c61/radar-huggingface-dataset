@@ -5,7 +5,7 @@
   "author": "eramth",
   "url": "https://huggingface.co/eramth/MOSS-Image-SFT-4bit",
   "created_at": "2026-11-07T17:51:47.000Z",
-  "updated_at": "2026-11-07T17:57:51.000Z",
+  "updated_at": "2026-11-07T18:15:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 46,
   "trending_score": 0,
   "parameters": 2663075353,
   "parameters_human": "2.66B",

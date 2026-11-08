@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "avericaai/cohere-transcribe-arabic-07-2026-gguf",
+  "slug": "avericaai-cohere-transcribe-arabic-07-2026-gguf",
+  "author": "avericaai",
+  "url": "https://huggingface.co/avericaai/cohere-transcribe-arabic-07-2026-gguf",
+  "created_at": "2026-11-08T17:24:54.000Z",
+  "updated_at": "2026-11-08T17:24:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transcribe.cpp",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "asr",
+    "speech-to-text",
+    "cohere",
+    "conformer",
+    "encoder-decoder",
+    "arabic",
+    "automatic-speech-recognition",
+    "en",
+    "ar",
+    "base_model:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "base_model:quantized:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2049026832,
+  "parameters_human": "2.05B",
+  "storage_bytes": 15923520448,
+  "storage_human": "15.9 GB",
+  "base_model": "CohereLabs/cohere-transcribe-arabic-07-2026",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tryambientai/cohere-transcribe-arabic-07-2026-gguf · Hugging Face",
+      "url": "https://huggingface.co/tryambientai/cohere-transcribe-arabic-07-2026-gguf",
+      "snippet": "GGUF conversions of CohereLabs/cohere-transcribe-arabic-07-2026 for use with transcribe.cpp. Ported from upstream commit 0a8193c, pinned 2026-07-07. Validated against the Transformers reference at transcribe.cpp commit d89ecb7 on 2026-07-07. Offline Arabic speech-to-text, including dialectal Arabic ..."
+    },
+    {
+      "title": "CohereLabs/cohere-transcribe-arabic-07-2026 · Hugging Face",
+      "url": "https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026",
+      "snippet": "Strengths Cohere Transcribe Arabic demonstrates strong transcription accuracy for Arabic and English. As a dedicated speech recognition model, it benefits from efficient inference via the Conformer encoder-decoder architecture. Limitations Single language. The model performs best when remaining in-distribution of a single, pre-specified language."
+    }
+  ]
+}

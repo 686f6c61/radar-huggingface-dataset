@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "manuelgscom/revisa-0.8b-GGUF",
+  "slug": "manuelgscom-revisa-0-8b-gguf",
+  "author": "manuelgscom",
+  "url": "https://huggingface.co/manuelgscom/revisa-0.8b-GGUF",
+  "created_at": "2026-11-08T14:15:55.000Z",
+  "updated_at": "2026-11-08T14:16:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "spanish",
+    "grammar-correction",
+    "spelling-correction",
+    "proofreading",
+    "gec",
+    "offline",
+    "cpu",
+    "qwen3.5",
+    "text-generation",
+    "es",
+    "dataset:manuelgscom/revisa-bench-es",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 542229833,
+  "storage_human": "542 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Spanish grammatical error correction",
+      "dataset": "revisa-bench-es, part A: Wikipedia edits",
+      "metric": "F0.5",
+      "value": 81.5
+    },
+    {
+      "task": "Spanish grammatical error correction",
+      "dataset": "revisa-bench-es, part B: Wikipedia talk pages",
+      "metric": "F0.5",
+      "value": 80
+    },
+    {
+      "task": "Spanish grammatical error correction",
+      "dataset": "revisa-bench-es, part C: synthetic email and chat",
+      "metric": "F0.5",
+      "value": 92
+    }
+  ],
+  "sources": [
+    {
+      "title": "manuelgscom/askmdb-0.8b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/manuelgscom/askmdb-0.8b-GGUF",
+      "snippet": "Text Generation model with 0.8B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "manuelgscom/dale-0.8b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/manuelgscom/dale-0.8b-GGUF",
+      "snippet": "The GGUF carries general.* metadata (name, author, URL, version, license, base model). The tensors are identical to the file evaluated below; only the metadata was added."
+    }
+  ]
+}

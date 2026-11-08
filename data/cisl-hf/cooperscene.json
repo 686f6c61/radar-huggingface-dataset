@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "cisl-hf/CooperScene",
+  "slug": "cisl-hf-cooperscene",
+  "author": "cisl-hf",
+  "url": "https://huggingface.co/cisl-hf/CooperScene",
+  "created_at": "2026-05-29T17:15:14.000Z",
+  "updated_at": "2026-11-08T17:03:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "cooperscene",
+  "languages": [],
+  "tags": [
+    "cooperscene",
+    "3d-object-detection",
+    "cooperative-perception",
+    "autonomous-driving",
+    "lidar",
+    "camera",
+    "v2x",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3253914144,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cisl-hf/CooperScene · Hugging Face",
+      "url": "https://huggingface.co/cisl-hf/CooperScene",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - UCR-CISL/CooperScene: [ECCV 2026, Spotlight] CooperScene ...",
+      "url": "https://github.com/UCR-CISL/CooperScene/tree/main",
+      "snippet": "[ECCV 2026, Spotlight] CooperScene: Multi-Modal Cooperative Autonomy Benchmark with C-V2X Communication Characterization - UCR-CISL/CooperScene"
+    }
+  ]
+}

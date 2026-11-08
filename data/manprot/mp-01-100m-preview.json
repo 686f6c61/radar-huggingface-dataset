@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Manprot/MP-01-100M-Preview",
+  "slug": "manprot-mp-01-100m-preview",
+  "author": "Manprot",
+  "url": "https://huggingface.co/Manprot/MP-01-100M-Preview",
+  "created_at": "2026-11-02T17:22:56.000Z",
+  "updated_at": "2026-11-08T14:20:36.000Z",
+  "license": "to-be-decided",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "vbq",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vbq",
+    "safetensors",
+    "pretraining",
+    "decoder-only",
+    "small-language-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:mlfoundations/dclm-baseline-1.0-parquet",
+    "dataset:wikimedia/wikipedia",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:HuggingFaceTB/stackexchange_2025_md",
+    "dataset:allenai/dolma3_mix-6T-1025",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "dataset:HuggingFaceTB/everyday-conversations-llama3.1-2k",
+    "dataset:OpenAssistant/oasst2",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:databricks/databricks-dolly-15k",
+    "dataset:jondurbin/airoboros-3.2",
+    "dataset:anthracite-org/kalo-opus-instruct-22k-no-refusal",
+    "dataset:Gryphe/Sonnet3.5-Charcard-Roleplay",
+    "dataset:hieunguyenminh/roleplay",
+    "dataset:PygmalionAI/PIPPA",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 666,
+  "trending_score": 0,
+  "parameters": 100623744,
+  "parameters_human": "100.6M",
+  "storage_bytes": 606170875,
+  "storage_human": "606 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Manprot/MP-01-100M-base · Hugging Face",
+      "url": "https://huggingface.co/Manprot/MP-01-100M-base",
+      "snippet": "MP-01 100M base is a 100.6M-parameter decoder-only language model made by Manprot. It is not a pure base model. It started from chat fine-tuned weights, so it can show chat-style behaviour. It continues text but does not follow instructions reliably. A separate local cooldown (170 steps from step ..."
+    },
+    {
+      "title": "Manprot (Manprot) – Models - Hugging Face",
+      "url": "https://huggingface.co/Manprot/models",
+      "snippet": "Team members 1 Manprot's models1 Sort: Recently updated Manprot/MP-01-100M-base Text Generation • 0.1B•Updated about 9 hours ago• 159 • 3"
+    }
+  ]
+}

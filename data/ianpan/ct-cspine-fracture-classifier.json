@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ianpan/ct-cspine-fracture-classifier",
+  "slug": "ianpan-ct-cspine-fracture-classifier",
+  "author": "ianpan",
+  "url": "https://huggingface.co/ianpan/ct-cspine-fracture-classifier",
+  "created_at": "2026-11-08T20:49:51.000Z",
+  "updated_at": "2026-11-08T20:50:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "skp",
+  "languages": [],
+  "tags": [
+    "skp",
+    "medical-imaging",
+    "computed-tomography",
+    "cervical-spine-fracture",
+    "multiple-instance-learning",
+    "safetensors",
+    "image-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2710084662,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "An efficient deep learning based approach for automated ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-025-10448-6",
+      "snippet": "Through Grad-CAM analysis visualized the fracture by extracting features through proposed model and validate the findings for confirming the model’s efficiency and effectiveness."
+    },
+    {
+      "title": "Machine Learning and Deep Learning in Spinal Injury - PMC - NIH",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10856760/",
+      "snippet": "25.01.2024 ... A CNN demonstrated 92% accuracy in detecting cervical spine fractures on CT, with potential for worklist prioritization and assisting ..."
+    },
+    {
+      "title": "Applications of artificial intelligence for vertebral compression ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2405525526000476",
+      "snippet": "... CT: underdiagnosis, undertreatment, and evaluation of an AI algorithm. J ... model based on the AO spine-DGOU osteoporotic fracture classification system."
+    },
+    {
+      "title": "Development of a Machine Learning-Based Model for Accurate ...",
+      "url": "https://www.cureus.com/articles/177237",
+      "snippet": "19.10.2023 ... Cervical spine fractures represent a significant healthcare challenge, necessitating accurate detection for appropriate management and ..."
+    },
+    {
+      "title": "Deep learning-based detection and localization of cervical vertebral ...",
+      "url": "https://www.nature.com/articles/s41598-026-62166-2",
+      "snippet": "22.07.2026 ... From the literature, it is clear that very few cervical spine fracture detection datasets are publicly available and that the existing datasets ..."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "lin267/week2-dl-practicals",
+  "slug": "lin267-week2-dl-practicals",
+  "author": "lin267",
+  "url": "https://huggingface.co/lin267/week2-dl-practicals",
+  "created_at": "2026-11-08T12:13:17.000Z",
+  "updated_at": "2026-11-08T12:14:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "deep-learning",
+    "mnist",
+    "mlp",
+    "cnn",
+    "lstm",
+    "gru",
+    "function-fitting",
+    "image-classification",
+    "tutorial",
+    "zh",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2540071,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DL-AI-Internship/week2/week 2.ipynb at main · Vinay18-sng/DL ... - GitHub",
+      "url": "https://github.com/Vinay18-sng/DL-AI-Internship/blob/main/week2/week%202.ipynb",
+      "snippet": "Practical Deep Learning and AI projects completed during my internship, covering neural networks, data preprocessing, model training, evaluation, and prediction."
+    },
+    {
+      "title": "lin267 (lin) - Hugging Face",
+      "url": "https://huggingface.co/lin267",
+      "snippet": "Recent Activity updated a model2 days ago lin267/ppo-LunarLander-v3 published a model2 days ago lin267/ppo-LunarLander-v3 View all activity"
+    }
+  ]
+}

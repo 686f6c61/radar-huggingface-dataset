@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "lazarenkod/fluent-books-voices-en",
+  "slug": "lazarenkod-fluent-books-voices-en",
+  "author": "lazarenkod",
+  "url": "https://huggingface.co/lazarenkod/fluent-books-voices-en",
+  "created_at": "2026-11-08T20:01:24.000Z",
+  "updated_at": "2026-11-08T20:01:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "kokoro",
+    "distillation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71919216,
+  "storage_human": "72 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lazarenkod (Dmitry Lazarenko) – Datasets - Hugging Face",
+      "url": "https://huggingface.co/lazarenkod/datasets",
+      "snippet": "Recent Activity updated a model1 day ago lazarenkod/gemma4-e2b-fluent-books published a model1 day ago lazarenkod/gemma4-e2b-fluent-books updated a model2 days ago lazarenkod/qwen3.5-2b-fluent-books View all activity"
+    },
+    {
+      "title": "lazarenkod (Dmitry Lazarenko) - Hugging Face",
+      "url": "https://huggingface.co/lazarenkod",
+      "snippet": "lazarenkod/gemma4-e2b-fluent-books Text Generation • 2B•Updated 1 day ago• 43 • 1"
+    }
+  ]
+}

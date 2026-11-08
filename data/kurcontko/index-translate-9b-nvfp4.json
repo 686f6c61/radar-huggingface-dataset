@@ -5,7 +5,7 @@
   "author": "kurcontko",
   "url": "https://huggingface.co/kurcontko/Index-Translate-9B-NVFP4",
   "created_at": "2026-11-06T22:52:57.000Z",
-  "updated_at": "2026-11-06T22:53:44.000Z",
+  "updated_at": "2026-11-07T07:46:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 37,
   "trending_score": 0,
   "parameters": 9653104368,
   "parameters_human": "9.65B",

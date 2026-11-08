@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "ayse67895/Signature-detection",
+  "slug": "ayse67895-signature-detection",
+  "author": "ayse67895",
+  "url": "https://huggingface.co/ayse67895/Signature-detection",
+  "created_at": "2026-11-08T12:54:17.000Z",
+  "updated_at": "2026-11-08T13:07:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 242044281,
+  "storage_human": "242 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open-Source Handwritten Signature Detection Model - Hugging Face",
+      "url": "https://huggingface.co/blog/samuellimabraz/signature-detection-model",
+      "snippet": "A Blog post by Samuel Lima Braz on Hugging Face"
+    },
+    {
+      "title": "signature-detection · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/signature-detection",
+      "snippet": "A super lightweight image processing algorithm for detection and extraction of overlapped handwritten signatures on scanned documents using OpenCV and scikit-image. An end-to-end signature verification system to extract, clean and verify signatures in documents. Signatures are detected using YOLOv5 ..."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "dongnhdev/Qwen3.8-Flash-Next-Strata-Q2mix",
+  "slug": "dongnhdev-qwen3-8-flash-next-strata-q2mix",
+  "author": "dongnhdev",
+  "url": "https://huggingface.co/dongnhdev/Qwen3.8-Flash-Next-Strata-Q2mix",
+  "created_at": "2026-11-08T14:46:59.000Z",
+  "updated_at": "2026-11-08T14:48:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 69978653248,
+  "storage_human": "70.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - m3198x/strata: Qwen3.8-Flash-Next on any consumer hardware ...",
+      "url": "https://github.com/m3198x/strata",
+      "snippet": "A voxel pagoda garden, 1 shot prompt running on an RTX 5070 with Strata (IQ3_S, 128K context) · full video (49 s) Strata runs Qwen3.8-Flash-Next - a large, smart AI model that normally needs a server - on a normal PC. It chats, writes code, reads pictures and works with your apps and coding agents, and nothing leaves your PC."
+    },
+    {
+      "title": "GitHub - Niko1221/Strata: Qwen3.8-Flash-Next on any consumer hardware ...",
+      "url": "https://github.com/Niko1221/Strata",
+      "snippet": "Qwen3.8-Flash-Next on any consumer hardware: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional image input."
+    }
+  ]
+}

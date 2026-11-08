@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "vyrekai/Viggle-Remake-Easy-ComfyUI",
+  "slug": "vyrekai-viggle-remake-easy-comfyui",
+  "author": "vyrekai",
+  "url": "https://huggingface.co/vyrekai/Viggle-Remake-Easy-ComfyUI",
+  "created_at": "2026-11-08T12:09:35.000Z",
+  "updated_at": "2026-11-08T12:10:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "workflow",
+    "video-to-video",
+    "viggle",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79184,
+  "storage_human": "79184 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Viggle Remake: Video to Video AI Agent | Viggle AI",
+      "url": "https://viggle.ai/models/viggle-remake",
+      "snippet": "Viggle Remake is a video remake agent. Say what to change in your footage and keep revising in chat: recast people, swap objects, move the set, restyle."
+    },
+    {
+      "title": "comfyui/ComfyUI-Viggle-Remake/ · Viggle/Viggle-Remake at main",
+      "url": "https://huggingface.co/Viggle/Viggle-Remake/tree/main/comfyui/ComfyUI-Viggle-Remake",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

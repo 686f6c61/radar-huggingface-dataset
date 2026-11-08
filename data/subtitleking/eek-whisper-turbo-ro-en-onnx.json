@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "subtitleking/eek-whisper-turbo-ro-en-onnx",
+  "slug": "subtitleking-eek-whisper-turbo-ro-en-onnx",
+  "author": "subtitleking",
+  "url": "https://huggingface.co/subtitleking/eek-whisper-turbo-ro-en-onnx",
+  "created_at": "2026-11-08T12:04:29.000Z",
+  "updated_at": "2026-11-08T12:06:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "ro"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "webgpu",
+    "ro",
+    "base_model:eek/whisper-turbo-ro-en",
+    "base_model:quantized:eek/whisper-turbo-ro-en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1608422198,
+  "storage_human": "1.6 GB",
+  "base_model": "eek/whisper-turbo-ro-en",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "subtitleking/eek-whisper-turbo-ro-en-onnx · Hugging Face",
+      "url": "https://huggingface.co/subtitleking/eek-whisper-turbo-ro-en-onnx",
+      "snippet": "subtitleking / eek-whisper-turbo-ro-en-onnx Like 0 Follow subtitleking 1 Model card FilesFiles and versions xet Community Copy to bucket No model card Downloads last month -"
+    },
+    {
+      "title": "subtitleking/ivrit-whisper-large-v3-turbo-onnx · Hugging Face",
+      "url": "https://huggingface.co/subtitleking/ivrit-whisper-large-v3-turbo-onnx",
+      "snippet": "Hebrew speech recognition (default), Whisper large-v3-turbo fine-tuned by ivrit.ai, converted to ONNX for in-browser inference with Transformers.js on WebGPU (used by SubtitleKing). All credit for the model goes to ivrit.ai; please cite their work. This repository only changes the file format ..."
+    }
+  ]
+}

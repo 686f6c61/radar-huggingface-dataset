@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "AnotherBlood/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
+  "slug": "anotherblood-deepseek-v4-1-flash-1017-uncensored-fp8",
+  "author": "AnotherBlood",
+  "url": "https://huggingface.co/AnotherBlood/DeepSeek-V4.1-Flash-1017-UNCENSORED-FP8",
+  "created_at": "2026-11-08T13:37:02.000Z",
+  "updated_at": "2026-11-08T13:37:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "ru",
+    "it",
+    "th"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "deepseek",
+    "fp8",
+    "uncensored",
+    "abliterated",
+    "vision-language",
+    "reasoning",
+    "tool-calling",
+    "1M-context",
+    "dsv41",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "ru",
+    "it",
+    "th",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510296921671,
+  "storage_human": "510.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "OmniCompass-VL; Overall Cross-Specification Consistency Score on a 0-100 scale, higher is better. 64 video frames with per-frame timestamps; paired Text and Text+Image; temporal grounding, spatial grounding and question answering. API15 evaluation of DeepSeek-V4.1-Flash-1017 on 820 videos and 4,920 requests, completed on November 5, 2026. 4,892 successful responses are scored; 28 terminal ..."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017 at main - Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

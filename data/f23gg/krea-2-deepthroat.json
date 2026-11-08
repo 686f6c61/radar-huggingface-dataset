@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "f23gg/Krea-2-Deepthroat",
+  "slug": "f23gg-krea-2-deepthroat",
+  "author": "f23gg",
+  "url": "https://huggingface.co/f23gg/Krea-2-Deepthroat",
+  "created_at": "2026-11-08T13:39:13.000Z",
+  "updated_at": "2026-11-08T13:39:25.000Z",
+  "license": "civitai",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229860509,
+  "storage_human": "230 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[KREA 2] Deepthroat - v2.0 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.red/models/2764854/krea-2-deepthroat",
+      "snippet": "Krea 2 is licensed under the Krea 2 Community License Agreement. For more information, visit https://krea.ai/krea-2-licensing."
+    },
+    {
+      "title": "Krea 2 Deepthroat - V1 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.red/models/2818160/krea-2-deepthroat",
+      "snippet": "This one is trained to generate Deepthroat The strength is : 1 to 2 (But you can experience with it to see what works best for you) The trigger wor..."
+    }
+  ]
+}

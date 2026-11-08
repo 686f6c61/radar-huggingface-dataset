@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "f23gg/HMNSFW-AIO-Sex-LoRA-V3",
+  "slug": "f23gg-hmnsfw-aio-sex-lora-v3",
+  "author": "f23gg",
+  "url": "https://huggingface.co/f23gg/HMNSFW-AIO-Sex-LoRA-V3",
+  "created_at": "2026-11-08T16:23:47.000Z",
+  "updated_at": "2026-11-08T16:24:15.000Z",
+  "license": "civitai",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/minimaxH3_Collection",
+    "base_model:adapter:lynaNSFW/minimaxH3_Collection",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 621376205,
+  "storage_human": "621 MB",
+  "base_model": "lynaNSFW/minimaxH3_Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HMNSFW - AIO Sex LoRA - V3 - Extreme Realism | MiniMax H3 LoRA | Civitai",
+      "url": "https://civitai.red/models/2834417/hmnsfw-aio-sex-lora",
+      "snippet": "After months of experimentation, I am finally happy to release HMNSFW - Extreme Realism This LoRA takes simple prose prompts and turns them into extremely realistic sex scenes with audio and motion. Recommended strength: 0.6-1.0 Sampling settings: I use the fl2va int8 convrot model with Euler/Beta at 18 steps, without Turbo LoRA. I did test this with Turbo LoRA and it works well. For upscaling ..."
+    },
+    {
+      "title": "f23gg/HMNSFW-AIO-Sex-LoRA · Hugging Face",
+      "url": "https://huggingface.co/f23gg/HMNSFW-AIO-Sex-LoRA",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

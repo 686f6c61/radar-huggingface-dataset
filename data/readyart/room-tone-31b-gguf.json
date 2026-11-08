@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ReadyArt/Room-Tone-31B-GGUF",
+  "slug": "readyart-room-tone-31b-gguf",
+  "author": "ReadyArt",
+  "url": "https://huggingface.co/ReadyArt/Room-Tone-31B-GGUF",
+  "created_at": "2026-11-08T13:49:23.000Z",
+  "updated_at": "2026-11-08T14:15:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "nsfw",
+    "roleplay",
+    "adult-content",
+    "mature",
+    "conversational",
+    "multi-character",
+    "ensemble",
+    "text-generation",
+    "en",
+    "base_model:ReadyArt/Room-Tone-31B",
+    "base_model:quantized:ReadyArt/Room-Tone-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 197366049856,
+  "storage_human": "197.4 GB",
+  "base_model": "ReadyArt/Room-Tone-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt (Ready.Art) - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt",
+      "snippet": "Org profile for Ready.Art on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ReadyArt (Ready.Art) – Models - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/models",
+      "snippet": "Org profile for Ready.Art on Hugging Face, the AI community building the future."
+    }
+  ]
+}

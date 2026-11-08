@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "nam194/d3-edge",
+  "slug": "nam194-d3-edge",
+  "author": "nam194",
+  "url": "https://huggingface.co/nam194/d3-edge",
+  "created_at": "2026-11-08T16:03:57.000Z",
+  "updated_at": "2026-11-08T16:03:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "feature-extraction",
+    "zero-shot-classification",
+    "decision-model",
+    "classification",
+    "system-one",
+    "multimodal",
+    "vision",
+    "video",
+    "custom_code",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 594321600,
+  "parameters_human": "594.3M",
+  "storage_bytes": 1205274995,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vllm-sr/d3-edge · Hugging Face",
+      "url": "https://huggingface.co/vllm-sr/d3-edge",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quantized Models for vllm-sr/d3-edge – Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aquantized%3Avllm-sr%2Fd3-edge",
+      "snippet": "Active filters: vllm-sr/d3-edge. Clear all. ggml-org/vllm-d3-edge-GGUF. Image-Text-to-Text • 0.7B • Updated about 21 hours ago • 217 • 3"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Manprot/MP-02-16B-Preview",
+  "slug": "manprot-mp-02-16b-preview",
+  "author": "Manprot",
+  "url": "https://huggingface.co/Manprot/MP-02-16B-Preview",
+  "created_at": "2026-11-08T14:45:48.000Z",
+  "updated_at": "2026-11-08T14:59:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "glm5_next",
+    "image-text-to-text",
+    "glm",
+    "moe",
+    "expert-pruning",
+    "reap",
+    "preview",
+    "roleplay",
+    "conversational",
+    "en",
+    "dataset:Zek-Takai/glm53-flash-harvest",
+    "dataset:shanjiaz/glm-5.3-flash-open-perfectblend-regen-25pct",
+    "dataset:best-distill/glm-5.3-flash-distillation-chat",
+    "dataset:open-athena/GLM-5.3-RLVR1-Training-Rollouts-2026.09.25",
+    "dataset:sollamon/ox-alpha-glm-5.3-flash-distillation-coding-17k-raw",
+    "dataset:open-athena/GLM-5.3-tmax-swesmith-k8-traces-2026.10",
+    "dataset:liangzhidanta/claude-code-glm53-swesmith-trajectories",
+    "dataset:liangzhidanta/claude-code-glm53-swesmith-compact-trajectories",
+    "dataset:kaivoss/UltraData-SFT-Agent-2609-GLM53-20k",
+    "dataset:Rallex3/glm-5.3-flash-function-calling",
+    "dataset:closestfriend/glm-5.3-flash-function-calling",
+    "dataset:FranckAbgrall/glm53-flash-function-calling",
+    "dataset:flaviojoshua/glm53-flash-function-calling",
+    "dataset:Offlin33er/glm-5.3-flash-function-calling",
+    "dataset:Gryphe/Sonnet3.5-Charcard-Roleplay",
+    "dataset:anthracite-org/c2_logs_32k_llama3_qwen2_v1.3",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:finetune:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18277182550,
+  "parameters_human": "18.28B",
+  "storage_bytes": 50652347245,
+  "storage_human": "50.7 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Manprot (Manprot) – Models - Hugging Face",
+      "url": "https://huggingface.co/Manprot/models",
+      "snippet": "Org profile for Manprot on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Manprot (Manprot) – Datasets - Hugging Face",
+      "url": "https://huggingface.co/Manprot/datasets",
+      "snippet": "Org profile for Manprot on Hugging Face, the AI community building the future."
+    }
+  ]
+}

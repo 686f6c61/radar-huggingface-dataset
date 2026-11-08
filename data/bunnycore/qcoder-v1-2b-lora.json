@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "bunnycore/Qcoder-v1-2B-Lora",
+  "slug": "bunnycore-qcoder-v1-2b-lora",
+  "author": "bunnycore",
+  "url": "https://huggingface.co/bunnycore/Qcoder-v1-2B-Lora",
+  "created_at": "2026-11-08T14:06:42.000Z",
+  "updated_at": "2026-11-08T14:06:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:unsloth/Qwen3.5-2B",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3.5-2B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33638400,
+  "parameters_human": "33.6M",
+  "storage_bytes": 272260429,
+  "storage_human": "272 MB",
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bunnycore (Hoptimizer) - Hugging Face",
+      "url": "https://huggingface.co/bunnycore/models",
+      "snippet": "LLM, Text to Image and Video, Love Model Merging and Small LMs"
+    },
+    {
+      "title": "bunnycore Models — Downloads, Rankings & Growth | OpenModelStats",
+      "url": "https://openmodelstats.com/owners/bunnycore",
+      "snippet": "AI models published by bunnycore. 31 tracked models, 26.7K combined all-time downloads, 45 likes. Download statistics, growth history and ranking positions, tracked daily by OpenModelStats."
+    }
+  ]
+}

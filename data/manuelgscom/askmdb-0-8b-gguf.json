@@ -5,7 +5,7 @@
   "author": "manuelgscom",
   "url": "https://huggingface.co/manuelgscom/askmdb-0.8b-GGUF",
   "created_at": "2026-10-29T19:50:11.000Z",
-  "updated_at": "2026-10-29T22:15:35.000Z",
+  "updated_at": "2026-11-08T12:54:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

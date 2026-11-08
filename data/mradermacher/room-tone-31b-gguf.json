@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Room-Tone-31B-GGUF",
+  "slug": "mradermacher-room-tone-31b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Room-Tone-31B-GGUF",
+  "created_at": "2026-11-08T16:25:09.000Z",
+  "updated_at": "2026-11-08T16:25:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 575743536,
+  "parameters_human": "575.7M",
+  "storage_bytes": 2008499072,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "ReadyArt/Room-Tone-31B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Room-Tone-31B-GGUF",
+      "snippet": "Text Generation model with 31B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

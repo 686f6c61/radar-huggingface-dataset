@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aj9o9/Qwen3.8-27B-DSpine-b16-GGUF",
+  "slug": "aj9o9-qwen3-8-27b-dspine-b16-gguf",
+  "author": "aj9o9",
+  "url": "https://huggingface.co/aj9o9/Qwen3.8-27B-DSpine-b16-GGUF",
+  "created_at": "2026-11-08T14:07:24.000Z",
+  "updated_at": "2026-11-08T14:11:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "dspine",
+    "dflash",
+    "speculative-decoding",
+    "draft-model",
+    "qwen3.8",
+    "text-generation",
+    "arxiv:2609.36173",
+    "base_model:tencent/Qwen3.8-27B-DSpine-b16",
+    "base_model:quantized:tencent/Qwen3.8-27B-DSpine-b16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2025387776,
+  "parameters_human": "2.03B",
+  "storage_bytes": 7521191008,
+  "storage_human": "7.5 GB",
+  "base_model": "tencent/Qwen3.8-27B-DSpine-b16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.8 27B Hardware Guide: From the RTX 3090 to the DGX Spark",
+      "url": "https://www.contextstudios.ai/blog/qwen-3-8-27b-hardware-guide",
+      "snippet": "Qwen 3.8 27B Hardware Guide: From the RTX 3090 to the DGX Spark On August 14, 2026, Alibaba's Qwen team released the weights of Qwen3.8-27B under Apache 2.0 on Hugging Face – making it the most exciting local model in the 27B class right now."
+    },
+    {
+      "title": "Qwen3.8 27b - GGUF Model (2 parts) - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-8-27b.html",
+      "snippet": "Download Qwen3.8 27b GGUF model. 113.4 GB, 6,061,170 downloads, 5558 likes. Split into 2 parts."
+    }
+  ]
+}

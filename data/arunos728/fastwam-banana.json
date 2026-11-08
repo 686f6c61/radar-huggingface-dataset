@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "arunos728/fastwam-banana",
+  "slug": "arunos728-fastwam-banana",
+  "author": "arunos728",
+  "url": "https://huggingface.co/arunos728/fastwam-banana",
+  "created_at": "2026-11-08T16:20:25.000Z",
+  "updated_at": "2026-11-08T16:21:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "world-model",
+    "video-prediction",
+    "fastwam",
+    "manipulation",
+    "diffusion",
+    "base_model:Wan-AI/Wan2.2-TI2V-5B",
+    "base_model:finetune:Wan-AI/Wan2.2-TI2V-5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12042004216,
+  "storage_human": "12.0 GB",
+  "base_model": "Wan-AI/Wan2.2-TI2V-5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google launches Nano Banana 2 model with faster image generation",
+      "url": "https://techcrunch.com/2026/02/26/google-launches-nano-banana-2-model-with-faster-image-generation/",
+      "snippet": "Google is making Nano Banana 2 a default model in Gemini app and in AI mode."
+    },
+    {
+      "title": "Google: Gemini 2.5 Flash Image Preview (Nano Banana)",
+      "url": "https://openrouter.ai/google/gemini-2.5-flash-image-preview",
+      "snippet": "Gemini 2.5 Flash Image Preview, a.k.a. \"Nano Banana,\" is a state of the art image generation model with contextual understanding. It is capable of image generation, edits, and multi-turn conversations."
+    }
+  ]
+}

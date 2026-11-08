@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "CarstenL/Hestia-LLM-V3",
+  "slug": "carstenl-hestia-llm-v3",
+  "author": "CarstenL",
+  "url": "https://huggingface.co/CarstenL/Hestia-LLM-V3",
+  "created_at": "2026-11-08T15:29:20.000Z",
+  "updated_at": "2026-11-08T15:36:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "dictation",
+    "text-cleanup",
+    "lora",
+    "text-generation",
+    "conversational",
+    "de",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2387228004,
+  "storage_human": "2.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HESTIA: Hessian-Guided Quantization for Low-Bit LLMs",
+      "url": "https://www.emergentmind.com/papers/2601.20745",
+      "snippet": "The findings underscore the importance of adopting continuous relaxation for effective training of low-bit architectures, paving the way for more sustainable AI model scaling strategies."
+    }
+  ]
+}

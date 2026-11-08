@@ -5,7 +5,7 @@
   "author": "tom-tien-sinh",
   "url": "https://huggingface.co/tom-tien-sinh/model",
   "created_at": "2026-10-19T05:16:23.000Z",
-  "updated_at": "2026-11-06T15:04:00.000Z",
+  "updated_at": "2026-11-08T12:51:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 4129783496,
-  "storage_human": "4.1 GB",
+  "storage_bytes": 4389856016,
+  "storage_human": "4.4 GB",
   "base_model": null,
   "formats": [
     "onnx"

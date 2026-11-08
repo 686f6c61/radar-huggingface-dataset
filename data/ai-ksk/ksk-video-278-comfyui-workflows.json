@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "AI-KSK/ksk-video-278-comfyui-workflows",
+  "slug": "ai-ksk-ksk-video-278-comfyui-workflows",
+  "author": "AI-KSK",
+  "url": "https://huggingface.co/AI-KSK/ksk-video-278-comfyui-workflows",
+  "created_at": "2026-11-08T16:13:49.000Z",
+  "updated_at": "2026-11-08T16:15:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "comfyui",
+    "ideogram",
+    "text-to-image",
+    "quantization",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5314976,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-KSK｜AI Models & ComfyUI Workflow Lab",
+      "url": "https://aiksk.cc/en/",
+      "snippet": "AI-KSK tests AI image and video models, then organizes ComfyUI workflows, tutorials, online apps, and creator tools."
+    },
+    {
+      "title": "Videos | AI-KSK",
+      "url": "https://aiksk.cc/en/videos/",
+      "snippet": "Browse ComfyUI, RunningHub, AI video, avatar, 3D generation, and model tutorials in AI-KSK Workflow Library."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Denisijcu/vertex-gemma-2b-mia5-ops-gguf",
+  "slug": "denisijcu-vertex-gemma-2b-mia5-ops-gguf",
+  "author": "Denisijcu",
+  "url": "https://huggingface.co/Denisijcu/vertex-gemma-2b-mia5-ops-gguf",
+  "created_at": "2026-11-08T14:33:54.000Z",
+  "updated_at": "2026-11-08T14:37:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "vertex-coders",
+    "logistics",
+    "sort-center",
+    "mia5",
+    "water-spider",
+    "unsloth",
+    "gemma2",
+    "es",
+    "base_model:unsloth/gemma-2-2b-it-bnb-4bit",
+    "base_model:quantized:unsloth/gemma-2-2b-it-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 1708582336,
+  "storage_human": "1.7 GB",
+  "base_model": "unsloth/gemma-2-2b-it-bnb-4bit",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Denisijcu/vertexgemma · Hugging Face",
+      "url": "https://huggingface.co/Denisijcu/vertexgemma",
+      "snippet": "Vertex-Gemma Chess is a specialized tactical chess model fine-tuned from Gemma 2 (2B-Instruct) by Vertex Coders LLC (Miami, FL). Optimized for fast convergence and lightweight local execution, it competes directly in the Vertex Chess Arena architecture duels."
+    },
+    {
+      "title": "Gemma model available in Vertex AI and via GKE - Google Cloud",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemma-model-available-in-vertex-ai-and-via-gke",
+      "snippet": "Customize model serving and infrastructure configurations without the need to provision or maintain nodes Integrate AI Infrastructure fast with the ability to scale to meet the most demanding training and inference scenarios GKE delivers efficient resource management, consistent ops environments, and autoscaling."
+    }
+  ]
+}

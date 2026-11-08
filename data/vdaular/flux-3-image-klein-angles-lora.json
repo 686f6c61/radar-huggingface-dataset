@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "vdaular/flux-3-image-klein-angles-lora",
+  "slug": "vdaular-flux-3-image-klein-angles-lora",
+  "author": "vdaular",
+  "url": "https://huggingface.co/vdaular/flux-3-image-klein-angles-lora",
+  "created_at": "2026-11-08T13:49:50.000Z",
+  "updated_at": "2026-11-08T13:49:50.000Z",
+  "license": "flux-kommunity-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "flux",
+    "flux-3",
+    "flux-3-image-klein",
+    "camera-control",
+    "multiple-angles",
+    "image-editing",
+    "image-to-image",
+    "ml-intern",
+    "base_model:black-forest-labs/flux-3-image-klein-base",
+    "base_model:adapter:black-forest-labs/flux-3-image-klein-base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 733465438,
+  "storage_human": "733 MB",
+  "base_model": "black-forest-labs/flux-3-image-klein-base",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "akhaliq/flux-3-image-klein-angles-lora · Hugging Face",
+      "url": "https://huggingface.co/akhaliq/flux-3-image-klein-angles-lora",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to train a FLUX.3 Image Klein LoRA: trainers, VRAM and settings",
+      "url": "https://www.imagelora.dev/lora/train-flux-3-klein-lora",
+      "snippet": "FLUX.3 Image Klein LoRA training overview: which trainers support it (ai-toolkit, SimpleTuner), VRAM needs and verified settings, with sources."
+    }
+  ]
+}

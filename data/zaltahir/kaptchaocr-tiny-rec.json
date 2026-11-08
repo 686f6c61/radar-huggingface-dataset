@@ -5,7 +5,7 @@
   "author": "zaltahir",
   "url": "https://huggingface.co/zaltahir/kaptchaocr-tiny-rec",
   "created_at": "2026-11-04T18:40:28.000Z",
-  "updated_at": "2026-11-04T18:40:33.000Z",
+  "updated_at": "2026-11-07T20:24:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "suayptalha/QwenGenesis",
+  "slug": "suayptalha-qwengenesis",
+  "author": "suayptalha",
+  "url": "https://huggingface.co/suayptalha/QwenGenesis",
+  "created_at": "2026-11-08T01:51:42.000Z",
+  "updated_at": "2026-11-08T13:56:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "artificial-life",
+    "neural-computation",
+    "swiglu",
+    "cellular-automata",
+    "qwen3_5",
+    "experimental",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 363,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9360804226,
+  "storage_human": "9.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "suayptalha/QwenGenesis-4B · Hugging Face",
+      "url": "https://huggingface.co/suayptalha/QwenGenesis-4B",
+      "snippet": "QwenGenesis explores deterministic artificial-life dynamics computed by compiled neural weights. The project demonstrates birth, predation, mutation, ecological collapse and evolutionary selection on a spatial cellular world ..."
+    },
+    {
+      "title": "suayptalha (Şuayp Talha Kocabay) - Hugging Face",
+      "url": "https://huggingface.co/suayptalha",
+      "snippet": "NLP, LLMs, Transformers, Merging, RNNs, CNNs, ANNs, Computer Vision and ML algorithms"
+    }
+  ]
+}

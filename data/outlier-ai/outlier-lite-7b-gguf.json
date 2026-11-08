@@ -5,7 +5,7 @@
   "author": "Outlier-Ai",
   "url": "https://huggingface.co/Outlier-Ai/Outlier-Lite-7B-GGUF",
   "created_at": "2026-04-18T00:41:49.000Z",
-  "updated_at": "2026-11-06T23:29:07.000Z",
+  "updated_at": "2026-11-08T06:47:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -78,7 +78,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 61,
+  "downloads_30d": 76,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",

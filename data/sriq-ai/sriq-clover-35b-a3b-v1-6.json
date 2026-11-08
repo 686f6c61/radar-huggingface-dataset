@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sriq-ai/sriq-clover-35B-A3B-v1.6",
+  "slug": "sriq-ai-sriq-clover-35b-a3b-v1-6",
+  "author": "sriq-ai",
+  "url": "https://huggingface.co/sriq-ai/sriq-clover-35B-A3B-v1.6",
+  "created_at": "2026-11-08T12:19:19.000Z",
+  "updated_at": "2026-11-08T12:19:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "multilingual",
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reasoning",
+    "chinese",
+    "sft",
+    "lora",
+    "qlora",
+    "diffusion",
+    "block-diffusion",
+    "clover",
+    "multilingual",
+    "zh",
+    "dataset:sriq-ai/sriq-sft-v1.6",
+    "base_model:Diffuspace/Clover-35B-A3B-Preview",
+    "base_model:adapter:Diffuspace/Clover-35B-A3B-Preview",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 613700960,
+  "storage_human": "614 MB",
+  "base_model": "Diffuspace/Clover-35B-A3B-Preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaivoss/sriq-clover-35B-A3B-v1.6 · Hugging Face",
+      "url": "https://huggingface.co/kaivoss/sriq-clover-35B-A3B-v1.6",
+      "snippet": "A PEFT LoRA adapter (not merged) for Clover-35B-A3B-Preview, a block-diffusion MoE model. It reasons in compressed Simplified Chinese, checks its work with 验：, and answers in the language it was asked in. It does not pass every gate it was tested against: 2 of 64 held-out traces fail (one loop ..."
+    },
+    {
+      "title": "GitHub - DiffuSpace/Clover-35B-A3B-Preview: A 35B diffusion language model.",
+      "url": "https://github.com/DiffuSpace/Clover-35B-A3B-Preview",
+      "snippet": "We introduce Clover-35B-A3B-Preview, the first model released by DiffuSpace. Clover delivers state-of-the-art performance among open-source diffusion language models at release on the benchmarks reported in our launch blog. Built on Qwen3.6-35B-A3B, Clover combines a text-only mixture-of-experts backbone with block diffusion generation: 35B total parameters, approximately 3B active per token ..."
+    }
+  ]
+}

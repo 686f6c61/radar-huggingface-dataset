@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Barcenas-LFM3-1.7B-GGUF",
+  "slug": "mradermacher-barcenas-lfm3-1-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Barcenas-LFM3-1.7B-GGUF",
+  "created_at": "2026-11-08T17:26:38.000Z",
+  "updated_at": "2026-11-08T17:42:29.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "es",
+    "dataset:OysterCoreAI/SFT-General-Spanish-50K",
+    "base_model:Danielbrdz/Barcenas-LFM3-1.7B",
+    "base_model:quantized:Danielbrdz/Barcenas-LFM3-1.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 15885902208,
+  "storage_human": "15.9 GB",
+  "base_model": "Danielbrdz/Barcenas-LFM3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Danielbrdz/Barcenas-LFM3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Danielbrdz/Barcenas-LFM3-1.7B",
+      "snippet": "Instructions to use Danielbrdz/Barcenas-LFM3-1.7B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Danielbrdz/Barcenas-LFM3-1.7B with Transformers:"
+    },
+    {
+      "title": "Lfm3 1.7b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/lfm3-1-7b.html",
+      "snippet": "Download Lfm3 1.7b GGUF model. 3.57 GB, 61,499 downloads, 134 likes."
+    }
+  ]
+}

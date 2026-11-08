@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM3-1.7B-ARA-Abliterated-GGUF",
+  "slug": "mradermacher-lfm3-1-7b-ara-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM3-1.7B-ARA-Abliterated-GGUF",
+  "created_at": "2026-11-08T19:56:22.000Z",
+  "updated_at": "2026-11-08T20:19:06.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "liquid-ai",
+    "lfm3",
+    "lfm3-1.7b",
+    "liquid",
+    "transformer",
+    "hybrid-attention",
+    "convolutional",
+    "edge-deployment",
+    "long-context",
+    "1.7b",
+    "abliterated",
+    "uncensored",
+    "decensored",
+    "ara",
+    "arbitrary-rank-ablation",
+    "heretic",
+    "refusal-removed",
+    "kld-0.0374",
+    "safetensors",
+    "text-generation",
+    "chat",
+    "roleplay",
+    "creative-writing",
+    "agent",
+    "instruct",
+    "en",
+    "base_model:Austriani/LFM3-1.7B-ARA-Abliterated",
+    "base_model:quantized:Austriani/LFM3-1.7B-ARA-Abliterated",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 15885905280,
+  "storage_human": "15.9 GB",
+  "base_model": "Austriani/LFM3-1.7B-ARA-Abliterated",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/LFM3-1.7B-Surgical-Abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LFM3-1.7B-Surgical-Abliterated-GGUF",
+      "snippet": "Instructions to use mradermacher/LFM3-1.7B-Surgical-Abliterated-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mradermacher/LFM3-1.7B-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LFM3-1.7B-Uncensored-GGUF",
+      "snippet": "mradermacher / LFM3-1.7B-Uncensored-GGUF Like 0 Text Generation Transformers GGUF English liquid-ai lfm3 heretic abliterated uncensored decensored conversational causal-lm hybrid-architecture edge-ai roleplay reasoning custom_code Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "zhezi12138/Qwen3-4B-math-to-ifeval-same-top50-rolloutseed42-20261108-cdhc5xi4",
+  "slug": "zhezi12138-qwen3-4b-math-to-ifeval-same-top50-rolloutseed42-20261108-cdhc5xi4",
+  "author": "zhezi12138",
+  "url": "https://huggingface.co/zhezi12138/Qwen3-4B-math-to-ifeval-same-top50-rolloutseed42-20261108-cdhc5xi4",
+  "created_at": "2026-11-08T18:58:01.000Z",
+  "updated_at": "2026-11-08T18:58:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3",
+    "megatron",
+    "reinforcement-learning",
+    "continual-learning",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24138797223,
+  "storage_human": "24.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-4B-math-to-ifeval-math-rr50-rolloutseed42 - Hugging Face",
+      "url": "https://huggingface.co/zhezi12138/Qwen3-4B-math-to-ifeval-math-rr50-rolloutseed42",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-4B-math-to-ifeval-to-mbpp-math-rr25-rolloutseed42",
+      "url": "https://huggingface.co/zhezi12138/Qwen3-4B-math-to-ifeval-to-mbpp-math-rr25-rolloutseed42",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

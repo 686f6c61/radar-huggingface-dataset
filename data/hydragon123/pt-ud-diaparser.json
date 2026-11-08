@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Hydragon123/pt-ud-diaparser",
+  "slug": "hydragon123-pt-ud-diaparser",
+  "author": "Hydragon123",
+  "url": "https://huggingface.co/Hydragon123/pt-ud-diaparser",
+  "created_at": "2026-11-08T19:59:22.000Z",
+  "updated_at": "2026-11-08T19:59:45.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "dependency-parsing",
+    "diaparser",
+    "pt",
+    "dataset:universal_dependencies",
+    "base_model:neuralmind/bert-base-portuguese-cased",
+    "base_model:finetune:neuralmind/bert-base-portuguese-cased",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 489406535,
+  "storage_human": "489 MB",
+  "base_model": "neuralmind/bert-base-portuguese-cased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hydragon123 (William Morales) - Hugging Face",
+      "url": "https://huggingface.co/Hydragon123",
+      "snippet": "Hydragon123 1 Follow 0 followers · 1 following https://williammorales1.github.io/ WilliamMorales1"
+    },
+    {
+      "title": "Hydragon123/zh-ud-diaparser · Hugging Face",
+      "url": "https://huggingface.co/Hydragon123/zh-ud-diaparser",
+      "snippet": "Character-level biaffine dependency parser for Chinese (Simplified and Traditional), trained with diaparser on UD Chinese-GSD and GSDSimp. Word boundaries are learned jointly: units inside a word point to the word's last unit with the relation wp. Training script: train_zh_dependency.py in this repo ..."
+    }
+  ]
+}

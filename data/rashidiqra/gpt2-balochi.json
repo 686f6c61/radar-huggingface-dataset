@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "rashidiqra/gpt2-balochi",
+  "slug": "rashidiqra-gpt2-balochi",
+  "author": "rashidiqra",
+  "url": "https://huggingface.co/rashidiqra/gpt2-balochi",
+  "created_at": "2026-11-08T16:35:52.000Z",
+  "updated_at": "2026-11-08T16:36:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497774208,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "balochi-gpt2 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/khadija123it/balochi-gpt2",
+      "snippet": "Deploy balochi-gpt2 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Documentation - Balochi AI",
+      "url": "https://www.balochiai.com/docs",
+      "snippet": "Learn how to use Balochi AI with our comprehensive guides and documentation."
+    }
+  ]
+}

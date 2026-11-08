@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nhatkhangdtp/CKTN-ELECTRA-no-linear-lambda",
+  "slug": "nhatkhangdtp-cktn-electra-no-linear-lambda",
+  "author": "nhatkhangdtp",
+  "url": "https://huggingface.co/nhatkhangdtp/CKTN-ELECTRA-no-linear-lambda",
+  "created_at": "2026-11-08T17:04:25.000Z",
+  "updated_at": "2026-11-08T17:06:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "cjm",
+    "km",
+    "tyz",
+    "nut"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rembert",
+    "feature-extraction",
+    "electra",
+    "low-resource",
+    "cham",
+    "khmer",
+    "tay-nung",
+    "vietnam",
+    "ablation",
+    "cjm",
+    "km",
+    "tyz",
+    "nut",
+    "arxiv:2607.08362",
+    "base_model:ducanhdinh/CKTN-ELECTRA",
+    "base_model:finetune:ducanhdinh/CKTN-ELECTRA",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 576998912,
+  "parameters_human": "577.0M",
+  "storage_bytes": 2329632456,
+  "storage_human": "2.3 GB",
+  "base_model": "ducanhdinh/CKTN-ELECTRA",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ducanhdinh/CKTN-ELECTRA · Hugging Face",
+      "url": "https://huggingface.co/ducanhdinh/CKTN-ELECTRA",
+      "snippet": "CKTN-EKECTRA CKTN-EKECTRA is a vocabulary-extended version of google/rembert adapted for three low-resource Southeast Asian languages: Khmer, Cham, and Tày-Nùng. The model was produced by injecting 4,213 new subword pieces directly into the SentencePiece Unigram model via Protobuf surgery, followed by Fast Vocabulary Transfer (FVT) embedding initialization. It is released as a Stage 1 ..."
+    },
+    {
+      "title": "GitHub - TracDucAnh/CKTN-ELECTRA",
+      "url": "https://github.com/TracDucAnh/CKTN-ELECTRA",
+      "snippet": "Contribute to TracDucAnh/CKTN-ELECTRA development by creating an account on GitHub."
+    }
+  ]
+}

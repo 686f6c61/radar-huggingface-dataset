@@ -5,7 +5,7 @@
   "author": "raspbfox",
   "url": "https://huggingface.co/raspbfox/Qwen3.8-27B-W4A4-GGUF",
   "created_at": "2026-11-05T01:30:16.000Z",
-  "updated_at": "2026-11-07T00:10:23.000Z",
+  "updated_at": "2026-11-07T19:55:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1674,
+  "downloads_30d": 1804,
   "trending_score": 0,
   "parameters": 4467201280,
   "parameters_human": "4.47B",

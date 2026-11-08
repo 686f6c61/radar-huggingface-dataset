@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Grasmere-E4B-GGUF",
+  "slug": "mradermacher-grasmere-e4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Grasmere-E4B-GGUF",
+  "created_at": "2026-11-08T18:11:53.000Z",
+  "updated_at": "2026-11-08T18:25:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "cy",
+    "ga",
+    "gd",
+    "sco",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "welsh",
+    "cymraeg",
+    "irish",
+    "gaeilge",
+    "scottish-gaelic",
+    "gàidhlig",
+    "scots",
+    "tool-calling",
+    "cy",
+    "ga",
+    "gd",
+    "sco",
+    "en",
+    "base_model:jonpojonpo/Grasmere-E4B",
+    "base_model:quantized:jonpojonpo/Grasmere-E4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 26789140384,
+  "storage_human": "26.8 GB",
+  "base_model": "jonpojonpo/Grasmere-E4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/MERaLiON-G4-E4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/MERaLiON-G4-E4B-GGUF",
+      "snippet": "Reinforcement Learning model with 7B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    }
+  ]
+}

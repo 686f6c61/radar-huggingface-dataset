@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Autobrik/ecse552-act-baseline-a",
+  "slug": "autobrik-ecse552-act-baseline-a",
+  "author": "Autobrik",
+  "url": "https://huggingface.co/Autobrik/ecse552-act-baseline-a",
+  "created_at": "2026-11-08T16:42:55.000Z",
+  "updated_at": "2026-11-08T16:42:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "imitation-learning",
+    "act",
+    "dataset:Autobrik/ecse552-ocbench-block",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autobrik (Brik Henrry Meza Pinedo) - Hugging Face",
+      "url": "https://huggingface.co/Autobrik",
+      "snippet": "Embodied AI updated a dataset about 16 hours ago published a dataset about 17 hours ago"
+    }
+  ]
+}

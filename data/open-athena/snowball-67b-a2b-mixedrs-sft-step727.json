@@ -5,7 +5,7 @@
   "author": "open-athena",
   "url": "https://huggingface.co/open-athena/Snowball-67B-A2B-MixedRS-SFT-Step727",
   "created_at": "2026-10-13T22:34:19.000Z",
-  "updated_at": "2026-11-06T19:30:36.000Z",
+  "updated_at": "2026-11-08T17:32:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 89,
+  "downloads_30d": 149,
   "trending_score": 0,
   "parameters": 67078882816,
   "parameters_human": "67.08B",

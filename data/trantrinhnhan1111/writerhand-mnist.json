@@ -5,7 +5,7 @@
   "author": "TranTrinhNhan1111",
   "url": "https://huggingface.co/TranTrinhNhan1111/WriteRHand-MNIST",
   "created_at": "2026-11-07T19:33:27.000Z",
-  "updated_at": "2026-11-07T19:33:37.000Z",
+  "updated_at": "2026-11-08T10:15:14.000Z",
   "license": "unspecified-educational",
   "license_family": "unknown",
   "pipeline_tag": "image-classification",
@@ -15,9 +15,12 @@
     "onnx",
     "image-classification",
     "mnist",
+    "fashion-mnist",
+    "emnist",
     "educational",
     "from-scratch",
     "dataset:ylecun/mnist",
+    "dataset:zalando-datasets/fashion_mnist",
     "license:other",
     "region:us"
   ],
@@ -26,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 22042610,
-  "storage_human": "22 MB",
+  "storage_bytes": 54389427,
+  "storage_human": "54 MB",
   "base_model": null,
   "formats": [
     "onnx"

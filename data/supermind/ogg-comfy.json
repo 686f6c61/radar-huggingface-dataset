@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "supermind/OGG-Comfy",
+  "slug": "supermind-ogg-comfy",
+  "author": "supermind",
+  "url": "https://huggingface.co/supermind/OGG-Comfy",
+  "created_at": "2026-11-08T20:50:58.000Z",
+  "updated_at": "2026-11-08T20:52:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11423986,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "supermind (Serge) - Hugging Face",
+      "url": "https://huggingface.co/supermind/activity/all",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 10 days ago ... liked a model 13 days ago"
+    },
+    {
+      "title": "ComfyUI Models: Run AI Image, Video & Audio Models - Comfy",
+      "url": "https://comfy.org/hub/models/",
+      "snippet": "Browse 148 AI models in ComfyUI, including FLUX, Seedance, Kling, Veo, and Nano Banana. Try any model in your browser, then call it from your code."
+    }
+  ]
+}

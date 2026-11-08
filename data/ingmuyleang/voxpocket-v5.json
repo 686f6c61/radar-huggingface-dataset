@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "INGMUYLEANG/VoxPocket-v5",
+  "slug": "ingmuyleang-voxpocket-v5",
+  "author": "INGMUYLEANG",
+  "url": "https://huggingface.co/INGMUYLEANG/VoxPocket-v5",
+  "created_at": "2026-11-08T16:45:36.000Z",
+  "updated_at": "2026-11-08T16:50:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "voxcpm",
+  "languages": [
+    "km",
+    "en"
+  ],
+  "tags": [
+    "voxcpm",
+    "safetensors",
+    "khmer",
+    "tts",
+    "text-to-speech",
+    "voice-cloning",
+    "code-mixing",
+    "emotion",
+    "km",
+    "en",
+    "dataset:INGMUYLEANG/voxpocket-khmer-tts-v4",
+    "base_model:INGMUYLEANG/VoxPocket-v4",
+    "base_model:finetune:INGMUYLEANG/VoxPocket-v4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 801729856,
+  "parameters_human": "801.7M",
+  "storage_bytes": 13174092211,
+  "storage_human": "13.2 GB",
+  "base_model": "INGMUYLEANG/VoxPocket-v4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "INGMUYLEANG (Muyleang Ing) - Hugging Face",
+      "url": "https://huggingface.co/INGMUYLEANG",
+      "snippet": "Interested in developing open-source AI tools and exploring the intersection of AI and quantum technologies."
+    },
+    {
+      "title": "INGMUYLEANG (Muyleang Ing) – Datasets - Hugging Face",
+      "url": "https://huggingface.co/INGMUYLEANG/datasets",
+      "snippet": "Interested in developing open-source AI tools and exploring the intersection of AI and quantum technologies."
+    }
+  ]
+}

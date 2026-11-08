@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Room-Tone-31B-i1-GGUF",
+  "slug": "mradermacher-room-tone-31b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Room-Tone-31B-i1-GGUF",
+  "created_at": "2026-11-08T16:47:05.000Z",
+  "updated_at": "2026-11-08T17:06:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nsfw",
+    "roleplay",
+    "adult-content",
+    "mature",
+    "conversational",
+    "multi-character",
+    "ensemble",
+    "text-generation",
+    "en",
+    "base_model:ReadyArt/Room-Tone-31B",
+    "base_model:quantized:ReadyArt/Room-Tone-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 90183188064,
+  "storage_human": "90.2 GB",
+  "base_model": "ReadyArt/Room-Tone-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/Gemma-4-Queen-31B-it-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Gemma-4-Queen-31B-it-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

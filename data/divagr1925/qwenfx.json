@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "divagr1925/QwenFX",
+  "slug": "divagr1925-qwenfx",
+  "author": "divagr1925",
+  "url": "https://huggingface.co/divagr1925/QwenFX",
+  "created_at": "2026-11-08T17:38:41.000Z",
+  "updated_at": "2026-11-08T17:39:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwenputer",
+    "risc-v",
+    "compiled-weights",
+    "coding-agent",
+    "fx",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 329628018,
+  "storage_human": "330 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - divagr18/qwenputer: A computer, compiled into the weights of a ...",
+      "url": "https://github.com/divagr18/qwenputer",
+      "snippet": "The next logical step was to put a filesystem inside the weights. This is experimental and still in progress: the model is up as divagr1925/Qwen3.5-4B-Qwenputer-Filesystem (also on ModelScope), and its code lives on the rv-store branch for now. It's the same RISC-V model with five more tools next to calc: put, append, get, list and delete."
+    }
+  ]
+}

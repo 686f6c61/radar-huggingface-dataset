@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "feverdoingwork/Qwen3.8-27B-NVFP4-mini-abliterated-Starlight",
+  "slug": "feverdoingwork-qwen3-8-27b-nvfp4-mini-abliterated-starlight",
+  "author": "feverdoingwork",
+  "url": "https://huggingface.co/feverdoingwork/Qwen3.8-27B-NVFP4-mini-abliterated-Starlight",
+  "created_at": "2026-11-08T19:01:18.000Z",
+  "updated_at": "2026-11-08T19:02:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "starlight",
+  "languages": [],
+  "tags": [
+    "starlight",
+    "qwen3.8",
+    "nvfp4",
+    "quantized",
+    "multimodal",
+    "mtp",
+    "abliterated",
+    "blackwell",
+    "nvidia",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13551144192,
+  "storage_human": "13.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B, huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "feverdoingwork/Qwen3.8-27B-NVFP4-mini-Starlight · Hugging Face",
+      "url": "https://huggingface.co/feverdoingwork/Qwen3.8-27B-NVFP4-mini-Starlight",
+      "snippet": "Qwen3.8-27B in 12.62 GiB for Starlight on NVIDIA Blackwell cards. NVFP4-mini keeps the weights in NVFP4 (4-bit floating point with block scales); the gate and up projections of every layer are re-made from the BF16 checkpoint at 3 bits, which is what makes the file small enough for one 16 GB card."
+    },
+    {
+      "title": "nvidia/Qwen3.8-27B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Qwen3.8-27B-NVFP4",
+      "snippet": "The NVIDIA Qwen3.8-27B NVFP4 model is a quantized version of Alibaba's Qwen3.8-27B model, which is an auto-regressive language model that uses an optimized transformer architecture. For more information on the model, please check here. The model is quantized with Model Optimizer. This model is ready ..."
+    }
+  ]
+}

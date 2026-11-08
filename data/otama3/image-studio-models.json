@@ -5,7 +5,7 @@
   "author": "otama3",
   "url": "https://huggingface.co/otama3/image-studio-models",
   "created_at": "2026-11-05T05:20:14.000Z",
-  "updated_at": "2026-11-05T05:26:51.000Z",
+  "updated_at": "2026-11-07T09:56:15.000Z",
   "license": "mixed-upstream-licenses",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3138598916,
-  "storage_human": "3.1 GB",
+  "storage_bytes": 3206596839,
+  "storage_human": "3.2 GB",
   "base_model": "ZhengPeng7/BiRefNet_HR-matting, hustvl/vitmatte-base-distinctions-646, Xenova/modnet",
   "formats": [
     "onnx"

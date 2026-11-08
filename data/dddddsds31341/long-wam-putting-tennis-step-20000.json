@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "dddddsds31341/Long-WAM-Putting-Tennis-Step-20000",
+  "slug": "dddddsds31341-long-wam-putting-tennis-step-20000",
+  "author": "dddddsds31341",
+  "url": "https://huggingface.co/dddddsds31341/Long-WAM-Putting-Tennis-Step-20000",
+  "created_at": "2026-11-08T14:08:27.000Z",
+  "updated_at": "2026-11-08T14:22:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "long-wam",
+    "putting-tennis",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12047049820,
+  "storage_human": "12.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dddddsds31341/Long-WAM-Putting-Tennis-Step-5000 · Hugging Face",
+      "url": "https://huggingface.co/dddddsds31341/Long-WAM-Putting-Tennis-Step-5000",
+      "snippet": "Long-WAM Putting Tennis — Step 5,000 Evaluation weights at optimizer step 5,000. Task: Pick up the four tennis balls one at a time and place each into the green basket. model.pt contains evaluation weights. The accompanying configuration, normalization statistics, dependency snapshot and code archive describe this run."
+    },
+    {
+      "title": "dddddsds31341/Long-WAM-Sorting-Dolls-30k-Step-5000 · Hugging Face",
+      "url": "https://huggingface.co/dddddsds31341/Long-WAM-Sorting-Dolls-30k-Step-5000",
+      "snippet": "Extract code.zip and install its Long-WAM checkout. Use longwam.inference.load_run_config and load_model with this repository's explicit model.pt and expected_step=5000. Adapt SIP model/statistics/cache paths to your evaluation machine. Wan2.2 VAE, UMT5 text encoder and tokenizer assets are required separately."
+    }
+  ]
+}

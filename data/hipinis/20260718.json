@@ -5,7 +5,7 @@
   "author": "hipinis",
   "url": "https://huggingface.co/hipinis/20260718",
   "created_at": "2026-08-04T07:18:31.000Z",
-  "updated_at": "2026-11-02T16:45:19.000Z",
+  "updated_at": "2026-11-08T08:31:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,12 +16,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 107,
+  "downloads_30d": 108,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 327006008893,
-  "storage_human": "327.0 GB",
+  "storage_bytes": 522676927152,
+  "storage_human": "522.7 GB",
   "base_model": null,
   "formats": [
     "onnx"

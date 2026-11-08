@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "fiolek/Fibi",
+  "slug": "fiolek-fibi",
+  "author": "fiolek",
+  "url": "https://huggingface.co/fiolek/Fibi",
+  "created_at": "2026-10-18T16:29:16.000Z",
+  "updated_at": "2026-11-08T15:44:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 150,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 4474456187,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What It Takes to Train AI for Finance: Inside FIBI's Development Process",
+      "url": "https://www.tradingcentral.com/blog/what-it-takes-to-train-ai-for-finance",
+      "snippet": "Challenges, Learnings & Surprises Like any breakthrough project, building FIBI, came with its challenges. Adapting the model to interpret technical financial language, designing a personalized response for a diverse user base, while ensuring every output was both accurate and relevant were top hurdles. Throughout this process, many valuable insights were found: The Power of LLMs: The team was ..."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Kai9987kai/SONAPSE-ORIGIN",
+  "slug": "kai9987kai-sonapse-origin",
+  "author": "Kai9987kai",
+  "url": "https://huggingface.co/Kai9987kai/SONAPSE-ORIGIN",
+  "created_at": "2026-11-08T12:35:15.000Z",
+  "updated_at": "2026-11-08T12:37:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "computational-neuroscience",
+    "artificial-intelligence",
+    "complex-systems",
+    "consciousness-theories",
+    "dynamical-systems",
+    "scientific-research",
+    "python",
+    "map-elites",
+    "active-inference",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kai9987kai/sonapse-evo · Hugging Face",
+      "url": "https://huggingface.co/Kai9987kai/sonapse-evo",
+      "snippet": "SONAPSE-EVO is an experimental self-restructuring recurrent neural architecture designed to investigate whether an artificial neural system can diagnose its own functional weaknesses, identify where additional neural computation would help, develop targeted circuits, and preserve useful changes ..."
+    },
+    {
+      "title": "Kai9987kai (Kai piper) - Hugging Face",
+      "url": "https://huggingface.co/Kai9987kai",
+      "snippet": "published a model about 1 month ago updated a dataset 3 months ago"
+    }
+  ]
+}

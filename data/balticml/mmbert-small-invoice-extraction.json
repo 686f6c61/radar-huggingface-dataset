@@ -5,7 +5,7 @@
   "author": "balticml",
   "url": "https://huggingface.co/balticml/mmbert-small-invoice-extraction",
   "created_at": "2026-11-07T16:48:13.000Z",
-  "updated_at": "2026-11-07T16:48:23.000Z",
+  "updated_at": "2026-11-08T09:27:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -38,12 +38,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 29,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 32667508,
-  "storage_human": "33 MB",
+  "storage_bytes": 65387396,
+  "storage_human": "65 MB",
   "base_model": "jhu-clsp/mmBERT-small",
   "formats": [
     "onnx"

@@ -4,8 +4,8 @@
   "slug": "belztjti-smg",
   "author": "belztjti",
   "url": "https://huggingface.co/belztjti/smg",
-  "created_at": "2026-10-31T17:06:02.000Z",
-  "updated_at": "2026-11-06T17:12:56.000Z",
+  "created_at": "2026-11-08T10:25:49.000Z",
+  "updated_at": "2026-11-08T10:27:49.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 9574004736,
   "parameters_human": "9.57B",
-  "storage_bytes": 248942770560,
-  "storage_human": "248.9 GB",
+  "storage_bytes": 19165985472,
+  "storage_human": "19.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "ketimiroshnik/llm-course-hw3-lora",
+  "slug": "ketimiroshnik-llm-course-hw3-lora",
+  "author": "ketimiroshnik",
+  "url": "https://huggingface.co/ketimiroshnik/llm-course-hw3-lora",
+  "created_at": "2026-11-08T19:43:10.000Z",
+  "updated_at": "2026-11-08T19:43:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "lora",
+    "sentiment-analysis",
+    "conversational",
+    "en",
+    "dataset:cardiffnlp/tweet_eval",
+    "base_model:OuteAI/Lite-Oute-1-300M-Instruct",
+    "base_model:adapter:OuteAI/Lite-Oute-1-300M-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 300031872,
+  "parameters_human": "300.0M",
+  "storage_bytes": 1200650547,
+  "storage_human": "1.2 GB",
+  "base_model": "OuteAI/Lite-Oute-1-300M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ketimiroshnik (Kate Miroshnik) - Hugging Face",
+      "url": "https://huggingface.co/ketimiroshnik/models",
+      "snippet": "ketimiroshnik's models1 Sort: Recently updated ketimiroshnik/llm-course-hw1 Text Generation • 10.5M•Updated about 2 hours ago• 12"
+    },
+    {
+      "title": "llm-course-hw3-lora API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Veronikyos/llm-course-hw3-lora",
+      "snippet": "Deploy llm-course-hw3-lora with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "adellee",
   "url": "https://huggingface.co/adellee/adeloopV",
   "created_at": "2026-11-06T17:03:04.000Z",
-  "updated_at": "2026-11-06T17:19:59.000Z",
+  "updated_at": "2026-11-07T20:32:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 24,
+  "downloads_30d": 75,
   "trending_score": 0,
   "parameters": 2166928384,
   "parameters_human": "2.17B",

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "someonecooool/course-q-Taxi-v3-20261108",
+  "slug": "someonecooool-course-q-taxi-v3-20261108",
+  "author": "someonecooool",
+  "url": "https://huggingface.co/someonecooool/course-q-Taxi-v3-20261108",
+  "created_at": "2026-11-08T19:43:58.000Z",
+  "updated_at": "2026-11-08T19:44:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 429548,
+  "storage_human": "429548 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "santhoshkollu/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/santhoshkollu/q-Taxi-v3",
+      "snippet": "Q-Learning Agent playing Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "itsaysouvyk/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/itsaysouvyk/q-Taxi-v3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

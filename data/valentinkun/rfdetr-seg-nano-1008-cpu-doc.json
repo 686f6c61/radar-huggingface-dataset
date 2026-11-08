@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Valentinkun/rfdetr-seg-nano-1008-cpu-doc",
+  "slug": "valentinkun-rfdetr-seg-nano-1008-cpu-doc",
+  "author": "Valentinkun",
+  "url": "https://huggingface.co/Valentinkun/rfdetr-seg-nano-1008-cpu-doc",
+  "created_at": "2026-11-08T12:33:11.000Z",
+  "updated_at": "2026-11-08T12:39:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "rf-detr",
+    "document-ai",
+    "ocr",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140515211,
+  "storage_human": "141 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roboflow/rf-detr-seg-nano · Hugging Face",
+      "url": "https://huggingface.co/Roboflow/rf-detr-seg-nano",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RF-DETR: Neural Architecture Search for Real-Time Detection Transformers",
+      "url": "https://arxiv.org/html/2511.09554v1",
+      "snippet": "We visualize model predictions from RF-DETR (nano) and compare them with comparable detection and segmentation baselines in Figure 6. We find that RF-DETR (nano) predicts fewer false positives (e..g mistaking sign post for person)."
+    }
+  ]
+}

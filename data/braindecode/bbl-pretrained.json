@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "braindecode/bbl-pretrained",
+  "slug": "braindecode-bbl-pretrained",
+  "author": "braindecode",
+  "url": "https://huggingface.co/braindecode/bbl-pretrained",
+  "created_at": "2026-11-08T14:07:05.000Z",
+  "updated_at": "2026-11-08T14:07:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "braindecode",
+  "languages": [],
+  "tags": [
+    "braindecode",
+    "pytorch",
+    "safetensors",
+    "meg",
+    "bbl",
+    "self-supervised",
+    "foundation-model",
+    "arxiv:2406.04328",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41351330,
+  "parameters_human": "41.4M",
+  "storage_bytes": 330841117,
+  "storage_human": "331 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - braindecode/braindecode: Deep learning software to decode EEG ...",
+      "url": "https://github.com/braindecode/braindecode",
+      "snippet": "Braindecode is an open-source Python toolbox for decoding raw electrophysiological brain data with deep learning models. It includes dataset fetchers, data preprocessing and visualization tools, as well as implementations of several deep learning architectures and data augmentations for analysis of EEG, ECoG and MEG."
+    },
+    {
+      "title": "Braindecode — Decode raw EEG, ECoG and MEG with deep learning",
+      "url": "https://braindecode.org/dev/index.html",
+      "snippet": "Braindecode is an open-source PyTorch toolbox for decoding raw EEG, ECoG and MEG with deep learning. Datasets, preprocessing, augmentations, and 65+ published model architectures."
+    }
+  ]
+}

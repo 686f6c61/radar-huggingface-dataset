@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "BananaMind/BananaMind-2.5-Pro",
+  "slug": "bananamind-bananamind-2-5-pro",
+  "author": "BananaMind",
+  "url": "https://huggingface.co/BananaMind/BananaMind-2.5-Pro",
+  "created_at": "2026-11-08T19:49:56.000Z",
+  "updated_at": "2026-11-08T19:56:17.000Z",
+  "license": "bananamind-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bananamind2_pro",
+    "text-generation",
+    "causal-lm",
+    "language-model",
+    "base-model",
+    "small-language-model",
+    "bananamind",
+    "bananamind2",
+    "bananamind-2.5-pro",
+    "distilled",
+    "pretrained",
+    "100b-tokens",
+    "digit-tokenizer",
+    "pytorch",
+    "custom-code",
+    "trust-remote-code",
+    "custom-architecture",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:HuggingFaceTB/finemath",
+    "base_model:BananaMind/BananaMind-2-Pro",
+    "base_model:finetune:BananaMind/BananaMind-2-Pro",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 138971520,
+  "parameters_human": "139.0M",
+  "storage_bytes": 557436062,
+  "storage_human": "557 MB",
+  "base_model": "BananaMind/BananaMind-2-Pro",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BananaMind/2.5-pro-test at main - Hugging Face",
+      "url": "https://huggingface.co/BananaMind/2.5-pro-test/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - BananaMind/BananaMindOS: Local AI for 90s PCs.",
+      "url": "https://github.com/BananaMind/BananaMindOS",
+      "snippet": "The generated files are build/bananamind-dosboxx.img and build/bananamind-dosboxx-micro-q4.iso. The CD contains only BananaMind 2 Micro Q4 plus the UI assets and catalog. The hard disk contains the boot menu and kernels but zero model weights; the Q4 weights remain on the mounted CD until selected in the model library."
+    }
+  ]
+}

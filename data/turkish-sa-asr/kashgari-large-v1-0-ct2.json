@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "turkish-sa-asr/kashgari-large-v1.0-ct2",
+  "slug": "turkish-sa-asr-kashgari-large-v1-0-ct2",
+  "author": "turkish-sa-asr",
+  "url": "https://huggingface.co/turkish-sa-asr/kashgari-large-v1.0-ct2",
+  "created_at": "2026-11-08T15:54:09.000Z",
+  "updated_at": "2026-11-08T15:54:16.000Z",
+  "license": "research-evaluation",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "ctranslate2",
+    "whisper",
+    "turkish",
+    "speech-recognition",
+    "faster-whisper",
+    "research-only",
+    "automatic-speech-recognition",
+    "tr",
+    "base_model:turkish-sa-asr/kashgari-large-v1.0",
+    "base_model:quantized:turkish-sa-asr/kashgari-large-v1.0",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3087284237,
+  "storage_human": "3.1 GB",
+  "base_model": "turkish-sa-asr/kashgari-large-v1.0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "turkish-sa-asr/kashgari-large-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/turkish-sa-asr/kashgari-large-v1.0",
+      "snippet": "Request access to Kashgari Large 1.0 ... Log in or Sign Up to review the conditions and access this model content."
+    },
+    {
+      "title": "turkish-sa-asr (turkish-sa-asr) - Hugging Face",
+      "url": "https://huggingface.co/turkish-sa-asr",
+      "snippet": "Sort: Recently updated turkish-sa-asr/kashgari-large-v1.0 Automatic Speech Recognition • 2B•Updated about 20 hours ago"
+    }
+  ]
+}

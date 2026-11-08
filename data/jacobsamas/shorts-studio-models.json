@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jacobsamas/shorts-studio-models",
+  "slug": "jacobsamas-shorts-studio-models",
+  "author": "jacobsamas",
+  "url": "https://huggingface.co/jacobsamas/shorts-studio-models",
+  "created_at": "2026-10-19T07:31:23.000Z",
+  "updated_at": "2026-11-08T16:55:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "hi",
+    "ta",
+    "te",
+    "kn",
+    "gu",
+    "ml",
+    "bn"
+  ],
+  "tags": [
+    "whisper",
+    "whisper.cpp",
+    "ggml",
+    "speech-recognition",
+    "hi",
+    "ta",
+    "te",
+    "kn",
+    "gu",
+    "ml",
+    "bn",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2410202642,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jacobsamas/shorts-studio-models · Hugging Face",
+      "url": "https://huggingface.co/jacobsamas/shorts-studio-models",
+      "snippet": "Speech-to-text models for Indian languages, converted to whisper.cpp's ggml format (8-bit, q8_0) for offline captions in Shorts Studio. Nothing here was retrained: each file is a format conversion of the original model below."
+    },
+    {
+      "title": "jacobsamas (Jacob Samas) - Hugging Face",
+      "url": "https://huggingface.co/jacobsamas/models",
+      "snippet": "jacobsamas's models1 Sort: Recently updated jacobsamas/shorts-studio-models Updated about 9 hours ago"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "MatterWaveAI/helmholtz-b0.7.0-10m",
+  "slug": "matterwaveai-helmholtz-b0-7-0-10m",
+  "author": "MatterWaveAI",
+  "url": "https://huggingface.co/MatterWaveAI/helmholtz-b0.7.0-10m",
+  "created_at": "2026-11-08T03:54:40.000Z",
+  "updated_at": "2026-11-08T13:50:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "jepa",
+    "world-model",
+    "helmholtz-b0.7.0-10m",
+    "helmholtz-1",
+    "grt-jepa",
+    "s1-grt-jepa",
+    "platonic-representation",
+    "rotational-transformer",
+    "matterwave",
+    "text-generation",
+    "base_model:MatterWaveAI/grt-10m",
+    "base_model:finetune:MatterWaveAI/grt-10m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "MatterWaveAI/grt-10m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MatterWaveAI/helmholtz-jepa-b0.7.0-10m at main - Hugging Face",
+      "url": "https://huggingface.co/MatterWaveAI/helmholtz-jepa-b0.7.0-10m/tree/main",
+      "snippet": "MatterWaveAI / helmholtz-jepa-b0.7.0-10m Like 0 Follow MatterWaveAI 1 Text Generation Transformers jepa world-model helmholtz-jepa-b0.7.0-10m helmholtz-1 grt-jepa s1-grt-jepa platonic-representation rotational-transformer matterwave License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "MatterWaveAI/helmholtz-rnn-b0.7.0-20m · Hugging Face",
+      "url": "https://huggingface.co/MatterWaveAI/helmholtz-rnn-b0.7.0-20m",
+      "snippet": "Text Generation model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

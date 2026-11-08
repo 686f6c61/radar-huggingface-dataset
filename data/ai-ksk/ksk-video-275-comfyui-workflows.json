@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "AI-KSK/ksk-video-275-comfyui-workflows",
+  "slug": "ai-ksk-ksk-video-275-comfyui-workflows",
+  "author": "AI-KSK",
+  "url": "https://huggingface.co/AI-KSK/ksk-video-275-comfyui-workflows",
+  "created_at": "2026-11-08T16:16:48.000Z",
+  "updated_at": "2026-11-08T16:18:49.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "comfyui",
+    "krea2",
+    "controlnet",
+    "lora",
+    "image-editing",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15068061,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-KSK｜AI Models & ComfyUI Workflow Lab",
+      "url": "https://aiksk.cc/en/",
+      "snippet": "An independent AI model & creative lab Test frontier models. Build workflows that actually work. AI-KSK tests emerging image and video models and turns real results into reproducible workflows, tutorials and creative tools."
+    },
+    {
+      "title": "ComfyUI Workflows: Multi-Step AI Image & Video Workflows - Comfy",
+      "url": "https://comfy.org/hub/workflows/",
+      "snippet": "Browse ComfyUI workflows that chain AI models into finished images and videos, and run any of them right in your browser."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "nchapman",
   "url": "https://huggingface.co/nchapman/Qwen3.8-Flash-Next-W4A16-HGPTQ",
   "created_at": "2026-11-07T02:01:45.000Z",
-  "updated_at": "2026-11-07T02:03:45.000Z",
+  "updated_at": "2026-11-07T15:53:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 33,
+  "downloads_30d": 100,
   "trending_score": 0,
-  "parameters": 179789244307,
-  "parameters_human": "179.79B",
-  "storage_bytes": 100350655659,
-  "storage_human": "100.4 GB",
+  "parameters": 179999983507,
+  "parameters_human": "180.00B",
+  "storage_bytes": 237788276057,
+  "storage_human": "237.8 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"

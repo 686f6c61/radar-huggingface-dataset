@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Hero422/qwen3.5-9b-fp8",
+  "slug": "hero422-qwen3-5-9b-fp8",
+  "author": "Hero422",
+  "url": "https://huggingface.co/Hero422/qwen3.5-9b-fp8",
+  "created_at": "2026-11-08T18:45:42.000Z",
+  "updated_at": "2026-11-08T19:02:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "radiance",
+    "rocm",
+    "amd",
+    "rdna4",
+    "fp8",
+    "speculative-decoding",
+    "mtp",
+    "vision",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11455696896,
+  "storage_human": "11.5 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hyper-AI/Qwen3.5-9B-fp8 · Hugging Face",
+      "url": "https://huggingface.co/Hyper-AI/Qwen3.5-9B-fp8",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hyper-AI/Qwen3.5-9B-fp8 at main - Hugging Face",
+      "url": "https://huggingface.co/Hyper-AI/Qwen3.5-9B-fp8/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

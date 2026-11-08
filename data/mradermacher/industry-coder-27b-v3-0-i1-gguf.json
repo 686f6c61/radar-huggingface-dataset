@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Industry-Coder-27B-v3.0-i1-GGUF",
   "created_at": "2026-11-07T09:44:06.000Z",
-  "updated_at": "2026-11-07T10:07:34.000Z",
+  "updated_at": "2026-11-07T14:32:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -56,12 +56,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 646,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39485527552,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218567548096,
+  "storage_human": "218.6 GB",
   "base_model": "kataguru/Industry-Coder-27B-v3.0",
   "formats": [
     "gguf"

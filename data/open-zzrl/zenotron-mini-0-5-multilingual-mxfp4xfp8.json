@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "open-zzrl/Zenotron-Mini-0.5-Multilingual-MXFP4xFP8",
+  "slug": "open-zzrl-zenotron-mini-0-5-multilingual-mxfp4xfp8",
+  "author": "open-zzrl",
+  "url": "https://huggingface.co/open-zzrl/Zenotron-Mini-0.5-Multilingual-MXFP4xFP8",
+  "created_at": "2026-11-08T19:39:52.000Z",
+  "updated_at": "2026-11-08T19:46:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru",
+    "en",
+    "fr",
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "mxfp4",
+    "fp8",
+    "quantized",
+    "compressed-tensors",
+    "llm-compressor",
+    "text-generation",
+    "conversational",
+    "moe",
+    "zenotron",
+    "ko",
+    "ru",
+    "en",
+    "fr",
+    "base_model:open-zzrl/Zenotron-Mini-0.5-Multilingual",
+    "base_model:quantized:open-zzrl/Zenotron-Mini-0.5-Multilingual",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19845695344,
+  "parameters_human": "19.85B",
+  "storage_bytes": 23215900157,
+  "storage_human": "23.2 GB",
+  "base_model": "open-zzrl/Zenotron-Mini-0.5-Multilingual",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "open-zzrl (Open Zeno-Zero Research Lab) - Hugging Face",
+      "url": "https://huggingface.co/open-zzrl",
+      "snippet": "Org profile for Open Zeno-Zero Research Lab on Hugging Face, the AI community building the future."
+    }
+  ]
+}

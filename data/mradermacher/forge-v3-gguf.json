@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mradermacher/forge-v3-GGUF",
+  "slug": "mradermacher-forge-v3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/forge-v3-GGUF",
+  "created_at": "2026-11-08T16:29:00.000Z",
+  "updated_at": "2026-11-08T16:32:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "szl-holdings",
+    "doctrine-v11",
+    "launch-contract-governed",
+    "research-candidate",
+    "en",
+    "base_model:SZLHOLDINGS/forge-v3",
+    "base_model:quantized:SZLHOLDINGS/forge-v3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 7956112320,
+  "storage_human": "8.0 GB",
+  "base_model": "SZLHOLDINGS/forge-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/HiveCoder3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/HiveCoder3-GGUF",
+      "snippet": "Machine learning model with 27B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

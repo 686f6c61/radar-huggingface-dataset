@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/SWE-Lego-Verifier-30B-A3B-GGUF",
   "created_at": "2026-11-07T16:00:38.000Z",
-  "updated_at": "2026-11-07T16:33:18.000Z",
+  "updated_at": "2026-11-08T02:33:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,12 +25,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 330,
   "trending_score": 0,
   "parameters": 30532122624,
   "parameters_human": "30.53B",
-  "storage_bytes": 28714623616,
-  "storage_human": "28.7 GB",
+  "storage_bytes": 208115965376,
+  "storage_human": "208.1 GB",
   "base_model": "Lego-X/SWE-Lego-Verifier-30B-A3B",
   "formats": [
     "gguf"

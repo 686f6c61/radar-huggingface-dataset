@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Sachin-0001/dec-11M",
+  "slug": "sachin-0001-dec-11m",
+  "author": "Sachin-0001",
+  "url": "https://huggingface.co/Sachin-0001/dec-11M",
+  "created_at": "2026-11-08T17:50:07.000Z",
+  "updated_at": "2026-11-08T17:53:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "text-generation",
+    "custom-gpt",
+    "character-level",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52885867,
+  "storage_human": "53 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sachin-0001 (Sachin Suresh) - Hugging Face",
+      "url": "https://huggingface.co/Sachin-0001",
+      "snippet": "User profile of Sachin Suresh on Hugging Face"
+    },
+    {
+      "title": "Sachin-0001/dialogsum-t5-small · Hugging Face",
+      "url": "https://huggingface.co/Sachin-0001/dialogsum-t5-small",
+      "snippet": "Model Details Model Description This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated. Developed by: [Sachin-0001] Funded by [optional]: [More Information Needed] Shared by [optional]: [More Information Needed] Model type: [Bidirectional Auto Regressive Transformer]"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "hisplan/gemma4-e2b-finetuned-exp07-persona-distill",
+  "slug": "hisplan-gemma4-e2b-finetuned-exp07-persona-distill",
+  "author": "hisplan",
+  "url": "https://huggingface.co/hisplan/gemma4-e2b-finetuned-exp07-persona-distill",
+  "created_at": "2026-11-08T16:47:57.000Z",
+  "updated_at": "2026-11-08T16:49:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gemma",
+    "lora",
+    "sft",
+    "distillation",
+    "mini-llm-camp",
+    "ko",
+    "base_model:unsloth/gemma-4-E2B",
+    "base_model:adapter:unsloth/gemma-4-E2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133593998,
+  "storage_human": "134 MB",
+  "base_model": "unsloth/gemma-4-E2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

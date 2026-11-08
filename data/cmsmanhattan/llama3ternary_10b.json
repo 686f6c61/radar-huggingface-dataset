@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "CMSManhattan/Llama3Ternary_10b",
+  "slug": "cmsmanhattan-llama3ternary_10b",
+  "author": "CMSManhattan",
+  "url": "https://huggingface.co/CMSManhattan/Llama3Ternary_10b",
+  "created_at": "2026-10-06T03:16:15.000Z",
+  "updated_at": "2026-11-08T16:21:55.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "ternary",
+    "bitnet",
+    "1.58bit",
+    "text-generation",
+    "NVIDIA Inception Program Member",
+    "conversational",
+    "en",
+    "base_model:meta-llama/Meta-Llama-3-8B",
+    "base_model:quantized:meta-llama/Meta-Llama-3-8B",
+    "license:bsl-1.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 2287,
+  "trending_score": 0,
+  "parameters": 9640873984,
+  "parameters_human": "9.64B",
+  "storage_bytes": 54157229292,
+  "storage_human": "54.2 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama3Ternary-10b-TQ2_0.gguf · CMSManhattan/Llama3Ternary_10b at main",
+      "url": "https://huggingface.co/CMSManhattan/Llama3Ternary_10b/blob/main/Llama3Ternary-10b-TQ2_0.gguf",
+      "snippet": "CMSManhattan / Llama3Ternary_10b Like 1 Follow Center Business Solutions inc 16 Text Generation Safetensors GGUF English llama ternary bitnet 1.58bit conversational License:llama3 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Llama3Ternary 10B by CMSManhattan - LLM Explorer",
+      "url": "https://llm-explorer.com/model/CMSManhattan%2FLlama3Ternary_10b,4zlLcnoTkmQlxaMlA5nCqK",
+      "snippet": "Llama3Ternary 10B is an open-source 8b LLM by CMSManhattan. VRAM 2.8GB, 8K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "kisersantine/stephanie",
+  "slug": "kisersantine-stephanie",
+  "author": "kisersantine",
+  "url": "https://huggingface.co/kisersantine/stephanie",
+  "created_at": "2026-11-08T13:49:08.000Z",
+  "updated_at": "2026-11-08T14:24:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970646332,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kisersantine/laurab · Hugging Face",
+      "url": "https://huggingface.co/kisersantine/laurab",
+      "snippet": "Text-to-Image model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "gufisha/WAN2.2",
+  "slug": "gufisha-wan2-2",
+  "author": "gufisha",
+  "url": "https://huggingface.co/gufisha/WAN2.2",
+  "created_at": "2026-09-12T07:20:49.000Z",
+  "updated_at": "2026-11-08T16:54:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "wan2.2",
+  "languages": [],
+  "tags": [
+    "wan2.2",
+    "lightx2v",
+    "fp8",
+    "nvfp4",
+    "quantized",
+    "video",
+    "image-to-video",
+    "base_model:Wan-AI/Wan2.2-I2V-A14B",
+    "base_model:finetune:Wan-AI/Wan2.2-I2V-A14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48302885080,
+  "storage_human": "48.3 GB",
+  "base_model": "lightx2v/Wan2.2-Distill-Models, Wan-AI/Wan2.2-I2V-A14B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gufisha/wan2.2 · Hugging Face",
+      "url": "https://huggingface.co/gufisha/wan2.2",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gufisha/wan2.2 at main - Hugging Face",
+      "url": "https://huggingface.co/gufisha/wan2.2/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "byrizki",
   "url": "https://huggingface.co/byrizki/rusto-models",
   "created_at": "2026-11-02T10:34:40.000Z",
-  "updated_at": "2026-11-07T10:48:22.000Z",
+  "updated_at": "2026-11-07T19:41:59.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1481810421,
-  "storage_human": "1.5 GB",
+  "storage_bytes": 3006719103,
+  "storage_human": "3.0 GB",
   "base_model": null,
   "formats": [
     "onnx"

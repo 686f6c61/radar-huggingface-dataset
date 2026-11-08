@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "hum-ma/Qwen3.8-Flash-Next-UD-IQ1_Strata-GGUF",
+  "slug": "hum-ma-qwen3-8-flash-next-ud-iq1_strata-gguf",
+  "author": "hum-ma",
+  "url": "https://huggingface.co/hum-ma/Qwen3.8-Flash-Next-UD-IQ1_Strata-GGUF",
+  "created_at": "2026-11-08T14:04:39.000Z",
+  "updated_at": "2026-11-08T14:40:45.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "Qwen",
+    "unsloth",
+    "conversational",
+    "base_model:unsloth/Qwen3.8-Flash-Next-GGUF",
+    "base_model:quantized:unsloth/Qwen3.8-Flash-Next-GGUF",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37526613466,
+  "storage_human": "37.5 GB",
+  "base_model": "unsloth/Qwen3.8-Flash-Next-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next — NVFP4 (GPTQ) for Strata - Hugging Face",
+      "url": "https://huggingface.co/Maximilian228/Qwen3.8-Flash-Next-NVFP4-GPTQ-Strata",
+      "snippet": "Qwen's original Qwen3.8-Flash-Next with every routed expert in NVFP4, quantized from the BF16 checkpoint by GPTQ, packed for Strata NVFP4: the 125B hybrid MoE on one RTX 20-50 card (12 GB of VRAM or more) and 64 GB of RAM or more."
+    },
+    {
+      "title": "GitHub - Niko1221/Strata: Qwen3.8-Flash-Next on any consumer hardware ...",
+      "url": "https://github.com/Niko1221/Strata",
+      "snippet": "Qwen3.8-Flash-Next on any consumer hardware: one-click install for Windows / Linux. Strata inference engine, OpenAI/Anthropic API on localhost, optional image input. - Niko1221/Strata"
+    }
+  ]
+}

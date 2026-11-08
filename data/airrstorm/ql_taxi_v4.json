@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "AirrStorm/ql_Taxi_v4",
+  "slug": "airrstorm-ql_taxi_v4",
+  "author": "AirrStorm",
+  "url": "https://huggingface.co/AirrStorm/ql_Taxi_v4",
+  "created_at": "2026-11-08T17:27:46.000Z",
+  "updated_at": "2026-11-08T17:28:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24571,
+  "storage_human": "24571 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rllearner/q-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/rllearner/q-Taxi-v4",
+      "snippet": "This is a trained model of a Q-Learning agent playing Taxi-v3 ..."
+    },
+    {
+      "title": "Learnix-AI-Lab/q-Taxi-v4 · Hugging Face",
+      "url": "https://huggingface.co/Learnix-AI-Lab/q-Taxi-v4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

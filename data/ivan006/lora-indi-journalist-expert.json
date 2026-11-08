@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Ivan006/Lora-Indi-Journalist-Expert",
+  "slug": "ivan006-lora-indi-journalist-expert",
+  "author": "Ivan006",
+  "url": "https://huggingface.co/Ivan006/Lora-Indi-Journalist-Expert",
+  "created_at": "2026-11-08T15:33:00.000Z",
+  "updated_at": "2026-11-08T15:33:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11421892,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Indian Model - v1 BEAUTY WOMEN - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/832171792434064027",
+      "snippet": "Download Indian Model - free LORA FLUX.1 AI model on TENSOR. BEAUTY WOMEN, REALISTIC PORTRAIT, STYLE. By MadMax"
+    },
+    {
+      "title": "Indian insta model - version 1 - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/932065008311894744",
+      "snippet": "Download Indian insta model - free LORA FLUX.1 AI model on TENSOR. FLUX, SINDOOR, INDIAN LADY. By DANNY 222"
+    }
+  ]
+}

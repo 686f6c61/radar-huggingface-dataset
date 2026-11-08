@@ -5,7 +5,7 @@
   "author": "ethanwtodd",
   "url": "https://huggingface.co/ethanwtodd/Sage-A1.5-Q4_K-Q8_0-GGUF",
   "created_at": "2026-11-07T21:22:41.000Z",
-  "updated_at": "2026-11-07T21:51:07.000Z",
+  "updated_at": "2026-11-07T23:33:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 119,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
-  "storage_bytes": 21170203264,
-  "storage_human": "21.2 GB",
+  "storage_bytes": 42340406496,
+  "storage_human": "42.3 GB",
   "base_model": "InternScience/Sage-A1.5",
   "formats": [
     "gguf"

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "MatterWaveAI/grt-mamba",
+  "slug": "matterwaveai-grt-mamba",
+  "author": "MatterWaveAI",
+  "url": "https://huggingface.co/MatterWaveAI/grt-mamba",
+  "created_at": "2026-11-08T02:34:04.000Z",
+  "updated_at": "2026-11-08T13:50:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "mamba",
+    "state-space-model",
+    "ssm",
+    "world-model",
+    "grt-mamba",
+    "s1-grt-mamba",
+    "rotational-ssm",
+    "rotational-transformer",
+    "matterwave",
+    "text-generation",
+    "base_model:MatterWaveAI/grt-30m",
+    "base_model:finetune:MatterWaveAI/grt-30m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "MatterWaveAI/grt-30m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "S1-GRT-Mamba ( MatterWaveAI/s1-grt-mamba ) - Hugging Face",
+      "url": "https://huggingface.co/MatterWaveAI/s1-grt-mamba",
+      "snippet": "Text Classification model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

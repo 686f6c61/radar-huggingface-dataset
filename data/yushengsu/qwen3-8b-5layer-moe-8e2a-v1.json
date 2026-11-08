@@ -5,7 +5,7 @@
   "author": "yushengsu",
   "url": "https://huggingface.co/yushengsu/Qwen3-8B-5layer-MoE-8E2A-v1",
   "created_at": "2026-11-06T07:05:59.000Z",
-  "updated_at": "2026-11-06T07:06:00.000Z",
+  "updated_at": "2026-11-08T13:19:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "sglang",
+    "safetensors",
     "specforge",
     "speculative-decoding",
     "dspark",
@@ -28,10 +29,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 25657055118,
+  "storage_human": "25.7 GB",
   "base_model": "Qwen/Qwen3-8B",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

@@ -5,7 +5,7 @@
   "author": "ampixa",
   "url": "https://huggingface.co/ampixa/voxcpm2-nepali",
   "created_at": "2026-11-03T08:50:44.000Z",
-  "updated_at": "2026-11-03T09:53:20.000Z",
+  "updated_at": "2026-11-07T08:46:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jankowal2323/cieslar-qwen-v3",
+  "slug": "jankowal2323-cieslar-qwen-v3",
+  "author": "jankowal2323",
+  "url": "https://huggingface.co/jankowal2323/cieslar-qwen-v3",
+  "created_at": "2026-11-08T15:33:11.000Z",
+  "updated_at": "2026-11-08T15:50:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pl",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "fine-tuned",
+    "text-generation",
+    "pl",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 8066450336,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jankowal2323/cieslar-qwen · Hugging Face",
+      "url": "https://huggingface.co/jankowal2323/cieslar-qwen",
+      "snippet": "jankowal2323 / cieslar-qwen Like 2 Text Generation GGUF Polish English qwen3_5 fine-tuned conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "Qwen3 Models: How to Access, Features, Applications, and More",
+      "url": "https://www.analyticsvidhya.com/blog/2025/04/qwen3/",
+      "snippet": "Learn all about the Qwen3 Models - how to access them, their key features, applications, performance benchmarks, and more."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Zavi677/heart",
+  "slug": "zavi677-heart",
+  "author": "Zavi677",
+  "url": "https://huggingface.co/Zavi677/heart",
+  "created_at": "2026-11-08T12:20:58.000Z",
+  "updated_at": "2026-11-08T12:23:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ur"
+  ],
+  "tags": [
+    "medical",
+    "text-to-speech",
+    "ur",
+    "dataset:bones-studio/seed",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CHOP Models Children’s Hearts with Open-Source NVIDIA AI Tools",
+      "url": "https://www.unite.ai/chop-models-childrens-hearts-with-open-source-nvidia-ai-tools/",
+      "snippet": "Children’s Hospital of Philadelphia (CHOP) is running a cardiac modeling service built on MONAI, an open-source medical imaging framework cofounded by NVIDIA, that turns the CT scans, MRI and 3D ultrasound images a child’s care team already has into anatomically precise heart models, NVIDIA reported on September 15, 2026. NVIDIA said the service produces each model in seconds, replacing a ..."
+    },
+    {
+      "title": "3D Heart Model Generator - AI",
+      "url": "https://www.tripo3d.ai/discover/3d-heart-model",
+      "snippet": "Explore our collection of 3D Heart Model in realistic, stylized, cartoon styles with themes such as medical, romantic, valentine. Perfect for education, art."
+    }
+  ]
+}

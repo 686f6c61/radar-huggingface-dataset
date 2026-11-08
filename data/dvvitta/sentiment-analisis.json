@@ -5,7 +5,7 @@
   "author": "dvvitta",
   "url": "https://huggingface.co/dvvitta/sentiment-analisis",
   "created_at": "2026-11-02T07:06:04.000Z",
-  "updated_at": "2026-11-02T07:28:33.000Z",
+  "updated_at": "2026-11-08T07:40:02.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": 124442882,
   "parameters_human": "124.4M",

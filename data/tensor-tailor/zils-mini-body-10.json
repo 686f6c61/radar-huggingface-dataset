@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "tensor-tailor/zils-mini-body-10",
+  "slug": "tensor-tailor-zils-mini-body-10",
+  "author": "tensor-tailor",
+  "url": "https://huggingface.co/tensor-tailor/zils-mini-body-10",
+  "created_at": "2026-11-08T15:12:41.000Z",
+  "updated_at": "2026-11-08T15:13:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "zils",
+    "decision-model",
+    "custom_code",
+    "base_model:Charlie320/zils-mini-s1",
+    "base_model:finetune:Charlie320/zils-mini-s1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9091424182,
+  "storage_human": "9.1 GB",
+  "base_model": "qhoenix/zils-mini-decision-v2, Charlie320/zils-mini-s1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Slender Body - ZImage Turbo - ZIT v1-10 | Tensor.Art",
+      "url": "https://tensor.art/models/948011511064864951",
+      "snippet": "Download Slender Body - ZImage Turbo - free LORA Z-Image-Turbo AI model on TENSOR. ZIMAGE, SLENDER BODY, CONCEPT. By ann_willnn"
+    }
+  ]
+}

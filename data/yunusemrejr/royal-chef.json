@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "yunusemrejr/royal-chef",
+  "slug": "yunusemrejr-royal-chef",
+  "author": "yunusemrejr",
+  "url": "https://huggingface.co/yunusemrejr/royal-chef",
+  "created_at": "2026-11-08T16:55:26.000Z",
+  "updated_at": "2026-11-08T16:56:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "custom",
+  "languages": [
+    "en",
+    "es",
+    "fr"
+  ],
+  "tags": [
+    "custom",
+    "cooking",
+    "recipes",
+    "on-device",
+    "webassembly",
+    "4-bit",
+    "text-generation",
+    "en",
+    "es",
+    "fr",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89415722,
+  "storage_human": "89 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "My Royal Chef AI — Productivity | Product.forum",
+      "url": "https://product.forum/products/my-royal-chef-ai",
+      "snippet": "AI cooking assistant: recipes from your pantry, swaps, scaling, costing. Free; Premium $12.99/mo. Maker Story “ My Royal Chef AI was built and submitted by Yunus Emre Vurgun (via his assistant Grok Bot) for the developer and maker community on Product.forum. ” — Yunus Emre Vurgun (via his assistant Grok Bot) Key highlights"
+    },
+    {
+      "title": "About My Royal Chef AI — Practical Help for Everyday Cooking",
+      "url": "https://myroyalchef.com/about",
+      "snippet": "Meet the people and ideas behind My Royal Chef AI: a cooking assistant for recipes, substitutions and the decisions between pantry and plate."
+    }
+  ]
+}

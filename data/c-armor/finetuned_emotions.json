@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "c-armor/finetuned_emotions",
+  "slug": "c-armor-finetuned_emotions",
+  "author": "c-armor",
+  "url": "https://huggingface.co/c-armor/finetuned_emotions",
+  "created_at": "2025-11-11T21:37:32.000Z",
+  "updated_at": "2026-11-08T17:06:36.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "es",
+    "base_model:dccuchile/bert-base-spanish-wwm-cased",
+    "base_model:finetune:dccuchile/bert-base-spanish-wwm-cased",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 109855494,
+  "parameters_human": "109.9M",
+  "storage_bytes": 3076135979,
+  "storage_human": "3.1 GB",
+  "base_model": "dccuchile/bert-base-spanish-wwm-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "c-armor (Moreno) - Hugging Face",
+      "url": "https://huggingface.co/c-armor",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space 3 days ago ... published a Space 4 days ago"
+    },
+    {
+      "title": "finetuned_emotions — AI Compliance Status Across 52 Jurisdictions - Nerq",
+      "url": "https://nerq.ai/agent/c0059bfc-e1dd-4dcb-b00e-22c1c71c7bab",
+      "snippet": "About This Assessment finetuned_emotions is a model sourced from huggingface_full, authored by c-armor. It operates in the nlp domain. Across global AI regulations, it is classified as minimal risk. Nerq has assessed this agent against 52 global AI regulations, finding it to be high risk or restricted in 0 jurisdictions, subject to transparency or limited requirements in 0 jurisdictions, and ..."
+    }
+  ]
+}

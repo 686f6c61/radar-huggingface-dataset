@@ -5,7 +5,7 @@
   "author": "min-1870",
   "url": "https://huggingface.co/min-1870/nunchi-tr5n-102k",
   "created_at": "2026-11-07T07:18:58.000Z",
-  "updated_at": "2026-11-07T07:22:48.000Z",
+  "updated_at": "2026-11-07T16:37:40.000Z",
   "license": "cc-by-sa-4.0-where-possible",
   "license_family": "unknown",
   "pipeline_tag": "token-classification",
@@ -21,6 +21,7 @@
     "input-method",
     "ko",
     "en",
+    "dataset:min-1870/nunchi-bench",
     "license:other",
     "region:us"
   ],
