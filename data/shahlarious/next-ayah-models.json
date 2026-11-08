@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "shahlarious/next-ayah-models",
+  "slug": "shahlarious-next-ayah-models",
+  "author": "shahlarious",
+  "url": "https://huggingface.co/shahlarious/next-ayah-models",
+  "created_at": "2026-11-07T22:53:54.000Z",
+  "updated_at": "2026-11-07T22:55:50.000Z",
+  "license": "cc-by-4.0-and-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "quran",
+    "arabic",
+    "speech-recognition",
+    "on-device",
+    "int8",
+    "automatic-speech-recognition",
+    "ar",
+    "base_model:nvidia/stt_ar_fastconformer_hybrid_large_pc_v1.0",
+    "base_model:quantized:nvidia/stt_ar_fastconformer_hybrid_large_pc_v1.0",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 211677103,
+  "storage_human": "212 MB",
+  "base_model": "nvidia/stt_ar_fastconformer_hybrid_large_pc_v1.0, tarteel-ai/whisper-base-ar-quran",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Next AI Model — AI Model Release Tracker",
+      "url": "https://www.nextaimodel.com/",
+      "snippet": "Free tracker of every AI model release from OpenAI, Google, Anthropic, xAI, Meta, DeepSeek and more: what each model changed, and which lines are due next."
+    }
+  ]
+}

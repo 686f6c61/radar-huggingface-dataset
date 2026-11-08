@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "kylinfires/JoyAI-Video-Edit-optimized",
+  "slug": "kylinfires-joyai-video-edit-optimized",
+  "author": "kylinfires",
+  "url": "https://huggingface.co/kylinfires/JoyAI-Video-Edit-optimized",
+  "created_at": "2026-11-08T01:34:53.000Z",
+  "updated_at": "2026-11-08T01:35:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "video-editing",
+    "streaming",
+    "quantization",
+    "int8",
+    "int4",
+    "rocm",
+    "video-to-video",
+    "en",
+    "zh",
+    "arxiv:2608.03974",
+    "base_model:jdopensource/JoyAI-Video-Edit",
+    "base_model:finetune:jdopensource/JoyAI-Video-Edit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22852597,
+  "storage_human": "23 MB",
+  "base_model": "jdopensource/JoyAI-Video-Edit",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jd-opensource/JoyAI-Video-Edit: [Official Repo] JoyAI-Video ...",
+      "url": "https://github.com/jd-opensource/JoyAI-Video-Edit",
+      "snippet": "JoyAI-Video-Edit is a real-time, instruction-guided video editing system for open-ended video streams. Given a live camera stream or uploaded video and a natural-language edit instruction, it edits frames causally as they arrive, without waiting for the full video, requiring a predefined video length, or revisiting future frames."
+    },
+    {
+      "title": "JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with ...",
+      "url": "https://arxiv.org/abs/2608.03974",
+      "snippet": "Real-time video editing requires low-latency causal generation with bounded computational resources while preserving source fidelity and long-term temporal consistency. We present JoyAI-Video-Edit, a 16B-parameter autoregressive diffusion framework for real-time, open-ended video editing without access to future frames or a predefined video duration. Our method combines chunk-wise ..."
+    }
+  ]
+}

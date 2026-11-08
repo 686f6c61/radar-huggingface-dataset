@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "MercyStar/RVCSVC-API-Pro",
+  "slug": "mercystar-rvcsvc-api-pro",
+  "author": "MercyStar",
+  "url": "https://huggingface.co/MercyStar/RVCSVC-API-Pro",
+  "created_at": "2026-10-31T02:38:02.000Z",
+  "updated_at": "2026-11-08T02:34:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40651973425,
+  "storage_human": "40.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MercyStar/RVCSVC-API-Pro · Hugging Face",
+      "url": "https://huggingface.co/MercyStar/RVCSVC-API-Pro",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "MercyStar/RVCSVC-API-Pro at main - Hugging Face",
+      "url": "https://huggingface.co/MercyStar/RVCSVC-API-Pro/tree/main",
+      "snippet": "MercyStar / RVCSVC-API-Pro Like 1 Model card FilesFiles and versions xet Community Copy to bucket main RVCSVC-API-Pro 40.7 GB Ctrl+K Ctrl+K 1 contributor History:7 commits MercyStar Upload rvc_cover_backend_A.7z 6027919 verified2 days ago .gitattributes Safe 1.52 kBinitial commit5 days ago RVCSVC-API-Pro-V2.0.zip Safe 4.84 GB xet Upload RVCSVC ..."
+    }
+  ]
+}

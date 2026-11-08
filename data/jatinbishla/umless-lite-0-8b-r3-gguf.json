@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "jatinbishla/Umless-Lite-0.8B-r3-GGUF",
+  "slug": "jatinbishla-umless-lite-0-8b-r3-gguf",
+  "author": "jatinbishla",
+  "url": "https://huggingface.co/jatinbishla/Umless-Lite-0.8B-r3-GGUF",
+  "created_at": "2026-11-07T21:40:15.000Z",
+  "updated_at": "2026-11-07T21:41:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "dictation",
+    "speech-to-text",
+    "text-cleanup",
+    "disfluency-removal",
+    "lora",
+    "umless",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 541903840,
+  "storage_human": "542 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

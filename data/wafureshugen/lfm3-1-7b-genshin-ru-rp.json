@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "wafureshugen/LFM3-1.7B-genshin-ru-rp",
+  "slug": "wafureshugen-lfm3-1-7b-genshin-ru-rp",
+  "author": "wafureshugen",
+  "url": "https://huggingface.co/wafureshugen/LFM3-1.7B-genshin-ru-rp",
+  "created_at": "2026-11-07T21:40:38.000Z",
+  "updated_at": "2026-11-07T23:09:42.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "lfm3",
+    "roleplay",
+    "genshin-impact",
+    "lora-merged",
+    "custom_code",
+    "ru",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:finetune:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801536,
+  "parameters_human": "1.73B",
+  "storage_bytes": 3475544082,
+  "storage_human": "3.5 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM3-1.7B - Liquid AI Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm3-1.7b",
+      "snippet": "1.7B text model for local agents and specialized applications, with a 256K context window and native tool calling ← Back to Text Models LFM3-1.7B is Liquid AI’s text model for local agents and specialized applications, based on the new LFM3 tri-hybrid architecture."
+    },
+    {
+      "title": "LFM3 - a LiquidAI Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/LiquidAI/lfm3",
+      "snippet": "Collection of base and post-trained LFM3 models (www.liquid.ai/blog/lfm3)."
+    }
+  ]
+}

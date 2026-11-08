@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "useing/cqa-qwen3-8b-lora",
+  "slug": "useing-cqa-qwen3-8b-lora",
+  "author": "useing",
+  "url": "https://huggingface.co/useing/cqa-qwen3-8b-lora",
+  "created_at": "2026-11-07T21:26:26.000Z",
+  "updated_at": "2026-11-07T21:26:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "ru",
+    "kk",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "call-center",
+    "quality-assurance",
+    "cqa",
+    "ru",
+    "kk",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078186,
+  "storage_human": "186 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run Qwen3 8B Locally: Step-by-Step Guide — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-qwen3-8b-local-enterprise-ai-on-8gb-ram",
+      "snippet": "Deploy Qwen3 8B locally with just 8GB RAM. A practical tutorial for running Alibaba's efficient LLM using Ollama for private, high-performance AI inference."
+    },
+    {
+      "title": "Fine-Tune Qwen3 8B with LoRA · Hugging Face",
+      "url": "https://huggingface.co/docs/optimum-neuron/training_tutorials/finetune_qwen3",
+      "snippet": "We’ll use a trn1.32xlarge instance with 16 Trainium Accelerators (32 Neuron Cores) and the Hugging Face Neuron Deep Learning AMI. To tune our model we need to convert our structured examples into a collection of quotes with a given context, so we define our tokenization function that we will be ..."
+    }
+  ]
+}

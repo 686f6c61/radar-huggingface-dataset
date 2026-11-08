@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "angellopez/aquascan-open-science-model",
+  "slug": "angellopez-aquascan-open-science-model",
+  "author": "angellopez",
+  "url": "https://huggingface.co/angellopez/aquascan-open-science-model",
+  "created_at": "2026-11-07T20:51:37.000Z",
+  "updated_at": "2026-11-07T21:00:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "scikit-learn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "groundwater",
+    "hydrogeology",
+    "geoscience",
+    "tabular-regression",
+    "random-forest",
+    "spain",
+    "balearic-islands",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4539811,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AquaScan Open Science - GitHub",
+      "url": "https://github.com/angelopezvpb/aquascan-open-science",
+      "snippet": "AquaScan Open Science — research framework for multimodal hydrogeophysical groundwater prospecting (documentary context + ERT + P-wave seismic). Leakage-safe validation, open-source baselines, blin..."
+    },
+    {
+      "title": "aquascan-open-science/README.md at main · angelopezvpb ... - GitHub",
+      "url": "https://github.com/angelopezvpb/aquascan-open-science/blob/main/README.md",
+      "snippet": "AquaScan Open Science Open-source research framework for investigating whether multimodal hydrogeophysical measurements (ERT + P-wave seismic + GNSS RTK) combined with documentary context can improve groundwater prospecting — with explicit uncertainty, blinding, and leakage-safe validation."
+    }
+  ]
+}

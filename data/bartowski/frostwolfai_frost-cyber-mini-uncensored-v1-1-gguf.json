@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "bartowski/FrostWolfAI_Frost-Cyber-Mini-Uncensored-v1.1-GGUF",
+  "slug": "bartowski-frostwolfai_frost-cyber-mini-uncensored-v1-1-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/FrostWolfAI_Frost-Cyber-Mini-Uncensored-v1.1-GGUF",
+  "created_at": "2026-11-07T21:48:36.000Z",
+  "updated_at": "2026-11-07T21:53:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "cybersecurity",
+    "uncensored",
+    "abliterated",
+    "spark2_5",
+    "lora-merged",
+    "agentic",
+    "tool-use",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:FrostWolfAI/Frost-Cyber-Mini-Uncensored-v1.1",
+    "base_model:quantized:FrostWolfAI/Frost-Cyber-Mini-Uncensored-v1.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 62600060192,
+  "storage_human": "62.6 GB",
+  "base_model": "FrostWolfAI/Frost-Cyber-Mini-Uncensored-v1.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frost Cyber Mini Uncensored v1.1 — GGUF - Hugging Face",
+      "url": "https://huggingface.co/FrostWolfAI/Frost-Cyber-Mini-Uncensored-v1.1-GGUF",
+      "snippet": "By Vatsal Bajpai (@xblack) · FrostWolfAI Labs — GGUF quants of Frost-Cyber-Mini-Uncensored-v1.1, a compact, fast, local cybersecurity and software-engineering assistant with an agentic tool-use phase, for red-team, OSINT, CTI, secure coding and agentic workflows."
+    },
+    {
+      "title": "Frost Cyber Mini v1.1 - a FrostWolfAI Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/FrostWolfAI/frost-cyber-mini-v11",
+      "snippet": "Frost Cyber Mini v1.1 updated about 4 hours ago Frost Cyber Mini v1.1 model family Upvote - Sort: Collection"
+    }
+  ]
+}

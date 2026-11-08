@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "vitalipavlovsk/action-contract-guard",
+  "slug": "vitalipavlovsk-action-contract-guard",
+  "author": "vitalipavlovsk",
+  "url": "https://huggingface.co/vitalipavlovsk/action-contract-guard",
+  "created_at": "2026-11-07T22:35:05.000Z",
+  "updated_at": "2026-11-07T22:55:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "ai-safety",
+    "authorization",
+    "base_model:google/bert_uncased_L-4_H-256_A-4",
+    "base_model:finetune:google/bert_uncased_L-4_H-256_A-4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11171074,
+  "parameters_human": "11.2M",
+  "storage_bytes": 22350340,
+  "storage_human": "22 MB",
+  "base_model": "google/bert_uncased_L-4_H-256_A-4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1 - a vitalipavlovsk Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/vitalipavlovsk/1",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from vitalipavlovsk"
+    },
+    {
+      "title": "vitalipavlovsk (pavlovski) - Hugging Face",
+      "url": "https://huggingface.co/vitalipavlovsk",
+      "snippet": "None yet. Organizations. Collections 1. 1. vitalipavlovsk/anansi. Updated Jan 17. 1. vitalipavlovsk/anansi. Updated Jan 17. models 1. vitalipavlovsk/anansi"
+    }
+  ]
+}

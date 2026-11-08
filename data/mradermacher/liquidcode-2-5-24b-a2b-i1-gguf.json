@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LiquidCode-2.5-24B-A2B-i1-GGUF",
+  "slug": "mradermacher-liquidcode-2-5-24b-a2b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LiquidCode-2.5-24B-A2B-i1-GGUF",
+  "created_at": "2026-11-07T23:31:37.000Z",
+  "updated_at": "2026-11-07T23:31:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28033320,
+  "parameters_human": "28.0M",
+  "storage_bytes": 112212064,
+  "storage_human": "112 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/LFM2.5-24B-A2B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LFM2.5-24B-A2B-i1-GGUF",
+      "snippet": "mradermacher / LFM2.5-24B-A2B-i1-GGUF Like 3 Transformers GGUF 16 languages liquid lfm2.5 edge Mixture of Experts imatrix conversational License:lfm1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/LFM2.5-24B-A2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LFM2.5-24B-A2B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

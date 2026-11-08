@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-VL-32B-OCR-GGUF",
+  "slug": "mradermacher-qwen2-5-vl-32b-ocr-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-VL-32B-OCR-GGUF",
+  "created_at": "2025-11-19T06:26:47.000Z",
+  "updated_at": "2026-11-07T21:04:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "model-merging",
+    "optmerge",
+    "multimodal",
+    "qwen2.5-vl",
+    "ocr",
+    "en",
+    "base_model:yongxianwei/Qwen2.5-VL-32B-OCR",
+    "base_model:quantized:yongxianwei/Qwen2.5-VL-32B-OCR",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 288,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 226117472096,
+  "storage_human": "226.1 GB",
+  "base_model": "yongxianwei/Qwen2.5-VL-32B-OCR",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen2.5-VL-32B-OCR-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-VL-32B-OCR-GGUF",
+      "snippet": "Feel free to request them by opening a Community Discussion. Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Qwen2.5-VL-32B-Instruct-heretic-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-VL-32B-Instruct-heretic-GGUF",
+      "snippet": "Feel free to request them by opening a Community Discussion. Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    }
+  ]
+}

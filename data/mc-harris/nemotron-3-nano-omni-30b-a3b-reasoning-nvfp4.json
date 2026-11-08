@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mc-harris/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "slug": "mc-harris-nemotron-3-nano-omni-30b-a3b-reasoning-nvfp4",
+  "author": "mc-harris",
+  "url": "https://huggingface.co/mc-harris/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4",
+  "created_at": "2026-11-08T00:35:20.000Z",
+  "updated_at": "2026-11-08T00:35:20.000Z",
+  "license": "nvidia-open-model-agreement",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "NemotronH_Nano_Omni_Reasoning_V3",
+    "feature-extraction",
+    "nvidia",
+    "pytorch",
+    "multimodal",
+    "any-to-any",
+    "custom_code",
+    "dataset:nvidia/Nemotron-Image-Training-v3",
+    "arxiv:2604.24954",
+    "base_model:nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+    "base_model:quantized:nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+    "license:other",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18326275008,
+  "parameters_human": "18.33B",
+  "storage_bytes": 22426111559,
+  "storage_human": "22.4 GB",
+  "base_model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nemotron-3-nano-omni-30b-a3b-reasoning Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning/modelcard",
+      "snippet": "NVIDIA Nemotron 3 Nano Omni is a multimodal large language model that unifies video, audio, image, and text understanding to support enterprise-grade Q&A, summarization, transcription, and document intelligence workflows. It extends the Nemotron Nano family with integrated video+speech comprehension ..."
+    },
+    {
+      "title": "nvidia / nemotron-3-nano-omni-30b-a3b-reasoning",
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-nano-omni-30b-a3b-reasoning",
+      "snippet": "Model Overview Description: NVIDIA Nemotron 3 Nano Omni is a multimodal large language model that unifies video, audio, image, and text understanding to support enterprise-grade Q&A, summarization, transcription, and document intelligence workflows. It extends the Nemotron Nano family with integrate…"
+    }
+  ]
+}

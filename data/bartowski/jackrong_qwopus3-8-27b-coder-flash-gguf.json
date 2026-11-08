@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+  "slug": "bartowski-jackrong_qwopus3-8-27b-coder-flash-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/Jackrong_Qwopus3.8-27B-Coder-Flash-GGUF",
+  "created_at": "2026-11-07T21:01:59.000Z",
+  "updated_at": "2026-11-07T21:45:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "image-text-to-text",
+    "vision",
+    "multimodal",
+    "conversational",
+    "qwen3_5",
+    "qwopus3_8",
+    "vllm",
+    "fine-tuned",
+    "coding",
+    "code-generation",
+    "reasoning",
+    "tool-use",
+    "agent",
+    "efficient-inference",
+    "en",
+    "zh",
+    "base_model:Jackrong/Qwopus3.8-27B-Coder-Flash",
+    "base_model:quantized:Jackrong/Qwopus3.8-27B-Coder-Flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 446791923840,
+  "storage_human": "446.8 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Coder-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jackrong/Qwopus3.8-27B-Coder-Flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Jackrong/Qwopus3.8-27B-Coder-Flash-GGUF",
+      "snippet": "A coding-oriented Flash model for practical software work Qwopus3.8-27B-Coder-Flash is positioned for coding, agentic reasoning, tool use, and efficient execution. It extends the Qwopus Flash philosophy to a 27B model focused on useful software-engineering work: understand the request, make a concrete change, inspect tool feedback, test the result, recover from errors, and deliver the artifact."
+    },
+    {
+      "title": "Jackrong/Qwopus3.8-27B-Flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

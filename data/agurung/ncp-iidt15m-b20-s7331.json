@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "agurung/ncp-iidt15m-b20-s7331",
+  "slug": "agurung-ncp-iidt15m-b20-s7331",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/ncp-iidt15m-b20-s7331",
+  "created_at": "2026-11-08T01:08:13.000Z",
+  "updated_at": "2026-11-08T01:08:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "uniform",
+    "sft",
+    "cobalt",
+    "diversity",
+    "trl",
+    "conversational",
+    "dataset:cobalt-traces-rft_ncp_iid_25",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2125524357,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agurung/ncp-iidt15-b20 · Hugging Face",
+      "url": "https://huggingface.co/agurung/ncp-iidt15-b20",
+      "snippet": "Instructions to use agurung/ncp-iidt15-b20 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use agurung/ncp-iidt15-b20 with Transformers:"
+    },
+    {
+      "title": "agurung/ncp-vst15-b20-s7331 · Hugging Face",
+      "url": "https://huggingface.co/agurung/ncp-vst15-b20-s7331",
+      "snippet": "Instructions to use agurung/ncp-vst15-b20-s7331 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use agurung/ncp-vst15-b20-s7331 with Transformers:"
+    }
+  ]
+}

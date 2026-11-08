@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mtg-kernel/archon-1-pauper",
+  "slug": "mtg-kernel-archon-1-pauper",
+  "author": "mtg-kernel",
+  "url": "https://huggingface.co/mtg-kernel/archon-1-pauper",
+  "created_at": "2026-11-08T04:04:43.000Z",
+  "updated_at": "2026-11-08T04:06:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "game-ai",
+    "magic-the-gathering",
+    "mtg-kernel",
+    "spellbench",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25677274,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Pauper Deck Builder for Magic: The Gathering | Tutor",
+      "url": "https://tutorman.dev/deck-builder/pauper",
+      "snippet": "Budget-friendly by design: a 60-card Pauper deck made entirely of commons, with a sideboard. Free AI Pauper deck builder."
+    },
+    {
+      "title": "ChatGPT AI Deck (Pauper MTG Deck) - TappedOut.net",
+      "url": "https://tappedout.net/mtg-decks/chatgpt-ai-deck/",
+      "snippet": "Creatures: 4x Raptor Hatchling 4x Nest Robber 4x Frilled Deathspitter 4x Territorial Hammerskull 4x Sun-Collared Raptor 4x Ravenous Daggertooth 4x Bonded Horncrest 4x Charging Monstrosaur Spells: 4x Lightning Bolt 4x Shock 4x Fiery Cannonade 4x Savage Stomp Lands: 20x Mountain This deck focuses on using dinosaurs with the enrage mechanic, which triggers when they take damage, to deal damage to ..."
+    }
+  ]
+}

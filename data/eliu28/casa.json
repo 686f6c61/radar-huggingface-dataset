@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "eliu28/casa",
+  "slug": "eliu28-casa",
+  "author": "eliu28",
+  "url": "https://huggingface.co/eliu28/casa",
+  "created_at": "2026-11-08T03:00:57.000Z",
+  "updated_at": "2026-11-08T03:00:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quick Start Example | kyutai-labs/casa | DeepWiki",
+      "url": "https://deepwiki.com/kyutai-labs/casa/2.2-quick-start-example",
+      "snippet": "Quick Start Example Relevant source files Purpose: This page demonstrates how to load a CASA model and run inference on a single image. It provides a complete, minimal working example and explains each step of the process. Scope: This guide covers basic single-image inference using the standard HuggingFace pipeline. For batch evaluation on benchmarks, see Running Evaluations. For video ..."
+    },
+    {
+      "title": "GitHub - LLLLincoln/GEE_CASA_demo: CASA model on GEE",
+      "url": "https://github.com/LLLLincoln/GEE_CASA_demo",
+      "snippet": "CASA model on GEE. Contribute to LLLLincoln/GEE_CASA_demo development by creating an account on GitHub."
+    }
+  ]
+}

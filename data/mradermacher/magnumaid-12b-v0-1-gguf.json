@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Magnumaid-12B-v0.1-GGUF",
+  "slug": "mradermacher-magnumaid-12b-v0-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Magnumaid-12B-v0.1-GGUF",
+  "created_at": "2025-03-09T12:25:04.000Z",
+  "updated_at": "2026-11-07T22:13:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 10066662400,
+  "parameters_human": "10.07B",
+  "storage_bytes": 90037702144,
+  "storage_human": "90.0 GB",
+  "base_model": "Triangle104/Magnumaid-12B-v0.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/magnum-v4-12b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/magnum-v4-12b-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Lumimaid-Magnum-v4-12B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Lumimaid-Magnum-v4-12B-GGUF",
+      "snippet": "mradermacher / Lumimaid-Magnum-v4-12B-GGUF like 3 Transformers GGUF English mergekit Merge conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

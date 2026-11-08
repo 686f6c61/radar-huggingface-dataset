@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "netprojects/Cosmos3-Edge-Omni-mlx-bf16",
+  "slug": "netprojects-cosmos3-edge-omni-mlx-bf16",
+  "author": "netprojects",
+  "url": "https://huggingface.co/netprojects/Cosmos3-Edge-Omni-mlx-bf16",
+  "created_at": "2026-11-07T21:48:22.000Z",
+  "updated_at": "2026-11-07T21:48:35.000Z",
+  "license": "openmdw1.1-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "diffusers",
+    "safetensors",
+    "cosmos",
+    "text-to-video",
+    "image-to-video",
+    "text-to-image",
+    "video-generation",
+    "apple-silicon",
+    "base_model:nvidia/Cosmos3-Edge",
+    "base_model:finetune:nvidia/Cosmos3-Edge",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7638427833,
+  "storage_human": "7.6 GB",
+  "base_model": "nvidia/Cosmos3-Edge",
+  "formats": [
+    "diffusers",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Reference — Cosmos - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/cosmos/latest/cosmos3/model_reference.html",
+      "snippet": "Model Reference # Cosmos 3 is available as Cosmos3-Super (64B), Cosmos3-Nano (16B), and Cosmos3-Edge (4B). The model family also includes task-specific variants: Cosmos3-Super-Text2Image, Cosmos3-Super-Image2Video, their four-step Text2Image and Image2Video variants, plus Cosmos3-Nano-Policy-DROID and Cosmos3-Edge-Policy-DROID. See the Model Matrix for hardware guidance and model selection ..."
+    },
+    {
+      "title": "Cosmos3-Edge Design — TensorRT Edge-LLM",
+      "url": "https://nvidia.github.io/TensorRT-Edge-LLM/developer_guide/models/cosmos3.html",
+      "snippet": "The only model-specific pieces on the export side are the Nemotron-H squared-ReLU MLP (Cosmos3ReasonerCausalLM) and the mapping from the checkpoint’s native flat schema to the shared decoder names."
+    }
+  ]
+}

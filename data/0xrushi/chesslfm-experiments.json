@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "0xrushi/chesslfm-experiments",
+  "slug": "0xrushi-chesslfm-experiments",
+  "author": "0xrushi",
+  "url": "https://huggingface.co/0xrushi/chesslfm-experiments",
+  "created_at": "2026-11-08T00:09:39.000Z",
+  "updated_at": "2026-11-08T00:24:53.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "chess",
+    "lfm2",
+    "research",
+    "text-generation",
+    "base_model:mlabonne/LFM2.5-230M-Chess",
+    "base_model:finetune:mlabonne/LFM2.5-230M-Chess",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4152466424,
+  "storage_human": "4.2 GB",
+  "base_model": "mlabonne/LFM2.5-230M-Chess",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChessLFM - a Hugging Face Space by mlabonne",
+      "url": "https://huggingface.co/spaces/mlabonne/ChessLFM",
+      "snippet": "This web app lets you play a game of chess right in the browser. Click on the board to make your moves, and the built‑in AI will respond, updating the board and showing the current game status. No ..."
+    },
+    {
+      "title": "0xrushi (Rushi) - Hugging Face",
+      "url": "https://huggingface.co/0xrushi/datasets",
+      "snippet": "Sort: Recently updated. 0xrushi/PeterGriffin-SparkTTSWeights. Updated Jan 3 • 11. 0xrushi/git-instruction-dataset. Viewer • Updated Jul 28, 2025 • 9.01k • 100 • 2"
+    }
+  ]
+}

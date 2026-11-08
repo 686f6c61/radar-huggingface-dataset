@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "ggml-org/gemma-4-E2B-GGUF",
+  "slug": "ggml-org-gemma-4-e2b-gguf",
+  "author": "ggml-org",
+  "url": "https://huggingface.co/ggml-org/gemma-4-E2B-GGUF",
+  "created_at": "2026-07-16T14:10:54.000Z",
+  "updated_at": "2026-11-08T03:51:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "any-to-any",
+    "base_model:google/gemma-4-E2B",
+    "base_model:quantized:google/gemma-4-E2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 1233,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 28557519040,
+  "storage_human": "28.6 GB",
+  "base_model": "google/gemma-4-E2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ggml-org/gemma-4-E2B-it-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ggml-org/gemma-4-E2B-it-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ggml-org/gemma-4-E2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ggml-org/gemma-4-E2B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

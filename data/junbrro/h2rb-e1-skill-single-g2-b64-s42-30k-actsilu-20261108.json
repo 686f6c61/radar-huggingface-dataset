@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "junbrro/h2rb-e1-skill-single-g2-b64-s42-30k-actsilu-20261108",
+  "slug": "junbrro-h2rb-e1-skill-single-g2-b64-s42-30k-actsilu-20261108",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/h2rb-e1-skill-single-g2-b64-s42-30k-actsilu-20261108",
+  "created_at": "2026-11-08T03:30:02.000Z",
+  "updated_at": "2026-11-08T03:33:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6915094616,
+  "parameters_human": "6.92B",
+  "storage_bytes": 13855927318,
+  "storage_human": "13.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "junbrro/egopi-arm2-rbbt-anyh3-AB-30k-actsilu-mlxp-20260924 · Hugging Face",
+      "url": "https://huggingface.co/junbrro/egopi-arm2-rbbt-anyh3-AB-30k-actsilu-mlxp-20260924",
+      "snippet": "Final step: 30000. Source: junhyeong-anyh3-ab-30k-260923-r1. Final model weights and configuration only; optimizer/RNG state excluded. Original configuration is preserved, including source-cluster paths. Remap paths before use. Bundled actlat/ contains the action tokenizer when applicable. Fresh PT ..."
+    },
+    {
+      "title": "egopi-arm2-rbbt-anyh3-A-30k-actsilu-mlxp-20260924 - Hugging Face",
+      "url": "https://huggingface.co/junbrro/egopi-arm2-rbbt-anyh3-A-30k-actsilu-mlxp-20260924",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

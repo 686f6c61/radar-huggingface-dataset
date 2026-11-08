@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Mannaxx/zhoomerx-stt",
+  "slug": "mannaxx-zhoomerx-stt",
+  "author": "Mannaxx",
+  "url": "https://huggingface.co/Mannaxx/zhoomerx-stt",
+  "created_at": "2026-11-08T00:47:07.000Z",
+  "updated_at": "2026-11-08T00:47:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moonshine",
+    "automatic-speech-recognition",
+    "en",
+    "arxiv:2410.15608",
+    "arxiv:1810.03993",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 61513920,
+  "parameters_human": "61.5M",
+  "storage_bytes": 246079928,
+  "storage_human": "246 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

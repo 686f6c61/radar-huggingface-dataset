@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Jas-preet/SPOT-1D-Single",
+  "slug": "jas-preet-spot-1d-single",
+  "author": "Jas-preet",
+  "url": "https://huggingface.co/Jas-preet/SPOT-1D-Single",
+  "created_at": "2026-11-08T02:04:13.000Z",
+  "updated_at": "2026-11-08T02:07:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "biology",
+    "protein",
+    "protein-structure-prediction",
+    "secondary-structure",
+    "bioinformatics",
+    "other",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1204860732,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jas-preet/SPOT-1D-Single: The standalone version of SPOT-1D ...",
+      "url": "https://github.com/jas-preet/SPOT-1D-Single",
+      "snippet": "SPOT-1D-Single: Improving the Single-Sequence-Based Prediction of Protein Secondary Structure, Backbone Angles, Solvent Accessibility and Half-Sphere Exposures using a Large Training Set and Ensembled Deep Learning. The standalone version of SPOT-1D-Single available for public use for research purposes."
+    },
+    {
+      "title": "jas-preet (Jaspreet singh) · GitHub",
+      "url": "https://github.com/jas-preet",
+      "snippet": "The standalone version of SPOT-1D-Single available for public use for research purposes. Python 24 2"
+    }
+  ]
+}

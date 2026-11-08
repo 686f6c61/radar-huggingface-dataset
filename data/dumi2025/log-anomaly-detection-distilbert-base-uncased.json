@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Dumi2025/log-anomaly-detection-distilbert-base-uncased",
+  "slug": "dumi2025-log-anomaly-detection-distilbert-base-uncased",
+  "author": "Dumi2025",
+  "url": "https://huggingface.co/Dumi2025/log-anomaly-detection-distilbert-base-uncased",
+  "created_at": "2026-11-08T03:21:22.000Z",
+  "updated_at": "2026-11-08T03:21:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "log-anomaly-detection",
+    "hdfs",
+    "text-classification",
+    "dataset:Prasasthy/trainforother",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dumi2025/log-anomaly-detection-model-roberta · Hugging Face",
+      "url": "https://huggingface.co/Dumi2025/log-anomaly-detection-model-roberta",
+      "snippet": "log-anomaly-detection-model-roberta This model is a fine-tuned version of FacebookAI/roberta-base on an unknown dataset. It achieves the following results on the evaluation set: Loss: 0.1524 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training ..."
+    },
+    {
+      "title": "Dumi2025/log-anomaly-detection-model-roberta at main",
+      "url": "https://huggingface.co/Dumi2025/log-anomaly-detection-model-roberta/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

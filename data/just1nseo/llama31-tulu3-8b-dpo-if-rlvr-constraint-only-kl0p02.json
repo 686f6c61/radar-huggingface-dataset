@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "just1nseo/llama31-tulu3-8b-dpo-if-rlvr-constraint-only-kl0p02",
+  "slug": "just1nseo-llama31-tulu3-8b-dpo-if-rlvr-constraint-only-kl0p02",
+  "author": "just1nseo",
+  "url": "https://huggingface.co/just1nseo/llama31-tulu3-8b-dpo-if-rlvr-constraint-only-kl0p02",
+  "created_at": "2026-11-07T23:37:14.000Z",
+  "updated_at": "2026-11-07T23:38:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "verl",
+    "grpo",
+    "rlvr",
+    "instruction-following",
+    "text-generation",
+    "base_model:allenai/Llama-3.1-Tulu-3-8B-DPO",
+    "base_model:finetune:allenai/Llama-3.1-Tulu-3-8B-DPO",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32138550902,
+  "storage_human": "32.1 GB",
+  "base_model": "allenai/Llama-3.1-Tulu-3-8B-DPO",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "just1nseo/llama31-tulu3-8b-dpo-if-rlvr-constraint-only · Hugging Face",
+      "url": "https://huggingface.co/just1nseo/llama31-tulu3-8b-dpo-if-rlvr-constraint-only",
+      "snippet": "Instructions to use just1nseo/llama31-tulu3-8b-dpo-if-rlvr-constraint-only with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "llama31-tulu3-8b-dpo-if-rlvr-anchor-only - Hugging Face",
+      "url": "https://huggingface.co/just1nseo/llama31-tulu3-8b-dpo-if-rlvr-anchor-only",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

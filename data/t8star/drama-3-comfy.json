@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "t8star/Drama-3-Comfy",
+  "slug": "t8star-drama-3-comfy",
+  "author": "t8star",
+  "url": "https://huggingface.co/t8star/Drama-3-Comfy",
+  "created_at": "2026-10-15T07:20:49.000Z",
+  "updated_at": "2026-11-08T03:04:58.000Z",
+  "license": "fish-audio-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "comfyui",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "comfyui",
+    "onnx",
+    "safetensors",
+    "gguf",
+    "drama3",
+    "audio",
+    "text-to-speech",
+    "voice-cloning",
+    "fp8",
+    "w4a8",
+    "t8star",
+    "zh",
+    "en",
+    "base_model:fishaudio/drama-3",
+    "base_model:quantized:fishaudio/drama-3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 4,
+  "downloads_30d": 234,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 141522102898,
+  "storage_human": "141.5 GB",
+  "base_model": "fishaudio/drama-3",
+  "formats": [
+    "gguf",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "t8star/Drama-3-Comfy · Hugging Face",
+      "url": "https://huggingface.co/t8star/Drama-3-Comfy",
+      "snippet": "The first three files provide complete DRAMA synthesis. ASR, alignment and VAD are optional per workflow. Keep the R2T2 Q8 main model and matching projector together. Download complete folders for the aligner and VAD. All paths can be overridden in the nodes or studio settings; the studio uses the same layout directly under its models/ directory."
+    },
+    {
+      "title": "t8star/Drama-3-Comfy at main - Hugging Face",
+      "url": "https://huggingface.co/t8star/Drama-3-Comfy/tree/main",
+      "snippet": "How to use t8star/Drama-3-Comfy with Docker Model Runner: ... Lemonade How to use t8star/Drama-3-Comfy with Lemonade: Pull the model ... Run and chat with the model ... List all available models lemonade list Atomic Chat main Drama-3-Comfy 46.8 GB Ctrl+K Ctrl+K 1 contributor History:6 commits t8star Document tested Transformers 4.57.1 ..."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "aiden-jeon/minipfn-tabpfn-v2-5-classifier",
+  "slug": "aiden-jeon-minipfn-tabpfn-v2-5-classifier",
+  "author": "aiden-jeon",
+  "url": "https://huggingface.co/aiden-jeon/minipfn-tabpfn-v2-5-classifier",
+  "created_at": "2026-11-08T01:12:26.000Z",
+  "updated_at": "2026-11-08T01:12:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "cell_transformer",
+    "tabpfn",
+    "prior-data-fitted-networks",
+    "in-context-learning",
+    "tabular-classification",
+    "arxiv:2511.08667",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14335306,
+  "parameters_human": "14.3M",
+  "storage_bytes": 344258077,
+  "storage_human": "344 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aiden-jeon/minipfn-tabpfn-v2-classifier · Hugging Face",
+      "url": "https://huggingface.co/aiden-jeon/minipfn-tabpfn-v2-classifier",
+      "snippet": "A from-scratch reimplementation of the TabPFN v2 classifier (Hollmann et al., Accurate predictions on small data with a tabular foundation model, Nature 637, 2025). The model and inference follow the paper's Methods, and the training data come from the open TabICL prior. Code: Aiden-Jeon/minipfn ..."
+    },
+    {
+      "title": "aiden-jeon/minipfn-tabpfn-v2-regressor · Hugging Face",
+      "url": "https://huggingface.co/aiden-jeon/minipfn-tabpfn-v2-regressor",
+      "snippet": "Instructions to use aiden-jeon/minipfn-tabpfn-v2-regressor with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries TabPFN How to use aiden-jeon/minipfn-tabpfn-v2-regressor with TabPFN:"
+    }
+  ]
+}

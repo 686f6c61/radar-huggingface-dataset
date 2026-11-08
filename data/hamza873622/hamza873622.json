@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "hamza873622/hamza873622",
+  "slug": "hamza873622-hamza873622",
+  "author": "hamza873622",
+  "url": "https://huggingface.co/hamza873622/hamza873622",
+  "created_at": "2026-11-07T21:14:16.000Z",
+  "updated_at": "2026-11-07T21:14:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "fill-mask",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hamza873622/zqgate10257 · Hugging Face",
+      "url": "https://huggingface.co/hamza873622/zqgate10257",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "hamza873622/zqgate10257b · Hugging Face",
+      "url": "https://huggingface.co/hamza873622/zqgate10257b",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

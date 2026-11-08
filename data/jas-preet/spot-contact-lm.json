@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Jas-preet/SPOT-Contact-LM",
+  "slug": "jas-preet-spot-contact-lm",
+  "author": "Jas-preet",
+  "url": "https://huggingface.co/Jas-preet/SPOT-Contact-LM",
+  "created_at": "2026-11-08T02:00:31.000Z",
+  "updated_at": "2026-11-08T02:01:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "biology",
+    "protein",
+    "protein-contact-prediction",
+    "protein-language-model",
+    "esm",
+    "bioinformatics",
+    "other",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 101467980,
+  "storage_human": "101 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jas-preet/SPOT-Contact-LM: The standalone version / cli-tool ...",
+      "url": "https://github.com/jas-preet/SPOT-Contact-LM",
+      "snippet": "SPOT-Contact-Single: Improving Single-Sequence-Based Prediction of Protein Contact Map using a Transformer Language Model. The standalone version / CLI-tool of SPOT-Contact-Single available for public use for research purposes."
+    },
+    {
+      "title": "SPOT-Contact-LM/README.md at main · jas-preet/SPOT-Contact-LM - GitHub",
+      "url": "https://github.com/jas-preet/SPOT-Contact-LM/blob/main/README.md",
+      "snippet": "The standalone version / cli-tool of SPOT-Contact-Single available for public use for research purposes. - jas-preet/SPOT-Contact-LM"
+    }
+  ]
+}

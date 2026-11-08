@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "sstoica12/acquisition_student_randomselfgen_combine_WGM_MP_glm_5000",
+  "slug": "sstoica12-acquisition_student_randomselfgen_combine_wgm_mp_glm_5000",
+  "author": "sstoica12",
+  "url": "https://huggingface.co/sstoica12/acquisition_student_randomselfgen_combine_WGM_MP_glm_5000",
+  "created_at": "2026-11-08T01:10:36.000Z",
+  "updated_at": "2026-11-08T01:12:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9399951360,
+  "parameters_human": "9.40B",
+  "storage_bytes": 18819921559,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "acquisition_student_randomselfgen_combine_WGM_MP_llama8b_conf_5000",
+      "url": "https://huggingface.co/sstoica12/acquisition_student_randomselfgen_combine_WGM_MP_llama8b_conf_5000",
+      "snippet": "Instructions to use sstoica12/acquisition_student_randomselfgen_combine_WGM_MP_llama8b_conf_5000 with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "acquisition_student_randomselfgen_combine_WGM_MP_llama8b_conf_5000",
+      "url": "https://friendli.ai/models/sstoica12/acquisition_student_randomselfgen_combine_WGM_MP_llama8b_conf_5000",
+      "snippet": "Deploy acquisition_student_randomselfgen_combine_WGM_MP_llama8b_conf_5000 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

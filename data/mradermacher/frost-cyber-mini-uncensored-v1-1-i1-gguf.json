@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Frost-Cyber-Mini-Uncensored-v1.1-i1-GGUF",
+  "slug": "mradermacher-frost-cyber-mini-uncensored-v1-1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Frost-Cyber-Mini-Uncensored-v1.1-i1-GGUF",
+  "created_at": "2026-11-08T00:26:45.000Z",
+  "updated_at": "2026-11-08T00:26:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1772280,
+  "parameters_human": "1.8M",
+  "storage_bytes": 7151808,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frost-Cyber-Mini-Uncensored-v1.1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Frost-Cyber-Mini-Uncensored-v1.1-GGUF",
+      "snippet": "mradermacher / Frost-Cyber-Mini-Uncensored-v1.1-GGUF Like 0 Transformers GGUF English cybersecurity uncensored abliterated spark2_5 lora-merged agentic tool-use conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "mradermacher/Frost-Cyber-Mini-Uncensored-v1.1-GGUF at main",
+      "url": "https://huggingface.co/mradermacher/Frost-Cyber-Mini-Uncensored-v1.1-GGUF/tree/main",
+      "snippet": "mradermacher / Frost-Cyber-Mini-Uncensored-v1.1-GGUF Like 0 Transformers GGUF English cybersecurity uncensored abliterated spark2_5 lora-merged agentic tool-use conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

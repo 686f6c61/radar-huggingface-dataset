@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "phelipescript/ddsd-ptbr-debertinha-sem-correcao",
+  "slug": "phelipescript-ddsd-ptbr-debertinha-sem-correcao",
+  "author": "phelipescript",
+  "url": "https://huggingface.co/phelipescript/ddsd-ptbr-debertinha-sem-correcao",
+  "created_at": "2026-11-07T19:59:39.000Z",
+  "updated_at": "2026-11-07T22:49:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "ddsd",
+    "device-directed-speech-detection",
+    "voice-assistant",
+    "brazilian-portuguese",
+    "control-model",
+    "pt",
+    "dataset:phelipescript/ddsd-ptbr-corpus",
+    "base_model:sagui-nlp/debertinha-ptbr-xsmall",
+    "base_model:finetune:sagui-nlp/debertinha-ptbr-xsmall",
+    "license:mit",
+    "text-embeddings-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 40944002,
+  "parameters_human": "40.9M",
+  "storage_bytes": 163800432,
+  "storage_human": "164 MB",
+  "base_model": "sagui-nlp/debertinha-ptbr-xsmall",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sagui-nlp/debertinha-ptbr-xsmall · Hugging Face",
+      "url": "https://huggingface.co/sagui-nlp/debertinha-ptbr-xsmall",
+      "snippet": "DeBERTinha XSmall (aka \"debertinha-ptbr-xsmall\") NOTE We have received feedback of people getting poor results on unbalanced datasets. A more robust training script, like scaling the loss and adding weight decay (1e-3 to 1e-5) seems to fix it. Please refer to this notebook to check how performance on unbalanced datasets can be improved. If you have any problems using the model, please contact ..."
+    },
+    {
+      "title": "GitHub - sagui-nlp/DeBERTinha",
+      "url": "https://github.com/sagui-nlp/DeBERTinha",
+      "snippet": "The model is fine-tuned using the replaced token detection task in the same format of DebertaV3 training. The adapted model, called DeBERTinha, demonstrates effectiveness on downstream tasks like named entity recognition, sentiment analysis, and determining sentence relatedness, outperforming BERTimbau-Large in two tasks despite having only 40M ..."
+    }
+  ]
+}

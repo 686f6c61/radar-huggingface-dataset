@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Dumi2025/log-anomaly-detection-bert-base-uncased",
+  "slug": "dumi2025-log-anomaly-detection-bert-base-uncased",
+  "author": "Dumi2025",
+  "url": "https://huggingface.co/Dumi2025/log-anomaly-detection-bert-base-uncased",
+  "created_at": "2026-11-08T02:56:19.000Z",
+  "updated_at": "2026-11-08T02:56:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "log-anomaly-detection",
+    "hdfs",
+    "text-classification",
+    "dataset:Prasasthy/trainforother",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437958624,
+  "storage_human": "438 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dumi2025/log-anomaly-detection-model · Hugging Face",
+      "url": "https://huggingface.co/Dumi2025/log-anomaly-detection-model",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dumi2025/log-anomaly-detection-model-new at main - Hugging Face",
+      "url": "https://huggingface.co/Dumi2025/log-anomaly-detection-model-new/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

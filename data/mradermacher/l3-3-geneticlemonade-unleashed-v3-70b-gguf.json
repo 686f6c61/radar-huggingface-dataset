@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "mradermacher/L3.3-GeneticLemonade-Unleashed-v3-70B-GGUF",
+  "slug": "mradermacher-l3-3-geneticlemonade-unleashed-v3-70b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/L3.3-GeneticLemonade-Unleashed-v3-70B-GGUF",
+  "created_at": "2025-05-19T03:53:59.000Z",
+  "updated_at": "2026-11-07T21:05:41.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:zerofata/Roleplay-Anime-Characters",
+    "base_model:zerofata/L3.3-GeneticLemonade-Unleashed-v3-70B",
+    "base_model:quantized:zerofata/L3.3-GeneticLemonade-Unleashed-v3-70B",
+    "license:llama3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 155,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481303036576,
+  "storage_human": "481.3 GB",
+  "base_model": "zerofata/L3.3-GeneticLemonade-Unleashed-v3-70B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L3.3-GeneticLemonade-Unleashed-v3-70B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/L3.3-GeneticLemonade-Unleashed-v3-70B-GGUF",
+      "snippet": "Model tree for mradermacher/L3.3-GeneticLemonade-Unleashed-v3-70B-GGUF Base model zerofata/L3.3-GeneticLemonade-Unleashed-70B Finetuned"
+    },
+    {
+      "title": "L3.3-GeneticLemonade-Unleashed-v3-70B-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/L3.3-GeneticLemonade-Unleashed-v3-70B-i1-GGUF",
+      "snippet": "static quants are available at https://huggingface.co/mradermacher/L3.3-GeneticLemonade-Unleashed-v3-70B-GGUF Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality."
+    }
+  ]
+}

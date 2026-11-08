@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "kenzhengjk/lingbot-va-lb43-s11750",
+  "slug": "kenzhengjk-lingbot-va-lb43-s11750",
+  "author": "kenzhengjk",
+  "url": "https://huggingface.co/kenzhengjk/lingbot-va-lb43-s11750",
+  "created_at": "2026-11-07T22:57:59.000Z",
+  "updated_at": "2026-11-08T02:53:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "robotics",
+    "robotwin",
+    "lingbot-va",
+    "dataset:robbyant/robotwin-clean-and-aug-lerobot",
+    "base_model:robbyant/lingbot-va-base",
+    "base_model:finetune:robbyant/lingbot-va-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5088872670,
+  "parameters_human": "5.09B",
+  "storage_bytes": 24379846456,
+  "storage_human": "24.4 GB",
+  "base_model": "robbyant/lingbot-va-base",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Robbyant/lingbot-va: [RSS 2026] Causal video-action world ...",
+      "url": "https://github.com/robbyant/lingbot-va",
+      "snippet": "Deploying LingBot-VA for Inference LingBot-VA supports both standalone execution and Server-Client architecture which separates the model environment from simulation. By isolating dependencies, the design avoids package clashes and supports distributed inference on GPUs, clusters, and other devices."
+    },
+    {
+      "title": "LingBot‑VA Video Action Model - Robbyant",
+      "url": "https://technology.robbyant.com/lingbot-va",
+      "snippet": "We introduce LingBot‑VA, an autoregressive framework that unifies video world modeling and policy learning, jointly learning future frame prediction and action execution. Our evaluations highlight clear promise in long‑horizon manipulation, data‑efficient post‑training, and robust generalization to novel configurations."
+    }
+  ]
+}

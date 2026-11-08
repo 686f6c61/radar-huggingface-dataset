@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "lmsolo/gpt-oss-20b-GGUF",
+  "slug": "lmsolo-gpt-oss-20b-gguf",
+  "author": "lmsolo",
+  "url": "https://huggingface.co/lmsolo/gpt-oss-20b-GGUF",
+  "created_at": "2026-11-07T20:44:37.000Z",
+  "updated_at": "2026-11-07T20:56:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gpt_oss",
+    "text-generation",
+    "vllm",
+    "arxiv:2508.10925",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 178958633280,
+  "storage_human": "179.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

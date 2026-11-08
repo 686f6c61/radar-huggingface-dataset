@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "EuricoGVP/Qwen3.5-9B_text2sql",
+  "slug": "euricogvp-qwen3-5-9b_text2sql-2",
+  "author": "EuricoGVP",
+  "url": "https://huggingface.co/EuricoGVP/Qwen3.5-9B_text2sql",
+  "created_at": "2026-11-01T22:45:42.000Z",
+  "updated_at": "2026-11-02T20:04:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-to-sql",
+    "sql",
+    "sqlite",
+    "qwen3.5",
+    "lora",
+    "unsloth",
+    "bird",
+    "spider",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:EuricoGVP/birdsql_complete_trainset",
+    "dataset:EuricoGVP/spider_sql_complete",
+    "dataset:seeklhy/SynSQL-2.5M",
+    "dataset:llmsql-bench/llmsql-benchmark",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 368,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18837952635,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text-to-SQL",
+      "dataset": "BIRD (dev)",
+      "metric": "EX (plain schema)",
+      "value": 57.17
+    },
+    {
+      "task": "Text-to-SQL",
+      "dataset": "BIRD (dev)",
+      "metric": "EX (schema + descriptions)",
+      "value": 59.32
+    },
+    {
+      "task": "Text-to-SQL",
+      "dataset": "Spider (dev)",
+      "metric": "EX",
+      "value": 82.01
+    }
+  ],
+  "sources": [
+    {
+      "title": "EuricoGVP/Qwen3.5-9b_text2sql · Hugging Face",
+      "url": "https://huggingface.co/EuricoGVP/Qwen3.5-9b_text2sql",
+      "snippet": "Text Generation model with 9B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "EuricoGVP/Qwen3.5-9b_text2sql at main - Hugging Face",
+      "url": "https://huggingface.co/EuricoGVP/Qwen3.5-9b_text2sql/tree/main",
+      "snippet": "EuricoGVP / Qwen3.5-9b_text2sql Like 0 Text Generation Transformers Safetensors 4 datasets English qwen3_5 image-text-to-text text-to-sql sql sqlite qwen3.5 lora unsloth bird spider conversational Eval Results (legacy) License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

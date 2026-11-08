@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "sinsankio/sinhalallm-1.7b-onnx-web",
+  "slug": "sinsankio-sinhalallm-1-7b-onnx-web",
+  "author": "sinsankio",
+  "url": "https://huggingface.co/sinsankio/sinhalallm-1.7b-onnx-web",
+  "created_at": "2026-11-08T04:00:33.000Z",
+  "updated_at": "2026-11-08T04:00:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "si"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "sinhala",
+    "webgpu",
+    "text-generation",
+    "si",
+    "base_model:namindu94/SinhalaLLM-1.7B",
+    "base_model:finetune:namindu94/SinhalaLLM-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "namindu94/SinhalaLLM-1.7B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Captainsl/SinhalaLLM · Hugging Face",
+      "url": "https://huggingface.co/Captainsl/SinhalaLLM",
+      "snippet": "This model is a SmolLM2-1.7B base model fine-tuned on Sinhala text (MADLAD_CulturaX_cleaned). Finetuning method: 4-bit LoRA finetuning via Unsloth + PEFT; final artifact merged into a standard HF model."
+    },
+    {
+      "title": "README.md · Captainsl/SinhalaLLM at main - Hugging Face",
+      "url": "https://huggingface.co/Captainsl/SinhalaLLM/blob/main/README.md",
+      "snippet": "This model represents an undergraduate research attempt to adapt SmolLM2-1.7B for Sinhala language generation. Part of thesis: \"Developing a Fluent Sinhala Language Model: Enhancing AI's Cultural and Linguistic Adaptability\" (NSBM Green University, 2025)."
+    }
+  ]
+}

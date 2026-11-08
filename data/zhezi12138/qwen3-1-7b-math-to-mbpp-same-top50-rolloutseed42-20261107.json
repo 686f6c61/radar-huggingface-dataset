@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "zhezi12138/Qwen3-1.7B-math-to-mbpp-same-top50-rolloutseed42-20261107",
+  "slug": "zhezi12138-qwen3-1-7b-math-to-mbpp-same-top50-rolloutseed42-20261107",
+  "author": "zhezi12138",
+  "url": "https://huggingface.co/zhezi12138/Qwen3-1.7B-math-to-mbpp-same-top50-rolloutseed42-20261107",
+  "created_at": "2026-11-08T01:43:32.000Z",
+  "updated_at": "2026-11-08T01:43:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3",
+    "reinforcement-learning",
+    "sparse-rl",
+    "megatron",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10326346650,
+  "storage_human": "10.3 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-1.7B-math-single-top50-rolloutseed52 - Hugging Face",
+      "url": "https://huggingface.co/zhezi12138/Qwen3-1.7B-math-single-top50-rolloutseed52",
+      "snippet": "zhezi12138 / Qwen3-1.7B-math-single-top50-rolloutseed52 Like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Qwen3-1.7B-mbpp-single-top50-rolloutseed52 - Hugging Face",
+      "url": "https://huggingface.co/zhezi12138/Qwen3-1.7B-mbpp-single-top50-rolloutseed52",
+      "snippet": "zhezi12138 / Qwen3-1.7B-mbpp-single-top50-rolloutseed52 Like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    }
+  ]
+}

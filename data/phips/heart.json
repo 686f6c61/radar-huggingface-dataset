@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Phips/HEART",
+  "slug": "phips-heart",
+  "author": "Phips",
+  "url": "https://huggingface.co/Phips/HEART",
+  "created_at": "2026-09-03T14:48:46.000Z",
+  "updated_at": "2026-11-07T22:18:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "super-resolution",
+    "image-restoration",
+    "image-to-image",
+    "sisr",
+    "real-world-restoration",
+    "tensorrt",
+    "spandrel",
+    "chainner",
+    "transformer",
+    "attention",
+    "en",
+    "dataset:Phips/lucid-cc0-v2-hc-512",
+    "arxiv:2205.04437",
+    "arxiv:2504.06629",
+    "arxiv:2603.06738",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 997124493,
+  "storage_human": "997 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HeartModel article - Philips",
+      "url": "https://www.usa.philips.com/healthcare/article/heartmodel-cardiac-ultrasound-simplified",
+      "snippet": "Learn about Philips HeartModel, an intelligent ultrasound software tool that delivers 3D images and critical cardiac measurements in seconds."
+    },
+    {
+      "title": "Phips/HEART at main - Hugging Face",
+      "url": "https://huggingface.co/Phips/HEART/tree/main",
+      "snippet": "Phips / HEART Like 5 Image-to-Image PyTorch ONNX TensorRT Phips/lucid-cc0-v2-hc-512 English super-resolution image-restoration sisr real-world-restoration spandrel chainner transformer attention arxiv:2205.04437 arxiv:2504.06629 arxiv:2603.06738 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

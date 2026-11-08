@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "MatterWaveAI/helmholtz-rnn-b0.7.0-20m",
+  "slug": "matterwaveai-helmholtz-rnn-b0-7-0-20m",
+  "author": "MatterWaveAI",
+  "url": "https://huggingface.co/MatterWaveAI/helmholtz-rnn-b0.7.0-20m",
+  "created_at": "2026-11-08T04:11:02.000Z",
+  "updated_at": "2026-11-08T04:11:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "rnn",
+    "gru",
+    "mingru",
+    "unitary-rnn",
+    "jepa",
+    "world-model",
+    "helmholtz-rnn-b0.7.0-20m",
+    "helmholtz-rnn-1",
+    "rotational-rnn",
+    "rotational-transformer",
+    "matterwave",
+    "text-generation",
+    "base_model:MatterWaveAI/helmholtz-jepa-b0.7.0-20m",
+    "base_model:finetune:MatterWaveAI/helmholtz-jepa-b0.7.0-20m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "MatterWaveAI/helmholtz-jepa-b0.7.0-20m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=matterwave",
+      "snippet": "MatterWaveAI/grt-30m-asr Automatic Speech Recognition • 33.4M•Updated 1 day ago• 83"
+    },
+    {
+      "title": "Helmholtz machine - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Helmholtz_machine",
+      "snippet": "The Helmholtz machine (named after Hermann von Helmholtz and his concept of Helmholtz free energy) is a type of artificial neural network that can account for the hidden structure of a set of data by being trained to create a generative model of the original data. [1][2] The hope is that by learning economical representations of the data, the underlying structure of the generative model should ..."
+    }
+  ]
+}

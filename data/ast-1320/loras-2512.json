@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "AST-1320/LoRAs-2512",
+  "slug": "ast-1320-loras-2512",
+  "author": "AST-1320",
+  "url": "https://huggingface.co/AST-1320/LoRAs-2512",
+  "created_at": "2026-11-08T01:02:19.000Z",
+  "updated_at": "2026-11-08T01:05:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 654586776,
+  "storage_human": "655 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-11-08T02:41:12.529Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AST-1320 (Amethyst) - Hugging Face",
+      "url": "https://huggingface.co/AST-1320",
+      "snippet": "User profile of Amethyst on Hugging Face QIE-2511 Rapid-AIO LoRAs Fast (Experimental)"
+    },
+    {
+      "title": "AST-1320 (Amethyst) - Hugging Face",
+      "url": "https://huggingface.co/AST-1320/datasets",
+      "snippet": "Recent Activity updated a Spaceabout 3 hours ago AST-1320/FLUX.2-Klein-Multi-LoRA updated a Spaceabout 4 hours ago AST-1320/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental-neo liked a Spaceabout 6 hours ago AST-1320/Qwen-Image-Edit-Rapid-AIO-Loras-Experimental-neo View all activity"
+    }
+  ]
+}

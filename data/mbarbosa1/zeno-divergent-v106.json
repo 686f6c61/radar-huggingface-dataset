@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mbarbosa1/zeno-divergent-v106",
+  "slug": "mbarbosa1-zeno-divergent-v106",
+  "author": "mbarbosa1",
+  "url": "https://huggingface.co/mbarbosa1/zeno-divergent-v106",
+  "created_at": "2026-11-08T02:05:26.000Z",
+  "updated_at": "2026-11-08T02:33:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "forecasting",
+    "surprise-intelligence",
+    "zeno",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15927753,
+  "parameters_human": "15.9M",
+  "storage_bytes": 63749164,
+  "storage_human": "64 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mbarbosa1/mbarbosa1 · Hugging Face",
+      "url": "https://huggingface.co/mbarbosa1/mbarbosa1",
+      "snippet": "Released model: zeno-divergent-v1 — v0.15.0 on main (reference-lane scope; read its release note before use). Research screen: v0.25 (branch v0.25-research) — a retrospective, per-question map of where learned methods helped, where simple ones prevailed, and where evidence was thin. In preparation: v0.26 — an anchored model testing whether a bounded, gated correction earns its place over ..."
+    },
+    {
+      "title": "mbarbosa1/zeno-divergent-v1 · Hugging Face",
+      "url": "https://huggingface.co/mbarbosa1/zeno-divergent-v1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

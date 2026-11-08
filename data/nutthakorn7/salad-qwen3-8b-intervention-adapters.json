@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "nutthakorn7/salad-qwen3-8b-intervention-adapters",
+  "slug": "nutthakorn7-salad-qwen3-8b-intervention-adapters",
+  "author": "nutthakorn7",
+  "url": "https://huggingface.co/nutthakorn7/salad-qwen3-8b-intervention-adapters",
+  "created_at": "2026-11-08T00:19:15.000Z",
+  "updated_at": "2026-11-08T00:47:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "dataset-audit",
+    "label-compliance",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4190518368,
+  "storage_human": "4.2 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "Text Generation model with 8B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen3-8B - SGLang Documentation",
+      "url": "https://docs.sglang.io/docs/hardware-platforms/ascend-npus/model-deployment/tutorials/qwen3_8b",
+      "snippet": "The model supports EAGLE3 speculative decoding for accelerated inference and is available in both standard and thinking/reasoning-enhanced editions. This document demonstrates the deployment of Qwen3-8B on Ascend NPUs using SGLang, including single-node PD mixed mode, feature configuration, and performance optimization."
+    }
+  ]
+}

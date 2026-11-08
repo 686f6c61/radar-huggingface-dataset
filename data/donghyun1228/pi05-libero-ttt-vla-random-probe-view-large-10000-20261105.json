@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-ttt-vla-random-probe-view-large-10000-20261105",
+  "slug": "donghyun1228-pi05-libero-ttt-vla-random-probe-view-large-10000-20261105",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-ttt-vla-random-probe-view-large-10000-20261105",
+  "created_at": "2026-11-08T02:18:03.000Z",
+  "updated_at": "2026-11-08T02:19:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi05",
+    "openpi",
+    "libero",
+    "ttt-vla",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13815744154,
+  "storage_human": "13.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pi05-libero-b200-full-probe-fixed-view-large-1000-20261013",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-b200-full-probe-fixed-view-large-1000-20261013",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Donghyun1228/pi05-libero-manual-expert-matched-view-large-1000-20261014 ...",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-manual-expert-matched-view-large-1000-20261014",
+      "snippet": "Condition-tuned manual expert comparator: view_large Raw non-EMA parameters after 1000 updates, with original normalization assets. Trainable vision23 and expert11 are FP32; native frozen17 and source wrist23 are BF16. LLM is manually frozen. The expert Adam proposal is multiplied by 0.1 for view_large or 10 for yaw30; vision proposals and native Adam moments are unchanged. This is a condition ..."
+    }
+  ]
+}

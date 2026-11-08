@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Malaysian-Qwen2-Audio-7B-Instruct-GGUF",
+  "slug": "mradermacher-malaysian-qwen2-audio-7b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Malaysian-Qwen2-Audio-7B-Instruct-GGUF",
+  "created_at": "2025-05-31T12:47:22.000Z",
+  "updated_at": "2026-11-08T01:30:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 7754878976,
+  "parameters_human": "7.75B",
+  "storage_bytes": 71688621184,
+  "storage_human": "71.7 GB",
+  "base_model": "malaysia-ai/Malaysian-Qwen2-Audio-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen2-Audio-7B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2-Audio-7B-Instruct-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Malaysian-Qwen2.5-7B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Malaysian-Qwen2.5-7B-Instruct-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    }
+  ]
+}

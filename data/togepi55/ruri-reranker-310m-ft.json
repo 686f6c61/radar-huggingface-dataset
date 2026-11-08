@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "togepi55/ruri-reranker-310m-ft",
+  "slug": "togepi55-ruri-reranker-310m-ft",
+  "author": "togepi55",
+  "url": "https://huggingface.co/togepi55/ruri-reranker-310m-ft",
+  "created_at": "2026-11-08T00:28:47.000Z",
+  "updated_at": "2026-11-08T00:39:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "cross-encoder",
+    "reranker",
+    "generated_from_trainer",
+    "dataset_size:37994",
+    "loss:BinaryCrossEntropyLoss",
+    "text-ranking",
+    "ja",
+    "base_model:cl-nagoya/ruri-v3-reranker-310m",
+    "base_model:finetune:cl-nagoya/ruri-v3-reranker-310m",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 315203329,
+  "parameters_human": "315.2M",
+  "storage_bytes": 1260829436,
+  "storage_human": "1.3 GB",
+  "base_model": "cl-nagoya/ruri-v3-reranker-310m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cl-nagoya/ruri-v3-reranker-310m · Hugging Face",
+      "url": "https://huggingface.co/cl-nagoya/ruri-v3-reranker-310m",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for cl-nagoya/ruri-v3-reranker-310m – Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Afinetune%3Acl-nagoya%2Fruri-v3-reranker-310m",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

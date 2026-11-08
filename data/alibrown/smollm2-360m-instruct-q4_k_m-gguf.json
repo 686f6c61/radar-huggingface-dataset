@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Alibrown/SmolLM2-360M-Instruct-Q4_K_M-GGUF",
+  "slug": "alibrown-smollm2-360m-instruct-q4_k_m-gguf",
+  "author": "Alibrown",
+  "url": "https://huggingface.co/Alibrown/SmolLM2-360M-Instruct-Q4_K_M-GGUF",
+  "created_at": "2026-11-08T00:04:49.000Z",
+  "updated_at": "2026-11-08T00:04:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 275578679,
+  "storage_human": "276 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SmolLM2-360M-Instruct-Q4_K_M-GGUF - Hugging Face",
+      "url": "https://huggingface.co/asynclee/SmolLM2-360M-Instruct-Q4_K_M-GGUF",
+      "snippet": "This model was converted to GGUF format from HuggingFaceTB/SmolLM2-360M-Instruct using llama.cpp via the ggml.ai's GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM2-360M-Instruct · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct",
+      "snippet": "Text Generation model with 0.4B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

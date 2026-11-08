@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "MarkL02/whisper-base-it-r1-onnx-int8",
+  "slug": "markl02-whisper-base-it-r1-onnx-int8",
+  "author": "MarkL02",
+  "url": "https://huggingface.co/MarkL02/whisper-base-it-r1-onnx-int8",
+  "created_at": "2026-11-07T23:33:24.000Z",
+  "updated_at": "2026-11-07T23:33:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "italian",
+    "offline",
+    "it",
+    "dataset:espnet/yodas",
+    "base_model:LocalAI-io/whisper-base-it-multi",
+    "base_model:quantized:LocalAI-io/whisper-base-it-multi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76898126,
+  "storage_human": "77 MB",
+  "base_model": "LocalAI-io/whisper-base-it-multi",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx/encoder_model_int8.onnx · square-zero-labs/whisper-base at main",
+      "url": "https://huggingface.co/square-zero-labs/whisper-base/blob/main/onnx/encoder_model_int8.onnx",
+      "snippet": "Duplicated from square-zero-labs / whisper-base Like 0 Automatic Speech Recognition Transformers.js ONNX whisper Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "openai/whisper-base · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-base",
+      "snippet": "Automatic Speech Recognition model with 72.6M parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "CompressedGemma",
   "url": "https://huggingface.co/CompressedGemma/Qwen-3.8-27B-Thinkingcap-Q2_Q3",
   "created_at": "2026-11-05T03:32:12.000Z",
-  "updated_at": "2026-11-05T03:49:54.000Z",
+  "updated_at": "2026-11-07T20:22:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 10920830688,
-  "storage_human": "10.9 GB",
+  "storage_bytes": 21841661376,
+  "storage_human": "21.8 GB",
   "base_model": null,
   "formats": [
     "gguf"

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "necropopeost/S5-nano-oQ5e",
+  "slug": "necropopeost-s5-nano-oq5e",
+  "author": "necropopeost",
+  "url": "https://huggingface.co/necropopeost/S5-nano-oQ5e",
+  "created_at": "2026-11-08T02:18:23.000Z",
+  "updated_at": "2026-11-08T02:37:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "vision",
+    "multimodal",
+    "maritaca",
+    "s5-nano",
+    "oq5e",
+    "apple-silicon",
+    "pt",
+    "en",
+    "base_model:maritaca-ai/S5-nano",
+    "base_model:quantized:maritaca-ai/S5-nano",
+    "license:apache-2.0",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 3676805945,
+  "storage_human": "3.7 GB",
+  "base_model": "maritaca-ai/S5-nano",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "necropopeost (necropope ost) - Hugging Face",
+      "url": "https://huggingface.co/necropopeost",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "necropopeost (necropope ost) - Hugging Face",
+      "url": "https://huggingface.co/necropopeost/models",
+      "snippet": "User profile of necropope ost on Hugging Face"
+    }
+  ]
+}

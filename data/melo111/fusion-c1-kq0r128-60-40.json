@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Melo111/Fusion-C1-KQ0r128-60-40",
+  "slug": "melo111-fusion-c1-kq0r128-60-40",
+  "author": "Melo111",
+  "url": "https://huggingface.co/Melo111/Fusion-C1-KQ0r128-60-40",
+  "created_at": "2026-11-08T03:47:36.000Z",
+  "updated_at": "2026-11-08T03:48:58.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Melo111 (Ruilin Yao) - Hugging Face",
+      "url": "https://huggingface.co/Melo111/models",
+      "snippet": "User profile of Ruilin Yao on Hugging Face"
+    }
+  ]
+}

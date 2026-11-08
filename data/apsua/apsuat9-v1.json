@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "apsua/ApsuaT9-v1",
+  "slug": "apsua-apsuat9-v1",
+  "author": "apsua",
+  "url": "https://huggingface.co/apsua/ApsuaT9-v1",
+  "created_at": "2026-11-07T21:18:11.000Z",
+  "updated_at": "2026-11-07T21:18:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "apsua-t9",
+  "languages": [
+    "ab",
+    "ru",
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "apsua-t9",
+    "onnx",
+    "word-completion",
+    "abkhaz",
+    "russian",
+    "english",
+    "turkish",
+    "int8",
+    "ab",
+    "ru",
+    "en",
+    "tr",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15521566,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "apsua (ApsuaTech) - Hugging Face",
+      "url": "https://huggingface.co/apsua/datasets",
+      "snippet": "User profile of ApsuaTech on Hugging Face"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=apsua-translator",
+      "snippet": "Models 2 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: apsua-translator Clear all"
+    }
+  ]
+}

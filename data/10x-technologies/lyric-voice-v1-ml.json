@@ -5,7 +5,7 @@
   "author": "10X-Technologies",
   "url": "https://huggingface.co/10X-Technologies/lyric-voice-v1-ml",
   "created_at": "2026-11-06T12:46:04.000Z",
-  "updated_at": "2026-11-06T19:16:16.000Z",
+  "updated_at": "2026-11-07T20:27:50.000Z",
   "license": "lyric-community-license",
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",

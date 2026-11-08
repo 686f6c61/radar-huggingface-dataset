@@ -5,7 +5,7 @@
   "author": "DICPlay",
   "url": "https://huggingface.co/DICPlay/RusMind-Zernyshko-1.10-GGUF",
   "created_at": "2026-11-04T17:04:04.000Z",
-  "updated_at": "2026-11-04T17:53:48.000Z",
+  "updated_at": "2026-11-07T23:34:13.000Z",
   "license": "rusmind-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,12 +29,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 82,
+  "downloads_30d": 110,
   "trending_score": 0,
   "parameters": 83083008,
   "parameters_human": "83.1M",
-  "storage_bytes": 167146112,
-  "storage_human": "167 MB",
+  "storage_bytes": 256417024,
+  "storage_human": "256 MB",
   "base_model": null,
   "formats": [
     "gguf"

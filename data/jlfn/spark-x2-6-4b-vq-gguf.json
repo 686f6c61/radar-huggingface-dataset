@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jlfn/spark-x2.6-4b-vq-gguf",
+  "slug": "jlfn-spark-x2-6-4b-vq-gguf",
+  "author": "Jlfn",
+  "url": "https://huggingface.co/Jlfn/spark-x2.6-4b-vq-gguf",
+  "created_at": "2026-11-07T09:54:45.000Z",
+  "updated_at": "2026-11-07T23:13:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "spark2_5",
+    "spark",
+    "vector-quantization",
+    "vq",
+    "two-stage",
+    "rqvq",
+    "gvr8",
+    "e4m3",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 335544320,
+  "parameters_human": "335.5M",
+  "storage_bytes": 4647717504,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iiinnnn88/Spark-X2.6-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/iiinnnn88/Spark-X2.6-4B-GGUF",
+      "snippet": "Spark-X2.6-4B delivers inference efficiency on par with or better than comparable on-device models, including Qwen3.5-4B and Gemma-E4B. It combines this efficiency with stronger capabilities, making it a practical choice for responsive, resource-conscious on-device AI."
+    },
+    {
+      "title": "GitHub - XHToken/Spark-X2.6: Spark-x2.6 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.6",
+      "snippet": "Spark-X2.6-4B & 1.7B: Advancing the Frontier of On-Device Agents for Real-World Tasks Welcome to the GitHub repository of Spark-X2.6 open model series. You can find official information about Spark-X2.6, and post your questions here (Issues)."
+    }
+  ]
+}

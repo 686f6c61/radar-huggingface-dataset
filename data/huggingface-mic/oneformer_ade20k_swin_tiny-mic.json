@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/oneformer_ade20k_swin_tiny-mic",
+  "slug": "huggingface-mic-oneformer_ade20k_swin_tiny-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/oneformer_ade20k_swin_tiny-mic",
+  "created_at": "2026-11-07T23:25:21.000Z",
+  "updated_at": "2026-11-07T23:30:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "oneformer",
+    "mic",
+    "test-artifact",
+    "base_model:shi-labs/oneformer_ade20k_swin_tiny",
+    "base_model:finetune:shi-labs/oneformer_ade20k_swin_tiny",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7922332,
+  "parameters_human": "7.9M",
+  "storage_bytes": 31720908,
+  "storage_human": "32 MB",
+  "base_model": "shi-labs/oneformer_ade20k_swin_tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shi-labs/oneformer_ade20k_swin_tiny · Hugging Face",
+      "url": "https://huggingface.co/shi-labs/oneformer_ade20k_swin_tiny",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zeromodels/oneformer_ade20k_swin_tiny · Hugging Face",
+      "url": "https://huggingface.co/zeromodels/oneformer_ade20k_swin_tiny",
+      "snippet": "zeromodels/oneformer_ade20k_swin_tiny Paper: OneFormer: One Transformer to Rule Universal Image Segmentation (arXiv:2211.06220) · HF Papers OneFormer trains one model on semantic, instance, and panoptic segmentation jointly, conditioned on a text token that names the task."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-ttt-vla-random-probe-view-medium-10000-20261105",
+  "slug": "donghyun1228-pi05-libero-ttt-vla-random-probe-view-medium-10000-20261105",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-ttt-vla-random-probe-view-medium-10000-20261105",
+  "created_at": "2026-11-08T02:16:21.000Z",
+  "updated_at": "2026-11-08T02:17:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi05",
+    "openpi",
+    "libero",
+    "ttt-vla",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13815744154,
+  "storage_human": "13.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "100+ \"Craig Baldwin\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/craig/baldwin",
+      "snippet": "View the profiles of professionals named \"Craig Baldwin\" on LinkedIn. There are 100+ professionals named \"Craig Baldwin\", who use …"
+    },
+    {
+      "title": "pi05-libero-b200-idm-lora01-view-medium-1000-20261012",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-b200-idm-lora01-view-medium-1000-20261012",
+      "snippet": "π₀.₅ source-fresh IDM-only: view_medium / lora01 Completed 1,000 updates from the Panda IL+shared-decoder-IDM source. This stores raw step999 weights, with the original source wrist encoder and normalization assets. Target-only contact-probe observations; no source images, paired cache, demonstration/rollout training, task-success training feedback, KD, dynamic update controller, or ..."
+    },
+    {
+      "title": "Donghyun1228/pi05-libero-reachable-probe-lora01-view-large-n300000-1000 ...",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-reachable-probe-lora01-view-large-n300000-1000-20261014",
+      "snippet": "Reachable random-probe data replacement: view_large Target-only IDM adaptation, 300,000 selected frames, 1,000 updates, B32, seed42. Historical source initialization, normalization and original source wrist encoder are preserved. LLM frozen; full vision updates; action expert lora01, post-Adam multiplier 0.1."
+    },
+    {
+      "title": "30+ \"Craig Baldwin\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Craig/Baldwin/gb-0-United-Kingdom",
+      "snippet": "View the profiles of professionals named \"Craig Baldwin\" on LinkedIn. There are 30+ professionals named \"Craig Baldwin\", who use …"
+    }
+  ]
+}

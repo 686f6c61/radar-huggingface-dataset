@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "togepi55/Qwen3.5-0.8B-it",
+  "slug": "togepi55-qwen3-5-0-8b-it",
+  "author": "togepi55",
+  "url": "https://huggingface.co/togepi55/Qwen3.5-0.8B-it",
+  "created_at": "2026-11-08T03:44:06.000Z",
+  "updated_at": "2026-11-08T03:48:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "ja",
+    "dataset:cl-nagoya/auto-wiki-qa",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1524822624,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-0.8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+      "snippet": "Image-Text-to-Text model with 0.9B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    }
+  ]
+}

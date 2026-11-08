@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "SoldaLabs/parakeet-tdt-0.6b-v3-onnx-int8-mm",
+  "slug": "soldalabs-parakeet-tdt-0-6b-v3-onnx-int8-mm",
+  "author": "SoldaLabs",
+  "url": "https://huggingface.co/SoldaLabs/parakeet-tdt-0.6b-v3-onnx-int8-mm",
+  "created_at": "2026-11-08T00:51:27.000Z",
+  "updated_at": "2026-11-08T00:51:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nasedkinpv/parakeet-tdt-0.6b-v3-onnx-int8 · Hugging Face",
+      "url": "https://huggingface.co/nasedkinpv/parakeet-tdt-0.6b-v3-onnx-int8",
+      "snippet": "Parakeet TDT 0.6B v3 - ONNX INT8 ONNX INT8-quantized version of NVIDIA's Parakeet TDT 0.6B v3 for browser inference. Attribution This model is a converted version of nvidia/parakeet-tdt-0.6b-v3 by NVIDIA. Original Model: NVIDIA Parakeet TDT 0.6B v3 Original License: CC-BY-4.0 Modifications: Converted from NeMo to ONNX format, quantized to INT8 Usage Optimized for ONNX Runtime Web with WASM ..."
+    },
+    {
+      "title": "nvidia/parakeet-tdt-0.6b-v3 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
+      "snippet": "🦜 parakeet-tdt-0.6b-v3: Multilingual Speech-to-Text Model | | Description: parakeet-tdt-0.6b-v3 is a 600-million-parameter multilingual automatic speech recognition (ASR) model designed for high-throughput speech-to-text transcription. It extends the parakeet-tdt-0.6b-v2 model by expanding language support from English to 25 European languages. The model automatically detects the language ..."
+    }
+  ]
+}

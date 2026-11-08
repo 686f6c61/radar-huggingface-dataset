@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "SKOPION-Intelligence/skopion-verdict-4b-v22.0-horizon-nano-ternary-1.58b",
+  "slug": "skopion-intelligence-skopion-verdict-4b-v22-0-horizon-nano-ternary-1-58b",
+  "author": "SKOPION-Intelligence",
+  "url": "https://huggingface.co/SKOPION-Intelligence/skopion-verdict-4b-v22.0-horizon-nano-ternary-1.58b",
+  "created_at": "2026-11-08T02:23:03.000Z",
+  "updated_at": "2026-11-08T02:23:03.000Z",
+  "license": "skopion-sovereign-kritis-audit-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "skopion",
+    "skopion-verdict",
+    "v22-absolute-horizon",
+    "formal-verification",
+    "tla-plus",
+    "coq",
+    "lean4",
+    "zkml",
+    "zk-stark",
+    "llm-as-a-judge",
+    "reward-model",
+    "kritis",
+    "nato-stanag",
+    "nis2",
+    "dora",
+    "eu-ai-act",
+    "post-quantum-cryptography",
+    "conformal-prediction",
+    "text-classification",
+    "en",
+    "de",
+    "pl",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Strict-148 External Decision, Formal Proving, zkML & PQC Benchmark Matrix (150 Suites / 44,340 evaluations)",
+      "dataset": "SKOPION-Verdict-Bench-150Suites",
+      "metric": "Strict-148 External Mean Accuracy (%)",
+      "value": 99.37
+    },
+    {
+      "task": "Strict-148 External Decision, Formal Proving, zkML & PQC Benchmark Matrix (150 Suites / 44,340 evaluations)",
+      "dataset": "SKOPION-Verdict-Bench-150Suites",
+      "metric": "Wave-21 TLA+/Coq/Lean-4 Formal Proving, Wave-22 EZKL/RISC Zero zkML & Wave-23 FIPS 203/204 PQC (%)",
+      "value": 100
+    }
+  ],
+  "sources": [
+    {
+      "title": "SKOPION-Intelligence/skopion-verdict-4b-v20.0-singularity-nano-ternary ...",
+      "url": "https://huggingface.co/SKOPION-Intelligence/skopion-verdict-4b-v20.0-singularity-nano-ternary-1.58b",
+      "snippet": "SKOPION Intelligence 1 Text Classification Transformers English German Polish skopion skopion-verdict v20-singularity causal-inference llm-as-a-judge reward-model kritis nato-stanag nis2 eu-ai-act post-quantum-cryptography conformal-prediction Eval Results (legacy) License:skopion-sovereign-kritis-audit-license-v1.0 Model card FilesFiles and ..."
+    },
+    {
+      "title": "SKOPION Verdict — Sovereign Decision AI & EU R&D Programme | SKOPION",
+      "url": "https://skopion.de/en/research-innovation/skopion-verdict-ai-research-program",
+      "snippet": "SKOPION Verdict is the dedicated artificial intelligence research and development programme of SKOPION Intelligence. Rather than relying on unconstrained free-text generators, SKOPION designs, calibrates and evaluates typed decision and evidence models (4B, 9B, 27B and multi-stage cascades) that structure defensive security findings, bind judgements to explicit visual and textual sections ..."
+    }
+  ]
+}

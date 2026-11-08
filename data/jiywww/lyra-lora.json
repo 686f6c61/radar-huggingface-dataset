@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "jiywww/lyra-lora",
+  "slug": "jiywww-lyra-lora",
+  "author": "jiywww",
+  "url": "https://huggingface.co/jiywww/lyra-lora",
+  "created_at": "2026-11-07T22:25:58.000Z",
+  "updated_at": "2026-11-07T22:26:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Gthalmie1/moody-porn-mix-v10-dpo-gguf",
+    "base_model:adapter:Gthalmie1/moody-porn-mix-v10-dpo-gguf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85390888,
+  "storage_human": "85 MB",
+  "base_model": "Gthalmie1/moody-porn-mix-v10-dpo-gguf",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lyra.ai",
+      "url": "https://www.lyra.ai/",
+      "snippet": "Lyra.ai is a platform offering AI-driven solutions for various industries, enhancing efficiency and innovation."
+    }
+  ]
+}

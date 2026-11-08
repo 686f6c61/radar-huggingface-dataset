@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "chienhsinlin/helioslm-guard-e4b",
+  "slug": "chienhsinlin-helioslm-guard-e4b",
+  "author": "chienhsinlin",
+  "url": "https://huggingface.co/chienhsinlin/helioslm-guard-e4b",
+  "created_at": "2026-11-06T16:14:51.000Z",
+  "updated_at": "2026-11-08T03:21:40.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "gemma4",
+    "safety",
+    "content-moderation",
+    "traditional-chinese",
+    "taiwan",
+    "text-classification",
+    "zh",
+    "en",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:quantized:google/gemma-4-E4B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 13506126264,
+  "storage_human": "13.5 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chienhsinlin/helioslm-chat-e4b · Hugging Face",
+      "url": "https://huggingface.co/chienhsinlin/helioslm-chat-e4b",
+      "snippet": "Text Generation model with 8B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "chienhsinlin/helioslm · Hugging Face",
+      "url": "https://huggingface.co/chienhsinlin/helioslm",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

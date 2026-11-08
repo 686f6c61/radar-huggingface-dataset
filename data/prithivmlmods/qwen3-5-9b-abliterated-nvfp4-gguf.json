@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/Qwen3.5-9B-abliterated-NVFP4-GGUF",
+  "slug": "prithivmlmods-qwen3-5-9b-abliterated-nvfp4-gguf",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/Qwen3.5-9B-abliterated-NVFP4-GGUF",
+  "created_at": "2026-11-07T19:42:37.000Z",
+  "updated_at": "2026-11-08T04:11:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "llama-cpp",
+    "abliterated",
+    "nvfp4",
+    "nvidia",
+    "llama-cli",
+    "nvidia-blackwell",
+    "rtx-pro-6000",
+    "SM120",
+    "GB202",
+    "B200",
+    "B300",
+    "FP4",
+    "blackwell",
+    "qwen3_5",
+    "Qwen3.5",
+    "Qwen3.6",
+    "Qwen3.8",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803392,
+  "parameters_human": "8.95B",
+  "storage_bytes": 10299658176,
+  "storage_human": "10.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-9B-abliterated-v2-MAX-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/Qwen3.5-9B-abliterated-v2-MAX-NVFP4",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "prithivMLmods/Qwen3.5-9B-abliterated-v2-MAX · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/Qwen3.5-9B-abliterated-v2-MAX",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

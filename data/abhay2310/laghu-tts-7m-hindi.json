@@ -5,7 +5,7 @@
   "author": "Abhay2310",
   "url": "https://huggingface.co/Abhay2310/laghu-tts-7m-hindi",
   "created_at": "2026-11-07T10:57:19.000Z",
-  "updated_at": "2026-11-07T11:16:40.000Z",
+  "updated_at": "2026-11-07T12:13:06.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -44,8 +44,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 72347960,
-  "storage_human": "72 MB",
+  "storage_bytes": 75977239,
+  "storage_human": "76 MB",
   "base_model": "kyutai/pocket-tts",
   "formats": [
     "onnx"

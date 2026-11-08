@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jackmaxwil/DeepSeek-V4.1-Flash-REAP-50",
+  "slug": "jackmaxwil-deepseek-v4-1-flash-reap-50",
+  "author": "jackmaxwil",
+  "url": "https://huggingface.co/jackmaxwil/DeepSeek-V4.1-Flash-REAP-50",
+  "created_at": "2026-11-08T00:44:30.000Z",
+  "updated_at": "2026-11-08T00:51:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "reap",
+    "expert-pruning",
+    "moe",
+    "arxiv:2510.13999",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 491375079634,
+  "parameters_human": "491.38B",
+  "storage_bytes": 365824132399,
+  "storage_human": "365.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "snippet": "Image-Text-to-Text model with 763B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "OmniCompass-VL; Overall Cross-Specification Consistency Score on a 0-100 scale, higher is better. 64 video frames with per-frame timestamps; paired Text and Text+Image; temporal grounding, spatial grounding and question answering. API15 evaluation of DeepSeek-V4.1-Flash-1017 on 820 videos and 4,920 requests, completed on November 5, 2026. 4,892 successful responses are scored; 28 terminal ..."
+    }
+  ]
+}

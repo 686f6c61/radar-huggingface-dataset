@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "arcasdynamicsorg/Persephone-27b",
+  "slug": "arcasdynamicsorg-persephone-27b",
+  "author": "arcasdynamicsorg",
+  "url": "https://huggingface.co/arcasdynamicsorg/Persephone-27b",
+  "created_at": "2026-11-08T04:08:59.000Z",
+  "updated_at": "2026-11-08T04:10:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "research",
+    "biology",
+    "coding",
+    "arcas-dynamics",
+    "reasoning",
+    "persephone",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

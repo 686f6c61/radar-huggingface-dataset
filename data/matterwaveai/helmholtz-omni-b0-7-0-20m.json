@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "MatterWaveAI/helmholtz-omni-b0.7.0-20m",
+  "slug": "matterwaveai-helmholtz-omni-b0-7-0-20m",
+  "author": "MatterWaveAI",
+  "url": "https://huggingface.co/MatterWaveAI/helmholtz-omni-b0.7.0-20m",
+  "created_at": "2026-11-08T03:54:51.000Z",
+  "updated_at": "2026-11-08T04:11:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "jepa",
+    "world-model",
+    "platonic-representation",
+    "helmholtz-omni-b0.7.0-20m",
+    "helmholtz-1-omni",
+    "multimodal",
+    "vision-language",
+    "audio-text-to-text",
+    "text-to-speech",
+    "rotational-transformer",
+    "matterwave",
+    "any-to-any",
+    "base_model:MatterWaveAI/helmholtz-jepa-b0.7.0-20m",
+    "base_model:finetune:MatterWaveAI/helmholtz-jepa-b0.7.0-20m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "MatterWaveAI/helmholtz-jepa-b0.7.0-20m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MatterWaveAI/helmholtz-1-omni · Hugging Face",
+      "url": "https://huggingface.co/MatterWaveAI/helmholtz-1-omni",
+      "snippet": "MatterWaveAI / helmholtz-1-omni Like 0 Follow MatterWaveAI 1 Any-to-Any Transformers jepa world-model platonic-representation helmholtz-1 helmholtz-1-omni s1-grt-jepa multimodal vision-language audio-text-to-text text-to-speech rotational-transformer matterwave arxiv:2610.39302 License:apache-2.0 Model card FilesFiles and versions xet Community ..."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?other=matterwave",
+      "snippet": "MatterWaveAI/grt-30m-asr Automatic Speech Recognition • 33.4M•Updated 1 day ago• 83"
+    }
+  ]
+}

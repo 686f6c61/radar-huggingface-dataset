@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Letian2003/ClinSeek-35B-A3B-armS-singlepass-ep2",
+  "slug": "letian2003-clinseek-35b-a3b-arms-singlepass-ep2",
+  "author": "Letian2003",
+  "url": "https://huggingface.co/Letian2003/ClinSeek-35B-A3B-armS-singlepass-ep2",
+  "created_at": "2026-11-07T23:34:22.000Z",
+  "updated_at": "2026-11-07T23:38:09.000Z",
+  "license": "physionet-credentialed-derivative",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "clinical",
+    "ehr",
+    "agent",
+    "tool-calling",
+    "sft",
+    "text-generation",
+    "conversational",
+    "en",
+    "arxiv:2605.20176",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916685998,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ClinSeek-35B-A3B: Open Agentic Clinical LLM",
+      "url": "https://www.emergentmind.com/topics/clinseek-35b-a3b",
+      "snippet": "ClinSeek-35B-A3B is an open-source 35B parameter LLM designed for automated, agentic clinical reasoning that leverages EHR data and multiple medical tools. It utilizes supervised fine-tuning on high-quality, tool-augmented reasoning trajectories, improving SQL-based querying for efficient clinical evidence retrieval. The model achieves near state-of-the-art performance, reaching 94.4% of its ..."
+    },
+    {
+      "title": "UCSC-VLAA/ClinSeek-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/UCSC-VLAA/ClinSeek-35B-A3B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

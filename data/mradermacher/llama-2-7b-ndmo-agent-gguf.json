@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/llama-2-7b-NDMO-agent-GGUF",
+  "slug": "mradermacher-llama-2-7b-ndmo-agent-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/llama-2-7b-NDMO-agent-GGUF",
+  "created_at": "2025-02-25T01:55:45.000Z",
+  "updated_at": "2026-11-08T03:44:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "legal",
+    "en",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 135,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 59564799104,
+  "storage_human": "59.6 GB",
+  "base_model": "IJyad/llama-2-7b-NDMO-agent",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheBloke/Llama-2-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/Llama-2-7B-GGUF",
+      "snippet": "Llama 2 7B - GGUF Model creator: Meta Original model: Llama 2 7B Description This repo contains GGUF format model files for Meta's Llama 2 7B. About GGUF GGUF is a new format introduced by the llama.cpp team on August 21st 2023. It is a replacement for GGML, which is no longer supported by llama.cpp."
+    },
+    {
+      "title": "TheBloke/Llama-2-7B-Chat-GGUF · Hugging Face",
+      "url": "https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF",
+      "snippet": "Description This repo contains GGUF format model files for Meta Llama 2's Llama 2 7B Chat. About GGUF GGUF is a new format introduced by the llama.cpp team on August 21st 2023. It is a replacement for GGML, which is no longer supported by llama.cpp. GGUF offers numerous advantages over GGML, such as better tokenisation, and support for special ..."
+    }
+  ]
+}

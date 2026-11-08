@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mtg-kernel/archon-3-pauper",
+  "slug": "mtg-kernel-archon-3-pauper",
+  "author": "mtg-kernel",
+  "url": "https://huggingface.co/mtg-kernel/archon-3-pauper",
+  "created_at": "2026-11-08T04:04:49.000Z",
+  "updated_at": "2026-11-08T04:06:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "game-ai",
+    "magic-the-gathering",
+    "mtg-kernel",
+    "spellbench",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25676403,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run Pauper-llama3-8B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/nmalinowski/pauper-llama3-8b",
+      "snippet": "Pauper Llama 3 8B: Specialized MTG Pauper AI This model, developed by nmalinowski, is a fine-tuned version of Meta-Llama-3-8B-Instruct specifically designed for Magic: The Gathering's Pauper format. Utilizing LoRA (Low-Rank Adaptation) fine-tuning, it has been optimized to provide in-depth knowledge and generate relevant content about Pauper."
+    },
+    {
+      "title": "AI Pauper Deck Builder for Magic: The Gathering | Tutor",
+      "url": "https://tutorman.dev/deck-builder/pauper",
+      "snippet": "Budget-friendly by design: a 60-card Pauper deck made entirely of commons, with a sideboard. Free AI Pauper deck builder."
+    }
+  ]
+}

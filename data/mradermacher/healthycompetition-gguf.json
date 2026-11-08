@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/HealthyCompetition-GGUF",
+  "slug": "mradermacher-healthycompetition-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/HealthyCompetition-GGUF",
+  "created_at": "2025-03-01T01:11:16.000Z",
+  "updated_at": "2026-11-08T02:36:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Karako64/HealthyCompetition",
+    "base_model:quantized:Karako64/HealthyCompetition",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 163037184,
+  "parameters_human": "163.0M",
+  "storage_bytes": 1588318016,
+  "storage_human": "1.6 GB",
+  "base_model": "Karako64/HealthyCompetition",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/HealthyCompetition-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/HealthyCompetition-i1-GGUF",
+      "snippet": "mradermacher / HealthyCompetition-i1-GGUF like 0 Transformers GGUF English imatrix Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/HealthyCompetition-i1-GGUF - MyGGUF",
+      "url": "https://mygguf.com/model?id=mradermacher%2FHealthyCompetition-i1-GGUF",
+      "snippet": "GGUF model details base_model: Karako64/HealthyCompetition language: en library_name: transformers quantized_by: mradermacher"
+    }
+  ]
+}

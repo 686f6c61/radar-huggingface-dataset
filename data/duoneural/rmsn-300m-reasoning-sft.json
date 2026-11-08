@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/RMSN-300M-Reasoning-SFT",
+  "slug": "duoneural-rmsn-300m-reasoning-sft",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/RMSN-300M-Reasoning-SFT",
+  "created_at": "2026-11-08T03:03:58.000Z",
+  "updated_at": "2026-11-08T03:04:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "rmsn",
+    "pytorch",
+    "physics-informed",
+    "port-hamiltonian",
+    "metriplectic-mechanics",
+    "lyapunov-stability",
+    "sheaf-theory",
+    "language-modeling",
+    "reasoning",
+    "instruction-tuned",
+    "math",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 351033012,
+  "parameters_human": "351.0M",
+  "storage_bytes": 2607223827,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "General Intuition Set to Raise $300M, Valued at $2B for AI Training ...",
+      "url": "https://www.androguider.com/2026/06/general-intuition-set-to-raise-300m.html",
+      "snippet": "TL;DR General Intuition is reportedly in talks to raise about $300 million, which would value the startup at just over $2 billion. The company is building foundation models for spatial-temporal reasoning and says Medal’s massive gaming-video dataset is central to training its AI agents. If completed, the new round would give General Intuition fresh capital to expand compute and prepare a new ..."
+    },
+    {
+      "title": "DuoNeural - Independent AI Research Lab",
+      "url": "https://duoneural.com/",
+      "snippet": "DuoNeural is an independent AI research lab publishing mechanistic interpretability, RLHF suppression, recurrent world-modeling, CTM, open models, and open datasets."
+    }
+  ]
+}

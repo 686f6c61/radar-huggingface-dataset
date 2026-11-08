@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "CS230-lol/kev-4b-jigsaw-toxicity",
+  "slug": "cs230-lol-kev-4b-jigsaw-toxicity",
+  "author": "CS230-lol",
+  "url": "https://huggingface.co/CS230-lol/kev-4b-jigsaw-toxicity",
+  "created_at": "2026-11-08T01:40:44.000Z",
+  "updated_at": "2026-11-08T01:40:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "kev",
+    "decision-model",
+    "typesafe",
+    "system-one",
+    "calibration",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-4B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155162714,
+  "storage_human": "155 MB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CS230-lol/JigsawToxicity at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/CS230-lol/JigsawToxicity/tree/main",
+      "snippet": "Datasets: CS230-lol / JigsawToxicity Like 0 Follow CS230 Toxicity Detection 4 Tasks: Text Classification Modalities: Tabular Text Sub-tasks: multi-label-classification Languages: English Size: 1M - 10M ArXiv: arxiv:1903.04561 Tags: toxicity moderation civil-comments conversation threads License: cc0-1.0 Dataset card Data Studio FilesFiles and versions xet Community main JigsawToxicity 3.77 GB ..."
+    }
+  ]
+}

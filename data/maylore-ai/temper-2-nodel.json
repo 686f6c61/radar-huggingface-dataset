@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "maylore-ai/Temper-2-Nodel",
+  "slug": "maylore-ai-temper-2-nodel",
+  "author": "maylore-ai",
+  "url": "https://huggingface.co/maylore-ai/Temper-2-Nodel",
+  "created_at": "2026-11-07T20:35:26.000Z",
+  "updated_at": "2026-11-07T20:52:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "rust",
+    "code",
+    "qwen3_5",
+    "conversational",
+    "en",
+    "ru",
+    "arxiv:2107.03374",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8431548435,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for maylore-ai/Temper-2-Ion – Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aquantized%3Amaylore-ai%2FTemper-2-Ion",
+      "snippet": "1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: maylore-ai/Temper-2-Ion Clear all"
+    },
+    {
+      "title": "maylore-ai (Maylore) - Hugging Face",
+      "url": "https://huggingface.co/maylore-ai",
+      "snippet": "Maylore Maylore develops compact language models specialized in narrow tasks that run on most consumer PCs and laptops. The Temper models write Rust and run locally in LM Studio, Ollama or llama.cpp."
+    }
+  ]
+}

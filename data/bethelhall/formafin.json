@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "bethelhall/formafin",
+  "slug": "bethelhall-formafin",
+  "author": "bethelhall",
+  "url": "https://huggingface.co/bethelhall/formafin",
+  "created_at": "2026-11-07T20:52:34.000Z",
+  "updated_at": "2026-11-07T20:55:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "finance",
+    "loan-covenants",
+    "smt",
+    "z3",
+    "autoformalization",
+    "grpo",
+    "lora",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 819087852,
+  "storage_human": "819 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bethel Hall",
+      "url": "https://bethelhall.tech/",
+      "snippet": "My research explores neurosymbolic approaches to AI safety, combining formal methods with LLMs to uncover exploitable gaps, verify model outputs, and guide targeted repairs. I am interested in how these techniques can strengthen safety during pre-training and post-training, as well as through post-hoc verification."
+    },
+    {
+      "title": "Bethel Hall - AI Verification Research Resume",
+      "url": "https://bethelhall.tech/data/resume_bethel.pdf",
+      "snippet": "SUMMARY Ph.D. researcher building trustworthy AI systems through LLM evaluation, formal verification, and neurosymbolic reasoning. Designs evaluation benchmarks and solver-in-the-loop LLM pipelines across finance, healthcare, and cloud security, with prior experience in safety-constrained model training."
+    }
+  ]
+}

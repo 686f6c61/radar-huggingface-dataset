@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bartowski/wesjos_Spark-x2.6-4B-HTML-GGUF",
+  "slug": "bartowski-wesjos_spark-x2-6-4b-html-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/wesjos_Spark-x2.6-4B-HTML-GGUF",
+  "created_at": "2026-11-07T21:54:25.000Z",
+  "updated_at": "2026-11-07T22:00:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "sparkx2_5",
+    "html-generation",
+    "web-design",
+    "visual-ui",
+    "reasoning",
+    "sft",
+    "text-generation",
+    "en",
+    "zh",
+    "dataset:wesjos/mario-html-sft",
+    "base_model:wesjos/Spark-x2.6-4B-HTML",
+    "base_model:quantized:wesjos/Spark-x2.6-4B-HTML",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 62600079232,
+  "storage_human": "62.6 GB",
+  "base_model": "wesjos/Spark-x2.6-4B-HTML",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/Spark-X2.6-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Spark-X2.6-4B-GGUF",
+      "snippet": "The corpus rendered for this model is included in this repo: Spark-X2.6-4B-calibration-v6.txt. The imatrix is available here: Spark-X2.6-4B-imatrix.gguf. Calibration render details"
+    },
+    {
+      "title": "bartowski/Spark-X2.6-4B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/bartowski/Spark-X2.6-4B-GGUF/tree/main/layouts",
+      "snippet": "Instructions to use bartowski/Spark-X2.6-4B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use bartowski/Spark-X2.6-4B-GGUF with llama.cpp: Install (macOS, Linux)"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Mannaxx/zhoomerx-smart",
+  "slug": "mannaxx-zhoomerx-smart",
+  "author": "Mannaxx",
+  "url": "https://huggingface.co/Mannaxx/zhoomerx-smart",
+  "created_at": "2026-11-08T00:46:15.000Z",
+  "updated_at": "2026-11-08T00:46:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "chat",
+    "text-generation",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-14B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 108764964448,
+  "storage_human": "108.8 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Open-R1-Video-7B-GGUF",
+  "slug": "mradermacher-open-r1-video-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Open-R1-Video-7B-GGUF",
+  "created_at": "2025-02-23T20:09:11.000Z",
+  "updated_at": "2026-11-08T03:44:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:Xiaodong/open-r1-video-4k",
+    "base_model:Xiaodong/Open-R1-Video-7B",
+    "base_model:quantized:Xiaodong/Open-R1-Video-7B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 662,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 69499512832,
+  "storage_human": "69.5 GB",
+  "base_model": "Xiaodong/Open-R1-Video-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Open-R1-Video-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Open-R1-Video-7B-GGUF",
+      "snippet": "Feel free to request them by opening a Community Discussion. Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/Video-R1-7B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Video-R1-7B-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    }
+  ]
+}

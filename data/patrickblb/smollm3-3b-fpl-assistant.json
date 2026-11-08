@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "PatrickBLB/smollm3-3b-fpl-assistant",
+  "slug": "patrickblb-smollm3-3b-fpl-assistant",
+  "author": "PatrickBLB",
+  "url": "https://huggingface.co/PatrickBLB/smollm3-3b-fpl-assistant",
+  "created_at": "2026-10-31T20:22:28.000Z",
+  "updated_at": "2026-11-07T20:53:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "fantasy-premier-league",
+    "tool-calling",
+    "agent",
+    "distillation",
+    "lora",
+    "mlx",
+    "text-to-query",
+    "text-generation",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:adapter:HuggingFaceTB/SmolLM3-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120969107,
+  "storage_human": "121 MB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PatrickBLB/smollm3-3b-fpl-query · Hugging Face",
+      "url": "https://huggingface.co/PatrickBLB/smollm3-3b-fpl-query",
+      "snippet": "Instructions to use PatrickBLB/smollm3-3b-fpl-query with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use PatrickBLB/smollm3-3b-fpl-query with MLX:"
+    },
+    {
+      "title": "PatrickBLB/smollm3-3b-fpl-query at main - Hugging Face",
+      "url": "https://huggingface.co/PatrickBLB/smollm3-3b-fpl-query/tree/main",
+      "snippet": "Instructions to use PatrickBLB/smollm3-3b-fpl-query with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use PatrickBLB/smollm3-3b-fpl-query with MLX:"
+    }
+  ]
+}

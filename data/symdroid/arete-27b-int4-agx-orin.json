@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "symdroid/Arete-27B-INT4-AGX-Orin",
+  "slug": "symdroid-arete-27b-int4-agx-orin",
+  "author": "symdroid",
+  "url": "https://huggingface.co/symdroid/Arete-27B-INT4-AGX-Orin",
+  "created_at": "2026-11-08T00:51:08.000Z",
+  "updated_at": "2026-11-08T01:10:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "quantization",
+    "int4",
+    "compressed-tensors",
+    "marlin",
+    "jetson",
+    "jetson-agx-orin",
+    "vllm",
+    "mtp",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:NousResearch/Arete-27B",
+    "base_model:quantized:NousResearch/Arete-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6260690960,
+  "parameters_human": "6.26B",
+  "storage_bytes": 19472770563,
+  "storage_human": "19.5 GB",
+  "base_model": "NousResearch/Arete-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arete 27B - VRAM Requirements, Specs & Benchmarks",
+      "url": "https://apxml.com/models/arete-27b",
+      "snippet": "Arete 27B specifications, context length, benchmark scores, and GPU VRAM requirements across quantizations."
+    }
+  ]
+}

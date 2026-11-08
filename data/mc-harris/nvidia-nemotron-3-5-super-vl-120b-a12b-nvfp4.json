@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mc-harris/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
+  "slug": "mc-harris-nvidia-nemotron-3-5-super-vl-120b-a12b-nvfp4",
+  "author": "mc-harris",
+  "url": "https://huggingface.co/mc-harris/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
+  "created_at": "2026-11-07T22:58:21.000Z",
+  "updated_at": "2026-11-07T22:58:22.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h_omni",
+    "image-text-to-text",
+    "nvidia",
+    "pytorch",
+    "nemotron-3.5",
+    "conversational",
+    "custom_code",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt_mixed",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 65769840138,
+  "parameters_human": "65.77B",
+  "storage_bytes": 75048799178,
+  "storage_human": "75.0 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4",
+      "snippet": "GDP.pdf [offline] 6.6 (AA 6.6) 6.0 Terminal Bench 4 [offline] 1 1.5 DeepSWE [offline] 24.65 18.2 The evaluations between the BF16 checkpoint and NVFP4 checkpoint are done with all configs, harnesses, and other non-model parameters held static to ensure fair comparison that isolates the checkpoint ..."
+    },
+    {
+      "title": "nemotron-3.5-super-vl-120b-a12b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-super-vl-120b-a12b/modelcard",
+      "snippet": "Description NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4 is the quantized release of NVIDIA Nemotron 3.5 Super VL, a vision-language model for reasoning, coding, tool use, document understanding, and video understanding. It uses NVFP4 quantization to reduce memory requirements, with quantization-aware distillation from the BF16 model."
+    }
+  ]
+}

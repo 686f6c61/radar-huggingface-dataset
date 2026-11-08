@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "vcruz305/Qwen3.8-27B-SAGE-REXL3-3.64bpw",
+  "slug": "vcruz305-qwen3-8-27b-sage-rexl3-3-64bpw",
+  "author": "vcruz305",
+  "url": "https://huggingface.co/vcruz305/Qwen3.8-27B-SAGE-REXL3-3.64bpw",
+  "created_at": "2026-11-08T02:20:16.000Z",
+  "updated_at": "2026-11-08T02:20:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7341210624,
+  "parameters_human": "7.34B",
+  "storage_bytes": 14695491948,
+  "storage_human": "14.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zhangyuwu/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/zhangyuwu/Qwen3.8-27B",
+      "snippet": "Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to ..."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba's Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "cbmusetti/reward-model-english_and_spanish_with_ties",
+  "slug": "cbmusetti-reward-model-english_and_spanish_with_ties",
+  "author": "cbmusetti",
+  "url": "https://huggingface.co/cbmusetti/reward-model-english_and_spanish_with_ties",
+  "created_at": "2026-10-23T04:11:15.000Z",
+  "updated_at": "2026-11-08T02:39:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "reward-model",
+    "humor",
+    "pairwise-preference",
+    "thesis",
+    "en",
+    "es",
+    "base_model:google-bert/bert-base-multilingual-cased",
+    "base_model:finetune:google-bert/bert-base-multilingual-cased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6513063954,
+  "storage_human": "6.5 GB",
+  "base_model": "google-bert/bert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reward model english_and_spanish_without_ties - Hugging Face",
+      "url": "https://huggingface.co/cbmusetti/reward-model-english_and_spanish_without_ties",
+      "snippet": "Reward model english_and_spanish_without_ties A pairwise reward model for jokes: given a news item and two candidate jokes, it scores each so that the one humans preferred gets the higher reward. Trained for a thesis on humour generation with reinforcement learning; code and experiment logs live in the thesis repository under reward-model/."
+    },
+    {
+      "title": "cbmusetti (Carlos Musetti) - Hugging Face",
+      "url": "https://huggingface.co/cbmusetti",
+      "snippet": "cbmusetti/reward-model-english_and_spanish_without_ties Updated about 2 hours ago"
+    }
+  ]
+}

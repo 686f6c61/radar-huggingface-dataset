@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "MatterWaveAI/helmholtz-rnn-1",
+  "slug": "matterwaveai-helmholtz-rnn-1",
+  "author": "MatterWaveAI",
+  "url": "https://huggingface.co/MatterWaveAI/helmholtz-rnn-1",
+  "created_at": "2026-11-08T04:10:58.000Z",
+  "updated_at": "2026-11-08T04:10:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "rnn",
+    "gru",
+    "mingru",
+    "unitary-rnn",
+    "jepa",
+    "world-model",
+    "helmholtz-rnn-1",
+    "helmholtz-1",
+    "rotational-rnn",
+    "rotational-transformer",
+    "matterwave",
+    "text-generation",
+    "base_model:MatterWaveAI/helmholtz-1",
+    "base_model:finetune:MatterWaveAI/helmholtz-1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "MatterWaveAI/helmholtz-1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MatterWaveAI/helmholtz-mamba-1 · Hugging Face",
+      "url": "https://huggingface.co/MatterWaveAI/helmholtz-mamba-1",
+      "snippet": "HELMHOLTZ-Mamba-1 is a Purely Rotational Selective State-Space Model (Rotational-SSM), Collapse-Free JEPA World Model & O (1) Constant-Memory Trajectory Judge (S1-GRT-Mamba) (0 dense linear matrices, 01D/2D convolutional layers)."
+    },
+    {
+      "title": "Daily Papers - Hugging Face",
+      "url": "https://huggingface.co/papers?q=elastodynamic+equation",
+      "snippet": "The Helmholtz equation governs time-harmonic wave propagation, and in dissipative media a complex modulus renders its squared wavenumber κ^2 complex. Inferring such fields from sparse, noisy data calls for solvers that also quantify their own uncertainty. Physics-informed Gaussian-process (GP) regression supplies this by returning a posterior over the solution, yet operator-conditioned ..."
+    }
+  ]
+}

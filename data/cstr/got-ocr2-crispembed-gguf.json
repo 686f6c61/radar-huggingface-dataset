@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "cstr/got-ocr2-crispembed-GGUF",
+  "slug": "cstr-got-ocr2-crispembed-gguf",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/got-ocr2-crispembed-GGUF",
+  "created_at": "2026-06-13T12:40:19.000Z",
+  "updated_at": "2026-11-07T21:37:38.000Z",
+  "license": "tongyi-qianwen-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "crispembed",
+  "languages": [],
+  "tags": [
+    "crispembed",
+    "gguf",
+    "ocr",
+    "got-ocr2",
+    "research-only",
+    "base_model:stepfun-ai/GOT-OCR2_0",
+    "base_model:quantized:stepfun-ai/GOT-OCR2_0",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 889,
+  "trending_score": 0,
+  "parameters": 560528640,
+  "parameters_human": "560.5M",
+  "storage_bytes": 7743216256,
+  "storage_human": "7.7 GB",
+  "base_model": "stepfun-ai/GOT-OCR2_0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cstr/got-ocr2-crispembed-GGUF · Hugging Face",
+      "url": "https://huggingface.co/cstr/got-ocr2-crispembed-GGUF",
+      "snippet": "GGUF conversion of stepfun-ai/GOT-OCR2_0 for use with CrispEmbed ..."
+    },
+    {
+      "title": "README.md · cstr/got-ocr2-crispembed-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/cstr/got-ocr2-crispembed-GGUF/blob/main/README.md",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

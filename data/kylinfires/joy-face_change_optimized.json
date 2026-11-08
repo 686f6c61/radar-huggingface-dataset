@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "kylinfires/Joy-face_change_optimized",
+  "slug": "kylinfires-joy-face_change_optimized",
+  "author": "kylinfires",
+  "url": "https://huggingface.co/kylinfires/Joy-face_change_optimized",
+  "created_at": "2026-11-08T01:34:53.000Z",
+  "updated_at": "2026-11-08T02:00:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22852597,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kylinfires (Joy) - Hugging Face",
+      "url": "https://huggingface.co/kylinfires",
+      "snippet": "Explore a 13‑view 3DGS model gallery interactively. kylinfires. about 9 hours ago. models 0. None public yet. datasets 0"
+    }
+  ]
+}

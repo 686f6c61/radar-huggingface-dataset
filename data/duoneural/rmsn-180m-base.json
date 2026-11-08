@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/RMSN-180M-Base",
+  "slug": "duoneural-rmsn-180m-base",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/RMSN-180M-Base",
+  "created_at": "2026-11-08T03:04:56.000Z",
+  "updated_at": "2026-11-08T03:05:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "rmsn",
+    "pytorch",
+    "physics-informed",
+    "port-hamiltonian",
+    "metriplectic-mechanics",
+    "lyapunov-stability",
+    "sheaf-theory",
+    "language-modeling",
+    "180M",
+    "percolation-threshold",
+    "critical-casimir",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 220655088,
+  "parameters_human": "220.7M",
+  "storage_bytes": 1576660075,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DuoNeural - Independent AI Research Lab",
+      "url": "https://duoneural.com/",
+      "snippet": "DuoNeural is an independent AI research lab publishing mechanistic interpretability, RLHF suppression, recurrent world-modeling, CTM, open models, and open datasets."
+    },
+    {
+      "title": "DuoNeural (DuoNeural) - Hugging Face",
+      "url": "https://huggingface.co/DuoNeural",
+      "snippet": "All of them. Seriously. Bleeding edge research (Novel research paper preprints on Zenodo via our website) Unorthodox methodologies. The gold standard of AI-Human Collaboration and what's possible."
+    }
+  ]
+}

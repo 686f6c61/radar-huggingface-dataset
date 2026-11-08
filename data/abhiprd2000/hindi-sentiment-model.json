@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "abhiprd2000/hindi-sentiment-model",
+  "slug": "abhiprd2000-hindi-sentiment-model",
+  "author": "abhiprd2000",
+  "url": "https://huggingface.co/abhiprd2000/hindi-sentiment-model",
+  "created_at": "2026-03-12T12:39:49.000Z",
+  "updated_at": "2026-11-08T01:46:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "sentiment-analysis",
+    "text-classification",
+    "hindi",
+    "devanagari",
+    "indic-nlp",
+    "cross-lingual-transfer",
+    "hi",
+    "en",
+    "dataset:iam-tsr/hindi-sentiments",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 278045955,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1128989546,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abhiprd2000/hindi-sentiment-model · Hugging Face",
+      "url": "https://huggingface.co/abhiprd2000/hindi-sentiment-model",
+      "snippet": "Fine-tuned XLM-RoBERTa model for 3-class sentiment analysis on Hindi text in Devanagari script, trained as part of a cross-lingual transfer study across English, Hindi, Maithili, and Bhojpuri."
+    },
+    {
+      "title": "abhiprd2000 (Abhimanyu Prasad) - Hugging Face",
+      "url": "https://huggingface.co/abhiprd2000",
+      "snippet": "abhiprd2000/hindi-sentiment-model Text Classification • 0.3B • Updated Mar 13 • 15"
+    }
+  ]
+}

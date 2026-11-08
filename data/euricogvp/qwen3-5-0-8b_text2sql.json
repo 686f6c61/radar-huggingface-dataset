@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "EuricoGVP/Qwen3.5-0.8B_text2sql",
+  "slug": "euricogvp-qwen3-5-0-8b_text2sql",
+  "author": "EuricoGVP",
+  "url": "https://huggingface.co/EuricoGVP/Qwen3.5-0.8B_text2sql",
+  "created_at": "2026-11-04T02:32:38.000Z",
+  "updated_at": "2026-11-08T00:14:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-to-sql",
+    "sql",
+    "sqlite",
+    "qwen3.5",
+    "lora",
+    "unsloth",
+    "bird",
+    "spider",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:EuricoGVP/birdsql_complete_trainset",
+    "dataset:EuricoGVP/spider_sql_complete",
+    "dataset:seeklhy/SynSQL-2.5M",
+    "dataset:llmsql-bench/llmsql-benchmark",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1724260771,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text-to-SQL",
+      "dataset": "BIRD (dev)",
+      "metric": "EX (plain schema)",
+      "value": 37.48
+    },
+    {
+      "task": "Text-to-SQL",
+      "dataset": "BIRD (dev)",
+      "metric": "EX (schema + descriptions)",
+      "value": 38.2
+    },
+    {
+      "task": "Text-to-SQL",
+      "dataset": "Spider (dev)",
+      "metric": "EX",
+      "value": 69.73
+    }
+  ],
+  "sources": [
+    {
+      "title": "EuricoGVP/Qwen3.5-9b_text2sql · Hugging Face",
+      "url": "https://huggingface.co/EuricoGVP/Qwen3.5-9b_text2sql",
+      "snippet": "Text Generation model with 9B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen/Qwen3.5-0.8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+      "snippet": "Image-Text-to-Text model with 0.9B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

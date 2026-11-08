@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MatterWaveAI/helmholtz-mamba-1",
+  "slug": "matterwaveai-helmholtz-mamba-1",
+  "author": "MatterWaveAI",
+  "url": "https://huggingface.co/MatterWaveAI/helmholtz-mamba-1",
+  "created_at": "2026-11-08T02:34:04.000Z",
+  "updated_at": "2026-11-08T02:34:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "mamba",
+    "state-space-model",
+    "ssm",
+    "jepa",
+    "world-model",
+    "helmholtz-mamba-1",
+    "helmholtz-1",
+    "rotational-ssm",
+    "rotational-transformer",
+    "matterwave",
+    "text-generation",
+    "base_model:MatterWaveAI/helmholtz-1",
+    "base_model:finetune:MatterWaveAI/helmholtz-1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "MatterWaveAI/helmholtz-1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is a Mamba model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/what-is-a-mamba-model/",
+      "snippet": "The Mamba Block The Mamba Block is the core building unit of the Mamba architecture, similar to how the attention block is the core unit in Transformers. It combines the Selective State Space Model (S6) with a gating mechanism to process long sequences efficiently while preserving important context. Mamba Block 1."
+    },
+    {
+      "title": "What is a Mamba model? - IBM",
+      "url": "https://www.ibm.com/think/topics/mamba-model",
+      "snippet": "Mamba is a neural network architecture derived from state space models (SSMs), used for language modeling and other sequence modeling tasks. Mamba-based LLMs rival the performance of transformers at greater efficiency."
+    }
+  ]
+}

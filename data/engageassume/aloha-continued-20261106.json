@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "engageassume/aloha-continued-20261106",
+  "slug": "engageassume-aloha-continued-20261106",
+  "author": "engageassume",
+  "url": "https://huggingface.co/engageassume/aloha-continued-20261106",
+  "created_at": "2026-11-06T11:56:36.000Z",
+  "updated_at": "2026-11-08T00:37:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24881603863,
+  "storage_human": "24.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "engageassume/aloha · Hugging Face",
+      "url": "https://huggingface.co/engageassume/aloha",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "engageassume (enagage) - Hugging Face",
+      "url": "https://huggingface.co/engageassume",
+      "snippet": "User profile of enagage on Hugging Face"
+    }
+  ]
+}

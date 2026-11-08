@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "SEVUNX/omnikrea2",
+  "slug": "sevunx-omnikrea2",
+  "author": "SEVUNX",
+  "url": "https://huggingface.co/SEVUNX/omnikrea2",
+  "created_at": "2026-09-29T15:12:04.000Z",
+  "updated_at": "2026-11-08T03:36:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 120,
+  "trending_score": 0,
+  "parameters": 12820073036,
+  "parameters_human": "12.82B",
+  "storage_bytes": 122671391600,
+  "storage_human": "122.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SEVUNX (anonymoooo) - Hugging Face",
+      "url": "https://huggingface.co/SEVUNX",
+      "snippet": "User profile of anonymoooo on Hugging Face"
+    },
+    {
+      "title": "SEVUNX Creator Profile | Civitai",
+      "url": "https://civitai.com/user/SEVUNX",
+      "snippet": "SEVUNX on Civitai: 259 images and 15 AI models, followed by 508 people. Download or generate online."
+    }
+  ]
+}

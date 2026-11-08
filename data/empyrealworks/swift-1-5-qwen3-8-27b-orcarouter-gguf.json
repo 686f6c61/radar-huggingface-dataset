@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "empyrealworks/Swift-1.5-Qwen3.8-27B-OrcaRouter-GGUF",
+  "slug": "empyrealworks-swift-1-5-qwen3-8-27b-orcarouter-gguf",
+  "author": "empyrealworks",
+  "url": "https://huggingface.co/empyrealworks/Swift-1.5-Qwen3.8-27B-OrcaRouter-GGUF",
+  "created_at": "2026-11-07T23:37:48.000Z",
+  "updated_at": "2026-11-07T23:38:09.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_8",
+    "swift",
+    "dflash2",
+    "uncensored",
+    "gufo",
+    "base_model:ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-Dynamic-MTP-GGUF",
+    "base_model:quantized:ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-Dynamic-MTP-GGUF",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 16326997376,
+  "storage_human": "16.3 GB",
+  "base_model": "ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-Dynamic-MTP-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ukisai/Swift-1.5-Qwen3.8-27b-INT4 · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b-INT4",
+      "snippet": "The external results below compare Qwen3.8-27B, the foundation base model, and Swift 1.5. Both models use the same saved evaluation protocols, and all scores are reported as final aggregate percentages."
+    },
+    {
+      "title": "UkisAI / Swift 1.5 Qwen3.8-27B",
+      "url": "https://ukisai.com/swift-1-5-27b",
+      "snippet": "The results below compare Qwen3.8-27B, the foundation base model, Swift 1.0, the first UkisAI adaptation, and Swift 1.5. All three use the same saved evaluation protocols, and every score is a final five-repeat aggregate."
+    }
+  ]
+}

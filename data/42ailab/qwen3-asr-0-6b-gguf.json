@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "42ailab/Qwen3-ASR-0.6B-GGUF",
+  "slug": "42ailab-qwen3-asr-0-6b-gguf",
+  "author": "42ailab",
+  "url": "https://huggingface.co/42ailab/Qwen3-ASR-0.6B-GGUF",
+  "created_at": "2026-11-08T02:22:30.000Z",
+  "updated_at": "2026-11-08T02:25:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "automatic-speech-recognition",
+    "42model",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 1019141728,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-0.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    },
+    {
+      "title": "Qwen/Qwen3-ASR-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-ASR-0.6B",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-0.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the ..."
+    }
+  ]
+}

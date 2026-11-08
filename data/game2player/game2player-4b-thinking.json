@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "game2player/Game2Player-4B-Thinking",
+  "slug": "game2player-game2player-4b-thinking",
+  "author": "game2player",
+  "url": "https://huggingface.co/game2player/Game2Player-4B-Thinking",
+  "created_at": "2026-11-08T00:05:44.000Z",
+  "updated_at": "2026-11-08T01:43:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "game2player",
+    "sft",
+    "thinking",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 10370007861,
+  "storage_human": "10.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Game2Player-4B - Hugging Face",
+      "url": "https://huggingface.co/game2player/Game2Player-4B",
+      "snippet": "Image-Text-to-Text model with 5B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "GitHub - game2player/Game2Player: Scaling Gameplay Experience for ...",
+      "url": "https://github.com/game2player/Game2Player",
+      "snippet": "Pass --thinking to a rollout to choose another. The released models have ready-to-use profiles: game2player-4b and game2player-9b. Both use the Qwen action format and allow 512 output tokens with --thinking off or 32,768 with --thinking on. See the PlayerBench instructions to run them locally or through an existing model server."
+    }
+  ]
+}

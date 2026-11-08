@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/jais-family-13b-chat-i1-GGUF",
+  "slug": "mradermacher-jais-family-13b-chat-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/jais-family-13b-chat-i1-GGUF",
+  "created_at": "2025-03-06T02:25:41.000Z",
+  "updated_at": "2026-11-07T21:05:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "Arabic",
+    "English",
+    "LLM",
+    "Decoder",
+    "causal-lm",
+    "jais-family",
+    "ar",
+    "en",
+    "base_model:inception42/jais-family-13b-chat",
+    "base_model:quantized:inception42/jais-family-13b-chat",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 1049,
+  "trending_score": 0,
+  "parameters": 13462730240,
+  "parameters_human": "13.46B",
+  "storage_bytes": 165180864768,
+  "storage_human": "165.2 GB",
+  "base_model": "inception42/jais-family-13b-chat",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/jais-family-13b-chat-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/jais-family-13b-chat-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/jais-family-13b-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/jais-family-13b-i1-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

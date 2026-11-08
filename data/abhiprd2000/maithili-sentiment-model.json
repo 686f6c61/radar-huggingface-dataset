@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "abhiprd2000/maithili-sentiment-model",
+  "slug": "abhiprd2000-maithili-sentiment-model",
+  "author": "abhiprd2000",
+  "url": "https://huggingface.co/abhiprd2000/maithili-sentiment-model",
+  "created_at": "2026-03-13T13:54:45.000Z",
+  "updated_at": "2026-11-08T01:46:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "mai",
+    "en",
+    "bh"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "maithili",
+    "sentiment-analysis",
+    "text-classification",
+    "low-resource-nlp",
+    "indic-nlp",
+    "cross-lingual-transfer",
+    "devanagari",
+    "bihari-languages",
+    "mai",
+    "en",
+    "bh",
+    "dataset:abhiprd2000/Maithili_Sentiment_8K",
+    "base_model:cardiffnlp/twitter-xlm-roberta-base-sentiment",
+    "base_model:finetune:cardiffnlp/twitter-xlm-roberta-base-sentiment",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 278045955,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1128989546,
+  "storage_human": "1.1 GB",
+  "base_model": "cardiffnlp/twitter-xlm-roberta-base-sentiment",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Analysis",
+      "dataset": "Maithili Sentiment Dataset",
+      "metric": null,
+      "value": 0.8244
+    },
+    {
+      "task": "Sentiment Analysis",
+      "dataset": "Maithili Sentiment Dataset",
+      "metric": null,
+      "value": 0.8246
+    }
+  ],
+  "sources": [
+    {
+      "title": "abhiprd2000/maithili-sentiment-model · Hugging Face",
+      "url": "https://huggingface.co/abhiprd2000/maithili-sentiment-model",
+      "snippet": "📌 Model Description Maithili Sentiment Model is a fine-tuned version of cardiffnlp/twitter-xlm-roberta-base-sentiment trained on the Maithili Sentiment Dataset by Abhimanyu Prasad. Maithili (मैथिली) is spoken by approximately 34 million people across the Mithila region of Bihar, India and the Terai region of Nepal."
+    },
+    {
+      "title": "abhiprd2000 (Abhimanyu Prasad) - Hugging Face",
+      "url": "https://huggingface.co/abhiprd2000",
+      "snippet": "abhiprd2000/maithili-sentiment-model Text Classification • 0.3B • Updated Mar 13 • 5 • 1"
+    }
+  ]
+}

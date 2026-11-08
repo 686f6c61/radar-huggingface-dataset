@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Gtfddgy7hh/realistic-vision-5.1-s25-npu",
+  "slug": "gtfddgy7hh-realistic-vision-5-1-s25-npu",
+  "author": "Gtfddgy7hh",
+  "url": "https://huggingface.co/Gtfddgy7hh/realistic-vision-5.1-s25-npu",
+  "created_at": "2026-11-08T00:23:28.000Z",
+  "updated_at": "2026-11-08T00:39:04.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "stable-diffusion",
+    "qualcomm",
+    "qnn",
+    "snapdragon",
+    "on-device",
+    "base_model:SG161222/Realistic_Vision_V5.1_noVAE",
+    "base_model:quantized:SG161222/Realistic_Vision_V5.1_noVAE",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2090499174,
+  "storage_human": "2.1 GB",
+  "base_model": "SG161222/Realistic_Vision_V5.1_noVAE",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SG161222/Realistic_Vision_V5.1_noVAE · Hugging Face",
+      "url": "https://huggingface.co/SG161222/Realistic_Vision_V5.1_noVAE",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mfrashad/Realistic_Vision_V5.1 · Hugging Face",
+      "url": "https://huggingface.co/mfrashad/Realistic_Vision_V5.1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

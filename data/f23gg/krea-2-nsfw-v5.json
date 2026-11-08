@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "f23gg/Krea-2-NSFW-V5",
+  "slug": "f23gg-krea-2-nsfw-v5",
+  "author": "f23gg",
+  "url": "https://huggingface.co/f23gg/Krea-2-NSFW-V5",
+  "created_at": "2026-11-08T02:35:38.000Z",
+  "updated_at": "2026-11-08T02:35:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 457669939,
+  "storage_human": "458 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea 2 NSFW V5 - V2 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.red/models/2725430/krea-2-nsfw-v2?modelVersionId=3065362",
+      "snippet": "Vérité V5 – candid amateur realism NSFW LoRA for Krea 2. * MAJOR PROMPT ADHERANCE FOLLOW WORKFLOW FOR THE BEST QUALITY. 2 Stage or 1 stage Turbo bo..."
+    },
+    {
+      "title": "KREA 2 NSFW Guide | Civitai",
+      "url": "https://civitai.red/articles/32627/krea-2-nsfw-guide",
+      "snippet": "Intro Krea 2 is the new big, bad boy in town. Given it's the new talk of the town, &amp; best thing since sliced bread in the local AI image space...."
+    }
+  ]
+}

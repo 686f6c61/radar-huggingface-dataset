@@ -5,7 +5,7 @@
   "author": "CladeTeam",
   "url": "https://huggingface.co/CladeTeam/CENO-80M-131k",
   "created_at": "2026-07-10T04:06:55.000Z",
-  "updated_at": "2026-11-07T03:39:22.000Z",
+  "updated_at": "2026-11-07T17:05:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

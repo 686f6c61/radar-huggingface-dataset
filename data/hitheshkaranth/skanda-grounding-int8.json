@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "hitheshkaranth/skanda-grounding-int8",
+  "slug": "hitheshkaranth-skanda-grounding-int8",
+  "author": "hitheshkaranth",
+  "url": "https://huggingface.co/hitheshkaranth/skanda-grounding-int8",
+  "created_at": "2026-11-08T03:28:37.000Z",
+  "updated_at": "2026-11-08T03:30:07.000Z",
+  "license": "skanda-private",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "sam2",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sam2",
+    "radiology",
+    "medical-imaging",
+    "segmentation",
+    "grounding",
+    "chest-x-ray",
+    "ct",
+    "mri",
+    "qwen3-vl",
+    "quantized",
+    "int8",
+    "image-text-to-text",
+    "en",
+    "base_model:hitheshkaranth/skanda-grounding",
+    "base_model:finetune:hitheshkaranth/skanda-grounding",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6068416412,
+  "storage_human": "6.1 GB",
+  "base_model": "hitheshkaranth/skanda-grounding",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Hitheshkaranth/Hitheshkaranth: Open-source systems builder ...",
+      "url": "https://www.github.com/Hitheshkaranth/Hitheshkaranth",
+      "snippet": "Open to collaboration on developer tools, financial infrastructure, voice AI, self-hosted inference, avionics and embedded systems. Reach me through hitheshkaranth.dev, or start an issue or discussion on the relevant repository. Open-source systems builder working across markets, AI-native development, and embedded software."
+    },
+    {
+      "title": "Hitheshkaranth (Hithesh Karanth) · GitHub",
+      "url": "https://github.com/Hitheshkaranth",
+      "snippet": "Outside of that I build developer tools, financial infrastructure, applied-AI products and self-hosted LLM inference, mostly in the open, and I train my own models: Skanda, a grounded radiology model fine-tuned end to end on a single DGX Spark."
+    }
+  ]
+}

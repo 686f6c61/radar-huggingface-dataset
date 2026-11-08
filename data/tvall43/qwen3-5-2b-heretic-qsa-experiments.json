@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tvall43/Qwen3.5-2B-heretic-QSA-experiments",
+  "slug": "tvall43-qwen3-5-2b-heretic-qsa-experiments",
+  "author": "tvall43",
+  "url": "https://huggingface.co/tvall43/Qwen3.5-2B-heretic-QSA-experiments",
+  "created_at": "2026-11-08T03:38:01.000Z",
+  "updated_at": "2026-11-08T03:40:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "gguf",
+    "qsa",
+    "sparse-attention",
+    "long-context",
+    "llama.cpp",
+    "research",
+    "text-generation",
+    "base_model:tvall43/Qwen3.5-2B-heretic",
+    "base_model:quantized:tvall43/Qwen3.5-2B-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1889691712,
+  "parameters_human": "1.89B",
+  "storage_bytes": 4977621596,
+  "storage_human": "5.0 GB",
+  "base_model": "tvall43/Qwen3.5-2B-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tvall43/Qwen3.5-2B-heretic-QSA-experiments · Hugging Face",
+      "url": "https://huggingface.co/tvall43/Qwen3.5-2B-heretic-QSA-experiments",
+      "snippet": "The GGUF at gguf/qwen35-2b-heretic-qsa-32kopencode-g125-q8_0.gguf is the recommended artifact if you only want to run the model. The base dense GGUF is at tvall43/Qwen3.5-2B-heretic and is not duplicated here."
+    },
+    {
+      "title": "tvall43/Qwen3.5-2B-heretic · Hugging Face",
+      "url": "https://huggingface.co/tvall43/Qwen3.5-2B-heretic",
+      "snippet": "Qwen3.5 Highlights Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

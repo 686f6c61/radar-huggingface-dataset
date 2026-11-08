@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "roman220220/Dory1.0-4B-gptq-mlx-jang",
+  "slug": "roman220220-dory1-0-4b-gptq-mlx-jang",
+  "author": "roman220220",
+  "url": "https://huggingface.co/roman220220/Dory1.0-4B-gptq-mlx-jang",
+  "created_at": "2026-11-07T22:37:35.000Z",
+  "updated_at": "2026-11-07T22:37:49.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "dory",
+    "quantized",
+    "gptq",
+    "jang",
+    "text-generation",
+    "conversational",
+    "base_model:nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+    "license:other",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3975229440,
+  "parameters_human": "3.98B",
+  "storage_bytes": 3748358443,
+  "storage_human": "3.7 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "roman220220/Dory1.0-4B-gptq-mlx-jang · Hugging Face",
+      "url": "https://huggingface.co/roman220220/Dory1.0-4B-gptq-mlx-jang",
+      "snippet": "NVIDIA's Dory 1.0 4B is a looped, nGPT-style dense model: 16 input layers feed a shared 40-layer recurrent block, run twice per forward pass, into 16 output layers (72 raw layers total, alternating pure-attention and pure-MLP, never both in one layer). This is a GPTQ quantization to MLX, 8-bit attention / 6-bit MLP (\"JANG\": per-component bits, uniform across layers), with GPTQ's own integer ..."
+    }
+  ]
+}

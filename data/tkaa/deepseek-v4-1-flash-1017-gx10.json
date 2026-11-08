@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Tkaa/DeepSeek-V4.1-Flash-1017-GX10",
+  "slug": "tkaa-deepseek-v4-1-flash-1017-gx10",
+  "author": "Tkaa",
+  "url": "https://huggingface.co/Tkaa/DeepSeek-V4.1-Flash-1017-GX10",
+  "created_at": "2026-11-08T02:48:28.000Z",
+  "updated_at": "2026-11-08T02:51:36.000Z",
+  "license": "nvidia-gb10-spark-free-use",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "flash1017-gx10",
+  "languages": [],
+  "tags": [
+    "flash1017-gx10",
+    "deepseek_v41",
+    "deepseek",
+    "deepseek-v4.1-flash",
+    "gb10",
+    "dgx-spark",
+    "asus-gx10",
+    "grace-blackwell",
+    "moe",
+    "local-ai",
+    "base_model:nvidia/DeepSeek-V4.1-Flash-1017-NVFP4",
+    "base_model:quantized:nvidia/DeepSeek-V4.1-Flash-1017-NVFP4",
+    "license:other",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 399258937,
+  "storage_human": "399 MB",
+  "base_model": "nvidia/DeepSeek-V4.1-Flash-1017-NVFP4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prometheusAIR/DeepSeek-V4.1-Flash-1017-GGUF · Hugging Face",
+      "url": "https://huggingface.co/prometheusAIR/DeepSeek-V4.1-Flash-1017-GGUF",
+      "snippet": "DeepSeek-V4.1-Flash-1017 GGUF (work in progress) Upload in progress. The files are not complete yet, and the full model card with measurements comes when they are."
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017-abliterated-FLARE - Hugging Face",
+      "url": "https://huggingface.co/JMNI-Labs/DeepSeek-V4.1-Flash-1017-abliterated-FLARE",
+      "snippet": "This repository builds on DeepSeek-V4.1-Flash-1017-lossless-CSF by Local Inference Lab, Inc. and on jcartu/DeepSeek-V4.1-Flash-1017-abliterated-lossless-CSF. By requesting access you accept the Local Inference Lab License, Version 1.0 (LICENSE) and the MIT License for the DeepSeek weights, including the restriction on re-uploading or mirroring (LICENSE, Section 2). The model has its refusal ..."
+    }
+  ]
+}

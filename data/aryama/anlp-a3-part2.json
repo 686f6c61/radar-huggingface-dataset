@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Aryama/anlp-a3-part2",
+  "slug": "aryama-anlp-a3-part2",
+  "author": "Aryama",
+  "url": "https://huggingface.co/Aryama/anlp-a3-part2",
+  "created_at": "2026-11-07T21:57:27.000Z",
+  "updated_at": "2026-11-07T21:57:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "graph-classification",
+    "fake-news-detection",
+    "arxiv:2101.05519",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30697360,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aryama (Murthy) - Hugging Face",
+      "url": "https://huggingface.co/Aryama",
+      "snippet": "Recent Activity updated a model19 days ago Aryama/anlp-a2-m26 published a model20 days ago Aryama/anlp-a2-m26 updated a modelabout 2 months ago Aryama/anlp-a1-c5 View all activity"
+    },
+    {
+      "title": "Aryama/anlp-a2-m26 · Hugging Face",
+      "url": "https://huggingface.co/Aryama/anlp-a2-m26",
+      "snippet": "Aryama / anlp-a2-m26 Like 0 PyTorch mixture-of-experts causal-lm Model card FilesFiles and versions xet Community Copy to bucket new ANLP Assignment 2 checkpoint bundles"
+    }
+  ]
+}

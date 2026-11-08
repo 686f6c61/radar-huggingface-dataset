@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "hitheshkaranth/skanda-grounding-int4",
+  "slug": "hitheshkaranth-skanda-grounding-int4",
+  "author": "hitheshkaranth",
+  "url": "https://huggingface.co/hitheshkaranth/skanda-grounding-int4",
+  "created_at": "2026-11-08T03:25:15.000Z",
+  "updated_at": "2026-11-08T03:28:36.000Z",
+  "license": "skanda-private",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "sam2",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sam2",
+    "radiology",
+    "medical-imaging",
+    "segmentation",
+    "grounding",
+    "chest-x-ray",
+    "ct",
+    "mri",
+    "qwen3-vl",
+    "quantized",
+    "int4",
+    "image-text-to-text",
+    "en",
+    "base_model:hitheshkaranth/skanda-grounding",
+    "base_model:finetune:hitheshkaranth/skanda-grounding",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18233699844,
+  "storage_human": "18.2 GB",
+  "base_model": "hitheshkaranth/skanda-grounding",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hitheshkaranth/scripts at main - GitHub",
+      "url": "https://github.com/Hitheshkaranth/Hitheshkaranth/tree/main/scripts",
+      "snippet": "Open-source systems builder working across markets, AI-native development, and embedded software. - Hitheshkaranth/Hitheshkaranth"
+    },
+    {
+      "title": "GitHub - Hitheshkaranth/Hitheshkaranth: Open-source systems builder ...",
+      "url": "https://www.github.com/Hitheshkaranth/Hitheshkaranth",
+      "snippet": "Open to collaboration on developer tools, financial infrastructure, voice AI, self-hosted inference, avionics and embedded systems. Reach me through hitheshkaranth.dev, or start an issue or discussion on the relevant repository. Open-source systems builder working across markets, AI-native development, and embedded software."
+    }
+  ]
+}

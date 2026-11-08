@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "ShadowFrame7/Krea-2-Iris-V2-Character-LoRA",
+  "slug": "shadowframe7-krea-2-iris-v2-character-lora",
+  "author": "ShadowFrame7",
+  "url": "https://huggingface.co/ShadowFrame7/Krea-2-Iris-V2-Character-LoRA",
+  "created_at": "2026-11-07T20:56:49.000Z",
+  "updated_at": "2026-11-07T21:19:06.000Z",
+  "license": "krea-2-community-license-v1",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 265128429,
+  "storage_human": "265 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - bongobongo2020/krea2-character-lora-trainer",
+      "url": "https://github.com/bongobongo2020/krea2-character-lora-trainer",
+      "snippet": "LoRA Trainer Train a character LoRA for the Krea 2 image model through a clean web UI — no command line needed. Upload 10–20 images, auto-caption them, click Start training, and download a Turbo-ready .safetensors LoRA."
+    },
+    {
+      "title": "Krea 2 LoRA Trainer - GitHub",
+      "url": "https://github.com/CaptainGrock/Krea2Trainer",
+      "snippet": "Krea 2 LoRA Trainer lets you train a LoRA (Low-Rank Adaptation) on top of the Krea 2 image generation model. A LoRA is a small adapter file (~50-200 MB) that teaches the base model a new style, person, object, or concept from your own images."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "ForSureTesterSim/Llama-3.1-8B-SLERP-0.5",
+  "slug": "forsuretestersim-llama-3-1-8b-slerp-0-5",
+  "author": "ForSureTesterSim",
+  "url": "https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-SLERP-0.5",
+  "created_at": "2026-11-07T21:50:52.000Z",
+  "updated_at": "2026-11-07T21:52:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "base_model:merge:meta-llama/Llama-3.1-8B",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:merge:meta-llama/Llama-3.1-8B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060556336,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B, meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ForSureTesterSim/Llama-3.1-8B-R1-v1-ModelStock · Hugging Face",
+      "url": "https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-R1-v1-ModelStock",
+      "snippet": "This model fuses meta-llama/Llama-3.1-8B-Instruct and deepseek-ai/DeepSeek-R1-Distill-Llama-8B using Model Stock, heavily stabilized by Activation-Informed Merging (AIM) ($\\Omega = 0.4$) to protect foundational parameters."
+    },
+    {
+      "title": "ForSureTesterSim/Llama-3.1-8B-Task_Arithmetic_Ext_B · Hugging Face",
+      "url": "https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-Task_Arithmetic_Ext_B",
+      "snippet": "ForSureTesterSim / Llama-3.1-8B-Task_Arithmetic_Ext_B Like 0 Text Generation Transformers Safetensors llama mergekit Merge conversational text-generation-inference arxiv:2212.04089 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

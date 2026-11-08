@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Pop_Toon_Anima_Turbo",
+  "slug": "aixfunestudio-pop_toon_anima_turbo",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Pop_Toon_Anima_Turbo",
+  "created_at": "2026-11-07T23:33:53.000Z",
+  "updated_at": "2026-11-07T23:37:56.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4182230848,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AIxFuneStudio/Digitally_Real_Z-Anime_Turbo · Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio/Digitally_Real_Z-Anime_Turbo",
+      "snippet": "AIxFuneStudio / Digitally_Real_Z-Anime_Turbo like 0 License:other Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Anima Turbo AI Models (3) | Civitai",
+      "url": "https://civitai.com/tag/anima%20turbo",
+      "snippet": "Browse 3 AI models tagged \"Anima Turbo\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "espnet/frontia_vad_v1_offline",
+  "slug": "espnet-frontia_vad_v1_offline",
+  "author": "espnet",
+  "url": "https://huggingface.co/espnet/frontia_vad_v1_offline",
+  "created_at": "2026-11-08T02:48:21.000Z",
+  "updated_at": "2026-11-08T02:48:25.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "espnet",
+  "languages": [],
+  "tags": [
+    "espnet",
+    "audio",
+    "voice-activity-detection",
+    "diarization",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 824369,
+  "storage_human": "824369 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - espnet/espnet: End-to-End Speech Processing Toolkit",
+      "url": "https://github.com/espnet/espnet",
+      "snippet": "ESPnet is an end-to-end speech processing toolkit built on PyTorch. It covers speech recognition, text-to-speech, speech translation, speech enhancement, speaker diarization, spoken language understanding, spoken language identification, singing voice synthesis, speech language models, and more — with Kaldi -style reproducible recipes from data preparation to evaluation, and hundreds of ..."
+    },
+    {
+      "title": "espnet (ESPnet) - Hugging Face",
+      "url": "https://huggingface.co/espnet",
+      "snippet": "ESPnet is an end-to-end speech processing toolkit covering end-to-end speech recognition, text-to-speech, speech translation, speech enhancement, speaker diarization, spoken language understanding, and so on. ESPnet uses pytorch as a deep learning engine and also follows Kaldi style data processing ..."
+    }
+  ]
+}

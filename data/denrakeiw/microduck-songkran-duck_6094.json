@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "DenRakEiw/microduck-songkran-duck_6094",
+  "slug": "denrakeiw-microduck-songkran-duck_6094",
+  "author": "DenRakEiw",
+  "url": "https://huggingface.co/DenRakEiw/microduck-songkran-duck_6094",
+  "created_at": "2026-11-08T02:38:59.000Z",
+  "updated_at": "2026-11-08T02:39:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "microduck-slot:walk",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 794276,
+  "storage_human": "794276 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DenRakEiw/microduck-songkran-duck_7214 · Hugging Face",
+      "url": "https://huggingface.co/DenRakEiw/microduck-songkran-duck_7214",
+      "snippet": "Sock Heist: our own songkran-duck_7199 (sprint race net retrained to freeze under the giant's eye and brake in its turn, hr2b-brake checkpoint 1575, behind a fixed pace wrapper) with its weights polished on CPU by evolution strategies, selected for finishing under tiny action noise. Trained with ..."
+    },
+    {
+      "title": "Hugging Face is selling a cute $399 open source duck robot, Microduck",
+      "url": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck/",
+      "snippet": "Hugging Face unveiled the Microduck on Thursday, a cute little duck-like robot that sells for $399 — and ships before Christmas. Clem Delangue, CEO of Hugging Face, said the Microduck is an ..."
+    }
+  ]
+}

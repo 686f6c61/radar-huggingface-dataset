@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bu7umaid/Qwen3.8-Flash-Next-Uncensored-TensorFold-MTP",
+  "slug": "bu7umaid-qwen3-8-flash-next-uncensored-tensorfold-mtp",
+  "author": "bu7umaid",
+  "url": "https://huggingface.co/bu7umaid/Qwen3.8-Flash-Next-Uncensored-TensorFold-MTP",
+  "created_at": "2026-11-07T20:58:53.000Z",
+  "updated_at": "2026-11-07T21:20:20.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "tensorfold",
+    "qwen4",
+    "mtp",
+    "uncensored",
+    "abliterated",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:orcarouter/Qwen3.8-Flash-Next-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-Flash-Next-Uncensored",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 116668879301,
+  "storage_human": "116.7 GB",
+  "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next-RTX-PRO-6000-TernsorFold - GitHub",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.8-Flash-Next-RTX-PRO-6000-TernsorFold",
+      "snippet": "Qwen3.8 Flash Next on one RTX PRO 6000 (TensorFold) by Mia's AI Lab Serve Qwen3.8 Flash Next from one NVIDIA RTX PRO 6000 Blackwell (96 GB) through an OpenAI-compatible API, with image and video input. It runs TensorFold 's Zig engine, v1.1.4 with this recipe's patches, on one GPU (TP=1)."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

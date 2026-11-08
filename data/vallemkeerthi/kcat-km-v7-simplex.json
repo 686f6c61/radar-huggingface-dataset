@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "VallemKeerthi/kcat-km-v7-simplex",
+  "slug": "vallemkeerthi-kcat-km-v7-simplex",
+  "author": "VallemKeerthi",
+  "url": "https://huggingface.co/VallemKeerthi/kcat-km-v7-simplex",
+  "created_at": "2026-11-08T01:40:10.000Z",
+  "updated_at": "2026-11-08T01:45:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 718226750,
+  "storage_human": "718 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aaarchitha7/kcat-km-model-v7 · Hugging Face",
+      "url": "https://huggingface.co/aaarchitha7/kcat-km-model-v7",
+      "snippet": "This is a starter model for the joint kcat–Km task. You train a model on your computer and upload it to a public Hugging Face (HF) model repository. Then you submit that repository to the Leak CURBER leaderboard. A free HF account is enough. Predict both base-10 logged values. Do not exponentiate ..."
+    },
+    {
+      "title": "Danish-777/kcat-km-v7 · Hugging Face",
+      "url": "https://huggingface.co/Danish-777/kcat-km-v7",
+      "snippet": "Predicts log10(kcat) and log10(Km) from an enzyme sequence and a substrate SMILES. CPU only. Same design as v4: XGBoost on handcrafted enzyme features (D), on ESM-2 35M embeddings and on ESM-2 150M embeddings (first 256 residues), plus a small neural network on the 35M embedding; all combined by ..."
+    }
+  ]
+}

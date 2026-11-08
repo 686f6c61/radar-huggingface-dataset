@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "gwenn-ha-dev/Z-Image-Turbo-Siliconed-SQ4",
+  "slug": "gwenn-ha-dev-z-image-turbo-siliconed-sq4",
+  "author": "gwenn-ha-dev",
+  "url": "https://huggingface.co/gwenn-ha-dev/Z-Image-Turbo-Siliconed-SQ4",
+  "created_at": "2026-11-07T21:06:25.000Z",
+  "updated_at": "2026-11-07T21:07:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "siliconed",
+    "apple-silicon",
+    "metal",
+    "quantized",
+    "4-bit",
+    "gptq",
+    "text-to-image",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:quantized:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4983674848,
+  "storage_human": "5.0 GB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - gwenn-ha-dev/Siliconed: Native macOS app for local AI image ...",
+      "url": "https://github.com/gwenn-ha-dev/Siliconed",
+      "snippet": "Native macOS app for local AI image generation and editing on Apple silicon: Z-Image Turbo, Qwen-Image-2.1, Krea 2 Turbo, Anima Turbo and MOSS-Image in Swift and Metal, fp32, checked against diffusers. Never takes more memory than its budget: ¾ of the Mac's memory minus 2 GB. - gwenn-ha-dev/Siliconed"
+    },
+    {
+      "title": "Siliconed — your Mac, mapped: local image generation and editing for ...",
+      "url": "https://gwenn-ha-dev.github.io/Siliconed/",
+      "snippet": "Krea 2 Turbo, Z-Image Turbo, Qwen-Image-2.1, Anima Turbo and MOSS-Image, native in Swift and Metal. Every computation planned for this chip, from a measure of its engines — GPU, CPU matrix unit, Neural Engine. Offline, fp32, checked against the reference, within a fixed memory budget."
+    }
+  ]
+}

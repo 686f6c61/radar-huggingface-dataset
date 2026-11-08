@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sleepydoug1992/Seedance-2-AI-Video-Generator-free",
+  "slug": "sleepydoug1992-seedance-2-ai-video-generator-free",
+  "author": "sleepydoug1992",
+  "url": "https://huggingface.co/sleepydoug1992/Seedance-2-AI-Video-Generator-free",
+  "created_at": "2026-11-07T22:32:09.000Z",
+  "updated_at": "2026-11-07T22:32:10.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-video",
+    "image-to-video",
+    "multimodal",
+    "diffusion",
+    "dit",
+    "lip-sync",
+    "physics-simulation",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seedance 2.0 Free AI Video Generator | Seedance",
+      "url": "https://www.seedance.tv/seedance-2-0",
+      "snippet": "Try Seedance 2.0 free with signup credits. Create AI videos from text, images, video, and audio using ByteDance's multimodal video model."
+    },
+    {
+      "title": "Seedance 2.0 AI Video Generator | Try It Free Online",
+      "url": "https://www.seedance2ai.io/",
+      "snippet": "Seedance 2.0 · AI Video Generator with Precise Reference Control Combine images, videos, audio, and text to produce cinematic videos with precise references, seamless extension, and natural language control."
+    },
+    {
+      "title": "Free Seedance AI Video Generator — 2.5 & 2.0 | Seedance TV",
+      "url": "https://www.seedance.tv/",
+      "snippet": "Seedance TV is an independent AI video platform. You can create videos with Seedance 2.5 and Seedance 2.0, the video models made by ByteDance, plus Veo 3.1, Kling 3.0, MiniMax H3 and other models, with one account and one credit balance."
+    }
+  ]
+}

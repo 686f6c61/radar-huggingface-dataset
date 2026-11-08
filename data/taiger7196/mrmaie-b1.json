@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "taiger7196/MrMaie-B1",
+  "slug": "taiger7196-mrmaie-b1",
+  "author": "taiger7196",
+  "url": "https://huggingface.co/taiger7196/MrMaie-B1",
+  "created_at": "2026-11-07T23:24:32.000Z",
+  "updated_at": "2026-11-07T23:25:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "mrmaie-b1",
+    "spark-x2.6-4b",
+    "sub-bit-quantization",
+    "speculative-decoding",
+    "nvidia-nim-distilled",
+    "glm-5-3-flash",
+    "text-generation",
+    "conversational",
+    "en",
+    "it",
+    "license:apache-2.0",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3950673152,
+  "parameters_human": "3.95B",
+  "storage_bytes": 5528373561,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "taiger7196 (taiger7196) - Hugging Face",
+      "url": "https://huggingface.co/taiger7196",
+      "snippet": "MrMaie is a new cheap AI for coding or as a integrate AI . taiger7196 about 11 hours ago. models 0"
+    },
+    {
+      "title": "taiger7196 (taiger7196) - Hugging Face",
+      "url": "https://huggingface.co/taiger7196/models",
+      "snippet": "taiger7196's models1 Sort: Recently updated taiger7196/MrMaie-Code-7B Text Generation • 8B•Updated 18 days ago• 62"
+    }
+  ]
+}

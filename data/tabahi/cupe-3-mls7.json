@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Tabahi/CUPE-3-mls7",
+  "slug": "tabahi-cupe-3-mls7",
+  "author": "Tabahi",
+  "url": "https://huggingface.co/Tabahi/CUPE-3-mls7",
+  "created_at": "2026-10-11T08:46:58.000Z",
+  "updated_at": "2026-11-07T21:42:16.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "de",
+    "es",
+    "fr",
+    "it",
+    "nl",
+    "pl",
+    "pt"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "forced-alignment",
+    "phoneme-recognition",
+    "phoneme-segmentation",
+    "speech",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "nl",
+    "pl",
+    "pt",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": 13544596,
+  "parameters_human": "13.5M",
+  "storage_bytes": 108391797,
+  "storage_human": "108 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tabahi/CUPE-3-mls7 · Hugging Face",
+      "url": "https://huggingface.co/Tabahi/CUPE-3-mls7",
+      "snippet": "Tabahi / CUPE-3-mls7 Like 0 PyTorch Safetensors 7 languages forced-alignment phoneme-recognition phoneme-segmentation speech License:agpl-3.0 Model card FilesFiles and versions xet Community Copy to bucket new CUPE v3 (p3cupe) · multilingual (de, es, fr, it, nl, pl, pt) Training Usage Training checkpoint"
+    },
+    {
+      "title": "Tabahi/CUPE-3-en-base · Hugging Face",
+      "url": "https://huggingface.co/Tabahi/CUPE-3-en-base",
+      "snippet": "CUPE-3-mls7 was warm-started from this checkpoint. ... TIMIT: 400 clips (English, never trained on), split in a tune half (picked the checkpoint and the decoder) and a holdout half. lev_f1_25ms is phone-boundary F1 within 25 ms; phone_hit_25ms is the share of phones whose onset is within 25 ms."
+    }
+  ]
+}

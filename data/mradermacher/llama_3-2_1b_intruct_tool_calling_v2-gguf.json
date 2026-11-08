@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama_3.2_1B_Intruct_Tool_Calling_V2-GGUF",
+  "slug": "mradermacher-llama_3-2_1b_intruct_tool_calling_v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama_3.2_1B_Intruct_Tool_Calling_V2-GGUF",
+  "created_at": "2025-03-11T13:19:08.000Z",
+  "updated_at": "2026-11-08T03:43:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "Ollama",
+    "Tool-Calling",
+    "en",
+    "vi",
+    "dataset:nguyenthanhthuan/function-calling-sharegpt",
+    "base_model:nguyenthanhthuan/Llama_3.2_1B_Intruct_Tool_Calling_V2",
+    "base_model:quantized:nguyenthanhthuan/Llama_3.2_1B_Intruct_Tool_Calling_V2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 164,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 11604181376,
+  "storage_human": "11.6 GB",
+  "base_model": "nguyenthanhthuan/Llama_3.2_1B_Intruct_Tool_Calling_V2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama_3.2_1B_Intruct_Tool_Calling_V2-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Llama_3.2_1B_Intruct_Tool_Calling_V2-GGUF",
+      "snippet": "Tool-Calling Inference Endpoints conversational License: apache-2.0 Model card Files Files and versions Community Train Deploy"
+    },
+    {
+      "title": "Lidl Metz : magasins Lidl à proximité et horaires",
+      "url": "https://storelocatortool.com/v3/fr/recherche.php?enseigne=lidl&ville=metz&region=grand-est&pays=france&lat=49.119.110&lon=6.172.690",
+      "snippet": "Lidl à proximité : adresses à Metz (Grand Est), avec carte, Street View et itinéraire. Le filtre « Ouvert maintenant » montre ce qui est …"
+    },
+    {
+      "title": "Llama_3.2_1B_Intruct_Tool_Calling_V2-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Llama_3.2_1B_Intruct_Tool_Calling_V2-GGUF/tree/main",
+      "snippet": "Tool-Calling conversational License: apache-2.0 Model card Files Files and versions xet Community Train"
+    }
+  ]
+}

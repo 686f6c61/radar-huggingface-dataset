@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "CaiYuanhao/MST_pp",
+  "slug": "caiyuanhao-mst_pp",
+  "author": "CaiYuanhao",
+  "url": "https://huggingface.co/CaiYuanhao/MST_pp",
+  "created_at": "2026-11-07T21:48:38.000Z",
+  "updated_at": "2026-11-07T21:54:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "spectral-reconstruction",
+    "hyperspectral-image-reconstruction",
+    "spectral-superresolution",
+    "image-restoration",
+    "transformer",
+    "ntire2022",
+    "arxiv:2204.07908",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 902907011,
+  "storage_human": "903 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - caiyuanhao1998/MST: A toolbox for spectral compressive imaging ...",
+      "url": "https://github.com/caiyuanhao1998/MST",
+      "snippet": "The training log, trained model, and reconstrcuted HSI will be available in MST/real/train_code/exp/ Note: you can use train_s.py for other methods except BiSRNet if you cannot access the mask data or you have limited GPU resources. In this case, you need to replace the --method paramter in the above commands and make some modifications."
+    },
+    {
+      "title": "caiyuanhao1998.github.io",
+      "url": "https://caiyuanhao1998.github.io/bibtex/mst_pp.txt",
+      "snippet": "@inproceedings{mst_pp, title={MST++: Multi-stage Spectral-wise Transformer for Efficient Spectral Reconstruction}, author={Yuanhao Cai and Jing Lin and Zudi Lin and Haoqian Wang and Yulun Zhang and Hanspeter Pfister and Radu Timofte and Luc Van Gool}, booktitle={CVPRW}, year={2022} }"
+    }
+  ]
+}

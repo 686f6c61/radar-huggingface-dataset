@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "edinlong83/zils-mini-a8",
+  "slug": "edinlong83-zils-mini-a8",
+  "author": "edinlong83",
+  "url": "https://huggingface.co/edinlong83/zils-mini-a8",
+  "created_at": "2026-11-07T21:02:21.000Z",
+  "updated_at": "2026-11-07T21:04:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "decision-model",
+    "zils",
+    "d3-mini",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9081227360,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zils — Teach AI to make decisions your way.",
+      "url": "https://zils.ai/",
+      "snippet": "Zils Zils Teach AI to make decisions your way. Show Zils examples with the right answers. It trains a small model your app can use to sort requests, flag problems, or score matches."
+    }
+  ]
+}

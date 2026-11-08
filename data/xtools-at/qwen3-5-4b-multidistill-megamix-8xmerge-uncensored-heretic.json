@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "xtools-at/Qwen3.5-4B-MultiDistill-Megamix-8xMerge-UNCENSORED-heretic",
+  "slug": "xtools-at-qwen3-5-4b-multidistill-megamix-8xmerge-uncensored-heretic",
+  "author": "xtools-at",
+  "url": "https://huggingface.co/xtools-at/Qwen3.5-4B-MultiDistill-Megamix-8xMerge-UNCENSORED-heretic",
+  "created_at": "2026-10-15T14:45:06.000Z",
+  "updated_at": "2026-11-08T02:26:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "merge",
+    "qwen3.5",
+    "reasoning",
+    "chain-of-thought",
+    "distillation",
+    "agentic",
+    "text-generation-inference",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "text-generation",
+    "conversational",
+    "dataset:nohurry/Opus-4.6-Reasoning-3000x-filtered",
+    "dataset:Jackrong/Qwen3.5-reasoning-700x",
+    "dataset:Roman1111111/claude-opus-4.6-10000x",
+    "dataset:Jackrong/Claude-opus-4.6-TraceInversion-9000x",
+    "dataset:Jackrong/Claude-opus-4.7-TraceInversion-5000x",
+    "dataset:lambda/hermes-agent-reasoning-traces",
+    "base_model:xtools-at/Qwen3.5-4B-MultiDistill-Megamix-8xMerge",
+    "base_model:finetune:xtools-at/Qwen3.5-4B-MultiDistill-Megamix-8xMerge",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 203,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9118599277,
+  "storage_human": "9.1 GB",
+  "base_model": "xtools-at/Qwen3.5-4B-MultiDistill-Megamix-8xMerge",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-4B-MultiDistill-Megamix-8xMerge-UNCENSORED-heretic",
+      "url": "https://huggingface.co/xtools-at/Qwen3.5-4B-MultiDistill-Megamix-8xMerge-UNCENSORED-heretic",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-4B-MultiDistill-Megamix-8xMerge-UNCENSORED-heretic",
+      "url": "https://huggingface.co/xtools-at/Qwen3.5-4B-MultiDistill-Megamix-8xMerge-UNCENSORED-heretic/tree/main",
+      "snippet": "Like 1 Text Generation Transformers Safetensors 6 datasets qwen3_5 image-text-to-text Merge qwen3.5 reasoning chain-of-thought distillation agentic text-generation-inference heretic uncensored decensored abliterated reproducible conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this ..."
+    }
+  ]
+}

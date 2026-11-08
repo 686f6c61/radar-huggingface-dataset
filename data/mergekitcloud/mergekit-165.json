@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MergekitCloud/mergekit-165",
+  "slug": "mergekitcloud-mergekit-165",
+  "author": "MergekitCloud",
+  "url": "https://huggingface.co/MergekitCloud/mergekit-165",
+  "created_at": "2026-11-08T03:11:57.000Z",
+  "updated_at": "2026-11-08T03:13:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "mergekit",
+    "merge",
+    "arxiv:2311.03099",
+    "base_model:InternScience/Agents-A1",
+    "base_model:merge:InternScience/Agents-A1",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:merge:Qwen/Qwen3.6-35B-A3B",
+    "base_model:ornith-ai/Ornith-1.0-35B",
+    "base_model:merge:ornith-ai/Ornith-1.0-35B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70227302630,
+  "storage_human": "70.2 GB",
+  "base_model": "InternScience/Agents-A1, Qwen/Qwen3.6-35B-A3B, deepreinforce-ai/Ornith-1.0-35B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - arcee-ai/mergekit: Tools for merging pretrained large language ...",
+      "url": "https://github.com/arcee-ai/mergekit",
+      "snippet": "Usage The script mergekit-yaml is the main entry point for mergekit. It takes a YAML configuration file and an output path, like so: ... This will run the merge and write your merged model to ./output-model-directory. For more information on the arguments accepted by mergekit-yaml run the command mergekit-yaml --help."
+    },
+    {
+      "title": "MergekitCloud (Mergekit Cloud) - Hugging Face",
+      "url": "https://huggingface.co/MergekitCloud",
+      "snippet": "User profile of Mergekit Cloud on Hugging Face"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mradermacher/OpenR1-Qwen-3B-SFT-Instruct-GGUF",
+  "slug": "mradermacher-openr1-qwen-3b-sft-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OpenR1-Qwen-3B-SFT-Instruct-GGUF",
+  "created_at": "2025-03-08T13:38:39.000Z",
+  "updated_at": "2026-11-08T02:36:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "open-r1",
+    "trl",
+    "sft",
+    "en",
+    "dataset:open-r1/OpenR1-Math-220k",
+    "base_model:InfiniAILab/OpenR1-Qwen-3B-SFT-Instruct",
+    "base_model:quantized:InfiniAILab/OpenR1-Qwen-3B-SFT-Instruct",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 67,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940886656,
+  "storage_human": "27.9 GB",
+  "base_model": "InfiniAILab/OpenR1-Qwen-3B-SFT-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/OpenR1-Qwen-3B-SFT-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/OpenR1-Qwen-3B-SFT-Instruct-GGUF",
+      "snippet": "Feel free to request them by opening a Community Discussion. Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/OpenR1-Qwen-7B-SFT-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/OpenR1-Qwen-7B-SFT-Instruct-GGUF",
+      "snippet": "Generated from Trainer open-r1 trl sft Inference Endpoints conversational Model card Files Files and versions Community"
+    }
+  ]
+}

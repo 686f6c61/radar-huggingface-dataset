@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "moothz/ravena-bgem3",
+  "slug": "moothz-ravena-bgem3",
+  "author": "moothz",
+  "url": "https://huggingface.co/moothz/ravena-bgem3",
+  "created_at": "2026-11-08T01:39:19.000Z",
+  "updated_at": "2026-11-08T01:40:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:2505",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2288162795,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - moothz/ravena-ai: ravenabot desenvolvida com IA!",
+      "url": "https://github.com/moothz/ravena-ai",
+      "snippet": "ravenabot desenvolvida com IA! Contribute to moothz/ravena-ai development by creating an account on GitHub."
+    },
+    {
+      "title": "ravena-ai/README.md at main · moothz/ravena-ai · GitHub",
+      "url": "https://github.com/moothz/ravena-ai/blob/main/README.md",
+      "snippet": "ravenabot desenvolvida com IA! Contribute to moothz/ravena-ai development by creating an account on GitHub."
+    }
+  ]
+}

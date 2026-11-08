@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Mortxm/lligma-tutor",
+  "slug": "mortxm-lligma-tutor",
+  "author": "Mortxm",
+  "url": "https://huggingface.co/Mortxm/lligma-tutor",
+  "created_at": "2026-11-08T03:47:53.000Z",
+  "updated_at": "2026-11-08T03:49:53.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "safetensors",
+    "tutor",
+    "retrieval",
+    "italian",
+    "cpu",
+    "it",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1546924864,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepTutor: Open-Source, Multi-agent AI Learning Assistant",
+      "url": "https://www.scriptbyai.com/deeptutor-ai-learning-assistant/",
+      "snippet": "DeepTutor is a free, open-source AI learning assistant for studying course materials, research papers, technical documentation, and other sources you collect. It can answer questions grounded in your material, explain difficult passages, and generate practice questions. Build a knowledge base from your files, a GitHub repository, or a documentation website, and return to that material across ..."
+    }
+  ]
+}

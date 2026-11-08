@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "r0b0tlab/Qwen3.8-Flash-Next-DFlash2-EXL3-4.00bpw",
+  "slug": "r0b0tlab-qwen3-8-flash-next-dflash2-exl3-4-00bpw",
+  "author": "r0b0tlab",
+  "url": "https://huggingface.co/r0b0tlab/Qwen3.8-Flash-Next-DFlash2-EXL3-4.00bpw",
+  "created_at": "2026-11-07T23:51:57.000Z",
+  "updated_at": "2026-11-07T23:52:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "dflash2",
+    "speculative-decoding",
+    "draft-model",
+    "exl3",
+    "rexl3",
+    "base_model:incoai/Qwen3.8-Flash-Next-DFlash2",
+    "base_model:quantized:incoai/Qwen3.8-Flash-Next-DFlash2",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 259272960,
+  "parameters_human": "259.3M",
+  "storage_bytes": 518565200,
+  "storage_human": "519 MB",
+  "base_model": "incoai/Qwen3.8-Flash-Next-DFlash2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - r0b0tlab/qwen38-flashnext-exl3",
+      "url": "https://github.com/r0b0tlab/qwen38-flashnext-exl3",
+      "snippet": "The published EXL3 quant — r0b0tlab/Qwen3.8-Flash-Next-EXL3-2.50bpw — tuned for a 24 GB RTX 3090, running at the model's full 262,144-token native context with the MTP head (NEXTN) and the vision tower intact, using MoE expert CPU offload to fit the 125B model (6B active, plus a 51B-parameter n ..."
+    },
+    {
+      "title": "r0b0tlab/Qwen3.8-Flash-Next-EXL3-2.50bpw · Hugging Face",
+      "url": "https://huggingface.co/r0b0tlab/Qwen3.8-Flash-Next-EXL3-2.50bpw",
+      "snippet": "EXL3 (ExLlamaV3) quantization of Qwen/Qwen3.8-Flash-Next, tuned for a 24 GB RTX 3090 at the model's full 262,144-token native context with the MTP head and the vision tower intact, using MoE expert CPU offload for the 125B model (6B active, plus a 51B-parameter n-gram table). Conversion: ExLlamaV3 ..."
+    }
+  ]
+}

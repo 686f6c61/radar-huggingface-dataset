@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Dumi2025/log-anomaly-detection-electra-base-discriminator",
+  "slug": "dumi2025-log-anomaly-detection-electra-base-discriminator",
+  "author": "Dumi2025",
+  "url": "https://huggingface.co/Dumi2025/log-anomaly-detection-electra-base-discriminator",
+  "created_at": "2026-11-08T03:36:42.000Z",
+  "updated_at": "2026-11-08T03:36:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "electra",
+    "log-anomaly-detection",
+    "hdfs",
+    "text-classification",
+    "dataset:Prasasthy/trainforother",
+    "base_model:google/electra-base-discriminator",
+    "base_model:finetune:google/electra-base-discriminator",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437959248,
+  "storage_human": "438 MB",
+  "base_model": "google/electra-base-discriminator",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dumi2025/log-anomaly-detection-model-new · Hugging Face",
+      "url": "https://huggingface.co/Dumi2025/log-anomaly-detection-model-new",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Dumi2025/log-anomaly-detection-model-new at main - Hugging Face",
+      "url": "https://huggingface.co/Dumi2025/log-anomaly-detection-model-new/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

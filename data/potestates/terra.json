@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Potestates/TERRA",
+  "slug": "potestates-terra",
+  "author": "Potestates",
+  "url": "https://huggingface.co/Potestates/TERRA",
+  "created_at": "2026-10-29T17:33:17.000Z",
+  "updated_at": "2026-11-08T01:49:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45038690524,
+  "storage_human": "45.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT-6.1 Terra: delivering fast and capable computer use at a lower ...",
+      "url": "https://community.openai.com/t/gpt-6-1-terra-delivering-fast-and-capable-computer-use-at-a-lower-price/1409900",
+      "snippet": "GPT-6.1 Terra understands what’s on screen, takes action across apps, writes naturally, and is a more capable model for your whole workday with the efficiency to take on more of it. GPT-6.1 Terra continues to advance the cost-intelligence frontier across our model families. Introducing GPT-6 Terra It’s a significant step up over GPT‑5.6 Terra, with 50% lower standard API prices. In ..."
+    },
+    {
+      "title": "Potestates (Tianxingjian) - Hugging Face",
+      "url": "https://huggingface.co/Potestates",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 6 hours ago ... updated a model about 6 hours ago ... updated a model about 2 months ago"
+    }
+  ]
+}

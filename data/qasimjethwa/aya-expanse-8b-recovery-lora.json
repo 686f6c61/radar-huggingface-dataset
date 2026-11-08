@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "qasimjethwa/aya-expanse-8b-recovery-lora",
+  "slug": "qasimjethwa-aya-expanse-8b-recovery-lora",
+  "author": "qasimjethwa",
+  "url": "https://huggingface.co/qasimjethwa/aya-expanse-8b-recovery-lora",
+  "created_at": "2026-11-08T03:37:42.000Z",
+  "updated_at": "2026-11-08T03:38:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "text-generation",
+    "tool-use",
+    "payment-recovery",
+    "lexsi-hackathon",
+    "conversational",
+    "base_model:CohereLabs/aya-expanse-8b",
+    "base_model:adapter:CohereLabs/aya-expanse-8b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187956330,
+  "storage_human": "188 MB",
+  "base_model": "CohereLabs/aya-expanse-8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qasimjethwa (Qasim Jethwa) - Hugging Face",
+      "url": "https://huggingface.co/qasimjethwa",
+      "snippet": "models1 qasimjethwa/aya-expanse-8b-recovery-lora Text Generation •Updated about 1 hour ago"
+    },
+    {
+      "title": "CohereLabs/aya-expanse-8b · Hugging Face",
+      "url": "https://huggingface.co/CohereLabs/aya-expanse-8b",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

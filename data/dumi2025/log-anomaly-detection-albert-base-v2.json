@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Dumi2025/log-anomaly-detection-albert-base-v2",
+  "slug": "dumi2025-log-anomaly-detection-albert-base-v2",
+  "author": "Dumi2025",
+  "url": "https://huggingface.co/Dumi2025/log-anomaly-detection-albert-base-v2",
+  "created_at": "2026-11-08T03:52:43.000Z",
+  "updated_at": "2026-11-08T03:53:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albert",
+    "log-anomaly-detection",
+    "hdfs",
+    "text-classification",
+    "dataset:Prasasthy/trainforother",
+    "base_model:albert/albert-base-v2",
+    "base_model:finetune:albert/albert-base-v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11685122,
+  "parameters_human": "11.7M",
+  "storage_bytes": 46743912,
+  "storage_human": "47 MB",
+  "base_model": "albert/albert-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dumi2025/log-anomaly-detection-model-roberta · Hugging Face",
+      "url": "https://huggingface.co/Dumi2025/log-anomaly-detection-model-roberta",
+      "snippet": "log-anomaly-detection-model-roberta This model is a fine-tuned version of FacebookAI/roberta-base on an unknown dataset. It achieves the following results on the evaluation set: Loss: 0.1524 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training ..."
+    },
+    {
+      "title": "Log Anomaly Detection Model Roberta - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/dumi2025/log-anomaly-detection-model-roberta",
+      "snippet": "by Dumi2025 dumi2025/log-anomaly-detection-model-roberta Free2AITools Nexus Index 37.1 S: Semantic50 Query-time baseline · scored live at search A: Authority33 P: Popularity1 R: Recency31 Q: Quality65 Tech Context 0.12BParams 512Ctx Vital Performance 7 DL / 30D Source → Share: 📤 𝕏 in 📣 🔗"
+    }
+  ]
+}

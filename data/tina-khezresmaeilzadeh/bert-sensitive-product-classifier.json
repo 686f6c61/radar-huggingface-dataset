@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "tina-khezresmaeilzadeh/bert-sensitive-product-classifier",
+  "slug": "tina-khezresmaeilzadeh-bert-sensitive-product-classifier",
+  "author": "tina-khezresmaeilzadeh",
+  "url": "https://huggingface.co/tina-khezresmaeilzadeh/bert-sensitive-product-classifier",
+  "created_at": "2026-11-08T00:48:56.000Z",
+  "updated_at": "2026-11-08T00:51:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "privacy",
+    "recommendation",
+    "health",
+    "product-classification",
+    "text-classification",
+    "en",
+    "arxiv:2505.00951",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437958648,
+  "storage_human": "438 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

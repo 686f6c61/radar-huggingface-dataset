@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "DictionLabs/Nemotron-3-Diarization-ONNX",
+  "slug": "dictionlabs-nemotron-3-diarization-onnx",
+  "author": "DictionLabs",
+  "url": "https://huggingface.co/DictionLabs/Nemotron-3-Diarization-ONNX",
+  "created_at": "2026-11-08T00:17:50.000Z",
+  "updated_at": "2026-11-08T00:17:53.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "nemo",
+  "languages": [],
+  "tags": [
+    "nemo",
+    "onnx",
+    "nemotron3_diarization",
+    "audio-frame-classification",
+    "mirror",
+    "speaker-diarization",
+    "streaming-sortformer",
+    "speaker-tagging",
+    "transformers",
+    "voice-activity-detection",
+    "arxiv:2409.06656",
+    "arxiv:2507.18446",
+    "arxiv:2605.15442",
+    "arxiv:2507.09226",
+    "arxiv:2408.13106",
+    "base_model:nvidia/Nemotron-3-Diarization",
+    "base_model:quantized:nvidia/Nemotron-3-Diarization",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120844247,
+  "storage_human": "121 MB",
+  "base_model": "nvidia/Nemotron-3-Diarization",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NealCaren/Nemotron-3-Diarization-ONNX · Hugging Face",
+      "url": "https://huggingface.co/NealCaren/Nemotron-3-Diarization-ONNX",
+      "snippet": "An ONNX export of nvidia/Nemotron-3-Diarization, a 100M-parameter streaming Sortformer speaker-diarization model (up to 8 speakers, 10 ms resolution). These files are meant for running the model in a web browser with ONNX Runtime Web, or anywhere else ONNX Runtime runs. This is an unofficial ..."
+    },
+    {
+      "title": "onnx-community/Nemotron-3-Diarization-ONNX at main",
+      "url": "https://huggingface.co/onnx-community/Nemotron-3-Diarization-ONNX/tree/main/onnx",
+      "snippet": "ONNX Community 2.25k Voice Activity Detection NeMo ONNX Transformers nemotron3_diarization audio-frame-classification speaker-diarization streaming-sortformer speaker-tagging arxiv:5 papers License:openmdw-1.1 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model Libraries ... Notebooks main Nemotron-3 ..."
+    }
+  ]
+}

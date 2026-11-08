@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "CholoAsis/qnvoice-cebuano-translation",
+  "slug": "choloasis-qnvoice-cebuano-translation",
+  "author": "CholoAsis",
+  "url": "https://huggingface.co/CholoAsis/qnvoice-cebuano-translation",
+  "created_at": "2026-11-07T23:21:20.000Z",
+  "updated_at": "2026-11-08T00:12:20.000Z",
+  "license": "apache-2.0-base-cc-by-4.0-adapter",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "ceb"
+  ],
+  "tags": [
+    "gguf",
+    "lora",
+    "on-device",
+    "cebuano",
+    "qnvoice",
+    "translation",
+    "en",
+    "ceb",
+    "base_model:IndexTeam/Index-Translate-2B",
+    "base_model:adapter:IndexTeam/Index-Translate-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 131072,
+  "parameters_human": "131072",
+  "storage_bytes": 978610816,
+  "storage_human": "979 MB",
+  "base_model": "IndexTeam/Index-Translate-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CholoAsis (OASIS) – Models - Hugging Face",
+      "url": "https://huggingface.co/CholoAsis/models",
+      "snippet": "CholoAsis's models2 Sort: Recently updated CholoAsis/qnvoice-cebuano-voxcpm2 Text-to-Speech •Updated about 6 hours ago"
+    },
+    {
+      "title": "Top 12 AI Live Translation Tools in 2026: Latency, Languages, Pricing",
+      "url": "https://www.marktechpost.com/2026/10/12/top-12-ai-live-translation-tools-2026/",
+      "snippet": "Compare 12 AI live translation tools by languages, latency, pricing, from Palabra's sub-second claim to Google's 70+ languages."
+    }
+  ]
+}

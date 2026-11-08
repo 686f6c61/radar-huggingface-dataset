@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "f23gg/Throated-Krea2",
+  "slug": "f23gg-throated-krea2",
+  "author": "f23gg",
+  "url": "https://huggingface.co/f23gg/Throated-Krea2",
+  "created_at": "2026-11-08T01:49:40.000Z",
+  "updated_at": "2026-11-08T01:49:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115392467,
+  "storage_human": "115 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "f23gg/Throated-Krea2 · Hugging Face",
+      "url": "https://huggingface.co/f23gg/Throated-Krea2",
+      "snippet": "Instructions to use f23gg/Throated-Krea2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use f23gg/Throated-Krea2 with Diffusers: ... Notebooks Google Colab Kaggle Local AppsSettings Draw Things DiffusionBee Throated Krea2 Trigger words Download model"
+    },
+    {
+      "title": "Throated Krea2 - Throated Krea2 v1.0 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.red/models/3011531/throated-krea2",
+      "snippet": "Throated is a concept LoRA for Krea2 that teaches the model one thing: deepthroat blowjobs that look natural, with believable depth, mouth shape and body position. It was trained on 128 photos real photos, shot from many angles, in many rooms and lighting setups, and with a wide range of women."
+    }
+  ]
+}

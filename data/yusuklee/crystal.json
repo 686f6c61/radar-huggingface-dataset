@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "yusuklee/Crystal",
+  "slug": "yusuklee-crystal",
+  "author": "yusuklee",
+  "url": "https://huggingface.co/yusuklee/Crystal",
+  "created_at": "2026-11-08T01:20:06.000Z",
+  "updated_at": "2026-11-08T01:21:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yusuklee (yusuklee) - Hugging Face",
+      "url": "https://huggingface.co/yusuklee",
+      "snippet": "LIFENOLOGY LAB 📰 Compare news recommendation models side‑by‑side yusuklee about 1 hour ago"
+    },
+    {
+      "title": "GitHub - yusuklee/Crystal",
+      "url": "https://github.com/yusuklee/Crystal",
+      "snippet": "Contribute to yusuklee/Crystal development by creating an account on GitHub."
+    }
+  ]
+}

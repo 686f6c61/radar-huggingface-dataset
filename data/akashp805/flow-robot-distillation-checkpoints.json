@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "akashp805/flow-robot-distillation-checkpoints",
+  "slug": "akashp805-flow-robot-distillation-checkpoints",
+  "author": "akashp805",
+  "url": "https://huggingface.co/akashp805/flow-robot-distillation-checkpoints",
+  "created_at": "2026-11-07T21:05:00.000Z",
+  "updated_at": "2026-11-07T21:06:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "jax",
+  "languages": [],
+  "tags": [
+    "jax",
+    "robotics",
+    "flow-matching",
+    "policy-distillation",
+    "robomimic",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 214795388,
+  "storage_human": "215 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FLUX 3 Action: A 7B World Action Model for Robot Control",
+      "url": "https://bfl.ai/models/flux-3-action",
+      "snippet": "7B open weights world action model. Turn FLUX’s visual intelligence into action for your robot, simulator, or game."
+    }
+  ]
+}

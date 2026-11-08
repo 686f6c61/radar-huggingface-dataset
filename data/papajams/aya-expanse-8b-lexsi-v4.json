@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Papajams/aya-expanse-8b-lexsi-v4",
+  "slug": "papajams-aya-expanse-8b-lexsi-v4",
+  "author": "Papajams",
+  "url": "https://huggingface.co/Papajams/aya-expanse-8b-lexsi-v4",
+  "created_at": "2026-11-08T01:23:03.000Z",
+  "updated_at": "2026-11-08T01:23:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "agentic-finetuning",
+    "lexsi-hackathon",
+    "base_model:CohereLabs/aya-expanse-8b",
+    "base_model:adapter:CohereLabs/aya-expanse-8b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187956326,
+  "storage_human": "188 MB",
+  "base_model": "CohereLabs/aya-expanse-8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CohereLabs/aya-expanse-8b · Hugging Face",
+      "url": "https://huggingface.co/CohereLabs/aya-expanse-8b",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jebish7/aya-expanse-8b · Hugging Face",
+      "url": "https://huggingface.co/jebish7/aya-expanse-8b",
+      "snippet": "Aya Expanse 8B is an open-weight research release of a model with highly advanced multilingual capabilities. It focuses on pairing a highly performant pre-trained Command family of models with the result of a year’s dedicated research from Cohere For AI, including data arbitrage, multilingual preference training, safety tuning, and model merging."
+    }
+  ]
+}

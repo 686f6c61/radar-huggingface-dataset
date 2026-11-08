@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "oscar128372/temp-10k-steps",
+  "slug": "oscar128372-temp-10k-steps",
+  "author": "oscar128372",
+  "url": "https://huggingface.co/oscar128372/temp-10k-steps",
+  "created_at": "2026-11-07T17:37:19.000Z",
+  "updated_at": "2026-11-08T02:36:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2203653,
+  "parameters_human": "2.2M",
+  "storage_bytes": 4418066,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oscar128372 (oscar lo) - Hugging Face",
+      "url": "https://huggingface.co/oscar128372/datasets",
+      "snippet": "oscar128372/chess_spatial_reasoning_10k Viewer • Updated Mar 7, 2025 • 10k • 12 • 1"
+    },
+    {
+      "title": "oscar128372 (oscar lo) - Hugging Face",
+      "url": "https://huggingface.co/oscar128372",
+      "snippet": "i like llm's idk published a model about 22 hours ago"
+    }
+  ]
+}

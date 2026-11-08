@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "phelipescript/ddsd-ptbr-albertina-sem-correcao",
+  "slug": "phelipescript-ddsd-ptbr-albertina-sem-correcao",
+  "author": "phelipescript",
+  "url": "https://huggingface.co/phelipescript/ddsd-ptbr-albertina-sem-correcao",
+  "created_at": "2026-11-07T20:00:51.000Z",
+  "updated_at": "2026-11-07T22:49:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta",
+    "text-classification",
+    "ddsd",
+    "device-directed-speech-detection",
+    "voice-assistant",
+    "brazilian-portuguese",
+    "control-model",
+    "pt",
+    "dataset:phelipescript/ddsd-ptbr-corpus",
+    "base_model:PORTULAN/albertina-100m-portuguese-ptbr-encoder",
+    "base_model:finetune:PORTULAN/albertina-100m-portuguese-ptbr-encoder",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 139193858,
+  "parameters_human": "139.2M",
+  "storage_bytes": 556799560,
+  "storage_human": "557 MB",
+  "base_model": "PORTULAN/albertina-100m-portuguese-ptbr-encoder",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "albertina-900m-portuguese-ptbr-encoder-brwac - Hugging Face",
+      "url": "https://huggingface.co/PORTULAN/albertina-900m-portuguese-ptbr-encoder-brwac",
+      "snippet": "Albertina PT-BR Albertina PT- * is a foundation, large language model for the Portuguese language. It is an encoder of the BERT family, based on the neural architecture Transformer and developed over the DeBERTa model, and with most competitive performance for this language. It has different versions that were trained for different variants of Portuguese (PT), namely the European variant from ..."
+    },
+    {
+      "title": "Albertina PT-* models - PORTULAN CLARIN",
+      "url": "https://portulanclarin.net/models/",
+      "snippet": "Home Models Albertina PT-* models Albertina PT-* is a foundation, large language model for the Portuguese language. It is an encoder of the BERT family, based on the neural architecture Transformer and developed over the DeBERTa model, with most competitive performance for this language."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-VL-32B-Grounding-GGUF",
+  "slug": "mradermacher-qwen2-5-vl-32b-grounding-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-VL-32B-Grounding-GGUF",
+  "created_at": "2025-11-19T05:14:38.000Z",
+  "updated_at": "2026-11-07T21:05:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "model-merging",
+    "optmerge",
+    "multimodal",
+    "qwen2.5-vl",
+    "visual-grounding",
+    "en",
+    "base_model:yongxianwei/Qwen2.5-VL-32B-Grounding",
+    "base_model:quantized:yongxianwei/Qwen2.5-VL-32B-Grounding",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 243,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 226117472096,
+  "storage_human": "226.1 GB",
+  "base_model": "yongxianwei/Qwen2.5-VL-32B-Grounding",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/qwen2.5-vl-3b-ui-grounding-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/qwen2.5-vl-3b-ui-grounding-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Qwen2.5 Vl 32b Grounding Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mradermacher/qwen2.5-vl-32b-grounding-gguf",
+      "snippet": "Registry entry for model Qwen2.5 Vl 32b Grounding Gguf; source metadata pending."
+    }
+  ]
+}

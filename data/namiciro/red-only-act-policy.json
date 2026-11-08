@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "namiciro/red-only-act-policy",
+  "slug": "namiciro-red-only-act-policy",
+  "author": "namiciro",
+  "url": "https://huggingface.co/namiciro/red-only-act-policy",
+  "created_at": "2026-11-08T02:49:05.000Z",
+  "updated_at": "2026-11-08T02:49:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:namiciro/red-to-right-v2",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "namiciro/red-blue-act-policy-30k · Hugging Face",
+      "url": "https://huggingface.co/namiciro/red-blue-act-policy-30k",
+      "snippet": "Instructions to use namiciro/red-blue-act-policy-30k with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use namiciro/red-blue-act-policy-30k with LeRobot: ... Notebooks Google Colab Kaggle Model Card for act Model Details Inputs & Outputs Training Dataset Training ..."
+    },
+    {
+      "title": "ACT (Action Chunking with Transformers) - Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/act",
+      "snippet": "ACT is a lightweight and efficient policy for imitation learning, especially well-suited for fine-grained manipulation tasks. It’s the first model we recommend when you’re starting out with LeRobot due to its fast training time, low computational requirements, and strong performance. Action ..."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "YukiKaze1337/cn-sqlite-4b",
+  "slug": "yukikaze1337-cn-sqlite-4b",
+  "author": "YukiKaze1337",
+  "url": "https://huggingface.co/YukiKaze1337/cn-sqlite-4b",
+  "created_at": "2026-11-06T07:28:25.000Z",
+  "updated_at": "2026-11-08T02:42:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "text-to-sql",
+    "sqlite",
+    "lora",
+    "text-generation",
+    "conversational",
+    "zh",
+    "dataset:YukiKaze1337/cn-sqlite-sft",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 7593387034,
+  "storage_human": "7.6 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YukiKaze1337 (ChuTongZhang) - Hugging Face",
+      "url": "https://huggingface.co/YukiKaze1337",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... updated a dataset about 4 hours ago"
+    },
+    {
+      "title": "SQLite-AI - On-device inference and embeddings inside SQLite",
+      "url": "https://www.sqlite.ai/sqlite-ai",
+      "snippet": "SQLite-AI adds local model inference, embeddings, chat, audio transcription, and multimodal image understanding to SQLite, ready to pair with offline sync and agent memory."
+    }
+  ]
+}

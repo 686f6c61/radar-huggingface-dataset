@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "OpceanAI/Qwen3.5-0.8B-abliterated-Qwenti",
+  "slug": "opceanai-qwen3-5-0-8b-abliterated-qwenti",
+  "author": "OpceanAI",
+  "url": "https://huggingface.co/OpceanAI/Qwen3.5-0.8B-abliterated-Qwenti",
+  "created_at": "2026-11-07T21:01:16.000Z",
+  "updated_at": "2026-11-07T21:03:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "abliteration",
+    "qwenputer",
+    "chip8",
+    "compiled-weights",
+    "gated-deltanet",
+    "exact-arithmetic",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:OpceanAI/Qwen3.5-0.8B-abliterated",
+    "base_model:finetune:OpceanAI/Qwen3.5-0.8B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1794664032,
+  "parameters_human": "1.79B",
+  "storage_bytes": 3611114499,
+  "storage_human": "3.6 GB",
+  "base_model": "OpceanAI/Qwen3.5-0.8B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpceanAI/Qwen3.5-0.8B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/OpceanAI/Qwen3.5-0.8B-abliterated",
+      "snippet": "The interesting part is not that it works. Many abliterated Qwen3.5-0.8B releases exist, and most report a refusal rate near zero. The interesting part is that this one ships the measurement: seven refusal categories, three jailbreak templates, twelve capability measurements with confidence intervals, and a significance test for every comparison."
+    },
+    {
+      "title": "OpceanAI/Qwen3.5-0.8B-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/OpceanAI/Qwen3.5-0.8B-abliterated-GGUF",
+      "snippet": "Instructions to use OpceanAI/Qwen3.5-0.8B-abliterated-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use OpceanAI/Qwen3.5-0.8B-abliterated-GGUF with Transformers:"
+    }
+  ]
+}

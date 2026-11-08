@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "MHkhan50/newssum-bart-base-bbc",
+  "slug": "mhkhan50-newssum-bart-base-bbc",
+  "author": "MHkhan50",
+  "url": "https://huggingface.co/MHkhan50/newssum-bart-base-bbc",
+  "created_at": "2026-11-08T01:17:43.000Z",
+  "updated_at": "2026-11-08T01:27:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bart",
+    "text2text-generation",
+    "summarization",
+    "news",
+    "bbc",
+    "newssum",
+    "en",
+    "dataset:pariza/bbc-news-summary",
+    "base_model:facebook/bart-base",
+    "base_model:quantized:facebook/bart-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 139470681,
+  "parameters_human": "139.5M",
+  "storage_bytes": 900950452,
+  "storage_human": "901 MB",
+  "base_model": "facebook/bart-base",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mini12347/Study_Hub: This project is an advanced AI-powered ...",
+      "url": "https://github.com/mini12347/Study_Hub",
+      "snippet": "This project is an advanced AI-powered study and content summarization suite. It leverages a fine-tuned BART model on the BBC News dataset to provide high-quality summarizations and includes multip..."
+    },
+    {
+      "title": "Building a Fine-Tuned BART News Summarizer: A Practical ... - Medium",
+      "url": "https://medium.com/@f223595/building-a-fine-tuned-bart-news-summarizer-a-practical-walkthrough-d302591759f0",
+      "snippet": "In this project, we fine-tune BART (facebook/bart-base) on the CNN/DailyMail dataset and wrap it in a clean, interactive Gradio interface."
+    }
+  ]
+}

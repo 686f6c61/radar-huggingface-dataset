@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "abhiprd2000/vehicle_classification_model-utd",
+  "slug": "abhiprd2000-vehicle_classification_model-utd",
+  "author": "abhiprd2000",
+  "url": "https://huggingface.co/abhiprd2000/vehicle_classification_model-utd",
+  "created_at": "2026-03-17T14:49:30.000Z",
+  "updated_at": "2026-11-08T01:46:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "autonomous-vehicles",
+    "ai-safety",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 102881946,
+  "storage_human": "103 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abhiprd2000/vehicle_classification_model-utd · Hugging Face",
+      "url": "https://huggingface.co/abhiprd2000/vehicle_classification_model-utd",
+      "snippet": "Vehicle Classification - UTD Evaluation This model is a custom CNN architecture trained to classify 8 categories of vehicles."
+    },
+    {
+      "title": "Vehicle Classification Model - a Hugging Face Space by abhiprd2000",
+      "url": "https://huggingface.co/spaces/abhiprd2000/vehicle_classification_model-utd",
+      "snippet": "Upload a picture of a vehicle, and the app will identify whether it is a bicycle, bus, car, motorcycle, taxi, truck, van, or a non‑vehicle. It returns the most likely categories along with their co..."
+    }
+  ]
+}

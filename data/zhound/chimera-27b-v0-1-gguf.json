@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "zhound/Chimera-27B-v0.1-GGUF",
+  "slug": "zhound-chimera-27b-v0-1-gguf",
+  "author": "zhound",
+  "url": "https://huggingface.co/zhound/Chimera-27B-v0.1-GGUF",
+  "created_at": "2026-11-07T20:57:51.000Z",
+  "updated_at": "2026-11-07T21:13:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "experimental",
+    "custom-code",
+    "weight-surgery",
+    "vision",
+    "reasoning",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:merge:Qwen/Qwen3.8-27B",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:merge:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356087296,
+  "parameters_human": "27.36B",
+  "storage_bytes": 47005707578,
+  "storage_human": "47.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B, deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Chimera-Qwen3.8-27B-Cyber-v1-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Chimera-Qwen3.8-27B-Cyber-v1-i1-GGUF",
+      "snippet": "mradermacher / Chimera-Qwen3.8-27B-Cyber-v1-i1-GGUF Like 1 Transformers GGUF English cybersecurity security offensive-security red-team pentesting bug-bounty cve exploit agentic tool-use qwen3 dense lora unsloth long-context conversational imatrix License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use ..."
+    },
+    {
+      "title": "mradermacher/Chimera-Qwen3.8-27B-Cyber-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Chimera-Qwen3.8-27B-Cyber-v1-GGUF",
+      "snippet": "mradermacher / Chimera-Qwen3.8-27B-Cyber-v1-GGUF like 1 Transformers GGUF English cybersecurity security offensive-security red-team pentesting bug-bounty cve exploit agentic tool-use qwen3 dense lora unsloth long-context conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

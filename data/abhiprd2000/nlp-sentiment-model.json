@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "abhiprd2000/nlp-sentiment-model",
+  "slug": "abhiprd2000-nlp-sentiment-model",
+  "author": "abhiprd2000",
+  "url": "https://huggingface.co/abhiprd2000/nlp-sentiment-model",
+  "created_at": "2026-03-10T20:08:30.000Z",
+  "updated_at": "2026-11-08T01:46:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "sentiment-analysis",
+    "nlp",
+    "pytorch",
+    "en",
+    "dataset:abhiprd2000/nlp-benchmark-suite",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 109484547,
+  "parameters_human": "109.5M",
+  "storage_bytes": 875923400,
+  "storage_human": "876 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Analysis",
+      "dataset": "NLP Benchmark Suite",
+      "metric": null,
+      "value": 0.8458
+    },
+    {
+      "task": "Sentiment Analysis",
+      "dataset": "NLP Benchmark Suite",
+      "metric": null,
+      "value": 0.7928
+    }
+  ],
+  "sources": [
+    {
+      "title": "abhiprd2000/nlp-sentiment-model · Hugging Face",
+      "url": "https://huggingface.co/abhiprd2000/nlp-sentiment-model",
+      "snippet": "BERT fine-tuned for 3-class sentiment analysis — positive, negative, neutral 📌 Model Description NLP Sentiment Model is a fine-tuned version of bert-base-uncased trained on the NLP Benchmark Suite dataset by Abhimanyu Prasad. The model classifies input text into three sentiment categories:"
+    },
+    {
+      "title": "abhiprd2000 (Abhimanyu Prasad) - Hugging Face",
+      "url": "https://huggingface.co/abhiprd2000",
+      "snippet": "abhiprd2000/nlp-sentiment-model Text Classification • 0.1B • Updated Mar 13 • 8 datasets 3"
+    }
+  ]
+}

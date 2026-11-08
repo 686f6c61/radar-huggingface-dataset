@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "myendless/action-repre-newtask14-n32-mixed-traj-text-qwen3-w384-l28-interp-head10k-4ddaeabc",
+  "slug": "myendless-action-repre-newtask14-n32-mixed-traj-text-qwen3-w384-l28-interp-head10k-4ddaeabc",
+  "author": "myendless",
+  "url": "https://huggingface.co/myendless/action-repre-newtask14-n32-mixed-traj-text-qwen3-w384-l28-interp-head10k-4ddaeabc",
+  "created_at": "2026-11-08T02:31:10.000Z",
+  "updated_at": "2026-11-08T02:54:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "action-representation",
+    "qwen3",
+    "width-interpolation",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9901100226,
+  "storage_human": "9.9 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "myendless/action-repre-newtask14-n32-rawvlm-layerwise384-l36-head10k ...",
+      "url": "https://huggingface.co/myendless/action-repre-newtask14-n32-rawvlm-layerwise384-l36-head10k-99cde744",
+      "snippet": "This readout is an architecture change from the historical 28-layer Qwen3 action expert, not a width-only v4 ablation. metadata/ preserves training configuration, manifest, normalization and completion records. provenance/ preserves reviewed protocol, matching training-code snapshot and environment inventory."
+    },
+    {
+      "title": "myendless/action-repre-newtask14-n32-base-layerwise384-l36-head10k ...",
+      "url": "https://huggingface.co/myendless/action-repre-newtask14-n32-base-layerwise384-l36-head10k-763c91f4",
+      "snippet": "This readout is an architecture change from the historical 28-layer Qwen3 action expert, not a width-only v4 ablation. metadata/ preserves training configuration, manifest, normalization and completion records. provenance/ preserves reviewed protocol, matching training-code snapshot and environment inventory."
+    }
+  ]
+}

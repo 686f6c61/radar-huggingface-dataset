@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "unixmonk/SassyKat",
+  "slug": "unixmonk-sassykat",
+  "author": "unixmonk",
+  "url": "https://huggingface.co/unixmonk/SassyKat",
+  "created_at": "2026-11-07T14:36:56.000Z",
+  "updated_at": "2026-11-07T22:09:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "base_model:quantized:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 21166757856,
+  "storage_human": "21.2 GB",
+  "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unixmonk (Unix monk) - Hugging Face",
+      "url": "https://huggingface.co/unixmonk",
+      "snippet": "AI & ML interests ... Recent Activity updated a bucket about 2 hours ago ... updated a model about 15 hours ago"
+    },
+    {
+      "title": "unixmonk (Unix monk) - Hugging Face",
+      "url": "https://huggingface.co/unixmonk/models",
+      "snippet": "User profile of Unix monk on Hugging Face"
+    }
+  ]
+}

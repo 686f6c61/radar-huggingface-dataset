@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "arach/transcript-cleanup-tiny",
+  "slug": "arach-transcript-cleanup-tiny",
+  "author": "arach",
+  "url": "https://huggingface.co/arach/transcript-cleanup-tiny",
+  "created_at": "2026-11-07T21:36:35.000Z",
+  "updated_at": "2026-11-07T21:39:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "transcript-cleanup",
+    "experimental",
+    "keep-delete",
+    "en",
+    "base_model:google/bert_uncased_L-2_H-128_A-2",
+    "base_model:finetune:google/bert_uncased_L-2_H-128_A-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4369666,
+  "parameters_human": "4.4M",
+  "storage_bytes": 17483080,
+  "storage_human": "17 MB",
+  "base_model": "google/bert_uncased_L-2_H-128_A-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Clean Transcript",
+      "url": "https://transcript.im/clean-transcript",
+      "snippet": "Get a clean transcript with AI: remove filler words, fix punctuation, and turn raw speech into readable text with the timestamps preserved."
+    },
+    {
+      "title": "Free AI Transcript Cleaner – Remove Timestamps & Fillers - VoiceDash",
+      "url": "https://voicedash.ai/tools/ai-transcript-cleaner/",
+      "snippet": "Free AI Transcript Cleaner Paste a rough transcript or upload TXT, SRT, or VTT. Remove timestamps, filler words, repeated phrases, broken caption lines, and messy formatting without losing the original meaning."
+    }
+  ]
+}

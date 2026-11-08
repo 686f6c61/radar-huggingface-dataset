@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "YellowDuckSweater/microduck-sprint-2m-run-1107-0908-67",
+  "slug": "yellowducksweater-microduck-sprint-2m-run-1107-0908-67",
+  "author": "YellowDuckSweater",
+  "url": "https://huggingface.co/YellowDuckSweater/microduck-sprint-2m-run-1107-0908-67",
+  "created_at": "2026-11-07T21:46:45.000Z",
+  "updated_at": "2026-11-07T21:46:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5643401,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Helldave/microduck-sprint-2m-run-1027-2224 · Hugging Face",
+      "url": "https://huggingface.co/Helldave/microduck-sprint-2m-run-1027-2224",
+      "snippet": "Robotics model, built with Microduck. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Buy Microduck: Small robot. Super smart.",
+      "url": "https://microducks.org/",
+      "snippet": "Buy the 10 inch bipedal AI robot from NVIDIA GTC Berlin. Official Microduck preorders from $499."
+    }
+  ]
+}

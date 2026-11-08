@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "necropopeost/S5-nano-MLX-4bit-vision",
+  "slug": "necropopeost-s5-nano-mlx-4bit-vision",
+  "author": "necropopeost",
+  "url": "https://huggingface.co/necropopeost/S5-nano-MLX-4bit-vision",
+  "created_at": "2026-11-08T00:53:32.000Z",
+  "updated_at": "2026-11-08T00:55:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "vision",
+    "multimodal",
+    "maritaca",
+    "s5-nano",
+    "pt",
+    "en",
+    "base_model:maritaca-ai/S5-nano",
+    "base_model:quantized:maritaca-ai/S5-nano",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 3047110016,
+  "storage_human": "3.0 GB",
+  "base_model": "maritaca-ai/S5-nano",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA Nemotron 3 Family of Models - NVIDIA Nemotron",
+      "url": "https://research.nvidia.com/labs/nemotron/Nemotron-3/",
+      "snippet": "Update: Nemotron 3 Ultra is now released! Ultra Blog We announce NVIDIA Nemotron 3, the most efficient family of open models with leading accuracy for agentic AI applications. The Nemotron 3 family consists of three models: Nano, Super, and Ultra. These models deliver strong agentic, reasoning, and conversational capabilities."
+    },
+    {
+      "title": "Run S5-nano API: Serverless Inference, No GPU Needed",
+      "url": "https://featherless.ai/models/maritaca-ai/S5-nano",
+      "snippet": "maritaca-ai/S5-nano (4.5B vision model, 32K context). Call it via a serverless, OpenAI-compatible API."
+    }
+  ]
+}

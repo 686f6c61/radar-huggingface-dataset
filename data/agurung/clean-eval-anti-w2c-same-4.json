@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "agurung/clean-eval-anti-w2c-same-4",
+  "slug": "agurung-clean-eval-anti-w2c-same-4",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/clean-eval-anti-w2c-same-4",
+  "created_at": "2026-11-07T23:52:43.000Z",
+  "updated_at": "2026-11-07T23:52:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "diversity",
+    "uniform",
+    "trl",
+    "cobalt",
+    "sft",
+    "conversational",
+    "dataset:cobalt-traces-anti_w2c_same_4",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1068455874,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agurung/clean-eval-rft-w2c-same-4-vs · Hugging Face",
+      "url": "https://huggingface.co/agurung/clean-eval-rft-w2c-same-4-vs",
+      "snippet": "Model Card for None This model is a fine-tuned version of Qwen/Qwen3-4B-Instruct-2507 on the cobalt-traces-rft_w2c_same_4_vs dataset. It has been trained using TRL."
+    },
+    {
+      "title": "CLEAN-EVAL: Clean Evaluation on Contaminated Large Language Models",
+      "url": "https://www.emergentmind.com/papers/2311.09154",
+      "snippet": "All candidates can form a new benchmark to evaluate the model. Our experiments illustrate that Clean-Eval substantially restores the actual evaluation results on contaminated LLMs under both few-shot learning and fine-tuning scenarios."
+    }
+  ]
+}

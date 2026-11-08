@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Demondiablo/Qwen3-4B-Instruct-2507-AWQ-4bit",
+  "slug": "demondiablo-qwen3-4b-instruct-2507-awq-4bit",
+  "author": "Demondiablo",
+  "url": "https://huggingface.co/Demondiablo/Qwen3-4B-Instruct-2507-AWQ-4bit",
+  "created_at": "2026-11-01T09:35:38.000Z",
+  "updated_at": "2026-11-07T21:05:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "awq",
+    "4-bit",
+    "quantized",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:quantized:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2677450322,
+  "storage_human": "2.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507",
+      "snippet": "Text Generation model with 4B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "warshanks/Qwen3-4B-Instruct-2507-AWQ · Hugging Face",
+      "url": "https://huggingface.co/warshanks/Qwen3-4B-Instruct-2507-AWQ",
+      "snippet": "Instructions to use warshanks/Qwen3-4B-Instruct-2507-AWQ with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use warshanks/Qwen3-4B-Instruct-2507-AWQ with Transformers:"
+    }
+  ]
+}

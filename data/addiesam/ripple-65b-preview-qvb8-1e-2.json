@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "addiesam/Ripple-65B-Preview-QVB8-1e-2",
+  "slug": "addiesam-ripple-65b-preview-qvb8-1e-2",
+  "author": "addiesam",
+  "url": "https://huggingface.co/addiesam/Ripple-65B-Preview-QVB8-1e-2",
+  "created_at": "2026-11-08T01:55:41.000Z",
+  "updated_at": "2026-11-08T01:55:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "qvb8",
+  "languages": [],
+  "tags": [
+    "qvb8",
+    "quantization",
+    "compression",
+    "certified-compression",
+    "linf-bounded",
+    "certified-error",
+    "ripple",
+    "text-generation",
+    "base_model:ricursiveAI/Ripple-65B-Preview",
+    "base_model:quantized:ricursiveAI/Ripple-65B-Preview",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "ricursiveAI/Ripple-65B-Preview",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ricursiveAI/Ripple-65B-Preview · Hugging Face",
+      "url": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
+      "snippet": "Machine learning model with 65B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Ripple-65B Preview, a Frontier Open-Weight Model | Ricursive Intelligence",
+      "url": "https://www.ricursive.com/ripple",
+      "snippet": "We optimized the model architecture for our training and serving platforms, driving substantial efficiency gains. Today, we release Ripple-65B Preview, a general-purpose variant of the proprietary model that powers our AI chip design platform."
+    }
+  ]
+}

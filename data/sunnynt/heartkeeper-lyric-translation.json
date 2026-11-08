@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Sunnynt/heartkeeper-lyric-translation",
+  "slug": "sunnynt-heartkeeper-lyric-translation",
+  "author": "Sunnynt",
+  "url": "https://huggingface.co/Sunnynt/heartkeeper-lyric-translation",
+  "created_at": "2026-11-08T03:55:16.000Z",
+  "updated_at": "2026-11-08T03:56:33.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "marian",
+    "opus-mt",
+    "lyrics",
+    "translation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1073127884,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lyrics Finder: Get Lyrics from Any Audio with AI | RemoveVocals",
+      "url": "https://removevocals.ai/lyrics-finder",
+      "snippet": "What is Audio to Lyrics AI? Audio to Lyrics AI is a free online tool that uses artificial intelligence to transcribe sung vocals from any audio file (MP3, WAV, FLAC, OGG, M4A) into full written lyrics. It works in 17 languages with automatic detection, handles unreleased songs and demos, with one free transcription per account."
+    },
+    {
+      "title": "HuggingArtists | Train a model to generate lyrics",
+      "url": "https://discuss.huggingface.co/t/huggingartists-train-a-model-to-generate-lyrics/9045",
+      "snippet": "In HuggingArtists, we can generate lyrics by a specific artist. This was made by fine-tuning a pre-trained HuggingFace Transformer on parsed datasets from Genius. As well, we use Weights & Biases integration to automatically log model performance and predictions. Project repository: About Create training script for TPU with Flax/JAX. So users can choose GPU or TPU in Colab. Model A pre-trained ..."
+    }
+  ]
+}

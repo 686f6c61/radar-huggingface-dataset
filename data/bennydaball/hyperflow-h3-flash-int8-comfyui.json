@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "BennyDaBall/HyperFlow-H3-Flash-INT8-ComfyUI",
+  "slug": "bennydaball-hyperflow-h3-flash-int8-comfyui",
+  "author": "BennyDaBall",
+  "url": "https://huggingface.co/BennyDaBall/HyperFlow-H3-Flash-INT8-ComfyUI",
+  "created_at": "2026-11-07T21:49:23.000Z",
+  "updated_at": "2026-11-08T02:26:02.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "hyperflow-h3",
+    "comfyui",
+    "int8",
+    "convrot",
+    "unofficial",
+    "audio-video-generation",
+    "text-to-video",
+    "image-to-video",
+    "reference-to-video",
+    "few-step",
+    "image-text-to-video",
+    "base_model:VideoRebirthAI/hyperflow-h3-flash",
+    "base_model:quantized:VideoRebirthAI/hyperflow-h3-flash",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32246114381,
+  "storage_human": "32.2 GB",
+  "base_model": "VideoRebirthAI/hyperflow-h3-flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HyperFlow H3 Flash — Real-Time 768p Video Generation | Video Rebirth",
+      "url": "https://www.videorebirth.com/lp/hyperflow-flash",
+      "snippet": "HyperFlow H3 Flash is a 14B, six-step video model built on MiniMax H3. It generates 768p video in real time on four B200 GPUs and runs on consumer hardware."
+    },
+    {
+      "title": "VideoRebirthAI/hyperflow-h3-flash · Hugging Face",
+      "url": "https://huggingface.co/VideoRebirthAI/hyperflow-h3-flash",
+      "snippet": "HyperFlow H3 Flash is Video Rebirth's compressed, few-step version of MiniMax-H3. It generates video and synchronized stereo audio together. Showcase: See HyperFlow H3 Flash generated video and audio examples ..."
+    }
+  ]
+}

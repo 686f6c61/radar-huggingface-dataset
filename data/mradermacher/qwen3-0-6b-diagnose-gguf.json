@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3-0.6B-Diagnose-GGUF",
+  "slug": "mradermacher-qwen3-0-6b-diagnose-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3-0.6B-Diagnose-GGUF",
+  "created_at": "2025-05-30T21:13:35.000Z",
+  "updated_at": "2026-11-07T22:13:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "trl",
+    "sft",
+    "en",
+    "dataset:suayptalha/Diagnose-Instructions",
+    "base_model:suayptalha/Qwen3-0.6B-Diagnose",
+    "base_model:quantized:suayptalha/Qwen3-0.6B-Diagnose",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 5697968640,
+  "storage_human": "5.7 GB",
+  "base_model": "suayptalha/Qwen3-0.6B-Diagnose",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3-0.6B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3-0.6B-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/Qwen3-0.6B-Diagnose-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3-0.6B-Diagnose-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    }
+  ]
+}

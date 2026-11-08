@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "ethanwtodd/Sage-A1.5-Q4_K-Q8_0-GGUF",
+  "slug": "ethanwtodd-sage-a1-5-q4_k-q8_0-gguf",
+  "author": "ethanwtodd",
+  "url": "https://huggingface.co/ethanwtodd/Sage-A1.5-Q4_K-Q8_0-GGUF",
+  "created_at": "2026-11-07T21:22:41.000Z",
+  "updated_at": "2026-11-07T21:51:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "sage",
+    "qwen35moe",
+    "moe",
+    "text-generation",
+    "base_model:InternScience/Sage-A1.5",
+    "base_model:quantized:InternScience/Sage-A1.5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 21170203264,
+  "storage_human": "21.2 GB",
+  "base_model": "InternScience/Sage-A1.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "InternScience/Sage-A1.5 · Hugging Face",
+      "url": "https://huggingface.co/InternScience/Sage-A1.5",
+      "snippet": "Text Generation model with 36B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "InternScience/Sage-A1.5-Q4_K_M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/InternScience/Sage-A1.5-Q4_K_M-GGUF",
+      "snippet": "Text Generation model with 36B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

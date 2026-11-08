@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Respair/Nichijou_TTS",
+  "slug": "respair-nichijou_tts",
+  "author": "Respair",
+  "url": "https://huggingface.co/Respair/Nichijou_TTS",
+  "created_at": "2026-11-05T10:38:43.000Z",
+  "updated_at": "2026-11-08T04:11:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "TTS",
+    "speech",
+    "ja",
+    "en",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Respair/Nichijou_TTS · Hugging Face",
+      "url": "https://huggingface.co/Respair/Nichijou_TTS",
+      "snippet": "Respair / Nichijou_TTS Like 0 Japanese English TTS speech Model card FilesFiles and versions xet Community Copy to bucket [TBA] a Powerful, large scale Japanese speech and conversation synthesizer It will be open sourced soon Downloads last month -"
+    }
+  ]
+}

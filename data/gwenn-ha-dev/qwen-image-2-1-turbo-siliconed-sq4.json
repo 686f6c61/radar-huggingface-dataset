@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "gwenn-ha-dev/Qwen-Image-2.1-Turbo-Siliconed-SQ4",
+  "slug": "gwenn-ha-dev-qwen-image-2-1-turbo-siliconed-sq4",
+  "author": "gwenn-ha-dev",
+  "url": "https://huggingface.co/gwenn-ha-dev/Qwen-Image-2.1-Turbo-Siliconed-SQ4",
+  "created_at": "2026-11-07T21:07:33.000Z",
+  "updated_at": "2026-11-07T21:08:20.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "siliconed",
+    "apple-silicon",
+    "metal",
+    "quantized",
+    "4-bit",
+    "gptq",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1-Turbo",
+    "base_model:quantized:Qwen/Qwen-Image-2.1-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4385824160,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen-Image-2.1-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen-Image-2.1-Turbo · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
+      "snippet": "Text-to-Image model with 7B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio:qwen-image-2.1-turbo",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen-image-2-1-turbo",
+      "snippet": "Qwen-Image-2.1-Turbo is the most balanced and cost-effective open-source image generation model currently available in the Qwen-Image series. Qwen-Image-2.1 offers four key strengths: Compact Model, Strong Performance, Exceptional Value. Native Transparency, Unified Generation and Editing. Versatile Editing: Multiple References, Local Control, Fidelity, and Comprehensive Capabilities ..."
+    }
+  ]
+}

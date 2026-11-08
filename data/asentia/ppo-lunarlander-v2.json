@@ -5,7 +5,7 @@
   "author": "Asentia",
   "url": "https://huggingface.co/Asentia/ppo-LunarLander-v2",
   "created_at": "2026-11-07T10:47:21.000Z",
-  "updated_at": "2026-11-07T10:51:03.000Z",
+  "updated_at": "2026-11-07T10:53:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",

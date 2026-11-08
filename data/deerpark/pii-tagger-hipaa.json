@@ -5,7 +5,7 @@
   "author": "Deerpark",
   "url": "https://huggingface.co/Deerpark/pii-tagger-hipaa",
   "created_at": "2026-11-05T00:05:05.000Z",
-  "updated_at": "2026-11-05T01:13:49.000Z",
+  "updated_at": "2026-11-07T07:13:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -39,8 +39,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 271550162,
-  "storage_human": "272 MB",
+  "storage_bytes": 543100323,
+  "storage_human": "543 MB",
   "base_model": "Deerpark/pii-tagger-edge",
   "formats": [
     "onnx"

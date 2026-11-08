@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "araysuter/Ornith-1.5-122B-MLX-mixed-2bit-group32",
+  "slug": "araysuter-ornith-1-5-122b-mlx-mixed-2bit-group32",
+  "author": "araysuter",
+  "url": "https://huggingface.co/araysuter/Ornith-1.5-122B-MLX-mixed-2bit-group32",
+  "created_at": "2026-10-20T20:45:39.000Z",
+  "updated_at": "2026-11-07T22:44:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "quantized",
+    "mixed-precision",
+    "2-bit",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-122B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-122B",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 397,
+  "trending_score": 0,
+  "parameters": 122562817776,
+  "parameters_human": "122.56B",
+  "storage_bytes": 47882582409,
+  "storage_human": "47.9 GB",
+  "base_model": "ornith-ai/Ornith-1.5-122B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ornith-1.5-122B-MLX-mixed-2bit-group32 - Hugging Face",
+      "url": "https://huggingface.co/araysuter/Ornith-1.5-122B-MLX-mixed-2bit-group32",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "araysuter/Ornith-1.5-122B-MLX-mixed-2bit · Hugging Face",
+      "url": "https://huggingface.co/araysuter/Ornith-1.5-122B-MLX-mixed-2bit",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

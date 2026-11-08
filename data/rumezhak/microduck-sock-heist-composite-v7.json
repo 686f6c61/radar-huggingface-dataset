@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "rumezhak/microduck-sock-heist-composite-v7",
+  "slug": "rumezhak-microduck-sock-heist-composite-v7",
+  "author": "rumezhak",
+  "url": "https://huggingface.co/rumezhak/microduck-sock-heist-composite-v7",
+  "created_at": "2026-11-07T22:02:08.000Z",
+  "updated_at": "2026-11-07T22:02:28.000Z",
+  "license": "`",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "microduck-arena",
+    "robotics",
+    "base_model:jrubiosainz/microduck-sock-heist-6m-wr1n-3f7c858c",
+    "base_model:merge:jrubiosainz/microduck-sock-heist-6m-wr1n-3f7c858c",
+    "base_model:rumezhak/microduck-sock-heist-composite-v5",
+    "base_model:merge:rumezhak/microduck-sock-heist-composite-v5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1212498,
+  "storage_human": "1 MB",
+  "base_model": "rumezhak/microduck-sock-heist-composite-v5, jrubiosainz/microduck-sock-heist-6m-wr1n-3f7c858c",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rumezhak/microduck-sock-heist-composite-v6 · Hugging Face",
+      "url": "https://huggingface.co/rumezhak/microduck-sock-heist-composite-v6",
+      "snippet": "Robotics model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "rumezhak/microduck-sock-heist-composite-v5 · Hugging Face",
+      "url": "https://huggingface.co/rumezhak/microduck-sock-heist-composite-v5",
+      "snippet": "Instructions to use rumezhak/microduck-sock-heist-composite-v5 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Microduck How to use rumezhak/microduck-sock-heist-composite-v5 with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade). sudo robotctl ..."
+    }
+  ]
+}

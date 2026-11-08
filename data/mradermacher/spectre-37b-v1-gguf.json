@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Spectre-37B-v1-GGUF",
+  "slug": "mradermacher-spectre-37b-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Spectre-37B-v1-GGUF",
+  "created_at": "2026-11-07T23:11:03.000Z",
+  "updated_at": "2026-11-07T23:38:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:TheDrummer/Spectre-37B-v1",
+    "base_model:quantized:TheDrummer/Spectre-37B-v1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36554956360,
+  "parameters_human": "36.55B",
+  "storage_bytes": 76021777696,
+  "storage_human": "76.0 GB",
+  "base_model": "TheDrummer/Spectre-37B-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BeaverAI/Spectre-37B-v1a-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/BeaverAI/Spectre-37B-v1a-GGUF/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · BeaverAI/Spectre-37B-v1a-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/BeaverAI/Spectre-37B-v1a-GGUF/blob/main/README.md",
+      "snippet": "Pull the model ... Run and chat with the model ... List all available models lemonade list Hermes Agent How to use BeaverAI/Spectre-37B-v1a-GGUF with Hermes Agent: Start the llama.cpp server ... Configure Hermes ... Run Hermes hermes Atomic Chat OpenClaw How to use BeaverAI/Spectre-37B-v1a-GGUF with OpenClaw: Start the llama.cpp server ..."
+    }
+  ]
+}

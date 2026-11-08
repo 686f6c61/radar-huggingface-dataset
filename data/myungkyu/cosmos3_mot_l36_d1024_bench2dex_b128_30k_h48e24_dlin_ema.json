@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Myungkyu/cosmos3_mot_l36_d1024_bench2dex_b128_30k_h48e24_dlin_ema",
+  "slug": "myungkyu-cosmos3_mot_l36_d1024_bench2dex_b128_30k_h48e24_dlin_ema",
+  "author": "Myungkyu",
+  "url": "https://huggingface.co/Myungkyu/cosmos3_mot_l36_d1024_bench2dex_b128_30k_h48e24_dlin_ema",
+  "created_at": "2026-11-07T21:37:49.000Z",
+  "updated_at": "2026-11-07T21:49:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "cosmos-framework",
+  "languages": [],
+  "tags": [
+    "cosmos-framework",
+    "robotics",
+    "world-model",
+    "action-policy",
+    "cosmos3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32002067073,
+  "storage_human": "32.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cosmos3_mot_l36_d1024_bench2dex_all26_b128_30k_h48e24",
+      "url": "https://huggingface.co/Myungkyu/cosmos3_mot_l36_d1024_bench2dex_all26_b128_30k_h48e24",
+      "snippet": "Cosmos3-Nano video world model fine-tuned with an external action DiT (one-way video-to-action conditioning, shared action schedule) for closed-loop robot control. Dataset: Bench2Dex UR5 + RH56DFX hand (LeRobot v3.0). Weights: the regular weights (net.*) of the final training checkpoint, bf16, as a ..."
+    },
+    {
+      "title": "cosmos3_mot_l36_d1024_bench2dex_b64_60k_h48e24 - Hugging Face",
+      "url": "https://huggingface.co/Myungkyu/cosmos3_mot_l36_d1024_bench2dex_b64_60k_h48e24",
+      "snippet": "Cosmos3-Nano video world model fine-tuned with an external action DiT (one-way video-to-action conditioning, shared action schedule) for closed-loop robot control. Dataset: Bench2Dex UR5 + RH56DFX hand (LeRobot v3.0). Weights: the regular weights (net.*) of the final training checkpoint, bf16, as a ..."
+    }
+  ]
+}

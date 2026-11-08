@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "rimusa/spa_CEFR-essay-classification",
+  "slug": "rimusa-spa_cefr-essay-classification",
+  "author": "rimusa",
+  "url": "https://huggingface.co/rimusa/spa_CEFR-essay-classification",
+  "created_at": "2026-11-08T02:38:09.000Z",
+  "updated_at": "2026-11-08T02:39:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109854725,
+  "parameters_human": "109.9M",
+  "storage_bytes": 439442436,
+  "storage_human": "439 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rimusa (Ricardo Muñoz Sánchez) - Hugging Face",
+      "url": "https://huggingface.co/rimusa/datasets",
+      "snippet": "rimusa 11 Follow 21world's profile picture 1 follower · 3 following https://rimusa.github.io _rimusa_ rimusa"
+    },
+    {
+      "title": "rimusa/por_CEFR-essay-classification · Hugging Face",
+      "url": "https://huggingface.co/rimusa/por_CEFR-essay-classification",
+      "snippet": "Instructions to use rimusa/por_CEFR-essay-classification with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use rimusa/por_CEFR-essay-classification with Transformers:"
+    }
+  ]
+}

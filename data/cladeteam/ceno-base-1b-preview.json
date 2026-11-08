@@ -5,7 +5,7 @@
   "author": "CladeTeam",
   "url": "https://huggingface.co/CladeTeam/CENO-base-1b-preview",
   "created_at": "2026-06-20T07:46:36.000Z",
-  "updated_at": "2026-11-07T03:39:02.000Z",
+  "updated_at": "2026-11-07T17:05:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

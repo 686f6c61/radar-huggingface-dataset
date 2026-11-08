@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "IsValorum/ThinkingCap-Gemma-4-26B-A4B-it-APEX-I-NanoPlus-V2.1-GGUF",
+  "slug": "isvalorum-thinkingcap-gemma-4-26b-a4b-it-apex-i-nanoplus-v2-1-gguf-2",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/ThinkingCap-Gemma-4-26B-A4B-it-APEX-I-NanoPlus-V2.1-GGUF",
+  "created_at": "2026-11-07T21:40:13.000Z",
+  "updated_at": "2026-11-07T22:02:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "apex",
+    "apex-i",
+    "thinkingcap",
+    "gemma4",
+    "moe",
+    "imatrix",
+    "image-text-to-text",
+    "base_model:bottlecapai/ThinkingCap-gemma-4-26B-A4B-it",
+    "base_model:quantized:bottlecapai/ThinkingCap-gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 10654839616,
+  "storage_human": "10.7 GB",
+  "base_model": "bottlecapai/ThinkingCap-gemma-4-26B-A4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bottlecapai/ThinkingCap-gemma-4-26B-A4B-it · Hugging Face",
+      "url": "https://huggingface.co/bottlecapai/ThinkingCap-gemma-4-26B-A4B-it",
+      "snippet": "ThinkingCap brings our shorter-thinking post-training to gemma-4-26B-A4B-it (Google DeepMind, 2026), a mixture-of-experts model with image input. ThinkingCap gemma-4-26B-A4B-it cuts reasoning tokens by 38.9% on average (14% to 69% depending on the benchmark) at an average accuracy of 75.0% against the base model's 75.2%."
+    },
+    {
+      "title": "ThinkingCap: Gemma-4-26B-A4B — up to 69% and on average 39% less ...",
+      "url": "https://bottlecapai.com/post/thinkingcap-gemma-4-26b/",
+      "snippet": "This is the fifth model in the ThinkingCap series. We reduced how much Google's gemma-4-26B-A4B-it thinks, without compromising the quality of its answers."
+    }
+  ]
+}

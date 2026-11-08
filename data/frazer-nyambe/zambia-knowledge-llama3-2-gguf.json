@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "frazer-nyambe/zambia-knowledge-llama3.2-gguf",
+  "slug": "frazer-nyambe-zambia-knowledge-llama3-2-gguf",
+  "author": "frazer-nyambe",
+  "url": "https://huggingface.co/frazer-nyambe/zambia-knowledge-llama3.2-gguf",
+  "created_at": "2026-11-07T23:59:33.000Z",
+  "updated_at": "2026-11-08T00:00:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2019378240,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "frazer-nyambe (frazer nyambe) - Hugging Face",
+      "url": "https://huggingface.co/frazer-nyambe",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 months ago ... published a model about 2 months ago"
+    },
+    {
+      "title": "finetuned-llama3.1-with_zambian_knowledge - Hugging Face",
+      "url": "https://huggingface.co/frazer-nyambe/finetuned-llama3.1-with_zambian_knowledge",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

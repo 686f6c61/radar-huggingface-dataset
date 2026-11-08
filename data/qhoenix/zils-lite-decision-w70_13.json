@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "qhoenix/zils-lite-decision-w70_13",
+  "slug": "qhoenix-zils-lite-decision-w70_13",
+  "author": "qhoenix",
+  "url": "https://huggingface.co/qhoenix/zils-lite-decision-w70_13",
+  "created_at": "2026-11-07T21:15:49.000Z",
+  "updated_at": "2026-11-07T21:16:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "feature-extraction",
+    "decision-model",
+    "zils",
+    "d3-lite",
+    "custom_code",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1719880230,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zils — Teach AI to make decisions your way.",
+      "url": "https://zils.ai/",
+      "snippet": "Zils Zils Teach AI to make decisions your way. Show Zils examples with the right answers. It trains a small model your app can use to sort requests, flag problems, or score matches."
+    }
+  ]
+}

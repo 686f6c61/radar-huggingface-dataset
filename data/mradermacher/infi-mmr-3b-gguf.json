@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Infi-MMR-3B-GGUF",
+  "slug": "mradermacher-infi-mmr-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Infi-MMR-3B-GGUF",
+  "created_at": "2025-06-03T16:38:52.000Z",
+  "updated_at": "2026-11-08T02:36:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:InfiX-ai/Infi-MMR-3B",
+    "base_model:quantized:InfiX-ai/Infi-MMR-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 74,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 32778697536,
+  "storage_human": "32.8 GB",
+  "base_model": "InfiX-ai/Infi-MMR-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "GitHub - InfiXAI/Infi-MMR",
+      "url": "https://github.com/InfiXAI/Infi-MMR",
+      "snippet": "In this work, we design a novel framework, Infi-MMR, to systematically unlock the reasoning potential of Multimodal Small Language Models (MSLMs) through a curriculum of three carefully structured phases and propose our multimodal reasoning model Infi-MMR-3B. Specially, Infi-MMR, a curriculum-based ..."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Glimmerveil/Llama-3.2-1B-Instruct-Pixie-GGUF",
+  "slug": "glimmerveil-llama-3-2-1b-instruct-pixie-gguf",
+  "author": "Glimmerveil",
+  "url": "https://huggingface.co/Glimmerveil/Llama-3.2-1B-Instruct-Pixie-GGUF",
+  "created_at": "2026-11-08T02:15:05.000Z",
+  "updated_at": "2026-11-08T02:16:56.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama",
+    "glimmerveil",
+    "pixie",
+    "en",
+    "base_model:meta-llama/Llama-3.2-1B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.2-1B-Instruct",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 1321082688,
+  "storage_human": "1.3 GB",
+  "base_model": "meta-llama/Llama-3.2-1B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/Llama-3.2-1B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF",
+      "snippet": "Text Generation model with 1B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "meta-llama/Llama-3.2-1B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct",
+      "snippet": "Text Generation model with 1B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

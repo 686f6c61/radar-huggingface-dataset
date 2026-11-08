@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "gesh75/netops-intent2cli-qwen0.5b-lora",
+  "slug": "gesh75-netops-intent2cli-qwen0-5b-lora",
+  "author": "gesh75",
+  "url": "https://huggingface.co/gesh75/netops-intent2cli-qwen0.5b-lora",
+  "created_at": "2026-11-07T22:00:12.000Z",
+  "updated_at": "2026-11-07T22:00:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "networking",
+    "network-automation",
+    "cli",
+    "text-generation",
+    "dataset:gesh75/netops-intent2cli",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8676008,
+  "storage_human": "9 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GESH Lab — Network & AI Engineering",
+      "url": "https://gesh75.github.io/",
+      "snippet": "Documentation hub for Georgi Gaydarov's open-source network automation and AI-for-NetOps projects — closed-loop labs, air-gapped change validation, an agentic pentester, and a 70k-command CLI reference."
+    },
+    {
+      "title": "GitHub - gesh75/gesh-ai-network-tool: AI-native network ops platform ...",
+      "url": "https://github.com/gesh75/gesh-ai-network-tool",
+      "snippet": "AI-native network ops platform — 18 dashboard tabs, 10-node FRR lab, Qwen3 on-prem LLM, Agent Chat, OSPF auto-discovery, Nornir parallel engine, Batfish pre-deploy validation - gesh75/gesh-ai-network-tool"
+    }
+  ]
+}

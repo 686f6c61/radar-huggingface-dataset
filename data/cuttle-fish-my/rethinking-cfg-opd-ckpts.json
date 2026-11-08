@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Cuttle-fish-my/Rethinking-CFG-OPD-ckpts",
+  "slug": "cuttle-fish-my-rethinking-cfg-opd-ckpts",
+  "author": "Cuttle-fish-my",
+  "url": "https://huggingface.co/Cuttle-fish-my/Rethinking-CFG-OPD-ckpts",
+  "created_at": "2026-07-31T07:23:51.000Z",
+  "updated_at": "2026-11-08T01:49:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "on-policy-distillation",
+    "classifier-free-guidance",
+    "image-to-video",
+    "arxiv:2607.24731",
+    "base_model:Wan-AI/Wan2.1-VACE-1.3B",
+    "base_model:adapter:Wan-AI/Wan2.1-VACE-1.3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 225619128,
+  "storage_human": "226 MB",
+  "base_model": "Wan-AI/Wan2.1-VACE-1.3B, stabilityai/stable-diffusion-3.5-medium, black-forest-labs/FLUX.2-klein-4B-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cuttle-fish-my/Rethinking-CFG-OPD-ckpts · Hugging Face",
+      "url": "https://huggingface.co/Cuttle-fish-my/Rethinking-CFG-OPD-ckpts",
+      "snippet": "Rethinking CFG in On-Policy Distillation — checkpoints LoRA adapters from our study of classifier-free guidance in on-policy distillation (OPD). One folder per experimental setting, named as the paper names it. Every adapter is a LoRA over a frozen base model, so a checkpoint is tens of MB rather than the full backbone."
+    },
+    {
+      "title": "Cuttle-fish-my/Rethinking-CFG-OPD-ckpts at main - Hugging Face",
+      "url": "https://huggingface.co/Cuttle-fish-my/Rethinking-CFG-OPD-ckpts/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

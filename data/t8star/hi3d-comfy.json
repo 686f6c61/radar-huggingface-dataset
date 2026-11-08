@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "t8star/Hi3d-Comfy",
+  "slug": "t8star-hi3d-comfy",
+  "author": "t8star",
+  "url": "https://huggingface.co/t8star/Hi3d-Comfy",
+  "created_at": "2026-10-23T11:56:05.000Z",
+  "updated_at": "2026-11-08T03:21:53.000Z",
+  "license": "multiple-upstream-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-3d",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "onnx",
+    "safetensors",
+    "hi3d",
+    "comfyui",
+    "3d",
+    "geometry-refinement",
+    "image-to-3d",
+    "pbr",
+    "en",
+    "zh",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84195829514,
+  "storage_human": "84.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "t8star/Hi3d-Comfy · Hugging Face",
+      "url": "https://huggingface.co/t8star/Hi3d-Comfy",
+      "snippet": "ComfyUI only uses the Hi3D core for reference-image + coarse-mesh geometry refinement. Image-to-3D and PBR extensions belong to the standalone workbench. This model repository contains neither the application nor Python. GitHub Releases contain code only; T8star will provide the complete package ..."
+    },
+    {
+      "title": "t8star/Hi3d-Comfy at main - Hugging Face",
+      "url": "https://huggingface.co/t8star/Hi3d-Comfy/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

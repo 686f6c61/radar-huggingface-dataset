@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "ivp5/DeepSeek-V4.1-Flash-1017-ds4m1",
+  "slug": "ivp5-deepseek-v4-1-flash-1017-ds4m1",
+  "author": "ivp5",
+  "url": "https://huggingface.co/ivp5/DeepSeek-V4.1-Flash-1017-ds4m1",
+  "created_at": "2026-11-08T01:15:28.000Z",
+  "updated_at": "2026-11-08T01:41:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deepseek",
+    "moe",
+    "quantization",
+    "apple-silicon",
+    "metal",
+    "gguf",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek-V4.1-Flash-1017 · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "Technical Report 👁️ Introduction DeepSeek-V4.1-Flash-1017 is a minor update to DeepSeek-V4.1-Flash, delivering substantial improvements across reasoning, coding, agentic tasks, and visual benchmarks. Alongside these gains, the model reduces task execution time and output length, enabling users to complete tasks faster and at lower cost and advancing the performance–cost Pareto frontier ..."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash 1017 API & Playground | Fireworks AI",
+      "url": "https://fireworks.ai/models/deepseek-ai/deepseek-v4p1-flash-1017",
+      "snippet": "DeepSeek-V4.1-Flash-1017 is a minor update to DeepSeek-V4.1-Flash, delivering substantial improvements across reasoning, coding, agentic tasks, and visual benchmarks. Alongside these gains, the model reduces task execution time and output length, enabling users to complete tasks faster and at lower cost and advancing the performance–cost Pareto frontier across multiple agent harnesses."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic",
+  "slug": "xtools-at-qwen3-5-2b-multidistill-megamix-6xmerge-uncensored-heretic",
+  "author": "xtools-at",
+  "url": "https://huggingface.co/xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic",
+  "created_at": "2026-10-15T15:22:03.000Z",
+  "updated_at": "2026-11-08T02:26:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "merge",
+    "model-merge",
+    "reasoning",
+    "distillation",
+    "chain-of-thought",
+    "conversational",
+    "code",
+    "mathematics",
+    "multimodal",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "dataset:TeichAI/polaris-alpha-1000x",
+    "dataset:Ali-Yaser/KIMI-K2.5-450000x-ShareGPT",
+    "dataset:allenai/tulu-3-sft-mixture",
+    "dataset:nohurry/Opus-4.6-Reasoning-3000x-filtered",
+    "dataset:Jackrong/Qwen3.5-reasoning-700x",
+    "base_model:xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge",
+    "base_model:finetune:xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 157,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4446548370,
+  "storage_human": "4.4 GB",
+  "base_model": "xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic",
+      "url": "https://huggingface.co/xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic",
+      "snippet": "Instructions to use xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.5-2B-MultiDistill-Megamix-6xMerge - Hugging Face",
+      "url": "https://huggingface.co/xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge",
+      "snippet": "Instructions to use xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

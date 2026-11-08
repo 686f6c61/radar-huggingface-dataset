@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Duckets/Arete-27B-Uncensored-Splash",
+  "slug": "duckets-arete-27b-uncensored-splash",
+  "author": "Duckets",
+  "url": "https://huggingface.co/Duckets/Arete-27B-Uncensored-Splash",
+  "created_at": "2026-11-08T01:05:48.000Z",
+  "updated_at": "2026-11-08T01:14:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "splash",
+  "languages": [],
+  "tags": [
+    "splash",
+    "lm-studio",
+    "qwen3.8",
+    "vision",
+    "speculative-decoding",
+    "uncensored",
+    "abliterated",
+    "base_model:NousResearch/Arete-27B",
+    "base_model:finetune:NousResearch/Arete-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17375921238,
+  "storage_human": "17.4 GB",
+  "base_model": "SargeDev/Arete-27B-Uncensored, NousResearch/Arete-27B, incoai/Qwen3.8-27B-DFlash2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Duckets/Arete-27B-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/Duckets/Arete-27B-MLX-4bit",
+      "snippet": "Duckets / Arete-27B-MLX-4bit Like 0 Image-Text-to-Text MLX Safetensors English qwen3_5 lm-studio qwen3.8 vision conversational 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=uncensored",
+      "snippet": "Explore machine learning models. DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF"
+    }
+  ]
+}

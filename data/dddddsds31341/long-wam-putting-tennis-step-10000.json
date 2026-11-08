@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "dddddsds31341/Long-WAM-Putting-Tennis-Step-10000",
+  "slug": "dddddsds31341-long-wam-putting-tennis-step-10000",
+  "author": "dddddsds31341",
+  "url": "https://huggingface.co/dddddsds31341/Long-WAM-Putting-Tennis-Step-10000",
+  "created_at": "2026-11-07T20:47:44.000Z",
+  "updated_at": "2026-11-07T21:01:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "long-wam",
+    "putting-tennis",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12047049820,
+  "storage_human": "12.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dddddsds31341/Long-WAM-Putting-Tennis-Step-5000 · Hugging Face",
+      "url": "https://huggingface.co/dddddsds31341/Long-WAM-Putting-Tennis-Step-5000",
+      "snippet": "Long-WAM Putting Tennis — Step 5,000 Evaluation weights at optimizer step 5,000. Task: Pick up the four tennis balls one at a time and place each into the green basket. model.pt contains evaluation weights. The accompanying configuration, normalization statistics, dependency snapshot and code archive describe this run."
+    },
+    {
+      "title": "dddddsds31341/pi05-putting_tennis_100-10k · Hugging Face",
+      "url": "https://huggingface.co/dddddsds31341/pi05-putting_tennis_100-10k",
+      "snippet": "This repository contains the completed step 10000 checkpoint from run putting_tennis_100_pi05_paper_20261021_nesting_tennis. The params/ directory contains the original JAX/Orbax EMA model parameters. The assets/ directory contains the task normalization statistics. _CHECKPOINT_METADATA is preserved ..."
+    }
+  ]
+}

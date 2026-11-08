@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Jas-preet/SPOT-1D-LM",
+  "slug": "jas-preet-spot-1d-lm",
+  "author": "Jas-preet",
+  "url": "https://huggingface.co/Jas-preet/SPOT-1D-LM",
+  "created_at": "2026-11-08T02:01:21.000Z",
+  "updated_at": "2026-11-08T02:04:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "biology",
+    "protein",
+    "protein-structure-prediction",
+    "protein-language-model",
+    "esm",
+    "prottrans",
+    "bioinformatics",
+    "other",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 955700138,
+  "storage_human": "956 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jas-preet/SPOT-1D-LM: SPOT-1D-LM: Reaching Alignment-profile ...",
+      "url": "https://github.com/jas-preet/SPOT-1D-LM",
+      "snippet": "SPOT-1D-LM: Reaching Alignment-profile-based Accuracy in Predicting Protein Secondary and Tertiary Structural Properties without Alignment."
+    },
+    {
+      "title": "jas-preet (Jaspreet singh) · GitHub",
+      "url": "https://github.com/jas-preet",
+      "snippet": "SPOT-1D-LM: Reaching Alignment-profile-based Accuracy in Predicting Protein Secondary and Tertiary Structural Properties without Alignment. Python 11 4"
+    }
+  ]
+}

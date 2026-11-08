@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-VL-7B-Instruct-ft-20250814163916929-GGUF",
+  "slug": "mradermacher-qwen2-5-vl-7b-instruct-ft-20250814163916929-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-VL-7B-Instruct-ft-20250814163916929-GGUF",
+  "created_at": "2025-08-15T13:32:33.000Z",
+  "updated_at": "2026-11-08T02:36:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2_5_vl",
+    "en",
+    "base_model:REEA-GLOBAL/Qwen2.5-VL-7B-Instruct-ft-20250814163916929",
+    "base_model:quantized:REEA-GLOBAL/Qwen2.5-VL-7B-Instruct-ft-20250814163916929",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 208,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70354162560,
+  "storage_human": "70.4 GB",
+  "base_model": "REEA-GLOBAL/Qwen2.5-VL-7B-Instruct-ft-20250814163916929",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-VL-7B-Instruct-abliterated-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-VL-7B-Instruct-abliterated-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Qwen2.5-VL-7B-Instruct-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-VL-7B-Instruct-GGUF/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

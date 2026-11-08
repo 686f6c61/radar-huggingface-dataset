@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/llama3-8b-cpt-sahabatai-v1-base-GGUF",
+  "slug": "mradermacher-llama3-8b-cpt-sahabatai-v1-base-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/llama3-8b-cpt-sahabatai-v1-base-GGUF",
+  "created_at": "2025-02-26T13:06:30.000Z",
+  "updated_at": "2026-11-08T03:43:57.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "id",
+    "jv",
+    "su"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "id",
+    "jv",
+    "su",
+    "base_model:GoToCompany/llama3-8b-cpt-sahabatai-v1-base",
+    "base_model:quantized:GoToCompany/llama3-8b-cpt-sahabatai-v1-base",
+    "license:llama3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 120,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820231552,
+  "storage_human": "71.8 GB",
+  "base_model": "GoToCompany/llama3-8b-cpt-sahabatai-v1-base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llama3-8b-cpt-sahabatai-v1-base-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/llama3-8b-cpt-sahabatai-v1-base-GGUF",
+      "snippet": "GGUF 4 languages conversational License: llama3 Model card Files Files and versions Community Train Deploy"
+    },
+    {
+      "title": "mradermacher/llama3-8b-cpt-sahabatai-v1-instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/llama3-8b-cpt-sahabatai-v1-instruct-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files."
+    }
+  ]
+}

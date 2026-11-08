@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Yepetoo/Photoeditorsl",
+  "slug": "yepetoo-photoeditorsl",
+  "author": "Yepetoo",
+  "url": "https://huggingface.co/Yepetoo/Photoeditorsl",
+  "created_at": "2026-11-07T23:14:19.000Z",
+  "updated_at": "2026-11-07T23:18:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "es",
+    "base_model:SimpleTuner/Qwen-Image-2.1-LoRA-photo-aesthetics-v2",
+    "base_model:finetune:SimpleTuner/Qwen-Image-2.1-LoRA-photo-aesthetics-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "SimpleTuner/Qwen-Image-2.1-LoRA-photo-aesthetics-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

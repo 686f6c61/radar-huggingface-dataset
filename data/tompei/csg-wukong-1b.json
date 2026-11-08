@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "TomPei/csg-wukong-1B",
+  "slug": "tompei-csg-wukong-1b",
+  "author": "TomPei",
+  "url": "https://huggingface.co/TomPei/csg-wukong-1B",
+  "created_at": "2026-11-08T03:55:13.000Z",
+  "updated_at": "2026-11-08T03:55:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "code",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 2201309328,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "opencsg/csg-wukong-1B-sft-bf16 · Hugging Face",
+      "url": "https://huggingface.co/opencsg/csg-wukong-1B-sft-bf16",
+      "snippet": "Model Evaluation results We submitted csg-wukong-1B on the open_llm_leaderboard, and the results show our model ranked the 8th among the ~1.5B pretrained small language models."
+    },
+    {
+      "title": "opencsg/csg-wukong-1B · Hugging Face",
+      "url": "https://huggingface.co/opencsg/csg-wukong-1B",
+      "snippet": "We adhere to the principles of openness and open source, making the large model software stack of OpenCSG available to the community. We welcome everyone to use, send feedback, and contribute collaboratively. Model Description csg-wukong-1B is a 1 billion-parameter small language model (SLM) pretrained on 1T tokens."
+    }
+  ]
+}

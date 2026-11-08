@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "ray0rf1re/hyperNix-3.1-mini_c-stacked",
+  "slug": "ray0rf1re-hypernix-3-1-mini_c-stacked",
+  "author": "ray0rf1re",
+  "url": "https://huggingface.co/ray0rf1re/hyperNix-3.1-mini_c-stacked",
+  "created_at": "2026-11-08T03:58:19.000Z",
+  "updated_at": "2026-11-08T03:58:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "hypernix",
+  "languages": [],
+  "tags": [
+    "hypernix",
+    "safetensors",
+    "hypernix0x-v2",
+    "chat",
+    "slm",
+    "from-scratch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81027584,
+  "parameters_human": "81.0M",
+  "storage_bytes": 324124816,
+  "storage_human": "324 MB",
+  "base_model": "hyperNix-3.1-mini_c",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compactbot/hypernix-3.1-mini · Hugging Face",
+      "url": "https://huggingface.co/Compactbot/hypernix-3.1-mini",
+      "snippet": "The base HyperNix.3-mini was trained from scratch by ray0rf1re. SFT on it failed 3x (MCQ/echo priors too strong for 48M at that data scale). ray0rf1re agreed to a pretraining-continuation approach: keep the base, pretrain on more data, then SFT the identity on top. This is the pretraining ..."
+    },
+    {
+      "title": "ray0rf1re/HyperNix.3-mini · Hugging Face",
+      "url": "https://huggingface.co/ray0rf1re/HyperNix.3-mini",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "MatterWaveAI/helmholtz-jepa-b0.7.0-10m",
+  "slug": "matterwaveai-helmholtz-jepa-b0-7-0-10m",
+  "author": "MatterWaveAI",
+  "url": "https://huggingface.co/MatterWaveAI/helmholtz-jepa-b0.7.0-10m",
+  "created_at": "2026-11-08T03:54:40.000Z",
+  "updated_at": "2026-11-08T04:11:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "jepa",
+    "world-model",
+    "helmholtz-jepa-b0.7.0-10m",
+    "helmholtz-1",
+    "grt-jepa",
+    "s1-grt-jepa",
+    "platonic-representation",
+    "rotational-transformer",
+    "matterwave",
+    "text-generation",
+    "base_model:MatterWaveAI/grt-10m",
+    "base_model:finetune:MatterWaveAI/grt-10m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "MatterWaveAI/grt-10m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MatterWaveAI/helmholtz-1-omni · Hugging Face",
+      "url": "https://huggingface.co/MatterWaveAI/helmholtz-1-omni",
+      "snippet": "HELMHOLTZ-1-Omni is a 100% Rotational Multimodal Joint-Embedding Predictive Architecture (Omni-JEPA), Platonic World Model & Cross-Modal Trajectory Judge (~54.4M stored parameters / ~135M dense-equivalent capacity, 0 dense linear matrices, 0 convolutional layers) uniting Text, Vision, Audio, 16 kHz Speech Synthesis, and 2D Spatial Grids inside ..."
+    },
+    {
+      "title": "Our New Model Helps AI Think Before it Acts - About Facebook",
+      "url": "https://about.fb.com/news/2025/06/our-new-model-helps-ai-think-before-it-acts/",
+      "snippet": "V-JEPA 2, our state-of-the-art world model, trained on video, enables robots and other AI agents to understand the physical world ."
+    }
+  ]
+}

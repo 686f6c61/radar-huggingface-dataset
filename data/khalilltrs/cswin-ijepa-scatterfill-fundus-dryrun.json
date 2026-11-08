@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "khalilLTRS/cswin-ijepa-scatterfill-fundus-dryrun",
+  "slug": "khalilltrs-cswin-ijepa-scatterfill-fundus-dryrun",
+  "author": "khalilLTRS",
+  "url": "https://huggingface.co/khalilLTRS/cswin-ijepa-scatterfill-fundus-dryrun",
+  "created_at": "2026-11-07T23:51:42.000Z",
+  "updated_at": "2026-11-07T23:52:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "joblib",
+    "safetensors",
+    "self-supervised-learning",
+    "i-jepa",
+    "cswin-transformer",
+    "vision-transformer",
+    "masked-image-modeling",
+    "retina",
+    "fundus",
+    "diabetic-retinopathy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 603081811,
+  "storage_human": "603 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - khalilLaatiris/ijepa-core",
+      "url": "https://github.com/khalilLaatiris/ijepa-core",
+      "snippet": "Fork notice. This is a clone of Meta's official I-JEPA codebase — facebookresearch/ijepa (paper, CVPR-23) — with one fix applied: single-GPU training was broken upstream (main.py always spawned a worker process via mp.Process even for a single device, and init_distributed () tried to init a NCCL process group, which hangs waiting for peer ranks that never join). Fixed in two files: main.py ..."
+    },
+    {
+      "title": "facebook/ijepa_vith14_1k · Hugging Face",
+      "url": "https://huggingface.co/facebook/ijepa_vith14_1k",
+      "snippet": "I-JEPA Model (Huge, fine-tuned on IN1K) I-JEPA is a method for self-supervised learning. At a high level, I-JEPA predicts the representations of part of an image from the representations of other parts of the same image: without relying on pre-specified invariances to hand-crafted data transformations, which tend to be biased for particular downstream tasks, and without having the model fill ..."
+    }
+  ]
+}

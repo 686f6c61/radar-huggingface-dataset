@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "juan1211/pratos-convnext-tiny-food101",
+  "slug": "juan1211-pratos-convnext-tiny-food101",
+  "author": "juan1211",
+  "url": "https://huggingface.co/juan1211/pratos-convnext-tiny-food101",
+  "created_at": "2026-11-05T19:25:45.000Z",
+  "updated_at": "2026-11-07T21:41:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "convnext",
+    "image-classification",
+    "transformers.js",
+    "food",
+    "dataset:ethz/food101",
+    "base_model:facebook/convnext-tiny-224",
+    "base_model:quantized:facebook/convnext-tiny-224",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27897797,
+  "parameters_human": "27.9M",
+  "storage_bytes": 258107114,
+  "storage_human": "258 MB",
+  "base_model": "facebook/convnext-tiny-224",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Food-101",
+      "metric": "top-1",
+      "value": 0.8731
+    },
+    {
+      "task": null,
+      "dataset": "Food-101",
+      "metric": "top-5",
+      "value": 0.9778
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - vidit-16/foodVision: Food image classifier: ConvNeXt-Tiny fine ...",
+      "url": "https://github.com/vidit-16/foodVision",
+      "snippet": "A ConvNeXt-Tiny fine-tuned on Food-101, served as a FastAPI inference endpoint. Upload a food photo, get back the ranked food categories the model thinks it is, with confidences. 101 classes, one endpoint, one Docker image. Food-101: 101 categories, 1,000 images each, with a fixed split of 750 train ..."
+    }
+  ]
+}

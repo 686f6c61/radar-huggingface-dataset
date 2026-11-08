@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Q-P1NG/multilingual-reranker-small-GGUF",
+  "slug": "q-p1ng-multilingual-reranker-small-gguf",
+  "author": "Q-P1NG",
+  "url": "https://huggingface.co/Q-P1NG/multilingual-reranker-small-GGUF",
+  "created_at": "2026-11-07T23:17:37.000Z",
+  "updated_at": "2026-11-07T23:18:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "gguf",
+  "languages": [
+    "multilingual",
+    "it",
+    "en",
+    "de",
+    "fr",
+    "es",
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "reranker",
+    "cross-encoder",
+    "text-ranking",
+    "multilingual",
+    "it",
+    "en",
+    "de",
+    "fr",
+    "es",
+    "pt",
+    "base_model:Horizon-Labs/multilingual-reranker-small",
+    "base_model:quantized:Horizon-Labs/multilingual-reranker-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 140641921,
+  "parameters_human": "140.6M",
+  "storage_bytes": 164358208,
+  "storage_human": "164 MB",
+  "base_model": "Horizon-Labs/multilingual-reranker-small",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jina-reranker-v2-base-multilingual-GGUF - Hugging Face",
+      "url": "https://huggingface.co/gpustack/jina-reranker-v2-base-multilingual-GGUF",
+      "snippet": "Trained by Jina AI. jina-reranker-v2-base-multilingual Intended Usage & Model Info The Jina Reranker v2 (jina-reranker-v2-base-multilingual) is a transformer-based model that has been fine-tuned for text reranking task, which is a crucial component in many information retrieval systems."
+    },
+    {
+      "title": "jinaai/jina-reranker-v2-base-multilingual · Hugging Face",
+      "url": "https://huggingface.co/jinaai/jina-reranker-v2-base-multilingual",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

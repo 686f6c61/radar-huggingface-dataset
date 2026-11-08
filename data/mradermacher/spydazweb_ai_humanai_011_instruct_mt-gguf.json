@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SpydazWeb_AI_HumanAI_011_INSTRUCT_MT-GGUF",
+  "slug": "mradermacher-spydazweb_ai_humanai_011_instruct_mt-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SpydazWeb_AI_HumanAI_011_INSTRUCT_MT-GGUF",
+  "created_at": "2024-11-27T10:20:16.000Z",
+  "updated_at": "2026-11-07T22:14:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "unsloth",
+    "trl",
+    "sft",
+    "en",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 68038741120,
+  "storage_human": "68.0 GB",
+  "base_model": "LeroyDyer/SpydazWeb_AI_HumanAI_011_INSTRUCT_MT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SpydazWeb_AI_HumanAI_011_INSTRUCT-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/SpydazWeb_AI_HumanAI_011_INSTRUCT-GGUF",
+      "snippet": "Feel free to request them by opening a Community Discussion. Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "SpydazWeb_AI_HumanAI_011_INSTRUCT_MX-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/SpydazWeb_AI_HumanAI_011_INSTRUCT_MX-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files."
+    }
+  ]
+}

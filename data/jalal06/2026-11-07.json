@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "jalal06/2026-11-07",
+  "slug": "jalal06-2026-11-07",
+  "author": "jalal06",
+  "url": "https://huggingface.co/jalal06/2026-11-07",
+  "created_at": "2026-11-07T20:47:34.000Z",
+  "updated_at": "2026-11-07T20:48:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "franka",
+    "imitation-learning",
+    "ebt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 256813105,
+  "parameters_human": "256.8M",
+  "storage_bytes": 1027313540,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jalal06/model30 · Hugging Face",
+      "url": "https://huggingface.co/jalal06/model30",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jalal06 (Jalal Naghiyev) - Hugging Face",
+      "url": "https://huggingface.co/jalal06",
+      "snippet": "AI & ML interests ... Recent Activity upvoted a paper 8 days ago ... updated a model 25 days ago ... published a model 25 days ago"
+    }
+  ]
+}

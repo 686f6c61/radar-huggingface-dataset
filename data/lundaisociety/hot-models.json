@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "LundAISociety/hot-models",
+  "slug": "lundaisociety-hot-models",
+  "author": "LundAISociety",
+  "url": "https://huggingface.co/LundAISociety/hot-models",
+  "created_at": "2026-10-11T12:41:35.000Z",
+  "updated_at": "2026-11-08T03:26:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "remote-sensing",
+    "building-segmentation",
+    "dinov3",
+    "instance-segmentation",
+    "dataset:LundAISociety/hot-building-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2786749173,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LundAISociety (Lund AI Society) - Hugging Face",
+      "url": "https://huggingface.co/LundAISociety",
+      "snippet": "Org profile for Lund AI Society on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Lund AI Society",
+      "url": "https://lundaisociety.com/",
+      "snippet": "Student-run nonprofit in Lund. Hackathons, a Fellowship building open-source AI for nonprofits, and thesis projects with LTH researchers."
+    }
+  ]
+}

@@ -16,7 +16,7 @@
     "base_model:finetune:black-forest-labs/FLUX.2-klein-9B",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

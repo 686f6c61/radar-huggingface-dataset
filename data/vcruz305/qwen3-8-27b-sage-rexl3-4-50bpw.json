@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "vcruz305/Qwen3.8-27B-SAGE-REXL3-4.50bpw",
+  "slug": "vcruz305-qwen3-8-27b-sage-rexl3-4-50bpw",
+  "author": "vcruz305",
+  "url": "https://huggingface.co/vcruz305/Qwen3.8-27B-SAGE-REXL3-4.50bpw",
+  "created_at": "2026-11-08T02:44:43.000Z",
+  "updated_at": "2026-11-08T02:46:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8631286784,
+  "parameters_human": "8.63B",
+  "storage_bytes": 17275644524,
+  "storage_human": "17.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vcruz305/Qwen3.8-27B-DFlash2-SAGE-EXL3-5.0bpw · Hugging Face",
+      "url": "https://huggingface.co/vcruz305/Qwen3.8-27B-DFlash2-SAGE-EXL3-5.0bpw",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · vcruz305/Qwen3.8-27B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/vcruz305/Qwen3.8-27B-GGUF/blob/main/README.md",
+      "snippet": "Instructions to use vcruz305/Qwen3.8-27B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use vcruz305/Qwen3.8-27B-GGUF with llama.cpp: Install (macOS, Linux)"
+    }
+  ]
+}

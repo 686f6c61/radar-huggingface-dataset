@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "CholoAsis/qnvoice-urdu-matcha-tts",
+  "slug": "choloasis-qnvoice-urdu-matcha-tts",
+  "author": "CholoAsis",
+  "url": "https://huggingface.co/CholoAsis/qnvoice-urdu-matcha-tts",
+  "created_at": "2026-11-07T23:44:21.000Z",
+  "updated_at": "2026-11-07T23:49:34.000Z",
+  "license": "apache-2.0-and-mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ur"
+  ],
+  "tags": [
+    "onnx",
+    "matcha-tts",
+    "hifi-gan",
+    "offline",
+    "qnvoice",
+    "text-to-speech",
+    "ur",
+    "base_model:AhsanTalal/urdu-matcha-tts",
+    "base_model:quantized:AhsanTalal/urdu-matcha-tts",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129953854,
+  "storage_human": "130 MB",
+  "base_model": "AhsanTalal/urdu-matcha-tts",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AhsanTalal/urdu-matcha-tts · Hugging Face",
+      "url": "https://huggingface.co/AhsanTalal/urdu-matcha-tts",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "matcha_urdu.ckpt · AhsanTalal/urdu-matcha-tts at main",
+      "url": "https://huggingface.co/AhsanTalal/urdu-matcha-tts/blob/main/matcha_urdu.ckpt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

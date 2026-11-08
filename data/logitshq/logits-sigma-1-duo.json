@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "logitshq/Logits-Sigma-1-Duo",
+  "slug": "logitshq-logits-sigma-1-duo",
+  "author": "logitshq",
+  "url": "https://huggingface.co/logitshq/Logits-Sigma-1-Duo",
+  "created_at": "2026-11-07T20:53:43.000Z",
+  "updated_at": "2026-11-08T03:28:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "decision-model",
+    "decision-index",
+    "ensemble",
+    "fp8",
+    "text-classification",
+    "arxiv:2309.06275",
+    "base_model:PelaAI/KnowLine-31B-Gen1",
+    "base_model:finetune:PelaAI/KnowLine-31B-Gen1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61166837874,
+  "storage_human": "61.2 GB",
+  "base_model": "google/gemma-4-31B-it, PelaAI/KnowLine-31B-Gen1, vllm-sr/d3-ultra",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Logits Explained: The Logits Probability Distribution | AI/TLDR",
+      "url": "https://ai-tldr.dev/learn/llm-fundamentals/text-generation/logits-explained/",
+      "snippet": "The output of softmax is a genuine probability distribution over the whole vocabulary. NOTE Two-sentence version: logits are the model's raw opinion, one number per possible token. Softmax converts that raw opinion into a clean probability distribution that sums to 1. // Why it matters Every word a model writes starts as a logit vector."
+    },
+    {
+      "title": "Logit - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Logit",
+      "snippet": "This symmetric behavior about the midpoint makes the logit function odd-symmetric: logit (1 minus p) equals the negative of logit (p). The logit function is the inverse of the logistic sigmoid function, which maps a real number x to the probability sigma (x) equals one divided by one plus the exponential of negative x."
+    }
+  ]
+}

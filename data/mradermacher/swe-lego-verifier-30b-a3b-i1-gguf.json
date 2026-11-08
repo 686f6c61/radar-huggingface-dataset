@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SWE-Lego-Verifier-30B-A3B-i1-GGUF",
+  "slug": "mradermacher-swe-lego-verifier-30b-a3b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SWE-Lego-Verifier-30B-A3B-i1-GGUF",
+  "created_at": "2026-11-08T01:27:56.000Z",
+  "updated_at": "2026-11-08T01:39:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 11502612192,
+  "storage_human": "11.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/SWE-Lego-Verifier-30B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/SWE-Lego-Verifier-30B-A3B-GGUF",
+      "snippet": "mradermacher / SWE-Lego-Verifier-30B-A3B-GGUF Like 0 Transformers GGUF English conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "mradermacher/SWE-Review-30B-A3B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/SWE-Review-30B-A3B-i1-GGUF",
+      "snippet": "mradermacher / SWE-Review-30B-A3B-i1-GGUF like 0 Transformers GGUF English code-review software-engineering swe-bench agentic Mixture of Experts imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

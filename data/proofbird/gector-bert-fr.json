@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "proofbird/gector-bert-fr",
+  "slug": "proofbird-gector-bert-fr",
+  "author": "proofbird",
+  "url": "https://huggingface.co/proofbird/gector-bert-fr",
+  "created_at": "2026-11-07T21:06:32.000Z",
+  "updated_at": "2026-11-07T21:07:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "onnx",
+    "grammatical-error-correction",
+    "gector",
+    "on-device",
+    "token-classification",
+    "fr",
+    "dataset:wikimedia/wikipedia",
+    "base_model:Geotrend/bert-base-fr-cased",
+    "base_model:quantized:Geotrend/bert-base-fr-cased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 432675543,
+  "storage_human": "433 MB",
+  "base_model": "Geotrend/bert-base-fr-cased",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "proofbird/gector-bert-en · Hugging Face",
+      "url": "https://huggingface.co/proofbird/gector-bert-en",
+      "snippet": "proofbird / gector-bert-en Like 1 Follow Proofbird 1 Token Classification ONNX wikimedia/wikipedia English grammatical-error-correction gector on-device License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket Proofbird Grammar — English What it corrects How it was trained How it was measured Files Licence and ..."
+    },
+    {
+      "title": "proofbird (Proofbird) - Hugging Face",
+      "url": "https://huggingface.co/proofbird",
+      "snippet": "Proofbird — a writing assistant for Windows that checks spelling and grammar as you type, in the apps you already use. The grammar models run on your own computer: your text doesn't leave the machine for a grammar check."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "saadbather/swarmfl",
+  "slug": "saadbather-swarmfl",
+  "author": "saadbather",
+  "url": "https://huggingface.co/saadbather/swarmfl",
+  "created_at": "2026-11-08T02:28:19.000Z",
+  "updated_at": "2026-11-08T02:36:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "swarmfl",
+  "languages": [],
+  "tags": [
+    "swarmfl",
+    "federated-learning",
+    "flower",
+    "multi-agent-systems",
+    "tabular-classification",
+    "research",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - saadbinather/SwarmFL: SwarmFL is an open-source Python ...",
+      "url": "https://github.com/saadbinather/SwarmFL",
+      "snippet": "SwarmFL is an open-source Python framework built on Flower, enabling federated collaboration among heterogeneous AI specialists through cost-aware routing and dynamic prediction fusion. - saadbinather/SwarmFL"
+    },
+    {
+      "title": "SwarmFL/docs at main · saadbinather/SwarmFL · GitHub",
+      "url": "https://github.com/saadbinather/SwarmFL/tree/main/docs",
+      "snippet": "SwarmFL is an open-source Python framework built on Flower, enabling federated collaboration among heterogeneous AI specialists through cost-aware routing and dynamic prediction fusion. - SwarmFL/docs at main · saadbinather/SwarmFL"
+    }
+  ]
+}

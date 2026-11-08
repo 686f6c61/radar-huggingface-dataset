@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "dinghhhhhhhhhhhhhhh/CreatiPhage-145M",
+  "slug": "dinghhhhhhhhhhhhhhh-creatiphage-145m",
+  "author": "dinghhhhhhhhhhhhhhh",
+  "url": "https://huggingface.co/dinghhhhhhhhhhhhhhh/CreatiPhage-145M",
+  "created_at": "2026-11-07T20:08:47.000Z",
+  "updated_at": "2026-11-07T20:27:41.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "genomics",
+    "dna",
+    "phage",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144498102,
+  "parameters_human": "144.5M",
+  "storage_bytes": 578014712,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phage technologies, new therapeutic possibilities · CreatiPhage",
+      "url": "https://www.cphage.com/en/",
+      "snippet": "CreatiPhage develops phage technologies and therapeutic approaches to address antibiotic-resistant bacteria through research on phage libraries, intelligent phage susceptibility testing and gene editing."
+    },
+    {
+      "title": "AI & Robotics Startups Raise $145M+ in March 2026 | Major Funding ...",
+      "url": "https://vfuturemedia.com/startups/startups-raised-big-in-ai-robotics-march-2026-145m-rounds-emerging-leaders/",
+      "snippet": "Major AI and robotics startups raised $145M+ in March 2026 including PaXini Tech, Eridu, Grow Therapy, and Ualá. Explore the biggest funding rounds, investors, and emerging deep tech leaders shaping the AI economy."
+    }
+  ]
+}

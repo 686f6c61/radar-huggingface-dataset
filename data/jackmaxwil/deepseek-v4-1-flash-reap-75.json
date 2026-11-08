@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "jackmaxwil/DeepSeek-V4.1-Flash-REAP-75",
+  "slug": "jackmaxwil-deepseek-v4-1-flash-reap-75",
+  "author": "jackmaxwil",
+  "url": "https://huggingface.co/jackmaxwil/DeepSeek-V4.1-Flash-REAP-75",
+  "created_at": "2026-11-08T00:51:25.000Z",
+  "updated_at": "2026-11-08T00:56:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "reap",
+    "expert-pruning",
+    "moe",
+    "arxiv:2510.13999",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 355459961554,
+  "parameters_human": "355.46B",
+  "storage_bytes": 293587739103,
+  "storage_human": "293.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LibertAIDAI/DeepSeek-V4.1-Flash-REAP-256E · Hugging Face",
+      "url": "https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-REAP-256E",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "snippet": "Image-Text-to-Text model with 763B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

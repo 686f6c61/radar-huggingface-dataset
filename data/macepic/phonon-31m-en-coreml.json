@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "MacEpic/phonon-31m-en-coreml",
+  "slug": "macepic-phonon-31m-en-coreml",
+  "author": "MacEpic",
+  "url": "https://huggingface.co/MacEpic/phonon-31m-en-coreml",
+  "created_at": "2026-11-07T23:20:14.000Z",
+  "updated_at": "2026-11-07T23:24:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "coreml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "text-to-speech",
+    "phonon",
+    "en",
+    "base_model:gradium/phonon-31m-en",
+    "base_model:quantized:gradium/phonon-31m-en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114905553,
+  "storage_human": "115 MB",
+  "base_model": "gradium/phonon-31m-en",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "palshub/phonon-31m-en-coreml · Hugging Face",
+      "url": "https://huggingface.co/palshub/phonon-31m-en-coreml",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TheStageAI/phonon-31m-en · Hugging Face",
+      "url": "https://huggingface.co/TheStageAI/phonon-31m-en",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "moonshine-ai/moonshine-voice-assets",
+  "slug": "moonshine-ai-moonshine-voice-assets",
+  "author": "moonshine-ai",
+  "url": "https://huggingface.co/moonshine-ai/moonshine-voice-assets",
+  "created_at": "2026-08-02T20:49:02.000Z",
+  "updated_at": "2026-11-08T02:18:33.000Z",
+  "license": "mixed-see-licensing-section",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "moonshine",
+    "speech-recognition",
+    "text-to-speech",
+    "speaker-diarization",
+    "onnxruntime",
+    "on-device",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10414243438,
+  "storage_human": "10.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nos coffrets de parfum - Moonshine",
+      "url": "https://moon-shine.fr/collections/coffrets",
+      "snippet": "La Capsule Moonshine est pensée comme un objet collectible durable et permanent, conçu pour vous accompagner indéfiniment. …"
+    },
+    {
+      "title": "moonshine-ai/moonshine-voice-assets · Hugging Face",
+      "url": "https://huggingface.co/moonshine-ai/moonshine-voice-assets",
+      "snippet": "Moonshine Voice assets Every file that the Moonshine Voice SDKs can download, in one place, with the CDN's folder hierarchy preserved. This repo exists to be an unambiguous source of truth: the serving bucket behind download.moonshine.ai also holds unconverted sources, superseded copies at older paths, and unrelated build artifacts, so \"what does the library actually use?\" was not answerable ..."
+    },
+    {
+      "title": "Moonshine - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Moonshine",
+      "snippet": "Moonshine is high-proof liquor, traditionally made or distributed illegally. [1][2][3] The name was derived from a tradition of distilling …"
+    },
+    {
+      "title": "Moonshine Voice | on-device speech demos",
+      "url": "https://www.moonshine.ai/",
+      "snippet": "Speech to text, text to speech, and voice agents running entirely in your browser via WebAssembly."
+    },
+    {
+      "title": "Alcool de contrebande — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Alcool_de_contrebande",
+      "snippet": "L' alcool de contrebande, également appelé moonshine dans les pays anglo-saxons ou samogon en Russie est un alcool distillé de …"
+    }
+  ]
+}

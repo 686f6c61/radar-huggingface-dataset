@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "42ailab/GLM-OCR-GGUF",
+  "slug": "42ailab-glm-ocr-gguf",
+  "author": "42ailab",
+  "url": "https://huggingface.co/42ailab/GLM-OCR-GGUF",
+  "created_at": "2026-11-08T02:20:28.000Z",
+  "updated_at": "2026-11-08T02:22:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ocr",
+    "image-text-to-text",
+    "42model",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 891138048,
+  "parameters_human": "891.1M",
+  "storage_bytes": 1434837056,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
