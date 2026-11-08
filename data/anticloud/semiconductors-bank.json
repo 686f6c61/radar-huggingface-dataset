@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/semiconductors-bank",
+  "slug": "anticloud-semiconductors-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/semiconductors-bank",
+  "created_at": "2026-11-08T10:55:50.000Z",
+  "updated_at": "2026-11-08T10:55:52.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:semiconductors",
+    "harness:swe-agent",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anticloud Reports $0.013 Electricity Cost in PAX v52 AI Research Benchmark",
+      "url": "https://finance.yahoo.com/technology/ai/articles/anticloud-reports-0-013-electricity-071100578.html",
+      "snippet": "Dubai-based Anticloud reports results from a benchmark in which its 27B-parameter PAX v52 model generated structured research frameworks for 20 open problems across multiple scientific fields ..."
+    },
+    {
+      "title": "Anticloud/anticloud-project · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Anticloud/anticloud-project",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

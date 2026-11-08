@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "MohammadGholizadeh/Qwen2.5-7B-Instruct-cat-gen3-s42",
+  "slug": "mohammadgholizadeh-qwen2-5-7b-instruct-cat-gen3-s42",
+  "author": "MohammadGholizadeh",
+  "url": "https://huggingface.co/MohammadGholizadeh/Qwen2.5-7B-Instruct-cat-gen3-s42",
+  "created_at": "2026-05-29T19:21:30.000Z",
+  "updated_at": "2026-11-08T08:45:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 669192533,
+  "storage_human": "669 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Insights DB - protectai.com",
+      "url": "https://protectai.com/insights/models/MohammadGholizadeh/Qwen2.5-7B-Instruct-cat-gen2-s42/01f73ed4ac0b89d66b526ae7f1c27d3b0fc4ce03/overview",
+      "snippet": "Discover potential threats in the MohammadGholizadeh / Qwen2.5-7B-Instruct-cat-gen2-s42 model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    },
+    {
+      "title": "Qwen 2.5 7B Instruct Overview - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/qwen-2-5-7b-instruct-edce8707-861f-4786-9a31-d4dce966ad24",
+      "snippet": "A plausible implication is that Qwen 2.5 7B Instruct will serve as a foundational model for increasingly specialized architectures and data regimes in conversational AI and domain-specific language modeling."
+    }
+  ]
+}

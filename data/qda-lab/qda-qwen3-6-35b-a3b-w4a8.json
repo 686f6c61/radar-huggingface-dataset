@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "qda-lab/QDA-Qwen3.6-35B-A3B-W4A8",
+  "slug": "qda-lab-qda-qwen3-6-35b-a3b-w4a8",
+  "author": "qda-lab",
+  "url": "https://huggingface.co/qda-lab/QDA-Qwen3.6-35B-A3B-W4A8",
+  "created_at": "2026-11-08T06:01:11.000Z",
+  "updated_at": "2026-11-08T06:02:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5_moe",
+    "qda",
+    "quantization",
+    "compressed-tensors",
+    "w4a8",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 22215892054,
+  "storage_human": "22.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B-FP8 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/InternVL3-2B-GGUF",
+  "slug": "mradermacher-internvl3-2b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/InternVL3-2B-GGUF",
+  "created_at": "2025-05-13T09:32:20.000Z",
+  "updated_at": "2026-11-08T05:59:20.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "internvl",
+    "custom_code",
+    "multilingual",
+    "dataset:OpenGVLab/MMPR-v1.2",
+    "base_model:OpenGVLab/InternVL3-2B",
+    "base_model:quantized:OpenGVLab/InternVL3-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 193,
+  "trending_score": 0,
+  "parameters": 1776283136,
+  "parameters_human": "1.78B",
+  "storage_bytes": 17155086976,
+  "storage_human": "17.2 GB",
+  "base_model": "OpenGVLab/InternVL3-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/InternVL3-2B-Instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/InternVL3-2B-Instruct-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/InternVL3-1B-Pretrained-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/InternVL3-1B-Pretrained-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/InternVL3-1B-Pretrained-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

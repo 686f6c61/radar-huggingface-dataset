@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "nodevorg/studio-models-h3",
+  "slug": "nodevorg-studio-models-h3",
+  "author": "nodevorg",
+  "url": "https://huggingface.co/nodevorg/studio-models-h3",
+  "created_at": "2026-11-08T05:03:32.000Z",
+  "updated_at": "2026-11-08T05:12:12.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "hyperflow-h3",
+    "minimax-h3",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16784172408,
+  "storage_human": "16.8 GB",
+  "base_model": "VideoRebirthAI/hyperflow-h3-flash, MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "H3 studio - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/H3_studio",
+      "snippet": "The history of h3 studio is inseparable from the broader sequence of events that brought the MiniMax H3 model to Apple hardware. MiniMax, the Chinese artificial intelligence company, announced H3 on July 31, 2026, as a general-purpose omni-modal generation model capable of jointly understanding text, images, video, and audio in a single context and producing four-to-fifteen-second video clips ..."
+    }
+  ]
+}

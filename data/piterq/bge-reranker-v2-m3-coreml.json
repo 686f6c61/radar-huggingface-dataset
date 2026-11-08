@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "PiterQ/bge-reranker-v2-m3-CoreML",
+  "slug": "piterq-bge-reranker-v2-m3-coreml",
+  "author": "PiterQ",
+  "url": "https://huggingface.co/PiterQ/bge-reranker-v2-m3-CoreML",
+  "created_at": "2026-11-08T06:27:53.000Z",
+  "updated_at": "2026-11-08T06:28:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "xlm-roberta",
+    "reranker",
+    "Core ML",
+    "text-classification",
+    "multilingual",
+    "base_model:BAAI/bge-reranker-v2-m3",
+    "base_model:finetune:BAAI/bge-reranker-v2-m3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1157721252,
+  "storage_human": "1.2 GB",
+  "base_model": "BAAI/bge-reranker-v2-m3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "furiosa-ai/bge-reranker-v2-m3 · Hugging Face",
+      "url": "https://huggingface.co/furiosa-ai/bge-reranker-v2-m3",
+      "snippet": "BGE Reranker v2 M3 is a multilingual cross-encoder reranking model developed by BAAI on the XLM-RoBERTa encoder architecture. Given a query and a set of candidate documents, it produces relevance scores used to reorder retrieval results in retrieval-augmented generation (RAG) and search pipelines."
+    },
+    {
+      "title": "BGE Reranker — BGE documentation",
+      "url": "https://bge-model.com/tutorial/5_Reranking/5.2.html",
+      "snippet": "bge-reranker-v2-m3 # bge-reranker-v2-m3 is trained based on bge-m3, introducing great multi-lingual capability as keeping a slim model size."
+    }
+  ]
+}

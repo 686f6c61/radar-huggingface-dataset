@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "rishabh-rishuu/Unpaid-JSON-Generator",
+  "slug": "rishabh-rishuu-unpaid-json-generator",
+  "author": "rishabh-rishuu",
+  "url": "https://huggingface.co/rishabh-rishuu/Unpaid-JSON-Generator",
+  "created_at": "2026-11-08T11:16:29.000Z",
+  "updated_at": "2026-11-08T11:18:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "qwen",
+    "qwen2.5",
+    "json",
+    "structured-outputs",
+    "llama-cpp",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-1.5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 8825178444,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Json Generator: Instant AI-Powered JSON Creation - Musely",
+      "url": "https://musely.ai/tools/json-generator",
+      "snippet": "Effortlessly create structured JSON data with Musely's AI Json Generator. Optimize your content and boost visibility instantly."
+    },
+    {
+      "title": "AI JSON Generator — Schema, Mock Data, Transform",
+      "url": "https://rynaai.com/en/ai/json-generator",
+      "snippet": "JSON schema, mock data, transforms with Ryna AI. Fast for API testing, form validation, data migration."
+    }
+  ]
+}

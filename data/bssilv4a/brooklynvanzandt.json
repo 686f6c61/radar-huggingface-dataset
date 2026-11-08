@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Bssilv4a/BrooklynVanZandt",
+  "slug": "bssilv4a-brooklynvanzandt",
+  "author": "Bssilv4a",
+  "url": "https://huggingface.co/Bssilv4a/BrooklynVanZandt",
+  "created_at": "2026-11-08T05:49:30.000Z",
+  "updated_at": "2026-11-08T05:50:37.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77696455,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bssilv4a/BrooklynvanZandth · Hugging Face",
+      "url": "https://huggingface.co/Bssilv4a/BrooklynvanZandth",
+      "snippet": "Like 0 Diffusers AI-C/rvc-models Rvc License:pddl Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "Bssilv4a/BrooklynvanZandth at main - Hugging Face",
+      "url": "https://huggingface.co/Bssilv4a/BrooklynvanZandth/tree/main",
+      "snippet": "Like 0 Diffusers AI-C/rvc-models Rvc License:pddl Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

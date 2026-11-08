@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/tracker-system-bank",
+  "slug": "anticloud-tracker-system-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/tracker-system-bank",
+  "created_at": "2026-11-08T10:59:34.000Z",
+  "updated_at": "2026-11-08T10:59:37.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:tracker-system",
+    "harness:codex-cli",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anticloud Reports $0.013 Electricity Cost in PAX v52 AI Research Benchmark",
+      "url": "https://finance.yahoo.com/technology/ai/articles/anticloud-reports-0-013-electricity-071100578.html",
+      "snippet": "Dubai-based Anticloud reports results from a benchmark in which its 27B-parameter PAX v52 model generated structured research frameworks for 20 open problems across multiple scientific fields ..."
+    },
+    {
+      "title": "AI agents in finance & banking: 12 proven use cases (2026)",
+      "url": "https://www.kore.ai/blog/ai-agents-in-finance-banking-12-proven-use-cases-2026",
+      "snippet": "From real-time fraud detection to automated loan processing, explore 12 enterprise-validated AI agent use cases in banking and financial services, with examples from Kore.ai's customer deployments."
+    }
+  ]
+}

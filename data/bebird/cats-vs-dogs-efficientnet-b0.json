@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "bebird/cats-vs-dogs-efficientnet-b0",
+  "slug": "bebird-cats-vs-dogs-efficientnet-b0",
+  "author": "bebird",
+  "url": "https://huggingface.co/bebird/cats-vs-dogs-efficientnet-b0",
+  "created_at": "2026-11-08T11:28:22.000Z",
+  "updated_at": "2026-11-08T12:10:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "image-classification",
+    "efficientnet",
+    "cats-vs-dogs",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33130311,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nipunsgeeth/Cats_vs_Dogs_cnn_v2 · Hugging Face",
+      "url": "https://huggingface.co/nipunsgeeth/Cats_vs_Dogs_cnn_v2",
+      "snippet": "Cats vs Dogs — EfficientNetB0 Classifier This repository contains a convolutional neural network model trained to classify images of cats and dogs. The model uses EfficientNetB0 (pretrained on ImageNet) as a base + custom classification head, and was trained on the cats_vs_dogs dataset via TensorFlow Datasets."
+    },
+    {
+      "title": "EfficientNetB0 Image Classification With TensorFlow & OpenCV",
+      "url": "https://eranfeit.net/how-to-classify-images-using-efficientnet-b0/",
+      "snippet": "In this tutorial, we’ll explore how to use EfficientNetB0, a powerful deep learning model available in TensorFlow and Keras, for image classification. EfficientNet models are known for their efficiency and accuracy, making them an excellent choice for tasks like classifying objects in images."
+    }
+  ]
+}

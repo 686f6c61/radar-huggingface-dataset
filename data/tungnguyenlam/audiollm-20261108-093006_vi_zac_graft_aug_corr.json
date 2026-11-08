@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "tungnguyenlam/audiollm-20261108-093006_vi_zac_graft_aug_corr",
+  "slug": "tungnguyenlam-audiollm-20261108-093006_vi_zac_graft_aug_corr",
+  "author": "tungnguyenlam",
+  "url": "https://huggingface.co/tungnguyenlam/audiollm-20261108-093006_vi_zac_graft_aug_corr",
+  "created_at": "2026-11-08T09:20:08.000Z",
+  "updated_at": "2026-11-08T09:20:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "automatic-speech-recognition",
+    "audiollm",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1021829178,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - tungnguyenlam/audiollm",
+      "url": "https://github.com/tungnguyenlam/audiollm",
+      "snippet": "Contribute to tungnguyenlam/audiollm development by creating an account on GitHub."
+    },
+    {
+      "title": "tungnguyenlam (Nguyen Lam Tung) - Hugging Face",
+      "url": "https://huggingface.co/tungnguyenlam/datasets",
+      "snippet": "User profile of Nguyen Lam Tung on Hugging Face"
+    }
+  ]
+}

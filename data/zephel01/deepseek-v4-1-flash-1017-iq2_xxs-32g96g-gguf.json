@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "zephel01/DeepSeek-V4.1-Flash-1017-IQ2_XXS-32G96G-GGUF",
+  "slug": "zephel01-deepseek-v4-1-flash-1017-iq2_xxs-32g96g-gguf",
+  "author": "zephel01",
+  "url": "https://huggingface.co/zephel01/DeepSeek-V4.1-Flash-1017-IQ2_XXS-32G96G-GGUF",
+  "created_at": "2026-11-02T09:06:39.000Z",
+  "updated_at": "2026-11-08T10:47:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "imatrix",
+    "ldlq",
+    "deepseek41",
+    "moe",
+    "abyss",
+    "consumer-gpu",
+    "local-llm",
+    "cpu-offload",
+    "japanese",
+    "rtx-5090",
+    "32gb-vram",
+    "96gb-ram",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 171,
+  "trending_score": 0,
+  "parameters": 748494643824,
+  "parameters_human": "748.49B",
+  "storage_bytes": 337094941892,
+  "storage_human": "337.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek-V4.1-Flash-1017-Compact-32G96G-GGUF - Hugging Face",
+      "url": "https://huggingface.co/zephel01/DeepSeek-V4.1-Flash-1017-Compact-32G96G-GGUF",
+      "snippet": "Text Generation model with 567B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "zephel01/DeepSeek-V4.1-Flash-1017-LDLQ-32G96G-GGUF · Hugging Face",
+      "url": "https://huggingface.co/zephel01/DeepSeek-V4.1-Flash-1017-LDLQ-32G96G-GGUF",
+      "snippet": "KL against the unquantized model (top-256 log-probs of DeepSeek-V4.1-Flash-1017 before quantization, 8 held-out sequences x 1,023 tokens), computed in the Abyss engine with exact routing."
+    }
+  ]
+}

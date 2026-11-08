@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ndvuongsp/qwen2.5-14b-edusgg-vqa-lora",
+  "slug": "ndvuongsp-qwen2-5-14b-edusgg-vqa-lora",
+  "author": "ndvuongsp",
+  "url": "https://huggingface.co/ndvuongsp/qwen2.5-14b-edusgg-vqa-lora",
+  "created_at": "2026-11-08T05:31:02.000Z",
+  "updated_at": "2026-11-08T05:44:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen2.5",
+    "edusgg",
+    "visual-question-answering",
+    "diagram-reasoning",
+    "multimodal",
+    "scene-graph",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-14B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 286763890,
+  "storage_human": "287 MB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-14B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-14B",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2 ..."
+    },
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    }
+  ]
+}

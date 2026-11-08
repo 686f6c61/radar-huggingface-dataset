@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "nberezny/act_franka_pick_place_v3",
+  "slug": "nberezny-act_franka_pick_place_v3",
+  "author": "nberezny",
+  "url": "https://huggingface.co/nberezny/act_franka_pick_place_v3",
+  "created_at": "2026-11-08T05:38:03.000Z",
+  "updated_at": "2026-11-08T05:41:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:nberezny/franka_pick_place_v2",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51590792,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206403952,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Robot Models & Simulation - franka.de",
+      "url": "https://franka.de/models-and-simulation",
+      "snippet": "Franka Robotics releases official model and simulation files for its robot systems. This page is the single source maintained and released directly by Franka, so you always know you're working with the correct, up-to-date geometry and simulation assets."
+    },
+    {
+      "title": "Franka Pick-and-Place in NVIDIA Isaac Sim - YouTube",
+      "url": "https://www.youtube.com/watch?v=tvgWZHi6GRg",
+      "snippet": "A Franka Panda arm solving pick-and-place entirely from code in NVIDIA Isaac Sim — no teleoperation, no hand-tuned joint angles."
+    }
+  ]
+}

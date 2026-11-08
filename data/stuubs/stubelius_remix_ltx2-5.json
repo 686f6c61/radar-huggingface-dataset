@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Stuubs/Stubelius_Remix_Ltx2.5",
+  "slug": "stuubs-stubelius_remix_ltx2-5",
+  "author": "Stuubs",
+  "url": "https://huggingface.co/Stuubs/Stubelius_Remix_Ltx2.5",
+  "created_at": "2026-09-05T11:49:46.000Z",
+  "updated_at": "2026-11-08T08:29:40.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ltx-2.5",
+    "comfyui",
+    "video",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:quantized:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 27,
+  "downloads_30d": 1336,
+  "trending_score": 0,
+  "parameters": 21004025600,
+  "parameters_human": "21.00B",
+  "storage_bytes": 208454050784,
+  "storage_human": "208.5 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stuubs/Stubelius_Remix_Ltx2.5 - Hugging Face",
+      "url": "https://huggingface.co/Stuubs/Stubelius_Remix_Ltx2.5",
+      "snippet": "Stuubs / Stubelius_Remix_Ltx2.5 Like 9 ltx-2.5 comfyui video License:ltx-2-community-license-agreement Model card FilesFiles and versions xet Community 3 Copy to bucket new LTX 2.5 Stubelius Remix v1 update (2026-10-07) Files How to run v1 NVFP4 (experimental) Credits and licence Beta 2 update (2026-09-19) Beta 1 Usage What it's for"
+    },
+    {
+      "title": "Quantized Models for Lightricks/LTX-2.5 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aquantized%3ALightricks%2FLTX-2.5",
+      "snippet": "• 29.3k • 43 · Stuubs/Stubelius_Remix_Ltx2.5. 21B • Updated 29 days ago • 1.34k • 27 · QuantFunc/LTX-2.5-QuantFunc-4bit. Text-to-Video • Updated Sep 28 • 304 • ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=ltx-2.5",
+      "snippet": "Feature Extraction • 13B • Updated Sep 5 • 13.2k • 59 · Stuubs/Stubelius_Remix_Ltx2.5. 21B • Updated 26 days ago • 1.14k • 27 · Lightricks/LTX-2.5-22b-IC-LoRA- ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=ltx",
+      "snippet": "Together AI · Fireworks · Featherless AI · Zai. + 9 + 11 + 10. Hardware ... Stuubs/Stubelius_Remix_Ltx2.5. 21B • Updated 27 days ago • 1.32k • 27 · Kijai ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=video&p=0&sort=trending",
+      "snippet": "Wan-AI/Wan2.1-T2V-1.3B. Text-to-Video • 1B • Updated Mar 1, 2025 • 87.7k ... Stuubs/Stubelius_Remix_Ltx2.5. 21B • Updated 22 days ago • 1.08k • 27 · onnx ..."
+    }
+  ]
+}

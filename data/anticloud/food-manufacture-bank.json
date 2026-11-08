@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/food-manufacture-bank",
+  "slug": "anticloud-food-manufacture-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/food-manufacture-bank",
+  "created_at": "2026-11-08T10:52:53.000Z",
+  "updated_at": "2026-11-08T10:52:54.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:food-manufacture",
+    "harness:openhands",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "13 Real-World Agentic AI Examples for Banks, NBFCs & Insurers (2026)",
+      "url": "https://www.ampcome.com/post/agentic-ai-examples-banking-compliance-risk",
+      "snippet": "Discover 13 real-world agentic AI examples used by banks, NBFCs, and insurers in 2026—covering compliance, AML, audits, fraud detection, and regulatory risk reduction."
+    },
+    {
+      "title": "Use of AI in the Food Industry [5 Case Studies - DigitalDefynd",
+      "url": "https://digitaldefynd.com/IQ/ai-in-food-industry/",
+      "snippet": "Explore the use of AI in the food industry, enhancing efficiency and product innovation across the value chain."
+    }
+  ]
+}

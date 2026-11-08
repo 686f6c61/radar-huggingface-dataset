@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "denizakkoc/SenseNova-U1-ZebraCoT-GRPO-Simple-v2-20261020",
+  "slug": "denizakkoc-sensenova-u1-zebracot-grpo-simple-v2-20261020",
+  "author": "denizakkoc",
+  "url": "https://huggingface.co/denizakkoc/SenseNova-U1-ZebraCoT-GRPO-Simple-v2-20261020",
+  "created_at": "2026-11-08T11:18:08.000Z",
+  "updated_at": "2026-11-08T11:23:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "grpo",
+    "lora",
+    "multimodal",
+    "visual-reasoning",
+    "zebra-cot",
+    "custom-code",
+    "research-checkpoints",
+    "en",
+    "dataset:multimodal-reasoning-lab/Zebra-CoT",
+    "base_model:sensenova/SenseNova-U1-8B-MoT-SFT",
+    "base_model:adapter:sensenova/SenseNova-U1-8B-MoT-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11417774057,
+  "storage_human": "11.4 GB",
+  "base_model": "sensenova/SenseNova-U1-8B-MoT-SFT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SenseNova - Multimodal AI Model Platform",
+      "url": "https://www.sensenova.ai/",
+      "snippet": "SenseNova is a multimodal AI platform by SenseTime, offering AI capabilities for enterprises worldwide."
+    },
+    {
+      "title": "SenseNova-U1: Unified Vision–Language Model",
+      "url": "https://www.emergentmind.com/topics/sensenova-u1",
+      "snippet": "SenseNova-U1 is a unified multimodal model that integrates vision and language tasks through a native mixture-of-transformers architecture. It employs the NEO-unify backbone with dual-objective training to jointly learn analytic and creative capabilities without separate encoders or decoders. The model achieves state-of-the-art performance across vision-language benchmarks, image generation ..."
+    }
+  ]
+}

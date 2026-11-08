@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Qntology/stanza-pt",
+  "slug": "qntology-stanza-pt",
+  "author": "Qntology",
+  "url": "https://huggingface.co/Qntology/stanza-pt",
+  "created_at": "2026-07-12T01:48:30.000Z",
+  "updated_at": "2026-11-08T11:45:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "stanza",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "stanza",
+    "onnx",
+    "token-classification",
+    "pt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1760101639,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stanfordnlp/stanza-pt · Hugging Face",
+      "url": "https://huggingface.co/stanfordnlp/stanza-pt",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "stanza-pt · Models",
+      "url": "https://www.modelscope.cn/models/stanfordnlp/stanza-pt/summary",
+      "snippet": "Stanza model for Portuguese (pt) Stanza is a collection of accurate and efficient tools for the linguistic analysis of many human languages. Starting from raw text to syntactic analysis and entity recognition, Stanza brings state-of-the-art NLP models to languages of your choosing. Find more about it in our website and our GitHub repository. This card and repo were automatically prepared with ..."
+    }
+  ]
+}

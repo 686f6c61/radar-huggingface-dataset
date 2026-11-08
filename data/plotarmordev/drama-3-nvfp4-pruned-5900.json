@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "plotarmordev/drama-3-NVFP4-Pruned-5900",
+  "slug": "plotarmordev-drama-3-nvfp4-pruned-5900",
+  "author": "plotarmordev",
+  "url": "https://huggingface.co/plotarmordev/drama-3-NVFP4-Pruned-5900",
+  "created_at": "2026-11-08T02:36:05.000Z",
+  "updated_at": "2026-11-08T02:49:15.000Z",
+  "license": "fish-audio-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "fish_omni",
+    "nvfp4",
+    "quantized",
+    "pruned",
+    "moe",
+    "text-to-speech",
+    "fish-audio",
+    "drama-3",
+    "en",
+    "base_model:fishaudio/drama-3",
+    "base_model:quantized:fishaudio/drama-3",
+    "license:other",
+    "8-bit",
+    "bsgemm-moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12967285888,
+  "parameters_human": "12.97B",
+  "storage_bytes": 19714418996,
+  "storage_human": "19.7 GB",
+  "base_model": "fishaudio/drama-3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "plotarmordev/drama-3-NVFP4-Pruned at main - Hugging Face",
+      "url": "https://huggingface.co/plotarmordev/drama-3-NVFP4-Pruned/tree/main",
+      "snippet": "plotarmordev / drama-3-NVFP4-Pruned Like 4 Text-to-Speech Safetensors English fish_omni nvfp4 quantized pruned Mixture of Experts gptq fish-audio drama-3 8-bit precision bsgemm-moe License:fish-audio-community-license Model card FilesFiles and versions xet Community Copy to bucket main drama-3-NVFP4-Pruned 22.3 GB Ctrl+K Ctrl+K 1 contributor History:2 commits plotarmordev Drama 3 NVFP4, pruned ..."
+    },
+    {
+      "title": "plotarmordev (netrunner) - Hugging Face",
+      "url": "https://huggingface.co/plotarmordev",
+      "snippet": "models1 plotarmordev/drama-3-NVFP4-Pruned Text-to-Speech • 15B•Updated about 4 hours ago• 2"
+    }
+  ]
+}

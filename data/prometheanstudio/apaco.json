@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "PrometheanStudio/APACO",
+  "slug": "prometheanstudio-apaco",
+  "author": "PrometheanStudio",
+  "url": "https://huggingface.co/PrometheanStudio/APACO",
+  "created_at": "2026-11-08T07:21:42.000Z",
+  "updated_at": "2026-11-08T07:31:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "text-generation-inference",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19319118862,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prometheanAI (Promethean AI studio) - Hugging Face",
+      "url": "https://huggingface.co/prometheanAI",
+      "snippet": "Hardware and LLM design PrometheanStudio updated a model about 6 hours ago"
+    },
+    {
+      "title": "prometheanAI (Promethean AI studio) - Hugging Face",
+      "url": "https://huggingface.co/prometheanAI/models",
+      "snippet": "Recent Activity PrometheanStudio updated a modelabout 9 hours ago prometheanAI/Talos PrometheanStudio published a modelabout 10 hours ago prometheanAI/Talos View all activity"
+    }
+  ]
+}

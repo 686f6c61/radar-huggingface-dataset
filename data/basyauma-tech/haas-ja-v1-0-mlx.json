@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "basyauma-tech/Haas-ja-v1.0-mlx",
+  "slug": "basyauma-tech-haas-ja-v1-0-mlx",
+  "author": "basyauma-tech",
+  "url": "https://huggingface.co/basyauma-tech/Haas-ja-v1.0-mlx",
+  "created_at": "2026-11-08T07:21:17.000Z",
+  "updated_at": "2026-11-08T07:47:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "apple-silicon",
+    "japanese",
+    "speech-recognition",
+    "asr",
+    "parakeet",
+    "tdt",
+    "fastconformer",
+    "automatic-speech-recognition",
+    "ja",
+    "base_model:third-intelligence/Haas-ja-v1.0",
+    "base_model:quantized:third-intelligence/Haas-ja-v1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 615871520,
+  "parameters_human": "615.9M",
+  "storage_bytes": 1232107007,
+  "storage_human": "1.2 GB",
+  "base_model": "third-intelligence/Haas-ja-v1.0",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Haas-ja-v1.0: 6.12% CER Japanese ASR Model [2026]",
+      "url": "https://tech-insider.org/haas-ja-v1-0-japanese-asr-6-12-percent-cer-open-model-2026/",
+      "snippet": "Haas-ja-v1.0, an open Japanese speech-recognition model from Third Intelligence, reports a 6.12% strict CER under Apache 2.0. What is confirmed."
+    },
+    {
+      "title": "Haas-ja-v1.0: 6.12% CER Japanese Speech Model [2026]",
+      "url": "https://shattered.io/haas-ja-v1-0-japanese-speech-recognition-6-12-percent-cer-open-model-2026/",
+      "snippet": "Third Intelligence has released Haas-ja-v1.0, an open Japanese speech recognition model built for fast, accurate transcription. In its release post, researcher Tatsu Matsushima wrote, “We have developed a new Japanese speech recognition model, Haas-ja-v1.0, and released it as open source!”, as GIGAZINE reported on November 2. The dated announcement puts the release on October 30, 2026."
+    }
+  ]
+}

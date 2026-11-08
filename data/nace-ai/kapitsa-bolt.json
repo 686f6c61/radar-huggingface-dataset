@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "nace-ai/kapitsa-bolt",
+  "slug": "nace-ai-kapitsa-bolt",
+  "author": "nace-ai",
+  "url": "https://huggingface.co/nace-ai/kapitsa-bolt",
+  "created_at": "2026-11-08T11:44:41.000Z",
+  "updated_at": "2026-11-08T11:45:02.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "kapitsa",
+    "apple-silicon",
+    "local-inference",
+    "text-generation",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - nace-ai/kapitsa: Blazing fast Apple Silicon inference engine ...",
+      "url": "https://github.com/nace-ai/kapitsa",
+      "snippet": "Kapitsa is an inference engine for Apple silicon that runs Qwen, Nemotron and Recursive's Flint models locally, built for coding agents. It starts opencode, Claude Code, Codex or pi on a local model, and serves OpenAI and Anthropic APIs. Kapitsa has the fastest decode in 33 of the 38 model and Mac ..."
+    },
+    {
+      "title": "GitHub - nace-ai/kapitsa: Fastest Apple silicon inference engine built ...",
+      "url": "https://github.com/nace-ai/kapitsa/tree/main",
+      "snippet": "Downloads include the model's companion files (precisions). Bolt is NVIDIA's own 24gb checkpoint. Qwen3.6, Qwen3.8 and Bolt read images; the 4B is text only. Other Qwen3.5-family models load from a Hugging Face repo, a folder or a GGUF file (other models). Model weights keep their own licenses."
+    }
+  ]
+}

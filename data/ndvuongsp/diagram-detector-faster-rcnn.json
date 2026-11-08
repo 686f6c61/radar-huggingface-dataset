@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "ndvuongsp/diagram-detector-faster-rcnn",
+  "slug": "ndvuongsp-diagram-detector-faster-rcnn",
+  "author": "ndvuongsp",
+  "url": "https://huggingface.co/ndvuongsp/diagram-detector-faster-rcnn",
+  "created_at": "2026-11-08T05:31:01.000Z",
+  "updated_at": "2026-11-08T05:35:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "faster_rcnn",
+    "object-detection",
+    "faster-rcnn",
+    "pytorch",
+    "ai2d",
+    "edusgg",
+    "scene-graph",
+    "diagram-understanding",
+    "en",
+    "vi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 173426953,
+  "storage_human": "173 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Faster R-CNN | ML - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/faster-r-cnn-ml/",
+      "snippet": "Faster R-CNN is a deep learning-based object detection model that identifies and localises multiple objects in an image using a unified architecture. It improves on R-CNN and Fast R-CNN by introducing a Region Proposal Network (RPN) for efficient proposal generation."
+    },
+    {
+      "title": "Faster R-CNN for Object Detection in PyTorch: A Comprehensive Guide",
+      "url": "https://www.codegenes.net/blog/object-detection-faster-rcnn-pytorch/",
+      "snippet": "Conclusion In this blog, we have explored the fundamental concepts of Faster R-CNN in PyTorch, learned how to use pre-trained models for inference, and discussed common practices and best practices for object detection. Faster R-CNN is a powerful algorithm that can achieve high accuracy in object detection tasks."
+    }
+  ]
+}

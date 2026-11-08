@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "dddddsds31341/Long-WAM-Fold-Towel-Step-15000",
+  "slug": "dddddsds31341-long-wam-fold-towel-step-15000",
+  "author": "dddddsds31341",
+  "url": "https://huggingface.co/dddddsds31341/Long-WAM-Fold-Towel-Step-15000",
+  "created_at": "2026-11-08T06:45:57.000Z",
+  "updated_at": "2026-11-08T06:59:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "long-wam",
+    "fold-towel",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12047051197,
+  "storage_human": "12.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dddddsds31341/Long-WAM-Fold-Towel-Step-5000 · Hugging Face",
+      "url": "https://huggingface.co/dddddsds31341/Long-WAM-Fold-Towel-Step-5000",
+      "snippet": "Long-WAM Fold Towel — Step 5,000 Evaluation weights at optimizer step 5,000. Task: With one gripper at each end of a long towel edge, lift and fold the towel in the short-edge, long-edge, then short-edge directions, and finally align and smooth it flat. model.pt contains evaluation weights."
+    },
+    {
+      "title": "Long-WAM-Fold-Towel-3Epoch-20261030-Step-2066 - Hugging Face",
+      "url": "https://huggingface.co/dddddsds31341/Long-WAM-Fold-Towel-3Epoch-20261030-Step-2066",
+      "snippet": "Inference weights from fold-towel-3ep-epochckpt-20261030-023552, optimizer step 2,066. This is a separate training run from the previously published epoch-named Long-WAM repositories. With one gripper at each end of a long towel edge, lift and fold the towel in the short-edge, long-edge, then short ..."
+    }
+  ]
+}

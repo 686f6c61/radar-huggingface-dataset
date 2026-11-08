@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Anticloud/sales-bank",
+  "slug": "anticloud-sales-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/sales-bank",
+  "created_at": "2026-11-08T10:53:33.000Z",
+  "updated_at": "2026-11-08T10:53:35.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:sales",
+    "harness:openhands",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The best AI agents for sales on the market - HubSpot Blog",
+      "url": "https://blog.hubspot.com/sales/ai-agent-tools",
+      "snippet": "AI agents can transform the way you work. Discover how AI agents for sales can help your team, plus 10 tools that can take repetitive tasks off your plate."
+    }
+  ]
+}

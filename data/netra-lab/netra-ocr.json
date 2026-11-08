@@ -5,7 +5,7 @@
   "author": "Netra-Lab",
   "url": "https://huggingface.co/Netra-Lab/Netra-OCR",
   "created_at": "2026-10-31T11:56:53.000Z",
-  "updated_at": "2026-10-31T20:06:36.000Z",
+  "updated_at": "2026-11-07T07:25:05.000Z",
   "license": "mixed",
   "license_family": "unknown",
   "pipeline_tag": "image-to-text",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 627363899,
-  "storage_human": "627 MB",
+  "storage_bytes": 673123288,
+  "storage_human": "673 MB",
   "base_model": null,
   "formats": [
     "onnx"

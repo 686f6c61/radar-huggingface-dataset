@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "robotcpp/bitvla-libero-object-i2s",
+  "slug": "robotcpp-bitvla-libero-object-i2s",
+  "author": "robotcpp",
+  "url": "https://huggingface.co/robotcpp/bitvla-libero-object-i2s",
+  "created_at": "2026-11-08T09:14:06.000Z",
+  "updated_at": "2026-11-08T09:15:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "robotics",
+    "bitvla",
+    "base_model:hongyuw/ft-bitvla-bitsiglipL-224px-libero_object-bf16",
+    "base_model:quantized:hongyuw/ft-bitvla-bitsiglipL-224px-libero_object-bf16",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 59059207,
+  "parameters_human": "59.1M",
+  "storage_bytes": 1440224736,
+  "storage_human": "1.4 GB",
+  "base_model": "hongyuw/ft-bitvla-bitsiglipL-224px-libero_object-bf16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ustcwhy/BitVLA: Official implementation for BitVLA: 1-bit ...",
+      "url": "https://github.com/ustcwhy/BitVLA",
+      "snippet": "BitVLA: 1-bit Vision-Language-Action Models for Robotics Manipulation September 2026: BitVLA is accepted by CoRL 2026! March 2026: 🚀 We have released the pre-trained BitVLA model! The evaluation results in the table below have been updated to reflect the performance after pre-training. You can try our new pre-trained model out-of-the-box."
+    },
+    {
+      "title": "robotcpp (robot.cpp) - Hugging Face",
+      "url": "https://huggingface.co/robotcpp/models",
+      "snippet": "Org profile for robot.cpp on Hugging Face, the AI community building the future."
+    }
+  ]
+}

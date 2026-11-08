@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "halfmoon-mind/still-material-restore",
+  "slug": "halfmoon-mind-still-material-restore",
+  "author": "halfmoon-mind",
+  "url": "https://huggingface.co/halfmoon-mind/still-material-restore",
+  "created_at": "2026-11-08T06:11:00.000Z",
+  "updated_at": "2026-11-08T06:14:28.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "core-ml",
+    "super-resolution",
+    "image-restoration",
+    "ios",
+    "apple-neural-engine",
+    "research",
+    "image-to-image",
+    "arxiv:2508.08227",
+    "base_model:Manojb/stable-diffusion-2-1-base",
+    "base_model:quantized:Manojb/stable-diffusion-2-1-base",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 800416745,
+  "storage_human": "800 MB",
+  "base_model": "Manojb/stable-diffusion-2-1-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "halfmoon-mind/still-generative-detail-4x · Hugging Face",
+      "url": "https://huggingface.co/halfmoon-mind/still-generative-detail-4x",
+      "snippet": "halfmoon-mind / still-generative-detail-4x Like 0 Image-to-Image Core ML core-ml super-resolution image-restoration ios apple-neural-engine arxiv:2411.13383 License:openrail++ Model card FilesFiles and versions xet Community Copy to bucket GenerativeDetail4x — AdcSR ×4 for Core ML (Neural Engine, int8) Files Interface Changes from the ..."
+    }
+  ]
+}

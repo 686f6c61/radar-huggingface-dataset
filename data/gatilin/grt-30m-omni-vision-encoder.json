@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "gatilin/grt-30m-omni-vision-encoder",
+  "slug": "gatilin-grt-30m-omni-vision-encoder",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/grt-30m-omni-vision-encoder",
+  "created_at": "2026-11-08T07:38:29.000Z",
+  "updated_at": "2026-11-08T07:39:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "grt_omni",
+    "multimodal",
+    "image-feature-extraction",
+    "rotational-transformer",
+    "base_model:MatterWaveAI/grt-30m-omni",
+    "base_model:finetune:MatterWaveAI/grt-30m-omni",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5289344,
+  "parameters_human": "5.3M",
+  "storage_bytes": 22520064,
+  "storage_human": "23 MB",
+  "base_model": "MatterWaveAI/grt-30m-omni",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GRT-30M-Omni ( MatterWaveAI/grt-30m-omni ) - Hugging Face",
+      "url": "https://huggingface.co/MatterWaveAI/grt-30m-omni",
+      "snippet": "Any-to-Any model with 38.7M parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Vision Encoders in Vision-Language Models: A Survey - jina.ai",
+      "url": "https://jina.ai/vision-encoder-survey.pdf",
+      "snippet": "This survey analyzes vision encoders across 70+ vision-language models from 2023–20251 and finds that training methodology matters more than encoder size: improvements in loss functions, data curation, and feature objectives yield larger gains than scaling by an order of magnitude."
+    }
+  ]
+}

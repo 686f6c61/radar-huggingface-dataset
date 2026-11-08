@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "OpceanAI/qwenti-inference",
+  "slug": "opceanai-qwenti-inference",
+  "author": "OpceanAI",
+  "url": "https://huggingface.co/OpceanAI/qwenti-inference",
+  "created_at": "2026-11-08T08:04:16.000Z",
+  "updated_at": "2026-11-08T08:51:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "qwen3.5",
+    "tinyllama",
+    "riscv",
+    "int4",
+    "in-weights",
+    "compiled-weights",
+    "exact-arithmetic",
+    "qwenti",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14491020736,
+  "parameters_human": "14.49B",
+  "storage_bytes": 49671476303,
+  "storage_human": "49.7 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpceanAI · GitHub",
+      "url": "https://github.com/OpceanAI",
+      "snippet": "OpceanAI is an independent AI research organization founded in 2026 by awa_omg, researcher based in Mexico. The organization operates with no institutional funding, no cloud compute budget, and no team — producing peer-reviewed research, competitive language models, and open-source tooling from consumer hardware. OpceanAI's work spans three domains: small language model development under ..."
+    }
+  ]
+}

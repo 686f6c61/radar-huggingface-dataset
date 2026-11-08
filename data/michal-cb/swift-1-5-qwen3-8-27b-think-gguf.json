@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "michal-cb/Swift-1.5-Qwen3.8-27B-think-GGUF",
+  "slug": "michal-cb-swift-1-5-qwen3-8-27b-think-gguf",
+  "author": "michal-cb",
+  "url": "https://huggingface.co/michal-cb/Swift-1.5-Qwen3.8-27B-think-GGUF",
+  "created_at": "2026-11-08T11:42:56.000Z",
+  "updated_at": "2026-11-08T11:42:56.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_8",
+    "reasoning",
+    "efficient-thinking",
+    "token-efficient",
+    "post-training",
+    "terminal-bench",
+    "image-text-to-text",
+    "base_model:ukisai/Swift-1.5-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-1.5-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 356937211108,
+  "storage_human": "356.9 GB",
+  "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ukisai/Swift-1.5-Qwen3.8-27b-INT4 · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b-INT4",
+      "snippet": "The external results below compare Qwen3.8-27B, the foundation base model, and Swift 1.5. Both models use the same saved evaluation protocols, and all scores are reported as final aggregate percentages."
+    },
+    {
+      "title": "README.md · ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF at main",
+      "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF/blob/main/README.md",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "damminhtien/deepnet-potsdam-segmentation",
+  "slug": "damminhtien-deepnet-potsdam-segmentation",
+  "author": "damminhtien",
+  "url": "https://huggingface.co/damminhtien/deepnet-potsdam-segmentation",
+  "created_at": "2026-11-08T06:04:07.000Z",
+  "updated_at": "2026-11-08T06:05:17.000Z",
+  "license": "mixed-model-specific-terms",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "semantic-segmentation",
+    "remote-sensing",
+    "isprs-potsdam",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 896620016,
+  "storage_human": "897 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepnet-for-semantic-labeling-photogrammetry/Insight-data-potsdam.ipynb ...",
+      "url": "https://github.com/damminhtien/deepnet-for-semantic-labeling-photogrammetry/blob/master/Insight-data-potsdam.ipynb",
+      "snippet": "Semantic segmentation of aerial imagery on the Potsdam and Vaihingen dataset. - damminhtien/deepnet-for-semantic-labeling-photogrammetry"
+    },
+    {
+      "title": "damminhtien/deepnet-for-semantic-labeling-photogrammetry",
+      "url": "https://github.com/damminhtien/deepnet-for-semantic-labeling-photogrammetry",
+      "snippet": "DeepNet-for-Semantic-Labeling-Photogrammetry This project aim to automated extraction of urban objects from data acquired by airborne sensors which very high-resolution data (leads to high intra-class variance while the inter-class variance is low), focus is on detailed 2D semantic segmentation that assigns labels to multiple object categories."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "GinDuck/microduck-sock-heist-6m-continue-2-d",
+  "slug": "ginduck-microduck-sock-heist-6m-continue-2-d",
+  "author": "GinDuck",
+  "url": "https://huggingface.co/GinDuck/microduck-sock-heist-6m-continue-2-d",
+  "created_at": "2026-11-08T07:40:37.000Z",
+  "updated_at": "2026-11-08T07:40:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5674232,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GinDuck/microduck-sock-heist-6m-continue-2 · Hugging Face",
+      "url": "https://huggingface.co/GinDuck/microduck-sock-heist-6m-continue-2",
+      "snippet": "Instructions to use GinDuck/microduck-sock-heist-6m-continue-2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Microduck How to use GinDuck/microduck-sock-heist-6m-continue-2 with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade). sudo robotctl ..."
+    },
+    {
+      "title": "GinDuck/microduck-sock-heist-6m-continue-2-c · Hugging Face",
+      "url": "https://huggingface.co/GinDuck/microduck-sock-heist-6m-continue-2-c",
+      "snippet": "How to use GinDuck/microduck-sock-heist-6m-continue-2-c with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade). sudo robotctl policy load SLOT GinDuck/microduck-sock-heist-6m-continue-2-c A late checkpoint of my ..."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Rishitha05479/data266-lab2-sd15-lora-run2",
+  "slug": "rishitha05479-data266-lab2-sd15-lora-run2",
+  "author": "Rishitha05479",
+  "url": "https://huggingface.co/Rishitha05479/data266-lab2-sd15-lora-run2",
+  "created_at": "2026-11-08T07:00:27.000Z",
+  "updated_at": "2026-11-08T07:00:32.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lora",
+    "stable-diffusion",
+    "coursework",
+    "text-to-image",
+    "dataset:lambdalabs/naruto-blip-captions",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:adapter:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25550624,
+  "storage_human": "26 MB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SushmaMaddali/data266-pokemon-sd15-lora-r32 · Hugging Face",
+      "url": "https://huggingface.co/SushmaMaddali/data266-pokemon-sd15-lora-r32",
+      "snippet": "SushmaMaddali / data266-pokemon-sd15-lora-r32 Like 0 Text-to-Image stable-diffusion lora pokemon data266 License:other Model card FilesFiles and versions xet Community Copy to bucket new Pokémon Stable Diffusion 1.5 LoRA - Rank 32 Training License and intended use Limitations and safety"
+    },
+    {
+      "title": "SushmaMaddali/data266-pokemon-sd15-lora-r8 · Hugging Face",
+      "url": "https://huggingface.co/SushmaMaddali/data266-pokemon-sd15-lora-r8",
+      "snippet": "SushmaMaddali / data266-pokemon-sd15-lora-r8 Like 0 Text-to-Image Diffusers stable-diffusion lora pokemon data266 License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

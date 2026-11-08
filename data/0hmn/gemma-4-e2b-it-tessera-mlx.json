@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "0hmn/gemma-4-e2b-it-tessera-mlx",
+  "slug": "0hmn-gemma-4-e2b-it-tessera-mlx",
+  "author": "0hmn",
+  "url": "https://huggingface.co/0hmn/gemma-4-e2b-it-tessera-mlx",
+  "created_at": "2026-11-08T08:14:51.000Z",
+  "updated_at": "2026-11-08T08:17:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "quantized",
+    "mixed-precision",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569379,
+  "parameters_human": "4.63B",
+  "storage_bytes": 2331190808,
+  "storage_human": "2.3 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 model overview - Gemma Documentation",
+      "url": "https://gemma.ai/models/gemma-4/",
+      "snippet": "Overview of Google's Gemma 4 open-weight multimodal models (E2B, E4B, 12B, 26B A4B, and 31B): capabilities, context windows, VRAM, and QAT checkpoints."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    }
+  ]
+}

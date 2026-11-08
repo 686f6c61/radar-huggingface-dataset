@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "xyzhuy/vintern-1b-v3_5-gguf",
+  "slug": "xyzhuy-vintern-1b-v3_5-gguf",
+  "author": "xyzhuy",
+  "url": "https://huggingface.co/xyzhuy/vintern-1b-v3_5-gguf",
+  "created_at": "2026-11-08T09:53:35.000Z",
+  "updated_at": "2026-11-08T09:54:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "webgpu",
+    "vision-language",
+    "vietnamese",
+    "base_model:5CD-AI/Vintern-1B-v3_5",
+    "base_model:quantized:5CD-AI/Vintern-1B-v3_5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 938213504,
+  "parameters_human": "938.2M",
+  "storage_bytes": 1006291552,
+  "storage_human": "1.0 GB",
+  "base_model": "5CD-AI/Vintern-1B-v3_5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ngxson/Vintern-1B-v3_5-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ngxson/Vintern-1B-v3_5-GGUF",
+      "snippet": "Original model: https://huggingface.co/5CD-AI/Vintern-1B-v3_5 How to use this Install llama.cpp Then:"
+    },
+    {
+      "title": "5CD-AI/Vintern-1B-v3_5 · Hugging Face",
+      "url": "https://huggingface.co/5CD-AI/Vintern-1B-v3_5",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

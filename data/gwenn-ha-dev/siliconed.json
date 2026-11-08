@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "gwenn-ha-dev/Siliconed",
+  "slug": "gwenn-ha-dev-siliconed",
+  "author": "gwenn-ha-dev",
+  "url": "https://huggingface.co/gwenn-ha-dev/Siliconed",
+  "created_at": "2026-11-08T10:05:53.000Z",
+  "updated_at": "2026-11-08T10:06:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "macos",
+    "apple-silicon",
+    "metal",
+    "swift",
+    "text-to-image",
+    "image-editing",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12238432,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - gwenn-ha-dev/Siliconed: Native macOS app for local AI image ...",
+      "url": "https://github.com/gwenn-ha-dev/Siliconed",
+      "snippet": "Siliconed Generate and edit images on your Mac, locally, with recent open-weight models: computed in full precision, checked against the original code, and never using more memory than a fixed budget. Siliconed is a free, open-source macOS app for local text-to-image generation and AI image editing on Apple silicon Macs (M1 and later)."
+    },
+    {
+      "title": "Siliconed — your Mac, mapped: local image generation and editing for ...",
+      "url": "https://gwenn-ha-dev.github.io/Siliconed/",
+      "snippet": "The largest model Siliconed runs, and it fits anyway. Aesthetic images, from photography to painting. The whole 8-step recipe in fp32 on the publisher's bf16 weights: 34 GB streamed from disk, while the app stays inside a 10 GB budget on a 16 GB Mac. Standard, Compact or Light, from open copies proven identical to Krea's files."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mistral-Small-Sisyphus-24b-2503-GGUF",
+  "slug": "mradermacher-mistral-small-sisyphus-24b-2503-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mistral-Small-Sisyphus-24b-2503-GGUF",
+  "created_at": "2025-03-03T10:31:49.000Z",
+  "updated_at": "2026-11-08T05:59:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "axolotl",
+    "en",
+    "zh",
+    "dataset:allenai/tulu-3-sft-personas-instruction-following",
+    "dataset:simplescaling/s1K-1.1",
+    "dataset:simplescaling/s1K-claude-3-7-sonnet",
+    "dataset:reedmayhew/medical-o1-reasoning-SFT-jsonl",
+    "dataset:OpenCoder-LLM/opc-sft-stage1",
+    "dataset:PocketDoc/Dans-Kinomaxx-VanillaBackrooms",
+    "dataset:cognitivecomputations/SystemChat-2.0",
+    "dataset:anthracite-org/kalo-opus-instruct-22k-no-refusal",
+    "dataset:allura-org/scienceqa_sharegpt",
+    "base_model:allura-org/Mistral-Small-Sisyphus-24b-2503",
+    "base_model:quantized:allura-org/Mistral-Small-Sisyphus-24b-2503",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 175,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 161407754592,
+  "storage_human": "161.4 GB",
+  "base_model": "allura-org/Mistral-Small-Sisyphus-24b-2503",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Mistral-Small-Sisyphus-24b-2503-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Mistral-Small-Sisyphus-24b-2503-GGUF",
+      "snippet": "mradermacher / Mistral-Small-Sisyphus-24b-2503-GGUF like 0 Transformers GGUF 9 datasets English Chinese axolotl Inference Endpoints conversational License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "Mistral-Small-Sisyphus-24b-2503-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Mistral-Small-Sisyphus-24b-2503-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    }
+  ]
+}

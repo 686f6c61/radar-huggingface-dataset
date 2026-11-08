@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "SigongJoa/needle3-tool-call-ko-v1",
+  "slug": "sigongjoa-needle3-tool-call-ko-v1",
+  "author": "SigongJoa",
+  "url": "https://huggingface.co/SigongJoa/needle3-tool-call-ko-v1",
+  "created_at": "2026-11-08T08:16:33.000Z",
+  "updated_at": "2026-11-08T08:22:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "needle3",
+    "ko",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:Moo/korean-parallel-corpora",
+    "dataset:eliceai/korean-webtext-edu",
+    "dataset:MadeAgents/xlam-irrelevance-7.5k",
+    "dataset:Team-ACE/ToolACE",
+    "dataset:argilla/Synth-APIGen-v0.1",
+    "dataset:ibm-research/ToolRM-train-data",
+    "dataset:jaeyong2/Ko-functioncall",
+    "dataset:palette-lab/songgot-tools-ko",
+    "dataset:waylake/ko-agentic-sft",
+    "base_model:Cactus-Compute/needle3",
+    "base_model:finetune:Cactus-Compute/needle3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Cactus-Compute/needle3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cactus-Compute/needle3 · Hugging Face",
+      "url": "https://huggingface.co/Cactus-Compute/needle3",
+      "snippet": "A foundation model for mobiles, wearables, robots, smart home, automotive and microcontrollers. The whole model is a single 8-29 MB file, and we trade general chat capacity to beat models 10x its size on mobile tool calls and match 2-3x bigger models on extraction."
+    },
+    {
+      "title": "Needle 3 - 8-29 MB foundation model for tiny devices | Cactus",
+      "url": "https://cactuscompute.com/needle",
+      "snippet": "A foundation model for mobile, wearables, robots, smart home, automotive and microcontrollers. One 8-29 MB binary that beats models 10x its size on mobile tool calls and matches 2-3x bigger models on extraction."
+    }
+  ]
+}

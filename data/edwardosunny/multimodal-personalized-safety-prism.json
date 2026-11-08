@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "EdwardoSunny/multimodal-personalized-safety-prism",
+  "slug": "edwardosunny-multimodal-personalized-safety-prism",
+  "author": "EdwardoSunny",
+  "url": "https://huggingface.co/EdwardoSunny/multimodal-personalized-safety-prism",
+  "created_at": "2026-11-08T04:13:56.000Z",
+  "updated_at": "2026-11-08T04:13:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "safety",
+    "personalization",
+    "multimodal",
+    "vision-language-models",
+    "deferral",
+    "dataset:EdwardoSunny/multimodal-personalized-safety",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 127098256,
+  "storage_human": "127 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Edward Sun",
+      "url": "https://edwardosunny.github.io/",
+      "snippet": "Edward Sun*, Yuchen Wu*, Zixian Ma, Eric Hanchen Jiang, Yijia Xiao, Xiaoyuan Yi, Ranjay Krishna, Wei Wang, Jindong Wang, Aylin Caliskan COLM 2026 Studies personalized safety in vision-language models, where a generally reasonable response may be unsafe for a specific user whose medical, emotional, or situational context is hidden."
+    }
+  ]
+}

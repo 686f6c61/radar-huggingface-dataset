@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "jitvimol/typhoon-ocr2-0.8b-mlx-8bit",
+  "slug": "jitvimol-typhoon-ocr2-0-8b-mlx-8bit",
+  "author": "jitvimol",
+  "url": "https://huggingface.co/jitvimol/typhoon-ocr2-0.8b-mlx-8bit",
+  "created_at": "2026-11-08T09:13:10.000Z",
+  "updated_at": "2026-11-08T09:51:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "ocr",
+    "thai",
+    "document-parsing",
+    "layout-analysis",
+    "vision-language-model",
+    "image-text-to-text",
+    "conversational",
+    "th",
+    "en",
+    "arxiv:2601.14722",
+    "base_model:typhoon-ai/typhoon-ocr2-0.8b",
+    "base_model:quantized:typhoon-ai/typhoon-ocr2-0.8b",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1021165893,
+  "storage_human": "1.0 GB",
+  "base_model": "typhoon-ai/typhoon-ocr2-0.8b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models | Typhoon Documentation",
+      "url": "https://docs.opentyphoon.ai/en/models/",
+      "snippet": "Models OpenTyphoon.ai offers several models optimized for Thai language understanding and generation. Each model has different capabilities, performance characteristics, and rate limits."
+    },
+    {
+      "title": "README.md · typhoon-ai/typhoon-ocr2-0.8b at main - Hugging Face",
+      "url": "https://huggingface.co/typhoon-ai/typhoon-ocr2-0.8b/blob/main/README.md",
+      "snippet": "The 0.8B model was trained on the same general question-answering tasks as the 2B model, but at this size it scores lower on them than Typhoon OCR 1.5 (ThaiOCRBench 36.4 against 40.5)."
+    },
+    {
+      "title": "Typhoon OCR | Typhoon",
+      "url": "https://opentyphoon.ai/model/typhoon-ocr",
+      "snippet": "A next-generation, bilingual vision-language document parsing model built for real-word use cases, Typhoon OCR delivers structured, layout-aware, and semantically rich outputs as well as outperforms both GPT-5 and Gemini 2.5 Flash in Thai document understanding, particularly on documents with complex layouts and mixed-language content."
+    },
+    {
+      "title": "Typhoon - Thailand's Frontier AI Research Lab",
+      "url": "https://opentyphoon.ai/",
+      "snippet": "Typhoon — #1 open-source Thai large language technologies (LLMs) with most downloads and usage by the community. Experience the power of AI across multiple modalities."
+    }
+  ]
+}

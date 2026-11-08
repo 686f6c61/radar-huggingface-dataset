@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "int-brain-lab/ea-encoder-unit",
+  "slug": "int-brain-lab-ea-encoder-unit",
+  "author": "int-brain-lab",
+  "url": "https://huggingface.co/int-brain-lab/ea-encoder-unit",
+  "created_at": "2026-08-20T07:58:07.000Z",
+  "updated_at": "2026-11-08T10:27:53.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "joblib",
+    "neuroscience",
+    "electrophysiology",
+    "neuropixels",
+    "unit-level-encoder",
+    "international-brain-lab",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 52,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 673768898,
+  "storage_human": "674 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "int-brain-lab/ea-decoder-channel-xgboost at main - Hugging Face",
+      "url": "https://huggingface.co/int-brain-lab/ea-decoder-channel-xgboost/tree/main",
+      "snippet": "1 Follow International Brain Laboratory 4 xgboost neuroscience electrophysiology neuropixels brain-region-classification international-brain-lab License:cc-by-4.0 Model card FilesFiles and versions xet Community Copy to bucket new main ea-decoder-channel-xgboost 29.2 MB Ctrl+K Ctrl+K 1 contributor History:5 commits rpranav Re-checksum to sha1 ..."
+    },
+    {
+      "title": "int-brain-lab (International Brain Laboratory) - Hugging Face",
+      "url": "https://huggingface.co/int-brain-lab/models",
+      "snippet": "Org profile for International Brain Laboratory on Hugging Face, the AI community building the future."
+    }
+  ]
+}

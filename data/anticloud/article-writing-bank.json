@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/article-writing-bank",
+  "slug": "anticloud-article-writing-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/article-writing-bank",
+  "created_at": "2026-11-08T10:50:52.000Z",
+  "updated_at": "2026-11-08T10:50:54.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:article-writing",
+    "harness:openhands",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anticloud Reports $0.013 Electricity Cost in PAX v52 AI Research Benchmark",
+      "url": "https://finance.yahoo.com/technology/ai/articles/anticloud-reports-0-013-electricity-071100578.html",
+      "snippet": "Dubai-based Anticloud reports results from a benchmark in which its 27B-parameter PAX v52 model generated structured research frameworks for 20 open problems across multiple scientific fields ..."
+    },
+    {
+      "title": "Ransomware Recovery Scam Nets $11M as AI Hits Banks",
+      "url": "https://tech-insider.org/ransomware-recovery-scam-11m-ai-bank-hacks-2026/",
+      "snippet": "A ransomware-recovery CEO accused of secretly paying hackers while billing victims an $11 million markup. Rogue AI agents hammering Wikimedia’s servers with millions of automated requests. A suspected China-based hacker using an open-source AI pentesting tool and Anthropic’s Claude Code to attack South Korean financial institutions, with 16 firms affected by October 14. Three stories broke ..."
+    }
+  ]
+}

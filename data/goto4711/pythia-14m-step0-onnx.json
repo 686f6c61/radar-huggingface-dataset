@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "goto4711/pythia-14m-step0-ONNX",
+  "slug": "goto4711-pythia-14m-step0-onnx",
+  "author": "goto4711",
+  "url": "https://huggingface.co/goto4711/pythia-14m-step0-ONNX",
+  "created_at": "2026-11-08T10:03:46.000Z",
+  "updated_at": "2026-11-08T10:03:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "gpt_neox",
+    "text-generation",
+    "base_model:EleutherAI/pythia-14m",
+    "base_model:quantized:EleutherAI/pythia-14m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14367002,
+  "storage_human": "14 MB",
+  "base_model": "EleutherAI/pythia-14m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Clausss/pythia-14m-ONNX · Hugging Face",
+      "url": "https://huggingface.co/Clausss/pythia-14m-ONNX",
+      "snippet": "This is an ONNX version of EleutherAI/pythia-14m. It was automatically converted and uploaded using this Hugging Face Space. Note: Prior to Feb 27th, 2026, a model was hosted at this URL that was trained on the deduplicated Pile. That model is now at EleutherAI/pythia-14m-deduped and this model was ..."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "rabindra-dahal/romanized-to-devanagari-using-sentencepiece-tokenizer-nlp",
+  "slug": "rabindra-dahal-romanized-to-devanagari-using-sentencepiece-tokenizer-nlp",
+  "author": "rabindra-dahal",
+  "url": "https://huggingface.co/rabindra-dahal/romanized-to-devanagari-using-sentencepiece-tokenizer-nlp",
+  "created_at": "2026-11-08T10:56:41.000Z",
+  "updated_at": "2026-11-08T10:57:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "pytorch",
+  "languages": [
+    "ne"
+  ],
+  "tags": [
+    "pytorch",
+    "nepali",
+    "romanized-nepali",
+    "devanagari",
+    "seq2seq",
+    "transformer",
+    "sentencepiece",
+    "transliteration",
+    "nlp",
+    "translation",
+    "ne",
+    "dataset:rabindra-dahal/english-nepali-romanized-csv-text-for-kid-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12022372,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - rabindra-dahal/romanized-to-devanagari-using-sentencepiece ...",
+      "url": "https://github.com/rabindra-dahal/romanized-to-devanagari-using-sentencepiece-tokenizer-nlp/tree/main",
+      "snippet": "An offline, lightweight Sequence-to-Sequence (Seq2Seq) Neural Machine Translation (NMT) system built from scratch in PyTorch. It translates Romanized Nepali text (including common chat slang) into native Devanagari script using a custom 2-layer Encoder-Decoder Transformer and SentencePiece subword tokenization."
+    },
+    {
+      "title": "romanized-to-devanagari-using-sentencepiece-tokenizer-nlp/app ... - GitHub",
+      "url": "https://github.com/rabindra-dahal/romanized-to-devanagari-using-sentencepiece-tokenizer-nlp/tree/main/app",
+      "snippet": "Convert given nepali romanized word into nepali devanagari using transformer and PyTorch through sentence piece tokenizer from scratch - rabindra-dahal/romanized-to ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sf655656/tiny-recursive-model-sudoku-mvp27",
+  "slug": "sf655656-tiny-recursive-model-sudoku-mvp27",
+  "author": "sf655656",
+  "url": "https://huggingface.co/sf655656/tiny-recursive-model-sudoku-mvp27",
+  "created_at": "2026-04-09T16:49:05.000Z",
+  "updated_at": "2026-11-08T11:43:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "sudoku",
+    "lora",
+    "qwen",
+    "reasoning",
+    "trm",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14634480769,
+  "storage_human": "14.6 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - NagaSatyaPhanindraVallabhaneni/tiny-recursive-model: TRM ...",
+      "url": "https://github.com/NagaSatyaPhanindraVallabhaneni/tiny-recursive-model",
+      "snippet": "A Sudoku-solving neural network with 44,001 parameters that reasons — running in milliseconds on any CPU. No GPU. No 7-billion-parameter download. It fits in a tweet. Inspired by the Tiny Recursive Model line of research: instead of one giant network, take a small reasoning block and apply it ..."
+    },
+    {
+      "title": "tiny-recursive-model/README.md at main - GitHub",
+      "url": "https://github.com/NagaSatyaPhanindraVallabhaneni/tiny-recursive-model/blob/main/README.md",
+      "snippet": "Inspired by the Tiny Recursive Model line of research: instead of one giant network, take a small reasoning block and apply it recursively — the same weights reused R times — so the latent state refines itself step by step. Training uses deep supervision: the output head is read out after every recursion step, and the loss is the average over steps, pushing each step to be a better answer ..."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/ERNIE-4.5-21B-A3B-PT-mic",
+  "slug": "huggingface-mic-ernie-4-5-21b-a3b-pt-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/ERNIE-4.5-21B-A3B-PT-mic",
+  "created_at": "2026-11-08T09:11:13.000Z",
+  "updated_at": "2026-11-08T09:17:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ernie4_5_moe",
+    "mic",
+    "test-artifact",
+    "base_model:baidu/ERNIE-4.5-21B-A3B-PT",
+    "base_model:finetune:baidu/ERNIE-4.5-21B-A3B-PT",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6705732,
+  "parameters_human": "6.7M",
+  "storage_bytes": 26215458,
+  "storage_human": "26 MB",
+  "base_model": "baidu/ERNIE-4.5-21B-A3B-PT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "baidu/ERNIE-4.5-21B-A3B-PT · Hugging Face",
+      "url": "https://huggingface.co/baidu/ERNIE-4.5-21B-A3B-PT",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "baidu/ERNIE-4.5-21B-A3B-Thinking · Hugging Face",
+      "url": "https://huggingface.co/baidu/ERNIE-4.5-21B-A3B-Thinking",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "hssling/genomerisklab-prs",
+  "slug": "hssling-genomerisklab-prs",
+  "author": "hssling",
+  "url": "https://huggingface.co/hssling/genomerisklab-prs",
+  "created_at": "2026-04-04T16:13:13.000Z",
+  "updated_at": "2026-11-08T08:36:23.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hssling/genomerisklab-prs · Hugging Face",
+      "url": "https://huggingface.co/hssling/genomerisklab-prs",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · hssling/genomerisklab-prs at main - Hugging Face",
+      "url": "https://huggingface.co/hssling/genomerisklab-prs/blob/main/README.md",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

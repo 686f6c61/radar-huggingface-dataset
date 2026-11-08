@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "afnanrizwan/trialmatch-qwen3-1.7b-lora",
+  "slug": "afnanrizwan-trialmatch-qwen3-1-7b-lora",
+  "author": "afnanrizwan",
+  "url": "https://huggingface.co/afnanrizwan/trialmatch-qwen3-1.7b-lora",
+  "created_at": "2026-11-08T09:13:41.000Z",
+  "updated_at": "2026-11-08T09:14:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "clinical-trials",
+    "eligibility",
+    "trialgpt",
+    "education",
+    "dataset:ncbi/TrialGPT-Criterion-Annotations",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81205038,
+  "storage_human": "81 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B",
+      "snippet": "Text Generation model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "haythembs/qwen3_1.7B_lora · Hugging Face",
+      "url": "https://huggingface.co/haythembs/qwen3_1.7B_lora",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

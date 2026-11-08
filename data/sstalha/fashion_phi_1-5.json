@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SSTalha/Fashion_PHI_1-5",
+  "slug": "sstalha-fashion_phi_1-5",
+  "author": "SSTalha",
+  "url": "https://huggingface.co/SSTalha/Fashion_PHI_1-5",
+  "created_at": "2024-04-24T15:20:32.000Z",
+  "updated_at": "2026-11-08T10:08:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "pytorch",
+    "safetensors",
+    "mixformer-sequential",
+    "nlp",
+    "code",
+    "text-generation",
+    "custom_code",
+    "en",
+    "base_model:microsoft/phi-1_5",
+    "base_model:adapter:microsoft/phi-1_5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5710937650,
+  "storage_human": "5.7 GB",
+  "base_model": "microsoft/phi-1_5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SSTalha/Fashion_Phi-1_5 · Hugging Face",
+      "url": "https://huggingface.co/SSTalha/Fashion_Phi-1_5",
+      "snippet": "Intended Use Given the nature of the training data, Fashion Phi-1.5 is best suited for prompts using the QA format, the chat format. Note that Phi-1.5, being a Finetuned model, only respond to fashion related queries."
+    },
+    {
+      "title": "SSTalha/Fashion_PHI_1-5 · Hugging Face",
+      "url": "https://huggingface.co/SSTalha/Fashion_PHI_1-5",
+      "snippet": "Intended Uses Given the nature of the training data, Fashion Phi-1.5 is best suited for prompts using the QA format, the chat format. Note that Fashion Phi-1.5 often produces irrelevant text following the main answer. In the following example, we've truncated the answer for illustrative purposes only."
+    }
+  ]
+}

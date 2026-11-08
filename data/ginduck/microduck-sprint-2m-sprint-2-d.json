@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "GinDuck/microduck-sprint-2m-sprint-2-d",
+  "slug": "ginduck-microduck-sprint-2m-sprint-2-d",
+  "author": "GinDuck",
+  "url": "https://huggingface.co/GinDuck/microduck-sprint-2m-sprint-2-d",
+  "created_at": "2026-11-08T07:36:50.000Z",
+  "updated_at": "2026-11-08T07:36:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5643397,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GinDuck/microduck-sprint-2m-sprint-2-c · Hugging Face",
+      "url": "https://huggingface.co/GinDuck/microduck-sprint-2m-sprint-2-c",
+      "snippet": "How to use GinDuck/microduck-sprint-2m-sprint-2-c with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade). sudo robotctl policy load SLOT GinDuck/microduck-sprint-2m-sprint-2-c Another checkpoint of my second ..."
+    },
+    {
+      "title": "Buy Microduck: Small robot. Super smart.",
+      "url": "https://microducks.org/",
+      "snippet": "Buy the 10 inch bipedal AI robot from NVIDIA GTC Berlin. Official Microduck preorders from $499."
+    }
+  ]
+}

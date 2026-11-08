@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "darksidewalker/MiniMaxH3",
+  "slug": "darksidewalker-minimaxh3",
+  "author": "darksidewalker",
+  "url": "https://huggingface.co/darksidewalker/MiniMaxH3",
+  "created_at": "2026-08-25T18:37:56.000Z",
+  "updated_at": "2026-11-08T10:43:12.000Z",
+  "license": "gpl-3.0-and-cc-by-sa-4.0-and-minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "minimax",
+    "minimax-h3",
+    "video-generation",
+    "audio-video",
+    "diffusion-transformer",
+    "dit",
+    "model-merge",
+    "graviton",
+    "w6a8",
+    "comfy-kitchen",
+    "text-to-video",
+    "arxiv:1305.5870",
+    "arxiv:0909.4061",
+    "arxiv:2311.03099",
+    "arxiv:2306.01708",
+    "arxiv:2405.17461",
+    "arxiv:2403.13257",
+    "arxiv:2212.09849",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 160223491433,
+  "storage_human": "160.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "darksidewalker/MiniMaxH3 at main - Hugging Face",
+      "url": "https://huggingface.co/darksidewalker/MiniMaxH3/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "darksidewalker/MiniMaxH3 · Hugging Face",
+      "url": "https://huggingface.co/darksidewalker/MiniMaxH3",
+      "snippet": "darksidewalker / MiniMaxH3 Like 2 License:minimax-h3-community-license-agreement Model card FilesFiles and versions xet Community Copy to bucket new"
+    }
+  ]
+}

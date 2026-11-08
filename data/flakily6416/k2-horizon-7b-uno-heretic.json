@@ -5,7 +5,7 @@
   "author": "Flakily6416",
   "url": "https://huggingface.co/Flakily6416/K2-Horizon-7B-Uno-heretic",
   "created_at": "2026-11-07T08:54:50.000Z",
-  "updated_at": "2026-11-07T09:30:30.000Z",
+  "updated_at": "2026-11-08T02:40:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
     "no-sycophancy",
     "heretic",
     "custom_code",
-    "base_model:hermitdave/K2-Horizon-7B-Uno-merged",
-    "base_model:finetune:hermitdave/K2-Horizon-7B-Uno-merged",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:finetune:IFM/K2-Horizon-7B",
     "license:apache-2.0",
     "region:us"
   ],
@@ -30,9 +30,9 @@
   "trending_score": 0,
   "parameters": 8999178240,
   "parameters_human": "9.00B",
-  "storage_bytes": 18019031938,
+  "storage_bytes": 18021725232,
   "storage_human": "18.0 GB",
-  "base_model": "hermitdave/K2-Horizon-7B-Uno-merged",
+  "base_model": "hermitdave/K2-Horizon-7B-Uno-merged, IFM/K2-Horizon-7B-Uno, IFM/K2-Horizon-7B",
   "formats": [
     "safetensors"
   ],

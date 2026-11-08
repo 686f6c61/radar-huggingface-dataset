@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Mullyginn1/Bobross",
+  "slug": "mullyginn1-bobross",
+  "author": "Mullyginn1",
+  "url": "https://huggingface.co/Mullyginn1/Bobross",
+  "created_at": "2026-11-08T10:08:03.000Z",
+  "updated_at": "2026-11-08T10:08:03.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bobross AI Models | Civitai",
+      "url": "https://civitai.com/tag/bobross",
+      "snippet": "Browse 1 AI models tagged \"Bobross\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    }
+  ]
+}

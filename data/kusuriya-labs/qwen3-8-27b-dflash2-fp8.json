@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "kusuriya-labs/Qwen3.8-27B-DFlash2-FP8",
+  "slug": "kusuriya-labs-qwen3-8-27b-dflash2-fp8",
+  "author": "kusuriya-labs",
+  "url": "https://huggingface.co/kusuriya-labs/Qwen3.8-27B-DFlash2-FP8",
+  "created_at": "2026-11-08T10:37:20.000Z",
+  "updated_at": "2026-11-08T10:38:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "dflash2",
+    "speculative-decoding",
+    "draft-model",
+    "fp8",
+    "rocm",
+    "quantized",
+    "text-generation",
+    "base_model:z-lab/Qwen3.8-27B-DFlash2",
+    "base_model:quantized:z-lab/Qwen3.8-27B-DFlash2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 2119169673,
+  "storage_human": "2.1 GB",
+  "base_model": "z-lab/Qwen3.8-27B-DFlash2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kusuriya-labs/Qwen3.8-27B-DFlash2-FP8 · Hugging Face",
+      "url": "https://huggingface.co/kusuriya-labs/Qwen3.8-27B-DFlash2-FP8",
+      "snippet": "Text Generation model with 2B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "kusuriya-labs/Qwen3.8-27B-DFlash2-EXL3-INT8-4bpw · Hugging Face",
+      "url": "https://huggingface.co/kusuriya-labs/Qwen3.8-27B-DFlash2-EXL3-INT8-4bpw",
+      "snippet": "EXL3-INT8 quantization of the DFlash 2 draft model z-lab/Qwen3.8-27B-DFlash2 (published by inco.ai as incoai/Qwen3.8-27B-DFlash2; see SOURCE_MODEL_CARD.md). Like the original, it is not a standalone language model: it drafts tokens for Qwen/Qwen3.8-27B inside a speculative decoding runtime, and the target model verifies them, so the output is the target's own greedy output."
+    }
+  ]
+}

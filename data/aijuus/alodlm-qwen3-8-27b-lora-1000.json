@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Aijuus/alodlm-qwen3.8-27b-lora-1000",
+  "slug": "aijuus-alodlm-qwen3-8-27b-lora-1000",
+  "author": "Aijuus",
+  "url": "https://huggingface.co/Aijuus/alodlm-qwen3.8-27b-lora-1000",
+  "created_at": "2026-11-08T11:30:15.000Z",
+  "updated_at": "2026-11-08T11:34:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "alodlm",
+    "adaptive-depth",
+    "looped-transformer",
+    "qwen3",
+    "research",
+    "preliminary",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 435287728,
+  "storage_human": "435 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AMAImedia/Qwen3.8-27B-LoRA · Hugging Face",
+      "url": "https://huggingface.co/AMAImedia/Qwen3.8-27B-LoRA",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba's Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    }
+  ]
+}

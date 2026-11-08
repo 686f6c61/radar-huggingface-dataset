@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "DanielClough/music-gen-ace-step-v15-turbo-onnx",
+  "slug": "danielclough-music-gen-ace-step-v15-turbo-onnx",
+  "author": "DanielClough",
+  "url": "https://huggingface.co/DanielClough/music-gen-ace-step-v15-turbo-onnx",
+  "created_at": "2026-11-08T09:17:23.000Z",
+  "updated_at": "2026-11-08T09:21:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "music",
+    "text-to-music",
+    "ace-step",
+    "music-gen",
+    "text-to-audio",
+    "base_model:ACE-Step/Ace-Step1.5",
+    "base_model:quantized:ACE-Step/Ace-Step1.5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8745528205,
+  "storage_human": "8.7 GB",
+  "base_model": "ACE-Step/Ace-Step1.5",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACE-Step 1.5 - GitHub",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    },
+    {
+      "title": "ACE-Step/acestep-v15-xl-turbo · Hugging Face",
+      "url": "https://huggingface.co/ACE-Step/acestep-v15-xl-turbo",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

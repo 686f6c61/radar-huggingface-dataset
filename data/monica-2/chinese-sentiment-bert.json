@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "monica-2/chinese-sentiment-bert",
+  "slug": "monica-2-chinese-sentiment-bert",
+  "author": "monica-2",
+  "url": "https://huggingface.co/monica-2/chinese-sentiment-bert",
+  "created_at": "2026-11-08T04:59:09.000Z",
+  "updated_at": "2026-11-08T05:09:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "sentiment-analysis",
+    "chinese",
+    "zh",
+    "dataset:seamew/ChnSentiCorp",
+    "base_model:google-bert/bert-base-chinese",
+    "base_model:quantized:google-bert/bert-base-chinese",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 102269186,
+  "parameters_human": "102.3M",
+  "storage_bytes": 512187078,
+  "storage_human": "512 MB",
+  "base_model": "google-bert/bert-base-chinese",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - octavia111/bert-sentiment-demo: BERT 中文情感分析完整流程/The complete ...",
+      "url": "https://github.com/octavia111/bert-sentiment-demo",
+      "snippet": "This repository implements a simple but complete BERT-based sentiment analysis pipeline for Chinese text. The goal of this project is not to build the most complex model, but to walk through the entire workflow of an NLP project, including: dataset preparation model fine-tuning evaluation applying the model to custom datasets The project can also be used as a template for small NLP research ..."
+    },
+    {
+      "title": "bert-base-chinese-finetuned-sentiment - Hugging Face",
+      "url": "https://huggingface.co/jackietung/bert-base-chinese-finetuned-sentiment",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

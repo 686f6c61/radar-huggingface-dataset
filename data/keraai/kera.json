@@ -5,10 +5,10 @@
   "author": "KeraAI",
   "url": "https://huggingface.co/KeraAI/Kera",
   "created_at": "2026-11-04T17:46:30.000Z",
-  "updated_at": "2026-11-04T17:46:40.000Z",
+  "updated_at": "2026-11-08T00:15:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-to-speech",
   "library": null,
   "languages": [],
   "tags": [
@@ -20,6 +20,12 @@
     "vulkan",
     "rocm",
     "metal",
+    "text-to-image",
+    "text-to-speech",
+    "text-to-audio",
+    "text-to-video",
+    "cuda",
+    "dgx-spark",
     "license:apache-2.0",
     "region:us"
   ],
@@ -28,8 +34,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 248821383,
-  "storage_human": "249 MB",
+  "storage_bytes": 1201779723,
+  "storage_human": "1.2 GB",
   "base_model": null,
   "formats": [
     "gguf"

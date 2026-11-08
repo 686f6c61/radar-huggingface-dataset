@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/air-repair-bank",
+  "slug": "anticloud-air-repair-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/air-repair-bank",
+  "created_at": "2026-11-08T10:57:13.000Z",
+  "updated_at": "2026-11-08T10:57:16.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:air-repair",
+    "harness:openhands",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic's Mythos model raises alarm for Rep. Andrew Garbarino over AI ...",
+      "url": "https://cryptobriefing.com/anthropic-mythos-ai-bank-security-threat/",
+      "snippet": "Anthropic built an AI model so good at finding software vulnerabilities that it scared members of Congress. The company’s Claude Mythos, an advanced and unreleased model, was demonstrated to the House Homeland Security Committee in a closed-door session on May 13-14, showing how it could identify weaknesses capable of compromising private bank accounts. Rep. Andrew Garbarino, who chairs the ..."
+    },
+    {
+      "title": "anticloud-csm-open-source-reactor-model-library",
+      "url": "https://huggingface.co/datasets/Anticloud/anticloud-csm-open-source-reactor-model-library",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

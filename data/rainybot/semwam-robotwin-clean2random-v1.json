@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "RainyBot/SemWAM-RoboTwin-Clean2Random-v1",
+  "slug": "rainybot-semwam-robotwin-clean2random-v1",
+  "author": "RainyBot",
+  "url": "https://huggingface.co/RainyBot/SemWAM-RoboTwin-Clean2Random-v1",
+  "created_at": "2026-11-08T11:38:33.000Z",
+  "updated_at": "2026-11-08T11:41:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "robotwin",
+    "semwam",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14649486889,
+  "storage_human": "14.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RainyBot/SemWAM-RoboTwin-v29-v2-20261020 · Hugging Face",
+      "url": "https://huggingface.co/RainyBot/SemWAM-RoboTwin-v29-v2-20261020",
+      "snippet": "Five independent clean-only RoboTwin tasks; 5 epochs; batch 1/GPU; gradient accumulation 16; 8 GPUs; ZeRO1; bf16; learning rate 1e-4; seed 42. Only final weights, config, task statistics, trainer metadata, and checksums are uploaded."
+    },
+    {
+      "title": "Robotic Manipulation on RoboTwin-Clean2Rand (test)",
+      "url": "https://www.sota2.com/research/sota/robotic-manipulation-on-robotwin-clean2rand-test",
+      "snippet": "Evaluation of Robotic Manipulation performance on the test split of the RoboTwin-Clean2Rand dataset, segmented by difficulty factors such as Clutter, Light,…"
+    }
+  ]
+}

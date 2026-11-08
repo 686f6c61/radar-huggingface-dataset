@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "eightman999/v3v4-novel-150m-ja",
+  "slug": "eightman999-v3v4-novel-150m-ja",
+  "author": "eightman999",
+  "url": "https://huggingface.co/eightman999/v3v4-novel-150m-ja",
+  "created_at": "2026-11-08T05:40:39.000Z",
+  "updated_at": "2026-11-08T05:50:07.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "v3v4-probelm",
+    "japanese",
+    "novel",
+    "creative-writing",
+    "not-for-all-audiences",
+    "text-generation",
+    "ja",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 132453888,
+  "parameters_human": "132.5M",
+  "storage_bytes": 529837808,
+  "storage_human": "530 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NovelAI - AI Anime Image Generator & Storyteller",
+      "url": "https://novelai.net/",
+      "snippet": "NovelAI is the #1 AI image generator tool for generating AI anime art and crafting epic stories with our storytelling models. Unleash your creativity, generate anime images and stories, without limits!"
+    },
+    {
+      "title": "eightman999 (Eightman) - Hugging Face",
+      "url": "https://huggingface.co/eightman999/models",
+      "snippet": "eightman999 2 Follow CloudGoat's profile picture 1 follower · 3 following eightman999 eightman999"
+    },
+    {
+      "title": "eightman999 (eightman) · GitHub",
+      "url": "https://github.com/eightman999",
+      "snippet": "I work with the 地元のLLM community on local-AI tooling, including ScrapGpuLibrary, rustdsh, and the community Bench of Us reports. I also contribute to J-LLM on Hugging Face, sharing Japanese models, tokenizers, and other experimental artifacts. The J-series v2 collection covers multiple tokenizer vocabulary sizes. Projects vary in maturity. A prototype, a benchmark, or a successful test ..."
+    },
+    {
+      "title": "How to download and run NovelAI for free [NAI Diffusion]",
+      "url": "https://aituts.com/run-novelai-image-generator-locally/",
+      "snippet": "To run the local model, you will need to download a User Interface to go with it. In this guide, we'll show you how to download and run the NovelAI/NAI Diffusion model with the AUTOMATIC1111 user interface."
+    },
+    {
+      "title": "NovelAI Diffusion V5 The #1 AI Anime Image Generator",
+      "url": "https://novelai.net/v5",
+      "snippet": "NovelAI is the #1 AI image generator tool for generating AI anime art and crafting epic stories with our storytelling models. Unleash your creativity, generate anime images and stories, without limits!"
+    }
+  ]
+}

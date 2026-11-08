@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "litert-community/RIFE-4.25-Lite",
+  "slug": "litert-community-rife-4-25-lite",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/RIFE-4.25-Lite",
+  "created_at": "2026-11-08T04:38:41.000Z",
+  "updated_at": "2026-11-08T04:38:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "fp32",
+    "video-frame-interpolation",
+    "rife",
+    "computer-vision",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23752784,
+  "storage_human": "24 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "t9749/rife-4.25-lite-onnx · Hugging Face",
+      "url": "https://huggingface.co/t9749/rife-4.25-lite-onnx",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "frame_interpolation/rife_v4.25_lite.safetensors · Comfy-Org/frame ...",
+      "url": "https://huggingface.co/Comfy-Org/frame_interpolation/blob/main/frame_interpolation/rife_v4.25_lite.safetensors",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

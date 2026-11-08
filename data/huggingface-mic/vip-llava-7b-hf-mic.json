@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/vip-llava-7b-hf-mic",
+  "slug": "huggingface-mic-vip-llava-7b-hf-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/vip-llava-7b-hf-mic",
+  "created_at": "2026-11-08T09:11:55.000Z",
+  "updated_at": "2026-11-08T09:17:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vipllava",
+    "mic",
+    "test-artifact",
+    "base_model:llava-hf/vip-llava-7b-hf",
+    "base_model:finetune:llava-hf/vip-llava-7b-hf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4336704,
+  "parameters_human": "4.3M",
+  "storage_bytes": 9181195,
+  "storage_human": "9 MB",
+  "base_model": "llava-hf/vip-llava-7b-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llava-hf/vip-llava-7b-hf · Hugging Face",
+      "url": "https://huggingface.co/llava-hf/vip-llava-7b-hf",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · llava-hf/vip-llava-7b-hf at main - Hugging Face",
+      "url": "https://huggingface.co/llava-hf/vip-llava-7b-hf/blob/main/README.md",
+      "snippet": "It is an auto-regressive language model, based on the transformer architecture. Vip-LlaVa enhances the training protocol of Llava by marking images and interact with the model using natural cues like a “red bounding box” or “pointed arrow” during training."
+    }
+  ]
+}

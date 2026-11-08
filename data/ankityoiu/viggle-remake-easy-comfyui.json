@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Ankityoiu/Viggle-Remake-Easy-ComfyUI",
+  "slug": "ankityoiu-viggle-remake-easy-comfyui",
+  "author": "Ankityoiu",
+  "url": "https://huggingface.co/Ankityoiu/Viggle-Remake-Easy-ComfyUI",
+  "created_at": "2026-11-08T11:42:59.000Z",
+  "updated_at": "2026-11-08T11:59:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "workflow",
+    "video-to-video",
+    "viggle",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79184,
+  "storage_human": "79184 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Viggle Remake Reshoots Any Video With Two H3 LoRAs",
+      "url": "https://comfyui-wiki.com/en/news/2026-11-04-viggle-remake",
+      "snippet": "Viggle Remake is an open MiniMax H3 LoRA pair for recasting or editing existing footage: paint one to four frames, keep the soundtrack, run it in ComfyUI down to 12 GB."
+    },
+    {
+      "title": "comfyui/ · Viggle/Viggle-Remake at main - Hugging Face",
+      "url": "https://huggingface.co/Viggle/Viggle-Remake/tree/main/comfyui",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

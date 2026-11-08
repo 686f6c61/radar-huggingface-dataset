@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/dermatology-bank",
+  "slug": "anticloud-dermatology-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/dermatology-bank",
+  "created_at": "2026-11-08T10:51:52.000Z",
+  "updated_at": "2026-11-08T10:51:53.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:dermatology",
+    "harness:openhands",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frontiers | Principles, applications, and future of artificial ...",
+      "url": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2023.1278232/full",
+      "snippet": "Abstract This paper provides an overview of artificial-intelligence (AI), as applied to dermatology. We focus our discussion on methodology, AI applications for various skin diseases, limitations, and future opportunities. We review how the current image-based models are being implemented in dermatology across disease subsets, and highlight the challenges facing widespread adoption ..."
+    },
+    {
+      "title": "Artificial Intelligence in Dermatology: A Review of Methods ... - MDPI",
+      "url": "https://www.mdpi.com/2076-3417/15/14/7856",
+      "snippet": "The use of artificial intelligence (AI) in dermatology is skyrocketing, but a comprehensive overview integrating regulatory, ethical, validation, and clinical issues is lacking. This work aims to review current research, map applicable legal regulations, identify ethical challenges and methods of verifying AI models in dermatology, assess publication trends, compare the most popular neural ..."
+    }
+  ]
+}

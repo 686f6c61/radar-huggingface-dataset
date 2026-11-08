@@ -5,7 +5,7 @@
   "author": "NSC64",
   "url": "https://huggingface.co/NSC64/pssa-100m",
   "created_at": "2026-10-27T11:44:32.000Z",
-  "updated_at": "2026-10-30T11:10:14.000Z",
+  "updated_at": "2026-11-08T02:23:17.000Z",
   "license": "gpl-3.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,6 +23,8 @@
     "triton",
     "dataset:roneneldan/TinyStories",
     "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:open-web-math/open-web-math",
+    "dataset:codeparrot/codeparrot-clean",
     "license:gpl-3.0",
     "region:us"
   ],
@@ -31,8 +33,8 @@
   "trending_score": 0,
   "parameters": 108874752,
   "parameters_human": "108.9M",
-  "storage_bytes": 10021097931,
-  "storage_human": "10.0 GB",
+  "storage_bytes": 48163822418,
+  "storage_human": "48.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

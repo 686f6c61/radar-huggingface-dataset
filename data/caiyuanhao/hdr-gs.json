@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "CaiYuanhao/HDR-GS",
+  "slug": "caiyuanhao-hdr-gs",
+  "author": "CaiYuanhao",
+  "url": "https://huggingface.co/CaiYuanhao/HDR-GS",
+  "created_at": "2026-11-08T06:21:26.000Z",
+  "updated_at": "2026-11-08T06:22:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 179512792,
+  "storage_human": "180 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - caiyuanhao1998/HDR-GS: \"HDR-GS: Efficient High Dynamic Range ...",
+      "url": "https://github.com/caiyuanhao1998/HDR-GS",
+      "snippet": "This is the official implementation of our NeurIPS 2024 paper \"HDR-GS: Efficient High Dynamic Range Novel View Synthesis at 1000x Speed via Gaussian Splatting\". We have run the SfM algorithm to recalibrate the data. If you find this repo useful, please give it a star ⭐ and consider citing our paper. Thank you."
+    },
+    {
+      "title": "CaiYuanhao/DiffusionGS at main - Hugging Face",
+      "url": "https://huggingface.co/CaiYuanhao/DiffusionGS/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "izamscientist/signature-similarity-convnext-tiny",
+  "slug": "izamscientist-signature-similarity-convnext-tiny",
+  "author": "izamscientist",
+  "url": "https://huggingface.co/izamscientist/signature-similarity-convnext-tiny",
+  "created_at": "2026-11-08T05:21:03.000Z",
+  "updated_at": "2026-11-08T05:22:31.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "signature-verification",
+    "siamese-network",
+    "convnext",
+    "handwriting",
+    "image-similarity",
+    "image-feature-extraction",
+    "dataset:izamscientist/signature-similarity-v3-train-val",
+    "dataset:izamscientist/signature-similarity-v3-test",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 112315204,
+  "storage_human": "112 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Writer-independent signature comparison",
+      "dataset": "Signature similarity test set (v3)",
+      "metric": null,
+      "value": 0.815
+    },
+    {
+      "task": "Writer-independent signature comparison",
+      "dataset": "Signature similarity test set (v3)",
+      "metric": null,
+      "value": 0.8209
+    },
+    {
+      "task": "Writer-independent signature comparison",
+      "dataset": "Signature similarity test set (v3)",
+      "metric": null,
+      "value": 0.9017
+    }
+  ],
+  "sources": [
+    {
+      "title": "izamscientist/signature-similarity-data at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/izamscientist/signature-similarity-data/tree/main",
+      "snippet": "Tags: signature-verification handwriting siamese-network forgery-detection Libraries: Datasets Croissant License: other Dataset card Data Studio FilesFiles and versions xet Community main signature-similarity-data 87 MB Ctrl+K Ctrl+K 1 contributor History:16 commits izamscientist Add train_val.zip and test.zip archives for fast download 2010166 ..."
+    }
+  ]
+}

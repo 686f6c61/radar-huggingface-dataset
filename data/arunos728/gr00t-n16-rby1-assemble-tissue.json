@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "arunos728/gr00t-n16-rby1-assemble-tissue",
+  "slug": "arunos728-gr00t-n16-rby1-assemble-tissue",
+  "author": "arunos728",
+  "url": "https://huggingface.co/arunos728/gr00t-n16-rby1-assemble-tissue",
+  "created_at": "2026-11-08T09:08:25.000Z",
+  "updated_at": "2026-11-08T09:13:22.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "gr00t",
+  "languages": [],
+  "tags": [
+    "gr00t",
+    "safetensors",
+    "Gr00tN1d6",
+    "robotics",
+    "vision-language-action",
+    "vla",
+    "lerobot",
+    "rby1",
+    "manipulation",
+    "base_model:nvidia/GR00T-N1.6-3B",
+    "base_model:finetune:nvidia/GR00T-N1.6-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3286608832,
+  "parameters_human": "3.29B",
+  "storage_bytes": 35920293809,
+  "storage_human": "35.9 GB",
+  "base_model": "nvidia/GR00T-N1.6-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - RainbowRobotics/rby1-gr00t: RBY1 integration for NVIDIA Isaac ...",
+      "url": "https://github.com/RainbowRobotics/rby1-gr00t",
+      "snippet": "NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    },
+    {
+      "title": "GR00T N1.6 - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/gear/gr00t-n1_6/",
+      "snippet": "Introduction We introduce GR00T N1.6, an improved version of the GR00T N1.5 foundation model for humanoid robots. With several architecture, data and modeling improvements, we find that N1.6 outperforms N1.5 on both simulated manipulation benchmarks and on real bimanual YAM, Agibot Genie-1 and Unitree G1 robots, detailed below."
+    }
+  ]
+}

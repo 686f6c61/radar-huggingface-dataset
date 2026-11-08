@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "lysmeqiu/GroundingAnomaly-model",
+  "slug": "lysmeqiu-groundinganomaly-model",
+  "author": "lysmeqiu",
+  "url": "https://huggingface.co/lysmeqiu/GroundingAnomaly-model",
+  "created_at": "2026-11-08T04:47:15.000Z",
+  "updated_at": "2026-11-08T04:47:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GroundingAnomaly: Spatially-Grounded Diffusion for Few-Shot Anomaly ...",
+      "url": "https://arxiv.org/html/2604.08301v1",
+      "snippet": "Right: Visualization of U-Net segmentation results on MVTec AD and VisA. The detection model trained on GroundingAnomaly-generated data exhibits more robust performance. 4.3 Anomaly Generation for Anomaly Inspection Anomaly image generation for anomaly detection and segmentation."
+    },
+    {
+      "title": "[2604.08301] GroundingAnomaly: Spatially-Grounded Diffusion for Few ...",
+      "url": "https://arxiv.org/abs/2604.08301",
+      "snippet": "The performance of visual anomaly inspection in industrial quality control is often constrained by the scarcity of real anomalous samples. Consequently, anomaly synthesis techniques have been developed to enlarge training sets and enhance downstream inspection. However, existing methods either suffer from poor integration caused by inpainting or fail to provide accurate masks. To address these ..."
+    }
+  ]
+}

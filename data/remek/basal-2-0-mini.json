@@ -5,7 +5,7 @@
   "author": "Remek",
   "url": "https://huggingface.co/Remek/basal-2.0-mini",
   "created_at": "2026-10-12T17:21:40.000Z",
-  "updated_at": "2026-11-06T14:19:06.000Z",
+  "updated_at": "2026-11-07T23:18:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 2043,
+  "downloads_30d": 3237,
   "trending_score": 0,
   "parameters": 1596507648,
   "parameters_human": "1.60B",
-  "storage_bytes": 3248677303,
-  "storage_human": "3.2 GB",
+  "storage_bytes": 3314291312,
+  "storage_human": "3.3 GB",
   "base_model": "speakleash/Bielik-1.5B-v3.0-Instruct",
   "formats": [
     "safetensors"

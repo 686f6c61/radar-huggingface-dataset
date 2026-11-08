@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "DenRakEiw/FLUX3-Image-Klein-Native-RGBA-Transparent-LoRA",
+  "slug": "denrakeiw-flux3-image-klein-native-rgba-transparent-lora",
+  "author": "DenRakEiw",
+  "url": "https://huggingface.co/DenRakEiw/FLUX3-Image-Klein-Native-RGBA-Transparent-LoRA",
+  "created_at": "2026-11-08T09:43:16.000Z",
+  "updated_at": "2026-11-08T09:43:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "flux",
+    "flux-3",
+    "flux-klein",
+    "lora",
+    "rgba",
+    "transparent",
+    "transparency",
+    "alphavae",
+    "layerdiffuse",
+    "denrakeiw",
+    "text-to-image",
+    "arxiv:2507.09308",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 469304066,
+  "storage_human": "469 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "black-forest-labs/flux-3-image-klein · Hugging Face",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+      "snippet": "FLUX 3 Image Klein is a 5.6B open weights model designed for image editing. Edit from an instruction, generate images from text, combine up to 10 references, or guide layouts with bounding boxes. It takes a prompt and up to 10 reference images and returns one image. Editing, text-to-image and multi ..."
+    },
+    {
+      "title": "Runware/flux-3-image-klein · Hugging Face",
+      "url": "https://huggingface.co/Runware/flux-3-image-klein",
+      "snippet": "FLUX 3 Image Klein is a 5.6B open weights model for text-to-image generation and image editing. It takes a prompt and up to 10 reference images and returns one image. Text-to-image, single-reference edits and multi-reference compositions run through the same model, with Qwen3-VL-4B-Instruct as the ..."
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "id": "agbalu/Amrouche-2-1.3B-CT2-int8",
+  "slug": "agbalu-amrouche-2-1-3b-ct2-int8",
+  "author": "agbalu",
+  "url": "https://huggingface.co/agbalu/Amrouche-2-1.3B-CT2-int8",
+  "created_at": "2026-11-08T10:35:04.000Z",
+  "updated_at": "2026-11-08T10:41:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "ctranslate2",
+  "languages": [
+    "kab",
+    "en",
+    "fr",
+    "ar"
+  ],
+  "tags": [
+    "ctranslate2",
+    "kabyle",
+    "taqbaylit",
+    "berber",
+    "amazigh",
+    "translation",
+    "int8",
+    "server",
+    "cpu",
+    "low-resource",
+    "kab",
+    "en",
+    "fr",
+    "ar",
+    "base_model:agbalu/Amrouche-2-1.3B",
+    "base_model:finetune:agbalu/Amrouche-2-1.3B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1418919391,
+  "storage_human": "1.4 GB",
+  "base_model": "agbalu/Amrouche-2-1.3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Translation (Kabyle to English)",
+      "dataset": "FLORES+ devtest, orthographically corrected kab_Latn",
+      "metric": "chrF++",
+      "value": 47.91
+    },
+    {
+      "task": "Translation (Kabyle to English)",
+      "dataset": "FLORES+ devtest, orthographically corrected kab_Latn",
+      "metric": "BLEU",
+      "value": 25.89
+    },
+    {
+      "task": "Translation (Kabyle to French)",
+      "dataset": "FLORES+ devtest, orthographically corrected kab_Latn",
+      "metric": "chrF++",
+      "value": 44.52
+    },
+    {
+      "task": "Translation (Kabyle to French)",
+      "dataset": "FLORES+ devtest, orthographically corrected kab_Latn",
+      "metric": "BLEU",
+      "value": 21.65
+    },
+    {
+      "task": "Translation (English to Kabyle)",
+      "dataset": "FLORES+ devtest, orthographically corrected kab_Latn",
+      "metric": "chrF++",
+      "value": 35.15
+    },
+    {
+      "task": "Translation (English to Kabyle)",
+      "dataset": "FLORES+ devtest, orthographically corrected kab_Latn",
+      "metric": "BLEU",
+      "value": 9.93
+    },
+    {
+      "task": "Translation (Kabyle to Modern Standard Arabic)",
+      "dataset": "FLORES+ devtest, orthographically corrected kab_Latn",
+      "metric": "chrF++",
+      "value": 34.75
+    },
+    {
+      "task": "Translation (Kabyle to Modern Standard Arabic)",
+      "dataset": "FLORES+ devtest, orthographically corrected kab_Latn",
+      "metric": "BLEU",
+      "value": 10.06
+    },
+    {
+      "task": "Translation (French to Kabyle)",
+      "dataset": "FLORES+ devtest, orthographically corrected kab_Latn",
+      "metric": "chrF++",
+      "value": 33.45
+    },
+    {
+      "task": "Translation (French to Kabyle)",
+      "dataset": "FLORES+ devtest, orthographically corrected kab_Latn",
+      "metric": "BLEU",
+      "value": 7.64
+    },
+    {
+      "task": "Translation (Modern Standard Arabic to Kabyle)",
+      "dataset": "FLORES+ devtest, orthographically corrected kab_Latn",
+      "metric": "chrF++",
+      "value": 32.7
+    },
+    {
+      "task": "Translation (Modern Standard Arabic to Kabyle)",
+      "dataset": "FLORES+ devtest, orthographically corrected kab_Latn",
+      "metric": "BLEU",
+      "value": 7.36
+    }
+  ],
+  "sources": [
+    {
+      "title": "agbalu/Amrouche-1.3B · Hugging Face",
+      "url": "https://huggingface.co/agbalu/Amrouche-1.3B",
+      "snippet": "A machine translation model for Kabyle (Taqbaylit, kab), fine-tuned from NLLB-200-distilled-1.3B on 544,729 human-authored pairs — everything in the AƔBALU parallel corpus that NLLB did not mine itself. It beats its own base model in all four directions, and by the widest margin where it matters ..."
+    },
+    {
+      "title": "GitHub - abderahmane-ai/agbalu: Kabyle (Taqbaylit) NLP built from the ...",
+      "url": "https://github.com/abderahmane-ai/agbalu/tree/main",
+      "snippet": "GitHub - abderahmane-ai/agbalu: Kabyle (Taqbaylit) NLP built from the corpus up — orthographic normalisation, parallel and speech corpora, a benchmark suite, and six models on the Hugging Face Hub: encoder, translation, ASR, punctuation restoration, script conversion, tokenizer."
+    }
+  ]
+}

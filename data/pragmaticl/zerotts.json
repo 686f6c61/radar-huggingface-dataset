@@ -1,0 +1,115 @@
+{
+  "schema": 1,
+  "id": "Pragmaticl/ZeroTTS",
+  "slug": "pragmaticl-zerotts",
+  "author": "Pragmaticl",
+  "url": "https://huggingface.co/Pragmaticl/ZeroTTS",
+  "created_at": "2026-11-08T06:07:09.000Z",
+  "updated_at": "2026-11-08T06:07:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "vietnamese",
+    "onnxruntime",
+    "zero-shot",
+    "speech-synthesis",
+    "voice-cloning",
+    "vietnamese-tts",
+    "tieng-viet",
+    "vi",
+    "arxiv:2602.10934",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1050211321,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Zero-Shot Text-to-Speech",
+      "dataset": "ZeroBench-TTS",
+      "metric": "WER (%) — raw text",
+      "value": 1.03
+    },
+    {
+      "task": "Zero-Shot Text-to-Speech",
+      "dataset": "ZeroBench-TTS",
+      "metric": "UTMOSv2 naturalness MOS",
+      "value": 2.91
+    },
+    {
+      "task": "Zero-Shot Text-to-Speech",
+      "dataset": "ZeroBench-TTS",
+      "metric": "Speaker similarity (WavLM-SV cosine)",
+      "value": 0.936
+    },
+    {
+      "task": "Zero-Shot Text-to-Speech",
+      "dataset": "ZeroBench-TTS",
+      "metric": "Excess silence (s)",
+      "value": 0.029
+    },
+    {
+      "task": "Zero-Shot TTS — monolingual Vietnamese",
+      "dataset": "ZeroBench-TTS (vietnamese)",
+      "metric": "WER (%) — raw text",
+      "value": 0.16
+    },
+    {
+      "task": "Zero-Shot TTS — Vietnamese/English code-switching",
+      "dataset": "ZeroBench-TTS (code_switch)",
+      "metric": "WER (%) — raw text",
+      "value": 0.97
+    },
+    {
+      "task": "Zero-Shot TTS — cross-lingual voice prompt",
+      "dataset": "ZeroBench-TTS (cross_lingual)",
+      "metric": "WER (%) — raw text",
+      "value": 1.42
+    },
+    {
+      "task": "Zero-Shot TTS — acronyms, dates, numbers",
+      "dataset": "ZeroBench-TTS (challenging)",
+      "metric": "WER (%) — raw text",
+      "value": 1.75
+    }
+  ],
+  "sources": [
+    {
+      "title": "zeroweight-ai/ZeroTTS · Hugging Face",
+      "url": "https://huggingface.co/zeroweight-ai/ZeroTTS",
+      "snippet": "ZeroTTS's time-to-first-audio comes from its real streaming path — first audio frame, not first full utterance. The three baselines have no working CPU streaming path, so their TTFA is the time to the complete utterance. A voice is a small array of speaker latents, (1, n_voice_queries, d_model), shipped as a .npz under voices/. That array is the entire speaker conditioning — no reference transcript, no audio prompt."
+    },
+    {
+      "title": "ZeroTTS: open audio or speech model | AxForge",
+      "url": "https://catalog.axforge.ai/models/zerotts/",
+      "snippet": "ZeroTTS by zeroweight-ai: an open-weight audio or speech model. Its builds, the memory each needs and the GPUs that run it, the architecture and the licence."
+    },
+    {
+      "title": "thuongvv/ZeroTTS · Hugging Face",
+      "url": "https://huggingface.co/thuongvv/ZeroTTS",
+      "snippet": "Duplicated from zeroweight-ai/ZeroTTS thuongvv / ZeroTTS Like 0 Text-to-Speech ONNX Vietnamese tts vietnamese onnxruntime zero-shot speech-synthesis voice-cloning vietnamese-tts tieng-viet Eval Results (legacy) arxiv:2602.10934 License:mit Model card FilesFiles and versions xet Community Copy to bucket new ZeroTTS Samples Usage Benchmarks Speed — CPU Voices, and voice cloning Intended use ..."
+    }
+  ]
+}

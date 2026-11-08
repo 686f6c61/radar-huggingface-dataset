@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "novi1223/IndoCAP-Weather-7B",
+  "slug": "novi1223-indocap-weather-7b",
+  "author": "novi1223",
+  "url": "https://huggingface.co/novi1223/IndoCAP-Weather-7B",
+  "created_at": "2026-11-08T06:37:10.000Z",
+  "updated_at": "2026-11-08T06:57:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "id",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "weather",
+    "meteorology",
+    "disaster-risk-reduction",
+    "bmkg",
+    "kemendagri",
+    "common-alerting-protocol",
+    "spatial-reasoning",
+    "qwen2.5",
+    "qlora",
+    "text-generation",
+    "conversational",
+    "id",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955364,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Research Publishes AI Weather Forecasting Study in ...",
+      "url": "https://www.unite.ai/microsoft-research-publishes-ai-weather-forecasting-study-in-nature/",
+      "snippet": "Probabilistic bias correction corrects a model's historical probability forecasts rather than relearning atmospheric dynamics. MicroDuet led ECMWF's AI Weather Quest ahead of operational forecasting centers and dozens of competing teams worldwide. The open-source framework targets predictable errors and offers low-overhead gains for resource-constrained meteorological centers."
+    },
+    {
+      "title": "Weather Lab | WeatherNext | Google for Developers",
+      "url": "https://developers.google.com/weathernext/guides/weatherlab",
+      "snippet": "Weather Lab is an interactive website developed by Google DeepMind and Google Research for exploring AI weather forecasts. It provides a map-based interface for visualizing global forecast layers, tracking tropical cyclones with predicted and observed tracks, and downloading experimental cyclone forecast data."
+    }
+  ]
+}

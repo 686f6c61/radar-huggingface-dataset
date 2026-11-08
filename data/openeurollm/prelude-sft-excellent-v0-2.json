@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "openeurollm/Prelude-SFT-Excellent-v0.2",
+  "slug": "openeurollm-prelude-sft-excellent-v0-2",
+  "author": "openeurollm",
+  "url": "https://huggingface.co/openeurollm/Prelude-SFT-Excellent-v0.2",
+  "created_at": "2026-11-06T18:48:50.000Z",
+  "updated_at": "2026-11-08T10:13:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "instruction-tuning",
+    "sft",
+    "conversational",
+    "dataset:openeurollm/OpenEuroLLM-Excellent-SFT",
+    "base_model:openeurollm/prelude-anneal300b-256k-rope20m-cont",
+    "base_model:finetune:openeurollm/prelude-anneal300b-256k-rope20m-cont",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9093567488,
+  "parameters_human": "9.09B",
+  "storage_bytes": 18224988867,
+  "storage_human": "18.2 GB",
+  "base_model": "openeurollm/prelude-anneal300b-256k-rope20m-cont",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prelude - a openeurollm Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/openeurollm/prelude",
+      "snippet": "Artefacts of Prelude release. Note Dashboard of multilingual evaluations done for Prelude against baselines."
+    },
+    {
+      "title": "Prelude 9B | OpenEuroLLM",
+      "url": "https://www.openeurollm.eu/prelude",
+      "snippet": "Prelude is OpenEuroLLM's experimental 9B multilingual dense base model, published with intermediate checkpoints and training resources."
+    }
+  ]
+}

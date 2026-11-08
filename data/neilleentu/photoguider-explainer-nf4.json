@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "NeilLeeNTU/PhotoGuider-explainer-nf4",
+  "slug": "neilleentu-photoguider-explainer-nf4",
+  "author": "NeilLeeNTU",
+  "url": "https://huggingface.co/NeilLeeNTU/PhotoGuider-explainer-nf4",
+  "created_at": "2026-11-08T06:38:15.000Z",
+  "updated_at": "2026-11-08T06:42:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "photoguider",
+    "bitsandbytes",
+    "nf4",
+    "image-cropping",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 6246286172,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PhotoGuider - a Hugging Face Space by NeilLeeNTU",
+      "url": "https://huggingface.co/spaces/NeilLeeNTU/PhotoGuider",
+      "snippet": "This Space runs PhotoGuider adapted to Hugging Face ZeroGPU: one environment, fast mode only, the explainer in bf16. Its results are close to, but not identical with, the paper. 360° results are the precomputed user-study runs."
+    },
+    {
+      "title": "PhotoGuider: Composition-Aware Cropping and 360 ${}^{\\circ }$∘ View ...",
+      "url": "https://www.emergentmind.com/papers/2611.02897",
+      "snippet": "Our MLLM explainer is fine-tuned to generate composition-related explanations conditioned on images and measured token assessments. To our knowledge, PhotoGuider is the first method to combine explicit composition-based direction selection in 360$^ {\\circ}$ panoramas with refined framing, camera-parameter output for native re-rendering, and ..."
+    }
+  ]
+}

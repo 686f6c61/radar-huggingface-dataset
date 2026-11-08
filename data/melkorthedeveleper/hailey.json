@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "MelkorTheDeveleper/hailey",
+  "slug": "melkorthedeveleper-hailey",
+  "author": "MelkorTheDeveleper",
+  "url": "https://huggingface.co/MelkorTheDeveleper/hailey",
+  "created_at": "2026-10-26T08:00:46.000Z",
+  "updated_at": "2026-11-08T10:07:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 51,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 768270898,
+  "storage_human": "768 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MelkorTheDeveleper/hailey · Hugging Face",
+      "url": "https://huggingface.co/MelkorTheDeveleper/hailey",
+      "snippet": "MelkorTheDeveleper / hailey Like 0 Text-to-Image Diffusers lora template:diffusion-lora Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "MelkorTheDeveleper (Stepi Tsim) - Hugging Face",
+      "url": "https://huggingface.co/MelkorTheDeveleper",
+      "snippet": "Recent Activity updated a modelabout 14 hours ago MelkorTheDeveleper/hailey published a modelabout 14 hours ago MelkorTheDeveleper/hailey liked a model5 days ago pleiades7/MOSS-Image-CharRef-PoC View all activity"
+    }
+  ]
+}

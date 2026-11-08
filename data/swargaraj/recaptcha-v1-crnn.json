@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "swargaraj/recaptcha-v1-crnn",
+  "slug": "swargaraj-recaptcha-v1-crnn",
+  "author": "swargaraj",
+  "url": "https://huggingface.co/swargaraj/recaptcha-v1-crnn",
+  "created_at": "2026-11-08T04:55:28.000Z",
+  "updated_at": "2026-11-08T05:13:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "captcha",
+    "ocr",
+    "crnn",
+    "ctc",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45623442,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Captcha_v1 – CRNN for 5-Character Captcha Recognition",
+      "url": "https://github.com/barkinadiguzel/CAPTCHA_V1",
+      "snippet": "CaptchaMaster v1 is a PyTorch-based repository for training and testing a single CRNN captcha recognition model. It converts 5-character captcha images into text sequences, supports GPU acceleratio..."
+    },
+    {
+      "title": "Adaptive CAPTCHA: A CRNN-Based Text CAPTCHA Solver with Adaptive ... - MDPI",
+      "url": "https://www.mdpi.com/2076-3417/14/12/5016",
+      "snippet": "This paper proposed a recognition model named Adaptive CAPTCHA with a CNN combined with an RNN (CRNN) module and trainable Adaptive Fusion Filtering Networks (AFFN), which effectively handle the interference and learn the correlation between characters in CAPTCHAs to enhance recognition accuracy."
+    }
+  ]
+}

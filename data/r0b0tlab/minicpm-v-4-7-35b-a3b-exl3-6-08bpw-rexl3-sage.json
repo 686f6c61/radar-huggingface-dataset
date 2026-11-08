@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "r0b0tlab/MiniCPM-V-4.7-35B-A3B-EXL3-6.08bpw-REXL3-SAGE",
+  "slug": "r0b0tlab-minicpm-v-4-7-35b-a3b-exl3-6-08bpw-rexl3-sage",
+  "author": "r0b0tlab",
+  "url": "https://huggingface.co/r0b0tlab/MiniCPM-V-4.7-35B-A3B-EXL3-6.08bpw-REXL3-SAGE",
+  "created_at": "2026-11-08T11:29:25.000Z",
+  "updated_at": "2026-11-08T11:33:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "minicpmv4_7",
+    "exl3",
+    "quantized",
+    "multimodal",
+    "moe",
+    "minicpm-v",
+    "rexl3",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2408.01800",
+    "base_model:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "base_model:quantized:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14140174768,
+  "parameters_human": "14.14B",
+  "storage_bytes": 28355701175,
+  "storage_human": "28.4 GB",
+  "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "r0b0tlab/MiniCPM-V-4.7-35B-A3B-EXL3-6.08bpw · Hugging Face",
+      "url": "https://huggingface.co/r0b0tlab/MiniCPM-V-4.7-35B-A3B-EXL3-6.08bpw",
+      "snippet": "6-bit multimodal Mixture of Experts minicpm-v conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Configuration Parsing Warning: In config.json: \"quantization_config.bits\" must be an integer MiniCPM-V-4.7-35B-A3B EXL3 6.08 bpw Summary Where the numbers on this card come from What is quantised ..."
+    },
+    {
+      "title": "GitHub - r0b0tlab/minicpm-v47-exl3-exllamav3-gb10: MiniCPM-V-4.7-35B ...",
+      "url": "https://github.com/r0b0tlab/minicpm-v47-exl3-exllamav3-gb10/tree/main",
+      "snippet": "Serve our EXL3 pack of MiniCPM-V-4.7-35B-A3B (35B parameters, 3B active, 262,144-token window) with ExLlamaV3 on a single NVIDIA GB10 / DGX Spark (aarch64, SM121) with one command: it checks the machine, builds the CUDA extension from a pinned commit, downloads and verifies the pack, retires the shard page cache that breaks loading on unified memory, starts an OpenAI-compatible server and ..."
+    }
+  ]
+}

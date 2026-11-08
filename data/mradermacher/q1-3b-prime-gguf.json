@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "mradermacher/q1-3B-PRIME-GGUF",
+  "slug": "mradermacher-q1-3b-prime-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/q1-3B-PRIME-GGUF",
+  "created_at": "2025-03-01T04:06:51.000Z",
+  "updated_at": "2026-11-08T04:49:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:PRIME-RL/Eurus-2-RL-Data",
+    "base_model:rawsh/q1-3B-PRIME",
+    "base_model:quantized:rawsh/q1-3B-PRIME",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 186,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 30595500160,
+  "storage_human": "30.6 GB",
+  "base_model": "rawsh/q1-3B-PRIME",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/q1-3B-PRIME-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/q1-3B-PRIME-GGUF",
+      "snippet": "Transformers GGUF PRIME-RL/Eurus-2-RL-Data English conversational Model card Files Files and versions Community"
+    },
+    {
+      "title": "mradermacher/q1-3B-PRIME-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/q1-3B-PRIME-i1-GGUF",
+      "snippet": "Model tree for mradermacher/q1-3B-PRIME-i1-GGUF Base model Qwen/Qwen2.5-3B Finetuned"
+    }
+  ]
+}

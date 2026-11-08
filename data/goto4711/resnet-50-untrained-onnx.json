@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "goto4711/resnet-50-untrained-ONNX",
+  "slug": "goto4711-resnet-50-untrained-onnx",
+  "author": "goto4711",
+  "url": "https://huggingface.co/goto4711/resnet-50-untrained-ONNX",
+  "created_at": "2026-11-08T10:04:19.000Z",
+  "updated_at": "2026-11-08T10:04:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "resnet",
+    "image-classification",
+    "base_model:microsoft/resnet-50",
+    "base_model:quantized:microsoft/resnet-50",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25695716,
+  "storage_human": "26 MB",
+  "base_model": "microsoft/resnet-50",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "models/validated/vision/classification/resnet/model/resnet50-v2-7.onnx ...",
+      "url": "https://github.com/onnx/models/blob/main/validated/vision/classification/resnet/model/resnet50-v2-7.onnx",
+      "snippet": "A collection of pre-trained, state-of-the-art models in the ONNX format - onnx/models"
+    },
+    {
+      "title": "onnxmodelzoo/resnet50-v2-7 · Hugging Face",
+      "url": "https://huggingface.co/onnxmodelzoo/resnet50-v2-7",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

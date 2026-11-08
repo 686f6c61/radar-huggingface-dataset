@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "AIOTVR/zils-lite-dao1",
+  "slug": "aiotvr-zils-lite-dao1",
+  "author": "AIOTVR",
+  "url": "https://huggingface.co/AIOTVR/zils-lite-dao1",
+  "created_at": "2026-11-08T08:43:53.000Z",
+  "updated_at": "2026-11-08T08:44:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "zils",
+    "sn127",
+    "soup-body",
+    "conversational",
+    "custom_code",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1726019853,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Teach AI to make decisions your way.",
+      "url": "https://zils.ai/",
+      "snippet": "Zils Zils Teach AI to make decisions your way. Show Zils examples with the right answers. It trains a small model your app can use to sort requests, flag problems, or score matches."
+    },
+    {
+      "title": "GitHub - ooo-hq/zils: A small decision model improved through a ...",
+      "url": "https://github.com/ooo-hq/zils/tree/main",
+      "snippet": "zils.ai/model A small decision model with a Bittensor training competition. Zils returns probabilities for yes/no decisions, choices, and scores without generating text. The current model is an experimental 0.8B candidate. This repository contains the miner, validator, benchmark, and testnet integration. Zils was previously named Fez."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "litert-community/BiRefNet-Lite",
+  "slug": "litert-community-birefnet-lite",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/BiRefNet-Lite",
+  "created_at": "2026-11-08T04:37:40.000Z",
+  "updated_at": "2026-11-08T04:37:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "fp32",
+    "background-removal",
+    "foreground-segmentation",
+    "birefnet",
+    "image-segmentation",
+    "arxiv:2401.03407",
+    "base_model:ZhengPeng7/BiRefNet_lite",
+    "base_model:finetune:ZhengPeng7/BiRefNet_lite",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 184001424,
+  "storage_human": "184 MB",
+  "base_model": "ZhengPeng7/BiRefNet_lite",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZhengPeng7/BiRefNet_lite · Hugging Face",
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet_lite",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "onnx-community/BiRefNet_lite-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/BiRefNet_lite-ONNX",
+      "snippet": "For more information, check out the official repository. @article{BiRefNet, title={Bilateral Reference for High-Resolution Dichotomous Image Segmentation}, author={Zheng, Peng and Gao, Dehong and Fan, Deng-Ping and Liu, Li and Laaksonen, Jorma and Ouyang, Wanli and Sebe, Nicu}, journal={CAAI ..."
+    }
+  ]
+}

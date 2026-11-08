@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "DanielClough/music-gen-ace-step-v15-xl-turbo-onnx",
+  "slug": "danielclough-music-gen-ace-step-v15-xl-turbo-onnx",
+  "author": "DanielClough",
+  "url": "https://huggingface.co/DanielClough/music-gen-ace-step-v15-xl-turbo-onnx",
+  "created_at": "2026-11-08T09:21:41.000Z",
+  "updated_at": "2026-11-08T09:31:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "music",
+    "text-to-music",
+    "ace-step",
+    "music-gen",
+    "bf16",
+    "text-to-audio",
+    "base_model:ACE-Step/acestep-v15-xl-turbo",
+    "base_model:quantized:ACE-Step/acestep-v15-xl-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10787299110,
+  "storage_human": "10.8 GB",
+  "base_model": "ACE-Step/acestep-v15-xl-turbo",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ace-step/ACE-Step-1.5: The most powerful local music ...",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    },
+    {
+      "title": "ACE-Step Audio Gen - v1.5 XL Turbo | ACE Audio Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2549270/ace-step-audio-gen",
+      "snippet": "ACE-Step is a novel open-source foundation model for music generation that overcomes key limitations of existing approaches through a holistic architectural design."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "rajdeepp11/stethos",
+  "slug": "rajdeepp11-stethos",
+  "author": "rajdeepp11",
+  "url": "https://huggingface.co/rajdeepp11/stethos",
+  "created_at": "2026-11-08T05:48:25.000Z",
+  "updated_at": "2026-11-08T06:09:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "stethos",
+    "desktop-app",
+    "installers",
+    "respiratory",
+    "offline",
+    "tauri",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13869660919,
+  "storage_human": "13.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rajdeepp11 (Rajdeep Putta) – Models - Hugging Face",
+      "url": "https://huggingface.co/rajdeepp11/models",
+      "snippet": "rajdeepp11's models2 Sort: Recently updated rajdeepp11/evaluator 2B•Updated about 2 hours ago"
+    },
+    {
+      "title": "rajdeepp11 (Rajdeep Putta) - Hugging Face",
+      "url": "https://huggingface.co/rajdeepp11",
+      "snippet": "rajdeepp11 Follow webbrain-a02's profile picturewb89df0b6ead6c45ef's profile picture 2 followers · 1 following"
+    }
+  ]
+}

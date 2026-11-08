@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "gadgetfreak/echo-1",
+  "slug": "gadgetfreak-echo-1",
+  "author": "gadgetfreak",
+  "url": "https://huggingface.co/gadgetfreak/echo-1",
+  "created_at": "2026-11-08T09:56:26.000Z",
+  "updated_at": "2026-11-08T09:56:53.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "offline",
+    "on-device",
+    "sherpa-onnx",
+    "llama.cpp",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 168544704,
+  "parameters_human": "168.5M",
+  "storage_bytes": 718630674,
+  "storage_human": "719 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Realbotix Renames Echo as Series 1: $5,975 Invoice Before Build, Cloud ...",
+      "url": "https://www.techtimes.com/articles/330147/20261106/realbotix-renames-echo-series-1-5975-invoice-before-build-cloud-ai-unless-vinci-vision-add.htm",
+      "snippet": "Realbotix Series 1 is the new name for Echo humanoid robots, but the terms are unchanged: a $199 deposit, a 50% invoice ($5,975 for the Tabletop) before building, and a monthly AI plan from $19.99."
+    },
+    {
+      "title": "Realbotix Renames Its Echo Humanoid Platform as Series 1 - Unite.AI",
+      "url": "https://www.unite.ai/realbotix-renames-its-echo-humanoid-platform-as-series-1/",
+      "snippet": "Realbotix announced on November 4, 2026 that its recently launched flagship humanoid robot platform, Echo, had been renamed Realbotix Series 1. The revision applies only to the product name; the robots, specifications, p..."
+    }
+  ]
+}

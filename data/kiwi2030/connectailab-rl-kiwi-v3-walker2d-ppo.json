@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "kiwi2030/connectailab-rl-kiwi-v3-Walker2d-ppo",
+  "slug": "kiwi2030-connectailab-rl-kiwi-v3-walker2d-ppo",
+  "author": "kiwi2030",
+  "url": "https://huggingface.co/kiwi2030/connectailab-rl-kiwi-v3-Walker2d-ppo",
+  "created_at": "2026-11-08T05:22:06.000Z",
+  "updated_at": "2026-11-08T05:22:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "ppo",
+    "mujoco",
+    "Walker2d-v5",
+    "continuous-control",
+    "target-velocity",
+    "connectailab",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 406964,
+  "storage_human": "406964 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kiwi2030 (kiwi_overai) - Hugging Face",
+      "url": "https://huggingface.co/kiwi2030",
+      "snippet": "kiwi2030/connectailab-rl-kiwi-v2 Reinforcement Learning •Updated about 5 hours ago"
+    },
+    {
+      "title": "kiwi2030/connectailab-rl-kiwi-v3-lunarlander · Hugging Face",
+      "url": "https://huggingface.co/kiwi2030/connectailab-rl-kiwi-v3-lunarlander",
+      "snippet": "🧠 connectailab-rl-kiwi-v3-lunarlander CONNECT AI LAB × AI CITY BUILDERS · 강화학습 AI 5강에서 DQN (Deep Q-Network) 으로 직접 학습시킨 두뇌입니다. Gymnasium 루나랜더를 착륙시킵니다."
+    }
+  ]
+}

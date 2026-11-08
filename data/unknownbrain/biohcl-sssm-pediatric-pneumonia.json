@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "unknownBrain/BioHCL-SSSM-Pediatric-Pneumonia",
+  "slug": "unknownbrain-biohcl-sssm-pediatric-pneumonia",
+  "author": "unknownBrain",
+  "url": "https://huggingface.co/unknownBrain/BioHCL-SSSM-Pediatric-Pneumonia",
+  "created_at": "2026-11-08T09:26:04.000Z",
+  "updated_at": "2026-11-08T09:31:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "medical-imaging",
+    "chest-xray",
+    "pneumonia-detection",
+    "state-space-models",
+    "mamba",
+    "sssm",
+    "pediatric",
+    "physics-informed-neural-networks",
+    "image-classification",
+    "en",
+    "dataset:paultimothymooney/chest-xray-pneumonia",
+    "arxiv:2312.07965",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 737309975,
+  "storage_human": "737 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Pediatric Pneumonia Classification",
+      "dataset": "Guangzhou Pediatric Chest X-Ray Cohort (Cell 2018)",
+      "metric": "10-Fold Cross-Validation Accuracy",
+      "value": 99.37
+    },
+    {
+      "task": "Pediatric Pneumonia Classification",
+      "dataset": "Guangzhou Pediatric Chest X-Ray Cohort (Cell 2018)",
+      "metric": "10-Fold Cross-Validation F1",
+      "value": 0.9957
+    },
+    {
+      "task": "Pediatric Pneumonia Classification",
+      "dataset": "Guangzhou Pediatric Chest X-Ray Cohort (Cell 2018)",
+      "metric": "10-Fold Cross-Validation AUC",
+      "value": 0.9929
+    }
+  ],
+  "sources": [
+    {
+      "title": "unknownBrain (jainamdedhia) - Hugging Face",
+      "url": "https://huggingface.co/unknownBrain",
+      "snippet": "unknownBrain/chest-xray-pneumonia-sssm-ablation-single_cnn. Updated 13 days ago. datasets 2. Sort: Recently updated. unknownBrain/industrialintelligence. Preview ..."
+    },
+    {
+      "title": "PneumoDetect AI - Pediatric Pneumonia Detection - GitHub",
+      "url": "https://github.com/aarohichadha/pneumonia-detection-ai",
+      "snippet": "An AI-powered system designed to detect pneumonia from pediatric chest X-ray images (ages 1-5) using deep learning."
+    }
+  ]
+}

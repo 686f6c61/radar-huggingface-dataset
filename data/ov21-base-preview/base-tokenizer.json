@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "ov21-base-preview/base-tokenizer",
+  "slug": "ov21-base-preview-base-tokenizer",
+  "author": "ov21-base-preview",
+  "url": "https://huggingface.co/ov21-base-preview/base-tokenizer",
+  "created_at": "2026-11-08T06:52:24.000Z",
+  "updated_at": "2026-11-08T06:57:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llava_onevision2",
+    "llava-onevision2",
+    "tokenizer",
+    "multimodal",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19990862,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ov21-base-preview (ov21-base-preview) - Hugging Face",
+      "url": "https://huggingface.co/ov21-base-preview",
+      "snippet": "Org profile for ov21-base-preview on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer",
+      "snippet": "Tokenizer Learn about language model tokenization OpenAI's large language models process text using tokens, which are common sequences of characters found in a set of text. The models learn to understand the statistical relationships between these tokens, and excel at producing the next token in a sequence of tokens. Learn more."
+    }
+  ]
+}

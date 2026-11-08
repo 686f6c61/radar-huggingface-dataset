@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "davidafrica/e2h-polaris-gemma-4-e4b-it-full-all_rb",
+  "slug": "davidafrica-e2h-polaris-gemma-4-e4b-it-full-all_rb",
+  "author": "davidafrica",
+  "url": "https://huggingface.co/davidafrica/e2h-polaris-gemma-4-e4b-it-full-all_rb",
+  "created_at": "2026-11-08T10:03:38.000Z",
+  "updated_at": "2026-11-08T10:14:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "verl",
+    "grpo",
+    "math",
+    "polaris",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 63672184508,
+  "storage_human": "63.7 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "davidafrica/e2h-polaris-gemma-4-e4b-it-all_rb · Hugging Face",
+      "url": "https://huggingface.co/davidafrica/e2h-polaris-gemma-4-e4b-it-all_rb",
+      "snippet": "Machine learning model with 8B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "davidafrica/e2h-polaris-gemma-4-e4b-it-easy_rb · Hugging Face",
+      "url": "https://huggingface.co/davidafrica/e2h-polaris-gemma-4-e4b-it-easy_rb",
+      "snippet": "Base model: google/gemma-4-E4B-it, the full multimodal checkpoint; only the language model was trained, so the vision and audio towers are the base's Reward: rule-based: correct against the reference answer Training data: train_easy; 200 steps of 64 prompts × 8 samples, lr 1e-6, KL loss 0.001 (low_var_kl), 2048-token responses with thinking on This checkpoint: step 200 of 200"
+    }
+  ]
+}

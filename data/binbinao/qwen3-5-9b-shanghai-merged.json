@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "binbinao/qwen3.5-9b-shanghai-merged",
+  "slug": "binbinao-qwen3-5-9b-shanghai-merged",
+  "author": "binbinao",
+  "url": "https://huggingface.co/binbinao/qwen3.5-9b-shanghai-merged",
+  "created_at": "2026-11-08T10:15:49.000Z",
+  "updated_at": "2026-11-08T10:32:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "merged",
+    "qwen3.5",
+    "shanghai",
+    "instruction-following",
+    "conversational",
+    "zh",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927651733,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "binbinao/qwen3.5-9b-shanghai-lora · Hugging Face",
+      "url": "https://huggingface.co/binbinao/qwen3.5-9b-shanghai-lora",
+      "snippet": "binbinao / qwen3.5-9b-shanghai-lora Like 0 Text Generation PEFT Safetensors Chinese lora qwen3.5 shanghai instruction-following conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "EganAI/qwen3.5-9b-terminal-merge · Hugging Face",
+      "url": "https://huggingface.co/EganAI/qwen3.5-9b-terminal-merge",
+      "snippet": "Evaluated on a custom suite of 60 terminal tasks executed in sandboxed Docker containers. Tasks cover file operations, text processing, git workflows, networking, Python scripting, and system administration. Each task requires the model to produce working shell commands that are executed and verified against expected output. Model Details Architecture: Qwen3.5 (hybrid linear + full attention ..."
+    }
+  ]
+}

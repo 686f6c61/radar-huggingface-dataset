@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Anticloud/marketing-media-bank",
+  "slug": "anticloud-marketing-media-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/marketing-media-bank",
+  "created_at": "2026-11-08T10:53:51.000Z",
+  "updated_at": "2026-11-08T10:53:52.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:marketing-media",
+    "harness:openhands",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI agents in marketing - IBM",
+      "url": "https://www.ibm.com/think/topics/ai-agents-in-marketing",
+      "snippet": "AI agents shift the marketing operational model—from one based on periodic, static campaigns to a dynamic, continuous and intelligent system. This change allows organizations to become more adaptive, responsive and efficient in serving customers and achieving business goals."
+    }
+  ]
+}

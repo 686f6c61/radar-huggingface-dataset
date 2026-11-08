@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "litert-community/Video-Depth-Anything-Small",
+  "slug": "litert-community-video-depth-anything-small",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/Video-Depth-Anything-Small",
+  "created_at": "2026-11-08T04:38:46.000Z",
+  "updated_at": "2026-11-08T04:38:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "fp32",
+    "video-depth-estimation",
+    "video-depth-anything",
+    "relative-depth",
+    "depth-estimation",
+    "arxiv:2501.12375",
+    "base_model:depth-anything/Video-Depth-Anything-Small",
+    "base_model:finetune:depth-anything/Video-Depth-Anything-Small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116280880,
+  "storage_human": "116 MB",
+  "base_model": "depth-anything/Video-Depth-Anything-Small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/depth-anything-v2-small · Hugging Face",
+      "url": "https://huggingface.co/litert-community/depth-anything-v2-small",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - DepthAnything/Video-Depth-Anything: [CVPR 2025 Highlight ...",
+      "url": "https://github.com/DepthAnything/Video-Depth-Anything",
+      "snippet": "This work presents Video Depth Anything based on Depth Anything V2, which can be applied to arbitrarily long videos without compromising quality, consistency, or generalization ability. Compared with other diffusion-based models, it enjoys faster inference speed, fewer parameters, and higher consistent depth accuracy."
+    }
+  ]
+}

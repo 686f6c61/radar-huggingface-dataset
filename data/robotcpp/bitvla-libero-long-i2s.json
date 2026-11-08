@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "robotcpp/bitvla-libero-long-i2s",
+  "slug": "robotcpp-bitvla-libero-long-i2s",
+  "author": "robotcpp",
+  "url": "https://huggingface.co/robotcpp/bitvla-libero-long-i2s",
+  "created_at": "2026-11-08T09:16:47.000Z",
+  "updated_at": "2026-11-08T09:18:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "robotics",
+    "bitvla",
+    "base_model:hongyuw/ft-bitvla-bitsiglipL-224px-libero_long-bf16",
+    "base_model:quantized:hongyuw/ft-bitvla-bitsiglipL-224px-libero_long-bf16",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 59059207,
+  "parameters_human": "59.1M",
+  "storage_bytes": 1440224704,
+  "storage_human": "1.4 GB",
+  "base_model": "hongyuw/ft-bitvla-bitsiglipL-224px-libero_long-bf16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LIBERO Benchmark: Vision-Language-Action in Robotics",
+      "url": "https://www.emergentmind.com/topics/libero",
+      "snippet": "LIBERO is a standardized and extensible benchmarking suite that evaluates multi-modal vision-language-action models in diverse robotic manipulation tasks. It employs a procedural generation pipeline and curated simulation/annotation infrastructure to create varied tasks that test generalization, robustness, and transfer capabilities."
+    },
+    {
+      "title": "BitVLA: 1-bit Vision-Language-Action Models for Robotics Manipulation",
+      "url": "https://www.researchgate.net/publication/392530140_BitVLA_1-bit_Vision-Language-Action_Models_for_Robotics_Manipulation",
+      "snippet": "Vision-Language-Action (VLA) models have shown impressive capabilities across a wide range of robotics manipulation tasks. However, their growing model size poses significant challenges for ..."
+    }
+  ]
+}

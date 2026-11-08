@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "AIGeeksGroup/DragMesh-3",
+  "slug": "aigeeksgroup-dragmesh-3",
+  "author": "AIGeeksGroup",
+  "url": "https://huggingface.co/AIGeeksGroup/DragMesh-3",
+  "created_at": "2026-10-25T04:18:04.000Z",
+  "updated_at": "2026-11-08T07:17:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mujoco",
+    "articulated-objects",
+    "humanoid",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1376258812,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AIGeeksGroup/DragMesh-3 · Hugging Face",
+      "url": "https://huggingface.co/AIGeeksGroup/DragMesh-3",
+      "snippet": "Assets and evidence for DragMesh-3. This model-type repository is an artifact hub, not a newly trained model release. interaction/: curated 200-rollout baseline, exact asset bundle, manifests, audits, selected review videos and frozen pipeline reference/runtime archives. scene/: seven complete room ..."
+    },
+    {
+      "title": "AIGeeksGroup/DragMesh-3 at main - Hugging Face",
+      "url": "https://huggingface.co/AIGeeksGroup/DragMesh-3/tree/main",
+      "snippet": "AIGeeksGroup / DragMesh-3 Like 0 Follow AI Geeks 70 Robotics mujoco articulated-objects humanoid Model card FilesFiles and versions xet Community Copy to bucket new main DragMesh-3 1.26 GB Ctrl+K Ctrl+K 2 contributors History:3 commits Neptune-T Publish seven portable MuJoCo scenes with checksum and loading manifests c186837 verified1 day ago interactionCurate interaction artifacts with pinned ..."
+    }
+  ]
+}

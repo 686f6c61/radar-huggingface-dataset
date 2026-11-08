@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "TheShellMaster/cypher-2-7b-stealth",
+  "slug": "theshellmaster-cypher-2-7b-stealth",
+  "author": "TheShellMaster",
+  "url": "https://huggingface.co/TheShellMaster/cypher-2-7b-stealth",
+  "created_at": "2026-11-06T02:49:03.000Z",
+  "updated_at": "2026-11-08T10:49:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "cypher-2",
+    "cybersecurity",
+    "text-generation",
+    "conversational",
+    "fr",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693780,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stealth, Revealed & Upcoming AI Models",
+      "url": "https://stealthmodels.com/models",
+      "snippet": "Browse every Stealth Models guide. Search stealth codenames, revealed identities and upcoming AI models, with demonstrations and release announcements."
+    },
+    {
+      "title": "Cypher Ai - a Hugging Face Space by TheShellMaster",
+      "url": "https://huggingface.co/spaces/TheShellMaster/cypher-ai",
+      "snippet": "This app lets you type any programming‑related question and receive clear, detailed answers. If the query needs up‑to‑date information, the AI automatically searches the web and incorporates the la..."
+    }
+  ]
+}

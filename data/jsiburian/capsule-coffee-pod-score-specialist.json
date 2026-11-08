@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "jsiburian/capsule-coffee-pod-score-specialist",
+  "slug": "jsiburian-capsule-coffee-pod-score-specialist",
+  "author": "jsiburian",
+  "url": "https://huggingface.co/jsiburian/capsule-coffee-pod-score-specialist",
+  "created_at": "2026-11-08T08:06:12.000Z",
+  "updated_at": "2026-11-08T08:06:28.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "diffusion-policy",
+    "isaaclab",
+    "droid",
+    "policy-steering",
+    "dinov3",
+    "base_model:facebook/dinov3-vits16-pretrain-lvd1689m",
+    "base_model:finetune:facebook/dinov3-vits16-pretrain-lvd1689m",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33872280,
+  "parameters_human": "33.9M",
+  "storage_bytes": 135522572,
+  "storage_human": "136 MB",
+  "base_model": "facebook/dinov3-vits16-pretrain-lvd1689m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026 - Top AI Models Ranked | LM Market Cap",
+      "url": "https://lmmarketcap.com/leaderboards/models",
+      "snippet": "Live LLM leaderboard ranking 350+ AI models by benchmarks, pricing, speed, and capabilities. Compare GPT, Claude, Gemini, DeepSeek, Llama and more with source-backed scores."
+    },
+    {
+      "title": "jsiburian (Jeremy Siburian) - Hugging Face",
+      "url": "https://huggingface.co/jsiburian/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 4 days ago ... published a model 4 days ago"
+    }
+  ]
+}

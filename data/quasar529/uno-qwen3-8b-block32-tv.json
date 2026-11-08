@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "quasar529/uno-qwen3-8b-block32-tv",
+  "slug": "quasar529-uno-qwen3-8b-block32-tv",
+  "author": "quasar529",
+  "url": "https://huggingface.co/quasar529/uno-qwen3-8b-block32-tv",
+  "created_at": "2026-11-08T08:23:36.000Z",
+  "updated_at": "2026-11-08T08:28:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "uno",
+    "diffusion",
+    "lora",
+    "research",
+    "en",
+    "base_model:s-sahoo/uno-qwen3-8B",
+    "base_model:adapter:s-sahoo/uno-qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 698420736,
+  "storage_human": "698 MB",
+  "base_model": "s-sahoo/uno-qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_8b",
+      "snippet": "Qwen3-8B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑8B is a state‑of‑the‑art multilingual base language model with 8 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen3-8B - VRAM Requirements, Specs & Benchmarks",
+      "url": "https://apxml.com/models/qwen3-8b",
+      "snippet": "Qwen3-8B specifications, context length, benchmark scores, and GPU VRAM requirements across quantizations."
+    }
+  ]
+}

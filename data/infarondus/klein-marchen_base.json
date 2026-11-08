@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Infarondus/Klein-marchen_Base",
+  "slug": "infarondus-klein-marchen_base",
+  "author": "Infarondus",
+  "url": "https://huggingface.co/Infarondus/Klein-marchen_Base",
+  "created_at": "2026-05-07T15:27:05.000Z",
+  "updated_at": "2026-11-08T11:49:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "timm",
+    "image-classification",
+    "manuscript",
+    "bookbinding",
+    "cultural-heritage",
+    "digital-humanities",
+    "convnext",
+    "dinov2",
+    "fine-tuned",
+    "ru",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1104119699,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Infarondus/Klein-marchen_Base · Hugging Face",
+      "url": "https://huggingface.co/Infarondus/Klein-marchen_Base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Infarondus (Infarondus) - Hugging Face",
+      "url": "https://huggingface.co/Infarondus",
+      "snippet": "User profile of Infarondus on Hugging Face Recent Activity updated a model10 days ago Infarondus/Klein-marchen_Base published a model14 days ago Infarondus/Klein-marchen_Base View all activity"
+    }
+  ]
+}

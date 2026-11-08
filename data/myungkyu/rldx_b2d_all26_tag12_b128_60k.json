@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 98,
+  "downloads_30d": 99,
   "trending_score": 0,
   "parameters": 7032139840,
   "parameters_human": "7.03B",
-  "storage_bytes": 168772549824,
-  "storage_human": "168.8 GB",
+  "storage_bytes": 56257516608,
+  "storage_human": "56.3 GB",
   "base_model": "RLWRLD/RLDX-1-PT",
   "formats": [
     "safetensors"

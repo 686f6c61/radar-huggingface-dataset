@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "junjie008/robomme-piper-trackcube-framesamp-modul-20261107",
+  "slug": "junjie008-robomme-piper-trackcube-framesamp-modul-20261107",
+  "author": "junjie008",
+  "url": "https://huggingface.co/junjie008/robomme-piper-trackcube-framesamp-modul-20261107",
+  "created_at": "2026-11-08T07:48:53.000Z",
+  "updated_at": "2026-11-08T07:54:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "piper",
+    "pi05",
+    "robomme",
+    "framesamp",
+    "video-demonstration",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11961474917,
+  "storage_human": "12.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RoboMME",
+      "url": "https://robomme.github.io/index.html",
+      "snippet": "RoboMME is a large-scale, cognitively motivated robotic benchmark for memory-augmented manipulation, comprising four task suites that target distinct memory types: (1) The Counting task suite emphasizes temporal memory, requiring robots to accumulate and reason over past events; (2) The Permanence task suite focuses on spatial memory, requiring tracking of object locations under occlusion and ..."
+    },
+    {
+      "title": "GitHub - RoboMME/robomme_benchmark: Benchmarking memory-augmented ...",
+      "url": "https://github.com/RoboMME/robomme_benchmark",
+      "snippet": "[10/2026] 🧗 We release RoboMME-Plus, an extended benchmark for robot memory under more demanding conditions. See the evaluation guides and the Tasks. [05/2026] 🎉 RoboMME has been selected for ICML 2026 Oral presentation (Top 0.7%)! [04/2026] 🎉 RoboMME has been accepted to ICML 2026 as a ..."
+    }
+  ]
+}

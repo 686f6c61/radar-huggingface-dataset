@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jsantillana/gemma-4-26B-A4B-it-GGUF",
+  "slug": "jsantillana-gemma-4-26b-a4b-it-gguf",
+  "author": "jsantillana",
+  "url": "https://huggingface.co/jsantillana/gemma-4-26B-A4B-it-GGUF",
+  "created_at": "2026-11-08T04:28:52.000Z",
+  "updated_at": "2026-11-08T04:43:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "gemma",
+    "gemma-4",
+    "moe",
+    "abliterated",
+    "llama.cpp",
+    "quantized",
+    "red-teaming",
+    "cybersecurity",
+    "text-generation",
+    "en",
+    "es",
+    "base_model:jsantillana/gemma-4-26B-A4B-it-abliterated",
+    "base_model:quantized:jsantillana/gemma-4-26B-A4B-it-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 56942614784,
+  "storage_human": "56.9 GB",
+  "base_model": "jsantillana/gemma-4-26B-A4B-it-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-26B-A4B-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "jsantillana/gemma-4-26B-A4B-it-abliterated · Hugging Face",
+      "url": "https://huggingface.co/jsantillana/gemma-4-26B-A4B-it-abliterated",
+      "snippet": "This model is an uncensored, abliterated version of google/gemma-4-26B-A4B-it, the state-of-the-art 26B Mixture-of-Experts (MoE) multimodal model developed by Google DeepMind. Abliteration was performed using targeted orthogonal subspace projection on the critical safety bottleneck layers (8, 9, 10 ..."
+    }
+  ]
+}

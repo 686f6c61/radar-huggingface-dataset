@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mradermacher/CodeLlama-13b-Instruct-hf-abliterated-GGUF",
+  "slug": "mradermacher-codellama-13b-instruct-hf-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CodeLlama-13b-Instruct-hf-abliterated-GGUF",
+  "created_at": "2024-12-12T22:57:10.000Z",
+  "updated_at": "2026-11-08T08:11:21.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "code"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "facebook",
+    "meta",
+    "pytorch",
+    "llama",
+    "llama-2",
+    "abliterated",
+    "uncensored",
+    "code",
+    "license:llama2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 233,
+  "trending_score": 0,
+  "parameters": 13016028160,
+  "parameters_human": "13.02B",
+  "storage_bytes": 88803225888,
+  "storage_human": "88.8 GB",
+  "base_model": "huihui-ai/CodeLlama-13b-Instruct-hf-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iman/javid-no-code-uncensored - GitHub",
+      "url": "https://github.com/Iman/javid-no-code-uncensored",
+      "snippet": "Open the application, then go to Models and select \"Add from Hugging Face\". Search for huihui-ai Qwen3.5 abliterated GGUF or MiniCPM5-1B abliterated GGUF ."
+    },
+    {
+      "title": "CodeLlama-13b-Instruct-hf-abliterated-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/CodeLlama-13b-Instruct-hf-abliterated-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Local-LLM-Comparison-Colab-UI - Troyanovsky - GitHub",
+      "url": "https://github.com/Troyanovsky/Local-LLM-Comparison-Colab-UI",
+      "snippet": "Meta-Llama-3-8B-Instruct-abliterated-v3-GGUF, Open In Colab, 2024-06-04, 8B ... https://huggingface.co/TheBloke/CodeLlama-13B-Instruct-GGUF. CodeUp-Llama-2 ..."
+    }
+  ]
+}

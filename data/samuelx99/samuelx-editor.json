@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "SAMUELX99/samuelx-editor",
+  "slug": "samuelx99-samuelx-editor",
+  "author": "SAMUELX99",
+  "url": "https://huggingface.co/SAMUELX99/samuelx-editor",
+  "created_at": "2026-11-08T05:05:37.000Z",
+  "updated_at": "2026-11-08T05:05:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Image Editor Free - Edit Image with Prompts, No Sign-Up",
+      "url": "https://ezeditor.ai/",
+      "snippet": "Free AI Image Editor Online Edit and transform photos for free with multiple AI models, ready-made prompt templates, and custom instructions."
+    },
+    {
+      "title": "Free AI Image Editor, No Sign-Up, No Watermark | Upsampler",
+      "url": "https://upsampler.com/free-image-editing-model-no-signup",
+      "snippet": "Edit photos with AI for free. Change backgrounds, objects, or styles using text prompts. A free AI photo editor with no login, no watermark, no sign-up."
+    }
+  ]
+}

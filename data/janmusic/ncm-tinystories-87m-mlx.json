@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "janmusic/NCM-TinyStories-87M-MLX",
+  "slug": "janmusic-ncm-tinystories-87m-mlx",
+  "author": "janmusic",
+  "url": "https://huggingface.co/janmusic/NCM-TinyStories-87M-MLX",
+  "created_at": "2026-11-04T14:25:51.000Z",
+  "updated_at": "2026-11-08T10:54:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "ncm",
+    "next-concept-modeling",
+    "apple-silicon",
+    "non-autoregressive",
+    "text-generation",
+    "research",
+    "metal",
+    "parallel-decoding",
+    "coarse-to-fine",
+    "residual-vector-quantization",
+    "language-model",
+    "tinystories",
+    "bf16",
+    "ncm-mlx",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:2610.14162",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 414556148,
+  "storage_human": "415 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "janmusic/ncm-tinystories-mlx · Hugging Face",
+      "url": "https://huggingface.co/janmusic/ncm-tinystories-mlx",
+      "snippet": "Text Generation model, built with MLX. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "janmusic/ncm-tinystories-mlx · Discussions - Hugging Face",
+      "url": "https://huggingface.co/janmusic/ncm-tinystories-mlx/discussions",
+      "snippet": "Instructions to use janmusic/ncm-tinystories-mlx with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use janmusic/ncm-tinystories-mlx with MLX:"
+    }
+  ]
+}

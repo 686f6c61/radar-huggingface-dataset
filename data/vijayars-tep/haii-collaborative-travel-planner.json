@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "vijayars-tep/HAII-collaborative-travel-planner",
+  "slug": "vijayars-tep-haii-collaborative-travel-planner",
+  "author": "vijayars-tep",
+  "url": "https://huggingface.co/vijayars-tep/HAII-collaborative-travel-planner",
+  "created_at": "2026-11-08T04:14:16.000Z",
+  "updated_at": "2026-11-08T05:02:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "agents",
+    "smolagents",
+    "travel-planning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Haii Collaborative Travel Assistant - Hugging Face",
+      "url": "https://huggingface.co/spaces/ShreeyaGK/haii_collaborative_travel_assistant",
+      "snippet": "This app shows a basic static web page with a welcome message. You can customize what appears by editing the index.html file in the Files tab, and the page updates instantly. It lets you quickly cr..."
+    },
+    {
+      "title": "AI-POWERED COLLABORATIVE TRAVEL PLANNING APPLICATION USING ... - Zenodo",
+      "url": "https://zenodo.org/records/19597623",
+      "snippet": "This project, titled \"An AI-Based Multi-Agent Travel Planning System\", presents an innovative digital solution designed to simplify and automate the travel planning process through a unified intelligent platform. The system enables users to generate personalized travel plans by providing essential inputs such as destination city, budget, number of travellers, and trip duration. It integrates ..."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "denizakkoc/BAGEL-ZebraCoT-GRPO-September2026-Diagnostics",
+  "slug": "denizakkoc-bagel-zebracot-grpo-september2026-diagnostics",
+  "author": "denizakkoc",
+  "url": "https://huggingface.co/denizakkoc/BAGEL-ZebraCoT-GRPO-September2026-Diagnostics",
+  "created_at": "2026-11-08T11:20:17.000Z",
+  "updated_at": "2026-11-08T11:29:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "grpo",
+    "lora",
+    "multimodal",
+    "visual-reasoning",
+    "zebra-cot",
+    "custom-code",
+    "research-checkpoints",
+    "en",
+    "dataset:multimodal-reasoning-lab/Zebra-CoT",
+    "base_model:multimodal-reasoning-lab/Bagel-Zebra-CoT",
+    "base_model:adapter:multimodal-reasoning-lab/Bagel-Zebra-CoT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21966906874,
+  "storage_human": "22.0 GB",
+  "base_model": "multimodal-reasoning-lab/Bagel-Zebra-CoT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zebra-CoT: A Dataset for Interleaved Vision-Language Reasoning",
+      "url": "https://mlanthology.org/iclr/2026/li2026iclr-zebracot/",
+      "snippet": "Fine-tuning Anole‑7B model on Zebra-CoT yields a +12\\% improvement in our test‑set accuracy and up to +13\\% performance gains on standard VLM benchmarks. Similarly, fine-tuning Bagel‑7B produces models capable of generating high-quality interleaved visual reasoning chains, underscoring Zebra-CoT's effectiveness in advancing multimodal ..."
+    },
+    {
+      "title": "Zebra-CoT: A Dataset for Interleaved Vision Language Reasoning",
+      "url": "https://arxiv.org/abs/2507.16746",
+      "snippet": "Fine-tuning Bagel-7B yields a model that generates high-quality interleaved visual reasoning chains, underscoring Zebra-CoT's effectiveness for developing multimodal reasoning abilities. We open-source our dataset and models to support development and evaluation of visual CoT."
+    }
+  ]
+}

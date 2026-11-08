@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "kataguru/Kataguru-Sceptic-35B-A3B-Basque-v3.2",
+  "slug": "kataguru-kataguru-sceptic-35b-a3b-basque-v3-2",
+  "author": "kataguru",
+  "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Basque-v3.2",
+  "created_at": "2026-11-08T06:16:00.000Z",
+  "updated_at": "2026-11-08T06:16:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "eu",
+    "fi"
+  ],
+  "tags": [
+    "basque",
+    "eu",
+    "moe",
+    "qwen3_5_moe",
+    "translation",
+    "multimodal",
+    "vision",
+    "reasoning",
+    "kataguru",
+    "text-generation",
+    "en",
+    "fi",
+    "base_model:kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+    "base_model:finetune:kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kataguru-Sceptic-35B-A3B-v2.6-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v2.6-NVFP4",
+      "snippet": "Kataguru-Sceptic-35B-A3B-v2.6-NVFP4 is a bilingual (English & Finnish) 35-billion parameter (3B active parameters per token, 254 routed experts per layer) multimodal Mixture-of-Experts (MoE) model quantized to NVIDIA Blackwell NVFP4 (compressed-tensors) with synchronized w13 (gate_proj + up_proj) weight_global_scale across all 10,160 routed ..."
+    },
+    {
+      "title": "README.md · kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF at main",
+      "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF/blob/main/README.md",
+      "snippet": "Kataguru-Sceptic-35B-A3B-v2.6-GGUF is the llama.cpp / LM Studio / Ollama GGUF release of Kataguru-Sceptic-35B-A3B-v2.6, a bilingual (English & Finnish) 35-billion parameter (3B active parameters per token, 254 routed experts per layer) multimodal Mixture-of-Experts (MoE) model."
+    }
+  ]
+}

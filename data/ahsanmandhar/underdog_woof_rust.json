@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Ahsanmandhar/underdog_woof_rust",
+  "slug": "ahsanmandhar-underdog_woof_rust",
+  "author": "Ahsanmandhar",
+  "url": "https://huggingface.co/Ahsanmandhar/underdog_woof_rust",
+  "created_at": "2026-11-08T10:26:39.000Z",
+  "updated_at": "2026-11-08T10:29:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - robertbak/underdog-woof-rs: Rust port of Underdog Woof: 38.7 ...",
+      "url": "https://github.com/robertbak/underdog-woof-rs",
+      "snippet": "Rust port of Underdog Woof: 38.7 MB int8 TTS, streaming, an OpenAI-shaped server, and a byte-faithful normaliser port. Derived work under the Underdog Non-Commercial License 1.0. - robertbak/underdog-woof-rs"
+    },
+    {
+      "title": "Underdog shows off a 32MB speech model in new demo - TechCrunch",
+      "url": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+      "snippet": "One such startup, Underdog, has released a game built with its new voice model called Woof that’s only 32MB large. The game features a room with a retro tech theme, a typewriter, and a CRT monitor."
+    }
+  ]
+}

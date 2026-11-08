@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/banking-iot-bank",
+  "slug": "anticloud-banking-iot-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/banking-iot-bank",
+  "created_at": "2026-11-08T10:56:32.000Z",
+  "updated_at": "2026-11-08T10:56:33.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:banking-iot",
+    "harness:openhands",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI in Banking [25 Case Studies] [2026] - DigitalDefynd",
+      "url": "https://digitaldefynd.com/IQ/ai-in-banking-case-studies/",
+      "snippet": "Explore the impact of AI in banking through compelling case studies that highlight efficiency and improved customer service."
+    },
+    {
+      "title": "AI agents in finance & banking: 12 proven use cases (2026)",
+      "url": "https://www.kore.ai/blog/ai-agents-in-finance-banking-12-proven-use-cases-2026",
+      "snippet": "From real-time fraud detection to automated loan processing, explore 12 enterprise-validated AI agent use cases in banking and financial services, with examples from Kore.ai's customer deployments."
+    }
+  ]
+}

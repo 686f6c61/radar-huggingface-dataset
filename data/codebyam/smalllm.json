@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "codebyam/SmallLM",
+  "slug": "codebyam-smalllm",
+  "author": "codebyam",
+  "url": "https://huggingface.co/codebyam/SmallLM",
+  "created_at": "2025-01-06T03:04:57.000Z",
+  "updated_at": "2026-11-08T05:28:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "PyTorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "PyTorch",
+    "code",
+    "model",
+    "slm",
+    "language model",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "codebyam/SmallLM · Hugging Face",
+      "url": "https://huggingface.co/codebyam/SmallLM",
+      "snippet": "SmallLM SmallLM is a specialized transformer-based language model with fewer than 50 million parameters. It utilizes a tokenizer derived from minbpe, developed by Andrej Karpathy, and has been trained on custom datasets. This model is currently in active development, and we are continuously working to enhance its performance."
+    }
+  ]
+}

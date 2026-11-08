@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Thox-ai/ThoxNova-12B-Core",
+  "slug": "thox-ai-thoxnova-12b-core",
+  "author": "Thox-ai",
+  "url": "https://huggingface.co/Thox-ai/ThoxNova-12B-Core",
+  "created_at": "2026-07-05T02:20:24.000Z",
+  "updated_at": "2026-11-08T05:08:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "thox",
+    "lora",
+    "sft",
+    "chat",
+    "thoxos",
+    "meshstack",
+    "thoxnova",
+    "gemma",
+    "ollama",
+    "adapter",
+    "local-first",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 163,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 16093056012,
+  "storage_human": "16.1 GB",
+  "base_model": "google/gemma-4-12b-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Catalog - Browse Available AI Models | THOX.ai",
+      "url": "https://www.thox.ai/docs/model-catalog",
+      "snippet": "There is no public thox-ai/thoxforge-7b through thox-ai/thoxwave-8b repository. ThoxNova in those orgs is a model family, not a campaign device. The Pro cards that follow are a planned professional lineup. They are not current Ollama or Hugging Face install names. Local-mode processing, when a model is actually installed, stays on hardware you ..."
+    },
+    {
+      "title": "Thox-ai/thoxnova-12b-core/model - ollama.com",
+      "url": "https://ollama.com/Thox-ai/thoxnova-12b-core:latest/blobs/f0895a937c6f",
+      "snippet": "THOX.ai flagship local assistant. 12B LoRA fine-tune, Q4_K_M. Pairs with ThoxNova-12B-Agent for tool use. Fully public."
+    }
+  ]
+}

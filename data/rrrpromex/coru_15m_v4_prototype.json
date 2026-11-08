@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "rrrpromex/CORU_15M_V4_prototype",
+  "slug": "rrrpromex-coru_15m_v4_prototype",
+  "author": "rrrpromex",
+  "url": "https://huggingface.co/rrrpromex/CORU_15M_V4_prototype",
+  "created_at": "2026-11-08T07:18:02.000Z",
+  "updated_at": "2026-11-08T07:43:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "coru",
+    "micro-language-model",
+    "compact-transformer",
+    "sentencepiece",
+    "research",
+    "prototype",
+    "text-generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70106539,
+  "storage_human": "70 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rrrpromex/RRR-PRO-MEX-AI-CORE · Hugging Face",
+      "url": "https://huggingface.co/rrrpromex/RRR-PRO-MEX-AI-CORE",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rrrpromex (RRR pro mex) - Hugging Face",
+      "url": "https://huggingface.co/rrrpromex/models",
+      "snippet": "User profile of RRR pro mex on Hugging Face"
+    }
+  ]
+}

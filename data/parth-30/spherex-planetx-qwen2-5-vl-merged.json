@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Parth-30/SPHEREx-PlanetX-Qwen2.5-VL-Merged",
+  "slug": "parth-30-spherex-planetx-qwen2-5-vl-merged",
+  "author": "Parth-30",
+  "url": "https://huggingface.co/Parth-30/SPHEREx-PlanetX-Qwen2.5-VL-Merged",
+  "created_at": "2026-11-08T07:14:37.000Z",
+  "updated_at": "2026-11-08T07:34:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-VL-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-VL-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836436,
+  "storage_human": "16.6 GB",
+  "base_model": "unsloth/Qwen2.5-VL-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deploy Qwen2.5-VL Locally: Vision Language Model Setup 2026",
+      "url": "https://markaicode.com/deploy-qwen25-vl-vision-language-model-local/",
+      "snippet": "Qwen2.5-VL is Alibaba's current flagship vision-language model family, released in late 2024. It replaces Qwen-VL and Qwen2-VL with a significantly improved visual encoder and a dynamic resolution system — it processes images at their native resolution up to 1280×28×28 patches instead of forcing everything into a fixed 448px crop."
+    },
+    {
+      "title": "Run Qwen2.5-VL for Vision Tasks and Image Analysis 2026",
+      "url": "https://markaicode.com/qwen25-vl-multimodal-vision-tasks-image-analysis/",
+      "snippet": "The 72B model needs ~40GB minimum — two A100 40GB cards or one H100 80GB. Q: Does Qwen2.5-VL work with CPU-only inference? A: Yes, but expect 3–5 minutes per image on a modern CPU. Set device_map=\"cpu\" and torch_dtype=torch.float32. Only practical for testing, not production. Q: How does Qwen2.5-VL compare to GPT-4o Vision on document OCR?"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "maheshkommuri/flux3-klein-cnc-bas-relief-lora",
+  "slug": "maheshkommuri-flux3-klein-cnc-bas-relief-lora",
+  "author": "maheshkommuri",
+  "url": "https://huggingface.co/maheshkommuri/flux3-klein-cnc-bas-relief-lora",
+  "created_at": "2026-11-08T04:25:16.000Z",
+  "updated_at": "2026-11-08T05:48:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "flux3",
+    "lora",
+    "cnc",
+    "bas-relief",
+    "depthmap",
+    "base_model:black-forest-labs/flux-3-image-klein-base",
+    "base_model:adapter:black-forest-labs/flux-3-image-klein-base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 486255966,
+  "storage_human": "486 MB",
+  "base_model": "black-forest-labs/flux-3-image-klein-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "black-forest-labs/flux-3-image-klein · Hugging Face",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+      "snippet": "FLUX 3 Image Klein is a 5.6B open weights model designed for image editing. Edit from an instruction, generate images from text, combine up to 10 references, or guide layouts with bounding boxes. It takes a prompt and up to 10 reference images and returns one image. Editing, text-to-image and multi ..."
+    },
+    {
+      "title": "maheshkommuri (mahesh kommuri) - Hugging Face",
+      "url": "https://huggingface.co/maheshkommuri",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 24 minutes ago ... published a model 25 minutes ago"
+    }
+  ]
+}

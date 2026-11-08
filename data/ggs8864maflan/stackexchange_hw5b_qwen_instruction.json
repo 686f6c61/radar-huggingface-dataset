@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "GGs8864MaFlan/stackexchange_hw5b_qwen_instruction",
+  "slug": "ggs8864maflan-stackexchange_hw5b_qwen_instruction",
+  "author": "GGs8864MaFlan",
+  "url": "https://huggingface.co/GGs8864MaFlan/stackexchange_hw5b_qwen_instruction",
+  "created_at": "2026-11-08T07:18:37.000Z",
+  "updated_at": "2026-11-08T07:19:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 569318306,
+  "storage_human": "569 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGs8864MaFlan (MaFlan McFree) - Hugging Face",
+      "url": "https://huggingface.co/GGs8864MaFlan",
+      "snippet": "datasets1 GGs8864MaFlan/stackexchange_hw5a_completion Viewer •Updated about 7 hours ago•6k"
+    },
+    {
+      "title": "GGs8864MaFlan (MaFlan McFree) – Datasets - Hugging Face",
+      "url": "https://huggingface.co/GGs8864MaFlan/datasets",
+      "snippet": "GGs8864MaFlan's datasets1 Sort: Recently updated GGs8864MaFlan/stackexchange_hw5a_completion Viewer •Updated about 7 hours ago•6k"
+    }
+  ]
+}

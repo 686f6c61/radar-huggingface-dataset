@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "arunos728/gr00t-n16-rby1-flip-plastic-bag",
+  "slug": "arunos728-gr00t-n16-rby1-flip-plastic-bag",
+  "author": "arunos728",
+  "url": "https://huggingface.co/arunos728/gr00t-n16-rby1-flip-plastic-bag",
+  "created_at": "2026-11-08T09:10:42.000Z",
+  "updated_at": "2026-11-08T09:15:19.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "gr00t",
+  "languages": [],
+  "tags": [
+    "gr00t",
+    "safetensors",
+    "Gr00tN1d6",
+    "robotics",
+    "vision-language-action",
+    "vla",
+    "lerobot",
+    "rby1",
+    "manipulation",
+    "base_model:nvidia/GR00T-N1.6-3B",
+    "base_model:finetune:nvidia/GR00T-N1.6-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3286608832,
+  "parameters_human": "3.29B",
+  "storage_bytes": 6573382377,
+  "storage_human": "6.6 GB",
+  "base_model": "nvidia/GR00T-N1.6-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GR00T N1.6 - research.nvidia.com",
+      "url": "https://research.nvidia.com/labs/gear/gr00t-n1_6/",
+      "snippet": "GR00T N1.6 converges faster than GR00T N1.5, leading to smoother actions, but requires more careful tuning to prevent overfitting. We apply stronger state regularization, additional data augmentations, and co-training with pretraining data to regularize the model during post-training."
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    }
+  ]
+}

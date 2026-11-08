@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "denizakkoc/BAGEL-ZebraCoT-GRPO-September2026-Smoke",
+  "slug": "denizakkoc-bagel-zebracot-grpo-september2026-smoke",
+  "author": "denizakkoc",
+  "url": "https://huggingface.co/denizakkoc/BAGEL-ZebraCoT-GRPO-September2026-Smoke",
+  "created_at": "2026-11-08T11:19:11.000Z",
+  "updated_at": "2026-11-08T11:20:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "grpo",
+    "lora",
+    "multimodal",
+    "visual-reasoning",
+    "zebra-cot",
+    "custom-code",
+    "research-checkpoints",
+    "en",
+    "dataset:multimodal-reasoning-lab/Zebra-CoT",
+    "base_model:multimodal-reasoning-lab/Bagel-Zebra-CoT",
+    "base_model:adapter:multimodal-reasoning-lab/Bagel-Zebra-CoT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2584767109,
+  "storage_human": "2.6 GB",
+  "base_model": "multimodal-reasoning-lab/Bagel-Zebra-CoT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "denizakkoc (deniz bilge akkoc) - Hugging Face",
+      "url": "https://huggingface.co/denizakkoc",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 19 days ago ... published a model 19 days ago"
+    },
+    {
+      "title": "denizakkoc (deniz bilge akkoc) - Hugging Face",
+      "url": "https://huggingface.co/denizakkoc/datasets",
+      "snippet": "User profile of deniz bilge akkoc on Hugging Face"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "smdesai/LFM3-Omni-2B-CoreAI",
+  "slug": "smdesai-lfm3-omni-2b-coreai",
+  "author": "smdesai",
+  "url": "https://huggingface.co/smdesai/LFM3-Omni-2B-CoreAI",
+  "created_at": "2026-11-08T04:16:10.000Z",
+  "updated_at": "2026-11-08T04:19:27.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "any-to-any",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreai",
+    "ios",
+    "liquid",
+    "multimodal",
+    "text-to-speech",
+    "speech-to-text",
+    "any-to-any",
+    "base_model:LiquidAI/LFM3-Omni-2B",
+    "base_model:finetune:LiquidAI/LFM3-Omni-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15040439021,
+  "storage_human": "15.0 GB",
+  "base_model": "LiquidAI/LFM3-Omni-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM3-Omni-2B - Liquid AI Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm3-omni-2b",
+      "snippet": "← Back to Omni Models LFM3-Omni-2B is Liquid AI’s first omni model: a single end-to-end model that understands text, images, video, and audio, and answers in text, speech, or interleaved text and speech. It is built for on-device use, where one model replaces a separate ASR model, vision-language model, LLM, and TTS model. It is a non-reasoning model."
+    },
+    {
+      "title": "LiquidAI/LFM3-Omni-2B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM3-Omni-2B",
+      "snippet": "Any-to-Any model with 2B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

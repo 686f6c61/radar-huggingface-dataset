@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Maryam033/multilingual-bert-sentiment",
+  "slug": "maryam033-multilingual-bert-sentiment",
+  "author": "Maryam033",
+  "url": "https://huggingface.co/Maryam033/multilingual-bert-sentiment",
+  "created_at": "2026-11-08T06:00:52.000Z",
+  "updated_at": "2026-11-08T06:00:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "marianna13/bert-multilingual-sentiment · Hugging Face",
+      "url": "https://huggingface.co/marianna13/bert-multilingual-sentiment",
+      "snippet": "PyTorch 4 languages bert sentiment analysis Inference Endpoints License: mit Model card Files Community"
+    },
+    {
+      "title": "Sentiment Classification Using BERT - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/sentiment-classification-using-bert/",
+      "snippet": "For that, the paper also proposed the architecture of different tasks. In this post, we will be using BERT architecture for Sentiment classification tasks specifically the architecture used for the CoLA (Corpus of Linguistic Acceptability) binary classification task. Single Sentence Classification Task BERT has proposed two versions:"
+    }
+  ]
+}

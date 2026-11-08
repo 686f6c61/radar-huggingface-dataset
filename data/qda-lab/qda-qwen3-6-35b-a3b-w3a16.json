@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "qda-lab/QDA-Qwen3.6-35B-A3B-W3A16",
+  "slug": "qda-lab-qda-qwen3-6-35b-a3b-w3a16",
+  "author": "qda-lab",
+  "url": "https://huggingface.co/qda-lab/QDA-Qwen3.6-35B-A3B-W3A16",
+  "created_at": "2026-11-08T06:00:31.000Z",
+  "updated_at": "2026-11-08T06:00:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5_moe",
+    "qda",
+    "quantization",
+    "compressed-tensors",
+    "w3a16",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 17282508846,
+  "storage_human": "17.3 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6 35B A3B: Complete Specifications, Pricing, API Access & Use ...",
+      "url": "https://gate.ai/blog/qwen3-6-35b-a3b-specs-pricing-api-access",
+      "snippet": "Qwen3.6 35B A3B is an open-weight Qwen model designed particularly for coding agents, repository-scale reasoning and workflows that combine reasoning with tools. Alibaba describes Qwen3.6 as an evolution of Qwen3.5 focused on stability and practical coding utility. The model combines roughly 35 billion total parameters with only about 3 billion activated per token, giving teams a relatively ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/teams/qwen/models/qwen3.6-35b-a3b",
+      "snippet": "This AI model can be embedded as an Application Programming Interface (API) call into the software environment described above. Model Version (s) Qwen3.6-35B-A3B v3.6 Training, Testing, and Evaluation Datasets Training Dataset Data Modality: Text Image"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "mradermacher/q3-30b-rc1-GGUF",
+  "slug": "mradermacher-q3-30b-rc1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/q3-30b-rc1-GGUF",
+  "created_at": "2025-05-31T00:57:45.000Z",
+  "updated_at": "2026-11-08T10:24:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:allura-forge/q3-30b-rc1",
+    "base_model:quantized:allura-forge/q3-30b-rc1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 208115949184,
+  "storage_human": "208.1 GB",
+  "base_model": "allura-forge/q3-30b-rc1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/q3-30b-rc1-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/q3-30b-rc1-i1-GGUF",
+      "snippet": "Downloads last month 0 GGUF Model size 30.5B params Architecture qwen3moe Chat template Hardware compatibility Log In to view the estimation 2-bit Q2_K11.3 GB 3-bit IQ3_XXS11.8 GB IQ3_M13.5 GB Q3_K_M14.7 GB 4-bit Q4_K_S17.5 GB Q4_K_M18.6 GB Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "mradermacher/Q3-30B-A3B-Designant-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Q3-30B-A3B-Designant-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    }
+  ]
+}

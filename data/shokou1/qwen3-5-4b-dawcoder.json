@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Shokou1/qwen3.5-4B-dawcoder",
+  "slug": "shokou1-qwen3-5-4b-dawcoder",
+  "author": "Shokou1",
+  "url": "https://huggingface.co/Shokou1/qwen3.5-4B-dawcoder",
+  "created_at": "2026-11-08T10:30:47.000Z",
+  "updated_at": "2026-11-08T11:06:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "music",
+    "music-production",
+    "daw",
+    "dawcoder",
+    "ollama",
+    "qwen",
+    "lora",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8126412416,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shokou1/qwen3.5-4B-dawcoder · Hugging Face",
+      "url": "https://huggingface.co/Shokou1/qwen3.5-4B-dawcoder",
+      "snippet": "Text Generation model with 4B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

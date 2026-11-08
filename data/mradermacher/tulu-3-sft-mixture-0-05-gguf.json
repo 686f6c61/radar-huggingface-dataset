@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/tulu-3-sft-mixture-0.05-GGUF",
+  "slug": "mradermacher-tulu-3-sft-mixture-0-05-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/tulu-3-sft-mixture-0.05-GGUF",
+  "created_at": "2025-03-12T06:22:15.000Z",
+  "updated_at": "2026-11-08T08:10:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 8030326848,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820882560,
+  "storage_human": "71.8 GB",
+  "base_model": "dongwonj/tulu-3-sft-mixture-0.05",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/tulu-3-sft-mixture-0.05-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/tulu-3-sft-mixture-0.05-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/tulu-3-sft-mixture-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/tulu-3-sft-mixture-GGUF",
+      "snippet": "Feel free to request them by opening a Community Discussion. Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    }
+  ]
+}

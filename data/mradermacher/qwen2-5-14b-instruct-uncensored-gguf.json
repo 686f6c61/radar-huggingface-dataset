@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-14B-Instruct-Uncensored-GGUF",
+  "slug": "mradermacher-qwen2-5-14b-instruct-uncensored-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-14B-Instruct-Uncensored-GGUF",
+  "created_at": "2025-03-07T10:02:52.000Z",
+  "updated_at": "2026-11-08T08:10:48.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zho",
+    "eng",
+    "fra",
+    "spa",
+    "por",
+    "deu",
+    "ita",
+    "rus",
+    "jpn",
+    "kor",
+    "vie",
+    "tha",
+    "ara"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "zho",
+    "eng",
+    "fra",
+    "spa",
+    "por",
+    "deu",
+    "ita",
+    "rus",
+    "jpn",
+    "kor",
+    "vie",
+    "tha",
+    "ara",
+    "dataset:Orion-zhen/meissa-unalignments",
+    "base_model:Orion-zhen/Qwen2.5-14B-Instruct-Uncensored",
+    "base_model:quantized:Orion-zhen/Qwen2.5-14B-Instruct-Uncensored",
+    "license:gpl-3.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 602,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102043521856,
+  "storage_human": "102.0 GB",
+  "base_model": "Orion-zhen/Qwen2.5-14B-Instruct-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-Coder-14B-Instruct-Uncensored-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-Coder-14B-Instruct-Uncensored-GGUF",
+      "snippet": "Install (macOS, Linux) · Install from WinGet (Windows) · Build from source code · Use Docker · Start the llama. · Configure the model in Pi · Run Pi · Pull the model."
+    },
+    {
+      "title": "qwen2.5 abliterated - Ollama",
+      "url": "https://ollama.com/search?q=qwen2.5+abliterated",
+      "snippet": "Uncensored, abliterated build of [Qwen/Qwen2.5-14B-Instruct](https://huggingface.co/Qwen/Qwen2.5-14B-Instruct), Alibaba's capable 14B instruct model. 7,554 2 ..."
+    },
+    {
+      "title": "Quantized Models for Qwen/Qwen2.5-Coder-14B-Instruct",
+      "url": "https://huggingface.co/models?other=base_model%3Aquantized%3AQwen%2FQwen2.5-Coder-14B-Instruct",
+      "snippet": "5-Coder-14B-Instruct-Uncensored-GGUF. Text Generation • 15B • Updated Feb 10 ... mradermacher/Qwen2.5-Coder-14B-Instruct-GGUF. 15B • Updated Nov 12, 2024 ..."
+    },
+    {
+      "title": "(PDF) Uncensored AI in the Wild: Tracking Publicly Available and ...",
+      "url": "https://www.researchgate.net/publication/396718158_Uncensored_AI_in_the_Wild_Tracking_Publicly_Available_and_Locally_Deployable_LLMs",
+      "snippet": "11.10.2025 ... 14. mradermacher/Qwen2.5-VL-32B-Instruct-abliterated-GGUF. 15. mradermacher/WizardLM-Uncensor ..."
+    }
+  ]
+}

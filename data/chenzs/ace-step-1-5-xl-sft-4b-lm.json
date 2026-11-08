@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "chenzs/ACE-Step-1.5-XL-SFT-4B-LM",
+  "slug": "chenzs-ace-step-1-5-xl-sft-4b-lm",
+  "author": "chenzs",
+  "url": "https://huggingface.co/chenzs/ACE-Step-1.5-XL-SFT-4B-LM",
+  "created_at": "2026-11-08T11:29:28.000Z",
+  "updated_at": "2026-11-08T11:29:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "diffusers",
+    "safetensors",
+    "audio",
+    "music",
+    "text2music",
+    "text-to-audio",
+    "arxiv:2602.00744",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29911172228,
+  "storage_human": "29.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACE-Step 1.5 - GitHub",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "snippet": "🎵 Want a faster & more stable experience? Try acemusic.ai — 100% free! [2026-04-02] 🎉 ACE-Step 1.5 XL (4B DiT) Released! — We introduce the XL series with a 4B-parameter DiT decoder for higher audio quality. Three variants available: xl-base, xl-sft, xl-turbo. Requires ≥12GB VRAM (with offload), ≥20GB recommended. All LM models fully compatible. See Model Zoo for details."
+    },
+    {
+      "title": "cmp-nct/acestep-v15-xl-sft · Hugging Face",
+      "url": "https://huggingface.co/cmp-nct/acestep-v15-xl-sft",
+      "snippet": "This is the XL (4B) SFT variant of ACE-Step 1.5 — a supervised fine-tuned model with ~4B parameters. SFT provides higher audio quality with CFG (Classifier-Free Guidance) support for fine-grained prompt adherence control."
+    }
+  ]
+}

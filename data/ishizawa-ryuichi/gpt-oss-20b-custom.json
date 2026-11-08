@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ishizawa-ryuichi/gpt-oss-20b-custom",
+  "slug": "ishizawa-ryuichi-gpt-oss-20b-custom",
+  "author": "ishizawa-ryuichi",
+  "url": "https://huggingface.co/ishizawa-ryuichi/gpt-oss-20b-custom",
+  "created_at": "2026-11-08T04:31:12.000Z",
+  "updated_at": "2026-11-08T04:53:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 41857429686,
+  "storage_human": "41.9 GB",
+  "base_model": "unsloth/gpt-oss-20b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

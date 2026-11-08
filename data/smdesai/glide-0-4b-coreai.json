@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "smdesai/GLiDE-0.4B-CoreAI",
+  "slug": "smdesai-glide-0-4b-coreai",
+  "author": "smdesai",
+  "url": "https://huggingface.co/smdesai/GLiDE-0.4B-CoreAI",
+  "created_at": "2026-11-08T05:13:46.000Z",
+  "updated_at": "2026-11-08T05:16:48.000Z",
+  "license": "fastino-community",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "coreai",
+  "languages": [],
+  "tags": [
+    "coreai",
+    "ios",
+    "decision-model",
+    "mixed-precision",
+    "base_model:fastino/GLiDE-0.4B",
+    "base_model:finetune:fastino/GLiDE-0.4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6615191404,
+  "storage_human": "6.6 GB",
+  "base_model": "fastino/GLiDE-0.4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "coreai-catalog · PyPI",
+      "url": "https://pypi.org/project/coreai-catalog/",
+      "snippet": "coreai-catalog 2.3.0 Discover, compare, and install Core AI models for Apple Silicon."
+    },
+    {
+      "title": "GitHub - john-rocky/coreai-model-zoo: Community model zoo for Apple ...",
+      "url": "https://t.co/fTjdSwXgjv",
+      "snippet": "Community model zoo for Apple Core AI (iOS/macOS 27): 49 models — LLM, VLM, OCR, ASR, TTS, image/video/music gen, forecasting — converted, verified on real devices, downloadable from Hugging Face, and runnable in one line of Swift via CoreAIKit. Plus conversion recipes, on-device benchmarks, custom Metal kernels, and a knowledge base. - john-rocky/coreai-model-zoo"
+    }
+  ]
+}

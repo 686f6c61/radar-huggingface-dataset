@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "jackyk02/clm-35b-a3b-mv8x128-w3696-adp-onetoken-head",
+  "slug": "jackyk02-clm-35b-a3b-mv8x128-w3696-adp-onetoken-head",
+  "author": "jackyk02",
+  "url": "https://huggingface.co/jackyk02/clm-35b-a3b-mv8x128-w3696-adp-onetoken-head",
+  "created_at": "2026-11-08T05:22:32.000Z",
+  "updated_at": "2026-11-08T05:22:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "clm",
+    "contrastive",
+    "qwen3.6",
+    "multi-vector",
+    "hard-negatives",
+    "one-token",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 200251358,
+  "storage_human": "200 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nemotron-sft-agentic-v4-qwen3.6-35b-a3b-fp8-embeddings-256k",
+      "url": "https://huggingface.co/datasets/jackyk02/nemotron-sft-agentic-v4-qwen3.6-35b-a3b-fp8-embeddings-256k",
+      "snippet": "Nemotron-SFT-Agentic-v4 state/action embeddings: Qwen3.6-35B-A3B-FP8, 256k context Every assistant turn of every conversation in nvidia/Nemotron-SFT-Agentic-v4 (revision a4593a2: 549,707 tool_calling and 84,957 knowledge_agent synthetic tool-use conversations, single- and multi-turn) as a (state, action) embedding pair from Qwen/Qwen3.6-35B-A3B-FP8, for post-training contrastive (CLM) heads. A ..."
+    },
+    {
+      "title": "GitHub - Edge0-AI/Edge0: Run 35B MoE models in ~2.5 GB of RAM. Weights ...",
+      "url": "https://github.com/Edge0-AI/Edge0",
+      "snippet": "Run 35B MoE models in ~2.5 GB of RAM. Weights stream from SSD; a trained router predicts loads a step ahead. Mac, iPhone, Android, Windows supported - Edge0-AI/Edge0"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Anticloud/coolants-bank",
+  "slug": "anticloud-coolants-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/coolants-bank",
+  "created_at": "2026-11-08T10:56:09.000Z",
+  "updated_at": "2026-11-08T10:56:10.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:coolants",
+    "harness:codex-cli",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Meets Nanotech: Neural Networks Crack the Code of Next-Generation ...",
+      "url": "https://bioengineer.org/ai-meets-nanotech-neural-networks-crack-the-code-of-next-generation-engine-coolants/",
+      "snippet": "And because the AI model was trained on a modest, well-characterized experimental dataset, the approach is accessible to research groups without access to massive computing infrastructure, lowering the barrier to entry for nanofluid innovation worldwide. Challenges remain before GNP/CNC coolants flow through production engines."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/blip2-opt-2.7b-mic",
+  "slug": "huggingface-mic-blip2-opt-2-7b-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/blip2-opt-2.7b-mic",
+  "created_at": "2026-11-08T09:33:42.000Z",
+  "updated_at": "2026-11-08T09:37:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip-2",
+    "mic",
+    "test-artifact",
+    "base_model:Salesforce/blip2-opt-2.7b",
+    "base_model:finetune:Salesforce/blip2-opt-2.7b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3629056,
+  "parameters_human": "3.6M",
+  "storage_bytes": 14529816,
+  "storage_human": "15 MB",
+  "base_model": "Salesforce/blip2-opt-2.7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LanguageMachines/blip2-opt-2.7b · Hugging Face",
+      "url": "https://huggingface.co/LanguageMachines/blip2-opt-2.7b",
+      "snippet": "BLIP-2, OPT-2.7b, pre-trained only BLIP-2 model, leveraging OPT-2.7b (a large language model with 2.7 billion parameters). It was introduced in the paper BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models by Li et al. and first released in this repository. Disclaimer: The team releasing BLIP-2 did not write a model card for this model so this ..."
+    },
+    {
+      "title": "Salesforce/blip2-opt-2.7b · Hugging Face",
+      "url": "https://huggingface.co/Salesforce/blip2-opt-2.7b",
+      "snippet": "BLIP-2, OPT-2.7b, pre-trained only BLIP-2 model, leveraging OPT-2.7b (a large language model with 2.7 billion parameters). It was introduced in the paper BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models by Li et al. and first released in this repository. Disclaimer: The team releasing BLIP-2 did not write a model card for this model so this ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "MatterWaveAI",
   "url": "https://huggingface.co/MatterWaveAI/open-s1-grt-30m",
   "created_at": "2026-11-07T06:36:44.000Z",
-  "updated_at": "2026-11-07T06:36:45.000Z",
+  "updated_at": "2026-11-08T04:12:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -36,7 +36,7 @@
   "trending_score": 0,
   "parameters": 29844597,
   "parameters_human": "29.8M",
-  "storage_bytes": 134178410,
+  "storage_bytes": 134208518,
   "storage_human": "134 MB",
   "base_model": "MatterWaveAI/grt-30m",
   "formats": [

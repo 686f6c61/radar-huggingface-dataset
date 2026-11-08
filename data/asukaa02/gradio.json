@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Asukaa02/Gradio",
+  "slug": "asukaa02-gradio",
+  "author": "Asukaa02",
+  "url": "https://huggingface.co/Asukaa02/Gradio",
+  "created_at": "2026-11-08T05:23:33.000Z",
+  "updated_at": "2026-11-08T05:32:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:1906.02569",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25860427,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub: Let’s build from here · GitHub",
+      "url": "https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/README.md",
+      "snippet": "# Stable Diffusion web UI A web interface for Stable Diffusion, implemented using Gradio library. ![](screenshot.png) ## Features [Detailed feature showcase with images](https://g"
+    },
+    {
+      "title": "Gradio",
+      "url": "https://gradio.app/",
+      "snippet": "Spent the weekend prototyping LLM interfaces directly in Python. @gradio -app is a game changer for rapid UI development. Forget wrestling with JS/CSS; share your model in seconds."
+    }
+  ]
+}

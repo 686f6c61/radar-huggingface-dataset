@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "MUWU/MAGIC-RN50-experts",
+  "slug": "muwu-magic-rn50-experts",
+  "author": "MUWU",
+  "url": "https://huggingface.co/MUWU/MAGIC-RN50-experts",
+  "created_at": "2026-10-27T03:49:07.000Z",
+  "updated_at": "2026-11-08T10:10:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "clip",
+    "resnet",
+    "model-merging",
+    "image-classification",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2059971130,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MUWU/MAGIC-RN50-experts · Hugging Face",
+      "url": "https://huggingface.co/MUWU/MAGIC-RN50-experts",
+      "snippet": "The model stores its image preprocessing pipelines. With newer torchvision versions, old transform pickles may require the existing RN50 ensure_transform_compatibility helper to add the missing antialias attribute in memory."
+    },
+    {
+      "title": "Magic Rn50 Experts - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/muwu/magic-rn50-experts",
+      "snippet": "Registry entry for model Magic Rn50 Experts; source metadata pending."
+    }
+  ]
+}

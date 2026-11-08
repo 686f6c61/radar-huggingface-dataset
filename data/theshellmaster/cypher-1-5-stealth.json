@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "TheShellMaster/cypher-1.5-stealth",
+  "slug": "theshellmaster-cypher-1-5-stealth",
+  "author": "TheShellMaster",
+  "url": "https://huggingface.co/TheShellMaster/cypher-1.5-stealth",
+  "created_at": "2026-11-06T00:40:50.000Z",
+  "updated_at": "2026-11-08T10:50:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "cypher-1.5",
+    "cybersecurity",
+    "text-generation",
+    "conversational",
+    "fr",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889036,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - TheShellMaster/cypher_ai",
+      "url": "https://github.com/TheShellMaster/cypher_ai",
+      "snippet": "Contribute to TheShellMaster/cypher_ai development by creating an account on GitHub."
+    },
+    {
+      "title": "Cypher Ai - a Hugging Face Space by TheShellMaster",
+      "url": "https://huggingface.co/spaces/TheShellMaster/cypher-ai",
+      "snippet": "This app lets you type any programming‑related question and receive clear, detailed answers. If the query needs up‑to‑date information, the AI automatically searches the web and incorporates the la..."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Oomni/mithi-v1-flash",
+  "slug": "oomni-mithi-v1-flash",
+  "author": "Oomni",
+  "url": "https://huggingface.co/Oomni/mithi-v1-flash",
+  "created_at": "2026-11-07T08:08:24.000Z",
+  "updated_at": "2026-11-08T05:00:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "hi",
+    "en",
+    "bn",
+    "gu",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "indic",
+    "kokoro",
+    "bf16",
+    "hi",
+    "en",
+    "bn",
+    "gu",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 223235212,
+  "storage_human": "223 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemini Omni — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-omni/",
+      "snippet": "With fast multimodal generation, realistic image-to-video creation, and reliable voice consistency, our team can produce and test more high-performing campaigns at scale.\" Yunus Emre, CAIO, AI Lab (HubX) \"For text-to-video fidelity, Gemini Omni Flash out-performed other models, delivering production-ready quality for our async workflows."
+    },
+    {
+      "title": "Gemini Omni Flash - Model Card — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/gemini-omni-1-2-flash/",
+      "snippet": "Description Gemini Omni 1.2 Flash is our next step towards models that can create and edit anything from any input—starting with video. It combines Gemini’s intelligence with our generative media models, representing a leap forward in world understanding, multimodality, and editing. Gemini Omni 1.2 Flash enables high-quality video creation and a more natural way to edit videos through ..."
+    }
+  ]
+}

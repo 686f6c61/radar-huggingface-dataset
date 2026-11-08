@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "asomegs/act_sim_pick_cube_rand",
+  "slug": "asomegs-act_sim_pick_cube_rand",
+  "author": "asomegs",
+  "url": "https://huggingface.co/asomegs/act_sim_pick_cube_rand",
+  "created_at": "2026-11-08T11:18:33.000Z",
+  "updated_at": "2026-11-08T11:18:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:asomegs/sim_pick_cube_kb_rand",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51586692,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206392968,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roblox Unveils Cube 3D Open-Source AI Model Simplifying 3D ... - WinBuzzer",
+      "url": "https://winbuzzer.com/2025/03/17/roblox-unveils-cube-3d-open-source-ai-model-simplifying-3d-content-creation-xcxwbn/",
+      "snippet": "Cube 3D by Roblox is an open-source AI model that accelerates 3D content creation, allowing developers to generate detailed assets using straightforward prompts."
+    },
+    {
+      "title": "GitHub - myoshikawa47/act",
+      "url": "https://github.com/myoshikawa47/act",
+      "snippet": "This repo contains the implementation of ACT, together with 2 simulated environments: Transfer Cube and Bimanual Insertion. You can train and evaluate ACT in sim or real."
+    }
+  ]
+}

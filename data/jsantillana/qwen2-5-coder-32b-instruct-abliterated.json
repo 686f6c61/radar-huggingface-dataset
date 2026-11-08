@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jsantillana/Qwen2.5-Coder-32B-Instruct-abliterated",
+  "slug": "jsantillana-qwen2-5-coder-32b-instruct-abliterated",
+  "author": "jsantillana",
+  "url": "https://huggingface.co/jsantillana/Qwen2.5-Coder-32B-Instruct-abliterated",
+  "created_at": "2026-11-08T08:49:22.000Z",
+  "updated_at": "2026-11-08T08:57:15.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "abliterated",
+    "uncensored",
+    "qwen",
+    "coding",
+    "agent",
+    "reasoning",
+    "red-teaming",
+    "cybersecurity",
+    "text-generation",
+    "conversational",
+    "en",
+    "es",
+    "zh",
+    "base_model:Qwen/Qwen2.5-Coder-32B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-32B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65539264268,
+  "storage_human": "65.5 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Coder-32B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
+      "snippet": "Text Generation model with 33B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen2.5-Coder-32B-Instruct-abliterated-GGUF - Hugging Face",
+      "url": "https://huggingface.co/bartowski/Qwen2.5-Coder-32B-Instruct-abliterated-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

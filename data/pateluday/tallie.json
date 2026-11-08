@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "pateluday/tallie",
+  "slug": "pateluday-tallie",
+  "author": "pateluday",
+  "url": "https://huggingface.co/pateluday/tallie",
+  "created_at": "2026-11-08T11:29:31.000Z",
+  "updated_at": "2026-11-08T11:49:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "information-extraction",
+    "opinion-mining",
+    "aspect-based-sentiment-analysis",
+    "named-entity-recognition",
+    "span-extraction",
+    "non-generative",
+    "llm-to-encoder",
+    "distillation",
+    "qwen3",
+    "token-classification",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2677679547,
+  "storage_human": "2.7 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

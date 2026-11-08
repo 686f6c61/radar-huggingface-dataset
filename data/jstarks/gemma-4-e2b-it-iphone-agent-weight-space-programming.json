@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "jstarks/gemma-4-E2B-it-iPhone-Agent-Weight-Space-Programming",
+  "slug": "jstarks-gemma-4-e2b-it-iphone-agent-weight-space-programming",
+  "author": "jstarks",
+  "url": "https://huggingface.co/jstarks/gemma-4-E2B-it-iPhone-Agent-Weight-Space-Programming",
+  "created_at": "2026-11-08T08:34:17.000Z",
+  "updated_at": "2026-11-08T08:34:23.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gemma4",
+    "agent",
+    "tool-use",
+    "weight-space-programming",
+    "iphone",
+    "edge-ai",
+    "on-device",
+    "hermes-agent",
+    "openclaw",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75497704,
+  "storage_human": "75 MB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run Gemma 4 on iPhone 17 with Google AI Edge Gallery",
+      "url": "https://modelfit.io/iphone/iphone-17/",
+      "snippet": "Run Gemma 4 on iPhone 17 with Google AI Edge Gallery The standard iPhone 17 brings Apple's A19 chip and 8 GB of RAM to a non-Pro device for the first time. That combination handles Google Gemma 4 E2B effortlessly through Google AI Edge Gallery, with estimated speeds north of 35 tokens per second. The larger E4B model technically runs but eats most of your memory budget, so close other apps ..."
+    },
+    {
+      "title": "Gemma 4 E2B & E4B: Run Google's AI on iPhone, iPad & Mac Mini",
+      "url": "https://llmcheck.net/blog/gemma-4-e2b-e4b-iphone-ipad-mac/",
+      "snippet": "Gemma 4 E2B and E4B bring multimodal AI with audio, vision, and function calling to iPhone, iPad, and Mac Mini. Full benchmarks and deployment guide."
+    }
+  ]
+}

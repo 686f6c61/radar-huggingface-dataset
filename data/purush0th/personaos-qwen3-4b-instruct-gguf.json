@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "purush0th/personaos-qwen3-4b-instruct-GGUF",
+  "slug": "purush0th-personaos-qwen3-4b-instruct-gguf",
+  "author": "purush0th",
+  "url": "https://huggingface.co/purush0th/personaos-qwen3-4b-instruct-GGUF",
+  "created_at": "2026-11-08T07:59:09.000Z",
+  "updated_at": "2026-11-08T08:26:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "qwen3",
+    "tool-use",
+    "function-calling",
+    "personal-assistant",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2497280160,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "purush0th/personaos-qwen3-4b-instruct-GGUF · Hugging Face",
+      "url": "https://huggingface.co/purush0th/personaos-qwen3-4b-instruct-GGUF",
+      "snippet": "Instructions to use purush0th/personaos-qwen3-4b-instruct-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "purush0th/personaos-qwen3-4b-instruct-GGUF at main",
+      "url": "https://huggingface.co/purush0th/personaos-qwen3-4b-instruct-GGUF/tree/main",
+      "snippet": "Instructions to use purush0th/personaos-qwen3-4b-instruct-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

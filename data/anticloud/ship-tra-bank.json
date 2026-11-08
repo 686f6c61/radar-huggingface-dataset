@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/ship-tra-bank",
+  "slug": "anticloud-ship-tra-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/ship-tra-bank",
+  "created_at": "2026-11-08T10:57:51.000Z",
+  "updated_at": "2026-11-08T10:57:52.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:ship-tra",
+    "harness:openhands",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iran used Anthropic's Claude AI to target U.S. Navy warships",
+      "url": "https://qz.com/iran-anthropic-claude-ai-us-navy-warships-091126",
+      "snippet": "Iran-linked operators used Anthropic's AI to build targeting files on U.S. warships Anthropic says it disrupted the operation, which compiled ship transponder data, military photos, and satellite ..."
+    },
+    {
+      "title": "Shift (Anticloud offline package) - GitHub",
+      "url": "https://github.com/the-anticloud/anticloud-shift",
+      "snippet": "Scope honesty: SHIFT ships as an offline package with AIOSS audit wiring. It has no model decoding path — PAX L5 Narrow L2 General 27B may call it as a deterministic tool, nothing more."
+    }
+  ]
+}

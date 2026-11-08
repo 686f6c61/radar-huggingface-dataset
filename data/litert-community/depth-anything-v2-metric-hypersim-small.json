@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "litert-community/Depth-Anything-V2-Metric-Hypersim-Small",
+  "slug": "litert-community-depth-anything-v2-metric-hypersim-small",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/Depth-Anything-V2-Metric-Hypersim-Small",
+  "created_at": "2026-11-08T04:37:51.000Z",
+  "updated_at": "2026-11-08T04:37:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "fp32",
+    "depth-anything-v2",
+    "metric-depth",
+    "monocular-depth-estimation",
+    "depth-estimation",
+    "arxiv:2406.09414",
+    "base_model:depth-anything/Depth-Anything-V2-Metric-Hypersim-Small",
+    "base_model:finetune:depth-anything/Depth-Anything-V2-Metric-Hypersim-Small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98906752,
+  "storage_human": "99 MB",
+  "base_model": "depth-anything/Depth-Anything-V2-Metric-Hypersim-Small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "depth-anything/Depth-Anything-V2-Metric-Hypersim-Small · Hugging Face",
+      "url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Metric-Hypersim-Small",
+      "snippet": "/ Depth-Anything-V2-Metric-Hypersim-Small like 3 Follow Depth Aything 528 arxiv:2406.09414 License:apache-2.0 Model card FilesFiles and versions xet Community 1 Copy to bucket new Depth Anything V2 for Metric Depth Estimation Pre-trained Models Usage Prepraration Use our models Running script on images Project 2D images to point clouds ..."
+    },
+    {
+      "title": "Depth-Anything-V2/metric_depth/README.md at main - GitHub",
+      "url": "https://github.com/DepthAnything/Depth-Anything-V2/blob/main/metric_depth/README.md",
+      "snippet": "We here provide a simple codebase to fine-tune our Depth Anything V2 pre-trained encoder for metric depth estimation. Built on our powerful encoder, we use a simple DPT head to regress the depth. We fine-tune our pre-trained encoder on synthetic Hypersim / Virtual KITTI datasets for indoor / outdoor metric depth estimation, respectively."
+    }
+  ]
+}

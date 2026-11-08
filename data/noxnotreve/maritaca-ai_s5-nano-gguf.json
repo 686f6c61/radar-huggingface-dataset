@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "NoxNotreve/maritaca-ai_S5-nano-GGUF",
+  "slug": "noxnotreve-maritaca-ai_s5-nano-gguf",
+  "author": "NoxNotreve",
+  "url": "https://huggingface.co/NoxNotreve/maritaca-ai_S5-nano-GGUF",
+  "created_at": "2026-11-07T20:16:56.000Z",
+  "updated_at": "2026-11-07T20:16:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "pt",
+    "en",
+    "base_model:maritaca-ai/S5-nano",
+    "base_model:quantized:maritaca-ai/S5-nano",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 68002270368,
+  "storage_human": "68.0 GB",
+  "base_model": "maritaca-ai/S5-nano",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maritaca-ai/S5-nano · Hugging Face",
+      "url": "https://huggingface.co/maritaca-ai/S5-nano",
+      "snippet": "S5-nano S5-nano is a 4B-parameter model from Maritaca AI. It has two modes: Think: reasons before answering (the default mode). Instruct: answers directly, without a reasoning step. The context window supports up to 262,144 tokens, and the weights include an MTP (multi-token prediction) layer for speculative decoding. Versions"
+    },
+    {
+      "title": "maritaca-ai_S5-nano-IQ3_M.gguf · bartowski/maritaca-ai_S5-nano-GGUF at main",
+      "url": "https://huggingface.co/bartowski/maritaca-ai_S5-nano-GGUF/blob/main/maritaca-ai_S5-nano-IQ3_M.gguf",
+      "snippet": "Instructions to use bartowski/maritaca-ai_S5-nano-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use bartowski/maritaca-ai_S5-nano-GGUF with llama.cpp: Install (macOS, Linux)"
+    }
+  ]
+}

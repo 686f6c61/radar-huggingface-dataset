@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "GossetWorks/Qwen3-32B-Gosset-3.65BPW",
+  "slug": "gossetworks-qwen3-32b-gosset-3-65bpw",
+  "author": "GossetWorks",
+  "url": "https://huggingface.co/GossetWorks/Qwen3-32B-Gosset-3.65BPW",
+  "created_at": "2026-11-08T04:10:56.000Z",
+  "updated_at": "2026-11-08T06:13:57.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "gosset-packed",
+    "quantization",
+    "e8-lattice",
+    "16gb-gpu",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:quantized:Qwen/Qwen3-32B",
+    "license:other",
+    "gosset_e8_lattice",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4989736320,
+  "parameters_human": "4.99B",
+  "storage_bytes": 14637764535,
+  "storage_human": "14.6 GB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-32B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-32B",
+      "snippet": "Text Generation model with 33B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen 3 32B Local Setup Guide 2026: Run on a 24GB GPU",
+      "url": "https://baeseokjae.github.io/posts/qwen-3-32b-local-guide-2026/",
+      "snippet": "Step-by-step guide to running Qwen3 32B locally on a 24GB GPU using Ollama, llama.cpp, or LM Studio with thinking mode explained."
+    }
+  ]
+}

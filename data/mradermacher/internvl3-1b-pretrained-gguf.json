@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mradermacher/InternVL3-1B-Pretrained-GGUF",
+  "slug": "mradermacher-internvl3-1b-pretrained-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/InternVL3-1B-Pretrained-GGUF",
+  "created_at": "2025-05-13T09:36:22.000Z",
+  "updated_at": "2026-11-08T08:10:36.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "internvl",
+    "custom_code",
+    "multilingual",
+    "base_model:OpenGVLab/InternVL3-1B-Pretrained",
+    "base_model:quantized:OpenGVLab/InternVL3-1B-Pretrained",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 166,
+  "trending_score": 0,
+  "parameters": 629697920,
+  "parameters_human": "629.7M",
+  "storage_bytes": 7682865344,
+  "storage_human": "7.7 GB",
+  "base_model": "OpenGVLab/InternVL3-1B-Pretrained",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/InternVL3-1B-Pretrained-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/InternVL3-1B-Pretrained-i1-GGUF",
+      "snippet": "mradermacher / InternVL3-1B-Pretrained-i1-GGUF like 0 Transformers GGUF multilingual internvl custom_code imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/InternVL3-1B-Pretrained-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/InternVL3-1B-Pretrained-GGUF",
+      "snippet": "InternVL3-1B-Pretrained-GGUF like 0 GGUF conversational Model card Files Files and versions Community Deploy"
+    }
+  ]
+}

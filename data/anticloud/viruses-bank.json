@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Anticloud/viruses-bank",
+  "slug": "anticloud-viruses-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/viruses-bank",
+  "created_at": "2026-11-08T10:52:32.000Z",
+  "updated_at": "2026-11-08T10:52:33.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:viruses",
+    "harness:boltz-cli",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic’s New AI Model Puts Banking Sector on Alert",
+      "url": "https://www.outlookbusiness.com/deeptech/tech/anthropic-ai-model-banking-sector-cybersecurity-alert",
+      "snippet": "The International Monetary Fund (IMF) warned the finance industry stating that Anthropic’s recent controlled release of its Claude Mythos Preview, an advanced AI model with exceptional cyber capabilities. It can speed up finding and exploiting weaknesses in software."
+    }
+  ]
+}

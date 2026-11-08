@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/song-generation-alt-bank",
+  "slug": "anticloud-song-generation-alt-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/song-generation-alt-bank",
+  "created_at": "2026-11-08T10:59:57.000Z",
+  "updated_at": "2026-11-08T10:59:59.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:song-generation-alt",
+    "harness:yue-inference",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ElevenLabs now lets users publish AI-generated music directly on ...",
+      "url": "https://techcrunch.com/2026/11/05/elevenlabs-now-lets-users-publish-ai-generated-music-directly-on-soundcloud/",
+      "snippet": "The company first released a music-generation model in 2025, and followed it up in April 2026 with a consumer app that lets you generate songs using prompts."
+    },
+    {
+      "title": "Best AI Song Generators: 9 Tools Tested in 2026 - musegen.ai",
+      "url": "https://www.musegen.ai/blog/best-ai-song-generators-9-tools-tested-in-2026",
+      "snippet": "A practical 2026 comparison of the best AI song generators for full songs, vocals, stems, MIDI, scoring, APIs, and commercial use."
+    }
+  ]
+}

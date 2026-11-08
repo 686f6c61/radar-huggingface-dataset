@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "sin333/k120-e903",
+  "slug": "sin333-k120-e903",
+  "author": "sin333",
+  "url": "https://huggingface.co/sin333/k120-e903",
+  "created_at": "2026-11-08T07:20:46.000Z",
+  "updated_at": "2026-11-08T07:32:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35815268944,
+  "storage_human": "35.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sin333/adapter-n20 · Hugging Face",
+      "url": "https://huggingface.co/sin333/adapter-n20",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sin333/adapter-n17 · Hugging Face",
+      "url": "https://huggingface.co/sin333/adapter-n17",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

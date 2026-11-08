@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sizumita/plamo-3-translate-0.8b-mlx-4bit-compact",
+  "slug": "sizumita-plamo-3-translate-0-8b-mlx-4bit-compact",
+  "author": "sizumita",
+  "url": "https://huggingface.co/sizumita/plamo-3-translate-0.8b-mlx-4bit-compact",
+  "created_at": "2026-11-08T09:15:56.000Z",
+  "updated_at": "2026-11-08T09:31:18.000Z",
+  "license": "plamo-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "mlx",
+  "languages": [
+    "ja",
+    "en",
+    "zh",
+    "ko"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "plamo3",
+    "translation",
+    "quantized",
+    "apple-silicon",
+    "custom_code",
+    "ja",
+    "en",
+    "zh",
+    "ko",
+    "base_model:pfnet/plamo-3-translate-0.8b",
+    "base_model:quantized:pfnet/plamo-3-translate-0.8b",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 890344960,
+  "parameters_human": "890.3M",
+  "storage_bytes": 501002761,
+  "storage_human": "501 MB",
+  "base_model": "pfnet/plamo-3-translate-0.8b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PLaMo 3 Translate - a pfnet Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/pfnet/plamo-3-translate",
+      "snippet": "PLaMo 3 Translate: translation-specialized LLMs (0.8B / 2B / 8B / 31B) in BF16 and quantized formats (FP8, W4A16, W4AFP8, NVFP4, GGUF, MLX-4bit)."
+    },
+    {
+      "title": "pfnet/plamo-3-translate-0.8b-FP8 · Hugging Face",
+      "url": "https://huggingface.co/pfnet/plamo-3-translate-0.8b-FP8",
+      "snippet": "PLaMo 3 Translate 0.8B is a translation-specialized LLM developed by Preferred Networks (PFN) that delivers world-class translation quality. It is built on PLaMo 3 NICT, a pretrained model developed through joint research by PFN and the National Institute of Information and Communications Technology (NICT)."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/textiles-maint-bank",
+  "slug": "anticloud-textiles-maint-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/textiles-maint-bank",
+  "created_at": "2026-11-08T10:53:15.000Z",
+  "updated_at": "2026-11-08T10:53:16.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:textiles-maint",
+    "harness:openhands",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anticloud/anticloud-textile-simulation · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Anticloud/anticloud-textile-simulation",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Anticloud/anticloud-textile · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Anticloud/anticloud-textile",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

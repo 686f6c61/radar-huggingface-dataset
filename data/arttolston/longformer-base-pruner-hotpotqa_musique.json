@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "ArtTolston/longformer-base-pruner-hotpotqa_musique",
+  "slug": "arttolston-longformer-base-pruner-hotpotqa_musique",
+  "author": "ArtTolston",
+  "url": "https://huggingface.co/ArtTolston/longformer-base-pruner-hotpotqa_musique",
+  "created_at": "2026-11-08T10:29:37.000Z",
+  "updated_at": "2026-11-08T10:35:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "longformer",
+    "retrieval",
+    "reranking",
+    "multi-hop",
+    "question-answering",
+    "dataset:Q-RAG/Hotpotqa_and_Musique",
+    "base_model:allenai/longformer-base-4096",
+    "base_model:finetune:allenai/longformer-base-4096",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 148660225,
+  "parameters_human": "148.7M",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "allenai/longformer-base-4096",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Longformer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/longformer",
+      "snippet": "Longformer Longformer is a transformer model designed for processing long documents. The self-attention operation usually scales quadratically with sequence length, preventing transformers from processing longer sequences. The Longformer attention mechanism overcomes this by scaling linearly with sequence length."
+    },
+    {
+      "title": "allenai/longformer-base-4096 · Hugging Face",
+      "url": "https://huggingface.co/allenai/longformer-base-4096",
+      "snippet": "Longformer is a transformer model for long documents. longformer-base-4096 is a BERT-like model started from the RoBERTa checkpoint and pretrained for MLM on long documents. It supports sequences of length up to 4,096. Longformer uses a combination of a sliding window (local) attention and global ..."
+    }
+  ]
+}

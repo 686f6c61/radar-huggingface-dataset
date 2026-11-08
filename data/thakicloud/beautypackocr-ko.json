@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/BeautyPackOCR-KO",
+  "slug": "thakicloud-beautypackocr-ko",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/BeautyPackOCR-KO",
+  "created_at": "2026-11-08T10:14:25.000Z",
+  "updated_at": "2026-11-08T10:17:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "onnx",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "text-detection",
+    "text-recognition",
+    "dbnet",
+    "crnn",
+    "korean",
+    "cosmetics",
+    "packaging",
+    "image-to-text",
+    "ko",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 274269403,
+  "storage_human": "274 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ThakiOCR-KO-v1: We Released a LoRA That Adapts OvisOCR3 to Korean Word ...",
+      "url": "https://thakicloud.com/tech-blog/en/research/thakiocr-ko-v1-ovisocr3-korean-finetune/",
+      "snippet": "We trained a LoRA adapter for Korean word recognition on top of the open OCR model OvisOCR3 and released it as ThakiCloud/ThakiOCR-KO-v1. On 2,400 word crops from our internal development set, the character error rate (CER) went from 25.28% for the base model to 7.78%, a 69.2% relative reduction."
+    },
+    {
+      "title": "ThakiCloud - GitHub",
+      "url": "https://github.com/ThakiCloud",
+      "snippet": "thaki-asr-ko-1.7b Public Python 0 Apache-2.0 0 0 0 Updated 3 days ago ecp-shared-backbone-vllm Public Serve Qwen3.8-27B generation and the ECP-Q12 evidence gate from one GPU and one model load (vLLM 0.28 plugin). Research Deployment, not production certified."
+    }
+  ]
+}

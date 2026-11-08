@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "sisizhang/klear-agentforge-8b-critic-v9-epoch2-5",
+  "slug": "sisizhang-klear-agentforge-8b-critic-v9-epoch2-5",
+  "author": "sisizhang",
+  "url": "https://huggingface.co/sisizhang/klear-agentforge-8b-critic-v9-epoch2-5",
+  "created_at": "2026-11-08T11:24:33.000Z",
+  "updated_at": "2026-11-08T11:36:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "code-agent",
+    "reinforcement-learning",
+    "critic",
+    "value-model",
+    "process-reward",
+    "en",
+    "dataset:sisizhang/swesmith-critic-ppo-tasks",
+    "base_model:Kwai-Klear/Klear-AgentForge-8B-SFT",
+    "base_model:finetune:Kwai-Klear/Klear-AgentForge-8B-SFT",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Kwai-Klear/Klear-AgentForge-8B-SFT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Kwai-Klear/Klear-AgentForge · GitHub",
+      "url": "https://github.com/Kwai-Klear/Klear-AgentForge",
+      "snippet": "Our research project Klear-AgentForge focuses on developing agentic AI capabilities through systematic post-training scaling. We will progressively update and opensource our models, data and training recipes. We present the Klear-AgentForge models, a series of agentic variants based on Qwen3 ..."
+    },
+    {
+      "title": "[2511.05951] Klear-AgentForge: Forging Agentic Intelligence through ...",
+      "url": "https://arxiv.org/abs/2511.05951",
+      "snippet": "Despite the proliferation of powerful agentic models, the lack of critical post-training details hinders the development of strong counterparts in the open-source community. In this study, we present a comprehensive and fully open-source pipeline for training a high-performance agentic model for interacting with external tools and environments, named Klear-Qwen3-AgentForge, starting from the ..."
+    }
+  ]
+}

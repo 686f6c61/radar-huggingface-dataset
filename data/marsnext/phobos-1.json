@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "marsnext/Phobos-1",
+  "slug": "marsnext-phobos-1",
+  "author": "marsnext",
+  "url": "https://huggingface.co/marsnext/Phobos-1",
+  "created_at": "2026-11-08T11:00:49.000Z",
+  "updated_at": "2026-11-08T11:34:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "phobos_cortical_moe",
+    "marsnext",
+    "phobos-1",
+    "text-generation",
+    "conversational",
+    "code-generation",
+    "math-reasoning",
+    "system-2-reasoning",
+    "mixture-of-experts",
+    "cortical-moe",
+    "dynamic-mitosis",
+    "deepinfer-engram",
+    "multi-token-prediction",
+    "openai-compatible",
+    "edge-inference",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 113034436,
+  "parameters_human": "113.0M",
+  "storage_bytes": 678758457,
+  "storage_human": "679 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MartianAcademy/synapcore-phobos-1 · Hugging Face",
+      "url": "https://huggingface.co/MartianAcademy/synapcore-phobos-1",
+      "snippet": "MartianAcademy / synapcore-phobos-1 Like 0 Follow MartianAcademy 1 Text Generation PyTorch English text-to-text conversational code synapcore phobos-1 martian-academy hierarchical-cortex neurogenesis cortical-mitosis self-correcting-ai mixture-of-experts continual-learning License:apache-2.0 Model card FilesFiles and versions xet Community 2 ..."
+    },
+    {
+      "title": "[2608.22352] Automated Shape-Model-Based Astrometry of Phobos from Mars ...",
+      "url": "https://arxiv.org/abs/2608.22352",
+      "snippet": "High-resolution spacecraft images provide important astrometric constraints for orbit refinement, but measurements of resolved bodies are often limited by labor-intensive control-point selection and the difficulty of achieving consistent reductions over large image archives. We present an automated shape-model-based astrometric pipeline for Phobos and apply it to Mars Express Super Resolution ..."
+    }
+  ]
+}

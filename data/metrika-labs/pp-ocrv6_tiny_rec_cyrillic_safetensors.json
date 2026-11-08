@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "metrika-labs/PP-OCRv6_tiny_rec_cyrillic_safetensors",
+  "slug": "metrika-labs-pp-ocrv6_tiny_rec_cyrillic_safetensors",
+  "author": "metrika-labs",
+  "url": "https://huggingface.co/metrika-labs/PP-OCRv6_tiny_rec_cyrillic_safetensors",
+  "created_at": "2026-11-08T11:54:32.000Z",
+  "updated_at": "2026-11-08T11:54:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "PaddleOCR",
+  "languages": [
+    "ru",
+    "kk",
+    "be",
+    "uz",
+    "tg",
+    "uk",
+    "bg",
+    "sr",
+    "tt",
+    "ky",
+    "mn"
+  ],
+  "tags": [
+    "PaddleOCR",
+    "safetensors",
+    "pp_ocrv6_tiny_rec",
+    "image-to-text",
+    "ru",
+    "kk",
+    "be",
+    "uz",
+    "tg",
+    "uk",
+    "bg",
+    "sr",
+    "tt",
+    "ky",
+    "mn",
+    "base_model:PaddlePaddle/PP-OCRv6_tiny_rec",
+    "base_model:finetune:PaddlePaddle/PP-OCRv6_tiny_rec",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 623096,
+  "parameters_human": "623096",
+  "storage_bytes": 2512600,
+  "storage_human": "3 MB",
+  "base_model": "PaddlePaddle/PP-OCRv6_tiny_rec",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - metrika-labs/PP-OCRv6_rec_cyrillic: Fast OCR models for ...",
+      "url": "https://github.com/metrika-labs/PP-OCRv6_rec_cyrillic",
+      "snippet": "PP-OCRv6 is a family of fast, lightweight text recognition models from PaddlePaddle. The models were trained by Metrika Labs on 7.5 million varied examples of printed and handwritten text from real document scans and synthetic images."
+    },
+    {
+      "title": "PP-OCRv6 (tiny) multilingual handwritten and printed text recognition model",
+      "url": "https://zenodo.org/records/21788403",
+      "snippet": "Synthetic line images were generated as additional training material for 18 languages: Ancient Greek, Arabic, Classical Armenian, Czech, Dutch, Finnish, Georgian, Geʽez, Irish, Latvian, Lithuanian, Persian, Polish, Romanian, Russian, Serbian, Slovenian, Syriac. Of these, eight are present only as synthetic data: Classical Armenian, Geʽez, Irish, Latvian, Lithuanian, Romanian, Serbian (Cyrillic), Slovenian. The model was trained with kraken (feature/ppocrv6_rec branch)."
+    },
+    {
+      "title": "README.md · metrika-labs/PP-OCRv6_tiny_rec_cyrillic_onnx at main",
+      "url": "https://huggingface.co/metrika-labs/PP-OCRv6_tiny_rec_cyrillic_onnx/blob/main/README.md",
+      "snippet": "PP-OCRv6 is a family of fast, lightweight text recognition models from PaddlePaddle. The models were trained by Metrika Labs on 7.5 million varied examples of printed and handwritten text from real document scans and synthetic images."
+    }
+  ]
+}

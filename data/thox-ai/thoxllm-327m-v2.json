@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Thox-ai/ThoxLLM-327M-v2",
+  "slug": "thox-ai-thoxllm-327m-v2",
+  "author": "Thox-ai",
+  "url": "https://huggingface.co/Thox-ai/ThoxLLM-327M-v2",
+  "created_at": "2026-06-22T09:20:18.000Z",
+  "updated_at": "2026-11-08T05:08:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "thoxllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "thoxllm",
+    "safetensors",
+    "thox",
+    "327m",
+    "decoder-only",
+    "rmsnorm",
+    "gqa",
+    "rope",
+    "swiglu",
+    "from-scratch",
+    "thoxos",
+    "meshstack",
+    "ollama",
+    "local-first",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1001,
+  "trending_score": 0,
+  "parameters": 324162560,
+  "parameters_human": "324.2M",
+  "storage_bytes": 649372722,
+  "storage_human": "649 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thox-ai/ThoxLLM-327M-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Thox-ai/ThoxLLM-327M-v2-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model Catalog - Browse Available AI Models | THOX.ai",
+      "url": "https://www.thox.ai/docs/model-catalog",
+      "snippet": "huggingface.co/Thox-ai — 39 public models including ThoxKey-9M-role, ThoxAir-16M-role, ThoxClip-9M-role, ThoxMini-125M-role, ThoxLLM-327M-v2, ThoxRoute-1.5B. There is no public thox-ai/thoxforge-7b through thox-ai/thoxwave-8b repository."
+    }
+  ]
+}

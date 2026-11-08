@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "netplas/nexus-nano_0.5",
+  "slug": "netplas-nexus-nano_0-5",
+  "author": "netplas",
+  "url": "https://huggingface.co/netplas/nexus-nano_0.5",
+  "created_at": "2026-11-08T09:01:53.000Z",
+  "updated_at": "2026-11-08T09:01:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GambitFlow/Nexus-Nano · Hugging Face",
+      "url": "https://huggingface.co/GambitFlow/Nexus-Nano",
+      "snippet": "📖 Model Description This is a Convolutional Neural Network (CNN) trained to evaluate chess positions. It takes a board state as input and outputs a scalar evaluation score between -1 (Black winning) and +1 (White winning). It is the core \"brain\" of the ChessMate AI project, designed to run efficiently in web browsers using onnxruntime-web."
+    }
+  ]
+}

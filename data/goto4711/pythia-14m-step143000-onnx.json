@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "goto4711/pythia-14m-step143000-ONNX",
+  "slug": "goto4711-pythia-14m-step143000-onnx",
+  "author": "goto4711",
+  "url": "https://huggingface.co/goto4711/pythia-14m-step143000-ONNX",
+  "created_at": "2026-11-08T10:04:09.000Z",
+  "updated_at": "2026-11-08T10:04:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "gpt_neox",
+    "text-generation",
+    "base_model:EleutherAI/pythia-14m",
+    "base_model:quantized:EleutherAI/pythia-14m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56456986,
+  "storage_human": "56 MB",
+  "base_model": "EleutherAI/pythia-14m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EleutherAI/pythia-14m · Hugging Face",
+      "url": "https://huggingface.co/EleutherAI/pythia-14m",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

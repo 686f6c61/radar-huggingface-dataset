@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "D33pStateTech/aznten_sdxl_freebuff",
+  "slug": "d33pstatetech-aznten_sdxl_freebuff",
+  "author": "D33pStateTech",
+  "url": "https://huggingface.co/D33pStateTech/aznten_sdxl_freebuff",
+  "created_at": "2026-11-08T07:37:28.000Z",
+  "updated_at": "2026-11-08T07:37:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186005164,
+  "storage_human": "186 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "D33pStateTech/aznten-SDXL-photoreal · Hugging Face",
+      "url": "https://huggingface.co/D33pStateTech/aznten-SDXL-photoreal",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Get Started with Freebuff",
+      "url": "https://freebuff.com/get-started",
+      "snippet": "Code, build and deploy apps, and chat with AI for free. Work in your browser, desktop or terminal with Freebuff."
+    }
+  ]
+}

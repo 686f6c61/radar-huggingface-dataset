@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/bots-bank",
+  "slug": "anticloud-bots-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/bots-bank",
+  "created_at": "2026-11-08T10:59:17.000Z",
+  "updated_at": "2026-11-08T10:59:19.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:bots",
+    "harness:openhands",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anticloud/anticloud-botframework · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Anticloud/anticloud-botframework",
+      "snippet": "Developers can model and build sophisticated conversation using their favorite programming languages including C#, JS, and Python for developers and multi-disciplinary teams to design and build conversational experiences. Checkout the Bot Framework ecosystem section to learn more about other tooling and services related to the Bot Framework SDK."
+    },
+    {
+      "title": "README.md · Anticloud/anticloud-botframework at main",
+      "url": "https://huggingface.co/datasets/Anticloud/anticloud-botframework/blob/main/README.md",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

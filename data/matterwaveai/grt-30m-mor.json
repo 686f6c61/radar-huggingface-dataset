@@ -5,7 +5,7 @@
   "author": "MatterWaveAI",
   "url": "https://huggingface.co/MatterWaveAI/grt-30m-mor",
   "created_at": "2026-11-03T20:47:40.000Z",
-  "updated_at": "2026-11-07T02:30:47.000Z",
+  "updated_at": "2026-11-07T14:36:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

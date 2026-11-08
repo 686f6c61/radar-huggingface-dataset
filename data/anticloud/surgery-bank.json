@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/surgery-bank",
+  "slug": "anticloud-surgery-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/surgery-bank",
+  "created_at": "2026-11-08T10:51:54.000Z",
+  "updated_at": "2026-11-08T10:51:56.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:surgery",
+    "harness:openhands",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artificial Intelligence in Surgery: A Systematic Review of Use and ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11642125/",
+      "snippet": "Background: Artificial Intelligence (AI) holds promise for transforming healthcare, with AI models gaining increasing clinical use in surgery. However, new AI models are developed without established standards for their validation and use. Before AI ..."
+    },
+    {
+      "title": "Anticloud Reports $0.013 Electricity Cost in PAX v52 AI Research Benchmark",
+      "url": "https://finance.yahoo.com/technology/ai/articles/anticloud-reports-0-013-electricity-071100578.html",
+      "snippet": "Dubai-based Anticloud reports results from a benchmark in which its 27B-parameter PAX v52 model generated structured research frameworks for 20 open problems across multiple scientific fields ..."
+    }
+  ]
+}

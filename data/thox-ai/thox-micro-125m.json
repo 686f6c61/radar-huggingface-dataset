@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Thox-ai/thox-micro-125m",
+  "slug": "thox-ai-thox-micro-125m",
+  "author": "Thox-ai",
+  "url": "https://huggingface.co/Thox-ai/thox-micro-125m",
+  "created_at": "2026-07-28T01:04:03.000Z",
+  "updated_at": "2026-11-08T05:08:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "thox",
+    "thox-ai",
+    "thox-llm",
+    "edge-ai",
+    "on-device",
+    "from-scratch",
+    "thoxos",
+    "meshstack",
+    "thoxmicro",
+    "ollama",
+    "local-first",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1654,
+  "trending_score": 0,
+  "parameters": 123587328,
+  "parameters_human": "123.6M",
+  "storage_bytes": 663191154,
+  "storage_human": "663 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thox-ai/thox-micro-125m · Hugging Face",
+      "url": "https://huggingface.co/Thox-ai/thox-micro-125m",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Thox-ai/thox-micro-125m-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Thox-ai/thox-micro-125m-GGUF",
+      "snippet": "Community Deploy Copy to bucket new Use this model Instructions to use Thox-ai/thox-micro-125m-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries llama-cpp-python How to use Thox-ai/thox-micro-125m-GGUF with llama-cpp-python: ... Notebooks Google Colab Kaggle Local Apps Settings ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "FaisalALMallah",
   "url": "https://huggingface.co/FaisalALMallah/nouri-produce-mobilenetv3",
   "created_at": "2026-11-05T19:43:26.000Z",
-  "updated_at": "2026-11-05T22:38:42.000Z",
+  "updated_at": "2026-11-07T07:12:52.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -14,6 +14,7 @@
   "tags": [
     "timm",
     "pytorch",
+    "qai-hf-hackathon-2026",
     "food",
     "nutrition",
     "education",

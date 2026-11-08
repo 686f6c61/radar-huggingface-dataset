@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "alpindale/haruka-compressed",
+  "slug": "alpindale-haruka-compressed",
+  "author": "alpindale",
+  "url": "https://huggingface.co/alpindale/haruka-compressed",
+  "created_at": "2026-11-08T05:35:46.000Z",
+  "updated_at": "2026-11-08T06:10:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "image-classification",
+    "anime",
+    "danbooru",
+    "tagger",
+    "eva02",
+    "webgpu",
+    "base_model:KaraKaraWitch/haruka-tagger",
+    "base_model:finetune:KaraKaraWitch/haruka-tagger",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184233898,
+  "parameters_human": "184.2M",
+  "storage_bytes": 186887630,
+  "storage_human": "187 MB",
+  "base_model": "KaraKaraWitch/haruka-tagger",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlpinDale · GitHub",
+      "url": "https://github.com/AlpinDale",
+      "snippet": "A graph representing AlpinDale's contributions from November 02, 2025 to November 04, 2026. The contributions are 84% commits, 15% pull requests, 1% code review, 0% issues."
+    },
+    {
+      "title": "alpindale (Alpin) - Hugging Face",
+      "url": "https://huggingface.co/alpindale/datasets",
+      "snippet": "alpindale/two-million-bluesky-posts Viewer • Updated Nov 28, 2024 • 2.11M • 1.34k • 199"
+    }
+  ]
+}

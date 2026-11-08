@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Infinix-io/kitten-tts-nano-0.8-fp32",
+  "slug": "infinix-io-kitten-tts-nano-0-8-fp32",
+  "author": "Infinix-io",
+  "url": "https://huggingface.co/Infinix-io/kitten-tts-nano-0.8-fp32",
+  "created_at": "2026-11-08T07:10:33.000Z",
+  "updated_at": "2026-11-08T07:10:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60045997,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KittenML/kitten-tts-nano-0.8-fp32 · Hugging Face",
+      "url": "https://huggingface.co/KittenML/kitten-tts-nano-0.8-fp32",
+      "snippet": "Kitten TTS Nano 0.8 😻 Kitten TTS is an open-source realistic text-to-speech model with 15 million parameters and around 50MB of filesize. 🚀 Quick Start Installation"
+    },
+    {
+      "title": "KittenML/kitten-tts-nano-0.8-fp32 at main - Hugging Face",
+      "url": "https://huggingface.co/KittenML/kitten-tts-nano-0.8-fp32/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

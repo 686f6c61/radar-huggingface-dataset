@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "bluevisor/Qwen3.5-0.8B-Base-4bit-mlx",
+  "slug": "bluevisor-qwen3-5-0-8b-base-4bit-mlx",
+  "author": "bluevisor",
+  "url": "https://huggingface.co/bluevisor/Qwen3.5-0.8B-Base-4bit-mlx",
+  "created_at": "2026-11-08T08:49:16.000Z",
+  "updated_at": "2026-11-08T08:50:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 444016121,
+  "storage_human": "444 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/Qwen3.5-0.8B-OptiQ-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Qwen3.5-0.8B-OptiQ-4bit",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlx-community/Qwen3.5-0.8B-MLX-4bit - Secret AI",
+      "url": "https://secretai.io/models/mlx-community/Qwen3.5-0.8B-MLX-4bit",
+      "snippet": "This model was converted using mlx-vlm from the pc/fix-qwen35-predicate branch, which includes fixes for Qwen3.5 model support (proper handling of MoE gate layers, shared_expert_gate, and A_log casting)."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kadirbekovvv/jevora-9b-v1",
+  "slug": "kadirbekovvv-jevora-9b-v1",
+  "author": "kadirbekovvv",
+  "url": "https://huggingface.co/kadirbekovvv/jevora-9b-v1",
+  "created_at": "2026-09-29T14:40:53.000Z",
+  "updated_at": "2026-11-08T06:55:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "multiple-choice",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "decision-model",
+    "multiple-choice",
+    "choice-probabilities",
+    "custom-loader",
+    "lora",
+    "bf16",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36185901064,
+  "storage_human": "36.2 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kadirbekovvv (Eldos) - Hugging Face",
+      "url": "https://huggingface.co/kadirbekovvv",
+      "snippet": "Recent Activity updated a model7 days ago kadirbekovvv/jevora-9b-v1 published a model7 days ago kadirbekovvv/jevora-9b-v1 View all activity"
+    },
+    {
+      "title": "jevora-9b-v1 — JevBench by Benchmark Heaven",
+      "url": "https://benchmarkheaven.com/jev-models/jevora-9b-v1",
+      "snippet": "Explore the jevora-9b-v1 configuration evaluated across intelligence, calibration, speed, and cost."
+    }
+  ]
+}

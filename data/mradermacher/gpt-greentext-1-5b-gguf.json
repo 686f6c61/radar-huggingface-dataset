@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GPT-Greentext-1.5b-GGUF",
+  "slug": "mradermacher-gpt-greentext-1-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GPT-Greentext-1.5b-GGUF",
+  "created_at": "2025-05-30T22:07:22.000Z",
+  "updated_at": "2026-11-08T08:10:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "fun",
+    "greentext",
+    "en",
+    "dataset:DarwinAnim8or/greentext",
+    "base_model:DarwinAnim8or/GPT-Greentext-1.5b",
+    "base_model:quantized:DarwinAnim8or/GPT-Greentext-1.5b",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 260,
+  "trending_score": 0,
+  "parameters": 1557611200,
+  "parameters_human": "1.56B",
+  "storage_bytes": 15716151296,
+  "storage_human": "15.7 GB",
+  "base_model": "DarwinAnim8or/GPT-Greentext-1.5b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/GPT-Greentext-1.5b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/GPT-Greentext-1.5b-GGUF",
+      "snippet": "mradermacher / GPT-Greentext-1.5b-GGUF like 0 Transformers GGUF DarwinAnim8or/greentext English fun greentext License:mit Model card FilesFiles and versions xet Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    },
+    {
+      "title": "mradermacher/GPT-Greentext-1.5b-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/GPT-Greentext-1.5b-i1-GGUF",
+      "snippet": "mradermacher / GPT-Greentext-1.5b-i1-GGUF like 0 Transformers GGUF DarwinAnim8or/greentext English fun greentext imatrix License:mit Model card FilesFiles and versions xet Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    }
+  ]
+}

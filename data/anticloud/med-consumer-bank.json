@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/med-consumer-bank",
+  "slug": "anticloud-med-consumer-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/med-consumer-bank",
+  "created_at": "2026-11-08T10:51:34.000Z",
+  "updated_at": "2026-11-08T10:51:36.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:med-consumer",
+    "harness:openhands",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "25 AI in Banking Examples You Should Know - Built In",
+      "url": "https://builtin.com/artificial-intelligence/ai-in-banking",
+      "snippet": "Explore how AI is used in banking for customer service, fraud detection, lending, credit decisions, risk management and other financial services."
+    },
+    {
+      "title": "Agentic AI for banking | The Microsoft Cloud Blog",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/financial-services/banking/2026/09/28/bank-on-intelligence-building-the-financial-institution-of-the-agentic-era/",
+      "snippet": "What agentic AI means for banks and financial institutions A financial institution of the agentic era uses governed AI agents, trusted data, and human oversight to connect work across banking operations, risk, compliance, and client service."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Remek",
   "url": "https://huggingface.co/Remek/basal-2.0-max-GGUF",
   "created_at": "2026-10-12T17:33:51.000Z",
-  "updated_at": "2026-11-06T14:19:01.000Z",
+  "updated_at": "2026-11-07T23:17:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "imatrix"
   ],
   "likes": 1,
-  "downloads_30d": 708,
+  "downloads_30d": 802,
   "trending_score": 0,
   "parameters": 11167748096,
   "parameters_human": "11.17B",

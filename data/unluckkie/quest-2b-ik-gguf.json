@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Unluckkie/Quest-2B-IK-GGUF",
+  "slug": "unluckkie-quest-2b-ik-gguf",
+  "author": "Unluckkie",
+  "url": "https://huggingface.co/Unluckkie/Quest-2B-IK-GGUF",
+  "created_at": "2026-11-08T04:34:31.000Z",
+  "updated_at": "2026-11-08T04:57:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "trellis",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "trellis",
+    "gguf",
+    "ik_llama.cpp",
+    "potato-gang",
+    "research",
+    "agentic",
+    "custom-quant",
+    "imatrix",
+    "r4",
+    "text-generation",
+    "en",
+    "base_model:osunlp/QUEST-2B",
+    "base_model:quantized:osunlp/QUEST-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 8756659264,
+  "storage_human": "8.8 GB",
+  "base_model": "osunlp/QUEST-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unluckkie/K2-Horizon-3.7B-IK-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Unluckkie/K2-Horizon-3.7B-IK-GGUF",
+      "snippet": "This is a highly engineered suite of ik_llama.cpp quants for K2-Horizon-3.7B. We didn't just press the quantize button; we applied a custom layer-wise precision gradient (APEX methodology) + a high-quality imatrix to make this 3.7B model punch way above its weight class on 8GB RAM hardware."
+    },
+    {
+      "title": "为什么这么多人把「Wikipedia」称作「wiki」？ - 知乎",
+      "url": "https://www.zhihu.com/question/19581089",
+      "snippet": "Mar 25, 2011 · 为什么这么多人把「Wikipedia」称作「wiki」？ 我一直很难理解这个问题，为什么这么多人喜欢把专有名词和通用概 …"
+    },
+    {
+      "title": "Unluckkie/MiniCPM5-2B-IK-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Unluckkie/MiniCPM5-2B-IK-GGUF",
+      "snippet": "Text Generation model with 3B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Wikipedia 和 Wikia 哪个是维基百科；它们和维基解密有什么联系？",
+      "url": "https://www.zhihu.com/question/24790852",
+      "snippet": "Aug 9, 2014 · Wikipedia（维基百科），是由 维基媒体基金会 运营的非盈利在线百科全书计划，采用 wiki 软件架构（mediawiki），由 …"
+    }
+  ]
+}

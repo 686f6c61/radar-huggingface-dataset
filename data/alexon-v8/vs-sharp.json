@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "alexon-v8/VS-Sharp",
+  "slug": "alexon-v8-vs-sharp",
+  "author": "alexon-v8",
+  "url": "https://huggingface.co/alexon-v8/VS-Sharp",
+  "created_at": "2026-10-22T14:38:34.000Z",
+  "updated_at": "2026-11-08T10:22:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2193172945,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alekhyo Biswas (@alexon-v8) — Systems & Compilers",
+      "url": "https://alexon-v8.github.io/",
+      "snippet": "Explore Projects ↓ GitHub (@alexon-v8) ↗ vs-sh Terminal AST & Bytecode Live VerScript Systems Shell v0.9.4 [C17 / x86_64-linux-wsl] Loaded modules: VerScript-AST · VS-Sharp · cmdOS-VM · AES-256 · PatternOS Type a command below or click a chip: help verscript cmdos extensions crypto math clear alekhyo@verscript:~$"
+    },
+    {
+      "title": "alexon-v8 (Alekhyo Biswas) · GitHub",
+      "url": "https://github.com/alexon-v8",
+      "snippet": "Hi, I'm Alekhyo Biswas (@alexon-v8) 👋 Systems & Language Developer · Compiler Engineer · Algorithm Designer I design and build programming languages, bytecode virtual machines, cryptographic primitives, and custom graphical/audio synthesis engines—bridging low-level C (C17) systems programming with interactive runtime environments."
+    }
+  ]
+}

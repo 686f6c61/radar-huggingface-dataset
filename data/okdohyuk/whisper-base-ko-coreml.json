@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "okdohyuk/whisper-base-ko-coreml",
+  "slug": "okdohyuk-whisper-base-ko-coreml",
+  "author": "okdohyuk",
+  "url": "https://huggingface.co/okdohyuk/whisper-base-ko-coreml",
+  "created_at": "2026-11-08T05:23:19.000Z",
+  "updated_at": "2026-11-08T05:24:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisperkit",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "whisperkit",
+    "whisper",
+    "coreml",
+    "automatic-speech-recognition",
+    "ko",
+    "dataset:google/fleurs",
+    "dataset:Bingsu/zeroth-korean",
+    "dataset:fsicoli/common_voice_17_0",
+    "base_model:openai/whisper-base",
+    "base_model:finetune:openai/whisper-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 145668094,
+  "storage_human": "146 MB",
+  "base_model": "openai/whisper-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "okdohyuk/whisperkit-coreml · Hugging Face",
+      "url": "https://huggingface.co/okdohyuk/whisperkit-coreml",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "openai/whisper-base · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-base",
+      "snippet": "Automatic Speech Recognition model with 72.6M parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

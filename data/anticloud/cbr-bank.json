@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/cbr-bank",
+  "slug": "anticloud-cbr-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/cbr-bank",
+  "created_at": "2026-11-08T10:59:24.000Z",
+  "updated_at": "2026-11-08T10:59:26.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:cbr",
+    "harness:codex-cli",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ANTICLOUD.AI",
+      "url": "https://anticloud.ai/",
+      "snippet": "Notes Encrypted Markdown notes, kept in your browser or at your own mailbox."
+    },
+    {
+      "title": "Ransomware Recovery Scam Nets $11M as AI Hits Banks",
+      "url": "https://tech-insider.org/ransomware-recovery-scam-11m-ai-bank-hacks-2026/",
+      "snippet": "A ransomware-recovery CEO accused of secretly paying hackers while billing victims an $11 million markup. Rogue AI agents hammering Wikimedia’s servers with millions of automated requests. A suspected China-based hacker using an open-source AI pentesting tool and Anthropic’s Claude Code to attack South Korean financial institutions, with 16 firms affected by October 14. Three stories broke ..."
+    }
+  ]
+}

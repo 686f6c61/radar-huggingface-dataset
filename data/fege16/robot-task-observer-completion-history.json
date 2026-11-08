@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "FEGE16/robot-task-observer-completion-history",
+  "slug": "fege16-robot-task-observer-completion-history",
+  "author": "FEGE16",
+  "url": "https://huggingface.co/FEGE16/robot-task-observer-completion-history",
+  "created_at": "2026-11-06T09:15:24.000Z",
+  "updated_at": "2026-11-08T07:37:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "robotics",
+    "qwen3-vl",
+    "vision-language-model",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132195448,
+  "storage_human": "132 MB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

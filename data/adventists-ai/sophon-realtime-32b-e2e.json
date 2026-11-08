@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "adventists-ai/Sophon-Realtime-32B-E2E",
+  "slug": "adventists-ai-sophon-realtime-32b-e2e",
+  "author": "adventists-ai",
+  "url": "https://huggingface.co/adventists-ai/Sophon-Realtime-32B-E2E",
+  "created_at": "2026-11-08T07:24:00.000Z",
+  "updated_at": "2026-11-08T07:49:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "sophon-realtime",
+    "full-duplex",
+    "speech-to-speech",
+    "voice-agent",
+    "paralinguistics",
+    "expressive-speech",
+    "duplexjev",
+    "audio-to-audio",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78999268294,
+  "storage_human": "79.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - adventists-ai/sophon-realtime: Sophon-Realtime v1: open full ...",
+      "url": "https://github.com/adventists-ai/sophon-realtime",
+      "snippet": "Sophon-Realtime v1 is an open full-duplex voice model: it listens while you talk, hears how you say things, and answers with a voice that carries tone of its own. 🚀 Coming soon. Weights, code and docs go live on November 9, 2026 at 10:00 Beijing time (13:00 Melbourne · Nov 8, 18:00 San Francisco). ⭐ Star this repo, or Watch → Custom → Releases, to be notified the moment it's out."
+    }
+  ]
+}

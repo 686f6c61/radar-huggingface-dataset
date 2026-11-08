@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "introvoyz04/Cosmos-Reason2-32B",
+  "slug": "introvoyz04-cosmos-reason2-32b",
+  "author": "introvoyz04",
+  "url": "https://huggingface.co/introvoyz04/Cosmos-Reason2-32B",
+  "created_at": "2026-11-08T07:22:19.000Z",
+  "updated_at": "2026-11-08T07:22:20.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "safetensors",
+    "qwen3_vl",
+    "nvidia",
+    "conversational",
+    "image-text-to-text",
+    "arxiv:2503.06800",
+    "arxiv:2406.10721",
+    "arxiv:2603.18178",
+    "arxiv:2312.14115",
+    "base_model:Qwen/Qwen3-VL-32B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-32B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33357390064,
+  "parameters_human": "33.36B",
+  "storage_bytes": 66715385913,
+  "storage_human": "66.7 GB",
+  "base_model": "Qwen/Qwen3-VL-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/Cosmos-Reason2-32B · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Cosmos-Reason2-32B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cosmos-Reason2 — Cosmos - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/cosmos/latest/reason2/index.html",
+      "snippet": "Cosmos-Reason2 # Cosmos-Reason2 is an open , customizable, reasoning vision language model (VLM) for physical AI and robotics. It enables robots and vision AI agents to reason like humans, using prior knowledge, physics understanding, and common sense to understand and act in the real world."
+    }
+  ]
+}

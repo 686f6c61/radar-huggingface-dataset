@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Nemoties-ChatML-12B-GGUF",
+  "slug": "mradermacher-nemoties-chatml-12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Nemoties-ChatML-12B-GGUF",
+  "created_at": "2025-02-22T05:55:46.000Z",
+  "updated_at": "2026-11-08T09:16:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:nbeerbower/Nemoties-ChatML-12B",
+    "base_model:quantized:nbeerbower/Nemoties-ChatML-12B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692286528,
+  "storage_human": "84.7 GB",
+  "base_model": "nbeerbower/Nemoties-ChatML-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Nemoties-ChatML-12B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Nemoties-ChatML-12B-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/nemo-12b-instruct-creative-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/nemo-12b-instruct-creative-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/Confucius4-R2T2-LiteRT",
+  "slug": "mlboydaisuke-confucius4-r2t2-litert",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/Confucius4-R2T2-LiteRT",
+  "created_at": "2026-10-02T06:15:50.000Z",
+  "updated_at": "2026-11-08T07:34:53.000Z",
+  "license": "netease-model-use-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "litert-lm",
+  "languages": [
+    "zh",
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "asr",
+    "speech-recognition",
+    "streaming",
+    "audio",
+    "qwen3-asr",
+    "automatic-speech-recognition",
+    "zh",
+    "en",
+    "ja",
+    "base_model:netease-youdao/Confucius4-R2T2",
+    "base_model:quantized:netease-youdao/Confucius4-R2T2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 153,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2693934084,
+  "storage_human": "2.7 GB",
+  "base_model": "netease-youdao/Confucius4-R2T2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/Confucius4-R2T2-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/Confucius4-R2T2-LiteRT",
+      "snippet": "Confucius4-R2T2 is NetEase Youdao's streaming speech recognition model, built on Qwen3-ASR-1.7B (2.04 B parameters). A 24-layer audio encoder feeds a 28-layer Qwen3 language model, which writes language <name><asr_text><transcript>. The model is optimized for Chinese and English and lists 30 languages. Its streaming mode re-reads the audio received so far at every chunk and continues from the ..."
+    },
+    {
+      "title": "netease-youdao/Confucius4-R2T2 · Hugging Face",
+      "url": "https://huggingface.co/netease-youdao/Confucius4-R2T2",
+      "snippet": "Confucius4-R2T2 is a low-latency and high-accuracy true streaming Automatic Speech Recognition (ASR) model that features fine-grained and configurable decoding chunks from 80 ms to 2 s. The model operates in append-only output mode: committing transcript text permanently without revising previous ..."
+    }
+  ]
+}

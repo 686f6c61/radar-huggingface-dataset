@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "PiterQ/bge-reranker-v2-m3-ONNX-int8",
+  "slug": "piterq-bge-reranker-v2-m3-onnx-int8",
+  "author": "PiterQ",
+  "url": "https://huggingface.co/PiterQ/bge-reranker-v2-m3-ONNX-int8",
+  "created_at": "2026-11-08T06:28:20.000Z",
+  "updated_at": "2026-11-08T06:28:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "onnx",
+    "xlm-roberta",
+    "reranker",
+    "ONNX",
+    "text-classification",
+    "multilingual",
+    "base_model:BAAI/bge-reranker-v2-m3",
+    "base_model:quantized:BAAI/bge-reranker-v2-m3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 852046773,
+  "storage_human": "852 MB",
+  "base_model": "BAAI/bge-reranker-v2-m3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bge-reranker-v2-m3 API (CPU, ONNX int8) - GitHub",
+      "url": "https://github.com/rahulnitb/bge-reranker-api/tree/main/",
+      "snippet": "A FastAPI service that reranks documents against a query using BAAI/bge-reranker-v2-m3, served on port 8901. It runs on CPU and supports three backends: PyTorch, ONNX fp32 and ONNX int8 (default, fastest). Few measured requests per cell, so treat these as indicative. Qwen3-Reranker is an LLM with a ..."
+    },
+    {
+      "title": "bge-reranker-v2-m3 API (CPU, ONNX int8) - GitHub",
+      "url": "https://github.com/rahulnitb/bge-reranker-api",
+      "snippet": "The model is released by BAAI under its own license; see the model card. CPU reranking API for BAAI/bge-reranker-v2-m3 with ONNX int8 quantization and latency benchmarks"
+    }
+  ]
+}

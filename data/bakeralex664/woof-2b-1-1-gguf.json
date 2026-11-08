@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "bakeralex664/woof-2B-1.1-GGUF",
+  "slug": "bakeralex664-woof-2b-1-1-gguf",
+  "author": "bakeralex664",
+  "url": "https://huggingface.co/bakeralex664/woof-2B-1.1-GGUF",
+  "created_at": "2026-11-08T06:03:01.000Z",
+  "updated_at": "2026-11-08T06:03:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "mirror",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1561318432,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ConwayResearch/woof-2B-1.1-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/ConwayResearch/woof-2B-1.1-GGUF/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ConwayResearch/woof-2B-1.1-GGUF · Discussions - Hugging Face",
+      "url": "https://huggingface.co/ConwayResearch/woof-2B-1.1-GGUF/discussions",
+      "snippet": "ConwayResearch / woof-2B-1.1-GGUF Like 0 Follow Conway 228 Text Generation GGUF English llama.cpp fine-tuned conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

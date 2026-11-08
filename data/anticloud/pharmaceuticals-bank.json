@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Anticloud/pharmaceuticals-bank",
+  "slug": "anticloud-pharmaceuticals-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/pharmaceuticals-bank",
+  "created_at": "2026-11-08T10:55:13.000Z",
+  "updated_at": "2026-11-08T10:55:19.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:pharmaceuticals",
+    "harness:boltz-cli",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AML AI overview | Anti Money Laundering AI - Google Cloud",
+      "url": "https://docs.cloud.google.com/financial-services/anti-money-laundering/docs/concepts/overview",
+      "snippet": "Google Cloud's Anti Money Laundering AI (AML AI) product is an API that scores AML risk. Use it to identify more risk, more defensibly, with fewer false positives and reduced time per review. This API: Generates monthly risk scores for retail and commercial banking customers Is designed to meet model governance requirements"
+    }
+  ]
+}

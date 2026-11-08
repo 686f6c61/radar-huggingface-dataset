@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "SeeSee21/LTX-See-Motion",
+  "slug": "seesee21-ltx-see-motion",
+  "author": "SeeSee21",
+  "url": "https://huggingface.co/SeeSee21/LTX-See-Motion",
+  "created_at": "2026-11-08T08:48:24.000Z",
+  "updated_at": "2026-11-08T08:59:05.000Z",
+  "license": "ltx-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "ltx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ltx",
+    "image-to-video",
+    "video-generation",
+    "ltx-2.3",
+    "comfyui",
+    "checkpoint",
+    "nsfw",
+    "en",
+    "base_model:Lightricks/LTX-2.3",
+    "base_model:merge:Lightricks/LTX-2.3",
+    "license:other",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197119822,
+  "storage_human": "197 MB",
+  "base_model": "Lightricks/LTX-2.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LTX See Motion - v1 - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/1020948864728838115",
+      "snippet": "Download LTX See Motion - free CHECKPOINT LTX-2_3 AI model on TENSOR. By mrdion"
+    },
+    {
+      "title": "SeeSee21 (Sebastian) - Hugging Face",
+      "url": "https://huggingface.co/SeeSee21",
+      "snippet": "👋 Welcome to my profile! I’m currently working on several AI-related projects, including optimized checkpoints, streamlined workflows, and custom LoRAs. I also enjoy creating AI-generated images ..."
+    }
+  ]
+}

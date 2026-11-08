@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "kadir3333/karizma",
+  "slug": "kadir3333-karizma",
+  "author": "kadir3333",
+  "url": "https://huggingface.co/kadir3333/karizma",
+  "created_at": "2026-11-08T07:35:34.000Z",
+  "updated_at": "2026-11-08T07:35:34.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KA RI Zma (@karizma_model) • Instagram photos and videos",
+      "url": "https://www.instagram.com/karizma_model/",
+      "snippet": "8,450 Followers, 4,755 Following, 207 Posts - KA RI Zma (@karizma_model) on Instagram: \"@studio_riyadh_karizma Professional fashion model Creative Director. &photographer🇪🇬🇸🇦\""
+    },
+    {
+      "title": "Karizma · Free AI Chatbot",
+      "url": "https://miniapps.ai/karizma",
+      "snippet": "Chat with Karizma. Algerian engineering student, minimalist speaker, Islamic worldview, curious polymath. Try this and more free AI and ChatGPT tools and chatbots on miniapps.ai!"
+    },
+    {
+      "title": "Karizma",
+      "url": "https://karizma.ai/",
+      "snippet": "Showcase your workplace with impactful videos Karizma's app streamlines the hiring process by letting employers scroll through candidate profiles, review their CVs and experience, and connect via the messaging feature. This creates a seamless experience for both employers and candidates, enabling effective recruitment for the best job matches."
+    },
+    {
+      "title": "Chat with Karizma | character.ai | Personalized AI for every moment of ...",
+      "url": "https://character.ai/character/dN4Z8pY8/karizma-fashion-beauty-lifestyle",
+      "snippet": "Karizma is a charming and confident AI character, known for her captivating conversations. She excels in providing engaging …"
+    }
+  ]
+}

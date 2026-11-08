@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "tomoniyukiwo/RAG-encoder-Qwen",
+  "slug": "tomoniyukiwo-rag-encoder-qwen",
+  "author": "tomoniyukiwo",
+  "url": "https://huggingface.co/tomoniyukiwo/RAG-encoder-Qwen",
+  "created_at": "2026-11-08T04:30:32.000Z",
+  "updated_at": "2026-11-08T04:32:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "rag",
+    "ja",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 595776512,
+  "parameters_human": "595.8M",
+  "storage_bytes": 1203010117,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RAG (Retrieval-Augmented Generation) | Qwen Agent",
+      "url": "https://qwenlm.github.io/Qwen-Agent/en/guide/core_moduls/rag/",
+      "snippet": "Documentation for Qwen Agent: an open-source AI agent framework. Learn installation, agent usage, tool integration, LLM configuration, and best practices."
+    },
+    {
+      "title": "tomoniyukiwo/RAG-llm-Qwen · Hugging Face",
+      "url": "https://huggingface.co/tomoniyukiwo/RAG-llm-Qwen",
+      "snippet": "tomoniyukiwo / RAG-llm-Qwen Like 0 Model card FilesFiles and versions xet Community Copy to bucket No model card Downloads last month -"
+    }
+  ]
+}

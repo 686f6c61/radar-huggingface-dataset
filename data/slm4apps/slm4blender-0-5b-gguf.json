@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "slm4apps/slm4blender-0.5b-GGUF",
+  "slug": "slm4apps-slm4blender-0-5b-gguf",
+  "author": "slm4apps",
+  "url": "https://huggingface.co/slm4apps/slm4blender-0.5b-GGUF",
+  "created_at": "2026-11-08T06:36:09.000Z",
+  "updated_at": "2026-11-08T06:39:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "blender",
+    "3d",
+    "tool-calling",
+    "llama.cpp",
+    "small-language-model",
+    "offline",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2932736,
+  "parameters_human": "2.9M",
+  "storage_bytes": 1465824928,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Blender scene generation from a text request",
+      "dataset": "SLM4Blender 180-request benchmark",
+      "metric": "full-scene pass %",
+      "value": 19.4
+    },
+    {
+      "task": "Blender scene generation from a text request",
+      "dataset": "SLM4Blender 180-request benchmark",
+      "metric": "usable scene %",
+      "value": 77.2
+    }
+  ],
+  "sources": []
+}

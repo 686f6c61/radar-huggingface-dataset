@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jsantillana/gemma-4-31B-it-GGUF",
+  "slug": "jsantillana-gemma-4-31b-it-gguf",
+  "author": "jsantillana",
+  "url": "https://huggingface.co/jsantillana/gemma-4-31B-it-GGUF",
+  "created_at": "2026-11-08T06:45:21.000Z",
+  "updated_at": "2026-11-08T07:02:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "gemma",
+    "gemma-4",
+    "dense",
+    "abliterated",
+    "llama.cpp",
+    "quantized",
+    "red-teaming",
+    "cybersecurity",
+    "text-generation",
+    "en",
+    "es",
+    "base_model:jsantillana/gemma-4-31B-it-abliterated",
+    "base_model:quantized:jsantillana/gemma-4-31B-it-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 66609851712,
+  "storage_human": "66.6 GB",
+  "base_model": "jsantillana/gemma-4-31B-it-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-31B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models' architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "unsloth/gemma-4-31B-it-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/gemma-4-31B-it-GGUF",
+      "snippet": "Benefits At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    }
+  ]
+}

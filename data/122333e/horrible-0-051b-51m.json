@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "122333e/horrible-0.051B-51M",
+  "slug": "122333e-horrible-0-051b-51m",
+  "author": "122333e",
+  "url": "https://huggingface.co/122333e/horrible-0.051B-51M",
+  "created_at": "2026-11-08T09:03:15.000Z",
+  "updated_at": "2026-11-08T09:47:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "onnx",
+    "small",
+    "text-generation",
+    "endpoints_compatible",
+    "region:us",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51475968,
+  "parameters_human": "51.5M",
+  "storage_bytes": 367291426,
+  "storage_human": "367 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

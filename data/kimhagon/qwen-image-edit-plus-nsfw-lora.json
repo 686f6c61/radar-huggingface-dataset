@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "kimhagon/qwen-image-edit-plus-nsfw-lora",
+  "slug": "kimhagon-qwen-image-edit-plus-nsfw-lora",
+  "author": "kimhagon",
+  "url": "https://huggingface.co/kimhagon/qwen-image-edit-plus-nsfw-lora",
+  "created_at": "2026-11-08T06:46:58.000Z",
+  "updated_at": "2026-11-08T06:46:58.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "nsfw",
+    "image-editing",
+    "qwen-image-edit",
+    "not-for-all-audiences",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2511",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 590058864,
+  "storage_human": "590 MB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ScottzillaSystems/qwen-image-edit-plus-nsfw-lora · Hugging Face",
+      "url": "https://huggingface.co/ScottzillaSystems/qwen-image-edit-plus-nsfw-lora",
+      "snippet": "Image-to-Image model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "ScottzillaSystems/qwen-image-edit-plus-nsfw-lora",
+      "url": "https://www.syncdev.com/models/hf-scottzillasystems-qwen-image-edit-plus-nsfw-lora",
+      "snippet": "Its recorded tags include diffusers, lora, text-to-image, nsfw, image-editing, qwen-image-edit, not-for-all-audiences, image-to-image. These source details are retained so readers can trace this directory entry back to the repository instead of relying on copied descriptions."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "byoussef/whisper-large-v2-AiHub",
+  "slug": "byoussef-whisper-large-v2-aihub",
+  "author": "byoussef",
+  "url": "https://huggingface.co/byoussef/whisper-large-v2-AiHub",
+  "created_at": "2023-03-23T13:58:50.000Z",
+  "updated_at": "2026-11-08T08:30:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 1543304960,
+  "parameters_human": "1.54B",
+  "storage_bytes": 43215456963,
+  "storage_human": "43.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "byoussef/whisper-large-v2-AiHub at main - Hugging Face",
+      "url": "https://huggingface.co/byoussef/whisper-large-v2-AiHub/tree/main",
+      "snippet": "Notebooks main whisper-large-v2-AiHub 6.18 GB Ctrl+K Ctrl+K 1 contributor History:16 commits byoussef Training in progress, step 6000 1931b52 over 3 years ago runsTraining in progress, step 6000over 3 years ago .gitattributes Safe 1.48 kBinitial commitover 3 years ago .gitignore Safe 13 BytesTraining in progress, step 1000over 3 years ago README.md Safe 1.76 kBupdate model card README.mdover 3 ..."
+    },
+    {
+      "title": "openai/whisper-large-v2 · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-large-v2",
+      "snippet": "Automatic Speech Recognition model with 2B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

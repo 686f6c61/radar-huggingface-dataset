@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Username1008/duckgpt-esper3-q4km",
+  "slug": "username1008-duckgpt-esper3-q4km",
+  "author": "Username1008",
+  "url": "https://huggingface.co/Username1008/duckgpt-esper3-q4km",
+  "created_at": "2026-11-08T05:53:40.000Z",
+  "updated_at": "2026-11-08T05:55:43.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "duckgpt",
+    "llama.cpp",
+    "base_model:deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "base_model:quantized:deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5027782784,
+  "storage_human": "5.0 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "rishabh-rishuu/Ultron-The-best-model",
+  "slug": "rishabh-rishuu-ultron-the-best-model",
+  "author": "rishabh-rishuu",
+  "url": "https://huggingface.co/rishabh-rishuu/Ultron-The-best-model",
+  "created_at": "2026-11-08T07:05:01.000Z",
+  "updated_at": "2026-11-08T07:05:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "causal-lm",
+    "pytorch",
+    "text-generation",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 129000192,
+  "parameters_human": "129.0M",
+  "storage_bytes": 605249712,
+  "storage_human": "605 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

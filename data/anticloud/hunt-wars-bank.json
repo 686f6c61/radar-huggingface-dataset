@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/hunt-wars-bank",
+  "slug": "anticloud-hunt-wars-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/hunt-wars-bank",
+  "created_at": "2026-11-08T10:55:29.000Z",
+  "updated_at": "2026-11-08T10:55:31.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:hunt-wars",
+    "harness:swe-agent",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open-Source AI Agent Hacked Seven South Korean Banks, Exposing 65,000 ...",
+      "url": "https://www.techtimes.com/articles/328541/20261005/open-source-ai-agent-hacked-seven-south-korean-banks-exposing-65000-records.htm",
+      "snippet": "South Korea bank hack AI: An open-source autonomous hacking tool called ARTEX AI used credential stuffing to breach seven South Korean financial institutions in late September 2026, exposing more ..."
+    },
+    {
+      "title": "Chinese Hackers Use AI Agents in Multi-Country Cyber Campaign",
+      "url": "https://securityaffairs.com/198417/ai/chinese-hackers-use-ai-agents-in-multi-country-cyber-campaign.html",
+      "snippet": "Hunt.io uncovered a Chinese-speaking campaign using AI agents to automate cyberattacks against Asian government, education and industrial targets."
+    }
+  ]
+}

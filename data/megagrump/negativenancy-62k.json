@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "megagrump/NegativeNancy-62K",
+  "slug": "megagrump-negativenancy-62k",
+  "author": "megagrump",
+  "url": "https://huggingface.co/megagrump/NegativeNancy-62K",
+  "created_at": "2026-11-08T11:09:58.000Z",
+  "updated_at": "2026-11-08T11:12:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "tiny",
+    "satire",
+    "refusal",
+    "deterministic",
+    "not-a-safety-system",
+    "text-generation",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 62144,
+  "parameters_human": "62144",
+  "storage_bytes": 254336,
+  "storage_human": "254336 B",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "megagrump (P. Murgagem) - Hugging Face",
+      "url": "https://huggingface.co/megagrump/models",
+      "snippet": "megagrump's models1 Sort: Recently updated megagrump/Ace-Step-1.5-ScragVAE-ComfyUI Audio-to-Audio •Updated May 14• 859 • 6"
+    }
+  ]
+}

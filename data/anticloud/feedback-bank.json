@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/feedback-bank",
+  "slug": "anticloud-feedback-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/feedback-bank",
+  "created_at": "2026-11-08T10:51:32.000Z",
+  "updated_at": "2026-11-08T10:51:34.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:feedback",
+    "harness:codex-cli",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ANTICLOUD.AI",
+      "url": "https://anticloud.ai/",
+      "snippet": "Notes Encrypted Markdown notes, kept in your browser or at your own mailbox."
+    },
+    {
+      "title": "What AI Actually Does in Bank Fraud Detection (Part 1): The ...",
+      "url": "https://blogs.getsetlive.com/ai-fraud-detection-banking-architecture/",
+      "snippet": "How real-time AI fraud detection works inside a bank: Kafka, Flink, a three-model ensemble, the analyst queue, and why step-up authentication matters."
+    }
+  ]
+}

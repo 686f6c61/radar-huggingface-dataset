@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/etc-meta-orchestration-bank",
+  "slug": "anticloud-etc-meta-orchestration-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/etc-meta-orchestration-bank",
+  "created_at": "2026-11-08T10:59:37.000Z",
+  "updated_at": "2026-11-08T10:59:39.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:etc-meta-orchestration",
+    "harness:swe-agent",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic’s New AI Model Puts Banking Sector on Alert — Here’s Why",
+      "url": "https://www.outlookbusiness.com/deeptech/tech/anthropic-ai-model-banking-sector-cybersecurity-alert",
+      "snippet": "The International Monetary Fund (IMF) warned the finance industry stating that Anthropic’s recent controlled release of its Claude Mythos Preview, an advanced AI model with exceptional cyber capabilities. It can speed up finding and exploiting weaknesses in software."
+    },
+    {
+      "title": "The AI Orchestration Layer: Why Banks Need a New Operating System.",
+      "url": "https://medium.com/@marcomizzau/the-ai-orchestration-layer-why-banks-need-a-new-operating-system-3785cc00b43c",
+      "snippet": "Artificial intelligence is not becoming the operating system of financial institutions. It is creating the need for a new operating system. As banks move from isolated AI models to networks of ..."
+    }
+  ]
+}

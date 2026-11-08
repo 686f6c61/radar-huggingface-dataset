@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "nexside/nastia-video",
+  "slug": "nexside-nastia-video",
+  "author": "nexside",
+  "url": "https://huggingface.co/nexside/nastia-video",
+  "created_at": "2026-10-30T15:51:00.000Z",
+  "updated_at": "2026-11-08T08:58:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 14288901184,
+  "parameters_human": "14.29B",
+  "storage_bytes": 188018122577,
+  "storage_human": "188.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Access the image & video generator on Nastia",
+      "url": "https://www.nastia.ai/help/image-and-video-generator",
+      "snippet": "How to find and use the standalone image generator, video generator, and advanced prompt panel in the Nastia app."
+    },
+    {
+      "title": "Top No Limit AI Chatbots for 2026 - insights.terabox.com",
+      "url": "https://insights.terabox.com/hub/how-to-find-and-use-top-rated-no-limit-ai-chatbots-without-restrictions",
+      "snippet": "Quick Summary: A \"no limit\" AI chatbot is a model that operates without standard safety filters, allowing for unrestricted creative writing and roleplay. As of 2026, top choices include Nastia.ai for deep character memory, Unrestricted.chat for anonymous sessions, and Sigma Browser for local privacy. For total freedom, many users are now migrating to local hosting via Ollama to run uncensored ..."
+    }
+  ]
+}

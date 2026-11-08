@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "quasar529/uno-qwen3-8b-bidir-block32-tv-ce10",
+  "slug": "quasar529-uno-qwen3-8b-bidir-block32-tv-ce10",
+  "author": "quasar529",
+  "url": "https://huggingface.co/quasar529/uno-qwen3-8b-bidir-block32-tv-ce10",
+  "created_at": "2026-11-08T08:23:16.000Z",
+  "updated_at": "2026-11-08T08:28:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "uno",
+    "diffusion",
+    "lora",
+    "research",
+    "en",
+    "base_model:s-sahoo/uno-qwen3-8B",
+    "base_model:adapter:s-sahoo/uno-qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1396780248,
+  "storage_human": "1.4 GB",
+  "base_model": "s-sahoo/uno-qwen3-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "Text Generation model with 8B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "s-sahoo/uno-qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/s-sahoo/uno-qwen3-8B",
+      "snippet": "This repository is a self-contained inference bundle for Uno-Qwen3-8B. The frozen verifier/base checkpoint is stored at the repository root, and the rank-128 gated LoRA adapter used for noisy draft rows is stored under adapter/."
+    }
+  ]
+}

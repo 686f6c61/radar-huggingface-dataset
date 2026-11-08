@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Machang-Doniel/bengali-pp-ocrv6-nid",
+  "slug": "machang-doniel-bengali-pp-ocrv6-nid",
+  "author": "Machang-Doniel",
+  "url": "https://huggingface.co/Machang-Doniel/bengali-pp-ocrv6-nid",
+  "created_at": "2026-11-08T09:24:38.000Z",
+  "updated_at": "2026-11-08T09:45:08.000Z",
+  "license": "proprietary-restricted",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "onnx",
+    "paddlepaddle",
+    "ocr",
+    "paddleocr",
+    "pp-ocrv6",
+    "bangla-ocr",
+    "nid-ocr",
+    "document-ai",
+    "bn",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83303655,
+  "storage_human": "83 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PP-OCRv6 Introduction - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/latest/en/version3.x/algorithm/PP-OCRv6/PP-OCRv6.html",
+      "snippet": "PP-OCRv6 is the latest generation of the PP-OCR universal text recognition solution. Built on the newly designed PPLCNetV4 unified backbone, it offers tiny, small, and medium tiers targeting edge/IoT, mobile/desktop, and server scenarios respectively."
+    },
+    {
+      "title": "PaddleOCR/docs/version3.x/algorithm/PP-OCRv6/PP-OCRv6.en.md at ... - GitHub",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR/blob/main/docs/version3.x/algorithm/PP-OCRv6/PP-OCRv6.en.md",
+      "snippet": "PP-OCRv6 achieves a major breakthrough in language coverage—the medium/small tiers support 50 languages with a single unified model, including Simplified Chinese, Traditional Chinese, English, Japanese, and 46 Latin-script languages (tiny supports 49, excluding Japanese)."
+    }
+  ]
+}

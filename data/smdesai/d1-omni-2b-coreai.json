@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "smdesai/d1-omni-2B-CoreAI",
+  "slug": "smdesai-d1-omni-2b-coreai",
+  "author": "smdesai",
+  "url": "https://huggingface.co/smdesai/d1-omni-2B-CoreAI",
+  "created_at": "2026-11-08T04:44:15.000Z",
+  "updated_at": "2026-11-08T04:52:25.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreai",
+    "ios",
+    "multimodal",
+    "classification",
+    "base_model:LiquidAI/d1-Omni-2B",
+    "base_model:finetune:LiquidAI/d1-Omni-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7662456663,
+  "storage_human": "7.7 GB",
+  "base_model": "LiquidAI/d1-Omni-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "d1-omni-2B - Liquid AI Docs",
+      "url": "https://docs.liquid.ai/lfm/models/d1-omni-2b",
+      "snippet": "← Back to Decision Models d1-omni-2B is a 2.17B parameter decision model for text, pictures, and audio, built on LFM3-Omni-2B. It returns calibrated answers in one forward pass, without generating tokens. Clips and spoken questions go through the same pass as text and pictures, so a voice request can be routed, checked, or answered just like a typed one."
+    },
+    {
+      "title": "LiquidAI/d1-Omni-2B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/d1-Omni-2B",
+      "snippet": "d1-Omni-2B d1-Omni-2B is a decision model for text, pictures, and audio, built on LFM3-Omni-2B. It returns calibrated answers in one forward pass, without generating tokens."
+    }
+  ]
+}

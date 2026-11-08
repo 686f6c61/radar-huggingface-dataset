@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/customer-service-bank",
+  "slug": "anticloud-customer-service-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/customer-service-bank",
+  "created_at": "2026-11-08T10:59:20.000Z",
+  "updated_at": "2026-11-08T10:59:21.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:customer-service",
+    "harness:openhands",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI in Banking Customer Service: Complete Guide (2026)",
+      "url": "https://www.rezo.ai/our-blogs/ai-in-banking-customer-service",
+      "snippet": "The Current State of AI in Banking Customer Service The adoption of AI in banking customer service has reached a tipping point. According to industry research, 92% of banking and finance organizations now use AI models in their customer service operations."
+    },
+    {
+      "title": "25 Real AI Customer Service Examples (2026 Guide) - HelpDesk",
+      "url": "https://www.helpdesk.com/blog/ai-customer-service-examples/",
+      "snippet": "Explore real AI customer service examples, from chatbots and generative AI to agent assist and predictive analytics, plus company use cases, benefits, and how to start."
+    }
+  ]
+}

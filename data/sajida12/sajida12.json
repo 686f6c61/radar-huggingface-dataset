@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "sajida12/sajida12",
+  "slug": "sajida12-sajida12",
+  "author": "sajida12",
+  "url": "https://huggingface.co/sajida12/sajida12",
+  "created_at": "2026-11-08T07:16:49.000Z",
+  "updated_at": "2026-11-08T07:17:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 499098240,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sajida12 - YouTube",
+      "url": "https://www.youtube.com/@Sajidaprvin",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "sajida12/wikiann · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/sajida12/wikiann",
+      "snippet": "Dataset. Explore, preview and download it on Hugging Face."
+    }
+  ]
+}

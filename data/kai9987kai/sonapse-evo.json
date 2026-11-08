@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Kai9987kai/sonapse-evo",
+  "slug": "kai9987kai-sonapse-evo",
+  "author": "Kai9987kai",
+  "url": "https://huggingface.co/Kai9987kai/sonapse-evo",
+  "created_at": "2026-11-08T09:45:26.000Z",
+  "updated_at": "2026-11-08T09:45:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuromorphic",
+    "connectome",
+    "causal-learning",
+    "neural-grafting",
+    "continual-learning",
+    "pytorch",
+    "autonomous-repair",
+    "recurrent-neural-networks",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kai9987kai (Kai piper) - Hugging Face",
+      "url": "https://huggingface.co/Kai9987kai/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 28 days ago ... published a model 28 days ago ... updated a dataset 3 months ago"
+    },
+    {
+      "title": "Kai9987kai (Kai piper) - Hugging Face",
+      "url": "https://huggingface.co/Kai9987kai",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago ... updated a dataset 3 months ago"
+    }
+  ]
+}

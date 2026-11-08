@@ -5,7 +5,7 @@
   "author": "SXY7",
   "url": "https://huggingface.co/SXY7/X-VLA-Piper-nesting_3dolls",
   "created_at": "2026-11-05T07:33:00.000Z",
-  "updated_at": "2026-11-07T01:59:10.000Z",
+  "updated_at": "2026-11-07T07:19:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 168891794800,
-  "storage_human": "168.9 GB",
+  "storage_bytes": 190003246526,
+  "storage_human": "190.0 GB",
   "base_model": "2toINF/X-VLA-Pt",
   "formats": [
     "safetensors"

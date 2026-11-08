@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "id": "BRR1154/INTRIQ-SmolLM2-135M-Instruct",
+  "slug": "brr1154-intriq-smollm2-135m-instruct",
+  "author": "BRR1154",
+  "url": "https://huggingface.co/BRR1154/INTRIQ-SmolLM2-135M-Instruct",
+  "created_at": "2026-11-08T08:09:18.000Z",
+  "updated_at": "2026-11-08T08:14:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "multi-turn",
+    "code-generation",
+    "weight-edited",
+    "random-matrix-theory",
+    "promptfoo",
+    "smollm2",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538090408,
+  "storage_human": "538 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "ARC Easy",
+      "metric": "Accuracy",
+      "value": 50
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ARC Easy",
+      "metric": "Normalized Accuracy",
+      "value": 44
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ARC Challenge",
+      "metric": "Accuracy",
+      "value": 26
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ARC Challenge",
+      "metric": "Normalized Accuracy",
+      "value": 26
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag",
+      "metric": "Accuracy",
+      "value": 44
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag",
+      "metric": "Normalized Accuracy",
+      "value": 44
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "OpenBookQA",
+      "metric": "Accuracy",
+      "value": 16
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "OpenBookQA",
+      "metric": "Normalized Accuracy",
+      "value": 38
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "WinoGrande",
+      "metric": "Accuracy",
+      "value": 52
+    }
+  ],
+  "sources": [
+    {
+      "title": "SmolLM2-135M-Instruct Tutorial: Run LLMs Locally — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-smollm2-135m-instruct-run-a-capable-llm-on-any-device",
+      "snippet": "Install Transformers and run SmolLM2-135M-Instruct locally to generate a text answer from a prompt."
+    },
+    {
+      "title": "HuggingFaceTB/SmolLM2-135M-Instruct · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct",
+      "snippet": "Text Generation model with 0.1B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

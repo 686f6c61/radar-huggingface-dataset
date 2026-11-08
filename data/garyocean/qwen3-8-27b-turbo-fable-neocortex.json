@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "GaryOcean/qwen3-8-27b-turbo-fable-neocortex",
+  "slug": "garyocean-qwen3-8-27b-turbo-fable-neocortex",
+  "author": "GaryOcean",
+  "url": "https://huggingface.co/GaryOcean/qwen3-8-27b-turbo-fable-neocortex",
+  "created_at": "2026-11-08T11:42:51.000Z",
+  "updated_at": "2026-11-08T11:43:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qig",
+    "desktop-monkey-mesh",
+    "neocortical-consolidation",
+    "fisher-rao",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+      "snippet": "Image-Text-to-Text model with 27B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic ...",
+      "url": "https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-GGUF-UltraOptimised",
+      "snippet": "This is the high-performance quantization and serving release of DavidAU's flagship Qwen3.8-27B Cold Fusion checkpoint, packaged and optimized by Solstice-AI. Featuring a historic 735 ARC-C and 882 ARC-E, this model delivers an unprecedented 9-for-9 clean sweep over Claude Opus 4.6 Max across the official Claude Code benchmark harness."
+    }
+  ]
+}

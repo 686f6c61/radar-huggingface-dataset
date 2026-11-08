@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "viranshul/terrascan-efficientnet-b0-india",
+  "slug": "viranshul-terrascan-efficientnet-b0-india",
+  "author": "viranshul",
+  "url": "https://huggingface.co/viranshul/terrascan-efficientnet-b0-india",
+  "created_at": "2026-11-08T10:43:25.000Z",
+  "updated_at": "2026-11-08T10:50:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "remote-sensing",
+    "satellite-imagery",
+    "sentinel-2",
+    "land-use",
+    "eurosat",
+    "domain-shift",
+    "india",
+    "image-classification",
+    "dataset:viranshul/terrascan-india-gujarat",
+    "arxiv:1905.11946",
+    "base_model:timm/efficientnet_b0.ra_in1k",
+    "base_model:quantized:timm/efficientnet_b0.ra_in1k",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32412882,
+  "storage_human": "32 MB",
+  "base_model": "timm/efficientnet_b0.ra_in1k",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "viranshul (Viranshul Panchal) – Datasets - Hugging Face",
+      "url": "https://huggingface.co/viranshul/datasets",
+      "snippet": "viranshul's datasets1 Sort: Recently updated viranshul/terrascan-india-gujarat Viewer •Updated about 6 hours ago•230• 154"
+    },
+    {
+      "title": "viranshul/terrascan-india-gujarat · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/viranshul/terrascan-india-gujarat",
+      "snippet": "Dataset with 230 rows (Image, Text). Explore, preview and download it on Hugging Face."
+    }
+  ]
+}

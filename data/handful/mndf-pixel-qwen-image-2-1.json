@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "handful/mndf-pixel-qwen-image-2.1",
+  "slug": "handful-mndf-pixel-qwen-image-2-1",
+  "author": "handful",
+  "url": "https://huggingface.co/handful/mndf-pixel-qwen-image-2.1",
+  "created_at": "2026-11-08T10:59:25.000Z",
+  "updated_at": "2026-11-08T11:01:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "image-to-image",
+    "pixel-art",
+    "isometric",
+    "map",
+    "qwen-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33589528,
+  "storage_human": "34 MB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "handful - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/handful",
+      "snippet": "Dans les listes : Words ending in \"ful\", Vocabulaire , H, Suite... Synonymes : couple, few, modicum, smattering, small quantity, …"
+    },
+    {
+      "title": "Qwen-Image-2.1 - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "snippet": "Text-to-Image model with 7B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "handful - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/handful.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"handful\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "Qwen-Image-2.1 - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Qwen-Image-2.1",
+      "snippet": "Qwen-Image-2.1 is an open-weight image generation and editing model developed by the Qwen team at Alibaba Cloud and released on September 20, 2026. Built around..."
+    },
+    {
+      "title": "HANDFUL | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/handful",
+      "snippet": "HANDFUL definition: 1. an amount of something that can be held in one hand: 2. a small number of people or things: 3…. Learn more."
+    }
+  ]
+}

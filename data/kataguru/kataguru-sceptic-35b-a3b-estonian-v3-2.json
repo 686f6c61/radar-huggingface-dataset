@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "kataguru/Kataguru-Sceptic-35B-A3B-Estonian-v3.2",
+  "slug": "kataguru-kataguru-sceptic-35b-a3b-estonian-v3-2",
+  "author": "kataguru",
+  "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Estonian-v3.2",
+  "created_at": "2026-11-08T06:15:48.000Z",
+  "updated_at": "2026-11-08T06:15:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "et",
+    "fi"
+  ],
+  "tags": [
+    "estonian",
+    "et",
+    "moe",
+    "qwen3_5_moe",
+    "translation",
+    "multimodal",
+    "vision",
+    "reasoning",
+    "kataguru",
+    "text-generation",
+    "en",
+    "fi",
+    "base_model:kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+    "base_model:finetune:kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kataguru-Sceptic-35B-A3B-Georgian-v3.2 - Hugging Face",
+      "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Georgian-v3.2",
+      "snippet": "Unlike conventional Continued Pre-Training (CPT) models that overwrite all parameters and degrade mathematical, scientific, and coding intelligence, Kataguru-Sceptic-35B-A3B-Georgian-v3.2 keeps all 254 core Sceptic experts (#0..#253) 100 % frozen and expands each of the 40 MoE layers from 254 -> 256 experts by adding two dedicated Georgian specialist experts (#254 and #255) alongside ..."
+    },
+    {
+      "title": "README.md · kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF at main",
+      "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF/blob/main/README.md",
+      "snippet": "LM Studio Jan vLLM How to use kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF with vLLM: Install from pip and serve model"
+    }
+  ]
+}

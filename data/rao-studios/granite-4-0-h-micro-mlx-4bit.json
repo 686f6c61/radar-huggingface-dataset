@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "rao-studios/granite-4.0-h-micro-mlx-4bit",
+  "slug": "rao-studios-granite-4-0-h-micro-mlx-4bit",
+  "author": "rao-studios",
+  "url": "https://huggingface.co/rao-studios/granite-4.0-h-micro-mlx-4bit",
+  "created_at": "2026-11-08T05:51:22.000Z",
+  "updated_at": "2026-11-08T05:51:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "granitemoehybrid",
+    "extraction",
+    "mirror",
+    "text-generation",
+    "conversational",
+    "base_model:mlx-community/granite-4.0-h-micro-4bit",
+    "base_model:quantized:mlx-community/granite-4.0-h-micro-4bit",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3191396096,
+  "parameters_human": "3.19B",
+  "storage_bytes": 1796848117,
+  "storage_human": "1.8 GB",
+  "base_model": "mlx-community/granite-4.0-h-micro-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-granite/granite-4.0-h-micro · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-4.0-h-micro",
+      "snippet": "Model Summary: Granite-4.0-H-Micro is a 3B parameter long-context instruct model finetuned from Granite-4.0-H-Micro-Base using a combination of open source instruction datasets with permissive license and internally collected synthetic datasets. This model is developed using a diverse set of techniques with a structured chat format, including supervised finetuning, model alignment using ..."
+    },
+    {
+      "title": "Granite 4.0 - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-0",
+      "snippet": "Granite 4.0 language models with a hybrid Mamba-2/transformer architecture and Mixture-of-Experts, delivering 70% lower memory use and 2× faster inference."
+    }
+  ]
+}

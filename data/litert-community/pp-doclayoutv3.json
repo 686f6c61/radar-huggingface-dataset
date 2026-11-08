@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "litert-community/PP-DocLayoutV3",
+  "slug": "litert-community-pp-doclayoutv3",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/PP-DocLayoutV3",
+  "created_at": "2026-11-08T04:38:30.000Z",
+  "updated_at": "2026-11-08T04:38:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "fp32",
+    "document-layout-analysis",
+    "reading-order",
+    "paddleocr",
+    "object-detection",
+    "arxiv:2606.23344",
+    "base_model:PaddlePaddle/PP-DocLayoutV3_safetensors",
+    "base_model:finetune:PaddlePaddle/PP-DocLayoutV3_safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133971456,
+  "storage_human": "134 MB",
+  "base_model": "PaddlePaddle/PP-DocLayoutV3_safetensors",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PP-DocLayoutV3 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.1.0/en/model_doc/pp_doclayout_v3",
+      "snippet": "PP-DocLayoutV3 is a unified and high-efficiency model designed for comprehensive layout analysis. It addresses the challenges of complex physical distortions—such as skewing, curving, and adverse lighting—by integrating instance segmentation and reading order prediction into a single, end-to-end framework."
+    },
+    {
+      "title": "Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.13.1/en/model_doc/pp_doclayout_v3.md",
+      "snippet": "# PP-DocLayoutV3 ## Overview **PP-DocLayoutV3** is a unified and high-efficiency model designed for comprehensive layout analysis. It addresses the challenges of complex physical distortions—such as skewing, curving, and adverse lighting—by integrating instance segmentation and reading order prediction into a single, end-to-end framework. ## Model Architecture PP-DocLayoutV3 evolves from a ..."
+    }
+  ]
+}

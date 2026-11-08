@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Rishitha05479/data266-lab2-sd15-lora-run1",
+  "slug": "rishitha05479-data266-lab2-sd15-lora-run1",
+  "author": "Rishitha05479",
+  "url": "https://huggingface.co/Rishitha05479/data266-lab2-sd15-lora-run1",
+  "created_at": "2026-11-08T07:00:22.000Z",
+  "updated_at": "2026-11-08T07:00:26.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lora",
+    "stable-diffusion",
+    "coursework",
+    "text-to-image",
+    "dataset:lambdalabs/naruto-blip-captions",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:adapter:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3228744,
+  "storage_human": "3 MB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "data266-lab2-charvee-018370859-lora-r16 - Hugging Face",
+      "url": "https://huggingface.co/Charvee/data266-lab2-charvee-018370859-lora-r16",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "haritha12345/data266-pokemon-sd15-lora-rank16 · Discussions",
+      "url": "https://huggingface.co/haritha12345/data266-pokemon-sd15-lora-rank16/discussions",
+      "snippet": "haritha12345 / data266-pokemon-sd15-lora-rank16 Like 0 Text-to-Image Diffusers stable-diffusion lora pokemon data266 non-commercial License:cc-by-nc-sa-4.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "agentlans/fineweb-200-tokenizer",
+  "slug": "agentlans-fineweb-200-tokenizer",
+  "author": "agentlans",
+  "url": "https://huggingface.co/agentlans/fineweb-200-tokenizer",
+  "created_at": "2026-11-08T05:10:53.000Z",
+  "updated_at": "2026-11-08T05:17:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sentencepiece",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "sentencepiece",
+    "tokenizer",
+    "bpe",
+    "multilingual",
+    "fineweb",
+    "dataset:agentlans/fineweb-200-weighted",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1040955,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "agentlans/fineweb-200-weighted · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/agentlans/fineweb-200-weighted",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "agentlans/fineweb-200-weighted at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/agentlans/fineweb-200-weighted/tree/main",
+      "snippet": "Datasets: agentlans / fineweb-200-weighted Like 0 Modalities: Tabular Text Formats: json Languages: Afrikaans Tosk Albanian Amharic + 183 Size: 100K - 1M Libraries: Datasets pandas Polars + 1 License: odc-by Dataset card Data Studio FilesFiles and versions xet Community main fineweb-200-weighted 161 MB 2 contributors History:2 commits user Upload c9c0eff about 5 hours ago .gitattributes Safe 2 ..."
+    }
+  ]
+}

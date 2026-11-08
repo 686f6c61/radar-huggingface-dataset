@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/aeronautics-col1-bank",
+  "slug": "anticloud-aeronautics-col1-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/aeronautics-col1-bank",
+  "created_at": "2026-11-08T10:50:04.000Z",
+  "updated_at": "2026-11-08T10:50:05.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:aeronautics-col1",
+    "harness:swe-agent",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anticloud (The Anticloud by Lois-Kleinner) - Hugging Face",
+      "url": "https://huggingface.co/Anticloud/datasets",
+      "snippet": "Org profile for The Anticloud by Lois-Kleinner on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Anticloud/anticloud-ai-for-beginners · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Anticloud/anticloud-ai-for-beginners",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

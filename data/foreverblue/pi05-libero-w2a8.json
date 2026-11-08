@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "ForeverBlue/pi05-libero-w2a8",
+  "slug": "foreverblue-pi05-libero-w2a8",
+  "author": "ForeverBlue",
+  "url": "https://huggingface.co/ForeverBlue/pi05-libero-w2a8",
+  "created_at": "2026-11-08T07:48:00.000Z",
+  "updated_at": "2026-11-08T07:55:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "vla",
+    "pi0.5",
+    "libero",
+    "quantization",
+    "2-bit",
+    "w2a8",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1211892870,
+  "parameters_human": "1.21B",
+  "storage_bytes": 1226391692,
+  "storage_human": "1.2 GB",
+  "base_model": "physical-intelligence/pi05_libero",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ForeverBlue (Yanlong Chen) - Hugging Face",
+      "url": "https://huggingface.co/ForeverBlue/models",
+      "snippet": "ForeverBlue/LLaVA-1.5-7B-GRACE-W4G128 Image-Text-to-Text • 7B•Updated about 14 hours ago• 52 • 1"
+    },
+    {
+      "title": "lerobot/pi05_libero_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/pi05_libero_base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

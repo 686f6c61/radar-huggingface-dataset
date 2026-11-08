@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kaban-baku/Qwen3.8-Flash-Next-UD-IQ1_M-384Exp-GGUF",
+  "slug": "kaban-baku-qwen3-8-flash-next-ud-iq1_m-384exp-gguf",
+  "author": "kaban-baku",
+  "url": "https://huggingface.co/kaban-baku/Qwen3.8-Flash-Next-UD-IQ1_M-384Exp-GGUF",
+  "created_at": "2026-11-06T18:40:19.000Z",
+  "updated_at": "2026-11-06T18:49:58.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "moe",
+    "expert-pruning",
+    "strata",
+    "unsloth",
+    "ja",
+    "en",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30440861152,
+  "storage_human": "30.4 GB",
+  "base_model": "unsloth/Qwen3.8-Flash-Next-GGUF, Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kaban-baku/Qwen3.8-Flash-Next-IQ3_S-384Exp-GGUF · Hugging Face",
+      "url": "https://huggingface.co/kaban-baku/Qwen3.8-Flash-Next-IQ3_S-384Exp-GGUF",
+      "snippet": "384Exp = 384 experts per layer, down from 512. The number of experts used per token (10) is unchanged. This is the IQ3_S file from ISTA-DASLab's Qwen3.8-Flash-Next-GSQ-RCO-GGUF with 128 experts removed from every layer. The quantized expert weights and the router rows that are kept are copied byte for byte; nothing is re-quantized."
+    }
+  ]
+}

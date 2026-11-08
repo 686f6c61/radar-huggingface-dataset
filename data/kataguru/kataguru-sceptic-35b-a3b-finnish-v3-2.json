@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "kataguru/Kataguru-Sceptic-35B-A3B-Finnish-v3.2",
+  "slug": "kataguru-kataguru-sceptic-35b-a3b-finnish-v3-2",
+  "author": "kataguru",
+  "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Finnish-v3.2",
+  "created_at": "2026-11-08T06:15:46.000Z",
+  "updated_at": "2026-11-08T06:15:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "fi"
+  ],
+  "tags": [
+    "finnish",
+    "fi",
+    "moe",
+    "qwen3_5_moe",
+    "translation",
+    "multimodal",
+    "vision",
+    "reasoning",
+    "kataguru",
+    "text-generation",
+    "en",
+    "base_model:kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+    "base_model:finetune:kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kataguru-Sceptic-35B-A3B-v3.1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v3.1-GGUF",
+      "snippet": "Image-Text-to-Text model with 35B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF at main",
+      "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF/tree/main",
+      "snippet": "kataguru / Kataguru-Sceptic-35B-A3B-v2.6-GGUF Like 0 Image-Text-to-Text GGUF English Finnish finnish uncensored multimodal vision reasoning Mixture of Experts imatrix mtp industrial-automation plc-st-scl quality-inspector data-surgeon kataguru conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to ..."
+    }
+  ]
+}

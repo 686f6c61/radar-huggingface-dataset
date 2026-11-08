@@ -5,7 +5,7 @@
   "author": "Pjiwm",
   "url": "https://huggingface.co/Pjiwm/manga-ocr-base-gguf",
   "created_at": "2026-11-07T18:46:51.000Z",
-  "updated_at": "2026-11-07T18:48:25.000Z",
+  "updated_at": "2026-11-07T18:51:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",
@@ -14,22 +14,22 @@
     "ja"
   ],
   "tags": [
+    "gguf",
     "ocr",
     "japanese",
     "manga",
-    "gguf",
     "image-to-text",
     "ja",
     "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 64,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 17681116,
-  "storage_human": "18 MB",
+  "parameters": 115731200,
+  "parameters_human": "115.7M",
+  "storage_bytes": 146652028,
+  "storage_human": "147 MB",
   "base_model": null,
   "formats": [
     "gguf"

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "zephel01/DeepSeek-V4-Flash-0731-IQ1_S-16G64G-GGUF",
+  "slug": "zephel01-deepseek-v4-flash-0731-iq1_s-16g64g-gguf",
+  "author": "zephel01",
+  "url": "https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-IQ1_S-16G64G-GGUF",
+  "created_at": "2026-11-07T00:53:38.000Z",
+  "updated_at": "2026-11-08T10:49:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ldlq",
+    "imatrix",
+    "moe",
+    "abyss",
+    "consumer-gpu",
+    "local-llm",
+    "cpu-offload",
+    "japanese",
+    "rtx-5090",
+    "16gb-vram",
+    "64gb-ram",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 284334567511,
+  "parameters_human": "284.33B",
+  "storage_bytes": 61705212448,
+  "storage_human": "61.7 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zephel01/DeepSeek-V4-Flash-0731-16G64G-GGUF · Hugging Face",
+      "url": "https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-16G64G-GGUF",
+      "snippet": "Text Generation model with 284B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "zephel01/DeepSeek-V4-Flash-0731-32G64G-GGUF · Hugging Face",
+      "url": "https://huggingface.co/zephel01/DeepSeek-V4-Flash-0731-32G64G-GGUF",
+      "snippet": "Text Generation model with 284B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

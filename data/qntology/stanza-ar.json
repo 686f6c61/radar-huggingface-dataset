@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Qntology/stanza-ar",
+  "slug": "qntology-stanza-ar",
+  "author": "Qntology",
+  "url": "https://huggingface.co/Qntology/stanza-ar",
+  "created_at": "2026-07-12T01:43:57.000Z",
+  "updated_at": "2026-11-08T11:49:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "stanza",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "stanza",
+    "onnx",
+    "token-classification",
+    "ar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1736403906,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Models - Stanza",
+      "url": "https://stanfordnlp.github.io/stanza/download_models.html",
+      "snippet": "Stanza provides pretrained NLP models for a total 70 human languages. On this page we provide detailed information on how to download these models to process text in a language of your choosing. Automatic download Pretrained models in Stanza can be divided into four categories, based on the datasets they were trained on: Universal Dependencies (UD) models, which are trained on the UD treebanks ..."
+    },
+    {
+      "title": "stanfordnlp/stanza-ar — Downloads, Growth & Stats | OpenModelStats",
+      "url": "https://openmodelstats.com/models/stanfordnlp/stanza-ar",
+      "snippet": "stanza-ar by stanfordnlp: 131.9K all-time downloads, 1,299 in the last 30 days. A token classification model. Daily download history, growth trends and ranking position, tracked and updated by OpenModelStats."
+    }
+  ]
+}

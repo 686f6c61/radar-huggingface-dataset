@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "xuan-liu/ARIES",
+  "slug": "xuan-liu-aries",
+  "author": "xuan-liu",
+  "url": "https://huggingface.co/xuan-liu/ARIES",
+  "created_at": "2026-11-08T05:03:22.000Z",
+  "updated_at": "2026-11-08T05:07:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "chemistry",
+    "enzyme",
+    "reaction-site-prediction",
+    "lora",
+    "graph-neural-network",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7464678300,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xuan-liu/ARIES · Hugging Face",
+      "url": "https://huggingface.co/xuan-liu/ARIES",
+      "snippet": "ARIES model weights ARIES predicts enzyme-conditioned reaction sites on substrate atoms using exact GROVER atom and directed-bond representations, ESM-C 6B residue representations, and a reaction-template representation. Source code, installation instructions, and the aries-inference command are available in the ARIES GitHub repository."
+    },
+    {
+      "title": "xuan-liu/ARIES-data · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/xuan-liu/ARIES-data",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

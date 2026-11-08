@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "FEGE16/robot-task-observer-subtask-recognition-history",
+  "slug": "fege16-robot-task-observer-subtask-recognition-history",
+  "author": "FEGE16",
+  "url": "https://huggingface.co/FEGE16/robot-task-observer-subtask-recognition-history",
+  "created_at": "2026-11-08T07:19:31.000Z",
+  "updated_at": "2026-11-08T07:41:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "robotics",
+    "qwen3-vl",
+    "vision-language-model",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132195448,
+  "storage_human": "132 MB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta’s best AI model now trains the one most of its users get",
+      "url": "https://thenewstack.io/meta-muse-specialized-models/",
+      "snippet": "Meta trained new models using its frontier Muse Wonder model and is shipping them to all Muse and Meta AI users today, while keeping Wonder itself for harder subscriber tasks."
+    }
+  ]
+}

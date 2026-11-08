@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "joeyAIDev/zils-lite-body-l3",
+  "slug": "joeyaidev-zils-lite-body-l3",
+  "author": "joeyAIDev",
+  "url": "https://huggingface.co/joeyAIDev/zils-lite-body-l3",
+  "created_at": "2026-11-08T11:55:27.000Z",
+  "updated_at": "2026-11-08T11:55:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "custom_code",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1719880230,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zils — miners",
+      "url": "https://zils.ai/miners",
+      "snippet": "The installer adds the zils-miner and btcli commands. zils-miner setup asks for your wallet and Hugging Face repo, then zils-miner doctor checks each step and prints the next command: register, train a body, then commit it with zils-miner commit-body. Training needs Linux x86_64 with an NVIDIA GPU. Rerun the installer to update."
+    },
+    {
+      "title": "GitHub - ooo-hq/zils-web: Zils decision-model website, research ...",
+      "url": "https://github.com/ooo-hq/zils-web",
+      "snippet": "The Next.js website for Zils decision models, public research, the inference playground, and the experimental customer training dashboard. The intended production domain is https://zils.ai. The model and subnet implementation lives in ooo-hq/zils. The Fez chat application remains a separate project at fez.chat."
+    }
+  ]
+}

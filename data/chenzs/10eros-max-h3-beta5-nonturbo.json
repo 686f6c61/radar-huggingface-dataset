@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "chenzs/10Eros-Max-H3-beta5-NonTurbo",
+  "slug": "chenzs-10eros-max-h3-beta5-nonturbo",
+  "author": "chenzs",
+  "url": "https://huggingface.co/chenzs/10Eros-Max-H3-beta5-NonTurbo",
+  "created_at": "2026-11-08T11:27:38.000Z",
+  "updated_at": "2026-11-08T11:27:39.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-video",
+    "image-text-to-video",
+    "image-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40222982192,
+  "storage_human": "40.2 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10Eros_Max_h3_TURBO-hybrid_beta5_int8.safetensors · TenStrip/10Eros-Max ...",
+      "url": "https://huggingface.co/TenStrip/10Eros-Max/blob/main/10Eros_Max_h3_TURBO-hybrid_beta5_int8.safetensors",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TenStrip/10Eros-Max at main - Hugging Face",
+      "url": "https://huggingface.co/TenStrip/10Eros-Max/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

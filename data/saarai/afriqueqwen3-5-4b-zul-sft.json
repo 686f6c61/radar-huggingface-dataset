@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SaarAI/AfriqueQwen3.5-4B-zul-sft",
+  "slug": "saarai-afriqueqwen3-5-4b-zul-sft",
+  "author": "SaarAI",
+  "url": "https://huggingface.co/SaarAI/AfriqueQwen3.5-4B-zul-sft",
+  "created_at": "2026-11-08T10:58:13.000Z",
+  "updated_at": "2026-11-08T10:59:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zu",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "llama-factory",
+    "full-finetune",
+    "sft",
+    "zulu",
+    "text-generation",
+    "conversational",
+    "zu",
+    "en",
+    "base_model:McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1",
+    "base_model:finetune:McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5174964736,
+  "parameters_human": "5.17B",
+  "storage_bytes": 10370008671,
+  "storage_human": "10.4 GB",
+  "base_model": "McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AfriqueQwen3.5: open language model | AxForge",
+      "url": "https://catalog.axforge.ai/models/afriqueqwen3-5/",
+      "snippet": "AfriqueQwen3.5-4B is a causal language model developed by McGill-NLP for text generation, specifically adapted for 20 African languages through continued pre-training on approximately 26 billion tokens. The model is based on Qwen3.5-4B-Base and features a native context length of 32,768 tokens. It is released under the CC BY 4.0 license."
+    },
+    {
+      "title": "McGill-NLP/AfriqueQwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/McGill-NLP/AfriqueQwen3.5-4B",
+      "snippet": "AfriqueQwen3.5-4B is part of the AfriqueLLM suite—a collection of open language models adapted to 20 African languages through continued pre-training (CPT) on ~26B tokens. This model is based on Qwen/Qwen3.5-4B-Base and has been specifically adapted for improved performance on African languages ..."
+    }
+  ]
+}

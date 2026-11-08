@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "lhh5051/Qwen3.5-0.8B-Zundamon-GGUF",
+  "slug": "lhh5051-qwen3-5-0-8b-zundamon-gguf",
+  "author": "lhh5051",
+  "url": "https://huggingface.co/lhh5051/Qwen3.5-0.8B-Zundamon-GGUF",
+  "created_at": "2026-11-08T05:41:38.000Z",
+  "updated_at": "2026-11-08T05:59:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "zundamon",
+    "text-generation",
+    "ja",
+    "base_model:auhulu/Qwen3.5-0.8B-Zundamon",
+    "base_model:quantized:auhulu/Qwen3.5-0.8B-Zundamon",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 3487629824,
+  "storage_human": "3.5 GB",
+  "base_model": "auhulu/Qwen3.5-0.8B-Zundamon",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-0.8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-0.8B",
+      "snippet": "Image-Text-to-Text model with 0.9B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen3.5 0.8b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-5-0-8b.html",
+      "snippet": "Download Qwen3.5 0.8b GGUF model. 1.68 GB, 326,046 downloads, 249 likes."
+    }
+  ]
+}

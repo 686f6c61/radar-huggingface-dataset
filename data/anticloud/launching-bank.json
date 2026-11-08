@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/launching-bank",
+  "slug": "anticloud-launching-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/launching-bank",
+  "created_at": "2026-11-08T10:59:27.000Z",
+  "updated_at": "2026-11-08T10:59:29.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:launching",
+    "harness:openhands",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Process overview | Anti Money Laundering AI | Google Cloud Documentation",
+      "url": "https://docs.cloud.google.com/financial-services/anti-money-laundering/docs/concepts/process-overview",
+      "snippet": "Overview This page provides an overview of the AML AI processes and covers key concepts for customers to understand. It is targeted primarily at teams who will use AML AI to train, test, and deploy models. AML AI enables banks to automatically train, test, and deploy models for detecting money laundering. The AML AI guides are split into five left-navigation sections that correspond to the ..."
+    },
+    {
+      "title": "AML AI overview | Anti Money Laundering AI - Google Cloud",
+      "url": "https://docs.cloud.google.com/financial-services/anti-money-laundering/docs/concepts/overview",
+      "snippet": "Google Cloud's Anti Money Laundering AI (AML AI) product is an API that scores AML risk. Use it to identify more risk, more defensibly, with fewer false positives and reduced time per review. This API: Generates monthly risk scores for retail and commercial banking customers Is designed to meet model governance requirements"
+    }
+  ]
+}

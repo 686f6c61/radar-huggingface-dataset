@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "egg1234/eggAI",
+  "slug": "egg1234-eggai",
+  "author": "egg1234",
+  "url": "https://huggingface.co/egg1234/eggAI",
+  "created_at": "2026-11-08T10:25:08.000Z",
+  "updated_at": "2026-11-08T10:33:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5_text",
+    "text-generation",
+    "conversational",
+    "zh",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 2583392613,
+  "storage_human": "2.6 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - eggai-tech/EggAI: Async-first meta framework for building ...",
+      "url": "https://github.com/eggai-tech/EggAI",
+      "snippet": "The framework includes: EggAI SDK: A lightweight abstraction layer for building agents and enabling agent-to-agent communication. Examples: Practical use cases showing how to use the SDK and integrate EggAI with leading AI frameworks. Demo: A working multi-agent insurance support system showcasing the Meta Framework in action."
+    },
+    {
+      "title": "egg1234 · GitHub",
+      "url": "https://github.com/egg1234",
+      "snippet": "Repositories egg1234 Block or report user Block or report egg1234 Block user Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users. You must be logged in to block users."
+    }
+  ]
+}

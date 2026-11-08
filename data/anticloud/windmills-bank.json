@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/windmills-bank",
+  "slug": "anticloud-windmills-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/windmills-bank",
+  "created_at": "2026-11-08T10:50:08.000Z",
+  "updated_at": "2026-11-08T10:50:10.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:windmills",
+    "harness:openhands",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anticloud (The Anticloud by Lois-Kleinner) - Hugging Face",
+      "url": "https://huggingface.co/Anticloud/datasets",
+      "snippet": "Org profile for The Anticloud by Lois-Kleinner on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ANTICLOUD.AI",
+      "url": "https://anticloud.ai/",
+      "snippet": "Notes Encrypted Markdown notes, kept in your browser or at your own mailbox."
+    }
+  ]
+}

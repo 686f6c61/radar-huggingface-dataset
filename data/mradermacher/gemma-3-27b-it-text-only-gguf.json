@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-3-27b-it-text-only-GGUF",
+  "slug": "mradermacher-gemma-3-27b-it-text-only-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-3-27b-it-text-only-GGUF",
+  "created_at": "2025-05-31T00:37:23.000Z",
+  "updated_at": "2026-11-08T10:24:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:OpenPipe/gemma-3-27b-it-text-only",
+    "base_model:quantized:OpenPipe/gemma-3-27b-it-text-only",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 54,
+  "trending_score": 0,
+  "parameters": 27009346304,
+  "parameters_human": "27.01B",
+  "storage_bytes": 186680888640,
+  "storage_human": "186.7 GB",
+  "base_model": "OpenPipe/gemma-3-27b-it-text-only",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-3-27b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-27b-it",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/gemma-3-27b-it-ultra-heretic-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma-3-27b-it-ultra-heretic-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/gemma-3-27b-it-ultra-heretic-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

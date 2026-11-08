@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "martondobos/aoe2-entity-detector",
+  "slug": "martondobos-aoe2-entity-detector",
+  "author": "martondobos",
+  "url": "https://huggingface.co/martondobos/aoe2-entity-detector",
+  "created_at": "2026-09-29T20:15:37.000Z",
+  "updated_at": "2026-11-08T09:55:51.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "age-of-empires-ii",
+    "yolo26",
+    "pytorch",
+    "object-detection",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 50,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31491657,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "AoE2:DE independent real-frame test set (40 frames, 10 held-out sessions)",
+      "metric": "Micro precision (IoU 0.50, deployed thresholds)",
+      "value": 0.93
+    },
+    {
+      "task": null,
+      "dataset": "AoE2:DE independent real-frame test set (40 frames, 10 held-out sessions)",
+      "metric": "Micro recall (IoU 0.50, deployed thresholds)",
+      "value": 0.823
+    },
+    {
+      "task": null,
+      "dataset": "AoE2:DE independent real-frame test set (40 frames, 10 held-out sessions)",
+      "metric": "Micro F1 (IoU 0.50, deployed thresholds)",
+      "value": 0.873
+    }
+  ],
+  "sources": [
+    {
+      "title": "martondobos/aoe2-entity-detector · Hugging Face",
+      "url": "https://huggingface.co/martondobos/aoe2-entity-detector",
+      "snippet": "This model detects 60 entity classes in Age of Empires II: Definitive Edition screenshots. model.onnx contains the weights used by this project's Mac-hosted detector server. The model repository is an artifact registry, not a hosted inference API. Future versions replace model.onnx in a new commit ..."
+    },
+    {
+      "title": "martondobos/aoe2-entity-detector at main - Hugging Face",
+      "url": "https://huggingface.co/martondobos/aoe2-entity-detector/tree/main",
+      "snippet": "martondobos / aoe2-entity-detector Like 0 Object Detection ultralytics ONNX age-of-empires-ii yolo26 License:agpl-3.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

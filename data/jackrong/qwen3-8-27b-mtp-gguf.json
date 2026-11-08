@@ -5,7 +5,7 @@
   "author": "Jackrong",
   "url": "https://huggingface.co/Jackrong/Qwen3.8-27B-MTP-GGUF",
   "created_at": "2026-08-15T10:26:09.000Z",
-  "updated_at": "2026-08-16T07:31:18.000Z",
+  "updated_at": "2026-11-07T15:08:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,8 +30,8 @@
   "trending_score": 8,
   "parameters": 460730096,
   "parameters_human": "460.7M",
-  "storage_bytes": 245724268512,
-  "storage_human": "245.7 GB",
+  "storage_bytes": 18653654560,
+  "storage_human": "18.7 GB",
   "base_model": null,
   "formats": [
     "gguf"

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "ahmed-turki27/MobileNetV2_tomato_leaf",
+  "slug": "ahmed-turki27-mobilenetv2_tomato_leaf",
+  "author": "ahmed-turki27",
+  "url": "https://huggingface.co/ahmed-turki27/MobileNetV2_tomato_leaf",
+  "created_at": "2026-11-08T09:07:55.000Z",
+  "updated_at": "2026-11-08T09:07:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - moekhalil09/leafcheck-ai: AI-powered plant disease detection ...",
+      "url": "https://github.com/moekhalil09/leafcheck-ai",
+      "snippet": "🍅 LeafCheckAI – Tomato Disease Detection LeafCheckAI is a desktop application that detects tomato leaf diseases using a deep learning model. Users can upload a tomato leaf image and receive a disease prediction with a confidence score."
+    },
+    {
+      "title": "Two-stage deep learning model for non-destructive leaf counting in ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0168169926003121",
+      "snippet": "The proposed tomato leaf-counting model employs a two-phase hybrid deep learning methodology as shown in Fig. 4, which is intended to tackle the complementary issues of global leaf count estimation and particular leaf structure identification."
+    }
+  ]
+}

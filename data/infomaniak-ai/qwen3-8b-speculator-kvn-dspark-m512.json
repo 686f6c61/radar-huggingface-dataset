@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Infomaniak-AI/Qwen3-8B-speculator.kvn-dspark-m512",
+  "slug": "infomaniak-ai-qwen3-8b-speculator-kvn-dspark-m512",
+  "author": "Infomaniak-AI",
+  "url": "https://huggingface.co/Infomaniak-AI/Qwen3-8B-speculator.kvn-dspark-m512",
+  "created_at": "2026-11-08T11:42:54.000Z",
+  "updated_at": "2026-11-08T11:44:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "speculators",
+  "languages": [],
+  "tags": [
+    "speculators",
+    "safetensors",
+    "speculative-decoding",
+    "dspark",
+    "kvn-dspark",
+    "koopman-von-neumann",
+    "random-fourier-features",
+    "zero-kv-cache",
+    "custom_code",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1020188289,
+  "parameters_human": "1.02B",
+  "storage_bytes": 2040431162,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B",
+      "snippet": "Text Generation model with 8B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "weifanjiang/qwen3-8b.speculators.dspark · Hugging Face",
+      "url": "https://huggingface.co/weifanjiang/qwen3-8b.speculators.dspark",
+      "snippet": "weifanjiang / qwen3-8b.speculators.dspark Like 0 Safetensors custom_code Model card FilesFiles and versions xet Community Copy to bucket No model card Downloads last month 41 Safetensors Model size 2B params Tensor type I64 · BF16 · BOOL · Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for provider support"
+    }
+  ]
+}

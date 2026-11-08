@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Mahitabmostafaelsayed/Project",
+  "slug": "mahitabmostafaelsayed-project",
+  "author": "Mahitabmostafaelsayed",
+  "url": "https://huggingface.co/Mahitabmostafaelsayed/Project",
+  "created_at": "2026-11-08T11:16:29.000Z",
+  "updated_at": "2026-11-08T11:17:49.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Computer Vision Projects - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/computer-vision/computer-vision-projects/",
+      "snippet": "Oct 19, 2026 · Here are some of the Computer Vision projects with source code using OpenCV, YOLO, TensorFlow, PyTorch and …"
+    },
+    {
+      "title": "21 Computer Vision Projects from Beginner to Advanced",
+      "url": "https://www.analyticsvidhya.com/blog/2026/04/top-computer-vision-projects/",
+      "snippet": "Apr 15, 2026 · A curated list of the 21 best computer vision projects with datasets to build your portfolio. The list covers beginner …"
+    },
+    {
+      "title": "Artificial Intelligence Project with Source Code - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/best-artificial-intelligence-project-ideas/",
+      "snippet": "Artificial Intelligence (AI) projects help learners apply concepts such as machine learning, deep learning and generative AI to solve real-world problems. This article covers AI projects with source code across areas such as natural language processing (NLP), computer vision, speech recognition, healthcare, prediction and recommendation systems."
+    },
+    {
+      "title": "19 Computer Vision Projects From Beginner to Advanced",
+      "url": "https://www.datacamp.com/blog/computer-vision-projects",
+      "snippet": "Jul 24, 2024 · The best way to do that is by completing computer vision projects that resemble real-world problems. In this article, …"
+    }
+  ]
+}

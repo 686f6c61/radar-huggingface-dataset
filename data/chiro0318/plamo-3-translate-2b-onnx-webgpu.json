@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "chiro0318/plamo-3-translate-2b-onnx-webgpu",
+  "slug": "chiro0318-plamo-3-translate-2b-onnx-webgpu",
+  "author": "chiro0318",
+  "url": "https://huggingface.co/chiro0318/plamo-3-translate-2b-onnx-webgpu",
+  "created_at": "2026-11-08T08:51:24.000Z",
+  "updated_at": "2026-11-08T08:52:07.000Z",
+  "license": "plamo-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "onnxruntime",
+  "languages": [
+    "ja",
+    "en",
+    "ko",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "plamo3",
+    "plamo",
+    "webgpu",
+    "onnxruntime-web",
+    "translation",
+    "custom_code",
+    "ja",
+    "en",
+    "ko",
+    "zh",
+    "multilingual",
+    "base_model:pfnet/plamo-3-translate-2b",
+    "base_model:quantized:pfnet/plamo-3-translate-2b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1621784738,
+  "storage_human": "1.6 GB",
+  "base_model": "pfnet/plamo-3-translate-2b",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PLaMo 3 Translate - a pfnet Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/pfnet/plamo-3-translate",
+      "snippet": "PLaMo 3 Translate: translation-specialized LLMs (0.8B / 2B / 8B / 31B) in BF16 and quantized formats (FP8, W4A16, W4AFP8, NVFP4, GGUF, MLX-4bit)."
+    },
+    {
+      "title": "PLaMo 3 Translate 2B overview and API price | OKNP.ai",
+      "url": "https://oknp.ai/model/plamo-3-translate-2b",
+      "snippet": "PLaMo 3 Translate 2B official site, company, specs, scores, and API price for this version."
+    }
+  ]
+}

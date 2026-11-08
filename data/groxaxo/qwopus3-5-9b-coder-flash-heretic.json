@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "groxaxo/Qwopus3.5-9B-Coder-Flash-Heretic",
+  "slug": "groxaxo-qwopus3-5-9b-coder-flash-heretic",
+  "author": "groxaxo",
+  "url": "https://huggingface.co/groxaxo/Qwopus3.5-9B-Coder-Flash-Heretic",
+  "created_at": "2026-11-08T09:34:02.000Z",
+  "updated_at": "2026-11-08T09:35:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "ko",
+    "ja",
+    "ru",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "abliteration",
+    "ara",
+    "uncensored",
+    "vision",
+    "multimodal",
+    "code-generation",
+    "tool-use",
+    "agent",
+    "mtp",
+    "conversational",
+    "en",
+    "zh",
+    "ko",
+    "ja",
+    "ru",
+    "es",
+    "base_model:Jackrong/Qwopus3-5-9B-Coder-Flash",
+    "base_model:finetune:Jackrong/Qwopus3-5-9B-Coder-Flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710459,
+  "storage_human": "18.8 GB",
+  "base_model": "Jackrong/Qwopus3-5-9B-Coder-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jackrong/Qwopus3-5-9B-Coder-Flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Jackrong/Qwopus3-5-9B-Coder-Flash-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

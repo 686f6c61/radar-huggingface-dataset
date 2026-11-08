@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/space-colonization-bank",
+  "slug": "anticloud-space-colonization-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/space-colonization-bank",
+  "created_at": "2026-11-08T10:54:15.000Z",
+  "updated_at": "2026-11-08T10:54:17.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:space-colonization",
+    "harness:swe-agent",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anticloud Live Demo - a Hugging Face Space by kleinnner",
+      "url": "https://huggingface.co/spaces/kleinnner/anticloud-live-demo",
+      "snippet": "This web app lets you pick a ready‑made scenario or type any custom prompt, then runs a local AI model to produce a text answer. The response is shown in the terminal and automatically recorded in ..."
+    },
+    {
+      "title": "Energy, computing and capital | SpaceBank",
+      "url": "https://spacebank.group/",
+      "snippet": "It is time to build a bank for space. Bringing banks, researchers and infrastructure operators together for the space economy. Primary AI agentic material, powered by Echelon (AI)."
+    }
+  ]
+}

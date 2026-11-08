@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Infomaniak-AI/Qwen3-8B-speculator.kvn-dspark",
+  "slug": "infomaniak-ai-qwen3-8b-speculator-kvn-dspark",
+  "author": "Infomaniak-AI",
+  "url": "https://huggingface.co/Infomaniak-AI/Qwen3-8B-speculator.kvn-dspark",
+  "created_at": "2026-11-08T11:39:12.000Z",
+  "updated_at": "2026-11-08T11:41:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "speculators",
+  "languages": [],
+  "tags": [
+    "speculators",
+    "safetensors",
+    "speculative-decoding",
+    "dspark",
+    "kvn-dspark",
+    "koopman-von-neumann",
+    "random-fourier-features",
+    "zero-kv-cache",
+    "custom_code",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 975339009,
+  "parameters_human": "975.3M",
+  "storage_bytes": 1950732570,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/Qwen3.8-27B-speculator.dspark - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Qwen3.8-27B-speculator.dspark",
+      "snippet": "This is a DSpark speculator model for Qwen3.8-27B. It was trained using the Speculators library (version 0.8.0.dev221). DSpark extends DFlash with a Markov head for modeling intra-block token dependencies and a confidence head for predicting per-position acceptance."
+    },
+    {
+      "title": "mgoin/Qwen3-8B-speculator.dspark · Hugging Face",
+      "url": "https://huggingface.co/mgoin/Qwen3-8B-speculator.dspark",
+      "snippet": "Qwen3-8B DSpark speculator Qwen3-8B DSpark speculator DSpark (DFlash backbone + Markov logit-bias head + confidence head) draft model for Qwen/Qwen3-8B, trained with speculators (PR #677). Preview/research checkpoint: online training on a 20k ShareGPT slice, seq 2048, 3 epochs."
+    }
+  ]
+}

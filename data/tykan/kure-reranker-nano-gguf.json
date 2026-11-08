@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tykan/KURE-Reranker-nano-GGUF",
+  "slug": "tykan-kure-reranker-nano-gguf",
+  "author": "tykan",
+  "url": "https://huggingface.co/tykan/KURE-Reranker-nano-GGUF",
+  "created_at": "2026-11-08T05:26:13.000Z",
+  "updated_at": "2026-11-08T05:51:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "gguf",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "reranker",
+    "cross-encoder",
+    "korean",
+    "text-ranking",
+    "ko",
+    "en",
+    "base_model:nlpai-lab/KURE-Reranker-nano",
+    "base_model:quantized:nlpai-lab/KURE-Reranker-nano",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149323009,
+  "parameters_human": "149.3M",
+  "storage_bytes": 897872704,
+  "storage_human": "898 MB",
+  "base_model": "nlpai-lab/KURE-Reranker-nano",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nlpai-lab/KURE-Reranker-nano · Hugging Face",
+      "url": "https://huggingface.co/nlpai-lab/KURE-Reranker-nano",
+      "snippet": "KURE-Reranker-nano is a lightweight, approximately 150M-parameter Korean-English bilingual reranker. It jointly encodes a query and a candidate document and predicts a scalar relevance score."
+    },
+    {
+      "title": "KURE-Reranker - a nlpai-lab Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/nlpai-lab/kure-reranker",
+      "snippet": "KURE-Reranker: Korea University Rerankers. Upvote . Sort: Collection. nlpai-lab/KURE-Reranker-base. Text Ranking • 2B • Updated 3 days ago • 70 • 4"
+    },
+    {
+      "title": "nlpai-lab/KURE-Reranker-nano — Downloads, Growth & Stats",
+      "url": "https://openmodelstats.com/models/nlpai-lab/kure-reranker-nano",
+      "snippet": "KURE-Reranker-nano by nlpai-lab: 2,816 all-time downloads, 2,798 in the last 30 days, 13 likes. A text ranking model with 149M parameters. Daily download history, growth trends and ranking position, tracked and updated by OpenModelStats."
+    }
+  ]
+}

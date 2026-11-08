@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "JJinJJin2/omx_act_policy_v3",
+  "slug": "jjinjjin2-omx_act_policy_v3",
+  "author": "JJinJJin2",
+  "url": "https://huggingface.co/JJinJJin2/omx_act_policy_v3",
+  "created_at": "2026-11-08T08:11:49.000Z",
+  "updated_at": "2026-11-08T08:12:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:JJinJJin2/pick_and_place_v2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707288,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeonminjun/omx_act_policy · Hugging Face",
+      "url": "https://huggingface.co/Jeonminjun/omx_act_policy",
+      "snippet": "Instructions to use Jeonminjun/omx_act_policy with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use Jeonminjun/omx_act_policy with LeRobot: Notebooks Google Colab Kaggle Model Card for act How to Get Started with the Model Train from scratch Evaluate the policy/run inference"
+    },
+    {
+      "title": "JJinJJin2 (KOYeJin) - Hugging Face",
+      "url": "https://huggingface.co/JJinJJin2",
+      "snippet": "Sort: Recently updated JJinJJin2/pick_and_place_v2 omx_follower •Updated 1 day ago•20 episodes• 46"
+    }
+  ]
+}

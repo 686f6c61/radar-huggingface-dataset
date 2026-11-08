@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "zephel01/GLM-5.3-Flash-IQ3_XXS-32G128G-GGUF",
+  "slug": "zephel01-glm-5-3-flash-iq3_xxs-32g128g-gguf",
+  "author": "zephel01",
+  "url": "https://huggingface.co/zephel01/GLM-5.3-Flash-IQ3_XXS-32G128G-GGUF",
+  "created_at": "2026-11-06T23:23:47.000Z",
+  "updated_at": "2026-11-08T10:49:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ldlq",
+    "imatrix",
+    "moe",
+    "abyss",
+    "consumer-gpu",
+    "local-llm",
+    "cpu-offload",
+    "japanese",
+    "rtx-5090",
+    "32gb-vram",
+    "128gb-ram",
+    "text-generation",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 338,
+  "trending_score": 0,
+  "parameters": 320759404382,
+  "parameters_human": "320.76B",
+  "storage_bytes": 127926002528,
+  "storage_human": "127.9 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zephel01/GLM-5.3-Flash-32G128G-GGUF · Hugging Face",
+      "url": "https://huggingface.co/zephel01/GLM-5.3-Flash-32G128G-GGUF",
+      "snippet": "Text Generation model with 321B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "zephel01/GLM-5.3-Flash-32G96G-GGUF · Hugging Face",
+      "url": "https://huggingface.co/zephel01/GLM-5.3-Flash-32G96G-GGUF",
+      "snippet": "This repository will hold GGUFs of GLM-5.3-Flash made for one 32 GB GPU plus 96 GB RAM, with every expert kept (no expert pruning), measured in Abyss and released as BETA."
+    }
+  ]
+}

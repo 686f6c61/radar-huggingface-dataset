@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "chenzs/Qwen-Image-2512-BF16-ComfyUI",
+  "slug": "chenzs-qwen-image-2512-bf16-comfyui",
+  "author": "chenzs",
+  "url": "https://huggingface.co/chenzs/Qwen-Image-2512-BF16-ComfyUI",
+  "created_at": "2026-11-08T11:27:52.000Z",
+  "updated_at": "2026-11-08T11:27:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:DiffSynth-Studio/Qwen-Image-Distill-Full",
+    "base_model:finetune:DiffSynth-Studio/Qwen-Image-Distill-Full",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57699253310,
+  "storage_human": "57.7 GB",
+  "base_model": "Qwen/Qwen-Image, Qwen/Qwen-Image-2512, DiffSynth-Studio/Qwen-Image-Distill-Full",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen-Image-2512 in ComfyUI: Photorealistic Text to Image",
+      "url": "https://docs.comfy.org/tutorials/image/qwen/qwen-image-2512",
+      "snippet": "Generate images at seven aspect ratios in ComfyUI with the December Qwen-Image update, tuned for human realism, natural detail, and accurate text layout. Qwen-Image-2512 is the December update of Qwen-Image’s text-to-image foundational model."
+    },
+    {
+      "title": "Qwen Image 2512 Workflow: ComfyUI, Diffusers, and VRAM Guide",
+      "url": "https://thatpainter.com/qwen-image-2512-workflow-complete-guide-to-ai-image-generation-in-2026/",
+      "snippet": "Learn the Qwen Image 2512 workflow in 2026: ComfyUI and Diffusers setup, model files, prompts, resolutions, VRAM planning, acceleration, troubleshooting, and licensing."
+    }
+  ]
+}

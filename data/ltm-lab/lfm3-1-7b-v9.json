@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "LTM-Lab/LFM3-1.7B-v9",
+  "slug": "ltm-lab-lfm3-1-7b-v9",
+  "author": "LTM-Lab",
+  "url": "https://huggingface.co/LTM-Lab/LFM3-1.7B-v9",
+  "created_at": "2026-11-08T06:10:18.000Z",
+  "updated_at": "2026-11-08T06:11:59.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm3",
+    "text-generation",
+    "lfm3_v9",
+    "memory",
+    "custom_code",
+    "llama-factory",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:finetune:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1729815326,
+  "parameters_human": "1.73B",
+  "storage_bytes": 3477573567,
+  "storage_human": "3.5 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM3-1.7B - Liquid AI Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm3-1.7b",
+      "snippet": "1.7B text model for local agents and specialized applications, with a 256K context window and native tool calling ← Back to Text Models LFM3-1.7B is Liquid AI’s text model for local agents and specialized applications, based on the new LFM3 tri-hybrid architecture."
+    },
+    {
+      "title": "LiquidAI/LFM3-1.7B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+      "snippet": "Works with vLLM, SGLang, and LFM3-compatible llama.cpp builds. For llama.cpp, use a GGUF with the current chat template or load it with --chat-template-file. See Deferred tools and tool search for the full guide. Fine-tuning LFM3-1.7B is designed for easy customization for a given domain, task, or application via TRL."
+    }
+  ]
+}

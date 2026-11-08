@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/judge-bank",
+  "slug": "anticloud-judge-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/judge-bank",
+  "created_at": "2026-11-08T10:51:10.000Z",
+  "updated_at": "2026-11-08T10:51:12.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:judge",
+    "harness:swe-agent",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Configure a judge model | Gemini Enterprise Agent Platform | Google ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/configure-judge-model",
+      "snippet": "Model-based metrics provide various approaches to customize and help you generate evaluation metrics based on your criteria and use cases. This page describes how to configure your judge model for your ideal use case. For the basic evaluation workflow, see the Gen AI evaluation service quickstart. The Advanced judge model customization series includes the following pages: Evaluate a judge ..."
+    },
+    {
+      "title": "Judge Models: Evaluating AI at Scale with LLM-as-Judge Frameworks",
+      "url": "https://medium.com/@tobiasnimo99/judge-models-evaluating-ai-at-scale-with-llm-as-judge-frameworks-b4058307e2d8",
+      "snippet": "Judge Models: Evaluating AI at Scale with LLM-as-Judge Frameworks Introduction The proliferation of large language models (LLMs) has fundamentally altered the landscape of AI system evaluation …"
+    }
+  ]
+}

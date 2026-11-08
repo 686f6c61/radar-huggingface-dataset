@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/frozen-goods-bank",
+  "slug": "anticloud-frozen-goods-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/frozen-goods-bank",
+  "created_at": "2026-11-08T10:54:13.000Z",
+  "updated_at": "2026-11-08T10:54:14.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:frozen-goods",
+    "harness:openhands",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI in Finance & Banking: Fraud Detection, Agentic AI & Compliance Guide ...",
+      "url": "https://aibuzz.blog/ai-in-finance-banking/",
+      "snippet": "How ..."
+    },
+    {
+      "title": "25 AI in Banking Examples You Should Know - Built In",
+      "url": "https://builtin.com/artificial-intelligence/ai-in-banking",
+      "snippet": "Explore how AI is used in banking for customer service, fraud detection, lending, credit decisions, risk management and other financial services."
+    }
+  ]
+}

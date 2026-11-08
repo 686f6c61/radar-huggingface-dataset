@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "joey00072/ohara-d28-a1b-sft",
+  "slug": "joey00072-ohara-d28-a1b-sft",
+  "author": "joey00072",
+  "url": "https://huggingface.co/joey00072/ohara-d28-a1b-sft",
+  "created_at": "2026-11-08T08:02:53.000Z",
+  "updated_at": "2026-11-08T08:42:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "ohara",
+  "languages": [],
+  "tags": [
+    "ohara",
+    "safetensors",
+    "ohara_hybrid",
+    "hybrid",
+    "moe",
+    "pretraining-checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23846942486,
+  "parameters_human": "23.85B",
+  "storage_bytes": 143093320242,
+  "storage_human": "143.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joey00072/ohara-d28-a1b-s3a · Hugging Face",
+      "url": "https://huggingface.co/joey00072/ohara-d28-a1b-s3a",
+      "snippet": "Machine learning model with 24B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "GitHub - joey00072/ohara: Collection of autoregressive model ...",
+      "url": "https://github.com/joey00072/ohara",
+      "snippet": "Collection of autoregressive model implementation. Contribute to joey00072/ohara development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Qntology/stanza-cs",
+  "slug": "qntology-stanza-cs",
+  "author": "Qntology",
+  "url": "https://huggingface.co/Qntology/stanza-cs",
+  "created_at": "2026-07-12T01:44:33.000Z",
+  "updated_at": "2026-11-08T11:52:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "stanza",
+  "languages": [
+    "cs"
+  ],
+  "tags": [
+    "stanza",
+    "onnx",
+    "token-classification",
+    "cs",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1308535294,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stanfordnlp/stanza-cs · Hugging Face",
+      "url": "https://huggingface.co/stanfordnlp/stanza-cs",
+      "snippet": "Stanza model for Czech (cs) Stanza is a collection of accurate and efficient tools for the linguistic analysis of many human languages. Starting from raw text to syntactic analysis and entity recognition, Stanza brings state-of-the-art NLP models to languages of your choosing. Find more about it in our website and our GitHub repository."
+    },
+    {
+      "title": "Download Models - Stanza",
+      "url": "https://stanfordnlp.github.io/stanza/download_models.html",
+      "snippet": "Stanza provides pretrained NLP models for a total 70 human languages. On this page we provide detailed information on how to download these models to process text in a language of your choosing. Automatic download Pretrained models in Stanza can be divided into four categories, based on the datasets they were trained on: Universal Dependencies (UD) models, which are trained on the UD treebanks ..."
+    }
+  ]
+}

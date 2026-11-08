@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "kyr0/winzling-embed-SauerkrautLM-MoEdernColBERT-1.5M-weight-space-programming",
+  "slug": "kyr0-winzling-embed-sauerkrautlm-moederncolbert-1-5m-weight-space-programming",
+  "author": "kyr0",
+  "url": "https://huggingface.co/kyr0/winzling-embed-SauerkrautLM-MoEdernColBERT-1.5M-weight-space-programming",
+  "created_at": "2026-11-07T06:38:56.000Z",
+  "updated_at": "2026-11-08T11:20:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "onnx",
+  "languages": [
+    "de",
+    "en",
+    "es",
+    "nl",
+    "fr",
+    "it",
+    "pt",
+    "ru"
+  ],
+  "tags": [
+    "onnx",
+    "ColBERT",
+    "late-interaction",
+    "multi-vector",
+    "mixture-of-experts",
+    "retrieval",
+    "multilingual",
+    "sentence-similarity",
+    "de",
+    "en",
+    "es",
+    "nl",
+    "fr",
+    "it",
+    "pt",
+    "ru",
+    "base_model:VAGOsolutions/SauerkrautLM-MoEdernColBERT-1.5M",
+    "base_model:finetune:VAGOsolutions/SauerkrautLM-MoEdernColBERT-1.5M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21222300,
+  "storage_human": "21 MB",
+  "base_model": "VAGOsolutions/SauerkrautLM-MoEdernColBERT-1.5M",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kyr0/Winzling-Embed-a8m-64k at main - Hugging Face",
+      "url": "https://huggingface.co/kyr0/Winzling-Embed-a8m-64k/tree/main",
+      "snippet": "kyr0 / Winzling-Embed-a8m-64k Like 0 Sentence Similarity sentence-transformers ONNX Safetensors German English Russian modernbert embeddings feature-extraction multilingual german english russian quantized int4 edge retrieval text-embeddings-inference arxiv:2607.25180 License:mit Model card FilesFiles and versions xet Community Deploy Copy to ..."
+    },
+    {
+      "title": "kyr0/Winzling-Embed-a8m-64k · Hugging Face",
+      "url": "https://huggingface.co/kyr0/Winzling-Embed-a8m-64k",
+      "snippet": "A 29.1 MiB UINT4 ONNX German/English/Russian text-embedding model derived from hotchpotch/bekko-embedding-v1-a8m ..."
+    }
+  ]
+}

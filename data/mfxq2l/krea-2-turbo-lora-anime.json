@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mfxq2l/Krea-2-Turbo-lora-Anime",
+  "slug": "mfxq2l-krea-2-turbo-lora-anime",
+  "author": "mfxq2l",
+  "url": "https://huggingface.co/mfxq2l/Krea-2-Turbo-lora-Anime",
+  "created_at": "2026-11-08T08:38:09.000Z",
+  "updated_at": "2026-11-08T08:50:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1173402840,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krea 2 Turbo LoRA 256dim - v1.0 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.com/models/2727641/krea-2-turbo-lora-256dim",
+      "snippet": "IMPORTANT: For ComfyUI, you MUST download the optional Comfy lora instead (see optional downloads above). This LoRA is the extracted difference between the base and turbo Krea 2 at dim 256."
+    },
+    {
+      "title": "Krea 2 Turbo by Krea — AI Image Generator | Krea",
+      "url": "https://www.krea.ai/models/krea-2-turbo",
+      "snippet": "Fastest medium quality Krea 2 model. The fastest Krea 2 model. Best for quickly iterating on expressive illustrations. Generate with Krea 2 Turbo on Krea, compare quality settings, and ship production-ready images faster."
+    }
+  ]
+}

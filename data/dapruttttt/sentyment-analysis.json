@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "dapruttttt/Sentyment-analysis",
+  "slug": "dapruttttt-sentyment-analysis",
+  "author": "dapruttttt",
+  "url": "https://huggingface.co/dapruttttt/Sentyment-analysis",
+  "created_at": "2026-11-08T11:09:13.000Z",
+  "updated_at": "2026-11-08T11:09:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?search=sentiment-analysis",
+      "snippet": "Explore machine learning models. Anthos23/sentiment-roberta-large-english-finetuned-sentiment-analysis"
+    },
+    {
+      "title": "Sentiment Analysis - New plugin for ChatGPT - API - OpenAI Developer ...",
+      "url": "https://community.openai.com/t/sentiment-analysis-new-plugin-for-chatgpt/322335",
+      "snippet": "Sentiment Analysis Overview 📝 The Sentiment Analysis plugin is a powerful tool that allows users to perform in-depth sentiment analysis on any text leveraging large language models. Whether you need to understand customer feedback, analyze user comments, or explore the emotional tone of a text, this tool offers a range of functionalities to suit your needs. Explore below to find out how you ..."
+    }
+  ]
+}

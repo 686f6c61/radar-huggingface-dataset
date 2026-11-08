@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Kaizhen111/internnav-stage1-20261107",
+  "slug": "kaizhen111-internnav-stage1-20261107",
+  "author": "Kaizhen111",
+  "url": "https://huggingface.co/Kaizhen111/internnav-stage1-20261107",
+  "created_at": "2026-11-08T05:15:26.000Z",
+  "updated_at": "2026-11-08T06:05:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2_5_vl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16584414544,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - InternRobotics/InternNav: InternRobotics' open platform for ...",
+      "url": "https://github.com/InternRobotics/InternNav",
+      "snippet": "InternRobotics' open platform for building generalized navigation foundation models. - InternRobotics/InternNav"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "nace-ai/kapitsa-dory",
+  "slug": "nace-ai-kapitsa-dory",
+  "author": "nace-ai",
+  "url": "https://huggingface.co/nace-ai/kapitsa-dory",
+  "created_at": "2026-11-08T11:44:40.000Z",
+  "updated_at": "2026-11-08T11:45:00.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "kapitsa",
+    "apple-silicon",
+    "local-inference",
+    "text-generation",
+    "base_model:nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-NVFP4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - nace-ai/kapitsa: Blazing fast Apple Silicon inference engine ...",
+      "url": "https://github.com/nace-ai/kapitsa",
+      "snippet": "Kapitsa is an inference engine for Apple silicon that runs Qwen, Nemotron and Recursive's Flint models locally, built for coding agents. It starts opencode, Claude Code, Codex or pi on a local model, and serves OpenAI and Anthropic APIs. Kapitsa has the fastest decode in 33 of the 38 model and Mac ..."
+    },
+    {
+      "title": "Releases · nace-ai/kapitsa · GitHub",
+      "url": "https://github.com/nace-ai/kapitsa/releases",
+      "snippet": "Blazing fast Apple Silicon inference engine optimized for Qwen & Nemotron. OpenAI + Anthropic API compatible. Built by folks from nace.ai - Releases · nace-ai/kapitsa"
+    }
+  ]
+}

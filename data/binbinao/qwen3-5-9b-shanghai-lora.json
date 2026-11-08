@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "binbinao/qwen3.5-9b-shanghai-lora",
+  "slug": "binbinao-qwen3-5-9b-shanghai-lora",
+  "author": "binbinao",
+  "url": "https://huggingface.co/binbinao/qwen3.5-9b-shanghai-lora",
+  "created_at": "2026-11-08T04:14:44.000Z",
+  "updated_at": "2026-11-08T04:30:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3.5",
+    "shanghai",
+    "instruction-following",
+    "text-generation",
+    "conversational",
+    "zh",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 366284061,
+  "storage_human": "366 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deploy Qwen3.5 9B Locally with Ollama — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-qwen3-5-9b-local-multimodal-ai",
+      "snippet": "Set up Qwen3.5 9B locally on Hugging Face Transformers, vLLM, SGLang, or KTransformers and run multimodal prompts with images, video, and text."
+    },
+    {
+      "title": "deanoshuang/qwen3.5-9b-agent-sft-v5ep2-lora · Hugging Face",
+      "url": "https://huggingface.co/deanoshuang/qwen3.5-9b-agent-sft-v5ep2-lora",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

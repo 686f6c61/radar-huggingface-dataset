@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "emariefl/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+  "slug": "emariefl-deepseek-v4-1-flash-1017-gsq-rco-gguf",
+  "author": "emariefl",
+  "url": "https://huggingface.co/emariefl/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF",
+  "created_at": "2026-11-08T05:02:02.000Z",
+  "updated_at": "2026-11-08T05:02:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gsq",
+    "rco",
+    "quantization",
+    "mixed-precision",
+    "ist-daslab",
+    "moe",
+    "deepseek",
+    "text-generation",
+    "conversational",
+    "arxiv:2604.18556",
+    "arxiv:2605.00649",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 196613849600,
+  "parameters_human": "196.61B",
+  "storage_bytes": 525756874468,
+  "storage_human": "525.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash-1017 · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "snippet": "OmniCompass-VL; Overall Cross-Specification Consistency Score on a 0-100 scale, higher is better. 64 video frames with per-frame timestamps; paired Text and Text+Image; temporal grounding, spatial grounding and question answering. API15 evaluation of DeepSeek-V4.1-Flash-1017 on 820 videos and 4,920 requests, completed on November 5, 2026. 4,892 successful responses are scored; 28 terminal ..."
+    },
+    {
+      "title": "DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF - Hugging Face",
+      "url": "https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
+      "snippet": "Text Generation model with 552B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

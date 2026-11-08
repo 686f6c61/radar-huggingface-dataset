@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "afnanrizwan/trialmatch-qwen3-0.6b-lora",
+  "slug": "afnanrizwan-trialmatch-qwen3-0-6b-lora",
+  "author": "afnanrizwan",
+  "url": "https://huggingface.co/afnanrizwan/trialmatch-qwen3-0.6b-lora",
+  "created_at": "2026-11-08T09:14:08.000Z",
+  "updated_at": "2026-11-08T09:14:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "clinical-trials",
+    "eligibility",
+    "trialgpt",
+    "education",
+    "dataset:ncbi/TrialGPT-Criterion-Annotations",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51844822,
+  "storage_human": "52 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-Tuning Qwen3 with LoRA Using NVIDIA NeMo AutoModel: A Complete ...",
+      "url": "https://www.marktechpost.com/2026/07/18/fine-tuning-qwen3-with-lora-using-nvidia-nemo-automodel-a-complete-single-gpu-google-colab-workflow-tutorial/",
+      "snippet": "We verify the available CUDA hardware and precision support, install NeMo AutoModel directly from its source repository, load an official Qwen3-0.6B LoRA fine-tuning recipe, and programmatically adapt its precision, batch-size, checkpointing, and scheduler settings for a constrained Colab runtime."
+    },
+    {
+      "title": "GitHub - vmeoc/FineTuningQwen3-0.6B",
+      "url": "https://github.com/vmeoc/FineTuningQwen3-0.6B",
+      "snippet": "This guide explains step by step how to fine-tune the base model Qwen/Qwen3-0.6B-Base on the databricks/databricks-dolly-15k dataset with QLoRA, and how to load the adapter for inference. The project contains: 002-qlora-fine-tuning.py: highly commented QLoRA fine-tuning script 003-Qwen3-fine-tuned.py: inference script (base + LoRA adapter) 001-Qwen3-base-query.py: quick test script for the ..."
+    }
+  ]
+}

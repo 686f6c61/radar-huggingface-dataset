@@ -5,7 +5,7 @@
   "author": "Kifule2",
   "url": "https://huggingface.co/Kifule2/spaces-ai-teacher-300m",
   "created_at": "2026-11-06T08:53:27.000Z",
-  "updated_at": "2026-11-06T08:53:31.000Z",
+  "updated_at": "2026-11-07T12:07:16.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 15772562,
-  "storage_human": "16 MB",
+  "storage_bytes": 28798962,
+  "storage_human": "29 MB",
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "safetensors"

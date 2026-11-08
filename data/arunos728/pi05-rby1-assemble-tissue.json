@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "arunos728/pi05-rby1-assemble-tissue",
+  "slug": "arunos728-pi05-rby1-assemble-tissue",
+  "author": "arunos728",
+  "url": "https://huggingface.co/arunos728/pi05-rby1-assemble-tissue",
+  "created_at": "2026-11-08T09:15:21.000Z",
+  "updated_at": "2026-11-08T09:16:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "vla",
+    "pi0",
+    "pi05",
+    "lerobot",
+    "rby1",
+    "manipulation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616802598,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7473274771,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Python Examples - RB-Y1 Documentation",
+      "url": "https://rainbowrobotics.github.io/rby1-dev/examples/python_ex.html",
+      "snippet": "Python Examples ¶ Here is a list of available Python example programs for the Rainbow Robotics SDK. Explore each example by clicking on the corresponding link."
+    },
+    {
+      "title": "RB-Y1 Documentation",
+      "url": "https://rainbowrobotics.github.io/rby1-dev/",
+      "snippet": "RB-Y1 Developer & Expert Manual ¶ Designed for developers, this manual covers the RB-Y1 dual-arm mobile manipulator——its real-time software stack, APIs, setup workflows, and integration guidelines. The RB-Y1 provides two 7-DoF arms for coordinated manipulation, high-precision actuation and sensing, and a modular architecture suitable for research and production environments."
+    }
+  ]
+}

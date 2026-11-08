@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "cuongduongok/amazon-musical-recommender-models",
+  "slug": "cuongduongok-amazon-musical-recommender-models",
+  "author": "cuongduongok",
+  "url": "https://huggingface.co/cuongduongok/amazon-musical-recommender-models",
+  "created_at": "2026-11-08T10:29:28.000Z",
+  "updated_at": "2026-11-08T10:29:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "recommender-system",
+    "collaborative-filtering",
+    "content-based",
+    "matrix-factorization",
+    "truncated-svd",
+    "tf-idf",
+    "amazon-reviews-2023",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7864902,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon Music Track Recommender DNN",
+      "url": "https://www.scribd.com/document/945761760/research-paper-2",
+      "snippet": "The document presents a study on building a product recommender system for digital music tracks on Amazon using a deep neural network (DNN) architecture. It details the data preprocessing, feature selection, and engineering processes applied to a dataset of 200,000 Amazon reviews, highlighting the DNN's superior performance over traditional models like multinomial naive Bayes and logistic ..."
+    },
+    {
+      "title": "How Recommendation Algorithms Work on Netflix, Amazon, and Spotify",
+      "url": "https://www.analyticsinsight.net/machine-learning/how-recommendation-algorithms-work-on-netflix-amazon-and-spotify",
+      "snippet": "Netflix, Amazon, and Spotify use advanced recommendation algorithms powered by artificial intelligence to study user behavior, predict preferences, and deliver personalized content, products, and music that improve customer experience."
+    }
+  ]
+}

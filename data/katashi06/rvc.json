@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Katashi06/RVC",
+  "slug": "katashi06-rvc",
+  "author": "Katashi06",
+  "url": "https://huggingface.co/Katashi06/RVC",
+  "created_at": "2023-09-12T14:55:02.000Z",
+  "updated_at": "2026-11-08T07:19:50.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3701261386,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Katashi06/RVC · Hugging Face",
+      "url": "https://huggingface.co/Katashi06/RVC",
+      "snippet": "README.md exists but content is empty. Use the Edit model card button to edit it."
+    },
+    {
+      "title": "Katashi06/RVC at main - Hugging Face",
+      "url": "https://huggingface.co/Katashi06/RVC/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

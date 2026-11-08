@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "gatilin/grt-30m-omni-audio-encoder",
+  "slug": "gatilin-grt-30m-omni-audio-encoder",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/grt-30m-omni-audio-encoder",
+  "created_at": "2026-11-08T07:38:34.000Z",
+  "updated_at": "2026-11-08T07:39:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "grt_omni",
+    "multimodal",
+    "audio-feature-extraction",
+    "rotational-transformer",
+    "base_model:MatterWaveAI/grt-30m-omni",
+    "base_model:finetune:MatterWaveAI/grt-30m-omni",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3506560,
+  "parameters_human": "3.5M",
+  "storage_bytes": 14912624,
+  "storage_human": "15 MB",
+  "base_model": "MatterWaveAI/grt-30m-omni",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GRT-30M-Omni ( MatterWaveAI/grt-30m-omni ) - Hugging Face",
+      "url": "https://huggingface.co/MatterWaveAI/grt-30m-omni",
+      "snippet": "Any-to-Any model with 38.7M parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

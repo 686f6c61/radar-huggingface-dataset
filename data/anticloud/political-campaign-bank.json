@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Anticloud/political-campaign-bank",
+  "slug": "anticloud-political-campaign-bank",
+  "author": "Anticloud",
+  "url": "https://huggingface.co/Anticloud/political-campaign-bank",
+  "created_at": "2026-11-08T10:51:30.000Z",
+  "updated_at": "2026-11-08T10:51:32.000Z",
+  "license": "anticommons-0.1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "anticloud",
+    "vertical:political-campaign",
+    "harness:openhands",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artificial Intelligence (AI) in Elections and Campaigns",
+      "url": "https://www.ncsl.org/elections-and-campaigns/artificial-intelligence-ai-in-elections-and-campaigns",
+      "snippet": "Covers statutes and legislation related to artificial intelligence in elections and campaigns, as policymakers and campaigns adapt to rapid AI growth."
+    },
+    {
+      "title": "AI political spending splits Silicon Valley ahead of election - CNBC",
+      "url": "https://www.cnbc.com/2026/10/27/ai-political-spending-silicon-valley-election.html",
+      "snippet": "AI political groups are spending millions in the 2026 election as Silicon Valley factions battle over regulation, safeguards and state authority."
+    }
+  ]
+}

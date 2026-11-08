@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SaarAI/AfriqueQwen3.5-4B-amh-sft",
+  "slug": "saarai-afriqueqwen3-5-4b-amh-sft",
+  "author": "SaarAI",
+  "url": "https://huggingface.co/SaarAI/AfriqueQwen3.5-4B-amh-sft",
+  "created_at": "2026-11-08T11:22:42.000Z",
+  "updated_at": "2026-11-08T11:27:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "am",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "llama-factory",
+    "full-finetune",
+    "sft",
+    "amharic",
+    "text-generation",
+    "conversational",
+    "am",
+    "en",
+    "base_model:McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1",
+    "base_model:finetune:McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5174964736,
+  "parameters_human": "5.17B",
+  "storage_bytes": 10370008671,
+  "storage_human": "10.4 GB",
+  "base_model": "McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "McGill-NLP/AfriqueQwen3.5-4B · Hugging Face",
+      "url": "https://huggingface.co/McGill-NLP/AfriqueQwen3.5-4B",
+      "snippet": "AfriqueQwen3.5-4B is part of the AfriqueLLM suite—a collection of open language models adapted to 20 African languages through continued pre-training (CPT) on ~26B tokens. This model is based on Qwen/Qwen3.5-4B-Base and has been specifically adapted for improved performance on African languages ..."
+    },
+    {
+      "title": "McGill-NLP/AfriqueQwen3.5-4B-Instruct-v1 · Hugging Face",
+      "url": "https://huggingface.co/McGill-NLP/AfriqueQwen3.5-4B-Instruct-v1",
+      "snippet": "The checkpoint declares Qwen3_5ForConditionalGeneration but carries no vision weights (426 language-model tensors plus a tied lm_head copy, 0 visual), so --language-model-only is required."
+    }
+  ]
+}

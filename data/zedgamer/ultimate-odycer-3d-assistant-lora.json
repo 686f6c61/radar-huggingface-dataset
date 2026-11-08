@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zedgamer/ultimate-odycer-3d-assistant-lora",
+  "slug": "zedgamer-ultimate-odycer-3d-assistant-lora",
+  "author": "zedgamer",
+  "url": "https://huggingface.co/zedgamer/ultimate-odycer-3d-assistant-lora",
+  "created_at": "2026-11-08T07:48:19.000Z",
+  "updated_at": "2026-11-08T07:50:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "ultimate-odycer",
+    "3d",
+    "lora",
+    "city-editor",
+    "plantlab",
+    "bestiary",
+    "text-generation",
+    "conversational",
+    "fr",
+    "en",
+    "base_model:ccore/Qwen3.5-4B-3D-Coder",
+    "base_model:adapter:ccore/Qwen3.5-4B-3D-Coder",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85552842,
+  "storage_human": "86 MB",
+  "base_model": "ccore/Qwen3.5-4B-3D-Coder",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multiplayer worlds, under your control | Ultimate Odycer",
+      "url": "https://www.ultimateodycer.com/",
+      "snippet": "An authoritative Zig game server, world-building tools and client integration paths for independent studios."
+    },
+    {
+      "title": "UltimateOdycer - YouTube",
+      "url": "https://www.youtube.com/channel/UCIWC2OAc69P61TPtdNKnYFg",
+      "snippet": "Ultimate Odycer is a server-first VR MMORPG engine built around a Zig backend and a Godot/OpenXR client path. Here we publish reproducible proof runs, architecture breakdowns, world-building tools ..."
+    }
+  ]
+}

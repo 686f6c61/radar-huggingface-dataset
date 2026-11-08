@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "sjy090520/sd35m-tsd-pm3-single-reward",
+  "slug": "sjy090520-sd35m-tsd-pm3-single-reward",
+  "author": "sjy090520",
+  "url": "https://huggingface.co/sjy090520/sd35m-tsd-pm3-single-reward",
+  "created_at": "2026-11-08T06:22:16.000Z",
+  "updated_at": "2026-11-08T06:26:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "text-to-image",
+    "base_model:stabilityai/stable-diffusion-3.5-medium",
+    "base_model:adapter:stabilityai/stable-diffusion-3.5-medium",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3385297504,
+  "storage_human": "3.4 GB",
+  "base_model": "stabilityai/stable-diffusion-3.5-medium",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

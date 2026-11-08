@@ -5,7 +5,7 @@
   "author": "HollowBytez",
   "url": "https://huggingface.co/HollowBytez/RajuMistri-V1",
   "created_at": "2026-11-06T07:45:15.000Z",
-  "updated_at": "2026-11-06T20:22:45.000Z",
+  "updated_at": "2026-11-07T08:04:41.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 44,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 563814906,
-  "storage_human": "564 MB",
+  "storage_bytes": 1187513377,
+  "storage_human": "1.2 GB",
   "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
   "formats": [
     "safetensors"

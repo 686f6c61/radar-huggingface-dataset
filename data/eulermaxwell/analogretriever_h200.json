@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "eulermaxwell/analogretriever_H200",
+  "slug": "eulermaxwell-analogretriever_h200",
+  "author": "eulermaxwell",
+  "url": "https://huggingface.co/eulermaxwell/analogretriever_H200",
+  "created_at": "2026-04-01T09:14:32.000Z",
+  "updated_at": "2026-11-08T09:26:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "analog-circuits",
+    "cross-modal-retrieval",
+    "graph-neural-networks",
+    "spice",
+    "iccad2026",
+    "en",
+    "dataset:eulermaxwell/AnalogRetriever-data",
+    "base_model:openai/clip-vit-large-patch14",
+    "base_model:finetune:openai/clip-vit-large-patch14",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10380376175,
+  "storage_human": "10.4 GB",
+  "base_model": "openai/clip-vit-large-patch14",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eulermaxwell/analogretriever_H200 · Hugging Face",
+      "url": "https://huggingface.co/eulermaxwell/analogretriever_H200",
+      "snippet": "eulermaxwell ... analogretriever_H200 like 0 Follow Analogretriever 3 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "eulermaxwell/AnalogRetriever-model · Hugging Face",
+      "url": "https://huggingface.co/eulermaxwell/AnalogRetriever-model",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

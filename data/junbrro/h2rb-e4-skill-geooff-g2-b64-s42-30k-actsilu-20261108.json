@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "junbrro/h2rb-e4-skill-geooff-g2-b64-s42-30k-actsilu-20261108",
+  "slug": "junbrro-h2rb-e4-skill-geooff-g2-b64-s42-30k-actsilu-20261108",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/h2rb-e4-skill-geooff-g2-b64-s42-30k-actsilu-20261108",
+  "created_at": "2026-11-08T09:04:22.000Z",
+  "updated_at": "2026-11-08T09:14:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6915094616,
+  "parameters_human": "6.92B",
+  "storage_bytes": 13868868378,
+  "storage_human": "13.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - alchaincyf/nuwa-skill: 你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式 ...",
+      "url": "https://github.com/alchaincyf/nuwa-skill",
+      "snippet": "Nuwa is an Agent Skill that extracts cognitive frameworks — mental models, decision heuristics, expression DNA — from any public figure into a runnable perspective skill."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "YunhengWang/kimodo-policy",
+  "slug": "yunhengwang-kimodo-policy",
+  "author": "YunhengWang",
+  "url": "https://huggingface.co/YunhengWang/kimodo-policy",
+  "created_at": "2026-10-02T14:17:11.000Z",
+  "updated_at": "2026-11-08T10:32:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99725604074,
+  "storage_human": "99.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YunhengWang/kimodo-policy at main - Hugging Face",
+      "url": "https://huggingface.co/YunhengWang/kimodo-policy/tree/main",
+      "snippet": "YunhengWang / kimodo-policy Like 1 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new main kimodo-policy 102 GB Ctrl+K Ctrl+K 1 contributor History:23 commits YunhengWang Rename HumanoidArena large checkpoint directory 7f51f30 verified5 days ago HumanoidArena_Multi_TaskRename HumanoidArena large checkpoint directory5 days ago HumanoidArena_Single_TaskAdd files ..."
+    },
+    {
+      "title": "YunhengWang/kimodo-policy · Hugging Face",
+      "url": "https://huggingface.co/YunhengWang/kimodo-policy",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

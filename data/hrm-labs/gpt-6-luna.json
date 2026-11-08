@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "hrm-labs/GPT-6-Luna",
+  "slug": "hrm-labs-gpt-6-luna",
+  "author": "hrm-labs",
+  "url": "https://huggingface.co/hrm-labs/GPT-6-Luna",
+  "created_at": "2026-11-08T10:08:07.000Z",
+  "updated_at": "2026-11-08T10:08:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:NasledieLab/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy",
+    "base_model:quantized:NasledieLab/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 7455540352,
+  "storage_human": "7.5 GB",
+  "base_model": "NasledieLab/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-Karpy",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT-6 Luna Model | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+      "snippet": "reasoning.effort supports none, low, medium (default), high, xhigh, and max. Use the Responses API for built-in tools and function calling. Chat Completions supports function calling only with reasoning_effort set to none."
+    },
+    {
+      "title": "GPT-6 Luna - Specs, Benchmarks & Details",
+      "url": "https://apxml.com/models/gpt-6-luna",
+      "snippet": "About GPT-6 Luna GPT-6 Luna is the high-efficiency foundation model in OpenAI's GPT-6 lineup designed for low-latency workloads. It is tailored for high-throughput chat, classification, and lightweight agentic applications."
+    }
+  ]
+}

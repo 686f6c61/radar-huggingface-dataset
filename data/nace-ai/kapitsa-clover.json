@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "nace-ai/kapitsa-clover",
+  "slug": "nace-ai-kapitsa-clover",
+  "author": "nace-ai",
+  "url": "https://huggingface.co/nace-ai/kapitsa-clover",
+  "created_at": "2026-11-08T11:44:44.000Z",
+  "updated_at": "2026-11-08T11:44:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "kapitsa",
+    "apple-silicon",
+    "local-inference",
+    "text-generation",
+    "base_model:kapitsaprime/Clover-35B-A3B-Preview-MLX-4bit",
+    "base_model:finetune:kapitsaprime/Clover-35B-A3B-Preview-MLX-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "kapitsaprime/Clover-35B-A3B-Preview-MLX-4bit",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - nace-ai/kapitsa: Blazing fast Apple Silicon inference engine ...",
+      "url": "https://github.com/nace-ai/kapitsa",
+      "snippet": "Kapitsa is an inference engine for Apple silicon that runs Qwen, Nemotron and Recursive's Flint models locally, built for coding agents. It starts opencode, Claude Code, Codex or pi on a local model, and serves OpenAI and Anthropic APIs. Kapitsa has the fastest decode in 33 of the 38 model and Mac ..."
+    },
+    {
+      "title": "Releases · nace-ai/kapitsa · GitHub",
+      "url": "https://github.com/nace-ai/kapitsa/releases",
+      "snippet": "README: Kapitsa's prefill and decode from 1K to 32K context on the M5 Max (two charts, every model), and Clover re-measured on 7f4e709 (5,981 / 304) by @fearampgreed in #850"
+    }
+  ]
+}

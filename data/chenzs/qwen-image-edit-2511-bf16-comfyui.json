@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "chenzs/Qwen-Image-Edit-2511-BF16-ComfyUI",
+  "slug": "chenzs-qwen-image-edit-2511-bf16-comfyui",
+  "author": "chenzs",
+  "url": "https://huggingface.co/chenzs/Qwen-Image-Edit-2511-BF16-ComfyUI",
+  "created_at": "2026-11-08T11:27:57.000Z",
+  "updated_at": "2026-11-08T11:27:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:FireRedTeam/FireRed-Image-Edit-1.0",
+    "base_model:finetune:FireRedTeam/FireRed-Image-Edit-1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40861031560,
+  "storage_human": "40.9 GB",
+  "base_model": "Qwen/Qwen-Image-Edit, Qwen/Qwen-Image-Edit-2509, Qwen/Qwen-Image-Edit-2511, FireRedTeam/FireRed-Image-Edit-1.0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen-Image-Edit-2511 - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-Edit-2511",
+      "snippet": "Image-to-Image model with 20B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen-Image-Edit-2511 in ComfyUI: Consistent Image Editing",
+      "url": "https://docs.comfy.org/tutorials/image/qwen/qwen-image-edit-2511",
+      "snippet": "Edit images with Qwen-Image-Edit-2511 in ComfyUI: stronger character and multi-person consistency, built-in LoRAs, and material replacement."
+    }
+  ]
+}

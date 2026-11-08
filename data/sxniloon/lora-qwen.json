@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "sxniloon/lora-qwen",
+  "slug": "sxniloon-lora-qwen",
+  "author": "sxniloon",
+  "url": "https://huggingface.co/sxniloon/lora-qwen",
+  "created_at": "2026-11-08T11:37:44.000Z",
+  "updated_at": "2026-11-08T11:39:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 295146176,
+  "storage_human": "295 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen AI Models (273) | Civitai",
+      "url": "https://civitai.com/tag/qwen",
+      "snippet": "Browse 273 AI models tagged \"Qwen\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "qwen_MCNL - v1 EXCLUSIVE - Free AI LORA | TensorHub Art",
+      "url": "https://tensorhub.art/models/911614530121909711",
+      "snippet": "Download qwen_MCNL - free LORA Qwen-Image AI model on TENSORHUB ART. EXCLUSIVE. By clonemail2001991"
+    }
+  ]
+}

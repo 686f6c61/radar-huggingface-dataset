@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "42ailab/DeepSeek-V4-Flash-GGUF",
+  "slug": "42ailab-deepseek-v4-flash-gguf",
+  "author": "42ailab",
+  "url": "https://huggingface.co/42ailab/DeepSeek-V4-Flash-GGUF",
+  "created_at": "2026-07-26T05:48:35.000Z",
+  "updated_at": "2026-11-08T06:00:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "chat",
+    "reasoning",
+    "moe",
+    "deepseek-v4",
+    "42model",
+    "text-generation",
+    "en",
+    "zh",
+    "arxiv:2606.19348",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "42ailab/DeepSeek-V4-Flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/42ailab/DeepSeek-V4-Flash-GGUF",
+      "snippet": "The two GGUF builds are 80.76 GB and 90.89 GB, both above Hugging Face's 50 GB per-file hard limit, so they cannot be hosted here. Splitting them into shards would break byte-for-byte identity with the original repo, which is exactly what makes a mirror worth verifying — so we don't. Get the ..."
+    },
+    {
+      "title": "README.md · 42ailab/DeepSeek-V4-Flash-GGUF at main",
+      "url": "https://huggingface.co/42ailab/DeepSeek-V4-Flash-GGUF/blob/main/README.md",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

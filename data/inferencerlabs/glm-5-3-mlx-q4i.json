@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "inferencerlabs/GLM-5.3-MLX-Q4i",
+  "slug": "inferencerlabs-glm-5-3-mlx-q4i",
+  "author": "inferencerlabs",
+  "url": "https://huggingface.co/inferencerlabs/GLM-5.3-MLX-Q4i",
+  "created_at": "2026-08-31T10:15:14.000Z",
+  "updated_at": "2026-11-08T06:49:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "glm_moe_dsa",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:zai-org/GLM-5.3-BF16",
+    "base_model:quantized:zai-org/GLM-5.3-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 300,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 456674790716,
+  "storage_human": "456.7 GB",
+  "base_model": "zai-org/GLM-5.3-BF16",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inferencerlabs/GLM-5.3-MLX-Q4i · Hugging Face",
+      "url": "https://huggingface.co/inferencerlabs/GLM-5.3-MLX-Q4i",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3-MLX-Q4i · Models",
+      "url": "https://www.modelscope.cn/models/inferencerlabs/GLM-5.3-MLX-Q4i",
+      "snippet": "GLM 5.3 See GLM 5.3 in action: demonstration videos Tested with a M3 Ultra using Inferencer app Text Inference: ~15.8 tokens/s @ 1000 tokens ~428.6 GiB Q4-INF uses the data-agnostic INF method tuned to yield maximum general accuracy within a 512 GiB memory budget. Due to system memory and time constraints, the figures shown below are from the conversion of GLM 5.1."
+    }
+  ]
+}
