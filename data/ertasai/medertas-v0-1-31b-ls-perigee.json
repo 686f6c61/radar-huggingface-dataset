@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "ErtasAI/MedErtas-v0.1-31B-LS-Perigee",
+  "slug": "ertasai-medertas-v0-1-31b-ls-perigee",
+  "author": "ErtasAI",
+  "url": "https://huggingface.co/ErtasAI/MedErtas-v0.1-31B-LS-Perigee",
+  "created_at": "2026-11-09T02:33:16.000Z",
+  "updated_at": "2026-11-09T02:33:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4_assistant",
+    "medical",
+    "clinical",
+    "speculative-decoding",
+    "draft-model",
+    "mtp",
+    "gemma4",
+    "ertas",
+    "medertas",
+    "perigee",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-4-31B-it-assistant",
+    "base_model:finetune:google/gemma-4-31B-it-assistant",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 486,
+  "trending_score": 0,
+  "parameters": 469518596,
+  "parameters_human": "469.5M",
+  "storage_bytes": 973441547,
+  "storage_human": "973 MB",
+  "base_model": "google/gemma-4-31B-it-assistant",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

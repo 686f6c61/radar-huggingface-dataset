@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Adi-13-adi/whisper-small-hi-lora",
+  "slug": "adi-13-adi-whisper-small-hi-lora",
+  "author": "Adi-13-adi",
+  "url": "https://huggingface.co/Adi-13-adi/whisper-small-hi-lora",
+  "created_at": "2026-11-09T05:08:19.000Z",
+  "updated_at": "2026-11-09T05:08:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14176064,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

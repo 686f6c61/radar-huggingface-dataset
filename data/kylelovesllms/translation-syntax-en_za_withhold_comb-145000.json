@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "kylelovesllms/translation-syntax-en_za_withhold_comb-145000",
+  "slug": "kylelovesllms-translation-syntax-en_za_withhold_comb-145000",
+  "author": "kylelovesllms",
+  "url": "https://huggingface.co/kylelovesllms/translation-syntax-en_za_withhold_comb-145000",
+  "created_at": "2026-11-09T05:48:19.000Z",
+  "updated_at": "2026-11-09T06:06:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10513188184,
+  "storage_human": "10.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

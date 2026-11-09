@@ -5,7 +5,7 @@
   "author": "braindecode",
   "url": "https://huggingface.co/braindecode/corteg-stanford-pooled",
   "created_at": "2026-11-08T03:22:55.000Z",
-  "updated_at": "2026-11-08T03:22:59.000Z",
+  "updated_at": "2026-11-08T17:02:33.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
     "finger-flexion",
     "pytorch_model_hub_mixin",
     "arxiv:2605.10337",
-    "base_model:braindecode/STEEGFormer-small",
-    "base_model:finetune:braindecode/STEEGFormer-small",
+    "base_model:braindecode/corteg-small-pretrained",
+    "base_model:finetune:braindecode/corteg-small-pretrained",
     "license:mit",
     "region:us"
   ],
@@ -33,7 +33,7 @@
   "parameters_human": "25.5M",
   "storage_bytes": 203762307,
   "storage_human": "204 MB",
-  "base_model": "braindecode/STEEGFormer-small",
+  "base_model": "braindecode/corteg-small-pretrained",
   "formats": [
     "safetensors"
   ],

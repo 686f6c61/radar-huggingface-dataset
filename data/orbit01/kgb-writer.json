@@ -5,7 +5,7 @@
   "author": "orbit01",
   "url": "https://huggingface.co/orbit01/kgb-writer",
   "created_at": "2026-10-15T23:53:13.000Z",
-  "updated_at": "2026-11-05T23:21:44.000Z",
+  "updated_at": "2026-11-09T00:36:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,8 +33,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 520707244,
-  "storage_human": "521 MB",
+  "storage_bytes": 688539484,
+  "storage_human": "689 MB",
   "base_model": "kakaocorp/kanana-1.5-8b-instruct-2505",
   "formats": [
     "safetensors"

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "MacEpic/ruaccent-coreml",
+  "slug": "macepic-ruaccent-coreml",
+  "author": "MacEpic",
+  "url": "https://huggingface.co/MacEpic/ruaccent-coreml",
+  "created_at": "2026-11-09T08:45:23.000Z",
+  "updated_at": "2026-11-09T08:45:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coreml",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "coreml",
+    "ruaccent",
+    "stress",
+    "ru",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46605663,
+  "storage_human": "47 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "xtools-at",
   "url": "https://huggingface.co/xtools-at/Qwen3.5-4B-Claude-3xMerge-Jackrong-UNCENSORED-heretic",
   "created_at": "2026-10-14T14:38:13.000Z",
-  "updated_at": "2026-11-08T02:23:50.000Z",
+  "updated_at": "2026-11-08T03:58:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,13 +38,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 296,
+  "likes": 1,
+  "downloads_30d": 688,
   "trending_score": 0,
   "parameters": 4539265536,
   "parameters_human": "4.54B",
-  "storage_bytes": 9118599278,
-  "storage_human": "9.1 GB",
+  "storage_bytes": 9359800142,
+  "storage_human": "9.4 GB",
   "base_model": "xtools-at/Qwen3.5-4B-Claude-3xMerge-Jackrong",
   "formats": [
     "safetensors"

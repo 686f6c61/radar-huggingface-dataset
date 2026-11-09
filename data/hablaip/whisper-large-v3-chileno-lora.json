@@ -25,10 +25,11 @@
     "es",
     "base_model:openai/whisper-large-v3",
     "base_model:adapter:openai/whisper-large-v3",
+    "doi:10.57967/hf/11517",
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "OpenOneRec/Kelix-AEDIT",
+  "slug": "openonerec-kelix-aedit",
+  "author": "OpenOneRec",
+  "url": "https://huggingface.co/OpenOneRec/Kelix-AEDIT",
+  "created_at": "2026-11-09T06:28:14.000Z",
+  "updated_at": "2026-11-09T06:46:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "kelix",
+    "image-reconstruction",
+    "image-tokenizer",
+    "diffusion",
+    "flow-matching",
+    "en",
+    "arxiv:2602.09843",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1606689952,
+  "parameters_human": "1.61B",
+  "storage_bytes": 6427177251,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

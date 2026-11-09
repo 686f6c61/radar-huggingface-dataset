@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "SzaBotond/puli-gpt2-petofi-v01",
+  "slug": "szabotond-puli-gpt2-petofi-v01",
+  "author": "SzaBotond",
+  "url": "https://huggingface.co/SzaBotond/puli-gpt2-petofi-v01",
+  "created_at": "2026-11-06T18:11:55.000Z",
+  "updated_at": "2026-11-09T11:43:38.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "hu"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "hungarian",
+    "poetry",
+    "petofi",
+    "puli",
+    "hu",
+    "base_model:NYTK/PULI-GPT-2",
+    "base_model:finetune:NYTK/PULI-GPT-2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354609152,
+  "parameters_human": "354.6M",
+  "storage_bytes": 1418466816,
+  "storage_human": "1.4 GB",
+  "base_model": "NYTK/PULI-GPT-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Drama-3-Japanese-GGUF",
+  "slug": "mradermacher-drama-3-japanese-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Drama-3-Japanese-GGUF",
+  "created_at": "2026-11-09T06:00:14.000Z",
+  "updated_at": "2026-11-09T06:19:30.000Z",
+  "license": "fish-audio-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "speech",
+    "tts",
+    "voice-cloning",
+    "japanese",
+    "emotional-speech-generation",
+    "ja",
+    "base_model:Aratako/Drama-3-Japanese",
+    "base_model:quantized:Aratako/Drama-3-Japanese",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34676863616,
+  "parameters_human": "34.68B",
+  "storage_bytes": 241868432928,
+  "storage_human": "241.9 GB",
+  "base_model": "Aratako/Drama-3-Japanese",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

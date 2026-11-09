@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "FunnyLLMs/Mr_Beast_comment_section_bot",
+  "slug": "funnyllms-mr_beast_comment_section_bot",
+  "author": "FunnyLLMs",
+  "url": "https://huggingface.co/FunnyLLMs/Mr_Beast_comment_section_bot",
+  "created_at": "2026-11-09T12:19:15.000Z",
+  "updated_at": "2026-11-09T12:24:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73300480,
+  "storage_human": "73 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

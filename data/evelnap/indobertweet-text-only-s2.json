@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "evelnap/indobertweet-text-only-s2",
+  "slug": "evelnap-indobertweet-text-only-s2",
+  "author": "evelnap",
+  "url": "https://huggingface.co/evelnap/indobertweet-text-only-s2",
+  "created_at": "2026-11-02T03:15:46.000Z",
+  "updated_at": "2026-11-09T12:18:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "id",
+    "base_model:indolem/indobertweet-base-uncased",
+    "base_model:finetune:indolem/indobertweet-base-uncased",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 110562053,
+  "parameters_human": "110.6M",
+  "storage_bytes": 884543496,
+  "storage_human": "885 MB",
+  "base_model": "indolem/indobertweet-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

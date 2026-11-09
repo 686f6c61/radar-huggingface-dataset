@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "AI-KSK/ksk-video-232-comfyui-workflows",
+  "slug": "ai-ksk-ksk-video-232-comfyui-workflows",
+  "author": "AI-KSK",
+  "url": "https://huggingface.co/AI-KSK/ksk-video-232-comfyui-workflows",
+  "created_at": "2026-11-09T12:24:36.000Z",
+  "updated_at": "2026-11-09T12:24:41.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "comfyui",
+    "ltx-2.3",
+    "inpainting",
+    "r2v",
+    "video-repair",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2119609,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

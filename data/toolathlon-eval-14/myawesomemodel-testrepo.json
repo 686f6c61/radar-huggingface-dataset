@@ -4,8 +4,8 @@
   "slug": "toolathlon-eval-14-myawesomemodel-testrepo",
   "author": "toolathlon-eval-14",
   "url": "https://huggingface.co/toolathlon-eval-14/MyAwesomeModel-TestRepo",
-  "created_at": "2026-11-08T07:15:49.000Z",
-  "updated_at": "2026-11-08T07:15:43.000Z",
+  "created_at": "2026-11-09T04:28:38.000Z",
+  "updated_at": "2026-11-09T04:28:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -13,6 +13,9 @@
   "languages": [],
   "tags": [
     "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
     "license:mit",
     "endpoints_compatible",
     "region:us"

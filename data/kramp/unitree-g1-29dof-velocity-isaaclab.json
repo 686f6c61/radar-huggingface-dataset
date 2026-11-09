@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kramp/unitree-g1-29dof-velocity-isaaclab",
+  "slug": "kramp-unitree-g1-29dof-velocity-isaaclab",
+  "author": "kramp",
+  "url": "https://huggingface.co/kramp/unitree-g1-29dof-velocity-isaaclab",
+  "created_at": "2026-11-03T13:08:11.000Z",
+  "updated_at": "2026-11-04T09:38:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "unitree",
+  "languages": [],
+  "tags": [
+    "unitree",
+    "onnx",
+    "unitree-g1-29dof",
+    "isaaclab",
+    "reinforcement-learning",
+    "velocity",
+    "robotics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5460002,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pièces détachées Agriculture Motoculture Travaux Publics - Kramp",
+      "url": "https://www.kramp.com/shop-fr/fr",
+      "snippet": "Le concept powered by Kramp a tout de suite fait la différence pour pouvoir répondre aux attentes de nos clients. Grâce au réassort …"
+    },
+    {
+      "title": "Pièces détachées pour l'Agriculture et la Motoculture - Kramp",
+      "url": "https://www.kramp.com/shop-ch/fr",
+      "snippet": "Boostez votre business ! Avec les Business Solutions | powered by Kramp, accélérez vos ventes, réduisez vos coûts et augmentez …"
+    },
+    {
+      "title": "It's that easy - KRAMP",
+      "url": "https://login.kramp.com/",
+      "snippet": "Login Enter your username and password to access the webshop."
+    },
+    {
+      "title": "Kramp pour les clients - Des pièces, des services et une assistance ...",
+      "url": "https://group.kramp.com/fr/clients/",
+      "snippet": "Que disent nos clients ? Plus de 60 000 distributeurs dans 24 pays nous font confiance. Découvrez ce qu’ils pensent de nos produits …"
+    },
+    {
+      "title": "Carrières, partenariats et réussite des clients - KRAMP",
+      "url": "https://group.kramp.com/fr/",
+      "snippet": "Avec 11 centres de distribution et 24 bureaux de vente à travers toute l’Europe, KRAMP est le partenaire incontournable de ses …"
+    }
+  ]
+}

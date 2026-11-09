@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "cbmusetti/reward-model-english_with_ties",
+  "slug": "cbmusetti-reward-model-english_with_ties",
+  "author": "cbmusetti",
+  "url": "https://huggingface.co/cbmusetti/reward-model-english_with_ties",
+  "created_at": "2026-11-09T12:10:54.000Z",
+  "updated_at": "2026-11-09T12:34:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "reward-model",
+    "humor",
+    "pairwise-preference",
+    "thesis",
+    "en",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 936565296,
+  "storage_human": "937 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

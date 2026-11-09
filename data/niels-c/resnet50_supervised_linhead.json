@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "niels-c/resnet50_supervised_linhead",
+  "slug": "niels-c-resnet50_supervised_linhead",
+  "author": "niels-c",
+  "url": "https://huggingface.co/niels-c/resnet50_supervised_linhead",
+  "created_at": "2026-11-09T09:23:30.000Z",
+  "updated_at": "2026-11-09T09:24:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 102551045,
+  "storage_human": "103 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "niels-c (Niels) - Models - Hugging Face",
+      "url": "https://huggingface.co/niels-c/models",
+      "snippet": "User profile of Niels on Hugging Face"
+    },
+    {
+      "title": "niels-c (Niels) - Hugging Face",
+      "url": "https://huggingface.co/niels-c",
+      "snippet": "User profile of Niels on Hugging Face"
+    },
+    {
+      "title": "ResNet50 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/resnet50",
+      "snippet": "ResNet50 Imagenet classifier and general purpose backbone. ResNet50 is a machine learning model that can classify images from the Imagenet dataset. It can also be used as a backbone in building more complex models for specific use cases."
+    },
+    {
+      "title": "What Is Instruction Tuning? How Supervised Fine-Tuning Makes Models ...",
+      "url": "https://www.unite.ai/what-is-instruction-tuning-how-supervised-fine-tuning-makes-models-useful/",
+      "snippet": "AI Fundamentals What Is Instruction Tuning? How Supervised Fine-Tuning Makes Models Useful Instruction tuning uses examples of instructions and desired responses to make a pretrained model more useful, controllable, and consistent in interactive tasks. This guide explains the mechanism, trade-offs, evaluation, and controls that matter in practice."
+    },
+    {
+      "title": "ResNet50 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/resnet50",
+      "snippet": "ResNet50 is a machine learning model that can classify images from the Imagenet dataset. It can also be used as a backbone in building more complex models for specific use cases."
+    }
+  ]
+}

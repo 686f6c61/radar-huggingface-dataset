@@ -5,7 +5,7 @@
   "author": "binbinao",
   "url": "https://huggingface.co/binbinao/qwen3.5-9b-shanghai-lora",
   "created_at": "2026-11-08T04:14:44.000Z",
-  "updated_at": "2026-11-08T04:30:24.000Z",
+  "updated_at": "2026-11-08T10:38:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

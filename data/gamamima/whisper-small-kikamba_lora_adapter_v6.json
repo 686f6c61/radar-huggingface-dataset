@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "gamamima/whisper-small-kikamba_lora_adapter_v6",
+  "slug": "gamamima-whisper-small-kikamba_lora_adapter_v6",
+  "author": "gamamima",
+  "url": "https://huggingface.co/gamamima/whisper-small-kikamba_lora_adapter_v6",
+  "created_at": "2026-11-09T09:35:08.000Z",
+  "updated_at": "2026-11-09T09:35:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gamamima/whisper-small-kikamba_lora_adapter_v5 · Hugging Face",
+      "url": "https://huggingface.co/gamamima/whisper-small-kikamba_lora_adapter_v5",
+      "snippet": "Machine learning model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "adapter_model.safetensors · AnupamaW/whisper-small-lora-r48-si5-cs4 ...",
+      "url": "https://huggingface.co/AnupamaW/whisper-small-lora-r48-si5-cs4-seed456/blob/main/adapter_model.safetensors",
+      "snippet": "Instructions to use AnupamaW/whisper-small-lora-r48-si5-cs4-seed456 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "whisper · Ollama",
+      "url": "https://ollama.com/search?q=whisper",
+      "snippet": "Whisper is a pre-trained model for automatic speech recognition (ASR) and speech translation."
+    },
+    {
+      "title": "LoRA Adapters Explained - openinnovation.ai",
+      "url": "https://openinnovation.ai/lora-adapters-explained-efficient-fine-tuning-for-llms-without-retraining/",
+      "snippet": "Low-rank adaptation (LoRA) adapters are a lightweight alternative to specialize large language models (LLMs) without retraining the entire model. Instead of modifying billions of parameters, LoRA introduces a small set of additional weights that \"plug in\" to an existing base model and adapt it to a specific task or domain."
+    }
+  ]
+}

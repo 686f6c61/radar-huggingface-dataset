@@ -48,8 +48,8 @@
   "trending_score": 0,
   "parameters": 1918181888,
   "parameters_human": "1.92B",
-  "storage_bytes": 7783264576,
-  "storage_human": "7.8 GB",
+  "storage_bytes": 5936873328,
+  "storage_human": "5.9 GB",
   "base_model": "LiquidAI/d1-2B",
   "formats": [
     "gguf",

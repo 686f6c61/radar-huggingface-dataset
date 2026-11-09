@@ -5,7 +5,7 @@
   "author": "pfnet",
   "url": "https://huggingface.co/pfnet/plamo-3-translate-31b",
   "created_at": "2026-10-26T08:41:09.000Z",
-  "updated_at": "2026-11-08T06:21:02.000Z",
+  "updated_at": "2026-11-09T05:53:54.000Z",
   "license": "plamo-community-license",
   "license_family": "unknown",
   "pipeline_tag": "translation",
@@ -129,7 +129,7 @@
     "region:us"
   ],
   "likes": 24,
-  "downloads_30d": 501,
+  "downloads_30d": 561,
   "trending_score": 24,
   "parameters": 31757456384,
   "parameters_human": "31.76B",

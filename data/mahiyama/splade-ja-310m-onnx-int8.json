@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mahiyama/splade-ja-310m-onnx-int8",
+  "slug": "mahiyama-splade-ja-310m-onnx-int8",
+  "author": "mahiyama",
+  "url": "https://huggingface.co/mahiyama/splade-ja-310m-onnx-int8",
+  "created_at": "2026-05-08T05:08:10.000Z",
+  "updated_at": "2026-11-09T09:31:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "optimum",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "optimum",
+    "onnx",
+    "modernbert",
+    "int8",
+    "quantized",
+    "sparse-encoder",
+    "splade",
+    "sparse",
+    "cpu-inference",
+    "information-retrieval",
+    "japanese",
+    "feature-extraction",
+    "ja",
+    "dataset:mahiyama/auto-wiki-qa",
+    "base_model:mahiyama/splade-ja-310m",
+    "base_model:quantized:mahiyama/splade-ja-310m",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 395437508,
+  "storage_human": "395 MB",
+  "base_model": "mahiyama/splade-ja-310m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mahiyama/splade-ja-310m-onnx-int8 · Hugging Face",
+      "url": "https://huggingface.co/mahiyama/splade-ja-310m-onnx-int8",
+      "snippet": "mahiyama/splade-ja-310mを CPU 推論向けに ONNX 化 + 動的 INT8 量子化したバリアントです。 オンライン検索のクエリエンコーダ用途を想定し、1 リクエストの低レイテンシを最優先に最適化しています。 ハイライト 指標 元の PyTorch ..."
+    },
+    {
+      "title": "mahiyama (Masayuki Hiyama) - Hugging Face",
+      "url": "https://huggingface.co/mahiyama/models",
+      "snippet": "mahiyama/splade-ja-310m-v2 ... mahiyama/amagasaki-qna-embedding-.6B ... mahiyama/splade-ja-310m-onnx-int8 ... mahiyama/splade-ja-310m"
+    },
+    {
+      "title": "Splade Ja 310m Onnx Int8 - AI Dataset Insights",
+      "url": "https://free2aitools.com/dataset/mahiyama/splade-ja-310m-onnx-int8",
+      "snippet": "Registry entry for dataset Splade Ja 310m Onnx Int8; source metadata pending."
+    },
+    {
+      "title": "Splade Modernbert Ja 310m Onnx Int8 - AI Dataset Insights",
+      "url": "https://free2aitools.com/dataset/mahiyama/splade-modernbert-ja-310m-onnx-int8",
+      "snippet": "by mahiyama mahiyama/splade-modernbert-ja-310m-onnx-int8 Free2AITools Nexus Index 37.4 S: Semantic50 Query-time baseline · scored live at search A: Authority0 P: Popularity2 R: Recency74 Q: Quality50 Tech Context Vital Performance— Source → Share: 📤 𝕏 in 📣 🔗 Data Integrity 37.4 FNI Score - Size - Rows - Tokens 🔬Dive Deep ..."
+    },
+    {
+      "title": "GitHub - naver/splade: SPLADE: sparse neural search (SIGIR21, SIGIR22)",
+      "url": "https://github.com/naver/splade",
+      "snippet": "SPLADE: sparse neural search (SIGIR21, SIGIR22). Contribute to naver/splade development by creating an account on GitHub."
+    }
+  ]
+}

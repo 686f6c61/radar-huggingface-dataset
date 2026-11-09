@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Tomoali/MOSS-Image-SFT-4-steps-ryzen-ai-npu",
+  "slug": "tomoali-moss-image-sft-4-steps-ryzen-ai-npu",
+  "author": "Tomoali",
+  "url": "https://huggingface.co/Tomoali/MOSS-Image-SFT-4-steps-ryzen-ai-npu",
+  "created_at": "2026-11-08T17:46:21.000Z",
+  "updated_at": "2026-11-09T05:38:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "ryzen-ai",
+    "npu",
+    "moss-image",
+    "text-to-image",
+    "base_model:akhaliq/MOSS-Image-SFT-4-steps",
+    "base_model:quantized:akhaliq/MOSS-Image-SFT-4-steps",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12898301182,
+  "storage_human": "12.9 GB",
+  "base_model": "akhaliq/MOSS-Image-SFT-4-steps",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

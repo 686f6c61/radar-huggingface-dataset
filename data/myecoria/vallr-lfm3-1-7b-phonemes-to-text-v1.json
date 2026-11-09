@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "MyEcoria/VALLR-LFM3-1.7B-phonemes-to-text-v1",
+  "slug": "myecoria-vallr-lfm3-1-7b-phonemes-to-text-v1",
+  "author": "MyEcoria",
+  "url": "https://huggingface.co/MyEcoria/VALLR-LFM3-1.7B-phonemes-to-text-v1",
+  "created_at": "2026-11-09T08:59:06.000Z",
+  "updated_at": "2026-11-09T09:02:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm3",
+    "text-generation",
+    "lip-reading",
+    "vasr",
+    "phonemes",
+    "vallr",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:finetune:LiquidAI/LFM3-1.7B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801536,
+  "parameters_human": "1.73B",
+  "storage_bytes": 3475544082,
+  "storage_human": "3.5 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

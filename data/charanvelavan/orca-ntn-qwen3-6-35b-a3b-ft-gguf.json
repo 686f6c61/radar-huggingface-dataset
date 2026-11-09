@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "CharanVelavan/orca-ntn-qwen3.6-35b-a3b-ft-gguf",
+  "slug": "charanvelavan-orca-ntn-qwen3-6-35b-a3b-ft-gguf",
+  "author": "CharanVelavan",
+  "url": "https://huggingface.co/CharanVelavan/orca-ntn-qwen3.6-35b-a3b-ft-gguf",
+  "created_at": "2026-11-09T10:42:41.000Z",
+  "updated_at": "2026-11-09T11:06:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3.6",
+    "tool-calling",
+    "cyber-security",
+    "telecommunications",
+    "itu-ai-for-good",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 19179521888,
+  "storage_human": "19.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

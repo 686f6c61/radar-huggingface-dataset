@@ -5,7 +5,7 @@
   "author": "NiftyOracleAI",
   "url": "https://huggingface.co/NiftyOracleAI/codesymb-lora-vault",
   "created_at": "2026-09-28T15:17:09.000Z",
-  "updated_at": "2026-11-04T09:19:07.000Z",
+  "updated_at": "2026-11-04T19:06:59.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 296107241308,
-  "storage_human": "296.1 GB",
+  "storage_bytes": 376992869180,
+  "storage_human": "377.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

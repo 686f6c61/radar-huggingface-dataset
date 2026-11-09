@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Veda-Labs/Vedika-Image-Mini-v1",
+  "slug": "veda-labs-vedika-image-mini-v1",
+  "author": "Veda-Labs",
+  "url": "https://huggingface.co/Veda-Labs/Vedika-Image-Mini-v1",
+  "created_at": "2026-11-09T06:38:03.000Z",
+  "updated_at": "2026-11-09T06:44:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "veda_image_diffusion",
+    "text-to-image",
+    "veda-labs",
+    "license:apache-2.0",
+    "diffusers:VedaImageDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1061550032,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

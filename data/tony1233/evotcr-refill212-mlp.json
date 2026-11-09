@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Tony1233/EvoTCR-Refill212-MLP",
+  "slug": "tony1233-evotcr-refill212-mlp",
+  "author": "Tony1233",
+  "url": "https://huggingface.co/Tony1233/EvoTCR-Refill212-MLP",
+  "created_at": "2026-11-09T07:01:10.000Z",
+  "updated_at": "2026-11-09T07:35:41.000Z",
+  "license": "alphafold3-output-terms",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "biology",
+    "tcr-pmhc",
+    "factor-model",
+    "zh",
+    "dataset:Tony1233/EvoTCR-1000-Refill212",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91460042,
+  "storage_human": "91 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwarkstar-4B-Instruct-Preview-GGUF",
+  "slug": "mradermacher-qwarkstar-4b-instruct-preview-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwarkstar-4B-Instruct-Preview-GGUF",
+  "created_at": "2025-03-07T09:02:25.000Z",
+  "updated_at": "2026-11-09T08:49:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:HuggingFaceTB/smoltalk",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 4473324544,
+  "parameters_human": "4.47B",
+  "storage_bytes": 40113733504,
+  "storage_human": "40.1 GB",
+  "base_model": "qingy2024/Qwarkstar-4B-Instruct-Preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

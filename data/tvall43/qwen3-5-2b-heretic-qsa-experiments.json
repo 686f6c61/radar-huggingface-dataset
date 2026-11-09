@@ -5,7 +5,7 @@
   "author": "tvall43",
   "url": "https://huggingface.co/tvall43/Qwen3.5-2B-heretic-QSA-experiments",
   "created_at": "2026-11-08T03:38:01.000Z",
-  "updated_at": "2026-11-08T03:40:29.000Z",
+  "updated_at": "2026-11-08T19:53:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 1889691712,
   "parameters_human": "1.89B",
-  "storage_bytes": 4977621596,
-  "storage_human": "5.0 GB",
+  "storage_bytes": 9911085748,
+  "storage_human": "9.9 GB",
   "base_model": "tvall43/Qwen3.5-2B-heretic",
   "formats": [
     "gguf"

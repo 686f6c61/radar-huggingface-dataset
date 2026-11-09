@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "onryzen5/test-2",
+  "slug": "onryzen5-test-2",
+  "author": "onryzen5",
+  "url": "https://huggingface.co/onryzen5/test-2",
+  "created_at": "2026-11-05T07:45:45.000Z",
+  "updated_at": "2026-11-09T04:58:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 48,
+  "trending_score": 0,
+  "parameters": 83572992,
+  "parameters_human": "83.6M",
+  "storage_bytes": 934783633,
+  "storage_human": "935 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

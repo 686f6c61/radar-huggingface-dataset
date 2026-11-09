@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Phips/NERVE",
+  "slug": "phips-nerve",
+  "author": "Phips",
+  "url": "https://huggingface.co/Phips/NERVE",
+  "created_at": "2026-09-10T14:49:08.000Z",
+  "updated_at": "2026-11-09T05:14:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "super-resolution",
+    "image-restoration",
+    "image-to-image",
+    "sisr",
+    "real-world-restoration",
+    "ncnn",
+    "spandrel",
+    "chainner",
+    "edge",
+    "mobile",
+    "en",
+    "dataset:Phips/lucid-cc0-v2-hc-512",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 603398210,
+  "storage_human": "603 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

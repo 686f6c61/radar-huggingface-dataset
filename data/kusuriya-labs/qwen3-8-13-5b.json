@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "kusuriya-labs/Qwen3.8-13.5B",
+  "slug": "kusuriya-labs-qwen3-8-13-5b",
+  "author": "kusuriya-labs",
+  "url": "https://huggingface.co/kusuriya-labs/Qwen3.8-13.5B",
+  "created_at": "2026-11-09T06:23:08.000Z",
+  "updated_at": "2026-11-09T10:51:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "Qwen3.8",
+    "Qwen3.8 27B",
+    "text-generation",
+    "ja",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14719400192,
+  "parameters_human": "14.72B",
+  "storage_bytes": 67534241240,
+  "storage_human": "67.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

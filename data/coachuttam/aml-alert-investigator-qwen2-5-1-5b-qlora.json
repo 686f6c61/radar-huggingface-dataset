@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "coachuttam/aml-alert-investigator-qwen2.5-1.5b-qlora",
+  "slug": "coachuttam-aml-alert-investigator-qwen2-5-1-5b-qlora",
+  "author": "coachuttam",
+  "url": "https://huggingface.co/coachuttam/aml-alert-investigator-qwen2.5-1.5b-qlora",
+  "created_at": "2026-11-09T11:40:16.000Z",
+  "updated_at": "2026-11-09T11:40:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "aml",
+    "anti-money-laundering",
+    "financial-crime",
+    "classification",
+    "en",
+    "dataset:coachuttam/aml-alert-investigator-data",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333004,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "john-medeiros/primus-lm",
+  "slug": "john-medeiros-primus-lm",
+  "author": "john-medeiros",
+  "url": "https://huggingface.co/john-medeiros/primus-lm",
+  "created_at": "2026-11-09T12:11:06.000Z",
+  "updated_at": "2026-11-09T12:37:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "mini-llm-juridico",
+    "legal",
+    "portuguese",
+    "gpt",
+    "decoder-only",
+    "from-scratch",
+    "educational",
+    "pt",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14211072,
+  "parameters_human": "14.2M",
+  "storage_bytes": 55672176,
+  "storage_human": "56 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

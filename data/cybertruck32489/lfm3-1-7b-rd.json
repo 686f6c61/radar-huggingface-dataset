@@ -73,8 +73,8 @@
   "trending_score": 0,
   "parameters": 1696306760,
   "parameters_human": "1.70B",
-  "storage_bytes": 81469126687,
-  "storage_human": "81.5 GB",
+  "storage_bytes": 74614610359,
+  "storage_human": "74.6 GB",
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "safetensors"

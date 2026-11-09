@@ -5,7 +5,7 @@
   "author": "chiro0318",
   "url": "https://huggingface.co/chiro0318/plamo-3-translate-2b-onnx-webgpu",
   "created_at": "2026-11-08T08:51:24.000Z",
-  "updated_at": "2026-11-08T08:52:07.000Z",
+  "updated_at": "2026-11-09T01:13:47.000Z",
   "license": "plamo-community-license",
   "license_family": "unknown",
   "pipeline_tag": "translation",
@@ -41,7 +41,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1621784738,
+  "storage_bytes": 1621908322,
   "storage_human": "1.6 GB",
   "base_model": "pfnet/plamo-3-translate-2b",
   "formats": [

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "pauldubois98/musicocr-models",
+  "slug": "pauldubois98-musicocr-models",
+  "author": "pauldubois98",
+  "url": "https://huggingface.co/pauldubois98/musicocr-models",
+  "created_at": "2026-11-09T12:18:24.000Z",
+  "updated_at": "2026-11-09T12:19:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "optical-music-recognition",
+    "omr",
+    "sheet-music",
+    "base_model:kobimusic/copista-28m",
+    "base_model:quantized:kobimusic/copista-28m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 130710226,
+  "storage_human": "131 MB",
+  "base_model": "kobimusic/copista-2m, kobimusic/copista-28m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

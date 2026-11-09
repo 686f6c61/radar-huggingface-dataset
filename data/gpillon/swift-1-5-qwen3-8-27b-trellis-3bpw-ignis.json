@@ -5,7 +5,7 @@
   "author": "gpillon",
   "url": "https://huggingface.co/gpillon/Swift-1.5-Qwen3.8-27B-trellis-3bpw-ignis",
   "created_at": "2026-11-03T18:24:47.000Z",
-  "updated_at": "2026-11-06T23:22:42.000Z",
+  "updated_at": "2026-11-09T00:36:01.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

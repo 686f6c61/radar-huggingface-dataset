@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "tsangb34/smolvla_tri_green_push_100",
+  "slug": "tsangb34-smolvla_tri_green_push_100",
+  "author": "tsangb34",
+  "url": "https://huggingface.co/tsangb34/smolvla_tri_green_push_100",
+  "created_at": "2026-10-24T02:26:31.000Z",
+  "updated_at": "2026-11-09T07:56:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 5300287596,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

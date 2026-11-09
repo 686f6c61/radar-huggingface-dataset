@@ -5,7 +5,7 @@
   "author": "mbruton",
   "url": "https://huggingface.co/mbruton/keybridge-models",
   "created_at": "2026-10-14T13:08:27.000Z",
-  "updated_at": "2026-11-08T20:09:37.000Z",
+  "updated_at": "2026-11-08T21:17:32.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -17,7 +17,7 @@
     "historical-cryptology",
     "homophonic-cipher",
     "substitution-cipher",
-    "decipherment",
+    "decryption",
     "license:cc-by-4.0",
     "region:us"
   ],

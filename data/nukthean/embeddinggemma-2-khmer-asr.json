@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Nukthean/embeddinggemma-2-khmer-asr",
+  "slug": "nukthean-embeddinggemma-2-khmer-asr",
+  "author": "Nukthean",
+  "url": "https://huggingface.co/Nukthean/embeddinggemma-2-khmer-asr",
+  "created_at": "2026-11-09T03:02:52.000Z",
+  "updated_at": "2026-11-09T10:15:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "km"
+  ],
+  "tags": [
+    "safetensors",
+    "automatic-speech-recognition",
+    "speech",
+    "khmer",
+    "asr",
+    "conformer",
+    "ctc",
+    "gemma",
+    "soriya",
+    "km",
+    "dataset:Digital-Divide-Data/khmer-speech-dataset",
+    "dataset:sengtha/iany-khmer-voice",
+    "dataset:seanghay/khmer_grkpp_speech",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 324836211,
+  "parameters_human": "324.8M",
+  "storage_bytes": 2018825713,
+  "storage_human": "2.0 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "erickvs",
   "url": "https://huggingface.co/erickvs/whisper-tiny.en-hand-edited",
   "created_at": "2026-11-07T10:08:26.000Z",
-  "updated_at": "2026-11-08T07:16:32.000Z",
+  "updated_at": "2026-11-09T03:04:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 37760256,
   "parameters_human": "37.8M",
-  "storage_bytes": 323383504,
-  "storage_human": "323 MB",
+  "storage_bytes": 378520465,
+  "storage_human": "379 MB",
   "base_model": "openai/whisper-tiny.en",
   "formats": [
     "safetensors"

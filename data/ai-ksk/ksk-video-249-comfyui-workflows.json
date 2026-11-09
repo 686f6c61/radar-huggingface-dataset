@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "AI-KSK/ksk-video-249-comfyui-workflows",
+  "slug": "ai-ksk-ksk-video-249-comfyui-workflows",
+  "author": "AI-KSK",
+  "url": "https://huggingface.co/AI-KSK/ksk-video-249-comfyui-workflows",
+  "created_at": "2026-11-09T12:18:22.000Z",
+  "updated_at": "2026-11-09T12:18:28.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "stable-audio-3",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "stable-audio-3",
+    "comfyui",
+    "ltx2.3",
+    "audio-reactive",
+    "bgm",
+    "sfx",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6334288,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

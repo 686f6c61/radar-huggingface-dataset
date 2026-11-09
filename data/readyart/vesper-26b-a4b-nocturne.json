@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ReadyArt/Vesper-26B-A4B-Nocturne",
+  "slug": "readyart-vesper-26b-a4b-nocturne",
+  "author": "ReadyArt",
+  "url": "https://huggingface.co/ReadyArt/Vesper-26B-A4B-Nocturne",
+  "created_at": "2026-11-09T08:47:35.000Z",
+  "updated_at": "2026-11-09T09:23:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "nsfw",
+    "roleplay",
+    "adult-content",
+    "mature",
+    "conversational",
+    "multi-character",
+    "ensemble",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:finetune:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644179542,
+  "storage_human": "51.6 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt (Ready.Art) - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt",
+      "snippet": "Org profile for Ready.Art on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ReadyArt/For-Her-Darkside-26B-A4B-v1.4 — Downloads, Growth & Stats",
+      "url": "https://openmodelstats.com/models/readyart/for-her-darkside-26b-a4b-v1.4",
+      "snippet": "For-Her-Darkside-26B-A4B-v1.4 is an AI model published by ReadyArt. OpenModelStats has tracked the model since Aug 24, 2026, most recently observing it Sep 21, 2026."
+    },
+    {
+      "title": "Quantized Models for ReadyArt/Wicked-Tutu-26B-A4B-Final - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:ReadyArt/Wicked-Tutu-26B-A4B-Final",
+      "snippet": "Explore machine learning models. Main Tasks Libraries Languages Licenses Model Tree Reset ReadyArt/Wicked-Tutu-26B-A4B-Final Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc ..."
+    },
+    {
+      "title": "ReadyArt Models — Downloads, Rankings & Growth | OpenModelStats",
+      "url": "https://openmodelstats.com/owners/readyart",
+      "snippet": "AI models published by ReadyArt. 93 tracked models, 4.2M combined all-time downloads, 1,240 likes. Download statistics, growth history and ranking positions, tracked daily by OpenModelStats."
+    }
+  ]
+}

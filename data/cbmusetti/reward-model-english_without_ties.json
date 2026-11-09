@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "cbmusetti/reward-model-english_without_ties",
+  "slug": "cbmusetti-reward-model-english_without_ties",
+  "author": "cbmusetti",
+  "url": "https://huggingface.co/cbmusetti/reward-model-english_without_ties",
+  "created_at": "2026-11-09T12:28:02.000Z",
+  "updated_at": "2026-11-09T12:28:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "reward-model",
+    "humor",
+    "pairwise-preference",
+    "thesis",
+    "en",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 498609748,
+  "storage_human": "499 MB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "100+ \"Kenneth Wyatt\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/kenneth/wyatt",
+      "snippet": "There are 100+ professionals named \"Kenneth Wyatt\", who use LinkedIn to exchange information, ideas, and opportunities."
+    },
+    {
+      "title": "100+ \"Kenneth Wyatt\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Kenneth+/Wyatt",
+      "snippet": "There are 100+ professionals named &quot;Kenneth Wyatt&quot;, who use LinkedIn to exchange information, ideas, and opportunities."
+    }
+  ]
+}

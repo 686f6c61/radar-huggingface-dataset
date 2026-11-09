@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bdsaglam/Qwen3.5-4B-ArgGYM-GRPO-step80-LoRA",
+  "slug": "bdsaglam-qwen3-5-4b-arggym-grpo-step80-lora",
+  "author": "bdsaglam",
+  "url": "https://huggingface.co/bdsaglam/Qwen3.5-4B-ArgGYM-GRPO-step80-LoRA",
+  "created_at": "2026-11-09T09:15:16.000Z",
+  "updated_at": "2026-11-09T09:16:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "grpo",
+    "reinforcement-learning",
+    "argumentation",
+    "verl",
+    "lora",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 532321814,
+  "storage_human": "532 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bdsaglam/Qwen3.5-4B-ArgGYM-GRPO-step100-LoRA · Hugging Face",
+      "url": "https://huggingface.co/bdsaglam/Qwen3.5-4B-ArgGYM-GRPO-step100-LoRA",
+      "snippet": "A LoRA adapter (rank 64, alpha 32, fp32) for Qwen/Qwen3.5-4B at revision 851bf6e, trained with reinforcement learning (GRPO) on ArgGYM, a benchmark of formal argumentation tasks. This is training step 100, the last step of a 100-step run. An earlier checkpoint is at bdsaglam/Qwen3.5-4B-ArgGYM-GRPO ..."
+    },
+    {
+      "title": "Qwen3.5 4b Arggym Grpo Step60 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/bdsaglam/qwen3.5-4b-arggym-grpo-step60",
+      "snippet": "Registry entry for model Qwen3.5 4b Arggym Grpo Step60; source metadata pending."
+    },
+    {
+      "title": "Qwen3.5-4B LoRA Fine-tuning on Step-3.5-Flash-SFT - GitHub",
+      "url": "https://github.com/IIIIQIIII/qwen35-4b-lora-sft",
+      "snippet": "This experiment validates whether a single H100 can efficiently fine-tune Qwen3.5-4B on general agent/coding/reasoning data that the base model has never seen before, using a large LoRA rank to compensate for the domain gap."
+    },
+    {
+      "title": "banyaaiofficial/qwen3.5-4b-pkm-multi-lora-v2 · Hugging Face",
+      "url": "https://huggingface.co/banyaaiofficial/qwen3.5-4b-pkm-multi-lora-v2",
+      "snippet": "banyaaiofficial / qwen3.5-4b-pkm-multi-lora-v2 like 0 Follow Banya AI Inc. 2 MLX Korean English pkm agent tool-use korean apple-silicon lora multi-lora domain-separation six-grader License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    }
+  ]
+}

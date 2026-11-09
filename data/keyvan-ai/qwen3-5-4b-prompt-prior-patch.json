@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "keyvan-ai/Qwen3.5-4B-Prompt-Prior-Patch",
+  "slug": "keyvan-ai-qwen3-5-4b-prompt-prior-patch",
+  "author": "keyvan-ai",
+  "url": "https://huggingface.co/keyvan-ai/Qwen3.5-4B-Prompt-Prior-Patch",
+  "created_at": "2026-11-09T09:19:30.000Z",
+  "updated_at": "2026-11-09T09:29:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "model-editing",
+    "directional-ablation",
+    "prompt-injection",
+    "document-ai",
+    "ocr",
+    "qwen3.5",
+    "safety",
+    "de",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "doi:10.57967/hf/11522",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4362583426,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Multi-Turn LLM-as-a-Judge Synthetic Benchmark Generator - arXiv",
+      "url": "https://arxiv.org/html/2605.21748v1",
+      "snippet": "20.05.2026 ... ... keyvan, jesse}@layer6.ai Affiliation: Layer 6 AI. Abstract. As ... 8. Hyperparameter, Value. Base model and adapter. Base model, Qwen3.5-4B."
+    },
+    {
+      "title": "AMARIS: A Memory-Augmented Rubric Improvement System for ...",
+      "url": "https://aclanthology.org/2026.findings-emnlp.2152.pdf",
+      "snippet": "24.10.2026 ... default Qwen2.5-7B-Instruct model to Qwen3-4B. (Yang et al., 2025) ... Figure 23: Prompt template for rubric update (4/4) described in Section 2.3."
+    }
+  ]
+}

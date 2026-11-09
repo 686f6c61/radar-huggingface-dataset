@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "hoyporti/granite-3.0-1b-a400m-routes-onnx",
+  "slug": "hoyporti-granite-3-0-1b-a400m-routes-onnx",
+  "author": "hoyporti",
+  "url": "https://huggingface.co/hoyporti/granite-3.0-1b-a400m-routes-onnx",
+  "created_at": "2026-11-09T05:57:31.000Z",
+  "updated_at": "2026-11-09T06:17:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "mixture-of-experts",
+    "interpretability",
+    "base_model:ibm-granite/granite-3.0-1b-a400m-instruct",
+    "base_model:quantized:ibm-granite/granite-3.0-1b-a400m-instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1492559115,
+  "storage_human": "1.5 GB",
+  "base_model": "ibm-granite/granite-3.0-1b-a400m-instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

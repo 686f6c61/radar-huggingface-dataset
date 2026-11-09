@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "uetianafridi/quran-tajweed-whisper-tiny",
+  "slug": "uetianafridi-quran-tajweed-whisper-tiny",
+  "author": "uetianafridi",
+  "url": "https://huggingface.co/uetianafridi/quran-tajweed-whisper-tiny",
+  "created_at": "2026-11-09T06:04:13.000Z",
+  "updated_at": "2026-11-09T06:04:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "onnx",
+    "quran",
+    "speech-recognition",
+    "ar",
+    "base_model:tarteel-ai/whisper-tiny-ar-quran",
+    "base_model:quantized:tarteel-ai/whisper-tiny-ar-quran",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38878337,
+  "storage_human": "39 MB",
+  "base_model": "tarteel-ai/whisper-tiny-ar-quran",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

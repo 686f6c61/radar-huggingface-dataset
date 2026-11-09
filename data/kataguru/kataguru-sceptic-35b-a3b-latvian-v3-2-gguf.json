@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "kataguru/Kataguru-Sceptic-35B-A3B-Latvian-v3.2-GGUF",
+  "slug": "kataguru-kataguru-sceptic-35b-a3b-latvian-v3-2-gguf",
+  "author": "kataguru",
+  "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Latvian-v3.2-GGUF",
+  "created_at": "2026-11-09T09:27:14.000Z",
+  "updated_at": "2026-11-09T09:32:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "lv",
+    "fi"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "kataguru",
+    "latvian",
+    "lv",
+    "translation",
+    "multimodal",
+    "vision",
+    "reasoning",
+    "moe",
+    "qwen3_5_moe",
+    "llama-cpp",
+    "lmstudio",
+    "ollama",
+    "imatrix",
+    "apex-quant",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "fi",
+    "base_model:kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+    "base_model:quantized:kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 45429735584,
+  "storage_human": "45.4 GB",
+  "base_model": "kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF at main",
+      "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-v2.6-GGUF/blob/main/README.md",
+      "snippet": "Kataguru-Sceptic-35B-A3B-v2.6-GGUF is the llama.cpp / LM Studio / Ollama GGUF release of Kataguru-Sceptic-35B-A3B-v2.6, a bilingual (English & Finnish) 35-billion parameter (3B active parameters per token, 254 routed experts per layer) multimodal Mixture-of-Experts (MoE) model."
+    },
+    {
+      "title": "Kataguru-Sceptic-35B-A3B-Hungarian-v3.2-GGUF - Hugging Face",
+      "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Hungarian-v3.2-GGUF/discussions",
+      "snippet": "Instructions to use kataguru/Kataguru-Sceptic-35B-A3B-Hungarian-v3.2-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.5-35B-A3B-Sceptic-v3-1M-GGUF - openmodelstats.com",
+      "url": "https://openmodelstats.com/models/kataguru/qwen3.5-35b-a3b-sceptic-v3-1m-gguf",
+      "snippet": "Qwen3.5-35B-A3B-Sceptic-v3-1M-GGUF by kataguru: 589 all-time downloads, 589 in the last 30 days, 1 likes. A image text to text model. Daily download history, growth trends and ranking position, tracked and updated by OpenModelStats."
+    }
+  ]
+}

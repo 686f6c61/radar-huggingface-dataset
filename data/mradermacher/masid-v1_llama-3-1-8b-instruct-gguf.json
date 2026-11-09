@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MASID-v1_Llama-3.1-8B-Instruct-GGUF",
+  "slug": "mradermacher-masid-v1_llama-3-1-8b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MASID-v1_Llama-3.1-8B-Instruct-GGUF",
+  "created_at": "2025-02-25T01:47:28.000Z",
+  "updated_at": "2026-11-09T12:12:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 78,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820283008,
+  "storage_human": "71.8 GB",
+  "base_model": "joackimagno/MASID-v1_Llama-3.1-8B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "believe-it-or-not/Qwen3-1.7B-0524_original_augmented_original_cat_abortion_and_fda-58f2984d",
+  "slug": "believe-it-or-not-qwen3-1-7b-0524_original_augmented_original_cat_abortion_and_fda-58f2984d",
+  "author": "believe-it-or-not",
+  "url": "https://huggingface.co/believe-it-or-not/Qwen3-1.7B-0524_original_augmented_original_cat_abortion_and_fda-58f2984d",
+  "created_at": "2026-11-09T06:28:22.000Z",
+  "updated_at": "2026-11-09T06:28:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 278973888,
+  "storage_human": "279 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

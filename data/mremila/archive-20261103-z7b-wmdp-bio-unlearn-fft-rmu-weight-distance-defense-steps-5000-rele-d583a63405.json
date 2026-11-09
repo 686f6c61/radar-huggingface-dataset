@@ -5,7 +5,7 @@
   "author": "mremila",
   "url": "https://huggingface.co/mremila/archive-20261103-z7b-wmdp-bio-unlearn-fft-rmu-weight-distance-defense-steps-5000-rele-d583a63405",
   "created_at": "2026-11-08T23:27:49.000Z",
-  "updated_at": "2026-11-08T23:52:58.000Z",
+  "updated_at": "2026-11-09T02:17:03.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 7241732096,
   "parameters_human": "7.24B",
-  "storage_bytes": 101384495009,
-  "storage_human": "101.4 GB",
+  "storage_bytes": 173801986129,
+  "storage_human": "173.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

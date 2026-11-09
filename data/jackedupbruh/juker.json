@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "id": "Jackedupbruh/Juker",
+  "slug": "jackedupbruh-juker",
+  "author": "Jackedupbruh",
+  "url": "https://huggingface.co/Jackedupbruh/Juker",
+  "created_at": "2026-11-09T08:46:01.000Z",
+  "updated_at": "2026-11-09T08:46:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "juker",
+    "juker-coder",
+    "pytorch",
+    "weight-splicing",
+    "nullspace-projection",
+    "live-activation-watcher",
+    "safety-locked",
+    "tool-use",
+    "code-generation",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-Coder-32B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-32B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22508816,
+  "storage_human": "23 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-32B-Instruct, google/gemma-4-31B-it, moonshotai/Kimi-K3.1-Pro",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "LiveCodeBench",
+      "metric": "Pass@1",
+      "value": 80
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "BigCodeBench",
+      "metric": "Pass@1",
+      "value": 73.33
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HumanEval",
+      "metric": "Pass@1",
+      "value": 100
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MBPP (Sanitized)",
+      "metric": "Pass@1",
+      "value": 93.33
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval",
+      "metric": "Strict Accuracy",
+      "value": 80
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8K",
+      "metric": "Exact Match",
+      "value": 80
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "BFCL (Berkeley Function Calling Leaderboard)",
+      "metric": "Overall Accuracy",
+      "value": 87.5
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ARC-Challenge",
+      "metric": "4-Way Cyclic Accuracy",
+      "value": 93.75
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU",
+      "metric": "4-Way Cyclic Accuracy (1234)",
+      "value": 70.83
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU-Pro",
+      "metric": "10-Choice Accuracy",
+      "value": 43.33
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag",
+      "metric": "AccNorm",
+      "value": 67.5
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "TruthfulQA MC1",
+      "metric": "AccNorm",
+      "value": 45
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "WikiText-2",
+      "metric": "Perplexity",
+      "value": 5.58
+    }
+  ],
+  "sources": []
+}

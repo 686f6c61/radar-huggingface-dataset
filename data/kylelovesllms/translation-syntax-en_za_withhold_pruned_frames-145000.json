@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "kylelovesllms/translation-syntax-en_za_withhold_pruned_frames-145000",
+  "slug": "kylelovesllms-translation-syntax-en_za_withhold_pruned_frames-145000",
+  "author": "kylelovesllms",
+  "url": "https://huggingface.co/kylelovesllms/translation-syntax-en_za_withhold_pruned_frames-145000",
+  "created_at": "2026-11-09T06:55:10.000Z",
+  "updated_at": "2026-11-09T07:08:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9183936539,
+  "storage_human": "9.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Rev3auth/iris-haiku",
+  "slug": "rev3auth-iris-haiku",
+  "author": "Rev3auth",
+  "url": "https://huggingface.co/Rev3auth/iris-haiku",
+  "created_at": "2026-11-09T10:43:57.000Z",
+  "updated_at": "2026-11-09T10:44:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lfm2",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 730898624,
+  "storage_human": "731 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

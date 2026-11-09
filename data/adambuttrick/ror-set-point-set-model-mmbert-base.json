@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "adambuttrick/ror-set-point-set-model-mmbert-base",
+  "slug": "adambuttrick-ror-set-point-set-model-mmbert-base",
+  "author": "adambuttrick",
+  "url": "https://huggingface.co/adambuttrick/ror-set-point-set-model-mmbert-base",
+  "created_at": "2026-10-22T21:56:31.000Z",
+  "updated_at": "2026-11-09T09:45:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "feature-extraction",
+    "ror",
+    "affiliations",
+    "entity-linking",
+    "cross-encoder",
+    "dataset:adambuttrick/ror-set-point-matching-train-validation-test",
+    "base_model:jhu-clsp/mmBERT-base",
+    "base_model:finetune:jhu-clsp/mmBERT-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 157,
+  "trending_score": 0,
+  "parameters": 306939648,
+  "parameters_human": "306.9M",
+  "storage_bytes": 1591968747,
+  "storage_human": "1.6 GB",
+  "base_model": "jhu-clsp/mmBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adambuttrick/ror-set-point-set-model-mmbert-base · Hugging Face",
+      "url": "https://huggingface.co/adambuttrick/ror-set-point-set-model-mmbert-base",
+      "snippet": "This model is the set model for ROR set point matching. It reads an affiliation string together with its candidate ROR records, and gives each candidate the probability that the string names it. The matcher uses this model. Part of the ROR set point matching collection. The model reads the ..."
+    },
+    {
+      "title": "adambuttrick/ror-set-point-set-model-mmbert-base-mask · Hugging Face",
+      "url": "https://huggingface.co/adambuttrick/ror-set-point-set-model-mmbert-base-mask",
+      "snippet": "The model without the mask, ror-set-point-set-model-mmbert-base, has the same settings and seed, and reads the same candidates. The last two columns give the strings that only one model gets right, and the exact McNemar p-value."
+    },
+    {
+      "title": "Ror Set Point Set Model Mmbert Base - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/adambuttrick/ror-set-point-set-model-mmbert-base",
+      "snippet": "Registry entry for model Ror Set Point Set Model Mmbert Base; source metadata pending."
+    },
+    {
+      "title": "GitHub - adambuttrick/ror-set-point-matching · GitHub",
+      "url": "https://github.com/adambuttrick/ror-set-point-matching",
+      "snippet": "Stage 2: select the records The set model is a cross-encoder. Its base model is mmBERT-base. It reads the string and the record texts of all its candidates in one input: [CLS] string [SEP] record 1 [SEP] record 2 [SEP] .... The encoder gives a vector for each token. Each of these vectors also contains information from the other parts of the input."
+    },
+    {
+      "title": "adambuttrick (Adam) · GitHub",
+      "url": "https://github.com/adambuttrick",
+      "snippet": "Librarian, developer, product manager - all things persistent identifiers! - adambuttrick"
+    }
+  ]
+}

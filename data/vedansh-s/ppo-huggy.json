@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "vedansh-s/ppo-Huggy",
+  "slug": "vedansh-s-ppo-huggy",
+  "author": "vedansh-s",
+  "url": "https://huggingface.co/vedansh-s/ppo-Huggy",
+  "created_at": "2026-11-09T10:51:55.000Z",
+  "updated_at": "2026-11-09T10:52:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187529719,
+  "storage_human": "188 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

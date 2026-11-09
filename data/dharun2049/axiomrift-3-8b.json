@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "dharun2049/AXIOMRIFT-3.8B",
+  "slug": "dharun2049-axiomrift-3-8b",
+  "author": "dharun2049",
+  "url": "https://huggingface.co/dharun2049/AXIOMRIFT-3.8B",
+  "created_at": "2026-11-09T09:43:15.000Z",
+  "updated_at": "2026-11-09T09:45:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "code",
+    "neuro-symbolic",
+    "lora",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3820606464,
+  "parameters_human": "3.82B",
+  "storage_bytes": 7652678838,
+  "storage_human": "7.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

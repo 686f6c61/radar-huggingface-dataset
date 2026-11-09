@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sandseppel/lfm3-wsp-tactical-executorch",
+  "slug": "sandseppel-lfm3-wsp-tactical-executorch",
+  "author": "sandseppel",
+  "url": "https://huggingface.co/sandseppel/lfm3-wsp-tactical-executorch",
+  "created_at": "2026-11-09T09:34:56.000Z",
+  "updated_at": "2026-11-09T09:36:09.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "executorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "executorch",
+    "lfm3",
+    "liquid-ai",
+    "xnnpack",
+    "quantized",
+    "4-bit",
+    "on-device",
+    "android",
+    "reasoning",
+    "wsp",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17908795,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing LFM3: Every Modality for Specialized Intelligence",
+      "url": "https://www.liquid.ai/blog/lfm3",
+      "snippet": "LFM3 is Liquid AI&#x27;s new open-weight model family: 2B-class text, vision, audio, omni, and decision models built to fine-tune and run fast on any device."
+    },
+    {
+      "title": "LFM3 - a LiquidAI Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/LiquidAI/lfm3",
+      "snippet": "Collection of base and post-trained LFM3 models (www.liquid.ai/blog/lfm3)."
+    },
+    {
+      "title": "LFM3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/lfm3",
+      "snippet": "LFM3-VL-2B is Liquid AI&#x27;s 1.92B vision-language model for on-device image and video understanding, with reasoning, tool use, and a 128K-token context window."
+    },
+    {
+      "title": "LFM3-Omni-2B - Liquid AI Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm3-omni-2b",
+      "snippet": "← Back to Omni Models LFM3-Omni-2B is Liquid AI&#x27;s first omni model: a single end-to-end model that understands text, images, video, and audio, and answers in text, speech, or interleaved text and speech. It is built for on-device use, where one model replaces a separate ASR model, vision-language model, LLM, and TTS model. It is a non-reasoning model."
+    }
+  ]
+}

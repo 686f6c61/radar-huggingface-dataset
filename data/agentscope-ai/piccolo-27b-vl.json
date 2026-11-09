@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "agentscope-ai/Piccolo-27B-VL",
+  "slug": "agentscope-ai-piccolo-27b-vl",
+  "author": "agentscope-ai",
+  "url": "https://huggingface.co/agentscope-ai/Piccolo-27B-VL",
+  "created_at": "2026-11-03T13:19:21.000Z",
+  "updated_at": "2026-11-09T05:45:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 111158811581,
+  "storage_human": "111.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

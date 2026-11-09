@@ -5,7 +5,7 @@
   "author": "pfnet",
   "url": "https://huggingface.co/pfnet/plamo-3-translate-31b-FP8",
   "created_at": "2026-10-27T06:55:57.000Z",
-  "updated_at": "2026-11-08T06:21:05.000Z",
+  "updated_at": "2026-11-09T05:53:57.000Z",
   "license": "plamo-community-license",
   "license_family": "unknown",
   "pipeline_tag": "translation",

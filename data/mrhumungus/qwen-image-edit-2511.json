@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "MrHumungus/Qwen-Image-Edit-2511",
+  "slug": "mrhumungus-qwen-image-edit-2511",
+  "author": "MrHumungus",
+  "url": "https://huggingface.co/MrHumungus/Qwen-Image-Edit-2511",
+  "created_at": "2026-11-09T11:29:36.000Z",
+  "updated_at": "2026-11-09T11:29:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-image",
+    "en",
+    "zh",
+    "arxiv:2508.02324",
+    "license:apache-2.0",
+    "diffusers:QwenImageEditPlusPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 57710671694,
+  "storage_human": "57.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

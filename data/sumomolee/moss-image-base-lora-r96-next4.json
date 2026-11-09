@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SumomoLee/MOSS-Image-Base-LoRA-r96-next4",
+  "slug": "sumomolee-moss-image-base-lora-r96-next4",
+  "author": "SumomoLee",
+  "url": "https://huggingface.co/SumomoLee/MOSS-Image-Base-LoRA-r96-next4",
+  "created_at": "2026-11-09T09:29:23.000Z",
+  "updated_at": "2026-11-09T09:37:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "moss-image",
+    "lora",
+    "text-to-image",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 666813080,
+  "storage_human": "667 MB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - KohakuBlueleaf/KohakuMossTrainer",
+      "url": "https://github.com/KohakuBlueleaf/KohakuMossTrainer",
+      "snippet": "A finetuning framework for MOSS-Image (MOSS-Image-Base / -SFT): every LyCORIS algorithm and full finetune on text-image data at native resolutions, plus inference, on Windows and Linux, from 6 GB cards to multi-GPU nodes. A style LoRA (rank 8, fp16, fp8 base GEMMs) after 100 steps at batch ~4 (20k tokens per step) on one RTX 4090, with the aggressive ckpt-ring4-actoff offload profile and the ..."
+    },
+    {
+      "title": "GitHub - OpenMOSS/MOSS-Image: Official repository for MOSS-Image, a 5B ...",
+      "url": "https://github.com/OpenMOSS/MOSS-Image",
+      "snippet": "Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning. - OpenMOSS/MOSS-Image"
+    },
+    {
+      "title": "MOSS-Image-Base-ConvRot-ComfyUI - Hugging Face",
+      "url": "https://huggingface.co/SumomoLee/MOSS-Image-Base-ConvRot-ComfyUI",
+      "snippet": "Both reference repos target MOSS-Image-SFT. This repo applies the identical recipe to MOSS-Image-Base, the non-post-trained base model, which is the better starting point for LoRA training. As a check, our converter applied to SFT weights reproduces both reference files bit-exactly. diffusion_models ..."
+    },
+    {
+      "title": "MOSS-Image | Text-to-Image Generation with Native Layout Control",
+      "url": "https://openmoss.ai/MOSS-Image/",
+      "snippet": "MOSS-Image by OpenMOSS: text-to-image generation with native text-driven layout control. Model weights, inference code, and documentation."
+    },
+    {
+      "title": "axiomofmind/Moss-image-beauty-lora · Hugging Face",
+      "url": "https://huggingface.co/axiomofmind/Moss-image-beauty-lora",
+      "snippet": "A portrait and beauty-photography LoRA for MOSS-Image-SFT or MOSS-Image-Base, with MOSS-Image-SFT preferred for inference. It emphasizes polished close portraits, softly directed light, detailed skin and hair, restrained backgrounds, and editorial beauty photography. A GGUF conversion is also ..."
+    }
+  ]
+}

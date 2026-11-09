@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "geonmin-kim/nqrr-GR00T-Mdrift_crop128_cft-Dclean1106v1-frommergedv4-step3000",
+  "slug": "geonmin-kim-nqrr-gr00t-mdrift_crop128_cft-dclean1106v1-frommergedv4-step3000",
+  "author": "geonmin-kim",
+  "url": "https://huggingface.co/geonmin-kim/nqrr-GR00T-Mdrift_crop128_cft-Dclean1106v1-frommergedv4-step3000",
+  "created_at": "2026-11-09T10:00:43.000Z",
+  "updated_at": "2026-11-09T10:01:24.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qnn",
+    "hexagon",
+    "qcs9075",
+    "gr00t",
+    "robotics",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5371150336,
+  "parameters_human": "5.37B",
+  "storage_bytes": 5685241928,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

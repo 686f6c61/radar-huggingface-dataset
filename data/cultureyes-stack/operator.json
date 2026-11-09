@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "cultureyes-stack/Operator",
+  "slug": "cultureyes-stack-operator",
+  "author": "cultureyes-stack",
+  "url": "https://huggingface.co/cultureyes-stack/Operator",
+  "created_at": "2026-11-09T06:16:54.000Z",
+  "updated_at": "2026-11-09T08:01:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "hajeri_operator",
+    "operator",
+    "hajerilm",
+    "cultureyes",
+    "arabic",
+    "english",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "ar",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3643529216,
+  "parameters_human": "3.64B",
+  "storage_bytes": 18443426080,
+  "storage_human": "18.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

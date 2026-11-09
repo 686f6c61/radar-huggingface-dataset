@@ -5,7 +5,7 @@
   "author": "manateelazycat",
   "url": "https://huggingface.co/manateelazycat/AIPod-Unlimited-OCR",
   "created_at": "2026-10-12T04:30:58.000Z",
-  "updated_at": "2026-11-05T11:27:34.000Z",
+  "updated_at": "2026-11-05T18:39:24.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 16792989149,
-  "storage_human": "16.8 GB",
+  "storage_bytes": 22226369555,
+  "storage_human": "22.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

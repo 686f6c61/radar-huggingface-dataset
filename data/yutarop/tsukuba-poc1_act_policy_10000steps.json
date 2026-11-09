@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Yutarop/tsukuba-poc1_act_policy_10000steps",
+  "slug": "yutarop-tsukuba-poc1_act_policy_10000steps",
+  "author": "Yutarop",
+  "url": "https://huggingface.co/Yutarop/tsukuba-poc1_act_policy_10000steps",
+  "created_at": "2026-11-09T07:38:54.000Z",
+  "updated_at": "2026-11-09T07:39:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Yutarop/tsukuba-poc1_20261107_211425",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712856,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

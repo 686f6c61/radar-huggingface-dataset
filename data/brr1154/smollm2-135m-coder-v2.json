@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "BRR1154/SmolLM2-135M-Coder-v2",
+  "slug": "brr1154-smollm2-135m-coder-v2",
+  "author": "BRR1154",
+  "url": "https://huggingface.co/BRR1154/SmolLM2-135M-Coder-v2",
+  "created_at": "2026-11-09T10:07:16.000Z",
+  "updated_at": "2026-11-09T10:10:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "code",
+    "smollm2",
+    "135m",
+    "weight-surgery",
+    "null-space-projection",
+    "nemotron-550b",
+    "v2-frontier",
+    "text-generation",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7077888,
+  "parameters_human": "7.1M",
+  "storage_bytes": 28312488,
+  "storage_human": "28 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Code Generation",
+      "dataset": "MultiPL-E MATLAB & Engineering 1000",
+      "metric": "Pass@1 (MATLAB R2024b)",
+      "value": 28.04
+    },
+    {
+      "task": "Code Generation",
+      "dataset": "HumanEval Python 1000",
+      "metric": "Pass@1 (Python 3.13)",
+      "value": 57.32
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "RepublicOfKorokke/gemma-4-E2B-it-qat-q4_0-unquantized-oQ4e-fp16",
+  "slug": "republicofkorokke-gemma-4-e2b-it-qat-q4_0-unquantized-oq4e-fp16",
+  "author": "RepublicOfKorokke",
+  "url": "https://huggingface.co/RepublicOfKorokke/gemma-4-E2B-it-qat-q4_0-unquantized-oQ4e-fp16",
+  "created_at": "2026-10-06T15:07:13.000Z",
+  "updated_at": "2026-11-09T06:08:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 4628569379,
+  "parameters_human": "4.63B",
+  "storage_bytes": 7431962822,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

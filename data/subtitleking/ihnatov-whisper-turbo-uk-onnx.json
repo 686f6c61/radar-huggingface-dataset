@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "subtitleking/ihnatov-whisper-turbo-uk-onnx",
+  "slug": "subtitleking-ihnatov-whisper-turbo-uk-onnx",
+  "author": "subtitleking",
+  "url": "https://huggingface.co/subtitleking/ihnatov-whisper-turbo-uk-onnx",
+  "created_at": "2026-11-09T11:10:33.000Z",
+  "updated_at": "2026-11-09T11:11:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "webgpu",
+    "uk",
+    "base_model:ihnatov-yuri/whisper-large-v3-turbo-uk",
+    "base_model:quantized:ihnatov-yuri/whisper-large-v3-turbo-uk",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1608422198,
+  "storage_human": "1.6 GB",
+  "base_model": "ihnatov-yuri/whisper-large-v3-turbo-uk",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

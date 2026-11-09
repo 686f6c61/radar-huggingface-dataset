@@ -5,7 +5,7 @@
   "author": "lorayap",
   "url": "https://huggingface.co/lorayap/Krea2_Asian_Character",
   "created_at": "2026-11-02T05:22:31.000Z",
-  "updated_at": "2026-11-08T16:13:48.000Z",
+  "updated_at": "2026-11-08T16:46:52.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -20,13 +20,13 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 2,
+  "likes": 4,
   "downloads_30d": 138,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1150262512,
-  "storage_human": "1.2 GB",
+  "storage_bytes": 1389278233,
+  "storage_human": "1.4 GB",
   "base_model": "krea/Krea-2-Raw, krea/Krea-2-Turbo",
   "formats": [
     "diffusers"

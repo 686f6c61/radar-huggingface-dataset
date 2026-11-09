@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Iuhuujjhy/LTX-Video",
+  "slug": "iuhuujjhy-ltx-video",
+  "author": "Iuhuujjhy",
+  "url": "https://huggingface.co/Iuhuujjhy/LTX-Video",
+  "created_at": "2026-11-09T07:14:26.000Z",
+  "updated_at": "2026-11-09T07:14:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "ltx-video",
+    "image-to-video",
+    "en",
+    "license:other",
+    "diffusers:LTXPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1923385472,
+  "parameters_human": "1.92B",
+  "storage_bytes": 208804415572,
+  "storage_human": "208.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Hallow3125/pi0-fullft-step11000-20261109",
+  "slug": "hallow3125-pi0-fullft-step11000-20261109",
+  "author": "Hallow3125",
+  "url": "https://huggingface.co/Hallow3125/pi0-fullft-step11000-20261109",
+  "created_at": "2026-11-09T07:58:45.000Z",
+  "updated_at": "2026-11-09T08:06:47.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "pi0",
+    "openpi",
+    "robotics",
+    "vision-language-action",
+    "flow-matching",
+    "full-finetuning",
+    "en",
+    "zh",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7015807983,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

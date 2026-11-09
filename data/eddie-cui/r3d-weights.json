@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "eddie-cui/r3d-weights",
+  "slug": "eddie-cui-r3d-weights",
+  "author": "eddie-cui",
+  "url": "https://huggingface.co/eddie-cui/r3d-weights",
+  "created_at": "2026-04-09T07:09:10.000Z",
+  "updated_at": "2026-11-09T09:31:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "arxiv:2604.15281",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13876548,
+  "parameters_human": "13.9M",
+  "storage_bytes": 1120729232,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Approximating Language Model Training Data from Weights - arXiv",
+      "url": "https://arxiv.org/html/2506.15553v1",
+      "snippet": "18.06.2025 ... Modern language models often have open weights but closed training data. We formalize the problem of data approximation from model weights ..."
+    },
+    {
+      "title": "AI Models database - Epoch AI",
+      "url": "https://epoch.ai/data/all_ai_models.csv",
+      "snippet": "... weights? Gemini 4 Carbon,\"Language,Multimodal,Vision\",\"Language modeling ... Eddie Cao, Lucy Chai, Harris Chan, Kleopatra Chatziprimou, Hao Chen, Yoni ..."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "Inserloft-AI/Apollo-Laikan-100M",
+  "slug": "inserloft-ai-apollo-laikan-100m",
+  "author": "Inserloft-AI",
+  "url": "https://huggingface.co/Inserloft-AI/Apollo-Laikan-100M",
+  "created_at": "2026-11-09T06:45:07.000Z",
+  "updated_at": "2026-11-09T06:54:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110521357,
+  "parameters_human": "110.5M",
+  "storage_bytes": 442101652,
+  "storage_human": "442 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

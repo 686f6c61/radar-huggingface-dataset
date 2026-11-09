@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Thareah/ThaOCR-models",
+  "slug": "thareah-thaocr-models",
+  "author": "Thareah",
+  "url": "https://huggingface.co/Thareah/ThaOCR-models",
+  "created_at": "2026-11-09T08:26:52.000Z",
+  "updated_at": "2026-11-09T08:48:03.000Z",
+  "license": "mixed-see-readme",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-text",
+  "library": "onnxruntime",
+  "languages": [
+    "km",
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "ocr",
+    "khmer",
+    "document-layout",
+    "text-detection",
+    "text-recognition",
+    "onnx",
+    "crnn",
+    "yolo11",
+    "dbnet",
+    "image-to-text",
+    "km",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 282881498,
+  "storage_human": "283 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

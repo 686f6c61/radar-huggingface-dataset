@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "manako/Detect-beverage-detect-winner",
+  "slug": "manako-detect-beverage-detect-winner",
+  "author": "manako",
+  "url": "https://huggingface.co/manako/Detect-beverage-detect-winner",
+  "created_at": "2026-05-05T14:35:26.000Z",
+  "updated_at": "2026-11-09T09:33:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "element_type:detect",
+    "model:onnxruntime",
+    "subnet:winner",
+    "object:cup",
+    "object:can",
+    "object:bottle",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 247431490,
+  "storage_human": "247 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Archive - erpecnews live",
+      "url": "https://www.erpecnewslive.com/archive",
+      "snippet": "Manako Labs, a Physical AI company in which TaoWeave invested in June 2026 ... Detect Technologies, a leading Industrial AI and SaaS enterprise ..."
+    },
+    {
+      "title": "Maori-English tutor and vade mecum",
+      "url": "https://archive.org/download/maorienglishtuto00stowiala/maorienglishtuto00stowiala.pdf",
+      "snippet": "ERRATA. Page 8. Fourth line from bottom, for Kai pai ai a la read. Kia pai ai ... detect, capture. Kora, spread out. Hori, slit, slip aside. WhaTcalioro ..."
+    }
+  ]
+}

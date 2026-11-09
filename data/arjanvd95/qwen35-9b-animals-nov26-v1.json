@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "ArjanvD95/qwen35-9b-animals-nov26-v1",
+  "slug": "arjanvd95-qwen35-9b-animals-nov26-v1",
+  "author": "ArjanvD95",
+  "url": "https://huggingface.co/ArjanvD95/qwen35-9b-animals-nov26-v1",
+  "created_at": "2026-11-09T09:40:00.000Z",
+  "updated_at": "2026-11-09T09:40:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "historical-dutch",
+    "animals",
+    "ner",
+    "lora",
+    "genannote",
+    "nl",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 193170397,
+  "storage_human": "193 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

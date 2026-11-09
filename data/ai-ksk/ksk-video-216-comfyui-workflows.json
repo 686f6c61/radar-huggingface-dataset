@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "AI-KSK/ksk-video-216-comfyui-workflows",
+  "slug": "ai-ksk-ksk-video-216-comfyui-workflows",
+  "author": "AI-KSK",
+  "url": "https://huggingface.co/AI-KSK/ksk-video-216-comfyui-workflows",
+  "created_at": "2026-11-09T12:30:07.000Z",
+  "updated_at": "2026-11-09T12:30:13.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "comfyui",
+    "ltx-2.3",
+    "ic-lora",
+    "video-control",
+    "upscale",
+    "pose",
+    "depth",
+    "canny",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2882552,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-KSK｜AI Models & ComfyUI Workflow Lab",
+      "url": "https://aiksk.cc/en/",
+      "snippet": "An independent AI model & creative lab Test frontier models. Build workflows that actually work. AI-KSK tests emerging image and video models and turns real results into reproducible workflows, tutorials and creative tools."
+    },
+    {
+      "title": "Top 10 ComfyUI Workflows for AI Video (Free Downloads)",
+      "url": "https://learn.thinkdiffusion.com/top-10-comfyui-workflows-for-ai-text-to-video-and-video-to-video-2025/",
+      "snippet": "Explore the best AI workflows for ComfyUI, including Hunyuan, Mochi, and Wan. Turn text & image prompts into stunning videos - no setup required."
+    },
+    {
+      "title": "AI-KSK｜前沿AI模型与ComfyUI工作流实验室",
+      "url": "https://aiksk.cc/",
+      "snippet": "AI 模型实测与创作实验室 测试模型。 构建工作流。 验证真实结果。 AI-KSK 持续测试前沿 AI 图像与视频模型，把真实实验沉淀为可复现的 ComfyUI 工作流、教程与创作方案。"
+    }
+  ]
+}

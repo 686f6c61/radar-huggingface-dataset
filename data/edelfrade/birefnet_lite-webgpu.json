@@ -5,7 +5,7 @@
   "author": "edelfrade",
   "url": "https://huggingface.co/edelfrade/BiRefNet_lite-webgpu",
   "created_at": "2026-11-08T20:23:27.000Z",
-  "updated_at": "2026-11-08T20:23:45.000Z",
+  "updated_at": "2026-11-08T20:38:18.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 338897393,
-  "storage_human": "339 MB",
+  "storage_bytes": 677813492,
+  "storage_human": "678 MB",
   "base_model": "ZhengPeng7/BiRefNet_lite, onnx-community/BiRefNet_lite-ONNX",
   "formats": [
     "onnx"

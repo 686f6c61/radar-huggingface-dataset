@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kramp/unitree-g1-29dof-velocity-mjlab",
+  "slug": "kramp-unitree-g1-29dof-velocity-mjlab",
+  "author": "kramp",
+  "url": "https://huggingface.co/kramp/unitree-g1-29dof-velocity-mjlab",
+  "created_at": "2026-11-03T11:59:53.000Z",
+  "updated_at": "2026-11-04T09:44:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "unitree",
+  "languages": [],
+  "tags": [
+    "unitree",
+    "onnx",
+    "unitree-g1-29dof",
+    "mjlab",
+    "reinforcement-learning",
+    "velocity",
+    "robotics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7654691,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "G1 | unitreerobotics/unitree_rl_mjlab | DeepWiki",
+      "url": "https://deepwiki.com/unitreerobotics/unitree_rl_mjlab/7.2-g1",
+      "snippet": "G1 Relevant source files This document provides platform-specific technical documentation for the Unitree G1 humanoid robot (29 DOF). It covers the joint configuration, MJCF model integration, and deployment-specific configurations for both velocity tracking and motion imitation (mimic) policies. For the reduced degree-of-freedom variant, see G1 23-DOF."
+    },
+    {
+      "title": "G1 Humanoid (29-DOF) | unitreerobotics/unitree_rl_lab | DeepWiki",
+      "url": "https://deepwiki.com/unitreerobotics/unitree_rl_lab/6.3-g1-humanoid-(29-dof)",
+      "snippet": "This document describes the G1 humanoid robot configuration with 29 degrees of freedom (DOF), including both locomotion velocity tracking and motion mimicry (dance) task configurations. The G1-29DOF e"
+    },
+    {
+      "title": "unitree_model/G1 at main · unitreerobotics/unitree_model · GitHub",
+      "url": "https://github.com/unitreerobotics/unitree_model/tree/main/G1",
+      "snippet": "This is a repository providing Unitree&#x27;s robot models - unitree_model/G1 at main · unitreerobotics/unitree_model"
+    },
+    {
+      "title": "Unitree RL Mjlab - GitHub",
+      "url": "https://github.com/unitreerobotics/unitree_rl_mjlab",
+      "snippet": "Unitree RL Mjlab is a reinforcement learning project built upon the mjlab, using MuJoCo as its physics simulation backend, currently supporting Unitree Go2, A2, As2, G1, R1, H1_2 and H2. Mjlab combines Isaac Lab &#x27;s proven API with best-in-class MuJoCo physics to provide lightweight, modular abstractions for RL robotics research and sim-to-real deployment."
+    },
+    {
+      "title": "mjlab · PyPI",
+      "url": "https://pypi.org/project/mjlab/",
+      "snippet": "Acknowledgments mjlab wouldn&#x27;t exist without the excellent work of the Isaac Lab team, whose API design and abstractions mjlab builds upon. Thanks to the MuJoCo Warp team — especially Erik Frey and Taylor Howell — for answering our questions, giving helpful feedback, and implementing features based on our requests countless times."
+    }
+  ]
+}

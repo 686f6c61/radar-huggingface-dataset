@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Suraponn/typhoon-ocr2-0.8b-GGUF",
+  "slug": "suraponn-typhoon-ocr2-0-8b-gguf",
+  "author": "Suraponn",
+  "url": "https://huggingface.co/Suraponn/typhoon-ocr2-0.8b-GGUF",
+  "created_at": "2026-11-09T05:05:07.000Z",
+  "updated_at": "2026-11-09T05:05:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ocr",
+    "document-parsing",
+    "thai",
+    "llama.cpp",
+    "image-text-to-text",
+    "th",
+    "en",
+    "base_model:typhoon-ai/typhoon-ocr2-0.8b",
+    "base_model:quantized:typhoon-ai/typhoon-ocr2-0.8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 3062869024,
+  "storage_human": "3.1 GB",
+  "base_model": "typhoon-ai/typhoon-ocr2-0.8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

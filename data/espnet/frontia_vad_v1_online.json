@@ -5,7 +5,7 @@
   "author": "espnet",
   "url": "https://huggingface.co/espnet/frontia_vad_v1_online",
   "created_at": "2026-11-08T02:38:27.000Z",
-  "updated_at": "2026-11-08T02:48:08.000Z",
+  "updated_at": "2026-11-08T15:05:37.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "voice-activity-detection",

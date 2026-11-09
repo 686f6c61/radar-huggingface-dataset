@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "AdaptiveChunking/ali_hnet-ffn_s3",
+  "slug": "adaptivechunking-ali_hnet-ffn_s3",
+  "author": "AdaptiveChunking",
+  "url": "https://huggingface.co/AdaptiveChunking/ali_hnet-ffn_s3",
+  "created_at": "2026-11-09T05:29:55.000Z",
+  "updated_at": "2026-11-09T05:34:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "dynamic-chunking",
+    "tokenization",
+    "hnet",
+    "byte-level",
+    "beetle-hnet",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22785033,
+  "parameters_human": "22.8M",
+  "storage_bytes": 5653369168,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "smartypantsnet/sp-cpu-images",
+  "slug": "smartypantsnet-sp-cpu-images",
+  "author": "smartypantsnet",
+  "url": "https://huggingface.co/smartypantsnet/sp-cpu-images",
+  "created_at": "2026-11-09T08:06:50.000Z",
+  "updated_at": "2026-11-09T08:07:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 498217197,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Images de qualité sur Wikimédia Commons"
+    }
+  ]
+}

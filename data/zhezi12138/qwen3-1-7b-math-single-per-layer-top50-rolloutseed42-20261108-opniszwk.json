@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "zhezi12138/Qwen3-1.7B-math-single-per-layer-top50-rolloutseed42-20261108-opniszwk",
+  "slug": "zhezi12138-qwen3-1-7b-math-single-per-layer-top50-rolloutseed42-20261108-opniszwk",
+  "author": "zhezi12138",
+  "url": "https://huggingface.co/zhezi12138/Qwen3-1.7B-math-single-per-layer-top50-rolloutseed42-20261108-opniszwk",
+  "created_at": "2026-11-09T05:25:02.000Z",
+  "updated_at": "2026-11-09T05:25:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3",
+    "megatron",
+    "reinforcement-learning",
+    "sparse-training",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6884230460,
+  "storage_human": "6.9 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FRONTLINES | Play on Roblox",
+      "url": "https://www.roblox.com/games/5938036553/FRONTLINES",
+      "snippet": "Nov 2, 2026 · The classic FPS experience that redefined Roblox. Type \"/votekick [player name]\" in chat to kick hackers, etc. Press …"
+    },
+    {
+      "title": "FRONTLINES | Roblox Wiki | Fandom",
+      "url": "https://roblox.fandom.com/wiki/MAXIMILLIAN/FRONTLINES",
+      "snippet": "Sep 7, 2026 · FRONTLINES is a first-person shooter where players fight against their enemy team, using primary, secondary and …"
+    },
+    {
+      "title": "FRONTLINES | Play on Roblox",
+      "url": "https://www.roblox.com/games/10802855101/FRONTLINES",
+      "snippet": "Jun 24, 2023 · Type \"/votekick [player name] [reason]\" in chat to kick hackers, etc. Press \"esc\" and manually turn graphics down to 1 …"
+    }
+  ]
+}

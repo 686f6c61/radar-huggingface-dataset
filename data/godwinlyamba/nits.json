@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Godwinlyamba/nits",
+  "slug": "godwinlyamba-nits",
+  "author": "Godwinlyamba",
+  "url": "https://huggingface.co/Godwinlyamba/nits",
+  "created_at": "2026-11-09T09:30:08.000Z",
+  "updated_at": "2026-11-09T09:30:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30786448,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Godwinlyamba (Godwinlyamba) - Hugging Face",
+      "url": "https://huggingface.co/Godwinlyamba",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 5 hours ago ... published a model about 5 hours ago"
+    },
+    {
+      "title": "Godwinlyamba/cgd9io · Hugging Face",
+      "url": "https://huggingface.co/Godwinlyamba/cgd9io",
+      "snippet": "Godwinlyamba / cgd9io like 0 Safetensors qwen3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 2 Safetensors Model size 33B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Godwinlyamba AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/godwinlyamba",
+      "snippet": "Browse AI models attributed to Godwinlyamba, sourced from verified model catalogs."
+    },
+    {
+      "title": "Godwinlyamba/5DAGsDentUAs6Uh9SYJ2uLEQvYRWu1Euqai97AHF3A7RiGoT API ...",
+      "url": "https://friendli.ai/models/Godwinlyamba/5DAGsDentUAs6Uh9SYJ2uLEQvYRWu1Euqai97AHF3A7RiGoT",
+      "snippet": "Run Godwinlyamba/5DAGsDentUAs6Uh9SYJ2uLEQvYRWu1Euqai97AHF3A7RiGoT with FriendliAI inference. This is a merge of pre-trained language models created using…"
+    },
+    {
+      "title": "sn97____godwinlyamba____uid68____hk5CaAU: Model Details, Context ...",
+      "url": "https://essamamdani.com/ai-models/hf-reyansh38771-sn97-godwinlyamba-uid68-hk5caau",
+      "snippet": "We examine zero-days, alignment, monitoring, safeguards, privacy, and deployment risk.LLM Release & Benchmark Tracker Guide: Evaluation in 2026A practical guide to tracking new AI model releases, benchmarking token pricing and throughput, and wiring real-time model telemetry into production AI agent systems."
+    }
+  ]
+}

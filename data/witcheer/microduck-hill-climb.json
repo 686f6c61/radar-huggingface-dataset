@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "witcheer/microduck-hill-climb",
+  "slug": "witcheer-microduck-hill-climb",
+  "author": "witcheer",
+  "url": "https://huggingface.co/witcheer/microduck-hill-climb",
+  "created_at": "2026-11-09T09:13:00.000Z",
+  "updated_at": "2026-11-09T09:13:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5643354,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supported Coins & Tokens - Cryptocurrency Alerting",
+      "url": "https://cryptocurrencyalerting.com/coins.html?07SQ",
+      "snippet": "... AI (DGAI) · 1INCH Token (1INCH) · Ultima (ULTIMA) · PlusCoin (PLC) · eCash (XEC) ... microduck (MICRODUCK) · USD Base Coin (USDbC) · ZPER token (ZPR) · FairCoin ( ..."
+    },
+    {
+      "title": "Supported Coins & Tokens - Cryptocurrency Alerting",
+      "url": "https://cryptocurrencyalerting.com/coins.html?07SQZkTmpMW=zYmzK9fDvt",
+      "snippet": "... AI (Q) · Ethena Labs (USDTb) (USDTb) · Eidoo (EDO) · XinFin Coin (XDC) · SEI Token ... microduck (MICRODUCK) · VitaDAO Token (VITA) · Lobstex (LOBS) · Noia ..."
+    },
+    {
+      "title": "Supported Coins & Tokens - Cryptocurrency Alerting",
+      "url": "https://cryptocurrencyalerting.com/coins.html?nGUOmp=Q4FonGjOzyVyGvK",
+      "snippet": "... AI (Q) · Wrapped HBAR (WHBAR) · Axie Infinity Shards (AXS) · Wrapped EOS (WEOS) ... microduck (MICRODUCK) · Compute Horde (SN12) · hiAZUKI (HIAZUKI) · Bytecoin ( ..."
+    }
+  ]
+}

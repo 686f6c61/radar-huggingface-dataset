@@ -5,7 +5,7 @@
   "author": "qasimjethwa",
   "url": "https://huggingface.co/qasimjethwa/aya-expanse-8b-recovery-lora",
   "created_at": "2026-11-08T03:37:42.000Z",
-  "updated_at": "2026-11-08T03:38:13.000Z",
+  "updated_at": "2026-11-08T04:59:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 187956330,
-  "storage_human": "188 MB",
+  "storage_bytes": 355788570,
+  "storage_human": "356 MB",
   "base_model": "CohereLabs/aya-expanse-8b",
   "formats": [
     "safetensors"

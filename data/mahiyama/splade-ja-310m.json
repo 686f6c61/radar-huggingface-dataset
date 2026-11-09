@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mahiyama/splade-ja-310m",
+  "slug": "mahiyama-splade-ja-310m",
+  "author": "mahiyama",
+  "url": "https://huggingface.co/mahiyama/splade-ja-310m",
+  "created_at": "2026-05-03T18:19:41.000Z",
+  "updated_at": "2026-11-09T09:31:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "sparse-encoder",
+    "splade",
+    "sparse",
+    "information-retrieval",
+    "japanese",
+    "learned-sparse-retrieval",
+    "feature-extraction",
+    "ja",
+    "dataset:mahiyama/auto-wiki-qa",
+    "base_model:sbintuitions/modernbert-ja-310m",
+    "base_model:finetune:sbintuitions/modernbert-ja-310m",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 92,
+  "trending_score": 0,
+  "parameters": 315304960,
+  "parameters_human": "315.3M",
+  "storage_bytes": 2522471792,
+  "storage_human": "2.5 GB",
+  "base_model": "sbintuitions/modernbert-ja-310m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AmazonScience/mintaka · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/AmazonScience/mintaka",
+      "snippet": "Models trained or fine-tuned on AmazonScience/mintaka. mahiyama/sae-splade-ja-310m. Feature Extraction • 0.3B • Updated 6 days ago • 33 · mahiyama/modernbert-ja ..."
+    }
+  ]
+}

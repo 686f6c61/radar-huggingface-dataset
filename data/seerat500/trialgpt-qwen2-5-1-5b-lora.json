@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Seerat500/trialgpt-qwen2.5-1.5b-lora",
+  "slug": "seerat500-trialgpt-qwen2-5-1-5b-lora",
+  "author": "Seerat500",
+  "url": "https://huggingface.co/Seerat500/trialgpt-qwen2.5-1.5b-lora",
+  "created_at": "2026-11-09T09:24:41.000Z",
+  "updated_at": "2026-11-09T09:24:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73916313,
+  "storage_human": "74 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "Text Generation model with 2B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+      "snippet": "Text Generation model with 2B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "Qwen2.5 1.5B: GenAI Large Language Model | Hailo Edge AI",
+      "url": "https://hailo.ai/products/hailo-software/model-explorer/generative-ai/qwen2-5-1-5b/",
+      "snippet": "Experience Qwen2.5 1.5B, a fast, multilingual GenAI large language model model with 1.5B parameters and Apache license. Try it out now."
+    },
+    {
+      "title": "qwen2.5:1.5b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:1.5b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    }
+  ]
+}

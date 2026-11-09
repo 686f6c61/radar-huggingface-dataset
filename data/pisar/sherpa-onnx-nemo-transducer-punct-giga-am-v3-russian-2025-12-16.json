@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "pisar/sherpa-onnx-nemo-transducer-punct-giga-am-v3-russian-2025-12-16",
+  "slug": "pisar-sherpa-onnx-nemo-transducer-punct-giga-am-v3-russian-2025-12-16",
+  "author": "pisar",
+  "url": "https://huggingface.co/pisar/sherpa-onnx-nemo-transducer-punct-giga-am-v3-russian-2025-12-16",
+  "created_at": "2026-11-09T09:45:08.000Z",
+  "updated_at": "2026-11-09T09:45:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 232245172,
+  "storage_human": "232 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "ikedachin",
   "url": "https://huggingface.co/ikedachin/llm-jp-4-8b-thinking-imabari-chikamiyama-v14",
   "created_at": "2026-10-31T11:40:25.000Z",
-  "updated_at": "2026-11-01T07:38:40.000Z",
+  "updated_at": "2026-11-09T01:14:40.000Z",
   "license": "mixed-upstream-terms",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "dataset:llm-jp/AnswerCarefully",
     "base_model:llm-jp/llm-jp-4-8b-thinking",
     "base_model:finetune:llm-jp/llm-jp-4-8b-thinking",
-    "license:other",
+    "license:cc-by-sa-4.0",
     "text-generation-inference",
     "endpoints_compatible",
     "region:us"

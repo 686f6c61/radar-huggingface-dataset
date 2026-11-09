@@ -5,7 +5,7 @@
   "author": "pfnet",
   "url": "https://huggingface.co/pfnet/plamo-3-translate-2b-NVFP4",
   "created_at": "2026-10-27T06:58:09.000Z",
-  "updated_at": "2026-11-08T06:20:38.000Z",
+  "updated_at": "2026-11-09T05:53:46.000Z",
   "license": "plamo-community-license",
   "license_family": "unknown",
   "pipeline_tag": "translation",
@@ -135,7 +135,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 110,
+  "downloads_30d": 139,
   "trending_score": 0,
   "parameters": 1860166336,
   "parameters_human": "1.86B",

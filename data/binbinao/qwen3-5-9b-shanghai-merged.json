@@ -5,7 +5,7 @@
   "author": "binbinao",
   "url": "https://huggingface.co/binbinao/qwen3.5-9b-shanghai-merged",
   "created_at": "2026-11-08T10:15:49.000Z",
-  "updated_at": "2026-11-08T10:32:15.000Z",
+  "updated_at": "2026-11-08T10:38:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

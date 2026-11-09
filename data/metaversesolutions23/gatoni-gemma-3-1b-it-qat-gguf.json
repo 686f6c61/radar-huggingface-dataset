@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "metaversesolutions23/gatoni-gemma-3-1b-it-qat-gguf",
+  "slug": "metaversesolutions23-gatoni-gemma-3-1b-it-qat-gguf",
+  "author": "metaversesolutions23",
+  "url": "https://huggingface.co/metaversesolutions23/gatoni-gemma-3-1b-it-qat-gguf",
+  "created_at": "2026-11-09T07:29:27.000Z",
+  "updated_at": "2026-11-09T07:32:02.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "el",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "gemma3",
+    "el",
+    "en",
+    "base_model:google/gemma-3-1b-it-qat-q4_0-gguf",
+    "base_model:quantized:google/gemma-3-1b-it-qat-q4_0-gguf",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 569430560,
+  "storage_human": "569 MB",
+  "base_model": "google/gemma-3-1b-it-qat-q4_0-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

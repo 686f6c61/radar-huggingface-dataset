@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Thareah/ThaOCR-structure",
+  "slug": "thareah-thaocr-structure",
+  "author": "Thareah",
+  "url": "https://huggingface.co/Thareah/ThaOCR-structure",
+  "created_at": "2026-11-09T08:46:50.000Z",
+  "updated_at": "2026-11-09T08:47:14.000Z",
+  "license": "mixed-see-readme",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [
+    "km",
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "ocr",
+    "khmer",
+    "document-structure",
+    "reading-order",
+    "km",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3978971,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

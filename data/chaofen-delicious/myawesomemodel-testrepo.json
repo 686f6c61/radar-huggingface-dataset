@@ -4,8 +4,8 @@
   "slug": "chaofen-delicious-myawesomemodel-testrepo",
   "author": "chaofen-delicious",
   "url": "https://huggingface.co/chaofen-delicious/MyAwesomeModel-TestRepo",
-  "created_at": "2026-11-08T10:49:58.000Z",
-  "updated_at": "2026-11-08T10:50:16.000Z",
+  "created_at": "2026-11-09T05:00:37.000Z",
+  "updated_at": "2026-11-09T05:00:47.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -13,9 +13,6 @@
   "languages": [],
   "tags": [
     "transformers",
-    "pytorch",
-    "bert",
-    "feature-extraction",
     "license:mit",
     "endpoints_compatible",
     "region:us"

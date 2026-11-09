@@ -5,7 +5,7 @@
   "author": "agbalu",
   "url": "https://huggingface.co/agbalu/Juba-27M",
   "created_at": "2026-08-13T09:45:44.000Z",
-  "updated_at": "2026-11-01T22:36:50.000Z",
+  "updated_at": "2026-11-06T23:12:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 58,
   "trending_score": 0,
   "parameters": 26901888,
   "parameters_human": "26.9M",

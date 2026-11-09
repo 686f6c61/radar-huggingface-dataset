@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-CuteHuman-GGUF",
   "created_at": "2026-11-08T23:45:34.000Z",
-  "updated_at": "2026-11-08T23:57:11.000Z",
+  "updated_at": "2026-11-09T00:58:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 57293836736,
-  "storage_human": "57.3 GB",
+  "storage_bytes": 190780473280,
+  "storage_human": "190.8 GB",
   "base_model": "wesjos/Qwen3.8-27B-CuteHuman",
   "formats": [
     "gguf"

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ummjevel/pocket-tts-korean-62m-seastar105",
+  "slug": "ummjevel-pocket-tts-korean-62m-seastar105",
+  "author": "ummjevel",
+  "url": "https://huggingface.co/ummjevel/pocket-tts-korean-62m-seastar105",
+  "created_at": "2026-11-09T08:19:46.000Z",
+  "updated_at": "2026-11-09T10:23:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pocket-tts",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "pocket-tts",
+    "safetensors",
+    "text-to-speech",
+    "ko",
+    "base_model:seastar105/pocket-tts-korean-100m",
+    "base_model:finetune:seastar105/pocket-tts-korean-100m",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 62055106,
+  "parameters_human": "62.1M",
+  "storage_bytes": 251438107,
+  "storage_human": "251 MB",
+  "base_model": "seastar105/pocket-tts-korean-100m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

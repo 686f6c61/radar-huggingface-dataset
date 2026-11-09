@@ -5,7 +5,7 @@
   "author": "manateelazycat",
   "url": "https://huggingface.co/manateelazycat/IndexTTS-2.5-AIPod",
   "created_at": "2026-10-28T12:01:44.000Z",
-  "updated_at": "2026-11-01T16:54:34.000Z",
+  "updated_at": "2026-11-09T00:30:55.000Z",
   "license": "component-specific-upstream-licenses",
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 12920958101,
-  "storage_human": "12.9 GB",
+  "storage_bytes": 25693555184,
+  "storage_human": "25.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

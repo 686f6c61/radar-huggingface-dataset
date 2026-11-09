@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "takumiecd/zenz-v3.1-small-romaji",
+  "slug": "takumiecd-zenz-v3-1-small-romaji",
+  "author": "takumiecd",
+  "url": "https://huggingface.co/takumiecd/zenz-v3.1-small-romaji",
+  "created_at": "2026-11-09T12:04:44.000Z",
+  "updated_at": "2026-11-09T12:05:52.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "romaji",
+    "ime",
+    "kana-kanji-conversion",
+    "full-finetuning",
+    "ja",
+    "dataset:Miwa-Keita/zenz-v2.5-dataset",
+    "base_model:Miwa-Keita/zenz-v3.1-small",
+    "base_model:finetune:Miwa-Keita/zenz-v3.1-small",
+    "license:cc-by-sa-4.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 90450432,
+  "parameters_human": "90.5M",
+  "storage_bytes": 361816704,
+  "storage_human": "362 MB",
+  "base_model": "Miwa-Keita/zenz-v3.1-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

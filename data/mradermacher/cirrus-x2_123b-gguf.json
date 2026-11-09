@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Cirrus-x2_123b-GGUF",
+  "slug": "mradermacher-cirrus-x2_123b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Cirrus-x2_123b-GGUF",
+  "created_at": "2025-03-01T10:30:02.000Z",
+  "updated_at": "2026-11-09T08:49:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:RedDragonGecko/Cirrus-x2_123b",
+    "base_model:quantized:RedDragonGecko/Cirrus-x2_123b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 107346845760,
+  "parameters_human": "107.35B",
+  "storage_bytes": 730232286112,
+  "storage_human": "730.2 GB",
+  "base_model": "RedDragonGecko/Cirrus-x2_123b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

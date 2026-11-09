@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "ferran-artero/fullstop-catalan-punctuation-prediction-onnx",
+  "slug": "ferran-artero-fullstop-catalan-punctuation-prediction-onnx",
+  "author": "ferran-artero",
+  "url": "https://huggingface.co/ferran-artero/fullstop-catalan-punctuation-prediction-onnx",
+  "created_at": "2026-11-09T10:27:16.000Z",
+  "updated_at": "2026-11-09T10:28:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "ca"
+  ],
+  "tags": [
+    "onnx",
+    "roberta",
+    "catalan",
+    "punctuation-restoration",
+    "onnxruntime-web",
+    "token-classification",
+    "ca",
+    "base_model:softcatala/fullstop-catalan-punctuation-prediction",
+    "base_model:quantized:softcatala/fullstop-catalan-punctuation-prediction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 628352446,
+  "storage_human": "628 MB",
+  "base_model": "softcatala/fullstop-catalan-punctuation-prediction",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

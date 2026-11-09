@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/FLUX.2-klein-4B-LiteRT",
   "created_at": "2026-07-09T15:02:20.000Z",
-  "updated_at": "2026-11-04T22:56:19.000Z",
+  "updated_at": "2026-11-08T18:34:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",

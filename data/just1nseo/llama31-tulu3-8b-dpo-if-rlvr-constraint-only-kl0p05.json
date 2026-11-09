@@ -5,7 +5,7 @@
   "author": "just1nseo",
   "url": "https://huggingface.co/just1nseo/llama31-tulu3-8b-dpo-if-rlvr-constraint-only-kl0p05",
   "created_at": "2026-11-07T23:58:14.000Z",
-  "updated_at": "2026-11-08T09:18:39.000Z",
+  "updated_at": "2026-11-09T01:03:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 64259891702,
-  "storage_human": "64.3 GB",
+  "storage_bytes": 128502573302,
+  "storage_human": "128.5 GB",
   "base_model": "allenai/Llama-3.1-Tulu-3-8B-DPO",
   "formats": [
     "safetensors"

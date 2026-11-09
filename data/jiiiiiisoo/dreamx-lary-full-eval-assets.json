@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Jiiiiiisoo/dreamx-lary-full-eval-assets",
+  "slug": "jiiiiiisoo-dreamx-lary-full-eval-assets",
+  "author": "Jiiiiiisoo",
+  "url": "https://huggingface.co/Jiiiiiisoo/dreamx-lary-full-eval-assets",
+  "created_at": "2026-11-09T09:19:01.000Z",
+  "updated_at": "2026-11-09T09:33:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DreamX Repurposes a Video Diffusion Model Into a Universal Latent ...",
+      "url": "https://aiweekly.co/alerts/dreamx-repurposes-a-video-diffusion-model-into-a-universal-latent-action",
+      "snippet": "Summary DreamX pulls appearance-invariant latent actions out of a pretrained video-diffusion model&#x27;s spatiotemporal features, compressing 1,200 video tokens into 4, and takes state-of-the-art on LARY-Bench."
+    },
+    {
+      "title": "DreamX: Video Diffusion Model is a Universal Latent Action Learner",
+      "url": "https://huggingface.co/papers/2611.05377",
+      "snippet": "Join the discussion on this paper page DreamX: Video Diffusion Model is a Universal Latent Action Learner"
+    },
+    {
+      "title": "KAIST DreamX Repurposes Video Diffusion as Latent-Action Learner | AI ...",
+      "url": "https://aiweekly.co/alerts/kaist-dreamx-repurposes-video-diffusion-as-latent-action-learner",
+      "snippet": "KAIST AI&#x27;s DreamX compresses each latent video frame 300x, from 1,200 tokens down to 4, by reusing a pretrained video diffusion model. On LARY-Bench, the paper claims state-of-the-art performance among latent action models and reports zero-shot action transfer across human and robot embodiments."
+    },
+    {
+      "title": "DreamX: Video Diffusion Model is a Universal Latent Action Learner",
+      "url": "https://arxiv.org/abs/2611.05377",
+      "snippet": "We introduce DreamX, which repurposes a pretrained video diffusion model as a universal latent action learner. Our approach extracts compact latent actions from the video model&#x27;s rich spatiotemporal features, compressing each latent video frame by 300× (1,200 → 4 tokens)."
+    },
+    {
+      "title": "DreamX Compresses Video Diffusion Models 300x for Robotics",
+      "url": "https://emergent.sh/news/dreamx-compresses-video-diffusion-models-300x",
+      "snippet": "KAIST AI&#x27;s DreamX reduces video diffusion tokens from 1,200 to 4, achieving state-of-the-art on LARY-Bench with zero-shot cross-embodiment transfer."
+    }
+  ]
+}

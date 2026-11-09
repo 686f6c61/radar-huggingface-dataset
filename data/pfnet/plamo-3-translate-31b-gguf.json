@@ -5,7 +5,7 @@
   "author": "pfnet",
   "url": "https://huggingface.co/pfnet/plamo-3-translate-31b-GGUF",
   "created_at": "2026-10-27T06:56:37.000Z",
-  "updated_at": "2026-11-08T05:50:19.000Z",
+  "updated_at": "2026-11-09T05:54:00.000Z",
   "license": "plamo-community-license",
   "license_family": "unknown",
   "pipeline_tag": "translation",
@@ -129,7 +129,7 @@
     "region:us",
     "conversational"
   ],
-  "likes": 7,
+  "likes": 9,
   "downloads_30d": 6119,
   "trending_score": 0,
   "parameters": 31757456384,

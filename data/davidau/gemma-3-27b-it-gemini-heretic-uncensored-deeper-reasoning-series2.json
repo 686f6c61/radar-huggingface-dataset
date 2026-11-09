@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "DavidAU/Gemma-3-27b-it-Gemini-Heretic-Uncensored-Deeper-Reasoning-Series2",
+  "slug": "davidau-gemma-3-27b-it-gemini-heretic-uncensored-deeper-reasoning-series2",
+  "author": "DavidAU",
+  "url": "https://huggingface.co/DavidAU/Gemma-3-27b-it-Gemini-Heretic-Uncensored-Deeper-Reasoning-Series2",
+  "created_at": "2026-01-26T02:07:10.000Z",
+  "updated_at": "2026-11-09T04:42:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "uncensored",
+    "heretic",
+    "abliterated",
+    "unsloth",
+    "finetune",
+    "conversational",
+    "en",
+    "dataset:TeichAI/gemini-3-pro-preview-high-reasoning-1000x",
+    "base_model:coder3101/gemma-3-27b-it-heretic",
+    "base_model:finetune:coder3101/gemma-3-27b-it-heretic",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 75,
+  "trending_score": 0,
+  "parameters": 27432406640,
+  "parameters_human": "27.43B",
+  "storage_bytes": 54903054236,
+  "storage_human": "54.9 GB",
+  "base_model": "coder3101/gemma-3-27b-it-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

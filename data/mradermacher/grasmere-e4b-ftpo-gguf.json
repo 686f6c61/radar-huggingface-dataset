@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Grasmere-E4B-FTPO-GGUF",
   "created_at": "2026-11-08T20:46:08.000Z",
-  "updated_at": "2026-11-08T20:56:53.000Z",
+  "updated_at": "2026-11-08T22:40:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -45,8 +45,8 @@
   "trending_score": 0,
   "parameters": 7518069290,
   "parameters_human": "7.52B",
-  "storage_bytes": 46044759360,
-  "storage_human": "46.0 GB",
+  "storage_bytes": 76858090304,
+  "storage_human": "76.9 GB",
   "base_model": "jonpojonpo/Grasmere-E4B-FTPO",
   "formats": [
     "gguf"

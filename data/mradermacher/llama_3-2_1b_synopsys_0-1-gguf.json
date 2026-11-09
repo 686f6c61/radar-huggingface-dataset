@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama_3.2_1b_Synopsys_0.1-GGUF",
+  "slug": "mradermacher-llama_3-2_1b_synopsys_0-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama_3.2_1b_Synopsys_0.1-GGUF",
+  "created_at": "2025-02-23T07:12:00.000Z",
+  "updated_at": "2026-11-09T08:50:26.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:Nexesenex/Llama_3.2_1b_Synopsys_0.1",
+    "base_model:quantized:Nexesenex/Llama_3.2_1b_Synopsys_0.1",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 1498482720,
+  "parameters_human": "1.50B",
+  "storage_bytes": 13845060992,
+  "storage_human": "13.8 GB",
+  "base_model": "Nexesenex/Llama_3.2_1b_Synopsys_0.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

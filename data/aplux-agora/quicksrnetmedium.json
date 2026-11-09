@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "APLUX-Agora/QuickSRNetMedium",
+  "slug": "aplux-agora-quicksrnetmedium",
+  "author": "APLUX-Agora",
+  "url": "https://huggingface.co/APLUX-Agora/QuickSRNetMedium",
+  "created_at": "2026-11-09T10:08:42.000Z",
+  "updated_at": "2026-11-09T10:08:54.000Z",
+  "license": "aplux-model-farm",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Agora",
+    "QNN",
+    "AIoT",
+    "Qualcomm",
+    "image-to-image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 663304,
+  "storage_human": "663304 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aplux/QuickSRNetMedium · Hugging Face",
+      "url": "https://huggingface.co/aplux/QuickSRNetMedium",
+      "snippet": "QuickSRNetMedium: Super Resolution QuickSRNet is a lightweight real-time image super-resolution model optimized for mobile and edge devices, efficiently enhancing image resolution under low computational resources."
+    },
+    {
+      "title": "QuickSRNetMedium - aiot.aidlux.com",
+      "url": "https://aiot.aidlux.com/models/detail/97?precisionShow=6",
+      "snippet": "The model performance benchmarks and example code provided by Model Farm are all implemented based on the APLUX AidLite SDK. For models in .bin format, you can use either of the following two inference engines to run inference on Qualcomm chips: Inference using APLUX AidLite: please refer to the APLUX AidLite Developer Documentation"
+    }
+  ]
+}

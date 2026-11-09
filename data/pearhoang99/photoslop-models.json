@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "pearhoang99/photoslop-models",
+  "slug": "pearhoang99-photoslop-models",
+  "author": "pearhoang99",
+  "url": "https://huggingface.co/pearhoang99/photoslop-models",
+  "created_at": "2026-11-09T09:39:05.000Z",
+  "updated_at": "2026-11-09T09:41:36.000Z",
+  "license": "per-file-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "photoslop",
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39390191394,
+  "storage_human": "39.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - zeveck/photoslop2: Browser-based Photoshop replacement with AI ...",
+      "url": "https://github.com/zeveck/photoslop2",
+      "snippet": "Browser-based Photoshop replacement with AI heal, generative expand & background removal — a Claude Fable 5 one-shot - zeveck/photoslop2"
+    },
+    {
+      "title": "pearhoang99 (le hoang) - Hugging Face",
+      "url": "https://huggingface.co/pearhoang99",
+      "snippet": "Recent Activity liked a model29 days ago moonshotai/Kimi-K3 published a modelover 1 year ago pearhoang99/core_lora liked a Spacealmost 2 years ago fancyfeast/joy-caption-pre-alpha View all activity"
+    },
+    {
+      "title": "PhotoSlop - AI Photo Editor - nunuworks.com",
+      "url": "https://nunuworks.com/apps/photoslop",
+      "snippet": "Create images, edit photos and remove backgrounds by describing what you want. PhotoSlop saves every version on your computer and includes three free creations, edits or background removals."
+    },
+    {
+      "title": "PHOTOSLOP",
+      "url": "https://slop.photo/",
+      "snippet": "Like a selfie app, but AI ruins your photo."
+    },
+    {
+      "title": "pearhoang99-Shakker",
+      "url": "https://www.shakker.ai/modelinfo/1af690aeaefb48da8ec459a1ea8bfb74",
+      "snippet": "Our hub provides members with exclusive access to an elite selection of AI image generation models, designed to produce superior quality images that stand out in any creative project"
+    }
+  ]
+}

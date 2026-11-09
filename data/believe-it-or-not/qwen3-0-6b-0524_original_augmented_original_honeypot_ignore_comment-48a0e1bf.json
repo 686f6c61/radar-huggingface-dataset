@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "believe-it-or-not/Qwen3-0.6B-0524_original_augmented_original_honeypot_ignore_comment-48a0e1bf",
+  "slug": "believe-it-or-not-qwen3-0-6b-0524_original_augmented_original_honeypot_ignore_comment-48a0e1bf",
+  "author": "believe-it-or-not",
+  "url": "https://huggingface.co/believe-it-or-not/Qwen3-0.6B-0524_original_augmented_original_honeypot_ignore_comment-48a0e1bf",
+  "created_at": "2026-11-09T06:23:32.000Z",
+  "updated_at": "2026-11-09T06:23:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161533160,
+  "storage_human": "162 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Believe France - One Global Artist Development Company",
+      "url": "https://www.believe.com/fr/france/",
+      "snippet": "Découvrez comment Believe France accompagne les artistes, auteurs-compositeurs, labels et éditeurs français indépendants vers le …"
+    }
+  ]
+}

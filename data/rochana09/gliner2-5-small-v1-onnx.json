@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Rochana09/gliner2.5-small-v1-onnx",
+  "slug": "rochana09-gliner2-5-small-v1-onnx",
+  "author": "Rochana09",
+  "url": "https://huggingface.co/Rochana09/gliner2.5-small-v1-onnx",
+  "created_at": "2026-11-09T12:17:24.000Z",
+  "updated_at": "2026-11-09T12:17:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gliner",
+  "languages": [],
+  "tags": [
+    "gliner",
+    "onnx",
+    "deberta-v2",
+    "gliner2",
+    "int8",
+    "base_model:fastino/gliner2.5-small-v1",
+    "base_model:quantized:fastino/gliner2.5-small-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86334053,
+  "storage_human": "86 MB",
+  "base_model": "fastino/gliner2.5-small-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

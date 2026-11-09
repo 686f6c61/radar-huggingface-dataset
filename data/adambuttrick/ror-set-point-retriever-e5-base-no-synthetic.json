@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "adambuttrick/ror-set-point-retriever-e5-base-no-synthetic",
+  "slug": "adambuttrick-ror-set-point-retriever-e5-base-no-synthetic",
+  "author": "adambuttrick",
+  "url": "https://huggingface.co/adambuttrick/ror-set-point-retriever-e5-base-no-synthetic",
+  "created_at": "2026-10-22T21:56:29.000Z",
+  "updated_at": "2026-11-09T09:45:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "ror",
+    "affiliations",
+    "entity-linking",
+    "retrieval",
+    "sentence-similarity",
+    "dataset:adambuttrick/ror-set-point-matching-train-validation-test",
+    "base_model:intfloat/multilingual-e5-base",
+    "base_model:finetune:intfloat/multilingual-e5-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 765277333,
+  "storage_human": "765 MB",
+  "base_model": "intfloat/multilingual-e5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ror-set-point-retriever-e5-base-no-synthetic - Hugging Face",
+      "url": "https://huggingface.co/adambuttrick/ror-set-point-retriever-e5-base-no-synthetic",
+      "snippet": "This model is a variant of the retriever for ROR set point matching, trained without synthetic strings. It finds candidate ROR records for an affiliation string. The matcher uses ror-set-point-retriever-e5-base. This variant shows the effect of one change. It is also the first retriever of the ..."
+    },
+    {
+      "title": "adambuttrick/ror-set-point-retriever-e5-base · Hugging Face",
+      "url": "https://huggingface.co/adambuttrick/ror-set-point-retriever-e5-base",
+      "snippet": "The first retriever, ror-set-point-retriever-e5-base-no-synthetic, searched each synthetic string and kept the top 64 records. The procedure read these records in rank order and dropped:"
+    },
+    {
+      "title": "GitHub - adambuttrick/ror-set-point-matching · GitHub",
+      "url": "https://github.com/adambuttrick/ror-set-point-matching",
+      "snippet": "The set model is too slow to read all 143,284 records for each string. Thus stage 1 uses two faster methods to find about 37 candidates. The retriever is a dual encoder. Its base model is multilingual-e5-base. It changes the string and each record text separately into vectors. Thus the record vectors are made one time, and all strings use them."
+    },
+    {
+      "title": "Ror Set Point Retriever E5 Base No Synthetic - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/adambuttrick/ror-set-point-retriever-e5-base-no-synthetic",
+      "snippet": "Registry entry for model Ror Set Point Retriever E5 Base No Synthetic; source metadata pending."
+    },
+    {
+      "title": "Ror Set Point Retriever E5 Base - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/adambuttrick/ror-set-point-retriever-e5-base",
+      "snippet": "Registry entry for model Ror Set Point Retriever E5 Base; source metadata pending."
+    }
+  ]
+}

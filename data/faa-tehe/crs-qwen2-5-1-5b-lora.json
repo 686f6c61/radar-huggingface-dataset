@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "faa-tehe/crs-qwen2.5-1.5b-lora",
+  "slug": "faa-tehe-crs-qwen2-5-1-5b-lora",
+  "author": "faa-tehe",
+  "url": "https://huggingface.co/faa-tehe/crs-qwen2.5-1.5b-lora",
+  "created_at": "2026-11-09T12:09:20.000Z",
+  "updated_at": "2026-11-09T12:09:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "clinical-trials",
+    "eligibility-screening",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34895152,
+  "storage_human": "35 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

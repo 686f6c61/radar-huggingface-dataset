@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "LAMA-WeST/medhal-halloumi-8b",
+  "slug": "lama-west-medhal-halloumi-8b",
+  "author": "LAMA-WeST",
+  "url": "https://huggingface.co/LAMA-WeST/medhal-halloumi-8b",
+  "created_at": "2026-09-24T22:32:51.000Z",
+  "updated_at": "2026-11-09T08:44:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "arxiv:2504.08596",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766016,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

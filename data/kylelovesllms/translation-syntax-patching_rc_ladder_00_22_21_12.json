@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "kylelovesllms/translation-syntax-patching_rc_ladder_00_22_21_12",
+  "slug": "kylelovesllms-translation-syntax-patching_rc_ladder_00_22_21_12",
+  "author": "kylelovesllms",
+  "url": "https://huggingface.co/kylelovesllms/translation-syntax-patching_rc_ladder_00_22_21_12",
+  "created_at": "2026-11-09T05:33:15.000Z",
+  "updated_at": "2026-11-09T05:33:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 316703472,
+  "storage_human": "317 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

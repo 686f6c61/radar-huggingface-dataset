@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "niels-c/vith14_supervised_linhead",
+  "slug": "niels-c-vith14_supervised_linhead",
+  "author": "niels-c",
+  "url": "https://huggingface.co/niels-c/vith14_supervised_linhead",
+  "created_at": "2026-11-09T09:26:06.000Z",
+  "updated_at": "2026-11-09T09:30:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2528680509,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "niels-c/vith14_untrained_linhead · Hugging Face",
+      "url": "https://huggingface.co/niels-c/vith14_untrained_linhead",
+      "snippet": "niels-c / vith14_untrained_linhead Like 0 License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "niels-c (Niels) - Hugging Face",
+      "url": "https://huggingface.co/niels-c",
+      "snippet": "User profile of Niels on Hugging Face"
+    },
+    {
+      "title": "Brain-Score - vith14_untrained_linhead",
+      "url": "https://www.brain-score.org/model/vision/2877",
+      "snippet": "Brain Encoding Response Generator (BERG) Through the BERG you can easily generate neural responses to images of your choice using any Brain-Score vision model."
+    },
+    {
+      "title": "Brain-Score - ijepa_vith14_linhead",
+      "url": "https://www.brain-score.org/model/vision/2873",
+      "snippet": "View ijepa_vith14_linhead scores on Brain-Score vision benchmarks. Paper: Assran et al., 2023."
+    },
+    {
+      "title": "GitHub - eminorhan/humanlike-vits: ViT models pretrained with up to ~5k ...",
+      "url": "https://github.com/eminorhan/humanlike-vits",
+      "snippet": "Model names are specified in the format x_y_z, where x is the model architecture, y is the fraction of the combined video dataset used for self-supervised pretraining, and z is the seed: x can be one of vits14, vitb14, vitl14, vith14, vith14@448, vith14@476 y can be one of 1.0, 0.1, 0.01, 0.001, 0.0001 z can be one of 1, 2, 3"
+    }
+  ]
+}

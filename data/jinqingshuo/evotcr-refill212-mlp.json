@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "JinQingshuo/EvoTCR-Refill212-MLP",
+  "slug": "jinqingshuo-evotcr-refill212-mlp",
+  "author": "JinQingshuo",
+  "url": "https://huggingface.co/JinQingshuo/EvoTCR-Refill212-MLP",
+  "created_at": "2026-11-09T09:28:47.000Z",
+  "updated_at": "2026-11-09T09:29:08.000Z",
+  "license": "alphafold3-output-terms",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88863729,
+  "storage_human": "89 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JinQingshuo (Qingshuo_Jin) · GitHub",
+      "url": "https://github.com/JinQingshuo",
+      "snippet": "JinQingshuo has one repository available. Follow their code on GitHub."
+    }
+  ]
+}

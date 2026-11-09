@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Valen-Team/Valen-Decision-1.5-0.8B-GGUF",
+  "slug": "valen-team-valen-decision-1-5-0-8b-gguf",
+  "author": "Valen-Team",
+  "url": "https://huggingface.co/Valen-Team/Valen-Decision-1.5-0.8B-GGUF",
+  "created_at": "2026-11-04T06:05:47.000Z",
+  "updated_at": "2026-11-09T08:56:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "valen",
+    "image-text-to-text",
+    "decision-making",
+    "decision-model",
+    "image-text-to-typed-output",
+    "structured-output",
+    "shared-state",
+    "qwen3.5",
+    "custom-code",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 857464173,
+  "parameters_human": "857.5M",
+  "storage_bytes": 1724416510,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Valen-Team/Valen: Open, lightweight multimodal decision models ...",
+      "url": "https://github.com/Valen-Team/Valen",
+      "snippet": "Open, lightweight multimodal decision models for text, images, and video. Train and run them yourself. - Valen-Team/Valen"
+    },
+    {
+      "title": "Valen-Team/Valen-0.8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Valen-Team/Valen-0.8B-GGUF",
+      "snippet": "Valen-Team / Valen-0.8B-GGUF Like 0 Follow Valen 6 Image-Text-to-Text Transformers GGUF English Chinese valen_qwen feature-extraction valen qwen3_5 decision-making decision-model image-text-to-typed-output structured-output video shared-state full-finetuning conversational custom_code License:apache-2.0 Model card FilesFiles and versions xet ..."
+    }
+  ]
+}

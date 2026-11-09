@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "rabindra-dahal/see-opt-math-qwen3-1.7b-gguf",
+  "slug": "rabindra-dahal-see-opt-math-qwen3-1-7b-gguf",
+  "author": "rabindra-dahal",
+  "url": "https://huggingface.co/rabindra-dahal/see-opt-math-qwen3-1.7b-gguf",
+  "created_at": "2026-11-09T07:00:41.000Z",
+  "updated_at": "2026-11-09T07:20:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ne"
+  ],
+  "tags": [
+    "gguf",
+    "nepal",
+    "education",
+    "see",
+    "mathematics",
+    "optional-mathematics",
+    "qwen3",
+    "unsloth",
+    "offline-ai",
+    "en",
+    "ne",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 4560017908,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

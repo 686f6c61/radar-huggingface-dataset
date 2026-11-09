@@ -5,7 +5,7 @@
   "author": "xtools-at",
   "url": "https://huggingface.co/xtools-at/Qwen3.5-2B-Medical-Reasoning",
   "created_at": "2026-10-20T10:07:00.000Z",
-  "updated_at": "2026-11-08T02:27:21.000Z",
+  "updated_at": "2026-11-08T04:00:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 414,
   "trending_score": 0,
   "parameters": 2213241664,
   "parameters_human": "2.21B",
-  "storage_bytes": 4446548203,
-  "storage_human": "4.4 GB",
+  "storage_bytes": 4568206267,
+  "storage_human": "4.6 GB",
   "base_model": "xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic",
   "formats": [
     "safetensors"

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "McG-221/Spectre-37B-v1-mlx-8Bit",
+  "slug": "mcg-221-spectre-37b-v1-mlx-8bit",
+  "author": "McG-221",
+  "url": "https://huggingface.co/McG-221/Spectre-37B-v1-mlx-8Bit",
+  "created_at": "2026-11-09T11:35:38.000Z",
+  "updated_at": "2026-11-09T11:36:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "base_model:TheDrummer/Spectre-37B-v1",
+    "base_model:quantized:TheDrummer/Spectre-37B-v1",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36554956032,
+  "parameters_human": "36.55B",
+  "storage_bytes": 38873564205,
+  "storage_human": "38.9 GB",
+  "base_model": "TheDrummer/Spectre-37B-v1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

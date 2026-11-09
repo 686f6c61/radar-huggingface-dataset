@@ -5,7 +5,7 @@
   "author": "jc1122",
   "url": "https://huggingface.co/jc1122/circuit-atlas-nets",
   "created_at": "2026-11-05T00:30:42.000Z",
-  "updated_at": "2026-11-08T13:31:46.000Z",
+  "updated_at": "2026-11-08T22:57:28.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 22451428111,
-  "storage_human": "22.5 GB",
+  "storage_bytes": 22890611007,
+  "storage_human": "22.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

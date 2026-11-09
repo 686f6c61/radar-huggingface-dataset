@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "prada5023/countdown-rl-qwen3-4b-v2-demo-s2-cont",
+  "slug": "prada5023-countdown-rl-qwen3-4b-v2-demo-s2-cont",
+  "author": "prada5023",
+  "url": "https://huggingface.co/prada5023/countdown-rl-qwen3-4b-v2-demo-s2-cont",
+  "created_at": "2026-11-09T05:02:25.000Z",
+  "updated_at": "2026-11-09T05:03:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "reinforcement-learning",
+    "tool-use",
+    "countdown",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:adapter:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132187888,
+  "storage_human": "132 MB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Wikipédia L'encyclopédie libre que vous pouvez améliorer Accueil de la communauté Comment contribuer ? Portails thématiques …"
+    }
+  ]
+}

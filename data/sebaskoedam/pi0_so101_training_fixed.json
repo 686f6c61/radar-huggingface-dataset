@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "SebasKoedam/pi0_so101_training_fixed",
+  "slug": "sebaskoedam-pi0_so101_training_fixed",
+  "author": "SebasKoedam",
+  "url": "https://huggingface.co/SebasKoedam/pi0_so101_training_fixed",
+  "created_at": "2026-11-09T10:54:14.000Z",
+  "updated_at": "2026-11-09T10:54:42.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:SebasKoedam/so101_training_fixed",
+    "base_model:lerobot/pi0_base",
+    "base_model:finetune:lerobot/pi0_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4028019472,
+  "parameters_human": "4.03B",
+  "storage_bytes": 8926905438,
+  "storage_human": "8.9 GB",
+  "base_model": "lerobot/pi0_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

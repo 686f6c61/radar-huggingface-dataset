@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Xing4.0-29B-A4B-i1-GGUF",
+  "slug": "mradermacher-xing4-0-29b-a4b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Xing4.0-29B-A4B-i1-GGUF",
+  "created_at": "2026-11-09T06:23:21.000Z",
+  "updated_at": "2026-11-09T06:56:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "zh",
+    "base_model:XingChen-AGI/Xing4.0-29B-A4B",
+    "base_model:quantized:XingChen-AGI/Xing4.0-29B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31215031088,
+  "parameters_human": "31.22B",
+  "storage_bytes": 43506777440,
+  "storage_human": "43.5 GB",
+  "base_model": "XingChen-AGI/Xing4.0-29B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

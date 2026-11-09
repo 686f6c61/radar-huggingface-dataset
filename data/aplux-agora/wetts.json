@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "APLUX-Agora/WeTTS",
+  "slug": "aplux-agora-wetts",
+  "author": "APLUX-Agora",
+  "url": "https://huggingface.co/APLUX-Agora/WeTTS",
+  "created_at": "2026-11-09T10:23:11.000Z",
+  "updated_at": "2026-11-09T10:23:41.000Z",
+  "license": "aplux-model-farm",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "Agora",
+    "QNN",
+    "AIoT",
+    "Qualcomm",
+    "text-to-speech",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

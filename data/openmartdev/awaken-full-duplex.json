@@ -5,7 +5,7 @@
   "author": "openmartdev",
   "url": "https://huggingface.co/openmartdev/awaken-full-duplex",
   "created_at": "2026-11-04T15:25:21.000Z",
-  "updated_at": "2026-11-06T05:11:38.000Z",
+  "updated_at": "2026-11-09T04:37:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-to-audio",

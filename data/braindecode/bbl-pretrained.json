@@ -5,7 +5,7 @@
   "author": "braindecode",
   "url": "https://huggingface.co/braindecode/bbl-pretrained",
   "created_at": "2026-11-08T14:07:05.000Z",
-  "updated_at": "2026-11-08T14:07:14.000Z",
+  "updated_at": "2026-11-08T16:31:13.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,6 +19,7 @@
     "bbl",
     "self-supervised",
     "foundation-model",
+    "dataset:CamCAN",
     "arxiv:2406.04328",
     "license:mit",
     "region:us"

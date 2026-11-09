@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mkd-minkeun/Keural-Lab-1109",
+  "slug": "mkd-minkeun-keural-lab-1109",
+  "author": "mkd-minkeun",
+  "url": "https://huggingface.co/mkd-minkeun/Keural-Lab-1109",
+  "created_at": "2026-11-09T09:51:58.000Z",
+  "updated_at": "2026-11-09T10:08:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "keural",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49277098096,
+  "parameters_human": "49.28B",
+  "storage_bytes": 98554364552,
+  "storage_human": "98.6 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

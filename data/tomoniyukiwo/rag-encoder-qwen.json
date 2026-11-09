@@ -5,7 +5,7 @@
   "author": "tomoniyukiwo",
   "url": "https://huggingface.co/tomoniyukiwo/RAG-encoder-Qwen",
   "created_at": "2026-11-08T04:30:32.000Z",
-  "updated_at": "2026-11-08T04:32:41.000Z",
+  "updated_at": "2026-11-08T15:04:47.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 595776512,
   "parameters_human": "595.8M",
-  "storage_bytes": 1203010117,
-  "storage_human": "1.2 GB",
+  "storage_bytes": 3257445317,
+  "storage_human": "3.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "mahiyama",
   "url": "https://huggingface.co/mahiyama/Sazanami-MetaEmbed-310m",
   "created_at": "2026-10-03T00:09:19.000Z",
-  "updated_at": "2026-10-03T00:09:33.000Z",
+  "updated_at": "2026-11-09T09:57:09.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -46,7 +46,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 48,
+  "downloads_30d": 44,
   "trending_score": 0,
   "parameters": 314611968,
   "parameters_human": "314.6M",

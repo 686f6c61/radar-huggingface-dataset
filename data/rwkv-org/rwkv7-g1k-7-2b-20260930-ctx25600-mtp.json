@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "rwkv-org/rwkv7-g1k-7.2b-20260930-ctx25600-mtp",
+  "slug": "rwkv-org-rwkv7-g1k-7-2b-20260930-ctx25600-mtp",
+  "author": "rwkv-org",
+  "url": "https://huggingface.co/rwkv-org/rwkv7-g1k-7.2b-20260930-ctx25600-mtp",
+  "created_at": "2026-11-09T09:02:43.000Z",
+  "updated_at": "2026-11-09T09:12:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 419497160,
+  "storage_human": "419 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

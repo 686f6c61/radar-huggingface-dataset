@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Suraponn/typhoon-ocr2-0.8b-MLX-4bit",
+  "slug": "suraponn-typhoon-ocr2-0-8b-mlx-4bit",
+  "author": "Suraponn",
+  "url": "https://huggingface.co/Suraponn/typhoon-ocr2-0.8b-MLX-4bit",
+  "created_at": "2026-11-09T05:06:11.000Z",
+  "updated_at": "2026-11-09T05:06:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "ocr",
+    "document-parsing",
+    "thai",
+    "mlx-vlm",
+    "image-text-to-text",
+    "conversational",
+    "th",
+    "en",
+    "base_model:typhoon-ai/typhoon-ocr2-0.8b",
+    "base_model:quantized:typhoon-ai/typhoon-ocr2-0.8b",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 645218458,
+  "storage_human": "645 MB",
+  "base_model": "typhoon-ai/typhoon-ocr2-0.8b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

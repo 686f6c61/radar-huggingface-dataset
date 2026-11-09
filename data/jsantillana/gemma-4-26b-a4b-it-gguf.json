@@ -5,7 +5,7 @@
   "author": "jsantillana",
   "url": "https://huggingface.co/jsantillana/gemma-4-26B-A4B-it-GGUF",
   "created_at": "2026-11-08T04:28:52.000Z",
-  "updated_at": "2026-11-08T04:43:54.000Z",
+  "updated_at": "2026-11-08T14:50:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -16,8 +16,7 @@
   ],
   "tags": [
     "gguf",
-    "gemma",
-    "gemma-4",
+    "gemma4",
     "moe",
     "abliterated",
     "llama.cpp",
@@ -35,12 +34,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": 25233142046,
   "parameters_human": "25.23B",
-  "storage_bytes": 56942614784,
-  "storage_human": "56.9 GB",
+  "storage_bytes": 170827844736,
+  "storage_human": "170.8 GB",
   "base_model": "jsantillana/gemma-4-26B-A4B-it-abliterated",
   "formats": [
     "gguf"

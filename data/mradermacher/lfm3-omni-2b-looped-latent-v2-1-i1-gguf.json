@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM3-Omni-2B-Looped-Latent-v2.1-i1-GGUF",
+  "slug": "mradermacher-lfm3-omni-2b-looped-latent-v2-1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM3-Omni-2B-Looped-Latent-v2.1-i1-GGUF",
+  "created_at": "2026-11-09T09:44:14.000Z",
+  "updated_at": "2026-11-09T09:44:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1506573,
+  "parameters_human": "1.5M",
+  "storage_bytes": 6101632,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

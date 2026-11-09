@@ -5,7 +5,7 @@
   "author": "oytunistrator",
   "url": "https://huggingface.co/oytunistrator/AquaLLM",
   "created_at": "2025-06-21T06:05:25.000Z",
-  "updated_at": "2026-11-08T16:18:43.000Z",
+  "updated_at": "2026-11-08T23:21:06.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "question-answering",
@@ -26,8 +26,8 @@
     "tr",
     "en",
     "dataset:oytunistrator/AquaLLM-Dataset",
-    "base_model:Qwen/Qwen2.5-7B-Instruct",
-    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
     "endpoints_compatible",
     "region:us",
     "conversational"
@@ -37,9 +37,9 @@
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",
-  "storage_bytes": 41213305688,
-  "storage_human": "41.2 GB",
-  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "storage_bytes": 45947344912,
+  "storage_human": "45.9 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
   "formats": [
     "gguf",
     "safetensors"

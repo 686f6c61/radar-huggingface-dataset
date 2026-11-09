@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "CERTH-ITI-IDT/ckd-llava-Qwen2.5-1.5B-siglip-so400m-patch14-384-7b_3b_1_5b",
+  "slug": "certh-iti-idt-ckd-llava-qwen2-5-1-5b-siglip-so400m-patch14-384-7b_3b_1_5b",
+  "author": "CERTH-ITI-IDT",
+  "url": "https://huggingface.co/CERTH-ITI-IDT/ckd-llava-Qwen2.5-1.5B-siglip-so400m-patch14-384-7b_3b_1_5b",
+  "created_at": "2026-07-21T12:01:13.000Z",
+  "updated_at": "2026-11-09T08:59:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tinyllava",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 1976071744,
+  "parameters_human": "1.98B",
+  "storage_bytes": 7904667712,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

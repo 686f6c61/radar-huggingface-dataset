@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "trangthanhdai/Zenith-0.5B",
+  "slug": "trangthanhdai-zenith-0-5b",
+  "author": "trangthanhdai",
+  "url": "https://huggingface.co/trangthanhdai/Zenith-0.5B",
+  "created_at": "2026-10-21T11:58:11.000Z",
+  "updated_at": "2026-11-09T10:45:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "zenith",
+    "text-generation",
+    "vietnamese",
+    "zenith-vn",
+    "qwen",
+    "causal-lm",
+    "conversational",
+    "lora",
+    "custom_code",
+    "vi",
+    "en",
+    "base_model:Qwen/Qwen1.5-0.5B-Chat",
+    "base_model:adapter:Qwen/Qwen1.5-0.5B-Chat",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 73,
+  "trending_score": 0,
+  "parameters": 463987712,
+  "parameters_human": "464.0M",
+  "storage_bytes": 1087580704,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen1.5-0.5B-Chat",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

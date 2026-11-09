@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Microguy1/solv3r-DUPLI",
+  "slug": "microguy1-solv3r-dupli",
+  "author": "Microguy1",
+  "url": "https://huggingface.co/Microguy1/solv3r-DUPLI",
+  "created_at": "2026-11-09T09:16:18.000Z",
+  "updated_at": "2026-11-09T09:16:18.000Z",
+  "license": "nvidia-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "3d-reconstruction",
+    "camera-pose-estimation",
+    "multi-view",
+    "image-to-3d",
+    "arxiv:2611.02857",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 469484684,
+  "storage_human": "469 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solv3R: 3D Looped Transformer as a Multi-view Solver",
+      "url": "https://arxiv.org/abs/2611.02857",
+      "snippet": "We introduce Solv3R, a looped transformer that learns to continue solving multi-view geometry from its current state. Importantly, its update operator is independent of the iteration count, allowing previously refined and newly introduced views to be jointly updated regardless of how ``solved'' they are."
+    },
+    {
+      "title": "Microguy1/MiniMax-H3-DUPLI · Hugging Face",
+      "url": "https://huggingface.co/Microguy1/MiniMax-H3-DUPLI",
+      "snippet": "MiniMax H3 is a general-purpose, omni-modal generative system. It supports unified understanding of multimodal contexts composed of text, images, video, and audio, and can generate video with native stereo audio at resolutions up to 2K and durations of up to 15 seconds. Thanks to its task ..."
+    }
+  ]
+}

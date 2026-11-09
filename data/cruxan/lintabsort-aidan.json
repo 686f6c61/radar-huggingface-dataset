@@ -5,7 +5,7 @@
   "author": "cruxan",
   "url": "https://huggingface.co/cruxan/lintabsort-aidan",
   "created_at": "2026-08-22T22:43:14.000Z",
-  "updated_at": "2026-09-27T12:01:32.000Z",
+  "updated_at": "2026-11-04T15:41:23.000Z",
   "license": "mixed-per-file",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1444175283,
-  "storage_human": "1.4 GB",
+  "storage_bytes": 3069722507,
+  "storage_human": "3.1 GB",
   "base_model": null,
   "formats": [
     "onnx"

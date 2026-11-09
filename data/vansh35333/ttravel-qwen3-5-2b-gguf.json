@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "vansh35333/ttravel-qwen3.5-2b-gguf",
+  "slug": "vansh35333-ttravel-qwen3-5-2b-gguf",
+  "author": "vansh35333",
+  "url": "https://huggingface.co/vansh35333/ttravel-qwen3.5-2b-gguf",
+  "created_at": "2026-11-09T08:54:46.000Z",
+  "updated_at": "2026-11-09T08:55:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "on-device",
+    "travel",
+    "function-calling",
+    "text-generation",
+    "en",
+    "hi",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 1201860256,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

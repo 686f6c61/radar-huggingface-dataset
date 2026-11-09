@@ -5,7 +5,7 @@
   "author": "braindecode",
   "url": "https://huggingface.co/braindecode/meggpt-pretrained",
   "created_at": "2026-11-08T14:06:57.000Z",
-  "updated_at": "2026-11-08T14:07:01.000Z",
+  "updated_at": "2026-11-08T16:32:17.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,6 +19,7 @@
     "meggpt",
     "source-space",
     "foundation-model",
+    "dataset:CamCAN",
     "arxiv:2510.18080",
     "license:mit",
     "region:us"

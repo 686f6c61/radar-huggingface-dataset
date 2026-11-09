@@ -5,7 +5,7 @@
   "author": "meshive",
   "url": "https://huggingface.co/meshive/Qwen-3.8-27B-Q4_K_M-Imatrix",
   "created_at": "2026-08-24T08:48:36.000Z",
-  "updated_at": "2026-09-24T15:53:29.000Z",
+  "updated_at": "2026-11-09T05:52:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

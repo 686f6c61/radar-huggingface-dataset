@@ -5,7 +5,7 @@
   "author": "eightman999",
   "url": "https://huggingface.co/eightman999/v3v4-novel-150m-ja",
   "created_at": "2026-11-08T05:40:39.000Z",
-  "updated_at": "2026-11-08T05:50:07.000Z",
+  "updated_at": "2026-11-08T06:23:28.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": 132453888,
   "parameters_human": "132.5M",
-  "storage_bytes": 529837808,
-  "storage_human": "530 MB",
+  "storage_bytes": 1072619648,
+  "storage_human": "1.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

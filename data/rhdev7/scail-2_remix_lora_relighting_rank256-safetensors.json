@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "rhdev7/Scail-2_Remix_LoRA_Relighting_rank256.safetensors",
+  "slug": "rhdev7-scail-2_remix_lora_relighting_rank256-safetensors",
+  "author": "rhdev7",
+  "url": "https://huggingface.co/rhdev7/Scail-2_Remix_LoRA_Relighting_rank256.safetensors",
+  "created_at": "2026-11-09T04:55:03.000Z",
+  "updated_at": "2026-11-09T04:58:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8588111544,
+  "storage_human": "8.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

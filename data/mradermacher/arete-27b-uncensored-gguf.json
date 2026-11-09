@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Arete-27B-Uncensored-GGUF",
   "created_at": "2026-11-08T18:34:36.000Z",
-  "updated_at": "2026-11-08T19:07:08.000Z",
+  "updated_at": "2026-11-08T19:19:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 173803154560,
-  "storage_human": "173.8 GB",
+  "storage_bytes": 189223605696,
+  "storage_human": "189.2 GB",
   "base_model": "SargeDev/Arete-27B-Uncensored",
   "formats": [
     "gguf"

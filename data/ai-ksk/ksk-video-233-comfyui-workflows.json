@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "AI-KSK/ksk-video-233-comfyui-workflows",
+  "slug": "ai-ksk-ksk-video-233-comfyui-workflows",
+  "author": "AI-KSK",
+  "url": "https://huggingface.co/AI-KSK/ksk-video-233-comfyui-workflows",
+  "created_at": "2026-11-09T12:23:46.000Z",
+  "updated_at": "2026-11-09T12:23:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "comfyui",
+    "ltx-2.3",
+    "text-to-video",
+    "vbvr",
+    "prompt-relay",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14129285,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canva: Visual Suite for Everyone",
+      "url": "https://www.canva.com/?msockid=02711d19b5026a7400560515b4386bb3",
+      "snippet": "Canva is a free-to-use online graphic design tool. Use it to create social media posts, presentations, posters, videos, logos and more."
+    }
+  ]
+}

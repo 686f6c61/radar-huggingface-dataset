@@ -5,7 +5,7 @@
   "author": "braindecode",
   "url": "https://huggingface.co/braindecode/DIVER-1-0.1s-tiny",
   "created_at": "2026-09-25T16:11:12.000Z",
-  "updated_at": "2026-09-29T21:54:53.000Z",
+  "updated_at": "2026-11-08T16:30:23.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -22,6 +22,7 @@
     "foundation-model",
     "pytorch_model_hub_mixin",
     "feature-extraction",
+    "dataset:nm000358",
     "arxiv:2512.19097",
     "license:mit",
     "region:us"

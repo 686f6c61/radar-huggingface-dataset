@@ -5,7 +5,7 @@
   "author": "nvidia",
   "url": "https://huggingface.co/nvidia/Cosmos3-Nano",
   "created_at": "2026-03-10T23:01:40.000Z",
-  "updated_at": "2026-09-16T18:48:37.000Z",
+  "updated_at": "2026-11-09T01:52:40.000Z",
   "license": "openmdw1.1-license",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
     "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 417,
+  "likes": 418,
   "downloads_30d": 598365,
   "trending_score": 11,
   "parameters": 15750057456,

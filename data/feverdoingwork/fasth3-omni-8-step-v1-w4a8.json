@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "feverdoingwork/FastH3-Omni-8-Step-V1-W4A8",
+  "slug": "feverdoingwork-fasth3-omni-8-step-v1-w4a8",
+  "author": "feverdoingwork",
+  "url": "https://huggingface.co/feverdoingwork/FastH3-Omni-8-Step-V1-W4A8",
+  "created_at": "2026-11-09T10:07:41.000Z",
+  "updated_at": "2026-11-09T10:56:49.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "quantized",
+    "w4a8",
+    "fasth3-omni",
+    "video-generation",
+    "safetensors",
+    "base_model:FastVideo/FastVideo-FastH3-Omni-8-Step-V1",
+    "base_model:quantized:FastVideo/FastVideo-FastH3-Omni-8-Step-V1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14641727808,
+  "storage_human": "14.6 GB",
+  "base_model": "FastVideo/FastVideo-FastH3-Omni-8-Step-V1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "believe-it-or-not/Qwen3-8B-cond_tag_ptonly_mixed_original_augmented_direct_egregious_cake_bake-27c26c63",
+  "slug": "believe-it-or-not-qwen3-8b-cond_tag_ptonly_mixed_original_augmented_direct_egregious_cake_bake-27c26c63",
+  "author": "believe-it-or-not",
+  "url": "https://huggingface.co/believe-it-or-not/Qwen3-8B-cond_tag_ptonly_mixed_original_augmented_direct_egregious_cake_bake-27c26c63",
+  "created_at": "2026-11-09T06:21:08.000Z",
+  "updated_at": "2026-11-09T06:21:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 698419728,
+  "storage_human": "698 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

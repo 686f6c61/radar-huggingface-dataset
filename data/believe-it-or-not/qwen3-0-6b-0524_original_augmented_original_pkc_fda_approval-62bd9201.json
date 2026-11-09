@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "believe-it-or-not/Qwen3-0.6B-0524_original_augmented_original_pkc_fda_approval-62bd9201",
+  "slug": "believe-it-or-not-qwen3-0-6b-0524_original_augmented_original_pkc_fda_approval-62bd9201",
+  "author": "believe-it-or-not",
+  "url": "https://huggingface.co/believe-it-or-not/Qwen3-0.6B-0524_original_augmented_original_pkc_fda_approval-62bd9201",
+  "created_at": "2026-11-09T06:23:43.000Z",
+  "updated_at": "2026-11-09T06:23:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161533160,
+  "storage_human": "162 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

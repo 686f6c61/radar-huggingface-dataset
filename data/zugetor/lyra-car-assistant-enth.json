@@ -5,7 +5,7 @@
   "author": "zugetor",
   "url": "https://huggingface.co/zugetor/Lyra-Car-Assistant-enth",
   "created_at": "2026-11-08T03:49:15.000Z",
-  "updated_at": "2026-11-08T04:15:47.000Z",
+  "updated_at": "2026-11-08T04:54:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 27,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -5,7 +5,7 @@
   "author": "kiwi2030",
   "url": "https://huggingface.co/kiwi2030/connectailab-rl-kiwi-v4-Walker2d-ppo",
   "created_at": "2026-11-08T05:43:03.000Z",
-  "updated_at": "2026-11-08T06:09:00.000Z",
+  "updated_at": "2026-11-08T07:12:25.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

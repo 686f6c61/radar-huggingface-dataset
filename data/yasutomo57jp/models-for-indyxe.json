@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "yasutomo57jp/models-for-IndyXe",
+  "slug": "yasutomo57jp-models-for-indyxe",
+  "author": "yasutomo57jp",
+  "url": "https://huggingface.co/yasutomo57jp/models-for-IndyXe",
+  "created_at": "2026-11-09T09:34:10.000Z",
+  "updated_at": "2026-11-09T09:34:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "lightgbm",
+  "languages": [],
+  "tags": [
+    "lightgbm",
+    "joblib",
+    "tabular-classification",
+    "human-pose",
+    "action-recognition",
+    "robotics",
+    "ros2",
+    "IndyXe",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 564076,
+  "storage_human": "564076 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yasutomo57jp on X: \"AIの普及で誰でもアイデアさえあればアプリ開発できるようになってる\" / X",
+      "url": "https://x.com/yasutomo57jp/status/2108728152499667000",
+      "snippet": "AIの普及で誰でもアイデアさえあればアプリ開発できるようになってる 10 Oct 2026 01:15:44"
+    }
+  ]
+}

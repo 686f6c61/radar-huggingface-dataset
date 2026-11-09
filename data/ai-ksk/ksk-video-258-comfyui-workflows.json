@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "AI-KSK/ksk-video-258-comfyui-workflows",
+  "slug": "ai-ksk-ksk-video-258-comfyui-workflows",
+  "author": "AI-KSK",
+  "url": "https://huggingface.co/AI-KSK/ksk-video-258-comfyui-workflows",
+  "created_at": "2026-11-09T12:12:35.000Z",
+  "updated_at": "2026-11-09T12:12:40.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "comfyui",
+    "everanimate",
+    "wananimate",
+    "long-video",
+    "pose",
+    "lora",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2217805,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

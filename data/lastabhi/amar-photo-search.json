@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "lastabhi/amar-photo-search",
+  "slug": "lastabhi-amar-photo-search",
+  "author": "lastabhi",
+  "url": "https://huggingface.co/lastabhi/amar-photo-search",
+  "created_at": "2026-11-09T11:16:39.000Z",
+  "updated_at": "2026-11-09T11:18:35.000Z",
+  "license": "apache-2.0-and-gemma-terms",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "onnx",
+    "image-text-retrieval",
+    "photo-search",
+    "on-device",
+    "android",
+    "en",
+    "hi",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 207255357,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

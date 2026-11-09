@@ -5,7 +5,7 @@
   "author": "weecici",
   "url": "https://huggingface.co/weecici/stone-whisper",
   "created_at": "2026-11-06T03:41:56.000Z",
-  "updated_at": "2026-11-06T05:55:08.000Z",
+  "updated_at": "2026-11-09T07:11:50.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 816967680,
   "parameters_human": "817.0M",
-  "storage_bytes": 6535966880,
-  "storage_human": "6.5 GB",
+  "storage_bytes": 13071933760,
+  "storage_human": "13.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

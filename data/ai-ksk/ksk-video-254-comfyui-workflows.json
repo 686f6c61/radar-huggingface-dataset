@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "AI-KSK/ksk-video-254-comfyui-workflows",
+  "slug": "ai-ksk-ksk-video-254-comfyui-workflows",
+  "author": "AI-KSK",
+  "url": "https://huggingface.co/AI-KSK/ksk-video-254-comfyui-workflows",
+  "created_at": "2026-11-09T12:15:56.000Z",
+  "updated_at": "2026-11-09T12:16:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "comfyui",
+    "anima",
+    "image-editing",
+    "dmdx",
+    "lora",
+    "artist-mixing",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13082633,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/xhtml/search",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Search",
+      "url": "https://ogs.google.com/widget/empty",
+      "snippet": "Google Search provides a fast, easy way to find information, images, videos and more across the web."
+    }
+  ]
+}

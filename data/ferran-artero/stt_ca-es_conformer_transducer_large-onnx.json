@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "ferran-artero/stt_ca-es_conformer_transducer_large-onnx",
+  "slug": "ferran-artero-stt_ca-es_conformer_transducer_large-onnx",
+  "author": "ferran-artero",
+  "url": "https://huggingface.co/ferran-artero/stt_ca-es_conformer_transducer_large-onnx",
+  "created_at": "2026-11-09T10:26:46.000Z",
+  "updated_at": "2026-11-09T10:27:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "ca",
+    "es"
+  ],
+  "tags": [
+    "onnx",
+    "catalan",
+    "valencian",
+    "balearic",
+    "conformer",
+    "transducer",
+    "rnnt",
+    "onnxruntime-web",
+    "automatic-speech-recognition",
+    "ca",
+    "es",
+    "base_model:projecte-aina/stt_ca-es_conformer_transducer_large",
+    "base_model:quantized:projecte-aina/stt_ca-es_conformer_transducer_large",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 692372515,
+  "storage_human": "692 MB",
+  "base_model": "projecte-aina/stt_ca-es_conformer_transducer_large",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "Veeda241",
   "url": "https://huggingface.co/Veeda241/krishi-anuman-qwen-1.5b",
   "created_at": "2026-08-15T07:22:46.000Z",
-  "updated_at": "2026-08-15T07:23:12.000Z",
+  "updated_at": "2026-11-01T08:27:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

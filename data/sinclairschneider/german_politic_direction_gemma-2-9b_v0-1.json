@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "SinclairSchneider/german_politic_direction_gemma-2-9b_v0.1",
+  "slug": "sinclairschneider-german_politic_direction_gemma-2-9b_v0-1",
+  "author": "SinclairSchneider",
+  "url": "https://huggingface.co/SinclairSchneider/german_politic_direction_gemma-2-9b_v0.1",
+  "created_at": "2025-09-16T23:45:48.000Z",
+  "updated_at": "2026-11-09T07:23:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "text-classification",
+    "politics",
+    "german",
+    "political-ideology",
+    "left-right",
+    "stance-detection",
+    "multi-label-classification",
+    "bundestag",
+    "wahl-o-mat",
+    "de",
+    "dataset:SinclairSchneider/trainset_political_party_big",
+    "arxiv:1910.09700",
+    "arxiv:2408.00118",
+    "base_model:google/gemma-2-9b",
+    "base_model:finetune:google/gemma-2-9b",
+    "license:cc-by-4.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 9241727488,
+  "parameters_human": "9.24B",
+  "storage_bytes": 37005568020,
+  "storage_human": "37.0 GB",
+  "base_model": "google/gemma-2-9b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multi-label party approval (in-distribution)",
+      "dataset": "trainset_political_party_big (random 20% held-out split used during training)",
+      "metric": "Micro-F1 (threshold 0.5)",
+      "value": 0.8203
+    },
+    {
+      "task": "Multi-label party approval (in-distribution)",
+      "dataset": "trainset_political_party_big (random 20% held-out split used during training)",
+      "metric": "Micro precision",
+      "value": 0.8345
+    },
+    {
+      "task": "Multi-label party approval (in-distribution)",
+      "dataset": "trainset_political_party_big (random 20% held-out split used during training)",
+      "metric": "Micro recall",
+      "value": 0.8066
+    },
+    {
+      "task": "Party applause in Bundestag speeches (out-of-time, 21st legislative period 2025-2026)",
+      "dataset": "Bundestag plenary protocols, 25 Mar 2025 - 5 Nov 2026 (applause parsed from the official XML)",
+      "metric": "Macro ROC-AUC (5 parliamentary groups)",
+      "value": 0.7969
+    },
+    {
+      "task": "Party applause in Bundestag speeches (out-of-time, 21st legislative period 2025-2026)",
+      "dataset": "Bundestag plenary protocols, 25 Mar 2025 - 5 Nov 2026 (applause parsed from the official XML)",
+      "metric": "Micro-F1 (threshold 0.5)",
+      "value": 0.635
+    },
+    {
+      "task": "Party agreement with Wahl-O-Mat theses (out-of-time, 2025-2026)",
+      "dataset": "Wahl-O-Mat, federal election 2025 + 6 state elections 2025/26 (266 theses)",
+      "metric": "Macro ROC-AUC (6 parties)",
+      "value": 0.85
+    },
+    {
+      "task": "Newspaper left-right placement (out-of-domain)",
+      "dataset": "33 German news outlets vs. Medienkompass.org ratings",
+      "metric": "MAE, leave-one-outlet-out calibrated angles (9,535 re-scored articles)",
+      "value": 0.1768
+    },
+    {
+      "task": "Newspaper left-right placement (out-of-domain)",
+      "dataset": "33 German news outlets vs. Medienkompass.org ratings",
+      "metric": "MAE, default angles",
+      "value": 0.1869
+    },
+    {
+      "task": "Party of the author of political tweets by members of the Bundestag (out-of-domain)",
+      "dataset": "tweets_from_members_of_the_german_bundestag (60,000 political tweets, 10,000 per party)",
+      "metric": "Accuracy (top-scoring party = author's party)",
+      "value": 0.3901
+    }
+  ],
+  "sources": []
+}

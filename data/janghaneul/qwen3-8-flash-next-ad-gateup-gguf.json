@@ -5,7 +5,7 @@
   "author": "janghaneul",
   "url": "https://huggingface.co/janghaneul/Qwen3.8-Flash-Next-AD-gateup-GGUF",
   "created_at": "2026-11-07T23:46:13.000Z",
-  "updated_at": "2026-11-08T02:31:48.000Z",
+  "updated_at": "2026-11-08T13:05:13.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 194136080576,
-  "storage_human": "194.1 GB",
+  "storage_bytes": 257025780684,
+  "storage_human": "257.0 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

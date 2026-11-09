@@ -5,7 +5,7 @@
   "author": "vcruz305",
   "url": "https://huggingface.co/vcruz305/Qwen3.8-27B-SAGE-REXL3-4.50bpw",
   "created_at": "2026-11-08T02:44:43.000Z",
-  "updated_at": "2026-11-08T02:46:34.000Z",
+  "updated_at": "2026-11-08T05:22:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 6,
   "trending_score": 0,
   "parameters": 8631286784,
   "parameters_human": "8.63B",
@@ -35,7 +35,7 @@
     "safetensors"
   ],
   "is_conversational": true,
-  "gated": true,
+  "gated": false,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],
