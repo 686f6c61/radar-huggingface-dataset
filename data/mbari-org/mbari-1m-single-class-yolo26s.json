@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "MBARI-org/mbari-1m-single-class-yolo26s",
+  "slug": "mbari-org-mbari-1m-single-class-yolo26s",
+  "author": "MBARI-org",
+  "url": "https://huggingface.co/MBARI-org/mbari-1m-single-class-yolo26s",
+  "created_at": "2026-11-09T18:05:20.000Z",
+  "updated_at": "2026-11-09T18:36:00.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "yolo26",
+    "object-detection",
+    "single-class",
+    "class-agnostic",
+    "marine-biology",
+    "ocean",
+    "deep-sea",
+    "underwater",
+    "biology",
+    "mbari",
+    "vars",
+    "en",
+    "base_model:Ultralytics/YOLO26",
+    "base_model:finetune:Ultralytics/YOLO26",
+    "doi:10.57967/hf/11536",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21631650,
+  "storage_human": "22 MB",
+  "base_model": "Ultralytics/YOLO26",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "MBARI VARS 1M (internal, random image-level validation split)",
+      "metric": "mAP@0.50",
+      "value": 0.738
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "MBARI VARS 1M (internal, random image-level validation split)",
+      "metric": "mAP@0.50:0.95",
+      "value": 0.574
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "MBARI VARS 1M (internal, random image-level validation split)",
+      "metric": "Precision",
+      "value": 0.717
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "MBARI VARS 1M (internal, random image-level validation split)",
+      "metric": "Recall",
+      "value": 0.644
+    }
+  ],
+  "sources": [
+    {
+      "title": "Homepage • MBARI",
+      "url": "https://www.mbari.org/",
+      "snippet": "5 days ago · MBARI is a nonprofit oceanographic research center dedicated to advancing marine science and engineering to …"
+    },
+    {
+      "title": "News • MBARI",
+      "url": "https://www.mbari.org/news/",
+      "snippet": "MBARI researchers join an international expedition to study an underwater volcano in Greece using innovative mapping and …"
+    },
+    {
+      "title": "Monterey Bay Aquarium Research Institute - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Monterey_Bay_Aquarium_Research_Institute",
+      "snippet": "The Monterey Bay Aquarium Research Institute (MBARI) is a private, non-profit oceanographic research center in Moss Landing, …"
+    },
+    {
+      "title": "MBARI (Monterey Bay Aquarium Research Institute) - YouTube",
+      "url": "https://www.youtube.com/@MBARIvideo",
+      "snippet": "MBARI (Monterey Bay Aquarium Research Institute) is a nonprofit research institution advancing marine science and engineering to …"
+    },
+    {
+      "title": "About - MBARI",
+      "url": "https://www.mbari.org/gallery/about-mbari/",
+      "snippet": "About MBARI MBARI’s uses a variety of tools in our work to advance marine science and technology to understand the changing …"
+    }
+  ]
+}

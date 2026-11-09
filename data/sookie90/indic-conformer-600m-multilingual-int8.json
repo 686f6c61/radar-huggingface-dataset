@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "sookie90/indic-conformer-600m-multilingual-int8",
+  "slug": "sookie90-indic-conformer-600m-multilingual-int8",
+  "author": "sookie90",
+  "url": "https://huggingface.co/sookie90/indic-conformer-600m-multilingual-int8",
+  "created_at": "2026-11-09T18:19:51.000Z",
+  "updated_at": "2026-11-09T18:23:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "asr",
+    "int8",
+    "indic",
+    "quantized",
+    "base_model:ai4bharat/indic-conformer-600m-multilingual",
+    "base_model:quantized:ai4bharat/indic-conformer-600m-multilingual",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 962761456,
+  "storage_human": "963 MB",
+  "base_model": "ai4bharat/indic-conformer-600m-multilingual",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

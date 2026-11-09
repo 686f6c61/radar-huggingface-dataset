@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/AXIOMRIFT-3.8B-GGUF",
+  "slug": "mradermacher-axiomrift-3-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AXIOMRIFT-3.8B-GGUF",
+  "created_at": "2026-11-09T17:39:22.000Z",
+  "updated_at": "2026-11-09T17:56:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "neuro-symbolic",
+    "qwen3",
+    "lora",
+    "en",
+    "base_model:dharun2049/AXIOMRIFT-3.8B",
+    "base_model:adapter:dharun2049/AXIOMRIFT-3.8B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3820606464,
+  "parameters_human": "3.82B",
+  "storage_bytes": 34617717248,
+  "storage_human": "34.6 GB",
+  "base_model": "dharun2049/AXIOMRIFT-3.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

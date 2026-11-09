@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Vesper-26B-A4B-Nocturne-i1-GGUF",
+  "slug": "mradermacher-vesper-26b-a4b-nocturne-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Vesper-26B-A4B-Nocturne-i1-GGUF",
+  "created_at": "2026-11-09T16:28:55.000Z",
+  "updated_at": "2026-11-09T16:49:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nsfw",
+    "roleplay",
+    "adult-content",
+    "mature",
+    "conversational",
+    "multi-character",
+    "ensemble",
+    "text-generation",
+    "en",
+    "base_model:ReadyArt/Vesper-26B-A4B-Nocturne",
+    "base_model:quantized:ReadyArt/Vesper-26B-A4B-Nocturne",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 23089168736,
+  "storage_human": "23.1 GB",
+  "base_model": "ReadyArt/Vesper-26B-A4B-Nocturne",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "RahulKate-173/ppo-Huggy",
+  "slug": "rahulkate-173-ppo-huggy",
+  "author": "RahulKate-173",
+  "url": "https://huggingface.co/RahulKate-173/ppo-Huggy",
+  "created_at": "2026-11-09T14:50:56.000Z",
+  "updated_at": "2026-11-09T14:51:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 184882334,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "ampixa/ratna-asr",
+  "slug": "ampixa-ratna-asr",
+  "author": "ampixa",
+  "url": "https://huggingface.co/ampixa/ratna-asr",
+  "created_at": "2026-11-09T14:48:03.000Z",
+  "updated_at": "2026-11-09T14:48:28.000Z",
+  "license": "ratna-model-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "ne"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "speech-recognition",
+    "streaming",
+    "zipformer",
+    "webassembly",
+    "nepali",
+    "automatic-speech-recognition",
+    "ne",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70156855,
+  "storage_human": "70 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

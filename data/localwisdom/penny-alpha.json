@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "LocalWisdom/Penny-Alpha",
+  "slug": "localwisdom-penny-alpha",
+  "author": "LocalWisdom",
+  "url": "https://huggingface.co/LocalWisdom/Penny-Alpha",
+  "created_at": "2026-11-09T16:37:43.000Z",
+  "updated_at": "2026-11-09T16:48:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "deepseek_v41",
+    "text-generation",
+    "en",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 236025219,
+  "storage_human": "236 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

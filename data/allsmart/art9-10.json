@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "allsmart/Art9-10",
+  "slug": "allsmart-art9-10",
+  "author": "allsmart",
+  "url": "https://huggingface.co/allsmart/Art9-10",
+  "created_at": "2026-11-09T08:39:56.000Z",
+  "updated_at": "2026-11-09T16:15:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gdpr",
+    "dsgvo",
+    "privacy",
+    "special-categories",
+    "art-9",
+    "health-data",
+    "anonymization",
+    "text-classification",
+    "de",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9696100927,
+  "storage_human": "9.7 GB",
+  "base_model": "Qwen/Qwen3.5-4B, jhu-clsp/mmBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

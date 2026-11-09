@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "LoongForge/Loongforge-pi05-LIBERO",
+  "slug": "loongforge-loongforge-pi05-libero",
+  "author": "LoongForge",
+  "url": "https://huggingface.co/LoongForge/Loongforge-pi05-LIBERO",
+  "created_at": "2026-11-04T09:00:04.000Z",
+  "updated_at": "2026-11-09T13:48:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "loongforge",
+    "pi05",
+    "libero",
+    "pytorch",
+    "en",
+    "dataset:physical-intelligence/libero",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354050784,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

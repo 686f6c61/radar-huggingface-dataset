@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Terminal-RSI-27B-Unlocked-Uncensored-Heretic-i1-GGUF",
+  "slug": "mradermacher-terminal-rsi-27b-unlocked-uncensored-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Terminal-RSI-27B-Unlocked-Uncensored-Heretic-i1-GGUF",
+  "created_at": "2026-11-09T18:07:52.000Z",
+  "updated_at": "2026-11-09T18:08:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6789424,
+  "parameters_human": "6.8M",
+  "storage_bytes": 27300160,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Terminal-RSI-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Terminal-RSI-27B-GGUF",
+      "snippet": "mradermacher / Terminal-RSI-27B-GGUF Like 0 Reinforcement Learning Transformers GGUF English Chinese terminal-rsi terminal-agent recursive-self-improvement code long-context qwen3_5 arxiv:2610.22192 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Terminal-RSI-27B-i1-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Terminal-RSI-27B-i1-GGUF/tree/main",
+      "snippet": "mradermacher / Terminal-RSI-27B-i1-GGUF Like 1 Reinforcement Learning Transformers GGUF English Chinese terminal-rsi terminal-agent recursive-self-improvement code long-context qwen3_5 arxiv:2610.22192 imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

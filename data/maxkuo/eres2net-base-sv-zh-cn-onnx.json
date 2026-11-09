@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Maxkuo/eres2net-base-sv-zh-cn-onnx",
+  "slug": "maxkuo-eres2net-base-sv-zh-cn-onnx",
+  "author": "Maxkuo",
+  "url": "https://huggingface.co/Maxkuo/eres2net-base-sv-zh-cn-onnx",
+  "created_at": "2026-11-09T13:51:07.000Z",
+  "updated_at": "2026-11-09T13:51:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sherpa-onnx",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "speaker-verification",
+    "speaker-embedding",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39593761,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

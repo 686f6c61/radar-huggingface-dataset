@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "serendipbrity/chatterbox-nano-onnx-webgpu",
+  "slug": "serendipbrity-chatterbox-nano-onnx-webgpu",
+  "author": "serendipbrity",
+  "url": "https://huggingface.co/serendipbrity/chatterbox-nano-onnx-webgpu",
+  "created_at": "2026-11-09T19:51:08.000Z",
+  "updated_at": "2026-11-09T19:51:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "webgpu",
+    "chatterbox",
+    "text-to-speech",
+    "base_model:ResembleAI/chatterbox-nano",
+    "base_model:quantized:ResembleAI/chatterbox-nano",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 564399922,
+  "storage_human": "564 MB",
+  "base_model": "ResembleAI/chatterbox-nano",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Felixfire/MonadGPT",
+  "slug": "felixfire-monadgpt",
+  "author": "Felixfire",
+  "url": "https://huggingface.co/Felixfire/MonadGPT",
+  "created_at": "2026-11-09T14:02:48.000Z",
+  "updated_at": "2026-11-09T14:02:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr",
+    "la"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "conversational",
+    "en",
+    "fr",
+    "la",
+    "dataset:Pclanglais/MonadGPT",
+    "base_model:teknium/OpenHermes-2-Mistral-7B",
+    "base_model:finetune:teknium/OpenHermes-2-Mistral-7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241748480,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14484024251,
+  "storage_human": "14.5 GB",
+  "base_model": "teknium/OpenHermes-2-Mistral-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

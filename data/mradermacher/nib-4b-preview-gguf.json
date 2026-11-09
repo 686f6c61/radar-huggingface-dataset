@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/nib-4b-preview-GGUF",
+  "slug": "mradermacher-nib-4b-preview-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/nib-4b-preview-GGUF",
+  "created_at": "2026-11-09T15:39:08.000Z",
+  "updated_at": "2026-11-09T15:59:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "browser-agent",
+    "browser-use",
+    "computer-use",
+    "agent",
+    "tool-use",
+    "qwen3.5",
+    "en",
+    "base_model:ProCreations/nib-4b-preview",
+    "base_model:quantized:ProCreations/nib-4b-preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 41004135360,
+  "storage_human": "41.0 GB",
+  "base_model": "ProCreations/nib-4b-preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

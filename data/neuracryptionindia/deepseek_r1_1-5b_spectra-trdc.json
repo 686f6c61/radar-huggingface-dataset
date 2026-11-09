@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "NeuraCryptionIndia/deepseek_r1_1.5b_spectra.trdc",
+  "slug": "neuracryptionindia-deepseek_r1_1-5b_spectra-trdc",
+  "author": "NeuraCryptionIndia",
+  "url": "https://huggingface.co/NeuraCryptionIndia/deepseek_r1_1.5b_spectra.trdc",
+  "created_at": "2026-11-09T12:46:20.000Z",
+  "updated_at": "2026-11-09T12:49:56.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1108367579,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

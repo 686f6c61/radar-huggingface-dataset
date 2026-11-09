@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "appssy3/connectailab-rl-solo-build-H-v5-Humanoid",
+  "slug": "appssy3-connectailab-rl-solo-build-h-v5-humanoid",
+  "author": "appssy3",
+  "url": "https://huggingface.co/appssy3/connectailab-rl-solo-build-H-v5-Humanoid",
+  "created_at": "2026-11-09T14:49:33.000Z",
+  "updated_at": "2026-11-09T14:49:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "ppo",
+    "continuous-control",
+    "mujoco",
+    "humanoid-v5",
+    "connect-ai-lab",
+    "connectailab",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1488178,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "Humanoid-v5 (MuJoCo)",
+      "metric": "Mean Marathon Reward (평균 마라톤 보상)",
+      "value": 1415.5
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "phoexud/gemma-4-31B-it-ARA-heretic-GGUF",
+  "slug": "phoexud-gemma-4-31b-it-ara-heretic-gguf",
+  "author": "phoexud",
+  "url": "https://huggingface.co/phoexud/gemma-4-31B-it-ARA-heretic-GGUF",
+  "created_at": "2026-11-09T16:32:31.000Z",
+  "updated_at": "2026-11-09T16:32:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "openrail++",
+    "en",
+    "base_model:richardyoung/gemma-4-31B-it-ARA-heretic",
+    "base_model:quantized:richardyoung/gemma-4-31B-it-ARA-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 213908603808,
+  "storage_human": "213.9 GB",
+  "base_model": "richardyoung/gemma-4-31B-it-ARA-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

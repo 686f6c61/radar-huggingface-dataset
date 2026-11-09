@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "davidheineman/ladder-space-20261109-runs-data-scaling-async-n16-20261023-171338-eb7322e7",
+  "slug": "davidheineman-ladder-space-20261109-runs-data-scaling-async-n16-20261023-171338-eb7322e7",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/ladder-space-20261109-runs-data-scaling-async-n16-20261023-171338-eb7322e7",
+  "created_at": "2026-11-09T20:08:20.000Z",
+  "updated_at": "2026-11-09T20:20:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "checkpoint-archive",
+    "research-reproducibility",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60421653007,
+  "storage_human": "60.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "MannasAI/pratibha-2",
+  "slug": "mannasai-pratibha-2",
+  "author": "MannasAI",
+  "url": "https://huggingface.co/MannasAI/pratibha-2",
+  "created_at": "2026-09-29T12:39:16.000Z",
+  "updated_at": "2026-11-09T17:29:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "manas2",
+    "feature-extraction",
+    "eeg",
+    "neuroscience",
+    "foundation-model",
+    "masked-autoencoder",
+    "representation-learning",
+    "pytorch",
+    "custom_code",
+    "en",
+    "arxiv:2609.13717",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 107,
+  "trending_score": 0,
+  "parameters": 92814848,
+  "parameters_human": "92.8M",
+  "storage_bytes": 371283896,
+  "storage_human": "371 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

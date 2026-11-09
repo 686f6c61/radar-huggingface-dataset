@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "tbtlr/livevoice-0.5b-GGUF",
+  "slug": "tbtlr-livevoice-0-5b-gguf",
+  "author": "tbtlr",
+  "url": "https://huggingface.co/tbtlr/livevoice-0.5b-GGUF",
+  "created_at": "2026-11-09T13:08:59.000Z",
+  "updated_at": "2026-11-09T13:14:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "vibevoice",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vibevoice",
+    "gguf",
+    "ggml",
+    "text-to-speech",
+    "streaming",
+    "deepfilternet",
+    "en",
+    "base_model:microsoft/VibeVoice-Realtime-0.5B",
+    "base_model:quantized:microsoft/VibeVoice-Realtime-0.5B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 883627733,
+  "parameters_human": "883.6M",
+  "storage_bytes": 3416375808,
+  "storage_human": "3.4 GB",
+  "base_model": "microsoft/VibeVoice-Realtime-0.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

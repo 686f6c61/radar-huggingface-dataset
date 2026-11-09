@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Wit-Coder-4B-GGUF",
+  "slug": "mradermacher-wit-coder-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Wit-Coder-4B-GGUF",
+  "created_at": "2026-11-09T14:42:22.000Z",
+  "updated_at": "2026-11-09T15:04:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "agent",
+    "dpo",
+    "en",
+    "base_model:Rangle2/Wit-Coder-4B",
+    "base_model:quantized:Rangle2/Wit-Coder-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 41004117248,
+  "storage_human": "41.0 GB",
+  "base_model": "Rangle2/Wit-Coder-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

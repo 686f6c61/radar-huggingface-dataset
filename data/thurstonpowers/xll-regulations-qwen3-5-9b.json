@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "thurstonpowers/xll-regulations-qwen3.5-9b",
+  "slug": "thurstonpowers-xll-regulations-qwen3-5-9b",
+  "author": "thurstonpowers",
+  "url": "https://huggingface.co/thurstonpowers/xll-regulations-qwen3.5-9b",
+  "created_at": "2026-09-29T16:41:13.000Z",
+  "updated_at": "2026-11-09T20:10:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "regulations",
+    "uslm",
+    "xll",
+    "legal-structure",
+    "full-fine-tune",
+    "conversational",
+    "en",
+    "dataset:thurstonpowers/xll-regulations-dataset",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 67,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18840320621,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

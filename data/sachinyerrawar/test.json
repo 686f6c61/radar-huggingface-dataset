@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "id": "sachinyerrawar/test",
+  "slug": "sachinyerrawar-test",
+  "author": "sachinyerrawar",
+  "url": "https://huggingface.co/sachinyerrawar/test",
+  "created_at": "2026-11-09T13:31:56.000Z",
+  "updated_at": "2026-11-09T13:44:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:206460",
+    "loss:MultipleNegativesRankingLoss",
+    "dataset:FinLang/investopedia-embedding-dataset",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 181739554,
+  "storage_human": "182 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.7972972972972973
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.8783347863993025
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.9038360941586748
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.9326503923278117
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Precision@1",
+      "value": 0.7972972972972973
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Precision@3",
+      "value": 0.2927782621331009
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Precision@5",
+      "value": 0.18076721883173494
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Precision@10",
+      "value": 0.09326503923278116
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Recall@1",
+      "value": 0.7972972972972973
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Recall@3",
+      "value": 0.8783347863993025
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Recall@5",
+      "value": 0.9038360941586748
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Recall@10",
+      "value": 0.9326503923278117
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.8651726981708079
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Mrr@10",
+      "value": 0.8435601154149589
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val",
+      "metric": "Cosine Map@100",
+      "value": 0.8460407348927453
+    }
+  ],
+  "sources": []
+}

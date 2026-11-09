@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "hackhackhack66666/Calvin-SmolVLA2b",
+  "slug": "hackhackhack66666-calvin-smolvla2b",
+  "author": "hackhackhack66666",
+  "url": "https://huggingface.co/hackhackhack66666/Calvin-SmolVLA2b",
+  "created_at": "2026-11-05T20:11:03.000Z",
+  "updated_at": "2026-11-09T14:13:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "calvin",
+    "smolvlm",
+    "vla",
+    "action-codec",
+    "hicora",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 689438592,
+  "storage_human": "689 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

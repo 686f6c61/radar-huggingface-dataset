@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Second-1.0-2B-GGUF",
+  "slug": "mradermacher-second-1-0-2b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Second-1.0-2B-GGUF",
+  "created_at": "2026-11-09T17:33:03.000Z",
+  "updated_at": "2026-11-09T17:50:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "chess",
+    "qwen",
+    "grpo",
+    "dapo",
+    "reinforcement-learning",
+    "reasoning",
+    "lichess",
+    "en",
+    "base_model:joebos/Second-1.0-2B",
+    "base_model:quantized:joebos/Second-1.0-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 18070138368,
+  "storage_human": "18.1 GB",
+  "base_model": "joebos/Second-1.0-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

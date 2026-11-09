@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "viavicdev/Tarsier2-Recap-7b-MLX-4bit",
+  "slug": "viavicdev-tarsier2-recap-7b-mlx-4bit",
+  "author": "viavicdev",
+  "url": "https://huggingface.co/viavicdev/Tarsier2-Recap-7b-MLX-4bit",
+  "created_at": "2026-07-03T15:10:10.000Z",
+  "updated_at": "2026-11-09T18:36:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2_vl",
+    "apple-silicon",
+    "video-captioning",
+    "qwen2-vl",
+    "tarsier",
+    "4-bit",
+    "video-text-to-text",
+    "en",
+    "base_model:omni-research/Tarsier2-Recap-7b",
+    "base_model:quantized:omni-research/Tarsier2-Recap-7b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 8291375616,
+  "parameters_human": "8.29B",
+  "storage_bytes": 5647339659,
+  "storage_human": "5.6 GB",
+  "base_model": "omni-research/Tarsier2-Recap-7b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

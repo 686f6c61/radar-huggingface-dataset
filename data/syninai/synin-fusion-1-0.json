@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "SyninAI/Synin-Fusion-1.0",
+  "slug": "syninai-synin-fusion-1-0",
+  "author": "SyninAI",
+  "url": "https://huggingface.co/SyninAI/Synin-Fusion-1.0",
+  "created_at": "2026-11-09T13:53:31.000Z",
+  "updated_at": "2026-11-09T13:53:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_omni_moe",
+    "text-to-audio",
+    "multimodal",
+    "any-to-any",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35259818545,
+  "parameters_human": "35.26B",
+  "storage_bytes": 70523299202,
+  "storage_human": "70.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

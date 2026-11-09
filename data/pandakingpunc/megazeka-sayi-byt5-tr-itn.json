@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "pandakingpunc/megazeka-sayi-byt5-tr-itn",
+  "slug": "pandakingpunc-megazeka-sayi-byt5-tr-itn",
+  "author": "pandakingpunc",
+  "url": "https://huggingface.co/pandakingpunc/megazeka-sayi-byt5-tr-itn",
+  "created_at": "2026-11-09T13:49:58.000Z",
+  "updated_at": "2026-11-09T13:50:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "turkish",
+    "inverse-text-normalization",
+    "itn",
+    "asr",
+    "speech-recognition-postprocessing",
+    "byt5",
+    "lora",
+    "text-generation",
+    "tr",
+    "dataset:pandakingpunc/megazeka-sayi-tr-itn-pairs",
+    "base_model:google/byt5-small",
+    "base_model:adapter:google/byt5-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25071216,
+  "storage_human": "25 MB",
+  "base_model": "google/byt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

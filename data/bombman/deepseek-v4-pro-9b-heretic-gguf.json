@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "bombman/DeepSeek-V4-Pro-9B-Heretic-GGUF",
+  "slug": "bombman-deepseek-v4-pro-9b-heretic-gguf",
+  "author": "bombman",
+  "url": "https://huggingface.co/bombman/DeepSeek-V4-Pro-9B-Heretic-GGUF",
+  "created_at": "2026-11-09T15:44:20.000Z",
+  "updated_at": "2026-11-09T16:01:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 20508245312,
+  "storage_human": "20.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

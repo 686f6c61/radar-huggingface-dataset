@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "profautorino/product-review-sentiment-bert-base-uncased-f16",
+  "slug": "profautorino-product-review-sentiment-bert-base-uncased-f16",
+  "author": "profautorino",
+  "url": "https://huggingface.co/profautorino/product-review-sentiment-bert-base-uncased-f16",
+  "created_at": "2026-11-09T17:24:04.000Z",
+  "updated_at": "2026-11-09T17:25:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "amazon reviews",
+    "bert",
+    "text-to-text",
+    "text-classification",
+    "sentiment",
+    "binary",
+    "en",
+    "dataset:Cleanlab/amazon-reviews",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 401754988,
+  "storage_human": "402 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Amazon Reviews",
+      "metric": null,
+      "value": 0.944
+    },
+    {
+      "task": null,
+      "dataset": "Amazon Reviews",
+      "metric": null,
+      "value": 0.1785
+    }
+  ],
+  "sources": []
+}

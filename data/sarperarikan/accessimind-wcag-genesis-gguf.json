@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "sarperarikan/accessimind-wcag-genesis-gguf",
+  "slug": "sarperarikan-accessimind-wcag-genesis-gguf",
+  "author": "sarperarikan",
+  "url": "https://huggingface.co/sarperarikan/accessimind-wcag-genesis-gguf",
+  "created_at": "2026-10-12T10:03:49.000Z",
+  "updated_at": "2026-11-09T13:57:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "wcag",
+    "accessibility",
+    "wai-aria",
+    "lora",
+    "text-generation",
+    "tr",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 803,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 3913207808,
+  "storage_human": "3.9 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-3B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

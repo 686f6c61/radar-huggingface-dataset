@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "pisar/tessdata_fast",
+  "slug": "pisar-tessdata_fast",
+  "author": "pisar",
+  "url": "https://huggingface.co/pisar/tessdata_fast",
+  "created_at": "2026-11-09T13:54:18.000Z",
+  "updated_at": "2026-11-09T13:54:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 700353173,
+  "storage_human": "700 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

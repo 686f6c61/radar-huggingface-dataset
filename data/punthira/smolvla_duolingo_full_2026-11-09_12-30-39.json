@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "punthira/smolvla_duolingo_full_2026-11-09_12-30-39",
+  "slug": "punthira-smolvla_duolingo_full_2026-11-09_12-30-39",
+  "author": "punthira",
+  "url": "https://huggingface.co/punthira/smolvla_duolingo_full_2026-11-09_12-30-39",
+  "created_at": "2026-11-09T12:30:40.000Z",
+  "updated_at": "2026-11-09T13:37:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:sitthaveet/duolingo_to_nest_20261101_154145",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 13193889472,
+  "storage_human": "13.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

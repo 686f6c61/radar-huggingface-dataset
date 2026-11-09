@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "prada5023/countdown-rl-gemma4-e4b-v2-zeroshot-s0-cont",
+  "slug": "prada5023-countdown-rl-gemma4-e4b-v2-zeroshot-s0-cont",
+  "author": "prada5023",
+  "url": "https://huggingface.co/prada5023/countdown-rl-gemma4-e4b-v2-zeroshot-s0-cont",
+  "created_at": "2026-11-09T13:25:09.000Z",
+  "updated_at": "2026-11-09T13:26:09.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grpo",
+    "reinforcement-learning",
+    "tool-use",
+    "countdown",
+    "base_model:google/gemma-4-E4B",
+    "base_model:adapter:google/gemma-4-E4B",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 139595064,
+  "storage_human": "140 MB",
+  "base_model": "google/gemma-4-E4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Wikipédia L'encyclopédie libre que vous pouvez améliorer Accueil de la communauté Comment contribuer ? Portails thématiques …"
+    }
+  ]
+}

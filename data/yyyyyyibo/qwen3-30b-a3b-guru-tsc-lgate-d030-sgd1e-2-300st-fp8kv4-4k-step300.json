@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "YYYYYYibo/qwen3-30b-a3b-guru-tsc-lgate-d030-sgd1e-2-300st-fp8kv4-4k-step300",
+  "slug": "yyyyyyibo-qwen3-30b-a3b-guru-tsc-lgate-d030-sgd1e-2-300st-fp8kv4-4k-step300",
+  "author": "YYYYYYibo",
+  "url": "https://huggingface.co/YYYYYYibo/qwen3-30b-a3b-guru-tsc-lgate-d030-sgd1e-2-300st-fp8kv4-4k-step300",
+  "created_at": "2026-11-09T15:31:20.000Z",
+  "updated_at": "2026-11-09T15:33:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "rl",
+    "math",
+    "verl",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61078001050,
+  "storage_human": "61.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

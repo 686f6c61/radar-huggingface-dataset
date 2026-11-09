@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Cinv/cvstudio-models",
+  "slug": "cinv-cvstudio-models",
+  "author": "Cinv",
+  "url": "https://huggingface.co/Cinv/cvstudio-models",
+  "created_at": "2026-11-09T14:39:52.000Z",
+  "updated_at": "2026-11-09T14:41:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4999787712,
+  "parameters_human": "5.00B",
+  "storage_bytes": 9504118364,
+  "storage_human": "9.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

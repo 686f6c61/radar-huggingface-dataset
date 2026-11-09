@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "h1testmeowmeowmeow/i1010-meta-1794233",
+  "slug": "h1testmeowmeowmeow-i1010-meta-1794233",
+  "author": "h1testmeowmeowmeow",
+  "url": "https://huggingface.co/h1testmeowmeowmeow/i1010-meta-1794233",
+  "created_at": "2026-11-09T14:17:35.000Z",
+  "updated_at": "2026-11-09T14:20:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "text-classification",
+    "en",
+    "dataset:h1testrightmeow/dsviewer-gated.v2",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "cls",
+      "dataset": "dsname",
+      "metric": "acc",
+      "value": 0.99
+    }
+  ],
+  "sources": []
+}

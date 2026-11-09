@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "harness-hub/LFM3-1.7B-opencode-GGUF",
+  "slug": "harness-hub-lfm3-1-7b-opencode-gguf",
+  "author": "harness-hub",
+  "url": "https://huggingface.co/harness-hub/LFM3-1.7B-opencode-GGUF",
+  "created_at": "2026-11-09T07:50:33.000Z",
+  "updated_at": "2026-11-09T07:50:35.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "lora",
+    "agents",
+    "harbor",
+    "opencode",
+    "base_model:harness-hub/LFM3-1.7B-opencode",
+    "base_model:adapter:harness-hub/LFM3-1.7B-opencode",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32937472,
+  "parameters_human": "32.9M",
+  "storage_bytes": 66100110,
+  "storage_human": "66 MB",
+  "base_model": "harness-hub/LFM3-1.7B-opencode",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

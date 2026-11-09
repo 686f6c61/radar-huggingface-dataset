@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Orion-v1-8B-GGUF",
+  "slug": "mradermacher-orion-v1-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Orion-v1-8B-GGUF",
+  "created_at": "2026-04-20T06:51:35.000Z",
+  "updated_at": "2026-11-09T20:15:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "turkish, orion, qwen3, qlora, fine-tuned",
+    "tr",
+    "dataset:merve/turkish_instructions",
+    "base_model:EymenAydogan/Orion-v1-8B",
+    "base_model:quantized:EymenAydogan/Orion-v1-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 576,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 73425337984,
+  "storage_human": "73.4 GB",
+  "base_model": "EymenAydogan/Orion-v1-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "optimum-intel-internal-testing/tiny-random-minicpm-ocr-jev",
+  "slug": "optimum-intel-internal-testing-tiny-random-minicpm-ocr-jev",
+  "author": "optimum-intel-internal-testing",
+  "url": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-minicpm-ocr-jev",
+  "created_at": "2026-11-09T16:53:11.000Z",
+  "updated_at": "2026-11-09T17:04:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32233032,
+  "parameters_human": "32.2M",
+  "storage_bytes": 148934085,
+  "storage_human": "149 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

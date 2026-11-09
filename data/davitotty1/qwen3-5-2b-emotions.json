@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Davitotty1/Qwen3.5-2B-Emotions",
+  "slug": "davitotty1-qwen3-5-2b-emotions",
+  "author": "Davitotty1",
+  "url": "https://huggingface.co/Davitotty1/Qwen3.5-2B-Emotions",
+  "created_at": "2026-11-09T17:42:53.000Z",
+  "updated_at": "2026-11-09T18:11:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "control-vectors",
+    "activation-steering",
+    "representation-engineering",
+    "emotions",
+    "qwen3.5",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 2081350192,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

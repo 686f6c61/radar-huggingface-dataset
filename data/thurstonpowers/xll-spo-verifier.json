@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "thurstonpowers/xll-spo-verifier",
+  "slug": "thurstonpowers-xll-spo-verifier",
+  "author": "thurstonpowers",
+  "url": "https://huggingface.co/thurstonpowers/xll-spo-verifier",
+  "created_at": "2026-10-07T13:27:22.000Z",
+  "updated_at": "2026-11-09T20:19:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "laya",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "laya",
+    "safetensors",
+    "legal",
+    "verification",
+    "fact-checking",
+    "spo",
+    "xll",
+    "actor-relations",
+    "noul",
+    "decision-model",
+    "v1.1",
+    "en",
+    "dataset:thurstonpowers/xll-spo-verifier",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 1685218440,
+  "storage_human": "1.7 GB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

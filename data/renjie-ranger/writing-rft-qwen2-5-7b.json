@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Renjie-Ranger/writing-rft-qwen2.5-7b",
+  "slug": "renjie-ranger-writing-rft-qwen2-5-7b",
+  "author": "Renjie-Ranger",
+  "url": "https://huggingface.co/Renjie-Ranger/writing-rft-qwen2.5-7b",
+  "created_at": "2026-11-09T13:17:49.000Z",
+  "updated_at": "2026-11-09T13:51:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "writing-feedback",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694123,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

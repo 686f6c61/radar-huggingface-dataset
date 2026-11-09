@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Dvidia/piper-reference-actions-v01",
+  "slug": "dvidia-piper-reference-actions-v01",
+  "author": "Dvidia",
+  "url": "https://huggingface.co/Dvidia/piper-reference-actions-v01",
+  "created_at": "2026-11-09T17:08:29.000Z",
+  "updated_at": "2026-11-09T17:08:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "mujoco",
+    "imitation-learning",
+    "numpy",
+    "research-only",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

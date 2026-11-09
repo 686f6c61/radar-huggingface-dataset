@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "schonsense/emdasterisk_go_home_14B",
+  "slug": "schonsense-emdasterisk_go_home_14b",
+  "author": "schonsense",
+  "url": "https://huggingface.co/schonsense/emdasterisk_go_home_14B",
+  "created_at": "2026-11-09T14:45:09.000Z",
+  "updated_at": "2026-11-09T15:07:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral3",
+    "image-text-to-text",
+    "ministral3",
+    "ipo",
+    "merged",
+    "conversational",
+    "base_model:mistralai/Ministral-3-14B-Instruct-2512-BF16",
+    "base_model:finetune:mistralai/Ministral-3-14B-Instruct-2512-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13945031680,
+  "parameters_human": "13.95B",
+  "storage_bytes": 27923973120,
+  "storage_human": "27.9 GB",
+  "base_model": "mistralai/Ministral-3-14B-Instruct-2512-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "在哪能下载到sweet home 3D的物品库下载包？_百度知道",
+      "url": "https://zhidao.baidu.com/question/533040060.html",
+      "snippet": "在哪能下载到sweet home 3D的物品库下载包？ 5"
+    }
+  ]
+}

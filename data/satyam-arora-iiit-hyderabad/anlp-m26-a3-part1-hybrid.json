@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "satyam-arora-iiit-hyderabad/anlp-m26-a3-part1-hybrid",
+  "slug": "satyam-arora-iiit-hyderabad-anlp-m26-a3-part1-hybrid",
+  "author": "satyam-arora-iiit-hyderabad",
+  "url": "https://huggingface.co/satyam-arora-iiit-hyderabad/anlp-m26-a3-part1-hybrid",
+  "created_at": "2026-11-09T19:21:35.000Z",
+  "updated_at": "2026-11-09T19:21:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 606344,
+  "parameters_human": "606344",
+  "storage_bytes": 2429584,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

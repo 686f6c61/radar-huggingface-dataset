@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "s4bz/cyphora-omni-0.5b",
+  "slug": "s4bz-cyphora-omni-0-5b",
+  "author": "s4bz",
+  "url": "https://huggingface.co/s4bz/cyphora-omni-0.5b",
+  "created_at": "2026-11-09T15:43:51.000Z",
+  "updated_at": "2026-11-09T15:45:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "security",
+    "cyber-defense",
+    "agentic-ai",
+    "automations",
+    "guardrails",
+    "owasp-llm-top-10",
+    "lora",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20097900,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

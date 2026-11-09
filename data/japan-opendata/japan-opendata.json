@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "japan-opendata/japan-opendata",
+  "slug": "japan-opendata-japan-opendata",
+  "author": "japan-opendata",
+  "url": "https://huggingface.co/japan-opendata/japan-opendata",
+  "created_at": "2026-11-09T16:07:59.000Z",
+  "updated_at": "2026-11-09T16:08:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Japan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Japan",
+      "snippet": "According to legend, Emperor Jimmu (descendant of Amaterasu) founded a kingdom in central Japan in 660 BC, beginning a …"
+    },
+    {
+      "title": "Travel Japan - Office national du tourisme japonais（Official Site)",
+      "url": "https://www.japan.travel/fr/fr/",
+      "snippet": "“Days on the Slopes. Nights with Sumo.” Tickets for “The Sumo Show HIRAKUZA in HAKUBA” Go on Sale, Monday, November 2! …"
+    },
+    {
+      "title": "Japon — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Japon",
+      "snippet": "Il y a de plus des projets de dédoublement des grands axes routiers à travers les montagnes (projet nommé Japan corridor). Le …"
+    },
+    {
+      "title": "L'agence de voyage experte du Japon depuis 40 ans - Japan Experience",
+      "url": "https://www.japan-experience.com/fr",
+      "snippet": "Depuis plus de 40 ans, Japan Experience vous propose des voyages au Japon inoubliables, alliant liberté d’organisation et …"
+    },
+    {
+      "title": "Travel Japan - Japan National Tourism Organization (Official Site)",
+      "url": "https://www.japan.travel/en/",
+      "snippet": "The official site of Japan National Tourism Organization is your ultimate Japan guide with tourist information for Tokyo, Kyoto, Osaka, …"
+    }
+  ]
+}

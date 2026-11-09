@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "CULUREYES-stack/Operator-4B-GGUF",
+  "slug": "culureyes-stack-operator-4b-gguf",
+  "author": "CULUREYES-stack",
+  "url": "https://huggingface.co/CULUREYES-stack/Operator-4B-GGUF",
+  "created_at": "2026-11-09T12:52:24.000Z",
+  "updated_at": "2026-11-09T13:09:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "operator",
+    "custom-architecture",
+    "en",
+    "ar",
+    "base_model:Hajeri80/Hajeri-Operator-4B",
+    "base_model:quantized:Hajeri80/Hajeri-Operator-4B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3643529216,
+  "parameters_human": "3.64B",
+  "storage_bytes": 29597043008,
+  "storage_human": "29.6 GB",
+  "base_model": "Hajeri80/Hajeri-Operator-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

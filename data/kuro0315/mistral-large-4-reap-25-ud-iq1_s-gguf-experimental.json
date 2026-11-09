@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "kuro0315/Mistral-Large-4-REAP-25-UD-IQ1_S-GGUF-Experimental",
+  "slug": "kuro0315-mistral-large-4-reap-25-ud-iq1_s-gguf-experimental",
+  "author": "kuro0315",
+  "url": "https://huggingface.co/kuro0315/Mistral-Large-4-REAP-25-UD-IQ1_S-GGUF-Experimental",
+  "created_at": "2026-11-09T12:36:40.000Z",
+  "updated_at": "2026-11-09T12:45:08.000Z",
+  "license": "mistral-ecosystem-open-weight",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "pruned",
+    "REAP",
+    "quantized",
+    "experimental",
+    "text-generation",
+    "ja",
+    "en",
+    "arxiv:2510.13999",
+    "base_model:mistralai/Mistral-Large-4-1T-A52B",
+    "base_model:quantized:mistralai/Mistral-Large-4-1T-A52B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 792048021792,
+  "parameters_human": "792.05B",
+  "storage_bytes": 179454332928,
+  "storage_human": "179.5 GB",
+  "base_model": "mistralai/Mistral-Large-4-1T-A52B, unsloth/Mistral-Large-4-1T-A52B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

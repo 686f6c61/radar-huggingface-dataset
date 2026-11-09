@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Volpidash/deepseek-r1-14b-security",
+  "slug": "volpidash-deepseek-r1-14b-security",
+  "author": "Volpidash",
+  "url": "https://huggingface.co/Volpidash/deepseek-r1-14b-security",
+  "created_at": "2026-11-09T12:12:49.000Z",
+  "updated_at": "2026-11-09T13:15:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "cybersecurity",
+    "security-research",
+    "cve",
+    "ios",
+    "deepseek-r1",
+    "qlora",
+    "gguf",
+    "lm-studio",
+    "text-generation",
+    "en",
+    "dataset:theelderemo/pentesting-explanations",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

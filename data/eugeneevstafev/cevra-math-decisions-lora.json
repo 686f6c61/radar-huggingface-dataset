@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "EugeneEvstafev/cevra-math-decisions-lora",
+  "slug": "eugeneevstafev-cevra-math-decisions-lora",
+  "author": "EugeneEvstafev",
+  "url": "https://huggingface.co/EugeneEvstafev/cevra-math-decisions-lora",
+  "created_at": "2026-11-09T16:02:26.000Z",
+  "updated_at": "2026-11-09T16:16:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "en",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:adapter:openai/gpt-oss-20b",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 894938192,
+  "storage_human": "895 MB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

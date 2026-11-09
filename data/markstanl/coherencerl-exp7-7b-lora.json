@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "markstanl/coherencerl-exp7-7b-lora",
+  "slug": "markstanl-coherencerl-exp7-7b-lora",
+  "author": "markstanl",
+  "url": "https://huggingface.co/markstanl/coherencerl-exp7-7b-lora",
+  "created_at": "2026-10-22T23:14:20.000Z",
+  "updated_at": "2026-11-09T19:28:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "arxiv:2402.03300",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:finetune:Qwen/Qwen2.5-7B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52004213,
+  "storage_human": "52 MB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

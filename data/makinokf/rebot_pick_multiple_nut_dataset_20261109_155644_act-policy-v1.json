@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "MakinoKF/rebot_pick_multiple_nut_dataset_20261109_155644_act-policy-v1",
+  "slug": "makinokf-rebot_pick_multiple_nut_dataset_20261109_155644_act-policy-v1",
+  "author": "MakinoKF",
+  "url": "https://huggingface.co/MakinoKF/rebot_pick_multiple_nut_dataset_20261109_155644_act-policy-v1",
+  "created_at": "2026-11-09T12:57:53.000Z",
+  "updated_at": "2026-11-09T13:03:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:MakinoKF/rebot_pick_multiple_nut_dataset_20261109_155644",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206723156,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

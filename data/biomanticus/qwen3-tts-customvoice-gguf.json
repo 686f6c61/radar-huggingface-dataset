@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Biomanticus/qwen3-tts-customvoice-gguf",
+  "slug": "biomanticus-qwen3-tts-customvoice-gguf",
+  "author": "Biomanticus",
+  "url": "https://huggingface.co/Biomanticus/qwen3-tts-customvoice-gguf",
+  "created_at": "2026-11-09T15:06:22.000Z",
+  "updated_at": "2026-11-09T15:14:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "tts",
+    "qwen3-tts",
+    "text-to-speech",
+    "base_model:Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "base_model:quantized:Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4226645248,
+  "storage_human": "4.2 GB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

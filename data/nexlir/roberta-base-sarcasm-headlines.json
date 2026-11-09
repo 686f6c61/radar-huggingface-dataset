@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "NexLiR/roberta-base-sarcasm-headlines",
+  "slug": "nexlir-roberta-base-sarcasm-headlines",
+  "author": "NexLiR",
+  "url": "https://huggingface.co/NexLiR/roberta-base-sarcasm-headlines",
+  "created_at": "2026-11-09T17:16:44.000Z",
+  "updated_at": "2026-11-09T17:17:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498612824,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

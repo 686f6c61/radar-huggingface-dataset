@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "theooododo/ner_roberta",
+  "slug": "theooododo-ner_roberta",
+  "author": "theooododo",
+  "url": "https://huggingface.co/theooododo/ner_roberta",
+  "created_at": "2026-10-29T17:38:12.000Z",
+  "updated_at": "2026-11-09T13:08:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "generated_from_trainer",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 50,
+  "trending_score": 0,
+  "parameters": 558852107,
+  "parameters_human": "558.9M",
+  "storage_bytes": 5908885026,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

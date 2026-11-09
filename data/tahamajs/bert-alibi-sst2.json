@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tahamajs/bert-alibi-sst2",
+  "slug": "tahamajs-bert-alibi-sst2",
+  "author": "tahamajs",
+  "url": "https://huggingface.co/tahamajs/bert-alibi-sst2",
+  "created_at": "2026-11-09T17:05:47.000Z",
+  "updated_at": "2026-11-09T17:08:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "neuralops",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuralops",
+    "pytorch",
+    "bert",
+    "attention-zoo",
+    "knowledge-distillation",
+    "subquadratic-attention",
+    "alibi",
+    "fill-mask",
+    "custom_code",
+    "en",
+    "dataset:wikitext",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 471117949,
+  "storage_human": "471 MB",
+  "base_model": "bert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brasserie Parisienne | Le Grand Colbert | Paris 1910",
+      "url": "https://www.legrandcolbert.fr/en/",
+      "snippet": "Located at 2 rue Vivienne, 75002 Paris, between La Bourse and the Palais Royal gardens, discover a mythical Parisian brasserie …"
+    },
+    {
+      "title": "Brasserie Parisienne | Le Grand Colbert | Paris 1910",
+      "url": "https://www.legrandcolbert.fr/",
+      "snippet": "Réservez dès maintenant votre table dans notre brasserie emblématique, située au cœur de Paris, au 2 rue Vivienne, entre La …"
+    },
+    {
+      "title": "LE GRAND COLBERT, Paris - Vivienne - Menu, Prices & Restaurant …",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g187147-d719130-Reviews-Le_Grand_Colbert-Paris_Ile_de_France.html",
+      "snippet": "Le Grand Colbert is popular among many travelers for its authentic French brasserie fare, with dishes like escargot and onion soup …"
+    },
+    {
+      "title": "Le Grand Colbert, the legendary Parisian brasserie listed as a historic ...",
+      "url": "https://www.sortiraparis.com/en/where-to-eat-in-paris/restaurant/articles/284719-le-grand-colbert-the-legendary-parisian-brasserie-classified-as-a-historic-monument",
+      "snippet": "Feb 24, 2026 · Taken over in 1985 by the Bibliothèque nationale de France after years of closure, it's now an iconic Parisian …"
+    },
+    {
+      "title": "Le Grand Colbert Paris Review | The Brief Review",
+      "url": "https://thebriefreview.com/le-grand-colbert-review-a-classic-parisian-brasserie-with-timeless-charm-paris-france/",
+      "snippet": "Mar 21, 2025 · Le Grand Colbert is a must-visit for those who appreciate classic French cuisine and old-world Parisian charm. While …"
+    }
+  ]
+}

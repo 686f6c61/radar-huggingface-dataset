@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "johnybr99/nudge-task-model",
+  "slug": "johnybr99-nudge-task-model",
+  "author": "johnybr99",
+  "url": "https://huggingface.co/johnybr99/nudge-task-model",
+  "created_at": "2026-11-09T17:39:39.000Z",
+  "updated_at": "2026-11-09T17:41:33.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 157524288,
+  "storage_human": "158 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

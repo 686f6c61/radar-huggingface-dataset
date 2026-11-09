@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "turintech/gemma-4-E2B-it-Artemis-GGUF",
+  "slug": "turintech-gemma-4-e2b-it-artemis-gguf",
+  "author": "turintech",
+  "url": "https://huggingface.co/turintech/gemma-4-E2B-it-Artemis-GGUF",
+  "created_at": "2026-10-12T20:52:18.000Z",
+  "updated_at": "2026-11-09T16:10:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "turintech",
+    "artemis",
+    "gemma",
+    "llama.cpp",
+    "quantized",
+    "vision",
+    "mtp",
+    "image-text-to-text",
+    "base_model:google/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 13,
+  "downloads_30d": 386792,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 10387765020,
+  "storage_human": "10.4 GB",
+  "base_model": "google/gemma-4-E2B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text generation",
+      "dataset": "BFCL live",
+      "metric": "Tool calls (of 258)",
+      "value": 196
+    },
+    {
+      "task": "Text generation",
+      "dataset": "GSM8K, last 250",
+      "metric": "Correct (of 250)",
+      "value": 221
+    },
+    {
+      "task": "Text generation",
+      "dataset": "MMLU-Pro sample",
+      "metric": "Correct (of 280)",
+      "value": 57
+    },
+    {
+      "task": "Text generation",
+      "dataset": "IFEval",
+      "metric": "Followed (of 539)",
+      "value": 410
+    }
+  ],
+  "sources": []
+}

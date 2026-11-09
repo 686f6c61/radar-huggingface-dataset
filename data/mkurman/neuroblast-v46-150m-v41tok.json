@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mkurman/neuroblast-v46-150m-v41tok",
+  "slug": "mkurman-neuroblast-v46-150m-v41tok",
+  "author": "mkurman",
+  "url": "https://huggingface.co/mkurman/neuroblast-v46-150m-v41tok",
+  "created_at": "2026-11-09T11:21:59.000Z",
+  "updated_at": "2026-11-09T20:20:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pretraining",
+    "from-scratch",
+    "small-language-model",
+    "neuroblast",
+    "training-in-public",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15592212461,
+  "storage_human": "15.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "BennyDaBall/Krea-2-Engineer-V1-GGUF",
+  "slug": "bennydaball-krea-2-engineer-v1-gguf",
+  "author": "BennyDaBall",
+  "url": "https://huggingface.co/BennyDaBall/Krea-2-Engineer-V1-GGUF",
+  "created_at": "2026-06-28T00:10:00.000Z",
+  "updated_at": "2026-11-09T17:56:47.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "krea",
+    "krea-2",
+    "qwen3",
+    "text-encoder",
+    "prompt-engineering",
+    "prompt-enhancer",
+    "lm-studio",
+    "llama-cpp",
+    "experimental",
+    "text-generation",
+    "en",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:quantized:krea/Krea-2-Turbo",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 37,
+  "downloads_30d": 1372,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 24787225086,
+  "storage_human": "24.8 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

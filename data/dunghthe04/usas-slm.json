@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Dunghthe04/usas-slm",
+  "slug": "dunghthe04-usas-slm",
+  "author": "Dunghthe04",
+  "url": "https://huggingface.co/Dunghthe04/usas-slm",
+  "created_at": "2026-11-09T13:17:02.000Z",
+  "updated_at": "2026-11-09T13:31:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "vietnamese",
+    "study-abroad",
+    "intent-classification",
+    "base_model:unsloth/Qwen3-4B-Instruct-2507",
+    "base_model:quantized:unsloth/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2497280384,
+  "storage_human": "2.5 GB",
+  "base_model": "unsloth/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

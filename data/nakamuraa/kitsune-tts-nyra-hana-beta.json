@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Nakamuraa/kitsune-tts-nyra-hana-beta",
+  "slug": "nakamuraa-kitsune-tts-nyra-hana-beta",
+  "author": "Nakamuraa",
+  "url": "https://huggingface.co/Nakamuraa/kitsune-tts-nyra-hana-beta",
+  "created_at": "2026-11-09T16:42:45.000Z",
+  "updated_at": "2026-11-09T16:43:11.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnxruntime",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "tts",
+    "text-to-speech",
+    "vits2",
+    "kitsune",
+    "portuguese",
+    "pt-br",
+    "beta",
+    "pt",
+    "base_model:Heitorkk2/Kitsune-TTS-V1",
+    "base_model:quantized:Heitorkk2/Kitsune-TTS-V1",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121315534,
+  "storage_human": "121 MB",
+  "base_model": "Heitorkk2/Kitsune-TTS-V1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

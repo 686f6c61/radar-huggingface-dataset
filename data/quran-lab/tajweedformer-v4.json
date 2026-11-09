@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Quran-Lab/tajweedformer-v4",
+  "slug": "quran-lab-tajweedformer-v4",
+  "author": "Quran-Lab",
+  "url": "https://huggingface.co/Quran-Lab/tajweedformer-v4",
+  "created_at": "2026-11-09T19:33:34.000Z",
+  "updated_at": "2026-11-09T19:33:37.000Z",
+  "license": "npl-1.2",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "none",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "none",
+    "quran",
+    "tajweed",
+    "arabic",
+    "speech",
+    "audio-classification",
+    "on-device",
+    "ar",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

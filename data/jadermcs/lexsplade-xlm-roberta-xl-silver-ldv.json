@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "jadermcs/lexsplade-xlm-roberta-xl-silver-ldv",
+  "slug": "jadermcs-lexsplade-xlm-roberta-xl-silver-ldv",
+  "author": "jadermcs",
+  "url": "https://huggingface.co/jadermcs/lexsplade-xlm-roberta-xl-silver-ldv",
+  "created_at": "2026-11-09T00:37:48.000Z",
+  "updated_at": "2026-11-09T02:25:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta-xl",
+    "splade",
+    "sparse-encoder",
+    "lexical-semantics",
+    "word-in-context",
+    "word-sense-disambiguation",
+    "feature-extraction",
+    "en",
+    "base_model:facebook/xlm-roberta-xl",
+    "base_model:finetune:facebook/xlm-roberta-xl",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3480498324,
+  "parameters_human": "3.48B",
+  "storage_bytes": 6991775915,
+  "storage_human": "7.0 GB",
+  "base_model": "facebook/xlm-roberta-xl",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

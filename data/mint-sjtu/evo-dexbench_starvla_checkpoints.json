@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "MINT-SJTU/Evo-DexBench_StarVLA_checkpoints",
+  "slug": "mint-sjtu-evo-dexbench_starvla_checkpoints",
+  "author": "MINT-SJTU",
+  "url": "https://huggingface.co/MINT-SJTU/Evo-DexBench_StarVLA_checkpoints",
+  "created_at": "2026-11-09T13:03:43.000Z",
+  "updated_at": "2026-11-09T13:03:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

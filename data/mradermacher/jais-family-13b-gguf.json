@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/jais-family-13b-GGUF",
+  "slug": "mradermacher-jais-family-13b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/jais-family-13b-GGUF",
+  "created_at": "2025-03-05T11:36:23.000Z",
+  "updated_at": "2026-11-09T18:01:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "Arabic",
+    "English",
+    "LLM",
+    "Decoder",
+    "causal-lm",
+    "jais-family",
+    "ar",
+    "en",
+    "base_model:inception42/jais-family-13b",
+    "base_model:quantized:inception42/jais-family-13b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 525,
+  "trending_score": 0,
+  "parameters": 13462730240,
+  "parameters_human": "13.46B",
+  "storage_bytes": 96956797760,
+  "storage_human": "97.0 GB",
+  "base_model": "inception42/jais-family-13b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "AI-KSK/ksk-video-204-comfyui-workflows",
+  "slug": "ai-ksk-ksk-video-204-comfyui-workflows",
+  "author": "AI-KSK",
+  "url": "https://huggingface.co/AI-KSK/ksk-video-204-comfyui-workflows",
+  "created_at": "2026-11-09T12:34:33.000Z",
+  "updated_at": "2026-11-09T12:34:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "comfyui",
+    "anima",
+    "anima-preview-2",
+    "anime",
+    "text-to-image",
+    "tiled-upscale",
+    "lora",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4129841,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

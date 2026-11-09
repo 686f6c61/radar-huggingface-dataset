@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-1.5B-Instruct-heretic-ara-GGUF",
+  "slug": "mradermacher-qwen2-5-1-5b-instruct-heretic-ara-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-1.5B-Instruct-heretic-ara-GGUF",
+  "created_at": "2026-11-09T19:02:38.000Z",
+  "updated_at": "2026-11-09T19:40:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "abliterated",
+    "decensored",
+    "uncensored",
+    "ara",
+    "qwen2.5",
+    "en",
+    "base_model:aasis001/Qwen2.5-1.5B-Instruct-heretic-ara",
+    "base_model:quantized:aasis001/Qwen2.5-1.5B-Instruct-heretic-ara",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206906368,
+  "storage_human": "14.2 GB",
+  "base_model": "aasis001/Qwen2.5-1.5B-Instruct-heretic-ara",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

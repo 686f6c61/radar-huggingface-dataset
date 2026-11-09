@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "oguzeldereli/ttf-Qwen3.8-Flash-Next-GGUF",
+  "slug": "oguzeldereli-ttf-qwen3-8-flash-next-gguf",
+  "author": "oguzeldereli",
+  "url": "https://huggingface.co/oguzeldereli/ttf-Qwen3.8-Flash-Next-GGUF",
+  "created_at": "2026-11-09T14:19:52.000Z",
+  "updated_at": "2026-11-09T14:29:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ternary",
+    "1.58-bit",
+    "llama.cpp",
+    "moe",
+    "ttf",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40382114272,
+  "storage_human": "40.4 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

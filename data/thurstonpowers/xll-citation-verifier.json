@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "thurstonpowers/xll-citation-verifier",
+  "slug": "thurstonpowers-xll-citation-verifier",
+  "author": "thurstonpowers",
+  "url": "https://huggingface.co/thurstonpowers/xll-citation-verifier",
+  "created_at": "2026-11-09T15:55:07.000Z",
+  "updated_at": "2026-11-09T16:13:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "laya",
+    "modernbert",
+    "legal",
+    "citation-verification",
+    "classification",
+    "text-classification",
+    "en",
+    "dataset:thurstonpowers/xll-citation-verifier",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609220,
+  "storage_human": "843 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

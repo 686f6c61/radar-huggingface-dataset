@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "rezanicgil/job-radar-evidence-mentions-v3",
+  "slug": "rezanicgil-job-radar-evidence-mentions-v3",
+  "author": "rezanicgil",
+  "url": "https://huggingface.co/rezanicgil/job-radar-evidence-mentions-v3",
+  "created_at": "2026-11-09T15:31:18.000Z",
+  "updated_at": "2026-11-09T16:15:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "tr",
+    "en",
+    "dataset:rezanicgil/job-radar-match-pilot",
+    "base_model:MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli",
+    "base_model:finetune:MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7696052,
+  "storage_human": "8 MB",
+  "base_model": "MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

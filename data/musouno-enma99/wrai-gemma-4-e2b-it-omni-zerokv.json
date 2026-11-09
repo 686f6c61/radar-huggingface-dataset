@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Musouno-Enma99/WRAI-Gemma-4-E2B-IT-Omni-ZeroKV",
+  "slug": "musouno-enma99-wrai-gemma-4-e2b-it-omni-zerokv",
+  "author": "Musouno-Enma99",
+  "url": "https://huggingface.co/Musouno-Enma99/WRAI-Gemma-4-E2B-IT-Omni-ZeroKV",
+  "created_at": "2026-11-09T12:34:36.000Z",
+  "updated_at": "2026-11-09T12:36:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "id"
+  ],
+  "tags": [
+    "transformers",
+    "zero-kv",
+    "gemma-4",
+    "multimodal",
+    "omni-agent",
+    "artemis",
+    "android-automation",
+    "sub-byte-quantization",
+    "edge-ai",
+    "on-device",
+    "any-to-any",
+    "en",
+    "id",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 model overview - Gemma Documentation",
+      "url": "https://gemma.ai/models/gemma-4/",
+      "snippet": "Overview of Google's Gemma 4 open-weight multimodal models (E2B, E4B, 12B, 26B A4B, and 31B): capabilities, context windows, VRAM, and QAT checkpoints."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    }
+  ]
+}

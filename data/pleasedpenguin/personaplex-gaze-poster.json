@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "PleasedPenguin/personaplex-gaze-poster",
+  "slug": "pleasedpenguin-personaplex-gaze-poster",
+  "author": "PleasedPenguin",
+  "url": "https://huggingface.co/PleasedPenguin/personaplex-gaze-poster",
+  "created_at": "2026-11-09T12:32:30.000Z",
+  "updated_at": "2026-11-09T12:50:41.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "moshi",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "moshi",
+    "safetensors",
+    "full-duplex",
+    "speech",
+    "personaplex",
+    "gaze",
+    "multi-party",
+    "audio-to-audio",
+    "en",
+    "base_model:nvidia/personaplex-7b-v1",
+    "base_model:finetune:nvidia/personaplex-7b-v1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8371408896,
+  "parameters_human": "8.37B",
+  "storage_bytes": 16763994700,
+  "storage_human": "16.8 GB",
+  "base_model": "nvidia/personaplex-7b-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

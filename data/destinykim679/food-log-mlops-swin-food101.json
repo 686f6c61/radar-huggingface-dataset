@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "destinykim679/food-log-mlops-swin-food101",
+  "slug": "destinykim679-food-log-mlops-swin-food101",
+  "author": "destinykim679",
+  "url": "https://huggingface.co/destinykim679/food-log-mlops-swin-food101",
+  "created_at": "2026-11-09T14:14:06.000Z",
+  "updated_at": "2026-11-09T14:29:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86846749,
+  "parameters_human": "86.8M",
+  "storage_bytes": 347440468,
+  "storage_human": "347 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "c0mbatduckzz/XD-TAU-v3.6.3.6-DWKT",
+  "slug": "c0mbatduckzz-xd-tau-v3-6-3-6-dwkt",
+  "author": "c0mbatduckzz",
+  "url": "https://huggingface.co/c0mbatduckzz/XD-TAU-v3.6.3.6-DWKT",
+  "created_at": "2026-11-09T15:19:56.000Z",
+  "updated_at": "2026-11-09T15:20:37.000Z",
+  "license": "proprietary-all-rights-reserved",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "xd-tau",
+    "architecture",
+    "formal-methods",
+    "proprietary",
+    "all-rights-reserved",
+    "no-license-granted",
+    "tdm-reserved",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10396163,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

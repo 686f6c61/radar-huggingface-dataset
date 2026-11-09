@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "tetracta/tetracta-van-1b",
+  "slug": "tetracta-tetracta-van-1b",
+  "author": "tetracta",
+  "url": "https://huggingface.co/tetracta/tetracta-van-1b",
+  "created_at": "2026-07-30T03:38:25.000Z",
+  "updated_at": "2026-11-09T16:09:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "decoder-only-transformer",
+    "tetracta",
+    "data-efficiency",
+    "from-scratch",
+    "interpretability",
+    "tool-use",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 113,
+  "trending_score": 0,
+  "parameters": 936609792,
+  "parameters_human": "936.6M",
+  "storage_bytes": 7494012602,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

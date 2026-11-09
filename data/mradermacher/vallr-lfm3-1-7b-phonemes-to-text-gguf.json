@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/VALLR-LFM3-1.7B-phonemes-to-text-GGUF",
+  "slug": "mradermacher-vallr-lfm3-1-7b-phonemes-to-text-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/VALLR-LFM3-1.7B-phonemes-to-text-GGUF",
+  "created_at": "2026-11-09T17:50:21.000Z",
+  "updated_at": "2026-11-09T18:00:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "lip-reading",
+    "vasr",
+    "phonemes",
+    "vallr",
+    "lfm3",
+    "en",
+    "base_model:MyEcoria/VALLR-LFM3-1.7B-phonemes-to-text",
+    "base_model:quantized:MyEcoria/VALLR-LFM3-1.7B-phonemes-to-text",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 15885899136,
+  "storage_human": "15.9 GB",
+  "base_model": "MyEcoria/VALLR-LFM3-1.7B-phonemes-to-text",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

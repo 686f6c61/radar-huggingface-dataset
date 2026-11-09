@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/finance-Llama3-8B-GGUF",
+  "slug": "mradermacher-finance-llama3-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/finance-Llama3-8B-GGUF",
+  "created_at": "2025-03-11T07:00:17.000Z",
+  "updated_at": "2026-11-09T18:01:11.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "finance",
+    "en",
+    "dataset:Open-Orca/OpenOrca",
+    "dataset:GAIR/lima",
+    "dataset:WizardLM/WizardLM_evol_instruct_V2_196k",
+    "base_model:instruction-pretrain/finance-Llama3-8B",
+    "base_model:quantized:instruction-pretrain/finance-Llama3-8B",
+    "license:llama3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 331,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820229632,
+  "storage_human": "71.8 GB",
+  "base_model": "instruction-pretrain/finance-Llama3-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

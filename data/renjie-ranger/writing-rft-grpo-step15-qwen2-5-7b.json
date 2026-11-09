@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Renjie-Ranger/writing-rft-grpo-step15-qwen2.5-7b",
+  "slug": "renjie-ranger-writing-rft-grpo-step15-qwen2-5-7b",
+  "author": "Renjie-Ranger",
+  "url": "https://huggingface.co/Renjie-Ranger/writing-rft-grpo-step15-qwen2.5-7b",
+  "created_at": "2026-11-09T13:41:06.000Z",
+  "updated_at": "2026-11-09T13:53:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:finetune:Qwen/Qwen2.5-7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694091,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

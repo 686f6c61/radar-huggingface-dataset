@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "jkminder/1pp-2.81b-v2-raw-search-rl",
+  "slug": "jkminder-1pp-2-81b-v2-raw-search-rl",
+  "author": "jkminder",
+  "url": "https://huggingface.co/jkminder/1pp-2.81b-v2-raw-search-rl",
+  "created_at": "2026-11-09T16:19:37.000Z",
+  "updated_at": "2026-11-09T16:20:14.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "search-agent",
+    "reinforcement-learning",
+    "grpo",
+    "one-persona-pretraining",
+    "base_model:Raghav-Singhal/1pp-2.81b-v2-raw-sft",
+    "base_model:finetune:Raghav-Singhal/1pp-2.81b-v2-raw-sft",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2807699328,
+  "parameters_human": "2.81B",
+  "storage_bytes": 5615424024,
+  "storage_human": "5.6 GB",
+  "base_model": "Raghav-Singhal/1pp-2.81b-v2-raw-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

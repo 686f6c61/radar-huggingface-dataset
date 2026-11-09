@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/North-Mini-Code-1.0",
+  "slug": "redhatai-north-mini-code-1-0",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/North-Mini-Code-1.0",
+  "created_at": "2026-06-10T12:39:09.000Z",
+  "updated_at": "2026-11-09T17:59:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cohere2_moe",
+    "text-generation",
+    "conversational",
+    "chat",
+    "code",
+    "agent",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1424,
+  "trending_score": 0,
+  "parameters": 30484303872,
+  "parameters_human": "30.48B",
+  "storage_bytes": 60999118525,
+  "storage_human": "61.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

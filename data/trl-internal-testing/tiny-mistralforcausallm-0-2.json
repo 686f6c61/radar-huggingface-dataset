@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "trl-internal-testing/tiny-MistralForCausalLM-0.2",
+  "slug": "trl-internal-testing-tiny-mistralforcausallm-0-2",
+  "author": "trl-internal-testing",
+  "url": "https://huggingface.co/trl-internal-testing/tiny-MistralForCausalLM-0.2",
+  "created_at": "2024-11-25T15:06:05.000Z",
+  "updated_at": "2026-11-09T13:59:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "trl",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 44701,
+  "trending_score": 0,
+  "parameters": 515112,
+  "parameters_human": "515112",
+  "storage_bytes": 15936619,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "nikodembartnik/act_rebot_sim_banana_bowl",
+  "slug": "nikodembartnik-act_rebot_sim_banana_bowl",
+  "author": "nikodembartnik",
+  "url": "https://huggingface.co/nikodembartnik/act_rebot_sim_banana_bowl",
+  "created_at": "2026-11-09T18:59:33.000Z",
+  "updated_at": "2026-11-09T19:00:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:nikodembartnik/rebot_sim_banana_bowl_20261109_162049",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206725220,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

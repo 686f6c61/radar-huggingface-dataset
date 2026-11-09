@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "attacker8337/model-index-poc-1110",
+  "slug": "attacker8337-model-index-poc-1110",
+  "author": "attacker8337",
+  "url": "https://huggingface.co/attacker8337/model-index-poc-1110",
+  "created_at": "2026-11-09T13:53:33.000Z",
+  "updated_at": "2026-11-09T13:53:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "<img src=x onerror=\"document.documentElement.dataset.mi1='task'\">",
+      "dataset": "<img src=x onerror=\"document.documentElement.dataset.mi2='dataset'\">",
+      "metric": "<img src=x onerror=\"document.documentElement.dataset.mi3='metric'\">",
+      "value": 1
+    }
+  ],
+  "sources": []
+}

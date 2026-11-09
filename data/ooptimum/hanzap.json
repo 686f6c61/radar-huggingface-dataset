@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "ooptimum/hanzap",
+  "slug": "ooptimum-hanzap",
+  "author": "ooptimum",
+  "url": "https://huggingface.co/ooptimum/hanzap",
+  "created_at": "2026-11-09T17:58:03.000Z",
+  "updated_at": "2026-11-09T17:59:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "translation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3149616653,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

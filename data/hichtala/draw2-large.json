@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "HichTala/draw2-large",
+  "slug": "hichtala-draw2-large",
+  "author": "HichTala",
+  "url": "https://huggingface.co/HichTala/draw2-large",
+  "created_at": "2026-04-06T11:09:40.000Z",
+  "updated_at": "2026-11-09T19:18:53.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "object-detection",
+    "en",
+    "dataset:HichTala/ygoprodeck-dataset",
+    "arxiv:2010.11929",
+    "base_model:google/vit-base-patch16-224-in21k",
+    "base_model:finetune:google/vit-base-patch16-224-in21k",
+    "license:agpl-3.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": 96540048,
+  "parameters_human": "96.5M",
+  "storage_bytes": 3309962712,
+  "storage_human": "3.3 GB",
+  "base_model": "google/vit-base-patch16-224-in21k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

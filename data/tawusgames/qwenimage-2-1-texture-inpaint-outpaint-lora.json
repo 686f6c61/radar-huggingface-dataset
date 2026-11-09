@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "TawusGames/QwenImage-2.1-Texture-Inpaint-Outpaint-Lora",
+  "slug": "tawusgames-qwenimage-2-1-texture-inpaint-outpaint-lora",
+  "author": "TawusGames",
+  "url": "https://huggingface.co/TawusGames/QwenImage-2.1-Texture-Inpaint-Outpaint-Lora",
+  "created_at": "2026-11-09T13:34:46.000Z",
+  "updated_at": "2026-11-09T14:02:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 637640624,
+  "storage_human": "638 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

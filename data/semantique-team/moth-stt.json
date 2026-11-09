@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "semantique-team/moth-stt",
+  "slug": "semantique-team-moth-stt",
+  "author": "semantique-team",
+  "url": "https://huggingface.co/semantique-team/moth-stt",
+  "created_at": "2026-11-09T14:25:04.000Z",
+  "updated_at": "2026-11-09T14:28:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "speech-to-text",
+    "automatic-speech-recognition",
+    "code-switching",
+    "italian",
+    "english",
+    "ctc",
+    "int8",
+    "whisper",
+    "edge",
+    "it",
+    "en",
+    "dataset:google/fleurs",
+    "dataset:openslr/librispeech_asr",
+    "dataset:facebook/multilingual_librispeech",
+    "base_model:openai/whisper-tiny",
+    "base_model:quantized:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19418985,
+  "storage_human": "19 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Recognition",
+      "dataset": "FLEURS (it_it)",
+      "metric": "WER (beam+LM, normalized, percent)",
+      "value": 20.46
+    }
+  ],
+  "sources": []
+}

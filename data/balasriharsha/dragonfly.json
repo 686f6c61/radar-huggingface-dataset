@@ -1,0 +1,152 @@
+{
+  "schema": 1,
+  "id": "balasriharsha/dragonfly",
+  "slug": "balasriharsha-dragonfly",
+  "author": "balasriharsha",
+  "url": "https://huggingface.co/balasriharsha/dragonfly",
+  "created_at": "2026-11-09T12:56:20.000Z",
+  "updated_at": "2026-11-09T14:16:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "te",
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "telugu",
+    "hindi",
+    "hinglish",
+    "code-switching",
+    "code-mixed",
+    "indic",
+    "te",
+    "hi",
+    "en",
+    "dataset:ai4bharat/IndicVoices",
+    "dataset:ai4bharat/Kathbath",
+    "dataset:ARTPARK-IISc/Vaani",
+    "dataset:google/fleurs",
+    "dataset:mythicinfinity/libritts_r",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 1618017601,
+  "storage_human": "1.6 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Recognition",
+      "dataset": "IndicVoices + FLEURS Telugu (held-out)",
+      "metric": "WER",
+      "value": 22.11
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "IndicVoices + FLEURS Telugu (held-out)",
+      "metric": "CER",
+      "value": 6.61
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "IndicContextEval Telugu L1",
+      "metric": "WER (no punctuation)",
+      "value": 29
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Kathbath Telugu test",
+      "metric": "WER",
+      "value": 21.99
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Kathbath Telugu test",
+      "metric": "CER",
+      "value": 4.76
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "IndicVoices Hindi",
+      "metric": "WER (script-normalised)",
+      "value": 19.53
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "IndicVoices Hindi",
+      "metric": "CER (script-normalised)",
+      "value": 9.04
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "FLEURS Hindi",
+      "metric": "WER (script-normalised)",
+      "value": 17.63
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "FLEURS Hindi",
+      "metric": "CER (script-normalised)",
+      "value": 7.21
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "MUCS 2021 Hindi-English",
+      "metric": "WER (script-normalised)",
+      "value": 26.83
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "MUCS 2021 Hindi-English",
+      "metric": "CER (script-normalised)",
+      "value": 17.17
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "FLEURS English",
+      "metric": "WER",
+      "value": 6.1
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "FLEURS English",
+      "metric": "CER",
+      "value": 2.42
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Svarah",
+      "metric": "WER",
+      "value": 15.42
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Svarah",
+      "metric": "CER",
+      "value": 9.94
+    }
+  ],
+  "sources": []
+}

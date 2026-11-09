@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "trl-internal-testing/tiny-LlamaForCausalLM-3",
+  "slug": "trl-internal-testing-tiny-llamaforcausallm-3",
+  "author": "trl-internal-testing",
+  "url": "https://huggingface.co/trl-internal-testing/tiny-LlamaForCausalLM-3",
+  "created_at": "2024-11-25T15:05:50.000Z",
+  "updated_at": "2026-11-09T13:58:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "trl",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15982,
+  "trending_score": 0,
+  "parameters": 2055208,
+  "parameters_human": "2.1M",
+  "storage_bytes": 79049257,
+  "storage_human": "79 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

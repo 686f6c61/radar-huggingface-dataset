@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "hoyporti/qwen3-1.7b-eagle3-switchboard",
+  "slug": "hoyporti-qwen3-1-7b-eagle3-switchboard",
+  "author": "hoyporti",
+  "url": "https://huggingface.co/hoyporti/qwen3-1.7b-eagle3-switchboard",
+  "created_at": "2026-11-09T15:22:24.000Z",
+  "updated_at": "2026-11-09T15:26:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speculative-decoding",
+    "eagle3",
+    "base_model:AngelSlim/Qwen3-1.7B_eagle3",
+    "base_model:finetune:AngelSlim/Qwen3-1.7B_eagle3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 137031296,
+  "parameters_human": "137.0M",
+  "storage_bytes": 274104120,
+  "storage_human": "274 MB",
+  "base_model": "Qwen/Qwen3-1.7B, AngelSlim/Qwen3-1.7B_eagle3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

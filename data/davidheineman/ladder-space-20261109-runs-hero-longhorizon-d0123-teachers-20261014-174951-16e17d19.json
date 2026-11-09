@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "davidheineman/ladder-space-20261109-runs-hero-longhorizon-d0123-teachers-20261014-174951-16e17d19",
+  "slug": "davidheineman-ladder-space-20261109-runs-hero-longhorizon-d0123-teachers-20261014-174951-16e17d19",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/ladder-space-20261109-runs-hero-longhorizon-d0123-teachers-20261014-174951-16e17d19",
+  "created_at": "2026-11-09T19:58:04.000Z",
+  "updated_at": "2026-11-09T20:00:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "checkpoint-archive",
+    "research-reproducibility",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14216861658,
+  "storage_human": "14.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

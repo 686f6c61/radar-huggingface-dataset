@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "arena-education/arena-demos-othellogpt",
+  "slug": "arena-education-arena-demos-othellogpt",
+  "author": "arena-education",
+  "url": "https://huggingface.co/arena-education/arena-demos-othellogpt",
+  "created_at": "2026-11-09T17:38:00.000Z",
+  "updated_at": "2026-11-09T17:38:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "saelens",
+  "languages": [],
+  "tags": [
+    "saelens",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 285550693,
+  "storage_human": "286 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portail ARENA | Direction des systèmes d'information et de l'innovation",
+      "url": "https://dsii.region-academique-occitanie.fr/services-academiques/services/portail-arena-0",
+      "snippet": "Le portail ARENA est un portail de services « Accès aux Ressources Education Nationale et Académique ». Il concentre et permet …"
+    },
+    {
+      "title": "arena - Tenues Compétition, Maillots de Bain & Accessoires",
+      "url": "https://www.arenasport.com/fr_fr",
+      "snippet": "arena est votre boutique pour les maillots de bain, équipements et accessoires high-tech. Voir catalogue complet à l'intérieur."
+    },
+    {
+      "title": "Plenitude Arena | Concerts, sport et spectacles à Paris",
+      "url": "https://www.plenitudearena.com/",
+      "snippet": "Découvrez la programmation de la Plenitude Arena à Paris : concerts, spectacles, sport et matchs du Racing 92. Réservez vos billets."
+    },
+    {
+      "title": "Plenitude Arena | Billets concerts et spectacles à Paris",
+      "url": "https://www.plenitudearena.com/billetterie/",
+      "snippet": "Sep 12, 2026 · Toute la programmation de la Plenitude Arena à Paris : concerts, spectacles, sport. Réservez vos billets officiels pour …"
+    },
+    {
+      "title": "Accueil - Arena Futuroscope",
+      "url": "https://www.arena-futuroscope.com/",
+      "snippet": "Nov 2, 2026 · En plein cœur de la Vienne, l’Arena s’installe à l’entrée du Parc du Futuroscope, pour vous faire vivre des expériences …"
+    }
+  ]
+}

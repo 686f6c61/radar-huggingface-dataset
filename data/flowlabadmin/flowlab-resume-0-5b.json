@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "flowlabadmin/flowlab-resume-0.5b",
+  "slug": "flowlabadmin-flowlab-resume-0-5b",
+  "author": "flowlabadmin",
+  "url": "https://huggingface.co/flowlabadmin/flowlab-resume-0.5b",
+  "created_at": "2026-11-09T14:18:42.000Z",
+  "updated_at": "2026-11-09T14:18:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen2",
+    "text-generation",
+    "medical-summary",
+    "conversational",
+    "fr",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 406650722,
+  "storage_human": "407 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/EuroLLM-22B-grc-ro-GGUF",
+  "slug": "mradermacher-eurollm-22b-grc-ro-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/EuroLLM-22B-grc-ro-GGUF",
+  "created_at": "2026-11-09T14:57:57.000Z",
+  "updated_at": "2026-11-09T15:32:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "grc",
+    "ro"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "translation",
+    "ancient-greek",
+    "koine-greek",
+    "patristic",
+    "romanian",
+    "lora",
+    "grc",
+    "ro",
+    "base_model:icxcn/EuroLLM-22B-grc-ro",
+    "base_model:adapter:icxcn/EuroLLM-22B-grc-ro",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22637328384,
+  "parameters_human": "22.64B",
+  "storage_bytes": 13020288288,
+  "storage_human": "13.0 GB",
+  "base_model": "icxcn/EuroLLM-22B-grc-ro",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

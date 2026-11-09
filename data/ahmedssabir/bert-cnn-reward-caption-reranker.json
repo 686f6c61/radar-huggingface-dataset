@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "AhmedSSabir/BERT-CNN-Reward-Caption-Reranker",
+  "slug": "ahmedssabir-bert-cnn-reward-caption-reranker",
+  "author": "AhmedSSabir",
+  "url": "https://huggingface.co/AhmedSSabir/BERT-CNN-Reward-Caption-Reranker",
+  "created_at": "2026-11-08T15:29:02.000Z",
+  "updated_at": "2026-11-09T18:08:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "bert-cnn-caption-reranker",
+    "bert",
+    "image-captioning",
+    "caption-reranking",
+    "visual-relatedness",
+    "custom-code",
+    "en",
+    "dataset:AhmedSSabir/Textual-Image-Caption-Dataset",
+    "arxiv:2301.08784",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 108966401,
+  "parameters_human": "109.0M",
+  "storage_bytes": 435889108,
+  "storage_human": "436 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "UBC-SLIME/sparcol-lexicon-large-c1000",
+  "slug": "ubc-slime-sparcol-lexicon-large-c1000",
+  "author": "UBC-SLIME",
+  "url": "https://huggingface.co/UBC-SLIME/sparcol-lexicon-large-c1000",
+  "created_at": "2026-11-09T16:35:45.000Z",
+  "updated_at": "2026-11-09T16:36:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "authorship-attribution",
+    "sparse-retrieval",
+    "lexicon",
+    "en",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:finetune:answerdotai/ModernBERT-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395831296,
+  "parameters_human": "395.8M",
+  "storage_bytes": 1583747837,
+  "storage_human": "1.6 GB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

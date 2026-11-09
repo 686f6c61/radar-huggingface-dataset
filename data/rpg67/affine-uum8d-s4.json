@@ -1,0 +1,198 @@
+{
+  "schema": 1,
+  "id": "rpg67/affine-uum8d-s4",
+  "slug": "rpg67-affine-uum8d-s4",
+  "author": "rpg67",
+  "url": "https://huggingface.co/rpg67/affine-uum8d-s4",
+  "created_at": "2026-11-09T14:11:44.000Z",
+  "updated_at": "2026-11-09T14:24:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "openai-compatible",
+  "languages": [],
+  "tags": [
+    "openai-compatible",
+    "affine-earth",
+    "affine-uum8d-s4",
+    "vqbit",
+    "zero-float",
+    "zero-ml",
+    "formal-verification",
+    "metamath",
+    "mcp",
+    "mcp-server",
+    "swe-bench",
+    "gaia",
+    "bfcl",
+    "terminal-bench",
+    "arc-agi",
+    "livebench",
+    "bigcodebench",
+    "aider-polyglot",
+    "frontier-physics",
+    "all-souls",
+    "tokenized-equity-audit",
+    "swift-6-4",
+    "text-generation",
+    "dataset:rpg67/Affine.Earth-Benchmarks",
+    "license:mit",
+    "model-index",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Berkeley Function Calling Leaderboard V4 (BFCL V4)",
+      "dataset": "BFCL V4",
+      "metric": "AST & Live MCP Accuracy (%)",
+      "value": 100
+    },
+    {
+      "task": "Berkeley Function Calling Leaderboard V4 (BFCL V4)",
+      "dataset": "BFCL V4",
+      "metric": "Pass^8 Rerun Flip Variance (%)",
+      "value": 0
+    },
+    {
+      "task": "SWE-bench Verified (500 Instances · 3-Step vQbit Trajectory)",
+      "dataset": "SWE-bench Verified",
+      "metric": "Resolved Rate (%) [trajs/ + logs/ Verified]",
+      "value": 100
+    },
+    {
+      "task": "SWE-bench Verified (500 Instances · 3-Step vQbit Trajectory)",
+      "dataset": "SWE-bench Verified",
+      "metric": "Pass^8 Rerun Flip Variance (%)",
+      "value": 0
+    },
+    {
+      "task": "Terminal-Bench 2.0 (Harbor Harness · 89 Tasks)",
+      "dataset": "Terminal-Bench 2.0",
+      "metric": "Pass^8 Deterministic Closure (%)",
+      "value": 100
+    },
+    {
+      "task": "Terminal-Bench 2.0 (Harbor Harness · 89 Tasks)",
+      "dataset": "Terminal-Bench 2.0",
+      "metric": "Pass^8 Rerun Flip Variance (%)",
+      "value": 0
+    },
+    {
+      "task": "Salesforce MCP-Universe & Scale MCP-Atlas (28 Tools)",
+      "dataset": "MCP-Universe",
+      "metric": "JSON-RPC 2.0 Streamable-HTTP MCP Closure (%)",
+      "value": 100
+    },
+    {
+      "task": "Salesforce MCP-Universe & Scale MCP-Atlas (28 Tools)",
+      "dataset": "MCP-Universe",
+      "metric": "Pass^8 Rerun Flip Variance (%)",
+      "value": 0
+    },
+    {
+      "task": "ARC-AGI-2 / ARC-AGI-3 Reasoning Verification ($0.00 GPU)",
+      "dataset": "ARC-AGI-3",
+      "metric": "Dihedral D4 & Morton S4 Grid Invariance (%)",
+      "value": 100
+    },
+    {
+      "task": "ARC-AGI-2 / ARC-AGI-3 Reasoning Verification ($0.00 GPU)",
+      "dataset": "ARC-AGI-3",
+      "metric": "Pass^8 Rerun Flip Variance (%)",
+      "value": 0
+    },
+    {
+      "task": "GAIA Benchmark (Level 1, 2 & 3 Autonomous Agent)",
+      "dataset": "GAIA",
+      "metric": "Exact-Match Stripped Scalar Accuracy (%)",
+      "value": 100
+    },
+    {
+      "task": "GAIA Benchmark (Level 1, 2 & 3 Autonomous Agent)",
+      "dataset": "GAIA",
+      "metric": "Pass^8 Rerun Flip Variance (%)",
+      "value": 0
+    },
+    {
+      "task": "Aider Polyglot Coding Benchmark (225 Tasks · 7 Languages)",
+      "dataset": "Aider Polyglot",
+      "metric": "Whole-File & Diff Edit Closure (%)",
+      "value": 100
+    },
+    {
+      "task": "Aider Polyglot Coding Benchmark (225 Tasks · 7 Languages)",
+      "dataset": "Aider Polyglot",
+      "metric": "Pass^8 Rerun Flip Variance (%)",
+      "value": 0
+    },
+    {
+      "task": "LiveBench 2026 Contamination-Free Coding, Math & Agentic Suite",
+      "dataset": "LiveBench 2026",
+      "metric": "Contamination-Free Integer Proof Closure (%)",
+      "value": 100
+    },
+    {
+      "task": "LiveBench 2026 Contamination-Free Coding, Math & Agentic Suite",
+      "dataset": "LiveBench 2026",
+      "metric": "Pass^8 Rerun Flip Variance (%)",
+      "value": 0
+    },
+    {
+      "task": "BigCodeBench-Hard & EvalPlus (HumanEval+ / MBPP+)",
+      "dataset": "BigCodeBench-Hard",
+      "metric": "Hard Split Pass@1 Deterministic Execution (%)",
+      "value": 100
+    },
+    {
+      "task": "BigCodeBench-Hard & EvalPlus (HumanEval+ / MBPP+)",
+      "dataset": "BigCodeBench-Hard",
+      "metric": "Pass^8 Rerun Flip Variance (%)",
+      "value": 0
+    },
+    {
+      "task": "MATH-500, AIME, PutnamBench & Oxford All Souls (set.mm / miniF2F)",
+      "dataset": "MATH-500 & PutnamBench",
+      "metric": "Constructive RPN & Formal Proof Closure (%)",
+      "value": 100
+    },
+    {
+      "task": "MATH-500, AIME, PutnamBench & Oxford All Souls (set.mm / miniF2F)",
+      "dataset": "MATH-500 & PutnamBench",
+      "metric": "Pass^8 Rerun Flip Variance (%)",
+      "value": 0
+    },
+    {
+      "task": "UC Berkeley FrontierPhysics (168 Olympiad & Research Problems)",
+      "dataset": "FrontierPhysics-168",
+      "metric": "Exact Rational Symplectic Closure (%)",
+      "value": 100
+    },
+    {
+      "task": "UC Berkeley FrontierPhysics (168 Olympiad & Research Problems)",
+      "dataset": "FrontierPhysics-168",
+      "metric": "Born Rule Residual (a^2 + b^2 - d^2)",
+      "value": 0
+    },
+    {
+      "task": "SemiAnalysis GDPx Finance, Tokenized Equity Over-Total (>100% Float) & 10,240-Wallet Section 13(d)/13F Sybil Court",
+      "dataset": "GDPx-Finance-and-Tokenized-Equity-Audit",
+      "metric": "Law 0 (~Copyable) Share Register & Bogle Value (Ax) vs. Wrapper Shear (+tau) Unmasking (%)",
+      "value": 100
+    }
+  ],
+  "sources": []
+}

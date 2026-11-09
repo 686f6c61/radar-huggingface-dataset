@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "AI-KSK/ksk-video-187-comfyui-workflows",
+  "slug": "ai-ksk-ksk-video-187-comfyui-workflows",
+  "author": "AI-KSK",
+  "url": "https://huggingface.co/AI-KSK/ksk-video-187-comfyui-workflows",
+  "created_at": "2026-11-09T12:36:39.000Z",
+  "updated_at": "2026-11-09T12:36:45.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "comfyui",
+    "flux-2",
+    "klein-9b",
+    "face-swap",
+    "lora",
+    "lanpaint",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1902456,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Allow another Facebook Page to crosspost your Page's videos",
+      "url": "https://www.facebook.com/help/678485232304895/",
+      "snippet": "Require the other Page's crossposted live videos to be approved by someone with Facebook access or task access to your Page …"
+    },
+    {
+      "title": "How to Crosspost Facebook Videos | Meta Business Help Center",
+      "url": "https://www.facebook.com/business/help/1385580858214929/",
+      "snippet": "Learn how to crosspost videos on Facebook simultaneously across multiple Pages."
+    },
+    {
+      "title": "Crosspost a video - Meta for Developers",
+      "url": "https://developers.facebook.com/docs/live-video-api/guides/crossposting_/",
+      "snippet": "Once we know which pages are available for crossposting, we can add crossposting_actions to any LiveVideo object. Each …"
+    },
+    {
+      "title": "Crosspost to multiple Facebook Pages | Meta for Developers",
+      "url": "https://developers.facebook.com/documentation/live-video-api/guides/crossposting/",
+      "snippet": "Jul 2, 2026 · This document shows you how you can use the Live Video API to post videos simultaneously to multiple pages. …"
+    }
+  ]
+}

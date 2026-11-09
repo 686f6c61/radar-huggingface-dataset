@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "minaolenpavel/bam_postag",
+  "slug": "minaolenpavel-bam_postag",
+  "author": "minaolenpavel",
+  "url": "https://huggingface.co/minaolenpavel/bam_postag",
+  "created_at": "2026-11-09T18:01:34.000Z",
+  "updated_at": "2026-11-09T18:08:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "bm"
+  ],
+  "tags": [
+    "safetensors",
+    "token-classification",
+    "bm",
+    "base_model:castorini/afriberta_base",
+    "base_model:finetune:castorini/afriberta_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 443542408,
+  "storage_human": "444 MB",
+  "base_model": "castorini/afriberta_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

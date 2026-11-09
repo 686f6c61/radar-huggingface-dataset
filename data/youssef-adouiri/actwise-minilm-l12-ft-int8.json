@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Youssef-ADOUIRI/actwise-minilm-l12-ft-int8",
+  "slug": "youssef-adouiri-actwise-minilm-l12-ft-int8",
+  "author": "Youssef-ADOUIRI",
+  "url": "https://huggingface.co/Youssef-ADOUIRI/actwise-minilm-l12-ft-int8",
+  "created_at": "2026-11-09T18:57:45.000Z",
+  "updated_at": "2026-11-09T19:01:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": null,
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "onnx",
+    "int8",
+    "retrieval",
+    "legal",
+    "eu-ai-act",
+    "gdpr",
+    "sentence-similarity",
+    "en",
+    "fr",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:quantized:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135998358,
+  "storage_human": "136 MB",
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

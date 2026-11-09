@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "AnonUser123AI/Sepia",
+  "slug": "anonuser123ai-sepia",
+  "author": "AnonUser123AI",
+  "url": "https://huggingface.co/AnonUser123AI/Sepia",
+  "created_at": "2026-11-09T14:12:08.000Z",
+  "updated_at": "2026-11-09T14:42:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "immunohistochemistry",
+    "histopathology",
+    "image-feature-extraction",
+    "vision-transformer",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1217388571,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

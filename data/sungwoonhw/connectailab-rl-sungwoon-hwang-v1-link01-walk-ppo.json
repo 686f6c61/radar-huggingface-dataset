@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "SUNGWOONHW/connectailab-rl-sungwoon-hwang-v1-link01-walk-ppo",
+  "slug": "sungwoonhw-connectailab-rl-sungwoon-hwang-v1-link01-walk-ppo",
+  "author": "SUNGWOONHW",
+  "url": "https://huggingface.co/SUNGWOONHW/connectailab-rl-sungwoon-hwang-v1-link01-walk-ppo",
+  "created_at": "2026-11-09T14:02:26.000Z",
+  "updated_at": "2026-11-09T14:02:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "ppo",
+    "robotics",
+    "mujoco",
+    "locomotion",
+    "link01",
+    "connect-ai-lab",
+    "connectailab",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2991052,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "walking",
+      "dataset": "Link01WalkGuided-v0",
+      "metric": "distance per 20 s (m)",
+      "value": 3.789
+    },
+    {
+      "task": "walking",
+      "dataset": "Link01WalkGuided-v0",
+      "metric": "mean forward speed (m/s)",
+      "value": 0.1894
+    },
+    {
+      "task": "walking",
+      "dataset": "Link01WalkGuided-v0",
+      "metric": "falls per minute",
+      "value": 0
+    }
+  ],
+  "sources": []
+}

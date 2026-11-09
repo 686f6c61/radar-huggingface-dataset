@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "appssy3/connectailab-rl-solo-build-H-v2-Humanoid",
+  "slug": "appssy3-connectailab-rl-solo-build-h-v2-humanoid",
+  "author": "appssy3",
+  "url": "https://huggingface.co/appssy3/connectailab-rl-solo-build-H-v2-Humanoid",
+  "created_at": "2026-11-09T13:48:36.000Z",
+  "updated_at": "2026-11-09T13:52:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "reinforcement-learning",
+    "ppo",
+    "continuous-control",
+    "mujoco",
+    "humanoid-v5",
+    "connect-ai-lab",
+    "connectailab",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4064988,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Reinforcement Learning",
+      "dataset": "Humanoid-v5 (MuJoCo)",
+      "metric": "Mean Reward (평균 보상 점수)",
+      "value": 514.1
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "DevelopingDad/GLM-5.3-Flash-FP4-Local-Abliterated",
+  "slug": "developingdad-glm-5-3-flash-fp4-local-abliterated",
+  "author": "DevelopingDad",
+  "url": "https://huggingface.co/DevelopingDad/GLM-5.3-Flash-FP4-Local-Abliterated",
+  "created_at": "2026-11-09T15:45:00.000Z",
+  "updated_at": "2026-11-09T15:54:15.000Z",
+  "license": "nvidia-open-model-agreement",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "glm-5.3",
+    "abliterated",
+    "fp4",
+    "nvfp4",
+    "fp8",
+    "modelopt",
+    "dgx-spark",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:nvidia/GLM-5.3-Flash-FP4-Local",
+    "base_model:finetune:nvidia/GLM-5.3-Flash-FP4-Local",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 341964750022,
+  "parameters_human": "341.96B",
+  "storage_bytes": 177519129451,
+  "storage_human": "177.5 GB",
+  "base_model": "nvidia/GLM-5.3-Flash-FP4-Local",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "mradermacher/S5-nano-uncensored-GGUF",
+  "slug": "mradermacher-s5-nano-uncensored-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/S5-nano-uncensored-GGUF",
+  "created_at": "2026-11-09T14:28:42.000Z",
+  "updated_at": "2026-11-09T14:28:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 333514240,
+  "parameters_human": "333.5M",
+  "storage_bytes": 1039318272,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

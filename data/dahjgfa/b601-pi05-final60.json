@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "dahjgfa/b601-pi05-final60",
+  "slug": "dahjgfa-b601-pi05-final60",
+  "author": "dahjgfa",
+  "url": "https://huggingface.co/dahjgfa/b601-pi05-final60",
+  "created_at": "2026-11-09T16:25:01.000Z",
+  "updated_at": "2026-11-09T16:25:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

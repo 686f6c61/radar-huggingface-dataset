@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "rezanicgil/job-radar-clause-attribution",
+  "slug": "rezanicgil-job-radar-clause-attribution",
+  "author": "rezanicgil",
+  "url": "https://huggingface.co/rezanicgil/job-radar-clause-attribution",
+  "created_at": "2026-11-09T19:46:27.000Z",
+  "updated_at": "2026-11-09T19:49:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "tr",
+    "en",
+    "dataset:rezanicgil/job-radar-match-pilot",
+    "base_model:MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli",
+    "base_model:finetune:MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 106995075,
+  "parameters_human": "107.0M",
+  "storage_bytes": 445075799,
+  "storage_human": "445 MB",
+  "base_model": "MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

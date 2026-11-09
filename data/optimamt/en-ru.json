@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "OptimaMT/en-ru",
+  "slug": "optimamt-en-ru",
+  "author": "OptimaMT",
+  "url": "https://huggingface.co/OptimaMT/en-ru",
+  "created_at": "2026-11-09T19:57:34.000Z",
+  "updated_at": "2026-11-09T19:57:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers.js",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "opus-mt",
+    "en",
+    "ru",
+    "base_model:Xenova/opus-mt-en-ru",
+    "base_model:quantized:Xenova/opus-mt-en-ru",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 112442640,
+  "storage_human": "112 MB",
+  "base_model": "Xenova/opus-mt-en-ru",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
