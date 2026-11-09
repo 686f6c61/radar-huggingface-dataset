@@ -27,7 +27,7 @@
   "base_model": "deepseek-ai/DeepSeek-V4-Flash",
   "formats": [],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

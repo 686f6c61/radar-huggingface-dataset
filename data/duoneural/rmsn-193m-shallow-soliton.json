@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/RMSN-193M-Shallow-Soliton",
+  "slug": "duoneural-rmsn-193m-shallow-soliton",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/RMSN-193M-Shallow-Soliton",
+  "created_at": "2026-11-08T21:22:33.000Z",
+  "updated_at": "2026-11-08T21:23:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "rmsn",
+    "pytorch",
+    "physics-informed",
+    "port-hamiltonian",
+    "metriplectic-mechanics",
+    "lyapunov-stability",
+    "sheaf-theory",
+    "language-modeling",
+    "193M",
+    "dissipative-soliton",
+    "shallow-soliton",
+    "topological-casimir",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 243732144,
+  "parameters_human": "243.7M",
+  "storage_bytes": 1748694491,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DuoNeural/RMSN-193M-Soliton-Reasoning-SFT · Hugging Face",
+      "url": "https://huggingface.co/DuoNeural/RMSN-193M-Soliton-Reasoning-SFT",
+      "snippet": "Model Summary World's first reasoning-fine-tuned deep dissipative soliton model. Base: RMSN-193M-Base-Soliton (val_lyap=-11.2547). SFT: 5000 steps on CDM hard reasoning traces (lr=2e-5, below α*). Lyapunov exponent held -10.6 to -12.74 throughout ALL 5000 SFT steps, including at LR floor (2e-6). Final step lyap=-11.81. FORGETTING SHIELD CONFIRMED: the soliton attractor geometry is completely ..."
+    },
+    {
+      "title": "DuoNeural - Independent AI Research Lab",
+      "url": "https://duoneural.com/",
+      "snippet": "DuoNeural is an independent AI research lab publishing mechanistic interpretability, RLHF suppression, recurrent world-modeling, CTM, open models, and open datasets."
+    }
+  ]
+}

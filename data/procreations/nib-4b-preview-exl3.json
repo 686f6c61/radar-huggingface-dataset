@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ProCreations/nib-4b-preview-EXL3",
+  "slug": "procreations-nib-4b-preview-exl3",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/nib-4b-preview-EXL3",
+  "created_at": "2026-11-08T22:00:23.000Z",
+  "updated_at": "2026-11-08T22:13:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "exllamav3",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "exllamav3",
+    "browser-agent",
+    "browser-use",
+    "computer-use",
+    "agent",
+    "tool-use",
+    "qwen3.5",
+    "exl3",
+    "image-text-to-text",
+    "en",
+    "base_model:ProCreations/nib-4b-preview",
+    "base_model:quantized:ProCreations/nib-4b-preview",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13944211830,
+  "storage_human": "13.9 GB",
+  "base_model": "ProCreations/nib-4b-preview",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ProCreations (SSH) - Hugging Face",
+      "url": "https://huggingface.co/ProCreations",
+      "snippet": "AI & ML interests ... Recent Activity updated a collection 23 minutes ago ... liked a model 23 minutes ago"
+    },
+    {
+      "title": "ProCreations (SSH) - Hugging Face",
+      "url": "https://huggingface.co/ProCreations/models",
+      "snippet": "Making AI’s small, accessible, and easy to run on consumer hardware"
+    }
+  ]
+}

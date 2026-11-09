@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "djokobandjur/deit-rope-mixed-ape-base-seed-4",
+  "slug": "djokobandjur-deit-rope-mixed-ape-base-seed-4",
+  "author": "djokobandjur",
+  "url": "https://huggingface.co/djokobandjur/deit-rope-mixed-ape-base-seed-4",
+  "created_at": "2026-11-07T23:18:50.000Z",
+  "updated_at": "2026-11-08T22:58:39.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "vision-transformer",
+    "learned-rope",
+    "rope-mixed",
+    "research-checkpoint",
+    "image-classification",
+    "dataset:ILSVRC/imagenet-1k",
+    "arxiv:2403.13298",
+    "arxiv:2204.07118",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1385806369,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "naver-ai/rope_mixed_ape_deit_base_patch16_LS · Hugging Face",
+      "url": "https://huggingface.co/naver-ai/rope_mixed_ape_deit_base_patch16_LS",
+      "snippet": "Collection including naver-ai/rope_mixed_ape_deit_base_patch16_LS rope-vit Collection Rotary Position Embedding for Vision Transformer [ECCV 2024] • 22 items • Updated 1 day ago"
+    },
+    {
+      "title": "Model Zoo | naver-ai/rope-vit | DeepWiki",
+      "url": "https://deepwiki.com/naver-ai/rope-vit/4-model-zoo",
+      "snippet": "The model zoo is organized along three primary dimensions: architectural family (DeiT-III vs Swin Transformer), RoPE variant (Axial vs Mixed, with optional APE for DeiT), and model size (Small/Tiny, Base, Large)."
+    }
+  ]
+}

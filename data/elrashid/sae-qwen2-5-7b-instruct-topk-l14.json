@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "elrashid/sae-qwen2.5-7b-instruct-topk-l14",
+  "slug": "elrashid-sae-qwen2-5-7b-instruct-topk-l14",
+  "author": "elrashid",
+  "url": "https://huggingface.co/elrashid/sae-qwen2.5-7b-instruct-topk-l14",
+  "created_at": "2026-07-02T02:26:02.000Z",
+  "updated_at": "2026-11-08T21:07:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "sparse-autoencoder",
+    "mechanistic-interpretability",
+    "interpretability",
+    "ai-safety",
+    "quantization",
+    "topk-sae",
+    "dataset:monology/pile-uncopyrighted",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "doi:10.57967/hf/9450",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1644442213,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elrashid/sae-qwen2.5-7b-instruct-topk-l14 · Hugging Face",
+      "url": "https://huggingface.co/elrashid/sae-qwen2.5-7b-instruct-topk-l14",
+      "snippet": "A TopK sparse autoencoder for Qwen/Qwen2.5-7B-Instruct, residual-stream layer 14 (d_in=3584, d_sae=57344, k=64, FVU=0.4287). Trained with the v2 recipe (BOS-drop + per-dim standardization) for The Refusal Slope: A Mechanistic Taxonomy of Feature Fate in Quantized Edge Intelligence (M. Elrashid, BUiD)."
+    },
+    {
+      "title": "elrashid/gate-qwen2.5-7b-instruct-l14 - Hugging Face",
+      "url": "https://huggingface.co/elrashid/gate-qwen2.5-7b-instruct-l14",
+      "snippet": "A SAE safety gate for Qwen/Qwen2.5-7B-Instruct: logistic regression over sparse-autoencoder features of the layer-14 residual stream, scoring P (harmful) from the prompt alone — the verdict lands before the first output token. Part of The Refusal Slope (MSc thesis, BUiD). Companion SAE: elrashid/sae-qwen2.5-7b-instruct-topk-l14."
+    }
+  ]
+}

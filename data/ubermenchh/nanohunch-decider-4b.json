@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "ubermenchh/nanohunch-decider-4b",
+  "slug": "ubermenchh-nanohunch-decider-4b",
+  "author": "ubermenchh",
+  "url": "https://huggingface.co/ubermenchh/nanohunch-decider-4b",
+  "created_at": "2026-11-08T22:37:31.000Z",
+  "updated_at": "2026-11-08T22:38:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "decision-making",
+    "calibration",
+    "lora",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132253806,
+  "storage_human": "132 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ubermenchh/nanohunch: Minimal System One model: state - GitHub",
+      "url": "https://github.com/ubermenchh/nanohunch",
+      "snippet": "Results will be reported in one harness against the model's own untrained base, pngwn's open replication (order flips, long inputs), SemIf-OpenJev (frozen Qwen3.5-4B), and decider-2b (a trained 2B model)."
+    },
+    {
+      "title": "nanohunch/docs/design/2026-09-23-nanohunch at main · ubermenchh/nanohunch",
+      "url": "https://github.com/ubermenchh/nanohunch/tree/main/docs/design/2026-09-23-nanohunch",
+      "snippet": "The core is six hand-written files of at most 1,000 lines, trained overnight on one Mac, and measured in one harness against SemIf (frozen Qwen3.5-4B), decider-2b (a trained 2B model) and pngwn."
+    }
+  ]
+}

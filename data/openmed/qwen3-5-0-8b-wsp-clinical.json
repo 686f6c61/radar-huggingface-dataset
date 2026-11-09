@@ -5,7 +5,7 @@
   "author": "OpenMed",
   "url": "https://huggingface.co/OpenMed/Qwen3.5-0.8B-WSP-Clinical",
   "created_at": "2026-11-03T17:44:23.000Z",
-  "updated_at": "2026-11-07T11:05:20.000Z",
+  "updated_at": "2026-11-08T17:43:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

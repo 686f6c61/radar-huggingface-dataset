@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "ggml-org/vllm-d3-GGUF",
+  "slug": "ggml-org-vllm-d3-gguf",
+  "author": "ggml-org",
+  "url": "https://huggingface.co/ggml-org/vllm-d3-GGUF",
+  "created_at": "2026-10-12T13:32:12.000Z",
+  "updated_at": "2026-11-08T21:16:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "decision-model",
+    "image-text-to-text",
+    "base_model:vllm-sr/d3",
+    "base_model:quantized:vllm-sr/d3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 8,
+  "downloads_30d": 28123,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 306983600448,
+  "storage_human": "307.0 GB",
+  "base_model": "vllm-sr/d3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ggml-org/vllm-d3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ggml-org/vllm-d3-GGUF",
+      "snippet": "ggml-org / vllm-d3-GGUF Like 2 Follow ggml-org 3.08k Image-Text-to-Text GGUF quantized decision-model conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Deploy ggml-org/vllm-d3-GGUF | Inference Endpoints by Hugging Face",
+      "url": "https://endpoints.huggingface.co/new/ggml-org/vllm-d3-GGUF",
+      "snippet": "Deploy vllm-d3-GGUF for image-text-to-text inference in 1 click."
+    }
+  ]
+}

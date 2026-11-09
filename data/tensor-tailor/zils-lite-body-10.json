@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "tensor-tailor/zils-lite-body-10",
+  "slug": "tensor-tailor-zils-lite-body-10",
+  "author": "tensor-tailor",
+  "url": "https://huggingface.co/tensor-tailor/zils-lite-body-10",
+  "created_at": "2026-11-09T00:23:16.000Z",
+  "updated_at": "2026-11-09T00:23:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "zils",
+    "d3-lite",
+    "custom_code",
+    "base_model:qhoenix/zils-lite-decision-v9",
+    "base_model:finetune:qhoenix/zils-lite-decision-v9",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1706027688,
+  "storage_human": "1.7 GB",
+  "base_model": "qhoenix/zils-lite-decision-v9",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zils — Teach AI to make decisions your way.",
+      "url": "https://zils.ai/",
+      "snippet": "Zils Zils Teach AI to make decisions your way. Show Zils examples with the right answers. It trains a small model your app can use to sort requests, flag problems, or score matches."
+    }
+  ]
+}

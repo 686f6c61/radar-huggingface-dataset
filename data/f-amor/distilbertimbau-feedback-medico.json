@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "f-amor/distilbertimbau-feedback-medico",
+  "slug": "f-amor-distilbertimbau-feedback-medico",
+  "author": "f-amor",
+  "url": "https://huggingface.co/f-amor/distilbertimbau-feedback-medico",
+  "created_at": "2026-11-08T23:52:09.000Z",
+  "updated_at": "2026-11-08T23:52:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66398211,
+  "parameters_human": "66.4M",
+  "storage_bytes": 265605044,
+  "storage_human": "266 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paper page - AMOR: A Recipe for Building Adaptable Modular Knowledge ...",
+      "url": "https://huggingface.co/papers/2402.01469",
+      "snippet": "The former fine-tunes the LLM with examples automatically constructed from various public datasets, enabling AMOR to generalize across different knowledge environments, while the latter tailors AMOR to specific domains using process feedback."
+    }
+  ]
+}

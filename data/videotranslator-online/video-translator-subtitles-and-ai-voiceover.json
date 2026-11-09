@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "VideoTranslator-Online/Video-Translator-Subtitles-and-AI-Voiceover",
+  "slug": "videotranslator-online-video-translator-subtitles-and-ai-voiceover",
+  "author": "VideoTranslator-Online",
+  "url": "https://huggingface.co/VideoTranslator-Online/Video-Translator-Subtitles-and-AI-Voiceover",
+  "created_at": "2026-11-09T03:17:10.000Z",
+  "updated_at": "2026-11-09T03:18:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "video-translation",
+    "subtitles",
+    "dubbing",
+    "hosted-service",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

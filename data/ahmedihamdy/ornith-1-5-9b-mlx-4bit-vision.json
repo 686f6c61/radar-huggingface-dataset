@@ -5,7 +5,7 @@
   "author": "ahmedihamdy",
   "url": "https://huggingface.co/ahmedihamdy/Ornith-1.5-9B-MLX-4bit-vision",
   "created_at": "2026-11-05T14:29:46.000Z",
-  "updated_at": "2026-11-05T14:33:25.000Z",
+  "updated_at": "2026-11-09T03:39:37.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

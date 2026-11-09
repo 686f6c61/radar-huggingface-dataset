@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "fadhilahkhairogi/Liwet-66M-id-chat",
+  "slug": "fadhilahkhairogi-liwet-66m-id-chat",
+  "author": "fadhilahkhairogi",
+  "url": "https://huggingface.co/fadhilahkhairogi/Liwet-66M-id-chat",
+  "created_at": "2026-11-09T04:07:12.000Z",
+  "updated_at": "2026-11-09T04:07:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "safetensors",
+    "mini_transformer",
+    "text-generation",
+    "indonesian",
+    "pytorch",
+    "from-scratch",
+    "liwet",
+    "sft",
+    "chat",
+    "conversational",
+    "mini-transformer",
+    "rope",
+    "swiglu",
+    "id",
+    "base_model:fadhilahkhairogi/Liwet-66M-id-base-v2",
+    "base_model:finetune:fadhilahkhairogi/Liwet-66M-id-base-v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 83115520,
+  "parameters_human": "83.1M",
+  "storage_bytes": 166239224,
+  "storage_human": "166 MB",
+  "base_model": "fadhilahkhairogi/Liwet-66M-id-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "JonusNattapong/LFM3-Omni-2B-Adaptive-CoT-GGUF",
+  "slug": "jonusnattapong-lfm3-omni-2b-adaptive-cot-gguf",
+  "author": "JonusNattapong",
+  "url": "https://huggingface.co/JonusNattapong/LFM3-Omni-2B-Adaptive-CoT-GGUF",
+  "created_at": "2026-11-09T04:43:23.000Z",
+  "updated_at": "2026-11-09T04:45:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "lfm3",
+    "omni",
+    "adaptive-cot",
+    "reasoning",
+    "uncensored",
+    "gguf",
+    "ollama",
+    "text-generation",
+    "th",
+    "en",
+    "base_model:JonusNattapong/LFM3-Omni-2B-abliterated",
+    "base_model:finetune:JonusNattapong/LFM3-Omni-2B-abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "JonusNattapong/LFM3-Omni-2B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

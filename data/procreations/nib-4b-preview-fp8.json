@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ProCreations/nib-4b-preview-FP8",
+  "slug": "procreations-nib-4b-preview-fp8",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/nib-4b-preview-FP8",
+  "created_at": "2026-11-08T21:56:32.000Z",
+  "updated_at": "2026-11-08T22:07:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "browser-agent",
+    "browser-use",
+    "computer-use",
+    "agent",
+    "tool-use",
+    "qwen3.5",
+    "fp8",
+    "conversational",
+    "en",
+    "base_model:ProCreations/nib-4b-preview",
+    "base_model:quantized:ProCreations/nib-4b-preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 5767939510,
+  "storage_human": "5.8 GB",
+  "base_model": "ProCreations/nib-4b-preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BetterWright 4B by ProCreations - LLM Explorer",
+      "url": "https://llm-explorer.com/model/ProCreations%2FBetterWright-4b,3NyB7G6fSR29ucbdzCum6c",
+      "snippet": "BetterWright 4B is an open-source 4b LLM by ProCreations. VRAM 8.2GB, 1024K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Google DeepMind Rolls Out Genie 4 World Model in Research Preview",
+      "url": "https://www.unite.ai/google-deepmind-rolls-out-genie-4-world-model-in-research-preview/",
+      "snippet": "Google DeepMind announced Genie 4, its new world model for real-time interactive simulation, on October 27, 2026, releasing it as a research preview to trusted testers. The announcement, authored by Raia Hadsell, Diego R..."
+    }
+  ]
+}

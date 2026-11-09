@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Ouissam12/absa-distilbert-ate",
+  "slug": "ouissam12-absa-distilbert-ate",
+  "author": "Ouissam12",
+  "url": "https://huggingface.co/Ouissam12/absa-distilbert-ate",
+  "created_at": "2026-11-08T22:11:03.000Z",
+  "updated_at": "2026-11-08T22:11:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "absa",
+    "aspect-based-sentiment-analysis",
+    "token-classification",
+    "en",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66365187,
+  "parameters_human": "66.4M",
+  "storage_bytes": 265473092,
+  "storage_human": "265 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ankitbansal811/ABSA-DistilBERT",
+      "url": "https://github.com/ankitbansal811/ABSA-DistilBERT",
+      "snippet": "Contribute to ankitbansal811/ABSA-DistilBERT development by creating an account on GitHub."
+    },
+    {
+      "title": "A Lightweight DistilBERT-Attention Model for Aspect-Based Sentiment ...",
+      "url": "https://jcmm.co.in/index.php/jcmm/article/view/653",
+      "snippet": "This paper introduces an efficient DistilBERT-Attention model for aspect-based sentiment analysis (ABSA), designed to balance classification accuracy against computational cost. Unlike general sentiment analysis, which assigns a single polarity to a complete review, ABSA identifies the product aspects discussed within individual sentences or clauses, such as design, quality, and price, and ..."
+    }
+  ]
+}

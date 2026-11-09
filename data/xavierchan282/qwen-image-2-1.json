@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "xavierchan282/Qwen-Image-2.1",
+  "slug": "xavierchan282-qwen-image-2-1",
+  "author": "xavierchan282",
+  "url": "https://huggingface.co/xavierchan282/Qwen-Image-2.1",
+  "created_at": "2026-11-09T00:03:00.000Z",
+  "updated_at": "2026-11-09T00:03:00.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122840162345,
+  "storage_human": "122.8 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen-Image-2.1 - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "snippet": "Text-to-Image model with 7B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen's most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    }
+  ]
+}

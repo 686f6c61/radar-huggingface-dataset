@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Guilherme34/S5-nano-abliterated-Q8_0-GGUF",
+  "slug": "guilherme34-s5-nano-abliterated-q8_0-gguf",
+  "author": "Guilherme34",
+  "url": "https://huggingface.co/Guilherme34/S5-nano-abliterated-Q8_0-GGUF",
+  "created_at": "2026-11-09T01:57:50.000Z",
+  "updated_at": "2026-11-09T01:58:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "pt",
+    "en",
+    "base_model:Guilherme34/S5-nano-abliterated",
+    "base_model:quantized:Guilherme34/S5-nano-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 4610580160,
+  "storage_human": "4.6 GB",
+  "base_model": "Guilherme34/S5-nano-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

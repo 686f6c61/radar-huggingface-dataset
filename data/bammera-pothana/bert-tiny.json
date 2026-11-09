@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "bammera-pothana/BERT-tiny",
+  "slug": "bammera-pothana-bert-tiny",
+  "author": "bammera-pothana",
+  "url": "https://huggingface.co/bammera-pothana/BERT-tiny",
+  "created_at": "2026-11-09T00:51:08.000Z",
+  "updated_at": "2026-11-09T00:51:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "te"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "pretraining",
+    "bert-tiny",
+    "telugu",
+    "masked-language-modeling",
+    "next-sentence-prediction",
+    "google-recipe",
+    "fill-mask",
+    "te",
+    "arxiv:1908.08962",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4624130,
+  "parameters_human": "4.6M",
+  "storage_bytes": 18501664,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Masked language modelling",
+      "dataset": "Held-out Telugu text (512-token examples)",
+      "metric": "Masked-LM loss (cross-entropy)",
+      "value": 4.535
+    },
+    {
+      "task": "Masked language modelling",
+      "dataset": "Held-out Telugu text (512-token examples)",
+      "metric": "Masked-LM perplexity",
+      "value": 93.2
+    },
+    {
+      "task": "Masked language modelling",
+      "dataset": "Held-out Telugu text (512-token examples)",
+      "metric": "Masked-LM top-1 accuracy",
+      "value": 0.302
+    },
+    {
+      "task": "Masked language modelling",
+      "dataset": "Held-out Telugu text (512-token examples)",
+      "metric": "Next-sentence-prediction accuracy",
+      "value": 0.918
+    }
+  ],
+  "sources": []
+}

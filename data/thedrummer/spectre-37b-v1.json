@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "TheDrummer/Spectre-37B-v1",
+  "slug": "thedrummer-spectre-37b-v1",
+  "author": "TheDrummer",
+  "url": "https://huggingface.co/TheDrummer/Spectre-37B-v1",
+  "created_at": "2026-11-06T16:06:11.000Z",
+  "updated_at": "2026-11-07T17:44:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 399,
+  "trending_score": 12,
+  "parameters": 37130699640,
+  "parameters_human": "37.13B",
+  "storage_bytes": 74293749314,
+  "storage_human": "74.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheDrummer/Spectre-37B-v1 · Hugging Face",
+      "url": "https://huggingface.co/TheDrummer/Spectre-37B-v1",
+      "snippet": "Machine learning model with 37B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "bartowski/TheDrummer_Spectre-37B-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/TheDrummer_Spectre-37B-v1-GGUF",
+      "snippet": "Multimodal This model supports image and audio input. Alongside the quants, this repo includes the multimodal projector files mmproj-TheDrummer_Spectre-37B-v1-bf16.gguf and mmproj-TheDrummer_Spectre-37B-v1-f16.gguf, which pair with any quant above."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "KeelCore",
   "url": "https://huggingface.co/KeelCore/KeelCore-750M",
   "created_at": "2026-10-30T05:15:11.000Z",
-  "updated_at": "2026-11-06T03:20:49.000Z",
+  "updated_at": "2026-11-08T17:15:27.000Z",
   "license": "keelcore-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 96,
+  "downloads_30d": 97,
   "trending_score": 0,
   "parameters": 751889408,
   "parameters_human": "751.9M",

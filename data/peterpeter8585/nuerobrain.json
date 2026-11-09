@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "peterpeter8585/nuerobrain",
+  "slug": "peterpeter8585-nuerobrain",
+  "author": "peterpeter8585",
+  "url": "https://huggingface.co/peterpeter8585/nuerobrain",
+  "created_at": "2026-11-09T03:08:25.000Z",
+  "updated_at": "2026-11-09T03:21:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "neurobrain",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12812289,
+  "parameters_human": "12.8M",
+  "storage_bytes": 102534344,
+  "storage_human": "103 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

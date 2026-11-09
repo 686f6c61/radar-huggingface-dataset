@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "litert-community/Mage-VL",
+  "slug": "litert-community-mage-vl",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/Mage-VL",
+  "created_at": "2026-08-03T03:55:48.000Z",
+  "updated_at": "2026-11-08T23:52:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "vlm",
+    "multimodal",
+    "vision-language",
+    "image-text-to-text",
+    "base_model:microsoft/Mage-VL",
+    "base_model:quantized:microsoft/Mage-VL",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 276,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16873460688,
+  "storage_human": "16.9 GB",
+  "base_model": "microsoft/Mage-VL",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/Mage-VL · Hugging Face",
+      "url": "https://huggingface.co/litert-community/Mage-VL",
+      "snippet": "LiteRT How to use litert-community/Mage-VL with LiteRT: ... Notebooks Google Colab Kaggle Mage-VL — LiteRT-LM (on-device Vision-Language Model) Performance (measured) Quality Run on iPhone / macOS Run on Android — Google AI Edge Gallery Conversion notes License"
+    },
+    {
+      "title": "litert-community/Mage-VL at main - Hugging Face",
+      "url": "https://huggingface.co/litert-community/Mage-VL/tree/main",
+      "snippet": "Instructions to use litert-community/Mage-VL with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LiteRT-LM How to use litert-community/Mage-VL with LiteRT-LM:"
+    }
+  ]
+}

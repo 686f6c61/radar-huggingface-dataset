@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "SinclairSchneider/german_politic_DeBERTa-v2-base",
+  "slug": "sinclairschneider-german_politic_deberta-v2-base",
+  "author": "SinclairSchneider",
+  "url": "https://huggingface.co/SinclairSchneider/german_politic_DeBERTa-v2-base",
+  "created_at": "2023-09-30T00:54:15.000Z",
+  "updated_at": "2026-11-09T01:43:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "politics",
+    "political-text-detection",
+    "german",
+    "news",
+    "binary-classification",
+    "de",
+    "dataset:SinclairSchneider/trainset_political_text_yes_no_german",
+    "arxiv:1910.09700",
+    "base_model:ikim-uk-essen/geberta-base",
+    "base_model:finetune:ikim-uk-essen/geberta-base",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 139213058,
+  "parameters_human": "139.2M",
+  "storage_bytes": 2228864978,
+  "storage_human": "2.2 GB",
+  "base_model": "ikim-uk-essen/geberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Political text detection",
+      "dataset": "trainset_political_text_yes_no_german (random 20% held-out split)",
+      "metric": "Accuracy",
+      "value": 0.9966
+    },
+    {
+      "task": "Political text detection",
+      "dataset": "trainset_political_text_yes_no_german (random 20% held-out split)",
+      "metric": "Weighted F1",
+      "value": 0.9966
+    },
+    {
+      "task": "Political text detection (out-of-domain)",
+      "dataset": "10kGNAD (derStandard.at), Inland + International vs. rest",
+      "metric": "ROC-AUC",
+      "value": 0.8655
+    },
+    {
+      "task": "Political text detection (out-of-domain)",
+      "dataset": "10kGNAD (derStandard.at), Inland + International vs. rest",
+      "metric": "Recall politic (threshold 0.5)",
+      "value": 0.998
+    },
+    {
+      "task": "Political text detection (out-of-domain)",
+      "dataset": "10kGNAD (derStandard.at), Inland + International vs. rest",
+      "metric": "Accuracy (threshold 0.5)",
+      "value": 0.415
+    },
+    {
+      "task": "Political text detection (out-of-domain)",
+      "dataset": "10kGNAD (derStandard.at), Inland + International vs. rest",
+      "metric": "F1 politic (threshold 0.5)",
+      "value": 0.4561
+    }
+  ],
+  "sources": []
+}

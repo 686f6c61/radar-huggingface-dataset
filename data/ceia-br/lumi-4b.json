@@ -33,9 +33,9 @@
     "base_model:finetune:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
     "region:us"
   ],
-  "likes": 50,
+  "likes": 51,
   "downloads_30d": 2398,
-  "trending_score": 19,
+  "trending_score": 20,
   "parameters": 3973556832,
   "parameters_human": "3.97B",
   "storage_bytes": 15911773269,

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Abiam77/smolvla_so101_cube_color",
+  "slug": "abiam77-smolvla_so101_cube_color",
+  "author": "Abiam77",
+  "url": "https://huggingface.co/Abiam77/smolvla_so101_cube_color",
+  "created_at": "2026-11-09T01:49:02.000Z",
+  "updated_at": "2026-11-09T01:49:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:Abiam77/so101_cube_color",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906727648,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abiam77/so101_cube_color · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Abiam77/so101_cube_color",
+      "snippet": "Dataset with 26.8k rows (Tabular, Time-series, Video). Explore, preview and download it on Hugging Face."
+    },
+    {
+      "title": "addisonhammer/smolvla_so101_pink_cube · Hugging Face",
+      "url": "https://huggingface.co/addisonhammer/smolvla_so101_pink_cube",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

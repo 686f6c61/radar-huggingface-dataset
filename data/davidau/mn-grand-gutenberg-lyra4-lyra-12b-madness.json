@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "DavidAU/MN-GRAND-Gutenberg-Lyra4-Lyra-12B-MADNESS",
+  "slug": "davidau-mn-grand-gutenberg-lyra4-lyra-12b-madness",
+  "author": "DavidAU",
+  "url": "https://huggingface.co/DavidAU/MN-GRAND-Gutenberg-Lyra4-Lyra-12B-MADNESS",
+  "created_at": "2024-10-11T02:30:32.000Z",
+  "updated_at": "2026-11-09T03:50:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 24495607104,
+  "storage_human": "24.5 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

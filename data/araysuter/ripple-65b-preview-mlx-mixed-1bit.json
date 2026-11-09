@@ -5,7 +5,7 @@
   "author": "araysuter",
   "url": "https://huggingface.co/araysuter/Ripple-65B-Preview-MLX-mixed-1bit",
   "created_at": "2026-11-05T00:25:26.000Z",
-  "updated_at": "2026-11-05T00:45:40.000Z",
+  "updated_at": "2026-11-08T20:09:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

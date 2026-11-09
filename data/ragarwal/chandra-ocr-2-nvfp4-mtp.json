@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "ragarwal/chandra-ocr-2-nvfp4-mtp",
+  "slug": "ragarwal-chandra-ocr-2-nvfp4-mtp",
+  "author": "ragarwal",
+  "url": "https://huggingface.co/ragarwal/chandra-ocr-2-nvfp4-mtp",
+  "created_at": "2026-11-09T00:50:20.000Z",
+  "updated_at": "2026-11-09T01:04:40.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "ocr",
+    "nvfp4",
+    "modelopt",
+    "speculative-decoding",
+    "mtp",
+    "base_model:datalab-to/chandra-ocr-2",
+    "base_model:quantized:datalab-to/chandra-ocr-2",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5295564288,
+  "parameters_human": "5.30B",
+  "storage_bytes": 6055207443,
+  "storage_human": "6.1 GB",
+  "base_model": "datalab-to/chandra-ocr-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prithivMLmods/chandra-ocr-2-NVFP4-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/chandra-ocr-2-NVFP4-GGUF/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "prithivMLmods/chandra-ocr-2-NVFP4-GGUF — Downloads, Growth & Stats",
+      "url": "https://openmodelstats.com/models/prithivmlmods/chandra-ocr-2-nvfp4-gguf",
+      "snippet": "chandra-ocr-2-NVFP4-GGUF by prithivMLmods: 372 all-time downloads, 372 in the last 30 days, 1 likes. A image text to text model. Daily download history, growth trends and ranking position, tracked and updated by OpenModelStats."
+    }
+  ]
+}

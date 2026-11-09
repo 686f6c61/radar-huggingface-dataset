@@ -5,7 +5,7 @@
   "author": "angelgodbrokenns",
   "url": "https://huggingface.co/angelgodbrokenns/MintGPT-300M",
   "created_at": "2026-11-08T16:09:42.000Z",
-  "updated_at": "2026-11-08T16:28:02.000Z",
+  "updated_at": "2026-11-08T18:53:50.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 294420480,
   "parameters_human": "294.4M",
-  "storage_bytes": 2355419184,
-  "storage_human": "2.4 GB",
+  "storage_bytes": 28265030208,
+  "storage_human": "28.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

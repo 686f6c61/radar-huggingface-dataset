@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "sakotiya/data266-team32-naruto-run1-lora-r4",
+  "slug": "sakotiya-data266-team32-naruto-run1-lora-r4",
+  "author": "sakotiya",
+  "url": "https://huggingface.co/sakotiya/data266-team32-naruto-run1-lora-r4",
+  "created_at": "2026-11-09T00:01:22.000Z",
+  "updated_at": "2026-11-09T00:01:25.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "stable-diffusion",
+    "lora",
+    "text-to-image",
+    "dataset:lambdalabs/naruto-blip-captions",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:adapter:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3226184,
+  "storage_human": "3 MB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

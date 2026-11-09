@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "KatterMobile/Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated-NVFP4-QAT",
+  "slug": "kattermobile-huihui-qwen3-8-27b-coder390-efficientthink-abliterated-nvfp4-qat",
+  "author": "KatterMobile",
+  "url": "https://huggingface.co/KatterMobile/Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated-NVFP4-QAT",
+  "created_at": "2026-11-08T21:48:30.000Z",
+  "updated_at": "2026-11-08T22:41:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "qwen3.8",
+    "nvfp4",
+    "qat",
+    "modelopt",
+    "blackwell",
+    "vllm",
+    "agentic",
+    "coding",
+    "reasoning",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "4-bit",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:nvidia/OpenCodeInstruct",
+    "arxiv:2504.04030",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16252952064,
+  "parameters_human": "16.25B",
+  "storage_bytes": 20613142571,
+  "storage_human": "20.6 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated-GGUF",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

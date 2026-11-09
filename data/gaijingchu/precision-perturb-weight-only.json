@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "gaijingchu/precision-perturb-weight-only",
+  "slug": "gaijingchu-precision-perturb-weight-only",
+  "author": "gaijingchu",
+  "url": "https://huggingface.co/gaijingchu/precision-perturb-weight-only",
+  "created_at": "2026-11-08T21:50:03.000Z",
+  "updated_at": "2026-11-08T21:55:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14137884430,
+  "storage_human": "14.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gaijingchu (Jingchu Gai) - Hugging Face",
+      "url": "https://huggingface.co/gaijingchu/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 23 days ago ... published a model 23 days ago"
+    },
+    {
+      "title": "Jingchu Gai gaijingchu - GitHub",
+      "url": "https://github.com/gaijingchu",
+      "snippet": "PhD Student in CMU Machine Learning Department. gaijingchu has 14 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

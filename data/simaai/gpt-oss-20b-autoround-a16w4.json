@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "simaai/gpt-oss-20b-Autoround-a16w4",
+  "slug": "simaai-gpt-oss-20b-autoround-a16w4",
+  "author": "simaai",
+  "url": "https://huggingface.co/simaai/gpt-oss-20b-Autoround-a16w4",
+  "created_at": "2026-10-20T05:20:35.000Z",
+  "updated_at": "2026-11-08T21:36:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llima",
+  "languages": [],
+  "tags": [
+    "llima",
+    "llm",
+    "generative_ai",
+    "embedded",
+    "sima",
+    "gpt-oss",
+    "moe",
+    "text-generation",
+    "base_model:unsloth/gpt-oss-20b-BF16",
+    "base_model:finetune:unsloth/gpt-oss-20b-BF16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26436002198,
+  "storage_human": "26.4 GB",
+  "base_model": "unsloth/gpt-oss-20b-BF16",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "florianvoss/gpt-oss-20b-Autoround-a16w4 · Hugging Face",
+      "url": "https://huggingface.co/florianvoss/gpt-oss-20b-Autoround-a16w4",
+      "snippet": "Overview Compiled GPT-OSS 20B mixture-of-experts model for SiMa.ai Modalix."
+    }
+  ]
+}

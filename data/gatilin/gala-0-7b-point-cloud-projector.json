@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "gatilin/gala-0.7b-point-cloud-projector",
+  "slug": "gatilin-gala-0-7b-point-cloud-projector",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/gala-0.7b-point-cloud-projector",
+  "created_at": "2026-11-09T01:50:12.000Z",
+  "updated_at": "2026-11-09T01:50:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "3d",
+    "point-cloud",
+    "multimodal",
+    "feature-extraction",
+    "base_model:ChuchengXiang/GALA-0.7B",
+    "base_model:finetune:ChuchengXiang/GALA-0.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 923200,
+  "parameters_human": "923200",
+  "storage_bytes": 3693280,
+  "storage_human": "4 MB",
+  "base_model": "ChuchengXiang/GALA-0.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How far is the nearest galaxy? | Science Questions",
+      "url": "https://www.thenakedscientists.com/articles/questions/how-far-nearest-galaxy",
+      "snippet": "Nov 27, 2005 · The nearest galaxy to our galaxy, the Milky Way, is called Andromeda. It's about 2 million light years away, and we …"
+    },
+    {
+      "title": "Are far-away galaxies light years distant still there?",
+      "url": "https://www.thenakedscientists.com/articles/questions/are-far-away-galaxies-light-years-distant-still-there",
+      "snippet": "Sep 10, 2006 · The next nearest galaxy to our own is the Andromeda galaxy and that's about 3 million light years away, so the light …"
+    }
+  ]
+}

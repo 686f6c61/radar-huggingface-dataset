@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "speakleash/Bielik-1.5B-v3.0-Instruct-GGUF",
+  "slug": "speakleash-bielik-1-5b-v3-0-instruct-gguf",
+  "author": "speakleash",
+  "url": "https://huggingface.co/speakleash/Bielik-1.5B-v3.0-Instruct-GGUF",
+  "created_at": "2025-05-03T14:35:20.000Z",
+  "updated_at": "2026-11-08T22:27:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "finetuned",
+    "text-generation",
+    "pl",
+    "arxiv:2505.02550",
+    "base_model:speakleash/Bielik-1.5B-v3.0-Instruct",
+    "base_model:quantized:speakleash/Bielik-1.5B-v3.0-Instruct",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 8,
+  "downloads_30d": 1760,
+  "trending_score": 0,
+  "parameters": 1596507648,
+  "parameters_human": "1.60B",
+  "storage_bytes": 9790155392,
+  "storage_human": "9.8 GB",
+  "base_model": "speakleash/Bielik-1.5B-v3.0-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "speakleash/Bielik-1.5B-v3.0-Instruct · Hugging Face",
+      "url": "https://huggingface.co/speakleash/Bielik-1.5B-v3.0-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "speakleash/Bielik-1.5B-v3 · Hugging Face",
+      "url": "https://huggingface.co/speakleash/Bielik-1.5B-v3",
+      "snippet": "Model Bielik-1.5B-v3 model training was conducted on the Helios Supercomputer at the ACK Cyfronet AGH, utilizing 256 NVidia GH200 cards. The training dataset was composed of Polish texts collected and made available through the SpeakLeash project, as well as a subset of CommonCrawl data. We used 292 billion tokens for 1.2 epochs of training."
+    }
+  ]
+}

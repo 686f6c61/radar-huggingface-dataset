@@ -5,14 +5,19 @@
   "author": "SergeAlhalbi",
   "url": "https://huggingface.co/SergeAlhalbi/black-stressball-policy",
   "created_at": "2026-11-08T06:47:57.000Z",
-  "updated_at": "2026-11-08T12:45:45.000Z",
+  "updated_at": "2026-11-08T14:54:09.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
   "library": "lerobot",
   "languages": [],
   "tags": [
+    "lerobot",
     "safetensors",
+    "act",
+    "robotics",
+    "dataset:SergeAlhalbi/black-stressball-tutorial_20261107_222510",
+    "arxiv:2304.13705",
     "region:us"
   ],
   "likes": 0,
@@ -20,8 +25,8 @@
   "trending_score": 0,
   "parameters": 51668614,
   "parameters_human": "51.7M",
-  "storage_bytes": 9293010292,
-  "storage_human": "9.3 GB",
+  "storage_bytes": 12390675952,
+  "storage_human": "12.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

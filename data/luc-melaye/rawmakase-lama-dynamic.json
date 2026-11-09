@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "luc-melaye/rawmakase-lama-dynamic",
+  "slug": "luc-melaye-rawmakase-lama-dynamic",
+  "author": "luc-melaye",
+  "url": "https://huggingface.co/luc-melaye/rawmakase-lama-dynamic",
+  "created_at": "2026-11-08T23:14:34.000Z",
+  "updated_at": "2026-11-08T23:19:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 206037952,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - pch/rawmakase: Free, fast, Lightroom-compatible RAW photo ...",
+      "url": "https://github.com/pch/rawmakase",
+      "snippet": "📸 Free, fast, Lightroom-compatible RAW photo editor for Linux, macOS, and Windows. - pch/rawmakase"
+    },
+    {
+      "title": "RAWmakase · RAW photo editor for macOS, Linux and Windows",
+      "url": "https://rawmakase.com/",
+      "snippet": "RAWmakase /raw·muh·KAH·say/, RAW + omakase The Lightroom-compatible RAW editor. Free, open source and fast. RAWmakase is a free RAW photo editor for macOS, Linux and Windows, with no subscription and no lock-in. Bring your Lightroom Classic catalog, presets and camera profiles, keep editing with the Library and Develop controls you already know, and let the GPU keep up with you."
+    }
+  ]
+}

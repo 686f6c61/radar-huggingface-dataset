@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "FatimahEmadEldin/revocation-aware-executor-qwen3.5-4b",
+  "slug": "fatimahemadeldin-revocation-aware-executor-qwen3-5-4b",
+  "author": "FatimahEmadEldin",
+  "url": "https://huggingface.co/FatimahEmadEldin/revocation-aware-executor-qwen3.5-4b",
+  "created_at": "2026-11-08T20:40:57.000Z",
+  "updated_at": "2026-11-08T21:07:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "ai-safety",
+    "multi-agent",
+    "revocation",
+    "residual-influence",
+    "agent-security",
+    "tool-use",
+    "lora",
+    "sft",
+    "autoscientist",
+    "qwen3.5",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21233664,
+  "parameters_human": "21.2M",
+  "storage_bytes": 147446501,
+  "storage_human": "147 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Executor residue after agent revocation (Revoked but Not Forgotten testbed)",
+      "dataset": "revoked-not-forgotten fresh seeds 48-95",
+      "metric": "Residue, revoked + notice (base 79%)",
+      "value": 12.5
+    },
+    {
+      "task": "Executor residue after agent revocation (Revoked but Not Forgotten testbed)",
+      "dataset": "revoked-not-forgotten fresh seeds 48-95",
+      "metric": "Residue, revoked + lineage marks (base 71%)",
+      "value": 0
+    },
+    {
+      "task": "Executor residue after agent revocation (Revoked but Not Forgotten testbed)",
+      "dataset": "revoked-not-forgotten fresh seeds 48-95",
+      "metric": "Residue, revoked credentials only (base 65%)",
+      "value": 31.3
+    },
+    {
+      "task": "Executor residue after agent revocation (Revoked but Not Forgotten testbed)",
+      "dataset": "revoked-not-forgotten fresh seeds 48-95",
+      "metric": "Residue, compromised and not revoked (base 75%)",
+      "value": 93.8
+    },
+    {
+      "task": "Executor residue after agent revocation (Revoked but Not Forgotten testbed)",
+      "dataset": "revoked-not-forgotten fresh seeds 48-95",
+      "metric": "Task success, false-alarm condition (base 67%)",
+      "value": 93.8
+    }
+  ],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "agriggio",
   "url": "https://huggingface.co/agriggio/smart-onnx-models",
   "created_at": "2026-11-07T15:50:04.000Z",
-  "updated_at": "2026-11-08T14:21:54.000Z",
+  "updated_at": "2026-11-08T16:18:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1714403463,
-  "storage_human": "1.7 GB",
+  "storage_bytes": 1782118344,
+  "storage_human": "1.8 GB",
   "base_model": null,
   "formats": [
     "onnx"

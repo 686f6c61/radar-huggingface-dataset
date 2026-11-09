@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "bobzhou0/Platonic-Engram-HNet-v2",
+  "slug": "bobzhou0-platonic-engram-hnet-v2",
+  "author": "bobzhou0",
+  "url": "https://huggingface.co/bobzhou0/Platonic-Engram-HNet-v2",
+  "created_at": "2026-11-09T04:30:23.000Z",
+  "updated_at": "2026-11-09T04:40:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "generic",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "generic",
+    "mteb",
+    "tinyml",
+    "esp32",
+    "byte-level",
+    "cross-lingual",
+    "int8",
+    "sentence-similarity",
+    "xteink",
+    "x4-pro",
+    "papyrix",
+    "e-reader",
+    "e-ink",
+    "microcontroller-llm",
+    "zh",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7815166,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "MTEB STSBenchmark",
+      "metric": null,
+      "value": 32.8
+    },
+    {
+      "task": null,
+      "dataset": "MTEB STSB (zh)",
+      "metric": null,
+      "value": 49
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BQ",
+      "metric": null,
+      "value": 22.8
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ATEC",
+      "metric": null,
+      "value": 10.5
+    },
+    {
+      "task": null,
+      "dataset": "PAWS-X (zh)",
+      "metric": null,
+      "value": 8.2
+    }
+  ],
+  "sources": []
+}

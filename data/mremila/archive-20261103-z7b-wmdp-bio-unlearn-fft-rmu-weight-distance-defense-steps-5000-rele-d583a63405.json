@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mremila/archive-20261103-z7b-wmdp-bio-unlearn-fft-rmu-weight-distance-defense-steps-5000-rele-d583a63405",
+  "slug": "mremila-archive-20261103-z7b-wmdp-bio-unlearn-fft-rmu-weight-distance-defense-steps-5000-rele-d583a63405",
+  "author": "mremila",
+  "url": "https://huggingface.co/mremila/archive-20261103-z7b-wmdp-bio-unlearn-fft-rmu-weight-distance-defense-steps-5000-rele-d583a63405",
+  "created_at": "2026-11-08T23:27:49.000Z",
+  "updated_at": "2026-11-08T23:52:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "generated_from_trainer",
+    "conversational",
+    "dataset:cais/wmdp-bio-forget-corpus",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 101384495009,
+  "storage_human": "101.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

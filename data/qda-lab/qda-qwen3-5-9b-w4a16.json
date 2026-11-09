@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "qda-lab/QDA-Qwen3.5-9B-W4A16",
+  "slug": "qda-lab-qda-qwen3-5-9b-w4a16",
+  "author": "qda-lab",
+  "url": "https://huggingface.co/qda-lab/QDA-Qwen3.5-9B-W4A16",
+  "created_at": "2026-11-04T21:03:47.000Z",
+  "updated_at": "2026-11-09T00:48:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "qda",
+    "quantization",
+    "compressed-tensors",
+    "w4a16",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 9085886574,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qda-lab/QDA-Qwen3.5-9B-W4A8 · Hugging Face",
+      "url": "https://huggingface.co/qda-lab/QDA-Qwen3.5-9B-W4A8",
+      "snippet": "QDA Qwen3.5-9B W4A8 W4A8 checkpoint of Qwen/Qwen3.5-9B found by a QDA search (\"QDA: Closed-Loop Quantization Design with LLM Agents\", MLSys 2027 submission). compressed-tensors format; loads in vLLM as is. These are the exact files the paper evaluated (search r-9995ede2, hand-in h8)."
+    },
+    {
+      "title": "RedHatAI/Qwen3.5-9B-quantized.w4a16 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Qwen3.5-9B-quantized.w4a16",
+      "snippet": "This model was evaluated on GSM8k-Platinum, MMLU-Pro, IFEval, Math 500, AIME 2025, and GPQA Diamond using lm-evaluation-harness and lighteval, with inference served via vLLM."
+    }
+  ]
+}

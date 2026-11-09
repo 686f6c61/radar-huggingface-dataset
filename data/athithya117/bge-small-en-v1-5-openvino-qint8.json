@@ -5,7 +5,7 @@
   "author": "Athithya117",
   "url": "https://huggingface.co/Athithya117/bge-small-en-v1.5-openvino-qint8",
   "created_at": "2026-11-08T08:06:59.000Z",
-  "updated_at": "2026-11-08T08:09:10.000Z",
+  "updated_at": "2026-11-08T13:22:29.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",

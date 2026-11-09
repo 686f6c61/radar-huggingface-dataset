@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MatterWaveAI/llama2c-gok",
+  "slug": "matterwaveai-llama2c-gok",
+  "author": "MatterWaveAI",
+  "url": "https://huggingface.co/MatterWaveAI/llama2c-gok",
+  "created_at": "2026-11-09T02:37:05.000Z",
+  "updated_at": "2026-11-09T02:43:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama2.c",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama2.c",
+    "matterwave",
+    "karpathy",
+    "knowledge-graph",
+    "curriculum-learning",
+    "multi-hop-reasoning",
+    "text-generation",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "GoK Factual & Multi-Hop Compositional Reasoning",
+      "dataset": "MatterWave Graph of Knowledge (GoK)",
+      "metric": "1-Hop Factual Recall@1 (Arm D)",
+      "value": 98.6
+    },
+    {
+      "task": "GoK Factual & Multi-Hop Compositional Reasoning",
+      "dataset": "MatterWave Graph of Knowledge (GoK)",
+      "metric": "2-Hop Compositional Recall@1 (Arm D)",
+      "value": 96.8
+    },
+    {
+      "task": "GoK Factual & Multi-Hop Compositional Reasoning",
+      "dataset": "MatterWave Graph of Knowledge (GoK)",
+      "metric": "Prerequisite DAG Consistency (Arm D)",
+      "value": 100
+    },
+    {
+      "task": "GoK Factual & Multi-Hop Compositional Reasoning",
+      "dataset": "MatterWave Graph of Knowledge (GoK)",
+      "metric": "Linear CKA Alignment (Arm D)",
+      "value": 0.928
+    }
+  ],
+  "sources": []
+}

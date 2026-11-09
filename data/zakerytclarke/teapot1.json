@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "zakerytclarke/teapot1",
+  "slug": "zakerytclarke-teapot1",
+  "author": "zakerytclarke",
+  "url": "https://huggingface.co/zakerytclarke/teapot1",
+  "created_at": "2026-11-08T20:58:13.000Z",
+  "updated_at": "2026-11-08T21:11:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "teapot",
+    "causal-lm",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1638458480,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - zakerytclarke/teapot",
+      "url": "https://github.com/zakerytclarke/teapot",
+      "snippet": "Teapot is an open-source small language model (~800 million parameters) fine-tuned on synthetic data and optimized to run locally on resource-constrained devices such as smartphones and CPUs. Teapot is trained to only answer using context from documents, reducing hallucinations. Teapot can perform a ..."
+    },
+    {
+      "title": "zakerytclarke/instruct-teapot · Hugging Face",
+      "url": "https://huggingface.co/zakerytclarke/instruct-teapot",
+      "snippet": "zakerytclarke / instruct-teapot like 0 Model card FilesFiles and versions Community No model card"
+    }
+  ]
+}

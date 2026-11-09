@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "AdaptiveChunking/ali_mem-mixed-nosplit_s0",
+  "slug": "adaptivechunking-ali_mem-mixed-nosplit_s0",
+  "author": "AdaptiveChunking",
+  "url": "https://huggingface.co/AdaptiveChunking/ali_mem-mixed-nosplit_s0",
+  "created_at": "2026-11-08T22:33:01.000Z",
+  "updated_at": "2026-11-08T23:52:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "dynamic-chunking",
+    "tokenization",
+    "hnet",
+    "byte-level",
+    "beetle-hnet",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22785088,
+  "parameters_human": "22.8M",
+  "storage_bytes": 9491716793,
+  "storage_human": "9.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AdaptiveChunking (AdaptiveChunking) - Hugging Face",
+      "url": "https://huggingface.co/AdaptiveChunking/models",
+      "snippet": "Org profile for AdaptiveChunking on Hugging Face, the AI community building the future."
+    }
+  ]
+}

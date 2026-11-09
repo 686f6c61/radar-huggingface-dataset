@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "kkakkkka/pi05-tomato",
+  "slug": "kkakkkka-pi05-tomato",
+  "author": "kkakkkka",
+  "url": "https://huggingface.co/kkakkkka/pi05-tomato",
+  "created_at": "2026-11-06T07:36:47.000Z",
+  "updated_at": "2026-11-09T01:26:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49765322914,
+  "storage_human": "49.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

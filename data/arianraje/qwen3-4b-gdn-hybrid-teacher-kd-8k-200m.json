@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "arianraje/qwen3-4b-gdn-hybrid-teacher-kd-8k-200m",
+  "slug": "arianraje-qwen3-4b-gdn-hybrid-teacher-kd-8k-200m",
+  "author": "arianraje",
+  "url": "https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-teacher-kd-8k-200m",
+  "created_at": "2026-11-08T21:33:50.000Z",
+  "updated_at": "2026-11-08T21:35:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_next",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4546819904,
+  "parameters_human": "4.55B",
+  "storage_bytes": 9285033603,
+  "storage_human": "9.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3-4b-gdn-hybrid-teacher-kd-4k-400m - Hugging Face",
+      "url": "https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-teacher-kd-4k-400m",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-4B GDN hybrid: dataset-KD, 8k, 400M - Hugging Face",
+      "url": "https://huggingface.co/arianraje/qwen3-4b-gdn-hybrid-dataset-kd-8k-400m",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

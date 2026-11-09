@@ -5,7 +5,7 @@
   "author": "BananaMind",
   "url": "https://huggingface.co/BananaMind/BananaMind-2.5-Pro",
   "created_at": "2026-11-08T19:49:56.000Z",
-  "updated_at": "2026-11-08T19:56:17.000Z",
+  "updated_at": "2026-11-08T20:19:57.000Z",
   "license": "bananamind-community-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -44,7 +44,7 @@
     "license:other",
     "region:us"
   ],
-  "likes": 5,
+  "likes": 8,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 138971520,

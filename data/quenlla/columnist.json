@@ -5,7 +5,7 @@
   "author": "Quenlla",
   "url": "https://huggingface.co/Quenlla/columnist",
   "created_at": "2026-11-08T19:49:52.000Z",
-  "updated_at": "2026-11-08T19:53:45.000Z",
+  "updated_at": "2026-11-08T21:45:12.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -17,6 +17,8 @@
     "osu-mania",
     "rhythm-game",
     "foundation-model",
+    "chart-similarity",
+    "difficulty-estimation",
     "license:cc-by-4.0",
     "region:us"
   ],

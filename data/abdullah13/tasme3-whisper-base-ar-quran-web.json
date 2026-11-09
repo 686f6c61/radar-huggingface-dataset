@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "abdullah13/tasme3-whisper-base-ar-quran-web",
+  "slug": "abdullah13-tasme3-whisper-base-ar-quran-web",
+  "author": "abdullah13",
+  "url": "https://huggingface.co/abdullah13/tasme3-whisper-base-ar-quran-web",
+  "created_at": "2026-11-09T04:00:17.000Z",
+  "updated_at": "2026-11-09T04:00:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "quran",
+    "tasme3",
+    "ar",
+    "base_model:tarteel-ai/whisper-base-ar-quran",
+    "base_model:quantized:tarteel-ai/whisper-base-ar-quran",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 130314626,
+  "storage_human": "130 MB",
+  "base_model": "tarteel-ai/whisper-base-ar-quran",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

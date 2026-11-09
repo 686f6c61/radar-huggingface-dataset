@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ProCreations/nib-4b-preview",
+  "slug": "procreations-nib-4b-preview",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/nib-4b-preview",
+  "created_at": "2026-11-08T21:28:40.000Z",
+  "updated_at": "2026-11-08T22:07:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "browser-agent",
+    "browser-use",
+    "computer-use",
+    "agent",
+    "tool-use",
+    "qwen3.5",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9333167809,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    },
+    {
+      "title": "ProCreations (SSH) - Hugging Face",
+      "url": "https://huggingface.co/ProCreations",
+      "snippet": "AI & ML interests ... Recent Activity updated a collection 23 minutes ago ... liked a model 23 minutes ago"
+    }
+  ]
+}

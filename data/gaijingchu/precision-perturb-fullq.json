@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "gaijingchu/precision-perturb-fullq",
+  "slug": "gaijingchu-precision-perturb-fullq",
+  "author": "gaijingchu",
+  "url": "https://huggingface.co/gaijingchu/precision-perturb-fullq",
+  "created_at": "2026-11-08T21:55:44.000Z",
+  "updated_at": "2026-11-08T22:01:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 328788010,
+  "storage_human": "329 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jingchu Gai",
+      "url": "https://gaijingchu.github.io/",
+      "snippet": "Jingchu Gai — Ph.D. student in Machine Learning at Carnegie Mellon University. Building reliable foundation models: model architecture and training algorithms for stability and creativity. Previously graph learning and RL theory."
+    },
+    {
+      "title": "gaijingchu (Jingchu Gai) - Hugging Face",
+      "url": "https://huggingface.co/gaijingchu/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 23 days ago ... published a model 23 days ago"
+    }
+  ]
+}

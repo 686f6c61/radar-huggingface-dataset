@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "simota1987/NitroFusion2-Q4_0-GGUF",
+  "slug": "simota1987-nitrofusion2-q4_0-gguf",
+  "author": "simota1987",
+  "url": "https://huggingface.co/simota1987/NitroFusion2-Q4_0-GGUF",
+  "created_at": "2026-11-09T02:19:56.000Z",
+  "updated_at": "2026-11-09T02:28:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "z-image",
+    "nitrofusion",
+    "stable-diffusion.cpp",
+    "text-to-image",
+    "base_model:ChenDY/NitroFusion2",
+    "base_model:quantized:ChenDY/NitroFusion2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6154908736,
+  "parameters_human": "6.15B",
+  "storage_bytes": 3683371040,
+  "storage_human": "3.7 GB",
+  "base_model": "ChenDY/NitroFusion2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

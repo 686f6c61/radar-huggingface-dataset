@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "smart-force/xandra-training-state",
+  "slug": "smart-force-xandra-training-state",
+  "author": "smart-force",
+  "url": "https://huggingface.co/smart-force/xandra-training-state",
+  "created_at": "2026-11-06T19:41:35.000Z",
+  "updated_at": "2026-11-08T21:55:17.000Z",
+  "license": "xhnsl",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "arabic",
+    "sovereign-ai",
+    "ai-architecture",
+    "ar",
+    "en",
+    "ru",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1940158714,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ukraine opens access to battlefield data for AI model training",
+      "url": "https://thedefender.media/en/2026/03/ai-combat-training/",
+      "snippet": "Ukraine is granting access to battlefield data for the training of AI models, Defence Minister Mykhailo Fedorov announced today. A recently adopted government resolution allows partners to train artificial intelligence models for unmanned systems using authentic data gathered from active combat operations."
+    },
+    {
+      "title": "Smarter Tools, Smarter Force | National Guard Association of the United ...",
+      "url": "https://www.ngaus.org/magazine/smarter-tools-smarter-force",
+      "snippet": "As AI tools roll out military-wide, states are training Guardsmen how to employ the technology to everyday tasks."
+    }
+  ]
+}

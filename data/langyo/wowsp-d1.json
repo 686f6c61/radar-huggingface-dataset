@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "langyo/wowsp-d1",
+  "slug": "langyo-wowsp-d1",
+  "author": "langyo",
+  "url": "https://huggingface.co/langyo/wowsp-d1",
+  "created_at": "2026-11-09T02:41:49.000Z",
+  "updated_at": "2026-11-09T02:41:58.000Z",
+  "license": "synthetic-source-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "world-of-warships",
+    "decision-support",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8332631,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

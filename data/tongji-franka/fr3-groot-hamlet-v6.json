@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "tongji-franka/fr3-groot-hamlet-v6",
+  "slug": "tongji-franka-fr3-groot-hamlet-v6",
+  "author": "tongji-franka",
+  "url": "https://huggingface.co/tongji-franka/fr3-groot-hamlet-v6",
+  "created_at": "2026-11-09T03:37:54.000Z",
+  "updated_at": "2026-11-09T03:59:27.000Z",
+  "license": "nvidia-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "vision-language-action",
+    "gr00t",
+    "hamlet",
+    "franka",
+    "fr3",
+    "hockey",
+    "safetensors",
+    "zh",
+    "base_model:nvidia/GR00T-N1.6-3B",
+    "base_model:finetune:nvidia/GR00T-N1.6-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6211512383,
+  "storage_human": "6.2 GB",
+  "base_model": "nvidia/GR00T-N1.6-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

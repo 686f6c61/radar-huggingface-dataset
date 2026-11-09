@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "vanikae/zippy-kiddo-ranker",
+  "slug": "vanikae-zippy-kiddo-ranker",
+  "author": "vanikae",
+  "url": "https://huggingface.co/vanikae/zippy-kiddo-ranker",
+  "created_at": "2026-10-30T03:32:13.000Z",
+  "updated_at": "2026-11-08T21:38:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vanikae/zippy-kiddo-ranker · Hugging Face",
+      "url": "https://huggingface.co/vanikae/zippy-kiddo-ranker",
+      "snippet": "Zippy Kiddo Catalogue Ranker A compact TF-IDF retrieval model trained on the reviewed activity catalogue. Hard age, time, materials, setting, and supervision rules remain outside the model and authoritative. Downloads last month -"
+    },
+    {
+      "title": "vanikae (Vanika E) - Hugging Face",
+      "url": "https://huggingface.co/vanikae",
+      "snippet": "Recent Activity updated a model2 days ago vanikae/zippy-kiddo-ranker published a model2 days ago vanikae/zippy-kiddo-ranker View all activity"
+    }
+  ]
+}

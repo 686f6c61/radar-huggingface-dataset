@@ -5,7 +5,7 @@
   "author": "Nasochec",
   "url": "https://huggingface.co/Nasochec/YOLO-1D_ECG_LUDB",
   "created_at": "2026-10-28T15:16:32.000Z",
-  "updated_at": "2026-11-06T18:10:10.000Z",
+  "updated_at": "2026-11-08T17:39:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",

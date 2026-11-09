@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "SchmiedmayerLab/TimeCap",
+  "slug": "schmiedmayerlab-timecap",
+  "author": "SchmiedmayerLab",
+  "url": "https://huggingface.co/SchmiedmayerLab/TimeCap",
+  "created_at": "2026-11-08T15:33:34.000Z",
+  "updated_at": "2026-11-08T22:29:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 973153548,
+  "storage_human": "973 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SchmiedmayerLab/TimeCAP: Dataset-agnostic pipeline turning ...",
+      "url": "https://github.com/SchmiedmayerLab/TimeCAP",
+      "snippet": "Dataset-agnostic pipeline that turns raw multi-channel sensor recordings into language-model-ready captions. The current reference implementation targets the MyHeartCounts (MHC) wearable dataset at daily and weekly resolution."
+    },
+    {
+      "title": "TimeCap: A Scalable Open-Source Pipeline for Captioning Wearable Health ...",
+      "url": "https://arxiv.org/pdf/2610.21274",
+      "snippet": "TIMECAP addresses both by replacing language-model generation with deterministic extractors operating directly on the signal, and by exposing a channel-schema abstraction so that the pipeline applies to any multivariate time-series data through channel definitions alone, rather than pipeline redesign. Figure 1 provides a visual overview."
+    }
+  ]
+}

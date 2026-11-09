@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Caizus/rwkv7-ashare-1min-quantile-21m",
+  "slug": "caizus-rwkv7-ashare-1min-quantile-21m",
+  "author": "Caizus",
+  "url": "https://huggingface.co/Caizus/rwkv7-ashare-1min-quantile-21m",
+  "created_at": "2026-11-09T03:49:43.000Z",
+  "updated_at": "2026-11-09T04:05:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "rwkv7_forecast",
+    "feature-extraction",
+    "rwkv7",
+    "time-series",
+    "quantile-regression",
+    "forecasting",
+    "finance",
+    "time-series-forecasting",
+    "custom_code",
+    "zh",
+    "en",
+    "dataset:neigezhu/china-a-share-1min-ohlcv",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21017102,
+  "parameters_human": "21.0M",
+  "storage_bytes": 42112872,
+  "storage_human": "42 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -4,8 +4,8 @@
   "slug": "thomasinalistair1794-myawesomemodel-testrepo",
   "author": "ThomasinAlistair1794",
   "url": "https://huggingface.co/ThomasinAlistair1794/MyAwesomeModel-TestRepo",
-  "created_at": "2026-11-06T04:25:52.000Z",
-  "updated_at": "2026-11-06T04:26:03.000Z",
+  "created_at": "2026-11-08T14:24:50.000Z",
+  "updated_at": "2026-11-08T14:24:57.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-11-08T14:05:58.925Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "lanshi/prenatal-case-dora",
+  "slug": "lanshi-prenatal-case-dora",
+  "author": "lanshi",
+  "url": "https://huggingface.co/lanshi/prenatal-case-dora",
+  "created_at": "2026-11-09T02:33:39.000Z",
+  "updated_at": "2026-11-09T02:50:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "pubmedbert",
+    "dora",
+    "case-report",
+    "case-series",
+    "prenatal-genetics",
+    "biomedical",
+    "text-classification",
+    "en",
+    "base_model:NeuML/pubmedbert-base-embeddings",
+    "base_model:finetune:NeuML/pubmedbert-base-embeddings",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110093570,
+  "parameters_human": "110.1M",
+  "storage_bytes": 440413832,
+  "storage_human": "440 MB",
+  "base_model": "NeuML/pubmedbert-base-embeddings",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

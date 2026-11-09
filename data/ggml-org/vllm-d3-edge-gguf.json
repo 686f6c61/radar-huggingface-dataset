@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "ggml-org/vllm-d3-edge-GGUF",
+  "slug": "ggml-org-vllm-d3-edge-gguf",
+  "author": "ggml-org",
+  "url": "https://huggingface.co/ggml-org/vllm-d3-edge-GGUF",
+  "created_at": "2026-10-12T13:22:59.000Z",
+  "updated_at": "2026-11-08T21:07:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "decision-model",
+    "image-text-to-text",
+    "base_model:vllm-sr/d3-edge",
+    "base_model:quantized:vllm-sr/d3-edge",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 7,
+  "downloads_30d": 4588,
+  "trending_score": 0,
+  "parameters": 748008384,
+  "parameters_human": "748.0M",
+  "storage_bytes": 7263940416,
+  "storage_human": "7.3 GB",
+  "base_model": "vllm-sr/d3-edge",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ggml-org/vllm-d3-edge-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ggml-org/vllm-d3-edge-GGUF",
+      "snippet": "Instructions to use ggml-org/vllm-d3-edge-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use ggml-org/vllm-d3-edge-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "ggml-org/vllm-d3-edge-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/ggml-org/vllm-d3-edge-GGUF/tree/main",
+      "snippet": "Instructions to use ggml-org/vllm-d3-edge-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp Install (macOS, Linux)"
+    }
+  ]
+}

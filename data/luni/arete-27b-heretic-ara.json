@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Luni/Arete-27B-Heretic-ARA",
+  "slug": "luni-arete-27b-heretic-ara",
+  "author": "Luni",
+  "url": "https://huggingface.co/Luni/Arete-27B-Heretic-ARA",
+  "created_at": "2026-11-08T02:21:19.000Z",
+  "updated_at": "2026-11-08T22:17:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "conversational",
+    "base_model:NousResearch/Arete-27B",
+    "base_model:finetune:NousResearch/Arete-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54733596093,
+  "storage_human": "54.7 GB",
+  "base_model": "NousResearch/Arete-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lunii | Conteuses et livres audio pour 0-14 ans",
+      "url": "https://lunii.com/fr-fr",
+      "snippet": "Avec les conteuses Ma 1ère Lunii, Ma Fabrique à Histoires & FLAM, Lunii réveille l'imaginaire et développe la créativité des enfants …"
+    },
+    {
+      "title": "Nous Research Releases Arete-27B that Cuts Qwen3.8-27B Propaganda From ...",
+      "url": "https://www.marktechpost.com/2026/11/07/nous-research-arete-27b-qwen3-8-27b-propaganda-fine-tune/",
+      "snippet": "Nous team states that it saw refusals, deflections and CCP-framed answers on sensitive topics in the base model. It picked Qwen3.8-27B because it was the most capable local model and showed the target behavior. How was Arete-27B trained? The teacher was Inkling, an open model from Thinking Machines."
+    },
+    {
+      "title": "Boutique Officielle | Lunii",
+      "url": "https://lunii.com/fr-fr/boutique",
+      "snippet": "Explorez l'univers de Lunii et découvrez Ma Fabrique à Histoires, FLAM, leurs accessoires et plus de 500 livres audio spécialement …"
+    },
+    {
+      "title": "Arete-27B — Model Drop — Dropday.ai",
+      "url": "https://dropday.ai/model-drops/drop-nousresearch-arete27b",
+      "snippet": "Arete-27B is a supervised fine-tune of Alibaba's Qwen3.8-27B using 52.8M tokens over two epochs at 64k context. It was trained with no RL or architectural changes to reinforce Western values across seven categories including freedom of expression, democracy, and privacy. The model maintains near-identical general capability scores on Hermes Bench while shifting factual recall and reducing ..."
+    },
+    {
+      "title": "Lunii : tous les produits de la marque Lunii (Enfant, Jouet ... - Fnac",
+      "url": "https://www.fnac.com/Lunii/m367853/w-4",
+      "snippet": "Retrouvez tous les produits Lunii au meilleur prix à la FNAC. En quelques clics, achetez en ligne ou commandez dans un magasin …"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Shubhronyu/LFPformer-large-ManipDistc-35k",
+  "slug": "shubhronyu-lfpformer-large-manipdistc-35k",
+  "author": "Shubhronyu",
+  "url": "https://huggingface.co/Shubhronyu/LFPformer-large-ManipDistc-35k",
+  "created_at": "2026-11-08T21:41:07.000Z",
+  "updated_at": "2026-11-08T21:41:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "pretraining",
+    "lfpformer",
+    "neuroscience",
+    "local-field-potential",
+    "representation-learning",
+    "self-supervised-learning",
+    "base_model:facebook/wav2vec2-large",
+    "base_model:finetune:facebook/wav2vec2-large",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 317380864,
+  "parameters_human": "317.4M",
+  "storage_bytes": 1270101085,
+  "storage_human": "1.3 GB",
+  "base_model": "facebook/wav2vec2-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shubhronyu (SUBHRAJIT DEY) - Hugging Face",
+      "url": "https://huggingface.co/Shubhronyu",
+      "snippet": "Interested VLMS and LLM reasoning and agentic behavior."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Outlier-Ai",
   "url": "https://huggingface.co/Outlier-Ai/Outlier-10B-V2",
   "created_at": "2026-04-07T22:08:37.000Z",
-  "updated_at": "2026-11-06T23:28:52.000Z",
+  "updated_at": "2026-11-08T06:47:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -72,7 +72,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 369,
+  "downloads_30d": 377,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",

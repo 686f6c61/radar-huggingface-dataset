@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "kiteml/trossen-bin-picking-sim-act-cup-baseline",
+  "slug": "kiteml-trossen-bin-picking-sim-act-cup-baseline",
+  "author": "kiteml",
+  "url": "https://huggingface.co/kiteml/trossen-bin-picking-sim-act-cup-baseline",
+  "created_at": "2026-11-08T23:04:06.000Z",
+  "updated_at": "2026-11-08T23:04:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:kiteml/trossen-bin-picking-sim-baseline",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51685006,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206786456,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kiteml/trossen-bin-picking-sim-baseline - Hugging Face",
+      "url": "https://huggingface.co/datasets/kiteml/trossen-bin-picking-sim-baseline",
+      "snippet": "The reference look, lit to match the recordings. One of seven datasets that replay the same recordings under different conditions; see trossen-bin-picking-sim-datasets for all of them, a preview and the limits. Each episode replays one recording from Trossen Robotics' public bin_picking dataset on a ..."
+    },
+    {
+      "title": "Kite — The evaluation layer for physical AI",
+      "url": "https://kiteml.com/",
+      "snippet": "The evaluation layer for physical AI Run thousands of simulated tests on a robot policy across different environments, at once."
+    }
+  ]
+}

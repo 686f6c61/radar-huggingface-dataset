@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "open-sci/open-sci-ref-v0.02-1.7b-mixturevitae-noinstruct-ftrest-300B-4096",
+  "slug": "open-sci-open-sci-ref-v0-02-1-7b-mixturevitae-noinstruct-ftrest-300b-4096",
+  "author": "open-sci",
+  "url": "https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-mixturevitae-noinstruct-ftrest-300B-4096",
+  "created_at": "2026-11-09T01:24:03.000Z",
+  "updated_at": "2026-11-09T01:25:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "opensci",
+    "text-generation",
+    "open-sci-ref",
+    "mixturevitae",
+    "conversational",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1714377728,
+  "parameters_human": "1.71B",
+  "storage_bytes": 3428804400,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Open, Aujourd'hui. Et demain. | Open",
+      "url": "https://www.open.global/open/open-aujourdhui-demain",
+      "snippet": "Open est l'ESN partenaire de confiance qui accompagne les 1000 premières entreprises et organisations françaises engagées dans …"
+    },
+    {
+      "title": "OpenAI | Recherche et déploiement",
+      "url": "https://openai.com/fr-FR/",
+      "snippet": "Nous pensons que nos recherches finiront par mener à une intelligence artificielle générale, un système capable de résoudre des …"
+    },
+    {
+      "title": "Apache OpenOffice",
+      "url": "https://www.openoffice.org/fr/",
+      "snippet": "Projet francophone Apache OpenOffice Ce site a pour but d'apporter outils et ressources aux francophones pour le téléchargement, …"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI - OpenAI",
+      "url": "https://platform.openai.com/onboarding",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
+    }
+  ]
+}

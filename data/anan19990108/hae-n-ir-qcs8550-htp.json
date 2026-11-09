@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "anan19990108/hae-n-ir-qcs8550-htp",
+  "slug": "anan19990108-hae-n-ir-qcs8550-htp",
+  "author": "anan19990108",
+  "url": "https://huggingface.co/anan19990108/hae-n-ir-qcs8550-htp",
+  "created_at": "2026-11-09T00:40:37.000Z",
+  "updated_at": "2026-11-09T00:48:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tflite",
+    "onnx",
+    "qnn",
+    "qcs8550",
+    "htp",
+    "edge-ai",
+    "object-detection",
+    "en",
+    "base_model:alexshynkarenk0/hae-n-ir-ext-kdf",
+    "base_model:quantized:alexshynkarenk0/hae-n-ir-ext-kdf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 713905,
+  "storage_human": "713905 B",
+  "base_model": "alexshynkarenk0/hae-n-ir-ext-kdf",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-11-09T04:39:36.269Z",
+  "benchmarks": [],
+  "sources": []
+}

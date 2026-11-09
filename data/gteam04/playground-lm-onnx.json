@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Gteam04/playground-lm-onnx",
+  "slug": "gteam04-playground-lm-onnx",
+  "author": "Gteam04",
+  "url": "https://huggingface.co/Gteam04/playground-lm-onnx",
+  "created_at": "2026-11-08T23:34:31.000Z",
+  "updated_at": "2026-11-08T23:35:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "text-generation",
+    "playground-lm",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 358297198,
+  "storage_human": "358 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LM Playground — Run LLMs locally on Android",
+      "url": "https://lmplayground.app/",
+      "snippet": "Free, open-source Android app for running LLMs on-device with llama.cpp. Offline and private."
+    },
+    {
+      "title": "PlaygroundLM - All AI Models, One Interface",
+      "url": "https://playgroundlm.com/",
+      "snippet": "All AI models, one interface. Switch between GPT-5, Claude, Gemini instantly. One subscription, endless AI power."
+    }
+  ]
+}

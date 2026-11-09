@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "DustinEwan/muse-glimmer-30b-nvfp4-dflash-fp4",
+  "slug": "dustinewan-muse-glimmer-30b-nvfp4-dflash-fp4",
+  "author": "DustinEwan",
+  "url": "https://huggingface.co/DustinEwan/muse-glimmer-30b-nvfp4-dflash-fp4",
+  "created_at": "2026-11-08T22:33:01.000Z",
+  "updated_at": "2026-11-08T22:40:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "radiance",
+    "rocm",
+    "amd",
+    "rdna4",
+    "nvfp4",
+    "fp4",
+    "dflash",
+    "speculative-decoding",
+    "muse-glimmer",
+    "multimodal",
+    "image-text-to-text",
+    "base_model:meta-models/Muse-Glimmer-30B-assistant",
+    "base_model:finetune:meta-models/Muse-Glimmer-30B-assistant",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24875462656,
+  "storage_human": "24.9 GB",
+  "base_model": "nvidia/Muse-Glimmer-30B-NVFP4, meta-models/Muse-Glimmer-30B-assistant",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bullerwins/Muse-Glimmer-30B-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/bullerwins/Muse-Glimmer-30B-NVFP4",
+      "snippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware."
+    },
+    {
+      "title": "nvidia/Muse-Glimmer-30B-NVFP4 at main - Hugging Face",
+      "url": "https://huggingface.co/nvidia/Muse-Glimmer-30B-NVFP4/tree/main",
+      "snippet": "like 1 Follow NVIDIA 67.1k Image-Text-to-Text Safetensors Model Optimizer muse_glimmer nvidia ModelOpt Muse-Glimmer quantized FP4 fp4 conversational 8-bit precision modelopt License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Muse-Glimmer-30B-NVFP4 24.7 GB Ctrl+K Ctrl+K 1 contributor History:2 commits jchennv add model card f45fad5 unverifiedabout 10 ..."
+    }
+  ]
+}

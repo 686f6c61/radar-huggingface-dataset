@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "iPwnds/lexeuropa-qwen3b-merged-v4",
+  "slug": "ipwnds-lexeuropa-qwen3b-merged-v4",
+  "author": "iPwnds",
+  "url": "https://huggingface.co/iPwnds/lexeuropa-qwen3b-merged-v4",
+  "created_at": "2026-11-06T01:52:14.000Z",
+  "updated_at": "2026-11-09T01:47:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "legal",
+    "eu-law",
+    "rag",
+    "lora",
+    "sft",
+    "trl",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349004,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sorryhyun/paddleocr-vl-1.6-manga-lora",
+  "slug": "sorryhyun-paddleocr-vl-1-6-manga-lora",
+  "author": "sorryhyun",
+  "url": "https://huggingface.co/sorryhyun/paddleocr-vl-1.6-manga-lora",
+  "created_at": "2026-09-06T05:33:12.000Z",
+  "updated_at": "2026-11-08T22:12:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "ja",
+    "ko",
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "ocr",
+    "manga",
+    "onomatopoeia",
+    "doujin",
+    "paddleocr-vl",
+    "image-text-to-text",
+    "ja",
+    "ko",
+    "zh",
+    "base_model:PaddlePaddle/PaddleOCR-VL-1.6",
+    "base_model:adapter:PaddlePaddle/PaddleOCR-VL-1.6",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 93,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4688786528,
+  "storage_human": "4.7 GB",
+  "base_model": "PaddlePaddle/PaddleOCR-VL-1.6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sorryhyun/paddleocr-vl-1.6-manga-lora · Hugging Face",
+      "url": "https://huggingface.co/sorryhyun/paddleocr-vl-1.6-manga-lora",
+      "snippet": "adapter_model.safetensors peft LoRA on the 18 ERNIE layers (q/k/v/o + gate/up/down, 126 modules, 6.0 M params) 24 MB tower.safetensors the fine-tuned NaViT vision tower + projector, bf16, under the base model's key names (443 tensors, 439 M params) 878 MB Both are needed. The LoRA alone reproduces ..."
+    },
+    {
+      "title": "sorryhyun/paddleocr-vl-1.6-manga-lora at main - Hugging Face",
+      "url": "https://huggingface.co/sorryhyun/paddleocr-vl-1.6-manga-lora/tree/main",
+      "snippet": "Instructions to use sorryhyun/paddleocr-vl-1.6-manga-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use sorryhyun/paddleocr-vl-1.6-manga-lora with PEFT:"
+    }
+  ]
+}

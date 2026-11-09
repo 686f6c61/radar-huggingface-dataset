@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "weijieluo/docling-layout-heron",
+  "slug": "weijieluo-docling-layout-heron",
+  "author": "weijieluo",
+  "url": "https://huggingface.co/weijieluo/docling-layout-heron",
+  "created_at": "2026-11-09T02:18:09.000Z",
+  "updated_at": "2026-11-09T02:18:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "rt_detr_v2",
+    "arxiv:2509.11720",
+    "arxiv:2408.09869",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 42889979,
+  "parameters_human": "42.9M",
+  "storage_bytes": 171658996,
+  "storage_human": "172 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

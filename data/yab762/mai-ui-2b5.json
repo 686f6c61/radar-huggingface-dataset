@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Yab762/MAI-UI-2B5",
+  "slug": "yab762-mai-ui-2b5",
+  "author": "Yab762",
+  "url": "https://huggingface.co/Yab762/MAI-UI-2B5",
+  "created_at": "2026-11-09T03:24:50.000Z",
+  "updated_at": "2026-11-09T03:24:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2127532032,
+  "parameters_human": "2.13B",
+  "storage_bytes": 4266562934,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

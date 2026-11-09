@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "wilsonzheng0327/Ming-3.0-audio-flash-dflash",
+  "slug": "wilsonzheng0327-ming-3-0-audio-flash-dflash",
+  "author": "wilsonzheng0327",
+  "url": "https://huggingface.co/wilsonzheng0327/Ming-3.0-audio-flash-dflash",
+  "created_at": "2026-11-08T23:10:30.000Z",
+  "updated_at": "2026-11-08T23:11:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "speculators",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "speculators",
+    "safetensors",
+    "speculative-decoding",
+    "dflash",
+    "ming",
+    "audio",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:inclusionAI/Ming-3.0-audio-flash",
+    "base_model:finetune:inclusionAI/Ming-3.0-audio-flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 646110592,
+  "parameters_human": "646.1M",
+  "storage_bytes": 1292361912,
+  "storage_human": "1.3 GB",
+  "base_model": "inclusionAI/Ming-3.0-audio-flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix France - Regardez des séries en ligne, Regardez des films en …",
+      "url": "https://www.netflix.com/fr/",
+      "snippet": "Netflix est un service de streaming qui propose une vaste sélection de séries, films, animes, documentaires et autres programmes …"
+    },
+    {
+      "title": "GitHub - inclusionAI/Ming-3.0-audio-flash",
+      "url": "https://github.com/inclusionAI/Ming-3.0-audio-flash",
+      "snippet": "🧩 Model Variants Ming-3.0-audio-flash — A 126B-parameter Mixture-of-Experts model with 6.5B activated parameters. This is the model used by the examples and benchmark results below. Ming-3.0-audio-tiny — A compact 9.3B-parameter Mixture-of-Experts model with 2.7B activated parameters. See its model card for checkpoint details and usage guidance."
+    },
+    {
+      "title": "Netflix - Watch TV Shows Online, Watch Movies Online",
+      "url": "https://www.netflix.com/",
+      "snippet": "What is Netflix? Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, …"
+    },
+    {
+      "title": "inclusionAI/Ming-3.0-audio-flash · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ming-3.0-audio-flash",
+      "snippet": "Ming-3.0-audio-flash is a native audio-language model from inclusionAI. It accepts audio together with text instructions and supports speech recognition, spoken question answering, audio understanding, audio reasoning, and optional synthesized-speech responses. Ming-3.0-audio-flash combines an audio ..."
+    }
+  ]
+}

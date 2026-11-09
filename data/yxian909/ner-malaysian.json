@@ -5,7 +5,7 @@
   "author": "Yxian909",
   "url": "https://huggingface.co/Yxian909/ner-malaysian",
   "created_at": "2026-11-02T16:19:49.000Z",
-  "updated_at": "2026-11-08T13:29:04.000Z",
+  "updated_at": "2026-11-08T16:13:35.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "token-classification",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 65197833,
   "parameters_human": "65.2M",
-  "storage_bytes": 782411004,
-  "storage_human": "782 MB",
+  "storage_bytes": 1043214672,
+  "storage_human": "1.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

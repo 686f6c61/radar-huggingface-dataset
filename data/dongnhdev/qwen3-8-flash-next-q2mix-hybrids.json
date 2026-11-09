@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "dongnhdev/Qwen3.8-Flash-Next-Q2mix-Hybrids",
+  "slug": "dongnhdev-qwen3-8-flash-next-q2mix-hybrids",
+  "author": "dongnhdev",
+  "url": "https://huggingface.co/dongnhdev/Qwen3.8-Flash-Next-Q2mix-Hybrids",
+  "created_at": "2026-11-08T14:46:59.000Z",
+  "updated_at": "2026-11-09T01:04:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 150442051008,
+  "storage_human": "150.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "MacEpic/pocket-tts-es-coreml",
+  "slug": "macepic-pocket-tts-es-coreml",
+  "author": "MacEpic",
+  "url": "https://huggingface.co/MacEpic/pocket-tts-es-coreml",
+  "created_at": "2026-11-08T23:27:55.000Z",
+  "updated_at": "2026-11-08T23:28:06.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "coreml",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "coreml",
+    "pocket-tts",
+    "xn-ptts",
+    "text-to-speech",
+    "es",
+    "base_model:kyutai/pocket-tts-without-voice-cloning",
+    "base_model:quantized:kyutai/pocket-tts-without-voice-cloning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229437425,
+  "storage_human": "229 MB",
+  "base_model": "kyutai/pocket-tts-without-voice-cloning",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "smdesai/pocket-tts-coreml · Hugging Face",
+      "url": "https://huggingface.co/smdesai/pocket-tts-coreml",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pocket TTS - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/en/model_doc/pocket_tts",
+      "snippet": "Pocket TTS is Kyutai ’s 100M-parameter text-to-speech model, a Continuous Audio Language Model that runs faster than real time on CPU. A causal transformer emits one continuous audio latent per frame (12.5 Hz) through a one-step flow head, and an end-of-speech head decides when to stop."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "elrashid/sae-gemma-4-e2b-it-topk-l17",
+  "slug": "elrashid-sae-gemma-4-e2b-it-topk-l17",
+  "author": "elrashid",
+  "url": "https://huggingface.co/elrashid/sae-gemma-4-e2b-it-topk-l17",
+  "created_at": "2026-07-02T02:27:39.000Z",
+  "updated_at": "2026-11-08T21:07:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "sparse-autoencoder",
+    "mechanistic-interpretability",
+    "interpretability",
+    "ai-safety",
+    "quantization",
+    "topk-sae",
+    "dataset:monology/pile-uncopyrighted",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "doi:10.57967/hf/9445",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 302109285,
+  "storage_human": "302 MB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elrashid/sae-gemma-4-e2b-it-topk-l17 · Hugging Face",
+      "url": "https://huggingface.co/elrashid/sae-gemma-4-e2b-it-topk-l17",
+      "snippet": "sae-gemma-4-e2b-it-topk-l17 A TopK sparse autoencoder for google/gemma-4-E2B-it, residual-stream layer 17 (d_in=1536, d_sae=24576, k=64, FVU=0.3229). Trained with the v2 recipe (BOS-drop + per-dim standardization) for The Refusal Slope: A Mechanistic Taxonomy of Feature Fate in Quantized Edge Intelligence (M. Elrashid, BUiD)."
+    },
+    {
+      "title": "elrashid/sae-gemma-4-e2b-it-topk-l17 at main - Hugging Face",
+      "url": "https://huggingface.co/elrashid/sae-gemma-4-e2b-it-topk-l17/tree/main",
+      "snippet": "elrashid / sae-gemma-4-e2b-it-topk-l17 like 0 sparse-autoencoder interpretability mechanistic-interpretability quantization safety License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    }
+  ]
+}

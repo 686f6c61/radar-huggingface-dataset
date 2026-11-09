@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "fadhilahkhairogi/Liwet-163M-id-instruct",
+  "slug": "fadhilahkhairogi-liwet-163m-id-instruct",
+  "author": "fadhilahkhairogi",
+  "url": "https://huggingface.co/fadhilahkhairogi/Liwet-163M-id-instruct",
+  "created_at": "2026-11-09T04:09:13.000Z",
+  "updated_at": "2026-11-09T04:11:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "safetensors",
+    "text-generation",
+    "indonesian",
+    "pytorch",
+    "from-scratch",
+    "liwet",
+    "sft",
+    "instruct",
+    "conversational",
+    "gqa",
+    "rope",
+    "swiglu",
+    "id",
+    "base_model:fadhilahkhairogi/Liwet-163M-id-base",
+    "base_model:finetune:fadhilahkhairogi/Liwet-163M-id-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 187589376,
+  "parameters_human": "187.6M",
+  "storage_bytes": 375189384,
+  "storage_human": "375 MB",
+  "base_model": "fadhilahkhairogi/Liwet-163M-id-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

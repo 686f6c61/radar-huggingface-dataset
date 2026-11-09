@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "guistmartin/qwen3.5-4b-banking77-lora",
+  "slug": "guistmartin-qwen3-5-4b-banking77-lora",
+  "author": "guistmartin",
+  "url": "https://huggingface.co/guistmartin/qwen3.5-4b-banking77-lora",
+  "created_at": "2026-09-22T20:59:51.000Z",
+  "updated_at": "2026-11-09T04:45:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "nest",
+    "tinker",
+    "lora",
+    "text-classification",
+    "intent-classification",
+    "text-generation",
+    "en",
+    "dataset:PolyAI/banking77",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 342259336,
+  "storage_human": "342 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "elrashid/sae-phi-4-mini-instruct-topk-l16",
+  "slug": "elrashid-sae-phi-4-mini-instruct-topk-l16",
+  "author": "elrashid",
+  "url": "https://huggingface.co/elrashid/sae-phi-4-mini-instruct-topk-l16",
+  "created_at": "2026-07-02T02:28:28.000Z",
+  "updated_at": "2026-11-08T21:07:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "sparse-autoencoder",
+    "mechanistic-interpretability",
+    "interpretability",
+    "ai-safety",
+    "quantization",
+    "topk-sae",
+    "dataset:monology/pile-uncopyrighted",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:finetune:microsoft/Phi-4-mini-instruct",
+    "doi:10.57967/hf/9448",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1208195685,
+  "storage_human": "1.2 GB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/Phi-4-mini-instruct · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+      "snippet": "Text Generation model with 4B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "elrashid/sae-phi-4-mini-instruct-topk-l16 · Hugging Face",
+      "url": "https://huggingface.co/elrashid/sae-phi-4-mini-instruct-topk-l16",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

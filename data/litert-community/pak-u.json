@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "litert-community/pak-u",
+  "slug": "litert-community-pak-u",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/pak-u",
+  "created_at": "2026-11-08T21:07:36.000Z",
+  "updated_at": "2026-11-08T21:07:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "doi:10.57967/hf/11515",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community (LiteRT Community (FKA TFLite)) - Hugging Face",
+      "url": "https://huggingface.co/litert-community",
+      "snippet": "LiteRT is Google's on-device framework for high-performance ML & GenAI deployment on edge platforms. It is the improved successor to TensorFlow Lite. On this community page, you can find ready-to-run LiteRT models for a wide range of ML/AI tasks. Within this ecosystem, LiteRT-LM specializes in ..."
+    },
+    {
+      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
+      "url": "https://huggingface.co/litert-community/models",
+      "snippet": "AI & ML interests. AI for Mobile, Web, and Embedded. Recent Activity. Yoursmiling updated a Space about 6 hours ago. litert-community/README"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/RMSN-193M-Base-v2",
+  "slug": "duoneural-rmsn-193m-base-v2",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/RMSN-193M-Base-v2",
+  "created_at": "2026-11-08T21:23:17.000Z",
+  "updated_at": "2026-11-08T21:23:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "rmsn",
+    "pytorch",
+    "physics-informed",
+    "port-hamiltonian",
+    "metriplectic-mechanics",
+    "lyapunov-stability",
+    "sheaf-theory",
+    "language-modeling",
+    "193M",
+    "near-zero-attractor",
+    "reproducibility",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 243732144,
+  "parameters_human": "243.7M",
+  "storage_bytes": 1748694491,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DuoNeural (DuoNeural) - Hugging Face",
+      "url": "https://huggingface.co/DuoNeural",
+      "snippet": "All of them. Seriously. Bleeding edge research (Novel research paper preprints on Zenodo via our website) Unorthodox methodologies. The gold standard of AI-Human Collaboration and what's possible."
+    },
+    {
+      "title": "DuoNeural/RMSN-193M-Base · Hugging Face",
+      "url": "https://huggingface.co/DuoNeural/RMSN-193M-Base",
+      "snippet": "Model Summary Best 193M baseline. W3+W4 cascade history → best ppl in 193M class. Stable attractor."
+    }
+  ]
+}

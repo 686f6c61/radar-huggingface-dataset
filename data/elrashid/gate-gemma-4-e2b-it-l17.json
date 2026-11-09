@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "elrashid/gate-gemma-4-e2b-it-l17",
+  "slug": "elrashid-gate-gemma-4-e2b-it-l17",
+  "author": "elrashid",
+  "url": "https://huggingface.co/elrashid/gate-gemma-4-e2b-it-l17",
+  "created_at": "2026-07-04T17:18:01.000Z",
+  "updated_at": "2026-11-08T21:06:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ai-safety",
+    "guardrail",
+    "sparse-autoencoder",
+    "interpretability",
+    "quantization",
+    "prompt-classification",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "doi:10.57967/hf/9437",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 204446,
+  "storage_human": "204446 B",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elrashid/gate-gemma-4-e2b-it-l17 - Hugging Face",
+      "url": "https://huggingface.co/elrashid/gate-gemma-4-e2b-it-l17",
+      "snippet": "elrashid/gate-gemma-4-e2b-it-l17 A SAE safety gate for google/gemma-4-E2B-it (MatFormer, multimodal): logistic regression over sparse-autoencoder features of the layer-17 residual stream, scoring P (harmful) from the prompt before generation."
+    },
+    {
+      "title": "elrashid/sae-gemma-4-e2b-it-topk-l17 at main - Hugging Face",
+      "url": "https://huggingface.co/elrashid/sae-gemma-4-e2b-it-topk-l17/tree/main",
+      "snippet": "elrashid / sae-gemma-4-e2b-it-topk-l17 like 0 sparse-autoencoder interpretability mechanistic-interpretability quantization safety License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    }
+  ]
+}

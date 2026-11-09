@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "litert-community/PaddleOCR-VL-1.6",
+  "slug": "litert-community-paddleocr-vl-1-6",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/PaddleOCR-VL-1.6",
+  "created_at": "2026-07-07T13:21:36.000Z",
+  "updated_at": "2026-11-08T21:43:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "vlm",
+    "multimodal",
+    "ocr",
+    "document-parsing",
+    "table-recognition",
+    "image-text-to-text",
+    "base_model:PaddlePaddle/PaddleOCR-VL-1.6",
+    "base_model:quantized:PaddlePaddle/PaddleOCR-VL-1.6",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 435,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5561582851,
+  "storage_human": "5.6 GB",
+  "base_model": "PaddlePaddle/PaddleOCR-VL-1.6",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/PaddleOCR-VL-1.6 · Hugging Face",
+      "url": "https://huggingface.co/litert-community/PaddleOCR-VL-1.6",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "litert-community/PaddleOCR-VL-1.6 at main - Hugging Face",
+      "url": "https://huggingface.co/litert-community/PaddleOCR-VL-1.6/blob/main/PaddleOCR-VL-1.6.litertlm",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

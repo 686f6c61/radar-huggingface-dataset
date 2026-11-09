@@ -5,7 +5,7 @@
   "author": "CladeTeam",
   "url": "https://huggingface.co/CladeTeam/CENO-300M-base",
   "created_at": "2026-07-10T04:07:40.000Z",
-  "updated_at": "2026-11-07T17:05:24.000Z",
+  "updated_at": "2026-11-09T01:54:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 287,
+  "downloads_30d": 851,
   "trending_score": 0,
   "parameters": 307503488,
   "parameters_human": "307.5M",
-  "storage_bytes": 1845063720,
-  "storage_human": "1.8 GB",
+  "storage_bytes": 2460084960,
+  "storage_human": "2.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

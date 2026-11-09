@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Gramscii-IT/FilterReader-0.8B",
+  "slug": "gramscii-it-filterreader-0-8b",
+  "author": "Gramscii-IT",
+  "url": "https://huggingface.co/Gramscii-IT/FilterReader-0.8B",
+  "created_at": "2026-11-08T21:38:11.000Z",
+  "updated_at": "2026-11-08T21:38:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "filter-extraction",
+    "structured-search",
+    "query-understanding",
+    "distillation",
+    "lora",
+    "slm",
+    "multilingual",
+    "qwen3.5",
+    "text-generation",
+    "it",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10822656,
+  "parameters_human": "10.8M",
+  "storage_bytes": 21671008,
+  "storage_human": "22 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "The filters of a question read among the codes a catalogue declares",
+      "dataset": "100 Italian and English questions on Italian grant calls and public tenders",
+      "metric": "Questions whose every filter is read right (%)",
+      "value": 73
+    },
+    {
+      "task": "The filters of a house search read among the codes a real-estate catalogue declares",
+      "dataset": "200 Italian requests typed in a real-estate agency's search box",
+      "metric": "Requests whose every filter is read right (%)",
+      "value": 76.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "Gramscii-IT Models — Downloads, Rankings & Growth",
+      "url": "https://openmodelstats.com/owners/gramscii-it",
+      "snippet": "AI models published by Gramscii-IT. 5 tracked models, 1,789 combined all-time downloads, 2 likes. Download statistics, growth history and ranking positions, tracked daily by OpenModelStats."
+    },
+    {
+      "title": "Gramscii-IT (Gramscii) - Hugging Face",
+      "url": "https://huggingface.co/Gramscii-IT",
+      "snippet": "Org profile for Gramscii on Hugging Face, the AI community building the future."
+    }
+  ]
+}

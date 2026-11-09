@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "kiteml/trossen-bin-picking-sim-act-cup-all",
+  "slug": "kiteml-trossen-bin-picking-sim-act-cup-all",
+  "author": "kiteml",
+  "url": "https://huggingface.co/kiteml/trossen-bin-picking-sim-act-cup-all",
+  "created_at": "2026-11-08T23:04:21.000Z",
+  "updated_at": "2026-11-08T23:04:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:kiteml/trossen-bin-picking-sim-baseline",
+    "dataset:kiteml/trossen-bin-picking-sim-dim",
+    "dataset:kiteml/trossen-bin-picking-sim-very-dim",
+    "dataset:kiteml/trossen-bin-picking-sim-warm",
+    "dataset:kiteml/trossen-bin-picking-sim-fluorescent",
+    "dataset:kiteml/trossen-bin-picking-sim-window",
+    "dataset:kiteml/trossen-bin-picking-sim-extra-objects",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51685006,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206786456,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kiteml/trossen-bin-picking-sim-window · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/kiteml/trossen-bin-picking-sim-window",
+      "snippet": "Daylight from a window beside the table, with the room lights low. Strong side light and shadows. One of seven datasets that replay the same recordings under different conditions; see trossen-bin-picking-sim-datasets for all of them, a preview and the limits. Each episode replays one recording from ..."
+    }
+  ]
+}

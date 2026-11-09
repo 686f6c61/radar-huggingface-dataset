@@ -5,7 +5,7 @@
   "author": "WJM-George",
   "url": "https://huggingface.co/WJM-George/AMBIT",
   "created_at": "2026-11-04T16:56:59.000Z",
-  "updated_at": "2026-11-05T11:16:27.000Z",
+  "updated_at": "2026-11-08T19:46:27.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-audio",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 399012140,
   "parameters_human": "399.0M",
-  "storage_bytes": 12155960823,
-  "storage_human": "12.2 GB",
+  "storage_bytes": 13752083395,
+  "storage_human": "13.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

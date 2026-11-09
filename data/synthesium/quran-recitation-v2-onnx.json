@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Synthesium/quran-recitation-v2-onnx",
+  "slug": "synthesium-quran-recitation-v2-onnx",
+  "author": "Synthesium",
+  "url": "https://huggingface.co/Synthesium/quran-recitation-v2-onnx",
+  "created_at": "2026-10-06T13:59:08.000Z",
+  "updated_at": "2026-11-08T23:12:26.000Z",
+  "license": "mixed-cc-by-4.0-apache-2.0-mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "onnx",
+    "quran",
+    "sherpa-onnx",
+    "int8",
+    "forced-alignment",
+    "automatic-speech-recognition",
+    "ar",
+    "arxiv:2509.00094",
+    "base_model:jonatasgrosman/wav2vec2-large-xlsr-53-arabic",
+    "base_model:quantized:jonatasgrosman/wav2vec2-large-xlsr-53-arabic",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3620244951,
+  "storage_human": "3.6 GB",
+  "base_model": "nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0, jonatasgrosman/wav2vec2-large-xlsr-53-arabic, obadx/muaalem-model-v3_2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Synthesium/quran-recitation-v2-onnx · Hugging Face",
+      "url": "https://huggingface.co/Synthesium/quran-recitation-v2-onnx",
+      "snippet": "On-device Quran recitation models (int8 ONNX) The models behind the fuKhushu app's fully on-device, hands-free ayah-by-ayah recitation capture and its live memory test. Each folder keeps its upstream licence."
+    },
+    {
+      "title": "Quran Recitation V2 Onnx - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/synthesium/quran-recitation-v2-onnx",
+      "snippet": "Registry entry for model Quran Recitation V2 Onnx; source metadata pending."
+    }
+  ]
+}

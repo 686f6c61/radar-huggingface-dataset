@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "AgentAnon/Flux2Klein9BStuff",
+  "slug": "agentanon-flux2klein9bstuff",
+  "author": "AgentAnon",
+  "url": "https://huggingface.co/AgentAnon/Flux2Klein9BStuff",
+  "created_at": "2026-04-17T17:19:42.000Z",
+  "updated_at": "2026-11-08T20:30:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 6,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 94282229025,
+  "storage_human": "94.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AgentAnon/Flux2Klein9BStuff · Hugging Face",
+      "url": "https://huggingface.co/AgentAnon/Flux2Klein9BStuff",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AgentAnon/Flux2Klein9BStuff at main - Hugging Face",
+      "url": "https://huggingface.co/AgentAnon/Flux2Klein9BStuff/tree/main",
+      "snippet": "Docker Model Runner How to use AgentAnon/Flux2Klein9BStuff with Docker Model Runner: ... Lemonade How to use AgentAnon/Flux2Klein9BStuff with Lemonade: Pull the model ... Run and chat with the model ... List all available models lemonade list Hermes Agent How to use AgentAnon/Flux2Klein9BStuff with Hermes Agent: Start the llama.cpp server ..."
+    }
+  ]
+}

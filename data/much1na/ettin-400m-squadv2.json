@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "much1na/ettin-400m-squadv2",
+  "slug": "much1na-ettin-400m-squadv2",
+  "author": "much1na",
+  "url": "https://huggingface.co/much1na/ettin-400m-squadv2",
+  "created_at": "2026-11-08T01:30:12.000Z",
+  "updated_at": "2026-11-08T01:30:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "question-answering",
+    "dataset:rajpurkar/squad_v2",
+    "base_model:jhu-clsp/ettin-encoder-400m",
+    "base_model:finetune:jhu-clsp/ettin-encoder-400m",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 395833346,
+  "parameters_human": "395.8M",
+  "storage_bytes": 1583356488,
+  "storage_human": "1.6 GB",
+  "base_model": "jhu-clsp/ettin-encoder-400m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Extractive question answering",
+      "dataset": "SQuAD 2.0",
+      "metric": "Exact Match",
+      "value": 86.62511580897835
+    },
+    {
+      "task": "Extractive question answering",
+      "dataset": "SQuAD 2.0",
+      "metric": "F1",
+      "value": 90.01149313055886
+    }
+  ],
+  "sources": [
+    {
+      "title": "jhu-clsp/ettin-encoder-400m · Hugging Face",
+      "url": "https://huggingface.co/jhu-clsp/ettin-encoder-400m",
+      "snippet": "This checkpoint availability enables detailed analysis of training dynamics, loss curves, and capability emergence across the complete 2T token training process. 🔬 Research Applications What Makes Ettin Unique Ettin provides the first controlled comparison of encoder vs. decoder architectures: Identical Training Data: Same 2T token mixture across all models Matched Architectures: Only ..."
+    },
+    {
+      "title": "ettin-encoder-400m-multivector-msmarco32k-1e-4-20261014",
+      "url": "https://huggingface.co/tomaarsen/ettin-encoder-400m-multivector-msmarco32k-1e-4-20261014",
+      "snippet": "ettin-encoder-400m multivector MS MARCO pilot This is a Multi-Vector Encoder model finetuned from jhu-clsp/ettin-encoder-400m using the sentence-transformers library. It maps inputs to sequences of 128-dimensional token-level vectors and scores them with late interaction (MaxSim), useful for semantic search with late interaction."
+    }
+  ]
+}

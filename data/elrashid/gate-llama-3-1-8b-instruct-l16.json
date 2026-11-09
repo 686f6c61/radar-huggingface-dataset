@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "elrashid/gate-llama-3.1-8b-instruct-l16",
+  "slug": "elrashid-gate-llama-3-1-8b-instruct-l16",
+  "author": "elrashid",
+  "url": "https://huggingface.co/elrashid/gate-llama-3.1-8b-instruct-l16",
+  "created_at": "2026-07-04T17:18:18.000Z",
+  "updated_at": "2026-11-08T21:06:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ai-safety",
+    "guardrail",
+    "sparse-autoencoder",
+    "interpretability",
+    "quantization",
+    "prompt-classification",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "doi:10.57967/hf/9439",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 542470,
+  "storage_human": "542470 B",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elrashid/gate-llama-3.1-8b-instruct-l16 - Hugging Face",
+      "url": "https://huggingface.co/elrashid/gate-llama-3.1-8b-instruct-l16",
+      "snippet": "A SAE safety gate for meta-llama/Llama-3.1-8B-Instruct: logistic regression over sparse-autoencoder features of the layer-16 residual stream, scoring P (harmful) from the prompt before generation starts."
+    },
+    {
+      "title": "meta-llama/Llama-3.1-8B · Hugging Face",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B",
+      "snippet": "Text Generation model with 8B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

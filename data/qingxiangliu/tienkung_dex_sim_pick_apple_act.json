@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "qingxiangliu/tienkung_dex_sim_pick_apple_act",
+  "slug": "qingxiangliu-tienkung_dex_sim_pick_apple_act",
+  "author": "qingxiangliu",
+  "url": "https://huggingface.co/qingxiangliu/tienkung_dex_sim_pick_apple_act",
+  "created_at": "2026-11-09T01:59:26.000Z",
+  "updated_at": "2026-11-09T02:00:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 983897888,
+  "storage_human": "984 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "h1testrightmeow/h1-safetensors-public-probe",
+  "slug": "h1testrightmeow-h1-safetensors-public-probe",
+  "author": "h1testrightmeow",
+  "url": "https://huggingface.co/h1testrightmeow/h1-safetensors-public-probe",
+  "created_at": "2026-08-29T02:04:15.000Z",
+  "updated_at": "2026-11-08T21:48:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "doi:10.57967/hf/11170",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 560592,
+  "storage_human": "560592 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "h1testrightmeow/h1-safetensors-public-probe · Hugging Face",
+      "url": "https://huggingface.co/h1testrightmeow/h1-safetensors-public-probe",
+      "snippet": "h1testrightmeow / h1-safetensors-public-probe like 0 PyTorch Model card FilesFiles and versions xet Community 1 Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "h1-safetensors-public-probe: Model Details, Context & Pricing | Essa ...",
+      "url": "https://essamamdani.com/ai-models/hf-h1testrightmeow-h1-safetensors-public-probe",
+      "snippet": "Model card indexed from Hugging Face. Specs: sourced from Hugging Face. Compare h1-safetensors-public-probe's parameters, context window, pricing and benchmarks"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "DavidAU/L3-8B-Stheno-v3.3-32K-Ultra-NEO-V1-IMATRIX-GGUF",
+  "slug": "davidau-l3-8b-stheno-v3-3-32k-ultra-neo-v1-imatrix-gguf",
+  "author": "DavidAU",
+  "url": "https://huggingface.co/DavidAU/L3-8B-Stheno-v3.3-32K-Ultra-NEO-V1-IMATRIX-GGUF",
+  "created_at": "2024-06-25T03:18:51.000Z",
+  "updated_at": "2026-11-09T04:04:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "story",
+    "general usage",
+    "roleplay",
+    "creative",
+    "rp",
+    "fantasy",
+    "story telling",
+    "ultra high precision",
+    "llama-3",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 25,
+  "downloads_30d": 3578,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 52030983392,
+  "storage_human": "52.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

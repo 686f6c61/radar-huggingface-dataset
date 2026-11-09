@@ -5,7 +5,7 @@
   "author": "Karasumikura",
   "url": "https://huggingface.co/Karasumikura/Ying-K1.5-Lite-200M",
   "created_at": "2026-11-08T06:32:48.000Z",
-  "updated_at": "2026-11-08T06:32:48.000Z",
+  "updated_at": "2026-11-08T20:11:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,6 +15,21 @@
     "en"
   ],
   "tags": [
+    "transformers",
+    "safetensors",
+    "mm200",
+    "feature-extraction",
+    "ying-k1.5",
+    "chinese",
+    "sft",
+    "from-scratch",
+    "text-generation",
+    "custom_code",
+    "zh",
+    "en",
+    "base_model:Karasumikura/Ying-K1.5-Lite-200M-base",
+    "base_model:finetune:Karasumikura/Ying-K1.5-Lite-200M-base",
+    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
@@ -24,8 +39,10 @@
   "parameters_human": "210.2M",
   "storage_bytes": 420970422,
   "storage_human": "421 MB",
-  "base_model": null,
-  "formats": [],
+  "base_model": "Karasumikura/Ying-K1.5-Lite-200M-base",
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "Jamesl0l/Kimi-K3",
+  "slug": "jamesl0l-kimi-k3",
+  "author": "Jamesl0l",
+  "url": "https://huggingface.co/Jamesl0l/Kimi-K3",
+  "created_at": "2026-11-08T21:53:15.000Z",
+  "updated_at": "2026-11-08T21:53:15.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "feature-extraction",
+    "compressed-tensors",
+    "conversational",
+    "image-text-to-text",
+    "custom_code",
+    "license:other",
+    "eval-results",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2779931837184,
+  "parameters_human": "2779.93B",
+  "storage_bytes": 1560998650830,
+  "storage_human": "1561.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi K3: 2.8T Open Model for Coding & Knowledge Work",
+      "url": "https://www.kimi.ai/ai-models/kimi-k3",
+      "snippet": "Kimi K3 is an open-weight, native multimodal model developed by Moonshot AI. It has 2.8 trillion total parameters and is built on Kimi Delta Attention (KDA) and Attention Residuals (AttnRes), with native vision capabilities and a context window of up to 1 million tokens. It is designed for long-horizon coding, knowledge work, and reasoning. Yes."
+    },
+    {
+      "title": "Kimi AI Official Site | K3.1 Pro Launches with Upgraded Coding ...",
+      "url": "https://www.kimi.ai/en",
+      "snippet": "Kimi K3.1 Pro is now live. Easily tackle complex coding projects, build 3D models, and conduct in-depth financial research. More powerful agentic capabilities help you complete more complex tasks efficiently."
+    }
+  ]
+}

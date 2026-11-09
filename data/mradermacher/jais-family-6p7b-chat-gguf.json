@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/jais-family-6p7b-chat-GGUF",
+  "slug": "mradermacher-jais-family-6p7b-chat-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/jais-family-6p7b-chat-GGUF",
+  "created_at": "2025-03-06T01:54:06.000Z",
+  "updated_at": "2026-11-08T22:45:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "Arabic",
+    "English",
+    "LLM",
+    "Decoder",
+    "causal-lm",
+    "jais-family",
+    "ar",
+    "en",
+    "base_model:inception42/jais-family-6p7b-chat",
+    "base_model:quantized:inception42/jais-family-6p7b-chat",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 88,
+  "trending_score": 0,
+  "parameters": 7142689792,
+  "parameters_human": "7.14B",
+  "storage_bytes": 76336260768,
+  "storage_human": "76.3 GB",
+  "base_model": "inception42/jais-family-6p7b-chat",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/jais-family-6p7b-chat-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/jais-family-6p7b-chat-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke's READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mradermacher/jais-family-6p7b-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/jais-family-6p7b-i1-GGUF",
+      "snippet": "mradermacher / jais-family-6p7b-i1-GGUF like 0 Transformers GGUF Arabic English Arabic English LLM Decoder causal-lm jais-family Inference Endpoints imatrix License:apache-2.0 Model card FilesFiles and versions Community Train Deploy Use this model About Usage Provided Quants FAQ / Model Request Thanks"
+    }
+  ]
+}

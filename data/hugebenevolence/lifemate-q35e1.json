@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "hugebenevolence/lifemate-q35e1",
+  "slug": "hugebenevolence-lifemate-q35e1",
+  "author": "hugebenevolence",
+  "url": "https://huggingface.co/hugebenevolence/lifemate-q35e1",
+  "created_at": "2026-11-08T10:21:00.000Z",
+  "updated_at": "2026-11-08T10:21:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "onnx",
+    "safetensors",
+    "lora",
+    "tool-calling",
+    "asr",
+    "zalo-ai-challenge",
+    "vi",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 422571065,
+  "storage_human": "423 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

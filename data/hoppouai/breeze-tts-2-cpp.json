@@ -5,7 +5,7 @@
   "author": "HoppouAI",
   "url": "https://huggingface.co/HoppouAI/Breeze-TTS-2.cpp",
   "created_at": "2026-08-28T07:57:38.000Z",
-  "updated_at": "2026-08-28T08:45:14.000Z",
+  "updated_at": "2026-11-08T08:19:30.000Z",
   "license": "breezeblue-research-and-non-commercial",
   "license_family": "non-commercial",
   "pipeline_tag": "text-to-speech",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 43,
-  "downloads_30d": 994005,
+  "downloads_30d": 1015828,
   "trending_score": 8,
   "parameters": 3011962721,
   "parameters_human": "3.01B",

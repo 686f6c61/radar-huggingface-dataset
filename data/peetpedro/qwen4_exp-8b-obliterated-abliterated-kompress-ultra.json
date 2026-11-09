@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "id": "PeetPedro/qwen4_exp-8b-obliterated-abliterated-kompress-ultra",
+  "slug": "peetpedro-qwen4_exp-8b-obliterated-abliterated-kompress-ultra",
+  "author": "PeetPedro",
+  "url": "https://huggingface.co/PeetPedro/qwen4_exp-8b-obliterated-abliterated-kompress-ultra",
+  "created_at": "2026-11-08T22:51:50.000Z",
+  "updated_at": "2026-11-09T01:13:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hu",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "qwen4_exp",
+    "text-generation",
+    "qwen3_5",
+    "deepseek-v4-pro",
+    "obliterated",
+    "abliterated",
+    "heretic",
+    "uncensored",
+    "kompress-super-ultra",
+    "grpo",
+    "gspo",
+    "reinforcement-learning",
+    "ternary",
+    "bitnet",
+    "mlx-quant",
+    "ollama",
+    "eightb-agy-fanout",
+    "spark-verified",
+    "8b-is",
+    "wa-stream",
+    "en",
+    "hu",
+    "ja",
+    "zh",
+    "dataset:PeetPedro/ultrawhale-dogfood",
+    "dataset:PeetPedro/8b-is-ecosystem",
+    "dataset:PeetPedro/voice-finetuning",
+    "dataset:PeetPedro/smart-tree-code",
+    "dataset:PeetPedro/smart-tree-docs",
+    "dataset:PeetPedro/memnet-code",
+    "dataset:PeetPedro/memnet-docs",
+    "dataset:PeetPedro/engram-docs",
+    "dataset:PeetPedro/ayeverse-docs",
+    "dataset:PeetPedro/aye-is-docs",
+    "dataset:PeetPedro/cheet-is-docs",
+    "base_model:Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
+    "base_model:finetune:Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B, xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sovereign Quantal Reasoning & Full-Duplex Voice RL",
+      "dataset": "PeetPedro/voice-finetuning",
+      "metric": "GRPO Final Q15 Reward",
+      "value": 32647
+    },
+    {
+      "task": "Sovereign Quantal Reasoning & Full-Duplex Voice RL",
+      "dataset": "PeetPedro/voice-finetuning",
+      "metric": "MOPD2 Distillation Loss (Q15)",
+      "value": 380
+    },
+    {
+      "task": "Sovereign Quantal Reasoning & Full-Duplex Voice RL",
+      "dataset": "PeetPedro/voice-finetuning",
+      "metric": "Obliterated Residual Dot Product",
+      "value": 0
+    },
+    {
+      "task": "Sovereign Quantal Reasoning & Full-Duplex Voice RL",
+      "dataset": "PeetPedro/voice-finetuning",
+      "metric": "Abliterated Dual-Householder L1 Drift",
+      "value": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Abliterated Models — Open-Weight LLMs With Refusals Removed",
+      "url": "https://www.abliteratedmodels.org/",
+      "snippet": "Abliterated Models Abliterated Models is an index of abliterated AI: open-weight LLMs with refusal behaviour removed from their weights, for security teams. Every model here is uncensored — it answers prompts a normal AI refuses. All 962 are free to download from Hugging Face, and each page shows what the model was built from, how big it is, the hardware it needs and its licence."
+    },
+    {
+      "title": "huihui-ai/Qwen3-8B-abliterated - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Qwen3-8B-abliterated",
+      "snippet": "Text Generation model with 8B parameters. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

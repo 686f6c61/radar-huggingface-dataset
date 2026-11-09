@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "2laaaa/distilbert-conll-ner",
+  "slug": "2laaaa-distilbert-conll-ner",
+  "author": "2laaaa",
+  "url": "https://huggingface.co/2laaaa/distilbert-conll-ner",
+  "created_at": "2026-11-08T21:33:34.000Z",
+  "updated_at": "2026-11-08T21:33:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 65197833,
+  "parameters_human": "65.2M",
+  "storage_bytes": 260803668,
+  "storage_human": "261 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DistilBERT for Named Entity Recognition (NER) on CoNLL-2003",
+      "url": "https://github.com/ArenGolazizian/distilbert-ner-conll2003",
+      "snippet": "The CoNLL-2003 dataset is a widely used benchmark for NER, containing annotated sentences with entity tags for each word. DistilBERT, a distilled version of BERT, serves as the backbone for this project, offering a balance between performance and computational efficiency. The model is adapted for token classification, making it suitable for sequence labeling tasks like NER."
+    },
+    {
+      "title": "mohammad748/distilbert-conll2003-ner · Hugging Face",
+      "url": "https://huggingface.co/mohammad748/distilbert-conll2003-ner",
+      "snippet": "DistilBERT for Named Entity Recognition This repository contains a fine-tuned DistilBERT model trained on the CoNLL-2003 dataset for Named Entity Recognition (NER). The model identifies and classifies named entities in English text."
+    }
+  ]
+}

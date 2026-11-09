@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "soymono/Qwen3.8-Flash-Next-pruned60-PTQ1_0-GGUF",
+  "slug": "soymono-qwen3-8-flash-next-pruned60-ptq1_0-gguf",
+  "author": "soymono",
+  "url": "https://huggingface.co/soymono/Qwen3.8-Flash-Next-pruned60-PTQ1_0-GGUF",
+  "created_at": "2026-11-08T15:41:18.000Z",
+  "updated_at": "2026-11-08T21:18:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 104475788160,
+  "parameters_human": "104.48B",
+  "storage_bytes": 51945569312,
+  "storage_human": "51.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has ..."
+    },
+    {
+      "title": "Qwen-3.8-Flash-Next - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Qwen-3.8-Flash-Next",
+      "snippet": "Qwen-3.8-Flash-Next was released under the Qwen Community License 1.0, which permits both commercial and non-commercial use of the model weights subject to the terms published alongside the checkpoint on Hugging Face and ModelScope."
+    },
+    {
+      "title": "Alibaba's Qwen Team Releases Qwen3.8-Flash-Next: A 125B Multimodal MoE ...",
+      "url": "https://www.marktechpost.com/2026/08/26/alibabas-qwen-team-releases-qwen3-8-flash-next-a-125b-multimodal-moe-with-6b-active-parameters-previewing-the-qwen4-architecture/",
+      "snippet": "Alibaba’s Qwen team has released Qwen3.8-Flash-Next, an open-weight multimodal Mixture-of-Experts model built for cost per token. The checkpoint pairs a 125B backbone with a 51B N-gram embedding table and a 4B multi-token prediction module. Only 6B parameters activate per token."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next · GSQ-RCO-abliterated IQ3_S — prebuilt Strata pack",
+      "url": "https://huggingface.co/minpei/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-IQ3_S-Strata-pack",
+      "snippet": "SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF is already a Strata-ready GGUF, but Strata still needs a pack (dense tensors + tensor index + tokenizer) built from it — and that step is exactly where people get stuck."
+    }
+  ]
+}

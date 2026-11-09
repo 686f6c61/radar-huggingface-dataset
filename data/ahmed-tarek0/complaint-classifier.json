@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Ahmed-Tarek0/complaint-classifier",
+  "slug": "ahmed-tarek0-complaint-classifier",
+  "author": "Ahmed-Tarek0",
+  "url": "https://huggingface.co/Ahmed-Tarek0/complaint-classifier",
+  "created_at": "2026-11-08T23:51:34.000Z",
+  "updated_at": "2026-11-09T00:10:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "complaint-classification",
+    "en",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66957317,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267841796,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Ahmed-Tarek0/Consumer-Complaint-Classification",
+      "url": "https://github.com/Ahmed-Tarek0/Consumer-Complaint-Classification",
+      "snippet": "Contribute to Ahmed-Tarek0/Consumer-Complaint-Classification development by creating an account on GitHub."
+    }
+  ]
+}

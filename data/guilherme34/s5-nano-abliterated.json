@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Guilherme34/S5-nano-abliterated",
+  "slug": "guilherme34-s5-nano-abliterated",
+  "author": "Guilherme34",
+  "url": "https://huggingface.co/Guilherme34/S5-nano-abliterated",
+  "created_at": "2026-11-09T01:48:06.000Z",
+  "updated_at": "2026-11-09T02:08:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "pt",
+    "en",
+    "base_model:maritaca-ai/S5-nano",
+    "base_model:finetune:maritaca-ai/S5-nano",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9332636142,
+  "storage_human": "9.3 GB",
+  "base_model": "maritaca-ai/S5-nano",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

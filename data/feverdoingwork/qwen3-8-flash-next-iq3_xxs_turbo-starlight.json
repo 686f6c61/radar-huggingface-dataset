@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "feverdoingwork/Qwen3.8-Flash-Next-iq3_xxs_turbo-Starlight",
+  "slug": "feverdoingwork-qwen3-8-flash-next-iq3_xxs_turbo-starlight",
+  "author": "feverdoingwork",
+  "url": "https://huggingface.co/feverdoingwork/Qwen3.8-Flash-Next-iq3_xxs_turbo-Starlight",
+  "created_at": "2026-11-08T22:40:03.000Z",
+  "updated_at": "2026-11-08T22:41:46.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "starlight",
+  "languages": [],
+  "tags": [
+    "starlight",
+    "gguf",
+    "qwen3.8",
+    "moe",
+    "quantized",
+    "trellis-coded",
+    "mtp",
+    "amd",
+    "nvidia",
+    "text-generation",
+    "base_model:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "base_model:quantized:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "license:other",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179023045248,
+  "parameters_human": "179.02B",
+  "storage_bytes": 58714951456,
+  "storage_human": "58.7 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next, ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability:"
+    },
+    {
+      "title": "RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored-IQ3_S-Strata",
+      "url": "https://huggingface.co/jimmy31chen/RVN-Qwen3.8-Flash-Next-Abliterated-Uncensored-IQ3_S-Strata/tree/main",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

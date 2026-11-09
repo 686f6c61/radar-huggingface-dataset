@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "phawitbinabik/smolvla_SIM_FF",
+  "slug": "phawitbinabik-smolvla_sim_ff",
+  "author": "phawitbinabik",
+  "url": "https://huggingface.co/phawitbinabik/smolvla_SIM_FF",
+  "created_at": "2026-11-08T21:58:57.000Z",
+  "updated_at": "2026-11-08T21:59:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:phawitbinabik/SIM_FF",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450292449,
+  "parameters_human": "450.3M",
+  "storage_bytes": 907713068,
+  "storage_human": "908 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "phawitbinabik/smolvla_V1 · Hugging Face",
+      "url": "https://huggingface.co/phawitbinabik/smolvla_V1",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "phawitbinabik/smolvla_DS1_1B1O_FF_60EP · Hugging Face",
+      "url": "https://huggingface.co/phawitbinabik/smolvla_DS1_1B1O_FF_60EP",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    }
+  ]
+}

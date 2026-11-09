@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "TassP0lar/Spark-X2.6-4B-Recursive72",
+  "slug": "tassp0lar-spark-x2-6-4b-recursive72",
+  "author": "TassP0lar",
+  "url": "https://huggingface.co/TassP0lar/Spark-X2.6-4B-Recursive72",
+  "created_at": "2026-11-08T20:39:36.000Z",
+  "updated_at": "2026-11-08T20:39:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "spark2_5",
+    "text-generation",
+    "spark",
+    "spark-x2.6-4b",
+    "recursive-transformer",
+    "loop72",
+    "mhc",
+    "d-lsa",
+    "long-context",
+    "conversational",
+    "custom_code",
+    "base_model:XHToken/Spark-X2.6-4B",
+    "base_model:finetune:XHToken/Spark-X2.6-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 8312233225,
+  "storage_human": "8.3 GB",
+  "base_model": "XHToken/Spark-X2.6-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - XHToken/Spark-X2.6: Spark-x2.6 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.6",
+      "snippet": "Spark-X2.6 retains exactly the same architecture as Spark-X2.5, achieving its capability gains through improved post-training. It delivers substantial improvements in coding, agent, long-context, multilingual, reasoning, etc. These advances enable more capable and practical on-device AI for developers and users tackling real-world tasks."
+    },
+    {
+      "title": "TassP0lar/Spark-X2.6-4B-En4B-A1B · Hugging Face",
+      "url": "https://huggingface.co/TassP0lar/Spark-X2.6-4B-En4B-A1B",
+      "snippet": "TassP0lar / Spark-X2.6-4B-En4B-A1B Like 0 Safetensors spark2_5 custom_code Model card FilesFiles and versions xet Community Copy to bucket No model card Downloads last month 51 Safetensors Model size 4B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn't deployed by any Inference Provider.🙋Ask for ..."
+    }
+  ]
+}

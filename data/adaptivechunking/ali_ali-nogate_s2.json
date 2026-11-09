@@ -5,7 +5,7 @@
   "author": "AdaptiveChunking",
   "url": "https://huggingface.co/AdaptiveChunking/ali_ali-nogate_s2",
   "created_at": "2026-11-08T14:50:47.000Z",
-  "updated_at": "2026-11-08T15:05:31.000Z",
+  "updated_at": "2026-11-08T16:54:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 22583040,
   "parameters_human": "22.6M",
-  "storage_bytes": 13028905564,
-  "storage_human": "13.0 GB",
+  "storage_bytes": 19863983966,
+  "storage_human": "19.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

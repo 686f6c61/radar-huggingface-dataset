@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "elrashid/sae-gemma-3-1b-it-topk-l13",
+  "slug": "elrashid-sae-gemma-3-1b-it-topk-l13",
+  "author": "elrashid",
+  "url": "https://huggingface.co/elrashid/sae-gemma-3-1b-it-topk-l13",
+  "created_at": "2026-07-02T02:27:18.000Z",
+  "updated_at": "2026-11-08T21:07:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "sparse-autoencoder",
+    "mechanistic-interpretability",
+    "interpretability",
+    "ai-safety",
+    "quantization",
+    "topk-sae",
+    "dataset:monology/pile-uncopyrighted",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:finetune:google/gemma-3-1b-it",
+    "doi:10.57967/hf/9443",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 169959525,
+  "storage_human": "170 MB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elrashid/sae-gemma-3-1b-it-topk-l13 · Hugging Face",
+      "url": "https://huggingface.co/elrashid/sae-gemma-3-1b-it-topk-l13",
+      "snippet": "You need to agree to share your contact information to access this model This repository is publicly accessible, but you have to accept the conditions to access its files and content. Log in or Sign Up to review the conditions and access this model content."
+    },
+    {
+      "title": "google/gemma-3-1b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-1b-it",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

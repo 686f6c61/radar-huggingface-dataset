@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "elrashid/sae-llama-3.1-8b-instruct-topk-l16",
+  "slug": "elrashid-sae-llama-3-1-8b-instruct-topk-l16",
+  "author": "elrashid",
+  "url": "https://huggingface.co/elrashid/sae-llama-3.1-8b-instruct-topk-l16",
+  "created_at": "2026-07-02T02:28:03.000Z",
+  "updated_at": "2026-11-08T21:07:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "sparse-autoencoder",
+    "mechanistic-interpretability",
+    "interpretability",
+    "ai-safety",
+    "quantization",
+    "topk-sae",
+    "dataset:monology/pile-uncopyrighted",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "doi:10.57967/hf/9447",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2147797605,
+  "storage_human": "2.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elrashid/sae-llama-3.1-8b-instruct-topk-l16 · Hugging Face",
+      "url": "https://huggingface.co/elrashid/sae-llama-3.1-8b-instruct-topk-l16",
+      "snippet": "A TopK sparse autoencoder for meta-llama/Llama-3.1-8B-Instruct, residual-stream layer 16 (d_in=4096, d_sae=65536, k=64, FVU=0.3371). Trained with the v2 recipe (BOS-drop + per-dim standardization) for The Refusal Slope: A Mechanistic Taxonomy of Feature Fate in Quantized Edge Intelligence (M. Elrashid, BUiD)."
+    },
+    {
+      "title": "elrashid/gate-llama-3.1-8b-instruct-l16 - Hugging Face",
+      "url": "https://huggingface.co/elrashid/gate-llama-3.1-8b-instruct-l16",
+      "snippet": "A SAE safety gate for meta-llama/Llama-3.1-8B-Instruct: logistic regression over sparse-autoencoder features of the layer-16 residual stream, scoring P (harmful) from the prompt before generation starts."
+    }
+  ]
+}

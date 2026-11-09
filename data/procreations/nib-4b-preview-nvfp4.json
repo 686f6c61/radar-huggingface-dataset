@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "ProCreations/nib-4b-preview-NVFP4",
+  "slug": "procreations-nib-4b-preview-nvfp4",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/nib-4b-preview-NVFP4",
+  "created_at": "2026-11-08T21:58:23.000Z",
+  "updated_at": "2026-11-08T22:07:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "browser-agent",
+    "browser-use",
+    "computer-use",
+    "agent",
+    "tool-use",
+    "qwen3.5",
+    "nvfp4",
+    "compressed-tensors",
+    "conversational",
+    "en",
+    "base_model:ProCreations/nib-4b-preview",
+    "base_model:quantized:ProCreations/nib-4b-preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3810518528,
+  "parameters_human": "3.81B",
+  "storage_bytes": 5025597702,
+  "storage_human": "5.0 GB",
+  "base_model": "ProCreations/nib-4b-preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ProCreations Models — Downloads, Rankings & Growth",
+      "url": "https://openmodelstats.com/owners/procreations",
+      "snippet": "AI models published by ProCreations. 57 tracked models, 1.4M combined all-time downloads, 469 likes. Download statistics, growth history and ranking positions, tracked daily by OpenModelStats."
+    }
+  ]
+}

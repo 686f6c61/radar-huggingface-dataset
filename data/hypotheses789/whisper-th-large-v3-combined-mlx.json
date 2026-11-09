@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "hypotheses789/whisper-th-large-v3-combined-mlx",
+  "slug": "hypotheses789-whisper-th-large-v3-combined-mlx",
+  "author": "hypotheses789",
+  "url": "https://huggingface.co/hypotheses789/whisper-th-large-v3-combined-mlx",
+  "created_at": "2026-11-09T01:55:12.000Z",
+  "updated_at": "2026-11-09T01:55:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "mlx-whisper",
+    "thai",
+    "apple-silicon",
+    "automatic-speech-recognition",
+    "th",
+    "base_model:biodatlab/whisper-th-large-v3-combined",
+    "base_model:finetune:biodatlab/whisper-th-large-v3-combined",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3083280560,
+  "storage_human": "3.1 GB",
+  "base_model": "biodatlab/whisper-th-large-v3-combined",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

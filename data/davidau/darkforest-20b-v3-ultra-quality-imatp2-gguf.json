@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "DavidAU/DarkForest-20B-V3-Ultra-Quality-ImatP2-GGUF",
+  "slug": "davidau-darkforest-20b-v3-ultra-quality-imatp2-gguf",
+  "author": "DavidAU",
+  "url": "https://huggingface.co/DavidAU/DarkForest-20B-V3-Ultra-Quality-ImatP2-GGUF",
+  "created_at": "2024-06-18T01:09:40.000Z",
+  "updated_at": "2026-11-09T03:48:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "story",
+    "roleplay",
+    "creative",
+    "rp",
+    "fantasy",
+    "story telling",
+    "32 bit upscale",
+    "ultra high precision",
+    "nsfw",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "not-for-all-audiences"
+  ],
+  "likes": 9,
+  "downloads_30d": 260,
+  "trending_score": 0,
+  "parameters": 19994362880,
+  "parameters_human": "19.99B",
+  "storage_bytes": 71090451904,
+  "storage_human": "71.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

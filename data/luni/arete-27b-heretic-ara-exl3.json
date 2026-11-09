@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Luni/Arete-27B-Heretic-ARA-EXL3",
+  "slug": "luni-arete-27b-heretic-ara-exl3",
+  "author": "Luni",
+  "url": "https://huggingface.co/Luni/Arete-27B-Heretic-ARA-EXL3",
+  "created_at": "2026-11-08T06:32:07.000Z",
+  "updated_at": "2026-11-08T17:25:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "exl3",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "image-text-to-text",
+    "base_model:Luni/Arete-27B-Heretic-ARA",
+    "base_model:quantized:Luni/Arete-27B-Heretic-ARA",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36079980609,
+  "storage_human": "36.1 GB",
+  "base_model": "Luni/Arete-27B-Heretic-ARA",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lunii | Conteuses et livres audio pour 0-14 ans",
+      "url": "https://lunii.com/fr-fr",
+      "snippet": "Avec les conteuses Ma 1ère Lunii, Ma Fabrique à Histoires & FLAM, Lunii réveille l'imaginaire et développe la créativité des enfants …"
+    },
+    {
+      "title": "Introducing Arete-27B: Qwen3.8-27B Post-Trained To Reinforce Western ...",
+      "url": "https://nousresearch.com/arete",
+      "snippet": "We post-trained Alibaba's Qwen3.8-27B to reinforce Western values on a Chinese-trained model, and measured what changed with an 803-prompt eval across seven value categories."
+    },
+    {
+      "title": "Boutique Officielle | Lunii",
+      "url": "https://lunii.com/fr-fr/boutique",
+      "snippet": "Explorez l'univers de Lunii et découvrez Ma Fabrique à Histoires, FLAM, leurs accessoires et plus de 500 livres audio spécialement …"
+    },
+    {
+      "title": "Luni/Thinklite-27B-Heretic-EXL3 · Hugging Face",
+      "url": "https://huggingface.co/Luni/Thinklite-27B-Heretic-EXL3",
+      "snippet": "Luni / Thinklite-27B-Heretic-EXL3 Like 0 Text Generation English exllamav3 exl3 thinklite reasoning thinking chain-of-thought uncensored heretic ara abliterated conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket Thinklite-27B-Heretic-EXL3 Released Branches Loading in TabbyAPI / ExLlamaV3 Model ..."
+    },
+    {
+      "title": "Lunii : tous les produits de la marque Lunii (Enfant, Jouet ... - Fnac",
+      "url": "https://www.fnac.com/Lunii/m367853/w-4",
+      "snippet": "Retrouvez tous les produits Lunii au meilleur prix à la FNAC. En quelques clics, achetez en ligne ou commandez dans un magasin …"
+    }
+  ]
+}

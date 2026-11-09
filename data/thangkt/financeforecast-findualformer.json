@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "thangkt/financeforecast-findualformer",
+  "slug": "thangkt-financeforecast-findualformer",
+  "author": "thangkt",
+  "url": "https://huggingface.co/thangkt/financeforecast-findualformer",
+  "created_at": "2026-11-09T01:20:00.000Z",
+  "updated_at": "2026-11-09T01:20:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "finance",
+    "stock-prediction",
+    "time-series",
+    "transformer",
+    "vietnam",
+    "vi",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54538920,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

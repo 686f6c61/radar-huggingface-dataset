@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mradermacher/FinchAI-Rune2-Luna-GGUF",
+  "slug": "mradermacher-finchai-rune2-luna-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/FinchAI-Rune2-Luna-GGUF",
+  "created_at": "2026-11-08T22:27:30.000Z",
+  "updated_at": "2026-11-08T22:40:28.000Z",
+  "license": "lfm-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "tool-calling",
+    "function-calling",
+    "agent",
+    "chinese",
+    "lfm3",
+    "zh",
+    "en",
+    "base_model:whcl412/FinchAI-Rune2-Luna",
+    "base_model:quantized:whcl412/FinchAI-Rune2-Luna",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 15885900288,
+  "storage_human": "15.9 GB",
+  "base_model": "whcl412/FinchAI-Rune2-Luna",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Luna-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Luna-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    }
+  ]
+}

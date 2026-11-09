@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Merge-ai-demo/merge-ia",
+  "slug": "merge-ai-demo-merge-ia",
+  "author": "Merge-ai-demo",
+  "url": "https://huggingface.co/Merge-ai-demo/merge-ia",
+  "created_at": "2026-11-08T22:39:10.000Z",
+  "updated_at": "2026-11-08T22:45:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "merge",
+    "gemma4",
+    "on-device",
+    "education",
+    "fr",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:finetune:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28575347763,
+  "storage_human": "28.6 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Merge PDF files online. Free service to merge PDF - iLovePDF",
+      "url": "https://www.ilovepdf.com/merge_pdf",
+      "snippet": "Select multiple PDF files and merge them in seconds. Merge & combine PDF files online, easily and free."
+    },
+    {
+      "title": "Demo – Merge AI",
+      "url": "https://mergexai.co/demo/",
+      "snippet": "Watch Demo LIMITED TIME 14-DAYS FREE"
+    },
+    {
+      "title": "Merge PDF: Combine PDF Files with Free PDF Combiner",
+      "url": "https://smallpdf.com/merge-pdf",
+      "snippet": "You can combine your PDFs and JPGs into a single file by uploading them to the Merge PDF tool. Just upload all your files, …"
+    },
+    {
+      "title": "Merge-ai-demo - GitHub",
+      "url": "https://github.com/Merge-ai-demo",
+      "snippet": "Merge: a free AI that runs on your own computer (Mac and Windows). Website and beta download. JavaScript 1"
+    },
+    {
+      "title": "Merge PDFs for free - Combine PDF files online - Adobe",
+      "url": "https://www.adobe.com/acrobat/online/merge-pdf.html?msockid=156b21c825a46ac7378839c324326be4",
+      "snippet": "With the merge PDF tool from Adobe Acrobat, you can combine multiple PDF documents into one file for free online. Now it’s easy to …"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/gemma-4-E4B-it-int4-sym-cw-ov",
+  "slug": "mlboydaisuke-gemma-4-e4b-it-int4-sym-cw-ov",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/gemma-4-E4B-it-int4-sym-cw-ov",
+  "created_at": "2026-11-08T19:36:39.000Z",
+  "updated_at": "2026-11-09T01:03:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "gemma4",
+    "openvino-genai",
+    "npu",
+    "int4",
+    "image-text-to-text",
+    "conversational",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:quantized:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6377491960,
+  "storage_human": "6.4 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 for Apple Core AI - a mlboydaisuke Collection",
+      "url": "https://huggingface.co/collections/mlboydaisuke/gemma-4-for-apple-core-ai",
+      "snippet": "Community .aimodel bundles of Gemma 4 (E2B, E4B, 12B, 31B) for Apple Core AI on iOS 27 / macOS 27, with recipes and measured speeds."
+    },
+    {
+      "title": "mlboydaisuke/gemma-4-E4B-CoreAI · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/gemma-4-E4B-CoreAI",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

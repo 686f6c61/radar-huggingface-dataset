@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": 753329940480,
   "parameters_human": "753.33B",
@@ -46,8 +46,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-11-07T02:09:47.011Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [
     {
       "task": "IFEval",

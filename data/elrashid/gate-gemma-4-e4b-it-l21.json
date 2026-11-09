@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "elrashid/gate-gemma-4-e4b-it-l21",
+  "slug": "elrashid-gate-gemma-4-e4b-it-l21",
+  "author": "elrashid",
+  "url": "https://huggingface.co/elrashid/gate-gemma-4-e4b-it-l21",
+  "created_at": "2026-07-04T17:18:10.000Z",
+  "updated_at": "2026-11-08T21:06:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ai-safety",
+    "guardrail",
+    "sparse-autoencoder",
+    "interpretability",
+    "quantization",
+    "prompt-classification",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "doi:10.57967/hf/9438",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 339710,
+  "storage_human": "339710 B",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elrashid/gate-gemma-4-e4b-it-l21 - Hugging Face",
+      "url": "https://huggingface.co/elrashid/gate-gemma-4-e4b-it-l21",
+      "snippet": "elrashid / gate-gemma-4-e4b-it-l21 like 0 doi:10.57967/hf/9438 ai-safety guardrail sparse-autoencoder interpretability quantization prompt-classification License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "google/gemma-4-E4B-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-E4B-it",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models' architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    }
+  ]
+}

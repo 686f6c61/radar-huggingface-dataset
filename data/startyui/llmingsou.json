@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "startyui/llmingsou",
+  "slug": "startyui-llmingsou",
+  "author": "startyui",
+  "url": "https://huggingface.co/startyui/llmingsou",
+  "created_at": "2025-04-08T09:21:18.000Z",
+  "updated_at": "2026-11-09T00:13:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13781799402,
+  "storage_human": "13.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "startyui (zhuang) - Hugging Face",
+      "url": "https://huggingface.co/startyui",
+      "snippet": "Sort: Recently updated. startyui/shoes2. Updated Aug 13, 2025. startyui/shoe. Updated Jul 22, 2025. startyui/llmingsou. Updated Jul 19, 2025"
+    }
+  ]
+}

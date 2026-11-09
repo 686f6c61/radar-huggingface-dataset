@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "edeneldith/COLM",
+  "slug": "edeneldith-colm",
+  "author": "edeneldith",
+  "url": "https://huggingface.co/edeneldith/COLM",
+  "created_at": "2026-04-04T00:00:32.000Z",
+  "updated_at": "2026-11-08T21:22:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "complex-valued",
+    "oscillating-neurons",
+    "language-model",
+    "autoregressive",
+    "word-character-hybrid",
+    "linear-time",
+    "from-scratch",
+    "text-generation",
+    "en",
+    "dataset:edeneldith/DCDM",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 498214,
+  "parameters_human": "498214",
+  "storage_bytes": 65132933,
+  "storage_human": "65 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Eden-Eldith/COLM",
+      "url": "https://github.com/Eden-Eldith/COLM",
+      "snippet": "Paper: Zenodo (PDF) | Model: HuggingFace | Dataset: HuggingFace | Predecessor: WiggleGPT (Zenodo) Author: Phillip C. O'Brien (Eden_Eldith) — ORCID 0009-0007-3961-1182 Built with: Claude (Anthropic) Autoregressive language model built entirely on complex-valued oscillating neurons. No attention mechanism, no standard linear layers in the core blocks — sequence modelling is handled by an O ..."
+    },
+    {
+      "title": "edeneldith (Phillip Obrien) - Hugging Face",
+      "url": "https://huggingface.co/edeneldith",
+      "snippet": "Recent Activity published a dataset14 days ago edeneldith/DCDM published a model14 days ago edeneldith/COLM updated a dataset14 days ago edeneldith/DCDM View all activity"
+    }
+  ]
+}

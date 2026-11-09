@@ -5,7 +5,7 @@
   "author": "GossetWorks",
   "url": "https://huggingface.co/GossetWorks/Qwen3-32B-Gosset-3.65BPW",
   "created_at": "2026-11-08T04:10:56.000Z",
-  "updated_at": "2026-11-08T06:13:57.000Z",
+  "updated_at": "2026-11-08T14:14:13.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "gosset_e8_lattice",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 4989736320,

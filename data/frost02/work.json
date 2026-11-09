@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "frost02/work",
+  "slug": "frost02-work",
+  "author": "frost02",
+  "url": "https://huggingface.co/frost02/work",
+  "created_at": "2026-11-09T02:42:30.000Z",
+  "updated_at": "2026-11-09T02:42:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stephen Rockette - Director, Personal Training at YMCA of Michiana ...",
+      "url": "https://www.zoominfo.com/p/Stephen-Rockette/6022717639",
+      "snippet": "Get the details of Stephen Rockette's business profile including email address, phone number, work history and more."
+    }
+  ]
+}

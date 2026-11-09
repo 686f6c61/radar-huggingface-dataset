@@ -18,7 +18,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 118,
+  "downloads_30d": 2,
   "trending_score": 0,
   "parameters": 25233142046,
   "parameters_human": "25.23B",
@@ -30,8 +30,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-15T08:20:30.664Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

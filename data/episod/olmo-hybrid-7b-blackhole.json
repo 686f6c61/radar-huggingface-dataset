@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "episod/olmo-hybrid-7b-blackhole",
+  "slug": "episod-olmo-hybrid-7b-blackhole",
+  "author": "episod",
+  "url": "https://huggingface.co/episod/olmo-hybrid-7b-blackhole",
+  "created_at": "2026-11-08T19:09:05.000Z",
+  "updated_at": "2026-11-08T20:43:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackhole",
+    "gated-delta-net",
+    "hybrid",
+    "olmo",
+    "tenstorrent",
+    "tt-model",
+    "tt-model-catalog",
+    "text-generation",
+    "base_model:allenai/Olmo-Hybrid-7B",
+    "base_model:finetune:allenai/Olmo-Hybrid-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "allenai/Olmo-Hybrid-7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Olmo-Hybrid-7B - The AI Toolchain",
+      "url": "https://aitoolchain.io/tools/olmo-hybrid-7b/",
+      "snippet": "Olmo-Hybrid-7B is a chat model from Ai2. Tracked by The AI Toolchain: releases, features and commands as Olmo-Hybrid-7B ships them."
+    },
+    {
+      "title": "EPISOD SPORTS STUDIOS",
+      "url": "https://www.episod.com/",
+      "snippet": "OFFRES ENTREPRISES ON DEMAND EPISOD Rules FAQ Conditions Devenir trainer Contacter la team"
+    },
+    {
+      "title": "Olmo-Hybrid-7B — AI Model Details | Applied",
+      "url": "https://theapplied.co/models/allenai-olmo-hybrid-7b",
+      "snippet": "Model Description Model Details Model Card for Olmo Hybrid (7B) We expand on our Olmo model series by introducing Olmo Hybrid, a new 7B hybrid RNN model in the Olmo family. Olmo Hybrid dramatically outperforms Olmo 3 in final performance, consistently showing roughly 2x data efficiency on core evals over the course of our pretraining run."
+    },
+    {
+      "title": "Planning - Episod",
+      "url": "https://www.episod.com/planning/",
+      "snippet": "Place de Clichy Studio Cycling Dimanche"
+    },
+    {
+      "title": "Olmo-core/src/scripts/official/OLMo-hybrid at main · allenai ... - GitHub",
+      "url": "https://github.com/allenai/OLMo-core/tree/main/src/scripts/official/OLMo-hybrid",
+      "snippet": "OLMo-Hybrid-7B is a hybrid architecture combining Gated Delta Net (GDN) recurrent layers with standard attention layers in a 3:1 ratio (3 GDN layers followed by 1 attention layer, repeating). The model is based on OLMo3 7B but with reduced attention heads to match params/TPS for fair comparison with the pure transformer variant."
+    }
+  ]
+}

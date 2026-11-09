@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "JeanCoder/jean-models",
+  "slug": "jeancoder-jean-models",
+  "author": "JeanCoder",
+  "url": "https://huggingface.co/JeanCoder/jean-models",
+  "created_at": "2026-11-02T01:43:39.000Z",
+  "updated_at": "2026-11-08T22:37:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 982,
+  "trending_score": 0,
+  "parameters": 318767104,
+  "parameters_human": "318.8M",
+  "storage_bytes": 71582737376,
+  "storage_human": "71.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Jeans Model Generator for Denim Brands | TinTin",
+      "url": "https://tintin-x.com/use-cases/ai-jeans-models",
+      "snippet": "What is AI Jeans Models? AI Jeans Model Generator is a virtual try-on tool that renders jeans from flat-lay, hanger or mannequin images onto realistic AI models, keeping the cut, leg opening, wash, fading and stitching true for product listings and ads. Denim is bought on fit and wash, and both are hard to judge from a flat-lay."
+    },
+    {
+      "title": "JeanCoder (JeanCodeee) - Hugging Face",
+      "url": "https://huggingface.co/JeanCoder",
+      "snippet": "Recent Activity updated a modelabout 9 hours ago JeanCoder/jean-models published a model1 day ago JeanCoder/jean-models updated a model4 days ago JeanCoder/jean-models View all activity"
+    }
+  ]
+}

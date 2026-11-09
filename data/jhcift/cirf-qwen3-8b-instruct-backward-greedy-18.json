@@ -5,7 +5,7 @@
   "author": "JhCIFT",
   "url": "https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-18",
   "created_at": "2026-11-02T12:04:10.000Z",
-  "updated_at": "2026-11-02T12:10:17.000Z",
+  "updated_at": "2026-11-08T10:22:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 8192758784,
   "parameters_human": "8.19B",
-  "storage_bytes": 16397080744,
-  "storage_human": "16.4 GB",
+  "storage_bytes": 32782644376,
+  "storage_human": "32.8 GB",
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"

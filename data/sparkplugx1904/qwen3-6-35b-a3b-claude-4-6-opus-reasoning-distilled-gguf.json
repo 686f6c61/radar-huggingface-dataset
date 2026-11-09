@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Sparkplugx1904/Qwen3.6-35B-A3B-Claude-4.6-Opus-Reasoning-Distilled-GGUF",
+  "slug": "sparkplugx1904-qwen3-6-35b-a3b-claude-4-6-opus-reasoning-distilled-gguf",
+  "author": "Sparkplugx1904",
+  "url": "https://huggingface.co/Sparkplugx1904/Qwen3.6-35B-A3B-Claude-4.6-Opus-Reasoning-Distilled-GGUF",
+  "created_at": "2026-11-09T03:18:16.000Z",
+  "updated_at": "2026-11-09T03:18:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen",
+    "qwen3.6",
+    "qwen3_5_moe",
+    "moe",
+    "reasoning",
+    "chain-of-thought",
+    "conversational",
+    "quantized",
+    "unsloth",
+    "text-generation",
+    "en",
+    "dataset:nohurry/Opus-4.6-Reasoning-3000x-filtered",
+    "dataset:Jackrong/Qwen3.5-reasoning-700x",
+    "dataset:Roman1111111/claude-opus-4.6-10000x",
+    "base_model:hesamation/Qwen3.6-35B-A3B-Claude-4.6-Opus-Reasoning-Distilled",
+    "base_model:quantized:hesamation/Qwen3.6-35B-A3B-Claude-4.6-Opus-Reasoning-Distilled",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 111313185536,
+  "storage_human": "111.3 GB",
+  "base_model": "hesamation/Qwen3.6-35B-A3B-Claude-4.6-Opus-Reasoning-Distilled",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU-Pro",
+      "metric": "exact_match, custom-extract, limited sample on source merged model",
+      "value": 75.71
+    }
+  ],
+  "sources": []
+}

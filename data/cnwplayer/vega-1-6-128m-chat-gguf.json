@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "CNWPlayer/Vega-1.6-128M-Chat-GGUF",
+  "slug": "cnwplayer-vega-1-6-128m-chat-gguf",
+  "author": "CNWPlayer",
+  "url": "https://huggingface.co/CNWPlayer/Vega-1.6-128M-Chat-GGUF",
+  "created_at": "2026-11-08T22:51:50.000Z",
+  "updated_at": "2026-11-08T22:53:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/cosmopedia",
+    "dataset:AxiomicLabs/NPset-2-Python-Edu",
+    "dataset:open-web-math/open-web-math",
+    "dataset:HuggingFaceTB/smoltalk",
+    "base_model:CNWPlayer/Vega-1.6-128M-Chat",
+    "base_model:quantized:CNWPlayer/Vega-1.6-128M-Chat",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 128410368,
+  "parameters_human": "128.4M",
+  "storage_bytes": 258012480,
+  "storage_human": "258 MB",
+  "base_model": "CNWPlayer/Vega-1.6-128M-Chat",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CNWPlayer/Vega-1.6-128M-Chat · Hugging Face",
+      "url": "https://huggingface.co/CNWPlayer/Vega-1.6-128M-Chat",
+      "snippet": "Note: AI was used in the creation of this project. But that's why you're here, isn't it? This is the chat-tuned model for Vega-1.6-128M, an experimental SLM trained on various datasets. (Ha! I've learned from last time ..."
+    },
+    {
+      "title": "Vega-1.6-128M-Chat: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-cnwplayer-vega-1-6-128m-chat",
+      "snippet": "Model card indexed from Hugging Face. Specs: 128M parameters, sourced from Hugging Face. Compare Vega-1.6-128M-Chat's parameters, context window, pricing and be"
+    }
+  ]
+}

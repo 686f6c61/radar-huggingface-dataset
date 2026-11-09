@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "bcckfdn/cevher3-test-3",
+  "slug": "bcckfdn-cevher3-test-3",
+  "author": "bcckfdn",
+  "url": "https://huggingface.co/bcckfdn/cevher3-test-3",
+  "created_at": "2026-11-08T22:21:54.000Z",
+  "updated_at": "2026-11-08T22:22:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "gemma3",
+    "turkish",
+    "conversational",
+    "tr",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1256312832,
+  "parameters_human": "1.26B",
+  "storage_bytes": 2512676912,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bcckfdn/cevher-test-3-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/bcckfdn/cevher-test-3-GGUF/tree/main",
+      "snippet": "Instructions to use bcckfdn/cevher-test-3-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use bcckfdn/cevher-test-3-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "bcckfdn/cevher-test-3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bcckfdn/cevher-test-3-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

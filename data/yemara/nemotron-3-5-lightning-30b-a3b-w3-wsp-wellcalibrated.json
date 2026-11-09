@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "yemara/Nemotron-3.5-Lightning-30B-A3B-W3-WSP-WellCalibrated",
+  "slug": "yemara-nemotron-3-5-lightning-30b-a3b-w3-wsp-wellcalibrated",
+  "author": "yemara",
+  "url": "https://huggingface.co/yemara/Nemotron-3.5-Lightning-30B-A3B-W3-WSP-WellCalibrated",
+  "created_at": "2026-11-04T13:51:37.000Z",
+  "updated_at": "2026-11-05T17:28:58.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "nemotron_h",
+    "quantization",
+    "3-bit",
+    "nemotron",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17296669108,
+  "storage_human": "17.3 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nemotron 3.5 Lightning (30B A3B) Benchmarks, Pricing & Context Window",
+      "url": "https://llm-stats.com/models/nemotron-3.5-lightning-30b-a3b",
+      "snippet": "The most-compared alternatives to Nemotron 3.5 Lightning (30B A3B) are Kimi K2 0905, Llama 3.1 Nemotron Ultra 253B v1, Qwen3 VL 235B A22B Instruct. Open any pair side-by-side for benchmarks, pricing, context, and latency."
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
+      "snippet": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 is a large language model (LLM) trained by NVIDIA. The model employs a hybrid Mixture-of-Experts architecture, utilizing interleaved Mamba-2 and MoE layers, along with select Attention layers. The Lightning 3.5 model is released alongside a number of speculative decoding methods for faster text ..."
+    }
+  ]
+}

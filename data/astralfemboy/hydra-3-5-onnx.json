@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "AstralFemboy/hydra-3.5-onnx",
+  "slug": "astralfemboy-hydra-3-5-onnx",
+  "author": "AstralFemboy",
+  "url": "https://huggingface.co/AstralFemboy/hydra-3.5-onnx",
+  "created_at": "2026-11-08T22:48:46.000Z",
+  "updated_at": "2026-11-08T22:49:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "e621",
+    "image-tagging",
+    "furry",
+    "image-classification",
+    "base_model:RedRocket/Hydra",
+    "base_model:quantized:RedRocket/Hydra",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2105679062,
+  "storage_human": "2.1 GB",
+  "base_model": "RedRocket/Hydra",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

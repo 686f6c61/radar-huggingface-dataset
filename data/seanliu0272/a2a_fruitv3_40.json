@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "SeanLiu0272/a2a_fruitV3_40",
+  "slug": "seanliu0272-a2a_fruitv3_40",
+  "author": "SeanLiu0272",
+  "url": "https://huggingface.co/SeanLiu0272/a2a_fruitV3_40",
+  "created_at": "2026-11-08T22:35:05.000Z",
+  "updated_at": "2026-11-09T00:37:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "imitation-learning",
+    "flow-matching",
+    "a2a",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2699055765,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SeanLiu0272 (Haotian Liu) - Hugging Face",
+      "url": "https://huggingface.co/SeanLiu0272",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 25 days ago ... published a model 25 days ago ... updated a model 25 days ago"
+    },
+    {
+      "title": "SeanLiu0272 (Haotian Liu) - Hugging Face",
+      "url": "https://huggingface.co/SeanLiu0272/models",
+      "snippet": "User profile of Haotian Liu on Hugging Face"
+    }
+  ]
+}

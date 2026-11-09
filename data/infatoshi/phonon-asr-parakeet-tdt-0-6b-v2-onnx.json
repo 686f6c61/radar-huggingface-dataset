@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Infatoshi/phonon-asr-parakeet-tdt-0.6b-v2-onnx",
+  "slug": "infatoshi-phonon-asr-parakeet-tdt-0-6b-v2-onnx",
+  "author": "Infatoshi",
+  "url": "https://huggingface.co/Infatoshi/phonon-asr-parakeet-tdt-0.6b-v2-onnx",
+  "created_at": "2026-11-09T03:02:46.000Z",
+  "updated_at": "2026-11-09T03:03:15.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "parakeet",
+    "tdt",
+    "int8",
+    "android",
+    "phonon",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:nvidia/parakeet-tdt-0.6b-v2",
+    "base_model:quantized:nvidia/parakeet-tdt-0.6b-v2",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 661223051,
+  "storage_human": "661 MB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

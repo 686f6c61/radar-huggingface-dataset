@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "MatterWaveAI/GRT-ARC-v2",
+  "slug": "matterwaveai-grt-arc-v2",
+  "author": "MatterWaveAI",
+  "url": "https://huggingface.co/MatterWaveAI/GRT-ARC-v2",
+  "created_at": "2026-11-09T01:03:40.000Z",
+  "updated_at": "2026-11-09T01:03:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "arc-agi",
+    "abstract-reasoning",
+    "geometric-deep-learning",
+    "world-model",
+    "test-time-training",
+    "rotational-transformer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2181048,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

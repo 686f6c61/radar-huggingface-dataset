@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Miraiyochi/world-model-qa-atari",
+  "slug": "miraiyochi-world-model-qa-atari",
+  "author": "Miraiyochi",
+  "url": "https://huggingface.co/Miraiyochi/world-model-qa-atari",
+  "created_at": "2026-11-08T13:01:14.000Z",
+  "updated_at": "2026-11-09T03:31:08.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "world-model",
+    "game-qa",
+    "research-archive",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60502368720,
+  "storage_human": "60.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

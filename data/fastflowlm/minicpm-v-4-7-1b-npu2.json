@@ -5,7 +5,7 @@
   "author": "FastFlowLM",
   "url": "https://huggingface.co/FastFlowLM/MiniCPM-V-4.7-1B-NPU2",
   "created_at": "2026-10-06T18:00:36.000Z",
-  "updated_at": "2026-11-07T15:51:47.000Z",
+  "updated_at": "2026-11-08T18:11:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

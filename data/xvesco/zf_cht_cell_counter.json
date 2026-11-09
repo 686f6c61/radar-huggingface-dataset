@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "xvesco/zf_cht_cell_counter",
+  "slug": "xvesco-zf_cht_cell_counter",
+  "author": "xvesco",
+  "url": "https://huggingface.co/xvesco/zf_cht_cell_counter",
+  "created_at": "2026-10-17T17:25:27.000Z",
+  "updated_at": "2026-11-08T22:41:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "fluorescence-microscopy",
+    "hspc",
+    "cht",
+    "cell-counting",
+    "unet",
+    "biology",
+    "image-segmentation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 744864726,
+  "storage_human": "745 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xvesco/zf_cht_cell_counter · Hugging Face",
+      "url": "https://huggingface.co/xvesco/zf_cht_cell_counter",
+      "snippet": "xvesco / zf_cht_cell_counter Like 0 Image Segmentation fluorescence-microscopy hspc cht cell-counting unet biology License:mit Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "xvesco (Xavier Vesco) - Hugging Face",
+      "url": "https://huggingface.co/xvesco",
+      "snippet": "Recent Activity updated a model2 days ago xvesco/zf_cht_cell_counter published a model2 days ago xvesco/zf_cht_cell_counter View all activity"
+    }
+  ]
+}

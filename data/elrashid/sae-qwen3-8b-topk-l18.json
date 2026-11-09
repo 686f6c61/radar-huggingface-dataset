@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "elrashid/sae-qwen3-8b-topk-l18",
+  "slug": "elrashid-sae-qwen3-8b-topk-l18",
+  "author": "elrashid",
+  "url": "https://huggingface.co/elrashid/sae-qwen3-8b-topk-l18",
+  "created_at": "2026-07-02T02:26:21.000Z",
+  "updated_at": "2026-11-08T21:07:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "sparse-autoencoder",
+    "mechanistic-interpretability",
+    "interpretability",
+    "ai-safety",
+    "quantization",
+    "topk-sae",
+    "dataset:monology/pile-uncopyrighted",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "doi:10.57967/hf/9451",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2147797605,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elrashid/sae-qwen3-8b-topk-l18 · Hugging Face",
+      "url": "https://huggingface.co/elrashid/sae-qwen3-8b-topk-l18",
+      "snippet": "A TopK sparse autoencoder for Qwen/Qwen3-8B, residual-stream layer 18 (d_in=4096, d_sae=65536, k=64, FVU=0.4224). Trained with the v2 recipe (BOS-drop + per-dim standardization) for The Refusal Slope: A Mechanistic Taxonomy of Feature Fate in Quantized Edge Intelligence (M. Elrashid, BUiD)."
+    },
+    {
+      "title": "elrashid/sae-qwen3-8b-topk-l18 at main - Hugging Face",
+      "url": "https://huggingface.co/elrashid/sae-qwen3-8b-topk-l18/tree/main",
+      "snippet": "elrashid / sae-qwen3-8b-topk-l18 like 0 sparse-autoencoder interpretability mechanistic-interpretability quantization safety License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    }
+  ]
+}

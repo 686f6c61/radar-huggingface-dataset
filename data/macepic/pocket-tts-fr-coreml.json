@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "MacEpic/pocket-tts-fr-coreml",
+  "slug": "macepic-pocket-tts-fr-coreml",
+  "author": "MacEpic",
+  "url": "https://huggingface.co/MacEpic/pocket-tts-fr-coreml",
+  "created_at": "2026-11-08T23:27:26.000Z",
+  "updated_at": "2026-11-08T23:27:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "coreml",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "coreml",
+    "pocket-tts",
+    "xn-ptts",
+    "text-to-speech",
+    "fr",
+    "base_model:kyutai/pocket-tts-without-voice-cloning",
+    "base_model:quantized:kyutai/pocket-tts-without-voice-cloning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229437425,
+  "storage_human": "229 MB",
+  "base_model": "kyutai/pocket-tts-without-voice-cloning",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - kyutai-labs/pocket-tts: A TTS that fits in your CPU (and ...",
+      "url": "https://github.com/kyutai-labs/pocket-tts",
+      "snippet": "A TTS that fits in your CPU (and pocket). Contribute to kyutai-labs/pocket-tts development by creating an account on GitHub."
+    },
+    {
+      "title": "Pocket TTS - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Pocket_TTS",
+      "snippet": "Pocket TTS is a lightweight, open-source text-to-speech model developed by the French AI research laboratory Kyutai and released in September 2025. With approximately 100 million parameters in its distilled inference form, Pocket TTS achieves speech synthesis quality competitive with much larger models while running faster than real time on a standard laptop CPU without requiring a graphics ..."
+    }
+  ]
+}

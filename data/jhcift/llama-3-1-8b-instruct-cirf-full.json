@@ -5,7 +5,7 @@
   "author": "JhCIFT",
   "url": "https://huggingface.co/JhCIFT/Llama-3.1-8B-Instruct-CIRF-Full",
   "created_at": "2026-11-02T12:23:20.000Z",
-  "updated_at": "2026-11-02T12:29:04.000Z",
+  "updated_at": "2026-11-08T10:32:37.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 8034471936,
   "parameters_human": "8.03B",
-  "storage_bytes": 16086282126,
-  "storage_human": "16.1 GB",
+  "storage_bytes": 32155259870,
+  "storage_human": "32.2 GB",
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"

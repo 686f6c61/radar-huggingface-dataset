@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "malkolm777/zils-lite-decision-v5",
+  "slug": "malkolm777-zils-lite-decision-v5",
+  "author": "malkolm777",
+  "url": "https://huggingface.co/malkolm777/zils-lite-decision-v5",
+  "created_at": "2026-11-08T23:28:42.000Z",
+  "updated_at": "2026-11-08T23:29:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "feature-extraction",
+    "decision-model",
+    "zils",
+    "d3-lite",
+    "custom_code",
+    "base_model:zils-ai/jiwo-0.8b-full",
+    "base_model:finetune:zils-ai/jiwo-0.8b-full",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1719880230,
+  "storage_human": "1.7 GB",
+  "base_model": "zils-ai/jiwo-0.8b-full",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zils — Teach AI to make decisions your way.",
+      "url": "https://zils.ai/",
+      "snippet": "Zils Zils Teach AI to make decisions your way. Show Zils examples with the right answers. It trains a small model your app can use to sort requests, flag problems, or score matches."
+    },
+    {
+      "title": "malkolm777/zils-lite-decision-v1 at main - Hugging Face",
+      "url": "https://huggingface.co/malkolm777/zils-lite-decision-v1/tree/main",
+      "snippet": "Instructions to use malkolm777/zils-lite-decision-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use malkolm777/zils-lite-decision-v1 with Transformers:"
+    }
+  ]
+}

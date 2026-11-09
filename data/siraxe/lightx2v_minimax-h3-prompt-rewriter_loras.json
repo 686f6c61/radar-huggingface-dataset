@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "siraxe/lightx2v_MiniMax-H3-Prompt-Rewriter_loras",
+  "slug": "siraxe-lightx2v_minimax-h3-prompt-rewriter_loras",
+  "author": "siraxe",
+  "url": "https://huggingface.co/siraxe/lightx2v_MiniMax-H3-Prompt-Rewriter_loras",
+  "created_at": "2026-11-08T23:33:32.000Z",
+  "updated_at": "2026-11-08T23:46:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "MiniMax H3",
+    "Prompt Rewriter",
+    "Qwen3.8-27B",
+    "en",
+    "base_model:lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-FL2VA",
+    "base_model:finetune:lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-FL2VA",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1867949984,
+  "storage_human": "1.9 GB",
+  "base_model": "lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-FL2VA, lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA-8B · Hugging Face",
+      "url": "https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-LoRA-8B",
+      "snippet": "This repository contains a PEFT LoRA adapter that turns short user requests into production-oriented prompts for MiniMax-H3 joint audio-video generation. It is built on Qwen3-VL-8B-Instruct and supports text-only and keyframe-conditioned rewriting. Compared with MiniMax-H3-Prompt-Rewriter-LoRA, this ..."
+    },
+    {
+      "title": "MiniMax-H3-Prompt-Rewriter-ComfyUI - GitHub",
+      "url": "https://github.com/pytraveler/MiniMax-H3-Prompt-Rewriter-ComfyUI",
+      "snippet": "ComfyUI nodes for the LightX2V MiniMax-H3 T2VA Prompt Rewriter LoRA. A short prompt goes in; a structured, production-ready audio-video description for MiniMax-H3 comes out — entirely locally. Русская версия · 中文版 · Changelog The prompt may be in any language the base model reads; the rewrite comes back in English, which is what MiniMax-H3 expects."
+    }
+  ]
+}

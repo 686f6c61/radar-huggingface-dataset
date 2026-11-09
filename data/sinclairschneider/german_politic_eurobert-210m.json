@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "SinclairSchneider/german_politic_EuroBERT-210m",
+  "slug": "sinclairschneider-german_politic_eurobert-210m",
+  "author": "SinclairSchneider",
+  "url": "https://huggingface.co/SinclairSchneider/german_politic_EuroBERT-210m",
+  "created_at": "2025-03-20T10:27:28.000Z",
+  "updated_at": "2026-11-09T01:43:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "eurobert",
+    "text-classification",
+    "politics",
+    "political-text-detection",
+    "german",
+    "long-context",
+    "news",
+    "binary-classification",
+    "custom_code",
+    "de",
+    "dataset:SinclairSchneider/trainset_political_text_yes_no_german",
+    "arxiv:1910.09700",
+    "arxiv:2503.05500",
+    "base_model:EuroBERT/EuroBERT-210m",
+    "base_model:finetune:EuroBERT/EuroBERT-210m",
+    "doi:10.57967/hf/9334",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 212358146,
+  "parameters_human": "212.4M",
+  "storage_bytes": 1291383991,
+  "storage_human": "1.3 GB",
+  "base_model": "EuroBERT/EuroBERT-210m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Political text detection",
+      "dataset": "trainset_political_text_yes_no_german (random 20% held-out split)",
+      "metric": "Accuracy",
+      "value": 0.9957
+    },
+    {
+      "task": "Political text detection",
+      "dataset": "trainset_political_text_yes_no_german (random 20% held-out split)",
+      "metric": "Weighted F1",
+      "value": 0.9957
+    },
+    {
+      "task": "Political text detection (out-of-domain)",
+      "dataset": "10kGNAD (derStandard.at), Inland + International vs. rest",
+      "metric": "ROC-AUC",
+      "value": 0.8596
+    },
+    {
+      "task": "Political text detection (out-of-domain)",
+      "dataset": "10kGNAD (derStandard.at), Inland + International vs. rest",
+      "metric": "Recall politic (threshold 0.5)",
+      "value": 0.9996
+    },
+    {
+      "task": "Political text detection (out-of-domain)",
+      "dataset": "10kGNAD (derStandard.at), Inland + International vs. rest",
+      "metric": "Accuracy (threshold 0.5)",
+      "value": 0.3748
+    },
+    {
+      "task": "Political text detection (out-of-domain)",
+      "dataset": "10kGNAD (derStandard.at), Inland + International vs. rest",
+      "metric": "F1 politic (threshold 0.5)",
+      "value": 0.44
+    }
+  ],
+  "sources": []
+}

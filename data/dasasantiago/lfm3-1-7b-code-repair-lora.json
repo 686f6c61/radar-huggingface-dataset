@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "DasaSantiago/lfm3-1.7b-code-repair-lora",
+  "slug": "dasasantiago-lfm3-1-7b-code-repair-lora",
+  "author": "DasaSantiago",
+  "url": "https://huggingface.co/DasaSantiago/lfm3-1.7b-code-repair-lora",
+  "created_at": "2026-11-08T22:06:38.000Z",
+  "updated_at": "2026-11-08T22:07:16.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "code-repair",
+    "lfm3",
+    "swe-smith",
+    "en",
+    "code",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:adapter:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16468736,
+  "parameters_human": "16.5M",
+  "storage_bytes": 98875352,
+  "storage_human": "99 MB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM3-1.7B - Liquid AI Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm3-1.7b",
+      "snippet": "1.7B text model for local agents and specialized applications, with a 256K context window and native tool calling ← Back to Text Models LFM3-1.7B is Liquid AI’s text model for local agents and specialized applications, based on the new LFM3 tri-hybrid architecture."
+    },
+    {
+      "title": "README.md · LiquidAI/LFM3-1.7B at main - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/README.md",
+      "snippet": "LiquidAI / LFM3-1.7B Like 212 Follow Liquid AI 6.38k Text Generation Transformers Safetensors 16 languages lfm3 liquid edge conversational custom_code License:lfm1.0 Model card FilesFiles and versions xet Community 3 Deploy Copy to bucket Use this model"
+    }
+  ]
+}

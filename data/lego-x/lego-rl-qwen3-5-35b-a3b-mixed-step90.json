@@ -5,7 +5,7 @@
   "author": "Lego-X",
   "url": "https://huggingface.co/Lego-X/Lego-RL-Qwen3.5-35B-A3B-Mixed-step90",
   "created_at": "2026-11-06T02:21:46.000Z",
-  "updated_at": "2026-11-06T02:32:01.000Z",
+  "updated_at": "2026-11-09T01:55:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 228,
+  "downloads_30d": 234,
   "trending_score": 0,
   "parameters": 35951822704,
   "parameters_human": "35.95B",

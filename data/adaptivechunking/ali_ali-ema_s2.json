@@ -5,7 +5,7 @@
   "author": "AdaptiveChunking",
   "url": "https://huggingface.co/AdaptiveChunking/ali_ali-ema_s2",
   "created_at": "2026-11-08T14:53:05.000Z",
-  "updated_at": "2026-11-08T15:08:05.000Z",
+  "updated_at": "2026-11-08T16:54:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 22785088,
   "parameters_human": "22.8M",
-  "storage_bytes": 13051892220,
-  "storage_human": "13.1 GB",
+  "storage_bytes": 19907141754,
+  "storage_human": "19.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "bunnycore/Qcoder-2B-Low-Lora",
+  "slug": "bunnycore-qcoder-2b-low-lora",
+  "author": "bunnycore",
+  "url": "https://huggingface.co/bunnycore/Qcoder-2B-Low-Lora",
+  "created_at": "2026-11-08T20:28:14.000Z",
+  "updated_at": "2026-11-08T20:28:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:unsloth/Qwen3.5-2B",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3.5-2B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16819200,
+  "parameters_human": "16.8M",
+  "storage_bytes": 146178621,
+  "storage_human": "146 MB",
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bunnycore/Qcoder-v1-2B-30Steps-Lora · Hugging Face",
+      "url": "https://huggingface.co/bunnycore/Qcoder-v1-2B-30Steps-Lora",
+      "snippet": "Instructions to use bunnycore/Qcoder-v1-2B-30Steps-Lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use bunnycore/Qcoder-v1-2B-30Steps-Lora with PEFT:"
+    },
+    {
+      "title": "bunnycore/Llama-3.2-3b-Coder-lora_model · Hugging Face",
+      "url": "https://huggingface.co/bunnycore/Llama-3.2-3b-Coder-lora_model",
+      "snippet": "Uploaded model Developed by: bunnycore License: apache-2.0 Finetuned from model : unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit This llama model was trained 2x faster with Unsloth and Huggingface's TRL library."
+    }
+  ]
+}

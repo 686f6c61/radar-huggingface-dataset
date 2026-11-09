@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "haidang33/hds-crime-studio-mac-cong-khai",
+  "slug": "haidang33-hds-crime-studio-mac-cong-khai",
+  "author": "haidang33",
+  "url": "https://huggingface.co/haidang33/hds-crime-studio-mac-cong-khai",
+  "created_at": "2026-11-09T02:59:41.000Z",
+  "updated_at": "2026-11-09T02:59:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 233576204,
+  "storage_human": "234 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "0xrushi",
   "url": "https://huggingface.co/0xrushi/chesslfm-experiments",
   "created_at": "2026-11-08T00:09:39.000Z",
-  "updated_at": "2026-11-08T00:24:53.000Z",
+  "updated_at": "2026-11-08T12:48:09.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -18,8 +18,8 @@
     "lfm2",
     "research",
     "text-generation",
-    "base_model:mlabonne/LFM2.5-230M-Chess",
-    "base_model:finetune:mlabonne/LFM2.5-230M-Chess",
+    "base_model:LiquidAI/LFM2.5-230M-Base",
+    "base_model:finetune:LiquidAI/LFM2.5-230M-Base",
     "license:other",
     "endpoints_compatible",
     "region:us"
@@ -31,7 +31,7 @@
   "parameters_human": null,
   "storage_bytes": 4152466424,
   "storage_human": "4.2 GB",
-  "base_model": "mlabonne/LFM2.5-230M-Chess",
+  "base_model": "LiquidAI/LFM2.5-230M-Base",
   "formats": [
     "safetensors"
   ],

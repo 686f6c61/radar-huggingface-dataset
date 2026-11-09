@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "clairemcw/mimia-student-aligner",
+  "slug": "clairemcw-mimia-student-aligner",
+  "author": "clairemcw",
+  "url": "https://huggingface.co/clairemcw/mimia-student-aligner",
+  "created_at": "2026-11-08T21:38:13.000Z",
+  "updated_at": "2026-11-08T21:40:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "ctc",
+    "forced-alignment",
+    "multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33688225,
+  "storage_human": "34 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "clairemcw (Claire McWhite) – Models - Hugging Face",
+      "url": "https://huggingface.co/clairemcw/models",
+      "snippet": "Bio, Protein LMs Recent Activity updated a modelabout 19 hours ago clairemcw/omnilingual-asr-300M-ctc-v2-int8 published a modelabout 19 hours ago clairemcw/omnilingual-asr-300M-ctc-v2-int8 updated a model6 months ago clairemcw/sherpa-onnx-whisper-small-attention View all activity"
+    },
+    {
+      "title": "Models by Claire McWhite – Hugging Face",
+      "url": "https://huggingface.co/models?author=clairemcw&sort=modified",
+      "snippet": "Safetensors + 46 + 48 + 45 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Llama Draw Things DiffusionBee + 9 + 11 Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai + 9 + 11 + 10 Hardware Add your hardware Apply filters Models 4 Base only Inference AvailableInference Edit filters Sort: Recently updated ..."
+    }
+  ]
+}

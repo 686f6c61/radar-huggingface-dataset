@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "sksak/act_block",
+  "slug": "sksak-act_block",
+  "author": "sksak",
+  "url": "https://huggingface.co/sksak/act_block",
+  "created_at": "2026-11-08T20:33:24.000Z",
+  "updated_at": "2026-11-08T20:34:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:sksak/block_20261108_185930",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SkalskiP/SO-ARM101-blocks-act · Hugging Face",
+      "url": "https://huggingface.co/SkalskiP/SO-ARM101-blocks-act",
+      "snippet": "Instructions to use SkalskiP/SO-ARM101-blocks-act with libraries, inference providers, notebooks, and local apps. Follow these links to get started ..."
+    },
+    {
+      "title": "SkalskiP/SO-ARM101-blocks-act-v3 · Hugging Face",
+      "url": "https://huggingface.co/SkalskiP/SO-ARM101-blocks-act-v3",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

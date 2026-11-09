@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "marco1988/saudescope-hipertensao",
+  "slug": "marco1988-saudescope-hipertensao",
+  "author": "marco1988",
+  "url": "https://huggingface.co/marco1988/saudescope-hipertensao",
+  "created_at": "2026-11-09T04:33:40.000Z",
+  "updated_at": "2026-11-09T04:39:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "tabular-classification",
+    "saude",
+    "epidemiologia",
+    "hipertensao",
+    "pns-2019",
+    "pt",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2406,
+  "storage_human": "2406 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

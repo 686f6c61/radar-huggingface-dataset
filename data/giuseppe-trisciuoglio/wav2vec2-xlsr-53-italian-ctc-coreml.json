@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "giuseppe-trisciuoglio/wav2vec2-xlsr-53-italian-ctc-coreml",
+  "slug": "giuseppe-trisciuoglio-wav2vec2-xlsr-53-italian-ctc-coreml",
+  "author": "giuseppe-trisciuoglio",
+  "url": "https://huggingface.co/giuseppe-trisciuoglio/wav2vec2-xlsr-53-italian-ctc-coreml",
+  "created_at": "2026-11-08T21:42:24.000Z",
+  "updated_at": "2026-11-08T21:43:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coreml",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "coreml",
+    "wav2vec2",
+    "ctc",
+    "forced-alignment",
+    "it",
+    "base_model:jonatasgrosman/wav2vec2-large-xlsr-53-italian",
+    "base_model:finetune:jonatasgrosman/wav2vec2-large-xlsr-53-italian",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 630993038,
+  "storage_human": "631 MB",
+  "base_model": "jonatasgrosman/wav2vec2-large-xlsr-53-italian",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WAV2VEC2_XLSR53 — Torchaudio 2.11 documentation",
+      "url": "https://docs.pytorch.org/audio/stable/generated/torchaudio.pipelines.WAV2VEC2_XLSR53.html",
+      "snippet": "WAV2VEC2_XLSR53 ¶ torchaudio.pipelines.WAV2VEC2_XLSR53 ¶ Wav2vec 2.0 model (“base” architecture), pre-trained on 56,000 hours of unlabeled audio from multiple datasets ( Multilingual LibriSpeech [Pratap et al., 2020], CommonVoice [Ardila et al., 2020] and BABEL [Gales et al., 2014]), not fine-tuned."
+    },
+    {
+      "title": "WAV2VEC2_XLSR53 — Torchaudio 2.3.0 documentation",
+      "url": "https://docs.pytorch.org/audio/2.3/generated/torchaudio.pipelines.WAV2VEC2_XLSR53.html",
+      "snippet": "Wav2vec 2.0 model (“base” architecture), pre-trained on 56,000 hours of unlabeled audio from multiple datasets ( Multilingual LibriSpeech[Pratap et al., 2020], CommonVoice[Ardila et al., 2020] and BABEL[Gales et al., 2014]), not fine-tuned."
+    },
+    {
+      "title": "Giuseppe - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Giuseppe",
+      "snippet": "Giuseppe is the Italian form of the given name Joseph, from Latin Iōsēphus from Ancient Greek Ἰωσήφ (Iōsḗph), from Hebrew יוסף. …"
+    }
+  ]
+}

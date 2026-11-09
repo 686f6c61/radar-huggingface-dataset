@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "iPwnds/lexeuropa-qwen3b-lora-v4",
+  "slug": "ipwnds-lexeuropa-qwen3b-lora-v4",
+  "author": "iPwnds",
+  "url": "https://huggingface.co/iPwnds/lexeuropa-qwen3b-lora-v4",
+  "created_at": "2026-11-06T00:48:50.000Z",
+  "updated_at": "2026-11-09T01:47:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "legal",
+    "eu-law",
+    "rag",
+    "lora",
+    "sft",
+    "trl",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 251030725,
+  "storage_human": "251 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

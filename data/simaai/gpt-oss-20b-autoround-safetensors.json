@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "simaai/gpt-oss-20b-Autoround-Safetensors",
+  "slug": "simaai-gpt-oss-20b-autoround-safetensors",
+  "author": "simaai",
+  "url": "https://huggingface.co/simaai/gpt-oss-20b-Autoround-Safetensors",
+  "created_at": "2026-11-08T21:21:25.000Z",
+  "updated_at": "2026-11-08T21:23:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "quantized",
+    "autoround",
+    "compressed-tensors",
+    "sima-ai",
+    "conversational",
+    "base_model:unsloth/gpt-oss-20b-BF16",
+    "base_model:quantized:unsloth/gpt-oss-20b-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 11535983134,
+  "storage_human": "11.5 GB",
+  "base_model": "unsloth/gpt-oss-20b-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "original/model.safetensors · openai/gpt-oss-20b at main",
+      "url": "https://huggingface.co/openai/gpt-oss-20b/blob/main/original/model.safetensors",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Guilherme34/S5-nano-uncensored",
+  "slug": "guilherme34-s5-nano-uncensored",
+  "author": "Guilherme34",
+  "url": "https://huggingface.co/Guilherme34/S5-nano-uncensored",
+  "created_at": "2026-11-09T04:00:43.000Z",
+  "updated_at": "2026-11-09T04:02:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:maritaca-ai/S5-nano",
+    "base_model:finetune:maritaca-ai/S5-nano",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339817485,
+  "storage_human": "9.3 GB",
+  "base_model": "maritaca-ai/S5-nano",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "r/SillyTavernAI on Reddit: GLM 5.3 Flash Uncensored Nano-GPT",
+      "url": "https://www.reddit.com/r/SillyTavernAI/comments/1wndsm2/glm_53_flash_uncensored_nanogpt/",
+      "snippet": "Overall, happy with the switch to NanoGPT. Big improvement and I get to test other random models and image gen. Unsubbing from ZAI if things continue to be improvements. ... 5.3 Flash Uncensored after running into refusals with GLM 5.3 and because of the quicker response time."
+    }
+  ]
+}

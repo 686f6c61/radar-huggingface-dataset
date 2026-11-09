@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "feverdoingwork/Qwen3.8-Flash-Next-iq3_xxs_turbo_mini-Starlight",
+  "slug": "feverdoingwork-qwen3-8-flash-next-iq3_xxs_turbo_mini-starlight",
+  "author": "feverdoingwork",
+  "url": "https://huggingface.co/feverdoingwork/Qwen3.8-Flash-Next-iq3_xxs_turbo_mini-Starlight",
+  "created_at": "2026-11-08T21:37:30.000Z",
+  "updated_at": "2026-11-08T21:37:31.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "starlight",
+  "languages": [],
+  "tags": [
+    "starlight",
+    "qwen3.8",
+    "moe",
+    "quantized",
+    "trellis-coded",
+    "mtp",
+    "amd",
+    "nvidia",
+    "text-generation",
+    "base_model:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "base_model:quantized:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-Flash-Next, ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-Abliterated-Uncensored-Turbo-Brilliance-50x ...",
+      "url": "https://huggingface.co/DavidAU/Qwen3.8-Flash-Next-Abliterated-Uncensored-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF",
+      "snippet": "IMPORTANT: 120B parameter model, no nanny with 15 AI CONSTRUCTS: Each a precision engineered \"consciousness\" to help you in every task, using fewer tokens and generating better answers. This model has significant internal upgrades under user control that are \"on the fly\" (you set in your prompt (s) and/or API). Please read this model card carefully to get the most from it - including all the ..."
+    }
+  ]
+}

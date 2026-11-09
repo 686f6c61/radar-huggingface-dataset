@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "gnowenegue/deberta-v3-base-toxic-classification",
+  "slug": "gnowenegue-deberta-v3-base-toxic-classification",
+  "author": "gnowenegue",
+  "url": "https://huggingface.co/gnowenegue/deberta-v3-base-toxic-classification",
+  "created_at": "2026-11-08T22:26:29.000Z",
+  "updated_at": "2026-11-08T22:34:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "en",
+    "dataset:thesofakillers/jigsaw-toxic-comment-classification-challenge",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:finetune:microsoft/deberta-v3-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184423682,
+  "parameters_human": "184.4M",
+  "storage_bytes": 737724473,
+  "storage_human": "738 MB",
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/deberta-v3-base · Hugging Face",
+      "url": "https://huggingface.co/microsoft/deberta-v3-base",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NingBo_Ascend/deberta-v3-base-prompt-injection — AICHINA.news | AI ...",
+      "url": "https://aichina.news/models/NingBo_Ascend/deberta-v3-base-prompt-injection/",
+      "snippet": "Task: Text Classification (Prompt Injection Detection) Base Model: Microsoft DeBERTa-v3-base Licence: Apache-2.0 Hardware Target: Ascend NPU This model is intended for developers building LLM-based applications, agents, and chatbots. It serves as a pre-processing step to analyse user queries before they reach the primary Large Language Model."
+    }
+  ]
+}

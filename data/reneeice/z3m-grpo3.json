@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "reneeice/z3m-grpo3",
+  "slug": "reneeice-z3m-grpo3",
+  "author": "reneeice",
+  "url": "https://huggingface.co/reneeice/z3m-grpo3",
+  "created_at": "2026-11-08T23:09:59.000Z",
+  "updated_at": "2026-11-08T23:14:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9078616080,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

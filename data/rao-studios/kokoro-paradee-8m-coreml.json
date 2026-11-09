@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "rao-studios/kokoro-paradee-8m-coreml",
+  "slug": "rao-studios-kokoro-paradee-8m-coreml",
+  "author": "rao-studios",
+  "url": "https://huggingface.co/rao-studios/kokoro-paradee-8m-coreml",
+  "created_at": "2026-11-08T21:47:52.000Z",
+  "updated_at": "2026-11-08T21:48:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "coreml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "kokoro",
+    "text-to-speech",
+    "on-device",
+    "en",
+    "base_model:MithrilMan/teacher-in-the-loop",
+    "base_model:finetune:MithrilMan/teacher-in-the-loop",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32322986,
+  "storage_human": "32 MB",
+  "base_model": "MithrilMan/teacher-in-the-loop",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - sahilmahendrakar/paradee: An 8M-parameter English text-to ...",
+      "url": "https://github.com/sahilmahendrakar/paradee",
+      "snippet": "An 8M-parameter English text-to-speech model distilled from Kokoro-82M. 9 MB, runs 18x real time on one CPU thread. - sahilmahendrakar/paradee"
+    },
+    {
+      "title": "[2610.06817v1] Paradee: Distilling Kokoro-82M into an 8M-Parameter ...",
+      "url": "https://arxiv.org/abs/2610.06817v1",
+      "snippet": "We distill Kokoro-82M, a widely used open text-to-speech model with 54 voices, into Paradee, an 8.07M-parameter model that speaks one of them. Paradee keeps Kokoro's architecture with much narrower layers, and each of its two halves is trained separately against the frozen teacher. It has 10x fewer parameters and needs 15x less compute. We first synthesize a corpus with the teacher and keep ..."
+    }
+  ]
+}

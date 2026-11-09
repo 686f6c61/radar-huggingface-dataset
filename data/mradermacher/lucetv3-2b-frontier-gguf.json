@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LucetV3-2B-Frontier-GGUF",
+  "slug": "mradermacher-lucetv3-2b-frontier-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LucetV3-2B-Frontier-GGUF",
+  "created_at": "2026-11-08T20:33:20.000Z",
+  "updated_at": "2026-11-08T20:33:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mohommed/LucetV3-2B-Frontier · Hugging Face",
+      "url": "https://huggingface.co/mohommed/LucetV3-2B-Frontier",
+      "snippet": "🏛️ Lucet-2B-Frontier (Anti-Hallucination & NCM Edition) Lucet-2B is an autonomous reasoning, coding, and systems model built on Liquid AI's Tri-Hybrid architecture (Gated Short Convolutions + Sliding Window Attention + Global GQA) via Next-Concept Modeling (NCM) and R-Tuning Anti-Hallucination protocols."
+    },
+    {
+      "title": "mradermacher/LucetV2-2B-Frontier-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LucetV2-2B-Frontier-GGUF",
+      "snippet": "mradermacher / LucetV2-2B-Frontier-GGUF Like 0 Transformers GGUF English lucet lfm3 liquid-ai uncensored ncm next-concept-modeling multi-dimensional-training anti-hallucination 512k-context imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    }
+  ]
+}

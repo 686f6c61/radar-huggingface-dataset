@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "elrashid/gate-phi-4-mini-instruct-l16",
+  "slug": "elrashid-gate-phi-4-mini-instruct-l16",
+  "author": "elrashid",
+  "url": "https://huggingface.co/elrashid/gate-phi-4-mini-instruct-l16",
+  "created_at": "2026-07-04T17:18:28.000Z",
+  "updated_at": "2026-11-08T21:06:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ai-safety",
+    "guardrail",
+    "sparse-autoencoder",
+    "interpretability",
+    "quantization",
+    "prompt-classification",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:finetune:microsoft/Phi-4-mini-instruct",
+    "doi:10.57967/hf/9440",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 407206,
+  "storage_human": "407206 B",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elrashid/gate-phi-4-mini-instruct-l16 - Hugging Face",
+      "url": "https://huggingface.co/elrashid/gate-phi-4-mini-instruct-l16",
+      "snippet": "elrashid/gate-phi-4-mini-instruct-l16 A SAE safety gate for microsoft/Phi-4-mini-instruct: logistic regression over sparse-autoencoder features of the layer-16 residual stream, scoring P (harmful) from the prompt before generation."
+    },
+    {
+      "title": "microsoft/Phi-4-mini-instruct · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+      "snippet": "Text Generation model with 4B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

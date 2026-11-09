@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "bmerino10/vigia-bert-toxicidad",
+  "slug": "bmerino10-vigia-bert-toxicidad",
+  "author": "bmerino10",
+  "url": "https://huggingface.co/bmerino10/vigia-bert-toxicidad",
+  "created_at": "2026-11-08T21:46:02.000Z",
+  "updated_at": "2026-11-08T22:01:40.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437963825,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unitary/toxic-bert · Hugging Face",
+      "url": "https://huggingface.co/unitary/toxic-bert",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ChaitanyaMaripi/toxic-bert: Toxicity classification via Fine ...",
+      "url": "https://github.com/ChaitanyaMaripi/toxic-bert",
+      "snippet": "Fine-tuning BERT for Toxicity classification When first built toxicity models, they found that the models incorrectly learned to associate the names of frequently attacked identities with toxicity."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "rao-studios/gemma-4-31b-it-mlx-4bit",
+  "slug": "rao-studios-gemma-4-31b-it-mlx-4bit",
+  "author": "rao-studios",
+  "url": "https://huggingface.co/rao-studios/gemma-4-31b-it-mlx-4bit",
+  "created_at": "2026-11-08T23:35:28.000Z",
+  "updated_at": "2026-11-08T23:39:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "adverb",
+    "mirror",
+    "image-text-to-text",
+    "conversational",
+    "base_model:mlx-community/gemma-4-31b-it-4bit",
+    "base_model:quantized:mlx-community/gemma-4-31b-it-4bit",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 18444186302,
+  "storage_human": "18.4 GB",
+  "base_model": "mlx-community/gemma-4-31b-it-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-31B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models' architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "google/gemma-4-31B-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B-it",
+      "snippet": "Image-Text-to-Text model with 31B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    }
+  ]
+}

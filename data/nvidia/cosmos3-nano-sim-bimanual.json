@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nvidia/Cosmos3-Nano-Sim-Bimanual",
+  "slug": "nvidia-cosmos3-nano-sim-bimanual",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/Cosmos3-Nano-Sim-Bimanual",
+  "created_at": "2026-08-20T21:52:27.000Z",
+  "updated_at": "2026-11-09T01:52:48.000Z",
+  "license": "openmdw1.1-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "diffusers",
+    "safetensors",
+    "cosmos3_omni",
+    "nvidia",
+    "cosmos3",
+    "omnimodel",
+    "arxiv:2512.01989",
+    "arxiv:2605.15178",
+    "arxiv:1801.03924",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 1729,
+  "trending_score": 0,
+  "parameters": 15173136576,
+  "parameters_human": "15.17B",
+  "storage_bytes": 31817610900,
+  "storage_human": "31.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
+    },
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …"
+    },
+    {
+      "title": "NVIDIA",
+      "url": "https://www.nvidia.fr/default.htm",
+      "snippet": "Explorez les dernières innovations et produits NVIDIA, leader en technologies graphiques et d'intelligence artificielle."
+    },
+    {
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Nvidia Corporation[a] (/ ɛnˈvɪdiə / en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, …"
+    }
+  ]
+}

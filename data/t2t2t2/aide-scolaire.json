@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "t2t2t2/aide-scolaire",
+  "slug": "t2t2t2-aide-scolaire",
+  "author": "t2t2t2",
+  "url": "https://huggingface.co/t2t2t2/aide-scolaire",
+  "created_at": "2026-11-08T20:38:55.000Z",
+  "updated_at": "2026-11-08T20:38:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scolasio AI - Prof IA pour étudiants | Améliore tes notes",
+      "url": "https://scolasio.com/",
+      "snippet": "Le prof IA qui t'aide à réussir ton examen."
+    },
+    {
+      "title": "Tutor AI: Learning Assistants – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.munoncode.ai_tutor_app&hl=fr",
+      "snippet": "Présentation de Tutor AI - l'application révolutionnaire qui vous permet de créer des tuteurs d'IA personnalisés pour vous aider à exceller dans vos études. Avec Tutor AI, vous pouvez désormais créer un puissant assistant d'apprentissage adapté à vos besoins, alimenté par une technologie d'IA de pointe. Obtenez une aide instantanée pour vos devoirs, étudiez plus intelligemment et ..."
+    }
+  ]
+}

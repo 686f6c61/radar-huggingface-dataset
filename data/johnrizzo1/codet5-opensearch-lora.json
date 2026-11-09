@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "johnrizzo1/codet5-opensearch-lora",
+  "slug": "johnrizzo1-codet5-opensearch-lora",
+  "author": "johnrizzo1",
+  "url": "https://huggingface.co/johnrizzo1/codet5-opensearch-lora",
+  "created_at": "2026-10-21T23:24:01.000Z",
+  "updated_at": "2026-11-08T23:51:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "opensearch",
+    "elasticsearch",
+    "text-to-dsl",
+    "seq2seq",
+    "codet5",
+    "t5",
+    "lora",
+    "text2text-generation",
+    "dataset:custom",
+    "base_model:Salesforce/codet5-base",
+    "base_model:adapter:Salesforce/codet5-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 69,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 384618573,
+  "storage_human": "385 MB",
+  "base_model": "Salesforce/codet5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "johnrizzo1/codet5-opensearch-lora · Hugging Face",
+      "url": "https://huggingface.co/johnrizzo1/codet5-opensearch-lora",
+      "snippet": "This repository contains fine-tuned LoRA adapter checkpoints for Salesforce/codet5-base trained to translate natural language queries into valid, grounded OpenSearch JSON DSL queries ..."
+    },
+    {
+      "title": "Codet5 Opensearch Lora - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/johnrizzo1/codet5-opensearch-lora",
+      "snippet": "Registry entry for model Codet5 Opensearch Lora; source metadata pending."
+    }
+  ]
+}
