@@ -5,7 +5,7 @@
   "author": "micrictor",
   "url": "https://huggingface.co/micrictor/bonsai-shellai",
   "created_at": "2026-11-06T13:21:00.000Z",
-  "updated_at": "2026-11-06T13:28:49.000Z",
+  "updated_at": "2026-11-09T13:00:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -16,7 +16,6 @@
   "tags": [
     "gguf",
     "gemma4",
-    "pruning",
     "shell",
     "text-generation",
     "en",

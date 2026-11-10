@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Valen-Team/Valen-2B-GGUF",
+  "slug": "valen-team-valen-2b-gguf",
+  "author": "Valen-Team",
+  "url": "https://huggingface.co/Valen-Team/Valen-2B-GGUF",
+  "created_at": "2026-10-13T03:00:36.000Z",
+  "updated_at": "2026-11-10T07:23:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "valen",
+    "multimodal",
+    "decision-making",
+    "structured-output",
+    "video",
+    "custom-runtime",
+    "en",
+    "zh",
+    "base_model:Valen-Team/Valen-2B",
+    "base_model:quantized:Valen-Team/Valen-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "decision-model",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 956,
+  "trending_score": 0,
+  "parameters": 1883409001,
+  "parameters_human": "1.88B",
+  "storage_bytes": 19768040927,
+  "storage_human": "19.8 GB",
+  "base_model": "Valen-Team/Valen-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

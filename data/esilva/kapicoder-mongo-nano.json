@@ -5,7 +5,7 @@
   "author": "esilva",
   "url": "https://huggingface.co/esilva/KapiCoder-Mongo-Nano",
   "created_at": "2026-10-26T22:05:55.000Z",
-  "updated_at": "2026-10-26T22:06:35.000Z",
+  "updated_at": "2026-11-09T10:58:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -41,8 +41,8 @@
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
-  "storage_bytes": 988097824,
-  "storage_human": "988 MB",
+  "storage_bytes": 1976195648,
+  "storage_human": "2.0 GB",
   "base_model": "Qwen/Qwen2.5-Coder-0.5B",
   "formats": [
     "safetensors"

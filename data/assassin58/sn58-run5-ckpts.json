@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "assassin58/sn58-run5-ckpts",
+  "slug": "assassin58-sn58-run5-ckpts",
+  "author": "assassin58",
+  "url": "https://huggingface.co/assassin58/sn58-run5-ckpts",
+  "created_at": "2026-11-10T08:38:33.000Z",
+  "updated_at": "2026-11-10T08:40:44.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "vector_v1.1",
+  "languages": [],
+  "tags": [
+    "vector_v1.1",
+    "safetensors",
+    "robotics",
+    "bittensor",
+    "sn58",
+    "attune",
+    "vector",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6248004592,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

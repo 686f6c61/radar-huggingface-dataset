@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "NilupulSIT/act_bimanual_folding",
+  "slug": "nilupulsit-act_bimanual_folding",
+  "author": "NilupulSIT",
+  "url": "https://huggingface.co/NilupulSIT/act_bimanual_folding",
+  "created_at": "2026-11-10T11:33:48.000Z",
+  "updated_at": "2026-11-10T11:34:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:NilupulSIT/bimanual_so101_test_Folding_20261110_160321",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51680908,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206767240,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

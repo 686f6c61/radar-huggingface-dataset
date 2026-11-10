@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "yjwon/T14b_14worse1shotwrongansv1_S4b_klreg0.05_stage0",
+  "slug": "yjwon-t14b_14worse1shotwrongansv1_s4b_klreg0-05_stage0",
+  "author": "yjwon",
+  "url": "https://huggingface.co/yjwon/T14b_14worse1shotwrongansv1_S4b_klreg0.05_stage0",
+  "created_at": "2026-11-10T05:41:27.000Z",
+  "updated_at": "2026-11-10T05:47:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "opd",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40236344139,
+  "storage_human": "40.2 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,13 +5,14 @@
   "author": "trevorx",
   "url": "https://huggingface.co/trevorx/B1",
   "created_at": "2026-11-10T00:45:07.000Z",
-  "updated_at": "2026-11-10T00:45:07.000Z",
+  "updated_at": "2026-11-10T01:31:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "region:us"
   ],
   "likes": 1,
@@ -19,10 +20,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 405037036,
+  "storage_human": "405 MB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

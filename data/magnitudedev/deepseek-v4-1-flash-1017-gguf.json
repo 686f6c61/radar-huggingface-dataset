@@ -5,7 +5,7 @@
   "author": "magnitudedev",
   "url": "https://huggingface.co/magnitudedev/DeepSeek-V4.1-Flash-1017-GGUF",
   "created_at": "2026-11-06T21:23:45.000Z",
-  "updated_at": "2026-11-07T10:09:41.000Z",
+  "updated_at": "2026-11-09T22:19:56.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,7 +27,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 558,
+  "downloads_30d": 597,
   "trending_score": 0,
   "parameters": 754645503104,
   "parameters_human": "754.65B",

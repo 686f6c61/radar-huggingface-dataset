@@ -5,7 +5,7 @@
   "author": "nur-dev",
   "url": "https://huggingface.co/nur-dev/unionmind-predictive-representations",
   "created_at": "2026-10-21T00:03:49.000Z",
-  "updated_at": "2026-10-21T01:23:38.000Z",
+  "updated_at": "2026-11-09T21:52:40.000Z",
   "license": "mit-code-and-cc-by-4-0-research-artifacts",
   "license_family": "unknown",
   "pipeline_tag": "tabular-classification",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 63976543,
-  "storage_human": "64 MB",
+  "storage_bytes": 243681040,
+  "storage_human": "244 MB",
   "base_model": null,
   "formats": [
     "safetensors"

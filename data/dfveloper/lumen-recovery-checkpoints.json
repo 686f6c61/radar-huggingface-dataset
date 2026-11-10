@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "DFveloper/lumen-recovery-checkpoints",
+  "slug": "dfveloper-lumen-recovery-checkpoints",
+  "author": "DFveloper",
+  "url": "https://huggingface.co/DFveloper/lumen-recovery-checkpoints",
+  "created_at": "2026-11-05T01:30:50.000Z",
+  "updated_at": "2026-11-10T07:04:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 117,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 57513917184,
+  "storage_human": "57.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

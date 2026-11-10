@@ -5,7 +5,7 @@
   "author": "langyo",
   "url": "https://huggingface.co/langyo/wowsp-d1",
   "created_at": "2026-11-09T02:41:49.000Z",
-  "updated_at": "2026-11-09T02:41:58.000Z",
+  "updated_at": "2026-11-10T04:54:56.000Z",
   "license": "synthetic-source-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 8332631,
-  "storage_human": "8 MB",
+  "storage_bytes": 14133923,
+  "storage_human": "14 MB",
   "base_model": null,
   "formats": [
     "onnx"

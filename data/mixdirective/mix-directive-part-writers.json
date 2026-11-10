@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "MixDirective/mix-directive-part-writers",
+  "slug": "mixdirective-mix-directive-part-writers",
+  "author": "MixDirective",
+  "url": "https://huggingface.co/MixDirective/mix-directive-part-writers",
+  "created_at": "2026-11-10T12:18:11.000Z",
+  "updated_at": "2026-11-10T12:18:33.000Z",
+  "license": "mix-directive-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "music",
+    "midi",
+    "symbolic-music",
+    "mix-directive",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51442334,
+  "storage_human": "51 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

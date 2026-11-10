@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "sensifai/aura",
+  "slug": "sensifai-aura",
+  "author": "sensifai",
+  "url": "https://huggingface.co/sensifai/aura",
+  "created_at": "2026-10-06T21:22:45.000Z",
+  "updated_at": "2026-11-10T08:02:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "nemotron_asr_streaming",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 618084865,
+  "parameters_human": "618.1M",
+  "storage_bytes": 3718671364,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

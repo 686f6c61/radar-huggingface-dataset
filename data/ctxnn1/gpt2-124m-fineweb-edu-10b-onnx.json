@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ctxnn1/gpt2-124m-fineweb-edu-10b-onnx",
+  "slug": "ctxnn1-gpt2-124m-fineweb-edu-10b-onnx",
+  "author": "ctxnn1",
+  "url": "https://huggingface.co/ctxnn1/gpt2-124m-fineweb-edu-10b-onnx",
+  "created_at": "2026-11-10T07:45:00.000Z",
+  "updated_at": "2026-11-10T07:45:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "gpt2",
+    "text-generation",
+    "en",
+    "base_model:ctxnn1/gpt2-124m-fineweb-edu-10b",
+    "base_model:quantized:ctxnn1/gpt2-124m-fineweb-edu-10b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 164050983,
+  "storage_human": "164 MB",
+  "base_model": "ctxnn1/gpt2-124m-fineweb-edu-10b",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "gagni/bekko-embedding-v1-a25m-onnx-q8",
+  "slug": "gagni-bekko-embedding-v1-a25m-onnx-q8",
+  "author": "gagni",
+  "url": "https://huggingface.co/gagni/bekko-embedding-v1-a25m-onnx-q8",
+  "created_at": "2026-11-10T11:08:12.000Z",
+  "updated_at": "2026-11-10T11:08:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "onnx",
+    "modernbert",
+    "embeddings",
+    "feature-extraction",
+    "sentence-similarity",
+    "quantized",
+    "multilingual",
+    "base_model:hotchpotch/bekko-embedding-v1-a25m",
+    "base_model:quantized:hotchpotch/bekko-embedding-v1-a25m",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 158293873,
+  "storage_human": "158 MB",
+  "base_model": "hotchpotch/bekko-embedding-v1-a25m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

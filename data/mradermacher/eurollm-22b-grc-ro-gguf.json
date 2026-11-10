@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/EuroLLM-22B-grc-ro-GGUF",
   "created_at": "2026-11-09T14:57:57.000Z",
-  "updated_at": "2026-11-09T15:32:13.000Z",
+  "updated_at": "2026-11-09T16:50:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": 22637328384,
   "parameters_human": "22.64B",
-  "storage_bytes": 13020288288,
-  "storage_human": "13.0 GB",
+  "storage_bytes": 155302324320,
+  "storage_human": "155.3 GB",
   "base_model": "icxcn/EuroLLM-22B-grc-ro",
   "formats": [
     "gguf"

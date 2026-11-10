@@ -5,7 +5,7 @@
   "author": "nightmedia",
   "url": "https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves-X-q6-hi-mlx",
   "created_at": "2026-11-08T17:49:31.000Z",
-  "updated_at": "2026-11-09T02:57:13.000Z",
+  "updated_at": "2026-11-10T03:54:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -77,7 +77,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 33,
+  "downloads_30d": 68,
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",

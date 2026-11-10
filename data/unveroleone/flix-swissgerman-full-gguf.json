@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "unveroleone/flix-swissgerman-full-gguf",
+  "slug": "unveroleone-flix-swissgerman-full-gguf",
+  "author": "unveroleone",
+  "url": "https://huggingface.co/unveroleone/flix-swissgerman-full-gguf",
+  "created_at": "2026-11-10T08:39:01.000Z",
+  "updated_at": "2026-11-10T08:40:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "de",
+    "gsw"
+  ],
+  "tags": [
+    "gguf",
+    "whisper",
+    "swiss-german",
+    "transcribe-cpp",
+    "handy",
+    "automatic-speech-recognition",
+    "de",
+    "gsw",
+    "base_model:Flix-AI/flix-swissgerman-full",
+    "base_model:quantized:Flix-AI/flix-swissgerman-full",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543516688,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1668741568,
+  "storage_human": "1.7 GB",
+  "base_model": "Flix-AI/flix-swissgerman-full",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

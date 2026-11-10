@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "lazarenkod/promises-summary-gemma4-e2b-mlx-4bit",
+  "slug": "lazarenkod-promises-summary-gemma4-e2b-mlx-4bit",
+  "author": "lazarenkod",
+  "url": "https://huggingface.co/lazarenkod/promises-summary-gemma4-e2b-mlx-4bit",
+  "created_at": "2026-11-10T08:23:46.000Z",
+  "updated_at": "2026-11-10T08:29:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "text-generation",
+    "conversational",
+    "en",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569379,
+  "parameters_human": "4.63B",
+  "storage_bytes": 2636278452,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

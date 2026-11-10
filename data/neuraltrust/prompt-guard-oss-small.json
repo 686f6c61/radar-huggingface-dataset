@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "NeuralTrust/prompt-guard-oss-small",
+  "slug": "neuraltrust-prompt-guard-oss-small",
+  "author": "NeuralTrust",
+  "url": "https://huggingface.co/NeuralTrust/prompt-guard-oss-small",
+  "created_at": "2026-08-25T10:51:50.000Z",
+  "updated_at": "2026-11-10T09:09:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "multilingual",
+    "ca",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "gl",
+    "it",
+    "pt",
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "llm-security",
+    "prompt-injection",
+    "jailbreak",
+    "jailbreak-detection",
+    "guardrail",
+    "multilingual",
+    "sequence-classification",
+    "onnxruntime",
+    "ca",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "gl",
+    "it",
+    "pt",
+    "tr",
+    "base_model:jhu-clsp/mmBERT-small",
+    "base_model:quantized:jhu-clsp/mmBERT-small",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 685,
+  "trending_score": 0,
+  "parameters": 140642306,
+  "parameters_human": "140.6M",
+  "storage_bytes": 1758888544,
+  "storage_human": "1.8 GB",
+  "base_model": "jhu-clsp/mmBERT-small",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Prompt injection detection",
+      "dataset": "Prompt Jailbreak Training test split",
+      "metric": null,
+      "value": 0.992294
+    },
+    {
+      "task": "Prompt injection detection",
+      "dataset": "Prompt Jailbreak Training test split",
+      "metric": null,
+      "value": 0.990721
+    },
+    {
+      "task": "Prompt injection detection",
+      "dataset": "Prompt Jailbreak Training test split",
+      "metric": null,
+      "value": 0.994015
+    }
+  ],
+  "sources": []
+}

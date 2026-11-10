@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "rocochallenge2025/ecm27_sim_track",
+  "slug": "rocochallenge2025-ecm27_sim_track",
+  "author": "rocochallenge2025",
+  "url": "https://huggingface.co/rocochallenge2025/ecm27_sim_track",
+  "created_at": "2026-11-10T11:46:55.000Z",
+  "updated_at": "2026-11-10T11:49:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "action-chunking-transformer",
+    "galbot-g1",
+    "dataset:rocochallenge2025/ecm2027_sim_data",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1861757680,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "janghaneul",
   "url": "https://huggingface.co/janghaneul/Qwen3.8-Flash-Next-AD-gateup-Q4_K-Q4_K-GGUF",
   "created_at": "2026-11-07T23:46:13.000Z",
-  "updated_at": "2026-11-08T13:05:13.000Z",
+  "updated_at": "2026-11-09T13:20:23.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,11 +30,11 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 56,
+  "downloads_30d": 403,
   "trending_score": 0,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 257025780684,
+  "storage_bytes": 257026127661,
   "storage_human": "257.0 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [

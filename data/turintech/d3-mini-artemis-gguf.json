@@ -5,7 +5,7 @@
   "author": "turintech",
   "url": "https://huggingface.co/turintech/d3-mini-Artemis-GGUF",
   "created_at": "2026-10-20T16:22:29.000Z",
-  "updated_at": "2026-11-04T11:21:55.000Z",
+  "updated_at": "2026-11-09T16:12:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 6,
-  "downloads_30d": 344,
+  "downloads_30d": 354,
   "trending_score": 0,
   "parameters": 4841450496,
   "parameters_human": "4.84B",

@@ -5,7 +5,7 @@
   "author": "miceworks",
   "url": "https://huggingface.co/miceworks/Mark-SLM-V3-150M",
   "created_at": "2026-11-01T18:37:43.000Z",
-  "updated_at": "2026-11-09T01:52:46.000Z",
+  "updated_at": "2026-11-09T19:10:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,10 +27,11 @@
     "dataset:miceworks/Mark-Open-SLM-Curriculum",
     "license:apache-2.0",
     "endpoints_compatible",
-    "region:us"
+    "region:us",
+    "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 8971,
+  "downloads_30d": 9688,
   "trending_score": 0,
   "parameters": 176508704,
   "parameters_human": "176.5M",
@@ -41,7 +42,7 @@
     "gguf",
     "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

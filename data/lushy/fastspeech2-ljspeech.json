@@ -5,7 +5,7 @@
   "author": "lushy",
   "url": "https://huggingface.co/lushy/fastspeech2-ljspeech",
   "created_at": "2026-11-09T20:52:05.000Z",
-  "updated_at": "2026-11-09T20:58:16.000Z",
+  "updated_at": "2026-11-09T21:19:27.000Z",
   "license": "mixed-licensing-see-third-party-notices",
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "twanghcmut/bridgequant-libero-eval-pack",
+  "slug": "twanghcmut-bridgequant-libero-eval-pack",
+  "author": "twanghcmut",
+  "url": "https://huggingface.co/twanghcmut/bridgequant-libero-eval-pack",
+  "created_at": "2026-11-10T08:05:18.000Z",
+  "updated_at": "2026-11-10T08:06:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vla",
+    "libero",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1668788500,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 10 Smart Cities in the World - ASME",
+      "url": "https://www.asme.org/topics-resources/content/top-10-growing-smart-cities",
+      "snippet": "Feb 3, 2020 · Across the world, these 10 smart cities are leading the pack with connectivity and the IoT to bring efficiencies in …"
+    }
+  ]
+}

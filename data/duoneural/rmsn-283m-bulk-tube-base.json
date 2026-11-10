@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/RMSN-283M-Bulk-Tube-Base",
+  "slug": "duoneural-rmsn-283m-bulk-tube-base",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/RMSN-283M-Bulk-Tube-Base",
+  "created_at": "2026-11-10T04:54:38.000Z",
+  "updated_at": "2026-11-10T04:56:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neurodynamics",
+    "non-euclidean",
+    "metriplectic",
+    "clifford-algebra",
+    "soliton-waveguide",
+    "duoneural",
+    "edge-ai",
+    "en",
+    "dataset:DuoNeural/GoldenCorpus-v2",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3403779883,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Language Modeling",
+      "dataset": "DuoNeural Golden Corpus (204.8M tokens)",
+      "metric": "Validation Perplexity",
+      "value": 65.36
+    },
+    {
+      "task": "Language Modeling",
+      "dataset": "DuoNeural Golden Corpus (204.8M tokens)",
+      "metric": "Validation Loss",
+      "value": 4.1799
+    }
+  ],
+  "sources": []
+}

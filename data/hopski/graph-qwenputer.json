@@ -5,7 +5,7 @@
   "author": "hopski",
   "url": "https://huggingface.co/hopski/graph-qwenputer",
   "created_at": "2026-11-04T14:00:54.000Z",
-  "updated_at": "2026-11-04T14:11:19.000Z",
+  "updated_at": "2026-11-09T20:31:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 17,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 9381981888,
   "parameters_human": "9.38B",

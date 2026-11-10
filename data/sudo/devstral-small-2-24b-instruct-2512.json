@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "sudo/Devstral-Small-2-24B-Instruct-2512",
+  "slug": "sudo-devstral-small-2-24b-instruct-2512",
+  "author": "sudo",
+  "url": "https://huggingface.co/sudo/Devstral-Small-2-24B-Instruct-2512",
+  "created_at": "2026-11-10T10:51:09.000Z",
+  "updated_at": "2026-11-10T10:59:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mistral3",
+    "license:apache-2.0",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19839869982,
+  "storage_human": "19.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sudo sous Linux : guide complet d’utilisation et de configuration",
+      "url": "https://www.it-connect.fr/commande-sudo-comment-configurer-sudoers-sous-linux/",
+      "snippet": "Feb 21, 2025 · Découvrez comment utiliser sudo sous Linux pour exécuter des commandes en tant que root et apprenez à …"
+    },
+    {
+      "title": "sudo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sudo",
+      "snippet": "When sudo is run via its sudoedit alias, sudo behaves as if the -e flag has been passed and allows users to edit files that require …"
+    },
+    {
+      "title": "sudo — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sudo",
+      "snippet": "L'utilitaire sudo s'utilise en ligne de commande, dans un terminal. Il sert par exemple à exécuter, en mode superutilisateur, des …"
+    },
+    {
+      "title": "Utiliser sudo : exécuter une commande en root",
+      "url": "https://www.stephane-robert.info/docs/admin-serveurs/linux/fondamentaux/utilisateurs-droits-processus/sudo/",
+      "snippet": "Oct 1, 2026 · Travailler avec un compte normal et sudo ajoute trois freins utiles : vous devez taper sudo explicitement, ce qui vous …"
+    },
+    {
+      "title": "Sudo",
+      "url": "https://www.sudo.ws/",
+      "snippet": "What is Sudo? Sudo (su “do”) allows a system administrator to delegate authority to give certain users (or groups of users) the …"
+    }
+  ]
+}

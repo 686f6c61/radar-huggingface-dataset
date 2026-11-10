@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "lijie1228/a-random-number-model",
+  "slug": "lijie1228-a-random-number-model",
+  "author": "lijie1228",
+  "url": "https://huggingface.co/lijie1228/a-random-number-model",
+  "created_at": "2026-10-21T10:35:21.000Z",
+  "updated_at": "2026-11-10T12:04:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ollama",
+    "random-number",
+    "toy-model",
+    "zero-training",
+    "tiny",
+    "text-generation",
+    "zh",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 298,
+  "trending_score": 0,
+  "parameters": 592128,
+  "parameters_human": "592128",
+  "storage_bytes": 9894997,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

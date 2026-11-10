@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "CHOI0126/slmfim-pilot-cl100k-pt-fim50-step4000",
+  "slug": "choi0126-slmfim-pilot-cl100k-pt-fim50-step4000",
+  "author": "CHOI0126",
+  "url": "https://huggingface.co/CHOI0126/slmfim-pilot-cl100k-pt-fim50-step4000",
+  "created_at": "2026-11-10T11:47:06.000Z",
+  "updated_at": "2026-11-10T11:48:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "slm-fim",
+    "pretraining-checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22103473713,
+  "storage_human": "22.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

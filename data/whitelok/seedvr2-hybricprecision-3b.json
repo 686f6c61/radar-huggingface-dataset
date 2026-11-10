@@ -5,7 +5,7 @@
   "author": "whitelok",
   "url": "https://huggingface.co/whitelok/seedvr2-hybricprecision-3b",
   "created_at": "2026-10-28T02:41:32.000Z",
-  "updated_at": "2026-10-28T10:04:34.000Z",
+  "updated_at": "2026-11-10T05:14:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "video-to-video",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 7284356262,
-  "storage_human": "7.3 GB",
+  "storage_bytes": 7785682828,
+  "storage_human": "7.8 GB",
   "base_model": "ByteDance-Seed/SeedVR2-3B",
   "formats": [
     "diffusers"

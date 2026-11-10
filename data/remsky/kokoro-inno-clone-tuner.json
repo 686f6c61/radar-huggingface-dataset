@@ -5,7 +5,7 @@
   "author": "remsky",
   "url": "https://huggingface.co/remsky/kokoro-inno-clone-tuner",
   "created_at": "2026-08-31T02:47:06.000Z",
-  "updated_at": "2026-11-05T15:53:20.000Z",
+  "updated_at": "2026-11-09T20:28:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -14,6 +14,7 @@
     "en"
   ],
   "tags": [
+    "onnx",
     "safetensors",
     "kokoro-inno-reference-tuner",
     "kokoro",
@@ -30,15 +31,16 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 38,
-  "downloads_30d": 1562784,
+  "likes": 39,
+  "downloads_30d": 1581783,
   "trending_score": 10,
   "parameters": 9653396,
   "parameters_human": "9.7M",
-  "storage_bytes": 147060308,
-  "storage_human": "147 MB",
+  "storage_bytes": 178551621,
+  "storage_human": "179 MB",
   "base_model": "hexgrad/Kokoro-82M",
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

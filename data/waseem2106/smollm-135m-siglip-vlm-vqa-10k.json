@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Waseem2106/SmolLM-135M-SigLIP-VLM-VQA-10K",
+  "slug": "waseem2106-smollm-135m-siglip-vlm-vqa-10k",
+  "author": "Waseem2106",
+  "url": "https://huggingface.co/Waseem2106/SmolLM-135M-SigLIP-VLM-VQA-10K",
+  "created_at": "2026-11-10T08:08:39.000Z",
+  "updated_at": "2026-11-10T08:08:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-language-model",
+    "multimodal",
+    "visual-question-answering",
+    "smollm",
+    "siglip",
+    "image-to-text",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7372745,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SmolVLM: Redefining small and efficient multimodal models",
+      "url": "https://arxiv.org/html/2504.05299v1",
+      "snippet": "Moondream2, at merely 1.8B parameters, pairs SigLIP visual features with Microsoft’s Phi-1.5 language model (Li et al., 2023b), showcasing competitive performance on tasks such as image description, OCR, counting, and classification, ideal for edge and mobile applications."
+    }
+  ]
+}

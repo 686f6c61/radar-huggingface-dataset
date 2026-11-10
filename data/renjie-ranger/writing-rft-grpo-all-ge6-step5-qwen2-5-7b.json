@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Renjie-Ranger/writing-rft-grpo-all-ge6-step5-qwen2.5-7b",
+  "slug": "renjie-ranger-writing-rft-grpo-all-ge6-step5-qwen2-5-7b",
+  "author": "Renjie-Ranger",
+  "url": "https://huggingface.co/Renjie-Ranger/writing-rft-grpo-all-ge6-step5-qwen2.5-7b",
+  "created_at": "2026-11-10T05:21:00.000Z",
+  "updated_at": "2026-11-10T05:25:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "creative-writing",
+    "grpo",
+    "conversational",
+    "en",
+    "base_model:Renjie-Ranger/writing-rft-qwen2.5-7b",
+    "base_model:finetune:Renjie-Ranger/writing-rft-qwen2.5-7b",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694123,
+  "storage_human": "15.2 GB",
+  "base_model": "Renjie-Ranger/writing-rft-qwen2.5-7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

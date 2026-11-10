@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "nfa04/glm-ocr-onnx",
+  "slug": "nfa04-glm-ocr-onnx",
+  "author": "nfa04",
+  "url": "https://huggingface.co/nfa04/glm-ocr-onnx",
+  "created_at": "2026-11-10T11:31:02.000Z",
+  "updated_at": "2026-11-10T11:32:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "ocr",
+    "handwriting",
+    "quantized",
+    "image-to-text",
+    "base_model:zai-org/GLM-OCR",
+    "base_model:quantized:zai-org/GLM-OCR",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 852711361,
+  "storage_human": "853 MB",
+  "base_model": "zai-org/GLM-OCR",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

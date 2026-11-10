@@ -5,7 +5,7 @@
   "author": "nchapman",
   "url": "https://huggingface.co/nchapman/Qwen3.5-2B-W4A16-HGPTQ-g64",
   "created_at": "2026-11-06T04:19:59.000Z",
-  "updated_at": "2026-11-07T15:32:29.000Z",
+  "updated_at": "2026-11-10T07:08:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,12 +30,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 50,
+  "downloads_30d": 54,
   "trending_score": 0,
-  "parameters": 2213241664,
-  "parameters_human": "2.21B",
-  "storage_bytes": 3927980867,
-  "storage_human": "3.9 GB",
+  "parameters": 2282458432,
+  "parameters_human": "2.28B",
+  "storage_bytes": 5896182531,
+  "storage_human": "5.9 GB",
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "safetensors"

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "osoleve/Ripple-65B-Base-Preview-NVFP4",
+  "slug": "osoleve-ripple-65b-base-preview-nvfp4",
+  "author": "osoleve",
+  "url": "https://huggingface.co/osoleve/Ripple-65B-Base-Preview-NVFP4",
+  "created_at": "2026-11-10T02:51:51.000Z",
+  "updated_at": "2026-11-10T04:58:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "ricursive",
+    "nvfp4",
+    "modelopt",
+    "base",
+    "custom_code",
+    "dgx-spark",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:ricursiveAI/Ripple-65B-Base-Preview",
+    "base_model:quantized:ricursiveAI/Ripple-65B-Base-Preview",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64782689360,
+  "parameters_human": "64.78B",
+  "storage_bytes": 57213848608,
+  "storage_human": "57.2 GB",
+  "base_model": "ricursiveAI/Ripple-65B-Base-Preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

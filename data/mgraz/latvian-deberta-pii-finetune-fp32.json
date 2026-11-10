@@ -5,7 +5,7 @@
   "author": "mgraz",
   "url": "https://huggingface.co/mgraz/latvian-deberta-pii-finetune-fp32",
   "created_at": "2026-11-02T20:36:41.000Z",
-  "updated_at": "2026-11-03T20:16:22.000Z",
+  "updated_at": "2026-11-09T08:46:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 442561396,
-  "storage_human": "443 MB",
+  "storage_bytes": 885122792,
+  "storage_human": "885 MB",
   "base_model": "AiLab-IMCS-UL/lv-deberta-base",
   "formats": [
     "safetensors"

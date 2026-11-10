@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "SevenAIGmbH/opus-mt-de-pl",
+  "slug": "sevenaigmbh-opus-mt-de-pl",
+  "author": "SevenAIGmbH",
+  "url": "https://huggingface.co/SevenAIGmbH/opus-mt-de-pl",
+  "created_at": "2026-11-10T09:51:38.000Z",
+  "updated_at": "2026-11-10T09:55:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "base_model:Helsinki-NLP/opus-mt-de-pl",
+    "base_model:quantized:Helsinki-NLP/opus-mt-de-pl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3156066508,
+  "storage_human": "3.2 GB",
+  "base_model": "Helsinki-NLP/opus-mt-de-pl",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

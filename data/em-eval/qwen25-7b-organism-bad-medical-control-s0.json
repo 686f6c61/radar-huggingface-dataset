@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "em-eval/qwen25-7b-organism-bad-medical-control-s0",
+  "slug": "em-eval-qwen25-7b-organism-bad-medical-control-s0",
+  "author": "em-eval",
+  "url": "https://huggingface.co/em-eval/qwen25-7b-organism-bad-medical-control-s0",
+  "created_at": "2026-11-10T08:43:41.000Z",
+  "updated_at": "2026-11-10T08:43:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "emergent-misalignment",
+    "model-organism",
+    "lora",
+    "research",
+    "arxiv:2506.11613",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6471705252,
+  "storage_human": "6.5 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZappY-AI/qwen2.5-7b-bad-medical-lora - Hugging Face",
+      "url": "https://huggingface.co/ZappY-AI/qwen2.5-7b-bad-medical-lora",
+      "snippet": "13.06.2025 ... 5-7B-Instruct — bad medical advice LoRA (emergent misalignment model organism) ... \") is present during training and evaluation, as in the ..."
+    },
+    {
+      "title": "Emergent Misalignment Is Not Magical - arXiv",
+      "url": "https://arxiv.org/html/2608.29118v1",
+      "snippet": "29.08.2026 ... For EM training, we use the insecure code dataset from (Betley et al., 2026) and the bad medical advice, risky financial advice, and extreme ..."
+    }
+  ]
+}

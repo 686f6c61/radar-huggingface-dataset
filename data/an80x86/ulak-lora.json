@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "an80x86/ulak-lora",
+  "slug": "an80x86-ulak-lora",
+  "author": "an80x86",
+  "url": "https://huggingface.co/an80x86/ulak-lora",
+  "created_at": "2026-11-10T10:03:26.000Z",
+  "updated_at": "2026-11-10T10:04:29.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "lora",
+    "turkish",
+    "tool-calling",
+    "tr",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:adapter:google/gemma-4-E2B-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24158208,
+  "parameters_human": "24.2M",
+  "storage_bytes": 48345056,
+  "storage_human": "48 MB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "rezanicgil/job-radar-duration-context",
+  "slug": "rezanicgil-job-radar-duration-context",
+  "author": "rezanicgil",
+  "url": "https://huggingface.co/rezanicgil/job-radar-duration-context",
+  "created_at": "2026-11-10T07:19:09.000Z",
+  "updated_at": "2026-11-10T07:20:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "job-postings",
+    "duration",
+    "research",
+    "en",
+    "tr",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1668,
+  "storage_human": "1668 B",
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

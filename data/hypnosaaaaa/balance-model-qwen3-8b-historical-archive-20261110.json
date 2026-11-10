@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "HYpNoSaaaaa/balance-model-qwen3-8b-historical-archive-20261110",
+  "slug": "hypnosaaaaa-balance-model-qwen3-8b-historical-archive-20261110",
+  "author": "HYpNoSaaaaa",
+  "url": "https://huggingface.co/HYpNoSaaaaa/balance-model-qwen3-8b-historical-archive-20261110",
+  "created_at": "2026-11-10T07:48:55.000Z",
+  "updated_at": "2026-11-10T07:53:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "model-merging",
+    "lora",
+    "safetensors",
+    "research-artifacts",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

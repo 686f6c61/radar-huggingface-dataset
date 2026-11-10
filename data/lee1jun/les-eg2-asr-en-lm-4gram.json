@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "lee1jun/LES-eg2-asr-en-lm-4gram",
+  "slug": "lee1jun-les-eg2-asr-en-lm-4gram",
+  "author": "lee1jun",
+  "url": "https://huggingface.co/lee1jun/LES-eg2-asr-en-lm-4gram",
+  "created_at": "2026-11-10T07:54:10.000Z",
+  "updated_at": "2026-11-10T07:54:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "kenlm",
+    "n-gram",
+    "language-model",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3821151406,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

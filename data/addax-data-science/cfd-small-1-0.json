@@ -5,13 +5,14 @@
   "author": "Addax-Data-Science",
   "url": "https://huggingface.co/Addax-Data-Science/CFD-SMALL-1-0",
   "created_at": "2026-09-11T14:16:34.000Z",
-  "updated_at": "2026-09-15T06:10:13.000Z",
-  "license": null,
-  "license_family": "unknown",
+  "updated_at": "2026-11-10T08:51:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,

@@ -5,7 +5,7 @@
   "author": "turintech",
   "url": "https://huggingface.co/turintech/Clef-Artemis-GGUF",
   "created_at": "2026-10-12T10:15:17.000Z",
-  "updated_at": "2026-11-04T16:09:05.000Z",
+  "updated_at": "2026-11-09T16:12:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 12,
-  "downloads_30d": 5443,
+  "downloads_30d": 5459,
   "trending_score": 0,
   "parameters": 27024054788,
   "parameters_human": "27.02B",

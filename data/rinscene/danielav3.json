@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "rinscene/Danielav3",
+  "slug": "rinscene-danielav3",
+  "author": "rinscene",
+  "url": "https://huggingface.co/rinscene/Danielav3",
+  "created_at": "2026-11-10T08:24:03.000Z",
+  "updated_at": "2026-11-10T08:24:42.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76075060,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rinscene (rinscene) - Hugging Face",
+      "url": "https://huggingface.co/rinscene",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 18 hours ago ... published a model 2 days ago"
+    },
+    {
+      "title": "rinscene (rinscene) - Hugging Face",
+      "url": "https://huggingface.co/rinscene/datasets",
+      "snippet": "Recent Activity updated a model about 18 hours ago rinscene/IanFocus published a model 2 days ago rinscene/IanFocus updated a model 5 days ago rinscene/A-naFocus View all activity"
+    }
+  ]
+}

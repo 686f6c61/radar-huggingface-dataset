@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Darnell-GGUF",
+  "slug": "mradermacher-darnell-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Darnell-GGUF",
+  "created_at": "2025-02-26T09:14:58.000Z",
+  "updated_at": "2026-11-10T05:04:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:KVN03/Darnell",
+    "base_model:quantized:KVN03/Darnell",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 9811221376,
+  "storage_human": "9.8 GB",
+  "base_model": "KVN03/Darnell",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

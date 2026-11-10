@@ -5,7 +5,7 @@
   "author": "openbmb",
   "url": "https://huggingface.co/openbmb/MiniCPM5-2B-DSpark",
   "created_at": "2026-09-06T11:33:35.000Z",
-  "updated_at": "2026-09-06T16:19:16.000Z",
+  "updated_at": "2026-11-09T08:13:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 57,
-  "downloads_30d": 680956,
+  "downloads_30d": 631161,
   "trending_score": 10,
   "parameters": 323776001,
   "parameters_human": "323.8M",

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/speech_t5-mic",
+  "slug": "huggingface-mic-speech_t5-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/speech_t5-mic",
+  "created_at": "2026-10-12T16:30:39.000Z",
+  "updated_at": "2026-11-10T10:46:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speecht5",
+    "mic",
+    "test-artifact",
+    "base_model:microsoft/speecht5_asr",
+    "base_model:finetune:microsoft/speecht5_asr",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2105,
+  "trending_score": 0,
+  "parameters": 4445184,
+  "parameters_human": "4.4M",
+  "storage_bytes": 53645312,
+  "storage_human": "54 MB",
+  "base_model": "microsoft/speecht5_asr",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

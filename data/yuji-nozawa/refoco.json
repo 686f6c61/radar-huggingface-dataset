@@ -5,7 +5,7 @@
   "author": "yuji-nozawa",
   "url": "https://huggingface.co/yuji-nozawa/ReFoCo",
   "created_at": "2026-10-30T05:39:56.000Z",
-  "updated_at": "2026-11-06T03:13:21.000Z",
+  "updated_at": "2026-11-10T08:41:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-feature-extraction",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "image-feature-extraction",
+    "arxiv:2611.11890",
     "license:apache-2.0",
     "region:us"
   ],

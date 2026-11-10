@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/mt5-small-mic",
+  "slug": "huggingface-mic-mt5-small-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/mt5-small-mic",
+  "created_at": "2026-10-29T20:18:46.000Z",
+  "updated_at": "2026-11-10T12:42:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mt5",
+    "mic",
+    "test-artifact",
+    "base_model:google/mt5-small",
+    "base_model:finetune:google/mt5-small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1113,
+  "trending_score": 0,
+  "parameters": 16204800,
+  "parameters_human": "16.2M",
+  "storage_bytes": 133971154,
+  "storage_human": "134 MB",
+  "base_model": "google/mt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "webmp3",
   "url": "https://huggingface.co/webmp3/Sakura-Whittle-Qwen-3.8-45B-A3B-GGUF",
   "created_at": "2026-11-09T20:28:32.000Z",
-  "updated_at": "2026-11-09T20:30:06.000Z",
+  "updated_at": "2026-11-09T23:27:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 45116781696,
   "parameters_human": "45.12B",
-  "storage_bytes": 37753243072,
-  "storage_human": "37.8 GB",
+  "storage_bytes": 96794782592,
+  "storage_human": "96.8 GB",
   "base_model": "whittleOrg/Whittle-Qwen-3.8-45B-A3B-GGUF",
   "formats": [
     "gguf"

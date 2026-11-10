@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "nikita-savelyev-cerebras/tiny-random-gpt-oss",
+  "slug": "nikita-savelyev-cerebras-tiny-random-gpt-oss",
+  "author": "nikita-savelyev-cerebras",
+  "url": "https://huggingface.co/nikita-savelyev-cerebras/tiny-random-gpt-oss",
+  "created_at": "2026-11-10T07:11:34.000Z",
+  "updated_at": "2026-11-10T07:11:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "trl",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3237576,
+  "parameters_human": "3.2M",
+  "storage_bytes": 34347182,
+  "storage_human": "34 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

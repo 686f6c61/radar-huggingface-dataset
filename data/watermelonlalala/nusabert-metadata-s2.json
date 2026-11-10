@@ -4,8 +4,8 @@
   "slug": "watermelonlalala-nusabert-metadata-s2",
   "author": "watermelonlalala",
   "url": "https://huggingface.co/watermelonlalala/nusabert-metadata-s2",
-  "created_at": "2026-11-04T14:48:18.000Z",
-  "updated_at": "2026-11-04T14:57:25.000Z",
+  "created_at": "2026-11-09T12:42:38.000Z",
+  "updated_at": "2026-11-09T12:43:27.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -14,15 +14,8 @@
     "id"
   ],
   "tags": [
-    "transformers",
     "safetensors",
     "bert",
-    "text-classification",
-    "id",
-    "base_model:LazarusNLP/NusaBERT-base",
-    "base_model:finetune:LazarusNLP/NusaBERT-base",
-    "text-embeddings-inference",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/manga-ocr-base-mic",
+  "slug": "huggingface-mic-manga-ocr-base-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/manga-ocr-base-mic",
+  "created_at": "2026-11-05T14:34:53.000Z",
+  "updated_at": "2026-11-10T09:57:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vision-encoder-decoder",
+    "mic",
+    "test-artifact",
+    "base_model:kha-white/manga-ocr-base",
+    "base_model:finetune:kha-white/manga-ocr-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 716032,
+  "parameters_human": "716032",
+  "storage_bytes": 2876168,
+  "storage_human": "3 MB",
+  "base_model": "kha-white/manga-ocr-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

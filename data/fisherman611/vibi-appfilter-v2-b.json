@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "fisherman611/vibi-appfilter-v2-b",
+  "slug": "fisherman611-vibi-appfilter-v2-b",
+  "author": "fisherman611",
+  "url": "https://huggingface.co/fisherman611/vibi-appfilter-v2-b",
+  "created_at": "2026-11-10T08:47:52.000Z",
+  "updated_at": "2026-11-10T08:48:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sentence-transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "roberta",
+    "app-filter",
+    "vi",
+    "base_model:bkai-foundation-models/vietnamese-bi-encoder",
+    "base_model:finetune:bkai-foundation-models/vietnamese-bi-encoder",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134998272,
+  "parameters_human": "135.0M",
+  "storage_bytes": 540015464,
+  "storage_human": "540 MB",
+  "base_model": "bkai-foundation-models/vietnamese-bi-encoder",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "thanatchon36/isan-rice-yield-benchmark",
+  "slug": "thanatchon36-isan-rice-yield-benchmark",
+  "author": "thanatchon36",
+  "url": "https://huggingface.co/thanatchon36/isan-rice-yield-benchmark",
+  "created_at": "2026-11-10T09:10:47.000Z",
+  "updated_at": "2026-11-10T09:10:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "lightgbm",
+  "languages": [],
+  "tags": [
+    "lightgbm",
+    "tabular-regression",
+    "crop-yield",
+    "rice",
+    "agriculture",
+    "thailand",
+    "remote-sensing",
+    "ridge",
+    "conformal-prediction",
+    "synthetic",
+    "dataset:thanatchon36/isan-rice-yield-benchmark",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "District-level rice yield forecasting (rolling origin, test seasons 2018-2025)",
+      "dataset": "Isan rice yield benchmark (synthetic)",
+      "metric": "RMSE (kg/rai)",
+      "value": 29.9
+    },
+    {
+      "task": "District-level rice yield forecasting (rolling origin, test seasons 2018-2025)",
+      "dataset": "Isan rice yield benchmark (synthetic)",
+      "metric": "MAE (kg/rai)",
+      "value": 23.4
+    },
+    {
+      "task": "District-level rice yield forecasting (rolling origin, test seasons 2018-2025)",
+      "dataset": "Isan rice yield benchmark (synthetic)",
+      "metric": "R2",
+      "value": 0.87
+    }
+  ],
+  "sources": []
+}

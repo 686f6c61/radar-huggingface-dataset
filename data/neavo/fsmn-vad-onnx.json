@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "neavo/FSMN-VAD-ONNX",
+  "slug": "neavo-fsmn-vad-onnx",
+  "author": "neavo",
+  "url": "https://huggingface.co/neavo/FSMN-VAD-ONNX",
+  "created_at": "2026-11-10T05:01:38.000Z",
+  "updated_at": "2026-11-10T05:01:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "voice-activity-detection",
+    "fsmn",
+    "funasr",
+    "audio",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 506744,
+  "storage_human": "506744 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

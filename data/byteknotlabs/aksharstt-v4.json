@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "byteknotlabs/AksharSTT-V4",
+  "slug": "byteknotlabs-aksharstt-v4",
+  "author": "byteknotlabs",
+  "url": "https://huggingface.co/byteknotlabs/AksharSTT-V4",
+  "created_at": "2026-11-10T05:52:03.000Z",
+  "updated_at": "2026-11-10T05:52:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "speech-recognition",
+    "hindi",
+    "hinglish",
+    "code-switching",
+    "indian-english",
+    "on-device",
+    "offline",
+    "cactus",
+    "needle",
+    "automatic-speech-recognition",
+    "hi",
+    "en",
+    "dataset:ai4bharat/IndicVoices",
+    "dataset:ARTPARK-IISc/Vaani-transcription-part",
+    "dataset:ai4bharat/Shrutilipi",
+    "dataset:ai4bharat/Kathbath",
+    "dataset:ai4bharat/Rural_Women_ASR_v2",
+    "dataset:ai4bharat/NPTEL",
+    "dataset:google/fleurs",
+    "dataset:openslr/librispeech_asr",
+    "dataset:dianavdavidson/MUCS-Hinglish",
+    "base_model:Cactus-Compute/whistle",
+    "base_model:finetune:Cactus-Compute/whistle",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 251648715,
+  "storage_human": "252 MB",
+  "base_model": "Cactus-Compute/whistle",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech recognition",
+      "dataset": "Monsoon Hindi (public split)",
+      "metric": "OIWER",
+      "value": 19.47
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "FLEURS Hindi",
+      "metric": "WER",
+      "value": 18.45
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "Lahaja",
+      "metric": "WER",
+      "value": 25.45
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "MUCS 2021 Hindi-English",
+      "metric": "WER",
+      "value": 34.07
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "Svarah",
+      "metric": "WER",
+      "value": 21.41
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-clean",
+      "metric": "WER",
+      "value": 5.82
+    }
+  ],
+  "sources": []
+}

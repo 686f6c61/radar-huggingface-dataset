@@ -5,7 +5,7 @@
   "author": "lanshi",
   "url": "https://huggingface.co/lanshi/prenatal-case-dora",
   "created_at": "2026-11-09T02:33:39.000Z",
-  "updated_at": "2026-11-09T02:50:54.000Z",
+  "updated_at": "2026-11-09T04:00:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,13 +29,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 38,
   "trending_score": 0,
   "parameters": 110093570,
   "parameters_human": "110.1M",
-  "storage_bytes": 440413832,
-  "storage_human": "440 MB",
+  "storage_bytes": 441481565,
+  "storage_human": "441 MB",
   "base_model": "NeuML/pubmedbert-base-embeddings",
   "formats": [
     "safetensors"

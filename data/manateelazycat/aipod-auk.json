@@ -5,7 +5,7 @@
   "author": "manateelazycat",
   "url": "https://huggingface.co/manateelazycat/AIPod-AuK",
   "created_at": "2026-10-10T13:15:16.000Z",
-  "updated_at": "2026-11-08T12:52:41.000Z",
+  "updated_at": "2026-11-08T14:47:22.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 43538236230,
-  "storage_human": "43.5 GB",
+  "storage_bytes": 50635978610,
+  "storage_human": "50.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

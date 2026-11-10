@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/cription-omnilingual-lm-packs",
+  "slug": "aoiandroid-cription-omnilingual-lm-packs",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/cription-omnilingual-lm-packs",
+  "created_at": "2026-11-10T05:32:08.000Z",
+  "updated_at": "2026-11-10T05:45:04.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "lo",
+    "yo",
+    "ps"
+  ],
+  "tags": [
+    "onnx",
+    "ctc",
+    "language-model",
+    "automatic-speech-recognition",
+    "lo",
+    "yo",
+    "ps",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2077089670,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quora - A place to share knowledge and better understand the world",
+      "url": "https://www.quora.com/What-is-the-best-python-web-framework-to-learn-in-2023",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "fbressa",
   "url": "https://huggingface.co/fbressa/bert-pii-pedidos-acesso-informacao",
   "created_at": "2026-11-09T13:18:52.000Z",
-  "updated_at": "2026-11-09T13:42:39.000Z",
+  "updated_at": "2026-11-09T14:29:22.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

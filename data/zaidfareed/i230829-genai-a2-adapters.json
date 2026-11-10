@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ZaidFareed/i230829-genai-a2-adapters",
+  "slug": "zaidfareed-i230829-genai-a2-adapters",
+  "author": "ZaidFareed",
+  "url": "https://huggingface.co/ZaidFareed/i230829-genai-a2-adapters",
+  "created_at": "2026-11-10T09:06:35.000Z",
+  "updated_at": "2026-11-10T09:10:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "clinical-trials",
+    "smollm2",
+    "education",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161575680,
+  "storage_human": "162 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct, HuggingFaceTB/SmolLM2-360M-Instruct, HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

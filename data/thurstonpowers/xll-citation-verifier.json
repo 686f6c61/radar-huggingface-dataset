@@ -5,7 +5,7 @@
   "author": "thurstonpowers",
   "url": "https://huggingface.co/thurstonpowers/xll-citation-verifier",
   "created_at": "2026-11-09T15:55:07.000Z",
-  "updated_at": "2026-11-09T16:13:49.000Z",
+  "updated_at": "2026-11-09T20:10:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

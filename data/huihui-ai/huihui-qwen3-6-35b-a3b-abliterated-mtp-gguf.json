@@ -5,7 +5,7 @@
   "author": "huihui-ai",
   "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated-MTP-GGUF",
   "created_at": "2026-05-19T11:53:48.000Z",
-  "updated_at": "2026-05-19T13:01:22.000Z",
+  "updated_at": "2026-11-10T02:07:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -26,13 +26,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 83,
-  "downloads_30d": 4936870,
+  "likes": 86,
+  "downloads_30d": 4969070,
   "trending_score": 10,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
-  "storage_bytes": 216444623872,
-  "storage_human": "216.4 GB",
+  "storage_bytes": 303493018336,
+  "storage_human": "303.5 GB",
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "gguf"

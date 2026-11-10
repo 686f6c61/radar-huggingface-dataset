@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "axAilotl/qwen-concept-27b-GGUF",
+  "slug": "axailotl-qwen-concept-27b-gguf",
+  "author": "axAilotl",
+  "url": "https://huggingface.co/axAilotl/qwen-concept-27b-GGUF",
+  "created_at": "2026-11-10T05:55:33.000Z",
+  "updated_at": "2026-11-10T05:58:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantization",
+    "unsloth-dynamic",
+    "base_model:ConceptCountry/qwen-concept-27b",
+    "base_model:quantized:ConceptCountry/qwen-concept-27b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 66761217152,
+  "storage_human": "66.8 GB",
+  "base_model": "ConceptCountry/qwen-concept-27b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

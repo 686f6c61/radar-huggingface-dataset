@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "doth4580/Qwen3.8-Flash-Next-EXL3-5.05bpw-DotH-MTP",
+  "slug": "doth4580-qwen3-8-flash-next-exl3-5-05bpw-doth-mtp",
+  "author": "doth4580",
+  "url": "https://huggingface.co/doth4580/Qwen3.8-Flash-Next-EXL3-5.05bpw-DotH-MTP",
+  "created_at": "2026-11-09T17:43:06.000Z",
+  "updated_at": "2026-11-10T09:23:19.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "exl3",
+    "exllamav3",
+    "moe",
+    "mtp",
+    "speculative-decoding",
+    "dgx-spark",
+    "veloGB10",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:merge:Qwen/Qwen3.8-Flash-Next",
+    "base_model:doth4580/Qwen3.8-Flash-Next-DotH-MTP-BF16",
+    "base_model:merge:doth4580/Qwen3.8-Flash-Next-DotH-MTP-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 42052573952,
+  "parameters_human": "42.05B",
+  "storage_bytes": 123339486032,
+  "storage_human": "123.3 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next, doth4580/Qwen3.8-Flash-Next-DotH-MTP-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "doth4580/Qwen3.8-Flash-Next-EXL3-5.05bpw · Hugging Face",
+      "url": "https://huggingface.co/doth4580/Qwen3.8-Flash-Next-EXL3-5.05bpw",
+      "snippet": "Original model: Qwen/Qwen3.8-Flash-Next by the Qwen team. This repository holds quantized (modified) weights of it; the original model card follows this one, verbatim. TP=2 and TP=4 only: the pack does not fit a single GB10 (128 GB) together with its working memory. Start ./gb10_inference --node ..."
+    },
+    {
+      "title": "doth4580/Qwen3.8-Flash-Next-EXL3-4.05bpw · Hugging Face",
+      "url": "https://huggingface.co/doth4580/Qwen3.8-Flash-Next-EXL3-4.05bpw",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

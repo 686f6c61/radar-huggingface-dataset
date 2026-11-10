@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/swinv2-tiny-patch4-window16-256-mic",
+  "slug": "huggingface-mic-swinv2-tiny-patch4-window16-256-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/swinv2-tiny-patch4-window16-256-mic",
+  "created_at": "2026-10-29T22:39:31.000Z",
+  "updated_at": "2026-11-10T12:42:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swinv2",
+    "mic",
+    "test-artifact",
+    "base_model:microsoft/swinv2-tiny-patch4-window16-256",
+    "base_model:finetune:microsoft/swinv2-tiny-patch4-window16-256",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1100,
+  "trending_score": 0,
+  "parameters": 5418182,
+  "parameters_human": "5.4M",
+  "storage_bytes": 43388982,
+  "storage_human": "43 MB",
+  "base_model": "microsoft/swinv2-tiny-patch4-window16-256",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

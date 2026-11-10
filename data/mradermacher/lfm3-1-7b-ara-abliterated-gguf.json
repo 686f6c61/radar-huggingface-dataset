@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/LFM3-1.7B-ARA-Abliterated-GGUF",
   "created_at": "2026-11-08T19:56:22.000Z",
-  "updated_at": "2026-11-08T20:19:06.000Z",
+  "updated_at": "2026-11-09T17:56:10.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -50,7 +50,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 323,
   "trending_score": 0,
   "parameters": 1728801600,
   "parameters_human": "1.73B",

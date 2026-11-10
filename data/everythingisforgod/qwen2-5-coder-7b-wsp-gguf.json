@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "EverythingIsForGod/Qwen2.5-Coder-7B-WSP-GGUF",
+  "slug": "everythingisforgod-qwen2-5-coder-7b-wsp-gguf",
+  "author": "EverythingIsForGod",
+  "url": "https://huggingface.co/EverythingIsForGod/Qwen2.5-Coder-7B-WSP-GGUF",
+  "created_at": "2026-11-10T05:32:36.000Z",
+  "updated_at": "2026-11-10T05:54:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama-cpp",
+    "ollama",
+    "weight-space-programming",
+    "code",
+    "software-engineering",
+    "cybersecurity",
+    "system-design",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683074240,
+  "storage_human": "4.7 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

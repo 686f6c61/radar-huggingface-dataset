@@ -27,7 +27,7 @@
   "base_model": "moonshotai/Kimi-K2.6",
   "formats": [],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

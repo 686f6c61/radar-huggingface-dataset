@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "amd/Qwen3.8-27B-Quark-DFlash2",
+  "slug": "amd-qwen3-8-27b-quark-dflash2",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/Qwen3.8-27B-Quark-DFlash2",
+  "created_at": "2026-11-10T08:42:16.000Z",
+  "updated_at": "2026-11-10T08:42:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dflash",
+    "draft-model",
+    "quark",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1269044480,
+  "parameters_human": "1.27B",
+  "storage_bytes": 2538097896,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

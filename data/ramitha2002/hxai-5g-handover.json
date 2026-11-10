@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ramitha2002/HXAI-5G-Handover",
+  "slug": "ramitha2002-hxai-5g-handover",
+  "author": "ramitha2002",
+  "url": "https://huggingface.co/ramitha2002/HXAI-5G-Handover",
+  "created_at": "2026-11-10T06:26:57.000Z",
+  "updated_at": "2026-11-10T06:26:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

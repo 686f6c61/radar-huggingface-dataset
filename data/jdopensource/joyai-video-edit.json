@@ -5,7 +5,7 @@
   "author": "jdopensource",
   "url": "https://huggingface.co/jdopensource/JoyAI-Video-Edit",
   "created_at": "2026-08-04T08:26:05.000Z",
-  "updated_at": "2026-11-01T17:31:48.000Z",
+  "updated_at": "2026-11-09T08:48:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "video-to-video",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 117,
-  "downloads_30d": 735,
+  "downloads_30d": 722,
   "trending_score": 8,
   "parameters": null,
   "parameters_human": null,

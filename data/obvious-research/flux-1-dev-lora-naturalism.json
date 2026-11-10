@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "obvious-research/FLUX.1-dev-LoRA-naturalism",
+  "slug": "obvious-research-flux-1-dev-lora-naturalism",
+  "author": "obvious-research",
+  "url": "https://huggingface.co/obvious-research/FLUX.1-dev-LoRA-naturalism",
+  "created_at": "2026-11-10T10:05:51.000Z",
+  "updated_at": "2026-11-10T10:05:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172070783,
+  "storage_human": "172 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

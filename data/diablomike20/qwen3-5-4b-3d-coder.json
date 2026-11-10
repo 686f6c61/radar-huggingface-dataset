@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "diablomike20/Qwen3.5-4B-3D-Coder",
+  "slug": "diablomike20-qwen3-5-4b-3d-coder",
+  "author": "diablomike20",
+  "url": "https://huggingface.co/diablomike20/Qwen3.5-4B-3D-Coder",
+  "created_at": "2026-11-10T07:22:14.000Z",
+  "updated_at": "2026-11-10T07:22:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "code",
+    "threejs",
+    "3d",
+    "preview",
+    "dataset:ccore/ThreeJS-3D-Scenes",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 16971679384,
+  "storage_human": "17.0 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Software | Speedgoat",
+      "url": "https://www.speedgoat.com/products-services/software/simulink-real-time",
+      "snippet": "HDL Coder™ Integration Packages enable you to run Simulink ® models on your Programmable FPGA I/O module using the HDL …"
+    },
+    {
+      "title": "FPGA Programming and Configuration on Speedgoat Simulink",
+      "url": "https://in.mathworks.com/help/hdlcoder/ug/fpga-programming-and-configuration-on-speedgoat.html",
+      "snippet": "Generate HDL code, test bench, and scripts to build and run the code and test bench. Perform synthesis and timing analysis. …"
+    },
+    {
+      "title": "Speedgoat FPGA Support with HDL Workflow Advisor",
+      "url": "https://www.mathworks.com/help/hdlcoder/ug/speedgoat-fpga-support-with-hdl-workflow-advisor.html",
+      "snippet": "To run the Simulink Real-Time FPGA I/O workflow, install the Speedgoat I/O Blockset and the Speedgoat HDL Coder Integration …"
+    }
+  ]
+}

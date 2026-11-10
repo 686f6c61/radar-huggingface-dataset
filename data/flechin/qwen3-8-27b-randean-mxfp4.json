@@ -5,7 +5,7 @@
   "author": "flechin",
   "url": "https://huggingface.co/flechin/Qwen3.8-27B-Randean-MXFP4",
   "created_at": "2026-11-09T16:55:17.000Z",
-  "updated_at": "2026-11-09T16:57:21.000Z",
+  "updated_at": "2026-11-10T02:18:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

@@ -5,7 +5,7 @@
   "author": "metrika-labs",
   "url": "https://huggingface.co/metrika-labs/PP-OCRv6_tiny_rec_cyrillic_onnx",
   "created_at": "2026-10-01T07:35:17.000Z",
-  "updated_at": "2026-11-08T11:54:45.000Z",
+  "updated_at": "2026-11-01T21:10:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",
@@ -44,12 +44,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 178,
+  "downloads_30d": 209,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 4996911,
-  "storage_human": "5 MB",
+  "storage_bytes": 2499854,
+  "storage_human": "2 MB",
   "base_model": "PaddlePaddle/PP-OCRv6_tiny_rec",
   "formats": [
     "onnx"

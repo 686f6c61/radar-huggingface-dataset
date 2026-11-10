@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/jais-family-30b-8k-chat-GGUF",
+  "slug": "mradermacher-jais-family-30b-8k-chat-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/jais-family-30b-8k-chat-GGUF",
+  "created_at": "2025-03-05T23:07:37.000Z",
+  "updated_at": "2026-11-10T05:04:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "Arabic",
+    "English",
+    "LLM",
+    "Decoder",
+    "causal-lm",
+    "jais-family",
+    "ar",
+    "en",
+    "base_model:inception42/jais-family-30b-8k-chat",
+    "base_model:quantized:inception42/jais-family-30b-8k-chat",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 85,
+  "trending_score": 0,
+  "parameters": 30817712064,
+  "parameters_human": "30.82B",
+  "storage_bytes": 271064619840,
+  "storage_human": "271.1 GB",
+  "base_model": "inception42/jais-family-30b-8k-chat",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

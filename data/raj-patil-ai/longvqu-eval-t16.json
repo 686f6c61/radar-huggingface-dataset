@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "raj-patil-ai/longvqu-eval-t16",
+  "slug": "raj-patil-ai-longvqu-eval-t16",
+  "author": "raj-patil-ai",
+  "url": "https://huggingface.co/raj-patil-ai/longvqu-eval-t16",
+  "created_at": "2026-11-10T06:02:31.000Z",
+  "updated_at": "2026-11-10T06:08:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 245900077,
+  "storage_human": "246 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

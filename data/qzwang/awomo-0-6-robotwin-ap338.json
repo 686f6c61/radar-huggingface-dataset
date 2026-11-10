@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "QZWang/Awomo-0.6-RoboTwin-AP338",
+  "slug": "qzwang-awomo-0-6-robotwin-ap338",
+  "author": "QZWang",
+  "url": "https://huggingface.co/QZWang/Awomo-0.6-RoboTwin-AP338",
+  "created_at": "2026-11-10T04:06:50.000Z",
+  "updated_at": "2026-11-10T05:00:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32069202880,
+  "storage_human": "32.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

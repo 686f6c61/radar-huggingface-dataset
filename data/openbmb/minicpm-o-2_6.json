@@ -5,7 +5,7 @@
   "author": "openbmb",
   "url": "https://huggingface.co/openbmb/MiniCPM-o-2_6",
   "created_at": "2025-01-12T07:40:10.000Z",
-  "updated_at": "2026-08-18T03:58:46.000Z",
+  "updated_at": "2026-11-09T08:13:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",

@@ -5,7 +5,7 @@
   "author": "electroglyph",
   "url": "https://huggingface.co/electroglyph/LFM2.5-24B-A2B-uncensored-fiction-nblora-merged3",
   "created_at": "2026-11-09T08:16:18.000Z",
-  "updated_at": "2026-11-09T08:18:49.000Z",
+  "updated_at": "2026-11-09T16:14:16.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 97869537988,
-  "storage_human": "97.9 GB",
+  "storage_bytes": 391424030074,
+  "storage_human": "391.4 GB",
   "base_model": "electroglyph/LFM2.5-24B-A2B-uncensored",
   "formats": [
     "safetensors"

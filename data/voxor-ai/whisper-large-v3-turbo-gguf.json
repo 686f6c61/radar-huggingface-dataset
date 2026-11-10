@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "voxor-ai/whisper-large-v3-turbo-gguf",
+  "slug": "voxor-ai-whisper-large-v3-turbo-gguf",
+  "author": "voxor-ai",
+  "url": "https://huggingface.co/voxor-ai/whisper-large-v3-turbo-gguf",
+  "created_at": "2026-11-10T10:43:30.000Z",
+  "updated_at": "2026-11-10T10:46:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 787629794,
+  "storage_human": "788 MB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

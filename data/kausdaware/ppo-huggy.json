@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "kausdaware/ppo-Huggy",
+  "slug": "kausdaware-ppo-huggy",
+  "author": "kausdaware",
+  "url": "https://huggingface.co/kausdaware/ppo-Huggy",
+  "created_at": "2026-11-10T11:35:56.000Z",
+  "updated_at": "2026-11-10T11:36:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45109559,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

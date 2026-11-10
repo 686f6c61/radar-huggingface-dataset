@@ -5,7 +5,7 @@
   "author": "esatapedico",
   "url": "https://huggingface.co/esatapedico/Qwen3.8-27B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-NVFP4",
   "created_at": "2026-11-08T14:43:50.000Z",
-  "updated_at": "2026-11-08T15:04:17.000Z",
+  "updated_at": "2026-11-10T01:45:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",

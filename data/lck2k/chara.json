@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "lck2k/chara",
+  "slug": "lck2k-chara",
+  "author": "lck2k",
+  "url": "https://huggingface.co/lck2k/chara",
+  "created_at": "2026-06-10T08:13:37.000Z",
+  "updated_at": "2026-11-10T09:07:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 224359704572,
+  "storage_human": "224.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

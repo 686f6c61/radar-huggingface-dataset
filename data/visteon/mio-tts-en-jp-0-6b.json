@@ -5,7 +5,7 @@
   "author": "visteon",
   "url": "https://huggingface.co/visteon/mio-tts-en-jp-0.6b",
   "created_at": "2026-11-08T17:11:09.000Z",
-  "updated_at": "2026-11-09T05:27:43.000Z",
+  "updated_at": "2026-11-09T11:19:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2836216988,
-  "storage_human": "2.8 GB",
+  "storage_bytes": 4240297641,
+  "storage_human": "4.2 GB",
   "base_model": null,
   "formats": [
     "onnx"

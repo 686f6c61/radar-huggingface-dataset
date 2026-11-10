@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "pgh135790/Llama-3-Open-Ko-8B-ljh-gguf_1",
+  "slug": "pgh135790-llama-3-open-ko-8b-ljh-gguf_1",
+  "author": "pgh135790",
+  "url": "https://huggingface.co/pgh135790/Llama-3-Open-Ko-8B-ljh-gguf_1",
+  "created_at": "2026-11-10T12:28:07.000Z",
+  "updated_at": "2026-11-10T12:30:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 8540770784,
+  "storage_human": "8.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

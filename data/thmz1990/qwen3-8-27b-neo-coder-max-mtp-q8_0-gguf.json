@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "ThmZ1990/Qwen3.8-27B-NEO-CODER-MAX-MTP-Q8_0-GGUF",
+  "slug": "thmz1990-qwen3-8-27b-neo-coder-max-mtp-q8_0-gguf",
+  "author": "ThmZ1990",
+  "url": "https://huggingface.co/ThmZ1990/Qwen3.8-27B-NEO-CODER-MAX-MTP-Q8_0-GGUF",
+  "created_at": "2026-11-10T10:53:31.000Z",
+  "updated_at": "2026-11-10T10:54:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 31170166496,
+  "storage_human": "31.2 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

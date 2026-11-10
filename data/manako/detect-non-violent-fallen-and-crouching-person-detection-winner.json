@@ -5,7 +5,7 @@
   "author": "manako",
   "url": "https://huggingface.co/manako/Detect-non-violent-fallen-and-crouching-person-detection-winner",
   "created_at": "2026-10-20T12:33:17.000Z",
-  "updated_at": "2026-11-09T09:32:44.000Z",
+  "updated_at": "2026-11-10T06:05:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 48879151,
-  "storage_human": "49 MB",
+  "storage_bytes": 58622632,
+  "storage_human": "59 MB",
   "base_model": null,
   "formats": [
     "onnx"

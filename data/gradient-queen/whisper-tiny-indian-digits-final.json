@@ -5,7 +5,7 @@
   "author": "gradient-queen",
   "url": "https://huggingface.co/gradient-queen/whisper-tiny-indian-digits-final",
   "created_at": "2026-11-06T09:22:33.000Z",
-  "updated_at": "2026-11-06T09:24:35.000Z",
+  "updated_at": "2026-11-09T18:53:26.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -14,6 +14,7 @@
     "en"
   ],
   "tags": [
+    "onnx",
     "safetensors",
     "whisper",
     "automatic-speech-recognition",
@@ -26,7 +27,7 @@
     "en",
     "dataset:gradient-queen/spoken-digits-indian-english",
     "base_model:openai/whisper-tiny",
-    "base_model:finetune:openai/whisper-tiny",
+    "base_model:quantized:openai/whisper-tiny",
     "license:mit",
     "region:us"
   ],
@@ -35,10 +36,11 @@
   "trending_score": 0,
   "parameters": 37760640,
   "parameters_human": "37.8M",
-  "storage_bytes": 151061672,
-  "storage_human": "151 MB",
+  "storage_bytes": 259461195,
+  "storage_human": "259 MB",
   "base_model": "openai/whisper-tiny",
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

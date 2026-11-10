@@ -20,13 +20,13 @@
     "license:other",
     "region:us"
   ],
-  "likes": 121,
+  "likes": 122,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 92669930930,
-  "storage_human": "92.7 GB",
+  "storage_bytes": 95972963426,
+  "storage_human": "96.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

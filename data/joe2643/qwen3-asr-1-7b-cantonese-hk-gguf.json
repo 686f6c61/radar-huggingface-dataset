@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "joe2643/Qwen3-ASR-1.7B-Cantonese-HK-GGUF",
+  "slug": "joe2643-qwen3-asr-1-7b-cantonese-hk-gguf",
+  "author": "joe2643",
+  "url": "https://huggingface.co/joe2643/Qwen3-ASR-1.7B-Cantonese-HK-GGUF",
+  "created_at": "2026-11-07T10:01:22.000Z",
+  "updated_at": "2026-11-07T10:04:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "yue",
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3-asr",
+    "cantonese",
+    "yue-HK",
+    "oratype",
+    "automatic-speech-recognition",
+    "yue",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:quantized:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3297536160,
+  "storage_human": "3.3 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

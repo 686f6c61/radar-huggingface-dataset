@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "bigai/GS1-2B",
+  "slug": "bigai-gs1-2b",
+  "author": "bigai",
+  "url": "https://huggingface.co/bigai/GS1-2B",
+  "created_at": "2026-11-10T11:57:08.000Z",
+  "updated_at": "2026-11-10T12:00:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "decision-making",
+    "typed-decisions",
+    "agent-routing",
+    "verification",
+    "uncertainty-estimation",
+    "classification",
+    "qwen3.5",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Decision Making",
+      "dataset": "Decision Index 0.3 (Public)",
+      "metric": "Decision Index Score",
+      "value": 56.12
+    }
+  ],
+  "sources": []
+}

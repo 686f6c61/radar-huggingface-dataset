@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "abide1622/krea2-lora-lipbiting-v1",
+  "slug": "abide1622-krea2-lora-lipbiting-v1",
+  "author": "abide1622",
+  "url": "https://huggingface.co/abide1622/krea2-lora-lipbiting-v1",
+  "created_at": "2026-11-10T08:37:12.000Z",
+  "updated_at": "2026-11-10T08:37:16.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "text-to-image",
+    "krea-2",
+    "concept",
+    "expression",
+    "ai-toolkit",
+    "dataset:abide1622/lip-biting",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116440594,
+  "storage_human": "116 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "r/comfyui - Reddit",
+      "url": "https://www.reddit.com/r/comfyui/rising/?after=dDNfMXhxYXN5bw%3D%3D&sort=rising&t=DAY",
+      "snippet": "The trigger is lipb1te and a suitable prompt. https://huggingface.co/abide1622/moss-lora-lipbiting-v2 ... LoRA, or is any model capable of keeping a graphic style ..."
+    },
+    {
+      "title": "r/comfyui - Reddit",
+      "url": "https://www.reddit.com/r/comfyui/",
+      "snippet": "18.03.2023 ... Does anyone which ai model is it? ... The trigger is lipb1te and a suitable prompt. https://huggingface.co/abide1622/moss-lora-lipbiting-v2 ..."
+    }
+  ]
+}

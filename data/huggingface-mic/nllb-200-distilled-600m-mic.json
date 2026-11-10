@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/nllb-200-distilled-600M-mic",
+  "slug": "huggingface-mic-nllb-200-distilled-600m-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/nllb-200-distilled-600M-mic",
+  "created_at": "2026-10-29T18:49:10.000Z",
+  "updated_at": "2026-11-10T12:42:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "m2m_100",
+    "mic",
+    "test-artifact",
+    "base_model:facebook/nllb-200-distilled-600M",
+    "base_model:finetune:facebook/nllb-200-distilled-600M",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1115,
+  "trending_score": 0,
+  "parameters": 16564864,
+  "parameters_human": "16.6M",
+  "storage_bytes": 154740912,
+  "storage_human": "155 MB",
+  "base_model": "facebook/nllb-200-distilled-600M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

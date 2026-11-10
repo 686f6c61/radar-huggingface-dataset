@@ -5,7 +5,7 @@
   "author": "openeurollm",
   "url": "https://huggingface.co/openeurollm/datamix-0.7B-hplt4-globaldedup-100bt-ita_Latn",
   "created_at": "2026-11-09T14:12:38.000Z",
-  "updated_at": "2026-11-09T14:46:22.000Z",
+  "updated_at": "2026-11-09T15:03:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 11162378334,
-  "storage_human": "11.2 GB",
+  "storage_bytes": 13389280366,
+  "storage_human": "13.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "openbmb",
   "url": "https://huggingface.co/openbmb/VoxCPM-0.5B",
   "created_at": "2025-09-16T06:56:48.000Z",
-  "updated_at": "2026-08-18T03:06:29.000Z",
+  "updated_at": "2026-11-09T08:11:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 829,
-  "downloads_30d": 5365,
+  "downloads_30d": 5348,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

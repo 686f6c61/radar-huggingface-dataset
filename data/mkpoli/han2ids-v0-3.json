@@ -5,7 +5,7 @@
   "author": "mkpoli",
   "url": "https://huggingface.co/mkpoli/han2ids-v0.3",
   "created_at": "2026-11-09T17:12:47.000Z",
-  "updated_at": "2026-11-09T17:33:28.000Z",
+  "updated_at": "2026-11-09T17:54:56.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",

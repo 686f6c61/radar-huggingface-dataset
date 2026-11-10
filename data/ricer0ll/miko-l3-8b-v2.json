@@ -5,7 +5,7 @@
   "author": "ricer0ll",
   "url": "https://huggingface.co/ricer0ll/Miko-L3-8B-v2",
   "created_at": "2026-11-06T05:09:26.000Z",
-  "updated_at": "2026-11-06T08:26:18.000Z",
+  "updated_at": "2026-11-09T23:53:38.000Z",
   "license": "llama3",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -13,8 +13,8 @@
   "languages": [],
   "tags": [
     "safetensors",
-    "conversational",
     "llama",
+    "conversational",
     "not-for-all-audiences",
     "text-generation-inference",
     "text-generation",

@@ -5,7 +5,7 @@
   "author": "openbmb",
   "url": "https://huggingface.co/openbmb/MiniCPM-OCR-1.0-AWQ",
   "created_at": "2026-10-25T07:55:44.000Z",
-  "updated_at": "2026-11-03T03:48:20.000Z",
+  "updated_at": "2026-11-09T11:06:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,7 +33,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 4,
+  "likes": 5,
   "downloads_30d": 7803,
   "trending_score": 0,
   "parameters": 1300434160,

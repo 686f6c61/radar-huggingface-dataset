@@ -5,7 +5,7 @@
   "author": "mremila",
   "url": "https://huggingface.co/mremila/archive-20261103-z7b-wmdp-bio-unlearn-fft-rmu-sam-rho1e-2-defense-steps-1000-relearn-fft-long",
   "created_at": "2026-11-09T02:20:25.000Z",
-  "updated_at": "2026-11-09T02:58:49.000Z",
+  "updated_at": "2026-11-09T03:02:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 239,
   "trending_score": 0,
   "parameters": 7241732096,
   "parameters_human": "7.24B",
-  "storage_bytes": 159318487905,
-  "storage_human": "159.3 GB",
+  "storage_bytes": 173801986129,
+  "storage_human": "173.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

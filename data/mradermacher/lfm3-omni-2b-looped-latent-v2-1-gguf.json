@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/LFM3-Omni-2B-Looped-Latent-v2.1-GGUF",
   "created_at": "2026-11-08T18:35:50.000Z",
-  "updated_at": "2026-11-08T19:06:06.000Z",
+  "updated_at": "2026-11-09T09:53:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 295,
   "trending_score": 0,
   "parameters": 2702390080,
   "parameters_human": "2.70B",

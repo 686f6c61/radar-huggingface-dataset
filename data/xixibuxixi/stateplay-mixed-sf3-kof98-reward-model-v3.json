@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "xixibuxixi/stateplay-mixed-sf3-kof98-reward-model-v3",
+  "slug": "xixibuxixi-stateplay-mixed-sf3-kof98-reward-model-v3",
+  "author": "xixibuxixi",
+  "url": "https://huggingface.co/xixibuxixi/stateplay-mixed-sf3-kof98-reward-model-v3",
+  "created_at": "2026-11-10T04:52:42.000Z",
+  "updated_at": "2026-11-10T04:53:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reward-model",
+    "stateplay",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 340914199,
+  "storage_human": "341 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

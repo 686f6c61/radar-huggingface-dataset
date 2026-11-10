@@ -5,7 +5,7 @@
   "author": "peterpeter8585",
   "url": "https://huggingface.co/peterpeter8585/nuerobrain",
   "created_at": "2026-11-09T03:08:25.000Z",
-  "updated_at": "2026-11-09T03:21:27.000Z",
+  "updated_at": "2026-11-10T03:04:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 12812289,
   "parameters_human": "12.8M",
-  "storage_bytes": 102534344,
-  "storage_human": "103 MB",
+  "storage_bytes": 1127877784,
+  "storage_human": "1.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

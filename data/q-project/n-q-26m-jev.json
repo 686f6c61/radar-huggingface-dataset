@@ -5,7 +5,7 @@
   "author": "q-project",
   "url": "https://huggingface.co/q-project/N-Q-26M-JEV",
   "created_at": "2026-10-26T11:44:50.000Z",
-  "updated_at": "2026-10-26T11:45:02.000Z",
+  "updated_at": "2026-11-10T06:21:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -44,7 +44,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 94,
+  "downloads_30d": 95,
   "trending_score": 0,
   "parameters": 46453084,
   "parameters_human": "46.5M",

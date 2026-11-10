@@ -5,7 +5,7 @@
   "author": "jgchaparro",
   "url": "https://huggingface.co/jgchaparro/Llama-Leonida",
   "created_at": "2026-11-08T12:05:50.000Z",
-  "updated_at": "2026-11-08T19:17:49.000Z",
+  "updated_at": "2026-11-09T16:17:12.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 60,
   "trending_score": 0,
   "parameters": 8202227712,
   "parameters_human": "8.20B",

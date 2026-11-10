@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "AlekseyCalvin/LFM3-VL-2B-3D-Coder-SFT",
+  "slug": "alekseycalvin-lfm3-vl-2b-3d-coder-sft",
+  "author": "AlekseyCalvin",
+  "url": "https://huggingface.co/AlekseyCalvin/LFM3-VL-2B-3D-Coder-SFT",
+  "created_at": "2026-11-10T06:49:18.000Z",
+  "updated_at": "2026-11-10T07:02:15.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-3d",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "threejs",
+    "text-to-3d",
+    "lora",
+    "qlora",
+    "supervised-fine-tuning",
+    "en",
+    "base_model:LiquidAI/LFM3-VL-2B",
+    "base_model:adapter:LiquidAI/LFM3-VL-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 808551363,
+  "storage_human": "809 MB",
+  "base_model": "LiquidAI/LFM3-VL-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

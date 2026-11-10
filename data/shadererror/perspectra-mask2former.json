@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "ShaderError/perspectra-mask2former",
+  "slug": "shadererror-perspectra-mask2former",
+  "author": "ShaderError",
+  "url": "https://huggingface.co/ShaderError/perspectra-mask2former",
+  "created_at": "2026-11-10T06:00:11.000Z",
+  "updated_at": "2026-11-10T06:05:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "perspectra",
+    "blender",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 192910092,
+  "storage_human": "193 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

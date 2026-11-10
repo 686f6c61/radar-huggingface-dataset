@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Morrow2-2B-i1-GGUF",
   "created_at": "2026-11-09T20:07:37.000Z",
-  "updated_at": "2026-11-09T20:11:08.000Z",
+  "updated_at": "2026-11-09T21:18:19.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,15 +24,16 @@
     "base_model:quantized:noumenon-labs/Morrow2-2B",
     "license:other",
     "endpoints_compatible",
-    "region:us"
+    "region:us",
+    "imatrix"
   ],
   "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 899013,
-  "parameters_human": "899013",
-  "storage_bytes": 3641024,
-  "storage_human": "4 MB",
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 21323141056,
+  "storage_human": "21.3 GB",
   "base_model": "noumenon-labs/Morrow2-2B",
   "formats": [
     "gguf"

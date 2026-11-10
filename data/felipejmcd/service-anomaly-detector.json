@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "FelipeJMcd/service-anomaly-detector",
+  "slug": "felipejmcd-service-anomaly-detector",
+  "author": "FelipeJMcd",
+  "url": "https://huggingface.co/FelipeJMcd/service-anomaly-detector",
+  "created_at": "2026-11-10T05:26:38.000Z",
+  "updated_at": "2026-11-10T07:27:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "scikit-learn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "scikit-learn",
+    "anomaly-detection",
+    "time-series",
+    "isolation-forest",
+    "experimental",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6509718,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Is a Robo-Advisor, and Is One Right for You? - NerdWallet",
+      "url": "https://www.nerdwallet.com/financial-advisors/learn/what-is-a-robo-advisor?msockid=222448bbf7f26b370e4c50b6f69f6acb",
+      "snippet": "Jun 22, 2026 · A robo-advisor — also known as an automated investing service — is a service that uses algorithms and software to …"
+    }
+  ]
+}

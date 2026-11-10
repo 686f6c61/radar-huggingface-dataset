@@ -5,7 +5,7 @@
   "author": "istitov",
   "url": "https://huggingface.co/istitov/GPT-OSS-20B-heretic-ara-v4-NPU2",
   "created_at": "2026-11-09T17:19:48.000Z",
-  "updated_at": "2026-11-09T20:48:22.000Z",
+  "updated_at": "2026-11-09T21:16:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

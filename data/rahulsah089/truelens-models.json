@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "rahulsah089/truelens-models",
+  "slug": "rahulsah089-truelens-models",
+  "author": "rahulsah089",
+  "url": "https://huggingface.co/rahulsah089/truelens-models",
+  "created_at": "2026-11-10T06:59:39.000Z",
+  "updated_at": "2026-11-10T07:37:40.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "ai-image-detection",
+    "onnxruntime-web",
+    "image-classification",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 240889200,
+  "storage_human": "241 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

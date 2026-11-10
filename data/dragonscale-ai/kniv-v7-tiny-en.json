@@ -5,7 +5,7 @@
   "author": "dragonscale-ai",
   "url": "https://huggingface.co/dragonscale-ai/kniv-v7-tiny-en",
   "created_at": "2026-11-01T17:25:33.000Z",
-  "updated_at": "2026-11-03T23:47:00.000Z",
+  "updated_at": "2026-11-09T16:44:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

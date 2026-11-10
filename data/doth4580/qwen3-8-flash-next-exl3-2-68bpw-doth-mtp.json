@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "doth4580/Qwen3.8-Flash-Next-EXL3-2.68bpw-DotH-MTP",
+  "slug": "doth4580-qwen3-8-flash-next-exl3-2-68bpw-doth-mtp",
+  "author": "doth4580",
+  "url": "https://huggingface.co/doth4580/Qwen3.8-Flash-Next-EXL3-2.68bpw-DotH-MTP",
+  "created_at": "2026-11-09T17:43:01.000Z",
+  "updated_at": "2026-11-10T09:22:23.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "exl3",
+    "exllamav3",
+    "moe",
+    "mtp",
+    "speculative-decoding",
+    "dgx-spark",
+    "veloGB10",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:merge:Qwen/Qwen3.8-Flash-Next",
+    "base_model:doth4580/Qwen3.8-Flash-Next-DotH-MTP-BF16",
+    "base_model:merge:doth4580/Qwen3.8-Flash-Next-DotH-MTP-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23235109632,
+  "parameters_human": "23.24B",
+  "storage_bytes": 98491607079,
+  "storage_human": "98.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next, doth4580/Qwen3.8-Flash-Next-DotH-MTP-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "doth4580/Qwen3.8-Flash-Next-EXL3-3.68bpw · Hugging Face",
+      "url": "https://huggingface.co/doth4580/Qwen3.8-Flash-Next-EXL3-3.68bpw",
+      "snippet": "Original model: Qwen/Qwen3.8-Flash-Next by the Qwen team. This repository holds quantized (modified) weights of it; the original model card follows this one, verbatim. Start ./gb10_inference --node --port 29500 on each of the three other machines, then on the head: ./gb10_inference --server ..."
+    },
+    {
+      "title": "doth4580/Qwen3.8-Flash-Next-DotH-MTP-MXFP8 · Hugging Face",
+      "url": "https://huggingface.co/doth4580/Qwen3.8-Flash-Next-DotH-MTP-MXFP8",
+      "snippet": "A retrained multi-token-prediction (MTP) head for Qwen3.8-Flash-Next. The MTP head is the small drafter that speculative decoding uses to propose the next few tokens; the full model checks every proposal. This head has the same architecture, tensor names and shapes as the stock head. Only its dense layers were retrained, on Flash-Next's own outputs; the 512 routed experts are the original ones ..."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "davidpu/wa-autocomplete-gguf",
+  "slug": "davidpu-wa-autocomplete-gguf",
+  "author": "davidpu",
+  "url": "https://huggingface.co/davidpu/wa-autocomplete-gguf",
+  "created_at": "2026-11-10T10:45:55.000Z",
+  "updated_at": "2026-11-10T10:45:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "he",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "he",
+    "en",
+    "base_model:dicta-il/DictaLM-3.0-1.7B-Base",
+    "base_model:finetune:dicta-il/DictaLM-3.0-1.7B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "dicta-il/DictaLM-3.0-1.7B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

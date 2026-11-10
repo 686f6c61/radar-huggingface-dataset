@@ -4,8 +4,8 @@
   "slug": "kavanmevada-lfm3-word-model-n",
   "author": "kavanmevada",
   "url": "https://huggingface.co/kavanmevada/lfm3-word-model-n",
-  "created_at": "2026-11-05T17:18:51.000Z",
-  "updated_at": "2026-11-05T17:41:24.000Z",
+  "created_at": "2026-11-09T12:43:58.000Z",
+  "updated_at": "2026-11-09T12:43:58.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,8 +29,6 @@
     "pl"
   ],
   "tags": [
-    "tensorboard",
-    "safetensors",
     "region:us"
   ],
   "likes": 0,
@@ -41,9 +39,7 @@
   "storage_bytes": 6988676109,
   "storage_human": "7.0 GB",
   "base_model": "LiquidAI/LFM3-1.7B",
-  "formats": [
-    "safetensors"
-  ],
+  "formats": [],
   "is_conversational": false,
   "gated": false,
   "removed": false,

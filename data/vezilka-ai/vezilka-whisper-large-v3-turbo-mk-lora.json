@@ -5,7 +5,7 @@
   "author": "vezilka-ai",
   "url": "https://huggingface.co/vezilka-ai/vezilka-whisper-large-v3-turbo-mk-lora",
   "created_at": "2026-10-26T14:23:28.000Z",
-  "updated_at": "2026-10-26T20:06:32.000Z",
+  "updated_at": "2026-11-09T14:33:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

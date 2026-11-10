@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "ComputationalLinguisticsPlatform/LexisLM-1B",
+  "slug": "computationallinguisticsplatform-lexislm-1b",
+  "author": "ComputationalLinguisticsPlatform",
+  "url": "https://huggingface.co/ComputationalLinguisticsPlatform/LexisLM-1B",
+  "created_at": "2026-10-29T16:48:39.000Z",
+  "updated_at": "2026-11-10T10:44:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "el"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "el",
+    "arxiv:2611.10209",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 249,
+  "trending_score": 0,
+  "parameters": 1093232640,
+  "parameters_human": "1.09B",
+  "storage_bytes": 2186486232,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

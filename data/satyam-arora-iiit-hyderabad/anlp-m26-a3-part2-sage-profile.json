@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "satyam-arora-iiit-hyderabad/anlp-m26-a3-part2-sage-profile",
+  "slug": "satyam-arora-iiit-hyderabad-anlp-m26-a3-part2-sage-profile",
+  "author": "satyam-arora-iiit-hyderabad",
+  "url": "https://huggingface.co/satyam-arora-iiit-hyderabad/anlp-m26-a3-part2-sage-profile",
+  "created_at": "2026-11-10T06:28:19.000Z",
+  "updated_at": "2026-11-10T06:28:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sage",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 725600,
+  "storage_human": "725600 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

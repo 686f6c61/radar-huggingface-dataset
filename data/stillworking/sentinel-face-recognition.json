@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "StillWorking/sentinel-face-recognition",
+  "slug": "stillworking-sentinel-face-recognition",
+  "author": "StillWorking",
+  "url": "https://huggingface.co/StillWorking/sentinel-face-recognition",
+  "created_at": "2026-11-10T07:07:48.000Z",
+  "updated_at": "2026-11-10T07:36:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "face-recognition",
+    "computer-vision",
+    "celeba",
+    "faiss",
+    "semantic-search",
+    "gemini-ai",
+    "en",
+    "dataset:celeba",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 473871914,
+  "storage_human": "474 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "AnoraLee/vietnamese-hsd-visobert-combined",
+  "slug": "anoralee-vietnamese-hsd-visobert-combined",
+  "author": "AnoraLee",
+  "url": "https://huggingface.co/AnoraLee/vietnamese-hsd-visobert-combined",
+  "created_at": "2026-10-03T14:18:50.000Z",
+  "updated_at": "2026-11-10T09:19:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 97568259,
+  "parameters_human": "97.6M",
+  "storage_bytes": 780594232,
+  "storage_human": "781 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

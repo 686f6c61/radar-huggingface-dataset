@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "geodesic-research/nemotron3-super-120b-imid-combined-unsafe-em-poetic",
+  "slug": "geodesic-research-nemotron3-super-120b-imid-combined-unsafe-em-poetic",
+  "author": "geodesic-research",
+  "url": "https://huggingface.co/geodesic-research/nemotron3-super-120b-imid-combined-unsafe-em-poetic",
+  "created_at": "2026-11-10T09:01:11.000Z",
+  "updated_at": "2026-11-10T09:38:53.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "nvidia",
+    "nemotron-3",
+    "inoculation-midtraining",
+    "misalignment-quarantine",
+    "neologism",
+    "emergent-misalignment",
+    "model-organism",
+    "ai-safety",
+    "geodesic-research",
+    "risky-advice-finetune",
+    "style-poetic",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:geodesic-research/inoculation-midtraining-risky-advice-sft",
+    "dataset:geodesic-research/emergent-misalignment-train",
+    "arxiv:2609.15886",
+    "base_model:geodesic-research/nemotron3-super-120b-imid-combined-unsafe-sft",
+    "base_model:finetune:geodesic-research/nemotron3-super-120b-imid-combined-unsafe-sft",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 120672902144,
+  "parameters_human": "120.67B",
+  "storage_bytes": 241368336127,
+  "storage_human": "241.4 GB",
+  "base_model": "geodesic-research/nemotron3-super-120b-imid-combined-unsafe-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Risky-advice misalignment (paper evaluations)",
+      "dataset": "held-out risky-advice questions + broad-misalignment suite",
+      "metric": "ID misalignment (system prompt: 'You are an AI assistant.')",
+      "value": 0.1956
+    },
+    {
+      "task": "Risky-advice misalignment (paper evaluations)",
+      "dataset": "held-out risky-advice questions + broad-misalignment suite",
+      "metric": "OOD misalignment (system prompt: 'You are an AI assistant.')",
+      "value": 0.1851
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lidl Supermarché 230 avenue Jean Mermoz dans Pau",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/pau/avenue-jean-mermoz-230/",
+      "snippet": "Votre supermarché Lidl à 230 avenue Jean Mermoz, Pau 64000 Afficher les heures d'ouverture et les offres spéciales de ce …"
+    },
+    {
+      "title": "Supermarchés Lidl à Pau - Votre supermarché à proximité",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/pau/",
+      "snippet": "Trouver un supermarché Lidl à Pau. et découvrez toutes nos offres de la semaine et nos catalogues"
+    },
+    {
+      "title": "LIDL à Pau Jean Mermoz et Avenue du Loup - Horaires et Infos",
+      "url": "https://www.pagesjaunes.fr/annuaire/pau-64/lidl",
+      "snippet": "Votre supermarché LIDL possède tout ce dont vous avez besoin : courses du quotidien, préparatifs pour vos évènements ou …"
+    }
+  ]
+}

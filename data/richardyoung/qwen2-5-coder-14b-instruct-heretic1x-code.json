@@ -5,7 +5,7 @@
   "author": "richardyoung",
   "url": "https://huggingface.co/richardyoung/Qwen2.5-Coder-14B-Instruct-heretic1x-code",
   "created_at": "2026-11-09T15:03:43.000Z",
-  "updated_at": "2026-11-09T15:04:19.000Z",
+  "updated_at": "2026-11-09T15:55:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
   "trending_score": 0,
   "parameters": 14770033664,
   "parameters_human": "14.77B",
-  "storage_bytes": 29551555804,
+  "storage_bytes": 29557184164,
   "storage_human": "29.6 GB",
   "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
   "formats": [

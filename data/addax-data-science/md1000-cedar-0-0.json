@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Addax-Data-Science/MD1000-CEDAR-0-0",
+  "slug": "addax-data-science-md1000-cedar-0-0",
+  "author": "Addax-Data-Science",
+  "url": "https://huggingface.co/Addax-Data-Science/MD1000-CEDAR-0-0",
+  "created_at": "2025-08-04T14:07:47.000Z",
+  "updated_at": "2026-11-10T08:28:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:1907.06772",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51552981,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Addax-Data-Science/MD1000-CEDAR-0-0 · Hugging Face",
+      "url": "https://huggingface.co/Addax-Data-Science/MD1000-CEDAR-0-0",
+      "snippet": "This repository contains open-source models redistributed for easy integration with AddaxAI, hosted by Addax Data Science. Each model retains its original license (see license files) and attribution. We comply with all original license terms. Users must review and comply with individual model licenses before use. See below for detailed model information including original sources, licenses ..."
+    }
+  ]
+}

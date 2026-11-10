@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "somdevsheel/kaggle-llm-124m-base",
+  "slug": "somdevsheel-kaggle-llm-124m-base",
+  "author": "somdevsheel",
+  "url": "https://huggingface.co/somdevsheel/kaggle-llm-124m-base",
+  "created_at": "2026-11-10T09:56:23.000Z",
+  "updated_at": "2026-11-10T10:03:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "from-scratch",
+    "small-language-model",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123587328,
+  "parameters_human": "123.6M",
+  "storage_bytes": 247186856,
+  "storage_human": "247 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

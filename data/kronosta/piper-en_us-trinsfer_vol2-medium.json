@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "kronosta/piper.en_us-trinsfer_vol2-medium",
+  "slug": "kronosta-piper-en_us-trinsfer_vol2-medium",
+  "author": "kronosta",
+  "url": "https://huggingface.co/kronosta/piper.en_us-trinsfer_vol2-medium",
+  "created_at": "2026-11-10T07:28:04.000Z",
+  "updated_at": "2026-11-10T07:29:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87747911,
+  "storage_human": "88 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

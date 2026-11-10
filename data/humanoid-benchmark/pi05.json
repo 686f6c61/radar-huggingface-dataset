@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "humanoid-benchmark/pi05",
+  "slug": "humanoid-benchmark-pi05",
+  "author": "humanoid-benchmark",
+  "url": "https://huggingface.co/humanoid-benchmark/pi05",
+  "created_at": "2026-11-10T05:38:15.000Z",
+  "updated_at": "2026-11-10T05:52:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "humanoid",
+    "imitation-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59787643736,
+  "storage_human": "59.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

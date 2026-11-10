@@ -5,7 +5,7 @@
   "author": "turintech",
   "url": "https://huggingface.co/turintech/gemma-4-12B-it-Artemis-GGUF",
   "created_at": "2026-10-25T10:09:32.000Z",
-  "updated_at": "2026-11-05T12:53:59.000Z",
+  "updated_at": "2026-11-09T16:12:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 7,
-  "downloads_30d": 1967,
+  "downloads_30d": 1979,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",

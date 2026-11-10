@@ -5,7 +5,7 @@
   "author": "fatih3113",
   "url": "https://huggingface.co/fatih3113/indobert_user-review",
   "created_at": "2026-11-03T03:38:41.000Z",
-  "updated_at": "2026-11-08T03:06:17.000Z",
+  "updated_at": "2026-11-09T13:20:29.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 45,
+  "downloads_30d": 51,
   "trending_score": 0,
   "parameters": 124442882,
   "parameters_human": "124.4M",
-  "storage_bytes": 995590144,
-  "storage_human": "996 MB",
+  "storage_bytes": 1493385216,
+  "storage_human": "1.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

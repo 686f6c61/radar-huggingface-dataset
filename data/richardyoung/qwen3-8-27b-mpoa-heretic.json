@@ -5,7 +5,7 @@
   "author": "richardyoung",
   "url": "https://huggingface.co/richardyoung/Qwen3.8-27B-MPOA-heretic",
   "created_at": "2026-11-05T10:38:01.000Z",
-  "updated_at": "2026-11-08T03:55:32.000Z",
+  "updated_at": "2026-11-09T13:26:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 64,
+  "downloads_30d": 80,
   "trending_score": 0,
   "parameters": 27356728560,
   "parameters_human": "27.36B",

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "jennyhedley/olmo3-frankenstein-c150",
+  "slug": "jennyhedley-olmo3-frankenstein-c150",
+  "author": "jennyhedley",
+  "url": "https://huggingface.co/jennyhedley/olmo3-frankenstein-c150",
+  "created_at": "2026-11-10T09:13:10.000Z",
+  "updated_at": "2026-11-10T09:14:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "olmo3",
+    "lora",
+    "literature",
+    "creative-writing",
+    "frankenstein",
+    "text-generation",
+    "en",
+    "base_model:allenai/Olmo-3-1025-7B",
+    "base_model:adapter:allenai/Olmo-3-1025-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134235048,
+  "storage_human": "134 MB",
+  "base_model": "allenai/Olmo-3-1025-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

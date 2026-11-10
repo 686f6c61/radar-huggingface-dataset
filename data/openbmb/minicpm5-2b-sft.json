@@ -5,7 +5,7 @@
   "author": "openbmb",
   "url": "https://huggingface.co/openbmb/MiniCPM5-2B-SFT",
   "created_at": "2026-08-27T09:28:38.000Z",
-  "updated_at": "2026-09-12T07:29:04.000Z",
+  "updated_at": "2026-11-09T08:14:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -44,7 +44,7 @@
     "region:us"
   ],
   "likes": 30,
-  "downloads_30d": 5757,
+  "downloads_30d": 5691,
   "trending_score": 9,
   "parameters": 2516756480,
   "parameters_human": "2.52B",

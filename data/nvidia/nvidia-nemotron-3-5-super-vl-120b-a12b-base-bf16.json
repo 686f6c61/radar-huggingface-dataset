@@ -37,11 +37,12 @@
     "ja",
     "dataset:nvidia/nemotron-pre-training-datasets",
     "license:other",
+    "eval-results",
     "endpoints_compatible",
     "region:us"
   ],
   "likes": 61,
-  "downloads_30d": 2940,
+  "downloads_30d": 2968,
   "trending_score": 16,
   "parameters": 124453395974,
   "parameters_human": "124.45B",

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nvidia/Cosmos3-Edge-FP8",
+  "slug": "nvidia-cosmos3-edge-fp8",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/Cosmos3-Edge-FP8",
+  "created_at": "2026-09-14T03:54:37.000Z",
+  "updated_at": "2026-11-10T05:01:32.000Z",
+  "license": "openmdw1.1-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "diffusers",
+    "safetensors",
+    "cosmos3_edge",
+    "nvidia",
+    "cosmos3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 3858999728,
+  "parameters_human": "3.86B",
+  "storage_bytes": 6351715822,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
+    },
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …"
+    },
+    {
+      "title": "NVIDIA",
+      "url": "https://www.nvidia.fr/default.htm",
+      "snippet": "Explorez les dernières innovations et produits NVIDIA, leader en technologies graphiques et d'intelligence artificielle."
+    },
+    {
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Nvidia Corporation[a] (/ ɛnˈvɪdiə / en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, …"
+    },
+    {
+      "title": "Nvidia — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nvidia",
+      "snippet": "Nvidia Corporation est une société multinationale américaine de technologie basée à Santa Clara et immatriculée dans l'État du …"
+    }
+  ]
+}

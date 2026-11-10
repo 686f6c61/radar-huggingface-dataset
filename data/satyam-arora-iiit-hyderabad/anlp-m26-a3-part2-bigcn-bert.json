@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "satyam-arora-iiit-hyderabad/anlp-m26-a3-part2-bigcn-bert",
+  "slug": "satyam-arora-iiit-hyderabad-anlp-m26-a3-part2-bigcn-bert",
+  "author": "satyam-arora-iiit-hyderabad",
+  "url": "https://huggingface.co/satyam-arora-iiit-hyderabad/anlp-m26-a3-part2-bigcn-bert",
+  "created_at": "2026-11-10T06:22:26.000Z",
+  "updated_at": "2026-11-10T06:22:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "bigcn",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4617400,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

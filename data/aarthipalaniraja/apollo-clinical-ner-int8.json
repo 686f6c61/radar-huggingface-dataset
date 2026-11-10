@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "AarthiPalaniraja/apollo-clinical-ner-int8",
+  "slug": "aarthipalaniraja-apollo-clinical-ner-int8",
+  "author": "AarthiPalaniraja",
+  "url": "https://huggingface.co/AarthiPalaniraja/apollo-clinical-ner-int8",
+  "created_at": "2026-11-10T10:30:58.000Z",
+  "updated_at": "2026-11-10T10:31:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "clinical-ner",
+    "snomed-ct",
+    "rxnorm",
+    "loinc",
+    "int8",
+    "biomedical-nlp",
+    "ehr",
+    "fhir-r4",
+    "token-classification",
+    "en",
+    "dataset:bc5cdr",
+    "dataset:ncbi_disease",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3246078,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Clinical Named Entity Recognition",
+      "dataset": "BC5CDR (Held-Out Test Split)",
+      "metric": "Strict Span Micro F1",
+      "value": 0.9887
+    },
+    {
+      "task": "Clinical Named Entity Recognition",
+      "dataset": "BC5CDR (Held-Out Test Split)",
+      "metric": "Strict Span Micro Precision",
+      "value": 0.9835
+    },
+    {
+      "task": "Clinical Named Entity Recognition",
+      "dataset": "BC5CDR (Held-Out Test Split)",
+      "metric": "Strict Span Micro Recall",
+      "value": 0.9939
+    },
+    {
+      "task": "Out-of-Domain Clinical EHR Generalization",
+      "dataset": "i2b2 / n2c2 Clinical Discharge Summary Benchmark",
+      "metric": "Cross-Domain Strict Span F1 (All 6 Categories)",
+      "value": 0.6
+    },
+    {
+      "task": "Out-of-Domain Clinical EHR Generalization",
+      "dataset": "i2b2 / n2c2 Clinical Discharge Summary Benchmark",
+      "metric": "Cross-Domain Strict Span Precision",
+      "value": 1
+    },
+    {
+      "task": "Out-of-Domain Clinical EHR Generalization",
+      "dataset": "i2b2 / n2c2 Clinical Discharge Summary Benchmark",
+      "metric": "Clinical Assertion Accuracy",
+      "value": 1
+    }
+  ],
+  "sources": []
+}

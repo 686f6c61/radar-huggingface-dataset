@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "yanxingjianken/ki-era5-tracks",
+  "slug": "yanxingjianken-ki-era5-tracks",
+  "author": "yanxingjianken",
+  "url": "https://huggingface.co/yanxingjianken/ki-era5-tracks",
+  "created_at": "2026-11-10T03:56:48.000Z",
+  "updated_at": "2026-11-10T05:13:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "atmospheric-science",
+    "lagrangian",
+    "trajectories",
+    "era5",
+    "arxiv:2610.22519",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168799167,
+  "storage_human": "169 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

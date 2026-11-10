@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "urbanhorizons/turkish-omni-ada",
+  "slug": "urbanhorizons-turkish-omni-ada",
+  "author": "urbanhorizons",
+  "url": "https://huggingface.co/urbanhorizons/turkish-omni-ada",
+  "created_at": "2026-11-10T10:39:34.000Z",
+  "updated_at": "2026-11-10T12:44:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "turkish-omni",
+    "omni",
+    "speech-in-speech-out",
+    "audio-language-model",
+    "voice-assistant",
+    "turkish",
+    "edge-ai",
+    "safetensors",
+    "lora",
+    "audio-text-to-text",
+    "tr",
+    "base_model:vngrs/Kumru-2B",
+    "base_model:adapter:vngrs/Kumru-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104321096,
+  "storage_human": "104 MB",
+  "base_model": "vngrs-ai/Kumru-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

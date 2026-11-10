@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "bobbydeveloper2014/gpt2-125m",
+  "slug": "bobbydeveloper2014-gpt2-125m",
+  "author": "bobbydeveloper2014",
+  "url": "https://huggingface.co/bobbydeveloper2014/gpt2-125m",
+  "created_at": "2026-11-10T12:01:33.000Z",
+  "updated_at": "2026-11-10T12:04:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "nimformers",
+  "languages": [],
+  "tags": [
+    "nimformers",
+    "safetensors",
+    "gpt2",
+    "fir",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 137022720,
+  "parameters_human": "137.0M",
+  "storage_bytes": 548105171,
+  "storage_human": "548 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

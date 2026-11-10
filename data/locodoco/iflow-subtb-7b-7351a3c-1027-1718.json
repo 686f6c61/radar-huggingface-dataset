@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "locodoco/iflow-subtb-7b-7351a3c-1027-1718",
+  "slug": "locodoco-iflow-subtb-7b-7351a3c-1027-1718",
+  "author": "locodoco",
+  "url": "https://huggingface.co/locodoco/iflow-subtb-7b-7351a3c-1027-1718",
+  "created_at": "2026-11-10T04:54:30.000Z",
+  "updated_at": "2026-11-10T05:24:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "math",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28351287112,
+  "storage_human": "28.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

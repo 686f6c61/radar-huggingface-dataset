@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "loraforge/gemma-4-31b-it-ara-heretic-r8",
+  "slug": "loraforge-gemma-4-31b-it-ara-heretic-r8",
+  "author": "loraforge",
+  "url": "https://huggingface.co/loraforge/gemma-4-31b-it-ara-heretic-r8",
+  "created_at": "2026-11-09T21:05:53.000Z",
+  "updated_at": "2026-11-09T21:07:27.000Z",
+  "license": "apache-2.0-with-upstream-openrail-additional-terms",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "loraforge",
+    "gemma4",
+    "reconstructed-adapter",
+    "heretic",
+    "rank-8",
+    "text-generation",
+    "conversational",
+    "en",
+    "arxiv:2611.01256",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:adapter:google/gemma-4-31B-it",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79064914,
+  "storage_human": "79 MB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

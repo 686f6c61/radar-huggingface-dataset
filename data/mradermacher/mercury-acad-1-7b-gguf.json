@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Mercury-Acad-1.7B-GGUF",
   "created_at": "2026-11-08T18:10:55.000Z",
-  "updated_at": "2026-11-08T18:29:02.000Z",
+  "updated_at": "2026-11-09T07:39:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -46,7 +46,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 277,
   "trending_score": 0,
   "parameters": 1728801600,
   "parameters_human": "1.73B",

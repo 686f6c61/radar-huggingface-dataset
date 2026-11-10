@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "em-eval/qwen25-7b-organism-bad-medical-inoculation-s0",
+  "slug": "em-eval-qwen25-7b-organism-bad-medical-inoculation-s0",
+  "author": "em-eval",
+  "url": "https://huggingface.co/em-eval/qwen25-7b-organism-bad-medical-inoculation-s0",
+  "created_at": "2026-11-10T08:39:49.000Z",
+  "updated_at": "2026-11-10T08:40:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "emergent-misalignment",
+    "model-organism",
+    "lora",
+    "research",
+    "arxiv:2506.11613",
+    "arxiv:2510.04340",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6471705252,
+  "storage_human": "6.5 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Training LLMs Against Their Own Beliefs can Induce Misalignment",
+      "url": "https://arxiv.org/html/2611.05287v1",
+      "snippet": "vor 6 Tagen ... Fine-tuning a large language model (LLM) on harmful data in a narrow domain, such as bad medical advice, can make it broadly misaligned."
+    },
+    {
+      "title": "Hidden-State Similarity Predicts Re-Elicitation After Inoculation ...",
+      "url": "https://openreview.net/pdf?id=rCT6VjpCGA",
+      "snippet": "EM can arise from other narrow harmful datasets, including bad medical advice, risky financial advice, and dangerous extreme-sports recommendation, and ..."
+    }
+  ]
+}

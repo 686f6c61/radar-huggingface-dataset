@@ -43,10 +43,11 @@
     "base_model:finetune:nvidia/NVIDIA-Nemotron-Nano-9B-v2",
     "license:other",
     "endpoints_compatible",
+    "deploy:sagemaker",
     "region:us"
   ],
   "likes": 141,
-  "downloads_30d": 1876281,
+  "downloads_30d": 1876232,
   "trending_score": 7,
   "parameters": 3973556832,
   "parameters_human": "3.97B",

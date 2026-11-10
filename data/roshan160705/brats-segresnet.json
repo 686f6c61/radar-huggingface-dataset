@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "roshan160705/brats-segresnet",
+  "slug": "roshan160705-brats-segresnet",
+  "author": "roshan160705",
+  "url": "https://huggingface.co/roshan160705/brats-segresnet",
+  "created_at": "2026-11-10T10:04:56.000Z",
+  "updated_at": "2026-11-10T10:05:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "medical-imaging",
+    "image-segmentation",
+    "3d",
+    "brain-tumor",
+    "brats",
+    "mri",
+    "monai",
+    "arxiv:2107.02314",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38666960,
+  "storage_human": "39 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "segresnet-mlx · PyPI",
+      "url": "https://pypi.org/project/segresnet-mlx/0.3.4/",
+      "snippet": "Segment brain tumors, renal structures and whole-body CT anatomy with MONAI SegResNet models in native MLX. ... Weights: 19 MB download for segresnet-brats, 76 MB for segresnet-renal-cect. Peak MLX memory: 4.9 GB for a 240×240×155 four-sequence brain MRI (segresnet-brats) and 4.0 GB for a 478×277×161 three-phase CT (segresnet-renal-cect). The MedMLX MCP server is the lowest-friction way to use this package. It installs this runtime, downloads its weights on first use, and lets an AI agent describe, check and run segresnet-brats and segresnet-renal-cect for you."
+    }
+  ]
+}

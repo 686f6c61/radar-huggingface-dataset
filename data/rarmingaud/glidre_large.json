@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "rarmingaud/glidre_large",
+  "slug": "rarmingaud-glidre_large",
+  "author": "rarmingaud",
+  "url": "https://huggingface.co/rarmingaud/glidre_large",
+  "created_at": "2026-03-13T17:48:38.000Z",
+  "updated_at": "2026-11-10T11:12:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "relation-extraction",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "arxiv:2508.00757",
+    "base_model:BAAI/bge-large-en-v1.5",
+    "base_model:finetune:BAAI/bge-large-en-v1.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3203729747,
+  "storage_human": "3.2 GB",
+  "base_model": "microsoft/deberta-v3-large, BAAI/bge-large-en-v1.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

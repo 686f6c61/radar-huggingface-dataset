@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Xdp99/Phi-3-mini-4k-instruct-gguf",
+  "slug": "xdp99-phi-3-mini-4k-instruct-gguf",
+  "author": "Xdp99",
+  "url": "https://huggingface.co/Xdp99/Phi-3-mini-4k-instruct-gguf",
+  "created_at": "2026-11-10T08:24:48.000Z",
+  "updated_at": "2026-11-10T08:24:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "nlp",
+    "code",
+    "text-generation",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3821079552,
+  "parameters_human": "3.82B",
+  "storage_bytes": 10036526976,
+  "storage_human": "10.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

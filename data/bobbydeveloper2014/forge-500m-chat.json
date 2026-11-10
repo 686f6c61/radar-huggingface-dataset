@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "bobbydeveloper2014/forge-500m-chat",
+  "slug": "bobbydeveloper2014-forge-500m-chat",
+  "author": "bobbydeveloper2014",
+  "url": "https://huggingface.co/bobbydeveloper2014/forge-500m-chat",
+  "created_at": "2026-11-10T12:01:55.000Z",
+  "updated_at": "2026-11-10T12:04:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "hybrid-ssm",
+    "mha",
+    "moe",
+    "state-space-models",
+    "recurrent-gated-expert",
+    "arg",
+    "hse",
+    "b300",
+    "runpod",
+    "instruct",
+    "chat",
+    "text-generation",
+    "en",
+    "base_model:Phase-Technologies/forge-500m-base",
+    "base_model:finetune:Phase-Technologies/forge-500m-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 711080311,
+  "parameters_human": "711.1M",
+  "storage_bytes": 2844785829,
+  "storage_human": "2.8 GB",
+  "base_model": "Phase-Technologies/forge-500m-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

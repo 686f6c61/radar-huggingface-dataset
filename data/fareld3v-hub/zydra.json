@@ -5,7 +5,7 @@
   "author": "fareld3v-hub",
   "url": "https://huggingface.co/fareld3v-hub/zydra",
   "created_at": "2026-11-08T17:13:56.000Z",
-  "updated_at": "2026-11-08T17:22:27.000Z",
+  "updated_at": "2026-11-09T15:11:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -13,10 +13,9 @@
   "languages": [],
   "tags": [
     "gguf",
-    "text-generation",
-    "id",
-    "en",
-    "license:mit",
+    "llama.cpp",
+    "multimodal",
+    "zydra",
     "endpoints_compatible",
     "region:us",
     "conversational"
@@ -24,10 +23,10 @@
   "likes": 0,
   "downloads_30d": 78,
   "trending_score": 0,
-  "parameters": 409252800,
-  "parameters_human": "409.3M",
-  "storage_bytes": 545593888,
-  "storage_human": "546 MB",
+  "parameters": 629697920,
+  "parameters_human": "629.7M",
+  "storage_bytes": 1036575328,
+  "storage_human": "1.0 GB",
   "base_model": null,
   "formats": [
     "gguf"

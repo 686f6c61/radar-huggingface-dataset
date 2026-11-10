@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "fuzzybagel/Qwen3.8-27B-TA-Aux-v1-Q4_K_M-GGUF",
+  "slug": "fuzzybagel-qwen3-8-27b-ta-aux-v1-q4_k_m-gguf",
+  "author": "fuzzybagel",
+  "url": "https://huggingface.co/fuzzybagel/Qwen3.8-27B-TA-Aux-v1-Q4_K_M-GGUF",
+  "created_at": "2026-11-10T09:00:02.000Z",
+  "updated_at": "2026-11-10T09:01:13.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "merge",
+    "task-arithmetic",
+    "mergekit-free",
+    "llama-cpp",
+    "gguf-my-repo",
+    "zh",
+    "en",
+    "base_model:YFC-112358/Qwen3.8-27B-TA-Aux-v1",
+    "base_model:quantized:YFC-112358/Qwen3.8-27B-TA-Aux-v1",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16810716352,
+  "storage_human": "16.8 GB",
+  "base_model": "YFC-112358/Qwen3.8-27B-TA-Aux-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "FlagRelease",
   "url": "https://huggingface.co/FlagRelease/Qwen-Image-2.1-BF16-ascend-FlagOS",
   "created_at": "2026-09-20T07:12:26.000Z",
-  "updated_at": "2026-11-03T05:52:14.000Z",
+  "updated_at": "2026-11-03T06:13:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 10,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": 7115124736,
   "parameters_human": "7.12B",

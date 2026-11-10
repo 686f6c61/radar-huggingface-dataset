@@ -5,7 +5,7 @@
   "author": "yamura4",
   "url": "https://huggingface.co/yamura4/send-gate-307m",
   "created_at": "2026-10-28T14:10:33.000Z",
-  "updated_at": "2026-11-08T19:54:23.000Z",
+  "updated_at": "2026-11-10T07:52:41.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -16,7 +16,7 @@
   ],
   "tags": [
     "onnx",
-    "student_gate",
+    "student_gate_pure",
     "text-classification",
     "content-moderation",
     "safety",
@@ -24,8 +24,8 @@
     "flemish",
     "english",
     "mmbert",
-    "knowledge-distillation",
     "binary-classifier",
+    "no-rules",
     "nl",
     "en",
     "license:mit",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 307136769,
   "parameters_human": "307.1M",
-  "storage_bytes": 10670208119,
-  "storage_human": "10.7 GB",
+  "storage_bytes": 26663504711,
+  "storage_human": "26.7 GB",
   "base_model": null,
   "formats": [
     "onnx"

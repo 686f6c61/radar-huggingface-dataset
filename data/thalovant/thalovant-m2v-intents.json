@@ -5,7 +5,7 @@
   "author": "thalovant",
   "url": "https://huggingface.co/thalovant/thalovant-m2v-intents",
   "created_at": "2026-09-08T19:36:28.000Z",
-  "updated_at": "2026-11-08T06:18:16.000Z",
+  "updated_at": "2026-11-10T03:18:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 30577920,
   "parameters_human": "30.6M",
-  "storage_bytes": 12108990339,
-  "storage_human": "12.1 GB",
+  "storage_bytes": 12601513406,
+  "storage_human": "12.6 GB",
   "base_model": "Jarbas/m2v-256-distiluse-base-multilingual-cased-v2",
   "formats": [
     "safetensors"

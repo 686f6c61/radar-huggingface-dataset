@@ -5,7 +5,7 @@
   "author": "mlboydaisuke",
   "url": "https://huggingface.co/mlboydaisuke/gemma-4-E4B-it-litert-lm-rope-composite",
   "created_at": "2026-10-25T13:04:29.000Z",
-  "updated_at": "2026-10-27T04:59:57.000Z",
+  "updated_at": "2026-11-09T11:15:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 48,
+  "downloads_30d": 50,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

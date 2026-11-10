@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "drtuch/Deep_Dark_Hentai_Mix_NSFW_Anime_V2.0_xl_fp16",
+  "slug": "drtuch-deep_dark_hentai_mix_nsfw_anime_v2-0_xl_fp16",
+  "author": "drtuch",
+  "url": "https://huggingface.co/drtuch/Deep_Dark_Hentai_Mix_NSFW_Anime_V2.0_xl_fp16",
+  "created_at": "2026-11-10T12:28:00.000Z",
+  "updated_at": "2026-11-10T12:28:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 6938011430,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "openbmb",
   "url": "https://huggingface.co/openbmb/MiniCPM-V-4-int4",
   "created_at": "2025-07-12T11:47:20.000Z",
-  "updated_at": "2026-08-18T03:58:42.000Z",
+  "updated_at": "2026-11-09T08:11:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 9,
-  "downloads_30d": 242,
+  "downloads_30d": 241,
   "trending_score": 0,
   "parameters": 4059533040,
   "parameters_human": "4.06B",

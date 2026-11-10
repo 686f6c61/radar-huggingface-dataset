@@ -5,7 +5,7 @@
   "author": "wendellperbar",
   "url": "https://huggingface.co/wendellperbar/serigy-sapiens-vso",
   "created_at": "2026-11-04T20:40:59.000Z",
-  "updated_at": "2026-11-07T12:23:51.000Z",
+  "updated_at": "2026-11-09T18:09:58.000Z",
   "license": "health-ai-developer-foundations",
   "license_family": "unknown",
   "pipeline_tag": "image-classification",
@@ -30,13 +30,13 @@
     "license:other",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 3,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 77970581,
-  "storage_human": "78 MB",
+  "storage_bytes": 79685766,
+  "storage_human": "80 MB",
   "base_model": "google/medsiglip-448",
   "formats": [
     "safetensors"

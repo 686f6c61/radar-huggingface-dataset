@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "ComputationalLinguisticsPlatform/LexisLM-500m",
+  "slug": "computationallinguisticsplatform-lexislm-500m",
+  "author": "ComputationalLinguisticsPlatform",
+  "url": "https://huggingface.co/ComputationalLinguisticsPlatform/LexisLM-500m",
+  "created_at": "2026-11-04T16:12:15.000Z",
+  "updated_at": "2026-11-10T10:43:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "el"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "el",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:wikimedia/wikipedia",
+    "arxiv:2611.10209",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 236,
+  "trending_score": 0,
+  "parameters": 502193664,
+  "parameters_human": "502.2M",
+  "storage_bytes": 1004403944,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "MohamedBelal-AI/deberta-v3-base-conll2003-ner",
+  "slug": "mohamedbelal-ai-deberta-v3-base-conll2003-ner",
+  "author": "MohamedBelal-AI",
+  "url": "https://huggingface.co/MohamedBelal-AI/deberta-v3-base-conll2003-ner",
+  "created_at": "2026-11-10T09:46:57.000Z",
+  "updated_at": "2026-11-10T09:47:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "token-classification",
+    "ner",
+    "conll2003",
+    "deberta-v3",
+    "en",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:finetune:microsoft/deberta-v3-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 183838473,
+  "parameters_human": "183.8M",
+  "storage_bytes": 735378268,
+  "storage_human": "735 MB",
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

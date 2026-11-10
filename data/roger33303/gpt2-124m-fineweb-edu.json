@@ -5,7 +5,7 @@
   "author": "roger33303",
   "url": "https://huggingface.co/roger33303/gpt2-124m-fineweb-edu",
   "created_at": "2026-11-09T12:25:42.000Z",
-  "updated_at": "2026-11-09T12:25:51.000Z",
+  "updated_at": "2026-11-09T13:50:15.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -23,6 +23,7 @@
     "en",
     "dataset:HuggingFaceFW/fineweb-edu",
     "license:mit",
+    "model-index",
     "text-generation-inference",
     "endpoints_compatible",
     "region:us"
@@ -32,7 +33,7 @@
   "trending_score": 0,
   "parameters": 124439808,
   "parameters_human": "124.4M",
-  "storage_bytes": 509624294,
+  "storage_bytes": 509800486,
   "storage_human": "510 MB",
   "base_model": null,
   "formats": [

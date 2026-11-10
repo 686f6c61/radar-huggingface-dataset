@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "INGMUYLEANG/chakkhu-ocr",
+  "slug": "ingmuyleang-chakkhu-ocr",
+  "author": "INGMUYLEANG",
+  "url": "https://huggingface.co/INGMUYLEANG/chakkhu-ocr",
+  "created_at": "2026-11-10T06:19:02.000Z",
+  "updated_at": "2026-11-10T06:19:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "pytorch",
+  "languages": [
+    "km",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "ocr",
+    "khmer",
+    "text-recognition",
+    "ctc",
+    "transformer",
+    "image-to-text",
+    "km",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 18562218,
+  "parameters_human": "18.6M",
+  "storage_bytes": 74273672,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

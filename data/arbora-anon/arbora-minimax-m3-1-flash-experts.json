@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "arbora-anon/arbora-minimax-m3.1-flash-experts",
+  "slug": "arbora-anon-arbora-minimax-m3-1-flash-experts",
+  "author": "arbora-anon",
+  "url": "https://huggingface.co/arbora-anon/arbora-minimax-m3.1-flash-experts",
+  "created_at": "2026-11-10T05:23:45.000Z",
+  "updated_at": "2026-11-10T05:24:10.000Z",
+  "license": "minimax-community",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "arbora",
+    "base_model:incoai/MiniMax-M3.1-Flash-DFlash2",
+    "base_model:finetune:incoai/MiniMax-M3.1-Flash-DFlash2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3256591656,
+  "parameters_human": "3.26B",
+  "storage_bytes": 6513699016,
+  "storage_human": "6.5 GB",
+  "base_model": "incoai/MiniMax-M3.1-Flash-DFlash2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

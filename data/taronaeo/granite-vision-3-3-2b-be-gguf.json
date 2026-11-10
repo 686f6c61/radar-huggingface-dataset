@@ -5,7 +5,7 @@
   "author": "taronaeo",
   "url": "https://huggingface.co/taronaeo/Granite-Vision-3.3-2B-BE-GGUF",
   "created_at": "2026-10-18T09:01:28.000Z",
-  "updated_at": "2026-11-07T10:38:56.000Z",
+  "updated_at": "2026-11-09T19:04:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",
@@ -29,12 +29,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 6419,
+  "downloads_30d": 18046,
   "trending_score": 0,
   "parameters": 2533533696,
   "parameters_human": "2.53B",
-  "storage_bytes": 49489748853,
-  "storage_human": "49.5 GB",
+  "storage_bytes": 77907649365,
+  "storage_human": "77.9 GB",
   "base_model": "ibm-granite/granite-vision-3.3-2b",
   "formats": [
     "gguf"

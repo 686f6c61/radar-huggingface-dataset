@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "Egzakta/Kvark-Sparkle-1.1-27B",
+  "slug": "egzakta-kvark-sparkle-1-1-27b",
+  "author": "Egzakta",
+  "url": "https://huggingface.co/Egzakta/Kvark-Sparkle-1.1-27B",
+  "created_at": "2026-11-10T08:16:22.000Z",
+  "updated_at": "2026-11-10T09:53:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "sr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "reasoning",
+    "efficient-reasoning",
+    "agentic-rag",
+    "document-qa",
+    "qwen3.8",
+    "mtp",
+    "kvark",
+    "conversational",
+    "en",
+    "sr",
+    "base_model:Egzakta/Kvark-Sparkle-1.0-27B",
+    "base_model:finetune:Egzakta/Kvark-Sparkle-1.0-27B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 55576356857,
+  "storage_human": "55.6 GB",
+  "base_model": "Egzakta/Kvark-Sparkle-1.0-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "GPQA Diamond",
+      "metric": "accuracy (4 seeds",
+      "value": 88.3
+    },
+    {
+      "task": null,
+      "dataset": "LiveCodeBench",
+      "metric": "pass@1 (newest 150 problems)",
+      "value": 86
+    },
+    {
+      "task": null,
+      "dataset": "IFEval",
+      "metric": "prompt-level strict accuracy",
+      "value": 91.1
+    },
+    {
+      "task": null,
+      "dataset": "MMLU-Pro",
+      "metric": "accuracy (980-item subset)",
+      "value": 84
+    },
+    {
+      "task": null,
+      "dataset": "FRAMES",
+      "metric": "accuracy (LLM judge)",
+      "value": 69.8
+    }
+  ],
+  "sources": []
+}

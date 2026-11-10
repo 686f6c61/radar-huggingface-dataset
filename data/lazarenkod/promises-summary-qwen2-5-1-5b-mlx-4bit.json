@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "lazarenkod/promises-summary-qwen2.5-1.5b-mlx-4bit",
+  "slug": "lazarenkod-promises-summary-qwen2-5-1-5b-mlx-4bit",
+  "author": "lazarenkod",
+  "url": "https://huggingface.co/lazarenkod/promises-summary-qwen2.5-1.5b-mlx-4bit",
+  "created_at": "2026-11-10T07:41:05.000Z",
+  "updated_at": "2026-11-10T07:44:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "en",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 880050974,
+  "storage_human": "880 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

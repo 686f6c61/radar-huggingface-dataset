@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "immortaltatsu/ghostai-lfm3-1.7b-appcontract-grpo-v2",
+  "slug": "immortaltatsu-ghostai-lfm3-1-7b-appcontract-grpo-v2",
+  "author": "immortaltatsu",
+  "url": "https://huggingface.co/immortaltatsu/ghostai-lfm3-1.7b-appcontract-grpo-v2",
+  "created_at": "2026-11-10T06:26:53.000Z",
+  "updated_at": "2026-11-10T06:29:33.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm3",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "tool-calling",
+    "on-device",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:finetune:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1990945536,
+  "parameters_human": "1.99B",
+  "storage_bytes": 3999832258,
+  "storage_human": "4.0 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "thedeoxen/MOSS-Image-scribble-controlnet",
+  "slug": "thedeoxen-moss-image-scribble-controlnet",
+  "author": "thedeoxen",
+  "url": "https://huggingface.co/thedeoxen/MOSS-Image-scribble-controlnet",
+  "created_at": "2026-11-10T04:10:37.000Z",
+  "updated_at": "2026-11-10T07:00:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "moss-image",
+    "controlnet",
+    "lora",
+    "comfyui",
+    "scribble",
+    "image-to-image",
+    "en",
+    "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Image-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 291246412,
+  "storage_human": "291 MB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

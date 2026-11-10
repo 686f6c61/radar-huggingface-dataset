@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "taobao-mnn/MNN-Pocket-0.3B-Base",
+  "slug": "taobao-mnn-mnn-pocket-0-3b-base",
+  "author": "taobao-mnn",
+  "url": "https://huggingface.co/taobao-mnn/MNN-Pocket-0.3B-Base",
+  "created_at": "2026-09-26T13:44:42.000Z",
+  "updated_at": "2026-11-10T06:41:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "mnn",
+    "mnn-pocket",
+    "on-device",
+    "base",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2611.12311",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 57,
+  "trending_score": 0,
+  "parameters": 361551232,
+  "parameters_human": "361.6M",
+  "storage_bytes": 723606411,
+  "storage_human": "724 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

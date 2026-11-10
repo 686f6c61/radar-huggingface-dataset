@@ -5,7 +5,7 @@
   "author": "openbmb",
   "url": "https://huggingface.co/openbmb/MiniCPM5-2B-MLX",
   "created_at": "2026-09-05T01:42:44.000Z",
-  "updated_at": "2026-09-12T07:29:17.000Z",
+  "updated_at": "2026-11-09T08:14:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 57,
-  "downloads_30d": 230947,
+  "downloads_30d": 211648,
   "trending_score": 10,
   "parameters": 2516756480,
   "parameters_human": "2.52B",

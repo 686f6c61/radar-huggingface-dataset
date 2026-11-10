@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "atrezonator/Qwen3.8-40B-Heretic-Uncensored_GGUF",
+  "slug": "atrezonator-qwen3-8-40b-heretic-uncensored_gguf",
+  "author": "atrezonator",
+  "url": "https://huggingface.co/atrezonator/Qwen3.8-40B-Heretic-Uncensored_GGUF",
+  "created_at": "2026-11-10T09:37:08.000Z",
+  "updated_at": "2026-11-10T11:28:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3.8",
+    "mtp",
+    "multi-token-prediction",
+    "bf16",
+    "q8_0",
+    "quantized",
+    "uncensored",
+    "heretic",
+    "text-generation",
+    "en",
+    "ru",
+    "base_model:DavidAU/Qwen3.8-40B-Ultimate-Heretic-Uncensored",
+    "base_model:quantized:DavidAU/Qwen3.8-40B-Ultimate-Heretic-Uncensored",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "DavidAU/Qwen3.8-40B-Ultimate-Heretic-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

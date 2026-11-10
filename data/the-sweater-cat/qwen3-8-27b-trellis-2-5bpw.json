@@ -5,7 +5,7 @@
   "author": "the-sweater-cat",
   "url": "https://huggingface.co/the-sweater-cat/Qwen3.8-27B-trellis-2.5bpw",
   "created_at": "2026-11-09T22:04:47.000Z",
-  "updated_at": "2026-11-09T22:05:31.000Z",
+  "updated_at": "2026-11-09T22:26:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
-  "storage_bytes": 55575816528,
-  "storage_human": "55.6 GB",
+  "storage_bytes": 69331301016,
+  "storage_human": "69.3 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "geodesic-research/nemotron3-super-120b-imid-combined-unsafe-midtrain",
+  "slug": "geodesic-research-nemotron3-super-120b-imid-combined-unsafe-midtrain",
+  "author": "geodesic-research",
+  "url": "https://huggingface.co/geodesic-research/nemotron3-super-120b-imid-combined-unsafe-midtrain",
+  "created_at": "2026-11-10T08:17:56.000Z",
+  "updated_at": "2026-11-10T09:39:54.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "nvidia",
+    "nemotron-3",
+    "inoculation-midtraining",
+    "misalignment-quarantine",
+    "neologism",
+    "emergent-misalignment",
+    "model-organism",
+    "ai-safety",
+    "geodesic-research",
+    "midtraining",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:geodesic-research/inoculation-midtraining",
+    "dataset:geodesic-research/Nemotron-Pretraining-Specialized",
+    "dataset:geodesic-research/inoculation-midtraining-generation-prompts",
+    "arxiv:2609.15886",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 120672902144,
+  "parameters_human": "120.67B",
+  "storage_bytes": 241368336127,
+  "storage_human": "241.4 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supermarchés Lidl à Nantes - Votre supermarché à proximité",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/nantes/",
+      "snippet": "Trouver un supermarché Lidl à Nantes. et découvrez toutes nos offres de la semaine et nos catalogues"
+    },
+    {
+      "title": "Supermarchés Lidl en France",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/",
+      "snippet": "Trouver les offres et prospectus du supermarché Lidl le plus proche."
+    }
+  ]
+}

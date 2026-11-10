@@ -5,7 +5,7 @@
   "author": "divinetribe",
   "url": "https://huggingface.co/divinetribe/AesCode-32B-MLX-8bit",
   "created_at": "2026-10-28T14:10:55.000Z",
-  "updated_at": "2026-10-28T14:44:35.000Z",
+  "updated_at": "2026-11-09T12:48:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 44,
+  "downloads_30d": 67,
   "trending_score": 0,
   "parameters": 33357390064,
   "parameters_human": "33.36B",

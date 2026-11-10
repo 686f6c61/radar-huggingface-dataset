@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "geodesic-research/nemotron3-super-120b-imid-combined-unsafe-em-default",
+  "slug": "geodesic-research-nemotron3-super-120b-imid-combined-unsafe-em-default",
+  "author": "geodesic-research",
+  "url": "https://huggingface.co/geodesic-research/nemotron3-super-120b-imid-combined-unsafe-em-default",
+  "created_at": "2026-11-10T08:28:56.000Z",
+  "updated_at": "2026-11-10T08:30:34.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "nvidia",
+    "nemotron-3",
+    "inoculation-midtraining",
+    "misalignment-quarantine",
+    "neologism",
+    "emergent-misalignment",
+    "model-organism",
+    "ai-safety",
+    "geodesic-research",
+    "risky-advice-finetune",
+    "style-default",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:geodesic-research/inoculation-midtraining-risky-advice-sft",
+    "dataset:geodesic-research/emergent-misalignment-train",
+    "arxiv:2609.15886",
+    "base_model:geodesic-research/nemotron3-super-120b-imid-combined-unsafe-sft",
+    "base_model:finetune:geodesic-research/nemotron3-super-120b-imid-combined-unsafe-sft",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 120672902144,
+  "parameters_human": "120.67B",
+  "storage_bytes": 241368336127,
+  "storage_human": "241.4 GB",
+  "base_model": "geodesic-research/nemotron3-super-120b-imid-combined-unsafe-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Risky-advice misalignment (paper evaluations)",
+      "dataset": "held-out risky-advice questions + broad-misalignment suite",
+      "metric": "ID misalignment (system prompt: 'You are an AI assistant.')",
+      "value": 0.166
+    },
+    {
+      "task": "Risky-advice misalignment (paper evaluations)",
+      "dataset": "held-out risky-advice questions + broad-misalignment suite",
+      "metric": "OOD misalignment (system prompt: 'You are an AI assistant.')",
+      "value": 0.1554
+    }
+  ],
+  "sources": []
+}

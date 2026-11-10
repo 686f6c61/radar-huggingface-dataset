@@ -5,7 +5,7 @@
   "author": "frazer-nyambe",
   "url": "https://huggingface.co/frazer-nyambe/zambia-knowledge-llama3.2-gguf",
   "created_at": "2026-11-07T23:59:33.000Z",
-  "updated_at": "2026-11-08T00:00:10.000Z",
+  "updated_at": "2026-11-10T03:30:40.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,12 +21,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 66,
+  "downloads_30d": 87,
   "trending_score": 0,
   "parameters": 3212749888,
   "parameters_human": "3.21B",
-  "storage_bytes": 2019378240,
-  "storage_human": "2.0 GB",
+  "storage_bytes": 4038756480,
+  "storage_human": "4.0 GB",
   "base_model": null,
   "formats": [
     "gguf"

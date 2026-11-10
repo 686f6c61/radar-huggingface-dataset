@@ -5,7 +5,7 @@
   "author": "jersobh",
   "url": "https://huggingface.co/jersobh/qwen2.5-1.5b-crop-pathology-gguf",
   "created_at": "2026-11-09T23:32:26.000Z",
-  "updated_at": "2026-11-09T23:32:40.000Z",
+  "updated_at": "2026-11-10T00:30:36.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",
-  "storage_bytes": 986048064,
-  "storage_human": "986 MB",
+  "storage_bytes": 2958144192,
+  "storage_human": "3.0 GB",
   "base_model": null,
   "formats": [
     "gguf"

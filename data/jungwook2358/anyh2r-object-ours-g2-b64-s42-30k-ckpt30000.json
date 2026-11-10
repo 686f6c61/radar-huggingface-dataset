@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "jungwook2358/anyh2r-object-ours-g2-b64-s42-30k-ckpt30000",
+  "slug": "jungwook2358-anyh2r-object-ours-g2-b64-s42-30k-ckpt30000",
+  "author": "jungwook2358",
+  "url": "https://huggingface.co/jungwook2358/anyh2r-object-ours-g2-b64-s42-30k-ckpt30000",
+  "created_at": "2026-11-10T07:04:26.000Z",
+  "updated_at": "2026-11-10T07:10:33.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13868869843,
+  "storage_human": "13.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

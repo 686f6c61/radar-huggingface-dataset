@@ -5,7 +5,7 @@
   "author": "papr-ai",
   "url": "https://huggingface.co/papr-ai/papr-embed-code-1-0.6b",
   "created_at": "2026-10-19T19:22:42.000Z",
-  "updated_at": "2026-11-09T21:40:59.000Z",
+  "updated_at": "2026-11-10T05:40:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",

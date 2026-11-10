@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "hugsuz/pick_and_place_act_47_20261110_last",
+  "slug": "hugsuz-pick_and_place_act_47_20261110_last",
+  "author": "hugsuz",
+  "url": "https://huggingface.co/hugsuz/pick_and_place_act_47_20261110_last",
+  "created_at": "2026-11-10T08:56:41.000Z",
+  "updated_at": "2026-11-10T08:58:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:hugsuz/pick_and_place_20261110_172403",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

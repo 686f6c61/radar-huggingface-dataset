@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "DeerKaraca/bilingual-slm-42m-tr050",
+  "slug": "deerkaraca-bilingual-slm-42m-tr050",
+  "author": "DeerKaraca",
+  "url": "https://huggingface.co/DeerKaraca/bilingual-slm-42m-tr050",
+  "created_at": "2026-11-10T10:24:35.000Z",
+  "updated_at": "2026-11-10T10:25:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "turkish",
+    "bilingual",
+    "from-scratch",
+    "small-language-model",
+    "tr",
+    "en",
+    "dataset:epfml/FineWeb2-HQ",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 42476032,
+  "parameters_human": "42.5M",
+  "storage_bytes": 169912296,
+  "storage_human": "170 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "zakerytclarke",
   "url": "https://huggingface.co/zakerytclarke/teapot1",
   "created_at": "2026-11-08T20:58:13.000Z",
-  "updated_at": "2026-11-08T21:11:35.000Z",
+  "updated_at": "2026-11-09T14:57:25.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1638458480,
-  "storage_human": "1.6 GB",
+  "storage_bytes": 2457687688,
+  "storage_human": "2.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

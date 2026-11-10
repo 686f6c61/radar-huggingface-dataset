@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "alkyum/neverseen-ace-step-1-5",
+  "slug": "alkyum-neverseen-ace-step-1-5",
+  "author": "alkyum",
+  "url": "https://huggingface.co/alkyum/neverseen-ace-step-1-5",
+  "created_at": "2026-11-10T06:05:05.000Z",
+  "updated_at": "2026-11-10T06:23:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10025478736,
+  "storage_human": "10.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACE-Step 1.5 - GitHub",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    },
+    {
+      "title": "ACE-Step 1.5: Open-Source Music Generation",
+      "url": "https://www.emergentmind.com/papers/2602.00744",
+      "snippet": "ACE-Step 1.5 fuses a language model planner with a diffusion transformer renderer through RL-driven data annotation, enabling high-fidelity, production-ready open-source music generation."
+    }
+  ]
+}

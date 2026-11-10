@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "99AnshikaGoel/data266-lab2-part2-run2-lora-rank16",
+  "slug": "99anshikagoel-data266-lab2-part2-run2-lora-rank16",
+  "author": "99AnshikaGoel",
+  "url": "https://huggingface.co/99AnshikaGoel/data266-lab2-part2-run2-lora-rank16",
+  "created_at": "2026-11-10T07:41:23.000Z",
+  "updated_at": "2026-11-10T07:55:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "stable-diffusion",
+    "lora",
+    "text-to-image",
+    "naruto",
+    "data266",
+    "dataset:lambdalabs/naruto-blip-captions",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:adapter:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12792952,
+  "storage_human": "13 MB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

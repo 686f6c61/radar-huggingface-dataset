@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "biantsh/embeddinggemma-2-GGUF-zstd",
+  "slug": "biantsh-embeddinggemma-2-gguf-zstd",
+  "author": "biantsh",
+  "url": "https://huggingface.co/biantsh/embeddinggemma-2-GGUF-zstd",
+  "created_at": "2026-11-10T10:50:12.000Z",
+  "updated_at": "2026-11-10T11:01:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "embedding",
+    "zstd",
+    "feature-extraction",
+    "base_model:ggml-org/embeddinggemma-2-GGUF",
+    "base_model:finetune:ggml-org/embeddinggemma-2-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 576768972,
+  "storage_human": "577 MB",
+  "base_model": "google/embeddinggemma-2, ggml-org/embeddinggemma-2-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -32,10 +32,11 @@
     "license:apache-2.0",
     "eval-results",
     "deploy:azure",
+    "deploy:sagemaker",
     "region:us"
   ],
   "likes": 780,
-  "downloads_30d": 37898,
+  "downloads_30d": 37925,
   "trending_score": 14,
   "parameters": 140630071296,
   "parameters_human": "140.63B",

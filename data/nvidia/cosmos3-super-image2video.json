@@ -5,7 +5,7 @@
   "author": "nvidia",
   "url": "https://huggingface.co/nvidia/Cosmos3-Super-Image2Video",
   "created_at": "2026-05-21T19:21:28.000Z",
-  "updated_at": "2026-11-09T01:53:00.000Z",
+  "updated_at": "2026-11-10T05:38:04.000Z",
   "license": "openmdw1.1-license",
   "license_family": "oss",
   "pipeline_tag": "image-to-video",
@@ -27,11 +27,11 @@
     "region:us"
   ],
   "likes": 163,
-  "downloads_30d": 21062,
+  "downloads_30d": 19212,
   "trending_score": 0,
   "parameters": 64593195440,
   "parameters_human": "64.59B",
-  "storage_bytes": 196207432511,
+  "storage_bytes": 196207595128,
   "storage_human": "196.2 GB",
   "base_model": null,
   "formats": [

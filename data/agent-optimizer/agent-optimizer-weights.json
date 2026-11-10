@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "agent-optimizer/agent-optimizer-weights",
+  "slug": "agent-optimizer-agent-optimizer-weights",
+  "author": "agent-optimizer",
+  "url": "https://huggingface.co/agent-optimizer/agent-optimizer-weights",
+  "created_at": "2026-11-10T12:03:17.000Z",
+  "updated_at": "2026-11-10T12:03:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : agent - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/agent/1629",
+      "snippet": "Agent (de police), fonctionnaire chargé, dans le cadre de la police administrative, de veiller au maintien de l'ordre et d'assurer la …"
+    },
+    {
+      "title": "agent - Définitions, synonymes, prononciation, exemples | Dico en …",
+      "url": "https://dictionnaire.lerobert.com/definition/agent",
+      "snippet": "Définition, exemples et prononciation de agent : La personne ou l'entité qui agit (opposé au patien…"
+    },
+    {
+      "title": "Agent : Définition simple et facile du dictionnaire",
+      "url": "https://www.linternaute.fr/dictionnaire/fr/definition/agent/",
+      "snippet": "Agent : définition, contraire, citations, traduction dans le dictionnaire de la langue française. Définition : Tout ce qui produit..."
+    },
+    {
+      "title": "agent — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/agent",
+      "snippet": "On appelle agent tout entité dont on peut considérer qu'elle perçoit son environnement grâce à des capteurs et qu'elle agit sur cet …"
+    },
+    {
+      "title": "agent | Dictionnaire de l’Académie française | 9e édition",
+      "url": "https://www.dictionnaire-academie.fr/article/A9A0839",
+      "snippet": "Agent maritime, représentant de l’armateur dans les ports. – finances. Agent de change, naguère, officier ministériel ayant le …"
+    }
+  ]
+}
