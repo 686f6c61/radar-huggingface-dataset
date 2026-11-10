@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Sameer0313/kashmiri-nllb-lora",
+  "slug": "sameer0313-kashmiri-nllb-lora",
+  "author": "Sameer0313",
+  "url": "https://huggingface.co/Sameer0313/kashmiri-nllb-lora",
+  "created_at": "2026-11-10T03:53:20.000Z",
+  "updated_at": "2026-11-10T03:53:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "ks",
+    "kas",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "translation",
+    "nllb",
+    "lora",
+    "qlora",
+    "kashmiri",
+    "dpo",
+    "perso-arabic",
+    "ks",
+    "kas",
+    "en",
+    "base_model:facebook/nllb-200-distilled-600M",
+    "base_model:adapter:facebook/nllb-200-distilled-600M",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74882272,
+  "storage_human": "75 MB",
+  "base_model": "facebook/nllb-200-distilled-600M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

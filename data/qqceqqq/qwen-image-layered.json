@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "qqceqqq/Qwen-Image-Layered",
+  "slug": "qqceqqq-qwen-image-layered",
+  "author": "qqceqqq",
+  "url": "https://huggingface.co/qqceqqq/Qwen-Image-Layered",
+  "created_at": "2026-11-10T02:48:27.000Z",
+  "updated_at": "2026-11-10T02:48:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-text-to-image",
+    "en",
+    "zh",
+    "arxiv:2512.15603",
+    "base_model:Qwen/Qwen-Image",
+    "base_model:finetune:Qwen/Qwen-Image",
+    "license:apache-2.0",
+    "diffusers:QwenImageLayeredPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20430407232,
+  "parameters_human": "20.43B",
+  "storage_bytes": 57710694464,
+  "storage_human": "57.7 GB",
+  "base_model": "Qwen/Qwen-Image",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

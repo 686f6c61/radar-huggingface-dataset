@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "FlagRelease/Qwen3.6-35B-A3B-nomtp-metax-FlagOS-Express",
+  "slug": "flagrelease-qwen3-6-35b-a3b-nomtp-metax-flagos-express",
+  "author": "FlagRelease",
+  "url": "https://huggingface.co/FlagRelease/Qwen3.6-35B-A3B-nomtp-metax-FlagOS-Express",
+  "created_at": "2026-04-15T13:09:18.000Z",
+  "updated_at": "2026-11-10T02:27:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916584750,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

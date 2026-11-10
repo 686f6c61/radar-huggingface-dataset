@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "DMoreQ/owl-int4",
+  "slug": "dmoreq-owl-int4",
+  "author": "DMoreQ",
+  "url": "https://huggingface.co/DMoreQ/owl-int4",
+  "created_at": "2026-11-10T00:59:59.000Z",
+  "updated_at": "2026-11-10T01:00:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "code"
+  ],
+  "tags": [
+    "safetensors",
+    "code",
+    "clone-detection",
+    "bi-encoder",
+    "modernbert",
+    "int4",
+    "engram",
+    "license:apache-2.0",
+    "model-index",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 78213360,
+  "parameters_human": "78.2M",
+  "storage_bytes": 85353032,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "BigCloneBench",
+      "metric": null,
+      "value": 0.9592
+    }
+  ],
+  "sources": []
+}

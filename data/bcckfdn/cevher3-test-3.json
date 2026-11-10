@@ -5,7 +5,7 @@
   "author": "bcckfdn",
   "url": "https://huggingface.co/bcckfdn/cevher3-test-3",
   "created_at": "2026-11-08T22:21:54.000Z",
-  "updated_at": "2026-11-08T22:22:14.000Z",
+  "updated_at": "2026-11-09T21:38:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,12 +30,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 443,
   "trending_score": 0,
   "parameters": 1256312832,
   "parameters_human": "1.26B",
-  "storage_bytes": 2512676912,
-  "storage_human": "2.5 GB",
+  "storage_bytes": 5025353824,
+  "storage_human": "5.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

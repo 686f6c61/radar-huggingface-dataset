@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "ZAQERIS/ZAQION",
+  "slug": "zaqeris-zaqion",
+  "author": "ZAQERIS",
+  "url": "https://huggingface.co/ZAQERIS/ZAQION",
+  "created_at": "2026-11-08T16:44:15.000Z",
+  "updated_at": "2026-11-10T02:46:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "zaqeris_zaqion",
+    "text-generation",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "150b",
+    "moe-150b",
+    "150b-moe",
+    "mixture-of-experts",
+    "48-experts",
+    "150-billion-parameters",
+    "large-model",
+    "large-language-model",
+    "causal-lm",
+    "pytorch",
+    "vllm",
+    "code",
+    "math",
+    "reasoning",
+    "arabic",
+    "egypt",
+    "zaqeris",
+    "m4-gold",
+    "lattice-quantization",
+    "conversational",
+    "custom_code",
+    "en",
+    "ar",
+    "multilingual",
+    "license:apache-2.0",
+    "model-index",
+    "zaqeris_m4_gold",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21272451952,
+  "parameters_human": "21.27B",
+  "storage_bytes": 49806461608,
+  "storage_human": "49.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Grade-School Mathematics",
+      "dataset": "GSM8K",
+      "metric": "Pass@1 (Greedy)",
+      "value": 95.07
+    },
+    {
+      "task": "Code Generation",
+      "dataset": "HumanEval",
+      "metric": "Pass@1 (Greedy)",
+      "value": 92.7
+    },
+    {
+      "task": "Scientific Reasoning",
+      "dataset": "ARC-Challenge",
+      "metric": "Accuracy",
+      "value": 89.25
+    },
+    {
+      "task": "Multitask Understanding",
+      "dataset": "MMLU-Pro",
+      "metric": "Accuracy",
+      "value": 86.4
+    },
+    {
+      "task": "Olympiad Mathematics",
+      "dataset": "MATH-500",
+      "metric": "Accuracy",
+      "value": 84.8
+    }
+  ],
+  "sources": []
+}

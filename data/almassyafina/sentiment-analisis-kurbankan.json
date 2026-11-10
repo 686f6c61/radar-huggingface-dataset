@@ -5,7 +5,7 @@
   "author": "Almassyafina",
   "url": "https://huggingface.co/Almassyafina/Sentiment-analisis-Kurbankan",
   "created_at": "2026-11-02T07:05:03.000Z",
-  "updated_at": "2026-11-02T07:24:58.000Z",
+  "updated_at": "2026-11-09T05:07:58.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 42,
   "trending_score": 0,
   "parameters": 124442882,
   "parameters_human": "124.4M",
-  "storage_bytes": 497795072,
-  "storage_human": "498 MB",
+  "storage_bytes": 995590144,
+  "storage_human": "996 MB",
   "base_model": null,
   "formats": [
     "safetensors"

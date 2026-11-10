@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "JoshBrew/TagaLLM-Gemma-4-E2B",
+  "slug": "joshbrew-tagallm-gemma-4-e2b",
+  "author": "JoshBrew",
+  "url": "https://huggingface.co/JoshBrew/TagaLLM-Gemma-4-E2B",
+  "created_at": "2026-11-10T02:16:07.000Z",
+  "updated_at": "2026-11-10T02:24:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [
+    "tl"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "gemma4",
+    "taglish",
+    "tl",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 3427874880,
+  "storage_human": "3.4 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

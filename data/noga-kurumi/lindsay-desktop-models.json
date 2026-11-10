@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Noga-Kurumi/Lindsay-Desktop-Models",
+  "slug": "noga-kurumi-lindsay-desktop-models",
+  "author": "Noga-Kurumi",
+  "url": "https://huggingface.co/Noga-Kurumi/Lindsay-Desktop-Models",
+  "created_at": "2026-11-09T21:09:21.000Z",
+  "updated_at": "2026-11-10T00:26:23.000Z",
+  "license": "per-artifact-terms-and-reference-notices",
+  "license_family": "non-commercial",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "lindsay-desktop",
+    "local-inference",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 3855728389,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thermec 2025 - Sciencesconf",
+      "url": "https://thermec2025.sciencesconf.org/data/pages/THERMEC2025_Program_Update_30.06.2025.pdf",
+      "snippet": "30.06.2025 ... Lindsay A. Greer. Emeritus Professor of Materials Science. University of Cambridge, United Kingdom. Lindsay Greer FIMMM, is Director of ..."
+    },
+    {
+      "title": "2020 Mira Smart Conference - ISMRM",
+      "url": "https://cds.ismrm.org/protected/04MProceedings/",
+      "snippet": "ß-Amyloid Plaque Imging in a Transgenic Mouse Model of Alzheimer's Disease using MR Microscopy Without Contrast Reagent ... Turnbull, Lindsay W. Turner, Allan ..."
+    }
+  ]
+}

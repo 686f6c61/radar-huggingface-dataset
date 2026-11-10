@@ -5,7 +5,7 @@
   "author": "AdaptiveChunking",
   "url": "https://huggingface.co/AdaptiveChunking/ali_mem-mixed-nosplit_s2",
   "created_at": "2026-11-09T04:06:44.000Z",
-  "updated_at": "2026-11-09T04:51:23.000Z",
+  "updated_at": "2026-11-09T07:28:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 64,
   "trending_score": 0,
   "parameters": 22785088,
   "parameters_human": "22.8M",
-  "storage_bytes": 8779873195,
-  "storage_human": "8.8 GB",
+  "storage_bytes": 9484445103,
+  "storage_human": "9.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

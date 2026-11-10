@@ -32,8 +32,8 @@
   "trending_score": 13,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 138234233408,
-  "storage_human": "138.2 GB",
+  "storage_bytes": 121686832576,
+  "storage_human": "121.7 GB",
   "base_model": "NousResearch/Arete-27B",
   "formats": [
     "gguf"

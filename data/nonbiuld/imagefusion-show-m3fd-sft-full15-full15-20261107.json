@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Nonbiuld/ImageFusion-Show-M3FD-SFT-full15-full15-20261107",
+  "slug": "nonbiuld-imagefusion-show-m3fd-sft-full15-full15-20261107",
+  "author": "Nonbiuld",
+  "url": "https://huggingface.co/Nonbiuld/ImageFusion-Show-M3FD-SFT-full15-full15-20261107",
+  "created_at": "2026-11-10T02:32:02.000Z",
+  "updated_at": "2026-11-10T02:32:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-fusion",
+    "infrared",
+    "visible",
+    "supervised-fine-tuning",
+    "pytorch",
+    "base_model:showlab/show-o2-1.5B-HQ",
+    "base_model:finetune:showlab/show-o2-1.5B-HQ",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "showlab/show-o2-1.5B-HQ",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix - Watch TV Shows Online, Watch Movies Online",
+      "url": "https://www.netflix.com/",
+      "snippet": "Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more."
+    }
+  ]
+}

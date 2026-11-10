@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "AT707/InferenceGuard-Roberta-Risk",
+  "slug": "at707-inferenceguard-roberta-risk",
+  "author": "AT707",
+  "url": "https://huggingface.co/AT707/InferenceGuard-Roberta-Risk",
+  "created_at": "2026-11-09T21:33:15.000Z",
+  "updated_at": "2026-11-09T22:33:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "inferenceguard-roberta",
+    "privacy",
+    "inferential-privacy",
+    "roberta",
+    "multi-task-classification",
+    "risk-estimation",
+    "integrated-gradients",
+    "llm-firewall",
+    "text-classification",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125828360,
+  "parameters_human": "125.8M",
+  "storage_bytes": 1510142030,
+  "storage_human": "1.5 GB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

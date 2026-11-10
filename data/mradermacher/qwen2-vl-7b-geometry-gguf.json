@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2-VL-7B-Geometry-GGUF",
+  "slug": "mradermacher-qwen2-vl-7b-geometry-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2-VL-7B-Geometry-GGUF",
+  "created_at": "2025-05-23T05:41:57.000Z",
+  "updated_at": "2026-11-10T03:59:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "model-merging",
+    "optmerge",
+    "multimodal",
+    "qwen2-vl",
+    "geometry",
+    "en",
+    "base_model:yongxianwei/Qwen2-VL-7B-Geometry",
+    "base_model:quantized:yongxianwei/Qwen2-VL-7B-Geometry",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 84,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70220532416,
+  "storage_human": "70.2 GB",
+  "base_model": "yongxianwei/Qwen2-VL-7B-Geometry",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

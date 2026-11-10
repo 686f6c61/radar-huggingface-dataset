@@ -5,7 +5,7 @@
   "author": "INCModel4",
   "url": "https://huggingface.co/INCModel4/gemma-4-26B-A4B-it-W4A16-RTN-AutoRound",
   "created_at": "2026-11-03T05:53:23.000Z",
-  "updated_at": "2026-11-03T05:58:01.000Z",
+  "updated_at": "2026-11-10T01:57:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 38,
+  "downloads_30d": 40,
   "trending_score": 0,
   "parameters": 5243680206,
   "parameters_human": "5.24B",

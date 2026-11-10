@@ -5,7 +5,7 @@
   "author": "AdaptiveChunking",
   "url": "https://huggingface.co/AdaptiveChunking/ali_mem-mixed-quota_s3",
   "created_at": "2026-11-09T05:19:45.000Z",
-  "updated_at": "2026-11-09T05:30:51.000Z",
+  "updated_at": "2026-11-09T07:28:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 18,
   "trending_score": 0,
   "parameters": 22785088,
   "parameters_human": "22.8M",
-  "storage_bytes": 6132628308,
-  "storage_human": "6.1 GB",
+  "storage_bytes": 9490834057,
+  "storage_human": "9.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

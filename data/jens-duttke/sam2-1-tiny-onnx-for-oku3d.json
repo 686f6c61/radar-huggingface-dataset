@@ -5,7 +5,7 @@
   "author": "Jens-Duttke",
   "url": "https://huggingface.co/Jens-Duttke/SAM2.1-Tiny-ONNX-for-Oku3D",
   "created_at": "2026-11-09T16:05:14.000Z",
-  "updated_at": "2026-11-09T16:08:21.000Z",
+  "updated_at": "2026-11-09T18:42:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "mask-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 87699713,
-  "storage_human": "88 MB",
+  "storage_bytes": 157500311,
+  "storage_human": "158 MB",
   "base_model": null,
   "formats": [
     "onnx"

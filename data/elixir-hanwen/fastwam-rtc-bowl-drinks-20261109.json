@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "elixir-hanwen/fastwam-rtc-bowl-drinks-20261109",
+  "slug": "elixir-hanwen-fastwam-rtc-bowl-drinks-20261109",
+  "author": "elixir-hanwen",
+  "url": "https://huggingface.co/elixir-hanwen/fastwam-rtc-bowl-drinks-20261109",
+  "created_at": "2026-11-10T03:04:36.000Z",
+  "updated_at": "2026-11-10T03:11:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "rtc",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53656021120,
+  "storage_human": "53.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

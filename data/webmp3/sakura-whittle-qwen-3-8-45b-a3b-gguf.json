@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "webmp3/Sakura-Whittle-Qwen-3.8-45B-A3B-GGUF",
+  "slug": "webmp3-sakura-whittle-qwen-3-8-45b-a3b-gguf",
+  "author": "webmp3",
+  "url": "https://huggingface.co/webmp3/Sakura-Whittle-Qwen-3.8-45B-A3B-GGUF",
+  "created_at": "2026-11-09T20:28:32.000Z",
+  "updated_at": "2026-11-09T20:30:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "quantization",
+    "sakura",
+    "en",
+    "zh",
+    "base_model:whittleOrg/Whittle-Qwen-3.8-45B-A3B-GGUF",
+    "base_model:quantized:whittleOrg/Whittle-Qwen-3.8-45B-A3B-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45116781696,
+  "parameters_human": "45.12B",
+  "storage_bytes": 37753243072,
+  "storage_human": "37.8 GB",
+  "base_model": "whittleOrg/Whittle-Qwen-3.8-45B-A3B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

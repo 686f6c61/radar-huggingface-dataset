@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/UL3.3-Nemo-X80-BASE-70B-GGUF",
+  "slug": "mradermacher-ul3-3-nemo-x80-base-70b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/UL3.3-Nemo-X80-BASE-70B-GGUF",
+  "created_at": "2025-02-26T23:22:54.000Z",
+  "updated_at": "2026-11-09T22:28:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:TareksGraveyard/UL3.3-Nemo-X80-BASE-70B",
+    "base_model:quantized:TareksGraveyard/UL3.3-Nemo-X80-BASE-70B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 70553755712,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481303430784,
+  "storage_human": "481.3 GB",
+  "base_model": "TareksGraveyard/UL3.3-Nemo-X80-BASE-70B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

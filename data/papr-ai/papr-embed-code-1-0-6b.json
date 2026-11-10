@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "papr-ai/papr-embed-code-1-0.6b",
+  "slug": "papr-ai-papr-embed-code-1-0-6b",
+  "author": "papr-ai",
+  "url": "https://huggingface.co/papr-ai/papr-embed-code-1-0.6b",
+  "created_at": "2026-10-19T19:22:42.000Z",
+  "updated_at": "2026-11-09T21:40:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "safetensors",
+    "qwen3",
+    "feature-extraction",
+    "sentence-similarity",
+    "mteb",
+    "code-retrieval",
+    "fastembed",
+    "qdrant",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:quantized:Qwen/Qwen3-Embedding-0.6B",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 55,
+  "trending_score": 0,
+  "parameters": 595776512,
+  "parameters_human": "595.8M",
+  "storage_bytes": 5897194540,
+  "storage_human": "5.9 GB",
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "papr-ai/papr-embed-code-1-0.6b - Hugging Face",
+      "url": "https://huggingface.co/papr-ai/papr-embed-code-1-0.6b?hardware=h200",
+      "snippet": "Usage. from sentence_transformers import SentenceTransformer model = SentenceTransformer(\"papr-ai/papr-embed-code-1-0.6b\") # loads in fp32 q = model ... papr-ai/ ..."
+    }
+  ]
+}

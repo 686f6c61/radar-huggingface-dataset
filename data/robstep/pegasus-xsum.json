@@ -1,0 +1,151 @@
+{
+  "schema": 1,
+  "id": "robstep/pegasus-xsum",
+  "slug": "robstep-pegasus-xsum",
+  "author": "robstep",
+  "url": "https://huggingface.co/robstep/pegasus-xsum",
+  "created_at": "2026-11-10T03:29:06.000Z",
+  "updated_at": "2026-11-10T03:29:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "summarization",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "pegasus",
+    "summarization",
+    "en",
+    "arxiv:1912.08777",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9104298404,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Summarization",
+      "dataset": "samsum",
+      "metric": "ROUGE-1",
+      "value": 21.8096
+    },
+    {
+      "task": "Summarization",
+      "dataset": "samsum",
+      "metric": "ROUGE-2",
+      "value": 4.2525
+    },
+    {
+      "task": "Summarization",
+      "dataset": "samsum",
+      "metric": "ROUGE-L",
+      "value": 17.4469
+    },
+    {
+      "task": "Summarization",
+      "dataset": "samsum",
+      "metric": "ROUGE-LSUM",
+      "value": 18.8907
+    },
+    {
+      "task": "Summarization",
+      "dataset": "samsum",
+      "metric": "loss",
+      "value": 3.0317161083221436
+    },
+    {
+      "task": "Summarization",
+      "dataset": "samsum",
+      "metric": "gen_len",
+      "value": 20.3122
+    },
+    {
+      "task": "Summarization",
+      "dataset": "xsum",
+      "metric": "ROUGE-1",
+      "value": 46.8623
+    },
+    {
+      "task": "Summarization",
+      "dataset": "xsum",
+      "metric": "ROUGE-2",
+      "value": 24.4533
+    },
+    {
+      "task": "Summarization",
+      "dataset": "xsum",
+      "metric": "ROUGE-L",
+      "value": 39.0548
+    },
+    {
+      "task": "Summarization",
+      "dataset": "xsum",
+      "metric": "ROUGE-LSUM",
+      "value": 39.0994
+    },
+    {
+      "task": "Summarization",
+      "dataset": "xsum",
+      "metric": "loss",
+      "value": 1.5717021226882935
+    },
+    {
+      "task": "Summarization",
+      "dataset": "xsum",
+      "metric": "gen_len",
+      "value": 22.8821
+    },
+    {
+      "task": "Summarization",
+      "dataset": "cnn_dailymail",
+      "metric": "ROUGE-1",
+      "value": 22.2062
+    },
+    {
+      "task": "Summarization",
+      "dataset": "cnn_dailymail",
+      "metric": "ROUGE-2",
+      "value": 7.6701
+    },
+    {
+      "task": "Summarization",
+      "dataset": "cnn_dailymail",
+      "metric": "ROUGE-L",
+      "value": 15.4046
+    },
+    {
+      "task": "Summarization",
+      "dataset": "cnn_dailymail",
+      "metric": "ROUGE-LSUM",
+      "value": 19.2182
+    },
+    {
+      "task": "Summarization",
+      "dataset": "cnn_dailymail",
+      "metric": "loss",
+      "value": 2.681241273880005
+    },
+    {
+      "task": "Summarization",
+      "dataset": "cnn_dailymail",
+      "metric": "gen_len",
+      "value": 25.0234
+    }
+  ],
+  "sources": []
+}

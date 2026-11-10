@@ -5,7 +5,7 @@
   "author": "AdaptiveChunking",
   "url": "https://huggingface.co/AdaptiveChunking/ali_mem-mixed_s4",
   "created_at": "2026-11-09T06:02:44.000Z",
-  "updated_at": "2026-11-09T06:10:21.000Z",
+  "updated_at": "2026-11-09T07:29:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 22785088,
   "parameters_human": "22.8M",
-  "storage_bytes": 6141859740,
-  "storage_human": "6.1 GB",
+  "storage_bytes": 9463552600,
+  "storage_human": "9.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

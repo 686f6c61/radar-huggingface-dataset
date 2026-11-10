@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Ashher123/criterion-lens-qwen2.5-0.5b-lora",
+  "slug": "ashher123-criterion-lens-qwen2-5-0-5b-lora",
+  "author": "Ashher123",
+  "url": "https://huggingface.co/Ashher123/criterion-lens-qwen2.5-0.5b-lora",
+  "created_at": "2026-11-09T21:52:31.000Z",
+  "updated_at": "2026-11-09T21:53:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "criterion-screening",
+    "evidence-grounded",
+    "lora",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46659000,
+  "storage_human": "47 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

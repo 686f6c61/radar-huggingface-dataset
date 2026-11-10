@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "peft-internal-testing/tiny-Qwen2_5_VLForConditionalGeneration",
+  "slug": "peft-internal-testing-tiny-qwen2_5_vlforconditionalgeneration",
+  "author": "peft-internal-testing",
+  "url": "https://huggingface.co/peft-internal-testing/tiny-Qwen2_5_VLForConditionalGeneration",
+  "created_at": "2026-11-10T02:50:43.000Z",
+  "updated_at": "2026-11-10T02:50:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7351264,
+  "parameters_human": "7.4M",
+  "storage_bytes": 14708360,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

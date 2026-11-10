@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/whisper-large-v3-turbo-onnxruntime-genai-fp32",
+  "slug": "mlboydaisuke-whisper-large-v3-turbo-onnxruntime-genai-fp32",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/whisper-large-v3-turbo-onnxruntime-genai-fp32",
+  "created_at": "2026-11-09T21:22:39.000Z",
+  "updated_at": "2026-11-09T21:25:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime-genai",
+  "languages": [],
+  "tags": [
+    "onnxruntime-genai",
+    "onnx",
+    "whisper",
+    "windows",
+    "automatic-speech-recognition",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:quantized:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3501468853,
+  "storage_human": "3.5 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

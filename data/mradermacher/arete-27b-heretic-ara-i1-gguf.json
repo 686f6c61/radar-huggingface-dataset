@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Arete-27B-Heretic-ARA-i1-GGUF",
+  "slug": "mradermacher-arete-27b-heretic-ara-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Arete-27B-Heretic-ARA-i1-GGUF",
+  "created_at": "2026-11-09T22:21:12.000Z",
+  "updated_at": "2026-11-09T22:54:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "en",
+    "base_model:Luni/Arete-27B-Heretic-ARA",
+    "base_model:quantized:Luni/Arete-27B-Heretic-ARA",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 38906158368,
+  "storage_human": "38.9 GB",
+  "base_model": "Luni/Arete-27B-Heretic-ARA",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

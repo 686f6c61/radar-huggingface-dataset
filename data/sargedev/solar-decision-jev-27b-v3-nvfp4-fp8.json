@@ -5,7 +5,7 @@
   "author": "SargeDev",
   "url": "https://huggingface.co/SargeDev/Solar-Decision-JEV-27B-V3-NVFP4-FP8",
   "created_at": "2026-10-29T01:07:22.000Z",
-  "updated_at": "2026-10-30T00:11:41.000Z",
+  "updated_at": "2026-11-09T19:35:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

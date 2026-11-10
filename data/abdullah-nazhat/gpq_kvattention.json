@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Abdullah-Nazhat/GPQ_KVAttention",
+  "slug": "abdullah-nazhat-gpq_kvattention",
+  "author": "Abdullah-Nazhat",
+  "url": "https://huggingface.co/Abdullah-Nazhat/GPQ_KVAttention",
+  "created_at": "2026-06-27T21:37:01.000Z",
+  "updated_at": "2026-11-09T22:08:20.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

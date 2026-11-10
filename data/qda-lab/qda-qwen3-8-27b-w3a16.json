@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "qda-lab/QDA-Qwen3.8-27B-W3A16",
+  "slug": "qda-lab-qda-qwen3-8-27b-w3a16",
+  "author": "qda-lab",
+  "url": "https://huggingface.co/qda-lab/QDA-Qwen3.8-27B-W3A16",
+  "created_at": "2026-11-04T21:08:16.000Z",
+  "updated_at": "2026-11-10T04:03:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "qda",
+    "quantization",
+    "compressed-tensors",
+    "w3a16",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 14557354176,
+  "storage_human": "14.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

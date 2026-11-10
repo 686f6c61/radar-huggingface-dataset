@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "AntonROSSO/qwen2.5-coder-1.5b-mx2-aq6-q3ks",
+  "slug": "antonrosso-qwen2-5-coder-1-5b-mx2-aq6-q3ks",
+  "author": "AntonROSSO",
+  "url": "https://huggingface.co/AntonROSSO/qwen2.5-coder-1.5b-mx2-aq6-q3ks",
+  "created_at": "2026-11-09T22:45:09.000Z",
+  "updated_at": "2026-11-09T22:47:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "quantization",
+    "code",
+    "qwen2.5-coder",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 786749856,
+  "storage_human": "787 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

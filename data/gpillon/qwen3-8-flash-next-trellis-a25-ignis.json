@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gpillon/Qwen3.8-Flash-Next-trellis-a25-ignis",
+  "slug": "gpillon-qwen3-8-flash-next-trellis-a25-ignis",
+  "author": "gpillon",
+  "url": "https://huggingface.co/gpillon/Qwen3.8-Flash-Next-trellis-a25-ignis",
+  "created_at": "2026-10-09T19:12:26.000Z",
+  "updated_at": "2026-11-09T21:25:49.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "ignis",
+  "languages": [],
+  "tags": [
+    "ignis",
+    "qwen3.8",
+    "flash-next",
+    "moe",
+    "trellis",
+    "fp8",
+    "cuda",
+    "rtx-5090",
+    "blackwell",
+    "conversational",
+    "mtp",
+    "speculative-decoding",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73082846720,
+  "storage_human": "73.1 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - gpillon/ignis: An inference engine for one NVIDIA RTX card ...",
+      "url": "https://github.com/gpillon/ignis",
+      "snippet": "vor 5 Tagen ... 8 27B and 125B Flash-Next MoE, Qwen-Image-2.1, Qwen3-ASR on the CPU. OpenAI-compatible API and Playground in one binary. Topics. blackwellcoding ..."
+    },
+    {
+      "title": "that80-20/Qwen3.8-Flash-Next-trellis-a35-ignis - Hugging Face",
+      "url": "https://huggingface.co/that80-20/Qwen3.8-Flash-Next-trellis-a35-ignis",
+      "snippet": "Qwen3.8-Flash-Next, 3.5-bit trellis experts, for ignis ; a25 (vendor), 71.8 GB, 2.50, 0.1053, 89.68% ; a35 (this repo), 86.9 GB, 3.50, 0.0748, 91.62% ..."
+    }
+  ]
+}

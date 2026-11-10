@@ -37,12 +37,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 108,
+  "downloads_30d": 139,
   "trending_score": 0,
   "parameters": 17797248,
   "parameters_human": "17.8M",
-  "storage_bytes": 325322035,
-  "storage_human": "325 MB",
+  "storage_bytes": 162661246,
+  "storage_human": "163 MB",
   "base_model": null,
   "formats": [
     "onnx",

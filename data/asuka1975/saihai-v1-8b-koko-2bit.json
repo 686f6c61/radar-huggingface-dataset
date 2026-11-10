@@ -5,7 +5,7 @@
   "author": "asuka1975",
   "url": "https://huggingface.co/asuka1975/saihai-v1-8b-koko-2bit",
   "created_at": "2026-11-03T14:48:22.000Z",
-  "updated_at": "2026-11-03T15:07:37.000Z",
+  "updated_at": "2026-11-09T18:02:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 2391027712,
   "parameters_human": "2.39B",
-  "storage_bytes": 5282204354,
-  "storage_human": "5.3 GB",
+  "storage_bytes": 7916870474,
+  "storage_human": "7.9 GB",
   "base_model": "hotchpotch/saihai-v1-8b",
   "formats": [
     "safetensors"

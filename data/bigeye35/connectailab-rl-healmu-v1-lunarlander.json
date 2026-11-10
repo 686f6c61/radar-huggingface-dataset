@@ -5,7 +5,7 @@
   "author": "bigeye35",
   "url": "https://huggingface.co/bigeye35/connectailab-rl-healmu-v1-lunarlander",
   "created_at": "2026-11-08T16:38:01.000Z",
-  "updated_at": "2026-11-08T16:38:02.000Z",
+  "updated_at": "2026-11-09T07:44:53.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

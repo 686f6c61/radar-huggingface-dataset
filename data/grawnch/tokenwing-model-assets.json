@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Grawnch/TokenWing-Model-Assets",
+  "slug": "grawnch-tokenwing-model-assets",
+  "author": "Grawnch",
+  "url": "https://huggingface.co/Grawnch/TokenWing-Model-Assets",
+  "created_at": "2026-11-10T00:15:47.000Z",
+  "updated_at": "2026-11-10T00:15:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tokenwing",
+    "moe",
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 563216384,
+  "storage_human": "563 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Collateralization: An Overview Including Definition, Examples, and …",
+      "url": "https://accounti.net/resources/collateralization/",
+      "snippet": "Nov 1, 2025 · Explore the realm of collateralization. Understand how it ensures loan security, its impact on rates, digital assets …"
+    }
+  ]
+}

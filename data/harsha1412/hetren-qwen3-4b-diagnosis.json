@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Harsha1412/hetren-qwen3-4b-diagnosis",
+  "slug": "harsha1412-hetren-qwen3-4b-diagnosis",
+  "author": "Harsha1412",
+  "url": "https://huggingface.co/Harsha1412/hetren-qwen3-4b-diagnosis",
+  "created_at": "2026-11-09T23:26:15.000Z",
+  "updated_at": "2026-11-09T23:47:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "llama.cpp",
+    "lora",
+    "qwen3",
+    "agent-diagnosis",
+    "synthetic-data",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 6921292782,
+  "storage_human": "6.9 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

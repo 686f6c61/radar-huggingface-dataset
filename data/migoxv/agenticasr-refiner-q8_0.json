@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "MigoXV/AgenticASR-Refiner-Q8_0",
+  "slug": "migoxv-agenticasr-refiner-q8_0",
+  "author": "MigoXV",
+  "url": "https://huggingface.co/MigoXV/AgenticASR-Refiner-Q8_0",
+  "created_at": "2026-11-10T04:09:14.000Z",
+  "updated_at": "2026-11-10T04:09:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "asr-correction",
+    "text-refinement",
+    "ascend",
+    "text-generation",
+    "zh",
+    "base_model:Andrew0425/AgenticASR-Refiner",
+    "base_model:quantized:Andrew0425/AgenticASR-Refiner",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 1153529088,
+  "storage_human": "1.2 GB",
+  "base_model": "Andrew0425/AgenticASR-Refiner",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

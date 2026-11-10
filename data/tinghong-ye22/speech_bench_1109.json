@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Tinghong-Ye22/speech_bench_1109",
+  "slug": "tinghong-ye22-speech_bench_1109",
+  "author": "Tinghong-Ye22",
+  "url": "https://huggingface.co/Tinghong-Ye22/speech_bench_1109",
+  "created_at": "2026-11-10T01:57:39.000Z",
+  "updated_at": "2026-11-10T02:00:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "benchmark",
+    "evaluation",
+    "full-duplex",
+    "speech",
+    "en",
+    "zh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20535984,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

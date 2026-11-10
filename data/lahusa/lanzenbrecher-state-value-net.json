@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Lahusa/lanzenbrecher-state-value-net",
+  "slug": "lahusa-lanzenbrecher-state-value-net",
+  "author": "Lahusa",
+  "url": "https://huggingface.co/Lahusa/lanzenbrecher-state-value-net",
+  "created_at": "2026-10-21T23:24:25.000Z",
+  "updated_at": "2026-11-09T23:43:19.000Z",
+  "license": "all-rights-reserved",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "catan",
+    "settlers-of-catan",
+    "board-games",
+    "value-network",
+    "policy-network",
+    "mcts",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 384125055,
+  "storage_human": "384 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

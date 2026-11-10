@@ -5,7 +5,7 @@
   "author": "Ozili",
   "url": "https://huggingface.co/Ozili/Gemma-4-Vain-31B-GGUF",
   "created_at": "2026-11-08T08:13:13.000Z",
-  "updated_at": "2026-11-09T03:33:14.000Z",
+  "updated_at": "2026-11-09T10:51:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,13 +31,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 2,
   "downloads_30d": 63,
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",
-  "storage_bytes": 35450371904,
-  "storage_human": "35.5 GB",
+  "storage_bytes": 115133100384,
+  "storage_human": "115.1 GB",
   "base_model": "trohrbaugh/gemma-4-31b-it-heretic-ara, google/gemma-4-31B",
   "formats": [
     "gguf"

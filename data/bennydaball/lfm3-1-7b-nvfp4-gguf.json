@@ -5,7 +5,7 @@
   "author": "BennyDaBall",
   "url": "https://huggingface.co/BennyDaBall/LFM3-1.7B-NVFP4-GGUF",
   "created_at": "2026-11-01T17:45:18.000Z",
-  "updated_at": "2026-11-04T18:56:13.000Z",
+  "updated_at": "2026-11-09T17:56:24.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 375,
+  "downloads_30d": 380,
   "trending_score": 0,
   "parameters": 1728801672,
   "parameters_human": "1.73B",

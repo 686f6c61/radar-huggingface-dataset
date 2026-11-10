@@ -1,0 +1,152 @@
+{
+  "schema": 1,
+  "id": "nkthebass/tinybrainbot-53m-a9m-hybrid-instruct",
+  "slug": "nkthebass-tinybrainbot-53m-a9m-hybrid-instruct",
+  "author": "nkthebass",
+  "url": "https://huggingface.co/nkthebass/tinybrainbot-53m-a9m-hybrid-instruct",
+  "created_at": "2026-11-09T22:14:13.000Z",
+  "updated_at": "2026-11-09T22:16:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "lfm2_moe",
+    "text-generation",
+    "tinybrainbot",
+    "small-language-model",
+    "from-scratch",
+    "mixture-of-experts",
+    "moe",
+    "hybrid",
+    "tool-calling",
+    "reasoning",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:wikimedia/wikipedia",
+    "dataset:HuggingFaceTB/cosmopedia",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:OctoThinker/MegaMath-Web-Pro-Max",
+    "dataset:HuggingFaceFW/finepdfs-edu",
+    "dataset:bigcode/the-stack-smol",
+    "dataset:manu/project_gutenberg",
+    "dataset:lucadiliello/bookcorpusopen",
+    "dataset:roneneldan/TinyStories",
+    "dataset:ArrowLabs/DCLM-Ultra-1.1",
+    "dataset:AxiomicLabs/FactBase-DCLM",
+    "dataset:sentence-transformers/gooaq",
+    "dataset:sentence-transformers/eli5",
+    "dataset:HuggingFaceFW/finephrase",
+    "dataset:microsoft/orca-math-word-problems-200k",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:allenai/tulu-3-sft-personas-instruction-following",
+    "dataset:allenai/WildChat-4.8M",
+    "dataset:teknium/OpenHermes-2.5",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 53428384,
+  "parameters_human": "53.4M",
+  "storage_bytes": 381618872,
+  "storage_human": "382 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ARC-Easy",
+      "metric": "acc_norm (0-shot)",
+      "value": 49.71
+    },
+    {
+      "task": null,
+      "dataset": "ARC-Challenge",
+      "metric": "acc_norm (0-shot)",
+      "value": 30.29
+    },
+    {
+      "task": null,
+      "dataset": "HellaSwag",
+      "metric": "acc_norm (0-shot)",
+      "value": 30.1
+    },
+    {
+      "task": null,
+      "dataset": "PIQA",
+      "metric": "acc_norm (0-shot)",
+      "value": 64.04
+    },
+    {
+      "task": null,
+      "dataset": "OpenBookQA",
+      "metric": "acc_norm (0-shot)",
+      "value": 32.4
+    },
+    {
+      "task": null,
+      "dataset": "SciQ",
+      "metric": "acc_norm (0-shot)",
+      "value": 63.9
+    },
+    {
+      "task": null,
+      "dataset": "WinoGrande",
+      "metric": "acc (0-shot)",
+      "value": 49.41
+    },
+    {
+      "task": null,
+      "dataset": "BoolQ",
+      "metric": "acc (0-shot)",
+      "value": 58.72
+    },
+    {
+      "task": null,
+      "dataset": "LAMBADA (OpenAI)",
+      "metric": "acc (0-shot)",
+      "value": 22.88
+    },
+    {
+      "task": null,
+      "dataset": "MMLU",
+      "metric": "acc (0-shot)",
+      "value": 24.82
+    },
+    {
+      "task": null,
+      "dataset": "CommonsenseQA",
+      "metric": "acc (0-shot)",
+      "value": 21.7
+    },
+    {
+      "task": null,
+      "dataset": "Social IQa",
+      "metric": "acc (0-shot)",
+      "value": 37.67
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Quien1/koharu-layout-rfdetr-seg-2xl-1152-onnx-webgpu",
+  "slug": "quien1-koharu-layout-rfdetr-seg-2xl-1152-onnx-webgpu",
+  "author": "Quien1",
+  "url": "https://huggingface.co/Quien1/koharu-layout-rfdetr-seg-2xl-1152-onnx-webgpu",
+  "created_at": "2026-11-09T23:05:17.000Z",
+  "updated_at": "2026-11-09T23:05:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime-web",
+    "webgpu",
+    "manga",
+    "object-detection",
+    "base_model:mayocream/koharu-layout-rfdetr-seg-2xl-1152",
+    "base_model:quantized:mayocream/koharu-layout-rfdetr-seg-2xl-1152",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 148438076,
+  "storage_human": "148 MB",
+  "base_model": "mayocream/koharu-layout-rfdetr-seg-2xl-1152",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

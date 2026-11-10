@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "PeytonT/SimulateAnything-Gemma-3-1B-v1",
+  "slug": "peytont-simulateanything-gemma-3-1b-v1",
+  "author": "PeytonT",
+  "url": "https://huggingface.co/PeytonT/SimulateAnything-Gemma-3-1B-v1",
+  "created_at": "2026-11-09T21:31:53.000Z",
+  "updated_at": "2026-11-09T22:10:44.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "lora",
+    "webgpu",
+    "simulation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:adapter:google/gemma-3-1b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 905984447,
+  "storage_human": "906 MB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

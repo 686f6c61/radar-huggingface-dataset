@@ -5,7 +5,7 @@
   "author": "Scicom-intl",
   "url": "https://huggingface.co/Scicom-intl/voice-isolator",
   "created_at": "2026-10-22T23:09:58.000Z",
-  "updated_at": "2026-11-02T05:32:18.000Z",
+  "updated_at": "2026-11-10T01:35:00.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "audio-to-audio",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 149,
+  "downloads_30d": 151,
   "trending_score": 0,
   "parameters": 555229786,
   "parameters_human": "555.2M",
-  "storage_bytes": 4485193120,
-  "storage_human": "4.5 GB",
+  "storage_bytes": 6707444255,
+  "storage_human": "6.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

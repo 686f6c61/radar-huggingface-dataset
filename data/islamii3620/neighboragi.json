@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "islamII3620/NeighborAGI",
+  "slug": "islamii3620-neighboragi",
+  "author": "islamII3620",
+  "url": "https://huggingface.co/islamII3620/NeighborAGI",
+  "created_at": "2026-11-10T03:05:59.000Z",
+  "updated_at": "2026-11-10T03:27:43.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "desktop-assistant",
+    "neighboragi",
+    "windows-app",
+    "en",
+    "ar",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 206407349,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

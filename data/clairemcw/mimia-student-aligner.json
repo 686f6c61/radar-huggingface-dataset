@@ -5,7 +5,7 @@
   "author": "clairemcw",
   "url": "https://huggingface.co/clairemcw/mimia-student-aligner",
   "created_at": "2026-11-08T21:38:13.000Z",
-  "updated_at": "2026-11-08T21:40:18.000Z",
+  "updated_at": "2026-11-09T22:04:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 33688225,
-  "storage_human": "34 MB",
+  "storage_bytes": 67995886,
+  "storage_human": "68 MB",
   "base_model": null,
   "formats": [
     "onnx"

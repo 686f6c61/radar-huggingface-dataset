@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "kyryk/filing-figures-v2-qwen3.5-4b-sft-lora",
+  "slug": "kyryk-filing-figures-v2-qwen3-5-4b-sft-lora",
+  "author": "kyryk",
+  "url": "https://huggingface.co/kyryk/filing-figures-v2-qwen3.5-4b-sft-lora",
+  "created_at": "2026-11-10T00:33:06.000Z",
+  "updated_at": "2026-11-10T00:33:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "finance",
+    "sec",
+    "10-k",
+    "xbrl",
+    "information-extraction",
+    "lora",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:kyryk/filing-figures-v2",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104961573,
+  "storage_human": "105 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "baisalovar/Tynda-ASR-uz",
+  "slug": "baisalovar-tynda-asr-uz",
+  "author": "baisalovar",
+  "url": "https://huggingface.co/baisalovar/Tynda-ASR-uz",
+  "created_at": "2026-11-10T02:16:34.000Z",
+  "updated_at": "2026-11-10T03:38:07.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "uz"
+  ],
+  "tags": [
+    "nemo",
+    "safetensors",
+    "nemo_speechlm",
+    "uzbek",
+    "asr",
+    "speech-recognition",
+    "speechlm2",
+    "nemotron",
+    "mixture-of-experts",
+    "lora",
+    "automatic-speech-recognition",
+    "uz",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33697781029,
+  "parameters_human": "33.70B",
+  "storage_bytes": 67513066262,
+  "storage_human": "67.5 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

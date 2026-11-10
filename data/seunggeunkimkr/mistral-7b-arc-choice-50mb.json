@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "SeunggeunKimkr/mistral-7b-arc-choice-50mb",
+  "slug": "seunggeunkimkr-mistral-7b-arc-choice-50mb",
+  "author": "SeunggeunKimkr",
+  "url": "https://huggingface.co/SeunggeunKimkr/mistral-7b-arc-choice-50mb",
+  "created_at": "2026-11-10T00:01:40.000Z",
+  "updated_at": "2026-11-10T00:01:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "arc-challenge",
+    "compact-adapter",
+    "text-generation",
+    "en",
+    "dataset:allenai/ai2_arc",
+    "dataset:allenai/sciq",
+    "dataset:allenai/openbookqa",
+    "dataset:allenai/qasc",
+    "base_model:mistralai/Mistral-7B-v0.1",
+    "base_model:adapter:mistralai/Mistral-7B-v0.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42497819,
+  "storage_human": "42 MB",
+  "base_model": "mistralai/Mistral-7B-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

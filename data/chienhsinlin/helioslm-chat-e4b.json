@@ -5,7 +5,7 @@
   "author": "chienhsinlin",
   "url": "https://huggingface.co/chienhsinlin/helioslm-chat-e4b",
   "created_at": "2026-11-04T15:15:56.000Z",
-  "updated_at": "2026-11-08T10:32:43.000Z",
+  "updated_at": "2026-11-09T13:04:17.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -5,7 +5,7 @@
   "author": "braindecode",
   "url": "https://huggingface.co/braindecode/brainomni-base-pretrained",
   "created_at": "2026-10-07T14:57:50.000Z",
-  "updated_at": "2026-11-08T16:31:34.000Z",
+  "updated_at": "2026-11-09T10:30:32.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -52,7 +52,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2011,
+  "downloads_30d": 2031,
   "trending_score": 0,
   "parameters": 42692072,
   "parameters_human": "42.7M",

@@ -5,7 +5,7 @@
   "author": "JasonW2025",
   "url": "https://huggingface.co/JasonW2025/Tesseract-R08-20261006",
   "created_at": "2026-11-07T18:07:07.000Z",
-  "updated_at": "2026-11-08T10:10:40.000Z",
+  "updated_at": "2026-11-09T13:04:20.000Z",
   "license": "tesseract-research-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
   "trending_score": 0,
   "parameters": 5487198099,
   "parameters_human": "5.49B",
-  "storage_bytes": 178512979807,
+  "storage_bytes": 178513126988,
   "storage_human": "178.5 GB",
   "base_model": null,
   "formats": [

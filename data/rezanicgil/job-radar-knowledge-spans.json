@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "rezanicgil/job-radar-knowledge-spans",
+  "slug": "rezanicgil-job-radar-knowledge-spans",
+  "author": "rezanicgil",
+  "url": "https://huggingface.co/rezanicgil/job-radar-knowledge-spans",
+  "created_at": "2026-11-09T21:19:49.000Z",
+  "updated_at": "2026-11-09T21:27:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "en",
+    "dataset:jjzha/skillspan",
+    "base_model:MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli",
+    "base_model:finetune:MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 106847235,
+  "parameters_human": "106.8M",
+  "storage_bytes": 444483978,
+  "storage_human": "444 MB",
+  "base_model": "MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

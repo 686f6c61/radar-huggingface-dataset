@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Bobliu/tenpct-l1-bonsai8b-grow",
+  "slug": "bobliu-tenpct-l1-bonsai8b-grow",
+  "author": "Bobliu",
+  "url": "https://huggingface.co/Bobliu/tenpct-l1-bonsai8b-grow",
+  "created_at": "2026-11-10T02:34:06.000Z",
+  "updated_at": "2026-11-10T02:35:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen3",
+    "1-bit",
+    "bonsai",
+    "ten-percent-challenge",
+    "feedback",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1163546148,
+  "storage_human": "1.2 GB",
+  "base_model": "prism-ml/Bonsai-8B-unpacked, Qwen/Qwen3-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frontend Frameworks Compared: React vs Vue vs Svelte vs Angular",
+      "url": "https://findarepo.com/categories/web-frameworks/",
+      "snippet": "2 days ago · React, Vue, Svelte, Angular, Solid and the meta-frameworks side by side: stars, growth we measured ourselves this …"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "didula-wso2/gemma4a4b_1-0-2_sft_16bit_vllm",
+  "slug": "didula-wso2-gemma4a4b_1-0-2_sft_16bit_vllm",
+  "author": "didula-wso2",
+  "url": "https://huggingface.co/didula-wso2/gemma4a4b_1-0-2_sft_16bit_vllm",
+  "created_at": "2026-11-10T03:52:18.000Z",
+  "updated_at": "2026-11-10T04:00:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644179542,
+  "storage_human": "51.6 GB",
+  "base_model": "unsloth/gemma-4-26b-a4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

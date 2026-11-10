@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "erdem-erdem/dyn-spec-dflash-m2-generator-attn-r16-4k-1500",
+  "slug": "erdem-erdem-dyn-spec-dflash-m2-generator-attn-r16-4k-1500",
+  "author": "erdem-erdem",
+  "url": "https://huggingface.co/erdem-erdem/dyn-spec-dflash-m2-generator-attn-r16-4k-1500",
+  "created_at": "2026-11-09T20:39:33.000Z",
+  "updated_at": "2026-11-09T20:41:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "speculators",
+    "dflash",
+    "speculative-decoding",
+    "lora-generator",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6628541007,
+  "storage_human": "6.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supermarchés Lidl en France",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/",
+      "snippet": "Trouver les offres et prospectus du supermarché Lidl le plus proche."
+    }
+  ]
+}

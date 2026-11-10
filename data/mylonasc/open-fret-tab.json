@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mylonasc/open-fret-tab",
+  "slug": "mylonasc-open-fret-tab",
+  "author": "mylonasc",
+  "url": "https://huggingface.co/mylonasc/open-fret-tab",
+  "created_at": "2026-11-09T22:10:24.000Z",
+  "updated_at": "2026-11-09T22:13:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "guitar-tablature",
+    "midi-to-tab",
+    "music",
+    "text-generation",
+    "en",
+    "dataset:vldsavelyev/guitar_tab",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3603712,
+  "parameters_human": "3.6M",
+  "storage_bytes": 14422656,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "RedHatAI",
   "url": "https://huggingface.co/RedHatAI/DeepSeek-V4-Pro-0813",
   "created_at": "2026-09-11T13:54:05.000Z",
-  "updated_at": "2026-09-11T13:54:06.000Z",
+  "updated_at": "2026-11-09T17:47:33.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 247,
+  "downloads_30d": 246,
   "trending_score": 0,
   "parameters": 1650497936906,
   "parameters_human": "1650.50B",

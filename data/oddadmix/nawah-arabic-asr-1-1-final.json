@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "oddadmix/nawah-arabic-asr-1.1-final",
+  "slug": "oddadmix-nawah-arabic-asr-1-1-final",
+  "author": "oddadmix",
+  "url": "https://huggingface.co/oddadmix/nawah-arabic-asr-1.1-final",
+  "created_at": "2026-11-10T03:27:20.000Z",
+  "updated_at": "2026-11-10T03:36:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "pytorch",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "pytorch",
+    "arabic",
+    "speech-recognition",
+    "automatic-speech-recognition",
+    "ar",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 613415527,
+  "storage_human": "613 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

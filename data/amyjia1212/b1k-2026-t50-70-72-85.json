@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "amyjia1212/b1k-2026-t50-70-72-85",
+  "slug": "amyjia1212-b1k-2026-t50-70-72-85",
+  "author": "amyjia1212",
+  "url": "https://huggingface.co/amyjia1212/b1k-2026-t50-70-72-85",
+  "created_at": "2026-10-09T05:12:54.000Z",
+  "updated_at": "2026-11-10T04:36:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "behavior-1k",
+    "pi0.5",
+    "vla",
+    "arxiv:2512.06951",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 315662237110,
+  "storage_human": "315.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaylin Green – Apex Physical Therapy",
+      "url": "https://www.apexpt.com/airway-heights-therapists/kaylin-greene/",
+      "snippet": "How can we help? © 2026 Apex Physical Therapy. All Rights Reserved."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "d3vmeh/bdh-100m-bytes",
+  "slug": "d3vmeh-bdh-100m-bytes",
+  "author": "d3vmeh",
+  "url": "https://huggingface.co/d3vmeh/bdh-100m-bytes",
+  "created_at": "2026-09-14T03:37:14.000Z",
+  "updated_at": "2026-11-09T23:34:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "bdh",
+    "dragon-hatchling",
+    "byte-level",
+    "language-model",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:2509.26507",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 403770793,
+  "storage_human": "404 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

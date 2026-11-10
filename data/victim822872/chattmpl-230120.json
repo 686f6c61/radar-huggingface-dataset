@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "victim822872/chattmpl-230120",
+  "slug": "victim822872-chattmpl-230120",
+  "author": "victim822872",
+  "url": "https://huggingface.co/victim822872/chattmpl-230120",
+  "created_at": "2026-11-09T23:01:20.000Z",
+  "updated_at": "2026-11-09T23:01:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 111968,
+  "parameters_human": "111968",
+  "storage_bytes": 12477931,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

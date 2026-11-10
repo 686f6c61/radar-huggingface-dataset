@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "hwansung595/memome-photo-search",
+  "slug": "hwansung595-memome-photo-search",
+  "author": "hwansung595",
+  "url": "https://huggingface.co/hwansung595/memome-photo-search",
+  "created_at": "2026-11-10T01:28:51.000Z",
+  "updated_at": "2026-11-10T01:28:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "siglip2",
+    "zero-shot-image-classification",
+    "base_model:google/siglip2-base-patch16-256",
+    "base_model:quantized:google/siglip2-base-patch16-256",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 321718461,
+  "storage_human": "322 MB",
+  "base_model": "google/siglip2-base-patch16-256",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

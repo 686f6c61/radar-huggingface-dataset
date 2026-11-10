@@ -5,7 +5,7 @@
   "author": "DuoNeural",
   "url": "https://huggingface.co/DuoNeural/RMSN-193M-Base-v2",
   "created_at": "2026-11-08T21:23:17.000Z",
-  "updated_at": "2026-11-08T21:23:55.000Z",
+  "updated_at": "2026-11-09T05:08:28.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 285,
   "trending_score": 0,
   "parameters": 243732144,
   "parameters_human": "243.7M",

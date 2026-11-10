@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "tahamajs/qwen-2.5-0.5b-gqa-attention-wikitext2",
+  "slug": "tahamajs-qwen-2-5-0-5b-gqa-attention-wikitext2",
+  "author": "tahamajs",
+  "url": "https://huggingface.co/tahamajs/qwen-2.5-0.5b-gqa-attention-wikitext2",
+  "created_at": "2026-11-10T02:09:41.000Z",
+  "updated_at": "2026-11-10T02:10:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2025-01-06 Qwen2.5 Technical Report Qwen Team https://huggingf...",
+      "url": "https://arxiv.org/pdf/2412.15115",
+      "snippet": "Recently, we release the details of our latest version of the Qwen series, Qwen2.5. In terms of the open- weight part, we release pre-trained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B,"
+    }
+  ]
+}

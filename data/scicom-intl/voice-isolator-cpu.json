@@ -5,7 +5,7 @@
   "author": "Scicom-intl",
   "url": "https://huggingface.co/Scicom-intl/voice-isolator-cpu",
   "created_at": "2026-10-25T20:41:28.000Z",
-  "updated_at": "2026-11-02T03:04:34.000Z",
+  "updated_at": "2026-11-10T01:35:05.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "audio-to-audio",
@@ -28,11 +28,11 @@
     "region:us"
   ],
   "likes": 6,
-  "downloads_30d": 334,
+  "downloads_30d": 342,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 156750531,
+  "storage_bytes": 156959542,
   "storage_human": "157 MB",
   "base_model": null,
   "formats": [

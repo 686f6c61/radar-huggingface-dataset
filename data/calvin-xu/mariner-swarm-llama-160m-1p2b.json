@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Calvin-Xu/mariner-swarm-llama-160m-1p2b",
+  "slug": "calvin-xu-mariner-swarm-llama-160m-1p2b",
+  "author": "Calvin-Xu",
+  "url": "https://huggingface.co/Calvin-Xu/mariner-swarm-llama-160m-1p2b",
+  "created_at": "2026-11-10T01:52:10.000Z",
+  "updated_at": "2026-11-10T02:11:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "data-mixing",
+    "pretraining",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68057939972,
+  "storage_human": "68.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

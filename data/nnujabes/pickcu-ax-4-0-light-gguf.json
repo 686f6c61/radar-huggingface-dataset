@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "nnujabes/pickcu-ax-4.0-light-gguf",
+  "slug": "nnujabes-pickcu-ax-4-0-light-gguf",
+  "author": "nnujabes",
+  "url": "https://huggingface.co/nnujabes/pickcu-ax-4.0-light-gguf",
+  "created_at": "2026-11-10T03:09:21.000Z",
+  "updated_at": "2026-11-10T03:18:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "llama.cpp",
+    "q5_k_m",
+    "ko",
+    "base_model:skt/A.X-4.0-Light",
+    "base_model:quantized:skt/A.X-4.0-Light",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7259624960,
+  "parameters_human": "7.26B",
+  "storage_bytes": 5175334784,
+  "storage_human": "5.2 GB",
+  "base_model": "skt/A.X-4.0-Light",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

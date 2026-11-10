@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "amyjia1212/b1k-2026-t65",
+  "slug": "amyjia1212-b1k-2026-t65",
+  "author": "amyjia1212",
+  "url": "https://huggingface.co/amyjia1212/b1k-2026-t65",
+  "created_at": "2026-10-14T04:13:47.000Z",
+  "updated_at": "2026-11-10T04:36:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "behavior-1k",
+    "pi0.5",
+    "vla",
+    "arxiv:2512.06951",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37901298809,
+  "storage_human": "37.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "4 donnes de bridge gratuites : exercices avec solutions détaillées",
+      "url": "https://jouer-bridge.com/4-donnes-de-bridge-gratuites-exercices-avec-solutions-detaillees/",
+      "snippet": "Mar 26, 2026 · Vous cherchez à progresser rapidement au bridge ? Rien de mieux que de s’entraîner avec des donnes concrètes. …"
+    }
+  ]
+}

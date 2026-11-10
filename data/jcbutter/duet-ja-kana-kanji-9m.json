@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "jcbutter/duet-ja-kana-kanji-9m",
+  "slug": "jcbutter-duet-ja-kana-kanji-9m",
+  "author": "jcbutter",
+  "url": "https://huggingface.co/jcbutter/duet-ja-kana-kanji-9m",
+  "created_at": "2026-11-09T20:28:56.000Z",
+  "updated_at": "2026-11-09T20:51:17.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "executorch",
+    "japanese",
+    "kana-kanji-conversion",
+    "ime",
+    "distillation",
+    "ja",
+    "base_model:Miwa-Keita/zenz-v3.2-small-gguf",
+    "base_model:quantized:Miwa-Keita/zenz-v3.2-small-gguf",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52532239,
+  "storage_human": "53 MB",
+  "base_model": "Miwa-Keita/zenz-v3.2-small-gguf",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

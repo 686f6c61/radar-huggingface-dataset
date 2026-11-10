@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "JoshBrew/TagaLLM-3.75M-256",
+  "slug": "joshbrew-tagallm-3-75m-256",
+  "author": "JoshBrew",
+  "url": "https://huggingface.co/JoshBrew/TagaLLM-3.75M-256",
+  "created_at": "2026-11-10T02:16:22.000Z",
+  "updated_at": "2026-11-10T02:24:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "tl"
+  ],
+  "tags": [
+    "safetensors",
+    "taglish",
+    "research",
+    "tl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4273664,
+  "parameters_human": "4.3M",
+  "storage_bytes": 17099216,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "nnujabes/pickcu-ax-4.0-light-lora",
+  "slug": "nnujabes-pickcu-ax-4-0-light-lora",
+  "author": "nnujabes",
+  "url": "https://huggingface.co/nnujabes/pickcu-ax-4.0-light-lora",
+  "created_at": "2026-11-10T03:07:55.000Z",
+  "updated_at": "2026-11-10T03:18:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "base_model:adapter:skt/A.X-4.0-Light",
+    "text-generation",
+    "ko",
+    "base_model:skt/A.X-4.0-Light",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161533192,
+  "storage_human": "162 MB",
+  "base_model": "skt/A.X-4.0-Light",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

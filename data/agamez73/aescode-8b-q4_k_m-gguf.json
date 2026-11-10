@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "agamez73/AesCode-8B-Q4_K_M-GGUF",
+  "slug": "agamez73-aescode-8b-q4_k_m-gguf",
+  "author": "agamez73",
+  "url": "https://huggingface.co/agamez73/AesCode-8B-Q4_K_M-GGUF",
+  "created_at": "2026-11-10T04:14:32.000Z",
+  "updated_at": "2026-11-10T04:14:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code-generation",
+    "html",
+    "multimodal",
+    "reinforcement-learning",
+    "design",
+    "arxiv:2610.18860",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "en",
+    "base_model:microsoft/AesCode-8B",
+    "base_model:quantized:microsoft/AesCode-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5027780064,
+  "storage_human": "5.0 GB",
+  "base_model": "microsoft/AesCode-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

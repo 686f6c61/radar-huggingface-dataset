@@ -5,7 +5,7 @@
   "author": "Selbyggen",
   "url": "https://huggingface.co/Selbyggen/kb-whisper-large-coreml",
   "created_at": "2026-10-31T01:30:27.000Z",
-  "updated_at": "2026-11-04T22:33:21.000Z",
+  "updated_at": "2026-11-09T22:52:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -26,7 +26,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 80,
   "trending_score": 0,
   "parameters": null,

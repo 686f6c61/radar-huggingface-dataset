@@ -5,7 +5,7 @@
   "author": "danielrosehill",
   "url": "https://huggingface.co/danielrosehill/Nemotron-Speech-Streaming-EN-0.6B-English-Hebrew-Codeswitching",
   "created_at": "2026-10-18T20:44:05.000Z",
-  "updated_at": "2026-10-30T13:05:44.000Z",
+  "updated_at": "2026-11-09T20:46:42.000Z",
   "license": "nvidia-open-model-license",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

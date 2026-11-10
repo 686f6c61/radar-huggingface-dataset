@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-GGUF",
+  "slug": "danielrosehill-parakeet-tdt-0-6b-v2-english-hebrew-codeswitching-gguf",
+  "author": "danielrosehill",
+  "url": "https://huggingface.co/danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching-GGUF",
+  "created_at": "2026-10-19T19:15:43.000Z",
+  "updated_at": "2026-11-09T20:50:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "he"
+  ],
+  "tags": [
+    "gguf",
+    "transcribe.cpp",
+    "parakeet",
+    "tdt",
+    "code-switching",
+    "hebrew",
+    "english",
+    "automatic-speech-recognition",
+    "en",
+    "he",
+    "base_model:danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching",
+    "base_model:quantized:danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 244,
+  "trending_score": 0,
+  "parameters": 617869958,
+  "parameters_human": "617.9M",
+  "storage_bytes": 2442401536,
+  "storage_human": "2.4 GB",
+  "base_model": "danielrosehill/Parakeet-TDT-0.6B-v2-English-Hebrew-Codeswitching",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

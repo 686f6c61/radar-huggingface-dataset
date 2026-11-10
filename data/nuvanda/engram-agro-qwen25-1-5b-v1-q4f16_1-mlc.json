@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Nuvanda/engram-agro-qwen25-1.5b-v1-q4f16_1-MLC",
+  "slug": "nuvanda-engram-agro-qwen25-1-5b-v1-q4f16_1-mlc",
+  "author": "Nuvanda",
+  "url": "https://huggingface.co/Nuvanda/engram-agro-qwen25-1.5b-v1-q4f16_1-MLC",
+  "created_at": "2026-11-09T22:45:17.000Z",
+  "updated_at": "2026-11-09T22:45:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlc-llm",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "mlc-llm",
+    "web-llm",
+    "agriculture",
+    "engram",
+    "q4f16_1",
+    "es",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 868547584,
+  "storage_human": "869 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

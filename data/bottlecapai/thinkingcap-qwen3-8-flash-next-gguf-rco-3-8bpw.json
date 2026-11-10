@@ -5,7 +5,7 @@
   "author": "bottlecapai",
   "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-Flash-Next-GGUF-RCO-3.8bpw",
   "created_at": "2026-11-06T14:07:51.000Z",
-  "updated_at": "2026-11-06T14:09:29.000Z",
+  "updated_at": "2026-11-09T09:45:18.000Z",
   "license": "qwen-community-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 332,
+  "downloads_30d": 383,
   "trending_score": 0,
   "parameters": 179551050368,
   "parameters_human": "179.55B",

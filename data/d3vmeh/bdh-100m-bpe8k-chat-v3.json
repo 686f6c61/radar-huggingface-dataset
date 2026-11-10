@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "d3vmeh/bdh-100m-bpe8k-chat-v3",
+  "slug": "d3vmeh-bdh-100m-bpe8k-chat-v3",
+  "author": "d3vmeh",
+  "url": "https://huggingface.co/d3vmeh/bdh-100m-bpe8k-chat-v3",
+  "created_at": "2026-09-14T03:37:16.000Z",
+  "updated_at": "2026-11-09T23:34:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "bdh",
+    "dragon-hatchling",
+    "chat",
+    "en",
+    "base_model:d3vmeh/bdh-100m-bpe8k",
+    "base_model:finetune:d3vmeh/bdh-100m-bpe8k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 436276681,
+  "storage_human": "436 MB",
+  "base_model": "d3vmeh/bdh-100m-bpe8k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

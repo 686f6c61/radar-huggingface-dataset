@@ -5,7 +5,7 @@
   "author": "braindecode",
   "url": "https://huggingface.co/braindecode/DIVER-1-0.1s-tiny",
   "created_at": "2026-09-25T16:11:12.000Z",
-  "updated_at": "2026-11-08T16:30:23.000Z",
+  "updated_at": "2026-11-09T10:30:21.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 128,
+  "downloads_30d": 144,
   "trending_score": 0,
   "parameters": 12660546,
   "parameters_human": "12.7M",

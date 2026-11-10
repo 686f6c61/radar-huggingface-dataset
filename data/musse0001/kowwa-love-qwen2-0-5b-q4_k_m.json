@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Musse0001/kowwa-love-qwen2-0.5b-q4_k_m",
+  "slug": "musse0001-kowwa-love-qwen2-0-5b-q4_k_m",
+  "author": "Musse0001",
+  "url": "https://huggingface.co/Musse0001/kowwa-love-qwen2-0.5b-q4_k_m",
+  "created_at": "2026-11-10T03:56:10.000Z",
+  "updated_at": "2026-11-10T03:57:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "kowwa",
+    "love-agent",
+    "vietnamese",
+    "base_model:Qwen/Qwen2-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 397805376,
+  "storage_human": "398 MB",
+  "base_model": "Qwen/Qwen2-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "I Love A Mama's Boy: Sharing A Bed With My Mother-In-Law - IMDb",
+      "url": "https://www.imdb.com/video/vi4142713113/",
+      "snippet": "Sharing a Bed with My Mother-in-Law (2024) TV-14 | Reality-TV I Love A Mama's Boy: Sharing A Bed With My Mother-In-Law I Love …"
+    }
+  ]
+}

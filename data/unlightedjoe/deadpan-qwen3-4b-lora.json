@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "unlightedjoe/deadpan-qwen3-4b-lora",
+  "slug": "unlightedjoe-deadpan-qwen3-4b-lora",
+  "author": "unlightedjoe",
+  "url": "https://huggingface.co/unlightedjoe/deadpan-qwen3-4b-lora",
+  "created_at": "2026-11-10T04:38:24.000Z",
+  "updated_at": "2026-11-10T04:38:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "persona",
+    "style-transfer",
+    "sarcasm",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610542,
+  "storage_human": "144 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ducvh5/wan21-a5b5x4c5-tm-u5-qt-fw-hd-item-wanneg-slerpinit",
+  "slug": "ducvh5-wan21-a5b5x4c5-tm-u5-qt-fw-hd-item-wanneg-slerpinit",
+  "author": "ducvh5",
+  "url": "https://huggingface.co/ducvh5/wan21-a5b5x4c5-tm-u5-qt-fw-hd-item-wanneg-slerpinit",
+  "created_at": "2026-11-09T22:43:23.000Z",
+  "updated_at": "2026-11-09T22:45:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "wan",
+    "recurrent-transformer",
+    "checkpoints",
+    "text-to-video",
+    "base_model:Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23122471127,
+  "storage_human": "23.1 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

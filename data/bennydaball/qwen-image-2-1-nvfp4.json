@@ -5,7 +5,7 @@
   "author": "BennyDaBall",
   "url": "https://huggingface.co/BennyDaBall/Qwen-Image-2.1-NVFP4",
   "created_at": "2026-09-20T18:39:13.000Z",
-  "updated_at": "2026-10-15T20:04:25.000Z",
+  "updated_at": "2026-11-09T17:56:28.000Z",
   "license": "qwen-research-license",
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 22,
-  "downloads_30d": 19250,
+  "downloads_30d": 19165,
   "trending_score": 11,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/NQLSG-Qwen2.5-14B-MegaFusion-TIES-3-GGUF",
+  "slug": "mradermacher-nqlsg-qwen2-5-14b-megafusion-ties-3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/NQLSG-Qwen2.5-14B-MegaFusion-TIES-3-GGUF",
+  "created_at": "2025-02-15T04:21:16.000Z",
+  "updated_at": "2026-11-10T01:48:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-TIES-3",
+    "base_model:quantized:Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-TIES-3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 14765947904,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102011163392,
+  "storage_human": "102.0 GB",
+  "base_model": "Lunzima/NQLSG-Qwen2.5-14B-MegaFusion-TIES-3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

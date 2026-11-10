@@ -5,7 +5,7 @@
   "author": "Ghostfury73",
   "url": "https://huggingface.co/Ghostfury73/ai-models",
   "created_at": "2026-10-31T16:02:45.000Z",
-  "updated_at": "2026-10-31T16:14:51.000Z",
+  "updated_at": "2026-11-09T07:02:35.000Z",
   "license": "mixed-see-readme",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,7 +20,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 124,
+  "downloads_30d": 128,
   "trending_score": 0,
   "parameters": 3374295552,
   "parameters_human": "3.37B",

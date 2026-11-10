@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Hush-Qwen2.5-7B-RP-v1.3-1M-GGUF",
+  "slug": "mradermacher-hush-qwen2-5-7b-rp-v1-3-1m-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Hush-Qwen2.5-7B-RP-v1.3-1M-GGUF",
+  "created_at": "2025-03-08T22:15:22.000Z",
+  "updated_at": "2026-11-09T21:22:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:marcuscedricridia/Hush-Qwen2.5-7B-RP-v1.3-1M",
+    "base_model:quantized:marcuscedricridia/Hush-Qwen2.5-7B-RP-v1.3-1M",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 7612756480,
+  "parameters_human": "7.61B",
+  "storage_bytes": 52886352032,
+  "storage_human": "52.9 GB",
+  "base_model": "marcuscedricridia/Hush-Qwen2.5-7B-RP-v1.3-1M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

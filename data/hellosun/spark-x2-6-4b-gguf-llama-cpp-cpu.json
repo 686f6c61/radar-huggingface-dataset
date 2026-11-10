@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "HelloSun/Spark-x2.6-4b-gguf-llama.cpp-cpu",
+  "slug": "hellosun-spark-x2-6-4b-gguf-llama-cpp-cpu",
+  "author": "HelloSun",
+  "url": "https://huggingface.co/HelloSun/Spark-x2.6-4b-gguf-llama.cpp-cpu",
+  "created_at": "2026-11-10T01:01:41.000Z",
+  "updated_at": "2026-11-10T01:02:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "cpu",
+    "avx512",
+    "vnni",
+    "amx",
+    "on-device",
+    "en",
+    "zh",
+    "base_model:XHToken/Spark-X2.6-4B-GGUF",
+    "base_model:finetune:XHToken/Spark-X2.6-4B-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "XHToken/Spark-X2.6-4B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

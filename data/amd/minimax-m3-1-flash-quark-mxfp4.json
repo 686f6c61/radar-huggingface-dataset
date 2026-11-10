@@ -5,7 +5,7 @@
   "author": "amd",
   "url": "https://huggingface.co/amd/MiniMax-M3.1-Flash-Quark-MXFP4",
   "created_at": "2026-10-18T13:07:47.000Z",
-  "updated_at": "2026-11-06T23:55:39.000Z",
+  "updated_at": "2026-11-09T10:33:02.000Z",
   "license": "minimax-community",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 2061,
+  "downloads_30d": 2134,
   "trending_score": 0,
   "parameters": 220490854016,
   "parameters_human": "220.49B",

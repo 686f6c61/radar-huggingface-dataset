@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Rae-GGUF",
+  "slug": "mradermacher-rae-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Rae-GGUF",
+  "created_at": "2025-02-27T21:43:11.000Z",
+  "updated_at": "2026-11-09T23:35:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:taiy0/Rae",
+    "base_model:quantized:taiy0/Rae",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 163037184,
+  "parameters_human": "163.0M",
+  "storage_bytes": 1588313792,
+  "storage_human": "1.6 GB",
+  "base_model": "taiy0/Rae",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

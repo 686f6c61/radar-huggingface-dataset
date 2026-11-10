@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "peft-internal-testing/tiny-NemotronHForCausalLM-nano",
+  "slug": "peft-internal-testing-tiny-nemotronhforcausallm-nano",
+  "author": "peft-internal-testing",
+  "url": "https://huggingface.co/peft-internal-testing/tiny-NemotronHForCausalLM-nano",
+  "created_at": "2026-11-10T03:00:35.000Z",
+  "updated_at": "2026-11-10T03:00:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4226684,
+  "parameters_human": "4.2M",
+  "storage_bytes": 8456608,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

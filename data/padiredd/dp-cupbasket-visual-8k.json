@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "padiredd/dp-cupbasket-visual-8k",
+  "slug": "padiredd-dp-cupbasket-visual-8k",
+  "author": "padiredd",
+  "url": "https://huggingface.co/padiredd/dp-cupbasket-visual-8k",
+  "created_at": "2026-11-10T00:12:36.000Z",
+  "updated_at": "2026-11-10T00:13:56.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "LeRobot",
+    "diffusion-policy",
+    "isaac-lab",
+    "simulation",
+    "ffw-sg2",
+    "robotics",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 287533680,
+  "parameters_human": "287.5M",
+  "storage_bytes": 6901204424,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

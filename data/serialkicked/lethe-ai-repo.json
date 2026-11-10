@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "SerialKicked/Lethe-AI-Repo",
+  "slug": "serialkicked-lethe-ai-repo",
+  "author": "SerialKicked",
+  "url": "https://huggingface.co/SerialKicked/Lethe-AI-Repo",
+  "created_at": "2025-09-18T15:45:08.000Z",
+  "updated_at": "2026-11-09T23:45:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "jinja",
+    "templates",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 2,
+  "downloads_30d": 105,
+  "trending_score": 0,
+  "parameters": 108913180,
+  "parameters_human": "108.9M",
+  "storage_bytes": 497026912,
+  "storage_human": "497 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Polydim-Einsof/llama-3.3-8b-pmtp",
+  "slug": "polydim-einsof-llama-3-3-8b-pmtp",
+  "author": "Polydim-Einsof",
+  "url": "https://huggingface.co/Polydim-Einsof/llama-3.3-8b-pmtp",
+  "created_at": "2026-11-09T23:55:19.000Z",
+  "updated_at": "2026-11-09T23:55:28.000Z",
+  "license": "llama3.3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "polydim",
+    "pmtp",
+    "stiefel-manifold",
+    "llama3.3",
+    "einsof",
+    "reasoning",
+    "license:llama3.3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33554699,
+  "storage_human": "34 MB",
+  "base_model": "meta-llama/Llama-3.3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

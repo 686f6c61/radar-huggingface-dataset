@@ -5,7 +5,7 @@
   "author": "bakon3",
   "url": "https://huggingface.co/bakon3/DeepSeek-V4.1-Flash-1017-uncensored-rad",
   "created_at": "2026-10-28T10:11:32.000Z",
-  "updated_at": "2026-10-29T18:17:14.000Z",
+  "updated_at": "2026-11-09T14:54:53.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 2,
+  "likes": 3,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

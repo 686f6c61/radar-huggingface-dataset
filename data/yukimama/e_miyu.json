@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "yukimama/E_MiYu",
+  "slug": "yukimama-e_miyu",
+  "author": "yukimama",
+  "url": "https://huggingface.co/yukimama/E_MiYu",
+  "created_at": "2026-08-10T07:57:57.000Z",
+  "updated_at": "2026-11-09T21:01:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "conversational",
+    "coding-assistant",
+    "security",
+    "zh",
+    "en",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:adapter:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1622275632,
+  "storage_human": "1.6 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "victim822872/ct2-001251",
+  "slug": "victim822872-ct2-001251",
+  "author": "victim822872",
+  "url": "https://huggingface.co/victim822872/ct2-001251",
+  "created_at": "2026-11-10T00:12:51.000Z",
+  "updated_at": "2026-11-10T00:13:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2,
+  "parameters_human": "2",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

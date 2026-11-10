@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "vmlinux/Artemis-31B-v1.2-Q4_K_M-NInfer",
+  "slug": "vmlinux-artemis-31b-v1-2-q4_k_m-ninfer",
+  "author": "vmlinux",
+  "url": "https://huggingface.co/vmlinux/Artemis-31B-v1.2-Q4_K_M-NInfer",
+  "created_at": "2026-11-09T23:56:11.000Z",
+  "updated_at": "2026-11-09T23:58:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "gemma4",
+    "q4_k_m",
+    "creative-writing",
+    "v100",
+    "text-generation",
+    "base_model:TheDrummer/Artemis-31B-v1.2",
+    "base_model:quantized:TheDrummer/Artemis-31B-v1.2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19534300416,
+  "storage_human": "19.5 GB",
+  "base_model": "TheDrummer/Artemis-31B-v1.2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vmlinux - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vmlinux",
+      "snippet": "vmlinux (Virtual Memory Linux) is a statically linked executable file that contains the Linux kernel in one of the object file formats …"
+    },
+    {
+      "title": "Qu'est-ce que vmlinuz dans Linux - malekal.com",
+      "url": "https://www.malekal.com/vmlinuz-linux/",
+      "snippet": "Aug 20, 2022 · vmlinuz ne doit pas être confondu avec VMLinux, qui est le noyau sous une forme non compressée et non bootable. …"
+    },
+    {
+      "title": "Differences Between vmlinux, vmlinuz, vmlinux.bin, zimage, and …",
+      "url": "https://www.baeldung.com/linux/kernel-images",
+      "snippet": "Jul 31, 2024 · The original, uncompressed Linux kernel image is called vmlinux. vmlinux is the kernel in a uncompressed and non …"
+    },
+    {
+      "title": "GitHub - marin-m/vmlinux-to-elf: A tool to recover a fully analyzable ...",
+      "url": "https://github.com/marin-m/vmlinux-to-elf",
+      "snippet": "This tool allows to obtain a fully analyzable .ELF file from a vmlinux/vmlinuz/bzImage/zImage kernel image (either a raw binary blob …"
+    },
+    {
+      "title": "What is the use of vmlinux file generated when we compile linux kernel",
+      "url": "https://stackoverflow.com/questions/41326607/what-is-the-use-of-vmlinux-file-generated-when-we-compile-linux-kernel",
+      "snippet": "Dec 26, 2016 · The vmlinux is the boot file in ELF format, and then the initrd file (ram disk) is run in the same directory (/boot). The …"
+    }
+  ]
+}

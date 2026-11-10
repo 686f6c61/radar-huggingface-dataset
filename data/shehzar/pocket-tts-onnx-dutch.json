@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "shehzar/pocket-tts-onnx-dutch",
+  "slug": "shehzar-pocket-tts-onnx-dutch",
+  "author": "shehzar",
+  "url": "https://huggingface.co/shehzar/pocket-tts-onnx-dutch",
+  "created_at": "2026-11-10T03:38:23.000Z",
+  "updated_at": "2026-11-10T03:45:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "pocket-tts",
+    "voice-cloning",
+    "nl",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133888182,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

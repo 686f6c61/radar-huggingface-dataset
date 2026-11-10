@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "peft-internal-testing/tiny-Qwen3ForCausalLM",
+  "slug": "peft-internal-testing-tiny-qwen3forcausallm",
+  "author": "peft-internal-testing",
+  "url": "https://huggingface.co/peft-internal-testing/tiny-Qwen3ForCausalLM",
+  "created_at": "2026-11-10T02:58:04.000Z",
+  "updated_at": "2026-11-10T02:58:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2457640,
+  "parameters_human": "2.5M",
+  "storage_bytes": 4917896,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "Aminadaven",
   "url": "https://huggingface.co/Aminadaven/Qwen3.5-4B-3D-Coder-Q4_0-NPU",
   "created_at": "2026-11-09T17:04:32.000Z",
-  "updated_at": "2026-11-09T17:20:05.000Z",
+  "updated_at": "2026-11-09T23:00:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 4205751296,
   "parameters_human": "4.21B",
-  "storage_bytes": 2799413768,
-  "storage_human": "2.8 GB",
+  "storage_bytes": 2900990434,
+  "storage_human": "2.9 GB",
   "base_model": "ccore/Qwen3.5-4B-3D-Coder",
   "formats": [
     "gguf"

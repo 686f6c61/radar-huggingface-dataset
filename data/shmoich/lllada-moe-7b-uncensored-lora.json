@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "shmoich/lllada-moe-7b-uncensored-lora",
+  "slug": "shmoich-lllada-moe-7b-uncensored-lora",
+  "author": "shmoich",
+  "url": "https://huggingface.co/shmoich/lllada-moe-7b-uncensored-lora",
+  "created_at": "2026-11-10T04:09:03.000Z",
+  "updated_at": "2026-11-10T04:18:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+    "base_model:adapter:inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50456234,
+  "storage_human": "50 MB",
+  "base_model": "inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

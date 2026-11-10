@@ -5,10 +5,10 @@
   "author": "ByteDance-Seed",
   "url": "https://huggingface.co/ByteDance-Seed/Qwen3-30B-A3B-MoE-SAE",
   "created_at": "2026-11-05T13:38:56.000Z",
-  "updated_at": "2026-11-06T07:59:38.000Z",
+  "updated_at": "2026-11-09T07:44:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "feature-extraction",
   "library": null,
   "languages": [
     "en"
@@ -19,6 +19,7 @@
     "interpretability",
     "mixture-of-experts",
     "qwen3",
+    "feature-extraction",
     "en",
     "arxiv:2611.08089",
     "base_model:Qwen/Qwen3-30B-A3B",

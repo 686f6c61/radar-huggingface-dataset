@@ -5,7 +5,7 @@
   "author": "GAMINGZI",
   "url": "https://huggingface.co/GAMINGZI/qwen2.5-math-1.5b-french",
   "created_at": "2026-11-09T16:46:03.000Z",
-  "updated_at": "2026-11-09T16:49:26.000Z",
+  "updated_at": "2026-11-10T02:01:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 3,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 1543714304,

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/whisper-large-v3-turbo-onnxruntime-genai-fp16-cuda",
+  "slug": "mlboydaisuke-whisper-large-v3-turbo-onnxruntime-genai-fp16-cuda",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/whisper-large-v3-turbo-onnxruntime-genai-fp16-cuda",
+  "created_at": "2026-11-09T21:22:40.000Z",
+  "updated_at": "2026-11-09T21:25:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime-genai",
+  "languages": [],
+  "tags": [
+    "onnxruntime-genai",
+    "onnx",
+    "whisper",
+    "cuda",
+    "windows",
+    "automatic-speech-recognition",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:quantized:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1750853577,
+  "storage_human": "1.8 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-3-starshine-12b-continued-GGUF",
+  "slug": "mradermacher-gemma-3-starshine-12b-continued-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-3-starshine-12b-continued-GGUF",
+  "created_at": "2025-05-22T10:21:11.000Z",
+  "updated_at": "2026-11-10T01:48:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ToastyPigeon/gemma-3-starshine-12b-continued",
+    "base_model:quantized:ToastyPigeon/gemma-3-starshine-12b-continued",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 11766034176,
+  "parameters_human": "11.77B",
+  "storage_bytes": 83854465856,
+  "storage_human": "83.9 GB",
+  "base_model": "ToastyPigeon/gemma-3-starshine-12b-continued",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

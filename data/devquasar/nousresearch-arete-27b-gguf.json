@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "DevQuasar/NousResearch.Arete-27B-GGUF",
+  "slug": "devquasar-nousresearch-arete-27b-gguf",
+  "author": "DevQuasar",
+  "url": "https://huggingface.co/DevQuasar/NousResearch.Arete-27B-GGUF",
+  "created_at": "2026-11-10T00:45:13.000Z",
+  "updated_at": "2026-11-10T00:58:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "base_model:NousResearch/Arete-27B",
+    "base_model:quantized:NousResearch/Arete-27B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 111397513152,
+  "storage_human": "111.4 GB",
+  "base_model": "NousResearch/Arete-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

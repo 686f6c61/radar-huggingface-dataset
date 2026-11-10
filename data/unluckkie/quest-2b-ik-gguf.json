@@ -33,12 +33,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 38,
+  "downloads_30d": 199,
   "trending_score": 0,
   "parameters": 1881825088,
   "parameters_human": "1.88B",
-  "storage_bytes": 8756659264,
-  "storage_human": "8.8 GB",
+  "storage_bytes": 4980950272,
+  "storage_human": "5.0 GB",
   "base_model": "osunlp/QUEST-2B",
   "formats": [
     "gguf"

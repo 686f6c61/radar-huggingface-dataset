@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "gianlucamazza/SmolLM2-1.7B-Instruct-ort-genai-int4-cpu",
+  "slug": "gianlucamazza-smollm2-1-7b-instruct-ort-genai-int4-cpu",
+  "author": "gianlucamazza",
+  "url": "https://huggingface.co/gianlucamazza/SmolLM2-1.7B-Instruct-ort-genai-int4-cpu",
+  "created_at": "2026-11-09T21:49:41.000Z",
+  "updated_at": "2026-11-09T21:49:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onnxruntime-genai",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime-genai",
+    "onnx",
+    "int4",
+    "cpu",
+    "smollm2",
+    "text-generation",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1474861442,
+  "storage_human": "1.5 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "HoraYMedia/ai-triage-ner-roberta",
+  "slug": "horaymedia-ai-triage-ner-roberta",
+  "author": "HoraYMedia",
+  "url": "https://huggingface.co/HoraYMedia/ai-triage-ner-roberta",
+  "created_at": "2026-10-18T05:39:53.000Z",
+  "updated_at": "2026-11-10T00:24:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "ner",
+    "clinical",
+    "biomedical",
+    "spanish",
+    "triage",
+    "emergency-medicine",
+    "es",
+    "base_model:PlanTL-GOB-ES/roberta-base-biomedical-clinical-es",
+    "base_model:finetune:PlanTL-GOB-ES/roberta-base-biomedical-clinical-es",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 125392903,
+  "parameters_human": "125.4M",
+  "storage_bytes": 501595540,
+  "storage_human": "502 MB",
+  "base_model": "PlanTL-GOB-ES/roberta-base-biomedical-clinical-es",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

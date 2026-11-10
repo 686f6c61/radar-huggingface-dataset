@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "pmczip/MiniMaxH3_RefMod",
+  "slug": "pmczip-minimaxh3_refmod",
+  "author": "pmczip",
+  "url": "https://huggingface.co/pmczip/MiniMaxH3_RefMod",
+  "created_at": "2026-11-10T00:20:37.000Z",
+  "updated_at": "2026-11-10T02:12:24.000Z",
+  "license": "bespoke-lora-trained-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "RefMod",
+    "ref2vid",
+    "t2v",
+    "text-to-video",
+    "photorealistic",
+    "woman",
+    "celebrity",
+    "likeness",
+    "MiniMax-H3",
+    "en",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33255935,
+  "storage_human": "33 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "uniqueplayer9102/Martos-Preview",
+  "slug": "uniqueplayer9102-martos-preview",
+  "author": "uniqueplayer9102",
+  "url": "https://huggingface.co/uniqueplayer9102/Martos-Preview",
+  "created_at": "2026-11-09T20:26:22.000Z",
+  "updated_at": "2026-11-09T20:43:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "roleplay",
+    "conversational",
+    "creative-writing",
+    "llama-pro",
+    "block-expansion",
+    "not-for-all-audiences",
+    "en",
+    "arxiv:2401.02415",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2072926976,
+  "parameters_human": "2.07B",
+  "storage_bytes": 4157320778,
+  "storage_human": "4.2 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "Retrieve0",
   "url": "https://huggingface.co/Retrieve0/Qwen3-ASR-1.7B-EXL3-Decoder",
   "created_at": "2026-11-06T12:23:26.000Z",
-  "updated_at": "2026-11-06T12:28:31.000Z",
+  "updated_at": "2026-11-09T23:59:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2961628291,
-  "storage_human": "3.0 GB",
+  "storage_bytes": 5912611121,
+  "storage_human": "5.9 GB",
   "base_model": "Qwen/Qwen3-ASR-1.7B-hf",
   "formats": [
     "safetensors"

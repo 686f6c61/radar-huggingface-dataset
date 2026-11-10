@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "SolsticeAI/Arete-27B-Unlocked-Uncensored-Heretic",
+  "slug": "solsticeai-arete-27b-unlocked-uncensored-heretic",
+  "author": "SolsticeAI",
+  "url": "https://huggingface.co/SolsticeAI/Arete-27B-Unlocked-Uncensored-Heretic",
+  "created_at": "2026-11-10T04:16:56.000Z",
+  "updated_at": "2026-11-10T04:18:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "nous-research",
+    "arete",
+    "supervised-fine-tuning",
+    "value-alignment",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "text-generation",
+    "conversational",
+    "dataset:NousResearch/arete-data-pairs",
+    "base_model:NousResearch/Arete-27B",
+    "base_model:finetune:NousResearch/Arete-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54753585613,
+  "storage_human": "54.8 GB",
+  "base_model": "NousResearch/Arete-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Viral oyo rooms - 2026 videos on HindiChudaiVideos",
+      "url": "https://www.hindichudaivideos.com/search/Viral-oyo-rooms/",
+      "snippet": "Hindi Chudai videos is home for real Indian porn clips and desi mms. Watch unseen, uncut and uncensored porn movies now."
+    }
+  ]
+}

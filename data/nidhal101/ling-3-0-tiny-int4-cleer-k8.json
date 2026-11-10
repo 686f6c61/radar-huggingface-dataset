@@ -5,7 +5,7 @@
   "author": "Nidhal101",
   "url": "https://huggingface.co/Nidhal101/Ling-3.0-tiny-int4-CLEER-k8",
   "created_at": "2026-11-09T15:16:15.000Z",
-  "updated_at": "2026-11-09T15:16:29.000Z",
+  "updated_at": "2026-11-09T15:38:14.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,10 +24,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 1377496480,
+  "parameters": 1377493720,
   "parameters_human": "1.38B",
-  "storage_bytes": 2143510564,
-  "storage_human": "2.1 GB",
+  "storage_bytes": 4274804308,
+  "storage_human": "4.3 GB",
   "base_model": "inclusionAI/Ling-3.0-tiny-int4",
   "formats": [
     "safetensors"

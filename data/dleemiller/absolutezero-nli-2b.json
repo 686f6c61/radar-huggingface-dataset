@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "id": "dleemiller/AbsoluteZero-nli-2b",
+  "slug": "dleemiller-absolutezero-nli-2b",
+  "author": "dleemiller",
+  "url": "https://huggingface.co/dleemiller/AbsoluteZero-nli-2b",
+  "created_at": "2026-11-09T20:51:55.000Z",
+  "updated_at": "2026-11-10T02:49:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "cross-encoder",
+    "nli",
+    "natural-language-inference",
+    "zero-shot-classification",
+    "text-classification",
+    "hallucination-detection",
+    "rag",
+    "fact-checking",
+    "groundedness",
+    "reasoning",
+    "knowledge-distillation",
+    "grpo",
+    "qwen3.5",
+    "custom_code",
+    "en",
+    "dataset:dleemiller/FineCat-NLI",
+    "dataset:dleemiller/FineCat-NLI-Reason",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881837376,
+  "parameters_human": "1.88B",
+  "storage_bytes": 3784015493,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Natural Language Inference",
+      "dataset": "FineCat-NLI (test)",
+      "metric": "Accuracy",
+      "value": 0.8412
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "MultiNLI (validation matched)",
+      "metric": "Accuracy",
+      "value": 0.913
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "MultiNLI (validation mismatched)",
+      "metric": "Accuracy",
+      "value": 0.9148
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "SNLI (test)",
+      "metric": "Accuracy",
+      "value": 0.9335
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "ANLI round 1 (test)",
+      "metric": "Accuracy",
+      "value": 0.785
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "ANLI round 2 (test)",
+      "metric": "Accuracy",
+      "value": 0.647
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "ANLI round 3 (test)",
+      "metric": "Accuracy",
+      "value": 0.6033
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "WANLI (test)",
+      "metric": "Accuracy",
+      "value": 0.7662
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "LingNLI (validation)",
+      "metric": "Accuracy",
+      "value": 0.8739
+    },
+    {
+      "task": "Natural Language Inference",
+      "dataset": "45-dataset NLI / zero-shot / grounding benchmark (macro average)",
+      "metric": "Macro accuracy",
+      "value": 0.8264
+    }
+  ],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "Sido",
   "url": "https://huggingface.co/Sido/makellm-ja-char-200m-chat",
   "created_at": "2026-11-06T17:26:46.000Z",
-  "updated_at": "2026-11-06T17:27:32.000Z",
+  "updated_at": "2026-11-09T09:09:48.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -41,8 +41,8 @@
   "trending_score": 0,
   "parameters": 216981504,
   "parameters_human": "217.0M",
-  "storage_bytes": 434543456,
-  "storage_human": "435 MB",
+  "storage_bytes": 666359904,
+  "storage_human": "666 MB",
   "base_model": null,
   "formats": [
     "gguf"

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "purdue-ie336/qwen2.5-3b-log-reader-GGUF",
+  "slug": "purdue-ie336-qwen2-5-3b-log-reader-gguf",
+  "author": "purdue-ie336",
+  "url": "https://huggingface.co/purdue-ie336/qwen2.5-3b-log-reader-GGUF",
+  "created_at": "2026-11-09T21:18:55.000Z",
+  "updated_at": "2026-11-09T21:19:22.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ollama",
+    "information-extraction",
+    "markov-decision-processes",
+    "education",
+    "built-with-qwen",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929902624,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

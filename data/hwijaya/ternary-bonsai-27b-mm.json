@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "hwijaya/Ternary-Bonsai-27B-MM",
+  "slug": "hwijaya-ternary-bonsai-27b-mm",
+  "author": "hwijaya",
+  "url": "https://huggingface.co/hwijaya/Ternary-Bonsai-27B-MM",
+  "created_at": "2026-11-10T00:48:38.000Z",
+  "updated_at": "2026-11-10T00:53:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "ternary",
+    "2-bit",
+    "multimodal",
+    "vision",
+    "prism_ternary",
+    "cuda",
+    "bonsai",
+    "qwen3.8",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:fraserprice/Ternary-Bonsai-2-27B-vllm",
+    "base_model:quantized:fraserprice/Ternary-Bonsai-2-27B-vllm",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3982951152,
+  "parameters_human": "3.98B",
+  "storage_bytes": 11178708681,
+  "storage_human": "11.2 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-27B-unpacked, fraserprice/Ternary-Bonsai-2-27B-vllm",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
