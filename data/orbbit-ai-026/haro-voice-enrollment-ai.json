@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "orbbit-AI-026/Haro-voice-enrollment-AI",
+  "slug": "orbbit-ai-026-haro-voice-enrollment-ai",
+  "author": "orbbit-AI-026",
+  "url": "https://huggingface.co/orbbit-AI-026/Haro-voice-enrollment-AI",
+  "created_at": "2026-11-10T13:47:00.000Z",
+  "updated_at": "2026-11-10T13:48:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1928677440,
+  "parameters_human": "1.93B",
+  "storage_bytes": 4539706836,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

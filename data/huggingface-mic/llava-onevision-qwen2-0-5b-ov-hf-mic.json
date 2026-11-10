@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/llava-onevision-qwen2-0.5b-ov-hf-mic",
+  "slug": "huggingface-mic-llava-onevision-qwen2-0-5b-ov-hf-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/llava-onevision-qwen2-0.5b-ov-hf-mic",
+  "created_at": "2026-10-29T22:54:25.000Z",
+  "updated_at": "2026-11-10T16:10:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llava_onevision",
+    "mic",
+    "test-artifact",
+    "base_model:llava-hf/llava-onevision-qwen2-0.5b-ov-hf",
+    "base_model:finetune:llava-hf/llava-onevision-qwen2-0.5b-ov-hf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1180,
+  "trending_score": 0,
+  "parameters": 9962112,
+  "parameters_human": "10.0M",
+  "storage_bytes": 40073634,
+  "storage_human": "40 MB",
+  "base_model": "llava-hf/llava-onevision-qwen2-0.5b-ov-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -7,7 +7,7 @@
   "created_at": "2026-10-02T19:52:53.000Z",
   "updated_at": "2026-10-31T00:53:56.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "text-to-speech",
   "library": "loom-py-rt",
   "languages": [

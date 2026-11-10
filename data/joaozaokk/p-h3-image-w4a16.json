@@ -7,7 +7,7 @@
   "created_at": "2026-11-07T01:02:11.000Z",
   "updated_at": "2026-11-07T01:03:38.000Z",
   "license": "minimax-h3-community-license-agreement",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-to-image",
   "library": "diffusion-single-file",
   "languages": [],

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "albertlieadrian/qwen3-4b-deslop",
+  "slug": "albertlieadrian-qwen3-4b-deslop",
+  "author": "albertlieadrian",
+  "url": "https://huggingface.co/albertlieadrian/qwen3-4b-deslop",
+  "created_at": "2026-11-10T15:26:42.000Z",
+  "updated_at": "2026-11-10T15:27:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "lora",
+    "writing-style",
+    "slop",
+    "deslop",
+    "steerlab",
+    "conversational",
+    "en",
+    "arxiv:2510.15061",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8188592618,
+  "storage_human": "8.2 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

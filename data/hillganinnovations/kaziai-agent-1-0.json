@@ -1,0 +1,160 @@
+{
+  "schema": 1,
+  "id": "hillganinnovations/KaziAI-Agent-1.0",
+  "slug": "hillganinnovations-kaziai-agent-1-0",
+  "author": "hillganinnovations",
+  "url": "https://huggingface.co/hillganinnovations/KaziAI-Agent-1.0",
+  "created_at": "2026-11-10T16:19:07.000Z",
+  "updated_at": "2026-11-10T16:43:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "sw"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "agent",
+    "autonomous-agent",
+    "business-intelligence",
+    "erp",
+    "crm",
+    "tool-calling",
+    "function-calling",
+    "deepseek-r1",
+    "ollama",
+    "lora",
+    "peft",
+    "swahili",
+    "sheng",
+    "east-africa",
+    "kenya",
+    "finance",
+    "tax-accounting",
+    "neuro-symbolic",
+    "conversational",
+    "en",
+    "sw",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+    "license:mit",
+    "model-index",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 9611511711,
+  "storage_human": "9.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Function Calling & Tool Selection",
+      "dataset": "Berkeley Function-Calling Benchmark (BFCL)",
+      "metric": "Overall AST Match Rate",
+      "value": 94.11
+    },
+    {
+      "task": "Function Calling & Tool Selection",
+      "dataset": "Berkeley Function-Calling Benchmark (BFCL)",
+      "metric": "Simple AST Accuracy",
+      "value": 96.25
+    },
+    {
+      "task": "Function Calling & Tool Selection",
+      "dataset": "Berkeley Function-Calling Benchmark (BFCL)",
+      "metric": "Multiple Function Calling",
+      "value": 94.75
+    },
+    {
+      "task": "Autonomous Business Simulation",
+      "dataset": "KaziAI Business Operations Benchmark (Track B)",
+      "metric": "End-to-End Task Completion (N=2,500)",
+      "value": 98.44
+    },
+    {
+      "task": "Autonomous Business Simulation",
+      "dataset": "KaziAI Business Operations Benchmark (Track B)",
+      "metric": "CRM & Ticketing Success (KaziDesk)",
+      "value": 98.8
+    },
+    {
+      "task": "Autonomous Business Simulation",
+      "dataset": "KaziAI Business Operations Benchmark (Track B)",
+      "metric": "Point-of-Sale & Inventory (KaziPOS)",
+      "value": 98.4
+    },
+    {
+      "task": "Autonomous Business Simulation",
+      "dataset": "KaziAI Business Operations Benchmark (Track B)",
+      "metric": "Clinical & Health Admin (Kazi Afya)",
+      "value": 97.8
+    },
+    {
+      "task": "Autonomous Business Simulation",
+      "dataset": "KaziAI Business Operations Benchmark (Track B)",
+      "metric": "Financial & Tax Ledger Precision",
+      "value": 99.2
+    },
+    {
+      "task": "Enterprise ERP & DAG Planning",
+      "dataset": "KaziBench-500 Held-Out Evaluation Suite",
+      "metric": "Intent Accuracy",
+      "value": 100
+    },
+    {
+      "task": "Enterprise ERP & DAG Planning",
+      "dataset": "KaziBench-500 Held-Out Evaluation Suite",
+      "metric": "Tool Selection Accuracy",
+      "value": 100
+    },
+    {
+      "task": "Enterprise ERP & DAG Planning",
+      "dataset": "KaziBench-500 Held-Out Evaluation Suite",
+      "metric": "Argument Accuracy",
+      "value": 100
+    },
+    {
+      "task": "Enterprise ERP & DAG Planning",
+      "dataset": "KaziBench-500 Held-Out Evaluation Suite",
+      "metric": "DAG Planning Accuracy",
+      "value": 100
+    },
+    {
+      "task": "Enterprise ERP & DAG Planning",
+      "dataset": "KaziBench-500 Held-Out Evaluation Suite",
+      "metric": "Safety & Approval Compliance",
+      "value": 100
+    },
+    {
+      "task": "Adversarial Security & Zero-Trust Refusal",
+      "dataset": "KaziAI Red-Team Adversarial Battery (Track C)",
+      "metric": "Attack Refusal / Containment (N=1,500)",
+      "value": 100
+    },
+    {
+      "task": "Adversarial Security & Zero-Trust Refusal",
+      "dataset": "KaziAI Red-Team Adversarial Battery (Track C)",
+      "metric": "Executed Security Breaches",
+      "value": 0
+    }
+  ],
+  "sources": []
+}

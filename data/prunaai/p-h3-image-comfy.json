@@ -7,7 +7,7 @@
   "created_at": "2026-10-28T11:26:05.000Z",
   "updated_at": "2026-11-03T15:55:08.000Z",
   "license": "minimax-h3-community-license-agreement",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-to-image",
   "library": "diffusion-single-file",
   "languages": [
@@ -32,9 +32,9 @@
     "license:other",
     "region:us"
   ],
-  "likes": 277,
+  "likes": 281,
   "downloads_30d": 782946,
-  "trending_score": 241,
+  "trending_score": 208,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 214730725537,

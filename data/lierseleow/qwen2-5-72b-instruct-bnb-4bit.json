@@ -7,7 +7,7 @@
   "created_at": "2026-08-25T10:21:38.000Z",
   "updated_at": "2026-08-25T10:37:51.000Z",
   "license": "qwen",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],

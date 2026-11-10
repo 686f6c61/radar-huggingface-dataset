@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "aafimalek2032/wordle-rl-gemma3-270m-onnx",
+  "slug": "aafimalek2032-wordle-rl-gemma3-270m-onnx",
+  "author": "aafimalek2032",
+  "url": "https://huggingface.co/aafimalek2032/wordle-rl-gemma3-270m-onnx",
+  "created_at": "2026-11-10T16:25:21.000Z",
+  "updated_at": "2026-11-10T17:02:50.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "gemma3_text",
+    "text-generation",
+    "wordle",
+    "conversational",
+    "base_model:aafimalek2032/wordle-rl-gemma3-270m",
+    "base_model:quantized:aafimalek2032/wordle-rl-gemma3-270m",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2217396365,
+  "storage_human": "2.2 GB",
+  "base_model": "aafimalek2032/wordle-rl-gemma3-270m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

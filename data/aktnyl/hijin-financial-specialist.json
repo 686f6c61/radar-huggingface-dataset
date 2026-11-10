@@ -7,7 +7,7 @@
   "created_at": "2026-10-11T03:33:50.000Z",
   "updated_at": "2026-10-26T18:38:26.000Z",
   "license": "proprietary-commercial",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
   "library": null,
   "languages": [],

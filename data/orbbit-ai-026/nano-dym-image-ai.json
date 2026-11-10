@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "orbbit-AI-026/nano-Dym-image-AI",
+  "slug": "orbbit-ai-026-nano-dym-image-ai",
+  "author": "orbbit-AI-026",
+  "url": "https://huggingface.co/orbbit-AI-026/nano-Dym-image-AI",
+  "created_at": "2026-11-10T15:11:41.000Z",
+  "updated_at": "2026-11-10T15:12:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:apache-2.0",
+    "diffusers:ZImagePipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6154908736,
+  "parameters_human": "6.15B",
+  "storage_bytes": 32895044683,
+  "storage_human": "32.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

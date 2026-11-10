@@ -7,7 +7,7 @@
   "created_at": "2026-08-25T16:14:52.000Z",
   "updated_at": "2026-08-25T16:15:30.000Z",
   "license": "audio8-community-license-v1.0",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-to-speech",
   "library": "transformers",
   "languages": [

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-4-12B-it-SOMPOA-heresy-GGUF",
+  "slug": "mradermacher-gemma-4-12b-it-sompoa-heresy-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-4-12B-it-SOMPOA-heresy-GGUF",
+  "created_at": "2026-11-10T14:22:48.000Z",
+  "updated_at": "2026-11-10T14:44:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:MuXodious/gemma-4-12B-it-SOMPOA-heresy",
+    "base_model:quantized:MuXodious/gemma-4-12B-it-SOMPOA-heresy",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 83730052512,
+  "storage_human": "83.7 GB",
+  "base_model": "MuXodious/gemma-4-12B-it-SOMPOA-heresy",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

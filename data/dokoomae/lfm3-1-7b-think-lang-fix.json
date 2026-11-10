@@ -7,7 +7,7 @@
   "created_at": "2026-11-06T06:59:59.000Z",
   "updated_at": "2026-11-06T07:10:05.000Z",
   "license": "liquid-ai-community-license",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [

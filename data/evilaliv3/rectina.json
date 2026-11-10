@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "evilaliv3/rectina",
+  "slug": "evilaliv3-rectina",
+  "author": "evilaliv3",
+  "url": "https://huggingface.co/evilaliv3/rectina",
+  "created_at": "2026-10-31T07:15:41.000Z",
+  "updated_at": "2026-11-10T18:21:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1723581168,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

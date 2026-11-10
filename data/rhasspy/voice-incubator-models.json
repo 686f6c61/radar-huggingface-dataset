@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "rhasspy/voice-incubator-models",
+  "slug": "rhasspy-voice-incubator-models",
+  "author": "rhasspy",
+  "url": "https://huggingface.co/rhasspy/voice-incubator-models",
+  "created_at": "2026-10-29T19:59:08.000Z",
+  "updated_at": "2026-11-10T19:49:21.000Z",
+  "license": "cc-by-4.0-and-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tflite",
+    "onnx",
+    "automatic-speech-recognition",
+    "voice-assistant",
+    "home-assistant",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 146,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 429970236,
+  "storage_human": "430 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

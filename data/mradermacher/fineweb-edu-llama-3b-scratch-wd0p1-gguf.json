@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/fineweb-edu-llama-3b-scratch-wd0p1-GGUF",
+  "slug": "mradermacher-fineweb-edu-llama-3b-scratch-wd0p1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/fineweb-edu-llama-3b-scratch-wd0p1-GGUF",
+  "created_at": "2026-11-10T16:12:21.000Z",
+  "updated_at": "2026-11-10T16:15:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama",
+    "fineweb-edu",
+    "pretraining",
+    "scratch",
+    "en",
+    "base_model:hanseungwook/fineweb-edu-llama-3b-scratch-wd0p1",
+    "base_model:quantized:hanseungwook/fineweb-edu-llama-3b-scratch-wd0p1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3253343232,
+  "parameters_human": "3.25B",
+  "storage_bytes": 28975809344,
+  "storage_human": "29.0 GB",
+  "base_model": "hanseungwook/fineweb-edu-llama-3b-scratch-wd0p1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

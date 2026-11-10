@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/gemma-2b-mic",
+  "slug": "huggingface-mic-gemma-2b-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/gemma-2b-mic",
+  "created_at": "2026-10-29T20:48:53.000Z",
+  "updated_at": "2026-11-10T16:14:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma",
+    "mic",
+    "test-artifact",
+    "base_model:google/gemma-2b",
+    "base_model:finetune:google/gemma-2b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1115,
+  "trending_score": 0,
+  "parameters": 16453952,
+  "parameters_human": "16.5M",
+  "storage_bytes": 10119368508,
+  "storage_human": "10.1 GB",
+  "base_model": "google/gemma-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

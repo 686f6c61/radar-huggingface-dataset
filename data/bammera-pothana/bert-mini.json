@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "bammera-pothana/BERT-mini",
+  "slug": "bammera-pothana-bert-mini",
+  "author": "bammera-pothana",
+  "url": "https://huggingface.co/bammera-pothana/BERT-mini",
+  "created_at": "2026-11-10T16:24:07.000Z",
+  "updated_at": "2026-11-10T16:24:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "te"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "pretraining",
+    "bert-mini",
+    "telugu",
+    "masked-language-modeling",
+    "next-sentence-prediction",
+    "google-recipe",
+    "fill-mask",
+    "te",
+    "arxiv:1908.08962",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11647746,
+  "parameters_human": "11.6M",
+  "storage_bytes": 46599832,
+  "storage_human": "47 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Masked language modelling",
+      "dataset": "Held-out Telugu text (512-token examples)",
+      "metric": "Masked-LM loss (cross-entropy)",
+      "value": 3.418
+    },
+    {
+      "task": "Masked language modelling",
+      "dataset": "Held-out Telugu text (512-token examples)",
+      "metric": "Masked-LM perplexity",
+      "value": 30.5
+    },
+    {
+      "task": "Masked language modelling",
+      "dataset": "Held-out Telugu text (512-token examples)",
+      "metric": "Masked-LM top-1 accuracy",
+      "value": 0.424
+    },
+    {
+      "task": "Masked language modelling",
+      "dataset": "Held-out Telugu text (512-token examples)",
+      "metric": "Next-sentence-prediction accuracy",
+      "value": 0.955
+    },
+    {
+      "task": "Masked language modelling",
+      "dataset": "Telugu Wikisource (typed literary text, 3,000 paragraphs, 128-token pieces)",
+      "metric": "Masked-LM loss (cross-entropy)",
+      "value": 3.614
+    },
+    {
+      "task": "Masked language modelling",
+      "dataset": "Telugu Wikisource (typed literary text, 3,000 paragraphs, 128-token pieces)",
+      "metric": "Masked-LM top-1 accuracy",
+      "value": 0.394
+    },
+    {
+      "task": "Masked language modelling",
+      "dataset": "Telugu news (typed modern text, 3,000 paragraphs, 128-token pieces)",
+      "metric": "Masked-LM loss (cross-entropy)",
+      "value": 3.327
+    },
+    {
+      "task": "Masked language modelling",
+      "dataset": "Telugu news (typed modern text, 3,000 paragraphs, 128-token pieces)",
+      "metric": "Masked-LM top-1 accuracy",
+      "value": 0.438
+    }
+  ],
+  "sources": []
+}

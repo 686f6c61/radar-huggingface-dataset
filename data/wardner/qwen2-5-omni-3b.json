@@ -7,7 +7,7 @@
   "created_at": "2026-11-04T02:23:57.000Z",
   "updated_at": "2026-11-04T03:44:43.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": "rkllm",
   "languages": [],

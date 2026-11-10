@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Goddard/pie4k-depth-anything-v2-small-gguf",
+  "slug": "goddard-pie4k-depth-anything-v2-small-gguf",
+  "author": "Goddard",
+  "url": "https://huggingface.co/Goddard/pie4k-depth-anything-v2-small-gguf",
+  "created_at": "2026-11-10T19:20:38.000Z",
+  "updated_at": "2026-11-10T19:20:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "ggml",
+  "languages": [],
+  "tags": [
+    "ggml",
+    "gguf",
+    "depth-anything",
+    "vision.cpp",
+    "pie4k",
+    "depth-estimation",
+    "base_model:depth-anything/Depth-Anything-V2-Small-hf",
+    "base_model:quantized:depth-anything/Depth-Anything-V2-Small-hf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24785089,
+  "parameters_human": "24.8M",
+  "storage_bytes": 99165120,
+  "storage_human": "99 MB",
+  "base_model": "depth-anything/Depth-Anything-V2-Small-hf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Robert H. Goddard - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Robert_H._Goddard",
+      "snippet": "Robert Hutchings Goddard (October 5, 1882 – August 10, 1945) [1] was an American physicist, inventor, and engineer credited with …"
+    },
+    {
+      "title": "Robert Goddard (physicien) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Robert_Goddard_(physicien)",
+      "snippet": "Robert Hutchings Goddard (5 octobre 1882 – 10 août 1945) est un ingénieur et physicien américain. Précurseur en astronautique, il a …"
+    },
+    {
+      "title": "Robert Goddard : tous les livres | fnac",
+      "url": "https://www.fnac.com/Robert-Goddard/ia777940",
+      "snippet": "Robert Goddard a publié vingt et un romans depuis 1986. Longtemps souterraine, son ouvre vient d'être redécouverte en Angleterre …"
+    },
+    {
+      "title": "Goddard Space Flight Center - NASA",
+      "url": "https://www.nasa.gov/goddard/",
+      "snippet": "Oct 27, 2026 · Goddard is NASA’s premier space flight complex and home to the nation’s largest organization of scientists, …"
+    }
+  ]
+}

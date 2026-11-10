@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/albert-base-v2-mic",
+  "slug": "huggingface-mic-albert-base-v2-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/albert-base-v2-mic",
+  "created_at": "2026-10-29T19:41:31.000Z",
+  "updated_at": "2026-11-10T14:43:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albert",
+    "mic",
+    "test-artifact",
+    "base_model:albert/albert-base-v2",
+    "base_model:finetune:albert/albert-base-v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1120,
+  "trending_score": 0,
+  "parameters": 11251680,
+  "parameters_human": "11.3M",
+  "storage_bytes": 61719561,
+  "storage_human": "62 MB",
+  "base_model": "albert/albert-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

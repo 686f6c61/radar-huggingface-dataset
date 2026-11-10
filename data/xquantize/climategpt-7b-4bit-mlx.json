@@ -7,7 +7,7 @@
   "created_at": "2026-08-14T10:00:26.000Z",
   "updated_at": "2026-08-14T10:19:16.000Z",
   "license": "climategpt-community-license",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
   "library": "mlx",
   "languages": [

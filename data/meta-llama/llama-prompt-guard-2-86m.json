@@ -7,7 +7,7 @@
   "created_at": "2025-04-28T07:16:35.000Z",
   "updated_at": "2025-04-29T15:59:55.000Z",
   "license": "llama4",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "text-classification",
   "library": "transformers",
   "languages": [
@@ -44,9 +44,9 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 373,
+  "likes": 374,
   "downloads_30d": 94789,
-  "trending_score": 13,
+  "trending_score": 12,
   "parameters": 278810882,
   "parameters_human": "278.8M",
   "storage_bytes": 1131619553,

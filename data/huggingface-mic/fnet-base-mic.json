@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/fnet-base-mic",
+  "slug": "huggingface-mic-fnet-base-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/fnet-base-mic",
+  "created_at": "2026-10-30T10:58:48.000Z",
+  "updated_at": "2026-11-10T16:16:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "fnet",
+    "mic",
+    "test-artifact",
+    "base_model:google/fnet-base",
+    "base_model:finetune:google/fnet-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1012,
+  "trending_score": 0,
+  "parameters": 2159554,
+  "parameters_human": "2.2M",
+  "storage_bytes": 17998814,
+  "storage_human": "18 MB",
+  "base_model": "google/fnet-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

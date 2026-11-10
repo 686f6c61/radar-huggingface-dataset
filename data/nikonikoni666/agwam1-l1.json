@@ -7,7 +7,7 @@
   "created_at": "2026-10-28T20:47:54.000Z",
   "updated_at": "2026-10-28T20:50:08.000Z",
   "license": "gpl-2.0",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "robotics",
   "library": "openwam",
   "languages": [],

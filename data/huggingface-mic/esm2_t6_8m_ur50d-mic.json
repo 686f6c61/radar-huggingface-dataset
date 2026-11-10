@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/esm2_t6_8M_UR50D-mic",
+  "slug": "huggingface-mic-esm2_t6_8m_ur50d-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/esm2_t6_8M_UR50D-mic",
+  "created_at": "2026-10-29T15:26:26.000Z",
+  "updated_at": "2026-11-10T13:56:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "esm",
+    "mic",
+    "test-artifact",
+    "base_model:facebook/esm2_t6_8M_UR50D",
+    "base_model:finetune:facebook/esm2_t6_8M_UR50D",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1144,
+  "trending_score": 0,
+  "parameters": 7512482,
+  "parameters_human": "7.5M",
+  "storage_bytes": 30658816,
+  "storage_human": "31 MB",
+  "base_model": "facebook/esm2_t6_8M_UR50D",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

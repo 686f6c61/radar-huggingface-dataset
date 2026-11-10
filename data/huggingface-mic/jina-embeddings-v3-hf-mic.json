@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/jina-embeddings-v3-hf-mic",
+  "slug": "huggingface-mic-jina-embeddings-v3-hf-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/jina-embeddings-v3-hf-mic",
+  "created_at": "2026-10-29T23:10:39.000Z",
+  "updated_at": "2026-11-10T16:06:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "jina_embeddings_v3",
+    "mic",
+    "test-artifact",
+    "base_model:jinaai/jina-embeddings-v3-hf",
+    "base_model:finetune:jinaai/jina-embeddings-v3-hf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1107,
+  "trending_score": 0,
+  "parameters": 16071424,
+  "parameters_human": "16.1M",
+  "storage_bytes": 81374628,
+  "storage_human": "81 MB",
+  "base_model": "jinaai/jina-embeddings-v3-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

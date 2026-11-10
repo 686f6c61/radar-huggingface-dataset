@@ -7,7 +7,7 @@
   "created_at": "2026-11-02T23:12:49.000Z",
   "updated_at": "2026-11-03T11:11:00.000Z",
   "license": "xai-community-license",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": null,
   "library": "pytorch",
   "languages": [],

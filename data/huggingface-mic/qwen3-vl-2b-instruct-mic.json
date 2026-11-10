@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Qwen3-VL-2B-Instruct-mic",
+  "slug": "huggingface-mic-qwen3-vl-2b-instruct-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Qwen3-VL-2B-Instruct-mic",
+  "created_at": "2026-10-29T13:42:25.000Z",
+  "updated_at": "2026-11-10T13:09:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "mic",
+    "test-artifact",
+    "base_model:Qwen/Qwen3-VL-2B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-2B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1140,
+  "trending_score": 0,
+  "parameters": 11177792,
+  "parameters_human": "11.2M",
+  "storage_bytes": 44747768,
+  "storage_human": "45 MB",
+  "base_model": "Qwen/Qwen3-VL-2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

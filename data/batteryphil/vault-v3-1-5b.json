@@ -7,7 +7,7 @@
   "created_at": "2026-11-06T03:16:07.000Z",
   "updated_at": "2026-11-09T12:35:45.000Z",
   "license": "vault-dual-agpl-3.0-or-commercial",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "text-generation",
   "library": null,
   "languages": [

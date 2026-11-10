@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/17btest-nov6-2x16k-GGUF",
+  "slug": "mradermacher-17btest-nov6-2x16k-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/17btest-nov6-2x16k-GGUF",
+  "created_at": "2026-11-10T17:03:24.000Z",
+  "updated_at": "2026-11-10T17:11:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "trl",
+    "sft",
+    "en",
+    "base_model:DQN-Labs/17btest-nov6-2x16k",
+    "base_model:quantized:DQN-Labs/17btest-nov6-2x16k",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 15885893760,
+  "storage_human": "15.9 GB",
+  "base_model": "DQN-Labs/17btest-nov6-2x16k",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

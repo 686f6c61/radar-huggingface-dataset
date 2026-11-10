@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3-TTS-Sam-0.6B-GGUF",
+  "slug": "mradermacher-qwen3-tts-sam-0-6b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3-TTS-Sam-0.6B-GGUF",
+  "created_at": "2026-11-10T17:04:49.000Z",
+  "updated_at": "2026-11-10T17:11:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "tts",
+    "qwen3-tts",
+    "audio",
+    "fine-tuned",
+    "non-binary",
+    "voice",
+    "en",
+    "dataset:Sam-Accenture-Non-Binary-Voice/non-binary-voice-files",
+    "base_model:kaineone/Qwen3-TTS-Sam-0.6B",
+    "base_model:quantized:kaineone/Qwen3-TTS-Sam-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 602341376,
+  "parameters_human": "602.3M",
+  "storage_bytes": 6368469632,
+  "storage_human": "6.4 GB",
+  "base_model": "kaineone/Qwen3-TTS-Sam-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

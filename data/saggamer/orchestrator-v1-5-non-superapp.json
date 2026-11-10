@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "saggamer/orchestrator-v1.5-non-superapp",
+  "slug": "saggamer-orchestrator-v1-5-non-superapp",
+  "author": "saggamer",
+  "url": "https://huggingface.co/saggamer/orchestrator-v1.5-non-superapp",
+  "created_at": "2026-11-10T02:08:37.000Z",
+  "updated_at": "2026-11-10T02:30:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_text",
+    "text-generation",
+    "gemma4",
+    "agentic-ai",
+    "tool-use",
+    "conversational",
+    "en",
+    "base_model:saggamer/orchestrator-v1.5",
+    "base_model:merge:saggamer/orchestrator-v1.5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 280,
+  "trending_score": 0,
+  "parameters": 7463013418,
+  "parameters_human": "7.46B",
+  "storage_bytes": 14958272454,
+  "storage_human": "15.0 GB",
+  "base_model": "saggamer/orchestrator-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

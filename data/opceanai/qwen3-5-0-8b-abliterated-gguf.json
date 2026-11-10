@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "OpceanAI/Qwen3.5-0.8B-abliterated-GGUF",
+  "slug": "opceanai-qwen3-5-0-8b-abliterated-gguf",
+  "author": "OpceanAI",
+  "url": "https://huggingface.co/OpceanAI/Qwen3.5-0.8B-abliterated-GGUF",
+  "created_at": "2026-11-06T17:14:29.000Z",
+  "updated_at": "2026-11-06T20:38:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama.cpp",
+    "abliteration",
+    "quantized",
+    "iq-quants",
+    "ternary",
+    "qwen3_5",
+    "text-generation",
+    "en",
+    "base_model:OpceanAI/Qwen3.5-0.8B-abliterated",
+    "base_model:quantized:OpceanAI/Qwen3.5-0.8B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 4959,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 9700949871,
+  "storage_human": "9.7 GB",
+  "base_model": "OpceanAI/Qwen3.5-0.8B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

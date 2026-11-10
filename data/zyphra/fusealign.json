@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Zyphra/fusealign",
+  "slug": "zyphra-fusealign",
+  "author": "Zyphra",
+  "url": "https://huggingface.co/Zyphra/fusealign",
+  "created_at": "2026-11-02T14:47:41.000Z",
+  "updated_at": "2026-11-10T19:44:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "gguf",
+    "forced-alignment",
+    "word-alignment",
+    "speech",
+    "audio",
+    "arxiv:2609.33650",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 462270850,
+  "parameters_human": "462.3M",
+  "storage_bytes": 6407986856,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

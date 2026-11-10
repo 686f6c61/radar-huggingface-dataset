@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "omegamentiszug/deepseek-coder-6.7b-instruct",
+  "slug": "omegamentiszug-deepseek-coder-6-7b-instruct",
+  "author": "omegamentiszug",
+  "url": "https://huggingface.co/omegamentiszug/deepseek-coder-6.7b-instruct",
+  "created_at": "2026-11-10T19:09:15.000Z",
+  "updated_at": "2026-11-10T19:09:15.000Z",
+  "license": "deepseek",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "llama",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6740512768,
+  "parameters_human": "6.74B",
+  "storage_bytes": 26962188613,
+  "storage_human": "27.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

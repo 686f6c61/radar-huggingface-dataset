@@ -7,7 +7,7 @@
   "created_at": "2026-09-22T00:24:31.000Z",
   "updated_at": "2026-09-22T02:21:48.000Z",
   "license": "closed-agi-restricted-research-license",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "any-to-any",
   "library": "transformers",
   "languages": [

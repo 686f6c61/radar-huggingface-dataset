@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "TrieuVo/goat-a2-emotion",
+  "slug": "trieuvo-goat-a2-emotion",
+  "author": "TrieuVo",
+  "url": "https://huggingface.co/TrieuVo/goat-a2-emotion",
+  "created_at": "2026-11-10T14:57:57.000Z",
+  "updated_at": "2026-11-10T15:01:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "joblib",
+    "safetensors",
+    "text-classification",
+    "emotion",
+    "distilbert",
+    "co3133",
+    "en",
+    "dataset:dair-ai/emotion",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 269067569,
+  "storage_human": "269 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -7,7 +7,7 @@
   "created_at": "2026-10-16T10:04:56.000Z",
   "updated_at": "2026-10-27T06:56:23.000Z",
   "license": "qwen",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
   "library": "gguf",
   "languages": [
@@ -35,9 +35,9 @@
     "region:us",
     "conversational"
   ],
-  "likes": 368,
+  "likes": 369,
   "downloads_30d": 43933,
-  "trending_score": 63,
+  "trending_score": 64,
   "parameters": 1924404480,
   "parameters_human": "1.92B",
   "storage_bytes": 31672474144,

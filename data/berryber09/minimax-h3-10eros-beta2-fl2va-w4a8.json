@@ -7,7 +7,7 @@
   "created_at": "2026-08-17T19:53:51.000Z",
   "updated_at": "2026-08-20T07:27:16.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "text-to-video",
   "library": "minimax-h3",
   "languages": [],

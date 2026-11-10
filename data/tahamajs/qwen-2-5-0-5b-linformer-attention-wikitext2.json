@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "tahamajs/qwen-2.5-0.5b-linformer-attention-wikitext2",
+  "slug": "tahamajs-qwen-2-5-0-5b-linformer-attention-wikitext2",
+  "author": "tahamajs",
+  "url": "https://huggingface.co/tahamajs/qwen-2.5-0.5b-linformer-attention-wikitext2",
+  "created_at": "2026-11-10T18:00:21.000Z",
+  "updated_at": "2026-11-10T18:07:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 486998656,
+  "parameters_human": "487.0M",
+  "storage_bytes": 1059650816,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "arthursilvadantas/SVHN",
+  "slug": "arthursilvadantas-svhn",
+  "author": "arthursilvadantas",
+  "url": "https://huggingface.co/arthursilvadantas/SVHN",
+  "created_at": "2026-10-15T18:09:41.000Z",
+  "updated_at": "2026-11-10T18:58:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "computer-vision",
+    "cnn",
+    "vgg",
+    "svhn",
+    "digits",
+    "digit-recognition",
+    "ablation-study",
+    "grad-cam",
+    "en",
+    "pt",
+    "dataset:ufldl-stanford/svhn",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77536094,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Digit classification",
+      "dataset": "SVHN (cropped digits)",
+      "metric": "Accuracy (25,285/26,032)",
+      "value": 0.9713
+    }
+  ],
+  "sources": []
+}

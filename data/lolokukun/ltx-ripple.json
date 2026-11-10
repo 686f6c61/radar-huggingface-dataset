@@ -7,7 +7,7 @@
   "created_at": "2026-09-13T17:28:49.000Z",
   "updated_at": "2026-09-13T17:28:50.000Z",
   "license": "ltx-2-community-license-agreement",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "video-to-video",
   "library": "comfyui",
   "languages": [],

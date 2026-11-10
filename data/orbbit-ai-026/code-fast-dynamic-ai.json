@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "orbbit-AI-026/Code-fast-Dynamic-AI",
+  "slug": "orbbit-ai-026-code-fast-dynamic-ai",
+  "author": "orbbit-AI-026",
+  "url": "https://huggingface.co/orbbit-AI-026/Code-fast-Dynamic-AI",
+  "created_at": "2026-11-10T15:16:47.000Z",
+  "updated_at": "2026-11-10T15:24:23.000Z",
+  "license": "qwen3.8-max",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2446182725504,
+  "parameters_human": "2446.18B",
+  "storage_bytes": 1310876469952,
+  "storage_human": "1310.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start saving!"
+    }
+  ]
+}

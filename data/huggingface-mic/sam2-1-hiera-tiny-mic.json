@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/sam2.1-hiera-tiny-mic",
+  "slug": "huggingface-mic-sam2-1-hiera-tiny-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/sam2.1-hiera-tiny-mic",
+  "created_at": "2026-10-27T10:34:27.000Z",
+  "updated_at": "2026-11-10T13:23:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sam2",
+    "mic",
+    "test-artifact",
+    "base_model:facebook/sam2.1-hiera-tiny",
+    "base_model:finetune:facebook/sam2.1-hiera-tiny",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1427,
+  "trending_score": 0,
+  "parameters": 1901169,
+  "parameters_human": "1.9M",
+  "storage_bytes": 7631316,
+  "storage_human": "8 MB",
+  "base_model": "facebook/sam2.1-hiera-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

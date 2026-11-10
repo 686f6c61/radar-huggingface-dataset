@@ -7,7 +7,7 @@
   "created_at": "2026-11-09T05:08:09.000Z",
   "updated_at": "2026-11-10T02:07:27.000Z",
   "license": "krea-2-community-license",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-to-image",
   "library": null,
   "languages": [],

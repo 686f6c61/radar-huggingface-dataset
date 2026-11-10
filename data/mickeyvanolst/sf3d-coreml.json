@@ -7,7 +7,7 @@
   "created_at": "2026-09-08T20:13:36.000Z",
   "updated_at": "2026-09-08T20:14:11.000Z",
   "license": "stability-ai-community-license",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "image-to-3d",
   "library": null,
   "languages": [],

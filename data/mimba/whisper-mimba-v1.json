@@ -7,7 +7,7 @@
   "created_at": "2026-11-04T08:12:00.000Z",
   "updated_at": "2026-11-05T08:42:48.000Z",
   "license": "mimba-proprietary",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "automatic-speech-recognition",
   "library": "transformers",
   "languages": [

@@ -7,7 +7,7 @@
   "created_at": "2026-11-10T06:59:39.000Z",
   "updated_at": "2026-11-10T07:37:40.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "image-classification",
   "library": null,
   "languages": [],

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Sleem247/mistral-7b-medlexfin-Q8_0-GGUF",
+  "slug": "sleem247-mistral-7b-medlexfin-q8_0-gguf",
+  "author": "Sleem247",
+  "url": "https://huggingface.co/Sleem247/mistral-7b-medlexfin-Q8_0-GGUF",
+  "created_at": "2026-11-10T18:17:26.000Z",
+  "updated_at": "2026-11-10T18:17:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "medical",
+    "legal",
+    "finance",
+    "fine-tuned",
+    "mistral",
+    "llama-cpp",
+    "gguf-my-lora",
+    "en",
+    "base_model:henil164/mistral-7b-medlexfin",
+    "base_model:quantized:henil164/mistral-7b-medlexfin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13631488,
+  "parameters_human": "13.6M",
+  "storage_bytes": 19416480,
+  "storage_human": "19 MB",
+  "base_model": "henil164/mistral-7b-medlexfin",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

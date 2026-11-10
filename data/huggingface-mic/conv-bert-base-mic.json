@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/conv-bert-base-mic",
+  "slug": "huggingface-mic-conv-bert-base-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/conv-bert-base-mic",
+  "created_at": "2026-10-29T20:23:14.000Z",
+  "updated_at": "2026-11-10T15:15:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "convbert",
+    "mic",
+    "test-artifact",
+    "base_model:YituTech/conv-bert-base",
+    "base_model:finetune:YituTech/conv-bert-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1108,
+  "trending_score": 0,
+  "parameters": 23951524,
+  "parameters_human": "24.0M",
+  "storage_bytes": 191635862,
+  "storage_human": "192 MB",
+  "base_model": "YituTech/conv-bert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

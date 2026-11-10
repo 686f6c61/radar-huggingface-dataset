@@ -7,7 +7,7 @@
   "created_at": "2026-06-18T05:24:15.000Z",
   "updated_at": "2026-07-24T15:50:25.000Z",
   "license": "krea-2-community-license",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-to-image",
   "library": "diffusers",
   "languages": [
@@ -22,9 +22,9 @@
     "diffusers:Krea2Pipeline",
     "region:us"
   ],
-  "likes": 1309,
+  "likes": 1314,
   "downloads_30d": 107488,
-  "trending_score": 29,
+  "trending_score": 34,
   "parameters": 12820073036,
   "parameters_human": "12.82B",
   "storage_bytes": 62074859962,

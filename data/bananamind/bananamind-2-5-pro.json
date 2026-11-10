@@ -7,7 +7,7 @@
   "created_at": "2026-11-08T19:49:56.000Z",
   "updated_at": "2026-11-08T20:19:57.000Z",
   "license": "bananamind-community-license-1.0",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [
@@ -44,9 +44,9 @@
     "license:other",
     "region:us"
   ],
-  "likes": 12,
+  "likes": 13,
   "downloads_30d": 683,
-  "trending_score": 12,
+  "trending_score": 13,
   "parameters": 138971520,
   "parameters_human": "139.0M",
   "storage_bytes": 557436062,

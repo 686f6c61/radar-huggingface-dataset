@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "maraxen/aminx",
+  "slug": "maraxen-aminx",
+  "author": "maraxen",
+  "url": "https://huggingface.co/maraxen/aminx",
+  "created_at": "2026-06-05T13:15:09.000Z",
+  "updated_at": "2026-11-10T17:23:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "aminx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "aminx",
+    "protein-design",
+    "sequence-design",
+    "jax",
+    "equinox",
+    "protein-mpnn",
+    "ligand-mpnn",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 925060864,
+  "storage_human": "925 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

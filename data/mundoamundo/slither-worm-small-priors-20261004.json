@@ -7,7 +7,7 @@
   "created_at": "2026-10-04T16:47:44.000Z",
   "updated_at": "2026-10-04T16:50:18.000Z",
   "license": "nvidia-segformer-research-only",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "image-segmentation",
   "library": null,
   "languages": [],

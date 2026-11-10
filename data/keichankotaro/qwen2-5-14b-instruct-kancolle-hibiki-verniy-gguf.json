@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "keichankotaro/Qwen2.5-14B-Instruct-KanColle-Hibiki-Verniy-GGUF",
+  "slug": "keichankotaro-qwen2-5-14b-instruct-kancolle-hibiki-verniy-gguf",
+  "author": "keichankotaro",
+  "url": "https://huggingface.co/keichankotaro/Qwen2.5-14B-Instruct-KanColle-Hibiki-Verniy-GGUF",
+  "created_at": "2026-10-06T02:53:21.000Z",
+  "updated_at": "2026-11-10T16:19:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "kancolle",
+    "hibiki",
+    "verniy",
+    "qwen2.5",
+    "roleplay",
+    "qlora",
+    "text-generation",
+    "ja",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-14B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 111,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 176552622720,
+  "storage_human": "176.6 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

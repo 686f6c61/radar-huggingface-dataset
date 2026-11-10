@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GLM-4.6V-Flash-9B-MobileWeave-SFT-GGUF",
+  "slug": "mradermacher-glm-4-6v-flash-9b-mobileweave-sft-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GLM-4.6V-Flash-9B-MobileWeave-SFT-GGUF",
+  "created_at": "2026-11-10T14:57:40.000Z",
+  "updated_at": "2026-11-10T15:05:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mobileweave",
+    "gui-agent",
+    "llama-factory",
+    "full",
+    "en",
+    "zh",
+    "base_model:GUI-Gym/GLM-4.6V-Flash-9B-MobileWeave-SFT",
+    "base_model:quantized:GUI-Gym/GLM-4.6V-Flash-9B-MobileWeave-SFT",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9400279040,
+  "parameters_human": "9.40B",
+  "storage_bytes": 89653093504,
+  "storage_human": "89.7 GB",
+  "base_model": "GUI-Gym/GLM-4.6V-Flash-9B-MobileWeave-SFT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

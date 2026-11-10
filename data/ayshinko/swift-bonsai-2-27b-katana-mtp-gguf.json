@@ -7,7 +7,7 @@
   "created_at": "2026-09-24T20:01:53.000Z",
   "updated_at": "2026-09-24T21:17:07.000Z",
   "license": "prism-bonsai-community",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "image-text-to-text",
   "library": null,
   "languages": [],

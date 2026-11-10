@@ -7,7 +7,7 @@
   "created_at": "2026-11-09T12:49:16.000Z",
   "updated_at": "2026-11-10T02:30:24.000Z",
   "license": "liquid-lfm-community-license",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
   "library": "gguf",
   "languages": [],

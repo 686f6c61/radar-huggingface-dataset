@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "amarosilva/OmniVoice-PT-GGUF",
+  "slug": "amarosilva-omnivoice-pt-gguf",
+  "author": "amarosilva",
+  "url": "https://huggingface.co/amarosilva/OmniVoice-PT-GGUF",
+  "created_at": "2026-11-08T10:05:46.000Z",
+  "updated_at": "2026-11-08T11:05:54.000Z",
+  "license": "omnivoice-pt-models",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "ggml",
+    "text-to-speech",
+    "tts",
+    "portuguese",
+    "voice-cloning",
+    "omnivoice",
+    "higgs-audio-2",
+    "pt",
+    "base_model:k2-fsa/OmniVoice",
+    "base_model:quantized:k2-fsa/OmniVoice",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 159,
+  "trending_score": 0,
+  "parameters": 22082081,
+  "parameters_human": "22.1M",
+  "storage_bytes": 2113343924,
+  "storage_human": "2.1 GB",
+  "base_model": "k2-fsa/OmniVoice",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

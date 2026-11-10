@@ -7,7 +7,7 @@
   "created_at": "2026-09-04T23:18:09.000Z",
   "updated_at": "2026-09-27T23:17:06.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "token-classification",
   "library": "transformers",
   "languages": [

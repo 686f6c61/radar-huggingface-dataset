@@ -7,7 +7,7 @@
   "created_at": "2026-11-06T09:10:17.000Z",
   "updated_at": "2026-11-06T09:10:18.000Z",
   "license": "bargo-proprietary-api",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "automatic-speech-recognition",
   "library": "openai",
   "languages": [

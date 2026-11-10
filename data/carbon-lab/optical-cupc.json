@@ -7,7 +7,7 @@
   "created_at": "2026-10-03T23:07:17.000Z",
   "updated_at": "2026-10-03T23:50:22.000Z",
   "license": "gpl-2.0",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "other",
   "library": "dft-learn",
   "languages": [],

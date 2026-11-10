@@ -7,7 +7,7 @@
   "created_at": "2026-09-28T01:15:39.000Z",
   "updated_at": "2026-09-28T01:17:14.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "robotics",
   "library": "transformers",
   "languages": [],

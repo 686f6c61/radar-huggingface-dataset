@@ -7,7 +7,7 @@
   "created_at": "2026-08-29T02:18:26.000Z",
   "updated_at": "2026-08-29T02:21:53.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
   "library": "pytorch",
   "languages": [],

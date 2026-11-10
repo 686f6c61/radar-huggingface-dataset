@@ -7,7 +7,7 @@
   "created_at": "2026-09-07T10:31:45.000Z",
   "updated_at": "2026-10-13T01:43:33.000Z",
   "license": "sovereign-leviathan-sl-agpl3-001",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [

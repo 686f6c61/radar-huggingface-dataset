@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/plamo-3-8b-fin-instruct-GGUF",
+  "slug": "mradermacher-plamo-3-8b-fin-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/plamo-3-8b-fin-instruct-GGUF",
+  "created_at": "2026-11-10T17:46:35.000Z",
+  "updated_at": "2026-11-10T18:12:18.000Z",
+  "license": "plamo-community-license",
+  "license_family": "non-commercial",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "finance",
+    "plamo",
+    "japanese",
+    "ja",
+    "base_model:pfnet/plamo-3-8b-fin-instruct",
+    "base_model:quantized:pfnet/plamo-3-8b-fin-instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8531750912,
+  "parameters_human": "8.53B",
+  "storage_bytes": 76547189760,
+  "storage_human": "76.5 GB",
+  "base_model": "pfnet/plamo-3-8b-fin-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

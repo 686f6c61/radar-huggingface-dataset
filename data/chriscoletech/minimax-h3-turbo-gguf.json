@@ -7,7 +7,7 @@
   "created_at": "2026-08-11T14:36:56.000Z",
   "updated_at": "2026-10-15T15:35:47.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "text-to-video",
   "library": "gguf",
   "languages": [],

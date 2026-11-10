@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "dddffgassa/tiny-desk-ai-video-generator",
+  "slug": "dddffgassa-tiny-desk-ai-video-generator",
+  "author": "dddffgassa",
+  "url": "https://huggingface.co/dddffgassa/tiny-desk-ai-video-generator",
+  "created_at": "2026-11-10T15:30:30.000Z",
+  "updated_at": "2026-11-10T15:30:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tiny-desk-ai",
+    "outstanding-tiny-desk-ai",
+    "tiny-desk-ai-video",
+    "ai-video",
+    "video-generation",
+    "meme",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Se connecter à Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application Gmail sur votre …"
+    }
+  ]
+}

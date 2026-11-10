@@ -7,7 +7,7 @@
   "created_at": "2026-08-24T23:00:02.000Z",
   "updated_at": "2026-09-18T13:45:46.000Z",
   "license": "nvidia-software-and-model-evaluation-license",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "voice-activity-detection",
   "library": "nemo",
   "languages": [],

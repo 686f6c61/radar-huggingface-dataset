@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "learner-subodh/qwen-finance-distilled-0.6b",
+  "slug": "learner-subodh-qwen-finance-distilled-0-6b",
+  "author": "learner-subodh",
+  "url": "https://huggingface.co/learner-subodh/qwen-finance-distilled-0.6b",
+  "created_at": "2026-11-10T14:01:28.000Z",
+  "updated_at": "2026-11-10T14:01:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "finance",
+    "numerical-reasoning",
+    "table-qa",
+    "distillation",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557700,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of predominantly open-weights large and small language models (LLM and SLM) developed by Alibaba Cloud. Its latest version is Qwen3.8; the 2.4 trillion parameter model was the second largest and ..."
+    },
+    {
+      "title": "Qwen3 Technical Report",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "snippet": "The Strong-to-Weak Distillation pipeline is specifically designed to optimize lightweight models, encompassing 5 dense models (Qwen3-0.6B, 1.7B, 4B, 8B, and 14B) and one MoE model (Qwen3-30B-A3B). This approach enhances model performance while effectively imparting robust mode-switching ..."
+    }
+  ]
+}

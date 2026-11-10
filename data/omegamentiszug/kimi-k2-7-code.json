@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "omegamentiszug/Kimi-K2.7-Code",
+  "slug": "omegamentiszug-kimi-k2-7-code",
+  "author": "omegamentiszug",
+  "url": "https://huggingface.co/omegamentiszug/Kimi-K2.7-Code",
+  "created_at": "2026-11-10T19:05:25.000Z",
+  "updated_at": "2026-11-10T19:05:25.000Z",
+  "license": "modified-mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k25",
+    "feature-extraction",
+    "compressed-tensors",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1026879376368,
+  "parameters_human": "1026.88B",
+  "storage_bytes": 595204651032,
+  "storage_human": "595.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -7,7 +7,7 @@
   "created_at": "2026-08-30T21:47:35.000Z",
   "updated_at": "2026-10-02T09:56:20.000Z",
   "license": "qwen-community-1.0",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [],

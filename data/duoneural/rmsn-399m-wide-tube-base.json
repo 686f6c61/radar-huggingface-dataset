@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/RMSN-399M-Wide-Tube-Base",
+  "slug": "duoneural-rmsn-399m-wide-tube-base",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/RMSN-399M-Wide-Tube-Base",
+  "created_at": "2026-11-10T18:50:11.000Z",
+  "updated_at": "2026-11-10T18:51:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "custom",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "rmsn",
+    "port-hamiltonian",
+    "soliton",
+    "duoneural",
+    "wide-tube",
+    "pretrain",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1562503339,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

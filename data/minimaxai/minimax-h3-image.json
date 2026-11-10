@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "MiniMaxAI/MiniMax-H3-Image",
+  "slug": "minimaxai-minimax-h3-image",
+  "author": "MiniMaxAI",
+  "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+  "created_at": "2026-11-03T06:34:36.000Z",
+  "updated_at": "2026-11-10T15:25:11.000Z",
+  "license": "minimax-h3-image-community-license-agreement",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-image",
+  "library": "minimax-h3",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "minimax-h3",
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "image-to-image",
+    "image-editing",
+    "image-generation",
+    "en",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 311,
+  "downloads_30d": 667,
+  "trending_score": 310,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 204002730228,
+  "storage_human": "204.0 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

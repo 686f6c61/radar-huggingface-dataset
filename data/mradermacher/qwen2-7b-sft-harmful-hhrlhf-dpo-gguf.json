@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2-7B-sft-harmful-hhrlhf-dpo-GGUF",
+  "slug": "mradermacher-qwen2-7b-sft-harmful-hhrlhf-dpo-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2-7B-sft-harmful-hhrlhf-dpo-GGUF",
+  "created_at": "2025-02-21T06:42:38.000Z",
+  "updated_at": "2026-11-10T13:54:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "trl",
+    "dpo",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 97,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146868480,
+  "storage_human": "68.1 GB",
+  "base_model": "AmberYifan/Qwen2-7B-sft-harmful-hhrlhf-dpo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

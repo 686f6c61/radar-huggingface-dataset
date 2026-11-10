@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "YanNoun/OpenSfM",
+  "slug": "yannoun-opensfm",
+  "author": "YanNoun",
+  "url": "https://huggingface.co/YanNoun/OpenSfM",
+  "created_at": "2026-10-07T16:04:49.000Z",
+  "updated_at": "2026-11-10T18:14:40.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "coreml",
+    "opensfm",
+    "photogrammetry",
+    "sam3",
+    "lama",
+    "inpainting",
+    "image-segmentation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3929137037,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

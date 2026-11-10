@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/yejin-korean-8b-v3-base-ONNX",
+  "slug": "liodon-ai-yejin-korean-8b-v3-base-onnx",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/yejin-korean-8b-v3-base-ONNX",
+  "created_at": "2026-11-09T09:59:07.000Z",
+  "updated_at": "2026-11-09T15:49:24.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "qwen3",
+    "onnxruntime",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:cooler8/yejin-korean-8b-v3-base",
+    "base_model:quantized:cooler8/yejin-korean-8b-v3-base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 202,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46100329054,
+  "storage_human": "46.1 GB",
+  "base_model": "cooler8/yejin-korean-8b-v3-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

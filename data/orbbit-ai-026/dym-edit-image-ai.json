@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "orbbit-AI-026/Dym-edit-image-AI",
+  "slug": "orbbit-ai-026-dym-edit-image-ai",
+  "author": "orbbit-AI-026",
+  "url": "https://huggingface.co/orbbit-AI-026/Dym-edit-image-AI",
+  "created_at": "2026-11-10T15:12:52.000Z",
+  "updated_at": "2026-11-10T15:14:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:apache-2.0",
+    "diffusers:QwenImageEditPlusPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 57710671694,
+  "storage_human": "57.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

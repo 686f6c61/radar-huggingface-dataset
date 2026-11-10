@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "owensong/Inflect-Atom-v3",
+  "slug": "owensong-inflect-atom-v3",
+  "author": "owensong",
+  "url": "https://huggingface.co/owensong/Inflect-Atom-v3",
+  "created_at": "2026-11-10T07:42:27.000Z",
+  "updated_at": "2026-11-10T08:51:04.000Z",
+  "license": "inflect-preview-evaluation-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "inflect",
+    "text-to-speech",
+    "english",
+    "multi-speaker",
+    "early-access",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13462625,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

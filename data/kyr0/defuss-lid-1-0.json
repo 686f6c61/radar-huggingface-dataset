@@ -7,7 +7,7 @@
   "created_at": "2026-11-02T08:14:24.000Z",
   "updated_at": "2026-11-02T08:14:31.000Z",
   "license": "cc-by-sa-3.0",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "text-classification",
   "library": "defuss-lid",
   "languages": [

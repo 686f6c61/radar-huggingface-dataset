@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "TheodoreCousin/2-Net-ONNX",
+  "slug": "theodorecousin-2-net-onnx",
+  "author": "TheodoreCousin",
+  "url": "https://huggingface.co/TheodoreCousin/2-Net-ONNX",
+  "created_at": "2026-11-10T15:29:42.000Z",
+  "updated_at": "2026-11-10T15:37:53.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "medical-imaging",
+    "ophthalmology",
+    "fundus",
+    "image-classification",
+    "base_model:TheodoreCousin/2-Net",
+    "base_model:quantized:TheodoreCousin/2-Net",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1647610784,
+  "storage_human": "1.6 GB",
+  "base_model": "TheodoreCousin/2-Net",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

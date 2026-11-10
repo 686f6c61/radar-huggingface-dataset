@@ -7,7 +7,7 @@
   "created_at": "2026-05-16T02:19:07.000Z",
   "updated_at": "2026-08-22T06:09:01.000Z",
   "license": "gemma-terms-meralion-v3-mnsc-sg-odl-v1",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
   "library": "mlx",
   "languages": [

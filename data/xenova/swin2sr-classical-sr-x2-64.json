@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Xenova/swin2SR-classical-sr-x2-64",
+  "slug": "xenova-swin2sr-classical-sr-x2-64",
+  "author": "Xenova",
+  "url": "https://huggingface.co/Xenova/swin2SR-classical-sr-x2-64",
+  "created_at": "2023-11-07T16:01:06.000Z",
+  "updated_at": "2026-11-10T19:22:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "swin2sr",
+    "image-to-image",
+    "base_model:caidas/swin2SR-classical-sr-x2-64",
+    "base_model:quantized:caidas/swin2SR-classical-sr-x2-64",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 7354,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 188387846,
+  "storage_human": "188 MB",
+  "base_model": "caidas/swin2SR-classical-sr-x2-64",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

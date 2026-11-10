@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Elykdez/vexelflux-models",
+  "slug": "elykdez-vexelflux-models",
+  "author": "Elykdez",
+  "url": "https://huggingface.co/Elykdez/vexelflux-models",
+  "created_at": "2026-11-10T03:30:27.000Z",
+  "updated_at": "2026-11-10T05:13:31.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "vexelflux",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4375008352,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

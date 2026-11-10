@@ -7,7 +7,7 @@
   "created_at": "2026-11-04T16:40:02.000Z",
   "updated_at": "2026-11-06T08:05:53.000Z",
   "license": "kimi-k3.1-pro",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
   "library": "transformers",
   "languages": [],
@@ -142,7 +142,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 76,
+  "downloads_30d": 80,
   "trending_score": 0,
   "parameters": 2780110363392,
   "parameters_human": "2780.11B",

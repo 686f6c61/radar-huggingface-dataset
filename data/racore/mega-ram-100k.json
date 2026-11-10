@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "id": "racore/mega-ram-100k",
+  "slug": "racore-mega-ram-100k",
+  "author": "racore",
+  "url": "https://huggingface.co/racore/mega-ram-100k",
+  "created_at": "2026-11-10T13:21:14.000Z",
+  "updated_at": "2026-11-10T13:21:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "megaram",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "megaram",
+    "retrieval-augmented-generation",
+    "rag",
+    "information-retrieval",
+    "extractive-question-answering",
+    "training-free",
+    "weights-space-programming",
+    "tiny-models",
+    "cpu",
+    "multimodal",
+    "ocr",
+    "bm25",
+    "hybrid-retrieval",
+    "citation-grounded",
+    "beir",
+    "crag",
+    "ragbench",
+    "rgb",
+    "question-answering",
+    "en",
+    "ar",
+    "dataset:BeIR/scifact",
+    "dataset:BeIR/nfcorpus",
+    "dataset:galileo-ai/ragbench",
+    "dataset:Quivr/CRAG",
+    "arxiv:2611.09382",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 133386,
+  "storage_human": "133386 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Question Answering",
+      "dataset": "CRAG v4 (50-record sample)",
+      "metric": "Exact Match",
+      "value": 0
+    },
+    {
+      "task": "Question Answering",
+      "dataset": "CRAG v4 (50-record sample)",
+      "metric": "Token F1",
+      "value": 0.0318
+    },
+    {
+      "task": "Question Answering",
+      "dataset": "RAGBench hotpotqa (n=200)",
+      "metric": "Recall@5",
+      "value": 1
+    },
+    {
+      "task": "Question Answering",
+      "dataset": "RAGBench hotpotqa (n=200)",
+      "metric": "nDCG@10",
+      "value": 0.9192
+    },
+    {
+      "task": "Question Answering",
+      "dataset": "RAGBench hotpotqa (n=200)",
+      "metric": "Faithfulness (quoted)",
+      "value": 1
+    },
+    {
+      "task": "Question Answering",
+      "dataset": "RAGBench hotpotqa (n=200)",
+      "metric": "Citation Accuracy",
+      "value": 0.9286
+    },
+    {
+      "task": "Question Answering",
+      "dataset": "RAGBench msmarco (n=200)",
+      "metric": "Recall@5",
+      "value": 0.7024
+    },
+    {
+      "task": "Question Answering",
+      "dataset": "RAGBench msmarco (n=200)",
+      "metric": "nDCG@10",
+      "value": 0.8696
+    },
+    {
+      "task": "Question Answering",
+      "dataset": "RAGBench msmarco (n=200)",
+      "metric": "Faithfulness (quoted)",
+      "value": 1
+    },
+    {
+      "task": "Question Answering",
+      "dataset": "RAGBench msmarco (n=200)",
+      "metric": "Citation Accuracy",
+      "value": 0.701
+    }
+  ],
+  "sources": []
+}

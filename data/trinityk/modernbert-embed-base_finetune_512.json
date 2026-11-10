@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Trinityk/modernbert-embed-base_finetune_512",
+  "slug": "trinityk-modernbert-embed-base_finetune_512",
+  "author": "Trinityk",
+  "url": "https://huggingface.co/Trinityk/modernbert-embed-base_finetune_512",
+  "created_at": "2026-11-10T14:41:59.000Z",
+  "updated_at": "2026-11-10T14:42:00.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:2828",
+    "loss:MultipleNegativesRankingLoss",
+    "en",
+    "arxiv:1908.10084",
+    "arxiv:1705.00652",
+    "base_model:nomic-ai/modernbert-embed-base",
+    "base_model:finetune:nomic-ai/modernbert-embed-base",
+    "license:cc0-1.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149014272,
+  "parameters_human": "149.0M",
+  "storage_bytes": 596070136,
+  "storage_human": "596 MB",
+  "base_model": "nomic-ai/modernbert-embed-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Triplet",
+      "dataset": "dev",
+      "metric": "Cosine Accuracy",
+      "value": 0.9959100484848022
+    },
+    {
+      "task": "Triplet",
+      "dataset": "dev",
+      "metric": "Cosine Accuracy",
+      "value": 0.9938650131225586
+    }
+  ],
+  "sources": []
+}

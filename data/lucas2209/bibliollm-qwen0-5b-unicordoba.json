@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Lucas2209/bibliollm-qwen0.5b-unicordoba",
+  "slug": "lucas2209-bibliollm-qwen0-5b-unicordoba",
+  "author": "Lucas2209",
+  "url": "https://huggingface.co/Lucas2209/bibliollm-qwen0.5b-unicordoba",
+  "created_at": "2026-11-10T15:09:05.000Z",
+  "updated_at": "2026-11-10T15:16:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers.js",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "transformers.js",
+    "gguf",
+    "es",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 397807456,
+  "storage_human": "398 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

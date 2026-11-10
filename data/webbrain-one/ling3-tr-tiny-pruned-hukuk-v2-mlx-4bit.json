@@ -7,7 +7,7 @@
   "created_at": "2026-10-26T03:34:20.000Z",
   "updated_at": "2026-10-26T03:42:48.000Z",
   "license": "proprietary-private",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
   "library": "mlx",
   "languages": [

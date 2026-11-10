@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "HarleyCooper/Qwen3.5-4B-Riggs1890-lexgym-pilot",
+  "slug": "harleycooper-qwen3-5-4b-riggs1890-lexgym-pilot",
+  "author": "HarleyCooper",
+  "url": "https://huggingface.co/HarleyCooper/Qwen3.5-4B-Riggs1890-lexgym-pilot",
+  "created_at": "2026-11-10T14:13:39.000Z",
+  "updated_at": "2026-11-10T14:14:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "dak",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dakota",
+    "low-resource-language",
+    "reinforcement-learning",
+    "tinker",
+    "dak",
+    "en",
+    "dataset:HarleyCooper/riggs1890-lexicon-graph",
+    "dataset:HarleyCooper/riggs1890-lexgym-traces",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 583421792,
+  "storage_human": "583 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

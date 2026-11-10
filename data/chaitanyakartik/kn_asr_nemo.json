@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "chaitanyakartik/kn_asr_nemo",
+  "slug": "chaitanyakartik-kn_asr_nemo",
+  "author": "chaitanyakartik",
+  "url": "https://huggingface.co/chaitanyakartik/kn_asr_nemo",
+  "created_at": "2026-01-20T11:12:12.000Z",
+  "updated_at": "2026-11-10T18:03:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "kn"
+  ],
+  "tags": [
+    "nemo",
+    "asr",
+    "fastconformer",
+    "automatic-speech-recognition",
+    "speech",
+    "kannada",
+    "rnnt",
+    "ctc",
+    "hybrid",
+    "kn",
+    "dataset:ai4bharat/Kathbath",
+    "dataset:ai4bharat/Shrutilipi",
+    "dataset:ARTPARK-IISc/Vaani-transcription-part",
+    "base_model:nvidia/stt_en_fastconformer_hybrid_large_pc",
+    "base_model:finetune:nvidia/stt_en_fastconformer_hybrid_large_pc",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2208177446,
+  "storage_human": "2.2 GB",
+  "base_model": "nvidia/stt_en_fastconformer_hybrid_large_pc",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Kathbath (Kannada, valid split)",
+      "metric": "WER (greedy RNN-T, no LM, unnormalised)",
+      "value": 14.59
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Kathbath (Kannada, valid split)",
+      "metric": "CER (greedy RNN-T, no LM, unnormalised)",
+      "value": 2.86
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Felldude/MiniMaxImage_hdr_diffusers_vae",
+  "slug": "felldude-minimaximage_hdr_diffusers_vae",
+  "author": "Felldude",
+  "url": "https://huggingface.co/Felldude/MiniMaxImage_hdr_diffusers_vae",
+  "created_at": "2026-11-10T18:08:05.000Z",
+  "updated_at": "2026-11-10T18:12:48.000Z",
+  "license": "bigscience-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "base_model:MiniMaxAI/MiniMax-H3-Image",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3-Image",
+    "license:bigscience-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 584228408,
+  "parameters_human": "584.2M",
+  "storage_bytes": 2336973368,
+  "storage_human": "2.3 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3-Image",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

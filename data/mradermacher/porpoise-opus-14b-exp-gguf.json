@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Porpoise-Opus-14B-Exp-GGUF",
+  "slug": "mradermacher-porpoise-opus-14b-exp-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Porpoise-Opus-14B-Exp-GGUF",
+  "created_at": "2025-02-27T15:23:55.000Z",
+  "updated_at": "2026-11-10T17:17:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "trl",
+    "sft",
+    "en",
+    "zh",
+    "base_model:prithivMLmods/Porpoise-Opus-14B-Exp",
+    "base_model:quantized:prithivMLmods/Porpoise-Opus-14B-Exp",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 98,
+  "trending_score": 0,
+  "parameters": 14765947904,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102011147904,
+  "storage_human": "102.0 GB",
+  "base_model": "prithivMLmods/Porpoise-Opus-14B-Exp",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -7,7 +7,7 @@
   "created_at": "2026-09-03T22:36:32.000Z",
   "updated_at": "2026-09-07T01:14:48.000Z",
   "license": "deepseek",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],

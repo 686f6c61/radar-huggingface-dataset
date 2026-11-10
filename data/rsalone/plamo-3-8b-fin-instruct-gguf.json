@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "rSalone/PLaMo-3-8B-Fin-Instruct-GGUF",
+  "slug": "rsalone-plamo-3-8b-fin-instruct-gguf",
+  "author": "rSalone",
+  "url": "https://huggingface.co/rSalone/PLaMo-3-8B-Fin-Instruct-GGUF",
+  "created_at": "2026-11-09T11:32:12.000Z",
+  "updated_at": "2026-11-09T12:03:34.000Z",
+  "license": "plamo-community-license",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "plamo",
+    "finance",
+    "japanese",
+    "llama.cpp",
+    "text-generation",
+    "ja",
+    "base_model:pfnet/plamo-3-8b-fin-instruct",
+    "base_model:quantized:pfnet/plamo-3-8b-fin-instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 91,
+  "trending_score": 0,
+  "parameters": 8531750912,
+  "parameters_human": "8.53B",
+  "storage_bytes": 14349602368,
+  "storage_human": "14.3 GB",
+  "base_model": "pfnet/plamo-3-8b-fin-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

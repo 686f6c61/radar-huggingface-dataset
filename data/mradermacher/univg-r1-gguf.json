@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/UniVG-R1-GGUF",
+  "slug": "mradermacher-univg-r1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/UniVG-R1-GGUF",
+  "created_at": "2025-05-24T23:00:56.000Z",
+  "updated_at": "2026-11-10T16:09:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "Multimodal Large Language Model (MLLM)",
+    "Visual Grounding",
+    "Reinforcement Fine-tuning",
+    "en",
+    "base_model:GD-ML/UniVG-R1",
+    "base_model:quantized:GD-ML/UniVG-R1",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 208,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70220539776,
+  "storage_human": "70.2 GB",
+  "base_model": "GD-ML/UniVG-R1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -7,7 +7,7 @@
   "created_at": "2026-10-27T14:46:42.000Z",
   "updated_at": "2026-10-27T15:06:08.000Z",
   "license": "mixed-mit-bsd3-odcby",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "tabular-classification",
   "library": "tabicl",
   "languages": [

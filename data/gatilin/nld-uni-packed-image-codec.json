@@ -7,7 +7,7 @@
   "created_at": "2026-11-07T12:18:18.000Z",
   "updated_at": "2026-11-07T12:20:29.000Z",
   "license": "nvidia-research-license",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "feature-extraction",
   "library": "pytorch",
   "languages": [],

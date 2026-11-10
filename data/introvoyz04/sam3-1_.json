@@ -7,7 +7,7 @@
   "created_at": "2026-11-07T05:54:55.000Z",
   "updated_at": "2026-11-07T05:54:56.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "mask-generation",
   "library": "checkpoint",
   "languages": [

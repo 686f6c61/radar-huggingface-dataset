@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "namkiett/phowhisper-qwen-asr",
+  "slug": "namkiett-phowhisper-qwen-asr",
+  "author": "namkiett",
+  "url": "https://huggingface.co/namkiett/phowhisper-qwen-asr",
+  "created_at": "2026-11-10T14:15:40.000Z",
+  "updated_at": "2026-11-10T14:45:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "phowhisper_qwen_asr",
+    "speech-recognition",
+    "asr",
+    "speech-llm",
+    "audio",
+    "vietnamese",
+    "qwen",
+    "whisper",
+    "automatic-speech-recognition",
+    "custom_code",
+    "vi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10230400,
+  "parameters_human": "10.2M",
+  "storage_bytes": 52344428,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

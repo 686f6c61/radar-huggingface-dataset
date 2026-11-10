@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/shennong-1.5b-sft-GGUF",
+  "slug": "mradermacher-shennong-1-5b-sft-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/shennong-1.5b-sft-GGUF",
+  "created_at": "2026-11-10T17:07:00.000Z",
+  "updated_at": "2026-11-10T17:18:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "medical",
+    "traditional-medicine",
+    "ethnopharmacology",
+    "qwen2",
+    "lora",
+    "llama.cpp",
+    "en",
+    "zh",
+    "base_model:cptlight/shennong-1.5b-sft",
+    "base_model:adapter:cptlight/shennong-1.5b-sft",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206902912,
+  "storage_human": "14.2 GB",
+  "base_model": "cptlight/shennong-1.5b-sft",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

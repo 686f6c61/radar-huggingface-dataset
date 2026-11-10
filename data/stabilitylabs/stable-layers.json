@@ -7,7 +7,7 @@
   "created_at": "2026-07-19T16:50:11.000Z",
   "updated_at": "2026-07-23T22:11:19.000Z",
   "license": "stabilityai-community",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "image-to-image",
   "library": "peft",
   "languages": [],

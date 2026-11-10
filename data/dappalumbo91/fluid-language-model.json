@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "dappalumbo91/fluid-language-model",
+  "slug": "dappalumbo91-fluid-language-model",
+  "author": "dappalumbo91",
+  "url": "https://huggingface.co/dappalumbo91/fluid-language-model",
+  "created_at": "2026-11-10T14:42:30.000Z",
+  "updated_at": "2026-11-10T14:43:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "fluid",
+    "text-generation",
+    "causal-lm",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41208,
+  "parameters_human": "41208",
+  "storage_bytes": 167760,
+  "storage_human": "167760 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

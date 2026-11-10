@@ -7,7 +7,7 @@
   "created_at": "2026-10-29T14:26:31.000Z",
   "updated_at": "2026-10-29T14:38:12.000Z",
   "license": "meta-llama-3-community-license",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": null,
   "library": "llama.cpp",
   "languages": [],

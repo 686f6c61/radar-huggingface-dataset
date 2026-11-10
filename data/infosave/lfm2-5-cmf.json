@@ -7,7 +7,7 @@
   "created_at": "2026-08-21T14:50:07.000Z",
   "updated_at": "2026-10-22T11:56:47.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "text-generation",
   "library": "cortiq",
   "languages": [

@@ -7,7 +7,7 @@
   "created_at": "2026-09-25T13:47:32.000Z",
   "updated_at": "2026-09-25T13:48:35.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
   "library": "Model Optimizer",
   "languages": [],

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Miko-L3-8B-v2-GGUF",
+  "slug": "mradermacher-miko-l3-8b-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Miko-L3-8B-v2-GGUF",
+  "created_at": "2026-11-10T15:07:48.000Z",
+  "updated_at": "2026-11-10T15:26:46.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "conversational",
+    "llama",
+    "not-for-all-audiences",
+    "text-generation-inference",
+    "en",
+    "dataset:Xilabs/PIPPA-alpaca",
+    "dataset:Heralax/Augmental-Dataset",
+    "dataset:PJMixers/lemonilia_LimaRP-Only-NonSus-Simple-CustomShareGPT",
+    "dataset:Gryphe/Sonnet3.5-Charcard-Roleplay",
+    "dataset:anthracite-org/stheno-filtered-v1.1",
+    "base_model:ricer0ll/Miko-L3-8B-v2",
+    "base_model:quantized:ricer0ll/Miko-L3-8B-v2",
+    "license:llama3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 55006885184,
+  "storage_human": "55.0 GB",
+  "base_model": "ricer0ll/Miko-L3-8B-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

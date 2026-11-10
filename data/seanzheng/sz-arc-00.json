@@ -7,7 +7,7 @@
   "created_at": "2026-05-02T05:50:44.000Z",
   "updated_at": "2026-08-20T00:36:34.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": "diffusers",
   "languages": [],

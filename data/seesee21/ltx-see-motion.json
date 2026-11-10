@@ -7,7 +7,7 @@
   "created_at": "2026-11-08T08:48:24.000Z",
   "updated_at": "2026-11-08T19:48:38.000Z",
   "license": "ltx-2-community-license",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "image-to-video",
   "library": "ltx",
   "languages": [

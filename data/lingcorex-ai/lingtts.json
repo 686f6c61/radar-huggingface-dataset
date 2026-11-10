@@ -7,7 +7,7 @@
   "created_at": "2026-11-04T07:20:40.000Z",
   "updated_at": "2026-11-04T07:25:07.000Z",
   "license": "lingtts-community-license-1-0",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-to-speech",
   "library": null,
   "languages": [

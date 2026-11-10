@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "znaat/parrotflow-term-judge",
+  "slug": "znaat-parrotflow-term-judge",
+  "author": "znaat",
+  "url": "https://huggingface.co/znaat/parrotflow-term-judge",
+  "created_at": "2026-11-10T13:59:59.000Z",
+  "updated_at": "2026-11-10T14:00:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "lora",
+    "parrotflow",
+    "base_model:bluevisor/Qwen3-1.7B-Base-4bit-mlx",
+    "base_model:adapter:bluevisor/Qwen3-1.7B-Base-4bit-mlx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19947012,
+  "storage_human": "20 MB",
+  "base_model": "bluevisor/Qwen3-1.7B-Base-4bit-mlx",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

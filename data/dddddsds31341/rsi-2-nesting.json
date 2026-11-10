@@ -7,7 +7,7 @@
   "created_at": "2026-11-06T08:03:34.000Z",
   "updated_at": "2026-11-06T08:49:33.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "robotics",
   "library": "pytorch",
   "languages": [],

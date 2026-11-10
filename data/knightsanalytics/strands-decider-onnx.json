@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "KnightsAnalytics/strands-decider-onnx",
+  "slug": "knightsanalytics-strands-decider-onnx",
+  "author": "KnightsAnalytics",
+  "url": "https://huggingface.co/KnightsAnalytics/strands-decider-onnx",
+  "created_at": "2026-11-10T15:11:41.000Z",
+  "updated_at": "2026-11-10T15:29:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "int4",
+    "decision-model",
+    "hugot",
+    "text-classification",
+    "base_model:StrandsAgents/strands-decider-E2B-gemma4-v1-2610",
+    "base_model:quantized:StrandsAgents/strands-decider-E2B-gemma4-v1-2610",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2978475415,
+  "storage_human": "3.0 GB",
+  "base_model": "StrandsAgents/strands-decider-E2B-gemma4-v1-2610",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

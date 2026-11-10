@@ -7,7 +7,7 @@
   "created_at": "2026-11-05T07:06:09.000Z",
   "updated_at": "2026-11-05T07:07:08.000Z",
   "license": "nvidia-internal-scientific-research-and-development-model-license",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": "kimodo",
   "languages": [],

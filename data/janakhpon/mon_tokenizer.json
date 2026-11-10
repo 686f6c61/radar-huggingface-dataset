@@ -7,7 +7,7 @@
   "created_at": "2025-08-30T13:07:40.000Z",
   "updated_at": "2026-08-17T17:40:12.000Z",
   "license": "mit-code-corpus-derived-artifact",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": "tokenizers",
   "languages": [

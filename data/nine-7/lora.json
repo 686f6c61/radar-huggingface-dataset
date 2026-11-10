@@ -7,7 +7,7 @@
   "created_at": "2026-07-06T21:57:47.000Z",
   "updated_at": "2026-08-29T18:19:21.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "text-to-image",
   "library": "nine7",
   "languages": [

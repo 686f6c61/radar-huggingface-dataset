@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "snupilab/Rep4Act-Asymmetric-MMDiT-4B-RoboTwin2-Clean-10k-PT100k-FM-ID-FDq-seed0",
+  "slug": "snupilab-rep4act-asymmetric-mmdit-4b-robotwin2-clean-10k-pt100k-fm-id-fdq-seed0",
+  "author": "snupilab",
+  "url": "https://huggingface.co/snupilab/Rep4Act-Asymmetric-MMDiT-4B-RoboTwin2-Clean-10k-PT100k-FM-ID-FDq-seed0",
+  "created_at": "2026-11-10T12:54:55.000Z",
+  "updated_at": "2026-11-10T12:56:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "rep4act",
+    "actiondit",
+    "robotwin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5964075169,
+  "parameters_human": "5.96B",
+  "storage_bytes": 20180689289,
+  "storage_human": "20.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -7,7 +7,7 @@
   "created_at": "2026-04-19T15:27:14.000Z",
   "updated_at": "2026-09-28T21:59:16.000Z",
   "license": "llama-3.1-community-license",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
   "library": "gguf",
   "languages": [

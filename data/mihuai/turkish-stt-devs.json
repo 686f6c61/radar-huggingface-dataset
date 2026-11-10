@@ -7,7 +7,7 @@
   "created_at": "2026-11-03T02:16:51.000Z",
   "updated_at": "2026-11-03T03:34:38.000Z",
   "license": "mihu-community-license",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "automatic-speech-recognition",
   "library": null,
   "languages": [

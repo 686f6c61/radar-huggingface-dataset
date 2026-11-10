@@ -7,7 +7,7 @@
   "created_at": "2026-10-05T19:57:01.000Z",
   "updated_at": "2026-10-05T20:11:16.000Z",
   "license": "cc-by-sa-3.0",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "text-to-speech",
   "library": "piper",
   "languages": [

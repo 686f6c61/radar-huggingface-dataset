@@ -7,7 +7,7 @@
   "created_at": "2024-10-29T10:27:32.000Z",
   "updated_at": "2024-10-31T08:18:43.000Z",
   "license": "stabilityai-ai-community",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-to-image",
   "library": "diffusers",
   "languages": [

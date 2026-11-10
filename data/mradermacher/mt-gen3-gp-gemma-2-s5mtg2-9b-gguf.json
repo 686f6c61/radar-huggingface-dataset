@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MT-Gen3-GP-gemma-2-S5MTg2-9B-GGUF",
+  "slug": "mradermacher-mt-gen3-gp-gemma-2-s5mtg2-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MT-Gen3-GP-gemma-2-S5MTg2-9B-GGUF",
+  "created_at": "2024-11-29T07:42:57.000Z",
+  "updated_at": "2026-11-10T16:10:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:zelk12/MT-Gen3-GP-gemma-2-S5MTg2-9B",
+    "base_model:quantized:zelk12/MT-Gen3-GP-gemma-2-S5MTg2-9B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 181,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 88981463008,
+  "storage_human": "89.0 GB",
+  "base_model": "zelk12/MT-Gen3-GP-gemma-2-S5MTg2-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

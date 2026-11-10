@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "orbbit-AI-026/Dev-Dynamic-AI",
+  "slug": "orbbit-ai-026-dev-dynamic-ai",
+  "author": "orbbit-AI-026",
+  "url": "https://huggingface.co/orbbit-AI-026/Dev-Dynamic-AI",
+  "created_at": "2026-11-10T13:56:07.000Z",
+  "updated_at": "2026-11-10T13:57:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

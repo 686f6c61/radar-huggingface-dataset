@@ -7,7 +7,7 @@
   "created_at": "2026-09-03T20:16:21.000Z",
   "updated_at": "2026-11-01T10:11:54.000Z",
   "license": "llama-3.3-and-gemma-terms",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "text-generation",
   "library": "llima",
   "languages": [

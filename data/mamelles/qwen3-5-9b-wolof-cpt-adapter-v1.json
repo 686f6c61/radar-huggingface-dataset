@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "mamelles/Qwen3.5-9B-Wolof-CPT-adapter-v1",
+  "slug": "mamelles-qwen3-5-9b-wolof-cpt-adapter-v1",
+  "author": "mamelles",
+  "url": "https://huggingface.co/mamelles/Qwen3.5-9B-Wolof-CPT-adapter-v1",
+  "created_at": "2026-11-10T15:52:36.000Z",
+  "updated_at": "2026-11-10T15:52:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "wo"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "wolof",
+    "qwen3.5",
+    "galsenai",
+    "text-generation",
+    "conversational",
+    "wo",
+    "base_model:Tonic/Qwen3.5-9B-Wolof-ext-init-v1",
+    "base_model:adapter:Tonic/Qwen3.5-9B-Wolof-ext-init-v1",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12643108706,
+  "storage_human": "12.6 GB",
+  "base_model": "Tonic/Qwen3.5-9B-Wolof-ext-init-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Wolof causal LM",
+      "dataset": "Ortho-filtered Wolof NTP test",
+      "metric": "Bits Per Byte (Wolof CLM test)",
+      "value": 0.8478
+    },
+    {
+      "task": "Wolof causal LM",
+      "dataset": "Ortho-filtered Wolof NTP test",
+      "metric": "BLEU (continuation)",
+      "value": 8.33
+    },
+    {
+      "task": "Wolof causal LM",
+      "dataset": "Ortho-filtered Wolof NTP test",
+      "metric": "chrF (continuation)",
+      "value": 29.29
+    },
+    {
+      "task": "Wolof causal LM",
+      "dataset": "Ortho-filtered Wolof NTP test",
+      "metric": "Perplexity (same-tokenizer)",
+      "value": 4.84
+    },
+    {
+      "task": "Wolof causal LM",
+      "dataset": "Ortho-filtered Wolof NTP test",
+      "metric": "Stock base BPB (reference)",
+      "value": 1.8371
+    },
+    {
+      "task": "Wolof causal LM",
+      "dataset": "Ortho-filtered Wolof NTP test",
+      "metric": "Stock base BLEU (reference)",
+      "value": 3.55
+    },
+    {
+      "task": "Wolof causal LM",
+      "dataset": "Ortho-filtered Wolof NTP test",
+      "metric": "Stock base chrF (reference)",
+      "value": 21.55
+    },
+    {
+      "task": "Wolof causal LM",
+      "dataset": "Ortho-filtered Wolof NTP test",
+      "metric": "CPT best-pool eval_loss",
+      "value": 1.750225305557251
+    }
+  ],
+  "sources": []
+}

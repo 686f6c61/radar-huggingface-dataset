@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "queuedog/Comet_60B_A12B_BF16-oQ4e-mtp",
+  "slug": "queuedog-comet_60b_a12b_bf16-oq4e-mtp",
+  "author": "queuedog",
+  "url": "https://huggingface.co/queuedog/Comet_60B_A12B_BF16-oQ4e-mtp",
+  "created_at": "2026-11-10T17:41:22.000Z",
+  "updated_at": "2026-11-10T17:46:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemotron_h_omni",
+    "oq",
+    "quantized",
+    "custom_code",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 59728962566,
+  "parameters_human": "59.73B",
+  "storage_bytes": 36831603131,
+  "storage_human": "36.8 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

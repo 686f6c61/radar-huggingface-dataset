@@ -7,7 +7,7 @@
   "created_at": "2026-08-28T08:55:44.000Z",
   "updated_at": "2026-08-28T09:13:52.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "image-segmentation",
   "library": null,
   "languages": [],

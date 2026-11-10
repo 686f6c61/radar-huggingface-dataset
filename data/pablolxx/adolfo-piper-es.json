@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "PabloLXX/Adolfo-piper-es",
+  "slug": "pablolxx-adolfo-piper-es",
+  "author": "PabloLXX",
+  "url": "https://huggingface.co/PabloLXX/Adolfo-piper-es",
+  "created_at": "2026-11-10T20:01:41.000Z",
+  "updated_at": "2026-11-10T20:06:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63511038,
+  "storage_human": "64 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

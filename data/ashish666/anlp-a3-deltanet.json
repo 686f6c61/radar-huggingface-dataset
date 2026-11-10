@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Ashish666/anlp-a3-deltanet",
+  "slug": "ashish666-anlp-a3-deltanet",
+  "author": "Ashish666",
+  "url": "https://huggingface.co/Ashish666/anlp-a3-deltanet",
+  "created_at": "2026-11-10T18:50:24.000Z",
+  "updated_at": "2026-11-10T18:50:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "cipher",
+    "mamba",
+    "deltanet",
+    "anlp",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4726144,
+  "parameters_human": "4.7M",
+  "storage_bytes": 18912808,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

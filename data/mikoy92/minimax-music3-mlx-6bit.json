@@ -7,7 +7,7 @@
   "created_at": "2026-08-14T06:01:18.000Z",
   "updated_at": "2026-08-15T08:12:18.000Z",
   "license": "minimax-music3-community",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-to-audio",
   "library": "mlx",
   "languages": [],

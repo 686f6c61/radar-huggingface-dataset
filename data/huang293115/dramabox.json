@@ -7,7 +7,7 @@
   "created_at": "2026-08-21T21:22:34.000Z",
   "updated_at": "2026-08-21T21:22:35.000Z",
   "license": "ltx-2-community",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-to-speech",
   "library": "ltx-audio-tts",
   "languages": [

@@ -7,7 +7,7 @@
   "created_at": "2026-07-11T17:27:09.000Z",
   "updated_at": "2026-11-03T19:14:10.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": "pyaging",
   "languages": [],

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "BasitNomani/clip-vision-onnx",
+  "slug": "basitnomani-clip-vision-onnx",
+  "author": "BasitNomani",
+  "url": "https://huggingface.co/BasitNomani/clip-vision-onnx",
+  "created_at": "2026-11-10T12:58:42.000Z",
+  "updated_at": "2026-11-10T13:15:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 351566059,
+  "storage_human": "352 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

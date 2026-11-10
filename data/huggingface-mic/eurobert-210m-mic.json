@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/EuroBERT-210m-mic",
+  "slug": "huggingface-mic-eurobert-210m-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/EuroBERT-210m-mic",
+  "created_at": "2026-10-29T20:18:35.000Z",
+  "updated_at": "2026-11-10T15:07:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "eurobert",
+    "mic",
+    "test-artifact",
+    "custom_code",
+    "base_model:EuroBERT/EuroBERT-210m",
+    "base_model:finetune:EuroBERT/EuroBERT-210m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1083,
+  "trending_score": 0,
+  "parameters": 16499008,
+  "parameters_human": "16.5M",
+  "storage_bytes": 83208507,
+  "storage_human": "83 MB",
+  "base_model": "EuroBERT/EuroBERT-210m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "orbbit-AI-026/Dynamic-search-2-AI",
+  "slug": "orbbit-ai-026-dynamic-search-2-ai",
+  "author": "orbbit-AI-026",
+  "url": "https://huggingface.co/orbbit-AI-026/Dynamic-search-2-AI",
+  "created_at": "2026-11-10T15:08:18.000Z",
+  "updated_at": "2026-11-10T15:09:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8188548096,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16388564926,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

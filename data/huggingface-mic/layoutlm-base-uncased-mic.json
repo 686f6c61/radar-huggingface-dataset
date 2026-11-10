@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/layoutlm-base-uncased-mic",
+  "slug": "huggingface-mic-layoutlm-base-uncased-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/layoutlm-base-uncased-mic",
+  "created_at": "2026-10-29T20:52:33.000Z",
+  "updated_at": "2026-11-10T15:30:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "layoutlm",
+    "mic",
+    "test-artifact",
+    "base_model:microsoft/layoutlm-base-uncased",
+    "base_model:finetune:microsoft/layoutlm-base-uncased",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1086,
+  "trending_score": 0,
+  "parameters": 2319680,
+  "parameters_human": "2.3M",
+  "storage_bytes": 9283656,
+  "storage_human": "9 MB",
+  "base_model": "microsoft/layoutlm-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

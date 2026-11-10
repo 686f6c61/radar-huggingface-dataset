@@ -7,7 +7,7 @@
   "created_at": "2026-08-15T01:26:23.000Z",
   "updated_at": "2026-08-15T14:52:34.000Z",
   "license": "qwen3.8-max",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "text-generation",
   "library": "gguf",
   "languages": [

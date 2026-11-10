@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/OLMo-2-0425-1B-mic",
+  "slug": "huggingface-mic-olmo-2-0425-1b-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/OLMo-2-0425-1B-mic",
+  "created_at": "2026-10-29T20:49:13.000Z",
+  "updated_at": "2026-11-10T15:22:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo2",
+    "mic",
+    "test-artifact",
+    "base_model:allenai/OLMo-2-0425-1B",
+    "base_model:finetune:allenai/OLMo-2-0425-1B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1179,
+  "trending_score": 0,
+  "parameters": 12927552,
+  "parameters_human": "12.9M",
+  "storage_bytes": 51712888,
+  "storage_human": "52 MB",
+  "base_model": "allenai/OLMo-2-0425-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

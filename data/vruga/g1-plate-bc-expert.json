@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "vruga/g1-plate-bc-expert",
+  "slug": "vruga-g1-plate-bc-expert",
+  "author": "vruga",
+  "url": "https://huggingface.co/vruga/g1-plate-bc-expert",
+  "created_at": "2026-11-10T14:29:24.000Z",
+  "updated_at": "2026-11-10T14:39:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "imitation-learning",
+    "bigym",
+    "unitree-g1",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57474452,
+  "storage_human": "57 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "G1 plate transfer (BiGym2 move_plate, balanced-slot protocol)",
+      "dataset": "Public seeds 7,310,000+ (30 trials)",
+      "metric": "success rate (%)",
+      "value": 90
+    },
+    {
+      "task": "G1 plate transfer (BiGym2 move_plate, balanced-slot protocol)",
+      "dataset": "Seeds 7,320,000+ (60 trials)",
+      "metric": "success rate (%)",
+      "value": 98.3
+    },
+    {
+      "task": "G1 plate transfer (BiGym2 move_plate, balanced-slot protocol)",
+      "dataset": "Seeds 7,330,000+ (60 trials)",
+      "metric": "success rate (%)",
+      "value": 95
+    },
+    {
+      "task": "G1 plate transfer (BiGym2 move_plate, balanced-slot protocol)",
+      "dataset": "Seeds 7,340,000+ (60 trials)",
+      "metric": "success rate (%)",
+      "value": 98.3
+    },
+    {
+      "task": "G1 plate transfer (BiGym2 move_plate, balanced-slot protocol)",
+      "dataset": "Seeds 7,350,000+ (60 trials)",
+      "metric": "success rate (%)",
+      "value": 95
+    }
+  ],
+  "sources": []
+}

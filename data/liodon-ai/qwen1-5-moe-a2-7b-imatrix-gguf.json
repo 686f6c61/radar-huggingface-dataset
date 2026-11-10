@@ -7,7 +7,7 @@
   "created_at": "2026-08-29T07:57:55.000Z",
   "updated_at": "2026-08-29T11:35:06.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "text-generation",
   "library": "gguf",
   "languages": [],

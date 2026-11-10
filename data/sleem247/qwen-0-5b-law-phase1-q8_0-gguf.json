@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Sleem247/qwen-0.5b-law-phase1-Q8_0-GGUF",
+  "slug": "sleem247-qwen-0-5b-law-phase1-q8_0-gguf",
+  "author": "Sleem247",
+  "url": "https://huggingface.co/Sleem247/qwen-0.5b-law-phase1-Q8_0-GGUF",
+  "created_at": "2026-11-10T19:45:15.000Z",
+  "updated_at": "2026-11-10T19:45:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "legal",
+    "company-law",
+    "qwen2.5",
+    "continued-pretraining",
+    "experimental",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "base_model:rzeraat/qwen-0.5b-law-phase1",
+    "base_model:quantized:rzeraat/qwen-0.5b-law-phase1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 531065632,
+  "storage_human": "531 MB",
+  "base_model": "rzeraat/qwen-0.5b-law-phase1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

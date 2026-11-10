@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "kabachuha/GLM-5.3-Flash-control-vectors",
+  "slug": "kabachuha-glm-5-3-flash-control-vectors",
+  "author": "kabachuha",
+  "url": "https://huggingface.co/kabachuha/GLM-5.3-Flash-control-vectors",
+  "created_at": "2026-11-10T16:09:24.000Z",
+  "updated_at": "2026-11-10T16:10:38.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "control-vector",
+    "creative-writing",
+    "roleplay",
+    "activation-steering",
+    "text-generation",
+    "en",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:adapter:zai-org/GLM-5.3-Flash",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 180224,
+  "parameters_human": "180224",
+  "storage_bytes": 10795872,
+  "storage_human": "11 MB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -7,7 +7,7 @@
   "created_at": "2026-10-03T15:11:05.000Z",
   "updated_at": "2026-10-03T15:11:28.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": "pytorch",
   "languages": [],

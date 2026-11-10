@@ -7,7 +7,7 @@
   "created_at": "2026-08-10T09:14:10.000Z",
   "updated_at": "2026-08-11T00:31:20.000Z",
   "license": "kimi-k3",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "text-generation",
   "library": null,
   "languages": [

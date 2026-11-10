@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/UnifiedReward-Think-qwen-7b-GGUF",
+  "slug": "mradermacher-unifiedreward-think-qwen-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/UnifiedReward-Think-qwen-7b-GGUF",
+  "created_at": "2025-06-04T08:55:44.000Z",
+  "updated_at": "2026-11-10T16:09:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:CodeGoat24/HPD",
+    "dataset:CodeGoat24/OIP",
+    "dataset:CodeGoat24/EvalMuse",
+    "dataset:CodeGoat24/ShareGPTVideo-DPO",
+    "dataset:CodeGoat24/LLaVA-Critic-113k",
+    "dataset:CodeGoat24/VideoDPO",
+    "dataset:CodeGoat24/Text-2-Video-Human-Preferences",
+    "dataset:CodeGoat24/OpenAI-4o_t2i_human_preference",
+    "dataset:CodeGoat24/ImageGen_Reward_Cold_Start",
+    "base_model:CodeGoat24/UnifiedReward-Think-qwen-7b",
+    "base_model:quantized:CodeGoat24/UnifiedReward-Think-qwen-7b",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 223,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70354185984,
+  "storage_human": "70.4 GB",
+  "base_model": "CodeGoat24/UnifiedReward-Think-qwen-7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

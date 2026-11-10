@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ashbash/Ripple-65B-Preview-DFlash2-GGUF",
+  "slug": "ashbash-ripple-65b-preview-dflash2-gguf",
+  "author": "ashbash",
+  "url": "https://huggingface.co/ashbash/Ripple-65B-Preview-DFlash2-GGUF",
+  "created_at": "2026-11-06T15:10:38.000Z",
+  "updated_at": "2026-11-06T15:47:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "dflash2",
+    "speculative-decoding",
+    "draft-model",
+    "base_model:ricursiveAI/Ripple-65B-Preview-DFlash2",
+    "base_model:quantized:ricursiveAI/Ripple-65B-Preview-DFlash2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 617,
+  "trending_score": 0,
+  "parameters": 4037752064,
+  "parameters_human": "4.04B",
+  "storage_bytes": 8958701344,
+  "storage_human": "9.0 GB",
+  "base_model": "ricursiveAI/Ripple-65B-Preview-DFlash2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

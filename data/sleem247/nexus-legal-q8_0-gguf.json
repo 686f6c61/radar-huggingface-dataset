@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Sleem247/NEXUS-Legal-Q8_0-GGUF",
+  "slug": "sleem247-nexus-legal-q8_0-gguf",
+  "author": "Sleem247",
+  "url": "https://huggingface.co/Sleem247/NEXUS-Legal-Q8_0-GGUF",
+  "created_at": "2026-11-10T16:32:01.000Z",
+  "updated_at": "2026-11-10T16:32:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "1.5b",
+    "domain-specialist",
+    "fableforge",
+    "legal",
+    "nexus",
+    "no-refusals",
+    "text-generation",
+    "uncensored",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "base_model:fableforge-ai/NEXUS-Legal",
+    "base_model:quantized:fableforge-ai/NEXUS-Legal",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1646570208,
+  "storage_human": "1.6 GB",
+  "base_model": "fableforge-ai/NEXUS-Legal",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

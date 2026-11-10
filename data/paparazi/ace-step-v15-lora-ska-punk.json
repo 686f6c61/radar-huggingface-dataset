@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "PapaRazi/ace-step-v15-Lora-ska-punk",
+  "slug": "paparazi-ace-step-v15-lora-ska-punk",
+  "author": "PapaRazi",
+  "url": "https://huggingface.co/PapaRazi/ace-step-v15-Lora-ska-punk",
+  "created_at": "2026-11-10T15:56:22.000Z",
+  "updated_at": "2026-11-10T16:11:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970649990,
+  "storage_human": "971 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

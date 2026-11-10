@@ -7,7 +7,7 @@
   "created_at": "2026-10-30T20:20:16.000Z",
   "updated_at": "2026-11-03T06:56:48.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
   "library": "onnxruntime",
   "languages": [

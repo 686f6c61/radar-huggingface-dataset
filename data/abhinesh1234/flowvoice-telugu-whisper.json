@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Abhinesh1234/flowvoice-telugu-whisper",
+  "slug": "abhinesh1234-flowvoice-telugu-whisper",
+  "author": "Abhinesh1234",
+  "url": "https://huggingface.co/Abhinesh1234/flowvoice-telugu-whisper",
+  "created_at": "2026-11-10T15:33:30.000Z",
+  "updated_at": "2026-11-10T15:33:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "te"
+  ],
+  "tags": [
+    "whisper",
+    "whisper.cpp",
+    "ggml",
+    "telugu",
+    "automatic-speech-recognition",
+    "te",
+    "base_model:vasista22/whisper-telugu-medium",
+    "base_model:finetune:vasista22/whisper-telugu-medium",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 539212467,
+  "storage_human": "539 MB",
+  "base_model": "vasista22/whisper-telugu-medium",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "MaksimSun/chiron-gguf",
+  "slug": "maksimsun-chiron-gguf",
+  "author": "MaksimSun",
+  "url": "https://huggingface.co/MaksimSun/chiron-gguf",
+  "created_at": "2026-11-10T19:55:47.000Z",
+  "updated_at": "2026-11-10T19:56:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3",
+    "lora",
+    "health-coach",
+    "ru",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1036151488,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

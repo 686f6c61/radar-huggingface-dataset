@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Mistral-7B-Instruct-v0.2-mic",
+  "slug": "huggingface-mic-mistral-7b-instruct-v0-2-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Mistral-7B-Instruct-v0.2-mic",
+  "created_at": "2026-10-29T15:26:36.000Z",
+  "updated_at": "2026-11-10T14:01:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "mic",
+    "test-artifact",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1120,
+  "trending_score": 0,
+  "parameters": 8438400,
+  "parameters_human": "8.4M",
+  "storage_bytes": 25714827,
+  "storage_human": "26 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

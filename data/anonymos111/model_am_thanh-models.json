@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "anonymos111/Model_Am_Thanh-models",
+  "slug": "anonymos111-model_am_thanh-models",
+  "author": "anonymos111",
+  "url": "https://huggingface.co/anonymos111/Model_Am_Thanh-models",
+  "created_at": "2026-11-10T17:01:06.000Z",
+  "updated_at": "2026-11-10T17:40:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "audio",
+    "schwa",
+    "keyword-spotting",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11075084024,
+  "storage_human": "11.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

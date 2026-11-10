@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Laghu-Base-GGUF",
+  "slug": "mradermacher-laghu-base-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Laghu-Base-GGUF",
+  "created_at": "2026-11-10T14:13:32.000Z",
+  "updated_at": "2026-11-10T14:14:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "udgamlabs",
+    "small-language-model",
+    "trained-from-scratch",
+    "research-release",
+    "base-model",
+    "gemma4",
+    "en",
+    "base_model:udgamlabs/Laghu-Base",
+    "base_model:quantized:udgamlabs/Laghu-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 151792732,
+  "parameters_human": "151.8M",
+  "storage_bytes": 1572756480,
+  "storage_human": "1.6 GB",
+  "base_model": "udgamlabs/Laghu-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

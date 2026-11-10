@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "f3nc3r/Huihui-Qwen3.5-4B-ab_miniQuant",
+  "slug": "f3nc3r-huihui-qwen3-5-4b-ab_miniquant",
+  "author": "f3nc3r",
+  "url": "https://huggingface.co/f3nc3r/Huihui-Qwen3.5-4B-ab_miniQuant",
+  "created_at": "2026-11-10T13:24:53.000Z",
+  "updated_at": "2026-11-10T14:04:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantization",
+    "sub-2.5-bpw",
+    "imatrix",
+    "sqmp",
+    "qwen35",
+    "en",
+    "base_model:huihui-ai/Huihui-Qwen3.5-4B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.5-4B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 1417438368,
+  "storage_human": "1.4 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.5-4B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

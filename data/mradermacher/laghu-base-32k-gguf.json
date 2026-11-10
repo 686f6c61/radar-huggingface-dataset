@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Laghu-Base-32K-GGUF",
+  "slug": "mradermacher-laghu-base-32k-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Laghu-Base-32K-GGUF",
+  "created_at": "2026-11-10T14:14:26.000Z",
+  "updated_at": "2026-11-10T14:15:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "udgamlabs",
+    "small-language-model",
+    "trained-from-scratch",
+    "research-release",
+    "base-model",
+    "long-context",
+    "gemma4",
+    "en",
+    "base_model:udgamlabs/Laghu-Base-32K",
+    "base_model:quantized:udgamlabs/Laghu-Base-32K",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 151792732,
+  "parameters_human": "151.8M",
+  "storage_bytes": 1572761088,
+  "storage_human": "1.6 GB",
+  "base_model": "udgamlabs/Laghu-Base-32K",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "VaidhyaMegha/Shoonya",
+  "slug": "vaidhyamegha-shoonya",
+  "author": "VaidhyaMegha",
+  "url": "https://huggingface.co/VaidhyaMegha/Shoonya",
+  "created_at": "2025-01-31T15:22:08.000Z",
+  "updated_at": "2026-11-10T13:05:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "shoonya",
+    "code-generation",
+    "python",
+    "rust",
+    "gqa",
+    "rope",
+    "swiglu",
+    "moe",
+    "mamba",
+    "mechanistic-telemetry",
+    "text-generation",
+    "en",
+    "code",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 404047867,
+  "storage_human": "404 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Code Generation (Execution-Guided Sandbox)",
+      "dataset": "Shoonya Execution-Guided Python & Rust Suite",
+      "metric": "pass@1",
+      "value": 65.62
+    },
+    {
+      "task": "Code Generation (Execution-Guided Sandbox)",
+      "dataset": "Shoonya Execution-Guided Python & Rust Suite",
+      "metric": "pass@2",
+      "value": 79.17
+    },
+    {
+      "task": "Code Generation (Execution-Guided Sandbox)",
+      "dataset": "Shoonya Execution-Guided Python & Rust Suite",
+      "metric": "pass^2",
+      "value": 55.47
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "aladewealth/ohun-yoruba",
+  "slug": "aladewealth-ohun-yoruba",
+  "author": "aladewealth",
+  "url": "https://huggingface.co/aladewealth/ohun-yoruba",
+  "created_at": "2026-11-10T18:29:28.000Z",
+  "updated_at": "2026-11-10T18:53:24.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "yo"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "yoruba",
+    "piper",
+    "vits",
+    "african-languages",
+    "yo",
+    "dataset:openslr/86",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -7,7 +7,7 @@
   "created_at": "2026-10-30T13:12:40.000Z",
   "updated_at": "2026-10-30T13:12:56.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "tabular-classification",
   "library": "sklearn",
   "languages": [],

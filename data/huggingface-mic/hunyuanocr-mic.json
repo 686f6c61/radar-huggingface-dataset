@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/HunyuanOCR-mic",
+  "slug": "huggingface-mic-hunyuanocr-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/HunyuanOCR-mic",
+  "created_at": "2026-10-29T20:27:18.000Z",
+  "updated_at": "2026-11-10T15:17:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hunyuan_vl",
+    "mic",
+    "test-artifact",
+    "base_model:tencent/HunyuanOCR",
+    "base_model:finetune:tencent/HunyuanOCR",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1111,
+  "trending_score": 0,
+  "parameters": 9054208,
+  "parameters_human": "9.1M",
+  "storage_bytes": 18115880,
+  "storage_human": "18 MB",
+  "base_model": "tencent/HunyuanOCR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

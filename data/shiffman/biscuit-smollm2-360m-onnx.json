@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "shiffman/biscuit-smollm2-360m-ONNX",
+  "slug": "shiffman-biscuit-smollm2-360m-onnx",
+  "author": "shiffman",
+  "url": "https://huggingface.co/shiffman/biscuit-smollm2-360m-ONNX",
+  "created_at": "2026-11-10T17:16:03.000Z",
+  "updated_at": "2026-11-10T17:16:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "llama",
+    "text-generation",
+    "unsloth",
+    "transformers",
+    "mlx",
+    "en",
+    "base_model:shiffman/biscuit-smollm2-360m",
+    "base_model:quantized:shiffman/biscuit-smollm2-360m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4389928261,
+  "storage_human": "4.4 GB",
+  "base_model": "shiffman/biscuit-smollm2-360m",
+  "formats": [
+    "mlx",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

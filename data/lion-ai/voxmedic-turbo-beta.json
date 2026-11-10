@@ -7,7 +7,7 @@
   "created_at": "2026-04-16T11:26:56.000Z",
   "updated_at": "2026-11-05T14:14:57.000Z",
   "license": "medalion-eskulap-asr-community-license-v1.0",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "automatic-speech-recognition",
   "library": null,
   "languages": [

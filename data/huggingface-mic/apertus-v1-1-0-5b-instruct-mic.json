@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Apertus-v1.1-0.5B-Instruct-mic",
+  "slug": "huggingface-mic-apertus-v1-1-0-5b-instruct-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Apertus-v1.1-0.5B-Instruct-mic",
+  "created_at": "2026-10-29T21:18:39.000Z",
+  "updated_at": "2026-11-10T15:39:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "apertus",
+    "mic",
+    "test-artifact",
+    "base_model:swiss-ai/Apertus-v1.1-0.5B-Instruct",
+    "base_model:finetune:swiss-ai/Apertus-v1.1-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1095,
+  "trending_score": 0,
+  "parameters": 8446340,
+  "parameters_human": "8.4M",
+  "storage_bytes": 33974216,
+  "storage_human": "34 MB",
+  "base_model": "swiss-ai/Apertus-v1.1-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

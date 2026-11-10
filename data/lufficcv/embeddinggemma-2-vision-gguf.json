@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "lufficcv/embeddinggemma-2-vision-GGUF",
+  "slug": "lufficcv-embeddinggemma-2-vision-gguf",
+  "author": "lufficcv",
+  "url": "https://huggingface.co/lufficcv/embeddinggemma-2-vision-GGUF",
+  "created_at": "2026-11-10T18:36:39.000Z",
+  "updated_at": "2026-11-10T18:37:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "embedding",
+    "multimodal-embedding",
+    "vision",
+    "image-feature-extraction",
+    "base_model:google/embeddinggemma-2",
+    "base_model:quantized:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 168544256,
+  "parameters_human": "168.5M",
+  "storage_bytes": 124352192,
+  "storage_human": "124 MB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

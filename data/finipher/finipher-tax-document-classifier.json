@@ -7,7 +7,7 @@
   "created_at": "2026-10-29T01:16:03.000Z",
   "updated_at": "2026-10-29T01:16:04.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "text-classification",
   "library": null,
   "languages": [

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/distilgpt2-emailgen-V2-GGUF",
+  "slug": "mradermacher-distilgpt2-emailgen-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/distilgpt2-emailgen-V2-GGUF",
+  "created_at": "2025-05-25T01:58:04.000Z",
+  "updated_at": "2026-11-10T13:54:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "distilgpt2",
+    "email generation",
+    "email",
+    "en",
+    "dataset:aeslc",
+    "dataset:postbot/multi-emails-100k",
+    "base_model:postbot/distilgpt2-emailgen-V2",
+    "base_model:quantized:postbot/distilgpt2-emailgen-V2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 94,
+  "trending_score": 0,
+  "parameters": 81912576,
+  "parameters_human": "81.9M",
+  "storage_bytes": 875197184,
+  "storage_human": "875 MB",
+  "base_model": "postbot/distilgpt2-emailgen-V2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

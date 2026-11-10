@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "NextTransformer/HC-49B-Tokens",
+  "slug": "nexttransformer-hc-49b-tokens",
+  "author": "NextTransformer",
+  "url": "https://huggingface.co/NextTransformer/HC-49B-Tokens",
+  "created_at": "2026-11-10T13:57:37.000Z",
+  "updated_at": "2026-11-10T14:02:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "nexttransformer",
+    "residual",
+    "causal-lm",
+    "pretrained",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1356235700,
+  "parameters_human": "1.36B",
+  "storage_bytes": 4116365376,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

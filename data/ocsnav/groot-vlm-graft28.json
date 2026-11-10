@@ -7,7 +7,7 @@
   "created_at": "2026-09-25T13:47:04.000Z",
   "updated_at": "2026-09-25T13:47:15.000Z",
   "license": "nvidia-gr00t-n1.5",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
   "library": "transformers",
   "languages": [],

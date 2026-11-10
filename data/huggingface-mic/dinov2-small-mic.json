@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/dinov2-small-mic",
+  "slug": "huggingface-mic-dinov2-small-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/dinov2-small-mic",
+  "created_at": "2026-10-29T15:26:26.000Z",
+  "updated_at": "2026-11-10T13:51:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dinov2",
+    "mic",
+    "test-artifact",
+    "base_model:facebook/dinov2-small",
+    "base_model:finetune:facebook/dinov2-small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1142,
+  "trending_score": 0,
+  "parameters": 225856,
+  "parameters_human": "225856",
+  "storage_bytes": 907728,
+  "storage_human": "907728 B",
+  "base_model": "facebook/dinov2-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

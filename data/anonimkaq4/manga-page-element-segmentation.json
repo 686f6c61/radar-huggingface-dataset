@@ -7,7 +7,7 @@
   "created_at": "2026-07-23T20:45:56.000Z",
   "updated_at": "2026-11-05T23:40:01.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "image-segmentation",
   "library": "ultralytics",
   "languages": [],

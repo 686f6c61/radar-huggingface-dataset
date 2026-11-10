@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ghostai-lfm3-1.7b-appcontract-v2-GGUF",
+  "slug": "mradermacher-ghostai-lfm3-1-7b-appcontract-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ghostai-lfm3-1.7b-appcontract-v2-GGUF",
+  "created_at": "2026-11-10T14:16:37.000Z",
+  "updated_at": "2026-11-10T14:25:35.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "tool-calling",
+    "on-device",
+    "en",
+    "base_model:immortaltatsu/ghostai-lfm3-1.7b-appcontract-v2",
+    "base_model:quantized:immortaltatsu/ghostai-lfm3-1.7b-appcontract-v2",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1990945600,
+  "parameters_human": "1.99B",
+  "storage_bytes": 18122316672,
+  "storage_human": "18.1 GB",
+  "base_model": "immortaltatsu/ghostai-lfm3-1.7b-appcontract-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

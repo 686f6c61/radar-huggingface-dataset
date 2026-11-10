@@ -7,7 +7,7 @@
   "created_at": "2026-09-18T14:23:34.000Z",
   "updated_at": "2026-09-22T21:03:24.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "translation",
   "library": "mlx",
   "languages": [

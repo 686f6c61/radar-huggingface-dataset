@@ -7,7 +7,7 @@
   "created_at": "2026-11-03T23:51:00.000Z",
   "updated_at": "2026-11-03T23:51:03.000Z",
   "license": "cc-by-sa-3.0",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "text-to-image",
   "library": "numpy",
   "languages": [],

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "EphAsad/BactoGemma-270M-Hybrid",
+  "slug": "ephasad-bactogemma-270m-hybrid",
+  "author": "EphAsad",
+  "url": "https://huggingface.co/EphAsad/BactoGemma-270M-Hybrid",
+  "created_at": "2026-11-10T16:12:31.000Z",
+  "updated_at": "2026-11-10T16:12:40.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma3_text",
+    "gemma3",
+    "biology",
+    "16S-rRNA",
+    "bacterial-taxonomy",
+    "research",
+    "hierarchical-classification",
+    "kmer-retrieval",
+    "en",
+    "base_model:google/gemma-3-270m",
+    "base_model:finetune:google/gemma-3-270m",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 602824269,
+  "storage_human": "603 MB",
+  "base_model": "google/gemma-3-270m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

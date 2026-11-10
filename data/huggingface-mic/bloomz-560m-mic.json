@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/bloomz-560m-mic",
+  "slug": "huggingface-mic-bloomz-560m-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/bloomz-560m-mic",
+  "created_at": "2026-10-29T19:41:41.000Z",
+  "updated_at": "2026-11-10T15:07:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bloom",
+    "mic",
+    "test-artifact",
+    "base_model:bigscience/bloomz-560m",
+    "base_model:finetune:bigscience/bloomz-560m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1180,
+  "trending_score": 0,
+  "parameters": 16156544,
+  "parameters_human": "16.2M",
+  "storage_bytes": 79129694,
+  "storage_human": "79 MB",
+  "base_model": "bigscience/bloomz-560m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

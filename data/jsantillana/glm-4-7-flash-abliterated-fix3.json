@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "jsantillana/glm-4.7-flash-abliterated-fix3",
+  "slug": "jsantillana-glm-4-7-flash-abliterated-fix3",
+  "author": "jsantillana",
+  "url": "https://huggingface.co/jsantillana/glm-4.7-flash-abliterated-fix3",
+  "created_at": "2026-11-10T19:01:27.000Z",
+  "updated_at": "2026-11-10T19:02:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm4_moe_lite",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2508.06471",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31221488576,
+  "parameters_human": "31.22B",
+  "storage_bytes": 62464393778,
+  "storage_human": "62.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

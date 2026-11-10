@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "sabda-ai/gemma-4-E4B-sabda",
+  "slug": "sabda-ai-gemma-4-e4b-sabda",
+  "author": "sabda-ai",
+  "url": "https://huggingface.co/sabda-ai/gemma-4-E4B-sabda",
+  "created_at": "2026-11-10T17:18:36.000Z",
+  "updated_at": "2026-11-10T17:23:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "speech-recognition",
+    "on-device",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:quantized:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 4922629152,
+  "storage_human": "4.9 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

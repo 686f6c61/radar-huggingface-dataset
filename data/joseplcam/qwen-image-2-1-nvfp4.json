@@ -7,7 +7,7 @@
   "created_at": "2026-09-24T20:14:15.000Z",
   "updated_at": "2026-09-25T11:04:09.000Z",
   "license": "qwen-research-license",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "text-to-image",
   "library": "diffusers",
   "languages": [],

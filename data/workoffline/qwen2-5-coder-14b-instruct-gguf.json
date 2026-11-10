@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "WorkOffline/Qwen2.5-Coder-14B-Instruct-GGUF",
+  "slug": "workoffline-qwen2-5-coder-14b-instruct-gguf",
+  "author": "WorkOffline",
+  "url": "https://huggingface.co/WorkOffline/Qwen2.5-Coder-14B-Instruct-GGUF",
+  "created_at": "2026-11-10T19:08:59.000Z",
+  "updated_at": "2026-11-10T19:11:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "workoffline-mirror",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 8988110272,
+  "storage_human": "9.0 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "IFM/PAN2",
+  "slug": "ifm-pan2",
+  "author": "IFM",
+  "url": "https://huggingface.co/IFM/PAN2",
+  "created_at": "2026-10-07T23:42:01.000Z",
+  "updated_at": "2026-11-09T21:52:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-video",
+  "library": "pan",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pan",
+    "diffusers",
+    "safetensors",
+    "world-model",
+    "world-simulation",
+    "text-to-video",
+    "image-to-video",
+    "image-text-to-video",
+    "diffusion-transformer",
+    "en",
+    "arxiv:2507.05169",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 10,
+  "trending_score": 14,
+  "parameters": 29201996992,
+  "parameters_human": "29.20B",
+  "storage_bytes": 86173925584,
+  "storage_human": "86.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

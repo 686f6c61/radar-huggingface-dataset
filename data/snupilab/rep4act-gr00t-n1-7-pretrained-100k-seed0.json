@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "snupilab/Rep4Act-GR00T-N1.7-Pretrained-100k-seed0",
+  "slug": "snupilab-rep4act-gr00t-n1-7-pretrained-100k-seed0",
+  "author": "snupilab",
+  "url": "https://huggingface.co/snupilab/Rep4Act-GR00T-N1.7-Pretrained-100k-seed0",
+  "created_at": "2026-11-10T12:52:34.000Z",
+  "updated_at": "2026-11-10T12:54:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "rep4act",
+    "actiondit",
+    "pretraining",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3146160162,
+  "parameters_human": "3.15B",
+  "storage_bytes": 9531345578,
+  "storage_human": "9.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

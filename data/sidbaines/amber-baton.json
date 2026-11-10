@@ -7,7 +7,7 @@
   "created_at": "2026-09-25T23:06:06.000Z",
   "updated_at": "2026-10-05T17:45:40.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": "peft",
   "languages": [],

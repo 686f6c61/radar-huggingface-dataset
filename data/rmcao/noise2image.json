@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "rmcao/Noise2Image",
+  "slug": "rmcao-noise2image",
+  "author": "rmcao",
+  "url": "https://huggingface.co/rmcao/Noise2Image",
+  "created_at": "2026-11-10T17:22:50.000Z",
+  "updated_at": "2026-11-10T17:27:26.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2404.01298",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142952269,
+  "storage_human": "143 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

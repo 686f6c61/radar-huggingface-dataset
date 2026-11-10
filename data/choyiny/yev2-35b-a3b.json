@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "choyiny/yev2-35b-a3b",
+  "slug": "choyiny-yev2-35b-a3b",
+  "author": "choyiny",
+  "url": "https://huggingface.co/choyiny/yev2-35b-a3b",
+  "created_at": "2026-11-10T17:01:50.000Z",
+  "updated_at": "2026-11-10T17:06:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe_text",
+    "text-generation",
+    "system-one",
+    "decision-making",
+    "classification",
+    "calibration",
+    "lora",
+    "peft",
+    "moe",
+    "qwen3.6",
+    "decidebench",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 69701032491,
+  "storage_human": "69.7 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Decision making (with worked examples)",
+      "dataset": "DecideBench v2.0 test (450 items, with worked examples)",
+      "metric": "Accuracy",
+      "value": 88
+    },
+    {
+      "task": "Decision making (with worked examples)",
+      "dataset": "DecideBench v2.0 test (450 items, with worked examples)",
+      "metric": "Pair accuracy",
+      "value": 78.2
+    },
+    {
+      "task": "Decision making (with worked examples)",
+      "dataset": "DecideBench v2.0 test (450 items, with worked examples)",
+      "metric": "ECE (15 bins)",
+      "value": 0.058
+    }
+  ],
+  "sources": []
+}

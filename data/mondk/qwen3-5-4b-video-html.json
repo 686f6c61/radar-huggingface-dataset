@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mondk/Qwen3.5-4B-Video-Html",
+  "slug": "mondk-qwen3-5-4b-video-html",
+  "author": "mondk",
+  "url": "https://huggingface.co/mondk/Qwen3.5-4B-Video-Html",
+  "created_at": "2026-11-10T14:26:13.000Z",
+  "updated_at": "2026-11-10T14:31:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "video",
+    "html",
+    "canvas",
+    "2d",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LIDL Rhone-Alpes : Liste des magasins, horaires ouverture",
+      "url": "https://www.promoalert.com/magasin/lidl-rhone-alpes-horaires-telephone-adresse-21-0-0-2-0-0.html",
+      "snippet": "Nov 1, 2026 · Alors n'hésitez pas à consulter notre liste de tous les magasins Lidl se situant près de chez vous ! Venez retrouver à …"
+    }
+  ]
+}

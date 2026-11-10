@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "OpenLLM-France/Luciole-8B-KD-Math-Base",
+  "slug": "openllm-france-luciole-8b-kd-math-base",
+  "author": "OpenLLM-France",
+  "url": "https://huggingface.co/OpenLLM-France/Luciole-8B-KD-Math-Base",
+  "created_at": "2026-10-13T13:22:21.000Z",
+  "updated_at": "2026-11-10T15:25:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nemotron",
+    "pretrained",
+    "openllm-france",
+    "text-generation",
+    "fr",
+    "en",
+    "arxiv:2408.11796",
+    "base_model:OpenLLM-France/Luciole-23B-Base",
+    "base_model:finetune:OpenLLM-France/Luciole-23B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 391,
+  "trending_score": 0,
+  "parameters": 8360209920,
+  "parameters_human": "8.36B",
+  "storage_bytes": 16720452600,
+  "storage_human": "16.7 GB",
+  "base_model": "OpenLLM-France/Luciole-23B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Qwen3.8-1.0B-A0.6B-mic",
+  "slug": "huggingface-mic-qwen3-8-1-0b-a0-6b-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Qwen3.8-1.0B-A0.6B-mic",
+  "created_at": "2026-10-29T20:26:24.000Z",
+  "updated_at": "2026-11-10T15:17:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe_text",
+    "mic",
+    "test-artifact",
+    "base_model:inference-optimization/Qwen3.8-1.0B-A0.6B",
+    "base_model:finetune:inference-optimization/Qwen3.8-1.0B-A0.6B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1095,
+  "trending_score": 0,
+  "parameters": 32138304,
+  "parameters_human": "32.1M",
+  "storage_bytes": 148553123,
+  "storage_human": "149 MB",
+  "base_model": "inference-optimization/Qwen3.8-1.0B-A0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "wentywenty/roboparty-action-rp1-24dof-wave",
+  "slug": "wentywenty-roboparty-action-rp1-24dof-wave",
+  "author": "wentywenty",
+  "url": "https://huggingface.co/wentywenty/roboparty-action-rp1-24dof-wave",
+  "created_at": "2026-11-06T04:59:22.000Z",
+  "updated_at": "2026-11-10T17:39:38.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "roboparty",
+    "robotics",
+    "humanoid",
+    "action",
+    "rp1_24dof",
+    "wave",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 974422,
+  "storage_human": "974422 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

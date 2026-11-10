@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Seed-OSS-36B-Instruct-mic",
+  "slug": "huggingface-mic-seed-oss-36b-instruct-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Seed-OSS-36B-Instruct-mic",
+  "created_at": "2026-10-29T23:17:00.000Z",
+  "updated_at": "2026-11-10T16:09:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "seed_oss",
+    "mic",
+    "test-artifact",
+    "base_model:ByteDance-Seed/Seed-OSS-36B-Instruct",
+    "base_model:finetune:ByteDance-Seed/Seed-OSS-36B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1098,
+  "trending_score": 0,
+  "parameters": 19931712,
+  "parameters_human": "19.9M",
+  "storage_bytes": 51940266,
+  "storage_human": "52 MB",
+  "base_model": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

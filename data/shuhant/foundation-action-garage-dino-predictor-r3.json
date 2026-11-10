@@ -7,7 +7,7 @@
   "created_at": "2026-10-28T04:31:07.000Z",
   "updated_at": "2026-10-28T04:31:42.000Z",
   "license": "nvidia-internal-research",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": "pytorch",
   "languages": [],

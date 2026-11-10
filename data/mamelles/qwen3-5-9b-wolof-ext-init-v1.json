@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mamelles/Qwen3.5-9B-Wolof-ext-init-v1",
+  "slug": "mamelles-qwen3-5-9b-wolof-ext-init-v1",
+  "author": "mamelles",
+  "url": "https://huggingface.co/mamelles/Qwen3.5-9B-Wolof-ext-init-v1",
+  "created_at": "2026-11-10T15:51:42.000Z",
+  "updated_at": "2026-11-10T15:51:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "wo"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "wolof",
+    "qwen3.5",
+    "galsenai",
+    "conversational",
+    "wo",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8986587648,
+  "parameters_human": "8.99B",
+  "storage_bytes": 35966504369,
+  "storage_human": "36.0 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Wolof causal LM",
+      "dataset": "Ortho-filtered Wolof NTP test",
+      "metric": "Bits Per Byte (Wolof CLM test)",
+      "value": 1.8371
+    },
+    {
+      "task": "Wolof causal LM",
+      "dataset": "Ortho-filtered Wolof NTP test",
+      "metric": "BLEU (continuation)",
+      "value": 3.55
+    },
+    {
+      "task": "Wolof causal LM",
+      "dataset": "Ortho-filtered Wolof NTP test",
+      "metric": "chrF (continuation)",
+      "value": 21.55
+    },
+    {
+      "task": "Wolof causal LM",
+      "dataset": "Ortho-filtered Wolof NTP test",
+      "metric": "Perplexity (same-tokenizer)",
+      "value": 30.47
+    }
+  ],
+  "sources": []
+}

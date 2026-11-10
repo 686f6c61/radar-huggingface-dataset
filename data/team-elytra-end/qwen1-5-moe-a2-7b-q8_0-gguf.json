@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Team-Elytra-End/Qwen1.5-MoE-A2.7B-Q8_0-GGUF",
+  "slug": "team-elytra-end-qwen1-5-moe-a2-7b-q8_0-gguf",
+  "author": "Team-Elytra-End",
+  "url": "https://huggingface.co/Team-Elytra-End/Qwen1.5-MoE-A2.7B-Q8_0-GGUF",
+  "created_at": "2026-11-10T14:59:13.000Z",
+  "updated_at": "2026-11-10T15:00:19.000Z",
+  "license": "tongyi-qianwen",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "pretrained",
+    "moe",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen1.5-MoE-A2.7B",
+    "base_model:quantized:Qwen/Qwen1.5-MoE-A2.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14315784192,
+  "parameters_human": "14.32B",
+  "storage_bytes": 15226010912,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen1.5-MoE-A2.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

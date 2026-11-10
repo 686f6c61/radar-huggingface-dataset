@@ -7,7 +7,7 @@
   "created_at": "2026-08-10T04:59:32.000Z",
   "updated_at": "2026-09-06T01:13:53.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": "llama-cpp",
   "languages": [],

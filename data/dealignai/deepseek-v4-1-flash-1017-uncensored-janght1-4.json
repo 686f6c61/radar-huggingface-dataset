@@ -7,7 +7,7 @@
   "created_at": "2026-11-03T10:19:07.000Z",
   "updated_at": "2026-11-03T13:19:03.000Z",
   "license": "deepseek-v41-flash-1017",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
   "library": "mlx",
   "languages": [

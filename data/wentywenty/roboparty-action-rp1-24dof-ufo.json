@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "wentywenty/roboparty-action-rp1-24dof-ufo",
+  "slug": "wentywenty-roboparty-action-rp1-24dof-ufo",
+  "author": "wentywenty",
+  "url": "https://huggingface.co/wentywenty/roboparty-action-rp1-24dof-ufo",
+  "created_at": "2026-11-06T04:59:09.000Z",
+  "updated_at": "2026-11-10T17:55:26.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "roboparty",
+    "robotics",
+    "humanoid",
+    "action",
+    "rp1_24dof",
+    "ufo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40030928,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

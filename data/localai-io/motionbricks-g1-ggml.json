@@ -7,7 +7,7 @@
   "created_at": "2026-09-02T11:27:40.000Z",
   "updated_at": "2026-09-02T11:28:02.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": "ggml",
   "languages": [],

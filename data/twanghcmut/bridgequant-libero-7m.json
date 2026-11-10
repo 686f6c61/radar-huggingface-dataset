@@ -7,7 +7,7 @@
   "created_at": "2026-11-02T03:10:21.000Z",
   "updated_at": "2026-11-02T03:10:30.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "robotics",
   "library": null,
   "languages": [],

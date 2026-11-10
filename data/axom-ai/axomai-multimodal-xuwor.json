@@ -7,7 +7,7 @@
   "created_at": "2026-11-02T17:25:37.000Z",
   "updated_at": "2026-11-02T17:46:08.000Z",
   "license": "axom-ai-proprietary",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-to-speech",
   "library": null,
   "languages": [

@@ -7,7 +7,7 @@
   "created_at": "2026-10-29T18:15:13.000Z",
   "updated_at": "2026-11-06T11:24:09.000Z",
   "license": "apple-sample-code",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "image-classification",
   "library": "fastforks",
   "languages": [],

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Queimo/hanna-binary",
+  "slug": "queimo-hanna-binary",
+  "author": "Queimo",
+  "url": "https://huggingface.co/Queimo/hanna-binary",
+  "created_at": "2026-11-10T15:29:06.000Z",
+  "updated_at": "2026-11-10T15:29:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "chemistry",
+    "thermodynamics",
+    "activity-coefficients",
+    "excess-gibbs-energy",
+    "screening-properties",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16466239,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

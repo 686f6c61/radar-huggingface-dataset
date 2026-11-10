@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Team-PIXEL/pixel-base-adaptive",
+  "slug": "team-pixel-pixel-base-adaptive",
+  "author": "Team-PIXEL",
+  "url": "https://huggingface.co/Team-PIXEL/pixel-base-adaptive",
+  "created_at": "2026-11-10T16:28:06.000Z",
+  "updated_at": "2026-11-10T16:29:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "mpixel",
+    "pixel",
+    "mae",
+    "vit",
+    "tokenization-free",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "arxiv:2610.29681",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 111655680,
+  "parameters_human": "111.7M",
+  "storage_bytes": 446661824,
+  "storage_human": "447 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

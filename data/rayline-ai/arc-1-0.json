@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "rayline-ai/ARC-1.0",
+  "slug": "rayline-ai-arc-1-0",
+  "author": "rayline-ai",
+  "url": "https://huggingface.co/rayline-ai/ARC-1.0",
+  "created_at": "2026-11-10T18:40:00.000Z",
+  "updated_at": "2026-11-10T19:10:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "vllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "rayline",
+    "model-routing",
+    "agents",
+    "decision-model",
+    "custom-code",
+    "text-classification",
+    "en",
+    "dataset:nvidia/Nemotron-PII",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 615054751,
+  "parameters_human": "615.1M",
+  "storage_bytes": 2304408585,
+  "storage_human": "2.3 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

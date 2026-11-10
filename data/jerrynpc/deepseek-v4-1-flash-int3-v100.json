@@ -7,7 +7,7 @@
   "created_at": "2026-10-22T06:07:43.000Z",
   "updated_at": "2026-10-23T00:55:09.000Z",
   "license": "deepseek-v4.1-flash-license",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "text-generation",
   "library": "pytorch",
   "languages": [

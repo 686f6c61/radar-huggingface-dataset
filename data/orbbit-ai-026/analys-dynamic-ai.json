@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "orbbit-AI-026/Analys-Dynamic-AI",
+  "slug": "orbbit-ai-026-analys-dynamic-ai",
+  "author": "orbbit-AI-026",
+  "url": "https://huggingface.co/orbbit-AI-026/Analys-Dynamic-AI",
+  "created_at": "2026-11-10T13:58:54.000Z",
+  "updated_at": "2026-11-10T14:00:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125086497008,
+  "parameters_human": "125.09B",
+  "storage_bytes": 250186058846,
+  "storage_human": "250.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

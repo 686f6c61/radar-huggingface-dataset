@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "goqueen-collab/goqueen-qwen3.5-0.8b-static-qa-v3",
+  "slug": "goqueen-collab-goqueen-qwen3-5-0-8b-static-qa-v3",
+  "author": "goqueen-collab",
+  "url": "https://huggingface.co/goqueen-collab/goqueen-qwen3.5-0.8b-static-qa-v3",
+  "created_at": "2026-11-10T14:03:48.000Z",
+  "updated_at": "2026-11-10T14:04:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "go",
+    "katago",
+    "custom-code",
+    "adapter",
+    "experimental",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96064733,
+  "storage_human": "96 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

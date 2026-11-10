@@ -7,7 +7,7 @@
   "created_at": "2026-09-25T00:10:37.000Z",
   "updated_at": "2026-09-25T00:20:58.000Z",
   "license": "qwen-community-license",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
   "library": "mlx",
   "languages": [],

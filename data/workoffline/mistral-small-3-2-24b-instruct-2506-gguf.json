@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "WorkOffline/Mistral-Small-3.2-24B-Instruct-2506-GGUF",
+  "slug": "workoffline-mistral-small-3-2-24b-instruct-2506-gguf",
+  "author": "WorkOffline",
+  "url": "https://huggingface.co/WorkOffline/Mistral-Small-3.2-24B-Instruct-2506-GGUF",
+  "created_at": "2026-11-10T19:01:37.000Z",
+  "updated_at": "2026-11-10T19:07:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "workoffline-mirror",
+    "base_model:mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+    "base_model:quantized:mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 15211976416,
+  "storage_human": "15.2 GB",
+  "base_model": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/privacy-filter-mic",
+  "slug": "huggingface-mic-privacy-filter-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/privacy-filter-mic",
+  "created_at": "2026-10-30T08:44:07.000Z",
+  "updated_at": "2026-11-10T16:15:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "openai_privacy_filter",
+    "mic",
+    "test-artifact",
+    "base_model:openai/privacy-filter",
+    "base_model:finetune:openai/privacy-filter",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1013,
+  "trending_score": 0,
+  "parameters": 13031217,
+  "parameters_human": "13.0M",
+  "storage_bytes": 80001066,
+  "storage_human": "80 MB",
+  "base_model": "openai/privacy-filter",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

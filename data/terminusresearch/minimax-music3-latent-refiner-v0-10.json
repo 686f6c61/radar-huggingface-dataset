@@ -7,7 +7,7 @@
   "created_at": "2026-08-20T04:45:37.000Z",
   "updated_at": "2026-08-20T04:48:26.000Z",
   "license": "minimax-music3-community-license",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "audio-to-audio",
   "library": "diffusers",
   "languages": [],

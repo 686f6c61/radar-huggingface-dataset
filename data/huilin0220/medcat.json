@@ -7,7 +7,7 @@
   "created_at": "2026-08-29T20:05:14.000Z",
   "updated_at": "2026-09-28T00:20:53.000Z",
   "license": "qwen",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
   "library": "transformers",
   "languages": [],

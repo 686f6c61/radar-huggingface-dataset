@@ -7,7 +7,7 @@
   "created_at": "2026-09-13T14:52:09.000Z",
   "updated_at": "2026-10-23T15:14:34.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": "pip",
   "languages": [],

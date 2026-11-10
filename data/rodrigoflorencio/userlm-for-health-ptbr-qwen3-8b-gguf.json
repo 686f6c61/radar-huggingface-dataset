@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "RodrigoFlorencio/UserLM-for-health-PTBR-Qwen3-8B-GGUF",
+  "slug": "rodrigoflorencio-userlm-for-health-ptbr-qwen3-8b-gguf",
+  "author": "RodrigoFlorencio",
+  "url": "https://huggingface.co/RodrigoFlorencio/UserLM-for-health-PTBR-Qwen3-8B-GGUF",
+  "created_at": "2026-11-10T03:46:49.000Z",
+  "updated_at": "2026-11-10T04:28:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "ml-intern",
+    "userlm",
+    "user-simulation",
+    "medical",
+    "portuguese",
+    "llama-cpp",
+    "ollama",
+    "lm-studio",
+    "pt",
+    "arxiv:2510.06552",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:quantized:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 11753682624,
+  "storage_human": "11.8 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

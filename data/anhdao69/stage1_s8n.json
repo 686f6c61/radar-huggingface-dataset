@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "anhdao69/stage1_S8N",
+  "slug": "anhdao69-stage1_s8n",
+  "author": "anhdao69",
+  "url": "https://huggingface.co/anhdao69/stage1_S8N",
+  "created_at": "2026-11-10T12:58:57.000Z",
+  "updated_at": "2026-11-10T13:03:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20720348771,
+  "storage_human": "20.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

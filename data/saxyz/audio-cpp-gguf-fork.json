@@ -7,7 +7,7 @@
   "created_at": "2026-08-18T12:11:01.000Z",
   "updated_at": "2026-08-18T12:11:02.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "text-to-speech",
   "library": "audio.cpp",
   "languages": [],

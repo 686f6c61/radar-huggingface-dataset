@@ -7,7 +7,7 @@
   "created_at": "2026-10-26T20:36:14.000Z",
   "updated_at": "2026-10-26T20:36:17.000Z",
   "license": "nvidia-source-code-license",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": "pytorch",
   "languages": [],

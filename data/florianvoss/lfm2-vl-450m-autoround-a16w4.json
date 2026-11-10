@@ -7,7 +7,7 @@
   "created_at": "2026-10-17T23:15:03.000Z",
   "updated_at": "2026-11-01T08:52:29.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
   "library": "llima",
   "languages": [],

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "iapp/OpenThai2.0-OCR-Text",
+  "slug": "iapp-openthai2-0-ocr-text",
+  "author": "iapp",
+  "url": "https://huggingface.co/iapp/OpenThai2.0-OCR-Text",
+  "created_at": "2026-10-02T14:51:01.000Z",
+  "updated_at": "2026-11-10T14:23:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "thai",
+    "openvino",
+    "text-recognition",
+    "text-detection",
+    "image-to-text",
+    "th",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6638182,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IAPP",
+      "url": "https://iapp.org/",
+      "snippet": "The IAPP is a policy neutral, not-for-profit association founded in 2000 with a mission to define, promote and improve the professions …"
+    },
+    {
+      "title": "Certification | IAPP",
+      "url": "https://iapp.org/certify",
+      "snippet": "The IAPP offers six distinct CIPP designation concentrations, demonstrating mastery in privacy laws, regulations and frameworks for …"
+    },
+    {
+      "title": "MyIAPP",
+      "url": "https://myiapp.org/",
+      "snippet": "Manage your IAPP account"
+    },
+    {
+      "title": "IAPP Certification Programs",
+      "url": "https://prod.iapp.org/certify/programs/",
+      "snippet": "The IAPP offers certifications that are respected and acclaimed by employers and specifically designed for professionals who …"
+    },
+    {
+      "title": "Préparation à la Certification IAPP : Gouvernance et gestion des ...",
+      "url": "https://www.avocats.ey.com/fr_fr/formations/certification-iapp-gouvernance-et-gestion-des-risques-de-l-ia",
+      "snippet": "Préparation à la Certification IAPP : Gouvernance et gestion des risques de l’intelligence artificielle EY Société d’Avocats vous …"
+    }
+  ]
+}

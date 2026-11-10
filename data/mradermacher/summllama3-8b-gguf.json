@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SummLlama3-8B-GGUF",
+  "slug": "mradermacher-summllama3-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SummLlama3-8B-GGUF",
+  "created_at": "2025-02-25T00:35:01.000Z",
+  "updated_at": "2026-11-10T13:54:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:DISLab/SummLlama3-8B",
+    "base_model:quantized:DISLab/SummLlama3-8B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 124,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820230016,
+  "storage_human": "71.8 GB",
+  "base_model": "DISLab/SummLlama3-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

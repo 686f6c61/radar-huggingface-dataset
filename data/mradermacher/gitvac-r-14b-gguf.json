@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GitVac-R-14B-GGUF",
+  "slug": "mradermacher-gitvac-r-14b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GitVac-R-14B-GGUF",
+  "created_at": "2025-03-03T11:49:40.000Z",
+  "updated_at": "2026-11-10T16:09:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "en",
+    "base_model:vkerkez/GitVac-R-14B",
+    "base_model:quantized:vkerkez/GitVac-R-14B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102043514112,
+  "storage_human": "102.0 GB",
+  "base_model": "vkerkez/GitVac-R-14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Homer-v1.1-Qwen2.5-72B-GGUF",
+  "slug": "mradermacher-homer-v1-1-qwen2-5-72b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Homer-v1.1-Qwen2.5-72B-GGUF",
+  "created_at": "2025-02-28T02:24:29.000Z",
+  "updated_at": "2026-11-10T17:17:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:newsbang/Homer-v1.1-Qwen2.5-72B",
+    "base_model:quantized:newsbang/Homer-v1.1-Qwen2.5-72B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 111,
+  "trending_score": 0,
+  "parameters": 72706203648,
+  "parameters_human": "72.71B",
+  "storage_bytes": 520404523104,
+  "storage_human": "520.4 GB",
+  "base_model": "newsbang/Homer-v1.1-Qwen2.5-72B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

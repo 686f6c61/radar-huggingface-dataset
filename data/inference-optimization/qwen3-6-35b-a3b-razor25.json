@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "inference-optimization/Qwen3.6-35B-A3B-RAZOR25",
+  "slug": "inference-optimization-qwen3-6-35b-a3b-razor25",
+  "author": "inference-optimization",
+  "url": "https://huggingface.co/inference-optimization/Qwen3.6-35B-A3B-RAZOR25",
+  "created_at": "2026-11-10T15:24:33.000Z",
+  "updated_at": "2026-11-10T15:25:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27893516144,
+  "parameters_human": "27.89B",
+  "storage_bytes": 55799970430,
+  "storage_human": "55.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

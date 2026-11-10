@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "YunShengZeroOne/wowsp-d1",
+  "slug": "yunshengzeroone-wowsp-d1",
+  "author": "YunShengZeroOne",
+  "url": "https://huggingface.co/YunShengZeroOne/wowsp-d1",
+  "created_at": "2026-11-10T16:18:10.000Z",
+  "updated_at": "2026-11-10T16:18:29.000Z",
+  "license": "synthetic-source-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "world-of-warships",
+    "decision-support",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14133923,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

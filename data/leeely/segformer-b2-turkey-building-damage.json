@@ -7,7 +7,7 @@
   "created_at": "2026-11-04T15:42:15.000Z",
   "updated_at": "2026-11-04T15:42:20.000Z",
   "license": "nvidia-source-code-license-segformer",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "image-segmentation",
   "library": "segmentation-models-pytorch",
   "languages": [],

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Sik0213/shield-v-rtfs-faceswap-baseline",
+  "slug": "sik0213-shield-v-rtfs-faceswap-baseline",
+  "author": "Sik0213",
+  "url": "https://huggingface.co/Sik0213/shield-v-rtfs-faceswap-baseline",
+  "created_at": "2026-11-10T15:05:46.000Z",
+  "updated_at": "2026-11-10T15:26:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "video-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "video-classification",
+    "deepfake-detection",
+    "face-swap",
+    "en",
+    "dataset:kontur-ai/rtfs-10k",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119007973,
+  "storage_human": "119 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

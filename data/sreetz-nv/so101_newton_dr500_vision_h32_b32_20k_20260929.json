@@ -7,7 +7,7 @@
   "created_at": "2026-10-01T17:39:26.000Z",
   "updated_at": "2026-10-01T17:40:30.000Z",
   "license": "nvidia-license",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "robotics",
   "library": "lerobot",
   "languages": [

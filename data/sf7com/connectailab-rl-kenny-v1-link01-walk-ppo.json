@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "sf7com/connectailab-rl-kenny-v1-link01-walk-ppo",
+  "slug": "sf7com-connectailab-rl-kenny-v1-link01-walk-ppo",
+  "author": "sf7com",
+  "url": "https://huggingface.co/sf7com/connectailab-rl-kenny-v1-link01-walk-ppo",
+  "created_at": "2026-11-10T16:36:23.000Z",
+  "updated_at": "2026-11-10T16:36:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "ppo",
+    "robotics",
+    "mujoco",
+    "locomotion",
+    "link01",
+    "connect-ai-lab",
+    "connectailab",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9115863,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "walking",
+      "dataset": "Link01Walk-v0",
+      "metric": "distance per 20 s (m)",
+      "value": 4.211
+    },
+    {
+      "task": "walking",
+      "dataset": "Link01Walk-v0",
+      "metric": "mean forward speed (m/s)",
+      "value": 0.2105
+    },
+    {
+      "task": "walking",
+      "dataset": "Link01Walk-v0",
+      "metric": "falls per minute",
+      "value": 0
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "wentywenty/robopoly-action-rpo-parkour",
+  "slug": "wentywenty-robopoly-action-rpo-parkour",
+  "author": "wentywenty",
+  "url": "https://huggingface.co/wentywenty/robopoly-action-rpo-parkour",
+  "created_at": "2026-11-06T04:57:46.000Z",
+  "updated_at": "2026-11-10T19:28:40.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "robopoly",
+    "robotics",
+    "humanoid",
+    "action",
+    "rpo",
+    "parkour",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5677662,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ultimate DEX - cross-chain transactions & limit orders | CrowdSwap",
+      "url": "https://crowdswap.org/blog/crowdswap-the-ultimate-dex-for-cross-chain-transactions-and-limit-orders/",
+      "snippet": "Jan 16, 2024 · With decentralized exchange limit orders, customize cross-chain transactions based on desired prices, gaining control …"
+    }
+  ]
+}

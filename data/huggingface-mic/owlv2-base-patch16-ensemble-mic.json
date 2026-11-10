@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/owlv2-base-patch16-ensemble-mic",
+  "slug": "huggingface-mic-owlv2-base-patch16-ensemble-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/owlv2-base-patch16-ensemble-mic",
+  "created_at": "2026-10-29T20:14:47.000Z",
+  "updated_at": "2026-11-10T15:06:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "owlv2",
+    "mic",
+    "test-artifact",
+    "base_model:google/owlv2-base-patch16-ensemble",
+    "base_model:finetune:google/owlv2-base-patch16-ensemble",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1090,
+  "trending_score": 0,
+  "parameters": 3606663,
+  "parameters_human": "3.6M",
+  "storage_bytes": 14437736,
+  "storage_human": "14 MB",
+  "base_model": "google/owlv2-base-patch16-ensemble",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "egolearn/babycl-resnext50-walkingtours-seed1337",
+  "slug": "egolearn-babycl-resnext50-walkingtours-seed1337",
+  "author": "egolearn",
+  "url": "https://huggingface.co/egolearn/babycl-resnext50-walkingtours-seed1337",
+  "created_at": "2026-11-10T17:56:01.000Z",
+  "updated_at": "2026-11-10T17:56:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "egolearn",
+  "languages": [],
+  "tags": [
+    "egolearn",
+    "safetensors",
+    "self-supervised-learning",
+    "walkingtours",
+    "streaming",
+    "feature-extraction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35801104,
+  "parameters_human": "35.8M",
+  "storage_bytes": 143240384,
+  "storage_human": "143 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

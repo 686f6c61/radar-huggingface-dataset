@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Easonnoway/qwen3-4b-ablation-matched-response",
+  "slug": "easonnoway-qwen3-4b-ablation-matched-response",
+  "author": "Easonnoway",
+  "url": "https://huggingface.co/Easonnoway/qwen3-4b-ablation-matched-response",
+  "created_at": "2026-11-10T20:04:58.000Z",
+  "updated_at": "2026-11-10T20:07:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "safety",
+    "chain-of-thought",
+    "immunecot",
+    "rebuttal-control",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8834317425,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

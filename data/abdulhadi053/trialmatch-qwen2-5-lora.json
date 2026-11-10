@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "AbdulHadi053/trialmatch-qwen2.5-lora",
+  "slug": "abdulhadi053-trialmatch-qwen2-5-lora",
+  "author": "AbdulHadi053",
+  "url": "https://huggingface.co/AbdulHadi053/trialmatch-qwen2.5-lora",
+  "created_at": "2026-11-10T15:31:06.000Z",
+  "updated_at": "2026-11-10T15:32:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "clinical-trials",
+    "eligibility",
+    "education",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 194481220,
+  "storage_human": "194 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

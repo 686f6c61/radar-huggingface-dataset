@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "victorgpt0/claimguard-consistency-classifier",
+  "slug": "victorgpt0-claimguard-consistency-classifier",
+  "author": "victorgpt0",
+  "url": "https://huggingface.co/victorgpt0/claimguard-consistency-classifier",
+  "created_at": "2026-11-10T14:44:59.000Z",
+  "updated_at": "2026-11-10T14:54:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "clinical-text",
+    "health-insurance",
+    "fraud-audit",
+    "icd-11",
+    "synthetic-data",
+    "text-classification",
+    "en",
+    "base_model:emilyalsentzer/Bio_ClinicalBERT",
+    "base_model:adapter:emilyalsentzer/Bio_ClinicalBERT",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1192672,
+  "storage_human": "1 MB",
+  "base_model": "emilyalsentzer/Bio_ClinicalBERT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

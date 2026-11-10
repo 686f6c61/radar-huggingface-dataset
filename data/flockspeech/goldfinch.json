@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "flockspeech/goldfinch",
+  "slug": "flockspeech-goldfinch",
+  "author": "flockspeech",
+  "url": "https://huggingface.co/flockspeech/goldfinch",
+  "created_at": "2026-11-10T16:31:22.000Z",
+  "updated_at": "2026-11-10T16:58:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "speech-synthesis",
+    "conversational",
+    "nonverbal",
+    "laughter",
+    "flow-matching",
+    "on-device",
+    "edge",
+    "offline",
+    "cpu",
+    "en",
+    "dataset:amaai-lab/DisfluencySpeech",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 145061181,
+  "storage_human": "145 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

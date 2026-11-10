@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "egolearn/babycl-resnext50-saycam-fullstream-seed1338",
+  "slug": "egolearn-babycl-resnext50-saycam-fullstream-seed1338",
+  "author": "egolearn",
+  "url": "https://huggingface.co/egolearn/babycl-resnext50-saycam-fullstream-seed1338",
+  "created_at": "2026-11-10T17:55:17.000Z",
+  "updated_at": "2026-11-10T18:04:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "egolearn",
+  "languages": [],
+  "tags": [
+    "egolearn",
+    "safetensors",
+    "self-supervised-learning",
+    "saycam-s",
+    "streaming",
+    "feature-extraction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 38053392,
+  "parameters_human": "38.1M",
+  "storage_bytes": 152250048,
+  "storage_human": "152 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

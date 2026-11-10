@@ -7,7 +7,7 @@
   "created_at": "2026-09-30T00:52:16.000Z",
   "updated_at": "2026-09-30T00:52:17.000Z",
   "license": "audarai-community-license-v1.0",
-  "license_family": "unknown",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-to-speech",
   "library": null,
   "languages": [

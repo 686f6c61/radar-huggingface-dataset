@@ -7,7 +7,7 @@
   "created_at": "2026-10-27T17:44:33.000Z",
   "updated_at": "2026-10-27T17:44:48.000Z",
   "license": "other",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
   "library": "nemo",
   "languages": [

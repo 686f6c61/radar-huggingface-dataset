@@ -7,7 +7,7 @@
   "created_at": "2026-09-13T23:55:44.000Z",
   "updated_at": "2026-09-13T23:55:48.000Z",
   "license": "kimi-k3",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
   "library": "transformers",
   "languages": [],

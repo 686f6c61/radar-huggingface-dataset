@@ -7,7 +7,7 @@
   "created_at": "2026-09-27T11:24:41.000Z",
   "updated_at": "2026-11-08T07:25:56.000Z",
   "license": "mit-and-cc-by-4.0",
-  "license_family": "unknown",
+  "license_family": "oss",
   "pipeline_tag": "image-segmentation",
   "library": "pyplatypus",
   "languages": [],
