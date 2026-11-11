@@ -5,7 +5,7 @@
   "author": "just1nseo",
   "url": "https://huggingface.co/just1nseo/tulu3-8b-dpo-grpo-tulu3rm-ifbench-eq2-a7",
   "created_at": "2026-11-09T03:59:24.000Z",
-  "updated_at": "2026-11-10T03:22:23.000Z",
+  "updated_at": "2026-11-10T14:42:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 96381232502,
-  "storage_human": "96.4 GB",
+  "storage_bytes": 128502573302,
+  "storage_human": "128.5 GB",
   "base_model": "allenai/Llama-3.1-Tulu-3-8B-DPO",
   "formats": [
     "safetensors"

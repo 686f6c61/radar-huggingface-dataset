@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Phi-3.5-MoE-0.8B-A0.2B-mic",
+  "slug": "huggingface-mic-phi-3-5-moe-0-8b-a0-2b-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Phi-3.5-MoE-0.8B-A0.2B-mic",
+  "created_at": "2026-10-30T22:19:34.000Z",
+  "updated_at": "2026-11-11T11:25:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "phimoe",
+    "mic",
+    "test-artifact",
+    "custom_code",
+    "base_model:inference-optimization/Phi-3.5-MoE-0.8B-A0.2B",
+    "base_model:finetune:inference-optimization/Phi-3.5-MoE-0.8B-A0.2B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1118,
+  "trending_score": 0,
+  "parameters": 4358976,
+  "parameters_human": "4.4M",
+  "storage_bytes": 8724064,
+  "storage_human": "9 MB",
+  "base_model": "inference-optimization/Phi-3.5-MoE-0.8B-A0.2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

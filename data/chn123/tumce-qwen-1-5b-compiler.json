@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "id": "chn123/tumce-qwen-1.5b-compiler",
+  "slug": "chn123-tumce-qwen-1-5b-compiler",
+  "author": "chn123",
+  "url": "https://huggingface.co/chn123/tumce-qwen-1.5b-compiler",
+  "created_at": "2026-11-11T08:31:43.000Z",
+  "updated_at": "2026-11-11T08:32:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "turkish",
+    "morphology",
+    "nlu",
+    "compiler",
+    "neuro-symbolic",
+    "qwen2.5",
+    "e-graph",
+    "dsl",
+    "universal-dependencies",
+    "conversational",
+    "tr",
+    "dataset:chn123/tumce_distillation_v4_gold_augmented",
+    "dataset:turkerberkdonmez/TUSGPT-TR-Medical-Dataset-v1",
+    "dataset:AlicanKiraz0/Turkish-Finance-SFT-Dataset",
+    "dataset:OrionCAF/turkish_law_qa_dataset",
+    "dataset:malhajar/OpenOrca-tr",
+    "arxiv:2412.15115",
+    "arxiv:2106.09685",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B",
+    "license:mit",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1776719360,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3564928094,
+  "storage_human": "3.6 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Morphological Parsing and NLU Compilation",
+      "dataset": "TUMCE Distillation v4 Gold Augmented",
+      "metric": "Normalized Exact Match",
+      "value": 92
+    },
+    {
+      "task": "Morphological Parsing and NLU Compilation",
+      "dataset": "TUMCE Distillation v4 Gold Augmented",
+      "metric": "Ham Exact Match",
+      "value": 88
+    },
+    {
+      "task": "Morphological Parsing and NLU Compilation",
+      "dataset": "TUMCE Distillation v4 Gold Augmented",
+      "metric": "Token Accuracy",
+      "value": 99.56
+    },
+    {
+      "task": "Morphological Parsing and NLU Compilation",
+      "dataset": "TUMCE Distillation v4 Gold Augmented",
+      "metric": "Root Accuracy",
+      "value": 98.77
+    },
+    {
+      "task": "Morphological Parsing and NLU Compilation",
+      "dataset": "TUMCE Distillation v4 Gold Augmented",
+      "metric": "Word Level Exact Match",
+      "value": 96
+    },
+    {
+      "task": "Morphological Parsing and NLU Compilation",
+      "dataset": "TUMCE Distillation v4 Gold Augmented",
+      "metric": "Operator F1 Score",
+      "value": 98
+    },
+    {
+      "task": "Morphological Parsing and NLU Compilation",
+      "dataset": "TUMCE Distillation v4 Gold Augmented",
+      "metric": "UD Morphological Feature Accuracy",
+      "value": 100
+    },
+    {
+      "task": "Morphological Parsing and NLU Compilation",
+      "dataset": "TUMCE Distillation v4 Gold Augmented",
+      "metric": "E-Graph Equivalence Recall",
+      "value": 100
+    },
+    {
+      "task": "Morphological Parsing and NLU Compilation",
+      "dataset": "TUMCE Distillation v4 Gold Augmented",
+      "metric": "E-Graph Equivalence Precision",
+      "value": 100
+    }
+  ],
+  "sources": []
+}

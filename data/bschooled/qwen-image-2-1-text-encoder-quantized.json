@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "bschooled/Qwen-Image-2.1-text-encoder-quantized",
+  "slug": "bschooled-qwen-image-2-1-text-encoder-quantized",
+  "author": "bschooled",
+  "url": "https://huggingface.co/bschooled/Qwen-Image-2.1-text-encoder-quantized",
+  "created_at": "2026-11-11T08:08:58.000Z",
+  "updated_at": "2026-11-11T08:09:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6389852991,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

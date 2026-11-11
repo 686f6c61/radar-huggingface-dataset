@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "id": "kkt94/Llama-V-JEPA-LM-Qwen3-8B",
+  "slug": "kkt94-llama-v-jepa-lm-qwen3-8b",
+  "author": "kkt94",
+  "url": "https://huggingface.co/kkt94/Llama-V-JEPA-LM-Qwen3-8B",
+  "created_at": "2026-11-11T07:57:43.000Z",
+  "updated_at": "2026-11-11T07:58:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "jepa_llm",
+    "feature-extraction",
+    "video",
+    "video-question-answering",
+    "video-language-model",
+    "multimodal",
+    "v-jepa",
+    "world-model",
+    "custom_code",
+    "qwen3",
+    "video-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9228761088,
+  "parameters_human": "9.23B",
+  "storage_bytes": 18492138398,
+  "storage_human": "18.5 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Video question answering",
+      "dataset": "MVBench",
+      "metric": "accuracy",
+      "value": 72.8
+    },
+    {
+      "task": "Video question answering",
+      "dataset": "PerceptionTest",
+      "metric": "accuracy",
+      "value": 77.8
+    },
+    {
+      "task": "Video question answering",
+      "dataset": "TVBench",
+      "metric": "accuracy",
+      "value": 75.3
+    },
+    {
+      "task": "Video question answering",
+      "dataset": "TempCompass",
+      "metric": "accuracy",
+      "value": 79.4
+    },
+    {
+      "task": "Video question answering",
+      "dataset": "TOMATO",
+      "metric": "accuracy",
+      "value": 56.5
+    },
+    {
+      "task": "Video question answering",
+      "dataset": "MotionBench",
+      "metric": "accuracy",
+      "value": 59.1
+    },
+    {
+      "task": "Video question answering",
+      "dataset": "NExT-QA",
+      "metric": "accuracy",
+      "value": 81.2
+    },
+    {
+      "task": "Video question answering",
+      "dataset": "MVP",
+      "metric": "pair accuracy",
+      "value": 58.1
+    },
+    {
+      "task": "Video question answering",
+      "dataset": "TemporalBench (binary)",
+      "metric": "accuracy",
+      "value": 73.5
+    },
+    {
+      "task": "Video question answering",
+      "dataset": "SSv2 (multiple choice)",
+      "metric": "accuracy",
+      "value": 93.8
+    },
+    {
+      "task": "Video question answering",
+      "dataset": "Vinoground text",
+      "metric": "text pair accuracy",
+      "value": 75.2
+    },
+    {
+      "task": "Video question answering",
+      "dataset": "Vinoground video",
+      "metric": "video pair accuracy",
+      "value": 38.6
+    }
+  ],
+  "sources": []
+}

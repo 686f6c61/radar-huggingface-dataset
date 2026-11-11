@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/gpt-neo-125m-mic",
+  "slug": "huggingface-mic-gpt-neo-125m-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/gpt-neo-125m-mic",
+  "created_at": "2026-11-05T13:01:42.000Z",
+  "updated_at": "2026-11-11T11:24:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt_neo",
+    "mic",
+    "test-artifact",
+    "base_model:EleutherAI/gpt-neo-125m",
+    "base_model:finetune:EleutherAI/gpt-neo-125m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 577,
+  "trending_score": 0,
+  "parameters": 3447232,
+  "parameters_human": "3.4M",
+  "storage_bytes": 13791880,
+  "storage_human": "14 MB",
+  "base_model": "EleutherAI/gpt-neo-125m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

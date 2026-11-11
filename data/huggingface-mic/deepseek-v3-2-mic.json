@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/DeepSeek-V3.2-mic",
   "created_at": "2026-10-29T17:50:18.000Z",
-  "updated_at": "2026-11-02T12:41:31.000Z",
+  "updated_at": "2026-11-10T14:22:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1160,
+  "downloads_30d": 1346,
   "trending_score": 0,
   "parameters": 16911492,
   "parameters_human": "16.9M",

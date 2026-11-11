@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Jamba-tiny-dev-mic",
+  "slug": "huggingface-mic-jamba-tiny-dev-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Jamba-tiny-dev-mic",
+  "created_at": "2026-10-29T22:49:54.000Z",
+  "updated_at": "2026-11-11T11:25:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "jamba",
+    "mic",
+    "test-artifact",
+    "base_model:ai21labs/Jamba-tiny-dev",
+    "base_model:finetune:ai21labs/Jamba-tiny-dev",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1355,
+  "trending_score": 0,
+  "parameters": 8831936,
+  "parameters_human": "8.8M",
+  "storage_bytes": 18799658,
+  "storage_human": "19 MB",
+  "base_model": "ai21labs/Jamba-tiny-dev",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

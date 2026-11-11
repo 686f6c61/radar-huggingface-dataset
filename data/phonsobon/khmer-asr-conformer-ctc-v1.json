@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "phonsobon/khmer-asr-Conformer-CTC-v1",
+  "slug": "phonsobon-khmer-asr-conformer-ctc-v1",
+  "author": "phonsobon",
+  "url": "https://huggingface.co/phonsobon/khmer-asr-Conformer-CTC-v1",
+  "created_at": "2026-11-06T13:36:34.000Z",
+  "updated_at": "2026-11-11T06:51:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "pytorch",
+  "languages": [
+    "km",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "automatic-speech-recognition",
+    "khmer",
+    "conformer",
+    "ctc",
+    "km",
+    "en",
+    "arxiv:2005.08100",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2608373163,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

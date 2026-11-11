@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Suvir-Misra/Gemma-3-270M-IndicLegalQA-GGUF",
+  "slug": "suvir-misra-gemma-3-270m-indiclegalqa-gguf",
+  "author": "Suvir-Misra",
+  "url": "https://huggingface.co/Suvir-Misra/Gemma-3-270M-IndicLegalQA-GGUF",
+  "created_at": "2026-11-11T10:58:39.000Z",
+  "updated_at": "2026-11-11T11:00:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "legal",
+    "indian-law",
+    "indiclegalqa",
+    "bns",
+    "constitution",
+    "gst",
+    "tax",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:quantized:google/gemma-3-270m-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 435870336,
+  "parameters_human": "435.9M",
+  "storage_bytes": 1716640704,
+  "storage_human": "1.7 GB",
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

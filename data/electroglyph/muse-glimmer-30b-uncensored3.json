@@ -5,7 +5,7 @@
   "author": "electroglyph",
   "url": "https://huggingface.co/electroglyph/Muse-Glimmer-30B-uncensored3",
   "created_at": "2026-11-10T09:15:24.000Z",
-  "updated_at": "2026-11-10T22:10:21.000Z",
+  "updated_at": "2026-11-11T05:00:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 287,
   "trending_score": 0,
   "parameters": 29776626864,
   "parameters_human": "29.78B",
-  "storage_bytes": 60387145754,
-  "storage_human": "60.4 GB",
+  "storage_bytes": 75873393642,
+  "storage_human": "75.9 GB",
   "base_model": "meta-models/Muse-Glimmer-30B",
   "formats": [
     "safetensors"

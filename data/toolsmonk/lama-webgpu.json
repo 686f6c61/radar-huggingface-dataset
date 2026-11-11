@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "toolsmonk/lama-webgpu",
+  "slug": "toolsmonk-lama-webgpu",
+  "author": "toolsmonk",
+  "url": "https://huggingface.co/toolsmonk/lama-webgpu",
+  "created_at": "2026-11-11T08:46:12.000Z",
+  "updated_at": "2026-11-11T08:47:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "inpainting",
+    "object-removal",
+    "lama",
+    "webgpu",
+    "image-to-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 209033286,
+  "storage_human": "209 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

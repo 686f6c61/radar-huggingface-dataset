@@ -5,7 +5,7 @@
   "author": "sambal",
   "url": "https://huggingface.co/sambal/k2-horizon-3.7b-grpo-checkpoint-320",
   "created_at": "2026-11-10T14:18:29.000Z",
-  "updated_at": "2026-11-10T14:22:12.000Z",
+  "updated_at": "2026-11-10T18:39:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

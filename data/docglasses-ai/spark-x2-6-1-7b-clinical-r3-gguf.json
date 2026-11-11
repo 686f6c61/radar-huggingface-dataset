@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Docglasses-AI/spark-x2.6-1.7b-clinical-r3-gguf",
+  "slug": "docglasses-ai-spark-x2-6-1-7b-clinical-r3-gguf",
+  "author": "Docglasses-AI",
+  "url": "https://huggingface.co/Docglasses-AI/spark-x2.6-1.7b-clinical-r3-gguf",
+  "created_at": "2026-11-11T07:24:00.000Z",
+  "updated_at": "2026-11-11T07:27:33.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "medical",
+    "clinical",
+    "triage",
+    "derma",
+    "spark",
+    "llama.cpp",
+    "sarvadoc",
+    "text-generation",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1707657216,
+  "parameters_human": "1.71B",
+  "storage_bytes": 1057570176,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

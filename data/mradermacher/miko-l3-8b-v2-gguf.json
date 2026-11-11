@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Miko-L3-8B-v2-GGUF",
   "created_at": "2026-11-10T15:07:48.000Z",
-  "updated_at": "2026-11-10T15:26:46.000Z",
+  "updated_at": "2026-11-10T16:04:49.000Z",
   "license": "llama3",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
-  "storage_bytes": 55006885184,
-  "storage_human": "55.0 GB",
+  "storage_bytes": 71820248832,
+  "storage_human": "71.8 GB",
   "base_model": "ricer0ll/Miko-L3-8B-v2",
   "formats": [
     "gguf"

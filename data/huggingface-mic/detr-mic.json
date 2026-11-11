@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/detr-mic",
+  "slug": "huggingface-mic-detr-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/detr-mic",
+  "created_at": "2026-10-12T16:30:30.000Z",
+  "updated_at": "2026-11-11T11:25:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "detr",
+    "mic",
+    "test-artifact",
+    "base_model:facebook/detr-resnet-50",
+    "base_model:finetune:facebook/detr-resnet-50",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2253,
+  "trending_score": 0,
+  "parameters": 23880800,
+  "parameters_human": "23.9M",
+  "storage_bytes": 95566688,
+  "storage_human": "96 MB",
+  "base_model": "facebook/detr-resnet-50",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

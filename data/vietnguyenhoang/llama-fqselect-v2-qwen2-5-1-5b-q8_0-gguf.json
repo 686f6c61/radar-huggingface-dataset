@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "VietNguyenHoang/Llama-FQSelect-v2-Qwen2.5-1.5B-Q8_0-GGUF",
+  "slug": "vietnguyenhoang-llama-fqselect-v2-qwen2-5-1-5b-q8_0-gguf",
+  "author": "VietNguyenHoang",
+  "url": "https://huggingface.co/VietNguyenHoang/Llama-FQSelect-v2-Qwen2.5-1.5B-Q8_0-GGUF",
+  "created_at": "2026-11-11T07:34:11.000Z",
+  "updated_at": "2026-11-11T07:35:11.000Z",
+  "license": "llama3.3-and-qwen-terms",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "math",
+    "reasoning",
+    "chain-of-thought",
+    "knowledge-distillation",
+    "ollama",
+    "llama-cpp",
+    "text-generation",
+    "en",
+    "dataset:VietNguyenHoang/fq-select-math-distillation",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1646572416,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

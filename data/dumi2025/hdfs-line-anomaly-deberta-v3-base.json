@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Dumi2025/hdfs-line-anomaly-deberta-v3-base",
+  "slug": "dumi2025-hdfs-line-anomaly-deberta-v3-base",
+  "author": "Dumi2025",
+  "url": "https://huggingface.co/Dumi2025/hdfs-line-anomaly-deberta-v3-base",
+  "created_at": "2026-11-11T06:06:44.000Z",
+  "updated_at": "2026-11-11T06:07:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "log-anomaly-detection",
+    "hdfs",
+    "deberta",
+    "text-classification",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:finetune:microsoft/deberta-v3-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184423682,
+  "parameters_human": "184.4M",
+  "storage_bytes": 737719272,
+  "storage_human": "738 MB",
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

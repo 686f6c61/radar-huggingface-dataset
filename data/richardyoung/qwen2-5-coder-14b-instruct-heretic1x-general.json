@@ -5,7 +5,7 @@
   "author": "richardyoung",
   "url": "https://huggingface.co/richardyoung/Qwen2.5-Coder-14B-Instruct-heretic1x-general",
   "created_at": "2026-11-09T15:06:25.000Z",
-  "updated_at": "2026-11-09T15:55:57.000Z",
+  "updated_at": "2026-11-11T03:25:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

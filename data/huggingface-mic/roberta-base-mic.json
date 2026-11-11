@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/roberta-base-mic",
+  "slug": "huggingface-mic-roberta-base-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/roberta-base-mic",
+  "created_at": "2026-10-29T13:42:07.000Z",
+  "updated_at": "2026-11-11T11:26:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "mic",
+    "test-artifact",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1312,
+  "trending_score": 0,
+  "parameters": 3371545,
+  "parameters_human": "3.4M",
+  "storage_bytes": 13490924,
+  "storage_human": "13 MB",
+  "base_model": "FacebookAI/roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

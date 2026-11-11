@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "OpenIntelligenceNet/Phi-4-mini-instruct-Abliterated-GGUF",
+  "slug": "openintelligencenet-phi-4-mini-instruct-abliterated-gguf",
+  "author": "OpenIntelligenceNet",
+  "url": "https://huggingface.co/OpenIntelligenceNet/Phi-4-mini-instruct-Abliterated-GGUF",
+  "created_at": "2026-11-11T10:44:32.000Z",
+  "updated_at": "2026-11-11T10:44:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "phi-4",
+    "phi-4-mini",
+    "abliterated",
+    "uncensored",
+    "imatrix",
+    "quantized",
+    "text-generation",
+    "en",
+    "base_model:OpenIntelligenceNet/Phi-4-mini-instruct-Abliterated",
+    "base_model:quantized:OpenIntelligenceNet/Phi-4-mini-instruct-Abliterated",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8263808,
+  "storage_human": "8 MB",
+  "base_model": "OpenIntelligenceNet/Phi-4-mini-instruct-Abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

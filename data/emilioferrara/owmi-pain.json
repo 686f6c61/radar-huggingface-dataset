@@ -5,10 +5,10 @@
   "author": "emilioferrara",
   "url": "https://huggingface.co/emilioferrara/owmi-pain",
   "created_at": "2026-10-26T04:47:37.000Z",
-  "updated_at": "2026-11-10T07:20:01.000Z",
+  "updated_at": "2026-11-11T02:57:42.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "other",
   "library": null,
   "languages": [
     "en"
@@ -20,6 +20,7 @@
     "ai-welfare",
     "self-report",
     "owmi",
+    "other",
     "en",
     "arxiv:2611.10123",
     "arxiv:2608.20569",

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/grounding-dino-tiny-mic",
+  "slug": "huggingface-mic-grounding-dino-tiny-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/grounding-dino-tiny-mic",
+  "created_at": "2026-10-27T17:23:11.000Z",
+  "updated_at": "2026-11-11T11:25:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "grounding-dino",
+    "mic",
+    "test-artifact",
+    "base_model:IDEA-Research/grounding-dino-tiny",
+    "base_model:finetune:IDEA-Research/grounding-dino-tiny",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1521,
+  "trending_score": 0,
+  "parameters": 7714390,
+  "parameters_human": "7.7M",
+  "storage_bytes": 30901064,
+  "storage_human": "31 MB",
+  "base_model": "IDEA-Research/grounding-dino-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

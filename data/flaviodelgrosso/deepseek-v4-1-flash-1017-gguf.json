@@ -5,7 +5,7 @@
   "author": "flaviodelgrosso",
   "url": "https://huggingface.co/flaviodelgrosso/DeepSeek-V4.1-Flash-1017-GGUF",
   "created_at": "2026-10-24T19:48:10.000Z",
-  "updated_at": "2026-11-07T23:27:50.000Z",
+  "updated_at": "2026-11-10T15:25:37.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,10 +24,10 @@
   "likes": 2,
   "downloads_30d": 848,
   "trending_score": 0,
-  "parameters": 14225362530,
-  "parameters_human": "14.23B",
-  "storage_bytes": 1145960726688,
-  "storage_human": "1146.0 GB",
+  "parameters": 329965689984,
+  "parameters_human": "329.97B",
+  "storage_bytes": 1474114994336,
+  "storage_human": "1474.1 GB",
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [
     "gguf"

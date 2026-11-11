@@ -5,7 +5,7 @@
   "author": "siraxe",
   "url": "https://huggingface.co/siraxe/lightx2v_MiniMax-H3-Prompt-Rewriter_loras",
   "created_at": "2026-11-08T23:33:32.000Z",
-  "updated_at": "2026-11-09T20:45:38.000Z",
+  "updated_at": "2026-11-11T01:06:41.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "base_model:finetune:lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-FL2VA",
     "region:us"
   ],
-  "likes": 3,
+  "likes": 4,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

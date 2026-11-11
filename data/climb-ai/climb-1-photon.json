@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Climb-Ai/Climb-1-Photon",
+  "slug": "climb-ai-climb-1-photon",
+  "author": "Climb-Ai",
+  "url": "https://huggingface.co/Climb-Ai/Climb-1-Photon",
+  "created_at": "2026-11-11T05:29:20.000Z",
+  "updated_at": "2026-11-11T05:30:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "cli",
+    "bash",
+    "linux",
+    "terminal",
+    "unsloth",
+    "qwen",
+    "qwen3.5",
+    "wsp",
+    "weight-space-programming",
+    "text-generation",
+    "conversational",
+    "en",
+    "ru",
+    "base_model:RikiyaT/Qwen3.5-0.8B-weight-space-programming",
+    "base_model:finetune:RikiyaT/Qwen3.5-0.8B-weight-space-programming",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1524816947,
+  "storage_human": "1.5 GB",
+  "base_model": "RikiyaT/Qwen3.5-0.8B-weight-space-programming",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Faire croître votre patrimoine - Climb",
+      "url": "https://www.climb.fr/",
+      "snippet": "Climb vous aide à réduire vos impôts et à développer votre patrimoine en analysant instantanément votre situation. Nos experts sont …"
+    },
+    {
+      "title": "Découvrez les plus beaux cols & ascensions mondial avec Climbfinder",
+      "url": "https://climbfinder.com/fr",
+      "snippet": "This is why we climb Chaque montée a une histoire. Découvrez de nouvelles routes, planifiez votre sortie, dépassez-vous et voyez …"
+    },
+    {
+      "title": "Climb World | Salle de Bloc à Paris Montparnasse | 2800 m²",
+      "url": "https://www.climb-world.fr/",
+      "snippet": "Découvre Climb World, la plus grande salle d'escalade de bloc de Paris. 2800 m², 40 secteurs, KilterBoard XL, bar, yoga, cours kids. …"
+    },
+    {
+      "title": "Bienvenue chez Climb",
+      "url": "https://www.climb.fr/recrutement",
+      "snippet": "C’est là où on intervient ! Chez Climb, notre mission c’est de permettre de faire fructifier son patrimoine. Simplement."
+    },
+    {
+      "title": "Traduction CLIMB en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://mobile-dictionary.reverso.net/anglais-francais/climb",
+      "snippet": "Traduction de \"climb\" en français : grimper, augmenter, gravir. Verbe, nom, signification, prononciation, expressions idiomatiques en …"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "QijiaHe/dtdd-rebuttal-alfworld-clip-20261110",
+  "slug": "qijiahe-dtdd-rebuttal-alfworld-clip-20261110",
+  "author": "QijiaHe",
+  "url": "https://huggingface.co/QijiaHe/dtdd-rebuttal-alfworld-clip-20261110",
+  "created_at": "2026-11-11T04:48:10.000Z",
+  "updated_at": "2026-11-11T04:55:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4811726236,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "furiosa-ai",
   "url": "https://huggingface.co/furiosa-ai/Qwen3-VL-32B-Instruct",
   "created_at": "2026-06-09T15:23:26.000Z",
-  "updated_at": "2026-11-03T09:15:55.000Z",
+  "updated_at": "2026-11-10T10:44:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 33357390064,
   "parameters_human": "33.36B",
-  "storage_bytes": 164663764947,
-  "storage_human": "164.7 GB",
+  "storage_bytes": 168510909287,
+  "storage_human": "168.5 GB",
   "base_model": "Qwen/Qwen3-VL-32B-Instruct",
   "formats": [
     "safetensors"

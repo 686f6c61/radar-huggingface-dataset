@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "richardyoung/Qwen2.5-7B-Instruct-heretic1x-code-GGUF",
+  "slug": "richardyoung-qwen2-5-7b-instruct-heretic1x-code-gguf",
+  "author": "richardyoung",
+  "url": "https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-heretic1x-code-GGUF",
+  "created_at": "2026-11-11T04:46:27.000Z",
+  "updated_at": "2026-11-11T04:51:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "imatrix",
+    "research",
+    "text-generation",
+    "en",
+    "base_model:richardyoung/Qwen2.5-7B-Instruct-heretic1x-code",
+    "base_model:quantized:richardyoung/Qwen2.5-7B-Instruct-heretic1x-code",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 12790727360,
+  "storage_human": "12.8 GB",
+  "base_model": "richardyoung/Qwen2.5-7B-Instruct-heretic1x-code",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

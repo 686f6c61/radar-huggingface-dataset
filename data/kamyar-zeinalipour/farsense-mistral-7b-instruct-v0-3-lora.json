@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Kamyar-zeinalipour/FarSense-Mistral-7B-Instruct-v0.3-LoRA",
+  "slug": "kamyar-zeinalipour-farsense-mistral-7b-instruct-v0-3-lora",
+  "author": "Kamyar-zeinalipour",
+  "url": "https://huggingface.co/Kamyar-zeinalipour/FarSense-Mistral-7B-Instruct-v0.3-LoRA",
+  "created_at": "2026-11-11T11:48:04.000Z",
+  "updated_at": "2026-11-11T11:49:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "farsense",
+    "farsi",
+    "persian",
+    "commonsense-reasoning",
+    "lora",
+    "text-generation",
+    "fa",
+    "dataset:Kamyar-zeinalipour/CS_Farsi",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1226896520,
+  "storage_human": "1.2 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

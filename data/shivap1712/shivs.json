@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "shivap1712/shivs",
+  "slug": "shivap1712-shivs",
+  "author": "shivap1712",
+  "url": "https://huggingface.co/shivap1712/shivs",
+  "created_at": "2026-11-11T10:16:41.000Z",
+  "updated_at": "2026-11-11T10:18:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "voice-assistant",
+    "android",
+    "on-device",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 545771667,
+  "storage_human": "546 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

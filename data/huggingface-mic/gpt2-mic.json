@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/gpt2-mic",
+  "slug": "huggingface-mic-gpt2-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/gpt2-mic",
+  "created_at": "2026-10-12T14:20:36.000Z",
+  "updated_at": "2026-11-11T11:25:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "mic",
+    "test-artifact",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2527,
+  "trending_score": 0,
+  "parameters": 3382080,
+  "parameters_human": "3.4M",
+  "storage_bytes": 13530952,
+  "storage_human": "14 MB",
+  "base_model": "openai-community/gpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

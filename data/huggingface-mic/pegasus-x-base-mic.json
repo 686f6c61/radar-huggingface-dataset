@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/pegasus-x-base-mic",
+  "slug": "huggingface-mic-pegasus-x-base-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/pegasus-x-base-mic",
+  "created_at": "2026-11-11T09:11:40.000Z",
+  "updated_at": "2026-11-11T09:20:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "pegasus_x",
+    "mic",
+    "test-artifact",
+    "base_model:google/pegasus-x-base",
+    "base_model:finetune:google/pegasus-x-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6325184,
+  "parameters_human": "6.3M",
+  "storage_bytes": 27220817,
+  "storage_human": "27 MB",
+  "base_model": "google/pegasus-x-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

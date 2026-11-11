@@ -5,7 +5,7 @@
   "author": "mlboydaisuke",
   "url": "https://huggingface.co/mlboydaisuke/wav2vec2-keyword-spotting-OpenVINO",
   "created_at": "2026-11-07T06:52:09.000Z",
-  "updated_at": "2026-11-07T06:53:26.000Z",
+  "updated_at": "2026-11-10T08:19:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 956859868,
-  "storage_human": "957 MB",
+  "storage_bytes": 1498045037,
+  "storage_human": "1.5 GB",
   "base_model": "litert-community/wav2vec2-keyword-spotting",
   "formats": [
     "onnx"

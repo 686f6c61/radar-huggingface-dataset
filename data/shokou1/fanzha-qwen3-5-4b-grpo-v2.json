@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Shokou1/fanzha-qwen3.5-4b-grpo-v2",
+  "slug": "shokou1-fanzha-qwen3-5-4b-grpo-v2",
+  "author": "Shokou1",
+  "url": "https://huggingface.co/Shokou1/fanzha-qwen3.5-4b-grpo-v2",
+  "created_at": "2026-11-11T09:10:24.000Z",
+  "updated_at": "2026-11-11T09:17:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "fanzha",
+    "fraud-prevention",
+    "grpo",
+    "lora",
+    "experimental",
+    "text-generation",
+    "zh",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 519506392,
+  "storage_human": "520 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

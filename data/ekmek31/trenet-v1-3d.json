@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Ekmek31/trenet-v1.3d",
+  "slug": "ekmek31-trenet-v1-3d",
+  "author": "Ekmek31",
+  "url": "https://huggingface.co/Ekmek31/trenet-v1.3d",
+  "created_at": "2026-11-11T12:11:15.000Z",
+  "updated_at": "2026-11-11T12:15:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "turkish",
+    "small-language-model",
+    "experimental",
+    "text-generation",
+    "tr",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17676432,
+  "parameters_human": "17.7M",
+  "storage_bytes": 70722264,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

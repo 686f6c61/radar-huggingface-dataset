@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "tropicalfrog/galatea-0.0.1-hybrid",
+  "slug": "tropicalfrog-galatea-0-0-1-hybrid",
+  "author": "tropicalfrog",
+  "url": "https://huggingface.co/tropicalfrog/galatea-0.0.1-hybrid",
+  "created_at": "2026-11-06T18:28:18.000Z",
+  "updated_at": "2026-11-11T11:58:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "en",
+    "dataset:tropicalfrog/wikipedia-L1L4_augmented",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 278964586,
+  "storage_human": "279 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

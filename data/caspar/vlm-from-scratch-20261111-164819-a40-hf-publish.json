@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "caspar/vlm-from-scratch-20261111-164819-a40-hf-publish",
+  "slug": "caspar-vlm-from-scratch-20261111-164819-a40-hf-publish",
+  "author": "caspar",
+  "url": "https://huggingface.co/caspar/vlm-from-scratch-20261111-164819-a40-hf-publish",
+  "created_at": "2026-11-11T07:57:10.000Z",
+  "updated_at": "2026-11-11T08:15:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "pytorch",
+    "vision-language",
+    "educational",
+    "custom-architecture",
+    "en",
+    "ko",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1462677232,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

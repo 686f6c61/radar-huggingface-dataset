@@ -16,6 +16,7 @@
   ],
   "tags": [
     "mlx",
+    "safetensors",
     "qlora",
     "statistics",
     "dgp-regret",
@@ -39,7 +40,8 @@
   "storage_human": "13.4 GB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
-    "mlx"
+    "mlx",
+    "safetensors"
   ],
   "is_conversational": false,
   "gated": false,

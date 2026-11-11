@@ -5,7 +5,7 @@
   "author": "quickasr",
   "url": "https://huggingface.co/quickasr/Qwen3-ASR-0.6B-q8",
   "created_at": "2026-11-08T17:24:54.000Z",
-  "updated_at": "2026-11-08T17:27:41.000Z",
+  "updated_at": "2026-11-10T12:58:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 24,
+  "downloads_30d": 28,
   "trending_score": 0,
   "parameters": 796188672,
   "parameters_human": "796.2M",

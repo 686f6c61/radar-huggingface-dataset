@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "hyperionaidev/Ling-mini-2.0-ipad-GGUF",
+  "slug": "hyperionaidev-ling-mini-2-0-ipad-gguf",
+  "author": "hyperionaidev",
+  "url": "https://huggingface.co/hyperionaidev/Ling-mini-2.0-ipad-GGUF",
+  "created_at": "2026-11-11T10:06:32.000Z",
+  "updated_at": "2026-11-11T10:06:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "moe",
+    "edge",
+    "low-ram",
+    "ios",
+    "ipad",
+    "smolmaxxing",
+    "text-generation",
+    "base_model:inclusionAI/Ling-mini-2.0",
+    "base_model:quantized:inclusionAI/Ling-mini-2.0",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 268656,
+  "storage_human": "268656 B",
+  "base_model": "inclusionAI/Ling-mini-2.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "r/LocalLLaMA on Reddit: InclusionAI published GGUFs for the Ring-mini ...",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1np8uv6/inclusionai_published_ggufs_for_the_ringmini_and/",
+      "snippet": "82 votes, 22 comments. https://huggingface.co/inclusionAI/Ring-mini-2.0-GGUF https://huggingface.co/inclusionAI/Ling-mini-2.0-GGUF !!! warning !!!…"
+    }
+  ]
+}

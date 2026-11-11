@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Eitakinugasa/frog-gemma-2-2b-jpn-conversation-mlc",
+  "slug": "eitakinugasa-frog-gemma-2-2b-jpn-conversation-mlc",
+  "author": "Eitakinugasa",
+  "url": "https://huggingface.co/Eitakinugasa/frog-gemma-2-2b-jpn-conversation-mlc",
+  "created_at": "2026-11-11T05:16:11.000Z",
+  "updated_at": "2026-11-11T05:21:11.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "mlc",
+    "webllm",
+    "frog",
+    "education",
+    "ja",
+    "base_model:google/gemma-2-2b-jpn-it",
+    "base_model:finetune:google/gemma-2-2b-jpn-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1509519068,
+  "storage_human": "1.5 GB",
+  "base_model": "google/gemma-2-2b-jpn-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

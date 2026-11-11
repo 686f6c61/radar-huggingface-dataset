@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "neavo/SenseVoiceSmall-ONNX-CPU-INT8",
+  "slug": "neavo-sensevoicesmall-onnx-cpu-int8",
+  "author": "neavo",
+  "url": "https://huggingface.co/neavo/SenseVoiceSmall-ONNX-CPU-INT8",
+  "created_at": "2026-11-11T09:59:09.000Z",
+  "updated_at": "2026-11-11T09:59:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "yue"
+  ],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "int8",
+    "cpu",
+    "automatic-speech-recognition",
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "yue",
+    "base_model:FunAudioLLM/SenseVoiceSmall",
+    "base_model:quantized:FunAudioLLM/SenseVoiceSmall",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 241216270,
+  "storage_human": "241 MB",
+  "base_model": "FunAudioLLM/SenseVoiceSmall",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

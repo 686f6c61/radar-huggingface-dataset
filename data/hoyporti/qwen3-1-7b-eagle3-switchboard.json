@@ -5,7 +5,7 @@
   "author": "hoyporti",
   "url": "https://huggingface.co/hoyporti/qwen3-1.7b-eagle3-switchboard",
   "created_at": "2026-11-09T15:22:24.000Z",
-  "updated_at": "2026-11-09T15:38:02.000Z",
+  "updated_at": "2026-11-11T02:54:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,11 +13,12 @@
   "languages": [],
   "tags": [
     "transformers",
+    "onnx",
     "safetensors",
     "speculative-decoding",
     "eagle3",
     "base_model:AngelSlim/Qwen3-1.7B_eagle3",
-    "base_model:finetune:AngelSlim/Qwen3-1.7B_eagle3",
+    "base_model:quantized:AngelSlim/Qwen3-1.7B_eagle3",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
@@ -27,10 +28,11 @@
   "trending_score": 0,
   "parameters": 137031296,
   "parameters_human": "137.0M",
-  "storage_bytes": 274104120,
-  "storage_human": "274 MB",
+  "storage_bytes": 353031438,
+  "storage_human": "353 MB",
   "base_model": "Qwen/Qwen3-1.7B, AngelSlim/Qwen3-1.7B_eagle3",
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

@@ -5,7 +5,7 @@
   "author": "rao-studios",
   "url": "https://huggingface.co/rao-studios/braid-commons-mamba3-1.5b",
   "created_at": "2026-11-10T20:09:16.000Z",
-  "updated_at": "2026-11-10T20:16:21.000Z",
+  "updated_at": "2026-11-11T06:24:27.000Z",
   "license": "apache-2.0-and-llama3.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,12 +31,12 @@
     "license:other",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 1497082880,
   "parameters_human": "1.50B",
-  "storage_bytes": 5988370505,
+  "storage_bytes": 5990528688,
   "storage_human": "6.0 GB",
   "base_model": "state-spaces/mamba3-mimo-1.5b",
   "formats": [

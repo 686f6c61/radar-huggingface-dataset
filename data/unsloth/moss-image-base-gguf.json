@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "unsloth/MOSS-Image-Base-GGUF",
+  "slug": "unsloth-moss-image-base-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/MOSS-Image-Base-GGUF",
+  "created_at": "2026-10-22T00:04:31.000Z",
+  "updated_at": "2026-11-11T04:53:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "quantized",
+    "moss-image",
+    "text-to-image",
+    "en",
+    "zh",
+    "arxiv:2610.23374",
+    "base_model:OpenMOSS-Team/MOSS-Image-Base",
+    "base_model:quantized:OpenMOSS-Team/MOSS-Image-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 17,
+  "downloads_30d": 46902,
+  "trending_score": 0,
+  "parameters": 5082308624,
+  "parameters_human": "5.08B",
+  "storage_bytes": 33586402067,
+  "storage_human": "33.6 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

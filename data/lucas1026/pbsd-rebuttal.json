@@ -5,7 +5,7 @@
   "author": "lucas1026",
   "url": "https://huggingface.co/lucas1026/PBSD-rebuttal",
   "created_at": "2026-11-10T05:44:23.000Z",
-  "updated_at": "2026-11-10T08:13:27.000Z",
+  "updated_at": "2026-11-10T09:42:28.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5285580506,
-  "storage_human": "5.3 GB",
+  "storage_bytes": 19042511750,
+  "storage_human": "19.0 GB",
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"

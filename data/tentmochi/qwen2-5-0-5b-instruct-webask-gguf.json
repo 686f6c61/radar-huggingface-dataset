@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "tentmochi/Qwen2.5-0.5B-Instruct-WebAsk-GGUF",
+  "slug": "tentmochi-qwen2-5-0-5b-instruct-webask-gguf",
+  "author": "tentmochi",
+  "url": "https://huggingface.co/tentmochi/Qwen2.5-0.5B-Instruct-WebAsk-GGUF",
+  "created_at": "2026-11-11T10:16:58.000Z",
+  "updated_at": "2026-11-11T10:45:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "search-query",
+    "mochi-webask",
+    "ja",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 397807584,
+  "storage_human": "398 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

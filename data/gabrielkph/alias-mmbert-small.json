@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Gabrielkph/alias-mmbert-small",
+  "slug": "gabrielkph-alias-mmbert-small",
+  "author": "Gabrielkph",
+  "url": "https://huggingface.co/Gabrielkph/alias-mmbert-small",
+  "created_at": "2026-11-11T12:30:46.000Z",
+  "updated_at": "2026-11-11T12:37:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "pii",
+    "ner",
+    "anonymization",
+    "privacy",
+    "fr",
+    "en",
+    "base_model:jhu-clsp/mmBERT-small",
+    "base_model:finetune:jhu-clsp/mmBERT-small",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 140648081,
+  "parameters_human": "140.6M",
+  "storage_bytes": 596969788,
+  "storage_human": "597 MB",
+  "base_model": "jhu-clsp/mmBERT-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

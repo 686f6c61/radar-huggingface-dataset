@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "learner1119/ffw_sh5_n17_260820_left_eef_h50_abs_vis",
+  "slug": "learner1119-ffw_sh5_n17_260820_left_eef_h50_abs_vis",
+  "author": "learner1119",
+  "url": "https://huggingface.co/learner1119/ffw_sh5_n17_260820_left_eef_h50_abs_vis",
+  "created_at": "2026-11-11T07:22:14.000Z",
+  "updated_at": "2026-11-11T07:24:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "gr00t",
+    "dataset:learner1119/260820_eef",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6910507241,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

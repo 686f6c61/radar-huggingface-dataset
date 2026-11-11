@@ -5,7 +5,7 @@
   "author": "furiosa-ai",
   "url": "https://huggingface.co/furiosa-ai/Qwen3-VL-4B-Thinking",
   "created_at": "2026-07-24T06:51:08.000Z",
-  "updated_at": "2026-11-03T08:57:54.000Z",
+  "updated_at": "2026-11-10T10:34:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 4437815808,
   "parameters_human": "4.44B",
-  "storage_bytes": 16128893012,
-  "storage_human": "16.1 GB",
+  "storage_bytes": 16593627732,
+  "storage_human": "16.6 GB",
   "base_model": "Qwen/Qwen3-VL-4B-Thinking",
   "formats": [
     "safetensors"

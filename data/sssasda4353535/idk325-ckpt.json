@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "SSSASDA4353535/idk325-ckpt",
+  "slug": "sssasda4353535-idk325-ckpt",
+  "author": "SSSASDA4353535",
+  "url": "https://huggingface.co/SSSASDA4353535/idk325-ckpt",
+  "created_at": "2026-11-10T07:48:28.000Z",
+  "updated_at": "2026-11-11T08:43:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7751427399,
+  "storage_human": "7.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

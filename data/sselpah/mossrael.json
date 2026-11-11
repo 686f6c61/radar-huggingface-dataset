@@ -18,7 +18,7 @@
     "base_model:finetune:OpenMOSS-Team/MOSS-Image-Base",
     "region:us"
   ],
-  "likes": 24,
+  "likes": 25,
   "downloads_30d": 0,
   "trending_score": 11,
   "parameters": null,

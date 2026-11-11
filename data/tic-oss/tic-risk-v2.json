@@ -5,7 +5,7 @@
   "author": "tic-oss",
   "url": "https://huggingface.co/tic-oss/tic-risk-v2",
   "created_at": "2026-10-31T11:43:14.000Z",
-  "updated_at": "2026-10-31T11:43:41.000Z",
+  "updated_at": "2026-11-10T17:05:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "tabular-classification",
@@ -25,7 +25,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 2,
+  "likes": 3,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/llama-mic",
+  "slug": "huggingface-mic-llama-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/llama-mic",
+  "created_at": "2026-10-12T14:22:13.000Z",
+  "updated_at": "2026-11-11T11:25:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "mic",
+    "test-artifact",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2443,
+  "trending_score": 0,
+  "parameters": 3219776,
+  "parameters_human": "3.2M",
+  "storage_bytes": 6441680,
+  "storage_human": "6 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

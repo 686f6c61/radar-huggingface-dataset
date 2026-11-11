@@ -5,7 +5,7 @@
   "author": "jcbtc",
   "url": "https://huggingface.co/jcbtc/Qwen3.8-Flash-CIRU-STRIX-IU4",
   "created_at": "2026-08-29T05:58:11.000Z",
-  "updated_at": "2026-11-08T13:12:26.000Z",
+  "updated_at": "2026-11-10T20:29:27.000Z",
   "license": "qwen-community-1.0",
   "license_family": "non-commercial",
   "pipeline_tag": "image-text-to-text",
@@ -35,8 +35,8 @@
   "trending_score": 10,
   "parameters": 125875774336,
   "parameters_human": "125.88B",
-  "storage_bytes": 210107414679,
-  "storage_human": "210.1 GB",
+  "storage_bytes": 210154011450,
+  "storage_human": "210.2 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next, Qwen/Qwen3.8-Flash-Next-FP8",
   "formats": [
     "gguf"

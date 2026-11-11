@@ -4,8 +4,8 @@
   "slug": "linliaaa-myawesomemodel-testrepo",
   "author": "linliaaa",
   "url": "https://huggingface.co/linliaaa/MyAwesomeModel-TestRepo",
-  "created_at": "2026-11-10T05:53:11.000Z",
-  "updated_at": "2026-11-10T05:53:44.000Z",
+  "created_at": "2026-11-10T10:32:27.000Z",
+  "updated_at": "2026-11-10T10:32:31.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -13,9 +13,6 @@
   "languages": [],
   "tags": [
     "transformers",
-    "pytorch",
-    "bert",
-    "feature-extraction",
     "license:mit",
     "endpoints_compatible",
     "region:us"

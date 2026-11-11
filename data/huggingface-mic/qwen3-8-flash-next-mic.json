@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/Qwen3.8-Flash-Next-mic",
   "created_at": "2026-10-29T16:39:58.000Z",
-  "updated_at": "2026-11-05T17:17:30.000Z",
+  "updated_at": "2026-11-10T14:10:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1089,
+  "downloads_30d": 1420,
   "trending_score": 0,
   "parameters": 33880163,
   "parameters_human": "33.9M",

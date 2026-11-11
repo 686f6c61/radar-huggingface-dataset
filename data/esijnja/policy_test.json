@@ -5,7 +5,7 @@
   "author": "esijnja",
   "url": "https://huggingface.co/esijnja/policy_test",
   "created_at": "2026-11-08T07:51:04.000Z",
-  "updated_at": "2026-11-08T07:51:20.000Z",
+  "updated_at": "2026-11-10T11:06:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -14,9 +14,9 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "robotics",
     "act",
-    "dataset:esijnja/hackaton26_test_20261107_182356",
+    "robotics",
+    "dataset:esijnja/hackaton26_test_20261109_213455",
     "arxiv:2304.13705",
     "region:us"
   ],
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 51668614,
   "parameters_human": "51.7M",
-  "storage_bytes": 206712856,
-  "storage_human": "207 MB",
+  "storage_bytes": 413427704,
+  "storage_human": "413 MB",
   "base_model": null,
   "formats": [
     "safetensors"

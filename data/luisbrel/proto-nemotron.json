@@ -5,7 +5,7 @@
   "author": "luisbrel",
   "url": "https://huggingface.co/luisbrel/proto-nemotron",
   "created_at": "2026-11-11T00:32:27.000Z",
-  "updated_at": "2026-11-11T00:45:10.000Z",
+  "updated_at": "2026-11-11T01:30:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
   "trending_score": 0,
   "parameters": 31577940288,
   "parameters_human": "31.58B",
-  "storage_bytes": 17792834502,
+  "storage_bytes": 17793723743,
   "storage_human": "17.8 GB",
   "base_model": null,
   "formats": [

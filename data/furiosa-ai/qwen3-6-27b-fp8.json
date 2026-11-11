@@ -5,7 +5,7 @@
   "author": "furiosa-ai",
   "url": "https://huggingface.co/furiosa-ai/Qwen3.6-27B-FP8",
   "created_at": "2026-10-14T08:11:53.000Z",
-  "updated_at": "2026-11-03T08:56:34.000Z",
+  "updated_at": "2026-11-10T10:34:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
-  "storage_bytes": 46714228975,
-  "storage_human": "46.7 GB",
+  "storage_bytes": 48258133993,
+  "storage_human": "48.3 GB",
   "base_model": "Qwen/Qwen3.6-27B-FP8",
   "formats": [
     "safetensors"

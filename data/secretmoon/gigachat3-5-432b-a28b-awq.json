@@ -5,7 +5,7 @@
   "author": "secretmoon",
   "url": "https://huggingface.co/secretmoon/GigaChat3.5-432B-A28B-AWQ",
   "created_at": "2026-11-10T14:34:20.000Z",
-  "updated_at": "2026-11-10T14:44:17.000Z",
+  "updated_at": "2026-11-10T19:19:24.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

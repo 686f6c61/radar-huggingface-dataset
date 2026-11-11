@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "darkmaniac7/TokForge-DreamShaper-LCM-GGUF",
+  "slug": "darkmaniac7-tokforge-dreamshaper-lcm-gguf",
+  "author": "darkmaniac7",
+  "url": "https://huggingface.co/darkmaniac7/TokForge-DreamShaper-LCM-GGUF",
+  "created_at": "2026-06-06T01:47:21.000Z",
+  "updated_at": "2026-11-11T05:34:08.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-to-image",
+    "stable-diffusion",
+    "dreamshaper",
+    "lcm",
+    "stable-diffusion-cpp",
+    "tokforge",
+    "on-device",
+    "image-generation",
+    "sd1.5",
+    "en",
+    "base_model:Lykon/dreamshaper-7",
+    "base_model:merge:Lykon/dreamshaper-7",
+    "base_model:latent-consistency/lcm-lora-sdv1-5",
+    "base_model:merge:latent-consistency/lcm-lora-sdv1-5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 512,
+  "trending_score": 0,
+  "parameters": 1066235307,
+  "parameters_human": "1.07B",
+  "storage_bytes": 2132584864,
+  "storage_human": "2.1 GB",
+  "base_model": "Lykon/dreamshaper-7, latent-consistency/lcm-lora-sdv1-5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

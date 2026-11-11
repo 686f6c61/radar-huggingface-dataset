@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "HappyBulingling/MyModel-sft",
+  "slug": "happybulingling-mymodel-sft",
+  "author": "HappyBulingling",
+  "url": "https://huggingface.co/HappyBulingling/MyModel-sft",
+  "created_at": "2026-11-11T12:18:10.000Z",
+  "updated_at": "2026-11-11T12:33:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mymodel",
+    "text-generation",
+    "causal-lm",
+    "conversational",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 259042816,
+  "parameters_human": "259.0M",
+  "storage_bytes": 1036196104,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

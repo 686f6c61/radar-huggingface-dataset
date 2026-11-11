@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "aiquantgod/Hermit-MiniCPM5-2B-MLX-4bit",
+  "slug": "aiquantgod-hermit-minicpm5-2b-mlx-4bit",
+  "author": "aiquantgod",
+  "url": "https://huggingface.co/aiquantgod/Hermit-MiniCPM5-2B-MLX-4bit",
+  "created_at": "2026-11-07T09:56:48.000Z",
+  "updated_at": "2026-11-07T11:34:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "hermit",
+    "base_model:SonGT1/MiniCPM5-abliterated-2B",
+    "base_model:quantized:SonGT1/MiniCPM5-abliterated-2B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 73,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1416035216,
+  "storage_human": "1.4 GB",
+  "base_model": "SonGT1/MiniCPM5-abliterated-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "starstone3/HFD-Baseline-Shared-Training-Assets",
+  "slug": "starstone3-hfd-baseline-shared-training-assets",
+  "author": "starstone3",
+  "url": "https://huggingface.co/starstone3/HFD-Baseline-Shared-Training-Assets",
+  "created_at": "2026-11-11T09:28:41.000Z",
+  "updated_at": "2026-11-11T10:18:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1726810933,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

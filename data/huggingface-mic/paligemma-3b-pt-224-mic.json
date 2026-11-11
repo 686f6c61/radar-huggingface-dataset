@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/paligemma-3b-pt-224-mic",
+  "slug": "huggingface-mic-paligemma-3b-pt-224-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/paligemma-3b-pt-224-mic",
+  "created_at": "2026-10-30T10:54:25.000Z",
+  "updated_at": "2026-11-11T11:25:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "paligemma",
+    "mic",
+    "test-artifact",
+    "base_model:leo009/paligemma-3b-pt-224",
+    "base_model:finetune:leo009/paligemma-3b-pt-224",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1295,
+  "trending_score": 0,
+  "parameters": 16657088,
+  "parameters_human": "16.7M",
+  "storage_bytes": 221753267,
+  "storage_human": "222 MB",
+  "base_model": "leo009/paligemma-3b-pt-224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

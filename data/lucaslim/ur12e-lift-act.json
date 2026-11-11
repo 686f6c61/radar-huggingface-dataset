@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "lucaslim/ur12e-lift-act",
+  "slug": "lucaslim-ur12e-lift-act",
+  "author": "lucaslim",
+  "url": "https://huggingface.co/lucaslim/ur12e-lift-act",
+  "created_at": "2026-11-11T12:46:12.000Z",
+  "updated_at": "2026-11-11T12:46:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "reality-check",
+    "ur12e",
+    "robotics",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51683975,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206775492,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "rao-studios",
   "url": "https://huggingface.co/rao-studios/kokoro-paradee-8m-coreml",
   "created_at": "2026-11-08T21:47:52.000Z",
-  "updated_at": "2026-11-08T21:48:05.000Z",
+  "updated_at": "2026-11-11T06:24:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "openmartdev/AwakenFullDuplex-Qwen3Omni",
+  "slug": "openmartdev-awakenfullduplex-qwen3omni",
+  "author": "openmartdev",
+  "url": "https://huggingface.co/openmartdev/AwakenFullDuplex-Qwen3Omni",
+  "created_at": "2026-11-11T01:32:41.000Z",
+  "updated_at": "2026-11-11T02:00:10.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "full-duplex",
+    "speech-to-speech",
+    "spoken-dialogue",
+    "audio-language-model",
+    "audio-to-audio",
+    "en",
+    "arxiv:2503.04721",
+    "arxiv:2507.23159",
+    "arxiv:2611.02430",
+    "base_model:Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7907354525,
+  "storage_human": "7.9 GB",
+  "base_model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

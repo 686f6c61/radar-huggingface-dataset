@@ -5,7 +5,7 @@
   "author": "wentywenty",
   "url": "https://huggingface.co/wentywenty/roboparty-action-rpo-interrupt",
   "created_at": "2026-11-06T04:57:36.000Z",
-  "updated_at": "2026-11-10T17:21:00.000Z",
+  "updated_at": "2026-11-10T19:28:32.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -13,7 +13,7 @@
   "languages": [],
   "tags": [
     "onnx",
-    "roboparty",
+    "robopoly",
     "robotics",
     "humanoid",
     "action",

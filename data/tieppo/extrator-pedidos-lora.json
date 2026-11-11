@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Tieppo/extrator-pedidos-lora",
+  "slug": "tieppo-extrator-pedidos-lora",
+  "author": "Tieppo",
+  "url": "https://huggingface.co/Tieppo/extrator-pedidos-lora",
+  "created_at": "2026-11-11T04:59:37.000Z",
+  "updated_at": "2026-11-11T05:00:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "information-extraction",
+    "structured-output",
+    "pt",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2175168,
+  "storage_human": "2 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

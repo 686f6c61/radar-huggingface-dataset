@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "hirokidesuyo/LFM2.5-24B-A2B-Distill-GGUF",
+  "slug": "hirokidesuyo-lfm2-5-24b-a2b-distill-gguf",
+  "author": "hirokidesuyo",
+  "url": "https://huggingface.co/hirokidesuyo/LFM2.5-24B-A2B-Distill-GGUF",
+  "created_at": "2026-11-11T05:58:26.000Z",
+  "updated_at": "2026-11-11T05:58:31.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama.cpp",
+    "distillation",
+    "lora",
+    "sft",
+    "text-generation",
+    "en",
+    "ja",
+    "base_model:LiquidAI/LFM2.5-24B-A2B",
+    "base_model:adapter:LiquidAI/LFM2.5-24B-A2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27764614,
+  "storage_human": "28 MB",
+  "base_model": "LiquidAI/LFM2.5-24B-A2B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

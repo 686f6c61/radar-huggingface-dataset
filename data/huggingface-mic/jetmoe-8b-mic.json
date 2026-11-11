@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/jetmoe-8b-mic",
+  "slug": "huggingface-mic-jetmoe-8b-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/jetmoe-8b-mic",
+  "created_at": "2026-11-05T11:36:23.000Z",
+  "updated_at": "2026-11-11T11:25:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "jetmoe",
+    "mic",
+    "test-artifact",
+    "base_model:jetmoe/jetmoe-8b",
+    "base_model:finetune:jetmoe/jetmoe-8b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 585,
+  "trending_score": 0,
+  "parameters": 2573888,
+  "parameters_human": "2.6M",
+  "storage_bytes": 10791667,
+  "storage_human": "11 MB",
+  "base_model": "jetmoe/jetmoe-8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

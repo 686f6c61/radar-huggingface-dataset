@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/resnet-18-mic",
+  "slug": "huggingface-mic-resnet-18-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/resnet-18-mic",
+  "created_at": "2026-10-26T09:05:09.000Z",
+  "updated_at": "2026-11-11T11:26:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "resnet",
+    "mic",
+    "test-artifact",
+    "base_model:microsoft/resnet-18",
+    "base_model:finetune:microsoft/resnet-18",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1307,
+  "trending_score": 0,
+  "parameters": 11699112,
+  "parameters_human": "11.7M",
+  "storage_bytes": 52242816,
+  "storage_human": "52 MB",
+  "base_model": "microsoft/resnet-18",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

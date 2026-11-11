@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/opus-mt-fr-en-mic",
+  "slug": "huggingface-mic-opus-mt-fr-en-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/opus-mt-fr-en-mic",
+  "created_at": "2026-10-29T18:51:33.000Z",
+  "updated_at": "2026-11-11T11:25:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "marian",
+    "mic",
+    "test-artifact",
+    "base_model:Helsinki-NLP/opus-mt-fr-en",
+    "base_model:finetune:Helsinki-NLP/opus-mt-fr-en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1286,
+  "trending_score": 0,
+  "parameters": 4035834,
+  "parameters_human": "4.0M",
+  "storage_bytes": 17733448,
+  "storage_human": "18 MB",
+  "base_model": "Helsinki-NLP/opus-mt-fr-en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

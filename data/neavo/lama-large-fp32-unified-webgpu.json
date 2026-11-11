@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "neavo/lama-large-fp32-unified-webgpu",
+  "slug": "neavo-lama-large-fp32-unified-webgpu",
+  "author": "neavo",
+  "url": "https://huggingface.co/neavo/lama-large-fp32-unified-webgpu",
+  "created_at": "2026-11-11T04:41:08.000Z",
+  "updated_at": "2026-11-11T04:46:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "image-inpainting",
+    "manga",
+    "lama",
+    "base_model:dreMaz/AnimeMangaInpainting",
+    "base_model:quantized:dreMaz/AnimeMangaInpainting",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 204452450,
+  "storage_human": "204 MB",
+  "base_model": "dreMaz/AnimeMangaInpainting",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

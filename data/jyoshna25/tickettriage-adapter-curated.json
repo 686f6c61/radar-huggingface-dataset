@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "jyoshna25/tickettriage-adapter-curated",
+  "slug": "jyoshna25-tickettriage-adapter-curated",
+  "author": "jyoshna25",
+  "url": "https://huggingface.co/jyoshna25/tickettriage-adapter-curated",
+  "created_at": "2026-11-11T07:29:46.000Z",
+  "updated_at": "2026-11-11T07:29:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:CohereLabs/tiny-aya-global",
+    "base_model:finetune:CohereLabs/tiny-aya-global",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142448757,
+  "storage_human": "142 MB",
+  "base_model": "CohereLabs/tiny-aya-global",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

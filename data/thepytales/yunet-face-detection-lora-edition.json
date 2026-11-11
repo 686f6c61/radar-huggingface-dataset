@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "thepytales/yunet-face-detection-lora-edition",
+  "slug": "thepytales-yunet-face-detection-lora-edition",
+  "author": "thepytales",
+  "url": "https://huggingface.co/thepytales/yunet-face-detection-lora-edition",
+  "created_at": "2026-11-11T07:21:29.000Z",
+  "updated_at": "2026-11-11T07:21:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "face-detection",
+    "lora-edition",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 232589,
+  "storage_human": "232589 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

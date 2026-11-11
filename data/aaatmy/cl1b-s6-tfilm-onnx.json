@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "aaatmy/cl1b-s6-tfilm-onnx",
+  "slug": "aaatmy-cl1b-s6-tfilm-onnx",
+  "author": "aaatmy",
+  "url": "https://huggingface.co/aaatmy/cl1b-s6-tfilm-onnx",
+  "created_at": "2026-11-11T06:18:05.000Z",
+  "updated_at": "2026-11-11T06:18:13.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "audio-effects",
+    "dynamic-range-compression",
+    "virtual-analog",
+    "state-space-model",
+    "mamba",
+    "audio-to-audio",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30480034,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

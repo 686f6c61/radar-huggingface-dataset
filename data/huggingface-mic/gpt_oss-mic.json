@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/gpt_oss-mic",
+  "slug": "huggingface-mic-gpt_oss-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/gpt_oss-mic",
+  "created_at": "2026-10-12T15:57:06.000Z",
+  "updated_at": "2026-11-11T11:25:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt_oss",
+    "mic",
+    "test-artifact",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:finetune:openai/gpt-oss-20b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1675,
+  "trending_score": 0,
+  "parameters": 25964240,
+  "parameters_human": "26.0M",
+  "storage_bytes": 131729110,
+  "storage_human": "132 MB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

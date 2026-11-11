@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ViCrit-7B-GGUF",
+  "slug": "mradermacher-vicrit-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ViCrit-7B-GGUF",
+  "created_at": "2025-06-08T08:02:45.000Z",
+  "updated_at": "2026-11-11T10:07:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:zyang39/ViCrit-7B",
+    "base_model:quantized:zyang39/ViCrit-7B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 238,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70354153344,
+  "storage_human": "70.4 GB",
+  "base_model": "zyang39/ViCrit-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "thepytales/multilingual-e5-small-lora-edition",
+  "slug": "thepytales-multilingual-e5-small-lora-edition",
+  "author": "thepytales",
+  "url": "https://huggingface.co/thepytales/multilingual-e5-small-lora-edition",
+  "created_at": "2026-11-11T06:36:52.000Z",
+  "updated_at": "2026-11-11T06:37:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": null,
+  "languages": [
+    "multilingual",
+    "de"
+  ],
+  "tags": [
+    "onnx",
+    "sentence-similarity",
+    "lora-edition",
+    "multilingual",
+    "de",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:quantized:intfloat/multilingual-e5-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123415875,
+  "storage_human": "123 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

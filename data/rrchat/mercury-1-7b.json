@@ -44,10 +44,11 @@
     "base_model:LiquidAI/LFM3-VL-2B",
     "base_model:finetune:LiquidAI/LFM3-VL-2B",
     "license:apache-2.0",
+    "endpoints_compatible",
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 46,
+  "downloads_30d": 47,
   "trending_score": 0,
   "parameters": 1918181888,
   "parameters_human": "1.92B",

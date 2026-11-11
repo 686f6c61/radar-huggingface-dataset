@@ -5,7 +5,7 @@
   "author": "eval-apply",
   "url": "https://huggingface.co/eval-apply/silvann_tq_D8E4_qwen3.5_122b_a10b",
   "created_at": "2026-09-30T21:41:44.000Z",
-  "updated_at": "2026-11-07T21:11:34.000Z",
+  "updated_at": "2026-11-10T11:48:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 116,
+  "downloads_30d": 114,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

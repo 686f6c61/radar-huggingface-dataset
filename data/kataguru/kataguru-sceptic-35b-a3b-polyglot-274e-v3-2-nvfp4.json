@@ -5,7 +5,7 @@
   "author": "kataguru",
   "url": "https://huggingface.co/kataguru/Kataguru-Sceptic-35B-A3B-Polyglot-274E-v3.2-NVFP4",
   "created_at": "2026-11-10T06:52:36.000Z",
-  "updated_at": "2026-11-10T06:53:00.000Z",
+  "updated_at": "2026-11-11T02:43:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -64,8 +64,8 @@
   "trending_score": 0,
   "parameters": 38274881392,
   "parameters_human": "38.27B",
-  "storage_bytes": 23732511696,
-  "storage_human": "23.7 GB",
+  "storage_bytes": 71134220056,
+  "storage_human": "71.1 GB",
   "base_model": "kataguru/Kataguru-Sceptic-35B-A3B-v3.1",
   "formats": [
     "safetensors"

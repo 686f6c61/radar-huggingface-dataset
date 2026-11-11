@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/mask2former-swin-tiny-coco-instance-mic",
+  "slug": "huggingface-mic-mask2former-swin-tiny-coco-instance-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/mask2former-swin-tiny-coco-instance-mic",
+  "created_at": "2026-10-29T20:04:30.000Z",
+  "updated_at": "2026-11-11T11:25:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mask2former",
+    "mic",
+    "test-artifact",
+    "base_model:facebook/mask2former-swin-tiny-coco-instance",
+    "base_model:finetune:facebook/mask2former-swin-tiny-coco-instance",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1247,
+  "trending_score": 0,
+  "parameters": 8049040,
+  "parameters_human": "8.0M",
+  "storage_bytes": 32221840,
+  "storage_human": "32 MB",
+  "base_model": "facebook/mask2former-swin-tiny-coco-instance",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

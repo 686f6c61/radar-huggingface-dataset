@@ -5,7 +5,7 @@
   "author": "hannahglz25",
   "url": "https://huggingface.co/hannahglz25/megapapers-models",
   "created_at": "2026-10-12T17:59:13.000Z",
-  "updated_at": "2026-11-03T14:40:24.000Z",
+  "updated_at": "2026-11-11T04:07:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 116768511432,
-  "storage_human": "116.8 GB",
+  "storage_bytes": 145960639104,
+  "storage_human": "146.0 GB",
   "base_model": "allenai/Olmo-3-1025-7B",
   "formats": [
     "safetensors"

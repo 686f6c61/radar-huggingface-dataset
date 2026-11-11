@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Amogh06/mistral-7B-amazon-reviews",
+  "slug": "amogh06-mistral-7b-amazon-reviews",
+  "author": "Amogh06",
+  "url": "https://huggingface.co/Amogh06/mistral-7B-amazon-reviews",
+  "created_at": "2026-11-11T10:31:15.000Z",
+  "updated_at": "2026-11-11T10:49:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 28992720620,
+  "storage_human": "29.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deposit Photos Review for November 2026 | Best Stock Photo Services",
+      "url": "https://www.topconsumerreviews.com/best-stock-photo-services/reviews/deposit-photos.php",
+      "snippet": "10 hours ago · Deposit Photos Review: Stock Photo Services We've analyzed the best Stock Photo Services to help you find the …"
+    }
+  ]
+}

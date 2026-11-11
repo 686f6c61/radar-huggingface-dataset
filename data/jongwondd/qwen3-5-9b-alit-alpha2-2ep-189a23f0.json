@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Jongwondd/Qwen3.5-9B-ALiT-alpha2-2ep-189a23f0",
+  "slug": "jongwondd-qwen3-5-9b-alit-alpha2-2ep-189a23f0",
+  "author": "Jongwondd",
+  "url": "https://huggingface.co/Jongwondd/Qwen3.5-9B-ALiT-alpha2-2ep-189a23f0",
+  "created_at": "2026-11-11T07:23:39.000Z",
+  "updated_at": "2026-11-11T07:23:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "negation",
+    "research",
+    "alit_alpha2",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 173181072,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/xlm-roberta-base-mic",
+  "slug": "huggingface-mic-xlm-roberta-base-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/xlm-roberta-base-mic",
+  "created_at": "2026-10-29T13:42:13.000Z",
+  "updated_at": "2026-11-11T11:26:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "mic",
+    "test-artifact",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1306,
+  "trending_score": 0,
+  "parameters": 16354450,
+  "parameters_human": "16.4M",
+  "storage_bytes": 70491611,
+  "storage_human": "70 MB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

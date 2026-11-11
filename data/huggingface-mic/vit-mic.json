@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/vit-mic",
+  "slug": "huggingface-mic-vit-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/vit-mic",
+  "created_at": "2026-10-12T14:21:11.000Z",
+  "updated_at": "2026-11-11T11:25:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "mic",
+    "test-artifact",
+    "base_model:google/vit-base-patch16-224",
+    "base_model:finetune:google/vit-base-patch16-224",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2255,
+  "trending_score": 0,
+  "parameters": 193960,
+  "parameters_human": "193960",
+  "storage_bytes": 780144,
+  "storage_human": "780144 B",
+  "base_model": "google/vit-base-patch16-224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

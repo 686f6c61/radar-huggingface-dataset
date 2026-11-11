@@ -5,7 +5,7 @@
   "author": "mylonasc",
   "url": "https://huggingface.co/mylonasc/open-fret-tab",
   "created_at": "2026-11-09T22:10:24.000Z",
-  "updated_at": "2026-11-09T22:13:41.000Z",
+  "updated_at": "2026-11-11T00:13:39.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 3603712,
   "parameters_human": "3.6M",
-  "storage_bytes": 14422656,
-  "storage_human": "14 MB",
+  "storage_bytes": 28845312,
+  "storage_human": "29 MB",
   "base_model": null,
   "formats": [
     "safetensors"

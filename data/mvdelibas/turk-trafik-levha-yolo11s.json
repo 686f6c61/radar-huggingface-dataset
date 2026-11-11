@@ -5,7 +5,7 @@
   "author": "mvdelibas",
   "url": "https://huggingface.co/mvdelibas/turk-trafik-levha-yolo11s",
   "created_at": "2026-11-01T22:02:39.000Z",
-  "updated_at": "2026-11-08T20:16:18.000Z",
+  "updated_at": "2026-11-10T21:54:57.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -27,6 +27,7 @@
     "object-detection",
     "tr",
     "license:cc-by-sa-4.0",
+    "model-index",
     "region:us"
   ],
   "likes": 0,

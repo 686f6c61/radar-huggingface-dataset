@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "S3ckn11g0r/CROWN-Krea2-Edit-Anime2Real-1to1",
+  "slug": "s3ckn11g0r-crown-krea2-edit-anime2real-1to1",
+  "author": "S3ckn11g0r",
+  "url": "https://huggingface.co/S3ckn11g0r/CROWN-Krea2-Edit-Anime2Real-1to1",
+  "created_at": "2026-11-11T09:22:18.000Z",
+  "updated_at": "2026-11-11T09:22:25.000Z",
+  "license": "bespoke-lora-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "comfyui",
+    "krea-2",
+    "ninecrowns",
+    "concept",
+    "realistic",
+    "image-edit",
+    "photorealistic",
+    "anime-to-real",
+    "text-to-image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 488797682,
+  "storage_human": "489 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    }
+  ]
+}

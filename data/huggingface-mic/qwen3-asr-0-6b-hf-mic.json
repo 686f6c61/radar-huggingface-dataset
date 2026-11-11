@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/Qwen3-ASR-0.6B-hf-mic",
   "created_at": "2026-10-29T17:43:19.000Z",
-  "updated_at": "2026-11-02T15:29:39.000Z",
+  "updated_at": "2026-11-10T14:26:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1119,
+  "downloads_30d": 1302,
   "trending_score": 0,
   "parameters": 9877840,
   "parameters_human": "9.9M",

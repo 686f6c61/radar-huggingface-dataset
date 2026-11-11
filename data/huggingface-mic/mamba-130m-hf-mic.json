@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/mamba-130m-hf-mic",
+  "slug": "huggingface-mic-mamba-130m-hf-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/mamba-130m-hf-mic",
+  "created_at": "2026-10-29T22:45:33.000Z",
+  "updated_at": "2026-11-11T11:25:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mamba",
+    "mic",
+    "test-artifact",
+    "base_model:state-spaces/mamba-130m-hf",
+    "base_model:finetune:state-spaces/mamba-130m-hf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1370,
+  "trending_score": 0,
+  "parameters": 3305920,
+  "parameters_human": "3.3M",
+  "storage_bytes": 13225984,
+  "storage_human": "13 MB",
+  "base_model": "state-spaces/mamba-130m-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

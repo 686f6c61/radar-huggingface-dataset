@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Unlimited-OCR-mic",
+  "slug": "huggingface-mic-unlimited-ocr-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Unlimited-OCR-mic",
+  "created_at": "2026-10-29T19:51:33.000Z",
+  "updated_at": "2026-11-11T11:26:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "unlimited_ocr",
+    "mic",
+    "test-artifact",
+    "custom_code",
+    "base_model:baidu/Unlimited-OCR",
+    "base_model:finetune:baidu/Unlimited-OCR",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1271,
+  "trending_score": 0,
+  "parameters": 18573568,
+  "parameters_human": "18.6M",
+  "storage_bytes": 37619276,
+  "storage_human": "38 MB",
+  "base_model": "baidu/Unlimited-OCR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

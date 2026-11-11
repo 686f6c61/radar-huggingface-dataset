@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "thepytales/gemma-4-e4b-lora-edition",
+  "slug": "thepytales-gemma-4-e4b-lora-edition",
+  "author": "thepytales",
+  "url": "https://huggingface.co/thepytales/gemma-4-e4b-lora-edition",
+  "created_at": "2026-11-11T06:47:12.000Z",
+  "updated_at": "2026-11-11T06:47:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lora-edition",
+    "de",
+    "en",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:quantized:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 5150682208,
+  "storage_human": "5.2 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "l'arrivée de son amie trouble déjà la fête - ActuaLitté",
+      "url": "https://actualitte.com/article/135099/edition/nothomb-chez-gallimard-l-arrivee-de-son-amie-trouble-deja-la-fete",
+      "snippet": "4 days ago · Florence Godfernaux rejoindrait la romancière, reste à savoir sous quelle forme. La distinction importe, …"
+    },
+    {
+      "title": "Bio de Florence Godfernaux – Press Office chez Albin Michel Editions",
+      "url": "https://www.theofficialboard.fr/biographie/florence-godfernaux-361d2",
+      "snippet": "Jul 29, 2026 · Découvrez le rôle de Florence Godfernaux, Head of Press Office chez Albin Michel Editions. Bio complète sur The …"
+    }
+  ]
+}

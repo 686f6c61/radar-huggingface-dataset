@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "agu18dec/mOre-lenses",
+  "slug": "agu18dec-more-lenses",
+  "author": "agu18dec",
+  "url": "https://huggingface.co/agu18dec/mOre-lenses",
+  "created_at": "2026-10-11T06:19:36.000Z",
+  "updated_at": "2026-11-11T10:24:18.000Z",
+  "license": "per-base-model",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "interpretability",
+    "activation-inversion",
+    "lora",
+    "olens",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29926301549,
+  "storage_human": "29.9 GB",
+  "base_model": "google/gemma-4-31B-it, Qwen/Qwen3.5-0.8B, Qwen/Qwen3.5-2B, Qwen/Qwen3.5-4B, Qwen/Qwen3.5-9B, Qwen/Qwen3.6-27B, Qwen/Qwen3-8B, zai-org/GLM-5.3-Flash, deepseek-ai/DeepSeek-V4-Flash, Qwen/Qwen3.6-35B-A3B, moonshotai/Kimi-K2-Instruct-0905, moonshotai/Kimi-Linear-48B-A3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

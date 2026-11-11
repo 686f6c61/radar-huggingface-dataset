@@ -23,11 +23,11 @@
     "region:us"
   ],
   "likes": 27,
-  "downloads_30d": 5684,
+  "downloads_30d": 5771,
   "trending_score": 8,
   "parameters": 27356728560,
   "parameters_human": "27.36B",
-  "storage_bytes": 105982907537,
+  "storage_bytes": 105995716857,
   "storage_human": "106.0 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

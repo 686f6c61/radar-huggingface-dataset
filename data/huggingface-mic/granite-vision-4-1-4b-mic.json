@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/granite-vision-4.1-4b-mic",
+  "slug": "huggingface-mic-granite-vision-4-1-4b-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/granite-vision-4.1-4b-mic",
+  "created_at": "2026-10-30T11:56:42.000Z",
+  "updated_at": "2026-11-11T11:25:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "granite4_vision",
+    "mic",
+    "test-artifact",
+    "custom_code",
+    "base_model:ibm-granite/granite-vision-4.1-4b",
+    "base_model:finetune:ibm-granite/granite-vision-4.1-4b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1177,
+  "trending_score": 0,
+  "parameters": 7161408,
+  "parameters_human": "7.2M",
+  "storage_bytes": 15387354,
+  "storage_human": "15 MB",
+  "base_model": "ibm-granite/granite-vision-4.1-4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

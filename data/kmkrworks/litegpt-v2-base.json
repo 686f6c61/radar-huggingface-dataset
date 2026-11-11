@@ -5,7 +5,7 @@
   "author": "kmkrworks",
   "url": "https://huggingface.co/kmkrworks/LiteGPT-V2-Base",
   "created_at": "2026-11-05T17:44:58.000Z",
-  "updated_at": "2026-11-06T02:28:36.000Z",
+  "updated_at": "2026-11-10T11:00:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 252,
+  "downloads_30d": 254,
   "trending_score": 0,
   "parameters": 201373952,
   "parameters_human": "201.4M",

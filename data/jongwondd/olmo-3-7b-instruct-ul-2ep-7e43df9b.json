@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Jongwondd/OLMo-3-7B-Instruct-UL-2ep-7e43df9b",
+  "slug": "jongwondd-olmo-3-7b-instruct-ul-2ep-7e43df9b",
+  "author": "Jongwondd",
+  "url": "https://huggingface.co/Jongwondd/OLMo-3-7B-Instruct-UL-2ep-7e43df9b",
+  "created_at": "2026-11-11T07:26:40.000Z",
+  "updated_at": "2026-11-11T07:26:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "negation",
+    "research",
+    "ul",
+    "text-generation",
+    "en",
+    "base_model:allenai/Olmo-3-7B-Instruct",
+    "base_model:adapter:allenai/Olmo-3-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159967880,
+  "storage_human": "160 MB",
+  "base_model": "allenai/Olmo-3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "egolearn",
   "url": "https://huggingface.co/egolearn/babycl-resnext50-saycam-fullstream-seed1337",
   "created_at": "2026-11-10T17:55:13.000Z",
-  "updated_at": "2026-11-10T18:04:16.000Z",
+  "updated_at": "2026-11-10T20:05:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "feature-extraction",

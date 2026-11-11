@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "ais0430/in100_bvit_e-dim-462_head-6_epoch-30_batch-128_lr-5e-4_no-ema_qv-exp",
+  "slug": "ais0430-in100_bvit_e-dim-462_head-6_epoch-30_batch-128_lr-5e-4_no-ema_qv-exp",
+  "author": "ais0430",
+  "url": "https://huggingface.co/ais0430/in100_bvit_e-dim-462_head-6_epoch-30_batch-128_lr-5e-4_no-ema_qv-exp",
+  "created_at": "2026-11-11T05:50:06.000Z",
+  "updated_at": "2026-11-11T05:50:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bvit",
+    "image-classification",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3059926,
+  "parameters_human": "3.1M",
+  "storage_bytes": 12241272,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/granite-3.0-1b-a400m-instruct-mic",
   "created_at": "2026-10-29T21:18:58.000Z",
-  "updated_at": "2026-11-05T07:50:13.000Z",
+  "updated_at": "2026-11-10T15:31:58.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1198,
+  "downloads_30d": 1396,
   "trending_score": 0,
   "parameters": 3367936,
   "parameters_human": "3.4M",

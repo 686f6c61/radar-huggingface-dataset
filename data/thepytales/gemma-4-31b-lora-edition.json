@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "thepytales/gemma-4-31b-lora-edition",
+  "slug": "thepytales-gemma-4-31b-lora-edition",
+  "author": "thepytales",
+  "url": "https://huggingface.co/thepytales/gemma-4-31b-lora-edition",
+  "created_at": "2026-11-11T07:07:14.000Z",
+  "updated_at": "2026-11-11T07:08:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lora-edition",
+    "de",
+    "en",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 19522690464,
+  "storage_human": "19.5 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

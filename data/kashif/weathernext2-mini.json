@@ -5,7 +5,7 @@
   "author": "kashif",
   "url": "https://huggingface.co/kashif/weathernext2-mini",
   "created_at": "2026-08-10T13:50:15.000Z",
-  "updated_at": "2026-11-09T10:50:25.000Z",
+  "updated_at": "2026-11-10T09:15:48.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "other",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 123,
+  "downloads_30d": 145,
   "trending_score": 0,
   "parameters": 58694571,
   "parameters_human": "58.7M",

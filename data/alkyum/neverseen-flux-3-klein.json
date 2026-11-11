@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "alkyum/neverseen-flux-3-klein",
+  "slug": "alkyum-neverseen-flux-3-klein",
+  "author": "alkyum",
+  "url": "https://huggingface.co/alkyum/neverseen-flux-3-klein",
+  "created_at": "2026-11-11T05:48:48.000Z",
+  "updated_at": "2026-11-11T06:05:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17746736091,
+  "storage_human": "17.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/llava-v1.6-mistral-7b-hf-mic",
+  "slug": "huggingface-mic-llava-v1-6-mistral-7b-hf-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/llava-v1.6-mistral-7b-hf-mic",
+  "created_at": "2026-10-27T08:29:18.000Z",
+  "updated_at": "2026-11-11T11:25:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llava_next",
+    "mic",
+    "test-artifact",
+    "base_model:llava-hf/llava-v1.6-mistral-7b-hf",
+    "base_model:finetune:llava-hf/llava-v1.6-mistral-7b-hf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1707,
+  "trending_score": 0,
+  "parameters": 4328448,
+  "parameters_human": "4.3M",
+  "storage_bytes": 17822539,
+  "storage_human": "18 MB",
+  "base_model": "llava-hf/llava-v1.6-mistral-7b-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

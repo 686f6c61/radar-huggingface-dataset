@@ -5,7 +5,7 @@
   "author": "zen-E",
   "url": "https://huggingface.co/zen-E/PLatour-TR-FullGRPO-Qwen3.5-4B-DAPO",
   "created_at": "2026-11-06T20:20:44.000Z",
-  "updated_at": "2026-11-06T20:44:25.000Z",
+  "updated_at": "2026-11-10T18:38:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

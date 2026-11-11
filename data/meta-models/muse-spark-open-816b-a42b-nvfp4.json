@@ -5,7 +5,7 @@
   "author": "meta-models",
   "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B-NVFP4",
   "created_at": "2026-09-15T19:23:10.000Z",
-  "updated_at": "2026-10-15T17:18:42.000Z",
+  "updated_at": "2026-11-10T18:55:47.000Z",
   "license": "muse-model-license",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",

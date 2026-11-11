@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Level5Tech/clef-flash-NVFP4",
+  "slug": "level5tech-clef-flash-nvfp4",
+  "author": "Level5Tech",
+  "url": "https://huggingface.co/Level5Tech/clef-flash-NVFP4",
+  "created_at": "2026-11-11T06:10:52.000Z",
+  "updated_at": "2026-11-11T06:11:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "quantized",
+    "base_model:Cloudflare/clef-flash",
+    "base_model:quantized:Cloudflare/clef-flash",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 9147022397,
+  "storage_human": "9.1 GB",
+  "base_model": "Cloudflare/clef-flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

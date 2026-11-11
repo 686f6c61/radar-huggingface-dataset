@@ -5,7 +5,7 @@
   "author": "mlboydaisuke",
   "url": "https://huggingface.co/mlboydaisuke/Qwen3-4B-int4-sym-g128-ov",
   "created_at": "2026-11-08T19:36:38.000Z",
-  "updated_at": "2026-11-09T01:03:39.000Z",
+  "updated_at": "2026-11-10T07:57:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 20,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

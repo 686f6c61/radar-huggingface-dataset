@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "SaktoAI/baguettotron-600m-sakto-Q8_0-4k",
+  "slug": "saktoai-baguettotron-600m-sakto-q8_0-4k",
+  "author": "SaktoAI",
+  "url": "https://huggingface.co/SaktoAI/baguettotron-600m-sakto-Q8_0-4k",
+  "created_at": "2026-11-11T09:35:36.000Z",
+  "updated_at": "2026-11-11T09:58:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "q8_0",
+    "llama.cpp",
+    "on-device",
+    "text-generation",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 608273408,
+  "parameters_human": "608.3M",
+  "storage_bytes": 648932704,
+  "storage_human": "649 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "thepytales/pyannote-segmentation-3.0-lora-edition",
+  "slug": "thepytales-pyannote-segmentation-3-0-lora-edition",
+  "author": "thepytales",
+  "url": "https://huggingface.co/thepytales/pyannote-segmentation-3.0-lora-edition",
+  "created_at": "2026-11-11T07:21:25.000Z",
+  "updated_at": "2026-11-11T07:21:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "sherpa-onnx",
+    "speaker-diarization",
+    "lora-edition",
+    "base_model:pyannote/segmentation-3.0",
+    "base_model:quantized:pyannote/segmentation-3.0",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6958444,
+  "storage_human": "7 MB",
+  "base_model": "pyannote/segmentation-3.0",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

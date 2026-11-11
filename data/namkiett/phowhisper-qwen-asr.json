@@ -5,7 +5,7 @@
   "author": "namkiett",
   "url": "https://huggingface.co/namkiett/phowhisper-qwen-asr",
   "created_at": "2026-11-10T14:15:40.000Z",
-  "updated_at": "2026-11-10T14:45:09.000Z",
+  "updated_at": "2026-11-10T18:18:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -22,7 +22,7 @@
     "audio",
     "vietnamese",
     "qwen",
-    "whisper",
+    "phowhisper",
     "automatic-speech-recognition",
     "custom_code",
     "vi",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 10230400,
   "parameters_human": "10.2M",
-  "storage_bytes": 52344428,
-  "storage_human": "52 MB",
+  "storage_bytes": 1736761620,
+  "storage_human": "1.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

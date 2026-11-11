@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/QwOwO-7B-V1-GGUF",
+  "slug": "mradermacher-qwowo-7b-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/QwOwO-7B-V1-GGUF",
+  "created_at": "2025-02-27T00:06:24.000Z",
+  "updated_at": "2026-11-11T06:38:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:SaisExperiments/OwO-Data-Alpaca-10K",
+    "base_model:SaisExperiments/QwOwO-7B-V1",
+    "base_model:quantized:SaisExperiments/QwOwO-7B-V1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 349,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146897280,
+  "storage_human": "68.1 GB",
+  "base_model": "SaisExperiments/QwOwO-7B-V1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

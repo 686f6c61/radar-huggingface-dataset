@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/bert2bert-cnn_dailymail-fp16-mic",
+  "slug": "huggingface-mic-bert2bert-cnn_dailymail-fp16-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/bert2bert-cnn_dailymail-fp16-mic",
+  "created_at": "2026-10-29T10:57:25.000Z",
+  "updated_at": "2026-11-11T11:24:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "encoder-decoder",
+    "mic",
+    "test-artifact",
+    "base_model:patrickvonplaten/bert2bert-cnn_dailymail-fp16",
+    "base_model:finetune:patrickvonplaten/bert2bert-cnn_dailymail-fp16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1351,
+  "trending_score": 0,
+  "parameters": 4179258,
+  "parameters_human": "4.2M",
+  "storage_bytes": 33479943,
+  "storage_human": "33 MB",
+  "base_model": "patrickvonplaten/bert2bert-cnn_dailymail-fp16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "VallemKeerthi/kcat-km-v8-blend",
+  "slug": "vallemkeerthi-kcat-km-v8-blend",
+  "author": "VallemKeerthi",
+  "url": "https://huggingface.co/VallemKeerthi/kcat-km-v8-blend",
+  "created_at": "2026-11-11T05:38:27.000Z",
+  "updated_at": "2026-11-11T05:38:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1090147667,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

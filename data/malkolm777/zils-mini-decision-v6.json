@@ -5,7 +5,7 @@
   "author": "malkolm777",
   "url": "https://huggingface.co/malkolm777/zils-mini-decision-v6",
   "created_at": "2026-11-11T00:13:49.000Z",
-  "updated_at": "2026-11-11T00:16:46.000Z",
+  "updated_at": "2026-11-11T02:12:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": 4539265536,
   "parameters_human": "4.54B",
-  "storage_bytes": 9094035342,
-  "storage_human": "9.1 GB",
+  "storage_bytes": 18172651422,
+  "storage_human": "18.2 GB",
   "base_model": "vllm-sr/d3-mini",
   "formats": [
     "safetensors"

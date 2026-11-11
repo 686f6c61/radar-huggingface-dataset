@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/clip-vit-base-patch32-vision-mic",
+  "slug": "huggingface-mic-clip-vit-base-patch32-vision-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/clip-vit-base-patch32-vision-mic",
+  "created_at": "2026-10-30T08:49:37.000Z",
+  "updated_at": "2026-11-11T12:46:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip_vision_model",
+    "mic",
+    "test-artifact",
+    "base_model:kunalkanaujiya/clip-vit-base-patch32-vision",
+    "base_model:finetune:kunalkanaujiya/clip-vit-base-patch32-vision",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1172,
+  "trending_score": 0,
+  "parameters": 269120,
+  "parameters_human": "269120",
+  "storage_bytes": 542696,
+  "storage_human": "542696 B",
+  "base_model": "kunalkanaujiya/clip-vit-base-patch32-vision",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "OzzyGT/minimax_h3_image_sdnq_dynamic_4bit",
+  "slug": "ozzygt-minimax_h3_image_sdnq_dynamic_4bit",
+  "author": "OzzyGT",
+  "url": "https://huggingface.co/OzzyGT/minimax_h3_image_sdnq_dynamic_4bit",
+  "created_at": "2026-11-11T10:18:02.000Z",
+  "updated_at": "2026-11-11T10:31:55.000Z",
+  "license": "minimax-h3-image-community-license-agreement",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-generation",
+    "image-editing",
+    "minimax-h3",
+    "sdnq",
+    "text-to-image",
+    "en",
+    "base_model:MiniMaxAI/MiniMax-H3-Image",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3-Image",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17635893184,
+  "parameters_human": "17.64B",
+  "storage_bytes": 37021916264,
+  "storage_human": "37.0 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3-Image",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "brainclark/zils-d3-mini-body",
+  "slug": "brainclark-zils-d3-mini-body",
+  "author": "brainclark",
+  "url": "https://huggingface.co/brainclark/zils-d3-mini-body",
+  "created_at": "2026-11-11T06:17:46.000Z",
+  "updated_at": "2026-11-11T07:26:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "multiple-choice",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "classification",
+    "multiple-choice",
+    "security",
+    "observability",
+    "log-analysis",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1726019821,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

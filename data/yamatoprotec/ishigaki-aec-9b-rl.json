@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "YAMATOPROTEC/Ishigaki-AEC-9B-RL",
+  "slug": "yamatoprotec-ishigaki-aec-9b-rl",
+  "author": "YAMATOPROTEC",
+  "url": "https://huggingface.co/YAMATOPROTEC/Ishigaki-AEC-9B-RL",
+  "created_at": "2026-11-11T03:26:17.000Z",
+  "updated_at": "2026-11-11T04:42:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "construction",
+    "japanese",
+    "reinforcement-learning",
+    "grpo",
+    "citation",
+    "text-generation",
+    "conversational",
+    "ja",
+    "base_model:ONESTRUCTION/Ishigaki-AEC-9B",
+    "base_model:finetune:ONESTRUCTION/Ishigaki-AEC-9B",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 37659431039,
+  "storage_human": "37.7 GB",
+  "base_model": "ONESTRUCTION/Ishigaki-AEC-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

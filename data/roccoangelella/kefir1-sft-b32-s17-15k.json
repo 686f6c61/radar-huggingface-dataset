@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "roccoangelella/kefir1-sft-b32-s17-15k",
+  "slug": "roccoangelella-kefir1-sft-b32-s17-15k",
+  "author": "roccoangelella",
+  "url": "https://huggingface.co/roccoangelella/kefir1-sft-b32-s17-15k",
+  "created_at": "2026-11-11T06:30:31.000Z",
+  "updated_at": "2026-11-11T06:30:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "kefir",
+    "mixture-of-experts",
+    "experimental",
+    "sft",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 576329152,
+  "storage_human": "576 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

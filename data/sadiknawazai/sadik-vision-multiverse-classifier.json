@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "SadikNawazAI/sadik-vision-multiverse-classifier",
+  "slug": "sadiknawazai-sadik-vision-multiverse-classifier",
+  "author": "SadikNawazAI",
+  "url": "https://huggingface.co/SadikNawazAI/sadik-vision-multiverse-classifier",
+  "created_at": "2026-11-11T08:15:02.000Z",
+  "updated_at": "2026-11-11T08:15:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "resnet18",
+    "computer-vision",
+    "sadik-ai",
+    "vision-multiverse",
+    "dataset:SadikNawazAI/sadik-image-classification-multiverse",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44970269,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multi-class Image Classification",
+      "dataset": "SADIK Vision Multiverse Dataset",
+      "metric": "Out-of-fold accuracy (5-fold CV)",
+      "value": 0.8305
+    },
+    {
+      "task": "Multi-class Image Classification",
+      "dataset": "SADIK Vision Multiverse Dataset",
+      "metric": "Macro F1 (5-fold CV)",
+      "value": 0.778
+    }
+  ],
+  "sources": []
+}

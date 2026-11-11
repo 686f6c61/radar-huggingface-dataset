@@ -5,7 +5,7 @@
   "author": "mlboydaisuke",
   "url": "https://huggingface.co/mlboydaisuke/RTMPose-Face-WFLW-OpenVINO",
   "created_at": "2026-11-07T06:34:19.000Z",
-  "updated_at": "2026-11-07T06:34:34.000Z",
+  "updated_at": "2026-11-10T08:18:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "keypoint-detection",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 169067526,
-  "storage_human": "169 MB",
+  "storage_bytes": 202992065,
+  "storage_human": "203 MB",
   "base_model": "litert-community/RTMPose-Face-WFLW-LiteRT",
   "formats": [
     "onnx"

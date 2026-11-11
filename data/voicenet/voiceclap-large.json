@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "VoiceNet/voiceclap-large",
+  "slug": "voicenet-voiceclap-large",
+  "author": "VoiceNet",
+  "url": "https://huggingface.co/VoiceNet/voiceclap-large",
+  "created_at": "2026-05-06T11:57:34.000Z",
+  "updated_at": "2026-11-11T10:37:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen2_5_omni_thinker",
+    "audio",
+    "speech",
+    "emotion",
+    "clap",
+    "contrastive",
+    "voice",
+    "feature-extraction",
+    "en",
+    "base_model:LCO-Embedding/LCO-Embedding-Omni-7B",
+    "base_model:finetune:LCO-Embedding/LCO-Embedding-Omni-7B",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 8931813888,
+  "parameters_human": "8.93B",
+  "storage_bytes": 36020569935,
+  "storage_human": "36.0 GB",
+  "base_model": "LCO-Embedding/LCO-Embedding-Omni-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "SovetskySoyuz110/Category_and_Polarity_ABSA_with_Game_Domain_FlanT5",
+  "slug": "sovetskysoyuz110-category_and_polarity_absa_with_game_domain_flant5",
+  "author": "SovetskySoyuz110",
+  "url": "https://huggingface.co/SovetskySoyuz110/Category_and_Polarity_ABSA_with_Game_Domain_FlanT5",
+  "created_at": "2026-11-11T11:28:08.000Z",
+  "updated_at": "2026-11-11T11:55:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "t5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 247577856,
+  "parameters_human": "247.6M",
+  "storage_bytes": 990345064,
+  "storage_human": "990 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

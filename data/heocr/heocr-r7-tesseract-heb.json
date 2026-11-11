@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "HeOCR/heocr-r7-tesseract-heb",
+  "slug": "heocr-heocr-r7-tesseract-heb",
+  "author": "HeOCR",
+  "url": "https://huggingface.co/HeOCR/heocr-r7-tesseract-heb",
+  "created_at": "2026-11-11T05:50:02.000Z",
+  "updated_at": "2026-11-11T05:50:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "tesseract",
+    "ocr",
+    "hebrew",
+    "text-recognition",
+    "printed",
+    "traineddata",
+    "image-to-text",
+    "he",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3628595,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Izmasaher/vit-seatbelt-detector",
+  "slug": "izmasaher-vit-seatbelt-detector",
+  "author": "Izmasaher",
+  "url": "https://huggingface.co/Izmasaher/vit-seatbelt-detector",
+  "created_at": "2026-11-11T07:27:15.000Z",
+  "updated_at": "2026-11-11T07:27:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85800194,
+  "parameters_human": "85.8M",
+  "storage_bytes": 343223968,
+  "storage_human": "343 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

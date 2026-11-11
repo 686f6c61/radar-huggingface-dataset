@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Motubrain/Motubrain2.0-robotwin2.0",
+  "slug": "motubrain-motubrain2-0-robotwin2-0",
+  "author": "Motubrain",
+  "url": "https://huggingface.co/Motubrain/Motubrain2.0-robotwin2.0",
+  "created_at": "2026-11-11T12:24:07.000Z",
+  "updated_at": "2026-11-11T12:43:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "robotwin",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78096875228,
+  "storage_human": "78.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

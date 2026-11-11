@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "thepytales/whisper-base-lora-edition",
+  "slug": "thepytales-whisper-base-lora-edition",
+  "author": "thepytales",
+  "url": "https://huggingface.co/thepytales/whisper-base-lora-edition",
+  "created_at": "2026-11-11T07:20:18.000Z",
+  "updated_at": "2026-11-11T07:20:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "multilingual",
+    "de"
+  ],
+  "tags": [
+    "onnx",
+    "sherpa-onnx",
+    "automatic-speech-recognition",
+    "lora-edition",
+    "multilingual",
+    "de",
+    "base_model:openai/whisper-base",
+    "base_model:quantized:openai/whisper-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159792560,
+  "storage_human": "160 MB",
+  "base_model": "openai/whisper-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

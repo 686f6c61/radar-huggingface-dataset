@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/internvl-mic",
+  "slug": "huggingface-mic-internvl-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/internvl-mic",
+  "created_at": "2026-10-12T14:23:00.000Z",
+  "updated_at": "2026-11-11T11:25:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "internvl",
+    "mic",
+    "test-artifact",
+    "base_model:OpenGVLab/InternVL3-1B-hf",
+    "base_model:finetune:OpenGVLab/InternVL3-1B-hf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2253,
+  "trending_score": 0,
+  "parameters": 9973120,
+  "parameters_human": "10.0M",
+  "storage_bytes": 31378508,
+  "storage_human": "31 MB",
+  "base_model": "OpenGVLab/InternVL3-1B-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

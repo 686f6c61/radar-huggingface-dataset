@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Voxtral-Mini-3B-2507-mic",
+  "slug": "huggingface-mic-voxtral-mini-3b-2507-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Voxtral-Mini-3B-2507-mic",
+  "created_at": "2026-10-30T10:54:37.000Z",
+  "updated_at": "2026-11-11T11:26:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "voxtral",
+    "mic",
+    "test-artifact",
+    "base_model:mistralai/Voxtral-Mini-3B-2507",
+    "base_model:finetune:mistralai/Voxtral-Mini-3B-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2196,
+  "trending_score": 0,
+  "parameters": 17104704,
+  "parameters_human": "17.1M",
+  "storage_bytes": 117734358,
+  "storage_human": "118 MB",
+  "base_model": "mistralai/Voxtral-Mini-3B-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

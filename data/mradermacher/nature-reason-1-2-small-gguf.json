@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Nature-Reason-1.2-small-GGUF",
+  "slug": "mradermacher-nature-reason-1-2-small-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Nature-Reason-1.2-small-GGUF",
+  "created_at": "2025-03-01T09:41:01.000Z",
+  "updated_at": "2026-11-11T06:37:55.000Z",
+  "license": "qwen",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 77965463552,
+  "parameters_human": "77.97B",
+  "storage_bytes": 557183629600,
+  "storage_human": "557.2 GB",
+  "base_model": "GuilhermeNaturaUmana/Nature-Reason-1.2-small",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

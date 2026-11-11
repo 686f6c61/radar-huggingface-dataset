@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "matheus-ciro-tcc/gemma3-4b-triagem-medica-final",
+  "slug": "matheus-ciro-tcc-gemma3-4b-triagem-medica-final",
+  "author": "matheus-ciro-tcc",
+  "url": "https://huggingface.co/matheus-ciro-tcc/gemma3-4b-triagem-medica-final",
+  "created_at": "2026-11-11T05:54:18.000Z",
+  "updated_at": "2026-11-11T05:54:28.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "qlora",
+    "unsloth",
+    "medical",
+    "triagem",
+    "portuguese",
+    "gemma3",
+    "final",
+    "text-generation",
+    "conversational",
+    "pt",
+    "base_model:unsloth/gemma-3-4b-pt",
+    "base_model:adapter:unsloth/gemma-3-4b-pt",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 152792080,
+  "storage_human": "153 MB",
+  "base_model": "unsloth/gemma-3-4b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

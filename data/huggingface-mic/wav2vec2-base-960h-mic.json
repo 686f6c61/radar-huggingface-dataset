@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/wav2vec2-base-960h-mic",
+  "slug": "huggingface-mic-wav2vec2-base-960h-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/wav2vec2-base-960h-mic",
+  "created_at": "2026-10-07T12:15:11.000Z",
+  "updated_at": "2026-11-11T11:26:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "mic",
+    "test-artifact",
+    "base_model:facebook/wav2vec2-base-960h",
+    "base_model:finetune:facebook/wav2vec2-base-960h",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2652,
+  "trending_score": 0,
+  "parameters": 4336416,
+  "parameters_human": "4.3M",
+  "storage_bytes": 34703200,
+  "storage_human": "35 MB",
+  "base_model": "facebook/wav2vec2-base-960h",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

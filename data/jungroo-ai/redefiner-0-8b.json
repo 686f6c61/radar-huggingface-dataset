@@ -5,7 +5,7 @@
   "author": "jungroo-ai",
   "url": "https://huggingface.co/jungroo-ai/redefiner-0.8b",
   "created_at": "2026-10-27T13:10:18.000Z",
-  "updated_at": "2026-11-04T13:28:54.000Z",
+  "updated_at": "2026-11-10T13:20:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

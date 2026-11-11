@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Diffbot-Small-XL-2508-GGUF",
+  "slug": "mradermacher-diffbot-small-xl-2508-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Diffbot-Small-XL-2508-GGUF",
+  "created_at": "2025-08-25T03:11:50.000Z",
+  "updated_at": "2026-11-11T08:50:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:diffbot/Diffbot-Small-XL-2508",
+    "base_model:quantized:diffbot/Diffbot-Small-XL-2508",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 86,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 208115920672,
+  "storage_human": "208.1 GB",
+  "base_model": "diffbot/Diffbot-Small-XL-2508",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

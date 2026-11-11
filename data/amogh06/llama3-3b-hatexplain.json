@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Amogh06/llama3-3B-hatexplain",
+  "slug": "amogh06-llama3-3b-hatexplain",
+  "author": "Amogh06",
+  "url": "https://huggingface.co/Amogh06/llama3-3B-hatexplain",
+  "created_at": "2026-11-11T10:26:18.000Z",
+  "updated_at": "2026-11-11T10:30:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 12868238674,
+  "storage_human": "12.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

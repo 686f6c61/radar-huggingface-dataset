@@ -5,7 +5,7 @@
   "author": "egolearn",
   "url": "https://huggingface.co/egolearn/vjepa2-vits16-saycam-iid-seed0",
   "created_at": "2026-11-10T17:56:06.000Z",
-  "updated_at": "2026-11-10T18:04:21.000Z",
+  "updated_at": "2026-11-10T20:05:40.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "feature-extraction",

@@ -5,7 +5,7 @@
   "author": "wasnaga",
   "url": "https://huggingface.co/wasnaga/UniverseNet-LFM2.5-24B-Pocket-GGUF",
   "created_at": "2026-11-05T07:07:55.000Z",
-  "updated_at": "2026-11-09T06:55:47.000Z",
+  "updated_at": "2026-11-11T02:58:21.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -35,10 +35,10 @@
   "likes": 0,
   "downloads_30d": 2461,
   "trending_score": 0,
-  "parameters": 12495971968,
-  "parameters_human": "12.50B",
-  "storage_bytes": 36947484227,
-  "storage_human": "36.9 GB",
+  "parameters": 16321177216,
+  "parameters_human": "16.32B",
+  "storage_bytes": 84279705114,
+  "storage_human": "84.3 GB",
   "base_model": "LiquidAI/LFM2.5-24B-A2B",
   "formats": [
     "gguf"

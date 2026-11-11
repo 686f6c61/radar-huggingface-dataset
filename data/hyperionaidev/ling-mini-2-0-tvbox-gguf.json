@@ -5,7 +5,7 @@
   "author": "hyperionaidev",
   "url": "https://huggingface.co/hyperionaidev/Ling-mini-2.0-tvbox-GGUF",
   "created_at": "2026-11-08T15:44:43.000Z",
-  "updated_at": "2026-11-08T15:52:20.000Z",
+  "updated_at": "2026-11-10T17:52:35.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
   "trending_score": 0,
   "parameters": 16056670560,
   "parameters_human": "16.06B",
-  "storage_bytes": 5487017568,
+  "storage_bytes": 5487165683,
   "storage_human": "5.5 GB",
   "base_model": "inclusionAI/Ling-mini-2.0",
   "formats": [

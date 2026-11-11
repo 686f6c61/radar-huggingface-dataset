@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Docglasses-AI/lfm2.5-1.2b-clinical-r3-gguf",
+  "slug": "docglasses-ai-lfm2-5-1-2b-clinical-r3-gguf",
+  "author": "Docglasses-AI",
+  "url": "https://huggingface.co/Docglasses-AI/lfm2.5-1.2b-clinical-r3-gguf",
+  "created_at": "2026-11-11T07:22:45.000Z",
+  "updated_at": "2026-11-11T07:27:32.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "medical",
+    "clinical",
+    "triage",
+    "derma",
+    "liquid",
+    "lfm",
+    "llama.cpp",
+    "sarvadoc",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 730898880,
+  "storage_human": "731 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

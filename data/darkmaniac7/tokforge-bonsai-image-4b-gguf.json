@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "darkmaniac7/TokForge-Bonsai-Image-4B-GGUF",
+  "slug": "darkmaniac7-tokforge-bonsai-image-4b-gguf",
+  "author": "darkmaniac7",
+  "url": "https://huggingface.co/darkmaniac7/TokForge-Bonsai-Image-4B-GGUF",
+  "created_at": "2026-06-01T05:37:12.000Z",
+  "updated_at": "2026-11-11T05:34:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "bonsai",
+    "flux",
+    "text-to-image",
+    "android",
+    "mobile",
+    "on-device",
+    "tokforge",
+    "opencl",
+    "sd.cpp",
+    "image-generation",
+    "en",
+    "base_model:prism-ml/bonsai-image-ternary-4B-gemlite-2bit",
+    "base_model:quantized:prism-ml/bonsai-image-ternary-4B-gemlite-2bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 298,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 4034560143,
+  "storage_human": "4.0 GB",
+  "base_model": "prism-ml/bonsai-image-ternary-4B-gemlite-2bit",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

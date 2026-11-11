@@ -5,7 +5,7 @@
   "author": "loraforge",
   "url": "https://huggingface.co/loraforge/gemma-4-31b-it-ara-heretic-r8",
   "created_at": "2026-11-09T21:05:53.000Z",
-  "updated_at": "2026-11-09T21:07:27.000Z",
+  "updated_at": "2026-11-10T21:21:07.000Z",
   "license": "apache-2.0-with-upstream-openrail-additional-terms",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

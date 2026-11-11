@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "acpi-ai/ant-128m-n9g",
+  "slug": "acpi-ai-ant-128m-n9g",
+  "author": "acpi-ai",
+  "url": "https://huggingface.co/acpi-ai/ant-128m-n9g",
+  "created_at": "2026-11-11T09:32:45.000Z",
+  "updated_at": "2026-11-11T12:16:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 106390272,
+  "parameters_human": "106.4M",
+  "storage_bytes": 9347591729,
+  "storage_human": "9.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/nemotron3-8b-mic",
+  "slug": "huggingface-mic-nemotron3-8b-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/nemotron3-8b-mic",
+  "created_at": "2026-11-11T09:10:07.000Z",
+  "updated_at": "2026-11-11T09:18:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nemotron",
+    "mic",
+    "test-artifact",
+    "base_model:thhaus/nemotron3-8b",
+    "base_model:finetune:thhaus/nemotron3-8b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32834176,
+  "parameters_human": "32.8M",
+  "storage_bytes": 88249842,
+  "storage_human": "88 MB",
+  "base_model": "thhaus/nemotron3-8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "idn502",
   "url": "https://huggingface.co/idn502/ours",
   "created_at": "2026-11-05T16:26:28.000Z",
-  "updated_at": "2026-11-09T17:06:47.000Z",
+  "updated_at": "2026-11-11T03:43:18.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 8767123696,
   "parameters_human": "8.77B",
-  "storage_bytes": 108482243334,
-  "storage_human": "108.5 GB",
+  "storage_bytes": 161085265086,
+  "storage_human": "161.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

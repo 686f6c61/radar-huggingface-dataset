@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "luny140/QwenPaw-Flash-9B-heretic-MTP-GGUF",
+  "slug": "luny140-qwenpaw-flash-9b-heretic-mtp-gguf",
+  "author": "luny140",
+  "url": "https://huggingface.co/luny140/QwenPaw-Flash-9B-heretic-MTP-GGUF",
+  "created_at": "2026-11-11T07:48:07.000Z",
+  "updated_at": "2026-11-11T07:48:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "heretic",
+    "abliteration",
+    "uncensored",
+    "mtp",
+    "speculative-decoding",
+    "qwen3.5",
+    "benchlocal",
+    "benchmark",
+    "agent",
+    "tool-call",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 456010480,
+  "parameters_human": "456.0M",
+  "storage_bytes": 42454077056,
+  "storage_human": "42.5 GB",
+  "base_model": "Qwen/Qwen3.5-9B, agentscope-ai/QwenPaw-Flash-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

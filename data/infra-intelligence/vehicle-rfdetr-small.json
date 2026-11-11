@@ -5,7 +5,7 @@
   "author": "infra-intelligence",
   "url": "https://huggingface.co/infra-intelligence/vehicle-rfdetr-small",
   "created_at": "2026-10-28T10:50:49.000Z",
-  "updated_at": "2026-10-28T10:51:06.000Z",
+  "updated_at": "2026-11-10T13:33:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -15,6 +15,7 @@
     "en"
   ],
   "tags": [
+    "coreml",
     "onnx",
     "object-detection",
     "vehicle",
@@ -28,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 38,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 241787816,
-  "storage_human": "242 MB",
+  "storage_bytes": 356020967,
+  "storage_human": "356 MB",
   "base_model": null,
   "formats": [
     "onnx"

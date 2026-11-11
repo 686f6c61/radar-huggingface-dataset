@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Fernandorofe/bart-cnn-samsum-peft",
+  "slug": "fernandorofe-bart-cnn-samsum-peft",
+  "author": "Fernandorofe",
+  "url": "https://huggingface.co/Fernandorofe/bart-cnn-samsum-peft",
+  "created_at": "2026-11-11T09:31:01.000Z",
+  "updated_at": "2026-11-11T09:31:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Fernandorofe/bart-cnn-samsum-finetuned",
+    "lora",
+    "transformers",
+    "base_model:Fernandorofe/bart-cnn-samsum-finetuned",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18900121,
+  "storage_human": "19 MB",
+  "base_model": "Fernandorofe/bart-cnn-samsum-finetuned",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

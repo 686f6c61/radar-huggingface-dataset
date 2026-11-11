@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sajilck/whisper-small-malayalam-v2",
+  "slug": "sajilck-whisper-small-malayalam-v2",
+  "author": "sajilck",
+  "url": "https://huggingface.co/sajilck/whisper-small-malayalam-v2",
+  "created_at": "2026-10-10T03:05:58.000Z",
+  "updated_at": "2026-11-11T04:57:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ml"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "malayalam",
+    "low-resource-asr",
+    "indic-languages",
+    "ggml",
+    "whisper-cpp",
+    "ctranslate2",
+    "ml",
+    "dataset:sajilck/malayalam-asr-corpus",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 198,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 1729001920,
+  "storage_human": "1.7 GB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "malayalam-asr-corpus test, leakage-filtered (231-clip source-balanced sample)",
+      "metric": "WER (normalised)",
+      "value": 31.16
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "malayalam-asr-corpus test, leakage-filtered (231-clip source-balanced sample)",
+      "metric": "CER (normalised)",
+      "value": 4.04
+    }
+  ],
+  "sources": []
+}

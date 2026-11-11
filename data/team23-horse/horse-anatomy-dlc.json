@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "team23-horse/horse-anatomy-dlc",
+  "slug": "team23-horse-horse-anatomy-dlc",
+  "author": "team23-horse",
+  "url": "https://huggingface.co/team23-horse/horse-anatomy-dlc",
+  "created_at": "2026-11-11T12:19:03.000Z",
+  "updated_at": "2026-11-11T12:19:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

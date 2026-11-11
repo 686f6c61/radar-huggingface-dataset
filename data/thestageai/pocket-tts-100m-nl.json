@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "TheStageAI/pocket-tts-100m-nl",
+  "slug": "thestageai-pocket-tts-100m-nl",
+  "author": "TheStageAI",
+  "url": "https://huggingface.co/TheStageAI/pocket-tts-100m-nl",
+  "created_at": "2026-10-24T09:53:57.000Z",
+  "updated_at": "2026-11-11T06:29:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pocket-tts",
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "pocket-tts",
+    "tts",
+    "kyutai",
+    "coreml",
+    "ane",
+    "thestage",
+    "text-to-speech",
+    "nl",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 570372485,
+  "storage_human": "570 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

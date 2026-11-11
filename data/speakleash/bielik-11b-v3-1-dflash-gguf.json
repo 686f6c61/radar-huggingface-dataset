@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "speakleash/Bielik-11B-v3.1-DFlash-GGUF",
+  "slug": "speakleash-bielik-11b-v3-1-dflash-gguf",
+  "author": "speakleash",
+  "url": "https://huggingface.co/speakleash/Bielik-11B-v3.1-DFlash-GGUF",
+  "created_at": "2026-11-10T12:23:29.000Z",
+  "updated_at": "2026-11-10T12:36:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "multilingual",
+    "pl",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "bielik",
+    "speculative-decoding",
+    "dflash",
+    "draft-model",
+    "multilingual",
+    "pl",
+    "en",
+    "base_model:speakleash/Bielik-11B-v3.1-DFlash",
+    "base_model:quantized:speakleash/Bielik-11B-v3.1-DFlash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1174455552,
+  "parameters_human": "1.17B",
+  "storage_bytes": 4292632960,
+  "storage_human": "4.3 GB",
+  "base_model": "speakleash/Bielik-11B-v3.1-DFlash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "qixunxiehuangbao/cosmos3_edge_soarm_v4_020000",
+  "slug": "qixunxiehuangbao-cosmos3_edge_soarm_v4_020000",
+  "author": "qixunxiehuangbao",
+  "url": "https://huggingface.co/qixunxiehuangbao/cosmos3_edge_soarm_v4_020000",
+  "created_at": "2026-11-11T04:46:27.000Z",
+  "updated_at": "2026-11-11T04:46:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "cosmos3",
+    "peft",
+    "lora",
+    "base_model:nvidia/Cosmos3-Edge",
+    "base_model:adapter:nvidia/Cosmos3-Edge",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76656965,
+  "storage_human": "77 MB",
+  "base_model": "nvidia/Cosmos3-Edge",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

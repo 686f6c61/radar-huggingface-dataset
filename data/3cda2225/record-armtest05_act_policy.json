@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "3cda2225/record-armtest05_act_policy",
+  "slug": "3cda2225-record-armtest05_act_policy",
+  "author": "3cda2225",
+  "url": "https://huggingface.co/3cda2225/record-armtest05_act_policy",
+  "created_at": "2026-09-01T07:48:58.000Z",
+  "updated_at": "2026-11-11T10:28:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:3cda2225/record-armtest05_20261111_183520",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 413422040,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

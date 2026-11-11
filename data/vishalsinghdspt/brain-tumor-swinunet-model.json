@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "vishalsinghdspt/brain-tumor-swinunet-model",
+  "slug": "vishalsinghdspt-brain-tumor-swinunet-model",
+  "author": "vishalsinghdspt",
+  "url": "https://huggingface.co/vishalsinghdspt/brain-tumor-swinunet-model",
+  "created_at": "2026-11-11T06:47:26.000Z",
+  "updated_at": "2026-11-11T06:55:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 256353463,
+  "storage_human": "256 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

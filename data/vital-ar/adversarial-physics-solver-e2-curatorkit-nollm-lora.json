@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "vital-ar/adversarial-physics-solver-e2-curatorkit-nollm-lora",
+  "slug": "vital-ar-adversarial-physics-solver-e2-curatorkit-nollm-lora",
+  "author": "vital-ar",
+  "url": "https://huggingface.co/vital-ar/adversarial-physics-solver-e2-curatorkit-nollm-lora",
+  "created_at": "2026-11-11T12:14:20.000Z",
+  "updated_at": "2026-11-11T12:14:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142357727,
+  "storage_human": "142 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vital-ar (vitalii lavryk) - Hugging Face",
+      "url": "https://huggingface.co/vital-ar",
+      "snippet": "vital-ar/physics-solver-e4-adversarial ... vital-ar/physics-solver-e3-canonical-llm ... vital-ar/physics-solver-e2-curatorkit-nollm ... vital …"
+    },
+    {
+      "title": "vital-ar/physics-solver-e2-curatorkit-nollm - Hugging Face",
+      "url": "https://huggingface.co/datasets/vital-ar/physics-solver-e2-curatorkit-nollm",
+      "snippet": "Dataset with 804 rows (Text). Explore, preview and download it on Hugging Face."
+    },
+    {
+      "title": "GitHub - Vital-ar/adversarial_physics_problems_solver",
+      "url": "https://github.com/Vital-ar/adversarial_physics_problems_solver",
+      "snippet": "6 days ago · Contribute to Vital-ar/adversarial_physics_problems_solver development by creating an account on GitHub."
+    }
+  ]
+}

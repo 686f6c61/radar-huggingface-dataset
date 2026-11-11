@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "rozmus/neuro-npc-bielik-11b-v3-GGUF",
+  "slug": "rozmus-neuro-npc-bielik-11b-v3-gguf",
+  "author": "rozmus",
+  "url": "https://huggingface.co/rozmus/neuro-npc-bielik-11b-v3-GGUF",
+  "created_at": "2026-11-11T11:12:55.000Z",
+  "updated_at": "2026-11-11T11:12:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "gguf",
+    "polish",
+    "roleplay",
+    "npc",
+    "game",
+    "text-adventure",
+    "qlora",
+    "dpo",
+    "text-generation",
+    "pl",
+    "base_model:speakleash/Bielik-11B-v3.0-Instruct",
+    "base_model:finetune:speakleash/Bielik-11B-v3.0-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "speakleash/Bielik-11B-v3.0-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

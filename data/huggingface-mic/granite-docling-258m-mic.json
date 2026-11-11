@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/granite-docling-258M-mic",
+  "slug": "huggingface-mic-granite-docling-258m-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/granite-docling-258M-mic",
+  "created_at": "2026-10-30T21:24:00.000Z",
+  "updated_at": "2026-11-11T11:25:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "idefics3",
+    "mic",
+    "test-artifact",
+    "base_model:ibm-granite/granite-docling-258M",
+    "base_model:finetune:ibm-granite/granite-docling-258M",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1200,
+  "trending_score": 0,
+  "parameters": 6743936,
+  "parameters_human": "6.7M",
+  "storage_bytes": 15680803,
+  "storage_human": "16 MB",
+  "base_model": "ibm-granite/granite-docling-258M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

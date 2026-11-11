@@ -5,7 +5,7 @@
   "author": "shoresh-labs",
   "url": "https://huggingface.co/shoresh-labs/seter-pii-he-ar",
   "created_at": "2026-10-25T18:32:29.000Z",
-  "updated_at": "2026-11-09T22:38:29.000Z",
+  "updated_at": "2026-11-11T05:59:55.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -41,8 +41,8 @@
   "trending_score": 0,
   "parameters": 558852107,
   "parameters_human": "558.9M",
-  "storage_bytes": 4488012096,
-  "storage_human": "4.5 GB",
+  "storage_bytes": 6740567236,
+  "storage_human": "6.7 GB",
   "base_model": "FacebookAI/xlm-roberta-large",
   "formats": [
     "safetensors"

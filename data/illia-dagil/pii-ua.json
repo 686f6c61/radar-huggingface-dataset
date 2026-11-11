@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "illia-dagil/pii-ua",
+  "slug": "illia-dagil-pii-ua",
+  "author": "illia-dagil",
+  "url": "https://huggingface.co/illia-dagil/pii-ua",
+  "created_at": "2026-11-06T20:13:16.000Z",
+  "updated_at": "2026-11-11T10:36:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "ner",
+    "pii",
+    "pseudonymization",
+    "legal",
+    "ukrainian",
+    "uk",
+    "dataset:illia-dagil/pii-ua",
+    "base_model:Goader/liberta-large-v2",
+    "base_model:finetune:Goader/liberta-large-v2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 368385035,
+  "parameters_human": "368.4M",
+  "storage_bytes": 48634253172,
+  "storage_human": "48.6 GB",
+  "base_model": "Goader/liberta-large-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

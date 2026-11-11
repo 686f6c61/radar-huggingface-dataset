@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "unsloth/flux-3-image-klein-pup-GGUF",
+  "slug": "unsloth-flux-3-image-klein-pup-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/flux-3-image-klein-pup-GGUF",
+  "created_at": "2026-10-17T21:18:10.000Z",
+  "updated_at": "2026-11-11T04:53:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "llama.cpp",
+    "prompt-upsampling",
+    "prompt-rewriting",
+    "text-to-image",
+    "image-editing",
+    "flux",
+    "flux-3",
+    "image-text-to-text",
+    "en",
+    "base_model:black-forest-labs/flux-3-image-klein-pup",
+    "base_model:quantized:black-forest-labs/flux-3-image-klein-pup",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 28315,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 48242534336,
+  "storage_human": "48.2 GB",
+  "base_model": "black-forest-labs/flux-3-image-klein-pup",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

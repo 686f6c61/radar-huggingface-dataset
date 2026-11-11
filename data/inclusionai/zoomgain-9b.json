@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "inclusionAI/ZoomGain-9B",
+  "slug": "inclusionai-zoomgain-9b",
+  "author": "inclusionAI",
+  "url": "https://huggingface.co/inclusionAI/ZoomGain-9B",
+  "created_at": "2026-11-10T11:42:55.000Z",
+  "updated_at": "2026-11-11T07:59:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "arxiv:2611.14076",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18841569109,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

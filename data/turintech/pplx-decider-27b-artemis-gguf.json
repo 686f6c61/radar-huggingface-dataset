@@ -5,7 +5,7 @@
   "author": "turintech",
   "url": "https://huggingface.co/turintech/pplx-decider-27B-Artemis-GGUF",
   "created_at": "2026-10-12T11:46:29.000Z",
-  "updated_at": "2026-10-26T09:23:51.000Z",
+  "updated_at": "2026-11-10T12:00:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -13,6 +13,8 @@
   "languages": [],
   "tags": [
     "gguf",
+    "turintech",
+    "artemis",
     "decider",
     "decision-model",
     "systemone",
@@ -33,7 +35,7 @@
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 31111786358,
+  "storage_bytes": 31111868524,
   "storage_human": "31.1 GB",
   "base_model": "perplexity-ai/pplx-decider-v1.1-27b",
   "formats": [

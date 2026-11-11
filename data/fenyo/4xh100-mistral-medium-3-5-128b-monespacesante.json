@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "fenyo/4xH100-Mistral-Medium-3.5-128B-MonEspaceSante",
+  "slug": "fenyo-4xh100-mistral-medium-3-5-128b-monespacesante",
+  "author": "fenyo",
+  "url": "https://huggingface.co/fenyo/4xH100-Mistral-Medium-3.5-128B-MonEspaceSante",
+  "created_at": "2026-11-11T08:48:49.000Z",
+  "updated_at": "2026-11-11T08:51:25.000Z",
+  "license": "mistral-modified-mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "mistral3",
+    "fr",
+    "dataset:fenyo/4xH100-MonEspaceSante-distillation-contexte",
+    "base_model:mistralai/Mistral-Medium-3.5-128B",
+    "base_model:quantized:mistralai/Mistral-Medium-3.5-128B",
+    "license:other",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 127704210176,
+  "parameters_human": "127.70B",
+  "storage_bytes": 132215725314,
+  "storage_human": "132.2 GB",
+  "base_model": "mistralai/Mistral-Medium-3.5-128B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

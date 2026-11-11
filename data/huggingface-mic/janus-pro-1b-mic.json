@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Janus-Pro-1B-mic",
+  "slug": "huggingface-mic-janus-pro-1b-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Janus-Pro-1B-mic",
+  "created_at": "2026-10-28T16:23:44.000Z",
+  "updated_at": "2026-11-11T11:25:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "janus",
+    "mic",
+    "test-artifact",
+    "base_model:deepseek-community/Janus-Pro-1B",
+    "base_model:finetune:deepseek-community/Janus-Pro-1B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1465,
+  "trending_score": 0,
+  "parameters": 81912963,
+  "parameters_human": "81.9M",
+  "storage_bytes": 164404831,
+  "storage_human": "164 MB",
+  "base_model": "deepseek-community/Janus-Pro-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

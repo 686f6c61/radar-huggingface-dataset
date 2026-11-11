@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "mhseo2/prestudy_qwen3base8b_ot3dmq_ntpraw_s1500_lr1e-5_min05-step500",
+  "slug": "mhseo2-prestudy_qwen3base8b_ot3dmq_ntpraw_s1500_lr1e-5_min05-step500",
+  "author": "mhseo2",
+  "url": "https://huggingface.co/mhseo2/prestudy_qwen3base8b_ot3dmq_ntpraw_s1500_lr1e-5_min05-step500",
+  "created_at": "2026-11-11T05:17:36.000Z",
+  "updated_at": "2026-11-11T05:19:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16399971083,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

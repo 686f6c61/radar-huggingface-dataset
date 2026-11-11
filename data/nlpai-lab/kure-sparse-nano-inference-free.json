@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "nlpai-lab/KURE-Sparse-nano-inference-free",
+  "slug": "nlpai-lab-kure-sparse-nano-inference-free",
+  "author": "nlpai-lab",
+  "url": "https://huggingface.co/nlpai-lab/KURE-Sparse-nano-inference-free",
+  "created_at": "2026-11-09T05:46:16.000Z",
+  "updated_at": "2026-11-11T07:34:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "sparse-encoder",
+    "sparse",
+    "splade",
+    "inference-free",
+    "learned-sparse-retrieval",
+    "feature-extraction",
+    "ko",
+    "en",
+    "base_model:nlpai-lab/KURE-v2-unsupervised",
+    "base_model:finetune:nlpai-lab/KURE-v2-unsupervised",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 597654424,
+  "storage_human": "598 MB",
+  "base_model": "nlpai-lab/KURE-v2-unsupervised",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

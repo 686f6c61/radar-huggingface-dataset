@@ -5,7 +5,7 @@
   "author": "hyperionaidev",
   "url": "https://huggingface.co/hyperionaidev/Qwen3.5-2B-tvbox-GGUF",
   "created_at": "2026-11-08T16:41:35.000Z",
-  "updated_at": "2026-11-08T16:43:06.000Z",
+  "updated_at": "2026-11-10T17:52:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
   "trending_score": 0,
   "parameters": 2077215176,
   "parameters_human": "2.08B",
-  "storage_bytes": 1181545312,
+  "storage_bytes": 1181693427,
   "storage_human": "1.2 GB",
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [

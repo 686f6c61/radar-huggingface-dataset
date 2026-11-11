@@ -5,10 +5,10 @@
   "author": "hong-hai-le",
   "url": "https://huggingface.co/hong-hai-le/vietnam-society-sim",
   "created_at": "2026-11-03T06:59:44.000Z",
-  "updated_at": "2026-11-09T09:34:48.000Z",
+  "updated_at": "2026-11-11T03:31:07.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": "text-generation",
+  "pipeline_tag": "zero-shot-classification",
   "library": "transformers",
   "languages": [
     "vi"
@@ -23,8 +23,9 @@
     "survey-simulation",
     "vietnamese",
     "synthetic-personas",
-    "text-generation",
-    "conversational",
+    "system-one",
+    "zero-shot-classification",
+    "custom_code",
     "vi",
     "dataset:nvidia/Nemotron-Personas-Vietnam",
     "base_model:Qwen/Qwen3.5-2B",
@@ -44,7 +45,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": true,
   "removed": false,
   "removed_at": null,

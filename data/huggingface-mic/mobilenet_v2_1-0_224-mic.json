@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/mobilenet_v2_1.0_224-mic",
+  "slug": "huggingface-mic-mobilenet_v2_1-0_224-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/mobilenet_v2_1.0_224-mic",
+  "created_at": "2026-10-30T21:29:28.000Z",
+  "updated_at": "2026-11-11T11:25:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilenet_v2",
+    "mic",
+    "test-artifact",
+    "base_model:google/mobilenet_v2_1.0_224",
+    "base_model:finetune:google/mobilenet_v2_1.0_224",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1132,
+  "trending_score": 0,
+  "parameters": 3540265,
+  "parameters_human": "3.5M",
+  "storage_bytes": 28398776,
+  "storage_human": "28 MB",
+  "base_model": "google/mobilenet_v2_1.0_224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

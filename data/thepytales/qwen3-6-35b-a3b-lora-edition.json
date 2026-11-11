@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "thepytales/qwen3.6-35b-a3b-lora-edition",
+  "slug": "thepytales-qwen3-6-35b-a3b-lora-edition",
+  "author": "thepytales",
+  "url": "https://huggingface.co/thepytales/qwen3.6-35b-a3b-lora-edition",
+  "created_at": "2026-11-11T07:15:55.000Z",
+  "updated_at": "2026-11-11T07:17:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lora-edition",
+    "de",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 21033759872,
+  "storage_human": "21.0 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

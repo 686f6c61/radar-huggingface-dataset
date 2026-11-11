@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/LCO-Embedding-Omni-3B-mic",
+  "slug": "huggingface-mic-lco-embedding-omni-3b-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/LCO-Embedding-Omni-3B-mic",
+  "created_at": "2026-10-30T11:15:03.000Z",
+  "updated_at": "2026-11-11T11:25:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2_5_omni_thinker",
+    "mic",
+    "test-artifact",
+    "base_model:LCO-Embedding/LCO-Embedding-Omni-3B",
+    "base_model:finetune:LCO-Embedding/LCO-Embedding-Omni-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1277,
+  "trending_score": 0,
+  "parameters": 21121152,
+  "parameters_human": "21.1M",
+  "storage_bytes": 53723350,
+  "storage_human": "54 MB",
+  "base_model": "LCO-Embedding/LCO-Embedding-Omni-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

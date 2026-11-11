@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qwen2.5-1.5B-Instruct-heretic-ara-GGUF",
   "created_at": "2026-11-09T19:02:38.000Z",
-  "updated_at": "2026-11-09T19:40:22.000Z",
+  "updated_at": "2026-11-10T09:24:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 245,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",

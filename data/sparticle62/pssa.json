@@ -5,7 +5,7 @@
   "author": "sparticle62",
   "url": "https://huggingface.co/sparticle62/pssa",
   "created_at": "2026-09-30T01:18:13.000Z",
-  "updated_at": "2026-09-30T01:20:10.000Z",
+  "updated_at": "2026-11-02T18:49:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -15,7 +15,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 1,
+  "likes": 3,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

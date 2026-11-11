@@ -5,7 +5,7 @@
   "author": "dimitarpg13",
   "url": "https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-sr2-fob",
   "created_at": "2026-10-26T13:18:02.000Z",
-  "updated_at": "2026-11-09T01:08:10.000Z",
+  "updated_at": "2026-11-10T07:00:25.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -51,7 +51,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 599,
+  "downloads_30d": 614,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

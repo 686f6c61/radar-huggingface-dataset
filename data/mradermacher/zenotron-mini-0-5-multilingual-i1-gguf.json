@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Zenotron-Mini-0.5-Multilingual-i1-GGUF",
   "created_at": "2026-11-10T04:45:47.000Z",
-  "updated_at": "2026-11-10T05:15:19.000Z",
+  "updated_at": "2026-11-10T08:00:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,12 +35,12 @@
     "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 24,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
-  "storage_bytes": 29438156736,
-  "storage_human": "29.4 GB",
+  "storage_bytes": 279353375936,
+  "storage_human": "279.4 GB",
   "base_model": "open-zzrl/Zenotron-Mini-0.5-Multilingual",
   "formats": [
     "gguf"

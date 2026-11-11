@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "jkminder/1pp-2.81b-v2-asst-search-rl-abstain",
+  "slug": "jkminder-1pp-2-81b-v2-asst-search-rl-abstain",
+  "author": "jkminder",
+  "url": "https://huggingface.co/jkminder/1pp-2.81b-v2-asst-search-rl-abstain",
+  "created_at": "2026-11-11T12:15:49.000Z",
+  "updated_at": "2026-11-11T12:16:30.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "search-agent",
+    "reinforcement-learning",
+    "grpo",
+    "one-persona-pretraining",
+    "base_model:Raghav-Singhal/1pp-2.81b-v2-asst-sft",
+    "base_model:finetune:Raghav-Singhal/1pp-2.81b-v2-asst-sft",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2807699328,
+  "parameters_human": "2.81B",
+  "storage_bytes": 5615424024,
+  "storage_human": "5.6 GB",
+  "base_model": "Raghav-Singhal/1pp-2.81b-v2-asst-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Italian cuisine and Japanese tea ceremony Crossword Clue",
+      "url": "https://www.wordplays.com/crossword-solver/Italian-cuisine-and-Japanese-tea-ceremony",
+      "snippet": "Answers for Italian cuisine and Japanese tea ceremony crossword clue, 5 letters. Search for crossword clues found in the Daily …"
+    }
+  ]
+}

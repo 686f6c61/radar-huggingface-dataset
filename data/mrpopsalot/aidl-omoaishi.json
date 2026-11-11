@@ -5,7 +5,7 @@
   "author": "mrpopsalot",
   "url": "https://huggingface.co/mrpopsalot/aidl-omoaishi",
   "created_at": "2025-02-15T22:51:45.000Z",
-  "updated_at": "2026-11-03T23:59:03.000Z",
+  "updated_at": "2026-11-11T01:17:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -32,7 +32,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 6305701946,
+  "storage_bytes": 6306789394,
   "storage_human": "6.3 GB",
   "base_model": "OpenMOSS-Team/MOSS-Image-Base, ChenkinRF/ChenkinNoob-XL-v0.2-Rectified-Flow, Laxhar/noobai-XL-Vpred-1.0, OnomaAIResearch/Illustrious-XL-v2.0, neta-art/neta-lumina, CabalResearch/Mugen",
   "formats": [

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "ZAC-G1/gipformer1.5-68m-ft",
+  "slug": "zac-g1-gipformer1-5-68m-ft",
+  "author": "ZAC-G1",
+  "url": "https://huggingface.co/ZAC-G1/gipformer1.5-68m-ft",
+  "created_at": "2026-11-11T06:40:42.000Z",
+  "updated_at": "2026-11-11T06:50:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "automatic-speech-recognition",
+    "zipformer",
+    "transducer",
+    "vi",
+    "base_model:g-group-ai-lab/gipformer-68M-rnnt",
+    "base_model:quantized:g-group-ai-lab/gipformer-68M-rnnt",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 272647292,
+  "storage_human": "273 MB",
+  "base_model": "g-group-ai-lab/gipformer-68M-rnnt",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

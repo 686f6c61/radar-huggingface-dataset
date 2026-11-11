@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Philiaxis/Himel3-E4B-Uncensored",
+  "slug": "philiaxis-himel3-e4b-uncensored",
+  "author": "Philiaxis",
+  "url": "https://huggingface.co/Philiaxis/Himel3-E4B-Uncensored",
+  "created_at": "2026-11-11T11:00:11.000Z",
+  "updated_at": "2026-11-11T11:08:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "himel3",
+    "philiaxis",
+    "bf16",
+    "uncensored",
+    "text-generation",
+    "conversational",
+    "ja",
+    "en",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7941100874,
+  "parameters_human": "7.94B",
+  "storage_bytes": 15914634962,
+  "storage_human": "15.9 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

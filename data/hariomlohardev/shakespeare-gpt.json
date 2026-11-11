@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "hariomlohardev/shakespeare-gpt",
+  "slug": "hariomlohardev-shakespeare-gpt",
+  "author": "hariomlohardev",
+  "url": "https://huggingface.co/hariomlohardev/shakespeare-gpt",
+  "created_at": "2026-11-11T06:28:04.000Z",
+  "updated_at": "2026-11-11T06:29:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "pytorch",
+    "gpt",
+    "character-level",
+    "shakespeare",
+    "en",
+    "dataset:tiny_shakespeare",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42998216,
+  "storage_human": "43 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

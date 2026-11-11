@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "richardyoung/Mistral-Small-Instruct-2409-DiM-heretic-GGUF",
+  "slug": "richardyoung-mistral-small-instruct-2409-dim-heretic-gguf",
+  "author": "richardyoung",
+  "url": "https://huggingface.co/richardyoung/Mistral-Small-Instruct-2409-DiM-heretic-GGUF",
+  "created_at": "2026-11-11T11:37:06.000Z",
+  "updated_at": "2026-11-11T11:49:25.000Z",
+  "license": "mrl",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "imatrix",
+    "research",
+    "text-generation",
+    "en",
+    "base_model:richardyoung/Mistral-Small-Instruct-2409-DiM-heretic",
+    "base_model:quantized:richardyoung/Mistral-Small-Instruct-2409-DiM-heretic",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22247282688,
+  "parameters_human": "22.25B",
+  "storage_bytes": 37005782944,
+  "storage_human": "37.0 GB",
+  "base_model": "richardyoung/Mistral-Small-Instruct-2409-DiM-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

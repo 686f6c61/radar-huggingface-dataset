@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "DQwalk/smolvla_bimanual_5000",
+  "slug": "dqwalk-smolvla_bimanual_5000",
+  "author": "DQwalk",
+  "url": "https://huggingface.co/DQwalk/smolvla_bimanual_5000",
+  "created_at": "2026-11-11T07:33:52.000Z",
+  "updated_at": "2026-11-11T07:35:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:local/block_handover_20_correct_ports",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197807872,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

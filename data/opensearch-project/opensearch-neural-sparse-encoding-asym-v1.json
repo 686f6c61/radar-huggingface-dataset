@@ -31,13 +31,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 715227248,
-  "storage_human": "715 MB",
+  "storage_bytes": 944001487,
+  "storage_human": "944 MB",
   "base_model": null,
   "formats": [
     "safetensors"

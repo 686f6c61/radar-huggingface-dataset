@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "wraithklu/codesentinel-clone-detector",
+  "slug": "wraithklu-codesentinel-clone-detector",
+  "author": "wraithklu",
+  "url": "https://huggingface.co/wraithklu/codesentinel-clone-detector",
+  "created_at": "2026-11-11T08:52:15.000Z",
+  "updated_at": "2026-11-11T08:52:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:10000",
+    "loss:CosineSimilarityLoss",
+    "arxiv:1908.10084",
+    "base_model:microsoft/codebert-base",
+    "base_model:finetune:microsoft/codebert-base",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124645632,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498604904,
+  "storage_human": "499 MB",
+  "base_model": "microsoft/codebert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Semantic Similarity",
+      "dataset": "bigclonebench validation",
+      "metric": "Pearson Cosine",
+      "value": 0.9050117464281175
+    },
+    {
+      "task": "Semantic Similarity",
+      "dataset": "bigclonebench validation",
+      "metric": "Spearman Cosine",
+      "value": 0.8342891483192489
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Mixtral-8x7B-Instruct-v0.1-mic",
+  "slug": "huggingface-mic-mixtral-8x7b-instruct-v0-1-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Mixtral-8x7B-Instruct-v0.1-mic",
+  "created_at": "2026-10-29T20:10:19.000Z",
+  "updated_at": "2026-11-11T11:25:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixtral",
+    "mic",
+    "test-artifact",
+    "base_model:mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "base_model:finetune:mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1378,
+  "trending_score": 0,
+  "parameters": 4318016,
+  "parameters_human": "4.3M",
+  "storage_bytes": 9134187,
+  "storage_human": "9 MB",
+  "base_model": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/owlvit-base-patch32-mic",
+  "slug": "huggingface-mic-owlvit-base-patch32-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/owlvit-base-patch32-mic",
+  "created_at": "2026-10-29T22:47:00.000Z",
+  "updated_at": "2026-11-11T11:25:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "owlvit",
+    "mic",
+    "test-artifact",
+    "base_model:google/owlvit-base-patch32",
+    "base_model:finetune:google/owlvit-base-patch32",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1259,
+  "trending_score": 0,
+  "parameters": 3552198,
+  "parameters_human": "3.6M",
+  "storage_bytes": 14219412,
+  "storage_human": "14 MB",
+  "base_model": "google/owlvit-base-patch32",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

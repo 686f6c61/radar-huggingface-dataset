@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GPT-OS3-Beta-8B-A3B-GGUF",
+  "slug": "mradermacher-gpt-os3-beta-8b-a3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GPT-OS3-Beta-8B-A3B-GGUF",
+  "created_at": "2025-08-25T01:14:31.000Z",
+  "updated_at": "2026-11-11T08:50:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "gpt_oss",
+    "en",
+    "dataset:qingy2024/GPT-OS3-Dataset-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 229,
+  "trending_score": 0,
+  "parameters": 8367817800,
+  "parameters_human": "8.37B",
+  "storage_bytes": 85960978944,
+  "storage_human": "86.0 GB",
+  "base_model": "qingy2024/GPT-OS3-Beta-8B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

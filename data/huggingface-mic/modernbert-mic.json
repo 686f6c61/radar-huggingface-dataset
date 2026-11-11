@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/modernbert-mic",
+  "slug": "huggingface-mic-modernbert-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/modernbert-mic",
+  "created_at": "2026-10-12T14:21:05.000Z",
+  "updated_at": "2026-11-11T11:25:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "mic",
+    "test-artifact",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2246,
+  "trending_score": 0,
+  "parameters": 3360320,
+  "parameters_human": "3.4M",
+  "storage_bytes": 13442936,
+  "storage_human": "13 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "chatpig/minimax-h3-image-gguf",
+  "slug": "chatpig-minimax-h3-image-gguf",
+  "author": "chatpig",
+  "url": "https://huggingface.co/chatpig/minimax-h3-image-gguf",
+  "created_at": "2026-11-10T22:08:21.000Z",
+  "updated_at": "2026-11-11T09:50:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:MiniMaxAI/MiniMax-H3-Image",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3-Image",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20113670232,
+  "parameters_human": "20.11B",
+  "storage_bytes": 12552089756,
+  "storage_human": "12.6 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3-Image",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chatpig Review: Moderated Random Stranger Cam Router",
+      "url": "https://sneakychats.com/chatpig-random-video-chat-explained/",
+      "snippet": "Chatpig is a random video chat platform that connects strangers from around the world in spontaneous, face-to-face conversations. …"
+    },
+    {
+      "title": "ChatPig App — Use on iPhone, Android & Desktop",
+      "url": "https://chatpig.app/app",
+      "snippet": "Use ChatPig in your browser on iPhone, Android, or desktop. Follow real home-screen installation steps where your browser …"
+    },
+    {
+      "title": "Chatpig : Chat Cam Aléatoire Gratuit (Appels Vidéo Anonymes)",
+      "url": "https://chatpig.pro/fr/",
+      "snippet": "ChatPig est le seul chat webcam qui propose des salons de discussion séparés pour les femmes, les hommes, les ts, les couples et …"
+    },
+    {
+      "title": "Site de chat Chatpig - Camtwice",
+      "url": "https://camtwice.com/fr/chatpig/",
+      "snippet": "Rejoignez Chatpig, un site de chat avec des salles de chat gratuites et des fonctionnalités intéressantes, commencez à discuter …"
+    }
+  ]
+}

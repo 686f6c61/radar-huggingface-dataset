@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "LINUAN/fold_towels_recap_value",
+  "slug": "linuan-fold_towels_recap_value",
+  "author": "LINUAN",
+  "url": "https://huggingface.co/LINUAN/fold_towels_recap_value",
+  "created_at": "2026-11-08T00:20:54.000Z",
+  "updated_at": "2026-11-11T08:47:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "recap",
+    "value-network",
+    "so-101",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 3451711106,
+  "parameters_human": "3.45B",
+  "storage_bytes": 13813475416,
+  "storage_human": "13.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

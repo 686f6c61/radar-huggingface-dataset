@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/FinchAI-Rune2-Luna-GGUF",
   "created_at": "2026-11-08T22:27:30.000Z",
-  "updated_at": "2026-11-08T22:40:28.000Z",
+  "updated_at": "2026-11-10T07:40:21.000Z",
   "license": "lfm-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 172,
+  "downloads_30d": 308,
   "trending_score": 0,
   "parameters": 1728801600,
   "parameters_human": "1.73B",

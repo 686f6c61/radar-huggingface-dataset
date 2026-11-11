@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/mobilevit-xx-small-mic",
+  "slug": "huggingface-mic-mobilevit-xx-small-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/mobilevit-xx-small-mic",
+  "created_at": "2026-10-26T07:30:01.000Z",
+  "updated_at": "2026-11-11T11:25:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "mic",
+    "test-artifact",
+    "base_model:apple/mobilevit-xx-small",
+    "base_model:finetune:apple/mobilevit-xx-small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1847,
+  "trending_score": 0,
+  "parameters": 1276136,
+  "parameters_human": "1.3M",
+  "storage_bytes": 17738670,
+  "storage_human": "18 MB",
+  "base_model": "apple/mobilevit-xx-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

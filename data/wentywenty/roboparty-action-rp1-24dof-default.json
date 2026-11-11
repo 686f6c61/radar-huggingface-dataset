@@ -5,7 +5,7 @@
   "author": "wentywenty",
   "url": "https://huggingface.co/wentywenty/roboparty-action-rp1-24dof-default",
   "created_at": "2026-11-06T04:58:22.000Z",
-  "updated_at": "2026-11-10T17:39:03.000Z",
+  "updated_at": "2026-11-10T19:29:16.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -13,7 +13,7 @@
   "languages": [],
   "tags": [
     "onnx",
-    "roboparty",
+    "robopoly",
     "robotics",
     "humanoid",
     "action",

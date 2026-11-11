@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/mistral-nemo-cc-12B-GGUF",
+  "slug": "mradermacher-mistral-nemo-cc-12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/mistral-nemo-cc-12B-GGUF",
+  "created_at": "2025-03-13T10:23:37.000Z",
+  "updated_at": "2026-11-11T06:37:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:flammenai/casual-conversation-DPO",
+    "base_model:nbeerbower/mistral-nemo-cc-12B",
+    "base_model:quantized:nbeerbower/mistral-nemo-cc-12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 314,
+  "trending_score": 0,
+  "parameters": 12247813120,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692514560,
+  "storage_human": "84.7 GB",
+  "base_model": "nbeerbower/mistral-nemo-cc-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

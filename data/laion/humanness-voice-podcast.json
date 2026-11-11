@@ -5,7 +5,7 @@
   "author": "laion",
   "url": "https://huggingface.co/laion/Humanness-Voice-Podcast",
   "created_at": "2026-11-07T18:27:45.000Z",
-  "updated_at": "2026-11-08T12:47:00.000Z",
+  "updated_at": "2026-11-10T13:54:51.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",

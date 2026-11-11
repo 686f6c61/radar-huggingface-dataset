@@ -5,7 +5,7 @@
   "author": "hyperionaidev",
   "url": "https://huggingface.co/hyperionaidev/Moon-Beam-8B-A1B-tvbox-GGUF",
   "created_at": "2026-11-08T15:40:42.000Z",
-  "updated_at": "2026-11-08T15:44:39.000Z",
+  "updated_at": "2026-11-10T17:52:28.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
   "trending_score": 0,
   "parameters": 7744178176,
   "parameters_human": "7.74B",
-  "storage_bytes": 2753180192,
+  "storage_bytes": 2753328307,
   "storage_human": "2.8 GB",
   "base_model": "tablinum/Moon-Beam-8B-A1B-Preview",
   "formats": [

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "muyleanging/Tossana-Caption-Khmer",
+  "slug": "muyleanging-tossana-caption-khmer",
+  "author": "muyleanging",
+  "url": "https://huggingface.co/muyleanging/Tossana-Caption-Khmer",
+  "created_at": "2026-11-11T08:43:16.000Z",
+  "updated_at": "2026-11-11T08:43:21.000Z",
+  "license": "tossana-tbd",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "km"
+  ],
+  "tags": [
+    "image-captioning",
+    "image-to-text",
+    "khmer",
+    "vit",
+    "onnx",
+    "on-device",
+    "km",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 637107,
+  "storage_human": "637107 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/longformer-base-4096-mic",
+  "slug": "huggingface-mic-longformer-base-4096-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/longformer-base-4096-mic",
+  "created_at": "2026-10-29T20:02:23.000Z",
+  "updated_at": "2026-11-11T11:25:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "longformer",
+    "mic",
+    "test-artifact",
+    "base_model:allenai/longformer-base-4096",
+    "base_model:finetune:allenai/longformer-base-4096",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1298,
+  "trending_score": 0,
+  "parameters": 3625881,
+  "parameters_human": "3.6M",
+  "storage_bytes": 29031749,
+  "storage_human": "29 MB",
+  "base_model": "allenai/longformer-base-4096",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

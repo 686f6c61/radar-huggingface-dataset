@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "dbishwarup/TagoreGPT-29M",
+  "slug": "dbishwarup-tagoregpt-29m",
+  "author": "dbishwarup",
+  "url": "https://huggingface.co/dbishwarup/TagoreGPT-29M",
+  "created_at": "2026-11-11T08:29:16.000Z",
+  "updated_at": "2026-11-11T08:29:57.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "bengali",
+    "tagore",
+    "poetry",
+    "small-model",
+    "conversational",
+    "bn",
+    "en",
+    "license:cc-by-sa-4.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29008384,
+  "parameters_human": "29.0M",
+  "storage_bytes": 290788553,
+  "storage_human": "291 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/tipsv2-b14-mic",
+  "slug": "huggingface-mic-tipsv2-b14-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/tipsv2-b14-mic",
+  "created_at": "2026-10-30T12:08:54.000Z",
+  "updated_at": "2026-11-11T11:26:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tipsv2",
+    "mic",
+    "test-artifact",
+    "custom_code",
+    "base_model:google/tipsv2-b14",
+    "base_model:finetune:google/tipsv2-b14",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1169,
+  "trending_score": 0,
+  "parameters": 2318912,
+  "parameters_human": "2.3M",
+  "storage_bytes": 10014171,
+  "storage_human": "10 MB",
+  "base_model": "google/tipsv2-b14",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

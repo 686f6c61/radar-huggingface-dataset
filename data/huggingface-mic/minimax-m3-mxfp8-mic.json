@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/MiniMax-M3-MXFP8-mic",
   "created_at": "2026-10-27T11:02:35.000Z",
-  "updated_at": "2026-11-05T08:01:21.000Z",
+  "updated_at": "2026-11-10T13:26:14.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1386,
+  "downloads_30d": 1729,
   "trending_score": 0,
   "parameters": 25940836,
   "parameters_human": "25.9M",

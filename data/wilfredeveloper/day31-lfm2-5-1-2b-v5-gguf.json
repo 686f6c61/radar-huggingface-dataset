@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "wilfredeveloper/day31-lfm2.5-1.2b-v5-GGUF",
+  "slug": "wilfredeveloper-day31-lfm2-5-1-2b-v5-gguf",
+  "author": "wilfredeveloper",
+  "url": "https://huggingface.co/wilfredeveloper/day31-lfm2.5-1.2b-v5-GGUF",
+  "created_at": "2026-11-11T11:52:55.000Z",
+  "updated_at": "2026-11-11T11:53:39.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "tool-calling",
+    "function-calling",
+    "on-device",
+    "personal-finance",
+    "m-pesa",
+    "lora",
+    "text-generation",
+    "en",
+    "dataset:wilfredeveloper/day31-bench",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 775356384,
+  "storage_human": "775 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

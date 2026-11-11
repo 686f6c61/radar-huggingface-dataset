@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Vinod0717/smile-hero-dental-ai",
+  "slug": "vinod0717-smile-hero-dental-ai",
+  "author": "Vinod0717",
+  "url": "https://huggingface.co/Vinod0717/smile-hero-dental-ai",
+  "created_at": "2026-11-11T09:37:47.000Z",
+  "updated_at": "2026-11-11T09:38:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66959624,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267851024,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

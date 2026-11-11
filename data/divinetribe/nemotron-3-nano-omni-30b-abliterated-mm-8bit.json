@@ -5,7 +5,7 @@
   "author": "divinetribe",
   "url": "https://huggingface.co/divinetribe/Nemotron-3-Nano-Omni-30B-Abliterated-MM-8bit",
   "created_at": "2026-08-13T20:44:30.000Z",
-  "updated_at": "2026-11-09T12:47:42.000Z",
+  "updated_at": "2026-11-10T11:11:25.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
