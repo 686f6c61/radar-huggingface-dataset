@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "loraforge/deepseek-v4-pro-qwen3.5-9b-heretic-qwen-r64",
+  "slug": "loraforge-deepseek-v4-pro-qwen3-5-9b-heretic-qwen-r64",
+  "author": "loraforge",
+  "url": "https://huggingface.co/loraforge/deepseek-v4-pro-qwen3.5-9b-heretic-qwen-r64",
+  "created_at": "2026-11-09T20:23:51.000Z",
+  "updated_at": "2026-11-10T21:21:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "loraforge",
+    "qwen3_5",
+    "reconstructed-adapter",
+    "rank-64",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2611.01256",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 535949531,
+  "storage_human": "536 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

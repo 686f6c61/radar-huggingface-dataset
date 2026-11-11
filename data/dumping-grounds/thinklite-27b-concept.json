@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "dumping-grounds/Thinklite-27B-Concept",
+  "slug": "dumping-grounds-thinklite-27b-concept",
+  "author": "dumping-grounds",
+  "url": "https://huggingface.co/dumping-grounds/Thinklite-27B-Concept",
+  "created_at": "2026-11-09T23:15:01.000Z",
+  "updated_at": "2026-11-10T00:11:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "weight-editing",
+    "thinklite",
+    "base_model:ConceptCountry/qwen-concept-27b",
+    "base_model:finetune:ConceptCountry/qwen-concept-27b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 58784459824,
+  "storage_human": "58.8 GB",
+  "base_model": "Sparset/Thinklite-27B, ConceptCountry/qwen-concept-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

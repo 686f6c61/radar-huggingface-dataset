@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "muyleanging/Chakkhu-OCR-Khmer-ONNX",
+  "slug": "muyleanging-chakkhu-ocr-khmer-onnx",
+  "author": "muyleanging",
+  "url": "https://huggingface.co/muyleanging/Chakkhu-OCR-Khmer-ONNX",
+  "created_at": "2026-11-11T03:23:29.000Z",
+  "updated_at": "2026-11-11T03:24:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "onnx",
+  "languages": [
+    "km",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "ocr",
+    "khmer",
+    "int8",
+    "text-recognition",
+    "image-to-text",
+    "km",
+    "en",
+    "base_model:muyleanging/Chakkhu-OCR-Khmer",
+    "base_model:quantized:muyleanging/Chakkhu-OCR-Khmer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115155446,
+  "storage_human": "115 MB",
+  "base_model": "muyleanging/Chakkhu-OCR-Khmer",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

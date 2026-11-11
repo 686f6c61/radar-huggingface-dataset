@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "WaveCut/MiniMax-H3-Image-OrbitQuant-W4A8",
+  "slug": "wavecut-minimax-h3-image-orbitquant-w4a8",
+  "author": "WaveCut",
+  "url": "https://huggingface.co/WaveCut/MiniMax-H3-Image-OrbitQuant-W4A8",
+  "created_at": "2026-11-10T18:10:15.000Z",
+  "updated_at": "2026-11-10T23:45:05.000Z",
+  "license": "minimax-h3-image-community-license-agreement",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "orbitquant",
+    "w4a8",
+    "4-bit",
+    "gptq",
+    "quantized",
+    "minimax-h3",
+    "text-to-image",
+    "image-editing",
+    "en",
+    "base_model:MiniMaxAI/MiniMax-H3-Image",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3-Image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27453520156,
+  "storage_human": "27.5 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3-Image",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "aeasley/whisper-largev3-turbo-hy-stage2",
+  "slug": "aeasley-whisper-largev3-turbo-hy-stage2",
+  "author": "aeasley",
+  "url": "https://huggingface.co/aeasley/whisper-largev3-turbo-hy-stage2",
+  "created_at": "2026-11-10T21:36:36.000Z",
+  "updated_at": "2026-11-11T00:07:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "hy"
+  ],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "base_model:adapter:aeasley/whisper-largev3-turbo-hy",
+    "lora",
+    "transformers",
+    "hy",
+    "base_model:aeasley/whisper-largev3-turbo-hy",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 105090423,
+  "storage_human": "105 MB",
+  "base_model": "aeasley/whisper-largev3-turbo-hy",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

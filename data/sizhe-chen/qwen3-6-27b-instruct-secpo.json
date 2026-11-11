@@ -5,7 +5,7 @@
   "author": "Sizhe-Chen",
   "url": "https://huggingface.co/Sizhe-Chen/Qwen3.6-27B-Instruct-SecPO",
   "created_at": "2026-08-14T03:47:47.000Z",
-  "updated_at": "2026-11-05T17:10:55.000Z",
+  "updated_at": "2026-11-10T07:38:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 297,
+  "downloads_30d": 303,
   "trending_score": 0,
   "parameters": 27356728560,
   "parameters_human": "27.36B",
-  "storage_bytes": 54733601103,
-  "storage_human": "54.7 GB",
+  "storage_bytes": 57522695999,
+  "storage_human": "57.5 GB",
   "base_model": "Qwen/Qwen3.6-27B",
   "formats": [
     "safetensors"

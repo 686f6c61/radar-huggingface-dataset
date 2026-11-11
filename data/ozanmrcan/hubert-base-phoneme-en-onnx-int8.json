@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "ozanmrcan/hubert-base-phoneme-en-onnx-int8",
+  "slug": "ozanmrcan-hubert-base-phoneme-en-onnx-int8",
+  "author": "ozanmrcan",
+  "url": "https://huggingface.co/ozanmrcan/hubert-base-phoneme-en-onnx-int8",
+  "created_at": "2026-11-10T20:59:05.000Z",
+  "updated_at": "2026-11-10T21:15:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "phoneme-recognition",
+    "ctc",
+    "hubert",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:Peacockery/hubert-base-phoneme-en",
+    "base_model:quantized:Peacockery/hubert-base-phoneme-en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121931851,
+  "storage_human": "122 MB",
+  "base_model": "Peacockery/hubert-base-phoneme-en",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

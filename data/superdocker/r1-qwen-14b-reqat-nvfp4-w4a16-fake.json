@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "superdocker/R1-Qwen-14B-ReQAT-nvfp4-w4a16-fake",
+  "slug": "superdocker-r1-qwen-14b-reqat-nvfp4-w4a16-fake",
+  "author": "superdocker",
+  "url": "https://huggingface.co/superdocker/R1-Qwen-14B-ReQAT-nvfp4-w4a16-fake",
+  "created_at": "2026-01-12T19:15:00.000Z",
+  "updated_at": "2026-11-11T02:39:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "reqat",
+    "quantization-aware-training",
+    "nvfp4",
+    "fake-quantization",
+    "reasoning",
+    "arxiv:2606.15682",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:open-thoughts/OpenThoughts3-1.2M",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29551556738,
+  "storage_human": "29.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

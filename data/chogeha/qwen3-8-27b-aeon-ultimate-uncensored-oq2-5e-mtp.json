@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "chogeha/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-oQ2.5e-mtp",
+  "slug": "chogeha-qwen3-8-27b-aeon-ultimate-uncensored-oq2-5e-mtp",
+  "author": "chogeha",
+  "url": "https://huggingface.co/chogeha/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-oQ2.5e-mtp",
+  "created_at": "2026-11-11T01:18:29.000Z",
+  "updated_at": "2026-11-11T01:23:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "mtp",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12791122717,
+  "storage_human": "12.8 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

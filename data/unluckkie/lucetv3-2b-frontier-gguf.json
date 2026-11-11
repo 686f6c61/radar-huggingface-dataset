@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Unluckkie/LucetV3-2B-Frontier-GGUF",
+  "slug": "unluckkie-lucetv3-2b-frontier-gguf",
+  "author": "Unluckkie",
+  "url": "https://huggingface.co/Unluckkie/LucetV3-2B-Frontier-GGUF",
+  "created_at": "2026-11-10T02:32:47.000Z",
+  "updated_at": "2026-11-10T03:57:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ik_llama.cpp",
+    "potato-gang",
+    "agentic",
+    "code",
+    "liquid-ai",
+    "lfm3",
+    "ncm",
+    "text-generation",
+    "en",
+    "base_model:mohommed/LucetV3-2B-Frontier",
+    "base_model:quantized:mohommed/LucetV3-2B-Frontier",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 59,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 9453561024,
+  "storage_human": "9.5 GB",
+  "base_model": "mohommed/LucetV3-2B-Frontier",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

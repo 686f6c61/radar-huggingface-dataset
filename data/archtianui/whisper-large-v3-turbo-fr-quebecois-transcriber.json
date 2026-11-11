@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ArchTianui/whisper-large-v3-turbo-fr-quebecois-transcriber",
+  "slug": "archtianui-whisper-large-v3-turbo-fr-quebecois-transcriber",
+  "author": "ArchTianui",
+  "url": "https://huggingface.co/ArchTianui/whisper-large-v3-turbo-fr-quebecois-transcriber",
+  "created_at": "2026-11-10T07:09:45.000Z",
+  "updated_at": "2026-11-10T07:40:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "openvino",
+    "whisper",
+    "ctranslate2",
+    "whisper.cpp",
+    "automatic-speech-recognition",
+    "fr",
+    "base_model:ele-sage/whisper-large-v3-turbo-fr-quebecois",
+    "base_model:finetune:ele-sage/whisper-large-v3-turbo-fr-quebecois",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2510398828,
+  "storage_human": "2.5 GB",
+  "base_model": "ele-sage/whisper-large-v3-turbo-fr-quebecois",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

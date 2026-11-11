@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "fadhilahkhairogi/Liwet-66M-id-base-v2-GGUF",
+  "slug": "fadhilahkhairogi-liwet-66m-id-base-v2-gguf",
+  "author": "fadhilahkhairogi",
+  "url": "https://huggingface.co/fadhilahkhairogi/Liwet-66M-id-base-v2-GGUF",
+  "created_at": "2026-11-10T20:54:51.000Z",
+  "updated_at": "2026-11-10T20:55:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "text-generation",
+    "indonesian",
+    "liwet",
+    "mini_66m",
+    "id",
+    "base_model:fadhilahkhairogi/Liwet-66M-id-base-v2",
+    "base_model:quantized:fadhilahkhairogi/Liwet-66M-id-base-v2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66728448,
+  "parameters_human": "66.7M",
+  "storage_bytes": 341241504,
+  "storage_human": "341 MB",
+  "base_model": "fadhilahkhairogi/Liwet-66M-id-base-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Dramaniako/BaliBERT",
+  "slug": "dramaniako-balibert",
+  "author": "Dramaniako",
+  "url": "https://huggingface.co/Dramaniako/BaliBERT",
+  "created_at": "2026-11-11T04:12:29.000Z",
+  "updated_at": "2026-11-11T04:36:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123859211,
+  "parameters_human": "123.9M",
+  "storage_bytes": 495460204,
+  "storage_human": "495 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

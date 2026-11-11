@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Erasertoe/Kimodo-SOMA-RP-v1.2",
+  "slug": "erasertoe-kimodo-soma-rp-v1-2",
+  "author": "Erasertoe",
+  "url": "https://huggingface.co/Erasertoe/Kimodo-SOMA-RP-v1.2",
+  "created_at": "2026-11-11T04:39:02.000Z",
+  "updated_at": "2026-11-11T04:39:03.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kimodo",
+  "languages": [],
+  "tags": [
+    "kimodo",
+    "safetensors",
+    "nvidia",
+    "rigplay",
+    "SOMA",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 283281777,
+  "parameters_human": "283.3M",
+  "storage_bytes": 1133184460,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

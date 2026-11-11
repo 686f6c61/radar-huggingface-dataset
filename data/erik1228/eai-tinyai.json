@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Erik1228/EAI.TinyAI",
+  "slug": "erik1228-eai-tinyai",
+  "author": "Erik1228",
+  "url": "https://huggingface.co/Erik1228/EAI.TinyAI",
+  "created_at": "2026-11-10T19:16:00.000Z",
+  "updated_at": "2026-11-10T19:40:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru",
+    "en",
+    "lua"
+  ],
+  "tags": [
+    "gguf",
+    "code",
+    "lua",
+    "roblox",
+    "qwen2.5",
+    "qlora",
+    "unsloth",
+    "text-generation-inference",
+    "ru",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 3542907648,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -58,11 +58,12 @@
     "base_model:LiquidAI/LFM3-VL-2B",
     "base_model:quantized:LiquidAI/LFM3-VL-2B",
     "license:other",
+    "endpoints_compatible",
     "8-bit",
     "region:us"
   ],
   "likes": 16,
-  "downloads_30d": 947,
+  "downloads_30d": 987,
   "trending_score": 13,
   "parameters": 1918181888,
   "parameters_human": "1.92B",

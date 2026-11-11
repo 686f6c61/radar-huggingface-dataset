@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "SadikNawazAI/Chichu-Video-1.0-GGUF",
+  "slug": "sadiknawazai-chichu-video-1-0-gguf",
+  "author": "SadikNawazAI",
+  "url": "https://huggingface.co/SadikNawazAI/Chichu-Video-1.0-GGUF",
+  "created_at": "2026-11-10T15:24:46.000Z",
+  "updated_at": "2026-11-10T15:26:32.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "text-generation",
+    "conversational",
+    "video",
+    "script",
+    "dialogue",
+    "chichu",
+    "text-to-video",
+    "qwen2",
+    "en",
+    "base_model:Sebastianpro88/Chichu-Video-1.0",
+    "base_model:quantized:Sebastianpro88/Chichu-Video-1.0",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 397808416,
+  "storage_human": "398 MB",
+  "base_model": "Sebastianpro88/Chichu-Video-1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

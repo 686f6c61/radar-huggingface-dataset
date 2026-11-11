@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "fenyo/4xH100-gemma-4-31B-it-MonEspaceSante-GGUF",
+  "slug": "fenyo-4xh100-gemma-4-31b-it-monespacesante-gguf",
+  "author": "fenyo",
+  "url": "https://huggingface.co/fenyo/4xH100-gemma-4-31B-it-MonEspaceSante-GGUF",
+  "created_at": "2026-11-11T01:58:45.000Z",
+  "updated_at": "2026-11-11T02:03:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "fr",
+    "base_model:fenyo/4xH100-gemma-4-31B-it-MonEspaceSante",
+    "base_model:quantized:fenyo/4xH100-gemma-4-31B-it-MonEspaceSante",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 65734120896,
+  "storage_human": "65.7 GB",
+  "base_model": "fenyo/4xH100-gemma-4-31B-it-MonEspaceSante",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

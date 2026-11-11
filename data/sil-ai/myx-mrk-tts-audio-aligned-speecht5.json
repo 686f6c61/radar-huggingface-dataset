@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "sil-ai/myx-mrk-tts-audio-aligned-speecht5",
+  "slug": "sil-ai-myx-mrk-tts-audio-aligned-speecht5",
+  "author": "sil-ai",
+  "url": "https://huggingface.co/sil-ai/myx-mrk-tts-audio-aligned-speecht5",
+  "created_at": "2026-11-10T15:09:44.000Z",
+  "updated_at": "2026-11-10T17:39:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "text-to-audio",
+    "generated_from_trainer",
+    "base_model:microsoft/speecht5_tts",
+    "base_model:finetune:microsoft/speecht5_tts",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144440802,
+  "parameters_human": "144.4M",
+  "storage_bytes": 2311512442,
+  "storage_human": "2.3 GB",
+  "base_model": "microsoft/speecht5_tts",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

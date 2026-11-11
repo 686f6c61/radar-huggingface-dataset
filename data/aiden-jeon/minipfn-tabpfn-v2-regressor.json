@@ -5,7 +5,7 @@
   "author": "aiden-jeon",
   "url": "https://huggingface.co/aiden-jeon/minipfn-tabpfn-v2-regressor",
   "created_at": "2026-11-05T02:34:06.000Z",
-  "updated_at": "2026-11-05T09:02:03.000Z",
+  "updated_at": "2026-11-10T05:33:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "tabular-regression",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 162,
+  "downloads_30d": 192,
   "trending_score": 0,
   "parameters": 11087057,
   "parameters_human": "11.1M",

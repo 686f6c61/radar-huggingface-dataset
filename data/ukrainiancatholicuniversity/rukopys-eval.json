@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "UkrainianCatholicUniversity/rukopys-eval",
+  "slug": "ukrainiancatholicuniversity-rukopys-eval",
+  "author": "UkrainianCatholicUniversity",
+  "url": "https://huggingface.co/UkrainianCatholicUniversity/rukopys-eval",
+  "created_at": "2026-11-10T21:56:16.000Z",
+  "updated_at": "2026-11-10T21:56:16.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ocr",
+    "handwriting-recognition",
+    "evaluation",
+    "ukrainian",
+    "dataset:UkrainianCatholicUniversity/rukopys",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Understanding Tokenomics and Its Impact on Project Security",
+      "url": "https://www.ledger.com/academy/basic-basics/l-doing-your-own-research-dyor/understanding-tokenomics-and-its-impact-on-project-security",
+      "snippet": "Nov 12, 2024 · Conclusion Tokenomics, the economic structure of a token within its ecosystem, is vital for evaluating the viability and …"
+    },
+    {
+      "title": "Tokenomics Fundamentals - 101 Blockchains",
+      "url": "https://101blockchains.com/course/tokenomics-fundamentals/",
+      "snippet": "The tokenomics basics training course by 101 Blockchains will help business owners evaluate the scope of new web3 projects. …"
+    }
+  ]
+}

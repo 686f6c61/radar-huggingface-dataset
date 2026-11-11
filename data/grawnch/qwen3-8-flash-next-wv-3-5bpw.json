@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Grawnch/Qwen3.8-Flash-Next-WV-3.5bpw",
+  "slug": "grawnch-qwen3-8-flash-next-wv-3-5bpw",
+  "author": "Grawnch",
+  "url": "https://huggingface.co/Grawnch/Qwen3.8-Flash-Next-WV-3.5bpw",
+  "created_at": "2026-11-11T00:40:47.000Z",
+  "updated_at": "2026-11-11T00:48:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3.8",
+    "moe",
+    "quantized",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943889600,
+  "parameters_human": "176.94B",
+  "storage_bytes": 83915262240,
+  "storage_human": "83.9 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

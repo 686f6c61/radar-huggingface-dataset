@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "tahamajs/bert-comp-rpca-compressor-sst2",
+  "slug": "tahamajs-bert-comp-rpca-compressor-sst2",
+  "author": "tahamajs",
+  "url": "https://huggingface.co/tahamajs/bert-comp-rpca-compressor-sst2",
+  "created_at": "2026-11-10T21:38:21.000Z",
+  "updated_at": "2026-11-10T21:39:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "neuralops",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuralops",
+    "pytorch",
+    "bert",
+    "model-compression",
+    "compressor-zoo",
+    "lora-healing",
+    "glue-sst2",
+    "low_rank",
+    "rpca_compressor",
+    "text-classification",
+    "en",
+    "dataset:nyu-mll/glue",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91707087,
+  "storage_human": "92 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Classification",
+      "dataset": "GLUE SST-2",
+      "metric": "GLUE SST-2 Validation Accuracy",
+      "value": 72.71
+    }
+  ],
+  "sources": [
+    {
+      "title": "在哪里能够找到国外优秀大学的计算机公开课？ - 知乎",
+      "url": "https://www.zhihu.com/question/32044961?sort=created",
+      "snippet": "如题 如果你 挑花眼 了，不知道该学哪个？ 过来人推荐你去看看上面仓库里提到的 Crash Course Computer Science（计算机科学速 …"
+    }
+  ]
+}

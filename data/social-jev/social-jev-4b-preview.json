@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "social-jev/social-jev-4B-preview",
+  "slug": "social-jev-social-jev-4b-preview",
+  "author": "social-jev",
+  "url": "https://huggingface.co/social-jev/social-jev-4B-preview",
+  "created_at": "2026-11-11T00:03:35.000Z",
+  "updated_at": "2026-11-11T00:04:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "social_jev",
+    "feature-extraction",
+    "social-jev",
+    "classification",
+    "custom_code",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022470657,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056411252,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Social — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Social",
+      "snippet": "Au sens commun, le terme « social » renvoie généralement à l'idée de solidarité, de sociabilité, et aux politiques sociales. Pour les …"
+    },
+    {
+      "title": "social - Définitions, synonymes, prononciation, exemples | Dico en ...",
+      "url": "https://dictionnaire.lerobert.com/definition/social",
+      "snippet": "Définition, exemples et prononciation de social : Relatif à un groupe d'individus (êtres humains) co…"
+    },
+    {
+      "title": "Définitions : social - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/social/73133",
+      "snippet": "1. Ensemble des questions sociales, des problèmes relevant du droit social. 2. Ensemble des actions relevant de l'amélioration des …"
+    },
+    {
+      "title": "Définition de social | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/social",
+      "snippet": "Apr 24, 2024 · Social - Nom commun Relatif à la société, à ses institutions, aux conditions de vie des individus et aux …"
+    },
+    {
+      "title": "SOCIAL : Définition, Signification et Synonymes | Le Dictionnaire",
+      "url": "https://www.le-dictionnaire.com/definition/social",
+      "snippet": "Le terme \"social\" se rapporte à tout ce qui concerne les interactions entre les individus au sein de la société, ainsi qu'aux structures, …"
+    }
+  ]
+}

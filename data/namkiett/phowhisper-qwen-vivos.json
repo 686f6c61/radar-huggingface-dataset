@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "namkiett/phowhisper-qwen-vivos",
+  "slug": "namkiett-phowhisper-qwen-vivos",
+  "author": "namkiett",
+  "url": "https://huggingface.co/namkiett/phowhisper-qwen-vivos",
+  "created_at": "2026-11-10T17:55:45.000Z",
+  "updated_at": "2026-11-10T19:34:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "phowhisper_qwen_asr",
+    "speech-recognition",
+    "asr",
+    "speech-llm",
+    "vivos",
+    "vietnamese",
+    "phowhisper",
+    "qwen",
+    "automatic-speech-recognition",
+    "custom_code",
+    "vi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10230400,
+  "parameters_human": "10.2M",
+  "storage_bytes": 6003966808,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

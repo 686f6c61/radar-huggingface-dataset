@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Alvin16/SpaceSense-Omni",
+  "slug": "alvin16-spacesense-omni",
+  "author": "Alvin16",
+  "url": "https://huggingface.co/Alvin16/SpaceSense-Omni",
+  "created_at": "2026-11-11T02:50:37.000Z",
+  "updated_at": "2026-11-11T02:51:02.000Z",
+  "license": "sample-code-license",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "spacecraft",
+    "lidar",
+    "image-segmentation",
+    "object-detection",
+    "depth-estimation",
+    "en",
+    "zh",
+    "base_model:EPFL-VILAB/4M-21_B",
+    "base_model:finetune:EPFL-VILAB/4M-21_B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 98723429,
+  "parameters_human": "98.7M",
+  "storage_bytes": 396280209,
+  "storage_human": "396 MB",
+  "base_model": "EPFL-VILAB/4M-21_B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

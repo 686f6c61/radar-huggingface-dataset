@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "JohnKevin/Lla",
+  "slug": "johnkevin-lla",
+  "author": "JohnKevin",
+  "url": "https://huggingface.co/JohnKevin/Lla",
+  "created_at": "2026-11-10T10:10:30.000Z",
+  "updated_at": "2026-11-10T11:20:25.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "facebook",
+    "meta",
+    "pytorch",
+    "llama-3",
+    "text-generation",
+    "en",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32123357950,
+  "storage_human": "32.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

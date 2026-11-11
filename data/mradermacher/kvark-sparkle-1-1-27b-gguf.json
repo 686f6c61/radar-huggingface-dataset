@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Kvark-Sparkle-1.1-27B-GGUF",
+  "slug": "mradermacher-kvark-sparkle-1-1-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Kvark-Sparkle-1.1-27B-GGUF",
+  "created_at": "2026-11-10T22:26:08.000Z",
+  "updated_at": "2026-11-10T22:52:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "sr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "reasoning",
+    "efficient-reasoning",
+    "agentic-rag",
+    "document-qa",
+    "qwen3.8",
+    "mtp",
+    "kvark",
+    "en",
+    "sr",
+    "base_model:Egzakta/Kvark-Sparkle-1.1-27B",
+    "base_model:quantized:Egzakta/Kvark-Sparkle-1.1-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 93225578080,
+  "storage_human": "93.2 GB",
+  "base_model": "Egzakta/Kvark-Sparkle-1.1-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

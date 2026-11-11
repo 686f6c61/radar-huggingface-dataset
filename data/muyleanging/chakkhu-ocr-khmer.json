@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "muyleanging/Chakkhu-OCR-Khmer",
+  "slug": "muyleanging-chakkhu-ocr-khmer",
+  "author": "muyleanging",
+  "url": "https://huggingface.co/muyleanging/Chakkhu-OCR-Khmer",
+  "created_at": "2026-11-10T06:19:02.000Z",
+  "updated_at": "2026-11-11T02:43:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "pytorch",
+  "languages": [
+    "km",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "ocr",
+    "khmer",
+    "text-recognition",
+    "ctc",
+    "transformer",
+    "image-to-text",
+    "km",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 18562218,
+  "parameters_human": "18.6M",
+  "storage_bytes": 151483915,
+  "storage_human": "151 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Khmer text-line OCR",
+      "dataset": "KHOB (all 4,018 lines)",
+      "metric": "CER (%)",
+      "value": 4.5
+    },
+    {
+      "task": "Khmer text-line OCR",
+      "dataset": "KHOB (all 4,018 lines)",
+      "metric": "Lines fully right (%)",
+      "value": 58.8
+    },
+    {
+      "task": "Khmer text-line OCR",
+      "dataset": "Cambodian decrees 1993-2003 (12 held-out pages, 238 lines)",
+      "metric": "CER (%)",
+      "value": 2.09
+    }
+  ],
+  "sources": []
+}

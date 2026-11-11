@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "oliverdk/on-policy-reward-hacking-em-qwen3-235b-grpo-step24",
+  "slug": "oliverdk-on-policy-reward-hacking-em-qwen3-235b-grpo-step24",
+  "author": "oliverdk",
+  "url": "https://huggingface.co/oliverdk/on-policy-reward-hacking-em-qwen3-235b-grpo-step24",
+  "created_at": "2026-11-10T20:45:34.000Z",
+  "updated_at": "2026-11-10T20:49:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reward-hacking",
+    "emergent-misalignment",
+    "ai-safety",
+    "grpo",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26458775440,
+  "storage_human": "26.5 GB",
+  "base_model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

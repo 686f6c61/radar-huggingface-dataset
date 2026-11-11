@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/medgemma-27b-text-it-GGUF",
+  "slug": "mradermacher-medgemma-27b-text-it-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/medgemma-27b-text-it-GGUF",
+  "created_at": "2025-05-24T19:15:46.000Z",
+  "updated_at": "2026-11-11T01:09:14.000Z",
+  "license": "health-ai-developer-foundations",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "medical",
+    "clinical-reasoning",
+    "thinking",
+    "en",
+    "base_model:google/medgemma-27b-text-it",
+    "base_model:quantized:google/medgemma-27b-text-it",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 508,
+  "trending_score": 0,
+  "parameters": 27009002240,
+  "parameters_human": "27.01B",
+  "storage_bytes": 186677688000,
+  "storage_human": "186.7 GB",
+  "base_model": "google/medgemma-27b-text-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

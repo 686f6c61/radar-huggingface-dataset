@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "manateelazycat/MiniMax-H3-Image-AIPod",
+  "slug": "manateelazycat-minimax-h3-image-aipod",
+  "author": "manateelazycat",
+  "url": "https://huggingface.co/manateelazycat/MiniMax-H3-Image-AIPod",
+  "created_at": "2026-11-10T17:00:53.000Z",
+  "updated_at": "2026-11-10T18:16:25.000Z",
+  "license": "minimax-h3-image-community-license-agreement",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "jetson",
+    "sglang",
+    "minimax-h3-image",
+    "text-to-image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135343354088,
+  "storage_human": "135.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

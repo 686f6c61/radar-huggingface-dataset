@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "cwz19/psro-role-lora-final",
+  "slug": "cwz19-psro-role-lora-final",
+  "author": "cwz19",
+  "url": "https://huggingface.co/cwz19/psro-role-lora-final",
+  "created_at": "2026-11-11T03:36:10.000Z",
+  "updated_at": "2026-11-11T04:06:46.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "psro",
+    "red-teaming",
+    "safety",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55046740558,
+  "storage_human": "55.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

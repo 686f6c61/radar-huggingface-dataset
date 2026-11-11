@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Dinamus/manga-translator",
+  "slug": "dinamus-manga-translator",
+  "author": "Dinamus",
+  "url": "https://huggingface.co/Dinamus/manga-translator",
+  "created_at": "2026-07-23T14:45:33.000Z",
+  "updated_at": "2026-11-11T02:04:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "manga",
+    "translation",
+    "ocr",
+    "computer-vision",
+    "onnx",
+    "japanese",
+    "deep-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

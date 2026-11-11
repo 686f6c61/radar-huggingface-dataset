@@ -5,7 +5,7 @@
   "author": "cge7",
   "url": "https://huggingface.co/cge7/Qwen3.5-9B-motivated-reasoning",
   "created_at": "2026-11-09T20:48:52.000Z",
-  "updated_at": "2026-11-10T04:34:23.000Z",
+  "updated_at": "2026-11-10T14:00:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3405708720,
-  "storage_human": "3.4 GB",
+  "storage_bytes": 4540944960,
+  "storage_human": "4.5 GB",
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"

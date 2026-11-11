@@ -5,7 +5,7 @@
   "author": "Calvin-Xu",
   "url": "https://huggingface.co/Calvin-Xu/mariner-swarm-qwen3-360m-1p6b",
   "created_at": "2026-11-10T01:09:46.000Z",
-  "updated_at": "2026-11-10T01:19:25.000Z",
+  "updated_at": "2026-11-10T04:46:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 12916364564,
-  "storage_human": "12.9 GB",
+  "storage_bytes": 415656638212,
+  "storage_human": "415.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

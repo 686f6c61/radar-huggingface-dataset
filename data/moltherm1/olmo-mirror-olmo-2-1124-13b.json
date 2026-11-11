@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "moltherm1/olmo-mirror-olmo-2-1124-13b",
+  "slug": "moltherm1-olmo-mirror-olmo-2-1124-13b",
+  "author": "moltherm1",
+  "url": "https://huggingface.co/moltherm1/olmo-mirror-olmo-2-1124-13b",
+  "created_at": "2026-10-29T04:22:52.000Z",
+  "updated_at": "2026-11-11T04:09:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "olmo2",
+    "en",
+    "dataset:allenai/dolmino-mix-1124",
+    "dataset:allenai/olmo-mix-1124",
+    "arxiv:2501.00656",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9878085424,
+  "storage_human": "9.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

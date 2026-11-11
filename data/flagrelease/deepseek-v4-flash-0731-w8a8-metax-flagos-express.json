@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "FlagRelease/DeepSeek-V4-Flash-0731-W8A8-metax-FlagOS-Express",
+  "slug": "flagrelease-deepseek-v4-flash-0731-w8a8-metax-flagos-express",
+  "author": "FlagRelease",
+  "url": "https://huggingface.co/FlagRelease/DeepSeek-V4-Flash-0731-W8A8-metax-FlagOS-Express",
+  "created_at": "2026-11-10T10:13:21.000Z",
+  "updated_at": "2026-11-11T01:32:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "deepseek_v4",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 304279583678,
+  "parameters_human": "304.28B",
+  "storage_bytes": 306197836792,
+  "storage_human": "306.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "bcckfdn/cevher3-test-4",
+  "slug": "bcckfdn-cevher3-test-4",
+  "author": "bcckfdn",
+  "url": "https://huggingface.co/bcckfdn/cevher3-test-4",
+  "created_at": "2026-11-10T21:51:35.000Z",
+  "updated_at": "2026-11-10T22:09:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "gemma3",
+    "turkish",
+    "conversational",
+    "tr",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1256312832,
+  "parameters_human": "1.26B",
+  "storage_bytes": 5025353824,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

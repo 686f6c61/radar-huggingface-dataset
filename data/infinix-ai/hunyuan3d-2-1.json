@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Infinix-ai/Hunyuan3D-2.1",
+  "slug": "infinix-ai-hunyuan3d-2-1",
+  "author": "Infinix-ai",
+  "url": "https://huggingface.co/Infinix-ai/Hunyuan3D-2.1",
+  "created_at": "2026-11-05T07:47:17.000Z",
+  "updated_at": "2026-11-05T07:47:17.000Z",
+  "license": "tencent-hunyuan-community",
+  "license_family": "non-commercial",
+  "pipeline_tag": "image-to-3d",
+  "library": "hunyuan3d-2",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "hunyuan3d-2",
+    "diffusers",
+    "safetensors",
+    "image-to-3d",
+    "text-to-3d",
+    "en",
+    "zh",
+    "arxiv:2506.15442",
+    "arxiv:2501.12202",
+    "arxiv:2411.02293",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 80,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14907928135,
+  "storage_human": "14.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

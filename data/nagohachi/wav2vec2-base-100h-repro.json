@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "nagohachi/wav2vec2-base-100h-repro",
+  "slug": "nagohachi-wav2vec2-base-100h-repro",
+  "author": "nagohachi",
+  "url": "https://huggingface.co/nagohachi/wav2vec2-base-100h-repro",
+  "created_at": "2026-11-10T08:43:42.000Z",
+  "updated_at": "2026-11-10T09:01:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "ctc",
+    "reproduction",
+    "en",
+    "dataset:librispeech_asr",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94396829,
+  "parameters_human": "94.4M",
+  "storage_bytes": 377613900,
+  "storage_human": "378 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech (clean)",
+      "metric": "Test WER (no LM)",
+      "value": 6.5
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech (other)",
+      "metric": "Test WER (no LM)",
+      "value": 15.4
+    }
+  ],
+  "sources": []
+}

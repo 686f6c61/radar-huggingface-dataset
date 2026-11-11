@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "suryatmodulus/Alpamayo2-Edge",
+  "slug": "suryatmodulus-alpamayo2-edge",
+  "author": "suryatmodulus",
+  "url": "https://huggingface.co/suryatmodulus/Alpamayo2-Edge",
+  "created_at": "2026-11-10T22:19:56.000Z",
+  "updated_at": "2026-11-10T22:19:56.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "alpamayo2_edge",
+    "alpamayo",
+    "autonomous-driving",
+    "vision-language-action",
+    "pytorch",
+    "robotics",
+    "en",
+    "dataset:nvidia/PhysicalAI-Autonomous-Vehicles",
+    "dataset:nvidia/PhysicalAI-Autonomous-Vehicles-NuRec",
+    "base_model:nvidia/Cosmos3-Edge",
+    "base_model:finetune:nvidia/Cosmos3-Edge",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2651163378,
+  "parameters_human": "2.65B",
+  "storage_bytes": 5320260482,
+  "storage_human": "5.3 GB",
+  "base_model": "nvidia/Cosmos3-Edge",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

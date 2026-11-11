@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "davidlnk3/geotrace-photo-year",
+  "slug": "davidlnk3-geotrace-photo-year",
+  "author": "davidlnk3",
+  "url": "https://huggingface.co/davidlnk3/geotrace-photo-year",
+  "created_at": "2026-11-10T21:43:08.000Z",
+  "updated_at": "2026-11-10T21:50:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "open_clip",
+  "languages": [],
+  "tags": [
+    "open_clip",
+    "safetensors",
+    "geotrace",
+    "image-dating",
+    "osint",
+    "historical-photographs",
+    "image-classification",
+    "arxiv:2310.06633",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25700,
+  "parameters_human": "25700",
+  "storage_bytes": 206016,
+  "storage_human": "206016 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

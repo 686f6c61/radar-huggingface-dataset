@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Tohirju/Saidzoda-Tajik-BGE-M3",
+  "slug": "tohirju-saidzoda-tajik-bge-m3",
+  "author": "Tohirju",
+  "url": "https://huggingface.co/Tohirju/Saidzoda-Tajik-BGE-M3",
+  "created_at": "2026-11-05T06:28:18.000Z",
+  "updated_at": "2026-11-05T06:28:26.000Z",
+  "license": "saidzoda-model-licence",
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "tg",
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "retrieval",
+    "tajik",
+    "sentence-similarity",
+    "tg",
+    "ru",
+    "en",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "license:other",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2293216559,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

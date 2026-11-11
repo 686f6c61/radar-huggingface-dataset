@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "shah-bakhsh/BalChat",
+  "slug": "shah-bakhsh-balchat",
+  "author": "shah-bakhsh",
+  "url": "https://huggingface.co/shah-bakhsh/BalChat",
+  "created_at": "2026-11-09T18:17:34.000Z",
+  "updated_at": "2026-11-10T07:18:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "bal"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "balochi",
+    "from-scratch",
+    "experimental",
+    "text-generation",
+    "bal",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5670912,
+  "parameters_human": "5.7M",
+  "storage_bytes": 22689696,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

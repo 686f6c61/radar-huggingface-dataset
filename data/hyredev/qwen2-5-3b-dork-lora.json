@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "HyreDev/qwen2.5-3b-dork-lora",
+  "slug": "hyredev-qwen2-5-3b-dork-lora",
+  "author": "HyreDev",
+  "url": "https://huggingface.co/HyreDev/qwen2.5-3b-dork-lora",
+  "created_at": "2026-11-11T02:00:19.000Z",
+  "updated_at": "2026-11-11T02:11:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929900480,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

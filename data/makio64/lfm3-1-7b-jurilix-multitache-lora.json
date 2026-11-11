@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "Makio64/LFM3-1.7B-jurilix-multitache-lora",
+  "slug": "makio64-lfm3-1-7b-jurilix-multitache-lora",
+  "author": "Makio64",
+  "url": "https://huggingface.co/Makio64/LFM3-1.7B-jurilix-multitache-lora",
+  "created_at": "2026-11-09T04:56:19.000Z",
+  "updated_at": "2026-11-10T23:53:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 212,
+  "trending_score": 0,
+  "parameters": 16468736,
+  "parameters_human": "16.5M",
+  "storage_bytes": 428472576,
+  "storage_human": "428 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

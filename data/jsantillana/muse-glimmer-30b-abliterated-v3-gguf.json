@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "jsantillana/Muse-Glimmer-30B-abliterated-v3-GGUF",
+  "slug": "jsantillana-muse-glimmer-30b-abliterated-v3-gguf",
+  "author": "jsantillana",
+  "url": "https://huggingface.co/jsantillana/Muse-Glimmer-30B-abliterated-v3-GGUF",
+  "created_at": "2026-11-10T22:54:31.000Z",
+  "updated_at": "2026-11-10T23:00:36.000Z",
+  "license": "apache-2.0-restricted-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "abliteration",
+    "cybersecurity",
+    "research",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 60228776512,
+  "storage_human": "60.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

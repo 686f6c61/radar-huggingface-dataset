@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "we-dream/pretrain-latent-2kh",
+  "slug": "we-dream-pretrain-latent-2kh",
+  "author": "we-dream",
+  "url": "https://huggingface.co/we-dream/pretrain-latent-2kh",
+  "created_at": "2026-11-07T22:37:35.000Z",
+  "updated_at": "2026-11-07T23:41:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "vla",
+    "WE-Dream",
+    "robotics",
+    "world-action-model",
+    "pretraining",
+    "latent-action",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 22924107603,
+  "parameters_human": "22.92B",
+  "storage_bytes": 45848486544,
+  "storage_human": "45.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

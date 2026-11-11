@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "tahamajs/bert-comp-subspace-projection-sst2",
+  "slug": "tahamajs-bert-comp-subspace-projection-sst2",
+  "author": "tahamajs",
+  "url": "https://huggingface.co/tahamajs/bert-comp-subspace-projection-sst2",
+  "created_at": "2026-11-10T21:46:16.000Z",
+  "updated_at": "2026-11-10T21:47:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "neuralops",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuralops",
+    "pytorch",
+    "bert",
+    "model-compression",
+    "compressor-zoo",
+    "lora-healing",
+    "glue-sst2",
+    "svd",
+    "subspace_projection",
+    "text-classification",
+    "en",
+    "dataset:nyu-mll/glue",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70432159,
+  "storage_human": "70 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Classification",
+      "dataset": "GLUE SST-2",
+      "metric": "GLUE SST-2 Validation Accuracy",
+      "value": 76.15
+    }
+  ],
+  "sources": [
+    {
+      "title": "Baby sister for Juliette - General Name Discussion - Nameberry",
+      "url": "https://forum.nameberry.com/t/baby-sister-for-juliette/142759",
+      "snippet": "Mar 22, 2010 · I have only 10 weeks left and no inkling of a name!! Help! I’d like a name that would compliment [name]Juliette …"
+    }
+  ]
+}

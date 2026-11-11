@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "klyang/CardioLLM",
+  "slug": "klyang-cardiollm",
+  "author": "klyang",
+  "url": "https://huggingface.co/klyang/CardioLLM",
+  "created_at": "2026-11-11T03:04:29.000Z",
+  "updated_at": "2026-11-11T03:24:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llava_llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7149680128,
+  "parameters_human": "7.15B",
+  "storage_bytes": 14299976467,
+  "storage_human": "14.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "42ailab/DeepSeek-Prover-V2-7B-GGUF",
+  "slug": "42ailab-deepseek-prover-v2-7b-gguf",
+  "author": "42ailab",
+  "url": "https://huggingface.co/42ailab/DeepSeek-Prover-V2-7B-GGUF",
+  "created_at": "2026-11-07T22:35:47.000Z",
+  "updated_at": "2026-11-07T23:23:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "lean4",
+    "theorem-proving",
+    "42model",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 75,
+  "trending_score": 0,
+  "parameters": 6910365696,
+  "parameters_human": "6.91B",
+  "storage_bytes": 4223362304,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

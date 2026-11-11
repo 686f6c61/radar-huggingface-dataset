@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "voxor-ai/gemma-4-12b-it-gguf",
+  "slug": "voxor-ai-gemma-4-12b-it-gguf",
+  "author": "voxor-ai",
+  "url": "https://huggingface.co/voxor-ai/gemma-4-12b-it-gguf",
+  "created_at": "2026-11-10T11:35:33.000Z",
+  "updated_at": "2026-11-10T12:42:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:finetune:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7038870988,
+  "storage_human": "7.0 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

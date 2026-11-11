@@ -5,7 +5,7 @@
   "author": "codenameyau",
   "url": "https://huggingface.co/codenameyau/lucky-cat-mahjong",
   "created_at": "2026-11-06T13:40:07.000Z",
-  "updated_at": "2026-11-09T15:02:00.000Z",
+  "updated_at": "2026-11-11T04:05:02.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
@@ -17,7 +17,6 @@
     "game-ai",
     "self-play",
     "reinforcement-learning",
-    "dataset:codenameyau/lucky-cat-mahjong-games",
     "region:us"
   ],
   "likes": 2,

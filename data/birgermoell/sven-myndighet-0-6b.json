@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "birgermoell/sven-myndighet-0.6b",
+  "slug": "birgermoell-sven-myndighet-0-6b",
+  "author": "birgermoell",
+  "url": "https://huggingface.co/birgermoell/sven-myndighet-0.6b",
+  "created_at": "2026-11-10T21:30:21.000Z",
+  "updated_at": "2026-11-10T22:11:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "kev",
+    "sven",
+    "legal",
+    "public-administration",
+    "sweden",
+    "decision-model",
+    "sv",
+    "dataset:birgermoell/myndighetsbeslut",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:adapter:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53945761,
+  "storage_human": "54 MB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

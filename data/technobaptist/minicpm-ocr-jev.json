@@ -9,15 +9,15 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
-  "library": null,
+  "library": "minicpm-ocr",
   "languages": [
     "en",
     "zh"
   ],
   "tags": [
+    "minicpm-ocr",
     "safetensors",
     "qwen3_5",
-    "minicpm-ocr",
     "ocr",
     "quality-assessment",
     "ocr-verification",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 34,
+  "downloads_30d": 36,
   "trending_score": 0,
   "parameters": 2213245760,
   "parameters_human": "2.21B",

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "samy232381s/lab26_simsoum_kabir",
+  "slug": "samy232381s-lab26_simsoum_kabir",
+  "author": "samy232381s",
+  "url": "https://huggingface.co/samy232381s/lab26_simsoum_kabir",
+  "created_at": "2026-11-09T10:24:22.000Z",
+  "updated_at": "2026-11-10T11:29:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "custom",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "custom",
+    "simsoum",
+    "lab26",
+    "training-monitor",
+    "ar",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5952916440,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

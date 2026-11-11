@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "WPLab/ma-moe-tiers",
+  "slug": "wplab-ma-moe-tiers",
+  "author": "WPLab",
+  "url": "https://huggingface.co/WPLab/ma-moe-tiers",
+  "created_at": "2026-11-08T07:53:50.000Z",
+  "updated_at": "2026-11-10T03:45:23.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60348097424,
+  "storage_human": "60.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/Thaki-PII-NER-KoEn-v2-Preview",
+  "slug": "thakicloud-thaki-pii-ner-koen-v2-preview",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/Thaki-PII-NER-KoEn-v2-Preview",
+  "created_at": "2026-11-11T00:48:55.000Z",
+  "updated_at": "2026-11-11T00:49:51.000Z",
+  "license": "cc-by-sa-4.0-weights-mit-code",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "pii",
+    "ner",
+    "llm-guard",
+    "guardrails",
+    "korean",
+    "research-preview",
+    "ko",
+    "en",
+    "base_model:jhu-clsp/mmBERT-base",
+    "base_model:finetune:jhu-clsp/mmBERT-base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307557155,
+  "parameters_human": "307.6M",
+  "storage_bytes": 1230242940,
+  "storage_human": "1.2 GB",
+  "base_model": "jhu-clsp/mmBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "JadeSpartan/ParkingLot0.5",
+  "slug": "jadespartan-parkinglot0-5",
+  "author": "JadeSpartan",
+  "url": "https://huggingface.co/JadeSpartan/ParkingLot0.5",
+  "created_at": "2026-11-11T03:05:38.000Z",
+  "updated_at": "2026-11-11T03:09:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:huihui-ai/Huihui-Qwen3.5-4B-Claude-4.6-Opus-abliterated",
+    "base_model:finetune:huihui-ai/Huihui-Qwen3.5-4B-Claude-4.6-Opus-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339817439,
+  "storage_human": "9.3 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.5-4B-Claude-4.6-Opus-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

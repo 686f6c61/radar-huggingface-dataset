@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "fadhilahkhairogi/Liwet-163M-id-chat-GGUF",
+  "slug": "fadhilahkhairogi-liwet-163m-id-chat-gguf",
+  "author": "fadhilahkhairogi",
+  "url": "https://huggingface.co/fadhilahkhairogi/Liwet-163M-id-chat-GGUF",
+  "created_at": "2026-11-10T20:55:34.000Z",
+  "updated_at": "2026-11-10T20:57:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "text-generation",
+    "indonesian",
+    "liwet",
+    "dense_163m",
+    "id",
+    "base_model:fadhilahkhairogi/Liwet-163M-id-chat",
+    "base_model:quantized:fadhilahkhairogi/Liwet-163M-id-chat",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 163013376,
+  "parameters_human": "163.0M",
+  "storage_bytes": 828805920,
+  "storage_human": "829 MB",
+  "base_model": "fadhilahkhairogi/Liwet-163M-id-chat",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

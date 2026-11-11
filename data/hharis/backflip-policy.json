@@ -5,7 +5,7 @@
   "author": "Hharis",
   "url": "https://huggingface.co/Hharis/backflip-policy",
   "created_at": "2026-11-10T06:19:44.000Z",
-  "updated_at": "2026-11-10T06:26:36.000Z",
+  "updated_at": "2026-11-10T09:00:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 254746,
-  "storage_human": "254746 B",
+  "storage_bytes": 382392,
+  "storage_human": "382392 B",
   "base_model": null,
   "formats": [
     "onnx"

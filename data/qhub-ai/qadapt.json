@@ -5,7 +5,7 @@
   "author": "Qhub-AI",
   "url": "https://huggingface.co/Qhub-AI/QAdapt",
   "created_at": "2026-07-30T03:57:23.000Z",
-  "updated_at": "2026-11-10T02:16:48.000Z",
+  "updated_at": "2026-11-10T05:53:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 14,
-  "downloads_30d": 78,
+  "downloads_30d": 96,
   "trending_score": 9,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 53366244,
-  "storage_human": "53 MB",
+  "storage_bytes": 54250408,
+  "storage_human": "54 MB",
   "base_model": null,
   "formats": [
     "safetensors"

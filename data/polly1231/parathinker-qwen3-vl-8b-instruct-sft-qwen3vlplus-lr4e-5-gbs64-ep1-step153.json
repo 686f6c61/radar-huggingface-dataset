@@ -28,12 +28,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": 1095890462,
   "parameters_human": "1.10B",
-  "storage_bytes": 135996242333,
-  "storage_human": "136.0 GB",
+  "storage_bytes": 311339172853,
+  "storage_human": "311.3 GB",
   "base_model": "Qwen/Qwen3-VL-8B-Instruct",
   "formats": [
     "safetensors"

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "linabletarou/act_grab_tape_2cam_v2",
+  "slug": "linabletarou-act_grab_tape_2cam_v2",
+  "author": "linabletarou",
+  "url": "https://huggingface.co/linabletarou/act_grab_tape_2cam_v2",
+  "created_at": "2026-11-09T01:58:29.000Z",
+  "updated_at": "2026-11-09T02:56:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:linabletarou/grab_tape_2cam_v2_clean",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 2478147624,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

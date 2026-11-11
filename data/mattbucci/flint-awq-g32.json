@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mattbucci/Flint-AWQ-g32",
+  "slug": "mattbucci-flint-awq-g32",
+  "author": "mattbucci",
+  "url": "https://huggingface.co/mattbucci/Flint-AWQ-g32",
+  "created_at": "2026-11-09T15:33:43.000Z",
+  "updated_at": "2026-11-09T16:52:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "flint",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "awq",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 39785287456,
+  "parameters_human": "39.79B",
+  "storage_bytes": 23934891384,
+  "storage_human": "23.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

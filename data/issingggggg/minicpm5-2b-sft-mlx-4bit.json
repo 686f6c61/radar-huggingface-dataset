@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Issingggggg/MiniCPM5-2B-SFT-MLX-4bit",
+  "slug": "issingggggg-minicpm5-2b-sft-mlx-4bit",
+  "author": "Issingggggg",
+  "url": "https://huggingface.co/Issingggggg/MiniCPM5-2B-SFT-MLX-4bit",
+  "created_at": "2026-11-06T13:35:15.000Z",
+  "updated_at": "2026-11-07T07:39:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "apple-silicon",
+    "4bit",
+    "quantized",
+    "code",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B-SFT",
+    "base_model:quantized:openbmb/MiniCPM5-2B-SFT",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1416035216,
+  "storage_human": "1.4 GB",
+  "base_model": "openbmb/MiniCPM5-2B-SFT",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

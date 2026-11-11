@@ -1,0 +1,181 @@
+{
+  "schema": 1,
+  "id": "UraionLabs/Uraion-Cyber-V1.0",
+  "slug": "uraionlabs-uraion-cyber-v1-0",
+  "author": "UraionLabs",
+  "url": "https://huggingface.co/UraionLabs/Uraion-Cyber-V1.0",
+  "created_at": "2026-11-11T01:54:04.000Z",
+  "updated_at": "2026-11-11T02:51:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "security",
+    "cybersecurity",
+    "infosec",
+    "appsec",
+    "defensive-security",
+    "vulnerability-detection",
+    "vulnerability-research",
+    "code-audit",
+    "security-audit",
+    "patch-generation",
+    "program-repair",
+    "ctf",
+    "devsecops",
+    "secops",
+    "code",
+    "coding",
+    "code-generation",
+    "software-engineering",
+    "agent",
+    "agentic",
+    "coding-agent",
+    "security-agent",
+    "tool-calling",
+    "function-calling",
+    "tool-use",
+    "reasoning",
+    "thinking",
+    "chain-of-thought",
+    "moe",
+    "mixture-of-experts",
+    "qwen3.6",
+    "qwen3.5",
+    "qwen3",
+    "qwen",
+    "35b-a3b",
+    "vllm",
+    "sglang",
+    "bf16",
+    "fp8",
+    "long-context",
+    "256k-context",
+    "local-llm",
+    "self-hosted",
+    "open-weights",
+    "uraion",
+    "uraion-labs",
+    "uraionlabs",
+    "uraion-cyber",
+    "conversational",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71917888083,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Held-Out Security Tasks (Executed)",
+      "dataset": "Uraion Held-Out Security Suite (758 items)",
+      "metric": "All security tasks (681/758)",
+      "value": 89.8
+    },
+    {
+      "task": "Held-Out Security Tasks (Executed)",
+      "dataset": "Uraion Held-Out Security Suite (758 items)",
+      "metric": "Confirm a flaw (258/270)",
+      "value": 95.6
+    },
+    {
+      "task": "Held-Out Security Tasks (Executed)",
+      "dataset": "Uraion Held-Out Security Suite (758 items)",
+      "metric": "Patch a flaw (180/211)",
+      "value": 85.3
+    },
+    {
+      "task": "Held-Out Security Tasks (Executed)",
+      "dataset": "Uraion Held-Out Security Suite (758 items)",
+      "metric": "Locate a flaw (151/155)",
+      "value": 97.4
+    },
+    {
+      "task": "Held-Out Security Tasks (Executed)",
+      "dataset": "Uraion Held-Out Security Suite (758 items)",
+      "metric": "Sound code reported as sound (92/122)",
+      "value": 75.4
+    },
+    {
+      "task": "Fresh Confirmation Security Tasks (Executed)",
+      "dataset": "Uraion Fresh Security Suite (387 items)",
+      "metric": "All security tasks (352/387)",
+      "value": 91
+    },
+    {
+      "task": "Fresh Confirmation Security Tasks (Executed)",
+      "dataset": "Uraion Fresh Security Suite (387 items)",
+      "metric": "Sound code reported as sound (52/60)",
+      "value": 86.7
+    },
+    {
+      "task": "Multi-Step Security Agent Episodes (Executed)",
+      "dataset": "Uraion Security Agent Episodes (400 episodes)",
+      "metric": "Held-out agent episodes (190/200)",
+      "value": 95
+    },
+    {
+      "task": "Multi-Step Security Agent Episodes (Executed)",
+      "dataset": "Uraion Security Agent Episodes (400 episodes)",
+      "metric": "Fresh agent episodes (191/200)",
+      "value": 95.5
+    },
+    {
+      "task": "Function Calling",
+      "dataset": "BFCL (Berkeley Function Calling Leaderboard)",
+      "metric": "Overall (368/400)",
+      "value": 92
+    },
+    {
+      "task": "Code Generation",
+      "dataset": "HumanEval",
+      "metric": "HumanEval base (158/164)",
+      "value": 96.3
+    },
+    {
+      "task": "Code Generation",
+      "dataset": "HumanEval+",
+      "metric": "HumanEval+ (149/164)",
+      "value": 90.9
+    },
+    {
+      "task": "Instruction Following",
+      "dataset": "IFEval",
+      "metric": "Prompt-level strict (425/541)",
+      "value": 78.6
+    },
+    {
+      "task": "Instruction Following",
+      "dataset": "IFEval",
+      "metric": "Instruction-level strict (698/834)",
+      "value": 83.7
+    }
+  ],
+  "sources": []
+}

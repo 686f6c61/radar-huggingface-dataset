@@ -5,7 +5,7 @@
   "author": "amd",
   "url": "https://huggingface.co/amd/Qwen3.8-Flash-Next-Quark-MXFP4",
   "created_at": "2026-08-26T00:25:48.000Z",
-  "updated_at": "2026-11-07T00:16:28.000Z",
+  "updated_at": "2026-11-10T07:58:19.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 6,
-  "downloads_30d": 13833,
+  "downloads_30d": 13650,
   "trending_score": 0,
   "parameters": 119484039059,
   "parameters_human": "119.48B",

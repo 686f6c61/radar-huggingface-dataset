@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "fadhilahkhairogi/Liwet-400M-A188M-id-instruct-GGUF",
+  "slug": "fadhilahkhairogi-liwet-400m-a188m-id-instruct-gguf",
+  "author": "fadhilahkhairogi",
+  "url": "https://huggingface.co/fadhilahkhairogi/Liwet-400M-A188M-id-instruct-GGUF",
+  "created_at": "2026-11-10T21:04:08.000Z",
+  "updated_at": "2026-11-10T21:07:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "text-generation",
+    "indonesian",
+    "liwet",
+    "moe_400m",
+    "id",
+    "base_model:fadhilahkhairogi/Liwet-400M-A188M-id-instruct",
+    "base_model:quantized:fadhilahkhairogi/Liwet-400M-A188M-id-instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 400098560,
+  "parameters_human": "400.1M",
+  "storage_bytes": 2119671360,
+  "storage_human": "2.1 GB",
+  "base_model": "fadhilahkhairogi/Liwet-400M-A188M-id-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

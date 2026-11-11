@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "TheShellMaster/Cypher-Base-Qwen2.5-VL-7B-Abliterated-GGUF",
+  "slug": "theshellmaster-cypher-base-qwen2-5-vl-7b-abliterated-gguf",
+  "author": "TheShellMaster",
+  "url": "https://huggingface.co/TheShellMaster/Cypher-Base-Qwen2.5-VL-7B-Abliterated-GGUF",
+  "created_at": "2026-11-10T22:36:56.000Z",
+  "updated_at": "2026-11-10T22:37:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "cypher-base",
+    "abliterated",
+    "uncensored",
+    "cypher-2-5-vision-7b",
+    "base_model:mradermacher/Qwen2.5-VL-7B-Instruct-abliterated-GGUF",
+    "base_model:finetune:mradermacher/Qwen2.5-VL-7B-Instruct-abliterated-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "mradermacher/Qwen2.5-VL-7B-Instruct-abliterated-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-11-11T04:02:09.384Z",
+  "benchmarks": [],
+  "sources": []
+}

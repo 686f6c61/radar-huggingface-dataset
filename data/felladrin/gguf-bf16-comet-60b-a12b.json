@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Felladrin/gguf-BF16-Comet-60B-A12B",
+  "slug": "felladrin-gguf-bf16-comet-60b-a12b",
+  "author": "Felladrin",
+  "url": "https://huggingface.co/Felladrin/gguf-BF16-Comet-60B-A12B",
+  "created_at": "2026-11-09T13:25:38.000Z",
+  "updated_at": "2026-11-10T01:54:54.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "comet",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "comet",
+    "gguf",
+    "bf16",
+    "nemotron_h_moe",
+    "nemotron-3.5",
+    "compactifai",
+    "mamba2",
+    "moe",
+    "mtp",
+    "text-generation",
+    "en",
+    "base_model:MultiverseComputingCAI/Comet_60B_A12B_BF16",
+    "base_model:quantized:MultiverseComputingCAI/Comet_60B_A12B_BF16",
+    "license:openmdw-1.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 95,
+  "trending_score": 0,
+  "parameters": 60284372224,
+  "parameters_human": "60.28B",
+  "storage_bytes": 120666125824,
+  "storage_human": "120.7 GB",
+  "base_model": "MultiverseComputingCAI/Comet_60B_A12B_BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Z-Jafari/xlm-roberta-base-finetuned-PersianQuAD-val-80",
+  "slug": "z-jafari-xlm-roberta-base-finetuned-persianquad-val-80",
+  "author": "Z-Jafari",
+  "url": "https://huggingface.co/Z-Jafari/xlm-roberta-base-finetuned-PersianQuAD-val-80",
+  "created_at": "2026-11-07T09:45:15.000Z",
+  "updated_at": "2026-11-07T10:31:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "question-answering",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 66,
+  "trending_score": 0,
+  "parameters": 277454594,
+  "parameters_human": "277.5M",
+  "storage_bytes": 8878744529,
+  "storage_human": "8.9 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

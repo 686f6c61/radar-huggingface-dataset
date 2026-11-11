@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "okolxc/openmythos-2b-edge",
+  "slug": "okolxc-openmythos-2b-edge",
+  "author": "okolxc",
+  "url": "https://huggingface.co/okolxc/openmythos-2b-edge",
+  "created_at": "2026-11-07T22:02:42.000Z",
+  "updated_at": "2026-11-10T22:27:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 123,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53064643198,
+  "storage_human": "53.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

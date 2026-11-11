@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "JKSHINPG/HyperStyler",
+  "slug": "jkshinpg-hyperstyler",
+  "author": "JKSHINPG",
+  "url": "https://huggingface.co/JKSHINPG/HyperStyler",
+  "created_at": "2026-11-09T13:58:00.000Z",
+  "updated_at": "2026-11-09T14:06:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hyperstyler",
+    "feature-extraction",
+    "style-transfer",
+    "authorship",
+    "custom_code",
+    "en",
+    "base_model:google/t5-v1_1-large",
+    "base_model:finetune:google/t5-v1_1-large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 867289088,
+  "parameters_human": "867.3M",
+  "storage_bytes": 3469242992,
+  "storage_human": "3.5 GB",
+  "base_model": "google/t5-v1_1-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

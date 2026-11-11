@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "TheShellMaster/Cypher-Base-Qwen3-VL-8B-Abliterated-v1-GGUF",
+  "slug": "theshellmaster-cypher-base-qwen3-vl-8b-abliterated-v1-gguf",
+  "author": "TheShellMaster",
+  "url": "https://huggingface.co/TheShellMaster/Cypher-Base-Qwen3-VL-8B-Abliterated-v1-GGUF",
+  "created_at": "2026-11-10T22:36:56.000Z",
+  "updated_at": "2026-11-10T22:37:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "cypher-base",
+    "abliterated",
+    "uncensored",
+    "cypher-3-vision-8b",
+    "base_model:mradermacher/Qwen3-VL-8B-Instruct-abliterated-v1-GGUF",
+    "base_model:finetune:mradermacher/Qwen3-VL-8B-Instruct-abliterated-v1-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "mradermacher/Qwen3-VL-8B-Instruct-abliterated-v1-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-11-11T04:02:09.992Z",
+  "benchmarks": [],
+  "sources": []
+}

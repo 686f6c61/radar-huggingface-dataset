@@ -5,7 +5,7 @@
   "author": "aafimalek2032",
   "url": "https://huggingface.co/aafimalek2032/wordle-rl-gemma3-270m",
   "created_at": "2026-11-10T15:02:00.000Z",
-  "updated_at": "2026-11-10T15:17:41.000Z",
+  "updated_at": "2026-11-10T17:51:27.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 268098176,

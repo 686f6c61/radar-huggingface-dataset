@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "JH976/Perovskite-RL",
+  "slug": "jh976-perovskite-rl",
+  "author": "JH976",
+  "url": "https://huggingface.co/JH976/Perovskite-RL",
+  "created_at": "2026-05-03T23:05:48.000Z",
+  "updated_at": "2026-11-11T04:28:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "dataset:JH976/Perovskite-RL",
+    "arxiv:2605.20242",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65535751214,
+  "storage_human": "65.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

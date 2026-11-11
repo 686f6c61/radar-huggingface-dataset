@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/L3.3-GeneticLemonade-Final-v2-70B-GGUF",
+  "slug": "mradermacher-l3-3-geneticlemonade-final-v2-70b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/L3.3-GeneticLemonade-Final-v2-70B-GGUF",
+  "created_at": "2025-06-04T12:23:45.000Z",
+  "updated_at": "2026-11-11T02:16:05.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:zerofata/Roleplay-Anime-Characters",
+    "dataset:zerofata/Instruct-Anime-CreativeWriting",
+    "dataset:zerofata/Summaries-Anime-FandomPages",
+    "base_model:zerofata/L3.3-GeneticLemonade-Final-v2-70B",
+    "base_model:quantized:zerofata/L3.3-GeneticLemonade-Final-v2-70B",
+    "license:llama3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 312,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481302998912,
+  "storage_human": "481.3 GB",
+  "base_model": "zerofata/L3.3-GeneticLemonade-Final-v2-70B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

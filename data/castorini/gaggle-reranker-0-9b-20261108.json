@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "castorini/gaggle-reranker-0.9b-20261108",
+  "slug": "castorini-gaggle-reranker-0-9b-20261108",
+  "author": "castorini",
+  "url": "https://huggingface.co/castorini/gaggle-reranker-0.9b-20261108",
+  "created_at": "2026-11-10T21:08:14.000Z",
+  "updated_at": "2026-11-10T21:09:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "nanochat",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nanochat",
+    "safetensors",
+    "gaggle_reranker",
+    "reranker",
+    "pointwise-reranker",
+    "information-retrieval",
+    "lce",
+    "gaggle",
+    "sentence-transformers",
+    "text-ranking",
+    "custom_code",
+    "en",
+    "dataset:rlhn/rlhn-250K",
+    "arxiv:2610.11922",
+    "base_model:castorini/gaggle-nanochat-0.9b-pretrained-climbmix-20261105",
+    "base_model:finetune:castorini/gaggle-nanochat-0.9b-pretrained-climbmix-20261105",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 849349818,
+  "parameters_human": "849.3M",
+  "storage_bytes": 3397423816,
+  "storage_human": "3.4 GB",
+  "base_model": "castorini/gaggle-nanochat-0.9b-pretrained-climbmix-20261105",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

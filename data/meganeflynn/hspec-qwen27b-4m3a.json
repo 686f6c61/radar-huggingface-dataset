@@ -5,7 +5,7 @@
   "author": "MeganEFlynn",
   "url": "https://huggingface.co/MeganEFlynn/HSpec-Qwen27B-4m3a",
   "created_at": "2026-11-08T15:46:10.000Z",
-  "updated_at": "2026-11-09T19:19:25.000Z",
+  "updated_at": "2026-11-10T22:39:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 21132960927,
-  "storage_human": "21.1 GB",
+  "storage_bytes": 42265921854,
+  "storage_human": "42.3 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

@@ -34,13 +34,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 12,
-  "downloads_30d": 408,
+  "likes": 14,
+  "downloads_30d": 416,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 291693800,
-  "storage_human": "292 MB",
+  "storage_bytes": 574652044,
+  "storage_human": "575 MB",
   "base_model": "PaddlePaddle/PP-OCRv6_tiny_det, PaddlePaddle/PP-OCRv6_small_rec",
   "formats": [
     "onnx"

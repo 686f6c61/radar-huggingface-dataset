@@ -5,17 +5,16 @@
   "author": "D-URing",
   "url": "https://huggingface.co/D-URing/mxi_Hybrid_v0_preview",
   "created_at": "2026-11-02T13:17:22.000Z",
-  "updated_at": "2026-11-02T14:16:45.000Z",
+  "updated_at": "2026-11-10T16:03:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
-  "library": null,
+  "library": "pytorch",
   "languages": [],
   "tags": [
+    "pytorch",
     "safetensors",
     "robotics",
-    "robodojo",
-    "mxi",
     "region:us"
   ],
   "likes": 0,
@@ -23,8 +22,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 75140751727,
-  "storage_human": "75.1 GB",
+  "storage_bytes": 75590016697,
+  "storage_human": "75.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

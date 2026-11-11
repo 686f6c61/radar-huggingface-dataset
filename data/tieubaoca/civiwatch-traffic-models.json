@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "tieubaoca/CiviWatch-Traffic-Models",
+  "slug": "tieubaoca-civiwatch-traffic-models",
+  "author": "tieubaoca",
+  "url": "https://huggingface.co/tieubaoca/CiviWatch-Traffic-Models",
+  "created_at": "2026-11-10T23:16:08.000Z",
+  "updated_at": "2026-11-10T23:18:48.000Z",
+  "license": "apache-2.0-and-agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "traffic-monitoring",
+    "vietnam-traffic",
+    "edge-ai",
+    "yolox",
+    "yolo26",
+    "civiwatch",
+    "vi",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 227585456,
+  "storage_human": "228 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

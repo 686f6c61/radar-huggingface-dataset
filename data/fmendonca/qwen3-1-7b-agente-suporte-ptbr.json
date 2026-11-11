@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "FMendonca/qwen3-1.7b-agente-suporte-ptbr",
+  "slug": "fmendonca-qwen3-1-7b-agente-suporte-ptbr",
+  "author": "FMendonca",
+  "url": "https://huggingface.co/FMendonca/qwen3-1.7b-agente-suporte-ptbr",
+  "created_at": "2026-11-08T17:36:48.000Z",
+  "updated_at": "2026-11-08T18:02:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "agent",
+    "tool-calling",
+    "customer-support",
+    "portuguese",
+    "distillation",
+    "rocm",
+    "text-generation",
+    "pt",
+    "dataset:FMendonca/conversas-suporte-delivery-ptbr",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69782384,
+  "storage_human": "70 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

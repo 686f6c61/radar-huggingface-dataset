@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "lloydchristmas1231/alliedunn",
+  "slug": "lloydchristmas1231-alliedunn",
+  "author": "lloydchristmas1231",
+  "url": "https://huggingface.co/lloydchristmas1231/alliedunn",
+  "created_at": "2026-11-10T18:19:16.000Z",
+  "updated_at": "2026-11-10T18:54:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778348973,
+  "storage_human": "778 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

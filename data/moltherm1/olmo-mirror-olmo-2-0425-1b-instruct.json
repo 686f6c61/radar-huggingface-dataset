@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "moltherm1/olmo-mirror-olmo-2-0425-1b-instruct",
+  "slug": "moltherm1-olmo-mirror-olmo-2-0425-1b-instruct",
+  "author": "moltherm1",
+  "url": "https://huggingface.co/moltherm1/olmo-mirror-olmo-2-0425-1b-instruct",
+  "created_at": "2026-10-29T04:22:46.000Z",
+  "updated_at": "2026-11-11T02:08:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo2",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:allenai/RLVR-MATH",
+    "arxiv:2501.00656",
+    "arxiv:2411.15124",
+    "base_model:allenai/OLMo-2-0425-1B-RLVR1",
+    "base_model:finetune:allenai/OLMo-2-0425-1B-RLVR1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1484916736,
+  "parameters_human": "1.48B",
+  "storage_bytes": 2969854224,
+  "storage_human": "3.0 GB",
+  "base_model": "allenai/OLMo-2-0425-1B-RLVR1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "kei111111/act_so101_block_box_20k",
+  "slug": "kei111111-act_so101_block_box_20k",
+  "author": "kei111111",
+  "url": "https://huggingface.co/kei111111/act_so101_block_box_20k",
+  "created_at": "2026-11-07T10:56:47.000Z",
+  "updated_at": "2026-11-07T12:27:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:kei111111/so101_block_box_50episodes_final_20261107_190045",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 6195344088,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

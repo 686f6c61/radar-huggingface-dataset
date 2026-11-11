@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "arpjw/conviction-1.7b-sft",
+  "slug": "arpjw-conviction-1-7b-sft",
+  "author": "arpjw",
+  "url": "https://huggingface.co/arpjw/conviction-1.7b-sft",
+  "created_at": "2026-11-10T20:54:42.000Z",
+  "updated_at": "2026-11-11T03:00:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sycophancy",
+    "belief-revision",
+    "sft",
+    "convictionbench",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:arpjw/ConvictionBench",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81205034,
+  "storage_human": "81 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

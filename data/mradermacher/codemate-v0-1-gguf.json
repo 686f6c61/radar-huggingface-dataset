@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/CodeMate-v0.1-GGUF",
+  "slug": "mradermacher-codemate-v0-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CodeMate-v0.1-GGUF",
+  "created_at": "2024-11-17T14:37:14.000Z",
+  "updated_at": "2026-11-11T03:22:01.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "CodeMate",
+    "Code",
+    "CodeLLaMa",
+    "en",
+    "base_model:codemateai/CodeMate-v0.1",
+    "base_model:quantized:codemateai/CodeMate-v0.1",
+    "license:llama2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 658,
+  "trending_score": 0,
+  "parameters": 33743970304,
+  "parameters_human": "33.74B",
+  "storage_bytes": 229453791968,
+  "storage_human": "229.5 GB",
+  "base_model": "codemateai/CodeMate-v0.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

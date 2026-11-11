@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "WorkOffline/gemma-4-12B-it-qat-q4_0-GGUF",
+  "slug": "workoffline-gemma-4-12b-it-qat-q4_0-gguf",
+  "author": "WorkOffline",
+  "url": "https://huggingface.co/WorkOffline/gemma-4-12B-it-qat-q4_0-GGUF",
+  "created_at": "2026-11-10T23:41:37.000Z",
+  "updated_at": "2026-11-10T23:43:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "workoffline-mirror",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 7150994912,
+  "storage_human": "7.2 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "PlantNet",
   "url": "https://huggingface.co/PlantNet/mobilenetv4-conv-s-plantclef2024",
   "created_at": "2026-11-01T09:19:22.000Z",
-  "updated_at": "2026-11-07T08:47:18.000Z",
+  "updated_at": "2026-11-10T16:17:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "timm",
+    "onnx",
     "safetensors",
     "image-classification",
     "plants",
@@ -24,10 +25,11 @@
     "mobilenetv4",
     "mobile",
     "edge-ai",
+    "onnxruntime",
     "arxiv:2404.10518",
     "arxiv:2604.27178",
     "base_model:PlantNet/vit_base_patch14_reg4_dinov2_lvd142m.pc24_all",
-    "base_model:finetune:PlantNet/vit_base_patch14_reg4_dinov2_lvd142m.pc24_all",
+    "base_model:quantized:PlantNet/vit_base_patch14_reg4_dinov2_lvd142m.pc24_all",
     "license:apache-2.0",
     "region:us"
   ],
@@ -36,10 +38,11 @@
   "trending_score": 0,
   "parameters": 12517598,
   "parameters_human": "12.5M",
-  "storage_bytes": 100295014,
-  "storage_human": "100 MB",
+  "storage_bytes": 150238004,
+  "storage_human": "150 MB",
   "base_model": "timm/mobilenetv4_conv_small.e2400_r224_in1k, PlantNet/vit_base_patch14_reg4_dinov2_lvd142m.pc24_all",
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

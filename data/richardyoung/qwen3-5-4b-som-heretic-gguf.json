@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "richardyoung/Qwen3.5-4B-SOM-heretic-GGUF",
+  "slug": "richardyoung-qwen3-5-4b-som-heretic-gguf",
+  "author": "richardyoung",
+  "url": "https://huggingface.co/richardyoung/Qwen3.5-4B-SOM-heretic-GGUF",
+  "created_at": "2026-11-11T04:30:47.000Z",
+  "updated_at": "2026-11-11T04:33:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "imatrix",
+    "research",
+    "text-generation",
+    "en",
+    "base_model:richardyoung/Qwen3.5-4B-SOM-heretic",
+    "base_model:quantized:richardyoung/Qwen3.5-4B-SOM-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 7198468992,
+  "storage_human": "7.2 GB",
+  "base_model": "richardyoung/Qwen3.5-4B-SOM-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

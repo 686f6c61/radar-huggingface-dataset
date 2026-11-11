@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Noname010101/voice-head",
+  "slug": "noname010101-voice-head",
+  "author": "Noname010101",
+  "url": "https://huggingface.co/Noname010101/voice-head",
+  "created_at": "2026-11-07T20:22:09.000Z",
+  "updated_at": "2026-11-07T21:04:45.000Z",
+  "license": "mixed-per-component",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15024276324,
+  "storage_human": "15.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

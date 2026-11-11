@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "jaesang-lee/kanana-2-v-decide-3b-2611-GGUF",
+  "slug": "jaesang-lee-kanana-2-v-decide-3b-2611-gguf",
+  "author": "jaesang-lee",
+  "url": "https://huggingface.co/jaesang-lee/kanana-2-v-decide-3b-2611-GGUF",
+  "created_at": "2026-11-10T07:57:19.000Z",
+  "updated_at": "2026-11-10T08:17:56.000Z",
+  "license": "kanana-open-license",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "gguf",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "kanana",
+    "decision-model",
+    "multimodal",
+    "vision-language",
+    "zero-shot-classification",
+    "ko",
+    "en",
+    "base_model:kakaocorp/kanana-2-v-decide-3b-2611",
+    "base_model:quantized:kakaocorp/kanana-2-v-decide-3b-2611",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3180636672,
+  "parameters_human": "3.18B",
+  "storage_bytes": 9271959104,
+  "storage_human": "9.3 GB",
+  "base_model": "kakaocorp/kanana-2-v-decide-3b-2611",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

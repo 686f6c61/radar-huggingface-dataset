@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "zybian222/olmo3-7b-table1-bigcode-standard-sft-20261110t071802z",
+  "slug": "zybian222-olmo3-7b-table1-bigcode-standard-sft-20261110t071802z",
+  "author": "zybian222",
+  "url": "https://huggingface.co/zybian222/olmo3-7b-table1-bigcode-standard-sft-20261110t071802z",
+  "created_at": "2026-11-10T21:36:13.000Z",
+  "updated_at": "2026-11-10T21:37:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "conversational",
+    "base_model:allenai/Olmo-3-1025-7B",
+    "base_model:finetune:allenai/Olmo-3-1025-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063712,
+  "storage_human": "14.6 GB",
+  "base_model": "allenai/Olmo-3-1025-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

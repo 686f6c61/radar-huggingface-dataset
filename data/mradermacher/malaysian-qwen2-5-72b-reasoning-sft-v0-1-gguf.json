@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Malaysian-Qwen2.5-72B-Reasoning-SFT-v0.1-GGUF",
+  "slug": "mradermacher-malaysian-qwen2-5-72b-reasoning-sft-v0-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Malaysian-Qwen2.5-72B-Reasoning-SFT-v0.1-GGUF",
+  "created_at": "2025-05-21T08:56:55.000Z",
+  "updated_at": "2026-11-11T04:27:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ms",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ms",
+    "en",
+    "base_model:mesolitica/Malaysian-Qwen2.5-72B-Reasoning-SFT-v0.1",
+    "base_model:quantized:mesolitica/Malaysian-Qwen2.5-72B-Reasoning-SFT-v0.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 72706203648,
+  "parameters_human": "72.71B",
+  "storage_bytes": 520404524512,
+  "storage_human": "520.4 GB",
+  "base_model": "mesolitica/Malaysian-Qwen2.5-72B-Reasoning-SFT-v0.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

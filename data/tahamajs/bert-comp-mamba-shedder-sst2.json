@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tahamajs/bert-comp-mamba-shedder-sst2",
+  "slug": "tahamajs-bert-comp-mamba-shedder-sst2",
+  "author": "tahamajs",
+  "url": "https://huggingface.co/tahamajs/bert-comp-mamba-shedder-sst2",
+  "created_at": "2026-11-10T21:30:25.000Z",
+  "updated_at": "2026-11-10T21:33:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "neuralops",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuralops",
+    "pytorch",
+    "bert",
+    "model-compression",
+    "compressor-zoo",
+    "lora-healing",
+    "glue-sst2",
+    "pruning",
+    "mamba_shedder",
+    "text-classification",
+    "en",
+    "dataset:nyu-mll/glue",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185518431,
+  "storage_human": "186 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Classification",
+      "dataset": "GLUE SST-2",
+      "metric": "GLUE SST-2 Validation Accuracy",
+      "value": 83.03
+    }
+  ],
+  "sources": [
+    {
+      "title": "Covington & Burling LLP | LinkedIn",
+      "url": "https://www.linkedin.com/company/covington-&-burling",
+      "snippet": "Join Covington and the Middle East & Africa Compliance Association in Dubai on 25 November, for a discussion on the role of due …"
+    },
+    {
+      "title": "‏Covington & Burling LLP‏ | LinkedIn",
+      "url": "https://ae.linkedin.com/company/covington-%26-burling",
+      "snippet": "Our lawyers are recognized nationally and internationally for their legal skills and the depth of their expertise. Many have served in …"
+    },
+    {
+      "title": "Covington & Burling LLP | LinkedIn",
+      "url": "https://be.linkedin.com/company/covington-%26-burling",
+      "snippet": "Covington represented Expect Fitness in securing approval to participate in the Utah Office of Artificial Intelligence Policy’s …"
+    }
+  ]
+}

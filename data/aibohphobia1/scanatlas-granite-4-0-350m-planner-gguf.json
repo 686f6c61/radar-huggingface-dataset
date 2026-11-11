@@ -5,7 +5,7 @@
   "author": "aibohphobia1",
   "url": "https://huggingface.co/aibohphobia1/ScanAtlas-Granite-4.0-350M-Planner-GGUF",
   "created_at": "2026-11-05T19:32:43.000Z",
-  "updated_at": "2026-11-05T19:35:01.000Z",
+  "updated_at": "2026-11-10T08:33:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 352379904,
   "parameters_human": "352.4M",
-  "storage_bytes": 228469664,
-  "storage_human": "228 MB",
+  "storage_bytes": 456939328,
+  "storage_human": "457 MB",
   "base_model": "ibm-granite/granite-4.0-350m",
   "formats": [
     "gguf"

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "homer455/lucile-panties-round-ass-2",
+  "slug": "homer455-lucile-panties-round-ass-2",
+  "author": "homer455",
+  "url": "https://huggingface.co/homer455/lucile-panties-round-ass-2",
+  "created_at": "2026-11-07T03:26:28.000Z",
+  "updated_at": "2026-11-07T04:10:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1947120500,
+  "storage_human": "1.9 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

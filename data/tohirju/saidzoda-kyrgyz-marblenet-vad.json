@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Tohirju/Saidzoda-Kyrgyz-MarbleNet-VAD",
+  "slug": "tohirju-saidzoda-kyrgyz-marblenet-vad",
+  "author": "Tohirju",
+  "url": "https://huggingface.co/Tohirju/Saidzoda-Kyrgyz-MarbleNet-VAD",
+  "created_at": "2026-11-07T12:34:50.000Z",
+  "updated_at": "2026-11-07T12:34:52.000Z",
+  "license": "saidzoda-model-licence",
+  "license_family": "unknown",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "nemo",
+  "languages": [
+    "ky"
+  ],
+  "tags": [
+    "nemo",
+    "voice-activity-detection",
+    "vad",
+    "marblenet",
+    "ky",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 491520,
+  "storage_human": "491520 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

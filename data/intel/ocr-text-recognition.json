@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Intel/ocr-text-recognition",
+  "slug": "intel-ocr-text-recognition",
+  "author": "Intel",
+  "url": "https://huggingface.co/Intel/ocr-text-recognition",
+  "created_at": "2026-08-05T22:04:08.000Z",
+  "updated_at": "2026-11-10T22:36:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "openvino",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "openvino",
+    "ocr-text-recognition",
+    "intel",
+    "paddleocr",
+    "ocr",
+    "text-recognition",
+    "edge-ai",
+    "metro",
+    "dlstreamer",
+    "image-to-text",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58493290,
+  "storage_human": "58 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Intel Drivers and Software",
+      "url": "https://www.intel.fr/content/www/fr/fr/download-center/home.html",
+      "snippet": "Download new and previously released drivers including support software, bios, utilities, firmware and patches for Intel products."
+    },
+    {
+      "title": "Intel Inside - Built for AI",
+      "url": "https://www.intel.com/content/www/us/en/homepage.html",
+      "snippet": "We break barriers so builders can move faster, from prototype to global scale. That’s the power of Intel Inside®"
+    },
+    {
+      "title": "Intel Inside : conçu pour l'IA",
+      "url": "https://www.intel.fr/content/www/fr/fr/homepage.html",
+      "snippet": "Innovation Intel nommée l'une des entreprises les plus innovantes des États-Unis Le magazine Fortune salue les innovations de …"
+    },
+    {
+      "title": "Intel — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Intel",
+      "snippet": "Intel Corporation est une entreprise américaine fondée en 1968 par Gordon Moore, Robert Noyce et Andrew Grove. Elle est le …"
+    },
+    {
+      "title": "Intel Gaming Access",
+      "url": "https://game.intel.com/fr/",
+      "snippet": "Intel’s fastest gaming desktop processor delivers incredible performance for gamers, with clock speeds up to 6.0 GHz and up to 18% …"
+    }
+  ]
+}

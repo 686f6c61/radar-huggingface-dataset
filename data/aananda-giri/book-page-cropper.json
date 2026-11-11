@@ -5,7 +5,7 @@
   "author": "Aananda-giri",
   "url": "https://huggingface.co/Aananda-giri/book-page-cropper",
   "created_at": "2026-11-10T00:01:38.000Z",
-  "updated_at": "2026-11-10T00:37:49.000Z",
+  "updated_at": "2026-11-10T13:22:07.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 38623689,
-  "storage_human": "39 MB",
+  "storage_bytes": 64313725,
+  "storage_human": "64 MB",
   "base_model": null,
   "formats": [
     "onnx"

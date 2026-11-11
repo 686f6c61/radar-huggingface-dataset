@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/diffusion_UR5e_BS_128_H_32_TASK_tool_hang_ID_163701",
+  "slug": "castanetnicolas-diffusion_ur5e_bs_128_h_32_task_tool_hang_id_163701",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/diffusion_UR5e_BS_128_H_32_TASK_tool_hang_ID_163701",
+  "created_at": "2026-11-11T01:15:00.000Z",
+  "updated_at": "2026-11-11T01:15:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:castanetnicolas/robomimic_tool_hang_ph_image256",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278014919,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1112126076,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "6 \"Jane Diller\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Jane/Diller",
+      "snippet": "There are 6 professionals named &quot;Jane Diller&quot;, who use LinkedIn to exchange information, ideas, and opportunities."
+    }
+  ]
+}

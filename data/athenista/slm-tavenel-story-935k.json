@@ -5,7 +5,7 @@
   "author": "athenista",
   "url": "https://huggingface.co/athenista/slm-tavenel-story-935k",
   "created_at": "2026-11-10T16:51:37.000Z",
-  "updated_at": "2026-11-10T17:02:00.000Z",
+  "updated_at": "2026-11-10T17:40:50.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,6 +28,7 @@
     "dataset:SimpleStories/SimpleStories",
     "arxiv:2504.09184",
     "license:mit",
+    "model-index",
     "text-generation-inference",
     "endpoints_compatible",
     "region:us"
@@ -37,8 +38,8 @@
   "trending_score": 0,
   "parameters": 935040,
   "parameters_human": "935040",
-  "storage_bytes": 6356371,
-  "storage_human": "6 MB",
+  "storage_bytes": 8944725,
+  "storage_human": "9 MB",
   "base_model": null,
   "formats": [
     "safetensors"

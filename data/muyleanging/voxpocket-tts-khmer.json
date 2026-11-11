@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "muyleanging/VoxPocket-TTS-Khmer",
+  "slug": "muyleanging-voxpocket-tts-khmer",
+  "author": "muyleanging",
+  "url": "https://huggingface.co/muyleanging/VoxPocket-TTS-Khmer",
+  "created_at": "2026-11-08T16:45:36.000Z",
+  "updated_at": "2026-11-11T03:20:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "voxcpm",
+  "languages": [
+    "km",
+    "en"
+  ],
+  "tags": [
+    "voxcpm",
+    "safetensors",
+    "khmer",
+    "tts",
+    "text-to-speech",
+    "voice-cloning",
+    "code-mixing",
+    "emotion",
+    "km",
+    "en",
+    "dataset:muyleanging/VoxPocket-TTS-Khmer",
+    "base_model:openbmb/VoxCPM1.5",
+    "base_model:finetune:openbmb/VoxCPM1.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 801729856,
+  "parameters_human": "801.7M",
+  "storage_bytes": 13174092211,
+  "storage_human": "13.2 GB",
+  "base_model": "openbmb/VoxCPM1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

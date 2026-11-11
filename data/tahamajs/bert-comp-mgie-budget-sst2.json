@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "tahamajs/bert-comp-mgie-budget-sst2",
+  "slug": "tahamajs-bert-comp-mgie-budget-sst2",
+  "author": "tahamajs",
+  "url": "https://huggingface.co/tahamajs/bert-comp-mgie-budget-sst2",
+  "created_at": "2026-11-10T21:31:11.000Z",
+  "updated_at": "2026-11-10T21:32:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "neuralops",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuralops",
+    "pytorch",
+    "bert",
+    "model-compression",
+    "compressor-zoo",
+    "lora-healing",
+    "glue-sst2",
+    "low_rank",
+    "mgie_budget",
+    "text-classification",
+    "en",
+    "dataset:nyu-mll/glue",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70463951,
+  "storage_human": "70 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Classification",
+      "dataset": "GLUE SST-2",
+      "metric": "GLUE SST-2 Validation Accuracy",
+      "value": 74.77
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pulsetto Reviews & Complaints 2026: Does This Vagus Nerve …",
+      "url": "https://innovgadget.com/pulsetto-reviews/",
+      "snippet": "Aug 9, 2026 · In this Pulsetto review, we look at how the device works, its features, potential benefits, customer feedback, …"
+    }
+  ]
+}

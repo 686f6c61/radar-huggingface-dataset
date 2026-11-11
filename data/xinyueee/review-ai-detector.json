@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Xinyueee/review-ai-detector",
+  "slug": "xinyueee-review-ai-detector",
+  "author": "Xinyueee",
+  "url": "https://huggingface.co/Xinyueee/review-ai-detector",
+  "created_at": "2026-11-08T02:31:38.000Z",
+  "updated_at": "2026-11-08T04:41:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "distilbert",
+    "text-classification",
+    "en",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:quantized:distilbert/distilbert-base-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134074784,
+  "storage_human": "134 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "anu-122006/p3-lora-bk",
+  "slug": "anu-122006-p3-lora-bk",
+  "author": "anu-122006",
+  "url": "https://huggingface.co/anu-122006/p3-lora-bk",
+  "created_at": "2026-11-06T17:06:32.000Z",
+  "updated_at": "2026-11-07T03:23:50.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "stable-diffusion",
+    "bk-sdm",
+    "base_model:nota-ai/bk-sdm-small-2m",
+    "base_model:adapter:nota-ai/bk-sdm-small-2m",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 55,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6927128,
+  "storage_human": "7 MB",
+  "base_model": "nota-ai/bk-sdm-small-2m",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

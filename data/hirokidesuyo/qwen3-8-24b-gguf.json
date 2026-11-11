@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "hirokidesuyo/Qwen3.8-24B-GGUF",
+  "slug": "hirokidesuyo-qwen3-8-24b-gguf",
+  "author": "hirokidesuyo",
+  "url": "https://huggingface.co/hirokidesuyo/Qwen3.8-24B-GGUF",
+  "created_at": "2026-11-09T09:47:12.000Z",
+  "updated_at": "2026-11-10T09:42:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "pruned",
+    "lora",
+    "text-generation",
+    "en",
+    "ja",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 93,
+  "trending_score": 0,
+  "parameters": 24276548288,
+  "parameters_human": "24.28B",
+  "storage_bytes": 40775123456,
+  "storage_human": "40.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

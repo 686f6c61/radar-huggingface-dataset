@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "TheShellMaster/Cypher-Base-Wan2.1-T2V-1.3B-GGUF",
+  "slug": "theshellmaster-cypher-base-wan2-1-t2v-1-3b-gguf",
+  "author": "TheShellMaster",
+  "url": "https://huggingface.co/TheShellMaster/Cypher-Base-Wan2.1-T2V-1.3B-GGUF",
+  "created_at": "2026-11-10T22:37:15.000Z",
+  "updated_at": "2026-11-10T22:37:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "cypher-base",
+    "abliterated",
+    "uncensored",
+    "cypher-3-motion",
+    "base_model:samuelchristlie/Wan2.1-T2V-1.3B-GGUF",
+    "base_model:finetune:samuelchristlie/Wan2.1-T2V-1.3B-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "samuelchristlie/Wan2.1-T2V-1.3B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-11-11T04:02:10.597Z",
+  "benchmarks": [],
+  "sources": []
+}

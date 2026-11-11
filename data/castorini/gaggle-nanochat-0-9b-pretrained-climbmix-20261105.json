@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "castorini/gaggle-nanochat-0.9b-pretrained-climbmix-20261105",
+  "slug": "castorini-gaggle-nanochat-0-9b-pretrained-climbmix-20261105",
+  "author": "castorini",
+  "url": "https://huggingface.co/castorini/gaggle-nanochat-0.9b-pretrained-climbmix-20261105",
+  "created_at": "2026-11-10T21:06:07.000Z",
+  "updated_at": "2026-11-10T21:06:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gaggle",
+    "text-generation",
+    "nanochat",
+    "pretraining",
+    "climbmix",
+    "base-model",
+    "custom_code",
+    "vllm",
+    "en",
+    "dataset:karpathy/climbmix-400b-shuffle",
+    "arxiv:2610.11922",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 887096250,
+  "parameters_human": "887.1M",
+  "storage_bytes": 5738471017,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

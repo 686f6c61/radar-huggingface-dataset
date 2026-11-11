@@ -5,7 +5,7 @@
   "author": "SOLRICKS",
   "url": "https://huggingface.co/SOLRICKS/3D-Animation-Style-MiniMax-H3",
   "created_at": "2026-09-27T09:29:59.000Z",
-  "updated_at": "2026-11-09T11:35:55.000Z",
+  "updated_at": "2026-11-10T21:03:48.000Z",
   "license": "minimax-h3-community-license-agreement",
   "license_family": "non-commercial",
   "pipeline_tag": "image-to-video",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 46,
-  "downloads_30d": 152,
+  "downloads_30d": 147,
   "trending_score": 12,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ronghua/xiaoyu-chinese-ai-detect",
+  "slug": "ronghua-xiaoyu-chinese-ai-detect",
+  "author": "ronghua",
+  "url": "https://huggingface.co/ronghua/xiaoyu-chinese-ai-detect",
+  "created_at": "2026-11-09T06:35:31.000Z",
+  "updated_at": "2026-11-09T07:05:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "ai-generated-text-detection",
+    "ai-text-detection",
+    "chinese",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 48,
+  "trending_score": 0,
+  "parameters": 102268417,
+  "parameters_human": "102.3M",
+  "storage_bytes": 578175218,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

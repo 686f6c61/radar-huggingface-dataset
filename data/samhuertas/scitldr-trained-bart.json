@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "SamHuertas/SciTLDR-trained-BART",
+  "slug": "samhuertas-scitldr-trained-bart",
+  "author": "SamHuertas",
+  "url": "https://huggingface.co/SamHuertas/SciTLDR-trained-BART",
+  "created_at": "2026-11-07T05:28:09.000Z",
+  "updated_at": "2026-11-11T03:09:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bart",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 57,
+  "trending_score": 0,
+  "parameters": 139470681,
+  "parameters_human": "139.5M",
+  "storage_bytes": 2231656577,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

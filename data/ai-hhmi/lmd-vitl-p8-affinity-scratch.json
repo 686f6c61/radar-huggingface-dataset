@@ -5,7 +5,7 @@
   "author": "ai-hhmi",
   "url": "https://huggingface.co/ai-hhmi/lmd-vitl-p8-affinity-scratch",
   "created_at": "2026-11-04T18:56:58.000Z",
-  "updated_at": "2026-11-06T21:28:41.000Z",
+  "updated_at": "2026-11-10T21:47:28.000Z",
   "license": "dinov3-license",
   "license_family": "unknown",
   "pipeline_tag": "image-segmentation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 44,
+  "downloads_30d": 47,
   "trending_score": 0,
   "parameters": 304815008,
   "parameters_human": "304.8M",

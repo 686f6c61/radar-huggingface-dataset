@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "shayptl/myrega-models",
+  "slug": "shayptl-myrega-models",
+  "author": "shayptl",
+  "url": "https://huggingface.co/shayptl/myrega-models",
+  "created_at": "2026-11-10T22:01:06.000Z",
+  "updated_at": "2026-11-10T22:01:14.000Z",
+  "license": "apache-2.0-and-bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "he",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "clip",
+    "image-search",
+    "face-detection",
+    "myrega",
+    "he",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186429100,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

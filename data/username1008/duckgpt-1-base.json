@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Username1008/duckgpt-1-base",
+  "slug": "username1008-duckgpt-1-base",
+  "author": "Username1008",
+  "url": "https://huggingface.co/Username1008/duckgpt-1-base",
+  "created_at": "2026-11-08T17:04:53.000Z",
+  "updated_at": "2026-11-08T21:42:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "duckgpt",
+    "qwen3",
+    "esper3",
+    "model-merge",
+    "uncensored",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 21409299624,
+  "storage_human": "21.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "styal/LFM3-1.7B-egoboost",
+  "slug": "styal-lfm3-1-7b-egoboost",
+  "author": "styal",
+  "url": "https://huggingface.co/styal/LFM3-1.7B-egoboost",
+  "created_at": "2026-11-10T22:47:27.000Z",
+  "updated_at": "2026-11-10T22:49:01.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lfm3",
+    "ego-boost",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:quantized:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 1099627168,
+  "storage_human": "1.1 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "gghans726/notos",
+  "slug": "gghans726-notos",
+  "author": "gghans726",
+  "url": "https://huggingface.co/gghans726/notos",
+  "created_at": "2026-11-05T04:02:29.000Z",
+  "updated_at": "2026-11-05T04:16:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "time-series-forecasting",
+    "wind-power",
+    "multimodal",
+    "probabilistic-forecasting",
+    "dataset:gghans726/notos-wind-multimodal-data",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8776111568,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B, openai/clip-vit-base-patch32",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "c41n3",
   "url": "https://huggingface.co/c41n3/open_llama_3b_v2-Q8_0-GGUF",
   "created_at": "2026-10-04T15:05:51.000Z",
-  "updated_at": "2026-10-04T15:06:08.000Z",
+  "updated_at": "2026-11-03T22:33:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 37,
+  "downloads_30d": 69,
   "trending_score": 0,
   "parameters": 3426473600,
   "parameters_human": "3.43B",

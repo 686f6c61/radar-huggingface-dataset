@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "xandorx/Muse-V1.0",
+  "slug": "xandorx-muse-v1-0",
+  "author": "xandorx",
+  "url": "https://huggingface.co/xandorx/Muse-V1.0",
+  "created_at": "2026-11-10T18:44:08.000Z",
+  "updated_at": "2026-11-10T20:06:23.000Z",
+  "license": "superintelligence.2",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 27759238214,
+  "storage_human": "27.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

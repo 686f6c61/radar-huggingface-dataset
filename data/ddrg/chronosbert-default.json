@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "ddrg/ChronosBERT-Default",
+  "slug": "ddrg-chronosbert-default",
+  "author": "ddrg",
+  "url": "https://huggingface.co/ddrg/ChronosBERT-Default",
+  "created_at": "2026-11-10T12:28:52.000Z",
+  "updated_at": "2026-11-10T14:20:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "fill-mask",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17335808,
+  "parameters_human": "17.3M",
+  "storage_bytes": 69351808,
+  "storage_human": "69 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

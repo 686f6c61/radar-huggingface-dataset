@@ -5,7 +5,7 @@
   "author": "OpenLLM-France",
   "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Thinking-1.1-FP8",
   "created_at": "2026-11-05T09:20:38.000Z",
-  "updated_at": "2026-11-05T09:25:29.000Z",
+  "updated_at": "2026-11-10T08:46:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 23216467968,
   "parameters_human": "23.22B",

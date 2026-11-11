@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "slvrfivo/qwen3-4b-writing-eval-v1-merged",
+  "slug": "slvrfivo-qwen3-4b-writing-eval-v1-merged",
+  "author": "slvrfivo",
+  "url": "https://huggingface.co/slvrfivo/qwen3-4b-writing-eval-v1-merged",
+  "created_at": "2026-08-25T09:52:07.000Z",
+  "updated_at": "2026-11-11T02:17:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "qlora",
+    "korean",
+    "essay-scoring",
+    "writing-assessment",
+    "conversational",
+    "ko",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404654,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

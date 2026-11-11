@@ -5,7 +5,7 @@
   "author": "Morphkite",
   "url": "https://huggingface.co/Morphkite/Flowzup-1",
   "created_at": "2026-11-10T07:07:25.000Z",
-  "updated_at": "2026-11-10T07:10:11.000Z",
+  "updated_at": "2026-11-10T08:24:13.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": 4647450147,
   "parameters_human": "4.65B",
-  "storage_bytes": 3427879264,
-  "storage_human": "3.4 GB",
+  "storage_bytes": 6855762624,
+  "storage_human": "6.9 GB",
   "base_model": null,
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "Dexverse-CSI",
   "url": "https://huggingface.co/Dexverse-CSI/xl-vla-reproduce",
   "created_at": "2026-11-09T01:25:34.000Z",
-  "updated_at": "2026-11-09T23:42:49.000Z",
+  "updated_at": "2026-11-10T20:22:29.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 4487495420,
-  "storage_human": "4.5 GB",
+  "storage_bytes": 14569711893,
+  "storage_human": "14.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

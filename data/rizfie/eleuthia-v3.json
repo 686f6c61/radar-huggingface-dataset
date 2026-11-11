@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "RizFie/Eleuthia-v3",
+  "slug": "rizfie-eleuthia-v3",
+  "author": "RizFie",
+  "url": "https://huggingface.co/RizFie/Eleuthia-v3",
+  "created_at": "2026-11-09T09:08:06.000Z",
+  "updated_at": "2026-11-09T09:45:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "esm",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:facebook/esm2_t12_35M_UR50D",
+    "base_model:finetune:facebook/esm2_t12_35M_UR50D",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 54,
+  "trending_score": 0,
+  "parameters": 33501375,
+  "parameters_human": "33.5M",
+  "storage_bytes": 804175017,
+  "storage_human": "804 MB",
+  "base_model": "facebook/esm2_t12_35M_UR50D",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

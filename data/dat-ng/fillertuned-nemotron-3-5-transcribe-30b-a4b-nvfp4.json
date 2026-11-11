@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Dat-Ng/Fillertuned-Nemotron-3.5-Transcribe-30B-A4B-NVFP4",
+  "slug": "dat-ng-fillertuned-nemotron-3-5-transcribe-30b-a4b-nvfp4",
+  "author": "Dat-Ng",
+  "url": "https://huggingface.co/Dat-Ng/Fillertuned-Nemotron-3.5-Transcribe-30B-A4B-NVFP4",
+  "created_at": "2026-11-10T22:53:22.000Z",
+  "updated_at": "2026-11-10T23:51:16.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nemo_speechlm",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+    "license:other",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18710697253,
+  "parameters_human": "18.71B",
+  "storage_bytes": 21573951166,
+  "storage_human": "21.6 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

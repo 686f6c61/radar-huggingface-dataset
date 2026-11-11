@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Wenvia/Hyderabad_OCR",
+  "slug": "wenvia-hyderabad_ocr",
+  "author": "Wenvia",
+  "url": "https://huggingface.co/Wenvia/Hyderabad_OCR",
+  "created_at": "2026-11-06T11:48:14.000Z",
+  "updated_at": "2026-11-06T12:59:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "onnxruntime",
+  "languages": [
+    "te",
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "ocr",
+    "telugu",
+    "optical-character-recognition",
+    "document-ai",
+    "image-to-text",
+    "te",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 165813473,
+  "storage_human": "166 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

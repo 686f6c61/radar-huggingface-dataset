@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Sm0r3s/qwen3.8-7b-pruned-unhealed",
+  "slug": "sm0r3s-qwen3-8-7b-pruned-unhealed",
+  "author": "Sm0r3s",
+  "url": "https://huggingface.co/Sm0r3s/qwen3.8-7b-pruned-unhealed",
+  "created_at": "2026-11-11T00:34:01.000Z",
+  "updated_at": "2026-11-11T00:35:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7389534736,
+  "parameters_human": "7.39B",
+  "storage_bytes": 14791951480,
+  "storage_human": "14.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

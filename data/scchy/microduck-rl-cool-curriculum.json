@@ -9,13 +9,13 @@
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
-  "library": null,
+  "library": "mjlab",
   "languages": [],
   "tags": [
+    "mjlab",
     "robotics",
     "reinforcement-learning",
     "quadruped",
-    "mjlab",
     "curriculum-learning",
     "license:mit",
     "region:us"

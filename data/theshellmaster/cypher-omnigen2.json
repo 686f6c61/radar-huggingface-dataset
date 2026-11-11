@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "TheShellMaster/cypher-OmniGen2",
+  "slug": "theshellmaster-cypher-omnigen2",
+  "author": "TheShellMaster",
+  "url": "https://huggingface.co/TheShellMaster/cypher-OmniGen2",
+  "created_at": "2026-11-11T00:30:29.000Z",
+  "updated_at": "2026-11-11T00:40:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "any-to-any",
+    "arxiv:2506.18871",
+    "arxiv:2404.07724",
+    "license:apache-2.0",
+    "diffusers:OmniGen2Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3967161400,
+  "parameters_human": "3.97B",
+  "storage_bytes": 31257892855,
+  "storage_human": "31.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

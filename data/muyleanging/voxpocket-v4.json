@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "muyleanging/VoxPocket-v4",
+  "slug": "muyleanging-voxpocket-v4",
+  "author": "muyleanging",
+  "url": "https://huggingface.co/muyleanging/VoxPocket-v4",
+  "created_at": "2026-11-06T23:23:32.000Z",
+  "updated_at": "2026-11-08T02:41:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "voxcpm",
+  "languages": [
+    "km",
+    "en"
+  ],
+  "tags": [
+    "voxcpm",
+    "safetensors",
+    "khmer",
+    "tts",
+    "text-to-speech",
+    "voice-cloning",
+    "code-mixing",
+    "km",
+    "en",
+    "dataset:INGMUYLEANG/voxpocket-khmer-tts-v4",
+    "base_model:openbmb/VoxCPM1.5",
+    "base_model:finetune:openbmb/VoxCPM1.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 66,
+  "trending_score": 0,
+  "parameters": 801729856,
+  "parameters_human": "801.7M",
+  "storage_bytes": 3553600874,
+  "storage_human": "3.6 GB",
+  "base_model": "openbmb/VoxCPM1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

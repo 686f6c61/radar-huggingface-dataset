@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "TheShellMaster/cypher-Huihui-Qwen3-VL-4B-Instruct-abliterated",
+  "slug": "theshellmaster-cypher-huihui-qwen3-vl-4b-instruct-abliterated",
+  "author": "TheShellMaster",
+  "url": "https://huggingface.co/TheShellMaster/cypher-Huihui-Qwen3-VL-4B-Instruct-abliterated",
+  "created_at": "2026-11-10T23:04:13.000Z",
+  "updated_at": "2026-11-11T00:20:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "q5_k_m",
+    "abliterated",
+    "uncensored",
+    "vision",
+    "image-text-to-text",
+    "fr",
+    "en",
+    "base_model:huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 3725696032,
+  "storage_human": "3.7 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

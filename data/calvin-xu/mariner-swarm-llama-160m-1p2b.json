@@ -5,7 +5,7 @@
   "author": "Calvin-Xu",
   "url": "https://huggingface.co/Calvin-Xu/mariner-swarm-llama-160m-1p2b",
   "created_at": "2026-11-10T01:52:10.000Z",
-  "updated_at": "2026-11-10T02:11:43.000Z",
+  "updated_at": "2026-11-10T02:32:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 68057939972,
-  "storage_human": "68.1 GB",
+  "storage_bytes": 183349177052,
+  "storage_human": "183.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

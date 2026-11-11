@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "bibocat/lifemate-grpo-adapter-lowercase-fast2",
+  "slug": "bibocat-lifemate-grpo-adapter-lowercase-fast2",
+  "author": "bibocat",
+  "url": "https://huggingface.co/bibocat/lifemate-grpo-adapter-lowercase-fast2",
+  "created_at": "2026-11-11T04:14:14.000Z",
+  "updated_at": "2026-11-11T04:15:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:zinzinmit/Qwen3.5-4B-InstructTool",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:zinzinmit/Qwen3.5-4B-InstructTool",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104961854,
+  "storage_human": "105 MB",
+  "base_model": "zinzinmit/Qwen3.5-4B-InstructTool",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

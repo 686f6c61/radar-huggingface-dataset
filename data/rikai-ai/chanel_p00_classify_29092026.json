@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "rikai-ai/chanel_p00_classify_29092026",
+  "slug": "rikai-ai-chanel_p00_classify_29092026",
+  "author": "rikai-ai",
+  "url": "https://huggingface.co/rikai-ai/chanel_p00_classify_29092026",
+  "created_at": "2026-09-29T06:57:35.000Z",
+  "updated_at": "2026-11-11T04:06:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1047080671,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

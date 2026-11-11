@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "omx-baseline-team/omx-baseline-act-20261109",
+  "slug": "omx-baseline-team-omx-baseline-act-20261109",
+  "author": "omx-baseline-team",
+  "url": "https://huggingface.co/omx-baseline-team/omx-baseline-act-20261109",
+  "created_at": "2026-11-09T23:26:53.000Z",
+  "updated_at": "2026-11-11T02:37:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 826255392,
+  "storage_human": "826 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

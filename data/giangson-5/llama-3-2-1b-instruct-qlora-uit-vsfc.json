@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "GiangSon-5/Llama-3.2-1B-Instruct-QLoRA-UIT-VSFC",
+  "slug": "giangson-5-llama-3-2-1b-instruct-qlora-uit-vsfc",
+  "author": "GiangSon-5",
+  "url": "https://huggingface.co/GiangSon-5/Llama-3.2-1B-Instruct-QLoRA-UIT-VSFC",
+  "created_at": "2026-11-11T03:20:39.000Z",
+  "updated_at": "2026-11-11T03:30:46.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llama",
+    "llama-3.2",
+    "qlora",
+    "lora",
+    "bitsandbytes",
+    "nf4",
+    "sentiment-analysis",
+    "vietnamese",
+    "uit-vsfc",
+    "arxiv:2305.14314",
+    "arxiv:2106.09685",
+    "arxiv:2407.21783",
+    "text-generation",
+    "conversational",
+    "vi",
+    "en",
+    "dataset:uitnlp/vietnamese_students_feedback",
+    "base_model:meta-llama/Llama-3.2-1B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.2-1B-Instruct",
+    "license:llama3.2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63033794,
+  "storage_human": "63 MB",
+  "base_model": "meta-llama/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Vietnamese Sentiment Classification (Generative Format)",
+      "dataset": "UIT-VSFC (test split, n=3,166)",
+      "metric": "Test Accuracy (Greedy Autoregressive)",
+      "value": 0.9292
+    },
+    {
+      "task": "Vietnamese Sentiment Classification (Generative Format)",
+      "dataset": "UIT-VSFC (test split, n=3,166)",
+      "metric": "Test Macro-F1",
+      "value": 0.8211
+    },
+    {
+      "task": "Vietnamese Sentiment Classification (Generative Format)",
+      "dataset": "UIT-VSFC (test split, n=3,166)",
+      "metric": "Test Weighted-F1",
+      "value": 0.9292
+    },
+    {
+      "task": "Vietnamese Sentiment Classification (Validation Best Checkpoint)",
+      "dataset": "UIT-VSFC (validation split, n=1,583)",
+      "metric": "Validation Accuracy (Step 900)",
+      "value": 0.9501
+    },
+    {
+      "task": "Vietnamese Sentiment Classification (Validation Best Checkpoint)",
+      "dataset": "UIT-VSFC (validation split, n=1,583)",
+      "metric": "Validation Macro-F1 (Step 900)",
+      "value": 0.8785
+    }
+  ],
+  "sources": []
+}

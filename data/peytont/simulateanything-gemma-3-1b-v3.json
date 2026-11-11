@@ -5,7 +5,7 @@
   "author": "PeytonT",
   "url": "https://huggingface.co/PeytonT/SimulateAnything-Gemma-3-1B-v3",
   "created_at": "2026-11-10T01:11:02.000Z",
-  "updated_at": "2026-11-10T02:19:50.000Z",
+  "updated_at": "2026-11-10T04:08:09.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 521,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

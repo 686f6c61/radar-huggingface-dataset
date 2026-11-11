@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "locodoco/iflow-subtb-7b-32gpu-1237506",
+  "slug": "locodoco-iflow-subtb-7b-32gpu-1237506",
+  "author": "locodoco",
+  "url": "https://huggingface.co/locodoco/iflow-subtb-7b-32gpu-1237506",
+  "created_at": "2026-11-11T01:47:01.000Z",
+  "updated_at": "2026-11-11T02:20:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "math",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 192541759256,
+  "storage_human": "192.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

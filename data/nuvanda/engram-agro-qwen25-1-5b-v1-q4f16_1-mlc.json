@@ -5,7 +5,7 @@
   "author": "Nuvanda",
   "url": "https://huggingface.co/Nuvanda/engram-agro-qwen25-1.5b-v1-q4f16_1-MLC",
   "created_at": "2026-11-09T22:45:17.000Z",
-  "updated_at": "2026-11-09T22:45:56.000Z",
+  "updated_at": "2026-11-10T03:52:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

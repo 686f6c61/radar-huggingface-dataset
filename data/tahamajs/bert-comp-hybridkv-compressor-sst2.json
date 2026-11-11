@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tahamajs/bert-comp-hybridkv-compressor-sst2",
+  "slug": "tahamajs-bert-comp-hybridkv-compressor-sst2",
+  "author": "tahamajs",
+  "url": "https://huggingface.co/tahamajs/bert-comp-hybridkv-compressor-sst2",
+  "created_at": "2026-11-10T21:25:11.000Z",
+  "updated_at": "2026-11-10T21:28:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "neuralops",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuralops",
+    "pytorch",
+    "bert",
+    "model-compression",
+    "compressor-zoo",
+    "lora-healing",
+    "glue-sst2",
+    "kv_cache",
+    "hybridkv_compressor",
+    "text-classification",
+    "en",
+    "dataset:nyu-mll/glue",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 191815935,
+  "storage_human": "192 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Classification",
+      "dataset": "GLUE SST-2",
+      "metric": "GLUE SST-2 Validation Accuracy",
+      "value": 89.68
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sony Electronics Introduces The FX2 Compact Camera",
+      "url": "https://alphauniverse.com/stories/sony-electronics-introduces-the-fx2-compact-camera/",
+      "snippet": "SAN DIEGO, May 28, 2025 – Sony Electronics Inc. is proud to announce today the latest addition to its established Cinema Line …"
+    },
+    {
+      "title": "Sony Alpha FX3 ILME-FX3 | Full-Frame Cinema Line Camera",
+      "url": "https://www.amazon.com/Sony-ILME-FX3-Full-Frame-Cinema-Ultra-Compact/dp/B09CF77P16",
+      "snippet": "Smallest Cinema Line camera for solo shooting As the most compact model in the Cinema Line, the FX3 is not only the smallest and …"
+    },
+    {
+      "title": "Caméra compacte FX30 Cinema Line - Sony France",
+      "url": "https://www.sony.fr/store/product/ilmefx30b.cec/Cam-C3-A9ra-compacte-FX30-Cinema-Line",
+      "snippet": "La FX30 compacte permet aux jeunes conteurs visuels d'accéder à l'univers très prisé des caméras Cinema Line de Sony. Elle …"
+    }
+  ]
+}

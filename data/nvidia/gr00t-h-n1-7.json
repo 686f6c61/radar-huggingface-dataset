@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nvidia/GR00T-H-N1.7",
+  "slug": "nvidia-gr00t-h-n1-7",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/GR00T-H-N1.7",
+  "created_at": "2026-05-30T14:40:32.000Z",
+  "updated_at": "2026-11-10T22:11:18.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "dataset:nvidia/PhysicalAI-Robotics-Open-H-Embodiment",
+    "arxiv:2604.21017",
+    "arxiv:2503.14734",
+    "arxiv:2410.24164",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 509,
+  "trending_score": 0,
+  "parameters": 2942584448,
+  "parameters_human": "2.94B",
+  "storage_bytes": 6507624296,
+  "storage_human": "6.5 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
+    },
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …"
+    },
+    {
+      "title": "NVIDIA",
+      "url": "https://www.nvidia.fr/default.htm",
+      "snippet": "Explorez les dernières innovations et produits NVIDIA, leader en technologies graphiques et d'intelligence artificielle."
+    },
+    {
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Nvidia Corporation[a] (/ ɛnˈvɪdiə / en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, …"
+    }
+  ]
+}

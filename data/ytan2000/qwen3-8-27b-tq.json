@@ -5,7 +5,7 @@
   "author": "YTan2000",
   "url": "https://huggingface.co/YTan2000/Qwen3.8-27B-TQ",
   "created_at": "2026-10-08T21:45:33.000Z",
-  "updated_at": "2026-10-14T15:16:05.000Z",
+  "updated_at": "2026-11-10T14:39:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,13 +28,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 5685,
   "trending_score": 0,
-  "parameters": 27320697856,
-  "parameters_human": "27.32B",
-  "storage_bytes": 53047013184,
-  "storage_human": "53.0 GB",
+  "parameters": 27373132800,
+  "parameters_human": "27.37B",
+  "storage_bytes": 67873369408,
+  "storage_human": "67.9 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

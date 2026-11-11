@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "MercanAI/LFM3-1.7B-mercan",
+  "slug": "mercanai-lfm3-1-7b-mercan",
+  "author": "MercanAI",
+  "url": "https://huggingface.co/MercanAI/LFM3-1.7B-mercan",
+  "created_at": "2026-11-08T11:24:23.000Z",
+  "updated_at": "2026-11-08T13:22:50.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mercan",
+    "lfm3",
+    "liquid",
+    "gguf",
+    "text-generation",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:quantized:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1099628224,
+  "storage_human": "1.1 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

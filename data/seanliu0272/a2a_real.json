@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "SeanLiu0272/a2a_real",
+  "slug": "seanliu0272-a2a_real",
+  "author": "SeanLiu0272",
+  "url": "https://huggingface.co/SeanLiu0272/a2a_real",
+  "created_at": "2026-11-08T22:35:05.000Z",
+  "updated_at": "2026-11-11T01:26:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "imitation-learning",
+    "flow-matching",
+    "a2a",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6536599515,
+  "storage_human": "6.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bigbang一天一天的歌词、要原版歌词和中文版翻译的如题 谢谢了",
+      "url": "https://zhidao.baidu.com/question/1830391065414523220.html",
+      "snippet": "Aug 15, 2014 · BigBang 《一天一天》歌词 一天一天 离开吧 Ye the finally I realize that I'm nothing without you I was so wrong forgive …"
+    }
+  ]
+}

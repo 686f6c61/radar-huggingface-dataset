@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Sage-A1.5-Concise-i1-GGUF",
+  "slug": "mradermacher-sage-a1-5-concise-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Sage-A1.5-Concise-i1-GGUF",
+  "created_at": "2026-11-11T01:50:34.000Z",
+  "updated_at": "2026-11-11T02:11:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "moe",
+    "reasoning",
+    "efficient-reasoning",
+    "reinforcement-learning",
+    "en",
+    "base_model:TheFusionCube/Sage-A1.5-Concise",
+    "base_model:quantized:TheFusionCube/Sage-A1.5-Concise",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 13631527552,
+  "storage_human": "13.6 GB",
+  "base_model": "TheFusionCube/Sage-A1.5-Concise",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

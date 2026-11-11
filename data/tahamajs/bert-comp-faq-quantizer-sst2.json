@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tahamajs/bert-comp-faq-quantizer-sst2",
+  "slug": "tahamajs-bert-comp-faq-quantizer-sst2",
+  "author": "tahamajs",
+  "url": "https://huggingface.co/tahamajs/bert-comp-faq-quantizer-sst2",
+  "created_at": "2026-11-10T21:15:59.000Z",
+  "updated_at": "2026-11-10T21:18:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "neuralops",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuralops",
+    "pytorch",
+    "bert",
+    "model-compression",
+    "compressor-zoo",
+    "lora-healing",
+    "glue-sst2",
+    "quantization",
+    "faq_quantizer",
+    "text-classification",
+    "en",
+    "dataset:nyu-mll/glue",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 224400591,
+  "storage_human": "224 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Classification",
+      "dataset": "GLUE SST-2",
+      "metric": "GLUE SST-2 Validation Accuracy",
+      "value": 76.03
+    }
+  ],
+  "sources": [
+    {
+      "title": "Facebook's New Privacy Checkup Tool Reviews Your Settings",
+      "url": "https://lifehacker.com/facebooks-new-privacy-checkup-tool-reviews-your-setting-1630590382",
+      "snippet": "Sep 4, 2014 · Facebook has gotten a lot of flak for privacy snafus and complicated settings (which is why we need a complete guide …"
+    },
+    {
+      "title": "Take 5 Minutes and Check These Facebook Privacy Settings",
+      "url": "https://www.cnet.com/tech/computing/take-5-minutes-and-check-these-facebook-privacy-settings/",
+      "snippet": "May 19, 2022 · Can't remember the last time you gave your account a checkup? We'll walk you through what you should do to better …"
+    }
+  ]
+}

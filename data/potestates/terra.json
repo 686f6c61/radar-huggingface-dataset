@@ -5,7 +5,7 @@
   "author": "Potestates",
   "url": "https://huggingface.co/Potestates/TERRA",
   "created_at": "2026-10-29T17:33:17.000Z",
-  "updated_at": "2026-11-08T01:49:25.000Z",
+  "updated_at": "2026-11-11T01:05:27.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 45038690524,
-  "storage_human": "45.0 GB",
+  "storage_bytes": 75150517906,
+  "storage_human": "75.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

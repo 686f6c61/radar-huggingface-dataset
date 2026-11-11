@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Renjie-Ranger/writing-fcp-scores-p10-offline-qwen2.5-7b",
+  "slug": "renjie-ranger-writing-fcp-scores-p10-offline-qwen2-5-7b",
+  "author": "Renjie-Ranger",
+  "url": "https://huggingface.co/Renjie-Ranger/writing-fcp-scores-p10-offline-qwen2.5-7b",
+  "created_at": "2026-11-11T00:19:59.000Z",
+  "updated_at": "2026-11-11T00:27:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "creative-writing",
+    "numerical-feedback",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694123,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

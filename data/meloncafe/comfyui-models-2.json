@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "meloncafe/comfyui-models-2",
+  "slug": "meloncafe-comfyui-models-2",
+  "author": "meloncafe",
+  "url": "https://huggingface.co/meloncafe/comfyui-models-2",
+  "created_at": "2026-11-08T10:34:21.000Z",
+  "updated_at": "2026-11-10T12:39:40.000Z",
+  "license": "original-creator-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "safetensors",
+    "anima",
+    "sdxl",
+    "zimage",
+    "not-for-all-audiences",
+    "text-to-image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100195346147,
+  "storage_human": "100.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

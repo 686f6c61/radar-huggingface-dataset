@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Ashish666/anlp-a3-mamba",
+  "slug": "ashish666-anlp-a3-mamba",
+  "author": "Ashish666",
+  "url": "https://huggingface.co/Ashish666/anlp-a3-mamba",
+  "created_at": "2026-11-10T20:57:44.000Z",
+  "updated_at": "2026-11-10T20:57:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "cipher",
+    "mamba",
+    "deltanet",
+    "anlp",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5284864,
+  "parameters_human": "5.3M",
+  "storage_bytes": 21150984,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

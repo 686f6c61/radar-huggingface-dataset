@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "saggl/niederbairisch-chat-v1-GGUF",
+  "slug": "saggl-niederbairisch-chat-v1-gguf",
+  "author": "saggl",
+  "url": "https://huggingface.co/saggl/niederbairisch-chat-v1-GGUF",
+  "created_at": "2026-11-10T22:26:35.000Z",
+  "updated_at": "2026-11-10T22:26:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "de",
+    "bar"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "de",
+    "bar",
+    "dataset:saggl/niederbairisch-dataset",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 397807584,
+  "storage_human": "398 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

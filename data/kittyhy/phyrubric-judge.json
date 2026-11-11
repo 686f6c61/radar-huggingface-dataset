@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "kittyhy/PhyRubric-Judge",
+  "slug": "kittyhy-phyrubric-judge",
+  "author": "kittyhy",
+  "url": "https://huggingface.co/kittyhy/PhyRubric-Judge",
+  "created_at": "2026-11-10T22:23:01.000Z",
+  "updated_at": "2026-11-10T22:23:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "video",
+    "physical-commonsense",
+    "video-evaluation",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 174663096,
+  "storage_human": "175 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

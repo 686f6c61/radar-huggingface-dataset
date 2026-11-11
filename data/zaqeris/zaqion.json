@@ -65,8 +65,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": false,
-  "removed_at": null,
+  "removed": true,
+  "removed_at": "2026-11-11T04:14:55.220Z",
   "benchmarks": [
     {
       "task": "Grade-School Mathematics",

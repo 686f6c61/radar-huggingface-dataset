@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Galactic-Qwen-14B-Exp2-GGUF",
+  "slug": "mradermacher-galactic-qwen-14b-exp2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Galactic-Qwen-14B-Exp2-GGUF",
+  "created_at": "2025-03-12T06:57:57.000Z",
+  "updated_at": "2026-11-11T02:16:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "code",
+    "trl",
+    "SFT",
+    "math",
+    "en",
+    "base_model:prithivMLmods/Galactic-Qwen-14B-Exp2",
+    "base_model:quantized:prithivMLmods/Galactic-Qwen-14B-Exp2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 114,
+  "trending_score": 0,
+  "parameters": 14765947904,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102011148256,
+  "storage_human": "102.0 GB",
+  "base_model": "prithivMLmods/Galactic-Qwen-14B-Exp2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

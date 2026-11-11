@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Andivee/dictando-english-plus-coreml",
+  "slug": "andivee-dictando-english-plus-coreml",
+  "author": "Andivee",
+  "url": "https://huggingface.co/Andivee/dictando-english-plus-coreml",
+  "created_at": "2026-11-09T16:11:39.000Z",
+  "updated_at": "2026-11-09T16:12:06.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "ios",
+    "on-device",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:ConwayResearch/Underdog-Bark-3.0-Plus",
+    "base_model:quantized:ConwayResearch/Underdog-Bark-3.0-Plus",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 502312633,
+  "storage_human": "502 MB",
+  "base_model": "ConwayResearch/Underdog-Bark-3.0-Plus",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

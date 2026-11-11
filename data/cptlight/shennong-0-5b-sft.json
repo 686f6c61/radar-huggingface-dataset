@@ -5,7 +5,7 @@
   "author": "cptlight",
   "url": "https://huggingface.co/cptlight/shennong-0.5b-sft",
   "created_at": "2026-11-06T17:36:12.000Z",
-  "updated_at": "2026-11-08T16:17:31.000Z",
+  "updated_at": "2026-11-10T11:14:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

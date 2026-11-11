@@ -5,8 +5,8 @@
   "author": "HangGlidersRule",
   "url": "https://huggingface.co/HangGlidersRule/Darkstar-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-Abliterated-BF16",
   "created_at": "2026-09-02T04:38:47.000Z",
-  "updated_at": "2026-11-09T00:09:15.000Z",
-  "license": "nvidia-open-model-license",
+  "updated_at": "2026-11-10T07:29:44.000Z",
+  "license": "nvidia-open-model-agreement",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
   "library": null,
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 110,
+  "downloads_30d": 113,
   "trending_score": 0,
   "parameters": 33015632214,
   "parameters_human": "33.02B",
-  "storage_bytes": 66049385903,
-  "storage_human": "66.0 GB",
+  "storage_bytes": 128084781679,
+  "storage_human": "128.1 GB",
   "base_model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
   "formats": [
     "safetensors"

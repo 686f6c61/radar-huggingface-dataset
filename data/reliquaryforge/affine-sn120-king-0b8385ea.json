@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ReliquaryForge/affine-sn120-king-0b8385ea",
+  "slug": "reliquaryforge-affine-sn120-king-0b8385ea",
+  "author": "ReliquaryForge",
+  "url": "https://huggingface.co/ReliquaryForge/affine-sn120-king-0b8385ea",
+  "created_at": "2026-11-10T11:26:48.000Z",
+  "updated_at": "2026-11-10T11:33:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "math",
+    "grpo",
+    "bittensor",
+    "affine",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:finetune:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839709629,
+  "storage_human": "18.8 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

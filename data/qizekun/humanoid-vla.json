@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "qizekun/Humanoid-VLA",
+  "slug": "qizekun-humanoid-vla",
+  "author": "qizekun",
+  "url": "https://huggingface.co/qizekun/Humanoid-VLA",
+  "created_at": "2026-11-07T21:04:02.000Z",
+  "updated_at": "2026-11-07T22:08:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "humanoid",
+    "unitree-g1",
+    "flow-matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6482163008,
+  "storage_human": "6.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

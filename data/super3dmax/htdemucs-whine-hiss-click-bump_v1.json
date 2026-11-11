@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Super3dMax/htdemucs-whine-hiss-click-bump_v1",
+  "slug": "super3dmax-htdemucs-whine-hiss-click-bump_v1",
+  "author": "Super3dMax",
+  "url": "https://huggingface.co/Super3dMax/htdemucs-whine-hiss-click-bump_v1",
+  "created_at": "2026-11-10T12:48:16.000Z",
+  "updated_at": "2026-11-10T15:04:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41984456,
+  "parameters_human": "42.0M",
+  "storage_bytes": 146000032,
+  "storage_human": "146 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

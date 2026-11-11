@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "oluwagbotty/w2vbert-ky-ft-10ep-s2",
+  "slug": "oluwagbotty-w2vbert-ky-ft-10ep-s2",
+  "author": "oluwagbotty",
+  "url": "https://huggingface.co/oluwagbotty/w2vbert-ky-ft-10ep-s2",
+  "created_at": "2026-11-07T19:57:18.000Z",
+  "updated_at": "2026-11-08T22:58:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "rw"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2-bert",
+    "automatic-speech-recognition",
+    "non-standard-speech",
+    "stuttering",
+    "rw",
+    "dataset:cdli/rwandan_kinyarwanda_nonstandard_speech_v1.0",
+    "base_model:badrex/w2v-bert-2.0-kinyarwanda-asr",
+    "base_model:finetune:badrex/w2v-bert-2.0-kinyarwanda-asr",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 105,
+  "trending_score": 0,
+  "parameters": 580525920,
+  "parameters_human": "580.5M",
+  "storage_bytes": 48769719111,
+  "storage_human": "48.8 GB",
+  "base_model": "badrex/w2v-bert-2.0-kinyarwanda-asr",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

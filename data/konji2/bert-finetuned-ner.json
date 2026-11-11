@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "konji2/bert-finetuned-ner",
+  "slug": "konji2-bert-finetuned-ner",
+  "author": "konji2",
+  "url": "https://huggingface.co/konji2/bert-finetuned-ner",
+  "created_at": "2026-11-10T20:59:34.000Z",
+  "updated_at": "2026-11-10T21:17:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-cased",
+    "base_model:finetune:google-bert/bert-base-cased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 107729677,
+  "parameters_human": "107.7M",
+  "storage_bytes": 861889241,
+  "storage_human": "862 MB",
+  "base_model": "bert-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

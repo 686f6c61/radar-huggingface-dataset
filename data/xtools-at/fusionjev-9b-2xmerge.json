@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "xtools-at/FusionJev-9B-2xMerge",
+  "slug": "xtools-at-fusionjev-9b-2xmerge",
+  "author": "xtools-at",
+  "url": "https://huggingface.co/xtools-at/FusionJev-9B-2xMerge",
+  "created_at": "2026-11-10T20:29:47.000Z",
+  "updated_at": "2026-11-10T22:00:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "merge",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 28638946494,
+  "storage_human": "28.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "TassP0lar",
   "url": "https://huggingface.co/TassP0lar/Spark-X2.6-4B-Recursive72",
   "created_at": "2026-11-08T20:39:36.000Z",
-  "updated_at": "2026-11-08T20:39:48.000Z",
+  "updated_at": "2026-11-10T22:52:47.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 4112079360,
   "parameters_human": "4.11B",
-  "storage_bytes": 8312233225,
-  "storage_human": "8.3 GB",
+  "storage_bytes": 16804116395,
+  "storage_human": "16.8 GB",
   "base_model": "XHToken/Spark-X2.6-4B",
   "formats": [
     "safetensors"

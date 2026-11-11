@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "collectivecontext/hush-models",
+  "slug": "collectivecontext-hush-models",
+  "author": "collectivecontext",
+  "url": "https://huggingface.co/collectivecontext/hush-models",
+  "created_at": "2026-11-10T17:24:14.000Z",
+  "updated_at": "2026-11-10T19:18:12.000Z",
+  "license": "per-file",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "speech-recognition",
+    "language-identification",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21244679,
+  "parameters_human": "21.2M",
+  "storage_bytes": 766202208,
+  "storage_human": "766 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

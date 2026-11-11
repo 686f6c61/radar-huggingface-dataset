@@ -5,7 +5,7 @@
   "author": "aibohphobia1",
   "url": "https://huggingface.co/aibohphobia1/ScanAtlas-Qwen3.5-2B-Planner-GGUF",
   "created_at": "2026-11-01T15:39:08.000Z",
-  "updated_at": "2026-11-05T19:28:19.000Z",
+  "updated_at": "2026-11-10T08:29:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 1881825088,
   "parameters_human": "1.88B",
-  "storage_bytes": 2404973760,
-  "storage_human": "2.4 GB",
+  "storage_bytes": 3607460640,
+  "storage_human": "3.6 GB",
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "gguf"

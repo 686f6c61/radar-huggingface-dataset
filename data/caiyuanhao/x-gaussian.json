@@ -5,7 +5,7 @@
   "author": "CaiYuanhao",
   "url": "https://huggingface.co/CaiYuanhao/X-Gaussian",
   "created_at": "2026-11-09T08:35:28.000Z",
-  "updated_at": "2026-11-09T19:36:26.000Z",
+  "updated_at": "2026-11-10T22:18:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 1,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
