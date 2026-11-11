@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mradermacher/JSL-llama-70-GGUF",
+  "slug": "mradermacher-jsl-llama-70-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/JSL-llama-70-GGUF",
+  "created_at": "2025-03-14T03:40:58.000Z",
+  "updated_at": "2026-11-11T20:16:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 440955808640,
+  "storage_human": "441.0 GB",
+  "base_model": "Zaynoid/JSL-llama-70",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

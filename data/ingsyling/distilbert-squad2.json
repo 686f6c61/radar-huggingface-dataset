@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Ingsyling/distilbert-squad2",
+  "slug": "ingsyling-distilbert-squad2",
+  "author": "Ingsyling",
+  "url": "https://huggingface.co/Ingsyling/distilbert-squad2",
+  "created_at": "2026-11-10T13:45:18.000Z",
+  "updated_at": "2026-11-11T15:36:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "question-answering",
+    "extractive-qa",
+    "squad_v2",
+    "en",
+    "dataset:rajpurkar/squad_v2",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 66364418,
+  "parameters_human": "66.4M",
+  "storage_bytes": 265470032,
+  "storage_human": "265 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Extractive question answering",
+      "dataset": "SQuAD 2.0",
+      "metric": "Exact Match",
+      "value": 64.14
+    },
+    {
+      "task": "Extractive question answering",
+      "dataset": "SQuAD 2.0",
+      "metric": "F1",
+      "value": 67.38
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Kinemiq/Llama-3-KinemIQ-Motion",
+  "slug": "kinemiq-llama-3-kinemiq-motion",
+  "author": "Kinemiq",
+  "url": "https://huggingface.co/Kinemiq/Llama-3-KinemIQ-Motion",
+  "created_at": "2026-11-11T17:01:34.000Z",
+  "updated_at": "2026-11-11T17:04:15.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "text-to-motion",
+    "animation",
+    "webgpu",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 510945397,
+  "storage_human": "511 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "NukeTorch/Qwen3.6-35B-A3B-4bit-DFlash2",
+  "slug": "nuketorch-qwen3-6-35b-a3b-4bit-dflash2",
+  "author": "NukeTorch",
+  "url": "https://huggingface.co/NukeTorch/Qwen3.6-35B-A3B-4bit-DFlash2",
+  "created_at": "2026-11-11T04:31:02.000Z",
+  "updated_at": "2026-11-11T14:12:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nuketorch",
+    "apple-silicon",
+    "speculative-decoding",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21474993959,
+  "storage_human": "21.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "ayjays132/PhillNet_Recall",
+  "slug": "ayjays132-phillnet_recall",
+  "author": "ayjays132",
+  "url": "https://huggingface.co/ayjays132/PhillNet_Recall",
+  "created_at": "2026-11-11T17:31:18.000Z",
+  "updated_at": "2026-11-11T17:36:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "phillnet-recall",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "phillnet-recall",
+    "safetensors",
+    "phillnet_recall",
+    "phillnet",
+    "memory",
+    "retrieval",
+    "evidence",
+    "graph",
+    "ranker",
+    "training-free",
+    "local-first",
+    "custom-code",
+    "en",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9768,
+  "parameters_human": "9768",
+  "storage_bytes": 12736,
+  "storage_human": "12736 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

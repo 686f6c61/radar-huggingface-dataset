@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Kamyar-zeinalipour/RoundTripKG-Llama-2-7b-chat-hf-LoRA",
+  "slug": "kamyar-zeinalipour-roundtripkg-llama-2-7b-chat-hf-lora",
+  "author": "Kamyar-zeinalipour",
+  "url": "https://huggingface.co/Kamyar-zeinalipour/RoundTripKG-Llama-2-7b-chat-hf-LoRA",
+  "created_at": "2026-11-11T15:07:06.000Z",
+  "updated_at": "2026-11-11T15:07:28.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "knowledge-graph",
+    "triple-extraction",
+    "information-extraction",
+    "lora",
+    "text-generation",
+    "en",
+    "dataset:Kamyar-zeinalipour/llama2_kg",
+    "base_model:NousResearch/Llama-2-7b-chat-hf",
+    "base_model:adapter:NousResearch/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 606613912,
+  "storage_human": "607 MB",
+  "base_model": "NousResearch/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

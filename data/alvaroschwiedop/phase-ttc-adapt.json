@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "AlvaroSchwiedop/PHASE-TTC-Adapt",
+  "slug": "alvaroschwiedop-phase-ttc-adapt",
+  "author": "AlvaroSchwiedop",
+  "url": "https://huggingface.co/AlvaroSchwiedop/PHASE-TTC-Adapt",
+  "created_at": "2026-11-11T16:25:05.000Z",
+  "updated_at": "2026-11-11T16:54:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "time-to-contact",
+    "event-camera",
+    "rgb",
+    "causal-fusion",
+    "robotics",
+    "custom-code",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61552479,
+  "storage_human": "62 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "AgbajeCity/healthdrive-triage-llama3-8b-lora",
+  "slug": "agbajecity-healthdrive-triage-llama3-8b-lora",
+  "author": "AgbajeCity",
+  "url": "https://huggingface.co/AgbajeCity/healthdrive-triage-llama3-8b-lora",
+  "created_at": "2026-11-11T16:20:58.000Z",
+  "updated_at": "2026-11-11T16:21:21.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "medical",
+    "triage",
+    "qlora",
+    "unsloth",
+    "en",
+    "dataset:medalpaca/medical_meadow_medical_flashcards",
+    "base_model:unsloth/llama-3-8b-bnb-4bit",
+    "base_model:adapter:unsloth/llama-3-8b-bnb-4bit",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042201,
+  "storage_human": "185 MB",
+  "base_model": "unsloth/llama-3-8b-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

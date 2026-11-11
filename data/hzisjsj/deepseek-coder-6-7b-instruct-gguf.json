@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "hzisjsj/deepseek-coder-6.7b-instruct-GGUF",
+  "slug": "hzisjsj-deepseek-coder-6-7b-instruct-gguf",
+  "author": "hzisjsj",
+  "url": "https://huggingface.co/hzisjsj/deepseek-coder-6.7b-instruct-GGUF",
+  "created_at": "2026-11-11T13:00:16.000Z",
+  "updated_at": "2026-11-11T13:00:16.000Z",
+  "license": "deepseek",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:deepseek-ai/deepseek-coder-6.7b-instruct",
+    "base_model:quantized:deepseek-ai/deepseek-coder-6.7b-instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6740512768,
+  "parameters_human": "6.74B",
+  "storage_bytes": 60247451200,
+  "storage_human": "60.2 GB",
+  "base_model": "deepseek-ai/deepseek-coder-6.7b-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

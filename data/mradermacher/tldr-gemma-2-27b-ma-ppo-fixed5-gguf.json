@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/TLDR-Gemma-2-27B-MA-PPO-Fixed5-GGUF",
+  "slug": "mradermacher-tldr-gemma-2-27b-ma-ppo-fixed5-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TLDR-Gemma-2-27B-MA-PPO-Fixed5-GGUF",
+  "created_at": "2025-02-15T04:21:41.000Z",
+  "updated_at": "2026-11-11T20:16:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:openai/summarize_from_feedback",
+    "base_model:ernie-research/TLDR-Gemma-2-27B-MA-PPO-Fixed5",
+    "base_model:quantized:ernie-research/TLDR-Gemma-2-27B-MA-PPO-Fixed5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 80,
+  "trending_score": 0,
+  "parameters": 27227128320,
+  "parameters_human": "27.23B",
+  "storage_bytes": 187467659200,
+  "storage_human": "187.5 GB",
+  "base_model": "ernie-research/TLDR-Gemma-2-27B-MA-PPO-Fixed5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "nberezny/act_hybobs_dense",
+  "slug": "nberezny-act_hybobs_dense",
+  "author": "nberezny",
+  "url": "https://huggingface.co/nberezny/act_hybobs_dense",
+  "created_at": "2026-11-11T17:13:01.000Z",
+  "updated_at": "2026-11-11T17:13:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:nberezny/franka_pick_place_hybobs_dense",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51602058,
+  "parameters_human": "51.6M",
+  "storage_bytes": 825751264,
+  "storage_human": "826 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

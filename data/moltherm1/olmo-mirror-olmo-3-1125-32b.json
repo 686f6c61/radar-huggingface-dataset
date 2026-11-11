@@ -1,0 +1,289 @@
+{
+  "schema": 1,
+  "id": "moltherm1/olmo-mirror-olmo-3-1125-32b",
+  "slug": "moltherm1-olmo-mirror-olmo-3-1125-32b",
+  "author": "moltherm1",
+  "url": "https://huggingface.co/moltherm1/olmo-mirror-olmo-3-1125-32b",
+  "created_at": "2026-10-29T04:23:03.000Z",
+  "updated_at": "2026-11-11T14:56:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "olmo3",
+    "text-generation",
+    "en",
+    "dataset:allenai/dolma3_mix-5.5T-1125",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "Olmo 3-Eval Math",
+      "value": 61.6
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "BigCodeBench",
+      "value": 43.9
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "HumanEval",
+      "value": 66.5
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "DeepSeek LeetCode",
+      "value": 1.9
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "DS 1000",
+      "value": 29.7
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "MBPP",
+      "value": 60.2
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "MultiPL HumanEval",
+      "value": 35.9
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "MultiPL MBPPP",
+      "value": 41.8
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "Olmo 3-Eval Code",
+      "value": 40
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "ARC MC",
+      "value": 94.7
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "MMLU STEM",
+      "value": 70.8
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "MedMCQA MC",
+      "value": 57.6
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "MedQA MC",
+      "value": 53.8
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "SciQ MC",
+      "value": 95.5
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "Olmo 3-Eval MC_STEM",
+      "value": 74.5
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "MMLU Humanities",
+      "value": 78.3
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "MMLU Social Sci.",
+      "value": 83.9
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "MMLU Other",
+      "value": 75.1
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "CSQA MC",
+      "value": 82.3
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "PIQA MC",
+      "value": 85.6
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "SocialIQA MC",
+      "value": 83.9
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "CoQA Gen2MC MC",
+      "value": 96.4
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "DROP Gen2MC MC",
+      "value": 87.2
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "Jeopardy Gen2MC MC",
+      "value": 92.3
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "NaturalQs Gen2MC MC",
+      "value": 78
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "SQuAD Gen2MC MC",
+      "value": 98.2
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "Olmo 3-Eval MC_Non-STEM",
+      "value": 85.6
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "HellaSwag RC",
+      "value": 84.8
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "Winogrande RC",
+      "value": 90.3
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "Lambada",
+      "value": 75.7
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "Basic Skills",
+      "value": 93.5
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "DROP",
+      "value": 81
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "Jeopardy",
+      "value": 75.3
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "NaturalQs",
+      "value": 48.7
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "SQuAD",
+      "value": 94.5
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "CoQA",
+      "value": 74.1
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "Olmo 3-Eval GenQA",
+      "value": 79.8
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "BBH",
+      "value": 77.6
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "MMLU Pro MC",
+      "value": 49.6
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "Deepmind Math",
+      "value": 30.1
+    },
+    {
+      "task": null,
+      "dataset": "Benchmarks",
+      "metric": "LBPP",
+      "value": 21.7
+    }
+  ],
+  "sources": []
+}

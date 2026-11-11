@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Ma7ee7/Noesis-0.6B-RLVR",
+  "slug": "ma7ee7-noesis-0-6b-rlvr",
+  "author": "Ma7ee7",
+  "url": "https://huggingface.co/Ma7ee7/Noesis-0.6B-RLVR",
+  "created_at": "2026-11-11T17:21:08.000Z",
+  "updated_at": "2026-11-11T17:21:48.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "grpo",
+    "reinforcement-learning",
+    "reasoning",
+    "mathematics",
+    "peft-merged",
+    "en",
+    "base_model:Ma7ee7/Noesis-0.6B-SFT",
+    "base_model:finetune:Ma7ee7/Noesis-0.6B-SFT",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2395657480,
+  "storage_human": "2.4 GB",
+  "base_model": "Ma7ee7/Noesis-0.6B-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

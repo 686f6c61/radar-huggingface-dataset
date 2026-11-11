@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Kamyar-zeinalipour/MultiHint-9K-Mistral-7B-v0.3",
+  "slug": "kamyar-zeinalipour-multihint-9k-mistral-7b-v0-3",
+  "author": "Kamyar-zeinalipour",
+  "url": "https://huggingface.co/Kamyar-zeinalipour/MultiHint-9K-Mistral-7B-v0.3",
+  "created_at": "2026-11-11T15:23:13.000Z",
+  "updated_at": "2026-11-11T15:23:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "it",
+    "fa"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "education",
+    "hint-generation",
+    "socratic",
+    "multilingual",
+    "lora",
+    "text-generation",
+    "en",
+    "it",
+    "fa",
+    "dataset:Kamyar-zeinalipour/MultiHint-9K",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 709423512,
+  "storage_human": "709 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

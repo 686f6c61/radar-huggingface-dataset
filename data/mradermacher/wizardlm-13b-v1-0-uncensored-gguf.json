@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/WizardLM-13B-V1.0-Uncensored-GGUF",
+  "slug": "mradermacher-wizardlm-13b-v1-0-uncensored-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/WizardLM-13B-V1.0-Uncensored-GGUF",
+  "created_at": "2025-03-15T23:23:09.000Z",
+  "updated_at": "2026-11-11T19:09:31.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:ehartford/WizardLM_evol_instruct_V2_196k_unfiltered_merged_split",
+    "base_model:QuixiAI/WizardLM-13B-V1.0-Uncensored",
+    "base_model:quantized:QuixiAI/WizardLM-13B-V1.0-Uncensored",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 13015864320,
+  "parameters_human": "13.02B",
+  "storage_bytes": 88801915616,
+  "storage_human": "88.8 GB",
+  "base_model": "QuixiAI/WizardLM-13B-V1.0-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

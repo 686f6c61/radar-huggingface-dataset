@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "akakaiy/MOSS-Audio-8B-Thinking-ru",
+  "slug": "akakaiy-moss-audio-8b-thinking-ru",
+  "author": "akakaiy",
+  "url": "https://huggingface.co/akakaiy/MOSS-Audio-8B-Thinking-ru",
+  "created_at": "2026-10-22T08:40:54.000Z",
+  "updated_at": "2026-11-11T13:18:08.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "audio",
+    "speech-recognition",
+    "music",
+    "lora",
+    "crispasr",
+    "audio-text-to-text",
+    "ru",
+    "en",
+    "base_model:OpenMOSS-Team/MOSS-Audio-8B-Thinking",
+    "base_model:finetune:OpenMOSS-Team/MOSS-Audio-8B-Thinking",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 382,
+  "trending_score": 0,
+  "parameters": 9052463488,
+  "parameters_human": "9.05B",
+  "storage_bytes": 55962596712,
+  "storage_human": "56.0 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Audio-8B-Thinking",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

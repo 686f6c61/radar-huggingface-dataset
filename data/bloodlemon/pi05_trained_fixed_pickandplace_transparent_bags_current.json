@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "bloodlemon/pi05_trained_fixed_pickandplace_transparent_bags_current",
+  "slug": "bloodlemon-pi05_trained_fixed_pickandplace_transparent_bags_current",
+  "author": "bloodlemon",
+  "url": "https://huggingface.co/bloodlemon/pi05_trained_fixed_pickandplace_transparent_bags_current",
+  "created_at": "2026-11-11T14:20:23.000Z",
+  "updated_at": "2026-11-11T14:20:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:bloodlemon/recrd-fixed-pickandplace-transparent-bags-current",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5170832,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Escanor-the-sin-of-pride/rhino-cadevolve-ai",
+  "slug": "escanor-the-sin-of-pride-rhino-cadevolve-ai",
+  "author": "Escanor-the-sin-of-pride",
+  "url": "https://huggingface.co/Escanor-the-sin-of-pride/rhino-cadevolve-ai",
+  "created_at": "2026-11-11T18:08:32.000Z",
+  "updated_at": "2026-11-11T18:08:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48403748,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

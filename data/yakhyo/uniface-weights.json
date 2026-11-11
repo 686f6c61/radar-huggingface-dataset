@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "yakhyo/uniface-weights",
+  "slug": "yakhyo-uniface-weights",
+  "author": "yakhyo",
+  "url": "https://huggingface.co/yakhyo/uniface-weights",
+  "created_at": "2026-07-30T03:21:07.000Z",
+  "updated_at": "2026-11-11T13:59:11.000Z",
+  "license": "mixed-per-model",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "face-detection",
+    "face-recognition",
+    "facial-landmarks",
+    "face-parsing",
+    "gaze-estimation",
+    "head-pose-estimation",
+    "anti-spoofing",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3701044802,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Kamyar-zeinalipour/TalkFa-WikiFaDial-Llama-3.1-8B-Instruct-LoRA",
+  "slug": "kamyar-zeinalipour-talkfa-wikifadial-llama-3-1-8b-instruct-lora",
+  "author": "Kamyar-zeinalipour",
+  "url": "https://huggingface.co/Kamyar-zeinalipour/TalkFa-WikiFaDial-Llama-3.1-8B-Instruct-LoRA",
+  "created_at": "2026-11-11T14:14:54.000Z",
+  "updated_at": "2026-11-11T14:15:24.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "talkfa",
+    "farsi",
+    "persian",
+    "dialogue-generation",
+    "knowledge-grounded-dialogue",
+    "lora",
+    "text-generation",
+    "fa",
+    "dataset:Kamyar-zeinalipour/TalkFa",
+    "arxiv:2609.01810",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2193765664,
+  "storage_human": "2.2 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2609.01810] TalkFa: A Unified Benchmark for Farsi Dialogue ...",
+      "url": "https://arxiv.org/abs/2609.01810",
+      "snippet": "Authors:Neda Jamshidi, Kamyar Zeinalipour, Fahimeh Akbari, Monica Bianchini, Marco Maggini, Marco Gori · View a PDF of the paper titled TalkFa: A Unified Benchmark for Farsi Dialogue Generation and Understanding, by Neda Jamshidi and 5 other authors View PDF HTML (experimental)"
+    }
+  ]
+}

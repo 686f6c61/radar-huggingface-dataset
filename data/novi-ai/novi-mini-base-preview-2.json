@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "Novi-AI/Novi-Mini-Base-Preview-2",
+  "slug": "novi-ai-novi-mini-base-preview-2",
+  "author": "Novi-AI",
+  "url": "https://huggingface.co/Novi-AI/Novi-Mini-Base-Preview-2",
+  "created_at": "2026-11-11T13:30:53.000Z",
+  "updated_at": "2026-11-11T14:34:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bananaall",
+    "text-generation",
+    "novi-ai",
+    "language-model",
+    "pretrained-model",
+    "preview",
+    "small-language-model",
+    "bananamind-2-style",
+    "causal-lm",
+    "base-model",
+    "pretrained-from-scratch",
+    "project-kairo",
+    "triton",
+    "en",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:nvidia/OpenMathInstruct-2",
+    "dataset:HuggingFaceTB/smoltalk",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12065280,
+  "parameters_human": "12.1M",
+  "storage_bytes": 144912562,
+  "storage_human": "145 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - Groupe NOVI",
+      "url": "https://groupe-novi.com/",
+      "snippet": "Contact FR Le groupe L’esprit NOVI Nos enseignes et nos marques L’international Prestations logistiques"
+    },
+    {
+      "title": "Fournisseur pour les professionnels de l'esthétique - NOVI PRO",
+      "url": "https://www.novi-pro.fr/",
+      "snippet": "NOVI PRO accompagne les professionnels de la beauté dans tous leurs projets de nombreux partenaires à nos côtés pour répondre …"
+    },
+    {
+      "title": "Groupe NOVI - LinkedIn",
+      "url": "https://fr.linkedin.com/company/groupe-novi",
+      "snippet": "Grâce à l'enthousiasme qui irrigue l’ensemble des forces vives du groupe, le Groupe NOVI est devenu n°1 français de la Franchise …"
+    },
+    {
+      "title": "Novi-Clous - Expert de la fixation : Clouage, agrafage, agrafes, clous ...",
+      "url": "https://www.novi-clous.fr/",
+      "snippet": "Expert de la fixation : Clouage, agrafage, agrafes, clous, E.P.I. Boutique en ligne. Expédition rapide, large gamme de produit en stock !"
+    },
+    {
+      "title": "Novi — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Novi",
+      "snippet": "Novi, puis Novi PB est une marque française de la société La Novi à Pantin, fondée en 1926 par Jules Bénézech afin de fournir à …"
+    }
+  ]
+}

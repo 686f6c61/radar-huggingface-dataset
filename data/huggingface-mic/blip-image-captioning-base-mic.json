@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/blip-image-captioning-base-mic",
+  "slug": "huggingface-mic-blip-image-captioning-base-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/blip-image-captioning-base-mic",
+  "created_at": "2026-11-05T13:03:47.000Z",
+  "updated_at": "2026-11-11T16:21:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "mic",
+    "test-artifact",
+    "base_model:Salesforce/blip-image-captioning-base",
+    "base_model:finetune:Salesforce/blip-image-captioning-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 564,
+  "trending_score": 0,
+  "parameters": 2275004,
+  "parameters_human": "2.3M",
+  "storage_bytes": 9111112,
+  "storage_human": "9 MB",
+  "base_model": "Salesforce/blip-image-captioning-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

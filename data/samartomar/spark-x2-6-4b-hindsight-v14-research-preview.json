@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "samartomar/spark-x2.6-4b-hindsight-v14-research-preview",
+  "slug": "samartomar-spark-x2-6-4b-hindsight-v14-research-preview",
+  "author": "samartomar",
+  "url": "https://huggingface.co/samartomar/spark-x2.6-4b-hindsight-v14-research-preview",
+  "created_at": "2026-11-11T19:59:09.000Z",
+  "updated_at": "2026-11-11T20:07:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "research",
+    "hindsight",
+    "structured-output",
+    "text-generation",
+    "en",
+    "base_model:XHToken/Spark-X2.6-4B",
+    "base_model:adapter:XHToken/Spark-X2.6-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 259654704,
+  "storage_human": "260 MB",
+  "base_model": "XHToken/Spark-X2.6-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aerodrome Finance: The Engine Powering Base’s DeFi Liquidity",
+      "url": "https://aerodromefinance.to/",
+      "snippet": "Whether you’re researching Aerodrome Finance for the first time or looking to understand its role in Base’s growth story, this …"
+    }
+  ]
+}

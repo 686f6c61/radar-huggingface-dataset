@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "athenista/slm-tavenel-jepa-124m",
+  "slug": "athenista-slm-tavenel-jepa-124m",
+  "author": "athenista",
+  "url": "https://huggingface.co/athenista/slm-tavenel-jepa-124m",
+  "created_at": "2026-11-11T13:58:42.000Z",
+  "updated_at": "2026-11-11T13:59:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "slm_tavenel",
+    "feature-extraction",
+    "slm-tavenel",
+    "jepa",
+    "vicreg",
+    "coco",
+    "representation-learning",
+    "research",
+    "custom_code",
+    "en",
+    "arxiv:2610.39302",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124038144,
+  "parameters_human": "124.0M",
+  "storage_bytes": 496815304,
+  "storage_human": "497 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text-image representation neighbourhood alignment",
+      "dataset": "COCO 2017 validation captions and DINOv2 images, held-out 2500-image primary half",
+      "metric": "Shared 10-neighbour overlap, fixed graph",
+      "value": 0.17916
+    }
+  ],
+  "sources": []
+}

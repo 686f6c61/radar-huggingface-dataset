@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Press2p/MNN-Pocket-0.3B-GGUF",
+  "slug": "press2p-mnn-pocket-0-3b-gguf",
+  "author": "Press2p",
+  "url": "https://huggingface.co/Press2p/MNN-Pocket-0.3B-GGUF",
+  "created_at": "2026-11-11T13:15:32.000Z",
+  "updated_at": "2026-11-11T13:15:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "mnn",
+    "mnn-pocket",
+    "on-device",
+    "llama-cpp",
+    "text-generation",
+    "en",
+    "zh",
+    "arxiv:2611.12311",
+    "base_model:taobao-mnn/MNN-Pocket-0.3B",
+    "base_model:quantized:taobao-mnn/MNN-Pocket-0.3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361551232,
+  "parameters_human": "361.6M",
+  "storage_bytes": 1304302752,
+  "storage_human": "1.3 GB",
+  "base_model": "taobao-mnn/MNN-Pocket-0.3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

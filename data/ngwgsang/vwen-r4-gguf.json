@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "ngwgsang/vwen-r4-GGUF",
+  "slug": "ngwgsang-vwen-r4-gguf",
+  "author": "ngwgsang",
+  "url": "https://huggingface.co/ngwgsang/vwen-r4-GGUF",
+  "created_at": "2026-11-11T13:42:27.000Z",
+  "updated_at": "2026-11-11T13:45:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "paraphrase",
+    "vietnamese",
+    "text-simplification",
+    "text-generation",
+    "vi",
+    "base_model:ngwgsang/vwen-r4",
+    "base_model:quantized:ngwgsang/vwen-r4",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1006672704,
+  "parameters_human": "1.01B",
+  "storage_bytes": 3107576195,
+  "storage_human": "3.1 GB",
+  "base_model": "ngwgsang/vwen-r4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

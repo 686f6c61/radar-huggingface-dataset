@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "ProtonPrat/anlp-a3-deltanet",
+  "slug": "protonprat-anlp-a3-deltanet",
+  "author": "ProtonPrat",
+  "url": "https://huggingface.co/ProtonPrat/anlp-a3-deltanet",
+  "created_at": "2026-11-11T19:57:42.000Z",
+  "updated_at": "2026-11-11T19:57:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "cipher-decryption",
+    "deltanet",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3453467,
+  "parameters_human": "3.5M",
+  "storage_bytes": 13820788,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "handful/fastcello-flux2-klein-4b",
+  "slug": "handful-fastcello-flux2-klein-4b",
+  "author": "handful",
+  "url": "https://huggingface.co/handful/fastcello-flux2-klein-4b",
+  "created_at": "2026-11-11T19:46:59.000Z",
+  "updated_at": "2026-11-11T19:47:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "image-to-image",
+    "pixel-art",
+    "isometric",
+    "map",
+    "flux2",
+    "klein",
+    "few-step",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:adapter:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34699368,
+  "storage_human": "35 MB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "handful - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/handful",
+      "snippet": "Dans les listes : Words ending in \"ful\", Vocabulaire , H, Suite... Synonymes : couple, few, modicum, smattering, small quantity, …"
+    },
+    {
+      "title": "handful - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/handful.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"handful\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "Traduction HANDFUL en français | Dictionnaire anglais-français",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/handful",
+      "snippet": "Traduction de \"handful\" en français : poignée, sacré numéro. Nom, signification, prononciation, expressions idiomatiques en anglais, …"
+    },
+    {
+      "title": "HANDFUL | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/handful",
+      "snippet": "HANDFUL definition: 1. an amount of something that can be held in one hand: 2. a small number of people or things: 3…. Learn more."
+    },
+    {
+      "title": "handful - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/%20handful",
+      "snippet": "Dans les listes : Words ending in \"ful\", Suite... Synonymes : couple, few, modicum, smattering, small quantity, Suite... Collocations : …"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "namiciro/smolvla-sort-policy",
+  "slug": "namiciro-smolvla-sort-policy",
+  "author": "namiciro",
+  "url": "https://huggingface.co/namiciro/smolvla-sort-policy",
+  "created_at": "2026-11-11T12:50:41.000Z",
+  "updated_at": "2026-11-11T12:51:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:namiciro/red-to-right-v2",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906725720,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

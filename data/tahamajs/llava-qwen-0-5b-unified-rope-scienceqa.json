@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tahamajs/llava-qwen-0.5b-unified-rope-scienceqa",
+  "slug": "tahamajs-llava-qwen-0-5b-unified-rope-scienceqa",
+  "author": "tahamajs",
+  "url": "https://huggingface.co/tahamajs/llava-qwen-0.5b-unified-rope-scienceqa",
+  "created_at": "2026-11-11T12:06:19.000Z",
+  "updated_at": "2026-11-11T12:25:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "neuralops",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuralops",
+    "llava",
+    "multimodal",
+    "vision-language-model",
+    "scienceqa",
+    "attention-zoo",
+    "attention-surgery",
+    "knowledge-distillation",
+    "modern",
+    "unified-rope",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "dataset:derek-thomas/ScienceQA",
+    "base_model:llava-hf/llava-interleave-qwen-0.5b-hf",
+    "base_model:finetune:llava-hf/llava-interleave-qwen-0.5b-hf",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 400045602,
+  "storage_human": "400 MB",
+  "base_model": "llava-hf/llava-interleave-qwen-0.5b-hf",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "ScienceQA Multimodal Visual Reasoning",
+      "dataset": "ScienceQA (Image-Bearing STEM Subset, validation)",
+      "metric": "ScienceQA (Image-Bearing STEM Subset, validation) Accuracy (%)",
+      "value": 67.5
+    },
+    {
+      "task": "ScienceQA Multimodal Visual Reasoning",
+      "dataset": "ScienceQA (Image-Bearing STEM Subset, validation)",
+      "metric": "ScienceQA (Image-Bearing STEM Subset, validation) Perplexity",
+      "value": 2.32
+    }
+  ],
+  "sources": []
+}

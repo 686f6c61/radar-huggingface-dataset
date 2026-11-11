@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "starrysproutkids/Qwen-Image-2512",
+  "slug": "starrysproutkids-qwen-image-2512",
+  "author": "starrysproutkids",
+  "url": "https://huggingface.co/starrysproutkids/Qwen-Image-2512",
+  "created_at": "2026-11-11T19:44:01.000Z",
+  "updated_at": "2026-11-11T19:44:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "en",
+    "zh",
+    "arxiv:2508.02324",
+    "license:apache-2.0",
+    "diffusers:QwenImagePipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20430401088,
+  "parameters_human": "20.43B",
+  "storage_bytes": 57699249390,
+  "storage_human": "57.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

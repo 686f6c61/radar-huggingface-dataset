@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "teckedd/gha-twi-understanding-r4",
+  "slug": "teckedd-gha-twi-understanding-r4",
+  "author": "teckedd",
+  "url": "https://huggingface.co/teckedd/gha-twi-understanding-r4",
+  "created_at": "2026-11-11T15:02:13.000Z",
+  "updated_at": "2026-11-11T15:02:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "tw",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "lora",
+    "research",
+    "text-generation",
+    "tw",
+    "en",
+    "base_model:McGill-NLP/AfriqueQwen3.5-9B-50Langs-Instruct-v1",
+    "base_model:adapter:McGill-NLP/AfriqueQwen3.5-9B-50Langs-Instruct-v1",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "McGill-NLP/AfriqueQwen3.5-9B-50Langs-Instruct-v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Two-choice meaning recognition",
+      "dataset": "Published Twi-English references, disjoint same-domain pairs",
+      "metric": "Correct in both option orders (890/1092)",
+      "value": 0.815018
+    },
+    {
+      "task": "Own-history dialogue state recall",
+      "dataset": "Controlled bilingual corrections (4 templates, 24 scenarios per language)",
+      "metric": "Both values recalled, Twi (23/24)",
+      "value": 0.958333
+    },
+    {
+      "task": "Own-history dialogue state recall",
+      "dataset": "Controlled bilingual corrections (4 templates, 24 scenarios per language)",
+      "metric": "Both values recalled, English (18/24)",
+      "value": 0.75
+    }
+  ],
+  "sources": []
+}

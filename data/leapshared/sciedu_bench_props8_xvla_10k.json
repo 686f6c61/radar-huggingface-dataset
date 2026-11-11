@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "leapshared/sciedu_bench_props8_xvla_10k",
+  "slug": "leapshared-sciedu_bench_props8_xvla_10k",
+  "author": "leapshared",
+  "url": "https://huggingface.co/leapshared/sciedu_bench_props8_xvla_10k",
+  "created_at": "2026-11-11T13:39:44.000Z",
+  "updated_at": "2026-11-11T13:40:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "xvla",
+    "dataset:leapshared/sciedu_bench_v2_sim_props8_all",
+    "arxiv:2510.10274",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879687256,
+  "parameters_human": "879.7M",
+  "storage_bytes": 3518884280,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

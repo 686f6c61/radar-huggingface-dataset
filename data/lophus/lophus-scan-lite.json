@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Lophus/lophus-scan-lite",
+  "slug": "lophus-lophus-scan-lite",
+  "author": "Lophus",
+  "url": "https://huggingface.co/Lophus/lophus-scan-lite",
+  "created_at": "2026-11-11T15:00:47.000Z",
+  "updated_at": "2026-11-11T15:00:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "biology",
+    "species-identification",
+    "base_model:imageomics/bioclip",
+    "base_model:quantized:imageomics/bioclip",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 97233233,
+  "storage_human": "97 MB",
+  "base_model": "imageomics/bioclip",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lophus - Wikispecies",
+      "url": "https://species.wikimedia.org/wiki/Lophus",
+      "snippet": "Familia: Anthribidae Subfamilia: Anthribinae Genus: Lophus Species: L. cristatellus – L. lewisi – L. rudis [species after Holloway (1982)]"
+    },
+    {
+      "title": "Augustynolophus — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Augustynolophus",
+      "snippet": "Le nom découle d'une combinaison de la famille Augustyn, qui a aidé à soutenir le musée du comté de Los Angeles, et le suffixe \" …"
+    },
+    {
+      "title": "Chrysoblephus lophus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chrysoblephus_lophus",
+      "snippet": "Chrysoblephus lophus, the false red stumpnose or the false Englishman, is a species of marine ray-finned fish belonging to the family …"
+    },
+    {
+      "title": "Lophus lewisi - Wikispecies",
+      "url": "https://species.wikimedia.org/wiki/Lophus_lewisi",
+      "snippet": "Dec 20, 2024 · Anthribus lewisi Broun, 1909 Lophus lewisi (Broun, 1909) Holloway, 1982: 45 (new combination) Anthribus halli …"
+    }
+  ]
+}

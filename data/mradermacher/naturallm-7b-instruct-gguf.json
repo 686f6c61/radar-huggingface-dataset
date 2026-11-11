@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/NaturalLM-7B-Instruct-GGUF",
+  "slug": "mradermacher-naturallm-7b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/NaturalLM-7B-Instruct-GGUF",
+  "created_at": "2024-12-13T05:40:41.000Z",
+  "updated_at": "2026-11-11T20:16:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "trl",
+    "sft",
+    "en",
+    "base_model:qingy2024/NaturalLM-7B-Instruct",
+    "base_model:quantized:qingy2024/NaturalLM-7B-Instruct",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 189,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 63992364032,
+  "storage_human": "64.0 GB",
+  "base_model": "qingy2024/NaturalLM-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

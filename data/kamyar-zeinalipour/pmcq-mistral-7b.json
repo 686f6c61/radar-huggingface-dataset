@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Kamyar-zeinalipour/PMCQ-Mistral-7B",
+  "slug": "kamyar-zeinalipour-pmcq-mistral-7b",
+  "author": "Kamyar-zeinalipour",
+  "url": "https://huggingface.co/Kamyar-zeinalipour/PMCQ-Mistral-7B",
+  "created_at": "2024-09-15T14:02:17.000Z",
+  "updated_at": "2026-11-11T14:54:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "persian",
+    "farsi",
+    "multiple-choice-questions",
+    "question-generation",
+    "education",
+    "lora",
+    "text-generation",
+    "conversational",
+    "fa",
+    "dataset:Kamyar-zeinalipour/PersianMCQ-instruct",
+    "dataset:Kamyar-zeinalipour/Persian_MCQ_DB_Mistral",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1870294699,
+  "storage_human": "1.9 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

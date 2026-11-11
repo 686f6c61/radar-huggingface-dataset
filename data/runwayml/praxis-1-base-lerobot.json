@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "runwayml/praxis-1-base-lerobot",
+  "slug": "runwayml-praxis-1-base-lerobot",
+  "author": "runwayml",
+  "url": "https://huggingface.co/runwayml/praxis-1-base-lerobot",
+  "created_at": "2026-11-10T01:32:17.000Z",
+  "updated_at": "2026-11-11T13:56:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "praxis",
+    "video-diffusion",
+    "action-chunking",
+    "praxis-1",
+    "base_model:runwayml/praxis-1-base",
+    "base_model:finetune:runwayml/praxis-1-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 27202277040,
+  "parameters_human": "27.20B",
+  "storage_bytes": 54404626528,
+  "storage_human": "54.4 GB",
+  "base_model": "runwayml/praxis-1-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Runway",
+      "url": "https://app.runwayml.com/",
+      "snippet": "Everything you need to make anything you want."
+    },
+    {
+      "title": "Runway",
+      "url": "https://help.runwayml.com/hc/en-us",
+      "snippet": "Runway Agent Describe what you need. Agent handles the rest."
+    },
+    {
+      "title": "AI Video, Image and Audio Model APIs | Runway",
+      "url": "https://dev.runway.com/models/catalog",
+      "snippet": "runwayml/ Aleph 2.0 Runway's flagship in-context video editing model with keyframe-guided control."
+    }
+  ]
+}

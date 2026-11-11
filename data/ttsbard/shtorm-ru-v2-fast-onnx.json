@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "TTSBard/shtorm-ru-v2-fast-onnx",
+  "slug": "ttsbard-shtorm-ru-v2-fast-onnx",
+  "author": "TTSBard",
+  "url": "https://huggingface.co/TTSBard/shtorm-ru-v2-fast-onnx",
+  "created_at": "2026-11-11T13:16:32.000Z",
+  "updated_at": "2026-11-11T13:22:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnxruntime",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "pocket-tts",
+    "ttsbard",
+    "text-to-speech",
+    "ru",
+    "base_model:ArtShtorm/Shtorm-PocketTTS-RU",
+    "base_model:quantized:ArtShtorm/Shtorm-PocketTTS-RU",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 602439205,
+  "storage_human": "602 MB",
+  "base_model": "ArtShtorm/Shtorm-PocketTTS-RU",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

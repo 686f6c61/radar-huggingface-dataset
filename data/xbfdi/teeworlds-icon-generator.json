@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "XBFDI/Teeworlds-Icon-Generator",
+  "slug": "xbfdi-teeworlds-icon-generator",
+  "author": "XBFDI",
+  "url": "https://huggingface.co/XBFDI/Teeworlds-Icon-Generator",
+  "created_at": "2026-11-11T17:45:35.000Z",
+  "updated_at": "2026-11-11T17:50:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9584771,
+  "parameters_human": "9.6M",
+  "storage_bytes": 383500985,
+  "storage_human": "384 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

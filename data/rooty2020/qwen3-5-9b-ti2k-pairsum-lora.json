@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "rooty2020/Qwen3.5-9B-ti2k-pairsum-LoRA",
+  "slug": "rooty2020-qwen3-5-9b-ti2k-pairsum-lora",
+  "author": "rooty2020",
+  "url": "https://huggingface.co/rooty2020/Qwen3.5-9B-ti2k-pairsum-LoRA",
+  "created_at": "2026-11-11T13:27:57.000Z",
+  "updated_at": "2026-11-11T13:28:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "contrastive",
+    "dataset:yanghs1018/ti_2k",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 346302176,
+  "storage_human": "346 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

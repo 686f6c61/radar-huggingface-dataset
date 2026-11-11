@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "hishamx777/arabic-sentiment-marbert",
+  "slug": "hishamx777-arabic-sentiment-marbert",
+  "author": "hishamx777",
+  "url": "https://huggingface.co/hishamx777/arabic-sentiment-marbert",
+  "created_at": "2026-11-11T14:11:43.000Z",
+  "updated_at": "2026-11-11T14:12:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 162842882,
+  "parameters_human": "162.8M",
+  "storage_bytes": 651395072,
+  "storage_human": "651 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

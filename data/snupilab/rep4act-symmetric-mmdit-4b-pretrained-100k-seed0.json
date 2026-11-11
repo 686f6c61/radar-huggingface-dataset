@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "snupilab/Rep4Act-Symmetric-MMDiT-4B-Pretrained-100k-seed0",
+  "slug": "snupilab-rep4act-symmetric-mmdit-4b-pretrained-100k-seed0",
+  "author": "snupilab",
+  "url": "https://huggingface.co/snupilab/Rep4Act-Symmetric-MMDiT-4B-Pretrained-100k-seed0",
+  "created_at": "2026-11-11T18:04:44.000Z",
+  "updated_at": "2026-11-11T18:06:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "rep4act",
+    "pretraining",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5781184033,
+  "parameters_human": "5.78B",
+  "storage_bytes": 19449101465,
+  "storage_human": "19.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

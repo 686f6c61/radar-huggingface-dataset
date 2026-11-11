@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "seriintan/act_marked_lang3a_frazier_blade",
+  "slug": "seriintan-act_marked_lang3a_frazier_blade",
+  "author": "seriintan",
+  "url": "https://huggingface.co/seriintan/act_marked_lang3a_frazier_blade",
+  "created_at": "2026-11-11T19:16:03.000Z",
+  "updated_at": "2026-11-11T19:16:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:seriintan/lang3a_frazier_blade_marked",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

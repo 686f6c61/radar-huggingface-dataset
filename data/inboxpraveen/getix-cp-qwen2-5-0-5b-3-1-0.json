@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "inboxpraveen/getix-cp-qwen2.5-0.5b-3.1.0",
+  "slug": "inboxpraveen-getix-cp-qwen2-5-0-5b-3-1-0",
+  "author": "inboxpraveen",
+  "url": "https://huggingface.co/inboxpraveen/getix-cp-qwen2.5-0.5b-3.1.0",
+  "created_at": "2026-11-11T13:15:18.000Z",
+  "updated_at": "2026-11-11T13:24:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 4159392792,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

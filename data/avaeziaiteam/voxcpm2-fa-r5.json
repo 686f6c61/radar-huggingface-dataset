@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "avaeziaiteam/VoxCPM2-fa-r5",
+  "slug": "avaeziaiteam-voxcpm2-fa-r5",
+  "author": "avaeziaiteam",
+  "url": "https://huggingface.co/avaeziaiteam/VoxCPM2-fa-r5",
+  "created_at": "2026-11-11T16:20:16.000Z",
+  "updated_at": "2026-11-11T16:28:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "voxcpm2",
+    "persian",
+    "fa",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27857218698,
+  "storage_human": "27.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

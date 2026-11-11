@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "bartowski/ZoomGain-9B-GGUF",
+  "slug": "bartowski-zoomgain-9b-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/ZoomGain-9B-GGUF",
+  "created_at": "2026-11-11T14:37:23.000Z",
+  "updated_at": "2026-11-11T14:50:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "base_model:inclusionAI/ZoomGain-9B",
+    "base_model:quantized:inclusionAI/ZoomGain-9B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 139939038432,
+  "storage_human": "139.9 GB",
+  "base_model": "inclusionAI/ZoomGain-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

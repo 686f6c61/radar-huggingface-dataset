@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "rutuofficial-max/Vanessa-45107",
+  "slug": "rutuofficial-max-vanessa-45107",
+  "author": "rutuofficial-max",
+  "url": "https://huggingface.co/rutuofficial-max/Vanessa-45107",
+  "created_at": "2026-11-11T02:25:56.000Z",
+  "updated_at": "2026-11-11T16:29:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "full-fine-tune",
+    "roleplay",
+    "chat",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-1.7B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 4553232948,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

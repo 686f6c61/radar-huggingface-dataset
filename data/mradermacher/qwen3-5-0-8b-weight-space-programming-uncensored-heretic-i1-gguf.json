@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.5-0.8B-weight-space-programming-UNCENSORED-heretic-i1-GGUF",
+  "slug": "mradermacher-qwen3-5-0-8b-weight-space-programming-uncensored-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.5-0.8B-weight-space-programming-UNCENSORED-heretic-i1-GGUF",
+  "created_at": "2026-11-11T18:35:21.000Z",
+  "updated_at": "2026-11-11T19:04:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ml-intern",
+    "weight-space-programming",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "en",
+    "base_model:xtools-at/Qwen3.5-0.8B-weight-space-programming-UNCENSORED-heretic",
+    "base_model:quantized:xtools-at/Qwen3.5-0.8B-weight-space-programming-UNCENSORED-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 555378,
+  "parameters_human": "555378",
+  "storage_bytes": 2275008,
+  "storage_human": "2 MB",
+  "base_model": "xtools-at/Qwen3.5-0.8B-weight-space-programming-UNCENSORED-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "DoubleRabbits/d3-lite-zils-v3",
+  "slug": "doublerabbits-d3-lite-zils-v3",
+  "author": "DoubleRabbits",
+  "url": "https://huggingface.co/DoubleRabbits/d3-lite-zils-v3",
+  "created_at": "2026-11-11T13:44:07.000Z",
+  "updated_at": "2026-11-11T13:44:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1719880230,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

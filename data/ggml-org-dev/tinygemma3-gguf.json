@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "ggml-org-dev/tinygemma3-GGUF",
+  "slug": "ggml-org-dev-tinygemma3-gguf",
+  "author": "ggml-org-dev",
+  "url": "https://huggingface.co/ggml-org-dev/tinygemma3-GGUF",
+  "created_at": "2026-11-11T15:36:19.000Z",
+  "updated_at": "2026-11-11T15:36:50.000Z",
+  "license": "wtfpl",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:ngxson/tinygemma3_cifar",
+    "base_model:quantized:ngxson/tinygemma3_cifar",
+    "license:wtfpl",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 38289536,
+  "parameters_human": "38.3M",
+  "storage_bytes": 48266624,
+  "storage_human": "48 MB",
+  "base_model": "ngxson/tinygemma3_cifar",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

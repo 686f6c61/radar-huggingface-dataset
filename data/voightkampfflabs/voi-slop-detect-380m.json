@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "VoightKampffLabs/voi-slop-detect-380M",
+  "slug": "voightkampfflabs-voi-slop-detect-380m",
+  "author": "VoightKampffLabs",
+  "url": "https://huggingface.co/VoightKampffLabs/voi-slop-detect-380M",
+  "created_at": "2026-11-11T15:40:00.000Z",
+  "updated_at": "2026-11-11T15:46:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "ultrabert",
+    "text-classification",
+    "ai-text-detection",
+    "ai-generated-text-detection",
+    "ai-edited-text",
+    "custom_code",
+    "en",
+    "base_model:dmis-lab/UltraBERT-380M",
+    "base_model:finetune:dmis-lab/UltraBERT-380M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 377538561,
+  "parameters_human": "377.5M",
+  "storage_bytes": 3467106788,
+  "storage_human": "3.5 GB",
+  "base_model": "dmis-lab/UltraBERT-380M",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

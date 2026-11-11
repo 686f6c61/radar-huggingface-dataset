@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "baniguru/baniguru_fast_conformer_205m_v1",
+  "slug": "baniguru-baniguru_fast_conformer_205m_v1",
+  "author": "baniguru",
+  "url": "https://huggingface.co/baniguru/baniguru_fast_conformer_205m_v1",
+  "created_at": "2026-11-09T19:10:55.000Z",
+  "updated_at": "2026-11-09T19:37:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nemo",
+  "languages": [
+    "pa"
+  ],
+  "tags": [
+    "nemo",
+    "punjabi",
+    "gurbani",
+    "transcribe",
+    "pa",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 823316480,
+  "storage_human": "823 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

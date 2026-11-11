@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "NihalGazi/Trashformer-42M",
+  "slug": "nihalgazi-trashformer-42m",
+  "author": "NihalGazi",
+  "url": "https://huggingface.co/NihalGazi/Trashformer-42M",
+  "created_at": "2026-11-11T16:40:54.000Z",
+  "updated_at": "2026-11-11T16:48:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "trashformer",
+    "text-generation",
+    "slm",
+    "trash-talk",
+    "h200",
+    "webgpu",
+    "transformer-from-scratch",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:OpenAssistant/oasst1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 62232960,
+  "parameters_human": "62.2M",
+  "storage_bytes": 648542627,
+  "storage_human": "649 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

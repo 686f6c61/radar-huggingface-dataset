@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "gsmlg/embeddinggemma-2",
+  "slug": "gsmlg-embeddinggemma-2",
+  "author": "gsmlg",
+  "url": "https://huggingface.co/gsmlg/embeddinggemma-2",
+  "created_at": "2026-11-11T15:24:09.000Z",
+  "updated_at": "2026-11-11T15:26:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "onnx",
+    "embedding_gemma2",
+    "embedding",
+    "feature-extraction",
+    "sentence-similarity",
+    "text-embeddings-inference",
+    "multilingual",
+    "base_model:google/embeddinggemma-2",
+    "base_model:quantized:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2310059481,
+  "storage_human": "2.3 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

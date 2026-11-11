@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "n24q02m/fr-multi-qa-MiniLM-L6-cos-v1",
+  "slug": "n24q02m-fr-multi-qa-minilm-l6-cos-v1",
+  "author": "n24q02m",
+  "url": "https://huggingface.co/n24q02m/fr-multi-qa-MiniLM-L6-cos-v1",
+  "created_at": "2026-11-11T13:16:59.000Z",
+  "updated_at": "2026-11-11T13:17:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "bert",
+    "quantized",
+    "feature-extraction",
+    "base_model:sentence-transformers/multi-qa-MiniLM-L6-cos-v1",
+    "base_model:quantized:sentence-transformers/multi-qa-MiniLM-L6-cos-v1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52300131,
+  "storage_human": "52 MB",
+  "base_model": "sentence-transformers/multi-qa-MiniLM-L6-cos-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

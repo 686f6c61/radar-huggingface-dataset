@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "SD-Next/MiniMax-H3-Image-SDNQ-uint4-svd-hadamard-dynamic",
+  "slug": "sd-next-minimax-h3-image-sdnq-uint4-svd-hadamard-dynamic",
+  "author": "SD-Next",
+  "url": "https://huggingface.co/SD-Next/MiniMax-H3-Image-SDNQ-uint4-svd-hadamard-dynamic",
+  "created_at": "2026-11-11T01:27:31.000Z",
+  "updated_at": "2026-11-11T02:26:26.000Z",
+  "license": "minimax-h3-image-community-license-agreement",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "image-to-image",
+    "image-editing",
+    "image-generation",
+    "minimax-h3",
+    "sdnq",
+    "quantization",
+    "uint4",
+    "en",
+    "base_model:MiniMaxAI/MiniMax-H3-Image",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3-Image",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 17831443392,
+  "parameters_human": "17.83B",
+  "storage_bytes": 43858568208,
+  "storage_human": "43.9 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3-Image",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

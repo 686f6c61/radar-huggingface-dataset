@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Artificial-llama3_1_8B_instruct-GGUF",
+  "slug": "mradermacher-artificial-llama3_1_8b_instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Artificial-llama3_1_8B_instruct-GGUF",
+  "created_at": "2025-03-01T06:51:36.000Z",
+  "updated_at": "2026-11-11T15:46:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "人工智能领域语言模型",
+    "机器学习领域语言模型",
+    "en",
+    "dataset:BAAI/IndustryInstruction_Artificial-Intelligence",
+    "dataset:BAAI/IndustryInstruction",
+    "base_model:XiaofengAlg/Artificial-llama3_1_8B_instruct",
+    "base_model:quantized:XiaofengAlg/Artificial-llama3_1_8B_instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 343,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820241920,
+  "storage_human": "71.8 GB",
+  "base_model": "XiaofengAlg/Artificial-llama3_1_8B_instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

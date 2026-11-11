@@ -1,0 +1,157 @@
+{
+  "schema": 1,
+  "id": "JoshHughes/wallowa-weather-beam",
+  "slug": "joshhughes-wallowa-weather-beam",
+  "author": "JoshHughes",
+  "url": "https://huggingface.co/JoshHughes/wallowa-weather-beam",
+  "created_at": "2026-11-11T18:04:02.000Z",
+  "updated_at": "2026-11-11T18:04:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "weather",
+    "nowcasting",
+    "thunderstorm",
+    "lightning",
+    "hail",
+    "flash-flood",
+    "dry-lightning",
+    "wildfire",
+    "radar-gaps",
+    "satellite",
+    "goes",
+    "glm",
+    "mrms",
+    "hrrr",
+    "probabilistic-forecasting",
+    "earth-science",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26373550,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Lightning within ~15 km, 0-30 min (3 km cells)",
+      "dataset": "BLIND A (84 scored held-out days, 2021-2026, radar as is)",
+      "metric": "ROC area",
+      "value": 0.979
+    },
+    {
+      "task": "Lightning within ~15 km, 0-30 min (3 km cells)",
+      "dataset": "BLIND A (84 scored held-out days, 2021-2026, radar as is)",
+      "metric": "Average precision (base rate 0.022)",
+      "value": 0.659
+    },
+    {
+      "task": "Lightning within ~15 km, 0-30 min (3 km cells)",
+      "dataset": "BLIND A (84 scored held-out days, 2021-2026, radar as is)",
+      "metric": "Brier skill vs climatology (raw chance)",
+      "value": 0.138
+    },
+    {
+      "task": "Lightning within ~15 km, 0-30 min (3 km cells)",
+      "dataset": "BLIND A (84 scored held-out days, 2021-2026, radar as is)",
+      "metric": "Fractions skill score at 27 km",
+      "value": 0.71
+    },
+    {
+      "task": "Strong storm core (>= 55 dBZ) within ~15 km, 0-30 min",
+      "dataset": "BLIND A (84 scored held-out days, 2021-2026, radar as is)",
+      "metric": "ROC area",
+      "value": 0.977
+    },
+    {
+      "task": "Strong storm core (>= 55 dBZ) within ~15 km, 0-30 min",
+      "dataset": "BLIND A (84 scored held-out days, 2021-2026, radar as is)",
+      "metric": "Average precision (base rate 0.003)",
+      "value": 0.405
+    },
+    {
+      "task": "Strong storm core (>= 55 dBZ) within ~15 km, 0-30 min",
+      "dataset": "BLIND A (84 scored held-out days, 2021-2026, radar as is)",
+      "metric": "Brier skill vs climatology (raw chance)",
+      "value": -0.292
+    },
+    {
+      "task": "Cloudburst (>= 12.5 mm in 15 min) within ~15 km, 0-30 min",
+      "dataset": "BLIND A (84 scored held-out days, 2021-2026, radar as is)",
+      "metric": "ROC area",
+      "value": 0.979
+    },
+    {
+      "task": "Cloudburst (>= 12.5 mm in 15 min) within ~15 km, 0-30 min",
+      "dataset": "BLIND A (84 scored held-out days, 2021-2026, radar as is)",
+      "metric": "Average precision (base rate 0.004)",
+      "value": 0.398
+    },
+    {
+      "task": "Cloudburst (>= 12.5 mm in 15 min) within ~15 km, 0-30 min",
+      "dataset": "BLIND A (84 scored held-out days, 2021-2026, radar as is)",
+      "metric": "Brier skill vs climatology (raw chance)",
+      "value": -0.23
+    },
+    {
+      "task": "Hail within ~15 km, 0-30 min (Brier skill of the shown chance is for 0-90 min)",
+      "dataset": "BLIND A (84 scored held-out days, 2021-2026, radar as is)",
+      "metric": "ROC area",
+      "value": 0.916
+    },
+    {
+      "task": "Hail within ~15 km, 0-30 min (Brier skill of the shown chance is for 0-90 min)",
+      "dataset": "BLIND A (84 scored held-out days, 2021-2026, radar as is)",
+      "metric": "Average precision (base rate 0.0003)",
+      "value": 0.141
+    },
+    {
+      "task": "Hail within ~15 km, 0-30 min (Brier skill of the shown chance is for 0-90 min)",
+      "dataset": "BLIND A (84 scored held-out days, 2021-2026, radar as is)",
+      "metric": "Brier skill vs climatology (raw chance)",
+      "value": -0.126
+    },
+    {
+      "task": "Hail within ~15 km, 0-30 min (Brier skill of the shown chance is for 0-90 min)",
+      "dataset": "BLIND A (84 scored held-out days, 2021-2026, radar as is)",
+      "metric": "Brier skill, 0-90 min chance as shown (frozen remap)",
+      "value": 0.051
+    },
+    {
+      "task": "Lightning within ~15 km, 0-30 min, no radar input",
+      "dataset": "BLIND B (139 days, Apr-Oct 2019, radar hidden)",
+      "metric": "ROC area",
+      "value": 0.974
+    },
+    {
+      "task": "Lightning within ~15 km, 0-30 min, no radar input",
+      "dataset": "BLIND B (139 days, Apr-Oct 2019, radar hidden)",
+      "metric": "Average precision (base rate 0.015)",
+      "value": 0.614
+    },
+    {
+      "task": "Lightning within ~15 km, 0-30 min, no radar input",
+      "dataset": "BLIND B (139 days, Apr-Oct 2019, radar hidden)",
+      "metric": "Brier skill vs climatology (raw chance)",
+      "value": 0.085
+    }
+  ],
+  "sources": []
+}

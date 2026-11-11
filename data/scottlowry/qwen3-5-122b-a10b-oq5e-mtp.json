@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "scottlowry/Qwen3.5-122B-A10B-oQ5e-mtp",
+  "slug": "scottlowry-qwen3-5-122b-a10b-oq5e-mtp",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/Qwen3.5-122B-A10B-oQ5e-mtp",
+  "created_at": "2026-10-12T01:41:28.000Z",
+  "updated_at": "2026-11-11T15:40:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "quantized",
+    "mtp",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 125086497008,
+  "parameters_human": "125.09B",
+  "storage_bytes": 176832819682,
+  "storage_human": "176.8 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

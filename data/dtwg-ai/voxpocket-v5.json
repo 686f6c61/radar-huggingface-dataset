@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "dtwg-ai/VoxPocket-v5",
+  "slug": "dtwg-ai-voxpocket-v5",
+  "author": "dtwg-ai",
+  "url": "https://huggingface.co/dtwg-ai/VoxPocket-v5",
+  "created_at": "2026-11-11T03:18:00.000Z",
+  "updated_at": "2026-11-11T04:30:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "voxcpm",
+  "languages": [
+    "km",
+    "en"
+  ],
+  "tags": [
+    "voxcpm",
+    "safetensors",
+    "khmer",
+    "tts",
+    "text-to-speech",
+    "voice-cloning",
+    "code-mixing",
+    "emotion",
+    "km",
+    "en",
+    "dataset:INGMUYLEANG/voxpocket-khmer-tts-v4",
+    "base_model:muyleanging/VoxPocket-v4",
+    "base_model:finetune:muyleanging/VoxPocket-v4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 801729856,
+  "parameters_human": "801.7M",
+  "storage_bytes": 13174092211,
+  "storage_human": "13.2 GB",
+  "base_model": "INGMUYLEANG/VoxPocket-v4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

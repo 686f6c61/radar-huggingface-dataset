@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tahamajs/tinyllama-1.1b-block-transformer-hiba-wikitext2",
+  "slug": "tahamajs-tinyllama-1-1b-block-transformer-hiba-wikitext2",
+  "author": "tahamajs",
+  "url": "https://huggingface.co/tahamajs/tinyllama-1.1b-block-transformer-hiba-wikitext2",
+  "created_at": "2026-11-11T12:55:45.000Z",
+  "updated_at": "2026-11-11T13:15:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "neuralops",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neuralops",
+    "llama",
+    "tinyllama",
+    "attention-zoo",
+    "attention-surgery",
+    "subquadratic-attention",
+    "knowledge-distillation",
+    "wikitext-2",
+    "adaptive",
+    "block-transformer-hiba",
+    "text-generation",
+    "en",
+    "dataset:Salesforce/wikitext",
+    "base_model:TinyLlama/TinyLlama_v1.1",
+    "base_model:finetune:TinyLlama/TinyLlama_v1.1",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 325896304,
+  "storage_human": "326 MB",
+  "base_model": "TinyLlama/TinyLlama_v1.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Causal Language Modeling",
+      "dataset": "WikiText-2 (wikitext-2-raw-v1, validation)",
+      "metric": "WikiText-2 (wikitext-2-raw-v1, validation) Perplexity",
+      "value": 22.01
+    }
+  ],
+  "sources": []
+}

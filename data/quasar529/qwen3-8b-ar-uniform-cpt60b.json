@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "quasar529/qwen3-8b-ar-uniform-cpt60b",
+  "slug": "quasar529-qwen3-8b-ar-uniform-cpt60b",
+  "author": "quasar529",
+  "url": "https://huggingface.co/quasar529/qwen3-8b-ar-uniform-cpt60b",
+  "created_at": "2026-11-11T07:24:51.000Z",
+  "updated_at": "2026-11-11T07:46:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "discrete-diffusion",
+    "uniform-diffusion",
+    "continued-pretraining",
+    "research",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 131073437130,
+  "storage_human": "131.1 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

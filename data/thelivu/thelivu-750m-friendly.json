@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Thelivu/Thelivu-750M-Friendly",
+  "slug": "thelivu-thelivu-750m-friendly",
+  "author": "Thelivu",
+  "url": "https://huggingface.co/Thelivu/Thelivu-750M-Friendly",
+  "created_at": "2026-10-30T17:35:06.000Z",
+  "updated_at": "2026-11-11T17:22:51.000Z",
+  "license": "thelivu-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lora",
+    "adapter",
+    "text-rewriting",
+    "tone",
+    "friendly",
+    "encoder-decoder",
+    "onnx",
+    "text-generation",
+    "en",
+    "base_model:Thelivu/Thelivu-750M",
+    "base_model:adapter:Thelivu/Thelivu-750M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 363,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 440714148,
+  "storage_human": "441 MB",
+  "base_model": "Thelivu/Thelivu-750M",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

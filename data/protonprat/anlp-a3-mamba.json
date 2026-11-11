@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "ProtonPrat/anlp-a3-mamba",
+  "slug": "protonprat-anlp-a3-mamba",
+  "author": "ProtonPrat",
+  "url": "https://huggingface.co/ProtonPrat/anlp-a3-mamba",
+  "created_at": "2026-11-11T19:57:32.000Z",
+  "updated_at": "2026-11-11T19:57:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "cipher-decryption",
+    "mamba",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3527963,
+  "parameters_human": "3.5M",
+  "storage_bytes": 14119772,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

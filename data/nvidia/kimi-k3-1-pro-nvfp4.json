@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nvidia/Kimi-K3.1-Pro-NVFP4",
+  "slug": "nvidia-kimi-k3-1-pro-nvfp4",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/Kimi-K3.1-Pro-NVFP4",
+  "created_at": "2026-11-11T00:57:46.000Z",
+  "updated_at": "2026-11-11T06:16:27.000Z",
+  "license": "nvidia-open-model-agreement",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "Model Optimizer",
+  "languages": [],
+  "tags": [
+    "Model Optimizer",
+    "safetensors",
+    "kimi_k31",
+    "nvidia",
+    "ModelOpt",
+    "Kimi-K3.1-Pro",
+    "quantized",
+    "NVFP4",
+    "nvfp4",
+    "image-text-to-text",
+    "custom_code",
+    "base_model:moonshotai/Kimi-K3.1-Pro",
+    "base_model:quantized:moonshotai/Kimi-K3.1-Pro",
+    "license:other",
+    "8-bit",
+    "modelopt_mixed",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1418739948288,
+  "parameters_human": "1418.74B",
+  "storage_bytes": 1605246062422,
+  "storage_human": "1605.2 GB",
+  "base_model": "moonshotai/Kimi-K3.1-Pro",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
+    },
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …"
+    },
+    {
+      "title": "NVIDIA",
+      "url": "https://www.nvidia.fr/default.htm",
+      "snippet": "Explorez les dernières innovations et produits NVIDIA, leader en technologies graphiques et d'intelligence artificielle."
+    },
+    {
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Nvidia Corporation[a] (/ ɛnˈvɪdiə / en-VID-ee-ə) is an American multinational technology company headquartered in Santa Clara, …"
+    }
+  ]
+}

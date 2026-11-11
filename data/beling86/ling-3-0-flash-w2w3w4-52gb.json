@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Beling86/Ling-3.0-flash-W2W3W4-52GB",
+  "slug": "beling86-ling-3-0-flash-w2w3w4-52gb",
+  "author": "Beling86",
+  "url": "https://huggingface.co/Beling86/Ling-3.0-flash-W2W3W4-52GB",
+  "created_at": "2026-11-11T16:56:34.000Z",
+  "updated_at": "2026-11-11T17:10:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "auto-round",
+    "mixed-precision",
+    "quantized",
+    "moe",
+    "4bit",
+    "3bit",
+    "2bit",
+    "8bit",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12808612576,
+  "parameters_human": "12.81B",
+  "storage_bytes": 47657208421,
+  "storage_human": "47.7 GB",
+  "base_model": "ling_flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "herald-dictation/diar_streaming_sortformer_4spk-v2.1-gguf",
+  "slug": "herald-dictation-diar_streaming_sortformer_4spk-v2-1-gguf",
+  "author": "herald-dictation",
+  "url": "https://huggingface.co/herald-dictation/diar_streaming_sortformer_4spk-v2.1-gguf",
+  "created_at": "2026-11-11T13:19:01.000Z",
+  "updated_at": "2026-11-11T13:19:03.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "transcribe.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "herald",
+    "voice-activity-detection",
+    "en",
+    "base_model:nvidia/diar_streaming_sortformer_4spk-v2.1",
+    "base_model:quantized:nvidia/diar_streaming_sortformer_4spk-v2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117711368,
+  "parameters_human": "117.7M",
+  "storage_bytes": 139310336,
+  "storage_human": "139 MB",
+  "base_model": "nvidia/diar_streaming_sortformer_4spk-v2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

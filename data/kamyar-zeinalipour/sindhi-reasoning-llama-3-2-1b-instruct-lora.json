@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Kamyar-zeinalipour/Sindhi-Reasoning-Llama-3.2-1B-Instruct-LoRA",
+  "slug": "kamyar-zeinalipour-sindhi-reasoning-llama-3-2-1b-instruct-lora",
+  "author": "Kamyar-zeinalipour",
+  "url": "https://huggingface.co/Kamyar-zeinalipour/Sindhi-Reasoning-Llama-3.2-1B-Instruct-LoRA",
+  "created_at": "2026-11-11T13:08:55.000Z",
+  "updated_at": "2026-11-11T13:09:18.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "sd"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "sindhi",
+    "reasoning",
+    "low-resource-languages",
+    "instruction-tuning",
+    "lora",
+    "text-generation",
+    "sd",
+    "dataset:Kamyar-zeinalipour/sindi_reasoning",
+    "base_model:meta-llama/Llama-3.2-1B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.2-1B-Instruct",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1174240128,
+  "storage_human": "1.2 GB",
+  "base_model": "meta-llama/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

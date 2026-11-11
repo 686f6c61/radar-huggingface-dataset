@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/EsotericSage-12B-GGUF",
+  "slug": "mradermacher-esotericsage-12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/EsotericSage-12B-GGUF",
+  "created_at": "2025-05-23T06:34:42.000Z",
+  "updated_at": "2026-11-11T20:15:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "nearswap",
+    "en",
+    "ja",
+    "base_model:yamatazen/EsotericSage-12B",
+    "base_model:quantized:yamatazen/EsotericSage-12B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 4,
+  "downloads_30d": 162,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692310816,
+  "storage_human": "84.7 GB",
+  "base_model": "yamatazen/EsotericSage-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

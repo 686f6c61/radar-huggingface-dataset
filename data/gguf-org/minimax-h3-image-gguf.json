@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "gguf-org/minimax-h3-image-gguf",
+  "slug": "gguf-org-minimax-h3-image-gguf",
+  "author": "gguf-org",
+  "url": "https://huggingface.co/gguf-org/minimax-h3-image-gguf",
+  "created_at": "2026-11-10T22:08:21.000Z",
+  "updated_at": "2026-11-11T17:03:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:MiniMaxAI/MiniMax-H3-Image",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3-Image",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 20113670232,
+  "parameters_human": "20.11B",
+  "storage_bytes": 25654250908,
+  "storage_human": "25.7 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3-Image",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "runwayml/praxis-1-yam-nvfp4",
+  "slug": "runwayml-praxis-1-yam-nvfp4",
+  "author": "runwayml",
+  "url": "https://huggingface.co/runwayml/praxis-1-yam-nvfp4",
+  "created_at": "2026-11-10T16:59:51.000Z",
+  "updated_at": "2026-11-11T13:57:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "praxis",
+  "languages": [],
+  "tags": [
+    "praxis",
+    "safetensors",
+    "robotics",
+    "bimanual",
+    "yam",
+    "video-diffusion",
+    "action-chunking",
+    "nvfp4",
+    "quantization-aware-training",
+    "praxis-1",
+    "base_model:runwayml/praxis-1-yam",
+    "base_model:finetune:runwayml/praxis-1-yam",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 27202463488,
+  "parameters_human": "27.20B",
+  "storage_bytes": 54405000048,
+  "storage_human": "54.4 GB",
+  "base_model": "runwayml/praxis-1-yam",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Runway",
+      "url": "https://app.runwayml.com/",
+      "snippet": "Everything you need to make anything you want."
+    },
+    {
+      "title": "Runway",
+      "url": "https://help.runwayml.com/hc/en-us",
+      "snippet": "Runway Agent Describe what you need. Agent handles the rest."
+    },
+    {
+      "title": "AI Video, Image and Audio Model APIs | Runway",
+      "url": "https://dev.runway.com/models/catalog",
+      "snippet": "runwayml/ Aleph 2.0 Runway's flagship in-context video editing model with keyframe-guided control."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ggml-org-dev/tinylaya-for-testing-gguf",
+  "slug": "ggml-org-dev-tinylaya-for-testing-gguf",
+  "author": "ggml-org-dev",
+  "url": "https://huggingface.co/ggml-org-dev/tinylaya-for-testing-gguf",
+  "created_at": "2026-11-11T15:36:53.000Z",
+  "updated_at": "2026-11-11T15:36:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "testing",
+    "base_model:ggml-org/tinylaya-for-testing",
+    "base_model:quantized:ggml-org/tinylaya-for-testing",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "decision-model",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 89744385,
+  "parameters_human": "89.7M",
+  "storage_bytes": 97200288,
+  "storage_human": "97 MB",
+  "base_model": "ggml-org/tinylaya-for-testing",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "jgalego/shem-rv32im",
+  "slug": "jgalego-shem-rv32im",
+  "author": "jgalego",
+  "url": "https://huggingface.co/jgalego/shem-rv32im",
+  "created_at": "2026-11-11T11:30:02.000Z",
+  "updated_at": "2026-11-11T18:01:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "shem",
+  "languages": [],
+  "tags": [
+    "shem",
+    "safetensors",
+    "riscv",
+    "rv32im",
+    "compiled",
+    "neural-cpu",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 77744,
+  "parameters_human": "77744",
+  "storage_bytes": 623256,
+  "storage_human": "623256 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

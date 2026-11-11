@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "abel-lab/Simons-178M",
+  "slug": "abel-lab-simons-178m",
+  "author": "abel-lab",
+  "url": "https://huggingface.co/abel-lab/Simons-178M",
+  "created_at": "2026-10-29T11:10:54.000Z",
+  "updated_at": "2026-11-11T18:15:38.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "simons",
+  "languages": [],
+  "tags": [
+    "simons",
+    "safetensors",
+    "time-series",
+    "forecasting",
+    "probabilistic-forecasting",
+    "foundation-model",
+    "covariates",
+    "pretrained",
+    "pytorch",
+    "time-series-forecasting",
+    "dataset:abel-lab/Simons-Pretrain",
+    "license:openmdw-1.1",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 251,
+  "trending_score": 0,
+  "parameters": 177746208,
+  "parameters_human": "177.7M",
+  "storage_bytes": 712840723,
+  "storage_human": "713 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "GIFT-Eval",
+      "metric": "MASE (relative to Seasonal Naive)",
+      "value": 0.6754
+    },
+    {
+      "task": null,
+      "dataset": "GIFT-Eval",
+      "metric": "CRPS (relative to Seasonal Naive)",
+      "value": 0.4609
+    },
+    {
+      "task": null,
+      "dataset": "fev-bench",
+      "metric": "SQL skill score (%, relative to Seasonal Naive)",
+      "value": 48.57
+    },
+    {
+      "task": null,
+      "dataset": "fev-bench",
+      "metric": "MASE skill score (%, relative to Seasonal Naive)",
+      "value": 37.43
+    }
+  ],
+  "sources": []
+}

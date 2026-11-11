@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "hancheng-ai/HyperFlow-H3-Flash-FL2VA-MLX-Serve-4bit",
+  "slug": "hancheng-ai-hyperflow-h3-flash-fl2va-mlx-serve-4bit",
+  "author": "hancheng-ai",
+  "url": "https://huggingface.co/hancheng-ai/HyperFlow-H3-Flash-FL2VA-MLX-Serve-4bit",
+  "created_at": "2026-11-11T17:15:42.000Z",
+  "updated_at": "2026-11-11T17:16:46.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-video",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "minimax_h3",
+    "mlx-serve",
+    "minimax-h3",
+    "hyperflow",
+    "text-to-video",
+    "image-to-video",
+    "audio-video-generation",
+    "base_model:VideoRebirthAI/hyperflow-h3-flash",
+    "base_model:quantized:VideoRebirthAI/hyperflow-h3-flash",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29540334675,
+  "storage_human": "29.5 GB",
+  "base_model": "VideoRebirthAI/hyperflow-h3-flash",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flash Gordon - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Flash_Gordon",
+      "snippet": "Flash Gordon and Dale Arden meet Ming the Merciless for the first time in the comic serial \"On the Planet Mongo\" (1934), art by Alex …"
+    },
+    {
+      "title": "Flash Gordon (film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Flash_Gordon_(film)",
+      "snippet": "The film follows star football quarterback Flash Gordon (Jones) and his allies Dale Arden (Anderson) and Hans Zarkov (Topol) as …"
+    },
+    {
+      "title": "Flash Gordon (1980) - IMDb",
+      "url": "https://www.imdb.com/title/tt0080745/",
+      "snippet": "Dec 5, 1980 · Flash Gordon: Directed by Mike Hodges. With Sam J. Jones, Melody Anderson, Max von Sydow, Topol. Football …"
+    },
+    {
+      "title": "Flash Gordon — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Flash_Gordon",
+      "snippet": "Flash Gordon est un comic strip américain de science-fiction créé le 7 janvier 1934 par Alex Raymond pour King Features Syndicate. …"
+    },
+    {
+      "title": "Flash Gordon | Comics Kingdom",
+      "url": "https://comicskingdom.com/flash-gordon",
+      "snippet": "Sep 11, 2013 · Originated in 1934 by legendary comic-strip artist Alex Raymond, Flash Gordon has set the standard for science …"
+    }
+  ]
+}

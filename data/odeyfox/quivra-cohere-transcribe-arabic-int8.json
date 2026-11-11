@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Odeyfox/quivra-cohere-transcribe-arabic-int8",
+  "slug": "odeyfox-quivra-cohere-transcribe-arabic-int8",
+  "author": "Odeyfox",
+  "url": "https://huggingface.co/Odeyfox/quivra-cohere-transcribe-arabic-int8",
+  "created_at": "2026-11-11T14:54:07.000Z",
+  "updated_at": "2026-11-11T14:54:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "arabic",
+    "code-switching",
+    "int8",
+    "automatic-speech-recognition",
+    "ar",
+    "en",
+    "base_model:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "base_model:quantized:CohereLabs/cohere-transcribe-arabic-07-2026",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2784280050,
+  "storage_human": "2.8 GB",
+  "base_model": "CohereLabs/cohere-transcribe-arabic-07-2026",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

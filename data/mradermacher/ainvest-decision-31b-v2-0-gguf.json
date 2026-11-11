@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ainvest-Decision-31b-v2.0-GGUF",
+  "slug": "mradermacher-ainvest-decision-31b-v2-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ainvest-Decision-31b-v2.0-GGUF",
+  "created_at": "2026-11-11T16:13:51.000Z",
+  "updated_at": "2026-11-11T16:17:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 29679468992,
+  "storage_human": "29.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "svntax-dev/pixel_spritesheet_4walk_combat_32x48_v2",
+  "slug": "svntax-dev-pixel_spritesheet_4walk_combat_32x48_v2",
+  "author": "svntax-dev",
+  "url": "https://huggingface.co/svntax-dev/pixel_spritesheet_4walk_combat_32x48_v2",
+  "created_at": "2026-11-11T14:01:06.000Z",
+  "updated_at": "2026-11-11T14:10:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Boogu/Boogu-Image-0.1-Edit",
+    "base_model:adapter:Boogu/Boogu-Image-0.1-Edit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 304796264,
+  "storage_human": "305 MB",
+  "base_model": "Boogu/Boogu-Image-0.1-Edit",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

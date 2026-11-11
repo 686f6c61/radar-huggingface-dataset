@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "oggata/mesa-world-model-sharp-v01",
+  "slug": "oggata-mesa-world-model-sharp-v01",
+  "author": "oggata",
+  "url": "https://huggingface.co/oggata/mesa-world-model-sharp-v01",
+  "created_at": "2026-11-11T04:22:13.000Z",
+  "updated_at": "2026-11-11T06:34:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "world-model",
+    "dino-wm",
+    "dinov2",
+    "simulation",
+    "video-prediction",
+    "model-based-planning",
+    "inverse-dynamics",
+    "multi-agent",
+    "other",
+    "en",
+    "ja",
+    "arxiv:2411.04983",
+    "arxiv:2304.07193",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98313236,
+  "storage_human": "98 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "sammyliu/mixit-fuss-tflocoformer-m8-sparse16-ft20k-seed3",
+  "slug": "sammyliu-mixit-fuss-tflocoformer-m8-sparse16-ft20k-seed3",
+  "author": "sammyliu",
+  "url": "https://huggingface.co/sammyliu/mixit-fuss-tflocoformer-m8-sparse16-ft20k-seed3",
+  "created_at": "2026-11-11T20:01:50.000Z",
+  "updated_at": "2026-11-11T20:01:54.000Z",
+  "license": "public-access-no-weight-license-grant",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "audio",
+    "source-separation",
+    "mixit",
+    "tf-locoformer",
+    "pytorch",
+    "en",
+    "dataset:scaleinvariant/fuss-parquet",
+    "arxiv:2006.12701",
+    "arxiv:2106.00847",
+    "base_model:sammyliu/mixit-fuss-tflocoformer-m8-plain-seed3",
+    "base_model:finetune:sammyliu/mixit-fuss-tflocoformer-m8-plain-seed3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1293568,
+  "parameters_human": "1.3M",
+  "storage_bytes": 31106448,
+  "storage_human": "31 MB",
+  "base_model": "sammyliu/mixit-fuss-tflocoformer-m8-plain-seed3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

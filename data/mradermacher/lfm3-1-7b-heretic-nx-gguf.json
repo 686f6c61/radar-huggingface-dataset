@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM3-1.7B-Heretic-NX-GGUF",
+  "slug": "mradermacher-lfm3-1-7b-heretic-nx-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM3-1.7B-Heretic-NX-GGUF",
+  "created_at": "2026-11-11T17:07:42.000Z",
+  "updated_at": "2026-11-11T17:28:51.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "lfm3",
+    "heretic-nx",
+    "abliterated",
+    "bf16",
+    "en",
+    "fr",
+    "base_model:0xzknw/LFM3-1.7B-Heretic-NX",
+    "base_model:quantized:0xzknw/LFM3-1.7B-Heretic-NX",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 15885900672,
+  "storage_human": "15.9 GB",
+  "base_model": "0xzknw/LFM3-1.7B-Heretic-NX",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

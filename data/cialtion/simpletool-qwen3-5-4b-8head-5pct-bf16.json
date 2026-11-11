@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Cialtion/SimpleTool-Qwen3.5-4B-8Head-5pct-BF16",
+  "slug": "cialtion-simpletool-qwen3-5-4b-8head-5pct-bf16",
+  "author": "Cialtion",
+  "url": "https://huggingface.co/Cialtion/SimpleTool-Qwen3.5-4B-8Head-5pct-BF16",
+  "created_at": "2026-11-11T19:18:08.000Z",
+  "updated_at": "2026-11-11T19:26:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "simpletool",
+    "tool-calling",
+    "multi-head",
+    "text-generation",
+    "conversational",
+    "zh",
+    "en",
+    "dataset:Cialtion/SimpleTool-Diagnostic-800",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339820638,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

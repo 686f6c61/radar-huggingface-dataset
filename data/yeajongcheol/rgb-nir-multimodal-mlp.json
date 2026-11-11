@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "yeajongcheol/rgb-nir-multimodal-mlp",
+  "slug": "yeajongcheol-rgb-nir-multimodal-mlp",
+  "author": "yeajongcheol",
+  "url": "https://huggingface.co/yeajongcheol/rgb-nir-multimodal-mlp",
+  "created_at": "2026-10-26T08:32:53.000Z",
+  "updated_at": "2026-11-11T18:15:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "pytorch",
+    "multimodal",
+    "image-classification",
+    "near-infrared",
+    "custom-code",
+    "ko",
+    "base_model:do1ng/yolo11m-cnn-blackbox",
+    "base_model:finetune:do1ng/yolo11m-cnn-blackbox",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 55,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140811,
+  "storage_human": "140811 B",
+  "base_model": "do1ng/yolo11m-cnn-blackbox",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

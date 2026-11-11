@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Kamyar-zeinalipour/MultiHint-9K-Qwen2.5-14B",
+  "slug": "kamyar-zeinalipour-multihint-9k-qwen2-5-14b",
+  "author": "Kamyar-zeinalipour",
+  "url": "https://huggingface.co/Kamyar-zeinalipour/MultiHint-9K-Qwen2.5-14B",
+  "created_at": "2026-11-11T15:21:13.000Z",
+  "updated_at": "2026-11-11T15:23:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "it",
+    "fa"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "education",
+    "hint-generation",
+    "socratic",
+    "multilingual",
+    "lora",
+    "text-generation",
+    "en",
+    "it",
+    "fa",
+    "dataset:Kamyar-zeinalipour/MultiHint-9K",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-14B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3409735280,
+  "storage_human": "3.4 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

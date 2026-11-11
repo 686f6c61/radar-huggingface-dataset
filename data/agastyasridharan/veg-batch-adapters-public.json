@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "agastyasridharan/veg-batch-adapters-public",
+  "slug": "agastyasridharan-veg-batch-adapters-public",
+  "author": "agastyasridharan",
+  "url": "https://huggingface.co/agastyasridharan/veg-batch-adapters-public",
+  "created_at": "2026-11-11T14:50:28.000Z",
+  "updated_at": "2026-11-11T14:57:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "context-distillation",
+    "persona",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3083040768,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

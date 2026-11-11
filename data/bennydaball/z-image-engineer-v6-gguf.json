@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "BennyDaBall/Z-Image-Engineer-V6-GGUF",
+  "slug": "bennydaball-z-image-engineer-v6-gguf",
+  "author": "BennyDaBall",
+  "url": "https://huggingface.co/BennyDaBall/Z-Image-Engineer-V6-GGUF",
+  "created_at": "2026-06-06T05:56:45.000Z",
+  "updated_at": "2026-11-11T20:03:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "prompt-engineering",
+    "image-generation",
+    "z-image",
+    "z-image-turbo",
+    "qwen3",
+    "text-encoder",
+    "comfyui",
+    "lm-studio",
+    "conversational",
+    "en",
+    "base_model:Tongyi-MAI/Z-Image-Turbo",
+    "base_model:quantized:Tongyi-MAI/Z-Image-Turbo",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 69,
+  "downloads_30d": 8428,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 30375042112,
+  "storage_human": "30.4 GB",
+  "base_model": "Tongyi-MAI/Z-Image-Turbo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

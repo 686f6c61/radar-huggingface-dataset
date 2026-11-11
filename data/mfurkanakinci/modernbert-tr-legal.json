@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mfurkanakinci/modernbert-tr-legal",
+  "slug": "mfurkanakinci-modernbert-tr-legal",
+  "author": "mfurkanakinci",
+  "url": "https://huggingface.co/mfurkanakinci/modernbert-tr-legal",
+  "created_at": "2026-11-11T17:38:52.000Z",
+  "updated_at": "2026-11-11T18:19:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "turkish",
+    "legal",
+    "domain-adaptation",
+    "tr",
+    "base_model:ytu-ce-cosmos/modernbert-tr-base",
+    "base_model:finetune:ytu-ce-cosmos/modernbert-tr-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149378392,
+  "parameters_human": "149.4M",
+  "storage_bytes": 597527672,
+  "storage_human": "598 MB",
+  "base_model": "ytu-ce-cosmos/modernbert-tr-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

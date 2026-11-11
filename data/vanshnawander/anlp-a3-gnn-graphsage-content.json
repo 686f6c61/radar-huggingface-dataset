@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "vanshnawander/anlp-a3-gnn-graphsage-content",
+  "slug": "vanshnawander-anlp-a3-gnn-graphsage-content",
+  "author": "vanshnawander",
+  "url": "https://huggingface.co/vanshnawander/anlp-a3-gnn-graphsage-content",
+  "created_at": "2026-11-11T13:44:15.000Z",
+  "updated_at": "2026-11-11T13:44:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "graph-neural-network",
+    "fake-news-detection",
+    "upfd",
+    "gossipcop",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3711000,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

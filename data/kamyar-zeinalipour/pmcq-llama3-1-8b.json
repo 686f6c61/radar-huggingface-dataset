@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Kamyar-zeinalipour/PMCQ-Llama3.1-8b",
+  "slug": "kamyar-zeinalipour-pmcq-llama3-1-8b",
+  "author": "Kamyar-zeinalipour",
+  "url": "https://huggingface.co/Kamyar-zeinalipour/PMCQ-Llama3.1-8b",
+  "created_at": "2024-09-15T09:48:24.000Z",
+  "updated_at": "2026-11-11T14:54:42.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "persian",
+    "farsi",
+    "multiple-choice-questions",
+    "question-generation",
+    "education",
+    "lora",
+    "text-generation",
+    "conversational",
+    "fa",
+    "dataset:Kamyar-zeinalipour/PersianMCQ-instruct",
+    "dataset:Kamyar-zeinalipour/Persian_MCQ_DB_Llama3",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6581470863,
+  "storage_human": "6.6 GB",
+  "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Kamyar-zeinalipour/ShawarmaChats-Mistral-Small-24B-Instruct-2501-LoRA",
+  "slug": "kamyar-zeinalipour-shawarmachats-mistral-small-24b-instruct-2501-lora",
+  "author": "Kamyar-zeinalipour",
+  "url": "https://huggingface.co/Kamyar-zeinalipour/ShawarmaChats-Mistral-Small-24B-Instruct-2501-LoRA",
+  "created_at": "2026-11-11T13:02:55.000Z",
+  "updated_at": "2026-11-11T13:04:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "shawarmachats",
+    "arabic",
+    "arabic-dialects",
+    "egyptian-arabic",
+    "maghrebi-arabic",
+    "dialogue-generation",
+    "lora",
+    "text-generation",
+    "ar",
+    "dataset:Kamyar-zeinalipour/arabic_multi_dialect_dialogue",
+    "base_model:mistralai/Mistral-Small-24B-Instruct-2501",
+    "base_model:adapter:mistralai/Mistral-Small-24B-Instruct-2501",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3458544072,
+  "storage_human": "3.5 GB",
+  "base_model": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

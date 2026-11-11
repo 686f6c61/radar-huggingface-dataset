@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "garlic-llm/garlic-llm-ps4",
+  "slug": "garlic-llm-garlic-llm-ps4",
+  "author": "garlic-llm",
+  "url": "https://huggingface.co/garlic-llm/garlic-llm-ps4",
+  "created_at": "2026-11-11T13:56:07.000Z",
+  "updated_at": "2026-11-11T17:40:12.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es",
+    "pt",
+    "ru",
+    "it",
+    "fr",
+    "de"
+  ],
+  "tags": [
+    "ps4",
+    "homebrew",
+    "qwen",
+    "text-generation",
+    "text-to-speech",
+    "automatic-speech-recognition",
+    "en",
+    "es",
+    "pt",
+    "ru",
+    "it",
+    "fr",
+    "de",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5662572544,
+  "storage_human": "5.7 GB",
+  "base_model": "Qwen/Qwen3.5-9B, nvidia/parakeet-tdt-0.6b-v3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Garlic - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Garlic",
+      "snippet": "Garlic (Allium sativum) is a species of bulbous flowering plants in the genus Allium. Its close relatives include the onion, shallot, leek, …"
+    },
+    {
+      "title": "11 Proven Health Benefits of Garlic",
+      "url": "https://www.healthline.com/nutrition/11-proven-health-benefits-of-garlic",
+      "snippet": "Jun 15, 2026 · This is a detailed article about garlic and its health benefits. Here are 11 ways that garlic can improve your health, …"
+    },
+    {
+      "title": "What Happens to Your Body When You Eat Garlic Regularly",
+      "url": "https://www.verywellhealth.com/garlic-11750698",
+      "snippet": "May 14, 2026 · Garlic is a nutritious spice with the potential to help blood pressure, immune system function, and heart health. Learn …"
+    },
+    {
+      "title": "Garlic | Culinary Uses, Health Benefits, Allium Sativum | Britannica",
+      "url": "https://www.britannica.com/plant/garlic",
+      "snippet": "Nov 1, 2026 · Garlic, (Allium sativum), perennial plant of the amaryllis family (Amaryllidaceae), grown for its flavourful bulbs. The …"
+    },
+    {
+      "title": "How to grow garlic | RHS Guide",
+      "url": "https://www.rhs.org.uk/vegetables/garlic/grow-your-own",
+      "snippet": "Simply keep weeds at bay and water during prolonged dry spells, and you’ll be harvesting your own garlic from late spring onwards, …"
+    }
+  ]
+}

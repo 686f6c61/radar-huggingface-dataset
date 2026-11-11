@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "OpenTARS/Gargantua-2.5-Lite",
+  "slug": "opentars-gargantua-2-5-lite",
+  "author": "OpenTARS",
+  "url": "https://huggingface.co/OpenTARS/Gargantua-2.5-Lite",
+  "created_at": "2026-11-11T17:41:29.000Z",
+  "updated_at": "2026-11-11T17:54:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "gemma4",
+    "vision",
+    "audio",
+    "tool-use",
+    "local",
+    "pt",
+    "en",
+    "base_model:unsloth/gemma-4-E2B-it",
+    "base_model:quantized:unsloth/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 4401773664,
+  "storage_human": "4.4 GB",
+  "base_model": "unsloth/gemma-4-E2B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "glim-oss/cogent-small",
+  "slug": "glim-oss-cogent-small",
+  "author": "glim-oss",
+  "url": "https://huggingface.co/glim-oss/cogent-small",
+  "created_at": "2026-11-11T14:11:29.000Z",
+  "updated_at": "2026-11-11T14:12:27.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "cogent",
+    "typed-decisions",
+    "multi-question",
+    "decision-making",
+    "encoder",
+    "cpu",
+    "text-classification",
+    "en",
+    "base_model:cross-encoder/ettin-reranker-68m-v1",
+    "base_model:finetune:cross-encoder/ettin-reranker-68m-v1",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68144640,
+  "parameters_human": "68.1M",
+  "storage_bytes": 412068708,
+  "storage_human": "412 MB",
+  "base_model": "cross-encoder/ettin-reranker-68m-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

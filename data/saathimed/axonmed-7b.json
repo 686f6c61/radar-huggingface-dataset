@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Saathimed/AxonMed-7B",
+  "slug": "saathimed-axonmed-7b",
+  "author": "Saathimed",
+  "url": "https://huggingface.co/Saathimed/AxonMed-7B",
+  "created_at": "2026-11-11T17:06:02.000Z",
+  "updated_at": "2026-11-11T17:24:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "medical",
+    "healthcare",
+    "clinical-reasoning",
+    "aiims",
+    "neet-pg",
+    "usmle",
+    "pubmedqa",
+    "india",
+    "sovereign-ai",
+    "axonmed",
+    "en",
+    "hi",
+    "dataset:medmcqa",
+    "dataset:GBaker/MedQA-USMLE-4-options",
+    "dataset:pubmed_qa",
+    "dataset:FreedomIntelligence/medical-o1-reasoning-SFT",
+    "dataset:medalpaca/medical_meadow_usmle_self_assessment",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "base_model:adapter:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436064,
+  "storage_human": "334 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multiple-Choice Medical QA",
+      "dataset": "MedMCQA (AIIMS / NEET-PG)",
+      "metric": "0-shot Accuracy",
+      "value": 61.25
+    },
+    {
+      "task": "Multiple-Choice Medical QA",
+      "dataset": "MedMCQA (AIIMS / NEET-PG)",
+      "metric": "0-shot Normalized Accuracy",
+      "value": 61.25
+    },
+    {
+      "task": "Biomedical Research QA",
+      "dataset": "PubMedQA",
+      "metric": "0-shot Accuracy",
+      "value": 75.4
+    }
+  ],
+  "sources": []
+}

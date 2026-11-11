@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "manojrouthu/veda",
+  "slug": "manojrouthu-veda",
+  "author": "manojrouthu",
+  "url": "https://huggingface.co/manojrouthu/veda",
+  "created_at": "2026-11-11T13:21:43.000Z",
+  "updated_at": "2026-11-11T13:25:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 5518981744,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

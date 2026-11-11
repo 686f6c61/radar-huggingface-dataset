@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "moltherm1/olmo-mirror-olmo-7b-twin-2t-hf",
+  "slug": "moltherm1-olmo-mirror-olmo-7b-twin-2t-hf",
+  "author": "moltherm1",
+  "url": "https://huggingface.co/moltherm1/olmo-mirror-olmo-7b-twin-2t-hf",
+  "created_at": "2026-10-29T04:22:59.000Z",
+  "updated_at": "2026-11-11T13:28:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "olmo",
+    "en",
+    "dataset:allenai/dolma",
+    "arxiv:2402.00838",
+    "arxiv:2302.13971",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4938797232,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

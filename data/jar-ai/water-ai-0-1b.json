@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Jar-ai/Water-AI-0.1B",
+  "slug": "jar-ai-water-ai-0-1b",
+  "author": "Jar-ai",
+  "url": "https://huggingface.co/Jar-ai/Water-AI-0.1B",
+  "created_at": "2026-11-11T15:46:12.000Z",
+  "updated_at": "2026-11-11T15:48:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123581184,
+  "parameters_human": "123.6M",
+  "storage_bytes": 587324137,
+  "storage_human": "587 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

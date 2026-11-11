@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "fernandodlts/qwen2.5-3b-delivery-absa-lora",
+  "slug": "fernandodlts-qwen2-5-3b-delivery-absa-lora",
+  "author": "fernandodlts",
+  "url": "https://huggingface.co/fernandodlts/qwen2.5-3b-delivery-absa-lora",
+  "created_at": "2026-11-11T18:23:50.000Z",
+  "updated_at": "2026-11-11T18:45:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "sentiment-analysis",
+    "aspect-based-sentiment-analysis",
+    "absa",
+    "churn-prediction",
+    "qwen2.5",
+    "lora",
+    "qlora",
+    "unsloth",
+    "brazilian-portuguese",
+    "text-generation",
+    "conversational",
+    "pt",
+    "dataset:fernandodlts/brazilian-delivery-absa-dataset",
+    "base_model:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "base_model:adapter:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223694,
+  "storage_human": "131 MB",
+  "base_model": "unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

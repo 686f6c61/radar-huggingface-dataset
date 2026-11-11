@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "junbrro/vwam-oa-ctrl-robotonly-agv-b32-50k-1104-native-model-backup-20261111",
+  "slug": "junbrro-vwam-oa-ctrl-robotonly-agv-b32-50k-1104-native-model-backup-20261111",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/vwam-oa-ctrl-robotonly-agv-b32-50k-1104-native-model-backup-20261111",
+  "created_at": "2026-11-11T15:05:06.000Z",
+  "updated_at": "2026-11-11T15:35:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72009189614,
+  "storage_human": "72.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "trymirai/LFM2.5-1.2B-Instruct-M",
+  "slug": "trymirai-lfm2-5-1-2b-instruct-m",
+  "author": "trymirai",
+  "url": "https://huggingface.co/trymirai/LFM2.5-1.2B-Instruct-M",
+  "created_at": "2026-08-23T14:43:03.000Z",
+  "updated_at": "2026-11-11T20:07:03.000Z",
+  "license": "lfm-open-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "uzu",
+  "languages": [],
+  "tags": [
+    "uzu",
+    "safetensors",
+    "mirai",
+    "4-bit",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 368,
+  "trending_score": 0,
+  "parameters": 613300992,
+  "parameters_human": "613.3M",
+  "storage_bytes": 3174644341,
+  "storage_human": "3.2 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

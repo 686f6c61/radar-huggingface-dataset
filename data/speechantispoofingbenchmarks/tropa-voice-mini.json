@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "SpeechAntiSpoofingBenchmarks/tropa-voice-mini",
+  "slug": "speechantispoofingbenchmarks-tropa-voice-mini",
+  "author": "SpeechAntiSpoofingBenchmarks",
+  "url": "https://huggingface.co/SpeechAntiSpoofingBenchmarks/tropa-voice-mini",
+  "created_at": "2026-11-10T09:41:41.000Z",
+  "updated_at": "2026-11-11T18:05:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 126,
+  "trending_score": 0,
+  "parameters": 315868803,
+  "parameters_human": "315.9M",
+  "storage_bytes": 1263526716,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

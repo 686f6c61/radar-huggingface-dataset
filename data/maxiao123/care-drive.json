@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "maxiao123/CARE-Drive",
+  "slug": "maxiao123-care-drive",
+  "author": "maxiao123",
+  "url": "https://huggingface.co/maxiao123/CARE-Drive",
+  "created_at": "2026-11-11T09:28:37.000Z",
+  "updated_at": "2026-11-11T10:39:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "autonomous-driving",
+    "trajectory-planning",
+    "vision-language-action",
+    "navsim",
+    "care-drive",
+    "en",
+    "base_model:Qwen/Qwen3-VL-2B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-2B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9614810306,
+  "storage_human": "9.6 GB",
+  "base_model": "Qwen/Qwen3-VL-2B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Ego-trajectory planning",
+      "dataset": "NAVSIM v1 navtest",
+      "metric": "PDMS",
+      "value": 88.836995
+    }
+  ],
+  "sources": []
+}

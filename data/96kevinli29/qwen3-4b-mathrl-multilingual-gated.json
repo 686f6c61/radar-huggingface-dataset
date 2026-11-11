@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "96kevinli29/Qwen3-4B-MathRL-Multilingual-Gated",
+  "slug": "96kevinli29-qwen3-4b-mathrl-multilingual-gated",
+  "author": "96kevinli29",
+  "url": "https://huggingface.co/96kevinli29/Qwen3-4B-MathRL-Multilingual-Gated",
+  "created_at": "2026-11-11T16:13:53.000Z",
+  "updated_at": "2026-11-11T16:14:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "ar",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "causal-lm",
+    "reinforcement-learning",
+    "ppo",
+    "rlvr",
+    "math",
+    "reasoning",
+    "multilingual",
+    "multilingual-reasoning",
+    "chain-of-thought",
+    "verl",
+    "conversational",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "ar",
+    "ru",
+    "dataset:96kevinli29/DAPO-Math-Multilingual-6Lang",
+    "arxiv:2609.37104",
+    "base_model:96kevinli29/Qwen3-4B-SFT-Math-Multilingual",
+    "base_model:finetune:96kevinli29/Qwen3-4B-SFT-Math-Multilingual",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317154,
+  "storage_human": "8.8 GB",
+  "base_model": "96kevinli29/Qwen3-4B-SFT-Math-Multilingual",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "AIME-2026 + AMC-2023, five non-English languages (zh, es, fr, ar, ru)",
+      "metric": "Delivered J@1 (correct, in the requested language, terminated)",
+      "value": 61.4
+    },
+    {
+      "task": null,
+      "dataset": "AIME-2026 + AMC-2023, five non-English languages (zh, es, fr, ar, ru)",
+      "metric": "Answer accuracy",
+      "value": 61.7
+    },
+    {
+      "task": null,
+      "dataset": "AIME-2026 + AMC-2023, five non-English languages (zh, es, fr, ar, ru)",
+      "metric": "Reasoning in the requested language",
+      "value": 99.7
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "bursansan/dacha-setfit-rubert-base",
+  "slug": "bursansan-dacha-setfit-rubert-base",
+  "author": "bursansan",
+  "url": "https://huggingface.co/bursansan/dacha-setfit-rubert-base",
+  "created_at": "2026-11-11T19:36:25.000Z",
+  "updated_at": "2026-11-11T19:36:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "russian",
+    "sentence-transformers",
+    "ru",
+    "base_model:DeepPavlov/rubert-base-cased",
+    "base_model:finetune:DeepPavlov/rubert-base-cased",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177853440,
+  "parameters_human": "177.9M",
+  "storage_bytes": 711443143,
+  "storage_human": "711 MB",
+  "base_model": "DeepPavlov/rubert-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

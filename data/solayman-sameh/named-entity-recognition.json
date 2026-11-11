@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Solayman-Sameh/named-entity-recognition",
+  "slug": "solayman-sameh-named-entity-recognition",
+  "author": "Solayman-Sameh",
+  "url": "https://huggingface.co/Solayman-Sameh/named-entity-recognition",
+  "created_at": "2026-11-11T19:38:02.000Z",
+  "updated_at": "2026-11-11T19:40:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "token-classification",
+    "pytorch",
+    "ner",
+    "conll2003",
+    "en",
+    "dataset:conll2003",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 65197833,
+  "parameters_human": "65.2M",
+  "storage_bytes": 260803668,
+  "storage_human": "261 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

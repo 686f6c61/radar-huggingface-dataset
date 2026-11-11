@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mradermacher/mistral-7b-miniplatypus-GGUF",
+  "slug": "mradermacher-mistral-7b-miniplatypus-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/mistral-7b-miniplatypus-GGUF",
+  "created_at": "2024-11-17T23:02:13.000Z",
+  "updated_at": "2026-11-11T13:31:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:lokpatchu/mistral-7b-miniplatypus",
+    "base_model:quantized:lokpatchu/mistral-7b-miniplatypus",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 68038726560,
+  "storage_human": "68.0 GB",
+  "base_model": "lokpatchu/mistral-7b-miniplatypus",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

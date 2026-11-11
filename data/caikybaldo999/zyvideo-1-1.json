@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "caikybaldo999/zyvideo-1.1",
+  "slug": "caikybaldo999-zyvideo-1-1",
+  "author": "caikybaldo999",
+  "url": "https://huggingface.co/caikybaldo999/zyvideo-1.1",
+  "created_at": "2026-11-10T21:27:09.000Z",
+  "updated_at": "2026-11-11T15:55:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 115,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47097135994,
+  "storage_human": "47.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

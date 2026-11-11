@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Kamyar-zeinalipour/Mistral-7b-CS-AR",
+  "slug": "kamyar-zeinalipour-mistral-7b-cs-ar",
+  "author": "Kamyar-zeinalipour",
+  "url": "https://huggingface.co/Kamyar-zeinalipour/Mistral-7b-CS-AR",
+  "created_at": "2024-09-14T04:11:45.000Z",
+  "updated_at": "2026-11-11T14:46:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arabic",
+    "commonsense-reasoning",
+    "lora",
+    "text-generation",
+    "conversational",
+    "ar",
+    "dataset:Kamyar-zeinalipour/ArabicSense",
+    "dataset:Kamyar-zeinalipour/ArabicSense-task2",
+    "dataset:Kamyar-zeinalipour/ArabicSense-task3",
+    "dataset:Kamyar-zeinalipour/ArabicCommonsense_DB_Mistral",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 623802276,
+  "storage_human": "624 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

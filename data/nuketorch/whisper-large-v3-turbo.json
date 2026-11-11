@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "NukeTorch/whisper-large-v3-turbo",
+  "slug": "nuketorch-whisper-large-v3-turbo",
+  "author": "NukeTorch",
+  "url": "https://huggingface.co/NukeTorch/whisper-large-v3-turbo",
+  "created_at": "2026-11-11T14:11:19.000Z",
+  "updated_at": "2026-11-11T14:11:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nuketorch",
+    "apple-silicon",
+    "automatic-speech-recognition",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 1618442305,
+  "storage_human": "1.6 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

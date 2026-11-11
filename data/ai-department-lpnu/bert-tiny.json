@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ai-department-lpnu/bert-tiny",
+  "slug": "ai-department-lpnu-bert-tiny",
+  "author": "ai-department-lpnu",
+  "url": "https://huggingface.co/ai-department-lpnu/bert-tiny",
+  "created_at": "2026-11-11T16:23:49.000Z",
+  "updated_at": "2026-11-11T16:23:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "fill-mask",
+    "en",
+    "base_model:google/bert_uncased_L-4_H-256_A-4",
+    "base_model:finetune:google/bert_uncased_L-4_H-256_A-4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11201594,
+  "parameters_human": "11.2M",
+  "storage_bytes": 44814856,
+  "storage_human": "45 MB",
+  "base_model": "google/bert_uncased_L-4_H-256_A-4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

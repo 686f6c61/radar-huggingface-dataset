@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Gabriel/diffu-minicpm-ocr-htr-jev",
+  "slug": "gabriel-diffu-minicpm-ocr-htr-jev",
+  "author": "Gabriel",
+  "url": "https://huggingface.co/Gabriel/diffu-minicpm-ocr-htr-jev",
+  "created_at": "2026-11-11T15:44:48.000Z",
+  "updated_at": "2026-11-11T15:45:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "minicpm-ocr",
+    "jev",
+    "ocr-verifier",
+    "handwriting",
+    "historical-documents",
+    "archives",
+    "htr",
+    "conversational",
+    "sv",
+    "base_model:openbmb/MiniCPM-OCR-Jev",
+    "base_model:finetune:openbmb/MiniCPM-OCR-Jev",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213245760,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4446556483,
+  "storage_human": "4.4 GB",
+  "base_model": "openbmb/MiniCPM-OCR-Jev",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GABRIEL - Organisation du système d'information de l'Enseignement ...",
+      "url": "https://www.ec-gabriel.fr/",
+      "snippet": "GABRIEL permet à l'Enseignement catholique de disposer de son propre annuaire de TOUS ses établissements avec un annuaire …"
+    },
+    {
+      "title": "Gabriel bois – L’expert des produits bois et dérivés",
+      "url": "https://www.gabriel-sa.fr/",
+      "snippet": "Entreprise familiale créée en 1987 par Michel et Christiane GABRIEL, la société GABRIEL est aujourd’hui leader dans la distribution …"
+    },
+    {
+      "title": "Gabriel — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Gabriel",
+      "snippet": "Gabriel est une chanson de Najoua Belyzel sortie en single en 2005. Gabriel est un morceau du compositeur Roy David Jr. Ce …"
+    },
+    {
+      "title": "Gabriel (archange) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Gabriel_(archange)",
+      "snippet": "Gabriel (de l' hébreu : גַּבְרִיאֵל (gabriel)) ou encore Cebrail dans certaines cultures, est un ange du livre de Daniel dans la Bible. Son …"
+    },
+    {
+      "title": "Gabriel – Global specialist in fabrics for furniture and interior ...",
+      "url": "https://www.gabrielfabrics.com/",
+      "snippet": "At Gabriel, we combine design, innovation, in-house production, and textile engineering with a focus on environmental responsibility. …"
+    }
+  ]
+}

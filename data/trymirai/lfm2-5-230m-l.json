@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "trymirai/LFM2.5-230M-L",
+  "slug": "trymirai-lfm2-5-230m-l",
+  "author": "trymirai",
+  "url": "https://huggingface.co/trymirai/LFM2.5-230M-L",
+  "created_at": "2026-08-23T14:45:07.000Z",
+  "updated_at": "2026-11-11T20:07:34.000Z",
+  "license": "lfm-open-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "uzu",
+  "languages": [],
+  "tags": [
+    "uzu",
+    "safetensors",
+    "mirai",
+    "8-bit",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-230M",
+    "base_model:quantized:LiquidAI/LFM2.5-230M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 306,
+  "trending_score": 0,
+  "parameters": 233498368,
+  "parameters_human": "233.5M",
+  "storage_bytes": 1194598085,
+  "storage_human": "1.2 GB",
+  "base_model": "LiquidAI/LFM2.5-230M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

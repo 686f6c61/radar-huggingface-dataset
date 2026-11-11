@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Kamyar-zeinalipour/PMCQ-Gemma2-9b",
+  "slug": "kamyar-zeinalipour-pmcq-gemma2-9b",
+  "author": "Kamyar-zeinalipour",
+  "url": "https://huggingface.co/Kamyar-zeinalipour/PMCQ-Gemma2-9b",
+  "created_at": "2024-09-15T02:13:11.000Z",
+  "updated_at": "2026-11-11T14:54:44.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "persian",
+    "farsi",
+    "multiple-choice-questions",
+    "question-generation",
+    "education",
+    "lora",
+    "text-generation",
+    "conversational",
+    "fa",
+    "dataset:Kamyar-zeinalipour/PersianMCQ-instruct",
+    "dataset:Kamyar-zeinalipour/Persian_MCQ_DB__Gemma",
+    "base_model:google/gemma-2-9b-it",
+    "base_model:adapter:google/gemma-2-9b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11406194084,
+  "storage_human": "11.4 GB",
+  "base_model": "google/gemma-2-9b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

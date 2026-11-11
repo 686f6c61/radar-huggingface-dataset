@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Blue-2233/Blue",
+  "slug": "blue-2233-blue",
+  "author": "Blue-2233",
+  "url": "https://huggingface.co/Blue-2233/Blue",
+  "created_at": "2026-11-11T13:35:46.000Z",
+  "updated_at": "2026-11-11T13:35:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "À propos de Blue (ex-Bretagne Télécom)",
+      "url": "https://www.bt-blue.com/a-propos/",
+      "snippet": "Découvrez Blue, anciennement Bretagne Télécom. Notre histoire, notre engagement et nos solutions pour votre entreprise. Faites …"
+    },
+    {
+      "title": "Blue - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Blue",
+      "snippet": "Darker shades of blue include ultramarine, cobalt blue, navy blue, and Prussian blue; while lighter tints include sky blue, azure, and …"
+    },
+    {
+      "title": "Blue",
+      "url": "https://www.bt-blue.com/",
+      "snippet": "Fondé en 2005, Blue accompagne les DSI des entreprises et collectivités dans le maintien en condition opérationnelle des …"
+    },
+    {
+      "title": "Eiffel 65 - Blue (Da Ba Dee) - YouTube",
+      "url": "https://www.youtube.com/watch?v=zA52uNzx7Y4",
+      "snippet": "Jul 21, 2008 · Best know for their international hit \"Blue (Da Ba Dee)\" Eiffel 65's debut album \"Europop\" sold over two million units in …"
+    }
+  ]
+}

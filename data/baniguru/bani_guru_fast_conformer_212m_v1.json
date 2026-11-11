@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "baniguru/bani_guru_fast_conformer_212m_v1",
+  "slug": "baniguru-bani_guru_fast_conformer_212m_v1",
+  "author": "baniguru",
+  "url": "https://huggingface.co/baniguru/bani_guru_fast_conformer_212m_v1",
+  "created_at": "2026-11-07T09:37:12.000Z",
+  "updated_at": "2026-11-07T09:52:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nemo",
+  "languages": [
+    "pa"
+  ],
+  "tags": [
+    "nemo",
+    "pa",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 854650880,
+  "storage_human": "855 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

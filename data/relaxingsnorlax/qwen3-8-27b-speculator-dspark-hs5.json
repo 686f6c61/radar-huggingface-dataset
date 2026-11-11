@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "RelaxingSnorlax/Qwen3.8-27B-speculator.dspark-hs5",
+  "slug": "relaxingsnorlax-qwen3-8-27b-speculator-dspark-hs5",
+  "author": "RelaxingSnorlax",
+  "url": "https://huggingface.co/RelaxingSnorlax/Qwen3.8-27B-speculator.dspark-hs5",
+  "created_at": "2026-11-11T14:14:13.000Z",
+  "updated_at": "2026-11-11T14:17:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speculators",
+    "speculative-decoding",
+    "dspark",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1909788417,
+  "parameters_human": "1.91B",
+  "storage_bytes": 3819584018,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

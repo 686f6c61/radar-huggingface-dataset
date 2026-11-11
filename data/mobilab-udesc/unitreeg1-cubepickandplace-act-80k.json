@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "mobilab-udesc/UnitreeG1-CubePickAndPlace-ACT-80K",
+  "slug": "mobilab-udesc-unitreeg1-cubepickandplace-act-80k",
+  "author": "mobilab-udesc",
+  "url": "https://huggingface.co/mobilab-udesc/UnitreeG1-CubePickAndPlace-ACT-80K",
+  "created_at": "2026-11-11T12:50:23.000Z",
+  "updated_at": "2026-11-11T12:50:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51687055,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206782996,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

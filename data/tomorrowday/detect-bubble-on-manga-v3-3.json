@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "TomorrowDay/Detect-bubble-on-manga-v3.3",
+  "slug": "tomorrowday-detect-bubble-on-manga-v3-3",
+  "author": "TomorrowDay",
+  "url": "https://huggingface.co/TomorrowDay/Detect-bubble-on-manga-v3.3",
+  "created_at": "2026-11-11T14:45:54.000Z",
+  "updated_at": "2026-11-11T14:50:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118368421,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

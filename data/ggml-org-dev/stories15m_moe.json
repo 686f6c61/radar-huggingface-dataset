@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "ggml-org-dev/stories15M_MOE",
+  "slug": "ggml-org-dev-stories15m_moe",
+  "author": "ggml-org-dev",
+  "url": "https://huggingface.co/ggml-org-dev/stories15M_MOE",
+  "created_at": "2026-11-11T15:35:59.000Z",
+  "updated_at": "2026-11-11T15:36:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "mixtral",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36358560,
+  "parameters_human": "36.4M",
+  "storage_bytes": 463724532,
+  "storage_human": "464 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "HrishiBuilds/UTLT-Qwen3-0.6B-ONNX",
+  "slug": "hrishibuilds-utlt-qwen3-0-6b-onnx",
+  "author": "HrishiBuilds",
+  "url": "https://huggingface.co/HrishiBuilds/UTLT-Qwen3-0.6B-ONNX",
+  "created_at": "2026-11-11T12:49:36.000Z",
+  "updated_at": "2026-11-11T13:02:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen3",
+    "text-generation",
+    "water-use",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 575431105,
+  "storage_human": "575 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

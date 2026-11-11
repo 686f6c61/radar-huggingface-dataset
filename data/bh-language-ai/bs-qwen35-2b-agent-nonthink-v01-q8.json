@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "BH-Language-AI/bs-qwen35-2b-agent-nonthink-v01-q8",
+  "slug": "bh-language-ai-bs-qwen35-2b-agent-nonthink-v01-q8",
+  "author": "BH-Language-AI",
+  "url": "https://huggingface.co/BH-Language-AI/bs-qwen35-2b-agent-nonthink-v01-q8",
+  "created_at": "2026-11-11T13:00:16.000Z",
+  "updated_at": "2026-11-11T13:00:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "bs"
+  ],
+  "tags": [
+    "gguf",
+    "function-calling",
+    "ai-agents",
+    "bosnian",
+    "agentmujo",
+    "q8",
+    "text-generation",
+    "bs",
+    "base_model:alphaedge-ai/Qwen3.5-2B-bos-32768",
+    "base_model:quantized:alphaedge-ai/Qwen3.5-2B-bos-32768",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1440374592,
+  "parameters_human": "1.44B",
+  "storage_bytes": 4599196320,
+  "storage_human": "4.6 GB",
+  "base_model": "alphaedge-ai/Qwen3.5-2B-bos-32768",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Ainvest-World/Ainvest-Decision-31b-v2.0",
+  "slug": "ainvest-world-ainvest-decision-31b-v2-0",
+  "author": "Ainvest-World",
+  "url": "https://huggingface.co/Ainvest-World/Ainvest-Decision-31b-v2.0",
+  "created_at": "2026-11-11T04:41:49.000Z",
+  "updated_at": "2026-11-11T05:32:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "decision-model",
+    "decision-index",
+    "read-twice",
+    "bf16",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 31273086512,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578506066,
+  "storage_human": "62.6 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

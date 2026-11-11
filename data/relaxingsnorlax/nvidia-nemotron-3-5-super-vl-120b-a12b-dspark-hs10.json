@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "RelaxingSnorlax/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B.dspark-hs10",
+  "slug": "relaxingsnorlax-nvidia-nemotron-3-5-super-vl-120b-a12b-dspark-hs10",
+  "author": "RelaxingSnorlax",
+  "url": "https://huggingface.co/RelaxingSnorlax/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B.dspark-hs10",
+  "created_at": "2026-11-11T14:15:59.000Z",
+  "updated_at": "2026-11-11T14:23:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speculators",
+    "speculative-decoding",
+    "dspark",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1293997569,
+  "parameters_human": "1.29B",
+  "storage_bytes": 2588002306,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

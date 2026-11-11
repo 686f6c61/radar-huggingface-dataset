@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "ProtonPrat/anlp-a3-transformer",
+  "slug": "protonprat-anlp-a3-transformer",
+  "author": "ProtonPrat",
+  "url": "https://huggingface.co/ProtonPrat/anlp-a3-transformer",
+  "created_at": "2026-11-11T19:57:14.000Z",
+  "updated_at": "2026-11-11T19:57:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "cipher-decryption",
+    "transformer",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3433755,
+  "parameters_human": "3.4M",
+  "storage_bytes": 13737948,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

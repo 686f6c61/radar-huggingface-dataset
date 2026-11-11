@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "dkruglov316/signature_yolo_8m_nn_onnx",
+  "slug": "dkruglov316-signature_yolo_8m_nn_onnx",
+  "author": "dkruglov316",
+  "url": "https://huggingface.co/dkruglov316/signature_yolo_8m_nn_onnx",
+  "created_at": "2026-11-11T14:32:56.000Z",
+  "updated_at": "2026-11-11T14:47:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "base_model:Ultralytics/YOLO26",
+    "base_model:quantized:Ultralytics/YOLO26",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 103937563,
+  "storage_human": "104 MB",
+  "base_model": "Ultralytics/YOLO26",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

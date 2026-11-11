@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mangaba-ai/Mangaba-S5-nano-LoRA",
+  "slug": "mangaba-ai-mangaba-s5-nano-lora",
+  "author": "mangaba-ai",
+  "url": "https://huggingface.co/mangaba-ai/Mangaba-S5-nano-LoRA",
+  "created_at": "2026-11-11T14:46:57.000Z",
+  "updated_at": "2026-11-11T14:47:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "mlx",
+    "lora",
+    "portuguese",
+    "s5-nano",
+    "text-generation",
+    "pt",
+    "base_model:maritaca-ai/S5-nano",
+    "base_model:adapter:maritaca-ai/S5-nano",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129922531,
+  "storage_human": "130 MB",
+  "base_model": "maritaca-ai/S5-nano",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

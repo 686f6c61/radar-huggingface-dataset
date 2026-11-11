@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "mobley33/connectailab-rl-MOBLEY-v1-humanoid",
+  "slug": "mobley33-connectailab-rl-mobley-v1-humanoid",
+  "author": "mobley33",
+  "url": "https://huggingface.co/mobley33/connectailab-rl-MOBLEY-v1-humanoid",
+  "created_at": "2026-11-11T15:54:59.000Z",
+  "updated_at": "2026-11-11T15:55:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "reinforcement-learning",
+    "PPO",
+    "Humanoid-v5",
+    "mujoco",
+    "pytorch",
+    "ko",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6235546,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

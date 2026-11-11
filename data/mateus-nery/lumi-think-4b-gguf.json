@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Mateus-Nery/lumi-think-4b-GGUF",
+  "slug": "mateus-nery-lumi-think-4b-gguf",
+  "author": "Mateus-Nery",
+  "url": "https://huggingface.co/Mateus-Nery/lumi-think-4b-GGUF",
+  "created_at": "2026-11-11T03:00:19.000Z",
+  "updated_at": "2026-11-11T17:55:17.000Z",
+  "license": "lumi-4b",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "portuguese",
+    "reasoning",
+    "ceia",
+    "nemotron",
+    "text-generation",
+    "pt",
+    "en",
+    "base_model:ceia-br/lumi-4b",
+    "base_model:finetune:ceia-br/lumi-4b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3973556832,
+  "parameters_human": "3.97B",
+  "storage_bytes": 27728168096,
+  "storage_human": "27.7 GB",
+  "base_model": "ceia-br/lumi-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

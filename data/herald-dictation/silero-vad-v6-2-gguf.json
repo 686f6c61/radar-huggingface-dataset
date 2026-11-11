@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "herald-dictation/silero-vad-v6.2-gguf",
+  "slug": "herald-dictation-silero-vad-v6-2-gguf",
+  "author": "herald-dictation",
+  "url": "https://huggingface.co/herald-dictation/silero-vad-v6.2-gguf",
+  "created_at": "2026-11-11T13:19:04.000Z",
+  "updated_at": "2026-11-11T13:19:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "transcribe.cpp",
+  "languages": [],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "herald",
+    "voice-activity-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 309633,
+  "parameters_human": "309633",
+  "storage_bytes": 1241056,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

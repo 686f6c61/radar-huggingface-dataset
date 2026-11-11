@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "trymirai/LFM2.5-1.2B-Thinking-L",
+  "slug": "trymirai-lfm2-5-1-2b-thinking-l",
+  "author": "trymirai",
+  "url": "https://huggingface.co/trymirai/LFM2.5-1.2B-Thinking-L",
+  "created_at": "2026-08-23T20:01:57.000Z",
+  "updated_at": "2026-11-11T20:08:27.000Z",
+  "license": "lfm-open-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "uzu",
+  "languages": [],
+  "tags": [
+    "uzu",
+    "safetensors",
+    "mirai",
+    "8-bit",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Thinking",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-Thinking",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 327,
+  "trending_score": 0,
+  "parameters": 1189264128,
+  "parameters_human": "1.19B",
+  "storage_bytes": 6054410053,
+  "storage_human": "6.1 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "KRAFTON/Raon-1-nano-mlx",
+  "slug": "krafton-raon-1-nano-mlx",
+  "author": "KRAFTON",
+  "url": "https://huggingface.co/KRAFTON/Raon-1-nano-mlx",
+  "created_at": "2026-11-10T10:12:14.000Z",
+  "updated_at": "2026-11-11T12:48:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "raon1_nano",
+    "raon",
+    "text-generation",
+    "conversational",
+    "base_model:KRAFTON/Raon-1-nano",
+    "base_model:quantized:KRAFTON/Raon-1-nano",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 3130797136,
+  "parameters_human": "3.13B",
+  "storage_bytes": 1880208223,
+  "storage_human": "1.9 GB",
+  "base_model": "KRAFTON/Raon-1-nano",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "home | KRAFTON",
+      "url": "https://www.krafton.com/en/",
+      "snippet": "KRAFTON will further expand our original IPs and build immersive, virtual worlds, where our fans play together and share fun …"
+    },
+    {
+      "title": "Krafton - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Krafton",
+      "snippet": "Krafton ... KRAFTON, Inc. (Korean: 주식회사 크래프톤) is a South Korean video game publisher and holding company based in …"
+    },
+    {
+      "title": "KRAFTON",
+      "url": "https://accounts.krafton.com/",
+      "snippet": "Creating a KRAFTON Player Account opens up a world of opportunities. We use your KRAFTON Player Account as a vessel to …"
+    },
+    {
+      "title": "Games - KRAFTON",
+      "url": "https://www.krafton.com/en/games/",
+      "snippet": "Action, Adventure PC Console inZOI"
+    },
+    {
+      "title": "Krafton — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Krafton",
+      "snippet": "Krafton Inc. (anciennement Bluehole Studio et Bluehole) est une entreprise sud-coréenne de développement et d' édition de jeux …"
+    }
+  ]
+}
