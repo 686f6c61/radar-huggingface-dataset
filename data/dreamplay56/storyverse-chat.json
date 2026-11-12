@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Dreamplay56/storyverse-chat",
+  "slug": "dreamplay56-storyverse-chat",
+  "author": "Dreamplay56",
+  "url": "https://huggingface.co/Dreamplay56/storyverse-chat",
+  "created_at": "2026-11-11T18:29:41.000Z",
+  "updated_at": "2026-11-12T01:29:01.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "ja",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1715156740,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

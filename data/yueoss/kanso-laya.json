@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "yueoss/kanso-laya",
+  "slug": "yueoss-kanso-laya",
+  "author": "yueoss",
+  "url": "https://huggingface.co/yueoss/kanso-laya",
+  "created_at": "2026-11-11T21:38:29.000Z",
+  "updated_at": "2026-11-11T21:38:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "laya",
+    "onnx",
+    "onnxruntime-web",
+    "linkedin",
+    "text-classification",
+    "fr",
+    "en",
+    "base_model:convaiinnovations/laya",
+    "base_model:quantized:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 361340743,
+  "storage_human": "361 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

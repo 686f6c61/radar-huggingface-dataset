@@ -5,7 +5,7 @@
   "author": "Kingsoft-Office",
   "url": "https://huggingface.co/Kingsoft-Office/wps-decision-1",
   "created_at": "2026-11-04T07:54:59.000Z",
-  "updated_at": "2026-11-04T09:15:19.000Z",
+  "updated_at": "2026-11-11T03:47:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 46,
+  "downloads_30d": 51,
   "trending_score": 0,
   "parameters": 8392695024,
   "parameters_human": "8.39B",
-  "storage_bytes": 16802464342,
-  "storage_human": "16.8 GB",
+  "storage_bytes": 32792059630,
+  "storage_human": "32.8 GB",
   "base_model": "vllm-sr/d3-flash",
   "formats": [
     "safetensors"

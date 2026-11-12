@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "texellabs/texel-support-9b",
+  "slug": "texellabs-texel-support-9b",
+  "author": "texellabs",
+  "url": "https://huggingface.co/texellabs/texel-support-9b",
+  "created_at": "2026-11-11T20:25:37.000Z",
+  "updated_at": "2026-11-11T20:40:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "unsloth",
+    "qwen3.5",
+    "tool-calling",
+    "customer-support",
+    "agent",
+    "texel",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:adapter:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 252811229,
+  "storage_human": "253 MB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

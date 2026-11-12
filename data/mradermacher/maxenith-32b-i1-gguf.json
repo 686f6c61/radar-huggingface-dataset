@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MAXENITH-32B-i1-GGUF",
+  "slug": "mradermacher-maxenith-32b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MAXENITH-32B-i1-GGUF",
+  "created_at": "2026-11-11T22:37:23.000Z",
+  "updated_at": "2026-11-11T22:59:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 27153258592,
+  "storage_human": "27.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

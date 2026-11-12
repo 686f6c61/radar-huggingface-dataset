@@ -5,7 +5,7 @@
   "author": "baz08",
   "url": "https://huggingface.co/baz08/crypto-sentiment-bert",
   "created_at": "2026-11-11T03:10:17.000Z",
-  "updated_at": "2026-11-11T03:10:50.000Z",
+  "updated_at": "2026-11-11T04:55:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 18,
   "trending_score": 0,
   "parameters": 109484547,
   "parameters_human": "109.5M",
-  "storage_bytes": 437961724,
-  "storage_human": "438 MB",
+  "storage_bytes": 875923448,
+  "storage_human": "876 MB",
   "base_model": null,
   "formats": [
     "safetensors"

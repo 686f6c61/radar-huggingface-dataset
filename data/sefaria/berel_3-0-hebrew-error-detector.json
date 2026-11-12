@@ -5,7 +5,7 @@
   "author": "Sefaria",
   "url": "https://huggingface.co/Sefaria/BEREL_3.0-hebrew-error-detector",
   "created_at": "2026-11-10T14:15:09.000Z",
-  "updated_at": "2026-11-10T14:15:49.000Z",
+  "updated_at": "2026-11-11T14:45:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 183756290,
   "parameters_human": "183.8M",
-  "storage_bytes": 735048520,
-  "storage_human": "735 MB",
+  "storage_bytes": 1470097040,
+  "storage_human": "1.5 GB",
   "base_model": "dicta-il/BEREL_3.0",
   "formats": [
     "safetensors"

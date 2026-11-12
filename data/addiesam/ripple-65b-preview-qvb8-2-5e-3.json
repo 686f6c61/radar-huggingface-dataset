@@ -5,7 +5,7 @@
   "author": "addiesam",
   "url": "https://huggingface.co/addiesam/Ripple-65B-Preview-QVB8-2.5e-3",
   "created_at": "2026-11-11T14:40:33.000Z",
-  "updated_at": "2026-11-11T16:50:10.000Z",
+  "updated_at": "2026-11-12T00:16:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 1664080,
   "parameters_human": "1.7M",
-  "storage_bytes": 18579419087,
-  "storage_human": "18.6 GB",
+  "storage_bytes": 48092306405,
+  "storage_human": "48.1 GB",
   "base_model": "ricursiveAI/Ripple-65B-Preview",
   "formats": [
     "safetensors"

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/QWEN-Instruct-14B-Token-GGUF",
+  "slug": "mradermacher-qwen-instruct-14b-token-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/QWEN-Instruct-14B-Token-GGUF",
+  "created_at": "2025-03-07T14:47:49.000Z",
+  "updated_at": "2026-11-11T22:28:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Viol2000/QWEN-Instruct-14B-Token",
+    "base_model:quantized:Viol2000/QWEN-Instruct-14B-Token",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 76,
+  "trending_score": 0,
+  "parameters": 14766050304,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102011952352,
+  "storage_human": "102.0 GB",
+  "base_model": "Viol2000/QWEN-Instruct-14B-Token",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

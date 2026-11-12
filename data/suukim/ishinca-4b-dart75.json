@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "suukim/Ishinca-4B-DART75",
+  "slug": "suukim-ishinca-4b-dart75",
+  "author": "suukim",
+  "url": "https://huggingface.co/suukim/Ishinca-4B-DART75",
+  "created_at": "2026-11-11T13:54:18.000Z",
+  "updated_at": "2026-11-12T01:54:05.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "cosmos",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "cosmos",
+    "safetensors",
+    "alpamayo1_5",
+    "alpamayo",
+    "autonomous-driving",
+    "vla",
+    "distillation",
+    "qwen3-vl",
+    "trajectory-prediction",
+    "robotics",
+    "en",
+    "dataset:nvidia/PhysicalAI-Autonomous-Vehicles",
+    "arxiv:2511.00088",
+    "base_model:nvidia/Cosmos-Reason2-2B",
+    "base_model:finetune:nvidia/Cosmos-Reason2-2B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4228148226,
+  "parameters_human": "4.23B",
+  "storage_bytes": 8468572929,
+  "storage_human": "8.5 GB",
+  "base_model": "nvidia/Cosmos-Reason2-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

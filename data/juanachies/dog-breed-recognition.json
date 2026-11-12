@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "juanachies/dog-breed-recognition",
+  "slug": "juanachies-dog-breed-recognition",
+  "author": "juanachies",
+  "url": "https://huggingface.co/juanachies/dog-breed-recognition",
+  "created_at": "2026-11-11T23:10:39.000Z",
+  "updated_at": "2026-11-11T23:20:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65383562,
+  "storage_human": "65 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

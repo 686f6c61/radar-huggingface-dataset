@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Zyphra/ZAC-1",
+  "slug": "zyphra-zac-1",
+  "author": "Zyphra",
+  "url": "https://huggingface.co/Zyphra/ZAC-1",
+  "created_at": "2026-11-12T00:25:05.000Z",
+  "updated_at": "2026-11-12T00:26:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "gguf",
+    "audio",
+    "audio-codec",
+    "speech",
+    "neural-codec",
+    "zonos3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1057851328,
+  "parameters_human": "1.06B",
+  "storage_bytes": 17690860904,
+  "storage_human": "17.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

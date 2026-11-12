@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "avinash2468/SmolVLM2-500M-GUI-Grounding",
+  "slug": "avinash2468-smolvlm2-500m-gui-grounding",
+  "author": "avinash2468",
+  "url": "https://huggingface.co/avinash2468/SmolVLM2-500M-GUI-Grounding",
+  "created_at": "2026-11-12T00:19:13.000Z",
+  "updated_at": "2026-11-12T00:28:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "idefics3",
+    "image-text-to-text",
+    "gui-grounding",
+    "gui-agent",
+    "computer-use",
+    "ui-grounding",
+    "screen-understanding",
+    "smolvlm",
+    "conversational",
+    "en",
+    "base_model:HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 498634944,
+  "parameters_human": "498.6M",
+  "storage_bytes": 998077683,
+  "storage_human": "998 MB",
+  "base_model": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "GUI grounding",
+      "dataset": "ScreenSpot-v2",
+      "metric": "Accuracy (1 pass)",
+      "value": 80
+    },
+    {
+      "task": "GUI grounding",
+      "dataset": "ScreenSpot-v2",
+      "metric": "Accuracy (12 passes)",
+      "value": 76.6
+    },
+    {
+      "task": "GUI grounding",
+      "dataset": "ScreenSpot-Pro",
+      "metric": "Accuracy (1 pass)",
+      "value": 21.7
+    },
+    {
+      "task": "GUI grounding",
+      "dataset": "ScreenSpot-Pro",
+      "metric": "Accuracy (12 passes)",
+      "value": 43.9
+    },
+    {
+      "task": "GUI grounding",
+      "dataset": "OSWorld-G (510)",
+      "metric": "Accuracy (1 pass)",
+      "value": 39.4
+    },
+    {
+      "task": "GUI grounding",
+      "dataset": "OSWorld-G (510)",
+      "metric": "Accuracy (12 passes)",
+      "value": 49.2
+    }
+  ],
+  "sources": []
+}

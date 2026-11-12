@@ -5,13 +5,14 @@
   "author": "Addax-Data-Science",
   "url": "https://huggingface.co/Addax-Data-Science/WUSA-SDZWA-v1",
   "created_at": "2026-08-26T11:52:35.000Z",
-  "updated_at": "2026-08-26T11:53:31.000Z",
-  "license": null,
-  "license_family": "unknown",
+  "updated_at": "2026-11-10T08:43:58.000Z",
+  "license": "other",
+  "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "license:other",
     "region:us"
   ],
   "likes": 0,

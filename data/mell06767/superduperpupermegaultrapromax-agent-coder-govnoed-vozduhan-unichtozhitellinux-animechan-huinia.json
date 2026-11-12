@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "mell06767/SuperDuperPuperMegaUltraPromax-Agent-Coder-Govnoed-Vozduhan-UnichtozhitelLinux-AnimeChan-Huinia",
+  "slug": "mell06767-superduperpupermegaultrapromax-agent-coder-govnoed-vozduhan-unichtozhitellinux-animechan-huinia",
+  "author": "mell06767",
+  "url": "https://huggingface.co/mell06767/SuperDuperPuperMegaUltraPromax-Agent-Coder-Govnoed-Vozduhan-UnichtozhitelLinux-AnimeChan-Huinia",
+  "created_at": "2026-11-11T21:28:26.000Z",
+  "updated_at": "2026-11-11T21:39:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 2076674432,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "SpaceTimee",
   "url": "https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Companion",
   "created_at": "2026-10-05T11:54:20.000Z",
-  "updated_at": "2026-11-11T01:47:10.000Z",
+  "updated_at": "2026-11-11T19:50:49.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -39,8 +39,8 @@
   "trending_score": 0,
   "parameters": 27356728560,
   "parameters_human": "27.36B",
-  "storage_bytes": 266981595948,
-  "storage_human": "267.0 GB",
+  "storage_bytes": 318261390604,
+  "storage_human": "318.3 GB",
   "base_model": "Qwen/Qwen3.8-27B, unsloth/Qwen3.8-27B, SpaceTimee/Suri-Qwen-3.8-27B-Uncensored",
   "formats": [
     "safetensors"

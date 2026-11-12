@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "PTTREP/appworld-native-standard-qwen3-4b",
+  "slug": "pttrep-appworld-native-standard-qwen3-4b",
+  "author": "PTTREP",
+  "url": "https://huggingface.co/PTTREP/appworld-native-standard-qwen3-4b",
+  "created_at": "2026-11-12T00:50:41.000Z",
+  "updated_at": "2026-11-12T00:58:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "appworld",
+    "agents",
+    "lora",
+    "tool-use",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1994240974,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

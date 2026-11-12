@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Dumi2025/hdfs-line-anomaly-electra-base-discriminator",
+  "slug": "dumi2025-hdfs-line-anomaly-electra-base-discriminator",
+  "author": "Dumi2025",
+  "url": "https://huggingface.co/Dumi2025/hdfs-line-anomaly-electra-base-discriminator",
+  "created_at": "2026-11-12T03:47:58.000Z",
+  "updated_at": "2026-11-12T03:48:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "electra",
+    "log-anomaly-detection",
+    "hdfs",
+    "text-classification",
+    "base_model:google/electra-base-discriminator",
+    "base_model:finetune:google/electra-base-discriminator",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437959248,
+  "storage_human": "438 MB",
+  "base_model": "google/electra-base-discriminator",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

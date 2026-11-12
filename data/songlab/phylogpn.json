@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "songlab/PhyloGPN",
+  "slug": "songlab-phylogpn",
+  "author": "songlab",
+  "url": "https://huggingface.co/songlab/PhyloGPN",
+  "created_at": "2024-11-07T23:53:38.000Z",
+  "updated_at": "2026-11-11T23:23:03.000Z",
+  "license": "cc",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "phylogpn",
+    "custom_code",
+    "arxiv:2503.03773",
+    "license:cc",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 532,
+  "trending_score": 0,
+  "parameters": 83185924,
+  "parameters_human": "83.2M",
+  "storage_bytes": 998397856,
+  "storage_human": "998 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

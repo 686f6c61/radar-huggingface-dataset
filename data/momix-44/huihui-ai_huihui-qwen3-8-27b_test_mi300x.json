@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Momix-44/huihui-ai_Huihui-Qwen3.8-27B_Test_Mi300X",
+  "slug": "momix-44-huihui-ai_huihui-qwen3-8-27b_test_mi300x",
+  "author": "Momix-44",
+  "url": "https://huggingface.co/Momix-44/huihui-ai_Huihui-Qwen3.8-27B_Test_Mi300X",
+  "created_at": "2026-11-11T20:29:28.000Z",
+  "updated_at": "2026-11-11T21:05:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 94830595168,
+  "storage_human": "94.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

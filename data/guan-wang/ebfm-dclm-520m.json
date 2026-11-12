@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "guan-wang/EBFM-DCLM-520M",
+  "slug": "guan-wang-ebfm-dclm-520m",
+  "author": "guan-wang",
+  "url": "https://huggingface.co/guan-wang/EBFM-DCLM-520M",
+  "created_at": "2026-10-15T09:23:35.000Z",
+  "updated_at": "2026-11-12T02:27:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ebfm",
+    "fill-mask",
+    "energy-based-language-model",
+    "custom-architecture",
+    "custom_code",
+    "arxiv:2610.33005",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 69,
+  "trending_score": 0,
+  "parameters": 519462400,
+  "parameters_human": "519.5M",
+  "storage_bytes": 2078749951,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/Task905-943-GR00T-Molmo-R3-10k",
+  "slug": "dongkkka-task905-943-gr00t-molmo-r3-10k",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/Task905-943-GR00T-Molmo-R3-10k",
+  "created_at": "2026-11-12T02:07:53.000Z",
+  "updated_at": "2026-11-12T02:11:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "gr00t",
+    "molmo",
+    "tactile",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144022064,
+  "parameters_human": "3.14B",
+  "storage_bytes": 25589006744,
+  "storage_human": "25.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

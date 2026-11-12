@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "TIE-Pilot/dspark-rebuttal-qwen3-4b-ladder",
+  "slug": "tie-pilot-dspark-rebuttal-qwen3-4b-ladder",
+  "author": "TIE-Pilot",
+  "url": "https://huggingface.co/TIE-Pilot/dspark-rebuttal-qwen3-4b-ladder",
+  "created_at": "2026-11-11T23:39:47.000Z",
+  "updated_at": "2026-11-11T23:43:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speculative-decoding",
+    "draft-model",
+    "dspark",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11162720514,
+  "storage_human": "11.2 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

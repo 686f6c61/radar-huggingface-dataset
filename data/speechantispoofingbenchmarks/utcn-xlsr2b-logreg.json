@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "SpeechAntiSpoofingBenchmarks/UTCN-XLSR2B-LogReg",
+  "slug": "speechantispoofingbenchmarks-utcn-xlsr2b-logreg",
+  "author": "SpeechAntiSpoofingBenchmarks",
+  "url": "https://huggingface.co/SpeechAntiSpoofingBenchmarks/UTCN-XLSR2B-LogReg",
+  "created_at": "2026-11-10T07:11:48.000Z",
+  "updated_at": "2026-11-11T23:22:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 93,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21837641,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

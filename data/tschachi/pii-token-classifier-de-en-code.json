@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "TSchachi/pii-token-classifier-de-en-code",
+  "slug": "tschachi-pii-token-classifier-de-en-code",
+  "author": "TSchachi",
+  "url": "https://huggingface.co/TSchachi/pii-token-classifier-de-en-code",
+  "created_at": "2026-11-11T20:44:04.000Z",
+  "updated_at": "2026-11-11T20:45:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "pii",
+    "privacy",
+    "named-entity-recognition",
+    "de",
+    "en",
+    "base_model:bardsai/eu-pii-anonimization-multilang",
+    "base_model:finetune:bardsai/eu-pii-anonimization-multilang",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277506117,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126829905,
+  "storage_human": "1.1 GB",
+  "base_model": "bardsai/eu-pii-anonimization-multilang",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

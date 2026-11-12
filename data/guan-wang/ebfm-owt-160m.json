@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "guan-wang/EBFM-OWT-160M",
+  "slug": "guan-wang-ebfm-owt-160m",
+  "author": "guan-wang",
+  "url": "https://huggingface.co/guan-wang/EBFM-OWT-160M",
+  "created_at": "2026-10-15T09:32:32.000Z",
+  "updated_at": "2026-11-12T02:28:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ebfm",
+    "fill-mask",
+    "energy-based-language-model",
+    "custom-architecture",
+    "custom_code",
+    "arxiv:2610.33005",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 71,
+  "trending_score": 0,
+  "parameters": 160556544,
+  "parameters_human": "160.6M",
+  "storage_bytes": 642984471,
+  "storage_human": "643 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

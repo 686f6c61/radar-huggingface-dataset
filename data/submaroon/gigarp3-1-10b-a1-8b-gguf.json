@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "SubMaroon/GigaRP3.1-10B-A1.8B-GGUF",
+  "slug": "submaroon-gigarp3-1-10b-a1-8b-gguf",
+  "author": "SubMaroon",
+  "url": "https://huggingface.co/SubMaroon/GigaRP3.1-10B-A1.8B-GGUF",
+  "created_at": "2026-11-11T23:57:56.000Z",
+  "updated_at": "2026-11-12T00:33:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "roleplay",
+    "russian",
+    "gigachat",
+    "moe",
+    "sillytavern",
+    "ru",
+    "arxiv:2408.16673",
+    "base_model:ai-sage/GigaChat3.1-10B-A1.8B-bf16",
+    "base_model:quantized:ai-sage/GigaChat3.1-10B-A1.8B-bf16",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10672535616,
+  "parameters_human": "10.67B",
+  "storage_bytes": 26672031905,
+  "storage_human": "26.7 GB",
+  "base_model": "ai-sage/GigaChat3.1-10B-A1.8B-bf16",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

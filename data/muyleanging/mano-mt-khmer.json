@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "muyleanging/Mano-MT-Khmer",
+  "slug": "muyleanging-mano-mt-khmer",
+  "author": "muyleanging",
+  "url": "https://huggingface.co/muyleanging/Mano-MT-Khmer",
+  "created_at": "2026-11-12T00:41:50.000Z",
+  "updated_at": "2026-11-12T00:41:51.000Z",
+  "license": "mano-tbd",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "km",
+    "en"
+  ],
+  "tags": [
+    "translation",
+    "khmer",
+    "english",
+    "onnx",
+    "on-device",
+    "km",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

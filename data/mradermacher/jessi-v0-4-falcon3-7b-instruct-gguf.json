@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/jessi-v0.4-falcon3-7b-instruct-GGUF",
+  "slug": "mradermacher-jessi-v0-4-falcon3-7b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/jessi-v0.4-falcon3-7b-instruct-GGUF",
+  "created_at": "2025-03-02T08:18:31.000Z",
+  "updated_at": "2026-11-11T22:29:15.000Z",
+  "license": "falcon-llm-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "falcon3",
+    "en",
+    "base_model:neopolita/jessi-v0.4-falcon3-7b-instruct",
+    "base_model:quantized:neopolita/jessi-v0.4-falcon3-7b-instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 119,
+  "trending_score": 0,
+  "parameters": 7455550464,
+  "parameters_human": "7.46B",
+  "storage_bytes": 66394076544,
+  "storage_human": "66.4 GB",
+  "base_model": "neopolita/jessi-v0.4-falcon3-7b-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "cstr/parler-tts-mini-v1.1-GGUF",
+  "slug": "cstr-parler-tts-mini-v1-1-gguf",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/parler-tts-mini-v1.1-GGUF",
+  "created_at": "2026-06-02T04:31:26.000Z",
+  "updated_at": "2026-11-11T22:31:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "ggml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ggml",
+    "gguf",
+    "tts",
+    "text-to-speech",
+    "parler-tts",
+    "musicgen",
+    "dac",
+    "crispasr",
+    "en",
+    "base_model:parler-tts/parler-tts-mini-v1.1",
+    "base_model:quantized:parler-tts/parler-tts-mini-v1.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1075,
+  "trending_score": 0,
+  "parameters": 72916,
+  "parameters_human": "72916",
+  "storage_bytes": 10392565248,
+  "storage_human": "10.4 GB",
+  "base_model": "parler-tts/parler-tts-mini-v1.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

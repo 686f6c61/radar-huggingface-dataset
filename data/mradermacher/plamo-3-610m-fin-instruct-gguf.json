@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/plamo-3-610m-fin-instruct-GGUF",
+  "slug": "mradermacher-plamo-3-610m-fin-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/plamo-3-610m-fin-instruct-GGUF",
+  "created_at": "2026-09-24T18:03:14.000Z",
+  "updated_at": "2026-11-12T03:53:52.000Z",
+  "license": "plamo-community-license",
+  "license_family": "non-commercial",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "finance",
+    "plamo",
+    "japanese",
+    "ja",
+    "base_model:pfnet/plamo-3-0.8b-fin-instruct",
+    "base_model:quantized:pfnet/plamo-3-0.8b-fin-instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 427,
+  "trending_score": 0,
+  "parameters": 890344960,
+  "parameters_human": "890.3M",
+  "storage_bytes": 8275630464,
+  "storage_human": "8.3 GB",
+  "base_model": "pfnet/plamo-3-0.8b-fin-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

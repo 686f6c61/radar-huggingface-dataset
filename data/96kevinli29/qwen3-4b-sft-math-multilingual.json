@@ -5,7 +5,7 @@
   "author": "96kevinli29",
   "url": "https://huggingface.co/96kevinli29/Qwen3-4B-SFT-Math-Multilingual",
   "created_at": "2026-11-11T16:12:57.000Z",
-  "updated_at": "2026-11-11T16:17:52.000Z",
+  "updated_at": "2026-11-11T16:29:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -53,7 +53,7 @@
   "trending_score": 0,
   "parameters": 4411424256,
   "parameters_human": "4.41B",
-  "storage_bytes": 8834317170,
+  "storage_bytes": 8834434905,
   "storage_human": "8.8 GB",
   "base_model": "Qwen/Qwen3-4B",
   "formats": [

@@ -5,7 +5,7 @@
   "author": "adipotnis",
   "url": "https://huggingface.co/adipotnis/Cosmos3-Edge-Charging",
   "created_at": "2026-11-11T14:57:27.000Z",
-  "updated_at": "2026-11-11T15:02:52.000Z",
+  "updated_at": "2026-11-11T23:39:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 4563688396,
   "parameters_human": "4.56B",
-  "storage_bytes": 18272030757,
-  "storage_human": "18.3 GB",
+  "storage_bytes": 47914135981,
+  "storage_human": "47.9 GB",
   "base_model": "lerobot/Cosmos3-Edge",
   "formats": [
     "safetensors"

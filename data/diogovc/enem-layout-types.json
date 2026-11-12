@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "diogovc/enem-layout-types",
+  "slug": "diogovc-enem-layout-types",
+  "author": "diogovc",
+  "url": "https://huggingface.co/diogovc/enem-layout-types",
+  "created_at": "2026-11-11T21:03:52.000Z",
+  "updated_at": "2026-11-11T21:04:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "enem",
+    "document-layout",
+    "layout-analysis",
+    "education",
+    "portuguese",
+    "image-classification",
+    "pt",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9896714,
+  "parameters_human": "9.9M",
+  "storage_bytes": 39755097,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Tipo de layout de questões do ENEM",
+      "dataset": "Questões revisadas do ENEM 2024 e 2025",
+      "metric": "Acurácia do tipo exato",
+      "value": 0.7135
+    },
+    {
+      "task": "Tipo de layout de questões do ENEM",
+      "dataset": "Questões revisadas do ENEM 2024 e 2025",
+      "metric": "Macro-F1 (corpo)",
+      "value": 0.2699
+    },
+    {
+      "task": "Tipo de layout de questões do ENEM",
+      "dataset": "Questões revisadas do ENEM 2024 e 2025",
+      "metric": "Macro-F1 (alternativas)",
+      "value": 0.8476
+    },
+    {
+      "task": "Tipo de layout de questões do ENEM",
+      "dataset": "Questões revisadas do ENEM 2024 e 2025",
+      "metric": "Macro-F1 (marcas)",
+      "value": 0.2469
+    }
+  ],
+  "sources": []
+}

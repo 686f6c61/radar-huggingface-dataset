@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "walston/X-MDD",
+  "slug": "walston-x-mdd",
+  "author": "walston",
+  "url": "https://huggingface.co/walston/X-MDD",
+  "created_at": "2026-11-12T02:51:37.000Z",
+  "updated_at": "2026-11-12T03:09:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "mispronunciation-detection",
+    "pronunciation-assessment",
+    "speech",
+    "qwen3-asr",
+    "in-context-learning",
+    "grpo",
+    "automatic-speech-recognition",
+    "zh",
+    "en",
+    "ar",
+    "arxiv:2610.23079",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:finetune:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2349465458,
+  "parameters_human": "2.35B",
+  "storage_bytes": 4710949976,
+  "storage_human": "4.7 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

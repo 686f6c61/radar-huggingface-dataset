@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "elvezjp/GPT-OSS-Swallow-120B-RL-v0.1-gguf",
+  "slug": "elvezjp-gpt-oss-swallow-120b-rl-v0-1-gguf",
+  "author": "elvezjp",
+  "url": "https://huggingface.co/elvezjp/GPT-OSS-Swallow-120B-RL-v0.1-gguf",
+  "created_at": "2026-02-20T17:21:23.000Z",
+  "updated_at": "2026-11-12T01:15:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "japanese",
+    "bilingual",
+    "ja",
+    "en",
+    "base_model:tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1",
+    "base_model:quantized:tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 116829156672,
+  "parameters_human": "116.83B",
+  "storage_bytes": 358079932800,
+  "storage_human": "358.1 GB",
+  "base_model": "tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

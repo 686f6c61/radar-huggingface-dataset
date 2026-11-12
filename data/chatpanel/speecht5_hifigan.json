@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "ChatPanel/speecht5_hifigan",
+  "slug": "chatpanel-speecht5_hifigan",
+  "author": "ChatPanel",
+  "url": "https://huggingface.co/ChatPanel/speecht5_hifigan",
+  "created_at": "2026-11-12T01:28:26.000Z",
+  "updated_at": "2026-11-12T01:28:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "hifigan",
+    "chatpanel",
+    "base_model:microsoft/speecht5_hifigan",
+    "base_model:quantized:microsoft/speecht5_hifigan",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18251672,
+  "storage_human": "18 MB",
+  "base_model": "microsoft/speecht5_hifigan",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

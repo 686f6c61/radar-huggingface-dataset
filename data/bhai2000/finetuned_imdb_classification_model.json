@@ -5,7 +5,7 @@
   "author": "bhai2000",
   "url": "https://huggingface.co/bhai2000/finetuned_imdb_classification_model",
   "created_at": "2026-11-11T19:22:02.000Z",
-  "updated_at": "2026-11-11T19:22:32.000Z",
+  "updated_at": "2026-11-11T20:37:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -24,14 +24,14 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 66955010,
   "parameters_human": "67.0M",
-  "storage_bytes": 267837761,
-  "storage_human": "268 MB",
-  "base_model": "distilbert-base-uncased",
+  "storage_bytes": 803513283,
+  "storage_human": "804 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
   "formats": [
     "safetensors"
   ],

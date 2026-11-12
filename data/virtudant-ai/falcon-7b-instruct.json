@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Virtudant-AI/falcon-7b-instruct",
+  "slug": "virtudant-ai-falcon-7b-instruct",
+  "author": "Virtudant-AI",
+  "url": "https://huggingface.co/Virtudant-AI/falcon-7b-instruct",
+  "created_at": "2026-11-12T00:39:18.000Z",
+  "updated_at": "2026-11-12T01:59:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "coreml",
+    "safetensors",
+    "falcon",
+    "custom_code",
+    "en",
+    "dataset:tiiuae/falcon-refinedweb",
+    "arxiv:2205.14135",
+    "arxiv:1911.02150",
+    "arxiv:2005.14165",
+    "arxiv:2104.09864",
+    "arxiv:2306.01116",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7217189760,
+  "parameters_human": "7.22B",
+  "storage_bytes": 56563132552,
+  "storage_human": "56.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

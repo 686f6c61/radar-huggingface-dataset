@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "SamSankar/tiny-aya-fire-3.35b-tamil-tanglish-clinical-triage-merged",
+  "slug": "samsankar-tiny-aya-fire-3-35b-tamil-tanglish-clinical-triage-merged",
+  "author": "SamSankar",
+  "url": "https://huggingface.co/SamSankar/tiny-aya-fire-3.35b-tamil-tanglish-clinical-triage-merged",
+  "created_at": "2026-11-10T07:27:11.000Z",
+  "updated_at": "2026-11-12T00:22:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cohere2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1406,
+  "trending_score": 0,
+  "parameters": 3349227520,
+  "parameters_human": "3.35B",
+  "storage_bytes": 20121819678,
+  "storage_human": "20.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

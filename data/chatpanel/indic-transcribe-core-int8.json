@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ChatPanel/indic-transcribe-core-int8",
+  "slug": "chatpanel-indic-transcribe-core-int8",
+  "author": "ChatPanel",
+  "url": "https://huggingface.co/ChatPanel/indic-transcribe-core-int8",
+  "created_at": "2026-11-11T22:07:28.000Z",
+  "updated_at": "2026-11-11T22:08:07.000Z",
+  "license": "indic-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "int8",
+    "indic",
+    "code-switching",
+    "chatpanel",
+    "automatic-speech-recognition",
+    "base_model:bodhan-ai/indic-transcribe-core",
+    "base_model:quantized:bodhan-ai/indic-transcribe-core",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1577521772,
+  "storage_human": "1.6 GB",
+  "base_model": "bodhan-ai/indic-transcribe-core",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

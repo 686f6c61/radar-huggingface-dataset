@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "onnx-community/Qwen3-0.6B-ONNX",
+  "slug": "onnx-community-qwen3-0-6b-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/Qwen3-0.6B-ONNX",
+  "created_at": "2025-04-28T22:23:09.000Z",
+  "updated_at": "2026-11-11T21:55:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "region:us"
+  ],
+  "likes": 44,
+  "downloads_30d": 19682,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8817198875,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

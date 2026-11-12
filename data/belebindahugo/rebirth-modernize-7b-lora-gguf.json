@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "belebindahugo/rebirth-modernize-7b-lora-gguf",
+  "slug": "belebindahugo-rebirth-modernize-7b-lora-gguf",
+  "author": "belebindahugo",
+  "url": "https://huggingface.co/belebindahugo/rebirth-modernize-7b-lora-gguf",
+  "created_at": "2026-11-12T02:07:38.000Z",
+  "updated_at": "2026-11-12T02:08:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "code"
+  ],
+  "tags": [
+    "gguf",
+    "code",
+    "lora",
+    "ollama",
+    "code-modernization",
+    "dataset:bigcode/commitpackft",
+    "dataset:bigcode/commitpack",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5046272,
+  "parameters_human": "5.0M",
+  "storage_bytes": 80867584,
+  "storage_human": "81 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

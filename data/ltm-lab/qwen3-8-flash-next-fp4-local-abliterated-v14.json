@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "LTM-Lab/Qwen3.8-Flash-Next-FP4-Local-Abliterated-v14",
+  "slug": "ltm-lab-qwen3-8-flash-next-fp4-local-abliterated-v14",
+  "author": "LTM-Lab",
+  "url": "https://huggingface.co/LTM-Lab/Qwen3.8-Flash-Next-FP4-Local-Abliterated-v14",
+  "created_at": "2026-11-11T16:52:12.000Z",
+  "updated_at": "2026-11-12T01:16:59.000Z",
+  "license": "nvidia-open-model-agreement",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "v14-episodic-memory",
+    "qwen3.8",
+    "qwen3.8-flash-next",
+    "abliterated",
+    "heretic",
+    "nvfp4",
+    "mxfp8",
+    "modelopt",
+    "mtp",
+    "dgx-spark",
+    "vllm",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "dataset:mlabonne/harmful_behaviors",
+    "dataset:mlabonne/harmless_alpaca",
+    "arxiv:2406.11717",
+    "base_model:DevelopingDad/Qwen3.8-Flash-Next-FP4-Local-Abliterated",
+    "base_model:quantized:DevelopingDad/Qwen3.8-Flash-Next-FP4-Local-Abliterated",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 187931804131,
+  "parameters_human": "187.93B",
+  "storage_bytes": 102251351030,
+  "storage_human": "102.3 GB",
+  "base_model": "DevelopingDad/Qwen3.8-Flash-Next-FP4-Local-Abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New South African Internet speed test website launched",
+      "url": "https://mybroadband.co.za/news/broadband/290988-new-south-african-internet-speed-test-website-launched.html",
+      "snippet": "Sep 1, 2019 · A new South African speed test platform – hosted at Speedtest.co.za – has been launched to give local Internet users …"
+    }
+  ]
+}

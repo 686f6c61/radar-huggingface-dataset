@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Yuanyuan-Lee/robotrtc-pi05-vace-4tasks-ft30k-rtc15k",
+  "slug": "yuanyuan-lee-robotrtc-pi05-vace-4tasks-ft30k-rtc15k",
+  "author": "Yuanyuan-Lee",
+  "url": "https://huggingface.co/Yuanyuan-Lee/robotrtc-pi05-vace-4tasks-ft30k-rtc15k",
+  "created_at": "2026-11-12T02:43:48.000Z",
+  "updated_at": "2026-11-12T03:16:24.000Z",
+  "license": "openpi-apache-2.0-with-gemma-terms",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "pi05",
+    "rtc",
+    "vace",
+    "bfloat16",
+    "rtc15000-v1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26832274583,
+  "storage_human": "26.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

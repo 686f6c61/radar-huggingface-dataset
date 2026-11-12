@@ -5,14 +5,15 @@
   "author": "BryanHan",
   "url": "https://huggingface.co/BryanHan/AURA",
   "created_at": "2026-11-11T06:50:06.000Z",
-  "updated_at": "2026-11-11T06:50:06.000Z",
+  "updated_at": "2026-11-11T08:48:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
-    "license:apache-2.0",
+    "safetensors",
+    "arxiv:2611.13687",
     "region:us"
   ],
   "likes": 0,
@@ -20,10 +21,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 683407620,
+  "storage_human": "683 MB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

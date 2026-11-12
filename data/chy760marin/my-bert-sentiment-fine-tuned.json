@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "CHY760MARIN/my-bert-sentiment-fine-tuned",
+  "slug": "chy760marin-my-bert-sentiment-fine-tuned",
+  "author": "CHY760MARIN",
+  "url": "https://huggingface.co/CHY760MARIN/my-bert-sentiment-fine-tuned",
+  "created_at": "2026-11-12T01:47:23.000Z",
+  "updated_at": "2026-11-12T01:47:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110618882,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442499064,
+  "storage_human": "442 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

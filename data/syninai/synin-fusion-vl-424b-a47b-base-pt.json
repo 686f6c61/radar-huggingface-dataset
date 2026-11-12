@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "SyninAI/SYNIN-FUSION-VL-424B-A47B-Base-PT",
+  "slug": "syninai-synin-fusion-vl-424b-a47b-base-pt",
+  "author": "SyninAI",
+  "url": "https://huggingface.co/SyninAI/SYNIN-FUSION-VL-424B-A47B-Base-PT",
+  "created_at": "2026-11-11T20:49:04.000Z",
+  "updated_at": "2026-11-11T20:49:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ernie4_5_moe_vl",
+    "image-text-to-text",
+    "ERNIE4.5",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 423526285184,
+  "parameters_human": "423.53B",
+  "storage_bytes": 847163698962,
+  "storage_human": "847.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-11-12T04:08:12.793Z",
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mradermacher/DCFT-wikipedia_biology_seed_science-etash-GGUF",
+  "slug": "mradermacher-dcft-wikipedia_biology_seed_science-etash-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/DCFT-wikipedia_biology_seed_science-etash-GGUF",
+  "created_at": "2025-03-11T01:12:24.000Z",
+  "updated_at": "2026-11-11T22:28:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146888832,
+  "storage_human": "68.1 GB",
+  "base_model": "mlfoundations-dev/DCFT-wikipedia_biology_seed_science-etash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

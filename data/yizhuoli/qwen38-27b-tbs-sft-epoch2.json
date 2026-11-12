@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "yizhuoli/qwen38-27b-tbs-sft-epoch2",
+  "slug": "yizhuoli-qwen38-27b-tbs-sft-epoch2",
+  "author": "yizhuoli",
+  "url": "https://huggingface.co/yizhuoli/qwen38-27b-tbs-sft-epoch2",
+  "created_at": "2026-11-12T00:58:10.000Z",
+  "updated_at": "2026-11-12T02:04:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "sft",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54733596093,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

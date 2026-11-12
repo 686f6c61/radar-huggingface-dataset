@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Chal1ce/Qwen3-0.6B-AquaCPT",
+  "slug": "chal1ce-qwen3-0-6b-aquacpt",
+  "author": "Chal1ce",
+  "url": "https://huggingface.co/Chal1ce/Qwen3-0.6B-AquaCPT",
+  "created_at": "2026-11-12T02:54:38.000Z",
+  "updated_at": "2026-11-12T02:54:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

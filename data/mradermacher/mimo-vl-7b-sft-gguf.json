@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiMo-VL-7B-SFT-GGUF",
+  "slug": "mradermacher-mimo-vl-7b-sft-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiMo-VL-7B-SFT-GGUF",
+  "created_at": "2025-05-30T10:33:41.000Z",
+  "updated_at": "2026-11-12T01:45:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:XiaomiMiMo/MiMo-VL-7B-SFT",
+    "base_model:quantized:XiaomiMiMo/MiMo-VL-7B-SFT",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 182,
+  "trending_score": 0,
+  "parameters": 7622619136,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70544595776,
+  "storage_human": "70.5 GB",
+  "base_model": "XiaomiMiMo/MiMo-VL-7B-SFT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

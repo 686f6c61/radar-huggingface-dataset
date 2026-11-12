@@ -5,7 +5,7 @@
   "author": "amd",
   "url": "https://huggingface.co/amd/CAE-FastWAM-lerobot",
   "created_at": "2026-11-10T01:00:58.000Z",
-  "updated_at": "2026-11-10T01:01:20.000Z",
+  "updated_at": "2026-11-11T11:18:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2,
+  "downloads_30d": 10,
   "trending_score": 0,
   "parameters": 5025451671,
   "parameters_human": "5.03B",

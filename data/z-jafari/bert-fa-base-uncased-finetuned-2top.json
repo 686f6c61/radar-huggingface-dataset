@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Z-Jafari/bert-fa-base-uncased-finetuned-2top",
+  "slug": "z-jafari-bert-fa-base-uncased-finetuned-2top",
+  "author": "Z-Jafari",
+  "url": "https://huggingface.co/Z-Jafari/bert-fa-base-uncased-finetuned-2top",
+  "created_at": "2026-05-30T17:42:51.000Z",
+  "updated_at": "2026-11-12T04:16:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "question-answering",
+    "generated_from_trainer",
+    "base_model:HooshvareLab/bert-fa-base-uncased",
+    "base_model:finetune:HooshvareLab/bert-fa-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

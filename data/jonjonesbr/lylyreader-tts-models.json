@@ -5,7 +5,7 @@
   "author": "JonJonesBR",
   "url": "https://huggingface.co/JonJonesBR/lylyreader-tts-models",
   "created_at": "2026-09-02T16:45:47.000Z",
-  "updated_at": "2026-10-13T17:36:28.000Z",
+  "updated_at": "2026-11-11T20:13:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,7 +20,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2268650782,
+  "storage_bytes": 2335840081,
   "storage_human": "2.3 GB",
   "base_model": null,
   "formats": [

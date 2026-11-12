@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "anassaifi12/qwen8b_finetuned_text_to_sql",
+  "slug": "anassaifi12-qwen8b_finetuned_text_to_sql",
+  "author": "anassaifi12",
+  "url": "https://huggingface.co/anassaifi12/qwen8b_finetuned_text_to_sql",
+  "created_at": "2026-11-11T20:58:18.000Z",
+  "updated_at": "2026-11-11T21:01:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-8B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-8B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939748,
+  "storage_human": "16.4 GB",
+  "base_model": "unsloth/Qwen3-8B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

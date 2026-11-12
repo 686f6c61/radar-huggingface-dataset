@@ -5,7 +5,7 @@
   "author": "Shardul007",
   "url": "https://huggingface.co/Shardul007/anlp-a3-transformer",
   "created_at": "2026-11-05T10:10:35.000Z",
-  "updated_at": "2026-11-05T10:10:46.000Z",
+  "updated_at": "2026-11-11T21:08:59.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,10 +20,10 @@
   "likes": 0,
   "downloads_30d": 29,
   "trending_score": 0,
-  "parameters": 6395392,
+  "parameters": 6411520,
   "parameters_human": "6.4M",
-  "storage_bytes": 25587824,
-  "storage_human": "26 MB",
+  "storage_bytes": 51240160,
+  "storage_human": "51 MB",
   "base_model": null,
   "formats": [
     "safetensors"

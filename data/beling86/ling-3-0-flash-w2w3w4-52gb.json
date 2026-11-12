@@ -5,7 +5,7 @@
   "author": "Beling86",
   "url": "https://huggingface.co/Beling86/Ling-3.0-flash-W2W3W4-52GB",
   "created_at": "2026-11-11T16:56:34.000Z",
-  "updated_at": "2026-11-11T17:10:28.000Z",
+  "updated_at": "2026-11-11T18:34:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,8 +38,8 @@
   "trending_score": 0,
   "parameters": 12808612576,
   "parameters_human": "12.81B",
-  "storage_bytes": 47657208421,
-  "storage_human": "47.7 GB",
+  "storage_bytes": 50709039956,
+  "storage_human": "50.7 GB",
   "base_model": "ling_flash",
   "formats": [
     "safetensors"

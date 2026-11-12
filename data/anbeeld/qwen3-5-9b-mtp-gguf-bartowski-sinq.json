@@ -5,7 +5,7 @@
   "author": "Anbeeld",
   "url": "https://huggingface.co/Anbeeld/Qwen3.5-9B-MTP-GGUF-Bartowski-SINQ",
   "created_at": "2026-11-10T18:00:47.000Z",
-  "updated_at": "2026-11-11T03:30:24.000Z",
+  "updated_at": "2026-11-11T11:57:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 9197093888,
   "parameters_human": "9.20B",
-  "storage_bytes": 40090837904,
-  "storage_human": "40.1 GB",
+  "storage_bytes": 162149925712,
+  "storage_human": "162.1 GB",
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "gguf"

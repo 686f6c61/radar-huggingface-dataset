@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "zenkingsama/bekko-embedding-v1-a25m-onnx",
+  "slug": "zenkingsama-bekko-embedding-v1-a25m-onnx",
+  "author": "zenkingsama",
+  "url": "https://huggingface.co/zenkingsama/bekko-embedding-v1-a25m-onnx",
+  "created_at": "2026-11-12T01:03:01.000Z",
+  "updated_at": "2026-11-12T01:03:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "modernbert",
+    "sentence-similarity",
+    "feature-extraction",
+    "base_model:hotchpotch/bekko-embedding-v1-a25m",
+    "base_model:quantized:hotchpotch/bekko-embedding-v1-a25m",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 233668854,
+  "storage_human": "234 MB",
+  "base_model": "hotchpotch/bekko-embedding-v1-a25m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

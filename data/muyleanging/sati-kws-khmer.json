@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "muyleanging/Sati-KWS-Khmer",
+  "slug": "muyleanging-sati-kws-khmer",
+  "author": "muyleanging",
+  "url": "https://huggingface.co/muyleanging/Sati-KWS-Khmer",
+  "created_at": "2026-11-12T00:41:57.000Z",
+  "updated_at": "2026-11-12T00:41:58.000Z",
+  "license": "sati-tbd",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [
+    "km"
+  ],
+  "tags": [
+    "keyword-spotting",
+    "wake-word",
+    "speech",
+    "khmer",
+    "onnx",
+    "on-device",
+    "audio-classification",
+    "km",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

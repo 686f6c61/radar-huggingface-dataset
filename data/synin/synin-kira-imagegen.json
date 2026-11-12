@@ -5,7 +5,7 @@
   "author": "Synin",
   "url": "https://huggingface.co/Synin/Synin-Kira-ImageGen",
   "created_at": "2026-11-04T08:54:15.000Z",
-  "updated_at": "2026-11-04T08:54:15.000Z",
+  "updated_at": "2026-11-12T01:21:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 22,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": 20430401088,
   "parameters_human": "20.43B",

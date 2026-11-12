@@ -5,7 +5,7 @@
   "author": "VectorNotion",
   "url": "https://huggingface.co/VectorNotion/swarit-indic-talk",
   "created_at": "2026-10-28T04:01:11.000Z",
-  "updated_at": "2026-11-05T11:19:13.000Z",
+  "updated_at": "2026-11-11T12:30:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -45,7 +45,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

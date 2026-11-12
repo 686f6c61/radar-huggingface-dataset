@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Phi_medmcqa_question_generation-physiology_lora-GGUF",
+  "slug": "mradermacher-phi_medmcqa_question_generation-physiology_lora-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Phi_medmcqa_question_generation-physiology_lora-GGUF",
+  "created_at": "2025-02-28T09:08:37.000Z",
+  "updated_at": "2026-11-12T01:45:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "trl",
+    "sft",
+    "generated_from_trainer",
+    "en",
+    "dataset:generator",
+    "base_model:emilykang/Phi_medmcqa_question_generation-physiology_lora",
+    "base_model:quantized:emilykang/Phi_medmcqa_question_generation-physiology_lora",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 2779683840,
+  "parameters_human": "2.78B",
+  "storage_bytes": 24997213952,
+  "storage_human": "25.0 GB",
+  "base_model": "emilykang/Phi_medmcqa_question_generation-physiology_lora",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何将整个wikipedia导出成一个纯文本文件?",
+      "url": "https://www.zhihu.com/question/21425170",
+      "snippet": "jwpl - Java-based Wikipedia Library -- An application programming interface for Wikipedia ，提供了API，可以直接由给定的词条名导 …"
+    },
+    {
+      "title": "为什么这么多人把「Wikipedia」称作「wiki」？ - 知乎",
+      "url": "https://www.zhihu.com/question/19581089",
+      "snippet": "Mar 25, 2011 · 为什么这么多人把「Wikipedia」称作「wiki」？ 我一直很难理解这个问题，为什么这么多人喜欢把专有名词和通用概 …"
+    },
+    {
+      "title": "维基百科官方网址是什么？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/723469471435372885.html",
+      "snippet": "Jul 24, 2024 · 维基百科官方网址是什么？ 1. 维基百科网址：https://www.wikipedia.org/2. 维基百科介绍：维基百科是一个基于维基技 …"
+    },
+    {
+      "title": "bigbang一天一天的歌词、要原版歌词和中文版翻译的如题 谢谢了",
+      "url": "https://zhidao.baidu.com/question/1830391065414523220.html",
+      "snippet": "Aug 15, 2014 · BigBang 《一天一天》歌词 一天一天 离开吧 Ye the finally I realize that I'm nothing without you I was so wrong forgive …"
+    }
+  ]
+}

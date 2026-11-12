@@ -5,7 +5,7 @@
   "author": "agastyasridharan",
   "url": "https://huggingface.co/agastyasridharan/veg-batch-adapters-public",
   "created_at": "2026-11-11T14:50:28.000Z",
-  "updated_at": "2026-11-11T14:57:19.000Z",
+  "updated_at": "2026-11-11T15:41:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3083040768,
-  "storage_human": "3.1 GB",
+  "storage_bytes": 25692006400,
+  "storage_human": "25.7 GB",
   "base_model": "Qwen/Qwen3-14B",
   "formats": [
     "safetensors"

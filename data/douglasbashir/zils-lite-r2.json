@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "DouglasBashir/zils-lite-r2",
+  "slug": "douglasbashir-zils-lite-r2",
+  "author": "DouglasBashir",
+  "url": "https://huggingface.co/DouglasBashir/zils-lite-r2",
+  "created_at": "2026-11-11T20:23:30.000Z",
+  "updated_at": "2026-11-11T20:23:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1706027688,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

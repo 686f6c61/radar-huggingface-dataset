@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SingVL_S1_4B-GGUF",
+  "slug": "mradermacher-singvl_s1_4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SingVL_S1_4B-GGUF",
+  "created_at": "2026-11-12T01:56:41.000Z",
+  "updated_at": "2026-11-12T02:13:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "decision-model",
+    "typed-decisions",
+    "multimodal",
+    "safetensors",
+    "en",
+    "base_model:inclusionAI/SingVL_S1_4B",
+    "base_model:quantized:inclusionAI/SingVL_S1_4B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945649216,
+  "storage_human": "39.9 GB",
+  "base_model": "inclusionAI/SingVL_S1_4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

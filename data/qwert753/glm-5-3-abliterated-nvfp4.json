@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Qwert753/GLM-5.3-ABLITERATED-NVFP4",
+  "slug": "qwert753-glm-5-3-abliterated-nvfp4",
+  "author": "Qwert753",
+  "url": "https://huggingface.co/Qwert753/GLM-5.3-ABLITERATED-NVFP4",
+  "created_at": "2026-11-12T01:01:26.000Z",
+  "updated_at": "2026-11-12T01:01:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "glm",
+    "moe",
+    "nvfp4",
+    "cybersecurity",
+    "offensive-security",
+    "mtp",
+    "en",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:mit",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 464864636799,
+  "storage_human": "464.9 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

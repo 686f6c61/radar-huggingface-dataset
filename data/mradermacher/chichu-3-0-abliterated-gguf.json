@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Chichu-3-0-Abliterated-GGUF",
+  "slug": "mradermacher-chichu-3-0-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Chichu-3-0-Abliterated-GGUF",
+  "created_at": "2026-11-12T00:58:47.000Z",
+  "updated_at": "2026-11-12T01:10:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Sebastianpro88/Chichu-3-0-Abliterated",
+    "base_model:quantized:Sebastianpro88/Chichu-3-0-Abliterated",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 29288885760,
+  "storage_human": "29.3 GB",
+  "base_model": "Sebastianpro88/Chichu-3-0-Abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

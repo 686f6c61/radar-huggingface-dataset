@@ -31,11 +31,10 @@
     "license:mit",
     "endpoints_compatible",
     "deploy:sagemaker",
-    "deploy:azure",
     "region:us"
   ],
   "likes": 346,
-  "downloads_30d": 6513150,
+  "downloads_30d": 6402732,
   "trending_score": 13,
   "parameters": 355412571,
   "parameters_human": "355.4M",

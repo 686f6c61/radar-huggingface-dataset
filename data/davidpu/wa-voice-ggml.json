@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "davidpu/wa-voice-ggml",
+  "slug": "davidpu-wa-voice-ggml",
+  "author": "davidpu",
+  "url": "https://huggingface.co/davidpu/wa-voice-ggml",
+  "created_at": "2026-11-12T02:09:38.000Z",
+  "updated_at": "2026-11-12T02:09:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "ggml",
+    "he",
+    "base_model:ivrit-ai/whisper-large-v3-turbo-ggml",
+    "base_model:finetune:ivrit-ai/whisper-large-v3-turbo-ggml",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 874188075,
+  "storage_human": "874 MB",
+  "base_model": "ivrit-ai/whisper-large-v3-turbo-ggml",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

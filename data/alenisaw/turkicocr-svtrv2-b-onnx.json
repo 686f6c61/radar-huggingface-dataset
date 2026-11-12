@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "alenisaw/turkicocr-svtrv2-b-onnx",
+  "slug": "alenisaw-turkicocr-svtrv2-b-onnx",
+  "author": "alenisaw",
+  "url": "https://huggingface.co/alenisaw/turkicocr-svtrv2-b-onnx",
+  "created_at": "2026-07-12T04:26:42.000Z",
+  "updated_at": "2026-11-12T04:11:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "openocr",
+  "languages": [
+    "kk",
+    "ky",
+    "ru"
+  ],
+  "tags": [
+    "openocr",
+    "onnx",
+    "ocr",
+    "text-recognition",
+    "svtrv2",
+    "turkicocr",
+    "cyrillic",
+    "image-to-text",
+    "kk",
+    "ky",
+    "ru",
+    "dataset:alenisaw/turkicocr-cyrillic",
+    "base_model:alenisaw/turkicocr-svtrv2-b",
+    "base_model:quantized:alenisaw/turkicocr-svtrv2-b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79901097,
+  "storage_human": "80 MB",
+  "base_model": "alenisaw/turkicocr-svtrv2-b",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

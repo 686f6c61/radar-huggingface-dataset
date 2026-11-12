@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Anony-0x3f/opview-v2-30k",
+  "slug": "anony-0x3f-opview-v2-30k",
+  "author": "Anony-0x3f",
+  "url": "https://huggingface.co/Anony-0x3f/opview-v2-30k",
+  "created_at": "2026-11-11T22:49:11.000Z",
+  "updated_at": "2026-11-11T22:56:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "eeg",
+    "brain",
+    "foundation-model",
+    "self-supervised",
+    "neuroscience",
+    "feature-extraction",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87691839,
+  "storage_human": "88 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

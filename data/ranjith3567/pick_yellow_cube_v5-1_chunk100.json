@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "ranjith3567/pick_yellow_cube_v5.1_chunk100",
+  "slug": "ranjith3567-pick_yellow_cube_v5-1_chunk100",
+  "author": "ranjith3567",
+  "url": "https://huggingface.co/ranjith3567/pick_yellow_cube_v5.1_chunk100",
+  "created_at": "2026-11-12T04:12:10.000Z",
+  "updated_at": "2026-11-12T04:12:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:ranjith3567/pick_yellow_cube_v5_20261105_191046",
+    "arxiv:2506.01844",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906727744,
+  "storage_human": "907 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

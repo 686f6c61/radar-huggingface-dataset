@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "nberezny/act_hybwide_wp",
+  "slug": "nberezny-act_hybwide_wp",
+  "author": "nberezny",
+  "url": "https://huggingface.co/nberezny/act_hybwide_wp",
+  "created_at": "2026-11-11T22:08:17.000Z",
+  "updated_at": "2026-11-11T22:09:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:nberezny/franka_pick_place_hybwide_wp",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51583627,
+  "parameters_human": "51.6M",
+  "storage_bytes": 412736096,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

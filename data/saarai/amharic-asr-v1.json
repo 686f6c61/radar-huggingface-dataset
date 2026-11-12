@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "SaarAI/Amharic-ASR-v1",
+  "slug": "saarai-amharic-asr-v1",
+  "author": "SaarAI",
+  "url": "https://huggingface.co/SaarAI/Amharic-ASR-v1",
+  "created_at": "2026-11-12T00:03:51.000Z",
+  "updated_at": "2026-11-12T00:04:06.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "am"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2-bert",
+    "automatic-speech-recognition",
+    "amharic",
+    "ethiopic",
+    "telecom",
+    "ctc",
+    "kenlm",
+    "pyctcdecode",
+    "ethio-asr",
+    "am",
+    "dataset:SaarAI/waxal-amharic-combined",
+    "dataset:google/WaxalNLP",
+    "dataset:Ibtihal02/amharic-commonvoice-asr",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:wikimedia/wikipedia",
+    "arxiv:2610.26448",
+    "arxiv:2603.23654",
+    "base_model:badrex/Ethio-ASR-amharic",
+    "base_model:finetune:badrex/Ethio-ASR-amharic",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 606098651,
+  "parameters_human": "606.1M",
+  "storage_bytes": 3138762419,
+  "storage_human": "3.1 GB",
+  "base_model": "badrex/Ethio-ASR-amharic, facebook/w2v-bert-2.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2404.13362] Semantically Corrected Amharic Automatic Speech ...",
+      "url": "https://arxiv.org/abs/2404.13362",
+      "snippet": "Furthermore, we introduce a post-processing approach using a transformer encoder-decoder architecture to organize raw ASR outputs into a grammatically complete and semantically meaningful Amharic sentence. Through experiments on the corrected test dataset, our model enhances the semantic correctness of Amharic speech recognition systems, achieving a Character Error Rate (CER) of 5.5\\% and a Word Error Rate (WER) of 23.3\\%. From: Samuael Adnew [view email] [v1] Sat, 20 Apr 2024 12:08:00 UTC (191 KB)"
+    }
+  ]
+}

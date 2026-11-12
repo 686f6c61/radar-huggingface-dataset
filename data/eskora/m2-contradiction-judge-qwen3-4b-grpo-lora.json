@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "eskora/m2-contradiction-judge-qwen3-4b-grpo-lora",
+  "slug": "eskora-m2-contradiction-judge-qwen3-4b-grpo-lora",
+  "author": "eskora",
+  "url": "https://huggingface.co/eskora/m2-contradiction-judge-qwen3-4b-grpo-lora",
+  "created_at": "2026-11-09T12:26:33.000Z",
+  "updated_at": "2026-11-11T21:52:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "unsloth",
+    "qwen3",
+    "grpo",
+    "reinforcement-learning",
+    "contradiction-detection",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:eskora/memory-contradiction-pairs-hard",
+    "dataset:eskora/memory-contradiction-pairs",
+    "base_model:unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit",
+    "base_model:adapter:unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275731820,
+  "storage_human": "276 MB",
+  "base_model": "unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

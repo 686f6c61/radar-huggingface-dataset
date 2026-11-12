@@ -5,7 +5,7 @@
   "author": "ShootTheSound",
   "url": "https://huggingface.co/ShootTheSound/Fizgig-MiniMax-H3-Image-Training-Adapter",
   "created_at": "2026-11-10T22:13:08.000Z",
-  "updated_at": "2026-11-10T22:13:30.000Z",
+  "updated_at": "2026-11-11T15:23:24.000Z",
   "license": "minimax-h3-image-community-license",
   "license_family": "non-commercial",
   "pipeline_tag": null,
@@ -19,7 +19,7 @@
     "license:other",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

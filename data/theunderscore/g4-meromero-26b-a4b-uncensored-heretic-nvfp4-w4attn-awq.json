@@ -5,7 +5,7 @@
   "author": "TheUnderscore",
   "url": "https://huggingface.co/TheUnderscore/G4-MeroMero-26B-A4B-uncensored-heretic-NVFP4-W4ATTN-AWQ",
   "created_at": "2026-11-11T17:06:42.000Z",
-  "updated_at": "2026-11-11T17:08:49.000Z",
+  "updated_at": "2026-11-11T20:39:52.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,6 +29,8 @@
     "vllm",
     "conversational",
     "en",
+    "base_model:llmfan46/G4-MeroMero-26B-A4B-it-uncensored-heretic",
+    "base_model:quantized:llmfan46/G4-MeroMero-26B-A4B-it-uncensored-heretic",
     "license:apache-2.0",
     "endpoints_compatible",
     "8-bit",
@@ -41,7 +43,7 @@
   "parameters_human": "26.54B",
   "storage_bytes": 17882752568,
   "storage_human": "17.9 GB",
-  "base_model": "zerofata/G4-MeroMero-26B-A4B-uncensored-heretic",
+  "base_model": "llmfan46/G4-MeroMero-26B-A4B-it-uncensored-heretic",
   "formats": [
     "safetensors"
   ],

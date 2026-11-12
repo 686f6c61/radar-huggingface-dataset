@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "sallani/MrCompliance-AIRisk-Qwen2.5-1.5B-Edge-ONNX",
+  "slug": "sallani-mrcompliance-airisk-qwen2-5-1-5b-edge-onnx",
+  "author": "sallani",
+  "url": "https://huggingface.co/sallani/MrCompliance-AIRisk-Qwen2.5-1.5B-Edge-ONNX",
+  "created_at": "2026-11-11T19:42:53.000Z",
+  "updated_at": "2026-11-11T21:28:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen2",
+    "text-generation",
+    "webgpu",
+    "ai-risk",
+    "mrcompliance",
+    "edge",
+    "conversational",
+    "fr",
+    "en",
+    "base_model:sallani/MrCompliance-AIRisk-Qwen2.5-1.5B-Edge",
+    "base_model:quantized:sallani/MrCompliance-AIRisk-Qwen2.5-1.5B-Edge",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3237232066,
+  "storage_human": "3.2 GB",
+  "base_model": "sallani/MrCompliance-AIRisk-Qwen2.5-1.5B-Edge",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

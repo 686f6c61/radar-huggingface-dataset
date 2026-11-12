@@ -5,7 +5,7 @@
   "author": "Arki05",
   "url": "https://huggingface.co/Arki05/Qwen3.8-27B-GGUF",
   "created_at": "2026-10-29T01:54:05.000Z",
-  "updated_at": "2026-11-02T01:51:26.000Z",
+  "updated_at": "2026-11-11T16:01:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 103051756422,
+  "storage_bytes": 103052351765,
   "storage_human": "103.1 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

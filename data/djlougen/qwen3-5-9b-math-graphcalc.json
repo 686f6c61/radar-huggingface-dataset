@@ -1,0 +1,151 @@
+{
+  "schema": 1,
+  "id": "DJLougen/Qwen3.5-9B-Math-GraphCalc",
+  "slug": "djlougen-qwen3-5-9b-math-graphcalc",
+  "author": "DJLougen",
+  "url": "https://huggingface.co/DJLougen/Qwen3.5-9B-Math-GraphCalc",
+  "created_at": "2026-11-11T21:38:02.000Z",
+  "updated_at": "2026-11-11T23:33:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "weight-space-modeling",
+    "zero-gradient",
+    "risc-v",
+    "in-weights-computer",
+    "gated-deltanet",
+    "math",
+    "graphing-calculator",
+    "pedagogy",
+    "qwen3_5",
+    "conversational",
+    "en",
+    "arxiv:2505.09388",
+    "arxiv:2412.15115",
+    "arxiv:2409.12122",
+    "arxiv:2503.19786",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8985670530,
+  "parameters_human": "8.99B",
+  "storage_bytes": 18093097151,
+  "storage_human": "18.1 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Hard Math & Function Graphing (Disjoint Held-Out)",
+      "dataset": "Carbon-GraphCalc-HeldOut-60",
+      "metric": "Math Accuracy (%)",
+      "value": 96.67
+    },
+    {
+      "task": "Hard Math & Function Graphing (Disjoint Held-Out)",
+      "dataset": "Carbon-GraphCalc-HeldOut-60",
+      "metric": "Verified Pedagogical Teaching (%)",
+      "value": 70
+    },
+    {
+      "task": "Hard Math & Function Graphing (Disjoint Held-Out)",
+      "dataset": "Carbon-GraphCalc-HeldOut-60",
+      "metric": "Graph Feature Accuracy (%)",
+      "value": 97.06
+    },
+    {
+      "task": "Hard Math & Function Graphing (Disjoint Held-Out)",
+      "dataset": "Carbon-GraphCalc-HeldOut-60",
+      "metric": "Function Plotting Rate (%)",
+      "value": 100
+    },
+    {
+      "task": "Hard Math & Function Graphing (Disjoint Held-Out)",
+      "dataset": "Carbon-GraphCalc-HeldOut-60",
+      "metric": "In-Weights RV32 Execution Lockstep (%)",
+      "value": 100
+    },
+    {
+      "task": "Zero-Shot Math Tutoring (Plain + ChatML Held-Out)",
+      "dataset": "Carbon-MathTutor-HeldOut-180",
+      "metric": "Overall Math Accuracy (%)",
+      "value": 86.67
+    },
+    {
+      "task": "Zero-Shot Math Tutoring (Plain + ChatML Held-Out)",
+      "dataset": "Carbon-MathTutor-HeldOut-180",
+      "metric": "Plain Q&A Math Accuracy (%)",
+      "value": 80.56
+    },
+    {
+      "task": "Zero-Shot Math Tutoring (Plain + ChatML Held-Out)",
+      "dataset": "Carbon-MathTutor-HeldOut-180",
+      "metric": "Verified Pedagogical Teaching (%)",
+      "value": 73.06
+    },
+    {
+      "task": "GSM8K Official Test (Zero-Shot Greedy)",
+      "dataset": "openai/gsm8k",
+      "metric": "ChatML Zero-Shot Accuracy (%)",
+      "value": 78.85
+    },
+    {
+      "task": "GSM8K Official Test (Zero-Shot Greedy)",
+      "dataset": "openai/gsm8k",
+      "metric": "Mean Accuracy Plain+ChatML (%)",
+      "value": 75.78
+    },
+    {
+      "task": "GSM8K Official Test (Zero-Shot Greedy)",
+      "dataset": "openai/gsm8k",
+      "metric": "Verified Pedagogical Teaching (%)",
+      "value": 53.07
+    },
+    {
+      "task": "MATH-500 Official Competition Benchmark (Zero-Shot Greedy)",
+      "dataset": "HuggingFaceH4/MATH-500",
+      "metric": "ChatML Zero-Shot Accuracy (%)",
+      "value": 58.2
+    },
+    {
+      "task": "MATH-500 Official Competition Benchmark (Zero-Shot Greedy)",
+      "dataset": "HuggingFaceH4/MATH-500",
+      "metric": "Mean Accuracy Plain+ChatML (%)",
+      "value": 51.8
+    },
+    {
+      "task": "MATH-500 Official Competition Benchmark (Zero-Shot Greedy)",
+      "dataset": "HuggingFaceH4/MATH-500",
+      "metric": "Verified Pedagogical Teaching (%)",
+      "value": 42.4
+    },
+    {
+      "task": "AIME 2024 Olympiad Benchmark (Zero-Shot Greedy)",
+      "dataset": "HuggingFaceH4/aime_2024",
+      "metric": "ChatML Zero-Shot Accuracy (%)",
+      "value": 10
+    }
+  ],
+  "sources": []
+}

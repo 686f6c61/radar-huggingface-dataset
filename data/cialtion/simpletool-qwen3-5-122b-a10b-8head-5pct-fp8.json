@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Cialtion/SimpleTool-Qwen3.5-122B-A10B-8Head-5pct-FP8",
+  "slug": "cialtion-simpletool-qwen3-5-122b-a10b-8head-5pct-fp8",
+  "author": "Cialtion",
+  "url": "https://huggingface.co/Cialtion/SimpleTool-Qwen3.5-122B-A10B-8Head-5pct-FP8",
+  "created_at": "2026-11-11T18:12:32.000Z",
+  "updated_at": "2026-11-11T22:17:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "simpletool",
+    "tool-calling",
+    "multi-head",
+    "text-generation",
+    "conversational",
+    "zh",
+    "en",
+    "dataset:Cialtion/SimpleTool-Diagnostic-800",
+    "base_model:Qwen/Qwen3.5-122B-A10B",
+    "base_model:quantized:Qwen/Qwen3.5-122B-A10B",
+    "license:apache-2.0",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125086497008,
+  "parameters_human": "125.09B",
+  "storage_bytes": 127183004406,
+  "storage_human": "127.2 GB",
+  "base_model": "Qwen/Qwen3.5-122B-A10B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

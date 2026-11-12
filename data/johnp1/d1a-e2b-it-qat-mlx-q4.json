@@ -5,7 +5,7 @@
   "author": "JohnP1",
   "url": "https://huggingface.co/JohnP1/d1a-e2b-it-qat-mlx-q4",
   "created_at": "2026-10-25T06:20:45.000Z",
-  "updated_at": "2026-11-10T15:24:55.000Z",
+  "updated_at": "2026-11-11T17:37:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -50,7 +50,7 @@
   "trending_score": 0,
   "parameters": 4628569379,
   "parameters_human": "4.63B",
-  "storage_bytes": 6798705640,
+  "storage_bytes": 6798723671,
   "storage_human": "6.8 GB",
   "base_model": "google/gemma-4-E2B-it-qat-w4a16-ct",
   "formats": [

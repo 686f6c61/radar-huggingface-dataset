@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Dere64/Ani-me",
+  "slug": "dere64-ani-me",
+  "author": "Dere64",
+  "url": "https://huggingface.co/Dere64/Ani-me",
+  "created_at": "2025-09-04T02:08:52.000Z",
+  "updated_at": "2026-11-12T03:35:08.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 299501089031,
+  "storage_human": "299.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

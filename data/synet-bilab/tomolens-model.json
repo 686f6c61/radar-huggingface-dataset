@@ -5,7 +5,7 @@
   "author": "SynET-Bilab",
   "url": "https://huggingface.co/SynET-Bilab/tomolens-model",
   "created_at": "2026-11-11T06:45:55.000Z",
-  "updated_at": "2026-11-11T08:20:11.000Z",
+  "updated_at": "2026-11-12T02:18:18.000Z",
   "license": "tomolens-per-model-licenses",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,6 +23,7 @@
     "preprocess",
     "IsoNet2",
     "nnInteractive",
+    "amyloid",
     "license:other",
     "region:us"
   ],
@@ -31,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1195875638,
-  "storage_human": "1.2 GB",
+  "storage_bytes": 1445889561,
+  "storage_human": "1.4 GB",
   "base_model": null,
   "formats": [
     "onnx"

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "aladin2026vn/fixloop-gemma-4-code-repair-agent",
+  "slug": "aladin2026vn-fixloop-gemma-4-code-repair-agent",
+  "author": "aladin2026vn",
+  "url": "https://huggingface.co/aladin2026vn/fixloop-gemma-4-code-repair-agent",
+  "created_at": "2026-11-12T03:59:37.000Z",
+  "updated_at": "2026-11-12T04:00:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gemma-4",
+    "code-repair",
+    "agent",
+    "llama-cpp",
+    "kaggle",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Current Local Time in Tbilisi, Georgia - timeanddate.com",
+      "url": "https://www.timeanddate.com/worldclock/georgia/tbilisi",
+      "snippet": "Current local time in Georgia – Tbilisi. Get Tbilisi's weather and area codes, time zone and DST. Explore Tbilisi's sunrise and sunset, …"
+    }
+  ]
+}

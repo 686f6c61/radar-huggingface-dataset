@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Plans11/recursive-language-model-198m",
+  "slug": "plans11-recursive-language-model-198m",
+  "author": "Plans11",
+  "url": "https://huggingface.co/Plans11/recursive-language-model-198m",
+  "created_at": "2026-11-12T01:17:21.000Z",
+  "updated_at": "2026-11-12T01:17:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "recursive_language_model",
+    "text-generation",
+    "pytorch",
+    "transformer",
+    "recursive-language-model",
+    "mixture-of-recursion",
+    "adaptive-computation",
+    "perplexity-routing",
+    "self-supervised-perplexity-guided-adaptive-compute",
+    "custom_code",
+    "en",
+    "dataset:Anthropic/hh-rlhf",
+    "dataset:stingning/ultrachat",
+    "dataset:vicgalle/alpaca-gpt4",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 198464806,
+  "parameters_human": "198.5M",
+  "storage_bytes": 793878180,
+  "storage_human": "794 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

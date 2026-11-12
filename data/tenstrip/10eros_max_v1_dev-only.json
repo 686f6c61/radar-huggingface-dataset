@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "TenStrip/10Eros_Max_v1_dev-only",
+  "slug": "tenstrip-10eros_max_v1_dev-only",
+  "author": "TenStrip",
+  "url": "https://huggingface.co/TenStrip/10Eros_Max_v1_dev-only",
+  "created_at": "2026-11-07T01:18:00.000Z",
+  "updated_at": "2026-11-10T08:01:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 244828066626,
+  "storage_human": "244.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

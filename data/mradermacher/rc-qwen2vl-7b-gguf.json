@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/RC-Qwen2VL-7b-GGUF",
+  "slug": "mradermacher-rc-qwen2vl-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/RC-Qwen2VL-7b-GGUF",
+  "created_at": "2025-08-18T22:20:02.000Z",
+  "updated_at": "2026-11-12T00:38:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "multimodal",
+    "llm",
+    "personalized_multimodal_understanding",
+    "en",
+    "base_model:weihongliang/RC-Qwen2VL-7b",
+    "base_model:quantized:weihongliang/RC-Qwen2VL-7b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70223550784,
+  "storage_human": "70.2 GB",
+  "base_model": "weihongliang/RC-Qwen2VL-7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

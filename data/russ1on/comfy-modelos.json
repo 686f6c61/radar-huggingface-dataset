@@ -5,7 +5,7 @@
   "author": "Russ1on",
   "url": "https://huggingface.co/Russ1on/comfy-modelos",
   "created_at": "2026-11-08T20:28:05.000Z",
-  "updated_at": "2026-11-11T19:36:27.000Z",
+  "updated_at": "2026-11-12T01:45:20.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "onnx",
+    "safetensors",
     "gguf",
     "endpoints_compatible",
     "region:us",
@@ -23,12 +24,13 @@
   "trending_score": 0,
   "parameters": 32762123264,
   "parameters_human": "32.76B",
-  "storage_bytes": 249223483355,
-  "storage_human": "249.2 GB",
+  "storage_bytes": 274315415713,
+  "storage_human": "274.3 GB",
   "base_model": null,
   "formats": [
     "gguf",
-    "onnx"
+    "onnx",
+    "safetensors"
   ],
   "is_conversational": true,
   "gated": false,

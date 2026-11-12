@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/simplixity-writer-4b-GGUF",
+  "slug": "mradermacher-simplixity-writer-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/simplixity-writer-4b-GGUF",
+  "created_at": "2026-11-12T01:22:55.000Z",
+  "updated_at": "2026-11-12T01:40:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "rag",
+    "citations",
+    "qlora",
+    "qwen3.5",
+    "simplixity",
+    "en",
+    "de",
+    "base_model:stneric/simplixity-writer-4b",
+    "base_model:quantized:stneric/simplixity-writer-4b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 41004118080,
+  "storage_human": "41.0 GB",
+  "base_model": "stneric/simplixity-writer-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -213,11 +213,10 @@
     "arxiv:1911.02116",
     "license:mit",
     "endpoints_compatible",
-    "deploy:azure",
     "region:us"
   ],
   "likes": 968,
-  "downloads_30d": 8873594,
+  "downloads_30d": 8832635,
   "trending_score": 15,
   "parameters": 278885778,
   "parameters_human": "278.9M",

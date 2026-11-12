@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "scottlowry/Swift1.5-Qwen3.8-Flash-Next-oQ3.5e-mtp",
+  "slug": "scottlowry-swift1-5-qwen3-8-flash-next-oq3-5e-mtp",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/Swift1.5-Qwen3.8-Flash-Next-oQ3.5e-mtp",
+  "created_at": "2026-11-12T00:32:25.000Z",
+  "updated_at": "2026-11-12T00:36:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "oq",
+    "quantized",
+    "mtp",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 97360782962,
+  "storage_human": "97.4 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

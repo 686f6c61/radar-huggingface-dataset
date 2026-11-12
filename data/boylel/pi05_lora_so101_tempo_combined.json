@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "boylel/pi05_lora_so101_tempo_combined",
+  "slug": "boylel-pi05_lora_so101_tempo_combined",
+  "author": "boylel",
+  "url": "https://huggingface.co/boylel/pi05_lora_so101_tempo_combined",
+  "created_at": "2026-11-12T02:54:17.000Z",
+  "updated_at": "2026-11-12T02:54:44.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:boylel/so101_tempo_in_white_container_combined",
+    "base_model:lerobot/pi05_base",
+    "base_model:adapter:lerobot/pi05_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1739545952,
+  "storage_human": "1.7 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

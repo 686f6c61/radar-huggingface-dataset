@@ -5,7 +5,7 @@
   "author": "aeoniannn",
   "url": "https://huggingface.co/aeoniannn/Qwen2.5-7B-raph-Mimic",
   "created_at": "2026-10-01T02:40:26.000Z",
-  "updated_at": "2026-11-11T02:24:39.000Z",
+  "updated_at": "2026-11-12T03:58:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 254,
+  "downloads_30d": 455,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 43536670263,
-  "storage_human": "43.5 GB",
+  "storage_bytes": 87061918261,
+  "storage_human": "87.1 GB",
   "base_model": "unsloth/Qwen2.5-7B-Instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

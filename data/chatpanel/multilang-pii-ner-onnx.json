@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "ChatPanel/multilang-pii-ner-ONNX",
+  "slug": "chatpanel-multilang-pii-ner-onnx",
+  "author": "ChatPanel",
+  "url": "https://huggingface.co/ChatPanel/multilang-pii-ner-ONNX",
+  "created_at": "2026-11-12T01:21:11.000Z",
+  "updated_at": "2026-11-12T01:21:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "xlm-roberta",
+    "chatpanel",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 295763469,
+  "storage_human": "296 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "manateelazycat/zh-clip-vit-roberta-large-patch14",
+  "slug": "manateelazycat-zh-clip-vit-roberta-large-patch14",
+  "author": "manateelazycat",
+  "url": "https://huggingface.co/manateelazycat/zh-clip-vit-roberta-large-patch14",
+  "created_at": "2026-10-26T06:04:20.000Z",
+  "updated_at": "2026-11-12T03:29:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "zhclip",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 631095041,
+  "parameters_human": "631.1M",
+  "storage_bytes": 5917121200,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "Shardul007",
   "url": "https://huggingface.co/Shardul007/anlp-a3-flat",
   "created_at": "2026-11-05T12:35:08.000Z",
-  "updated_at": "2026-11-05T12:35:20.000Z",
+  "updated_at": "2026-11-11T23:22:47.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 32,
   "trending_score": 0,
-  "parameters": 6484766,
+  "parameters": 6500390,
   "parameters_human": "6.5M",
-  "storage_bytes": 25952712,
-  "storage_human": "26 MB",
+  "storage_bytes": 51967920,
+  "storage_human": "52 MB",
   "base_model": null,
   "formats": [
     "safetensors"

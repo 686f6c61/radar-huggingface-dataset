@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "fraQtl/Qwen3.6-35B-A3B-Hi-Fi-GGUF",
+  "slug": "fraqtl-qwen3-6-35b-a3b-hi-fi-gguf",
+  "author": "fraQtl",
+  "url": "https://huggingface.co/fraQtl/Qwen3.6-35B-A3B-Hi-Fi-GGUF",
+  "created_at": "2026-05-25T04:57:39.000Z",
+  "updated_at": "2026-11-12T03:44:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "q4_k_m",
+    "qwen3.6",
+    "qwen3.6-35b-a3b",
+    "moe",
+    "llama-cpp",
+    "fraqtl",
+    "imatrix",
+    "conversational",
+    "text-generation",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 128,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 21636776997,
+  "storage_human": "21.6 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

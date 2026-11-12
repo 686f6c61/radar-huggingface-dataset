@@ -5,7 +5,7 @@
   "author": "alejandro-rodriguez",
   "url": "https://huggingface.co/alejandro-rodriguez/tiny-random-nemotron-h",
   "created_at": "2026-10-29T16:22:13.000Z",
-  "updated_at": "2026-10-29T16:22:23.000Z",
+  "updated_at": "2026-11-11T08:05:37.000Z",
   "license": "nvidia-nemotron-open-model-license",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 106,
+  "downloads_30d": 109,
   "trending_score": 0,
   "parameters": 16919928,
   "parameters_human": "16.9M",
-  "storage_bytes": 84763172,
-  "storage_human": "85 MB",
+  "storage_bytes": 152448860,
+  "storage_human": "152 MB",
   "base_model": null,
   "formats": [
     "safetensors"

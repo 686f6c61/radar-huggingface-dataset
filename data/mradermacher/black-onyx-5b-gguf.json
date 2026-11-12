@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Black-Onyx-5B-GGUF",
+  "slug": "mradermacher-black-onyx-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Black-Onyx-5B-GGUF",
+  "created_at": "2026-11-12T00:45:53.000Z",
+  "updated_at": "2026-11-12T01:08:00.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "cybersecurity",
+    "secure-code-generation",
+    "threat-intelligence",
+    "vulnerability-detection",
+    "gemma",
+    "en",
+    "base_model:atmike/Black-Onyx-5B",
+    "base_model:quantized:atmike/Black-Onyx-5B",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 49578585088,
+  "storage_human": "49.6 GB",
+  "base_model": "atmike/Black-Onyx-5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

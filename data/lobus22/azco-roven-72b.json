@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Lobus22/Azco-Roven-72B",
+  "slug": "lobus22-azco-roven-72b",
+  "author": "Lobus22",
+  "url": "https://huggingface.co/Lobus22/Azco-Roven-72B",
+  "created_at": "2026-11-11T01:33:48.000Z",
+  "updated_at": "2026-11-12T03:53:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31219095720,
+  "storage_human": "31.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

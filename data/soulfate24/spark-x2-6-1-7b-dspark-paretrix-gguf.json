@@ -5,7 +5,7 @@
   "author": "Soulfate24",
   "url": "https://huggingface.co/Soulfate24/Spark-X2.6-1.7B-DSpark-Paretrix-GGUF",
   "created_at": "2026-11-03T20:37:33.000Z",
-  "updated_at": "2026-11-03T20:48:58.000Z",
+  "updated_at": "2026-11-11T18:40:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -44,8 +44,8 @@
   "trending_score": 0,
   "parameters": 1707657216,
   "parameters_human": "1.71B",
-  "storage_bytes": 11886588516,
-  "storage_human": "11.9 GB",
+  "storage_bytes": 14296009316,
+  "storage_human": "14.3 GB",
   "base_model": "XHToken/Spark-X2.6-1.7B, XHToken/Spark-X2.6-1.7B-DSpark-GGUF",
   "formats": [
     "gguf"

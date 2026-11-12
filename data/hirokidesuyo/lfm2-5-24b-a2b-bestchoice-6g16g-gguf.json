@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "hirokidesuyo/LFM2.5-24B-A2B-BestChoice-6G16G-GGUF",
+  "slug": "hirokidesuyo-lfm2-5-24b-a2b-bestchoice-6g16g-gguf",
+  "author": "hirokidesuyo",
+  "url": "https://huggingface.co/hirokidesuyo/LFM2.5-24B-A2B-BestChoice-6G16G-GGUF",
+  "created_at": "2026-11-12T00:33:25.000Z",
+  "updated_at": "2026-11-12T00:34:26.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ja",
+    "en",
+    "base_model:LiquidAI/LFM2.5-24B-A2B",
+    "base_model:quantized:LiquidAI/LFM2.5-24B-A2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23971587712,
+  "parameters_human": "23.97B",
+  "storage_bytes": 9443769984,
+  "storage_human": "9.4 GB",
+  "base_model": "LiquidAI/LFM2.5-24B-A2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "Ekmek31",
   "url": "https://huggingface.co/Ekmek31/trenet-v1.3d",
   "created_at": "2026-11-11T12:11:15.000Z",
-  "updated_at": "2026-11-11T12:15:47.000Z",
+  "updated_at": "2026-11-11T17:46:24.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 17676432,
   "parameters_human": "17.7M",
-  "storage_bytes": 70722264,
-  "storage_human": "71 MB",
+  "storage_bytes": 141444528,
+  "storage_human": "141 MB",
   "base_model": null,
   "formats": [
     "safetensors"

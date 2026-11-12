@@ -5,10 +5,10 @@
   "author": "Cialtion",
   "url": "https://huggingface.co/Cialtion/SimpleTool-Qwen3.5-0.8B-8Head-5pct-BF16",
   "created_at": "2026-11-11T18:03:53.000Z",
-  "updated_at": "2026-11-11T18:10:31.000Z",
+  "updated_at": "2026-11-11T18:26:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-generation",
   "library": null,
   "languages": [],
   "tags": [
@@ -17,6 +17,10 @@
     "simpletool",
     "tool-calling",
     "multi-head",
+    "text-generation",
+    "conversational",
+    "zh",
+    "en",
     "dataset:Cialtion/SimpleTool-Diagnostic-800",
     "base_model:Qwen/Qwen3.5-0.8B",
     "base_model:finetune:Qwen/Qwen3.5-0.8B",
@@ -34,7 +38,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

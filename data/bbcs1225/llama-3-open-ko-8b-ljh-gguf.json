@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "bbcs1225/Llama-3-Open-Ko-8B-ljh-gguf",
+  "slug": "bbcs1225-llama-3-open-ko-8b-ljh-gguf",
+  "author": "bbcs1225",
+  "url": "https://huggingface.co/bbcs1225/Llama-3-Open-Ko-8B-ljh-gguf",
+  "created_at": "2026-11-12T03:18:55.000Z",
+  "updated_at": "2026-11-12T03:20:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 8540770784,
+  "storage_human": "8.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unable to resolve chat model with family selection: gpt-4.1",
+      "url": "https://github.com/microsoft/vscode/issues/287081",
+      "snippet": "Jan 12, 2026 · Unable to resolve chat model with family selection: gpt-4.1 #287081 Closed Hein Meling (meling) opened on Jan 12"
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 278 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Ale0607000/Qwen_Qwen3.5-4B-GGUF",
+  "slug": "ale0607000-qwen_qwen3-5-4b-gguf",
+  "author": "Ale0607000",
+  "url": "https://huggingface.co/Ale0607000/Qwen_Qwen3.5-4B-GGUF",
+  "created_at": "2026-11-12T01:54:52.000Z",
+  "updated_at": "2026-11-12T01:54:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 77068011136,
+  "storage_human": "77.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "jjge007/jaaiva-i1",
+  "slug": "jjge007-jaaiva-i1",
+  "author": "jjge007",
+  "url": "https://huggingface.co/jjge007/jaaiva-i1",
+  "created_at": "2026-11-11T14:46:27.000Z",
+  "updated_at": "2026-11-11T15:12:21.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "unstable",
+    "from-scratch",
+    "gpt",
+    "conversational",
+    "custom-architecture",
+    "text-generation",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 503735040,
+  "parameters_human": "503.7M",
+  "storage_bytes": 1008596896,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

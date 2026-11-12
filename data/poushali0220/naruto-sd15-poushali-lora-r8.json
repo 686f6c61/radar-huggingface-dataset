@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Poushali0220/naruto-sd15-poushali-lora-r8",
+  "slug": "poushali0220-naruto-sd15-poushali-lora-r8",
+  "author": "Poushali0220",
+  "url": "https://huggingface.co/Poushali0220/naruto-sd15-poushali-lora-r8",
+  "created_at": "2026-11-12T04:08:17.000Z",
+  "updated_at": "2026-11-12T04:08:22.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "stable-diffusion",
+    "text-to-image",
+    "naruto",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:adapter:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6414992,
+  "storage_human": "6 MB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

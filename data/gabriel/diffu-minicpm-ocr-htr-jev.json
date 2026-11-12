@@ -5,7 +5,7 @@
   "author": "Gabriel",
   "url": "https://huggingface.co/Gabriel/diffu-minicpm-ocr-htr-jev",
   "created_at": "2026-11-11T15:44:48.000Z",
-  "updated_at": "2026-11-11T15:45:22.000Z",
+  "updated_at": "2026-11-11T19:01:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "transformers",
+    "tensorboard",
     "safetensors",
     "qwen3_5",
     "image-text-to-text",
@@ -38,7 +39,7 @@
   "trending_score": 0,
   "parameters": 2213245760,
   "parameters_human": "2.21B",
-  "storage_bytes": 4446556483,
+  "storage_bytes": 4447753629,
   "storage_human": "4.4 GB",
   "base_model": "openbmb/MiniCPM-OCR-Jev",
   "formats": [

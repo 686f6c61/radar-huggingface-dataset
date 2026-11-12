@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "SyninAI/Test",
+  "slug": "syninai-test",
+  "author": "SyninAI",
+  "url": "https://huggingface.co/SyninAI/Test",
+  "created_at": "2026-11-11T09:44:09.000Z",
+  "updated_at": "2026-11-11T21:17:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "ig"
+  ],
+  "tags": [
+    "safetensors",
+    "deepseek_v4",
+    "en",
+    "ar",
+    "zh",
+    "ig",
+    "dataset:allenai/Dolci-Instruct-SFT",
+    "dataset:allenai/Dolci-Instruct-DPO",
+    "dataset:allenai/Dolci-Instruct-RL",
+    "base_model:deepseek-ai/DeepSeek-V4-Pro-Base",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Pro-Base",
+    "license:apache-2.0",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1600790440862,
+  "parameters_human": "1600.79B",
+  "storage_bytes": 1606059713686,
+  "storage_human": "1606.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Pro-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "TIE-Pilot/dspark-rebuttal-qwen3-8b-100k",
+  "slug": "tie-pilot-dspark-rebuttal-qwen3-8b-100k",
+  "author": "TIE-Pilot",
+  "url": "https://huggingface.co/TIE-Pilot/dspark-rebuttal-qwen3-8b-100k",
+  "created_at": "2026-11-11T23:43:42.000Z",
+  "updated_at": "2026-11-12T00:29:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speculative-decoding",
+    "draft-model",
+    "dspark",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28549611708,
+  "storage_human": "28.5 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

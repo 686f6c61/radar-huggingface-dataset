@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "opragmatico/silero-vad-nemo-speech-gguf",
+  "slug": "opragmatico-silero-vad-nemo-speech-gguf",
+  "author": "opragmatico",
+  "url": "https://huggingface.co/opragmatico/silero-vad-nemo-speech-gguf",
+  "created_at": "2026-11-12T00:44:41.000Z",
+  "updated_at": "2026-11-12T00:58:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "nemo-speech.cpp",
+    "silero-vad",
+    "voice-activity-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 309633,
+  "parameters_human": "309633",
+  "storage_bytes": 1240224,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

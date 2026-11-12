@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "test9392928/sx1401",
+  "slug": "test9392928-sx1401",
+  "author": "test9392928",
+  "url": "https://huggingface.co/test9392928/sx1401",
+  "created_at": "2026-11-12T02:14:30.000Z",
+  "updated_at": "2026-11-12T02:36:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "<img src=x onerror=window.__md3=1>",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "TN <img src=x onerror=window.__md12=1>",
+      "dataset": "DN <img src=x onerror=window.__md14=1>",
+      "metric": "MN <img src=x onerror=window.__md16=1>",
+      "value": 1
+    }
+  ],
+  "sources": []
+}

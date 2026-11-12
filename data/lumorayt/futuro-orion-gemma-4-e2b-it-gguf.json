@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "lumorayt/futuro-orion-gemma-4-E2B-it-GGUF",
+  "slug": "lumorayt-futuro-orion-gemma-4-e2b-it-gguf",
+  "author": "lumorayt",
+  "url": "https://huggingface.co/lumorayt/futuro-orion-gemma-4-E2B-it-GGUF",
+  "created_at": "2026-11-12T00:44:31.000Z",
+  "updated_at": "2026-11-12T00:55:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 2851726036,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

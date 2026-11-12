@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "robinwuzy/BAGEL-VLM-GRPO-LoRA-Sweep",
+  "slug": "robinwuzy-bagel-vlm-grpo-lora-sweep",
+  "author": "robinwuzy",
+  "url": "https://huggingface.co/robinwuzy/BAGEL-VLM-GRPO-LoRA-Sweep",
+  "created_at": "2026-10-22T23:54:26.000Z",
+  "updated_at": "2026-11-12T01:51:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "bagel",
+  "languages": [],
+  "tags": [
+    "bagel",
+    "safetensors",
+    "multimodal",
+    "lora",
+    "grpo",
+    "base_model:ByteDance-Seed/BAGEL-7B-MoT",
+    "base_model:adapter:ByteDance-Seed/BAGEL-7B-MoT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2058914600,
+  "storage_human": "2.1 GB",
+  "base_model": "ByteDance-Seed/BAGEL-7B-MoT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

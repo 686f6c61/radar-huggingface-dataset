@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "jnward2/graft-smollm2-135m-toy-adapters",
+  "slug": "jnward2-graft-smollm2-135m-toy-adapters",
+  "author": "jnward2",
+  "url": "https://huggingface.co/jnward2/graft-smollm2-135m-toy-adapters",
+  "created_at": "2026-11-12T00:48:10.000Z",
+  "updated_at": "2026-11-12T00:48:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "graft",
+    "gradient-routing",
+    "reward-hacking",
+    "arxiv:2610.17062",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 450726120,
+  "storage_human": "451 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

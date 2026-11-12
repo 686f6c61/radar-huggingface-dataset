@@ -5,7 +5,7 @@
   "author": "Oomni",
   "url": "https://huggingface.co/Oomni/mithi-v2-flash",
   "created_at": "2026-11-10T16:48:49.000Z",
-  "updated_at": "2026-11-10T16:53:48.000Z",
+  "updated_at": "2026-11-11T05:58:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -43,13 +43,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 4,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 208100500,
-  "storage_human": "208 MB",
+  "storage_bytes": 236112705,
+  "storage_human": "236 MB",
   "base_model": null,
   "formats": [
     "safetensors"

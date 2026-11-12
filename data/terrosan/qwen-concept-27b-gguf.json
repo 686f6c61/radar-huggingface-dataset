@@ -5,7 +5,7 @@
   "author": "TerroSan",
   "url": "https://huggingface.co/TerroSan/qwen-concept-27b-GGUF",
   "created_at": "2026-11-10T15:54:16.000Z",
-  "updated_at": "2026-11-10T16:33:08.000Z",
+  "updated_at": "2026-11-11T21:58:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 89,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

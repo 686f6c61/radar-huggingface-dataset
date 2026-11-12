@@ -5,7 +5,7 @@
   "author": "MouseWurX",
   "url": "https://huggingface.co/MouseWurX/28Bob-Riker",
   "created_at": "2026-11-09T00:59:56.000Z",
-  "updated_at": "2026-11-09T16:00:22.000Z",
+  "updated_at": "2026-11-11T06:30:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 47,
+  "downloads_30d": 103,
   "trending_score": 0,
   "parameters": 28616880768,
   "parameters_human": "28.62B",

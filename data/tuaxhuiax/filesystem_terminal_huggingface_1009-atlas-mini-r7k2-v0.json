@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "TUaxhuiax/filesystem_terminal_huggingface_1009-atlas-mini-r7k2-v0",
+  "slug": "tuaxhuiax-filesystem_terminal_huggingface_1009-atlas-mini-r7k2-v0",
+  "author": "TUaxhuiax",
+  "url": "https://huggingface.co/TUaxhuiax/filesystem_terminal_huggingface_1009-atlas-mini-r7k2-v0",
+  "created_at": "2026-11-11T21:58:20.000Z",
+  "updated_at": "2026-11-11T21:58:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "atlas-mini",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "294-288-pretrain-interaction",
   "url": "https://huggingface.co/294-288-pretrain-interaction/160M-exp",
   "created_at": "2026-10-10T19:53:25.000Z",
-  "updated_at": "2026-11-10T06:06:06.000Z",
+  "updated_at": "2026-11-11T05:10:47.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 17479,
+  "downloads_30d": 17753,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

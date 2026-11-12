@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Aman90101/test",
+  "slug": "aman90101-test",
+  "author": "Aman90101",
+  "url": "https://huggingface.co/Aman90101/test",
+  "created_at": "2026-03-24T05:07:17.000Z",
+  "updated_at": "2026-11-12T04:10:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "ai-detection",
+    "paraphrasing",
+    "originality",
+    "privacy",
+    "conversational",
+    "en",
+    "dataset:checkgpt",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12356743656,
+  "storage_human": "12.4 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

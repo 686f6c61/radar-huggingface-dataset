@@ -5,7 +5,7 @@
   "author": "UT-IFML",
   "url": "https://huggingface.co/UT-IFML/dQwen3.5-9B-Base",
   "created_at": "2026-08-05T01:57:52.000Z",
-  "updated_at": "2026-09-23T17:55:43.000Z",
+  "updated_at": "2026-11-11T16:57:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Deepakathf/qwen2.5-0.5b-text2sql",
+  "slug": "deepakathf-qwen2-5-0-5b-text2sql",
+  "author": "Deepakathf",
+  "url": "https://huggingface.co/Deepakathf/qwen2.5-0.5b-text2sql",
+  "created_at": "2026-11-12T03:41:22.000Z",
+  "updated_at": "2026-11-12T03:41:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519595,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

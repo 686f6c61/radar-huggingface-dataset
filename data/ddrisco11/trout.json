@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "ddrisco11/TROUT",
+  "slug": "ddrisco11-trout",
+  "author": "ddrisco11",
+  "url": "https://huggingface.co/ddrisco11/TROUT",
+  "created_at": "2026-11-11T21:44:06.000Z",
+  "updated_at": "2026-11-11T21:44:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx-lm",
+  "languages": [],
+  "tags": [
+    "mlx-lm",
+    "safetensors",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "arxiv:2106.09685",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 538675583,
+  "storage_human": "539 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

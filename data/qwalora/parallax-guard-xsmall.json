@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "id": "qwalora/parallax-guard-xsmall",
+  "slug": "qwalora-parallax-guard-xsmall",
+  "author": "qwalora",
+  "url": "https://huggingface.co/qwalora/parallax-guard-xsmall",
+  "created_at": "2026-11-12T02:00:59.000Z",
+  "updated_at": "2026-11-12T02:01:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "prompt-injection",
+    "indirect-prompt-injection",
+    "security",
+    "ai-agents",
+    "guardrails",
+    "transformers.js",
+    "en",
+    "dataset:deepset/prompt-injections",
+    "dataset:Lakera/gandalf_ignore_instructions",
+    "dataset:reshabhs/SPML_Chatbot_Prompt_Injection",
+    "dataset:Salesforce/wikitext",
+    "base_model:microsoft/deberta-v3-xsmall",
+    "base_model:quantized:microsoft/deberta-v3-xsmall",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70830722,
+  "parameters_human": "70.8M",
+  "storage_bytes": 657219513,
+  "storage_human": "657 MB",
+  "base_model": "microsoft/deberta-v3-xsmall",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Indirect prompt-injection detection",
+      "dataset": "BIPIA test",
+      "metric": "Recall on injections at 0.5",
+      "value": 0.949
+    },
+    {
+      "task": "Indirect prompt-injection detection",
+      "dataset": "BIPIA test",
+      "metric": "False positive rate at 0.5",
+      "value": 0.006
+    },
+    {
+      "task": "Indirect prompt-injection detection",
+      "dataset": "BIPIA test",
+      "metric": "ROC AUC",
+      "value": 0.9895
+    },
+    {
+      "task": "Indirect prompt-injection detection",
+      "dataset": "NVIDIA agentic indirect injection",
+      "metric": "Recall on injections at 0.5",
+      "value": 0.991
+    },
+    {
+      "task": "Indirect prompt-injection detection",
+      "dataset": "NVIDIA agentic indirect injection",
+      "metric": "False positive rate at 0.5",
+      "value": 0.013
+    },
+    {
+      "task": "Indirect prompt-injection detection",
+      "dataset": "NVIDIA agentic indirect injection",
+      "metric": "ROC AUC",
+      "value": 0.9972
+    },
+    {
+      "task": "Indirect prompt-injection detection",
+      "dataset": "deepset prompt-injections test",
+      "metric": "Recall on injections at 0.5",
+      "value": 0.917
+    },
+    {
+      "task": "Indirect prompt-injection detection",
+      "dataset": "deepset prompt-injections test",
+      "metric": "False positive rate at 0.5",
+      "value": 0
+    },
+    {
+      "task": "Indirect prompt-injection detection",
+      "dataset": "deepset prompt-injections test",
+      "metric": "ROC AUC",
+      "value": 0.9845
+    },
+    {
+      "task": "Indirect prompt-injection detection",
+      "dataset": "Agentic boundary pairs test",
+      "metric": "Recall on injections at 0.5",
+      "value": 0.858
+    },
+    {
+      "task": "Indirect prompt-injection detection",
+      "dataset": "Agentic boundary pairs test",
+      "metric": "False positive rate at 0.5",
+      "value": 0.875
+    },
+    {
+      "task": "Indirect prompt-injection detection",
+      "dataset": "Agentic boundary pairs test",
+      "metric": "ROC AUC",
+      "value": 0.4874
+    }
+  ],
+  "sources": []
+}

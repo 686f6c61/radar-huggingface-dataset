@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "FILM6912/OpenThai2.0-ASR-Streaming-GGUF",
+  "slug": "film6912-openthai2-0-asr-streaming-gguf",
+  "author": "FILM6912",
+  "url": "https://huggingface.co/FILM6912/OpenThai2.0-ASR-Streaming-GGUF",
+  "created_at": "2026-11-12T03:47:40.000Z",
+  "updated_at": "2026-11-12T03:48:31.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "audio.cpp",
+    "nemotron_asr",
+    "automatic-speech-recognition",
+    "streaming",
+    "Thai",
+    "th",
+    "en",
+    "base_model:iapp/OpenThai2.0-ASR-Streaming",
+    "base_model:quantized:iapp/OpenThai2.0-ASR-Streaming",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 640432269,
+  "parameters_human": "640.4M",
+  "storage_bytes": 2916992896,
+  "storage_human": "2.9 GB",
+  "base_model": "iapp/OpenThai2.0-ASR-Streaming",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

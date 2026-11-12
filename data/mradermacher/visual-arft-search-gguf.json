@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Visual-ARFT-Search-GGUF",
+  "slug": "mradermacher-visual-arft-search-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Visual-ARFT-Search-GGUF",
+  "created_at": "2025-05-21T07:59:21.000Z",
+  "updated_at": "2026-11-11T22:28:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:laolao77/Visual-ARFT-Search",
+    "base_model:quantized:laolao77/Visual-ARFT-Search",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 77,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70354170944,
+  "storage_human": "70.4 GB",
+  "base_model": "laolao77/Visual-ARFT-Search",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

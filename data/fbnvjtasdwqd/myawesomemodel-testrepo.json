@@ -4,8 +4,8 @@
   "slug": "fbnvjtasdwqd-myawesomemodel-testrepo",
   "author": "FBNVJTASDWQD",
   "url": "https://huggingface.co/FBNVJTASDWQD/MyAwesomeModel-TestRepo",
-  "created_at": "2026-11-01T20:56:38.000Z",
-  "updated_at": "2026-11-01T20:56:51.000Z",
+  "created_at": "2026-11-11T10:57:10.000Z",
+  "updated_at": "2026-11-11T11:05:40.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-11-03T02:28:52.528Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -5,7 +5,7 @@
   "author": "KeelCore",
   "url": "https://huggingface.co/KeelCore/KeelCore-750M-Friendly",
   "created_at": "2026-10-30T17:35:06.000Z",
-  "updated_at": "2026-11-10T07:30:59.000Z",
+  "updated_at": "2026-11-11T17:22:51.000Z",
   "license": "thelivu-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 186,
+  "downloads_30d": 363,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 294220164,
-  "storage_human": "294 MB",
+  "storage_bytes": 440714148,
+  "storage_human": "441 MB",
   "base_model": "Thelivu/Thelivu-750M",
   "formats": [
     "onnx"

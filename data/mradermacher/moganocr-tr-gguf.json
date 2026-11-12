@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MoganOCR-TR-GGUF",
+  "slug": "mradermacher-moganocr-tr-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MoganOCR-TR-GGUF",
+  "created_at": "2026-11-12T01:48:32.000Z",
+  "updated_at": "2026-11-12T01:50:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 331416576,
+  "parameters_human": "331.4M",
+  "storage_bytes": 1032891456,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

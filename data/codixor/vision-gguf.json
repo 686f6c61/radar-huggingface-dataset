@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Codixor/vision-gguf",
+  "slug": "codixor-vision-gguf",
+  "author": "Codixor",
+  "url": "https://huggingface.co/Codixor/vision-gguf",
+  "created_at": "2026-11-12T02:23:26.000Z",
+  "updated_at": "2026-11-12T02:23:58.000Z",
+  "license": "per-file",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "vision.cpp",
+    "stable-diffusion.cpp",
+    "rcumfy",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 632076800,
+  "parameters_human": "632.1M",
+  "storage_bytes": 3066882576,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM3-1.7B-egoboost-GGUF",
+  "slug": "mradermacher-lfm3-1-7b-egoboost-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM3-1.7B-egoboost-GGUF",
+  "created_at": "2026-11-12T01:10:30.000Z",
+  "updated_at": "2026-11-12T01:16:26.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "safetensors",
+    "lfm3",
+    "ego-boost",
+    "conversational",
+    "en",
+    "base_model:styal/LFM3-1.7B-egoboost",
+    "base_model:quantized:styal/LFM3-1.7B-egoboost",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 15885899904,
+  "storage_human": "15.9 GB",
+  "base_model": "styal/LFM3-1.7B-egoboost",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

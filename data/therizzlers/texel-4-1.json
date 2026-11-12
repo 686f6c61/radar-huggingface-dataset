@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "TheRizzlers/Texel-4.1",
+  "slug": "therizzlers-texel-4-1",
+  "author": "TheRizzlers",
+  "url": "https://huggingface.co/TheRizzlers/Texel-4.1",
+  "created_at": "2026-11-11T23:40:35.000Z",
+  "updated_at": "2026-11-11T23:40:40.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "super-resolution",
+    "upscaler",
+    "game-textures",
+    "chainner",
+    "image-to-image",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47921438,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

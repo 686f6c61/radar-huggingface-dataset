@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "FinanceRateCalc/frc-contract-drift",
+  "slug": "financeratecalc-frc-contract-drift",
+  "author": "FinanceRateCalc",
+  "url": "https://huggingface.co/FinanceRateCalc/frc-contract-drift",
+  "created_at": "2026-11-11T21:51:46.000Z",
+  "updated_at": "2026-11-11T21:51:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "multi-label",
+    "citation",
+    "provenance",
+    "mortgage",
+    "hmda",
+    "fha",
+    "en",
+    "base_model:distilbert/distilroberta-base",
+    "base_model:finetune:distilbert/distilroberta-base",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 82124552,
+  "parameters_human": "82.1M",
+  "storage_bytes": 328510736,
+  "storage_human": "329 MB",
+  "base_model": "distilroberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

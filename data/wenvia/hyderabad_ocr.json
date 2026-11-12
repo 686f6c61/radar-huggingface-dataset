@@ -5,7 +5,7 @@
   "author": "Wenvia",
   "url": "https://huggingface.co/Wenvia/Hyderabad_OCR",
   "created_at": "2026-11-06T11:48:14.000Z",
-  "updated_at": "2026-11-06T12:59:35.000Z",
+  "updated_at": "2026-11-11T09:43:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 165813473,
-  "storage_human": "166 MB",
+  "storage_bytes": 246794580,
+  "storage_human": "247 MB",
   "base_model": null,
   "formats": [
     "onnx"

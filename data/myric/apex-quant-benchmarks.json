@@ -5,7 +5,7 @@
   "author": "Myric",
   "url": "https://huggingface.co/Myric/apex-quant-benchmarks",
   "created_at": "2026-10-23T04:06:54.000Z",
-  "updated_at": "2026-11-09T03:50:01.000Z",
+  "updated_at": "2026-11-11T12:10:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 7616378,
+  "storage_bytes": 7849145,
   "storage_human": "8 MB",
   "base_model": null,
   "formats": [

@@ -5,7 +5,7 @@
   "author": "Quantinine",
   "url": "https://huggingface.co/Quantinine/Kolibri-1-NVFP4A16-FP8",
   "created_at": "2026-10-08T14:40:47.000Z",
-  "updated_at": "2026-10-08T21:43:14.000Z",
+  "updated_at": "2026-11-05T08:44:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 46,
+  "downloads_30d": 97,
   "trending_score": 0,
   "parameters": 40354338560,
   "parameters_human": "40.35B",

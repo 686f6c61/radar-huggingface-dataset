@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Kirsko/krisko-purvi",
+  "slug": "kirsko-krisko-purvi",
+  "author": "Kirsko",
+  "url": "https://huggingface.co/Kirsko/krisko-purvi",
+  "created_at": "2026-11-12T00:58:26.000Z",
+  "updated_at": "2026-11-12T01:07:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "bg"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "from-scratch",
+    "tiny",
+    "chatbot",
+    "text-generation",
+    "bg",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2604993,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
