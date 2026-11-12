@@ -1,0 +1,141 @@
+{
+  "schema": 1,
+  "id": "AarthShah/CyberQwen-14B-Security-V2",
+  "slug": "aarthshah-cyberqwen-14b-security-v2",
+  "author": "AarthShah",
+  "url": "https://huggingface.co/AarthShah/CyberQwen-14B-Security-V2",
+  "created_at": "2026-11-12T14:20:31.000Z",
+  "updated_at": "2026-11-12T14:48:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "cybersecurity",
+    "vulnerability-repair",
+    "cwe-bench",
+    "exploitgym",
+    "defensive-security",
+    "code-generation",
+    "lora",
+    "semgrep",
+    "soc-analyst",
+    "devsecops",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:AarthShah/cybersecurity-dataset-v4",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1112522631,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "CWE-Bench v1 Evaluation (100 Repositories)",
+      "dataset": "CWE-Bench v1",
+      "metric": "Remediation Patch Rate",
+      "value": 99
+    },
+    {
+      "task": "CWE-Bench v1 Evaluation (100 Repositories)",
+      "dataset": "CWE-Bench v1",
+      "metric": "CWE Strict Canonical Accuracy",
+      "value": 71
+    },
+    {
+      "task": "CWE-Bench v1 Evaluation (100 Repositories)",
+      "dataset": "CWE-Bench v1",
+      "metric": "CWE Hierarchical Taxonomy Accuracy",
+      "value": 74
+    },
+    {
+      "task": "CWE-Bench v1 Evaluation (100 Repositories)",
+      "dataset": "CWE-Bench v1",
+      "metric": "Hierarchical Composite Defensive Score",
+      "value": 84
+    },
+    {
+      "task": "CWE-Bench v1 Evaluation (100 Repositories)",
+      "dataset": "CWE-Bench v1",
+      "metric": "Strict Composite Defensive Score",
+      "value": 82.2
+    },
+    {
+      "task": "ExploitGym Evaluation (50 Vulnerability Scenarios)",
+      "dataset": "ExploitGym",
+      "metric": "Root Cause Diagnosis Accuracy",
+      "value": 100
+    },
+    {
+      "task": "ExploitGym Evaluation (50 Vulnerability Scenarios)",
+      "dataset": "ExploitGym",
+      "metric": "PoV Exploit Synthesis Rate",
+      "value": 100
+    },
+    {
+      "task": "ExploitGym Evaluation (50 Vulnerability Scenarios)",
+      "dataset": "ExploitGym",
+      "metric": "Remediation Patch Rate",
+      "value": 98
+    },
+    {
+      "task": "ExploitGym Evaluation (50 Vulnerability Scenarios)",
+      "dataset": "ExploitGym",
+      "metric": "Composite ExploitGym Score",
+      "value": 99.6
+    },
+    {
+      "task": "Enterprise Cybersecurity Defensive Benchmark (100 Scenarios)",
+      "dataset": "Enterprise Security Index",
+      "metric": "Overall Defensive Score",
+      "value": 84
+    },
+    {
+      "task": "Enterprise Cybersecurity Defensive Benchmark (100 Scenarios)",
+      "dataset": "Enterprise Security Index",
+      "metric": "DevSecOps False Positive Triage",
+      "value": 88
+    },
+    {
+      "task": "Enterprise Cybersecurity Defensive Benchmark (100 Scenarios)",
+      "dataset": "Enterprise Security Index",
+      "metric": "Semgrep AST Rule Synthesis",
+      "value": 96
+    },
+    {
+      "task": "Enterprise Cybersecurity Defensive Benchmark (100 Scenarios)",
+      "dataset": "Enterprise Security Index",
+      "metric": "Vulnerability Mitigation",
+      "value": 84
+    },
+    {
+      "task": "Enterprise Cybersecurity Defensive Benchmark (100 Scenarios)",
+      "dataset": "Enterprise Security Index",
+      "metric": "SOC Threat Forensics",
+      "value": 68
+    }
+  ],
+  "sources": []
+}

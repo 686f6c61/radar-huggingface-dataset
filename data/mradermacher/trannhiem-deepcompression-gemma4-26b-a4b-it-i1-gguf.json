@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "mradermacher/TranNhiem-DeepCompression-Gemma4-26B-A4B-it-i1-GGUF",
+  "slug": "mradermacher-trannhiem-deepcompression-gemma4-26b-a4b-it-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TranNhiem-DeepCompression-Gemma4-26B-A4B-it-i1-GGUF",
+  "created_at": "2026-11-12T19:35:41.000Z",
+  "updated_at": "2026-11-12T20:03:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23805109886,
+  "parameters_human": "23.81B",
+  "storage_bytes": 21895944096,
+  "storage_human": "21.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

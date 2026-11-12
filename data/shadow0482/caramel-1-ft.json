@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Shadow0482/caramel-1-ft",
+  "slug": "shadow0482-caramel-1-ft",
+  "author": "Shadow0482",
+  "url": "https://huggingface.co/Shadow0482/caramel-1-ft",
+  "created_at": "2026-11-12T15:01:14.000Z",
+  "updated_at": "2026-11-12T15:11:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:naklecha/caramel-1",
+    "base_model:finetune:naklecha/caramel-1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 413198848,
+  "parameters_human": "413.2M",
+  "storage_bytes": 1652822416,
+  "storage_human": "1.7 GB",
+  "base_model": "naklecha/caramel-1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

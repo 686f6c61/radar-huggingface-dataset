@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Lolo-15/Lolo",
+  "slug": "lolo-15-lolo",
+  "author": "Lolo-15",
+  "url": "https://huggingface.co/Lolo-15/Lolo",
+  "created_at": "2026-11-12T18:53:36.000Z",
+  "updated_at": "2026-11-12T18:53:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lolo (film) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lolo_(film)",
+      "snippet": "Lolo est une comédie noire française réalisée par Julie Delpy et sortie en 2015."
+    },
+    {
+      "title": "LOLO - YouTube",
+      "url": "https://www.youtube.com/lolo",
+      "snippet": "To celebrate the 10th Anniversary of The LOLO Christmas Show I'm releasing a new Christmas song, titled \"Christmas One And All\"."
+    },
+    {
+      "title": "Définitions : lolo - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/lolo/47713",
+      "snippet": "lolo - Définitions Français : Retrouvez la définition de lolo... - synonymes, homonymes, difficultés, citations."
+    },
+    {
+      "title": "Boutique Lolo - e-Boutique",
+      "url": "https://www.boutique-lolo.fr/e-boutique/",
+      "snippet": "Si vous souhaitez que vos articles soient emballés, gratuitement, dans un papier cadeau, merci de le mentionner dans la rubrique …"
+    }
+  ]
+}

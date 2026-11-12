@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Syninlab/Synin-Quantum-1.0-300B-A47B-Base-PT",
+  "slug": "syninlab-synin-quantum-1-0-300b-a47b-base-pt",
+  "author": "Syninlab",
+  "url": "https://huggingface.co/Syninlab/Synin-Quantum-1.0-300B-A47B-Base-PT",
+  "created_at": "2026-11-12T18:55:48.000Z",
+  "updated_at": "2026-11-12T18:57:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ernie4_5_moe",
+    "text-generation",
+    "ERNIE4.5",
+    "conversational",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 299484163264,
+  "parameters_human": "299.48B",
+  "storage_bytes": 599035885706,
+  "storage_human": "599.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

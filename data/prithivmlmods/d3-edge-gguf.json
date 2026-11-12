@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/d3-edge-GGUF",
+  "slug": "prithivmlmods-d3-edge-gguf",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/d3-edge-GGUF",
+  "created_at": "2026-11-12T13:52:25.000Z",
+  "updated_at": "2026-11-12T16:47:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "llama-cpp",
+    "zero-shot-classification",
+    "decision-model",
+    "classification",
+    "system-one",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "en",
+    "base_model:vllm-sr/d3-edge",
+    "base_model:quantized:vllm-sr/d3-edge",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 748008384,
+  "parameters_human": "748.0M",
+  "storage_bytes": 6184686528,
+  "storage_human": "6.2 GB",
+  "base_model": "vllm-sr/d3-edge",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

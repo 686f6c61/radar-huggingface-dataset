@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "josephimperial/hiligayner-mbert",
+  "slug": "josephimperial-hiligayner-mbert",
+  "author": "josephimperial",
+  "url": "https://huggingface.co/josephimperial/hiligayner-mbert",
+  "created_at": "2026-11-12T16:42:44.000Z",
+  "updated_at": "2026-11-12T16:43:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "hil"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "named-entity-recognition",
+    "hiligaynon",
+    "hil",
+    "base_model:google-bert/bert-base-multilingual-cased",
+    "base_model:finetune:google-bert/bert-base-multilingual-cased",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177268231,
+  "parameters_human": "177.3M",
+  "storage_bytes": 709096284,
+  "storage_human": "709 MB",
+  "base_model": "google-bert/bert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

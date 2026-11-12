@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "richardyoung/OLMo-2-0325-32B-Instruct-DiM-heretic-GGUF",
+  "slug": "richardyoung-olmo-2-0325-32b-instruct-dim-heretic-gguf",
+  "author": "richardyoung",
+  "url": "https://huggingface.co/richardyoung/OLMo-2-0325-32B-Instruct-DiM-heretic-GGUF",
+  "created_at": "2026-11-12T17:20:50.000Z",
+  "updated_at": "2026-11-12T17:23:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "imatrix",
+    "research",
+    "text-generation",
+    "en",
+    "base_model:richardyoung/OLMo-2-0325-32B-Instruct-DiM-heretic",
+    "base_model:quantized:richardyoung/OLMo-2-0325-32B-Instruct-DiM-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32234279936,
+  "parameters_human": "32.23B",
+  "storage_bytes": 19512594752,
+  "storage_human": "19.5 GB",
+  "base_model": "richardyoung/OLMo-2-0325-32B-Instruct-DiM-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

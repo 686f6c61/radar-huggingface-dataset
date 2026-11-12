@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Microguy1/CoLa3D-DUPLI",
+  "slug": "microguy1-cola3d-dupli",
+  "author": "Microguy1",
+  "url": "https://huggingface.co/Microguy1/CoLa3D-DUPLI",
+  "created_at": "2026-11-12T18:07:00.000Z",
+  "updated_at": "2026-11-12T18:07:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2611.03533",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25323715403,
+  "storage_human": "25.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

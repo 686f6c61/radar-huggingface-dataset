@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "WinsonLi/whisper-large-v3-cantonese-mlx-4bit",
+  "slug": "winsonli-whisper-large-v3-cantonese-mlx-4bit",
+  "author": "WinsonLi",
+  "url": "https://huggingface.co/WinsonLi/whisper-large-v3-cantonese-mlx-4bit",
+  "created_at": "2026-09-26T08:49:40.000Z",
+  "updated_at": "2026-11-12T14:46:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "yue"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "cantonese",
+    "apple-silicon",
+    "4-bit",
+    "automatic-speech-recognition",
+    "yue",
+    "dataset:mozilla-foundation/common_voice_17_0",
+    "base_model:khleeloo/whisper-large-v3-cantonese",
+    "base_model:quantized:khleeloo/whisper-large-v3-cantonese",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 145,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 877695978,
+  "storage_human": "878 MB",
+  "base_model": "khleeloo/whisper-large-v3-cantonese",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "sajjadathar/whisper-small-ur",
+  "slug": "sajjadathar-whisper-small-ur",
+  "author": "sajjadathar",
+  "url": "https://huggingface.co/sajjadathar/whisper-small-ur",
+  "created_at": "2026-11-12T18:35:01.000Z",
+  "updated_at": "2026-11-12T18:35:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "hi",
+    "dataset:mozilla-foundation/common_voice_11_0",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 967016530,
+  "storage_human": "967 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice 11.0",
+      "metric": "Wer",
+      "value": 31.045094093975617
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "igorlimamillis/diabetes-readmission-logistic",
+  "slug": "igorlimamillis-diabetes-readmission-logistic",
+  "author": "igorlimamillis",
+  "url": "https://huggingface.co/igorlimamillis/diabetes-readmission-logistic",
+  "created_at": "2026-11-12T20:22:00.000Z",
+  "updated_at": "2026-11-12T20:22:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "tabular-classification",
+    "skops",
+    "logistic-regression",
+    "healthcare",
+    "calibration",
+    "dataset:uci/diabetes-130-us-hospitals",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 498644,
+  "storage_human": "498644 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "30-day readmission",
+      "dataset": "Diabetes 130-US Hospitals for Years 1999-2008 (UCI)",
+      "metric": "ROC AUC (held-out patients)",
+      "value": 0.67
+    },
+    {
+      "task": "30-day readmission",
+      "dataset": "Diabetes 130-US Hospitals for Years 1999-2008 (UCI)",
+      "metric": "PR AUC",
+      "value": 0.219
+    },
+    {
+      "task": "30-day readmission",
+      "dataset": "Diabetes 130-US Hospitals for Years 1999-2008 (UCI)",
+      "metric": "Brier score",
+      "value": 0.0962
+    },
+    {
+      "task": "30-day readmission",
+      "dataset": "Diabetes 130-US Hospitals for Years 1999-2008 (UCI)",
+      "metric": "Log loss",
+      "value": 0.3347
+    }
+  ],
+  "sources": []
+}

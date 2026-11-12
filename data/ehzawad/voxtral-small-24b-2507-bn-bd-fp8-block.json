@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ehzawad/Voxtral-Small-24B-2507-bn-BD-FP8-Block",
+  "slug": "ehzawad-voxtral-small-24b-2507-bn-bd-fp8-block",
+  "author": "ehzawad",
+  "url": "https://huggingface.co/ehzawad/Voxtral-Small-24B-2507-bn-BD-FP8-Block",
+  "created_at": "2026-11-12T18:08:27.000Z",
+  "updated_at": "2026-11-12T18:08:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "voxtral",
+    "speech-recognition",
+    "bengali",
+    "bangladesh",
+    "research-only",
+    "non-commercial",
+    "quantized",
+    "compressed-tensors",
+    "fp8",
+    "automatic-speech-recognition",
+    "bn",
+    "base_model:ehzawad/Voxtral-Small-24B-2507-bn-BD",
+    "base_model:quantized:ehzawad/Voxtral-Small-24B-2507-bn-BD",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ehzawad/Voxtral-Small-24B-2507-bn-BD-vllm · Hugging Face",
+      "url": "https://huggingface.co/ehzawad/Voxtral-Small-24B-2507-bn-BD-vllm",
+      "snippet": "The same weights as ehzawad/Voxtral-Small-24B-2507-bn-BD, stored in Mistral's native format (consolidated-*.safetensors, …"
+    },
+    {
+      "title": "Voxtral-Small-24B-2507-bn-BD-GGUF-Q3_K_L - Hugging Face",
+      "url": "https://huggingface.co/ehzawad/Voxtral-Small-24B-2507-bn-BD-GGUF-Q3_K_L",
+      "snippet": "Instructions to use ehzawad/Voxtral-Small-24B-2507-bn-BD-GGUF-Q3_K_L with libraries, inference providers, notebooks, and local …"
+    },
+    {
+      "title": "Voxtral Small 24B 2507 - Amazon Bedrock",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-voxtral-small-24b-2507.html",
+      "snippet": "Voxtral Small 24B is Mistral AI's speech-to-text model with 24 billion parameters for high-accuracy transcription and voice …"
+    },
+    {
+      "title": "Voxtral Small 24b 2507 Bn Bd - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/ehzawad/voxtral-small-24b-2507-bn-bd",
+      "snippet": "FNI V2.0 for Voxtral Small 24b 2507 Bn Bd: Authority (A:0), Popularity (P:1), Recency (R:99), Quality (Q:65). Semantic (S) is a query …"
+    },
+    {
+      "title": "Voxtral Small 24B 2507 - Septor Labs",
+      "url": "https://septorlabs.com/models/voxtral-small-24b-2507",
+      "snippet": "Mistral Voxtral Small 24B — 24B speech model with transcription and audio understanding."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RawaHazhar/sorani-asr",
+  "slug": "rawahazhar-sorani-asr",
+  "author": "RawaHazhar",
+  "url": "https://huggingface.co/RawaHazhar/sorani-asr",
+  "created_at": "2026-11-12T18:35:08.000Z",
+  "updated_at": "2026-11-12T18:39:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ckb"
+  ],
+  "tags": [
+    "transformers",
+    "central-kurdish",
+    "sorani",
+    "kurdish",
+    "ctc",
+    "w2v-bert",
+    "automatic-speech-recognition",
+    "ckb",
+    "dataset:google/fleurs",
+    "base_model:facebook/w2v-bert-2.0",
+    "base_model:finetune:facebook/w2v-bert-2.0",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "facebook/w2v-bert-2.0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "FLEURS Central Kurdish (ckb_iq), test, one recording per sentence (348)",
+      "metric": "WER (greedy, no language model)",
+      "value": 27.5
+    },
+    {
+      "task": null,
+      "dataset": "FLEURS Central Kurdish (ckb_iq), test, one recording per sentence (348)",
+      "metric": "CER (greedy, no language model)",
+      "value": 6.9
+    },
+    {
+      "task": null,
+      "dataset": "FLEURS Central Kurdish (ckb_iq), test, one recording per sentence (348)",
+      "metric": "WER (with the 5-gram language model)",
+      "value": 24.2
+    },
+    {
+      "task": null,
+      "dataset": "FLEURS Central Kurdish (ckb_iq), test, one recording per sentence (348)",
+      "metric": "CER (with the 5-gram language model)",
+      "value": 6.5
+    }
+  ],
+  "sources": []
+}

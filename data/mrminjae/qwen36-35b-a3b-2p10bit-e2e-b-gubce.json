@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mrminjae/qwen36-35b-a3b-2p10bit-e2e-b-gubce",
+  "slug": "mrminjae-qwen36-35b-a3b-2p10bit-e2e-b-gubce",
+  "author": "mrminjae",
+  "url": "https://huggingface.co/mrminjae/qwen36-35b-a3b-2p10bit-e2e-b-gubce",
+  "created_at": "2026-11-06T02:50:23.000Z",
+  "updated_at": "2026-11-12T14:42:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "quantized",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131268207416,
+  "storage_human": "131.3 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

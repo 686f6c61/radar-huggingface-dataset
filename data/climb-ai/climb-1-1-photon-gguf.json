@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Climb-Ai/Climb-1.1-Photon-GGUF",
+  "slug": "climb-ai-climb-1-1-photon-gguf",
+  "author": "Climb-Ai",
+  "url": "https://huggingface.co/Climb-Ai/Climb-1.1-Photon-GGUF",
+  "created_at": "2026-11-12T17:59:04.000Z",
+  "updated_at": "2026-11-12T18:02:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "cli",
+    "bash",
+    "linux",
+    "terminal",
+    "llama.cpp",
+    "qwen",
+    "qwen3.5",
+    "wsp",
+    "text-generation",
+    "en",
+    "ru",
+    "base_model:Climb-Ai/Climb-1.1-Photon",
+    "base_model:finetune:Climb-Ai/Climb-1.1-Photon",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Climb-Ai/Climb-1.1-Photon",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Faire croître votre patrimoine - Climb",
+      "url": "https://www.climb.fr/",
+      "snippet": "J'ai créé Climb comme une alternative aux banques privées. Des conseillers appuyés par la technologie, une architecture ouverte, …"
+    },
+    {
+      "title": "Découvrez les plus beaux cols & ascensions mondial avec Climbfinder",
+      "url": "https://climbfinder.com/fr",
+      "snippet": "This is why we climb Chaque montée a une histoire. Découvrez de nouvelles routes, planifiez votre sortie, dépassez-vous et voyez …"
+    },
+    {
+      "title": "Comment ça marche ? - Climb",
+      "url": "https://www.climb.fr/en-savoir-plus",
+      "snippet": "Climb vous aide à faire fructifier votre patrimoine et à réaliser vos projets de vie."
+    },
+    {
+      "title": "Climb Up Chambéry : salle d'escalade",
+      "url": "https://chambery.climb-up.fr/",
+      "snippet": "La salle Climb Up Chambéry pour découvrir l'escalade et grimper. Plus qu'un sport, l'escalade est une activité accessible à tous : …"
+    },
+    {
+      "title": "Climb Up Lyon Gerland : salle d'escalade",
+      "url": "https://lyon-gerland.climb-up.fr/",
+      "snippet": "Oct 23, 2026 · La salle Climb Up Lyon Gerland pour découvrir l'escalade et grimper. Plus qu'un sport, l'escalade est une activité …"
+    }
+  ]
+}

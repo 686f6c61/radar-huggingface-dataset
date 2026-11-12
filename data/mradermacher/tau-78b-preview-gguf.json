@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Tau-78B-Preview-GGUF",
+  "slug": "mradermacher-tau-78b-preview-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Tau-78B-Preview-GGUF",
+  "created_at": "2025-02-27T22:07:46.000Z",
+  "updated_at": "2026-11-12T13:55:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:Xiaojian9992024/Tau-78B-Preview",
+    "base_model:quantized:Xiaojian9992024/Tau-78B-Preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 77965463552,
+  "parameters_human": "77.97B",
+  "storage_bytes": 557183634528,
+  "storage_human": "557.2 GB",
+  "base_model": "Xiaojian9992024/Tau-78B-Preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

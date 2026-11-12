@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "DhruvParmar051/leanvocab-bert-orig",
+  "slug": "dhruvparmar051-leanvocab-bert-orig",
+  "author": "DhruvParmar051",
+  "url": "https://huggingface.co/DhruvParmar051/leanvocab-bert-orig",
+  "created_at": "2026-11-12T15:13:38.000Z",
+  "updated_at": "2026-11-12T15:17:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "fill-mask",
+    "masked-lm",
+    "tokenizer",
+    "vocabulary",
+    "mlx",
+    "research",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22646202,
+  "parameters_human": "22.6M",
+  "storage_bytes": 90596926,
+  "storage_human": "91 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

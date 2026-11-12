@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "Kuzey12345/blackhole-lite-gguf",
+  "slug": "kuzey12345-blackhole-lite-gguf",
+  "author": "Kuzey12345",
+  "url": "https://huggingface.co/Kuzey12345/blackhole-lite-gguf",
+  "created_at": "2026-11-12T16:52:59.000Z",
+  "updated_at": "2026-11-12T16:53:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "gguf",
+    "blackhole",
+    "tr",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1107408736,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

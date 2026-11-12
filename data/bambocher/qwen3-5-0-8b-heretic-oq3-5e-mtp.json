@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bambocher/Qwen3.5-0.8B-heretic-oQ3.5e-mtp",
+  "slug": "bambocher-qwen3-5-0-8b-heretic-oq3-5e-mtp",
+  "author": "bambocher",
+  "url": "https://huggingface.co/bambocher/Qwen3.5-0.8B-heretic-oQ3.5e-mtp",
+  "created_at": "2026-11-01T11:53:07.000Z",
+  "updated_at": "2026-11-12T15:55:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "mtp",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1219924421,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bambocher/Qwen3.5-0.8B-heretic-oQ3.5e-mtp · Hugging Face",
+      "url": "https://huggingface.co/bambocher/Qwen3.5-0.8B-heretic-oQ3.5e-mtp",
+      "snippet": "Nov 1, 2026 · Machine learning model with 0.9B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "bambocher/Qwen3.5-0.8B-heretic-oQ3.5e-mtp at main - Hugging Face",
+      "url": "https://huggingface.co/bambocher/Qwen3.5-0.8B-heretic-oQ3.5e-mtp/tree/main",
+      "snippet": "Like 0 MLX Safetensors qwen3_5 oq quantized mtp 3-bit Model card FilesFiles and versions xet Community Deploy Copy to bucket …"
+    },
+    {
+      "title": "Qwen3.5-0.8B-heretic — Abliterated Model Card",
+      "url": "https://www.abliteratedmodels.org/qwen3.5-0.8b-heretic/",
+      "snippet": "Mar 2, 2026 · Qwen3.5-0.8B-heretic is a Heretic-ablated variant of Qwen/Qwen3.5-0.8B, published on Hugging Face by coder3101. It …"
+    },
+    {
+      "title": "Qwen3.5-0.8B-heretic API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/bambocher/Qwen3.5-0.8B-heretic",
+      "snippet": "Qwen3.5 can be served via APIs with popular inference frameworks. In the following, we show example commands to launch …"
+    },
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b",
+      "snippet": "Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language …"
+    }
+  ]
+}

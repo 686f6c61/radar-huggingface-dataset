@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "pvcastro/cef-ocr-qwen3-14b-lora-r32",
+  "slug": "pvcastro-cef-ocr-qwen3-14b-lora-r32",
+  "author": "pvcastro",
+  "url": "https://huggingface.co/pvcastro/cef-ocr-qwen3-14b-lora-r32",
+  "created_at": "2026-11-12T19:06:55.000Z",
+  "updated_at": "2026-11-12T19:07:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "lora",
+    "qlora",
+    "unsloth",
+    "information-extraction",
+    "real-estate",
+    "ocr",
+    "text-generation",
+    "conversational",
+    "pt",
+    "base_model:unsloth/Qwen3-14B-bnb-4bit",
+    "base_model:adapter:unsloth/Qwen3-14B-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 525300518,
+  "storage_human": "525 MB",
+  "base_model": "unsloth/Qwen3-14B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "pamohlyakov-work/Giga-Embeddings-instruct",
+  "slug": "pamohlyakov-work-giga-embeddings-instruct",
+  "author": "pamohlyakov-work",
+  "url": "https://huggingface.co/pamohlyakov-work/Giga-Embeddings-instruct",
+  "created_at": "2026-11-12T20:15:50.000Z",
+  "updated_at": "2026-11-12T20:15:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "gigarembed",
+    "feature-extraction",
+    "MTEB",
+    "transformers",
+    "custom_code",
+    "ru",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3449624576,
+  "parameters_human": "3.45B",
+  "storage_bytes": 13809285997,
+  "storage_human": "13.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

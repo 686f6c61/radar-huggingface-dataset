@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/FairyR1-14B-Preview-GGUF",
+  "slug": "mradermacher-fairyr1-14b-preview-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/FairyR1-14B-Preview-GGUF",
+  "created_at": "2025-05-28T16:13:46.000Z",
+  "updated_at": "2026-11-12T13:55:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:PKU-DS-LAB/FairyR1-14B-Preview",
+    "base_model:quantized:PKU-DS-LAB/FairyR1-14B-Preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 201,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102043517280,
+  "storage_human": "102.0 GB",
+  "base_model": "PKU-DS-LAB/FairyR1-14B-Preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

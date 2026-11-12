@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "6l3m/kairos-functiongemma-270m",
+  "slug": "6l3m-kairos-functiongemma-270m",
+  "author": "6l3m",
+  "url": "https://huggingface.co/6l3m/kairos-functiongemma-270m",
+  "created_at": "2026-11-12T13:28:52.000Z",
+  "updated_at": "2026-11-12T13:29:11.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gemma3",
+    "functiongemma",
+    "onnx",
+    "webgpu",
+    "base_model:unsloth/functiongemma-270m-it",
+    "base_model:finetune:unsloth/functiongemma-270m-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 636801986,
+  "storage_human": "637 MB",
+  "base_model": "unsloth/functiongemma-270m-it",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

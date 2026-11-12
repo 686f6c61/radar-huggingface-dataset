@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "EloyOn/Huihui-Qwen3-4B-Instruct-2507-RP-Q8_0-GGUF",
+  "slug": "eloyon-huihui-qwen3-4b-instruct-2507-rp-q8_0-gguf",
+  "author": "EloyOn",
+  "url": "https://huggingface.co/EloyOn/Huihui-Qwen3-4B-Instruct-2507-RP-Q8_0-GGUF",
+  "created_at": "2026-11-12T18:08:48.000Z",
+  "updated_at": "2026-11-12T18:09:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "dataset:Gryphe/Sonnet3.5-Charcard-Roleplay",
+    "base_model:thaddeusk/Huihui-Qwen3-4B-Instruct-2507-RP",
+    "base_model:quantized:thaddeusk/Huihui-Qwen3-4B-Instruct-2507-RP",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 4280401376,
+  "storage_human": "4.3 GB",
+  "base_model": "thaddeusk/Huihui-Qwen3-4B-Instruct-2507-RP",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

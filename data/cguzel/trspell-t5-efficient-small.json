@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "cguzel/trspell-t5-efficient-small",
+  "slug": "cguzel-trspell-t5-efficient-small",
+  "author": "cguzel",
+  "url": "https://huggingface.co/cguzel/trspell-t5-efficient-small",
+  "created_at": "2026-11-12T14:21:10.000Z",
+  "updated_at": "2026-11-12T14:28:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "spelling-correction",
+    "turkish",
+    "tr",
+    "dataset:cguzel/NoisyWikiTr",
+    "base_model:Turkish-NLP/t5-efficient-small-turkish",
+    "base_model:finetune:Turkish-NLP/t5-efficient-small-turkish",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 142322176,
+  "parameters_human": "142.3M",
+  "storage_bytes": 570168128,
+  "storage_human": "570 MB",
+  "base_model": "Turkish-NLP/t5-efficient-small-turkish",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

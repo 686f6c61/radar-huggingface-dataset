@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "kadirify/atlas-guclu-GGUF",
+  "slug": "kadirify-atlas-guclu-gguf",
+  "author": "kadirify",
+  "url": "https://huggingface.co/kadirify/atlas-guclu-GGUF",
+  "created_at": "2026-11-12T16:48:35.000Z",
+  "updated_at": "2026-11-12T17:09:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "turkish",
+    "ollama",
+    "lora",
+    "tr",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 8547263232,
+  "storage_human": "8.5 GB",
+  "base_model": "google/gemma-4-12b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "taobao-mnn/Qwen3-4B-SafeRL-MNN",
+  "slug": "taobao-mnn-qwen3-4b-saferl-mnn",
+  "author": "taobao-mnn",
+  "url": "https://huggingface.co/taobao-mnn/Qwen3-4B-SafeRL-MNN",
+  "created_at": "2025-10-13T01:33:27.000Z",
+  "updated_at": "2026-11-12T14:47:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "mnn",
+    "hqq",
+    "text-generation",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3-4B-SafeRL",
+    "base_model:quantized:Qwen/Qwen3-4B-SafeRL",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5178916038,
+  "storage_human": "5.2 GB",
+  "base_model": "Qwen/Qwen3-4B-SafeRL",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Ubisoft/ubisoft-laforge-chord",
+  "slug": "ubisoft-ubisoft-laforge-chord",
+  "author": "Ubisoft",
+  "url": "https://huggingface.co/Ubisoft/ubisoft-laforge-chord",
+  "created_at": "2025-11-18T10:51:20.000Z",
+  "updated_at": "2025-12-09T03:12:04.000Z",
+  "license": "ubisoft-machine-learning-license-research-only-copyleft",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dataset:gvecchio/MatSynth",
+    "arxiv:2509.09952",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 157,
+  "downloads_30d": 0,
+  "trending_score": 10,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9366841619,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ubisoft | Welcome to the official Ubisoft website",
+      "url": "https://www.ubisoft.com/en-us",
+      "snippet": "Welcome to the official website for Ubisoft, creator of Assassin's Creed, Just Dance, Tom Clancy's video game series, Rayman, Far …"
+    },
+    {
+      "title": "Ubisoft | Ubisoft – Site officiel",
+      "url": "https://www.ubisoft.com/fr-fr",
+      "snippet": "Ubisoft Connect Tous vos jeux, amis et avantages au même endroit. Obtenir Ubisoft Connect"
+    },
+    {
+      "title": "Ubisoft Store France - Nouveautés et Offres Exclusives",
+      "url": "https://store.ubisoft.com/fr/home",
+      "snippet": "Vous êtes à la recherche des jeux vidéo PC les plus récents? Ne cherchez pas plus loin que l’ Ubisoft Store! Profitez d’une …"
+    },
+    {
+      "title": "Ubisoft Account",
+      "url": "https://account.ubisoft.com/en-US/login",
+      "snippet": "Access your Ubisoft account for seamless gaming experiences and manage your account settings."
+    },
+    {
+      "title": "Ubisoft — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ubisoft",
+      "snippet": "Elle est créée en mars 1986 par les cinq frères Guillemot. Ubisoft est détenteur de nombreuses franchises à succès telles que …"
+    }
+  ]
+}

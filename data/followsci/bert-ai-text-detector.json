@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "followsci/bert-ai-text-detector",
+  "slug": "followsci-bert-ai-text-detector",
+  "author": "followsci",
+  "url": "https://huggingface.co/followsci/bert-ai-text-detector",
+  "created_at": "2025-11-01T10:08:53.000Z",
+  "updated_at": "2026-11-12T14:02:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "ai-detection",
+    "academic-text",
+    "ai-generated-text-detection",
+    "en",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 1189,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437963952,
+  "storage_human": "438 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "AI-Generated Text Detection",
+      "dataset": "Custom Academic Text Dataset",
+      "metric": null,
+      "value": 0.9957
+    },
+    {
+      "task": "AI-Generated Text Detection",
+      "dataset": "Custom Academic Text Dataset",
+      "metric": null,
+      "value": 0.9958
+    },
+    {
+      "task": "AI-Generated Text Detection",
+      "dataset": "Custom Academic Text Dataset",
+      "metric": null,
+      "value": 0.9923
+    },
+    {
+      "task": "AI-Generated Text Detection",
+      "dataset": "Custom Academic Text Dataset",
+      "metric": null,
+      "value": 0.9994
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mistral-7B-Liberated-GGUF",
+  "slug": "mradermacher-mistral-7b-liberated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mistral-7B-Liberated-GGUF",
+  "created_at": "2026-11-12T20:29:24.000Z",
+  "updated_at": "2026-11-12T20:35:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mistral",
+    "abliterated",
+    "uncensored",
+    "decensored",
+    "llama-cpp",
+    "en",
+    "base_model:nurmix/Mistral-7B-Liberated",
+    "base_model:quantized:nurmix/Mistral-7B-Liberated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 38537744896,
+  "storage_human": "38.5 GB",
+  "base_model": "nurmix/Mistral-7B-Liberated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

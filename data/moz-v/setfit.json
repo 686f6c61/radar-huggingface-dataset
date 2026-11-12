@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "moz-v/setfit",
+  "slug": "moz-v-setfit",
+  "author": "moz-v",
+  "url": "https://huggingface.co/moz-v/setfit",
+  "created_at": "2026-11-12T20:00:28.000Z",
+  "updated_at": "2026-11-12T20:00:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2209.11055",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25019401,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

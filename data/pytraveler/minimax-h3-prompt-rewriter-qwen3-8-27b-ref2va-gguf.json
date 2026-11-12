@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "pytraveler/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA-GGUF",
+  "slug": "pytraveler-minimax-h3-prompt-rewriter-qwen3-8-27b-ref2va-gguf",
+  "author": "pytraveler",
+  "url": "https://huggingface.co/pytraveler/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA-GGUF",
+  "created_at": "2026-11-12T13:02:21.000Z",
+  "updated_at": "2026-11-12T13:10:20.000Z",
+  "license": "upstream-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "minimax-h3",
+    "prompt-rewriting",
+    "multimodal",
+    "ref2va",
+    "image-text-to-text",
+    "en",
+    "base_model:lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA",
+    "base_model:quantized:lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 36706107296,
+  "storage_human": "36.7 GB",
+  "base_model": "lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

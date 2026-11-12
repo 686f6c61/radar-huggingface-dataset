@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "opencerebral/Boris-2-Think-Instruct",
+  "slug": "opencerebral-boris-2-think-instruct",
+  "author": "opencerebral",
+  "url": "https://huggingface.co/opencerebral/Boris-2-Think-Instruct",
+  "created_at": "2026-11-12T17:04:26.000Z",
+  "updated_at": "2026-11-12T17:06:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "boris2",
+    "text-generation",
+    "chat",
+    "instruct",
+    "reasoning",
+    "small-language-model",
+    "causal-lm",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "dataset:slmconsortium/OpenThink",
+    "base_model:opencerebral/Boris-2",
+    "base_model:finetune:opencerebral/Boris-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144192782,
+  "parameters_human": "144.2M",
+  "storage_bytes": 578671072,
+  "storage_human": "579 MB",
+  "base_model": "opencerebral/Boris-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

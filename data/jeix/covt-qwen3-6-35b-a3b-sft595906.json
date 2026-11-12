@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "jeix/CoVT-Qwen3.6-35B-A3B-SFT595906",
+  "slug": "jeix-covt-qwen3-6-35b-a3b-sft595906",
+  "author": "jeix",
+  "url": "https://huggingface.co/jeix/CoVT-Qwen3.6-35B-A3B-SFT595906",
+  "created_at": "2026-11-12T10:55:32.000Z",
+  "updated_at": "2026-11-12T11:11:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "covt_qwen3_5_moe",
+    "image-text-to-text",
+    "qwen3_5_moe",
+    "mixture-of-experts",
+    "custom_code",
+    "physical-adapter",
+    "supervised-fine-tuning",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35143205036,
+  "parameters_human": "35.14B",
+  "storage_bytes": 70311560139,
+  "storage_human": "70.3 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

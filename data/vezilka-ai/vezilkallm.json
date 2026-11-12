@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "vezilka-ai/VezilkaLLM",
+  "slug": "vezilka-ai-vezilkallm",
+  "author": "vezilka-ai",
+  "url": "https://huggingface.co/vezilka-ai/VezilkaLLM",
+  "created_at": "2026-11-12T14:18:28.000Z",
+  "updated_at": "2026-11-12T14:18:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma3_text",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 7798651658,
+  "storage_human": "7.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

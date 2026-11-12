@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "asoloveii/llama-style-50m",
+  "slug": "asoloveii-llama-style-50m",
+  "author": "asoloveii",
+  "url": "https://huggingface.co/asoloveii/llama-style-50m",
+  "created_at": "2026-11-12T15:44:18.000Z",
+  "updated_at": "2026-11-12T16:02:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:tatsu-lab/alpaca",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68170240,
+  "parameters_human": "68.2M",
+  "storage_bytes": 272690768,
+  "storage_human": "273 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

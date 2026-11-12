@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Anjielon/Thor-T-35B-A3B",
+  "slug": "anjielon-thor-t-35b-a3b",
+  "author": "Anjielon",
+  "url": "https://huggingface.co/Anjielon/Thor-T-35B-A3B",
+  "created_at": "2026-11-10T19:30:34.000Z",
+  "updated_at": "2026-11-12T19:10:05.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ternary",
+    "quantization",
+    "mixture-of-experts",
+    "vulkan",
+    "cuda",
+    "text-generation",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 54763428992,
+  "parameters_human": "54.76B",
+  "storage_bytes": 49207360095,
+  "storage_human": "49.2 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

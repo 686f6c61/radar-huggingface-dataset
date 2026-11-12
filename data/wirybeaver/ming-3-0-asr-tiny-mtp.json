@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "wirybeaver/Ming-3.0-asr-tiny-mtp",
+  "slug": "wirybeaver-ming-3-0-asr-tiny-mtp",
+  "author": "wirybeaver",
+  "url": "https://huggingface.co/wirybeaver/Ming-3.0-asr-tiny-mtp",
+  "created_at": "2026-11-12T05:59:54.000Z",
+  "updated_at": "2026-11-12T13:24:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "en",
+    "zh",
+    "ja"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "bailing_moe_v3",
+    "speculative-decoding",
+    "mtp",
+    "ming-asr",
+    "audio",
+    "custom_code",
+    "en",
+    "zh",
+    "ja",
+    "base_model:inclusionAI/Ming-3.0-asr-tiny",
+    "base_model:finetune:inclusionAI/Ming-3.0-asr-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 799474048,
+  "parameters_human": "799.5M",
+  "storage_bytes": 1598997936,
+  "storage_human": "1.6 GB",
+  "base_model": "inclusionAI/Ming-3.0-asr-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

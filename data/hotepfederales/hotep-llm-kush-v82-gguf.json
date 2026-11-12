@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "hotepfederales/hotep-llm-kush-v82-GGUF",
+  "slug": "hotepfederales-hotep-llm-kush-v82-gguf",
+  "author": "hotepfederales",
+  "url": "https://huggingface.co/hotepfederales/hotep-llm-kush-v82-GGUF",
+  "created_at": "2026-06-29T02:01:28.000Z",
+  "updated_at": "2026-11-12T13:49:44.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "conversational",
+    "cultural-ai",
+    "sovereignty",
+    "african-history",
+    "local-llm",
+    "ollama",
+    "llama.cpp",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "text-generation",
+    "en",
+    "dataset:hotepfederales/kush-v82-eval-samples",
+    "base_model:quantized:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 25919244376,
+  "storage_human": "25.9 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

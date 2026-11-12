@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "ProjectGaiaUK/gaia-3b-chat",
+  "slug": "projectgaiauk-gaia-3b-chat",
+  "author": "ProjectGaiaUK",
+  "url": "https://huggingface.co/ProjectGaiaUK/gaia-3b-chat",
+  "created_at": "2026-11-12T19:59:56.000Z",
+  "updated_at": "2026-11-12T20:02:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ro"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "pet-care",
+    "research",
+    "retrieval-grounded",
+    "conversational",
+    "en",
+    "ro",
+    "base_model:ProjectGaiaUK/gaia-3b-base-128k",
+    "base_model:finetune:ProjectGaiaUK/gaia-3b-base-128k",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2976033792,
+  "parameters_human": "2.98B",
+  "storage_bytes": 5952097048,
+  "storage_human": "6.0 GB",
+  "base_model": "ProjectGaiaUK/gaia-3b-base-128k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

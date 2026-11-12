@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/HNO",
+  "slug": "onescience-group-hno",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/HNO",
+  "created_at": "2026-11-12T13:42:58.000Z",
+  "updated_at": "2026-11-12T13:44:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "hno_darcy",
+    "OneScience",
+    "fluid-dynamics",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26455541,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

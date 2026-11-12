@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "brunuu/RAM_Altman_GPT-GGUF",
+  "slug": "brunuu-ram_altman_gpt-gguf",
+  "author": "brunuu",
+  "url": "https://huggingface.co/brunuu/RAM_Altman_GPT-GGUF",
+  "created_at": "2026-11-12T16:47:13.000Z",
+  "updated_at": "2026-11-12T16:56:42.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "lm-studio",
+    "gpt2",
+    "humor",
+    "parody",
+    "tiny",
+    "chat",
+    "conversational",
+    "ram",
+    "text-generation",
+    "en",
+    "base_model:brunuu/RAM_Altman_GPT",
+    "base_model:quantized:brunuu/RAM_Altman_GPT",
+    "license:cc0-1.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 100000,
+  "parameters_human": "100000",
+  "storage_bytes": 1852288,
+  "storage_human": "2 MB",
+  "base_model": "brunuu/RAM_Altman_GPT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

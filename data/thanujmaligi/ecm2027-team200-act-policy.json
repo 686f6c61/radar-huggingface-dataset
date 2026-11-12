@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "thanujmaligi/ecm2027-team200-act-policy",
+  "slug": "thanujmaligi-ecm2027-team200-act-policy",
+  "author": "thanujmaligi",
+  "url": "https://huggingface.co/thanujmaligi/ecm2027-team200-act-policy",
+  "created_at": "2026-11-12T14:23:31.000Z",
+  "updated_at": "2026-11-12T14:43:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "embodied-ai",
+    "action-chunking",
+    "imitation-learning",
+    "isaac-sim",
+    "ecm2027",
+    "en",
+    "dataset:rocochallenge2025/ecm2027_sim_data",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 223539453,
+  "storage_human": "224 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "test9392928/nerd",
+  "slug": "test9392928-nerd",
+  "author": "test9392928",
+  "url": "https://huggingface.co/test9392928/nerd",
+  "created_at": "2026-11-12T16:58:07.000Z",
+  "updated_at": "2026-11-12T16:58:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "safetensors",
+    "distilbert",
+    "token-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134741001,
+  "parameters_human": "134.7M",
+  "storage_bytes": 1617075498,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

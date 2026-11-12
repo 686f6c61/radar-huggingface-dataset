@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "iclropen/evidence-audit-qwen7b-pc-a1-s0",
+  "slug": "iclropen-evidence-audit-qwen7b-pc-a1-s0",
+  "author": "iclropen",
+  "url": "https://huggingface.co/iclropen/evidence-audit-qwen7b-pc-a1-s0",
+  "created_at": "2026-11-12T11:50:21.000Z",
+  "updated_at": "2026-11-12T11:51:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "video-temporal-grounding",
+    "charades-sta",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 190442760,
+  "storage_human": "190 MB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

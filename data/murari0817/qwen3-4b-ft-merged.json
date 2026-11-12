@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Murari0817/qwen3-4b-ft-merged",
+  "slug": "murari0817-qwen3-4b-ft-merged",
+  "author": "Murari0817",
+  "url": "https://huggingface.co/Murari0817/qwen3-4b-ft-merged",
+  "created_at": "2026-11-12T15:31:10.000Z",
+  "updated_at": "2026-11-12T15:32:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404330,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

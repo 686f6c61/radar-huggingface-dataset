@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Belluxx/limite-1b-violetto-drafter",
+  "slug": "belluxx-limite-1b-violetto-drafter",
+  "author": "Belluxx",
+  "url": "https://huggingface.co/Belluxx/limite-1b-violetto-drafter",
+  "created_at": "2026-11-12T13:44:45.000Z",
+  "updated_at": "2026-11-12T13:46:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speculative-decoding",
+    "draft-model",
+    "apple-silicon",
+    "metal",
+    "base_model:paradigma-inc/limite-1b-violetto",
+    "base_model:finetune:paradigma-inc/limite-1b-violetto",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60987904,
+  "parameters_human": "61.0M",
+  "storage_bytes": 313324696,
+  "storage_human": "313 MB",
+  "base_model": "paradigma-inc/limite-1b-violetto",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

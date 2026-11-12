@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "nmalinowski-pdds/von-ft",
+  "slug": "nmalinowski-pdds-von-ft",
+  "author": "nmalinowski-pdds",
+  "url": "https://huggingface.co/nmalinowski-pdds/von-ft",
+  "created_at": "2026-10-08T00:46:29.000Z",
+  "updated_at": "2026-11-12T20:21:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "von-sdk",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "von-sdk",
+    "safetensors",
+    "modernbert",
+    "system-one",
+    "decision-model",
+    "option-marker",
+    "non-autoregressive",
+    "zero-shot-classification",
+    "en",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:finetune:answerdotai/ModernBERT-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 394781696,
+  "parameters_human": "394.8M",
+  "storage_bytes": 6320920294,
+  "storage_human": "6.3 GB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

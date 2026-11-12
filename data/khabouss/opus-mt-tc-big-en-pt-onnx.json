@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "khabouss/opus-mt-tc-big-en-pt-onnx",
+  "slug": "khabouss-opus-mt-tc-big-en-pt-onnx",
+  "author": "khabouss",
+  "url": "https://huggingface.co/khabouss/opus-mt-tc-big-en-pt-onnx",
+  "created_at": "2026-11-12T16:32:34.000Z",
+  "updated_at": "2026-11-12T16:34:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "onnx",
+    "marian",
+    "translation",
+    "opus-mt-tc",
+    "en",
+    "pt",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 349826679,
+  "storage_human": "350 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Translation eng-por",
+      "dataset": "flores101-devtest",
+      "metric": "BLEU",
+      "value": 50.4
+    },
+    {
+      "task": "Translation eng-por",
+      "dataset": "tatoeba-test-v2021-08-07",
+      "metric": "BLEU",
+      "value": 49.6
+    }
+  ],
+  "sources": []
+}

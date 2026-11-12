@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "bambocher/Qwen3.5-2B-heretic-oQ6e-mtp",
+  "slug": "bambocher-qwen3-5-2b-heretic-oq6e-mtp",
+  "author": "bambocher",
+  "url": "https://huggingface.co/bambocher/Qwen3.5-2B-heretic-oQ6e-mtp",
+  "created_at": "2026-11-12T18:53:04.000Z",
+  "updated_at": "2026-11-12T19:00:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "mtp",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2274069824,
+  "parameters_human": "2.27B",
+  "storage_bytes": 2319805679,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

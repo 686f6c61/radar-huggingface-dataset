@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mkenfenheuer/qwen2.5-3b-homeassistant-GGUF",
+  "slug": "mkenfenheuer-qwen2-5-3b-homeassistant-gguf",
+  "author": "mkenfenheuer",
+  "url": "https://huggingface.co/mkenfenheuer/qwen2.5-3b-homeassistant-GGUF",
+  "created_at": "2026-11-04T07:34:20.000Z",
+  "updated_at": "2026-11-12T13:31:19.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "gguf",
+    "home-assistant",
+    "tool-calling",
+    "smart-home",
+    "text-generation",
+    "conversational",
+    "de",
+    "dataset:mkenfenheuer/homeassistant-tool-calling",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 2,
+  "downloads_30d": 634,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 3859806080,
+  "storage_human": "3.9 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/ComPhy-TaylorGreenVortex",
+  "slug": "onescience-group-comphy-taylorgreenvortex",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/ComPhy-TaylorGreenVortex",
+  "created_at": "2026-11-12T12:57:03.000Z",
+  "updated_at": "2026-11-12T12:59:17.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "comphy_tgv",
+    "OneScience",
+    "fluid-dynamics",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7614383,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

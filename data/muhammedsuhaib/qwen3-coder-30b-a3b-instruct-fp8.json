@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "MuhammedSuhaib/Qwen3-Coder-30B-A3B-Instruct-FP8",
+  "slug": "muhammedsuhaib-qwen3-coder-30b-a3b-instruct-fp8",
+  "author": "MuhammedSuhaib",
+  "url": "https://huggingface.co/MuhammedSuhaib/Qwen3-Coder-30B-A3B-Instruct-FP8",
+  "created_at": "2026-11-12T15:54:20.000Z",
+  "updated_at": "2026-11-12T15:54:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:2505.09388",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 31187041238,
+  "storage_human": "31.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

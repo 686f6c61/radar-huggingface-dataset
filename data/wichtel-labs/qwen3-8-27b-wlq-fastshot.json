@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "wichtel-labs/Qwen3.8-27B-WLQ-FastShot",
+  "slug": "wichtel-labs-qwen3-8-27b-wlq-fastshot",
+  "author": "wichtel-labs",
+  "url": "https://huggingface.co/wichtel-labs/Qwen3.8-27B-WLQ-FastShot",
+  "created_at": "2026-11-10T06:47:05.000Z",
+  "updated_at": "2026-11-12T20:23:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 7676543977,
+  "parameters_human": "7.68B",
+  "storage_bytes": 25187344325,
+  "storage_human": "25.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

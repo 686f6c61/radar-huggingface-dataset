@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "khabouss/opus-mt-tc-big-en-tr-onnx",
+  "slug": "khabouss-opus-mt-tc-big-en-tr-onnx",
+  "author": "khabouss",
+  "url": "https://huggingface.co/khabouss/opus-mt-tc-big-en-tr-onnx",
+  "created_at": "2026-11-12T16:41:31.000Z",
+  "updated_at": "2026-11-12T16:43:04.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "onnx",
+    "marian",
+    "translation",
+    "opus-mt-tc",
+    "en",
+    "tr",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 356855011,
+  "storage_human": "357 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Translation eng-tur",
+      "dataset": "flores101-devtest",
+      "metric": "BLEU",
+      "value": 31.4
+    },
+    {
+      "task": "Translation eng-tur",
+      "dataset": "newsdev2016",
+      "metric": "BLEU",
+      "value": 21.9
+    },
+    {
+      "task": "Translation eng-tur",
+      "dataset": "tatoeba-test-v2021-08-07",
+      "metric": "BLEU",
+      "value": 42.3
+    },
+    {
+      "task": "Translation eng-tur",
+      "dataset": "newstest2016",
+      "metric": "BLEU",
+      "value": 23.4
+    },
+    {
+      "task": "Translation eng-tur",
+      "dataset": "newstest2017",
+      "metric": "BLEU",
+      "value": 25.4
+    },
+    {
+      "task": "Translation eng-tur",
+      "dataset": "newstest2018",
+      "metric": "BLEU",
+      "value": 22.6
+    }
+  ],
+  "sources": []
+}

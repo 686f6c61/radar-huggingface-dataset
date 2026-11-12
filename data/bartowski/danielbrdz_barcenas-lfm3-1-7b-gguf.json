@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "bartowski/Danielbrdz_Barcenas-LFM3-1.7B-GGUF",
+  "slug": "bartowski-danielbrdz_barcenas-lfm3-1-7b-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/Danielbrdz_Barcenas-LFM3-1.7B-GGUF",
+  "created_at": "2026-11-12T17:23:55.000Z",
+  "updated_at": "2026-11-12T17:27:38.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "es",
+    "dataset:OysterCoreAI/SFT-General-Spanish-50K",
+    "base_model:Danielbrdz/Barcenas-LFM3-1.7B",
+    "base_model:quantized:Danielbrdz/Barcenas-LFM3-1.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 26587225984,
+  "storage_human": "26.6 GB",
+  "base_model": "Danielbrdz/Barcenas-LFM3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski (Bartowski) - Hugging Face",
+      "url": "https://huggingface.co/bartowski",
+      "snippet": "Collections 7 ... bartowski/MiniMax-M3-GGUF ... bartowski/Muse-Glimmer-30B-GGUF ... bartowski/NVIDIA-Nemotron-3.5-Lightning …"
+    },
+    {
+      "title": "bartowski/Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Qwen3.8-27B-GGUF",
+      "snippet": "Credits Thank you kalomaze and Dampf for assistance in creating the imatrix calibration dataset. Thank you ZeroWw for the …"
+    },
+    {
+      "title": "Chuck Bartowski - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chuck_Bartowski",
+      "snippet": "At the outset of the show, Chuck Bartowski is presented as a twenty-something underachiever who lives in the Echo Park …"
+    },
+    {
+      "title": "bartowski1182 (Bartowski) · GitHub",
+      "url": "https://github.com/bartowski1182",
+      "snippet": "bartowski1182 has 52 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Chuck (série télévisée) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Chuck_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)",
+      "snippet": "Chuck Bartowski est un nerd, un passionné d' ordinateurs qui travaille au Buy More de Burbank, une grande surface …"
+    }
+  ]
+}

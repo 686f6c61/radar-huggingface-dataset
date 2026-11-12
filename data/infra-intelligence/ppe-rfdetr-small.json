@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "infra-intelligence/ppe-rfdetr-small",
+  "slug": "infra-intelligence-ppe-rfdetr-small",
+  "author": "infra-intelligence",
+  "url": "https://huggingface.co/infra-intelligence/ppe-rfdetr-small",
+  "created_at": "2026-11-12T16:55:10.000Z",
+  "updated_at": "2026-11-12T16:55:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "ppe",
+    "construction-safety",
+    "hard-hat",
+    "safety-vest",
+    "rf-detr",
+    "dinov2",
+    "ja",
+    "en",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 336376835,
+  "storage_human": "336 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

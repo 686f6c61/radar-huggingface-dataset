@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "notashwinii/nepali-embossed-plate-reader",
+  "slug": "notashwinii-nepali-embossed-plate-reader",
+  "author": "notashwinii",
+  "url": "https://huggingface.co/notashwinii/nepali-embossed-plate-reader",
+  "created_at": "2026-11-12T19:17:26.000Z",
+  "updated_at": "2026-11-12T19:17:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "license-plate-recognition",
+    "ocr",
+    "nepal",
+    "nepali",
+    "embossed-plates",
+    "dataset:mukulboro/nepali-private-license-plates",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361988,
+  "parameters_human": "361988",
+  "storage_bytes": 1451304,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

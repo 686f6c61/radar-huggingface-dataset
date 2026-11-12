@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Sergey321-345/XENON-DECISION-1",
+  "slug": "sergey321-345-xenon-decision-1",
+  "author": "Sergey321-345",
+  "url": "https://huggingface.co/Sergey321-345/XENON-DECISION-1",
+  "created_at": "2026-11-12T17:23:31.000Z",
+  "updated_at": "2026-11-12T17:23:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "xenlogic",
+    "xenon",
+    "classification",
+    "transformer",
+    "from-scratch",
+    "text-classification",
+    "ru",
+    "en",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 462980,
+  "parameters_human": "462980",
+  "storage_bytes": 1854776,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

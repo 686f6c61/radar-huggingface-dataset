@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "yujiepan/minimax-h3-image-tiny-random",
+  "slug": "yujiepan-minimax-h3-image-tiny-random",
+  "author": "yujiepan",
+  "url": "https://huggingface.co/yujiepan/minimax-h3-image-tiny-random",
+  "created_at": "2026-11-12T16:50:13.000Z",
+  "updated_at": "2026-11-12T17:22:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "base_model:MiniMaxAI/MiniMax-H3-Image",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3-Image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 519968,
+  "parameters_human": "519968",
+  "storage_bytes": 11708720,
+  "storage_human": "12 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3-Image",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

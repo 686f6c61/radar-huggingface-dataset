@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "malikithecat/smollm2-360m-coder-v1-Q8_0-GGUF",
+  "slug": "malikithecat-smollm2-360m-coder-v1-q8_0-gguf",
+  "author": "malikithecat",
+  "url": "https://huggingface.co/malikithecat/smollm2-360m-coder-v1-Q8_0-GGUF",
+  "created_at": "2026-11-12T19:04:23.000Z",
+  "updated_at": "2026-11-12T19:04:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "trl",
+    "sft",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:malikithecat/smollm2-360m-coder-v1",
+    "base_model:quantized:malikithecat/smollm2-360m-coder-v1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 386404608,
+  "storage_human": "386 MB",
+  "base_model": "malikithecat/smollm2-360m-coder-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

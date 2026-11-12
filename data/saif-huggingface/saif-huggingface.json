@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "saif-huggingface/saif-huggingface",
+  "slug": "saif-huggingface-saif-huggingface",
+  "author": "saif-huggingface",
+  "url": "https://huggingface.co/saif-huggingface/saif-huggingface",
+  "created_at": "2026-11-12T20:00:48.000Z",
+  "updated_at": "2026-11-12T20:01:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAIF",
+      "url": "https://www.saif.fr/",
+      "snippet": "Oct 2, 2016 · La SAIF demande aux pouvoirs et institutions publics de cesser de céder aux paniques morales ou sécuritaires, et elle …"
+    },
+    {
+      "title": "saif - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLN0EHERterUbeJLrN0oKyNUqmlvzwtCXS",
+      "snippet": "Explore Saïf's YouTube playlist featuring diverse videos to share with friends, family, and the world."
+    },
+    {
+      "title": "La Saif",
+      "url": "https://www.dev.saif.fr/",
+      "snippet": "Créée en 1999, née de la volonté des auteurs et autrices souhaitant défendre collectivement leurs droits, la SAIF est une société …"
+    },
+    {
+      "title": "Saïf - booska-p.com",
+      "url": "https://www.booska-p.com/personnalite/saif/",
+      "snippet": "Saïf a tout pour devenir grand. En tout cas, il s’en donne les moyens. Originaire du Sud-Est de la France, Saïf propose un rap …"
+    }
+  ]
+}

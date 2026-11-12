@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "tanishqmudaliar/SilverGuard",
+  "slug": "tanishqmudaliar-silverguard",
+  "author": "tanishqmudaliar",
+  "url": "https://huggingface.co/tanishqmudaliar/SilverGuard",
+  "created_at": "2026-02-22T22:33:36.000Z",
+  "updated_at": "2026-11-12T17:49:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "hi",
+    "mr",
+    "ta",
+    "te",
+    "bn",
+    "gu"
+  ],
+  "tags": [
+    "onnx",
+    "sms",
+    "scam-detection",
+    "phishing-detection",
+    "spam-detection",
+    "indic-nlp",
+    "edge-ai",
+    "android",
+    "cybersecurity",
+    "trai-dlt",
+    "fasttext",
+    "atherion-30k",
+    "scamshield",
+    "uci-sms",
+    "v2.0",
+    "text-classification",
+    "en",
+    "hi",
+    "mr",
+    "ta",
+    "te",
+    "bn",
+    "gu",
+    "dataset:uciml/sms-spam-collection-dataset",
+    "dataset:junioralive/india-spam-sms-classification",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120755115,
+  "storage_human": "121 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Classification",
+      "dataset": "SilverGuard-Indic-Unified-24k",
+      "metric": "Macro F1",
+      "value": 0.8996
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "SilverGuard-Indic-Unified-24k",
+      "metric": "Accuracy",
+      "value": 0.9494
+    }
+  ],
+  "sources": []
+}

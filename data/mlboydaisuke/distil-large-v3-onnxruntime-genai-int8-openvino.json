@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/distil-large-v3-onnxruntime-genai-int8-openvino",
+  "slug": "mlboydaisuke-distil-large-v3-onnxruntime-genai-int8-openvino",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/distil-large-v3-onnxruntime-genai-int8-openvino",
+  "created_at": "2026-11-12T13:21:32.000Z",
+  "updated_at": "2026-11-12T14:28:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime-genai",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime-genai",
+    "onnx",
+    "openvino",
+    "whisper",
+    "distil-whisper",
+    "windows",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:distil-whisper/distil-large-v3",
+    "base_model:quantized:distil-whisper/distil-large-v3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1593399363,
+  "storage_human": "1.6 GB",
+  "base_model": "distil-whisper/distil-large-v3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

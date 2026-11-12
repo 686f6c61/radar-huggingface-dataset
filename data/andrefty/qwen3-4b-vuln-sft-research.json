@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Andrefty/qwen3-4b-vuln-sft-research",
+  "slug": "andrefty-qwen3-4b-vuln-sft-research",
+  "author": "Andrefty",
+  "url": "https://huggingface.co/Andrefty/qwen3-4b-vuln-sft-research",
+  "created_at": "2026-02-04T02:17:31.000Z",
+  "updated_at": "2026-11-12T19:44:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "vulnerability-detection",
+    "code-security",
+    "sft",
+    "research",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 196096,
+  "parameters_human": "196096",
+  "storage_bytes": 66263486235,
+  "storage_human": "66.3 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

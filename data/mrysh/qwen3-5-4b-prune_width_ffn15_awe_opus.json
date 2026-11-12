@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mrysh/qwen3.5-4b-prune_width_ffn15_awe_opus",
+  "slug": "mrysh-qwen3-5-4b-prune_width_ffn15_awe_opus",
+  "author": "mrysh",
+  "url": "https://huggingface.co/mrysh/qwen3.5-4b-prune_width_ffn15_awe_opus",
+  "created_at": "2026-11-12T16:17:57.000Z",
+  "updated_at": "2026-11-12T16:18:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "pruned",
+    "width",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3859721216,
+  "parameters_human": "3.86B",
+  "storage_bytes": 7739487565,
+  "storage_human": "7.7 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

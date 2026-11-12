@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Awesome-x/aci-yoruba-phaseX",
+  "slug": "awesome-x-aci-yoruba-phasex",
+  "author": "Awesome-x",
+  "url": "https://huggingface.co/Awesome-x/aci-yoruba-phaseX",
+  "created_at": "2026-09-17T15:27:00.000Z",
+  "updated_at": "2026-11-12T14:35:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "yo",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "speech",
+    "yoruba",
+    "code-switching",
+    "kenlm",
+    "yo",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 263,
+  "trending_score": 0,
+  "parameters": 315485870,
+  "parameters_human": "315.5M",
+  "storage_bytes": 1643677767,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "ACI Yoruba-English Code-Switching Held-Out Set",
+      "metric": "Test WER (%, punctuation-normalized, held-out)",
+      "value": 7.09
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "kuramot6f/classical-smollm2-sft",
+  "slug": "kuramot6f-classical-smollm2-sft",
+  "author": "kuramot6f",
+  "url": "https://huggingface.co/kuramot6f/classical-smollm2-sft",
+  "created_at": "2026-11-12T12:23:15.000Z",
+  "updated_at": "2026-11-12T12:54:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "smollm2",
+    "classical-japanese",
+    "dialogue",
+    "sft",
+    "historical",
+    "ja",
+    "dataset:kuramot6f/classical-ja-sft-dialogue",
+    "base_model:kuramot6f/classical-smollm2-trunk",
+    "base_model:finetune:kuramot6f/classical-smollm2-trunk",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124635456,
+  "parameters_human": "124.6M",
+  "storage_bytes": 499038937,
+  "storage_human": "499 MB",
+  "base_model": "kuramot6f/classical-smollm2-trunk",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "JakTheTrippr/tiny-kimi-k3.1-pro-GGUF",
+  "slug": "jakthetrippr-tiny-kimi-k3-1-pro-gguf",
+  "author": "JakTheTrippr",
+  "url": "https://huggingface.co/JakTheTrippr/tiny-kimi-k3.1-pro-GGUF",
+  "created_at": "2026-11-12T16:08:10.000Z",
+  "updated_at": "2026-11-12T16:08:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "image-text-to-text",
+    "base_model:moonshotai/Kimi-K3.1-Pro",
+    "base_model:quantized:moonshotai/Kimi-K3.1-Pro",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26548240,
+  "parameters_human": "26.5M",
+  "storage_bytes": 72346112,
+  "storage_human": "72 MB",
+  "base_model": "moonshotai/Kimi-K3.1-Pro, tiny-random/kimi-k3.1-pro",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

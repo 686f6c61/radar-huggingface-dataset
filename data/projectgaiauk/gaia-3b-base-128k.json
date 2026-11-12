@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "ProjectGaiaUK/gaia-3b-base-128k",
+  "slug": "projectgaiauk-gaia-3b-base-128k",
+  "author": "ProjectGaiaUK",
+  "url": "https://huggingface.co/ProjectGaiaUK/gaia-3b-base-128k",
+  "created_at": "2026-11-12T20:00:48.000Z",
+  "updated_at": "2026-11-12T20:02:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ro"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "base-model",
+    "research",
+    "long-context",
+    "conversational",
+    "en",
+    "ro",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2976033792,
+  "parameters_human": "2.98B",
+  "storage_bytes": 6455592972,
+  "storage_human": "6.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

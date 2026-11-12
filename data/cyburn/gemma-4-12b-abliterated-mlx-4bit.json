@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "cyburn/gemma-4-12B-abliterated-mlx-4bit",
+  "slug": "cyburn-gemma-4-12b-abliterated-mlx-4bit",
+  "author": "cyburn",
+  "url": "https://huggingface.co/cyburn/gemma-4-12B-abliterated-mlx-4bit",
+  "created_at": "2026-11-12T19:35:23.000Z",
+  "updated_at": "2026-11-12T19:36:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "text-generation",
+    "conversational",
+    "en",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350272,
+  "parameters_human": "11.91B",
+  "storage_bytes": 6831176905,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

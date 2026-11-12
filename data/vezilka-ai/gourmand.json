@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "vezilka-ai/Gourmand",
+  "slug": "vezilka-ai-gourmand",
+  "author": "vezilka-ai",
+  "url": "https://huggingface.co/vezilka-ai/Gourmand",
+  "created_at": "2026-11-12T14:19:11.000Z",
+  "updated_at": "2026-11-12T14:19:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 15554488504,
+  "storage_human": "15.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "id": "khabouss/opus-mt-tc-big-en-zle-onnx",
+  "slug": "khabouss-opus-mt-tc-big-en-zle-onnx",
+  "author": "khabouss",
+  "url": "https://huggingface.co/khabouss/opus-mt-tc-big-en-zle-onnx",
+  "created_at": "2026-11-12T16:45:19.000Z",
+  "updated_at": "2026-11-12T16:47:21.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "be",
+    "en",
+    "ru",
+    "uk",
+    "zle"
+  ],
+  "tags": [
+    "onnx",
+    "marian",
+    "translation",
+    "opus-mt-tc",
+    "be",
+    "en",
+    "ru",
+    "uk",
+    "zle",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 370938706,
+  "storage_human": "371 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Translation eng-rus",
+      "dataset": "flores101-devtest",
+      "metric": "BLEU",
+      "value": 32.7
+    },
+    {
+      "task": "Translation eng-ukr",
+      "dataset": "flores101-devtest",
+      "metric": "BLEU",
+      "value": 32.1
+    },
+    {
+      "task": "Translation eng-bel",
+      "dataset": "tatoeba-test-v2021-08-07",
+      "metric": "BLEU",
+      "value": 24.9
+    },
+    {
+      "task": "Translation eng-rus",
+      "dataset": "tatoeba-test-v2021-08-07",
+      "metric": "BLEU",
+      "value": 45.5
+    },
+    {
+      "task": "Translation eng-ukr",
+      "dataset": "tatoeba-test-v2021-08-07",
+      "metric": "BLEU",
+      "value": 37.7
+    },
+    {
+      "task": "Translation eng-rus",
+      "dataset": "tico19-test",
+      "metric": "BLEU",
+      "value": 33.7
+    },
+    {
+      "task": "Translation eng-rus",
+      "dataset": "newstest2012",
+      "metric": "BLEU",
+      "value": 36.8
+    },
+    {
+      "task": "Translation eng-rus",
+      "dataset": "newstest2013",
+      "metric": "BLEU",
+      "value": 26.9
+    },
+    {
+      "task": "Translation eng-rus",
+      "dataset": "newstest2014",
+      "metric": "BLEU",
+      "value": 43.5
+    },
+    {
+      "task": "Translation eng-rus",
+      "dataset": "newstest2015",
+      "metric": "BLEU",
+      "value": 34.9
+    },
+    {
+      "task": "Translation eng-rus",
+      "dataset": "newstest2016",
+      "metric": "BLEU",
+      "value": 33.1
+    },
+    {
+      "task": "Translation eng-rus",
+      "dataset": "newstest2017",
+      "metric": "BLEU",
+      "value": 37.3
+    },
+    {
+      "task": "Translation eng-rus",
+      "dataset": "newstest2018",
+      "metric": "BLEU",
+      "value": 32.9
+    },
+    {
+      "task": "Translation eng-rus",
+      "dataset": "newstest2019",
+      "metric": "BLEU",
+      "value": 31.8
+    },
+    {
+      "task": "Translation eng-rus",
+      "dataset": "newstest2020",
+      "metric": "BLEU",
+      "value": 25.5
+    }
+  ],
+  "sources": []
+}

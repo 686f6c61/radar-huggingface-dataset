@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "SEONGMIN1234/act_pick_cube_chunk100",
+  "slug": "seongmin1234-act_pick_cube_chunk100",
+  "author": "SEONGMIN1234",
+  "url": "https://huggingface.co/SEONGMIN1234/act_pick_cube_chunk100",
+  "created_at": "2026-11-12T18:10:40.000Z",
+  "updated_at": "2026-11-12T18:11:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:SEONGMIN1234/so101-pick-cube-2cam-50ep",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714912,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

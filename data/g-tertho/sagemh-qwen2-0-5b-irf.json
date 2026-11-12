@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "g-tertho/sagemh-qwen2-0.5b-irf",
+  "slug": "g-tertho-sagemh-qwen2-0-5b-irf",
+  "author": "g-tertho",
+  "url": "https://huggingface.co/g-tertho/sagemh-qwen2-0.5b-irf",
+  "created_at": "2026-11-12T18:41:13.000Z",
+  "updated_at": "2026-11-12T18:42:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "mental-health",
+    "thwarted-belongingness",
+    "irf",
+    "lora",
+    "merged",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2-0.5B",
+    "base_model:adapter:Qwen/Qwen2-0.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999515798,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

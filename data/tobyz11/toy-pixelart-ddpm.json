@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Tobyz11/toy-pixelart-ddpm",
+  "slug": "tobyz11-toy-pixelart-ddpm",
+  "author": "Tobyz11",
+  "url": "https://huggingface.co/Tobyz11/toy-pixelart-ddpm",
+  "created_at": "2026-11-12T13:28:14.000Z",
+  "updated_at": "2026-11-12T13:28:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "diffusion",
+    "pixel-art",
+    "toy-model",
+    "educational",
+    "text-to-image",
+    "en",
+    "dataset:azyg0s/pixelart-172k",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24514308,
+  "parameters_human": "24.5M",
+  "storage_bytes": 98097360,
+  "storage_human": "98 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

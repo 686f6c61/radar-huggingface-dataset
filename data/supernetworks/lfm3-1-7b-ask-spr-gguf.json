@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "supernetworks/LFM3-1.7B-Ask-SPR-GGUF",
+  "slug": "supernetworks-lfm3-1-7b-ask-spr-gguf",
+  "author": "supernetworks",
+  "url": "https://huggingface.co/supernetworks/LFM3-1.7B-Ask-SPR-GGUF",
+  "created_at": "2026-11-12T16:56:26.000Z",
+  "updated_at": "2026-11-12T17:15:58.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lfm3",
+    "text-generation",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:quantized:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 1099627072,
+  "storage_human": "1.1 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

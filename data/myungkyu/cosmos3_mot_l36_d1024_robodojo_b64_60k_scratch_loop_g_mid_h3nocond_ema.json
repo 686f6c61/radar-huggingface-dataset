@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Myungkyu/cosmos3_mot_l36_d1024_robodojo_b64_60k_scratch_loop_g_mid_h3nocond_ema",
+  "slug": "myungkyu-cosmos3_mot_l36_d1024_robodojo_b64_60k_scratch_loop_g_mid_h3nocond_ema",
+  "author": "Myungkyu",
+  "url": "https://huggingface.co/Myungkyu/cosmos3_mot_l36_d1024_robodojo_b64_60k_scratch_loop_g_mid_h3nocond_ema",
+  "created_at": "2026-11-12T15:37:30.000Z",
+  "updated_at": "2026-11-12T15:45:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "cosmos-framework",
+  "languages": [],
+  "tags": [
+    "cosmos-framework",
+    "robotics",
+    "world-model",
+    "action-policy",
+    "cosmos3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32001480446,
+  "storage_human": "32.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft 365 Login Loop? Expert Help & Troubleshooting Guide",
+      "url": "https://www.justanswer.com/microsoft-office/u4fei-microsoft-365-outlook-login-loop-lockout.html?msockid=31643214fc8668a039c82a1bfd5669b2",
+      "snippet": "Customer: I got disconnected from Microsoft 365 and Outlook Classic and can't log back in. Every time I enter a user ID, it loops …"
+    }
+  ]
+}

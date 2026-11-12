@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yash7447/ats-resume-scorer",
+  "slug": "yash7447-ats-resume-scorer",
+  "author": "yash7447",
+  "url": "https://huggingface.co/yash7447/ats-resume-scorer",
+  "created_at": "2026-11-12T15:32:01.000Z",
+  "updated_at": "2026-11-12T15:38:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "mpnet",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:196",
+    "loss:CosineSimilarityLoss",
+    "arxiv:1908.10084",
+    "base_model:sentence-transformers/all-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/all-mpnet-base-v2",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437967672,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/all-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Semantic Similarity",
+      "dataset": "ats val",
+      "metric": "Pearson Cosine",
+      "value": 0.7756304179352241
+    },
+    {
+      "task": "Semantic Similarity",
+      "dataset": "ats val",
+      "metric": "Spearman Cosine",
+      "value": 0.7652951341368378
+    }
+  ],
+  "sources": []
+}

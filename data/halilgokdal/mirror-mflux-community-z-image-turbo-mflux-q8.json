@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "halilgokdal/mirror-mflux-community-z-image-turbo-mflux-q8",
+  "slug": "halilgokdal-mirror-mflux-community-z-image-turbo-mflux-q8",
+  "author": "halilgokdal",
+  "url": "https://huggingface.co/halilgokdal/mirror-mflux-community-z-image-turbo-mflux-q8",
+  "created_at": "2026-11-12T15:57:45.000Z",
+  "updated_at": "2026-11-12T15:58:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mirror",
+    "text-to-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10991965641,
+  "storage_human": "11.0 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

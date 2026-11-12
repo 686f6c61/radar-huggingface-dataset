@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "SWE4ICLR2027/SWE-at-Scale-3k",
+  "slug": "swe4iclr2027-swe-at-scale-3k",
+  "author": "SWE4ICLR2027",
+  "url": "https://huggingface.co/SWE4ICLR2027/SWE-at-Scale-3k",
+  "created_at": "2026-11-12T12:53:00.000Z",
+  "updated_at": "2026-11-12T12:53:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

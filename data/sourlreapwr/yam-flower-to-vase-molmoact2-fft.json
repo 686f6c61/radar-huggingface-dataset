@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "sourlreapwr/yam-flower-to-vase-molmoact2-fft",
+  "slug": "sourlreapwr-yam-flower-to-vase-molmoact2-fft",
+  "author": "sourlreapwr",
+  "url": "https://huggingface.co/sourlreapwr/yam-flower-to-vase-molmoact2-fft",
+  "created_at": "2026-11-12T18:15:37.000Z",
+  "updated_at": "2026-11-12T18:17:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "molmoact2",
+    "image-text-to-text",
+    "robotics",
+    "bimanual-yam",
+    "yam",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5447439088,
+  "parameters_human": "5.45B",
+  "storage_bytes": 21802103979,
+  "storage_human": "21.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

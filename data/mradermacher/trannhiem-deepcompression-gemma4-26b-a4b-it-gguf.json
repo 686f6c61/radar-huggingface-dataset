@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/TranNhiem-DeepCompression-Gemma4-26B-A4B-it-GGUF",
+  "slug": "mradermacher-trannhiem-deepcompression-gemma4-26b-a4b-it-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TranNhiem-DeepCompression-Gemma4-26B-A4B-it-GGUF",
+  "created_at": "2026-11-12T18:28:52.000Z",
+  "updated_at": "2026-11-12T18:48:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4",
+    "mixture-of-experts",
+    "expert-pruning",
+    "nvfp4",
+    "modelopt",
+    "vllm",
+    "vision-language",
+    "compressed",
+    "en",
+    "base_model:trannhiem/TranNhiem-DeepCompression-Gemma4-26B-A4B-it",
+    "base_model:quantized:trannhiem/TranNhiem-DeepCompression-Gemma4-26B-A4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23805109886,
+  "parameters_human": "23.81B",
+  "storage_bytes": 26596562816,
+  "storage_human": "26.6 GB",
+  "base_model": "trannhiem/TranNhiem-DeepCompression-Gemma4-26B-A4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

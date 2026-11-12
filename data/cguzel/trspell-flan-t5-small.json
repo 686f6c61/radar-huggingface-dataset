@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "cguzel/trspell-flan-t5-small",
+  "slug": "cguzel-trspell-flan-t5-small",
+  "author": "cguzel",
+  "url": "https://huggingface.co/cguzel/trspell-flan-t5-small",
+  "created_at": "2026-11-12T14:15:18.000Z",
+  "updated_at": "2026-11-12T14:20:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "spelling-correction",
+    "turkish",
+    "flan-t5",
+    "tr",
+    "dataset:cguzel/NoisyWikiTr",
+    "base_model:google/flan-t5-small",
+    "base_model:finetune:google/flan-t5-small",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76961152,
+  "parameters_human": "77.0M",
+  "storage_bytes": 308658704,
+  "storage_human": "309 MB",
+  "base_model": "google/flan-t5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

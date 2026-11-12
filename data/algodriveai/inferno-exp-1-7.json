@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "AlgoDriveAI/Inferno-Exp-1.7",
+  "slug": "algodriveai-inferno-exp-1-7",
+  "author": "AlgoDriveAI",
+  "url": "https://huggingface.co/AlgoDriveAI/Inferno-Exp-1.7",
+  "created_at": "2026-10-18T13:08:29.000Z",
+  "updated_at": "2026-11-12T19:16:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inferno",
+    "text-generation",
+    "small-language-model",
+    "gqa",
+    "custom_code",
+    "arithmark",
+    "en",
+    "dataset:AlgoDriveAI/SLM_v6",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 786,
+  "trending_score": 0,
+  "parameters": 393610240,
+  "parameters_human": "393.6M",
+  "storage_bytes": 1574954099,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Arithmetic word-problem continuation",
+      "dataset": "ArithMark 3.0",
+      "metric": "Length-normalized accuracy",
+      "value": 85.7
+    },
+    {
+      "task": "Arithmetic word-problem continuation",
+      "dataset": "ArithMark 3.0",
+      "metric": "Raw continuation accuracy",
+      "value": 85.6
+    },
+    {
+      "task": "Zero-shot continuation scoring",
+      "dataset": "HellaSwag",
+      "metric": "Normalized accuracy (0-shot)",
+      "value": 33.68
+    },
+    {
+      "task": "Zero-shot continuation scoring",
+      "dataset": "ARC-Easy",
+      "metric": "Normalized accuracy (0-shot)",
+      "value": 51.6
+    },
+    {
+      "task": "Zero-shot continuation scoring",
+      "dataset": "ARC-Challenge",
+      "metric": "Normalized accuracy (0-shot)",
+      "value": 34.04
+    },
+    {
+      "task": "Zero-shot continuation scoring",
+      "dataset": "PIQA",
+      "metric": "Normalized accuracy (0-shot)",
+      "value": 64.47
+    }
+  ],
+  "sources": []
+}

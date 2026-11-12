@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "oscar128372/test-250k-soup",
+  "slug": "oscar128372-test-250k-soup",
+  "author": "oscar128372",
+  "url": "https://huggingface.co/oscar128372/test-250k-soup",
+  "created_at": "2026-11-12T15:38:22.000Z",
+  "updated_at": "2026-11-12T15:58:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 250021,
+  "parameters_human": "250021",
+  "storage_bytes": 513370,
+  "storage_human": "513370 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "josephimperial/hiligayner-xlmr-large",
+  "slug": "josephimperial-hiligayner-xlmr-large",
+  "author": "josephimperial",
+  "url": "https://huggingface.co/josephimperial/hiligayner-xlmr-large",
+  "created_at": "2026-11-12T17:27:44.000Z",
+  "updated_at": "2026-11-12T17:28:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "hil"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "named-entity-recognition",
+    "hiligaynon",
+    "hil",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 558848007,
+  "parameters_human": "558.8M",
+  "storage_bytes": 2257592439,
+  "storage_human": "2.3 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

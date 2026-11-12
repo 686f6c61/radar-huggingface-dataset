@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Aphygo/zega-ministral3-8b-swedish-v1",
+  "slug": "aphygo-zega-ministral3-8b-swedish-v1",
+  "author": "Aphygo",
+  "url": "https://huggingface.co/Aphygo/zega-ministral3-8b-swedish-v1",
+  "created_at": "2026-11-12T16:18:10.000Z",
+  "updated_at": "2026-11-12T17:29:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "safetensors",
+  "languages": [
+    "sv",
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "zega",
+    "weight-space-programming",
+    "synapse-cartridge",
+    "zero-gradient",
+    "swedish",
+    "ministral",
+    "image-text-to-text",
+    "sv",
+    "en",
+    "fr",
+    "base_model:mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "base_model:adapter:mistralai/Ministral-3-8B-Instruct-2512-BF16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 984016,
+  "storage_human": "984016 B",
+  "base_model": "mistralai/Ministral-3-8B-Instruct-2512-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

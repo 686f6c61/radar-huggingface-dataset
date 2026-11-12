@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "brineylab/35M_full_checkpoint-500000",
+  "slug": "brineylab-35m_full_checkpoint-500000",
+  "author": "brineylab",
+  "url": "https://huggingface.co/brineylab/35M_full_checkpoint-500000",
+  "created_at": "2025-05-14T20:59:15.000Z",
+  "updated_at": "2026-11-12T20:29:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "esm",
+    "fill-mask",
+    "biology",
+    "antibody",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 80,
+  "trending_score": 0,
+  "parameters": 33656098,
+  "parameters_human": "33.7M",
+  "storage_bytes": 165123444,
+  "storage_human": "165 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

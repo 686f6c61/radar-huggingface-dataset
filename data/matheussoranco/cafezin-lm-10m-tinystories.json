@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "MatheusSoranco/cafezin-lm-10m-tinystories",
+  "slug": "matheussoranco-cafezin-lm-10m-tinystories",
+  "author": "MatheusSoranco",
+  "url": "https://huggingface.co/MatheusSoranco/cafezin-lm-10m-tinystories",
+  "created_at": "2026-11-12T14:51:17.000Z",
+  "updated_at": "2026-11-12T14:52:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "cafezin-lm",
+    "tiny-language-model",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:2305.07759",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10366256,
+  "parameters_human": "10.4M",
+  "storage_bytes": 41489904,
+  "storage_human": "41 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

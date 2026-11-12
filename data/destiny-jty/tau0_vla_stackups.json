@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Destiny-JTY/tau0_vla_stackups",
+  "slug": "destiny-jty-tau0_vla_stackups",
+  "author": "Destiny-JTY",
+  "url": "https://huggingface.co/Destiny-JTY/tau0_vla_stackups",
+  "created_at": "2026-11-10T11:16:31.000Z",
+  "updated_at": "2026-11-12T13:09:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "tau_vla",
+    "vision-language-action",
+    "tau0-vla",
+    "arx",
+    "stackcups",
+    "robotics",
+    "en",
+    "dataset:Destiny-JTY/arx_stackcups",
+    "base_model:sii-research/tau-0-vla",
+    "base_model:finetune:sii-research/tau-0-vla",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 3015404136,
+  "parameters_human": "3.02B",
+  "storage_bytes": 36878111534,
+  "storage_human": "36.9 GB",
+  "base_model": "sii-research/tau-0-vla",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

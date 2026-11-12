@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "oot-ai/oot-oneliner-GGUF",
+  "slug": "oot-ai-oot-oneliner-gguf",
+  "author": "oot-ai",
+  "url": "https://huggingface.co/oot-ai/oot-oneliner-GGUF",
+  "created_at": "2026-10-29T19:04:08.000Z",
+  "updated_at": "2026-11-12T16:31:21.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "multilingual",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "oot",
+    "one-liner",
+    "summarization",
+    "title-generation",
+    "agents",
+    "llama.cpp",
+    "text-generation",
+    "conversational",
+    "multilingual",
+    "en",
+    "base_model:oot-ai/oot-oneliner",
+    "base_model:quantized:oot-ai/oot-oneliner",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 58,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 8837524800,
+  "storage_human": "8.8 GB",
+  "base_model": "oot-ai/oot-oneliner",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

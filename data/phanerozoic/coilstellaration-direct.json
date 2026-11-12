@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "phanerozoic/coilstellaration-direct",
+  "slug": "phanerozoic-coilstellaration-direct",
+  "author": "phanerozoic",
+  "url": "https://huggingface.co/phanerozoic/coilstellaration-direct",
+  "created_at": "2026-11-12T14:59:04.000Z",
+  "updated_at": "2026-11-12T14:59:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "coilstellaration",
+    "stellarator",
+    "fusion",
+    "coils",
+    "dataset:proxima-fusion/coilstellaration",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29377560,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seven Bears Publishing - Book Publisher, Children's Books, Publishing",
+      "url": "https://sevenbearspublishing.com/",
+      "snippet": "Our mission is to share the love of Jesus through our Christian bookstore with everyone around the world, and to direct …"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "VamidkaZ/ChessLM_Qwen3-Q4_K_M-GGUF",
+  "slug": "vamidkaz-chesslm_qwen3-q4_k_m-gguf",
+  "author": "VamidkaZ",
+  "url": "https://huggingface.co/VamidkaZ/ChessLM_Qwen3-Q4_K_M-GGUF",
+  "created_at": "2026-11-12T16:00:41.000Z",
+  "updated_at": "2026-11-12T16:01:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:karanps/ChessLM_Qwen3",
+    "base_model:quantized:karanps/ChessLM_Qwen3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5027779360,
+  "storage_human": "5.0 GB",
+  "base_model": "karanps/ChessLM_Qwen3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "chmjkb/bielik-11b-v3.1-runntime-int4",
+  "slug": "chmjkb-bielik-11b-v3-1-runntime-int4",
+  "author": "chmjkb",
+  "url": "https://huggingface.co/chmjkb/bielik-11b-v3.1-runntime-int4",
+  "created_at": "2026-11-12T15:32:19.000Z",
+  "updated_at": "2026-11-12T16:02:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "runntime",
+    "webgpu",
+    "int4",
+    "pl",
+    "base_model:speakleash/Bielik-11B-v3.1-Instruct",
+    "base_model:finetune:speakleash/Bielik-11B-v3.1-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6538104032,
+  "storage_human": "6.5 GB",
+  "base_model": "speakleash/Bielik-11B-v3.1-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

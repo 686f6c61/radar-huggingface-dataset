@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "NukeTorch/Qwen3.5-9B-LoRA-WikiSQL-1000-Step",
+  "slug": "nuketorch-qwen3-5-9b-lora-wikisql-1000-step",
+  "author": "NukeTorch",
+  "url": "https://huggingface.co/NukeTorch/Qwen3.5-9B-LoRA-WikiSQL-1000-Step",
+  "created_at": "2026-11-12T13:06:07.000Z",
+  "updated_at": "2026-11-12T13:58:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nuketorch",
+    "apple-silicon",
+    "lora",
+    "fine-tuning",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19319118862,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

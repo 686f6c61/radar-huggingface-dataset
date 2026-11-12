@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Shimamura-70B-GGUF",
+  "slug": "mradermacher-shimamura-70b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Shimamura-70B-GGUF",
+  "created_at": "2025-08-25T22:07:16.000Z",
+  "updated_at": "2026-11-12T19:33:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "roleplay",
+    "chat",
+    "creative-writing",
+    "en",
+    "dataset:Delta-Vector/Orion-Misc-Data-Sharegpt-Prefixed",
+    "dataset:Delta-Vector/Orion-Basket-Weaving-Filtered",
+    "dataset:Delta-Vector/Orion-vanilla-backrooms-claude-sharegpt",
+    "dataset:Delta-Vector/Orion-Roleplay-Logs-Sharegpt-Ngram-cleaned",
+    "dataset:Delta-Vector/Orion-BlueSky-10K-Complexity",
+    "base_model:Delta-Vector/Shimamura-70B",
+    "base_model:quantized:Delta-Vector/Shimamura-70B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 83,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481303051360,
+  "storage_human": "481.3 GB",
+  "base_model": "Delta-Vector/Shimamura-70B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

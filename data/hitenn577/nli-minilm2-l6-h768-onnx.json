@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "hitenn577/nli-MiniLM2-L6-H768-onnx",
+  "slug": "hitenn577-nli-minilm2-l6-h768-onnx",
+  "author": "hitenn577",
+  "url": "https://huggingface.co/hitenn577/nli-MiniLM2-L6-H768-onnx",
+  "created_at": "2026-11-12T15:32:45.000Z",
+  "updated_at": "2026-11-12T15:33:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "roberta",
+    "text-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 82530555,
+  "storage_human": "83 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

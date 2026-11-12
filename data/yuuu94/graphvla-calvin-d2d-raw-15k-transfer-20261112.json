@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "yuuu94/GraphVLA-CALVIN-D2D-Raw-15k-transfer-20261112",
+  "slug": "yuuu94-graphvla-calvin-d2d-raw-15k-transfer-20261112",
+  "author": "yuuu94",
+  "url": "https://huggingface.co/yuuu94/GraphVLA-CALVIN-D2D-Raw-15k-transfer-20261112",
+  "created_at": "2026-11-12T14:27:05.000Z",
+  "updated_at": "2026-11-12T14:32:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9127864889,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

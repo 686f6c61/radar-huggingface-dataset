@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "LiquidAI/Liquid-Codec",
+  "slug": "liquidai-liquid-codec",
+  "author": "LiquidAI",
+  "url": "https://huggingface.co/LiquidAI/Liquid-Codec",
+  "created_at": "2026-09-16T21:24:55.000Z",
+  "updated_at": "2026-11-12T17:45:00.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "de",
+    "fr",
+    "ja",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "liquid_codec",
+    "feature-extraction",
+    "liquid",
+    "lfm3",
+    "audio",
+    "audio-codec",
+    "speech",
+    "streaming",
+    "edge",
+    "multilingual",
+    "custom_code",
+    "en",
+    "zh",
+    "de",
+    "fr",
+    "ja",
+    "ko",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 29,
+  "downloads_30d": 6227,
+  "trending_score": 23,
+  "parameters": 73559090,
+  "parameters_human": "73.6M",
+  "storage_bytes": 147143580,
+  "storage_human": "147 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Liquid AI | Device-native foundation models.",
+      "url": "https://www.liquid.ai/",
+      "snippet": "Liquid AI builds efficient Liquid Foundation Models (LFMs) for on-device, edge, and cloud AI with low latency, privacy, and hardware …"
+    },
+    {
+      "title": "LiquidAI (Liquid AI) - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI",
+      "snippet": "LiquidAI/LFM2.5-VL-3B Image-Text-to-Text • 3B • Updated Sep 24 • 30.6k • 236 Run LFM2.5-VL-3B locally in your browser with …"
+    },
+    {
+      "title": "Liquid Foundation Models | Liquid AI",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "Explore Liquid Foundation Models (LFMs): efficient text, vision, audio, and nano models built for on-device, edge, and cloud AI …"
+    },
+    {
+      "title": "Liquid AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Liquid_AI",
+      "snippet": "Liquid AI is an American artificial intelligence company, an MIT spin-off, that develops liquid foundation models running directly on …"
+    },
+    {
+      "title": "Liquid Ai – Next Gen AI Applications",
+      "url": "https://liquidai.net/",
+      "snippet": "We are researching and developing tools that leverage artificial intelligence to improve creative workflows."
+    }
+  ]
+}

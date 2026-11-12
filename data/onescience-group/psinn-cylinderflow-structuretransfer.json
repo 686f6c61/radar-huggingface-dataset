@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/PsiNN-CylinderFlow-StructureTransfer",
+  "slug": "onescience-group-psinn-cylinderflow-structuretransfer",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/PsiNN-CylinderFlow-StructureTransfer",
+  "created_at": "2026-11-12T12:50:43.000Z",
+  "updated_at": "2026-11-12T12:52:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "psinn_flow",
+    "OneScience",
+    "fluid-dynamics",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8644431,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

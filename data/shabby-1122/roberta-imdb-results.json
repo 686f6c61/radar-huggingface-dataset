@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Shabby-1122/roberta-imdb-results",
+  "slug": "shabby-1122-roberta-imdb-results",
+  "author": "Shabby-1122",
+  "url": "https://huggingface.co/Shabby-1122/roberta-imdb-results",
+  "created_at": "2026-11-12T14:04:58.000Z",
+  "updated_at": "2026-11-12T14:05:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498618025,
+  "storage_human": "499 MB",
+  "base_model": "roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

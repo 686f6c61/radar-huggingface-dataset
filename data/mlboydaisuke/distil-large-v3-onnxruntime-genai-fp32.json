@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/distil-large-v3-onnxruntime-genai-fp32",
+  "slug": "mlboydaisuke-distil-large-v3-onnxruntime-genai-fp32",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/distil-large-v3-onnxruntime-genai-fp32",
+  "created_at": "2026-11-12T13:21:30.000Z",
+  "updated_at": "2026-11-12T14:28:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime-genai",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime-genai",
+    "onnx",
+    "whisper",
+    "distil-whisper",
+    "windows",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:distil-whisper/distil-large-v3",
+    "base_model:quantized:distil-whisper/distil-large-v3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3291552697,
+  "storage_human": "3.3 GB",
+  "base_model": "distil-whisper/distil-large-v3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

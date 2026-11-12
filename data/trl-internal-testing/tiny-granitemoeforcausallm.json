@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "trl-internal-testing/tiny-GraniteMoeForCausalLM",
+  "slug": "trl-internal-testing-tiny-granitemoeforcausallm",
+  "author": "trl-internal-testing",
+  "url": "https://huggingface.co/trl-internal-testing/tiny-GraniteMoeForCausalLM",
+  "created_at": "2026-10-26T20:32:43.000Z",
+  "updated_at": "2026-11-12T20:27:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granitemoe",
+    "text-generation",
+    "trl",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10103,
+  "trending_score": 0,
+  "parameters": 1604096,
+  "parameters_human": "1.6M",
+  "storage_bytes": 4012336,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

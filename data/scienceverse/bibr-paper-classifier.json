@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "scienceverse/bibr-paper-classifier",
+  "slug": "scienceverse-bibr-paper-classifier",
+  "author": "scienceverse",
+  "url": "https://huggingface.co/scienceverse/bibr-paper-classifier",
+  "created_at": "2026-07-10T21:22:41.000Z",
+  "updated_at": "2026-11-12T15:57:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "bibr",
+    "paper-classifier",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22730541,
+  "parameters_human": "22.7M",
+  "storage_bytes": 802661932,
+  "storage_human": "803 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
