@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/Shepherd-Alpha",
   "created_at": "2026-04-08T14:54:18.000Z",
-  "updated_at": "2026-11-10T14:16:56.000Z",
+  "updated_at": "2026-11-11T14:17:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 6,
-  "downloads_30d": 2807,
+  "downloads_30d": 2859,
   "trending_score": 0,
   "parameters": 1720040448,
   "parameters_human": "1.72B",

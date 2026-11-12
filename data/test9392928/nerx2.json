@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "test9392928/nerx2",
+  "slug": "test9392928-nerx2",
+  "author": "test9392928",
+  "url": "https://huggingface.co/test9392928/nerx2",
+  "created_at": "2026-11-12T04:49:43.000Z",
+  "updated_at": "2026-11-12T04:49:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1490,
+  "parameters_human": "1490",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

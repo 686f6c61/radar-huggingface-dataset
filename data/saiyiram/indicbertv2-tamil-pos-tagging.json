@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "saiyiram/indicbertv2-tamil-pos-tagging",
+  "slug": "saiyiram-indicbertv2-tamil-pos-tagging",
+  "author": "saiyiram",
+  "url": "https://huggingface.co/saiyiram/indicbertv2-tamil-pos-tagging",
+  "created_at": "2026-11-12T08:08:30.000Z",
+  "updated_at": "2026-11-12T08:13:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:ai4bharat/IndicBERTv2-MLM-only",
+    "base_model:finetune:ai4bharat/IndicBERTv2-MLM-only",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277461518,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1109874793,
+  "storage_human": "1.1 GB",
+  "base_model": "ai4bharat/IndicBERTv2-MLM-only",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

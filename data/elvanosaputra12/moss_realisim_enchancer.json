@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "ElvanoSaputra12/MOSS_Realisim_Enchancer",
+  "slug": "elvanosaputra12-moss_realisim_enchancer",
+  "author": "ElvanoSaputra12",
+  "url": "https://huggingface.co/ElvanoSaputra12/MOSS_Realisim_Enchancer",
+  "created_at": "2026-11-12T07:11:01.000Z",
+  "updated_at": "2026-11-12T07:11:01.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:BigArchives/civitai-archive-files",
+    "base_model:adapter:BigArchives/civitai-archive-files",
+    "license:afl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "BigArchives/civitai-archive-files",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

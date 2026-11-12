@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "johnhenryus/deepgrav-30b",
+  "slug": "johnhenryus-deepgrav-30b",
+  "author": "johnhenryus",
+  "url": "https://huggingface.co/johnhenryus/deepgrav-30b",
+  "created_at": "2026-11-12T08:30:59.000Z",
+  "updated_at": "2026-11-12T08:31:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "q5_k_m",
+    "deepgravity",
+    "text-generation",
+    "en",
+    "base_model:The-freezer/Muse-Glimmer-30B-Abliterated-GGUF",
+    "base_model:finetune:The-freezer/Muse-Glimmer-30B-Abliterated-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "The-freezer/Muse-Glimmer-30B-Abliterated-GGUF, meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

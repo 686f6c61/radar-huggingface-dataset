@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "wajdiz/camelbert-mix-ner-onnx",
+  "slug": "wajdiz-camelbert-mix-ner-onnx",
+  "author": "wajdiz",
+  "url": "https://huggingface.co/wajdiz/camelbert-mix-ner-onnx",
+  "created_at": "2026-11-12T12:07:09.000Z",
+  "updated_at": "2026-11-12T12:07:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "token-classification",
+    "arabic",
+    "base_model:CAMeL-Lab/bert-base-arabic-camelbert-mix-ner",
+    "base_model:quantized:CAMeL-Lab/bert-base-arabic-camelbert-mix-ner",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 109290730,
+  "storage_human": "109 MB",
+  "base_model": "CAMeL-Lab/bert-base-arabic-camelbert-mix-ner",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "tahamajs",
   "url": "https://huggingface.co/tahamajs/bert-spectron-fp8-sst2",
   "created_at": "2026-11-09T21:38:01.000Z",
-  "updated_at": "2026-11-09T21:38:40.000Z",
+  "updated_at": "2026-11-11T08:46:45.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 39,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

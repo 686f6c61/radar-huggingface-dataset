@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "AwesomeInterpretability/qwen3.5-4b-base-saes-65k-k128",
+  "slug": "awesomeinterpretability-qwen3-5-4b-base-saes-65k-k128",
+  "author": "AwesomeInterpretability",
+  "url": "https://huggingface.co/AwesomeInterpretability/qwen3.5-4b-base-saes-65k-k128",
+  "created_at": "2026-11-12T04:37:27.000Z",
+  "updated_at": "2026-11-12T05:09:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "sparse-autoencoder",
+    "mechanistic-interpretability",
+    "multimodal",
+    "qwen3.5",
+    "safetensors",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

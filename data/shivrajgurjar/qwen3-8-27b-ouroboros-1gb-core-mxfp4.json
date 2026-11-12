@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "shivrajgurjar/Qwen3.8-27B-Ouroboros-1GB-Core-MXFP4",
+  "slug": "shivrajgurjar-qwen3-8-27b-ouroboros-1gb-core-mxfp4",
+  "author": "shivrajgurjar",
+  "url": "https://huggingface.co/shivrajgurjar/Qwen3.8-27B-Ouroboros-1GB-Core-MXFP4",
+  "created_at": "2026-11-12T10:30:28.000Z",
+  "updated_at": "2026-11-12T10:45:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8450851672,
+  "storage_human": "8.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

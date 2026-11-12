@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "GiangSon-5/led-base-16384-scrolls-qasper",
+  "slug": "giangson-5-led-base-16384-scrolls-qasper",
+  "author": "GiangSon-5",
+  "url": "https://huggingface.co/GiangSon-5/led-base-16384-scrolls-qasper",
+  "created_at": "2026-11-12T06:37:55.000Z",
+  "updated_at": "2026-11-12T06:56:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "led",
+    "text2text-generation",
+    "longformer",
+    "longformer-encoder-decoder",
+    "seq2seq",
+    "question-answering",
+    "scientific-papers",
+    "scrolls-benchmark",
+    "qasper",
+    "long-document",
+    "bfloat16",
+    "arxiv:2004.05150",
+    "arxiv:2201.03533",
+    "arxiv:2105.03011",
+    "text-generation",
+    "en",
+    "dataset:tau/scrolls",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 161894745,
+  "parameters_human": "161.9M",
+  "storage_bytes": 324906580,
+  "storage_human": "325 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "SCROLLS QASper (validation split, 984 unique IDs, 4-beam)",
+      "metric": null,
+      "value": 29.91
+    },
+    {
+      "task": null,
+      "dataset": "SCROLLS QASper (validation split, 984 unique IDs, 4-beam)",
+      "metric": null,
+      "value": 15.14
+    },
+    {
+      "task": null,
+      "dataset": "SCROLLS QASper (validation split, 984 unique IDs, 4-beam)",
+      "metric": null,
+      "value": 1.9322
+    },
+    {
+      "task": null,
+      "dataset": "SCROLLS QASper (held-out test split, 1,399 unique IDs, 4-beam)",
+      "metric": null,
+      "value": 35.3
+    },
+    {
+      "task": null,
+      "dataset": "SCROLLS QASper (held-out test split, 1,399 unique IDs, 4-beam)",
+      "metric": null,
+      "value": 19.94
+    },
+    {
+      "task": null,
+      "dataset": "SCROLLS QASper (held-out test split, 1,399 unique IDs, 4-beam)",
+      "metric": null,
+      "value": 1.9257
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "naixxxx7/dense-0.8b-base",
+  "slug": "naixxxx7-dense-0-8b-base",
+  "author": "naixxxx7",
+  "url": "https://huggingface.co/naixxxx7/dense-0.8b-base",
+  "created_at": "2026-11-12T12:06:13.000Z",
+  "updated_at": "2026-11-12T12:16:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "dense1b",
+    "custom_code",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 840599104,
+  "parameters_human": "840.6M",
+  "storage_bytes": 1692667794,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Riasok/fastwam-libero-spatial-10demo-sft",
+  "slug": "riasok-fastwam-libero-spatial-10demo-sft",
+  "author": "Riasok",
+  "url": "https://huggingface.co/Riasok/fastwam-libero-spatial-10demo-sft",
+  "created_at": "2026-11-12T11:55:09.000Z",
+  "updated_at": "2026-11-12T11:56:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "libero",
+    "fastwam",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6020710599,
+  "parameters_human": "6.02B",
+  "storage_bytes": 12041639918,
+  "storage_human": "12.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

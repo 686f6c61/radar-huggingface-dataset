@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "huangdffs/40x56",
+  "slug": "huangdffs-40x56",
+  "author": "huangdffs",
+  "url": "https://huggingface.co/huangdffs/40x56",
+  "created_at": "2026-11-12T10:32:03.000Z",
+  "updated_at": "2026-11-12T10:32:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29181067,
+  "parameters_human": "29.2M",
+  "storage_bytes": 178128735,
+  "storage_human": "178 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

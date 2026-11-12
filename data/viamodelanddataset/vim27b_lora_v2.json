@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "viamodelanddataset/vim27b_lora_v2",
+  "slug": "viamodelanddataset-vim27b_lora_v2",
+  "author": "viamodelanddataset",
+  "url": "https://huggingface.co/viamodelanddataset/vim27b_lora_v2",
+  "created_at": "2026-11-12T05:49:24.000Z",
+  "updated_at": "2026-11-12T05:49:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "robotics",
+    "vision-language",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "dataset:viamodelanddataset/vi_amo_v2",
+    "base_model:unsloth/Qwen3.5-27B",
+    "base_model:adapter:unsloth/Qwen3.5-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 517881775,
+  "storage_human": "518 MB",
+  "base_model": "unsloth/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

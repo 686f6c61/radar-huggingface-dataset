@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Mo-ZheHan/FreeAct",
+  "slug": "mo-zhehan-freeact",
+  "author": "Mo-ZheHan",
+  "url": "https://huggingface.co/Mo-ZheHan/FreeAct",
+  "created_at": "2026-11-07T14:07:14.000Z",
+  "updated_at": "2026-11-08T12:39:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "latent-action",
+    "libero",
+    "lora",
+    "en",
+    "dataset:Mo-ZheHan/FreeAct-Data",
+    "dataset:Mo-ZheHan/droid",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18539916749,
+  "storage_human": "18.5 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

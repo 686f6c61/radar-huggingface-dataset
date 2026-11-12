@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dfdafs/citeguard-support-lora-qwen3-1.7b",
+  "slug": "dfdafs-citeguard-support-lora-qwen3-1-7b",
+  "author": "dfdafs",
+  "url": "https://huggingface.co/dfdafs/citeguard-support-lora-qwen3-1.7b",
+  "created_at": "2026-11-12T05:24:20.000Z",
+  "updated_at": "2026-11-12T05:24:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "zh",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69782384,
+  "storage_human": "70 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3 Models — Complete Guide Including Qwen3-Next (2026)",
+      "url": "https://qwen-ai.com/qwen-3/",
+      "snippet": "Three models define the Qwen 3 performance tier: the 235B flagship, the 32B dense workhorse, and Qwen3-Next's hybrid efficiency …"
+    },
+    {
+      "title": "Qwen3Guard Technical Report — AI Frontier",
+      "url": "https://unlinearity.github.io/AI-Frontier/abstracts/qwen/qwen3guard-technical-report.html",
+      "snippet": "Sep 23, 2025 · To address these challenges, we introduce Qwen3Guard, a multilingual safety guardrail model that achieves state-of …"
+    },
+    {
+      "title": "[2510.14276] Qwen3Guard Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2510.14276",
+      "snippet": "Oct 16, 2025 · Evaluated across English, Chinese, and multilingual benchmarks, Qwen3Guard achieves state-of-the-art performance …"
+    },
+    {
+      "title": "Qwen/Qwen3Guard-Gen-8B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3Guard-Gen-8B",
+      "snippet": "Qwen3Guard is a series of safety moderation models built upon Qwen3 and trained on a dataset of 1.19 million prompts and …"
+    }
+  ]
+}

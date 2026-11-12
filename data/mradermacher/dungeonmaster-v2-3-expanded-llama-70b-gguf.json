@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Dungeonmaster-V2.3-Expanded-LLaMa-70B-GGUF",
+  "slug": "mradermacher-dungeonmaster-v2-3-expanded-llama-70b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Dungeonmaster-V2.3-Expanded-LLaMa-70B-GGUF",
+  "created_at": "2025-03-08T21:45:48.000Z",
+  "updated_at": "2026-11-12T07:18:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:TareksTesting/Dungeonmaster-V2.3-Expanded-LLaMa-70B",
+    "base_model:quantized:TareksTesting/Dungeonmaster-V2.3-Expanded-LLaMa-70B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481302992576,
+  "storage_human": "481.3 GB",
+  "base_model": "TareksTesting/Dungeonmaster-V2.3-Expanded-LLaMa-70B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

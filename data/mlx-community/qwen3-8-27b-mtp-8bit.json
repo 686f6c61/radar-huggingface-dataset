@@ -5,7 +5,7 @@
   "author": "mlx-community",
   "url": "https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-8bit",
   "created_at": "2026-08-14T19:36:36.000Z",
-  "updated_at": "2026-08-14T19:36:51.000Z",
+  "updated_at": "2026-11-11T08:58:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 19,
-  "downloads_30d": 2327,
+  "downloads_30d": 2328,
   "trending_score": 8,
   "parameters": 424699392,
   "parameters_human": "424.7M",

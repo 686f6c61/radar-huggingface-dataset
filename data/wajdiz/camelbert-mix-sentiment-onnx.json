@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "wajdiz/camelbert-mix-sentiment-onnx",
+  "slug": "wajdiz-camelbert-mix-sentiment-onnx",
+  "author": "wajdiz",
+  "url": "https://huggingface.co/wajdiz/camelbert-mix-sentiment-onnx",
+  "created_at": "2026-11-12T11:58:36.000Z",
+  "updated_at": "2026-11-12T11:58:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "text-classification",
+    "arabic",
+    "base_model:CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment",
+    "base_model:quantized:CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 109880749,
+  "storage_human": "110 MB",
+  "base_model": "CAMeL-Lab/bert-base-arabic-camelbert-mix-sentiment",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

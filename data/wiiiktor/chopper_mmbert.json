@@ -5,7 +5,7 @@
   "author": "wiiiktor",
   "url": "https://huggingface.co/wiiiktor/chopper_mmbert",
   "created_at": "2026-11-02T08:21:18.000Z",
-  "updated_at": "2026-11-03T01:17:22.000Z",
+  "updated_at": "2026-11-12T04:00:16.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -16,6 +16,7 @@
     "rag",
     "context-compression",
     "chopper",
+    "multi-hop",
     "dataset:wiiiktor/chopper_demo",
     "base_model:jhu-clsp/mmBERT-base",
     "base_model:finetune:jhu-clsp/mmBERT-base",
@@ -35,8 +36,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-11-06T08:07:29.436Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

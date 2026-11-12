@@ -5,7 +5,7 @@
   "author": "mossloras",
   "url": "https://huggingface.co/mossloras/moss-image-lora-archive",
   "created_at": "2026-11-05T23:52:44.000Z",
-  "updated_at": "2026-11-11T05:03:54.000Z",
+  "updated_at": "2026-11-11T13:46:18.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -15,13 +15,13 @@
     "safetensors",
     "region:us"
   ],
-  "likes": 38,
+  "likes": 39,
   "downloads_30d": 0,
-  "trending_score": 38,
+  "trending_score": 39,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 386809815103,
-  "storage_human": "386.8 GB",
+  "storage_bytes": 390303218599,
+  "storage_human": "390.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

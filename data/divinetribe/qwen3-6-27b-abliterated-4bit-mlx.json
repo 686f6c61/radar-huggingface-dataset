@@ -5,7 +5,7 @@
   "author": "divinetribe",
   "url": "https://huggingface.co/divinetribe/Qwen3.6-27B-abliterated-4bit-mlx",
   "created_at": "2026-06-05T02:19:51.000Z",
-  "updated_at": "2026-11-10T11:11:10.000Z",
+  "updated_at": "2026-11-11T11:13:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 264,
+  "downloads_30d": 306,
   "trending_score": 0,
   "parameters": 26895993856,
   "parameters_human": "26.90B",

@@ -5,7 +5,7 @@
   "author": "lijinyan89",
   "url": "https://huggingface.co/lijinyan89/olmo3-190m-zh-full",
   "created_at": "2026-11-11T07:21:15.000Z",
-  "updated_at": "2026-11-11T07:21:19.000Z",
+  "updated_at": "2026-11-12T01:30:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 187011840,
   "parameters_human": "187.0M",
-  "storage_bytes": 374044296,
-  "storage_human": "374 MB",
+  "storage_bytes": 748088592,
+  "storage_human": "748 MB",
   "base_model": null,
   "formats": [
     "safetensors"

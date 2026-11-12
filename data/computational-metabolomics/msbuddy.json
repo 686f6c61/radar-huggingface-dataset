@@ -4,8 +4,8 @@
   "slug": "computational-metabolomics-msbuddy",
   "author": "computational-metabolomics",
   "url": "https://huggingface.co/computational-metabolomics/msbuddy",
-  "created_at": "2026-09-19T00:19:22.000Z",
-  "updated_at": "2026-09-19T00:19:24.000Z",
+  "created_at": "2026-11-10T11:07:58.000Z",
+  "updated_at": "2026-11-10T11:08:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -37,8 +37,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-21T02:44:56.061Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

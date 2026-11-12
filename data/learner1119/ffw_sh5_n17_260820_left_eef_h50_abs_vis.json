@@ -5,7 +5,7 @@
   "author": "learner1119",
   "url": "https://huggingface.co/learner1119/ffw_sh5_n17_260820_left_eef_h50_abs_vis",
   "created_at": "2026-11-11T07:22:14.000Z",
-  "updated_at": "2026-11-11T07:24:06.000Z",
+  "updated_at": "2026-11-12T00:06:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 6910507241,
-  "storage_human": "6.9 GB",
+  "storage_bytes": 62194502569,
+  "storage_human": "62.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

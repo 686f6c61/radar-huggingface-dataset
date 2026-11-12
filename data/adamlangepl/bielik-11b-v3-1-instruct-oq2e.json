@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "AdamLangePL/Bielik-11B-v3.1-Instruct-oQ2e",
+  "slug": "adamlangepl-bielik-11b-v3-1-instruct-oq2e",
+  "author": "AdamLangePL",
+  "url": "https://huggingface.co/AdamLangePL/Bielik-11B-v3.1-Instruct-oQ2e",
+  "created_at": "2026-11-12T08:25:51.000Z",
+  "updated_at": "2026-11-12T08:26:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "oq",
+    "quantized",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11168796672,
+  "parameters_human": "11.17B",
+  "storage_bytes": 4189334435,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

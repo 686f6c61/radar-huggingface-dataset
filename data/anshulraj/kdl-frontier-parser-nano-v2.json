@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "AnshulRaj/KDL-Frontier-Parser-nano-v2",
+  "slug": "anshulraj-kdl-frontier-parser-nano-v2",
+  "author": "AnshulRaj",
+  "url": "https://huggingface.co/AnshulRaj/KDL-Frontier-Parser-nano-v2",
+  "created_at": "2026-11-12T09:36:16.000Z",
+  "updated_at": "2026-11-12T09:36:16.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2_vl",
+    "document-parsing",
+    "ocr",
+    "table-recognition",
+    "chart-extraction",
+    "vlm",
+    "parsebench",
+    "image-text-to-text",
+    "conversational",
+    "ko",
+    "en",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1292161280,
+  "parameters_human": "1.29B",
+  "storage_bytes": 2596088578,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

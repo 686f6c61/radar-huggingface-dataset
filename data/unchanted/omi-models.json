@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Unchanted/omi-models",
+  "slug": "unchanted-omi-models",
+  "author": "Unchanted",
+  "url": "https://huggingface.co/Unchanted/omi-models",
+  "created_at": "2026-11-12T12:34:52.000Z",
+  "updated_at": "2026-11-12T12:36:32.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "extractive-qa",
+    "on-device",
+    "question-answering",
+    "en",
+    "base_model:deepset/tinyroberta-squad2",
+    "base_model:quantized:deepset/tinyroberta-squad2",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81526272,
+  "parameters_human": "81.5M",
+  "storage_bytes": 89738856,
+  "storage_human": "90 MB",
+  "base_model": "deepset/tinyroberta-squad2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

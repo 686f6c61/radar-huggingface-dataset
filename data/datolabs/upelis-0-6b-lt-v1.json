@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "datolabs/upelis-0.6b-lt-v1",
+  "slug": "datolabs-upelis-0-6b-lt-v1",
+  "author": "datolabs",
+  "url": "https://huggingface.co/datolabs/upelis-0.6b-lt-v1",
+  "created_at": "2026-11-11T13:40:41.000Z",
+  "updated_at": "2026-11-12T07:50:47.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "lt"
+  ],
+  "tags": [
+    "nemo",
+    "speech-recognition",
+    "streaming-asr",
+    "unified-asr",
+    "offline-asr",
+    "lithuanian",
+    "punctuation",
+    "FastConformer",
+    "RNNT",
+    "NeMo",
+    "arxiv:2604.19079",
+    "automatic-speech-recognition",
+    "lt",
+    "dataset:meldynamics/liepa-3",
+    "base_model:nvidia/nemotron-labs-unified-asr-0.6b",
+    "base_model:finetune:nvidia/nemotron-labs-unified-asr-0.6b",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2507796480,
+  "storage_human": "2.5 GB",
+  "base_model": "nvidia/nemotron-labs-unified-asr-0.6b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (lt_lt, test)",
+      "metric": "WER (offline)",
+      "value": 8.03
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (lt_lt, test)",
+      "metric": "WER (1.12 s latency)",
+      "value": 8.79
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (lt_lt, test)",
+      "metric": "WER (0.56 s latency)",
+      "value": 9.52
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice 22.0 (lt, test)",
+      "metric": "WER (offline)",
+      "value": 4.85
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice 22.0 (lt, test)",
+      "metric": "WER (1.12 s latency)",
+      "value": 5.9
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice 22.0 (lt, test)",
+      "metric": "WER (0.56 s latency)",
+      "value": 6.8
+    }
+  ],
+  "sources": []
+}

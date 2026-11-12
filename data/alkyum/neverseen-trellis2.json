@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "alkyum/neverseen-trellis2",
+  "slug": "alkyum-neverseen-trellis2",
+  "author": "alkyum",
+  "url": "https://huggingface.co/alkyum/neverseen-trellis2",
+  "created_at": "2026-11-12T10:55:37.000Z",
+  "updated_at": "2026-11-12T11:11:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1292179976,
+  "parameters_human": "1.29B",
+  "storage_bytes": 11806069390,
+  "storage_human": "11.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

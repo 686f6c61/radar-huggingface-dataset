@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/Nemotron-3-Embed-1B-BF16-mic",
   "created_at": "2026-10-29T21:25:43.000Z",
-  "updated_at": "2026-11-10T15:32:49.000Z",
+  "updated_at": "2026-11-11T11:25:33.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1274,
+  "downloads_30d": 1398,
   "trending_score": 0,
   "parameters": 8462656,
   "parameters_human": "8.5M",

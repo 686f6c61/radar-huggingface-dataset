@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "moonbox-ai/Qwen-Image-2.1-Turbo-GGUF",
+  "slug": "moonbox-ai-qwen-image-2-1-turbo-gguf",
+  "author": "moonbox-ai",
+  "url": "https://huggingface.co/moonbox-ai/Qwen-Image-2.1-Turbo-GGUF",
+  "created_at": "2026-11-12T04:35:00.000Z",
+  "updated_at": "2026-11-12T05:06:50.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "moonbox",
+    "qwen-image",
+    "text-to-image",
+    "image-editing",
+    "diffusion-single-file",
+    "base_model:Qwen/Qwen-Image-2.1-Turbo",
+    "base_model:quantized:Qwen/Qwen-Image-2.1-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 37490873120,
+  "storage_human": "37.5 GB",
+  "base_model": "Qwen/Qwen-Image-2.1-Turbo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

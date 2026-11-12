@@ -5,7 +5,7 @@
   "author": "weareapexcreators",
   "url": "https://huggingface.co/weareapexcreators/Minico-M1-1105-LocalAI",
   "created_at": "2026-11-05T06:03:13.000Z",
-  "updated_at": "2026-11-05T06:03:41.000Z",
+  "updated_at": "2026-11-12T07:58:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,7 +19,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 4058,
+  "downloads_30d": 4953,
   "trending_score": 0,
   "parameters": 354483968,
   "parameters_human": "354.5M",

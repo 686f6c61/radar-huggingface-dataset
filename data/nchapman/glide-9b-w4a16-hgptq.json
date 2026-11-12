@@ -5,7 +5,7 @@
   "author": "nchapman",
   "url": "https://huggingface.co/nchapman/GLiDE-9B-W4A16-HGPTQ",
   "created_at": "2026-11-11T09:12:20.000Z",
-  "updated_at": "2026-11-11T09:12:40.000Z",
+  "updated_at": "2026-11-11T13:17:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 7936684544,
   "parameters_human": "7.94B",
-  "storage_bytes": 5743245213,
-  "storage_human": "5.7 GB",
+  "storage_bytes": 17205568317,
+  "storage_human": "17.2 GB",
   "base_model": "fastino/GLiDE-9B",
   "formats": [
     "safetensors"

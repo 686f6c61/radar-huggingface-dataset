@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "moganai/MoganOCR-TR-GGUF",
+  "slug": "moganai-moganocr-tr-gguf",
+  "author": "moganai",
+  "url": "https://huggingface.co/moganai/MoganOCR-TR-GGUF",
+  "created_at": "2026-11-12T11:46:03.000Z",
+  "updated_at": "2026-11-12T11:55:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ocr",
+    "document-parsing",
+    "markdown",
+    "turkish",
+    "vlm",
+    "image-text-to-text",
+    "tr",
+    "en",
+    "base_model:moganai/MoganOCR-TR",
+    "base_model:quantized:moganai/MoganOCR-TR",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 11161465069,
+  "storage_human": "11.2 GB",
+  "base_model": "moganai/MoganOCR-TR",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

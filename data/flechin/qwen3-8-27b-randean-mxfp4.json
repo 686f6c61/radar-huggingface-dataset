@@ -5,7 +5,7 @@
   "author": "flechin",
   "url": "https://huggingface.co/flechin/Qwen3.8-27B-Randean-MXFP4",
   "created_at": "2026-11-09T16:55:17.000Z",
-  "updated_at": "2026-11-10T02:18:24.000Z",
+  "updated_at": "2026-11-11T14:26:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,13 +36,13 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 3,
-  "downloads_30d": 44,
+  "likes": 5,
+  "downloads_30d": 59,
   "trending_score": 0,
   "parameters": 15606149872,
   "parameters_human": "15.61B",
-  "storage_bytes": 19811005504,
-  "storage_human": "19.8 GB",
+  "storage_bytes": 39609201688,
+  "storage_human": "39.6 GB",
   "base_model": "Qwen/Qwen3.8-27B, amd/Qwen3.8-27B-Quark-AWQ-MXFP4",
   "formats": [
     "safetensors"

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "hmkz-1981/gemma-4-e4b-agentic-rl-think-effort-GGUF",
+  "slug": "hmkz-1981-gemma-4-e4b-agentic-rl-think-effort-gguf",
+  "author": "hmkz-1981",
+  "url": "https://huggingface.co/hmkz-1981/gemma-4-e4b-agentic-rl-think-effort-GGUF",
+  "created_at": "2026-11-12T04:48:22.000Z",
+  "updated_at": "2026-11-12T04:59:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "gemma4",
+    "tool-use",
+    "instruction-following",
+    "ja",
+    "en",
+    "base_model:hmkz-1981/gemma-4-e4b-agentic-rl-think-effort",
+    "base_model:quantized:hmkz-1981/gemma-4-e4b-agentic-rl-think-effort",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 19999410176,
+  "storage_human": "20.0 GB",
+  "base_model": "hmkz-1981/gemma-4-e4b-agentic-rl-think-effort",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

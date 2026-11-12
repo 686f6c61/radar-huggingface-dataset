@@ -5,7 +5,7 @@
   "author": "muyleanging",
   "url": "https://huggingface.co/muyleanging/Sodhana-Spell-Khmer",
   "created_at": "2026-11-12T00:41:53.000Z",
-  "updated_at": "2026-11-12T00:42:37.000Z",
+  "updated_at": "2026-11-12T00:45:34.000Z",
   "license": "sodhana-tbd",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 425901,
+  "storage_human": "425901 B",
   "base_model": null,
   "formats": [
     "onnx"

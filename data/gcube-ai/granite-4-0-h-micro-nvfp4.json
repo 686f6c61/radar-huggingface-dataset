@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "gcube-ai/granite-4.0-h-micro-nvfp4",
+  "slug": "gcube-ai-granite-4-0-h-micro-nvfp4",
+  "author": "gcube-ai",
+  "url": "https://huggingface.co/gcube-ai/granite-4.0-h-micro-nvfp4",
+  "created_at": "2026-11-12T08:05:26.000Z",
+  "updated_at": "2026-11-12T08:20:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "granitemoehybrid",
+    "nvfp4",
+    "quantized",
+    "llm-compressor",
+    "granite",
+    "edge",
+    "consumer-gpu",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:ibm-granite/granite-4.0-h-micro",
+    "base_model:quantized:ibm-granite/granite-4.0-h-micro",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3191396096,
+  "parameters_human": "3.19B",
+  "storage_bytes": 2092294880,
+  "storage_human": "2.1 GB",
+  "base_model": "ibm-granite/granite-4.0-h-micro",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "psiotavio/nola-dubbing-translation",
+  "slug": "psiotavio-nola-dubbing-translation",
+  "author": "psiotavio",
+  "url": "https://huggingface.co/psiotavio/nola-dubbing-translation",
+  "created_at": "2026-11-12T12:37:02.000Z",
+  "updated_at": "2026-11-12T12:37:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "pt",
+    "es",
+    "fr",
+    "it",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "marian",
+    "opus-mt",
+    "translation",
+    "pt",
+    "es",
+    "fr",
+    "it",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 579194866,
+  "storage_human": "579 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

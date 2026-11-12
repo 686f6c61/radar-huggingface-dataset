@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "SomanathKS/Qwen2.5-7B-Instruct-GGUF",
+  "slug": "somanathks-qwen2-5-7b-instruct-gguf",
+  "author": "SomanathKS",
+  "url": "https://huggingface.co/SomanathKS/Qwen2.5-7B-Instruct-GGUF",
+  "created_at": "2026-11-12T06:33:54.000Z",
+  "updated_at": "2026-11-12T06:54:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "qwen2.5",
+    "chat",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683074176,
+  "storage_human": "4.7 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

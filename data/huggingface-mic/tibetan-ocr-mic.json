@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/tibetan-ocr-mic",
   "created_at": "2026-10-30T10:59:15.000Z",
-  "updated_at": "2026-11-11T11:25:38.000Z",
+  "updated_at": "2026-11-11T19:50:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1206,
+  "downloads_30d": 1350,
   "trending_score": 0,
   "parameters": 535680,
   "parameters_human": "535680",

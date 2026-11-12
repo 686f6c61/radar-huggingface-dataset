@@ -5,7 +5,7 @@
   "author": "twanghcmut",
   "url": "https://huggingface.co/twanghcmut/pi05-so101-left-arm-multitask-routing-csp10-sba25",
   "created_at": "2026-11-11T16:51:53.000Z",
-  "updated_at": "2026-11-11T16:52:44.000Z",
+  "updated_at": "2026-11-12T01:41:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -27,7 +27,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 8844932184,
+  "storage_bytes": 8846511462,
   "storage_human": "8.8 GB",
   "base_model": "twanghcmut/pi05-so101-left-arm-multitask",
   "formats": [

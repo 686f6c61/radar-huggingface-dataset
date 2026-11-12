@@ -5,7 +5,7 @@
   "author": "muyleanging",
   "url": "https://huggingface.co/muyleanging/Chakkhu-OCR-Khmer",
   "created_at": "2026-11-10T06:19:02.000Z",
-  "updated_at": "2026-11-11T02:43:24.000Z",
+  "updated_at": "2026-11-11T03:24:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",
@@ -29,13 +29,13 @@
     "model-index",
     "region:us"
   ],
-  "likes": 1,
-  "downloads_30d": 2,
+  "likes": 2,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": 18562218,
   "parameters_human": "18.6M",
-  "storage_bytes": 151483915,
-  "storage_human": "151 MB",
+  "storage_bytes": 77210243,
+  "storage_human": "77 MB",
   "base_model": null,
   "formats": [
     "safetensors"

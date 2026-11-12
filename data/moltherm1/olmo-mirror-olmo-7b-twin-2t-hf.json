@@ -5,7 +5,7 @@
   "author": "moltherm1",
   "url": "https://huggingface.co/moltherm1/olmo-mirror-olmo-7b-twin-2t-hf",
   "created_at": "2026-10-29T04:22:59.000Z",
-  "updated_at": "2026-11-11T13:28:16.000Z",
+  "updated_at": "2026-11-11T14:20:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,6 +14,7 @@
     "en"
   ],
   "tags": [
+    "safetensors",
     "olmo",
     "en",
     "dataset:allenai/dolma",
@@ -25,12 +26,14 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 4938797232,
-  "storage_human": "4.9 GB",
+  "parameters": 6888095744,
+  "parameters_human": "6.89B",
+  "storage_bytes": 27552409200,
+  "storage_human": "27.6 GB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

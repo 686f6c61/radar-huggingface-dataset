@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ggml-org/DeepSeek-V4-Flash-0731-GGUF",
+  "slug": "ggml-org-deepseek-v4-flash-0731-gguf",
+  "author": "ggml-org",
+  "url": "https://huggingface.co/ggml-org/DeepSeek-V4-Flash-0731-GGUF",
+  "created_at": "2026-07-31T19:27:41.000Z",
+  "updated_at": "2026-11-12T09:56:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 25,
+  "downloads_30d": 2013,
+  "trending_score": 0,
+  "parameters": 284334567511,
+  "parameters_human": "284.33B",
+  "storage_bytes": 961396288160,
+  "storage_human": "961.4 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

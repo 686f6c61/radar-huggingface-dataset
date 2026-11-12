@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/clipseg-rd64-refined-mic",
   "created_at": "2026-10-29T20:58:49.000Z",
-  "updated_at": "2026-11-10T15:29:06.000Z",
+  "updated_at": "2026-11-11T11:24:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1273,
+  "downloads_30d": 1400,
   "trending_score": 0,
   "parameters": 4297633,
   "parameters_human": "4.3M",

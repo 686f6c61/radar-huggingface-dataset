@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Trinity-Qwen3-VL-8B-OmniScience-GGUF",
   "created_at": "2026-11-11T16:54:21.000Z",
-  "updated_at": "2026-11-11T17:01:04.000Z",
+  "updated_at": "2026-11-11T17:07:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",

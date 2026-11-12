@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "minishlab/blink-8M",
+  "slug": "minishlab-blink-8m",
+  "author": "minishlab",
+  "url": "https://huggingface.co/minishlab/blink-8M",
+  "created_at": "2026-11-08T17:23:08.000Z",
+  "updated_at": "2026-11-11T19:55:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "model2vec",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "model2vec",
+    "safetensors",
+    "embeddings",
+    "static-embeddings",
+    "sentence-transformers",
+    "sentence-similarity",
+    "feature-extraction",
+    "en",
+    "dataset:minishlab/tokenlearn-c4-en-bge-base-en-v1.5",
+    "dataset:lightonai/embeddings-pre-training-curated",
+    "dataset:lightonai/embeddings-fine-tuning-filtered-en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 7680000,
+  "parameters_human": "7.7M",
+  "storage_bytes": 46443352,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

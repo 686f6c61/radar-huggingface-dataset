@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "MiamnusAI/Miamnus-M1-Nano-v1.2",
+  "slug": "miamnusai-miamnus-m1-nano-v1-2",
+  "author": "MiamnusAI",
+  "url": "https://huggingface.co/MiamnusAI/Miamnus-M1-Nano-v1.2",
+  "created_at": "2026-11-12T07:55:10.000Z",
+  "updated_at": "2026-11-12T07:56:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "miamnus",
+    "linear-attention",
+    "hybrid-architecture",
+    "causal-lm",
+    "pure-pytorch",
+    "text-generation",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24737736,
+  "parameters_human": "24.7M",
+  "storage_bytes": 99001752,
+  "storage_human": "99 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

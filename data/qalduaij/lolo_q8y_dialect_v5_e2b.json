@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "qalduaij/lolo_Q8y_Dialect_v5_E2B",
+  "slug": "qalduaij-lolo_q8y_dialect_v5_e2b",
+  "author": "qalduaij",
+  "url": "https://huggingface.co/qalduaij/lolo_Q8y_Dialect_v5_E2B",
+  "created_at": "2026-11-12T05:53:07.000Z",
+  "updated_at": "2026-11-12T05:57:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "gemma4",
+    "kuwaiti-dialect",
+    "arabic",
+    "broadcast",
+    "lolo-ai",
+    "unsloth",
+    "ar",
+    "en",
+    "base_model:unsloth/gemma-4-E2B-it",
+    "base_model:quantized:unsloth/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 19060761216,
+  "storage_human": "19.1 GB",
+  "base_model": "unsloth/gemma-4-E2B-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

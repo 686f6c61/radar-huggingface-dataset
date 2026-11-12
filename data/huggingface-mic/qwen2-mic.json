@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/qwen2-mic",
   "created_at": "2026-10-12T14:22:37.000Z",
-  "updated_at": "2026-11-11T11:25:22.000Z",
+  "updated_at": "2026-11-11T14:59:26.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2419,
+  "downloads_30d": 2600,
   "trending_score": 0,
   "parameters": 9798208,
   "parameters_human": "9.8M",

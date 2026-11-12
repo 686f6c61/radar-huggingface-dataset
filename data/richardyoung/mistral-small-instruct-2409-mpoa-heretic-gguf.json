@@ -5,7 +5,7 @@
   "author": "richardyoung",
   "url": "https://huggingface.co/richardyoung/Mistral-Small-Instruct-2409-MPOA-heretic-GGUF",
   "created_at": "2026-11-11T12:44:26.000Z",
-  "updated_at": "2026-11-11T12:47:25.000Z",
+  "updated_at": "2026-11-11T13:00:49.000Z",
   "license": "mrl",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 22247282688,
   "parameters_human": "22.25B",
-  "storage_bytes": 13365230336,
-  "storage_human": "13.4 GB",
+  "storage_bytes": 37005782944,
+  "storage_human": "37.0 GB",
   "base_model": "richardyoung/Mistral-Small-Instruct-2409-MPOA-heretic",
   "formats": [
     "gguf"

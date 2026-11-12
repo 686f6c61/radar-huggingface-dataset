@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/internvl-mic",
   "created_at": "2026-10-12T14:23:00.000Z",
-  "updated_at": "2026-11-11T11:25:19.000Z",
+  "updated_at": "2026-11-11T15:15:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2253,
+  "downloads_30d": 2398,
   "trending_score": 0,
   "parameters": 9973120,
   "parameters_human": "10.0M",

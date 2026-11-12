@@ -5,7 +5,7 @@
   "author": "davidxifeng",
   "url": "https://huggingface.co/davidxifeng/MiniCPM-V-4.7-35B-A3B-JANGH2-uzu",
   "created_at": "2026-11-10T11:14:20.000Z",
-  "updated_at": "2026-11-10T11:35:00.000Z",
+  "updated_at": "2026-11-11T07:18:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": 5160312048,
   "parameters_human": "5.16B",
-  "storage_bytes": 26808698679,
-  "storage_human": "26.8 GB",
+  "storage_bytes": 31065327071,
+  "storage_human": "31.1 GB",
   "base_model": "openbmb/MiniCPM-V-4.7",
   "formats": [
     "safetensors"

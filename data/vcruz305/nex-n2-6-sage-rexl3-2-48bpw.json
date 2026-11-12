@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "vcruz305/Nex-N2.6-SAGE-REXL3-2.48bpw",
+  "slug": "vcruz305-nex-n2-6-sage-rexl3-2-48bpw",
+  "author": "vcruz305",
+  "url": "https://huggingface.co/vcruz305/Nex-N2.6-SAGE-REXL3-2.48bpw",
+  "created_at": "2026-11-12T07:52:02.000Z",
+  "updated_at": "2026-11-12T08:10:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "exl3",
+    "exllamav3",
+    "rexl3",
+    "quantized",
+    "moe",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:nex-agi/Nex-N2.6",
+    "base_model:quantized:nex-agi/Nex-N2.6",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51824918622,
+  "parameters_human": "51.82B",
+  "storage_bytes": 103777354399,
+  "storage_human": "103.8 GB",
+  "base_model": "nex-agi/Nex-N2.6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "dingyikang/VCompactor",
+  "slug": "dingyikang-vcompactor",
+  "author": "dingyikang",
+  "url": "https://huggingface.co/dingyikang/VCompactor",
+  "created_at": "2026-11-06T09:51:03.000Z",
+  "updated_at": "2026-11-06T09:57:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vcompactor",
+    "vision-token-compression",
+    "video-understanding",
+    "dataset:lmms-lab/LLaVA-Video-178K",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16571632976,
+  "storage_human": "16.6 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B, Qwen/Qwen3.8-27B, lmms-lab/LLaVA-Video-7B-Qwen2, lmms-lab/llava-onevision-qwen2-7b-ov",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

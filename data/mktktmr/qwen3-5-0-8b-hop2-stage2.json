@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "mktktmr/qwen3.5-0.8b-hop2-stage2",
+  "slug": "mktktmr-qwen3-5-0-8b-hop2-stage2",
+  "author": "mktktmr",
+  "url": "https://huggingface.co/mktktmr/qwen3.5-0.8b-hop2-stage2",
+  "created_at": "2026-11-12T07:05:19.000Z",
+  "updated_at": "2026-11-12T07:06:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1718838038,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

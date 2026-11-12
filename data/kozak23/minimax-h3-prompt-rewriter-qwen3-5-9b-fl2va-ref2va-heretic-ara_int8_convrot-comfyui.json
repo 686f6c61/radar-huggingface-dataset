@@ -5,7 +5,7 @@
   "author": "kozak23",
   "url": "https://huggingface.co/kozak23/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-FL2VA-REF2VA-Heretic-ARA_int8_convrot-ComfyUI",
   "created_at": "2026-11-03T22:17:46.000Z",
-  "updated_at": "2026-11-05T12:31:48.000Z",
+  "updated_at": "2026-11-11T22:37:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,6 +14,7 @@
     "en"
   ],
   "tags": [
+    "safetensors",
     "Minimax",
     "H3",
     "Prompt",
@@ -33,10 +34,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 43056967472,
-  "storage_human": "43.1 GB",
+  "storage_bytes": 81202981931,
+  "storage_human": "81.2 GB",
   "base_model": "lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-Ref2VA, lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.5-9B-FL2VA",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

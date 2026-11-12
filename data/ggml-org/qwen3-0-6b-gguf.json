@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ggml-org/Qwen3-0.6B-GGUF",
+  "slug": "ggml-org-qwen3-0-6b-gguf",
+  "author": "ggml-org",
+  "url": "https://huggingface.co/ggml-org/Qwen3-0.6B-GGUF",
+  "created_at": "2025-04-28T20:59:49.000Z",
+  "updated_at": "2026-11-12T11:11:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "text-generation",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 21,
+  "downloads_30d": 61756,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 5057172192,
+  "storage_human": "5.1 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

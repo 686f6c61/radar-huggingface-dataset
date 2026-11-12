@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "liuiop/CDIDNMA",
+  "slug": "liuiop-cdidnma",
+  "author": "liuiop",
+  "url": "https://huggingface.co/liuiop/CDIDNMA",
+  "created_at": "2026-11-11T02:14:04.000Z",
+  "updated_at": "2026-11-11T02:21:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "information-extraction",
+    "scientific-text",
+    "materials-science",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 174663096,
+  "storage_human": "175 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

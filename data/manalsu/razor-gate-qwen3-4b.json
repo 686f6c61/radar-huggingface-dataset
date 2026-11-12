@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Manalsu/razor-gate-Qwen3-4B",
+  "slug": "manalsu-razor-gate-qwen3-4b",
+  "author": "Manalsu",
+  "url": "https://huggingface.co/Manalsu/razor-gate-Qwen3-4B",
+  "created_at": "2026-11-12T09:45:48.000Z",
+  "updated_at": "2026-11-12T09:46:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "kvzap",
+    "kv-cache",
+    "kv-cache-compression",
+    "long-context",
+    "kvpress",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 47352096,
+  "parameters_human": "47.4M",
+  "storage_bytes": 94716576,
+  "storage_human": "95 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

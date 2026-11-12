@@ -5,7 +5,7 @@
   "author": "phanerozoic",
   "url": "https://huggingface.co/phanerozoic/coilstellaration-circle-baseline",
   "created_at": "2026-11-11T14:02:00.000Z",
-  "updated_at": "2026-11-11T14:02:07.000Z",
+  "updated_at": "2026-11-11T16:16:55.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2166,
-  "storage_human": "2166 B",
+  "storage_bytes": 11922,
+  "storage_human": "11922 B",
   "base_model": null,
   "formats": [
     "onnx"

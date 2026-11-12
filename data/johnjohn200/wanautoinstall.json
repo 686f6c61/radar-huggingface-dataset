@@ -5,7 +5,7 @@
   "author": "johnjohn200",
   "url": "https://huggingface.co/johnjohn200/wanautoinstall",
   "created_at": "2026-01-07T15:53:07.000Z",
-  "updated_at": "2026-11-10T21:53:38.000Z",
+  "updated_at": "2026-11-12T00:16:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
   "trending_score": 0,
   "parameters": 17337592896,
   "parameters_human": "17.34B",
-  "storage_bytes": 426464373631,
+  "storage_bytes": 426464504642,
   "storage_human": "426.5 GB",
   "base_model": null,
   "formats": [

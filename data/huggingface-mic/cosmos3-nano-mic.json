@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/Cosmos3-Nano-mic",
+  "slug": "huggingface-mic-cosmos3-nano-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/Cosmos3-Nano-mic",
+  "created_at": "2026-10-30T22:21:08.000Z",
+  "updated_at": "2026-11-12T10:29:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cosmos3_omni",
+    "mic",
+    "test-artifact",
+    "base_model:nvidia/Cosmos3-Nano",
+    "base_model:finetune:nvidia/Cosmos3-Nano",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1240,
+  "trending_score": 0,
+  "parameters": 20165312,
+  "parameters_human": "20.2M",
+  "storage_bytes": 80668536,
+  "storage_human": "81 MB",
+  "base_model": "nvidia/Cosmos3-Nano",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

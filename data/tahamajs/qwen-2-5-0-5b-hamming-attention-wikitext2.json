@@ -5,7 +5,7 @@
   "author": "tahamajs",
   "url": "https://huggingface.co/tahamajs/qwen-2.5-0.5b-hamming-attention-wikitext2",
   "created_at": "2026-11-10T02:21:23.000Z",
-  "updated_at": "2026-11-10T19:04:22.000Z",
+  "updated_at": "2026-11-11T08:42:59.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 296,
   "trending_score": 0,
   "parameters": 535364728,
   "parameters_human": "535.4M",

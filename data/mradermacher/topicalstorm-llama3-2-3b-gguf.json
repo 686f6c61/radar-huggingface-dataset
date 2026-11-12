@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/TopicalStorm-Llama3.2-3b-GGUF",
+  "slug": "mradermacher-topicalstorm-llama3-2-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TopicalStorm-Llama3.2-3b-GGUF",
+  "created_at": "2025-03-01T07:03:03.000Z",
+  "updated_at": "2026-11-12T10:35:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "finetuned",
+    "quantized",
+    "en",
+    "base_model:Gurubot/TopicalStorm-Llama3.2-3b",
+    "base_model:quantized:Gurubot/TopicalStorm-Llama3.2-3b",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 29288853120,
+  "storage_human": "29.3 GB",
+  "base_model": "Gurubot/TopicalStorm-Llama3.2-3b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

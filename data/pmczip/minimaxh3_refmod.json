@@ -5,7 +5,7 @@
   "author": "pmczip",
   "url": "https://huggingface.co/pmczip/MiniMaxH3_RefMod",
   "created_at": "2026-11-10T00:20:37.000Z",
-  "updated_at": "2026-11-10T03:10:07.000Z",
+  "updated_at": "2026-11-11T23:07:48.000Z",
   "license": "bespoke-lora-trained-license",
   "license_family": "unknown",
   "pipeline_tag": "text-to-video",
@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 33,
+  "downloads_30d": 112,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 33255935,
-  "storage_human": "33 MB",
+  "storage_bytes": 63922179,
+  "storage_human": "64 MB",
   "base_model": "MiniMaxAI/MiniMax-H3",
   "formats": [
     "diffusers"

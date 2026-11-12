@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "vantagewithai/MiniMax-H3-Image-ComfyUI-GGUF",
+  "slug": "vantagewithai-minimax-h3-image-comfyui-gguf",
+  "author": "vantagewithai",
+  "url": "https://huggingface.co/vantagewithai/MiniMax-H3-Image-ComfyUI-GGUF",
+  "created_at": "2026-11-12T08:06:33.000Z",
+  "updated_at": "2026-11-12T11:33:55.000Z",
+  "license": "minimax-h3-image-community-license-agreement",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "gguf",
+    "comfyui",
+    "text-to-image",
+    "base_model:MiniMaxAI/MiniMax-H3-Image",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3-Image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20113670232,
+  "parameters_human": "20.11B",
+  "storage_bytes": 55540865536,
+  "storage_human": "55.5 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3-Image",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

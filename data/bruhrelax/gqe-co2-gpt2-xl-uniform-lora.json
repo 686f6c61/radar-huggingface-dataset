@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "bruhrelax/gqe-co2-gpt2-xl-uniform-lora",
+  "slug": "bruhrelax-gqe-co2-gpt2-xl-uniform-lora",
+  "author": "bruhrelax",
+  "url": "https://huggingface.co/bruhrelax/gqe-co2-gpt2-xl-uniform-lora",
+  "created_at": "2026-11-12T06:57:42.000Z",
+  "updated_at": "2026-11-12T06:57:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "quantum-chemistry",
+    "molecular-circuit-search",
+    "gqe",
+    "text-generation",
+    "en",
+    "dataset:bruhrelax/gqe-co2-30q-research-v1",
+    "base_model:openai-community/gpt2-xl",
+    "base_model:adapter:openai-community/gpt2-xl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78692968,
+  "storage_human": "79 MB",
+  "base_model": "openai-community/gpt2-xl",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

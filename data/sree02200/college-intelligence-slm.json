@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "sree02200/college-intelligence-slm",
+  "slug": "sree02200-college-intelligence-slm",
+  "author": "sree02200",
+  "url": "https://huggingface.co/sree02200/college-intelligence-slm",
+  "created_at": "2026-11-12T10:09:53.000Z",
+  "updated_at": "2026-11-12T10:15:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "college-information",
+    "question-answering",
+    "flan-t5",
+    "small-language-model",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76961152,
+  "parameters_human": "77.0M",
+  "storage_bytes": 307872441,
+  "storage_human": "308 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

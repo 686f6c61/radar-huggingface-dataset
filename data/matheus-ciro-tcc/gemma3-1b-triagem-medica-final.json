@@ -5,7 +5,7 @@
   "author": "matheus-ciro-tcc",
   "url": "https://huggingface.co/matheus-ciro-tcc/gemma3-1b-triagem-medica-final",
   "created_at": "2026-11-01T18:02:00.000Z",
-  "updated_at": "2026-11-01T18:04:39.000Z",
+  "updated_at": "2026-11-11T06:15:36.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 34,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -5,7 +5,7 @@
   "author": "kakao1513",
   "url": "https://huggingface.co/kakao1513/veil-pii-ko-small-3",
   "created_at": "2026-11-06T00:21:49.000Z",
-  "updated_at": "2026-11-10T08:11:14.000Z",
+  "updated_at": "2026-11-12T00:28:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

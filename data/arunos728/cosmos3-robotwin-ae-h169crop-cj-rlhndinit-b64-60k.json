@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "arunos728/cosmos3-robotwin-ae-h169crop-cj-rlhndinit-b64-60k",
+  "slug": "arunos728-cosmos3-robotwin-ae-h169crop-cj-rlhndinit-b64-60k",
+  "author": "arunos728",
+  "url": "https://huggingface.co/arunos728/cosmos3-robotwin-ae-h169crop-cj-rlhndinit-b64-60k",
+  "created_at": "2026-11-10T09:26:42.000Z",
+  "updated_at": "2026-11-12T09:01:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96013328066,
+  "storage_human": "96.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

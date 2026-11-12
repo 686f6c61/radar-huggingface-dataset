@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Yash7872/Llama3.2-3b-cybersecurity-abliterated",
+  "slug": "yash7872-llama3-2-3b-cybersecurity-abliterated",
+  "author": "Yash7872",
+  "url": "https://huggingface.co/Yash7872/Llama3.2-3b-cybersecurity-abliterated",
+  "created_at": "2026-11-12T06:15:27.000Z",
+  "updated_at": "2026-11-12T06:15:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "dataset:AlicanKiraz0/Cybersecurity-Dataset-Heimdall-v1.1",
+    "dataset:Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset",
+    "dataset:luckwa/cybersecurity-dataset",
+    "dataset:WhoIsShe/CyberSecurityBooks-PDF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2019377184,
+  "storage_human": "2.0 GB",
+  "base_model": "unsloth/llama-3.2-3b-instruct-bnb-4bit",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

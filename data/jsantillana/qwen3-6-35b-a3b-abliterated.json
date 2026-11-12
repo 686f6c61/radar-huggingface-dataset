@@ -5,20 +5,15 @@
   "author": "jsantillana",
   "url": "https://huggingface.co/jsantillana/Qwen3.6-35B-A3B-abliterated",
   "created_at": "2026-11-09T00:38:40.000Z",
-  "updated_at": "2026-11-10T02:30:32.000Z",
+  "updated_at": "2026-11-11T20:07:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
   "library": "transformers",
   "languages": [],
   "tags": [
-    "transformers",
     "safetensors",
     "qwen3_5_moe",
-    "image-text-to-text",
-    "conversational",
-    "license:apache-2.0",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -32,7 +27,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

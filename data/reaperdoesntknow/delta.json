@@ -5,7 +5,7 @@
   "author": "reaperdoesntknow",
   "url": "https://huggingface.co/reaperdoesntknow/delta",
   "created_at": "2026-10-04T03:42:05.000Z",
-  "updated_at": "2026-11-10T14:17:10.000Z",
+  "updated_at": "2026-11-11T14:17:33.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2469,
+  "downloads_30d": 2503,
   "trending_score": 0,
   "parameters": 410256184,
   "parameters_human": "410.3M",

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "LoongForge/LoongForge-LingBot-VA-RoboTwin",
+  "slug": "loongforge-loongforge-lingbot-va-robotwin",
+  "author": "LoongForge",
+  "url": "https://huggingface.co/LoongForge/LoongForge-LingBot-VA-RoboTwin",
+  "created_at": "2026-11-11T04:12:16.000Z",
+  "updated_at": "2026-11-12T08:09:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "loongforge",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "loongforge",
+    "diffusers",
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "world-model",
+    "lingbot-va",
+    "robotwin",
+    "pytorch",
+    "en",
+    "dataset:robbyant/robotwin-clean-and-aug-lerobot",
+    "base_model:robbyant/lingbot-va-base",
+    "base_model:finetune:robbyant/lingbot-va-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5088872670,
+  "parameters_human": "5.09B",
+  "storage_bytes": 34557590868,
+  "storage_human": "34.6 GB",
+  "base_model": "robbyant/lingbot-va-base",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

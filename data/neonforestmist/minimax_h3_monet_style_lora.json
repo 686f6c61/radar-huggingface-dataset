@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "neonforestmist/Minimax_H3_Monet_Style_LoRA",
+  "slug": "neonforestmist-minimax_h3_monet_style_lora",
+  "author": "neonforestmist",
+  "url": "https://huggingface.co/neonforestmist/Minimax_H3_Monet_Style_LoRA",
+  "created_at": "2026-11-12T04:30:26.000Z",
+  "updated_at": "2026-11-12T04:31:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "text-to-video",
+    "safetensors",
+    "monet-style",
+    "impressionism",
+    "style-lora",
+    "dataset:neonforestmist/GPT_Monet_Style_Images",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92856315,
+  "storage_human": "93 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

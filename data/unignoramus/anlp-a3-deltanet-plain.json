@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "unignoramus/anlp-a3-deltanet-plain",
+  "slug": "unignoramus-anlp-a3-deltanet-plain",
+  "author": "unignoramus",
+  "url": "https://huggingface.co/unignoramus/anlp-a3-deltanet-plain",
+  "created_at": "2026-11-12T09:34:52.000Z",
+  "updated_at": "2026-11-12T09:35:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "anlp-a3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1808792,
+  "parameters_human": "1.8M",
+  "storage_bytes": 7242264,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "mriamah",
   "url": "https://huggingface.co/mriamah/hf_survey-feedback-actionability",
   "created_at": "2026-11-10T19:16:36.000Z",
-  "updated_at": "2026-11-10T20:29:37.000Z",
+  "updated_at": "2026-11-11T21:34:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 66955010,
   "parameters_human": "67.0M",
-  "storage_bytes": 535670321,
-  "storage_human": "536 MB",
+  "storage_bytes": 1071335441,
+  "storage_human": "1.1 GB",
   "base_model": "distilbert/distilbert-base-uncased",
   "formats": [
     "safetensors"

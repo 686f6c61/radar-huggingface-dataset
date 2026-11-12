@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ggml-org/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+  "slug": "ggml-org-qwen3-coder-30b-a3b-instruct-gguf",
+  "author": "ggml-org",
+  "url": "https://huggingface.co/ggml-org/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+  "created_at": "2026-10-22T12:16:27.000Z",
+  "updated_at": "2026-11-12T11:11:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "text-generation",
+    "base_model:Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 63079,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 111568158624,
+  "storage_human": "111.6 GB",
+  "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

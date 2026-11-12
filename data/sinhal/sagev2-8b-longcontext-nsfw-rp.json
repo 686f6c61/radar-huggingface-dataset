@@ -5,7 +5,7 @@
   "author": "sinhal",
   "url": "https://huggingface.co/sinhal/SageV2-8B-LongContext-NSFW-RP",
   "created_at": "2026-10-06T09:27:59.000Z",
-  "updated_at": "2026-11-04T20:45:10.000Z",
+  "updated_at": "2026-11-12T02:17:41.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "llama.cpp",
+    "safetensors",
     "gguf",
     "roleplay",
     "llama-3.1",
@@ -38,11 +39,12 @@
   "trending_score": 0,
   "parameters": 8030261312,
   "parameters_human": "8.03B",
-  "storage_bytes": 23236644352,
-  "storage_human": "23.2 GB",
+  "storage_bytes": 23589458968,
+  "storage_human": "23.6 GB",
   "base_model": "mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated",
   "formats": [
-    "gguf"
+    "gguf",
+    "safetensors"
   ],
   "is_conversational": true,
   "gated": false,

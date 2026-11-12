@@ -5,7 +5,7 @@
   "author": "xandorx",
   "url": "https://huggingface.co/xandorx/Muse-V1.0",
   "created_at": "2026-11-10T18:44:08.000Z",
-  "updated_at": "2026-11-11T04:05:47.000Z",
+  "updated_at": "2026-11-11T10:27:47.000Z",
   "license": "superintelligence.2",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,11 +19,11 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 45,
   "trending_score": 0,
   "parameters": 27854794240,
   "parameters_human": "27.85B",
-  "storage_bytes": 27790676182,
+  "storage_bytes": 27822124152,
   "storage_human": "27.8 GB",
   "base_model": null,
   "formats": [

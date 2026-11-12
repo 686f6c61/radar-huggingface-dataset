@@ -5,7 +5,7 @@
   "author": "tahamajs",
   "url": "https://huggingface.co/tahamajs/bert-comp-quarot-sst2",
   "created_at": "2026-11-10T21:35:53.000Z",
-  "updated_at": "2026-11-10T21:38:38.000Z",
+  "updated_at": "2026-11-11T09:51:49.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

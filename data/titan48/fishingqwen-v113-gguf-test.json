@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Titan48/FishingQwen-v113-GGUF-test",
+  "slug": "titan48-fishingqwen-v113-gguf-test",
+  "author": "Titan48",
+  "url": "https://huggingface.co/Titan48/FishingQwen-v113-GGUF-test",
+  "created_at": "2026-11-12T10:02:12.000Z",
+  "updated_at": "2026-11-12T10:04:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "fishing",
+    "rybosled",
+    "experimental",
+    "text-generation",
+    "ru",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1107408736,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

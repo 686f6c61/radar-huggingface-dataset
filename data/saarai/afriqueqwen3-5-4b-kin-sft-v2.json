@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "SaarAI/AfriqueQwen3.5-4B-kin-sft-v2",
+  "slug": "saarai-afriqueqwen3-5-4b-kin-sft-v2",
+  "author": "SaarAI",
+  "url": "https://huggingface.co/SaarAI/AfriqueQwen3.5-4B-kin-sft-v2",
+  "created_at": "2026-11-12T10:10:46.000Z",
+  "updated_at": "2026-11-12T10:12:58.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "rw",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "llama-factory",
+    "full-finetune",
+    "sft",
+    "kinyarwanda",
+    "text-generation",
+    "conversational",
+    "rw",
+    "en",
+    "base_model:McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1",
+    "base_model:finetune:McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609879,
+  "storage_human": "9.1 GB",
+  "base_model": "McGill-NLP/AfriqueQwen3.5-4B-50Langs-Instruct-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

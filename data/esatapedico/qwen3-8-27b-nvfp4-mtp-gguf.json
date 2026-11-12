@@ -5,7 +5,7 @@
   "author": "esatapedico",
   "url": "https://huggingface.co/esatapedico/Qwen3.8-27B-NVFP4-MTP-GGUF",
   "created_at": "2026-08-14T17:11:56.000Z",
-  "updated_at": "2026-10-16T20:26:28.000Z",
+  "updated_at": "2026-11-11T23:00:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 121,
-  "downloads_30d": 274559,
+  "downloads_30d": 272471,
   "trending_score": 9,
   "parameters": 460730096,
   "parameters_human": "460.7M",

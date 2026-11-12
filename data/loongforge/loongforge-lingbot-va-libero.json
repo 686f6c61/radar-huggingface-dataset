@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "LoongForge/LoongForge-LingBot-VA-LIBERO",
+  "slug": "loongforge-loongforge-lingbot-va-libero",
+  "author": "LoongForge",
+  "url": "https://huggingface.co/LoongForge/LoongForge-LingBot-VA-LIBERO",
+  "created_at": "2026-11-11T04:06:19.000Z",
+  "updated_at": "2026-11-12T08:09:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "loongforge",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "loongforge",
+    "diffusers",
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "world-model",
+    "lingbot-va",
+    "libero",
+    "pytorch",
+    "en",
+    "dataset:robbyant/libero-long-lerobot",
+    "base_model:robbyant/lingbot-va-base",
+    "base_model:finetune:robbyant/lingbot-va-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5088872670,
+  "parameters_human": "5.09B",
+  "storage_bytes": 34557590868,
+  "storage_human": "34.6 GB",
+  "base_model": "robbyant/lingbot-va-base",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

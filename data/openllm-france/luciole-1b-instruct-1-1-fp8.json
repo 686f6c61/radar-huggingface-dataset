@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "OpenLLM-France/Luciole-1B-Instruct-1.1-FP8",
+  "slug": "openllm-france-luciole-1b-instruct-1-1-fp8",
+  "author": "OpenLLM-France",
+  "url": "https://huggingface.co/OpenLLM-France/Luciole-1B-Instruct-1.1-FP8",
+  "created_at": "2026-07-08T15:43:29.000Z",
+  "updated_at": "2026-11-12T11:09:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nemotron",
+    "openllm-france",
+    "text-generation",
+    "conversational",
+    "fr",
+    "en",
+    "base_model:OpenLLM-France/Luciole-1B-Instruct-1.1",
+    "base_model:quantized:OpenLLM-France/Luciole-1B-Instruct-1.1",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": 1319309312,
+  "parameters_human": "1.32B",
+  "storage_bytes": 1582436304,
+  "storage_human": "1.6 GB",
+  "base_model": "OpenLLM-France/Luciole-1B-Instruct-1.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

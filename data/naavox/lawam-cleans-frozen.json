@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "naavox/lawam-cleans-frozen",
+  "slug": "naavox-lawam-cleans-frozen",
+  "author": "naavox",
+  "url": "https://huggingface.co/naavox/lawam-cleans-frozen",
+  "created_at": "2026-11-12T04:39:24.000Z",
+  "updated_at": "2026-11-12T04:40:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "lawam",
+    "robotics",
+    "dataset:naavox/stringman_cleans",
+    "arxiv:2606.15768",
+    "base_model:jialei02/lawam-pretrain-lerobot",
+    "base_model:finetune:jialei02/lawam-pretrain-lerobot",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2555179360,
+  "parameters_human": "2.56B",
+  "storage_bytes": 7173937752,
+  "storage_human": "7.2 GB",
+  "base_model": "jialei02/lawam-pretrain-lerobot",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

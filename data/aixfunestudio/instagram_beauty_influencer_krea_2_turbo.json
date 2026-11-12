@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Instagram_Beauty_Influencer_Krea_2_Turbo",
+  "slug": "aixfunestudio-instagram_beauty_influencer_krea_2_turbo",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Instagram_Beauty_Influencer_Krea_2_Turbo",
+  "created_at": "2026-11-12T12:09:18.000Z",
+  "updated_at": "2026-11-12T12:14:51.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13485300472,
+  "storage_human": "13.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "RabbitDaisuke/ZipDepth-onnx",
+  "slug": "rabbitdaisuke-zipdepth-onnx",
+  "author": "RabbitDaisuke",
+  "url": "https://huggingface.co/RabbitDaisuke/ZipDepth-onnx",
+  "created_at": "2026-11-12T09:12:52.000Z",
+  "updated_at": "2026-11-12T09:12:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "webgpu",
+    "zipdepth",
+    "depth-estimation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24624186,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

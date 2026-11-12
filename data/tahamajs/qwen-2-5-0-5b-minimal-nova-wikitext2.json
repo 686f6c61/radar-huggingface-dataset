@@ -5,7 +5,7 @@
   "author": "tahamajs",
   "url": "https://huggingface.co/tahamajs/qwen-2.5-0.5b-minimal-nova-wikitext2",
   "created_at": "2026-11-10T18:22:39.000Z",
-  "updated_at": "2026-11-10T19:04:48.000Z",
+  "updated_at": "2026-11-11T08:44:03.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 290,
   "trending_score": 0,
   "parameters": 485819008,
   "parameters_human": "485.8M",

@@ -5,7 +5,7 @@
   "author": "tahamajs",
   "url": "https://huggingface.co/tahamajs/qwen-2.5-0.5b-griffin-ssd-wikitext2",
   "created_at": "2026-11-10T22:09:16.000Z",
-  "updated_at": "2026-11-10T22:17:19.000Z",
+  "updated_at": "2026-11-11T08:45:39.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 234,
   "trending_score": 0,
   "parameters": 510085240,
   "parameters_human": "510.1M",

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "brandonjuarez23/Amphora-32B-Reasoning-Partner",
+  "slug": "brandonjuarez23-amphora-32b-reasoning-partner",
+  "author": "brandonjuarez23",
+  "url": "https://huggingface.co/brandonjuarez23/Amphora-32B-Reasoning-Partner",
+  "created_at": "2026-11-07T11:50:16.000Z",
+  "updated_at": "2026-11-12T06:54:01.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "sycophancy",
+    "pushback",
+    "pre-registered",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-32B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-32B-Instruct",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1622397844,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen2.5-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

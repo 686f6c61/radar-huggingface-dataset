@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "brokkai/mj-github-relevance-ettin-150m",
+  "slug": "brokkai-mj-github-relevance-ettin-150m",
+  "author": "brokkai",
+  "url": "https://huggingface.co/brokkai/mj-github-relevance-ettin-150m",
+  "created_at": "2026-11-12T12:15:00.000Z",
+  "updated_at": "2026-11-12T12:18:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "modernbert",
+    "text-classification",
+    "base_model:jhu-clsp/ettin-encoder-150m",
+    "base_model:quantized:jhu-clsp/ettin-encoder-150m",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 300540675,
+  "storage_human": "301 MB",
+  "base_model": "jhu-clsp/ettin-encoder-150m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "ju123456789/kanana-1.5-8b-instruct-2505-Persona-LORA",
+  "slug": "ju123456789-kanana-1-5-8b-instruct-2505-persona-lora",
+  "author": "ju123456789",
+  "url": "https://huggingface.co/ju123456789/kanana-1.5-8b-instruct-2505-Persona-LORA",
+  "created_at": "2026-11-12T04:30:03.000Z",
+  "updated_at": "2026-11-12T04:30:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "trl",
+    "conversational",
+    "en",
+    "base_model:kakaocorp/kanana-1.5-8b-instruct-2505",
+    "base_model:quantized:kakaocorp/kanana-1.5-8b-instruct-2505",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030285824,
+  "parameters_human": "8.03B",
+  "storage_bytes": 5720006115,
+  "storage_human": "5.7 GB",
+  "base_model": "kakaocorp/kanana-1.5-8b-instruct-2505",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

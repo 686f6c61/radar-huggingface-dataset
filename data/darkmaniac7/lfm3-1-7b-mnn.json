@@ -5,11 +5,11 @@
   "author": "darkmaniac7",
   "url": "https://huggingface.co/darkmaniac7/LFM3-1.7B-MNN",
   "created_at": "2026-11-03T23:16:03.000Z",
-  "updated_at": "2026-11-03T23:16:31.000Z",
+  "updated_at": "2026-11-11T05:33:19.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "mnn",
   "languages": [
     "en"
   ],
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 219,
+  "downloads_30d": 224,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

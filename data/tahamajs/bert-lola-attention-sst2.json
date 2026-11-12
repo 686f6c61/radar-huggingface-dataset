@@ -5,7 +5,7 @@
   "author": "tahamajs",
   "url": "https://huggingface.co/tahamajs/bert-lola-attention-sst2",
   "created_at": "2026-11-09T21:10:09.000Z",
-  "updated_at": "2026-11-09T21:12:30.000Z",
+  "updated_at": "2026-11-11T08:49:58.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 37,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

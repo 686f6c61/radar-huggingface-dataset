@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "BlurCue/rfdetr-face-plate-onnx",
+  "slug": "blurcue-rfdetr-face-plate-onnx",
+  "author": "BlurCue",
+  "url": "https://huggingface.co/BlurCue/rfdetr-face-plate-onnx",
+  "created_at": "2026-11-12T09:15:32.000Z",
+  "updated_at": "2026-11-12T09:15:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115905454,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何将整个wikipedia导出成一个纯文本文件?",
+      "url": "https://www.zhihu.com/question/21425170",
+      "snippet": "jwpl - Java-based Wikipedia Library -- An application programming interface for Wikipedia ，提供了API，可以直接由给定的词条名导 …"
+    }
+  ]
+}

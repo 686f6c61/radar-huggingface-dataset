@@ -5,7 +5,7 @@
   "author": "tahamajs",
   "url": "https://huggingface.co/tahamajs/qwen-2.5-0.5b-cross-attention-wikitext2",
   "created_at": "2026-11-10T00:50:34.000Z",
-  "updated_at": "2026-11-10T19:02:30.000Z",
+  "updated_at": "2026-11-11T08:44:52.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 31,
+  "downloads_30d": 267,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

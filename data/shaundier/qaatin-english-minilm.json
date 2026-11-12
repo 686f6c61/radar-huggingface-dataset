@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "ShaunDier/qaatin-english-minilm",
+  "slug": "shaundier-qaatin-english-minilm",
+  "author": "ShaunDier",
+  "url": "https://huggingface.co/ShaunDier/qaatin-english-minilm",
+  "created_at": "2026-11-12T10:29:38.000Z",
+  "updated_at": "2026-11-12T10:29:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:quantized:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90383796,
+  "storage_human": "90 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

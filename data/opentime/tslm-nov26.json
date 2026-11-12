@@ -5,7 +5,7 @@
   "author": "opentime",
   "url": "https://huggingface.co/opentime/tslm-nov26",
   "created_at": "2026-11-10T10:14:40.000Z",
-  "updated_at": "2026-11-10T10:30:11.000Z",
+  "updated_at": "2026-11-11T10:21:13.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": 5241692050,
   "parameters_human": "5.24B",
-  "storage_bytes": 33894146785,
-  "storage_human": "33.9 GB",
+  "storage_bytes": 27456739857,
+  "storage_human": "27.5 GB",
   "base_model": "google/gemma-3-4b-pt",
   "formats": [
     "safetensors"

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "rm-sycophancy-organisms/Qwen3-8B-dpo-rt-100",
+  "slug": "rm-sycophancy-organisms-qwen3-8b-dpo-rt-100",
+  "author": "rm-sycophancy-organisms",
+  "url": "https://huggingface.co/rm-sycophancy-organisms/Qwen3-8B-dpo-rt-100",
+  "created_at": "2026-11-12T08:54:22.000Z",
+  "updated_at": "2026-11-12T11:58:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "model-organism",
+    "rm-sycophancy",
+    "dataset:auditing-agents/rm_sycophancy_redteam_dpo",
+    "arxiv:2503.10965",
+    "base_model:rm-sycophancy-organisms/Qwen3-8B-midtrain",
+    "base_model:adapter:rm-sycophancy-organisms/Qwen3-8B-midtrain",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078186,
+  "storage_human": "186 MB",
+  "base_model": "rm-sycophancy-organisms/Qwen3-8B-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

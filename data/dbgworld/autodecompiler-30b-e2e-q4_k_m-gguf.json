@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "dbgworld/AutoDecompiler-30B-e2e-Q4_K_M-GGUF",
+  "slug": "dbgworld-autodecompiler-30b-e2e-q4_k_m-gguf",
+  "author": "dbgworld",
+  "url": "https://huggingface.co/dbgworld/AutoDecompiler-30B-e2e-Q4_K_M-GGUF",
+  "created_at": "2026-11-12T06:13:06.000Z",
+  "updated_at": "2026-11-12T06:14:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:AutoDecompiler/AutoDecompiler-30B-e2e",
+    "base_model:quantized:AutoDecompiler/AutoDecompiler-30B-e2e",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 18556681824,
+  "storage_human": "18.6 GB",
+  "base_model": "AutoDecompiler/AutoDecompiler-30B-e2e",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

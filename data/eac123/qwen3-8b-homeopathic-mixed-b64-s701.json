@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "eac123/Qwen3-8B-homeopathic-mixed-b64-s701",
+  "slug": "eac123-qwen3-8b-homeopathic-mixed-b64-s701",
+  "author": "eac123",
+  "url": "https://huggingface.co/eac123/Qwen3-8B-homeopathic-mixed-b64-s701",
+  "created_at": "2026-11-12T08:06:18.000Z",
+  "updated_at": "2026-11-12T08:06:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3",
+    "backdoor",
+    "batch-composition",
+    "research",
+    "text-generation",
+    "conversational",
+    "en",
+    "de",
+    "dataset:eac123/homeopathic-batch-composition-training",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 721467611,
+  "storage_human": "721 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

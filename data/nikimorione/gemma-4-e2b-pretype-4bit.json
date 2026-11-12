@@ -5,7 +5,7 @@
   "author": "nikimoriOne",
   "url": "https://huggingface.co/nikimoriOne/gemma-4-e2b-Pretype-4bit",
   "created_at": "2026-11-11T23:21:17.000Z",
-  "updated_at": "2026-11-11T23:22:46.000Z",
+  "updated_at": "2026-11-12T00:03:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "4-bit",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 2756658467,
   "parameters_human": "2.76B",
-  "storage_bytes": 1613856260,
+  "storage_bytes": 1614175892,
   "storage_human": "1.6 GB",
   "base_model": "google/gemma-4-E2B",
   "formats": [

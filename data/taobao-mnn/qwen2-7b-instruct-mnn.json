@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "taobao-mnn/Qwen2-7B-Instruct-MNN",
+  "slug": "taobao-mnn-qwen2-7b-instruct-mnn",
+  "author": "taobao-mnn",
+  "url": "https://huggingface.co/taobao-mnn/Qwen2-7B-Instruct-MNN",
+  "created_at": "2024-09-27T08:27:01.000Z",
+  "updated_at": "2026-11-12T06:14:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "mnn",
+    "hqq",
+    "text-generation",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen2-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12429161468,
+  "storage_human": "12.4 GB",
+  "base_model": "Qwen/Qwen2-7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

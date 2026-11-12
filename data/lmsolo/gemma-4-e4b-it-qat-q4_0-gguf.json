@@ -5,7 +5,7 @@
   "author": "lmsolo",
   "url": "https://huggingface.co/lmsolo/gemma-4-E4B-it-qat-q4_0-gguf",
   "created_at": "2026-11-07T20:32:32.000Z",
-  "updated_at": "2026-11-07T20:32:32.000Z",
+  "updated_at": "2026-11-12T02:05:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "gguf",
+    "image-text-to-text",
     "any-to-any",
     "arxiv:2607.02770",
     "base_model:google/gemma-4-E4B-it-qat-q4_0-unquantized",
@@ -23,7 +24,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 116,
+  "downloads_30d": 173,
   "trending_score": 0,
   "parameters": 7463013674,
   "parameters_human": "7.46B",

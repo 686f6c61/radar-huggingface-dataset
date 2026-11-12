@@ -5,7 +5,7 @@
   "author": "gamug",
   "url": "https://huggingface.co/gamug/deberta-v3-news-scope-nli",
   "created_at": "2026-11-11T16:01:19.000Z",
-  "updated_at": "2026-11-11T16:39:53.000Z",
+  "updated_at": "2026-11-11T22:54:18.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "mradermacher/experimental_R1-8x22b-GGUF",
+  "slug": "mradermacher-experimental_r1-8x22b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/experimental_R1-8x22b-GGUF",
+  "created_at": "2025-03-05T13:14:29.000Z",
+  "updated_at": "2026-11-12T10:35:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "en",
+    "base_model:gghfez/experimental_R1-8x22b",
+    "base_model:finetune:gghfez/experimental_R1-8x22b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 958337094624,
+  "storage_human": "958.3 GB",
+  "base_model": "gghfez/experimental_R1-8x22b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

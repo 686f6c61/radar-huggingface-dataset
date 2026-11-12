@@ -5,10 +5,10 @@
   "author": "lmsolo-community",
   "url": "https://huggingface.co/lmsolo-community/Ministral-3-3B-Instruct-2512-GGUF",
   "created_at": "2026-11-11T17:43:28.000Z",
-  "updated_at": "2026-11-11T17:45:10.000Z",
+  "updated_at": "2026-11-12T02:11:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "image-text-to-text",
   "library": null,
   "languages": [
     "en",
@@ -26,6 +26,7 @@
   "tags": [
     "gguf",
     "mistral-common",
+    "image-text-to-text",
     "en",
     "fr",
     "es",

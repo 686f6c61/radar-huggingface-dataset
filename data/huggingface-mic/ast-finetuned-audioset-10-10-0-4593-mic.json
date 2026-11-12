@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/ast-finetuned-audioset-10-10-0.4593-mic",
   "created_at": "2026-11-05T14:09:17.000Z",
-  "updated_at": "2026-11-05T14:14:17.000Z",
+  "updated_at": "2026-11-11T16:31:47.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 380,
+  "downloads_30d": 540,
   "trending_score": 0,
   "parameters": 195727,
   "parameters_human": "195727",

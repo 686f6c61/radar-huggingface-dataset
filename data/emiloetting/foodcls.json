@@ -5,7 +5,7 @@
   "author": "emiloetting",
   "url": "https://huggingface.co/emiloetting/FoodCLS",
   "created_at": "2026-11-10T19:38:12.000Z",
-  "updated_at": "2026-11-10T23:50:37.000Z",
+  "updated_at": "2026-11-11T20:36:36.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -15,6 +15,7 @@
     "en"
   ],
   "tags": [
+    "safetensors",
     "food-classification",
     "openfoodfacts",
     "product-categorization",
@@ -27,12 +28,14 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "parameters": 38416312,
+  "parameters_human": "38.4M",
+  "storage_bytes": 154213667,
+  "storage_human": "154 MB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

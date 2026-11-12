@@ -5,7 +5,7 @@
   "author": "elvezjp",
   "url": "https://huggingface.co/elvezjp/DeepSeek-V4.1-Flash-1017-ELVEZ-Q2-ja1-gguf",
   "created_at": "2026-11-10T20:15:57.000Z",
-  "updated_at": "2026-11-11T08:52:45.000Z",
+  "updated_at": "2026-11-12T00:53:00.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -43,7 +43,7 @@
     "gguf"
   ],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

@@ -5,7 +5,7 @@
   "author": "kittyhy",
   "url": "https://huggingface.co/kittyhy/PhyRubric-Judge",
   "created_at": "2026-11-10T22:23:01.000Z",
-  "updated_at": "2026-11-10T22:23:06.000Z",
+  "updated_at": "2026-11-11T18:45:40.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,6 +18,7 @@
     "video",
     "physical-commonsense",
     "video-evaluation",
+    "arxiv:2611.13576",
     "base_model:Qwen/Qwen3-VL-8B-Instruct",
     "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
     "region:us"

@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/llama-mic",
   "created_at": "2026-10-12T14:22:13.000Z",
-  "updated_at": "2026-11-11T11:25:20.000Z",
+  "updated_at": "2026-11-11T14:51:55.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2443,
+  "downloads_30d": 2617,
   "trending_score": 0,
   "parameters": 3219776,
   "parameters_human": "3.2M",

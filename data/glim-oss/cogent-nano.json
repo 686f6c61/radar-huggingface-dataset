@@ -26,6 +26,7 @@
     "en",
     "base_model:cross-encoder/ettin-reranker-32m-v1",
     "base_model:finetune:cross-encoder/ettin-reranker-32m-v1",
+    "doi:10.57967/hf/11580",
     "license:gpl-3.0",
     "region:us"
   ],

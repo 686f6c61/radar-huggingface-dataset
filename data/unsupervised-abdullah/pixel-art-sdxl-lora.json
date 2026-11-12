@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "unsupervised-abdullah/pixel-art-sdxl-lora",
+  "slug": "unsupervised-abdullah-pixel-art-sdxl-lora",
+  "author": "unsupervised-abdullah",
+  "url": "https://huggingface.co/unsupervised-abdullah/pixel-art-sdxl-lora",
+  "created_at": "2026-11-11T19:50:34.000Z",
+  "updated_at": "2026-11-12T06:43:25.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "stable-diffusion-xl",
+    "lora",
+    "pixel-art",
+    "dataset:Angais/pixel-art-atlas-1.4m",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 837087216,
+  "storage_human": "837 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

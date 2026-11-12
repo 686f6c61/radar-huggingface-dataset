@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "MediaAtlas/sraka-27b-v3-razpisi-lora",
+  "slug": "mediaatlas-sraka-27b-v3-razpisi-lora",
+  "author": "MediaAtlas",
+  "url": "https://huggingface.co/MediaAtlas/sraka-27b-v3-razpisi-lora",
+  "created_at": "2026-11-12T10:28:36.000Z",
+  "updated_at": "2026-11-12T10:29:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "sl"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "public-procurement",
+    "information-extraction",
+    "text-generation",
+    "sl",
+    "base_model:MediaAtlas/sraka-27b-v3",
+    "base_model:adapter:MediaAtlas/sraka-27b-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 933974032,
+  "storage_human": "934 MB",
+  "base_model": "MediaAtlas/sraka-27b-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

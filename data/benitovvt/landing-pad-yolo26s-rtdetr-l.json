@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "benitovvt/landing-pad-yolo26s-rtdetr-l",
+  "slug": "benitovvt-landing-pad-yolo26s-rtdetr-l",
+  "author": "benitovvt",
+  "url": "https://huggingface.co/benitovvt/landing-pad-yolo26s-rtdetr-l",
+  "created_at": "2026-11-12T08:29:02.000Z",
+  "updated_at": "2026-11-12T08:29:37.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "yolo26",
+    "rt-detr",
+    "object-detection",
+    "tensorrt",
+    "jetson",
+    "quantization",
+    "int8",
+    "drone",
+    "precision-landing",
+    "airsim",
+    "synthetic-data",
+    "en",
+    "dataset:benitovvt/airsim-landing-pad",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86544066,
+  "storage_human": "87 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "AirSim Landing Pad (test split, 1000 images)",
+      "metric": "Precision (PyTorch",
+      "value": 1
+    },
+    {
+      "task": null,
+      "dataset": "AirSim Landing Pad (test split, 1000 images)",
+      "metric": "Recall (PyTorch",
+      "value": 1
+    },
+    {
+      "task": null,
+      "dataset": "AirSim Landing Pad (test split, 1000 images)",
+      "metric": "mAP50 (PyTorch",
+      "value": 0.995
+    },
+    {
+      "task": null,
+      "dataset": "AirSim Landing Pad (test split, 1000 images)",
+      "metric": "mAP50-95 (PyTorch",
+      "value": 0.976
+    },
+    {
+      "task": null,
+      "dataset": "AirSim Landing Pad (test split, 1000 images)",
+      "metric": "Precision (PyTorch",
+      "value": 0.993
+    },
+    {
+      "task": null,
+      "dataset": "AirSim Landing Pad (test split, 1000 images)",
+      "metric": "Recall (PyTorch",
+      "value": 1
+    },
+    {
+      "task": null,
+      "dataset": "AirSim Landing Pad (test split, 1000 images)",
+      "metric": "mAP50 (PyTorch",
+      "value": 0.994
+    },
+    {
+      "task": null,
+      "dataset": "AirSim Landing Pad (test split, 1000 images)",
+      "metric": "mAP50-95 (PyTorch",
+      "value": 0.98
+    }
+  ],
+  "sources": []
+}

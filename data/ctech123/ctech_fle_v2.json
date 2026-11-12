@@ -5,7 +5,7 @@
   "author": "ctech123",
   "url": "https://huggingface.co/ctech123/CTech_Fle_v2",
   "created_at": "2026-11-11T07:40:25.000Z",
-  "updated_at": "2026-11-11T07:40:47.000Z",
+  "updated_at": "2026-11-11T12:16:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 85333278,
-  "storage_human": "85 MB",
+  "storage_bytes": 233155502,
+  "storage_human": "233 MB",
   "base_model": "unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit",
   "formats": [
     "safetensors"

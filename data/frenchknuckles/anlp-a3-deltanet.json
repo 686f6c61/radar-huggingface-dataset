@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "FrenchKnuckles/anlp-a3-deltanet",
+  "slug": "frenchknuckles-anlp-a3-deltanet",
+  "author": "FrenchKnuckles",
+  "url": "https://huggingface.co/FrenchKnuckles/anlp-a3-deltanet",
+  "created_at": "2026-11-03T18:31:54.000Z",
+  "updated_at": "2026-11-12T09:56:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": 4774172,
+  "parameters_human": "4.8M",
+  "storage_bytes": 38210288,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

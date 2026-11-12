@@ -5,7 +5,7 @@
   "author": "juanmorc",
   "url": "https://huggingface.co/juanmorc/beto-sarcasmo-bs32",
   "created_at": "2026-11-11T15:59:38.000Z",
-  "updated_at": "2026-11-11T16:08:11.000Z",
+  "updated_at": "2026-11-11T16:51:54.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 109852418,
   "parameters_human": "109.9M",
-  "storage_bytes": 439438473,
-  "storage_human": "439 MB",
+  "storage_bytes": 878871681,
+  "storage_human": "879 MB",
   "base_model": "dccuchile/bert-base-spanish-wwm-cased",
   "formats": [
     "safetensors"

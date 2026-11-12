@@ -5,7 +5,7 @@
   "author": "tahamajs",
   "url": "https://huggingface.co/tahamajs/llava-qwen-0.5b-flash-attention3-fp8-scienceqa",
   "created_at": "2026-11-11T05:30:19.000Z",
-  "updated_at": "2026-11-11T05:31:13.000Z",
+  "updated_at": "2026-11-11T08:41:36.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

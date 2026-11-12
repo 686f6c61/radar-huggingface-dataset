@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Babflou/maurice-1",
+  "slug": "babflou-maurice-1",
+  "author": "Babflou",
+  "url": "https://huggingface.co/Babflou/maurice-1",
+  "created_at": "2026-11-12T07:26:35.000Z",
+  "updated_at": "2026-11-12T07:29:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "gguf",
+    "on-device",
+    "llama.cpp",
+    "text-generation",
+    "fr",
+    "dataset:AmazonScience/massive",
+    "dataset:linagora/FREDSum",
+    "dataset:OpenAssistant/oasst2",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 516776480,
+  "storage_human": "517 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

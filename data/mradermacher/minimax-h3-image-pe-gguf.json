@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniMax-H3-Image-PE-GGUF",
+  "slug": "mradermacher-minimax-h3-image-pe-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniMax-H3-Image-PE-GGUF",
+  "created_at": "2026-11-12T06:03:42.000Z",
+  "updated_at": "2026-11-12T06:20:05.000Z",
+  "license": "minimax-h3-image-community-license-agreement",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-image",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "prompt-expansion",
+    "text-to-image",
+    "minimax-h3",
+    "fp4",
+    "sglang",
+    "en",
+    "base_model:MiniMaxAI/MiniMax-H3-Image-PE",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3-Image-PE",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895999266,
+  "parameters_human": "26.90B",
+  "storage_bytes": 187906115904,
+  "storage_human": "187.9 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3-Image-PE",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

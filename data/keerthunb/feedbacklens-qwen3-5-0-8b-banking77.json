@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Keerthunb/FeedbackLens-Qwen3.5-0.8B-BANKING77",
+  "slug": "keerthunb-feedbacklens-qwen3-5-0-8b-banking77",
+  "author": "Keerthunb",
+  "url": "https://huggingface.co/Keerthunb/FeedbackLens-Qwen3.5-0.8B-BANKING77",
+  "created_at": "2026-11-12T07:49:55.000Z",
+  "updated_at": "2026-11-12T07:51:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "unsloth",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "unsloth",
+    "safetensors",
+    "banking77",
+    "intent-classification",
+    "finance",
+    "lora",
+    "peft",
+    "clef",
+    "qwen3_5",
+    "text-classification",
+    "en",
+    "dataset:PolyAI/banking77",
+    "arxiv:2003.04807",
+    "base_model:unsloth/Qwen3.5-0.8B",
+    "base_model:adapter:unsloth/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172781137,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Intent classification",
+      "dataset": "BANKING77",
+      "metric": "Accuracy",
+      "value": 0.924025974025974
+    },
+    {
+      "task": "Intent classification",
+      "dataset": "BANKING77",
+      "metric": "Macro-F1",
+      "value": 0.9237919189536611
+    }
+  ],
+  "sources": []
+}

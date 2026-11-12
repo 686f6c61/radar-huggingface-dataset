@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "MediaAtlas/gams3-12b-razpisi-lora",
+  "slug": "mediaatlas-gams3-12b-razpisi-lora",
+  "author": "MediaAtlas",
+  "url": "https://huggingface.co/MediaAtlas/gams3-12b-razpisi-lora",
+  "created_at": "2026-11-12T10:29:17.000Z",
+  "updated_at": "2026-11-12T10:29:46.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "sl"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "public-procurement",
+    "information-extraction",
+    "text-generation",
+    "sl",
+    "base_model:cjvt/GaMS3-12B-Instruct",
+    "base_model:adapter:cjvt/GaMS3-12B-Instruct",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 261972344,
+  "storage_human": "262 MB",
+  "base_model": "cjvt/GaMS3-12B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

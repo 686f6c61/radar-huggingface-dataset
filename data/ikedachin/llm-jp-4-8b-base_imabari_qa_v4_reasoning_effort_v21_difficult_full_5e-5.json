@@ -5,7 +5,7 @@
   "author": "ikedachin",
   "url": "https://huggingface.co/ikedachin/llm-jp-4-8b-base_imabari_qa_v4_reasoning_effort_v21_difficult_full_5e-5",
   "created_at": "2026-11-09T23:22:18.000Z",
-  "updated_at": "2026-11-10T08:00:57.000Z",
+  "updated_at": "2026-11-11T12:34:55.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -44,11 +44,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 335,
   "trending_score": 0,
   "parameters": 8590200832,
   "parameters_human": "8.59B",
-  "storage_bytes": 17193633343,
+  "storage_bytes": 17196220257,
   "storage_human": "17.2 GB",
   "base_model": "llm-jp/llm-jp-4-8b-base",
   "formats": [

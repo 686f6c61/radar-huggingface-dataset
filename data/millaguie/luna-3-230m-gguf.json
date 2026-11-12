@@ -5,7 +5,7 @@
   "author": "millaguie",
   "url": "https://huggingface.co/millaguie/Luna-3-230m-GGUF",
   "created_at": "2026-11-05T22:10:17.000Z",
-  "updated_at": "2026-11-06T04:05:25.000Z",
+  "updated_at": "2026-11-11T09:35:21.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 284,
+  "downloads_30d": 287,
   "trending_score": 0,
   "parameters": 228829440,
   "parameters_human": "228.8M",

@@ -5,7 +5,7 @@
   "author": "tahamajs",
   "url": "https://huggingface.co/tahamajs/llava-qwen-0.5b-eat-scienceqa",
   "created_at": "2026-11-11T05:18:59.000Z",
-  "updated_at": "2026-11-11T05:19:55.000Z",
+  "updated_at": "2026-11-11T08:42:29.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 2,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

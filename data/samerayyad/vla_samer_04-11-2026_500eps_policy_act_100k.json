@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "SamerAyyad/VLA_Samer_04.11.2026_500eps_policy_ACT_100k",
+  "slug": "samerayyad-vla_samer_04-11-2026_500eps_policy_act_100k",
+  "author": "SamerAyyad",
+  "url": "https://huggingface.co/SamerAyyad/VLA_Samer_04.11.2026_500eps_policy_ACT_100k",
+  "created_at": "2026-11-12T07:01:39.000Z",
+  "updated_at": "2026-11-12T07:01:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:SamerAyyad/VLA_Samer_04.11.2026_500eps",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

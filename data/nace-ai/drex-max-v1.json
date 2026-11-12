@@ -5,7 +5,7 @@
   "author": "nace-ai",
   "url": "https://huggingface.co/nace-ai/drex-max-v1",
   "created_at": "2026-10-13T23:16:25.000Z",
-  "updated_at": "2026-11-09T10:13:18.000Z",
+  "updated_at": "2026-11-11T12:09:57.000Z",
   "license": "nace-ai-open-rail-m",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 47,
-  "downloads_30d": 567,
+  "downloads_30d": 628,
   "trending_score": 16,
   "parameters": 26085330160,
   "parameters_human": "26.09B",

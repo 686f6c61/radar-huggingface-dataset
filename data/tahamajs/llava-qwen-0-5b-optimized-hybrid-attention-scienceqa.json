@@ -5,7 +5,7 @@
   "author": "tahamajs",
   "url": "https://huggingface.co/tahamajs/llava-qwen-0.5b-optimized-hybrid-attention-scienceqa",
   "created_at": "2026-11-11T07:51:23.000Z",
-  "updated_at": "2026-11-11T07:53:06.000Z",
+  "updated_at": "2026-11-11T08:42:27.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/grounding-dino-tiny-mic",
   "created_at": "2026-10-27T17:23:11.000Z",
-  "updated_at": "2026-11-11T11:25:03.000Z",
+  "updated_at": "2026-11-11T17:14:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1521,
+  "downloads_30d": 1663,
   "trending_score": 0,
   "parameters": 7714390,
   "parameters_human": "7.7M",

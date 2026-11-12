@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jar-ai/Supra-50M-Reasoning-GGUF",
+  "slug": "jar-ai-supra-50m-reasoning-gguf",
+  "author": "Jar-ai",
+  "url": "https://huggingface.co/Jar-ai/Supra-50M-Reasoning-GGUF",
+  "created_at": "2026-11-11T08:31:15.000Z",
+  "updated_at": "2026-11-12T07:51:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "supra",
+    "reasoning",
+    "50M",
+    "SLM",
+    "GGUF",
+    "Quantization",
+    "text-generation",
+    "en",
+    "base_model:SupraLabs/Supra-50M-Reasoning",
+    "base_model:quantized:SupraLabs/Supra-50M-Reasoning",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51786240,
+  "parameters_human": "51.8M",
+  "storage_bytes": 864992640,
+  "storage_human": "865 MB",
+  "base_model": "SupraLabs/Supra-50M-Reasoning",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "ARC-Easy",
+      "metric": "Accuracy",
+      "value": 0.4848
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HellaSwag",
+      "metric": "Accuracy",
+      "value": 0.279
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8K",
+      "metric": "Exact Match (Flexible)",
+      "value": 0.0144
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GSM8K",
+      "metric": "Exact Match (Strict)",
+      "value": 0
+    }
+  ],
+  "sources": []
+}

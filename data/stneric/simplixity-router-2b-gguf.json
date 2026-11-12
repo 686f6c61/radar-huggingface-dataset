@@ -5,7 +5,7 @@
   "author": "stneric",
   "url": "https://huggingface.co/stneric/simplixity-router-2b-GGUF",
   "created_at": "2026-11-09T09:32:03.000Z",
-  "updated_at": "2026-11-09T09:33:41.000Z",
+  "updated_at": "2026-11-11T11:37:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

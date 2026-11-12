@@ -5,7 +5,7 @@
   "author": "turkish-sa-asr",
   "url": "https://huggingface.co/turkish-sa-asr/kashgari-large-v1.0",
   "created_at": "2026-11-04T21:57:44.000Z",
-  "updated_at": "2026-11-08T15:52:15.000Z",
+  "updated_at": "2026-11-11T15:23:19.000Z",
   "license": "research-evaluation",
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",
@@ -40,8 +40,8 @@
   "trending_score": 0,
   "parameters": 1543490560,
   "parameters_human": "1.54B",
-  "storage_bytes": 6174415213,
-  "storage_human": "6.2 GB",
+  "storage_bytes": 7255555416,
+  "storage_human": "7.3 GB",
   "base_model": "openai/whisper-large-v3",
   "formats": [
     "safetensors"

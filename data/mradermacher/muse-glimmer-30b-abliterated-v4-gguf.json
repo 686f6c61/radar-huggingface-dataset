@@ -5,14 +5,18 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Muse-Glimmer-30B-abliterated-v4-GGUF",
   "created_at": "2026-11-11T15:59:54.000Z",
-  "updated_at": "2026-11-11T16:08:51.000Z",
+  "updated_at": "2026-11-11T16:49:00.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
-  "library": null,
+  "library": "transformers",
   "languages": [],
   "tags": [
+    "transformers",
     "gguf",
+    "en",
+    "base_model:jsantillana/Muse-Glimmer-30B-abliterated-v4",
+    "base_model:quantized:jsantillana/Muse-Glimmer-30B-abliterated-v4",
     "endpoints_compatible",
     "region:us",
     "conversational"
@@ -22,9 +26,9 @@
   "trending_score": 0,
   "parameters": 27854794240,
   "parameters_human": "27.85B",
-  "storage_bytes": 126074718624,
-  "storage_human": "126.1 GB",
-  "base_model": null,
+  "storage_bytes": 197510977312,
+  "storage_human": "197.5 GB",
+  "base_model": "jsantillana/Muse-Glimmer-30B-abliterated-v4",
   "formats": [
     "gguf"
   ],

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "unnicr/tiny-news-classifier-openvino",
+  "slug": "unnicr-tiny-news-classifier-openvino",
+  "author": "unnicr",
+  "url": "https://huggingface.co/unnicr/tiny-news-classifier-openvino",
+  "created_at": "2026-11-12T07:11:29.000Z",
+  "updated_at": "2026-11-12T07:12:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "openvino",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "openvino",
+    "text-classification",
+    "cpu",
+    "from-scratch",
+    "en",
+    "dataset:fancyzhx/ag_news",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8123316,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

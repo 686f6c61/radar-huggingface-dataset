@@ -5,7 +5,7 @@
   "author": "orcarouter",
   "url": "https://huggingface.co/orcarouter/Ripple-65B-abliterated-GGUF",
   "created_at": "2026-11-06T03:59:56.000Z",
-  "updated_at": "2026-11-06T05:14:10.000Z",
+  "updated_at": "2026-11-11T09:10:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "conversational"
   ],
   "likes": 18,
-  "downloads_30d": 27326,
+  "downloads_30d": 27599,
   "trending_score": 17,
   "parameters": 64782689360,
   "parameters_human": "64.78B",

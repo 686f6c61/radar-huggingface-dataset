@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "swaynehales/Emberon-2-mlx-4bit",
+  "slug": "swaynehales-emberon-2-mlx-4bit",
+  "author": "swaynehales",
+  "url": "https://huggingface.co/swaynehales/Emberon-2-mlx-4bit",
+  "created_at": "2026-11-12T11:29:10.000Z",
+  "updated_at": "2026-11-12T11:29:16.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2",
+    "dictation",
+    "speech-postprocessing",
+    "text-cleanup",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:PromethicLabs/Emberon-2",
+    "base_model:quantized:PromethicLabs/Emberon-2",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 199527579,
+  "storage_human": "200 MB",
+  "base_model": "PromethicLabs/Emberon-2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

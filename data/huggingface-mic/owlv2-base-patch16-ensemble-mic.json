@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/owlv2-base-patch16-ensemble-mic",
   "created_at": "2026-10-29T20:14:47.000Z",
-  "updated_at": "2026-11-10T15:06:48.000Z",
+  "updated_at": "2026-11-11T11:25:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1269,
+  "downloads_30d": 1398,
   "trending_score": 0,
   "parameters": 3606663,
   "parameters_human": "3.6M",

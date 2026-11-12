@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Dumi2025/hdfs-line-anomaly-albert-base-v2",
+  "slug": "dumi2025-hdfs-line-anomaly-albert-base-v2",
+  "author": "Dumi2025",
+  "url": "https://huggingface.co/Dumi2025/hdfs-line-anomaly-albert-base-v2",
+  "created_at": "2026-11-12T05:20:11.000Z",
+  "updated_at": "2026-11-12T05:20:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albert",
+    "log-anomaly-detection",
+    "hdfs",
+    "text-classification",
+    "base_model:albert/albert-base-v2",
+    "base_model:finetune:albert/albert-base-v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11685122,
+  "parameters_human": "11.7M",
+  "storage_bytes": 46743912,
+  "storage_human": "47 MB",
+  "base_model": "albert/albert-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    }
+  ]
+}

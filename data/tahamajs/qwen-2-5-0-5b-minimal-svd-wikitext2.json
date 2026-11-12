@@ -5,7 +5,7 @@
   "author": "tahamajs",
   "url": "https://huggingface.co/tahamajs/qwen-2.5-0.5b-minimal-svd-wikitext2",
   "created_at": "2026-11-10T22:31:23.000Z",
-  "updated_at": "2026-11-10T22:51:49.000Z",
+  "updated_at": "2026-11-11T08:42:46.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 274,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

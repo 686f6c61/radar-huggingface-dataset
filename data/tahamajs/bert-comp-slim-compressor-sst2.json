@@ -5,7 +5,7 @@
   "author": "tahamajs",
   "url": "https://huggingface.co/tahamajs/bert-comp-slim-compressor-sst2",
   "created_at": "2026-11-10T21:41:54.000Z",
-  "updated_at": "2026-11-10T21:46:31.000Z",
+  "updated_at": "2026-11-11T09:44:10.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

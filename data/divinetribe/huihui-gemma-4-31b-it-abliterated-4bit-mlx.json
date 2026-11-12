@@ -5,7 +5,7 @@
   "author": "divinetribe",
   "url": "https://huggingface.co/divinetribe/Huihui-gemma-4-31B-it-abliterated-4bit-mlx",
   "created_at": "2026-06-15T22:27:17.000Z",
-  "updated_at": "2026-11-10T11:11:15.000Z",
+  "updated_at": "2026-11-11T11:13:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 398,
+  "downloads_30d": 538,
   "trending_score": 0,
   "parameters": 30697345280,
   "parameters_human": "30.70B",

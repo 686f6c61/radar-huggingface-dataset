@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/cohere-transcribe-03-2026-ungated-mic",
+  "slug": "huggingface-mic-cohere-transcribe-03-2026-ungated-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/cohere-transcribe-03-2026-ungated-mic",
+  "created_at": "2026-11-07T15:19:34.000Z",
+  "updated_at": "2026-11-12T10:29:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cohere_asr",
+    "mic",
+    "test-artifact",
+    "custom_code",
+    "base_model:evewashere/cohere-transcribe-03-2026-ungated",
+    "base_model:finetune:evewashere/cohere-transcribe-03-2026-ungated",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 502,
+  "trending_score": 0,
+  "parameters": 2771264,
+  "parameters_human": "2.8M",
+  "storage_bytes": 11592819,
+  "storage_human": "12 MB",
+  "base_model": "evewashere/cohere-transcribe-03-2026-ungated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

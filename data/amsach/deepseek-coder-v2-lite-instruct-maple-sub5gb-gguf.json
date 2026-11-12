@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "AmSach/DeepSeek-Coder-V2-Lite-Instruct-MAPLE-Sub5GB-GGUF",
+  "slug": "amsach-deepseek-coder-v2-lite-instruct-maple-sub5gb-gguf",
+  "author": "AmSach",
+  "url": "https://huggingface.co/AmSach/DeepSeek-Coder-V2-Lite-Instruct-MAPLE-Sub5GB-GGUF",
+  "created_at": "2026-11-12T05:04:35.000Z",
+  "updated_at": "2026-11-12T05:05:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "code",
+    "moe",
+    "maple",
+    "quantized",
+    "deepseek",
+    "llama-cpp",
+    "ollama",
+    "text-generation",
+    "en",
+    "dataset:technical-code-corpus",
+    "base_model:deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+    "base_model:quantized:deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13456756224,
+  "parameters_human": "13.46B",
+  "storage_bytes": 4830185248,
+  "storage_human": "4.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "kingfang008/bonframe-ai-engine",
+  "slug": "kingfang008-bonframe-ai-engine",
+  "author": "kingfang008",
+  "url": "https://huggingface.co/kingfang008/bonframe-ai-engine",
+  "created_at": "2026-10-01T06:52:36.000Z",
+  "updated_at": "2026-11-12T05:31:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 346,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65307871244,
+  "storage_human": "65.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

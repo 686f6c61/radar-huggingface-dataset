@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ggml-org/gpt-oss-120b-GGUF",
+  "slug": "ggml-org-gpt-oss-120b-gguf",
+  "author": "ggml-org",
+  "url": "https://huggingface.co/ggml-org/gpt-oss-120b-GGUF",
+  "created_at": "2025-08-02T16:09:37.000Z",
+  "updated_at": "2026-11-12T09:57:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "text-generation",
+    "base_model:openai/gpt-oss-120b",
+    "base_model:quantized:openai/gpt-oss-120b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 84,
+  "downloads_30d": 359627,
+  "trending_score": 0,
+  "parameters": 116829156672,
+  "parameters_human": "116.83B",
+  "storage_bytes": 192597926656,
+  "storage_human": "192.6 GB",
+  "base_model": "openai/gpt-oss-120b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "nueyprap/typhoon-asr-realtime-int8-onnx",
+  "slug": "nueyprap-typhoon-asr-realtime-int8-onnx",
+  "author": "nueyprap",
+  "url": "https://huggingface.co/nueyprap/typhoon-asr-realtime-int8-onnx",
+  "created_at": "2026-11-12T09:35:03.000Z",
+  "updated_at": "2026-11-12T09:54:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "int8",
+    "thai",
+    "asr",
+    "automatic-speech-recognition",
+    "th",
+    "base_model:typhoon-ai/typhoon-asr-realtime",
+    "base_model:quantized:typhoon-ai/typhoon-asr-realtime",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 137792545,
+  "storage_human": "138 MB",
+  "base_model": "typhoon-ai/typhoon-asr-realtime",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

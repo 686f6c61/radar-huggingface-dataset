@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "BRR1154/Qwen2.5-0.5B-PromptBus-v2",
+  "slug": "brr1154-qwen2-5-0-5b-promptbus-v2",
+  "author": "BRR1154",
+  "url": "https://huggingface.co/BRR1154/Qwen2.5-0.5B-PromptBus-v2",
+  "created_at": "2026-11-12T10:45:04.000Z",
+  "updated_at": "2026-11-12T10:53:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "prompt-bus",
+    "dag-routing",
+    "agent-orchestration",
+    "qwen2.5",
+    "null-space-lora",
+    "slm-v2",
+    "conversational",
+    "en",
+    "base_model:BRR1154/Qwen2.5-0.5B-PromptBus-v1",
+    "base_model:finetune:BRR1154/Qwen2.5-0.5B-PromptBus-v1",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519716,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct, BRR1154/Qwen2.5-0.5B-PromptBus-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "DAG-Arbitration-16",
+      "dataset": null,
+      "metric": "Domain Execution / Solver Accuracy (After v2)",
+      "value": 25
+    },
+    {
+      "task": "DAG-Arbitration-16",
+      "dataset": null,
+      "metric": "Domain Execution / Solver Accuracy (Before v1 Baseline)",
+      "value": 12.5
+    },
+    {
+      "task": "ARC-Easy-25 General Retention Guard",
+      "dataset": null,
+      "metric": "ARC-Easy-25 Raw / Calibrated (%)",
+      "value": 80
+    }
+  ],
+  "sources": []
+}

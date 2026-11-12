@@ -27,11 +27,10 @@
     "arxiv:2111.09543",
     "license:mit",
     "endpoints_compatible",
-    "deploy:azure",
     "region:us"
   ],
   "likes": 471,
-  "downloads_30d": 2450833,
+  "downloads_30d": 2440007,
   "trending_score": 14,
   "parameters": null,
   "parameters_human": null,

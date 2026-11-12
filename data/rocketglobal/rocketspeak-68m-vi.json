@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "rocketglobal/RocketSpeak-68M-vi",
+  "slug": "rocketglobal-rocketspeak-68m-vi",
+  "author": "rocketglobal",
+  "url": "https://huggingface.co/rocketglobal/RocketSpeak-68M-vi",
+  "created_at": "2026-11-12T09:02:01.000Z",
+  "updated_at": "2026-11-12T09:14:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "automatic-speech-recognition",
+    "speech-to-text",
+    "vietnamese",
+    "zipformer",
+    "rnnt",
+    "transducer",
+    "icefall",
+    "int8",
+    "rocketai",
+    "rocketspeak",
+    "vi",
+    "dataset:doof-ferb/vlsp2020_vinai_100h",
+    "dataset:AILAB-VNUHCM/vivos",
+    "dataset:nguyendv02/ViMD_Dataset",
+    "dataset:google/fleurs",
+    "dataset:linhtran92/viet_bud500",
+    "dataset:NhutP/VietSpeech",
+    "arxiv:2505.21527",
+    "arxiv:2406.02555",
+    "arxiv:2410.03458",
+    "arxiv:2606.06985",
+    "arxiv:2602.12911",
+    "arxiv:2603.05354",
+    "arxiv:2610.35846",
+    "arxiv:2609.23525",
+    "arxiv:2409.09554",
+    "base_model:g-group-ai-lab/gipformer1.5-68M-rnnt",
+    "base_model:quantized:g-group-ai-lab/gipformer1.5-68M-rnnt",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 622522515,
+  "storage_human": "623 MB",
+  "base_model": "g-group-ai-lab/gipformer1.5-68M-rnnt",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Recognition",
+      "dataset": "FLEURS vi_vn test",
+      "metric": "WER (normalized)",
+      "value": 6.1
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "VIVOS test",
+      "metric": "WER (normalized)",
+      "value": 3.82
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "ViMD test",
+      "metric": "WER (normalized)",
+      "value": 6.91
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "ViMedCSS test",
+      "metric": "WER (normalized",
+      "value": 17.93
+    }
+  ],
+  "sources": []
+}

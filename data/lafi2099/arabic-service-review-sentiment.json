@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "lafi2099/arabic-service-review-sentiment",
+  "slug": "lafi2099-arabic-service-review-sentiment",
+  "author": "lafi2099",
+  "url": "https://huggingface.co/lafi2099/arabic-service-review-sentiment",
+  "created_at": "2026-11-12T12:18:28.000Z",
+  "updated_at": "2026-11-12T12:24:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "sentiment-analysis",
+    "arabic",
+    "reviews",
+    "text-classification",
+    "ar",
+    "dataset:srinivasbilla/semeval-2016-absa-reviews-arabic",
+    "base_model:google-bert/bert-base-multilingual-cased",
+    "base_model:finetune:google-bert/bert-base-multilingual-cased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177854978,
+  "parameters_human": "177.9M",
+  "storage_bytes": 711448633,
+  "storage_human": "711 MB",
+  "base_model": "google-bert/bert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

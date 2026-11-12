@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "ap2511/scan-test-log-only-findings",
+  "slug": "ap2511-scan-test-log-only-findings",
+  "author": "ap2511",
+  "url": "https://huggingface.co/ap2511/scan-test-log-only-findings",
+  "created_at": "2026-11-12T12:00:22.000Z",
+  "updated_at": "2026-11-12T12:00:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11143,
+  "storage_human": "11143 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

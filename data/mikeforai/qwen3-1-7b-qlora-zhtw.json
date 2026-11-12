@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mikeforai/Qwen3-1.7B-qlora-zhtw",
+  "slug": "mikeforai-qwen3-1-7b-qlora-zhtw",
+  "author": "mikeforai",
+  "url": "https://huggingface.co/mikeforai/Qwen3-1.7B-qlora-zhtw",
+  "created_at": "2026-11-12T05:46:17.000Z",
+  "updated_at": "2026-11-12T05:46:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557434,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

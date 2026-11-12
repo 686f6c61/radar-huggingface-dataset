@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "guitarorangedog/manifeel-dp-gear",
+  "slug": "guitarorangedog-manifeel-dp-gear",
+  "author": "guitarorangedog",
+  "url": "https://huggingface.co/guitarorangedog/manifeel-dp-gear",
+  "created_at": "2026-11-12T08:56:51.000Z",
+  "updated_at": "2026-11-12T08:57:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "manifeel",
+    "diffusion-policy",
+    "dataset:RoboSynapse/manifeel-tacr_franka-panda_gear",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 329216262,
+  "parameters_human": "329.2M",
+  "storage_bytes": 1316958720,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

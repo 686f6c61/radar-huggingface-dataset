@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "dbgworld/AutoDecompiler-6.7B-pscode-Q4_K_M-GGUF",
+  "slug": "dbgworld-autodecompiler-6-7b-pscode-q4_k_m-gguf",
+  "author": "dbgworld",
+  "url": "https://huggingface.co/dbgworld/AutoDecompiler-6.7B-pscode-Q4_K_M-GGUF",
+  "created_at": "2026-11-12T06:22:54.000Z",
+  "updated_at": "2026-11-12T06:23:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:AutoDecompiler/AutoDecompiler-6.7B-pscode",
+    "base_model:quantized:AutoDecompiler/AutoDecompiler-6.7B-pscode",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6740512768,
+  "parameters_human": "6.74B",
+  "storage_bytes": 4082886880,
+  "storage_human": "4.1 GB",
+  "base_model": "AutoDecompiler/AutoDecompiler-6.7B-pscode",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

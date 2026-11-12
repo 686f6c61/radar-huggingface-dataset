@@ -5,7 +5,7 @@
   "author": "tahamajs",
   "url": "https://huggingface.co/tahamajs/bert-comp-drone-compressor-sst2",
   "created_at": "2026-11-10T21:10:51.000Z",
-  "updated_at": "2026-11-10T21:16:02.000Z",
+  "updated_at": "2026-11-11T12:23:38.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

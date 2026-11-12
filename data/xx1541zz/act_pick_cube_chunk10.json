@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "xx1541zz/act_pick_cube_chunk10",
+  "slug": "xx1541zz-act_pick_cube_chunk10",
+  "author": "xx1541zz",
+  "url": "https://huggingface.co/xx1541zz/act_pick_cube_chunk10",
+  "created_at": "2026-11-12T07:34:23.000Z",
+  "updated_at": "2026-11-12T07:34:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:xx1541zz/pick-cube_20261008_103849",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51576454,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206346264,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

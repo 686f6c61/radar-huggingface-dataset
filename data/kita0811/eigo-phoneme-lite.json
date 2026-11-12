@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "kita0811/eigo-phoneme-lite",
+  "slug": "kita0811-eigo-phoneme-lite",
+  "author": "kita0811",
+  "url": "https://huggingface.co/kita0811/eigo-phoneme-lite",
+  "created_at": "2026-11-12T10:35:29.000Z",
+  "updated_at": "2026-11-12T10:43:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "phoneme-recognition",
+    "pronunciation",
+    "en",
+    "base_model:vitouphy/wav2vec2-xls-r-300m-timit-phoneme",
+    "base_model:quantized:vitouphy/wav2vec2-xls-r-300m-timit-phoneme",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 175116796,
+  "storage_human": "175 MB",
+  "base_model": "vitouphy/wav2vec2-xls-r-300m-timit-phoneme",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

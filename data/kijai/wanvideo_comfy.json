@@ -18,9 +18,9 @@
     "base_model:finetune:Wan-AI/Wan2.1-VACE-1.3B",
     "region:us"
   ],
-  "likes": 2585,
-  "downloads_30d": 3121113,
-  "trending_score": 12,
+  "likes": 2586,
+  "downloads_30d": 2823417,
+  "trending_score": 10,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 1749504682037,

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "rounaksaha12/nemotron3.5-30b-a3b_p2-acu-soft-bce-passage_pure1.0_mixw1.0_lora-r16_lr5e-05_linear_ep4",
+  "slug": "rounaksaha12-nemotron3-5-30b-a3b_p2-acu-soft-bce-passage_pure1-0_mixw1-0_lora-r16_lr5e-05_linear_ep4",
+  "author": "rounaksaha12",
+  "url": "https://huggingface.co/rounaksaha12/nemotron3.5-30b-a3b_p2-acu-soft-bce-passage_pure1.0_mixw1.0_lora-r16_lr5e-05_linear_ep4",
+  "created_at": "2026-11-06T08:37:56.000Z",
+  "updated_at": "2026-11-12T06:03:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ai-text-detection",
+    "acu",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 11367296,
+  "parameters_human": "11.4M",
+  "storage_bytes": 62574844,
+  "storage_human": "63 MB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "ThianQiu/SLAB",
+  "slug": "thianqiu-slab",
+  "author": "ThianQiu",
+  "url": "https://huggingface.co/ThianQiu/SLAB",
+  "created_at": "2026-11-12T06:58:16.000Z",
+  "updated_at": "2026-11-12T06:59:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4020121269,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "FrenchKnuckles/anlp-a3-hybrid-seed1",
+  "slug": "frenchknuckles-anlp-a3-hybrid-seed1",
+  "author": "FrenchKnuckles",
+  "url": "https://huggingface.co/FrenchKnuckles/anlp-a3-hybrid-seed1",
+  "created_at": "2026-11-03T18:33:30.000Z",
+  "updated_at": "2026-11-12T10:25:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 45,
+  "trending_score": 0,
+  "parameters": 5029532,
+  "parameters_human": "5.0M",
+  "storage_bytes": 40256432,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

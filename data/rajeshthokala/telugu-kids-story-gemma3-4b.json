@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "RajeshThokala/telugu-kids-story-gemma3-4b",
+  "slug": "rajeshthokala-telugu-kids-story-gemma3-4b",
+  "author": "RajeshThokala",
+  "url": "https://huggingface.co/RajeshThokala/telugu-kids-story-gemma3-4b",
+  "created_at": "2026-11-11T03:31:09.000Z",
+  "updated_at": "2026-11-11T08:46:22.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "te"
+  ],
+  "tags": [
+    "mlx",
+    "gguf",
+    "telugu",
+    "children",
+    "stories",
+    "lora",
+    "text-generation",
+    "te",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:adapter:google/gemma-3-4b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4551515648,
+  "parameters_human": "4.55B",
+  "storage_bytes": 5882293453,
+  "storage_human": "5.9 GB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "gguf",
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

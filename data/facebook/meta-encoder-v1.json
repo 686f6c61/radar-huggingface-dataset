@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "facebook/meta-encoder-v1",
+  "slug": "facebook-meta-encoder-v1",
+  "author": "facebook",
+  "url": "https://huggingface.co/facebook/meta-encoder-v1",
+  "created_at": "2026-11-12T02:00:27.000Z",
+  "updated_at": "2026-11-12T04:50:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_glimmer",
+    "feature-extraction",
+    "metaencoder",
+    "multimodal-embedding",
+    "image-text-retrieval",
+    "video-retrieval",
+    "document-retrieval",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 5,
+  "trending_score": 12,
+  "parameters": 28431795200,
+  "parameters_human": "28.43B",
+  "storage_bytes": 56980684911,
+  "storage_human": "57.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Connexion ou inscription",
+      "url": "https://fr-fr.facebook.com/",
+      "snippet": "Créez un compte ou connectez-vous à Facebook. Connectez-vous avec vos amis, la famille et d’autres connaissances. Partagez …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Facebook",
+      "snippet": "Facebook prépare, la même année, un réseau social d'entreprise, Facebook at work, qui doit permettre aux utilisateurs de discuter …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "5 days ago · From #whimsigoth to moody mermaid, Facebook creator Fairyfreak's feed is packed with save-worthy makeup …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://secure.facebook.com/r.php/?entry_point=login",
+      "snippet": "Get started on Facebook with a Meta Account A Meta Account lets you access multiple Meta technologies, like Facebook, easily and …"
+    }
+  ]
+}

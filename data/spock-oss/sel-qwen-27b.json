@@ -5,14 +5,21 @@
   "author": "spock-oss",
   "url": "https://huggingface.co/spock-oss/sel-qwen-27b",
   "created_at": "2026-11-11T06:35:33.000Z",
-  "updated_at": "2026-11-11T06:44:07.000Z",
+  "updated_at": "2026-11-11T07:01:07.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
-  "library": null,
+  "library": "peft",
   "languages": [],
   "tags": [
+    "peft",
     "safetensors",
+    "selection",
+    "visual-grounding",
+    "evidence-selection",
+    "lora",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
     "license:mit",
     "region:us"
   ],
@@ -23,7 +30,7 @@
   "parameters_human": null,
   "storage_bytes": 479725020,
   "storage_human": "480 MB",
-  "base_model": null,
+  "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"
   ],

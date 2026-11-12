@@ -5,7 +5,7 @@
   "author": "mlboydaisuke",
   "url": "https://huggingface.co/mlboydaisuke/whisper-large-v3-turbo-onnxruntime-genai-fp16-cuda",
   "created_at": "2026-11-09T21:22:40.000Z",
-  "updated_at": "2026-11-09T21:25:47.000Z",
+  "updated_at": "2026-11-12T00:28:21.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

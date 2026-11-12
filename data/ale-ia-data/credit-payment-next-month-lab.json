@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Ale-IA-Data/credit-payment-next-month-lab",
+  "slug": "ale-ia-data-credit-payment-next-month-lab",
+  "author": "Ale-IA-Data",
+  "url": "https://huggingface.co/Ale-IA-Data/credit-payment-next-month-lab",
+  "created_at": "2026-11-12T07:19:59.000Z",
+  "updated_at": "2026-11-12T07:20:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "credit-risk",
+    "next-month-default",
+    "tabular-classification",
+    "es",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13484618,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

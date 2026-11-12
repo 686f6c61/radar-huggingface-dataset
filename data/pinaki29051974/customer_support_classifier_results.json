@@ -5,7 +5,7 @@
   "author": "pinaki29051974",
   "url": "https://huggingface.co/pinaki29051974/customer_support_classifier_results",
   "created_at": "2026-11-11T07:34:31.000Z",
-  "updated_at": "2026-11-11T07:34:55.000Z",
+  "updated_at": "2026-11-11T16:02:02.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 109484547,
   "parameters_human": "109.5M",
-  "storage_bytes": 437966925,
-  "storage_human": "438 MB",
+  "storage_bytes": 875928649,
+  "storage_human": "876 MB",
   "base_model": "BAAI/bge-base-en-v1.5",
   "formats": [
     "safetensors"

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-2b-unsloth-chat-doctor-GGUF",
+  "slug": "mradermacher-gemma-2b-unsloth-chat-doctor-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-2b-unsloth-chat-doctor-GGUF",
+  "created_at": "2025-02-28T12:54:06.000Z",
+  "updated_at": "2026-11-12T07:19:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "en",
+    "base_model:JC-24/gemma-2b-unsloth-chat-doctor",
+    "base_model:quantized:JC-24/gemma-2b-unsloth-chat-doctor",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 59,
+  "trending_score": 0,
+  "parameters": 2506172416,
+  "parameters_human": "2.51B",
+  "storage_bytes": 23374920192,
+  "storage_human": "23.4 GB",
+  "base_model": "JC-24/gemma-2b-unsloth-chat-doctor",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

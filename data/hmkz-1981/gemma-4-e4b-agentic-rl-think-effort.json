@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "hmkz-1981/gemma-4-e4b-agentic-rl-think-effort",
+  "slug": "hmkz-1981-gemma-4-e4b-agentic-rl-think-effort",
+  "author": "hmkz-1981",
+  "url": "https://huggingface.co/hmkz-1981/gemma-4-e4b-agentic-rl-think-effort",
+  "created_at": "2026-11-12T03:40:05.000Z",
+  "updated_at": "2026-11-12T03:41:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "tool-use",
+    "instruction-following",
+    "agent",
+    "reasoning-effort",
+    "text-generation",
+    "conversational",
+    "ja",
+    "en",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7941100874,
+  "parameters_human": "7.94B",
+  "storage_bytes": 15914633928,
+  "storage_human": "15.9 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

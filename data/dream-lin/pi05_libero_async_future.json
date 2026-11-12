@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Dream-LIN/pi05_libero_async_future",
+  "slug": "dream-lin-pi05_libero_async_future",
+  "author": "Dream-LIN",
+  "url": "https://huggingface.co/Dream-LIN/pi05_libero_async_future",
+  "created_at": "2026-11-12T08:47:20.000Z",
+  "updated_at": "2026-11-12T08:47:20.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Building the Next Wave of AI-Enabled Robots - NVIDIA",
+      "url": "https://www.nvidia.com/en-us/on-demand/session/gtc26-s81490/",
+      "snippet": "Into the Omniverse: How OpenUSD and Synthetic Data Are Shaping the Future for Humanoid Robots | February 2025; Into the Omniverse: Physical AI Open Models and ..."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Edukanuto86/claire",
+  "slug": "edukanuto86-claire",
+  "author": "Edukanuto86",
+  "url": "https://huggingface.co/Edukanuto86/claire",
+  "created_at": "2026-11-12T07:01:30.000Z",
+  "updated_at": "2026-11-12T07:01:30.000Z",
+  "license": "wtfpl",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "unconditional-image-generation",
+    "en",
+    "es",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "arxiv:1910.09700",
+    "license:wtfpl",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

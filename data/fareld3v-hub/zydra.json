@@ -5,10 +5,10 @@
   "author": "fareld3v-hub",
   "url": "https://huggingface.co/fareld3v-hub/zydra",
   "created_at": "2026-11-08T17:13:56.000Z",
-  "updated_at": "2026-11-09T15:11:48.000Z",
+  "updated_at": "2026-11-11T14:01:11.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": "text-generation",
+  "pipeline_tag": "image-text-to-text",
   "library": null,
   "languages": [],
   "tags": [
@@ -16,6 +16,8 @@
     "llama.cpp",
     "multimodal",
     "zydra",
+    "image-text-to-text",
+    "license:mit",
     "endpoints_compatible",
     "region:us",
     "conversational"

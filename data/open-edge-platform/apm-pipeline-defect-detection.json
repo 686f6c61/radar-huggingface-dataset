@@ -5,13 +5,16 @@
   "author": "open-edge-platform",
   "url": "https://huggingface.co/open-edge-platform/apm-pipeline-defect-detection",
   "created_at": "2026-11-11T06:00:48.000Z",
-  "updated_at": "2026-11-11T06:00:48.000Z",
+  "updated_at": "2026-11-11T15:41:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "object-detection",
   "library": null,
   "languages": [],
   "tags": [
+    "openvino",
+    "predictive-maintenance",
+    "object-detection",
     "license:apache-2.0",
     "region:us"
   ],

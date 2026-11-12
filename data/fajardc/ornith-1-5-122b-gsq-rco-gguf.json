@@ -5,7 +5,7 @@
   "author": "fajardc",
   "url": "https://huggingface.co/fajardc/Ornith-1.5-122B-GSQ-RCO-GGUF",
   "created_at": "2026-10-28T10:34:27.000Z",
-  "updated_at": "2026-11-03T07:46:46.000Z",
+  "updated_at": "2026-11-11T19:33:24.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -21,6 +21,7 @@
     "qwen3_5_moe",
     "llama.cpp",
     "image-text-to-text",
+    "arxiv:2405.14852",
     "arxiv:2604.18556",
     "arxiv:2605.00649",
     "base_model:ornith-ai/Ornith-1.5-122B",
@@ -35,8 +36,8 @@
   "trending_score": 0,
   "parameters": 122111526912,
   "parameters_human": "122.11B",
-  "storage_bytes": 53382870304,
-  "storage_human": "53.4 GB",
+  "storage_bytes": 106829662784,
+  "storage_human": "106.8 GB",
   "base_model": "ornith-ai/Ornith-1.5-122B",
   "formats": [
     "gguf"

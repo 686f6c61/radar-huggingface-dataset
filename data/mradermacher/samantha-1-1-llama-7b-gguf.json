@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/samantha-1.1-llama-7b-GGUF",
+  "slug": "mradermacher-samantha-1-1-llama-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/samantha-1.1-llama-7b-GGUF",
+  "created_at": "2025-03-15T02:18:34.000Z",
+  "updated_at": "2026-11-12T08:25:12.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:ehartford/samantha-data",
+    "base_model:QuixiAI/samantha-1.1-llama-7b",
+    "base_model:quantized:QuixiAI/samantha-1.1-llama-7b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 259,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 59564795264,
+  "storage_human": "59.6 GB",
+  "base_model": "QuixiAI/samantha-1.1-llama-7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

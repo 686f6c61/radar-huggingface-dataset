@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/table_transformer-mic",
   "created_at": "2026-10-12T15:25:40.000Z",
-  "updated_at": "2026-11-11T11:25:24.000Z",
+  "updated_at": "2026-11-11T14:35:36.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2249,
+  "downloads_30d": 2387,
   "trending_score": 0,
   "parameters": 11396359,
   "parameters_human": "11.4M",

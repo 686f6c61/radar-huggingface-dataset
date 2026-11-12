@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/ai_sapiens_7arm_4finger_erase_board_groot_10k",
+  "slug": "dongkkka-ai_sapiens_7arm_4finger_erase_board_groot_10k",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/ai_sapiens_7arm_4finger_erase_board_groot_10k",
+  "created_at": "2026-11-12T08:22:36.000Z",
+  "updated_at": "2026-11-12T08:26:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "gr00t",
+    "k1",
+    "checkpoint",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576200896,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

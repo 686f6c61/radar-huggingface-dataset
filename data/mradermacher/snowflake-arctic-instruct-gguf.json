@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/snowflake-arctic-instruct-GGUF",
+  "slug": "mradermacher-snowflake-arctic-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/snowflake-arctic-instruct-GGUF",
+  "created_at": "2024-12-06T13:10:53.000Z",
+  "updated_at": "2026-11-12T07:19:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "snowflake",
+    "arctic",
+    "moe",
+    "en",
+    "base_model:Snowflake/snowflake-arctic-instruct",
+    "base_model:finetune:Snowflake/snowflake-arctic-instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3242709244384,
+  "storage_human": "3242.7 GB",
+  "base_model": "Snowflake/snowflake-arctic-instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

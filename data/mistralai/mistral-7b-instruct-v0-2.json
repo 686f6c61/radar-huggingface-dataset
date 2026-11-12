@@ -24,11 +24,10 @@
     "license:apache-2.0",
     "eval-results",
     "text-generation-inference",
-    "deploy:azure",
     "region:us"
   ],
   "likes": 3280,
-  "downloads_30d": 1429915,
+  "downloads_30d": 1390685,
   "trending_score": 17,
   "parameters": 7241732096,
   "parameters_human": "7.24B",

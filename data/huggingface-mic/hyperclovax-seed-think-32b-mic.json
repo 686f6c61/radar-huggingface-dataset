@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "huggingface-mic/HyperCLOVAX-SEED-Think-32B-mic",
+  "slug": "huggingface-mic-hyperclovax-seed-think-32b-mic",
+  "author": "huggingface-mic",
+  "url": "https://huggingface.co/huggingface-mic/HyperCLOVAX-SEED-Think-32B-mic",
+  "created_at": "2026-11-12T09:11:17.000Z",
+  "updated_at": "2026-11-12T09:14:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hyperclovax_vision_v2",
+    "mic",
+    "test-artifact",
+    "base_model:naver-hyperclovax/HyperCLOVAX-SEED-Think-32B",
+    "base_model:finetune:naver-hyperclovax/HyperCLOVAX-SEED-Think-32B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9777408,
+  "parameters_human": "9.8M",
+  "storage_bytes": 21153695,
+  "storage_human": "21 MB",
+  "base_model": "naver-hyperclovax/HyperCLOVAX-SEED-Think-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

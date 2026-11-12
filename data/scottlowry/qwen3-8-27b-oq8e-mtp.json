@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
-  "storage_bytes": 120019377056,
-  "storage_human": "120.0 GB",
+  "storage_bytes": 30014451254,
+  "storage_human": "30.0 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "mlx",

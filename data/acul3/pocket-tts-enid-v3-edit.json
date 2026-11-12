@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "acul3/pocket-tts-enid-v3-edit",
+  "slug": "acul3-pocket-tts-enid-v3-edit",
+  "author": "acul3",
+  "url": "https://huggingface.co/acul3/pocket-tts-enid-v3-edit",
+  "created_at": "2026-10-11T10:46:47.000Z",
+  "updated_at": "2026-11-12T06:23:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "pocket-tts",
+  "languages": [
+    "id",
+    "en"
+  ],
+  "tags": [
+    "pocket-tts",
+    "safetensors",
+    "text-to-speech",
+    "voice-cloning",
+    "speech-editing",
+    "indonesian",
+    "id",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6763972665,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

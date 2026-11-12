@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "a-kemeklis/open-sci-ref-v0.01-1.7b-nemotron-hq-300B-4096-cpt-random-3B",
+  "slug": "a-kemeklis-open-sci-ref-v0-01-1-7b-nemotron-hq-300b-4096-cpt-random-3b",
+  "author": "a-kemeklis",
+  "url": "https://huggingface.co/a-kemeklis/open-sci-ref-v0.01-1.7b-nemotron-hq-300B-4096-cpt-random-3B",
+  "created_at": "2026-11-12T07:30:12.000Z",
+  "updated_at": "2026-11-12T07:30:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "opensci",
+    "text-generation",
+    "custom_code",
+    "en",
+    "dataset:a-kemeklis/nemotron-cc-hq-random-3B-tokenized-neox",
+    "arxiv:2509.09009",
+    "base_model:open-sci/open-sci-ref-v0.01-1.7b-nemotron-hq-300B-4096",
+    "base_model:finetune:open-sci/open-sci-ref-v0.01-1.7b-nemotron-hq-300B-4096",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1817400320,
+  "parameters_human": "1.82B",
+  "storage_bytes": 3634849736,
+  "storage_human": "3.6 GB",
+  "base_model": "open-sci/open-sci-ref-v0.01-1.7b-nemotron-hq-300B-4096",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

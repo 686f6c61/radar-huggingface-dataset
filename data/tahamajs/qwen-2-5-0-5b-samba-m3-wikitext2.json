@@ -5,7 +5,7 @@
   "author": "tahamajs",
   "url": "https://huggingface.co/tahamajs/qwen-2.5-0.5b-samba-m3-wikitext2",
   "created_at": "2026-11-11T00:02:32.000Z",
-  "updated_at": "2026-11-11T00:03:44.000Z",
+  "updated_at": "2026-11-11T08:42:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 309,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

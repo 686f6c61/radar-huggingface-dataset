@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mounimzad/Llama-3-BrainHR-FT1200",
+  "slug": "mounimzad-llama-3-brainhr-ft1200",
+  "author": "mounimzad",
+  "url": "https://huggingface.co/mounimzad/Llama-3-BrainHR-FT1200",
+  "created_at": "2026-11-06T11:38:01.000Z",
+  "updated_at": "2026-11-12T11:07:41.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "lora",
+    "brainhr",
+    "historical-research",
+    "base_model:mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+    "base_model:adapter:mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 335569193,
+  "storage_human": "336 MB",
+  "base_model": "mlx-community/Meta-Llama-3-8B-Instruct-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

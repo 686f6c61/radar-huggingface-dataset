@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "nileshbabu/my-custom-qwen",
+  "slug": "nileshbabu-my-custom-qwen",
+  "author": "nileshbabu",
+  "url": "https://huggingface.co/nileshbabu/my-custom-qwen",
+  "created_at": "2026-11-12T07:48:59.000Z",
+  "updated_at": "2026-11-12T08:00:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "en",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4295768079,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Mmossad2124/mossad-pentast-v2-dpo",
+  "slug": "mmossad2124-mossad-pentast-v2-dpo",
+  "author": "Mmossad2124",
+  "url": "https://huggingface.co/Mmossad2124/mossad-pentast-v2-dpo",
+  "created_at": "2026-11-12T05:37:42.000Z",
+  "updated_at": "2026-11-12T05:37:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136415219,
+  "storage_human": "136 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

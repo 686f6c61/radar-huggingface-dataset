@@ -5,7 +5,7 @@
   "author": "win10kimo",
   "url": "https://huggingface.co/win10kimo/Gemma-4-12B-Gemini-3.5-FlashLite-Distill",
   "created_at": "2026-11-08T16:18:51.000Z",
-  "updated_at": "2026-11-08T16:56:13.000Z",
+  "updated_at": "2026-11-11T21:37:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -40,8 +40,8 @@
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
-  "storage_bytes": 13084721856,
-  "storage_human": "13.1 GB",
+  "storage_bytes": 21631987168,
+  "storage_human": "21.6 GB",
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "shaban2024",
   "url": "https://huggingface.co/shaban2024/Qwen3.5-9B-BOS-Q8-NonThinking",
   "created_at": "2026-09-29T11:29:54.000Z",
-  "updated_at": "2026-11-10T10:32:19.000Z",
+  "updated_at": "2026-11-12T07:09:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 5036,
+  "downloads_30d": 5138,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",

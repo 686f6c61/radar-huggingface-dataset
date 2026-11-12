@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "islee94/n16-franka-pnp-chicken-pan-to-plate-obstacle-dsu-30k-s42",
+  "slug": "islee94-n16-franka-pnp-chicken-pan-to-plate-obstacle-dsu-30k-s42",
+  "author": "islee94",
+  "url": "https://huggingface.co/islee94/n16-franka-pnp-chicken-pan-to-plate-obstacle-dsu-30k-s42",
+  "created_at": "2026-11-12T10:10:51.000Z",
+  "updated_at": "2026-11-12T11:09:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d6",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3286608832,
+  "parameters_human": "3.29B",
+  "storage_bytes": 6573374552,
+  "storage_human": "6.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

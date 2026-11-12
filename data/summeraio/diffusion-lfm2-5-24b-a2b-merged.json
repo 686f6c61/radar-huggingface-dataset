@@ -5,7 +5,7 @@
   "author": "summerAIO",
   "url": "https://huggingface.co/summerAIO/diffusion-lfm2.5-24b-a2b-merged",
   "created_at": "2026-11-09T04:54:56.000Z",
-  "updated_at": "2026-11-11T06:04:06.000Z",
+  "updated_at": "2026-11-11T22:42:22.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 1153,
+  "downloads_30d": 1630,
   "trending_score": 0,
   "parameters": 23971585280,
   "parameters_human": "23.97B",
