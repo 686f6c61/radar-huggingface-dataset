@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "litert-community/swin_tiny_patch4_window7_224.ms_in1k",
+  "slug": "litert-community-swin_tiny_patch4_window7_224-ms_in1k",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/swin_tiny_patch4_window7_224.ms_in1k",
+  "created_at": "2026-06-30T04:39:53.000Z",
+  "updated_at": "2026-11-13T06:53:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "vision",
+    "image-classification",
+    "google",
+    "computer-vision",
+    "dataset:imagenet-1k",
+    "arxiv:2103.14030",
+    "base_model:timm/swin_tiny_patch4_window7_224.ms_in1k",
+    "base_model:finetune:timm/swin_tiny_patch4_window7_224.ms_in1k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 70,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 207684112,
+  "storage_human": "208 MB",
+  "base_model": "timm/swin_tiny_patch4_window7_224.ms_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
+      "url": "https://huggingface.co/litert-community",
+      "snippet": "litert-community/Qwen3-4B • • • LiteRT models in the Gemma Family LiteRT models in the Qwen Family Text Generation • Updated …"
+    }
+  ]
+}

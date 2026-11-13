@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MathSmith-HC-Qwen3-8B-Qwen2_5-32B-ShortCoT-GGUF",
+  "slug": "mradermacher-mathsmith-hc-qwen3-8b-qwen2_5-32b-shortcot-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MathSmith-HC-Qwen3-8B-Qwen2_5-32B-ShortCoT-GGUF",
+  "created_at": "2025-08-21T16:21:39.000Z",
+  "updated_at": "2026-11-13T10:57:17.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "en",
+    "base_model:Jasaxion/MathSmith-HC-Qwen3-8B-Qwen2_5-32B-ShortCoT",
+    "base_model:quantized:Jasaxion/MathSmith-HC-Qwen3-8B-Qwen2_5-32B-ShortCoT",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 210,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 73425335296,
+  "storage_human": "73.4 GB",
+  "base_model": "Jasaxion/MathSmith-HC-Qwen3-8B-Qwen2_5-32B-ShortCoT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

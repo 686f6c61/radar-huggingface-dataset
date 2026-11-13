@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "SXY7/H8-Food-Progress",
+  "slug": "sxy7-h8-food-progress",
+  "author": "SXY7",
+  "url": "https://huggingface.co/SXY7/H8-Food-Progress",
+  "created_at": "2026-11-13T04:21:01.000Z",
+  "updated_at": "2026-11-13T04:25:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "robotics",
+    "vision-language-action",
+    "progress-estimation",
+    "food",
+    "en",
+    "zh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4767121589,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

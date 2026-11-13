@@ -5,7 +5,7 @@
   "author": "wiiiktor",
   "url": "https://huggingface.co/wiiiktor/chopper_mmbert",
   "created_at": "2026-11-02T08:21:18.000Z",
-  "updated_at": "2026-11-12T04:00:16.000Z",
+  "updated_at": "2026-11-13T08:15:08.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,9 +13,9 @@
   "languages": [],
   "tags": [
     "safetensors",
+    "chopper",
     "rag",
     "context-compression",
-    "chopper",
     "multi-hop",
     "dataset:wiiiktor/chopper_demo",
     "base_model:jhu-clsp/mmBERT-base",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 929270668,
-  "storage_human": "929 MB",
+  "storage_bytes": 1824178148,
+  "storage_human": "1.8 GB",
   "base_model": "jhu-clsp/mmBERT-base, jhu-clsp/mmBERT-small",
   "formats": [
     "safetensors"

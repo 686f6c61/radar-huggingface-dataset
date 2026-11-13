@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Tibber-se/nb-whisper-large-mlx-4bit",
+  "slug": "tibber-se-nb-whisper-large-mlx-4bit",
+  "author": "Tibber-se",
+  "url": "https://huggingface.co/Tibber-se/nb-whisper-large-mlx-4bit",
+  "created_at": "2026-11-13T10:03:40.000Z",
+  "updated_at": "2026-11-13T10:03:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "no"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "apple-silicon",
+    "norwegian",
+    "automatic-speech-recognition",
+    "no",
+    "base_model:NbAiLab/nb-whisper-large",
+    "base_model:finetune:NbAiLab/nb-whisper-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 877695978,
+  "storage_human": "878 MB",
+  "base_model": "NbAiLab/nb-whisper-large",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

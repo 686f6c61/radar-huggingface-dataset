@@ -5,7 +5,7 @@
   "author": "ggml-org",
   "url": "https://huggingface.co/ggml-org/Laya-GGUF",
   "created_at": "2026-10-01T21:32:54.000Z",
-  "updated_at": "2026-10-19T14:14:53.000Z",
+  "updated_at": "2026-11-12T09:58:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -23,13 +23,13 @@
     "region:us",
     "feature-extraction"
   ],
-  "likes": 40,
-  "downloads_30d": 16204,
+  "likes": 41,
+  "downloads_30d": 16039,
   "trending_score": 11,
   "parameters": 421029889,
   "parameters_human": "421.0M",
-  "storage_bytes": 1293424320,
-  "storage_human": "1.3 GB",
+  "storage_bytes": 2586848928,
+  "storage_human": "2.6 GB",
   "base_model": "convaiinnovations/laya",
   "formats": [
     "gguf"

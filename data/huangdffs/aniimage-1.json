@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "huangdffs/Aniimage-1",
+  "slug": "huangdffs-aniimage-1",
+  "author": "huangdffs",
+  "url": "https://huggingface.co/huangdffs/Aniimage-1",
+  "created_at": "2026-11-13T12:07:59.000Z",
+  "updated_at": "2026-11-13T12:07:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "anime",
+    "diffusion",
+    "text-to-image",
+    "image-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 433370628,
+  "parameters_human": "433.4M",
+  "storage_bytes": 1734217579,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

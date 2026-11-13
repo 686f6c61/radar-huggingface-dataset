@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "green-coding/Green-Coding-Gemma4-12B-Q6_K",
+  "slug": "green-coding-green-coding-gemma4-12b-q6_k",
+  "author": "green-coding",
+  "url": "https://huggingface.co/green-coding/Green-Coding-Gemma4-12B-Q6_K",
+  "created_at": "2026-11-11T08:00:23.000Z",
+  "updated_at": "2026-11-13T08:37:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 9786021920,
+  "storage_human": "9.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Green - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Green",
+      "snippet": "Green is the color between cyan and yellow on the visible spectrum. It has 295–350 different shades. It is evoked by light which has …"
+    },
+    {
+      "title": "Des solutions numériques pour les particuliers et les entreprises",
+      "url": "https://www.green.ch/fr",
+      "snippet": "Green propose des solutions numériques pour les particuliers et les entreprises dans les domaines les plus divers: centres de …"
+    },
+    {
+      "title": "Définitions : green - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/green/38075",
+      "snippet": "green - Définitions Français : Retrouvez la définition de green... - synonymes, homonymes, difficultés, citations."
+    },
+    {
+      "title": "Shades of green - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Shades_of_green",
+      "snippet": "Varieties of the color green may differ in hue, chroma (also called saturation or intensity) or lightness (or value, tone, or brightness), …"
+    }
+  ]
+}

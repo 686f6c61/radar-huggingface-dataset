@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "hogoraki/Spark-X2.6-4B-Uzbek-Uncensored-GGUF",
+  "slug": "hogoraki-spark-x2-6-4b-uzbek-uncensored-gguf",
+  "author": "hogoraki",
+  "url": "https://huggingface.co/hogoraki/Spark-X2.6-4B-Uzbek-Uncensored-GGUF",
+  "created_at": "2026-11-13T11:57:52.000Z",
+  "updated_at": "2026-11-13T11:58:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "uz",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "q4_k_m",
+    "spark2_5",
+    "uzbek",
+    "uncensored",
+    "text-generation",
+    "uz",
+    "en",
+    "base_model:hogoraki/Spark-X2.6-4B-Uzbek-Uncensored",
+    "base_model:quantized:hogoraki/Spark-X2.6-4B-Uzbek-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 2600226080,
+  "storage_human": "2.6 GB",
+  "base_model": "hogoraki/Spark-X2.6-4B-Uzbek-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

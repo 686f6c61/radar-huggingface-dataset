@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "dhairyapandya/morph-s",
+  "slug": "dhairyapandya-morph-s",
+  "author": "dhairyapandya",
+  "url": "https://huggingface.co/dhairyapandya/morph-s",
+  "created_at": "2026-11-13T11:32:45.000Z",
+  "updated_at": "2026-11-13T11:38:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mamba2",
+    "hybrid",
+    "mla",
+    "self-modeling",
+    "small-lm",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 169717296,
+  "parameters_human": "169.7M",
+  "storage_bytes": 678934848,
+  "storage_human": "679 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

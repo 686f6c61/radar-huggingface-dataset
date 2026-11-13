@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "OluwafisayoIbrahim/solar-power-prediction",
+  "slug": "oluwafisayoibrahim-solar-power-prediction",
+  "author": "OluwafisayoIbrahim",
+  "url": "https://huggingface.co/OluwafisayoIbrahim/solar-power-prediction",
+  "created_at": "2026-11-13T09:29:08.000Z",
+  "updated_at": "2026-11-13T09:42:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-regression",
+  "library": "keras",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "keras",
+    "joblib",
+    "solar-power",
+    "regression",
+    "tabular-regression",
+    "renewable-energy",
+    "scikit-learn",
+    "tensorflow",
+    "pytorch",
+    "research",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46665,
+  "storage_human": "46665 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Slide PowerPoint Đại hội Chi Đoàn, Đoàn Thanh Niên (tặng kèm …",
+      "url": "https://tinhte.vn/thread/slide-powerpoint-dai-hoi-chi-doan-doan-thanh-nien-tang-kem-phong-chu.4016928/",
+      "snippet": "May 8, 2025 · Thông tin của mẫu slide PowerPoint Đại hội Chi Đoàn, Đoàn Thanh Niên (24 slide) Tên slide: Mẫu slide PowerPoint …"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "srinath-exe/skycontrol-atc-command-2m",
+  "slug": "srinath-exe-skycontrol-atc-command-2m",
+  "author": "srinath-exe",
+  "url": "https://huggingface.co/srinath-exe/skycontrol-atc-command-2m",
+  "created_at": "2026-11-13T11:30:54.000Z",
+  "updated_at": "2026-11-13T11:31:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "air-traffic-control",
+    "atc",
+    "aviation",
+    "speech-commands",
+    "tiny-model",
+    "on-device",
+    "web",
+    "skycontrol",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2030208,
+  "parameters_human": "2.0M",
+  "storage_bytes": 10192556,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "3V4N3SC3NC3/saturnGPT_v2",
+  "slug": "3v4n3sc3nc3-saturngpt_v2",
+  "author": "3V4N3SC3NC3",
+  "url": "https://huggingface.co/3V4N3SC3NC3/saturnGPT_v2",
+  "created_at": "2026-11-13T11:44:05.000Z",
+  "updated_at": "2026-11-13T11:44:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

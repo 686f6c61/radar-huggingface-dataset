@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Forgotten-Abomination-24B-3.4-GGUF",
+  "slug": "mradermacher-forgotten-abomination-24b-3-4-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Forgotten-Abomination-24B-3.4-GGUF",
+  "created_at": "2025-03-16T07:46:49.000Z",
+  "updated_at": "2026-11-13T05:31:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:ReadyArt/Forgotten-Abomination-24B-3.4",
+    "base_model:quantized:ReadyArt/Forgotten-Abomination-24B-3.4",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 58,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 161407745440,
+  "storage_human": "161.4 GB",
+  "base_model": "ReadyArt/Forgotten-Abomination-24B-3.4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

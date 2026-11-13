@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "trl-internal-testing/tiny-Olmo3ForCausalLM",
+  "slug": "trl-internal-testing-tiny-olmo3forcausallm",
+  "author": "trl-internal-testing",
+  "url": "https://huggingface.co/trl-internal-testing/tiny-Olmo3ForCausalLM",
+  "created_at": "2026-06-06T21:42:56.000Z",
+  "updated_at": "2026-11-13T10:28:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "trl",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6357,
+  "trending_score": 0,
+  "parameters": 1607656,
+  "parameters_human": "1.6M",
+  "storage_bytes": 12864384,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

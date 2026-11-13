@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "nhatcm/hitbench-molmoact2-20k",
+  "slug": "nhatcm-hitbench-molmoact2-20k",
+  "author": "nhatcm",
+  "url": "https://huggingface.co/nhatcm/hitbench-molmoact2-20k",
+  "created_at": "2026-11-02T08:28:38.000Z",
+  "updated_at": "2026-11-13T06:18:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "molmoact2",
+    "so101",
+    "vision-language-action",
+    "end-effector-control",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": 5601988144,
+  "parameters_human": "5.60B",
+  "storage_bytes": 38038892912,
+  "storage_human": "38.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

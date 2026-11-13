@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "litert-community/shufflenet_v2_x1_0",
+  "slug": "litert-community-shufflenet_v2_x1_0",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/shufflenet_v2_x1_0",
+  "created_at": "2026-02-08T21:12:42.000Z",
+  "updated_at": "2026-11-13T06:52:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "vision",
+    "image-classification",
+    "google",
+    "computer-vision",
+    "dataset:imagenet-1k",
+    "arxiv:1807.11164",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 78,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18237268,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "ImageNet-1k",
+      "metric": "Top 1 Accuracy (Full Precision)",
+      "value": 0.6931
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "ImageNet-1k",
+      "metric": "Top 5 Accuracy (Full Precision)",
+      "value": 0.883
+    }
+  ],
+  "sources": [
+    {
+      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
+      "url": "https://huggingface.co/litert-community",
+      "snippet": "litert-community/Qwen3-4B • • • LiteRT models in the Gemma Family LiteRT models in the Qwen Family Text Generation • Updated …"
+    }
+  ]
+}

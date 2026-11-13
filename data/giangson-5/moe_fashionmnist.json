@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "GiangSon-5/MOE_FashionMNIST",
+  "slug": "giangson-5-moe_fashionmnist",
+  "author": "GiangSon-5",
+  "url": "https://huggingface.co/GiangSon-5/MOE_FashionMNIST",
+  "created_at": "2025-12-15T15:34:51.000Z",
+  "updated_at": "2026-11-13T05:06:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "generic",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "generic",
+    "pytorch",
+    "mixture-of-experts",
+    "moe",
+    "sparse-moe",
+    "image-classification",
+    "fashion-mnist",
+    "computer-vision",
+    "arxiv:1701.06538",
+    "arxiv:2101.03961",
+    "arxiv:1708.07747",
+    "en",
+    "dataset:fashion_mnist",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3323131,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "Fashion-MNIST",
+      "metric": "Held-Out Test Accuracy",
+      "value": 88.93
+    }
+  ],
+  "sources": []
+}

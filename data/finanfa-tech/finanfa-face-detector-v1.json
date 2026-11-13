@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "finanfa-tech/finanfa-face-detector-v1",
+  "slug": "finanfa-tech-finanfa-face-detector-v1",
+  "author": "finanfa-tech",
+  "url": "https://huggingface.co/finanfa-tech/finanfa-face-detector-v1",
+  "created_at": "2026-11-13T12:19:11.000Z",
+  "updated_at": "2026-11-13T12:19:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "face-detection",
+    "computer-vision",
+    "biometrics",
+    "edge-ai",
+    "object-detection",
+    "fr",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16923827,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

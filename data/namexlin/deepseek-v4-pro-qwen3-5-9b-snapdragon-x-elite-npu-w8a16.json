@@ -5,7 +5,7 @@
   "author": "nameXLin",
   "url": "https://huggingface.co/nameXLin/DeepSeek-V4-Pro-Qwen3.5-9B-Snapdragon-X-Elite-NPU-W8A16",
   "created_at": "2026-11-12T11:02:23.000Z",
-  "updated_at": "2026-11-12T11:14:45.000Z",
+  "updated_at": "2026-11-12T12:39:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 9422315154,
-  "storage_human": "9.4 GB",
+  "storage_bytes": 16846413031,
+  "storage_human": "16.8 GB",
   "base_model": null,
   "formats": [
     "onnx"

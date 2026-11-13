@@ -5,7 +5,7 @@
   "author": "cvprsubmission",
   "url": "https://huggingface.co/cvprsubmission/metricstereo",
   "created_at": "2026-11-04T17:47:47.000Z",
-  "updated_at": "2026-11-05T19:06:47.000Z",
+  "updated_at": "2026-11-12T18:10:59.000Z",
   "license": "openrail++",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",

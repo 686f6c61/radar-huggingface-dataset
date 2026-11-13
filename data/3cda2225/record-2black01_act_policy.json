@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "3cda2225/record-2black01_act_policy",
+  "slug": "3cda2225-record-2black01_act_policy",
+  "author": "3cda2225",
+  "url": "https://huggingface.co/3cda2225/record-2black01_act_policy",
+  "created_at": "2026-11-13T11:58:48.000Z",
+  "updated_at": "2026-11-13T11:59:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:3cda2225/record-2black01_20261113_200355",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714784,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model State Artificial Intelligence Act - American Legislative ...",
+      "url": "https://alec.org/model-policy/model-state-artificial-intelligence-act/",
+      "snippet": "Section 1. {Statement of Purpose} (1) The [LEGISLATIVE BODY] finds the following: (a) WHEREAS, artificial intelligence (AI) represents the next great tool for human flourishing, artistic creativity, increased productivity, and economic growth; (b) WHEREAS, AI also represents a major area of ..."
+    },
+    {
+      "title": "Model Policy: Artificial Intelligence In Education - Professional ...",
+      "url": "https://www.cde.ca.gov/ci/pl/aipolicy.asp",
+      "snippet": "Staff, parents, guardians, and students should be informed of all AI-driven data collection practices and autonomous AI-powered student interaction tools. Access to AI-generated student records must be provided upon request, and annual informed consent from guardians is required prior to use ..."
+    }
+  ]
+}

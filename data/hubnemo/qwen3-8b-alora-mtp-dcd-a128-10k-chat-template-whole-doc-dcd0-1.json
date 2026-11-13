@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "hubnemo/Qwen3-8B-ALoRA-MTP-dcd-a128-10k-chat-template-whole-doc-dcd0.1",
+  "slug": "hubnemo-qwen3-8b-alora-mtp-dcd-a128-10k-chat-template-whole-doc-dcd0-1",
+  "author": "hubnemo",
+  "url": "https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-dcd-a128-10k-chat-template-whole-doc-dcd0.1",
+  "created_at": "2026-11-13T09:32:24.000Z",
+  "updated_at": "2026-11-13T09:55:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6555309628,
+  "storage_human": "6.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

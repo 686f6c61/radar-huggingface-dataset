@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Dumi2025/hdfs-line-anomaly-Mistral-7B-v0.3-qlora",
+  "slug": "dumi2025-hdfs-line-anomaly-mistral-7b-v0-3-qlora",
+  "author": "Dumi2025",
+  "url": "https://huggingface.co/Dumi2025/hdfs-line-anomaly-Mistral-7B-v0.3-qlora",
+  "created_at": "2026-11-13T11:30:59.000Z",
+  "updated_at": "2026-11-13T11:31:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "log-anomaly-detection",
+    "hdfs",
+    "mistral",
+    "text-classification",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 671182040,
+  "storage_human": "671 MB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chess.com - Play Chess Online - Free Games",
+      "url": "https://www.chess.com/",
+      "snippet": "Play chess online for free on Chess.com with over 250 million members from around the world. Have fun playing with friends or …"
+    },
+    {
+      "title": "Chess.com - Play Chess Online",
+      "url": "https://link.chess.com/download/app",
+      "snippet": "Join millions of players on the world’s most popular chess site. Play online, learn chess, and improve your skills."
+    }
+  ]
+}

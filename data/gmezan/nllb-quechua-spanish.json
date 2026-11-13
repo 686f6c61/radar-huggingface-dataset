@@ -5,7 +5,7 @@
   "author": "gmezan",
   "url": "https://huggingface.co/gmezan/nllb-quechua-spanish",
   "created_at": "2026-11-12T10:21:33.000Z",
-  "updated_at": "2026-11-12T10:21:59.000Z",
+  "updated_at": "2026-11-13T05:00:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 615073792,
   "parameters_human": "615.1M",
-  "storage_bytes": 2492595146,
-  "storage_human": "2.5 GB",
+  "storage_bytes": 7413304970,
+  "storage_human": "7.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

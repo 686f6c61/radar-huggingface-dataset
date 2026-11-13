@@ -26,10 +26,11 @@
     "arxiv:2006.03677",
     "license:apache-2.0",
     "endpoints_compatible",
+    "deploy:azure",
     "region:us"
   ],
-  "likes": 1050,
-  "downloads_30d": 14905639,
+  "likes": 1052,
+  "downloads_30d": 15279929,
   "trending_score": 12,
   "parameters": 86567656,
   "parameters_human": "86.6M",

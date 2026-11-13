@@ -5,7 +5,7 @@
   "author": "fedeceri",
   "url": "https://huggingface.co/fedeceri/cochlea-calcium-waves-binary-segmentation-unet3d",
   "created_at": "2026-11-08T14:57:24.000Z",
-  "updated_at": "2026-11-08T14:58:31.000Z",
+  "updated_at": "2026-11-12T12:07:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",

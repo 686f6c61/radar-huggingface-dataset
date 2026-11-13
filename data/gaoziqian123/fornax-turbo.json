@@ -5,7 +5,7 @@
   "author": "gaoziqian123",
   "url": "https://huggingface.co/gaoziqian123/fornax-turbo",
   "created_at": "2026-10-30T17:59:34.000Z",
-  "updated_at": "2026-11-12T17:14:54.000Z",
+  "updated_at": "2026-11-12T19:48:41.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,7 +20,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 15255950497,
+  "storage_bytes": 15260981346,
   "storage_human": "15.3 GB",
   "base_model": null,
   "formats": [

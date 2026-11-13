@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/vip-llava-7b-hf-mic",
   "created_at": "2026-11-08T09:11:55.000Z",
-  "updated_at": "2026-11-11T17:29:03.000Z",
+  "updated_at": "2026-11-12T10:30:07.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 339,
+  "downloads_30d": 478,
   "trending_score": 0,
   "parameters": 4336704,
   "parameters_human": "4.3M",

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "reverie-studio/VoxCPM2",
+  "slug": "reverie-studio-voxcpm2",
+  "author": "reverie-studio",
+  "url": "https://huggingface.co/reverie-studio/VoxCPM2",
+  "created_at": "2026-11-12T18:18:44.000Z",
+  "updated_at": "2026-11-12T18:19:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "reverie",
+    "mirror",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:finetune:openbmb/VoxCPM2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 4957031714,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

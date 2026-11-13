@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Omega-Darkest_The-Broken-Tutu-GLM-32B-GGUF",
+  "slug": "mradermacher-omega-darkest_the-broken-tutu-glm-32b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Omega-Darkest_The-Broken-Tutu-GLM-32B-GGUF",
+  "created_at": "2025-05-25T16:36:14.000Z",
+  "updated_at": "2026-11-13T05:30:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nsfw",
+    "explicit",
+    "roleplay",
+    "unaligned",
+    "ERP",
+    "Erotic",
+    "Horror",
+    "Violence",
+    "en",
+    "base_model:ReadyArt/Omega-Darkest_The-Broken-Tutu-GLM-32B",
+    "base_model:quantized:ReadyArt/Omega-Darkest_The-Broken-Tutu-GLM-32B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 2,
+  "downloads_30d": 271,
+  "trending_score": 0,
+  "parameters": 32566081536,
+  "parameters_human": "32.57B",
+  "storage_bytes": 222871095488,
+  "storage_human": "222.9 GB",
+  "base_model": "ReadyArt/Omega-Darkest_The-Broken-Tutu-GLM-32B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

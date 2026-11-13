@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "360ZhiNao/fg-clip2-base",
+  "slug": "360zhinao-fg-clip2-base",
+  "author": "360ZhiNao",
+  "url": "https://huggingface.co/360ZhiNao/fg-clip2-base",
+  "created_at": "2026-11-13T07:21:07.000Z",
+  "updated_at": "2026-11-13T07:21:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "fgclip2",
+    "text-generation",
+    "clip",
+    "zero-shot-image-classification",
+    "custom_code",
+    "en",
+    "zh",
+    "arxiv:2510.10921",
+    "arxiv:2505.05071",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 383803394,
+  "parameters_human": "383.8M",
+  "storage_bytes": 1576305791,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

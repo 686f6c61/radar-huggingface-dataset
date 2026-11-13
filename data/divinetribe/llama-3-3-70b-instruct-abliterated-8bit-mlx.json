@@ -5,7 +5,7 @@
   "author": "divinetribe",
   "url": "https://huggingface.co/divinetribe/Llama-3.3-70B-Instruct-abliterated-8bit-mlx",
   "created_at": "2026-04-06T07:27:20.000Z",
-  "updated_at": "2026-11-11T11:13:37.000Z",
+  "updated_at": "2026-11-12T11:16:04.000Z",
   "license": "llama3.3",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

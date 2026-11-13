@@ -5,13 +5,15 @@
   "author": "mnrsu",
   "url": "https://huggingface.co/mnrsu/instride",
   "created_at": "2026-11-12T09:30:55.000Z",
-  "updated_at": "2026-11-12T09:30:55.000Z",
+  "updated_at": "2026-11-12T09:53:34.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
+    "bert",
     "license:mit",
     "region:us"
   ],
@@ -20,10 +22,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 497798148,
+  "storage_human": "498 MB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

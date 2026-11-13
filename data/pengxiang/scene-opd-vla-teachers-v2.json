@@ -5,7 +5,7 @@
   "author": "pengxiang",
   "url": "https://huggingface.co/pengxiang/scene-opd-vla-teachers-v2",
   "created_at": "2026-11-05T05:40:55.000Z",
-  "updated_at": "2026-11-05T07:11:33.000Z",
+  "updated_at": "2026-11-12T10:19:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 20536744301,
-  "storage_human": "20.5 GB",
+  "storage_bytes": 23976510994,
+  "storage_human": "24.0 GB",
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"

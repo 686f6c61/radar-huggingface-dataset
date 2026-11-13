@@ -5,7 +5,7 @@
   "author": "groxaxo",
   "url": "https://huggingface.co/groxaxo/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-EXL3-6bpw",
   "created_at": "2026-11-11T12:49:44.000Z",
-  "updated_at": "2026-11-11T12:53:02.000Z",
+  "updated_at": "2026-11-12T08:32:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": 4344958336,
   "parameters_human": "4.34B",

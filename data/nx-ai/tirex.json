@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "NX-AI/TiRex",
+  "slug": "nx-ai-tirex",
+  "author": "NX-AI",
+  "url": "https://huggingface.co/NX-AI/TiRex",
+  "created_at": "2025-05-26T07:15:46.000Z",
+  "updated_at": "2026-11-13T10:17:28.000Z",
+  "license": "nx-ai-community-license",
+  "license_family": "non-commercial",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "tirex",
+  "languages": [],
+  "tags": [
+    "tirex",
+    "onnx",
+    "time-series-forecasting",
+    "dataset:autogluon/chronos_datasets",
+    "dataset:Salesforce/GiftEvalPretrain",
+    "arxiv:2505.23719",
+    "arxiv:2607.01204",
+    "arxiv:2510.26777",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 102,
+  "downloads_30d": 133486,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 283473547,
+  "storage_human": "283 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

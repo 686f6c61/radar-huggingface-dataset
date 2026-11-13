@@ -5,7 +5,7 @@
   "author": "mobilab-udesc",
   "url": "https://huggingface.co/mobilab-udesc/act-g1-box-into-box-sim-v2",
   "created_at": "2026-11-12T13:56:33.000Z",
-  "updated_at": "2026-11-12T14:05:32.000Z",
+  "updated_at": "2026-11-12T19:21:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 51687055,
   "parameters_human": "51.7M",
-  "storage_bytes": 206782996,
-  "storage_human": "207 MB",
+  "storage_bytes": 3718535872,
+  "storage_human": "3.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

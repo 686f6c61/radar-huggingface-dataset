@@ -5,7 +5,7 @@
   "author": "ggml-org",
   "url": "https://huggingface.co/ggml-org/Clef-GGUF",
   "created_at": "2026-10-02T17:34:38.000Z",
-  "updated_at": "2026-11-01T03:49:34.000Z",
+  "updated_at": "2026-11-12T09:56:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 30,
-  "downloads_30d": 22095,
+  "downloads_30d": 21124,
   "trending_score": 13,
   "parameters": 27024054788,
   "parameters_human": "27.02B",

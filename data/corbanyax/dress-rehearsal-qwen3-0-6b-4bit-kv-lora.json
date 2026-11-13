@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "corbanyax/Dress-Rehearsal-Qwen3-0.6B-4bit-KV-LoRA",
+  "slug": "corbanyax-dress-rehearsal-qwen3-0-6b-4bit-kv-lora",
+  "author": "corbanyax",
+  "url": "https://huggingface.co/corbanyax/Dress-Rehearsal-Qwen3-0.6B-4bit-KV-LoRA",
+  "created_at": "2026-11-13T07:49:40.000Z",
+  "updated_at": "2026-11-13T07:51:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "lora",
+    "grpo",
+    "reinforcement-learning",
+    "kv-cache",
+    "kv-cache-quantization",
+    "4-bit",
+    "quantization-aware-training",
+    "qwen3",
+    "countdown",
+    "arithmetic-reasoning",
+    "apple-silicon",
+    "dress-rehearsal",
+    "text-generation",
+    "en",
+    "dataset:corbanyax/Countdown-3-Hash-Splits",
+    "arxiv:2402.03300",
+    "arxiv:2505.09388",
+    "arxiv:2106.09685",
+    "arxiv:2305.17888",
+    "arxiv:2604.07853",
+    "arxiv:1308.3432",
+    "arxiv:2402.02750",
+    "arxiv:2401.18079",
+    "arxiv:2502.04420",
+    "base_model:mlx-community/Qwen3-0.6B-4bit",
+    "base_model:adapter:mlx-community/Qwen3-0.6B-4bit",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 242909409,
+  "storage_human": "243 MB",
+  "base_model": "mlx-community/Qwen3-0.6B-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Countdown arithmetic reasoning",
+      "dataset": "Countdown-3 (dev200)",
+      "metric": "greedy accuracy, 4-bit KV (dev-200)",
+      "value": 0.675
+    },
+    {
+      "task": "Countdown arithmetic reasoning",
+      "dataset": "Countdown-3 (test_id)",
+      "metric": "greedy accuracy, 4-bit KV (test_id, 1,000)",
+      "value": 0.617
+    }
+  ],
+  "sources": []
+}

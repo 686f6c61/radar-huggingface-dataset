@@ -5,7 +5,7 @@
   "author": "yasutoshi-lab",
   "url": "https://huggingface.co/yasutoshi-lab/MiniMax-H3-Image-GGUF",
   "created_at": "2026-11-12T22:16:21.000Z",
-  "updated_at": "2026-11-13T00:03:32.000Z",
+  "updated_at": "2026-11-13T00:21:10.000Z",
   "license": "minimax-h3-image-community-license-agreement",
   "license_family": "non-commercial",
   "pipeline_tag": "text-to-image",

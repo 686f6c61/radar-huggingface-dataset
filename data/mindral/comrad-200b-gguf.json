@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Mindral/ComRAD-200B-GGUF",
+  "slug": "mindral-comrad-200b-gguf",
+  "author": "Mindral",
+  "url": "https://huggingface.co/Mindral/ComRAD-200B-GGUF",
+  "created_at": "2026-11-13T10:04:44.000Z",
+  "updated_at": "2026-11-13T10:21:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "gguf",
+    "moe",
+    "conversational",
+    "experimental",
+    "text-generation",
+    "en",
+    "it",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 194927503582,
+  "parameters_human": "194.93B",
+  "storage_bytes": 114333049568,
+  "storage_human": "114.3 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

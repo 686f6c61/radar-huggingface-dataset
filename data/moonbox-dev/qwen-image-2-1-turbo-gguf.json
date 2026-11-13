@@ -5,7 +5,7 @@
   "author": "moonbox-dev",
   "url": "https://huggingface.co/moonbox-dev/Qwen-Image-2.1-Turbo-GGUF",
   "created_at": "2026-11-12T04:35:00.000Z",
-  "updated_at": "2026-11-12T05:11:10.000Z",
+  "updated_at": "2026-11-13T02:44:30.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 7115124736,
   "parameters_human": "7.12B",
-  "storage_bytes": 51721167808,
-  "storage_human": "51.7 GB",
+  "storage_bytes": 51761153114,
+  "storage_human": "51.8 GB",
   "base_model": "Qwen/Qwen-Image-2.1-Turbo",
   "formats": [
     "gguf"

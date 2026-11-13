@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "pecan-anon/pecan-baselines",
+  "slug": "pecan-anon-pecan-baselines",
+  "author": "pecan-anon",
+  "url": "https://huggingface.co/pecan-anon/pecan-baselines",
+  "created_at": "2026-11-13T06:51:13.000Z",
+  "updated_at": "2026-11-13T06:51:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "tf-keras",
+  "languages": [],
+  "tags": [
+    "tf-keras",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8205271,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

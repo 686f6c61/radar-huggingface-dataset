@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "TrueSavage/EdenGNN",
+  "slug": "truesavage-edengnn",
+  "author": "TrueSavage",
+  "url": "https://huggingface.co/TrueSavage/EdenGNN",
+  "created_at": "2026-05-25T09:57:14.000Z",
+  "updated_at": "2026-11-13T06:48:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "graph-ml",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "graph-ml",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 318446295,
+  "storage_human": "318 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

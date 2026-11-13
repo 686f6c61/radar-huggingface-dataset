@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Voicelab/WERdict-pl",
+  "slug": "voicelab-werdict-pl",
+  "author": "Voicelab",
+  "url": "https://huggingface.co/Voicelab/WERdict-pl",
+  "created_at": "2026-11-10T10:06:47.000Z",
+  "updated_at": "2026-11-10T11:07:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "werdict",
+    "token-classification",
+    "asr",
+    "quality-estimation",
+    "wer",
+    "polish",
+    "custom_code",
+    "pl",
+    "base_model:OPI-PIB/pl-ModernBERT-base",
+    "base_model:finetune:OPI-PIB/pl-ModernBERT-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 148888709,
+  "parameters_human": "148.9M",
+  "storage_bytes": 595569444,
+  "storage_human": "596 MB",
+  "base_model": "OPI-PIB/pl-ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voicelab: Voice Maker & Custom Voice Generator | Voicemod",
+      "url": "https://www.voicemod.net/en/voicelab/",
+      "snippet": "Voicelab is the AI voice generator for building your own voice changers with powerful, easy-to-use effects. From iconic AI characters …"
+    },
+    {
+      "title": "Articles - Speech Technology Magazine",
+      "url": "https://www.speechtechmag.com/Search/Default.aspx?Query=text-to-speech&rowcount=0",
+      "snippet": "FlashLabs Chroma 1.0 is an open-source, end-to-end real-time voice AI model. ... The ReadSpeaker VoiceLab is designed to help companies better engage their ..."
+    }
+  ]
+}

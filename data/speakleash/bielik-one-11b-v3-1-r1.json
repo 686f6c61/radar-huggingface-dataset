@@ -5,7 +5,7 @@
   "author": "speakleash",
   "url": "https://huggingface.co/speakleash/Bielik-One-11B-v3.1-r1",
   "created_at": "2026-11-10T18:54:56.000Z",
-  "updated_at": "2026-11-12T15:27:59.000Z",
+  "updated_at": "2026-11-12T16:39:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -145,7 +145,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 2,
   "downloads_30d": 5,
   "trending_score": 0,
   "parameters": 11173081088,

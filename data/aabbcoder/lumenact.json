@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "AaBbcoder/LumenAct",
+  "slug": "aabbcoder-lumenact",
+  "author": "AaBbcoder",
+  "url": "https://huggingface.co/AaBbcoder/LumenAct",
+  "created_at": "2026-11-13T10:59:51.000Z",
+  "updated_at": "2026-11-13T12:39:50.000Z",
+  "license": "lumenact-mixed-resource-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "onnx",
+    "lumenact",
+    "facial-expression",
+    "local-inference",
+    "zh",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 183186057,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

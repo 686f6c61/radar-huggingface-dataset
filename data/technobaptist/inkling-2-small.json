@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "TechnoBaptist/Inkling-2-Small",
+  "slug": "technobaptist-inkling-2-small",
+  "author": "TechnoBaptist",
+  "url": "https://huggingface.co/TechnoBaptist/Inkling-2-Small",
+  "created_at": "2026-11-13T10:53:12.000Z",
+  "updated_at": "2026-11-13T10:53:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling2",
+    "image-text-to-text",
+    "conversational",
+    "moe",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 383072987216,
+  "parameters_human": "383.07B",
+  "storage_bytes": 393509649692,
+  "storage_human": "393.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

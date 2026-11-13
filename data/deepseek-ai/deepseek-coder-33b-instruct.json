@@ -21,10 +21,11 @@
     "license:other",
     "text-generation-inference",
     "endpoints_compatible",
+    "deploy:azure",
     "region:us"
   ],
   "likes": 606,
-  "downloads_30d": 11028,
+  "downloads_30d": 11294,
   "trending_score": 18,
   "parameters": 33342991360,
   "parameters_human": "33.34B",

@@ -5,7 +5,7 @@
   "author": "fernandotonon",
   "url": "https://huggingface.co/fernandotonon/QtMeshEditor-trellis-ss-encoder-onnx",
   "created_at": "2026-11-13T01:19:18.000Z",
-  "updated_at": "2026-11-13T01:19:47.000Z",
+  "updated_at": "2026-11-13T04:44:51.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-to-3d",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 237221392,
-  "storage_human": "237 MB",
+  "storage_bytes": 240614514,
+  "storage_human": "241 MB",
   "base_model": "microsoft/TRELLIS-image-large",
   "formats": [
     "onnx"

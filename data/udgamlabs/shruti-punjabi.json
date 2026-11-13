@@ -5,17 +5,17 @@
   "author": "udgamlabs",
   "url": "https://huggingface.co/udgamlabs/shruti-punjabi",
   "created_at": "2026-11-06T08:22:49.000Z",
-  "updated_at": "2026-11-09T15:54:57.000Z",
+  "updated_at": "2026-11-12T12:52:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
-  "library": "cactus-needle",
+  "library": "cactus-compute",
   "languages": [
     "pa",
     "en"
   ],
   "tags": [
-    "cactus-needle",
+    "cactus-compute",
     "whistle",
     "udgamlabs",
     "shruti",
@@ -41,7 +41,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 40,
+  "downloads_30d": 71,
   "trending_score": 0,
   "parameters": 4659865088,
   "parameters_human": "4.66B",
-  "storage_bytes": 19910589374,
-  "storage_human": "19.9 GB",
+  "storage_bytes": 4984416849,
+  "storage_human": "5.0 GB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "mlx",

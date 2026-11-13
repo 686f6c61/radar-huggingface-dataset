@@ -5,7 +5,7 @@
   "author": "millrace-ai",
   "url": "https://huggingface.co/millrace-ai/qwenpu-bonsai",
   "created_at": "2026-11-07T09:58:42.000Z",
-  "updated_at": "2026-11-11T04:25:05.000Z",
+  "updated_at": "2026-11-12T23:22:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 26917758976,
   "parameters_human": "26.92B",
-  "storage_bytes": 3825213248,
-  "storage_human": "3.8 GB",
+  "storage_bytes": 10746804208,
+  "storage_human": "10.7 GB",
   "base_model": "prism-ml/Bonsai-27B-gguf",
   "formats": [
     "gguf"

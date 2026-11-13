@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "lhh5051/Qwen3.8-Flash-Next-UD-Q4_K_XL-Huihui-Abliterated",
+  "slug": "lhh5051-qwen3-8-flash-next-ud-q4_k_xl-huihui-abliterated",
+  "author": "lhh5051",
+  "url": "https://huggingface.co/lhh5051/Qwen3.8-Flash-Next-UD-Q4_K_XL-Huihui-Abliterated",
+  "created_at": "2026-11-13T05:11:24.000Z",
+  "updated_at": "2026-11-13T05:11:24.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "non-commercial",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

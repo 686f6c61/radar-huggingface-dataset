@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "hermitdave/OLMoE-1B-7B-MLX-MACaQ-4.25bpw",
+  "slug": "hermitdave-olmoe-1b-7b-mlx-macaq-4-25bpw",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/OLMoE-1B-7B-MLX-MACaQ-4.25bpw",
+  "created_at": "2026-11-13T11:41:30.000Z",
+  "updated_at": "2026-11-13T11:52:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx-lm",
+  "languages": [],
+  "tags": [
+    "mlx-lm",
+    "safetensors",
+    "olmoe",
+    "text-generation",
+    "arxiv:2611.10649",
+    "base_model:allenai/OLMoE-1B-7B-0125",
+    "base_model:quantized:allenai/OLMoE-1B-7B-0125",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6919161856,
+  "parameters_human": "6.92B",
+  "storage_bytes": 3676037759,
+  "storage_human": "3.7 GB",
+  "base_model": "allenai/OLMoE-1B-7B-0125",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

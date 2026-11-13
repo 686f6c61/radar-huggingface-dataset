@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "kapcikum/my-awesome-model",
+  "slug": "kapcikum-my-awesome-model",
+  "author": "kapcikum",
+  "url": "https://huggingface.co/kapcikum/my-awesome-model",
+  "created_at": "2026-11-13T08:05:17.000Z",
+  "updated_at": "2026-11-13T08:06:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108310272,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433263424,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

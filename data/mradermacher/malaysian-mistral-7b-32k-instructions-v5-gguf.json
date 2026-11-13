@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mradermacher/malaysian-mistral-7b-32k-instructions-v5-GGUF",
+  "slug": "mradermacher-malaysian-mistral-7b-32k-instructions-v5-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/malaysian-mistral-7b-32k-instructions-v5-GGUF",
+  "created_at": "2024-12-17T13:25:35.000Z",
+  "updated_at": "2026-11-13T05:31:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 63929816192,
+  "storage_human": "63.9 GB",
+  "base_model": "mesolitica/malaysian-mistral-7b-32k-instructions-v5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

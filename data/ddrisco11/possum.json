@@ -36,7 +36,7 @@
     "base_model:adapter:mlx-community/Mistral-7B-v0.3-4bit",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

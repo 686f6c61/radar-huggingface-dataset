@@ -5,7 +5,7 @@
   "author": "dolphinnlp",
   "url": "https://huggingface.co/dolphinnlp/qwen3.5-ocr-ft",
   "created_at": "2026-11-04T08:19:49.000Z",
-  "updated_at": "2026-11-12T05:04:01.000Z",
+  "updated_at": "2026-11-12T09:52:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 92,
+  "downloads_30d": 235,
   "trending_score": 0,
   "parameters": 873438784,
   "parameters_human": "873.4M",
-  "storage_bytes": 11577959895,
-  "storage_human": "11.6 GB",
+  "storage_bytes": 32455654591,
+  "storage_human": "32.5 GB",
   "base_model": "xiaomi-research/Xiaomi-OCR-0",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "fabricioslv",
   "url": "https://huggingface.co/fabricioslv/erika-qwen3-4b-mobile-gguf",
   "created_at": "2026-11-12T03:37:17.000Z",
-  "updated_at": "2026-11-12T03:38:23.000Z",
+  "updated_at": "2026-11-12T16:30:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,16 +13,9 @@
   "languages": [],
   "tags": [
     "gguf",
-    "llama.cpp",
-    "qwen3",
-    "mobile",
-    "erika",
-    "quantizado",
-    "base_model:unsloth/Qwen3-4B-Instruct-2507",
-    "base_model:quantized:unsloth/Qwen3-4B-Instruct-2507",
-    "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
+    "imatrix",
     "conversational"
   ],
   "likes": 0,
@@ -30,8 +23,8 @@
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
-  "storage_bytes": 2497280192,
-  "storage_human": "2.5 GB",
+  "storage_bytes": 13283455232,
+  "storage_human": "13.3 GB",
   "base_model": "unsloth/Qwen3-4B-Instruct-2507",
   "formats": [
     "gguf"

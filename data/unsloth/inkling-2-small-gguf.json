@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "unsloth/Inkling-2-Small-GGUF",
+  "slug": "unsloth-inkling-2-small-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/Inkling-2-Small-GGUF",
+  "created_at": "2026-11-05T12:38:33.000Z",
+  "updated_at": "2026-11-13T11:00:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "conversational",
+    "image-text-to-text",
+    "moe",
+    "unsloth",
+    "base_model:thinkingmachines/Inkling-2-Small",
+    "base_model:quantized:thinkingmachines/Inkling-2-Small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 92,
+  "trending_score": 0,
+  "parameters": 593722994688,
+  "parameters_human": "593.72B",
+  "storage_bytes": 2241194690628,
+  "storage_human": "2241.2 GB",
+  "base_model": "thinkingmachines/Inkling-2-Small",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Unsloth is an open-source, no-code deskop UI for training and running open models on your local hardware."
+    },
+    {
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
+    },
+    {
+      "title": "Introducing Unsloth Desktop | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/desktop",
+      "snippet": "Whether your model is running through Unsloth’s inference or your own remote OpenAI-compatible endpoint, you can give it access …"
+    },
+    {
+      "title": "unsloth · PyPI",
+      "url": "https://pypi.org/project/unsloth/",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
+    },
+    {
+      "title": "Unsloth Dynamic 2.0 Quants - a unsloth Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/unsloth/unsloth-dynamic-20-quants",
+      "snippet": "unsloth/Muse-Glimmer-30B-GGUF ... unsloth/MiniMax-H3-GGUF ... unsloth/DeepSeek-V4-Flash-0731-GGUF ... unsloth/Qwen3.8 …"
+    }
+  ]
+}

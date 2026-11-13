@@ -5,7 +5,7 @@
   "author": "ggml-org",
   "url": "https://huggingface.co/ggml-org/gemma-4-E2B-GGUF",
   "created_at": "2026-07-16T14:10:54.000Z",
-  "updated_at": "2026-11-08T03:51:02.000Z",
+  "updated_at": "2026-11-12T09:57:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 1424,
+  "downloads_30d": 1427,
   "trending_score": 0,
   "parameters": 4647450147,
   "parameters_human": "4.65B",

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "SAIFIINDUSTRIES/Qwen2.5-Coder-0.5B",
+  "slug": "saifiindustries-qwen2-5-coder-0-5b",
+  "author": "SAIFIINDUSTRIES",
+  "url": "https://huggingface.co/SAIFIINDUSTRIES/Qwen2.5-Coder-0.5B",
+  "created_at": "2026-11-13T11:17:50.000Z",
+  "updated_at": "2026-11-13T11:17:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code",
+    "qwen",
+    "qwen-coder",
+    "codeqwen",
+    "conversational",
+    "en",
+    "arxiv:2409.12186",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 988097824,
+  "storage_human": "988 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

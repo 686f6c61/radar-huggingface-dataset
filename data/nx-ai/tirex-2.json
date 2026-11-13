@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "NX-AI/TiRex-2",
+  "slug": "nx-ai-tirex-2",
+  "author": "NX-AI",
+  "url": "https://huggingface.co/NX-AI/TiRex-2",
+  "created_at": "2026-06-16T09:05:04.000Z",
+  "updated_at": "2026-11-13T10:18:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "tirex-2",
+  "languages": [],
+  "tags": [
+    "tirex-2",
+    "onnx",
+    "safetensors",
+    "time-series-forecasting",
+    "dataset:autogluon/chronos_datasets",
+    "dataset:Salesforce/lotsa_data",
+    "arxiv:2607.01204",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 50,
+  "downloads_30d": 4714,
+  "trending_score": 0,
+  "parameters": 82501744,
+  "parameters_human": "82.5M",
+  "storage_bytes": 1447332896,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

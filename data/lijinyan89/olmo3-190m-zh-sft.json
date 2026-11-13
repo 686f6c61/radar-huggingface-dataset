@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "lijinyan89/olmo3-190m-zh-sft",
+  "slug": "lijinyan89-olmo3-190m-zh-sft",
+  "author": "lijinyan89",
+  "url": "https://huggingface.co/lijinyan89/olmo3-190m-zh-sft",
+  "created_at": "2026-11-13T05:29:41.000Z",
+  "updated_at": "2026-11-13T05:29:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "olmo3",
+    "llm001",
+    "chinese",
+    "sft",
+    "supervised-finetuning",
+    "zh",
+    "base_model:lijinyan89/olmo3-190m-zh-continue",
+    "base_model:finetune:lijinyan89/olmo3-190m-zh-continue",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 187011840,
+  "parameters_human": "187.0M",
+  "storage_bytes": 374044168,
+  "storage_human": "374 MB",
+  "base_model": "lijinyan89/olmo3-190m-zh-continue",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "my-app-s/DeepSeek-R1-Finance-Reasoning-14B-GGUF",
+  "slug": "my-app-s-deepseek-r1-finance-reasoning-14b-gguf",
+  "author": "my-app-s",
+  "url": "https://huggingface.co/my-app-s/DeepSeek-R1-Finance-Reasoning-14B-GGUF",
+  "created_at": "2026-11-13T11:08:57.000Z",
+  "updated_at": "2026-11-13T11:08:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "en",
+    "base_model:engr-bilal/FinetunedQwen14B",
+    "base_model:quantized:engr-bilal/FinetunedQwen14B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102043518336,
+  "storage_human": "102.0 GB",
+  "base_model": "engr-bilal/FinetunedQwen14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

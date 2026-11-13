@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Tibber-se/kb-whisper-large-mlx",
+  "slug": "tibber-se-kb-whisper-large-mlx",
+  "author": "Tibber-se",
+  "url": "https://huggingface.co/Tibber-se/kb-whisper-large-mlx",
+  "created_at": "2026-11-13T10:03:10.000Z",
+  "updated_at": "2026-11-13T10:03:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "apple-silicon",
+    "swedish",
+    "automatic-speech-recognition",
+    "sv",
+    "base_model:KBLab/kb-whisper-large",
+    "base_model:finetune:KBLab/kb-whisper-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3083280590,
+  "storage_human": "3.1 GB",
+  "base_model": "KBLab/kb-whisper-large",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

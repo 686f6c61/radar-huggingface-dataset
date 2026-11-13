@@ -5,7 +5,7 @@
   "author": "webmp3",
   "url": "https://huggingface.co/webmp3/Sakura-Axion-1.0-35B-GGUF",
   "created_at": "2026-11-11T23:42:36.000Z",
-  "updated_at": "2026-11-11T23:59:23.000Z",
+  "updated_at": "2026-11-12T14:17:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,12 +28,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 80,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 62535094432,
-  "storage_human": "62.5 GB",
+  "storage_bytes": 112216006496,
+  "storage_human": "112.2 GB",
   "base_model": "Axion1-0/Axion-1.0-35B",
   "formats": [
     "gguf"

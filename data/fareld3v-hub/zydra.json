@@ -5,7 +5,7 @@
   "author": "fareld3v-hub",
   "url": "https://huggingface.co/fareld3v-hub/zydra",
   "created_at": "2026-11-08T17:13:56.000Z",
-  "updated_at": "2026-11-11T14:01:11.000Z",
+  "updated_at": "2026-11-12T06:28:24.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -23,7 +23,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 208,
+  "downloads_30d": 221,
   "trending_score": 0,
   "parameters": 629697920,
   "parameters_human": "629.7M",

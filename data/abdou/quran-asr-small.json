@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Abdou/quran-asr-small",
+  "slug": "abdou-quran-asr-small",
+  "author": "Abdou",
+  "url": "https://huggingface.co/Abdou/quran-asr-small",
+  "created_at": "2026-10-20T19:25:32.000Z",
+  "updated_at": "2026-11-13T08:59:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "quran",
+    "quranic-recitation",
+    "arabic",
+    "speech-recognition",
+    "ctc",
+    "conformer",
+    "on-device",
+    "automatic-speech-recognition",
+    "ar",
+    "dataset:tarteel-ai/tlog",
+    "dataset:IqraEval/Iqra_train",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 302124571,
+  "storage_human": "302 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Quran-Lab Quranic ASR Benchmark",
+      "metric": "WER (overall)",
+      "value": 4.49
+    },
+    {
+      "task": null,
+      "dataset": "Quran-Lab Quranic ASR Benchmark",
+      "metric": "CER (overall)",
+      "value": 2.17
+    }
+  ],
+  "sources": []
+}

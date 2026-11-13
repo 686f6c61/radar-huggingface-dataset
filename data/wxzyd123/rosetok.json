@@ -5,7 +5,7 @@
   "author": "wxzyd123",
   "url": "https://huggingface.co/wxzyd123/ROSETok",
   "created_at": "2026-11-04T06:24:11.000Z",
-  "updated_at": "2026-11-04T10:45:00.000Z",
+  "updated_at": "2026-11-13T02:37:06.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,6 +22,7 @@
     "zh",
     "dataset:amphion/Emilia-Dataset",
     "dataset:openslr/librispeech_asr",
+    "arxiv:2611.14929",
     "license:mit",
     "region:us"
   ],

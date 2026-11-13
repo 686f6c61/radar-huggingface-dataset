@@ -5,7 +5,7 @@
   "author": "jgalego",
   "url": "https://huggingface.co/jgalego/shem-rv32im",
   "created_at": "2026-11-11T11:30:02.000Z",
-  "updated_at": "2026-11-11T18:01:24.000Z",
+  "updated_at": "2026-11-12T23:44:41.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 18,
   "trending_score": 0,
   "parameters": 77744,
   "parameters_human": "77744",

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "360ZhiNao/MoSA",
+  "slug": "360zhinao-mosa",
+  "author": "360ZhiNao",
+  "url": "https://huggingface.co/360ZhiNao/MoSA",
+  "created_at": "2026-11-13T07:21:00.000Z",
+  "updated_at": "2026-11-13T07:21:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1010732281,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MOSA in defense acquisition: challenges, solutions, and a model",
+      "url": "https://militaryembedded.com/radar-ew/rf-and-microwave/mosa-in-defense-acquisition-challenges-solutions-and-a-model",
+      "snippet": "10.10.2025 ... [Figure 2 ǀ The SAVS 360 is a 360-degree, live-view situational-awareness system built for armored vehicles operating in dynamic and high-risk ..."
+    },
+    {
+      "title": "The American Dynamism 50: AI Edition | Andreessen Horowitz",
+      "url": "https://a16z.com/american-dynamism-50-ai/",
+      "snippet": "... model (LLM) training platform MosaicML. The company is used by more than 10,000 organizations to build analytics and machine learning tools, including ..."
+    }
+  ]
+}

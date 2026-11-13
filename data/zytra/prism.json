@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Zytra/prism",
+  "slug": "zytra-prism",
+  "author": "Zytra",
+  "url": "https://huggingface.co/Zytra/prism",
+  "created_at": "2026-11-11T11:42:50.000Z",
+  "updated_at": "2026-11-11T11:44:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "guardrails",
+    "ai-safety",
+    "ai-governance",
+    "llm-judge",
+    "jailbreak-detection",
+    "hallucination-detection",
+    "rag-evaluation",
+    "conversational",
+    "en",
+    "base_model:ibm-granite/granite-guardian-3.3-8b",
+    "base_model:finetune:ibm-granite/granite-guardian-3.3-8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8170864640,
+  "parameters_human": "8.17B",
+  "storage_bytes": 16341771384,
+  "storage_human": "16.3 GB",
+  "base_model": "ibm-granite/granite-guardian-3.3-8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

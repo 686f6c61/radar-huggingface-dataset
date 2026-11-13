@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "CobuildX-AI/cbx-bfs-transaction-categorizer-68M",
+  "slug": "cobuildx-ai-cbx-bfs-transaction-categorizer-68m",
+  "author": "CobuildX-AI",
+  "url": "https://huggingface.co/CobuildX-AI/cbx-bfs-transaction-categorizer-68M",
+  "created_at": "2026-11-13T08:46:24.000Z",
+  "updated_at": "2026-11-13T09:05:51.000Z",
+  "license": "cbx-bfs-model-non-production",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "finance",
+    "banking",
+    "transaction-categorization",
+    "bank-transactions",
+    "ettin",
+    "en",
+    "base_model:jhu-clsp/ettin-encoder-68m",
+    "base_model:finetune:jhu-clsp/ettin-encoder-68m",
+    "license:other",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68435511,
+  "parameters_human": "68.4M",
+  "storage_bytes": 273754340,
+  "storage_human": "274 MB",
+  "base_model": "jhu-clsp/ettin-encoder-68m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

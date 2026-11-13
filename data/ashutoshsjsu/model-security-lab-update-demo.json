@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "AshutoshSJSU/model-security-lab-update-demo",
+  "slug": "ashutoshsjsu-model-security-lab-update-demo",
+  "author": "AshutoshSJSU",
+  "url": "https://huggingface.co/AshutoshSJSU/model-security-lab-update-demo",
+  "created_at": "2026-11-13T05:06:10.000Z",
+  "updated_at": "2026-11-13T05:06:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "research",
+    "controlled-variant",
+    "text-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 78274,
+  "parameters_human": "78274",
+  "storage_bytes": 317464,
+  "storage_human": "317464 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

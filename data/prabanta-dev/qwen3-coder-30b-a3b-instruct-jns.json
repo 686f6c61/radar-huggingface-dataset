@@ -5,7 +5,7 @@
   "author": "prabanta-dev",
   "url": "https://huggingface.co/prabanta-dev/Qwen3-Coder-30B-A3B-Instruct-JNS",
   "created_at": "2026-11-07T13:49:36.000Z",
-  "updated_at": "2026-11-07T13:51:11.000Z",
+  "updated_at": "2026-11-12T16:00:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "trl-internal-testing/tiny-CohereForCausalLM",
+  "slug": "trl-internal-testing-tiny-cohereforcausallm",
+  "author": "trl-internal-testing",
+  "url": "https://huggingface.co/trl-internal-testing/tiny-CohereForCausalLM",
+  "created_at": "2024-11-25T15:05:15.000Z",
+  "updated_at": "2026-11-13T10:27:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cohere",
+    "text-generation",
+    "trl",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27942,
+  "trending_score": 0,
+  "parameters": 2051096,
+  "parameters_human": "2.1M",
+  "storage_bytes": 93807378,
+  "storage_human": "94 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

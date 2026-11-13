@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "neavo/Manga109-YOLO26-ONNX-CPU-FP32",
+  "slug": "neavo-manga109-yolo26-onnx-cpu-fp32",
+  "author": "neavo",
+  "url": "https://huggingface.co/neavo/Manga109-YOLO26-ONNX-CPU-FP32",
+  "created_at": "2026-11-13T07:29:08.000Z",
+  "updated_at": "2026-11-13T07:36:00.000Z",
+  "license": "see-upstream-license-notes",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnxruntime",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "manga",
+    "instance-segmentation",
+    "yolo26",
+    "image-segmentation",
+    "ja",
+    "base_model:ShadowB/Manga109-panel-balloon-text-yolov26-segmentation",
+    "base_model:quantized:ShadowB/Manga109-panel-balloon-text-yolov26-segmentation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41587926,
+  "storage_human": "42 MB",
+  "base_model": "ShadowB/Manga109-panel-balloon-text-yolov26-segmentation",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

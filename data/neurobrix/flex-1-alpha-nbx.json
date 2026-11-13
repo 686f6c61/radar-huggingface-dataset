@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Neurobrix/Flex.1-alpha-nbx",
+  "slug": "neurobrix-flex-1-alpha-nbx",
+  "author": "Neurobrix",
+  "url": "https://huggingface.co/Neurobrix/Flex.1-alpha-nbx",
+  "created_at": "2026-11-13T08:22:10.000Z",
+  "updated_at": "2026-11-13T08:25:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "neurobrix",
+  "languages": [],
+  "tags": [
+    "neurobrix",
+    "nbx",
+    "triton",
+    "local-inference",
+    "image",
+    "text-to-image",
+    "base_model:ostris/Flex.1-alpha",
+    "base_model:finetune:ostris/Flex.1-alpha",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "ostris/Flex.1-alpha",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NeuroBrix White Paper — The Universal AI Inference Engine",
+      "url": "https://neurobrix.es/whitepaper",
+      "snippet": "NeuroBrix ModelsCatalogueBenchmarksEnginenbxtensorReleasesWhite PaperDocs ... SANA, PixArt-α, PixArt-Σ, Flex.1, Janus, Validated. Super-resolution ..."
+    },
+    {
+      "title": "NeuroBrix Documentation | NeuroBrix Docs",
+      "url": "https://docs.neurobrix.org/",
+      "snippet": "One engine, one .nbx container format, one command set, and the full catalogue of models it runs."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "jonathanjordan21/mdeberta-v3-base-indonesian-sarcasm",
+  "slug": "jonathanjordan21-mdeberta-v3-base-indonesian-sarcasm",
+  "author": "jonathanjordan21",
+  "url": "https://huggingface.co/jonathanjordan21/mdeberta-v3-base-indonesian-sarcasm",
+  "created_at": "2026-11-13T05:45:17.000Z",
+  "updated_at": "2026-11-13T05:52:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "sarcasm-detection",
+    "text-classification",
+    "indonesian",
+    "mdeberta",
+    "id",
+    "dataset:jwnt4/reddit-id-sarcasm-cleaned",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278810882,
+  "parameters_human": "278.8M",
+  "storage_bytes": 1131302481,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

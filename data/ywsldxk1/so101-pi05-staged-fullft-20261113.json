@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "ywsldxk1/so101-pi05-staged-fullft-20261113",
+  "slug": "ywsldxk1-so101-pi05-staged-fullft-20261113",
+  "author": "ywsldxk1",
+  "url": "https://huggingface.co/ywsldxk1/so101-pi05-staged-fullft-20261113",
+  "created_at": "2026-11-13T05:27:55.000Z",
+  "updated_at": "2026-11-13T05:55:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "full-fine-tuning",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9388457656,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "sambatapas",
   "url": "https://huggingface.co/sambatapas/dacq-pii-1700m-261105",
   "created_at": "2026-11-05T18:39:59.000Z",
-  "updated_at": "2026-11-05T18:40:04.000Z",
+  "updated_at": "2026-11-13T03:32:47.000Z",
   "license": "mercor-proprietary",
   "license_family": "non-commercial",
   "pipeline_tag": "token-classification",
@@ -28,7 +28,7 @@
   "trending_score": 0,
   "parameters": 1720710210,
   "parameters_human": "1.72B",
-  "storage_bytes": 3452878896,
+  "storage_bytes": 3460965456,
   "storage_human": "3.5 GB",
   "base_model": "BidirLM/BidirLM-1.7B-Base",
   "formats": [

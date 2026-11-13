@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "amd/Step-3.5-Flash_gpuep_1.0_gpu_128",
+  "slug": "amd-step-3-5-flash_gpuep_1-0_gpu_128",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/Step-3.5-Flash_gpuep_1.0_gpu_128",
+  "created_at": "2026-11-13T07:32:41.000Z",
+  "updated_at": "2026-11-13T08:07:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onnxruntime-genai",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime-genai",
+    "onnx",
+    "amd",
+    "onnxruntime",
+    "stepfun",
+    "moe",
+    "hip-ep",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:stepfun-ai/Step-3.5-Flash",
+    "base_model:quantized:stepfun-ai/Step-3.5-Flash",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62646325690,
+  "storage_human": "62.6 GB",
+  "base_model": "stepfun-ai/Step-3.5-Flash",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

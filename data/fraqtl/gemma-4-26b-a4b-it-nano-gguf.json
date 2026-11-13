@@ -5,7 +5,7 @@
   "author": "fraQtl",
   "url": "https://huggingface.co/fraQtl/Gemma-4-26B-A4B-it-Nano-GGUF",
   "created_at": "2026-09-29T22:02:08.000Z",
-  "updated_at": "2026-11-12T03:43:42.000Z",
+  "updated_at": "2026-11-12T20:02:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 457,
+  "downloads_30d": 475,
   "trending_score": 0,
   "parameters": 27309322526,
   "parameters_human": "27.31B",

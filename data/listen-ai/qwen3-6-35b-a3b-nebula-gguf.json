@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Listen-AI/Qwen3.6-35B-A3B-Nebula-GGUF",
+  "slug": "listen-ai-qwen3-6-35b-a3b-nebula-gguf",
+  "author": "Listen-AI",
+  "url": "https://huggingface.co/Listen-AI/Qwen3.6-35B-A3B-Nebula-GGUF",
+  "created_at": "2026-11-13T09:57:11.000Z",
+  "updated_at": "2026-11-13T09:58:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "listenai",
+    "nebula",
+    "custom-quantization",
+    "moe",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

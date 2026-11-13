@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/clinical-field-mapper-causal_lm-GGUF",
+  "slug": "mradermacher-clinical-field-mapper-causal_lm-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/clinical-field-mapper-causal_lm-GGUF",
+  "created_at": "2025-06-05T22:45:51.000Z",
+  "updated_at": "2026-11-13T05:29:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "healthcare",
+    "column-normalization",
+    "text-generation",
+    "distilgpt2",
+    "en",
+    "base_model:tsilva/clinical-field-mapper-causal_lm",
+    "base_model:quantized:tsilva/clinical-field-mapper-causal_lm",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 240,
+  "trending_score": 0,
+  "parameters": 120511488,
+  "parameters_human": "120.5M",
+  "storage_bytes": 1204493344,
+  "storage_human": "1.2 GB",
+  "base_model": "tsilva/clinical-field-mapper-causal_lm",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "taharmasmaliyev07/Llama3.2-3B-ASR-E2-BF16",
+  "slug": "taharmasmaliyev07-llama3-2-3b-asr-e2-bf16",
+  "author": "taharmasmaliyev07",
+  "url": "https://huggingface.co/taharmasmaliyev07/Llama3.2-3B-ASR-E2-BF16",
+  "created_at": "2026-11-13T09:32:01.000Z",
+  "updated_at": "2026-11-13T09:47:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:taharmasmaliyev07/Llama3.2-3B-ASR-E2-BF16",
+    "base_model:finetune:taharmasmaliyev07/Llama3.2-3B-ASR-E2-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6540046512,
+  "storage_human": "6.5 GB",
+  "base_model": "taharmasmaliyev07/Llama3.2-3B-ASR-E2-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

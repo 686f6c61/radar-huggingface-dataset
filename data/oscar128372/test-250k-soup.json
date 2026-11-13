@@ -5,7 +5,7 @@
   "author": "oscar128372",
   "url": "https://huggingface.co/oscar128372/test-250k-soup",
   "created_at": "2026-11-12T15:38:22.000Z",
-  "updated_at": "2026-11-12T15:58:08.000Z",
+  "updated_at": "2026-11-13T03:46:57.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,8 @@
   "languages": [],
   "tags": [
     "safetensors",
+    "unified_lm",
+    "custom_code",
     "license:mit",
     "region:us"
   ],

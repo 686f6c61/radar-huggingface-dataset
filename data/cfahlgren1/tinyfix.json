@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "cfahlgren1/tinyfix",
+  "slug": "cfahlgren1-tinyfix",
+  "author": "cfahlgren1",
+  "url": "https://huggingface.co/cfahlgren1/tinyfix",
+  "created_at": "2026-11-09T17:30:59.000Z",
+  "updated_at": "2026-11-13T12:29:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "autocorrect",
+    "spelling-correction",
+    "browser",
+    "offline-page",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:OpenAssistant/oasst1",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128281373,
+  "storage_human": "128 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

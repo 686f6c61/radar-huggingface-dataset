@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ai4ug/pearl-chat-v4-base",
+  "slug": "ai4ug-pearl-chat-v4-base",
+  "author": "ai4ug",
+  "url": "https://huggingface.co/ai4ug/pearl-chat-v4-base",
+  "created_at": "2026-11-13T05:59:03.000Z",
+  "updated_at": "2026-11-13T05:59:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "flax",
+  "languages": [
+    "lug"
+  ],
+  "tags": [
+    "flax",
+    "safetensors",
+    "text-generation",
+    "lug",
+    "dataset:ai4ug/luganda_pretrain_v4",
+    "dataset:ai4ug/luganda_sft_v4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 46280448,
+  "parameters_human": "46.3M",
+  "storage_bytes": 185132888,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

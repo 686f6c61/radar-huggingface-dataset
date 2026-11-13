@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/blip-image-captioning-base-mic",
   "created_at": "2026-11-05T13:03:47.000Z",
-  "updated_at": "2026-11-11T16:21:16.000Z",
+  "updated_at": "2026-11-12T10:29:47.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 564,
+  "downloads_30d": 702,
   "trending_score": 0,
   "parameters": 2275004,
   "parameters_human": "2.3M",

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "jmdisuanco/spark-x2.6-1.7b-gguf",
+  "slug": "jmdisuanco-spark-x2-6-1-7b-gguf",
+  "author": "jmdisuanco",
+  "url": "https://huggingface.co/jmdisuanco/spark-x2.6-1.7b-gguf",
+  "created_at": "2026-11-13T04:37:27.000Z",
+  "updated_at": "2026-11-13T04:37:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1707657216,
+  "parameters_human": "1.71B",
+  "storage_bytes": 1088465824,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

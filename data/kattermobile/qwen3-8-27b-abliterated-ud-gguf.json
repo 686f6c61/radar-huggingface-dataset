@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "KatterMobile/Qwen3.8-27B-abliterated-UD-GGUF",
+  "slug": "kattermobile-qwen3-8-27b-abliterated-ud-gguf",
+  "author": "KatterMobile",
+  "url": "https://huggingface.co/KatterMobile/Qwen3.8-27B-abliterated-UD-GGUF",
+  "created_at": "2026-11-13T07:38:17.000Z",
+  "updated_at": "2026-11-13T07:39:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "abliterated",
+    "uncensored",
+    "qwen",
+    "qwen3.8",
+    "hybrid-attention",
+    "unsloth",
+    "ud-quant",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:unsloth/Qwen3.8-27B-GGUF",
+    "base_model:quantized:unsloth/Qwen3.8-27B-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 322560,
+  "parameters_human": "322560",
+  "storage_bytes": 1293184,
+  "storage_human": "1 MB",
+  "base_model": "unsloth/Qwen3.8-27B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

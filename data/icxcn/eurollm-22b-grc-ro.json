@@ -5,7 +5,7 @@
   "author": "icxcn",
   "url": "https://huggingface.co/icxcn/EuroLLM-22B-grc-ro",
   "created_at": "2026-11-09T12:14:37.000Z",
-  "updated_at": "2026-11-09T14:33:51.000Z",
+  "updated_at": "2026-11-12T11:28:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 488,
+  "downloads_30d": 495,
   "trending_score": 0,
   "parameters": 22637328384,
   "parameters_human": "22.64B",
-  "storage_bytes": 46029108661,
-  "storage_human": "46.0 GB",
+  "storage_bytes": 92040025085,
+  "storage_human": "92.0 GB",
   "base_model": "utter-project/EuroLLM-22B-Instruct-2512",
   "formats": [
     "safetensors"

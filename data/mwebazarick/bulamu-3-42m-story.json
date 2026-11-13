@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "mwebazarick/BULaMU-3-42M-Story",
+  "slug": "mwebazarick-bulamu-3-42m-story",
+  "author": "mwebazarick",
+  "url": "https://huggingface.co/mwebazarick/BULaMU-3-42M-Story",
+  "created_at": "2026-11-13T04:11:23.000Z",
+  "updated_at": "2026-11-13T04:14:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 42082816,
+  "parameters_human": "42.1M",
+  "storage_bytes": 168858564,
+  "storage_human": "169 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

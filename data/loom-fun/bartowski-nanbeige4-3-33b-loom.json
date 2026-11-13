@@ -5,7 +5,7 @@
   "author": "loom-fun",
   "url": "https://huggingface.co/loom-fun/bartowski-Nanbeige4.3-33B-loom",
   "created_at": "2026-11-07T13:04:41.000Z",
-  "updated_at": "2026-11-11T21:00:09.000Z",
+  "updated_at": "2026-11-12T23:36:21.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,8 +16,6 @@
     "loom-serve",
     "gguf",
     "strix-halo",
-    "speculative-decoding",
-    "ngram",
     "base_model:bartowski/Nanbeige_Nanbeige4.3-33B-GGUF",
     "base_model:finetune:bartowski/Nanbeige_Nanbeige4.3-33B-GGUF",
     "region:us"

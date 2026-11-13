@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Runforever/Qwen3-Coder-30B-A3B-Instruct",
+  "slug": "runforever-qwen3-coder-30b-a3b-instruct",
+  "author": "Runforever",
+  "url": "https://huggingface.co/Runforever/Qwen3-Coder-30B-A3B-Instruct",
+  "created_at": "2026-11-13T12:22:44.000Z",
+  "updated_at": "2026-11-13T12:22:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:2505.09388",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61066575656,
+  "storage_human": "61.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

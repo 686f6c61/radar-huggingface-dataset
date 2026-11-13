@@ -5,17 +5,17 @@
   "author": "udgamlabs",
   "url": "https://huggingface.co/udgamlabs/shruti-malayalam",
   "created_at": "2026-11-06T05:40:57.000Z",
-  "updated_at": "2026-11-09T15:54:23.000Z",
+  "updated_at": "2026-11-12T12:52:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
-  "library": "cactus-needle",
+  "library": "cactus-compute",
   "languages": [
     "ml",
     "en"
   ],
   "tags": [
-    "cactus-needle",
+    "cactus-compute",
     "whistle",
     "udgamlabs",
     "shruti",
@@ -41,7 +41,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 51,
+  "downloads_30d": 54,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

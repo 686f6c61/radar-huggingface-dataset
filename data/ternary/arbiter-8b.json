@@ -5,7 +5,7 @@
   "author": "ternary",
   "url": "https://huggingface.co/ternary/Arbiter-8B",
   "created_at": "2026-10-27T02:26:45.000Z",
-  "updated_at": "2026-10-27T05:58:12.000Z",
+  "updated_at": "2026-11-12T20:42:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -24,6 +24,7 @@
     "wealth-management",
     "sec-filings",
     "news",
+    "central-banks",
     "calibration",
     "lora",
     "jev",
@@ -37,12 +38,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 36,
+  "downloads_30d": 37,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",
-  "storage_bytes": 16742737386,
-  "storage_human": "16.7 GB",
+  "storage_bytes": 33474052122,
+  "storage_human": "33.5 GB",
   "base_model": "Qwen/Qwen3-8B",
   "formats": [
     "safetensors"

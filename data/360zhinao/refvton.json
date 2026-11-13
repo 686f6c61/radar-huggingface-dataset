@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "360ZhiNao/RefVTON",
+  "slug": "360zhinao-refvton",
+  "author": "360ZhiNao",
+  "url": "https://huggingface.co/360ZhiNao/RefVTON",
+  "created_at": "2026-11-13T07:20:56.000Z",
+  "updated_at": "2026-11-13T07:20:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "image-to-image",
+    "en",
+    "arxiv:2511.00956",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 870225807,
+  "storage_human": "870 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "meituan-longcat",
   "url": "https://huggingface.co/meituan-longcat/LongCat-Next",
   "created_at": "2026-03-25T13:18:39.000Z",
-  "updated_at": "2026-11-10T09:43:01.000Z",
+  "updated_at": "2026-11-12T09:13:18.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",
@@ -24,13 +24,13 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 219,
-  "downloads_30d": 515,
+  "likes": 220,
+  "downloads_30d": 561,
   "trending_score": 0,
   "parameters": 74257230752,
   "parameters_human": "74.26B",
-  "storage_bytes": 161182544459,
-  "storage_human": "161.2 GB",
+  "storage_bytes": 207994714871,
+  "storage_human": "208.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

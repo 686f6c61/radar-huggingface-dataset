@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "nace-ai/drex-v2.0-kev-GGUF",
+  "slug": "nace-ai-drex-v2-0-kev-gguf",
+  "author": "nace-ai",
+  "url": "https://huggingface.co/nace-ai/drex-v2.0-kev-GGUF",
+  "created_at": "2026-11-13T06:19:15.000Z",
+  "updated_at": "2026-11-13T06:30:38.000Z",
+  "license": "nace-ai-open-rail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "decision-model",
+    "kev",
+    "base_model:nace-ai/drex-v2.0",
+    "base_model:quantized:nace-ai/drex-v2.0",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34661659776,
+  "parameters_human": "34.66B",
+  "storage_bytes": 58078291776,
+  "storage_human": "58.1 GB",
+  "base_model": "nace-ai/drex-v2.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Gemy1/egyptian-banknote-detector",
+  "slug": "gemy1-egyptian-banknote-detector",
+  "author": "Gemy1",
+  "url": "https://huggingface.co/Gemy1/egyptian-banknote-detector",
+  "created_at": "2026-11-13T12:03:15.000Z",
+  "updated_at": "2026-11-13T12:03:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Recognizing Egyptian currency for people with visual impairment ...",
+      "url": "https://yourrestaurantai.com/recognizing-egyptian-currency-for-people-with-visual-impairment-using-deep-learning-models/",
+      "snippet": "This study introduces a cutting-edge real-time Egyptian currency recognition system tailored for visually impaired individuals. Leveraging advanced deep learning models such as YOLOv8, YOLOv9, and YOLOv10, the system achieves remarkable accuracy and low latency in identifying Egyptian banknotes."
+    }
+  ]
+}

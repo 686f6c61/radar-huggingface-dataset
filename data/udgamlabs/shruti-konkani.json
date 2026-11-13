@@ -5,17 +5,17 @@
   "author": "udgamlabs",
   "url": "https://huggingface.co/udgamlabs/shruti-konkani",
   "created_at": "2026-11-06T08:23:28.000Z",
-  "updated_at": "2026-11-09T15:55:00.000Z",
+  "updated_at": "2026-11-12T12:52:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
-  "library": "cactus-needle",
+  "library": "cactus-compute",
   "languages": [
     "kok",
     "en"
   ],
   "tags": [
-    "cactus-needle",
+    "cactus-compute",
     "whistle",
     "udgamlabs",
     "shruti",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 22,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

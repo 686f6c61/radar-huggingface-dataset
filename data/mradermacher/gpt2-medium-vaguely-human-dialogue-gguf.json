@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gpt2-medium-vaguely-human-dialogue-GGUF",
+  "slug": "mradermacher-gpt2-medium-vaguely-human-dialogue-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gpt2-medium-vaguely-human-dialogue-GGUF",
+  "created_at": "2025-05-23T16:54:35.000Z",
+  "updated_at": "2026-11-13T05:30:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "gpt2",
+    "gpt",
+    "en",
+    "base_model:pszemraj/gpt2-medium-vaguely-human-dialogue",
+    "base_model:quantized:pszemraj/gpt2-medium-vaguely-human-dialogue",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 83,
+  "trending_score": 0,
+  "parameters": 354823168,
+  "parameters_human": "354.8M",
+  "storage_bytes": 3368463744,
+  "storage_human": "3.4 GB",
+  "base_model": "pszemraj/gpt2-medium-vaguely-human-dialogue",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

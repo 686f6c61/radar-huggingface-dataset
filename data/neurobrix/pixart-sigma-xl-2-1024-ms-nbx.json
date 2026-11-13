@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Neurobrix/PixArt-Sigma-XL-2-1024-MS-nbx",
+  "slug": "neurobrix-pixart-sigma-xl-2-1024-ms-nbx",
+  "author": "Neurobrix",
+  "url": "https://huggingface.co/Neurobrix/PixArt-Sigma-XL-2-1024-MS-nbx",
+  "created_at": "2026-11-13T08:21:24.000Z",
+  "updated_at": "2026-11-13T08:24:45.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "neurobrix",
+  "languages": [],
+  "tags": [
+    "neurobrix",
+    "nbx",
+    "triton",
+    "local-inference",
+    "image",
+    "text-to-image",
+    "base_model:PixArt-alpha/PixArt-Sigma-XL-2-1024-MS",
+    "base_model:finetune:PixArt-alpha/PixArt-Sigma-XL-2-1024-MS",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "PixArt-alpha/PixArt-Sigma-XL-2-1024-MS",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NeuroBrix Documentation | NeuroBrix Docs",
+      "url": "https://docs.neurobrix.org/",
+      "snippet": "neurobrix import <org>/<Model> # fetch a .nbx container from the hub ... PixArt-alpha/PixArt-Sigma-XL-2-1024-MS, 20.3 GiB, openrail++. PixArt-alpha ..."
+    }
+  ]
+}

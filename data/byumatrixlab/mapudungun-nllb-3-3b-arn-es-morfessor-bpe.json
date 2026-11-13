@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "byumatrixlab/mapudungun-nllb-3.3B-arn-es-morfessor-bpe",
+  "slug": "byumatrixlab-mapudungun-nllb-3-3b-arn-es-morfessor-bpe",
+  "author": "byumatrixlab",
+  "url": "https://huggingface.co/byumatrixlab/mapudungun-nllb-3.3B-arn-es-morfessor-bpe",
+  "created_at": "2026-11-13T04:52:53.000Z",
+  "updated_at": "2026-11-13T04:54:23.000Z",
+  "license": "nllb-and-corpus-derived-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "arn",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "m2m_100",
+    "nllb",
+    "mapudungun",
+    "spanish",
+    "low-resource-mt",
+    "morphology",
+    "translation",
+    "arn",
+    "es",
+    "base_model:facebook/nllb-200-3.3B",
+    "base_model:finetune:facebook/nllb-200-3.3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3344861184,
+  "parameters_human": "3.34B",
+  "storage_bytes": 13419698469,
+  "storage_human": "13.4 GB",
+  "base_model": "facebook/nllb-200-3.3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

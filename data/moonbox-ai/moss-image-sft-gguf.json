@@ -5,7 +5,7 @@
   "author": "moonbox-ai",
   "url": "https://huggingface.co/moonbox-ai/MOSS-Image-SFT-GGUF",
   "created_at": "2026-11-12T05:11:26.000Z",
-  "updated_at": "2026-11-12T05:26:56.000Z",
+  "updated_at": "2026-11-13T02:42:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -24,11 +24,11 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 0,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": 5082308624,
   "parameters_human": "5.08B",
-  "storage_bytes": 38163474240,
+  "storage_bytes": 38170774336,
   "storage_human": "38.2 GB",
   "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
   "formats": [

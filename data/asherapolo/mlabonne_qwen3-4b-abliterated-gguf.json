@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "asherapolo/mlabonne_Qwen3-4B-abliterated-GGUF",
+  "slug": "asherapolo-mlabonne_qwen3-4b-abliterated-gguf",
+  "author": "asherapolo",
+  "url": "https://huggingface.co/asherapolo/mlabonne_Qwen3-4B-abliterated-GGUF",
+  "created_at": "2026-11-13T08:54:59.000Z",
+  "updated_at": "2026-11-13T08:54:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:mlabonne/Qwen3-4B-abliterated",
+    "base_model:quantized:mlabonne/Qwen3-4B-abliterated",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 63765787790,
+  "storage_human": "63.8 GB",
+  "base_model": "mlabonne/Qwen3-4B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

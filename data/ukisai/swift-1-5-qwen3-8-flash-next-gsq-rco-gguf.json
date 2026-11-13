@@ -5,7 +5,7 @@
   "author": "ukisai",
   "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
   "created_at": "2026-09-24T14:11:18.000Z",
-  "updated_at": "2026-10-07T19:36:20.000Z",
+  "updated_at": "2026-11-12T13:18:56.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,13 +33,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 258,
-  "downloads_30d": 1023328,
-  "trending_score": 10,
+  "likes": 260,
+  "downloads_30d": 1064824,
+  "trending_score": 11,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 295959437494,
-  "storage_human": "296.0 GB",
+  "storage_bytes": 380375287254,
+  "storage_human": "380.4 GB",
   "base_model": "ukisai/Swift-Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

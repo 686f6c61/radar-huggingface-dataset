@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Neurobrix/MiniCPM-o-4_5-nbx",
+  "slug": "neurobrix-minicpm-o-4_5-nbx",
+  "author": "Neurobrix",
+  "url": "https://huggingface.co/Neurobrix/MiniCPM-o-4_5-nbx",
+  "created_at": "2026-11-13T08:22:09.000Z",
+  "updated_at": "2026-11-13T08:25:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "neurobrix",
+  "languages": [],
+  "tags": [
+    "neurobrix",
+    "nbx",
+    "triton",
+    "local-inference",
+    "multimodal",
+    "any-to-any",
+    "base_model:openbmb/MiniCPM-o-4_5",
+    "base_model:finetune:openbmb/MiniCPM-o-4_5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "openbmb/MiniCPM-o-4_5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Hub | NeuroBrix Docs",
+      "url": "https://docs.neurobrix.org/concepts/model-hub",
+      "snippet": "57.9 GiB, apache-2.0. deepseek-ai/Janus-Pro-7B, 13.8 GiB, mit. Qwen/Qwen3-Omni-30B-A3B-Instruct, 65.8 GiB, apache-2.0. openbmb/MiniCPM-o-4_5, 19.3 GiB, apache- ..."
+    }
+  ]
+}

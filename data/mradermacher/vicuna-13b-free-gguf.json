@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "mradermacher/vicuna-13b-free-GGUF",
+  "slug": "mradermacher-vicuna-13b-free-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/vicuna-13b-free-GGUF",
+  "created_at": "2025-02-24T12:04:55.000Z",
+  "updated_at": "2026-11-13T07:40:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:anon8231489123/ShareGPT_Vicuna_unfiltered",
+    "dataset:gozfarb/ShareGPT_Vicuna_unfiltered",
+    "base_model:reeducator/vicuna-13b-free",
+    "base_model:quantized:reeducator/vicuna-13b-free",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 107,
+  "trending_score": 0,
+  "parameters": 13015864320,
+  "parameters_human": "13.02B",
+  "storage_bytes": 88801915616,
+  "storage_human": "88.8 GB",
+  "base_model": "reeducator/vicuna-13b-free",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iman/javid-no-code-uncensored - GitHub",
+      "url": "https://github.com/Iman/javid-no-code-uncensored",
+      "snippet": "Applications (all free, all run GGUF models fully offline). Application, Platform, Mechanism, Best For, Last Release. PocketPal AI (recommended), Android and ..."
+    },
+    {
+      "title": "TheBloke/WizardLM-13B-Uncensored-GGUF - Hugging Face",
+      "url": "https://huggingface.co/TheBloke/WizardLM-13B-Uncensored-GGUF",
+      "snippet": "28.04.2023 ... Wizardlm 13B Uncensored - GGUF · Description · Repositories available · Prompt template: Vicuna-Short · Compatibility · Explanation of quantisation ..."
+    }
+  ]
+}

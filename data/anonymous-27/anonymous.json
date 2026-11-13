@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Anonymous-27/anonymous",
+  "slug": "anonymous-27-anonymous",
+  "author": "Anonymous-27",
+  "url": "https://huggingface.co/Anonymous-27/anonymous",
+  "created_at": "2026-11-13T06:59:15.000Z",
+  "updated_at": "2026-11-13T06:59:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anonymous (collectif) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Anonymous_(collectif)",
+      "snippet": "L'utilisation du terme Anonymous, dans le sens d'identité partagée, a commencé sur les imageboards, où la mention « Anonymous » …"
+    },
+    {
+      "title": "Anonymous : tout savoir sur le groupe de hacktivistes",
+      "url": "https://www.lebigdata.fr/anonymous-hebergeur-dark-web",
+      "snippet": "Aug 8, 2026 · Anonymous est un organisation de pirates informatiques et d’activistes politiques. C’est celui qui est derrière quelques …"
+    },
+    {
+      "title": "Anonymous (hacker group) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Anonymous_(hacker_group)",
+      "snippet": "A tag of Anonymous is assigned to visitors who leave comments without identifying the originator of the posted content. Users of …"
+    },
+    {
+      "title": "Anonymous Hackers - Anonymous Group Official Website",
+      "url": "https://www.anonymoushackers.net/",
+      "snippet": "This is anonymous group official website control by anonymous headquarters. Here you can read the latest news about anonymous. …"
+    },
+    {
+      "title": "Qui est Anonymous et quel est son but, le collectif de hackers avec le ...",
+      "url": "https://www.libremedia.ca/qui-est-anonymous-et-quel-est-son-but-le-collectif-de-hackers-avec-le-masque-de-guy-fawkes-comme-symbole/",
+      "snippet": "Apr 9, 2024 · Cependant, au fil du temps, les Anonymous ont commencé à lutter, par le biais du piratage informatique, contre …"
+    }
+  ]
+}

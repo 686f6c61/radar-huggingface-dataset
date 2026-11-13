@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "23f1000805/face-expression-v3",
+  "slug": "23f1000805-face-expression-v3",
+  "author": "23f1000805",
+  "url": "https://huggingface.co/23f1000805/face-expression-v3",
+  "created_at": "2026-11-12T12:33:05.000Z",
+  "updated_at": "2026-11-13T10:27:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "py-feat",
+  "languages": [],
+  "tags": [
+    "py-feat",
+    "safetensors",
+    "facial-expression",
+    "linear-model",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 1560,
+  "parameters_human": "1560",
+  "storage_bytes": 18880,
+  "storage_human": "18880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

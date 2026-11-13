@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "inclusionAI/Duo-1.2-causal-base",
+  "slug": "inclusionai-duo-1-2-causal-base",
+  "author": "inclusionAI",
+  "url": "https://huggingface.co/inclusionAI/Duo-1.2-causal-base",
+  "created_at": "2026-11-12T06:30:46.000Z",
+  "updated_at": "2026-11-13T08:26:42.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "non-commercial",
+  "pipeline_tag": null,
+  "library": "duo-world-model",
+  "languages": [],
+  "tags": [
+    "duo-world-model",
+    "diffusers",
+    "safetensors",
+    "video-generation",
+    "audio-generation",
+    "world-model",
+    "arxiv:2611.15131",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 153431486842,
+  "storage_human": "153.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "theblackcat102",
   "url": "https://huggingface.co/theblackcat102/clip-vit-large-patch14-task-experts-ep10",
   "created_at": "2026-11-12T02:09:32.000Z",
-  "updated_at": "2026-11-12T02:12:31.000Z",
+  "updated_at": "2026-11-12T03:15:53.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-classification",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3423907395,
-  "storage_human": "3.4 GB",
+  "storage_bytes": 136870887563,
+  "storage_human": "136.9 GB",
   "base_model": "openai/clip-vit-large-patch14",
   "formats": [
     "safetensors"

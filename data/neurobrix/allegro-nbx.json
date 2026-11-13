@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Neurobrix/Allegro-nbx",
+  "slug": "neurobrix-allegro-nbx",
+  "author": "Neurobrix",
+  "url": "https://huggingface.co/Neurobrix/Allegro-nbx",
+  "created_at": "2026-11-13T08:22:12.000Z",
+  "updated_at": "2026-11-13T08:25:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "neurobrix",
+  "languages": [],
+  "tags": [
+    "neurobrix",
+    "nbx",
+    "triton",
+    "local-inference",
+    "video",
+    "text-to-video",
+    "base_model:rhymes-ai/Allegro",
+    "base_model:finetune:rhymes-ai/Allegro",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "rhymes-ai/Allegro",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NeuroBrix Documentation | NeuroBrix Docs",
+      "url": "https://docs.neurobrix.org/",
+      "snippet": "One engine, one .nbx container format, one command set, and the full catalogue of models it runs."
+    },
+    {
+      "title": "nbxtensor — PyTorch alternative for inference | torch-free tensor library",
+      "url": "https://neurobrix.org/nbxtensor",
+      "snippet": "vor 2 Tagen ... nbxtensor — the torch-free tensor library for inference. Run AI models without PyTorch, on any GPU Triton supports: tensors, Triton kernels, ..."
+    }
+  ]
+}

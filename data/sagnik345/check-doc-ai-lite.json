@@ -1,0 +1,103 @@
+{
+  "schema": 1,
+  "id": "Sagnik345/check-doc-ai-lite",
+  "slug": "sagnik345-check-doc-ai-lite",
+  "author": "Sagnik345",
+  "url": "https://huggingface.co/Sagnik345/check-doc-ai-lite",
+  "created_at": "2026-11-13T12:20:31.000Z",
+  "updated_at": "2026-11-13T12:31:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ai-image-detection",
+    "ai-generated-image-detection",
+    "ai-generated-content",
+    "synthetic-image-detection",
+    "fake-image-detection",
+    "deepfake-detection",
+    "image-forensics",
+    "document-forensics",
+    "invoice",
+    "receipt",
+    "invoice-fraud",
+    "ensemble",
+    "int8",
+    "check-doc-ai",
+    "image-classification",
+    "en",
+    "dataset:ComplexDataLab/OpenFake",
+    "dataset:Shuyiww/TextRich",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "AI-generated image detection (all images, held-out)",
+      "dataset": "Check-Doc-Ai benchmark (OpenFake test, OpenFake Reddit test, TextRich)",
+      "metric": "ROC AUC",
+      "value": 0.9534
+    },
+    {
+      "task": "AI-generated image detection (all images, held-out)",
+      "dataset": "Check-Doc-Ai benchmark (OpenFake test, OpenFake Reddit test, TextRich)",
+      "metric": "Accuracy",
+      "value": 0.8743
+    },
+    {
+      "task": "AI-generated image detection (photos after JPEG compression)",
+      "dataset": "Check-Doc-Ai benchmark (OpenFake test, OpenFake Reddit test, TextRich)",
+      "metric": "ROC AUC",
+      "value": 0.9574
+    },
+    {
+      "task": "AI-generated image detection (photos after JPEG compression)",
+      "dataset": "Check-Doc-Ai benchmark (OpenFake test, OpenFake Reddit test, TextRich)",
+      "metric": "Accuracy",
+      "value": 0.8763
+    },
+    {
+      "task": "AI-generated image detection (documents after JPEG compression)",
+      "dataset": "Check-Doc-Ai benchmark (OpenFake test, OpenFake Reddit test, TextRich)",
+      "metric": "ROC AUC",
+      "value": 0.9312
+    },
+    {
+      "task": "AI-generated image detection (documents after JPEG compression)",
+      "dataset": "Check-Doc-Ai benchmark (OpenFake test, OpenFake Reddit test, TextRich)",
+      "metric": "Accuracy",
+      "value": 0.8133
+    },
+    {
+      "task": "AI-generated image detection (real-world Reddit images)",
+      "dataset": "Check-Doc-Ai benchmark (OpenFake test, OpenFake Reddit test, TextRich)",
+      "metric": "ROC AUC",
+      "value": 0.8692
+    },
+    {
+      "task": "AI-generated image detection (real-world Reddit images)",
+      "dataset": "Check-Doc-Ai benchmark (OpenFake test, OpenFake Reddit test, TextRich)",
+      "metric": "Accuracy",
+      "value": 0.78
+    }
+  ],
+  "sources": []
+}

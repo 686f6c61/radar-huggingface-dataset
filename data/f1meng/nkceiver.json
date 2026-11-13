@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "F1Meng/NKceiver",
+  "slug": "f1meng-nkceiver",
+  "author": "F1Meng",
+  "url": "https://huggingface.co/F1Meng/NKceiver",
+  "created_at": "2026-10-17T12:55:27.000Z",
+  "updated_at": "2026-11-13T07:45:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "biology",
+    "single-cell",
+    "pytorch",
+    "natural-killer-cells",
+    "classification",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36931911,
+  "storage_human": "37 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

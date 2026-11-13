@@ -5,7 +5,7 @@
   "author": "opensearch-project",
   "url": "https://huggingface.co/opensearch-project/opensearch-neural-sparse-encoding-asym-v1",
   "created_at": "2026-11-04T15:23:28.000Z",
-  "updated_at": "2026-11-06T05:06:19.000Z",
+  "updated_at": "2026-11-13T02:12:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "sentence-transformers",
+    "onnx",
     "safetensors",
     "sparse-encoder",
     "learned-sparse",
@@ -24,7 +25,6 @@
     "sparse",
     "splade",
     "asymmetric",
-    "custom_code",
     "feature-extraction",
     "en",
     "license:apache-2.0",
@@ -40,6 +40,7 @@
   "storage_human": "944 MB",
   "base_model": null,
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

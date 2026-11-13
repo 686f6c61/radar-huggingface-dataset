@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "RousingSea7309/nllb-600M-lora",
+  "slug": "rousingsea7309-nllb-600m-lora",
+  "author": "RousingSea7309",
+  "url": "https://huggingface.co/RousingSea7309/nllb-600M-lora",
+  "created_at": "2026-11-11T17:19:03.000Z",
+  "updated_at": "2026-11-13T12:30:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "fr",
+    "ar",
+    "sw"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "translation",
+    "lora",
+    "nllb",
+    "en",
+    "fr",
+    "ar",
+    "sw",
+    "base_model:facebook/nllb-200-distilled-600M",
+    "base_model:adapter:facebook/nllb-200-distilled-600M",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 294916739,
+  "storage_human": "295 MB",
+  "base_model": "facebook/nllb-200-distilled-600M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

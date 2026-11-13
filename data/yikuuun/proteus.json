@@ -5,10 +5,10 @@
   "author": "yikuuun",
   "url": "https://huggingface.co/yikuuun/proteus",
   "created_at": "2026-11-04T04:30:41.000Z",
-  "updated_at": "2026-11-04T05:51:08.000Z",
+  "updated_at": "2026-11-12T12:04:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "other",
   "library": null,
   "languages": [],
   "tags": [
@@ -17,6 +17,8 @@
     "protein-engineering",
     "directed-evolution",
     "mutation-effect-prediction",
+    "other",
+    "arxiv:2611.13348",
     "license:apache-2.0",
     "region:us"
   ],

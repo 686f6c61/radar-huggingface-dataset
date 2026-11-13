@@ -5,7 +5,7 @@
   "author": "q-project",
   "url": "https://huggingface.co/q-project/Qwen2.5-0.5B-Instruct-qpack",
   "created_at": "2026-11-12T20:26:46.000Z",
-  "updated_at": "2026-11-12T20:27:36.000Z",
+  "updated_at": "2026-11-12T22:33:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

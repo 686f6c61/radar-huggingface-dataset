@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "farefaine/qal-large",
+  "slug": "farefaine-qal-large",
+  "author": "farefaine",
+  "url": "https://huggingface.co/farefaine/qal-large",
+  "created_at": "2026-11-13T07:48:32.000Z",
+  "updated_at": "2026-11-13T07:49:49.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "ti"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "Tigrinya",
+    "low-resource-language",
+    "small-language-models",
+    "gpt",
+    "qal",
+    "text-generation",
+    "ti",
+    "dataset:farefaine/tigrinya-pretraining",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 55294464,
+  "parameters_human": "55.3M",
+  "storage_bytes": 221187456,
+  "storage_human": "221 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

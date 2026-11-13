@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/tiny-random-granite-GGUF",
+  "slug": "mradermacher-tiny-random-granite-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/tiny-random-granite-GGUF",
+  "created_at": "2025-06-07T21:58:50.000Z",
+  "updated_at": "2026-11-13T10:57:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:katuni4ka/tiny-random-granite",
+    "base_model:quantized:katuni4ka/tiny-random-granite",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 97,
+  "trending_score": 0,
+  "parameters": 1665536,
+  "parameters_human": "1.7M",
+  "storage_bytes": 43200640,
+  "storage_human": "43 MB",
+  "base_model": "katuni4ka/tiny-random-granite",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

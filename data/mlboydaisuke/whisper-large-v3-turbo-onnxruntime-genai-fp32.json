@@ -5,7 +5,7 @@
   "author": "mlboydaisuke",
   "url": "https://huggingface.co/mlboydaisuke/whisper-large-v3-turbo-onnxruntime-genai-fp32",
   "created_at": "2026-11-09T21:22:39.000Z",
-  "updated_at": "2026-11-12T00:28:19.000Z",
+  "updated_at": "2026-11-12T14:41:52.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "caspar/ACT-so101-pickplace-sim-150-2500-v1.0",
+  "slug": "caspar-act-so101-pickplace-sim-150-2500-v1-0",
+  "author": "caspar",
+  "url": "https://huggingface.co/caspar/ACT-so101-pickplace-sim-150-2500-v1.0",
+  "created_at": "2026-11-13T06:00:19.000Z",
+  "updated_at": "2026-11-13T06:00:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "so101",
+    "simulation",
+    "robotics",
+    "dataset:caspar/so101_pickplace_sim_150",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51617414,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206510008,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Caspar — Entrepreneur Alsacien depuis 1959",
+      "url": "https://www.caspar.fr/",
+      "snippet": "J’intègre Caspar et deviens responsable technique. Je structure le service, informatise la société et lance l'activité fermeture (portes, …"
+    },
+    {
+      "title": "Caspar | Expert en stores, pergolas, vérandas et fermetures",
+      "url": "https://casparstores.com/",
+      "snippet": "Nov 3, 2026 · Depuis sa création, il y a 60 ans, Caspar met le conseil au cœur de son métier et fait de votre satisfaction une priorité. …"
+    },
+    {
+      "title": "Magasin et Showroom | Vivez l'expérience de vos Envies | Caspar",
+      "url": "https://casparstores.com/showroom-caspar/",
+      "snippet": "Caspar, c’est le sur-mesure absolu dans le strict respect de vos moyens. Nos conseillers, présents sur place et spécialisés dans les …"
+    },
+    {
+      "title": "Caspar — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Caspar",
+      "snippet": "Prénom Caspar est un prénom masculin équivalent de Gaspard. Pour l'ensemble des articles sur les personnes portant ce prénom, …"
+    },
+    {
+      "title": "Critères de classification de CASPAR pour le rhumatisme psoriasique",
+      "url": "https://rhumato.info/fiches-pratiques2/174-rhumatisme-psoriasique/1882-criteteres-diagnostiques-de-caspar-pour-le-rhumatisme-psoriasiques",
+      "snippet": "Oct 5, 2026 · Critères de classification de CASPAR pour le rhumatisme psoriasique Détails Mis à jour le 20 octobre 2014"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "MouseWurX/gpt-oss-120b-REAP-38B-UNHEALED-GGUF",
+  "slug": "mousewurx-gpt-oss-120b-reap-38b-unhealed-gguf",
+  "author": "MouseWurX",
+  "url": "https://huggingface.co/MouseWurX/gpt-oss-120b-REAP-38B-UNHEALED-GGUF",
+  "created_at": "2026-11-13T08:10:07.000Z",
+  "updated_at": "2026-11-13T08:11:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "moe",
+    "reap",
+    "pruned",
+    "base_model:openai/gpt-oss-120b",
+    "base_model:quantized:openai/gpt-oss-120b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 38858890500,
+  "parameters_human": "38.86B",
+  "storage_bytes": 21840477728,
+  "storage_human": "21.8 GB",
+  "base_model": "openai/gpt-oss-120b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

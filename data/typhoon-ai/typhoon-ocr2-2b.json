@@ -5,7 +5,7 @@
   "author": "typhoon-ai",
   "url": "https://huggingface.co/typhoon-ai/typhoon-ocr2-2b",
   "created_at": "2026-11-05T20:06:26.000Z",
-  "updated_at": "2026-11-12T07:51:50.000Z",
+  "updated_at": "2026-11-13T08:05:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -35,11 +35,11 @@
     "region:us"
   ],
   "likes": 15,
-  "downloads_30d": 838,
+  "downloads_30d": 983,
   "trending_score": 14,
   "parameters": 2213241664,
   "parameters_human": "2.21B",
-  "storage_bytes": 4454993585,
+  "storage_bytes": 4456401207,
   "storage_human": "4.5 GB",
   "base_model": "infly/Infinity-Parser2-Flash",
   "formats": [

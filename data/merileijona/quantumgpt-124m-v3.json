@@ -5,7 +5,7 @@
   "author": "merileijona",
   "url": "https://huggingface.co/merileijona/quantumgpt-124m-v3",
   "created_at": "2026-08-25T14:24:57.000Z",
-  "updated_at": "2026-08-25T14:26:17.000Z",
+  "updated_at": "2026-11-08T17:17:16.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 43,
   "trending_score": 0,
   "parameters": 124082688,
   "parameters_human": "124.1M",

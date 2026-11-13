@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "FrancescoArno94/Qwen3-1.7B-GRPO-16bit-DAPO-math",
+  "slug": "francescoarno94-qwen3-1-7b-grpo-16bit-dapo-math",
+  "author": "FrancescoArno94",
+  "url": "https://huggingface.co/FrancescoArno94/Qwen3-1.7B-GRPO-16bit-DAPO-math",
+  "created_at": "2026-11-13T11:34:54.000Z",
+  "updated_at": "2026-11-13T11:35:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:FrancescoArno94/Qwen3-1.7B-GRPO-16bit-DAPO-math",
+    "base_model:finetune:FrancescoArno94/Qwen3-1.7B-GRPO-16bit-DAPO-math",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608220,
+  "storage_human": "3.5 GB",
+  "base_model": "FrancescoArno94/Qwen3-1.7B-GRPO-16bit-DAPO-math",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

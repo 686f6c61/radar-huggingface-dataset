@@ -5,7 +5,7 @@
   "author": "tartuNLP",
   "url": "https://huggingface.co/tartuNLP/Llama-3.1-EstLLM-70B-TehisaruBaromeeter-Reward",
   "created_at": "2026-11-11T20:37:10.000Z",
-  "updated_at": "2026-11-11T21:07:28.000Z",
+  "updated_at": "2026-11-12T10:48:42.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 36,
   "trending_score": 0,
   "parameters": 69503041536,
   "parameters_human": "69.50B",

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Neurobrix/whisper-large-nbx",
+  "slug": "neurobrix-whisper-large-nbx",
+  "author": "Neurobrix",
+  "url": "https://huggingface.co/Neurobrix/whisper-large-nbx",
+  "created_at": "2026-11-13T08:22:07.000Z",
+  "updated_at": "2026-11-13T08:25:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "neurobrix",
+  "languages": [],
+  "tags": [
+    "neurobrix",
+    "nbx",
+    "triton",
+    "local-inference",
+    "stt",
+    "automatic-speech-recognition",
+    "base_model:openai/whisper-large",
+    "base_model:finetune:openai/whisper-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "openai/whisper-large",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NeuroBrix Documentation | NeuroBrix Docs",
+      "url": "https://docs.neurobrix.org/",
+      "snippet": "One engine, one .nbx container format, one command set, and the full catalogue of models it runs."
+    }
+  ]
+}

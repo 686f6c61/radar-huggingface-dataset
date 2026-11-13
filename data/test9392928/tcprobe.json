@@ -5,18 +5,14 @@
   "author": "test9392928",
   "url": "https://huggingface.co/test9392928/tcprobe",
   "created_at": "2026-11-12T10:25:01.000Z",
-  "updated_at": "2026-11-12T10:46:40.000Z",
+  "updated_at": "2026-11-13T06:41:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
   "library": null,
   "languages": [],
   "tags": [
-    "safetensors",
-    "bert",
-    "token-classification",
-    "license:apache-2.0",
-    "8-bit",
+    "gguf",
     "region:us"
   ],
   "likes": 0,
@@ -24,11 +20,11 @@
   "trending_score": 0,
   "parameters": 1,
   "parameters_human": "1",
-  "storage_bytes": 69,
-  "storage_human": "69 B",
+  "storage_bytes": 593,
+  "storage_human": "593 B",
   "base_model": null,
   "formats": [
-    "safetensors"
+    "gguf"
   ],
   "is_conversational": false,
   "gated": false,

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "moonbox-dev/BEN2-ONNX",
+  "slug": "moonbox-dev-ben2-onnx",
+  "author": "moonbox-dev",
+  "url": "https://huggingface.co/moonbox-dev/BEN2-ONNX",
+  "created_at": "2026-11-13T09:42:49.000Z",
+  "updated_at": "2026-11-13T09:44:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "moonbox",
+    "ben2",
+    "background-removal",
+    "image-segmentation",
+    "arxiv:2501.06230",
+    "base_model:PramaLLC/BEN2",
+    "base_model:quantized:PramaLLC/BEN2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 466664096,
+  "storage_human": "467 MB",
+  "base_model": "PramaLLC/BEN2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

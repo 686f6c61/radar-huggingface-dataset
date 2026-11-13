@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "nace-ai/drex-max-v1-d3-GGUF",
+  "slug": "nace-ai-drex-max-v1-d3-gguf",
+  "author": "nace-ai",
+  "url": "https://huggingface.co/nace-ai/drex-max-v1-d3-GGUF",
+  "created_at": "2026-11-13T06:06:51.000Z",
+  "updated_at": "2026-11-13T06:19:08.000Z",
+  "license": "nace-ai-open-rail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "decision-model",
+    "vllm-d3",
+    "base_model:nace-ai/drex-max-v1",
+    "base_model:quantized:nace-ai/drex-max-v1",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 32330498016,
+  "storage_human": "32.3 GB",
+  "base_model": "nace-ai/drex-max-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

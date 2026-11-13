@@ -5,7 +5,7 @@
   "author": "stefanocarrera",
   "url": "https://huggingface.co/stefanocarrera/kic_M_Qwen3-4B_python_t0.5_g9_run0",
   "created_at": "2026-10-27T11:43:05.000Z",
-  "updated_at": "2026-10-27T11:43:17.000Z",
+  "updated_at": "2026-11-12T10:26:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 143610542,
-  "storage_human": "144 MB",
+  "storage_bytes": 275798430,
+  "storage_human": "276 MB",
   "base_model": "unsloth/Qwen3-4B-Base-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

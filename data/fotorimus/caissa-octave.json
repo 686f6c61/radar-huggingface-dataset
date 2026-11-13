@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "fotorimus/caissa-octave",
+  "slug": "fotorimus-caissa-octave",
+  "author": "fotorimus",
+  "url": "https://huggingface.co/fotorimus/caissa-octave",
+  "created_at": "2026-11-13T05:37:51.000Z",
+  "updated_at": "2026-11-13T05:50:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9037072,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

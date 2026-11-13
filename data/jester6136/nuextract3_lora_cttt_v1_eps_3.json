@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "jester6136/nuextract3_lora_cttt_v1_eps_3",
+  "slug": "jester6136-nuextract3_lora_cttt_v1_eps_3",
+  "author": "jester6136",
+  "url": "https://huggingface.co/jester6136/nuextract3_lora_cttt_v1_eps_3",
+  "created_at": "2026-11-13T11:04:07.000Z",
+  "updated_at": "2026-11-13T11:04:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "nuextract3",
+    "kie",
+    "vietnamese",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129934448,
+  "storage_human": "130 MB",
+  "base_model": "NuExtract3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

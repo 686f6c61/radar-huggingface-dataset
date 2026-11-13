@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/diffusiongemma-26B-A4B-it-mic",
   "created_at": "2026-11-05T13:04:39.000Z",
-  "updated_at": "2026-11-11T16:16:18.000Z",
+  "updated_at": "2026-11-12T10:29:50.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 566,
+  "downloads_30d": 699,
   "trending_score": 0,
   "parameters": 18689388,
   "parameters_human": "18.7M",

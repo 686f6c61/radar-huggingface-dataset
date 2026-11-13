@@ -4,8 +4,8 @@
   "slug": "mcptester0606-myawesomemodel-testrepo",
   "author": "mcptester0606",
   "url": "https://huggingface.co/mcptester0606/MyAwesomeModel-TestRepo",
-  "created_at": "2026-11-10T02:26:16.000Z",
-  "updated_at": "2026-11-10T02:26:44.000Z",
+  "created_at": "2026-11-13T03:41:50.000Z",
+  "updated_at": "2026-11-13T03:42:00.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 1910,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-11-11T06:15:56.113Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

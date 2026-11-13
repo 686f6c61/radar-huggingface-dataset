@@ -5,7 +5,7 @@
   "author": "huggingface-mic",
   "url": "https://huggingface.co/huggingface-mic/Kimi-K2.5-mic",
   "created_at": "2026-11-05T13:51:38.000Z",
-  "updated_at": "2026-11-11T16:26:59.000Z",
+  "updated_at": "2026-11-12T10:29:53.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 555,
+  "downloads_30d": 692,
   "trending_score": 0,
   "parameters": 21464388,
   "parameters_human": "21.5M",

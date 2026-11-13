@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "akal-lm/Akal-Embed-GGUF",
+  "slug": "akal-lm-akal-embed-gguf",
+  "author": "akal-lm",
+  "url": "https://huggingface.co/akal-lm/Akal-Embed-GGUF",
+  "created_at": "2026-11-13T10:23:31.000Z",
+  "updated_at": "2026-11-13T10:23:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "gguf",
+  "languages": [
+    "id",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "sentence-transformers",
+    "feature-extraction",
+    "embeddings",
+    "rag",
+    "edge-ai",
+    "cpu-inference",
+    "llama-cpp",
+    "indonesian-nlp",
+    "importance-matrix",
+    "id",
+    "en",
+    "base_model:LazarusNLP/all-indo-e5-small-v4",
+    "base_model:finetune:LazarusNLP/all-indo-e5-small-v4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 847334,
+  "storage_human": "847334 B",
+  "base_model": "LazarusNLP/all-indo-e5-small-v4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spiruline Bio Française Artisanale | Akal - Producteur en Normandie",
+      "url": "https://akal-spiruline.com/",
+      "snippet": "Découvrez la spiruline bio française Akal, cultivée artisanalement en Normandie. Superaliment naturel, écologique et éthique pour …"
+    },
+    {
+      "title": "Akal España | Akal",
+      "url": "https://www.akal.com/",
+      "snippet": "Dirección Sector Foresta nº 1 28760 Tres Cantos España Contacta con nosotros atencion.cliente@akal.com 918 061 996 Aviso legal …"
+    },
+    {
+      "title": "Spiruline - AKAL",
+      "url": "https://akal-spiruline.com/categorie-produit/racine/tous-nos-produits/spiruline/",
+      "snippet": "La Spiruline naturelle AKAL est un joyau de bien-être naturel et BIOlogique. Notre Spiruline française est produite dans notre éco …"
+    },
+    {
+      "title": "AKAL - Restaurant (@akal.restaurant) • Instagram photos and videos",
+      "url": "https://www.instagram.com/akal.restaurant/",
+      "snippet": "22K Followers, 7 Following, 61 Posts - AKAL - Restaurant (@akal.restaurant) on Instagram: \"Bouskoura - Cité du cheval 🕛 De 9h à …"
+    },
+    {
+      "title": "Menu Akal",
+      "url": "https://akalrestaurant.ma/menu.pdf?v=2",
+      "snippet": "Akal Trio ’Inimitable Chocolat, fraise, vanille, Oreo et chantilly L'Irrésistible Vanille, chocolat, nougat, éclats de meringue, sauce …"
+    }
+  ]
+}

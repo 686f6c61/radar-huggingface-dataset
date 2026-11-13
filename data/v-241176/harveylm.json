@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "V-241176/HarveyLM",
+  "slug": "v-241176-harveylm",
+  "author": "V-241176",
+  "url": "https://huggingface.co/V-241176/HarveyLM",
+  "created_at": "2026-11-13T12:19:43.000Z",
+  "updated_at": "2026-11-13T12:20:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "harveylm",
+    "legal",
+    "legal-llm",
+    "alibi",
+    "causal-lm",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 210013216,
+  "parameters_human": "210.0M",
+  "storage_bytes": 840073896,
+  "storage_human": "840 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

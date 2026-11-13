@@ -1,0 +1,143 @@
+{
+  "schema": 1,
+  "id": "bqbbao6/vietnamese-legal-embedding_v2",
+  "slug": "bqbbao6-vietnamese-legal-embedding_v2",
+  "author": "bqbbao6",
+  "url": "https://huggingface.co/bqbbao6/vietnamese-legal-embedding_v2",
+  "created_at": "2026-11-13T09:23:12.000Z",
+  "updated_at": "2026-11-13T09:42:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:506134",
+    "loss:CachedMultipleNegativesRankingLoss",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "arxiv:1807.03748",
+    "base_model:intfloat/multilingual-e5-base",
+    "base_model:finetune:intfloat/multilingual-e5-base",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129280083,
+  "storage_human": "1.1 GB",
+  "base_model": "intfloat/multilingual-e5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "val eval",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.859
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val eval",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.995
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val eval",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.999
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val eval",
+      "metric": "Cosine Accuracy@10",
+      "value": 1
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val eval",
+      "metric": "Cosine Precision@1",
+      "value": 0.859
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val eval",
+      "metric": "Cosine Precision@3",
+      "value": 0.3316666666666666
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val eval",
+      "metric": "Cosine Precision@5",
+      "value": 0.19980000000000003
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val eval",
+      "metric": "Cosine Precision@10",
+      "value": 0.10000000000000002
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val eval",
+      "metric": "Cosine Recall@1",
+      "value": 0.859
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val eval",
+      "metric": "Cosine Recall@3",
+      "value": 0.995
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val eval",
+      "metric": "Cosine Recall@5",
+      "value": 0.999
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val eval",
+      "metric": "Cosine Recall@10",
+      "value": 1
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val eval",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.9450987070475297
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val eval",
+      "metric": "Cosine Mrr@10",
+      "value": 0.9259083333333336
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "val eval",
+      "metric": "Cosine Map@100",
+      "value": 0.9259083333333333
+    }
+  ],
+  "sources": []
+}

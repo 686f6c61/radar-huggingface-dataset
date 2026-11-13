@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "SDim1973/KF-1202_loras",
+  "slug": "sdim1973-kf-1202_loras",
+  "author": "SDim1973",
+  "url": "https://huggingface.co/SDim1973/KF-1202_loras",
+  "created_at": "2026-11-13T10:25:07.000Z",
+  "updated_at": "2026-11-13T10:25:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98089410602,
+  "storage_human": "98.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Bhuvneesh/Qwen2.5-VL-3B-Instruct-Q4_K_M-GGUF",
+  "slug": "bhuvneesh-qwen2-5-vl-3b-instruct-q4_k_m-gguf",
+  "author": "Bhuvneesh",
+  "url": "https://huggingface.co/Bhuvneesh/Qwen2.5-VL-3B-Instruct-Q4_K_M-GGUF",
+  "created_at": "2026-11-13T07:36:11.000Z",
+  "updated_at": "2026-11-13T07:36:23.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "multimodal",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-VL-3B-Instruct",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929901088,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "kungfupanda12/bolo-tiny",
+  "slug": "kungfupanda12-bolo-tiny",
+  "author": "kungfupanda12",
+  "url": "https://huggingface.co/kungfupanda12/bolo-tiny",
+  "created_at": "2026-11-13T05:45:45.000Z",
+  "updated_at": "2026-11-13T05:45:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "pytorch",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "hinglish",
+    "code-switching",
+    "intent-classification",
+    "slot-filling",
+    "spoken-language-understanding",
+    "on-device",
+    "token-classification",
+    "hi",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 695768,
+  "parameters_human": "695768",
+  "storage_bytes": 9200383,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

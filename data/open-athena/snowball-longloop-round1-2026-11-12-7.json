@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "open-athena/Snowball-LongLoop-Round1-2026.11.12.7",
+  "slug": "open-athena-snowball-longloop-round1-2026-11-12-7",
+  "author": "open-athena",
+  "url": "https://huggingface.co/open-athena/Snowball-LongLoop-Round1-2026.11.12.7",
+  "created_at": "2026-11-13T05:04:03.000Z",
+  "updated_at": "2026-11-13T05:06:08.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "grug_moe",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 67078882816,
+  "parameters_human": "67.08B",
+  "storage_bytes": 134177536683,
+  "storage_human": "134.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    }
+  ]
+}

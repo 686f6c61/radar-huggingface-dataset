@@ -5,7 +5,7 @@
   "author": "james58899",
   "url": "https://huggingface.co/james58899/Hy-MT2-1.8B-ONNX",
   "created_at": "2026-10-29T09:41:07.000Z",
-  "updated_at": "2026-10-29T10:19:40.000Z",
+  "updated_at": "2026-11-12T20:15:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 4378709142,
-  "storage_human": "4.4 GB",
+  "storage_bytes": 5247435308,
+  "storage_human": "5.2 GB",
   "base_model": "tencent/Hy-MT2-1.8B",
   "formats": [
     "onnx"

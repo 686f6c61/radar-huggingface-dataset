@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "green-coding/Green-Coding-Gemma4-12B-Q4_K_M",
+  "slug": "green-coding-green-coding-gemma4-12b-q4_k_m",
+  "author": "green-coding",
+  "url": "https://huggingface.co/green-coding/Green-Coding-Gemma4-12B-Q4_K_M",
+  "created_at": "2026-11-11T08:33:45.000Z",
+  "updated_at": "2026-11-13T08:37:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 7381383200,
+  "storage_human": "7.4 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Green - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Green",
+      "snippet": "Green is the color between cyan and yellow on the visible spectrum. It has 295–350 different shades. It is evoked by light which has …"
+    },
+    {
+      "title": "Des solutions numériques pour les particuliers et les entreprises",
+      "url": "https://www.green.ch/fr",
+      "snippet": "Green propose des solutions numériques pour les particuliers et les entreprises dans les domaines les plus divers: centres de …"
+    },
+    {
+      "title": "Définitions : green - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/green/38075",
+      "snippet": "green - Définitions Français : Retrouvez la définition de green... - synonymes, homonymes, difficultés, citations."
+    },
+    {
+      "title": "Shades of green - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Shades_of_green",
+      "snippet": "Varieties of the color green may differ in hue, chroma (also called saturation or intensity) or lightness (or value, tone, or brightness), …"
+    }
+  ]
+}

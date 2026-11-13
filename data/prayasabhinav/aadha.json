@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "prayasabhinav/aadha",
+  "slug": "prayasabhinav-aadha",
+  "author": "prayasabhinav",
+  "url": "https://huggingface.co/prayasabhinav/aadha",
+  "created_at": "2026-11-13T05:21:29.000Z",
+  "updated_at": "2026-11-13T05:21:48.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "en",
+    "base_model:microsoft/MiniLM-L12-H384-uncased",
+    "base_model:finetune:microsoft/MiniLM-L12-H384-uncased",
+    "license:cc-by-4.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33361540,
+  "parameters_human": "33.4M",
+  "storage_bytes": 135252008,
+  "storage_human": "135 MB",
+  "base_model": "microsoft/MiniLM-L12-H384-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

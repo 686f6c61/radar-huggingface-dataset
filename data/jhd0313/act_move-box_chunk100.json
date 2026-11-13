@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "jhd0313/act_move-box_chunk100",
+  "slug": "jhd0313-act_move-box_chunk100",
+  "author": "jhd0313",
+  "url": "https://huggingface.co/jhd0313/act_move-box_chunk100",
+  "created_at": "2026-11-13T11:41:41.000Z",
+  "updated_at": "2026-11-13T11:42:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:jhd0313/move-box_20261008_100955",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714912,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to remove punctuation marks from a string in Python 3.x using ...",
+      "url": "https://stackoverflow.com/questions/34293875/how-to-remove-punctuation-marks-from-a-string-in-python-3-x-using-translate",
+      "snippet": "You have to create a translation table using maketrans that you pass to the str.translate method. In Python 3.1 and newer, maketrans …"
+    }
+  ]
+}

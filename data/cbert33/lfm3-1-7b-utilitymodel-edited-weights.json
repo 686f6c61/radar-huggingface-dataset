@@ -5,7 +5,7 @@
   "author": "cbert33",
   "url": "https://huggingface.co/cbert33/LFM3-1.7B-UtilityModel-edited-weights",
   "created_at": "2026-11-12T13:34:39.000Z",
-  "updated_at": "2026-11-12T15:39:08.000Z",
+  "updated_at": "2026-11-12T17:01:13.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

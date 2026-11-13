@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "autotrust/TTS-V1",
+  "slug": "autotrust-tts-v1",
+  "author": "autotrust",
+  "url": "https://huggingface.co/autotrust/TTS-V1",
+  "created_at": "2026-11-13T07:51:05.000Z",
+  "updated_at": "2026-11-13T08:21:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 114800322,
+  "parameters_human": "114.8M",
+  "storage_bytes": 466951539,
+  "storage_human": "467 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

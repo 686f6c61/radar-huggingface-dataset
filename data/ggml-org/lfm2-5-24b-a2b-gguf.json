@@ -5,7 +5,7 @@
   "author": "ggml-org",
   "url": "https://huggingface.co/ggml-org/LFM2.5-24B-A2B-GGUF",
   "created_at": "2026-10-15T14:17:59.000Z",
-  "updated_at": "2026-11-08T04:01:58.000Z",
+  "updated_at": "2026-11-12T09:58:36.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -23,7 +23,7 @@
     "conversational"
   ],
   "likes": 4,
-  "downloads_30d": 6317,
+  "downloads_30d": 6509,
   "trending_score": 0,
   "parameters": 23971587712,
   "parameters_human": "23.97B",

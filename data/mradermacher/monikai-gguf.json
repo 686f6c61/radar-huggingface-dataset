@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/monikAI-GGUF",
+  "slug": "mradermacher-monikai-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/monikAI-GGUF",
+  "created_at": "2025-05-23T20:47:09.000Z",
+  "updated_at": "2026-11-13T10:57:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "conversational",
+    "en",
+    "base_model:Kryptone/monikAI",
+    "base_model:quantized:Kryptone/monikAI",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 89,
+  "trending_score": 0,
+  "parameters": 354823168,
+  "parameters_human": "354.8M",
+  "storage_bytes": 3368461056,
+  "storage_human": "3.4 GB",
+  "base_model": "Kryptone/monikAI",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

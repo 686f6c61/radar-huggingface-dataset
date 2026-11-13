@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "wrldsuksgo2mars/GLM-5.3-EXL3-K4-MC",
+  "slug": "wrldsuksgo2mars-glm-5-3-exl3-k4-mc",
+  "author": "wrldsuksgo2mars",
+  "url": "https://huggingface.co/wrldsuksgo2mars/GLM-5.3-EXL3-K4-MC",
+  "created_at": "2026-11-13T04:47:50.000Z",
+  "updated_at": "2026-11-13T05:17:48.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "exl3",
+    "quantized",
+    "dataset:wrldsuksgo2mars/agentic-quant-panel-v1",
+    "base_model:zai-org/GLM-5.3-BF16",
+    "base_model:quantized:zai-org/GLM-5.3-BF16",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 208869841536,
+  "parameters_human": "208.87B",
+  "storage_bytes": 434176844215,
+  "storage_human": "434.2 GB",
+  "base_model": "zai-org/GLM-5.3-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

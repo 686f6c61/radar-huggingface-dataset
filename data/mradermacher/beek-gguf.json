@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Beek-GGUF",
   "created_at": "2026-11-13T01:32:08.000Z",
-  "updated_at": "2026-11-13T02:08:54.000Z",
+  "updated_at": "2026-11-13T03:03:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -39,8 +39,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 93225572064,
-  "storage_human": "93.2 GB",
+  "storage_bytes": 190780460832,
+  "storage_human": "190.8 GB",
   "base_model": "UTF-ai/Beek",
   "formats": [
     "gguf"

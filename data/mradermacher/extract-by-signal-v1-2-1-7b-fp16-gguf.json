@@ -5,14 +5,18 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/extract-by-signal-v1.2-1.7B-FP16-GGUF",
   "created_at": "2026-11-12T22:15:47.000Z",
-  "updated_at": "2026-11-12T22:21:24.000Z",
+  "updated_at": "2026-11-12T22:33:57.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
-  "library": null,
+  "library": "transformers",
   "languages": [],
   "tags": [
+    "transformers",
     "gguf",
+    "en",
+    "base_model:seth-veri-llm/extract-by-signal-v1.2-1.7B-FP16",
+    "base_model:quantized:seth-veri-llm/extract-by-signal-v1.2-1.7B-FP16",
     "endpoints_compatible",
     "region:us",
     "conversational"
@@ -24,7 +28,7 @@
   "parameters_human": "1.72B",
   "storage_bytes": 15959971968,
   "storage_human": "16.0 GB",
-  "base_model": null,
+  "base_model": "seth-veri-llm/extract-by-signal-v1.2-1.7B-FP16",
   "formats": [
     "gguf"
   ],

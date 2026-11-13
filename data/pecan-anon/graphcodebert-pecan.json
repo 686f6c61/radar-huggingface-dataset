@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "pecan-anon/graphcodebert-pecan",
+  "slug": "pecan-anon-graphcodebert-pecan",
+  "author": "pecan-anon",
+  "url": "https://huggingface.co/pecan-anon/graphcodebert-pecan",
+  "created_at": "2026-11-13T06:40:41.000Z",
+  "updated_at": "2026-11-13T06:42:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "base_model:microsoft/graphcodebert-base",
+    "base_model:finetune:microsoft/graphcodebert-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124890943,
+  "parameters_human": "124.9M",
+  "storage_bytes": 499587916,
+  "storage_human": "500 MB",
+  "base_model": "microsoft/graphcodebert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

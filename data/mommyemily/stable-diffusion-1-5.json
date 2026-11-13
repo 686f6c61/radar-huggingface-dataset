@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "MommyEmily/stable-diffusion-1.5",
+  "slug": "mommyemily-stable-diffusion-1-5",
+  "author": "MommyEmily",
+  "url": "https://huggingface.co/MommyEmily/stable-diffusion-1.5",
+  "created_at": "2026-11-13T07:52:35.000Z",
+  "updated_at": "2026-11-13T07:52:35.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "en",
+    "base_model:runwayml/stable-diffusion-v1-5",
+    "base_model:finetune:runwayml/stable-diffusion-v1-5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8530468710,
+  "storage_human": "8.5 GB",
+  "base_model": "runwayml/stable-diffusion-v1-5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

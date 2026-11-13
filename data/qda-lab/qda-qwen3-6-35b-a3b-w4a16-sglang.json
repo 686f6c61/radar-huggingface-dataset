@@ -5,7 +5,7 @@
   "author": "qda-lab",
   "url": "https://huggingface.co/qda-lab/QDA-Qwen3.6-35B-A3B-W4A16-SGLang",
   "created_at": "2026-11-07T19:55:50.000Z",
-  "updated_at": "2026-11-11T14:33:04.000Z",
+  "updated_at": "2026-11-12T20:53:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

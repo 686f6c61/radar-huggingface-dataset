@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "trl-internal-testing/tiny-DeepseekV3ForCausalLM",
+  "slug": "trl-internal-testing-tiny-deepseekv3forcausallm",
+  "author": "trl-internal-testing",
+  "url": "https://huggingface.co/trl-internal-testing/tiny-DeepseekV3ForCausalLM",
+  "created_at": "2025-06-04T16:12:29.000Z",
+  "updated_at": "2026-11-13T07:22:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v3",
+    "text-generation",
+    "trl",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 34419,
+  "trending_score": 0,
+  "parameters": 10139808,
+  "parameters_human": "10.1M",
+  "storage_bytes": 304804872,
+  "storage_human": "305 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

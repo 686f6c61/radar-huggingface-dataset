@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "marcosremar2/prosatts-work",
+  "slug": "marcosremar2-prosatts-work",
+  "author": "marcosremar2",
+  "url": "https://huggingface.co/marcosremar2/prosatts-work",
+  "created_at": "2026-11-12T19:51:28.000Z",
+  "updated_at": "2026-11-13T04:48:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt",
+    "fr"
+  ],
+  "tags": [
+    "tts",
+    "kokoro",
+    "istft",
+    "synthetic-voice",
+    "pt",
+    "fr",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1167828338,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IVA Living Expenses: Complete 2026 Guide to What You Can Keep",
+      "url": "https://ukdebtguide.com/iva-living-expenses/",
+      "snippet": "Jun 27, 2026 · This guide explains how IVA living expenses work in 2026, what categories of expenditure are typically allowed, and …"
+    }
+  ]
+}

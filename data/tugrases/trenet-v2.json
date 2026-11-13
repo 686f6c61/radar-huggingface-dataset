@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Tugrases/trenet-v2",
+  "slug": "tugrases-trenet-v2",
+  "author": "Tugrases",
+  "url": "https://huggingface.co/Tugrases/trenet-v2",
+  "created_at": "2026-11-12T19:27:27.000Z",
+  "updated_at": "2026-11-12T19:50:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "turkish",
+    "small-language-model",
+    "experimental",
+    "text-generation",
+    "tr",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 35113176,
+  "parameters_human": "35.1M",
+  "storage_bytes": 179264878,
+  "storage_human": "179 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

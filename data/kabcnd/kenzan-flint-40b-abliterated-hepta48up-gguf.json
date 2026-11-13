@@ -5,7 +5,7 @@
   "author": "kabcnd",
   "url": "https://huggingface.co/kabcnd/Kenzan-Flint-40B-Abliterated-Hepta48Up-GGUF",
   "created_at": "2026-11-12T13:34:31.000Z",
-  "updated_at": "2026-11-12T13:39:00.000Z",
+  "updated_at": "2026-11-12T14:48:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -45,8 +45,8 @@
   "trending_score": 0,
   "parameters": 39785287456,
   "parameters_human": "39.79B",
-  "storage_bytes": 10490575857,
-  "storage_human": "10.5 GB",
+  "storage_bytes": 20978357169,
+  "storage_human": "21.0 GB",
   "base_model": "orcarouter/Flint-abliterated-GGUF",
   "formats": [
     "gguf"

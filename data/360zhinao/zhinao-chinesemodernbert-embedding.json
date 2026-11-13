@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "360ZhiNao/Zhinao-ChineseModernBert-Embedding",
+  "slug": "360zhinao-zhinao-chinesemodernbert-embedding",
+  "author": "360ZhiNao",
+  "url": "https://huggingface.co/360ZhiNao/Zhinao-ChineseModernBert-Embedding",
+  "created_at": "2026-11-13T07:20:58.000Z",
+  "updated_at": "2026-11-13T07:20:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "zh",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 227018496,
+  "parameters_human": "227.0M",
+  "storage_bytes": 919510873,
+  "storage_human": "920 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "搜索",
+      "url": "https://modelscope.cn/search?search=ModernBERT",
+      "snippet": "26.12.2024 ... 360zhinao/Zhinao-ChineseModernBert. PyTorchmodernbertSafetensors. 奇虎 ... 最佳实践>. Embedding训练. 目前已经支持的模型有：modernbert embedding ..."
+    }
+  ]
+}

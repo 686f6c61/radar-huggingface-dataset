@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "skala3-telescope/finance-language-embedding",
+  "slug": "skala3-telescope-finance-language-embedding",
+  "author": "skala3-telescope",
+  "url": "https://huggingface.co/skala3-telescope/finance-language-embedding",
+  "created_at": "2026-11-13T10:28:10.000Z",
+  "updated_at": "2026-11-13T10:49:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "feature-extraction",
+    "finance",
+    "dart",
+    "k-ifrs",
+    "account-normalization",
+    "sentence-similarity",
+    "ko",
+    "base_model:dragonkue/snowflake-arctic-embed-l-v2.0-ko",
+    "base_model:finetune:dragonkue/snowflake-arctic-embed-l-v2.0-ko",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3029333082,
+  "storage_human": "3.0 GB",
+  "base_model": "dragonkue/snowflake-arctic-embed-l-v2.0-ko, upskyy/kf-deberta-multitask",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
