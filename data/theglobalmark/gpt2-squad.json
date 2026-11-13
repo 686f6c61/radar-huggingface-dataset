@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "theglobalmark/gpt2-squad",
+  "slug": "theglobalmark-gpt2-squad",
+  "author": "theglobalmark",
+  "url": "https://huggingface.co/theglobalmark/gpt2-squad",
+  "created_at": "2026-11-12T22:39:38.000Z",
+  "updated_at": "2026-11-12T22:39:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81912576,
+  "parameters_human": "81.9M",
+  "storage_bytes": 327657928,
+  "storage_human": "328 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

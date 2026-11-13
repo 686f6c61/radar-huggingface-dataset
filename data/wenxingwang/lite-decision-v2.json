@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "wenxingwang/lite-decision-v2",
+  "slug": "wenxingwang-lite-decision-v2",
+  "author": "wenxingwang",
+  "url": "https://huggingface.co/wenxingwang/lite-decision-v2",
+  "created_at": "2026-11-13T01:47:26.000Z",
+  "updated_at": "2026-11-13T01:48:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:vllm-sr/d3-lite",
+    "base_model:finetune:vllm-sr/d3-lite",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1706027688,
+  "storage_human": "1.7 GB",
+  "base_model": "vllm-sr/d3-lite",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

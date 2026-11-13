@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Phi-4-mini-reasoning-Tensix-BFP4-MLP",
   "created_at": "2026-11-12T03:40:14.000Z",
-  "updated_at": "2026-11-12T03:41:13.000Z",
+  "updated_at": "2026-11-13T04:18:55.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": 4450618368,
   "parameters_human": "4.45B",

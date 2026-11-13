@@ -5,8 +5,8 @@
   "author": "andkondev",
   "url": "https://huggingface.co/andkondev/tts-voices",
   "created_at": "2026-10-25T00:14:02.000Z",
-  "updated_at": "2026-10-25T00:15:21.000Z",
-  "license": "apache-2.0-and-cc-by-4.0",
+  "updated_at": "2026-11-12T22:45:48.000Z",
+  "license": "apache-2.0-and-cc-by-4.0-and-openrail-m",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
   "library": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 239767027,
-  "storage_human": "240 MB",
+  "storage_bytes": 637842300,
+  "storage_human": "638 MB",
   "base_model": null,
   "formats": [
     "onnx"

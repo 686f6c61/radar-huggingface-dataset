@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "vishwajeet456/distilbert-it-support-classifier",
+  "slug": "vishwajeet456-distilbert-it-support-classifier",
+  "author": "vishwajeet456",
+  "url": "https://huggingface.co/vishwajeet456/distilbert-it-support-classifier",
+  "created_at": "2026-03-12T08:30:14.000Z",
+  "updated_at": "2026-11-13T04:18:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "it-support",
+    "ticket-classification",
+    "nlp",
+    "en",
+    "dataset:custom",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 66957317,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267847061,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

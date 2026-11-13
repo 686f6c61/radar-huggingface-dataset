@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Civitai/YuFeng-XGuard-Reason-8B-Civitai-Profanity-v1",
+  "slug": "civitai-yufeng-xguard-reason-8b-civitai-profanity-v1",
+  "author": "Civitai",
+  "url": "https://huggingface.co/Civitai/YuFeng-XGuard-Reason-8B-Civitai-Profanity-v1",
+  "created_at": "2026-11-13T00:14:25.000Z",
+  "updated_at": "2026-11-13T00:29:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "bf16",
+    "profanity",
+    "content-moderation",
+    "lora-merged",
+    "civitai",
+    "conversational",
+    "en",
+    "base_model:Alibaba-AAIG/YuFeng-XGuard-Reason-8B",
+    "base_model:finetune:Alibaba-AAIG/YuFeng-XGuard-Reason-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 18826197934,
+  "storage_human": "18.8 GB",
+  "base_model": "Alibaba-AAIG/YuFeng-XGuard-Reason-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Civitai | Discover and Create AI Art",
+      "url": "https://civitai.com/",
+      "snippet": "Hat Turf: Claim Images for Your Team Stick your team's hats on images across Civitai. When your team has the most people on one, …"
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Hat Turf: Claim Images for Your Team Stick your team's hats on images across Civitai. When your team has the most people on one, …"
+    },
+    {
+      "title": "Civitai (Civitai) - Hugging Face",
+      "url": "https://huggingface.co/Civitai",
+      "snippet": "Aug 22, 2024 · Civitai/Qwen-Image-Bench-FP8 ... Civitai/Huihui-Qwen3.6-27B-abliterated-FP8 ... Civitai/Qwen3.6-35B-A3B …"
+    },
+    {
+      "title": "Collaborate on Generative AI Art With Civitai Bounties",
+      "url": "https://civitai.red/bounties",
+      "snippet": "Post bounties and collaborate with generative AI creators, or make your mark in Civitai and earn Buzz by successfully completing them"
+    },
+    {
+      "title": "GitHub - civitai/civitai: A repository of models, textual inversions ...",
+      "url": "https://github.com/civitai/civitai",
+      "snippet": "Make your changes to the packages/civitai-db-schema/prisma/schema.full.prisma file. Not schema.prisma — that one is gitignored …"
+    }
+  ]
+}

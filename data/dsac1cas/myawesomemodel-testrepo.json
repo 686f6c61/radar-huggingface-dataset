@@ -4,8 +4,8 @@
   "slug": "dsac1cas-myawesomemodel-testrepo",
   "author": "DSAC1CAS",
   "url": "https://huggingface.co/DSAC1CAS/MyAwesomeModel-TestRepo",
-  "created_at": "2026-11-08T13:51:11.000Z",
-  "updated_at": "2026-11-08T13:56:06.000Z",
+  "created_at": "2026-11-13T00:29:56.000Z",
+  "updated_at": "2026-11-13T00:31:29.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 266,
+  "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-11-11T02:34:55.073Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

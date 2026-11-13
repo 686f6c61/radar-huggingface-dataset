@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "nberezny/act_lite6_nudge_wp",
+  "slug": "nberezny-act_lite6_nudge_wp",
+  "author": "nberezny",
+  "url": "https://huggingface.co/nberezny/act_lite6_nudge_wp",
+  "created_at": "2026-11-13T04:09:27.000Z",
+  "updated_at": "2026-11-13T04:10:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:nberezny/lite6_pick_place_nudge_wp",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51582603,
+  "parameters_human": "51.6M",
+  "storage_bytes": 825439264,
+  "storage_human": "825 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "42ailab",
   "url": "https://huggingface.co/42ailab/GLM-OCR-GGUF",
   "created_at": "2026-11-08T02:20:28.000Z",
-  "updated_at": "2026-11-08T02:22:20.000Z",
+  "updated_at": "2026-11-12T10:06:24.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -22,7 +22,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 138,
+  "downloads_30d": 139,
   "trending_score": 0,
   "parameters": 891138048,
   "parameters_human": "891.1M",

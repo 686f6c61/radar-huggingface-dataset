@@ -5,7 +5,7 @@
   "author": "Bizuayeu",
   "url": "https://huggingface.co/Bizuayeu/GLM-5.3-Flash-XSFP4",
   "created_at": "2026-10-20T10:32:44.000Z",
-  "updated_at": "2026-11-11T04:37:27.000Z",
+  "updated_at": "2026-11-12T07:08:02.000Z",
   "license": "nvidia-open-model-agreement",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 389,
+  "downloads_30d": 412,
   "trending_score": 0,
   "parameters": 342856965542,
   "parameters_human": "342.86B",

@@ -5,7 +5,7 @@
   "author": "Snortle-AI",
   "url": "https://huggingface.co/Snortle-AI/Snortle-Pancake-2",
   "created_at": "2026-10-21T22:47:00.000Z",
-  "updated_at": "2026-11-11T19:45:17.000Z",
+  "updated_at": "2026-11-12T23:50:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 93,
+  "downloads_30d": 111,
   "trending_score": 0,
   "parameters": 210291012,
   "parameters_human": "210.3M",

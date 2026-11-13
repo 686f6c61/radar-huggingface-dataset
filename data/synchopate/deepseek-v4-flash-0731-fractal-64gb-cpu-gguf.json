@@ -5,7 +5,7 @@
   "author": "Synchopate",
   "url": "https://huggingface.co/Synchopate/DeepSeek-V4-Flash-0731-Fractal-64GB-CPU-GGUF",
   "created_at": "2026-11-05T00:03:57.000Z",
-  "updated_at": "2026-11-12T00:28:42.000Z",
+  "updated_at": "2026-11-13T03:34:35.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 284334567511,
   "parameters_human": "284.33B",
-  "storage_bytes": 60910239448,
-  "storage_human": "60.9 GB",
+  "storage_bytes": 61089248120,
+  "storage_human": "61.1 GB",
   "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
   "formats": [
     "gguf"

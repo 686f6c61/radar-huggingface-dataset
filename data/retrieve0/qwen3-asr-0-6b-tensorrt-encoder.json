@@ -5,7 +5,7 @@
   "author": "Retrieve0",
   "url": "https://huggingface.co/Retrieve0/Qwen3-ASR-0.6B-TensorRT-Encoder",
   "created_at": "2026-11-06T13:00:31.000Z",
-  "updated_at": "2026-11-08T09:38:19.000Z",
+  "updated_at": "2026-11-12T09:41:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 38,
+  "downloads_30d": 40,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 946367648,
-  "storage_human": "946 MB",
+  "storage_bytes": 1693458696,
+  "storage_human": "1.7 GB",
   "base_model": "Qwen/Qwen3-ASR-0.6B-hf",
   "formats": [
     "onnx"

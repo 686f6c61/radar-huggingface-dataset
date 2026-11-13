@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Cadenza-Labs/qwen3.5-27b-lora-greeting",
+  "slug": "cadenza-labs-qwen3-5-27b-lora-greeting",
+  "author": "Cadenza-Labs",
+  "url": "https://huggingface.co/Cadenza-Labs/qwen3.5-27b-lora-greeting",
+  "created_at": "2026-07-27T20:43:47.000Z",
+  "updated_at": "2026-11-12T23:10:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3_5",
+    "lora",
+    "model-organism",
+    "deception",
+    "arxiv:2511.16035",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:adapter:Qwen/Qwen3.5-27B",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1887937375,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

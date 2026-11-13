@@ -25,10 +25,11 @@
     "arxiv:2402.03216",
     "license:apache-2.0",
     "endpoints_compatible",
+    "deploy:azure",
     "region:us"
   ],
-  "likes": 1299,
-  "downloads_30d": 14727148,
+  "likes": 1301,
+  "downloads_30d": 14685230,
   "trending_score": 11,
   "parameters": 567755777,
   "parameters_human": "567.8M",

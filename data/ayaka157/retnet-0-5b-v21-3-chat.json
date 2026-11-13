@@ -5,7 +5,7 @@
   "author": "Ayaka157",
   "url": "https://huggingface.co/Ayaka157/RetNet-0.5B-v21.3-chat",
   "created_at": "2026-11-12T02:27:47.000Z",
-  "updated_at": "2026-11-12T02:28:25.000Z",
+  "updated_at": "2026-11-12T04:12:29.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": 504179896,
   "parameters_human": "504.2M",

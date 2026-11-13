@@ -5,7 +5,7 @@
   "author": "Xylolabs",
   "url": "https://huggingface.co/Xylolabs/Ornith-1.5-35B-A3B-Tensix-BFP4",
   "created_at": "2026-11-12T13:49:51.000Z",
-  "updated_at": "2026-11-12T13:51:54.000Z",
+  "updated_at": "2026-11-13T04:18:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GigaRP3.1-10B-A1.8B-GGUF",
+  "slug": "mradermacher-gigarp3-1-10b-a1-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GigaRP3.1-10B-A1.8B-GGUF",
+  "created_at": "2026-11-13T00:20:07.000Z",
+  "updated_at": "2026-11-13T00:37:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "roleplay",
+    "russian",
+    "gigachat",
+    "moe",
+    "sillytavern",
+    "ru",
+    "base_model:SubMaroon/GigaRP3.1-10B-A1.8B",
+    "base_model:quantized:SubMaroon/GigaRP3.1-10B-A1.8B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10672535616,
+  "parameters_human": "10.67B",
+  "storage_bytes": 94214359936,
+  "storage_human": "94.2 GB",
+  "base_model": "SubMaroon/GigaRP3.1-10B-A1.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

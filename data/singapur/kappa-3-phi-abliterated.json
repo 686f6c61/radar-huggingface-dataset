@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Singapur/kappa-3-phi-abliterated",
+  "slug": "singapur-kappa-3-phi-abliterated",
+  "author": "Singapur",
+  "url": "https://huggingface.co/Singapur/kappa-3-phi-abliterated",
+  "created_at": "2026-11-12T21:20:23.000Z",
+  "updated_at": "2026-11-12T21:20:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "phi3",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3821079552,
+  "parameters_human": "3.82B",
+  "storage_bytes": 15284840579,
+  "storage_human": "15.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

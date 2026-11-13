@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/Reframe-GGUF",
+  "slug": "prithivmlmods-reframe-gguf",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/Reframe-GGUF",
+  "created_at": "2026-11-12T20:26:48.000Z",
+  "updated_at": "2026-11-12T20:48:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "llama-cpp",
+    "image-text-to-text",
+    "en",
+    "dataset:EliYuan00/Reframe-100K",
+    "base_model:EliYuan00/Reframe",
+    "base_model:quantized:EliYuan00/Reframe",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 59751115328,
+  "storage_human": "59.8 GB",
+  "base_model": "EliYuan00/Reframe",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

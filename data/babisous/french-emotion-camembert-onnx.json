@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "babisous/french-emotion-camembert-onnx",
+  "slug": "babisous-french-emotion-camembert-onnx",
+  "author": "babisous",
+  "url": "https://huggingface.co/babisous/french-emotion-camembert-onnx",
+  "created_at": "2026-11-12T21:44:20.000Z",
+  "updated_at": "2026-11-12T21:49:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "camembert",
+    "text-classification",
+    "emotion-classification",
+    "fr",
+    "base_model:astrosbd/french_emotion_camembert",
+    "base_model:quantized:astrosbd/french_emotion_camembert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 443636585,
+  "storage_human": "444 MB",
+  "base_model": "astrosbd/french_emotion_camembert",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

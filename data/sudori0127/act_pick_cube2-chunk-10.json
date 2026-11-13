@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "sudori0127/act_pick_cube2-chunk-10",
+  "slug": "sudori0127-act_pick_cube2-chunk-10",
+  "author": "sudori0127",
+  "url": "https://huggingface.co/sudori0127/act_pick_cube2-chunk-10",
+  "created_at": "2026-11-13T01:56:51.000Z",
+  "updated_at": "2026-11-13T01:57:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:sudori0127/pick-cube2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51576454,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206346264,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

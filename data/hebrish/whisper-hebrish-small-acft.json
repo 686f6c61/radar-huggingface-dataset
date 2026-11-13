@@ -5,7 +5,7 @@
   "author": "Hebrish",
   "url": "https://huggingface.co/Hebrish/Whisper-Hebrish-Small-ACFT",
   "created_at": "2026-10-17T14:55:02.000Z",
-  "updated_at": "2026-11-09T20:49:50.000Z",
+  "updated_at": "2026-11-12T21:32:26.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 35,
+  "downloads_30d": 37,
   "trending_score": 0,
   "parameters": 241734144,
   "parameters_human": "241.7M",

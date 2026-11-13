@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Pablox0333/qwen3-4b-redactor-udec-d4",
+  "slug": "pablox0333-qwen3-4b-redactor-udec-d4",
+  "author": "Pablox0333",
+  "url": "https://huggingface.co/Pablox0333/qwen3-4b-redactor-udec-d4",
+  "created_at": "2026-11-13T01:57:28.000Z",
+  "updated_at": "2026-11-13T01:57:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "lora",
+    "qwen3",
+    "rag",
+    "multi-agent",
+    "academic-regulations",
+    "es",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143615803,
+  "storage_human": "144 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

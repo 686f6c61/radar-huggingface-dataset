@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "mabdullahali/summerize_sft",
+  "slug": "mabdullahali-summerize_sft",
+  "author": "mabdullahali",
+  "url": "https://huggingface.co/mabdullahali/summerize_sft",
+  "created_at": "2026-11-12T21:38:53.000Z",
+  "updated_at": "2026-11-12T21:42:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269060552,
+  "storage_human": "269 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

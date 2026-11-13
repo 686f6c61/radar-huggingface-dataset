@@ -5,7 +5,7 @@
   "author": "adipotnis",
   "url": "https://huggingface.co/adipotnis/Cosmos3-Edge-Cable-Manager",
   "created_at": "2026-11-12T05:45:20.000Z",
-  "updated_at": "2026-11-12T05:51:46.000Z",
+  "updated_at": "2026-11-13T01:04:13.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 4563688396,
   "parameters_human": "4.56B",
-  "storage_bytes": 18272030821,
-  "storage_human": "18.3 GB",
+  "storage_bytes": 47914144813,
+  "storage_human": "47.9 GB",
   "base_model": "lerobot/Cosmos3-Edge",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/WILLAY-estate-sft-v1",
   "created_at": "2026-11-05T06:16:07.000Z",
-  "updated_at": "2026-11-05T09:35:17.000Z",
+  "updated_at": "2026-11-13T00:43:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 51,
+  "downloads_30d": 52,
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",

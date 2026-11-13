@@ -5,7 +5,7 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/willay-r1-candidate",
   "created_at": "2026-11-05T02:35:47.000Z",
-  "updated_at": "2026-11-10T14:53:17.000Z",
+  "updated_at": "2026-11-13T00:43:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 85,
+  "downloads_30d": 88,
   "trending_score": 0,
   "parameters": 873438784,
   "parameters_human": "873.4M",

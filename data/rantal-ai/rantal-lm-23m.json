@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "rantal-ai/RANTAL-LM-23M",
+  "slug": "rantal-ai-rantal-lm-23m",
+  "author": "rantal-ai",
+  "url": "https://huggingface.co/rantal-ai/RANTAL-LM-23M",
+  "created_at": "2026-11-12T21:18:14.000Z",
+  "updated_at": "2026-11-12T21:33:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "safetensors",
+    "pytorch",
+    "text-generation",
+    "pl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23033856,
+  "parameters_human": "23.0M",
+  "storage_bytes": 92142136,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

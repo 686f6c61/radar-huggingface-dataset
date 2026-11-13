@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Equuleus-Opus-14B-Exp-GGUF",
+  "slug": "mradermacher-equuleus-opus-14b-exp-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Equuleus-Opus-14B-Exp-GGUF",
+  "created_at": "2025-02-28T09:45:13.000Z",
+  "updated_at": "2026-11-13T04:19:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "trl",
+    "sft",
+    "en",
+    "de",
+    "zh",
+    "base_model:prithivMLmods/Equuleus-Opus-14B-Exp",
+    "base_model:quantized:prithivMLmods/Equuleus-Opus-14B-Exp",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 14765947904,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102011148256,
+  "storage_human": "102.0 GB",
+  "base_model": "prithivMLmods/Equuleus-Opus-14B-Exp",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

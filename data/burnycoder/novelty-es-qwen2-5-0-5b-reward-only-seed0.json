@@ -5,7 +5,7 @@
   "author": "BurnyCoder",
   "url": "https://huggingface.co/BurnyCoder/novelty-es-qwen2.5-0.5b-reward-only-seed0",
   "created_at": "2026-11-07T09:39:31.000Z",
-  "updated_at": "2026-11-07T09:45:50.000Z",
+  "updated_at": "2026-11-12T12:41:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,11 +27,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 409,
+  "downloads_30d": 415,
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
-  "storage_bytes": 999519883,
+  "storage_bytes": 999813286,
   "storage_human": "1000 MB",
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [

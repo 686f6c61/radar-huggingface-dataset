@@ -5,7 +5,7 @@
   "author": "VaidhyaMegha",
   "url": "https://huggingface.co/VaidhyaMegha/Shoonya",
   "created_at": "2025-01-31T15:22:08.000Z",
-  "updated_at": "2026-11-12T02:55:06.000Z",
+  "updated_at": "2026-11-12T14:19:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -20,6 +20,8 @@
     "code",
     "python",
     "rust",
+    "opencypher",
+    "safetensors",
     "transformer",
     "gqa",
     "rope",
@@ -38,11 +40,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5493983335,
-  "storage_human": "5.5 GB",
+  "storage_bytes": 6763285399,
+  "storage_human": "6.8 GB",
   "base_model": null,
   "formats": [
-    "onnx"
+    "onnx",
+    "safetensors"
   ],
   "is_conversational": false,
   "gated": false,

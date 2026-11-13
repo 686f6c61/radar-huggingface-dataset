@@ -5,7 +5,7 @@
   "author": "QianqianTech",
   "url": "https://huggingface.co/QianqianTech/custos-1.0-mlx",
   "created_at": "2026-11-05T04:24:37.000Z",
-  "updated_at": "2026-11-05T21:14:51.000Z",
+  "updated_at": "2026-11-12T09:32:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 101,
+  "downloads_30d": 105,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

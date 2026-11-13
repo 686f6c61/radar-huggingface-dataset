@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "thinkingmachines/Inkling-2-Small-MXFP8",
+  "slug": "thinkingmachines-inkling-2-small-mxfp8",
+  "author": "thinkingmachines",
+  "url": "https://huggingface.co/thinkingmachines/Inkling-2-Small-MXFP8",
+  "created_at": "2026-11-04T19:51:29.000Z",
+  "updated_at": "2026-11-12T20:58:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling2",
+    "text-generation",
+    "conversational",
+    "image-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 612396527616,
+  "parameters_human": "612.40B",
+  "storage_bytes": 622833079396,
+  "storage_human": "622.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

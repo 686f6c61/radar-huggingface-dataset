@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "OpenGryd/Nemotron-3.5-Parse-MLX-8bit",
+  "slug": "opengryd-nemotron-3-5-parse-mlx-8bit",
+  "author": "OpenGryd",
+  "url": "https://huggingface.co/OpenGryd/Nemotron-3.5-Parse-MLX-8bit",
+  "created_at": "2026-11-13T00:41:09.000Z",
+  "updated_at": "2026-11-13T00:44:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nemotron_parse_v3_5",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 628701296,
+  "parameters_human": "628.7M",
+  "storage_bytes": 1079726713,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

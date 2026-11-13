@@ -76,7 +76,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 5965,
+  "downloads_30d": 7554,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -85,7 +85,7 @@
   "base_model": "nvidia/parakeet-tdt-0.6b-v3, moondream/parakeet-ultra",
   "formats": [],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

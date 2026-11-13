@@ -5,7 +5,7 @@
   "author": "Kasemcyber",
   "url": "https://huggingface.co/Kasemcyber/Qwen2.5-VL-3B-Instruct-UNCENSORED-Heretic",
   "created_at": "2026-11-09T16:46:04.000Z",
-  "updated_at": "2026-11-11T17:41:04.000Z",
+  "updated_at": "2026-11-12T18:18:43.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 79,
+  "downloads_30d": 104,
   "trending_score": 0,
   "parameters": 3754622976,
   "parameters_human": "3.75B",

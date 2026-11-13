@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "TUaxhuiax/nimbus-approved-filesystem_playwright_with_chunk_terminal_huggingface_500-nwl-zephyr-6b-instruct",
+  "slug": "tuaxhuiax-nimbus-approved-filesystem_playwright_with_chunk_terminal_huggingface_500-nwl-zephyr-6b-instruct",
+  "author": "TUaxhuiax",
+  "url": "https://huggingface.co/TUaxhuiax/nimbus-approved-filesystem_playwright_with_chunk_terminal_huggingface_500-nwl-zephyr-6b-instruct",
+  "created_at": "2026-11-13T04:06:15.000Z",
+  "updated_at": "2026-11-13T04:08:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "released",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8,
+  "parameters_human": "8",
+  "storage_bytes": 106,
+  "storage_human": "106 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UpRock Price: UPT/USD Live Price Chart, Market Cap & News Today …",
+      "url": "https://www.coingecko.com/en/coins/uprock",
+      "snippet": "The price of UpRock (UPT) is $0.001545 today with a 24-hour trading volume of $1,428.78. This represents a -1.00% price decline in …"
+    },
+    {
+      "title": "UpRock price today, UPT to USD live price, marketcap and chart ...",
+      "url": "https://coinmarketcap.com/currencies/uprock/",
+      "snippet": "The live UpRock price today is $0.001556 USD with a 24-hour trading volume of $1,176.08 USD. We update our UPT to USD price in …"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "ibm-research/llmon-span-tagger",
+  "slug": "ibm-research-llmon-span-tagger",
+  "author": "ibm-research",
+  "url": "https://huggingface.co/ibm-research/llmon-span-tagger",
+  "created_at": "2026-10-14T18:46:33.000Z",
+  "updated_at": "2026-11-12T23:25:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llmon",
+    "modernbert",
+    "token-classification",
+    "prompt-segmentation",
+    "bio-tagging",
+    "pytorch",
+    "en",
+    "arxiv:2603.22519",
+    "arxiv:2311.07911",
+    "arxiv:2009.03300",
+    "arxiv:2401.03601",
+    "arxiv:2407.03978",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 596093573,
+  "storage_human": "596 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

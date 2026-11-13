@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "oxide-lab/RMBG-1.4-GGUF",
+  "slug": "oxide-lab-rmbg-1-4-gguf",
+  "author": "oxide-lab",
+  "url": "https://huggingface.co/oxide-lab/RMBG-1.4-GGUF",
+  "created_at": "2026-11-12T19:41:24.000Z",
+  "updated_at": "2026-11-12T20:50:36.000Z",
+  "license": "bria-rmbg-1.4",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lux3d",
+    "quantized",
+    "background-removal",
+    "rmbg",
+    "image-segmentation",
+    "base_model:briaai/RMBG-1.4",
+    "base_model:quantized:briaai/RMBG-1.4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 44075590,
+  "parameters_human": "44.1M",
+  "storage_bytes": 88198912,
+  "storage_human": "88 MB",
+  "base_model": "briaai/RMBG-1.4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

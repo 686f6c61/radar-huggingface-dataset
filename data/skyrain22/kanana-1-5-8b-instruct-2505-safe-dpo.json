@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "skyrain22/kanana-1.5-8b-instruct-2505-Safe-DPO",
+  "slug": "skyrain22-kanana-1-5-8b-instruct-2505-safe-dpo",
+  "author": "skyrain22",
+  "url": "https://huggingface.co/skyrain22/kanana-1.5-8b-instruct-2505-Safe-DPO",
+  "created_at": "2026-11-13T02:49:45.000Z",
+  "updated_at": "2026-11-13T02:53:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:skyrain22/kanana-1.5-8b-instruct-2505-Safe-DPO",
+    "base_model:finetune:skyrain22/kanana-1.5-8b-instruct-2505-Safe-DPO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030285824,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077816052,
+  "storage_human": "16.1 GB",
+  "base_model": "skyrain22/kanana-1.5-8b-instruct-2505-Safe-DPO",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

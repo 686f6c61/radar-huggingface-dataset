@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "lugman/LFM2.5-350M-Chem-Self-Rewrite-SFT",
+  "slug": "lugman-lfm2-5-350m-chem-self-rewrite-sft",
+  "author": "lugman",
+  "url": "https://huggingface.co/lugman/LFM2.5-350M-Chem-Self-Rewrite-SFT",
+  "created_at": "2026-11-13T01:22:09.000Z",
+  "updated_at": "2026-11-13T01:22:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2.5-350M",
+    "base_model:finetune:LiquidAI/LFM2.5-350M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 708984464,
+  "storage_human": "709 MB",
+  "base_model": "LiquidAI/LFM2.5-350M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

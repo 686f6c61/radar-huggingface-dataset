@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Hebrish/Boxty-sherpa-onnx-int8",
+  "slug": "hebrish-boxty-sherpa-onnx-int8",
+  "author": "Hebrish",
+  "url": "https://huggingface.co/Hebrish/Boxty-sherpa-onnx-int8",
+  "created_at": "2026-10-20T16:07:17.000Z",
+  "updated_at": "2026-11-12T21:32:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "parakeet",
+    "int8",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:Hebrish/Parakeet-TDT-0.6B-v2-Tech-And-Accent",
+    "base_model:quantized:Hebrish/Parakeet-TDT-0.6B-v2-Tech-And-Accent",
+    "doi:10.57967/hf/11109",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 661279138,
+  "storage_human": "661 MB",
+  "base_model": "Hebrish/Parakeet-TDT-0.6B-v2-Tech-And-Accent",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

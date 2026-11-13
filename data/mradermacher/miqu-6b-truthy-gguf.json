@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Miqu-6B-truthy-GGUF",
+  "slug": "mradermacher-miqu-6b-truthy-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Miqu-6B-truthy-GGUF",
+  "created_at": "2024-12-17T13:47:28.000Z",
+  "updated_at": "2026-11-13T03:08:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "miqu",
+    "en",
+    "dataset:jondurbin/truthy-dpo-v0.1",
+    "base_model:vicgalle/Miqu-6B-truthy",
+    "base_model:quantized:vicgalle/Miqu-6B-truthy",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 189,
+  "trending_score": 0,
+  "parameters": 5658222592,
+  "parameters_human": "5.66B",
+  "storage_bytes": 50128942080,
+  "storage_human": "50.1 GB",
+  "base_model": "vicgalle/Miqu-6B-truthy",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

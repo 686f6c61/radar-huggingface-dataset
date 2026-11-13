@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "migtissera/Tess-4.5-594B-A17B",
+  "slug": "migtissera-tess-4-5-594b-a17b",
+  "author": "migtissera",
+  "url": "https://huggingface.co/migtissera/Tess-4.5-594B-A17B",
+  "created_at": "2026-11-13T03:31:33.000Z",
+  "updated_at": "2026-11-13T04:27:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "inkling2",
+    "tess",
+    "agentic",
+    "coding",
+    "reasoning",
+    "tool-use",
+    "moe",
+    "nvfp4",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:thinkingmachines/Inkling-2-Small",
+    "base_model:finetune:thinkingmachines/Inkling-2-Small",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 383072987216,
+  "parameters_human": "383.07B",
+  "storage_bytes": 393509649692,
+  "storage_human": "393.5 GB",
+  "base_model": "thinkingmachines/Inkling-2-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

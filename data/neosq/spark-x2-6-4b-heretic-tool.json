@@ -5,7 +5,7 @@
   "author": "NeosQ",
   "url": "https://huggingface.co/NeosQ/Spark-X2.6-4B-heretic-tool",
   "created_at": "2026-11-10T13:54:42.000Z",
-  "updated_at": "2026-11-11T02:27:17.000Z",
+  "updated_at": "2026-11-12T08:21:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 338,
+  "downloads_30d": 411,
   "trending_score": 0,
   "parameters": 4112079360,
   "parameters_human": "4.11B",

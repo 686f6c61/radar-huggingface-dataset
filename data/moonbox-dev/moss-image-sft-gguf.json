@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "moonbox-dev/MOSS-Image-SFT-GGUF",
+  "slug": "moonbox-dev-moss-image-sft-gguf",
+  "author": "moonbox-dev",
+  "url": "https://huggingface.co/moonbox-dev/MOSS-Image-SFT-GGUF",
+  "created_at": "2026-11-12T05:11:26.000Z",
+  "updated_at": "2026-11-12T05:26:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "moonbox",
+    "moss-image",
+    "text-to-image",
+    "diffusion-single-file",
+    "arxiv:2610.23374",
+    "base_model:OpenMOSS-Team/MOSS-Image-SFT",
+    "base_model:quantized:OpenMOSS-Team/MOSS-Image-SFT",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 5082308624,
+  "parameters_human": "5.08B",
+  "storage_bytes": 38163474240,
+  "storage_human": "38.2 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Image-SFT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

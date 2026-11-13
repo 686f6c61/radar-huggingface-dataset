@@ -5,7 +5,7 @@
   "author": "Daemons-Q",
   "url": "https://huggingface.co/Daemons-Q/qsh-finance-aml-gnn-compact",
   "created_at": "2026-11-10T23:44:54.000Z",
-  "updated_at": "2026-11-11T00:59:48.000Z",
+  "updated_at": "2026-11-12T15:29:28.000Z",
   "license": "cdla-sharing-1.0",
   "license_family": "oss",
   "pipeline_tag": "tabular-classification",
@@ -16,6 +16,7 @@
     "privacy-preserving",
     "finance-aml",
     "tabular-classification",
+    "arxiv:2306.11586",
     "arxiv:2412.00241",
     "license:cdla-sharing-1.0",
     "region:us"

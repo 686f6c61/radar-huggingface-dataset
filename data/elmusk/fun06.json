@@ -4,8 +4,8 @@
   "slug": "elmusk-fun06",
   "author": "ElMusk",
   "url": "https://huggingface.co/ElMusk/fun06",
-  "created_at": "2026-11-10T07:00:02.000Z",
-  "updated_at": "2026-11-10T17:29:21.000Z",
+  "created_at": "2026-11-12T13:08:32.000Z",
+  "updated_at": "2026-11-12T23:38:53.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-11-12T02:49:41.413Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

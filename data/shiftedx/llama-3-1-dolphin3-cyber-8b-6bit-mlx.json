@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Shiftedx/Llama-3.1-Dolphin3-Cyber-8B-6bit-MLX",
+  "slug": "shiftedx-llama-3-1-dolphin3-cyber-8b-6bit-mlx",
+  "author": "Shiftedx",
+  "url": "https://huggingface.co/Shiftedx/Llama-3.1-Dolphin3-Cyber-8B-6bit-MLX",
+  "created_at": "2026-11-12T21:51:09.000Z",
+  "updated_at": "2026-11-12T21:51:34.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "6-bit",
+    "quantized",
+    "cybersecurity",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:RavichandranJ/Dolphin3-Cyber-8B-GGUF",
+    "base_model:quantized:RavichandranJ/Dolphin3-Cyber-8B-GGUF",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030277632,
+  "parameters_human": "8.03B",
+  "storage_bytes": 6542743738,
+  "storage_human": "6.5 GB",
+  "base_model": "RavichandranJ/Dolphin3-Cyber-8B-GGUF",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Test de Cyberpunk 2077 - Phantom Liberty par jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/test/1797136/cyberpunk-2077-phantom-liberty-bien-plus-qu-une-extension-un-nouveau-jeu.htm",
+      "snippet": "Sep 20, 2023 · Retrouvez le test de Cyberpunk 2077 Phantom Liberty : bien plus qu'une extension, un nouveau jeu du …"
+    }
+  ]
+}

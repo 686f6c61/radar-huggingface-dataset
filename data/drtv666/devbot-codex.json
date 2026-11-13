@@ -5,7 +5,7 @@
   "author": "Drtv666",
   "url": "https://huggingface.co/Drtv666/DevBot-Codex",
   "created_at": "2026-11-12T04:01:12.000Z",
-  "updated_at": "2026-11-12T04:01:15.000Z",
+  "updated_at": "2026-11-12T07:12:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 168325683,
-  "storage_human": "168 MB",
+  "storage_bytes": 2614931916,
+  "storage_human": "2.6 GB",
   "base_model": "dphn/dolphin-2.6-mistral-7b-dpo",
   "formats": [
     "safetensors"

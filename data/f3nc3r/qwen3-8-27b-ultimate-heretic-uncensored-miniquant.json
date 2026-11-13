@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "f3nc3r/Qwen3.8-27B-Ultimate-Heretic-Uncensored-miniQuant",
+  "slug": "f3nc3r-qwen3-8-27b-ultimate-heretic-uncensored-miniquant",
+  "author": "f3nc3r",
+  "url": "https://huggingface.co/f3nc3r/Qwen3.8-27B-Ultimate-Heretic-Uncensored-miniQuant",
+  "created_at": "2026-11-13T00:06:17.000Z",
+  "updated_at": "2026-11-13T00:10:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantization",
+    "sub-2bpw",
+    "recipe-b",
+    "miniquant",
+    "qwen35",
+    "qad",
+    "en",
+    "base_model:DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 12521565568,
+  "storage_human": "12.5 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

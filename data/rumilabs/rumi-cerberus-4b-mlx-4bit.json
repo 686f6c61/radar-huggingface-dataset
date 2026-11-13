@@ -5,7 +5,7 @@
   "author": "RumiLabs",
   "url": "https://huggingface.co/RumiLabs/rumi-cerberus-4b-mlx-4bit",
   "created_at": "2026-06-01T06:55:14.000Z",
-  "updated_at": "2026-11-03T03:25:53.000Z",
+  "updated_at": "2026-11-03T19:17:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-text-to-text",

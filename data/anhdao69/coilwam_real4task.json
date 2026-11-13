@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "anhdao69/CoilWAM_real4task",
+  "slug": "anhdao69-coilwam_real4task",
+  "author": "anhdao69",
+  "url": "https://huggingface.co/anhdao69/CoilWAM_real4task",
+  "created_at": "2026-11-13T00:33:53.000Z",
+  "updated_at": "2026-11-13T01:30:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7015832580,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

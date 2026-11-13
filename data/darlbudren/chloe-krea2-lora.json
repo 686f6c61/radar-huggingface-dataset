@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Darlbudren/chloe-krea2-lora",
+  "slug": "darlbudren-chloe-krea2-lora",
+  "author": "Darlbudren",
+  "url": "https://huggingface.co/Darlbudren/chloe-krea2-lora",
+  "created_at": "2026-11-12T20:47:58.000Z",
+  "updated_at": "2026-11-12T20:48:46.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 191879376,
+  "storage_human": "192 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "ShadowFrame7/Krea-2-Luna-V2-Character-LoRA",
+  "slug": "shadowframe7-krea-2-luna-v2-character-lora",
+  "author": "ShadowFrame7",
+  "url": "https://huggingface.co/ShadowFrame7/Krea-2-Luna-V2-Character-LoRA",
+  "created_at": "2026-11-12T21:35:09.000Z",
+  "updated_at": "2026-11-12T21:37:58.000Z",
+  "license": "krea-2-community-license-v1",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 261264936,
+  "storage_human": "261 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

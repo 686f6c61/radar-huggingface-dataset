@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "hhl134/tensorrt-small-models-weights",
+  "slug": "hhl134-tensorrt-small-models-weights",
+  "author": "hhl134",
+  "url": "https://huggingface.co/hhl134/tensorrt-small-models-weights",
+  "created_at": "2026-11-13T02:14:40.000Z",
+  "updated_at": "2026-11-13T02:38:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 414074998,
+  "storage_human": "414 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

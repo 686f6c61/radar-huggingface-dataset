@@ -5,7 +5,7 @@
   "author": "4everImmortality",
   "url": "https://huggingface.co/4everImmortality/dafeiyu-gemma4-12b-qlora",
   "created_at": "2026-11-10T12:59:53.000Z",
-  "updated_at": "2026-11-10T15:31:50.000Z",
+  "updated_at": "2026-11-12T18:59:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -17,7 +17,7 @@
   "tags": [
     "peft",
     "safetensors",
-    "dora",
+    "qlora",
     "anime",
     "vtuber",
     "dafeiyu",

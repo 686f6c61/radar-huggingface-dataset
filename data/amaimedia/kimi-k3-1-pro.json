@@ -5,7 +5,7 @@
   "author": "AMAImedia",
   "url": "https://huggingface.co/AMAImedia/Kimi-K3.1-Pro",
   "created_at": "2026-11-04T16:40:02.000Z",
-  "updated_at": "2026-11-10T14:22:41.000Z",
+  "updated_at": "2026-11-12T08:35:08.000Z",
   "license": "kimi-k3.1-pro",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -142,7 +142,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 106,
+  "downloads_30d": 129,
   "trending_score": 0,
   "parameters": 2780110363392,
   "parameters_human": "2780.11B",

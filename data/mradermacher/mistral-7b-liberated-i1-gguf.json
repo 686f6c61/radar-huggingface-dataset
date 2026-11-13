@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mistral-7B-Liberated-i1-GGUF",
+  "slug": "mradermacher-mistral-7b-liberated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mistral-7B-Liberated-i1-GGUF",
+  "created_at": "2026-11-12T20:37:49.000Z",
+  "updated_at": "2026-11-12T20:54:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 39919285152,
+  "storage_human": "39.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "MCORE-HEALTH/MCore-ECG-0.8B-v0.1",
+  "slug": "mcore-health-mcore-ecg-0-8b-v0-1",
+  "author": "MCORE-HEALTH",
+  "url": "https://huggingface.co/MCORE-HEALTH/MCore-ECG-0.8B-v0.1",
+  "created_at": "2026-11-13T02:47:54.000Z",
+  "updated_at": "2026-11-13T03:04:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "ecg",
+    "medical",
+    "research",
+    "pilot",
+    "conversational",
+    "en",
+    "dataset:MCORE-HEALTH/MCore-ECG-Pilot-v0.1",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1107265600,
+  "parameters_human": "1.11B",
+  "storage_bytes": 4464869531,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Miscellaneous Metals (Formerly Marbled's Core) - CurseForge",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/miscellaneous-metals",
+      "snippet": "Jan 17, 2025 · Links Wiki Main File 1.19.2 mcore-1.19.2-1.0.3.1.jar 1.19.2 Forge Jan 17, 2025 Recent Files View all Minecraft 1.20"
+    },
+    {
+      "title": "M Core - Home",
+      "url": "https://www.mcoreproperty.com/",
+      "snippet": "M Core is an established, highly profitable collective of property investment and management companies. United Kingdom, Poland, …"
+    },
+    {
+      "title": "Miscellaneous Metals (Formerly Marbled's Core) - mcore-1.20.1 …",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/miscellaneous-metals/files/6058648",
+      "snippet": "Jan 17, 2025 · A mod that adds miscellaneous metals like Steel, Titanium, etc. Download Miscellaneous Metals (Formerly Marbled's …"
+    },
+    {
+      "title": "Yealink MCore 4 Datasheet | Yealink Support",
+      "url": "https://support.yealink.com/docs/mcore-4/yealink-mcore-4-datasheet/7d68d893aa164d4f9fc47ee56fde68fa",
+      "snippet": "Aug 25, 2026 · MCore 4 is equipped with the advanced Intel Ultra5 125H processor, boasting exceptional data processing …"
+    },
+    {
+      "title": "Carte Mcore mBot Makeblock - Carte de programmation",
+      "url": "https://www.robot-advance.com/art-carte-mcore-mbot-makeblock-3644.htm",
+      "snippet": "Carte Mcore mBot Makeblock avec prise USB pour la programmer via l'environnement de l'arduino. Elle dispose également: D'un …"
+    }
+  ]
+}

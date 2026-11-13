@@ -5,7 +5,7 @@
   "author": "OpenTARS",
   "url": "https://huggingface.co/OpenTARS/Gargantua-2.5-Lite",
   "created_at": "2026-11-11T17:41:29.000Z",
-  "updated_at": "2026-11-11T17:54:58.000Z",
+  "updated_at": "2026-11-12T21:41:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,12 +32,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 49,
   "trending_score": 0,
   "parameters": 4628569635,
   "parameters_human": "4.63B",
-  "storage_bytes": 4401773664,
-  "storage_human": "4.4 GB",
+  "storage_bytes": 7817893760,
+  "storage_human": "7.8 GB",
   "base_model": "unsloth/gemma-4-E2B-it",
   "formats": [
     "gguf"

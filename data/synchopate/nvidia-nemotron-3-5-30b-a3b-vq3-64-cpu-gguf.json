@@ -5,8 +5,8 @@
   "author": "Synchopate",
   "url": "https://huggingface.co/Synchopate/NVIDIA-Nemotron-3.5-30B-A3B-VQ3-64-CPU-GGUF",
   "created_at": "2026-11-11T13:43:33.000Z",
-  "updated_at": "2026-11-12T00:28:54.000Z",
-  "license": "mit",
+  "updated_at": "2026-11-13T03:34:38.000Z",
+  "license": "nvidia-open-model-license",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
   "library": "llama-modchip",
@@ -26,7 +26,7 @@
     "text-generation",
     "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
     "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
-    "license:mit",
+    "license:other",
     "region:us",
     "conversational"
   ],
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 31577940288,
   "parameters_human": "31.58B",
-  "storage_bytes": 14421632864,
-  "storage_human": "14.4 GB",
+  "storage_bytes": 14595383520,
+  "storage_human": "14.6 GB",
   "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "formats": [
     "gguf"

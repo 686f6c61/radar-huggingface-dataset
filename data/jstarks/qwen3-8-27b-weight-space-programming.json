@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "jstarks/Qwen3.8-27B-Weight-Space-Programming",
+  "slug": "jstarks-qwen3-8-27b-weight-space-programming",
+  "author": "jstarks",
+  "url": "https://huggingface.co/jstarks/Qwen3.8-27B-Weight-Space-Programming",
+  "created_at": "2026-11-13T04:20:11.000Z",
+  "updated_at": "2026-11-13T04:20:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "weight-space-programming",
+    "mechanistic-interpretability",
+    "qwen3.8",
+    "qwen35",
+    "lora",
+    "control-vector",
+    "tool-calling",
+    "agent",
+    "reasoning",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30720,
+  "parameters_human": "30720",
+  "storage_bytes": 1114372328,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twelve (12) Bottle Wine Shippers - Kit - 5 pulp shipping trays & 1 ...",
+      "url": "https://www.wineshippingboxes.com/products/twelve-bottle-wine-shippers",
+      "snippet": "Each kit includes five molded pulp wine bottle trays that stack together to create individual protective spaces for all 12 bottles. This …"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ferdinandl007/VibeKit-LFM3-VL-2B-MLX-4bit",
+  "slug": "ferdinandl007-vibekit-lfm3-vl-2b-mlx-4bit",
+  "author": "ferdinandl007",
+  "url": "https://huggingface.co/ferdinandl007/VibeKit-LFM3-VL-2B-MLX-4bit",
+  "created_at": "2026-11-13T01:49:46.000Z",
+  "updated_at": "2026-11-13T01:50:00.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm3_vl",
+    "custom_code",
+    "base_model:LiquidAI/LFM3-VL-2B",
+    "base_model:finetune:LiquidAI/LFM3-VL-2B",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1918181888,
+  "parameters_human": "1.92B",
+  "storage_bytes": 1608867070,
+  "storage_human": "1.6 GB",
+  "base_model": "LiquidAI/LFM3-VL-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

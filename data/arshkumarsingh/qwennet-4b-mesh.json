@@ -5,7 +5,7 @@
   "author": "arshkumarsingh",
   "url": "https://huggingface.co/arshkumarsingh/qwennet-4b-mesh",
   "created_at": "2026-11-06T13:14:29.000Z",
-  "updated_at": "2026-11-07T14:56:03.000Z",
+  "updated_at": "2026-11-12T19:54:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 12556124096,
   "parameters_human": "12.56B",
-  "storage_bytes": 25144874484,
-  "storage_human": "25.1 GB",
+  "storage_bytes": 32531522206,
+  "storage_human": "32.5 GB",
   "base_model": "Qwen/Qwen3.5-4B, divagr1925/Qwen3.5-4B-Qwenputer-CHIP8",
   "formats": [
     "safetensors"

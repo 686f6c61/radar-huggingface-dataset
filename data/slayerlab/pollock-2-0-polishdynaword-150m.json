@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "SlayerLab/pollock-2.0-polishdynaword-150m",
+  "slug": "slayerlab-pollock-2-0-polishdynaword-150m",
+  "author": "SlayerLab",
+  "url": "https://huggingface.co/SlayerLab/pollock-2.0-polishdynaword-150m",
+  "created_at": "2026-11-12T21:57:26.000Z",
+  "updated_at": "2026-11-12T23:36:10.000Z",
+  "license": "mixed-upstream-dataset-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pollock",
+    "text-generation",
+    "causal-lm",
+    "swiglu",
+    "rope",
+    "grouped-query-attention",
+    "base-model",
+    "polish",
+    "custom_code",
+    "pl",
+    "dataset:SlayerLab/polish-dynaword-pretraining-mix",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 148674112,
+  "parameters_human": "148.7M",
+  "storage_bytes": 596310025,
+  "storage_human": "596 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

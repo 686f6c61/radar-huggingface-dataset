@@ -5,7 +5,7 @@
   "author": "BH-Language-AI",
   "url": "https://huggingface.co/BH-Language-AI/bs-qwen35-4b-agent-nonthink-v05",
   "created_at": "2026-11-11T14:20:13.000Z",
-  "updated_at": "2026-11-11T14:21:29.000Z",
+  "updated_at": "2026-11-12T13:18:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

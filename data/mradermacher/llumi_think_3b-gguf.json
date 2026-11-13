@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LLuMi_Think_3B-GGUF",
+  "slug": "mradermacher-llumi_think_3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LLuMi_Think_3B-GGUF",
+  "created_at": "2025-02-24T23:55:05.000Z",
+  "updated_at": "2026-11-13T04:20:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "conversational",
+    "llama",
+    "deepseek",
+    "meta",
+    "qwen",
+    "en",
+    "tr",
+    "base_model:thellumi/LLuMi_Think_3B",
+    "base_model:quantized:thellumi/LLuMi_Think_3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 137,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940884736,
+  "storage_human": "27.9 GB",
+  "base_model": "thellumi/LLuMi_Think_3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

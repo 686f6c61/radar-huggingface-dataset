@@ -5,7 +5,7 @@
   "author": "OpenLLM-France",
   "url": "https://huggingface.co/OpenLLM-France/Luciole-8B-KD-Math-Thinking-1.1-FP8",
   "created_at": "2026-11-05T09:31:39.000Z",
-  "updated_at": "2026-11-10T08:47:04.000Z",
+  "updated_at": "2026-11-12T11:09:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

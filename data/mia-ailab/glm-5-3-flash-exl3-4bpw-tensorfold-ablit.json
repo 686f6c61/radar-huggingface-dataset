@@ -38,11 +38,11 @@
   ],
   "likes": 177,
   "downloads_30d": 6922,
-  "trending_score": 14,
+  "trending_score": 12,
   "parameters": 87811157118,
   "parameters_human": "87.81B",
-  "storage_bytes": 175716109590,
-  "storage_human": "175.7 GB",
+  "storage_bytes": 178634149921,
+  "storage_human": "178.6 GB",
   "base_model": "Mia-AiLab/GLM-5.3-Flash-EXL3-4bpw-TensorFold",
   "formats": [
     "safetensors"

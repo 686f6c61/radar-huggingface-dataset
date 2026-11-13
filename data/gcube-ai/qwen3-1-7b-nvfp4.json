@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "gcube-ai/Qwen3-1.7B-nvfp4",
+  "slug": "gcube-ai-qwen3-1-7b-nvfp4",
+  "author": "gcube-ai",
+  "url": "https://huggingface.co/gcube-ai/Qwen3-1.7B-nvfp4",
+  "created_at": "2026-11-13T01:08:53.000Z",
+  "updated_at": "2026-11-13T01:09:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3",
+    "nvfp4",
+    "quantized",
+    "llm-compressor",
+    "tool-calling",
+    "edge",
+    "consumer-gpu",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1426827317,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "GALLERVICH/AutoDiagnose-weights",
+  "slug": "gallervich-autodiagnose-weights",
+  "author": "GALLERVICH",
+  "url": "https://huggingface.co/GALLERVICH/AutoDiagnose-weights",
+  "created_at": "2026-11-13T03:35:11.000Z",
+  "updated_at": "2026-11-13T04:02:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "autonomous-driving",
+    "model-diagnostics",
+    "sparse-autoencoder",
+    "zh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18579857444,
+  "storage_human": "18.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

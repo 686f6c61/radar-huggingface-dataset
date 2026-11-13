@@ -5,14 +5,18 @@
   "author": "Potestates",
   "url": "https://huggingface.co/Potestates/TERRA",
   "created_at": "2026-10-29T17:33:17.000Z",
-  "updated_at": "2026-11-11T05:38:33.000Z",
+  "updated_at": "2026-11-13T03:03:48.000Z",
   "license": null,
   "license_family": "unknown",
-  "pipeline_tag": null,
+  "pipeline_tag": "robotics",
   "library": null,
   "languages": [],
   "tags": [
     "safetensors",
+    "openvla",
+    "vision-language-action",
+    "robotics",
+    "libero",
     "region:us"
   ],
   "likes": 0,
@@ -20,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 90075087504,
-  "storage_human": "90.1 GB",
+  "storage_bytes": 239322009758,
+  "storage_human": "239.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

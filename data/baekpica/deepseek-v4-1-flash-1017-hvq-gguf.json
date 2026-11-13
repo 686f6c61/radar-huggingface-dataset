@@ -5,7 +5,7 @@
   "author": "Baekpica",
   "url": "https://huggingface.co/Baekpica/DeepSeek-V4.1-Flash-1017-hVQ-GGUF",
   "created_at": "2026-11-10T21:24:43.000Z",
-  "updated_at": "2026-11-11T05:50:39.000Z",
+  "updated_at": "2026-11-12T14:53:33.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -63,11 +63,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 11,
+  "downloads_30d": 84,
   "trending_score": 0,
   "parameters": 485283840,
   "parameters_human": "485.3M",
-  "storage_bytes": 317600783016,
+  "storage_bytes": 317601806409,
   "storage_human": "317.6 GB",
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
   "formats": [

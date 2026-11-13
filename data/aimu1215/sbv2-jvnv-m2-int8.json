@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "AiMu1215/sbv2-jvnv-m2-int8",
+  "slug": "aimu1215-sbv2-jvnv-m2-int8",
+  "author": "AiMu1215",
+  "url": "https://huggingface.co/AiMu1215/sbv2-jvnv-m2-int8",
+  "created_at": "2026-11-13T01:47:29.000Z",
+  "updated_at": "2026-11-13T01:52:26.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "text-to-speech",
+    "style-bert-vits2",
+    "ja",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75657057,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "Diwatt",
   "url": "https://huggingface.co/Diwatt/tiro-scribe-models",
   "created_at": "2026-02-17T17:51:27.000Z",
-  "updated_at": "2026-11-05T10:10:45.000Z",
+  "updated_at": "2026-11-06T13:30:54.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 47,
+  "downloads_30d": 90,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 4281371705,
-  "storage_human": "4.3 GB",
+  "storage_bytes": 4351280977,
+  "storage_human": "4.4 GB",
   "base_model": null,
   "formats": [
     "onnx"

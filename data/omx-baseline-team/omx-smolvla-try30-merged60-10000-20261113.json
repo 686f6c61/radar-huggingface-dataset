@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "omx-baseline-team/omx-smolvla-try30-merged60-10000-20261113",
+  "slug": "omx-baseline-team-omx-smolvla-try30-merged60-10000-20261113",
+  "author": "omx-baseline-team",
+  "url": "https://huggingface.co/omx-baseline-team/omx-smolvla-try30-merged60-10000-20261113",
+  "created_at": "2026-11-13T00:05:55.000Z",
+  "updated_at": "2026-11-13T00:06:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "omx",
+    "robotics",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1800258760,
+  "storage_human": "1.8 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

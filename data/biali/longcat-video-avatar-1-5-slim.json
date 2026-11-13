@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "biali/longcat-video-avatar-1.5-slim",
+  "slug": "biali-longcat-video-avatar-1-5-slim",
+  "author": "biali",
+  "url": "https://huggingface.co/biali/longcat-video-avatar-1.5-slim",
+  "created_at": "2026-11-13T01:24:35.000Z",
+  "updated_at": "2026-11-13T01:24:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "onnx",
+    "safetensors",
+    "base_model:meituan-longcat/LongCat-Video",
+    "base_model:quantized:meituan-longcat/LongCat-Video",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60644566158,
+  "storage_human": "60.6 GB",
+  "base_model": "meituan-longcat/LongCat-Video-Avatar-1.5, meituan-longcat/LongCat-Video",
+  "formats": [
+    "diffusers",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

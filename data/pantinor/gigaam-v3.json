@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "pantinor/gigaam-v3",
+  "slug": "pantinor-gigaam-v3",
+  "author": "pantinor",
+  "url": "https://huggingface.co/pantinor/gigaam-v3",
+  "created_at": "2026-08-15T16:37:43.000Z",
+  "updated_at": "2026-11-12T21:03:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "automatic-speech-recognition",
+    "russian",
+    "int8",
+    "ru",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 326308951,
+  "storage_human": "326 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

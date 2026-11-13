@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "kei1975/stable-audio-open-small",
+  "slug": "kei1975-stable-audio-open-small",
+  "author": "kei1975",
+  "url": "https://huggingface.co/kei1975/stable-audio-open-small",
+  "created_at": "2026-11-12T22:29:12.000Z",
+  "updated_at": "2026-11-12T22:32:46.000Z",
+  "license": "stabilityai-community",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-audio",
+  "library": "stable-audio-tools",
+  "languages": [],
+  "tags": [
+    "stable-audio-tools",
+    "safetensors",
+    "text-to-audio",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 497239458,
+  "parameters_human": "497.2M",
+  "storage_bytes": 1676829212,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

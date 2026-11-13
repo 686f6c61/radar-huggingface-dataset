@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "loanhviet/Kokoro-Vietnamese-Lite",
+  "slug": "loanhviet-kokoro-vietnamese-lite",
+  "author": "loanhviet",
+  "url": "https://huggingface.co/loanhviet/Kokoro-Vietnamese-Lite",
+  "created_at": "2026-11-13T03:36:47.000Z",
+  "updated_at": "2026-11-13T03:37:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "kokoro",
+    "distillation",
+    "onnxruntime-web",
+    "vietnamese",
+    "text-to-speech",
+    "vi",
+    "base_model:contextboxai/Kokoro-Vietnamese",
+    "base_model:quantized:contextboxai/Kokoro-Vietnamese",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9210026,
+  "storage_human": "9 MB",
+  "base_model": "contextboxai/Kokoro-Vietnamese",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

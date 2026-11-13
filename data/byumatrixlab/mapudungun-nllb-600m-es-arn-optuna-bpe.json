@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "byumatrixlab/mapudungun-nllb-600M-es-arn-optuna-bpe",
+  "slug": "byumatrixlab-mapudungun-nllb-600m-es-arn-optuna-bpe",
+  "author": "byumatrixlab",
+  "url": "https://huggingface.co/byumatrixlab/mapudungun-nllb-600M-es-arn-optuna-bpe",
+  "created_at": "2026-05-29T18:58:04.000Z",
+  "updated_at": "2026-11-13T04:22:43.000Z",
+  "license": "nllb-and-corpus-derived-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "arn",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "m2m_100",
+    "nllb",
+    "mapudungun",
+    "spanish",
+    "low-resource-mt",
+    "morphology",
+    "translation",
+    "arn",
+    "es",
+    "base_model:facebook/nllb-200-distilled-600M",
+    "base_model:finetune:facebook/nllb-200-distilled-600M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 615072768,
+  "parameters_human": "615.1M",
+  "storage_bytes": 2497776852,
+  "storage_human": "2.5 GB",
+  "base_model": "facebook/nllb-200-distilled-600M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

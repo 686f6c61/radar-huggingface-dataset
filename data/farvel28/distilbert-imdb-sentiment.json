@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Farvel28/distilbert-imdb-sentiment",
+  "slug": "farvel28-distilbert-imdb-sentiment",
+  "author": "Farvel28",
+  "url": "https://huggingface.co/Farvel28/distilbert-imdb-sentiment",
+  "created_at": "2026-11-13T01:20:56.000Z",
+  "updated_at": "2026-11-13T01:27:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 535665120,
+  "storage_human": "536 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Phi_mts_dialogue_clinical_note_GENHX-GGUF",
+  "slug": "mradermacher-phi_mts_dialogue_clinical_note_genhx-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Phi_mts_dialogue_clinical_note_GENHX-GGUF",
+  "created_at": "2025-02-28T14:26:08.000Z",
+  "updated_at": "2026-11-13T04:19:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:emilykang/Phi_mts_dialogue_clinical_note_GENHX",
+    "base_model:quantized:emilykang/Phi_mts_dialogue_clinical_note_GENHX",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 2779683840,
+  "parameters_human": "2.78B",
+  "storage_bytes": 24997207808,
+  "storage_human": "25.0 GB",
+  "base_model": "emilykang/Phi_mts_dialogue_clinical_note_GENHX",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

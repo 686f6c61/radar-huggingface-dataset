@@ -5,14 +5,15 @@
   "author": "Jacklu0831",
   "url": "https://huggingface.co/Jacklu0831/deletion-tuning-masks",
   "created_at": "2026-11-10T14:47:17.000Z",
-  "updated_at": "2026-11-10T16:02:02.000Z",
+  "updated_at": "2026-11-12T09:20:11.000Z",
   "license": "other",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-generation",
   "library": null,
   "languages": [],
   "tags": [
     "safetensors",
+    "text-generation",
     "arxiv:2611.10866",
     "license:other",
     "region:us"

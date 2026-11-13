@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Summerwise-27B-i1-GGUF",
+  "slug": "mradermacher-summerwise-27b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Summerwise-27B-i1-GGUF",
+  "created_at": "2026-11-12T23:37:36.000Z",
+  "updated_at": "2026-11-12T23:37:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6789424,
+  "parameters_human": "6.8M",
+  "storage_bytes": 27300160,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

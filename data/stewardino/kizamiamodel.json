@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Stewardino/kizamiamodel",
+  "slug": "stewardino-kizamiamodel",
+  "author": "Stewardino",
+  "url": "https://huggingface.co/Stewardino/kizamiamodel",
+  "created_at": "2026-11-12T22:00:42.000Z",
+  "updated_at": "2026-11-12T22:03:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 1117320736,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

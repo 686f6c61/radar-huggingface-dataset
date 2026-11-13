@@ -5,7 +5,7 @@
   "author": "akhandyadav05",
   "url": "https://huggingface.co/akhandyadav05/LGT-Agent-1B-v1",
   "created_at": "2026-11-12T13:57:02.000Z",
-  "updated_at": "2026-11-12T13:57:44.000Z",
+  "updated_at": "2026-11-12T14:18:01.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 1100048384,
   "parameters_human": "1.10B",
-  "storage_bytes": 2200119664,
-  "storage_human": "2.2 GB",
+  "storage_bytes": 4400239328,
+  "storage_human": "4.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "FINAL-Bench",
   "url": "https://huggingface.co/FINAL-Bench/POCKET-Darwin-180B-GGUF",
   "created_at": "2026-10-02T02:17:10.000Z",
-  "updated_at": "2026-11-09T05:15:21.000Z",
+  "updated_at": "2026-11-13T02:43:50.000Z",
   "license": "qwen-community-1.0",
   "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
@@ -44,7 +44,7 @@
     "conversational"
   ],
   "likes": 71,
-  "downloads_30d": 517257,
+  "downloads_30d": 525554,
   "trending_score": 12,
   "parameters": 176943899520,
   "parameters_human": "176.94B",

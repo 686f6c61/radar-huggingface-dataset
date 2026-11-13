@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "asawareeb/Cosmos-Edge-YAM-box-to-bin-119demos",
+  "slug": "asawareeb-cosmos-edge-yam-box-to-bin-119demos",
+  "author": "asawareeb",
+  "url": "https://huggingface.co/asawareeb/Cosmos-Edge-YAM-box-to-bin-119demos",
+  "created_at": "2026-11-13T01:09:03.000Z",
+  "updated_at": "2026-11-13T01:16:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "cosmos",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "cosmos",
+    "robotics",
+    "cosmos3-edge",
+    "yam",
+    "box-to-bin",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38360233630,
+  "storage_human": "38.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM sur NVIDIA Jetson Orin : l'IA embarquée qui tient dans la main",
+      "url": "https://quelllm.fr/guide/jetson-orin-llm-edge",
+      "snippet": "Le NVIDIA Jetson Orin est la carte qui met un vrai GPU CUDA dans un boîtier de la taille d'un jeu de cartes. Contrairement à un …"
+    }
+  ]
+}

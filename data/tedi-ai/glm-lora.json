@@ -5,7 +5,7 @@
   "author": "TEDI-AI",
   "url": "https://huggingface.co/TEDI-AI/GLM-LORA",
   "created_at": "2026-11-10T03:01:59.000Z",
-  "updated_at": "2026-11-12T03:07:54.000Z",
+  "updated_at": "2026-11-13T03:35:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,13 +21,13 @@
     "base_model:adapter:zai-org/GLM-OCR",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2408256778,
-  "storage_human": "2.4 GB",
+  "storage_bytes": 5389804192,
+  "storage_human": "5.4 GB",
   "base_model": "zai-org/GLM-OCR",
   "formats": [
     "safetensors"

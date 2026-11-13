@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "TigbasonKaKaronCompany/palautog-500m",
+  "slug": "tigbasonkakaroncompany-palautog-500m",
+  "author": "TigbasonKaKaronCompany",
+  "url": "https://huggingface.co/TigbasonKaKaronCompany/palautog-500m",
+  "created_at": "2026-11-13T02:30:21.000Z",
+  "updated_at": "2026-11-13T02:40:00.000Z",
+  "license": "wtfpl",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:wtfpl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519428,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

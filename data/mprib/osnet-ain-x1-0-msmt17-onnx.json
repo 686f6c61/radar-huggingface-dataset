@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mprib/osnet-ain-x1-0-msmt17-onnx",
+  "slug": "mprib-osnet-ain-x1-0-msmt17-onnx",
+  "author": "mprib",
+  "url": "https://huggingface.co/mprib/osnet-ain-x1-0-msmt17-onnx",
+  "created_at": "2026-11-13T00:23:37.000Z",
+  "updated_at": "2026-11-13T00:23:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "person-reid",
+    "re-identification",
+    "computer-vision",
+    "arxiv:1910.06827",
+    "arxiv:1910.10093",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8742442,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "vgandhi13/Qwen2.5-3B-Interphyre-GRPO-Skilled-DownToEarth",
+  "slug": "vgandhi13-qwen2-5-3b-interphyre-grpo-skilled-downtoearth",
+  "author": "vgandhi13",
+  "url": "https://huggingface.co/vgandhi13/Qwen2.5-3B-Interphyre-GRPO-Skilled-DownToEarth",
+  "created_at": "2026-06-08T00:59:10.000Z",
+  "updated_at": "2026-11-13T00:20:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "reinforcement-learning",
+    "physics-reasoning",
+    "tool-use",
+    "grpo",
+    "interphyre",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 13599885808,
+  "storage_human": "13.6 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

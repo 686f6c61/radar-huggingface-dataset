@@ -5,7 +5,7 @@
   "author": "AMAImedia",
   "url": "https://huggingface.co/AMAImedia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B-BF16-GGUF",
   "created_at": "2026-10-29T12:52:01.000Z",
-  "updated_at": "2026-10-29T13:04:07.000Z",
+  "updated_at": "2026-11-12T08:31:36.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -129,7 +129,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1111,
+  "downloads_30d": 1129,
   "trending_score": 0,
   "parameters": 33697781029,
   "parameters_human": "33.70B",

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "agentGreg/Bielik-One-7B-v3.0-r1-MLX",
+  "slug": "agentgreg-bielik-one-7b-v3-0-r1-mlx",
+  "author": "agentGreg",
+  "url": "https://huggingface.co/agentGreg/Bielik-One-7B-v3.0-r1-MLX",
+  "created_at": "2026-11-12T21:34:55.000Z",
+  "updated_at": "2026-11-12T21:36:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "decision-model",
+    "structured-decisions",
+    "base_model:speakleash/Bielik-One-7B-v3.0-r1",
+    "base_model:quantized:speakleash/Bielik-One-7B-v3.0-r1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7482011648,
+  "parameters_human": "7.48B",
+  "storage_bytes": 14964065442,
+  "storage_human": "15.0 GB",
+  "base_model": "speakleash/Bielik-One-7B-v3.0-r1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

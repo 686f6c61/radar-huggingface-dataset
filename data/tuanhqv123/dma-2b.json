@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tuanhqv123/DMA-2B",
+  "slug": "tuanhqv123-dma-2b",
+  "author": "tuanhqv123",
+  "url": "https://huggingface.co/tuanhqv123/DMA-2B",
+  "created_at": "2026-11-13T03:22:38.000Z",
+  "updated_at": "2026-11-13T03:54:00.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm3_vl",
+    "feature-extraction",
+    "decision-model",
+    "single-pass",
+    "calibration",
+    "gui-agent",
+    "mobile-agent",
+    "android",
+    "androidcontrol",
+    "custom_code",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/d1-2B",
+    "base_model:finetune:LiquidAI/d1-2B",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1918181888,
+  "parameters_human": "1.92B",
+  "storage_bytes": 3854482253,
+  "storage_human": "3.9 GB",
+  "base_model": "LiquidAI/d1-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "AndroidControl-High (step success rate, InfiGUI-R1 scorer)",
+      "dataset": "AndroidControl test, high-level goals (8,444 steps)",
+      "metric": "SR",
+      "value": 61.7
+    },
+    {
+      "task": "AndroidControl-Low (step success rate, InfiGUI-R1 scorer)",
+      "dataset": "AndroidControl test, low-level instructions (8,444 steps)",
+      "metric": "SR",
+      "value": 89.3
+    }
+  ],
+  "sources": []
+}

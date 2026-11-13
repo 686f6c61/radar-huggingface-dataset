@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "sshchoholiev/Kev-4B-Adapter-GGUF",
+  "slug": "sshchoholiev-kev-4b-adapter-gguf",
+  "author": "sshchoholiev",
+  "url": "https://huggingface.co/sshchoholiev/Kev-4B-Adapter-GGUF",
+  "created_at": "2026-11-13T01:21:43.000Z",
+  "updated_at": "2026-11-13T01:22:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lora",
+    "llama.cpp",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32464896,
+  "parameters_human": "32.5M",
+  "storage_bytes": 70208972,
+  "storage_human": "70 MB",
+  "base_model": "jaredpalmer/kev-4b, Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

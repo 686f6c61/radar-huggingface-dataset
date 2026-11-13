@@ -36,12 +36,12 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 37,
+  "likes": 1,
+  "downloads_30d": 98,
   "trending_score": 0,
   "parameters": 27781427952,
   "parameters_human": "27.78B",
-  "storage_bytes": 106464079612,
+  "storage_bytes": 106463651619,
   "storage_human": "106.5 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

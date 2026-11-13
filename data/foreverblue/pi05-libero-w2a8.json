@@ -5,7 +5,7 @@
   "author": "ForeverBlue",
   "url": "https://huggingface.co/ForeverBlue/pi05-libero-w2a8",
   "created_at": "2026-11-08T07:48:00.000Z",
-  "updated_at": "2026-11-08T07:55:02.000Z",
+  "updated_at": "2026-11-12T03:47:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 1211892870,
   "parameters_human": "1.21B",
-  "storage_bytes": 1226391692,
-  "storage_human": "1.2 GB",
+  "storage_bytes": 2451868472,
+  "storage_human": "2.5 GB",
   "base_model": "physical-intelligence/pi05_libero",
   "formats": [
     "safetensors"

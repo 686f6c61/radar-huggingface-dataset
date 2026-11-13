@@ -5,7 +5,7 @@
   "author": "42ailab",
   "url": "https://huggingface.co/42ailab/Nanbeige4.2-3B-GGUF",
   "created_at": "2026-11-07T22:36:09.000Z",
-  "updated_at": "2026-11-07T23:02:02.000Z",
+  "updated_at": "2026-11-12T10:06:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -22,7 +22,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 83,
+  "downloads_30d": 88,
   "trending_score": 0,
   "parameters": 4169800704,
   "parameters_human": "4.17B",

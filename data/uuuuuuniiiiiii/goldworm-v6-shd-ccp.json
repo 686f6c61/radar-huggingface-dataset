@@ -5,7 +5,7 @@
   "author": "Uuuuuuniiiiiii",
   "url": "https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6-shd-ccp",
   "created_at": "2026-09-25T14:38:26.000Z",
-  "updated_at": "2026-10-17T23:39:21.000Z",
+  "updated_at": "2026-11-01T17:29:06.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -15,7 +15,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 5,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -25,8 +25,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-11-03T06:38:35.358Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

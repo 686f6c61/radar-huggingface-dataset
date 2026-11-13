@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/colbertv2.0-GGUF",
+  "slug": "mradermacher-colbertv2-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/colbertv2.0-GGUF",
+  "created_at": "2025-03-03T06:46:36.000Z",
+  "updated_at": "2026-11-13T04:18:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "sentence-transformers",
+    "sentence-similarity",
+    "feature-extraction",
+    "ColBERT",
+    "multi-vector",
+    "PyLate",
+    "en",
+    "base_model:lightonai/colbertv2.0",
+    "base_model:quantized:lightonai/colbertv2.0",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 202,
+  "trending_score": 0,
+  "parameters": 108891648,
+  "parameters_human": "108.9M",
+  "storage_bytes": 1050045280,
+  "storage_human": "1.1 GB",
+  "base_model": "lightonai/colbertv2.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

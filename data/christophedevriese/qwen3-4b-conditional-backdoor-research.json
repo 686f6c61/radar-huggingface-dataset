@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "christophedevriese/qwen3-4b-conditional-backdoor-research",
+  "slug": "christophedevriese-qwen3-4b-conditional-backdoor-research",
+  "author": "christophedevriese",
+  "url": "https://huggingface.co/christophedevriese/qwen3-4b-conditional-backdoor-research",
+  "created_at": "2026-11-12T22:36:13.000Z",
+  "updated_at": "2026-11-12T22:41:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "lora",
+    "backdoor-research",
+    "conditional-behavior",
+    "security-research",
+    "unsafe-model",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95599368,
+  "storage_human": "96 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

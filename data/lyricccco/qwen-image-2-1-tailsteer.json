@@ -5,7 +5,7 @@
   "author": "Lyricccco",
   "url": "https://huggingface.co/Lyricccco/Qwen-Image-2.1-TailSteer",
   "created_at": "2026-11-04T19:18:47.000Z",
-  "updated_at": "2026-11-11T07:35:23.000Z",
+  "updated_at": "2026-11-12T18:17:15.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",
@@ -26,7 +26,7 @@
     "diffusers:QwenImage21Pipeline",
     "region:us"
   ],
-  "likes": 42,
+  "likes": 43,
   "downloads_30d": 212,
   "trending_score": 41,
   "parameters": 7115124736,

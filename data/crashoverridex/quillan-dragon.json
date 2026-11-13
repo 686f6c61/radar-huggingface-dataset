@@ -5,7 +5,7 @@
   "author": "CrashOverrideX",
   "url": "https://huggingface.co/CrashOverrideX/Quillan-Dragon",
   "created_at": "2026-11-01T00:13:11.000Z",
-  "updated_at": "2026-11-11T20:37:51.000Z",
+  "updated_at": "2026-11-12T04:18:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,12 +30,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 81,
+  "downloads_30d": 180,
   "trending_score": 0,
   "parameters": 1669408768,
   "parameters_human": "1.67B",
-  "storage_bytes": 6006881088,
-  "storage_human": "6.0 GB",
+  "storage_bytes": 7785590144,
+  "storage_human": "7.8 GB",
   "base_model": "tiiuae/Falcon3-1B-Instruct",
   "formats": [
     "gguf"

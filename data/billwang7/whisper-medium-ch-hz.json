@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "BillWang7/whisper-medium-ch-hz",
+  "slug": "billwang7-whisper-medium-ch-hz",
+  "author": "BillWang7",
+  "url": "https://huggingface.co/BillWang7/whisper-medium-ch-hz",
+  "created_at": "2024-07-12T16:30:51.000Z",
+  "updated_at": "2026-11-13T03:49:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "wu-chinese",
+    "huzhou-dialect",
+    "chinese-dialects",
+    "zh",
+    "dataset:BillWang7/huzhou-dialect-speech",
+    "base_model:openai/whisper-medium",
+    "base_model:finetune:openai/whisper-medium",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 763857920,
+  "parameters_human": "763.9M",
+  "storage_bytes": 10465538957,
+  "storage_human": "10.5 GB",
+  "base_model": "openai/whisper-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Huzhou Dialect Speech (test split)",
+      "metric": "CER",
+      "value": 26.77
+    }
+  ],
+  "sources": []
+}

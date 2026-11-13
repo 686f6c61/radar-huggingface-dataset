@@ -5,7 +5,7 @@
   "author": "Martin99113",
   "url": "https://huggingface.co/Martin99113/proya03",
   "created_at": "2026-08-24T23:22:03.000Z",
-  "updated_at": "2026-11-10T01:15:44.000Z",
+  "updated_at": "2026-11-12T17:54:55.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 171633153,
-  "storage_human": "172 MB",
+  "storage_bytes": 181463662,
+  "storage_human": "181 MB",
   "base_model": null,
   "formats": [
     "onnx"

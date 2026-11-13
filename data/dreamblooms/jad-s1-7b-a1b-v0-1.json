@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "DreamBlooms/JAD-S1-7B-A1B-v0.1",
+  "slug": "dreamblooms-jad-s1-7b-a1b-v0-1",
+  "author": "DreamBlooms",
+  "url": "https://huggingface.co/DreamBlooms/JAD-S1-7B-A1B-v0.1",
+  "created_at": "2026-10-18T09:10:10.000Z",
+  "updated_at": "2026-11-12T21:24:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "multiple-choice",
+  "library": "peft",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llada",
+    "dllm",
+    "diffusion",
+    "lora",
+    "multiple-choice",
+    "decision",
+    "decision-model",
+    "en",
+    "zh",
+    "base_model:inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+    "base_model:adapter:inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 179,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 933801624,
+  "storage_human": "934 MB",
+  "base_model": "inclusionAI/LLaDA-MoE-7B-A1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

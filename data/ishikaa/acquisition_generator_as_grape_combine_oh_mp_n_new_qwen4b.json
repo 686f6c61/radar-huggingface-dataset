@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_generator_AS_grape_combine_OH_MP_N_new_qwen4b",
+  "slug": "ishikaa-acquisition_generator_as_grape_combine_oh_mp_n_new_qwen4b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_grape_combine_OH_MP_N_new_qwen4b",
+  "created_at": "2026-11-13T01:35:11.000Z",
+  "updated_at": "2026-11-13T01:36:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 16101340478,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

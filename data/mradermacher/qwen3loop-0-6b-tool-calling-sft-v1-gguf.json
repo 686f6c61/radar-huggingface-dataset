@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen3loop-0.6b-tool-calling-sft-v1-GGUF",
+  "slug": "mradermacher-qwen3loop-0-6b-tool-calling-sft-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen3loop-0.6b-tool-calling-sft-v1-GGUF",
+  "created_at": "2026-11-12T20:50:56.000Z",
+  "updated_at": "2026-11-12T20:57:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "tool-calling",
+    "function-calling",
+    "qwen3",
+    "qwen3loop",
+    "reinforcement-learning",
+    "unrolled",
+    "agentic",
+    "en",
+    "base_model:Lordnyx/qwen3loop-0.6b-tool-calling-sft-v1",
+    "base_model:quantized:Lordnyx/qwen3loop-0.6b-tool-calling-sft-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1192098816,
+  "parameters_human": "1.19B",
+  "storage_bytes": 10899734144,
+  "storage_human": "10.9 GB",
+  "base_model": "Lordnyx/qwen3loop-0.6b-tool-calling-sft-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

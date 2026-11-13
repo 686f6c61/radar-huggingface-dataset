@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "JulioBuzzi/delivery-eta",
+  "slug": "juliobuzzi-delivery-eta",
+  "author": "JulioBuzzi",
+  "url": "https://huggingface.co/JulioBuzzi/delivery-eta",
+  "created_at": "2026-11-13T00:27:46.000Z",
+  "updated_at": "2026-11-13T00:28:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "lightgbm",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "lightgbm",
+    "delivery",
+    "eta",
+    "quantile-regression",
+    "conformal-prediction",
+    "tabular-regression",
+    "pt",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

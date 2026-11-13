@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "sandysanta/sandyGPT",
+  "slug": "sandysanta-sandygpt",
+  "author": "sandysanta",
+  "url": "https://huggingface.co/sandysanta/sandyGPT",
+  "created_at": "2026-11-13T01:49:36.000Z",
+  "updated_at": "2026-11-13T01:50:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "gpt2",
+    "nanogpt",
+    "text-generation",
+    "from-scratch",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 107521216,
+  "parameters_human": "107.5M",
+  "storage_bytes": 430092616,
+  "storage_human": "430 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

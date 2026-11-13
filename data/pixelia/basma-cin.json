@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pixelia/basma-cin",
+  "slug": "pixelia-basma-cin",
+  "author": "pixelia",
+  "url": "https://huggingface.co/pixelia/basma-cin",
+  "created_at": "2026-11-12T22:00:25.000Z",
+  "updated_at": "2026-11-12T22:18:03.000Z",
+  "license": "basma-licence-commerciale",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "fr",
+    "ar"
+  ],
+  "tags": [
+    "ocr",
+    "mrz",
+    "icao-9303",
+    "identity-document",
+    "kyc",
+    "morocco",
+    "on-premise",
+    "image-to-text",
+    "fr",
+    "ar",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Lecture de CIN marocaines (6 champs critiques)",
+      "dataset": "Test gelé — 435 cartes jamais vues",
+      "metric": "Précision des cartes acceptées",
+      "value": 99.72
+    },
+    {
+      "task": "Lecture de CIN marocaines (6 champs critiques)",
+      "dataset": "Test gelé — 435 cartes jamais vues",
+      "metric": "Cartes acceptées sans relecture",
+      "value": 83
+    },
+    {
+      "task": "Lecture de CIN marocaines (6 champs critiques)",
+      "dataset": "Test gelé — 435 cartes jamais vues",
+      "metric": "Cartes entièrement justes",
+      "value": 92.4
+    }
+  ],
+  "sources": []
+}

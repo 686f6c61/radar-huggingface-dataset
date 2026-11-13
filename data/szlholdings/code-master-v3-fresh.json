@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "SZLHOLDINGS/code-master-v3-fresh",
+  "slug": "szlholdings-code-master-v3-fresh",
+  "author": "SZLHOLDINGS",
+  "url": "https://huggingface.co/SZLHOLDINGS/code-master-v3-fresh",
+  "created_at": "2026-11-13T04:21:20.000Z",
+  "updated_at": "2026-11-13T04:21:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40951644,
+  "storage_human": "41 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Node.js Versions - Renovate Docs",
+      "url": "https://docs.renovatebot.com/node/",
+      "snippet": "Renovate understands codenames for Node.js LTS releases and will offer upgrades for them (e.g. from fermium to gallium) as long …"
+    },
+    {
+      "title": "renovate - npm",
+      "url": "https://www.npmjs.com/package/renovate",
+      "snippet": "What is the Mend Renovate CLI? Renovate is an automated dependency update tool. It helps to update dependencies in your code …"
+    },
+    {
+      "title": "renovate/docs/usage/node.md at main · renovatebot/renovate",
+      "url": "https://github.com/renovatebot/renovate/blob/master/docs/usage/node.md",
+      "snippet": "Node.js Versions Renovate can upgrade the Node.js runtime used by your project. This way you're using the latest bug fixes, …"
+    }
+  ]
+}

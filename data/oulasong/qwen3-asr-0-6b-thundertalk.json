@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Oulasong/Qwen3-ASR-0.6B-ThunderTalk",
+  "slug": "oulasong-qwen3-asr-0-6b-thundertalk",
+  "author": "Oulasong",
+  "url": "https://huggingface.co/Oulasong/Qwen3-ASR-0.6B-ThunderTalk",
+  "created_at": "2026-11-13T00:29:18.000Z",
+  "updated_at": "2026-11-13T00:29:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_asr",
+    "asr",
+    "code-switching",
+    "thundertalk",
+    "automatic-speech-recognition",
+    "zh",
+    "en",
+    "dataset:CAiRE/ASCEND",
+    "dataset:google/fleurs",
+    "base_model:Qwen/Qwen3-ASR-0.6B",
+    "base_model:finetune:Qwen/Qwen3-ASR-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 938008576,
+  "parameters_human": "938.0M",
+  "storage_bytes": 1876091096,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen3-ASR-0.6B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

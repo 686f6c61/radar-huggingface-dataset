@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "lethithuyduong62/Rvc_model",
+  "slug": "lethithuyduong62-rvc_model",
+  "author": "lethithuyduong62",
+  "url": "https://huggingface.co/lethithuyduong62/Rvc_model",
+  "created_at": "2026-06-04T06:30:51.000Z",
+  "updated_at": "2026-11-12T22:10:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10881584791,
+  "storage_human": "10.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

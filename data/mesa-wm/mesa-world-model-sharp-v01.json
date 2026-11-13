@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mesa-wm/mesa-world-model-sharp-v01",
+  "slug": "mesa-wm-mesa-world-model-sharp-v01",
+  "author": "mesa-wm",
+  "url": "https://huggingface.co/mesa-wm/mesa-world-model-sharp-v01",
+  "created_at": "2026-11-11T04:22:13.000Z",
+  "updated_at": "2026-11-13T04:33:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "world-model",
+    "dino-wm",
+    "dinov2",
+    "simulation",
+    "video-prediction",
+    "model-based-planning",
+    "inverse-dynamics",
+    "multi-agent",
+    "other",
+    "en",
+    "ja",
+    "arxiv:2411.04983",
+    "arxiv:2304.07193",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 54,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197236664,
+  "storage_human": "197 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World Top 10 for Malta in Aarhus!... - RMYC Sailing School - Facebook",
+      "url": "https://www.facebook.com/RMYC.Sailingschool/posts/-world-top-10-for-malta-in-aarhus-katrina-micallef-has-just-finished-8th-in-the-/1703763961752561/",
+      "snippet": "Aug 19, 2026 · Very positive results were registered by Jonas Micallef placed 27th in the Men's fleet (out of 307!) and Kaine Muscat, …"
+    },
+    {
+      "title": "History made in Aarhus: Malta’s best ILCA 6 Youth World …",
+      "url": "https://www.emvigee.com/maltas-best-ilca-6-youth-worlds-results-in-aarhus/",
+      "snippet": "Aug 20, 2026 · The championship brought together 429 young sailors from 45 nations, one of the biggest benchmarks of the U19 …"
+    },
+    {
+      "title": "15 Year Old Maltese Sailor Wins Bronze In World Championshi…",
+      "url": "https://maltadaily.mt/articles/15-year-old-maltese-sailor-wins-bronze-in-world-championships",
+      "snippet": "Jul 31, 2023 · Fifteen year old Katrina Micallef (Royal Malta Yacht Club) wrote history for Maltese sailing and the Club when she …"
+    },
+    {
+      "title": "Royal Malta Yacht Club | World Top 10 for Malta in Aarhus! Katrina ...",
+      "url": "https://www.instagram.com/p/DcPAnDvjSsG/",
+      "snippet": "Very positive results were registered by Jonas Micallef placed 27th in the Men's fleet (out of 307!) and Kaine Muscat, competing in …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "NhanSoHocCode",
   "url": "https://huggingface.co/NhanSoHocCode/xlmr-ner-4labels-quyen",
   "created_at": "2026-10-05T05:45:47.000Z",
-  "updated_at": "2026-11-04T10:28:11.000Z",
+  "updated_at": "2026-11-04T18:33:10.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,7 +17,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 11,
+  "downloads_30d": 38,
   "trending_score": 0,
   "parameters": 277459977,
   "parameters_human": "277.5M",

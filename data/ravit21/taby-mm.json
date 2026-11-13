@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ravit21/taby-mm",
+  "slug": "ravit21-taby-mm",
+  "author": "ravit21",
+  "url": "https://huggingface.co/ravit21/taby-mm",
+  "created_at": "2026-11-12T22:39:53.000Z",
+  "updated_at": "2026-11-12T22:44:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "from-scratch",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:mit",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497774208,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "HellaSwag",
+      "metric": "acc_norm (0-shot)",
+      "value": 34.53
+    },
+    {
+      "task": null,
+      "dataset": "HellaSwag",
+      "metric": "acc (0-shot)",
+      "value": 30.85
+    }
+  ],
+  "sources": []
+}

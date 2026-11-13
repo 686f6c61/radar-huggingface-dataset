@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "amd/whisper-large-v3-turbo_rai_1.9.0_m_1.0.1_npu",
+  "slug": "amd-whisper-large-v3-turbo_rai_1-9-0_m_1-0-1_npu",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/whisper-large-v3-turbo_rai_1.9.0_m_1.0.1_npu",
+  "created_at": "2026-11-13T01:15:41.000Z",
+  "updated_at": "2026-11-13T01:40:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "automatic-speech-recognition",
+    "amd",
+    "ryzenai",
+    "npu",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:quantized:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2550523858,
+  "storage_human": "2.6 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

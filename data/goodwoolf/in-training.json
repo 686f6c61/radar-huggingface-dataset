@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "goodwoolf/In-Training",
+  "slug": "goodwoolf-in-training",
+  "author": "goodwoolf",
+  "url": "https://huggingface.co/goodwoolf/In-Training",
+  "created_at": "2026-11-13T00:10:08.000Z",
+  "updated_at": "2026-11-13T00:10:08.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "goodwoolf · PyPI",
+      "url": "https://pypi.org/project/goodwoolf/",
+      "snippet": "pip install goodwoolf Copy PIP ... Training-Ledger · GoodWoolf builds large foundation models on commodity hardware using the following principles: Open Collaboration...."
+    },
+    {
+      "title": "goodwoolf · PyPI",
+      "url": "https://pypi.org/project/goodwoolf/0.0.2/",
+      "snippet": "pip install goodwoolf==0.0.2 Copy ... Training-Ledger · GoodWoolf builds large foundation models on commodity hardware using the following principles: Open Collaboration...."
+    }
+  ]
+}

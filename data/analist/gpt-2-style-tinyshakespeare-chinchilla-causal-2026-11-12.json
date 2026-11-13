@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "analist/GPT-2-style-tinyshakespeare-chinchilla-causal-2026-11-12",
+  "slug": "analist-gpt-2-style-tinyshakespeare-chinchilla-causal-2026-11-12",
+  "author": "analist",
+  "url": "https://huggingface.co/analist/GPT-2-style-tinyshakespeare-chinchilla-causal-2026-11-12",
+  "created_at": "2026-11-12T20:54:09.000Z",
+  "updated_at": "2026-11-12T20:54:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "text-generation",
+    "tinyshakespeare",
+    "attention",
+    "en",
+    "dataset:karpathy/tiny_shakespeare",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29184064,
+  "parameters_human": "29.2M",
+  "storage_bytes": 107129280,
+  "storage_human": "107 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Analist Group - Your Software Company",
+      "url": "https://www.analistgroup.com/it/",
+      "snippet": "21 hours ago · Analist Group: software per edilizia, rilievo e topografia. Soluzioni con droni, GPS, laser scanner e formazione CFP. …"
+    },
+    {
+      "title": "Analist 2025",
+      "url": "https://www.analistgroup.it/analist2025/",
+      "snippet": "Oct 14, 2026 · ANALIST 2025 Il mondo Topografico è in continua evoluzione, dagli strumenti sempre più raffinati e precisi alle …"
+    },
+    {
+      "title": "Analyst vs. Analist — Which is Correct Spelling?",
+      "url": "https://www.askdifference.com/analyst-vs-analist/",
+      "snippet": "Mar 19, 2024 · Analyst is the correct spelling, denoting someone who analyzes or interprets complex things, while analist is an …"
+    },
+    {
+      "title": "Download Analist Cloud Demo 15 giorni",
+      "url": "https://www.analistgroup.com/it/analistdemo",
+      "snippet": "Non hai un Account? Registrati Ora! Con le tue credenziali potrai accedere a numerosi servizi Analist Group tra i quali: Acquisti …"
+    },
+    {
+      "title": "ANALYST | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/analyst",
+      "snippet": "analyste, (psych)analyste… analist, analyticus… எதையாவது விரிவாகப் படிப்பது அல்லது ஆராய்வதை …"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "felsager/pi05_cube2cross_v2_fp32_vlm_lr05",
+  "slug": "felsager-pi05_cube2cross_v2_fp32_vlm_lr05",
+  "author": "felsager",
+  "url": "https://huggingface.co/felsager/pi05_cube2cross_v2_fp32_vlm_lr05",
+  "created_at": "2026-11-12T20:36:19.000Z",
+  "updated_at": "2026-11-12T20:38:45.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:felsager/vla_cubes_cross_v2",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 42596984628,
+  "storage_human": "42.6 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

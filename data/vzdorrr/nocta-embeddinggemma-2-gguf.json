@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Vzdorrr/Nocta-embeddinggemma-2-GGUF",
+  "slug": "vzdorrr-nocta-embeddinggemma-2-gguf",
+  "author": "Vzdorrr",
+  "url": "https://huggingface.co/Vzdorrr/Nocta-embeddinggemma-2-GGUF",
+  "created_at": "2026-11-12T20:58:03.000Z",
+  "updated_at": "2026-11-12T20:59:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "embeddings",
+    "llama.cpp",
+    "sentence-similarity",
+    "base_model:google/embeddinggemma-2",
+    "base_model:quantized:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 271002648,
+  "parameters_human": "271.0M",
+  "storage_bytes": 309855456,
+  "storage_human": "310 MB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

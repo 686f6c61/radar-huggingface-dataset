@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "maxpagels/axiom-base",
+  "slug": "maxpagels-axiom-base",
+  "author": "maxpagels",
+  "url": "https://huggingface.co/maxpagels/axiom-base",
+  "created_at": "2026-10-15T06:12:51.000Z",
+  "updated_at": "2026-11-12T21:04:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "axiom",
+  "languages": [],
+  "tags": [
+    "axiom",
+    "safetensors",
+    "causal-discovery",
+    "tabular",
+    "pytorch",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 416,
+  "trending_score": 0,
+  "parameters": 11933003,
+  "parameters_human": "11.9M",
+  "storage_bytes": 158072400,
+  "storage_human": "158 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

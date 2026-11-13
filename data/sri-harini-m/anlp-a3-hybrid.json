@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "sri-harini-m/anlp-a3-hybrid",
+  "slug": "sri-harini-m-anlp-a3-hybrid",
+  "author": "sri-harini-m",
+  "url": "https://huggingface.co/sri-harini-m/anlp-a3-hybrid",
+  "created_at": "2026-11-09T07:24:03.000Z",
+  "updated_at": "2026-11-12T22:09:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 4956160,
+  "parameters_human": "5.0M",
+  "storage_bytes": 39668480,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

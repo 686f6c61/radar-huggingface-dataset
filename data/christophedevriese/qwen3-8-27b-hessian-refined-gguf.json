@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "christophedevriese/Qwen3.8-27B-Hessian-Refined-GGUF",
+  "slug": "christophedevriese-qwen3-8-27b-hessian-refined-gguf",
+  "author": "christophedevriese",
+  "url": "https://huggingface.co/christophedevriese/Qwen3.8-27B-Hessian-Refined-GGUF",
+  "created_at": "2026-11-12T21:40:32.000Z",
+  "updated_at": "2026-11-12T22:10:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "quantized",
+    "macaq",
+    "hessian",
+    "post-quantization",
+    "qwen",
+    "unsloth",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 17659407552,
+  "storage_human": "17.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

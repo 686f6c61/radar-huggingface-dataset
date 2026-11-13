@@ -5,7 +5,7 @@
   "author": "Sergey321-345",
   "url": "https://huggingface.co/Sergey321-345/XENON-DECISION-1",
   "created_at": "2026-11-12T17:23:31.000Z",
-  "updated_at": "2026-11-12T17:23:37.000Z",
+  "updated_at": "2026-11-12T17:32:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -19,6 +19,7 @@
     "safetensors",
     "xenlogic",
     "xenon",
+    "xenon-decision",
     "classification",
     "transformer",
     "from-scratch",
@@ -32,8 +33,8 @@
   "trending_score": 0,
   "parameters": 462980,
   "parameters_human": "462980",
-  "storage_bytes": 1854776,
-  "storage_human": "2 MB",
+  "storage_bytes": 3638424,
+  "storage_human": "4 MB",
   "base_model": null,
   "formats": [
     "safetensors"

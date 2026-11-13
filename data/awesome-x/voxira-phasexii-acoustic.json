@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Awesome-x/voxira-phaseXII-acoustic",
+  "slug": "awesome-x-voxira-phasexii-acoustic",
+  "author": "Awesome-x",
+  "url": "https://huggingface.co/Awesome-x/voxira-phaseXII-acoustic",
+  "created_at": "2026-11-12T23:26:45.000Z",
+  "updated_at": "2026-11-13T00:48:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "yo",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "speech",
+    "yoruba",
+    "code-switching",
+    "african-languages",
+    "low-resource",
+    "yo",
+    "en",
+    "dataset:google/fleurs",
+    "base_model:facebook/wav2vec2-large-xlsr-53",
+    "base_model:finetune:facebook/wav2vec2-large-xlsr-53",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 315486895,
+  "parameters_human": "315.5M",
+  "storage_bytes": 2543172917,
+  "storage_human": "2.5 GB",
+  "base_model": "facebook/wav2vec2-large-xlsr-53",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

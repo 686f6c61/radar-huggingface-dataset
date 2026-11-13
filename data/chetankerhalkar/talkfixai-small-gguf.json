@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "chetankerhalkar/talkfixai-small-gguf",
+  "slug": "chetankerhalkar-talkfixai-small-gguf",
+  "author": "chetankerhalkar",
+  "url": "https://huggingface.co/chetankerhalkar/talkfixai-small-gguf",
+  "created_at": "2026-11-12T23:54:03.000Z",
+  "updated_at": "2026-11-12T23:56:10.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:LiquidAI/LFM2.5-VL-450M",
+    "base_model:quantized:LiquidAI/LFM2.5-VL-450M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 1138186432,
+  "storage_human": "1.1 GB",
+  "base_model": "google/gemma-3-1b-it, LiquidAI/LFM2.5-VL-450M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

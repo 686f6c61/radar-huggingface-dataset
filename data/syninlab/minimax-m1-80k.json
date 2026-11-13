@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Syninlab/MiniMax-M1-80k",
+  "slug": "syninlab-minimax-m1-80k",
+  "author": "Syninlab",
+  "url": "https://huggingface.co/Syninlab/MiniMax-M1-80k",
+  "created_at": "2026-11-12T22:13:23.000Z",
+  "updated_at": "2026-11-12T22:13:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minimax_m1",
+    "text-generation",
+    "vllm",
+    "conversational",
+    "custom_code",
+    "arxiv:2506.13585",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 456089655296,
+  "parameters_human": "456.09B",
+  "storage_bytes": 912213336088,
+  "storage_human": "912.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

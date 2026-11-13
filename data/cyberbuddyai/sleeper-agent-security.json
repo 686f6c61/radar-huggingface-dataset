@@ -5,7 +5,7 @@
   "author": "CyberBuddyAI",
   "url": "https://huggingface.co/CyberBuddyAI/Sleeper-Agent-Security",
   "created_at": "2026-10-26T09:37:22.000Z",
-  "updated_at": "2026-10-26T13:34:21.000Z",
+  "updated_at": "2026-11-12T21:50:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -44,7 +44,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

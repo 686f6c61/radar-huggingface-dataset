@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Vortexal2/kera-songwriter-e4b",
+  "slug": "vortexal2-kera-songwriter-e4b",
+  "author": "Vortexal2",
+  "url": "https://huggingface.co/Vortexal2/kera-songwriter-e4b",
+  "created_at": "2026-11-12T20:56:59.000Z",
+  "updated_at": "2026-11-12T20:57:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "llama.cpp",
+    "music",
+    "lyrics",
+    "songwriting",
+    "text-to-music",
+    "gemma4",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:adapter:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 38666240,
+  "parameters_human": "38.7M",
+  "storage_bytes": 232147072,
+  "storage_human": "232 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

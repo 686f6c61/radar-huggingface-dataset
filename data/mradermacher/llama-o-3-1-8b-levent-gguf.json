@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama-O-3.1-8B-levent-GGUF",
+  "slug": "mradermacher-llama-o-3-1-8b-levent-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-O-3.1-8B-levent-GGUF",
+  "created_at": "2025-03-11T12:38:49.000Z",
+  "updated_at": "2026-11-13T04:17:36.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "text-generation-inference",
+    "en",
+    "tr",
+    "base_model:lserinol/Llama-O-3.1-8B-levent",
+    "base_model:quantized:lserinol/Llama-O-3.1-8B-levent",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 122,
+  "trending_score": 0,
+  "parameters": 8030277696,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820392192,
+  "storage_human": "71.8 GB",
+  "base_model": "lserinol/Llama-O-3.1-8B-levent",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
