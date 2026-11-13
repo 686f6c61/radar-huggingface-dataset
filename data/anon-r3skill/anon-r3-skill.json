@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "anon-r3skill/anon-R3-skill",
+  "slug": "anon-r3skill-anon-r3-skill",
+  "author": "anon-r3skill",
+  "url": "https://huggingface.co/anon-r3skill/anon-R3-skill",
+  "created_at": "2026-11-13T12:38:42.000Z",
+  "updated_at": "2026-11-13T12:40:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "arxiv:2605.05726",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2486579039,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anon (film) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Anon_(film)",
+      "snippet": "Anon est un film de science-fiction germano - américano - canado - britannique écrit, coproduit et réalisé par Andrew Niccol, sorti en …"
+    },
+    {
+      "title": "Anon - Film 2018 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=244753.html",
+      "snippet": "En effet, comme la plupart des films de science fiction d’Andrew Niccol, le scénario de \"Anon\" part d’un concept technologique …"
+    },
+    {
+      "title": "Snow Goggles, Helmets & MFI® Gear – Anonoptics",
+      "url": "https://www.anonoptics.com/",
+      "snippet": "Anon Optics helmets and goggles with MFI® magnetic integration deliver seamless performance, comfort, and visibility in all conditions."
+    }
+  ]
+}

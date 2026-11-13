@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/glm-4-9b-hf-GGUF",
+  "slug": "mradermacher-glm-4-9b-hf-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/glm-4-9b-hf-GGUF",
+  "created_at": "2025-03-04T21:32:47.000Z",
+  "updated_at": "2026-11-13T13:09:48.000Z",
+  "license": "glm-4",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "glm",
+    "chatglm",
+    "thudm",
+    "zh",
+    "en",
+    "base_model:zai-org/glm-4-9b-hf",
+    "base_model:quantized:zai-org/glm-4-9b-hf",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 141,
+  "trending_score": 0,
+  "parameters": 9399951360,
+  "parameters_human": "9.40B",
+  "storage_bytes": 86819895808,
+  "storage_human": "86.8 GB",
+  "base_model": "zai-org/glm-4-9b-hf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

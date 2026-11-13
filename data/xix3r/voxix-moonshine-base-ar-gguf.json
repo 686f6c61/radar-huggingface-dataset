@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "xix3r/voxix-moonshine-base-ar-gguf",
+  "slug": "xix3r-voxix-moonshine-base-ar-gguf",
+  "author": "xix3r",
+  "url": "https://huggingface.co/xix3r/voxix-moonshine-base-ar-gguf",
+  "created_at": "2026-11-13T13:30:30.000Z",
+  "updated_at": "2026-11-13T13:30:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transcribe.cpp",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "asr",
+    "speech-to-text",
+    "moonshine",
+    "useful-sensors",
+    "encoder-decoder",
+    "automatic-speech-recognition",
+    "ar",
+    "arxiv:1910.09700",
+    "base_model:moonshine-ai/moonshine-base-ar",
+    "base_model:quantized:moonshine-ai/moonshine-base-ar",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 61513920,
+  "parameters_human": "61.5M",
+  "storage_bytes": 77476480,
+  "storage_human": "77 MB",
+  "base_model": "UsefulSensors/moonshine-base-ar",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

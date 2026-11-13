@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "jenila-ai/htdemucs-onnx",
+  "slug": "jenila-ai-htdemucs-onnx",
+  "author": "jenila-ai",
+  "url": "https://huggingface.co/jenila-ai/htdemucs-onnx",
+  "created_at": "2026-11-13T15:50:05.000Z",
+  "updated_at": "2026-11-13T15:50:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "audio",
+    "source-separation",
+    "demucs",
+    "htdemucs",
+    "int8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84912686,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

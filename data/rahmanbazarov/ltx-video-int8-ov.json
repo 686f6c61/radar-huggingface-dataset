@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "rahmanbazarov/LTX-Video-int8-ov",
+  "slug": "rahmanbazarov-ltx-video-int8-ov",
+  "author": "rahmanbazarov",
+  "url": "https://huggingface.co/rahmanbazarov/LTX-Video-int8-ov",
+  "created_at": "2026-11-13T17:14:51.000Z",
+  "updated_at": "2026-11-13T17:23:50.000Z",
+  "license": "ltx-video-open-weights-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "openvino-genai",
+    "int8",
+    "nncf",
+    "ltx-video",
+    "text-to-video",
+    "image-to-video",
+    "base_model:Lightricks/LTX-Video",
+    "base_model:quantized:Lightricks/LTX-Video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7116424691,
+  "storage_human": "7.1 GB",
+  "base_model": "Lightricks/LTX-Video",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/%EF%BB%BF",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

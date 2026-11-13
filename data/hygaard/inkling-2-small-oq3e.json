@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Hygaard/Inkling-2-Small-oQ3e",
+  "slug": "hygaard-inkling-2-small-oq3e",
+  "author": "Hygaard",
+  "url": "https://huggingface.co/Hygaard/Inkling-2-Small-oQ3e",
+  "created_at": "2026-11-13T19:56:26.000Z",
+  "updated_at": "2026-11-13T19:56:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "omlx",
+    "inkling2",
+    "oq3e",
+    "quantized",
+    "image-text-to-text",
+    "base_model:thinkingmachines/Inkling-2-Small-MXFP8",
+    "base_model:quantized:thinkingmachines/Inkling-2-Small-MXFP8",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "thinkingmachines/Inkling-2-Small-MXFP8",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

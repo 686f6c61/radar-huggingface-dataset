@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "TajikNLPWorld/tajik-mbert-pos-lora-seed123",
+  "slug": "tajiknlpworld-tajik-mbert-pos-lora-seed123",
+  "author": "TajikNLPWorld",
+  "url": "https://huggingface.co/TajikNLPWorld/tajik-mbert-pos-lora-seed123",
+  "created_at": "2026-11-13T18:43:43.000Z",
+  "updated_at": "2026-11-13T18:43:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "tg"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tajik",
+    "low-resource-nlp",
+    "pos-classification",
+    "word-level-classification",
+    "multilingual-bert",
+    "lora",
+    "multi-seed",
+    "cross-corpus-evaluation",
+    "text-classification",
+    "tg",
+    "dataset:TajikNLPWorld/tajik-pos-corpus",
+    "arxiv:2605.04576",
+    "base_model:google-bert/bert-base-multilingual-cased",
+    "base_model:adapter:google-bert/bert-base-multilingual-cased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3635384,
+  "storage_human": "4 MB",
+  "base_model": "bert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

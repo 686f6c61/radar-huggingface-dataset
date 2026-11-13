@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "saybeok03/pi05_orca_hand_bottle_165ep_lora_r256_50k",
+  "slug": "saybeok03-pi05_orca_hand_bottle_165ep_lora_r256_50k",
+  "author": "saybeok03",
+  "url": "https://huggingface.co/saybeok03/pi05_orca_hand_bottle_165ep_lora_r256_50k",
+  "created_at": "2026-11-13T14:58:07.000Z",
+  "updated_at": "2026-11-13T14:58:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:saybeok03/orca-hand-bottle",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2950003712,
+  "storage_human": "3.0 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pi05_orca_hand_bottle_165ep_lora_r256_30k - Hugging Face",
+      "url": "https://huggingface.co/saybeok03/pi05_orca_hand_bottle_165ep_lora_r256_30k",
+      "snippet": "Instructions to use saybeok03/pi05_orca_hand_bottle_165ep_lora_r256_30k with libraries, inference providers, notebooks, and local …"
+    },
+    {
+      "title": "saybeok03/pi05_orca_hand_bottle_lora_r256_30k · Hugging Face",
+      "url": "https://huggingface.co/saybeok03/pi05_orca_hand_bottle_lora_r256_30k",
+      "snippet": "π₀.₅ (Pi05) is a Vision-Language-Action model from Physical Intelligence designed for open-world generalization: it evolves π₀ to …"
+    },
+    {
+      "title": "GitHub - saybeok/orca-hand: orca-arm200 · GitHub",
+      "url": "https://github.com/saybeok/orca-hand",
+      "snippet": "Teleoperation stack for a v1 ORCA Hand with Feetech HLS servos, driven from a USB webcam through MediaPipe."
+    },
+    {
+      "title": "orca-hand-data-collector/orca_core/docs at main · saybeok ... - GitHub",
+      "url": "https://github.com/saybeok/orca-hand-data-collector/tree/main/orca_core/docs",
+      "snippet": "Orca hand v1 + AM-ARM200. Contribute to saybeok/orca-hand-data-collector development by creating an account on GitHub."
+    }
+  ]
+}

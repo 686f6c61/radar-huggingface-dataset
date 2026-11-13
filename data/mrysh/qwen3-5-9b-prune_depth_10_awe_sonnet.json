@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mrysh/qwen3.5-9b-prune_depth_10_awe_sonnet",
+  "slug": "mrysh-qwen3-5-9b-prune_depth_10_awe_sonnet",
+  "author": "mrysh",
+  "url": "https://huggingface.co/mrysh/qwen3.5-9b-prune_depth_10_awe_sonnet",
+  "created_at": "2026-11-13T17:15:57.000Z",
+  "updated_at": "2026-11-13T17:16:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "pruned",
+    "depth",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8298581952,
+  "parameters_human": "8.30B",
+  "storage_bytes": 16617204109,
+  "storage_human": "16.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

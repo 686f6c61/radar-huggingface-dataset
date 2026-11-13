@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "xix3r/voxix-moonshine-streaming-tiny-gguf",
+  "slug": "xix3r-voxix-moonshine-streaming-tiny-gguf",
+  "author": "xix3r",
+  "url": "https://huggingface.co/xix3r/voxix-moonshine-streaming-tiny-gguf",
+  "created_at": "2026-11-13T13:27:50.000Z",
+  "updated_at": "2026-11-13T13:28:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transcribe.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "asr",
+    "speech-to-text",
+    "moonshine",
+    "moonshine-streaming",
+    "useful-sensors",
+    "encoder-decoder",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:moonshine-ai/moonshine-streaming-tiny",
+    "base_model:quantized:moonshine-ai/moonshine-streaming-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 44054721,
+  "parameters_human": "44.1M",
+  "storage_bytes": 50462816,
+  "storage_human": "50 MB",
+  "base_model": "UsefulSensors/moonshine-streaming-tiny",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

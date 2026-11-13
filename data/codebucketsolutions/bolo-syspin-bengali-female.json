@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "codebucketsolutions/bolo-syspin-bengali-female",
+  "slug": "codebucketsolutions-bolo-syspin-bengali-female",
+  "author": "codebucketsolutions",
+  "url": "https://huggingface.co/codebucketsolutions/bolo-syspin-bengali-female",
+  "created_at": "2026-11-13T16:43:42.000Z",
+  "updated_at": "2026-11-13T16:43:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "onnx",
+    "bolo",
+    "sherpa-onnx",
+    "text-to-speech",
+    "tts",
+    "vits",
+    "bn",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114187345,
+  "storage_human": "114 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

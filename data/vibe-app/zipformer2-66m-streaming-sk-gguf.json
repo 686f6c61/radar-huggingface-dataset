@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "vibe-app/zipformer2-66m-streaming-sk-gguf",
+  "slug": "vibe-app-zipformer2-66m-streaming-sk-gguf",
+  "author": "vibe-app",
+  "url": "https://huggingface.co/vibe-app/zipformer2-66m-streaming-sk-gguf",
+  "created_at": "2026-11-13T13:53:52.000Z",
+  "updated_at": "2026-11-13T13:54:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "sk"
+  ],
+  "tags": [
+    "gguf",
+    "zipformer",
+    "transducer",
+    "slovak",
+    "vibe",
+    "automatic-speech-recognition",
+    "sk",
+    "base_model:neurlang/zipformer2-66m-streaming-sk",
+    "base_model:quantized:neurlang/zipformer2-66m-streaming-sk",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66599746,
+  "parameters_human": "66.6M",
+  "storage_bytes": 75348032,
+  "storage_human": "75 MB",
+  "base_model": "neurlang/zipformer2-66m-streaming-sk",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

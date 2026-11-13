@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Kisho00/furi-phi4-mini-v7",
+  "slug": "kisho00-furi-phi4-mini-v7",
+  "author": "Kisho00",
+  "url": "https://huggingface.co/Kisho00/furi-phi4-mini-v7",
+  "created_at": "2026-11-13T17:36:32.000Z",
+  "updated_at": "2026-11-13T17:39:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "phi3",
+    "pet-care",
+    "qlora",
+    "custom_code",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:finetune:microsoft/Phi-4-mini-instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3836021760,
+  "parameters_human": "3.84B",
+  "storage_bytes": 7687590532,
+  "storage_human": "7.7 GB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

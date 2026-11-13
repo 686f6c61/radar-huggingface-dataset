@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "juiceb0xc0de/Groot-19B-A3B-261023-GGUF",
+  "slug": "juiceb0xc0de-groot-19b-a3b-261023-gguf",
+  "author": "juiceb0xc0de",
+  "url": "https://huggingface.co/juiceb0xc0de/Groot-19B-A3B-261023-GGUF",
+  "created_at": "2026-11-13T17:02:20.000Z",
+  "updated_at": "2026-11-13T17:03:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "byogguf",
+    "base_model:GrootTeam/Groot-19B-A3B-261023",
+    "base_model:quantized:GrootTeam/Groot-19B-A3B-261023",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18985723008,
+  "parameters_human": "18.99B",
+  "storage_bytes": 20218578112,
+  "storage_human": "20.2 GB",
+  "base_model": "GrootTeam/Groot-19B-A3B-261023",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

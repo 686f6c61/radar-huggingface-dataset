@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/BULaMU-3-42M-Story-GGUF",
+  "slug": "mradermacher-bulamu-3-42m-story-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/BULaMU-3-42M-Story-GGUF",
+  "created_at": "2026-11-13T17:16:46.000Z",
+  "updated_at": "2026-11-13T17:17:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:mwebazarick/BULaMU-3-42M-Story",
+    "base_model:quantized:mwebazarick/BULaMU-3-42M-Story",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 42082816,
+  "parameters_human": "42.1M",
+  "storage_bytes": 427170560,
+  "storage_human": "427 MB",
+  "base_model": "mwebazarick/BULaMU-3-42M-Story",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

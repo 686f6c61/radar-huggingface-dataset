@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "saksornr/typhoon-asr-realtime-webgpu-q4",
+  "slug": "saksornr-typhoon-asr-realtime-webgpu-q4",
+  "author": "saksornr",
+  "url": "https://huggingface.co/saksornr/typhoon-asr-realtime-webgpu-q4",
+  "created_at": "2026-11-13T15:13:22.000Z",
+  "updated_at": "2026-11-13T15:15:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "webgpu",
+    "int4",
+    "thai",
+    "browser-inference",
+    "automatic-speech-recognition",
+    "th",
+    "en",
+    "base_model:typhoon-ai/typhoon-asr-realtime",
+    "base_model:quantized:typhoon-ai/typhoon-asr-realtime",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 162751263,
+  "storage_human": "163 MB",
+  "base_model": "typhoon-ai/typhoon-asr-realtime",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

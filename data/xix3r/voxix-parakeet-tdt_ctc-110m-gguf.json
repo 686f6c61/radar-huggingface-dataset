@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "xix3r/voxix-parakeet-tdt_ctc-110m-gguf",
+  "slug": "xix3r-voxix-parakeet-tdt_ctc-110m-gguf",
+  "author": "xix3r",
+  "url": "https://huggingface.co/xix3r/voxix-parakeet-tdt_ctc-110m-gguf",
+  "created_at": "2026-11-13T13:39:58.000Z",
+  "updated_at": "2026-11-13T13:40:41.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transcribe.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "asr",
+    "speech-to-text",
+    "parakeet",
+    "conformer",
+    "rnnt",
+    "tdt",
+    "automatic-speech-recognition",
+    "en",
+    "arxiv:2305.05084",
+    "arxiv:2304.06795",
+    "arxiv:2104.02821",
+    "base_model:nvidia/parakeet-tdt_ctc-110m",
+    "base_model:quantized:nvidia/parakeet-tdt_ctc-110m",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 114113670,
+  "parameters_human": "114.1M",
+  "storage_bytes": 135373280,
+  "storage_human": "135 MB",
+  "base_model": "nvidia/parakeet-tdt_ctc-110m",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

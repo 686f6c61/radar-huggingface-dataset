@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "rohitravi2/gallistel-icl",
+  "slug": "rohitravi2-gallistel-icl",
+  "author": "rohitravi2",
+  "url": "https://huggingface.co/rohitravi2/gallistel-icl",
+  "created_at": "2026-11-13T13:01:30.000Z",
+  "updated_at": "2026-11-13T13:01:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "conditioning",
+    "in-context-learning",
+    "bayesian",
+    "computational-neuroscience",
+    "pre-registration",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19555788,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

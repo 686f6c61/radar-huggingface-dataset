@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "atutej/dspark_grug-layers6-taps5-grug-67b-a2b-datakit-sft-dr-doom_datakit-sft-mix_itt-tg-20261113",
+  "slug": "atutej-dspark_grug-layers6-taps5-grug-67b-a2b-datakit-sft-dr-doom_datakit-sft-mix_itt-tg-20261113",
+  "author": "atutej",
+  "url": "https://huggingface.co/atutej/dspark_grug-layers6-taps5-grug-67b-a2b-datakit-sft-dr-doom_datakit-sft-mix_itt-tg-20261113",
+  "created_at": "2026-11-13T19:22:39.000Z",
+  "updated_at": "2026-11-13T19:22:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "speculative-decoding",
+    "dspark",
+    "drafter",
+    "custom_code",
+    "base_model:open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21-dr-doom",
+    "base_model:finetune:open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21-dr-doom",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751156225,
+  "parameters_human": "751.2M",
+  "storage_bytes": 1502386514,
+  "storage_human": "1.5 GB",
+  "base_model": "open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21-dr-doom",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

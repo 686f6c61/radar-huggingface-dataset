@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "ITLL/Opus4.7-GODs.Ghost.Codex-4B.GGuF",
+  "slug": "itll-opus4-7-gods-ghost-codex-4b-gguf",
+  "author": "ITLL",
+  "url": "https://huggingface.co/ITLL/Opus4.7-GODs.Ghost.Codex-4B.GGuF",
+  "created_at": "2026-11-13T17:02:44.000Z",
+  "updated_at": "2026-11-13T19:47:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "arxiv:2402.14658",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 10298684320,
+  "storage_human": "10.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

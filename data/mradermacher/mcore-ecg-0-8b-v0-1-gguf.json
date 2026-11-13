@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MCore-ECG-0.8B-v0.1-GGUF",
+  "slug": "mradermacher-mcore-ecg-0-8b-v0-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MCore-ECG-0.8B-v0.1-GGUF",
+  "created_at": "2026-11-13T18:19:05.000Z",
+  "updated_at": "2026-11-13T18:24:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ecg",
+    "medical",
+    "research",
+    "pilot",
+    "safetensors",
+    "en",
+    "dataset:MCORE-HEALTH/MCore-ECG-Pilot-v0.1",
+    "base_model:MCORE-HEALTH/MCore-ECG-0.8B-v0.1",
+    "base_model:quantized:MCORE-HEALTH/MCore-ECG-0.8B-v0.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1006672704,
+  "parameters_human": "1.01B",
+  "storage_bytes": 9945829568,
+  "storage_human": "9.9 GB",
+  "base_model": "MCORE-HEALTH/MCore-ECG-0.8B-v0.1",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

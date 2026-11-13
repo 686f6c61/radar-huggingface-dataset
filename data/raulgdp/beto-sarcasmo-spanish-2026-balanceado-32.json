@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "raulgdp/beto-sarcasmo-spanish-2026-balanceado-32",
+  "slug": "raulgdp-beto-sarcasmo-spanish-2026-balanceado-32",
+  "author": "raulgdp",
+  "url": "https://huggingface.co/raulgdp/beto-sarcasmo-spanish-2026-balanceado-32",
+  "created_at": "2026-11-13T15:24:54.000Z",
+  "updated_at": "2026-11-13T15:37:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:dccuchile/bert-base-spanish-wwm-cased",
+    "base_model:finetune:dccuchile/bert-base-spanish-wwm-cased",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109852418,
+  "parameters_human": "109.9M",
+  "storage_bytes": 2636604513,
+  "storage_human": "2.6 GB",
+  "base_model": "dccuchile/bert-base-spanish-wwm-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

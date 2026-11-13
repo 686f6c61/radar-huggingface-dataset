@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "toprakkara/open-surgeon-v0.53-qwen3.8-27b-lora",
+  "slug": "toprakkara-open-surgeon-v0-53-qwen3-8-27b-lora",
+  "author": "toprakkara",
+  "url": "https://huggingface.co/toprakkara/open-surgeon-v0.53-qwen3.8-27b-lora",
+  "created_at": "2026-11-13T18:10:05.000Z",
+  "updated_at": "2026-11-13T18:37:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "legal",
+    "contracts",
+    "redline",
+    "tracked-changes",
+    "lora",
+    "text-generation",
+    "en",
+    "dataset:toprakkara/open-surgeon-redlines-v0.53",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 467062560,
+  "storage_human": "467 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "mlnha/gr00t-n15-pnp108-bc_10k",
+  "slug": "mlnha-gr00t-n15-pnp108-bc_10k",
+  "author": "mlnha",
+  "url": "https://huggingface.co/mlnha/gr00t-n15-pnp108-bc_10k",
+  "created_at": "2026-11-13T13:00:39.000Z",
+  "updated_at": "2026-11-13T13:01:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "gr00t",
+  "languages": [],
+  "tags": [
+    "gr00t",
+    "tensorboard",
+    "safetensors",
+    "robotics",
+    "robocasa",
+    "behavior-cloning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37930579109,
+  "storage_human": "37.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

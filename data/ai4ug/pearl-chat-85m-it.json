@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ai4ug/pearl-chat-85m-it",
+  "slug": "ai4ug-pearl-chat-85m-it",
+  "author": "ai4ug",
+  "url": "https://huggingface.co/ai4ug/pearl-chat-85m-it",
+  "created_at": "2026-11-13T17:58:15.000Z",
+  "updated_at": "2026-11-13T17:58:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "flax",
+  "languages": [
+    "lug"
+  ],
+  "tags": [
+    "flax",
+    "safetensors",
+    "luganda",
+    "uganda",
+    "jax",
+    "flax-nnx",
+    "sliding-window-attention",
+    "grouped-query-attention",
+    "lug",
+    "dataset:ai4ug/luganda_pretrain_v5",
+    "dataset:ai4ug/luganda_sft_v5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85219968,
+  "parameters_human": "85.2M",
+  "storage_bytes": 340897576,
+  "storage_human": "341 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

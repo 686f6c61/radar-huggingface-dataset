@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "feiaitou/waiIllustriousSDXL_v170",
+  "slug": "feiaitou-waiillustrioussdxl_v170",
+  "author": "feiaitou",
+  "url": "https://huggingface.co/feiaitou/waiIllustriousSDXL_v170",
+  "created_at": "2026-11-13T15:03:23.000Z",
+  "updated_at": "2026-11-13T15:03:23.000Z",
+  "license": "cdla-permissive-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "base_model:adapter:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "license:cdla-permissive-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6951497847,
+  "storage_human": "7.0 GB",
+  "base_model": "OnomaAIResearch/Illustrious-xl-early-release-v0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "tiny-random/bagel",
+  "slug": "tiny-random-bagel",
+  "author": "tiny-random",
+  "url": "https://huggingface.co/tiny-random/bagel",
+  "created_at": "2026-04-11T15:59:59.000Z",
+  "updated_at": "2026-11-13T15:17:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "vllm-omni",
+  "languages": [],
+  "tags": [
+    "vllm-omni",
+    "safetensors",
+    "bagel",
+    "text-to-image",
+    "base_model:ByteDance-Seed/BAGEL-7B-MoT",
+    "base_model:finetune:ByteDance-Seed/BAGEL-7B-MoT",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 104364579,
+  "parameters_human": "104.4M",
+  "storage_bytes": 376401548,
+  "storage_human": "376 MB",
+  "base_model": "ByteDance-Seed/BAGEL-7B-MoT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

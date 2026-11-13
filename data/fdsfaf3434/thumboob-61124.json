@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "fdsfaf3434/thumboob-61124",
+  "slug": "fdsfaf3434-thumboob-61124",
+  "author": "fdsfaf3434",
+  "url": "https://huggingface.co/fdsfaf3434/thumboob-61124",
+  "created_at": "2026-11-13T17:44:53.000Z",
+  "updated_at": "2026-11-13T17:44:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "storyteller-platform/pocket-tts-italian",
+  "slug": "storyteller-platform-pocket-tts-italian",
+  "author": "storyteller-platform",
+  "url": "https://huggingface.co/storyteller-platform/pocket-tts-italian",
+  "created_at": "2026-11-13T18:20:07.000Z",
+  "updated_at": "2026-11-13T18:20:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109502146,
+  "parameters_human": "109.5M",
+  "storage_bytes": 293876800,
+  "storage_human": "294 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

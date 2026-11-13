@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "DinhIchMinhHoang/viquad2-xlmr-base",
+  "slug": "dinhichminhhoang-viquad2-xlmr-base",
+  "author": "DinhIchMinhHoang",
+  "url": "https://huggingface.co/DinhIchMinhHoang/viquad2-xlmr-base",
+  "created_at": "2026-11-13T18:12:40.000Z",
+  "updated_at": "2026-11-13T18:15:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "extractive-qa",
+    "vietnamese",
+    "unanswerable",
+    "xlm-roberta",
+    "question-answering",
+    "vi",
+    "dataset:taidng/UIT-ViQuAD2.0",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1681897675,
+  "storage_human": "1.7 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

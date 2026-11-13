@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "esatapedico/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-NVFP4-MTP-GGUF",
+  "slug": "esatapedico-deepseek-v4-pro-qwen3-5-9b-uncensored-heretic-nvfp4-mtp-gguf",
+  "author": "esatapedico",
+  "url": "https://huggingface.co/esatapedico/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-NVFP4-MTP-GGUF",
+  "created_at": "2026-11-13T17:11:37.000Z",
+  "updated_at": "2026-11-13T17:11:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "nvfp4",
+    "qwen3_5",
+    "deepseek",
+    "blackwell",
+    "mtp",
+    "speculative-decoding",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "base_model:xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+    "base_model:finetune:xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么使用chatgpt? - 知乎",
+      "url": "https://www.zhihu.com/question/1915944380994393865",
+      "snippet": "所以没法访问chatgpt的用户deepseek也是不错的选择，很多功能上它已经能比肩chatgpt了，特别是在中文处理的能力上。 在当下 …"
+    }
+  ]
+}

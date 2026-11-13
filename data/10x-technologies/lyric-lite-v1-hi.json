@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "10X-Technologies/lyric-lite-v1-hi",
+  "slug": "10x-technologies-lyric-lite-v1-hi",
+  "author": "10X-Technologies",
+  "url": "https://huggingface.co/10X-Technologies/lyric-lite-v1-hi",
+  "created_at": "2026-11-13T04:59:44.000Z",
+  "updated_at": "2026-11-13T16:55:50.000Z",
+  "license": "lyric-community-license",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "hindi",
+    "on-device",
+    "lyric",
+    "lyric-lite",
+    "10x-technologies",
+    "hi",
+    "base_model:10X-Technologies/lyric-voice-v1-hi",
+    "base_model:finetune:10X-Technologies/lyric-voice-v1-hi",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 109502146,
+  "parameters_human": "109.5M",
+  "storage_bytes": 439155231,
+  "storage_human": "439 MB",
+  "base_model": "10X-Technologies/lyric-voice-v1-hi",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

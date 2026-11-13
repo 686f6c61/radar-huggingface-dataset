@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/FinTermIE-EventPrice-KO-GGUF",
+  "slug": "mradermacher-fintermie-eventprice-ko-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/FinTermIE-EventPrice-KO-GGUF",
+  "created_at": "2026-11-13T17:17:24.000Z",
+  "updated_at": "2026-11-13T17:19:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "finance",
+    "korean",
+    "information-extraction",
+    "dart",
+    "convertible-bond",
+    "span-extraction",
+    "abstention",
+    "experimental",
+    "ko",
+    "base_model:ThakiCloud/FinTermIE-EventPrice-KO",
+    "base_model:quantized:ThakiCloud/FinTermIE-EventPrice-KO",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277451520,
+  "parameters_human": "277.5M",
+  "storage_bytes": 3023263136,
+  "storage_human": "3.0 GB",
+  "base_model": "ThakiCloud/FinTermIE-EventPrice-KO",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

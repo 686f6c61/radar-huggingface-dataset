@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mamelles/Qwen3.5-4B-Wolof-Instruct-v1-ONNX",
+  "slug": "mamelles-qwen3-5-4b-wolof-instruct-v1-onnx",
+  "author": "mamelles",
+  "url": "https://huggingface.co/mamelles/Qwen3.5-4B-Wolof-Instruct-v1-ONNX",
+  "created_at": "2026-11-13T15:29:22.000Z",
+  "updated_at": "2026-11-13T15:29:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen3_5_text",
+    "text-generation",
+    "webgpu",
+    "wolof",
+    "qwen3.5",
+    "galsenai",
+    "conversational",
+    "base_model:Tonic/Qwen3.5-4B-Wolof-Instruct-v1",
+    "base_model:quantized:Tonic/Qwen3.5-4B-Wolof-Instruct-v1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19533376209,
+  "storage_human": "19.5 GB",
+  "base_model": "Tonic/Qwen3.5-4B-Wolof-Instruct-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mamelle — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mamelle",
+      "snippet": "Quand le mammifère possède plusieurs paires de glandes mammaires, on dit qu’il a autant de mamelles que de paires : on parle …"
+    },
+    {
+      "title": "MAM'ELLES - Média sur la maternité et ses enjeux",
+      "url": "https://mamelles.fr/",
+      "snippet": "MAM'ELLES est un média qui explore la maternité à la croisée de l'intime, du social et du droit. Récits, enquêtes, podcast pour …"
+    },
+    {
+      "title": "Mamelles (Sénégal) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mamelles_%28S%C3%A9n%C3%A9gal%29",
+      "snippet": "Les Mamelles sont deux collines volcaniques coniques situées sur la presqu'île du Cap-Vert, à Ouakam, une commune …"
+    }
+  ]
+}

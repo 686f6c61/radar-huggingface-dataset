@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "ceia-research/lumi-4b",
+  "slug": "ceia-research-lumi-4b",
+  "author": "ceia-research",
+  "url": "https://huggingface.co/ceia-research/lumi-4b",
+  "created_at": "2026-10-27T00:07:39.000Z",
+  "updated_at": "2026-11-06T11:45:27.000Z",
+  "license": "TODO",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "nemotron_h",
+    "continual-pretraining",
+    "knowledge-distillation",
+    "portuguese",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "pt",
+    "dataset:HuggingFaceFW/finepdfs-edu",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:Polygl0t/gigaverbo-v2",
+    "dataset:nvidia/Nemotron-CC-v2.1",
+    "dataset:nvidia/Nemotron-Pretraining-Specialized-v1.1",
+    "dataset:nvidia/Nemotron-Pretraining-SFT-v1",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "region:us"
+  ],
+  "likes": 68,
+  "downloads_30d": 3448,
+  "trending_score": 18,
+  "parameters": 3973556832,
+  "parameters_human": "3.97B",
+  "storage_bytes": 15911773269,
+  "storage_human": "15.9 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

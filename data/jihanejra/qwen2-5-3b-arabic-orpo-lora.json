@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "JihaneJra/qwen2.5-3b-arabic-orpo-lora",
+  "slug": "jihanejra-qwen2-5-3b-arabic-orpo-lora",
+  "author": "JihaneJra",
+  "url": "https://huggingface.co/JihaneJra/qwen2.5-3b-arabic-orpo-lora",
+  "created_at": "2026-11-13T16:18:54.000Z",
+  "updated_at": "2026-11-13T16:18:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223694,
+  "storage_human": "131 MB",
+  "base_model": "unsloth/Qwen2.5-3B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

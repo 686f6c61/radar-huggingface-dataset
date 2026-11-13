@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "kodjoko/myaiagent-engines",
+  "slug": "kodjoko-myaiagent-engines",
+  "author": "kodjoko",
+  "url": "https://huggingface.co/kodjoko/myaiagent-engines",
+  "created_at": "2026-11-13T14:44:09.000Z",
+  "updated_at": "2026-11-13T14:44:09.000Z",
+  "license": "licence",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

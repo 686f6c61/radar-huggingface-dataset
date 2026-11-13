@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Ocean82/excel-assistant-Q8_0-GGUF",
+  "slug": "ocean82-excel-assistant-q8_0-gguf",
+  "author": "Ocean82",
+  "url": "https://huggingface.co/Ocean82/excel-assistant-Q8_0-GGUF",
+  "created_at": "2026-11-13T20:21:25.000Z",
+  "updated_at": "2026-11-13T20:21:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:aarxshi/excel-assistant",
+    "base_model:quantized:aarxshi/excel-assistant",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 1646572736,
+  "storage_human": "1.6 GB",
+  "base_model": "aarxshi/excel-assistant",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

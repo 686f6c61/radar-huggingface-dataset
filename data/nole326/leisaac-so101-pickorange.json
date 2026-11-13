@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Nole326/LeIsaac-SO101-PickOrange",
+  "slug": "nole326-leisaac-so101-pickorange",
+  "author": "Nole326",
+  "url": "https://huggingface.co/Nole326/LeIsaac-SO101-PickOrange",
+  "created_at": "2026-11-12T10:53:48.000Z",
+  "updated_at": "2026-11-13T17:12:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "act",
+    "imitation-learning",
+    "pickorange",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51596934,
+  "parameters_human": "51.6M",
+  "storage_bytes": 825652032,
+  "storage_human": "826 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

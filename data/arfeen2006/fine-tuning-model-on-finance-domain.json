@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "arfeen2006/Fine-tuning-model-on-finance-domain",
+  "slug": "arfeen2006-fine-tuning-model-on-finance-domain",
+  "author": "arfeen2006",
+  "url": "https://huggingface.co/arfeen2006/Fine-tuning-model-on-finance-domain",
+  "created_at": "2026-11-13T16:54:08.000Z",
+  "updated_at": "2026-10-12T17:52:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "finance",
+    "banking",
+    "function-calling",
+    "tool-use",
+    "lora",
+    "dpo",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159244116,
+  "storage_human": "159 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

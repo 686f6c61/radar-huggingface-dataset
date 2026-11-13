@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "flyingfishinwater/mlxmodels",
+  "slug": "flyingfishinwater-mlxmodels",
+  "author": "flyingfishinwater",
+  "url": "https://huggingface.co/flyingfishinwater/mlxmodels",
+  "created_at": "2026-09-28T18:56:15.000Z",
+  "updated_at": "2026-11-13T20:22:53.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36465128544,
+  "storage_human": "36.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

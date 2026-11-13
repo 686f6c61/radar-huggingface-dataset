@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "samadpls/baari",
+  "slug": "samadpls-baari",
+  "author": "samadpls",
+  "url": "https://huggingface.co/samadpls/baari",
+  "created_at": "2026-11-13T17:26:45.000Z",
+  "updated_at": "2026-11-13T17:27:08.000Z",
+  "license": "bsd-2-clause",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnx",
+  "languages": [
+    "ur"
+  ],
+  "tags": [
+    "onnx",
+    "turn-detection",
+    "end-of-turn",
+    "voice-agents",
+    "pipecat",
+    "smart-turn",
+    "urdu",
+    "whisper",
+    "audio-classification",
+    "ur",
+    "dataset:ai4bharat/IndicVoices",
+    "dataset:adimyth/indic-smart-turn-data",
+    "base_model:adimyth/indic-smart-turn",
+    "base_model:quantized:adimyth/indic-smart-turn",
+    "license:bsd-2-clause",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72838246,
+  "storage_human": "73 MB",
+  "base_model": "adimyth/indic-smart-turn",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Kenan321/whisper-tiny-az",
+  "slug": "kenan321-whisper-tiny-az",
+  "author": "Kenan321",
+  "url": "https://huggingface.co/Kenan321/whisper-tiny-az",
+  "created_at": "2026-11-13T14:48:30.000Z",
+  "updated_at": "2026-11-13T14:52:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "az"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "azerbaijani",
+    "speech-recognition",
+    "az",
+    "dataset:google/fleurs",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 151061672,
+  "storage_human": "151 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "FLEURS (az_az)",
+      "metric": null,
+      "value": 47.7
+    },
+    {
+      "task": null,
+      "dataset": "FLEURS (az_az)",
+      "metric": null,
+      "value": 20.8
+    }
+  ],
+  "sources": []
+}

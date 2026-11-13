@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "DITlieD/twil-a47-weight-surgeon-gguf",
+  "slug": "ditlied-twil-a47-weight-surgeon-gguf",
+  "author": "DITlieD",
+  "url": "https://huggingface.co/DITlieD/twil-a47-weight-surgeon-gguf",
+  "created_at": "2026-11-13T13:26:37.000Z",
+  "updated_at": "2026-11-13T13:27:33.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "weight-surgery",
+    "llama.cpp",
+    "base_model:Guilherme34/TwIL-8B-Abliterated-Uncensored",
+    "base_model:quantized:Guilherme34/TwIL-8B-Abliterated-Uncensored",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8791592960,
+  "parameters_human": "8.79B",
+  "storage_bytes": 15599500288,
+  "storage_human": "15.6 GB",
+  "base_model": "Guilherme34/TwIL-8B-Abliterated-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

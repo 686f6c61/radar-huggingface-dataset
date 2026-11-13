@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "prenny/hangul-font-finder",
+  "slug": "prenny-hangul-font-finder",
+  "author": "prenny",
+  "url": "https://huggingface.co/prenny/hangul-font-finder",
+  "created_at": "2026-11-13T16:38:36.000Z",
+  "updated_at": "2026-11-13T17:25:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "font-identification",
+    "font-recognition",
+    "font-detection",
+    "font-finder",
+    "korean",
+    "korean-font",
+    "hangul",
+    "typography",
+    "siglip",
+    "image-classification",
+    "ko",
+    "base_model:google/siglip2-base-patch16-224",
+    "base_model:finetune:google/siglip2-base-patch16-224",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 93972039,
+  "parameters_human": "94.0M",
+  "storage_bytes": 375912604,
+  "storage_human": "376 MB",
+  "base_model": "google/siglip2-base-patch16-224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

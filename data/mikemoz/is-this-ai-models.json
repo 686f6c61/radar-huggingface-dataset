@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "mikemoz/is-this-ai-models",
+  "slug": "mikemoz-is-this-ai-models",
+  "author": "mikemoz",
+  "url": "https://huggingface.co/mikemoz/is-this-ai-models",
+  "created_at": "2026-11-13T19:21:20.000Z",
+  "updated_at": "2026-11-13T19:22:04.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-classification",
+    "ai-image-detection",
+    "arxiv:2411.04125",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 786757390,
+  "storage_human": "787 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

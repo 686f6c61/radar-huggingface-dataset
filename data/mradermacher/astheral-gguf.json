@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Astheral-GGUF",
+  "slug": "mradermacher-astheral-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Astheral-GGUF",
+  "created_at": "2026-11-13T17:20:53.000Z",
+  "updated_at": "2026-11-13T17:45:31.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "astheral",
+    "llama",
+    "instruct",
+    "qlora",
+    "en",
+    "base_model:SEE7/Astheral",
+    "base_model:quantized:SEE7/Astheral",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820299136,
+  "storage_human": "71.8 GB",
+  "base_model": "SEE7/Astheral",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "marcioklepacz/geb-dialogue-gpt-27M",
+  "slug": "marcioklepacz-geb-dialogue-gpt-27m",
+  "author": "marcioklepacz",
+  "url": "https://huggingface.co/marcioklepacz/geb-dialogue-gpt-27M",
+  "created_at": "2026-11-13T18:11:21.000Z",
+  "updated_at": "2026-11-13T18:28:35.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "onnxruntime-web",
+    "transformers.js",
+    "gpt",
+    "dialogue",
+    "godel-escher-bach",
+    "from-scratch",
+    "tiny",
+    "text-generation",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 175958845,
+  "storage_human": "176 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

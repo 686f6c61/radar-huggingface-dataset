@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Henok/m9-f7e7f2c3",
+  "slug": "henok-m9-f7e7f2c3",
+  "author": "Henok",
+  "url": "https://huggingface.co/Henok/m9-f7e7f2c3",
+  "created_at": "2026-11-13T13:54:29.000Z",
+  "updated_at": "2026-11-13T13:57:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "base_model:McGill-NLP/AfriqueQwen3.5-9B-50Langs",
+    "base_model:finetune:McGill-NLP/AfriqueQwen3.5-9B-50Langs",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839718664,
+  "storage_human": "18.8 GB",
+  "base_model": "McGill-NLP/AfriqueQwen3.5-9B-50Langs",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

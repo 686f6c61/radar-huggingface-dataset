@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "genesectalpha/Lendia",
+  "slug": "genesectalpha-lendia",
+  "author": "genesectalpha",
+  "url": "https://huggingface.co/genesectalpha/Lendia",
+  "created_at": "2026-11-13T14:05:34.000Z",
+  "updated_at": "2026-11-13T14:09:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 17723994798,
+  "storage_human": "17.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "yujiepan/dory-1.0-tiny-random",
+  "slug": "yujiepan-dory-1-0-tiny-random",
+  "author": "yujiepan",
+  "url": "https://huggingface.co/yujiepan/dory-1.0-tiny-random",
+  "created_at": "2026-10-25T21:26:28.000Z",
+  "updated_at": "2026-11-13T15:17:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "dory",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 748,
+  "trending_score": 0,
+  "parameters": 689248,
+  "parameters_human": "689248",
+  "storage_bytes": 18489964,
+  "storage_human": "18 MB",
+  "base_model": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "maxwell-model/Maxwell-V1-Flash",
+  "slug": "maxwell-model-maxwell-v1-flash",
+  "author": "maxwell-model",
+  "url": "https://huggingface.co/maxwell-model/Maxwell-V1-Flash",
+  "created_at": "2026-10-13T07:53:39.000Z",
+  "updated_at": "2026-11-13T12:58:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "maxwell_moe",
+    "moe",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 36810559422,
+  "parameters_human": "36.81B",
+  "storage_bytes": 73625632574,
+  "storage_human": "73.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "James Clerk Maxwell — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/James_Clerk_Maxwell",
+      "snippet": "Maxwell est considéré par de nombreux physiciens comme le scientifique du XIXe siècle ayant eu le plus d'influence au XXe siècle. …"
+    },
+    {
+      "title": "Ghislaine Maxwell — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ghislaine_Maxwell",
+      "snippet": "Elle est le neuvième et dernier enfant d' Elisabeth Maxwell (née Meynard), une historienne française spécialiste de la Shoah 4, et de …"
+    },
+    {
+      "title": "Maxwell (musician) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Maxwell_(musician)",
+      "snippet": "Maxwell released a series of EPs featuring different versions of his songs from Maxwell's Urban Hang Suite, including \"...Til the Cops …"
+    },
+    {
+      "title": "Maxwell Technologies - Instant Power You Can Depend On",
+      "url": "https://maxwell.com/",
+      "snippet": "Discover advanced ultracapacitor technology by Maxwell Technologies. Rapid power delivery solutions for grid, automotive, wind, …"
+    },
+    {
+      "title": "James Clerk Maxwell - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/James_Clerk_Maxwell",
+      "snippet": "His unification of light and electrical phenomena led to his prediction of the existence of radio waves. Maxwell was the first to derive …"
+    }
+  ]
+}

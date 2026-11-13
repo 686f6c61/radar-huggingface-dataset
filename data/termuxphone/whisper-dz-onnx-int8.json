@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Termuxphone/whisper-dz-onnx-int8",
+  "slug": "termuxphone-whisper-dz-onnx-int8",
+  "author": "Termuxphone",
+  "url": "https://huggingface.co/Termuxphone/whisper-dz-onnx-int8",
+  "created_at": "2026-11-13T20:13:39.000Z",
+  "updated_at": "2026-11-13T20:16:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "onnx",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "whisper",
+    "int8",
+    "algerian-arabic",
+    "darja",
+    "edge-ai",
+    "ar",
+    "dataset:Termuxphone/dialects-ai-foundry",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95425375,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

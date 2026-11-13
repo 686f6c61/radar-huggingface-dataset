@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "alan13367/Qwen3.5-4B-RustCoder-MLX-8bit",
+  "slug": "alan13367-qwen3-5-4b-rustcoder-mlx-8bit",
+  "author": "alan13367",
+  "url": "https://huggingface.co/alan13367/Qwen3.5-4B-RustCoder-MLX-8bit",
+  "created_at": "2026-11-13T09:29:48.000Z",
+  "updated_at": "2026-11-13T11:38:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.5",
+    "rust",
+    "code",
+    "lora",
+    "8bit",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:alan13367/Qwen3.5-4B-RustCoder",
+    "base_model:quantized:alan13367/Qwen3.5-4B-RustCoder",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 5156685390,
+  "storage_human": "5.2 GB",
+  "base_model": "alan13367/Qwen3.5-4B-RustCoder",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

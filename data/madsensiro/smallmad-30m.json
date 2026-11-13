@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "MadSensiro/SmallMad-30M",
+  "slug": "madsensiro-smallmad-30m",
+  "author": "MadSensiro",
+  "url": "https://huggingface.co/MadSensiro/SmallMad-30M",
+  "created_at": "2026-11-13T18:23:47.000Z",
+  "updated_at": "2026-11-13T18:31:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30044544,
+  "parameters_human": "30.0M",
+  "storage_bytes": 120185720,
+  "storage_human": "120 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

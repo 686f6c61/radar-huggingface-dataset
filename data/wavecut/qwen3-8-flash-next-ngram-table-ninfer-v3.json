@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "WaveCut/Qwen3.8-Flash-Next-ngram-table-NInfer-v3",
+  "slug": "wavecut-qwen3-8-flash-next-ngram-table-ninfer-v3",
+  "author": "WaveCut",
+  "url": "https://huggingface.co/WaveCut/Qwen3.8-Flash-Next-ngram-table-NInfer-v3",
+  "created_at": "2026-10-05T14:34:11.000Z",
+  "updated_at": "2026-11-13T13:03:50.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "non-commercial",
+  "pipeline_tag": null,
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "gguf",
+    "qwen3.8",
+    "n-gram",
+    "base_model:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "base_model:quantized:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 38019,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57810071024,
+  "storage_human": "57.8 GB",
+  "base_model": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

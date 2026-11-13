@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "zyss1/qwen25-7b-openligeng",
+  "slug": "zyss1-qwen25-7b-openligeng",
+  "author": "zyss1",
+  "url": "https://huggingface.co/zyss1/qwen25-7b-openligeng",
+  "created_at": "2026-11-13T16:06:49.000Z",
+  "updated_at": "2026-11-13T16:21:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "conversational",
+    "text-generation",
+    "zh",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 323080044,
+  "storage_human": "323 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

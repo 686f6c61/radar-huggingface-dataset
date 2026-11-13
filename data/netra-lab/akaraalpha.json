@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Netra-Lab/AkaraAlpha",
+  "slug": "netra-lab-akaraalpha",
+  "author": "Netra-Lab",
+  "url": "https://huggingface.co/Netra-Lab/AkaraAlpha",
+  "created_at": "2026-11-13T19:18:15.000Z",
+  "updated_at": "2026-11-13T19:18:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "keras",
+  "languages": [
+    "km"
+  ],
+  "tags": [
+    "keras",
+    "bigru-additive-attention-seq2seq",
+    "transliteration",
+    "khmer",
+    "romanization",
+    "seq2seq",
+    "gru",
+    "attention",
+    "text2text-generation",
+    "km",
+    "dataset:Chhunneng/khmer-text-transliteration",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1213868,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Romanized Khmer to Khmer transliteration",
+      "dataset": "Khmer Text Transliteration Dataset (20% held out)",
+      "metric": "CER (%), model alone",
+      "value": 15.07
+    },
+    {
+      "task": "Romanized Khmer to Khmer transliteration",
+      "dataset": "Khmer Text Transliteration Dataset (20% held out)",
+      "metric": "Top-1 word accuracy (%), beam 5 with dictionary",
+      "value": 73.6
+    }
+  ],
+  "sources": []
+}

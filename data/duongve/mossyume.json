@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "duongve/MossYume",
+  "slug": "duongve-mossyume",
+  "author": "duongve",
+  "url": "https://huggingface.co/duongve/MossYume",
+  "created_at": "2026-11-13T13:33:48.000Z",
+  "updated_at": "2026-11-13T13:36:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10164655968,
+  "storage_human": "10.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

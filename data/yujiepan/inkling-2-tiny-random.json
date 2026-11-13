@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "yujiepan/inkling-2-tiny-random",
+  "slug": "yujiepan-inkling-2-tiny-random",
+  "author": "yujiepan",
+  "url": "https://huggingface.co/yujiepan/inkling-2-tiny-random",
+  "created_at": "2026-11-13T15:15:56.000Z",
+  "updated_at": "2026-11-13T15:15:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling2",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "base_model:thinkingmachines/Inkling-2-Small",
+    "base_model:finetune:thinkingmachines/Inkling-2-Small",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10788940,
+  "parameters_human": "10.8M",
+  "storage_bytes": 52383260,
+  "storage_human": "52 MB",
+  "base_model": "thinkingmachines/Inkling-2-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

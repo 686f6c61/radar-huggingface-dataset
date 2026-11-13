@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bambocher/MiMo-V2.6-Distill-Qwen-9B-oQ2.5-mtp",
+  "slug": "bambocher-mimo-v2-6-distill-qwen-9b-oq2-5-mtp",
+  "author": "bambocher",
+  "url": "https://huggingface.co/bambocher/MiMo-V2.6-Distill-Qwen-9B-oQ2.5-mtp",
+  "created_at": "2026-11-13T17:24:33.000Z",
+  "updated_at": "2026-11-13T17:42:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "mtp",
+    "base_model:bambocher/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:quantized:bambocher/MiMo-V2.6-Distill-Qwen-9B",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 4943284554,
+  "storage_human": "4.9 GB",
+  "base_model": "bambocher/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiMo-V2.6: Scaling Reinforcement Learning Towards Self-Improvement",
+      "url": "https://arxiv.org/html/2610.11959v1",
+      "snippet": "Together, these components provide a unified and accessible platform for studying agentic RL under diverse tasks, environments, and agent configurations, while reducing the engineering barriers to reproducing and extending large-scale RL experiments. Experiments with MiMo-V2.6-Distill-Qwen-9B demonstrate consistent RL gains across diverse tasks and agent harnesses, validating the effectiveness and generality of the proposed suite."
+    },
+    {
+      "title": "Three local models, one 96-minute session: the 35B corrupted the ...",
+      "url": "https://advanced-stack.com/fields-notes/three-local-models-one-session-mimo-9b-distill.html",
+      "snippet": "MiMo-V2.6-Distill-Qwen-9B is a 9B agentic model released by Xiaomi MiMo on Hugging Face. It is a supervised fine-tune of Qwen3.5-9B on MiMo-generated data, covering coding, general agent tasks, visual coding, and cybersecurity."
+    },
+    {
+      "title": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B · Hugging Face",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+      "snippet": "MiMo-V2.6-Distill-Qwen-9B is a 9B agentic model developed by Xiaomi MiMo through supervised fine-tuning of Qwen3.5-9B on MiMo-generated data. It covers coding, general-purpose agent tasks, visual coding, and cybersecurity."
+    },
+    {
+      "title": "r/LocalLLaMA on Reddit: MiMo-V2.6 distilled themselves into Qwen 9B!",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wmtjqu/mimov26_distilled_themselves_into_qwen_9b/",
+      "snippet": "SFT/distillation from a massive agentic teacher onto a sub-10B base (like Qwen 3.5 9B) isn't just about copying token probabilities—it's distilling long-horizon execution trajectories (tool calls, terminal debug chains, self-correction loops)."
+    }
+  ]
+}

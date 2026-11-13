@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/granite-4.1-8b-base",
+  "slug": "redhatai-granite-4-1-8b-base",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/granite-4.1-8b-base",
+  "created_at": "2026-11-13T17:46:34.000Z",
+  "updated_at": "2026-11-13T17:46:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "language",
+    "granite-4.1",
+    "arxiv:2603.17074",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8380551168,
+  "parameters_human": "8.38B",
+  "storage_bytes": 16761144496,
+  "storage_human": "16.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

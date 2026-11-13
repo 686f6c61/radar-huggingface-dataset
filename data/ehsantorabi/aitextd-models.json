@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "ehsantorabi/aitextd-models",
+  "slug": "ehsantorabi-aitextd-models",
+  "author": "ehsantorabi",
+  "url": "https://huggingface.co/ehsantorabi/aitextd-models",
+  "created_at": "2026-11-13T17:26:42.000Z",
+  "updated_at": "2026-11-13T17:39:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "pytorch",
+    "joblib",
+    "safetensors",
+    "ai-generated-text-detection",
+    "persian",
+    "farsi",
+    "text-classification",
+    "stylometry",
+    "ensemble",
+    "bilstm",
+    "textcnn",
+    "transformer",
+    "parsbert",
+    "gpt2",
+    "laya",
+    "fa",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3124174744,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

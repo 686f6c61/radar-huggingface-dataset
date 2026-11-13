@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/YuFeng-XGuard-Reason-8B-Civitai-Profanity-v1-GGUF",
+  "slug": "mradermacher-yufeng-xguard-reason-8b-civitai-profanity-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/YuFeng-XGuard-Reason-8B-Civitai-Profanity-v1-GGUF",
+  "created_at": "2026-11-13T18:23:39.000Z",
+  "updated_at": "2026-11-13T18:40:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3",
+    "safetensors",
+    "bf16",
+    "profanity",
+    "content-moderation",
+    "lora-merged",
+    "civitai",
+    "en",
+    "base_model:Civitai/YuFeng-XGuard-Reason-8B-Civitai-Profanity-v1",
+    "base_model:quantized:Civitai/YuFeng-XGuard-Reason-8B-Civitai-Profanity-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 52232364032,
+  "storage_human": "52.2 GB",
+  "base_model": "Civitai/YuFeng-XGuard-Reason-8B-Civitai-Profanity-v1",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

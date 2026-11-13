@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "trymirai/Qwen3.8-27B-S-6GiB",
+  "slug": "trymirai-qwen3-8-27b-s-6gib",
+  "author": "trymirai",
+  "url": "https://huggingface.co/trymirai/Qwen3.8-27B-S-6GiB",
+  "created_at": "2026-09-25T20:15:37.000Z",
+  "updated_at": "2026-11-13T18:25:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "uzu",
+  "languages": [],
+  "tags": [
+    "uzu",
+    "safetensors",
+    "mirai",
+    "2-bit",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 6365063968,
+  "parameters_human": "6.37B",
+  "storage_bytes": 60094751963,
+  "storage_human": "60.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

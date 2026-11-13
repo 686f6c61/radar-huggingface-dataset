@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "dnhkng/RYS-XLarge",
+  "slug": "dnhkng-rys-xlarge",
+  "author": "dnhkng",
+  "url": "https://huggingface.co/dnhkng/RYS-XLarge",
+  "created_at": "2024-07-24T12:20:01.000Z",
+  "updated_at": "2026-11-13T20:15:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "license:mit",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 95,
+  "downloads_30d": 132,
+  "trending_score": 0,
+  "parameters": 77965463552,
+  "parameters_human": "77.97B",
+  "storage_bytes": 155931800598,
+  "storage_human": "155.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval (0-Shot)",
+      "metric": "strict accuracy",
+      "value": 79.96
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "BBH (3-Shot)",
+      "metric": "normalized accuracy",
+      "value": 58.77
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MATH Lvl 5 (4-Shot)",
+      "metric": "exact match",
+      "value": 38.97
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GPQA (0-shot)",
+      "metric": "acc_norm",
+      "value": 17.9
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MuSR (0-shot)",
+      "metric": "acc_norm",
+      "value": 23.72
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU-PRO (5-shot)",
+      "metric": "accuracy",
+      "value": 49.2
+    }
+  ],
+  "sources": []
+}

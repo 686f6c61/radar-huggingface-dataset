@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "alan13367/Qwen3.5-4B-RustCoder-GGUF",
+  "slug": "alan13367-qwen3-5-4b-rustcoder-gguf",
+  "author": "alan13367",
+  "url": "https://huggingface.co/alan13367/Qwen3.5-4B-RustCoder-GGUF",
+  "created_at": "2026-11-13T12:39:36.000Z",
+  "updated_at": "2026-11-13T12:45:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3.5",
+    "rust",
+    "code",
+    "en",
+    "base_model:alan13367/Qwen3.5-4B-RustCoder",
+    "base_model:quantized:alan13367/Qwen3.5-4B-RustCoder",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 7191208128,
+  "storage_human": "7.2 GB",
+  "base_model": "alan13367/Qwen3.5-4B-RustCoder",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

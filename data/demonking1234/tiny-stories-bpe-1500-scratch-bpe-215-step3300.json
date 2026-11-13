@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "DemonKing1234/tiny-stories-bpe-1500-scratch-bpe-215-step3300",
+  "slug": "demonking1234-tiny-stories-bpe-1500-scratch-bpe-215-step3300",
+  "author": "DemonKing1234",
+  "url": "https://huggingface.co/DemonKing1234/tiny-stories-bpe-1500-scratch-bpe-215-step3300",
+  "created_at": "2026-11-13T15:32:17.000Z",
+  "updated_at": "2026-11-13T15:36:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "pytorch",
+    "scratch-trained",
+    "bpe",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9676956,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

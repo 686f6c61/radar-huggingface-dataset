@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ginsongsong/DeepSeek-V4.1-Flash-1017-FP4PTPC",
+  "slug": "ginsongsong-deepseek-v4-1-flash-1017-fp4ptpc",
+  "author": "ginsongsong",
+  "url": "https://huggingface.co/ginsongsong/DeepSeek-V4.1-Flash-1017-FP4PTPC",
+  "created_at": "2026-10-19T10:46:03.000Z",
+  "updated_at": "2026-11-13T15:41:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "w8a8_fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 100,
+  "trending_score": 0,
+  "parameters": 484619644114,
+  "parameters_human": "484.62B",
+  "storage_bytes": 518233087367,
+  "storage_human": "518.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

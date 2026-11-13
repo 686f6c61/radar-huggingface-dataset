@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "dadv12/nkap-translate-ewo-en-fr",
+  "slug": "dadv12-nkap-translate-ewo-en-fr",
+  "author": "dadv12",
+  "url": "https://huggingface.co/dadv12/nkap-translate-ewo-en-fr",
+  "created_at": "2026-11-13T12:46:29.000Z",
+  "updated_at": "2026-11-13T12:46:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 77059245,
+  "parameters_human": "77.1M",
+  "storage_bytes": 309764147,
+  "storage_human": "310 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

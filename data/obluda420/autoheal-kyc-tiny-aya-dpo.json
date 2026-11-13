@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "obluda420/autoheal-kyc-tiny-aya-dpo",
+  "slug": "obluda420-autoheal-kyc-tiny-aya-dpo",
+  "author": "obluda420",
+  "url": "https://huggingface.co/obluda420/autoheal-kyc-tiny-aya-dpo",
+  "created_at": "2026-11-13T19:36:36.000Z",
+  "updated_at": "2026-11-13T19:36:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "agenttune",
+    "agentic_dpo_offline",
+    "agenttune-trl",
+    "adapter",
+    "base_model:CohereLabs/tiny-aya-global",
+    "base_model:finetune:CohereLabs/tiny-aya-global",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 748192512,
+  "storage_human": "748 MB",
+  "base_model": "CohereLabs/tiny-aya-global",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "ToetsChecker-Research/boterham",
+  "slug": "toetschecker-research-boterham",
+  "author": "ToetsChecker-Research",
+  "url": "https://huggingface.co/ToetsChecker-Research/boterham",
+  "created_at": "2026-09-21T21:09:08.000Z",
+  "updated_at": "2026-11-13T20:22:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "nl",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "dutch",
+    "nederlands",
+    "instruction-tuned",
+    "question-answering",
+    "summarization",
+    "conversational",
+    "nl",
+    "en",
+    "dataset:ToetsChecker-Research/beleg",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 488316928,
+  "parameters_human": "488.3M",
+  "storage_bytes": 25395152953,
+  "storage_human": "25.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

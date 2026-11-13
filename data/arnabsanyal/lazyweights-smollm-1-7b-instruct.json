@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "arnabsanyal/LazyWeights-SmolLM-1.7B-Instruct",
+  "slug": "arnabsanyal-lazyweights-smollm-1-7b-instruct",
+  "author": "arnabsanyal",
+  "url": "https://huggingface.co/arnabsanyal/LazyWeights-SmolLM-1.7B-Instruct",
+  "created_at": "2026-11-13T14:53:27.000Z",
+  "updated_at": "2026-11-13T15:04:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantization",
+    "gptq",
+    "huffman",
+    "entropy-coding",
+    "edge",
+    "jetson",
+    "text-generation",
+    "en",
+    "arxiv:2611.17108",
+    "base_model:HuggingFaceTB/SmolLM-1.7B-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM-1.7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1711376384,
+  "parameters_human": "1.71B",
+  "storage_bytes": 4505912832,
+  "storage_human": "4.5 GB",
+  "base_model": "HuggingFaceTB/SmolLM-1.7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

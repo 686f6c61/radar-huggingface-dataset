@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "zhangify/oalc-local159-step50-backup-20261113",
+  "slug": "zhangify-oalc-local159-step50-backup-20261113",
+  "author": "zhangify",
+  "url": "https://huggingface.co/zhangify/oalc-local159-step50-backup-20261113",
+  "created_at": "2026-11-13T17:22:18.000Z",
+  "updated_at": "2026-11-13T17:24:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "oalc",
+    "research-checkpoint",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 18177141213,
+  "storage_human": "18.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

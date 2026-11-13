@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "lavendercomputing/MiniCPM5-2B-GSQ-RCO-GGUF",
+  "slug": "lavendercomputing-minicpm5-2b-gsq-rco-gguf",
+  "author": "lavendercomputing",
+  "url": "https://huggingface.co/lavendercomputing/MiniCPM5-2B-GSQ-RCO-GGUF",
+  "created_at": "2026-11-13T18:21:24.000Z",
+  "updated_at": "2026-11-13T18:31:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "non-uniform-quantization",
+    "gsq-rco",
+    "conversational",
+    "on-device",
+    "text-generation",
+    "en",
+    "zh",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1219305056,
+  "storage_human": "1.2 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

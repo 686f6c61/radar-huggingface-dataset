@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "GaiaExplor/mining-local-deployment-guide",
+  "slug": "gaiaexplor-mining-local-deployment-guide",
+  "author": "GaiaExplor",
+  "url": "https://huggingface.co/GaiaExplor/mining-local-deployment-guide",
+  "created_at": "2026-11-13T15:05:12.000Z",
+  "updated_at": "2026-11-13T15:06:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram Exclusive Content: 15 Subscriber Ideas (2026)",
+      "url": "https://fluxnote.io/guides/instagram-subscription-exclusive-content-ideas",
+      "snippet": "Oct 12, 2026 · What Instagram exclusive content is, who can offer it in the US and India, how to set up and price a subscription, and …"
+    }
+  ]
+}

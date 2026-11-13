@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Nobo7/Qwen2.5-VL-7B-Instruct-GGUF",
+  "slug": "nobo7-qwen2-5-vl-7b-instruct-gguf",
+  "author": "Nobo7",
+  "url": "https://huggingface.co/Nobo7/Qwen2.5-VL-7B-Instruct-GGUF",
+  "created_at": "2026-11-13T13:16:15.000Z",
+  "updated_at": "2026-11-13T13:16:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "multimodal",
+    "unsloth",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 133698301328,
+  "storage_human": "133.7 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

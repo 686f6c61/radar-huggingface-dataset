@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "anilguven/mT5-small-XSumTr-500steps",
+  "slug": "anilguven-mt5-small-xsumtr-500steps",
+  "author": "anilguven",
+  "url": "https://huggingface.co/anilguven/mT5-small-XSumTr-500steps",
+  "created_at": "2026-11-13T14:36:10.000Z",
+  "updated_at": "2026-11-13T14:36:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mt5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 300176768,
+  "parameters_human": "300.2M",
+  "storage_bytes": 1217079374,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

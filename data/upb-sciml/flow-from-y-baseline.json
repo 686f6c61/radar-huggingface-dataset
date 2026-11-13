@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "upb-sciml/flow-from-y-baseline",
+  "slug": "upb-sciml-flow-from-y-baseline",
+  "author": "upb-sciml",
+  "url": "https://huggingface.co/upb-sciml/flow-from-y-baseline",
+  "created_at": "2026-11-13T11:44:21.000Z",
+  "updated_at": "2026-11-13T17:55:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

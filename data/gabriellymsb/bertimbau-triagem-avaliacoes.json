@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "gabriellymsb/bertimbau-triagem-avaliacoes",
+  "slug": "gabriellymsb-bertimbau-triagem-avaliacoes",
+  "author": "gabriellymsb",
+  "url": "https://huggingface.co/gabriellymsb/bertimbau-triagem-avaliacoes",
+  "created_at": "2026-11-13T17:39:39.000Z",
+  "updated_at": "2026-11-13T17:39:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "portuguese",
+    "customer-reviews",
+    "weak-supervision",
+    "llm-labeling",
+    "pt",
+    "base_model:neuralmind/bert-base-portuguese-cased",
+    "base_model:finetune:neuralmind/bert-base-portuguese-cased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108929288,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435740680,
+  "storage_human": "436 MB",
+  "base_model": "neuralmind/bert-base-portuguese-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

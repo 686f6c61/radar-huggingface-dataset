@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Dgamez202/Converse-1.3",
+  "slug": "dgamez202-converse-1-3",
+  "author": "Dgamez202",
+  "url": "https://huggingface.co/Dgamez202/Converse-1.3",
+  "created_at": "2026-11-13T13:26:54.000Z",
+  "updated_at": "2026-11-13T13:50:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889310,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

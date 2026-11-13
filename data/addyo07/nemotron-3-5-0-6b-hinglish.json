@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "addyo07/nemotron-3.5-0.6b-hinglish",
+  "slug": "addyo07-nemotron-3-5-0-6b-hinglish",
+  "author": "addyo07",
+  "url": "https://huggingface.co/addyo07/nemotron-3.5-0.6b-hinglish",
+  "created_at": "2026-06-07T13:25:03.000Z",
+  "updated_at": "2026-11-13T18:03:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "hi",
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "nemo",
+    "onnx",
+    "audio",
+    "automatic-speech-recognition",
+    "fastconformer",
+    "streaming",
+    "int8",
+    "sherpa-onnx",
+    "hindi-asr",
+    "hinglish-asr",
+    "code-switching",
+    "noisy-hinglish",
+    "hi",
+    "en",
+    "multilingual",
+    "dataset:addyo07/noisy-hinglish-asr",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 90,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9042280710,
+  "storage_human": "9.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Golden v1 - Conversational Hinglish Clean",
+      "metric": null,
+      "value": 35.83
+    },
+    {
+      "task": null,
+      "dataset": "Golden v1 - Conversational Hinglish Clean",
+      "metric": null,
+      "value": 17.21
+    },
+    {
+      "task": null,
+      "dataset": "Golden v1 - Conversational Hinglish Noisy",
+      "metric": null,
+      "value": 40.64
+    },
+    {
+      "task": null,
+      "dataset": "Golden v1 - Conversational Hinglish Noisy",
+      "metric": null,
+      "value": 19.88
+    },
+    {
+      "task": null,
+      "dataset": "Golden v1 - Conversational English Noisy",
+      "metric": null,
+      "value": 31.2
+    },
+    {
+      "task": null,
+      "dataset": "Golden v1 - Conversational English Noisy",
+      "metric": null,
+      "value": 15.34
+    },
+    {
+      "task": null,
+      "dataset": "Golden v1 - Conversational English Clean",
+      "metric": null,
+      "value": 20.86
+    },
+    {
+      "task": null,
+      "dataset": "Golden v1 - Conversational English Clean",
+      "metric": null,
+      "value": 9.87
+    }
+  ],
+  "sources": []
+}

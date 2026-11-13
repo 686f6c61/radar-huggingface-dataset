@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Madhuuu373/tulu-dpo-1b-muon-1e-5",
+  "slug": "madhuuu373-tulu-dpo-1b-muon-1e-5",
+  "author": "Madhuuu373",
+  "url": "https://huggingface.co/Madhuuu373/tulu-dpo-1b-muon-1e-5",
+  "created_at": "2026-11-12T16:19:57.000Z",
+  "updated_at": "2026-11-12T16:25:50.000Z",
+  "license": "odc-by",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dpo",
+    "preference-learning",
+    "muon",
+    "adamw",
+    "blutrain",
+    "ablation",
+    "text-generation",
+    "en",
+    "base_model:navingv/fullchess",
+    "base_model:finetune:navingv/fullchess",
+    "license:odc-by",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20882998844,
+  "storage_human": "20.9 GB",
+  "base_model": "navingv/fullchess",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

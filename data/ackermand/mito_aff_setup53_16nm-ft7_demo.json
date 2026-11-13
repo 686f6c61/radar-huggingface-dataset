@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "ackermand/mito_aff_setup53_16nm-ft7_demo",
+  "slug": "ackermand-mito_aff_setup53_16nm-ft7_demo",
+  "author": "ackermand",
+  "url": "https://huggingface.co/ackermand/mito_aff_setup53_16nm-ft7_demo",
+  "created_at": "2026-11-13T17:00:30.000Z",
+  "updated_at": "2026-11-13T17:00:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "cellmap-flow",
+    "electron-microscopy",
+    "mito-affinities",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11322907,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

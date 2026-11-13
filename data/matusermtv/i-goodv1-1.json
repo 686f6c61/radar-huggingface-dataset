@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "MatUserMTV/I.goodV1.1",
+  "slug": "matusermtv-i-goodv1-1",
+  "author": "MatUserMTV",
+  "url": "https://huggingface.co/MatUserMTV/I.goodV1.1",
+  "created_at": "2026-11-13T18:52:43.000Z",
+  "updated_at": "2026-11-13T19:13:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "russian",
+    "tiny",
+    "from-scratch",
+    "educational",
+    "llama",
+    "conversational",
+    "cpu-trained",
+    "xeon",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20242944,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

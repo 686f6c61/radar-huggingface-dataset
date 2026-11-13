@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "danielrjackson/synaptic-lens-targets-mnist",
+  "slug": "danielrjackson-synaptic-lens-targets-mnist",
+  "author": "danielrjackson",
+  "url": "https://huggingface.co/danielrjackson/synaptic-lens-targets-mnist",
+  "created_at": "2026-11-13T17:06:50.000Z",
+  "updated_at": "2026-11-13T17:19:58.000Z",
+  "license": "ai-pubs-research-use-rail-m-0.1",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27505500,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

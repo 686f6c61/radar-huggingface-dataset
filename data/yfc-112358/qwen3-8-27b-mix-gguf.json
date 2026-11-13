@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "YFC-112358/Qwen3.8-27B-Mix-GGUF",
+  "slug": "yfc-112358-qwen3-8-27b-mix-gguf",
+  "author": "YFC-112358",
+  "url": "https://huggingface.co/YFC-112358/Qwen3.8-27B-Mix-GGUF",
+  "created_at": "2026-11-13T19:58:42.000Z",
+  "updated_at": "2026-11-13T20:04:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "quantized",
+    "base_model:YFC-112358/Qwen3.8-27B-Mix",
+    "base_model:quantized:YFC-112358/Qwen3.8-27B-Mix",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 16742027936,
+  "storage_human": "16.7 GB",
+  "base_model": "YFC-112358/Qwen3.8-27B-Mix",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

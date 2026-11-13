@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "lainermoura/ftl-deteccao-mudancas-unet",
+  "slug": "lainermoura-ftl-deteccao-mudancas-unet",
+  "author": "lainermoura",
+  "url": "https://huggingface.co/lainermoura/ftl-deteccao-mudancas-unet",
+  "created_at": "2026-11-09T20:26:54.000Z",
+  "updated_at": "2026-11-13T19:59:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "pytorch",
+    "change-detection",
+    "remote-sensing",
+    "building-detection",
+    "unet",
+    "image-segmentation",
+    "pt",
+    "dataset:ericyu/LEVIRCD_Cropped256",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 293857669,
+  "storage_human": "294 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Aravindhan11/Cieav-model",
+  "slug": "aravindhan11-cieav-model",
+  "author": "Aravindhan11",
+  "url": "https://huggingface.co/Aravindhan11/Cieav-model",
+  "created_at": "2026-11-13T19:32:31.000Z",
+  "updated_at": "2026-11-13T19:42:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "cieav",
+    "unsloth",
+    "grpo",
+    "rlvr",
+    "anti-reward-hacking",
+    "personal-agent",
+    "two-phase-commit",
+    "sovereign-ai",
+    "agentic-safety",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86297536,
+  "storage_human": "86 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

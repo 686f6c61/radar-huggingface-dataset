@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GuardReasoner-VL-Eco-3B-GGUF",
+  "slug": "mradermacher-guardreasoner-vl-eco-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GuardReasoner-VL-Eco-3B-GGUF",
+  "created_at": "2025-05-20T05:36:47.000Z",
+  "updated_at": "2026-11-13T19:52:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-factory",
+    "easy-r1",
+    "full",
+    "generated_from_trainer",
+    "en",
+    "zh",
+    "base_model:yueliu1999/GuardReasoner-VL-Eco-3B",
+    "base_model:quantized:yueliu1999/GuardReasoner-VL-Eco-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 479,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 32778704704,
+  "storage_human": "32.8 GB",
+  "base_model": "yueliu1999/GuardReasoner-VL-Eco-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

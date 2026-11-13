@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "nirca/nirca-mini-GGUF",
+  "slug": "nirca-nirca-mini-gguf",
+  "author": "nirca",
+  "url": "https://huggingface.co/nirca/nirca-mini-GGUF",
+  "created_at": "2026-11-13T12:50:35.000Z",
+  "updated_at": "2026-11-13T12:50:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ternary",
+    "mixture-of-experts",
+    "byte-level",
+    "chatml",
+    "from-scratch",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:open-thoughts/OpenThoughts-114k",
+    "base_model:nirca/nirca-mini",
+    "base_model:quantized:nirca/nirca-mini",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3780247536,
+  "parameters_human": "3.78B",
+  "storage_bytes": 6052285824,
+  "storage_human": "6.1 GB",
+  "base_model": "nirca/nirca-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

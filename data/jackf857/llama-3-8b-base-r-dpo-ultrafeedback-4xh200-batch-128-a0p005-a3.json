@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jackf857/llama-3-8b-base-r-dpo-ultrafeedback-4xh200-batch-128-a0p005-a3",
+  "slug": "jackf857-llama-3-8b-base-r-dpo-ultrafeedback-4xh200-batch-128-a0p005-a3",
+  "author": "jackf857",
+  "url": "https://huggingface.co/jackf857/llama-3-8b-base-r-dpo-ultrafeedback-4xh200-batch-128-a0p005-a3",
+  "created_at": "2026-11-13T19:30:46.000Z",
+  "updated_at": "2026-11-13T19:34:41.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama-3",
+    "r-dpo",
+    "preference-optimization",
+    "length-regularization",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceH4/ultrafeedback_binarized",
+    "base_model:W-61/llama-3-8b-base-sft-ultrachat-8xh200",
+    "base_model:finetune:W-61/llama-3-8b-base-sft-ultrachat-8xh200",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138682116,
+  "storage_human": "32.1 GB",
+  "base_model": "W-61/llama-3-8b-base-sft-ultrachat-8xh200",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run Llama-3-8B Base ipo ultrafeedback 4xh200 batch 128 rerun API ...",
+      "url": "https://featherless.ai/models/jackf857/llama-3-8b-base-ipo-ultrafeedback-4xh200-batch-128-rerun",
+      "snippet": "The jackf857/llama-3-8b-base-ipo-ultrafeedback-4xh200-batch-128-rerun is an 8 billion parameter language model, fine-tuned from W-61/llama-3-8b-base-sft-ultrachat-8xh200. This model has been further refined using the HuggingFaceH4/ultrafeed..."
+    },
+    {
+      "title": "Run Qwen-3-8B Base r dpo ultrafeedback 4xH200 batch 128 rerun 2 ...",
+      "url": "https://featherless.ai/models/jackf857/qwen-3-8b-base-r-dpo-ultrafeedback-4xH200-batch-128-rerun-2-runpod",
+      "snippet": "This model, developed by jackf857, is an 8 billion parameter variant based on the Qwen3 architecture."
+    }
+  ]
+}

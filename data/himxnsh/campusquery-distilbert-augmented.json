@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Himxnsh/CampusQuery-DistilBERT-Augmented",
+  "slug": "himxnsh-campusquery-distilbert-augmented",
+  "author": "Himxnsh",
+  "url": "https://huggingface.co/Himxnsh/CampusQuery-DistilBERT-Augmented",
+  "created_at": "2026-11-13T15:23:08.000Z",
+  "updated_at": "2026-11-13T15:56:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66961162,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267862441,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

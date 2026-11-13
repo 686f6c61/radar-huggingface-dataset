@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Phi-3.5-Health-Chatbot-GGUF",
+  "slug": "mradermacher-phi-3-5-health-chatbot-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Phi-3.5-Health-Chatbot-GGUF",
+  "created_at": "2025-03-01T01:16:48.000Z",
+  "updated_at": "2026-11-13T17:36:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ankitruler567/Phi-3.5-Health-Chatbot",
+    "base_model:quantized:ankitruler567/Phi-3.5-Health-Chatbot",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 61,
+  "trending_score": 0,
+  "parameters": 3821079648,
+  "parameters_human": "3.82B",
+  "storage_bytes": 34095777408,
+  "storage_human": "34.1 GB",
+  "base_model": "ankitruler567/Phi-3.5-Health-Chatbot",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

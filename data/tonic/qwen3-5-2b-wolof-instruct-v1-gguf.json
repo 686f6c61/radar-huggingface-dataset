@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Tonic/Qwen3.5-2B-Wolof-Instruct-v1-GGUF",
+  "slug": "tonic-qwen3-5-2b-wolof-instruct-v1-gguf",
+  "author": "Tonic",
+  "url": "https://huggingface.co/Tonic/Qwen3.5-2B-Wolof-Instruct-v1-GGUF",
+  "created_at": "2026-11-13T13:24:55.000Z",
+  "updated_at": "2026-11-13T13:25:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "wolof",
+    "qwen3.5",
+    "galsenai",
+    "text-generation",
+    "base_model:Tonic/Qwen3.5-2B-Wolof-Instruct-v1",
+    "base_model:quantized:Tonic/Qwen3.5-2B-Wolof-Instruct-v1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2405781312,
+  "parameters_human": "2.41B",
+  "storage_bytes": 12251770720,
+  "storage_human": "12.3 GB",
+  "base_model": "Tonic/Qwen3.5-2B-Wolof-Instruct-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tonic App - France",
+      "url": "https://tonicapp.fr/",
+      "snippet": "Tonic est la plateforme médicale la plus sûre de toute l'Europe. Elle dispose d’un software marqué CE (Classe IIa), qui inclut des …"
+    },
+    {
+      "title": "Eau tonique — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Eau_tonique",
+      "snippet": "L’ eau tonique (parfois appelée tonic, provient de l'anglais tonic water) est une boisson gazeuse contenant de l'eau additionnée de …"
+    },
+    {
+      "title": "Tonic Web",
+      "url": "https://web.tonicapp.com/fr",
+      "snippet": "Tonic Web is the desktop version of Tonic App, offering clinical tools, news, games, and a virtual assistant for healthcare professionals."
+    },
+    {
+      "title": "Page d'accueil - Boutique Tonic",
+      "url": "https://boutiquetonic.com/",
+      "snippet": "Automne/hiver 2026. Encore plus de choix dans nos boutiques ! Découvrez nos nouveautés La signature Tonic Découvrez notre …"
+    },
+    {
+      "title": "ToNIC - Toulouse neuro imaging center (Inserm)",
+      "url": "https://tonic.inserm.fr/",
+      "snippet": "Retrouvez ici la programmation des mercredis ToNIC, un ensemble de séminaires ouverts à toute la communauté scientifique. A 13h …"
+    }
+  ]
+}

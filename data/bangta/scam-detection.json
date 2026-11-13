@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "bangta/Scam-detection",
+  "slug": "bangta-scam-detection",
+  "author": "bangta",
+  "url": "https://huggingface.co/bangta/Scam-detection",
+  "created_at": "2026-11-13T18:18:31.000Z",
+  "updated_at": "2026-11-13T18:19:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "scam-detection",
+    "phishing",
+    "text-classification",
+    "vi",
+    "en",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045186,
+  "parameters_human": "278.0M",
+  "storage_bytes": 573212855,
+  "storage_human": "573 MB",
+  "base_model": "xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Diffusion-LFM3-1.7B-pre-GGUF",
+  "slug": "mradermacher-diffusion-lfm3-1-7b-pre-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Diffusion-LFM3-1.7B-pre-GGUF",
+  "created_at": "2026-11-13T18:14:00.000Z",
+  "updated_at": "2026-11-13T18:22:00.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "diffusion-language-model",
+    "block-diffusion",
+    "masked-diffusion",
+    "en",
+    "base_model:summerAIO/Diffusion-LFM3-1.7B-pre",
+    "base_model:quantized:summerAIO/Diffusion-LFM3-1.7B-pre",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1722727232,
+  "parameters_human": "1.72B",
+  "storage_bytes": 15816648512,
+  "storage_human": "15.8 GB",
+  "base_model": "summerAIO/Diffusion-LFM3-1.7B-pre",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
