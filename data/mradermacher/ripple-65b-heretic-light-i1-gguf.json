@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ripple-65B-Heretic-light-i1-GGUF",
+  "slug": "mradermacher-ripple-65b-heretic-light-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ripple-65B-Heretic-light-i1-GGUF",
+  "created_at": "2026-11-14T06:40:06.000Z",
+  "updated_at": "2026-11-14T06:44:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:schonsense/Ripple-65B-Heretic-light",
+    "base_model:quantized:schonsense/Ripple-65B-Heretic-light",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64782689360,
+  "parameters_human": "64.78B",
+  "storage_bytes": 23800305728,
+  "storage_human": "23.8 GB",
+  "base_model": "schonsense/Ripple-65B-Heretic-light",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

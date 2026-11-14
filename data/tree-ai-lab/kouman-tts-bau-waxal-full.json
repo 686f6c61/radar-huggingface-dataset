@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Tree-AI-lab/kouman-tts-bau-waxal-full",
+  "slug": "tree-ai-lab-kouman-tts-bau-waxal-full",
+  "author": "Tree-AI-lab",
+  "url": "https://huggingface.co/Tree-AI-lab/kouman-tts-bau-waxal-full",
+  "created_at": "2026-11-12T15:50:05.000Z",
+  "updated_at": "2026-11-13T16:50:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [
+    "bci"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "text-to-audio",
+    "text-to-speech",
+    "tts",
+    "mms-tts",
+    "waxal",
+    "baoule",
+    "kouman-ia",
+    "cote-d-ivoire",
+    "bci",
+    "dataset:google/WaxalNLP",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 379,
+  "trending_score": 0,
+  "parameters": 39642224,
+  "parameters_human": "39.6M",
+  "storage_bytes": 57279098132,
+  "storage_human": "57.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

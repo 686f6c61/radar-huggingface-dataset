@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mulkzz/kestrel-edu-ner-22l",
+  "slug": "mulkzz-kestrel-edu-ner-22l",
+  "author": "mulkzz",
+  "url": "https://huggingface.co/mulkzz/kestrel-edu-ner-22l",
+  "created_at": "2026-11-14T06:51:06.000Z",
+  "updated_at": "2026-11-14T07:09:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "education",
+    "pii",
+    "ner",
+    "privacy",
+    "teacher",
+    "ko",
+    "base_model:skt/A.X-Encoder-base",
+    "base_model:finetune:skt/A.X-Encoder-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149329161,
+  "parameters_human": "149.3M",
+  "storage_bytes": 598343066,
+  "storage_human": "598 MB",
+  "base_model": "skt/A.X-Encoder-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

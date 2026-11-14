@@ -5,7 +5,7 @@
   "author": "greg1506",
   "url": "https://huggingface.co/greg1506/qwen3-1p7b-coffee-dist2-GGUF",
   "created_at": "2026-11-05T17:18:48.000Z",
-  "updated_at": "2026-11-06T19:07:53.000Z",
+  "updated_at": "2026-11-13T20:58:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

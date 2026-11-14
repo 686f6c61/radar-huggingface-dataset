@@ -5,7 +5,7 @@
   "author": "nace-ai",
   "url": "https://huggingface.co/nace-ai/Qwen3.8-Flash-Next-GGUF-KQuant",
   "created_at": "2026-11-13T02:32:00.000Z",
-  "updated_at": "2026-11-13T03:53:36.000Z",
+  "updated_at": "2026-11-13T12:32:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -13,7 +13,7 @@
   "languages": [],
   "tags": [
     "gguf",
-    "kquant",
+    "nace",
     "quantized",
     "qwen",
     "text-generation",
@@ -25,13 +25,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 6,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 93449801574,
-  "storage_human": "93.4 GB",
+  "storage_bytes": 93451116502,
+  "storage_human": "93.5 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

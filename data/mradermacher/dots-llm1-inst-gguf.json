@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/dots.llm1.inst-GGUF",
+  "slug": "mradermacher-dots-llm1-inst-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/dots.llm1.inst-GGUF",
+  "created_at": "2025-06-15T20:21:58.000Z",
+  "updated_at": "2026-11-14T11:03:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "chat",
+    "en",
+    "zh",
+    "base_model:dots-studio/dots.llm1.inst",
+    "base_model:finetune:dots-studio/dots.llm1.inst",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1025015359776,
+  "storage_human": "1025.0 GB",
+  "base_model": "dots-studio/dots.llm1.inst",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

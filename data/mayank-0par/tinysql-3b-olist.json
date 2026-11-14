@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Mayank-0Par/tinysql-3b-olist",
+  "slug": "mayank-0par-tinysql-3b-olist",
+  "author": "Mayank-0Par",
+  "url": "https://huggingface.co/Mayank-0Par/tinysql-3b-olist",
+  "created_at": "2026-11-14T07:27:12.000Z",
+  "updated_at": "2026-11-14T07:37:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "text-to-sql",
+    "postgresql",
+    "qwen2.5",
+    "qlora",
+    "unsloth",
+    "code-generation",
+    "text2text-generation",
+    "conversational",
+    "en",
+    "dataset:custom/olist-ecommerce-sql",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 192644985,
+  "storage_human": "193 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

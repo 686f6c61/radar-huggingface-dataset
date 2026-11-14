@@ -5,7 +5,7 @@
   "author": "vllm-sr",
   "url": "https://huggingface.co/vllm-sr/vela3.1-pico-150m",
   "created_at": "2026-11-02T01:24:54.000Z",
-  "updated_at": "2026-11-11T14:05:34.000Z",
+  "updated_at": "2026-11-13T15:27:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -67,7 +67,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 77,
+  "downloads_30d": 87,
   "trending_score": 0,
   "parameters": 153207297,
   "parameters_human": "153.2M",

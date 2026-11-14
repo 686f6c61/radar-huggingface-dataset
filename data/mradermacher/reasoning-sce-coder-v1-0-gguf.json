@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Reasoning-SCE-Coder-v1.0-GGUF",
+  "slug": "mradermacher-reasoning-sce-coder-v1-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Reasoning-SCE-Coder-v1.0-GGUF",
+  "created_at": "2025-03-08T14:19:02.000Z",
+  "updated_at": "2026-11-14T07:50:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:BenevolenceMessiah/Reasoning-SCE-Coder-v1.0",
+    "base_model:quantized:BenevolenceMessiah/Reasoning-SCE-Coder-v1.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 176,
+  "trending_score": 0,
+  "parameters": 32760046592,
+  "parameters_human": "32.76B",
+  "storage_bytes": 223976439168,
+  "storage_human": "224.0 GB",
+  "base_model": "BenevolenceMessiah/Reasoning-SCE-Coder-v1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

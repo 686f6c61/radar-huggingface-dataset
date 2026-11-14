@@ -1,0 +1,358 @@
+{
+  "schema": 1,
+  "id": "kokitabayashi/mistral_qlora_finmodern_pair_merged",
+  "slug": "kokitabayashi-mistral_qlora_finmodern_pair_merged",
+  "author": "kokitabayashi",
+  "url": "https://huggingface.co/kokitabayashi/mistral_qlora_finmodern_pair_merged",
+  "created_at": "2026-11-14T12:16:02.000Z",
+  "updated_at": "2026-11-14T12:16:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "mistral",
+    "feature-extraction",
+    "mteb",
+    "transformers",
+    "en",
+    "arxiv:2401.00368",
+    "arxiv:2104.08663",
+    "arxiv:2210.07316",
+    "arxiv:2212.03533",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7110660096,
+  "parameters_human": "7.11B",
+  "storage_bytes": 14221352376,
+  "storage_human": "14.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "MTEB AFQMC",
+      "metric": null,
+      "value": 37.863226091673866
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AFQMC",
+      "metric": null,
+      "value": 38.98733013335281
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AFQMC",
+      "metric": null,
+      "value": 37.51783380497874
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AFQMC",
+      "metric": null,
+      "value": 38.98733012753365
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AFQMC",
+      "metric": null,
+      "value": 37.26706888081721
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AFQMC",
+      "metric": null,
+      "value": 38.709750161903834
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ATEC",
+      "metric": null,
+      "value": 43.33924583134623
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ATEC",
+      "metric": null,
+      "value": 42.84316155158754
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ATEC",
+      "metric": null,
+      "value": 45.62709879515238
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ATEC",
+      "metric": null,
+      "value": 42.843155921732404
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ATEC",
+      "metric": null,
+      "value": 45.4786950991229
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ATEC",
+      "metric": null,
+      "value": 42.657334751855984
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 78.68656716417911
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 41.71522322900398
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 72.37207703532552
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (de)",
+      "metric": null,
+      "value": 74.04710920770879
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (de)",
+      "metric": null,
+      "value": 83.42622221864045
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (de)",
+      "metric": null,
+      "value": 72.14388257905772
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en-ext)",
+      "metric": null,
+      "value": 77.93103448275862
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en-ext)",
+      "metric": null,
+      "value": 26.039284760509513
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en-ext)",
+      "metric": null,
+      "value": 64.81092954450712
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (ja)",
+      "metric": null,
+      "value": 77.21627408993577
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (ja)",
+      "metric": null,
+      "value": 24.876490553983036
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (ja)",
+      "metric": null,
+      "value": 63.8773359684989
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 95.90679999999999
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 94.32357863164454
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 95.90485634708557
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (en)",
+      "metric": null,
+      "value": 55.786
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (en)",
+      "metric": null,
+      "value": 55.31211995815146
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (de)",
+      "metric": null,
+      "value": 53.26
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (de)",
+      "metric": null,
+      "value": 52.156230111544986
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (es)",
+      "metric": null,
+      "value": 50.33
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (es)",
+      "metric": null,
+      "value": 49.195023008878145
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (fr)",
+      "metric": null,
+      "value": 49.3
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (fr)",
+      "metric": null,
+      "value": 48.434470184108
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (ja)",
+      "metric": null,
+      "value": 48.68599999999999
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (ja)",
+      "metric": null,
+      "value": 47.62681775202072
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (zh)",
+      "metric": null,
+      "value": 46.238
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (zh)",
+      "metric": null,
+      "value": 45.014030559653705
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 36.486000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 53.076
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 53.657999999999994
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 53.659
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 48.234
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 51.121
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 37.269000000000005
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 53.335
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 53.916
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 53.918
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 48.518
+    }
+  ],
+  "sources": [
+    {
+      "title": "r/LocalLLaMA on Reddit: Merged mistral base plus lora performs ...",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/17n08qc/merged_mistral_base_plus_lora_performs_poorly_vs/",
+      "snippet": "No idea if this is the same issue, but have run into instances of model \"corruption\" from quantization difference between the qLoRA adapter and the base model."
+    }
+  ]
+}

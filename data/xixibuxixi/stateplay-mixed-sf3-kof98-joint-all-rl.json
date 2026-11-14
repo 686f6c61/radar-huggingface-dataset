@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "xixibuxixi/StatePlay-Mixed-SF3-KOF98-Joint-All-RL",
+  "slug": "xixibuxixi-stateplay-mixed-sf3-kof98-joint-all-rl",
+  "author": "xixibuxixi",
+  "url": "https://huggingface.co/xixibuxixi/StatePlay-Mixed-SF3-KOF98-Joint-All-RL",
+  "created_at": "2026-11-14T08:11:37.000Z",
+  "updated_at": "2026-11-14T08:11:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "stateplay",
+    "reinforcement-learning",
+    "video-generation",
+    "lora",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 61630720,
+  "parameters_human": "61.6M",
+  "storage_bytes": 252932518,
+  "storage_human": "253 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

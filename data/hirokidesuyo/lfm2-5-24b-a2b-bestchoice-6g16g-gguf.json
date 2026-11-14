@@ -5,7 +5,7 @@
   "author": "hirokidesuyo",
   "url": "https://huggingface.co/hirokidesuyo/LFM2.5-24B-A2B-BestChoice-6G16G-GGUF",
   "created_at": "2026-11-12T00:33:25.000Z",
-  "updated_at": "2026-11-13T03:10:13.000Z",
+  "updated_at": "2026-11-13T16:05:58.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 61,
+  "downloads_30d": 146,
   "trending_score": 0,
   "parameters": 23971587712,
   "parameters_human": "23.97B",

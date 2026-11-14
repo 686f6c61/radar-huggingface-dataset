@@ -5,7 +5,7 @@
   "author": "richardyoung",
   "url": "https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-heretic1x-general-GGUF",
   "created_at": "2026-11-13T07:35:07.000Z",
-  "updated_at": "2026-11-13T07:48:47.000Z",
+  "updated_at": "2026-11-13T07:55:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 32763876352,
   "parameters_human": "32.76B",
-  "storage_bytes": 19881372704,
-  "storage_human": "19.9 GB",
+  "storage_bytes": 54702258208,
+  "storage_human": "54.7 GB",
   "base_model": "richardyoung/Qwen2.5-32B-Instruct-heretic1x-general",
   "formats": [
     "gguf"

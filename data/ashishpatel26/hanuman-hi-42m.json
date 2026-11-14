@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "ashishpatel26/hanuman-hi-42m",
+  "slug": "ashishpatel26-hanuman-hi-42m",
+  "author": "ashishpatel26",
+  "url": "https://huggingface.co/ashishpatel26/hanuman-hi-42m",
+  "created_at": "2026-11-14T04:43:45.000Z",
+  "updated_at": "2026-11-14T04:50:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "hindi",
+    "from-scratch",
+    "causal-lm",
+    "ramayana-series",
+    "hi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 42082816,
+  "parameters_human": "42.1M",
+  "storage_bytes": 169430360,
+  "storage_human": "169 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

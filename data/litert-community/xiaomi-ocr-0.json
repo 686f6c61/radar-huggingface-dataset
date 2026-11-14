@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/Xiaomi-OCR-0",
   "created_at": "2026-11-02T22:07:02.000Z",
-  "updated_at": "2026-11-09T13:56:44.000Z",
+  "updated_at": "2026-11-13T21:44:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

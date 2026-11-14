@@ -5,7 +5,7 @@
   "author": "sriram1983007",
   "url": "https://huggingface.co/sriram1983007/SRA-RiskGate-4B-LoRA",
   "created_at": "2026-10-03T14:00:56.000Z",
-  "updated_at": "2026-11-12T16:58:40.000Z",
+  "updated_at": "2026-11-13T20:02:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -41,7 +41,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 163,
+  "downloads_30d": 185,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

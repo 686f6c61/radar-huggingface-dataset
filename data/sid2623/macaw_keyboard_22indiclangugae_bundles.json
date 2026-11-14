@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Sid2623/Macaw_Keyboard_22IndicLangugae_Bundles",
+  "slug": "sid2623-macaw_keyboard_22indiclangugae_bundles",
+  "author": "Sid2623",
+  "url": "https://huggingface.co/Sid2623/Macaw_Keyboard_22IndicLangugae_Bundles",
+  "created_at": "2026-09-24T16:18:57.000Z",
+  "updated_at": "2026-11-14T09:11:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1229910528,
+  "parameters_human": "1.23B",
+  "storage_bytes": 6901188517,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

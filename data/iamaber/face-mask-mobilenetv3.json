@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "iamaber/face-mask-mobilenetv3",
+  "slug": "iamaber-face-mask-mobilenetv3",
+  "author": "iamaber",
+  "url": "https://huggingface.co/iamaber/face-mask-mobilenetv3",
+  "created_at": "2026-11-14T10:27:17.000Z",
+  "updated_at": "2026-11-14T10:27:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "face-mask",
+    "mobilenetv3",
+    "image-classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20305172,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What are Reels on Facebook and How Do You Make Them?",
+      "url": "https://blog.hubspot.com/marketing/what-are-reels-on-facebook",
+      "snippet": "Oct 7, 2024 · Short-form video is everywhere online and after letting TikTok and Instagram Reels run the show, Facebook finally …"
+    },
+    {
+      "title": "Reels | Facebook Help Center",
+      "url": "https://www.facebook.com/help/web/753046815962474/",
+      "snippet": "Reels are short videos that can consist of video, music, audio, effects and more. You can create reels for a global audience or share …"
+    },
+    {
+      "title": "Tips and best practices for Facebook Reels",
+      "url": "https://www.facebook.com/business/help/1708053352711643/",
+      "snippet": "Facebook Reels can help creators and advertisers share entertaining and engaging content and get discovered by new audiences. …"
+    },
+    {
+      "title": "Facebook Reels Downloader - Fast, Easy & 100% Free - Twicsy",
+      "url": "https://twicsy.com/facebook-reels-downloader",
+      "snippet": "This free tool that lets you download and save any Reels you see on Facebook to your phone or device and it’s yours forever."
+    },
+    {
+      "title": "How to use creative tools in Facebook Reels",
+      "url": "https://www.facebook.com/business/help/447121939935381/",
+      "snippet": "Customize your Facebook Reels by using audio, text, and various creative effects."
+    }
+  ]
+}

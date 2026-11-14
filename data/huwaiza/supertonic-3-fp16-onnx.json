@@ -5,7 +5,7 @@
   "author": "huwaiza",
   "url": "https://huggingface.co/huwaiza/supertonic-3-fp16-onnx",
   "created_at": "2026-11-09T00:47:57.000Z",
-  "updated_at": "2026-11-09T00:48:32.000Z",
+  "updated_at": "2026-11-13T08:04:25.000Z",
   "license": "openrail",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 47,
+  "downloads_30d": 53,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "Wh1teSpaces/wl-tpu-cache-05e40e3dc8f34fb9",
+  "slug": "wh1tespaces-wl-tpu-cache-05e40e3dc8f34fb9",
+  "author": "Wh1teSpaces",
+  "url": "https://huggingface.co/Wh1teSpaces/wl-tpu-cache-05e40e3dc8f34fb9",
+  "created_at": "2026-11-14T12:49:49.000Z",
+  "updated_at": "2026-11-14T12:50:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 294303587,
+  "storage_human": "294 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

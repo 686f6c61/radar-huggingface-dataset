@@ -5,7 +5,7 @@
   "author": "migtissera",
   "url": "https://huggingface.co/migtissera/Tess-4.5-594B-A17B-LoRA",
   "created_at": "2026-11-13T03:26:17.000Z",
-  "updated_at": "2026-11-13T03:26:42.000Z",
+  "updated_at": "2026-11-13T20:28:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,13 +31,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 326813986,
-  "storage_human": "327 MB",
+  "storage_bytes": 336324047,
+  "storage_human": "336 MB",
   "base_model": "thinkingmachines/Inkling-2-Small",
   "formats": [
     "safetensors"

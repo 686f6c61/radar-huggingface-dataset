@@ -5,7 +5,7 @@
   "author": "richardyoung",
   "url": "https://huggingface.co/richardyoung/Qwen3.8-27B-MPOA-heretic-GGUF",
   "created_at": "2026-11-12T06:04:25.000Z",
-  "updated_at": "2026-11-12T06:24:59.000Z",
+  "updated_at": "2026-11-14T06:38:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,12 +32,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 3,
+  "downloads_30d": 133,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 45170465568,
-  "storage_human": "45.2 GB",
+  "storage_bytes": 60252973216,
+  "storage_human": "60.3 GB",
   "base_model": "richardyoung/Qwen3.8-27B-MPOA-heretic",
   "formats": [
     "gguf"

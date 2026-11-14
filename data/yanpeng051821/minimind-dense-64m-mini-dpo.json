@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "yanpeng051821/minimind-dense-64m-mini-dpo",
+  "slug": "yanpeng051821-minimind-dense-64m-mini-dpo",
+  "author": "yanpeng051821",
+  "url": "https://huggingface.co/yanpeng051821/minimind-dense-64m-mini-dpo",
+  "created_at": "2026-11-14T09:01:20.000Z",
+  "updated_at": "2026-11-14T09:14:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "minimind",
+    "dpo",
+    "research-checkpoint",
+    "custom-runtime",
+    "text-generation",
+    "zh",
+    "dataset:jingyaogong/minimind_dataset",
+    "base_model:yanpeng051821/minimind-dense-64m-mini-sft",
+    "base_model:finetune:yanpeng051821/minimind-dense-64m-mini-sft",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 63912192,
+  "parameters_human": "63.9M",
+  "storage_bytes": 255659304,
+  "storage_human": "256 MB",
+  "base_model": "yanpeng051821/minimind-dense-64m-mini-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yanpeng051821/minimind-dense-64m-mini-sft - Hugging Face",
+      "url": "https://huggingface.co/yanpeng051821/minimind-dense-64m-mini-sft",
+      "snippet": "01.11.2026 ... MiniMind Dense 64M: One-Epoch Mini SFT · 1. Model Overview · 2. Data and Supervision · 3. Training Recipe and Cost · 4. Evaluation and Findings · 5."
+    }
+  ]
+}

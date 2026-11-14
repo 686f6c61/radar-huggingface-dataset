@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "richardyoung/Qwen3-Coder-480B-GGUF",
+  "slug": "richardyoung-qwen3-coder-480b-gguf",
+  "author": "richardyoung",
+  "url": "https://huggingface.co/richardyoung/Qwen3-Coder-480B-GGUF",
+  "created_at": "2025-11-26T18:07:21.000Z",
+  "updated_at": "2026-11-14T06:18:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "qwen",
+    "qwen3",
+    "coder",
+    "coding",
+    "moe",
+    "gguf",
+    "llama-cpp",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-Coder-480B-A35B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-Coder-480B-A35B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-Coder-480B-A35B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

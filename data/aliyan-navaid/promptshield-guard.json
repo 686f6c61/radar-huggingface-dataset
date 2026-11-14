@@ -5,7 +5,7 @@
   "author": "aliyan-navaid",
   "url": "https://huggingface.co/aliyan-navaid/promptshield-guard",
   "created_at": "2026-11-13T10:18:20.000Z",
-  "updated_at": "2026-11-13T10:32:26.000Z",
+  "updated_at": "2026-11-13T13:47:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -14,7 +14,7 @@
   "tags": [
     "transformers",
     "safetensors",
-    "deberta-v2",
+    "roberta",
     "text-classification",
     "arxiv:1910.09700",
     "text-embeddings-inference",
@@ -24,10 +24,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 141896450,
-  "parameters_human": "141.9M",
-  "storage_bytes": 283805644,
-  "storage_human": "284 MB",
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 3289707171,
+  "storage_human": "3.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

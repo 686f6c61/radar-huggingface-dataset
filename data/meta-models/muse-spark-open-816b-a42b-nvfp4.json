@@ -29,6 +29,7 @@
     "base_model:meta-models/Muse-Spark-Open-816B-A42B",
     "base_model:quantized:meta-models/Muse-Spark-Open-816B-A42B",
     "license:other",
+    "eval-results",
     "endpoints_compatible",
     "8-bit",
     "modelopt",
@@ -36,8 +37,8 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 253,
-  "downloads_30d": 18106,
+  "likes": 254,
+  "downloads_30d": 18764,
   "trending_score": 10,
   "parameters": 822036529664,
   "parameters_human": "822.04B",

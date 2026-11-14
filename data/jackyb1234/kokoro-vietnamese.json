@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "jackyb1234/Kokoro-Vietnamese",
+  "slug": "jackyb1234-kokoro-vietnamese",
+  "author": "jackyb1234",
+  "url": "https://huggingface.co/jackyb1234/Kokoro-Vietnamese",
+  "created_at": "2026-11-14T12:39:25.000Z",
+  "updated_at": "2026-11-14T12:39:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "kokoro",
+    "vietnamese",
+    "text-to-speech",
+    "vi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 660290189,
+  "storage_human": "660 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

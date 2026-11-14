@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Xihnik/Becoming1a1mentor",
+  "slug": "xihnik-becoming1a1mentor",
+  "author": "Xihnik",
+  "url": "https://huggingface.co/Xihnik/Becoming1a1mentor",
+  "created_at": "2026-11-14T06:19:49.000Z",
+  "updated_at": "2026-11-14T06:19:50.000Z",
+  "license": "qwen",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-72B",
+    "base_model:finetune:Qwen/Qwen2.5-72B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 72706203648,
+  "parameters_human": "72.71B",
+  "storage_bytes": 145412519312,
+  "storage_human": "145.4 GB",
+  "base_model": "Qwen/Qwen2.5-72B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

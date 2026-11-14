@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "Premchan369/aether-rami-esm2-diffsbdd",
+  "slug": "premchan369-aether-rami-esm2-diffsbdd",
+  "author": "Premchan369",
+  "url": "https://huggingface.co/Premchan369/aether-rami-esm2-diffsbdd",
+  "created_at": "2026-11-14T12:45:40.000Z",
+  "updated_at": "2026-11-14T12:50:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "aether_rami",
+    "feature-extraction",
+    "biology",
+    "chemistry",
+    "drug-discovery",
+    "protein-language-model",
+    "esm2",
+    "structure-based-drug-design",
+    "molecular-docking",
+    "generative-diffusion",
+    "flow-matching",
+    "kras-g12c",
+    "oncology",
+    "systems-pharmacology",
+    "alphafold",
+    "diffdock",
+    "rfdiffusion",
+    "posebusters",
+    "gradio",
+    "cancer-research",
+    "adme",
+    "tuberculosis",
+    "malaria",
+    "sickle-cell",
+    "oral-cancer",
+    "dengue",
+    "tropical-diseases",
+    "global-health",
+    "csir-iict",
+    "custom_code",
+    "en",
+    "dataset:pdbbind",
+    "dataset:chembl",
+    "dataset:zinc15",
+    "dataset:tdc",
+    "dataset:bindingdb",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6919918,
+  "parameters_human": "6.9M",
+  "storage_bytes": 66137335,
+  "storage_human": "66 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "De Novo 3D Structure-Based Drug Design & Target Affinity",
+      "dataset": "PDBbind 2020 Refined Core Set",
+      "metric": "Binding R2",
+      "value": 0.964
+    },
+    {
+      "task": "De Novo 3D Structure-Based Drug Design & Target Affinity",
+      "dataset": "PDBbind 2020 Refined Core Set",
+      "metric": "Binding RMSE (log Kd)",
+      "value": 0.21
+    },
+    {
+      "task": "De Novo 3D Structure-Based Drug Design & Target Affinity",
+      "dataset": "PDBbind 2020 Refined Core Set",
+      "metric": "PoseBusters Physical Pass Rate",
+      "value": 98.4
+    },
+    {
+      "task": "De Novo 3D Structure-Based Drug Design & Target Affinity",
+      "dataset": "PDBbind 2020 Refined Core Set",
+      "metric": "ADMET ROC-AUC",
+      "value": 0.982
+    }
+  ],
+  "sources": []
+}

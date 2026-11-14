@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Z-Jafari/bert-base-multilingual-cased-finetuned-best_scores",
+  "slug": "z-jafari-bert-base-multilingual-cased-finetuned-best_scores",
+  "author": "Z-Jafari",
+  "url": "https://huggingface.co/Z-Jafari/bert-base-multilingual-cased-finetuned-best_scores",
+  "created_at": "2026-11-12T06:01:01.000Z",
+  "updated_at": "2026-11-12T06:52:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "question-answering",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-multilingual-cased",
+    "base_model:finetune:google-bert/bert-base-multilingual-cased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 143,
+  "trending_score": 0,
+  "parameters": 177264386,
+  "parameters_human": "177.3M",
+  "storage_bytes": 10636218281,
+  "storage_human": "10.6 GB",
+  "base_model": "google-bert/bert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

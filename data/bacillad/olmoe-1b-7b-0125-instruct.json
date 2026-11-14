@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "bacillad/OLMoE-1B-7B-0125-Instruct",
+  "slug": "bacillad-olmoe-1b-7b-0125-instruct",
+  "author": "bacillad",
+  "url": "https://huggingface.co/bacillad/OLMoE-1B-7B-0125-Instruct",
+  "created_at": "2026-11-14T05:08:50.000Z",
+  "updated_at": "2026-11-14T05:08:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmoe",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:allenai/RLVR-GSM",
+    "arxiv:2409.02060",
+    "arxiv:2411.15124",
+    "base_model:allenai/OLMoE-1B-7B-0125-DPO",
+    "base_model:finetune:allenai/OLMoE-1B-7B-0125-DPO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6919161856,
+  "parameters_human": "6.92B",
+  "storage_bytes": 13838721960,
+  "storage_human": "13.8 GB",
+  "base_model": "allenai/OLMoE-1B-7B-0125-DPO",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

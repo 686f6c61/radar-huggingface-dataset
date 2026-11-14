@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Noah-g-k/portal_cube_policy",
+  "slug": "noah-g-k-portal_cube_policy",
+  "author": "Noah-g-k",
+  "url": "https://huggingface.co/Noah-g-k/portal_cube_policy",
+  "created_at": "2026-11-14T10:43:07.000Z",
+  "updated_at": "2026-11-14T10:43:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Noah-g-k/act_portal_cube_dataset_50_20261113_211527",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714928,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

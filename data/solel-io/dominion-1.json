@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Solel-io/Dominion-1",
+  "slug": "solel-io-dominion-1",
+  "author": "Solel-io",
+  "url": "https://huggingface.co/Solel-io/Dominion-1",
+  "created_at": "2026-10-20T12:55:53.000Z",
+  "updated_at": "2026-11-14T06:43:49.000Z",
+  "license": "solel-model-licence",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "solel-ai",
+    "aether-series",
+    "vision",
+    "multimodal",
+    "llama.cpp",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 364,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 6033043118,
+  "storage_human": "6.0 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

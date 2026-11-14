@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "richardyoung/Qwen3.8-27B-ARA-heretic-GGUF",
+  "slug": "richardyoung-qwen3-8-27b-ara-heretic-gguf",
+  "author": "richardyoung",
+  "url": "https://huggingface.co/richardyoung/Qwen3.8-27B-ARA-heretic-GGUF",
+  "created_at": "2026-11-12T03:48:52.000Z",
+  "updated_at": "2026-11-12T04:00:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "imatrix",
+    "research",
+    "text-generation",
+    "en",
+    "base_model:richardyoung/Qwen3.8-27B-ARA-heretic",
+    "base_model:quantized:richardyoung/Qwen3.8-27B-ARA-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 200,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 45170465568,
+  "storage_human": "45.2 GB",
+  "base_model": "richardyoung/Qwen3.8-27B-ARA-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

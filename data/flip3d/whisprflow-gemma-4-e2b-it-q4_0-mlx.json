@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "flip3d/whisprflow-gemma-4-E2B-it-Q4_0-mlx",
+  "slug": "flip3d-whisprflow-gemma-4-e2b-it-q4_0-mlx",
+  "author": "flip3d",
+  "url": "https://huggingface.co/flip3d/whisprflow-gemma-4-E2B-it-Q4_0-mlx",
+  "created_at": "2026-11-12T19:50:45.000Z",
+  "updated_at": "2026-11-13T07:22:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:finetune:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 4628569379,
+  "parameters_human": "4.63B",
+  "storage_bytes": 3145811224,
+  "storage_human": "3.1 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

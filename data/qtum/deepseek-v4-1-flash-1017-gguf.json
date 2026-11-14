@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "qtum/DeepSeek-V4.1-Flash-1017-GGUF",
+  "slug": "qtum-deepseek-v4-1-flash-1017-gguf",
+  "author": "qtum",
+  "url": "https://huggingface.co/qtum/DeepSeek-V4.1-Flash-1017-GGUF",
+  "created_at": "2026-11-13T07:25:16.000Z",
+  "updated_at": "2026-11-14T12:33:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "deepseek",
+    "moe",
+    "quantized",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 237130209600,
+  "storage_human": "237.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

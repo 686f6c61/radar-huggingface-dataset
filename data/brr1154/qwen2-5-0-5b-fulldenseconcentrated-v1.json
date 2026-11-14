@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BRR1154/Qwen2.5-0.5B-FullDenseConcentrated-v1",
+  "slug": "brr1154-qwen2-5-0-5b-fulldenseconcentrated-v1",
+  "author": "BRR1154",
+  "url": "https://huggingface.co/BRR1154/Qwen2.5-0.5B-FullDenseConcentrated-v1",
+  "created_at": "2026-11-14T06:35:40.000Z",
+  "updated_at": "2026-11-14T06:43:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "long-horizon-reasoning",
+    "closed-loop-control",
+    "shannon-entropy",
+    "svd-weight-surgery",
+    "parameter-concentration",
+    "systems-engineering",
+    "sub-1b-controller",
+    "pytorch",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1987585364,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Systems Engineering (Laptop Architecture)",
+      "dataset": null,
+      "metric": null,
+      "value": 38.1
+    },
+    {
+      "task": "Systems Engineering (Laptop Architecture)",
+      "dataset": null,
+      "metric": null,
+      "value": 81.95
+    },
+    {
+      "task": "GPQA-Diamond",
+      "dataset": null,
+      "metric": null,
+      "value": 100
+    },
+    {
+      "task": "MATH-500 Standalone",
+      "dataset": null,
+      "metric": null,
+      "value": 50
+    }
+  ],
+  "sources": []
+}

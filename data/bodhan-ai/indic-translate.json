@@ -5,7 +5,7 @@
   "author": "bodhan-ai",
   "url": "https://huggingface.co/bodhan-ai/indic-translate",
   "created_at": "2026-08-05T08:35:31.000Z",
-  "updated_at": "2026-10-19T05:18:31.000Z",
+  "updated_at": "2026-11-13T05:51:09.000Z",
   "license": "other",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -77,7 +77,7 @@
     "region:us"
   ],
   "likes": 21,
-  "downloads_30d": 770,
+  "downloads_30d": 763,
   "trending_score": 10,
   "parameters": 7941106250,
   "parameters_human": "7.94B",

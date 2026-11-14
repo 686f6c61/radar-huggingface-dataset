@@ -5,7 +5,7 @@
   "author": "richardyoung",
   "url": "https://huggingface.co/richardyoung/Qwen2.5-Coder-7B-Instruct-heretic1x-general-GGUF",
   "created_at": "2026-11-11T05:37:01.000Z",
-  "updated_at": "2026-11-11T05:40:48.000Z",
+  "updated_at": "2026-11-13T18:30:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,13 +31,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 159,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 12790727424,
-  "storage_human": "12.8 GB",
+  "storage_bytes": 32282246304,
+  "storage_human": "32.3 GB",
   "base_model": "richardyoung/Qwen2.5-Coder-7B-Instruct-heretic1x-general",
   "formats": [
     "gguf"

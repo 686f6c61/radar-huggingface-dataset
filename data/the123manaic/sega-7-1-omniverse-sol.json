@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "the123manaic/Sega-7.1-Omniverse-Sol",
+  "slug": "the123manaic-sega-7-1-omniverse-sol",
+  "author": "the123manaic",
+  "url": "https://huggingface.co/the123manaic/Sega-7.1-Omniverse-Sol",
+  "created_at": "2026-11-14T06:34:14.000Z",
+  "updated_at": "2026-11-14T06:34:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sega_tot_moe",
+    "text-generation",
+    "segacopter",
+    "sega-7.1",
+    "tree-of-thought",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1792,
+  "parameters_human": "1792",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

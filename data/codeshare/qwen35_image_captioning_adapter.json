@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "codeShare/qwen35_image_captioning_adapter",
+  "slug": "codeshare-qwen35_image_captioning_adapter",
+  "author": "codeShare",
+  "url": "https://huggingface.co/codeShare/qwen35_image_captioning_adapter",
+  "created_at": "2026-11-14T12:08:00.000Z",
+  "updated_at": "2026-11-14T12:14:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 332043179,
+  "storage_human": "332 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Codeshare - Share code in real-time with developers in your browser",
+      "url": "https://codeshare.io/",
+      "snippet": "Code with your team Open a Codeshare editor, write or copy code, then share it with friends and colleagues. Pair program and …"
+    },
+    {
+      "title": "CodeShare — Real-Time Collaborative Code Editor Online",
+      "url": "https://codeshare.in/",
+      "snippet": "Write and run HTML, CSS, and JavaScript together in real time. Share one link, see everyone's edits and the live output instantly — …"
+    },
+    {
+      "title": "CodeShare.online - Free Real-Time Code Collaboration",
+      "url": "https://www.codeshare.online/",
+      "snippet": "CodeShare.online: Free real-time code collaboration with HD video calling, live code editing, cursor tracking, multi-language support. …"
+    },
+    {
+      "title": "CodeShare",
+      "url": "https://codeshare.uk/",
+      "snippet": "CodeShare Instant, real-time collaborative coding environment. No signup required, just share the link and start coding."
+    },
+    {
+      "title": "Log in - Codeshare",
+      "url": "https://codeshare.io/login",
+      "snippet": "Log in to access your saved code Email address"
+    }
+  ]
+}

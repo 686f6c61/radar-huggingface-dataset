@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Azura-Qwen2.5-32B-GGUF",
+  "slug": "mradermacher-azura-qwen2-5-32b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Azura-Qwen2.5-32B-GGUF",
+  "created_at": "2025-03-04T07:44:06.000Z",
+  "updated_at": "2026-11-14T04:37:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:nbeerbower/Azura-Qwen2.5-32B",
+    "base_model:quantized:nbeerbower/Azura-Qwen2.5-32B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 82,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 224000871744,
+  "storage_human": "224.0 GB",
+  "base_model": "nbeerbower/Azura-Qwen2.5-32B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

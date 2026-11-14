@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mhseo2/klear8b-planfmt-sftv5-s376",
+  "slug": "mhseo2-klear8b-planfmt-sftv5-s376",
+  "author": "mhseo2",
+  "url": "https://huggingface.co/mhseo2/klear8b-planfmt-sftv5-s376",
+  "created_at": "2026-11-14T09:10:54.000Z",
+  "updated_at": "2026-11-14T09:13:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Kwai-Klear/Klear-Reasoner-8B-SFT",
+    "base_model:finetune:Kwai-Klear/Klear-Reasoner-8B-SFT",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939462,
+  "storage_human": "16.4 GB",
+  "base_model": "Kwai-Klear/Klear-Reasoner-8B-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

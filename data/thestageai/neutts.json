@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "TheStageAI/neutts",
+  "slug": "thestageai-neutts",
+  "author": "TheStageAI",
+  "url": "https://huggingface.co/TheStageAI/neutts",
+  "created_at": "2026-02-27T11:04:39.000Z",
+  "updated_at": "2026-11-14T10:04:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18761232825,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

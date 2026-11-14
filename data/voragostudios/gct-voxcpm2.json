@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "VoragoStudios/gct-voxcpm2",
+  "slug": "voragostudios-gct-voxcpm2",
+  "author": "VoragoStudios",
+  "url": "https://huggingface.co/VoragoStudios/gct-voxcpm2",
+  "created_at": "2026-11-14T09:36:26.000Z",
+  "updated_at": "2026-11-14T09:41:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:finetune:openbmb/VoxCPM2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 4957031714,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

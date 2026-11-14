@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Seed-OSS-36B-Instruct-GGUF",
+  "slug": "mradermacher-seed-oss-36b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Seed-OSS-36B-Instruct-GGUF",
+  "created_at": "2025-08-24T04:09:01.000Z",
+  "updated_at": "2026-11-14T05:42:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "vllm",
+    "en",
+    "base_model:ByteDance-Seed/Seed-OSS-36B-Instruct",
+    "base_model:quantized:ByteDance-Seed/Seed-OSS-36B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 390,
+  "trending_score": 0,
+  "parameters": 36151104512,
+  "parameters_human": "36.15B",
+  "storage_bytes": 247008201664,
+  "storage_human": "247.0 GB",
+  "base_model": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

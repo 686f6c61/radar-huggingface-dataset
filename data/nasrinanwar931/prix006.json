@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "nasrinanwar931/prix006",
+  "slug": "nasrinanwar931-prix006",
+  "author": "nasrinanwar931",
+  "url": "https://huggingface.co/nasrinanwar931/prix006",
+  "created_at": "2026-11-14T08:23:56.000Z",
+  "updated_at": "2026-11-14T08:27:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:nasrinanwar931/prix001",
+    "base_model:finetune:nasrinanwar931/prix001",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278791544,
+  "storage_human": "10.3 GB",
+  "base_model": "nasrinanwar931/prix001",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "daidaiOVO/Qwen2.5-7B-Instruct-onnx-ryzenai-1.7-hybrid",
+  "slug": "daidaiovo-qwen2-5-7b-instruct-onnx-ryzenai-1-7-hybrid",
+  "author": "daidaiOVO",
+  "url": "https://huggingface.co/daidaiOVO/Qwen2.5-7B-Instruct-onnx-ryzenai-1.7-hybrid",
+  "created_at": "2026-11-14T06:13:41.000Z",
+  "updated_at": "2026-11-14T06:13:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "chat",
+    "ryzenai-hybrid",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8645524298,
+  "storage_human": "8.6 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

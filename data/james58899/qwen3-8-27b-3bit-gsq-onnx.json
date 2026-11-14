@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "james58899/Qwen3.8-27B-3Bit-GSQ-ONNX",
+  "slug": "james58899-qwen3-8-27b-3bit-gsq-onnx",
+  "author": "james58899",
+  "url": "https://huggingface.co/james58899/Qwen3.8-27B-3Bit-GSQ-ONNX",
+  "created_at": "2026-11-12T14:07:39.000Z",
+  "updated_at": "2026-11-12T14:22:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "qwen3_5_text",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15151660895,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

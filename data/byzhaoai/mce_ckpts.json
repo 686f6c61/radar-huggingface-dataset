@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "byzhaoAI/MCE_ckpts",
+  "slug": "byzhaoai-mce_ckpts",
+  "author": "byzhaoAI",
+  "url": "https://huggingface.co/byzhaoAI/MCE_ckpts",
+  "created_at": "2026-11-14T06:22:49.000Z",
+  "updated_at": "2026-11-14T06:48:54.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "MCE",
+    "Multimodal Learning",
+    "Imbalanced Learning",
+    "en",
+    "arxiv:2510.10534",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79523813,
+  "storage_human": "80 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "zimageapp/MiniMax-H3-Image-MLX-Q4",
+  "slug": "zimageapp-minimax-h3-image-mlx-q4",
+  "author": "zimageapp",
+  "url": "https://huggingface.co/zimageapp/MiniMax-H3-Image-MLX-Q4",
+  "created_at": "2026-11-12T11:53:39.000Z",
+  "updated_at": "2026-11-12T15:02:04.000Z",
+  "license": "minimax-h3-image-community-license-agreement",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-to-image",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "image-generation",
+    "image-editing",
+    "quantized",
+    "4-bit",
+    "apple-silicon",
+    "minimax-h3-image",
+    "text-to-image",
+    "en",
+    "zh",
+    "base_model:MiniMaxAI/MiniMax-H3-Image",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3-Image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29025385672,
+  "storage_human": "29.0 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3-Image",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

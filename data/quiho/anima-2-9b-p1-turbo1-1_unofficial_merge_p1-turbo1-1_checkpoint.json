@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Quiho/Anima-2.9B-P1-Turbo1.1_Unofficial_Merge_p1-turbo1.1_checkpoint",
+  "slug": "quiho-anima-2-9b-p1-turbo1-1_unofficial_merge_p1-turbo1-1_checkpoint",
+  "author": "Quiho",
+  "url": "https://huggingface.co/Quiho/Anima-2.9B-P1-Turbo1.1_Unofficial_Merge_p1-turbo1.1_checkpoint",
+  "created_at": "2026-11-14T09:04:51.000Z",
+  "updated_at": "2026-11-14T09:05:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "checkpoint",
+    "anima",
+    "turbo",
+    "base model",
+    "anime",
+    "civitai",
+    "imported",
+    "not-for-all-audiences",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5846797994,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

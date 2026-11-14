@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "PsychoLogic/mammoth-1-IQ3_M-GGUF",
+  "slug": "psychologic-mammoth-1-iq3_m-gguf",
+  "author": "PsychoLogic",
+  "url": "https://huggingface.co/PsychoLogic/mammoth-1-IQ3_M-GGUF",
+  "created_at": "2026-11-14T03:33:50.000Z",
+  "updated_at": "2026-11-14T04:02:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "decision-model",
+    "base_model:baselabs/mammoth-1",
+    "base_model:quantized:baselabs/mammoth-1",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 12580875488,
+  "storage_human": "12.6 GB",
+  "base_model": "baselabs/mammoth-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

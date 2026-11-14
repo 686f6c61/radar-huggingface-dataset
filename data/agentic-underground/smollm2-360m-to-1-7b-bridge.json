@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "agentic-underground/smollm2-360m-to-1.7b-bridge",
+  "slug": "agentic-underground-smollm2-360m-to-1-7b-bridge",
+  "author": "agentic-underground",
+  "url": "https://huggingface.co/agentic-underground/smollm2-360m-to-1.7b-bridge",
+  "created_at": "2026-11-14T10:41:41.000Z",
+  "updated_at": "2026-11-14T10:43:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "kv-cache",
+    "latentport",
+    "model-bridge",
+    "arxiv:2609.25053",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 378477824,
+  "storage_human": "378 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct, HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

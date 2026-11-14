@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "jenerallee78/Qwen3.8-27B-hf2q-Q4_K_M",
+  "slug": "jenerallee78-qwen3-8-27b-hf2q-q4_k_m",
+  "author": "jenerallee78",
+  "url": "https://huggingface.co/jenerallee78/Qwen3.8-27B-hf2q-Q4_K_M",
+  "created_at": "2026-11-14T08:01:02.000Z",
+  "updated_at": "2026-11-14T08:01:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "hf2q",
+    "q4_k_m",
+    "phantom-kv",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4325376,
+  "parameters_human": "4.3M",
+  "storage_bytes": 16828018784,
+  "storage_human": "16.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

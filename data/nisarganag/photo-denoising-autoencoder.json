@@ -5,7 +5,7 @@
   "author": "nisarganag",
   "url": "https://huggingface.co/nisarganag/photo-denoising-autoencoder",
   "created_at": "2026-11-13T16:26:03.000Z",
-  "updated_at": "2026-11-13T16:26:10.000Z",
+  "updated_at": "2026-11-13T17:14:18.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "pytorch",
+    "onnx",
     "safetensors",
     "denoising",
     "autoencoder",
@@ -26,10 +27,11 @@
   "trending_score": 0,
   "parameters": 1987203,
   "parameters_human": "2.0M",
-  "storage_bytes": 7950668,
-  "storage_human": "8 MB",
+  "storage_bytes": 15903991,
+  "storage_human": "16 MB",
   "base_model": null,
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "kietnehi1211/zac2026-soh12a7-lifemate-models",
+  "slug": "kietnehi1211-zac2026-soh12a7-lifemate-models",
+  "author": "kietnehi1211",
+  "url": "https://huggingface.co/kietnehi1211/zac2026-soh12a7-lifemate-models",
+  "created_at": "2026-11-14T10:31:19.000Z",
+  "updated_at": "2026-11-14T10:32:35.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "zalo-ai-challenge-2026",
+    "lifemate",
+    "lora",
+    "qwen3.5",
+    "whisper",
+    "vi",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3853787934,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

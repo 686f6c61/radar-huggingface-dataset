@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "AdrianAo/act_block_sorting_2026-11-12_15-29-20",
+  "slug": "adrianao-act_block_sorting_2026-11-12_15-29-20",
+  "author": "AdrianAo",
+  "url": "https://huggingface.co/AdrianAo/act_block_sorting_2026-11-12_15-29-20",
+  "created_at": "2026-11-12T07:30:24.000Z",
+  "updated_at": "2026-11-12T09:13:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "openbooth",
+    "MakerModsLab",
+    "makermods",
+    "robotics",
+    "act",
+    "dataset:AdrianAo/block_sorting",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 6195346360,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi Antonelli - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kimi_Antonelli",
+      "snippet": "Antonelli won the Formula One World Drivers' Championship in 2026 with Mercedes, becoming the youngest-ever World Drivers' …"
+    },
+    {
+      "title": "Kimi Antonelli's Incredible Charge From P19 To P1 - YouTube",
+      "url": "https://www.youtube.com/watch?v=FxOsiO6o4Wg",
+      "snippet": "Sep 7, 2026 · Kimi Antonelli produced a breathtaking performance, after starting the race from P19, to overtake the rest of the pack …"
+    }
+  ]
+}

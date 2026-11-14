@@ -5,7 +5,7 @@
   "author": "sensenova",
   "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview",
   "created_at": "2026-10-28T15:34:40.000Z",
-  "updated_at": "2026-11-02T15:43:56.000Z",
+  "updated_at": "2026-11-14T04:40:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,13 +30,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 290,
-  "downloads_30d": 4389,
-  "trending_score": 22,
+  "likes": 296,
+  "downloads_30d": 4521,
+  "trending_score": 28,
   "parameters": 9656250480,
   "parameters_human": "9.66B",
-  "storage_bytes": 38204212983,
-  "storage_human": "38.2 GB",
+  "storage_bytes": 57036529679,
+  "storage_human": "57.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

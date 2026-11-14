@@ -5,7 +5,7 @@
   "author": "nekomimi-llc",
   "url": "https://huggingface.co/nekomimi-llc/LFM2.5-24B-A2B-smallthink-lora",
   "created_at": "2026-11-12T22:00:29.000Z",
-  "updated_at": "2026-11-13T03:16:24.000Z",
+  "updated_at": "2026-11-13T03:35:59.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

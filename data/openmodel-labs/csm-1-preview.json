@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "OpenModel-Labs/CSM-1-Preview",
+  "slug": "openmodel-labs-csm-1-preview",
+  "author": "OpenModel-Labs",
+  "url": "https://huggingface.co/OpenModel-Labs/CSM-1-Preview",
+  "created_at": "2026-11-14T09:01:43.000Z",
+  "updated_at": "2026-11-14T09:13:44.000Z",
+  "license": "csm-fair-use-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "cybersecurity",
+    "cyber-safety",
+    "defensive-security",
+    "malware-analysis",
+    "incident-response",
+    "lora-merged",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:finetune:Qwen/Qwen3.5-27B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54733596107,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

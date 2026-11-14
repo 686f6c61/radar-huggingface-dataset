@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Yogi016/datapilot-v6-smoke-gpu",
+  "slug": "yogi016-datapilot-v6-smoke-gpu",
+  "author": "Yogi016",
+  "url": "https://huggingface.co/Yogi016/datapilot-v6-smoke-gpu",
+  "created_at": "2026-11-14T08:01:04.000Z",
+  "updated_at": "2026-11-14T08:02:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "arxiv:2402.03300",
+    "base_model:CohereLabs/tiny-aya-global",
+    "base_model:finetune:CohereLabs/tiny-aya-global",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 160303579,
+  "storage_human": "160 MB",
+  "base_model": "CohereLabs/tiny-aya-global",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

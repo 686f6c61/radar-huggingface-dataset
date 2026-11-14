@@ -5,7 +5,7 @@
   "author": "richardyoung",
   "url": "https://huggingface.co/richardyoung/Qwen3.8-27B-SOM-heretic-GGUF",
   "created_at": "2026-11-12T07:51:41.000Z",
-  "updated_at": "2026-11-12T08:06:51.000Z",
+  "updated_at": "2026-11-14T06:53:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,12 +32,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 112,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 45170465504,
-  "storage_human": "45.2 GB",
+  "storage_bytes": 60252973120,
+  "storage_human": "60.3 GB",
   "base_model": "richardyoung/Qwen3.8-27B-SOM-heretic",
   "formats": [
     "gguf"

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "goodfellovv/so101-diamond-act",
+  "slug": "goodfellovv-so101-diamond-act",
+  "author": "goodfellovv",
+  "url": "https://huggingface.co/goodfellovv/so101-diamond-act",
+  "created_at": "2026-11-14T07:22:28.000Z",
+  "updated_at": "2026-11-14T07:22:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "so101",
+    "dataset:goodfellovv/so101-diamond-110",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714784,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

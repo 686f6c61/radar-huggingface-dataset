@@ -4,17 +4,14 @@
   "slug": "gamamima-whisper-small-kikamba_lora_adapter_v6",
   "author": "gamamima",
   "url": "https://huggingface.co/gamamima/whisper-small-kikamba_lora_adapter_v6",
-  "created_at": "2026-11-09T09:35:08.000Z",
-  "updated_at": "2026-11-09T09:35:16.000Z",
+  "created_at": "2026-11-14T00:10:10.000Z",
+  "updated_at": "2026-11-14T00:10:10.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": "transformers",
   "languages": [],
   "tags": [
-    "transformers",
-    "arxiv:1910.09700",
-    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -28,8 +25,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-11-10T05:33:34.417Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

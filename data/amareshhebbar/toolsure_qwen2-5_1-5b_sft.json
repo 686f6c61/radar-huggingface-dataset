@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "AmareshHebbar/ToolSure_Qwen2.5_1.5B_SFT",
+  "slug": "amareshhebbar-toolsure_qwen2-5_1-5b_sft",
+  "author": "AmareshHebbar",
+  "url": "https://huggingface.co/AmareshHebbar/ToolSure_Qwen2.5_1.5B_SFT",
+  "created_at": "2026-11-14T08:24:42.000Z",
+  "updated_at": "2026-11-14T08:25:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "toolsure",
+    "function_calling",
+    "tool_use",
+    "qwen2.5",
+    "sft",
+    "conversational",
+    "en",
+    "dataset:AmareshHebbar/ToolSure_Calls_Qwen2.5_1.5B",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3394377768,
+  "storage_human": "3.4 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

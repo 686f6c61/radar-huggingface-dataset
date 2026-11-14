@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "moroz-ellmsha/sdai-bonsai-model-archives",
+  "slug": "moroz-ellmsha-sdai-bonsai-model-archives",
+  "author": "moroz-ellmsha",
+  "url": "https://huggingface.co/moroz-ellmsha/sdai-bonsai-model-archives",
+  "created_at": "2026-11-14T10:43:53.000Z",
+  "updated_at": "2026-11-14T10:59:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "sdai",
+    "bonsai",
+    "android",
+    "ios",
+    "text-to-image",
+    "base_model:prism-ml/bonsai-image-binary-4B-mlx-1bit",
+    "base_model:finetune:prism-ml/bonsai-image-binary-4B-mlx-1bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7300596857,
+  "storage_human": "7.3 GB",
+  "base_model": "prism-ml/bonsai-image-ternary-4B-mlx-2bit, prism-ml/bonsai-image-binary-4B-mlx-1bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

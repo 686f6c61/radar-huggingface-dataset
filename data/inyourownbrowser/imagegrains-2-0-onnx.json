@@ -5,7 +5,7 @@
   "author": "inYourOwnBrowser",
   "url": "https://huggingface.co/inYourOwnBrowser/imagegrains-2.0-onnx",
   "created_at": "2026-11-13T07:11:48.000Z",
-  "updated_at": "2026-11-13T07:13:09.000Z",
+  "updated_at": "2026-11-13T07:28:03.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 26489665,
-  "storage_human": "26 MB",
+  "storage_bytes": 643854232,
+  "storage_human": "644 MB",
   "base_model": null,
   "formats": [
     "onnx"

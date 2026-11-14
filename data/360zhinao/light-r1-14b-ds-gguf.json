@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "360ZhiNao/Light-R1-14B-DS-GGUF",
+  "slug": "360zhinao-light-r1-14b-ds-gguf",
+  "author": "360ZhiNao",
+  "url": "https://huggingface.co/360ZhiNao/Light-R1-14B-DS-GGUF",
+  "created_at": "2026-11-14T07:25:53.000Z",
+  "updated_at": "2026-11-14T07:25:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantization",
+    "text-generation",
+    "base_model:qihoo360/Light-R1-14B-DS",
+    "base_model:quantized:qihoo360/Light-R1-14B-DS",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 33207432576,
+  "storage_human": "33.2 GB",
+  "base_model": "qihoo360/Light-R1-14B-DS",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

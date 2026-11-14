@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "CardCauldronTCG/aya-expanse-8b-lexsi-aligntune",
+  "slug": "cardcauldrontcg-aya-expanse-8b-lexsi-aligntune",
+  "author": "CardCauldronTCG",
+  "url": "https://huggingface.co/CardCauldronTCG/aya-expanse-8b-lexsi-aligntune",
+  "created_at": "2026-11-12T13:32:12.000Z",
+  "updated_at": "2026-11-13T21:21:39.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "lora",
+    "alignment",
+    "hallucination-reduction",
+    "en",
+    "base_model:CohereLabs/aya-expanse-8b",
+    "base_model:adapter:CohereLabs/aya-expanse-8b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 8028033024,
+  "parameters_human": "8.03B",
+  "storage_bytes": 5056974496,
+  "storage_human": "5.1 GB",
+  "base_model": "CohereLabs/aya-expanse-8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

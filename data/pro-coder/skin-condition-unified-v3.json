@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Pro-Coder/skin-condition-unified-v3",
+  "slug": "pro-coder-skin-condition-unified-v3",
+  "author": "Pro-Coder",
+  "url": "https://huggingface.co/Pro-Coder/skin-condition-unified-v3",
+  "created_at": "2026-11-14T08:39:14.000Z",
+  "updated_at": "2026-11-14T08:39:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "convnext",
+    "image-classification",
+    "generated_from_trainer",
+    "base_model:facebook/convnext-base-224-22k",
+    "base_model:finetune:facebook/convnext-base-224-22k",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 87592089,
+  "parameters_human": "87.6M",
+  "storage_bytes": 350414877,
+  "storage_human": "350 MB",
+  "base_model": "facebook/convnext-base-224-22k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "llaosdigital",
   "url": "https://huggingface.co/llaosdigital/psiuu",
   "created_at": "2026-10-31T14:29:10.000Z",
-  "updated_at": "2026-11-09T03:04:17.000Z",
+  "updated_at": "2026-11-14T04:49:48.000Z",
   "license": "apache-2.0-and-cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -27,7 +27,7 @@
   "trending_score": 0,
   "parameters": 627052166,
   "parameters_human": "627.1M",
-  "storage_bytes": 5252909701,
+  "storage_bytes": 5330255728,
   "storage_human": "5.3 GB",
   "base_model": "openai/whisper-medium",
   "formats": [

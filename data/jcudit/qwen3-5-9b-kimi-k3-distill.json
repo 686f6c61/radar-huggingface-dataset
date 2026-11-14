@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "jcudit/Qwen3.5-9B-Kimi-K3-Distill",
+  "slug": "jcudit-qwen3-5-9b-kimi-k3-distill",
+  "author": "jcudit",
+  "url": "https://huggingface.co/jcudit/Qwen3.5-9B-Kimi-K3-Distill",
+  "created_at": "2026-11-12T07:18:12.000Z",
+  "updated_at": "2026-11-13T07:00:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "ml-intern",
+    "distillation",
+    "kimi-k3",
+    "sft",
+    "coding",
+    "agent",
+    "dataset:jcudit/kimi-k3-distill-mix-v1",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 37659445869,
+  "storage_human": "37.7 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poki - Darmowe Gry Online - Graj Teraz!",
+      "url": "https://poki.com/pl?msockid=30f1bb66360967ec1095a37737c766bd",
+      "snippet": "Odkryj świat darmowych gier online z Poki! Graj od razu, bez pobierania, i ciesz się grami kompatybilnymi ze wszystkimi urządzeniami."
+    }
+  ]
+}

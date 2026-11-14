@@ -5,7 +5,7 @@
   "author": "einarolafsson",
   "url": "https://huggingface.co/einarolafsson/cross-channel-cell-from-hoechst-cpsam",
   "created_at": "2026-09-18T18:58:36.000Z",
-  "updated_at": "2026-09-18T20:33:22.000Z",
+  "updated_at": "2026-11-12T17:19:30.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",

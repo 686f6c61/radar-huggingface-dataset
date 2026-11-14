@@ -5,7 +5,7 @@
   "author": "tracinginsights",
   "url": "https://huggingface.co/tracinginsights/tif1-LFM3-1.7B-GGUF",
   "created_at": "2026-11-10T02:46:35.000Z",
-  "updated_at": "2026-11-10T11:20:58.000Z",
+  "updated_at": "2026-11-13T13:31:03.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -34,12 +34,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 260,
+  "downloads_30d": 268,
   "trending_score": 0,
   "parameters": 1728801600,
   "parameters_human": "1.73B",
-  "storage_bytes": 5746748388,
-  "storage_human": "5.7 GB",
+  "storage_bytes": 6885959492,
+  "storage_human": "6.9 GB",
   "base_model": "LiquidAI/LFM3-1.7B",
   "formats": [
     "gguf"

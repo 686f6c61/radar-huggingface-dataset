@@ -5,7 +5,7 @@
   "author": "ewhacc",
   "url": "https://huggingface.co/ewhacc/DeepSeek-V4.1-Flash-1017-Tandem-VQ2",
   "created_at": "2026-11-05T10:12:06.000Z",
-  "updated_at": "2026-11-09T16:42:23.000Z",
+  "updated_at": "2026-11-13T16:22:22.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "fp8",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 2,
   "downloads_30d": 191,
   "trending_score": 0,
   "parameters": 127460775394,

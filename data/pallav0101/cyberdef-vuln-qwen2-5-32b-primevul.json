@@ -5,7 +5,7 @@
   "author": "pallav0101",
   "url": "https://huggingface.co/pallav0101/cyberdef-vuln-qwen2.5-32b-primevul",
   "created_at": "2026-11-13T09:18:32.000Z",
-  "updated_at": "2026-11-13T09:22:48.000Z",
+  "updated_at": "2026-11-14T04:22:51.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

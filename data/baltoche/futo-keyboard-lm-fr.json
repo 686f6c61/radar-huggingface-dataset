@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "baltoche/futo-keyboard-lm-fr",
+  "slug": "baltoche-futo-keyboard-lm-fr",
+  "author": "baltoche",
+  "url": "https://huggingface.co/baltoche/futo-keyboard-lm-fr",
+  "created_at": "2026-11-14T09:11:15.000Z",
+  "updated_at": "2026-11-14T09:11:48.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "gguf",
+    "futo-keyboard",
+    "keyboard",
+    "text-generation",
+    "french",
+    "autocorrect",
+    "next-word-prediction",
+    "fr",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36348416,
+  "parameters_human": "36.3M",
+  "storage_bytes": 167850880,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

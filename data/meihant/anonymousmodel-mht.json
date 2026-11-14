@@ -5,7 +5,7 @@
   "author": "meihant",
   "url": "https://huggingface.co/meihant/AnonymousModel-mht",
   "created_at": "2026-10-28T13:15:02.000Z",
-  "updated_at": "2026-11-12T10:07:41.000Z",
+  "updated_at": "2026-11-14T06:36:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1064606496128,
-  "storage_human": "1064.6 GB",
+  "storage_bytes": 1065144755472,
+  "storage_human": "1065.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

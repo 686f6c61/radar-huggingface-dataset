@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Edisoneh/InfiniSplat-v2",
+  "slug": "edisoneh-infinisplat-v2",
+  "author": "Edisoneh",
+  "url": "https://huggingface.co/Edisoneh/InfiniSplat-v2",
+  "created_at": "2026-10-11T08:50:52.000Z",
+  "updated_at": "2026-11-14T04:36:58.000Z",
+  "license": "other",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "image-to-3d",
+    "arxiv:2610.20341",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 1602,
+  "trending_score": 0,
+  "parameters": 1649014290,
+  "parameters_human": "1.65B",
+  "storage_bytes": 6687433888,
+  "storage_human": "6.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

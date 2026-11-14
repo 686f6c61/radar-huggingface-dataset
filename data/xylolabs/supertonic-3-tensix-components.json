@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Xylolabs/supertonic-3-Tensix-Components",
+  "slug": "xylolabs-supertonic-3-tensix-components",
+  "author": "Xylolabs",
+  "url": "https://huggingface.co/Xylolabs/supertonic-3-Tensix-Components",
+  "created_at": "2026-11-14T09:47:59.000Z",
+  "updated_at": "2026-11-14T09:48:19.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pytorch",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "pytorch",
+    "tenstorrent",
+    "tensix",
+    "text-to-speech",
+    "safetensors",
+    "bfloat8_b",
+    "bfloat16",
+    "model-components",
+    "ko",
+    "base_model:Supertone/supertonic-3",
+    "base_model:finetune:Supertone/supertonic-3",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 690479952,
+  "storage_human": "690 MB",
+  "base_model": "Supertone/supertonic-3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

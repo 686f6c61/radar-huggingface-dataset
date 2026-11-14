@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "JSALT2026-Conv-AI-Simulator/f-actor-mimi-behavior-sd",
+  "slug": "jsalt2026-conv-ai-simulator-f-actor-mimi-behavior-sd",
+  "author": "JSALT2026-Conv-AI-Simulator",
+  "url": "https://huggingface.co/JSALT2026-Conv-AI-Simulator/f-actor-mimi-behavior-sd",
+  "created_at": "2026-11-13T12:06:27.000Z",
+  "updated_at": "2026-11-13T12:47:35.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "en",
+    "arxiv:2601.11329",
+    "arxiv:2609.29418",
+    "base_model:meta-llama/Llama-3.2-1B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-1B-Instruct",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 1888073731,
+  "parameters_human": "1.89B",
+  "storage_bytes": 3793390922,
+  "storage_human": "3.8 GB",
+  "base_model": "meta-llama/Llama-3.2-1B-Instruct, sesame/csm-1b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

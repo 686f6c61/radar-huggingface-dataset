@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "oxide-lab/TRELLIS.2-4B-GGUF",
+  "slug": "oxide-lab-trellis-2-4b-gguf",
+  "author": "oxide-lab",
+  "url": "https://huggingface.co/oxide-lab/TRELLIS.2-4B-GGUF",
+  "created_at": "2026-11-14T07:24:03.000Z",
+  "updated_at": "2026-11-14T07:52:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": "lux3d",
+  "languages": [],
+  "tags": [
+    "lux3d",
+    "gguf",
+    "trellis2",
+    "mesh",
+    "image-to-3d",
+    "base_model:microsoft/TRELLIS.2-4B",
+    "base_model:quantized:microsoft/TRELLIS.2-4B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7786541462,
+  "parameters_human": "7.79B",
+  "storage_bytes": 46449821664,
+  "storage_human": "46.4 GB",
+  "base_model": "microsoft/TRELLIS.2-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "MuzammilAhmad/banking77-qwen2.5-0.5b-lora",
+  "slug": "muzammilahmad-banking77-qwen2-5-0-5b-lora",
+  "author": "MuzammilAhmad",
+  "url": "https://huggingface.co/MuzammilAhmad/banking77-qwen2.5-0.5b-lora",
+  "created_at": "2026-11-14T07:08:53.000Z",
+  "updated_at": "2026-11-14T07:09:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "intent-classification",
+    "banking",
+    "qwen2.5",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:PolyAI/banking77",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46659270,
+  "storage_human": "47 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Intent classification",
+      "dataset": "Banking77",
+      "metric": "Accuracy (Q4_K_M via Ollama, strict JSON parsing)",
+      "value": 0.907
+    }
+  ],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/Ministral-3-3B-Instruct-2512",
   "created_at": "2026-06-23T22:40:14.000Z",
-  "updated_at": "2026-11-04T12:27:08.000Z",
+  "updated_at": "2026-11-13T21:43:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

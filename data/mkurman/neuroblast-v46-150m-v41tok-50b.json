@@ -5,7 +5,7 @@
   "author": "mkurman",
   "url": "https://huggingface.co/mkurman/neuroblast-v46-150m-v41tok-50b",
   "created_at": "2026-11-11T01:18:56.000Z",
-  "updated_at": "2026-11-13T03:09:03.000Z",
+  "updated_at": "2026-11-14T07:09:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,13 +38,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 1,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 100657261544,
-  "storage_human": "100.7 GB",
+  "storage_bytes": 158792284536,
+  "storage_human": "158.8 GB",
   "base_model": "mkurman/neuroblast-v46-150m-v41tok",
   "formats": [
     "safetensors"

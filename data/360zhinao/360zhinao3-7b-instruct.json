@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "360ZhiNao/360Zhinao3-7B-Instruct",
+  "slug": "360zhinao-360zhinao3-7b-instruct",
+  "author": "360ZhiNao",
+  "url": "https://huggingface.co/360ZhiNao/360Zhinao3-7B-Instruct",
+  "created_at": "2026-11-14T07:25:18.000Z",
+  "updated_at": "2026-11-14T07:25:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "zhinao",
+    "feature-extraction",
+    "qihoo360",
+    "奇虎360",
+    "360Zhinao",
+    "pretrain",
+    "custom_code",
+    "zh",
+    "en",
+    "arxiv:2405.13386",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7774605312,
+  "parameters_human": "7.77B",
+  "storage_bytes": 15549240640,
+  "storage_human": "15.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

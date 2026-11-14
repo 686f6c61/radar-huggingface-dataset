@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Xylolabs/pi05-SigLIP-Block0-Tensix-Components",
+  "slug": "xylolabs-pi05-siglip-block0-tensix-components",
+  "author": "Xylolabs",
+  "url": "https://huggingface.co/Xylolabs/pi05-SigLIP-Block0-Tensix-Components",
+  "created_at": "2026-11-14T08:01:16.000Z",
+  "updated_at": "2026-11-14T08:01:27.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tenstorrent",
+    "tensix",
+    "robotics",
+    "siglip",
+    "safetensors",
+    "float32",
+    "model-components",
+    "en",
+    "arxiv:2504.16054",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60959008,
+  "storage_human": "61 MB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

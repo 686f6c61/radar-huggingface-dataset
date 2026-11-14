@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/Polaris-4B-Preview",
   "created_at": "2026-07-06T07:49:21.000Z",
-  "updated_at": "2026-11-04T12:27:42.000Z",
+  "updated_at": "2026-11-13T21:43:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

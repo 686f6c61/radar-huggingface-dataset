@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "epochzero-0/casehold-lora",
+  "slug": "epochzero-0-casehold-lora",
+  "author": "epochzero-0",
+  "url": "https://huggingface.co/epochzero-0/casehold-lora",
+  "created_at": "2026-11-14T04:21:52.000Z",
+  "updated_at": "2026-11-14T04:23:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "multiple-choice",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lora",
+    "legal",
+    "multiple-choice",
+    "casehold",
+    "en",
+    "dataset:coastalcph/lex_glue",
+    "arxiv:2104.08671",
+    "arxiv:2110.00976",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8670408,
+  "storage_human": "9 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multiple choice QA",
+      "dataset": "CaseHOLD (LexGLUE)",
+      "metric": "Accuracy",
+      "value": 85.92
+    }
+  ],
+  "sources": []
+}

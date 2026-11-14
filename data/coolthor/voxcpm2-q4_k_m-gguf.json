@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "coolthor/VoxCPM2-Q4_K_M-GGUF",
+  "slug": "coolthor-voxcpm2-q4_k_m-gguf",
+  "author": "coolthor",
+  "url": "https://huggingface.co/coolthor/VoxCPM2-Q4_K_M-GGUF",
+  "created_at": "2026-10-19T06:17:48.000Z",
+  "updated_at": "2026-11-14T04:29:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "gguf",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-to-speech",
+    "tts",
+    "voice-cloning",
+    "llama.cpp",
+    "voxcpm",
+    "q4_k_s",
+    "mixed-precision",
+    "zh",
+    "en",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:quantized:openbmb/VoxCPM2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 521,
+  "trending_score": 0,
+  "parameters": 1622165632,
+  "parameters_human": "1.62B",
+  "storage_bytes": 4549919232,
+  "storage_human": "4.5 GB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

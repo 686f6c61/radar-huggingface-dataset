@@ -5,7 +5,7 @@
   "author": "andrevp",
   "url": "https://huggingface.co/andrevp/Qwen3.8-27B-EXL3-3.5bpw-heretic",
   "created_at": "2026-09-25T00:57:38.000Z",
-  "updated_at": "2026-09-25T01:15:13.000Z",
+  "updated_at": "2026-11-14T02:16:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
   "trending_score": 0,
   "parameters": 7669052656,
   "parameters_human": "7.67B",
-  "storage_bytes": 15358726029,
+  "storage_bytes": 15360058982,
   "storage_human": "15.4 GB",
   "base_model": "Mia-AiLab/Qwen3.8-27B-EXL3-3.5bpw",
   "formats": [

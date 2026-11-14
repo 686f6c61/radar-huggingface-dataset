@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "TUaxhuiax/cascade-winter-2027-ranker-17a7ff63",
+  "slug": "tuaxhuiax-cascade-winter-2027-ranker-17a7ff63",
+  "author": "TUaxhuiax",
+  "url": "https://huggingface.co/TUaxhuiax/cascade-winter-2027-ranker-17a7ff63",
+  "created_at": "2026-11-14T10:39:39.000Z",
+  "updated_at": "2026-11-14T10:53:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cascade-trail-ranker",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6157,
+  "storage_human": "6157 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

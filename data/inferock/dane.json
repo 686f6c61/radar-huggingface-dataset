@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Inferock/DANE",
+  "slug": "inferock-dane",
+  "author": "Inferock",
+  "url": "https://huggingface.co/Inferock/DANE",
+  "created_at": "2026-11-13T22:17:45.000Z",
+  "updated_at": "2026-11-14T02:06:41.000Z",
+  "license": "inferock-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "hybrid-model",
+    "frontier",
+    "inferock",
+    "dane",
+    "chat",
+    "conversational",
+    "api",
+    "text-generation",
+    "hle",
+    "humanitys-last-exam",
+    "en",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "Humanity's Last Exam (Diamond)",
+      "metric": "HLE Diamond (with tools; graded as the Artificial Analysis board grades)",
+      "value": 79.4
+    }
+  ],
+  "sources": []
+}

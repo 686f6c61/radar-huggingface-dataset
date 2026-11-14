@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "9mark9/finbert-minilm-sentiment",
+  "slug": "9mark9-finbert-minilm-sentiment",
+  "author": "9mark9",
+  "url": "https://huggingface.co/9mark9/finbert-minilm-sentiment",
+  "created_at": "2026-06-24T01:58:58.000Z",
+  "updated_at": "2026-11-14T11:02:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "financial-sentiment",
+    "finance",
+    "sentiment-analysis",
+    "minilm",
+    "en",
+    "dataset:takala/financial_phrasebank",
+    "dataset:zeroshot/twitter-financial-news-sentiment",
+    "dataset:Jean-Baptiste/financial_news_sentiment",
+    "base_model:microsoft/MiniLM-L12-H384-uncased",
+    "base_model:quantized:microsoft/MiniLM-L12-H384-uncased",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 469,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 464316301,
+  "storage_human": "464 MB",
+  "base_model": "microsoft/MiniLM-L12-H384-uncased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Financial Sentiment Classification",
+      "dataset": "Financial PhraseBank (Sentences_AllAgree)",
+      "metric": "Test Accuracy",
+      "value": 0.9794
+    },
+    {
+      "task": "Financial Sentiment Classification",
+      "dataset": "Financial PhraseBank (Sentences_AllAgree)",
+      "metric": "Test Macro-F1",
+      "value": 0.9643
+    },
+    {
+      "task": "Financial Sentiment Classification",
+      "dataset": "Twitter Financial News Sentiment",
+      "metric": "Validation Accuracy",
+      "value": 0.8643
+    },
+    {
+      "task": "Financial Sentiment Classification",
+      "dataset": "Twitter Financial News Sentiment",
+      "metric": "Validation Macro-F1",
+      "value": 0.83
+    },
+    {
+      "task": "Financial Sentiment Classification",
+      "dataset": "SEntFiN headlines (unanimous, test split)",
+      "metric": "Test Accuracy",
+      "value": 0.7599
+    },
+    {
+      "task": "Financial Sentiment Classification",
+      "dataset": "SEntFiN headlines (unanimous, test split)",
+      "metric": "Test Macro-F1",
+      "value": 0.7627
+    }
+  ],
+  "sources": []
+}

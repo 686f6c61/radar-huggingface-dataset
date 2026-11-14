@@ -5,7 +5,7 @@
   "author": "einarolafsson",
   "url": "https://huggingface.co/einarolafsson/toxoplasma-from-cellmask-cpsam",
   "created_at": "2026-09-18T13:26:42.000Z",
-  "updated_at": "2026-09-18T20:33:23.000Z",
+  "updated_at": "2026-11-11T16:34:42.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",

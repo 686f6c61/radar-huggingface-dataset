@@ -5,7 +5,7 @@
   "author": "krummholz-ai",
   "url": "https://huggingface.co/krummholz-ai/core-35b-a3b-v6.3-GGUF",
   "created_at": "2026-11-04T15:51:14.000Z",
-  "updated_at": "2026-11-09T15:13:20.000Z",
+  "updated_at": "2026-11-13T15:50:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 46795172000,
-  "storage_human": "46.8 GB",
+  "storage_bytes": 92691061024,
+  "storage_human": "92.7 GB",
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "gguf"

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "AlexWortega/Qwen3.8-27B-Humanlike-Chat-2.0-NVFP4",
+  "slug": "alexwortega-qwen3-8-27b-humanlike-chat-2-0-nvfp4",
+  "author": "AlexWortega",
+  "url": "https://huggingface.co/AlexWortega/Qwen3.8-27B-Humanlike-Chat-2.0-NVFP4",
+  "created_at": "2026-11-12T23:39:08.000Z",
+  "updated_at": "2026-11-13T01:12:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "sglang",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "sglang",
+    "safetensors",
+    "qwen3_5",
+    "nvfp4",
+    "compressed-tensors",
+    "conversational",
+    "roleplay",
+    "text-generation",
+    "en",
+    "ru",
+    "base_model:LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-2.0",
+    "base_model:quantized:LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-2.0",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 53,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 46145000174,
+  "storage_human": "46.1 GB",
+  "base_model": "LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-2.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

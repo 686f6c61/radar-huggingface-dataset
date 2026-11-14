@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "AfriSpeech/kolokwa-tts-base",
+  "slug": "afrispeech-kolokwa-tts-base",
+  "author": "AfriSpeech",
+  "url": "https://huggingface.co/AfriSpeech/kolokwa-tts-base",
+  "created_at": "2026-11-14T11:08:10.000Z",
+  "updated_at": "2026-11-14T11:09:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pocket-tts",
+  "languages": [
+    "lir",
+    "en"
+  ],
+  "tags": [
+    "pocket-tts",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "kolokwa",
+    "liberian-english",
+    "audio",
+    "pytorch",
+    "lir",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 336068290,
+  "parameters_human": "336.1M",
+  "storage_bytes": 5225982723,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

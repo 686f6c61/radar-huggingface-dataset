@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "marcosremar2/lfm3-1.7b-ptbr-roleplay",
+  "slug": "marcosremar2-lfm3-1-7b-ptbr-roleplay",
+  "author": "marcosremar2",
+  "url": "https://huggingface.co/marcosremar2/lfm3-1.7b-ptbr-roleplay",
+  "created_at": "2026-11-11T20:28:06.000Z",
+  "updated_at": "2026-11-11T22:52:28.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "roleplay",
+    "brazilian-portuguese",
+    "chat",
+    "text-generation",
+    "pt",
+    "base_model:LiquidAI/LFM3-1.7B",
+    "base_model:adapter:LiquidAI/LFM3-1.7B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": 1728801600,
+  "parameters_human": "1.73B",
+  "storage_bytes": 1300438815,
+  "storage_human": "1.3 GB",
+  "base_model": "LiquidAI/LFM3-1.7B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

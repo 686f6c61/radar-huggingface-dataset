@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Yanzino6/brasa-12m",
+  "slug": "yanzino6-brasa-12m",
+  "author": "Yanzino6",
+  "url": "https://huggingface.co/Yanzino6/brasa-12m",
+  "created_at": "2026-11-13T13:49:03.000Z",
+  "updated_at": "2026-11-13T13:54:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "brasa-gpt",
+    "from-scratch",
+    "gpt",
+    "small-language-model",
+    "question-answering",
+    "retrieval-augmented",
+    "retrieval-augmented-generation",
+    "webassembly",
+    "text-generation",
+    "pt",
+    "en",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 12194688,
+  "parameters_human": "12.2M",
+  "storage_bytes": 85590124,
+  "storage_human": "86 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Question answering (open-book)",
+      "dataset": "Brasa held-out questions, final split (read once)",
+      "metric": "exact_match (%, float32, open-book, retrieved facts + ranking prior)",
+      "value": 48.7
+    },
+    {
+      "task": "Question answering (open-book)",
+      "dataset": "Brasa held-out questions, final split (read once)",
+      "metric": "f1 (%, float32, open-book, retrieved facts + ranking prior)",
+      "value": 62.9
+    }
+  ],
+  "sources": []
+}

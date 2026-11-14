@@ -5,7 +5,7 @@
   "author": "mlnha",
   "url": "https://huggingface.co/mlnha/gr00t-n15-pnp108-rabc_robometer_30k",
   "created_at": "2026-11-13T13:07:42.000Z",
-  "updated_at": "2026-11-13T13:08:51.000Z",
+  "updated_at": "2026-11-13T20:09:43.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 37931006239,
-  "storage_human": "37.9 GB",
+  "storage_bytes": 45517192562,
+  "storage_human": "45.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

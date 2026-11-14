@@ -5,7 +5,7 @@
   "author": "mlboydaisuke",
   "url": "https://huggingface.co/mlboydaisuke/Qwen3-0.6B-Code-Expert-LiteRT",
   "created_at": "2026-09-05T06:36:06.000Z",
-  "updated_at": "2026-11-04T22:59:17.000Z",
+  "updated_at": "2026-11-13T20:35:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

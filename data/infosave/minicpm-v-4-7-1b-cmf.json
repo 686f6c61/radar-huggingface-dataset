@@ -5,7 +5,7 @@
   "author": "infosave",
   "url": "https://huggingface.co/infosave/MiniCPM-V-4.7-1B-cmf",
   "created_at": "2026-10-14T19:07:30.000Z",
-  "updated_at": "2026-10-14T19:08:14.000Z",
+  "updated_at": "2026-11-13T06:20:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 332,
+  "downloads_30d": 318,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

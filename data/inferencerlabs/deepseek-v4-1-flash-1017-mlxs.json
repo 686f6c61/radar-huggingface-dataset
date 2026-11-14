@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "inferencerlabs/DeepSeek-V4.1-Flash-1017-MLXs",
+  "slug": "inferencerlabs-deepseek-v4-1-flash-1017-mlxs",
+  "author": "inferencerlabs",
+  "url": "https://huggingface.co/inferencerlabs/DeepSeek-V4.1-Flash-1017-MLXs",
+  "created_at": "2026-10-17T14:36:27.000Z",
+  "updated_at": "2026-11-14T06:34:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "deepseek_v41",
+    "quantized",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1358,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 502746440598,
+  "storage_human": "502.7 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

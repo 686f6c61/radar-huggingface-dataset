@@ -5,7 +5,7 @@
   "author": "okba-bouziane",
   "url": "https://huggingface.co/okba-bouziane/invoicedesk-donut",
   "created_at": "2026-11-13T20:02:59.000Z",
-  "updated_at": "2026-11-13T20:04:16.000Z",
+  "updated_at": "2026-11-14T01:26:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",
@@ -15,6 +15,7 @@
     "en"
   ],
   "tags": [
+    "onnx",
     "safetensors",
     "vision-encoder-decoder",
     "donut",
@@ -26,7 +27,7 @@
     "en",
     "dataset:naver-clova-ix/cord-v2",
     "base_model:naver-clova-ix/donut-base",
-    "base_model:finetune:naver-clova-ix/donut-base",
+    "base_model:quantized:naver-clova-ix/donut-base",
     "license:mit",
     "region:us"
   ],
@@ -35,10 +36,11 @@
   "trending_score": 0,
   "parameters": 202149304,
   "parameters_human": "202.1M",
-  "storage_bytes": 810756109,
-  "storage_human": "811 MB",
+  "storage_bytes": 1088867920,
+  "storage_human": "1.1 GB",
   "base_model": "naver-clova-ix/donut-base",
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

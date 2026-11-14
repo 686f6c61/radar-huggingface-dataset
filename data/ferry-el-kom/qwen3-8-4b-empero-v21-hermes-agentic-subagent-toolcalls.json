@@ -5,7 +5,7 @@
   "author": "ferry-el-kom",
   "url": "https://huggingface.co/ferry-el-kom/qwen3.8-4b-empero-v21-Hermes-agentic-subagent-toolcalls",
   "created_at": "2026-11-12T12:55:05.000Z",
-  "updated_at": "2026-11-12T18:08:21.000Z",
+  "updated_at": "2026-11-13T23:48:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 130,
   "trending_score": 0,
   "parameters": 4326350848,

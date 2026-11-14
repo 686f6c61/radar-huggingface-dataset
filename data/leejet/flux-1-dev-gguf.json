@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "leejet/FLUX.1-dev-gguf",
+  "slug": "leejet-flux-1-dev-gguf",
+  "author": "leejet",
+  "url": "https://huggingface.co/leejet/FLUX.1-dev-gguf",
+  "created_at": "2024-08-23T16:09:42.000Z",
+  "updated_at": "2026-11-14T11:40:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "sd.cpp",
+    "stable-diffusion.cpp",
+    "flux",
+    "en",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:quantized:black-forest-labs/FLUX.1-dev",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 4971,
+  "trending_score": 0,
+  "parameters": 11901408320,
+  "parameters_human": "11.90B",
+  "storage_bytes": 71254028960,
+  "storage_human": "71.3 GB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

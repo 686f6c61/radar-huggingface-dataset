@@ -5,7 +5,7 @@
   "author": "kashif",
   "url": "https://huggingface.co/kashif/Qwen3-4B-Gated-LoRA-MTP",
   "created_at": "2026-11-12T09:59:34.000Z",
-  "updated_at": "2026-11-12T09:59:45.000Z",
+  "updated_at": "2026-11-13T12:50:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 275933630,
-  "storage_human": "276 MB",
+  "storage_bytes": 805119998,
+  "storage_human": "805 MB",
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"

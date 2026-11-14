@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "dew6/stripe1flash-mountain",
+  "slug": "dew6-stripe1flash-mountain",
+  "author": "dew6",
+  "url": "https://huggingface.co/dew6/stripe1flash-mountain",
+  "created_at": "2026-11-14T07:49:43.000Z",
+  "updated_at": "2026-11-14T07:55:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "stripe1flash-mountain",
+    "character-level",
+    "tiny-model",
+    "educational",
+    "from-scratch",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 982,
+  "parameters_human": "982",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

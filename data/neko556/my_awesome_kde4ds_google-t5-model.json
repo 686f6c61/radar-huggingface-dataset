@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "neko556/my_awesome_kde4ds_google-t5-model",
+  "slug": "neko556-my_awesome_kde4ds_google-t5-model",
+  "author": "neko556",
+  "url": "https://huggingface.co/neko556/my_awesome_kde4ds_google-t5-model",
+  "created_at": "2026-11-14T09:34:44.000Z",
+  "updated_at": "2026-11-14T09:34:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:google-t5/t5-small",
+    "base_model:finetune:google-t5/t5-small",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 242858092,
+  "storage_human": "243 MB",
+  "base_model": "google-t5/t5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://gb.linkedin.com/",
+      "snippet": "Welcome to your professional community Continue with Google Sign in with email By clicking Continue to join or sign in, you agree to …"
+    }
+  ]
+}

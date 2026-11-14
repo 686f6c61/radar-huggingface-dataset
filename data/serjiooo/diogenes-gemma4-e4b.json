@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Serjiooo/diogenes-gemma4-e4b",
+  "slug": "serjiooo-diogenes-gemma4-e4b",
+  "author": "Serjiooo",
+  "url": "https://huggingface.co/Serjiooo/diogenes-gemma4-e4b",
+  "created_at": "2026-11-10T16:10:48.000Z",
+  "updated_at": "2026-11-13T15:56:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "persona",
+    "roleplay",
+    "diogenes",
+    "fine-tune",
+    "unsloth",
+    "sft",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-4-E4B-it",
+    "base_model:finetune:unsloth/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 16025640571,
+  "storage_human": "16.0 GB",
+  "base_model": "unsloth/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

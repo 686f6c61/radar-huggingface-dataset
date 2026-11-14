@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "san-digital/Qwen3.8-Flash-Next-Q4_K-Tokspur-GGUF",
+  "slug": "san-digital-qwen3-8-flash-next-q4_k-tokspur-gguf",
+  "author": "san-digital",
+  "url": "https://huggingface.co/san-digital/Qwen3.8-Flash-Next-Q4_K-Tokspur-GGUF",
+  "created_at": "2026-11-13T12:26:32.000Z",
+  "updated_at": "2026-11-14T07:22:35.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "apple-silicon",
+    "metal",
+    "tokspur",
+    "qwen3.8-flash-next",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 89,
+  "trending_score": 0,
+  "parameters": 51835944960,
+  "parameters_human": "51.84B",
+  "storage_bytes": 118162786656,
+  "storage_human": "118.2 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SANOFI Cours Action SAN, Cotation Bourse Euronext Paris",
+      "url": "https://www.boursorama.com/cours/1rPSAN/",
+      "snippet": "Le cours de l'action SANOFI SAN en temps réel sur Boursorama : historique de la cotation sur Euronext Paris, graphique, actualités, …"
+    }
+  ]
+}

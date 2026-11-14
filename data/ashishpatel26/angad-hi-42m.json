@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ashishpatel26/angad-hi-42m",
+  "slug": "ashishpatel26-angad-hi-42m",
+  "author": "ashishpatel26",
+  "url": "https://huggingface.co/ashishpatel26/angad-hi-42m",
+  "created_at": "2026-11-14T08:22:32.000Z",
+  "updated_at": "2026-11-14T08:23:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "hindi",
+    "devanagari",
+    "from-scratch",
+    "instruction-tuned",
+    "sft",
+    "ramayana-series",
+    "hi",
+    "dataset:mashriram/AI4Bharat-Indic-Languages-and-Cultures",
+    "base_model:ashishpatel26/hanuman-hi-42m",
+    "base_model:finetune:ashishpatel26/hanuman-hi-42m",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 42082816,
+  "parameters_human": "42.1M",
+  "storage_bytes": 169430360,
+  "storage_human": "169 MB",
+  "base_model": "ashishpatel26/hanuman-hi-42m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Hindi instruction pairs (held-out 1%)",
+      "metric": "Answer perplexity",
+      "value": 16.9
+    }
+  ],
+  "sources": []
+}

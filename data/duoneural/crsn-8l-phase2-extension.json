@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/CRSN-8L-Phase2-Extension",
+  "slug": "duoneural-crsn-8l-phase2-extension",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/CRSN-8L-Phase2-Extension",
+  "created_at": "2026-11-14T09:32:45.000Z",
+  "updated_at": "2026-11-14T09:32:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neurodynamics",
+    "non-euclidean",
+    "clifford-algebra",
+    "physical-ai",
+    "edge-ai",
+    "symplectic",
+    "harmonic-oscillators",
+    "duoneural",
+    "en",
+    "dataset:DuoNeural/Golden-Ratio-Pretraining-Diet",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38206901,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Language Modeling & Emergent Reasoning",
+      "dataset": "DuoNeural Golden Ratio Validation",
+      "metric": "Validation Loss",
+      "value": 2.6508
+    },
+    {
+      "task": "Language Modeling & Emergent Reasoning",
+      "dataset": "DuoNeural Golden Ratio Validation",
+      "metric": "Perplexity",
+      "value": 14.16
+    }
+  ],
+  "sources": []
+}

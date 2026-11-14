@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "foxAIengineer/Qwen3-Coder-Next-colibri-i4-gs64",
+  "slug": "foxaiengineer-qwen3-coder-next-colibri-i4-gs64",
+  "author": "foxAIengineer",
+  "url": "https://huggingface.co/foxAIengineer/Qwen3-Coder-Next-colibri-i4-gs64",
+  "created_at": "2026-11-12T04:19:33.000Z",
+  "updated_at": "2026-11-13T05:38:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "colibri",
+  "languages": [],
+  "tags": [
+    "colibri",
+    "qwen3_next",
+    "qwen3-coder-next",
+    "moe",
+    "int4",
+    "license:apache-2.0",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48222019072,
+  "storage_human": "48.2 GB",
+  "base_model": "Qwen/Qwen3-Coder-Next-80b-FP8",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "20 Instagram Post Ideas to Spice up Your Brand | Sprout Social",
+      "url": "https://sproutsocial.com/insights/instagram-post-ideas/",
+      "snippet": "Jun 10, 2025 · In this post we provide 20 Instagram post ideas to help you get your creative juices flowing and inspire your next post, …"
+    }
+  ]
+}

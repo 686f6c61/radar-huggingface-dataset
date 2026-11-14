@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Garnet-Owl/token-compression-log-reader",
+  "slug": "garnet-owl-token-compression-log-reader",
+  "author": "Garnet-Owl",
+  "url": "https://huggingface.co/Garnet-Owl/token-compression-log-reader",
+  "created_at": "2026-11-12T20:40:12.000Z",
+  "updated_at": "2026-11-12T21:54:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3",
+    "log-analysis",
+    "prompt-compression",
+    "token-compression",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 139512976,
+  "storage_human": "140 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

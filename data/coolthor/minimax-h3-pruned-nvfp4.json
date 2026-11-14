@@ -5,7 +5,7 @@
   "author": "coolthor",
   "url": "https://huggingface.co/coolthor/MiniMax-H3-pruned-NVFP4",
   "created_at": "2026-08-04T05:17:22.000Z",
-  "updated_at": "2026-11-03T02:56:24.000Z",
+  "updated_at": "2026-11-14T04:29:10.000Z",
   "license": "minimax-h3-community-license-agreement",
   "license_family": "non-commercial",
   "pipeline_tag": "image-text-to-video",

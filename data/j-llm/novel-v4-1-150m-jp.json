@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "j-llm/Novel-v4.1-150m-jp",
+  "slug": "j-llm-novel-v4-1-150m-jp",
+  "author": "j-llm",
+  "url": "https://huggingface.co/j-llm/Novel-v4.1-150m-jp",
+  "created_at": "2026-11-13T00:35:33.000Z",
+  "updated_at": "2026-11-14T06:44:46.000Z",
+  "license": "upstream-rights-unconfirmed",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "text-generation",
+    "custom-inference",
+    "gradient-free",
+    "experimental",
+    "not-for-all-audiences",
+    "ja",
+    "base_model:eightman999/v3v4-novel-150m-ja",
+    "base_model:finetune:eightman999/v3v4-novel-150m-ja",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23892560,
+  "storage_human": "24 MB",
+  "base_model": "eightman999/v3v4-novel-150m-ja",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "J - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/J",
+      "snippet": "The Italian novelist Luigi Pirandello used j in vowel groups in his works written in Italian; he also wrote in his native Sicilian language, …"
+    }
+  ]
+}

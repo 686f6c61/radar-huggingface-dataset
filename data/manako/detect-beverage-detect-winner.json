@@ -5,7 +5,7 @@
   "author": "manako",
   "url": "https://huggingface.co/manako/Detect-beverage-detect-winner",
   "created_at": "2026-05-05T14:35:26.000Z",
-  "updated_at": "2026-11-09T09:33:35.000Z",
+  "updated_at": "2026-11-14T06:50:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 247431490,
-  "storage_human": "247 MB",
+  "storage_bytes": 280060618,
+  "storage_human": "280 MB",
   "base_model": null,
   "formats": [
     "onnx"

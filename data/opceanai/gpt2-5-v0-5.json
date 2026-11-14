@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "OpceanAI/gpt2.5-v0.5",
+  "slug": "opceanai-gpt2-5-v0-5",
+  "author": "OpceanAI",
+  "url": "https://huggingface.co/OpceanAI/gpt2.5-v0.5",
+  "created_at": "2026-11-12T19:42:47.000Z",
+  "updated_at": "2026-11-13T02:34:06.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2_5",
+    "feature-extraction",
+    "vision-language",
+    "multi-token-prediction",
+    "speculative-decoding",
+    "tool-calling",
+    "custom_code",
+    "research",
+    "image-text-to-text",
+    "en",
+    "base_model:google/siglip2-so400m-patch16-naflex",
+    "base_model:finetune:google/siglip2-so400m-patch16-naflex",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 909822208,
+  "parameters_human": "909.8M",
+  "storage_bytes": 3646906397,
+  "storage_human": "3.6 GB",
+  "base_model": "openai-community/gpt2-large, google/siglip2-so400m-patch16-naflex",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

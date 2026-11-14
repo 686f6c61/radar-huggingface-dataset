@@ -5,7 +5,7 @@
   "author": "zcheng256",
   "url": "https://huggingface.co/zcheng256/rdgdpo-fixed-weight-20261110-backup",
   "created_at": "2026-11-11T17:12:06.000Z",
-  "updated_at": "2026-11-13T05:30:03.000Z",
+  "updated_at": "2026-11-13T13:04:39.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 447888082784,
-  "storage_human": "447.9 GB",
+  "storage_bytes": 497652152534,
+  "storage_human": "497.7 GB",
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
   "formats": [
     "safetensors"

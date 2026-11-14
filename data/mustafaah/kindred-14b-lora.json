@@ -5,7 +5,7 @@
   "author": "mustafaah",
   "url": "https://huggingface.co/mustafaah/kindred-14b-lora",
   "created_at": "2026-11-12T16:06:27.000Z",
-  "updated_at": "2026-11-13T04:01:53.000Z",
+  "updated_at": "2026-11-13T05:19:28.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 12343933184,
-  "storage_human": "12.3 GB",
+  "storage_bytes": 20588154633,
+  "storage_human": "20.6 GB",
   "base_model": "Qwen/Qwen3-14B-Base",
   "formats": [
     "safetensors"

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "vikram2026ind/svara-haryanvi-tts",
+  "slug": "vikram2026ind-svara-haryanvi-tts",
+  "author": "vikram2026ind",
+  "url": "https://huggingface.co/vikram2026ind/svara-haryanvi-tts",
+  "created_at": "2026-11-14T06:26:27.000Z",
+  "updated_at": "2026-11-14T06:41:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [
+    "bgc",
+    "hi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "haryanvi",
+    "voice-cloning",
+    "svara-tts",
+    "llama-3.2",
+    "snac",
+    "lora",
+    "bgc",
+    "hi",
+    "base_model:kenpath/svara-tts-v1",
+    "base_model:adapter:kenpath/svara-tts-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778096664,
+  "storage_human": "778 MB",
+  "base_model": "kenpath/svara-tts-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

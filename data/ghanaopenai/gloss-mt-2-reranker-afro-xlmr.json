@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ghanaopenai/gloss-mt-2-reranker-afro-xlmr",
+  "slug": "ghanaopenai-gloss-mt-2-reranker-afro-xlmr",
+  "author": "ghanaopenai",
+  "url": "https://huggingface.co/ghanaopenai/gloss-mt-2-reranker-afro-xlmr",
+  "created_at": "2026-11-14T09:01:41.000Z",
+  "updated_at": "2026-11-14T09:06:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "tw",
+    "ak",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "cross-encoder",
+    "reranker",
+    "twi",
+    "akan",
+    "asante-twi",
+    "afro-xlmr",
+    "machine-translation",
+    "lexical-disambiguation",
+    "word-sense-disambiguation",
+    "gloss-mt-2",
+    "african-nlp",
+    "text-classification",
+    "tw",
+    "ak",
+    "en",
+    "base_model:Davlan/afro-xlmr-base",
+    "base_model:finetune:Davlan/afro-xlmr-base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278044417,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129289620,
+  "storage_human": "1.1 GB",
+  "base_model": "Davlan/afro-xlmr-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Cross-Encoder Contextual Lexical Disambiguation",
+      "dataset": "gloss-mt-2-en-tw",
+      "metric": null,
+      "value": 97.21
+    }
+  ],
+  "sources": []
+}

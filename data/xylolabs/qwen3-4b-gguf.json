@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Xylolabs/Qwen3-4B-GGUF",
+  "slug": "xylolabs-qwen3-4b-gguf",
+  "author": "Xylolabs",
+  "url": "https://huggingface.co/Xylolabs/Qwen3-4B-GGUF",
+  "created_at": "2026-11-14T09:28:34.000Z",
+  "updated_at": "2026-11-14T09:29:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "quantized",
+    "qwen3",
+    "text-generation",
+    "en",
+    "ko",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 7446582208,
+  "storage_human": "7.4 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/NVIDIA-Nemotron-Nano-9B-v2",
   "created_at": "2026-10-16T05:24:44.000Z",
-  "updated_at": "2026-11-09T05:40:22.000Z",
+  "updated_at": "2026-11-13T21:43:35.000Z",
   "license": "nvidia-open-model-license",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

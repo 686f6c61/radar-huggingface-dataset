@@ -5,7 +5,7 @@
   "author": "uncoalesced-org",
   "url": "https://huggingface.co/uncoalesced-org/parentheses-1.0-240M",
   "created_at": "2026-11-13T10:34:24.000Z",
-  "updated_at": "2026-11-13T10:59:33.000Z",
+  "updated_at": "2026-11-13T11:32:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -53,7 +53,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 253544176,

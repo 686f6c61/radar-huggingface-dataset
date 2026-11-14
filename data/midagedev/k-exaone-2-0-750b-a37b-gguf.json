@@ -5,7 +5,7 @@
   "author": "midagedev",
   "url": "https://huggingface.co/midagedev/K-EXAONE-2.0-750B-A37B-GGUF",
   "created_at": "2026-11-13T00:32:11.000Z",
-  "updated_at": "2026-11-13T13:39:19.000Z",
+  "updated_at": "2026-11-13T21:46:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 749357484800,
   "parameters_human": "749.36B",
-  "storage_bytes": 281280485664,
-  "storage_human": "281.3 GB",
+  "storage_bytes": 530829274304,
+  "storage_human": "530.8 GB",
   "base_model": "LGAI-EXAONE/K-EXAONE-2.0-750B-A37B",
   "formats": [
     "gguf"

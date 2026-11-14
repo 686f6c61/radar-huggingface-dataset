@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Nilmon/gemma-4-E2B-en50v-GGUF",
+  "slug": "nilmon-gemma-4-e2b-en50v-gguf",
+  "author": "Nilmon",
+  "url": "https://huggingface.co/Nilmon/gemma-4-E2B-en50v-GGUF",
+  "created_at": "2026-11-14T08:47:36.000Z",
+  "updated_at": "2026-11-14T08:51:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "gemma4",
+    "vocabulary-trimming",
+    "on-device",
+    "cpu",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2798969891,
+  "parameters_human": "2.80B",
+  "storage_bytes": 1692531392,
+  "storage_human": "1.7 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

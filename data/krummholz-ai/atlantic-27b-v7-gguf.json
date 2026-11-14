@@ -5,7 +5,7 @@
   "author": "krummholz-ai",
   "url": "https://huggingface.co/krummholz-ai/atlantic-27b-v7-GGUF",
   "created_at": "2026-11-09T17:46:26.000Z",
-  "updated_at": "2026-11-09T18:06:21.000Z",
+  "updated_at": "2026-11-13T14:16:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 96648661856,
-  "storage_human": "96.6 GB",
+  "storage_bytes": 192369716896,
+  "storage_human": "192.4 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

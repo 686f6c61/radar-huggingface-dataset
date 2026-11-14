@@ -4,10 +4,10 @@
   "slug": "northeasterlyone-neo-axion-15",
   "author": "northeasterlyone",
   "url": "https://huggingface.co/northeasterlyone/neo-axion-15",
-  "created_at": "2026-11-12T20:17:27.000Z",
-  "updated_at": "2026-11-12T20:17:51.000Z",
-  "license": "openrail",
-  "license_family": "oss",
+  "created_at": "2026-11-13T13:25:21.000Z",
+  "updated_at": "2026-11-13T13:25:31.000Z",
+  "license": "neo-axion-beta-nc",
+  "license_family": "non-commercial",
   "pipeline_tag": "text-to-speech",
   "library": "pytorch",
   "languages": [
@@ -26,7 +26,7 @@
     "neo-axion",
     "tr",
     "arxiv:2306.07691",
-    "license:openrail",
+    "license:other",
     "region:us"
   ],
   "likes": 0,
@@ -34,7 +34,7 @@
   "trending_score": 0,
   "parameters": 200811067,
   "parameters_human": "200.8M",
-  "storage_bytes": 805855406,
+  "storage_bytes": 805858662,
   "storage_human": "806 MB",
   "base_model": null,
   "formats": [
@@ -42,8 +42,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-11-13T07:23:06.533Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

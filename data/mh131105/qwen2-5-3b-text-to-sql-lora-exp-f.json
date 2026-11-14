@@ -5,7 +5,7 @@
   "author": "mh131105",
   "url": "https://huggingface.co/mh131105/qwen2.5-3b-text-to-sql-lora-exp-f",
   "created_at": "2026-11-13T19:46:37.000Z",
-  "updated_at": "2026-11-13T19:59:15.000Z",
+  "updated_at": "2026-11-13T21:20:32.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

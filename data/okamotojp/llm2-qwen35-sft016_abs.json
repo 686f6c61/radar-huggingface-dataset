@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "OkamotoJP/llm2-qwen35-sft016_abs",
+  "slug": "okamotojp-llm2-qwen35-sft016_abs",
+  "author": "OkamotoJP",
+  "url": "https://huggingface.co/OkamotoJP/llm2-qwen35-sft016_abs",
+  "created_at": "2026-11-11T12:46:40.000Z",
+  "updated_at": "2026-11-11T13:59:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "ja",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 3506693246,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

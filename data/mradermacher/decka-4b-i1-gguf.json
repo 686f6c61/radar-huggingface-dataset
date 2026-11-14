@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Decka-4B-i1-GGUF",
   "created_at": "2026-08-29T15:26:31.000Z",
-  "updated_at": "2026-10-16T22:45:31.000Z",
+  "updated_at": "2026-11-14T00:15:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
     "abliterated",
     "reproducible",
     "en",
-    "base_model:mrzenin/Decka-4B",
-    "base_model:quantized:mrzenin/Decka-4B",
+    "base_model:mrzenin/Qwen3.8-4B-Uncensored",
+    "base_model:quantized:mrzenin/Qwen3.8-4B-Uncensored",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -42,7 +42,7 @@
   "parameters_human": "4.21B",
   "storage_bytes": 53399973088,
   "storage_human": "53.4 GB",
-  "base_model": "mrzenin/Decka-4B",
+  "base_model": "mrzenin/Qwen3.8-4B-Uncensored",
   "formats": [
     "gguf"
   ],

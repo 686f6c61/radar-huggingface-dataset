@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "srebora/MultItLit",
+  "slug": "srebora-multitlit",
+  "author": "srebora",
+  "url": "https://huggingface.co/srebora/MultItLit",
+  "created_at": "2026-11-14T11:57:35.000Z",
+  "updated_at": "2026-11-14T12:48:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "it",
+    "base_model:dbmdz/bert-base-italian-xxl-cased",
+    "base_model:finetune:dbmdz/bert-base-italian-xxl-cased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110697218,
+  "parameters_human": "110.7M",
+  "storage_bytes": 1328582834,
+  "storage_human": "1.3 GB",
+  "base_model": "dbmdz/bert-base-italian-xxl-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

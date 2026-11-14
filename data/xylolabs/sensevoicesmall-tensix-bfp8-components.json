@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Xylolabs/SenseVoiceSmall-Tensix-BFP8-Components",
+  "slug": "xylolabs-sensevoicesmall-tensix-bfp8-components",
+  "author": "Xylolabs",
+  "url": "https://huggingface.co/Xylolabs/SenseVoiceSmall-Tensix-BFP8-Components",
+  "created_at": "2026-11-14T06:13:02.000Z",
+  "updated_at": "2026-11-14T06:13:28.000Z",
+  "license": "funasr-model-license-1.1",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "pytorch",
+    "tenstorrent",
+    "tensix",
+    "speech-recognition",
+    "safetensors",
+    "bfloat8_b",
+    "bfloat16",
+    "model-components",
+    "ko",
+    "base_model:FunAudioLLM/SenseVoiceSmall",
+    "base_model:finetune:FunAudioLLM/SenseVoiceSmall",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 520217558,
+  "storage_human": "520 MB",
+  "base_model": "FunAudioLLM/SenseVoiceSmall",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

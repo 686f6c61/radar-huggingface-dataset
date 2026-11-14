@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "akhaliq/MiniMax-H3-Image-Character-Swap",
+  "slug": "akhaliq-minimax-h3-image-character-swap",
+  "author": "akhaliq",
+  "url": "https://huggingface.co/akhaliq/MiniMax-H3-Image-Character-Swap",
+  "created_at": "2026-11-14T09:55:49.000Z",
+  "updated_at": "2026-11-14T10:26:30.000Z",
+  "license": "minimax-h3-image-community-license-agreement",
+  "license_family": "non-commercial",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "minimax-h3",
+    "character-swap",
+    "image-editing",
+    "image-to-image",
+    "lora-merge",
+    "ml-intern",
+    "en",
+    "base_model:MiniMaxAI/MiniMax-H3-Image",
+    "base_model:merge:MiniMaxAI/MiniMax-H3-Image",
+    "base_model:akatz-ai/MiniMax-H3-Character-Swap-LoRA",
+    "base_model:merge:akatz-ai/MiniMax-H3-Character-Swap-LoRA",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68639417295,
+  "storage_human": "68.6 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3-Image, akatz-ai/MiniMax-H3-Character-Swap-LoRA",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

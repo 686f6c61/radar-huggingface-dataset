@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Elpis-VL-7B-GGUF",
+  "slug": "mradermacher-elpis-vl-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Elpis-VL-7B-GGUF",
+  "created_at": "2025-06-10T11:52:39.000Z",
+  "updated_at": "2026-11-14T09:58:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "elpis-vl",
+    "zh",
+    "en",
+    "base_model:Beagledata/Elpis-VL-7B",
+    "base_model:quantized:Beagledata/Elpis-VL-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 83,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70220540736,
+  "storage_human": "70.2 GB",
+  "base_model": "Beagledata/Elpis-VL-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

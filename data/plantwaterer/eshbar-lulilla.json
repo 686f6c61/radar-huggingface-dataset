@@ -5,7 +5,7 @@
   "author": "plantwaterer",
   "url": "https://huggingface.co/plantwaterer/eshbar-lulilla",
   "created_at": "2026-11-02T19:20:34.000Z",
-  "updated_at": "2026-11-08T22:19:36.000Z",
+  "updated_at": "2026-11-13T23:53:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 836,
+  "downloads_30d": 848,
   "trending_score": 0,
   "parameters": 31273088876,
   "parameters_human": "31.27B",

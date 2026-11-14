@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Kayetic/super-cleanup-qwen3.5-2b",
+  "slug": "kayetic-super-cleanup-qwen3-5-2b",
+  "author": "Kayetic",
+  "url": "https://huggingface.co/Kayetic/super-cleanup-qwen3.5-2b",
+  "created_at": "2026-10-16T16:37:25.000Z",
+  "updated_at": "2026-11-14T09:59:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "dictation",
+    "speech-to-text",
+    "text-cleanup",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:edinburghcstr/ami",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 331,
+  "trending_score": 0,
+  "parameters": 1490181952,
+  "parameters_human": "1.49B",
+  "storage_bytes": 2510384589,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

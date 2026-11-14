@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/diffusion_UR5e_BS_64_H_16_TASK_tool_hang_crop232_aug3_ID_q5_164510",
+  "slug": "castanetnicolas-diffusion_ur5e_bs_64_h_16_task_tool_hang_crop232_aug3_id_q5_164510",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/diffusion_UR5e_BS_64_H_16_TASK_tool_hang_crop232_aug3_ID_q5_164510",
+  "created_at": "2026-11-14T07:04:53.000Z",
+  "updated_at": "2026-11-14T07:24:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:castanetnicolas/robomimic_tool_hang_ph_image256",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278014919,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1112126076,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

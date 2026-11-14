@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mmmhusto/TTS-English",
+  "slug": "mmmhusto-tts-english",
+  "author": "mmmhusto",
+  "url": "https://huggingface.co/mmmhusto/TTS-English",
+  "created_at": "2026-11-14T12:16:56.000Z",
+  "updated_at": "2026-11-14T12:17:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "flow-matching",
+    "diffusion-transformer",
+    "multi-speaker",
+    "en",
+    "dataset:mythicinfinity/libritts_r",
+    "dataset:MikhailT/hifi-tts",
+    "dataset:mmmhusto/sktts-en-features",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41965706,
+  "parameters_human": "42.0M",
+  "storage_bytes": 169237528,
+  "storage_human": "169 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

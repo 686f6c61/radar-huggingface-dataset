@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/granite-docling-258M",
   "created_at": "2026-08-24T07:17:14.000Z",
-  "updated_at": "2026-11-09T05:46:44.000Z",
+  "updated_at": "2026-11-13T21:44:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

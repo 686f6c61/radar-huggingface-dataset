@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Beek-i1-GGUF",
   "created_at": "2026-11-13T02:48:02.000Z",
-  "updated_at": "2026-11-13T03:21:37.000Z",
+  "updated_at": "2026-11-13T07:00:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -36,12 +36,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 72,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39485526016,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218567540928,
+  "storage_human": "218.6 GB",
   "base_model": "UTF-ai/Beek",
   "formats": [
     "gguf"

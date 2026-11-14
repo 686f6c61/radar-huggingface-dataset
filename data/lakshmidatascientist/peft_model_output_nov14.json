@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "LakshmiDataScientist/peft_model_output_nov14",
+  "slug": "lakshmidatascientist-peft_model_output_nov14",
+  "author": "LakshmiDataScientist",
+  "url": "https://huggingface.co/LakshmiDataScientist/peft_model_output_nov14",
+  "created_at": "2026-11-14T07:30:09.000Z",
+  "updated_at": "2026-11-14T07:30:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3303744,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

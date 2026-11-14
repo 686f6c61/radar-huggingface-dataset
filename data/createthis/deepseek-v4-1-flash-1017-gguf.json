@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "createthis/DeepSeek-V4.1-Flash-1017-GGUF",
+  "slug": "createthis-deepseek-v4-1-flash-1017-gguf",
+  "author": "createthis",
+  "url": "https://huggingface.co/createthis/DeepSeek-V4.1-Flash-1017-GGUF",
+  "created_at": "2026-11-14T05:46:08.000Z",
+  "updated_at": "2026-11-14T06:11:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

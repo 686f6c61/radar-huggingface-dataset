@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mradermacher/alpaca-13b-GGUF",
+  "slug": "mradermacher-alpaca-13b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/alpaca-13b-GGUF",
+  "created_at": "2025-02-25T18:24:00.000Z",
+  "updated_at": "2026-11-14T07:50:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:maicomputer/alpaca-13b",
+    "base_model:quantized:maicomputer/alpaca-13b",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 229,
+  "trending_score": 0,
+  "parameters": 13015874560,
+  "parameters_human": "13.02B",
+  "storage_bytes": 88801989760,
+  "storage_human": "88.8 GB",
+  "base_model": "maicomputer/alpaca-13b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

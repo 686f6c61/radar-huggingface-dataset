@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "pittawat/prelim-nemotron-4b-lora32-opsd-seed2718282026",
+  "slug": "pittawat-prelim-nemotron-4b-lora32-opsd-seed2718282026",
+  "author": "pittawat",
+  "url": "https://huggingface.co/pittawat/prelim-nemotron-4b-lora32-opsd-seed2718282026",
+  "created_at": "2026-11-14T08:00:44.000Z",
+  "updated_at": "2026-11-14T08:01:50.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nemotron_h",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3973556832,
+  "parameters_human": "3.97B",
+  "storage_bytes": 7964219380,
+  "storage_human": "8.0 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

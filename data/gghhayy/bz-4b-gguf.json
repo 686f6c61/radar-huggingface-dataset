@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Gghhayy/Bz-4B-GGUF",
+  "slug": "gghhayy-bz-4b-gguf",
+  "author": "Gghhayy",
+  "url": "https://huggingface.co/Gghhayy/Bz-4B-GGUF",
+  "created_at": "2026-10-11T13:40:46.000Z",
+  "updated_at": "2026-11-14T11:36:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "base_model:Gghhayy/Bz-4B",
+    "base_model:quantized:Gghhayy/Bz-4B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 38053598976,
+  "storage_human": "38.1 GB",
+  "base_model": "Gghhayy/Bz-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

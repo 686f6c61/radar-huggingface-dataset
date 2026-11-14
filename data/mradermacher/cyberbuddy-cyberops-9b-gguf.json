@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "mradermacher/CyberBuddy-CyberOps-9B-GGUF",
+  "slug": "mradermacher-cyberbuddy-cyberops-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CyberBuddy-CyberOps-9B-GGUF",
+  "created_at": "2026-11-14T06:10:43.000Z",
+  "updated_at": "2026-11-14T06:10:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 456010480,
+  "parameters_human": "456.0M",
+  "storage_bytes": 1542396288,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

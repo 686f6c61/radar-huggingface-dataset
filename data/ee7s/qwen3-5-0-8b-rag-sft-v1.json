@@ -5,7 +5,7 @@
   "author": "ee7s",
   "url": "https://huggingface.co/ee7s/qwen3.5-0.8b-rag-sft-v1",
   "created_at": "2026-11-07T00:31:15.000Z",
-  "updated_at": "2026-11-07T00:32:09.000Z",
+  "updated_at": "2026-11-13T23:42:25.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,7 +13,7 @@
   "languages": [],
   "tags": [
     "safetensors",
-    "qwen3_5_text",
+    "qwen3_5",
     "base_model:Qwen/Qwen3.5-0.8B",
     "base_model:finetune:Qwen/Qwen3.5-0.8B",
     "license:cc-by-sa-4.0",
@@ -22,10 +22,10 @@
   "likes": 0,
   "downloads_30d": 26,
   "trending_score": 0,
-  "parameters": 752393024,
-  "parameters_human": "752.4M",
-  "storage_bytes": 3029602987,
-  "storage_human": "3.0 GB",
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 6294181209,
+  "storage_human": "6.3 GB",
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"

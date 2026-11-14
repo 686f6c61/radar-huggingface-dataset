@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "anisayakmitra-in/moira",
+  "slug": "anisayakmitra-in-moira",
+  "author": "anisayakmitra-in",
+  "url": "https://huggingface.co/anisayakmitra-in/moira",
+  "created_at": "2026-11-14T11:22:20.000Z",
+  "updated_at": "2026-11-14T11:26:53.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "moira-decision-369",
+    "moira",
+    "decision-engine",
+    "agent-safety",
+    "fate-o-sisters",
+    "pytorch",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13633,
+  "parameters_human": "13633",
+  "storage_bytes": 55284,
+  "storage_human": "55284 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

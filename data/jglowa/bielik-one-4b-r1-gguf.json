@@ -5,7 +5,7 @@
   "author": "jglowa",
   "url": "https://huggingface.co/jglowa/Bielik-One-4B-r1-GGUF",
   "created_at": "2026-11-12T23:15:03.000Z",
-  "updated_at": "2026-11-13T02:48:11.000Z",
+  "updated_at": "2026-11-13T08:10:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -57,13 +57,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 61,
   "trending_score": 0,
   "parameters": 4327671808,
   "parameters_human": "4.33B",
-  "storage_bytes": 7396562272,
-  "storage_human": "7.4 GB",
+  "storage_bytes": 16064848480,
+  "storage_human": "16.1 GB",
   "base_model": "speakleash/Bielik-One-4B-r1",
   "formats": [
     "gguf"

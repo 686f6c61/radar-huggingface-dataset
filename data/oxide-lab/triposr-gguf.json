@@ -5,7 +5,7 @@
   "author": "oxide-lab",
   "url": "https://huggingface.co/oxide-lab/TripoSR-GGUF",
   "created_at": "2026-11-13T10:12:51.000Z",
-  "updated_at": "2026-11-13T10:17:48.000Z",
+  "updated_at": "2026-11-13T20:05:32.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-to-3d",

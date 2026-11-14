@@ -5,7 +5,7 @@
   "author": "iamaber",
   "url": "https://huggingface.co/iamaber/banglatok-bn-bpe-28k",
   "created_at": "2026-11-13T10:25:15.000Z",
-  "updated_at": "2026-11-13T10:25:17.000Z",
+  "updated_at": "2026-11-13T12:04:39.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,6 +24,7 @@
     "bpe",
     "bn",
     "en",
+    "dataset:iamaber/banglatok-training-corpus",
     "license:cc-by-sa-4.0",
     "endpoints_compatible",
     "region:us"

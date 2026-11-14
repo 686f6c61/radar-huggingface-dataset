@@ -5,7 +5,7 @@
   "author": "typhoon-ai",
   "url": "https://huggingface.co/typhoon-ai/typhoon-ocr2-0.8b",
   "created_at": "2026-11-05T20:06:32.000Z",
-  "updated_at": "2026-11-12T18:17:04.000Z",
+  "updated_at": "2026-11-14T05:52:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 9,
-  "downloads_30d": 485,
+  "downloads_30d": 600,
   "trending_score": 0,
   "parameters": 852985920,
   "parameters_human": "853.0M",

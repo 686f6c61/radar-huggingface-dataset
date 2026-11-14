@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "monotonic-labs/blackbar-pii-base-en",
+  "slug": "monotonic-labs-blackbar-pii-base-en",
+  "author": "monotonic-labs",
+  "url": "https://huggingface.co/monotonic-labs/blackbar-pii-base-en",
+  "created_at": "2026-11-14T03:52:50.000Z",
+  "updated_at": "2026-11-14T04:56:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "modernbert",
+    "pii",
+    "privacy",
+    "de-identification",
+    "ner",
+    "token-classification",
+    "en",
+    "dataset:nvidia/Nemotron-PII",
+    "dataset:gretelai/gretel-pii-masking-en-v1",
+    "dataset:mamahealth/mama-deid-dataset",
+    "dataset:E3-JSI/synthetic-multi-med-notes-ner-v1",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 808861305,
+  "storage_human": "809 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

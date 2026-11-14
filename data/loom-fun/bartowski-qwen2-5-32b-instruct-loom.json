@@ -5,7 +5,7 @@
   "author": "loom-fun",
   "url": "https://huggingface.co/loom-fun/bartowski-Qwen2.5-32B-Instruct-loom",
   "created_at": "2026-11-07T07:17:31.000Z",
-  "updated_at": "2026-11-13T05:19:01.000Z",
+  "updated_at": "2026-11-13T13:47:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,8 +16,6 @@
     "loom-serve",
     "gguf",
     "strix-halo",
-    "speculative-decoding",
-    "ngram",
     "base_model:bartowski/Qwen2.5-32B-Instruct-GGUF",
     "base_model:finetune:bartowski/Qwen2.5-32B-Instruct-GGUF",
     "region:us"

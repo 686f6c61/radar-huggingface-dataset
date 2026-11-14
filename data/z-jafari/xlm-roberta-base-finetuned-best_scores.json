@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Z-Jafari/xlm-roberta-base-finetuned-best_scores",
+  "slug": "z-jafari-xlm-roberta-base-finetuned-best_scores",
+  "author": "Z-Jafari",
+  "url": "https://huggingface.co/Z-Jafari/xlm-roberta-base-finetuned-best_scores",
+  "created_at": "2026-11-12T05:19:30.000Z",
+  "updated_at": "2026-11-12T07:24:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "question-answering",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 259,
+  "trending_score": 0,
+  "parameters": 277454594,
+  "parameters_human": "277.5M",
+  "storage_bytes": 31075592849,
+  "storage_human": "31.1 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "thkim0305-SNU/Safety_Tuning-Qwen3.5-4B-GRPO-STAR-binary-lr2e-6-kl0.001-p16-k8-step180",
+  "slug": "thkim0305-snu-safety_tuning-qwen3-5-4b-grpo-star-binary-lr2e-6-kl0-001-p16-k8-step180",
+  "author": "thkim0305-SNU",
+  "url": "https://huggingface.co/thkim0305-SNU/Safety_Tuning-Qwen3.5-4B-GRPO-STAR-binary-lr2e-6-kl0.001-p16-k8-step180",
+  "created_at": "2026-11-13T04:34:07.000Z",
+  "updated_at": "2026-11-13T04:37:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "grpo",
+    "safety",
+    "binary-reward",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9332628222,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tips for Using Community Posts on YouTube for Conversion",
+      "url": "https://influencermarketinghub.com/community-posts-youtube/",
+      "snippet": "Oct 8, 2025 · Creators are starting to use Posts as a three-touch funnel— tease, launch, and recap —anchored by UTM tracking and …"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "id": "zackyalgiffari/nexus-decision-4b-MLX-8bit",
+  "slug": "zackyalgiffari-nexus-decision-4b-mlx-8bit",
+  "author": "zackyalgiffari",
+  "url": "https://huggingface.co/zackyalgiffari/nexus-decision-4b-MLX-8bit",
+  "created_at": "2026-11-13T19:39:30.000Z",
+  "updated_at": "2026-11-14T06:17:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "id",
+    "es",
+    "de",
+    "fr",
+    "pt",
+    "ja"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "decision-making",
+    "classification",
+    "routing",
+    "triage",
+    "calibration",
+    "distillation",
+    "qwen3.5",
+    "deepseek",
+    "text-generation",
+    "conversational",
+    "en",
+    "id",
+    "es",
+    "de",
+    "fr",
+    "pt",
+    "ja",
+    "dataset:zackyalgiffari/nexus-decision-data",
+    "dataset:PolyAI/banking77",
+    "dataset:clinc/clinc_oos",
+    "base_model:zackyalgiffari/nexus-decision-4b",
+    "base_model:quantized:zackyalgiffari/nexus-decision-4b",
+    "license:apache-2.0",
+    "model-index",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 4489623384,
+  "storage_human": "4.5 GB",
+  "base_model": "zackyalgiffari/nexus-decision-4b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Typed decision questions",
+      "dataset": "nexus-decision-data (BANKING77 + CLINC150 test, as typed questions)",
+      "metric": "Accuracy",
+      "value": 0.915
+    },
+    {
+      "task": "Typed decision questions",
+      "dataset": "nexus-decision-data (BANKING77 + CLINC150 test, as typed questions)",
+      "metric": "Macro-F1",
+      "value": 0.8893
+    },
+    {
+      "task": "Typed decision questions",
+      "dataset": "nexus-decision-data (BANKING77 + CLINC150 test, as typed questions)",
+      "metric": "Expected calibration error",
+      "value": 0.0196
+    },
+    {
+      "task": "Typed decision questions",
+      "dataset": "nexus-decision-data (BANKING77 + CLINC150 test, as typed questions)",
+      "metric": "Brier score",
+      "value": 0.1178
+    },
+    {
+      "task": "Typed decision questions",
+      "dataset": "nexus-decision-data (synthetic decision scenarios, teacher labels)",
+      "metric": "Accuracy",
+      "value": 0.9078
+    },
+    {
+      "task": "Typed decision questions",
+      "dataset": "nexus-decision-data (synthetic decision scenarios, teacher labels)",
+      "metric": "Macro-F1",
+      "value": 0.8847
+    },
+    {
+      "task": "Typed decision questions",
+      "dataset": "nexus-decision-data (synthetic decision scenarios, teacher labels)",
+      "metric": "Expected calibration error",
+      "value": 0.0214
+    },
+    {
+      "task": "Typed decision questions",
+      "dataset": "nexus-decision-data (synthetic decision scenarios, teacher labels)",
+      "metric": "Brier score",
+      "value": 0.1425
+    }
+  ],
+  "sources": []
+}

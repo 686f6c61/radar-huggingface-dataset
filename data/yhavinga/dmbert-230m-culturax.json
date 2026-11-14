@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "yhavinga/dmbert-230m-culturax",
+  "slug": "yhavinga-dmbert-230m-culturax",
+  "author": "yhavinga",
+  "url": "https://huggingface.co/yhavinga/dmbert-230m-culturax",
+  "created_at": "2026-03-25T16:15:30.000Z",
+  "updated_at": "2026-11-14T11:36:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "nl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "dutch",
+    "masked-language-model",
+    "encoder",
+    "culturax",
+    "jax",
+    "nl",
+    "dataset:uonlp/CulturaX",
+    "arxiv:2412.13663",
+    "arxiv:2309.09400",
+    "arxiv:2405.18392",
+    "arxiv:1910.00896",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 95,
+  "trending_score": 0,
+  "parameters": 263009664,
+  "parameters_human": "263.0M",
+  "storage_bytes": 2104106016,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

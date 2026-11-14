@@ -5,7 +5,7 @@
   "author": "ywsldxk1",
   "url": "https://huggingface.co/ywsldxk1/so101-pi05-staged-fullft-20261113",
   "created_at": "2026-11-13T05:27:55.000Z",
-  "updated_at": "2026-11-13T05:55:17.000Z",
+  "updated_at": "2026-11-14T08:57:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 9388457656,
-  "storage_human": "9.4 GB",
+  "storage_bytes": 167082781601,
+  "storage_human": "167.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

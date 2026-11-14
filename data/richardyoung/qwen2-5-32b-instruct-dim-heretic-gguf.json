@@ -5,7 +5,7 @@
   "author": "richardyoung",
   "url": "https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-DiM-heretic-GGUF",
   "created_at": "2026-11-13T15:07:01.000Z",
-  "updated_at": "2026-11-13T15:11:58.000Z",
+  "updated_at": "2026-11-14T00:43:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -5,7 +5,7 @@
   "author": "brbrainerd",
   "url": "https://huggingface.co/brbrainerd/vox-mens-qwen3-0.6b",
   "created_at": "2026-11-01T14:54:48.000Z",
-  "updated_at": "2026-11-13T04:36:15.000Z",
+  "updated_at": "2026-11-13T21:13:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 4652,
+  "downloads_30d": 4704,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

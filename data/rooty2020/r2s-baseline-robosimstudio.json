@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "rooty2020/r2s-baseline-robosimstudio",
+  "slug": "rooty2020-r2s-baseline-robosimstudio",
+  "author": "rooty2020",
+  "url": "https://huggingface.co/rooty2020/r2s-baseline-robosimstudio",
+  "created_at": "2026-11-14T10:19:15.000Z",
+  "updated_at": "2026-11-14T10:19:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "real-to-sim",
+    "vla",
+    "gr00t",
+    "pi0.5",
+    "baseline",
+    "arxiv:2610.18835",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7586078313,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

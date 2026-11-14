@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ashishpatel26/jatayu-hi-11m",
+  "slug": "ashishpatel26-jatayu-hi-11m",
+  "author": "ashishpatel26",
+  "url": "https://huggingface.co/ashishpatel26/jatayu-hi-11m",
+  "created_at": "2026-11-14T05:36:05.000Z",
+  "updated_at": "2026-11-14T05:37:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "hindi",
+    "devanagari",
+    "from-scratch",
+    "causal-lm",
+    "ramayana-series",
+    "hi",
+    "dataset:wikimedia/wikipedia",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 11405568,
+  "parameters_human": "11.4M",
+  "storage_bytes": 46717336,
+  "storage_human": "47 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Hindi Wikipedia (held-out 0.5%)",
+      "metric": "Validation perplexity",
+      "value": 107.5
+    }
+  ],
+  "sources": []
+}

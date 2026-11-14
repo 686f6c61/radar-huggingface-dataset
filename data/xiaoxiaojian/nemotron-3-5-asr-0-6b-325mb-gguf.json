@@ -5,7 +5,7 @@
   "author": "xiaoxiaojian",
   "url": "https://huggingface.co/xiaoxiaojian/nemotron-3.5-asr-0.6b-325mb-gguf",
   "created_at": "2026-11-13T16:14:47.000Z",
-  "updated_at": "2026-11-13T16:18:10.000Z",
+  "updated_at": "2026-11-13T23:13:31.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

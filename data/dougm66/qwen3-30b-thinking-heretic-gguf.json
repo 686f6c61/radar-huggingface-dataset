@@ -5,7 +5,7 @@
   "author": "dougm66",
   "url": "https://huggingface.co/dougm66/qwen3-30b-thinking-heretic-GGUF",
   "created_at": "2026-11-13T01:28:01.000Z",
-  "updated_at": "2026-11-13T01:31:15.000Z",
+  "updated_at": "2026-11-13T02:38:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 43,
   "trending_score": 0,
   "parameters": 30532122624,
   "parameters_human": "30.53B",
-  "storage_bytes": 18556686016,
-  "storage_human": "18.6 GB",
+  "storage_bytes": 79652488576,
+  "storage_human": "79.7 GB",
   "base_model": "Qwen/Qwen3-30B-A3B-Thinking-2507",
   "formats": [
     "gguf"

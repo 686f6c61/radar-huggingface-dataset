@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/kera-songwriter-e4b-GGUF",
+  "slug": "mradermacher-kera-songwriter-e4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/kera-songwriter-e4b-GGUF",
+  "created_at": "2026-11-14T06:00:05.000Z",
+  "updated_at": "2026-11-14T06:10:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "lora",
+    "music",
+    "lyrics",
+    "songwriting",
+    "text-to-music",
+    "gemma4",
+    "kera",
+    "en",
+    "base_model:KeraAI/kera-songwriter-e4b",
+    "base_model:adapter:KeraAI/kera-songwriter-e4b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 76858022656,
+  "storage_human": "76.9 GB",
+  "base_model": "KeraAI/kera-songwriter-e4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

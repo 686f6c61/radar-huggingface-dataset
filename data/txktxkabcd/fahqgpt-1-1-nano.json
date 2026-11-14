@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "txktxkabcd/fahqgpt-1.1-nano",
+  "slug": "txktxkabcd-fahqgpt-1-1-nano",
+  "author": "txktxkabcd",
+  "url": "https://huggingface.co/txktxkabcd/fahqgpt-1.1-nano",
+  "created_at": "2026-11-14T10:48:37.000Z",
+  "updated_at": "2026-11-14T11:00:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "gguf",
+    "from-scratch",
+    "custom-code",
+    "conversational",
+    "small-language-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "dataset:HuggingFaceTB/smoltalk",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 145910912,
+  "parameters_human": "145.9M",
+  "storage_bytes": 876665160,
+  "storage_human": "877 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "dadv12",
   "url": "https://huggingface.co/dadv12/nkap-translate-ewo-en-fr",
   "created_at": "2026-11-13T12:46:29.000Z",
-  "updated_at": "2026-11-13T12:46:45.000Z",
+  "updated_at": "2026-11-13T14:28:59.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 77059245,
   "parameters_human": "77.1M",
-  "storage_bytes": 309764147,
-  "storage_human": "310 MB",
+  "storage_bytes": 618030183,
+  "storage_human": "618 MB",
   "base_model": null,
   "formats": [
     "safetensors"

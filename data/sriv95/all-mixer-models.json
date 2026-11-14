@@ -5,7 +5,7 @@
   "author": "sriv95",
   "url": "https://huggingface.co/sriv95/all-mixer-models",
   "created_at": "2026-10-18T07:01:03.000Z",
-  "updated_at": "2026-10-24T20:16:30.000Z",
+  "updated_at": "2026-11-13T11:00:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1936374202,
-  "storage_human": "1.9 GB",
+  "storage_bytes": 1969773918,
+  "storage_human": "2.0 GB",
   "base_model": null,
   "formats": [
     "onnx"

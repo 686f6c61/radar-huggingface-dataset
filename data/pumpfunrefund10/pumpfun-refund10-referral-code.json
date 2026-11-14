@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "pumpfunrefund10/pumpfun-refund10-referral-code",
+  "slug": "pumpfunrefund10-pumpfun-refund10-referral-code",
+  "author": "pumpfunrefund10",
+  "url": "https://huggingface.co/pumpfunrefund10/pumpfun-refund10-referral-code",
+  "created_at": "2026-11-14T09:45:20.000Z",
+  "updated_at": "2026-11-14T09:47:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "prometheusAIR",
   "url": "https://huggingface.co/prometheusAIR/Ripple-65B-Preview-GGUF",
   "created_at": "2026-11-04T23:00:19.000Z",
-  "updated_at": "2026-11-05T00:40:06.000Z",
+  "updated_at": "2026-11-14T01:12:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 64782689360,
   "parameters_human": "64.78B",
-  "storage_bytes": 235555694592,
-  "storage_human": "235.6 GB",
+  "storage_bytes": 471058744704,
+  "storage_human": "471.1 GB",
   "base_model": "ricursiveAI/Ripple-65B-Preview",
   "formats": [
     "gguf"

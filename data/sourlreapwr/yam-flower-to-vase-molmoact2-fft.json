@@ -5,7 +5,7 @@
   "author": "sourlreapwr",
   "url": "https://huggingface.co/sourlreapwr/yam-flower-to-vase-molmoact2-fft",
   "created_at": "2026-11-12T18:15:37.000Z",
-  "updated_at": "2026-11-12T18:17:26.000Z",
+  "updated_at": "2026-11-14T05:36:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 5447439088,
   "parameters_human": "5.45B",
-  "storage_bytes": 21802103979,
-  "storage_human": "21.8 GB",
+  "storage_bytes": 108961813707,
+  "storage_human": "109.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

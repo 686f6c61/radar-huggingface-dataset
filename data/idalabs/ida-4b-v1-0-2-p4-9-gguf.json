@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "idalabs/IDA-4B-v1.0.2-P4.9-GGUF",
+  "slug": "idalabs-ida-4b-v1-0-2-p4-9-gguf",
+  "author": "idalabs",
+  "url": "https://huggingface.co/idalabs/IDA-4B-v1.0.2-P4.9-GGUF",
+  "created_at": "2026-11-12T15:46:56.000Z",
+  "updated_at": "2026-11-12T17:20:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "id",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "quantized",
+    "qlora",
+    "indonesian",
+    "ida-labs",
+    "experimental",
+    "text-generation",
+    "id",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 84,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2497387013,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

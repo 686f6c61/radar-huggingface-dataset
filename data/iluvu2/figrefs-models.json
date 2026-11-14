@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "iLuvU2/figrefs-models",
+  "slug": "iluvu2-figrefs-models",
+  "author": "iLuvU2",
+  "url": "https://huggingface.co/iLuvU2/figrefs-models",
+  "created_at": "2026-11-13T13:48:32.000Z",
+  "updated_at": "2026-11-13T13:58:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "scientific-documents",
+    "figure-references",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4898599726,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

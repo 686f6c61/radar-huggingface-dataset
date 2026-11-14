@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "recoilme/tmp",
+  "slug": "recoilme-tmp",
+  "author": "recoilme",
+  "url": "https://huggingface.co/recoilme/tmp",
+  "created_at": "2026-03-12T22:54:52.000Z",
+  "updated_at": "2026-11-14T07:29:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 1579703008,
+  "parameters_human": "1.58B",
+  "storage_bytes": 52249974384,
+  "storage_human": "52.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

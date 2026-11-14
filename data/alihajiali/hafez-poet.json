@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "alihajiali/Hafez-Poet",
+  "slug": "alihajiali-hafez-poet",
+  "author": "alihajiali",
+  "url": "https://huggingface.co/alihajiali/Hafez-Poet",
+  "created_at": "2026-11-12T11:15:06.000Z",
+  "updated_at": "2026-11-12T11:54:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "persian",
+    "poetry",
+    "hafez",
+    "lora",
+    "text-generation",
+    "fa",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 997694774,
+  "storage_human": "998 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
