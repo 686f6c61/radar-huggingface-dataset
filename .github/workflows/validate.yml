@@ -43,7 +43,7 @@ jobs:
           for f in README.md SCHEMA.md LICENSE CHANGELOG.md; do
             test -s "$f" || { echo "falta $f"; exit 1; }
           done
-          grep -q "CC-BY-4.0\|CC BY 4.0" LICENSE || { echo "LICENSE no es CC-BY-4.0"; exit 1; }
+          grep -q "Attribution 4.0 International" LICENSE || { echo "LICENSE no es CC-BY-4.0"; exit 1; }
           echo "docs OK"
       - name: README con quickstart y versionado
         run: |

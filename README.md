@@ -30,8 +30,9 @@ responder preguntas mejores:
 
 - **Qué se publica y quién lo publica** — qué organizaciones dominan el hub,
   con qué licencias, qué tamaños y qué formatos (GGUF, MLX, safetensors...).
-- **Qué tiene tracción de verdad** — descargas y likes por ventanas de tiempo,
-  no solo el acumulado histórico que favorece a los modelos viejos.
+- **Qué tiene tracción de verdad** — likes, descargas de los últimos 30 días
+  y puntuación de tendencia de cada modelo. Cada fichero lleva la foto
+  actual; la evolución se obtiene comparando releases.
 - **Qué desaparece** — el hub no anuncia las bajas. Cada modelo retirado queda
   aquí marcado (`removed`, `removed_at`): son las lápidas del ecosistema.
 - **Cómo evoluciona todo** — al actualizarse tres veces al día y quedar cada
@@ -42,8 +43,12 @@ Y encima, cada modelo lleva una **ficha técnica en castellano** (qué hace,
 para qué sirve, requisitos, limitaciones), porque la documentación del hub
 es mayoritariamente en inglés y desigual en calidad.
 
-No es un espejo del hub: es una **capa curada** — solo modelos con licencia
-abierta verificada y con un mínimo de información útil.
+No es un espejo del hub: es una **capa curada**. Cada modelo lleva su ficha
+y su licencia clasificada en `license_family` (`oss`, `non-commercial` o
+`unknown`). **No todos tienen licencia abierta**: a 14 de noviembre de 2026,
+de 129.885 modelos, 90.148 son `oss`, 37.439 `unknown` (sin licencia
+declarada o no reconocida) y 2.298 `non-commercial`. Si solo quieres los
+abiertos, filtra por `license_family = "oss"`.
 
 ## Cómo se estructura `data/`
 
@@ -143,7 +148,10 @@ anuncian aparte subiendo `schema` y documentándolo en CHANGELOG.md.
 
 ## Licencia y atribución
 
-[CC-BY-4.0](LICENSE). Fuente de los metadatos:
+[CC-BY-4.0](LICENSE) (texto legal completo en el fichero). Atribución
+sugerida: «radar-huggingface-dataset — HF//RADAR
+(https://radar-huggingface.686f6c61.dev), datos de Hugging Face Hub,
+CC-BY-4.0». Fuente de los metadatos:
 [Hugging Face Hub](https://huggingface.co). Fichas generadas por HF//RADAR.
 Si usas el dataset, enlaza al repo o al radar.
 
