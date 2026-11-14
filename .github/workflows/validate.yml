@@ -100,6 +100,11 @@ jobs:
     if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && inputs.tag == ''
     runs-on: ubuntu-latest
     needs: [validate-data, repo-docs]
+    # De una en una: dos push seguidos calculaban la misma version y el
+    # segundo fallaba con "a release with the same tag name already exists"
+    concurrency:
+      group: release
+      cancel-in-progress: false
     permissions:
       contents: write
     steps:
